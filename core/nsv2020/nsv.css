@@ -1,0 +1,319 @@
+/****************************************
+          BOOTSTRAP OVERRIDES
+*****************************************/
+
+.container {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.row [class*="col"],
+.row [class*="col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+a, a:hover {
+  color: #c32811;
+}
+
+/* Account for sticky navbar and card header when scrolling to an anchor. */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.pagination {
+  margin-bottom: 0;
+}
+
+.page-link, .page-link:hover {
+  color: #c32811;
+}
+
+.page-item.active .page-link {
+  background-color: #c32811;
+  border-color: #c32811;
+}
+
+.btn-primary {
+  background-color: #c32811;
+  border-color: #c32811;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #a4220e !important;
+  border-color: #a4220e !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: black;
+  font-weight: bold;
+}
+
+.accordion .card-header .btn:focus {
+  box-shadow: none;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #c32811;
+}
+
+.custom-control .custom-control-label {
+  padding-top: 3px;
+}
+
+.custom-control .custom-control-input:checked~.custom-control-label::before {
+  background-color: #c32811;
+  border-color: #c32811;
+}
+
+.custom-control .custom-control-input:focus~.custom-control-label::before {
+  box-shadow: none;
+}
+
+/****************************************
+              NSV LAYOUT
+*****************************************/
+
+body {
+  background-color: #f5f5f5;
+  font-size: 0.9rem;
+}
+
+#nsv-header {
+  background: white;
+  color: black;
+  padding: 15px 0 15px 0;
+}
+
+#nsv-header img {
+  height: 120px;
+}
+
+#nsv-header-brand {
+  font-size: 1.8rem;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+#nsv-navbar {
+  background: linear-gradient(0deg, #c32811, #e15b58);
+  font-size: 1rem;
+  margin-bottom: 30px;
+  padding: 0.2rem 1rem;
+}
+
+#nsv-navbar a.nav-link {
+  color: white;
+}
+
+#nsv-navbar .navbar-brand img {
+  vertical-align: text-top;
+}
+
+@media (max-width: 575.98px) {
+  #nsv-navbar .navbar-brand {
+    font-size: 3.5vw;
+  }
+}
+
+#nsv-navbar .navbar-nav {
+  width: 100%;
+}
+
+#nsv-navbar .nav-item {
+  margin-right: 20px;
+}
+
+#nsv-navbar .nav-item a.nav-link:focus {
+  outline: none; /* blue outline observed in Safari */
+}
+
+#nsv-navbar .nav-item:hover a.nav-link {
+  color: #eee;
+}
+
+#nsv-navbar .dropdown-item:focus, #nsv-navbar .dropdown-item:hover {
+  background: linear-gradient(0deg, #c32811, #e15b58);
+  color: white;
+}
+
+@media (min-width: 991.98px) {
+  #nsv-navbar .nsv-navbar-search {
+    margin-left: auto;
+    margin-right: 0;
+    transform: translate(0px, 2px);
+  }
+}
+
+@media (min-width: 991.98px) {
+  #nsv-sidebar.inline-sidebar {
+    height: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  #nsv-sidebar {
+    columns: 2;
+    column-fill: balance;
+    column-gap: 20px;
+  }
+}
+
+@media print {
+  #nsv-sidebar {
+    display: none;
+  }
+}
+
+#nsv-sidebar .nsv-sidebar-card {
+  display: inline-block;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+#nsv-footer {
+  background-color: #2a2730;
+  color: #99979c;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#nsv-footer a {
+  color: #fff;
+}
+
+#nsv-footer li {
+  display: block;
+  margin-left: 10px;
+}
+
+/****************************************
+          COMPONENT: nsv-card
+*****************************************/
+
+.nsv-card {
+  border-radius: .35rem;
+  margin-bottom: 20px;
+}
+
+#nsv-main .nsv-card .card-title a {
+  color: black;
+}
+
+#nsv-main .nsv-card h6.card-subtitle {
+  font-size: 0.8rem;
+}
+
+#nsv-main .nsv-card .card-subtitle a {
+  color: #6c757d !important;
+}
+
+@media print {
+  .nsv-card {
+    border: none;
+    box-shadow: none !important;
+  }
+}
+
+.nsv-card .card-body {
+  overflow-x: auto;
+}
+
+/****************************************
+          COMPONENT: nsv-table
+*****************************************/
+
+table.nsv-table {
+  border-collapse: collapse;
+}
+
+.nsv-table {
+  margin: 1px 0 0 1px; /* fix border collapse hack */
+}
+
+.nsv-table td,
+.nsv-table th,
+.nsv-table .nsv-table-header,
+.nsv-table .nsv-table-cell {
+  border: 1px solid black;
+  margin: -1px 0 0 -1px; /* collapse borders */
+  padding: 3px 5px;
+}
+
+.nsv-table th,
+.nsv-table .nsv-table-header {
+  background: linear-gradient(0deg, #c32811, #e15b58);
+  color: white;
+  font-weight: bold;
+}
+
+.nsv-table a {
+  color: black;
+}
+
+.nsv-table a:hover {
+  text-decoration: none;
+}
+
+.nsv-table th a,
+.nsv-table .nsv-table-header a {
+  color: white;
+}
+
+.nsv-table-footer {
+  margin-top: -1rem !important;
+}
+
+@media print {
+  .nsv-table th,
+  .nsv-table .nsv-table-header {
+    /* !important to stop nsv-blue from overriding */
+    background: #ddd !important;
+    color: black !important;
+  }
+
+  .nsv-table th a,
+  .nsv-table .nsv-table-header a {
+    /* !important to stop nsv-blue from overriding */
+    color: black !important;
+    text-decoration: none !important;
+  }  
+
+  .nsv-table a:not(button) {
+    /* Override Bootstrap's CSS for printing. */
+    text-decoration: none;
+  }
+}
+
+/****************************************
+          COMPONENT: nsv-details
+*****************************************/
+
+@media (max-width: 575.98px) {
+  .nsv-details {
+    display: none;
+  }
+
+  .nsv-details-show .nsv-details {
+    display: initial;
+  }
+
+  .nsv-details-show td.nsv-details,
+  .nsv-details-show th.nsv-details {
+    display: table-cell;
+  }
+}

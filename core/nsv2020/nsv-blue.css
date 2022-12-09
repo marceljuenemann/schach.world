@@ -1,0 +1,83 @@
+/****************************************
+          BOOTSTRAP OVERRIDES
+*****************************************/
+
+a, a:hover {
+  color: #004375;
+}
+
+.page-link, .page-link:hover {
+  color: #2b6096;
+}
+
+.page-item.active .page-link {
+  background-color: #2b6096;
+  border-color: #2b6096;
+}
+
+.btn-primary {
+  background-color: #2b6096;
+  border-color: #2b6096;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #2971a8 !important;
+  border-color: #2971a8 !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: black;
+  font-weight: bold;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #2b6096;
+}
+
+.custom-control .custom-control-input:checked~.custom-control-label::before {
+  background-color: #2b6096;
+  border-color: #2b6096;
+}
+
+/****************************************
+              NSV LAYOUT
+*****************************************/
+
+#nsv-navbar {
+  background: linear-gradient(0deg, #2b6096, #2971a8);
+}
+
+#nsv-navbar a.nav-link {
+  color: white;
+}
+
+#nsv-navbar .nav-item:hover a.nav-link {
+  color: #eee;
+}
+
+#nsv-navbar .dropdown-item:focus, #nsv-navbar .dropdown-item:hover {
+  background: linear-gradient(0deg, #2b6096, #2971a8);
+  color: white;
+}
+
+/****************************************
+          COMPONENT: nsv-table
+*****************************************/
+
+.nsv-table th,
+.nsv-table .nsv-table-header {
+  background: linear-gradient(0deg, #2b6096, #2971a8);
+  color: white;
+}
+
+.nsv-table th a,
+.nsv-table .nsv-table-header a {
+  color: white;
+}
+
+/* TODO: Move Ergebnisdienst to nsv-table once all leagues use nsv2020. */
+table.sed_tabelle th {
+  background: linear-gradient(0deg, #2b6096, #2971a8) !important;
+}
