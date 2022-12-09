@@ -1,0 +1,80 @@
+<?
+/* Spieler Informationen
+ * 
+ * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @version 0.8.0 (2010/7)
+ * @license GNU Public License v3
+ * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * 
+ * @package schach-ergebnisdienst
+ * @subpackage frontend
+ */
+
+  require_once ( "turnier.inc.php" );
+  require_once ( "dwz.inc.php" );
+  require_once ( "gui.inc.php" );
+
+  // Abfragen
+  $info = mysql_fetch_array ( mysql_query ( "SELECT s.*, m.turnier FROM spieler as s INNER JOIN mannschaften as m ON m.id=s.mannschaft WHERE s.id=$_GET[spieler]", $globals ['db'] ), MYSQL_ASSOC );
+  $paarungen = mysql_query ( "SELECT q.runde as sp, IF(p.spieler1=$_GET[spieler],'Heim','Gast') as ort, p.brett as brt, s.id as gegid, s.nachname, s.vorname, s.titel, s.dwz as dwz, s.mannschaft as mannschaft, IF(p.spieler1=$_GET[spieler],p.ergebnis1,p.ergebnis2) as erg FROM spielerpaarungen as p INNER JOIN paarungen as q ON q.id=p.paarung LEFT JOIN spieler as s ON s.id=IF(p.spieler1=$_GET[spieler],p.spieler2,p.spieler1) WHERE p.spieler1=$_GET[spieler] OR p.spieler2=$_GET[spieler] ORDER BY q.runde", $globals ['db'] );
+
+  // Überprüfung
+  if ( !$info || $info ["turnier"] != $globals ["tid"] )
+  {
+    // Wurde das Turnier z.B. umbenannt?
+    $tname = reset ( mysql_fetch_array ( mysql_query ( "SELECT t.directory FROM spieler s INNER JOIN mannschaften m ON m.id=s.mannschaft INNER JOIN turniere t ON t.id=m.turnier WHERE s.id='$_GET[spieler]'", $globals ['db'] ), MYSQL_ASSOC ) );
+    echo "<b>Sie werden weitergeleitet...</b>";
+    echo "<meta http-equiv='refresh' content='0;URL=$globals[httppath]$tname/?spieler=$_GET[spieler]' />";
+    exit;
+  }
+
+    // DSB-Datenbank - Link Berechnung
+    if (strlen($info['zps']) < strlen('xxxxx-yyyy'))
+    {
+      $info['zps'] = str_replace('-', '-0', $info['zps']);
+    }
+    $dsblink = $globals ['dsb_db_sp_zps'] . $info ['zps'];
+
+  // Ausgabe allgemeine Informationen
+  echo "<span class='sed_hl1'>Spielerdetails</span><br /><br />
+        <span class='sed_hl2'>Informationen</span><br /><br />
+        <table class='sed_normal'>
+          <tr><td><b>Name:</b></td><td>".SED_Spielername($info)."</td></tr>
+          <tr><td><b>Mannschaft:</b></td><td>".SED_TeamLink ( $info ['mannschaft'] )."</td></tr>
+          <tr><td><b>DWZ:</b></td><td>$info[dwz]&nbsp;&nbsp;<span class='sed_only_screen d-print-none'>(<a target='_blank' href='$dsblink'>DWZ-Karteikarte</a>)</span></td></tr>";
+    echo ( is_numeric ( $info ['elo'] ) && $info ['elo'] > 0 ? "<tr><td><b>ELO:</b></td><td>$info[elo]</td></tr>" : "" )."
+        </table>";
+
+  // Ausgabe der Paarungen
+  echo "<br /><span class='sed_hl2'>Bisherige Paarungen</span><br /><br />
+        <table class='sed_tabelle' cellspacing='0' cellpadding='3'>
+          <tr><th>Sp.</th><th>Ort</th><th>Brt</th><th>Far</th><th>Gegner</th><th>DWZ</th><th>Mannschaft</th><th>Erg</th></tr>";
+  $gegner = $punkte = array (); $ergchars = array ( '0', SED_REMIS, '1' );
+  while ( $row = mysql_fetch_array ( $paarungen, MYSQL_ASSOC ) )
+  {
+    $farbe = ( ( $row ['ort'] == "Heim" && $row ['brt'] % 2 == 0 ) || ( $row ['ort'] == "Gast" && $row ['brt'] % 2 == 1 ) ) ? "W" : "S";
+    // Hack für NSV Pokal mit merkwürdiger Farbregelung...
+    if ( $prefs['organisation'] ===  '7p' && $row ['brt'] >= 3 ) {
+      $farbe = $farbe == "W" ? "S" : "W";
+    }
+    $mannschaft = $row ['mannschaft'] ? SED_TeamLink ( $row ['mannschaft'] ) : "";
+    echo "<tr><td>$row[sp]</td><td>$row[ort]</td><td>$row[brt]</td><td>$farbe</td><td class='l'><a href='?spieler=$row[gegid]'>".SED_Spielername($row)."</a></td><td>$row[dwz]</td><td class='l'>$mannschaft</td><td>$row[erg]</td></tr>";
+    if ( $row ['dwz'] && in_array ( $row ['erg'], $ergchars ) )
+    {
+      $gegner [] = $row ['dwz'];
+      $punkte [] = str_replace ( SED_REMIS, 0.5, $row ['erg'] );
+    }
+  }
+  echo "</table>";
+
+  // Inoffiziele DWZ Auswertung
+  if ( $dwz = SED_DWZ ( $info ['dwz'], $gegner, $punkte, $info ['geburt'] ) )
+  {
+    echo "<br /><br /><span class='sed_hl2'>Inoffizielle DWZ-Auswertung</span><br /><br />
+          <table class='sed_normal'>";
+    foreach ( $dwz as $k => $v )
+      echo "<tr><td><b>$k:</b></td><td>$v</td></tr>";
+    echo "</table>";
+    echo "<span style='font-size: smaller'><br />Inoffizielle Berechnung. Programmiert von Andreas Klein und Stefan Flassig, <a href='http://isewase.de'>isewase.de</a></span>";
+  }
+?>

@@ -1,0 +1,258 @@
+/*********************/
+/*** ERGEBNISLISTE ***/
+/*********************/
+
+.sed-ergebnisse .sed-mannschaft,
+.sed-ergebnisse .sed-spieler {
+  flex: 1 1px; /* Grow these cells equally, without taking content width into account. */
+}
+
+.sed-ergebnisse .sed-dwz {
+  flex-grow: 1;
+  min-width: 50px;
+}
+
+.sed-ergebnisse .sed-name {
+  flex-grow: 1;
+}
+
+@media (max-width: 575.98px) {
+  .sed-ergebnisse .sed-name {
+    min-width: 100%; /* force DWZ into next row. */
+  }
+}
+
+.sed-ergebnisse .sed-passnr {
+  min-width: 37px;
+  text-align: center;
+}
+
+.sed-ergebnisse .sed-ergebnis {
+  min-width: 50px;
+  text-align: center;
+}
+
+.sed-ergebnisse .sed-spieler1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.sed-ergebnisse .sed-spieler1 .sed-dwz {
+  text-align: right;
+}
+
+.sed-ergebnisse .sed-spieler2 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  text-align: right;
+}
+
+.sed-ergebnisse .sed-spieler2 .sed-dwz {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .sed-ergebnisse {
+    min-width: 600px;
+  }
+}
+
+/*****************************************/
+/*** PFLICHT LAUT TEMPLATE-RICHTLINIEN ***/
+/*****************************************/
+
+table.sed_normal {
+}
+
+table.sed_normal .l {
+  text-align: left;
+}
+
+table.sed_normal .c {
+  text-align: center;
+}
+
+table.sed_normal .r {
+  text-align: right;
+}
+
+table.sed_normal a, table.sed_normal a:visited, table.sed_normal a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* ********** */
+
+table.sed_tabelle {
+  border-collapse: collapse;
+}
+
+table.sed_tabelle th {
+  background: linear-gradient(0deg, #c32811, #e15b58);
+  color: white;
+}
+
+table.sed_tabelle td,
+table.sed_tabelle th {
+  border: solid 1px black;
+  padding-left: 3px;
+  padding-right: 3px;
+  text-align: center;
+}
+
+table.sed_tabelle .l {
+  text-align: left;
+}
+
+table.sed_tabelle .c {
+  text-align: center;
+}
+
+table.sed_tabelle .r {
+  text-align: right;
+}
+
+table.sed_tabelle a, table.sed_tabelle a:visited, table.sed_tabelle a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+table.sed_tabelle th a, table.sed_tabelle th a:visited, table.sed_tabelle th a:active {
+  color: white;
+}
+
+/* ********** */
+
+td.sed_aufsteiger {
+  background-color: #C5FFA1;
+}
+
+td.sed_absteiger {
+  background-color: #FFD1CF;
+}
+
+td.sed_aufsteigerRelegation {
+  background-color: #FFF8AB;
+}
+
+td.sed_absteigerRelegation {
+  background-color: #FFE9B8;
+}
+
+/* ********** */
+
+span.sed_hl1 {
+  font-size: 22pt;
+}
+
+span.sed_hl2 {
+  font-size: 18pt;
+}
+
+span.sed_hl3 {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+/* ********** */
+
+/** DEPRECATED: replace with "btn btn-sm btn-primary" */
+input.sed_submit {
+  /* copied from btn */
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  /* copied from btn-sm */
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+  /* copied from btn-primary (NSV version) */
+  color: #fff;
+  background-color: #c32811;
+  border-color: #c32811;
+}
+
+input.sed_submit:hover, input.sed_submit:active {
+  background-color: #a4220e;
+  border-color: #a4220e;
+}
+
+/* ********** */
+
+fieldset.sed_admin_desk {
+  width: 95%;
+}
+
+fieldset.sed_admin_desk a {
+  color: #000000;
+}
+
+table.sed_admin_desk {
+  width: 100%;
+}
+
+td.sed_admin_desk_icon {
+  padding-top: 10px;
+  text-align: center;
+  width: 20%;
+}
+
+td.sed_admin_desk_icon a, td.sed_admin_desk_icon a:hover,
+td.sed_admin_desk_icon a:active, td.sed_admin_desk_icon a:visited {
+  color: #000000;
+  font-size: 8pt;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+td.sed_admin_desk_icon img {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ********** */
+
+img.sed_admin_icon, img.sed_admin_icon:hover {
+  background: none;
+  border: 0pt;
+  height: 16px;
+  margin-bottom: 2pt;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  vertical-align: bottom;
+  width: 16px;
+}
+
+/* ********** */
+
+hr.sed_hr {
+  color: #dddddd;
+  height: 3px;
+  width: 100%;
+}
+
+div.sed_infomeldung {
+  background-image: url(../systemicons/important.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 42px;
+  width: 75%;
+}       
