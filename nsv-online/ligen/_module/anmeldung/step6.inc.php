@@ -9,7 +9,6 @@
  * @package schach-ergebnisdienst
  * @subpackage anmeldung
  */
-
     // Spieler-Sortierung verarbeiten
     $bnr = $prefs ['spielDreistelligeNr'] * $anmeldung->get("mnr") * 100 + 1;
     for ( ; isset ( $_POST ["spieler_$bnr"] ); ++$bnr ){
