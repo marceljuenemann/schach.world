@@ -33,15 +33,10 @@ These are the setup steps to get the Ergebnisdienst (ligen/) running locally
 
 ### Configure the Ergebnisdienst
 
-1. config
+1. Copy `ligen/config.inc.php.example` to `ligen/config.inc.php` and add your database connection info to it. This file should not be commited and is part of `.gitignore`
 1. Open http://localhost/ligen/?m=serverinfo. You should now get some statistics including "Anzahl Turniere: 1"
-1. Open http://localhost/ligen/. You should see the same statistics screen. If you don't, you need to enable `mod_rewrite` in apache. Also make sure .htaccess files are parsed at all by setting     `AllowOverride All` in your apache config.
-
-
-
-1. Open localhost/ligen/test/. You should now see the test tournament data :)
-1. You can use the master password (123456 by default) to login as any user (Staffelleiter oder Turnierleiter).
-he test tournament data :)
+1. Open http://localhost/ligen/. You should see the same statistics screen. If you don't, you need to enable `mod_rewrite` in apache. Also make sure .htaccess files are parsed at all by setting `AllowOverride All` in your apache config.
+1. Open localhost/ligen/test-2022/. You should now see the test tournament data :)
 1. You can use the master password (123456 by default) to login as any user (Staffelleiter oder Turnierleiter).
 
 ## TODO for migration to Github
