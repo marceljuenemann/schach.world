@@ -297,11 +297,14 @@ class SED_Spieler {
             $value = str_replace ( "'", "\\'", $value );
 
             // TODO: hack, could be much nicer...
+            $set [] = "$field='$value'";
+/*
             if ( in_array($field, array('nmSid', 'nmR', 'elo', 'geburt')) && $value === '' ) {
                 $set [] = "$field=null";
             } else {
                 $set [] = "$field='$value'";
             }
+            */
         }
         $set = implode ( ", ", $set );
 

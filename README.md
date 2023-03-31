@@ -43,10 +43,16 @@ These are the setup steps to get the Ergebnisdienst (ligen/) running locally
 
 (just some notes for Marcel right now, ignore this section)
 
-* Enable HTTPS for local development? Currently disabled HTTPS redirect in ligen/.htaccess
-* Move hack in turniere.inc.php to correct line
+* Hook prod folder up to Github
+* Do another diff with production for ligen/
+* Move changes to prod
+    * Move hack in turniere.inc.php to correct line
+    * Hack in spieler.class.php
+    * 
+* Enable HTTPS for local development
+  * .htaccess has a redirect to HTTPS
+  * Shouldn't actually be needed in the ligen/.htaccess though, as it's in the root directory
+  * Ubuntu setup instructions: https://stackoverflow.com/a/25946171/1620264
 * My local MySQL db doesn't allow '' instead of null for integer fields. That seems to work in production right now. Either need to change the code or configure the MySQL connection to allow for this (maybe sql_mode=''?)
-* PHP 8 suppoert
-  * Use __construct everywhere instead of function with same name as class
-  * Fixed mysql-shim manually to work with PHP 8
-* Do a diff with production, as I did a few changes...
+    * We should just build a whole new data layer anyways, really :)
+* Update this README a bit

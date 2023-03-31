@@ -1,0 +1,27 @@
+# TODO: These files should be added to the repository
+nsv-online/.htaccess
+nsv-online/wordpress/
+
+# TODO: The following files are legacy code and should be rewritten rather than added to the repo
+nsv-online/anmeldung/
+nsv-online/bezirke/
+nsv-online/core/apps/
+nsv-online/core/modules/
+nsv-online/core/templates/
+nsv-online/core/*.php
+nsv-online/grandprix/
+nsv-online/termine/
+nsv-online/turniere/
+nsv-online/verband/
+
+# Files that should actually be excluded
+nsv-online/cache/
+nsv-online/downloads/
+nsv-online/images/
+nsv-online/ligen/config.inc.php
+nsv-online/ligen/_test/swi/*.swi
+nsv-online/schachzeitung/
+
+nsv-online/.user.ini
+nsv-online/cronjob_*
+nsv-online/goto.php
