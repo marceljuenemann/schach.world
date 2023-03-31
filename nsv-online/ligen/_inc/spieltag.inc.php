@@ -189,7 +189,7 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
         // Spieltag Vorschau
         $result ['vorschautermin'] = SED_GetTermin ( $runde + 1, $staffel );
         $rsrc = mysql_query ( "SELECT mannschaft1 as mid1, mannschaft2 as mid2, DATE_FORMAT(termin,'%d.%m.%Y') verlegung FROM paarungen WHERE staffel=$staffel and runde=$runde+1", $globals ['db'] );
-        if ( $rsrc && mysql_num_rows ( $rsrc ) && $staffel ['infos'] )
+        if ( $rsrc && mysql_num_rows ( $rsrc ) /* && $staffel ['infos'] */ )
         {
             for ( $i = 0; $temp = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ); ++$i )
             {

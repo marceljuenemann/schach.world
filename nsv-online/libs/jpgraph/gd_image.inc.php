@@ -1015,7 +1015,7 @@ class Image {
     }
 	
 
-    function _StrokeBuiltinFont($x,$y,$txt,$dir=0,$paragraph_align="left",&$aBoundingBox,$aDebug=false) {
+    function _StrokeBuiltinFont($x,$y,$txt,$dir=0,$paragraph_align="left",&$aBoundingBox=null,$aDebug=false) {
 
 	if( is_numeric($dir) && $dir!=90 && $dir!=0) 
 	    JpGraphError::RaiseL(25091);//(" Internal font does not support drawing text at arbitrary angle. Use TTF fonts instead.");
@@ -1167,7 +1167,7 @@ class Image {
 	return $box[2]-$box[0]+1;	
     }
 
-    function _StrokeTTF($x,$y,$txt,$dir=0,$paragraph_align="left",&$aBoundingBox,$debug=false) {
+    function _StrokeTTF($x,$y,$txt,$dir=0,$paragraph_align="left",&$aBoundingBox=null,$debug=false) {
 
 	// Setupo default inter line margin for paragraphs to
 	// 25% of the font height.
@@ -2298,7 +2298,7 @@ class RotImage extends Image {
 	parent::Arc($xc,$yc,$w,$h,$s,$e);
     }
 
-    function FilledArc($xc,$yc,$w,$h,$s,$e) {
+    function FilledArc($xc,$yc,$w,$h,$s,$e,$style = '') {
 	list($xc,$yc) = $this->Rotate($xc,$yc);
 	$s += $this->a;
 	$e += $this->a;

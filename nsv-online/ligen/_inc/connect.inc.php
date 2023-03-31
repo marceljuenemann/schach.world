@@ -31,6 +31,4 @@
 		SED_Error ( "Fehler: Datenbank konnte nicht geöffnet werden!", true );
   mysql_set_charset('latin1');
 	$globals ['dbpw'] = "******";
-
-	mysql_query ("SET GLOBAL sql_mode = ''; "); // TODO: check if save to add to production
 ?>

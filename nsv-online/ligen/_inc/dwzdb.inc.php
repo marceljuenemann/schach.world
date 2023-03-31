@@ -21,9 +21,6 @@ class SED_DWZ_Request {
     const SORT_DWZ = "dwz DESC, Spielername";
     const SORT_NAME = "Spielername";
 
-    function SED_DWZ_Request (){
-    }
-
     function addCondition ( $where ){
         $this->where .= " AND $where";
     }

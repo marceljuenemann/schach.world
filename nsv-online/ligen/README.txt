@@ -1,7 +1,5 @@
-Test
-
 Schach-Ergebnisdienst v0.8.0
-Copyright (C) 2006-2013 Marcel Jï¿½nemann <warumistkeinnamefrei@gmail.com>
+Copyright (C) 2006-2013 Marcel Jünemann <warumistkeinnamefrei@gmail.com>
 http://code.google.com/p/schach-ergebnisdienst/
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.

@@ -393,7 +393,7 @@ class JpgTimer {
     var $idx;	
 //---------------
 // CONSTRUCTOR
-    function JpgTimer() {
+    function __construct() {
 	$this->idx=0;
     }
 
@@ -433,7 +433,7 @@ class DateLocale {
 
 //---------------
 // CONSTRUCTOR	
-    function DateLocale() {
+    function __construct() {
 	settype($this->iDayAbb, 'array');
 	settype($this->iShortDay, 'array');
 	settype($this->iShortMonth, 'array');
@@ -463,8 +463,8 @@ class DateLocale {
 
 	for ( $i = 0, $ofs = 0 - strftime('%w'); $i < 7; $i++, $ofs++ ){
 	    $day = strftime('%a', strtotime("$ofs day"));
-	    $day{0} = strtoupper($day{0});
-	    $this->iDayAbb[$aLocale][]= $day{0};
+	    $day[0] = strtoupper($day[0]);
+	    $this->iDayAbb[$aLocale][]= $day[0];
 	    $this->iShortDay[$aLocale][]= $day;
 	}
 
@@ -520,7 +520,7 @@ class Footer {
     var $iRightMargin = 3;
     var $iBottomMargin = 3;
 
-    function Footer() {
+    function __construct() {
 	$this->left = new Text();
 	$this->left->ParagraphAlign('left');
 	$this->center = new Text();
@@ -628,7 +628,7 @@ class Graph {
     // aTimeOut		Timeout in minutes for image in cache
     // aInline		If true the image is streamed back in the call to Stroke()
     //			If false the image is just created in the cache
-    function Graph($aWidth=300,$aHeight=200,$aCachedName="",$aTimeOut=0,$aInline=true) {
+    function __construct($aWidth=300,$aHeight=200,$aCachedName="",$aTimeOut=0,$aInline=true) {
 	GLOBAL $gJpgBrandTiming;
 	// If timing is used create a new timing object
 	if( $gJpgBrandTiming ) {
@@ -1386,7 +1386,8 @@ class Graph {
 	    $txts = $this->y2texts;
 	else
 	    $txts = $this->texts;
-	$n = count($txts);
+	// $n = count($txts);HACK
+      $n = 0;
 	$min=null;
 	$max=null;
 	for( $i=0; $i < $n; ++$i ) {
@@ -1605,6 +1606,10 @@ class Graph {
 	    JpGraphError::RaiseL(25034);//("<strong>JpGraph: Can't draw unspecified X-scale.</strong><br>No plots.<br>");
 
 	//Check if we should autoscale y-axis
+      
+  // TODO / HACK: problem here...
+     $this->lines =array();
+      
 	if( !$this->yscale->IsSpecified() && count($this->plots)>0 ) {
 	    list($min,$max) = $this->GetPlotsYMinMax($this->plots);
  	    $lres = $this->GetLinesYMinMax($this->lines);
@@ -2859,7 +2864,7 @@ class TTF {
     var $font_files,$style_names;
 //---------------
 // CONSTRUCTOR
-    function TTF() {
+    function __construct() {
 	$this->style_names=array(FS_NORMAL=>'normal',FS_BOLD=>'bold',FS_ITALIC=>'italic',FS_BOLDITALIC=>'bolditalic');
 	// File names for available fonts
 	$this->font_files=array(
@@ -2981,7 +2986,7 @@ class Text {
 // CONSTRUCTOR
 
     // Create new text at absolute pixel coordinates
-    function Text($aTxt="",$aXAbsPos=0,$aYAbsPos=0) {
+    function __construct($aTxt="",$aXAbsPos=0,$aYAbsPos=0) {
 	if( ! is_string($aTxt) ) {
 	    JpGraphError::RaiseL(25050);//('First argument to Text::Text() must be s atring.');
 	}
@@ -3217,7 +3222,7 @@ class GraphTabTitle extends Text{
     var $corner = 6 , $posx = 7, $posy = 4;
     var $color='darkred',$fillcolor='lightyellow',$bordercolor='black';
     var $align = 'left', $width=TABTITLE_WIDTHFIT;
-    function GraphTabTitle() {
+    function __construct() {
 	$this->t = '';
 	$this->font_style = FS_BOLD;
 	$this->hide = true;
@@ -3238,8 +3243,8 @@ class GraphTabTitle extends Text{
 	$this->align = $aAlign;
     }
 
-    function SetPos($aAlign) {
-	$this->align = $aAlign;
+    function SetPos($aXAbsPos = 0, $aYAbsPos = 0, $aHAlign = 'left', $aVAlign = 'top') {
+	$this->align = $aXAbsPos;
     }
     
     function SetWidth($aWidth) {
@@ -3255,7 +3260,7 @@ class GraphTabTitle extends Text{
 	$this->corner = $aD ;
     }
 
-    function Stroke(&$aImg) {
+    function Stroke(&$aImg, $x = null, $y = null) {
 	if( $this->hide ) 
 	    return;
 	$this->boxed = false;
@@ -3348,7 +3353,7 @@ class SuperScriptText extends Text {
     var $iSDir=0;
     var $iSimple=false;
 
-    function SuperScriptText($aTxt="",$aSuper="",$aXAbsPos=0,$aYAbsPos=0) {
+    function __construct($aTxt="",$aSuper="",$aXAbsPos=0,$aYAbsPos=0) {
 	parent::Text($aTxt,$aXAbsPos,$aYAbsPos);
 	$this->iSuper = $aSuper;
     }
@@ -3526,7 +3531,7 @@ class Grid {
     var $fill=false,$fillcolor=array('#EFEFEF','#BBCCFF');
 //---------------
 // CONSTRUCTOR
-    function Grid(&$aAxis) {
+    function __construct(&$aAxis) {
 	$this->scale = &$aAxis->scale;
 	$this->img = &$aAxis->img;
     }
@@ -3689,7 +3694,7 @@ class Axis {
 
 //---------------
 // CONSTRUCTOR
-    function Axis(&$img,&$aScale,$color=array(0,0,0)) {
+    function __construct(&$img,&$aScale,$color=array(0,0,0)) {
 	$this->img = &$img;
 	$this->scale = &$aScale;
 	$this->color = $color;
@@ -4144,7 +4149,7 @@ class Ticks {
 
 //---------------
 // CONSTRUCTOR
-    function Ticks(&$aScale) {
+    function __construct(&$aScale) {
 	$this->scale=&$aScale;
 	$this->precision = -1;
     }
@@ -4271,7 +4276,7 @@ class LinearTicks extends Ticks {
 
 //---------------
 // CONSTRUCTOR
-    function LinearTicks() {
+    function __construct() {
 	$this->precision = -1;
     }
 
@@ -4632,7 +4637,7 @@ class LinearScale {
     var $name = 'lin';
 //---------------
 // CONSTRUCTOR
-    function LinearScale($aMin=0,$aMax=0,$aType="y") {
+    function __construct($aMin=0,$aMax=0,$aType="y") {
 	assert($aType=="x" || $aType=="y" );
 	assert($aMin<=$aMax);
 		
@@ -5169,7 +5174,7 @@ class ImgStreamCache {
     var $timeout=0; 	// Infinite timeout
     //---------------
     // CONSTRUCTOR
-    function ImgStreamCache(&$aImg, $aCacheDir=CACHE_DIR) {
+    function __construct(&$aImg, $aCacheDir=CACHE_DIR) {
 	$this->img = &$aImg;
 	$this->cache_dir = $aCacheDir;
     }
@@ -5345,7 +5350,7 @@ class Legend {
     var $reverse = false ;
 //---------------
 // CONSTRUCTOR
-    function Legend() {
+    function __construct() {
 	// Empty
     }
 //---------------
@@ -5817,7 +5822,7 @@ class Plot {
     var $legendcsimalt='';
 //---------------
 // CONSTRUCTOR
-    function Plot(&$aDatay,$aDatax=false) {
+    function __construct(&$aDatay,$aDatax=false) {
 	$this->numpoints = count($aDatay);
 	if( $this->numpoints==0 )
 	    JpGraphError::RaiseL(25121);//("Empty input data array specified for plot. Must have at least one data point.");
@@ -6001,7 +6006,7 @@ class PlotLine {
 
 //---------------
 // CONSTRUCTOR
-    function PlotLine($aDir=HORIZONTAL,$aPos=0,$aColor="black",$aWeight=1) {
+    function __construct($aDir=HORIZONTAL,$aPos=0,$aColor="black",$aWeight=1) {
 	$this->direction = $aDir;
 	$this->color=$aColor;
 	$this->weight=$aWeight;

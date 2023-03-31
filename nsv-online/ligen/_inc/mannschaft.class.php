@@ -1,15 +1,15 @@
 <?
 /* Abfrage von Mannschaftsdaten
  *
- * In dieser Datei wird die Klasse SED_Mannschaft zur Verfügung
- * gestellt, mit der verschiedene Informationen über eine Mannschaft
- * abgefragt werden können: Allgemeine Infos, Spiellokal, Mannschafts-
- * führer, Spielplan, Aufstellung, Einzelergebnisse.
+ * In dieser Datei wird die Klasse SED_Mannschaft zur VerfÃ¼gung
+ * gestellt, mit der verschiedene Informationen Ã¼ber eine Mannschaft
+ * abgefragt werden kÃ¶nnen: Allgemeine Infos, Spiellokal, Mannschafts-
+ * fÃ¼hrer, Spielplan, Aufstellung, Einzelergebnisse.
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage mannschaft
@@ -67,7 +67,7 @@ class SED_Mannschaft {
     private $infos;
 
     // Konstruktor: Lade Mannschaft
-    function __construct( $id ){
+    function __construct ( $id ){
         if ( !is_numeric ( $id ) || !$id )
             SED_Error ( "MID muss numerisch sein!", true );
         $this->infos ["id"] = $id;
@@ -223,7 +223,7 @@ class SED_Mannschaft {
             LEFT JOIN spieler g ON g.id=IF(p.mannschaft1=m.id,sp.spieler2,sp.spieler1)
             WHERE m.id=".$this->get("id"), $globals ['db'] );
 
-        // Ergebnisse im Array ergebnisse speichern und Statistik führen
+        // Ergebnisse im Array ergebnisse speichern und Statistik fÃ¼hren
         while ( $partie = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) )
         {
             // Name des Gegners
@@ -242,11 +242,11 @@ class SED_Mannschaft {
                 $ergebnisse [$partie ['spieler']]["einsaetze"] = 0;
             }
 
-            // Statistik führen
+            // Statistik fÃ¼hren
             switch ( $partie ['ergebnis'] ){
                 case "1":
                     $ergebnisse [$partie ['spieler']]["pkt"] += 0.5;
-                case "½":
+                case utf8_decode("Â½"):
                     $ergebnisse [$partie ['spieler']]["pkt"] += 0.5;
                 case "0":
                     $ergebnisse [$partie ['spieler']]["spiele"] += 1;
@@ -263,7 +263,7 @@ class SED_Mannschaft {
                 : "";
         }
 
-        // Spieler finden, die in einer höheren Mannschaft gespielt haben
+        // Spieler finden, die in einer hÃ¶heren Mannschaft gespielt haben
         $rsrc = mysql_query (
             "SELECT m.id as ersatz, p.staffel, p.runde, s.id spieler, IF(p.mannschaft1=m.id,sp.ergebnis1,sp.ergebnis2) ergebnis, IF(p.mannschaft1=m.id,p.mannschaft2,p.mannschaft1) gegner
             FROM mannschaften m

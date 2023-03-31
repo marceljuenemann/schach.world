@@ -19,7 +19,7 @@ class SED_AjaxRequest {
     var $options = array ();
     var $onresult;
     
-    function SED_AjaxRequest ( $type ){
+    function __construct ( $type ){
         $this->type = $type;
     }
     

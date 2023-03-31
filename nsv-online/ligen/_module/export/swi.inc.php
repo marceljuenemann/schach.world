@@ -96,7 +96,7 @@ Ser.Nummer:      9603051462
 class SWI_Mannschaft {
 	private $data;
 	
-	function SWI_Mannschaft ($id){
+	function __construct($id){
 		$r = mysql_query("SELECT name, mnr, Vereinname as vname FROM mannschaften m LEFT JOIN dwz_vereine d ON d.ZPS=m.zps WHERE m.id='$id'");
 		if (mysql_num_rows($r) != 1){
 			die("SWI_Mannschaft failed to construct for id: ".$id);
@@ -123,7 +123,7 @@ class SWI_Spieler {
 	private $data;
 	private $results = array();
 	
-	function SWI_Spieler ($id){
+	function __construct($id){
 		$r = mysql_query("SELECT id, mannschaft, zps, brettnr, vorname, nachname, dwz, elo, geburt FROM spieler WHERE id='$id'");
 		if (mysql_num_rows($r) != 1){
 			throw new Exception("SWI_Spieler failed to construct for id: ".$id);
@@ -517,38 +517,3 @@ class SWI_Main extends SWI_TextWriter {
 	
 $main = new SWI_Main();
 $main->main();
-
-
-/*
-print_r(mb_list_encodings());
-$str = "abcäöü";
-pcs($str);
-pcs(utf8_encode($str));
-pcs(iconv("ISO-8859-1", "CP850", $str));
-pcs(mb_convert_encoding($str, "CP850", "ISO-8859-1"));
-
-function pcs($str){
-	echo "This $str is ".mb_detect_encoding($str)."\n";
-	for ($i = 0; $i < strlen($str); ++$i){
-		echo ord($str[$i]). " ";
-	}
-	echo "\n";
-}
-
-
-
-
-
-
-exit();	
-	*/
-	
-
-	
-	
-
-
-
-
-
-?>

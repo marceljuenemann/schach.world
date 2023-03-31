@@ -113,6 +113,7 @@ class SED_Tabelle {
         global $globals;
         global $prefs;
         $this->staffel = $staffel;
+        $this->teams = array();
 
         // Mannschaften holen
         $res = mysql_query ( "SELECT m.id FROM mannschaften as m WHERE m.staffel=$staffel", $globals ['db'] );
