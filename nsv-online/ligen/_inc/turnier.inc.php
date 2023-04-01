@@ -35,12 +35,12 @@
     SED_Error ( "Es konnte kein passendes Turnier gefunden werden!", true );
   $prefs = mysql_fetch_array ( mysql_query ( $query, $globals ['db'] ), MYSQL_ASSOC );
 
-  // Temporary hack: Disable Rundmail sign up since it's being used for spam mails.
-  $prefs['sysKeinNewsletter'] = 1;
-
   // Fehler?
   if ( !is_array ( $prefs ) )
     SED_Error ( "Das Turnier scheint nicht zu existieren!", true );
+
+  // Temporary hack: Disable Rundmail sign up since it's being used for spam mails.
+  $prefs['sysKeinNewsletter'] = 1;
 
   // Für $globals [tid] sorgen
   $globals ['tid'] = $prefs ['id'];
