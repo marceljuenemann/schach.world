@@ -9,17 +9,18 @@ This repository contains the open-sourced parts of nsv-online.de. Notably:
 These are the general steps required for any local development
 
 1. Install apache with PHP 8, pointing the DocumentRoot to the `nsv-online` directory
+1. Enable the `headers` apache module. On Ubuntu that's just `sudo a2enmod headers` and `sudo service apache2 restart` (alternatively, just uncomment the `Header` lines from `.htaccess`)
 1. Enable SSL
     * This is necessary because `.htaccess` will redirect any request to HTTPs. Alternatively, you can uncomment those redirects in the `.htaccess`, but then you need to be careful when committing...
     * Instructions for Ubuntu can be found here: https://stackoverflow.com/a/25946171/1620264
     * You probably also want to tell your browser to accept the self-sigend certificate: https://stackoverflow.com/a/31900210/1620264
-1. Open localhost/infobox-lem.php to make sure PHP is working
+1. Open https://localhost/infobox-lem.php to make sure PHP is working
 1. Verify short_open_tag is set to On. Otherwise modify your php.ini accordingly.
 1. Make sure display_errors is set to On for debugging purposes. I recommend disabling E_NOTICE and E_STRICT though as the code will spew lots of those otherwise :)
 1. Install MySQL (or MariaDB)
 1. Install phpmyadmin or a DB editor of your choice
-
-## Setup for ligen/
+ 
+## Setup ligen/ locally
 
 These are the setup steps to get the Ergebnisdienst (ligen/) running locally
 
@@ -34,10 +35,26 @@ These are the setup steps to get the Ergebnisdienst (ligen/) running locally
     1. Import data for geodb and verbaende tables from `setup/ligen-db/01_data.sql`
     1. Import test data from `setup/ligen-db/02_testdata.sql`. This contains a simple test tournament.
 1. Copy `ligen/config.inc.php.example` to `ligen/config.inc.php` and add your database connection info to it. This file should not be commited and is part of `.gitignore`
-1. Open http://localhost/ligen/?m=serverinfo. You should now get some statistics including "Anzahl Turniere: 1"
-1. Open http://localhost/ligen/. You should see the same statistics screen. If you don't, you need to enable `mod_rewrite` in apache. Also make sure .htaccess files are parsed at all by setting `AllowOverride All` in your apache config.
+1. Open https://localhost/ligen/?m=serverinfo. You should now get some statistics including "Anzahl Turniere: 1"
+1. Open https://localhost/ligen/. You should see the same statistics screen. If you don't, you need to enable `mod_rewrite` in apache. Also make sure .htaccess files are parsed at all by setting `AllowOverride All` in your apache config.
 1. Open localhost/ligen/test-2022/. You should now see the test tournament data :)
 1. You can use the master password (123456 by default) to login as any user (Staffelleiter oder Turnierleiter).
+
+## Setup WordPress locally
+
+In order to get a local WordPress installation with the NSV theme and plugins, follow these instructions.
+
+1. [Download WordPress](https://wordpress.org/download/) and extract it into `public/wordpress/`
+1. Create a database for WordPress and enter the connection credentials into `public/wordpress/wp-config.php`
+1. Open https://localhost/wordpress and follow WordPress' installation wizard
+1. You should now be able to see the default WordPress theme at https://localhost
+1. Create the following empty files: `public/core/config.inc.php` and `public/core/functions.inc.php` (these are part of the legacy NSV site and still required at the moment by the theme)  
+1. Log into /wp-admin and change the following settings:
+    1. Under General settings, set the URLs to https://localhost/ (without the wordpress/ suffix)
+    1. Under Appearance / Themes, activate *NSV 2020 Local Dev Edition*. This is a child theme of the production theme with some sidebar widgets excluded that require legacy code not included in this repo.
+1. https://localhost should now show you a website in the NSV theme :)
+
+TODO: Get some plugins working
 
 ## TODO for migration to Github
 
