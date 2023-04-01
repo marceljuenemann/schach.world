@@ -6,6 +6,7 @@ public/wordpress/wp-content/*
 !public/wordpress/wp-content/themes
 public/wordpress/wp-content/themes/*
 !public/wordpress/wp-content/themes/nsv2020
+!public/wordpress/wp-content/themes/nsv2020-local
 
 # TODO: The following files are legacy code and should be rewritten rather than added to the repo
 public/anmeldung/
