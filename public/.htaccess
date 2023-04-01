@@ -1,0 +1,40 @@
+RewriteEngine On
+RewriteBase /
+
+# Weiterleitung auf HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
+
+# Weiterleitungen
+RewriteRule ^bezirke/([A-Za-z]*)$ /bezirke/bezirk.php?kurzname=$1 [L]
+RewriteRule ^core/apps/kontakt/?$ /kontakt/ [R,L]
+RewriteRule ^cutenews/data/upimages/(.*)$ downloads/cutenews/$1 [R,L]
+RewriteRule ^goto/(.*)$ /goto.php?goto=$1 [QSA,L]
+RewriteRule ^grandprix/$ /grandprix/anmeldung/ [R,L]
+RewriteRule ^jugend/ https://nsj-online.de/ [R,L]
+RewriteRule ^LEM/?$ /anmeldung/lem2023/ [R,L,NC]
+RewriteRule ^senioren/ http://nds-schachsenioren.de/ [R,L]
+RewriteRule ^turniere/Bezirk-Hannover-Open-20([0-9]+) /turniere/bezirk-hannover-open/20$1/ [R,L]
+RewriteRule ^turniere/Bezirk-Hannover-BDP-2022 /turniere/bezirk-hannover-bdp/2022/ [R,L]
+RewriteRule ^turniere/lem20([0-9]+) /turniere/lem/20$1/ [R,L]
+RewriteRule ^verband/Ehrengericht.html /ehrengericht/ [R,L]
+RewriteRule ^verband/Impressum.html /impressum/ [R,L]
+RewriteRule ^verband/Ligenuebersicht.php /alle-ligen/ [R,L]
+RewriteRule ^verband/NSV.html /nsv/ [R,L]
+RewriteRule ^verband/Ordnungen.html /ordnungen/ [R,L]
+RewriteRule ^verband/Turniergericht.html /turniergericht/ [R,L]
+RewriteRule ^verband/Vorstand.html /vorstand/ [R,L]
+RewriteRule ^vereine/70([0-9]*)$ /bezirke/verein.php?zps=70$1 [L]
+
+# WordPress
+# Bis auf existierende Dateien und Order wird alles von WP verarbeitet!
+RewriteRule ^wp-(.*)$ /wordpress/wp-$1 [L]
+RewriteRule ^xmlrpc.php$ /wordpress/xmlrpc.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wordpress/index.php [L,NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ /wordpress/index.php [L]
+
+# Circumvent Domainfactory's NGINX cache (Browsers ignore s-maxage)
+Header always set Cache-Control "s-maxage=0"
