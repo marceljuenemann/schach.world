@@ -1,5 +1,11 @@
-# TODO: These files should be added to the repository
-public/wordpress/
+# Exclude the WordPress installation, except for our theme and plugins
+# TODO: Add plugins
+public/wordpress/*
+!public/wordpress/wp-content
+public/wordpress/wp-content/*
+!public/wordpress/wp-content/themes
+public/wordpress/wp-content/themes/*
+!public/wordpress/wp-content/themes/nsv2020
 
 # TODO: The following files are legacy code and should be rewritten rather than added to the repo
 public/anmeldung/
