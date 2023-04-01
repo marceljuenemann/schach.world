@@ -25,3 +25,7 @@ public/schachzeitung/
 public/.user.ini
 public/cronjob_*
 public/goto.php
+
+# Don't want to share VS Code settings as I disable git when mounting with sshfs :)
+.vscode
+
