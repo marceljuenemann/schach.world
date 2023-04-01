@@ -1,9 +1,8 @@
 RewriteEngine On
 
 # Weiterleitung auf HTTPS
-# TODO: Don't commit! Only disabled for local development
-#RewriteCond %{HTTPS} !=on
-#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
 
 # Udo...
 RewriteRule ^frl/anmelden.html /ligen/frl/?m=anmeldung [R]

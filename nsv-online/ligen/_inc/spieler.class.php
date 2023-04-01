@@ -66,11 +66,6 @@ class SED_Spieler {
     // Instanzvariablen
     private $data = array ();
 
-    /* Does nothing
-     */
-    function __construct (){
-    }
-
     /* Liefert einen Wert, mit htmlentities codiert
      * @return string|UnknownFieldException
      */
@@ -295,16 +290,7 @@ class SED_Spieler {
             if ( $field == "id" ) continue; // Nachmeldung bzw. so lassen
             $value = $this->isFieldSet ( $field ) ? $this->getDecoded ( $field ) : "";
             $value = str_replace ( "'", "\\'", $value );
-
-            // TODO: hack, could be much nicer...
             $set [] = "$field='$value'";
-/*
-            if ( in_array($field, array('nmSid', 'nmR', 'elo', 'geburt')) && $value === '' ) {
-                $set [] = "$field=null";
-            } else {
-                $set [] = "$field='$value'";
-            }
-            */
         }
         $set = implode ( ", ", $set );
 
