@@ -1,4 +1,4 @@
-# Exclude the WordPress installation, except for our theme and plugins
+# Exclude the WordPress installation, except for custom NSV themes and plugins
 public/wordpress/*
 !public/wordpress/wp-content
 public/wordpress/wp-content/*
@@ -9,7 +9,19 @@ public/wordpress/wp-content/themes/*
 !public/wordpress/wp-content/plugins
 public/wordpress/wp-content/plugins/*
 !public/wordpress/wp-content/plugins/nsv-core
-# TODO: Add other nsv plugins
+!public/wordpress/wp-content/plugins/nsv-turniere
+!public/wordpress/wp-content/plugins/nsv-misc
+# TODO: Add plugins/nsv-archive after moving spreadsheet links to config file
+
+# Add some config files for nsv-turniere plugin (just as an example really) 
+!public/wordpress/wp-content/uploads
+public/wordpress/wp-content/uploads/*
+!public/wordpress/wp-conten/uploads/turniere
+public/wordpress/wp-content/uploads/turniere/*
+!public/wordpress/wp-content/uploads/turniere/*.json
+!public/wordpress/wp-content/uploads/turniere/lem
+public/wordpress/wp-content/uploads/turniere/lem/*
+!public/wordpress/wp-content/uploads/turniere/lem/*.json
 
 # TODO: The following files are legacy code and should be rewritten rather than added to the repo
 public/anmeldung/
