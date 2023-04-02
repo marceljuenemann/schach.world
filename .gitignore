@@ -16,9 +16,9 @@ public/wordpress/wp-content/plugins/*
 # Add some config files for nsv-turniere plugin (just as an example really) 
 !public/wordpress/wp-content/uploads
 public/wordpress/wp-content/uploads/*
-!public/wordpress/wp-conten/uploads/turniere
+!public/wordpress/wp-content/uploads/turniere
 public/wordpress/wp-content/uploads/turniere/*
-!public/wordpress/wp-content/uploads/turniere/*.json
+public/wordpress/wp-content/uploads/turniere/*.json
 !public/wordpress/wp-content/uploads/turniere/lem
 public/wordpress/wp-content/uploads/turniere/lem/*
 !public/wordpress/wp-content/uploads/turniere/lem/*.json

@@ -1,0 +1,27 @@
+{
+  "headline": "LEM 2020",
+  "headline2": "vom 2. bis 5. Januar in Verden/Aller",
+  
+  "groups": {
+    "meister": {
+      "name": "Meisterturnier",
+      "swtname": "Meister"
+    },
+    "a": {
+      "name": "Open A",
+      "swtname": "A-Open"
+    },
+    "b": {
+      "name": "Open B",
+      "swtname": "B-Open"
+    },
+    "c": {
+      "name": "Open C",
+      "swtname": "C-Open"
+    },
+    "schnellschach": {
+      "name": "Schnellschach",
+      "swtname": "Schnellschach"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "headline": "LEM 2023",
+  "headline2": "vom 5. bis 8. Januar in Verden/Aller",
+  
+  "groups": {
+    "meister": {
+      "name": "Meisterturnier",
+      "swtname": "NDS Landeseinzelmeisterschaft 2023 Meisterturnier"
+    },
+    "a": {
+      "name": "Open A",
+      "swtname": "NDS Landeseinzelmeisterschaft 2023 A-Open"
+    },
+    "b": {
+      "name": "Open B",
+      "swtname": "NDS Landeseinzelmeisterschaft 2023 B-Open"
+    },
+    "c": {
+      "name": "Open C",
+      "swtname": "NDS Landeseinzelmeisterschaft 2023 C-Open"
+    },
+    "schnellschach": {
+      "name": "Schnellschach",
+      "swtname": "Schnellschach"
+    }
+  }
+}

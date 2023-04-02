@@ -1,0 +1,17 @@
+{
+  "headline": "LEM 2008",
+  "headline2": "vom 2. bis 6. Januar in Verden/Aller",
+  
+  "format": "legacy-txt",
+  
+  "groups": {
+    "meister": {
+      "name": "Meisterturnier",
+      "swtname": "meister"
+    },
+    "open": {
+      "name": "Open",
+      "swtname": "open"
+    }
+  }
+}
