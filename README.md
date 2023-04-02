@@ -8,7 +8,7 @@ This repository contains the open-sourced parts of nsv-online.de. Notably:
 
 These are the general steps required for any local development
 
-1. Install apache with PHP 8, pointing the DocumentRoot to the `nsv-online` directory
+1. Install apache with PHP 8, pointing the DocumentRoot to the `public` directory
 1. Enable the `headers` apache module. On Ubuntu that's just `sudo a2enmod headers` and `sudo service apache2 restart` (alternatively, just uncomment the `Header` lines from `.htaccess`)
 1. Enable SSL
     * This is necessary because `.htaccess` will redirect any request to HTTPs. Alternatively, you can uncomment those redirects in the `.htaccess`, but then you need to be careful when committing...
