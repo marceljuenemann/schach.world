@@ -7,10 +7,18 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MyController {
 
-  //#[Route('/blog', name: 'blog_list')]
+  #[Route('/blog', name: 'blog_list')]
   public function test(): Response {
     return new Response(
       sprintf("Hello World!")
     );
   }
+
+  #[Route('/hello/{name}', name: 'hello')]
+  public function hello(string $name): Response {
+    return new Response(
+      sprintf("Hello $name!")
+    );
+  }
+
 }
