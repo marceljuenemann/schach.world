@@ -7,7 +7,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MyController {
 
-  #[Route('/blog', name: 'blog_list')]
+  #[Route('/v3/blog', name: 'blog_list')]
   public function test(): Response {
     return new Response(
       sprintf("Hello World!")
@@ -19,6 +19,12 @@ class MyController {
     return new Response(
       sprintf("Hello $name!")
     );
+  }
+
+  #[Route('v3/bye/{name}', name: 'hello')]
+  public function bye(string $name): Response {
+    //        return $this->render('user/notifications.html.twig', [
+
   }
 
 }

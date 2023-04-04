@@ -21,12 +21,11 @@ use Symfony\Component\Routing\Route;
 use Symfony\Component\Routing\RouteCollection;
 
 // TODO: Set up dependency injection stuff.
-
+// TODO: Enable prod mode? Otherwise maybe slow?
 
 class Prototype {
 
   function __construct() {
-    echo 'Hi!';
   }
 
   // TODO: only run the whole thing from theme/nsv2020/symfony.php if we are on a
