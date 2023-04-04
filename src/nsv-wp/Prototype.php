@@ -26,6 +26,7 @@ class Prototype {
 
   function run() {
     $routes = new RouteCollection();
+    /*
     $routes->add('hello', new Route('/hello/{name}', [
         '_controller' => function (Request $request) {
             return new Response(
@@ -33,6 +34,12 @@ class Prototype {
             );
         }]
     ));
+    */
+    $routes->add('hello', new Route('/hello/{name}', [
+      '_controller' => [MyController::class, 'test']
+    ]));
+
+    //$routes->add('hello', '/hello/{name}')->controller([MyController::class, 'test']);
 
     $request = Request::createFromGlobals();
 
