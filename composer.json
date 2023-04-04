@@ -3,7 +3,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Nsv\\": "src/"
+            "NsvWp\\": "src/nsv-wp/"
         }
     },
     "authors": [
@@ -12,5 +12,7 @@
             "email": "webmaster@nsv-online.de"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/http-kernel": "^6.2"
+    }
 }
