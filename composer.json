@@ -1,0 +1,16 @@
+{
+    "name": "marceljuenemann/nsv-online.de",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Nsv\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marcel Juenemann",
+            "email": "webmaster@nsv-online.de"
+        }
+    ],
+    "require": {}
+}
