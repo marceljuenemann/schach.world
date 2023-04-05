@@ -1,11 +1,18 @@
 <?php
 
-namespace NsvWp;
+namespace Nsv\WebApp\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class MyController {
+class MyController extends AbstractController {
+
+  function __construct()
+  {
+   // $this->setContainer($container);
+  }
 
   #[Route('/v3/blog', name: 'blog_list')]
   public function test(): Response {
@@ -23,8 +30,7 @@ class MyController {
 
   #[Route('v3/bye/{name}', name: 'bye')]
   public function bye(string $name): Response {
-    //        return $this->render('user/notifications.html.twig', [
-
+    return $this->render('hello-world.html.twig');
   }
 
 }

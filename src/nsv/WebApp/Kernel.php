@@ -2,6 +2,7 @@
 
 namespace Nsv\WebApp;
 
+use Nsv\WebApp\Controller\MyController;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
@@ -9,6 +10,8 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Kernel as BaseKernel;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
+
+use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 
 // TODO: Load a config file first
 class Kernel extends BaseKernel
@@ -31,12 +34,16 @@ class Kernel extends BaseKernel
             'secret' => 'S0ME_SECRET'
         ]);
         */
+        // TODO: Automatically for all controllers
+        $containerConfigurator->services()->set(MyController::class)
+        ->call('setContainer', [service('service_container')])
+        ->tag('controller.service_arguments');
     }
 
     protected function configureRoutes(RoutingConfigurator $routes): void
     {
       $routes->import(
-        ['path' => '../../nsv-wp/', 'namespace' => 'NsvWp'],
+        ['path' => __DIR__ . '/Controller', 'namespace' => 'Nsv\\WebApp\\Controller'],
         'attribute',
       );
     }
