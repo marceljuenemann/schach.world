@@ -39,7 +39,7 @@ class Kernel extends BaseKernel
         // PHP equivalent of config/packages/framework.yaml
         // TODO: set secret. Not sure it's needed any time soon, but better safe than sorry
         $containerConfigurator->extension('framework', [
-            'secret' => 'S0ME_SECRET'
+            'secret' => wp_salt()
         ]);
 
         // Register all controllers
