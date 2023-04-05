@@ -3,6 +3,7 @@
 namespace Nsv\WebApp;
 
 use Nsv\WebApp\Controller\MyController;
+use Nsv\WebApp\Core\WordPress\TwigExtension;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Bundle\TwigBundle\TwigBundle;
@@ -31,7 +32,8 @@ class Kernel extends BaseKernel
     
     protected function build(ContainerBuilder $containerBuilder)
     {
-//        $containerBuilder->registerExtension(new AbstractExtension());
+
+    //        $containerBuilder->registerExtension(new AbstractExtension());
     }
 
     protected function configureContainer(ContainerConfigurator $containerConfigurator): void
@@ -48,6 +50,11 @@ class Kernel extends BaseKernel
             ->autowire()
             ->autoconfigure()
         ;
+
+        // Register twig extensions.
+        $containerConfigurator->services()
+            ->set(null, TwigExtension::class)
+            ->tag('twig.extension');
     }
 
     protected function configureRoutes(RoutingConfigurator $routes): void
