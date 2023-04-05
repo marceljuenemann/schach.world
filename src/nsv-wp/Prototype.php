@@ -5,6 +5,7 @@ namespace NsvWp;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Config\Loader\DelegatingLoader;
 use Symfony\Component\Config\Loader\LoaderResolver;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
@@ -23,9 +24,25 @@ use Symfony\Component\Routing\RouteCollection;
 // TODO: Set up dependency injection stuff.
 // TODO: Enable prod mode? Otherwise maybe slow?
 
-class Prototype {
+final class Prototype {
+  private $containerBuilder;
 
   function __construct() {
+    $this->containerBuilder = new ContainerBuilder();
+  }
+
+  // TODO: addModule?
+  function configure() {
+    /*
+    $containerBuilder->setParameter('mailer.transport', 'sendmail');
+    $containerBuilder
+        ->register('mailer', 'Mailer')
+        ->addArgument('%mailer.transport%');
+    
+    $containerBuilder
+        ->register('newsletter_manager', 'NewsletterManager')
+        ->addMethodCall('setMailer', [new Reference('mailer')]);
+    */
   }
 
   // TODO: only run the whole thing from theme/nsv2020/symfony.php if we are on a
