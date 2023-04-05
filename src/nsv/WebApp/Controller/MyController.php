@@ -30,7 +30,9 @@ class MyController extends AbstractController {
 
   #[Route('v3/bye/{name}', name: 'bye')]
   public function bye(string $name): Response {
-    return $this->render('hello-world.html.twig');
+    return $this->render('hello-world.html.twig', [
+      'user_first_name' => $name
+    ]);
   }
 
 }
