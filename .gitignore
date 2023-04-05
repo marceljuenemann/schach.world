@@ -51,4 +51,5 @@ public/goto.php
 .vscode
 
 
-/vendor/
+vendor/
+var/cache/

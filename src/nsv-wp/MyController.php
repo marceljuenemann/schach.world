@@ -14,14 +14,14 @@ class MyController {
     );
   }
 
-  #[Route('/hello/{name}', name: 'hello')]
+  #[Route('/v3/hello/{name}', name: 'hello')]
   public function hello(string $name): Response {
     return new Response(
       sprintf("Hello $name!")
     );
   }
 
-  #[Route('v3/bye/{name}', name: 'hello')]
+  #[Route('v3/bye/{name}', name: 'bye')]
   public function bye(string $name): Response {
     //        return $this->render('user/notifications.html.twig', [
 
