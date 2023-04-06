@@ -9,21 +9,19 @@ class TwigExtension extends AbstractExtension {
 
   function getFunctions() {
     return [
-      new TwigFunction(
-        'get_header',
-        $this->bufferedOutput(function() { get_header(); }),
-        ['is_safe' => array('html')]
-      ),
+      $this->twigFunction('get_header'),
+      $this->twigFunction('get_footer'),
+      $this->twigFunction('get_template_part'),
     ];
   }
 
-  private function bufferedOutput($callback) {
-    return function() use ($callback) {
+  private function twigFunction($name) {
+    return new TwigFunction($name, function() use ($name) {
       ob_start();
-      call_user_func($callback);
+      call_user_func($name, ...func_get_args());
       $data = ob_get_contents();
       ob_end_clean();
       return $data;
-    };
+    }, ['is_safe' => array('html')]);
   }
 }

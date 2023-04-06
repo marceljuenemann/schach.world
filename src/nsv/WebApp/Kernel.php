@@ -17,7 +17,6 @@ use Symfony\Component\DependencyInjection\Extension\AbstractExtension;
 
 use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 
-// TODO: Load a config file first
 class Kernel extends BaseKernel
 {
     use MicroKernelTrait;
@@ -28,12 +27,6 @@ class Kernel extends BaseKernel
             new FrameworkBundle(),
             new TwigBundle()
         ];
-    }
-    
-    protected function build(ContainerBuilder $containerBuilder)
-    {
-
-    //        $containerBuilder->registerExtension(new AbstractExtension());
     }
 
     protected function configureContainer(ContainerConfigurator $containerConfigurator): void
