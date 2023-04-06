@@ -1,0 +1,19 @@
+{{ get_header() }}
+
+<div class="col-12 col-lg-9">
+  
+  <div class="card shadow nsv-card">
+    <div class="card-body">
+      {# TODO: page title #}
+      {# TODO: title, messages, content #}
+
+      {% block content %}{% endblock %}
+
+    </div>
+  </div>
+
+</div>
+  <div class="col-12 col-lg-3" id="nsv-sidebar">
+    {{ get_template_part('sidebar/navigation-sidebar') }}
+
+    {{ get_footer() }}
