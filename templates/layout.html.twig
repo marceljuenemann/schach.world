@@ -18,6 +18,8 @@
 
 </div>
   <div class="col-12 col-lg-3" id="nsv-sidebar">
+    {% block sidebar %}
     {{ get_template_part('sidebar/navigation-sidebar') }}
+    {% endblock %}
 
     {{ get_footer() }}
