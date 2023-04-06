@@ -1,3 +1,4 @@
+{{ set_title(title) }}
 {{ get_header() }}
 
 <div class="col-12 col-lg-9">
@@ -6,6 +7,9 @@
     <div class="card-body">
       {# TODO: page title #}
       {# TODO: title, messages, content #}
+      {% block headline %}
+        <h1>{{ title }}</h1>
+      {% endblock %}
 
       {% block content %}{% endblock %}
 

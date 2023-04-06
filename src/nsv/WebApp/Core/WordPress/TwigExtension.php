@@ -9,13 +9,20 @@ class TwigExtension extends AbstractExtension {
 
   function getFunctions() {
     return [
-      $this->twigFunction('get_header'),
-      $this->twigFunction('get_footer'),
-      $this->twigFunction('get_template_part'),
+      $this->allowFunction('get_header'),
+      $this->allowFunction('get_footer'),
+      $this->allowFunction('get_template_part'),
+
+      new TwigFunction('set_title', function($title) {
+        add_filter('document_title_parts', function($data) use ($title) {
+          $data['title'] = $title;
+          return $data;
+        });
+      })
     ];
   }
 
-  private function twigFunction($name) {
+  private function allowFunction($name) {
     return new TwigFunction($name, function() use ($name) {
       ob_start();
       call_user_func($name, ...func_get_args());
