@@ -1,0 +1,5 @@
+controllers:
+    resource:
+        path: ../src/WebApp/Controller/
+        namespace: Nsv\WebApp\Controller
+    type: attribute
