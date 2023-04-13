@@ -3,16 +3,10 @@
 namespace Nsv\WebApp\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class MyController extends AbstractController {
-
-  function __construct()
-  {
-   // $this->setContainer($container);
-  }
 
   #[Route('/v3/blog', name: 'blog_list')]
   public function test(): Response {
@@ -34,5 +28,4 @@ class MyController extends AbstractController {
       'user_first_name' => $name
     ]);
   }
-
 }
