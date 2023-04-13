@@ -15,3 +15,6 @@ services:
     # this creates a service per class whose id is the fully-qualified class name
     Nsv\WebApp\Controller\:
         resource: '../src/WebApp/Controller/'
+
+    Nsv\WebApp\Core\WordPress\:
+        resource: '../src/WebApp/Core/WordPress/'
