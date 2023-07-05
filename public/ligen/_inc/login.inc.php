@@ -28,8 +28,9 @@
       // Einlogstring parsen
       $admin ['usertype'] = $_POST ['benutzer'][0];
       $user = substr ( $_POST ['benutzer'], 2 );
-      $login_query ["s"] = "SELECT b.id, b.name, b.email, MD5('$_POST[passwort]')=b.passwort as pwkorrekt, s.id as sid FROM staffeln as s INNER JOIN benutzer as b ON b.id=s.leiter WHERE s.id=$user AND s.turnier=$globals[tid]";
-      $login_query ["t"] = "SELECT b.id, b.name, b.email, MD5('$_POST[passwort]')=b.passwort as pwkorrekt, 0 as sid FROM turniere as t INNER JOIN benutzer as b ON b.id=t.leiter WHERE t.id=$globals[tid]";
+      $pw = md5($_POST['passwort']);
+      $login_query ["s"] = "SELECT b.id, b.name, b.email, '$pw'=b.passwort as pwkorrekt, s.id as sid FROM staffeln as s INNER JOIN benutzer as b ON b.id=s.leiter WHERE s.id=$user AND s.turnier=$globals[tid]";
+      $login_query ["t"] = "SELECT b.id, b.name, b.email, '$pw'=b.passwort as pwkorrekt, 0 as sid FROM turniere as t INNER JOIN benutzer as b ON b.id=t.leiter WHERE t.id=$globals[tid]";
 
       // Benutzerstring korrekt?
       if ( (!isset ( $login_query [$admin ['usertype']] )) || $_POST ['benutzer'][1] != "-" || (!is_numeric ( $user )) )

@@ -15,14 +15,14 @@
 
 
   <br /><br /><b>10. bis 13. August</b><br />Kurt Pape-Open
-  <br /><a href='/grandprix/ausschreibungen/KurtPapeOpen-2023.pdf'>Ausschreibung</a>
+  <br /><a href='https://nsv-online.de/2023/01/nsv-grandprix-2-kurt-pape-open/'>Ausschreibung</a>
   | <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>
   <!--| <a href='https://nsv-online.de/2022/08/kyrill-scheck-gewinnt-1-kurt-pape-open-in-hameln/'>Ergebnisse</a>-->
 
 
-<!--  <br /><br /><b>19. bis 21. August</b><br />Lessing-Open in Wolfenb&uuml;ttel-->
-<!--  <br /><a href='/grandprix/ausschreibungen/lessing-open-2022.pdf'>Ausschreibung</a>-->
-  <!--| <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>-->
+  <br /><br /><b>25. bis 27. August</b><br />Lessing-Open in Wolfenb&uuml;ttel
+  <br /><a href='https://nsv-online.de/2023/05/nsv-grandprix-lessing-open-in-wolfenbuettel-ausschreibung-2/'>Ausschreibung</a>
+ | <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>
 <!--   | <a href='https://nsv-online.de/2022/08/nsv-grandprix-lessing-open-in-wolfenbuettel-hannes-ewert-gewinnt-a-turnier/'>Ergebnisse</a>-->
 
 
