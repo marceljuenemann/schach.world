@@ -1,4 +1,3 @@
-{# TODO: move title setting into header #}
 {{ set_title(title) }}
 {{ get_header() }}
 {% set show_sidebar = not hide_sidebar|default(false) %}
@@ -11,7 +10,8 @@
         <h1>{{ title }}</h1>
       {% endblock %}
 
-      {% block content %}{% endblock %}
+      {% block content %}
+      {% endblock %}
     </div>
   </div>
 

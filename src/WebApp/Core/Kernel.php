@@ -2,6 +2,7 @@
 
 namespace Nsv\WebApp\Core;
 
+use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\HttpKernel\Kernel as BaseKernel;
 use Symfony\Component\Runtime\SymfonyRuntime;
@@ -20,7 +21,8 @@ class Kernel extends BaseKernel
     $runtime = new SymfonyRuntime(['project_dir' => $projectDir]);
     [$app, $args] = $runtime->getResolver(function (array $context) {
       $env = $context[0];
-      return new Kernel($env['APP_ENV'], (bool) $env['APP_DEBUG']);
+      $debug = ((bool) $env['APP_DEBUG']) || Auth::isAdmin();
+      return new Kernel($env['APP_ENV'], $debug);
     })->resolve();
     $app = $app($args);
     $runtime->getRunner($app)->run();
