@@ -11,6 +11,7 @@ public/wordpress/wp-content/plugins/*
 !public/wordpress/wp-content/plugins/nsv-core
 !public/wordpress/wp-content/plugins/nsv-turniere
 !public/wordpress/wp-content/plugins/nsv-misc
+!public/wordpress/wp-content/plugins/nsv-v3
 # TODO: Add plugins/nsv-archive after moving spreadsheet links to config file
 
 # Add some config files for nsv-turniere plugin (just as an example really) 
