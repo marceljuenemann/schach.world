@@ -1,7 +1,9 @@
+{# TODO: move title setting into header #}
 {{ set_title(title) }}
 {{ get_header() }}
+{% set show_sidebar = not hide_sidebar|default(false) %}
 
-<div class="col-12 col-lg-9">
+<div class="col-12 {% if show_sidebar %} col-lg-9 {% endif %}">
   
   <div class="card shadow nsv-card">
     <div class="card-body">
@@ -13,10 +15,14 @@
     </div>
   </div>
 
+
+{% if show_sidebar %}
 </div>
 <div class="col-12 col-lg-3" id="nsv-sidebar">
   {% block sidebar %}
   {{ get_template_part('sidebar/navigation-sidebar') }}
   {% endblock %}
+{% endif %}
+
 
   {{ get_footer() }}
