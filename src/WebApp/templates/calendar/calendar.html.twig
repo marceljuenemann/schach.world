@@ -3,5 +3,9 @@
 {% set title = "Terminkalender" %}
 
 {% block content %}
-How are you doing?
+<ul>
+  {% for event in events %}
+    <li>{{ event.date }} {{ event.name }}</li>
+  {% endfor %}
+</ul>
 {% endblock %}
