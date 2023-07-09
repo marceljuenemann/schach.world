@@ -22,8 +22,10 @@
     if ( !isset ( $globals ['staffeln'][$_GET ['staffel']] ) )
     {
         require_once ( "gui.inc.php" );
-        $tname = reset ( mysql_fetch_array ( mysql_query ( "SELECT t.directory FROM staffeln s INNER JOIN turniere t ON t.id=s.turnier WHERE s.id='$_GET[staffel]'", $globals ['db'] ), MYSQL_ASSOC ) );
-        echo "<b>Sie werden weitergeleitet...</b>";
+        $staffel = (int) $_GET['staffel'];
+        if ($staffel != $_GET['staffel']) exit();
+        $tname = reset ( mysql_fetch_array ( mysql_query ( "SELECT t.directory FROM staffeln s INNER JOIN turniere t ON t.id=s.turnier WHERE s.id='$staffel'", $globals ['db'] ), MYSQL_ASSOC ) );
+        echo "<b>Sie werden weitergeleitet...</b> $staffel $tname";
         echo "<meta http-equiv='refresh' content='0;URL=$globals[httppath]$tname/?staffel=$_GET[staffel]&r=$_GET[r]' />";
         exit;
     }

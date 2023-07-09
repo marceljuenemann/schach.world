@@ -249,7 +249,7 @@
 
     ///////////////////////////////////
     // Tabelle
-    if ( $options ['showTabelle'] )
+    if ( $options ['showTabelle'] && isset($table[0]) )
     {
         // Überschriften
         $pdf->SetFont ( "", "B", $fontsize );
