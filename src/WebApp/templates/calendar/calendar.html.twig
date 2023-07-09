@@ -5,7 +5,7 @@
 {% block content %}
 <ul>
   {% for event in events %}
-    <li>{{ event.date }} {{ event.name }}</li>
+    <li>{{ event.date.format('Y-m-d') }} {{ event.name }}</li>
   {% endfor %}
 </ul>
 {% endblock %}

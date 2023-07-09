@@ -4,6 +4,7 @@ namespace Nsv\WebApp\Entity;
 
 use Nsv\WebApp\Repository\EventRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: EventRepository::class)]
 #[ORM\Table(name: 'termine2')]
@@ -15,10 +16,15 @@ class Event
     private int $id;
 
     #[ORM\Column(length: 100)]
+    #[Assert\Length(min: 3, max: 100)]
     private string $name;
 
-    #[ORM\Column]
-    private string $date;
+    #[ORM\Column(length: 200)]
+    #[Assert\Length(min: 10, max: 200)]
+    private string $url;
+
+    #[ORM\Column(type: 'date')]
+    private \DateTimeInterface $date;
 
     #[ORM\Column]
     private bool $isApproved;
