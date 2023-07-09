@@ -28,4 +28,18 @@ class MyController extends AbstractController {
       'user_first_name' => $name
     ]);
   }
+
+  #[Route('ligen/{leagueName}/', name: 'league')]
+  public function league(string $leagueName): Response {
+    // Hand over to legacy league manager.
+    chdir(ABSPATH . '../ligen/');
+    $_GET['dir'] = $leagueName;
+    header('Content-type', 'text/html');
+    ob_start();
+    include('index.php');    
+
+    $response = new Response(ob_get_clean());
+    $response->setCharset('iso-8859-1');
+    return $response;
+  }
 }

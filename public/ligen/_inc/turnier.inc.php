@@ -33,6 +33,7 @@
     $query = "SELECT t.* FROM paarungen as p INNER JOIN staffeln as s ON s.id=p.staffel INNER JOIN turniere as t ON t.id=s.turnier WHERE p.id=$_GET[p]";
   else
     SED_Error ( "Es konnte kein passendes Turnier gefunden werden!", true );
+  global $prefs;  // available globally.
   $prefs = mysql_fetch_array ( mysql_query ( $query, $globals ['db'] ), MYSQL_ASSOC );
 
   // Fehler?

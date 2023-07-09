@@ -13,7 +13,9 @@
  * @subpackage main
  */
 
+
     chdir ( "_inc" );
+    global $globals;
     $globals ['basedir'] = "..";
 
     // Einige wichtige Funktionen zugänglich machen
