@@ -46,22 +46,33 @@
   // Für $globals [tid] sorgen
   $globals ['tid'] = $prefs ['id'];
 
-    // Template berechnen
-    if ( !isset ( $globals ['templatedir'] ) )
-    {
-        $template = "nsv";
-        if ( isset ( $prefs ['template'] ) ) {
-            $template = $prefs ['template'];
-        }
-        if ( SED_IsNsv2020() ) {
-            $template = 'nsv2020';
-        }
-        $globals ['templatedir'] = "$globals[basedir]/_templates/$template";
-    }
+  // Template berechnen
+  if ( !isset ( $globals ['templatedir'] ) )
+  {
+      $template = "nsv";
+      if ( isset ( $prefs ['template'] ) ) {
+          $template = $prefs ['template'];
+      }
+      if ( SED_IsNsv2020() ) {
+          $template = 'nsv2020';
+      }
+      $globals ['templatedir'] = "$globals[basedir]/_templates/$template";
+  }
+
+  // New Symfony World: Load league entity and store on the global $bridge object 
+  global $bridge;
+  $bridge->league = $bridge->leagues->find($globals['tid']);
 
   // Staffeln
   $res = mysql_query ( "SELECT id, name FROM staffeln WHERE turnier=$globals[tid] ORDER BY sortid", $globals ['db'] );
   $globals ['staffeln'] = array ();
+
+  /*
+  foreach ($bridge->leagues->find($globals['tid']) as $event) {
+        $globals['staffeln'][$event->id] = $event->name;
+  } 
+  */
+
   while ( $temp = mysql_fetch_array ( $res, MYSQL_BOTH ) )
     $globals ['staffeln'][$temp ['id']] = $temp ['name'];
 

@@ -2,6 +2,7 @@
 
 namespace Nsv\WebApp\Controller;
 
+use Nsv\League\Core\Bridge;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -30,7 +31,10 @@ class MyController extends AbstractController {
   }
 
   #[Route('ligen/{leagueName}/', name: 'league')]
-  public function league(string $leagueName): Response {
+  public function league(string $leagueName, Bridge $symfonyBridge): Response {
+    global $bridge;
+    $bridge = $symfonyBridge;
+
     // Hand over to legacy league manager.
     chdir(ABSPATH . '../ligen/');
     $_GET['dir'] = $leagueName;

@@ -35,5 +35,5 @@ RewriteRule ^([0-9])/([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$ /ligen/index.php?m=tin
 
 # Das Wichtigste
 RewriteRule ^([A-Za-z0-9\-]+)$ /ligen/$1/ [R]
-RewriteRule ^([A-Za-z0-9\-]+)/ /ligen/index.php?dir=$1 [QSA] [L]
-#RewriteRule ^([A-Za-z0-9\-]+)/ /wordpress/index.php [L]
+#RewriteRule ^([A-Za-z0-9\-]+)/ /ligen/index.php?dir=$1 [QSA] [L]
+RewriteRule ^([A-Za-z0-9\-]+)/ /wordpress/index.php [L]
