@@ -38,11 +38,11 @@ class MyController extends AbstractController {
     // Hand over to legacy league manager.
     chdir(ABSPATH . '../ligen/');
     $_GET['dir'] = $leagueName;
-    header('Content-type', 'text/html');
     ob_start();
     include('index.php');    
+    $body = ob_get_clean();
 
-    $response = new Response(ob_get_clean());
+    $response = new Response($body);
     $response->setCharset('iso-8859-1');
     return $response;
   }

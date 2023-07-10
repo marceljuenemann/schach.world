@@ -2,7 +2,6 @@
 
 namespace Nsv\League\Core;
 
-use Nsv\WebApp\Repository\EventRepository;
 use Nsv\League\Repository\LeagueRepository;
 
 /**
@@ -11,7 +10,6 @@ use Nsv\League\Repository\LeagueRepository;
 class Bridge {
 
   function __construct(
-      public EventRepository $eventRepository,
       public LeagueRepository $leagues) {
   }
 }
