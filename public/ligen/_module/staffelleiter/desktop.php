@@ -14,6 +14,7 @@
 
 
   // Konfiguration
+  global $desktopRowLength;
   $desktopRowLength = 5;
 
   // Gruppe ausgeben

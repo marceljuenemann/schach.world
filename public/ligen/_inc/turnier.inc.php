@@ -61,27 +61,33 @@
 
   // New Symfony World: Load league entity and store on the global $bridge object 
   global $bridge;
-  $bridge->league = $bridge->leagues->find($globals['tid']);
+  if ($bridge) {
+    $bridge->league = $bridge->leagues->find($globals['tid']);
+  }
 
   // Staffeln
-  $res = mysql_query ( "SELECT id, name FROM staffeln WHERE turnier=$globals[tid] ORDER BY sortid", $globals ['db'] );
   $globals ['staffeln'] = array ();
-
-  /*
-  foreach ($bridge->leagues->find($globals['tid']) as $event) {
-        $globals['staffeln'][$event->id] = $event->name;
-  } 
-  */
-
-  while ( $temp = mysql_fetch_array ( $res, MYSQL_BOTH ) )
-    $globals ['staffeln'][$temp ['id']] = $temp ['name'];
+  if ($bridge) {
+    foreach ($bridge->league->divisions as $division) {
+      $globals['staffeln'][$division->id] = $division->name;
+    }
+  } else {
+    $res = mysql_query ( "SELECT id, name FROM staffeln WHERE turnier=$globals[tid] ORDER BY sortid", $globals ['db'] );
+    while ( $temp = mysql_fetch_array ( $res, MYSQL_BOTH ) )
+      $globals ['staffeln'][$temp ['id']] = $temp ['name'];
+  }
 
   // Mannschaften
-  $res = mysql_query ( "SELECT m.id, IF(m.mnr>1,CONCAT(TRIM(m.name),' ',m.mnr),TRIM(m.name)) as name FROM mannschaften as m WHERE m.turnier=$globals[tid] ORDER BY name", $globals ['db'] );
   $globals ['teams'] = array ();
-  while ( $temp = mysql_fetch_array ( $res, MYSQL_BOTH ) )
-    $globals ['teams'][$temp ['id']] = $temp ['name'];
-
+  if ($bridge) {
+    foreach ($bridge->league->teams as $team) {
+      $globals['teams'][$team->id] = $team->nameWithNumber();
+    }
+  } else {
+    $res = mysql_query ( "SELECT m.id, IF(m.mnr>1,CONCAT(TRIM(m.name),' ',m.mnr),TRIM(m.name)) as name FROM mannschaften as m WHERE m.turnier=$globals[tid] ORDER BY name", $globals ['db'] );
+    while ( $temp = mysql_fetch_array ( $res, MYSQL_BOTH ) )
+      $globals ['teams'][$temp ['id']] = $temp ['name'];
+  }
 
   // Liefert zu einem Spieltag den Timestamp
   function SED_GetTermin ( $runde, $staffel, $datumsformat = '%d.%m.%Y' )

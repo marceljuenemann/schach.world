@@ -17,6 +17,14 @@ class League
     #[ORM\Column(length: 40)]
     private string $name;
 
+    #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
+    #[ORM\OrderBy(["name" => "ASC"])]
+    private $divisions;
+
+    #[ORM\OneToMany(targetEntity: Team::class, mappedBy: 'league')]
+    #[ORM\OrderBy(["name" => "ASC", "number" => "ASC"])]
+    private $teams;
+
     public function __call($property, $args) {
       return $this->$property;
     }
