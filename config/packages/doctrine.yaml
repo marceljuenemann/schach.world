@@ -5,6 +5,10 @@ doctrine:
                 url: '%env(resolve:WEBAPP_DATABASE_URL)%'
             league:
                 url: '%env(resolve:LEAGUE_DATABASE_URL)%'
+                # Force the connection to be in latin1 charset.
+                charset: latin1
+                options:
+                    1002: "SET NAMES 'latin1'"
         default_connection: webapp    
     orm:
         default_entity_manager: webapp

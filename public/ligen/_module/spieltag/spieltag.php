@@ -50,6 +50,7 @@
     // Vorbereitungen
     /////////////////////////////////
 
+    global $_class, $_al, $_ac, $_ar, $_bgclr;
     $_ac                = "text-align: center;";
     $_al                = "text-align: left;";
     $_ar                = "text-align: right;";

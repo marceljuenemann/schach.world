@@ -94,6 +94,20 @@
 	}
  
  
+	// Liefert den erste Wert einer Abfrage, oder null.
+	function SED_MYSQL_Value ( $sql, $exit = false )
+	{
+		global $globals;
+    $row = SED_MYSQL_Array($sql, $exit);
+    if (!$row || !count($row)) {
+			if ( $exit )
+				SED_Error ( "Fehler in Abfrage! <!-- $sql -->", true );
+			else 
+				return null;
+		}
+    return reset($row);
+	}
+ 
   
   // Generiert den Pfad für Formulare, wenn die Zielseite gleich ist
   function SED_GenerateFormAction ( $without = false )

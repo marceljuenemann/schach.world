@@ -121,9 +121,7 @@
   // Liefert die letzte Runde in der eine Paarung gesetzt ist
   function SED_GetLetzteRunde ( $staffel )
   {
-    global $globals;
-    return reset ( mysql_fetch_array ( mysql_query (
-        "SELECT MAX( runde )  FROM paarungen WHERE staffel='$staffel'", $globals ['db'] ) ) );
+    return SED_MYSQL_Value("SELECT MAX( runde )  FROM paarungen WHERE staffel='$staffel'");
   }
 
   // Liefert die Anzahl der Bretter einer Staffel
