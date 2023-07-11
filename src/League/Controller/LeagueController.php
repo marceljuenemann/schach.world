@@ -3,7 +3,7 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Core\Bridge;
-use NSV\WebApp\Core\WordPress\Auth;
+use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;

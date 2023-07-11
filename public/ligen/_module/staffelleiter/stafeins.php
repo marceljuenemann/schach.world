@@ -1,7 +1,4 @@
 <?
-TODO
-
-
 /* SL-Bereich: Staffeleinstellungen
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -26,14 +23,18 @@ TODO
     array ( "name", "Staffelname", "Der Name des Staffel darf aus höchstens 30 Zeichen bestehen", 30, 30 , true ),
     array ( "runden", "Rundenzahl", "Die Anzahl der Spieltage Ihrer Staffel. Lassen Sie das Feld leer, um die turnierweite Einstellung zu übernehmen.", 3, 2, false ),
     array ( "brettzahl", "Brettanzahl", "An wie vielen Brettern wird bei Mannschaftskämpfen Ihrer Staffel gespielt? Lassen Sie das Feld leer, um die turnierweite Einstellung zu übernehmen.", 3, 2, false ),
-    array ( "sysEingabelinks", "Eingabelinks", "Sollen automatisch Eingabelinks versendet werden? Die Mannschaftsführer erhalten bei Aktivierung automatisch drei Tage vor dem Spieltag eine eMail mit einem Link, über den Sie die Ergebnisse selbstständig eingeben können.", array ( "" => "Turnierweite Einstellung übernehmen", "1" => "eMails versenden", "0" => "keine eMails versenden" ), 0, false ),
+    array ( "sysEingabelinks", "Eingabelinks", "Sollen automatisch Eingabelinks versendet werden? Die Mannschaftsführer erhalten bei Aktivierung automatisch drei Tage vor dem Spieltag eine eMail mit einem Link, über den Sie die Ergebnisse selbstständig eingeben können.", array ( "" => "Turnierweite Einstellung &uuml;bernehmen", "1" => "eMails versenden", "0" => "keine eMails versenden" ), 0, false ),
     array ( "hr" ),
-    array ( "showPassNr", "Spielbericht: Spieler-Nummern anzeigen", "Sollen auf dem Spielbericht die Spieler-Nummern angezeigt werden?", array ( "" => "Turnierweite Einstellung übernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
-    array ( "showTabelle", "Spielbericht: Tabelle anzeigen", "Soll auf dem Spielbericht eine Tabelle angezeigt werden?", array ( "" => "Turnierweite Einstellung übernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
-    array ( "showNachmeldungen", "Spielbericht: Nachmeldungen anzeigen", "Sollen auf dem Spielbericht die Nachmeldungen angezeigt werden?", array ( "" => "Turnierweite Einstellung übernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
-    array ( "showSpieltagvorschau", "Spielbericht: Spieltagvorschau", "Soll auf dem Spielbericht eine Vorschau auf den nächsten Spieltag angezeigt werden?", array ( "" => "Turnierweite Einstellung übernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false )
+    array ( "showPassNr", "Spielbericht: Spieler-Nummern anzeigen", "Sollen auf dem Spielbericht die Spieler-Nummern angezeigt werden?", array ( "" => "Turnierweite Einstellung &uuml;bernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
+    array ( "showTabelle", "Spielbericht: Tabelle anzeigen", "Soll auf dem Spielbericht eine Tabelle angezeigt werden?", array ( "" => "Turnierweite Einstellung &uuml;bernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
+    array ( "showNachmeldungen", "Spielbericht: Nachmeldungen anzeigen", "Sollen auf dem Spielbericht die Nachmeldungen angezeigt werden?", array ( "" => "Turnierweite Einstellung &uuml;bernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
+    array ( "showSpieltagvorschau", "Spielbericht: Spieltagvorschau", "Soll auf dem Spielbericht eine Vorschau auf den nächsten Spieltag angezeigt werden?", array ( "" => "Turnierweite Einstellung &uuml;bernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false )
   );
-
+  foreach ($frmMF as &$field) {
+    if (count($field) < 3) continue;
+    $field[1] = SED_utf8_decode($field[1]);
+    $field[2] = SED_utf8_decode($field[2]);
+  }
 
   // Speichern
   if ( isset ( $_POST ['savebutton'] ) )

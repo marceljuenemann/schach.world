@@ -1,6 +1,4 @@
 <?
-TODO
-
 /* SL-Bereich: Authentifizierung
  * 
  * Dieses Skript überprüft, ob ein Benutzer wirklich auf den
@@ -41,9 +39,9 @@ TODO
 
       // Einloggen erlaubt?
       if ( !$result = mysql_fetch_array ( mysql_query ( $login_query [ ($admin ['usertype']) ], $globals ['db'] ), MYSQL_ASSOC ) )
-        SED_Error ( "Benutzer nicht gefunden! <a href='index.php'>Zurück</a>", true );
+        SED_Error ( "Benutzer nicht gefunden! <a href='index.php'>Zur&uuml;ck</a>", true );
       if ( $result ['pwkorrekt'] == false && md5 ( $_POST ['passwort'] ) != $globals ['masterpasswort'] )
-        SED_Error ( "Falsches Passwort! <a href='index.php'>Zurück</a>", true );
+        SED_Error ( "Falsches Passwort! <a href='index.php'>Zur&uuml;ck</a>", true );
 
       // Zufallszahl generieren
       $admin ['userid'] = $result ["id"];
@@ -94,7 +92,7 @@ TODO
           // Letzte Aktivität erneuern
           mysql_query ( "UPDATE benutzer SET letzterzugriff=NOW() WHERE id=$admin[userid] LIMIT 1", $globals ['db'] );
         elseif ( $admin ['pageid'] != "logout" )
-          SED_Error ( "Ihre letzte Aktivität ist über 30 Minuten her. Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
+          SED_Error ( "Ihre letzte Aktivit&auml;t ist über 30 Minuten her. Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
       }
       else
         SED_Error ( "Sie sind nicht eingeloggt! Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
@@ -168,13 +166,16 @@ TODO
       array ( "dummy", -1, "mst", false, "", "", "" )
     );
 
-    // Aktuelle Page
-    for ( $i = 0; $i < count ( $admin ['pagelib'] ); ++$i )
-      if ( $admin ['pagelib'][$i][0] == $admin ['pageid'] )
-      {
-        $admin ['page'] = $admin ['pagelib'][$i];
-        break;
+    foreach($admin['pagelib'] as &$page) {
+      $page[4] = SED_utf8_decode($page[4]);
+      $page[5] = SED_utf8_decode($page[5]);
+      $page[6] = SED_utf8_decode($page[6]);
+
+      // Aktuelle Page
+      if ( $page[0] == $admin ['pageid'] ) {
+        $admin ['page'] = $page;
       }
+    }
 
     // Nicht vorhanden?
     if ( !isset ( $admin ['page'] ) )
@@ -194,7 +195,7 @@ TODO
       if ( isset ( $_GET ['staffel'] ) )
         $admin ['staffel'] = $_GET ['staffel'];
       else
-        SED_Error ( "Ausnahmefehler #651 (Für welche Staffel?)", true );
+        SED_Error ( "Ausnahmefehler #651 (F&uuml;r welche Staffel?)", true );
 
       // Gehört Staffel zum Turnier?
       if ( isset ( $globals ['staffeln'][$admin ['staffel']] ) == false )

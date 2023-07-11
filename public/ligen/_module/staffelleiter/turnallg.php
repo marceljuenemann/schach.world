@@ -1,5 +1,4 @@
 <?
-TODO
 /* SL-Bereich: Turniereinstellungen
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -39,7 +38,11 @@ TODO
     array ( "sysKeinNewsletter", "Newsletter-Funktion", "Soll auf der Startseite ein Formular angezeigt werden, mit dem jeder die Staffelrundschreiben abbonnieren kann?", array ( 0 => "Ja, anzeigen", 1 => "Nein, nicht anzeigen" ), 0, false ),
     array ( "infomeldung", "Hinweis-Meldung", "Hier können Sie eine Meldung festlegen, die auf jeder Seite (öffentlich) gut sichtbar angezeigt wird. HTML für Links ist erlaubt.", 60, 200, false )
   );
-
+  foreach ($frmMF as &$field) {
+    if (count($field) < 3) continue;
+    $field[1] = SED_utf8_decode($field[1]);
+    $field[2] = SED_utf8_decode($field[2]);
+  }
 
   // Speichern
   if ( isset ( $_POST ['savebutton'] ) )

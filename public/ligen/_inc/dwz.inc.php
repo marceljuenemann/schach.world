@@ -50,7 +50,7 @@
       $result ['Leistung'] = $xml->Auswertung->Leistung;
     }
     $result ['Neue DWZ'] = $xml->Auswertung->DWZneu;
-    $result ['Differenz'] = $xml->Auswertung->DWZneu - $ro;
+    $result ['Differenz'] = (int) $xml->Auswertung->DWZneu - (int) $ro;
     return $result;
   }
 

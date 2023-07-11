@@ -134,3 +134,18 @@
       */
   }
 
+  /**
+   * Converts from UTF-8 to the application charset.
+   */
+  function SED_utf8_decode($str) {
+    // TODO: Convert application to UTF-8 and remove this.
+    return mb_convert_encoding($str, 'ISO-8859-1', 'UTF-8');
+  }
+
+  /**
+   * Converts from the application charset to UTF-8.
+   */
+  function SED_utf8_encode($str) {
+    // TODO: Convert application to UTF-8 and remove this.
+    return mb_convert_encoding($str, 'UTF-8', 'ISO-8859-1');
+  }
