@@ -22,6 +22,9 @@ services:
     Nsv\WebApp\Core\WordPress\:
         resource: '../src/WebApp/Core/WordPress/'
 
+    Nsv\League\Controller\:
+        resource: '../src/League/Controller/'
+
     Nsv\League\Core\:
         resource: '../src/League/Core/'
 

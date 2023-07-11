@@ -60,6 +60,8 @@
   }
 
   // New Symfony World: Load league entity and store on the global $bridge object 
+  // TODO: This file is also called from _admin scripts which don't go through
+  // Symfony yet. Therefore, we need to check whether $bridge is actually set.
   global $bridge;
   if ($bridge) {
     $bridge->league = $bridge->leagues->find($globals['tid']);
