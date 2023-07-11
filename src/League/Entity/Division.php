@@ -19,7 +19,10 @@ class Division
 
     #[ORM\Column(length: 30)]
     private string $name;
-    
+
+    #[ORM\Column(name: "sortid")]
+    private ?int $sortId;
+
     public function __call($property, $args) {
       return $this->$property;
     }

@@ -18,7 +18,7 @@ class League
     private string $name;
 
     #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
-    #[ORM\OrderBy(["name" => "ASC"])]
+    #[ORM\OrderBy(["sortId" => "ASC", "id" => "ASC"])]
     private $divisions;
 
     #[ORM\OneToMany(targetEntity: Team::class, mappedBy: 'league')]
