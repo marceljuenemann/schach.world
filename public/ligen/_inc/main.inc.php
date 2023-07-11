@@ -13,6 +13,7 @@
  */
 
   require_once ( "../../libs/mysql-shim.php" );
+  require_once ( "../../../vendor/autoload.php" );
 
   define('SED_REMIS', '½');
 

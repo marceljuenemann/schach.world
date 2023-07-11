@@ -17,6 +17,7 @@
   require_once ( "auth.inc.php" );
   require_once ( "cache.inc.php" ); //wird eh gebraucht
 
+    global $admin;
     $admin = array ();
 
     // -----------------------------------------------------------------------
