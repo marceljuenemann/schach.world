@@ -42,6 +42,7 @@
     SED_Error ( "Der Link scheint fehlerhaft gewesen zu sein. Achten Sie darauf, dass Ihr eMail-Programm den Link nicht in der Mitte umgebrochen hat!", true );
 
   // Daten über Paarung und Staffelleiter abfragen
+  global $g_paarung, $g_leiter, $g_m1, $g_m2, $g_edit;
   $g_paarung = mysql_fetch_array ( mysql_query ( "SELECT *, erg1 IS NOT NULL as isset FROM paarungen WHERE id=$_GET[p]", $globals ['db'] ), MYSQL_ASSOC );
   $g_leiter = mysql_fetch_array ( mysql_query ( "SELECT b.id, b.name, b.telefon, b.email FROM staffeln INNER JOIN benutzer as b ON b.id=staffeln.leiter WHERE staffeln.id=$g_paarung[staffel] AND staffeln.turnier=$globals[tid]", $globals ['db'] ), MYSQL_ASSOC );
 

@@ -51,9 +51,8 @@
             require_once ( "turnier.inc.php" );
 
             // Den (staffelunabhängigen) Termin finden, der am nächsten an heute ist
-            $rsrc = mysql_query ( "SELECT runde FROM termine WHERE turnier=$globals[tid] and staffel is null ORDER BY ABS(UNIX_TIMESTAMP(datum)-UNIX_TIMESTAMP(CURDATE())) LIMIT 1", $globals ['db'] );
-            if ( $rsrc && mysql_num_rows ( $rsrc ) )
-                return reset ( mysql_fetch_array ( $rsrc, MYSQL_NUM ) );
+            $runde = SED_MYSQL_Value ( "SELECT runde FROM termine WHERE turnier=$globals[tid] and staffel is null ORDER BY ABS(UNIX_TIMESTAMP(datum)-UNIX_TIMESTAMP(CURDATE())) LIMIT 1" );
+            if ($runde) return $runde;
         }
 
         return 1; // hat alles nichts geholfen...

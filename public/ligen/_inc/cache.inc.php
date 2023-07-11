@@ -42,7 +42,8 @@ class SED_Cache {
         // Aus dem Cache laden 
         $rsrc = mysql_query ( "SELECT inhalt FROM cache WHERE typ='$typ' AND staffel='$staffel' AND runde='$runde' LIMIT 1", $globals ['db'] );
         if ( $rsrc && mysql_num_rows ( $rsrc ) && !isset ( $_GET ['nocache'] ) ){
-            return unserialize ( reset ( mysql_fetch_array ( $rsrc, MYSQL_NUM ) ) );
+            $row = mysql_fetch_array ( $rsrc, MYSQL_NUM );
+            return unserialize ( reset ( $row ) );
         }	
         return false;
     }

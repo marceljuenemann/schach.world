@@ -98,7 +98,7 @@
   //////////////////////////////////////////////////////////////////
 
     // Vorbereitungen für Spielverlegung
-    $verlegung = $g_paarung ['termin'];
+    $verlegung = $g_paarung ['termin'] || '';
     $tmp = explode ( "-", $verlegung ); // YYYY-MM-DD
     $verlegung_aktiv =  count ( $tmp ) == 3;
     $verlegung_aktiv_checked = $verlegung_aktiv ? "checked='checked'" : "";

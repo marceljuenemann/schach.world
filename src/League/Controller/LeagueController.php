@@ -3,6 +3,7 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Core\Bridge;
+use NSV\WebApp\Core\WordPress\Auth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -14,10 +15,15 @@ class LeagueController extends AbstractController {
     global $bridge;
     $bridge = $symfonyBridge;
 
+    // Show all errors and notices to admins. 
+    if (Auth::isAdmin()) {
+      $_GET['debugme'] = 1;
+    }
+    
     // Hand over to legacy league manager.
-    chdir(ABSPATH . '../ligen/');
     $_GET['dir'] = $leagueName;
     ob_start();
+    chdir(ABSPATH . '../ligen/');
     include('index.php');    
     $body = ob_get_clean();
 

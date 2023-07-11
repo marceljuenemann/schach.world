@@ -114,8 +114,7 @@
             return $prefs [$feld];
 
     // Abfragen, ob die Anzahl vom Turnier-Standart abweicht
-    return reset ( mysql_fetch_array ( mysql_query (
-        "SELECT IF($feld IS NULL,".$prefs[$feld].",$feld) FROM staffeln WHERE id=$staffel", $globals ['db'] ) ) );
+    return SED_MYSQL_Value("SELECT IF($feld IS NULL,".$prefs[$feld].",$feld) FROM staffeln WHERE id=$staffel");
   }
 
   // Liefert die letzte Runde in der eine Paarung gesetzt ist

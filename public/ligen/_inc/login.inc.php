@@ -98,7 +98,8 @@
         SED_Error ( "Sie sind nicht eingeloggt! Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
 
       // $admin auffüllen
-      $admin ['staffel'] = reset ( mysql_fetch_array ( $qryAuth, MYSQL_NUM ) );
+      $row = mysql_fetch_array ( $qryAuth, MYSQL_NUM );
+      $admin ['staffel'] = reset ( $row );
       $admin ['username'] = $result ["un"];
       $admin ['usermail'] = $result ["ue"];
     }
