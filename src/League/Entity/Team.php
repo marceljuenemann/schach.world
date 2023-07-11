@@ -28,7 +28,7 @@ class Team
     private int $number;
 
     public function nameWithNumber() {
-      return trim($this->name . ' ' . ($this->number > 1 ? $this->number : ''));
+      return trim(trim($this->name) . ' ' . ($this->number > 1 ? $this->number : ''));
     }
 
     public function __call($property, $args) {
