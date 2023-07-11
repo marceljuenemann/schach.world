@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Anmeldungs-Optionen
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -17,10 +17,10 @@
 <form action='<? echo SED_GenerateFormAction(); ?>' method='post'><div><fieldset class='sed_admin_desk'><legend>Einstellungen zur Mannschaftsmeldung</legend>
 
   <?
-    // Ändern?
+    // Ã„ndern?
     if ( isset ( $_POST ['anme_change'] ) )
     {
-      // Globale Variablen ändern
+      // Globale Variablen Ã¤ndern
       $prefs ['anmAktiv'] = ( isset ( $_POST ['aktiv'] ) && $_POST ['aktiv'] ) ? 1 : 0;
       $prefs ['anmVerband'] = $_POST ['verband'];
       $prefs ['anmGeburt'] = (int) $_POST ['geburt'];
@@ -30,7 +30,7 @@
       // In Datenbank speichern
       if ( mysql_query ( "UPDATE turniere SET anmAktiv=$prefs[anmAktiv], anmVerband='$prefs[anmVerband]', anmGeburt=$prefs[anmGeburt], anmGeschlecht='$prefs[anmGeschlecht]', anmTLMail='$prefs[anmTLMail]' WHERE id=$globals[tid] LIMIT 1", $globals ['db'] ) )
       {
-        echo "<b>Änderungen erfolgreich gespeichert!</b><br /><br />";
+        echo "<b>&Auml;nderungen erfolgreich gespeichert!</b><br /><br />";
 
         // Metatag Refresh
         echo "<meta http-equiv='refresh' content='0;URL=?admin=desktop-$admin[userid]-$admin[session]' />";
@@ -53,7 +53,7 @@
     $optionsVerband = SED_SelectOption ( $optionsVerband, $prefs ['anmVerband'] );
 
     // Geschlechtsbegrenzung
-    $optionsMW = "<option value=''>Alle</option><option value='W'>Nur weiblich</option><option value='M'>Nur männlich</option>";
+    $optionsMW = "<option value=''>Alle</option><option value='W'>Nur weiblich</option><option value='M'>Nur m&auml;nnlich</option>";
     $optionsMW = SED_SelectOption ( $optionsMW, $prefs ['anmGeschlecht'] );
   ?>
 
@@ -66,24 +66,24 @@
   <br />
 
   <b>Verband:</b><br />
-  In welchem Verband müssen Mannschaften gemeldet sein, die sich zu Ihrem
-  Turnier anmelden dürfen?<br />
+  In welchem Verband m&uuml;ssen Mannschaften gemeldet sein, die sich zu Ihrem
+  Turnier anmelden d&uuml;rfen?<br />
   <select <? echo $paddingStyle; ?> name='verband'><? echo $optionsVerband; ?></select><br />
   <br />
 
   <b>Altersbegrenzung:</b><br />
-  Geben Sie hier den ältesten Jahrgang an, aus dem Spieler teilnehmen dürfen, oder
+  Geben Sie hier den &auml;ltesten Jahrgang an, aus dem Spieler teilnehmen d&uuml;rfen, oder
   setzen Sie das Feld auf 0, um die Altersbegrenzung zu deaktivieren.<br />
   <input <? echo $paddingStyle; ?> type='text' name='geburt' value='<? echo $prefs ['anmGeburt']; ?>' size='4' maxlength='4' /><br />
   <br />
 
   <b>Geschlechts-Begrenzung:</b><br />
-  Benutzen Sie das folgende Feld, um nur Mädchen- oder Frauenmannschaften zu erlauben<br />
+  Benutzen Sie das folgende Feld, um nur M&auml;dchen- oder Frauenmannschaften zu erlauben<br />
   <select <? echo $paddingStyle; ?> name='geschlecht'><? echo $optionsMW; ?></select><br />
   <br />
 
   <b>Info-Mail:</b><br />
-  Möchten Sie eine eMail erhalten, wenn eine Mannschaft gemeldet wird? Nur sinnvoll, wenn die Vereine ihre Mannschaften selbständig melden.<br />
+  M&ouml;chten Sie eine eMail erhalten, wenn eine Mannschaft gemeldet wird? Nur sinnvoll, wenn die Vereine ihre Mannschaften selbst&auml;ndig melden.<br />
   <input <? echo $paddingStyle; ?> type='checkbox' id='TLMail' name='TLMail' value='1' <? echo $attribTLMail; ?> /> <label for='TLMail'>Info-Mail aktivieren</label><br />
   <br />
 
@@ -96,16 +96,16 @@
 
 
 <form action='<? echo SED_GenerateFormAction(); ?>' method='post'><div><fieldset class='sed_admin_desk'><legend>Zusatzfelder</legend>
-    An dieser Stelle können Sie zusätzliche Felder festlegen, die bei der Anmeldung abgefragt werden. Ein Beispiel hierfür ist ein Anmerkungsfeld oder der Name des 1. Vorsitzenden. Geben Sie pro Zeile bitte die Bezeichnung eines Feldes an. Wenn das Feld mehrzeilig sein soll, dann hängen Sie an die Bezeichnung bitte #0 an.<br /><br />
+    An dieser Stelle k&ouml;nnen Sie zus&auml;tzliche Felder festlegen, die bei der Anmeldung abgefragt werden. Ein Beispiel hierf&uuml;r ist ein Anmerkungsfeld oder der Name des 1. Vorsitzenden. Geben Sie pro Zeile bitte die Bezeichnung eines Feldes an. Wenn das Feld mehrzeilig sein soll, dann h&auml;ngen Sie an die Bezeichnung bitte #0 an.<br /><br />
 
     <?
-        // Ändern?
+        // Ã„ndern?
         if ( isset ( $_POST ['anme_felder'] ) )
         {
             // In Datenbank speichern
             if ( mysql_query ( "UPDATE turniere SET anmZusatzfelder='$_POST[anme_textarea]' WHERE id=$globals[tid] LIMIT 1", $globals ['db'] ) )
             {
-                echo "<b>Änderungen erfolgreich gespeichert!</b><br /><br />";
+                echo "<b>&Auml;nderungen erfolgreich gespeichert!</b><br /><br />";
                 $prefs ['anmZusatzfelder'] = $_POST ['anme_textarea'];
             }
         }
@@ -121,7 +121,7 @@
 
 
 <fieldset class='sed_admin_desk'><legend>Eingaben in die Zusatzfelder</legend>
-    An dieser Stelle können Sie nachlesen, was die Mannschaften in die Zusatzfelder, wie z.B. Anmerkungen, eingegeben haben.<br /><br />
+    An dieser Stelle k&ouml;nnen Sie nachlesen, was die Mannschaften in die Zusatzfelder, wie z.B. Anmerkungen, eingegeben haben.<br /><br />
     <?
         if ( isset ( $_GET ['showzusatzfelder'] ) )
         {

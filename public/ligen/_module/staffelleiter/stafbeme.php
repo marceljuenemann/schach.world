@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Spieltagsbemerkungen
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -14,7 +14,7 @@
 
   if ( isset ( $_POST ['admin_sl_bemerkungen'] ) )
   {
-    // Bemerkung einfügen / bearbeiten
+    // Bemerkung einfÃ¼gen / bearbeiten
     $tmp = mysql_query ( "SELECT id FROM bemerkungen WHERE staffel=$admin[staffel] AND runde=$_POST[r]", $globals ['db'] );
     if ( mysql_num_rows ( $tmp ) )
     {
@@ -24,7 +24,7 @@
     else
     {
       if ( !mysql_query ( "INSERT INTO bemerkungen SET staffel=$admin[staffel], runde=$_POST[r], text='$_POST[text]'", $globals ['db'] ) )
-        SED_Error ( "Fehler beim einfügen der Bemerkung!" );
+        SED_Error ( "Fehler beim einf&uuml;gen der Bemerkung!" );
       SED_Cache::clearSpieltag ( $admin ['staffel'], $_POST["r"] );
     }
 

@@ -1,10 +1,10 @@
 <?
-/* SL-Bereich: Staffel löschen
+/* SL-Bereich: Staffel lÃ¶schen
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -21,7 +21,7 @@
     echo "<meta http-equiv='refresh' content='0;URL=?admin=desktop-$admin[userid]-$admin[session]' />";
   }
 
-  echo "Möchten Sie die Staffel " . $globals ['staffeln'][$admin ['staffel']] . " wirklich löschen?<br /><br />";
+  echo "M&ouml;chten Sie die Staffel " . $globals ['staffeln'][$admin ['staffel']] . " wirklich l&ouml;schen?<br /><br />";
   echo "<a href='?admin=turnstlo-$admin[userid]-$admin[session]&staffel=$admin[staffel]&aks=true'>Ja</a> ";
   echo "<a href='?admin=desktop-$admin[userid]-$admin[session]'>Nein</a> ";
 ?>

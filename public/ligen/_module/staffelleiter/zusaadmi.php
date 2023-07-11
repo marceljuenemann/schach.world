@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Administrator-Bereich
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -12,119 +12,13 @@
 
     require_once ( "login.inc.php" );
 
-
-
-
-
-	/*
-	sooo dirty...
-	
-$staffel = 610;		
-		$data = array (
-
-array(
-"zps" => "70604",
-"mnr" => "1",
-"mf_name" => "Jascha Bonacic",
-"mf_telefon" => "05476 8019147",
-"mf_telefon2" => "0163 6316792",
-"mf_email" => "jascha.bonacic@osnanet.de",
-"so_name" => "Altes Pfarrhaus und Martinusheim",
-"so_strasse" => "Martinistraße 2 – 4",
-"so_plz" => "49170",
-"so_stadt" => "Hagen a.T.W",
-array(
-"Lubbe, Nikolas",
-"Wöllermann, Jan",
-"Grafe, Frank",
-"Wierum, Colin",
-"Bonacic, Nenad",
-"Runde, Marco",
-"Kemper, Christoph",
-"Runde, Sven",
-"Karsten Bertram",
-"Antonius Schwefer",
-"Heiner Rieping",
-"Nils Orschulik",
-"Jascha Bonacic",
-"Daniel Tietje",
-"Kilian Böhning",
-"Kristin Rethmann",
-"Lukas Beinke",
-"Balint Balazs",
-
-
-// end of dirtyness
-)
-),
-);
-
-
-
-		foreach ( $data as $team ){
-			$teamdata = array ("staffel" =>$staffel, "turnier"=>$globals['tid']);
-			
-			
-			foreach ( $team as $k => $v ){
-				if ( is_array ( $v ) ){
-					$name = "noname";
-					$rsrc = mysql_query ( "SELECT name FROM mannschaften WHERE zps='$teamdata[zps]' ORDER BY id DESC", $globals ['db'] );
-
-					// Hat das nicht geklappt?
-					if ( !$rsrc || !mysql_num_rows ( $rsrc ) )
-						;
-					
-					// Sonst Ausgabe
-					$name = ( reset ( mysql_fetch_array ( $rsrc ) ) );
-					$teamdata['name'] = $name;
-				
-					
-					$sql =  "INSERT INTO mannschaften SET ";
-					foreach ( $teamdata as $tk => $tv ){
-						$sql .= "$tk='$tv', ";
-					}
-					$sql = substr ( $sql, 0, strlen($sql)-2 );
-					mysql_query ( $sql, $globals ['db'] );
-					$id = mysql_insert_id();
-
-					foreach ( $v as $s ){
-						require_once("spieler.class.php");
-						$spieler = new SED_Spieler ();
-						$spieler->setName ( $s );
-						$spieler->set ( "mannschaft", $id );
-						$spieler->autofill($teamdata['zps']);
-						echo $spieler->getName ()."<br>";
-						$spieler->saveToDB ();
-					}
-		
-		
-				} else {
-					$teamdata [$k] = $v;
-				}
-			}
-		
-		}
-		
-		
-	
-	
-  
-  
-  	
-	
-	
-	*/
-	
-	
-	
-	
 	
 	
 	
   // Zugriffskontrolle
   if ( isset ( $_POST ['passwort'] ) == false || md5 ( $_POST ['passwort'] ) != $globals ['masterpasswort'] )
   {
-    SED_Error ( "Diese Funktionen stehen nur dem Webmaster zur Verfügung!", false );
+    SED_Error ( "Diese Funktionen stehen nur dem Webmaster zur Verf&uuml;gung!", false );
     echo "<form action='".SED_GenerateFormAction()."' method='post'><div>";
     echo "<input type='password' style='margin-bottom: 15px; margin-top: 5px;' name='passwort' size='10' /><br />";
     echo "<input type='submit' class='sed_submit' value='Absenden' /></div></form>";
@@ -138,7 +32,7 @@ array(
 
     $frmMF = array
     (
-        // ID, Name, Beschreibung, Textfeldbreite, Max. Länge, Pflichtfeld
+        // ID, Name, Beschreibung, Textfeldbreite, Max. LÃ¤nge, Pflichtfeld
         array ( "directory", "Verzeichnisname", "", 20, 50, true ),
         array ( "template", "Template", "", 20, 50, true )
     );
@@ -146,7 +40,7 @@ array(
       // Speichern
       if ( isset ( $_POST ['savebutton1'] ) )
       {
-        // Datenprüfung
+        // DatenprÃ¼fung
         $errors = array ();
         for ( $i = 0; $i < count ( $frmMF ); ++$i )
         {
@@ -181,7 +75,7 @@ array(
           mysql_query ( $x = "UPDATE turniere SET $query anmAktiv=$prefs[anmAktiv] WHERE id=$globals[tid] LIMIT 1", $globals ['db'] );
 
           // Cache leeren
-          // ... nicht nötig
+          // ... nicht nÃ¶tig
 
           // Erfolgsmeldung
           echo "<b>Die Daten wurden erfolgreich gespeichert</b>";
@@ -190,7 +84,7 @@ array(
       }
 
       // Felder ausgeben
-      // ID, Name, Beschreibung, Textfeldbreite, Max. Länge, Pflichtfeld
+      // ID, Name, Beschreibung, Textfeldbreite, Max. LÃ¤nge, Pflichtfeld
       echo "<span class='sed_hl2'>Turniereinstellungen</span><br /><br />";
       echo "<form action='".SED_GenerateFormAction()."' method='post'><div>";
       for ( $i = 0; $i < count ( $frmMF ); ++$i )
@@ -207,10 +101,10 @@ array(
 
 
   ////////////////////////
-  // Passwörter versenden
+  // PasswÃ¶rter versenden
   ////////////////////////
 
-      // Passwörter
+      // PasswÃ¶rter
       if (isset ($_POST['buttonsave2']) && isset ($_POST['sure']) && $_POST['sure'])
       {
         // Parsen
@@ -224,7 +118,7 @@ array(
 
         // Abfrage
         if ( !isset ( $queries [$type] ) )
-          SED_Error ( "Ungültiges Format!", true );
+          SED_Error ( "Ung&uuml;ltiges Format!", true );
         $rsrc = mysql_query ( $queries [$type], $globals ['db'] );
 
         // Durchgehen
@@ -236,7 +130,7 @@ array(
           else
             $name = $globals ['staffeln'][$user ['id2']];
 
-          // Passwort ändern
+          // Passwort Ã¤ndern
           $password = "";
           for ( $i = 0; $i < 10; ++$i )
               $password .= base_convert ( rand ( 1, 30 ), 10, 32 );
@@ -244,7 +138,7 @@ array(
             SED_Error ( "Beim Setzen des neuen Passworts ($user[id]) ist etwas schief gelaufen!", true );
 
           // Mail versenden
-          if ( !mail ( $user ['email'], "$prefs[name] / Zugangsdaten", "Lieber Schachfreund,\n\nmit dieser Email erhalten Sie Ihre Zugangsdaten zur Turnierhomepage der $prefs[name]:\n\nBenutzer: $name\nPasswort: $password\n\nMit diesen Daten können Sie sich auf $globals[httppath]$prefs[directory]/ einloggen. Ihr Passwort können Sie in den Einstellungen ändern.\n\n", "From: $globals[absender_mail]\nReply-To: $globals[absender_mail]", "-f$globals[absender_mail]" ) )
+          if ( !mail ( $user ['email'], "$prefs[name] / Zugangsdaten", utf8_decode("Lieber Schachfreund,\n\nmit dieser Email erhalten Sie Ihre Zugangsdaten zur Turnierhomepage der $prefs[name]:\n\nBenutzer: $name\nPasswort: $password\n\nMit diesen Daten kÃ¶nnen Sie sich auf $globals[httppath]$prefs[directory]/ einloggen. Ihr Passwort kÃ¶nnen Sie in den Einstellungen Ã¤ndern.\n\n"), "From: $globals[absender_mail]\nReply-To: $globals[absender_mail]", "-f$globals[absender_mail]" ) )
             SED_Error ( "Beim Verschicken der Email ist ein Fehler aufgetreten ($user[id])" );
         }
 
@@ -256,10 +150,10 @@ array(
 
 
 <br /><br />
-<span class='sed_hl2'>Passwörter versenden</span><br /><br />
+<span class='sed_hl2'>Passw&ouml;rter versenden</span><br /><br />
 <form action='<? echo SED_GenerateFormAction(); ?>' method='post'><div>
 
-      Empfänger: <select name='person'>
+      Empf&auml;nger: <select name='person'>
       <option value='b'>Alle Staffelleiter</option>
       </select><br /><br />
       <input type='hidden' name='passwort' value='<? echo $_POST ['passwort']; ?>' />

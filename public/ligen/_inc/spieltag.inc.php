@@ -2,12 +2,12 @@
 /* Backend zur Spieltag-Anzeige
  * 
  * Dieses Skript berechnet alle Daten, die bei der Spieltag-Ansicht
- * dargestellt werden und kümmert sich auch um das cachen dieser Daten.
+ * dargestellt werden und kÃ¼mmert sich auch um das cachen dieser Daten.
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage spieltag
@@ -22,7 +22,7 @@
     tabelle_kreuz (bool)
     tabelle_links (bool)
 
-  ---Gibt das folgende Array zurück:---
+  ---Gibt das folgende Array zurÃ¼ck:---
     turnierid
     turniername
     staffelid
@@ -93,7 +93,7 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
     global $prefs;
     $result = array ();
 
-    // Simple Parameter Überprüfung
+    // Simple Parameter ÃœberprÃ¼fung
     if ( $turnier != $globals ['tid'] || isset ( $globals ['staffeln'][$staffel] ) == false || is_numeric ( $runde ) == false )
     return false;
 
@@ -104,7 +104,7 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
     // Ansonsten neu generieren
     else
     {
-        // Informationen und Einstellungen über die Staffel abfragen
+        // Informationen und Einstellungen Ã¼ber die Staffel abfragen
         $infos = mysql_fetch_array ( mysql_query ( "SELECT * FROM viewStaffeln WHERE id=$staffel", $globals ['db'] ), MYSQL_ASSOC );
         if ( !is_array ( $infos ) ) return false;
 
@@ -153,11 +153,11 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
             $temp2 = mysql_query ( "SELECT s1.nachname as s1nachname, s1.vorname as s1vorname, TRIM(s1.titel) as s1titel, s1.brettnr as s1pass, s2.nachname as s2nachname, s2.vorname as s2vorname, s2.titel as s2titel, s2.brettnr as s2pass, sp.spieler1 as sid1, sp.spieler2 as sid2, IF(s1.dwz=0,'',s1.dwz) as dwz1, IF(s2.dwz=0,'',s2.dwz) as dwz2, sp.ergebnis1 as erg1, sp.ergebnis2 as erg2 FROM spielerpaarungen as sp LEFT JOIN spieler as s1 ON s1.id=sp.spieler1 LEFT JOIN spieler as s2 ON s2.id=sp.spieler2 WHERE paarung=".$result ['paarungen'][$i]['id']." ORDER BY brett", $globals ['db'] );
             while ( $result ['paarungen'][$i]['paarungen'][$j] = mysql_fetch_array ( $temp2, MYSQL_ASSOC ) )
             {
-                // Vollständige Namen zusammensetzen
+                // VollstÃ¤ndige Namen zusammensetzen
                 $result ['paarungen'][$i]['paarungen'][$j]['s1fullname'] = SED_Spielername ( $result ['paarungen'][$i]['paarungen'][$j], "s1" );
                 $result ['paarungen'][$i]['paarungen'][$j]['s2fullname'] = SED_Spielername ( $result ['paarungen'][$i]['paarungen'][$j], "s2" );
                 
-                // Kampflos überprüfen
+                // Kampflos Ã¼berprÃ¼fen
                 if ( $kampflos && $result ['paarungen'][$i]['paarungen'][$j]['erg1'] != "+" && $result ['paarungen'][$i]['paarungen'][$j]['erg1'] != "-" )
                     $kampflos = 0;
                 ++$j;

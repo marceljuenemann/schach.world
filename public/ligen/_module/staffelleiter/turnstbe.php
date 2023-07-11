@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Staffel bearbeiten
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -15,14 +15,14 @@
   // Mannschaftsverwaltung
   echo "<form action='index.php' method='get'><div>";
   {
-    // Mannschaft löschen
+    // Mannschaft lÃ¶schen
     if ( isset ( $_GET ['delmann'] ) )
     {
       mysql_query ( "UPDATE mannschaften SET staffel=0 WHERE id=$_GET[delmann] AND turnier=$globals[tid] LIMIT 1", $globals ['db'] );
       SED_Cache::clearTables ( $admin ["staffel"] );
     }
 
-    // Mannschaft hinzufügen
+    // Mannschaft hinzufÃ¼gen
     if ( isset ( $_GET ['addmann'] ) )
     {
       mysql_query ( "UPDATE mannschaften SET staffel=$admin[staffel] WHERE id=$_GET[addmann] AND turnier=$globals[tid] LIMIT 1", $globals ['db'] );
@@ -51,7 +51,7 @@
     if ( $res )
       while ( $team = mysql_fetch_array ( $res, MYSQL_ASSOC ) )
         echo "<option value='$team[id]'>" . $globals ['teams'][$team ['id']] . "</option>";
-    echo "</select> <input type='submit' class='sed_submit' value='Hinzufügen' /></td></tr>";
+    echo "</select> <input type='submit' class='sed_submit' value='Hinzuf&uuml;gen' /></td></tr>";
 
     // Form End
     echo "</table></fieldset><br /><br />";

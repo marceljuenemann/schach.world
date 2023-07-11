@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Desktop
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -133,7 +133,7 @@
             // Anfrage abschicken
             req.open ( 'GET', url, true );
 
-            // Bei Antwort folgendes ausführen:
+            // Bei Antwort folgendes ausfÃ¼hren:
             req.onreadystatechange = function ()
             {
               if ( req.readyState == 4 && req.status == 200 )
@@ -144,7 +144,7 @@
               return false;
             };
 
-            // Endgültig senden
+            // EndgÃ¼ltig senden
             req.setRequestHeader ( 'Content-Type', 'application/x-www-form-urlencoded' );
             req.send ( null );
           }
@@ -199,7 +199,7 @@
             echo "<tr><td>".$globals['teams'][$team['id']]."&nbsp;&nbsp;</td><td>
                     <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]&edit=0'><img src='$globals[systemicons]desk_nachmeldung.png' alt='Nachmeldungen' class='sed_admin_icon' />Nachmeldung</a>
                     <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spieler.png' alt='Spieler' class='sed_admin_icon' />Spieler</a>
-                    <a style='text-decoration: none' href='?admin=manndata-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Mannschaftsführer' class='sed_admin_icon' />Bearbeiten</a>
+                    <a style='text-decoration: none' href='?admin=manndata-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Mannschaftsf&uuml;hrer' class='sed_admin_icon' />Bearbeiten</a>
                     <a style='text-decoration: none' href='?admin=manndata-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spiellokal.png' alt='Spiellokal' class='sed_admin_icon' /></a>
                   </td></tr>";
           }
@@ -224,7 +224,7 @@
                     <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spieler.png' alt='Spieler' class='sed_admin_icon' />Spieler</a>
                     <a style='text-decoration: none' href='?admin=manndata-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Bearbeiten' class='sed_admin_icon' />Bearbeiten</a>
                     <a style='text-decoration: none' href='?admin=manndata-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spiellokal.png' alt='Spiellokal' class='sed_admin_icon' /></a>
-                    <a style='text-decoration: none' href='?admin=turnmalo-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_loeschen.png' alt='' class='sed_admin_icon' />Löschen</a>
+                    <a style='text-decoration: none' href='?admin=turnmalo-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_loeschen.png' alt='' class='sed_admin_icon' />L&ouml;schen</a>
                   </td></tr>";
           }
 

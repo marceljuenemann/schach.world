@@ -2,12 +2,12 @@
 /* SL-Bereich: Liste von Paarungen
  *
  * Liefert eine Liste von Paarungen einer bestimmten Staffel und
- * Runde. Kann auch über AJAX benutzt werden.
+ * Runde. Kann auch Ã¼ber AJAX benutzt werden.
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -41,7 +41,7 @@
       else // alle ausgeben
         $rundenwhere = "1";
 
-      // Abfrage ausführen
+      // Abfrage ausfÃ¼hren
       $rsrc = mysql_query ( "SELECT p.id as pid, p.runde as runde, p.mannschaft1 as m1, p.mannschaft2 as m2, p.erg1 IS NOT NULL as gesetzt, 0 as festgelegt FROM paarungen p INNER JOIN staffeln s ON s.id=p.staffel WHERE s.turnier=$globals[tid] AND $staffelwhere AND $rundenwhere ORDER BY runde", $globals ['db'] );
 
 
@@ -61,7 +61,7 @@
 
         // Wenn die Paarung setzbar ist
         if ( $row ['gesetzt'] )
-          echo "<td style='text-align:left; min-width:220px'><a href='?admin=alleeing-$admin[userid]-$admin[session]&p=$row[pid]#admintop'><img src='$globals[systemicons]desk_eingeben.png' alt='Eingeben' class='sed_admin_icon' />Ändern</a>$settings</td>";
+          echo "<td style='text-align:left; min-width:220px'><a href='?admin=alleeing-$admin[userid]-$admin[session]&p=$row[pid]#admintop'><img src='$globals[systemicons]desk_eingeben.png' alt='Eingeben' class='sed_admin_icon' />&Auml;ndern</a>$settings</td>";
         else
           echo "<td style='text-align:left; min-width:220px'><a href='?admin=alleeing-$admin[userid]-$admin[session]&p=$row[pid]#admintop'><img src='$globals[systemicons]desk_eingeben.png' alt='Eingeben' class='sed_admin_icon' />Eingeben</a>$settings</td>";
         echo "</tr>";

@@ -1,10 +1,10 @@
 <?
 /* Mannschaftsmeldung: Frontend
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage anmeldung
@@ -20,7 +20,7 @@
     if ( !$prefs ['anmAktiv'] && !$isTurnierleiter )
         SED_Error ( "Sie sind nicht berechtigt, eine Mannschaft zu melden!", true );
 
-    // Überschriften
+    // Ãœberschriften
     if ( !isset ( $admin ) )
         echo "<span class='sed_hl1'>Mannschaftsmeldung</span><br /><br />";
 
@@ -39,7 +39,7 @@
         $anmeldung->parseJSON ( base64_decode ( $_POST ["class"] ) );
     }
 
-    // Soll eine "leere" Mannschaft gefüllt werden?
+    // Soll eine "leere" Mannschaft gefÃ¼llt werden?
     elseif ( isset ( $_GET ['changeteam'] ) ){
         $anmeldung = new SED_Anmeldung ( $_GET ['changeteam'] );
         $_POST ['step'] = 2;
@@ -97,7 +97,7 @@
     <span class='sed_hl2'>Seite wird geladen...</span><br />
     <br /><br />
     <br /><br />
-    Sollte die Seite nach fünf Sekunden noch nicht angezeigt werden,
+    Sollte die Seite nach f&uuml;nf Sekunden noch nicht angezeigt werden,
     dann haben Sie Javascript nicht aktiviert. Informieren Sie
     sich, wie Sie <a href='http://code.google.com/p/schach-ergebnisdienst/wiki/JavascriptAktivieren' target='_blank'>Javascript in Ihrem Browser aktivieren</a>, und laden
     Sie diese Seite neu.<br /><br />

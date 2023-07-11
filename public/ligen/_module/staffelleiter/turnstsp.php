@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Spielplan
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -19,11 +19,11 @@
   // Abgesendet
   if ( isset ( $_POST ['hidden_paarungen'] ) )
   {
-    // Alte löschen
+    // Alte lÃ¶schen
     if ( !mysql_query ( "DELETE FROM paarungen WHERE staffel=$admin[staffel] AND erg1 IS NULL AND erg2 IS NULL", $globals ['db'] ) )
-      SED_Error ( "Konnte alten Spielplan nicht löschen!", true );
+      SED_Error ( "Konnte alten Spielplan nicht l&ouml;schen!", true );
 
-    // Einfügen
+    // EinfÃ¼gen
     $paar = explode ( ";", $_POST ['hidden_paarungen'] );
     foreach ( $paar as $paarung )
     {
@@ -54,11 +54,11 @@
   $rsrcPaarungen = mysql_query ( "SELECT runde, mannschaft1, mannschaft2 FROM paarungen WHERE staffel=$admin[staffel] AND erg1 IS NULL AND erg2 IS NULL", $globals ['db'] );
   $isRunning = reset ( mysql_fetch_array ( mysql_query ( "SELECT COUNT(*) FROM paarungen WHERE staffel=$admin[staffel] LIMIT 1", $globals ['db'] ) ) );
 
-  // Überprüfung
+  // ÃœberprÃ¼fung
   if ( !$rsrcTeamsStaffel || !mysql_num_rows ( $rsrcTeamsStaffel ) )
-    SED_Error ( "Sie haben dieser Staffel noch keine Mannschaften zugeordnet! Dies geht über die Funktion Bearbeiten.", false );
+    SED_Error ( "Sie haben dieser Staffel noch keine Mannschaften zugeordnet! Dies geht &uuml;ber die Funktion Bearbeiten.", false );
 
-  // Überlegen, was gemacht wird
+  // Ãœberlegen, was gemacht wird
   $showInfopage = !$isRunning && !isset ( $_GET ['modus'] );
   $showInfobox = $isRunning;
   $showTabelle = !$isRunning && !$showInfopage && mysql_num_rows ( $rsrcTeamsStaffel ) < 13;
@@ -76,25 +76,25 @@
     echo "<div id='JsSecure' style='display: none; text-align: justify'>";
     echo "<form id='turnstsp_form' action='".SED_GenerateFormAction()."' method='post'><div>";
 
-    // Über mögliche Modi informieren
+    // Ãœber mÃ¶gliche Modi informieren
     if ( $showInfopage )
     {
-        echo "Sie haben folgende Möglichkeiten, den Spielplan in den Ergebnisdienst einzugeben:<br /><br />
+        echo "Sie haben folgende M&ouml;glichkeiten, den Spielplan in den Ergebnisdienst einzugeben:<br /><br />
             <a href='?admin=turnstsp-$admin[userid]-$admin[session]&staffel=$admin[staffel]&modus=paarungstafel'>Neuen Spielplan mit Hilfe einer Paarungstafel erstellen</a><br /><br />
             <a href='?admin=turnstsp-$admin[userid]-$admin[session]&staffel=$admin[staffel]&modus=einfach'>Vorhandenen Spielplan eingeben</a><br /><br />
             <a href='?admin=turnstsp-$admin[userid]-$admin[session]&staffel=$admin[staffel]&modus=schnell'>Vorhandenen Spielplan im Schnelleingabe-Modus eingeben</a><br /><br />
         ";
     }
 
-    // Über bereits eingegeben Paarungen informieren
+    // Ãœber bereits eingegeben Paarungen informieren
     if ( $showInfobox )
     {
-        echo "<div class='sed_infomeldung'>Paarungen, deren Ergebnisse bereits eingegeben wurden, werden in dieser Ansicht nicht angezeigt! Um jene Paarungen zu bearbeiten, müssen Sie die Ergebnisse zunächst über die Paarungseinstellungen löschen.</div>";
+        echo "<div class='sed_infomeldung'>Paarungen, deren Ergebnisse bereits eingegeben wurden, werden in dieser Ansicht nicht angezeigt! Um jene Paarungen zu bearbeiten, mÃ¼ssen Sie die Ergebnisse zun&auml;chst &uuml;ber die Paarungseinstellungen l&ouml;schen.</div>";
     }
 
 
   /////////////////////////////////////////////
-  // DATEN FÜR JAVASCRIPT BEREITSTELLEN, PAARUNGSTAFEL
+  // DATEN FÃœR JAVASCRIPT BEREITSTELLEN, PAARUNGSTAFEL
   /////////////////////////////////////////////
 
     $strPaarungen = $strMannschaften = $strZuordnungen = "";
@@ -124,7 +124,7 @@
     for ( $i = 1; $team = mysql_fetch_array ( $rsrcTeamsStaffel, MYSQL_ASSOC ); ++$i )
         $strZuordnungen .= "$team[id]~$i;";
 
-    // In Javascript und nach dem Absenden verfügbar machen
+    // In Javascript und nach dem Absenden verfÃ¼gbar machen
     echo "<input type='hidden' name='hidden_mannschaften' value='$strMannschaften' />";
     echo "<input type='hidden' name='hidden_zuordnungen' value='$strZuordnungen' />";
     echo "<input type='hidden' name='hidden_paarungen' value='$strPaarungen' />";
@@ -136,7 +136,7 @@
 
   if ( $showSchnelleingabe )
   {
-    // Überschriften und Spieltag-Auswahl
+    // Ãœberschriften und Spieltag-Auswahl
     echo "<span class='sed_hl2'>Schnelleingabe</span><br /><br />";
     echo "Zur Paarungseingabe geben Sie einfach hintereinander die Mannschaftsnummern (s. Kreuztabelle) an. Dabei werden die Nummern nicht durch Leerzeichen getrennt und in jeder Zeile genau ein Spieltag eingegeben. Die Nummer 10 wird als A angegeben, 11 als B usw.<br /><br />";
     echo "<textarea id='SE' cols='60' rows='5'>4123\r\n9A7856</textarea><br /><br />";
@@ -150,13 +150,13 @@
 
   if ( $showPaarungen )
   {
-    // Überschriften und Spieltag-Auswahl
+    // Ãœberschriften und Spieltag-Auswahl
     echo "<span class='sed_hl2'>Paarungen</span><br /><br />";
     echo "<table class='sed_tabelle' cellspacing='0' cellpadding='5'>";
     echo "<tr><td colspan='2' style='background:#eeeeee'><a href='javascript:var dummy=1;' onclick='document.getElementById(\"PV-1-S\").selectedIndex--;PvGenerate();'><img src='$globals[systemicons]pre.gif' alt='Vorheriger' class='sed_admin_icon' /></a> <select id='PV-1-S' onchange='PvGenerate();'>";
     for ( $j = 1; $j <= SED_GetRundenzahl ( $admin ["staffel"] ); ++$j )
       echo "<option value='$j'>$j. Spieltag</option>";
-    echo "</select> <a href='javascript:var dummy=1;' onclick='document.getElementById(\"PV-1-S\").selectedIndex++;PvGenerate();'><img src='$globals[systemicons]next.gif' alt='Nächster' class='sed_admin_icon' /></a></td></tr>";
+    echo "</select> <a href='javascript:var dummy=1;' onclick='document.getElementById(\"PV-1-S\").selectedIndex++;PvGenerate();'><img src='$globals[systemicons]next.gif' alt='N&auml;chster' class='sed_admin_icon' /></a></td></tr>";
 
     // Mannschaftsauswahl
     $options = "";
@@ -169,7 +169,7 @@
       $options .= "<option value='$team[id]'>" . $globals ['teams'][$team ['id']] . "</option>";
 
     // Buttons
-    echo "<tr id='PV-3'><td colspan='2' style='background: #eeeeee;'><select id='PV-3-A'>$options</select> gegen <select id='PV-3-B'>$options</select> <input type='button' value='Hinzufügen' onclick='OnAddPaar();' class='sed_submit' /></td></tr>";
+    echo "<tr id='PV-3'><td colspan='2' style='background: #eeeeee;'><select id='PV-3-A'>$options</select> gegen <select id='PV-3-B'>$options</select> <input type='button' value='Hinzuf&uuml;gen' onclick='OnAddPaar();' class='sed_submit' /></td></tr>";
     echo "</table><br /><br />";
   }
 
@@ -182,7 +182,7 @@
   {
     // Infotexte
     echo "<span class='sed_hl2'>Kreuztabelle</span><br /><br />";
-    echo "Die Kreutabelle zeigt, an welchem Spieltag und wo zwei Mannschaften gegeneinander spielen. Über die Pfeile können Sie zwei Mannschaften tauschen, ohne die Paarungstafel an sich zu ändern.<br /><br />";
+    echo "Die Kreutabelle zeigt, an welchem Spieltag und wo zwei Mannschaften gegeneinander spielen. &Uuml;ber die Pfeile k&ouml;nnen Sie zwei Mannschaften tauschen, ohne die Paarungstafel an sich zu &auml;ndern.<br /><br />";
 
     // Kreuztabelle - Erste Zeile
     echo "<table class='sed_tabelle' cellspacing='0' cellpadding='3'><tr><th></th><th>Name</th>";
@@ -197,7 +197,7 @@
       // Nummer und Mannschaft ausgeben
       echo "<tr><td>$i.</td><td id='KT-$i-N' class='l'><a href='javascript:var dummy=1;' onclick='QuickAdd($team[id]);'>" . $globals ['teams'][$team ['id']] . "</a>&nbsp;&nbsp;</td>";
 
-      // Zelle ausgeben. Wird von Javascript gefüllt
+      // Zelle ausgeben. Wird von Javascript gefÃ¼llt
       for ( $j = 1; $j <= mysql_num_rows ( $rsrcTeamsStaffel ); ++$j )
       {
         $content = $i == $j ? "xxx" : "";
@@ -246,7 +246,7 @@
     // Absenden
     ?>
     <span class='sed_hl2'>Spielplan speichern</span><br /><br />
-    Sind Sie sicher, dass Sie den alten Spielplan unwideruflich mit den neuen Daten überschreiben möchten?<br /><br />
+    Sind Sie sicher, dass Sie den alten Spielplan unwideruflich mit den neuen Daten &uuml;berschreiben m&ouml;chten?<br /><br />
     <input type='submit' class='sed_submit' value='Speichern' />
     <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" />
     <?
@@ -269,18 +269,18 @@ array_zuordnungen         Array ( mid => zuord )
 
 FUNKTIONEN
 
-AddPaar               Fügt eine Paarung in das Hidden Feld und die KT ein
-DelPaar               Löscht eine Paarung aus dem Hidden Feld und der KT
-PaarViewAdd           Fügt eine Paarung in die Paarungsanzeige ein
-PaarViewDel           Löscht eine Paarung aus der Paarungsanzeige
-PaarViewClear         Löscht die gesamte Paarungsanzeige
+AddPaar               Fuegt eine Paarung in das Hidden Feld und die KT ein
+DelPaar               Loescht eine Paarung aus dem Hidden Feld und der KT
+PaarViewAdd           Fuegt eine Paarung in die Paarungsanzeige ein
+PaarViewDel           Loescht eine Paarung aus der Paarungsanzeige
+PaarViewClear         Loescht die gesamte Paarungsanzeige
 PaarViewGenerate      Generiert die Paarungsanzeige, liest dazu Runde aus select aus
 ScfLoad               Liest alle Paarungen aus dem Hidden Feld in die KT ein
 KmClear               Versteckt KM
-KmDistance            Berechnet die Entfernung zweier Orte aus Breiten- und Längengrad
+KmDistance            Berechnet die Entfernung zweier Orte aus Breiten- und Laengengrad
 KmCalc                Berechnet KM
-OnAddPaar             Bei Klick auf Hinzufügen
-OnDelPaar             Bei Klick auf Löschsymbol
+OnAddPaar             Bei Klick auf Hinzufuegen
+OnDelPaar             Bei Klick auf Loeschsymbol
 OnSave                Bei Klick auf Speichern
 OnSwitch              Bei Klick auf einen der Pfeile
 QuickAdd              Mannschaftsauswahl durch Klick auf den Namen
@@ -392,10 +392,10 @@ function OptMove ( $team, $pos )
 
 function AddPaar ( $runde, $teamA, $teamB )
 {
-  // Zu hidden var hinzufügen
+  // Zu hidden var hinzufÃ¼gen
   hidden_paarungen.value += $runde + "~" + $teamA + "~" + $teamB + "~;";
 
-  // In Kreuztabelle einfügen
+  // In Kreuztabelle einfÃ¼gen
   KtAdd ( $runde, array_zuordnungen [$teamA], array_zuordnungen [$teamB] );
 }
 
@@ -454,7 +454,7 @@ function KmCalc ()
                                       array_mannschaften [$tmp [2]][1],
                                       array_mannschaften [$tmp [2]][2] );
 
-      // In Tabelle einfügen
+      // In Tabelle einfÃ¼gen
       var $obj = document.getElementById ( "KM-" + array_zuordnungen [$tmp [2]] + "-1" );
       if ( $obj )
       {
@@ -524,11 +524,11 @@ function OnAddPaar()
   var $nameA = $objA.options [$objA.selectedIndex].text;
   var $nameB = $objB.options [$objB.selectedIndex].text;
 
-  // Überprüfung
+  // ÃœberprÃ¼fung
   if ( $runde < 1 || $teamA < 1 || $teamB < 1 || $teamA == $teamB )
     return false;
 
-  // Hinzufügen zu SCF und KT
+  // HinzufÃ¼gen zu SCF und KT
   AddPaar ( $runde, $teamA, $teamB );
 
   // GUI
@@ -538,7 +538,7 @@ function OnAddPaar()
 
 function OnDelPaar ( $runde, $teamA, $teamB )
 {
-  // Aus SCF und KT löschen
+  // Aus SCF und KT lÃ¶schen
   DelPaar ( $runde, $teamA, $teamB );
 
   // GUI
@@ -561,25 +561,25 @@ function OnSwitch ( $zuordA, $zuordB )
   if ( !$arrTemp [$zuordA] || !$arrTemp [$zuordB] )
     return;
 
-  // KT ändern
+  // KT Ã¤ndern
   tmp = document.getElementById ( "KT-" + $zuordA + "-N" ).innerHTML;
   document.getElementById ( "KT-" + $zuordA + "-N" ).innerHTML = document.getElementById ( "KT-" + $zuordB + "-N" ).innerHTML;
   document.getElementById ( "KT-" + $zuordB + "-N" ).innerHTML = tmp;
 
-  // KM ändern
+  // KM Ã¤ndern
   document.getElementById ( "KM-" + $zuordA + "-N" ).innerHTML = array_mannschaften [ $arrTemp [$zuordB] ][0] + "&nbsp;&nbsp;";
   document.getElementById ( "KM-" + $zuordB + "-N" ).innerHTML = array_mannschaften [ $arrTemp [$zuordA] ][0] + "&nbsp;&nbsp;";
 
-  // Paarungen ändern (Hinweis: Funktioniert nur, wenn mid > runde
+  // Paarungen Ã¤ndern (Hinweis: Funktioniert nur, wenn mid > runde
   hidden_paarungen.value = hidden_paarungen.value.replace ( new RegExp ( "~" + $arrTemp [$zuordA] + "~", "g" ), "~temp~" );
   hidden_paarungen.value = hidden_paarungen.value.replace ( new RegExp ( "~" + $arrTemp [$zuordB] + "~", "g" ), "~" + $arrTemp [$zuordA] + "~" );
   hidden_paarungen.value = hidden_paarungen.value.replace ( new RegExp ( "~temp~", "g" ), "~" + $arrTemp [$zuordB] + "~" );
 
-  // Globales Array ändern
+  // Globales Array Ã¤ndern
   array_zuordnungen [ $arrTemp [$zuordA] ] = $zuordB;
   array_zuordnungen [ $arrTemp [$zuordB] ] = $zuordA;
 
-  // Zuordnungen ändern
+  // Zuordnungen Ã¤ndern
   hidden_zuordnungen.value = hidden_zuordnungen.value.replace ( new RegExp ( "~" + $zuordA + ";", "" ), "~temp;" );
   hidden_zuordnungen.value = hidden_zuordnungen.value.replace ( new RegExp ( "~" + $zuordB + ";", "" ), "~" + $zuordA + ";" );
   hidden_zuordnungen.value = hidden_zuordnungen.value.replace ( new RegExp ( "~temp;", "" ), "~" + $zuordB + ";" );
@@ -604,13 +604,13 @@ function PvAdd ( $runde, $teamA, $teamB )
 
   // Zelle 2 (Bild mit Link)
   $objIMG.setAttribute ( "src", "<? echo "$globals[systemicons]desk_loeschen.png"; ?>" );
-  $objIMG.setAttribute ( "alt", "Paarung löschen" );
+  $objIMG.setAttribute ( "alt", "Paarung l&ouml;schen" );
   $objIMG.style.border = "none";
   $objA.setAttribute ( "href", "javascript:OnDelPaar("+$runde+", "+$teamA+", "+$teamB+");" );
   $objA.appendChild ( $objIMG );
   $objTD2.appendChild ( $objA );
 
-  // Einfügen
+  // EinfÃ¼gen
   $objTR.appendChild ( $objTD1 );
   $objTR.appendChild ( $objTD2 );
   $objTR.setAttribute ( "id", "PV-2-" + $runde + "-" + $teamA + "-" + $teamB );
@@ -656,7 +656,7 @@ function ScfLoad ( $paar )
   var $arrPaar = $paar.split ( ";" );
   for ( $i = 0; $i < $arrPaar.length; ++$i )
   {
-    // In KT hinzufügen
+    // In KT hinzufÃ¼gen
     var $tmp = $arrPaar [$i].split ( "~" );
     KtAdd ( $tmp [0], array_zuordnungen [$tmp [1]],  array_zuordnungen [$tmp [2]] );
   }
@@ -671,20 +671,20 @@ function QuickAdd ( $mid )
         // Merken
         QuickAdd_static = $mid;
 
-        // Bei Pv Auswählen
+        // Bei Pv AuswÃ¤hlen
         var $objA = document.getElementById ( "PV-3-A" );
         $objA.value = $mid;
     }
     else
     {
-        // Bei nöchsten Mal von vorne
+        // Bei nÃ¶chsten Mal von vorne
         QuickAdd_static = 0;
 
-        // Bei Pv Auswählen
+        // Bei Pv AuswÃ¤hlen
         var $objB = document.getElementById ( "PV-3-B" );
         $objB.value = $mid;
 
-        // Einfügen
+        // EinfÃ¼gen
         OnAddPaar ();
     }
 }
@@ -706,7 +706,7 @@ function Schnelleingabe ()
     // Die Spieltage / Zeilen durchgehen
     for ( i = 0; zeilen [i]; ++i )
     {
-        // Spieltag auswählen
+        // Spieltag auswÃ¤hlen
         document.getElementById ( "PV-1-S" ).value = i+1;
 
         // Die einzelnen Zeichen durchgehen
@@ -728,7 +728,7 @@ function Schnelleingabe ()
   <span class='sed_hl2'>Seite wird geladen...</span><br />
   <br /><br />
   <br /><br />
-  Sollte die Seite nach fünf Sekunden noch nicht angezeigt werden,
+  Sollte die Seite nach f&uuml;nf Sekunden noch nicht angezeigt werden,
   dann haben Sie Javascript nicht aktiviert. Informieren Sie
   sich, wie Sie <a href='http://www.gailer-net.de/html/javascript.html#b55' target='_blank'>Javascript in Ihrem Browser aktivieren</a>, und laden
   Sie diese Seite neu.

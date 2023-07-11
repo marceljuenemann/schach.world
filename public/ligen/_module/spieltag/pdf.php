@@ -1,10 +1,10 @@
 <?
 /* Spieltag-Anzeige als PDF
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage spieltag
@@ -58,7 +58,7 @@
             $pdf->SetFillColor ( 255, 255, 255 );
     }
 
-    // Für schönere Bemerkungs-Anmerkungen (hochgestellte 1, 2, 3)
+    // FÃ¼r schÃ¶nere Bemerkungs-Anmerkungen (hochgestellte 1, 2, 3)
     $bemerkungsSternchen = array ( 0, chr(0xB9), chr(0xB2), chr(0xB3), '*' );
     $bemerkungen = array (); // mit tupel ( char bemerkung )
 
@@ -82,7 +82,7 @@
     $pdf->SetFont ( "tahoma", "", $fontsize );
     $table_stdcolwidth = $pdf->GetStringWidth ( "XXX" );
     $table_colwidth[0] = count($table)>10 ? $pdf->GetStringWidth ( "10." ) : $pdf->GetStringWidth ( "8." );
-    $table_colwidth[1] = $pdf->GetStringWidth ( "Torgelow-Drögeheide  " );
+    $table_colwidth[1] = $pdf->GetStringWidth ( "Torgelow-Drogeheide  " );
     $tablewidth = array_sum ( $table_colwidth ) + 2 * $table_stdcolwidth + $paddingTable * 4;
 
     // Berechnung der Breite der rechten Spalte
@@ -93,12 +93,12 @@
 
 
     ///////////////////////////////////
-    // Überschrift ausgeben
+    // Ãœberschrift ausgeben
     {
         // Daten sammeln
         $headlines = array ( $data ['turniername'], $data ['staffelname'], $_GET['r'] . ". Spieltag - " . $data ['datum'] );
 
-        // Schriftgrößen und -dekorationen
+        // SchriftgrÃ¶ÃŸen und -dekorationen
         $hl_sizes = array ( 12, 16, 12 );
         $hl_heights = array ( 5, 7, 4 );
         $hl_styles = array ( "", "B", "" );
@@ -123,12 +123,12 @@
                   ? ( $prefs['spielDreistelligeNr'] ? $pdf->GetStringWidth ( "616" ) : $pdf->GetStringWidth ( "24" ) ) + 3
                   : 0;
         $width[2] = $pdf->GetStringWidth ( "(2999)" );
-        $width[3] = $pdf->GetStringWidth ( "8½*" );
+        $width[3] = $pdf->GetStringWidth ( utf8_decode("8Â½*") );
         $width[4] = $pdf->GetStringWidth ( ":" );
         $width[1] = ( $widthOfGames - 2*array_sum ( $width ) ) / 2;
         $widthOfGames = array_sum ( $width ) * 2 - $width [4];
 
-        // Spaltenbreiten für Überschriften
+        // Spaltenbreiten fÃ¼r Ãœberschriften
         $widthHead = $width;
         $widthHead[0] += $widthHead[1]+$widthHead[2];
         $widthHead[1] = $widthHead[2] = 0;
@@ -222,7 +222,7 @@
                         $u = $t<5 ? $t : 8-$t;
                         if ( $width [$u] == 0 ) continue;
 
-                        // Schriftgröße auf Standart, bei DWZ -2
+                        // SchriftgrÃ¶ÃŸe auf Standart, bei DWZ -2
                         $pdf->SetFont ( "", "", $fontsizes[$u] ? $fontsizes[$u] : $fontsize );
 
                         // Passt der Name?
@@ -251,7 +251,7 @@
     // Tabelle
     if ( $options ['showTabelle'] && isset($table[0]) )
     {
-        // Überschriften
+        // Ãœberschriften
         $pdf->SetFont ( "", "B", $fontsize );
         for ( $i = 0; $i < count ( $table[0] ); ++$i )
         {
@@ -280,7 +280,7 @@
             // Hintergrundfarbe festlegen
             SetFillColor ( $pdf, $table [$i][count($table[$i])-1] );
 
-            // Sonderbehandlung für Doppelrundige Turniere
+            // Sonderbehandlung fÃ¼r Doppelrundige Turniere
             $maxHeight = 1;
             if ( $isBigTable )
                 for ( $j = 2; $j < count ( $table [$i] ) - 3; ++$j )
@@ -301,10 +301,10 @@
                 if ( $isBigTable && ( $j == 2 || $j == count ( $table[$i] )-3 ) )
                     $pdf->SetX ( $pdf->GetX () + .2 );
 
-                // Soll der Hintergrund gefärbt werden?
+                // Soll der Hintergrund gefÃ¤rbt werden?
                 $fill = ( $j == 0 || ( $isBigTable && $j == $i + 1 ) );
 
-                // Sonderbehandlung für xxx-Zellen
+                // Sonderbehandlung fÃ¼r xxx-Zellen
                 if ( $fill && $j > 0 )
                 {
                     SetFillColor ( $pdf, "gray" );
@@ -322,7 +322,7 @@
                     $x = $pdf->GetX ();
                     $y = $pdf->GetY ();
 
-                    // Zunächst zeichnen wir explizit den Rahmen
+                    // ZunÃ¤chst zeichnen wir explizit den Rahmen
                     $pdf->Cell ( $cellwidth + $paddingTable, $rowHeight, " ", 1, 2, "C", $fill );
                     $pdf->SetY ( $y );
                     $pdf->SetX ( $x );
@@ -332,13 +332,13 @@
                         $pdf->Cell ( $cellwidth + $paddingTable, $cellheight, "$spiel[text]", 0, 2, "C", $fill, "$urlbase$spiel[url]" );
                     }
 
-                    // Den Zeiger auf die nächste Zelle setzen
+                    // Den Zeiger auf die nÃ¤chste Zelle setzen
                     $pdf->SetY ( $y );
                     $pdf->SetX ( $x + $cellwidth + $paddingTable );
                 }
             }
 
-            // evtl. gleich mehrere Zeilenumbrüche
+            // evtl. gleich mehrere ZeilenumbrÃ¼che
             $pdf->Ln ();
         }
         $pdf->Ln ();
@@ -372,7 +372,7 @@
             foreach ( $data ['nachmeldungen'] as $nachmeldung )
                 if ( $nachmeldung ['berechtigtAb'] == $_GET ['r'] || $nachmeldung ['berechtigtAb'] == $_GET ['r'] + 1 )
                 {
-                    // Für jede Mannschaft eine Überschrift ausgeben
+                    // FÃ¼r jede Mannschaft eine Ãœberschrift ausgeben
                     if ( $nachmeldung ['mannschaft'] != $lastteam )
                     {
                         $lastteam = $nachmeldung ['mannschaft'];
@@ -394,7 +394,7 @@
         // Spieltag Vorschau
         if ( $data ['vorschau'] && $options ['showSpieltagvorschau'] )
         {
-            $content .= "<BR><B>Nächster Spieltag (".$data ['vorschautermin'].")</B><BR>";
+            $content .= utf8_decode("<BR><B>NÃ¤chster Spieltag (".$data ['vorschautermin'].")</B><BR>");
             $xtra = "";
             foreach ( $data ['vorschau'] as $paarung )
             {
@@ -404,13 +404,13 @@
             }
         }
 
-        // Ausgabe & Zurücksetzen
+        // Ausgabe & ZurÃ¼cksetzen
         $pdf->WriteHTML ( "$content<BR>", $cellheight );
     }
 
 
     ///////////////////////////////////
-    // Fußzeile
+    // FuÃŸzeile
     {
         $pdf->SetFont ( "", "", 10 );
         $pdf->SetAutoPageBreak ( false );
@@ -427,6 +427,6 @@
     }
 
 
-    // Endgültige Ausgabe
+    // EndgÃ¼ltige Ausgabe
     $pdf->Output ( $globals ['staffeln'][$_GET ['staffel']]." $_GET[r].pdf", "I" );
 ?>

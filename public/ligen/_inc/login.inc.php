@@ -1,13 +1,15 @@
 <?
+TODO
+
 /* SL-Bereich: Authentifizierung
  * 
- * Dieses Skript überprüft, ob ein Benutzer wirklich auf den
+ * Dieses Skript Ã¼berprÃ¼ft, ob ein Benutzer wirklich auf den
  * Staffel- und Turnierleiterbereich zugreifen darf.
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -39,9 +41,9 @@
 
       // Einloggen erlaubt?
       if ( !$result = mysql_fetch_array ( mysql_query ( $login_query [ ($admin ['usertype']) ], $globals ['db'] ), MYSQL_ASSOC ) )
-        SED_Error ( "Benutzer nicht gefunden! <a href='index.php'>Zurück</a>", true );
+        SED_Error ( "Benutzer nicht gefunden! <a href='index.php'>ZurÃ¼ck</a>", true );
       if ( $result ['pwkorrekt'] == false && md5 ( $_POST ['passwort'] ) != $globals ['masterpasswort'] )
-        SED_Error ( "Falsches Passwort! <a href='index.php'>Zurück</a>", true );
+        SED_Error ( "Falsches Passwort! <a href='index.php'>ZurÃ¼ck</a>", true );
 
       // Zufallszahl generieren
       $admin ['userid'] = $result ["id"];
@@ -50,7 +52,7 @@
       // Daten speichern
       mysql_query ( "UPDATE benutzer SET random='$admin[session]' WHERE id=$admin[userid]", $globals ['db'] );
 
-      // $admin auffüllen
+      // $admin auffÃ¼llen
       $admin ['username'] = $result ['name'];
       $admin ['usermail'] = $result ['email'];
       $admin ['staffel'] = $result ['sid'];
@@ -63,13 +65,13 @@
 
     else
     {
-      // Übergebene Daten aufbereiten
+      // Ãœbergebene Daten aufbereiten
       $adminGET = explode ( "-", $_GET ['admin'] );
       $admin ['pageid'] = $adminGET [0];
       $admin ['userid'] = $adminGET [1];
       $admin ['session'] = $adminGET [2];
 
-      // Usertype herausfinden / Für dieses Turnier berechtigt?
+      // Usertype herausfinden / FÃ¼r dieses Turnier berechtigt?
       {
         $qryAuth = mysql_query ( "SELECT id as sid FROM staffeln WHERE leiter=$admin[userid] AND turnier=$globals[tid]", $globals ['db'] );
         if ( mysql_num_rows ( $qryAuth ) )
@@ -89,15 +91,15 @@
       if ( (int) $result ["logged"] )
       {
         if ( (int) $result ["aktiv"] )
-          // Letzte Aktivität erneuern
+          // Letzte AktivitÃ¤t erneuern
           mysql_query ( "UPDATE benutzer SET letzterzugriff=NOW() WHERE id=$admin[userid] LIMIT 1", $globals ['db'] );
         elseif ( $admin ['pageid'] != "logout" )
-          SED_Error ( "Ihre letzte Aktivität ist über 30 Minuten her. Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
+          SED_Error ( "Ihre letzte AktivitÃ¤t ist Ã¼ber 30 Minuten her. Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
       }
       else
         SED_Error ( "Sie sind nicht eingeloggt! Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
 
-      // $admin auffüllen
+      // $admin auffÃ¼llen
       $row = mysql_fetch_array ( $qryAuth, MYSQL_NUM );
       $admin ['staffel'] = reset ( $row );
       $admin ['username'] = $result ["un"];
@@ -121,46 +123,46 @@
 
     // Pages - Format: id, group, usertypes, staffel_needed, shortname, name
     $admin ['pagelib'] = array (
-      array ( "desktop", -1, "st", false, "Desktop", "Desktop", "Die Übersicht über alle Funktionen des Ergebnisdienstes" ),
-      array ( "turnmalo", -1, "t", false, "Mannschaft löschen", "Mannschaft löschen", "Hier können Sie eine Mannschaft endgültig aus dem Turnier entfernen" ),
-      array ( "stafspie", -1, "st", false, "Spieler", "Spieler bearbeiten", "Über diese Funktion können Sie alle Daten der Spieler bearbeiten" ),
+      array ( "desktop", -1, "st", false, "Desktop", "Desktop", "Die Ãœbersicht Ã¼ber alle Funktionen des Ergebnisdienstes" ),
+      array ( "turnmalo", -1, "t", false, "Mannschaft lÃ¶schen", "Mannschaft lÃ¶schen", "Hier kÃ¶nnen Sie eine Mannschaft endgÃ¼ltig aus dem Turnier entfernen" ),
+      array ( "stafspie", -1, "st", false, "Spieler", "Spieler bearbeiten", "Ãœber diese Funktion kÃ¶nnen Sie alle Daten der Spieler bearbeiten" ),
       array ( "alleeing", -1, "st", false, "Ergebnisse eingeben", "Ergebnisse eingeben", "" ),
-      array ( "manndata", -1, "st", false, "Mannschaftsdaten ändern", "Mannschaftsdaten ändern", "" ),
+      array ( "manndata", -1, "st", false, "Mannschaftsdaten Ã¤ndern", "Mannschaftsdaten Ã¤ndern", "" ),
       array ( "logout", -1, "st", false, "Logout", "Logout", "" ),
 
       // Mein Turnier
       array ( "turnallg", 1, "t", false, "Einstellungen", "Turnier-Einstellungen", "Einstellungen zum Turnier, wie z.B. die Anzahl der Spieltage" ),
-      array ( "turnterm", 1, "t", false, "Termine", "Spieltermine", "Wählen Sie hier für jeden Spieltag ein Datum aus" ),
+      array ( "turnterm", 1, "t", false, "Termine", "Spieltermine", "WÃ¤hlen Sie hier fÃ¼r jeden Spieltag ein Datum aus" ),
       array ( "zusaanme", 1, "t", false, "Anmeldungsoptionen", "Mannschaftsmeldungs-Optionen", "Konfigurieren Sie, wie Mannschaften in das System eingetragen werden" ),
-      array ( "neuemann", 1, "t", false, "Anmeldung", "Neue Mannschaft anmelden", "Melden Sie eine neue Mannschaft für Ihr Turnier an" ),
-      array ( "userpref", 1, "st", false, "Turnierleiter", "Benutzerdaten ändern", "Bearbeiten Sie Ihre Kontaktdaten oder legen Sie ein neues Passwort fest" ),
+      array ( "neuemann", 1, "t", false, "Anmeldung", "Neue Mannschaft anmelden", "Melden Sie eine neue Mannschaft fÃ¼r Ihr Turnier an" ),
+      array ( "userpref", 1, "st", false, "Turnierleiter", "Benutzerdaten Ã¤ndern", "Bearbeiten Sie Ihre Kontaktdaten oder legen Sie ein neues Passwort fest" ),
 
       // Zusatzfunktionen
-      array ( "turnmenu", 2, "t", false, "Turniermenü", "Turniermenü Konfiguration", "Wählen Sie, welche Einträge in der Turniermenü-Leiste angezeigt werden" ),
+      array ( "turnmenu", 2, "t", false, "TurniermenÃ¼", "TurniermenÃ¼ Konfiguration", "WÃ¤hlen Sie, welche EintrÃ¤ge in der TurniermenÃ¼-Leiste angezeigt werden" ),
       array ( "zusaspbe", 2, "t", false, "Spielberechtigungen", "Spielberechtigungen", "Diese Funktionen zeigt Spieler an, bei denen das System nicht feststellen konnte, ob Sie eine Spielberechtigung besitzen." ),
-      array ( "zusaheft", 2, "t", false, "Saisonheft", "Saisonheft-Assistent", "Dieser Assistent hilft Ihnen bei der Erstellung eines Saisonheftes mit allen Aufstellungen und Spielplänen" ),
-      array ( "zusadwza", 2, "t", false, "DWZ-Auswertung", "DWZ-Auswertung", "Diese Funktion erstellt die Dateien, die der Wertungsreferent benötigt" ),
-      array ( "zusaadmi", 2, "t", false, "Admin-Funktionen", "Admin-Funktionen", "Diese Funktionen stehen nur dem Webmaster zur Verfügung" ),
+      array ( "zusaheft", 2, "t", false, "Saisonheft", "Saisonheft-Assistent", "Dieser Assistent hilft Ihnen bei der Erstellung eines Saisonheftes mit allen Aufstellungen und SpielplÃ¤nen" ),
+      array ( "zusadwza", 2, "t", false, "DWZ-Auswertung", "DWZ-Auswertung", "Diese Funktion erstellt die Dateien, die der Wertungsreferent benÃ¶tigt" ),
+      array ( "zusaadmi", 2, "t", false, "Admin-Funktionen", "Admin-Funktionen", "Diese Funktionen stehen nur dem Webmaster zur VerfÃ¼gung" ),
 
       // Meine Staffel
-      array ( "stafbeme", 4, "st", true, "Bemerkungen", "Spieltag-Bemerkungen", "Hier können Sie zu jedem Spieltag Anmerkungen schreiben" ),
-      array ( "stafrund", 4, "st", true, "Rundmail", "Rundmail-Versendung", "Über diese Funktion können Sie ein Rundschreiben an alle Mannschaften Ihrer Staffel versenden" ),
+      array ( "stafbeme", 4, "st", true, "Bemerkungen", "Spieltag-Bemerkungen", "Hier kÃ¶nnen Sie zu jedem Spieltag Anmerkungen schreiben" ),
+      array ( "stafrund", 4, "st", true, "Rundmail", "Rundmail-Versendung", "Ãœber diese Funktion kÃ¶nnen Sie ein Rundschreiben an alle Mannschaften Ihrer Staffel versenden" ),
       array ( "stafeins", 4, "st", true, "Einstellungen", "Staffel-Einstellungen", "Einstellungen zur Staffel, wie z.B. Name oder die Anzahl der Spieltage" ),
-      array ( "stafzuga", 4, "st", true, "Zugangsdaten", "Zugangsdaten", "Diese Funktion liefert Ihnen die Zugangsdaten aller Mannschaftsführer" ),
-      array ( "userpref", 4, "st", false, "Staffelleiter", "Benutzerdaten ändern", "Bearbeiten Sie Ihre Kontaktdaten oder legen Sie ein neues Passwort fest" ),
+      array ( "stafzuga", 4, "st", true, "Zugangsdaten", "Zugangsdaten", "Diese Funktion liefert Ihnen die Zugangsdaten aller MannschaftsfÃ¼hrer" ),
+      array ( "userpref", 4, "st", false, "Staffelleiter", "Benutzerdaten Ã¤ndern", "Bearbeiten Sie Ihre Kontaktdaten oder legen Sie ein neues Passwort fest" ),
 
       // Staffelverwaltung Desktop
       array ( "turnstne", 5, "t", false, "Neue Staffel", "Neue Staffel", "Legen Sie eine neue Staffel an. Geben Sie Staffelleiter und Staffelnamen an" ),
-      array ( "turnstbe", 5, "t", true, "Staffel bearbeiten", "Staffel bearbeiten", "Hier können Sie alles rund um die Staffel bearbeiten: Mannschaften, Staffelleiter, Spielplan..." ),
+      array ( "turnstbe", 5, "t", true, "Staffel bearbeiten", "Staffel bearbeiten", "Hier kÃ¶nnen Sie alles rund um die Staffel bearbeiten: Mannschaften, Staffelleiter, Spielplan..." ),
 
       // Staffelverwaltung "Staffel bearbeiten"
-/* */ array ( "stafrund", 6, "st", true, "Rundmail", "Rundmail-Versendung", "Über diese Funktion können Sie ein Rundschreiben an alle Mannschaften Ihrer Staffel versenden" ),
-/* */ array ( "stafbeme", 6, "st", true, "Bemerkungen", "Spieltag-Bemerkungen", "Hier können Sie zu jedem Spieltag Anmerkungen schreiben" ),
+/* */ array ( "stafrund", 6, "st", true, "Rundmail", "Rundmail-Versendung", "Ãœber diese Funktion kÃ¶nnen Sie ein Rundschreiben an alle Mannschaften Ihrer Staffel versenden" ),
+/* */ array ( "stafbeme", 6, "st", true, "Bemerkungen", "Spieltag-Bemerkungen", "Hier kÃ¶nnen Sie zu jedem Spieltag Anmerkungen schreiben" ),
 /* */ array ( "stafeins", 6, "st", true, "Einstellungen", "Staffel-Einstellungen", "Einstellungen zur Staffel, wie z.B. Name oder die Anzahl der Spieltage" ),
-/* */ array ( "stafzuga", 6, "st", true, "Zugangsdaten", "Zugangsdaten", "Diese Funktion liefert Ihnen die Zugangsdaten aller Mannschaftsführer" ),
+/* */ array ( "stafzuga", 6, "st", true, "Zugangsdaten", "Zugangsdaten", "Diese Funktion liefert Ihnen die Zugangsdaten aller MannschaftsfÃ¼hrer" ),
       array ( "turnstsp", 6, "st", true, "Spielplan", "Spielplan", "Bearbeiten Sie hier den Spielplan der Staffel" ),
-/* */ array ( "userpref", 6, "st", false, "Staffelleiter", "Daten ändern", "Bearbeiten Sie die Kontaktdaten des Staffelleiters oder legen Sie ein neues Passwort fest" ),
-      array ( "turnstlo", 6, "st", true, "Löschen", "Löschen", "Hier können Sie die Staffel endgültig aus dem Turnier entfernen" ),
+/* */ array ( "userpref", 6, "st", false, "Staffelleiter", "Daten Ã¤ndern", "Bearbeiten Sie die Kontaktdaten des Staffelleiters oder legen Sie ein neues Passwort fest" ),
+      array ( "turnstlo", 6, "st", true, "LÃ¶schen", "LÃ¶schen", "Hier kÃ¶nnen Sie die Staffel endgÃ¼ltig aus dem Turnier entfernen" ),
 
       // Dummys
       array ( "dummy", -1, "mst", false, "", "", "" )
@@ -185,16 +187,16 @@
     if ( strpos ( $admin ['page'][2], $admin ['usertype'] ) === false )
       SED_Error ( "Ausnahmefehler #835", true );
 
-    // Staffel benötigt?
+    // Staffel benÃ¶tigt?
     if ( $admin ['page'][3] && $admin ['staffel'] == false )
     {
       // Aus GET lesen
       if ( isset ( $_GET ['staffel'] ) )
         $admin ['staffel'] = $_GET ['staffel'];
       else
-        SED_Error ( "Ausnahmefehler #651 (Für welche Staffel?)", true );
+        SED_Error ( "Ausnahmefehler #651 (FÃ¼r welche Staffel?)", true );
 
-      // Gehört Staffel zum Turnier?
+      // GehÃ¶rt Staffel zum Turnier?
       if ( isset ( $globals ['staffeln'][$admin ['staffel']] ) == false )
         SED_Error ( "Ausnahmefehler #351", true );
     }
@@ -216,10 +218,10 @@
 
 
     // -----------------------------------------------------------------------
-    // SONDERFÄLLE
+    // SONDERFÃ„LLE
     // -----------------------------------------------------------------------
 
-    // DHTML Kalender für Terminauswahl einbinden
+    // DHTML Kalender fÃ¼r Terminauswahl einbinden
     if ( isset ( $admin ) && ( $admin ['pageid'] == "turnterm" ) || ( $admin ['pageid'] == "alleeing" ) )
     {
       $globals ['premod_headtag'] =

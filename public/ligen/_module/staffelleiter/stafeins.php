@@ -1,10 +1,13 @@
 <?
+TODO
+
+
 /* SL-Bereich: Staffeleinstellungen
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -14,28 +17,28 @@
 
   $frmMF = array
   (
-    // ID, Name, Beschreibung, Textfeldbreite, Max. Länge, Pflichtfeld
-    array ( "spielAufsteiger", "Anzahl der Aufsteiger", "Lassen Sie das Feld leer, um die turnierweite Einstellung zu übernehmen.", 3, 2, false ),
-    array ( "spielAbsteiger", "Anzahl der Absteiger", "Lassen Sie das Feld leer, um die turnierweite Einstellung zu übernehmen.", 3, 2, false ),
-    array ( "spielAufsteigerRelegation", "Anzahl der Mannschaften, die nur unter Umständen aufsteigen (z.B. Relegation)", "Lassen Sie das Feld leer, um die turnierweite Einstellung zu übernehmen.", 3, 2, false ),
-    array ( "spielAbsteigerRelegation", "Anzahl der Mannschaften, die nur unter Umständen absteigen (z.B. Relegation)", "Lassen Sie das Feld leer, um die turnierweite Einstellung zu übernehmen.", 3, 2, false ),
+    // ID, Name, Beschreibung, Textfeldbreite, Max. LÃ¤nge, Pflichtfeld
+    array ( "spielAufsteiger", "Anzahl der Aufsteiger", "Lassen Sie das Feld leer, um die turnierweite Einstellung zu Ã¼bernehmen.", 3, 2, false ),
+    array ( "spielAbsteiger", "Anzahl der Absteiger", "Lassen Sie das Feld leer, um die turnierweite Einstellung zu Ã¼bernehmen.", 3, 2, false ),
+    array ( "spielAufsteigerRelegation", "Anzahl der Mannschaften, die nur unter UmstÃ¤nden aufsteigen (z.B. Relegation)", "Lassen Sie das Feld leer, um die turnierweite Einstellung zu Ã¼bernehmen.", 3, 2, false ),
+    array ( "spielAbsteigerRelegation", "Anzahl der Mannschaften, die nur unter UmstÃ¤nden absteigen (z.B. Relegation)", "Lassen Sie das Feld leer, um die turnierweite Einstellung zu Ã¼bernehmen.", 3, 2, false ),
     array ( "hr" ),
-    array ( "name", "Staffelname", "Der Name des Staffel darf aus höchstens 30 Zeichen bestehen", 30, 30 , true ),
-    array ( "runden", "Rundenzahl", "Die Anzahl der Spieltage Ihrer Staffel. Lassen Sie das Feld leer, um die turnierweite Einstellung zu übernehmen.", 3, 2, false ),
-    array ( "brettzahl", "Brettanzahl", "An wie vielen Brettern wird bei Mannschaftskämpfen Ihrer Staffel gespielt? Lassen Sie das Feld leer, um die turnierweite Einstellung zu übernehmen.", 3, 2, false ),
-    array ( "sysEingabelinks", "Eingabelinks", "Sollen automatisch Eingabelinks versendet werden? Die Mannschaftsführer erhalten bei Aktivierung automatisch drei Tage vor dem Spieltag eine eMail mit einem Link, über den Sie die Ergebnisse selbstständig eingeben können.", array ( "" => "Turnierweite Einstellung übernehmen", "1" => "eMails versenden", "0" => "keine eMails versenden" ), 0, false ),
+    array ( "name", "Staffelname", "Der Name des Staffel darf aus hÃ¶chstens 30 Zeichen bestehen", 30, 30 , true ),
+    array ( "runden", "Rundenzahl", "Die Anzahl der Spieltage Ihrer Staffel. Lassen Sie das Feld leer, um die turnierweite Einstellung zu Ã¼bernehmen.", 3, 2, false ),
+    array ( "brettzahl", "Brettanzahl", "An wie vielen Brettern wird bei MannschaftskÃ¤mpfen Ihrer Staffel gespielt? Lassen Sie das Feld leer, um die turnierweite Einstellung zu Ã¼bernehmen.", 3, 2, false ),
+    array ( "sysEingabelinks", "Eingabelinks", "Sollen automatisch Eingabelinks versendet werden? Die MannschaftsfÃ¼hrer erhalten bei Aktivierung automatisch drei Tage vor dem Spieltag eine eMail mit einem Link, Ã¼ber den Sie die Ergebnisse selbststÃ¤ndig eingeben kÃ¶nnen.", array ( "" => "Turnierweite Einstellung Ã¼bernehmen", "1" => "eMails versenden", "0" => "keine eMails versenden" ), 0, false ),
     array ( "hr" ),
-    array ( "showPassNr", "Spielbericht: Spieler-Nummern anzeigen", "Sollen auf dem Spielbericht die Spieler-Nummern angezeigt werden?", array ( "" => "Turnierweite Einstellung übernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
-    array ( "showTabelle", "Spielbericht: Tabelle anzeigen", "Soll auf dem Spielbericht eine Tabelle angezeigt werden?", array ( "" => "Turnierweite Einstellung übernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
-    array ( "showNachmeldungen", "Spielbericht: Nachmeldungen anzeigen", "Sollen auf dem Spielbericht die Nachmeldungen angezeigt werden?", array ( "" => "Turnierweite Einstellung übernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
-    array ( "showSpieltagvorschau", "Spielbericht: Spieltagvorschau", "Soll auf dem Spielbericht eine Vorschau auf den nächsten Spieltag angezeigt werden?", array ( "" => "Turnierweite Einstellung übernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false )
+    array ( "showPassNr", "Spielbericht: Spieler-Nummern anzeigen", "Sollen auf dem Spielbericht die Spieler-Nummern angezeigt werden?", array ( "" => "Turnierweite Einstellung Ã¼bernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
+    array ( "showTabelle", "Spielbericht: Tabelle anzeigen", "Soll auf dem Spielbericht eine Tabelle angezeigt werden?", array ( "" => "Turnierweite Einstellung Ã¼bernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
+    array ( "showNachmeldungen", "Spielbericht: Nachmeldungen anzeigen", "Sollen auf dem Spielbericht die Nachmeldungen angezeigt werden?", array ( "" => "Turnierweite Einstellung Ã¼bernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false ),
+    array ( "showSpieltagvorschau", "Spielbericht: Spieltagvorschau", "Soll auf dem Spielbericht eine Vorschau auf den nÃ¤chsten Spieltag angezeigt werden?", array ( "" => "Turnierweite Einstellung Ã¼bernehmen", "1" => "Ja, anzeigen", "0" => "Nein, nicht anzeigen" ), 0, false )
   );
 
 
   // Speichern
   if ( isset ( $_POST ['savebutton'] ) )
   {
-    // Datenprüfung
+    // DatenprÃ¼fung
     $errors = array ();
     for ( $i = 0; $i < count ( $frmMF ); ++$i )
     {
@@ -81,7 +84,7 @@
         $sql .= ", ".$frmMF [$i][0]."=".$value;
       }
       
-      // Speichervorgang durchführen
+      // Speichervorgang durchfÃ¼hren
       $sql = "UPDATE staffeln SET ".substr ( $sql, 2 )." WHERE id=$admin[staffel] LIMIT 1";
       if ( !mysql_query ( $sql, $globals ['db'] ) )
         SED_Error ( "Es ist ein Fehler aufgetreten!", true );
@@ -103,7 +106,7 @@
 
 
   // Felder ausgeben
-  // ID, Name, Beschreibung, Textfeldbreite, Max. Länge, Pflichtfeld
+  // ID, Name, Beschreibung, Textfeldbreite, Max. LÃ¤nge, Pflichtfeld
   echo "<form action='".SED_GenerateFormAction()."' method='post'><div>";
   for ( $i = 0; $i < count ( $frmMF ); ++$i )
   {

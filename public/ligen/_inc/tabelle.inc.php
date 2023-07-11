@@ -3,10 +3,10 @@
  *
  * Dieses Skript berechnet die Tabelle zu gegebener Staffel und Runde.
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage spieltag
@@ -30,7 +30,7 @@
     require_once ( "cache.inc.php" );
     define ( "SED_SORT_DEFAULT", 1 ); // MP, BP, Direkt ( MP, BP, Berliner ), Los
 
-// Objekte für eine Mannschaft (eine Zeile)
+// Objekte fÃ¼r eine Mannschaft (eine Zeile)
 class SED_Tabelle_Team {
     private $id, $mp, $bp;
     private $ergebnisse; // $ergebnisse [gegner][spieltag] = array ( bp, mp )
@@ -82,7 +82,7 @@ class SED_Tabelle_Team {
 
     // Liefert Ergebnisse gegen einen bestimmten Gegner
     function getErgebnisse ( $gegner ){
-        // Überhaupt vorhanden?
+        // Ãœberhaupt vorhanden?
         if ( !isset ( $this->ergebnisse [$gegner] ) )
             return array ();
         return $this->ergebnisse [$gegner];
@@ -124,13 +124,13 @@ class SED_Tabelle {
         $res = mysql_query ( "SELECT mannschaft1 as mid1, mannschaft2 as mid2, erg1, erg2, runde FROM paarungen WHERE staffel=$staffel AND runde<=$runde AND erg1 IS NOT NULL AND erg2 IS NOT NULL", $globals ['db'] );
         if ( $res ) while ( $game = mysql_fetch_array ( $res, MYSQL_ASSOC ) )
         {
-            // Mannschaften überhaupt in der Tabelle vorhanden?
+            // Mannschaften Ã¼berhaupt in der Tabelle vorhanden?
             if ( !isset ( $this->teams [$game["mid1"]] ) || !isset ( $this->teams [$game["mid2"]] ) )
                 continue;
 
             // Mannschaftspunkte berechnen
             // 1. Gewonnen hat die Mannschaft mit mehr BP (am verbreitetsten)
-            // Ausnahme: Ein 0 zu 0 werten wir als 0 MP für beide Parteien
+            // Ausnahme: Ein 0 zu 0 werten wir als 0 MP fÃ¼r beide Parteien
             $mp1 = $mp2 = 0;
             if ( $game["erg1"] > 0 || $game["erg2"] > 0 ){
                 $mp1 = $game["erg1"] > $game["erg2"] ? 2 : ( $game["erg1"] < $game["erg2"] ? 0 : 1 );
@@ -154,13 +154,13 @@ class SED_Tabelle {
 
     // Tabelle sortieren (mittels countingsort)
     function sort ( $type ){
-        // Einordnen über sort [mp][bp] = listOfTeams
+        // Einordnen Ã¼ber sort [mp][bp] = listOfTeams
         $sort = array ();
         foreach ( $this->teams as $mid=>$team ){
             $sort [$team->getMP()][(string) $team->getBP()][] = $team;
         }
 
-        // Direkten Vergleich zwischen Teams durchführen
+        // Direkten Vergleich zwischen Teams durchfÃ¼hren
         foreach ( $sort as &$mpgleich )
             foreach ( $mpgleich as &$bpgleich )
                 if ( count ( $bpgleich ) > 1 )
@@ -186,14 +186,14 @@ class SED_Tabelle {
                 foreach ( $teams as $tupel )
                     $this->ranking [] = array ( $platz+$tupel[0], $tupel[1]->getID() );
 
-                // Nächste Platznummer
+                // NÃ¤chste Platznummer
                 $platz += count ( $teams );
             }
         }
     }
 
     // Sortiert eine Liste von Team-Objekten nach direktem Vergleich
-    // RÜckgabe Array mit Tupel ( Platz, Team )
+    // RÃœckgabe Array mit Tupel ( Platz, Team )
     static function direkterVergleich ( $teams ){
         // Mannschafts- und Brettpunkte und Berliner Wertung untereinander berechnen
         $mp = array (); // mid => mp
@@ -204,13 +204,13 @@ class SED_Tabelle {
             $mp [$mid] = $bp [$mid] = $bw [$mid] = 0;
         }
 
-        // Alle möglichen Paarungen durchgehen
+        // Alle mÃ¶glichen Paarungen durchgehen
         for ( $a = 0; $a < count ( $teams ); ++$a ){
             $mid1 = $teams [$a]->getID ();
 
-            // Mögliche Gegner
+            // MÃ¶gliche Gegner
             for ( $b = 0; $b < count ( $teams ); ++$b ){
-                // Natürlich nicht gegen sich selbst
+                // NatÃ¼rlich nicht gegen sich selbst
                 if ( $a == $b ) continue;
                 $mid2 = $teams [$b]->getID ();
 
@@ -223,7 +223,7 @@ class SED_Tabelle {
                 $bp [$mid2] += $teams [$b]->getBPvs ( $mid1 );
 
                 // Berliner Wertung
-                // Überlegung: Man kann die ruhig hier schon berechnen, denn wenn die Mannschaften schon gegeneinander gespielt haben, ist es durchaus wahrscheinlich, dass die BW benötigt wird. Außerdem wird die Tabelle ja normalerweise gecacht.
+                // Ãœberlegung: Man kann die ruhig hier schon berechnen, denn wenn die Mannschaften schon gegeneinander gespielt haben, ist es durchaus wahrscheinlich, dass die BW benÃ¶tigt wird. AuÃŸerdem wird die Tabelle ja normalerweise gecacht.
                 if ( count ( $teams [$a]->getErgebnisse ( $mid2 ) ) ){
                     $berliner = SED_Tabelle::berlinerWertung ( $mid1, $mid2 );
                     $bw [$mid1] += $berliner [0];
@@ -239,7 +239,7 @@ class SED_Tabelle {
             $sort [$mp[$id]][(string) $bp[$id]][(string) $bw[$id]][] = $teams [$a];
         }
 
-        // sortiert zurückgeben
+        // sortiert zurÃ¼ckgeben
         $sorted = array ();
         $platz = 0;
         krsort ( $sort );
@@ -254,7 +254,7 @@ class SED_Tabelle {
                     foreach ( $teams as $team )
                         $sorted [] = array ( $platz, $team );
 
-                    // Nächste Platznummer
+                    // NÃ¤chste Platznummer
                     $platz += count ( $teams );
                 }
             }
@@ -325,7 +325,7 @@ foreach ( $sort as $mp=>$a )
             // Felder MP und BP
             $row [] = $team->getMP ();
             $row [] = SED_Ergebnis ( $team->getBP () );
-            $row [] = ""; // für Aufsteiger/Absteiger
+            $row [] = ""; // fÃ¼r Aufsteiger/Absteiger
             $table [] = $row;
         }
         return $table;
@@ -337,7 +337,7 @@ foreach ( $sort as $mp=>$a )
             case "+":
             case "1":
                 return 1;
-            case "½":
+            case SED_REMIS:
                 return 0.5;
             default:
                 return 0;
@@ -345,20 +345,20 @@ foreach ( $sort as $mp=>$a )
     }
 }
 
-// Gibt eine sortierte Kreuz-Tabelle eines bestimmten Spieltages einer bestimmten Staffel zurück
+// Gibt eine sortierte Kreuz-Tabelle eines bestimmten Spieltages einer bestimmten Staffel zurÃ¼ck
 function Tabelle ( $staffel, $runde, $kreuztabelle, $sortmode = SED_SORT_DEFAULT )
 {
     global $globals;
     global $prefs;
 
-    // Simple Parameter Überprüfung
+    // Simple Parameter ÃœberprÃ¼fung
     if ( isset ( $globals ['staffeln'][$staffel] ) == false || is_numeric ( $runde ) == false )
         return array ();
 
     // Typ berechnen
     $typ = $kreuztabelle ? "Kreuztabelle" : "Tabelle";
 
-    // Hack für Corona-Saison: Immer die Tabelle mit Ergebnissen aller Runden zurückgeben.
+    // Hack fÃ¼r Corona-Saison: Immer die Tabelle mit Ergebnissen aller Runden zurÃ¼ckgeben.
     if ( $prefs['startjahr'] == '2021' ) {
       $runde = $prefs['runden'];
     }

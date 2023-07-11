@@ -1,10 +1,10 @@
 <?
 /* Spielplan
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage frontend
@@ -22,7 +22,7 @@
     exit;
   }
 
-  // Überschrift
+  // Ãœberschrift
   echo "<span class='sed_hl1'>Spielplan " . $globals ['staffeln'][$_GET ['staffel']] . "</span><br /><br />";
   echo "<table class='sed_normal' cellspacing='0' cellpadding='2'>";
 
@@ -44,13 +44,13 @@
       $lastr = false;
       while ( $paarung = mysql_fetch_array ( $res, MYSQL_ASSOC ) )
       {
-        // Nächste Runde?
+        // NÃ¤chste Runde?
         if ( $paarung ['runde'] != $lastr )
         {
           // Datum berechnen
           $paarung ['termin'] = SED_GetTermin ( $paarung ['runde'], $_GET ['staffel'] );
 
-          // Ausgabe der Spieltagüberschrift
+          // Ausgabe der SpieltagÃ¼berschrift
           if ( $lastr != 0 )
             echo "<tr><td colspan='5'>&nbsp;</td></tr>";
           echo "<tr><td colspan='5'><a href='?staffel=$_GET[staffel]&amp;r=$paarung[runde]'><b>$paarung[runde]. Spieltag - $paarung[termin]</b></a></td></tr>";

@@ -1,10 +1,10 @@
 <?
-/* Ändern von Mannschaftsdaten (Spiellokal etc.)
+/* Ã„ndern von Mannschaftsdaten (Spiellokal etc.)
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage mannschaft
@@ -45,7 +45,7 @@
           <form action="<? echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;">
             <fieldset><legend>Mannschaftsname</legend>
               <input value="<? echo $daten ['name']; ?>" type="text" maxlength='20' size='20' name="new_name" />
-              <input type="submit" class="sed_submit" name="name_change" value="Ändern" />
+              <input type="submit" class="sed_submit" name="name_change" value="&Auml;ndern" />
           </fieldset></form><br />
         <?
       }
@@ -68,11 +68,11 @@
             <table cellspacing="0" cellpadding="2">
             <tr><td>Name: </td><td><input value="<? echo $daten ['so_name']; ?>" type="text" maxlength='40' name="so_name" /></td></tr>
             <tr><td>Hinweis: </td><td><input value="<? echo $daten ['so_hinweis']; ?>" type="text" maxlength='255' name="so_hinweis" /></td></tr>
-            <tr><td>Staße: </td><td><input value="<? echo $daten ['so_strasse']; ?>" type="text" maxlength='30' name="so_strasse" /></td></tr>
+            <tr><td>Sta&szlig;e: </td><td><input value="<? echo $daten ['so_strasse']; ?>" type="text" maxlength='30' name="so_strasse" /></td></tr>
             <tr><td>PLZ: </td><td><input value="<? echo $daten ['so_plz']; ?>" type="text" size='5' name="so_plz" /></td></tr>
             <tr><td>Stadt: </td><td><input value="<? echo $daten ['so_stadt']; ?>" type="text" maxlength='30' name="so_stadt" /></td></tr>
             <tr><td>Telefon: </td><td><input value="<? echo $daten ['so_telefon']; ?>" type="text" maxlength='15' name="so_telefon" /></td></tr>
-            <tr><td></td><td><input type="submit" class="sed_submit" name="so_change" value="Ändern" /></td></tr>
+            <tr><td></td><td><input type="submit" class="sed_submit" name="so_change" value="&Auml;ndern" /></td></tr>
           </table>
         </fieldset></form><br />
       <?
@@ -88,7 +88,7 @@
         if ( strlen ( $_POST ['name'] ) < 3 )
           SED_Error ( "Bitte setzen Sie einen Namen!" );
 
-        // Daten ändern
+        // Daten Ã¤ndern
         else
         {
             if ( !mysql_query ( "UPDATE mannschaften SET mf_name='$_POST[name]', mf_email='$_POST[email]', mf_telefon='$_POST[telefon]', mf_telefon2='$_POST[telefon2]' WHERE id=$_GET[mid] LIMIT 1", $globals ['db'] ) )
@@ -107,23 +107,23 @@
       ?>
         <a name="mf" href=""></a>
         <form action="<? echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
-          <legend>Mannschaftsführer</legend>
+          <legend>Mannschaftsf&uuml;hrer</legend>
             <table cellspacing="0" cellpadding="2">
             <tr><td>Name: </td><td><input value="<? echo $daten ['mf_name']; ?>" maxlength='30' type="text" name="name" /></td></tr>
             <tr><td>Email: </td><td><input value="<? echo $daten ['mf_email']; ?>" maxlength='50' type="text" name="email" /></td></tr>
             <tr><td>Telefon: </td><td><input value="<? echo $daten ['mf_telefon']; ?>" maxlength='40' type="text" name="telefon" /></td></tr>
             <tr><td>Telefon 2: </td><td><input value="<? echo $daten ['mf_telefon2']; ?>" maxlength='40' type="text" name="telefon2" /></td></tr>
-            <tr><td></td><td><input type="submit" class="sed_submit" name="kontakt_change" value="Ändern" /></td></tr>
+            <tr><td></td><td><input type="submit" class="sed_submit" name="kontakt_change" value="&Auml;ndern" /></td></tr>
           </table>
         </fieldset></form><br />
       <?
 
 
       ///////////////////////////////////////
-      // WEITERE EMPFÄNGER
+      // WEITERE EMPFÃ„NGER
       ///////////////////////////////////////
 
-        // Einen Empfänger hinzufügen
+        // Einen EmpfÃ¤nger hinzufÃ¼gen
         if ( isset ( $_POST ['zuemp_add'] ) )
         {
             if ( SED_IsValidEmail ( $_POST ['field0'] ) )
@@ -133,46 +133,46 @@
                 $f2 = ( isset ( $_POST ['field2'] ) && $_POST ['field2'] == 1 ) ? 1 : 0;
                 $f3 = ( isset ( $_POST ['field3'] ) && $_POST ['field3'] == 1 ) ? 1 : 0;
 
-                // Datensatz einfügen
+                // Datensatz einfÃ¼gen
                 if ( ! mysql_query ( "INSERT INTO zusatzempfaenger SET mannschaft=$_GET[mid], email='$_POST[field0]', eingabelink=$f1, bestaetigung=$f2, rundmail=$f3", $globals ['db'] ) )
-                    SED_Error ( "Fehler beim Einfügen!" );
+                    SED_Error ( "Fehler beim Einf&uuml;gen!" );
                 else
-                    echo "<b>Der Empfänger wurde erfolgreich hinzugefügt!</b>";
+                    echo "<b>Der Empf&auml;nger wurde erfolgreich hinzugef&uuml;gt!</b>";
             }
             else
-                SED_Error ( "Ungültige Emailadresse!" );
+                SED_Error ( "Ung&uuml;ltige Emailadresse!" );
         }
 
-        // Einen Empfänger löschen
+        // Einen EmpfÃ¤nger lÃ¶schen
         if ( isset ( $_GET ['zuemp_del'] ) )
         {
           if ( ! mysql_query ( "DELETE FROM zusatzempfaenger WHERE id=$_GET[zuemp_del] AND mannschaft=$_GET[mid] LIMIT 1", $globals ['db'] ) )
-            SED_Error ( "Fehler beim Löschen!" );
+            SED_Error ( "Fehler beim L&ouml;schen!" );
           else
           {
-            echo "<b>Der Empfänger wurde erfolgreich gelöscht!</b>";
+            echo "<b>Der Empf&auml;nger wurde erfolgreich gel&ouml;scht!</b>";
           }
           unset ( $_GET ['zuemp_del'] );
         }
 
-        // Auflistung der Empfänger
+        // Auflistung der EmpfÃ¤nger
         ?>
           <a name='zuemp'></a>
           <form action="<? echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
-            <legend>Weitere Empfänger</legend>
-            Über diese Funktion können Sie weitere Emailadressen hinterlegen, an die Eingabelinks und Ergebnisse gesendet werden sollen. In der folgenden Tabelle sind die vorhandenen Zusatzempfänger aufgelistet.<br /><br />
+            <legend>Weitere Empf&auml;nger</legend>
+            &Uuml;ber diese Funktion k&ouml;nnen Sie weitere Emailadressen hinterlegen, an die Eingabelinks und Ergebnisse gesendet werden sollen. In der folgenden Tabelle sind die vorhandenen Zusatzempf&auml;nger aufgelistet.<br /><br />
 
             <table class='sed_tabelle'>
-              <tr><th>Adresse</th><th>Eingabelink</th><th>Bestätigung</th><th>Rundmail</th><th></th></tr>
+              <tr><th>Adresse</th><th>Eingabelink</th><th>Best&auml;tigung</th><th>Rundmail</th><th></th></tr>
               <?
-                // Zusatzempfänger abfragen
+                // ZusatzempfÃ¤nger abfragen
                 $rsrc = mysql_query ( "SELECT email, IF(eingabelink=1,'Ja','Nein'), IF(bestaetigung=1,'Ja','Nein'), IF(rundmail=1,'Ja','Nein'), id FROM zusatzempfaenger WHERE mannschaft=$_GET[mid]", $globals ['db'] );
                 if ( $rsrc )
                   while ( $tmp = mysql_fetch_array ( $rsrc, MYSQL_NUM ) )
                   {
                     if ( strlen ( $tmp [0] ) > 26 )  $tmp [0] = substr ( $tmp [0], 0, 23 ) . "...";
                     echo "<tr><td>$tmp[0]</td><td>$tmp[1]</td><td>$tmp[2]</td><td>$tmp[3]</td>";
-                    echo "<td><a href='".SED_GenerateFormAction()."&zuemp_del=$tmp[4]'>Löschen</a></td></tr>";
+                    echo "<td><a href='".SED_GenerateFormAction()."&zuemp_del=$tmp[4]'>L&ouml;schen</a></td></tr>";
                   }
               ?>
             </table>
@@ -180,20 +180,20 @@
 
 
           <form action="<? echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
-            <legend>Empfänger hinzufügen</legend>
+            <legend>Empf&auml;nger hinzuf&uuml;gen</legend>
 
             Emailadresse: <input type="text" name="field0" /><br /><br />
 
             <input type='checkbox' name='field1' id='field1' value='1' checked='checked' />
-                <label for='field1'><strong>Eingabelink erhalten</strong> - Wenn Sie diese Option aktivieren, dann wird an obige Emailadresse ebenfalls ein Link zur Eingabe der Ergebnisse verschickt. Nutzen Sie diese Funktion, wenn eine andere Person für Sie die Ergebnisse melden soll.</label><br /><br />
+                <label for='field1'><strong>Eingabelink erhalten</strong> - Wenn Sie diese Option aktivieren, dann wird an obige Emailadresse ebenfalls ein Link zur Eingabe der Ergebnisse verschickt. Nutzen Sie diese Funktion, wenn eine andere Person f&uuml;r Sie die Ergebnisse melden soll.</label><br /><br />
 
             <input type='checkbox' name='field2' id='field2' value='1' checked='checked' />
-                <label for='field2'><strong>Eingabebestätigung erhalten</strong> - Sobald die Ergebnisse eingetragen wurden, wird eine Bestätigung mit den Eingaben an die Mannschaftsführer und den Staffelleiter gesendet. Aktivieren Sie diese Option, wenn diese Bestätigung auch an obige Adresse gesendet werden soll. </label><br /><br />
+                <label for='field2'><strong>Eingabebest&auml;tigung erhalten</strong> - Sobald die Ergebnisse eingetragen wurden, wird eine Best&auml;tigung mit den Eingaben an die Mannschaftsf&uuml;hrer und den Staffelleiter gesendet. Aktivieren Sie diese Option, wenn diese Best&auml;tigung auch an obige Adresse gesendet werden soll. </label><br /><br />
 
             <input type='checkbox' name='field3' id='field3' value='1' checked='checked' />
-                <label for='field3'><strong>Rundmail erhalten</strong> - Wenn der Staffelleiter alle Ergebnisse erhalten und geprüft hat, dann verschickt er eine Rundmail an alle Mannschaftsführer. Aktivieren Sie diese Option, wenn diese Rundmail auch an obige Adresse gesendet werden soll.</label><br /><br />
+                <label for='field3'><strong>Rundmail erhalten</strong> - Wenn der Staffelleiter alle Ergebnisse erhalten und gepr&uuml;ft hat, dann verschickt er eine Rundmail an alle Mannschaftsf&uuml;hrer. Aktivieren Sie diese Option, wenn diese Rundmail auch an obige Adresse gesendet werden soll.</label><br /><br />
 
-            <input type="submit" class="sed_submit" name="zuemp_add" value="Hinzufügen" />
+            <input type="submit" class="sed_submit" name="zuemp_add" value="Hinzuf&uuml;gen" />
           </table>
 
 

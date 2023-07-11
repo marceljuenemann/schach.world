@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Spieldaten bearbeiten
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -31,7 +31,7 @@
     if ( isset ( $_GET ['edit'] ) ){
         $spieler = new SED_Spieler ();
         
-        // Änderung, also keine Nachmeldung?
+        // Ã„nderung, also keine Nachmeldung?
         if ( $_GET ['edit'] ){
             $spieler->set ( "id", $_GET ['edit'] );
             $spieler->autofill ();
@@ -48,7 +48,7 @@
         }
         
         // Nachmeldungs-Runde vorbereiten
-        $nmR = "<option value=''>Regulärer Spieler</option>";
+        $nmR = "<option value=''>Regul&auml;rer Spieler</option>";
         for ( $r = 1; $r <= $prefs ['runden']; ++$r )
             $nmR .= "<option value='$r'>Nachmeldung $r. Spieltag</option>";
 
@@ -84,7 +84,7 @@
                     echo "<select name='$feld[0]' onchange='OnSpielerdatenChange(\"$feld[0]\")'>".SED_SelectOption($feld[2],$value)."</select>";
                 }
                 
-                // Platzhalter für Spielervorschläge
+                // Platzhalter fÃ¼r SpielervorschlÃ¤ge
                 if ( $feld [0] == "nachname" )
                     echo "<div name='ajax_placeholder'></div>";
                 echo "</td>";
@@ -93,7 +93,7 @@
         }
         echo "</table><br />";
 
-        // Nicht änderbare Spielerdaten
+        // Nicht Ã¤nderbare Spielerdaten
         if ( $_GET ['edit'] ){
             echo "<span style='float:right'><i>Brett-Nr: ".$spieler->get("brettnr").", ID: ".$spieler->get("id")."</i></span>";
             echo "<input type='hidden' name='id' value='".$spieler->get("id")."' />
@@ -105,13 +105,13 @@
         echo "<input type='submit' class='sed_submit' value='$action' />";
         echo "</fieldset></form><br /><br />";
         
-        // Javascript für Spielervorschläge
+        // Javascript fÃ¼r SpielervorschlÃ¤ge
         ?>
         <script type='text/javascript'><!--
 
         function OnSpielerdatenChange ( edit )
         {
-            // Nur bei manchen Änderungen Anfrage starten
+            // Nur bei manchen Aenderungen Anfrage starten
             if ( edit != "nachname" && edit != "vorname" && edit != "zps" && edit != "dwz" )
                 return;
                 
@@ -121,7 +121,7 @@
             if ( vorname.length > 0 )
                 nachname = nachname + "," + vorname;
 
-            // Ist die aktuelle Eingabe lang genug für eine Anfrage?
+            // Ist die aktuelle Eingabe lang genug fuer eine Anfrage?
             if ( nachname.length > 1 )
             {
                 <?
@@ -144,7 +144,7 @@
             }
         }
 
-        // Ein Spieler zur Vervollständigung wurde gewählt
+        // Ein Spieler zur Vervollstaendigung wurde gewaehlt
         function OnSpielerClick ( json )
         {
             // Felder setzen
@@ -181,9 +181,9 @@
         if ( $spieler->isFieldSet ( "id" ) ){ // Keine Nachmeldung
             $staffel = SED_MYSQL_Array ( "SELECT m.staffel FROM spieler s INNER JOIN mannschaften m ON m.id=s.mannschaft WHERE s.id='".$spieler->get("id")."' LIMIT 1", true );
             if ( !isset ( $globals ['staffeln'][reset($staffel)] ) && reset($staffel) )
-                SED_Error ( "Die Staffel des Spielers gehört nicht zum Turnier!", true );
+                SED_Error ( "Die Staffel des Spielers geh&ouml;rt nicht zum Turnier!", true );
             if ( $admin ['staffel'] && reset($staffel) && reset($staffel) != $admin['staffel'] )
-                SED_Error ( "Die Staffel des Spielers gehört nicht zur Staffel!", true );
+                SED_Error ( "Die Staffel des Spielers geh&ouml;rt nicht zur Staffel!", true );
         }
 
 
@@ -205,7 +205,7 @@
     }
 
     ////////////////////////////////////////////////////////
-    // Löschen
+    // LÃ¶schen
     ////////////////////////////////////////////////////////
 
     if ( isset ( $_GET ['del'] ) )
@@ -213,27 +213,27 @@
         // Wurde der Spieler bereits eingesetzt?
         $rsrc = mysql_query ( "SELECT id FROM spielerpaarungen WHERE spieler1=$_GET[del] or spieler2=$_GET[del]", $globals ['db'] ); 
         if ( mysql_num_rows ( $rsrc ) )
-            SED_Error ( "Der Spieler konnte nicht gelöscht werden, da er bereits in einem Spiel eingesetzt wurde." );
+            SED_Error ( "Der Spieler konnte nicht gel&ouml;scht werden, da er bereits in einem Spiel eingesetzt wurde." );
         else {
-            // Lösche, wenn die Berechtigung vorhanden ist.
+            // LÃ¶sche, wenn die Berechtigung vorhanden ist.
             if ( !mysql_query ( "DELETE FROM spieler WHERE id=$_GET[del] AND mannschaft=$_GET[mid] LIMIT 1", $globals ['db'] ) )
-                SED_Error ( "Der Spieler konnte nicht gelöscht werden. Evtl. fehlt Ihnen die Berechtigung dazu.", true );
+                SED_Error ( "Der Spieler konnte nicht gel&ouml;scht werden. Evtl. fehlt Ihnen die Berechtigung dazu.", true );
                 
-            // Gab es den Spieler überhaupt nicht?
+            // Gab es den Spieler Ã¼berhaupt nicht?
             if ( !mysql_affected_rows () )
                 SED_Error ( "Den angegebenen Spieler gab es nicht (mehr)!", true );
 
-            // Brett-Nummern aufrücken lassen
+            // Brett-Nummern aufrÃ¼cken lassen
             if ( !mysql_query ( "UPDATE spieler SET brettnr=brettnr-1 WHERE mannschaft=$_GET[mid] AND brettnr>$_GET[bnr]", $globals ['db'] ) )
-                SED_Error ( "Fehler beim Ändern der nachfolgenden Brett-Nummern", true );
+                SED_Error ( "Fehler beim &Auml;ndern der nachfolgenden Brett-Nummern", true );
 
             // Mannschaftsdaten neu laden
             $team = new SED_Mannschaft ( $_GET ['mid'] );
         
-            // Cache löschen
+            // Cache lÃ¶schen
             SED_Cache::clearTeam ( $_GET ['mid'], SED_Cache::TEAM_AUFSTELLUNG );
             SED_Cache::clearSpieltag ();
-            echo "<b>Spieler gelöscht</b><br /><br />";
+            echo "<b>Spieler gel&ouml;scht</b><br /><br />";
         }
     }
 
@@ -243,7 +243,7 @@
 
     if ( isset ( $_GET ['swap'] ) )
     {
-        // Überprüfen, ob es den Tauschpartner gibt
+        // ÃœberprÃ¼fen, ob es den Tauschpartner gibt
         if ( $partner = SED_MYSQL_Array ( "SELECT id FROM spieler WHERE mannschaft=$_GET[mid] AND brettnr=$_GET[with] LIMIT 1" ) )
         {
             // Neue Brett-Nummer setzen
@@ -257,11 +257,11 @@
             // Mannschaftsdaten neu laden
             $team = new SED_Mannschaft ( $_GET ['mid'] );
 
-            // Cache löschen
+            // Cache lÃ¶schen
             SED_Cache::clearAll();
             echo "<b>Spieler getauscht</b><br /><br />";
         } else {
-            SED_Error ( "Es wurde kein Tauschpartner in der Mannschaft gefunden. Hinweis: Sie können einen Spieler nicht mit einem Spieler aus der Ersatzmannschaft tauschen", false );
+            SED_Error ( "Es wurde kein Tauschpartner in der Mannschaft gefunden. Hinweis: Sie k&ouml;nnen einen Spieler nicht mit einem Spieler aus der Ersatzmannschaft tauschen", false );
         }
     }
     
@@ -293,7 +293,7 @@
         echo "<a href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$spieler[mannschaft]&swap=$spieler[brettnr]&with=$up'><img src='$globals[systemicons]up.gif' alt='Nach oben verschieben' class='sed_admin_icon' style='margin-right:0' /></a> ";
         echo "<a href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$spieler[mannschaft]&swap=$spieler[brettnr]&with=$down'><img src='$globals[systemicons]down.gif' alt='Nach unten verschieben' class='sed_admin_icon' style='margin-right:0' /></a> ";
         
-        // Löschen
+        // LÃ¶schen
         if ( $admin ['usertype'] == 't' || $spieler ['berechtigtAb'] )
             echo "<a href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$spieler[mannschaft]&del=$spieler[id]&bnr=$spieler[brettnr]'><img src='$globals[systemicons]desk_loeschen.png' alt='Loeschen' class='sed_admin_icon' /></a>";
         echo "</td></tr>";

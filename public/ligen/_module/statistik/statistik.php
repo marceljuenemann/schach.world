@@ -1,10 +1,10 @@
 <?
 /* Statistiken
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage frontend
@@ -34,7 +34,7 @@
     // MANNSCHAFTS INFOS
     $teams = array ();
     $teamDefault = array ( "eingesetzte"=>0, "topX"=>0, "alle"=>0, "alter"=>0, "alterAnzahl"=>0,
-        "partien"=>0, "-"=>0, "+"=>0, "?"=>0, "1"=>0, "½"=>0, "0"=>0, "W"=>0.0, "S"=>0.0, "WAnzahl"=>0, "SAnzahl"=>0 );
+        "partien"=>0, "-"=>0, "+"=>0, "?"=>0, "1"=>0, SED_REMIS=>0, "0"=>0, "W"=>0.0, "S"=>0.0, "WAnzahl"=>0, "SAnzahl"=>0 );
 
     // REMIS KOENG
     $koenig = array ();
@@ -58,9 +58,9 @@
     // Verarbeiten
     $teamNr = array ( 1, 2 );
     if ( $rsrc ) while ( $partie = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) ){
-        // Für jede der beiden Mannschaften
+        // FÃ¼r jede der beiden Mannschaften
         foreach ( $teamNr as $team ){
-            // Wichtige Daten leichter verfügbar machen
+            // Wichtige Daten leichter verfÃ¼gbar machen
             $m = $partie ["mannschaft$team"];
             $s = $partie ["spieler$team"];
             $e = $partie ["ergebnis$team"];
@@ -71,13 +71,13 @@
             if ( !isset ( $teams [$m] ) ) $teams [$m] = $teamDefault;
             if ( !isset ( $spieler [$s] ) ) $spieler [$s] = $spielerDefault;
 
-            // Die ganzen Statistiken führen...
+            // Die ganzen Statistiken fÃ¼hren...
             $farbe = ($partie["brett"]%2 xor $team%2) ? "W" : "S";
             switch ( $e ){
                 case "1":
                     $spieler [$s]["punkte"] += 0.5;
                     $teams [$m][$farbe] += 0.5;
-                case "½":
+                case SED_REMIS:
                     $spieler [$s]["punkte"] += 0.5;
                     $teams [$m][$farbe] += 0.5;
                 case "0":
@@ -96,8 +96,8 @@
                     $teams [$m][$e] ++;
             }
 
-            // Remiskönig
-            if ( $e == "½" ){
+            // RemiskÃ¶nig
+            if ( $e == "Â½" ){
                 unset ( $koenig [$spieler [$s]['remis']][$s] );
                 $koenig [++$spieler [$s]['remis']][] = $s;
             }
@@ -128,7 +128,7 @@
         $topscorer [$id] = $data;
     }
 
-    // Top-Scorer und Remiskönig Namen holen
+    // Top-Scorer und RemiskÃ¶nig Namen holen
     $koenig = @reset ( $koenig [max(array_keys($koenig))] );
     foreach ( array_merge ( $topscorer, array ( $koenig ) ) as $id ){
         if ( $id )
@@ -198,7 +198,7 @@
     ////////////////////////////////////////////////
 
     $teamSum = array ( "eingesetzte"=>0, "topX"=>0, "alle"=>0, "alter"=>0, "alterAnzahl"=>0,
-        "partien"=>0, "-"=>0, "+"=>0, "?"=>0, "1"=>0, "½"=>0, "0"=>0, "W"=>0.0, "S"=>0.0, "WAnzahl"=>0, "SAnzahl"=>0, "inStaffel"=>0 );
+        "partien"=>0, "-"=>0, "+"=>0, "?"=>0, "1"=>0, SED_REMIS=>0, "0"=>0, "W"=>0.0, "S"=>0.0, "WAnzahl"=>0, "SAnzahl"=>0, "inStaffel"=>0 );
     foreach ( $teamSum as $k=>$v ){
         foreach ( $teams as $team=>$data ){
             $teamSum [$k] += $data [$k];
@@ -239,8 +239,8 @@
     // Ausgabe
     ////////////////////////////////////////////////
 
-    // Überschrift
-    echo "<span class='sed_hl1'>Statistiken für " . $globals ['staffeln'][$_GET ['staffel']] . "</span><br /><br />";
+    // Ãœberschrift
+    echo "<span class='sed_hl1'>Statistiken f&uuml;r " . $globals ['staffeln'][$_GET ['staffel']] . "</span><br /><br />";
 
     // Alter und DWZ
     echo "Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine
@@ -253,10 +253,10 @@
         Partien ist <a href='?spieler=$tops[id]'>$tops[name]</a> (".
         SED_TeamLink($tops['mannschaft'])."). ";
 
-    // Remiskönig
+    // RemiskÃ¶nig
     $rk = $spieler [$koenig];
     if ( is_array ( $rk ) )
-    echo "Der Remiskönig mit $rk[remis] Remis ist
+    echo "Der Remisk&ouml;nig mit $rk[remis] Remis ist
         <a href='?spieler=$rk[id]'>$rk[name]</a>
         (". SED_TeamLink ( $rk ['mannschaft'] ) ."). ";
 
@@ -264,7 +264,7 @@
     $sp = (($teamSum['partien']+$teamSum['-'])/2);
     $kp = $sp ? round ( $teamSum ['-'] / $sp *100) : 0;
     $spR = (($teamSum['partien']-$teamSum['+'])/2);
-    $r = $teamSum['½'] ? round($teamSum['½']/2/$spR*100) : 0;
+    $r = $teamSum[SED_REMIS] ? round($teamSum[SED_REMIS]/2/$spR*100) : 0;
     $w = $teamSum['W'] ? round($teamSum['W']/$spR*100) : 0;
     $s = $teamSum['S'] ? round($teamSum['S']/$spR*100) : 0;
     echo $teamSum["-"]." Spiele wurden kampflos verloren gegeben, das sind
@@ -293,7 +293,7 @@
 
     // Tabelleninhalt
     foreach ( $teams as $mid=>$zahlen ){
-        // Mannschaft überhaupt in der Staffel?
+        // Mannschaft Ã¼berhaupt in der Staffel?
         if ( !$zahlen ['topX'] ) continue;
         echo "<tr><td class='l'>&nbsp;".SED_TeamLink ( $mid )."&nbsp;&nbsp;</td>";
 
@@ -324,7 +324,7 @@
 
     // Ausgabe
     foreach ( $topscorer as $id ){
-        // Das durchschnittliche Brett etwas schöner
+        // Das durchschnittliche Brett etwas schÃ¶ner
         $spielerd = $spieler [$id];
         $brett = round($spielerd['brett']/$spielerd['partien'],1);
         switch ( round ( ($brett-intval($brett)) * 10 ) ) {
@@ -359,7 +359,7 @@
         "+" => array ( "+", "Kampflose Siege", 'Z' ),
         "-" => array ( "-", "Kampflose Niederlagen", 'Z' ),
         "1" => array ( "1", "Siege aus den wirklich gespielten Partien", '%', 'L' ),
-        "½" => array ( "&frac12;", "Remis", '%' ),
+        SED_REMIS => array ( "&frac12;", "Remis", '%' ),
         "0" => array ( "0", "Niederlagen", '%' ),
         "W" => array ( "W", "Score mit Wei&szlig;", 'S', 'L' ),
         "S" => array ( "S", "Score mit Schwarz", 'S' )
@@ -375,7 +375,7 @@
 
     // Tabelleninhalt
     foreach ( $teams as $mid=>$zahlen ){
-        // Mannschaft überhaupt in der Staffel?
+        // Mannschaft Ã¼berhaupt in der Staffel?
         if ( !$zahlen ['topX'] ) continue;
         echo "<tr><td class='l'>&nbsp;".SED_TeamLink ( $mid )."&nbsp;&nbsp;</td>";
 
@@ -385,7 +385,7 @@
 
             // Prozent
             if ( $options [2] == '%' ){
-                $divisor = $zahlen['1']+$zahlen['0']+$zahlen['½'];
+                $divisor = $zahlen['1']+$zahlen['0']+$zahlen[SED_REMIS];
                 $zahl = $divisor ? round($zahlen[$col]*100.0/$divisor).'%' : "";
             }
 
@@ -408,7 +408,7 @@
 
         // Prozent
         if ( $options [2] == '%' ){
-            $divisor = $teamSum['1']+$teamSum['0']+$teamSum['½'];
+            $divisor = $teamSum['1']+$teamSum['0']+$teamSum[SED_REMIS];
             $zahl = $divisor ? round($zahl*100.0/$divisor).'%' : "";
         }
 

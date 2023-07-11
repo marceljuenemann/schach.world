@@ -1,10 +1,11 @@
 <?
+TODO
 /* SL-Bereich: Turniereinstellungen
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -14,36 +15,36 @@
 
   $frmMF = array
   (
-    // TEXT: ID, Name, Beschreibung, Textfeldbreite, Max. Länge, Pflichtfeld
-    // SELECT: ID, Name, Beschreibung, Möglichkeiten, 0, false
-    array ( "name", "Turniername", "Der Name des Turniers sollte aus höchstens 15 Zeichen bestehen", 20, 40 , true ),
-    array ( "runden", "Rundenzahl", "Die Anzahl der Spieltage Ihres Turnieres. Sollten die Staffeln unterschiedliche Rundenzahlen haben, geben Sie bitte die größte Zahl an.", 3, 2, true ),
-    array ( "brettzahl", "Brettanzahl", "An wie vielen Brettern wird bei Mannschaftskämpfen Ihres Turnieres gespielt?", 3, 2, true ),
+    // TEXT: ID, Name, Beschreibung, Textfeldbreite, Max. LÃ¤nge, Pflichtfeld
+    // SELECT: ID, Name, Beschreibung, MÃ¶glichkeiten, 0, false
+    array ( "name", "Turniername", "Der Name des Turniers sollte aus hÃ¶chstens 15 Zeichen bestehen", 20, 40 , true ),
+    array ( "runden", "Rundenzahl", "Die Anzahl der Spieltage Ihres Turnieres. Sollten die Staffeln unterschiedliche Rundenzahlen haben, geben Sie bitte die grÃ¶ÃŸte Zahl an.", 3, 2, true ),
+    array ( "brettzahl", "Brettanzahl", "An wie vielen Brettern wird bei MannschaftskÃ¤mpfen Ihres Turnieres gespielt?", 3, 2, true ),
     array ( "hr" ),
-    array ( "sysEingabelinks", "Eingabelinks", "Sollen automatisch Eingabelinks versendet werden? Die Mannschaftsführer erhalten bei Aktivierung automatisch drei Tage vor dem Spieltag eine eMail mit einem Link, über den Sie die Ergebnisse selbstständig eingeben können.", array ( 1 => "eMails versenden", 0 => "keine eMails versenden" ), 0, false ),
-    array ( "spielErsatzmannschaft", "Ersatzmannschaften", "Sind Spieler aus tieferen Mannschaften des gleichen Vereins automatisch Ersatzspieler?", array ( 0 => "Nein, keine Ersatzmannschaften", 1 => "Ja, aber nur die nächsttiefere", 99 => "Ja, alle tieferen Mannschaften" ), 0, false ),
-    array ( "spielNachmeldungen", "Nachmeldungen", "Dürfen Mannschaftsführer bei der Ergebniseingabe Spieler nachmelden?", array ( 0 => "Nein, keine Nachmeldungen am Spieltag", 1 => "Ja, Nachmeldungen zulassen" ), 0, false ),
+    array ( "sysEingabelinks", "Eingabelinks", "Sollen automatisch Eingabelinks versendet werden? Die MannschaftsfÃ¼hrer erhalten bei Aktivierung automatisch drei Tage vor dem Spieltag eine eMail mit einem Link, Ã¼ber den Sie die Ergebnisse selbststÃ¤ndig eingeben kÃ¶nnen.", array ( 1 => "eMails versenden", 0 => "keine eMails versenden" ), 0, false ),
+    array ( "spielErsatzmannschaft", "Ersatzmannschaften", "Sind Spieler aus tieferen Mannschaften des gleichen Vereins automatisch Ersatzspieler?", array ( 0 => "Nein, keine Ersatzmannschaften", 1 => "Ja, aber nur die nÃ¤chsttiefere", 99 => "Ja, alle tieferen Mannschaften" ), 0, false ),
+    array ( "spielNachmeldungen", "Nachmeldungen", "DÃ¼rfen MannschaftsfÃ¼hrer bei der Ergebniseingabe Spieler nachmelden?", array ( 0 => "Nein, keine Nachmeldungen am Spieltag", 1 => "Ja, Nachmeldungen zulassen" ), 0, false ),
     array ( "spielDreistelligeNr", "Spieler-Nummern", "In welchem Format sollen die Spielernummern angezeigt werden?", array ( 1 => "dreistellig (erste Ziffer ist Mannschaftsnummer)", 0 => "einstellig" ), 0, false ),
     array ( "hr" ),
-    array ( "spielAufsteiger", "Anzahl der Aufsteiger pro Staffel", "Sollte die Anzahl der Mannschaften in einzelnen Staffeln abweichen, so können Sie das in den Staffeleinstellungen ändern.", 3, 2, false ),
-    array ( "spielAbsteiger", "Anzahl der Absteiger pro Staffel", "Sollte die Anzahl der Mannschaften in einzelnen Staffeln abweichen, so können Sie das in den Staffeleinstellungen ändern.", 3, 2, false ),
-    array ( "spielAufsteigerRelegation", "Anzahl der Mannschaften, die nur unter Umständen aufsteigen (z.B. Relegation)", "Sollte die Anzahl der Mannschaften in einzelnen Staffeln abweichen, so können Sie das in den Staffeleinstellungen ändern.", 3, 2, false ),
-    array ( "spielAbsteigerRelegation", "Anzahl der Mannschaften, die nur unter Umständen absteigen (z.B. Relegation)", "Sollte die Anzahl der Mannschaften in einzelnen Staffeln abweichen, so können Sie das in den Staffeleinstellungen ändern.", 3, 2, false ),
+    array ( "spielAufsteiger", "Anzahl der Aufsteiger pro Staffel", "Sollte die Anzahl der Mannschaften in einzelnen Staffeln abweichen, so kÃ¶nnen Sie das in den Staffeleinstellungen Ã¤ndern.", 3, 2, false ),
+    array ( "spielAbsteiger", "Anzahl der Absteiger pro Staffel", "Sollte die Anzahl der Mannschaften in einzelnen Staffeln abweichen, so kÃ¶nnen Sie das in den Staffeleinstellungen Ã¤ndern.", 3, 2, false ),
+    array ( "spielAufsteigerRelegation", "Anzahl der Mannschaften, die nur unter UmstÃ¤nden aufsteigen (z.B. Relegation)", "Sollte die Anzahl der Mannschaften in einzelnen Staffeln abweichen, so kÃ¶nnen Sie das in den Staffeleinstellungen Ã¤ndern.", 3, 2, false ),
+    array ( "spielAbsteigerRelegation", "Anzahl der Mannschaften, die nur unter UmstÃ¤nden absteigen (z.B. Relegation)", "Sollte die Anzahl der Mannschaften in einzelnen Staffeln abweichen, so kÃ¶nnen Sie das in den Staffeleinstellungen Ã¤ndern.", 3, 2, false ),
     array ( "hr" ),
     array ( "showPassNr", "Spielbericht: Spieler-Nummern anzeigen", "Sollen auf dem Spielbericht die Spieler-Nummern angezeigt werden?", array ( 1 => "Ja, anzeigen", 0 => "Nein, nicht anzeigen" ), 0, false ),
     array ( "showTabelle", "Spielbericht: Tabelle anzeigen", "Soll auf dem Spielbericht eine Tabelle angezeigt werden?", array ( 1 => "Ja, anzeigen", 0 => "Nein, nicht anzeigen" ), 0, false ),
     array ( "showNachmeldungen", "Spielbericht: Nachmeldungen anzeigen", "Sollen auf dem Spielbericht die Nachmeldungen angezeigt werden?", array ( 1 => "Ja, anzeigen", 0 => "Nein, nicht anzeigen" ), 0, false ),
-    array ( "showSpieltagvorschau", "Spielbericht: Spieltagvorschau", "Soll auf dem Spielbericht eine Vorschau auf den nächsten Spieltag angezeigt werden?", array ( 1 => "Ja, anzeigen", 0 => "Nein, nicht anzeigen" ), 0, false ),
+    array ( "showSpieltagvorschau", "Spielbericht: Spieltagvorschau", "Soll auf dem Spielbericht eine Vorschau auf den nÃ¤chsten Spieltag angezeigt werden?", array ( 1 => "Ja, anzeigen", 0 => "Nein, nicht anzeigen" ), 0, false ),
     array ( "hr" ),
     array ( "sysKeinNewsletter", "Newsletter-Funktion", "Soll auf der Startseite ein Formular angezeigt werden, mit dem jeder die Staffelrundschreiben abbonnieren kann?", array ( 0 => "Ja, anzeigen", 1 => "Nein, nicht anzeigen" ), 0, false ),
-    array ( "infomeldung", "Hinweis-Meldung", "Hier können Sie eine Meldung festlegen, die auf jeder Seite (öffentlich) gut sichtbar angezeigt wird. HTML für Links ist erlaubt.", 60, 200, false )
+    array ( "infomeldung", "Hinweis-Meldung", "Hier kÃ¶nnen Sie eine Meldung festlegen, die auf jeder Seite (Ã¶ffentlich) gut sichtbar angezeigt wird. HTML fÃ¼r Links ist erlaubt.", 60, 200, false )
   );
 
 
   // Speichern
   if ( isset ( $_POST ['savebutton'] ) )
   {
-    // Datenprüfung
+    // DatenprÃ¼fung
     $errors = array ();
     for ( $i = 0; $i < count ( $frmMF ); ++$i )
     {
@@ -85,7 +86,7 @@
         $sql .= ", ".$frmMF [$i][0]."='".$_POST ["frmManager_" . $frmMF [$i][0]]."'";
       }
       
-      // Speichervorgang durchführen
+      // Speichervorgang durchfÃ¼hren
       $sql = "UPDATE turniere SET ".substr ( $sql, 2 )." WHERE id=$globals[tid] LIMIT 1";
       if ( !mysql_query ( $sql, $globals ['db'] ) )
         SED_Error ( "Es ist ein Fehler aufgetreten!", true );
@@ -102,7 +103,7 @@
 
 
   // Felder ausgeben
-  // ID, Name, Beschreibung, Textfeldbreite, Max. Länge, Pflichtfeld
+  // ID, Name, Beschreibung, Textfeldbreite, Max. LÃ¤nge, Pflichtfeld
   echo "<form action='".SED_GenerateFormAction()."' method='post'><div>";
   for ( $i = 0; $i < count ( $frmMF ); ++$i )
   {

@@ -1,10 +1,10 @@
 <?
 /* Server Statistik
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage main
@@ -12,7 +12,7 @@
     header ( "Content-type: text/plain" );
     
 echo "Schach-Ergebnisdienst Version $globals[systemversion]
-Copyright (C) 2006-2010 Marcel Jünemann <mail@marcel-juenemann.de>
+Copyright (C) 2006-2010 Marcel JÃ¼nemann <mail@marcel-juenemann.de>
 http://code.google.com/p/schach-ergebnisdienst/
 
 Server-Info

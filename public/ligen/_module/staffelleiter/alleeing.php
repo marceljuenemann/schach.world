@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Ergebniseingabe
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -49,10 +49,10 @@
             SED_Error ( "Fehler bei $tmp", true );
     }
 
-    // Nur Bemerkung ändern
+    // Nur Bemerkung Ã¤ndern
     if ( isset ( $_POST ['extra_nurbem'] ) )
     {
-      // Daten ändern
+      // Daten Ã¤ndern
       mysql_query ( "UPDATE paarungen SET bemerkung='" . htmlspecialchars ( $_POST ['extra_nurbem_input'], ENT_COMPAT | ENT_HTML401 , 'ISO-8859-1' ) . "' WHERE id=$_GET[p] LIMIT 1", $globals ['db'] );
       SED_Cache::clearSpieltag ( $g_paarung ["staffel"], $g_paarung ["runde"] );
 
@@ -62,10 +62,10 @@
       exit;
     }
 
-    // Alle Ergebnisse löschen
+    // Alle Ergebnisse lÃ¶schen
     if ( isset ( $_POST ['extra_delete'] ) )
     {
-      // Daten ändern
+      // Daten Ã¤ndern
       mysql_query ( "DELETE FROM spielerpaarungen WHERE paarung=$_GET[p]", $globals ['db'] );
       mysql_query ( "UPDATE paarungen SET erg1=NULL, erg2=NULL, bemerkung=NULL WHERE id=$_GET[p] LIMIT 1", $globals ['db'] );
       SED_Cache::clearAll ();
@@ -79,7 +79,7 @@
     // Ausrichter festlegen
     if ( isset ( $_POST ['extra_ausrichter'] ) )
     {
-      // Daten ändern - Hinweis: Hier absichtlich keine Fehlerprüfung für value=0
+      // Daten Ã¤ndern - Hinweis: Hier absichtlich keine FehlerprÃ¼fung fÃ¼r value=0
       if ( !is_numeric ( $_POST ['extra_ausrichter_select'] ) )
         $_POST ['extra_ausrichter_select'] = "null";
       mysql_query ( "UPDATE paarungen SET ausrichter=$_POST[extra_ausrichter_select] WHERE id=$_GET[p] LIMIT 1", $globals ['db'] );
@@ -94,10 +94,10 @@
 
 
   //////////////////////////////////////////////////////////////////
-  // ZUSATZFUNKTIONEN FÜR DEN STAFFELLEITER
+  // ZUSATZFUNKTIONEN FÃœR DEN STAFFELLEITER
   //////////////////////////////////////////////////////////////////
 
-    // Vorbereitungen für Spielverlegung
+    // Vorbereitungen fÃ¼r Spielverlegung
     $verlegung = $g_paarung ['termin'] || '';
     $tmp = explode ( "-", $verlegung ); // YYYY-MM-DD
     $verlegung_aktiv =  count ( $tmp ) == 3;
@@ -107,7 +107,7 @@
     $verlegung_bekannt_checked = !$verlegung_unbekannt ? "checked='checked'" : "";
     $verlegung_datum = ($verlegung_unbekannt || !$verlegung_aktiv) ? "TT.MM.JJJJ" : "$tmp[2].$tmp[1].$tmp[0]";
 
-    // Vorbereitungen für Ausrichter
+    // Vorbereitungen fÃ¼r Ausrichter
     $xwai = "";
     foreach ( $globals ['teams'] as $id=>$name )
       $xwai .= "<option value='$id'>$name</option>";
@@ -144,12 +144,12 @@
       <input type='text' name='extra_nurbem_input' value='<? echo $g_paarung['bemerkung']; ?>' size='35' />
       <input type="submit" class="sed_submit" name="extra_nurbem" value="Speichern" /><br /><br /><br />
 
-      <b>Ergebnisse löschen</b><br />
-      Benutzen Sie diese Funktion, um alle Einzelergebnisse sowie das Gesamtergebnis zu löschen. Benutzen Sie diese Funktion beispielsweise, wenn die Paarung zu früh eingegeben wurde und sie in den Anfangszustand zurückversetzt werden soll.<br /><br />
-      <input type="submit" class="sed_submit" name="extra_delete" value="Ergebnisse löschen" /><br /><br /><br />
+      <b>Ergebnisse l&ouml;schen</b><br />
+      Benutzen Sie diese Funktion, um alle Einzelergebnisse sowie das Gesamtergebnis zu l&ouml;schen. Benutzen Sie diese Funktion beispielsweise, wenn die Paarung zu fr&uuml;h eingegeben wurde und sie in den Anfangszustand zur&uuml;ckversetzt werden soll.<br /><br />
+      <input type="submit" class="sed_submit" name="extra_delete" value="Ergebnisse l&ouml;schen" /><br /><br /><br />
 
       <b>Ausrichter</b><br />
-      Hier können Sie festlegen, wer die Paarung ausrichtet. Keine Angabe bedeutet, dass die erstgenannte Mannschaft der Ausrichter ist.<br /><br />
+      Hier k&ouml;nnen Sie festlegen, wer die Paarung ausrichtet. Keine Angabe bedeutet, dass die erstgenannte Mannschaft der Ausrichter ist.<br /><br />
       <select name='extra_ausrichter_select'><option value='null'></option><? echo $xwai; ?></select>
       <input type="submit" class="sed_submit" name="extra_ausrichter" value="Speichern" /><br /><br /><br />
     <?
