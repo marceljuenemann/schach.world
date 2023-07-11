@@ -1,0 +1,55 @@
+#!/usr/bin/env php
+<?php
+/**
+ * A simple tool for taking "golden images" from the production server by fetching various
+ * URLs an comparing them to the last snapshot. This is meant as a simple way to find
+ * unintended changes after deploying new code.
+ * 
+ * This script uses the `meld` tool for comparison, so that must be installed. 
+ */
+
+$urls = [
+  // Frontpage.
+  "https://nsv-online.de/2023/07/neuausbildung-schiedsrichter-daumen-hoch/",
+  "https://nsv-online.de/2023/2/",
+
+  // Tournament results.
+  "https://nsv-online.de/turniere/lem/2023/",
+  "https://nsv-online.de/turniere/lem/2023/meister/teilrang/",
+  "https://nsv-online.de/turniere/lem/2023/a/paar/3/",
+  "https://nsv-online.de/turniere/lem/2023/b/spieler/tenninger-joerg",
+  "https://nsv-online.de/turniere/lem/2023/vereine/sk-lehrte-von-1919-e-v",
+  "https://nsv-online.de/turniere/bezirk1/2022/",
+
+  // League system.
+  "https://nsv-online.de/ligen/nsv-2223/?",
+  "https://nsv-online.de/ligen/nsv-2223/?r=&staffel=1658",
+  "https://nsv-online.de/ligen/nsv-2223/?staffel=1658&r=statistik",
+  "https://nsv-online.de/ligen/bezirk1-2223/?mannschaft=7219",
+  "https://nsv-online.de/ligen/bezirk1-2223/?spieler=519634",
+  "https://nsv-online.de/ligen/sjbh-2122/?staffel=1592&m=export&format=swi",
+  "https://nsv-online.de/ligen/sjbh-2122/?staffel=1595&m=export&format=swi",
+
+  // Archive.
+  "https://nsv-online.de/ruhmeshalle/?turnier=lem",
+  "https://nsv-online.de/ehrentafel/",
+  "https://nsv-online.de/vorstandschronik/",
+  "https://nsv-online.de/vorstandschronik/?nachname=juenemann&vorname=marcel",
+
+  // Misc.
+  "https://nsv-online.de/bezirke/Hannover",
+
+];
+
+$path = __DIR__ . '/../var/proddiff';
+
+foreach($urls as $url) {
+  echo "Fetching $url...\n";
+  $content = file_get_contents($url);
+  $filename = "$path/current/" . preg_replace('/[^a-z0-9]/i', '-', $url);
+  unlink($filename); // Deletes file.
+  file_put_contents($filename, $content);
+}
+
+system('unset GTK_PATH');  // Fix for running from VSCode terminal.
+system("meld $path/current $path/golden");
