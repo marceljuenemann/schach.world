@@ -269,7 +269,7 @@
   if ( !isset ( $_GET ['admin'] ) )
     echo "<b>Bitte kontrollieren Sie die Eingaben nochmals!</b> Nach einem Klick auf Speichern werden die Eingaben auch per Email an den Staffelleiter und die gegnerische Mannschaft versendet.<br /><br />";
   else
-    echo "<input type='checkbox' name='checkbox_sende_bestaetigung' id='checkbox_sende_bestaetigung' value='1' /> <label for='checkbox_sende_bestaetigung'><b>Bestätigung versenden</b> - Wenn Sie das folgende Auswahlfeld aktivieren, wird an die Mannschaftsf&uuml;hrer der beiden Mannschaften eine Email mit den Spielergebnissen gesendet.</label><br /><br />";
+    echo "<input type='checkbox' name='checkbox_sende_bestaetigung' id='checkbox_sende_bestaetigung' value='1' /> <label for='checkbox_sende_bestaetigung'><b>Best&auml;tigung versenden</b> - Wenn Sie das folgende Auswahlfeld aktivieren, wird an die Mannschaftsf&uuml;hrer der beiden Mannschaften eine Email mit den Spielergebnissen gesendet.</label><br /><br />";
 
   // Submit-Button
   echo "<input type='submit' name='admin_eingabe' value='Speichern' class='sed_submit' /> ";

@@ -190,7 +190,7 @@ class SWI_Spieler {
 		if (!isset($this->results[$runde])){
 			$this->results[$runde] = array();
 		}
-		if ( $erg == utf8_decode("½") ) $erg = "R";
+		if ( $erg == SED_REMIS ) $erg = "R";
 		if ( $erg == "+" || $erg == "-" ) $color = ":";
 		$this->results[$runde][$index] = array($erg, $color, $gegner);
 		return count($this->results[$runde]);

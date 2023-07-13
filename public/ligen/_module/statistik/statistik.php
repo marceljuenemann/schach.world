@@ -27,6 +27,7 @@
 
     // SPIELER INFOS
     // [sortiert nach punkte, partien, brett]
+    global $spieler; 
     $spieler = array ();
     $spielerDefault = array ( "name"=>"", "dwz"=>0, "mannschaft"=>0,
         "brett"=>0, "partien"=>0, "punkte"=>0.0, "remis"=>0 );
@@ -97,7 +98,7 @@
             }
 
             // Remiskönig
-            if ( $e == "½" ){
+            if ( $e == SED_REMIS ){
                 unset ( $koenig [$spieler [$s]['remis']][$s] );
                 $koenig [++$spieler [$s]['remis']][] = $s;
             }
@@ -129,8 +130,8 @@
     }
 
     // Top-Scorer und Remiskönig Namen holen
-    $koenig = @reset ( $koenig [max(array_keys($koenig))] );
-    foreach ( array_merge ( $topscorer, array ( $koenig ) ) as $id ){
+    $koenig = count($koenig) ? reset($koenig[max(array_keys($koenig))]) : '';
+    foreach ( array_merge ( $topscorer, $koenig ? [$koenig] : [] ) as $id ){
         if ( $id )
             foreach ( SED_MYSQL_Array ( "SELECT id, CONCAT(vorname,' ',nachname) name, dwz, mannschaft FROM spieler WHERE id=$id LIMIT 1" ) as $key=>$value )
                 $spieler [$id][$key] = $value;
@@ -254,14 +255,17 @@
         SED_TeamLink($tops['mannschaft'])."). ";
 
     // Remiskönig
-    $rk = $spieler [$koenig];
-    if ( is_array ( $rk ) )
-    echo "Der Remisk&ouml;nig mit $rk[remis] Remis ist
-        <a href='?spieler=$rk[id]'>$rk[name]</a>
-        (". SED_TeamLink ( $rk ['mannschaft'] ) ."). ";
+    if ($koenig) {
+        $rk = $spieler [$koenig];
+        if ( is_array ( $rk ) )
+        echo "Der Remisk&ouml;nig mit $rk[remis] Remis ist
+            <a href='?spieler=$rk[id]'>$rk[name]</a>
+            (". SED_TeamLink ( $rk ['mannschaft'] ) ."). ";
+    }
 
     // Spiele
     $sp = (($teamSum['partien']+$teamSum['-'])/2);
+    // TODO: This seems to be off and not actually count the '-' games in the total.
     $kp = $sp ? round ( $teamSum ['-'] / $sp *100) : 0;
     $spR = (($teamSum['partien']-$teamSum['+'])/2);
     $r = $teamSum[SED_REMIS] ? round($teamSum[SED_REMIS]/2/$spR*100) : 0;

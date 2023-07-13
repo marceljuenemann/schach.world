@@ -123,7 +123,7 @@
                   ? ( $prefs['spielDreistelligeNr'] ? $pdf->GetStringWidth ( "616" ) : $pdf->GetStringWidth ( "24" ) ) + 3
                   : 0;
         $width[2] = $pdf->GetStringWidth ( "(2999)" );
-        $width[3] = $pdf->GetStringWidth ( utf8_decode("8½*") );
+        $width[3] = $pdf->GetStringWidth ( SED_REMIS );
         $width[4] = $pdf->GetStringWidth ( ":" );
         $width[1] = ( $widthOfGames - 2*array_sum ( $width ) ) / 2;
         $widthOfGames = array_sum ( $width ) * 2 - $width [4];

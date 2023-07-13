@@ -96,8 +96,7 @@
   {
     global $globals;
     // Eigentlich gibt es mittlerweile ja viewStaffeltermine, allerdings funktioniert das hier auch, wenn keine Turniertermine festgelegt wurden, sondern nur Staffeltermine
-    $x = mysql_fetch_array ( mysql_query ( "SELECT staffel, DATE_FORMAT(te.datum,'$datumsformat') as datum FROM termine as te WHERE te.turnier=$globals[tid] and te.runde=$runde and (te.staffel is null or te.staffel=$staffel) ORDER BY staffel DESC LIMIT 1", $globals ['db'] ), MYSQL_ASSOC );
-    return $x ['datum'];
+    return SED_MYSQL_Value("SELECT DATE_FORMAT(te.datum,'$datumsformat') as datum FROM termine as te WHERE te.turnier=$globals[tid] and te.runde=$runde and (te.staffel is null or te.staffel=$staffel) ORDER BY staffel DESC LIMIT 1" );
   }
 
   // Liefert die Anzahl der Runden einer Staffel

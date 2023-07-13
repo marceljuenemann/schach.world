@@ -92,7 +92,7 @@
           // Letzte Aktivität erneuern
           mysql_query ( "UPDATE benutzer SET letzterzugriff=NOW() WHERE id=$admin[userid] LIMIT 1", $globals ['db'] );
         elseif ( $admin ['pageid'] != "logout" )
-          SED_Error ( "Ihre letzte Aktivit&auml;t ist über 30 Minuten her. Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
+          SED_Error ( "Ihre letzte Aktivit&auml;t ist &uuml;ber 30 Minuten her. Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
       }
       else
         SED_Error ( "Sie sind nicht eingeloggt! Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
