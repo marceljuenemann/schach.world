@@ -4,10 +4,10 @@
  * Die index.php des Systems. Das Skript macht einige Vorbereitungen
  * und berechnet danach, welches Modul anzuzeigen ist.
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage main
@@ -18,7 +18,7 @@
     global $globals;
     $globals ['basedir'] = "..";
 
-    // Einige wichtige Funktionen zugänglich machen
+    // Einige wichtige Funktionen zugÃ¤nglich machen
     require_once ( "main.inc.php" );
 
 
@@ -43,7 +43,7 @@
     // Zur Datenbank verbinden
     $globals ['db'] = mysql_connect ( $globals ['dbhost'], $globals ['dbuser'], $globals ['dbpw'] );
     if ( !mysql_select_db ( $globals ['dbname'], $globals ['db'] ) )
-        SED_Error ( "Fehler: Datenbank konnte nicht geöffnet werden!", true );
+        SED_Error ( "Fehler: Datenbank konnte nicht geÃ¶ffnet werden!", true );
     mysql_set_charset('latin1');
     $globals ['dbpw'] = "******";
 
@@ -55,12 +55,12 @@
     // Aufzurufendes Modul in $globals [mod] schreiben
     require_once ( "modul.inc.php" );
 
-    // Existiert es überhaupt?
+    // Existiert es Ã¼berhaupt?
     $modulpfad = "$globals[basedir]/_module/$globals[mod]/$globals[mod].php";
     if ( !file_exists ( $modulpfad ) )
         SED_Error ( "Fehler: Das angeforderte Modul existiert nicht!", true );
 
-    // An Modul übergeben
+    // An Modul Ã¼bergeben
     require_once ( $modulpfad );
 
     // Rest der Seite ausgeben

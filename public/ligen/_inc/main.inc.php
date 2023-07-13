@@ -1,12 +1,12 @@
 <?
 /* Verschiedene Funktionen
  * 
- * Ein paar bunt gemischte Funktionen, die immer verfügbar sind.
+ * Ein paar bunt gemischte Funktionen, die immer verfÃ¼gbar sind.
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage main
@@ -15,7 +15,7 @@
   require_once ( "../../libs/mysql-shim.php" );
   require_once ( "../../../vendor/autoload.php" );
 
-  define('SED_REMIS', '½');
+  define('SED_REMIS', utf8_decode('Â½'));
 
   // Gibt eine rote Fehlermeldung aus
   function SED_Error ( $msg, $exit = false, $back = false, $mail = false )
@@ -30,16 +30,16 @@
     }
     if ( $exit )
     {
-        // Damit die Seite etwas schöner aussieht
+        // Damit die Seite etwas schÃ¶ner aussieht
 		if ( function_exists ( "SED_GUIclose" ) )
 			SED_GUIclose ();
 		exit;
 	}
-    return false; // macht Codeabkürzungen möglich
+    return false; // macht CodeabkÃ¼rzungen mÃ¶glich
   }
 
 
-  // Bringt Ergebnisse in eine anschauliche Form mit Brüchen
+  // Bringt Ergebnisse in eine anschauliche Form mit BrÃ¼chen
   function SED_Ergebnis ( $erg )
   {
     return str_replace ( ".5", SED_REMIS, $erg == "0.5" ? SED_REMIS : $erg );
@@ -55,7 +55,7 @@
 			'WG' => 'WGM'
 	  );
 	  
-      // Ist es ein NULL-Spieler o.ä.?
+      // Ist es ein NULL-Spieler o.Ã¤.?
       if ( strlen ( $info [$prefix."nachname"] ) < 2 )
 		return "";
       
@@ -67,7 +67,7 @@
       return trim ( $titel." ".$info[$prefix."nachname"].", ".$info[$prefix."vorname"] );
   }
 
-  // Prüft, ob eine angegebene Email gültig ist
+  // PrÃ¼ft, ob eine angegebene Email gÃ¼ltig ist
   function SED_IsValidEmail ( $email )
   {
     // eMail unbekannt?
@@ -109,7 +109,7 @@
 	}
  
   
-  // Generiert den Pfad für Formulare, wenn die Zielseite gleich ist
+  // Generiert den Pfad fÃ¼r Formulare, wenn die Zielseite gleich ist
   function SED_GenerateFormAction ( $without = false )
   {
     global $globals;
@@ -134,3 +134,18 @@
       */
   }
 
+  /**
+   * Converts from UTF-8 to the application charset.
+   */
+  function SED_utf8_decode($str) {
+    // TODO: Convert application to UTF-8 and remove this.
+    return mb_convert_encoding($str, 'ISO-8859-1', 'UTF-8');
+  }
+
+  /**
+   * Converts from the application charset to UTF-8.
+   */
+  function SED_utf8_encode($str) {
+    // TODO: Convert application to UTF-8 and remove this.
+    return mb_convert_encoding($str, 'UTF-8', 'ISO-8859-1');
+  }

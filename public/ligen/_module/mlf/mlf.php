@@ -1,10 +1,10 @@
 <?
 /* Elobase Export
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage export
@@ -29,7 +29,7 @@
     // MLF-interne IDs
     $reg_mannschaften = array (); // mid => mlf-id
     $reg_spieler = array ( ""=>"" ); // sid => mlf-id
-    $reg_spieler_iterator = 1; // Zum Zählen der ID
+    $reg_spieler_iterator = 1; // Zum ZÃ¤hlen der ID
 
     // Mannschaften sammeln TODO: Alle Mannschaften, die in der Staffel gespielt haben
     $rsrc_mannschaften = mysql_query ( "select m.id from mannschaften as m where staffel=$_GET[staffel] order by m.name" );
@@ -89,8 +89,8 @@
     for ( $j = 1; $entry_spaar = mysql_fetch_array ( $rsrc_spaar, MYSQL_ASSOC ); ++$j )
     {
       // Ausgeben
-      if ( $entry_spaar ['ergebnis1'] == "½" ) $entry_spaar ['ergebnis1'] = "r";
-      if ( $entry_spaar ['ergebnis2'] == "½" ) $entry_spaar ['ergebnis2'] = "r";
+      if ( $entry_spaar ['ergebnis1'] == SED_REMIS ) $entry_spaar ['ergebnis1'] = "r";
+      if ( $entry_spaar ['ergebnis2'] == SED_REMIS ) $entry_spaar ['ergebnis2'] = "r";
       echo "B|$i|$entry_spaar[brett]|".$reg_spieler [$entry_spaar ['spieler1']]."|".$reg_spieler [$entry_spaar ['spieler2']]."|$entry_spaar[ergebnis1]|$entry_spaar[ergebnis2]\r\n";
     }
   }

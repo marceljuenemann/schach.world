@@ -1,10 +1,10 @@
 <?
-/* SL-Bereich: Zugangsdaten für Mannschaftsführer
+/* SL-Bereich: Zugangsdaten fÃ¼r MannschaftsfÃ¼hrer
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -14,9 +14,9 @@
     require_once ( "tinyurl.inc.php" );
 
 	// Anfang
-	echo "Mit den folgenden Links können die jeweiligen Paarungen in das System eingegeben werden. Sollte die Eingabe durch Mannschaftsführer bei Ihrem Turnier aktiviert sein, so erhalten die Mannschaftsführer diese Links automatisch drei Tage vor einem Spieltag. Sollte jemand Probleme haben, Mails vom System zu empfangen, so können Sie ihm seinen Link direkt aushändigen.<br />";
+	echo "Mit den folgenden Links k&ouml;nnen die jeweiligen Paarungen in das System eingegeben werden. Sollte die Eingabe durch Mannschaftsf&uuml;hrer bei Ihrem Turnier aktiviert sein, so erhalten die Mannschaftsf&uuml;hrer diese Links automatisch drei Tage vor einem Spieltag. Sollte jemand Probleme haben, Mails vom System zu empfangen, so k&ouml;nnen Sie ihm seinen Link direkt aush&auml;ndigen.<br />";
 
-	// Iteration über alle Paarungen
+	// Iteration Ã¼ber alle Paarungen
 	$rsrc = mysql_query ( "SELECT id, runde, mannschaft1, mannschaft2 FROM paarungen WHERE staffel=$admin[staffel] ORDER BY runde", $globals ['db'] );
     $runde = 0;
 	while ( $paarung = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) )

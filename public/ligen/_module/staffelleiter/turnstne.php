@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Neue Staffel
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -14,20 +14,24 @@
     require_once ( "ajax.inc.php" );
 
   $frmStaffel = array (
-    // ID, Name, Beschreibung, Textfeldbreite, Max. Länge, Pflichtfeld
-    array ( "xname", "Name der Staffel", "Beispiele für Staffelnamen: Staffel Ost, Kreisliga Süd-West, Gruppe A", 30, 40, true ),
-    array ( "name", "Name des Staffelleiters", "Der vollständige Name des Staffelleiters.", 30, 40, true ),
-    array ( "email", "Emailadresse", "Die Emailadresse, über die wichtige Informationen verschickt werden. Bitte geben Sie eine Adresse an, die regelmäßig abgerufen wird.", 30, 50, true ),
-    array ( "email2", "Email wiederholen", "Um sicherzugehen, dass die eingegebene Adresse keine Tippfehler enthält, wiederholen Sie die Adresse bitte.", 30, 50, true ),
-    array ( "telefon", "Telefon", "Die Telefonnummer des Staffelleiters, über die er von Mannschaften kontaktiert werden kann.", 15, 30, true ),
+    // ID, Name, Beschreibung, Textfeldbreite, Max. LÃ¤nge, Pflichtfeld
+    array ( "xname", "Name der Staffel", "Beispiele fÃ¼r Staffelnamen: Staffel Ost, Kreisliga SÃ¼d-West, Gruppe A", 30, 40, true ),
+    array ( "name", "Name des Staffelleiters", "Der vollstÃ¤ndige Name des Staffelleiters.", 30, 40, true ),
+    array ( "email", "Emailadresse", "Die Emailadresse, Ã¼ber die wichtige Informationen verschickt werden. Bitte geben Sie eine Adresse an, die regelmÃ¤ÃŸig abgerufen wird.", 30, 50, true ),
+    array ( "email2", "Email wiederholen", "Um sicherzugehen, dass die eingegebene Adresse keine Tippfehler enthÃ¤lt, wiederholen Sie die Adresse bitte.", 30, 50, true ),
+    array ( "telefon", "Telefon", "Die Telefonnummer des Staffelleiters, Ã¼ber die er von Mannschaften kontaktiert werden kann.", 15, 30, true ),
     array ( "telefon2", "Telefon alternativ", "Eine zweite Telefonnummer, wie z.B. Mobiltelefon. Dieses Feld ist optional", 15, 30, false ),
-    array ( "passwort", "Passwort", "Das Anfangs-Passwort für den Staffelleiter", 10, 35, true )
+    array ( "passwort", "Passwort", "Das Anfangs-Passwort fÃ¼r den Staffelleiter", 10, 35, true )
   );
+  foreach ($frmStaffel as &$field) {
+    $field[1] = SED_utf8_decode($field[1]);
+    $field[2] = SED_utf8_decode($field[2]);
+  }
 
-  // Überprüfung
+  // ÃœberprÃ¼fung
   if ( isset ( $_POST ['neue_staffel'] ) )
   {
-    // Staffelleiter überprüfen und einfügen
+    // Staffelleiter Ã¼berprÃ¼fen und einfÃ¼gen
     $errors = array ();
     for ( $i = 0; $i < count ( $frmStaffel ); ++$i )
     {
@@ -42,11 +46,11 @@
 
     // Email
     if ( !SED_IsValidEmail ( $_POST ['frmManager_email'] ) )
-      $errors [] = "Bitte geben Sie eine gültige Emailadresse an!";
+      $errors [] = "Bitte geben Sie eine g&uuml;ltige Emailadresse an!";
 
     // Email Sicherheitswiederholung
     if ( $_POST ['frmManager_email'] != $_POST ['frmManager_email2'] )
-      $errors [] = "Die Email Wiederholung stimmte nicht mit der ersten Eingabe überein.";
+      $errors [] = "Die Email Wiederholung stimmte nicht mit der ersten Eingabe &uuml;berein.";
 
     // Fehlerausgabe
     if ( count ( $errors ) > 0 )
@@ -61,9 +65,9 @@
     {
       // Datenbank
       if ( !mysql_query ( "INSERT INTO benutzer SET name='$_POST[frmManager_name]', passwort=MD5('$_POST[frmManager_passwort]'), random='1234', telefon='$_POST[frmManager_telefon]', telefon2='$_POST[frmManager_telefon2]', email='$_POST[frmManager_email]'", $globals ['db'] ) )
-        SED_Error ( "Fehler beim Einfügen in die Datenbank! x=0", true );
+        SED_Error ( "Fehler beim Einf&uuml;gen in die Datenbank! x=0", true );
       if ( !mysql_query ( "INSERT INTO staffeln SET leiter=" . mysql_insert_id ( $globals ['db'] ) . ", name='$_POST[frmManager_xname]', turnier=$globals[tid]", $globals ['db'] ) )
-        SED_Error ( "Fehler beim Einfügen in die Datenbank! x=1", true );
+        SED_Error ( "Fehler beim Einf&uuml;gen in die Datenbank! x=1", true );
       else
         // Metatag Refresh
         echo "<meta http-equiv='refresh' content='0;URL=?admin=desktop-$admin[userid]-$admin[session]' />";
@@ -82,7 +86,7 @@
     echo "<input $jscript type='$type' style='margin-bottom: 15px; margin-top: 5px;' name='frmManager_" . $frmStaffel [$i][0] . "' value='$value' size='" . $frmStaffel [$i][3] . "' maxlength='" . $frmStaffel [$i][4] . "' /><br />";
   }
   
-  // Javascript für Datenabfrage
+  // Javascript fÃ¼r Datenabfrage
     ?>
     <script type='text/javascript'><!--
 

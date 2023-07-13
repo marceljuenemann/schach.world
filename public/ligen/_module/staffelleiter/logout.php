@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Logout
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -12,7 +12,7 @@
 
 	require_once ( "login.inc.php" );
 
-    // Sitzung beenden durch rücksetzen der Zeit
+    // Sitzung beenden durch rÃ¼cksetzen der Zeit
     mysql_query ( "UPDATE benutzer SET random='123', letzterzugriff=NOW()-100000 WHERE id=$admin[userid] LIMIT 1", $globals ['db'] );
 
     // Weiterleiten zu einer interessanteren Seite

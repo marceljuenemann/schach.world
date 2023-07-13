@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Turnierleiter/Staffelleiter bearbeiten
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -45,7 +45,7 @@
                 SED_Error ( "Fehler beim Setzen des neuen Passworts!" );
             else
             {
-                echo "<b>Das Passwort wurde erfolgreich geändert!</b>";
+                echo "<b>Das Passwort wurde erfolgreich ge&auml;ndert!</b>";
                 echo "<meta http-equiv='refresh' content='0;URL=?admin=desktop-$admin[userid]-$admin[session]' />";
             }
         }
@@ -59,7 +59,7 @@
         <table cellspacing="0" cellpadding="2">
         <tr><td>Neues Passwort: </td><td><input type="password" name="pw_new1" /></td></tr>
         <tr><td>Passwort wiederholen: </td><td><input type="password" name="pw_new2" /></td></tr>
-        <tr><td></td><td><input type="submit" class="sed_submit" name="pw_change" value="Ändern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
+        <tr><td></td><td><input type="submit" class="sed_submit" name="pw_change" value="&Auml;ndern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
         </table>
         </fieldset></form><br />
     <?
@@ -74,9 +74,9 @@
 
         // Email richtig?
         elseif ( !SED_IsValidEmail ( $_POST ['email'] ) )
-            SED_Error ( "Geben Sie eine gültige Emailadresse an!" );
+            SED_Error ( "Geben Sie eine g&uuml;ltige Emailadresse an!" );
 
-        // Daten ändern
+        // Daten Ã¤ndern
         else
         {
             if ( !mysql_query ( "UPDATE benutzer SET name='$_POST[name]', email='$_POST[email]', telefon='$_POST[telefon]', telefon2='$_POST[telefon2]' WHERE id=$up_userid LIMIT 1", $globals ['db'] ) )
@@ -90,7 +90,7 @@
                     SED_Cache::clearSpieltag ( $_GET ['staffel'] );
 
                 // Fertig
-                echo "<b>Die Daten wurden erfolgreich geändert!</b>";
+                echo "<b>Die Daten wurden erfolgreich ge&auml;ndert!</b>";
                 echo "<meta http-equiv='refresh' content='0;URL=?admin=desktop-$admin[userid]-$admin[session]' />";
             }
         }
@@ -107,6 +107,6 @@
         <tr><td>Email: </td><td><input value="<? echo $daten ['email']; ?>" type="text" name="email" /></td></tr>
         <tr><td>Telefon: </td><td><input value="<? echo $daten ['telefon']; ?>" type="text" name="telefon" /></td></tr>
         <tr><td>Telefon 2: </td><td><input value="<? echo $daten ['telefon2']; ?>" type="text" name="telefon2" /></td></tr>
-        <tr><td></td><td><input type="submit" class="sed_submit" name="kontakt_change" value="Ändern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
+        <tr><td></td><td><input type="submit" class="sed_submit" name="kontakt_change" value="&Auml;ndern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
         </table>
         </fieldset></form><br />

@@ -1,10 +1,10 @@
 <?
 /* Spieltag als Text-Datei
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage spieltag
@@ -21,10 +21,10 @@
 
   
   /////////////////////////////////
-  // Überschrift & Spiele
+  // Ãœberschrift & Spiele
   /////////////////////////////////  
   
-  // Überschrift
+  // Ãœberschrift
   echo "$_data[staffelname]\r\n$_data[sl_name]\r\n$_GET[r]. Runde $_data[datum]\r\n";
 
   // Paarungen ausgeben
@@ -59,7 +59,7 @@
     $_tab = Tabelle ( $_GET ['staffel'], $_GET ['r'], $kreuztabelle );
     if ( !count ( $_tab ) ) return;
 
-    // Überschriften
+    // Ãœberschriften
     echo "Tabelle nach $_GET[r] Runden\r\n";
 
     // Daten

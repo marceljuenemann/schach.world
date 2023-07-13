@@ -246,7 +246,7 @@ class SED_Mannschaft {
             switch ( $partie ['ergebnis'] ){
                 case "1":
                     $ergebnisse [$partie ['spieler']]["pkt"] += 0.5;
-                case utf8_decode("½"):
+                case SED_REMIS:
                     $ergebnisse [$partie ['spieler']]["pkt"] += 0.5;
                 case "0":
                     $ergebnisse [$partie ['spieler']]["spiele"] += 1;

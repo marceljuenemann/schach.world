@@ -1,10 +1,10 @@
 <?
-/* SL-Bereich: Turniermenü
+/* SL-Bereich: TurniermenÃ¼
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -15,10 +15,10 @@
   // Wenn Daten abgesendet wurden
   if ( isset ( $_POST ['menue_save'] ) )
   {
-    // Alte Links löschen
+    // Alte Links lÃ¶schen
     mysql_query ( "DELETE FROM turniermenue WHERE turnier=$globals[tid] LIMIT 100", $globals ['db'] );
 
-    // Neue Links einfügen
+    // Neue Links einfÃ¼gen
     for ( $i = 1; isset ( $_POST ["linkTitel$i"] ); ++$i )
     {
       if ( $_POST ["linkTitel$i"] )
@@ -28,13 +28,13 @@
       }
     }
 
-    echo "<b>Das neue Menü wurde gespeichert!</b>";
+    echo "<b>Das neue Men&uuml; wurde gespeichert!</b>";
     echo "<meta http-equiv='refresh' content='0;URL=?admin=desktop-$admin[userid]-$admin[session]' />";
   }
 
 
 
-  // Fügt eine Zeile hinzu
+  // FÃ¼gt eine Zeile hinzu
   function __AddForm ( $titel, $url, $neuesfenster )
   {
     global $globals;
@@ -54,9 +54,8 @@
   }
 ?>
 
-  Das Turniermenü wird in der Regel in der Seitenleiste angezeigt, allerdings erst, wenn die Anmeldephase
-  abgeschlossen ist. Über das Menü können Sie wichtige Seiten oder Dateien verlinken, z.B. das
-  Saisonheft als PDF. Sie können auch entscheiden, ob der Link in einem neuen Fenster geöffnet werden soll.<br /><br />
+  Das Turniermen&uuml; wird in der Regel in der Seitenleiste angezeigt. &Uuml;ber das Men&uuml; k&ouml;nnen Sie wichtige Seiten oder Dateien verlinken, z.B. das
+  Saisonheft als PDF. Sie k&ouml;nnen auch entscheiden, ob der Link in einem neuen Fenster ge&ouml;ffnet werden soll.<br /><br />
 
     <script type='text/javascript'><!--
 
@@ -72,7 +71,7 @@
             swapExt ( a, b, "Neu", "checked" );
         }
         function swapExt ( a, b, name, attribut ){
-            // Objekt-Referenz holen, überprüfen ob tauschen möglich ist
+            // Objekt-Referenz holen, Ã¼berprÃ¼fen ob tauschen mÃ¶glich ist
             a = document.getElementsByName ( "link"+name+a )[0]; 
             b = document.getElementsByName ( "link"+name+b )[0];
             if ( !a || !b ) return;
@@ -132,7 +131,7 @@
             // Link zu dem Turnier
 			echo "<a href='javascript:add(\"$turnier[name]\",\"$globals[httppath]$turnier[directory]/?esw=1\")'>$turnier[name]</a><br />";
 			
-			// Turniermenüeinträge der letzten Saison
+			// TurniermenÃ¼eintrÃ¤ge der letzten Saison
 			$lastMenu = mysql_query ( "SELECT * FROM turniermenue WHERE turnier=$turnier[id] ORDER BY sortid", $globals ['db'] );
 			if ( mysql_num_rows ( $lastMenu ) ){
 				while ( $tmp = mysql_fetch_array ( $lastMenu, MYSQL_ASSOC ) ){

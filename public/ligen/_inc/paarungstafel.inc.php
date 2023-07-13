@@ -4,16 +4,16 @@
  * Berechnet die Paarungstafel zu einer gegebenen Anzahl von
  * Mannschaften.
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage libs
  */
 
-  // Rückgabeformat:
+  // RÃ¼ckgabeformat:
   // runde~m$1~m$2~;runde~m$1~m$2;...;runde~m$1~m$2;
   // z.B.: 1~m4~m1~;1~m3~m2~;2~m2~m4~;...
   function Paarungstafel ( $n )
@@ -27,9 +27,9 @@
     $spielfrei = $n % 2;
     $n += $spielfrei;
 
-    // Für jede Runde
+    // FÃ¼r jede Runde
     for ( $x = 1; $x < $n; ++$x )
-      // Für jede Paarung
+      // FÃ¼r jede Paarung
       for ( $m = $spielfrei + 1; $m <= $n / 2; ++$m )
       {
         // Ungerade Rundenzahl?
@@ -49,7 +49,7 @@
         }
       }
 
-    // Rückgabe
+    // RÃ¼ckgabe
     return $result;
   }
 ?>

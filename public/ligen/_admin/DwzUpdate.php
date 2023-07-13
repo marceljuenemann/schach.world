@@ -5,10 +5,10 @@
  * zu finden und aktualisiert die DW-Zahlen bei Turnieren der aktuellen
  * Saison.
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage admin
@@ -75,6 +75,6 @@
     }
     echo "<b>Habe $count Wertungszahlen aktualisiert.</b>";
 
-    // Cache löschen
-    SED_Cache::clear (); // also für alle Turniere
+    // Cache lÃ¶schen
+    SED_Cache::clear (); // also fÃ¼r alle Turniere
 ?>

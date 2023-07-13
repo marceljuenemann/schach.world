@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Saisonheft
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -14,9 +14,9 @@
 
 Hallo Turnierleiter!<br />
 <br />
-Mit diesem Ergebnisdienst kann man auch einen Großteil des Saisonheftes (vor allem die Aufstellungen)
+Mit diesem Ergebnisdienst kann man auch einen Gro&szlig;teil des Saisonheftes (vor allem die Aufstellungen)
 automatisch generieren. Allerdings steht zur Zeit noch keine
-Admin-Oberfläche zur Verfügung :-(
+Admin-Oberfl&auml;che zur Verf&uuml;gung :-(
 Schreib mir doch einfach eine <a href='mailto:warumistkeinnamefrei@gmail.com'>Mail</a>, dann kann ich mich
-darum kümmern.
+darum k&uuml;mmern.
 

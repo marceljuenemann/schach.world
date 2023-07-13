@@ -1,10 +1,10 @@
 <?
 /* SL-Bereich: Rundmail
  * 
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  * 
  * @package schach-ergebnisdienst
  * @subpackage staffelleiter
@@ -57,12 +57,12 @@
         </div></form><br /><br />";
      
         
-    // Liste der Empfänger holen (ist schon alphabetisch sortiert)
+    // Liste der EmpfÃ¤nger holen (ist schon alphabetisch sortiert)
     $tos = $rundmail->getTo ();
-    echo "<span class='sed_hl2'>Liste der Empfänger</span><br /><br />";
+    echo "<span class='sed_hl2'>Liste der Empf&auml;nger</span><br /><br />";
     
     foreach ( $tos as $team => $empfaenger ){
-        // Mannschaftsführer
+        // MannschaftsfÃ¼hrer
         if ( $team != "newsletter" ){
             echo "<b>".$globals['teams'][$team].":</b> ";
             echo implode ( ", ", $empfaenger );

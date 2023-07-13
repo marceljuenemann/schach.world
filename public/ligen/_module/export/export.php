@@ -1,10 +1,10 @@
 <?
-/* Mannschaftsaufstellung und ähnliches
+/* Mannschaftsaufstellung und Ã¤hnliches
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage mannschaft
@@ -24,7 +24,7 @@
 
     function replaceUmlauts ( $str ){
     return str_replace(
-      array('ä', 'ö', 'ü', 'ß'),
+      array(utf8_decode('Ã¤'), utf8_decode('Ã¶'), utf8_decode('Ã¼'), utf8_decode('ÃŸ')),
       array('ae', 'oe', 'ue', 'ss'),
       $str
     );
@@ -63,7 +63,7 @@ if ( $_GET ["format"] == "mlf" ){
     // MLF-interne IDs
     $reg_mannschaften = array (); // mid => mlf-id
     $reg_spieler = array ( ""=>"" ); // sid => mlf-id
-    $reg_spieler_iterator = 1; // Zum Zählen der ID
+    $reg_spieler_iterator = 1; // Zum ZÃ¤hlen der ID
 
     // Mannschaften sammeln TODO: Alle Mannschaften, die in der Staffel gespielt haben
     $rsrc_mannschaften = mysql_query ( "select m.id from mannschaften as m where staffel=$_GET[staffel] order by m.name" );
@@ -118,8 +118,8 @@ if ( $_GET ["format"] == "mlf" ){
     for ( $j = 1; $entry_spaar = mysql_fetch_array ( $rsrc_spaar, MYSQL_ASSOC ); ++$j )
     {
       // Ausgeben
-      if ( $entry_spaar ['ergebnis1'] == "½" ) $entry_spaar ['ergebnis1'] = "r";
-      if ( $entry_spaar ['ergebnis2'] == "½" ) $entry_spaar ['ergebnis2'] = "r";
+      if ( $entry_spaar ['ergebnis1'] == SED_REMIS ) $entry_spaar ['ergebnis1'] = "r";
+      if ( $entry_spaar ['ergebnis2'] == SED_REMIS ) $entry_spaar ['ergebnis2'] = "r";
       echo "B|$i|$entry_spaar[brett]|".$reg_spieler [$entry_spaar ['spieler1']]."|".$reg_spieler [$entry_spaar ['spieler2']]."|$entry_spaar[ergebnis1]|$entry_spaar[ergebnis2]\r\n";
     }
   }
@@ -158,7 +158,7 @@ else if ( $_GET ["format"] == "peter" || $_GET["format"] == "701" ){
     $rsrc = mysql_query ( "SELECT ZPS, Vereinname FROM dwz_vereine WHERE ZPS like '$_GET[zps]%' ORDER BY ZPS", $globals ["db"] );
     while ( $verein = ( mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) ) ){
 
-        // Verein Überschrift
+        // Verein Ãœberschrift
         $zps = substr ( $verein["ZPS"], 3, 2 );
         echo "\t\t$zps $verein[Vereinname]\n\n\n";
 
@@ -172,7 +172,7 @@ else if ( $_GET ["format"] == "peter" || $_GET["format"] == "701" ){
         $lastmnr = 1;
         $lastbnr = 0;
         while ( $spieler = mysql_fetch_array ( $rc, MYSQL_ASSOC ) ){
-            // bis 12 Leerzeilen auffüllen
+            // bis 12 Leerzeilen auffÃ¼llen
             if ( $spieler["mnr"]!=$lastmnr ){
                 $lastbnr = (int) $lastbnr;
                 while ( $lastbnr < 12 ){
@@ -250,7 +250,7 @@ else if ( $_GET["format"] == "spiellokale" ){
 elseif ($_GET["format"]=="sjbh") {
 // BEGIN SJBH HEFT
 
-// TODO nächstes jahr: gleich zwei leere zeilen, telefon+ort gleich in new line statt komma
+// TODO nÃ¤chstes jahr: gleich zwei leere zeilen, telefon+ort gleich in new line statt komma
     $style = "style='font-family: Verdana; font-size:12pt; border:solid; border-color:black; border-collapse:collapse; border-width:1px'";
 
     // Mannschaften holen. Sortierung Staffel, ZPS
@@ -274,7 +274,7 @@ elseif ($_GET["format"]=="sjbh") {
         echo "<table style='font-family: Verdana; font-size:12pt; width=100%'>";
 
         // MF
-        echo "<tr><td style='vertical-align: top; font-family: Verdana; font-size:12pt; width:50%'><b>Mannschaftsführer:</b><br />";
+        echo "<tr><td style='vertical-align: top; font-family: Verdana; font-size:12pt; width:50%'><b>Mannschaftsf&uuml;hrer:</b><br />";
         echo $team->get("mf_name")."<br />";
         echo "Tel.: ".$team->get ( "mf_telefon" );
         if ( strlen ( $tel = $team->get ( "mf_telefon2" ) ) )
@@ -351,10 +351,10 @@ elseif ($_GET["format"]=="nsv") {
 
 
         // MF
-        echo "<tr><td style='vertical-align: top; font-family: Verdana; font-size:12pt; width:50%'><b>Mannschaftsführer:</b><br />";
+        echo "<tr><td style='vertical-align: top; font-family: Verdana; font-size:12pt; width:50%'><b>Mannschaftsf&uuml;hrer:</b><br />";
         echo $team->get("mf_name")."<br />";
-        echo toInline ( getZusatz ( "Mannschaftsführer - Adresse" ))."<br>";
-        echo toInline ( getZusatz ( "Mannschaftsführer - PLZ" ))." ".getZusatz ( "Mannschaftsführer - Stadt" )."<br>";
+        echo toInline ( getZusatz ( utf8_decode( "MannschaftsfÃ¼hrer - Adresse" )))."<br>";
+        echo toInline ( getZusatz ( utf8_decode( "MannschaftsfÃ¼hrer - PLZ" )))." ".getZusatz ( utf8_decode( "MannschaftsfÃ¼hrer - Stadt") )."<br>";
         echo "Tel.: ".$team->get ( "mf_telefon" )."<br>";
         if ( strlen ( $tel = $team->get ( "mf_telefon2" ) ) )
             echo " oder $tel"."<br>";
@@ -434,10 +434,10 @@ elseif ($_GET["format"]=="nsv-txt") {
 
 
         // MF
-        echo "Mannschaftsführer\n";
+        echo "Mannschaftsf&uuml;hrer\n";
         echo $team->get("mf_name")."\n";
-        echo toInline ( getZusatz ( "Mannschaftsführer - Adresse" ))."\n";
-        echo toInline ( getZusatz ( "Mannschaftsführer - PLZ" ))." ".getZusatz ( "Mannschaftsführer - Stadt" )."\n";
+        echo toInline ( getZusatz ( utf8_decode("MannschaftsfÃ¼hrer - Adresse" )))."\n";
+        echo toInline ( getZusatz ( utf8_decode("MannschaftsfÃ¼hrer - PLZ" )))." ".getZusatz ( utf8_decode("MannschaftsfÃ¼hrer - Stadt") )."\n";
         echo "Tel.: ".$team->get ( "mf_telefon" )."\n";
         if ( strlen ( $tel = $team->get ( "mf_telefon2" ) ) )
             echo " oder $tel"."\n";
@@ -501,9 +501,9 @@ else {
         echo "Tel.: ".getZusatz ( "Vereinsvorsitzender - Telefon" ).", eMail: ".getZusatz ( "Vereinsvorsitzender - E-Mail" )."\n";
 
         // MF
-        echo "PostempfängerIn / MannschaftsführerIn:\n";
+        echo "Postempf&auml;ngerIn / Mannschaftsf&uuml;hrerIn:\n";
         echo $team->get("mf_name").", ";
-        echo toInline ( getZusatz ( "Mannschaftsführer - Anschrift" ))."\n";
+        echo toInline ( getZusatz ( utf8_decode("MannschaftsfÃ¼hrer - Anschrift" )))."\n";
         echo "Tel.: ".$team->get ( "mf_telefon" );
         if ( strlen ( $tel = $team->get ( "mf_telefon2" ) ) )
             echo " oder $tel";
@@ -556,13 +556,13 @@ foreach ( $globals ["staffeln"] as $staffel=>$dummy ){
       $lastr = false;
       while ( $paarung = mysql_fetch_array ( $res, MYSQL_ASSOC ) )
       {
-        // Nächste Runde?
+        // NÃ¤chste Runde?
         if ( $paarung ['runde'] != $lastr )
         {
           // Datum berechnen
           $paarung ['termin'] = SED_GetTermin ( $paarung ['runde'], $staffel );
 
-          // Ausgabe der Spieltagüberschrift
+          // Ausgabe der SpieltagÃ¼berschrift
           echo "\n$paarung[runde]. Runde am $paarung[termin]\t";
           $lastr = $paarung ["runde"];
         }

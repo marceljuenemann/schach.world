@@ -1,10 +1,10 @@
 <?
 /* Ergebniseingabe
  *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
+ * @copyright Copyright (c) 2006-2010, Marcel JÃ¼nemann
  * @version 0.8.0 (2010/7)
  * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
+ * @author Marcel JÃ¼nemann <mail@marcel-juenemann.de>
  *
  * @package schach-ergebnisdienst
  * @subpackage eingabe
@@ -19,7 +19,7 @@
         g_edit []       (ggf. Daten der spielerpaarungen)
         g_vars []       (z.Z. brettzahl)
 
-    Folgende Präfixe können die Spieler IDs haben:
+    Folgende PrÃ¤fixe kÃ¶nnen die Spieler IDs haben:
         sID     Spieler
         x       Freigelassen
         nNN,VN  Nachmeldung
@@ -41,16 +41,16 @@
   if ( !isset ( $_GET ['p'] ) )
     SED_Error ( "Der Link scheint fehlerhaft gewesen zu sein. Achten Sie darauf, dass Ihr eMail-Programm den Link nicht in der Mitte umgebrochen hat!", true );
 
-  // Daten über Paarung und Staffelleiter abfragen
+  // Daten Ã¼ber Paarung und Staffelleiter abfragen
   global $g_paarung, $g_leiter, $g_m1, $g_m2, $g_edit;
   $g_paarung = mysql_fetch_array ( mysql_query ( "SELECT *, erg1 IS NOT NULL as isset FROM paarungen WHERE id=$_GET[p]", $globals ['db'] ), MYSQL_ASSOC );
   $g_leiter = mysql_fetch_array ( mysql_query ( "SELECT b.id, b.name, b.telefon, b.email FROM staffeln INNER JOIN benutzer as b ON b.id=staffeln.leiter WHERE staffeln.id=$g_paarung[staffel] AND staffeln.turnier=$globals[tid]", $globals ['db'] ), MYSQL_ASSOC );
 
-  // Daten über die Mannschaften abfragen
+  // Daten Ã¼ber die Mannschaften abfragen
   $g_m1 = new SED_Mannschaft ( $g_paarung ['mannschaft1'] );
   $g_m2 = new SED_Mannschaft ( $g_paarung ['mannschaft2'] );
 
-  // Fehlerüberprüfung
+  // FehlerÃ¼berprÃ¼fung
   if ( !$g_paarung || !$g_leiter )
     SED_Error ( "Ausnahmefehler #465", true );
 
@@ -76,7 +76,7 @@
     {
         require_once ( "login.inc.php" );
         if ( $admin ['usertype'] == "s" && $admin ['staffel'] != $g_paarung ['staffel'] )
-            SED_Error ( "Ihnen fehlt die Berechtigung für diese Staffel!", true );
+            SED_Error ( "Ihnen fehlt die Berechtigung f&uuml;r diese Staffel!", true );
     }
 
     // Sonstige Person?
@@ -100,12 +100,12 @@
   if ( isset ( $_POST ['admin_eingabe'] ) )
   {
       ////////////////////////////////////////////////////////////////
-      // ALTE SPIELERPAARUNGEN LÖSCHEN
+      // ALTE SPIELERPAARUNGEN LÃ–SCHEN
       ////////////////////////////////////////////////////////////////
 
       if ( $g_paarung ['isset'] )
         if ( !mysql_query ( "DELETE FROM spielerpaarungen WHERE paarung=$_GET[p]", $globals ['db'] ) )
-          SED_Error ( "Fehler beim Löschen der alten Spielerpaarungen.", true );
+          SED_Error ( "Fehler beim L&ouml;schen der alten Spielerpaarungen.", true );
 
 
       ////////////////////////////////////////////////////////////////
@@ -145,7 +145,7 @@
                 // Versuchen, DWZ etc. aus der Datenbank zu lesen
                 $spieler->autofill ();
 
-                // Versuchen in die Datenbank einzufügen
+                // Versuchen in die Datenbank einzufÃ¼gen
                 try {
                     $spieler->saveToDB ();
                     $_POST ["$team$i"] = "s".$spieler->get("id");
@@ -165,7 +165,7 @@
       SED_Cache::clearTeam ( 0, SED_Cache::TEAM_ERGEBNISSE );
 
       ////////////////////////////////////////////////////////////////
-      // BESTÄTIGUNGS-VERSENDUNG
+      // BESTÃ„TIGUNGS-VERSENDUNG
       ////////////////////////////////////////////////////////////////
 
         if ( !isset ( $_GET ['admin'] ) || ( isset ( $_POST ['checkbox_sende_bestaetigung'] ) && $_POST ['checkbox_sende_bestaetigung'] == 1 ) )
@@ -187,7 +187,7 @@
   // EINGABE-FORMULAR
   //////////////////////////////////////////////////////////////////
 
-  // Überschrift und Formularanfang
+  // Ãœberschrift und Formularanfang
   echo "<span class='sed_hl2'>".$g_m1->get("mannschaftsname")." - ".$g_m2->get("mannschaftsname")."</span><br /><br />";
   echo "<form action='".SED_GenerateFormAction()."' method='post' name='eingabeform' style='text-align: left'><div>";
 
@@ -196,7 +196,7 @@
     echo "<table class='sed_normal'><tr><th>Br</th><th>Heim</th><th>Erg</th><th></th><th>Erg</th><th>Gast</th></tr>";
 
     // Stringerstellung: Einzelergebnis-Auswahl
-    $ergs = array ( "0", "½", "1", "+", "-", "?" );
+    $ergs = array ( "0", SED_REMIS, "1", "+", "-", "?" );
     $ergstr = "";
     foreach ( $ergs as $v )
       $ergstr .= "<option value='$v'>$v</option>";
@@ -225,12 +225,12 @@
     // Ausgabe einer Zeile in der Ergebniseingabe-Tabelle
     for ( $b = 1; $b <= $g_vars ['brettzahl']; ++$b )
     {
-      // In temporäre Variablen
+      // In temporÃ¤re Variablen
       $temp1 = $temp2 = $ergstr;
       $temp3 = $heimspi;
       $temp4 = $gastspi;
 
-      // Ergebnis und Spieler vorauswählen
+      // Ergebnis und Spieler vorauswÃ¤hlen
       if ( $g_paarung ['isset'] )
       {
         $temp1 = SED_SelectOption ( $temp1, $g_edit [$b]['ergebnis1'] );
@@ -256,20 +256,20 @@
             <td><select name='spigast$b' onchange='SED_OnSelectSpieler(\"spigast\",$b);'>$temp4</select></td></tr>";
     }
 
-    // Ausgabe der Zeile für das Gesamtergebnis
+    // Ausgabe der Zeile fÃ¼r das Gesamtergebnis
     $temp1 = $g_paarung ['isset'] ? SED_SelectOption ( $gesstr, $g_paarung ['erg1'] ) : $gesstr;
     $temp2 = $g_paarung ['isset'] ? SED_SelectOption ( $gesstr, $g_paarung ['erg2'] ) : $gesstr;
     echo "<tr><td colspan='2'><b>Gesamtergebnis:</b></td><td><select name='gesheim' onchange='SED_OnSelectGesamtergebnis(\"gesheim\");'>$temp1</select></td><td></td><td><select name='gesgast' onchange='SED_OnSelectGesamtergebnis(\"gesgast\");'>$temp2</select></td></table><br /><br />";
   }
 
   // Bemerkung
-  echo "<b>Öffentlich sichtbare Bemerkung:</b><br /><input type='text' name='bemerkungen' value='$g_paarung[bemerkung]' size='35' /><br /><br />";
+  echo "<b>&Ouml;ffentlich sichtbare Bemerkung:</b><br /><input type='text' name='bemerkungen' value='$g_paarung[bemerkung]' size='35' /><br /><br />";
 
-  // Abschlusstext (Bei SL.: Bestätigung verschicken?)
+  // Abschlusstext (Bei SL.: BestÃ¤tigung verschicken?)
   if ( !isset ( $_GET ['admin'] ) )
     echo "<b>Bitte kontrollieren Sie die Eingaben nochmals!</b> Nach einem Klick auf Speichern werden die Eingaben auch per Email an den Staffelleiter und die gegnerische Mannschaft versendet.<br /><br />";
   else
-    echo "<input type='checkbox' name='checkbox_sende_bestaetigung' id='checkbox_sende_bestaetigung' value='1' /> <label for='checkbox_sende_bestaetigung'><b>Bestätigung versenden</b> - Wenn Sie das folgende Auswahlfeld aktivieren, wird an die Mannschaftsführer der beiden Mannschaften eine Email mit den Spielergebnissen gesendet.</label><br /><br />";
+    echo "<input type='checkbox' name='checkbox_sende_bestaetigung' id='checkbox_sende_bestaetigung' value='1' /> <label for='checkbox_sende_bestaetigung'><b>Best&auml;tigung versenden</b> - Wenn Sie das folgende Auswahlfeld aktivieren, wird an die Mannschaftsf&uuml;hrer der beiden Mannschaften eine Email mit den Spielergebnissen gesendet.</label><br /><br />";
 
   // Submit-Button
   echo "<input type='submit' name='admin_eingabe' value='Speichern' class='sed_submit' /> ";
