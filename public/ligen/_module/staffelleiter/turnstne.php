@@ -1,5 +1,4 @@
 <?
-TODO
 /* SL-Bereich: Neue Staffel
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -24,6 +23,10 @@ TODO
     array ( "telefon2", "Telefon alternativ", "Eine zweite Telefonnummer, wie z.B. Mobiltelefon. Dieses Feld ist optional", 15, 30, false ),
     array ( "passwort", "Passwort", "Das Anfangs-Passwort für den Staffelleiter", 10, 35, true )
   );
+  foreach ($frmStaffel as &$field) {
+    $field[1] = SED_utf8_decode($field[1]);
+    $field[2] = SED_utf8_decode($field[2]);
+  }
 
   // Überprüfung
   if ( isset ( $_POST ['neue_staffel'] ) )
