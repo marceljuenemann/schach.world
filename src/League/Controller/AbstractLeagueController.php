@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Controller;
 
+use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
@@ -11,9 +12,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
  */
 class AbstractLeagueController extends AbstractController {
 
-  protected League $league;
+  /**
+   * The league for which the request should be executed.
+   * 
+   * This field is automatically set by the ControllerInterceptor if the path contains a `league` parameter. 
+   */
+  public League $league;
 
-  public function setLeague($league) {
-    $this->league = $league;
-  }
+  /**
+   * The division for which the request should be executed.
+   * 
+   * This field is automatically set by the ControllerInterceptor if the path contains a `division` parameter. 
+   */
+  public Division $division;
+
 }

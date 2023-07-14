@@ -5,7 +5,6 @@ namespace Nsv\League\EventSubscriber;
 use Nsv\League\Controller\AbstractLeagueController;
 use Nsv\League\Repository\LeagueRepository;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\HttpKernel\Event\ControllerArgumentsEvent;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
@@ -21,15 +20,23 @@ class ControllerInterceptor implements EventSubscriberInterface
     $controller = $event->getController();
     if (is_array($controller)) $controller = $controller[0];
 
-    // Fetch the league specified in the URL.
     if ($controller instanceof AbstractLeagueController) {
-      $leagueName = $event->getRequest()->attributes->get('league');
-      $league = $this->leagueRepository->findByPath($leagueName);
-      if (!$league) {
-        // TODO: Make this lead to a 404
-        throw new \Exception("No tournament with given path found");
+      // Fetch the league specified in the URL.
+      if ($event->getRequest()->attributes->has('league')) {
+        $leagueName = $event->getRequest()->attributes->get('league');
+        $league = $this->leagueRepository->findByPath($leagueName);
+        if (!$league) {
+          // TODO: Make this lead to a 404
+          throw new \Exception("No tournament with given path found");
+        }
+        $controller->league = $league;
       }
-      $controller->setLeague($league);
+
+      // Fetch the division specified in the URL.
+      if ($event->getRequest()->attributes->has('division')) {
+        $divisionPath = $event->getRequest()->attributes->get('division');
+        $controller->division = $controller->league->divisionByPath($divisionPath);
+      }
     }
   }
 
