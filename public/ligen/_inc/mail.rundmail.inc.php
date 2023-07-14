@@ -40,7 +40,7 @@ class SED_Rundmail {
 
     function getDefaultText (){
         global $globals; global $prefs;
-        return "Liebe Schachfreunde,\n\nim Anhang findet ihr die Ergebnisse des ".$this->runde.". Spieltages als PDF. Die Ergebnisse sind auch online verf&uuml;gbar auf $globals[httppath]$prefs[directory]?staffel=".$this->staffel."&r=\n\nMit freundlichen Gr&uuml;&szlig;en\n".$this->infos['name']."\nStaffelleiter\n\nTel.: ".$this->infos["telefon"]."\nMail: ".$this->infos["email"]."\n";
+        return "Liebe Schachfreunde,\n\nim Anhang findet ihr die Ergebnisse des ".$this->runde.". Spieltages als PDF. Die Ergebnisse sind auch online verf&uuml;gbar auf $globals[httppath]$prefs[directory]?staffel=".$this->staffel."&r=\n\nMit freundlichen Gr&uuml;&szlig;en\n".$this->infos['name']."\nStaffelleiter\nTel.: ".$this->infos["telefon"]."\n";
     }
 
     function getDefaultSubject (){
@@ -88,8 +88,10 @@ class SED_Rundmail {
         $mail->Body = $body;
 
         // Anhang
-        if ( $_POST ['runde'] )
-          $mail->AddStringAttachment ( file_get_contents ( "$globals[httppath]$prefs[directory]/index.php?staffel=".$this->staffel."&r=".$this->runde."&ausgabe=pdf" ), "Ergebnisse.pdf" );
+        if ( $_POST ['runde'] ) {
+            $url = "$globals[httppath]$prefs[directory]/Rundschreiben/".$this->staffel."/Runde".$this->runde.".pdf";
+            $mail->AddStringAttachment ( file_get_contents ( $url ), "Ergebnisse.pdf" );
+        }
 
         // An Staffelleiter senden
         SED_SendMail( $mail, $this->infos ["email"], array() );

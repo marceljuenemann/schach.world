@@ -106,7 +106,7 @@ class SWI_Mannschaft {
 	
 	function getName($maxlength){
 		$name = $this->data['name'];
-		if (strlen($this->data['vname']) > 2){
+		if (strlen($this->data['vname'] ?: '') > 2){
 			$name = $this->data['vname'];
 		}
 		if ($this->data['mnr'] > 1){

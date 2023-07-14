@@ -15,7 +15,7 @@ while ( $mid = mysql_fetch_array ( $rsrc, MYSQL_ASSOC )) {
     $team = new SED_Mannschaft ( $mid );
 
     // DSB-Namen laden
-    if (strlen($team->get('zps')) == 5) {
+    if (strlen($team->get('zps') ?: '') == 5) {
         $rc = mysql_query ( "SELECT Vereinname FROM dwz_vereine WHERE ZPS='".$team->get("zps")."'", $globals ["db"] );
         $name = @reset ( mysql_fetch_array ( $rc, MYSQL_ASSOC ) );
     } else {

@@ -194,7 +194,7 @@ class SED_Mannschaft {
             // Gastspieler?
             $spieler ['zpsverein'] = substr ( $spieler ["zps"], 0, 5 );
             $spieler ['istGastspieler'] = (bool) (
-                strpos ( $this->get("zps"), $spieler ["zpsverein"] ) === false
+                strpos ( $this->get("zps") ?: '', $spieler ["zpsverein"] ) === false
                 && $this->get ( "zps" ) && $spieler ["zpsverein"] );
             $aufstellung [] = $spieler;
         }
