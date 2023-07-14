@@ -41,7 +41,7 @@ um die Spielergebnisse in den Schach-Ergebnisdienst einzutragen, können Sie fol
 @LINKS@
 Um einzustellen, wer in Ihrem Verein diese und ähnliche eMails erhalten soll, klicken Sie bitte auf folgenden Link: @MANNSCHAFTSDATEN@
 
-Bei Fragen wenden Sie sich bitte an Ihren Staffelleiter (@STAFFELLEITER@)." );
+Bei Fragen wenden Sie sich bitte an Ihren Staffelleitung (@STAFFELLEITER@)." );
   
   $vars = array();
   $vars["AUSRICHTER"] = $namen [$ausrichter];

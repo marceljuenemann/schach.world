@@ -42,7 +42,7 @@ function SED_Bestaetigungsmail ( $s, $r, $p, $m1, $m2, $geaendert ){
     $mail->Body = utf8_decode (
 "@ERGEBNISSE@
 Falls die obige Ergebnismeldung einen Fehler enthält, können Sie die Ergebnisse über folgenden Link korrigieren: @EINGABELINK@
-Sie können sich auch direkt an Ihren Staffelleiter @STAFFELLEITER@ wenden. Wenn die Ergebnisse korrekt sind, müssen Sie nichts weiter machen.
+Sie können sich auch direkt an die Staffelleitung (@STAFFELLEITER@) wenden.
 
 Alle Ergebnisse des Spieltages finden Sie unter @SPIELTAG@
 
@@ -103,7 +103,7 @@ Um einzustellen, wer in Ihrem Verein diese und ähnliche eMails erhalten soll, k
     $mail->Body = utf8_decode (
 "@ERGEBNISSE@
 @NACHMELDUNGEN@
-Falls die obige Ergebnismeldung einen Fehler enthält, können Sie die Ergebnisse im Staffelleiter-Bereich korrigieren: @SLLOGIN@
+Falls die obige Ergebnismeldung einen Fehler enthält, können Sie die Ergebnisse im Staffelleitungs-Bereich korrigieren: @SLLOGIN@
 Dort können sie unter dem Punkt Spieler auch falsche Nachmeldungen löschen bzw. bearbeiten." );
   
     $vars["SLLOGIN"] = SED_TINYURL_Login ( $spieltag ['staffelid'] );

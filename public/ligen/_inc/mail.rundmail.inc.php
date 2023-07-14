@@ -40,7 +40,7 @@ class SED_Rundmail {
 
     function getDefaultText (){
         global $globals; global $prefs;
-        return "Liebe Schachfreunde,\n\nim Anhang findet ihr die Ergebnisse des ".$this->runde.". Spieltages als PDF. Die Ergebnisse sind auch online verf&uuml;gbar auf $globals[httppath]$prefs[directory]?staffel=".$this->staffel."&r=\n\nMit freundlichen Gr&uuml;&szlig;en\n".$this->infos['name']."\nStaffelleiter\nTel.: ".$this->infos["telefon"]."\n";
+        return "Liebe Schachfreund:innen,\n\nim Anhang findet ihr die Ergebnisse des ".$this->runde.". Spieltages als PDF. Die Ergebnisse sind auch online verf&uuml;gbar auf $globals[httppath]$prefs[directory]?staffel=".$this->staffel."&r=\n\nMit freundlichen Gr&uuml;&szlig;en\n".$this->infos['name']."\nStaffelleiter\nTel.: ".$this->infos["telefon"]."\n";
     }
 
     function getDefaultSubject (){

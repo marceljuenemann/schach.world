@@ -5,13 +5,14 @@ namespace Nsv\League\Controller;
 use Nsv\League\Core\Bridge;
 use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class LeagueController extends AbstractController {
 
   #[Route('ligen/{leagueName}/', name: 'league')]
-  public function league(string $leagueName, Bridge $symfonyBridge): Response {
+  public function league(string $leagueName, Bridge $symfonyBridge, Request $request): Response {
     global $bridge;
     $bridge = $symfonyBridge;
 
@@ -27,6 +28,12 @@ class LeagueController extends AbstractController {
     try {
       include('index.php');    
     } catch (\Exception $e) {
+      // Report the error.
+      if (!Auth::isAdmin()) {
+        global $globals;
+        @wp_mail($globals['webmaster_mail'], 'LeagueController Exception', $request->getUri() . "\n\n".$e);
+      }
+
       // The legacy script often outputs HTML before fully processing the request.
       if (function_exists('SED_GUIclose')) {
         SED_Error('Leider ist ein Fehler aufgetreten :(');
@@ -35,8 +42,9 @@ class LeagueController extends AbstractController {
         }
         SED_GUIclose();
       } else {
+        ob_end_clean();
         throw $e;
-      }     
+      }
     }
     $body = ob_get_clean();
     $response = new Response($body);

@@ -56,8 +56,8 @@
 	  );
 	  
       // Ist es ein NULL-Spieler o.ä.?
-      if ( strlen ( $info [$prefix."nachname"] ) < 2 )
-		return "";
+      if ( strlen ( $info [$prefix."nachname"] ?: '' ) < 2 )
+	    	return "";
       
       // Weibliche FIDE-Titel verbessern
       $titel = isset($info[$prefix."titel"]) ? trim($info[$prefix."titel"]) : "";

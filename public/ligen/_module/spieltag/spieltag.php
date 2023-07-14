@@ -24,7 +24,7 @@
         require_once ( "gui.inc.php" );
         $staffel = (int) $_GET['staffel'];
         if ($staffel != $_GET['staffel']) exit();
-        $tname = reset ( mysql_fetch_array ( mysql_query ( "SELECT t.directory FROM staffeln s INNER JOIN turniere t ON t.id=s.turnier WHERE s.id='$staffel'", $globals ['db'] ), MYSQL_ASSOC ) );
+        $tname = SED_MYSQL_Value("SELECT t.directory FROM staffeln s INNER JOIN turniere t ON t.id=s.turnier WHERE s.id='$staffel'");
         echo "<b>Sie werden weitergeleitet...</b> $staffel $tname";
         echo "<meta http-equiv='refresh' content='0;URL=$globals[httppath]$tname/?staffel=$_GET[staffel]&r=$_GET[r]' />";
         exit;

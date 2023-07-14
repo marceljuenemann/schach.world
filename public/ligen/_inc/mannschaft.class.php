@@ -272,7 +272,7 @@ class SED_Mannschaft {
             INNER JOIN spieler s ON s.mannschaft=".$this->get("id")." AND s.id=IF(p.mannschaft1=m.id,sp.spieler1,sp.spieler2)
             WHERE m.turnier='$globals[tid]' AND m.zps='".$this->get("zps")."' AND m.mnr<".$this->get("mnr"), $globals ["db"] );
         while ( $ersatz = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) ){
-            if (!is_array($ergebnisse [$ersatz["spieler"]] [$ersatz["runde"]]))
+            if (!is_array(@$ergebnisse [$ersatz["spieler"]] [$ersatz["runde"]]))
                 $ergebnisse [$ersatz["spieler"]] [$ersatz["runde"]] [] = $ersatz;
         }
 
