@@ -15,6 +15,7 @@
  */
 
   // Felder aus Turnier-Tabelle in $prefs speichern
+  global $globals;
   if ( isset ( $globals ['tid'] ) )
     $query = "SELECT t.* FROM turniere as t WHERE t.id=$globals[tid]";
   elseif ( isset ( $_GET ['tid'] ) )
@@ -47,6 +48,7 @@
   $globals ['tid'] = $prefs ['id'];
 
   // Template berechnen
+  // TODO: Simplify / cleanup.
   if ( !isset ( $globals ['templatedir'] ) )
   {
       $template = "nsv";
@@ -59,18 +61,10 @@
       $globals ['templatedir'] = "$globals[basedir]/_templates/$template";
   }
 
-  // New Symfony World: Load league entity and store on the global $bridge object 
-  // TODO: This file is also called from _admin scripts which don't go through
-  // Symfony yet. Therefore, we need to check whether $bridge is actually set.
-  global $bridge;
-  if ($bridge) {
-    $bridge->league = $bridge->leagues->find($globals['tid']);
-  }
-
   // Staffeln
   $globals ['staffeln'] = array ();
-  if ($bridge) {
-    foreach ($bridge->league->divisions as $division) {
+  if (isset($globals['league'])) {
+    foreach ($globals['league']->divisions as $division) {
       $globals['staffeln'][$division->id] = $division->name;
     }
   } else {
@@ -81,8 +75,8 @@
 
   // Mannschaften
   $globals ['teams'] = array ();
-  if ($bridge) {
-    foreach ($bridge->league->teams as $team) {
+  if (isset($globals['league'])) {
+    foreach ($globals['league']->teams as $team) {
       $globals['teams'][$team->id] = $team->nameWithNumber();
     }
   } else {

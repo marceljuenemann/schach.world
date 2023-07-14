@@ -1,0 +1,13 @@
+{# TODO: Instead of using legacy functions, go through WordPress via layout.html.twig #}
+
+{{ legacy_league_header(title) }}
+
+{% block headline %}
+  <h1>{{ title }}</h1>
+{% endblock %}
+
+{% block content %}
+  Default content
+{% endblock %}
+
+{{ legacy_league_footer() }}

@@ -12,6 +12,9 @@
  * @package schach-ergebnisdienst
  * @subpackage main
  */
+
+  global $globals, $prefs;
+
     // Template berechnen
     if ( !isset ( $globals ['templatedir'] ) )
     {

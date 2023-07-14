@@ -4,6 +4,7 @@ namespace Nsv\League\Controller;
 
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
+use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -27,7 +28,47 @@ class AbstractLeagueController extends AbstractController {
    */
   public Division $division;
 
+  /**
+   * Sets up the database connection and global variables of the legacy system without
+   * processing the request or outputting anything.
+   */
+  protected function initializeLegacySystem() {
+    if (Auth::isAdmin()) {
+      $_GET['debugme'] = 1;
+    }
 
+    chdir(ABSPATH . '../ligen/_inc');
+    global $globals;
+    $globals['basedir'] = '..';
+
+    if (isset($this->league)) {
+      $globals['league'] = $this->league;
+      $globals['tid'] = $this->league->id;
+      if (isset($this->division)) {
+        $globals['division'] = $this->division;
+        $_GET['staffel'] = $this->division->id;
+      }
+    }
+
+    require_once ( "main.inc.php" );
+    require_once ( "connect.inc.php" );
+
+    // Don't send Content-Type header: https://www.saotn.org/php-56-default_charset-change-may-break-html-output/
+    ini_set( 'default_charset', "" );
+  }
+
+  /**
+   * Renders a twig template using the legacy system only for the UI headers and footers.
+   */
+  protected function renderWithLegacySystem(string $view, array $parameters = []): Response {
+    $this->initializeLegacySystem();
+    require_once ( "turnier.inc.php" );
+    return $this->render($view, $parameters);
+  }
+
+  /**
+   * Renders a league twig template, while providing some common variables.
+   */
   protected function render(string $view, array $parameters = [], Response $response = null): Response {
     $view = '@league/' . $view;
 
@@ -38,6 +79,8 @@ class AbstractLeagueController extends AbstractController {
       }
     }
 
-    return parent::render($view, $parameters, $response);
+    $response = parent::render($view, $parameters, $response);
+    $response->setCharset('iso-8859-1');
+    return $response;
   }
 }
