@@ -17,6 +17,9 @@ class League
     #[ORM\Column(length: 40)]
     private string $name;
 
+    #[ORM\Column(name: 'directory', length: 20)]
+    private string $path;
+
     #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
     #[ORM\OrderBy(["sortId" => "ASC", "id" => "ASC"])]
     private $divisions;
