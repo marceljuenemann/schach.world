@@ -31,7 +31,7 @@
     // Grundsätzliches
     $confirm = "";
     $confirm .= "Mannschaft: ".$anmeldung->get("name")." ".$anmeldung->get("mnr")."\n";
-    $confirm .= "Mannschaftsf&uuml;hrer: ".$anmeldung->get("mf_name")."\n";
+    $confirm .= SED_utf8_decode("Mannschaftsführer: ").$anmeldung->get("mf_name")."\n";
     $confirm .= "Mannschaftsseite: $globals[httppath]$prefs[directory]/?mannschaft=".$anmeldung->get("id")."\n";
     $confirm .= "\n";
     
@@ -47,6 +47,7 @@
     if ( $prefs ['anmTLMail'] && !$isTurnierleiter )
     {
         // eMail vorbereiten
+        /**
         require_once ( "mail.inc.php" );
         $mail = new SED_Mail ( "" );
         $mail->Subject = "Neue Mannschaftsmeldung: ".$anmeldung->get("name");
@@ -54,6 +55,12 @@
         
         // Mail an Turnierleiter senden
         $mail->Send ( SED_Mail::MAIL_TURNIERLEITER );
+        */
+        require_once ( "mail2.inc.php" );
+        $mail = SED_CreateMailer();
+        $mail->Subject = "Neue Mannschaftsmeldung: ".$anmeldung->get("name");
+        $mail->Body = $confirm;
+        SED_SendMail($mail, SED_MAIL_TURNIERLEITER);
     }
 
     // Turnierleiter? Dann gleich weitere Mannschaft anmelden

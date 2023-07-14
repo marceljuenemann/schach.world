@@ -14,7 +14,7 @@ function SED_CreateMailer() {
   return $mail;  
 }
 
-function SED_SendMail($mailer, $to, $vars) {
+function SED_SendMail($mailer, $to, $vars = array()) {
   global $globals;
   global $prefs;
 
@@ -30,7 +30,7 @@ function SED_SendMail($mailer, $to, $vars) {
       if ( SED_IsValidEmail ( $to ) ) {
           $mailer->AddAddress ( $to );
       } elseif ( $to == SED_MAIL_TURNIERLEITER ) {
-         $mailer->AddAddress ( reset ( SED_MYSQL_Array ( "SELECT email FROM benutzer WHERE id=$prefs[leiter] LIMIT 1" ) ) );
+         $mailer->AddAddress ( SED_MYSQL_Value ( "SELECT email FROM benutzer WHERE id=$prefs[leiter] LIMIT 1" ) );
       } 
   }
 
