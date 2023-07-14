@@ -11,22 +11,59 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class LeagueController extends AbstractController {
 
+  /**
+   * Main entry point for the League Manager. Exact action is determined by query parameters.
+   */
   #[Route('ligen/{leagueName}/', name: 'league')]
-  public function league(string $leagueName, Bridge $symfonyBridge, Request $request): Response {
-    global $bridge;
-    $bridge = $symfonyBridge;
+  public function league(
+        string $leagueName, 
+        Bridge $symfonyBridge,
+        Request $request
+      ): Response {
+    $this->initializeLegacySystem($symfonyBridge);
+    $response = $this->invokeLegacySystem($leagueName, $request);
+    $response->setCharset('iso-8859-1');
+    return $response;
+  }
 
-    // Show all errors and notices to admins. 
+  /**
+   * Sets up database connection and global variables of the legacy system without
+   * processing the request or outputting anything.
+   */
+  private function initializeLegacySystem(Bridge $symfonyBridge) {
     if (Auth::isAdmin()) {
       $_GET['debugme'] = 1;
     }
-    
-    // Hand over to legacy league manager.
+
+    global $globals, $bridge;
+    chdir(ABSPATH . '../ligen/_inc');
+    $globals['basedir'] = '..';
+    $bridge = $symfonyBridge;
+
+    require_once ( "main.inc.php" );
+    require_once ( "connect.inc.php" );
+
+    // Don't send Content-Type header: https://www.saotn.org/php-56-default_charset-change-may-break-html-output/
+    ini_set( 'default_charset', "" );
+  }
+
+  /**
+   * Invokes the legacy system for processing the request and generating output.
+   */
+  private function invokeLegacySystem(string $leagueName, Request $request): Response {
     $_GET['dir'] = $leagueName;
     ob_start();
-    chdir(ABSPATH . '../ligen/');
     try {
-      include('index.php');    
+      // Aufzurufendes Modul in $globals [mod] schreiben
+      global $globals;
+      require_once ( "modul.inc.php" );
+
+      // Existiert es überhaupt?
+      $modulpfad = "$globals[basedir]/_module/$globals[mod]/$globals[mod].php";
+      if ( !file_exists ( $modulpfad ) ) {
+        SED_Error ( "Fehler: Das angeforderte Modul existiert nicht!", true );
+      }
+      require_once ( $modulpfad );
     } catch (\Exception $e) {
       // Report the error.
       if (!Auth::isAdmin()) {
@@ -40,15 +77,16 @@ class LeagueController extends AbstractController {
         if (Auth::isAdmin()) {
           echo "<pre style='text-wrap: wrap'>$e</pre>";
         }
-        SED_GUIclose();
       } else {
         ob_end_clean();
         throw $e;
       }
     }
+    // Output the footer.
+    if ( function_exists ( "SED_GUIclose" ) ) {
+      SED_GUIclose ();
+    }
     $body = ob_get_clean();
-    $response = new Response($body);
-    $response->setCharset('iso-8859-1');
-    return $response;
+    return new Response($body);
   }
 }

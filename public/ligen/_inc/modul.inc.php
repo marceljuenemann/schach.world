@@ -53,4 +53,3 @@
 		require_once ( "tinyurl.inc.php" );
 		SED_TINYURL_parse ();
 	}
-?>

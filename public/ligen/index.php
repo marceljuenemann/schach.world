@@ -1,4 +1,6 @@
 <?
+// DEPRECATED: This file is not used when run through Symfony.
+
 /* Schach-Ergebnisdienst
  *
  * Die index.php des Systems. Das Skript macht einige Vorbereitungen
@@ -66,4 +68,4 @@
     // Rest der Seite ausgeben
     if ( function_exists ( "SED_GUIclose" ) )
         SED_GUIclose ();
-?>
+

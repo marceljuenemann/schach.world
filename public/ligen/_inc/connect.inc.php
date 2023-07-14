@@ -31,4 +31,3 @@
 		SED_Error ( "Fehler: Datenbank konnte nicht geöffnet werden!", true );
   mysql_set_charset('latin1');
 	$globals ['dbpw'] = "******";
-?>
