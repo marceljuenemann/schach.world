@@ -54,16 +54,16 @@
         // Paarungstitel ausgeben
         echo "<tr>";
         echo "<td>$row[runde].</td>";
-        echo "<td style='text-align:left'><a href='?admin=alleeing-$admin[userid]-$admin[session]&p=$row[pid]#admintop' style='text-decoration:none'>".$globals ['teams'][$row ['m1']]." - ".$globals ['teams'][$row ['m2']]."</a></td>";
+        echo "<td style='text-align:left'><a href='?admin=alleeing-$admin[userid]-$admin[session]&pid=$row[pid]#admintop' style='text-decoration:none'>".$globals ['teams'][$row ['m1']]." - ".$globals ['teams'][$row ['m2']]."</a></td>";
 
         // Link zu den Einstellungen
-        $settings = " <a href='?admin=alleeing-$admin[userid]-$admin[session]&p=$row[pid]#zusatz'><img src='$globals[systemicons]desk_einstellungen.png' alt='Einstellungen' class='sed_admin_icon' />Optionen&nbsp;</a>";
+        $settings = " <a href='?admin=alleeing-$admin[userid]-$admin[session]&pid=$row[pid]#zusatz'><img src='$globals[systemicons]desk_einstellungen.png' alt='Einstellungen' class='sed_admin_icon' />Optionen&nbsp;</a>";
 
         // Wenn die Paarung setzbar ist
         if ( $row ['gesetzt'] )
-          echo "<td style='text-align:left; min-width:220px'><a href='?admin=alleeing-$admin[userid]-$admin[session]&p=$row[pid]#admintop'><img src='$globals[systemicons]desk_eingeben.png' alt='Eingeben' class='sed_admin_icon' />&Auml;ndern</a>$settings</td>";
+          echo "<td style='text-align:left; min-width:220px'><a href='?admin=alleeing-$admin[userid]-$admin[session]&pid=$row[pid]#admintop'><img src='$globals[systemicons]desk_eingeben.png' alt='Eingeben' class='sed_admin_icon' />&Auml;ndern</a>$settings</td>";
         else
-          echo "<td style='text-align:left; min-width:220px'><a href='?admin=alleeing-$admin[userid]-$admin[session]&p=$row[pid]#admintop'><img src='$globals[systemicons]desk_eingeben.png' alt='Eingeben' class='sed_admin_icon' />Eingeben</a>$settings</td>";
+          echo "<td style='text-align:left; min-width:220px'><a href='?admin=alleeing-$admin[userid]-$admin[session]&pid=$row[pid]#admintop'><img src='$globals[systemicons]desk_eingeben.png' alt='Eingeben' class='sed_admin_icon' />Eingeben</a>$settings</td>";
         echo "</tr>";
       }
       echo "</table>";

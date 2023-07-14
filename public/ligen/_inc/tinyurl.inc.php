@@ -27,11 +27,11 @@ function SED_TINYURL_parse ()
     switch ( $_GET ['type'] )
     {
         case 1:
-            $_GET ['p'] = substr ( $_GET ['p1'], 0, 4 );
-            $_GET ['p'] = base_convert ( $_GET ['p'], 36, 10 );
+            $_GET ['pid'] = substr ( $_GET ['p1'], 0, 4 );
+            $_GET ['pid'] = base_convert ( $_GET ['pid'], 36, 10 );
             $_GET ['auth'] = substr ( $_GET ['p1'], 4 );
             require_once ( "turnier.inc.php" );
-            header ( "Location: $globals[httppath]$prefs[directory]/?m=eingabe&p=$_GET[p]&auth=$_GET[auth]" );
+            header ( "Location: $globals[httppath]$prefs[directory]/?m=eingabe&pid=$_GET[pid]&auth=$_GET[auth]" );
             exit;
 
             $globals ['mod'] = "eingabe";
