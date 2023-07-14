@@ -14,13 +14,11 @@ class DivisionController extends AbstractLeagueController {
    */
   #[Route('spielplan/', name: 'schedule')]
   public function schedule(): Response {
-    echo $this->division->name;
-
-    
     // 3. Start twig
     // 4. Nice twig.
 
+    return $this->render('schedule.html.twig');
     
-    return new Response("Hello World");
+    //return new Response("Hello World");
   }
 }

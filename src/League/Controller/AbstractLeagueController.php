@@ -5,6 +5,7 @@ namespace Nsv\League\Controller;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Abstract controller for a specific league, which is specified through the league slug
@@ -26,4 +27,17 @@ class AbstractLeagueController extends AbstractController {
    */
   public Division $division;
 
+
+  protected function render(string $view, array $parameters = [], Response $response = null): Response {
+    $view = '@league/' . $view;
+
+    if ($this->league) {
+      $parameters['league'] = $this->league;
+      if ($this->division) {
+        $parameters['division'] = $this->division;
+      }
+    }
+
+    return parent::render($view, $parameters, $response);
+  }
 }
