@@ -3,6 +3,7 @@
 namespace Nsv\League\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Nsv\Util\TextSanitizer;
 
 #[ORM\Entity]
 #[ORM\Table(name: 'staffeln')]
@@ -22,6 +23,10 @@ class Division
 
     #[ORM\Column(name: "sortid")]
     private ?int $sortId;
+
+    public function path() {
+      return TextSanitizer::slug($this->name);
+    }
 
     public function __call($property, $args) {
       return $this->$property;

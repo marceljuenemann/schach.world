@@ -25,6 +25,16 @@ class League
     #[ORM\OrderBy(["name" => "ASC", "number" => "ASC"])]
     private $teams;
 
+    public function divisionByPath($path) {
+      foreach ($this->divisions as $division) {
+        if ($path === $division->path()) {
+          return $division;
+        }
+      }
+      // TODO: Guess we'd want a better exception here that we can actually catch.
+      throw new \Exception('Invalid division path');
+    }
+
     public function __call($property, $args) {
       return $this->$property;
     }

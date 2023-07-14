@@ -58,6 +58,8 @@ class LeagueController extends AbstractController {
       global $globals;
       require_once ( "modul.inc.php" );
 
+      // TODO: redirect to Symfony controller if appropriate.
+
       // Existiert es überhaupt?
       $modulpfad = "$globals[basedir]/_module/$globals[mod]/$globals[mod].php";
       if ( !file_exists ( $modulpfad ) ) {
