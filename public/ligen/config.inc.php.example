@@ -20,7 +20,7 @@
   ///////////////////////////////////////////////////////
 
   // Pfad zum Ergebnisdienst
-  $globals ['httppath']          = "http://localhost/ligen/";
+  $globals ['httppath']          = "https://localhost/ligen/";
 
   // Pfad zu den Icons
   $globals ['systemicons']          = "$globals[basedir]/_templates/systemicons/";

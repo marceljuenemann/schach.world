@@ -38,12 +38,12 @@
   //////////////////////////////////////////////////////////////////
 
   // Alle Daten da?
-  if ( !isset ( $_GET ['p'] ) )
+  if ( !isset ( $_GET ['pid'] ) )
     SED_Error ( "Der Link scheint fehlerhaft gewesen zu sein. Achten Sie darauf, dass Ihr eMail-Programm den Link nicht in der Mitte umgebrochen hat!", true );
 
   // Daten über Paarung und Staffelleiter abfragen
   global $g_paarung, $g_leiter, $g_m1, $g_m2, $g_edit;
-  $g_paarung = mysql_fetch_array ( mysql_query ( "SELECT *, erg1 IS NOT NULL as isset FROM paarungen WHERE id=$_GET[p]", $globals ['db'] ), MYSQL_ASSOC );
+  $g_paarung = mysql_fetch_array ( mysql_query ( "SELECT *, erg1 IS NOT NULL as isset FROM paarungen WHERE id=$_GET[pid]", $globals ['db'] ), MYSQL_ASSOC );
   $g_leiter = mysql_fetch_array ( mysql_query ( "SELECT b.id, b.name, b.telefon, b.email FROM staffeln INNER JOIN benutzer as b ON b.id=staffeln.leiter WHERE staffeln.id=$g_paarung[staffel] AND staffeln.turnier=$globals[tid]", $globals ['db'] ), MYSQL_ASSOC );
 
   // Daten über die Mannschaften abfragen
@@ -61,7 +61,7 @@
   $g_edit = array ();
   if ( $g_paarung ['isset'] )
   {
-    $result = mysql_query ( "SELECT brett, ergebnis1, ergebnis2, spieler1, spieler2 FROM spielerpaarungen WHERE paarung=$_GET[p] ORDER BY brett", $globals ['db'] );
+    $result = mysql_query ( "SELECT brett, ergebnis1, ergebnis2, spieler1, spieler2 FROM spielerpaarungen WHERE paarung=$_GET[pid] ORDER BY brett", $globals ['db'] );
     while ( $temp = mysql_fetch_array ( $result, MYSQL_ASSOC ) )
       $g_edit [$temp ['brett']] = $temp;
   }
@@ -83,7 +83,7 @@
     else
     {
         // Stimmte der Link?
-        if ( $_GET ['auth'] != SED_MD5_PID ( $_GET ['p'] ) )
+        if ( $_GET ['auth'] != SED_MD5_PID ( $_GET ['pid'] ) )
             SED_Error ( "Sie haben keine Berechtigung!", true );
 
         // Kann die Paarung noch bearbeitet werden?
@@ -104,7 +104,7 @@
       ////////////////////////////////////////////////////////////////
 
       if ( $g_paarung ['isset'] )
-        if ( !mysql_query ( "DELETE FROM spielerpaarungen WHERE paarung=$_GET[p]", $globals ['db'] ) )
+        if ( !mysql_query ( "DELETE FROM spielerpaarungen WHERE paarung=$_GET[pid]", $globals ['db'] ) )
           SED_Error ( "Fehler beim L&ouml;schen der alten Spielerpaarungen.", true );
 
 
@@ -114,7 +114,7 @@
 
       $bemerkung = htmlspecialchars ( $_POST ['bemerkungen'], ENT_COMPAT | ENT_HTML401 , 'ISO-8859-1');
       $bemerkung = ( $bemerkung == "" ? "NULL" : "'$bemerkung'" );
-      if ( !mysql_query ( "UPDATE paarungen SET erg1='$_POST[gesheim]', erg2='$_POST[gesgast]', bemerkung=$bemerkung, timestamp=NOW() WHERE id=$_GET[p]", $globals ['db'] ) )
+      if ( !mysql_query ( "UPDATE paarungen SET erg1='$_POST[gesheim]', erg2='$_POST[gesgast]', bemerkung=$bemerkung, timestamp=NOW() WHERE id=$_GET[pid]", $globals ['db'] ) )
         SED_Error ( "Fehler beim Speichern der Bemerkung und des Gesamtergebnisses!", true );
 
 
@@ -158,7 +158,7 @@
         // Spielerpaarung speichern
         $s1 = ( $_POST ["spiheim$i"][0] == "x" ? "NULL" : substr ( $_POST ["spiheim$i"], 1 ) );
         $s2 = ( $_POST ["spigast$i"][0] == "x" ? "NULL" : substr ( $_POST ["spigast$i"], 1 ) );
-        mysql_query ( "INSERT INTO spielerpaarungen (paarung,brett,spieler1,spieler2,ergebnis1,ergebnis2) VALUES ($_GET[p], $i, $s1, $s2, '".$_POST ["ergheim$i"]."', '".$_POST ["erggast$i"]."' )", $globals ['db'] );
+        mysql_query ( "INSERT INTO spielerpaarungen (paarung,brett,spieler1,spieler2,ergebnis1,ergebnis2) VALUES ($_GET[pid], $i, $s1, $s2, '".$_POST ["ergheim$i"]."', '".$_POST ["erggast$i"]."' )", $globals ['db'] );
       }
       SED_Cache::clearAll ( $g_paarung ["staffel"] );
       SED_Cache::clearTeam ( 0, SED_Cache::TEAM_SPIELPLAN );
@@ -170,7 +170,7 @@
 
         if ( !isset ( $_GET ['admin'] ) || ( isset ( $_POST ['checkbox_sende_bestaetigung'] ) && $_POST ['checkbox_sende_bestaetigung'] == 1 ) )
         {
-            SED_Bestaetigungsmail ( $g_paarung ['staffel'], $g_paarung ['runde'], $_GET ['p'], $g_m1, $g_m2, $g_paarung ['isset'] );
+            SED_Bestaetigungsmail ( $g_paarung ['staffel'], $g_paarung ['runde'], $_GET ['pid'], $g_m1, $g_m2, $g_paarung ['isset'] );
         }
 
       // Erfolgsmeldung

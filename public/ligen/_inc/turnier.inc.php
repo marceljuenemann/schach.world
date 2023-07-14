@@ -29,8 +29,8 @@
     $query = "SELECT t.* FROM mannschaften as m INNER JOIN staffeln as s ON s.id=m.staffel INNER JOIN turniere as t ON t.id=s.turnier WHERE m.id=$_GET[mannschaft]";
   elseif ( isset ( $_GET ['spieler'] ) )
     $query = "SELECT t.* FROM spieler as sp INNER JOIN mannschaften as m ON m.id=sp.mannschaft INNER JOIN staffeln as s ON s.id=m.staffel INNER JOIN turniere as t ON t.id=s.turnier WHERE sp.id=$_GET[spieler]";
-  elseif ( isset ( $_GET ['p'] ) )
-    $query = "SELECT t.* FROM paarungen as p INNER JOIN staffeln as s ON s.id=p.staffel INNER JOIN turniere as t ON t.id=s.turnier WHERE p.id=$_GET[p]";
+  elseif ( isset ( $_GET ['pid'] ) )
+    $query = "SELECT t.* FROM paarungen as p INNER JOIN staffeln as s ON s.id=p.staffel INNER JOIN turniere as t ON t.id=s.turnier WHERE p.id=$_GET[pid]";
   else
     SED_Error ( "Es konnte kein passendes Turnier gefunden werden!", true );
   global $prefs;  // available globally.
