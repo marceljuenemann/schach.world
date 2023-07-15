@@ -14,6 +14,9 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Table(name: 'paarungen')]
 class Pairing
 {
+    // A magic date we set as $customDate if the game is moved, but no date has been set. 
+    const UNKNOWN_DATE = '2020-12-24';
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
@@ -68,19 +71,12 @@ class Pairing
     #[ORM\Column(name: 'festgelegt')]
     private bool $locked;
 
-    public function formattedResult1(): string {
-      // TODO: don't depend on legacy code.
-      return SED_Ergebnis($this->result1);
+    public function wasMoved(): bool {
+      return (bool) $this->customDate;
     }
 
-    public function formattedResult2(): string {
-      // TODO: don't depend on legacy code.
-      return SED_Ergebnis($this->result2);
-    }
-
-    public function formattedResult(): string {
-      if ($this->result1 === null) return '';
-      return $this->formattedResult1() . ' : ' . $this->formattedResult2();
+    public function moveDate(): string|null {
+      return $this->wasMoved() && $this->customDate != self::UNKNOWN_DATE ? $this->customDate : null;
     }
 
     public function __call($property, $args) {

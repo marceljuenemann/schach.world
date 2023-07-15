@@ -37,21 +37,6 @@ class Division
       return TextSanitizer::slug($this->name);
     }
 
-    // TODO: this deserves as unit test.
-    public function matchDays(): array {
-      $dates = $this->dates();
-      $matchDays = [];
-      foreach ($this->pairings as $pairing) {
-        $matchDays[$pairing->round][] = $pairing;
-      }
-      foreach ($matchDays as $round => $pairings) {
-        $date = isset($dates[$round]) ? $dates[$round] : null;
-        $matchDays[$round] = new MatchDay($this, $round, $pairings, $date);
-      }
-      usort($matchDays, [MatchDay::class, 'compare']);
-      return $matchDays;
-    }
-
     /**
      * Returns all Date entities for this division, keyed by round number.
      */

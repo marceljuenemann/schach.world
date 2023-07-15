@@ -23,6 +23,8 @@ services:
         resource: '../src/WebApp/Repository/'
 
     # League Manager services
+    Nsv\League\Api\Service\:
+        resource: '../src/League/Api/Service/'
     Nsv\League\Controller\:
         resource: '../src/League/Controller/'
     Nsv\League\Core\:

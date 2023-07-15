@@ -32,6 +32,7 @@ class LegacyController extends AbstractLeagueController {
       require_once ( $modulpfad );
     } catch (\Exception $e) {
       // Report the error.
+      // TODO: move this task to the logger.
       if (!Auth::isAdmin()) {
         global $globals;
         @wp_mail($globals['webmaster_mail'], 'LeagueController Exception', $request->getUri() . "\n\n".$e);
