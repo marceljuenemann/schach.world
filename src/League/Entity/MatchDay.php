@@ -20,6 +20,10 @@ class MatchDay
     return date('d.m.Y', strtotime($this->date)); 
   }
 
+  public function linkUri() {
+    return $this->division->league->linkUri() . "?staffel={$this->division->id}&r={$this->round}";
+  }
+
   public static function compare(MatchDay $a, MatchDay $b) {
     if ($a->date == $b->date) return $a->round - $b->round;
     if ($a->date === null) return 1;

@@ -2,8 +2,6 @@
 {% set title = division.name %}
 
 {# TODO: head title #}
-{# TODO: fix sidebar links #}
-{# TODO: fix asset paths #}
 
 
 {% block content %}
@@ -13,23 +11,18 @@
 <table class="sed_normal" cellspacing="0" cellpadding="2">
   {% for matchDay in division.matchDays() %}
     <tr><td colspan="5" style="padding-top: 20px">
-      <h4>{{matchDay.round}}. Spieltag - {{matchDay.formattedDate}}</h4>
+      <h4><a href="{{matchDay.linkUri}}">{{matchDay.round}}. Spieltag &ndash; {{matchDay.formattedDate}}</a></h4>
     </td></tr>
 
     {# TODO: link #}
     {% for pairing in matchDay.pairings %}
       <tr>
-        {# TODO: link automatically #}
         <td>{{ nsv_link(pairing.team1) }}</td>
-        <td>-</td>
+        <td>&ndash;</td>
         <td>{{ nsv_link(pairing.team2) }}</td>
         <td>&nbsp;{{pairing.formattedResult}}</td>
       </tr>
     {% endfor %}
-
-    <tr><td colspan="5" style="">
-      {{ nsv_link('/test', 'Zum Spieltag') }}
-    </td></tr>
   {% endfor %}
 </table>
 <!--
