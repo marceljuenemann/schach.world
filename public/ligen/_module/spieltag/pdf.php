@@ -14,6 +14,7 @@
     require_once ( "extern/fpdf.html.php" );
 
     // Daten laden
+    global $globals, $prefs, $bgcolors;
     $data = array ();
     if ( !Spieltag ( $globals ['tid'], $_GET ['staffel'], $_GET ['r'], $data ) )
         SED_Error ( "Fehler beim Laden der Spieltag-Daten.", true );

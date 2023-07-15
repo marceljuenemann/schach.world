@@ -20,6 +20,7 @@ add_filter('template_include', function($template) {
   ];
   foreach ($prefixes as $prefix) {
     if (str_starts_with($wp->request, $prefix)) {
+      http_response_code(200);  // WordPress might have set to 404 already.
       return locate_template('symfony.php');
     }
   }

@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Controller;
 
+use Nsv\Util\TextSanitizer;
 use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -53,9 +54,7 @@ class LegacyController extends AbstractLeagueController {
     }
     $body = ob_get_clean();
     $response = new Response($body);
-    if (!isset($_GET['ausgabe']) || strtolower($_GET['ausgabe']) != 'pdf') {
-      $response->setCharset(TextSanitizer::CHARSET);
-    }
+    $response->setCharset(TextSanitizer::CHARSET);
     return $response;
   }
 }

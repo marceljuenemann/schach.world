@@ -81,10 +81,7 @@ class AbstractLeagueController extends AbstractController {
     }
 
     $response = parent::render($view, $parameters, $response);
-    // TODO: Find a better way.
-    if (!isset($_GET['ausgabe']) || strtolower($_GET['ausgabe']) != 'pdf') {
-      $response->setCharset(TextSanitizer::CHARSET);
-    }
+    $response->setCharset(TextSanitizer::CHARSET);
     return $response;
   }
 }
