@@ -39,23 +39,15 @@ class Division
 
     // TODO: this deserves as unit test.
     public function matchDays(): array {
-      // Group pairings by round.
+      $dates = $this->dates();
       $matchDays = [];
       foreach ($this->pairings as $pairing) {
         $matchDays[$pairing->round][] = $pairing;
       }
-      // Create MatchDay objects.
       foreach ($matchDays as $round => $pairings) {
-        $matchDays[$round] = new MatchDay($this, $round, $pairings);
+        $date = isset($dates[$round]) ? $dates[$round] : null;
+        $matchDays[$round] = new MatchDay($this, $round, $pairings, $date);
       }
-      // Add Dates.
-      foreach ($this->dates() as $round => $date) {
-        if (!isset($matchDays[$round])) {
-          $matchDays[$round] = new MatchDay($this, $round, []);
-        }
-        $matchDays[$round]->date = $date;
-      }
-      // Sort by date and round.
       usort($matchDays, [MatchDay::class, 'compare']);
       return $matchDays;
     }

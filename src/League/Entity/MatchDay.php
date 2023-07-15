@@ -7,12 +7,11 @@ namespace Nsv\League\Entity;
  */
 class MatchDay
 {
-  public ?string $date = null;
-
   function __construct(
     public readonly Division $division,
     public readonly int $round,
-    public readonly array $pairings
+    public readonly array $pairings,
+    public readonly ?string $date
   ) {}
 
   // TODO: Outsource into a Twig function.
