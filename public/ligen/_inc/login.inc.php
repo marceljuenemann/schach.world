@@ -140,7 +140,7 @@
       array ( "zusaspbe", 2, "t", false, "Spielberechtigungen", "Spielberechtigungen", "Diese Funktionen zeigt Spieler an, bei denen das System nicht feststellen konnte, ob Sie eine Spielberechtigung besitzen." ),
       array ( "zusaheft", 2, "t", false, "Saisonheft", "Saisonheft-Assistent", "Dieser Assistent hilft Ihnen bei der Erstellung eines Saisonheftes mit allen Aufstellungen und Spielplänen" ),
       array ( "zusadwza", 2, "t", false, "DWZ-Auswertung", "DWZ-Auswertung", "Diese Funktion erstellt die Dateien, die der Wertungsreferent benötigt" ),
-      array ( "zusaadmi", 2, "t", false, "Admin-Funktionen", "Admin-Funktionen", "Diese Funktionen stehen nur dem Webmaster zur Verfügung" ),
+      array ( "dummy", 2, "t", false, "", "", "" ),
 
       // Meine Staffel
       array ( "stafbeme", 4, "st", true, "Bemerkungen", "Spieltag-Bemerkungen", "Hier können Sie zu jedem Spieltag Anmerkungen schreiben" ),

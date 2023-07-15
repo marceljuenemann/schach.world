@@ -18,10 +18,3 @@
   foreach ( $globals ['staffeln'] as $k => $v )
     echo "<a href='?m=export&format=swi&staffel=$k'>$v</a><br />";
 ?>
-
-<h2>MLF-Format</h2>
-<a href='?m=export&format=mlf&zip=true'>Alle Staffeln als .zip</a><br />
-<?
-  foreach ( $globals ['staffeln'] as $k => $v )
-    echo "<a href='?m=export&format=mlf&staffel=$k'>$v</a><br />";
-?>
