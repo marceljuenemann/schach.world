@@ -47,15 +47,6 @@
     if ( $prefs ['anmTLMail'] && !$isTurnierleiter )
     {
         // eMail vorbereiten
-        /**
-        require_once ( "mail.inc.php" );
-        $mail = new SED_Mail ( "" );
-        $mail->Subject = "Neue Mannschaftsmeldung: ".$anmeldung->get("name");
-        $mail->Body = $confirm;
-        
-        // Mail an Turnierleiter senden
-        $mail->Send ( SED_Mail::MAIL_TURNIERLEITER );
-        */
         require_once ( "mail2.inc.php" );
         $mail = SED_CreateMailer();
         $mail->Subject = "Neue Mannschaftsmeldung: ".$anmeldung->get("name");
