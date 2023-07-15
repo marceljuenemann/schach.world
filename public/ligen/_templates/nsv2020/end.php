@@ -117,52 +117,13 @@ if (count($links)) {
   echo "</div></div>";
 }
 
-
-// NEWSLETTER
-if ( !$prefs ['sysKeinNewsletter'] ) {
-  echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
-  echo "<h5 class='card-title'>Newsletter</h5>";
-  ?>
-    <form action="?m=newsletter" method="post"><div>
-      <div class="form-group"><select class="form-control form-control-sm" name="staffel">
-        <?
-          echo "<option value='1'>--- Staffel ---</option>";
-          foreach ( $globals ['staffeln'] as $id=>$name )
-            echo "<option value='$id'>$name</option>";
-        ?>
-      </select></div>
-      <div class="form-group">
-        <input type="text" name="email" placeholder="Email" onfocus="this.value = '';" class="form-control form-control-sm" />
-      </div>
-      <input type="submit" name="newsletter_register" value="Registrieren" class="btn btn-sm btn-primary" />
-    </div></form>
-  <?php
-  echo "</div></div>";
-}
-  
-
-  
-// TURNIERLEITER
-if (isset($prefs['organisation']) && $prefs['organisation'] == "frl"): ?>
-  <div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>
-    <h5 class='card-title'>Turnierleitung</h5>
-    <b>Hannelore Neumeyer</b><br />
-    Lerchengrund 9<br />
-    04158 Leipzig<br /> 
-    <?= SED_Email("Neumeyer-Leipzig@gmx.de") ?><br />
-    Tel.: 0341 / 33209902<br />
-    <br />Diese Seite wird im Auftrag der Frauenkommission des Deutschen Schachbundes gef&uuml;hrt.
-  </div></div>
-<?php
-endif;
-
     
   
 // LOGIN
 echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
 echo "<h5 class='card-title'>Staffelleiter</h5>";
 ?>
-  <form action="?admin=login" method="post"><div>
+  <form action="<?=$globals['basepath']?>/?admin=login" method="post"><div>
     <div class="form-group"><select class="form-control form-control-sm" name="benutzer">
       <?
         $benutzer = isset ( $_GET ['staffel'] ) ? $_GET ['staffel'] : ""; // nur über tinyurl möglich
