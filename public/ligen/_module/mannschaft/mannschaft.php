@@ -35,11 +35,7 @@
 
     // Ausgabe der allgemeinen Informationen
     echo "<span class='sed_hl1'>".$globals ['teams'][$_GET ['mannschaft']]."</span><br /><br />";
-    if (SED_IsNSV2020()) {
-      echo "<div class='row'><div class='col-12 col-md-5'>";
-    } else {
-      echo "<table cellspacing='0' cellpadding='0'><tr><td style='padding-right: 15px; width:45%; vertical-align: top;'>";
-    }
+    echo "<div class='row'><div class='col-12 col-md-5'>";
         
     echo "  <span class='sed_hl2'>Informationen</span><br /><br />
             $staffel
@@ -66,12 +62,7 @@
       echo "<br />Email: $email";
     }
     echo "<br />";
-
-    if (SED_IsNSV2020()) {
-      echo "<br></div><div class='col-12 col-md-7'>";
-    } else {
-      echo "</td><td style='vertical-align: top; width:50%;'>";
-    }
+    echo "<br></div><div class='col-12 col-md-7'>";
 
     // Ausgabe Ergebnisse
     if ( $spielplan = $team->getSpielplan () )
@@ -89,25 +80,19 @@
         echo "</table>";
     }
 
-    if (SED_IsNSV2020()) {
-      echo "</div></div>";
-    } else {
-      echo "</td></tr></table>";
-    }
+    echo "</div></div>";
 
     // Tabellenkopf der Aufstellung ausgeben
     $staffel = $team->get("staffel");
     $rundenzahl = $staffel ? SED_GetLetzteRunde ( $staffel ) : $prefs['runden'];
     echo "<br /><span class='sed_hl2'>Aufstellung</span>";
     echo "<div class='overflow-auto'>";
-    if (SED_IsNsv2020()) {
-      ?>
-        <div class="custom-control custom-switch d-sm-none mb-1">
-          <input type="checkbox" class="custom-control-input" id="ergSwitch" onclick="$(this).parent().parent().toggleClass('nsv-details-show')">
-          <label class="custom-control-label" for="ergSwitch">Einzelergebnisse anzeigen</label>
-        </div>
-      <?
-    }
+    ?>
+      <div class="custom-control custom-switch d-sm-none mb-1">
+        <input type="checkbox" class="custom-control-input" id="ergSwitch" onclick="$(this).parent().parent().toggleClass('nsv-details-show')">
+        <label class="custom-control-label" for="ergSwitch">Einzelergebnisse anzeigen</label>
+      </div>
+    <?
 
     echo "<table cellspacing='0' cellpadding='3' class='sed_tabelle'>";
     echo "<tr><th style='border-bottom-width: 2px;'>Nr.</th><th style='border-bottom-width: 2px;'>Name</th><th style='border-bottom-width: 2px; border-right-width: 2px;'>DWZ</th>";

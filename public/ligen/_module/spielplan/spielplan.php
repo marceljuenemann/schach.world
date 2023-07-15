@@ -1,4 +1,6 @@
 <?
+// DEPRECATED - This module was moved to Symfony and this file will be deleted soon.
+
 /* Spielplan
  *
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann

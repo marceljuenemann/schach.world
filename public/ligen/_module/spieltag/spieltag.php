@@ -147,11 +147,7 @@
     echo "<br />";
     echo "</div>";
 
-    if (SED_IsNsv2020()) {
-      require_once("$globals[basedir]/_module/spieltag/paarungen-nsv2020.php");
-    } else {
-      require_once("$globals[basedir]/_module/spieltag/paarungen-legacy.php");
-    }
+    require_once("$globals[basedir]/_module/spieltag/paarungen-nsv2020.php");
 
     /////////////////////////////////
     // Tabelle
@@ -217,7 +213,7 @@
 
         // Ende
         echo '</table>';
-        if ($kreuztabelle && SED_IsNsv2020()) {
+        if ($kreuztabelle) {
           ?>
             <div class="custom-control custom-switch d-sm-none mt-1 mb-2">
               <input type="checkbox" class="custom-control-input" id="kreuztabelleSwitch" onclick="$(this).parent().parent().toggleClass('nsv-details-show')">

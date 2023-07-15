@@ -122,43 +122,5 @@
 
 
   echo "</td><td class='r'>";
-  if (!SED_IsNsv2020()) {
-  ?>
-    <span class="sed_hl2">Staffelleiter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br /><br />
-      <form style='margin: 0px; margin-top: 5px; text-align: center;' action="?admin=login" method="post"><div>
-        <select style='font-family: Tahoma, Verdana; font-size: 10pt; margin-bottom: 6px; width: 85%;' name="benutzer">
-          <?
-            $benutzer = isset ( $_GET ['staffel'] ) ? $_GET ['staffel'] : ""; // nur über tinyurl möglich
-            echo "<option value='t-$globals[tid]'>--- Benutzer ---</option>";
-            foreach ( $globals ['staffeln'] as $id=>$name ){
-                $selected = $benutzer == $id ? "selected='selected'" : "";
-                echo "<option value='s-$id' $selected>$name</option>";
-            }
-            echo "<option value='t-$globals[tid]'>Turnierleiter</option>";
-          ?>
-        </select><br />
-        <input type="password" name="passwort" style="font-family: Tahoma, Verdana; font-size: 10pt; margin-bottom: 5px; padding-left: 2px; padding-right: 2px; width: 80%;" /><br />
-        <input type="submit" value="Einloggen" class="sed_submit" />
-      </div></form>
-
-    <? if ( !$prefs ['sysKeinNewsletter'] ) { ?>
-      <br /><br />
-      <span class="sed_hl2">Newsletter</span><br /><br />
-        Tragen Sie sich in dieses Formular ein, um alle Rundschreiben f&uuml;r eine bestimmte Staffel per Email zu erhalten.<br /><br />
-        <form style='margin: 0px; margin-top: 5px; text-align: center;' action="?m=newsletter" method="post"><div>
-          <select style='font-family: Tahoma, Verdana; font-size: 10pt; margin-bottom: 6px; width: 85%;' name="staffel">
-            <?
-              echo "<option value='1'>--- Staffel ---</option>";
-              foreach ( $globals ['staffeln'] as $id=>$name )
-                echo "<option value='$id'>$name</option>";
-            ?>
-          </select><br />
-          <input type="text" name="email" value="Email" onfocus="this.value = '';" style="font-family: Tahoma, Verdana; font-size: 10pt; margin-bottom: 5px; padding-left: 2px; padding-right: 2px; width: 80%;" /><br />
-          <input type="submit" name="newsletter_register" value="Registrieren" class="sed_submit" />
-        </div></form>
-    <? } ?>
-  <?
-  }
-
   echo "</td></tr></table>";
 ?>

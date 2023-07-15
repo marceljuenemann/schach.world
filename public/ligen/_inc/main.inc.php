@@ -120,20 +120,7 @@
             $path .= "$k=$v&";
     return $path;
   }
-
-
-  function SED_IsNsv2020 ()
-  {
-      return true; // woo-hoo!
-      /*
-      global $prefs;
-      if ( isset ( $prefs ['directory'] ) && $prefs ['directory'] == 'sjbh-1011' ) return true;
-      if ( isset ( $prefs ['template'] ) && $prefs ['template'] == 'optimus' ) return true;
-      if ( isset ( $prefs ['template'] ) && $prefs ['template'] != 'nsv' ) return false;
-      return true;
-      */
-  }
-
+  
   /**
    * Converts from UTF-8 to the application charset.
    */
