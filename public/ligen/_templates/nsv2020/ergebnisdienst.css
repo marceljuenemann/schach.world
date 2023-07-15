@@ -82,6 +82,10 @@ table.sed_normal a, table.sed_normal a:visited, table.sed_normal a:active {
   text-decoration: none;
 }
 
+table.sed_normal td {
+  text-wrap: nowrap;
+}
+
 /* ********** */
 
 table.sed_tabelle {
