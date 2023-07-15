@@ -1,5 +1,5 @@
 {% extends '@league/legacy-layout.html.twig' %}
-{% set title = "Spielplan " ~ division.name %}
+{% set title = division.name %}
 
 {# TODO: head title #}
 {# TODO: fix sidebar links #}
@@ -7,28 +7,34 @@
 
 
 {% block content %}
-Hello template world! J&uuml;nemann
+{# TODO: Verlegung #}
+{# TODO: Ausrichter #}
 
-<pre>
-  Turnier: {{ league.name }}
-
-  Staffel: {{ division.name }}
-
-<ul>
+<table class="sed_normal" cellspacing="0" cellpadding="2">
   {% for matchDay in division.matchDays() %}
-    Next matchDay: {{ matchDay.round }} {{ matchDay.formattedDate }}
+    <tr><td colspan="5" style="padding-top: 20px">
+      <h4>{{matchDay.round}}. Spieltag - {{matchDay.formattedDate}}</h4>
+    </td></tr>
+
+    {# TODO: link #}
     {% for pairing in matchDay.pairings %}
-      <li>
-        {{ pairing.team1.name }}
-        {{ pairing.team2.name }}
-        {{ pairing.result1 }}
-        {{ pairing.result2 }}
-      </li>
+      <tr>
+        {# TODO: link automatically #}
+        <td>{{ nsv_link(pairing.team1) }}</td>
+        <td>-</td>
+        <td>{{ nsv_link(pairing.team2) }}</td>
+        <td>&nbsp;{{pairing.formattedResult}}</td>
+      </tr>
     {% endfor %}
+
+    <tr><td colspan="5" style="">
+      {{ nsv_link('/test', 'Zum Spieltag') }}
+    </td></tr>
   {% endfor %}
-</ul>
-
-</pre>
-
+</table>
+<!--
+<td class="c">&nbsp;1½:1½</td><td></td></tr>
+<tr><td colspan="5">&nbsp;</td></tr>
+-->
 
 {% endblock %}

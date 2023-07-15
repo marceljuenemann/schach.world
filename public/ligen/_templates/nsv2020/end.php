@@ -8,7 +8,7 @@
 echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
 echo "<h5 class='card-title'>Aufstellungen</h5>";
 ?>
-  <form class="form" method="get">
+  <form class="form" method="get" action="<?= $globals['basepath'] ?>/">
     <select name="mannschaft" onchange="this.form.submit()" class="form-control form-control-sm">
       <option value="" selected="selected">--- Mannschaft ---</option>
       <?
@@ -25,10 +25,10 @@ echo "</div></div>";
 echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
 echo "<h5 class='card-title'>Staffeln</h5>";
 $style = ( isset ( $globals ['mod'] ) && $globals ['mod'] == "startseite_html" ) ? "font-weight: bold;" : "";
-echo "<a href='?' style='$style'>&Uuml;bersicht</a><br>";
+echo "<a href='$globals[basepath]/?' style='$style'>&Uuml;bersicht</a><br>";
 foreach ( $globals ['staffeln'] as $id=>$name ) {
   $style = ( isset ( $_GET ['staffel'] ) && $_GET ['staffel'] == $id ) ? "font-weight: bold;" : "";
-  echo "<a href='?staffel=$id&r=' style='$style'>$name</a><br>";
+  echo "<a href='$globals[basepath]/?staffel=$id&r=' style='$style'>$name</a><br>";
 }
 echo "</div></div>";
 
@@ -49,7 +49,7 @@ if ( count ( $globals ['staffeln'] ) )
 {
   echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
   echo "<h5 class='card-title'>Spieltag-Auswahl</h5>";
-  echo "<form class='form' method='get'><div>";
+  echo "<form class='form' method='get' action='$globals[basepath]/'><div>";
 
   // Staffelauswahl
   if ( count ( $globals ['staffeln'] ) == 1 )

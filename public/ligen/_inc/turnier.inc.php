@@ -48,18 +48,10 @@
   $globals ['tid'] = $prefs ['id'];
 
   // Template berechnen
-  // TODO: Simplify / cleanup.
-  if ( !isset ( $globals ['templatedir'] ) )
-  {
-      $template = "nsv";
-      if ( isset ( $prefs ['template'] ) ) {
-          $template = $prefs ['template'];
-      }
-      if ( SED_IsNsv2020() ) {
-          $template = 'nsv2020';
-      }
-      $globals ['templatedir'] = "$globals[basedir]/_templates/$template";
-  }
+  $globals ['templatedir'] = "$globals[basedir]/_templates/nsv2020";
+
+  // Neu: basepath bei allen Links mit ausgeben.
+  $globals ['basepath'] = "/ligen/$prefs[directory]";
 
   // Staffeln
   $globals ['staffeln'] = array ();

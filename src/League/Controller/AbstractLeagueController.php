@@ -4,6 +4,7 @@ namespace Nsv\League\Controller;
 
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
+use Nsv\Util\TextSanitizer;
 use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -80,7 +81,10 @@ class AbstractLeagueController extends AbstractController {
     }
 
     $response = parent::render($view, $parameters, $response);
-    $response->setCharset('iso-8859-1');
+    // TODO: Find a better way.
+    if (!isset($_GET['ausgabe']) || strtolower($_GET['ausgabe']) != 'pdf') {
+      $response->setCharset(TextSanitizer::CHARSET);
+    }
     return $response;
   }
 }

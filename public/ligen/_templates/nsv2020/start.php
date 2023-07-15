@@ -11,8 +11,8 @@ function nsv2020_url() {
 function nsv2020_head() {
   global $globals, $prefs;
   echo "<script src='" . nsv2020_url() . "/vendor/jquery-3.3.1.slim.min.js'></script>";
-  echo "<link rel='Stylesheet' href='$globals[templatedir]/ergebnisdienst.css'>";
-  echo "<script src='$globals[templatedir]/ergebnisdienst.js'></script>";
+  echo "<link rel='Stylesheet' href='$globals[templateuri]/ergebnisdienst.css'>";
+  echo "<script src='$globals[templateuri]/ergebnisdienst.js'></script>";
   echo "<title>$prefs[name]</title>";
   if (isset($globals['premod_headtag'])) {
     echo $globals ['premod_headtag'];

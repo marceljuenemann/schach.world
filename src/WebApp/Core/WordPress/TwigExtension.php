@@ -22,6 +22,7 @@ class TwigExtension extends AbstractExtension {
     ];
   }
 
+  // TODO: Use TwigUtils.
   private function allowFunction($name) {
     return new TwigFunction($name, function() use ($name) {
       ob_start();

@@ -3,10 +3,11 @@
 namespace Nsv\League\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Nsv\WebApp\Core\Linkable;
 
 #[ORM\Entity]
 #[ORM\Table(name: 'mannschaften')]
-class Team
+class Team implements Linkable
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -29,6 +30,14 @@ class Team
 
     public function nameWithNumber() {
       return trim(trim($this->name) . ' ' . ($this->number > 1 ? $this->number : ''));
+    }
+
+    public function linkUri() {
+      return $this->league->linkUri() . "?mannschaft=" . $this->id;
+    }
+
+    public function linkTitle() {
+      return $this->nameWithNumber();
     }
 
     public function __call($property, $args) {

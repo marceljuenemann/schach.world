@@ -15,12 +15,12 @@ services:
     # this creates a service per class whose id is the fully-qualified class name
     Nsv\WebApp\Controller\:
         resource: '../src/WebApp/Controller/'
-
-    Nsv\WebApp\Repository\:
-        resource: '../src/WebApp/Repository/'
-
+    Nsv\WebApp\Core\:
+        resource: '../src/WebApp/Core/'
     Nsv\WebApp\Core\WordPress\:
         resource: '../src/WebApp/Core/WordPress/'
+    Nsv\WebApp\Repository\:
+        resource: '../src/WebApp/Repository/'
 
     # League Manager services
     Nsv\League\Controller\:

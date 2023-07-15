@@ -68,6 +68,21 @@ class Pairing
     #[ORM\Column(name: 'festgelegt')]
     private bool $locked;
 
+    public function formattedResult1(): string {
+      // TODO: don't depend on legacy code.
+      return SED_Ergebnis($this->result1);
+    }
+
+    public function formattedResult2(): string {
+      // TODO: don't depend on legacy code.
+      return SED_Ergebnis($this->result2);
+    }
+
+    public function formattedResult(): string {
+      if ($this->result1 === null) return '';
+      return $this->formattedResult1() . ' : ' . $this->formattedResult2();
+    }
+
     public function __call($property, $args) {
       return $this->$property;
     }

@@ -16,17 +16,8 @@
   global $globals, $prefs;
 
     // Template berechnen
-    if ( !isset ( $globals ['templatedir'] ) )
-    {
-        $template = "nsv";
-        if ( isset ( $prefs ['template'] ) ) {
-            $template = $prefs ['template'];
-        }
-        if ( SED_IsNsv2020() ) {
-            $template = 'nsv2020';
-        }
-        $globals ['templatedir'] = "$globals[basedir]/_templates/$template";
-    }
+    $globals ['templatedir'] = "$globals[basedir]/_templates/nsv2020";
+    $globals ['templateuri'] = "/ligen/_templates/nsv2020";
 
     // Seitenheader ausgeben
     require_once ( "$globals[templatedir]/start.php" );

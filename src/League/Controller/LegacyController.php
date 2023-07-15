@@ -53,7 +53,9 @@ class LegacyController extends AbstractLeagueController {
     }
     $body = ob_get_clean();
     $response = new Response($body);
-    $response->setCharset('iso-8859-1');
+    if (!isset($_GET['ausgabe']) || strtolower($_GET['ausgabe']) != 'pdf') {
+      $response->setCharset(TextSanitizer::CHARSET);
+    }
     return $response;
   }
 }

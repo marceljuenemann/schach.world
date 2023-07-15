@@ -45,6 +45,10 @@ class League
       throw new \Exception('Invalid division path');
     }
 
+    public function linkUri() {
+      return "/ligen/{$this->path}/";
+    }
+
     public function __call($property, $args) {
       return $this->$property;
     }
