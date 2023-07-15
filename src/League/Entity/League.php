@@ -5,6 +5,9 @@ namespace Nsv\League\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Nsv\League\Repository\LeagueRepository;
 
+/**
+ * A league runs for one season and consists of one or more divisions.
+ */
 #[ORM\Entity(repositoryClass: LeagueRepository::class)]
 #[ORM\Table(name: 'turniere')]
 class League
@@ -27,6 +30,10 @@ class League
     #[ORM\OneToMany(targetEntity: Team::class, mappedBy: 'league')]
     #[ORM\OrderBy(["name" => "ASC", "number" => "ASC"])]
     private $teams;
+
+    #[ORM\OneToMany(targetEntity: Date::class, mappedBy: 'league')]
+    #[ORM\OrderBy(["division" => "DESC"])]
+    private $dates;
 
     public function divisionByPath($path) {
       foreach ($this->divisions as $division) {

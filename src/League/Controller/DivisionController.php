@@ -2,7 +2,6 @@
 
 namespace Nsv\League\Controller;
 
-use Nsv\League\Repository\LeagueRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 

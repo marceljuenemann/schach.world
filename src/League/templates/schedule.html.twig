@@ -1,5 +1,10 @@
 {% extends '@league/legacy-layout.html.twig' %}
-{% set title = "Spielplan" %}
+{% set title = "Spielplan " ~ division.name %}
+
+{# TODO: head title #}
+{# TODO: fix sidebar links #}
+{# TODO: fix asset paths #}
+
 
 {% block content %}
 Hello template world! J&uuml;nemann
@@ -8,6 +13,22 @@ Hello template world! J&uuml;nemann
   Turnier: {{ league.name }}
 
   Staffel: {{ division.name }}
+
+<ul>
+  {% for matchDay in division.matchDays() %}
+    Next matchDay: {{ matchDay.round }} {{ matchDay.formattedDate }}
+    {% for pairing in matchDay.pairings %}
+      <li>
+        {{ pairing.team1.name }}
+        {{ pairing.team2.name }}
+        {{ pairing.result1 }}
+        {{ pairing.result2 }}
+      </li>
+    {% endfor %}
+  {% endfor %}
+</ul>
+
 </pre>
+
 
 {% endblock %}
