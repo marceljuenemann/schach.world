@@ -6,6 +6,7 @@ use Nsv\League\Controller\AbstractLeagueController;
 use Nsv\League\Repository\LeagueRepository;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpKernel\KernelEvents;
 
 /**
@@ -26,8 +27,7 @@ class ControllerInterceptor implements EventSubscriberInterface
         $leagueName = $event->getRequest()->attributes->get('league');
         $league = $this->leagueRepository->findByPath($leagueName);
         if (!$league) {
-          // TODO: Make this lead to a 404
-          throw new \Exception("No tournament with given path found");
+          throw new NotFoundHttpException("League not found");
         }
         $controller->league = $league;
       }

@@ -7,6 +7,7 @@ use Nsv\Util\TextSanitizer;
 use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -69,7 +70,7 @@ class LegacyController extends AbstractLeagueController {
     switch ($module) {
       case 'spielplan':
         $division = $this->divisionRepository->find((int) $_GET['staffel']);
-        if (!$division) throw new \Exception('No division found');
+        if (!$division) throw new NotFoundHttpException('Division not found');
         return $this->redirectToRoute('league_schedule', [
           'division' => $division->path(),
           'league' => $division->league->path

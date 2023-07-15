@@ -4,6 +4,7 @@ namespace Nsv\League\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Nsv\League\Repository\LeagueRepository;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
  * A league runs for one season and consists of one or more divisions.
@@ -35,18 +36,20 @@ class League
     #[ORM\OrderBy(["division" => "DESC"])]
     private $dates;
 
+    public function linkUri() {
+      return "/ligen/{$this->path}/";
+    }
+    
+    /**
+     * @throws NotFoundHttpException
+     */
     public function divisionByPath($path) {
       foreach ($this->divisions as $division) {
         if ($path === $division->path()) {
           return $division;
         }
       }
-      // TODO: Guess we'd want a better exception here that we can actually catch.
-      throw new \Exception('Invalid division path');
-    }
-
-    public function linkUri() {
-      return "/ligen/{$this->path}/";
+      throw new NotFoundHttpException('Division not found');
     }
 
     public function __call($property, $args) {
