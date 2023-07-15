@@ -98,7 +98,7 @@
   //////////////////////////////////////////////////////////////////
 
     // Vorbereitungen für Spielverlegung
-    $verlegung = $g_paarung ['termin'] || '';
+    $verlegung = $g_paarung ['termin'] ?: '';
     $tmp = explode ( "-", $verlegung ); // YYYY-MM-DD
     $verlegung_aktiv =  count ( $tmp ) == 3;
     $verlegung_aktiv_checked = $verlegung_aktiv ? "checked='checked'" : "";
@@ -106,6 +106,7 @@
     $verlegung_unbekannt_checked = ($verlegung_aktiv && $verlegung_unbekannt) ? "checked='checked'" : "";
     $verlegung_bekannt_checked = !$verlegung_unbekannt ? "checked='checked'" : "";
     $verlegung_datum = ($verlegung_unbekannt || !$verlegung_aktiv) ? "TT.MM.JJJJ" : "$tmp[2].$tmp[1].$tmp[0]";
+
 
     // Vorbereitungen für Ausrichter
     $xwai = "";
