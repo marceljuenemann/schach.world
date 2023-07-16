@@ -6,16 +6,16 @@ use Nsv\League\Api\Service\PlayerService;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+// TODO: Maybe just merge with DivisionController into MainController?
+// Or FrontendController? Or PublicController? Not much logic in here anyways.
 #[Route('/ligen/{league}/', name: 'league_')]
 class TeamController extends AbstractLeagueController {
 
-  /*
-  #[Route('spielplan/', name: 'schedule')]
-  public function schedule(ScheduleService $service): Response {
-    $matchDays = $service->matchDays($this->division);
-    return $this->renderWithLegacySystem('schedule.html.twig', ['matchDays' => $matchDays]);
+  #[Route('s/{playerId}/', name: 'player')]
+  public function schedule(PlayerService $service, int $playerId): Response {
+    $player = $service->player($this->league, $playerId);
+    return $this->renderWithLegacySystem('player.html.twig', ['player' => $player]);
   }
-  */
 
   // TODO: consider moving to an API controller?
   #[Route('s/{playerId}/unstable-api/', name: 'player_api')]

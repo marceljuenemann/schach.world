@@ -22,16 +22,17 @@ class Team
     #[ORM\JoinColumn(name: "staffel", referencedColumnName: "id")]
     private $division;
 
-    #[ORM\Column(name: 'name', length: 20)]
-    private string $nameWithoutNumber;
+    #[ORM\Column(length: 20)]
+    private string $name;
 
     #[ORM\Column(name: 'mnr')]
     private int $number;
 
-    public function name() {
-      return trim(trim($this->nameWithoutNumber) . ' ' . ($this->number > 1 ? $this->number : ''));
+    public function nameWithNumber() {
+      return trim(trim($this->name) . ' ' . ($this->number > 1 ? $this->number : ''));
     }
 
+    // TODO: add linkName and use that from twig macro nsv.link.
     public function uri() {
       return $this->league->uri() . "?mannschaft=" . $this->id;
     }

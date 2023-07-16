@@ -13,7 +13,7 @@ class Team
   public static function fromEntity(Entity\Team $team) {
     $result = new Team();
     $result->id = $team->id;
-    $result->name = $team->name();
+    $result->name = $team->nameWithNumber();
     $result->uri = $team->uri();
     return $result;
   }

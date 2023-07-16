@@ -21,14 +21,14 @@ class AbstractLeagueController extends AbstractController {
    * 
    * This field is automatically set by the ControllerInterceptor if the path contains a `league` parameter. 
    */
-  public League $league;
+  public ?League $league = null;
 
   /**
    * The division for which the request should be executed.
    * 
    * This field is automatically set by the ControllerInterceptor if the path contains a `division` parameter. 
    */
-  public Division $division;
+  public ?Division $division = null;
 
   /**
    * Sets up the database connection and global variables of the legacy system without

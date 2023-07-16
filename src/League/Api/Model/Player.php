@@ -21,6 +21,7 @@ class Player
   public static function fromEntity(Entity\Player $player) {
     $result = new Player();
     $result->id = $player->id;
+    $result->name = "Hello!";
     $result->lastName = $player->lastName;
     $result->firstName = $player->firstName;
     $result->title = $player->title;

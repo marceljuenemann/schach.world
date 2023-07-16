@@ -12,6 +12,7 @@ use Symfony\Component\HttpKernel\KernelEvents;
 /**
  * Intercepts Controller calls for various magical things :)
  */
+// TODO: Move to Core/
 class ControllerInterceptor implements EventSubscriberInterface
 {
   function __construct(private LeagueRepository $leagueRepository) {
