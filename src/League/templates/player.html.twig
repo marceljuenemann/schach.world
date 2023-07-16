@@ -4,7 +4,16 @@
 
 {% block content %}
 
-Hello World!
+<dl class="row mt-3">
+  {{ nsv.dd('Mannschaft') }} {{  nsv.link(player.team) }} {{ nsv.end_dd }}
+  {{ nsv.dd('DWZ') }}
+    {{ player.dwz }}
+    {% if player.dsbUri %}&nbsp;(<a href="{{player.dsbUri}}">DWZ Karteikarte</a>){% endif %}
+  {{ nsv.end_dd }}
+  {{ nsv.dd('ELO') }} {{ player.elo }} {{ nsv.end_dd }}
+</dl>
+
+
 
 {% endblock %}
 
@@ -14,23 +23,6 @@ Hello World!
 
   // Abfragen
   $paarungen = mysql_query ( "SELECT q.runde as sp, IF(p.spieler1=$_GET[spieler],'Heim','Gast') as ort, p.brett as brt, s.id as gegid, s.nachname, s.vorname, s.titel, s.dwz as dwz, s.mannschaft as mannschaft, IF(p.spieler1=$_GET[spieler],p.ergebnis1,p.ergebnis2) as erg FROM spielerpaarungen as p INNER JOIN paarungen as q ON q.id=p.paarung LEFT JOIN spieler as s ON s.id=IF(p.spieler1=$_GET[spieler],p.spieler2,p.spieler1) WHERE p.spieler1=$_GET[spieler] OR p.spieler2=$_GET[spieler] ORDER BY q.runde", $globals ['db'] );
-
-    // DSB-Datenbank - Link Berechnung
-    if (strlen($info['zps']) < strlen('xxxxx-yyyy'))
-    {
-      $info['zps'] = str_replace('-', '-0', $info['zps']);
-    }
-    $dsblink = $globals ['dsb_db_sp_zps'] . $info ['zps'];
-
-  // Ausgabe allgemeine Informationen
-  echo "<span class='sed_hl1'>Spielerdetails</span><br /><br />
-        <span class='sed_hl2'>Informationen</span><br /><br />
-        <table class='sed_normal'>
-          <tr><td><b>Name:</b></td><td>".SED_Spielername($info)."</td></tr>
-          <tr><td><b>Mannschaft:</b></td><td>".SED_TeamLink ( $info ['mannschaft'] )."</td></tr>
-          <tr><td><b>DWZ:</b></td><td>$info[dwz]&nbsp;&nbsp;<span class='sed_only_screen d-print-none'>(<a target='_blank' href='$dsblink'>DWZ-Karteikarte</a>)</span></td></tr>";
-    echo ( is_numeric ( $info ['elo'] ) && $info ['elo'] > 0 ? "<tr><td><b>ELO:</b></td><td>$info[elo]</td></tr>" : "" )."
-        </table>";
 
   // Ausgabe der Paarungen
   echo "<br /><span class='sed_hl2'>Bisherige Paarungen</span><br /><br />

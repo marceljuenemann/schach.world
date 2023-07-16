@@ -42,6 +42,12 @@ class Player
   #[ORM\Column(name: 'titel', length: 15)]
   private string $title;
 
+  /**
+   * ZPS is the unique identified for players in the German federation.
+   */
+  #[ORM\Column(length: 10)]
+  private string $zps;
+
   #[ORM\Column]
   private ?int $dwz;
 
@@ -78,6 +84,33 @@ class Player
     return $this->team->league->uri() . "s/{$this->id}/";
   }
 
+  /**
+   * Sanitized version of the title.
+   */
+  // TODO: unit test.
+  public function title() {
+    $title = trim($this->title);
+    // Improve female titles (WG => WGM).
+    if (strlen($title) == 2 && $title[0] == 'W') {
+      $title .= 'M';
+    }
+    return $title; 
+  }
+
+  /**
+   * Full sanitized name including title.
+   */
+  // TODO: unit test
+  public function name() {
+    $lastName = trim($this->lastName);
+    if (strlen($lastName) < 2) return '';
+    $name = $this->title() . ' ' . $lastName;
+    if ($this->firstName) {
+      $name .= ', ' . $this->firstName;
+    }
+    return trim($name);
+  }
+  
   public function __call($property, $args) {
     return $this->$property;
   }

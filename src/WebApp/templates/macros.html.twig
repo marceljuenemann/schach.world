@@ -2,3 +2,16 @@
 {% macro link(model) %}
   <a href="{{model.uri}}">{{model.name|e}}</a>
 {% endmacro %}
+
+{# A responsive description list. #}
+{# Usage: {{ nsv.dd('Name') }} {{ item.name }} {{ nsv.end_dd }} #}
+{% macro dd(title) %}
+  <dt class='col-4 col-sm-3 col-md-2'>{{title}}:</dt>
+  <dd class='col-8 col-sm-9 col-md-10'>
+{% endmacro %}
+{% macro end_dd() %}
+  {# Add &nbsp; to ensure empty value takes the same height. #}
+  &nbsp;
+  </dt>
+{% endmacro %}
+
