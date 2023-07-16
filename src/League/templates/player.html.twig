@@ -13,7 +13,27 @@
   {{ nsv.dd('ELO') }} {{ player.elo }} {{ nsv.end_dd }}
 </dl>
 
-
+{% if player.games %}
+  <h4>Paarungen</h4>
+  <table class='sed_tabelle' cellspacing='0' cellpadding='3'>
+    <tr><th>Sp.</th><th>Ort</th><th>Brt</th><th>Far</th><th>Gegner</th><th>DWZ</th><th>Mannschaft</th><th>Erg</th></tr>
+    {% for game in player.games %}
+      <tr>
+        <td>{{ game.round }}</td>
+        <td>{{ game.home ? 'Heim' : 'Gast' }}</td>
+        <td>{{ game.board }}</td>
+        <td style="{{ game.white ? '' : 'background: black; color: white' }}">
+          {{ game.white ? 'W' : 'S' }}
+        </td>
+        {# TODO: null player #}
+        <td class='l'>{{ nsv.link(game.opponentPlayer) }}</td>
+        <td>{{ game.opponentPlayer.dwz }}</td>
+        <td class='l'>{{ nsv.link(game.opponentTeam) }}</td>
+        <td>{{ game.result }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endif %}
 
 {% endblock %}
 
@@ -21,28 +41,13 @@
 {#
 
 
-  // Abfragen
-  $paarungen = mysql_query ( "SELECT q.runde as sp, IF(p.spieler1=$_GET[spieler],'Heim','Gast')
-   as ort, p.brett as brt, s.id as gegid, s.nachname, s.vorname, s.titel, s.dwz as dwz, 
-   s.mannschaft as mannschaft, IF(p.spieler1=$_GET[spieler],p.ergebnis1,p.ergebnis2) as erg 
-   FROM spielerpaarungen as p INNER JOIN paarungen as q ON q.id=p.paarung
-   LEFT JOIN spieler as s ON s.id=IF(p.spieler1=$_GET[spieler],p.spieler2,p.spieler1)
-   WHERE p.spieler1=$_GET[spieler] OR p.spieler2=$_GET[spieler] ORDER BY q.runde", $globals ['db'] );
-
-  // Ausgabe der Paarungen
-  echo "<br /><span class='sed_hl2'>Bisherige Paarungen</span><br /><br />
-        <table class='sed_tabelle' cellspacing='0' cellpadding='3'>
-          <tr><th>Sp.</th><th>Ort</th><th>Brt</th><th>Far</th><th>Gegner</th><th>DWZ</th><th>Mannschaft</th><th>Erg</th></tr>";
-  $gegner = $punkte = array (); $ergchars = array ( '0', SED_REMIS, '1' );
+ $gegner = $punkte = array (); $ergchars = array ( '0', SED_REMIS, '1' );
   while ( $row = mysql_fetch_array ( $paarungen, MYSQL_ASSOC ) )
   {
-    $farbe = ( ( $row ['ort'] == "Heim" && $row ['brt'] % 2 == 0 ) || ( $row ['ort'] == "Gast" && $row ['brt'] % 2 == 1 ) ) ? "W" : "S";
     // Hack für NSV Pokal mit merkwürdiger Farbregelung...
     if ( $prefs['organisation'] ===  '7p' && $row ['brt'] >= 3 ) {
       $farbe = $farbe == "W" ? "S" : "W";
     }
-    $mannschaft = $row ['mannschaft'] ? SED_TeamLink ( $row ['mannschaft'] ) : "";
-    echo "<tr><td>$row[sp]</td><td>$row[ort]</td><td>$row[brt]</td><td>$farbe</td><td class='l'><a href='?spieler=$row[gegid]'>".SED_Spielername($row)."</a></td><td>$row[dwz]</td><td class='l'>$mannschaft</td><td>$row[erg]</td></tr>";
     if ( $row ['dwz'] && in_array ( $row ['erg'], $ergchars ) )
     {
       $gegner [] = $row ['dwz'];
