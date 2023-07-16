@@ -19,8 +19,6 @@ class DivisionController extends AbstractLeagueController {
   #[Route('spielplan/unstable-api/', name: 'schedule_api')]
   public function schedule_api(ScheduleService $service): Response {
     $matchDays = $service->matchDays($this->division);
-    return new Response(
-      print_r($matchDays, true),
-      200, ['Content-type' => 'text/plain; charset=latin1']);
+    return $this->apiResponse($matchDays);
   }
 }

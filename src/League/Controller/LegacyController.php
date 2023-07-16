@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Controller;
 
+use Nsv\League\Core\Encoding;
 use Nsv\League\Repository\DivisionRepository;
 use Nsv\Util\TextSanitizer;
 use Nsv\WebApp\Core\WordPress\Auth;
@@ -62,7 +63,7 @@ class LegacyController extends AbstractLeagueController {
     }
     $body = ob_get_clean();
     $response = new Response($body);
-    $response->setCharset(TextSanitizer::CHARSET);
+    $response->setCharset(Encoding::CHARSET);
     return $response;
   }
 

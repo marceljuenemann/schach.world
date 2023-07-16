@@ -4,16 +4,6 @@ namespace Nsv\Util;
 
 class TextSanitizer {
 
-  // TODO: Move to UTF-8 when migrating the league manager.
-  public const CHARSET = 'iso-8859-1';
-
-  /**
-   * Calls htmlspecialchars with the correct character encoding.
-   */
-  public static function html($str) {
-    return htmlspecialchars($str, ENT_QUOTES|ENT_SUBSTITUTE, TextSanitizer::CHARSET);
-  }
-
   /**
    * Generates a lower-case alphanumberic string (with dashes) from an arbitrary string.
    * This is similar to WordPress' sanitize_title and intended to be generate readable URLs. 

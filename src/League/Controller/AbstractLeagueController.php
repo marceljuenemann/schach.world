@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Controller;
 
+use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\Util\TextSanitizer;
@@ -81,7 +82,16 @@ class AbstractLeagueController extends AbstractController {
     }
 
     $response = parent::render($view, $parameters, $response);
-    $response->setCharset(TextSanitizer::CHARSET);
+    $response->setCharset(Encoding::CHARSET);
     return $response;
+  }
+
+  /**
+   * Create an API response from an API model
+   */
+  protected function apiResponse(mixed $model): Response {
+    // TODO: Return JSON instead of phparray. Might have to do manual UTF-8 conversion first.
+    $body = print_r($model, true);
+    return new Response($body, 200, ['Content-type' => 'text/plain; charset='.Encoding::CHARSET]);
   }
 }
