@@ -19,11 +19,13 @@ class GameRepository extends ServiceEntityRepository
   /**
    * Returns all games of the specified player. Populates the pairings and opponent as well.
    */
+  // TODO: unit test for NULL opponent
   public function findByPlayer(Player $player): array {
     return $this->getEntityManager()
       ->createQueryBuilder()
       ->select('g, p, t1, t2, s1, s2')
       ->from(Game::class, 'g')
+      // TODO: leftJoin to allow NULL players
       ->join('g.player1', 's1')
       ->join('g.player2', 's2')
       ->join('g.pairing', 'p')
