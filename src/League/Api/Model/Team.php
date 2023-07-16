@@ -13,8 +13,8 @@ class Team
   public static function fromEntity(Entity\Team $team) {
     $result = new Team();
     $result->id = $team->id;
-    $result->name = $team->nameWithNumber();
-    $result->uri = $team->league->linkUri() . "?mannschaft=" . $team->id;
+    $result->name = $team->name();
+    $result->uri = $team->uri();
     return $result;
   }
 }

@@ -59,7 +59,7 @@ class Player
   /**
    * Player's gender as single character, should be one of the constants defined above.
    */
-  #[ORM\Column(name: 'geschlecht')]
+  #[ORM\Column(name: 'geschlecht', length: 1)]
   private string $gender;
 
   /**
@@ -73,6 +73,10 @@ class Player
    * If the player was registered late, the round to which they were registered.
    */
   private ?int $lateRegistrationRound;
+
+  public function uri() {
+    return $this->team->league->uri() . "s/{$this->id}/";
+  }
 
   public function __call($property, $args) {
     return $this->$property;

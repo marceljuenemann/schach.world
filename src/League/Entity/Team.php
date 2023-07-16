@@ -22,18 +22,18 @@ class Team
     #[ORM\JoinColumn(name: "staffel", referencedColumnName: "id")]
     private $division;
 
-    #[ORM\Column(length: 20)]
-    private string $name;
+    #[ORM\Column(name: 'name', length: 20)]
+    private string $nameWithoutNumber;
 
     #[ORM\Column(name: 'mnr')]
     private int $number;
 
-    public function nameWithNumber() {
-      return trim(trim($this->name) . ' ' . ($this->number > 1 ? $this->number : ''));
+    public function name() {
+      return trim(trim($this->nameWithoutNumber) . ' ' . ($this->number > 1 ? $this->number : ''));
     }
 
-    public function linkUri() {
-      return $this->league->linkUri() . "?mannschaft=" . $this->id;
+    public function uri() {
+      return $this->league->uri() . "?mannschaft=" . $this->id;
     }
 
     public function __call($property, $args) {
