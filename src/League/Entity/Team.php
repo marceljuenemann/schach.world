@@ -7,7 +7,7 @@ use Nsv\WebApp\Core\Linkable;
 
 #[ORM\Entity]
 #[ORM\Table(name: 'mannschaften')]
-class Team implements Linkable
+class Team
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -34,10 +34,6 @@ class Team implements Linkable
 
     public function linkUri() {
       return $this->league->linkUri() . "?mannschaft=" . $this->id;
-    }
-
-    public function linkTitle() {
-      return $this->nameWithNumber();
     }
 
     public function __call($property, $args) {
