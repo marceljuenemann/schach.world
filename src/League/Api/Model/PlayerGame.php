@@ -25,12 +25,11 @@ class PlayerGame
     }
 
     $result = new PlayerGame();
-    // TODO: optimize queries
     $result->round = $game->pairing->round;
     $result->board = $game->board;
     $result->home = $game->player1->id == $player->id;
     $result->result = $result->home ? $game->result1 : $game->result2;
-    $result->opoonentResult = !$result->home ? $game->result1 : $game->result2;
+    $result->opponentResult = !$result->home ? $game->result1 : $game->result2;
     $result->opponentTeam = Team::fromEntity($result->home ? $game->pairing->team2 : $game->pairing->team1);
     $result->opponentPlayer = Player::fromEntity($result->home ? $game->player2 : $game->player1);
     // TODO: color:
