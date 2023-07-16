@@ -36,7 +36,7 @@ class League
     #[ORM\OrderBy(["division" => "DESC"])]
     private $dates;
 
-    public function linkUri() {
+    public function uri() {
       return "/ligen/{$this->path}/";
     }
     
