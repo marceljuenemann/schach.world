@@ -21,7 +21,7 @@
     array ( "brettzahl", "Brettanzahl", "An wie vielen Brettern wird bei Mannschaftskämpfen Ihres Turnieres gespielt?", 3, 2, true ),
     array ( "hr" ),
     array ( "sysEingabelinks", "Eingabelinks", "Sollen automatisch Eingabelinks versendet werden? Die Mannschaftsführer erhalten bei Aktivierung automatisch drei Tage vor dem Spieltag eine eMail mit einem Link, über den Sie die Ergebnisse selbstständig eingeben können.", array ( 1 => "eMails versenden", 0 => "keine eMails versenden" ), 0, false ),
-    array ( "spielErsatzmannschaft", "Ersatzmannschaften", "Sind Spieler aus tieferen Mannschaften des gleichen Vereins automatisch Ersatzspieler?", array ( 0 => "Nein, keine Ersatzmannschaften", 1 => "Ja, aber nur die nächsttiefere", 99 => "Ja, alle tieferen Mannschaften" ), 0, false ),
+    array ( "spielErsatzmannschaft", "Ersatzmannschaften", "Sind Spieler aus tieferen Mannschaften des gleichen Vereins automatisch Ersatzspieler?", array ( 0 => "Nein, keine Ersatzmannschaften", 1 => "Ja, aber nur die n&auml;chsttiefere", 99 => "Ja, alle tieferen Mannschaften" ), 0, false ),
     array ( "spielNachmeldungen", "Nachmeldungen", "Dürfen Mannschaftsführer bei der Ergebniseingabe Spieler nachmelden?", array ( 0 => "Nein, keine Nachmeldungen am Spieltag", 1 => "Ja, Nachmeldungen zulassen" ), 0, false ),
     array ( "spielDreistelligeNr", "Spieler-Nummern", "In welchem Format sollen die Spielernummern angezeigt werden?", array ( 1 => "dreistellig (erste Ziffer ist Mannschaftsnummer)", 0 => "einstellig" ), 0, false ),
     array ( "hr" ),
@@ -35,7 +35,6 @@
     array ( "showNachmeldungen", "Spielbericht: Nachmeldungen anzeigen", "Sollen auf dem Spielbericht die Nachmeldungen angezeigt werden?", array ( 1 => "Ja, anzeigen", 0 => "Nein, nicht anzeigen" ), 0, false ),
     array ( "showSpieltagvorschau", "Spielbericht: Spieltagvorschau", "Soll auf dem Spielbericht eine Vorschau auf den nächsten Spieltag angezeigt werden?", array ( 1 => "Ja, anzeigen", 0 => "Nein, nicht anzeigen" ), 0, false ),
     array ( "hr" ),
-    array ( "sysKeinNewsletter", "Newsletter-Funktion", "Soll auf der Startseite ein Formular angezeigt werden, mit dem jeder die Staffelrundschreiben abbonnieren kann?", array ( 0 => "Ja, anzeigen", 1 => "Nein, nicht anzeigen" ), 0, false ),
     array ( "infomeldung", "Hinweis-Meldung", "Hier können Sie eine Meldung festlegen, die auf jeder Seite (öffentlich) gut sichtbar angezeigt wird. HTML für Links ist erlaubt.", 60, 200, false )
   );
   foreach ($frmMF as &$field) {
