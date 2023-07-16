@@ -39,5 +39,4 @@ class Encoding
   public static function formatResult(float $result) {
     return str_replace ( ".5", self::remis(), $result == 0.5 ? self::remis() : "$result" );
   }
-
 }

@@ -13,7 +13,6 @@ class Regulation
   /**
    * Determines whether a player had white based on the board number.
    * 
-   * TODO: unit test
    * TODO: Special case for Pokal.
    */
   public static function isWhiteGame(bool $isHomeGame, int $board, League $league) {
