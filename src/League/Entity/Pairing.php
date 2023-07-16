@@ -71,6 +71,10 @@ class Pairing
     #[ORM\Column(name: 'festgelegt')]
     private bool $locked;
 
+    #[ORM\OneToMany(targetEntity: Game::class, mappedBy: 'pairing')]   
+    #[ORM\OrderBy(["board" => "ASC"])]
+    private $games;
+
     public function wasMoved(): bool {
       return (bool) $this->customDate;
     }

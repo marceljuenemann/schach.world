@@ -21,6 +21,13 @@ class Player
   public string $uri;
   public ?string $dsbUri;
 
+  public ?array $games;
+
+  public function addGame(Entity\Game $game) {
+    if (!isset($this->games)) $this->games = array();
+    $this->games[] = PlayerGame::forPlayer($this, $game);
+  }
+
   public static function fromEntity(Entity\Player $player) {
     $result = new Player();
     $result->id = $player->id;

@@ -22,7 +22,12 @@
 
 
   // Abfragen
-  $paarungen = mysql_query ( "SELECT q.runde as sp, IF(p.spieler1=$_GET[spieler],'Heim','Gast') as ort, p.brett as brt, s.id as gegid, s.nachname, s.vorname, s.titel, s.dwz as dwz, s.mannschaft as mannschaft, IF(p.spieler1=$_GET[spieler],p.ergebnis1,p.ergebnis2) as erg FROM spielerpaarungen as p INNER JOIN paarungen as q ON q.id=p.paarung LEFT JOIN spieler as s ON s.id=IF(p.spieler1=$_GET[spieler],p.spieler2,p.spieler1) WHERE p.spieler1=$_GET[spieler] OR p.spieler2=$_GET[spieler] ORDER BY q.runde", $globals ['db'] );
+  $paarungen = mysql_query ( "SELECT q.runde as sp, IF(p.spieler1=$_GET[spieler],'Heim','Gast')
+   as ort, p.brett as brt, s.id as gegid, s.nachname, s.vorname, s.titel, s.dwz as dwz, 
+   s.mannschaft as mannschaft, IF(p.spieler1=$_GET[spieler],p.ergebnis1,p.ergebnis2) as erg 
+   FROM spielerpaarungen as p INNER JOIN paarungen as q ON q.id=p.paarung
+   LEFT JOIN spieler as s ON s.id=IF(p.spieler1=$_GET[spieler],p.spieler2,p.spieler1)
+   WHERE p.spieler1=$_GET[spieler] OR p.spieler2=$_GET[spieler] ORDER BY q.runde", $globals ['db'] );
 
   // Ausgabe der Paarungen
   echo "<br /><span class='sed_hl2'>Bisherige Paarungen</span><br /><br />

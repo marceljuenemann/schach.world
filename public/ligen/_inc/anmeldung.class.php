@@ -159,7 +159,7 @@ class SED_Anmeldung {
     // Liefert eine Liste der Zusatzfelder
     function getZusatzFelder (){
         global $prefs;
-        $felder = explode ( "\n", str_replace ( "\r", "\n", $prefs ['anmZusatzfelder'] ) );
+        $felder = explode ( "\n", str_replace ( "\r", "\n", $prefs ['anmZusatzfelder'] ?: '' ) );
         $result = array ();
         foreach ( $felder as $feld )
         {
