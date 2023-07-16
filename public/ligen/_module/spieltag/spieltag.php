@@ -50,7 +50,7 @@
     // Vorbereitungen
     /////////////////////////////////
 
-    global $_class, $_al, $_ac, $_ar, $_bgclr;
+    global $_class, $_al, $_ac, $_ar, $_bgclr, $staffel, $daten, $tabelle, $rundenzahl, $kreuztabelle;
     $_ac                = "text-align: center;";
     $_al                = "text-align: left;";
     $_ar                = "text-align: right;";
