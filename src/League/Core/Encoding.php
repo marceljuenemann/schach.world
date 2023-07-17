@@ -10,14 +10,6 @@ class Encoding
   // TODO: Move everything to Unicode
   const CHARSET = 'ISO-8859-1';
   const UNICODE_ENABLED = false;
-  const REMIS = '½';
-
-  /**
-   * The character for remis.
-   */
-  public static function remis() {
-    return self::utf8_decode(self::REMIS);
-  }
 
   /**
    * Converts from UTF-8 to the application charset.
@@ -31,12 +23,5 @@ class Encoding
    */
   public static function utf8_encode($str) {
     return mb_convert_encoding($str, 'UTF-8', self::CHARSET);
-  }
-
-  /**
-   * The character for remis.
-   */
-  public static function formatResult(float $result) {
-    return str_replace ( ".5", self::remis(), $result == 0.5 ? self::remis() : "$result" );
   }
 }

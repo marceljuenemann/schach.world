@@ -18,6 +18,7 @@ class PlayerGame
   public string $opponentResult;
   public Team $opponentTeam;
   public Player $opponentPlayer;
+  public string $uri;
 
   public static function forPlayer(Player $player, Entity\Game $game) {
     if ($game->player1->id != $player->id && $game->player2->id != $player->id) {
@@ -33,6 +34,7 @@ class PlayerGame
     $result->opponentResult = !$result->home ? $game->result1 : $game->result2;
     $result->opponentTeam = Team::fromEntity($result->home ? $game->pairing->team2 : $game->pairing->team1);
     $result->opponentPlayer = Player::fromEntity($result->home ? $game->player2 : $game->player1);
+    $result->uri = $game->pairing->division->matchDayUri($result->round);
     return $result;
   }
 }

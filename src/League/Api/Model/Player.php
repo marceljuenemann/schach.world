@@ -22,6 +22,7 @@ class Player
   public ?string $dsbUri;
 
   public ?array $games;
+  public array|null $dwzCalculation;
 
   public function addGame(Entity\Game $game) {
     if (!isset($this->games)) $this->games = array();

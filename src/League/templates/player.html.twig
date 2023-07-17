@@ -16,58 +16,41 @@
 {% if player.games %}
   <h3>Paarungen</h3>
   <table class='sed_tabelle' cellspacing='0' cellpadding='3'>
-    <tr><th>Sp.</th><th>Ort</th><th>Brt</th><th>Far</th><th>Gegner</th><th>DWZ</th><th>Mannschaft</th><th>Erg</th></tr>
+    <tr>
+      <th>Rd</th>
+      <th>Brt</th>
+      <th>Frb</th>
+      <th>Ort</th>
+      <th>Gegner</th>
+      <th>Spielername</th>
+      <th>DWZ</th>
+      <th>Erg</th>
+    </tr>
     {% for game in player.games %}
       <tr>
-        <td>{{ game.round }}</td>
-        <td>{{ game.home ? 'Heim' : 'Gast' }}</td>
+        <td><a href="{{ game.uri }}">{{ game.round }}</a></td>
         <td>{{ game.board }}</td>
         <td style="{{ game.white ? '' : 'background: black; color: white' }}">
           {{ game.white ? 'W' : 'S' }}
         </td>
+        <td>{{ game.home ? 'Heim' : 'Gast' }}</td>
         {# TODO: null player #}
+        <td class='l'>{{ nsv.link(game.opponentTeam) }}</td>
         <td class='l'>{{ nsv.link(game.opponentPlayer) }}</td>
         <td>{{ game.opponentPlayer.dwz }}</td>
-        <td class='l'>{{ nsv.link(game.opponentTeam) }}</td>
         <td>{{ game.result }}</td>
       </tr>
     {% endfor %}
   </table>
 {% endif %}
 
+{% if player.dwzCalculation %}
+  <h3 class="mt-5">Inoffizielle DWZ-Auswertung</h3>
+  <dl class="row mt-3">
+    {% for label, value in player.dwzCalculation %}
+      {{ nsv.dd(label) }} {{value}} {{ nsv.end_dd }}
+    {% endfor %}
+  </dl>
+  <span style='font-size: smaller'>Berechnet durch <a href='http://isewase.de'>isewase.de</a> von Andreas Klein und Stefan Flassig</span>
+{% endif %}
 {% endblock %}
-
-
-{#
-
-
- $gegner = $punkte = array (); $ergchars = array ( '0', SED_REMIS, '1' );
-  while ( $row = mysql_fetch_array ( $paarungen, MYSQL_ASSOC ) )
-  {
-    // Hack für NSV Pokal mit merkwürdiger Farbregelung...
-    if ( $prefs['organisation'] ===  '7p' && $row ['brt'] >= 3 ) {
-      $farbe = $farbe == "W" ? "S" : "W";
-    }
-    if ( $row ['dwz'] && in_array ( $row ['erg'], $ergchars ) )
-    {
-      $gegner [] = $row ['dwz'];
-      $punkte [] = str_replace ( SED_REMIS, 0.5, $row ['erg'] );
-    }
-  }
-  echo "</table>";
-
-  // Inoffiziele DWZ Auswertung
-  if ( $dwz = SED_DWZ ( $info ['dwz'], $gegner, $punkte, $info ['geburt'] ) )
-  {
-    echo "<br /><br /><span class='sed_hl2'>Inoffizielle DWZ-Auswertung</span><br /><br />
-          <table class='sed_normal'>";
-    foreach ( $dwz as $k => $v )
-      echo "<tr><td><b>$k:</b></td><td>$v</td></tr>";
-    echo "</table>";
-    echo "<span style='font-size: smaller'><br />Inoffizielle Berechnung. Programmiert von Andreas Klein und Stefan Flassig, <a href='http://isewase.de'>isewase.de</a></span>";
-  }
-?>
-*/
-
-
-#}

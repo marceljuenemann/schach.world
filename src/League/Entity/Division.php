@@ -50,6 +50,10 @@ class Division
       return $dates;
     }
 
+    public function matchDayUri($round = ''): string {
+      return $this->league->uri() . "?staffel={$this->id}&r=$round";
+    }
+
     public function __call($property, $args) {
       return $this->$property;
     }

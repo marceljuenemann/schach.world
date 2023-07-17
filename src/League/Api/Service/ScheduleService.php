@@ -20,7 +20,7 @@ class ScheduleService
         $md = new MatchDay();
         $md->round = $pairing->round;
         $md->date = isset($dates[$md->round]) ? $dates[$md->round] : null;
-        $md->uri = $division->league->uri() . "?staffel={$division->id}&r={$md->round}";
+        $md->uri = $division->matchDayUri($md->round);
         $matchDays[$pairing->round] = $md;
       }
       $matchDays[$pairing->round]->pairings[] = Pairing::fromEntity($pairing);

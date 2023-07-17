@@ -2,7 +2,7 @@
 
 namespace Nsv\League\Api\Model;
 
-use Nsv\League\Core\Encoding;
+use Nsv\League\Core\Result;
 use Nsv\League\Entity;
 
 class Pairing
@@ -31,6 +31,6 @@ class Pairing
 
   private static function formatResult(Entity\Pairing $pairing): string|null {
     if ($pairing->result1 === null) return null;
-    return Encoding::formatResult($pairing->result1).' : '.Encoding::formatResult($pairing->result2);
+    return Result::format($pairing->result1).' : '.Result::format($pairing->result2);
   }
 }

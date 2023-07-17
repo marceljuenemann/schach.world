@@ -111,6 +111,12 @@ class Player
     return trim($name);
   }
   
+  public function yearOfBirth(): int|null {
+    // Take the last four characters in case it's the full birthdate.
+    $year = (int) substr($this->birth, -4);
+    return ($year > 1900 && $year < 2100) ? $year : null;
+  }
+
   public function __call($property, $args) {
     return $this->$property;
   }
