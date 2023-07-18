@@ -1,5 +1,7 @@
 # nsv-online.de
 
+TODO: This README needs an overhaul.
+
 [nsv-online.de](https://nsv-online.de) is the website of Lower Saxony's chess federation (Niedersächsischer Schachverband, or NSV for short). While the frontpage and many static sites are a fairly straightforward WordPress site, there are also many dynamic pages. Most notabily, there is a fully-fledged web app for managing chess leagues that is also used by various other chess organizations and allows clubs to submit their match results.   
 
 ## Overview  
@@ -76,6 +78,13 @@ Next, let's enable the NSV plugins for custom routes (like turniere/):
 The very latest cutting-edge code runs as a relatively standard Symfony app that is invoked from WordPress. This only happens for specific route prefix via the nsv-v3 WordPress plugin, so make sure you enable that. The code of the Symfony web app can be found in `src/WebApp`.
 
 When logged into WordPress as Admin, Symfony automatically runs in debug mode, so the cache is deactivated and full stack traces are shown.
+
+**League Manager Test setup:**
+1. Create local database for running integration tests
+1. Import structure from setup/ligen-db/00_structure.sql
+1. Configure connection in `.env.test.local` (TODO: doesn't seem to work? Need to use `.evn.test` for now)
+1. To insert test data, run `php bin/console --env=test --em=league doctrine:fixtures:load`
+1. To run integration and unit tests, run `php bin/phpunit`
 
 ## Known Issues
 

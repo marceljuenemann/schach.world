@@ -7,7 +7,7 @@ use Twig\TwigFunction;
 
 class TwigExtension extends AbstractExtension {
 
-  function getFunctions() {
+  function getFunctions(): array {
     return [
     ];
   }

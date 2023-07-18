@@ -33,3 +33,9 @@ services:
         resource: '../src/League/EventSubscriber/'
     Nsv\League\Repository\:
         resource: '../src/League/Repository/'
+
+when@test:
+    services:
+        Nsv\League\Testing\:
+            resource: '../src/League/Testing/'
+            tags: ['doctrine.fixture.orm']
