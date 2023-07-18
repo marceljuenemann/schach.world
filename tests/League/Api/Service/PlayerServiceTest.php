@@ -14,7 +14,8 @@ class PlayerServiceTest extends KernelTestCase
   protected function setUp(): void {
     $container = static::getContainer();
     $this->service = $container->get(PlayerService::class);
-    $this->league = $container->get(LeagueRepository::class)->find(1);
+    // TODO: common test class?
+    $this->league = $container->get(LeagueRepository::class)->findByPath('test'); // TODO: Fixture?
   }
 
   public function testSomething() {
