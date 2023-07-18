@@ -41,7 +41,7 @@ class LegacyController extends AbstractLeagueController {
     } catch (\Exception $e) {
       // Report the error.
       // TODO: move this task to the logger.
-      if (!Auth::isAdmin()) {
+      if (!($e instanceof NotFoundHttpException) && !Auth::isAdmin()) {
         global $globals;
         @wp_mail($globals['webmaster_mail'], 'LeagueController Exception', $request->getUri() . "\n\n".$e);
       }
