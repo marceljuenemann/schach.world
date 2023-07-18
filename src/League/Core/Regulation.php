@@ -17,6 +17,12 @@ class Regulation
    */
   public static function isWhiteGame(bool $isHomeGame, int $board, League $league) {
     // Default: Home team has black on the first board, subsequent boards alternate.
-    return $isHomeGame === ($board % 2 === 0);
+    $isWhite = $isHomeGame === ($board % 2 === 0);
+
+    // NSV Pokal: Black, White, White, Black
+    if ($league->organisation === '7p' && $board >= 3) {
+      return !$isWhite;
+    }
+    return $isWhite;
   }
 }

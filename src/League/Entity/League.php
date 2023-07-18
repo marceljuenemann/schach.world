@@ -24,6 +24,14 @@ class League
     #[ORM\Column(name: 'directory', length: 20)]
     private string $path;
 
+    /**
+     * For German chess federations, this should be the ZPS code prefix of the organisation.
+     * 
+     * Note that some organisation-specific rules are hardcoded in Regulation.php
+     */
+    #[ORM\Column(name: 'organisation', length: 15)]
+    private string $organisation;
+
     #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
     #[ORM\OrderBy(["sortId" => "ASC", "id" => "ASC"])]
     private $divisions;
