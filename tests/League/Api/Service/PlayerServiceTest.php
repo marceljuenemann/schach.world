@@ -2,24 +2,39 @@
 
 namespace Nsv\League\Api\Service;
 
-use Nsv\League\Entity\League;
-use Nsv\League\Repository\LeagueRepository;
-use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
+use Nsv\Dwz\IsewaseDwzCalculator;
+use Nsv\League\Repository\GameRepository;
+use Nsv\League\Repository\PlayerRepository;
 
-class PlayerServiceTest extends KernelTestCase
+class PlayerServiceTest extends AbstractApiTest
 {
-  var PlayerService $service;
-  var League $league;
+  /**
+   * Test cases: 
+   * Model- with ZPS
+   * - without ZPS
+   * - Games:
+   *   - Different boards
+   *   - Different rounds
+   *   - All the different results  win, loss, remis, bye
+   * - DWZ: should just be mocked really, too complex otherwise
+   */
+
+  private PlayerService $service;
 
   protected function setUp(): void {
-    $container = static::getContainer();
-    $this->service = $container->get(PlayerService::class);
-    // TODO: common test class?
-    $this->league = $container->get(LeagueRepository::class)->findByPath('test'); // TODO: Fixture?
+    parent::setUp();
+    $this->service = new PlayerService(
+      $this->container->get(PlayerRepository::class),
+      $this->container->get(GameRepository::class),
+      new IsewaseDwzCalculator(function($params) {
+        return $params;
+      })
+    );
   }
 
-  public function testSomething() {
-    $this->assertEquals('Test League', $this->league->name);
-
+  public function testPlayer_withRatingAndTitle() {
+    $player = $this->division->teams()[0]->players[0];
+    $model = $this->service->player($this->league, $player->id);
+    $this->assertModel($model, __FILE__, __FUNCTION__);
   }
 }

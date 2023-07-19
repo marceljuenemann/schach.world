@@ -34,6 +34,10 @@ services:
     Nsv\League\Repository\:
         resource: '../src/League/Repository/'
 
+    # Misc services
+    Nsv\Dwz\:
+        resource: '../src/Dwz/'
+
 when@test:
     services:
         Nsv\League\Testing\:

@@ -3,12 +3,13 @@
 namespace Nsv\League\Testing;
 
 use Doctrine\Bundle\FixturesBundle\Fixture;
-use Doctrine\Bundle\FixturesBundle\ORMFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
+use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Date;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\League\Entity\Pairing;
+use Nsv\League\Entity\Player;
 use Nsv\League\Entity\Team;
 
 /**
@@ -146,6 +147,39 @@ class LeagueFixtures extends Fixture
     $pairing4C->team2 = $team2;
     $pairing4C->host = $team2;
     $manager->persist($pairing4C);
+
+    /////////////////////////////////////
+    // PLAYERS
+    /////////////////////////////////////
+
+    // PLAYER 1: With title and everything
+    $player1 = new Player();
+    $player1->team = $team1;
+    $player1->number = 1;
+    $player1->lastName = Encoding::utf8_decode('Jünemann');
+    $player1->firstName = 'Marcel';
+    $player1->title = 'GM Dr.';
+    $player1->zps = '70156-117';
+    $player1->dwz = 1942;
+    $player1->elo = 2020;
+    $player1->gender = Player::GENDER_FEMALE;
+    $player1->birth = '1989';
+    $manager->persist($player1);
+
+    // PLAYER 2: Without rating and ZPS
+    $player2 = new Player();
+    $player2->team = $team2;
+    $player2->number = 201;
+    $player2->lastName = 'Salzmann';
+    $player2->firstName = 'Jan';
+    $player2->title = '';
+    $player2->zps = '';
+    $player2->dwz = null;
+    $player2->elo = null;
+    $player2->gender = '';
+    $player2->birth = '';
+    $manager->persist($player2);
+    
 
     $manager->flush();
   }

@@ -50,6 +50,16 @@ class Division
       return $dates;
     }
 
+    public function teams(): array {
+      $teams = [];
+      foreach ($this->league->teams as $team) {
+        if ($team->division == $this) {
+          $teams[] = $team;
+        }
+      }
+      return $teams;
+    }
+
     public function matchDayUri($round = ''): string {
       return $this->league->uri() . "?staffel={$this->id}&r=$round";
     }

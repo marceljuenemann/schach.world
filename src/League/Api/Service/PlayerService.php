@@ -14,7 +14,8 @@ class PlayerService
 {
   function __construct(
     private PlayerRepository $playerRepository,
-    private GameRepository $gameRepository
+    private GameRepository $gameRepository,
+    private IsewaseDwzCalculator $dwzCalculator
   ) {}
 
   // TODO: cache, especially for the DWZ calculation.
@@ -28,12 +29,13 @@ class PlayerService
     foreach ($this->gameRepository->findByPlayer($player) as $game) {
       $result->addGame($game);
     }
-    $result->dwzCalculation = $this->dwzCalc($result, $player->yearOfBirth());
+    if (isset($result->games)) {
+      $result->dwzCalculation = $this->dwzCalc($result, $player->yearOfBirth());
+    }
     return $result;
   }
 
   private function dwzCalc(Player $player, int|null $yearOfBirth): array|null {
-    $calculator = new IsewaseDwzCalculator();
     $opponentDwz = array();
     $points = 0.0;
     foreach ($player->games as $game) {
@@ -43,6 +45,6 @@ class PlayerService
         $points += Result::score($game->result);
       }
     }
-    return $calculator->calculate($player->dwz, $opponentDwz, $points, $yearOfBirth);
+    return $this->dwzCalculator->calculate($player->dwz, $opponentDwz, $points, $yearOfBirth);
   }
 }

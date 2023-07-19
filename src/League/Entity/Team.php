@@ -28,6 +28,10 @@ class Team
     #[ORM\Column(name: 'mnr')]
     private int $number;
 
+    #[ORM\OneToMany(targetEntity: Player::class, mappedBy: 'team')]   
+    #[ORM\OrderBy(["number" => "ASC"])]
+    private $players;
+
     public function nameWithNumber() {
       return trim(trim($this->name) . ' ' . ($this->number > 1 ? $this->number : ''));
     }
