@@ -4,23 +4,23 @@ Array
         (
             [round] => 2
             [date] => 2024-12-31
-            [uri] => /ligen/test/?staffel=13&r=2
+            [uri] => /ligen/test/?staffel=18&r=2
             [pairings] => Array
                 (
                     [0] => Nsv\League\Api\Model\Pairing Object
                         (
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 17
+                                    [id] => 27
                                     [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=17
+                                    [uri] => /ligen/test/?mannschaft=27
                                 )
 
                             [team2] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 18
+                                    [id] => 28
                                     [name] => Team 2
-                                    [uri] => /ligen/test/?mannschaft=18
+                                    [uri] => /ligen/test/?mannschaft=28
                                 )
 
                             [host] => 
@@ -39,23 +39,23 @@ Array
         (
             [round] => 1
             [date] => 2025-01-01
-            [uri] => /ligen/test/?staffel=13&r=1
+            [uri] => /ligen/test/?staffel=18&r=1
             [pairings] => Array
                 (
                     [0] => Nsv\League\Api\Model\Pairing Object
                         (
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 17
+                                    [id] => 27
                                     [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=17
+                                    [uri] => /ligen/test/?mannschaft=27
                                 )
 
                             [team2] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 18
+                                    [id] => 28
                                     [name] => Team 2
-                                    [uri] => /ligen/test/?mannschaft=18
+                                    [uri] => /ligen/test/?mannschaft=28
                                 )
 
                             [host] => 
@@ -70,16 +70,16 @@ Array
                         (
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 18
+                                    [id] => 28
                                     [name] => Team 2
-                                    [uri] => /ligen/test/?mannschaft=18
+                                    [uri] => /ligen/test/?mannschaft=28
                                 )
 
                             [team2] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 17
+                                    [id] => 27
                                     [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=17
+                                    [uri] => /ligen/test/?mannschaft=27
                                 )
 
                             [host] => 
@@ -98,23 +98,23 @@ Array
         (
             [round] => 4
             [date] => 2025-04-04
-            [uri] => /ligen/test/?staffel=13&r=4
+            [uri] => /ligen/test/?staffel=18&r=4
             [pairings] => Array
                 (
                     [0] => Nsv\League\Api\Model\Pairing Object
                         (
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 17
+                                    [id] => 27
                                     [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=17
+                                    [uri] => /ligen/test/?mannschaft=27
                                 )
 
                             [team2] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 18
+                                    [id] => 28
                                     [name] => Team 2
-                                    [uri] => /ligen/test/?mannschaft=18
+                                    [uri] => /ligen/test/?mannschaft=28
                                 )
 
                             [host] => 
@@ -129,16 +129,16 @@ Array
                         (
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 17
+                                    [id] => 27
                                     [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=17
+                                    [uri] => /ligen/test/?mannschaft=27
                                 )
 
                             [team2] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 18
+                                    [id] => 28
                                     [name] => Team 2
-                                    [uri] => /ligen/test/?mannschaft=18
+                                    [uri] => /ligen/test/?mannschaft=28
                                 )
 
                             [host] => 
@@ -153,23 +153,23 @@ Array
                         (
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 17
+                                    [id] => 27
                                     [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=17
+                                    [uri] => /ligen/test/?mannschaft=27
                                 )
 
                             [team2] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 18
+                                    [id] => 28
                                     [name] => Team 2
-                                    [uri] => /ligen/test/?mannschaft=18
+                                    [uri] => /ligen/test/?mannschaft=28
                                 )
 
                             [host] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 18
+                                    [id] => 28
                                     [name] => Team 2
-                                    [uri] => /ligen/test/?mannschaft=18
+                                    [uri] => /ligen/test/?mannschaft=28
                                 )
 
                             [result] => 

@@ -10,13 +10,10 @@ class PlayerServiceTest extends AbstractApiTest
 {
   /**
    * Test cases: 
-   * Model- with ZPS
-   * - without ZPS
    * - Games:
    *   - Different boards
    *   - Different rounds
    *   - All the different results  win, loss, remis, bye
-   * - DWZ: should just be mocked really, too complex otherwise
    */
 
   private PlayerService $service;
@@ -32,8 +29,20 @@ class PlayerServiceTest extends AbstractApiTest
     );
   }
 
-  public function testPlayer_withRatingAndTitle() {
+  public function testPlayer1() {
     $player = $this->division->teams()[0]->players[0];
+    $model = $this->service->player($this->league, $player->id);
+    $this->assertModel($model, __FILE__, __FUNCTION__);
+  }
+
+  public function testPlayer2() {
+    $player = $this->division->teams()[1]->players[0];
+    $model = $this->service->player($this->league, $player->id);
+    $this->assertModel($model, __FILE__, __FUNCTION__);
+  }
+
+  public function testPlayer3_withoutGamesAndRating() {
+    $player = $this->division->teams()[0]->players[1];
     $model = $this->service->player($this->league, $player->id);
     $this->assertModel($model, __FILE__, __FUNCTION__);
   }

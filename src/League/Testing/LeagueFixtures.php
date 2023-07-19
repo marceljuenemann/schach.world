@@ -166,19 +166,27 @@ class LeagueFixtures extends Fixture
     $player1->birth = '1989';
     $manager->persist($player1);
 
-    // PLAYER 2: Without rating and ZPS
+    // PLAYER 2: Without title, with rating
     $player2 = new Player();
     $player2->team = $team2;
     $player2->number = 201;
     $player2->lastName = 'Salzmann';
     $player2->firstName = 'Jan';
     $player2->title = '';
-    $player2->zps = '';
-    $player2->dwz = null;
+    $player2->zps = '70101-1023';
+    $player2->dwz = 1500;
     $player2->elo = null;
-    $player2->gender = '';
-    $player2->birth = '';
+    $player2->gender = Player::GENDER_MALE;
+    $player2->birth = '18.03.2004';
     $manager->persist($player2);
+
+    // PLAYER 3: Without any games or rating
+    $player3 = new Player();
+    $player3->team = $team1;
+    $player3->number = 2;
+    $player3->lastName = 'Spiellos';
+    $player3->firstName = 'Max';
+    $manager->persist($player3);
     
 
     $manager->flush();

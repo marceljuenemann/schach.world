@@ -1,15 +1,15 @@
 Nsv\League\Api\Model\Player Object
 (
-    [id] => 1
+    [id] => 13
     [name] => GM Dr. Jünemann, Marcel
     [lastName] => Jünemann
     [firstName] => Marcel
     [title] => GM Dr.
     [team] => Nsv\League\Api\Model\Team Object
         (
-            [id] => 17
+            [id] => 27
             [name] => Team
-            [uri] => /ligen/test/?mannschaft=17
+            [uri] => /ligen/test/?mannschaft=27
         )
 
     [number] => 1
@@ -17,6 +17,6 @@ Nsv\League\Api\Model\Player Object
     [dwz] => 1942
     [elo] => 2020
     [gender] => w
-    [uri] => /ligen/test/s/1/
+    [uri] => /ligen/test/s/13/
     [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
 )

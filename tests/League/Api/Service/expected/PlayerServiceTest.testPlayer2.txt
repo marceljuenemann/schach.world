@@ -1,0 +1,22 @@
+Nsv\League\Api\Model\Player Object
+(
+    [id] => 14
+    [name] => Salzmann, Jan
+    [lastName] => Salzmann
+    [firstName] => Jan
+    [title] => 
+    [team] => Nsv\League\Api\Model\Team Object
+        (
+            [id] => 28
+            [name] => Team 2
+            [uri] => /ligen/test/?mannschaft=28
+        )
+
+    [number] => 201
+    [zps] => 70101-1023
+    [dwz] => 1500
+    [elo] => 
+    [gender] => m
+    [uri] => /ligen/test/s/14/
+    [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+)

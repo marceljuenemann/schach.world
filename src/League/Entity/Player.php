@@ -40,13 +40,13 @@ class Player
    * like Prof. or Dr.
    */
   #[ORM\Column(name: 'titel', length: 15)]
-  private string $title;
+  private string $title = '';
 
   /**
    * ZPS is the unique identified for players in the German federation.
    */
   #[ORM\Column(length: 10)]
-  private string $zps;
+  private string $zps = '';
 
   #[ORM\Column]
   private ?int $dwz;
@@ -60,13 +60,13 @@ class Player
    * is currently no enforcement of the format whatsoever.
    */
   #[ORM\Column(name: 'geburt', length: 13)]
-  private string $birth;
+  private string $birth = '';
 
   /**
    * Player's gender as single character, should be one of the constants defined above.
    */
   #[ORM\Column(name: 'geschlecht', length: 1)]
-  private string $gender;
+  private string $gender = '';
 
   /**
    * If the player was registered late, the division for which they were registered.
