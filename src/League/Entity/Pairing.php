@@ -63,13 +63,13 @@ class Pairing
      * Whether the eMail with the link for entering the game was already sent.
      */
     #[ORM\Column(name: 'linkGesendet')]
-    private bool $linkSent;
+    private bool $linkSent = false;
 
     /**
      * Whether the pairing is locked for changes by teams.
      */
     #[ORM\Column(name: 'festgelegt')]
-    private bool $locked;
+    private bool $locked = false;
 
     #[ORM\OneToMany(targetEntity: Game::class, mappedBy: 'pairing')]   
     #[ORM\OrderBy(["board" => "ASC"])]

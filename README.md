@@ -83,7 +83,7 @@ When logged into WordPress as Admin, Symfony automatically runs in debug mode, s
 1. Create local database for running integration tests
 1. Import structure from setup/ligen-db/00_structure.sql
 1. Configure connection in `.env.test.local` (TODO: doesn't seem to work? Need to use `.evn.test` for now)
-1. To insert test data, run `php bin/console --env=test --em=league doctrine:fixtures:load`
+1. To insert test data, run `php bin/console --env=test --em=league doctrine:fixtures:load` (Note: currently you'll get a bunch of errors. Mostly the answer is just to update the default values of the fields. Feel free to change the structure SQL accordingly!)
 1. To run integration and unit tests, run `php bin/phpunit`
 
 ## Known Issues

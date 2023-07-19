@@ -1,0 +1,97 @@
+Array
+(
+    [0] => Nsv\League\Api\Model\MatchDay Object
+        (
+            [round] => 2
+            [date] => 2024-12-31
+            [uri] => /ligen/test/?staffel=10&r=2
+            [pairings] => Array
+                (
+                    [0] => Nsv\League\Api\Model\Pairing Object
+                        (
+                            [team1] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 11
+                                    [name] => Team
+                                    [uri] => /ligen/test/?mannschaft=11
+                                )
+
+                            [team2] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 12
+                                    [name] => Team 2
+                                    [uri] => /ligen/test/?mannschaft=12
+                                )
+
+                            [host] => 
+                            [result] => 
+                            [result1] => 
+                            [result2] => 
+                            [wasMoved] => 
+                            [moveDate] => 
+                        )
+
+                )
+
+        )
+
+    [1] => Nsv\League\Api\Model\MatchDay Object
+        (
+            [round] => 1
+            [date] => 2025-01-01
+            [uri] => /ligen/test/?staffel=10&r=1
+            [pairings] => Array
+                (
+                    [0] => Nsv\League\Api\Model\Pairing Object
+                        (
+                            [team1] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 11
+                                    [name] => Team
+                                    [uri] => /ligen/test/?mannschaft=11
+                                )
+
+                            [team2] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 12
+                                    [name] => Team 2
+                                    [uri] => /ligen/test/?mannschaft=12
+                                )
+
+                            [host] => 
+                            [result] => 2½ : 1½
+                            [result1] => 2.5
+                            [result2] => 1.5
+                            [wasMoved] => 
+                            [moveDate] => 
+                        )
+
+                    [1] => Nsv\League\Api\Model\Pairing Object
+                        (
+                            [team1] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 12
+                                    [name] => Team 2
+                                    [uri] => /ligen/test/?mannschaft=12
+                                )
+
+                            [team2] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 11
+                                    [name] => Team
+                                    [uri] => /ligen/test/?mannschaft=11
+                                )
+
+                            [host] => 
+                            [result] => 
+                            [result1] => 
+                            [result2] => 
+                            [wasMoved] => 
+                            [moveDate] => 
+                        )
+
+                )
+
+        )
+
+)
