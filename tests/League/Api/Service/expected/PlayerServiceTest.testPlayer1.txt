@@ -187,5 +187,18 @@ Nsv\League\Api\Model\Player Object
 
         )
 
-    [dwzCalculation] => 
+    [dwzCalculation] => Array
+        (
+            [0] => 1942
+            [1] => Array
+                (
+                    [0] => 1500
+                    [1] => 1500
+                    [2] => 1500
+                )
+
+            [2] => 1.5
+            [3] => 1989
+        )
+
 )
