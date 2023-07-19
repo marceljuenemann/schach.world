@@ -17,7 +17,7 @@ use Nsv\League\Entity\Team;
  * TODO: Obviously more specific tests would be the best practice, but this is
  * quick to do and much better than no tests :)
  */
-class LeagueFixtures extends Fixture implements ORMFixtureInterface
+class LeagueFixtures extends Fixture
 {
   // TODO: Structure this better.
   public function load(ObjectManager $manager): void {
@@ -83,7 +83,7 @@ class LeagueFixtures extends Fixture implements ORMFixtureInterface
     $pairing1b->team2 = $team1;
     $manager->persist($pairing1b);
 
-    // DATE 2:
+    // ROUND 2:
     // - Date overriden by the division.
     // - Date of round 2 before round 1 (COVID case).
     $date2 = new Date();
@@ -106,19 +106,46 @@ class LeagueFixtures extends Fixture implements ORMFixtureInterface
     $pairing2->team2 = $team2;
     $manager->persist($pairing2);
 
+    // ROUND 3: Round with a date, but no games.
+    $date3 = new Date();
+    $date3->league = $league;
+    $date3->round = 3;
+    $date3->date = '2025-03-03';
+    $manager->persist($date3);
 
+    // ROUND 4: Round without a date.
+    $date4 = new Date();
+    $date4->league = $league;
+    $date4->round = 4;
+    $date4->date = '2025-04-04';
+    $manager->persist($date4);
 
-  /**
-   * TODO:
-   * Add cases for
-   * - round without date
-   * - custom date
-   *  - unknown date
-   * - custom host
-   * - round with date, but without games
-   * 
-   * 
-   */
+    // PAIRING 4A: Custom date
+    $pairing4A = new Pairing();
+    $pairing4A->division = $division;
+    $pairing4A->round = 4;
+    $pairing4A->team1 = $team1;
+    $pairing4A->team2 = $team2;
+    $pairing4A->customDate = '2025-04-05';
+    $manager->persist($pairing4A);
+
+    // PAIRING 4B: Moved without date set
+    $pairing4B = new Pairing();
+    $pairing4B->division = $division;
+    $pairing4B->round = 4;
+    $pairing4B->team1 = $team1;
+    $pairing4B->team2 = $team2;
+    $pairing4B->customDate = Pairing::UNKNOWN_DATE;
+    $manager->persist($pairing4B);
+
+    // PAIRING 4C: Custom host.
+    $pairing4C = new Pairing();
+    $pairing4C->division = $division;
+    $pairing4C->round = 4;
+    $pairing4C->team1 = $team1;
+    $pairing4C->team2 = $team2;
+    $pairing4C->host = $team2;
+    $manager->persist($pairing4C);
 
     $manager->flush();
   }
