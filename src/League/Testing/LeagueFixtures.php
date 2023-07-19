@@ -5,8 +5,10 @@ namespace Nsv\League\Testing;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Nsv\League\Core\Encoding;
+use Nsv\League\Core\Result;
 use Nsv\League\Entity\Date;
 use Nsv\League\Entity\Division;
+use Nsv\League\Entity\Game;
 use Nsv\League\Entity\League;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Player;
@@ -25,6 +27,7 @@ class LeagueFixtures extends Fixture
     $league = new League();
     $league->name = "Test League";
     $league->path = "test";
+    $league->organisation = '7';
     $manager->persist($league);
 
     /////////////////////////////////////
@@ -103,8 +106,8 @@ class LeagueFixtures extends Fixture
     $pairing2 = new Pairing();
     $pairing2->division = $division;
     $pairing2->round = 2;
-    $pairing2->team1 = $team1;
-    $pairing2->team2 = $team2;
+    $pairing2->team1 = $team2;
+    $pairing2->team2 = $team1;
     $manager->persist($pairing2);
 
     // ROUND 3: Round with a date, but no games.
@@ -187,6 +190,64 @@ class LeagueFixtures extends Fixture
     $player3->lastName = 'Spiellos';
     $player3->firstName = 'Max';
     $manager->persist($player3);
+    
+    /////////////////////////////////////
+    // GAMES
+    /////////////////////////////////////
+
+    // ROUND 1: Win, draw, loss
+    $game1 = new Game();
+    $game1->pairing = $pairing1a;
+    $game1->board = 1;
+    $game1->player1 = $player1;
+    $game1->player2 = $player2;
+    $game1->result1 = Result::WIN;
+    $game1->result2 = Result::LOSS;
+    $manager->persist($game1);
+    
+    $game2 = new Game();
+    $game2->pairing = $pairing1a;
+    $game2->board = 2;
+    $game2->player1 = $player1;
+    $game2->player2 = $player2;
+    $game2->result1 = Result::DRAW();
+    $game2->result2 = Result::DRAW();
+    $manager->persist($game2);
+
+    $game3 = new Game();
+    $game3->pairing = $pairing1a;
+    $game3->board = 3;
+    $game3->player1 = $player1;
+    $game3->player2 = $player2;
+    $game3->result1 = Result::LOSS;
+    $game3->result2 = Result::WIN;
+    $manager->persist($game3);
+     
+    // ROUND 2: Bye, unknown, unset 
+    $game4 = new Game();
+    $game4->pairing = $pairing2;
+    $game4->board = 1;
+    $game4->player1 = $player2;
+    $game4->player2 = $player1;
+    $game4->result1 = Result::BYE_WIN;
+    $game4->result2 = Result::BYE_LOSS;
+    $manager->persist($game4);
+    
+    $game5 = new Game();
+    $game5->pairing = $pairing2;
+    $game5->board = 2;
+    $game4->player1 = $player2;
+    $game4->player2 = $player1;
+    $game5->result1 = Result::UNKNOWN;
+    $game5->result2 = Result::UNKNOWN;
+    $manager->persist($game5);
+    
+    $game6 = new Game();
+    $game6->pairing = $pairing2;
+    $game6->board = 3;
+    $game4->player1 = $player2;
+    $game4->player2 = $player1;
+    $manager->persist($game6);
     
 
     $manager->flush();
