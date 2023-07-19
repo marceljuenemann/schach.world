@@ -29,8 +29,6 @@ services:
         resource: '../src/League/Controller/'
     Nsv\League\Core\:
         resource: '../src/League/Core/'
-    Nsv\League\EventSubscriber\:
-        resource: '../src/League/EventSubscriber/'
     Nsv\League\Repository\:
         resource: '../src/League/Repository/'
 

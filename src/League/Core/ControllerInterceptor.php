@@ -1,6 +1,6 @@
 <?php
 
-namespace Nsv\League\EventSubscriber;
+namespace Nsv\League\Core;
 
 use Nsv\League\Controller\AbstractLeagueController;
 use Nsv\League\Repository\LeagueRepository;

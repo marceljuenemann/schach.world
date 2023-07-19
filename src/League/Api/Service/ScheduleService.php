@@ -12,7 +12,6 @@ use Nsv\League\Entity;
 class ScheduleService
 {
   public function matchDays(Entity\Division $division): array {
-    // TODO: this deserves as unit test.
     $matchDays = [];
     $dates = $division->dates();
     foreach ($division->pairings as $pairing) {

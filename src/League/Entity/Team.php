@@ -36,7 +36,6 @@ class Team
       return trim(trim($this->name) . ' ' . ($this->number > 1 ? $this->number : ''));
     }
 
-    // TODO: add linkName and use that from twig macro nsv.link.
     public function uri() {
       return $this->league->uri() . "?mannschaft=" . $this->id;
     }
