@@ -2,9 +2,9 @@
 
 namespace Nsv\League\Controller;
 
+use Doctrine\ORM\EntityNotFoundException;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Repository\DivisionRepository;
-use Nsv\Util\TextSanitizer;
 use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -68,17 +68,20 @@ class LegacyController extends AbstractLeagueController {
   }
 
   private function checkForRedirect(string $module): ?Response {
-    switch ($module) {
-      case 'spielplan':
-        $division = $this->divisionRepository->find((int) $_GET['staffel']);
-        if (!$division) throw new NotFoundHttpException('Division not found');
-        return $this->redirectToRoute('league_schedule', [
-          'division' => $division->path(),
-          'league' => $division->league->path
-        ]);
+    try {
+      switch ($module) {
+        case 'spielplan':
+          $division = $this->divisionRepository->find($_GET['staffel']);
+          return $this->redirectToRoute('league_schedule', [
+            'division' => $division->path(),
+            'league' => $division->league->path
+          ]);
 
-      default:
-        return null;
-    }
+        default:
+          return null;
+      }
+    } catch (EntityNotFoundException $e) {
+      throw new NotFoundHttpException($e->getMessage());
+    } 
   }
 }
