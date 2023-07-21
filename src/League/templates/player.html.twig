@@ -30,9 +30,13 @@
       <tr>
         <td><a href="{{ game.uri }}">{{ game.round }}</a></td>
         <td>{{ game.board }}</td>
-        <td style="{{ game.white ? '' : 'background: black; color: white' }}">
-          {{ game.white ? 'W' : 'S' }}
-        </td>
+        {% if game.opponentPlayer %}
+          <td style="{{ game.white ? '' : 'background: black; color: white' }}">
+            {{ game.white ? 'W' : 'S' }}
+          </td>
+        {% else %}
+          <td>&nbsp;</td>
+        {% endif %}
         <td>{{ game.home ? 'Heim' : 'Gast' }}</td>
         {# TODO: null player #}
         <td class='l'>{{ nsv.link(game.opponentTeam) }}</td>

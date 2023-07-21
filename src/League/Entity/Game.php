@@ -25,11 +25,11 @@ class Game
 
     #[ORM\ManyToOne(targetEntity: Player::class)]
     #[ORM\JoinColumn(name: "spieler1", referencedColumnName: "id")]
-    private Player $player1;
+    private ?Player $player1 = null;
 
     #[ORM\ManyToOne(targetEntity: Player::class)]
     #[ORM\JoinColumn(name: "spieler2", referencedColumnName: "id")]
-    private Player $player2;
+    private ?Player $player2 = null;
 
     #[ORM\Column(name: 'ergebnis1')]
     private ?string $result1;

@@ -1,6 +1,8 @@
 {# A simple link. Requires uri and name fields on the model. #}
 {% macro link(model) %}
-  <a href="{{model.uri}}">{{model.name|e}}</a>
+  {% if model %}
+    <a href="{{model.uri}}">{{model.name|e}}</a>
+  {% endif %}
 {% endmacro %}
 
 {# A responsive description list. #}

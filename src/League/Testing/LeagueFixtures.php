@@ -236,8 +236,8 @@ class LeagueFixtures extends Fixture
     $game5 = new Game();
     $game5->pairing = $pairing2;
     $game5->board = 2;
-    $game4->player1 = $player2;
-    $game4->player2 = $player1;
+    $game5->player1 = $player2;
+    $game5->player2 = $player1;
     $game5->result1 = Result::UNKNOWN;
     $game5->result2 = Result::UNKNOWN;
     $manager->persist($game5);
@@ -245,9 +245,19 @@ class LeagueFixtures extends Fixture
     $game6 = new Game();
     $game6->pairing = $pairing2;
     $game6->board = 3;
-    $game4->player1 = $player2;
-    $game4->player2 = $player1;
+    $game6->player1 = $player2;
+    $game6->player2 = $player1;
     $manager->persist($game6);
+
+    // Game against NULL player.
+    $game7 = new Game();
+    $game7->pairing = $pairing2;
+    $game7->board = 4;
+    $game7->player1 = $player2;
+    $game7->player2 = null;
+    $game7->result1 = Result::BYE_WIN;
+    $game7->result2 = Result::BYE_LOSS;
+    $manager->persist($game7);
     
 
     $manager->flush();

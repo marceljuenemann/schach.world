@@ -14,10 +14,10 @@ class PlayerGame
   public int $board;
   public bool $home;
   public bool $white;
-  public string $result;
-  public string $opponentResult;
+  public string|null $result;
+  public string|null $opponentResult;
   public Team $opponentTeam;
-  public Player $opponentPlayer;
+  public Player|null $opponentPlayer;
   public string $uri;
 
   public static function forPlayer(Player $player, Entity\Game $game) {
@@ -33,7 +33,8 @@ class PlayerGame
     $result->result = $result->home ? $game->result1 : $game->result2;
     $result->opponentResult = !$result->home ? $game->result1 : $game->result2;
     $result->opponentTeam = Team::fromEntity($result->home ? $game->pairing->team2 : $game->pairing->team1);
-    $result->opponentPlayer = Player::fromEntity($result->home ? $game->player2 : $game->player1);
+    $opponentPlayer = $result->home ? $game->player2 : $game->player1;
+    $result->opponentPlayer = $opponentPlayer ? Player::fromEntity($opponentPlayer) : null;
     $result->uri = $game->pairing->division->matchDayUri($result->round);
     return $result;
   }

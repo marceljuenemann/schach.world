@@ -25,8 +25,8 @@ class Result
   /**
    * Returns whether the game was actually a played chess game, as opposed to a bye.
    */
-  public static function wasPlayed(string $result): bool {
-    return in_array($result, [self::WIN, self::DRAW(), self::LOSS]);
+  public static function wasPlayed(string|null $result): bool {
+    return $result !== null && in_array($result, [self::WIN, self::DRAW(), self::LOSS]);
   }
 
   /**
