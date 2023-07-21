@@ -5,6 +5,7 @@ namespace Nsv\League\Controller;
 use Doctrine\ORM\EntityNotFoundException;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Repository\DivisionRepository;
+use Nsv\League\Repository\PlayerRepository;
 use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,7 +17,10 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class LegacyController extends AbstractLeagueController {
 
-  function __construct(private DivisionRepository $divisionRepository) {}
+  function __construct(
+    private DivisionRepository $divisionRepository,
+    private PlayerRepository $playerRepository
+  ) {}
 
   #[Route('ligen/{league}/', name: 'legacy')]
   public function legacy(Request $request): Response {
@@ -75,6 +79,13 @@ class LegacyController extends AbstractLeagueController {
           return $this->redirectToRoute('league_schedule', [
             'division' => $division->path(),
             'league' => $division->league->path
+          ]);
+
+        case 'spieler':
+          $player = $this->playerRepository->find($_GET['spieler']);
+          return $this->redirectToRoute('league_player', [
+            'playerId' => $player->id,
+            'league' => $player->team->league->path
           ]);
 
         default:

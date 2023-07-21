@@ -19,7 +19,7 @@ class DivisionRepository extends ServiceEntityRepository
   public function find($id, $lockMode = null, $lockVersion = null): Division {
     $entity = parent::find((int) $id, $lockMode, $lockVersion);
     if (!$entity) {
-      throw new EntityNotFoundException("Division not found");
+      throw new NotFoundHttpException("Division not found");
     }
     return $entity;
   }
