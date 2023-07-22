@@ -1,0 +1,34 @@
+{% extends '@league/legacy-layout.html.twig' %}
+{% import "macros.html.twig" as nsv %}
+{% set title = league.name %}
+
+{% block content %}
+<div class="row sed-overview">
+  {% for division in divisions %}
+    <div class="col-12 col-xl-6">
+      <h4><a>{{division.name}}</a></h4>
+      {% for matchDay in division.matchDays %}
+        <table class="sed_normal mb-4">
+          <tr>
+            <td colspan="3"><b><a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag &ndash; {{matchDay.date|date('d.m.Y')}}</a></b></td>
+            <td class="sed-overview-results">
+              {# TODO #}
+              <a href='?staffel=$id&amp;r=$runde'><img style='border: none' alt='HTML-Version' src='/ligen/_templates/systemicons/spieltag.gif'></a>
+              <a href='?staffel=$id&amp;r=$runde&ausgabe=pdf'><img style='border: none' alt='Druckversion' src='/ligen/_templates/systemicons/printer.gif'></a>
+              <a href='?staffel=$id&r=statistik'><img style='border: none' alt='Statistiken' src='/ligen/_templates/systemicons/statistiken.gif'></a>
+            </td>
+          </div>
+          {% for pairing in matchDay.pairings %}
+            <tr>
+              <td class="sed-overview-team">{{ nsv.link(pairing.team1) }}</td>
+              <td>&nbsp; &ndash; &nbsp;</td>
+              <td class="sed-overview-team">{{ nsv.link(pairing.team2) }}</td>
+              <td class="sed-overview-results">{{pairing.result}}</td>
+            </td>
+          {% endfor %}
+        </table>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

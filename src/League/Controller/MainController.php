@@ -14,6 +14,19 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/ligen/{league}/', name: 'league_')]
 class MainController extends AbstractLeagueController {
 
+  #[Route('overview/', name: 'overview')]
+  public function overview(ScheduleService $service): Response {
+    $today = '2023-01-27'; //date('Y-m-d');
+    $overview = $service->leagueOverview($this->league, $today, false);
+
+
+
+    // TODO: Check if all matches with games from the same day.
+    return $this->renderWithLegacySystem('overview.html.twig', [
+      'divisions' => $overview->divisions
+    ]);
+  }
+
   #[Route('overview/unstable-api/', name: 'overview_api')]
   public function overview_api(ScheduleService $service): Response {
     // TODO: Check if all matches with games from the same day.

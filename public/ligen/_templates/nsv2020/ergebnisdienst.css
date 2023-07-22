@@ -58,9 +58,20 @@
   }
 }
 
-/*****************************************/
-/*** PFLICHT LAUT TEMPLATE-RICHTLINIEN ***/
-/*****************************************/
+/***********************/
+/*** LEAGUE OVERVIEW ***/
+/***********************/
+
+.sed-overview-team {
+  min-width: 140px;
+}
+
+.sed-overview-results {
+  min-width: 60px;
+  text-align: center;
+}
+
+/* ********** */
 
 table.sed_normal {
 }
