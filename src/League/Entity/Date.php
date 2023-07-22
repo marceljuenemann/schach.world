@@ -28,6 +28,9 @@ class Date
     #[ORM\Column(name: 'runde')]
     private int $round;
 
+    /**
+     * Date in format YYYY-MM-DD.
+     */
     #[ORM\Column(name: 'datum')]
     private string $date;
 

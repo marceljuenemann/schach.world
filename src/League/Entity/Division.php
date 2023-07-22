@@ -39,15 +39,40 @@ class Division
 
     /**
      * Returns all Date entities for this division, keyed by round number.
+     * 
+     * @return array round => Entity\Date.
      */
     public function dates(): array {
       $dates = [];
       foreach ($this->league->dates as $date) {
         if ($date->division && $date->division != $this) continue;
         if (isset($dates[$date->round])) continue;  // Dates are sorted by most specific first.
-        $dates[$date->round] = $date->date;
+        $dates[$date->round] = $date;
       }
       return $dates;
+    }
+
+    /**
+     * Returns the Entity\Date closest to the given date.
+     * 
+     * TODO: Create a function that can return multiple Dates, in case there are multiple rounds on one day.
+     * TODO: Unit test
+     * TODO: Return Date object
+     */
+    public function closestMatchDate(string $date): Date|null {
+      $date = date_create($date);
+      $closestDate = null;
+      $closestDiff = null;
+      foreach ($this->dates() as $round => $matchDate) {
+        $interval = date_diff(date_create($matchDate->date), $date);
+        $diff = (int) $interval->format('%R%a'); // +/- number of days
+        // TODO: handle multiple rounds on one date correctly. Something for a unit test
+        if ($closestDiff === null || abs($diff) < abs($diff)) {
+          $closestDate = $matchDate;
+          $closestDiff = $diff;
+        }
+      }
+      return $closestDate;
     }
 
     public function teams(): array {
