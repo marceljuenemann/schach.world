@@ -56,8 +56,6 @@ class Division
      * Returns the Entity\Date closest to the given date.
      * 
      * TODO: Create a function that can return multiple Dates, in case there are multiple rounds on one day.
-     * TODO: Unit test
-     * TODO: Return Date object
      */
     public function closestMatchDate(string $date): Date|null {
       $date = date_create($date);
@@ -67,7 +65,7 @@ class Division
         $interval = date_diff(date_create($matchDate->date), $date);
         $diff = (int) $interval->format('%R%a'); // +/- number of days
         // TODO: handle multiple rounds on one date correctly. Something for a unit test
-        if ($closestDiff === null || abs($diff) < abs($diff)) {
+        if ($closestDiff === null || abs($diff) < abs($closestDiff)) {
           $closestDate = $matchDate;
           $closestDiff = $diff;
         }

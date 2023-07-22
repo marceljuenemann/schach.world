@@ -15,6 +15,7 @@ class DivisionTest extends TestCase
   protected function setUp(): void {
     $this->league = new League();
     $this->league->path = 'test-league';
+    $this->league->dates = [];
 
     $this->division = new Division();
     $this->division->id = 42;
@@ -35,6 +36,25 @@ class DivisionTest extends TestCase
     $this->assertEquals([1 => $date1, 2 => $date2], $this->division->dates());
   }
 
+  public function testClosestMatchDate_closestDate() {
+    $date1 = $this->addDate(1, '2020-01-01');
+    $date2 = $this->addDate(2, '2020-01-04');
+
+    $this->assertEquals($date2, $this->division->closestMatchDate('2020-01-03'));
+  }
+
+  public function testClosestMatchDate_exactDate() {
+    $date1 = $this->addDate(1, '2020-01-01');
+    $date2 = $this->addDate(2, '2020-01-04');
+    $date3 = $this->addDate(3, '2020-01-06');
+
+    $this->assertEquals($date2, $this->division->closestMatchDate('2020-01-04'));
+  }
+
+  public function testClosestMatchDate_noDates() {
+    $this->assertNull($this->division->closestMatchDate('2020-01-04'));
+  }
+
   private function addDate($round, $date, $division = null) {
     $entity = new Date();
     $entity->league = $this->league;
@@ -42,7 +62,7 @@ class DivisionTest extends TestCase
     $entity->date = $date;
     $entity->division = $division;
 
-    $this->league->dates = array_merge($this->league->dates ?: [], [$entity]);
+    $this->league->dates = array_merge($this->league->dates, [$entity]);
     return $entity;
   }
 }
