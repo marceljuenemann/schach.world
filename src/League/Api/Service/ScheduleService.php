@@ -2,14 +2,16 @@
 
 namespace Nsv\League\Api\Service;
 
+use Nsv\League\Api\Model\Division;
 use Nsv\League\Api\Model\MatchDay;
 use Nsv\League\Api\Model\Pairing;
 use Nsv\League\Entity;
-use Nsv\League\Entity\Date;
-use Nsv\League\Entity\Division;
+use Nsv\League\Repository\PairingRepository;
 
 class ScheduleService
 {
+  function __construct(private PairingRepository $pairingRepository) {}
+
   /**
    * Returns all match days for a specific division.
    */
@@ -37,8 +39,32 @@ class ScheduleService
    * @param date the date for which to show games. Typically today.
    * @param exactDate whether to only return games of the exact date or of the closest match day.
    */
-  public function overview(Entity\League $league, string $date, bool $exactDate) {
+  public function leagueOverview(Entity\League $league, string $date, bool $exactDate) {
+    // TODO: Write tests
     $result = new \stdClass();
+
+    // Determine rounds to return for each division.
+    $roundsToFetch = [];
+    foreach ($league->divisions as $division) {
+      $model = Division::fromEntity($division);
+      $result->divisions[$model->id] = $model;
+      foreach ($this->roundsForDivision($division, $date, $exactDate) as $round) {
+        $roundsToFetch[] = $round;
+        // TODO: MatchDay::fromRound()
+        $md = new MatchDay();
+        $md->round = $round->round;
+        $md->date = $round->date;
+        $md->uri = $division->matchDayUri($md->round);  // TODO: $round->uri()
+        $model->matchDays[$md->round] = $md;
+      }
+    }
+
+    // Fetch relevant matches.
+    $pairings = $this->pairingRepository->findByRounds($roundsToFetch);
+    foreach ($pairings as $pairing) {
+      $matchDay = $result->divisions[$pairing->division->id]->matchDays[$pairing->round];
+      $matchDay->pairings[] = Pairing::fromEntity($pairing);
+    }
 
     // Fetch and sort all configured match dates.
     $result->allDates = array_unique(array_map(function(Entity\Date $date) {
@@ -46,17 +72,30 @@ class ScheduleService
     }, $league->dates()->toArray()));
     sort($result->allDates);
 
-    // Determine rounds to fetch for each division (division => Entity\Date).
-    $closestDates = [];
-    foreach ($league->divisions as $division) {
-      $closestDate = $division->closestMatchDate($date);
-      if ($closestDate) {
-        $result->closestDates[$division->id] = $closestDate->date;
-        $result->closestRounds[$division->id] = $closestDate->round;
-      }
-      // TODO: handle null
-    }
 
     return $result;
+  }
+
+  /**
+   * Returns the Date entities to show in the overview for this division.
+   */
+  private function roundsForDivision(Entity\Division $division, string $date, bool $exactDate) {
+    // Determine the date to show.
+    if (!$exactDate) {
+      $closestDate = $division->closestMatchDate($date);
+      if ($closestDate) {
+        $date = $closestDate->date;
+      }
+    }
+
+    return $division->roundsOnDate($date);
+    /*
+    // If no match dates were found yet and not an exact match, return first round. 
+    if (!count($matchDays) && !$exactDate) {
+      // TODO: Return first round
+    }
+
+    return $matchDays;
+    */
   }
 }

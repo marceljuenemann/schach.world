@@ -49,14 +49,14 @@ class Division
         if (isset($dates[$date->round])) continue;  // Dates are sorted by most specific first.
         $dates[$date->round] = $date;
       }
+      // TODO: Sort by date?
       return $dates;
     }
 
     /**
      * Returns the Entity\Date closest to the given date.
-     * 
-     * TODO: Create a function that can return multiple Dates, in case there are multiple rounds on one day.
      */
+    // TODO: Convert to return Round object?
     public function closestMatchDate(string $date): Date|null {
       $date = date_create($date);
       $closestDate = null;
@@ -64,13 +64,24 @@ class Division
       foreach ($this->dates() as $round => $matchDate) {
         $interval = date_diff(date_create($matchDate->date), $date);
         $diff = (int) $interval->format('%R%a'); // +/- number of days
-        // TODO: handle multiple rounds on one date correctly. Something for a unit test
+        // TODO: handle multiple rounds on one date correctly.
         if ($closestDiff === null || abs($diff) < abs($closestDiff)) {
           $closestDate = $matchDate;
           $closestDiff = $diff;
         }
       }
       return $closestDate;
+    }
+
+    /**
+     * Yields all rounds that happen on the given date.
+     */
+    public function roundsOnDate(string $date) {
+      foreach ($this->dates() as $matchDate) {
+        if ($matchDate->date == $date) {
+          yield new Round($this, $matchDate->round, $matchDate->date);
+        }
+      }
     }
 
     public function teams(): array {

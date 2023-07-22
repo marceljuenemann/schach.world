@@ -8,6 +8,7 @@ class Division
 {
   public int $id;
   public string $name;
+  public ?array $matchDays;
 
   public static function fromEntity(Entity\Division $division) {
     $result = new Division();
