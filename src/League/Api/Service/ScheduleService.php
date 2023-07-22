@@ -46,12 +46,13 @@ class ScheduleService
     }, $league->dates()->toArray()));
     sort($result->allDates);
 
-    // Determine closest match date for each division (division => Entity\Date).
+    // Determine rounds to fetch for each division (division => Entity\Date).
     $closestDates = [];
     foreach ($league->divisions as $division) {
       $closestDate = $division->closestMatchDate($date);
       if ($closestDate) {
         $result->closestDates[$division->id] = $closestDate->date;
+        $result->closestRounds[$division->id] = $closestDate->round;
       }
       // TODO: handle null
     }
@@ -59,4 +60,3 @@ class ScheduleService
     return $result;
   }
 }
- 

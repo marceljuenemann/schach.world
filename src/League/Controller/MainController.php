@@ -16,7 +16,7 @@ class MainController extends AbstractLeagueController {
 
   #[Route('overview/unstable-api/', name: 'overview_api')]
   public function overview_api(ScheduleService $service): Response {
-    $overview = $service->overview($this->league, '2023-01-18', true);
+    $overview = $service->overview($this->league, '2023-03-01', true);
     return $this->apiResponse($overview);
   }
 }
