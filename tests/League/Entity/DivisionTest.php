@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Api\Service;
 
+use Nsv\League\Entity\Date;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use PHPUnit\Framework\TestCase;
@@ -23,5 +24,25 @@ class DivisionTest extends TestCase
   public function testMatchDayUri() {
     $this->assertEquals("/ligen/test-league/?staffel=42&r=", $this->division->matchDayUri());
     $this->assertEquals("/ligen/test-league/?staffel=42&r=2", $this->division->matchDayUri(2));
+  }
+
+  public function testDates() {
+    $date1 = $this->addDate(1, '2020-01-01');
+    $fake1 = $this->addDate(2, '2020-01-01', new Division());  // not for this division.
+    $date2 = $this->addDate(2, '2020-02-02', $this->division);
+    $fake2 = $this->addDate(2, '2020-02-03');
+
+    $this->assertEquals([1 => $date1, 2 => $date2], $this->division->dates());
+  }
+
+  private function addDate($round, $date, $division = null) {
+    $entity = new Date();
+    $entity->league = $this->league;
+    $entity->round = $round;
+    $entity->date = $date;
+    $entity->division = $division;
+
+    $this->league->dates = array_merge($this->league->dates ?: [], [$entity]);
+    return $entity;
   }
 }
