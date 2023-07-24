@@ -23,13 +23,18 @@ class MainController extends AbstractLeagueController {
   ): Response {
     $today = date('Y-m-d');
     $allDates = $service->leagueDates($this->league);
+    // TODO: handle case if no dates found at all. Show a beatiful info message :)
     $dateToShow = $date ?: $service->closestDate($allDates, $today);
     $matches = $service->matchesByDate($this->league, $dateToShow);
 
-    // TODO: handle case if no dates found at all.
+
+    // Show at most three future dates and at most five tabs in total.
+    $pos = array_search($dateToShow, $allDates);
+    $tabs = array_slice($allDates, 0, $pos + 4);
+    $tabs = array_slice($tabs, max($pos-4, 0));
     
     return $this->renderWithLegacySystem('overview.html.twig', [
-      'tabs' => $allDates,
+      'tabs' => $tabs,
       'activeTab' => $dateToShow,
       'matches' => $matches
     ]);
