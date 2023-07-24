@@ -31,7 +31,7 @@ class MainController extends AbstractLeagueController {
     // Show at most three future dates and at most five tabs in total.
     $pos = array_search($dateToShow, $allDates);
     $tabs = array_slice($allDates, 0, $pos + 4);
-    $tabs = array_slice($tabs, max($pos-4, 0));
+    $tabs = array_slice($tabs, max(count($tabs) - 5, 0));
     
     return $this->renderWithLegacySystem('overview.html.twig', [
       'tabs' => $tabs,
