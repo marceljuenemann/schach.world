@@ -14,7 +14,7 @@
   {% endfor %}
 </ul>
 
-{% for division in divisions %}
+{% for division in matches %}
   {% if division.matchDays|default(false) %}
     <h4><a>{{division.name}}</a></h4>
     {% for matchDay in division.matchDays %}

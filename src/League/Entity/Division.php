@@ -54,26 +54,6 @@ class Division
     }
 
     /**
-     * Returns the Entity\Date closest to the given date.
-     */
-    // TODO: Convert to return Round object?
-    public function closestMatchDate(string $date): Date|null {
-      $date = date_create($date);
-      $closestDate = null;
-      $closestDiff = null;
-      foreach ($this->dates() as $round => $matchDate) {
-        $interval = date_diff(date_create($matchDate->date), $date);
-        $diff = (int) $interval->format('%R%a'); // +/- number of days
-        // TODO: handle multiple rounds on one date correctly.
-        if ($closestDiff === null || abs($diff) < abs($closestDiff)) {
-          $closestDate = $matchDate;
-          $closestDiff = $diff;
-        }
-      }
-      return $closestDate;
-    }
-
-    /**
      * Yields all rounds that happen on the given date.
      */
     public function roundsOnDate(string $date) {
