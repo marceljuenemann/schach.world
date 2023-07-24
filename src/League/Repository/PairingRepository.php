@@ -3,6 +3,8 @@
 namespace Nsv\League\Repository;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\Collections\Criteria;
 use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Entity\Pairing;
@@ -20,6 +22,9 @@ class PairingRepository extends ServiceEntityRepository
    * Returns all pairings for the specified Round objects.
    */
   public function findByRounds(array $rounds) {
+    if (count($rounds) == 0) {
+      return new ArrayCollection();
+    }
     $expr = Criteria::expr();
     $criteria = new Criteria();
     foreach ($rounds as $round) {

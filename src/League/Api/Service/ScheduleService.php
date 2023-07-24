@@ -50,6 +50,7 @@ class ScheduleService
       $result->divisions[$model->id] = $model;
       foreach ($this->roundsForDivision($division, $date, $exactDate) as $round) {
         $roundsToFetch[] = $round;
+        $result->datesShown[] = $round->date;
         // TODO: MatchDay::fromRound()
         $md = new MatchDay();
         $md->round = $round->round;
@@ -58,6 +59,7 @@ class ScheduleService
         $model->matchDays[$md->round] = $md;
       }
     }
+    $result->datesShown = array_unique($result->datesShown);
 
     // Fetch relevant matches.
     $pairings = $this->pairingRepository->findByRounds($roundsToFetch);
@@ -66,12 +68,11 @@ class ScheduleService
       $matchDay->pairings[] = Pairing::fromEntity($pairing);
     }
 
-    // Fetch and sort all configured match dates.
+    // List all match dates for this league.
     $result->allDates = array_unique(array_map(function(Entity\Date $date) {
       return $date->date;
     }, $league->dates()->toArray()));
     sort($result->allDates);
-
 
     return $result;
   }
