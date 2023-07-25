@@ -59,8 +59,22 @@
 }
 
 /***********************/
-/*** LEAGUE OVERVIEW ***/
+/*** SCHEDULE & HOME ***/
 /***********************/
+
+.sed-schedule {
+  white-space: nowrap;
+}
+
+.sed-schedule .team {
+  flex: 1 1px;
+  max-width: 160px;
+}
+
+.sed-schedule .result {
+  text-align: center;
+  width: 60px;
+}
 
 .sed-overview-team {
   min-width: 150px;

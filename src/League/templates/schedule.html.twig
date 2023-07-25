@@ -2,36 +2,38 @@
 {% import "macros.html.twig" as nsv %}
 {% set title = division.name %}
 
-{# TODO: head title #}
-
 {% block content %}
-<table class="sed_normal" cellspacing="0" cellpadding="2">
+<div class="nsv-table sed-schedule">
   {% for matchDay in matchDays %}
-    <tr><td colspan="5" style="padding-top: 20px">
-      <h4><a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag &ndash; {{matchDay.date|date('d.m.Y')}}</a></h4>
-    </td></tr>
-
+    <h4 class="mt-4"><a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag &ndash; {{matchDay.date|date('d.m.Y')}}</a></h4>
     {% for pairing in matchDay.pairings %}
-      <tr>
-        <td>{{ nsv.link(pairing.team1) }}</td>
-        <td>&ndash;</td>
-        <td>{{ nsv.link(pairing.team2) }}</td>
-        <td>&nbsp;{{pairing.result}}</td>
-        <td>
-          &nbsp;
-          {% if pairing.wasMoved %}
+      <div class="d-flex">
+        <div class="team">{{ nsv.link(pairing.team1) }}&nbsp;</div>
+        <div>&ndash;&nbsp;</div>
+        <div class="team">{{ nsv.link(pairing.team2) }}&nbsp;</div>
+        <div class="result">
+          {% if pairing.result %}
+            {{ pairing.result }}
+          {% elseif pairing.wasMoved %}
             {% if pairing.moveDate %}
-              (am {{ pairing.moveDate|date('d.m.') }}) 
+              ({{ pairing.moveDate|date('d.m.') }}) 
             {% else %}
-              (verlegt) 
+              (verl.) 
             {% endif %}
           {% endif %}
+        </div>
+        <div class="d-none d-md-block">
           {% if pairing.host %}
-            (Ausrichter: {{ nsv.link(pairing.host) }})
+            &nbsp;(Ausrichter: {{ nsv.link(pairing.host) }})
           {% endif %}
-        </td>
-      </tr>
+        </div>
+      </div>
+      {% if pairing.host %}
+        <div class="d-block d-md-none" style="font-style: italic">
+          (Ausrichter: {{ nsv.link(pairing.host) }})
+        </div>
+      {% endif %}
     {% endfor %}
   {% endfor %}
-</table>
+</div>
 {% endblock %}
