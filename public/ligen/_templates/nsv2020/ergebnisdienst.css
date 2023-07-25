@@ -66,14 +66,22 @@
   white-space: nowrap;
 }
 
-.sed-schedule .team {
-  flex: 1 1px;
-  max-width: 160px;
-}
-
 .sed-schedule .result {
+  margin-left: auto;
   text-align: center;
   width: 60px;
+}
+
+/** On larger devices, align team names vertically. */
+@media (min-width: 450px) {
+  .sed-schedule .team {
+    flex: 1 1px;
+    max-width: 160px;
+  }
+
+  .sed-schedule .result {
+    margin-left: 0;
+  }
 }
 
 .sed-overview-team {
