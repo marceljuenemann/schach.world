@@ -15,6 +15,9 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/ligen/{league}/', name: 'league_')]
 class MainController extends AbstractLeagueController {
 
+  const HOME_NEXT_DATES_COUNT = 2;
+  const HOME_MAX_DATES_COUNT = 4;
+
   #[Route('overview/', name: 'overview')]
   public function overview(
     #[MapQueryParameter(filter: \FILTER_VALIDATE_REGEXP, options: ['regexp' => '/^\d{4}-\d{2}-\d{2}$/'])]
@@ -30,8 +33,8 @@ class MainController extends AbstractLeagueController {
 
     // Show at most three future dates and at most five tabs in total.
     $pos = array_search($dateToShow, $allDates);
-    $tabs = array_slice($allDates, 0, $pos + 4);
-    $tabs = array_slice($tabs, max(count($tabs) - 5, 0));
+    $tabs = array_slice($allDates, 0, $pos + 1 + self::HOME_NEXT_DATES_COUNT);
+    $tabs = array_slice($tabs, max(count($tabs) - self::HOME_MAX_DATES_COUNT, 0));
     
     return $this->renderWithLegacySystem('overview.html.twig', [
       'tabs' => $tabs,

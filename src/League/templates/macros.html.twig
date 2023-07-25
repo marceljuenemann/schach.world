@@ -1,0 +1,32 @@
+{# Schedule: Shows a pairing with result and possibly host. #}
+{% macro pairings(pairings) %}
+  {% import "macros.html.twig" as nsv %}
+  {% for pairing in pairings %}
+    <div class="d-flex text-nowrap">
+      <div class="sed-schedule-team">{{ nsv.link(pairing.team1) }}&nbsp;</div>
+      <div>&ndash;&nbsp;</div>
+      <div class="sed-schedule-team">{{ nsv.link(pairing.team2) }}&nbsp;</div>
+      <div class="sed-schedule-result">
+        {% if pairing.result %}
+          {{ pairing.result }}
+        {% elseif pairing.wasMoved %}
+          {% if pairing.moveDate %}
+            ({{ pairing.moveDate|date('d.m.') }}) 
+          {% else %}
+            (verl.) 
+          {% endif %}
+        {% endif %}
+      </div>
+      <div class="d-none d-md-block">
+        {% if pairing.host %}
+          &nbsp;(Ausrichter: {{ nsv.link(pairing.host) }})
+        {% endif %}
+      </div>
+    </div>
+    {% if pairing.host %}
+      <div class="d-block d-md-none" style="font-style: italic">
+        (Ausrichter: {{ nsv.link(pairing.host) }})
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}

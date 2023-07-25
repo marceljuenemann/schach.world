@@ -1,39 +1,12 @@
 {% extends '@league/legacy-layout.html.twig' %}
-{% import "macros.html.twig" as nsv %}
+{% import "@league/macros.html.twig" as macros %}
 {% set title = division.name %}
 
 {% block content %}
-<div class="nsv-table sed-schedule">
+<div class="nsv-table">
   {% for matchDay in matchDays %}
     <h4 class="mt-4"><a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag &ndash; {{matchDay.date|date('d.m.Y')}}</a></h4>
-    {% for pairing in matchDay.pairings %}
-      <div class="d-flex">
-        <div class="team">{{ nsv.link(pairing.team1) }}&nbsp;</div>
-        <div>&ndash;&nbsp;</div>
-        <div class="team">{{ nsv.link(pairing.team2) }}&nbsp;</div>
-        <div class="result">
-          {% if pairing.result %}
-            {{ pairing.result }}
-          {% elseif pairing.wasMoved %}
-            {% if pairing.moveDate %}
-              ({{ pairing.moveDate|date('d.m.') }}) 
-            {% else %}
-              (verl.) 
-            {% endif %}
-          {% endif %}
-        </div>
-        <div class="d-none d-md-block">
-          {% if pairing.host %}
-            &nbsp;(Ausrichter: {{ nsv.link(pairing.host) }})
-          {% endif %}
-        </div>
-      </div>
-      {% if pairing.host %}
-        <div class="d-block d-md-none" style="font-style: italic">
-          (Ausrichter: {{ nsv.link(pairing.host) }})
-        </div>
-      {% endif %}
-    {% endfor %}
+    {{ macros.pairings(matchDay.pairings) }}
   {% endfor %}
 </div>
 {% endblock %}

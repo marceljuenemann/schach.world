@@ -1,5 +1,5 @@
 {% extends '@league/legacy-layout.html.twig' %}
-{% import "macros.html.twig" as nsv %}
+{% import "@league/macros.html.twig" as macros %}
 {% set title = league.name %}
 
 {% block content %}
@@ -18,11 +18,17 @@
   {% if division.matchDays|default(false) %}
     <h4><a>{{division.name}}</a></h4>
     {% for matchDay in division.matchDays %}
+      <div class="nsv-table mb-4">
+        <div class="font-weight-bold"><a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag</a></div>
+        {{ macros.pairings(matchDay.pairings) }}
+      </div>
+
+    {#}
       <table class="sed_normal mb-4">
         <tr>
           <td colspan="3"><b><a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag &ndash; {{matchDay.date|date('d.m.Y')}}</a></b></td>
           <td class="sed-overview-results">
-            {# TODO #}
+          TODO
             <a href='?staffel=$id&amp;r=$runde'><img style='border: none' alt='HTML-Version' src='/ligen/_templates/systemicons/spieltag.gif'></a>
             <a href='?staffel=$id&amp;r=$runde&ausgabe=pdf'><img style='border: none' alt='Druckversion' src='/ligen/_templates/systemicons/printer.gif'></a>
             <a href='?staffel=$id&r=statistik'><img style='border: none' alt='Statistiken' src='/ligen/_templates/systemicons/statistiken.gif'></a>
@@ -37,6 +43,7 @@
           </td>
         {% endfor %}
       </table>
+      #}
     {% endfor %}
   {% endif %}
 {% endfor %}
