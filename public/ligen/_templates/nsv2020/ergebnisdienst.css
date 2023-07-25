@@ -62,6 +62,12 @@
 /*** SCHEDULE & HOME ***/
 /***********************/
 
+.sed-schedule-heading {
+  font-weight: bold;
+  max-width: calc(2 * 160px + 15px);
+  width: 100%;
+}
+
 .sed-schedule-result {
   margin-left: auto;
   text-align: center;

@@ -64,12 +64,7 @@ class ScheduleService
       $result[$division->id] = Division::fromEntity($division);
       foreach ($division->roundsOnDate($date) as $round) {
         $roundsToFetch[] = $round;
-        // TODO: MatchDay::fromRound()
-        $md = new MatchDay();
-        $md->round = $round->round;
-        $md->date = $round->date;
-        $md->uri = $division->matchDayUri($md->round);  // TODO: $round->uri()
-        $result[$division->id]->matchDays[$md->round] = $md;
+        $result[$division->id]->matchDays[$round->round] = MatchDay::fromRound($round);
       }
     }
 
@@ -91,11 +86,8 @@ class ScheduleService
     $dates = $division->dates();
     foreach ($division->pairings as $pairing) {
       if (!isset($matchDays[$pairing->round])) {
-        $md = new MatchDay();
-        $md->round = $pairing->round;
-        $md->date = isset($dates[$md->round]) ? $dates[$md->round]->date : null;
-        $md->uri = $division->matchDayUri($md->round);
-        $matchDays[$pairing->round] = $md;
+        $date = isset($dates[$pairing->round]) ? $dates[$pairing->round]->date : null;
+        $matchDays[$pairing->round] = MatchDay::create($division, $pairing->round, $date);
       }
       $matchDays[$pairing->round]->pairings[] = Pairing::fromEntity($pairing);
     }

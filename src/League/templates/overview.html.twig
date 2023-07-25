@@ -19,31 +19,19 @@
     <h4><a>{{division.name}}</a></h4>
     {% for matchDay in division.matchDays %}
       <div class="nsv-table mb-4">
-        <div class="font-weight-bold"><a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag</a></div>
+        <div class="d-flex">
+          <div class="sed-schedule-heading">
+            <a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag</a>
+          </div>
+          <div class="text-nowrap">
+            {# TODO: Don't go all the way to the right on large screens... #}
+            <a href='{{ matchDay.uri }}'><img style='border: none' alt='HTML-Version' src='/ligen/_templates/systemicons/spieltag.gif'></a>
+            <a href='{{ matchDay.uriPdf }}'><img style='border: none' alt='Druckversion' src='/ligen/_templates/systemicons/printer.gif'></a>
+            <a href='{{ division.statsUri }}'><img style='border: none' alt='Statistiken' src='/ligen/_templates/systemicons/statistiken.gif'></a>
+          </div>
+        </div>
         {{ macros.pairings(matchDay.pairings) }}
       </div>
-
-    {#}
-      <table class="sed_normal mb-4">
-        <tr>
-          <td colspan="3"><b><a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag &ndash; {{matchDay.date|date('d.m.Y')}}</a></b></td>
-          <td class="sed-overview-results">
-          TODO
-            <a href='?staffel=$id&amp;r=$runde'><img style='border: none' alt='HTML-Version' src='/ligen/_templates/systemicons/spieltag.gif'></a>
-            <a href='?staffel=$id&amp;r=$runde&ausgabe=pdf'><img style='border: none' alt='Druckversion' src='/ligen/_templates/systemicons/printer.gif'></a>
-            <a href='?staffel=$id&r=statistik'><img style='border: none' alt='Statistiken' src='/ligen/_templates/systemicons/statistiken.gif'></a>
-          </td>
-        </div>
-        {% for pairing in matchDay.pairings %}
-          <tr>
-            <td class="sed-overview-team">{{ nsv.link(pairing.team1) }}</td>
-            <td>&nbsp; &ndash; &nbsp;</td>
-            <td class="sed-overview-team">{{ nsv.link(pairing.team2) }}</td>
-            <td class="sed-overview-results">{{pairing.result}}</td>
-          </td>
-        {% endfor %}
-      </table>
-      #}
     {% endfor %}
   {% endif %}
 {% endfor %}

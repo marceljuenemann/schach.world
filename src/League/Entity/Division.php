@@ -74,8 +74,12 @@ class Division
       return $teams;
     }
 
-    public function matchDayUri($round = ''): string {
-      return $this->league->uri() . "?staffel={$this->id}&r=$round";
+    public function statsUri() {
+      return $this->league->uri() . "?staffel={$this->id}&r=statistik";
+    }
+
+    public function matchDayUri($round = '', $pdf = false): string {
+      return $this->league->uri() . "?staffel={$this->id}&r=$round" . ($pdf ? '&ausgabe=pdf' : '');
     }
 
     public function __call($property, $args) {
