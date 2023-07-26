@@ -30,6 +30,7 @@ class IsewaseDwzCalculator
    */
   function calculate(int|null $dwz, array $opponentDwz, float $points, int|null $yearOfBirth): array|null {
     $n = count($opponentDwz);
+    if (!$n) return null;
     if (!$dwz && $n < 5) return null;
     
     $params = [
