@@ -49,7 +49,7 @@ class Division
         if (isset($dates[$date->round])) continue;  // Dates are sorted by most specific first.
         $dates[$date->round] = $date;
       }
-      // TODO: Sort by date?
+      uasort($dates, [Date::class, 'compare']);
       return $dates;
     }
 
