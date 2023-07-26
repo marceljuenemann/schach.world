@@ -22,7 +22,7 @@
       <th>Frb</th>
       <th>Ort</th>
       <th>Gegner</th>
-      <th>Spielername</th>
+      <th class="d-none d-md-table-cell">Spielername</th>
       <th>DWZ</th>
       <th>Erg</th>
     </tr>
@@ -30,6 +30,8 @@
       <tr>
         <td><a href="{{ game.uri }}">{{ game.round }}</a></td>
         <td>{{ game.board }}</td>
+
+        {# Color #}
         {% if game.opponentPlayer %}
           <td style="{{ game.white ? '' : 'background: black; color: white' }}">
             {{ game.white ? 'W' : 'S' }}
@@ -37,11 +39,14 @@
         {% else %}
           <td>&nbsp;</td>
         {% endif %}
+
         <td>{{ game.home ? 'Heim' : 'Gast' }}</td>
-        {# TODO: null player #}
-        <td class='l'>{{ nsv.link(game.opponentTeam) }}</td>
-        <td class='l'>{{ nsv.link(game.opponentPlayer) }}</td>
-        <td>{{ game.opponentPlayer.dwz }}</td>
+        <td class='text-left'>
+          <div class="d-md-none">{{ nsv.link(game.opponentPlayer) }}</div>
+          <div class="font-italic">{{ nsv.link(game.opponentTeam) }}</div>
+        </td>
+        <td class='text-left d-none d-md-table-cell'>{{ nsv.link(game.opponentPlayer) }}</td>
+        <td>{{ game.opponentPlayer.dwz|default(null) }}</td>
         <td>{{ game.result }}</td>
       </tr>
     {% endfor %}
