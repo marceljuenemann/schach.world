@@ -16,6 +16,7 @@ class Pairing
 {
     // A magic date we set as $customDate if the game is moved, but no date has been set. 
     const UNKNOWN_DATE = '2020-12-24';
+    const ORDERING = ["round" => "ASC", "host" => "ASC", "id" => "ASC"];
 
     #[ORM\Id]
     #[ORM\GeneratedValue]

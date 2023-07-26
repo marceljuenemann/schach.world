@@ -20,30 +20,6 @@ Array
                                         (
                                             [team1] => Nsv\League\Api\Model\Team Object
                                                 (
-                                                    [id] => 36
-                                                    [name] => Team 2
-                                                    [uri] => /ligen/test/?mannschaft=36
-                                                )
-
-                                            [team2] => Nsv\League\Api\Model\Team Object
-                                                (
-                                                    [id] => 35
-                                                    [name] => Team
-                                                    [uri] => /ligen/test/?mannschaft=35
-                                                )
-
-                                            [host] => 
-                                            [result] => 
-                                            [result1] => 
-                                            [result2] => 
-                                            [wasMoved] => 
-                                            [moveDate] => 
-                                        )
-
-                                    [1] => Nsv\League\Api\Model\Pairing Object
-                                        (
-                                            [team1] => Nsv\League\Api\Model\Team Object
-                                                (
                                                     [id] => 35
                                                     [name] => Team
                                                     [uri] => /ligen/test/?mannschaft=35
@@ -60,6 +36,30 @@ Array
                                             [result] => 2½ : 1½
                                             [result1] => 2.5
                                             [result2] => 1.5
+                                            [wasMoved] => 
+                                            [moveDate] => 
+                                        )
+
+                                    [1] => Nsv\League\Api\Model\Pairing Object
+                                        (
+                                            [team1] => Nsv\League\Api\Model\Team Object
+                                                (
+                                                    [id] => 36
+                                                    [name] => Team 2
+                                                    [uri] => /ligen/test/?mannschaft=36
+                                                )
+
+                                            [team2] => Nsv\League\Api\Model\Team Object
+                                                (
+                                                    [id] => 35
+                                                    [name] => Team
+                                                    [uri] => /ligen/test/?mannschaft=35
+                                                )
+
+                                            [host] => 
+                                            [result] => 
+                                            [result1] => 
+                                            [result2] => 
                                             [wasMoved] => 
                                             [moveDate] => 
                                         )

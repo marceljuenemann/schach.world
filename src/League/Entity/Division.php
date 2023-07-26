@@ -30,7 +30,7 @@ class Division
     private ?int $sortId;
 
     #[ORM\OneToMany(targetEntity: Pairing::class, mappedBy: 'division')]   
-    #[ORM\OrderBy(["round" => "ASC", "host" => "ASC", "id" => "ASC"])]
+    #[ORM\OrderBy(Pairing::ORDERING)]
     private $pairings;
 
     public function path() {

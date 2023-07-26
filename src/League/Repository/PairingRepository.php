@@ -32,6 +32,7 @@ class PairingRepository extends ServiceEntityRepository
         $expr->eq('division', $round->division),
         $expr->eq('round', $round->round)
       ));
+      $criteria->orderBy(Pairing::ORDERING);
     }
     return $this->matching($criteria);
   }
