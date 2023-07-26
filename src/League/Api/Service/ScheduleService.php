@@ -55,7 +55,6 @@ class ScheduleService
    * @param date the date for which to show games
    * @return array with divisionId => Division model with match days 
    */
-  // TODO: Write tests
   public function matchesByDate(Entity\League $league, string $date): array {
     // Determine rounds to return for each division.
     $result = [];

@@ -11,11 +11,6 @@ class ScheduleServiceTest extends AbstractApiTest
     $this->service = $this->container->get(ScheduleService::class);
   }
 
-  public function testMatchDays() {
-    $matchDays = $this->service->matchDays($this->division);
-    $this->assertModel($matchDays, __FILE__, __FUNCTION__);
-  }
-
   public function testClosestDate() {
     $dates = ['2020-01-01', '2020-01-04'];
     $this->assertEquals('2020-01-04', $this->service->closestDate($dates, '2020-01-03'));
@@ -29,4 +24,15 @@ class ScheduleServiceTest extends AbstractApiTest
   public function testClosestDate_noDates() {
     $this->assertNull($this->service->closestDate([], '2020-01-04'));
   }
+
+  public function testMatchesByDate() {
+    $matchDays = $this->service->matchesByDate($this->league, '2025-01-01');
+    $this->assertModel($matchDays, __FILE__, __FUNCTION__);
+  }
+
+  public function testMatchDays() {
+    $matchDays = $this->service->matchDays($this->division);
+    $this->assertModel($matchDays, __FILE__, __FUNCTION__);
+  }
+
 }
