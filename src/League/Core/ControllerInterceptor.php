@@ -12,7 +12,6 @@ use Symfony\Component\HttpKernel\KernelEvents;
 /**
  * Intercepts Controller calls for various magical things :)
  */
-// TODO: Move to Core/
 class ControllerInterceptor implements EventSubscriberInterface
 {
   function __construct(private LeagueRepository $leagueRepository) {
@@ -31,6 +30,10 @@ class ControllerInterceptor implements EventSubscriberInterface
           throw new NotFoundHttpException("League not found");
         }
         $controller->league = $league;
+
+        // Optimization: Fetch all divisions and teams.
+        $league->divisions->toArray();
+        $league->teams->toArray();
       }
 
       // Fetch the division specified in the URL.
