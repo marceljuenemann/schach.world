@@ -11,6 +11,17 @@ class Division
   public string $matchDayUri;
   public string $statsUri;
   public ?array $matchDays;
+
+  public function hasPairings(): bool {
+    if (isset($this->matchDays)) {
+      foreach ($this->matchDays as $matchDay) {
+        if (count($matchDay->pairings)) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
   
   public static function fromEntity(Entity\Division $division) {
     $result = new Division();

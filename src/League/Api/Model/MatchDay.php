@@ -2,7 +2,6 @@
 
 namespace Nsv\League\Api\Model;
 
-use Doctrine\ORM\Mapping\Entity;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\Round;
 

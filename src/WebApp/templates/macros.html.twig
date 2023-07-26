@@ -1,3 +1,10 @@
+{# Displays a message. Valid types are same as bootstrap alert types. #}
+{% macro message(message, type) %}
+  <div class="alert alert-{{ type|default('info') }}">
+    {{ message|raw }}
+  </div>
+{% endmacro %}
+
 {# A simple link. Requires uri and name fields on the model. #}
 {% macro link(model) %}
   {% if model %}<a href="{{model.uri}}">{{model.name|e}}</a>{% endif %}
@@ -14,4 +21,3 @@
   &nbsp;
   </dt>
 {% endmacro %}
-

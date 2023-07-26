@@ -38,11 +38,20 @@ class MainController extends AbstractLeagueController {
     $pos = array_search($dateToShow, $allDates);
     $tabs = array_slice($allDates, 0, $pos + 1 + self::HOME_NEXT_DATES_COUNT);
     $tabs = array_slice($tabs, max(count($tabs) - self::HOME_MAX_DATES_COUNT, 0));
+
+    $hasMatches = false;
+    foreach ($matches as $division) {
+      if ($division->hasPairings()) {
+        $hasMatches = true;
+        break;
+      }
+    }
     
     return $this->renderWithLegacySystem('overview.html.twig', [
       'tabs' => $tabs,
       'activeTab' => $dateToShow,
-      'matches' => $matches
+      'matches' => $matches,
+      'hasMatches' => $hasMatches
     ]);
   }
 }

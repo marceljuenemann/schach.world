@@ -1,5 +1,6 @@
 {% extends '@league/legacy-layout.html.twig' %}
 {% import "@league/macros.html.twig" as macros %}
+{% import "macros.html.twig" as nsv %}
 {% set title = league.name %}
 
 {% block content %}
@@ -15,23 +16,30 @@
 </ul>
 
 {% for division in matches %}
-  {% if division.matchDays|default(false) %}
+  {% if division.hasPairings %}
     <h4><a>{{division.name}}</a></h4>
     {% for matchDay in division.matchDays %}
-      <div class="nsv-table mb-4">
-        <div class="d-flex">
-          <div class="sed-schedule-heading">
-            <a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag</a>
+      {% if matchDay.pairings %}
+        <div class="nsv-table mb-4">
+          <div class="d-flex">
+            <div class="sed-schedule-heading">
+              <a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag</a>
+            </div>
+            <div class="text-nowrap">
+              <a href='{{ matchDay.uri }}'><img style='border: none' alt='HTML-Version' src='/ligen/_templates/systemicons/spieltag.gif'></a>
+              <a href='{{ matchDay.uriPdf }}'><img style='border: none' alt='Druckversion' src='/ligen/_templates/systemicons/printer.gif'></a>
+              <a href='{{ division.statsUri }}'><img style='border: none' alt='Statistiken' src='/ligen/_templates/systemicons/statistiken.gif'></a>
+            </div>
           </div>
-          <div class="text-nowrap">
-            <a href='{{ matchDay.uri }}'><img style='border: none' alt='HTML-Version' src='/ligen/_templates/systemicons/spieltag.gif'></a>
-            <a href='{{ matchDay.uriPdf }}'><img style='border: none' alt='Druckversion' src='/ligen/_templates/systemicons/printer.gif'></a>
-            <a href='{{ division.statsUri }}'><img style='border: none' alt='Statistiken' src='/ligen/_templates/systemicons/statistiken.gif'></a>
-          </div>
+          {{ macros.pairings(matchDay.pairings) }}
         </div>
-        {{ macros.pairings(matchDay.pairings) }}
-      </div>
+      {% endif %}
     {% endfor %}
   {% endif %}
 {% endfor %}
+
+{% if not hasMatches %}
+  {{ nsv.message('Noch keine Paarungen hinterlegt.') }}
+{% endif %}
+
 {% endblock %}
