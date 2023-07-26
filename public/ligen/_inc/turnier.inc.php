@@ -139,6 +139,7 @@
       'nsj' => 2007,
       'nsv' => 2007,
       'pokal' => 2007,
+      'test' => 2015,
     );
     if (!isset($ersteSaison[$turnier])) return array();
     $ersteSaison = $ersteSaison[$turnier];

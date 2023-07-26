@@ -104,7 +104,7 @@ if (count($links)) {
   echo "<h5 class='card-title'>Saisonauswahl</h5>";
   ?>
     <form class='form'><div>
-        <select name="saison" onchange="window.location.href = '../' + this.value" class="form-control form-control-sm">
+        <select name="saison" onchange="window.location.href = '/ligen/' + this.value" class="form-control form-control-sm">
         <?
           foreach ( $links as $value => $label ) {
             $selected = $value == $prefs['directory'] ? 'selected="selected"' : '';
