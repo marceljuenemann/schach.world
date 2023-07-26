@@ -24,12 +24,15 @@ class MainController extends AbstractLeagueController {
     ?string $date,
     ScheduleService $service
   ): Response {
-    $today = date('Y-m-d');
     $allDates = $service->leagueDates($this->league);
-    // TODO: handle case if no dates found at all. Show a beatiful info message :)
+    if (!count($allDates)) {
+      $this->addInfoMessage('Noch keine Spieltage hinterlegt.');
+      return $this->renderWithLegacySystem('overview-no-dates.html.twig');
+    }
+
+    $today = date('Y-m-d');
     $dateToShow = $date ?: $service->closestDate($allDates, $today);
     $matches = $service->matchesByDate($this->league, $dateToShow);
-
 
     // Show at most three future dates and at most five tabs in total.
     $pos = array_search($dateToShow, $allDates);

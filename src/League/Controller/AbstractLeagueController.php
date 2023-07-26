@@ -31,6 +31,11 @@ class AbstractLeagueController extends AbstractController {
   public ?Division $division = null;
 
   /**
+   * Info messages to show on the page.
+   */
+  private array $messages = [];
+
+  /**
    * Sets up the database connection and global variables of the legacy system without
    * processing the request or outputting anything.
    */
@@ -74,6 +79,7 @@ class AbstractLeagueController extends AbstractController {
   protected function render(string $view, array $parameters = [], Response $response = null): Response {
     $view = '@league/' . $view;
 
+    $parameters['messages'] = $this->messages;
     if ($this->league) {
       $parameters['league'] = $this->league;
       if ($this->division) {
@@ -93,5 +99,9 @@ class AbstractLeagueController extends AbstractController {
     // TODO: Return JSON instead of phparray. Might have to do manual UTF-8 conversion first.
     $body = print_r($model, true);
     return new Response($body, 200, ['Content-type' => 'text/plain; charset='.Encoding::CHARSET]);
+  }
+
+  protected function addInfoMessage($message) {
+    $this->messages[] = ['message' => $message, 'type' => 'info'];
   }
 }

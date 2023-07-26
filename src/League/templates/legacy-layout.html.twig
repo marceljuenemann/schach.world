@@ -6,6 +6,13 @@
   <h2>{{ title }}</h2>
 {% endblock %}
 
+{# TODO: nsv.message #}
+{% for message in messages %}
+  <div class="alert alert-{{ message.type }}">
+    {{ message.message }}
+  </div>
+{% endfor %}
+
 {% block content %}
 {% endblock %}
 
