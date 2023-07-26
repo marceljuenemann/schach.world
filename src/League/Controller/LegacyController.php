@@ -74,6 +74,13 @@ class LegacyController extends AbstractLeagueController {
   private function checkForRedirect(string $module): ?Response {
     try {
       switch ($module) {
+        case 'startseite':
+          return $this->forward(
+            MainController::class . '::overview',
+            ['league' => $this->league->path],
+            isset($_GET['date']) ? ['date' => $_GET['date']] : []
+          );
+
         case 'spielplan':
           $division = $this->divisionRepository->find($_GET['staffel']);
           return $this->redirectToRoute('league_schedule', [
