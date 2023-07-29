@@ -83,6 +83,7 @@ class MainController extends AbstractLeagueController {
 
   #[Route('s/{playerId}/debug/', name: 'player_debug')]
   public function player_debug(PlayerService $service, int $playerId): Response {
+    // TODO: If we expose this as API, hide the eMail and phone
     $player = $service->player($this->league, $playerId);
     return $this->debugResponse($player);
   }
