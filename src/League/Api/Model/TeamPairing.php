@@ -10,6 +10,7 @@ use Nsv\League\Entity;
  */
 class TeamPairing
 {
+  public int $id;
   public Team $opponent;
   public int $round;
   public bool $home;
@@ -19,8 +20,9 @@ class TeamPairing
 
   public static function forTeam(Entity\Team $team, Entity\Pairing $pairing) {
     $result = new TeamPairing();
+    $result->id = $pairing->id;
     $result->round = $pairing->round;
-    $result->date = $pairing->customDate ?: $pairing->division->dateOfRound($pairing->round);
+    $result->date = $pairing->wasMoved() ? $pairing->moveDate() : $pairing->division->dateOfRound($pairing->round);
     $result->uri = $pairing->division->matchDayUri($pairing->round);
 
     if ($pairing->team1 == $team) {
@@ -36,6 +38,7 @@ class TeamPairing
         $result->result = Result::format($pairing->result2).':'.Result::format($pairing->result1);
       }
     }
+
     return $result;
   }
 }

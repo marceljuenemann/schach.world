@@ -3,6 +3,7 @@
 namespace Nsv\League\Api\Service;
 
 use Nsv\League\Api\Model\Player;
+use Nsv\League\Api\Model\PlayerGame;
 use Nsv\League\Api\Model\Team;
 use Nsv\League\Api\Model\TeamPairing;
 use Nsv\League\Entity;
@@ -22,21 +23,30 @@ class TeamService
       throw new NotFoundHttpException("Team not found");
     }
 
+    // Fetch basic info and players.
     $model = Team::fromEntity($team, true);
-
-    // Fetch pairings and games.
-
-    $pairings = $this->pairingRepository->findByTeam($teamId);
-
-    foreach ($pairings as $pairing) {
-      $model->pairingsByDivision[$pairing->division->id][] = TeamPairing::forTeam($team, $pairing);
-    }
-
-    // Fetch players.
+    $players = [];
     foreach ([$team, ...$team->substituteTeams()] as $t) {
-      $model->playersByTeamNumber[$t->number] = array_map([Player::class, 'fromEntity'], $t->players->toArray());
+      foreach ($t->players as $player) {
+        $players[$player->id] = Player::fromEntity($player);
+        $model->playersByTeamNumber[$t->number][] = $players[$player->id];
+      }
     }
     ksort($model->playersByTeamNumber);
+
+    // Fetch pairings and games.
+    $pairings = $this->pairingRepository->findByTeam($teamId);
+    foreach ($pairings as $pairing) {
+      $tp = TeamPairing::forTeam($team, $pairing);
+      $model->pairingsByDivision[$pairing->division->id][] = $tp;
+      foreach ($pairing->games as $game) {
+        $player = $tp->home ? $game->player1 : $game->player2;
+        if ($player && isset($players[$player->id])) {
+          $pg = PlayerGame::forPlayer($player->id, $game);
+          $players[$player->id]->games[$pairing->id] = $pg;
+        }
+      }
+    }
     
     return $model;
   }

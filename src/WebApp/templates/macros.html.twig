@@ -32,3 +32,9 @@
   &nbsp;
   </dt>
 {% endmacro %}
+
+{# Renders attributes for a tooltip on an element. #}
+{# TODO: Initilization currently only happens in league manager #}
+{% macro tooltip(title) %}
+  data-toggle="tooltip" data-placement="bottom" title="{{ title }}"
+{% endmacro %}

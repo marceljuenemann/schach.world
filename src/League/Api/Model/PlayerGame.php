@@ -20,15 +20,15 @@ class PlayerGame
   public Player|null $opponentPlayer;
   public string $uri;
 
-  public static function forPlayer(Player $player, Entity\Game $game) {
-    if ($game->player1->id != $player->id && $game->player2->id != $player->id) {
+  public static function forPlayer(int $playerId, Entity\Game $game) {
+    if ($game->player1->id != $playerId && $game->player2->id != $playerId) {
       throw new \Exception("Player did not participate in this game");
     }
 
     $result = new PlayerGame();
     $result->round = $game->pairing->round;
     $result->board = $game->board;
-    $result->home = $game->player1->id == $player->id;
+    $result->home = $game->player1->id == $playerId;
     $result->white = Regulation::isWhiteGame($result->home, $game->board, $game->pairing->division->league);
     $result->result = $result->home ? $game->result1 : $game->result2;
     $result->opponentResult = !$result->home ? $game->result1 : $game->result2;

@@ -26,7 +26,7 @@ class Player
 
   public function addGame(Entity\Game $game) {
     if (!isset($this->games)) $this->games = array();
-    $this->games[] = PlayerGame::forPlayer($this, $game);
+    $this->games[] = PlayerGame::forPlayer($this->id, $game);
   }
 
   public static function fromEntity(Entity\Player $player) {

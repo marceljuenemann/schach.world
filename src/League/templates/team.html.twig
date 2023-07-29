@@ -2,6 +2,16 @@
 {% import "macros.html.twig" as nsv %}
 {% set title = team.name %}
 
+{% macro playerTooltip(player) %}
+  {% if player %}
+    {% if player.dwz %}
+      {{ nsv.tooltip(player.name ~ ' (' ~ player.dwz ~ ')') }}
+    {% else %}
+      {{ nsv.tooltip(player.name) }}
+    {% endif %}
+  {% endif %}
+{% endmacro %}
+
 {% block content %}
 <div class="row">
   {% if team.pairingsByDivision|default(false) %}
@@ -20,7 +30,7 @@
             {% for pairing in team.pairingsByDivision[division.id] %}
               <tr>
                 <td><a href="{{ pairing.uri }}">{{ pairing.round }}</a></td>
-                <td><a href="{{ pairing.uri }}">{{ pairing.date|date('d.m.') }}</a></td>
+                <td><a href="{{ pairing.uri }}">{% if pairing.date %}{{ pairing.date|date('d.m.') }}{% endif %}</a></td>
                 <td>{{ pairing.home ? 'Heim' : 'Gast' }}</td>
                 <td class="text-left">{{ nsv.link(pairing.opponent) }}</td>
                 <td class="text-nowrap"><a href="{{ pairing.uri }}">{{ pairing.result|default(null) }}</a></td>
@@ -58,6 +68,20 @@
     <th>Nr.</th>
     <th>Name</th>
     <th>DWZ</th>
+    {# TODO: ensure sorted by API, with the team's division first #}
+    {# TODO: set border width to 2px for some cells #}
+    {% for division in league.divisions %}
+      {% if team.pairingsByDivision[division.id]|default(false) %}
+        {% for pairing in team.pairingsByDivision[division.id] %}
+          <th {{ nsv.tooltip(pairing.opponent.name) }}>
+            <a href="{{ pairing.uri }}">&nbsp;{{ pairing.round }}&nbsp;</a>
+          </th>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    <th>Pkt</th>
+    <th>Sp.</th>
+    <th>%</th>
   </tr>
   {% for teamNumber, players in team.playersByTeamNumber %}
     {% for player in players %}
@@ -65,10 +89,33 @@
         <td class="text-right">{{ player.number }}</td>
         <td class="text-left">{{ nsv.link(player) }}</td>
         <td>{{ player.dwz }}</td>
+
+        {# TODO: simplify all these loops. Or maybe just a macro? #}
+        {% for division in league.divisions %}
+          {% if team.pairingsByDivision[division.id]|default(false) %}
+            {% for pairing in team.pairingsByDivision[division.id] %}
+              {% if player.games[pairing.id]|default(false) %}
+                {% set game = player.games[pairing.id] %}
+                <td {{ _self.playerTooltip(game.opponentPlayer) }}>
+                  <a href="{{ pairing.uri }}">{{ game.result }}</a>
+                </td>
+              {% else %}
+                <td></td>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+
       </tr>
     {% endfor %}
   {% endfor %}
 </table>    
 
+{# TODO: Move somewhere more general. Maybe set enable_tooltips to true? Or depending on whether tooltip macro was called? #}
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
 
 {% endblock %}
