@@ -34,7 +34,7 @@ function SED_Eingabelinkmail ( $ausrichter, $paarungen ){
   // eMail-Objekt erzeugen und Daten zusammenstellen
   $mail = SED_CreateMailer();
   $mail->Subject = "Ergebniseingabe: @SUBJECT@";
-  $mail->Body = utf8_decode (
+  $mail->Body = SED_utf8_decode (
 "Hallo @AUSRICHTER@,
 
 um die Spielergebnisse in den Schach-Ergebnisdienst einzutragen, können Sie folgenden Link benutzen:

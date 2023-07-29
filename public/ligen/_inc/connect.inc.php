@@ -29,5 +29,5 @@
 	$globals ['db'] = mysql_connect ( $globals ['dbhost'], $globals ['dbuser'], $globals ['dbpw'] );
 	if ( !mysql_select_db ( $globals ['dbname'], $globals ['db'] ) )
 		SED_Error ( "Fehler: Datenbank konnte nicht geöffnet werden!", true );
-  mysql_set_charset('latin1');
+	if (!defined('SED_UNICODE')) mysql_set_charset('latin1');
 	$globals ['dbpw'] = "******";

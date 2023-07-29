@@ -8,8 +8,8 @@ namespace Nsv\League\Core;
 class Encoding
 {
   // TODO: Move everything to Unicode
-  const CHARSET = 'ISO-8859-1';
-  const UNICODE_ENABLED = false;
+  const UNICODE_ENABLED = true;
+  const CHARSET = self::UNICODE_ENABLED ? 'UTF-8' : 'ISO-8859-1';
 
   /**
    * Converts from UTF-8 to the application charset.

@@ -21,7 +21,7 @@
             return false;
         
         // Sonst Ausgabe
-        echo utf8_encode ( reset ( mysql_fetch_array ( $rsrc ) ) );
+        echo SED_utf8_encode ( reset ( mysql_fetch_array ( $rsrc ) ) );
         return true;
     }
 
@@ -32,6 +32,6 @@
     if ( getMannschaftsname ( substr ( $_GET ['zps'], 0, 5 ) ) ) exit;
 
 	// Ansonsten einfach den Vereinsnamen nehmen und abschneiden
-    echo utf8_encode ( substr ( @reset ( mysql_fetch_array ( mysql_query ( "SELECT Vereinname FROM dwz_vereine WHERE ZPS='".substr($_GET['zps'],0,5)."'" ) ) ), 0, 15 ) );
+    echo SED_utf8_encode ( substr ( @reset ( mysql_fetch_array ( mysql_query ( "SELECT Vereinname FROM dwz_vereine WHERE ZPS='".substr($_GET['zps'],0,5)."'" ) ) ), 0, 15 ) );
 	exit;
 ?>

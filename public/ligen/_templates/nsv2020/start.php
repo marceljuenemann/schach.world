@@ -20,7 +20,7 @@ function nsv2020_head() {
 }
 
 function nsv2020_is_utf8() {
-  return FALSE;
+  return defined('SED_UNICODE');
 }
 
 function nsv2020_navbar() {

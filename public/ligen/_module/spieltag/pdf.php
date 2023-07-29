@@ -395,7 +395,7 @@
         // Spieltag Vorschau
         if ( $data ['vorschau'] && $options ['showSpieltagvorschau'] )
         {
-            $content .= utf8_decode("<BR><B>Nächster Spieltag (".$data ['vorschautermin'].")</B><BR>");
+            $content .= SED_utf8_decode("<BR><B>Nächster Spieltag (".$data ['vorschautermin'].")</B><BR>");
             $xtra = "";
             foreach ( $data ['vorschau'] as $paarung )
             {

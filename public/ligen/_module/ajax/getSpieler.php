@@ -19,7 +19,7 @@
     
     // Anfrage vorbereiten
     $db = new SED_DWZ_Request ();
-    $db->setName ( utf8_decode ( $_GET['name'] ) );
+    $db->setName ( SED_utf8_decode ( $_GET['name'] ) );
     $db->setVerband ( $_GET['verband'] );
 
     // Anfrage durchführen
@@ -27,7 +27,7 @@
         echo "<a href='javascript:dummy()' onclick='OnSpielerClick("
         .$player->getJSON() // Liefert UTF-8 codierten String
         .")'>"
-        .utf8_encode($player->getName ())."</a><br />";
+        .SED_utf8_encode($player->getName ())."</a><br />";
     }
 	exit;
 ?>

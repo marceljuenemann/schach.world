@@ -48,9 +48,9 @@
       echo "<br />Tel.: ".$team->get("so_telefon");
     }
     echo "  <span class='sed_only_screen d-print-none'><br />
-      " . ($team->getZusatzfeldBoolean(utf8_decode('Verfügt das Spiellokal über barrierefreien Zugang?')) ?
+      " . ($team->getZusatzfeldBoolean(SED_utf8_decode('Verfügt das Spiellokal über barrierefreien Zugang?')) ?
             "<img title='Zugang barrierefrei' src='../_templates/systemicons/barrierefrei_zugang.jpg' alt='Zugang barrierefrei' width='25' height='25'>" : "") ."
-      " . ($team->getZusatzfeldBoolean(utf8_decode('Verfügt das Spiellokal über eine Behindertentoilette?')) ?
+      " . ($team->getZusatzfeldBoolean(SED_utf8_decode('Verfügt das Spiellokal über eine Behindertentoilette?')) ?
             "<img title='WC barrierefrei' src='../_templates/systemicons/barrierefrei_wc.jpg' alt='WC barrierefrei' width='25' height='25'>" : "") ."
             <a href='$stadtplan' target='_blank'>Stadtplan</a>, <a href='$routenplaner' target='_blank'>Routenplaner</a></span><br />
             <br />

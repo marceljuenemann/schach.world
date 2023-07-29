@@ -17,7 +17,7 @@
 	// Paarungsauflistung ausgeben
     ob_start ();
 	SED_Paarungsauflistung ();
-	echo utf8_encode ( ob_get_clean () );
+	echo SED_utf8_encode ( ob_get_clean () );
 	
 	exit;
 ?>

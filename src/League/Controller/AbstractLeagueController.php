@@ -43,6 +43,9 @@ class AbstractLeagueController extends AbstractController {
     if (Auth::isAdmin()) {
       $_GET['debugme'] = 1;
     }
+    if (Encoding::UNICODE_ENABLED && !defined('SED_UNICODE')) {
+      define('SED_UNICODE', true);
+    }
 
     chdir(ABSPATH . '../ligen/_inc');
     global $globals;
