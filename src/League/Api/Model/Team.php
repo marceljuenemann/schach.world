@@ -12,13 +12,17 @@ class Team
   public \stdClass $venue;
   public \stdClass $captain;
 
-  public static function fromEntity(Entity\Team $team) {
+  public ?array $pairings;
+
+  public static function fromEntity(Entity\Team $team, bool $details = false) {
     $result = new Team();
     $result->id = $team->id;
     $result->name = $team->nameWithNumber();
     $result->uri = $team->uri();
-    $result->venue = self::venueFromEntity($team);
-    $result->captain = self::captainFromEntity($team);
+    if ($details) {
+      $result->venue = self::venueFromEntity($team);
+      $result->captain = self::captainFromEntity($team);
+    }
     return $result;
   }
 

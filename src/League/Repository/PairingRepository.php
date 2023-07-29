@@ -19,6 +19,24 @@ class PairingRepository extends ServiceEntityRepository
   }
 
   /**
+   * Returns all pairings for the specified team, also fetching all games and players.
+   */
+  public function findByTeam(int $teamId) {
+    return $this->getEntityManager()
+      ->createQueryBuilder()
+      ->select('p, g, s1, s2')
+      ->from(Pairing::class, 'p')
+      ->leftJoin('p.games', 'g')
+      // leftJoin to allow NULL players.
+      ->leftJoin('g.player1', 's1')
+      ->leftJoin('g.player2', 's2')
+      ->where('p.team1 = :team OR p.team2 = :team')
+      ->setParameter('team', $teamId)
+      ->getQuery()
+      ->getResult();
+  }
+
+  /**
    * Returns all pairings for the specified Round objects.
    */
   public function findByRounds(array $rounds) {
