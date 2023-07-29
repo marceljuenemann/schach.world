@@ -63,56 +63,59 @@
 </div>
 
 <h4 class="mt-4">Aufstellung</h4>
-<table class='sed_tabelle' cellpadding='3'>
-  <tr>
-    <th>Nr.</th>
-    <th>Name</th>
-    <th>DWZ</th>
-    {# TODO: ensure sorted by API, with the team's division first #}
-    {# TODO: set border width to 2px for some cells #}
-    {% for division in league.divisions %}
-      {% if team.pairingsByDivision[division.id]|default(false) %}
-        {% for pairing in team.pairingsByDivision[division.id] %}
-          <th {{ nsv.tooltip(pairing.opponent.name) }}>
-            <a href="{{ pairing.uri }}">&nbsp;{{ pairing.round }}&nbsp;</a>
-          </th>
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-    <th>Pkt</th>
-    <th>Sp.</th>
-    <th>%</th>
-  </tr>
-  {% for teamNumber, players in team.playersByTeamNumber %}
-    {% for player in players %}
-      <tr>
-        <td class="text-right">{{ player.number }}</td>
-        <td class="text-left">{{ nsv.link(player) }}</td>
-        <td>{{ player.dwz }}</td>
+<div class='overflow-auto'>
+  {{ nsv.detailsToggle('Einzelergebnisse anzeigen') }}
+  <table class='sed_tabelle' cellpadding='3'>
+    <tr>
+      <th>Nr.</th>
+      <th>Name</th>
+      <th>DWZ</th>
+      {# TODO: ensure sorted by API, with the team's division first #}
+      {# TODO: set border width to 2px for some cells #}
+      {% for division in league.divisions %}
+        {% if team.pairingsByDivision[division.id]|default(false) %}
+          {% for pairing in team.pairingsByDivision[division.id] %}
+            <th class="nsv-details" {{ nsv.tooltip(pairing.opponent.name) }}>
+              <a href="{{ pairing.uri }}">&nbsp;{{ pairing.round }}&nbsp;</a>
+            </th>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+      <th>Pkt</th>
+      <th>Sp.</th>
+      <th>%</th>
+    </tr>
+    {% for teamNumber, players in team.playersByTeamNumber %}
+      {% for player in players %}
+        <tr>
+          <td class="text-right">{{ player.number }}</td>
+          <td class="text-left">{{ nsv.link(player) }}</td>
+          <td>{{ player.dwz }}</td>
 
-        {# TODO: simplify all these loops. Or maybe just a macro? #}
-        {% for division in league.divisions %}
-          {% if team.pairingsByDivision[division.id]|default(false) %}
-            {% for pairing in team.pairingsByDivision[division.id] %}
-              {% if player.games[pairing.id]|default(false) %}
-                {% set game = player.games[pairing.id] %}
-                <td {{ _self.playerTooltip(game.opponentPlayer) }}>
-                  <a href="{{ pairing.uri }}">{{ game.result }}</a>
-                </td>
-              {% else %}
-                <td></td>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
+          {# TODO: simplify all these loops. Or maybe just a macro? #}
+          {% for division in league.divisions %}
+            {% if team.pairingsByDivision[division.id]|default(false) %}
+              {% for pairing in team.pairingsByDivision[division.id] %}
+                {% if player.games[pairing.id]|default(false) %}
+                  {% set game = player.games[pairing.id] %}
+                  <td class="nsv-details" {{ _self.playerTooltip(game.opponentPlayer) }}>
+                    <a href="{{ pairing.uri }}">{{ game.result }}</a>
+                  </td>
+                {% else %}
+                  <td class="nsv-details"></td>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
 
-        <td>{% if player.gameCount %}{{ player.pointsFormatted() }}{% endif %}</td>
-        <td>{% if player.gameCount %}{{ player.gameCount }}{% endif %}</td>
-        <td>{% if player.gameCount %}{{ (100 * player.points / player.gameCount)|round }}{% endif %}</td>
-      </tr>
+          <td>{% if player.gameCount %}{{ player.pointsFormatted() }}{% endif %}</td>
+          <td>{% if player.gameCount %}{{ player.gameCount }}{% endif %}</td>
+          <td>{% if player.gameCount %}{{ (100 * player.points / player.gameCount)|round }}{% endif %}</td>
+        </tr>
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
-</table>    
+  </table>
+</div>
 
 {# TODO: Move somewhere more general. Maybe set enable_tooltips to true? Or depending on whether tooltip macro was called? #}
 <script type="text/javascript">
