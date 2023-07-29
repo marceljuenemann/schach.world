@@ -54,6 +54,20 @@ class Division
     }
 
     /**
+     * Returns the date for a specific round, if one is configured.
+     */
+    // TODO: Unit test.
+    public function dateOfRound(int $round): string|null {
+      // Note: Dates are ordered by division, so dates for the entire tournament come last.
+      foreach ($this->league->dates as $date) {
+        if ($date->round != $round) continue;
+        if ($date->division && $date->division != $this) continue;
+        return $date->date;
+      }
+      return null;
+    }    
+
+    /**
      * Yields all rounds that happen on the given date.
      */
     public function roundsOnDate(string $date) {

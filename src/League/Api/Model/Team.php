@@ -12,7 +12,7 @@ class Team
   public \stdClass $venue;
   public \stdClass $captain;
 
-  public ?array $pairings;
+  public ?array $pairingsByDivision;
 
   public static function fromEntity(Entity\Team $team, bool $details = false) {
     $result = new Team();

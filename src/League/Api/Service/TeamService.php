@@ -20,11 +20,10 @@ class TeamService
 
     // Fetch pairings and games.
 
-    // TODO: Return pairings grouped by division 
     $pairings = $this->pairingRepository->findByTeam($teamId);
 
     foreach ($pairings as $pairing) {
-      $model->pairings[] = TeamPairing::forTeam($team, $pairing);
+      $model->pairingsByDivision[$pairing->division->id][] = TeamPairing::forTeam($team, $pairing);
     }
 
 

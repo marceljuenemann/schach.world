@@ -31,6 +31,9 @@ class PairingRepository extends ServiceEntityRepository
       ->leftJoin('g.player1', 's1')
       ->leftJoin('g.player2', 's2')
       ->where('p.team1 = :team OR p.team2 = :team')
+      ->addOrderBy('p.round', 'ASC')
+      ->addOrderBy('p.host', 'ASC')
+      ->addOrderBy('p.id', 'ASC')
       ->setParameter('team', $teamId)
       ->getQuery()
       ->getResult();

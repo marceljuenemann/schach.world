@@ -69,6 +69,12 @@ class MainController extends AbstractLeagueController {
     return $this->debugResponse($matchDays);
   }
 
+  #[Route('m/{teamId}/', name: 'team')]
+  public function team(TeamService $service, int $teamId): Response {
+    $team = $service->team($this->league, $teamId);
+    return $this->renderWithLegacySystem('team.html.twig', ['team' => $team]);
+  }
+
   #[Route('m/{teamId}/debug/', name: 'team_debug')]
   public function team_debug(TeamService $service, int $teamId): Response {
     $team = $service->team($this->league, $teamId);

@@ -14,14 +14,17 @@ class TeamPairing
   public Division $division;
   public int $round;
   public bool $home;
-  public ?string $date;
+  public string|null $date;
   public ?string $result;
+  public string $uri;
 
   public static function forTeam(Entity\Team $team, Entity\Pairing $pairing) {
     $result = new TeamPairing();
     $result->division = Division::fromEntity($pairing->division);
     $result->round = $pairing->round;
-    // TODO: Date
+    $result->date = $pairing->division->dateOfRound($pairing->round);
+    $result->uri = $pairing->division->matchDayUri($pairing->round);
+
     if ($pairing->team1 == $team) {
       $result->home = true;
       $result->opponent = Team::fromEntity($pairing->team2);
