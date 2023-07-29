@@ -12,7 +12,6 @@ class Player
   public string $lastName;
   public string $firstName;
   public string $title;
-  public Team $team;
   public int $number;
   public ?string $zps;
   public ?int $dwz;
@@ -21,6 +20,7 @@ class Player
   public string $uri;
   public ?string $dsbUri;
 
+  public ?Team $team;
   public ?array $games;
   public array|null $dwzCalculation;
 
@@ -36,7 +36,6 @@ class Player
     $result->lastName = $player->lastName;
     $result->firstName = $player->firstName;
     $result->title = $player->title();
-    $result->team = Team::fromEntity($player->team);
     $result->number = $player->number;
     $result->zps = $player->zps ?: null;
     $result->dwz = $player->dwz ?: null;

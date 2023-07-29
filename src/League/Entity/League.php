@@ -38,6 +38,12 @@ class League
   #[ORM\Column(name: 'startjahr')]
   private ?int $year;
 
+  /**
+   * Number of subsequent teams whose players may be used as substitute players.
+   */
+  #[ORM\Column(name: 'spielErsatzmannschaft')]
+  private int $configSubstituteTeams = 0;
+
   #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
   #[ORM\OrderBy(["sortId" => "ASC", "id" => "ASC"])]
   private $divisions;

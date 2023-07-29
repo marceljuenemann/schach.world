@@ -33,8 +33,8 @@
   {% endif %}
   <div class="col-12 col-lg-6">
     <h4 class="mt-4">Spiellokal</h4>
-    {{ team.venue.name }}<br>
     {% if team.venue.note %} <i>{{ team.venue.note }}</i><br> {% endif %}
+    {{ team.venue.name }}<br>
     {{ team.venue.street }}<br>
     {{ team.venue.postCode }} {{ team.venue.city }}<br>
     {% if team.venue.phone %} {{ team.venue.phone }}<br> {% endif %}
@@ -51,4 +51,24 @@
     
   </div>
 </div>
+
+<h4 class="mt-4">Aufstellung</h4>
+<table class='sed_tabelle' cellpadding='3'>
+  <tr>
+    <th>Nr.</th>
+    <th>Name</th>
+    <th>DWZ</th>
+  </tr>
+  {% for teamNumber, players in team.playersByTeamNumber %}
+    {% for player in players %}
+      <tr>
+        <td class="text-right">{{ player.number }}</td>
+        <td class="text-left">{{ nsv.link(player) }}</td>
+        <td>{{ player.dwz }}</td>
+      </tr>
+    {% endfor %}
+  {% endfor %}
+</table>    
+
+
 {% endblock %}

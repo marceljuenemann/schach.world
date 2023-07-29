@@ -14,6 +14,7 @@ class Team
   public \stdClass $captain;
 
   public ?array $pairingsByDivision;
+  public ?array $playersByTeamNumber;
 
   public static function fromEntity(Entity\Team $team, bool $details = false) {
     $result = new Team();
@@ -49,7 +50,7 @@ class Team
   }
 
   private static function mapsLink($venue): string {
-    $uri = "http://maps.google.com/maps?hl=de&amp;q=";
+    $uri = "https://maps.google.com/maps?hl=de&amp;q=";
     $uri .= urlencode(Encoding::utf8_encode($venue->street));
     $uri .= ',' . urlencode($venue->postCode) . '+';
     $uri .= urlencode(Encoding::utf8_encode($venue->city));

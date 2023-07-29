@@ -4,6 +4,7 @@ namespace Nsv\League\Api\Service;
 
 use Nsv\Dwz\IsewaseDwzCalculator;
 use Nsv\League\Api\Model\Player;
+use Nsv\League\Api\Model\Team;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity;
 use Nsv\League\Repository\GameRepository;
@@ -21,11 +22,12 @@ class PlayerService
   // TODO: cache, especially for the DWZ calculation.
   public function player(Entity\League $league, int $playerId): Player {
     $player = $this->playerRepository->find($playerId);
-    if (!$player || $player->team->league != $league) {
+    if ($player->team->league != $league) {
       throw new NotFoundHttpException("Player not found");
     }
 
     $result = Player::fromEntity($player);
+    $result->team = Team::fromEntity($player->team);
     foreach ($this->gameRepository->findByPlayer($player) as $game) {
       $result->addGame($game);
     }
