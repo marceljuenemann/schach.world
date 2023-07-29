@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Controller;
 
+use Nsv\League\Api\Service\PlayerService;
 use Nsv\League\Api\Service\ScheduleService;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapQueryParameter;
@@ -53,5 +54,29 @@ class MainController extends AbstractLeagueController {
       'matches' => $matches,
       'hasMatches' => $hasMatches
     ]);
+  }
+
+  #[Route('{division}/spielplan/', name: 'schedule')]
+  public function schedule(ScheduleService $service): Response {
+    $matchDays = $service->matchDays($this->division);
+    return $this->renderWithLegacySystem('schedule.html.twig', ['matchDays' => $matchDays]);
+  }
+
+  #[Route('{division}/spielplan/debug/', name: 'schedule_debug')]
+  public function schedule_debug(ScheduleService $service): Response {
+    $matchDays = $service->matchDays($this->division);
+    return $this->debugResponse($matchDays);
+  }
+
+  #[Route('s/{playerId}/', name: 'player')]
+  public function player(PlayerService $service, int $playerId): Response {
+    $player = $service->player($this->league, $playerId);
+    return $this->renderWithLegacySystem('player.html.twig', ['player' => $player]);
+  }
+
+  #[Route('s/{playerId}/debug/', name: 'player_debug')]
+  public function player_debug(PlayerService $service, int $playerId): Response {
+    $player = $service->player($this->league, $playerId);
+    return $this->debugResponse($player);
   }
 }

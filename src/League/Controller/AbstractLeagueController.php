@@ -95,7 +95,7 @@ class AbstractLeagueController extends AbstractController {
   /**
    * Create an API response from an API model
    */
-  protected function apiResponse(mixed $model): Response {
+  protected function debugResponse(mixed $model): Response {
     // TODO: Return JSON instead of phparray. Might have to do manual UTF-8 conversion first.
     $body = print_r($model, true);
     return new Response($body, 200, ['Content-type' => 'text/plain; charset='.Encoding::CHARSET]);
