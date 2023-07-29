@@ -10,6 +10,17 @@
   {% if model %}<a href="{{model.uri}}">{{model.name|e}}</a>{% endif %}
 {% endmacro %}
 
+{# An eMail link with simple bot protection. #}
+{% macro email(email) %}
+  {% set emailHash = nsv_md5('asdko4mor3' ~ email) %}
+  <a id="nsv-ep-{{ emailHash }}">{{ email|replace({'@': emailHash}) }}</a>
+  <script type="text/javascript">
+    let e = document.getElementById("nsv-ep-{{ emailHash }}");
+    e.innerHTML = e.innerHTML.replace('{{ emailHash }}', String.fromCharCode(8 * 8));
+    e.href = 'mai' + 'lto:' + e.innerHTML;
+  </script>
+{% endmacro %}
+
 {# A responsive description list. #}
 {# Usage: {{ nsv.dd('Name') }} {{ item.name }} {{ nsv.end_dd }} #}
 {% macro dd(title) %}

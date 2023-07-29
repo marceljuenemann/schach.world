@@ -47,9 +47,9 @@
     <h4 class="mt-4">Mannschaftsf&uuml;hrer:in</h4>
     {{ team.captain.name }}<br>
     {% if showContactInfo %}
-      {% if team.captain.mail %} {{ team.captain.mail }}<br> {% endif %}
       {% if team.captain.phone %} Tel. {{ team.captain.phone }}<br> {% endif %}
       {% if team.captain.phone2 %} Tel. {{ team.captain.phone2 }}<br> {% endif %}
+      {% if team.captain.mail %} {{ nsv.email(team.captain.mail) }}<br> {% endif %}
     {% endif %}
     
   </div>
