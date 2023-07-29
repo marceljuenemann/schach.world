@@ -72,7 +72,11 @@ class MainController extends AbstractLeagueController {
   #[Route('m/{teamId}/', name: 'team')]
   public function team(TeamService $service, int $teamId): Response {
     $team = $service->team($this->league, $teamId);
-    return $this->renderWithLegacySystem('team.html.twig', ['team' => $team]);
+    $showContactInfo = $this->league->year >= date('Y') - 1;
+    return $this->renderWithLegacySystem('team.html.twig', [
+      'team' => $team,
+      'showContactInfo' => $showContactInfo
+    ]);
   }
 
   #[Route('m/{teamId}/debug/', name: 'team_debug')]

@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Api\Model;
 
+use Nsv\League\Core\Encoding;
 use Nsv\League\Entity;
 
 class Team
@@ -34,6 +35,7 @@ class Team
     $result->postCode = $team->venuePostCode;
     $result->city = $team->venueCity;
     $result->phone = $team->venuePhone;
+    $result->directionsUri = self::mapsLink($result);
     return $result;
   }
 
@@ -44,5 +46,14 @@ class Team
     $result->phone = $team->captainPhone;
     $result->phone2 = $team->captainPhone2;
     return $result;
+  }
+
+  private static function mapsLink($venue): string {
+    $uri = "http://maps.google.com/maps?hl=de&amp;q=";
+    $uri .= urlencode(Encoding::utf8_encode($venue->street));
+    $uri .= ',' . urlencode($venue->postCode) . '+';
+    $uri .= urlencode(Encoding::utf8_encode($venue->city));
+    $uri .= ',Germany';
+    return $uri;
   }
 }

@@ -32,6 +32,12 @@ class League
   #[ORM\Column(name: 'organisation', length: 15)]
   private string $organisation;
 
+  /**
+   * The year in which the league started.
+   */
+  #[ORM\Column(name: 'startjahr')]
+  private ?int $year;
+
   #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
   #[ORM\OrderBy(["sortId" => "ASC", "id" => "ASC"])]
   private $divisions;

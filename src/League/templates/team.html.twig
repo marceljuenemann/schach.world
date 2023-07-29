@@ -4,48 +4,55 @@
 
 {% block content %}
 
-{#}
-<dl class="row mt-3">
-  {{ nsv.dd('Mannschaft') }} {{  nsv.link(player.team) }} {{ nsv.end_dd }}
-  {{ nsv.dd('DWZ') }}
-    {{ player.dwz }}
-    {% if player.dsbUri %}&nbsp;(<a href="{{player.dsbUri}}">DWZ Karteikarte</a>){% endif %}
-  {{ nsv.end_dd }}
-  {{ nsv.dd('ELO') }} {{ player.elo }} {{ nsv.end_dd }}
-</dl>
-#}
-
 {# TODO: abweichender termin #}
 
-{% for division in league.divisions %}
-  {% if team.pairingsByDivision[division.id]|default(false) %}
-    <h4 class="mt-4">{{ division.name }}</h4>
-    <table class='sed_tabelle' cellpadding='3'>
-      <tr>
-        <th>R</th>
-        <th>Tag</th>
-        <th>H/G</th>
-        <th>Gegner</th>
-        <th>Erg.</th>
-      </tr>
-      {% for pairing in team.pairingsByDivision[division.id] %}
-        <tr>
-          <td><a href="{{ pairing.uri }}">{{ pairing.round }}</a></td>
-          <td><a href="{{ pairing.uri }}">{{ pairing.date|date('d.m.') }}</a></td>
-          <td>{{ pairing.home ? 'Heim' : 'Gast' }}</td>
-          <td class="text-left">{{ nsv.link(pairing.opponent) }}</td>
-          <td><a href="{{ pairing.uri }}">{{ pairing.result|default(null) }}</a></td>
-        </tr>
+<div class="row">
+  {% if team.pairingsByDivision|default(false) %}
+    <div class="col-12 col-lg-6">
+      {% for division in league.divisions %}
+        {% if team.pairingsByDivision[division.id]|default(false) %}
+          <h4 class="mt-4">{{ division.name }}</h4>
+          <table class='sed_tabelle' cellpadding='3'>
+            <tr>
+              <th>R</th>
+              <th>Tag</th>
+              <th>H/G</th>
+              <th>Gegner</th>
+              <th>Erg.</th>
+            </tr>
+            {% for pairing in team.pairingsByDivision[division.id] %}
+              <tr>
+                <td><a href="{{ pairing.uri }}">{{ pairing.round }}</a></td>
+                <td><a href="{{ pairing.uri }}">{{ pairing.date|date('d.m.') }}</a></td>
+                <td>{{ pairing.home ? 'Heim' : 'Gast' }}</td>
+                <td class="text-left">{{ nsv.link(pairing.opponent) }}</td>
+                <td class="text-nowrap"><a href="{{ pairing.uri }}">{{ pairing.result|default(null) }}</a></td>
+              </tr>
+            {% endfor %}
+          </table>    
+        {% endif %}
       {% endfor %}
-    </table>    
+    </div>
   {% endif %}
-{% endfor %}
+  <div class="col-12 col-lg-6">
+    <h4 class="mt-4">Spiellokal</h4>
+    {{ team.venue.name }}<br>
+    {% if team.venue.note %} <i>{{ team.venue.note }}</i><br> {% endif %}
+    {{ team.venue.street }}<br>
+    {{ team.venue.postCode }} {{ team.venue.city }}<br>
+    {% if team.venue.phone %} {{ team.venue.phone }}<br> {% endif %}
+    <a href='{{ team.venue.directionsUri|raw }}' target='_blank'>Google Maps</a><br>
+    {# TODO: icons #}
 
-{#}
-{% if player.games %}
-  <h4>Paarungen</h4>
-
-{% endif %}
-#}
+    <h4 class="mt-4">Mannschaftsf&uuml;hrer:in</h4>
+    {{ team.captain.name }}<br>
+    {% if showContactInfo %}
+      {% if team.captain.mail %} {{ team.captain.mail }}<br> {% endif %}
+      {% if team.captain.phone %} Tel. {{ team.captain.phone }}<br> {% endif %}
+      {% if team.captain.phone2 %} Tel. {{ team.captain.phone2 }}<br> {% endif %}
+    {% endif %}
+    
+  </div>
+</div>
 
 {% endblock %}
