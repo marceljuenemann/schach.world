@@ -4,6 +4,7 @@ namespace Nsv\League\Controller;
 
 use Nsv\League\Api\Service\PlayerService;
 use Nsv\League\Api\Service\ScheduleService;
+use Nsv\League\Api\Service\TeamService;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapQueryParameter;
 use Symfony\Component\Routing\Annotation\Route;
@@ -66,6 +67,12 @@ class MainController extends AbstractLeagueController {
   public function schedule_debug(ScheduleService $service): Response {
     $matchDays = $service->matchDays($this->division);
     return $this->debugResponse($matchDays);
+  }
+
+  #[Route('m/{teamId}/debug/', name: 'team_debug')]
+  public function team_debug(TeamService $service, int $teamId): Response {
+    $team = $service->team($this->league, $teamId);
+    return $this->debugResponse($team);
   }
 
   #[Route('s/{playerId}/', name: 'player')]
