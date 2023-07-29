@@ -3,6 +3,7 @@
 namespace Nsv\League\Api\Model;
 
 use Nsv\Dwz\DsbDatabase;
+use Nsv\League\Core\Result;
 use Nsv\League\Entity;
 
 class Player
@@ -22,11 +23,17 @@ class Player
 
   public ?Team $team;
   public ?array $games;
+  public ?int $gameCount;
+  public ?float $points;
   public array|null $dwzCalculation;
 
   public function addGame(Entity\Game $game) {
     if (!isset($this->games)) $this->games = array();
     $this->games[] = PlayerGame::forPlayer($this->id, $game);
+  }
+
+  public function pointsFormatted() {
+    return Result::format($this->points);
   }
 
   public static function fromEntity(Entity\Player $player) {

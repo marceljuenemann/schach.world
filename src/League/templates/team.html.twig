@@ -106,6 +106,9 @@
           {% endif %}
         {% endfor %}
 
+        <td>{% if player.gameCount %}{{ player.pointsFormatted() }}{% endif %}</td>
+        <td>{% if player.gameCount %}{{ player.gameCount }}{% endif %}</td>
+        <td>{% if player.gameCount %}{{ (100 * player.points / player.gameCount)|round }}{% endif %}</td>
       </tr>
     {% endfor %}
   {% endfor %}
