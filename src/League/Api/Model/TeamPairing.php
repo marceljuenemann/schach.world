@@ -22,7 +22,7 @@ class TeamPairing
     $result = new TeamPairing();
     $result->division = Division::fromEntity($pairing->division);
     $result->round = $pairing->round;
-    $result->date = $pairing->division->dateOfRound($pairing->round);
+    $result->date = $pairing->customDate ?: $pairing->division->dateOfRound($pairing->round);
     $result->uri = $pairing->division->matchDayUri($pairing->round);
 
     if ($pairing->team1 == $team) {

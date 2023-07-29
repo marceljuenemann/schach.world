@@ -3,9 +3,6 @@
 {% set title = team.name %}
 
 {% block content %}
-
-{# TODO: abweichender termin #}
-
 <div class="row">
   {% if team.pairingsByDivision|default(false) %}
     <div class="col-12 col-lg-6">
@@ -54,5 +51,4 @@
     
   </div>
 </div>
-
 {% endblock %}
