@@ -38,6 +38,8 @@ class Team
     $result->postCode = $team->venuePostCode;
     $result->city = $team->venueCity;
     $result->phone = $team->venuePhone;
+    $result->isAccessible = $team->isVenueAccessible();
+    $result->hasAccessibleToilet = $team->hasAccessibleToilet();
     $result->directionsUri = self::mapsLink($result);
     return $result;
   }

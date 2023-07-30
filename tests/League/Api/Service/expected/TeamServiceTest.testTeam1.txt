@@ -12,6 +12,8 @@ Nsv\League\Api\Model\Team Object
             [postCode] => 
             [city] => 
             [phone] => 
+            [isAccessible] => 
+            [hasAccessibleToilet] => 
             [directionsUri] => https://maps.google.com/maps?hl=de&amp;q=,+,Germany
         )
 

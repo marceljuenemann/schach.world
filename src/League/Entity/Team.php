@@ -3,6 +3,7 @@
 namespace Nsv\League\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Nsv\League\Core\Encoding;
 
 #[ORM\Entity]
 #[ORM\Table(name: 'mannschaften')]
@@ -81,6 +82,9 @@ class Team
   #[ORM\OrderBy(["number" => "ASC"])]
   private $players;
 
+  #[ORM\OneToMany(targetEntity: TeamDetail::class, mappedBy: 'team')]   
+  private $details;
+
   public function nameWithNumber() {
     return trim(trim($this->name) . ' ' . ($this->number > 1 ? $this->number : ''));
   }
@@ -113,6 +117,25 @@ class Team
         yield $team;
       }
     }
+  }
+
+  public function detail(string $key): TeamDetail|null {
+    foreach ($this->details as $detail) {
+      if ($detail->key === $key) {
+        return $detail;
+      }
+    }
+    return null;
+  }
+
+  public function isVenueAccessible(): bool {
+    $detail = $this->detail(Encoding::utf8_decode(TeamDetail::KEY_ACCESSIBLE));
+    return $detail && $detail->isTrue();
+  }
+
+  public function hasAccessibleToilet(): bool {
+    $detail = $this->detail(Encoding::utf8_decode(TeamDetail::KEY_ACCESSIBLE_TOILET));
+    return $detail && $detail->isTrue();
   }
 
   public function __call($property, $args) {
