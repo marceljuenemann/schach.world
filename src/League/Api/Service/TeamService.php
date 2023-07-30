@@ -17,7 +17,6 @@ class TeamService
     private PairingRepository $pairingRepository
   ) {}
 
-  // TODO: cache.
   public function team(Entity\League $league, int $teamId): Team {
     $team = $league->teamById($teamId);
     if ($team->league != $league) {
@@ -56,8 +55,6 @@ class TeamService
         }
       }
     }
-    
     return $model;
   }
-
 }
