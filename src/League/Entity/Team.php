@@ -90,7 +90,7 @@ class Team
   }
 
   public function uri() {
-    return $this->league->uri() . "?mannschaft=" . $this->id;
+    return $this->league->uri() . "m/" . $this->id . "/";
   }
 
   /**

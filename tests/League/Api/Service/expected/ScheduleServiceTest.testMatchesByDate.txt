@@ -23,7 +23,7 @@ Array
                                                     [id] => 35
                                                     [name] => Team
                                                     [zps] => 0
-                                                    [uri] => /ligen/test/?mannschaft=35
+                                                    [uri] => /ligen/test/m/35/
                                                 )
 
                                             [team2] => Nsv\League\Api\Model\Team Object
@@ -31,7 +31,7 @@ Array
                                                     [id] => 36
                                                     [name] => Team 2
                                                     [zps] => 0
-                                                    [uri] => /ligen/test/?mannschaft=36
+                                                    [uri] => /ligen/test/m/36/
                                                 )
 
                                             [host] => 
@@ -49,7 +49,7 @@ Array
                                                     [id] => 36
                                                     [name] => Team 2
                                                     [zps] => 0
-                                                    [uri] => /ligen/test/?mannschaft=36
+                                                    [uri] => /ligen/test/m/36/
                                                 )
 
                                             [team2] => Nsv\League\Api\Model\Team Object
@@ -57,7 +57,7 @@ Array
                                                     [id] => 35
                                                     [name] => Team
                                                     [zps] => 0
-                                                    [uri] => /ligen/test/?mannschaft=35
+                                                    [uri] => /ligen/test/m/35/
                                                 )
 
                                             [host] => 

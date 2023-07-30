@@ -6,6 +6,7 @@ use Doctrine\ORM\EntityNotFoundException;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Repository\DivisionRepository;
 use Nsv\League\Repository\PlayerRepository;
+use Nsv\League\Repository\TeamRepository;
 use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,7 +20,8 @@ class LegacyController extends AbstractLeagueController {
 
   function __construct(
     private DivisionRepository $divisionRepository,
-    private PlayerRepository $playerRepository
+    private PlayerRepository $playerRepository,
+    private TeamRepository $teamRepository
   ) {}
 
   #[Route('ligen/{league}/', name: 'legacy')]
@@ -86,6 +88,13 @@ class LegacyController extends AbstractLeagueController {
           return $this->redirectToRoute('league_schedule', [
             'division' => $division->path(),
             'league' => $division->league->path
+          ]);
+
+        case 'mannschaft':
+          $team = $this->teamRepository->find($_GET['mannschaft']);
+          return $this->redirectToRoute('league_team', [
+            'teamId' => $team->id,
+            'league' => $team->league->path
           ]);
 
         case 'spieler':
