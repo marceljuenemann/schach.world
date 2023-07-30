@@ -3,6 +3,7 @@
 namespace Nsv\League\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Nsv\Dwz\DsbDatabase;
 
 #[ORM\Entity]
 #[ORM\Table(name: 'spieler')]
@@ -115,6 +116,14 @@ class Player
     // Take the last four characters in case it's the full birthdate.
     $year = (int) substr($this->birth, -4);
     return ($year > 1900 && $year < 2100) ? $year : null;
+  }
+
+  /**
+   * Whether the player is a guest player, i.e. their club ZPS does not match the team ZPS.
+   */
+  public function isGuest(): bool {
+    if (!$this->zps || !$this->team->zps) return false;
+    return !str_contains($this->team->zps, substr($this->zps, 0, DsbDatabase::ZPS_CLUB_LENGTH));
   }
 
   public function __call($property, $args) {

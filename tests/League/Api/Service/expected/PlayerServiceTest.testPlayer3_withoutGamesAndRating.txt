@@ -10,12 +10,14 @@ Nsv\League\Api\Model\Player Object
     [dwz] => 
     [elo] => 
     [gender] => 
+    [isGuest] => 
     [uri] => /ligen/test/s/27/
     [dsbUri] => 
     [team] => Nsv\League\Api\Model\Team Object
         (
             [id] => 35
             [name] => Team
+            [zps] => 0
             [uri] => /ligen/test/?mannschaft=35
         )
 

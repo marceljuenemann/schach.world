@@ -7,6 +7,9 @@ namespace Nsv\Dwz;
  */
 class DsbDatabase
 {
+  // TODO: Maybe move to a Zps class with ZPS utils?
+  const ZPS_CLUB_LENGTH = 5;
+
   const PLAYER_RECORD_URI = "https://www.schachbund.de/spieler.html?zps=";
 
   /**

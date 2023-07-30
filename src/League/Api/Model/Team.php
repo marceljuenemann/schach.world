@@ -9,6 +9,7 @@ class Team
 {
   public int $id;
   public string $name;
+  public string $zps;
   public string $uri;
   public \stdClass $venue;
   public \stdClass $captain;
@@ -20,6 +21,7 @@ class Team
     $result = new Team();
     $result->id = $team->id;
     $result->name = $team->nameWithNumber();
+    $result->zps = $team->zps;
     $result->uri = $team->uri();
     if ($details) {
       $result->venue = self::venueFromEntity($team);

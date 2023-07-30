@@ -2,6 +2,7 @@ Nsv\League\Api\Model\Team Object
 (
     [id] => 35
     [name] => Team
+    [zps] => 0
     [uri] => /ligen/test/?mannschaft=35
     [venue] => stdClass Object
         (
@@ -33,6 +34,7 @@ Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 36
                                     [name] => Team 2
+                                    [zps] => 0
                                     [uri] => /ligen/test/?mannschaft=36
                                 )
 
@@ -50,6 +52,7 @@ Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 36
                                     [name] => Team 2
+                                    [zps] => 0
                                     [uri] => /ligen/test/?mannschaft=36
                                 )
 
@@ -66,6 +69,7 @@ Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 36
                                     [name] => Team 2
+                                    [zps] => 0
                                     [uri] => /ligen/test/?mannschaft=36
                                 )
 
@@ -82,6 +86,7 @@ Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 36
                                     [name] => Team 2
+                                    [zps] => 0
                                     [uri] => /ligen/test/?mannschaft=36
                                 )
 
@@ -98,6 +103,7 @@ Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 36
                                     [name] => Team 2
+                                    [zps] => 0
                                     [uri] => /ligen/test/?mannschaft=36
                                 )
 
@@ -114,6 +120,7 @@ Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 36
                                     [name] => Team 2
+                                    [zps] => 0
                                     [uri] => /ligen/test/?mannschaft=36
                                 )
 
@@ -143,6 +150,7 @@ Nsv\League\Api\Model\Team Object
                             [dwz] => 1942
                             [elo] => 2020
                             [gender] => w
+                            [isGuest] => 
                             [uri] => /ligen/test/s/25/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                             [games] => Array
@@ -159,6 +167,7 @@ Nsv\League\Api\Model\Team Object
                                                 (
                                                     [id] => 36
                                                     [name] => Team 2
+                                                    [zps] => 0
                                                     [uri] => /ligen/test/?mannschaft=36
                                                 )
 
@@ -174,6 +183,7 @@ Nsv\League\Api\Model\Team Object
                                                     [dwz] => 1500
                                                     [elo] => 
                                                     [gender] => m
+                                                    [isGuest] => 
                                                     [uri] => /ligen/test/s/26/
                                                     [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                                                 )
@@ -193,6 +203,7 @@ Nsv\League\Api\Model\Team Object
                                                 (
                                                     [id] => 36
                                                     [name] => Team 2
+                                                    [zps] => 0
                                                     [uri] => /ligen/test/?mannschaft=36
                                                 )
 
@@ -208,6 +219,7 @@ Nsv\League\Api\Model\Team Object
                                                     [dwz] => 1500
                                                     [elo] => 
                                                     [gender] => m
+                                                    [isGuest] => 
                                                     [uri] => /ligen/test/s/26/
                                                     [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                                                 )
@@ -233,6 +245,7 @@ Nsv\League\Api\Model\Team Object
                             [dwz] => 
                             [elo] => 
                             [gender] => 
+                            [isGuest] => 
                             [uri] => /ligen/test/s/27/
                             [dsbUri] => 
                             [gameCount] => 0

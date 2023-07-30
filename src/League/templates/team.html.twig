@@ -89,7 +89,12 @@
       {% for player in players %}
         <tr>
           <td class="text-right">{{ player.number }}</td>
-          <td class="text-left">{{ nsv.link(player) }}</td>
+          <td class="text-left">
+            {{ nsv.link(player) }}
+            {% if player.isGuest %}
+              <span {{ nsv.tooltip('Gastspieler:in') }} class="badge badge-pill badge-secondary">G</span>
+            {% endif %}
+          </td>
           <td class="border-right-bold">{{ player.dwz }}</td>
 
           {# TODO: simplify all these loops. Or maybe just a macro? #}
