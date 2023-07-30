@@ -5,13 +5,6 @@ Nsv\League\Api\Model\Player Object
     [lastName] => Salzmann
     [firstName] => Jan
     [title] => 
-    [team] => Nsv\League\Api\Model\Team Object
-        (
-            [id] => 36
-            [name] => Team 2
-            [uri] => /ligen/test/?mannschaft=36
-        )
-
     [number] => 201
     [zps] => 70101-1023
     [dwz] => 1500
@@ -19,6 +12,13 @@ Nsv\League\Api\Model\Player Object
     [gender] => m
     [uri] => /ligen/test/s/26/
     [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+    [team] => Nsv\League\Api\Model\Team Object
+        (
+            [id] => 36
+            [name] => Team 2
+            [uri] => /ligen/test/?mannschaft=36
+        )
+
     [games] => Array
         (
             [0] => Nsv\League\Api\Model\PlayerGame Object
@@ -43,13 +43,6 @@ Nsv\League\Api\Model\Player Object
                             [lastName] => Jünemann
                             [firstName] => Marcel
                             [title] => GM Dr.
-                            [team] => Nsv\League\Api\Model\Team Object
-                                (
-                                    [id] => 35
-                                    [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=35
-                                )
-
                             [number] => 1
                             [zps] => 70156-117
                             [dwz] => 1942
@@ -84,13 +77,6 @@ Nsv\League\Api\Model\Player Object
                             [lastName] => Jünemann
                             [firstName] => Marcel
                             [title] => GM Dr.
-                            [team] => Nsv\League\Api\Model\Team Object
-                                (
-                                    [id] => 35
-                                    [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=35
-                                )
-
                             [number] => 1
                             [zps] => 70156-117
                             [dwz] => 1942
@@ -125,13 +111,6 @@ Nsv\League\Api\Model\Player Object
                             [lastName] => Jünemann
                             [firstName] => Marcel
                             [title] => GM Dr.
-                            [team] => Nsv\League\Api\Model\Team Object
-                                (
-                                    [id] => 35
-                                    [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=35
-                                )
-
                             [number] => 1
                             [zps] => 70156-117
                             [dwz] => 1942
@@ -166,13 +145,6 @@ Nsv\League\Api\Model\Player Object
                             [lastName] => Jünemann
                             [firstName] => Marcel
                             [title] => GM Dr.
-                            [team] => Nsv\League\Api\Model\Team Object
-                                (
-                                    [id] => 35
-                                    [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=35
-                                )
-
                             [number] => 1
                             [zps] => 70156-117
                             [dwz] => 1942
@@ -207,13 +179,6 @@ Nsv\League\Api\Model\Player Object
                             [lastName] => Jünemann
                             [firstName] => Marcel
                             [title] => GM Dr.
-                            [team] => Nsv\League\Api\Model\Team Object
-                                (
-                                    [id] => 35
-                                    [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=35
-                                )
-
                             [number] => 1
                             [zps] => 70156-117
                             [dwz] => 1942
@@ -248,13 +213,6 @@ Nsv\League\Api\Model\Player Object
                             [lastName] => Jünemann
                             [firstName] => Marcel
                             [title] => GM Dr.
-                            [team] => Nsv\League\Api\Model\Team Object
-                                (
-                                    [id] => 35
-                                    [name] => Team
-                                    [uri] => /ligen/test/?mannschaft=35
-                                )
-
                             [number] => 1
                             [zps] => 70156-117
                             [dwz] => 1942

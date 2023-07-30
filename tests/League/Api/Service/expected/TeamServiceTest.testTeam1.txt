@@ -1,0 +1,246 @@
+Nsv\League\Api\Model\Team Object
+(
+    [id] => 35
+    [name] => Team
+    [uri] => /ligen/test/?mannschaft=35
+    [venue] => stdClass Object
+        (
+            [name] => 
+            [note] => 
+            [street] => 
+            [postCode] => 
+            [city] => 
+            [phone] => 
+            [directionsUri] => https://maps.google.com/maps?hl=de&amp;q=,+,Germany
+        )
+
+    [captain] => stdClass Object
+        (
+            [name] => 
+            [mail] => 
+            [phone] => 
+            [phone2] => 
+        )
+
+    [pairingsByDivision] => Array
+        (
+            [22] => Array
+                (
+                    [0] => Nsv\League\Api\Model\TeamPairing Object
+                        (
+                            [id] => 73
+                            [opponent] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 36
+                                    [name] => Team 2
+                                    [uri] => /ligen/test/?mannschaft=36
+                                )
+
+                            [round] => 1
+                            [home] => 1
+                            [date] => 2025-01-01
+                            [result] => 2½:1½
+                            [uri] => /ligen/test/?staffel=22&r=1
+                        )
+
+                    [1] => Nsv\League\Api\Model\TeamPairing Object
+                        (
+                            [id] => 74
+                            [opponent] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 36
+                                    [name] => Team 2
+                                    [uri] => /ligen/test/?mannschaft=36
+                                )
+
+                            [round] => 1
+                            [home] => 
+                            [date] => 2025-01-01
+                            [uri] => /ligen/test/?staffel=22&r=1
+                        )
+
+                    [2] => Nsv\League\Api\Model\TeamPairing Object
+                        (
+                            [id] => 75
+                            [opponent] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 36
+                                    [name] => Team 2
+                                    [uri] => /ligen/test/?mannschaft=36
+                                )
+
+                            [round] => 2
+                            [home] => 
+                            [date] => 2024-12-31
+                            [uri] => /ligen/test/?staffel=22&r=2
+                        )
+
+                    [3] => Nsv\League\Api\Model\TeamPairing Object
+                        (
+                            [id] => 76
+                            [opponent] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 36
+                                    [name] => Team 2
+                                    [uri] => /ligen/test/?mannschaft=36
+                                )
+
+                            [round] => 4
+                            [home] => 1
+                            [date] => 2025-04-05
+                            [uri] => /ligen/test/?staffel=22&r=4
+                        )
+
+                    [4] => Nsv\League\Api\Model\TeamPairing Object
+                        (
+                            [id] => 77
+                            [opponent] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 36
+                                    [name] => Team 2
+                                    [uri] => /ligen/test/?mannschaft=36
+                                )
+
+                            [round] => 4
+                            [home] => 1
+                            [date] => 
+                            [uri] => /ligen/test/?staffel=22&r=4
+                        )
+
+                    [5] => Nsv\League\Api\Model\TeamPairing Object
+                        (
+                            [id] => 78
+                            [opponent] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 36
+                                    [name] => Team 2
+                                    [uri] => /ligen/test/?mannschaft=36
+                                )
+
+                            [round] => 4
+                            [home] => 1
+                            [date] => 2025-04-04
+                            [uri] => /ligen/test/?staffel=22&r=4
+                        )
+
+                )
+
+        )
+
+    [playersByTeamNumber] => Array
+        (
+            [1] => Array
+                (
+                    [0] => Nsv\League\Api\Model\Player Object
+                        (
+                            [id] => 25
+                            [name] => GM Dr. Jünemann, Marcel
+                            [lastName] => Jünemann
+                            [firstName] => Marcel
+                            [title] => GM Dr.
+                            [number] => 1
+                            [zps] => 70156-117
+                            [dwz] => 1942
+                            [elo] => 2020
+                            [gender] => w
+                            [uri] => /ligen/test/s/25/
+                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
+                            [games] => Array
+                                (
+                                    [73] => Nsv\League\Api\Model\PlayerGame Object
+                                        (
+                                            [round] => 1
+                                            [board] => 3
+                                            [home] => 1
+                                            [white] => 
+                                            [result] => 0
+                                            [opponentResult] => 1
+                                            [opponentTeam] => Nsv\League\Api\Model\Team Object
+                                                (
+                                                    [id] => 36
+                                                    [name] => Team 2
+                                                    [uri] => /ligen/test/?mannschaft=36
+                                                )
+
+                                            [opponentPlayer] => Nsv\League\Api\Model\Player Object
+                                                (
+                                                    [id] => 26
+                                                    [name] => Salzmann, Jan
+                                                    [lastName] => Salzmann
+                                                    [firstName] => Jan
+                                                    [title] => 
+                                                    [number] => 201
+                                                    [zps] => 70101-1023
+                                                    [dwz] => 1500
+                                                    [elo] => 
+                                                    [gender] => m
+                                                    [uri] => /ligen/test/s/26/
+                                                    [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+                                                )
+
+                                            [uri] => /ligen/test/?staffel=22&r=1
+                                        )
+
+                                    [75] => Nsv\League\Api\Model\PlayerGame Object
+                                        (
+                                            [round] => 2
+                                            [board] => 3
+                                            [home] => 
+                                            [white] => 1
+                                            [result] => 
+                                            [opponentResult] => 
+                                            [opponentTeam] => Nsv\League\Api\Model\Team Object
+                                                (
+                                                    [id] => 36
+                                                    [name] => Team 2
+                                                    [uri] => /ligen/test/?mannschaft=36
+                                                )
+
+                                            [opponentPlayer] => Nsv\League\Api\Model\Player Object
+                                                (
+                                                    [id] => 26
+                                                    [name] => Salzmann, Jan
+                                                    [lastName] => Salzmann
+                                                    [firstName] => Jan
+                                                    [title] => 
+                                                    [number] => 201
+                                                    [zps] => 70101-1023
+                                                    [dwz] => 1500
+                                                    [elo] => 
+                                                    [gender] => m
+                                                    [uri] => /ligen/test/s/26/
+                                                    [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+                                                )
+
+                                            [uri] => /ligen/test/?staffel=22&r=2
+                                        )
+
+                                )
+
+                            [gameCount] => 3
+                            [points] => 1.5
+                        )
+
+                    [1] => Nsv\League\Api\Model\Player Object
+                        (
+                            [id] => 27
+                            [name] => Spiellos, Max
+                            [lastName] => Spiellos
+                            [firstName] => Max
+                            [title] => 
+                            [number] => 2
+                            [zps] => 
+                            [dwz] => 
+                            [elo] => 
+                            [gender] => 
+                            [uri] => /ligen/test/s/27/
+                            [dsbUri] => 
+                            [gameCount] => 0
+                            [points] => 0
+                        )
+
+                )
+
+        )
+
+)
