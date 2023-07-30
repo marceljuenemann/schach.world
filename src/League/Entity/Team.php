@@ -8,6 +8,8 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Table(name: 'mannschaften')]
 class Team
 {
+  const DEFAULT_GROUP = 'default';
+
   #[ORM\Id]
   #[ORM\GeneratedValue]
   #[ORM\Column]
@@ -33,6 +35,17 @@ class Team
    */
   #[ORM\Column(length: 10)]
   private ?string $zps;
+
+  /**
+   * If two teams are in different groups, they can never be substitutes for
+   * each other. This is useful if a league has many divisions that aren't all
+   * created equal, e.g. if they have different age groups.
+   * 
+   * TODO: Instead create a group column on the division entity. Also show that
+   * group in the UI so that teams can more easily be distinguished.
+   */
+  #[ORM\Column(name: 'gruppe')]
+  private string $group = self::DEFAULT_GROUP;
 
   #[ORM\Column(name: 'so_name', length: 40)]
   private ?string $venueName;
@@ -79,15 +92,14 @@ class Team
   /**
    * Whether the given team is a substitute team for this one.
    */
-  // TODO: unit test
   public function isSubstituteTeam(Team $team) {
-    if ($team->number <= $this->number) return false;
+    if ($this->number >= $team->number) return false;
     if ($this->zps) {
       if ($this->zps != $team->zps) return false;
     } else {
       if ($this->name != $team->name) return false;
     }
-    // TODO: Gruppe has to be the same as well!
+    if ($this->group != $team->group) return false;
     return $team->number <= $this->number + $this->league->configSubstituteTeams;
   }
 
