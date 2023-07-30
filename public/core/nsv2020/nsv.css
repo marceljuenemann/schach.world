@@ -274,6 +274,18 @@ table.nsv-table {
   color: white;
 }
 
+.nsv-table.borders-bold th {
+  border-bottom-width: 2px;
+}
+
+.nsv-table.borders-bold .border-left-bold {
+  border-left-width: 2px;
+}
+
+.nsv-table.borders-bold .border-right-bold {
+  border-right-width: 2px;
+}
+
 .nsv-table-footer {
   margin-top: -1rem !important;
 }

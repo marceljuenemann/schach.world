@@ -19,7 +19,7 @@
       {% for division in league.divisions %}
         {% if team.pairingsByDivision[division.id]|default(false) %}
           <h4 class="mt-4">{{ division.name }}</h4>
-          <table class='sed_tabelle' cellpadding='3'>
+          <table class='nsv-table text-center'>
             <tr>
               <th>R</th>
               <th>Tag</th>
@@ -65,11 +65,11 @@
 <h4 class="mt-4">Aufstellung</h4>
 <div class='overflow-auto'>
   {{ nsv.detailsToggle('Einzelergebnisse anzeigen') }}
-  <table class='sed_tabelle' cellpadding='3'>
+  <table class='nsv-table borders-bold text-center' cellpadding='3'>
     <tr>
       <th>Nr.</th>
       <th>Name</th>
-      <th>DWZ</th>
+      <th class="border-right-bold">DWZ</th>
       {# TODO: ensure sorted by API, with the team's division first #}
       {# TODO: set border width to 2px for some cells #}
       {% for division in league.divisions %}
@@ -81,7 +81,7 @@
           {% endfor %}
         {% endif %}
       {% endfor %}
-      <th>Pkt</th>
+      <th class="border-left-bold">Pkt</th>
       <th>Sp.</th>
       <th>%</th>
     </tr>
@@ -90,7 +90,7 @@
         <tr>
           <td class="text-right">{{ player.number }}</td>
           <td class="text-left">{{ nsv.link(player) }}</td>
-          <td>{{ player.dwz }}</td>
+          <td class="border-right-bold">{{ player.dwz }}</td>
 
           {# TODO: simplify all these loops. Or maybe just a macro? #}
           {% for division in league.divisions %}
@@ -108,7 +108,7 @@
             {% endif %}
           {% endfor %}
 
-          <td>{% if player.gameCount %}{{ player.pointsFormatted() }}{% endif %}</td>
+          <td class="border-left-bold">{% if player.gameCount %}{{ player.pointsFormatted() }}{% endif %}</td>
           <td>{% if player.gameCount %}{{ player.gameCount }}{% endif %}</td>
           <td>{% if player.gameCount %}{{ (100 * player.points / player.gameCount)|round }}{% endif %}</td>
         </tr>
