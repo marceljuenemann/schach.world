@@ -9,7 +9,7 @@ class Team
 {
   public int $id;
   public string $name;
-  public string $zps;
+  public ?string $zps;
   public string $uri;
   public \stdClass $venue;
   public \stdClass $captain;
