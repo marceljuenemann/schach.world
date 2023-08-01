@@ -47,6 +47,11 @@ class PlayerService
         $points += Result::score($game->result);
       }
     }
-    return $this->dwzCalculator->calculate($player->dwz, $opponentDwz, $points, $yearOfBirth);
+    try {
+      return $this->dwzCalculator->calculate($player->dwz, $opponentDwz, $points, $yearOfBirth);
+    } catch (\Exception $e) {
+      // Swallow timeouts and server errors.
+      return null;
+    }
   }
 }

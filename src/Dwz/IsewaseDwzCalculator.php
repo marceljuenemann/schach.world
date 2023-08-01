@@ -11,13 +11,15 @@ use SimpleXMLElement;
 class IsewaseDwzCalculator
 {
   const SERVICE_URL = "http://d2.isewase.de/dwzxml2.php";
+  const TIMEOUT_SECONDS = 1;
   
   private $service;
 
   function __construct(callable|null $service = null) {
     $this->service = $service ?: function($params): SimpleXMLElement {
       $url = self::SERVICE_URL . '?' . http_build_query($params);        
-      return new SimpleXMLElement(file_get_contents($url));
+      $ctx = stream_context_create(["http" => ["timeout" => self::TIMEOUT_SECONDS]]);
+      return new SimpleXMLElement(file_get_contents($url, 0, $ctx));
     };
   }
 
