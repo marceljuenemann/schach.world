@@ -89,7 +89,7 @@ $url = nsv2020_url();
             <div class="align-self-center"><?= nsv2020_custom_sitename() ?></div>
           </span>
         <?php endif; ?>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -109,7 +109,7 @@ $url = nsv2020_url();
 
                 echo "<li class='nav-item" . ($is_dropdown ? " dropdown" : "" ) . "'>";
                 echo "<a class='nav-link";
-                if ($is_dropdown) echo " dropdown-toggle' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false";
+                if ($is_dropdown) echo " dropdown-toggle' role='button' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false";
                 echo "' href='$url' id='navbarDropdownMenuLink$id'>$title";
                 echo "</a>";
 

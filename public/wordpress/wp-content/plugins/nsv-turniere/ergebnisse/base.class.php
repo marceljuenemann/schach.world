@@ -73,7 +73,7 @@ abstract class Base extends \NSV\Core\Page {
       $class .= $group->hasAnyFiles() ? '' : ' disabled';
       ?>
       <li class='nav-item dropdown'>
-        <a class='nav-link dropdown-toggle <?=$class?>' data-toggle="dropdown" href='#' role="button" aria-expanded="false"><?=$group->config['name']?></a>
+        <a class='nav-link dropdown-toggle <?=$class?>' data-bs-toggle="dropdown" href='#' role="button" aria-expanded="false"><?=$group->config['name']?></a>
         <ul class="dropdown-menu">
           <?php
             printMenuItems($group, array("teilrang" => "Rangliste"));
