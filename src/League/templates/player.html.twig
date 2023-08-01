@@ -41,10 +41,11 @@
         {% endif %}
 
         <td>{{ game.home ? 'Heim' : 'Gast' }}</td>
-        <td class='text-left'>
-          <div class="d-md-none">{{ nsv.link(game.opponentPlayer) }}</div>
+        <td class='text-left d-md-none'>
+          <div>{{ nsv.link(game.opponentPlayer) }}</div>
           <div class="font-italic">{{ nsv.link(game.opponentTeam) }}</div>
         </td>
+        <td class='text-left d-none d-md-table-cell'>{{ nsv.link(game.opponentTeam) }}</td>
         <td class='text-left d-none d-md-table-cell'>{{ nsv.link(game.opponentPlayer) }}</td>
         <td>{{ game.opponentPlayer.dwz|default(null) }}</td>
         <td>{{ game.result }}</td>
