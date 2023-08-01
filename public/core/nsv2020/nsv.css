@@ -18,8 +18,9 @@
   padding-left: 10px;
 }
 
-a, a:hover {
+a, a:hover, .nav-link, .nav-link:hover {
   color: #c32811;
+  text-decoration: none;
 }
 
 /* Account for sticky navbar and card header when scrolling to an anchor. */
@@ -79,6 +80,14 @@ a.anchor {
 
 .custom-control .custom-control-input:focus~.custom-control-label::before {
   box-shadow: none;
+}
+
+/**
+ * For backwards compatibility with bootstrap 4.
+ * TODO: Stop using form-group.
+ */
+.form-group {
+  margin-bottom: 1rem!important;
 }
 
 /****************************************
@@ -266,11 +275,14 @@ table.nsv-table {
 }
 
 .nsv-table a:hover {
+  color: #c32811;
   text-decoration: none;
 }
 
 .nsv-table th a,
-.nsv-table .nsv-table-header a {
+.nsv-table th a:hover,
+.nsv-table .nsv-table-header a,
+.nsv-table .nsv-table-header a:hover {
   color: white;
 }
 

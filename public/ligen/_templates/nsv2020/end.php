@@ -8,8 +8,8 @@
 echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
 echo "<h5 class='card-title'>Aufstellungen</h5>";
 ?>
-  <form class="form" method="get" action="<?= $globals['basepath'] ?>/">
-    <select name="mannschaft" onchange="this.form.submit()" class="form-control form-control-sm">
+  <form method="get" action="<?= $globals['basepath'] ?>/">
+    <select name="mannschaft" onchange="this.form.submit()" class="form-select">
       <option value="" selected="selected">--- Mannschaft ---</option>
       <?
         foreach ( $globals ['teams'] as $id=>$name )
@@ -49,7 +49,7 @@ if ( count ( $globals ['staffeln'] ) )
 {
   echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
   echo "<h5 class='card-title'>Spieltag-Auswahl</h5>";
-  echo "<form class='form' method='get' action='$globals[basepath]/'><div>";
+  echo "<form class='' method='get' action='$globals[basepath]/'><div>";
 
   // Staffelauswahl
   if ( count ( $globals ['staffeln'] ) == 1 )
@@ -70,14 +70,14 @@ if ( count ( $globals ['staffeln'] ) )
     $options = SED_SelectOption ( $options, $_GET ['staffel'] );
 
     // Liste ausgeben
-    echo "<div class='form-group'><select name='staffel' onchange='this.form.submit()' class='form-control form-control-sm'>";
+    echo "<div class='form-group'><select name='staffel' onchange='this.form.submit()' class='form-select'>";
     echo "$options</select></div>";
   }
 
   // Spieltag-Auswahl
   ?>
     <div class="form-group">
-      <select name="r" onchange="this.form.submit()" class='form-control form-control-sm'>
+      <select name="r" onchange="this.form.submit()" class='form-select'>
       <option value="statistik">Statistik</option>
       <option value="spielplan">Spielplan</option>
       <option value="" selected="selected">Aktueller Spieltag</option>
@@ -104,7 +104,7 @@ if (count($links)) {
   echo "<h5 class='card-title'>Saisonauswahl</h5>";
   ?>
     <form class='form'><div>
-        <select name="saison" onchange="window.location.href = '/ligen/' + this.value" class="form-control form-control-sm">
+        <select name="saison" onchange="window.location.href = '/ligen/' + this.value" class="form-select">
         <?
           foreach ( $links as $value => $label ) {
             $selected = $value == $prefs['directory'] ? 'selected="selected"' : '';
@@ -124,7 +124,7 @@ echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>
 echo "<h5 class='card-title'>Staffelleiter</h5>";
 ?>
   <form action="<?=$globals['basepath']?>/?admin=login" method="post"><div>
-    <div class="form-group"><select class="form-control form-control-sm" name="benutzer">
+    <div class="form-group"><select class="form-select" name="benutzer">
       <?
         $benutzer = isset ( $_GET ['staffel'] ) ? $_GET ['staffel'] : ""; // nur über tinyurl möglich
         echo "<option value='t-$globals[tid]'>--- Benutzer ---</option>";
@@ -136,7 +136,7 @@ echo "<h5 class='card-title'>Staffelleiter</h5>";
       ?>
     </select></div>
     <div class="form-group">
-      <input type="password" name="passwort" placeholder="Passwort" class="form-control form-control-sm">
+      <input type="password" name="passwort" placeholder="Passwort" class="form-control">
     </div>
     <input type="submit" value="Einloggen" class="btn btn-sm btn-primary" />
   </div></form>

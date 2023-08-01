@@ -32,7 +32,7 @@
                 <td><a href="{{ pairing.uri }}">{{ pairing.round }}</a></td>
                 <td><a href="{{ pairing.uri }}">{% if pairing.date %}{{ pairing.date|date('d.m.') }}{% endif %}</a></td>
                 <td>{{ pairing.home ? 'Heim' : 'Gast' }}</td>
-                <td class="text-left">{{ nsv.link(pairing.opponent) }}</td>
+                <td class="text-start">{{ nsv.link(pairing.opponent) }}</td>
                 <td class="text-nowrap"><a href="{{ pairing.uri }}">{{ pairing.result|default(null) }}</a></td>
               </tr>
             {% endfor %}
@@ -89,8 +89,8 @@
     {% for teamNumber, players in team.playersByTeamNumber %}
       {% for player in players %}
         <tr>
-          <td class="text-right">{{ player.number }}</td>
-          <td class="text-left">
+          <td class="text-end">{{ player.number }}</td>
+          <td class="text-start">
             {{ nsv.link(player) }}
             {% if player.isGuest %}
               <span {{ nsv.tooltip('Gastspieler:in') }} class="badge badge-pill badge-secondary">G</span>

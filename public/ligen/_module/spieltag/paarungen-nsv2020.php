@@ -16,9 +16,9 @@
     // Mannschaftsnamen und Ergebnisse ausgeben
     echo "<div class='nsv-table-header d-flex'>";
     echo "<a name='$anker1'></a><a name='$anker2'></a>";
-    echo "<div class='sed-mannschaft text-left'><a href='?mannschaft=".$daten ['paarungen'][$i]['mid1']."'>".$daten ['paarungen'][$i]['m1']."</a></div>";
+    echo "<div class='sed-mannschaft text-start'><a href='?mannschaft=".$daten ['paarungen'][$i]['mid1']."'>".$daten ['paarungen'][$i]['m1']."</a></div>";
     echo "<div class='text-center'>&nbsp;".$daten ['paarungen'][$i]['erg1']."&nbsp;:&nbsp;".$daten ['paarungen'][$i]['erg2']."&nbsp;</div>";
-    echo "<div class='sed-mannschaft text-right'><a href='?mannschaft=".$daten ['paarungen'][$i]['mid2']."'>".$daten ['paarungen'][$i]['m2']."</a></div>";
+    echo "<div class='sed-mannschaft text-end'><a href='?mannschaft=".$daten ['paarungen'][$i]['mid2']."'>".$daten ['paarungen'][$i]['m2']."</a></div>";
     echo "</div>";
 
     // ggf. Infos über Verlegung & Ausrichter

@@ -23,7 +23,7 @@ $url = nsv2020_url();
   <head>
     <meta charset="<?= nsv2020_is_utf8() ? 'utf-8' : 'ISO-8859-1'?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="<?= nsv2020_url() ?>/vendor/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="<?= nsv2020_url() ?>/vendor/bootstrap-5.2.3/bootstrap.min.css">
     <link rel="stylesheet" href="/wp-includes/css/dashicons.min.css">
 
     <link rel="stylesheet" href="<?= nsv2020_url() ?>/nsv.css">
@@ -33,8 +33,7 @@ $url = nsv2020_url();
 
     <?= nsv2020_head() ?>
 
-    <script src="<?= nsv2020_url() ?>/vendor/popper-1.14.7.min.js"></script>
-    <script src="<?= nsv2020_url() ?>/vendor/bootstrap-4.3.1.min.js"></script>
+    <script src="<?= nsv2020_url() ?>/vendor/bootstrap-5.2.3/bootstrap.bundle.min.js"></script>
 
     <?php if (nsv2020_theme() == 'nsv'): ?>
       <link rel="icon" href="https://nsv-online.de/wp-content/uploads/2019/05/favicon-1.gif" sizes="32x32">

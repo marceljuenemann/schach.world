@@ -15,7 +15,7 @@
 
 {% if player.games|default(false) %}
   <h4>Paarungen</h4>
-  <table class='sed_tabelle' cellspacing='0' cellpadding='3'>
+  <table class='nsv-table text-center'>
     <tr>
       <th>Rd</th>
       <th>Brt</th>
@@ -41,12 +41,12 @@
         {% endif %}
 
         <td>{{ game.home ? 'Heim' : 'Gast' }}</td>
-        <td class='text-left d-md-none'>
+        <td class='text-start d-md-none'>
           <div>{{ nsv.link(game.opponentPlayer) }}</div>
           <div class="font-italic">{{ nsv.link(game.opponentTeam) }}</div>
         </td>
-        <td class='text-left d-none d-md-table-cell'>{{ nsv.link(game.opponentTeam) }}</td>
-        <td class='text-left d-none d-md-table-cell'>{{ nsv.link(game.opponentPlayer) }}</td>
+        <td class='text-start d-none d-md-table-cell'>{{ nsv.link(game.opponentTeam) }}</td>
+        <td class='text-start d-none d-md-table-cell'>{{ nsv.link(game.opponentPlayer) }}</td>
         <td>{{ game.opponentPlayer.dwz|default(null) }}</td>
         <td>{{ game.result }}</td>
       </tr>
