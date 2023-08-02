@@ -7,8 +7,8 @@ use Nsv\League\Entity;
 class Game
 {
   public int $board;
-  public Player $player1;
-  public Player $player2;
+  public ?Player $player1;
+  public ?Player $player2;
   public string $result1;
   public string $result2;
 

@@ -37,7 +37,8 @@ class Player
     return Result::format($this->points);
   }
 
-  public static function fromEntity(Entity\Player $player) {
+  public static function fromEntity(Entity\Player|null $player): Player|null {
+    if (!$player) return null;
     $result = new Player();
     $result->id = $player->id;
     $result->name = $player->name();

@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Controller;
 
+use Nsv\League\Api\Service\MatchDayService;
 use Nsv\League\Api\Service\PlayerService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Api\Service\TeamService;
@@ -55,6 +56,13 @@ class MainController extends AbstractLeagueController {
       'matches' => $matches,
       'hasMatches' => $hasMatches
     ]);
+  }
+
+  // TODO: round optional
+  #[Route('{division}/{round}/debug', name: 'matchday_debug' /*, requirements: ['round' => '/\d+/'] */)]
+  public function matchday_debug(int $round, MatchDayService $service): Response {
+    $matchDay = $service->matchDay($this->division, $round);
+    return $this->debugResponse($matchDay);
   }
 
   #[Route('{division}/spielplan/', name: 'schedule')]

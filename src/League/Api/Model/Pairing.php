@@ -16,6 +16,8 @@ class Pairing
   public bool $wasMoved;
   public ?string $moveDate;
 
+  public ?array $games;
+
   public static function fromEntity(Entity\Pairing $pairing) {
     $result = new Pairing();
     $result->team1 = Team::fromEntity($pairing->team1);
@@ -29,8 +31,17 @@ class Pairing
     return $result;
   }
 
+  public static function fromEntityWithGames(Entity\Pairing $pairing) {
+    $model = self::fromEntity($pairing);
+    foreach ($pairing->games as $game) {
+      $model->games[] = Game::fromEntity($game);
+    }
+    return $model;
+  }
+
   private static function formatResult(Entity\Pairing $pairing): string|null {
     if ($pairing->result1 === null) return null;
     return Result::format($pairing->result1).' : '.Result::format($pairing->result2);
   }
 }
+ 
