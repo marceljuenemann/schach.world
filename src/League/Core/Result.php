@@ -29,6 +29,10 @@ class Result
     return $result !== null && in_array($result, [self::WIN, self::DRAW(), self::LOSS]);
   }
 
+  public static function wasBye(string|null $result): bool {
+    return $result !== null && in_array($result, [self::BYE_WIN, self::BYE_LOSS]);
+  }
+
   /**
    * Returns the points scored for a given result.
    */

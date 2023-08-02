@@ -58,25 +58,6 @@ class MainController extends AbstractLeagueController {
     ]);
   }
 
-  // TODO: round optional
-  #[Route('{division}/{round}/debug', name: 'matchday_debug' /*, requirements: ['round' => '/\d+/'] */)]
-  public function matchday_debug(int $round, MatchDayService $service): Response {
-    $matchDay = $service->matchDay($this->division, $round);
-    return $this->debugResponse($matchDay);
-  }
-
-  #[Route('{division}/spielplan/', name: 'schedule')]
-  public function schedule(ScheduleService $service): Response {
-    $matchDays = $service->matchDays($this->division);
-    return $this->renderWithLegacySystem('schedule.html.twig', ['matchDays' => $matchDays]);
-  }
-
-  #[Route('{division}/spielplan/debug/', name: 'schedule_debug')]
-  public function schedule_debug(ScheduleService $service): Response {
-    $matchDays = $service->matchDays($this->division);
-    return $this->debugResponse($matchDays);
-  }
-
   #[Route('m/{teamId}/', name: 'team')]
   public function team(TeamService $service, int $teamId): Response {
     $team = $service->team($this->league, $teamId);
@@ -104,5 +85,32 @@ class MainController extends AbstractLeagueController {
     // TODO: If we expose this as API, hide the eMail and phone
     $player = $service->player($this->league, $playerId);
     return $this->debugResponse($player);
+  }
+
+  #[Route('{division}/spielplan/', name: 'schedule')]
+  public function schedule(ScheduleService $service): Response {
+    $matchDays = $service->matchDays($this->division);
+    return $this->renderWithLegacySystem('schedule.html.twig', ['matchDays' => $matchDays]);
+  }
+
+  #[Route('{division}/spielplan/debug/', name: 'schedule_debug')]
+  public function schedule_debug(ScheduleService $service): Response {
+    $matchDays = $service->matchDays($this->division);
+    return $this->debugResponse($matchDays);
+  }
+
+  // TODO: round optional
+  // TODO: requirements, otherwise matches schedule and stats
+  #[Route('{division}/{round}/', name: 'matchday' /*, requirements: ['round' => '/\d+/'] */)]
+  public function matchday(int $round, MatchDayService $service): Response {
+    $matchDay = $service->matchDay($this->division, $round);
+    return $this->renderWithLegacySystem('matchday.html.twig', ['matchDay' => $matchDay]);
+  }
+  
+  // TODO: round optional
+  #[Route('{division}/{round}/debug', name: 'matchday_debug' /*, requirements: ['round' => '/\d+/'] */)]
+  public function matchday_debug(int $round, MatchDayService $service): Response {
+    $matchDay = $service->matchDay($this->division, $round);
+    return $this->debugResponse($matchDay);
   }
 }
