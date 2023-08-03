@@ -88,6 +88,10 @@ class Division
       return $teams;
     }
 
+    public function scheduleUri() {
+      return $this->league->uri() . "?staffel={$this->id}&r=spielplan";
+    }
+
     public function statsUri() {
       return $this->league->uri() . "?staffel={$this->id}&r=statistik";
     }

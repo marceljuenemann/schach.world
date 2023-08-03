@@ -1,19 +1,28 @@
 {% extends '@league/legacy-layout.html.twig' %}
 {% import "@league/macros.html.twig" as macros %}
 {% import "macros.html.twig" as nsv %}
-{% set title = division.name ~ ': Runde ' ~ matchDay.round %} {# TODO: Add round? #}
+{% set title = division.name %} 
 
 {% block content %}
 
+<ul class="nav nav-tabs mt-4 d-print-none">
+  <li class='nav-item'>
+    <a class='nav-link active' href='?'>
+      Runde {{ matchDay.round }} &nbsp;&ndash;&nbsp; {{ matchDay.date|date('d.m.') }}
+    </a>
+  </li>
+  <li class="nav-item"><a class="nav-link" href="{{ division.scheduleUri }}">Spielplan</a></li>
+  <li class="nav-item"><a class="nav-link" href="{{ division.statsUri }}">Statistik</a></li>
+</ul>
+
 {# RESULTS #}
-<div class="d-inline-block overflow-auto">
+<div class="overflow-auto">
   {# TODO: only if there are any games #}
   {# TODO: further down #}
-  {{ nsv.detailsToggle('DWZ anzeigen') }}
-  <div class='nsv-table sed-ergebnisse'>
+  <div class='nsv-table sed-ergebnisse mb-4'>
     {# TODO: anchor #}
     {% for pairing in matchDay.pairings %}
-      <div class='nsv-table-header d-flex mt-4'>
+      <div class='nsv-table-header d-flex mt-4 text-nowrap'>
         <div class='sed-mannschaft text-start'>{{ nsv.link(pairing.team1) }}</div>
         <div class='text-center'>&nbsp;{{ pairing.result|default(':') }}&nbsp;</div>
         <div class='sed-mannschaft text-end'>{{ nsv.link(pairing.team2) }}</div>
@@ -38,7 +47,7 @@
               {% endif %}
             </div>
             <div class='nsv-table-cell sed-ergebnis'>
-              {{ game.result1 }} &nbsp;:&nbsp; {{ game.result2 }}
+              {{ game.result1 }} : {{ game.result2 }}
             </div>
             <div class='nsv-table-cell sed-spieler sed-spieler2'>
               {% if game.player2 %}
@@ -73,6 +82,7 @@
     {% endfor %}
 
   </div>
+  {{ nsv.detailsToggle('DWZ anzeigen') }}
 
 </div>
 
@@ -90,14 +100,8 @@
     $anker1 = "p".$daten ['paarungen'][$i]['mid1']."x".$daten ['paarungen'][$i]['mid2'];
     $anker2 = "p".$daten ['paarungen'][$i]['mid2']."x".$daten ['paarungen'][$i]['mid1'];
 
-    // Mannschaftsnamen und Ergebnisse ausgeben
-    echo "<div class='nsv-table-header d-flex'>";
     echo "<a name='$anker1'></a><a name='$anker2'></a>";
 
-    // Bemerkung anzeigen
-    if ( $daten ['paarungen'][$i]['bemerkung'] ){
-        echo "<i>".$daten['paarungen'][$i]['bemerkung']."<br /></i>";
-    }
     echo "<br>";
   }
 
