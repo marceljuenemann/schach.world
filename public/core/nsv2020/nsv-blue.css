@@ -2,8 +2,9 @@
           BOOTSTRAP OVERRIDES
 *****************************************/
 
-a, a:hover {
+a, a:hover, .nav-link, .nav-link:hover {
   color: #004375;
+  text-decoration: none;
 }
 
 .page-link, .page-link:hover {
@@ -36,7 +37,7 @@ a, a:hover {
   background-color: #2b6096;
 }
 
-.custom-control .custom-control-input:checked~.custom-control-label::before {
+.form-switch .form-check-input:checked {
   background-color: #2b6096;
   border-color: #2b6096;
 }
@@ -75,6 +76,10 @@ a, a:hover {
 .nsv-table th a,
 .nsv-table .nsv-table-header a {
   color: white;
+}
+
+.nsv-table a:hover {
+  color: #004375;
 }
 
 /* TODO: Move Ergebnisdienst to nsv-table once all leagues use nsv2020. */

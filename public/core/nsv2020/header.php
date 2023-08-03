@@ -44,7 +44,7 @@ $url = nsv2020_url();
   </head>
   <body>
 
-    <div id="nsv-header" class="d-none d-lg-block">
+    <div id="nsv-header" class="d-none d-lg-block d-print-none">
       <?php if (nsv2020_theme() == 'nsv'): ?>
         <div class="container d-flex">
           <div><a href="/"><img src="<?= nsv2020_url() ?>/images/nsv.png"></a></div>
@@ -74,7 +74,7 @@ $url = nsv2020_url();
       <?php endif; ?>
     </div>
 
-    <nav id="nsv-navbar" class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg">
+    <nav id="nsv-navbar" class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg d-print-none">
       <div class="container">
         <?php if (nsv2020_theme() == 'nsv'): ?>
           <a class="navbar-brand d-lg-none d-flex" href="/">
