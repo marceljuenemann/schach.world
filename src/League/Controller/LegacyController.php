@@ -3,13 +3,16 @@
 namespace Nsv\League\Controller;
 
 use Doctrine\ORM\EntityNotFoundException;
+use Nsv\League\Core\Auth;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Repository\DivisionRepository;
 use Nsv\League\Repository\PlayerRepository;
 use Nsv\League\Repository\TeamRepository;
-use Nsv\WebApp\Core\WordPress\Auth;
+use Nsv\WebApp\Core\WordPress\Auth as WordPressAuth;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Session\Session;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -25,7 +28,7 @@ class LegacyController extends AbstractLeagueController {
   ) {}
 
   #[Route('ligen/{league}/', name: 'legacy')]
-  public function legacy(Request $request): Response {
+  public function legacy(Request $request, Auth $auth): Response {
     $this->initializeLegacySystem();
     try {
       // Calculate $globals[mod], i.e. which module to call.
@@ -35,6 +38,8 @@ class LegacyController extends AbstractLeagueController {
       // Redirect to Symfony controller if appropriate.
       if ($response = $this->checkForRedirect($globals['mod'])) {
         return $response;
+      } else if ($globals['mod'] === 'staffelleiter') {
+        $this->legacyAdminSystem($auth);
       } else {
         // Existiert es überhaupt?
         $modulpfad = "$globals[basedir]/_module/$globals[mod]/$globals[mod].php";
@@ -47,7 +52,7 @@ class LegacyController extends AbstractLeagueController {
     } catch (\Exception $e) {
       // Report the error.
       // TODO: move this task to the logger.
-      if (!($e instanceof NotFoundHttpException) && !Auth::isAdmin()) {
+      if (!($e instanceof NotFoundHttpException) && !WordPressAuth::isAdmin()) {
         global $globals;
         @wp_mail($globals['webmaster_mail'], 'LeagueController Exception', $request->getUri() . "\n\n".$e);
       }
@@ -55,7 +60,7 @@ class LegacyController extends AbstractLeagueController {
       // The legacy script often outputs HTML before fully processing the request.
       if (function_exists('SED_GUIclose')) {
         SED_Error('Leider ist ein Fehler aufgetreten :(');
-        if (Auth::isAdmin()) {
+        if (WordPressAuth::isAdmin()) {
           echo "<pre style='text-wrap: wrap'>$e</pre>";
         }
       } else {
@@ -110,5 +115,35 @@ class LegacyController extends AbstractLeagueController {
     } catch (EntityNotFoundException $e) {
       throw new NotFoundHttpException($e->getMessage());
     } 
+  }
+
+  private function legacyAdminSystem(Auth $auth) {
+    if ($_GET['admin'] === 'login') {
+      $auth->legacyLogin($this->league, $_POST['benutzer'], $_POST['passwort']);
+      $_GET['admin'] = 'desktop--';
+    }
+    $division = $auth->checkManagerAccess($this->league);
+    $user = $division ? $division->manager : $this->league->manager;
+
+    global $globals, $admin;
+    $admin = [
+      'usertype' => $division ? 's' : 't',
+      'userid' => $user->id,
+      'username' => $user->name,
+      'usermail' => $user->mail,
+      'staffel' => $division ? $division->id : 0,
+      'pageid' => substr($_GET['admin'], 0, strpos($_GET['admin'], '-')),
+      'session' => ''
+    ];
+
+    ob_start();
+    require_once('login.inc.php');
+    if (isset($_GET['type'])) {
+      require_once ( "$globals[basedir]/_module/ajax/ajax.php");
+    } else {
+      require_once ( "gui.inc.php" );
+      echo $admin['toptxt'];
+      require_once ( $globals['basedir'] . "/_module/staffelleiter/" . $admin['pageid'] . ".php" );
+    }
   }
 }

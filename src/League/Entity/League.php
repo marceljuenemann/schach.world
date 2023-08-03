@@ -39,6 +39,16 @@ class League
   private ?int $year;
 
   /**
+   * The legacy user of the league manager.
+   * 
+   * TODO: Use WordPress user system.
+   * TODO: Allow multiple users to manage a league.
+   */
+  #[ORM\OneToOne(targetEntity: LegacyUser::class)]
+  #[ORM\JoinColumn(name: 'leiter', referencedColumnName: 'id')]
+  private $manager;
+
+  /**
    * Number of subsequent teams whose players may be used as substitute players.
    */
   #[ORM\Column(name: 'spielErsatzmannschaft')]
@@ -63,9 +73,21 @@ class League
   /**
    * @throws NotFoundHttpException
    */
-  public function divisionByPath($path) {
+  public function divisionByPath(string $path) {
     foreach ($this->divisions as $division) {
       if ($path === $division->path()) {
+        return $division;
+      }
+    }
+    throw new NotFoundHttpException('Division not found');
+  }
+
+  /**
+   * @throws NotFoundHttpException
+   */
+  public function divisionById(int $id) {
+    foreach ($this->divisions as $division) {
+      if ($id === $division->id) {
         return $division;
       }
     }
