@@ -101,7 +101,7 @@ abstract class Page {
         <div class="card">
           <div class="card-header" id="heading-<?=$oid?>">
             <h2 class="mb-0">
-              <button class="btn btn-block text-start" type="button" data-toggle="collapse" data-target="#collapse-<?=$oid?>" aria-expanded="true" aria-controls="collapse-<?=$oid?>">
+              <button class="btn btn-block text-start" type="button" data-bs-toggle="collapse" data-target="#collapse-<?=$oid?>" aria-expanded="true" aria-controls="collapse-<?=$oid?>">
                 <b><?=$option?></b>
               </button>
             </h2> 
