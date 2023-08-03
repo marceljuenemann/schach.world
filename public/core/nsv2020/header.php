@@ -23,7 +23,7 @@ $url = nsv2020_url();
   <head>
     <meta charset="<?= nsv2020_is_utf8() ? 'utf-8' : 'ISO-8859-1'?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="<?= nsv2020_url() ?>/vendor/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="<?= nsv2020_url() ?>/vendor/bootstrap-5.2.3/bootstrap.min.css">
     <link rel="stylesheet" href="/wp-includes/css/dashicons.min.css">
 
     <link rel="stylesheet" href="<?= nsv2020_url() ?>/nsv.css">
@@ -33,8 +33,7 @@ $url = nsv2020_url();
 
     <?= nsv2020_head() ?>
 
-    <script src="<?= nsv2020_url() ?>/vendor/popper-1.14.7.min.js"></script>
-    <script src="<?= nsv2020_url() ?>/vendor/bootstrap-4.3.1.min.js"></script>
+    <script src="<?= nsv2020_url() ?>/vendor/bootstrap-5.2.3/bootstrap.bundle.min.js"></script>
 
     <?php if (nsv2020_theme() == 'nsv'): ?>
       <link rel="icon" href="https://nsv-online.de/wp-content/uploads/2019/05/favicon-1.gif" sizes="32x32">
@@ -45,7 +44,7 @@ $url = nsv2020_url();
   </head>
   <body>
 
-    <div id="nsv-header" class="d-none d-lg-block">
+    <div id="nsv-header" class="d-none d-lg-block d-print-none">
       <?php if (nsv2020_theme() == 'nsv'): ?>
         <div class="container d-flex">
           <div><a href="/"><img src="<?= nsv2020_url() ?>/images/nsv.png"></a></div>
@@ -75,7 +74,7 @@ $url = nsv2020_url();
       <?php endif; ?>
     </div>
 
-    <nav id="nsv-navbar" class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg">
+    <nav id="nsv-navbar" class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg d-print-none">
       <div class="container">
         <?php if (nsv2020_theme() == 'nsv'): ?>
           <a class="navbar-brand d-lg-none d-flex" href="/">
@@ -90,7 +89,7 @@ $url = nsv2020_url();
             <div class="align-self-center"><?= nsv2020_custom_sitename() ?></div>
           </span>
         <?php endif; ?>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -110,7 +109,7 @@ $url = nsv2020_url();
 
                 echo "<li class='nav-item" . ($is_dropdown ? " dropdown" : "" ) . "'>";
                 echo "<a class='nav-link";
-                if ($is_dropdown) echo " dropdown-toggle' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false";
+                if ($is_dropdown) echo " dropdown-toggle' role='button' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false";
                 echo "' href='$url' id='navbarDropdownMenuLink$id'>$title";
                 echo "</a>";
 

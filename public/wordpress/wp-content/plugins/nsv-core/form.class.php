@@ -20,7 +20,7 @@ class Form {
   
   function processForm() {
     $data = $this->method == 'post' ? $_POST : $_GET;
-    if ($data[$this->formId] === 'nsv-form-submitted') {
+    if (isset($data[$this->formId]) && $data[$this->formId] === 'nsv-form-submitted') {
       $success = true;
       foreach ($this->inputs as $input) {
         $input->processSubmission($data);
@@ -103,7 +103,7 @@ abstract class BaseInput {
   }
 
   function processSubmission($data) {
-    $value = $data[$this->getId()];
+    $value = isset($data[$this->getId()]) ? $data[$this->getId()] : null;
     $this->value = $value;
     $this->validationResult = array('success' => true, 'errors' => array());
     foreach ($this->validators as $validator) {
@@ -126,7 +126,7 @@ abstract class BaseInput {
   }
 
   function printInput() {
-    echo '<div class="form-group">';
+    echo '<div class="form-group mb-3">';
     echo '<label for="' . $this->getId() . '">' . $this->label . '</label>';
     $this->printInputTag();
     if ($this->validationResult && !$this->validationResult['success']) {

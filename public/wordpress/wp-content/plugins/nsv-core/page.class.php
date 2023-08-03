@@ -60,9 +60,9 @@ abstract class Page {
     if ($detailColumns) {
       $id = 'nsv-details-toggle-' . ++$idCounter;
       ?>
-        <div class="custom-control custom-switch d-sm-none mb-2">
-          <input type="checkbox" class="custom-control-input" id="<?=$id?>" onclick="jQuery(this).parent().parent().toggleClass('nsv-details-show')">
-          <label class="custom-control-label" for="<?=$id?>">Details anzeigen</label>
+        <div class="form-check form-switch d-sm-none mb-2">
+          <input type="checkbox" class="form-check-input" id="<?=$id?>" onclick="jQuery(this).parent().parent().toggleClass('nsv-details-show')">
+          <label class="form-check-label" for="<?=$id?>">Details anzeigen</label>
         </div>
       <?
     }
@@ -101,7 +101,7 @@ abstract class Page {
         <div class="card">
           <div class="card-header" id="heading-<?=$oid?>">
             <h2 class="mb-0">
-              <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-<?=$oid?>" aria-expanded="true" aria-controls="collapse-<?=$oid?>">
+              <button class="btn btn-block text-start" type="button" data-bs-toggle="collapse" data-target="#collapse-<?=$oid?>" aria-expanded="true" aria-controls="collapse-<?=$oid?>">
                 <b><?=$option?></b>
               </button>
             </h2> 

@@ -18,8 +18,9 @@
   padding-left: 10px;
 }
 
-a, a:hover {
+a, a:hover, .nav-link, .nav-link:hover {
   color: #c32811;
+  text-decoration: none;
 }
 
 /* Account for sticky navbar and card header when scrolling to an anchor. */
@@ -68,17 +69,26 @@ a.anchor {
   background-color: #c32811;
 }
 
-.custom-control .custom-control-label {
-  padding-top: 3px;
-}
-
-.custom-control .custom-control-input:checked~.custom-control-label::before {
+.form-switch .form-check-input:checked {
   background-color: #c32811;
   border-color: #c32811;
 }
 
-.custom-control .custom-control-input:focus~.custom-control-label::before {
-  box-shadow: none;
+.form-switch .form-check-input:not(:checked) {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+}
+
+.form-switch .form-check-input:focus {
+  border-color: rgba(0,0,0,.25);
+  box-shadow: none !important;
+}
+
+/**
+ * For backwards compatibility with bootstrap 4.
+ * TODO: Stop using form-group.
+ */
+.form-group {
+  margin-bottom: 1rem!important;
 }
 
 /****************************************
@@ -266,11 +276,14 @@ table.nsv-table {
 }
 
 .nsv-table a:hover {
+  color: #c32811;
   text-decoration: none;
 }
 
 .nsv-table th a,
-.nsv-table .nsv-table-header a {
+.nsv-table th a:hover,
+.nsv-table .nsv-table-header a,
+.nsv-table .nsv-table-header a:hover {
   color: white;
 }
 

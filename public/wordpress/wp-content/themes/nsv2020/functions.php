@@ -9,6 +9,8 @@ require_once(ABSPATH . '../libs/mysql-shim.php');
 require_once(ABSPATH . '../core/config.inc.php');
 require_once(ABSPATH . '../core/functions.inc.php');
 
+wp_enqueue_script("jquery");
+
 function nsv2020_title() {
    add_theme_support( 'title-tag' );
 }

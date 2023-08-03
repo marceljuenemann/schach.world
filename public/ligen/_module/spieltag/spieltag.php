@@ -215,9 +215,9 @@
         echo '</table>';
         if ($kreuztabelle) {
           ?>
-            <div class="custom-control custom-switch d-sm-none mt-1 mb-2">
-              <input type="checkbox" class="custom-control-input" id="kreuztabelleSwitch" onclick="$(this).parent().parent().toggleClass('nsv-details-show')">
-              <label class="custom-control-label" for="kreuztabelleSwitch">Kreuztabelle</label>
+            <div class="form-check form-switch d-sm-none mt-1 mb-2">
+              <input type="checkbox" class="form-check-input" id="kreuztabelleSwitch" onclick="$(this).parent().parent().toggleClass('nsv-details-show')">
+              <label class="form-check-label" for="kreuztabelleSwitch">Kreuztabelle</label>
             </div>
           <?
         }

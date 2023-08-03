@@ -1,7 +1,7 @@
 <div class='d-flex justify-content-center'><div class='d-inline-block overflow-auto'>
-  <div class="custom-control custom-switch d-sm-none mb-2" style="text-align: right">
-    <input type="checkbox" class="custom-control-input" id="dwzSwitch" onclick="$(this).parent().parent().toggleClass('nsv-details-show')">
-    <label class="custom-control-label" for="dwzSwitch">DWZ anzeigen</label>
+  <div class="form-check form-switch d-sm-none mb-2">
+    <input type="checkbox" class="form-check-input" id="dwzSwitch" onclick="$(this).parent().parent().toggleClass('nsv-details-show')">
+    <label class="form-check-label" for="dwzSwitch">DWZ anzeigen</label>
   </div>
   <div class='nsv-table sed-ergebnisse'>
   <?php
@@ -16,9 +16,9 @@
     // Mannschaftsnamen und Ergebnisse ausgeben
     echo "<div class='nsv-table-header d-flex'>";
     echo "<a name='$anker1'></a><a name='$anker2'></a>";
-    echo "<div class='sed-mannschaft text-left'><a href='?mannschaft=".$daten ['paarungen'][$i]['mid1']."'>".$daten ['paarungen'][$i]['m1']."</a></div>";
+    echo "<div class='sed-mannschaft text-start'><a href='?mannschaft=".$daten ['paarungen'][$i]['mid1']."'>".$daten ['paarungen'][$i]['m1']."</a></div>";
     echo "<div class='text-center'>&nbsp;".$daten ['paarungen'][$i]['erg1']."&nbsp;:&nbsp;".$daten ['paarungen'][$i]['erg2']."&nbsp;</div>";
-    echo "<div class='sed-mannschaft text-right'><a href='?mannschaft=".$daten ['paarungen'][$i]['mid2']."'>".$daten ['paarungen'][$i]['m2']."</a></div>";
+    echo "<div class='sed-mannschaft text-end'><a href='?mannschaft=".$daten ['paarungen'][$i]['mid2']."'>".$daten ['paarungen'][$i]['m2']."</a></div>";
     echo "</div>";
 
     // ggf. Infos über Verlegung & Ausrichter
