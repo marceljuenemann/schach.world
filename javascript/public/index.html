@@ -1,12 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="de">
   <head>
-    <meta charset="latin1" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>nsv-js sandbox</title>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://localhost/core/nsv2020/vendor/bootstrap-5.2.3/bootstrap.min.css">
+    <link rel="stylesheet" href="https://localhost/wp-includes/css/dashicons.min.css">
+
+    <link rel="stylesheet" href="https://localhost/core/nsv2020/nsv.css">
+    
+    <script src='https://localhost/core/nsv2020/vendor/jquery-3.3.1.slim.min.js'></script><link rel='Stylesheet' href='/ligen/_templates/nsv2020/ergebnisdienst.css'><script src='/ligen/_templates/nsv2020/ergebnisdienst.js'></script><title>Test</title>
+    <script src="https://localhost/core/nsv2020/vendor/bootstrap-5.2.3/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div id="root"></div>
+    <nav id="nsv-navbar" class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg d-print-none">
+      <div class="container">
+                  <a class="navbar-brand d-lg-none d-flex" href="https://schachbezirk-hannover.de/">
+            <div class="align-self-center">Schachbezirk Hannover</div>
+          </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class='nav-item dropdown'><a class='nav-link dropdown-toggle' role='button' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href='https://schachbezirk-hannover.de/' id='navbarDropdownMenuLink0'>Schachbezirk</a><div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink0'><a class='dropdown-item' href='https://schachbezirk-hannover.de/'>Neuigkeiten</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/vorstand/'>Vorstand</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/vollversammlungen/'>Vollversammlungen</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/ordnungen/'>Satzung &amp; Ordnungen</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/2010/11/25/mitgliederverwaltung/'>Mitgliederverwaltung</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/impressum/'>Impressum</a></div></li><li class='nav-item dropdown'><a class='nav-link dropdown-toggle' role='button' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href='https://schachbezirk-hannover.de/bmm/' id='navbarDropdownMenuLink1'>BMM</a><div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink1'><a class='dropdown-item' href='https://schachbezirk-hannover.de/bezirksliga/'>Bezirksliga</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/bezirksklasse/'>Bezirksklasse</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/kreisliga-west/'>Kreisliga West</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/kreisliga-ost/'>Kreisliga Ost</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/kreisklasse/'>Kreisklasse</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/omm/'>OMM</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/saisonhefte/'>Saisonunterlagen</a><a class='dropdown-item' href='https://nsv-online.de/ligen/nsv/'>NSV Ligen</a><a class='dropdown-item' href='http://nsv-online.de/goto/oberliga'>DSB Ligen</a></div></li><li class='nav-item dropdown'><a class='nav-link dropdown-toggle' role='button' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href='https://schachbezirk-hannover.de/mannschaftsmeisterschaften/' id='navbarDropdownMenuLink2'>BJMM</a><div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink2'><a class='dropdown-item' href='https://schachbezirk-hannover.de/u20/'>BMM U20</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/u16/'>BMM U16</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/u14/'>BMM U14</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/u12/'>BMM U12</a><a class='dropdown-item' href='http://nsv-online.de/ligen/nsj/'>Jugendliga NDS</a><a class='dropdown-item' href='http://nsv-online.de/ligen/jbln/'>Jugendbundesliga</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/ligenarchiv/'>Archiv</a></div></li><li class='nav-item dropdown'><a class='nav-link dropdown-toggle' role='button' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href='https://schachbezirk-hannover.de/turniere/' id='navbarDropdownMenuLink3'>Turniere</a><div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink3'><a class='dropdown-item' href='https://schachbezirk-hannover.de/bezirkseinzelmeisterschaften/'>BEM</a><a class='dropdown-item' href='http://nsv-online.de/turniere/Bezirk-Hannover-Open-2023/?'>BZH-Open</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/blitz-bem/'>Blitz-BEM</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/blitz-bmm/'>Blitz-BMM</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/bmm-u10-und-bmm-u14/'>BMM U10</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/daehnepokal/'>D&auml;hnepokal</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/joachim-hagemann-gedenkturnier/'>Hagemann-Turnier</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/hohlfeld/'>Hohlfeld-Pokal</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/pinnel-willeke/'>Pinnel-Willeke-Pokal</a></div></li><li class='nav-item'><a class='nav-link' href='https://schachbezirk-hannover.de/vereine/' id='navbarDropdownMenuLink4'>Vereine</a></li><li class='nav-item'><a class='nav-link' href='https://schachbezirk-hannover.de/was-ist-die-sjbh/' id='navbarDropdownMenuLink5'>Jugend</a></li><li class='nav-item'><a class='nav-link' href='https://schachbezirk-hannover.de/termine/' id='navbarDropdownMenuLink6'>Termine</a></li><li class='nav-item dropdown'><a class='nav-link dropdown-toggle' role='button' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href='https://schachbezirk-hannover.de/2010/12/28/links/' id='navbarDropdownMenuLink7'>Externes</a><div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink7'><a class='dropdown-item' href='https://schachbezirk-hannover.de/schachkreis-schaumburg/'>Kreis Schaumburg</a><a class='dropdown-item' href='https://schachbezirk-hannover.de/firmenschach-hannover/'>Firmenschach Hannover</a></div></li>
+                      </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="nsv-main" class="container">
+      <div class="row">
+<div class='col-12 col-lg-9 order-lg-2'>
+    <div class='card shadow nsv-card'><div class='card-body'>
+      
+
+
+<div id="root"></div>
+
+<div data-nsv-component data-nsv-type="PairingList" data-nsv-division="1"></div>
+
+
+
+</div>
+</div>
+</div> <!-- column -->
+<div class="col-12 col-lg-3" id="nsv-sidebar">
+<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'><h5 class='card-title'>Staffelleiter</h5>  <form action="/ligen/test-2022/?admin=login" method="post"><div>
+    <div class="form-group"><select class="form-select" name="benutzer">
+      <option value='t-1'>--- Benutzer ---</option><option value='s-1' >Teststaffel mäh</option><option value='s-2' >Staffel 2</option><option value='s-3' >Kreisliga Ost</option><option value='t-1'>Turnierleiter</option>    </select></div>
+    <div class="form-group">
+      <input type="password" name="passwort" placeholder="Passwort" class="form-control">
+    </div>
+    <input type="submit" value="Einloggen" class="btn btn-sm btn-primary" />
+  </div></form>
+</div></div></div>      </div> <!-- row -->
+    </div> <!-- #nsv-main -->
+
+    <footer id="nsv-footer" class="d-print-none">
+      <div class="container">
+                  <div class="row">
+            <div class="col-12" style="text-align: center">
+              Schachbezirk Hannover e.V.
+              | <a href="https://schachbezirk-hannover.de/impressum/">Impressum</a>
+              | <a href="https://schachbezirk-hannover.de/impressum/#datenschutz">Datenschutz</a>
+            </div>
+          </div>        
+                
+      </div>
+    </footer>
   </body>
 </html>
