@@ -7,6 +7,7 @@ use Nsv\League\Entity;
 
 class Pairing
 {
+  public int $id;
   public int $round;
   public Team $team1;
   public Team $team2;
@@ -19,6 +20,7 @@ class Pairing
 
   public static function fromEntity(Entity\Pairing $pairing) {
     $result = new Pairing();
+    $result->id = $pairing->id;
     $result->round = $pairing->round;
     $result->team1 = Team::fromEntity($pairing->team1);
     $result->team2 = Team::fromEntity($pairing->team2);
