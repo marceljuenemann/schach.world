@@ -39,6 +39,21 @@ class PairingRepository extends ServiceEntityRepository
       ->getResult();
   }
 
+  public function findByLeague(int $leagueId) {
+    return $this->getEntityManager()
+      ->createQueryBuilder()
+      ->select('p')
+      ->from(Pairing::class, 'p')
+      ->join('p.division', 'd')
+      ->where('d.league = :league')
+      ->addOrderBy('p.round', 'ASC')
+      ->addOrderBy('p.host', 'ASC')
+      ->addOrderBy('p.id', 'ASC')
+      ->setParameter('league', $leagueId)
+      ->getQuery()
+      ->getResult();
+  }
+
   /**
    * Returns all pairings for the specified Round objects.
    */
