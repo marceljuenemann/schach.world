@@ -56,7 +56,7 @@ class Auth
    * @throws AccessDeniedHttpException if password is incorrect
    */
   function legacyLogin(League $league, string $user, string $password) {
-    if ($user == 's') {
+    if ($user[0] == 's') {
       $divisionId = (int) substr($user, 2);
       $user = $league->divisionById($divisionId)->manager;
     } else {

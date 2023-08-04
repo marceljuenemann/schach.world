@@ -58,6 +58,16 @@
   // Ausgabe
   echo "<form action='".SED_GenerateFormAction()."' method='get'><div>";
 
+  // REACT
+  echo "<fieldset class='sed_admin_desk'><legend>EXPERIMENTAL</legend>";
+  echo "<div data-nsv-component='PairingList' data-nsv-division='$admin[staffel]'></div>";
+  echo "</fieldset><br><br>";
+
+  // TODO: somewhere else
+  echo "<script src='http://localhost:3000/static/js/bundle.js'></script>";
+
+  
+
   // Meine Staffel
   if ( $admin ['usertype'] == "s" )
     AdminEchoGroup ( 4 );
