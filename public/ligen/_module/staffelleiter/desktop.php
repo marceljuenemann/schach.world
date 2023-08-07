@@ -63,11 +63,6 @@
   echo "<div data-nsv-component='PairingList' data-nsv-division='$admin[staffel]'></div>";
   echo "</fieldset><br><br>";
 
-  // TODO: somewhere else
-  echo "<script src='http://localhost:3000/static/js/bundle.js'></script>";
-
-  
-
   // Meine Staffel
   if ( $admin ['usertype'] == "s" )
     AdminEchoGroup ( 4 );
@@ -186,7 +181,10 @@
     }
 
     // Neue Staffel
-    echo "<tr><td colspan='2'><a href='?admin=turnstne-$admin[userid]-$admin[session]' style='text-decoration:none'><img src='$globals[systemicons]desk_neu.png' alt='Neue Staffel' class='sed_admin_icon' />Neue Staffel</a></td></tr>";
+    echo "<tr><td colspan='2'>";
+    echo "<a href='?admin=turnstne-$admin[userid]-$admin[session]' style='text-decoration:none'><img src='$globals[systemicons]desk_neu.png' alt='Neue Staffel' class='sed_admin_icon' />Neue Staffel</a>";
+    echo "<a data-nsv-dialog='SortDivisions' style='cursor: pointer; text-decoration:none'><img src='$globals[systemicons]timestamp.png' alt='Staffeln umsortieren' class='sed_admin_icon' />Staffeln umsortieren</a>";
+    echo "</td></tr>";
 
     // Fieldset
     echo "</table></fieldset><br /><br />";
