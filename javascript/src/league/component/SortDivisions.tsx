@@ -1,6 +1,8 @@
-import { Modal } from "react-bootstrap";
+import { Card, ListGroup, Modal } from "react-bootstrap";
 import { NsvDialog, NsvSaveDialog } from "../../core/dialog";
 import { Division } from "../types";
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { GripHorizontal, GripVertical } from "react-bootstrap-icons";
 
 /**
  * Dialog for sorting divisions.
@@ -18,17 +20,45 @@ export class SortDivisions extends NsvSaveDialog<{
   }
 
   componentDidMount() {
-    //this.api.fetchPairings().then(divisions => this.setState({divisions}))
+    // TODO: Create proper divisions API
+    this.leagueApi.fetchPairings().then(divisions => this.setState({divisions}))
   }
 
+  onDragEnd(droppedItem: any) {
+    // Ignore drop outside droppable container
+    if (!droppedItem.destination) return;
+    var updatedList = [...this.state.divisions];
+    // Remove dragged item
+    const [reorderedItem] = updatedList.splice(droppedItem.source.index, 1);
+    // Add dropped item
+    updatedList.splice(droppedItem.destination.index, 0, reorderedItem);
+    // Update State
+    this.setState({divisions: updatedList});
+  }
+  
   renderBody() {
     return (
       <Modal.Body>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+        <DragDropContext onDragEnd={this.onDragEnd.bind(this)}>
+          <Droppable droppableId="division-list">
+            {(provided) => (
+              <div {...provided.droppableProps} ref={provided.innerRef}>
+              {
+                this.state.divisions.map((division, index) => (
+                  <Draggable key={division.id} draggableId={ '' + division.id } index={ index }>
+                    {(provided) => (
+                      <Card className="mb-2" ref={provided.innerRef} {...provided.dragHandleProps} {...provided.draggableProps}>
+                        <Card.Body>{ division.name }</Card.Body>
+                      </Card>
+                    )}
+                  </Draggable>
+                ))
+              }
+              { provided.placeholder }
+              </div>
+            )}
+          </Droppable>
+        </DragDropContext>
       </Modal.Body>
     );
   }
