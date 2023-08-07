@@ -1,8 +1,9 @@
 import React from 'react';
 import { LeagueApi } from '../api';
 import { Division } from '../types';
-import { Context } from '../../context';
+import { Context } from '../../core/context';
 import { Col, Form, Row } from 'react-bootstrap';
+import { NsvComponent } from '../../core/component';
 
 const CURRENT_ROUND = -1
 
@@ -10,17 +11,14 @@ const CURRENT_ROUND = -1
  * Displays a list of all pairings that the user can edit.
  */
 // TODO: move to abstact NSV component.
-export class PairingList extends React.Component<{context: Context}, {
+export class PairingList extends NsvComponent<{
     divisions: Array<Division>,
     selectedDivision: number,
     selectedRound: number
   }> {
 
-  private api: LeagueApi
-
   constructor(props: any) {
     super(props)
-    this.api = new LeagueApi(this.props.context);
     this.state = {
       divisions: [],
       selectedDivision: 0,
@@ -30,7 +28,7 @@ export class PairingList extends React.Component<{context: Context}, {
 
   componentDidMount() {
     // TODO: store in flight calls and cancel them when needed.
-    this.api.fetchPairings().then(divisions => this.setState({divisions}))
+    this.leagueApi.fetchPairings().then(divisions => this.setState({divisions}))
   }
 
   /**
@@ -38,7 +36,7 @@ export class PairingList extends React.Component<{context: Context}, {
    * or 0 if they are allowed to edit all divisions.
    */
   get division() {
-    return parseInt(this.props.context.attribute('division') || '0')
+    return parseInt(this.attribute('division') || '0')
   }
 
   rounds(): Set<number> {

@@ -1,24 +1,18 @@
-import React from 'react';
-import { LeagueApi } from '../api';
-import { Division } from '../types';
-import { Button, Modal } from 'react-bootstrap';
-import { DialogContext } from '../../dialog';
+import { Modal } from "react-bootstrap";
+import { NsvDialog, NsvSaveDialog } from "../../core/dialog";
+import { Division } from "../types";
 
 /**
  * Dialog for sorting divisions.
  */
-// TODO: move to abstact NSV component.
-export class SortDivisions extends React.Component<{context: DialogContext}, {
-    divisions: Array<Division>,
+export class SortDivisions extends NsvSaveDialog<{
+    divisions: Array<Division>
   }> {
-
-  private api: LeagueApi
 
   constructor(props: any) {
     super(props)
-    console.log("Props:", this.props)
-    this.api = new LeagueApi(this.props.context.context);
     this.state = {
+      title: 'Staffeln umsortieren',
       divisions: [],
     }
   }
@@ -27,35 +21,19 @@ export class SortDivisions extends React.Component<{context: DialogContext}, {
     //this.api.fetchPairings().then(divisions => this.setState({divisions}))
   }
 
-  onClose() {
-    this.props.context.onClose()
+  renderBody() {
+    return (
+      <Modal.Body>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+    );
   }
 
-  render() {
-    return (
-      <Modal
-        show={true}
-        onHide={() => this.onClose()}
-        aria-labelledby="modal-title"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="modal-title">
-            Staffeln umsortieren
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
-          </p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={this.props.context.onClose}>Close</Button>
-        </Modal.Footer>
-      </Modal>
-    );
+  save(): boolean {
+    return true
   }
 }

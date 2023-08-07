@@ -1,4 +1,4 @@
-import { Context } from "../context"
+import { Context } from "../core/context"
 import { Division } from "./types"
 
 export class LeagueApi {
