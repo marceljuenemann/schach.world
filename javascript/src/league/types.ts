@@ -19,3 +19,17 @@ export interface Pairing {
   wasMoved: boolean,
   moveDate?: string
 }
+
+export interface MatchDay {
+  round: number,
+  date?: string,
+  uri: string,
+  uriPdf: string,
+  pairings: Array<Pairing>
+}
+
+export interface Division {
+  id: number,
+  name: string,
+  matchDays: Array<MatchDay>
+}

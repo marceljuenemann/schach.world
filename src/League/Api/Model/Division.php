@@ -10,6 +10,7 @@ class Division
   public string $name;
   public string $matchDayUri;
   public string $statsUri;
+
   public ?array $matchDays;
 
   public function hasPairings(): bool {

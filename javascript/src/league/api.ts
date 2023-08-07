@@ -1,11 +1,12 @@
-import { Pairing } from "./types"
+import { Division, Pairing } from "./types"
 
+// TODO: class
 
 /**
  * Fetches all pairings of the league.
  */
-export async function fetchPairings(): Promise<Array<Pairing>> {
-  return fetchApi('pairings/')
+export async function fetchPairings(): Promise<Array<Division>> {
+  return fetchApi('unstable/pairings/')
 }
 
 async function fetchApi(endpoint: string): Promise<any> {
