@@ -10,4 +10,8 @@ export class Context {
   attribute(name: string): string|null {
     return this.rootElement.getAttribute(`data-nsv-${name}`);
   }
+
+  get currentPath(): string {
+    return this.window.location.pathname
+  }
 }

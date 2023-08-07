@@ -1,16 +1,26 @@
-import { Division, Pairing } from "./types"
+import { Context } from "../context"
+import { Division } from "./types"
 
-// TODO: class
+export class LeagueApi {
+  constructor(private context: Context) {}
 
-/**
- * Fetches all pairings of the league.
- */
-export async function fetchPairings(): Promise<Array<Division>> {
-  return fetchApi('unstable/pairings/')
-}
+  /**
+   * Fetches all pairings of the league.
+   */
+  async fetchPairings(): Promise<Array<Division>> {
+    return this.fetchApi('unstable/pairings/')
+  }
 
-async function fetchApi(endpoint: string): Promise<any> {
-  const baseUrl = "https://localhost/ligen/test-2022/api/"
-  const response = await fetch(baseUrl + endpoint)
-  return await response.json()
+  private async fetchApi(endpoint: string): Promise<any> {
+    const response = await fetch(this.baseUrl() + 'api/' + endpoint)
+    return await response.json()
+  }
+  
+  /**
+   * Returns the base URL for the current league.
+   */
+  private baseUrl(): string {
+    const path = this.context.currentPath.split('/')
+    return `/${path[1]}/${path[2]}/`
+  }
 }

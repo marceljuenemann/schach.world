@@ -1,5 +1,5 @@
 import React from 'react';
-import { fetchPairings } from '../api';
+import { LeagueApi, fetchPairings } from '../api';
 import { Division, Pairing } from '../types';
 import { Context } from '../../context';
 import { Col, Form, Row } from 'react-bootstrap';
@@ -16,8 +16,11 @@ export class PairingList extends React.Component<{context: Context}, {
     selectedRound: number
   }> {
 
+  private api: LeagueApi
+
   constructor(props: any) {
     super(props)
+    this.api = new LeagueApi(this.props.context);
     this.state = {
       divisions: [],
       selectedDivision: 0,
@@ -27,7 +30,7 @@ export class PairingList extends React.Component<{context: Context}, {
 
   componentDidMount() {
     // TODO: store in flight calls and cancel them when needed.
-    fetchPairings().then(divisions => this.setState({divisions}))
+    this.api.fetchPairings().then(divisions => this.setState({divisions}))
   }
 
   /**
