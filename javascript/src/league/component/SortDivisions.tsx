@@ -1,8 +1,7 @@
 import React from 'react';
 import { LeagueApi } from '../api';
 import { Division } from '../types';
-import { Context } from '../../context';
-import { Button, Col, Form, Modal, Row } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 import { DialogContext } from '../../dialog';
 
 /**
@@ -17,6 +16,7 @@ export class SortDivisions extends React.Component<{context: DialogContext}, {
 
   constructor(props: any) {
     super(props)
+    console.log("Props:", this.props)
     this.api = new LeagueApi(this.props.context.context);
     this.state = {
       divisions: [],
@@ -27,10 +27,15 @@ export class SortDivisions extends React.Component<{context: DialogContext}, {
     //this.api.fetchPairings().then(divisions => this.setState({divisions}))
   }
 
+  onClose() {
+    this.props.context.onClose()
+  }
+
   render() {
     return (
       <Modal
         show={true}
+        onHide={() => this.onClose()}
         aria-labelledby="modal-title"
         centered
       >
