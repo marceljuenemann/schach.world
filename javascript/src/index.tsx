@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 
-import PairingList from './league/component/PairingList';
+import { PairingList } from './league/component/PairingList';
 import { Context } from './context';
 import { ReactElement } from 'react';
 

@@ -12,6 +12,7 @@ class Division
   public string $statsUri;
 
   public ?array $matchDays;
+  public ?string $closestDate;
 
   public function hasPairings(): bool {
     if (isset($this->matchDays)) {

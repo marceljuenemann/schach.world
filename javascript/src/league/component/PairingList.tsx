@@ -4,11 +4,13 @@ import { Division, Pairing } from '../types';
 import { Context } from '../../context';
 import { Col, Form, Row } from 'react-bootstrap';
 
+const CURRENT_ROUND = -1
+
 /**
  * Displays a list of all pairings that the user can edit.
  */
 // TODO: move to abstact NSV component.
-class PairingList extends React.Component<{context: Context}, {
+export class PairingList extends React.Component<{context: Context}, {
     divisions: Array<Division>,
     selectedDivision: number,
     selectedRound: number
@@ -19,7 +21,7 @@ class PairingList extends React.Component<{context: Context}, {
     this.state = {
       divisions: [],
       selectedDivision: 0,
-      selectedRound: 0
+      selectedRound: CURRENT_ROUND
     }
   }
 
@@ -53,6 +55,7 @@ class PairingList extends React.Component<{context: Context}, {
       if (this.state.selectedDivision && division.id != this.state.selectedDivision) continue;
       for (let matchDay of division.matchDays) {
         if (this.state.selectedRound > 0 && matchDay.round != this.state.selectedRound) continue;
+        if (this.state.selectedRound == CURRENT_ROUND && matchDay.date != division.closestDate) continue;
         for (let pairing of matchDay.pairings) {
           yield {...pairing, division};
         }
@@ -88,6 +91,7 @@ class PairingList extends React.Component<{context: Context}, {
                   onChange={ e => this.setState({selectedRound: parseInt(e.target.value)}) }
                   size="sm"
                   aria-label="Rundenauswahl">
+                <option value="-1">Aktuelle Runde</option>
                 <option value="0">Alle Runden</option>
                 {
                   Array.from(this.rounds()).map(round => (
@@ -109,11 +113,6 @@ class PairingList extends React.Component<{context: Context}, {
             </tr>
           </thead>
           <tbody>{
-            /*
-            this.state.pairings.filter(pairing => {
-              return !this.state.round || this.state.round == pairing.round 
-            }).map(pairing => {
-              */
             Array.from(this.pairings()).map(pairing => {
               const uri = `?admin=alleeing---&pid=${pairing.id}`
               return <tr key={ pairing.id } className='text-nowrap'>
@@ -140,5 +139,3 @@ class PairingList extends React.Component<{context: Context}, {
     );
   }
 }
-
-export default PairingList;

@@ -31,5 +31,6 @@ export interface MatchDay {
 export interface Division {
   id: number,
   name: string,
-  matchDays: Array<MatchDay>
+  matchDays: Array<MatchDay>,
+  closestDate?: string
 }

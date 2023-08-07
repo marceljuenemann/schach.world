@@ -3,9 +3,7 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Api\Model\Division;
-use Nsv\League\Api\Model\Pairing;
 use Nsv\League\Api\Service\ScheduleService;
-use Nsv\League\Repository\PairingRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -20,10 +18,14 @@ class ApiController extends AbstractLeagueController {
    */
   #[Route('unstable/pairings/', name: 'pairings')]
   public function pairings(ScheduleService $scheduleService): Response {
+    $today = date('Y-m-d');
     $divisions = [];
     foreach ($this->league->divisions as $division) {
       $model = Division::fromEntity($division);
       $model->matchDays = $scheduleService->matchDays($division);
+      $model->closestDate = $scheduleService->closestDate(array_map(function ($date) {
+        return $date->date;  // TODO: make this cleaner
+      }, $division->dates()), $today);
       $divisions[] = $model;
     }
     return $this->apiResponse($divisions);
