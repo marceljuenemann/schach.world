@@ -1,6 +1,6 @@
 import React from 'react';
-import { LeagueApi, fetchPairings } from '../api';
-import { Division, Pairing } from '../types';
+import { LeagueApi } from '../api';
+import { Division } from '../types';
 import { Context } from '../../context';
 import { Col, Form, Row } from 'react-bootstrap';
 
