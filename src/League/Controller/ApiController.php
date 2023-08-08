@@ -4,6 +4,7 @@ namespace Nsv\League\Controller;
 
 use Nsv\League\Api\Model\Division;
 use Nsv\League\Api\Service\ScheduleService;
+use Nsv\League\Core\Auth;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -17,7 +18,8 @@ class ApiController extends AbstractLeagueController {
    * via the match day or overview routes. 
    */
   #[Route('unstable/pairings/', name: 'pairings')]
-  public function pairings(ScheduleService $scheduleService): Response {
+  public function pairings(Auth $auth, ScheduleService $scheduleService): Response {
+    $auth->checkManagerAccess($this->league);
     $today = date('Y-m-d');
     $divisions = [];
     foreach ($this->league->divisions as $division) {

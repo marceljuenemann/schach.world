@@ -4,7 +4,7 @@ import { LeagueApi } from "../league/api";
 
 
 /**
- * Abstract NSV component with common utilities.
+ * Abstract NSV root component with common utilities.
  */
 export class NsvComponent<S = {}, P = {context: Context}> extends React.Component<P & {context: Context}, S> {
 

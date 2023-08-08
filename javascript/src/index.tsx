@@ -5,6 +5,7 @@ import { Context } from './core/context';
 import { ReactElement } from 'react';
 import { SortDivisions } from './league/component/SortDivisions';
 import { DialogContext } from './core/dialog';
+import { CreateDivision } from './league/component/CreateDivision';
 
 /**
  * All elements with data-nsv-component will be rendered as a React component.
@@ -52,9 +53,12 @@ function launchDialog(type: string, context: DialogContext) {
 }
 
 function createDialogComponent(type: string, context: DialogContext) {
+  // TODO: Use React.createElement directly
   switch (type) {
     case 'SortDivisions':
       return <SortDivisions context={context} />;
-  }
+    case 'CreateDivision':
+      return <CreateDivision context={context} />;
+    }
   throw new Error('Invalid NSV dialog type');
 }
