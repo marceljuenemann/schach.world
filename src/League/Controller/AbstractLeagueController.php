@@ -5,9 +5,9 @@ namespace Nsv\League\Controller;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
-use Nsv\Util\TextSanitizer;
 use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -92,13 +92,15 @@ class AbstractLeagueController extends AbstractController {
     return $response;
   }
 
-  /**
-   * Create an API response from an API model
-   */
+  protected function apiResponse(mixed $model): Response {
+    Encoding::deep_utf8_encode($model);
+    $response = new JsonResponse($model);
+    $response->setEncodingOptions(JSON_PRETTY_PRINT);
+    return $response;
+  }
+
   protected function debugResponse(mixed $model): Response {
-    // TODO: Return JSON instead of phparray. Might have to do manual UTF-8 conversion first.
-    $body = print_r($model, true);
-    return new Response($body, 200, ['Content-type' => 'text/plain; charset='.Encoding::CHARSET]);
+    return new Response(print_r($model, true), 200, ['Content-type' => 'text/plain; charset='.Encoding::CHARSET]);
   }
 
   protected function addInfoMessage($message) {

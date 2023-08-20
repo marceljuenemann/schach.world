@@ -11,22 +11,27 @@ class Team
   public string $name;
   public ?string $zps;
   public string $uri;
+  public string $apiUri;
   public \stdClass $venue;
   public \stdClass $captain;
 
   public ?array $pairingsByDivision;
   public ?array $playersByTeamNumber;
 
-  public static function fromEntity(Entity\Team $team, bool $details = false) {
+  public static function fromEntity(Entity\Team $team) {
     $result = new Team();
     $result->id = $team->id;
     $result->name = $team->nameWithNumber();
     $result->zps = $team->zps;
     $result->uri = $team->uri();
-    if ($details) {
-      $result->venue = self::venueFromEntity($team);
-      $result->captain = self::captainFromEntity($team);
-    }
+    $result->apiUri = $team->apiUri();
+    return $result;
+  }
+
+  public static function fromEntityWithDetails(Entity\Team $team) {
+    $result = self::fromEntity($team);
+    $result->venue = self::venueFromEntity($team);
+    $result->captain = self::captainFromEntity($team);
     return $result;
   }
 

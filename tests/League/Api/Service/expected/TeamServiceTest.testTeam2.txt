@@ -4,6 +4,7 @@ Nsv\League\Api\Model\Team Object
     [name] => Team 2
     [zps] => 0
     [uri] => /ligen/test/m/36/
+    [apiUri] => /ligen/test/api/teams/36/
     [venue] => stdClass Object
         (
             [name] => 
@@ -38,6 +39,7 @@ Nsv\League\Api\Model\Team Object
                                     [name] => Team
                                     [zps] => 0
                                     [uri] => /ligen/test/m/35/
+                                    [apiUri] => /ligen/test/api/teams/35/
                                 )
 
                             [round] => 1
@@ -56,6 +58,7 @@ Nsv\League\Api\Model\Team Object
                                     [name] => Team
                                     [zps] => 0
                                     [uri] => /ligen/test/m/35/
+                                    [apiUri] => /ligen/test/api/teams/35/
                                 )
 
                             [round] => 1
@@ -73,6 +76,7 @@ Nsv\League\Api\Model\Team Object
                                     [name] => Team
                                     [zps] => 0
                                     [uri] => /ligen/test/m/35/
+                                    [apiUri] => /ligen/test/api/teams/35/
                                 )
 
                             [round] => 2
@@ -90,6 +94,7 @@ Nsv\League\Api\Model\Team Object
                                     [name] => Team
                                     [zps] => 0
                                     [uri] => /ligen/test/m/35/
+                                    [apiUri] => /ligen/test/api/teams/35/
                                 )
 
                             [round] => 4
@@ -107,6 +112,7 @@ Nsv\League\Api\Model\Team Object
                                     [name] => Team
                                     [zps] => 0
                                     [uri] => /ligen/test/m/35/
+                                    [apiUri] => /ligen/test/api/teams/35/
                                 )
 
                             [round] => 4
@@ -124,6 +130,7 @@ Nsv\League\Api\Model\Team Object
                                     [name] => Team
                                     [zps] => 0
                                     [uri] => /ligen/test/m/35/
+                                    [apiUri] => /ligen/test/api/teams/35/
                                 )
 
                             [round] => 4
@@ -171,6 +178,7 @@ Nsv\League\Api\Model\Team Object
                                                     [name] => Team
                                                     [zps] => 0
                                                     [uri] => /ligen/test/m/35/
+                                                    [apiUri] => /ligen/test/api/teams/35/
                                                 )
 
                                             [opponentPlayer] => Nsv\League\Api\Model\Player Object
@@ -207,6 +215,7 @@ Nsv\League\Api\Model\Team Object
                                                     [name] => Team
                                                     [zps] => 0
                                                     [uri] => /ligen/test/m/35/
+                                                    [apiUri] => /ligen/test/api/teams/35/
                                                 )
 
                                             [opponentPlayer] => 
