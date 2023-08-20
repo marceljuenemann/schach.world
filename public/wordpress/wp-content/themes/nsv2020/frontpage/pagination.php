@@ -18,12 +18,12 @@
   );
   if ( is_array( $pages ) ) {
     echo '<div class="card shadow nsv-card"><div class="card-body">';
-    echo '<div class="pagination"><ul class="pagination ml-auto mr-auto">';
+    echo '<ul class="pagination justify-content-center">';
     foreach ($pages as $page) {
       echo '<li class="page-item' . (strpos($page, 'current') !== false ? ' active' : '') . '"> ';
       echo str_replace('page-numbers', 'page-link', $page) . '</li>';
     }
-    echo '</ul></div>';
+    echo '</ul>';
     echo '</div></div>';
   }
 ?>

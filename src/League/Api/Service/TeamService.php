@@ -24,7 +24,7 @@ class TeamService
     }
 
     // Fetch basic info and players.
-    $model = Team::fromEntity($team, true);
+    $model = Team::fromEntityWithDetails($team);
     $model->playersByTeamNumber = [];
     $players = [];
     foreach ([$team, ...$team->substituteTeams()] as $t) {

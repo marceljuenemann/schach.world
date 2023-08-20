@@ -24,4 +24,25 @@ class Encoding
   public static function utf8_encode($str) {
     return mb_convert_encoding($str, 'UTF-8', self::CHARSET);
   }
+
+  /**
+   * Recursively converts all strings in an object to UTF-8.
+   */
+  public static function deep_utf8_encode($obj) {
+    return self::deep_walk($obj, function(&$val) {
+      if (is_string($val)) {
+        $val = self::utf8_encode($val);
+      }
+    });
+  }
+
+  private static function deep_walk(&$obj, $callback) {
+    if (is_array($obj) || is_object($obj)) {
+      foreach ($obj as $key => &$val) {
+        self::deep_walk($val, $callback);
+      }
+    } else {
+      $callback($obj);
+    }
+  }
 }

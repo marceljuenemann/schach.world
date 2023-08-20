@@ -8,17 +8,17 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 RewriteRule ^frl/anmelden.html /ligen/frl/?m=anmeldung [R]
 
 # Saisonunabhaengig
-RewriteRule ^bezirk1/ /ligen/bezirk1-2223/ [R] [QSA]
-RewriteRule ^bezirk2/ /ligen/bezirk2-2223/ [R] [QSA]
-RewriteRule ^bezirk3/ /ligen/bezirk3-2223/ [R] [QSA]
-RewriteRule ^bezirk6/ /ligen/bezirk6-2223/ [R] [QSA]
-RewriteRule ^jbln/ /ligen/jbln-2223/ [R] [QSA]
-RewriteRule ^nsj/ /ligen/nsj-2223/ [R] [QSA]
-RewriteRule ^pokal/ /ligen/pokal-2223/ [R] [QSA]
-RewriteRule ^nsv/ /ligen/nsv-2223/ [R] [QSA]
-RewriteRule ^frl/ /ligen/frl-2223/ [R] [QSA]
-RewriteRule ^fll/ /ligen/fll-2223/ [R] [QSA]
+RewriteRule ^bezirk1/ /ligen/bezirk1-2324/ [R] [QSA]
+RewriteRule ^bezirk2/ /ligen/bezirk2-2324/ [R] [QSA]
+RewriteRule ^bezirk3/ /ligen/bezirk3-2324/ [R] [QSA]
+RewriteRule ^bezirk6/ /ligen/bezirk6-2324/ [R] [QSA]
+RewriteRule ^jbln/ /ligen/jbln-2324/ [R] [QSA]
+RewriteRule ^nsj/ /ligen/nsj-2324/ [R] [QSA]
+RewriteRule ^pokal/ /ligen/pokal-2324/ [R] [QSA]
+RewriteRule ^nsv/ /ligen/nsv-2324/ [R] [QSA]
+RewriteRule ^fll/ /ligen/fll-2324/ [R] [QSA]
 RewriteRule ^fbl/ /ligen/fbl-1819/ [R] [QSA]
+RewriteRule ^frl/ /ligen/frl-2122/ [R] [QSA]
 
 # Kein Turnier angegeben
 RewriteRule ^$ /ligen/index.php?m=serverinfo
