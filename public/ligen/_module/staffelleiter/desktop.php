@@ -23,6 +23,7 @@
     global $globals;
     global $admin;
     global $desktopRowLength;
+    global $prefs;
 
     // Fieldset ausgeben und Tabelle starten
     echo "<fieldset class='sed_admin_desk'><legend>" .$admin ['groups'][$id][1]. "</legend><table class='sed_admin_desk' cellspacing='0' cellpadding='0'>";
@@ -113,7 +114,7 @@
           var admin = document.getElementById ( "pl_hidden" ).value;
           var staffel = document.getElementById ( "pl_staffel" ).value;
           var runde = document.getElementById ( "pl_runde" ).value;
-          var url = '<? echo "$globals[httppath]index.php?tid=$globals[tid]&type=GetPaarungsauflistung"; ?>' + "&admin=" + admin + "&staffel=" + staffel + "&runde=" + runde;
+          var url = '<? echo "$globals[httppath]$prefs[directory]/?type=GetPaarungsauflistung"; ?>' + "&admin=" + admin + "&staffel=" + staffel + "&runde=" + runde;
 
           // Ajax initialisieren
           var req = null;

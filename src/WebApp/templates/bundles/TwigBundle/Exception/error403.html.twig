@@ -1,0 +1,10 @@
+{% extends 'layout.html.twig' %}
+
+{% set title = "Zugriff nicht erlaubt" %}
+{% set hide_sidebar = true %}
+
+{% block content %}
+<div class="alert alert-danger" role="alert">
+    Fehler 403: {{ title }}
+</div>
+{% endblock %}
