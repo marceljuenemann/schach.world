@@ -9,6 +9,9 @@ use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Throwable;
 
 /**
  * Abstract controller for a specific league, which is specified through the league slug
@@ -103,7 +106,22 @@ class AbstractLeagueController extends AbstractController {
     return new Response(print_r($model, true), 200, ['Content-type' => 'text/plain; charset='.Encoding::CHARSET]);
   }
 
-  protected function addInfoMessage($message) {
-    $this->messages[] = ['message' => $message, 'type' => 'info'];
+  protected function addInfoMessage($message, $type = 'info') {
+    $this->messages[] = ['message' => $message, 'type' => $type];
+  }
+
+  /**
+   * Renders an error page with all the usual UI and sidebar.
+   */
+  public function errorResponse(Throwable $exception): Response|null {
+    if ($exception instanceof AccessDeniedHttpException) {
+      $this->addInfoMessage("Fehler 403: Zugriff nicht erlaubt oder abgelaufen ({$exception->getMessage()})", 'danger');
+      return $this->renderWithLegacySystem('error.html.twig');
+    }
+    if ($exception instanceof NotFoundHttpException) {
+      $this->addInfoMessage('Fehler 404: Seite nicht gefunden', 'danger');
+      return $this->renderWithLegacySystem('error.html.twig');
+    }
+    return null;
   }
 }
