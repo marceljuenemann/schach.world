@@ -18,7 +18,7 @@ class Auth
   const SESSION_KEY_LOGIN = 'league_login_time';
   const SESSION_KEY_LEAGUE = 'league_login_league_id';
   const SESSION_KEY_DIVISION = 'league_login_division_id';
-  const SESSION_DURATION = 60 * 60;  // 1 hour
+  const SESSION_DURATION = 8 * 60 * 60;  // 8 hours
 
   private Session $session;
 
@@ -56,7 +56,7 @@ class Auth
    * @throws AccessDeniedHttpException if password is incorrect
    */
   function legacyLogin(League $league, string $user, string $password) {
-    if ($user == 's') {
+    if ($user[0] == 's') {
       $divisionId = (int) substr($user, 2);
       $user = $league->divisionById($divisionId)->manager;
     } else {
