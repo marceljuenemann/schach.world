@@ -170,7 +170,7 @@
             $teams [$m]["alter"] = "";
 
         // Top X berechnen
-        $topX = reset ( mysql_fetch_array ( mysql_query (
+        $topX = SED_MYSQL_Value(
             "SELECT ROUND(AVG(dwz2))
             FROM (
                 SELECT IF(dwz IS NOT NULL and dwz>0,dwz,700) as dwz2
@@ -178,7 +178,7 @@
                 WHERE mannschaft=$mannschaft[mnr]
                 ORDER BY brettnr
                 LIMIT $brettzahl
-            ) as a", $globals ['db'] ), MYSQL_NUM ) );
+            ) as a");
         $teams [$m]["topX"] = $topX;
     }
 
@@ -202,7 +202,7 @@
         "partien"=>0, "-"=>0, "+"=>0, "?"=>0, "1"=>0, SED_REMIS=>0, "0"=>0, "W"=>0.0, "S"=>0.0, "WAnzahl"=>0, "SAnzahl"=>0, "inStaffel"=>0 );
     foreach ( $teamSum as $k=>$v ){
         foreach ( $teams as $team=>$data ){
-            $teamSum [$k] += $data [$k];
+            $teamSum [$k] += (int) $data [$k];
         }
     }
 
@@ -243,38 +243,40 @@
     // Überschrift
     echo "<span class='sed_hl1'>Statistiken f&uuml;r " . $globals ['staffeln'][$_GET ['staffel']] . "</span><br /><br />";
 
-    // Alter und DWZ
-    echo "Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine
-        <b>DWZ von $teamAvg[eingesetzte]</b> und ist <b>$teamAvg[alter] Jahre</b> alt. ";
+    if ( count ( $topscorer ) ) {
 
-    // TopScorer
-    $tops = $spieler [reset($topscorer)];
-    if ( is_array ( $tops ) )
-    echo "Der Top-Scorer mit $tops[punkte] Punkten aus $tops[partien]
-        Partien ist <a href='?spieler=$tops[id]'>$tops[name]</a> (".
-        SED_TeamLink($tops['mannschaft'])."). ";
+        // Alter und DWZ
+        echo "Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine
+            <b>DWZ von $teamAvg[eingesetzte]</b> und ist <b>$teamAvg[alter] Jahre</b> alt. ";
 
-    // Remiskönig
-    if ($koenig) {
-        $rk = $spieler [$koenig];
-        if ( is_array ( $rk ) )
-        echo "Der Remisk&ouml;nig mit $rk[remis] Remis ist
-            <a href='?spieler=$rk[id]'>$rk[name]</a>
-            (". SED_TeamLink ( $rk ['mannschaft'] ) ."). ";
+        // TopScorer
+        $tops = $spieler [reset($topscorer)];
+        echo "Der Top-Scorer mit $tops[punkte] Punkten aus $tops[partien]
+            Partien ist <a href='?spieler=$tops[id]'>$tops[name]</a> (".
+            SED_TeamLink($tops['mannschaft'])."). ";
+
+        // Remiskönig
+        if ($koenig) {
+            $rk = $spieler [$koenig];
+            if ( is_array ( $rk ) )
+            echo "Der Remisk&ouml;nig mit $rk[remis] Remis ist
+                <a href='?spieler=$rk[id]'>$rk[name]</a>
+                (". SED_TeamLink ( $rk ['mannschaft'] ) ."). ";
+        }
+
+        // Spiele
+        $sp = (($teamSum['partien']+$teamSum['-'])/2);
+        // TODO: This seems to be off and not actually count the '-' games in the total.
+        $kp = $sp ? round ( $teamSum ['-'] / $sp *100) : 0;
+        $spR = (($teamSum['partien']-$teamSum['+'])/2);
+        $r = $teamSum[SED_REMIS] ? round($teamSum[SED_REMIS]/2/$spR*100) : 0;
+        $w = $teamSum['W'] ? round($teamSum['W']/$spR*100) : 0;
+        $s = $teamSum['S'] ? round($teamSum['S']/$spR*100) : 0;
+        echo $teamSum["-"]." Spiele wurden kampflos verloren gegeben, das sind
+            <b>$kp%</b>. Von den $spR wirklich gespielten Partien sind <b>$r% Remis</b>
+            ausgegangen. Die Wei&szlig;spieler haben einen Score von <b>$w%</b>,
+            der Score von Schwarz ist <b>$s%</b>. ";
     }
-
-    // Spiele
-    $sp = (($teamSum['partien']+$teamSum['-'])/2);
-    // TODO: This seems to be off and not actually count the '-' games in the total.
-    $kp = $sp ? round ( $teamSum ['-'] / $sp *100) : 0;
-    $spR = (($teamSum['partien']-$teamSum['+'])/2);
-    $r = $teamSum[SED_REMIS] ? round($teamSum[SED_REMIS]/2/$spR*100) : 0;
-    $w = $teamSum['W'] ? round($teamSum['W']/$spR*100) : 0;
-    $s = $teamSum['S'] ? round($teamSum['S']/$spR*100) : 0;
-    echo $teamSum["-"]." Spiele wurden kampflos verloren gegeben, das sind
-        <b>$kp%</b>. Von den $spR wirklich gespielten Partien sind <b>$r% Remis</b>
-        ausgegangen. Die Wei&szlig;spieler haben einen Score von <b>$w%</b>,
-        der Score von Schwarz ist <b>$s%</b>. ";
 
 
     ////////////////////////////////////////////////////////
@@ -323,35 +325,37 @@
     // Top-Scorer
     ////////////////////////////////////////////////
 
-    echo "<br /><br /><span class='sed_hl2'>Topscorer</span><br /><br />";
-    echo "<table cellpadding='3' class='sed_tabelle'><tr><th>Name</th><th>DWZ</th><th>Mannschaft</th><th>Brett</th><th>Partien</th><th>Punkte</th></tr>";
-
-    // Ausgabe
-    foreach ( $topscorer as $id ){
-        // Das durchschnittliche Brett etwas schöner
-        $spielerd = $spieler [$id];
-        $brett = round($spielerd['brett']/$spielerd['partien'],1);
-        switch ( round ( ($brett-intval($brett)) * 10 ) ) {
-            case 0: case 1: case 2:
-                $brett = intval($brett); break;
-            case 3: case 4: case 5: case 6:
-                $brett = intval($brett)."-".(intval($brett)+1); break;
-            case 7: case 8: case 9:
-                $brett = intval($brett)+1; break;
-        }
+    if (count($topscorer)) {
+        echo "<br /><br /><span class='sed_hl2'>Topscorer</span><br /><br />";
+        echo "<table cellpadding='3' class='sed_tabelle'><tr><th>Name</th><th>DWZ</th><th>Mannschaft</th><th>Brett</th><th>Partien</th><th>Punkte</th></tr>";
 
         // Ausgabe
-        if ( $id )
-        echo "<tr>
-                <td class='l'>&nbsp;<a href='?spieler=$spielerd[id]'>$spielerd[name]</a>&nbsp;&nbsp;</td>
-                <td>$spielerd[dwz]</td>
-                <td class='l'>&nbsp;".SED_TeamLink ( $spielerd['mannschaft'] )."</td>
-                <td>$brett</td>
-                <td>$spielerd[partien]</td>
-                <td><b>".str_replace ( ".0", "", SED_Ergebnis($spielerd['punkte']) )."</b></td>
-            </tr>";
+        foreach ( $topscorer as $id ){
+            // Das durchschnittliche Brett etwas schöner
+            $spielerd = $spieler [$id];
+            $brett = round($spielerd['brett']/$spielerd['partien'],1);
+            switch ( round ( ($brett-intval($brett)) * 10 ) ) {
+                case 0: case 1: case 2:
+                    $brett = intval($brett); break;
+                case 3: case 4: case 5: case 6:
+                    $brett = intval($brett)."-".(intval($brett)+1); break;
+                case 7: case 8: case 9:
+                    $brett = intval($brett)+1; break;
+            }
+
+            // Ausgabe
+            if ( $id )
+            echo "<tr>
+                    <td class='l'>&nbsp;<a href='?spieler=$spielerd[id]'>$spielerd[name]</a>&nbsp;&nbsp;</td>
+                    <td>$spielerd[dwz]</td>
+                    <td class='l'>&nbsp;".SED_TeamLink ( $spielerd['mannschaft'] )."</td>
+                    <td>$brett</td>
+                    <td>$spielerd[partien]</td>
+                    <td><b>".str_replace ( ".0", "", SED_Ergebnis($spielerd['punkte']) )."</b></td>
+                </tr>";
+        }
+        echo "</table>";
     }
-    echo "</table>";
 
     ////////////////////////////////////////////////////////
     // Spiel-Statistik

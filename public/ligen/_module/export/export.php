@@ -68,7 +68,8 @@ else if ( $_GET ["format"] == "702" ){
   require_once("../_module/export/bezirk2.inc.php");
 }
 
-else if ( $_GET["format"] == "701" ){
+else if ( $_GET["format"] == "701" || $_GET["format"] == "peter" ){
+// 2023-08-14: Still used by Peter for both NSV and Bezirk 1.
 
 // BEGIN BEZ1
     header ( "Content-type: text/plain" );
@@ -118,6 +119,7 @@ else if ( $_GET["format"] == "701" ){
 
         echo "\n\n\n===\n\n\n";
     }
+    exit; // No other headers.
 
 
 } // END BEZ1
