@@ -93,6 +93,10 @@ class Team
     return $this->league->uri() . "m/" . $this->id . "/";
   }
 
+  public function apiUri() {
+    return $this->league->uri() . "api/teams/" . $this->id . "/";
+  }
+
   /**
    * Whether the given team is a substitute team for this one.
    */

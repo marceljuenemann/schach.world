@@ -16,8 +16,8 @@
 
   <br /><br /><b>10. bis 13. August</b><br />Kurt Pape-Open
   <br /><a href='https://nsv-online.de/2023/01/nsv-grandprix-2-kurt-pape-open/'>Ausschreibung</a>
-  | <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>
-  <!--| <a href='https://nsv-online.de/2022/08/kyrill-scheck-gewinnt-1-kurt-pape-open-in-hameln/'>Ergebnisse</a>-->
+  <!--| <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>-->
+  | <a href='https://nsv-online.de/2023/08/kurt-pape-open-fm-matthias-tonndorf-gewinnt/'>Ergebnisse</a>
 
 
   <br /><br /><b>25. bis 27. August</b><br />Lessing-Open in Wolfenb&uuml;ttel
@@ -33,9 +33,9 @@
 
 
 
-      <!--<br /><br /><b>24. bis 26. September</b><br />Ems-Vechte-Cup in Lingen -->
-       <!--   <br /><a href='http://nsv-grandprix.de/ausschreibungen/ems-vechte-cup-2021.pdf'>Ausschreibung</a> -->
-          <!--| <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>-->
+      <br /><br /><b>13. bis 15. Oktober</b><br />Ems-Vechte-Cup in Lingen
+      <br /><a href='https://nsv-online.de/2023/08/nsv-grandprix-13-ems-vechte-cup-ausschreibung/'>Ausschreibung</a>
+      <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>
      <!--      | <a href='https://nsv-online.de/turniere/ems-vechte-cup-2021/?ak=EVC2021#menu'>Ergebnisse</a>-->
            <!--| Ergebnisse <a href='http://ems-vechte-cup.de/?page_id=1325'>A</a>|<a href='http://ems-vechte-cup.de/?page_id=1320'>B</a>-->
 
@@ -54,8 +54,8 @@
 
 
 
-        <!--<br /><br /><b>15. bis 17. November</b><br />Andreas-Schaar-Gedenkturnier<br />in Nordhorn
-        <br /><a href='http://nsv-grandprix.de/ausschreibungen/Andreas-Schaar-Gedenkturnier-2019.pdf'>Ausschreibung</a>
+        <br /><br /><b>10. bis 12. November</b><br />Andreas-Schaar-Gedenkturnier<br />in Nordhorn
+        <br /><a href='https://nsv-online.de/2023/08/nsv-grandprix-9-andreas-schaar-gedenkturnier-ausschreibung/'>Ausschreibung</a>
               | <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>
-             | <a href='http://nsv-online.de/turniere/andreas-schaar-gedenkturnier-2019/?ak=Nordhorn%20Gruppe%20A#menu'>Ergebnisse</a>
-   -->
+          <!--   | <a href='http://nsv-online.de/turniere/andreas-schaar-gedenkturnier-2019/?ak=Nordhorn%20Gruppe%20A#menu'>Ergebnisse</a>-->
+

@@ -19,6 +19,7 @@ Nsv\League\Api\Model\Player Object
             [name] => Team
             [zps] => 0
             [uri] => /ligen/test/m/35/
+            [apiUri] => /ligen/test/api/teams/35/
         )
 
     [games] => Array
@@ -37,6 +38,7 @@ Nsv\League\Api\Model\Player Object
                             [name] => Team 2
                             [zps] => 0
                             [uri] => /ligen/test/m/36/
+                            [apiUri] => /ligen/test/api/teams/36/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
@@ -73,6 +75,7 @@ Nsv\League\Api\Model\Player Object
                             [name] => Team 2
                             [zps] => 0
                             [uri] => /ligen/test/m/36/
+                            [apiUri] => /ligen/test/api/teams/36/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
@@ -109,6 +112,7 @@ Nsv\League\Api\Model\Player Object
                             [name] => Team 2
                             [zps] => 0
                             [uri] => /ligen/test/m/36/
+                            [apiUri] => /ligen/test/api/teams/36/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
@@ -145,6 +149,7 @@ Nsv\League\Api\Model\Player Object
                             [name] => Team 2
                             [zps] => 0
                             [uri] => /ligen/test/m/36/
+                            [apiUri] => /ligen/test/api/teams/36/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
@@ -181,6 +186,7 @@ Nsv\League\Api\Model\Player Object
                             [name] => Team 2
                             [zps] => 0
                             [uri] => /ligen/test/m/36/
+                            [apiUri] => /ligen/test/api/teams/36/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
@@ -217,6 +223,7 @@ Nsv\League\Api\Model\Player Object
                             [name] => Team 2
                             [zps] => 0
                             [uri] => /ligen/test/m/36/
+                            [apiUri] => /ligen/test/api/teams/36/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
