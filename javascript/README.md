@@ -1,6 +1,6 @@
 # nsv-js
 
-JavaScript and TypeScript components for nsv-online.de
+React components for the nsv-online.de frontend.
 
 
 
