@@ -2,7 +2,7 @@ import React from 'react';
 import { LeagueApi } from '../api';
 import { Division } from '../types';
 import { Context } from '../../context';
-import { Col, Form, Row } from 'react-bootstrap';
+import { Col, Form, Row, Spinner } from 'react-bootstrap';
 
 const CURRENT_ROUND = -1
 
@@ -10,8 +10,9 @@ const CURRENT_ROUND = -1
  * Displays a list of all pairings that the user can edit.
  */
 // TODO: move to abstact NSV component.
+// TODO: Add tests.
 export class PairingList extends React.Component<{context: Context}, {
-    divisions: Array<Division>,
+    divisions?: Array<Division>,
     selectedDivision: number,
     selectedRound: number
   }> {
@@ -22,7 +23,6 @@ export class PairingList extends React.Component<{context: Context}, {
     super(props)
     this.api = new LeagueApi(this.props.context);
     this.state = {
-      divisions: [],
       selectedDivision: 0,
       selectedRound: CURRENT_ROUND
     }
@@ -43,7 +43,7 @@ export class PairingList extends React.Component<{context: Context}, {
 
   rounds(): Set<number> {
     let rounds = new Set<number>();
-    for (let division of this.state.divisions) {
+    for (let division of this.state.divisions || []) {
       if (this.division && division.id != this.division) continue;
       for (let matchDay of division.matchDays) {
         rounds.add(matchDay.round);
@@ -53,7 +53,7 @@ export class PairingList extends React.Component<{context: Context}, {
   }
 
   *pairings() {
-    for (let division of this.state.divisions) {
+    for (let division of this.state.divisions || []) {
       if (this.division && division.id != this.division) continue;
       if (this.state.selectedDivision && division.id != this.state.selectedDivision) continue;
       for (let matchDay of division.matchDays) {
@@ -67,6 +67,9 @@ export class PairingList extends React.Component<{context: Context}, {
   }
 
   render() {
+    if (!this.state.divisions) {
+      return <Spinner animation="border" role="status"></Spinner>
+    }
     return (
       <div>
         <Form className="d-inline-block mb-2">
