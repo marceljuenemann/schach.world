@@ -7,8 +7,8 @@ namespace Nsv\WebApp\Core;
  */
 class NsvJs {
   const DEV_SERVER = 'http://localhost:6464/static/js/bundle.js';
-  const PROD_PATH = '/core/js-build/';
-  const SCRIPT_PATTERN = '/^main\.[0-9a-z]+\.js$/';
+  const BUILD_MANIFEST = '/public/core/js-build/asset-manifest.json';
+  const BUILD_PATH = '/core/js-build';
 
   private string $projectDir;
 
@@ -25,13 +25,8 @@ class NsvJs {
     }
 
     // The filename contains a hash in order to ensure browsers don't use an
-    // outdated version from cache. We find out the current filename here. 
-    $jsDir = $this->projectDir . '/public' . self::PROD_PATH;
-    foreach (scandir($jsDir) as $filename) {
-      if (preg_match(self::SCRIPT_PATTERN, $filename)) {
-        return self::PROD_PATH . $filename;
-      }
-    }
-    throw new \Exception("nsv.js not found");
+    // outdated version from cache. We find out the current filename from the manifest.
+    $manifest = json_decode(file_get_contents($this->projectDir . self::BUILD_MANIFEST), JSON_OBJECT_AS_ARRAY);
+    return self::BUILD_PATH . $manifest['files']['main.js'];
   }
 }
