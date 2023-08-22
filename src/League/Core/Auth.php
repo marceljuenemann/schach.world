@@ -18,7 +18,7 @@ class Auth
   const SESSION_KEY_LOGIN = 'league_login_time';
   const SESSION_KEY_LEAGUE = 'league_login_league_id';
   const SESSION_KEY_DIVISION = 'league_login_division_id';
-  const SESSION_DURATION = 60 * 60;  // 1 hour
+  const SESSION_DURATION = 8 * 60 * 60;  // 8 hours
 
   private Session $session;
 
@@ -35,11 +35,14 @@ class Auth
    */
   function checkManagerAccess(League $league): Division|null {
     $loginTime = $this->session->get(self::SESSION_KEY_LOGIN);
-    if (!is_numeric($loginTime) || $loginTime < time() - self::SESSION_DURATION) {
-      throw new AccessDeniedHttpException('Invalid session.');
+    if (!is_numeric($loginTime)) {
+      throw new AccessDeniedHttpException('Nicht eingeloggt');
+    }
+    if ($loginTime < time() - self::SESSION_DURATION) {
+      throw new AccessDeniedHttpException('Login abgelaufen');
     }
     if ($this->session->get(self::SESSION_KEY_LEAGUE) != $league->id) {
-      throw new AccessDeniedHttpException('Incorrect league.');
+      throw new AccessDeniedHttpException('Falsche Liga');
     }
 
     $divisionId = $this->session->get(self::SESSION_KEY_DIVISION);
@@ -67,7 +70,7 @@ class Auth
     global $globals;  // TODO: move master password somewhere else
     $pw = md5($password);
     if (!$user || ($pw !== $user->password && $pw !== $globals['masterpasswort'])) {
-      throw new AccessDeniedHttpException("Incorrect password");
+      throw new AccessDeniedHttpException("Falsches Passwort");
     }
 
     $this->session->set(self::SESSION_KEY_LOGIN, time());

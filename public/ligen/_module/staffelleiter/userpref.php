@@ -18,7 +18,7 @@
 
     // Der Turnierleiter bearbeitet den Staffelleiter?
     $up_userid = ( isset ( $_GET ['staffel'] ) && $admin ['usertype'] == "t" ) 
-        ? reset ( SED_MYSQL_Array ( "SELECT leiter FROM staffeln WHERE id=$_GET[staffel] AND turnier=$globals[tid]", true ) ) 
+        ? SED_MYSQL_Value ( "SELECT leiter FROM staffeln WHERE id=$_GET[staffel] AND turnier=$globals[tid]", true ) 
         : $admin ['userid'];
 
     // Benutzername
