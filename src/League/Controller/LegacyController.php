@@ -8,11 +8,10 @@ use Nsv\League\Core\Encoding;
 use Nsv\League\Repository\DivisionRepository;
 use Nsv\League\Repository\PlayerRepository;
 use Nsv\League\Repository\TeamRepository;
+use Nsv\WebApp\Core\NsvJs;
 use Nsv\WebApp\Core\WordPress\Auth as WordPressAuth;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Session\Session;
-use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -24,7 +23,8 @@ class LegacyController extends AbstractLeagueController {
   function __construct(
     private DivisionRepository $divisionRepository,
     private PlayerRepository $playerRepository,
-    private TeamRepository $teamRepository
+    private TeamRepository $teamRepository,
+    private NsvJs $nsvJs
   ) {}
 
   #[Route('ligen/{league}/', name: 'legacy')]
@@ -145,5 +145,8 @@ class LegacyController extends AbstractLeagueController {
       echo $admin['toptxt'];
       require_once ( $globals['basedir'] . "/_module/staffelleiter/" . $admin['pageid'] . ".php" );
     }
+
+    // Enable integrating React components into the legacy admin system.
+    echo "<script src='{$this->nsvJs->scriptUrl()}'></script>";
   }
 }
