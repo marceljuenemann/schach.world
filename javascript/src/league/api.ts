@@ -3,11 +3,12 @@ import { Division } from "./types"
 
 export class LeagueApi extends NsvApi {
 
-  /**
-   * Fetches all pairings of the league.
-   */
   async fetchPairings(): Promise<Array<Division>> {
     return this.request('unstable/pairings/')
+  }
+
+  async createDivision(division: Record<string, any>): Promise<void> {
+    return this.request('divisions/create/', 'POST', division)
   }
 
   async updateDivisionSortOrder(divisionIds: Array<number>): Promise<void> {

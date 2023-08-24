@@ -1,5 +1,7 @@
 import { Context } from "./context"
 
+export type ValidationErrors = Record<string, Array<{message: string}>>
+
 /**
  * Wrapper for all kinds of errors thrown by API calls. The messages are meant
  * to be shown in the UI and meant to be reasonably user-friendly.
@@ -7,7 +9,8 @@ import { Context } from "./context"
 export class ApiError {
   private constructor(
     readonly type: 'nsv' | 'http' | 'network' | 'unknown',
-    readonly messages: Array<String>
+    readonly messages: Array<String>,
+    readonly validationErrors?: ValidationErrors
   ) {}
 
   /**
@@ -25,7 +28,7 @@ export class ApiError {
     if (response.status == 422) {
       const body = await response.json()
       if (body.errorType === 'nsv') {
-        return new ApiError(body.errorType, body.errorMessages)
+        return new ApiError(body.errorType, body.errorMessages, body.validationErrors)
       }
     } else if (response.status == 403) {
       return new ApiError('http', ['Zugriff nicht erlaubt oder abgelaufen. Bitte loggen Sie sich neu ein (HTTP 403)'])

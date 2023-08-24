@@ -3,6 +3,7 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Api\Model\Division;
+use Nsv\League\Api\Request\CreateDivisionRequest;
 use Nsv\League\Api\Request\DivisionOrderRequest;
 use Nsv\League\Api\Service\DivisionService;
 use Nsv\League\Api\Service\ScheduleService;
@@ -11,11 +12,15 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 #[Route('/ligen/{league}/api/', name: 'league_api_')]
 class ApiController extends AbstractLeagueController {
 
-  function __construct(private Auth $auth) {}
+  function __construct(
+    private Auth $auth,
+    private ValidatorInterface $validator
+  ) {}
 
   /**
    * *Unstable* API for displaying a pairing list in the admin area.
@@ -37,6 +42,13 @@ class ApiController extends AbstractLeagueController {
       $divisions[] = $model;
     }
     return $this->apiResponse($divisions);
+  }
+
+  #[Route('divisions/create/', methods: ['POST'], name: 'division_create')]
+  public function createDivision(#[MapRequestPayload] CreateDivisionRequest $request, DivisionService $service): Response {
+    $this->checkLeagueManagerAccess();
+    $service->createDivision($this->league, $request);
+    return $this->apiResponse();
   }
 
   #[Route('divisions/order/', methods: ['PUT'], name: 'division_order')]
