@@ -42,6 +42,7 @@ a.anchor {
 .page-item.active .page-link {
   background-color: #c32811;
   border-color: #c32811;
+  color: white;
 }
 
 .btn-primary {
