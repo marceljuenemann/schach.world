@@ -4,6 +4,7 @@ React components for the nsv-online.de frontend.
 
 ## Development
 
+1. Run `npm install` to install dependencies
 1. Run `npm start` to start a development server
 1. Set `NSV_JS_DEV=true` in `../env.local` in order to use the dev server from the NSV code
 1. Run tests with `npm test` 

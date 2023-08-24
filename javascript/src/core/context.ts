@@ -5,7 +5,7 @@
  * main purpose of this class is to make the code more testable.
  */
 export class Context {
-  constructor(private window: Window, private rootElement: HTMLElement) {}
+  constructor(readonly window: Window, private rootElement: HTMLElement) {}
 
   attribute(name: string): string|null {
     return this.rootElement.getAttribute(`data-nsv-${name}`);

@@ -30,5 +30,18 @@ class ApiController extends AbstractLeagueController {
     }
     return $this->apiResponse($divisions);
   }
+
+  #[Route('divisions/order/', name: 'divisions_order')]
+  public function reorderDivisions(ScheduleService $scheduleService): Response {
+    $error = [
+      'errorType' => 'nsv',
+      'errorMessages' => [
+        'Fehler 3000',
+        'Fehler 4000'
+      ]
+    ];
+    $response = $this->apiResponse($error);
+    $response->setStatusCode(422);
+    return $response;
+  }
 }
- 

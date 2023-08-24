@@ -71,8 +71,6 @@ class LegacyController extends AbstractLeagueController {
     // Output the footer.
     if ( function_exists ( "SED_GUIclose" ) ) {
       SED_GUIclose ();
-      // TODO: production path.
-      echo "<script src='http://localhost:3000/static/js/bundle.js'></script>";
     }
     $body = ob_get_clean();
     $response = new Response($body);

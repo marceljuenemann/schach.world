@@ -1,5 +1,5 @@
 import { Card, ListGroup, Modal } from "react-bootstrap";
-import { NsvDialog, NsvSaveDialog } from "../../core/dialog";
+import { NsvDialog, NsvSaveDialog, NsvSaveDialogState } from "../../core/dialog";
 import { Division } from "../types";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { GripHorizontal, GripVertical } from "react-bootstrap-icons";
@@ -7,7 +7,7 @@ import { GripHorizontal, GripVertical } from "react-bootstrap-icons";
 /**
  * Dialog for sorting divisions.
  */
-export class SortDivisions extends NsvSaveDialog<{
+export class SortDivisions extends NsvSaveDialog<NsvSaveDialogState & {
     divisions: Array<Division>
   }> {
 
@@ -63,7 +63,8 @@ export class SortDivisions extends NsvSaveDialog<{
     );
   }
 
-  save(): boolean {
-    return true
+  async save(): Promise<void> {
+    const result = await this.leagueApi.updateDivisionSortOrder([1, 2, 3]);
+    console.log(result);
   }
 }
