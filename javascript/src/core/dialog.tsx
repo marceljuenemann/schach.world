@@ -62,7 +62,13 @@ export abstract class NsvSaveDialog<S extends NsvSaveDialogState = NsvSaveDialog
 
   private onSave() {
     this.save().then(
-      result => this.close(result),
+      result => {
+        this.close(result)
+        // Check the data-nsv-on-save attribute.
+        if (this.props.context.attribute('on-save') === 'reload') {
+          this.props.context.window.location.reload()
+        } 
+      },
       error => this.setState({saveError: ApiError.from(error)})
     )
   }
@@ -71,8 +77,8 @@ export abstract class NsvSaveDialog<S extends NsvSaveDialogState = NsvSaveDialog
     return (
       <Modal.Footer>
         {
-          this.state.saveError && this.state.saveError.messages.map(message => {
-            return <Alert variant='danger' className="w-100">{ message }</Alert>
+          this.state.saveError && this.state.saveError.messages.map((message, i) => {
+            return <Alert key={i} variant='danger' className="w-100">{ message }</Alert>
           })
         }
         <Button variant="secondary" onClick={() => this.close()}>Abbrechen</Button>

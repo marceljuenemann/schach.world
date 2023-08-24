@@ -39,6 +39,11 @@ class LegacyController extends AbstractLeagueController {
       if ($response = $this->checkForRedirect($globals['mod'])) {
         return $response;
       } else if ($globals['mod'] === 'staffelleiter') {
+        // Handle legacy admin system.
+        if ($_GET['admin'] === 'login') {
+          $auth->legacyLogin($this->league, $_POST['benutzer'], $_POST['passwort']);
+          return $this->redirect($this->league->uri() . "?admin=desktop--");
+        }
         $this->legacyAdminSystem($auth);
       } else {
         // Existiert es überhaupt?
@@ -118,10 +123,6 @@ class LegacyController extends AbstractLeagueController {
   }
 
   private function legacyAdminSystem(Auth $auth) {
-    if ($_GET['admin'] === 'login') {
-      $auth->legacyLogin($this->league, $_POST['benutzer'], $_POST['passwort']);
-      $_GET['admin'] = 'desktop--';
-    }
     $division = $auth->checkManagerAccess($this->league);
     $user = $division ? $division->manager : $this->league->manager;
 
