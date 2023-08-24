@@ -65,8 +65,7 @@ export abstract class NsvSaveDialog<S extends NsvSaveDialogState = NsvSaveDialog
     this.save().then(
       result => {
         this.close(result)
-        // Check the data-nsv-on-save attribute.
-        if (this.props.context.attribute('on-save') === 'reload') {
+        if (this.attribute('on-save') === 'reload') {
           this.props.context.window.location.reload()
         } 
       },
