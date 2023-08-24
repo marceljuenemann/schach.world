@@ -1,64 +1,46 @@
 import ReactDOM from 'react-dom/client';
 
 import { PairingList } from './league/component/PairingList';
-import { Context } from './core/context';
 import { ReactElement } from 'react';
 import { SortDivisions } from './league/component/SortDivisions';
-import { DialogContext } from './core/dialog';
 import { CreateDivision } from './league/component/CreateDivision';
+import { launchDialog } from './core/dialog';
 
 /**
  * All elements with data-nsv-component will be rendered as a React component.
  */
 $('[data-nsv-component]').each((_, elem: HTMLElement) => {
-  const context = new Context(window, elem);
-  ReactDOM.createRoot(elem).render(createComponent(context));
+  ReactDOM.createRoot(elem).render(createComponent(elem));
 })
 
-/**
- * All elements with a data-nsv-dialog attribute will launch a React dialog.
- */
-$('[data-nsv-dialog]').on('click', event => {
-  const context = new DialogContext(window, event.target)
-  launchDialog(context.attribute('dialog')!!, context)
-})
-
-function createComponent(context: Context): ReactElement {
-  switch (context.attribute('component')) {
+function createComponent(elem: HTMLElement): ReactElement {
+  switch (elem.getAttribute('data-nsv-component')) {
     case 'PairingList':
-      return <PairingList context={context} />;
+      const division = parseInt(elem.getAttribute('data-nsv-division') || '0')
+      return <PairingList division={division} />;
   }
   throw new Error('Invalid NSV component type');
 }
 
-// TODO: Maybe this is overkill and we should just render the button that
-// launches the dialog in React as well?
-function launchDialog(type: string, context: DialogContext) {
-  // Create container div for rendering the dialog.
-  const container = $("<div>")
-  $("body").append(container);
-
-  // Render the dialog.
-  const component = createDialogComponent(type, context)
-  const root = ReactDOM.createRoot(container[0])
-  root.render(component);
-
-  // Handle onClose callback
-  // TODO: This is a bit hacky...
-  context.onClose = (val: any) => {
-    // TODO: return value as a Promise
-    root.unmount()
-    container.remove() 
+/**
+ * All elements with a data-nsv-dialog attribute will launch a React dialog.
+ */
+$('[data-nsv-dialog]').on('click', async event => {
+  const elem: HTMLElement = event.target
+  const result = await launchDialog(onClose => createDialogComponent(elem, onClose))
+  // Possibly reload the page.
+  if (result && elem.getAttribute('data-nsv-on-save') === 'reload') {
+    window.location.reload()
   }
-}
+})
 
-function createDialogComponent(type: string, context: DialogContext) {
-  // TODO: Use React.createElement directly
-  switch (type) {
+function createDialogComponent(elem: HTMLElement, onClose: () => void): ReactElement {
+  switch (elem.getAttribute('data-nsv-dialog')) {
     case 'SortDivisions':
-      return <SortDivisions context={context} />;
+      return <SortDivisions onClose={onClose} />;
     case 'CreateDivision':
-      return <CreateDivision context={context} />;
-    }
-  throw new Error('Invalid NSV dialog type');
+      return <CreateDivision onClose={onClose} />;
+    default:
+      throw new Error('Invalid NSV dialog type');
+  }
 }

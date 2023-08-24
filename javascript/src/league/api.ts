@@ -23,7 +23,7 @@ export class LeagueApi extends NsvApi {
    * Returns the base URL for the current league.
    */
   private baseUrl(): string {
-    const path = this.context.currentPath.split('/')
+    const path = window.location.pathname.split('/')
     return `/${path[1]}/${path[2]}/`
   }
 }

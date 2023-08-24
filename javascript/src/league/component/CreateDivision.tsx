@@ -1,6 +1,7 @@
 import { Form, Modal } from "react-bootstrap";
 import { NsvSaveDialog, NsvSaveDialogState } from "../../core/dialog";
 import { NsvForm } from "../../core/form";
+import { LeagueApi } from "../api";
 
 /**
  * Dialog for sorting divisions.
@@ -8,6 +9,8 @@ import { NsvForm } from "../../core/form";
 export class CreateDivision extends NsvSaveDialog<NsvSaveDialogState & {
     values: Record<string, any>
   }> {
+  private leagueApi = new LeagueApi()
+
   constructor(props: any) {
     super(props)
     this.state = {
@@ -38,7 +41,8 @@ export class CreateDivision extends NsvSaveDialog<NsvSaveDialogState & {
     );
   }
 
-  async save(): Promise<void> {
+  async save(): Promise<boolean> {
     await this.leagueApi.createDivision(this.state.values)
+    return true
   }
 }

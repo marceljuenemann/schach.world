@@ -1,5 +1,3 @@
-import { Context } from "./context"
-
 export type ValidationErrors = Record<string, Array<{message: string}>>
 
 /**
@@ -46,7 +44,6 @@ export class ApiError {
  * Wrapper for API calls.
  */
 export class NsvApi {
-  constructor(protected context: Context) {}
 
   protected request<T>(url: string, method: string = 'GET', body: any = null, options: RequestInit = {}): Promise<T> {
     options = {
@@ -57,7 +54,7 @@ export class NsvApi {
         "Content-Type": "application/json",
       } : undefined
     }
-    return this.context.window.fetch(url, options).then(
+    return fetch(url, options).then(
       async response => {
         if (response.ok) {
           return await response.json()

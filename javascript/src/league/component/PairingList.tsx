@@ -1,9 +1,7 @@
 import React from 'react';
 import { LeagueApi } from '../api';
 import { Division } from '../types';
-import { Context } from '../../core/context';
 import { Col, Form, Row, Spinner } from 'react-bootstrap';
-import { NsvComponent } from '../../core/component';
 
 const CURRENT_ROUND = -1
 
@@ -11,11 +9,16 @@ const CURRENT_ROUND = -1
  * Displays a list of all pairings that the user can edit.
  */
 // TODO: Add tests.
-export class PairingList extends NsvComponent<{
+export class PairingList extends React.Component<{
+    // The ID of the division the user is allowed to edit, or 0 if they may edit all divisions.
+    division: number
+  }, {
     divisions?: Array<Division>,
     selectedDivision: number,
     selectedRound: number
   }> {
+
+  private leagueApi = new LeagueApi()
 
   constructor(props: any) {
     super(props)
@@ -27,21 +30,17 @@ export class PairingList extends NsvComponent<{
 
   componentDidMount() {
     // TODO: store in flight calls and cancel them when needed.
-    this.leagueApi.fetchPairings().then(divisions => this.setState({divisions}))
-  }
-
-  /**
-   * Returns the ID of the division that the user is allowed to edit,
-   * or 0 if they are allowed to edit all divisions.
-   */
-  get division() {
-    return parseInt(this.attribute('division') || '0')
+    this.leagueApi.fetchPairings().then(divisions => {
+      if (this.props.division) {
+        divisions = divisions.filter(d => d.id === this.props.division)
+      }
+      this.setState({divisions})
+    })
   }
 
   rounds(): Set<number> {
     let rounds = new Set<number>();
     for (let division of this.state.divisions || []) {
-      if (this.division && division.id != this.division) continue;
       for (let matchDay of division.matchDays) {
         rounds.add(matchDay.round);
       }
@@ -51,7 +50,6 @@ export class PairingList extends NsvComponent<{
 
   *pairings() {
     for (let division of this.state.divisions || []) {
-      if (this.division && division.id != this.division) continue;
       if (this.state.selectedDivision && division.id != this.state.selectedDivision) continue;
       for (let matchDay of division.matchDays) {
         if (this.state.selectedRound > 0 && matchDay.round != this.state.selectedRound) continue;
@@ -72,7 +70,7 @@ export class PairingList extends NsvComponent<{
         <Form className="d-inline-block mb-2">
           <Row>
             {/* Division selector (only for league managers) */}
-            { !this.division &&
+            { !this.props.division &&
               <Col xs="auto">
                 <Form.Select value={ this.state.selectedDivision } 
                     onChange={ e => this.setState({selectedDivision: parseInt(e.target.value)}) }
@@ -108,7 +106,7 @@ export class PairingList extends NsvComponent<{
         <table className="nsv-table">
           <thead>
             <tr>
-              { !this.division && <th>Staffel</th> }
+              { !this.props.division && <th>Staffel</th> }
               <th>R</th>
               <th>Paarung</th>
               <th>Eingeben</th>
@@ -119,7 +117,7 @@ export class PairingList extends NsvComponent<{
             Array.from(this.pairings()).map(pairing => {
               const uri = `?admin=alleeing---&pid=${pairing.id}`
               return <tr key={ pairing.id } className='text-nowrap'>
-                { !this.division && <td>{ pairing.division.name }</td> }
+                { !this.props.division && <td>{ pairing.division.name }</td> }
                 <td>{ pairing.round }</td>
                 <td>
                   <a href={ uri }>
