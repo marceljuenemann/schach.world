@@ -1,7 +1,7 @@
 import React from 'react';
 import { LeagueApi } from '../api';
 import { Division } from '../types';
-import { Col, Form, Row, Spinner } from 'react-bootstrap';
+import { Alert, Col, Form, Row, Spinner } from 'react-bootstrap';
 
 const CURRENT_ROUND = -1
 
@@ -48,6 +48,15 @@ export class PairingList extends React.Component<{
     return rounds;
   }
 
+  hasPairings(): boolean {
+    for (let division of this.state.divisions || []) {
+      for (let matchDay of division.matchDays) {
+        if (matchDay.pairings.length) return true
+      }
+    }
+    return false;
+  }
+
   *pairings() {
     for (let division of this.state.divisions || []) {
       if (this.state.selectedDivision && division.id != this.state.selectedDivision) continue;
@@ -64,6 +73,9 @@ export class PairingList extends React.Component<{
   render() {
     if (!this.state.divisions) {
       return <Spinner animation="border" role="status"></Spinner>
+    }
+    if (!this.hasPairings()) {
+      return <Alert variant='info'>Noch keine Paarungen hinterlegt</Alert>
     }
     return (
       <div>
