@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 import { ApiError } from "./api";
 
 export class DialogContext extends Context {
+  // TODO: replace any with T.
   public onClose: (value: any) => void = () => {}
 }
 
@@ -44,7 +45,7 @@ export abstract class NsvDialog<S = {}, P = {}> extends NsvComponent<S & {title:
           { this.renderBody() }
         </Modal.Body>
         { this.renderFooter() }
-      </Modal>      
+      </Modal>
     );
   }
 }
