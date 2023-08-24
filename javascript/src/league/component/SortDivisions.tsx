@@ -64,7 +64,7 @@ export class SortDivisions extends NsvSaveDialog<NsvSaveDialogState & {
   }
 
   async save(): Promise<void> {
-    const result = await this.leagueApi.updateDivisionSortOrder([1, 2, 3]);
-    console.log(result);
+    const ids = this.state.divisions.map(division => division.id)
+    await this.leagueApi.updateDivisionSortOrder(ids);
   }
 }

@@ -3,8 +3,11 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Api\Model\Division;
+use Nsv\League\Api\Request\DivisionOrderRequest;
+use Nsv\League\Api\Service\DivisionService;
 use Nsv\League\Api\Service\ScheduleService;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/ligen/{league}/api/', name: 'league_api_')]
@@ -31,17 +34,24 @@ class ApiController extends AbstractLeagueController {
     return $this->apiResponse($divisions);
   }
 
-  #[Route('divisions/order/', name: 'divisions_order')]
-  public function reorderDivisions(ScheduleService $scheduleService): Response {
-    $error = [
-      'errorType' => 'nsv',
-      'errorMessages' => [
-        'Fehler 3000',
-        'Fehler 4000'
-      ]
-    ];
-    $response = $this->apiResponse($error);
-    $response->setStatusCode(422);
-    return $response;
+  #[Route('divisions/order/', methods: ['PUT'], name: 'division_order')]
+  public function reorderDivisions(#[MapRequestPayload] DivisionOrderRequest $request, DivisionService $service): Response {
+    $service->updateOrder($this->league, $request);
+    return $this->apiResponse();
   }
+
+  /*
+  TODO: enable NSV ApiErrors like this:
+  
+  $error = [
+    'errorType' => 'nsv',
+    'errorMessages' => [
+      'Fehler 3000',
+      'Fehler 4000'
+    ]
+  ];
+  $response = $this->apiResponse($request);
+  $response->setStatusCode(422);
+  return $response;
+  */
 }

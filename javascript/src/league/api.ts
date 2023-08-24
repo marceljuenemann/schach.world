@@ -11,11 +11,11 @@ export class LeagueApi extends NsvApi {
   }
 
   async updateDivisionSortOrder(divisionIds: Array<number>): Promise<void> {
-    return this.request('divisions/order/');
+    return this.request('divisions/order/', 'PUT', {divisionIds})
   }
 
-  protected async request<T>(url: string): Promise<T> {
-    return super.request(this.baseUrl() + 'api/' + url)
+  protected async request<T>(url: string, method: string = 'GET', body: any = null): Promise<T> {
+    return super.request(this.baseUrl() + 'api/' + url, method, body)
   }
   
   /**

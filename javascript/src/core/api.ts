@@ -45,8 +45,16 @@ export class ApiError {
 export class NsvApi {
   constructor(protected context: Context) {}
 
-  protected request<T>(url: string): Promise<T> {
-    return this.context.window.fetch(url).then(
+  protected request<T>(url: string, method: string = 'GET', body: any = null, options: RequestInit = {}): Promise<T> {
+    options = {
+      ...options,
+      method,
+      body: body && JSON.stringify(body),
+      headers: body ? {
+        "Content-Type": "application/json",
+      } : undefined
+    }
+    return this.context.window.fetch(url, options).then(
       async response => {
         if (response.ok) {
           return await response.json()

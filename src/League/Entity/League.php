@@ -85,7 +85,7 @@ class League
   /**
    * @throws NotFoundHttpException
    */
-  public function divisionById(int $id) {
+  public function divisionById(int $id): Division {
     foreach ($this->divisions as $division) {
       if ($id === $division->id) {
         return $division;

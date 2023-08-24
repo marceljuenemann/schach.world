@@ -95,7 +95,7 @@ class AbstractLeagueController extends AbstractController {
     return $response;
   }
 
-  protected function apiResponse(mixed $model): Response {
+  protected function apiResponse(mixed $model = new \stdClass): Response {
     Encoding::deep_utf8_encode($model);
     $response = new JsonResponse($model);
     $response->setEncodingOptions(JSON_PRETTY_PRINT);
