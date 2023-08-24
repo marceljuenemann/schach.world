@@ -51,9 +51,12 @@ class ControllerInterceptor
     }
   }
 
+  /**
+   * Intercept exceptions thrown by an AbstractLeagueController in order
+   * to show nicer error pages with the template for the league.
+   */
   #[AsEventListener]
   public function onExceptionEvent(ExceptionEvent $event) {
-    // Only intercept exceptions thrown by a league controller.
     if (!$this->controller) return;
 
     $exception = $event->getThrowable();

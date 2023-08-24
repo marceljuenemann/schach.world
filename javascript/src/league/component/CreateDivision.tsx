@@ -1,14 +1,12 @@
-import { FloatingLabel, Form, Modal } from "react-bootstrap";
-import { NsvSaveDialog } from "../../core/dialog";
-import { Division } from "../types";
-import { FormValidationResult, NsvForm } from "../../core/form";
+import { Form, Modal } from "react-bootstrap";
+import { NsvSaveDialog, NsvSaveDialogState } from "../../core/dialog";
+import { NsvForm } from "../../core/form";
 
 /**
  * Dialog for sorting divisions.
  */
-export class CreateDivision extends NsvSaveDialog<{
-    values: Record<string, any>,
-    validation?: FormValidationResult
+export class CreateDivision extends NsvSaveDialog<NsvSaveDialogState & {
+    values: Record<string, any>
   }> {
   constructor(props: any) {
     super(props)
@@ -21,11 +19,18 @@ export class CreateDivision extends NsvSaveDialog<{
   renderBody() {
     return (
       <Modal.Body>
-        <NsvForm values={this.state.values} onChange={(values) => this.setState({values})} validationResult={this.state.validation}>
+        <NsvForm values={this.state.values} onChange={(values) => this.setState({values})} validationErrors={this.state.saveError?.validationErrors}>
           {(form: NsvForm) => (
             <Form>
+              <h5 className="mb-3">Staffel</h5>
               <NsvForm.Control form={form} id="name" label="Name" />
-              <NsvForm.Control form={form} id="managerName" label="Staffelleiter:in Name" />
+
+              <h5 className="mb-3">Staffelleiter:in</h5>
+              <NsvForm.Control form={form} id="managerName" label="Name" />
+              <NsvForm.Control form={form} id="managerMail" label="eMail" />
+              <NsvForm.Control form={form} id="managerPhone" label="Telefon" />
+              <NsvForm.Control form={form} id="managerPhone2" label="Telefon alternativ" />
+              <NsvForm.Control form={form} id="managerPassword" label="Passwort" type="password" />
             </Form>
           )}
         </NsvForm>
@@ -33,13 +38,7 @@ export class CreateDivision extends NsvSaveDialog<{
     );
   }
 
-  save(): boolean {
-    console.log("Saving", this.state.values)
-    this.setState({
-      validation: {
-        name: [{message: 'Falscher Name'}, {message: 'Falscher Hase'}]
-      }
-    })
-    return false
+  async save(): Promise<void> {
+    await this.leagueApi.createDivision(this.state.values)
   }
 }
