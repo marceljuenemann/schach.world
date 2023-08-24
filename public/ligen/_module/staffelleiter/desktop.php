@@ -181,7 +181,10 @@
     }
 
     // Neue Staffel
-    echo "<tr><td colspan='2'><a href='?admin=turnstne-$admin[userid]-$admin[session]' style='text-decoration:none'><img src='$globals[systemicons]desk_neu.png' alt='Neue Staffel' class='sed_admin_icon' />Neue Staffel</a></td></tr>";
+    echo "<tr><td colspan='2'>";
+    echo "<a href='?admin=turnstne-$admin[userid]-$admin[session]' style='text-decoration:none'><img src='$globals[systemicons]desk_neu.png' alt='Neue Staffel' class='sed_admin_icon' />Neue Staffel</a>";
+    echo "<a data-nsv-dialog='SortDivisions' data-nsv-on-save='reload' style='cursor: pointer; text-decoration:none'><img src='$globals[systemicons]timestamp.png' alt='Staffeln umsortieren' class='sed_admin_icon' />Staffeln umsortieren</a>";
+    echo "</td></tr>";
 
     // Fieldset
     echo "</table></fieldset><br /><br />";
