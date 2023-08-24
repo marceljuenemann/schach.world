@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react"
-import { FloatingLabel, Form } from "react-bootstrap"
+import { Button, FloatingLabel, Form } from "react-bootstrap"
 import { ValidationErrors } from "./api"
 
 /**
@@ -31,6 +31,8 @@ export class NsvForm extends React.Component<{
     label: string,
     type?: string
   }> {
+    private suggestedPassword = Math.random().toString(36).substring(2, 12);  // TODO: move to utils
+
     constructor(props: any) {
       super(props)
     }
@@ -50,9 +52,12 @@ export class NsvForm extends React.Component<{
             isValid={this.formErrors && !this.errors.length}
             isInvalid={this.errors.length > 0}
           />
-          { this.errors.map(error => (
-            <Form.Control.Feedback type="invalid">{error.message}</Form.Control.Feedback>
-          ))}
+          {
+            this.errors.map(error => <Form.Control.Feedback type="invalid">{error.message}</Form.Control.Feedback>)
+          }
+          {
+            this.props.type === 'password' && <Form.Text muted>Passwortvorschlag: {this.suggestedPassword}</Form.Text>
+          }
         </FloatingLabel>
       )
     }
