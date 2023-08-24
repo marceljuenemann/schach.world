@@ -1,19 +1,21 @@
-import { Context } from "../core/context"
+import { NsvApi } from "../core/api";
 import { Division } from "./types"
 
-export class LeagueApi {
-  constructor(private context: Context) {}
+export class LeagueApi extends NsvApi {
 
   /**
    * Fetches all pairings of the league.
    */
   async fetchPairings(): Promise<Array<Division>> {
-    return this.fetchApi('unstable/pairings/')
+    return this.request('unstable/pairings/')
   }
 
-  private async fetchApi(endpoint: string): Promise<any> {
-    const response = await fetch(this.baseUrl() + 'api/' + endpoint)
-    return await response.json()
+  async updateDivisionSortOrder(divisionIds: Array<number>): Promise<void> {
+    return this.request('divisions/order/', 'PUT', {divisionIds})
+  }
+
+  protected async request<T>(url: string, method: string = 'GET', body: any = null): Promise<T> {
+    return super.request(this.baseUrl() + 'api/' + url, method, body)
   }
   
   /**

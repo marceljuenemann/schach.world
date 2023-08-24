@@ -58,16 +58,16 @@
   // Ausgabe
   echo "<form action='".SED_GenerateFormAction()."' method='get'><div>";
 
-  // REACT
-  echo "<fieldset class='sed_admin_desk'><legend>EXPERIMENTAL</legend>";
-  echo "<div data-nsv-component='PairingList' data-nsv-division='$admin[staffel]'></div>";
-  echo "</fieldset><br><br>";
-
   // Meine Staffel
   if ( $admin ['usertype'] == "s" )
     AdminEchoGroup ( 4 );
 
-  // Spielauflistung
+  // Spielauflistung (React component)
+  echo "<fieldset class='sed_admin_desk'><legend>Paarungseingabe</legend>";
+  echo "<div data-nsv-component='PairingList' data-nsv-division='$admin[staffel]'></div>";
+  echo "</fieldset><br><br>";
+  /*
+  TODO: Delete the old code paths once the new season started successfully.
   {
     // Vorbereitung
     echo "<a name='peingabe'></a><fieldset class='sed_admin_desk'><legend>Paarungseingabe</legend>";
@@ -159,8 +159,8 @@
 
     --></script>
     <?
-
   }
+  */
 
   // Staffelverwaltung
   if ( $admin ['usertype'] == "t" )
@@ -182,8 +182,8 @@
 
     // Neue Staffel
     echo "<tr><td colspan='2'>";
-    echo "<a data-nsv-dialog='CreateDivision' style='cursor: pointer; text-decoration:none'><img src='$globals[systemicons]desk_neu.png' alt='Neue Staffel' class='sed_admin_icon' />Neue Staffel</a>";
-    echo "<a data-nsv-dialog='SortDivisions' style='cursor: pointer; text-decoration:none'><img src='$globals[systemicons]timestamp.png' alt='Staffeln umsortieren' class='sed_admin_icon' />Staffeln umsortieren</a>";
+    echo "<a data-nsv-dialog='CreateDivision' data-nsv-on-save='reload' style='cursor: pointer; text-decoration:none'><img src='$globals[systemicons]desk_neu.png' alt='Neue Staffel' class='sed_admin_icon' />Neue Staffel</a>";
+    echo "<a data-nsv-dialog='SortDivisions' data-nsv-on-save='reload' style='cursor: pointer; text-decoration:none'><img src='$globals[systemicons]timestamp.png' alt='Staffeln umsortieren' class='sed_admin_icon' />Staffeln umsortieren</a>";
     echo "</td></tr>";
 
     // Fieldset

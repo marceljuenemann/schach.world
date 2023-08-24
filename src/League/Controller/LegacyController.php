@@ -8,11 +8,10 @@ use Nsv\League\Core\Encoding;
 use Nsv\League\Repository\DivisionRepository;
 use Nsv\League\Repository\PlayerRepository;
 use Nsv\League\Repository\TeamRepository;
+use Nsv\WebApp\Core\NsvJs;
 use Nsv\WebApp\Core\WordPress\Auth as WordPressAuth;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Session\Session;
-use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -24,7 +23,8 @@ class LegacyController extends AbstractLeagueController {
   function __construct(
     private DivisionRepository $divisionRepository,
     private PlayerRepository $playerRepository,
-    private TeamRepository $teamRepository
+    private TeamRepository $teamRepository,
+    private NsvJs $nsvJs
   ) {}
 
   #[Route('ligen/{league}/', name: 'legacy')]
@@ -39,6 +39,11 @@ class LegacyController extends AbstractLeagueController {
       if ($response = $this->checkForRedirect($globals['mod'])) {
         return $response;
       } else if ($globals['mod'] === 'staffelleiter') {
+        // Handle legacy admin system.
+        if ($_GET['admin'] === 'login') {
+          $auth->legacyLogin($this->league, $_POST['benutzer'], $_POST['passwort']);
+          return $this->redirect($this->league->uri() . "?admin=desktop--");
+        }
         $this->legacyAdminSystem($auth);
       } else {
         // Existiert es überhaupt?
@@ -71,8 +76,6 @@ class LegacyController extends AbstractLeagueController {
     // Output the footer.
     if ( function_exists ( "SED_GUIclose" ) ) {
       SED_GUIclose ();
-      // TODO: production path.
-      echo "<script src='http://localhost:3000/static/js/bundle.js'></script>";
     }
     $body = ob_get_clean();
     $response = new Response($body);
@@ -120,10 +123,6 @@ class LegacyController extends AbstractLeagueController {
   }
 
   private function legacyAdminSystem(Auth $auth) {
-    if ($_GET['admin'] === 'login') {
-      $auth->legacyLogin($this->league, $_POST['benutzer'], $_POST['passwort']);
-      $_GET['admin'] = 'desktop--';
-    }
     $division = $auth->checkManagerAccess($this->league);
     $user = $division ? $division->manager : $this->league->manager;
 
@@ -147,5 +146,8 @@ class LegacyController extends AbstractLeagueController {
       echo $admin['toptxt'];
       require_once ( $globals['basedir'] . "/_module/staffelleiter/" . $admin['pageid'] . ".php" );
     }
+
+    // Enable integrating React components into the legacy admin system.
+    echo "<script src='{$this->nsvJs->scriptUrl()}'></script>";
   }
 }

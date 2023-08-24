@@ -1,16 +1,18 @@
-import { Button, Modal } from "react-bootstrap";
+import { Alert, Button, Modal } from "react-bootstrap";
 import { NsvComponent } from "./component";
 import { Context } from "./context";
 import { ReactNode } from "react";
+import { ApiError } from "./api";
 
 export class DialogContext extends Context {
+  // TODO: replace any with T.
   public onClose: (value: any) => void = () => {}
 }
 
 /**
  * Abstract dialog component using a DialogContext and showing a Close button. 
  */
-export abstract class NsvDialog<S = {title: string}, P = {context: DialogContext}> extends NsvComponent<S & {title: string}, P & {context: DialogContext}> {
+export abstract class NsvDialog<S = {}, P = {}> extends NsvComponent<S & {title: string}, P & {context: DialogContext}> {
 
   close(value: any = null): void {
     this.props.context.onClose(value) 
@@ -43,28 +45,42 @@ export abstract class NsvDialog<S = {title: string}, P = {context: DialogContext
           { this.renderBody() }
         </Modal.Body>
         { this.renderFooter() }
-      </Modal>      
+      </Modal>
     );
   }
+}
+
+export interface NsvSaveDialogState {
+  saveError?: ApiError
 }
 
 /**
  * Abstract dialog with Save and Cancel buttons. 
  */
-export abstract class NsvSaveDialog<S = {title: string}, T = boolean, P = {context: DialogContext}> extends NsvDialog<S, P> {
+export abstract class NsvSaveDialog<S extends NsvSaveDialogState = NsvSaveDialogState, T = void, P = {}> extends NsvDialog<S, P> {
 
-  protected abstract save(): T
+  protected abstract save(): Promise<T>
 
   private onSave() {
-    const result = this.save()
-    if (result) {
-      this.close(result)
-    }
+    this.save().then(
+      result => {
+        this.close(result)
+        if (this.attribute('on-save') === 'reload') {
+          this.props.context.window.location.reload()
+        } 
+      },
+      error => this.setState({saveError: ApiError.from(error)})
+    )
   }
 
   protected override renderFooter(): ReactNode {
     return (
       <Modal.Footer>
+        {
+          this.state.saveError && this.state.saveError.messages.map((message, i) => {
+            return <Alert key={i} variant='danger' className="w-100">{ message }</Alert>
+          })
+        }
         <Button variant="secondary" onClick={() => this.close()}>Abbrechen</Button>
         <Button variant="primary" onClick={() => this.onSave()}>Speichern</Button>
       </Modal.Footer>
