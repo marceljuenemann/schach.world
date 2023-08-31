@@ -24,6 +24,7 @@ Array
                                                     [name] => Team
                                                     [zps] => 0
                                                     [uri] => /ligen/test/m/35/
+                                                    [apiUri] => /ligen/test/api/teams/35/
                                                 )
 
                                             [team2] => Nsv\League\Api\Model\Team Object
@@ -32,6 +33,7 @@ Array
                                                     [name] => Team 2
                                                     [zps] => 0
                                                     [uri] => /ligen/test/m/36/
+                                                    [apiUri] => /ligen/test/api/teams/36/
                                                 )
 
                                             [host] => 
@@ -50,6 +52,7 @@ Array
                                                     [name] => Team 2
                                                     [zps] => 0
                                                     [uri] => /ligen/test/m/36/
+                                                    [apiUri] => /ligen/test/api/teams/36/
                                                 )
 
                                             [team2] => Nsv\League\Api\Model\Team Object
@@ -58,6 +61,7 @@ Array
                                                     [name] => Team
                                                     [zps] => 0
                                                     [uri] => /ligen/test/m/35/
+                                                    [apiUri] => /ligen/test/api/teams/35/
                                                 )
 
                                             [host] => 

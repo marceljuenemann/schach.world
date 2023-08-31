@@ -68,10 +68,13 @@ class MainController extends AbstractLeagueController {
     ]);
   }
 
-  #[Route('m/{teamId}/debug/', name: 'team_debug')]
-  public function team_debug(TeamService $service, int $teamId): Response {
+  #[Route('api/teams/{teamId}/', name: 'api_team')]
+  public function team_api(TeamService $service, int $teamId): Response {
     $team = $service->team($this->league, $teamId);
-    return $this->debugResponse($team);
+    $team->captain->mail = '** REDACTED **';
+    $team->captain->phone = '** REDACTED **';
+    $team->captain->phone2 = '** REDACTED **';
+    return $this->apiResponse($team);
   }
 
   #[Route('s/{playerId}/', name: 'player')]
@@ -82,7 +85,6 @@ class MainController extends AbstractLeagueController {
 
   #[Route('s/{playerId}/debug/', name: 'player_debug')]
   public function player_debug(PlayerService $service, int $playerId): Response {
-    // TODO: If we expose this as API, hide the eMail and phone
     $player = $service->player($this->league, $playerId);
     return $this->debugResponse($player);
   }

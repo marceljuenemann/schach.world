@@ -18,13 +18,20 @@
   require_once ( "cache.inc.php" ); //wird eh gebraucht
 
     global $admin;
-    $admin = array ();
+
+    // -----------------------------------------------------------------------
+    // SYMFONY completed login?
+    // -----------------------------------------------------------------------
+
+    if (isset($admin['userid'])) {
+      // Do nothing.
+    }
 
     // -----------------------------------------------------------------------
     // LOGIN
     // -----------------------------------------------------------------------
 
-    if ( $_GET ['admin'] == "login" )
+    else if ( $_GET ['admin'] == "login" )
     {
       // Einlogstring parsen
       $admin ['usertype'] = $_POST ['benutzer'][0];

@@ -23,6 +23,7 @@
     global $globals;
     global $admin;
     global $desktopRowLength;
+    global $prefs;
 
     // Fieldset ausgeben und Tabelle starten
     echo "<fieldset class='sed_admin_desk'><legend>" .$admin ['groups'][$id][1]. "</legend><table class='sed_admin_desk' cellspacing='0' cellpadding='0'>";
@@ -61,7 +62,12 @@
   if ( $admin ['usertype'] == "s" )
     AdminEchoGroup ( 4 );
 
-  // Spielauflistung
+  // Spielauflistung (React component)
+  echo "<fieldset class='sed_admin_desk'><legend>Paarungseingabe</legend>";
+  echo "<div data-nsv-component='PairingList' data-nsv-division='$admin[staffel]'></div>";
+  echo "</fieldset><br><br>";
+  /*
+  TODO: Delete the old code paths once the new season started successfully.
   {
     // Vorbereitung
     echo "<a name='peingabe'></a><fieldset class='sed_admin_desk'><legend>Paarungseingabe</legend>";
@@ -113,7 +119,7 @@
           var admin = document.getElementById ( "pl_hidden" ).value;
           var staffel = document.getElementById ( "pl_staffel" ).value;
           var runde = document.getElementById ( "pl_runde" ).value;
-          var url = '<? echo "$globals[httppath]index.php?tid=$globals[tid]&type=GetPaarungsauflistung"; ?>' + "&admin=" + admin + "&staffel=" + staffel + "&runde=" + runde;
+          var url = '<? echo "$globals[httppath]$prefs[directory]/?type=GetPaarungsauflistung"; ?>' + "&admin=" + admin + "&staffel=" + staffel + "&runde=" + runde;
 
           // Ajax initialisieren
           var req = null;
@@ -153,8 +159,8 @@
 
     --></script>
     <?
-
   }
+  */
 
   // Staffelverwaltung
   if ( $admin ['usertype'] == "t" )
@@ -175,7 +181,10 @@
     }
 
     // Neue Staffel
-    echo "<tr><td colspan='2'><a href='?admin=turnstne-$admin[userid]-$admin[session]' style='text-decoration:none'><img src='$globals[systemicons]desk_neu.png' alt='Neue Staffel' class='sed_admin_icon' />Neue Staffel</a></td></tr>";
+    echo "<tr><td colspan='2'>";
+    echo "<a data-nsv-dialog='CreateDivision' data-nsv-on-save='reload' style='cursor: pointer; text-decoration:none'><img src='$globals[systemicons]desk_neu.png' alt='Neue Staffel' class='sed_admin_icon' />Neue Staffel</a>";
+    echo "<a data-nsv-dialog='SortDivisions' data-nsv-on-save='reload' style='cursor: pointer; text-decoration:none'><img src='$globals[systemicons]timestamp.png' alt='Staffeln umsortieren' class='sed_admin_icon' />Staffeln umsortieren</a>";
+    echo "</td></tr>";
 
     // Fieldset
     echo "</table></fieldset><br /><br />";

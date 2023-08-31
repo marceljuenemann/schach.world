@@ -60,7 +60,7 @@ abstract class Page {
     if ($detailColumns) {
       $id = 'nsv-details-toggle-' . ++$idCounter;
       ?>
-        <div class="form-check form-switch d-sm-none mb-2">
+        <div class="form-check form-switch d-sm-none d-print-none mb-2">
           <input type="checkbox" class="form-check-input" id="<?=$id?>" onclick="jQuery(this).parent().parent().toggleClass('nsv-details-show')">
           <label class="form-check-label" for="<?=$id?>">Details anzeigen</label>
         </div>
@@ -98,15 +98,15 @@ abstract class Page {
     foreach ($options as $option) {
       $oid = sanitize_title($option);
       ?> 
-        <div class="card">
-          <div class="card-header" id="heading-<?=$oid?>">
+        <div class="accordion-item">
+          <div class="accordion-header" id="heading-<?=$oid?>">
             <h2 class="mb-0">
-              <button class="btn btn-block text-start" type="button" data-toggle="collapse" data-target="#collapse-<?=$oid?>" aria-expanded="true" aria-controls="collapse-<?=$oid?>">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-<?=$oid?>" aria-expanded="true" aria-controls="collapse-<?=$oid?>">
                 <b><?=$option?></b>
               </button>
             </h2> 
           </div>
-          <div id="collapse-<?=$oid?>" class="collapse <?=$show_option ? 'show' : '';?>" aria-labelledby="heading-<?=$oid?>" data-parent="#nsv-accordion-<?=$id?>">
+          <div id="collapse-<?=$oid?>" class="accordion-collapse collapse <?=$show_option ? 'show' : '';?>" aria-labelledby="heading-<?=$oid?>" data-bs-parent="#nsv-accordion-<?=$id?>">
             <div class="card-body">
               <?php $content_callback($option) ?>
             </div>

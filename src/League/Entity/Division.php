@@ -29,6 +29,16 @@ class Division
     #[ORM\Column(name: "sortid")]
     private ?int $sortId;
 
+    /**
+     * The legacy user of the league manager.
+     * 
+     * TODO: Use WordPress user system.
+     * TODO: Allow multiple users to manage a league.
+     */
+    #[ORM\OneToOne(targetEntity: LegacyUser::class)]
+    #[ORM\JoinColumn(name: 'leiter', referencedColumnName: 'id')]
+    private $manager;
+
     #[ORM\OneToMany(targetEntity: Pairing::class, mappedBy: 'division')]   
     #[ORM\OrderBy(Pairing::ORDERING)]
     private $pairings;
