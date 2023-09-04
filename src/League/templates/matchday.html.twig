@@ -7,76 +7,82 @@
 
 {{ nsv.tabNavigation(tabs) }}
 
+<h4 class="mt-4">
+  Runde {{ matchDay.round }} 
+  {% if matchDay.date %}
+    &ndash; {{ matchDay.date|date('d.m.Y') }}
+  {% endif %}
+</h4>
+
 {# RESULTS #}
-<div class="overflow-auto">
-  {# TODO: only if there are any games #}
-  {# TODO: further down #}
-  <div class='nsv-table sed-ergebnisse mb-4'>
-    {# TODO: anchor #}
-    {% for pairing in matchDay.pairings %}
-      <div class='nsv-table-header d-flex mt-4 text-nowrap'>
-        <div class='sed-mannschaft text-start'>{{ nsv.link(pairing.team1) }}</div>
-        <div class='text-center'>&nbsp;{{ pairing.result|default(':') }}&nbsp;</div>
-        <div class='sed-mannschaft text-end'>{{ nsv.link(pairing.team2) }}</div>
-      </div>
+{% if matchDay.pairings %}
+  <div class="overflow-auto">
+    <div class='nsv-table sed-ergebnisse mb-4'>
+      {# TODO: anchor #}
+      {% for pairing in matchDay.pairings %}
+        <div class='nsv-table-header d-flex text-nowrap {{ loop.first ? 'mt-2' : 'mt-4' }}'>
+          <div class='sed-mannschaft text-start'>{{ nsv.link(pairing.team1) }}</div>
+          <div class='text-center'>&nbsp;{{ pairing.result|default(':') }}&nbsp;</div>
+          <div class='sed-mannschaft text-end'>{{ nsv.link(pairing.team2) }}</div>
+        </div>
 
-      {% if pairing.wasBye %}
-        <div class='nsv-table-cell text-center'>(kampflos)</div>
-      {% elseif pairing.games|default(false) %}
-        {% for game in pairing.games %}
-          <div class='d-flex'>
-            {# TODO: passnr #}
-            {#}
-            // Spieler 1
-            if ( $staffel ['showPassNr'] ) {
-              echo "<div class='nsv-table-cell sed-passnr d-none d-sm-block'>".$spielerpaarung["s1pass"]."</div>";
-            }
-            #}
-            <div class='nsv-table-cell sed-spieler sed-spieler1'>
-              {% if game.player1 %}
-                <div class='sed-name'>{{ nsv.link(game.player1) }}</div>
-                <div class='sed-dwz nsv-details align-self-end'>{% if game.player1.dwz %}({{ game.player1.dwz }}){% endif %}</div>
-              {% endif %}
-            </div>
-            <div class='nsv-table-cell sed-ergebnis'>
-              {{ game.result1 }} : {{ game.result2 }}
-            </div>
-            <div class='nsv-table-cell sed-spieler sed-spieler2'>
-              {% if game.player2 %}
-                <div class='sed-dwz nsv-details align-self-end'>{% if game.player2.dwz %}({{ game.player2.dwz }}){% endif %}</div>
-                <div class='sed-name'>{{ nsv.link(game.player2) }}</div>
-              {% endif %}
-            </div>
+        {% if pairing.wasBye %}
+          <div class='nsv-table-cell text-center'>(kampflos)</div>
+        {% elseif pairing.games|default(false) %}
+          {% for game in pairing.games %}
+            <div class='d-flex'>
+              {# TODO: passnr #}
+              {#}
+              // Spieler 1
+              if ( $staffel ['showPassNr'] ) {
+                echo "<div class='nsv-table-cell sed-passnr d-none d-sm-block'>".$spielerpaarung["s1pass"]."</div>";
+              }
+              #}
+              <div class='nsv-table-cell sed-spieler sed-spieler1'>
+                {% if game.player1 %}
+                  <div class='sed-name'>{{ nsv.link(game.player1) }}</div>
+                  <div class='sed-dwz nsv-details align-self-end'>{% if game.player1.dwz %}({{ game.player1.dwz }}){% endif %}</div>
+                {% endif %}
+              </div>
+              <div class='nsv-table-cell sed-ergebnis'>
+                {{ game.result1 }} : {{ game.result2 }}
+              </div>
+              <div class='nsv-table-cell sed-spieler sed-spieler2'>
+                {% if game.player2 %}
+                  <div class='sed-dwz nsv-details align-self-end'>{% if game.player2.dwz %}({{ game.player2.dwz }}){% endif %}</div>
+                  <div class='sed-name'>{{ nsv.link(game.player2) }}</div>
+                {% endif %}
+              </div>
 
-            {#if ( $staffel ['showPassNr'] ) {
-              echo "<div class='nsv-table-cell sed-passnr d-none d-sm-block'>".$spielerpaarung["s2pass"]."</div>";
-            }
-            #}
+              {#if ( $staffel ['showPassNr'] ) {
+                echo "<div class='nsv-table-cell sed-passnr d-none d-sm-block'>".$spielerpaarung["s2pass"]."</div>";
+              }
+              #}
 
-          </div>
-        {% endfor %}
-      {% else %}
-        {% if pairing.wasMoved %}
-          {% if pairing.moveDate %}
-            <div class='nsv-table-cell text-center'>Verlegt auf den {{ pairing.moveDate|date('d.m.Y') }}</div>
-          {% else %}
-            <div class='nsv-table-cell text-center'>Spiel verlegt</div>
+            </div>
+          {% endfor %}
+        {% else %}
+          {% if pairing.wasMoved %}
+            {% if pairing.moveDate %}
+              <div class='nsv-table-cell text-center'>Verlegt auf den {{ pairing.moveDate|date('d.m.Y') }}</div>
+            {% else %}
+              <div class='nsv-table-cell text-center'>Spiel verlegt</div>
+            {% endif %}
+          {% endif %}
+          {% if pairing.host %}
+            <div class='nsv-table-cell text-center'>Ausrichter: {{ nsv.link(pairing.host) }}</div>
           {% endif %}
         {% endif %}
-        {% if pairing.host %}
-          <div class='nsv-table-cell text-center'>Ausrichter: {{ nsv.link(pairing.host) }}</div>
+
+        {% if pairing.comment %}
+          <p class="fst-italic mt-2">{{ pairing.comment }}</p>
         {% endif %}
-      {% endif %}
-
-      {% if pairing.comment %}
-        <p class="fst-italic mt-2">{{ pairing.comment }}</p>
-      {% endif %}
-    {% endfor %}
-
+      {% endfor %}
+    </div>
+    {{ nsv.detailsToggle('DWZ anzeigen') }}
   </div>
-  {{ nsv.detailsToggle('DWZ anzeigen') }}
+{% endif %}
 
-</div>
 
 {% endblock %}
 
