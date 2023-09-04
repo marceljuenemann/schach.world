@@ -6,6 +6,7 @@ use Nsv\League\Api\Service\MatchDayService;
 use Nsv\League\Api\Service\PlayerService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Api\Service\TeamService;
+use Nsv\League\Entity\Round;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapQueryParameter;
 use Symfony\Component\Routing\Annotation\Route;
@@ -92,7 +93,10 @@ class MainController extends AbstractLeagueController {
   #[Route('{division}/spielplan/', name: 'schedule')]
   public function schedule(ScheduleService $service): Response {
     $matchDays = $service->matchDays($this->division);
-    return $this->renderWithLegacySystem('schedule.html.twig', ['matchDays' => $matchDays]);
+    return $this->renderWithLegacySystem('schedule.html.twig', [
+      'matchDays' => $matchDays,
+      'tabs' => $this->divisionTabs('schedule')
+    ]);
   }
 
   #[Route('{division}/spielplan/debug/', name: 'schedule_debug')]
@@ -106,7 +110,10 @@ class MainController extends AbstractLeagueController {
   #[Route('{division}/{round}/', name: 'matchday' /*, requirements: ['round' => '/\d+/'] */)]
   public function matchday(int $round, MatchDayService $service): Response {
     $matchDay = $service->matchDay($this->division, $round);
-    return $this->renderWithLegacySystem('matchday.html.twig', ['matchDay' => $matchDay]);
+    return $this->renderWithLegacySystem('matchday.html.twig', [
+      'matchDay' => $matchDay,
+      'tabs' => $this->divisionTabs($round)
+    ]);
   }
   
   // TODO: round optional
@@ -115,4 +122,30 @@ class MainController extends AbstractLeagueController {
     $matchDay = $service->matchDay($this->division, $round);
     return $this->debugResponse($matchDay);
   }
+
+  /**
+   * Returns the tab navigation configuration for division pages.
+   */
+  private function divisionTabs(mixed $active): array {
+    $tabs = array_map(function(Round $round) use ($active) {
+      return [
+        'label' => 'R' . $round->round,
+        'uri' => "../{$round->round}/",
+        'active' => $active === $round->round
+      ];
+    }, $this->division->rounds());
+    $tabs [] = [
+      'label' => 'Spielplan',
+      'uri' => $this->division->scheduleUri(),
+      'active' => $active === 'schedule'
+    ];
+    $tabs[] = [
+      'label' => 'Statistik',
+      'uri' => $this->division->statsUri(),
+      'active' => $active === 'stats'
+    ];
+    return $tabs;
+  }
+
 }
+ 

@@ -1,8 +1,11 @@
 {% extends '@league/legacy-layout.html.twig' %}
 {% import "@league/macros.html.twig" as macros %}
+{% import "macros.html.twig" as nsv %}
 {% set title = division.name %}
 
 {% block content %}
+{{ nsv.tabNavigation(tabs) }}
+
 <div class="nsv-table">
   {% for matchDay in matchDays %}
     <h4 class="mt-4"><a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag &ndash; {{matchDay.date|date('d.m.Y')}}</a></h4>

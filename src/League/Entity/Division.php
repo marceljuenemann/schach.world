@@ -63,9 +63,17 @@ class Division
       return $dates;
     }
 
+    // TODO: Use Rounds instead of Dates everywhere possible.
+    public function rounds(): array {
+      return array_map(function(Date $date) {
+        return new Round($this, $date->round, $date->date);
+      }, $this->dates());
+    }
+
     /**
      * Returns the date for a specific round, if one is configured.
      */
+    // TODO: Use rounds() instead
     // TODO: Unit test.
     public function dateOfRound(int $round): string|null {
       // Note: Dates are ordered by division, so dates for the entire tournament come last.
@@ -80,6 +88,7 @@ class Division
     /**
      * Yields all rounds that happen on the given date.
      */
+    // TODO: Use rounds() instead
     public function roundsOnDate(string $date) {
       foreach ($this->dates() as $matchDate) {
         if ($matchDate->date == $date) {

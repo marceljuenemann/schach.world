@@ -12,4 +12,8 @@ class Round
     public readonly int $round,
     public readonly ?string $date
   ) {}
+
+  function uri(): string {
+    return $this->division->matchDayUri($this->round);
+  }
 }

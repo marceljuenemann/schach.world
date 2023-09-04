@@ -47,3 +47,26 @@
     <label class="form-check-label" for="{{ toggle_id }}">{{ title }}</label>
   </div>
 {% endmacro %}
+
+{# Renders a tab navigation with support for dropdown menus (one level). #}
+{% macro tabNavigation(tabs) %}
+  <ul class="nav nav-tabs mt-4 d-print-none">
+    {% for tab in tabs %}
+      <li class='nav-item'>
+        <a class='nav-link {{ tab.active|default(false) ? 'active' : '' }} {{ tab.children|default(false) ? 'dropdown-toggle' : '' }}'
+          {% if tab.children|default(false) %}data-bs-toggle="dropdown" role="button" aria-expanded="false"{% endif %}
+          href='{{ tab.uri }}'
+        >
+          {{ tab.label }}
+        </a>
+        {% if tab.children|default(false) %}
+          <ul class="dropdown-menu">
+            {% for item in tab.children %}
+              <li><a class="dropdown-item {{ item.active|default(false) ? 'active' : ''}}" href="{{ item.uri }}">{{ item.label }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}

@@ -5,15 +5,7 @@
 
 {% block content %}
 
-<ul class="nav nav-tabs mt-4 d-print-none">
-  <li class='nav-item'>
-    <a class='nav-link active' href='?'>
-      Runde {{ matchDay.round }} &nbsp;&ndash;&nbsp; {{ matchDay.date|date('d.m.') }}
-    </a>
-  </li>
-  <li class="nav-item"><a class="nav-link" href="{{ division.scheduleUri }}">Spielplan</a></li>
-  <li class="nav-item"><a class="nav-link" href="{{ division.statsUri }}">Statistik</a></li>
-</ul>
+{{ nsv.tabNavigation(tabs) }}
 
 {# RESULTS #}
 <div class="overflow-auto">
