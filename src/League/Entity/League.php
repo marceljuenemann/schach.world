@@ -54,6 +54,12 @@ class League
   #[ORM\Column(name: 'spielErsatzmannschaft')]
   private int $configSubstituteTeams = 0;
 
+  /**
+   * Whether to show player numbers in the UI.
+   */
+  #[ORM\Column(name: 'showPassNr')]
+  private bool $configPlayerNumbers = true;
+
   #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
   #[ORM\OrderBy(["sortId" => "ASC", "id" => "ASC"])]
   private $divisions;

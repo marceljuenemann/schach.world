@@ -18,8 +18,12 @@
 {% if matchDay.pairings %}
   <div class="overflow-auto">
     <div class='nsv-table sed-ergebnisse mb-4'>
-      {# TODO: anchor #}
       {% for pairing in matchDay.pairings %}
+        {# Anchors for deeplinking #}
+        <a name="p{{ pairing.team1.id }}x{{ pairing.team2.id }}" class="anchor"></a>
+        <a name="p{{ pairing.team2.id }}x{{ pairing.team1.id }}" class="anchor"></a>
+
+        {# Header with team names and result #}
         <div class='nsv-table-header d-flex text-nowrap {{ loop.first ? 'mt-2' : 'mt-4' }}'>
           <div class='sed-mannschaft text-start'>{{ nsv.link(pairing.team1) }}</div>
           <div class='text-center'>&nbsp;{{ pairing.result|default(':') }}&nbsp;</div>
@@ -29,15 +33,13 @@
         {% if pairing.wasBye %}
           <div class='nsv-table-cell text-center'>(kampflos)</div>
         {% elseif pairing.games|default(false) %}
+          {# Games #}
           {% for game in pairing.games %}
             <div class='d-flex'>
-              {# TODO: passnr #}
-              {#}
-              // Spieler 1
-              if ( $staffel ['showPassNr'] ) {
-                echo "<div class='nsv-table-cell sed-passnr d-none d-sm-block'>".$spielerpaarung["s1pass"]."</div>";
-              }
-              #}
+              {# TODO: Show player number on mobile as well (if switched on) #}
+              {% if division.config('playerNumbers') %}
+                <div class='nsv-table-cell sed-passnr d-none d-sm-block'>{{ game.player1.number|default('') }}</div>
+              {% endif %}
               <div class='nsv-table-cell sed-spieler sed-spieler1'>
                 {% if game.player1 %}
                   <div class='sed-name'>{{ nsv.link(game.player1) }}</div>
@@ -53,12 +55,9 @@
                   <div class='sed-name'>{{ nsv.link(game.player2) }}</div>
                 {% endif %}
               </div>
-
-              {#if ( $staffel ['showPassNr'] ) {
-                echo "<div class='nsv-table-cell sed-passnr d-none d-sm-block'>".$spielerpaarung["s2pass"]."</div>";
-              }
-              #}
-
+              {% if division.config('playerNumbers') %}
+                <div class='nsv-table-cell sed-passnr d-none d-sm-block'>{{ game.player2.number|default('') }}</div>
+              {% endif %}
             </div>
           {% endfor %}
         {% else %}
@@ -85,24 +84,3 @@
 
 
 {% endblock %}
-
-
-{#
-
-  <?php
-
-  // Paarungen ausgeben
-  for ( $i = 0; $i < count ( $daten ['paarungen'] ); ++$i )
-  {
-    // Anker, um direkt zur Paarung zu kommen
-    $anker1 = "p".$daten ['paarungen'][$i]['mid1']."x".$daten ['paarungen'][$i]['mid2'];
-    $anker2 = "p".$daten ['paarungen'][$i]['mid2']."x".$daten ['paarungen'][$i]['mid1'];
-
-    echo "<a name='$anker1'></a><a name='$anker2'></a>";
-
-    echo "<br>";
-  }
-
-?></div></div></div>
-
-#}

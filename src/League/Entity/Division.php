@@ -39,6 +39,13 @@ class Division
     #[ORM\JoinColumn(name: 'leiter', referencedColumnName: 'id')]
     private $manager;
 
+    /**
+     * Whether to show player numbers in the UI. If set to null, the league-wide
+     * configuration should be used.
+     */
+    #[ORM\Column(name: 'showPassNr')]
+    private bool|null $configPlayerNumbers = null;
+
     #[ORM\OneToMany(targetEntity: Pairing::class, mappedBy: 'division')]   
     #[ORM\OrderBy(Pairing::ORDERING)]
     private $pairings;
@@ -105,6 +112,20 @@ class Division
         }
       }
       return $teams;
+    }
+
+    /**
+     * Returns a config property. If the value is set to null on the division
+     * the setting on the League will be used.
+     */
+    public function config($key): mixed {
+      $key = 'config' . ucfirst($key);
+      $value = $this->$key;
+      if ($value === null) {
+        return $this->league->$key;
+      } else {
+        return $value;
+      }
     }
 
     public function scheduleUri() {
