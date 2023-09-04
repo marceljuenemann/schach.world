@@ -1,0 +1,21 @@
+{% extends '@league/legacy-layout.html.twig' %}
+{% import "@league/macros.html.twig" as macros %}
+{% import "macros.html.twig" as nsv %}
+{% set title = division.name %} 
+
+{% block content %}
+
+  {{ nsv.tabNavigation(tabs) }}
+
+  <h4 class="mt-4">
+    Runde {{ matchDay.round }} 
+    {% if matchDay.date %}
+      &ndash; {{ matchDay.date|date('d.m.Y') }}
+    {% endif %}
+  </h4>
+
+  {% include '@league/matchday/matches.html.twig' %}
+
+  {% include '@league/matchday/ranking.html.twig' %}
+
+{% endblock %}

@@ -39,10 +39,19 @@
   data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{ title }}"
 {% endmacro %}
 
+{# Initializes tooltips. Should only be called from template footers. #}
+{% macro tooltipInit() %}
+  <script type="text/javascript">
+    $(function () {
+      $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
+{% endmacro %}
+
 {# Renders a switch which adds the nsv-details CSS class to the parent element. #}
 {% macro detailsToggle(title) %}
   {% set toggle_id = 'nsv-toggle-' ~ random() %}
-  <div class="form-check form-switch d-sm-none d-print-none mb-1">
+  <div class="form-check form-switch d-sm-none d-print-none mt-1 mb-1">
     <input type="checkbox" class="form-check-input" id="{{ toggle_id }}" onclick="$(this).parent().parent().toggleClass('nsv-details-show')">
     <label class="form-check-label" for="{{ toggle_id }}">{{ title }}</label>
   </div>

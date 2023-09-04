@@ -70,6 +70,7 @@ class Division
       return $dates;
     }
 
+    // TODO: Also show rounds without a date?
     // TODO: Use Rounds instead of Dates everywhere possible.
     public function rounds(): array {
       return array_map(function(Date $date) {

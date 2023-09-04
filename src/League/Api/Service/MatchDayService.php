@@ -15,14 +15,14 @@ class MatchDayService
 {
   function __construct(private PairingRepository $pairingRepository) {}
 
-  public function matchDay(Entity\Division $division, int $round = 0) {
-    // TODO: handle $round == 0
+  public function matchDay(Entity\Division $division, int $round, callable $legacyRanking) {
     $pairings = $this->pairingRepository->findByRound($division, $round);
 
     $model = MatchDay::create($division, $round, $division->dateOfRound($round));
     foreach ($pairings as $pairing) {
       $model->pairings[] = Pairing::fromEntityWithGames($pairing);
     }
+    $model->ranking = $legacyRanking();
 
     return $model;
   }

@@ -109,8 +109,8 @@ class MainController extends AbstractLeagueController {
   // TODO: requirements, otherwise matches schedule and stats
   #[Route('{division}/{round}/', name: 'matchday' /*, requirements: ['round' => '/\d+/'] */)]
   public function matchday(int $round, MatchDayService $service): Response {
-    $matchDay = $service->matchDay($this->division, $round);
-    return $this->renderWithLegacySystem('matchday.html.twig', [
+    $matchDay = $this->matchday_internal($service, $round);
+    return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
       'matchDay' => $matchDay,
       'tabs' => $this->divisionTabs($round)
     ]);
@@ -119,8 +119,17 @@ class MainController extends AbstractLeagueController {
   // TODO: round optional
   #[Route('{division}/{round}/debug', name: 'matchday_debug' /*, requirements: ['round' => '/\d+/'] */)]
   public function matchday_debug(int $round, MatchDayService $service): Response {
-    $matchDay = $service->matchDay($this->division, $round);
-    return $this->debugResponse($matchDay);
+    return $this->debugResponse($this->matchday_internal($service, $round));
+  }
+
+  private function matchday_internal(MatchDayService $service, int $round) {
+    return $service->matchDay($this->division, $round, function() use ($round) {
+      // TODO: Return null if showTabelle is false
+      $this->initializeLegacySystem();
+      $_GET['r'] = $round;
+      require_once('tabelle.inc.php');
+      return Tabelle($this->division->id, $round, true /* TODO: $kreuztabelle = false? */);
+    });
   }
 
   /**

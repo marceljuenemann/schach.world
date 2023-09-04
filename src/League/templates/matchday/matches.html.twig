@@ -1,22 +1,8 @@
-{% extends '@league/legacy-layout.html.twig' %}
-{% import "@league/macros.html.twig" as macros %}
 {% import "macros.html.twig" as nsv %}
-{% set title = division.name %} 
 
-{% block content %}
-
-{{ nsv.tabNavigation(tabs) }}
-
-<h4 class="mt-4">
-  Runde {{ matchDay.round }} 
-  {% if matchDay.date %}
-    &ndash; {{ matchDay.date|date('d.m.Y') }}
-  {% endif %}
-</h4>
-
-{# RESULTS #}
 {% if matchDay.pairings %}
   <div class="overflow-auto">
+    {{ nsv.detailsToggle('DWZ anzeigen') }}
     <div class='nsv-table sed-ergebnisse mb-4'>
       {% for pairing in matchDay.pairings %}
         {# Anchors for deeplinking #}
@@ -78,9 +64,5 @@
         {% endif %}
       {% endfor %}
     </div>
-    {{ nsv.detailsToggle('DWZ anzeigen') }}
   </div>
 {% endif %}
-
-
-{% endblock %}
