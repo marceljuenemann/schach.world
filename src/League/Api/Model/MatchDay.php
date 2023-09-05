@@ -14,19 +14,22 @@ class MatchDay
   public ?string $date;
   public string $uri;
   public string $uriPdf;
+  public string $uriApi;
 
   public array $pairings = array();
   public array|null $ranking = null;
   public string|null $comment = null;
 
+  // TODO: Only allow creation from round object, can move some functions there.
   public static function create(Division $division, int $round, string|null $date = null): MatchDay {
     $result = new MatchDay();
     $result->round = $round;
     $result->date = $date;
     $result->uri = $division->matchDayUri($round);
-    $result->uriPdf = $division->matchDayUri($round, true);
+    $result->uriPdf = $division->matchDayPdfUri($round);
+    $result->uriApi = $division->matchDayApiUri($round);
     return $result;
-  } 
+  }
 
   public static function fromRound(Round $round): MatchDay {
     return self::create($round->division, $round->round, $round->date);

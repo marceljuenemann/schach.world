@@ -7,12 +7,18 @@
 
   {{ nsv.tabNavigation(tabs) }}
 
-  <h4 class="mt-4">
-    Runde {{ matchDay.round }} 
-    {% if matchDay.date %}
-      &ndash; {{ matchDay.date|date('d.m.Y') }}
-    {% endif %}
-  </h4>
+  <div class="d-flex justify-content-between text-nowrap">
+    <h4>
+      Runde {{ matchDay.round }} 
+      {% if matchDay.date %}
+        &ndash; {{ matchDay.date|date('d.m.Y') }}
+      {% endif %}
+    </h4>
+    <div class="ms-2">
+      <a href="{{ matchDay.uriPdf }}"><span class="badge bg-danger">PDF</span></a>
+      <a href="{{ matchDay.uriApi }}"><span class="badge bg-secondary">API</span></a>
+    </div>
+  </div>
 
   {% include '@league/matchday/matches.html.twig' %}
 

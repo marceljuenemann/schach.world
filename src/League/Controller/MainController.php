@@ -116,15 +116,13 @@ class MainController extends AbstractLeagueController {
     ]);
   }
   
-  // TODO: round optional
-  #[Route('{division}/{round}/debug', name: 'matchday_debug' /*, requirements: ['round' => '/\d+/'] */)]
-  public function matchday_debug(int $round, MatchDayService $service): Response {
-    return $this->debugResponse($this->matchday_internal($service, $round));
+  #[Route('api/{division}/{round}/', name: 'api_matchday')]
+  public function matchday_api(int $round, MatchDayService $service): Response {
+    return $this->apiResponse($this->matchday_internal($service, $round));
   }
 
   private function matchday_internal(MatchDayService $service, int $round) {
     return $service->matchDay($this->division, $round, function() use ($round) {
-      // TODO: Return null if showTabelle is false
       $this->initializeLegacySystem();
       $_GET['r'] = $round;
       require_once('tabelle.inc.php');
