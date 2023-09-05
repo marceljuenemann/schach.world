@@ -20,4 +20,9 @@
     {{ macros.pairings(matchDay.pairings) }}
   {% endfor %}
 </div>
+
+{% if not matchDays %}
+  {{ nsv.message('Noch kein Spielplan hinterlegt') }}
+{% endif %}
+
 {% endblock %}

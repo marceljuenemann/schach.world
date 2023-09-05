@@ -59,7 +59,7 @@
 
 {# Renders a tab navigation with support for dropdown menus (one level). #}
 {% macro tabNavigation(tabs) %}
-  <ul class="nav nav-tabs mt-4 d-print-none">
+  <ul class="nav nav-tabs mt-4 mb-4 d-print-none">
     {% for tab in tabs %}
       <li class='nav-item'>
         <a class='nav-link {{ tab.active|default(false) ? 'active' : '' }} {{ tab.children|default(false) ? 'dropdown-toggle' : '' }}'
