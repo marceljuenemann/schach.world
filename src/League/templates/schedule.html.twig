@@ -8,7 +8,15 @@
 
 <div class="nsv-table">
   {% for matchDay in matchDays %}
-    <h4 class="mt-4"><a href="{{matchDay.uri}}">{{matchDay.round}}. Spieltag &ndash; {{matchDay.date|date('d.m.Y')}}</a></h4>
+    <h4 class="mt-4">
+      <a href="{{matchDay.uri}}">
+        {{matchDay.round}}. Spieltag
+        {% if matchDay.date %}
+          &ndash; {{matchDay.date|date('d.m.Y')}}
+        {% endif %}
+      </a>
+    </h4>
+    
     {{ macros.pairings(matchDay.pairings) }}
   {% endfor %}
 </div>
