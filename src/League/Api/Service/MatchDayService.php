@@ -24,6 +24,10 @@ class MatchDayService
     }
     $model->ranking = $legacyRanking();
 
+    // TODO: Process last modified
+    $comment = $division->roundComment($round);
+    $model->comment = $comment ? $comment->text : null;
+
     return $model;
   }
 }

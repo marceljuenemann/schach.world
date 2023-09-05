@@ -18,4 +18,114 @@
 
   {% include '@league/matchday/ranking.html.twig' %}
 
+  {% if matchDay.comment %}
+    <div class="mb-4">
+      <h6>Anmerkungen</h6>
+      <div>{{ matchDay.comment|nl2br }}</div>
+    </div>
+  {% endif %}
+
+
+
+{#
+
+    /////////////////////////////////
+    // Druckversion & Mehr Optionen
+    /////////////////////////////////
+
+    function EchoIcons ( $unten, $daten )
+    {
+        global $globals, $prefs, $rundenzahl;
+        if ( !$unten )
+        {
+            // Erste Zeile: Druckversion  & Mehr Optionen
+            echo "<div class='sed_only_screen d-print-none' style='text-align: right; margin-bottom: 10px'>";
+            echo "&nbsp;&nbsp;&nbsp;<a href='Rundschreiben/$_GET[staffel]/Runde$_GET[r].pdf' target='_blank' style='text-decoration: none; color: #777777;'><img alt='' src='$globals[systemicons]printer.gif' /></a>";
+            echo "&nbsp;&nbsp;&nbsp;<a href='?staffel=$_GET[staffel]&r=spielplan'><img style='border: none' alt='Spielplan' src='$globals[systemicons]spielplan.gif' /></a>";
+            echo "&nbsp;&nbsp;&nbsp;<a href='?staffel=$_GET[staffel]&r=statistik'><img style='border: none' alt='Statistiken' src='$globals[systemicons]statistiken.gif' /></a>";
+            if ( $_GET ['r'] > 1 ) echo "&nbsp;&nbsp;&nbsp;<a href='?staffel=$_GET[staffel]&amp;r=".($_GET ['r']-1)."'><img style='border: none' alt='Vorheriger Spieltag' src='$globals[systemicons]pre.png' /></a>";
+            if ( $_GET ['r'] < $rundenzahl ) echo "&nbsp;&nbsp;&nbsp;<a href='?staffel=$_GET[staffel]&amp;r=".($_GET ['r']+1)."'><img alt='N&auml;chster Spieltag' src='$globals[systemicons]next.png' style='border: none' /></a>";
+          echo "</div>";
+        }
+        else // Icons unten
+        {
+            echo "<div class='sed_only_screen d-print-none'><br /><br />";
+
+            // Icons ausgeben: Vorheriger, Druckversion, Nächster
+            if ( $_GET ['r'] > 1 ) echo "<img style='vertical-align: text-top;' alt='' src='$globals[systemicons]pre.png' /> <a href='?staffel=$_GET[staffel]&amp;r=".($_GET ['r']-1)."' style='text-decoration: none; color: #777777;'>Vorheriger Spieltag</a>&nbsp;&nbsp;&nbsp;";
+            echo "<img style='vertical-align: text-top;' alt='' src='$globals[systemicons]printer.gif' /> <a href='Rundschreiben/$_GET[staffel]/Runde$_GET[r].pdf' target='_blank' style='text-decoration: none; color: #777777;'>Druckversion</a>";
+            if ( $_GET ['r'] < $rundenzahl ) echo "&nbsp;&nbsp;&nbsp;<img alt='' src='$globals[systemicons]next.png' style='vertical-align: text-top;' /> <a href='?staffel=$_GET[staffel]&amp;r=".($_GET ['r']+1)."' style='text-decoration: none; color: #777777;'>N&auml;chster Spieltag</a>";
+
+            // Icons ausgeben: Spielplan, Statistik, Als Textdatei
+            echo "<br /><img style='vertical-align: text-top;' alt='' src='$globals[systemicons]spielplan.gif' /> <a href='?staffel=$_GET[staffel]&r=spielplan' style='text-decoration: none; color: #777777;'>Spielplan</a>";
+            echo "&nbsp;&nbsp;&nbsp;<img style='vertical-align: text-top;' alt='' src='$globals[systemicons]statistiken.gif' /> <a href='?staffel=$_GET[staffel]&r=statistik' style='text-decoration: none; color: #777777;'>Statistiken</a>";
+            echo "&nbsp;&nbsp;&nbsp;<img style='vertical-align: text-top;' alt='' src='$globals[systemicons]txt.gif' /> <a href='?staffel=$_GET[staffel]&r=$_GET[r]&ausgabe=txt' style='text-decoration: none; color: #777777;'>Als Textdatei</a>";
+            if ( $daten ["timestamp"] )
+                echo "&nbsp;&nbsp;&nbsp;<img style='vertical-align: text-top;' alt='' src='$globals[systemicons]timestamp.png' /> <span style='text-decoration: none; color: #777777;'>".date("d.m.Y H:i",($daten["timestamp"]))."</span>";
+
+            echo "</div>";
+        }
+    }
+    EchoIcons ( false, $daten );
+
+
+    /////////////////////////////////
+    // Infos
+    /////////////////////////////////
+    $content = "";
+
+    // Bemerkungen
+    if ( isset ( $daten ['bemerkung'] ) && $daten ['bemerkung'] ){
+        $content .= "<b>Bemerkungen</b><br />";
+        $content .= nl2br ( $daten ['bemerkung'] )."<br />";
+    }
+
+    // Nachmeldungen
+    if ( count ( $daten ['nachmeldungen'] ) && $staffel ['showNachmeldungen'] )
+    {
+        $lastteam = "";
+        foreach ( $daten ['nachmeldungen'] as $nachmeldung ) {
+            // Für jede Mannschaft eine Überschrift ausgeben
+            if ( $nachmeldung ['mannschaft'] != $lastteam )
+            {
+                $lastteam = $nachmeldung ['mannschaft'];
+                $content .= "<BR><B>Nachmeldung $lastteam</B><BR>";
+            }
+
+            $berechtigtAb = $nachmeldung ['berechtigtAb'] == $_GET ['r'] ? "" : " (ab $nachmeldung[berechtigtAb]. Spieltag)";
+
+            // Nun den Spieler ausgeben
+            if ( $staffel ['showPassNr'] )
+                $content .= "$nachmeldung[passnr] ";
+            $content .= "<a href='?spieler=$nachmeldung[id]' style='text-decoration:none'>$nachmeldung[fullname]</a>$berechtigtAb<BR>";
+        }
+    }
+
+    // Spieltag Vorschau
+    if ( $staffel ['showSpieltagvorschau'] && $daten ['vorschau'] )
+    {
+        $content .= "<br /><b><a href='?staffel=$_GET[staffel]&amp;r=".($_GET['r']+1)."' style='color: #000000; text-decoration: none;'>N&auml;chster Spieltag (".$daten ['vorschautermin'].")</a></b><br />";
+        $xtra = "";
+        foreach ( $daten ['vorschau'] as $paarung )
+        {
+            $content .= "$xtra$paarung[mannschaft1] - $paarung[mannschaft2]";
+            $content .= $paarung['verlegung'] ? " ($paarung[verlegung])" : '';
+            $xtra = "<br />";
+        }
+    }
+
+    // Staffelleiter ausgeben
+    $content .= sprintf ( "<br /><br /><b>Staffelleiter</b><br />%s<br />Tel.: %s<br />%s", $daten ['sl_name'], $daten ['sl_telefon'], SED_Email ( $daten ['sl_email'] ) );
+
+    // Ausgabe
+    echo "<div style='text-align: left;'>$content</div>";
+    EchoIcons ( true, $daten );
+?>
+
+
+
+
+
+#}
+
 {% endblock %}

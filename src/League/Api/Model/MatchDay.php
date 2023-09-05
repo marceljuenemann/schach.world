@@ -14,8 +14,10 @@ class MatchDay
   public ?string $date;
   public string $uri;
   public string $uriPdf;
+
   public array $pairings = array();
   public array|null $ranking = null;
+  public string|null $comment = null;
 
   public static function create(Division $division, int $round, string|null $date = null): MatchDay {
     $result = new MatchDay();

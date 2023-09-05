@@ -50,6 +50,9 @@ class Division
     #[ORM\OrderBy(Pairing::ORDERING)]
     private $pairings;
 
+    #[ORM\OneToMany(targetEntity: RoundComment::class, mappedBy: 'division')]   
+    private $roundComments;
+
     public function path() {
       return TextSanitizer::slug($this->name);
     }
@@ -103,6 +106,16 @@ class Division
           yield new Round($this, $matchDate->round, $matchDate->date);
         }
       }
+    }
+
+    public function roundComment(int $round): RoundComment|null {
+      foreach ($this->roundComments as $comment) {
+        if ($comment->round == $round) {
+          // TODO: Create unique index on table.
+          return $comment;
+        }
+      }
+      return null;
     }
 
     public function teams(): array {
