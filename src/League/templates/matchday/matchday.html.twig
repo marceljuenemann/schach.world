@@ -25,6 +25,19 @@
     </div>
   {% endif %}
 
+  <div class="mb-4">
+    <h6>Staffelleitung</h6>
+    <div>
+      {{ division.manager.name }},
+      {# TODO: Delete phone2 field #}
+      {% if division.manager.phone %}
+        Tel. {{ division.manager.phone }},
+      {% endif %}
+      {{ nsv.email(division.manager.mail) }}
+    </div>
+  </div>
+
+
 
 
 {#
