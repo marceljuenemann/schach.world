@@ -60,6 +60,12 @@ class League
   #[ORM\Column(name: 'showPassNr')]
   private bool $configPlayerNumbers = true;
 
+  /**
+   * Whether to show late registrations on the match day page.
+   */
+  #[ORM\Column(name: 'showNachmeldungen')]
+  private bool $configShowLateRegistrations = true;
+
   #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
   #[ORM\OrderBy(["sortId" => "ASC", "id" => "ASC"])]
   private $divisions;

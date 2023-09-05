@@ -46,6 +46,12 @@ class Division
     #[ORM\Column(name: 'showPassNr')]
     private bool|null $configPlayerNumbers = null;
 
+    /**
+     * Whether to show late registrations on the match day page.
+     */
+    #[ORM\Column(name: 'showNachmeldungen')]
+    private bool|null $configShowLateRegistrations = null;
+
     #[ORM\OneToMany(targetEntity: Pairing::class, mappedBy: 'division')]   
     #[ORM\OrderBy(Pairing::ORDERING)]
     private $pairings;

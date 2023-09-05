@@ -19,6 +19,7 @@ class Player
   public ?int $elo;
   public string $gender;
   public bool $isGuest;
+  public ?int $lateRegistrationRound;
   public string $uri;
   public ?string $dsbUri;
 
@@ -51,6 +52,7 @@ class Player
     $result->elo = $player->elo ?: null;
     $result->gender = $player->gender;
     $result->isGuest = $player->isGuest();
+    $result->lateRegistrationRound = $player->lateRegistrationRound ?: null;
     $result->uri = $player->uri();
     $result->dsbUri = $result->zps ? DsbDatabase::playerRecordUri($result->zps) : null;
     return $result;

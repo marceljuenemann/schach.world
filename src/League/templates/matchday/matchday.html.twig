@@ -31,6 +31,21 @@
     </div>
   {% endif %}
 
+  {% for teamId, players in matchDay.lateRegisteredPlayers|default([]) %}
+    <div class="mb-4">
+      <h6>Nachmeldungen {{ league.teamById(teamId).nameWithNumber }}</h6>
+      {% for player in players %}
+        <div>
+          {{ player.number }}
+          {{ nsv.link(player) }}
+          {% if player.lateRegistrationRound != matchDay.round %}
+            (ab Runde {{ player.lateRegistrationRound }})
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+
   <div class="mb-4">
     <h6>Staffelleitung</h6>
     <div>
@@ -42,7 +57,6 @@
       {{ nsv.email(division.manager.mail) }}
     </div>
   </div>
-
 
 
 
@@ -91,34 +105,8 @@
     /////////////////////////////////
     // Infos
     /////////////////////////////////
-    $content = "";
 
-    // Bemerkungen
-    if ( isset ( $daten ['bemerkung'] ) && $daten ['bemerkung'] ){
-        $content .= "<b>Bemerkungen</b><br />";
-        $content .= nl2br ( $daten ['bemerkung'] )."<br />";
-    }
 
-    // Nachmeldungen
-    if ( count ( $daten ['nachmeldungen'] ) && $staffel ['showNachmeldungen'] )
-    {
-        $lastteam = "";
-        foreach ( $daten ['nachmeldungen'] as $nachmeldung ) {
-            // Für jede Mannschaft eine Überschrift ausgeben
-            if ( $nachmeldung ['mannschaft'] != $lastteam )
-            {
-                $lastteam = $nachmeldung ['mannschaft'];
-                $content .= "<BR><B>Nachmeldung $lastteam</B><BR>";
-            }
-
-            $berechtigtAb = $nachmeldung ['berechtigtAb'] == $_GET ['r'] ? "" : " (ab $nachmeldung[berechtigtAb]. Spieltag)";
-
-            // Nun den Spieler ausgeben
-            if ( $staffel ['showPassNr'] )
-                $content .= "$nachmeldung[passnr] ";
-            $content .= "<a href='?spieler=$nachmeldung[id]' style='text-decoration:none'>$nachmeldung[fullname]</a>$berechtigtAb<BR>";
-        }
-    }
 
     // Spieltag Vorschau
     if ( $staffel ['showSpieltagvorschau'] && $daten ['vorschau'] )
@@ -132,13 +120,6 @@
             $xtra = "<br />";
         }
     }
-
-    // Staffelleiter ausgeben
-    $content .= sprintf ( "<br /><br /><b>Staffelleiter</b><br />%s<br />Tel.: %s<br />%s", $daten ['sl_name'], $daten ['sl_telefon'], SED_Email ( $daten ['sl_email'] ) );
-
-    // Ausgabe
-    echo "<div style='text-align: left;'>$content</div>";
-    EchoIcons ( true, $daten );
 ?>
 
 
