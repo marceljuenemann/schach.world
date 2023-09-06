@@ -34,12 +34,7 @@ class MainController extends AbstractLeagueController {
 
     $today = date('Y-m-d');
     $dateToShow = $date ?: $service->closestDate($allDates, $today);
-    $matches = $service->matchesByDate($this->league, $dateToShow);
-
-    // Show at most three future dates and at most five tabs in total.
-    $pos = array_search($dateToShow, $allDates);
-    $tabs = array_slice($allDates, 0, $pos + 1 + self::HOME_NEXT_DATES_COUNT);
-    $tabs = array_slice($tabs, max(count($tabs) - self::HOME_MAX_DATES_COUNT, 0));
+    $matches = $service->matchesByDate($this->league, $dateToShow);  // TODO: ...ForDate
 
     $hasMatches = false;
     foreach ($matches as $division) {
@@ -50,7 +45,7 @@ class MainController extends AbstractLeagueController {
     }
     
     return $this->renderWithLegacySystem('overview.html.twig', [
-      'tabs' => $tabs,
+      'tabs' => $allDates,
       'activeTab' => $dateToShow,
       'matches' => $matches,
       'hasMatches' => $hasMatches
