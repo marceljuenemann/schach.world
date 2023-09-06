@@ -25,13 +25,20 @@ class MatchDayService
     $pairings = $this->pairingRepository->findByRound($division, $round);
     foreach ($pairings as $pairing) {
       $model->pairings[] = Pairing::fromEntityWithGames($pairing);
+      if (!isset($model->lastModified) || $pairing->lastModified > $model->lastModified) {
+        $model->lastModified = $pairing->lastModified;
+      }
     }
 
     $model->ranking = $legacyRanking();
 
-    // TODO: Process last modified
     $comment = $division->roundComment($round);
-    $model->comment = $comment ? $comment->text : null;
+    if ($comment) {
+      $model->comment = $comment->text;
+      if (!isset($model->lastModified) || $comment->lastModified > $model->lastModified) {
+        $model->lastModified = $comment->lastModified;
+      }
+    }
 
     if ($division->config('showLateRegistrations')) {
       foreach ($this->playerRepository->findLateRegistrations($division, $round, $round + 1) as $player) {

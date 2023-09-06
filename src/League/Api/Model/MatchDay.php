@@ -21,6 +21,7 @@ class MatchDay
   public ?string $comment;
   public ?array $lateRegisteredPlayers;
   public ?MatchDay $nextMatchDay;
+  public ?string $lastModified;
 
   // TODO: Only allow creation from round object, can move some functions there.
   public static function create(Division $division, int $round, string|null $date = null): MatchDay {
