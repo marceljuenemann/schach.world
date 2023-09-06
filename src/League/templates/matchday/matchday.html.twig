@@ -33,7 +33,12 @@
 
   {% for teamId, players in matchDay.lateRegisteredPlayers|default([]) %}
     <div class="mb-4">
-      <h6>Nachmeldungen {{ league.teamById(teamId).nameWithNumber }}</h6>
+      <h6>
+        Nachmeldungen
+        <a href="{{ league.teamById(teamId).uri }}">
+          {{ league.teamById(teamId).nameWithNumber }}
+        </a>
+      </h6>
       {% for player in players %}
         <div>
           {{ player.number }}
@@ -45,6 +50,20 @@
       {% endfor %}
     </div>
   {% endfor %}
+
+  {% if matchDay.nextMatchDay|default(false) and matchDay.nextMatchDay.pairings %}
+    <div class="mb-4">
+      <h6><a href="{{ matchDay.nextMatchDay.uri }}">
+        N&auml;chster Spieltag
+        {% if matchDay.nextMatchDay.date %}
+          &ndash; {{matchDay.nextMatchDay.date|date('d.m.Y')}}
+        {% endif %}
+      </a></h6>
+      <div class="nsv-table">
+        {{ macros.pairings(matchDay.nextMatchDay.pairings) }}
+      </div>
+    </div>
+  {% endif %}
 
   <div class="mb-4">
     <h6>Staffelleitung</h6>
@@ -101,30 +120,7 @@
     }
     EchoIcons ( false, $daten );
 
-
-    /////////////////////////////////
-    // Infos
-    /////////////////////////////////
-
-
-
-    // Spieltag Vorschau
-    if ( $staffel ['showSpieltagvorschau'] && $daten ['vorschau'] )
-    {
-        $content .= "<br /><b><a href='?staffel=$_GET[staffel]&amp;r=".($_GET['r']+1)."' style='color: #000000; text-decoration: none;'>N&auml;chster Spieltag (".$daten ['vorschautermin'].")</a></b><br />";
-        $xtra = "";
-        foreach ( $daten ['vorschau'] as $paarung )
-        {
-            $content .= "$xtra$paarung[mannschaft1] - $paarung[mannschaft2]";
-            $content .= $paarung['verlegung'] ? " ($paarung[verlegung])" : '';
-            $xtra = "<br />";
-        }
-    }
 ?>
-
-
-
-
 
 #}
 

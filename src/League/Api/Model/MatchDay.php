@@ -17,9 +17,10 @@ class MatchDay
   public string $uriApi;
 
   public array $pairings = array();
-  public array|null $ranking = null;
-  public string|null $comment = null;
+  public ?array $ranking;
+  public ?string $comment;
   public ?array $lateRegisteredPlayers;
+  public ?MatchDay $nextMatchDay;
 
   // TODO: Only allow creation from round object, can move some functions there.
   public static function create(Division $division, int $round, string|null $date = null): MatchDay {

@@ -66,6 +66,12 @@ class League
   #[ORM\Column(name: 'showNachmeldungen')]
   private bool $configShowLateRegistrations = true;
 
+  /**
+   * Whether to show a preview of the next match day.
+   */
+  #[ORM\Column(name: 'showSpieltagvorschau')]
+  private bool $configShowNextMatchDay = true;
+
   #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
   #[ORM\OrderBy(["sortId" => "ASC", "id" => "ASC"])]
   private $divisions;

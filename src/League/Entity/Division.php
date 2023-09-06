@@ -52,6 +52,12 @@ class Division
     #[ORM\Column(name: 'showNachmeldungen')]
     private bool|null $configShowLateRegistrations = null;
 
+    /**
+     * Whether to show a preview of the next match day.
+     */
+    #[ORM\Column(name: 'showSpieltagvorschau')]
+    private bool|null $configShowNextMatchDay = null;
+
     #[ORM\OneToMany(targetEntity: Pairing::class, mappedBy: 'division')]   
     #[ORM\OrderBy(Pairing::ORDERING)]
     private $pairings;
@@ -79,12 +85,23 @@ class Division
       return $dates;
     }
 
+    /**
+     * Returns all Rounds for which a date has been set.
+     */
     // TODO: Also show rounds without a date?
     // TODO: Use Rounds instead of Dates everywhere possible.
     public function rounds(): array {
       return array_map(function(Date $date) {
         return new Round($this, $date->round, $date->date);
       }, $this->dates());
+    }
+
+    /**
+     * Returns the Round object for the given round, if it has a date set.
+     */
+    public function round(int $round): Round|null {
+      $rounds = $this->rounds();
+      return isset($rounds[$round]) ? $rounds[$round] : null;
     }
 
     /**
