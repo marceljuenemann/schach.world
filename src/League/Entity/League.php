@@ -49,6 +49,12 @@ class League
   private $manager;
 
   /**
+   * Number of rounds.
+   */
+  #[ORM\Column(name: 'runden')]
+  private int $configRounds = 9;
+
+  /**
    * Number of subsequent teams whose players may be used as substitute players.
    */
   #[ORM\Column(name: 'spielErsatzmannschaft')]

@@ -40,6 +40,12 @@ class Division
     private $manager;
 
     /**
+     * Number of rounds. If set to null, the league-wide config should be used.
+     */
+    #[ORM\Column(name: 'runden')]
+    private int|null $configRounds = null;
+
+    /**
      * Whether to show player numbers in the UI. If set to null, the league-wide
      * configuration should be used.
      */
@@ -88,12 +94,18 @@ class Division
     /**
      * Returns all Rounds for which a date has been set.
      */
-    // TODO: Also show rounds without a date?
+    // TODO: Rename to roundsWithDate()
     // TODO: Use Rounds instead of Dates everywhere possible.
+    // TODO: Unit test
     public function rounds(): array {
-      return array_map(function(Date $date) {
-        return new Round($this, $date->round, $date->date);
-      }, $this->dates());
+      $maxRound = $this->config('rounds');
+      $rounds = [];
+      foreach ($this->dates() as $date) {
+        if ($date->round <= $maxRound) {
+          $rounds[$date->round] = new Round($this, $date->round, $date->date);
+        }
+      }
+      return $rounds;
     }
 
     /**
