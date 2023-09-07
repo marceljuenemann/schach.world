@@ -2,10 +2,11 @@
 
 namespace Nsv\League\Controller;
 
+use Nsv\League\Core\Auth;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
-use Nsv\WebApp\Core\WordPress\Auth;
+use Nsv\WebApp\Core\WordPress\Auth as WpAuth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -43,7 +44,7 @@ class AbstractLeagueController extends AbstractController {
    * processing the request or outputting anything.
    */
   protected function initializeLegacySystem() {
-    if (Auth::isAdmin()) {
+    if (WpAuth::isAdmin()) {
       $_GET['debugme'] = 1;
     }
 
@@ -65,6 +66,38 @@ class AbstractLeagueController extends AbstractController {
 
     // Don't send Content-Type header: https://www.saotn.org/php-56-default_charset-change-may-break-html-output/
     ini_set( 'default_charset', "" );
+
+    $this->initializeLegacySession();
+  }
+
+  /**
+   * Sets the global $admin variable if the user is logged in.
+   */
+  private function initializeLegacySession() {
+    $requestStack = $this->container->get('request_stack');
+    $request = $requestStack->getCurrentRequest();
+
+    // Check whether PHPSESSID cookie is present.
+    if (!$request->hasPreviousSession()) return;
+
+    global $admin;
+    $auth = new Auth($requestStack);
+    try {
+      $division = $auth->checkManagerAccess($this->league);
+      $user = $division ? $division->manager : $this->league->manager;  
+      $admin = [
+        'usertype' => $division ? 's' : 't',
+        'userid' => $user->id,
+        'username' => $user->name,
+        'usermail' => $user->mail,
+        'staffel' => $division ? $division->id : 0,
+        'pageid' => isset($_GET['admin']) ? substr($_GET['admin'], 0, strpos($_GET['admin'], '-')) : null,
+        'session' => ''
+      ];
+    } catch (AccessDeniedHttpException $e) {
+      // Session is probably expired, silently proceed.
+      unset($admin);
+    }
   }
 
   /**
