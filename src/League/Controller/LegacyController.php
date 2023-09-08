@@ -43,8 +43,12 @@ class LegacyController extends AbstractLeagueController {
         if ($_GET['admin'] === 'login') {
           $auth->legacyLogin($this->league, $_POST['benutzer'], $_POST['passwort']);
           return $this->redirect($this->league->uri() . "?admin=desktop--");
+        } else if (str_starts_with($_GET['admin'], 'logout-')) {
+          $auth->legacyLogout();
+          return $this->redirect($this->league->uri());
+        } else {
+          $this->legacyAdminSystem($auth);
         }
-        $this->legacyAdminSystem($auth);
       } else {
         // Existiert es überhaupt?
         $modulpfad = "$globals[basedir]/_module/$globals[mod]/$globals[mod].php";
@@ -123,19 +127,7 @@ class LegacyController extends AbstractLeagueController {
   }
 
   private function legacyAdminSystem(Auth $auth) {
-    $division = $auth->checkManagerAccess($this->league);
-    $user = $division ? $division->manager : $this->league->manager;
-
-    global $globals, $admin;
-    $admin = [
-      'usertype' => $division ? 's' : 't',
-      'userid' => $user->id,
-      'username' => $user->name,
-      'usermail' => $user->mail,
-      'staffel' => $division ? $division->id : 0,
-      'pageid' => substr($_GET['admin'], 0, strpos($_GET['admin'], '-')),
-      'session' => ''
-    ];
+    $auth->checkManagerAccess($this->league);
 
     ob_start();
     require_once('login.inc.php');

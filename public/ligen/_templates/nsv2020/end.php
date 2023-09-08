@@ -121,8 +121,30 @@ if (count($links)) {
   
 // LOGIN
 echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
-echo "<h5 class='card-title'>Staffelleiter</h5>";
-?>
+echo "<h5 class='card-title'>Turnierleitung</h5>";
+
+global $admin, $globals;
+if (isset($admin)) {
+  echo "<p>Angemeldet als ";
+  if ($admin['usertype'] == 't') {
+    echo "Turnierleiter:in";
+  } else {
+    echo "Staffelleiter:in ";
+    echo $globals['staffeln'][$admin['staffel']];
+  }
+  echo ".</p>";
+  ?>
+    <div>
+      <a href="<?=$globals['basepath']?>/?admin=desktop--">
+        <button type="button" class="btn btn-primary btn-sm">Zum Desktop</button>
+      </a>
+      <a href="<?=$globals['basepath']?>/?admin=logout--">
+        <button type="button" class="btn btn-primary btn-sm">Abmelden</button>
+      </a>
+    </div> 
+ <?php
+} else {
+  ?>
   <form action="<?=$globals['basepath']?>/?admin=login" method="post"><div>
     <div class="form-group"><select class="form-select" name="benutzer">
       <?
@@ -140,8 +162,9 @@ echo "<h5 class='card-title'>Staffelleiter</h5>";
     </div>
     <input type="submit" value="Einloggen" class="btn btn-sm btn-primary" />
   </div></form>
-<?php  
-echo "</div></div>";
+  <?php  
+}
+echo "</div></div>";   // END OF LOGIN
 
   
 echo '</div>';

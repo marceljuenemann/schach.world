@@ -77,4 +77,8 @@ class Auth
     $this->session->set(self::SESSION_KEY_LEAGUE, $league->id);
     $this->session->set(self::SESSION_KEY_DIVISION, $divisionId);
   }
+
+  function legacyLogout() {
+    $this->session->clear();
+  }
 }
