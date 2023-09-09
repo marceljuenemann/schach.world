@@ -111,6 +111,7 @@ class Division
     /**
      * Returns the Round object for the given round, if it has a date set.
      */
+    // TODO: Return without Date if not set.
     public function round(int $round): Round|null {
       $rounds = $this->rounds();
       return isset($rounds[$round]) ? $rounds[$round] : null;

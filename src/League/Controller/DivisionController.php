@@ -41,9 +41,12 @@ class DivisionController extends AbstractLeagueController {
     return $this->debugResponse($matchDays);
   }
 
-  // TODO: round optional
-  // TODO: requirements, otherwise matches schedule and stats
-  #[Route('{division}/{round}/', name: 'matchday' /*, requirements: ['round' => '/\d+/'] */)]
+  #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]
+  public function matchday_api(int $round, MatchDayService $service): Response {
+    return $this->apiResponse($this->matchday_internal($service, $round));
+  }
+
+  #[Route('{division}/{round}/', name: 'matchday')]
   public function matchday(int $round, MatchDayService $service): Response {
     $matchDay = $this->matchday_internal($service, $round);
     return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
@@ -51,12 +54,17 @@ class DivisionController extends AbstractLeagueController {
       'tabs' => $this->divisionTabs($round)
     ]);
   }
-  
-  #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]
-  public function matchday_api(int $round, MatchDayService $service): Response {
-    return $this->apiResponse($this->matchday_internal($service, $round));
-  }
 
+  #[Route('{division}/', name: 'index')]
+  public function index(ScheduleService $scheduleService, MatchDayService $matchDayService): Response {
+    $round = $scheduleService->closestRound($this->division, date('Y-m-d'));
+    if ($round) {
+      return $this->matchday($round->round, $matchDayService);
+    } else {
+      return $this->schedule($scheduleService);
+    }
+  }
+  
   private function matchday_internal(MatchDayService $service, int $round) {
     return $service->matchDay($this->division, $round, function() use ($round) {
       $this->initializeLegacySystem();
@@ -73,7 +81,7 @@ class DivisionController extends AbstractLeagueController {
     $tabs = array_map(function(Round $round) use ($active) {
       return [
         'label' => 'R' . $round->round,
-        'uri' => "../{$round->round}/",
+        'uri' => "../{$round->round}/",  // TODO: Use URI once launched.
         'active' => $active === $round->round
       ];
     }, $this->division->rounds());

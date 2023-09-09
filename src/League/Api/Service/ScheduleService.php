@@ -6,6 +6,7 @@ use Nsv\League\Api\Model\Division;
 use Nsv\League\Api\Model\MatchDay;
 use Nsv\League\Api\Model\Pairing;
 use Nsv\League\Entity;
+use Nsv\League\Entity\Round;
 use Nsv\League\Repository\PairingRepository;
 
 class ScheduleService
@@ -46,6 +47,25 @@ class ScheduleService
       }
     }
     return $closestDate;
+  }
+
+  /**
+   * Returns the round closest to the given date, or null if there are no rounds.
+   */
+  public function closestRound(Entity\Division $division, string $date): Round|null {
+    $rounds = $division->rounds();
+    $dates = array_map(function ($round) { return $round->date; }, $rounds);
+    $closestDate = $this->closestDate($dates, $date);
+
+    // If there are multiple rounds on the closest date, then we return the
+    // last one if the date is in the past, and the first one otherwise.
+    if ($closestDate < $date) $rounds = array_reverse($rounds);
+    foreach ($rounds as $round) {
+      if ($round->date === $closestDate) {
+        return $round;
+      }
+    }
+    return null;
   }
 
   /**
