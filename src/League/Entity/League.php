@@ -97,7 +97,7 @@ class League
   /**
    * @throws NotFoundHttpException
    */
-  public function teamById($id) {
+  public function teamById($id): Team {
     // We always fetch all teams anyways, so this is the most efficient way.
     foreach ($this->teams as $team) {
       if ($team->id === $id) {

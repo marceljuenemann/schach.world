@@ -3,8 +3,9 @@
 namespace Nsv\League\Controller;
 
 use Doctrine\ORM\EntityNotFoundException;
-use Nsv\League\Core\Auth;
 use Nsv\League\Core\Encoding;
+use Nsv\League\Core\LeagueAuth;
+use Nsv\League\Entity\League;
 use Nsv\League\Repository\DivisionRepository;
 use Nsv\League\Repository\PlayerRepository;
 use Nsv\League\Repository\TeamRepository;
@@ -24,11 +25,15 @@ class LegacyController extends AbstractLeagueController {
     private DivisionRepository $divisionRepository,
     private PlayerRepository $playerRepository,
     private TeamRepository $teamRepository,
-    private NsvJs $nsvJs
-  ) {}
+    private NsvJs $nsvJs,
+    League $league,
+    LeagueAuth $auth
+  ) {
+    parent::__construct($league, $auth);
+  }
 
   #[Route('ligen/{league}/', name: 'legacy')]
-  public function legacy(Request $request, Auth $auth): Response {
+  public function legacy(Request $request): Response {
     $this->initializeLegacySystem();
     try {
       // Calculate $globals[mod], i.e. which module to call.
@@ -41,13 +46,13 @@ class LegacyController extends AbstractLeagueController {
       } else if ($globals['mod'] === 'staffelleiter') {
         // Handle legacy admin system.
         if ($_GET['admin'] === 'login') {
-          $auth->legacyLogin($this->league, $_POST['benutzer'], $_POST['passwort']);
+          $this->auth->legacyLogin($this->league, $_POST['benutzer'], $_POST['passwort']);
           return $this->redirect($this->league->uri() . "?admin=desktop--");
         } else if (str_starts_with($_GET['admin'], 'logout-')) {
-          $auth->legacyLogout();
+          $this->auth->legacyLogout();
           return $this->redirect($this->league->uri());
         } else {
-          $this->legacyAdminSystem($auth);
+          $this->legacyAdminSystem();
         }
       } else {
         // Existiert es überhaupt?
@@ -126,8 +131,8 @@ class LegacyController extends AbstractLeagueController {
     } 
   }
 
-  private function legacyAdminSystem(Auth $auth) {
-    $auth->checkManagerAccess($this->league);
+  private function legacyAdminSystem() {
+    $this->auth->checkManagerAccess();
 
     ob_start();
     require_once('login.inc.php');

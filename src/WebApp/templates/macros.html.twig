@@ -10,6 +10,11 @@
   {% if model %}<a href="{{model.uri}}">{{model.name|e}}</a>{% endif %}
 {% endmacro %}
 
+{# An icon using dashicons, the icon set shipped with WordPress. #}
+{% macro icon(id) %}
+  <span class="dashicons dashicons-{{ id }}"></span>
+{% endmacro %}
+
 {# An eMail link with simple bot protection. #}
 {% macro email(email) %}
   {% set emailHash = nsv_md5('asdko4mor3' ~ email) %}

@@ -11,8 +11,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * Controller for the main publicly accessible routes.
- * 
- * TODO: Merge with Division and Team controller
  */
 #[Route('/ligen/{league}/', name: 'league_')]
 class MainController extends AbstractLeagueController {
@@ -66,17 +64,19 @@ class MainController extends AbstractLeagueController {
 
   #[Route('m/{teamId}/', name: 'team')]
   public function team(TeamService $service, int $teamId): Response {
-    $team = $service->team($this->league, $teamId);
-    $showContactInfo = $this->league->year >= date('Y') - 1;
+    $teamEntity = $this->league->teamById($teamId);
+    $team = $service->team($teamEntity);
     return $this->renderWithLegacySystem('team.html.twig', [
       'team' => $team,
-      'showContactInfo' => $showContactInfo
+      'teamEntity' => $teamEntity,
+      'showContactInfo' => $this->league->year >= date('Y') - 1
     ]);
   }
 
   #[Route('api/teams/{teamId}/', name: 'api_team')]
   public function team_api(TeamService $service, int $teamId): Response {
-    $team = $service->team($this->league, $teamId);
+    $teamEntity = $this->league->teamById($teamId);
+    $team = $service->team($teamEntity);
     $team->captain->mail = '** REDACTED **';
     $team->captain->phone = '** REDACTED **';
     $team->captain->phone2 = '** REDACTED **';

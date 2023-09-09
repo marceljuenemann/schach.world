@@ -136,10 +136,10 @@ if (isset($admin)) {
   ?>
     <div>
       <a href="<?=$globals['basepath']?>/?admin=desktop--">
-        <button type="button" class="btn btn-primary btn-sm">Zum Desktop</button>
+        <button type="button" class="btn btn-success btn-sm">Zum Desktop</button>
       </a>
       <a href="<?=$globals['basepath']?>/?admin=logout--">
-        <button type="button" class="btn btn-primary btn-sm">Abmelden</button>
+        <button type="button" class="btn btn-success btn-sm">Abmelden</button>
       </a>
     </div> 
  <?php

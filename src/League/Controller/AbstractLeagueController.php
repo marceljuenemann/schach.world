@@ -2,8 +2,8 @@
 
 namespace Nsv\League\Controller;
 
-use Nsv\League\Core\Auth;
 use Nsv\League\Core\Encoding;
+use Nsv\League\Core\LeagueAuth;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\WebApp\Core\WordPress\Auth as WpAuth;
@@ -20,19 +20,18 @@ use Throwable;
  */
 class AbstractLeagueController extends AbstractController {
 
-  /**
-   * The league for which the request should be executed.
-   * 
-   * This field is automatically set by the ControllerInterceptor if the path contains a `league` parameter. 
-   */
-  public ?League $league = null;
+  function __construct(
+    protected League $league,
+    protected LeagueAuth $auth
+  ) {}
 
   /**
    * The division for which the request should be executed.
-   * 
-   * This field is automatically set by the ControllerInterceptor if the path contains a `division` parameter. 
+   *
+   * Remove from AbstractLeagueController once no longer passed to
+   * the legacy system.
    */
-  public ?Division $division = null;
+  protected ?Division $division = null;
 
   /**
    * Info messages to show on the page.
@@ -81,9 +80,8 @@ class AbstractLeagueController extends AbstractController {
     if (!$request->hasPreviousSession()) return;
 
     global $admin;
-    $auth = new Auth($requestStack);
     try {
-      $division = $auth->checkManagerAccess($this->league);
+      $division = $this->auth->checkManagerAccess($this->league);
       $user = $division ? $division->manager : $this->league->manager;  
       $admin = [
         'usertype' => $division ? 's' : 't',
@@ -115,6 +113,7 @@ class AbstractLeagueController extends AbstractController {
   protected function render(string $view, array $parameters = [], Response $response = null): Response {
     $view = '@league/' . $view;
 
+    $parameters['auth'] = $this->auth;
     $parameters['messages'] = $this->messages;
     if ($this->league) {
       $parameters['league'] = $this->league;
