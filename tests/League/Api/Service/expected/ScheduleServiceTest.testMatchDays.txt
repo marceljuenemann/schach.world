@@ -6,6 +6,7 @@ Array
             [date] => 2024-12-31
             [uri] => /ligen/test/?staffel=22&r=2
             [uriPdf] => /ligen/test/?staffel=22&r=2&ausgabe=pdf
+            [uriApi] => /ligen/test/api/divisions/test-division/rounds/2/
             [pairings] => Array
                 (
                     [0] => Nsv\League\Api\Model\Pairing Object
@@ -34,6 +35,7 @@ Array
                             [result] => 
                             [result1] => 
                             [result2] => 
+                            [comment] => 
                             [wasMoved] => 
                             [moveDate] => 
                         )
@@ -48,6 +50,7 @@ Array
             [date] => 2025-01-01
             [uri] => /ligen/test/?staffel=22&r=1
             [uriPdf] => /ligen/test/?staffel=22&r=1&ausgabe=pdf
+            [uriApi] => /ligen/test/api/divisions/test-division/rounds/1/
             [pairings] => Array
                 (
                     [0] => Nsv\League\Api\Model\Pairing Object
@@ -76,6 +79,7 @@ Array
                             [result] => 2½ : 1½
                             [result1] => 2.5
                             [result2] => 1.5
+                            [comment] => 
                             [wasMoved] => 
                             [moveDate] => 
                         )
@@ -106,6 +110,7 @@ Array
                             [result] => 
                             [result1] => 
                             [result2] => 
+                            [comment] => 
                             [wasMoved] => 
                             [moveDate] => 
                         )
@@ -120,6 +125,7 @@ Array
             [date] => 2025-04-04
             [uri] => /ligen/test/?staffel=22&r=4
             [uriPdf] => /ligen/test/?staffel=22&r=4&ausgabe=pdf
+            [uriApi] => /ligen/test/api/divisions/test-division/rounds/4/
             [pairings] => Array
                 (
                     [0] => Nsv\League\Api\Model\Pairing Object
@@ -148,6 +154,7 @@ Array
                             [result] => 
                             [result1] => 
                             [result2] => 
+                            [comment] => 
                             [wasMoved] => 1
                             [moveDate] => 2025-04-05
                         )
@@ -178,6 +185,7 @@ Array
                             [result] => 
                             [result1] => 
                             [result2] => 
+                            [comment] => 
                             [wasMoved] => 1
                             [moveDate] => 
                         )
@@ -216,6 +224,7 @@ Array
                             [result] => 
                             [result1] => 
                             [result2] => 
+                            [comment] => 
                             [wasMoved] => 
                             [moveDate] => 
                         )

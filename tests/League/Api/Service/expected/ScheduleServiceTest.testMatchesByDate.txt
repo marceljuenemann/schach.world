@@ -5,6 +5,7 @@ Array
             [id] => 22
             [name] => Test Division
             [matchDayUri] => /ligen/test/?staffel=22&r=
+            [scheduleUri] => /ligen/test/test-division/spielplan/
             [statsUri] => /ligen/test/?staffel=22&r=statistik
             [matchDays] => Array
                 (
@@ -14,6 +15,7 @@ Array
                             [date] => 2025-01-01
                             [uri] => /ligen/test/?staffel=22&r=1
                             [uriPdf] => /ligen/test/?staffel=22&r=1&ausgabe=pdf
+                            [uriApi] => /ligen/test/api/divisions/test-division/rounds/1/
                             [pairings] => Array
                                 (
                                     [0] => Nsv\League\Api\Model\Pairing Object
@@ -42,6 +44,7 @@ Array
                                             [result] => 2½ : 1½
                                             [result1] => 2.5
                                             [result2] => 1.5
+                                            [comment] => 
                                             [wasMoved] => 
                                             [moveDate] => 
                                         )
@@ -72,6 +75,7 @@ Array
                                             [result] => 
                                             [result1] => 
                                             [result2] => 
+                                            [comment] => 
                                             [wasMoved] => 
                                             [moveDate] => 
                                         )

@@ -160,6 +160,7 @@ Nsv\League\Api\Model\Team Object
                             [elo] => 
                             [gender] => m
                             [isGuest] => 
+                            [lateRegistrationRound] => 
                             [uri] => /ligen/test/s/26/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                             [games] => Array
@@ -194,6 +195,7 @@ Nsv\League\Api\Model\Team Object
                                                     [elo] => 2020
                                                     [gender] => w
                                                     [isGuest] => 
+                                                    [lateRegistrationRound] => 
                                                     [uri] => /ligen/test/s/25/
                                                     [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                                                 )
