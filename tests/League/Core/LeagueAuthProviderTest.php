@@ -55,7 +55,7 @@ final class LeagueAuthProviderTest extends TestCase
   }
 
   public function testLegacyLogin_leagueManager_setsSesion() {
-    $this->auth->legacyLogin($this->league, 't-xyz', self::LEAGUE_MANAGER_PW);
+    $this->auth->legacyLogin('t-xyz', self::LEAGUE_MANAGER_PW);
 
     $this->assertEquals(self::LEAGUE_ID, $this->session->get(LeagueAuthProvider::SESSION_KEY_LEAGUE));
     $this->assertEquals(0, $this->session->get(LeagueAuthProvider::SESSION_KEY_DIVISION));
@@ -63,7 +63,7 @@ final class LeagueAuthProviderTest extends TestCase
   }
 
   public function testLegacyLogin_divisionManager_setsSesion() {
-    $this->auth->legacyLogin($this->league, 's-' . self::DIVISION_ID, self::DIVISION_MANAGER_PW);
+    $this->auth->legacyLogin('s-' . self::DIVISION_ID, self::DIVISION_MANAGER_PW);
 
     $this->assertEquals(self::LEAGUE_ID, $this->session->get(LeagueAuthProvider::SESSION_KEY_LEAGUE));
     $this->assertEquals(self::DIVISION_ID, $this->session->get(LeagueAuthProvider::SESSION_KEY_DIVISION));
@@ -71,7 +71,7 @@ final class LeagueAuthProviderTest extends TestCase
   }
 
   public function testLegacyLogin_masterPassword_setsSesion() {
-    $this->auth->legacyLogin($this->league, 's-' . self::DIVISION_ID, self::MASTER_PASSWORD);
+    $this->auth->legacyLogin('s-' . self::DIVISION_ID, self::MASTER_PASSWORD);
 
     $this->assertEquals(self::LEAGUE_ID, $this->session->get(LeagueAuthProvider::SESSION_KEY_LEAGUE));
     $this->assertEquals(self::DIVISION_ID, $this->session->get(LeagueAuthProvider::SESSION_KEY_DIVISION));
@@ -80,17 +80,17 @@ final class LeagueAuthProviderTest extends TestCase
 
   public function testLegacyLogin_wrongPassword_throwsException() {
     $this->expectException(AccessDeniedHttpException::class);
-    $this->auth->legacyLogin($this->league, 's-' . self::DIVISION_ID, self::WRONG_PASSWORD);
+    $this->auth->legacyLogin('s-' . self::DIVISION_ID, self::WRONG_PASSWORD);
   }
 
   public function testLegacyLogin_wrongPasswordForLeagueManager_throwsException() {
     $this->expectException(AccessDeniedHttpException::class);
-    $this->auth->legacyLogin($this->league, 't-xyz', self::WRONG_PASSWORD);
+    $this->auth->legacyLogin('t-xyz', self::WRONG_PASSWORD);
   }
 
   public function testLegacyLogin_unkownDivision_throwsException() {
     $this->expectException(NotFoundHttpException::class);
-    $this->auth->legacyLogin($this->league, 's-' . (self::DIVISION_ID + 1), self::DIVISION_MANAGER_PW);
+    $this->auth->legacyLogin('s-' . (self::DIVISION_ID + 1), self::DIVISION_MANAGER_PW);
   }
 
   // TODO: test logout

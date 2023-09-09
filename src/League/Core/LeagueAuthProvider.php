@@ -63,14 +63,13 @@ class LeagueAuthProvider
    * @throws NotFoundHttpException if user ID is incorrect
    * @throws AccessDeniedHttpException if password is incorrect
    */
-  // TODO: Delete $league
-  function legacyLogin(League $league, string $user, string $password) {
+  function legacyLogin(string $user, string $password) {
     if ($user[0] == 's') {
       $divisionId = (int) substr($user, 2);
-      $user = $league->divisionById($divisionId)->manager;
+      $user = $this->league->divisionById($divisionId)->manager;
     } else {
       $divisionId = 0;
-      $user = $league->manager;
+      $user = $this->league->manager;
     }
 
     global $globals;  // TODO: move master password somewhere else
@@ -80,7 +79,7 @@ class LeagueAuthProvider
     }
 
     $this->session->set(self::SESSION_KEY_LOGIN, time());
-    $this->session->set(self::SESSION_KEY_LEAGUE, $league->id);
+    $this->session->set(self::SESSION_KEY_LEAGUE, $this->league->id);
     $this->session->set(self::SESSION_KEY_DIVISION, $divisionId);
   }
 

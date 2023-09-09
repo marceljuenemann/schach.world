@@ -47,7 +47,7 @@ class LegacyController extends AbstractLeagueController {
       } else if ($globals['mod'] === 'staffelleiter') {
         // Handle legacy admin system.
         if ($_GET['admin'] === 'login') {
-          $authProvider->legacyLogin($this->league, $_POST['benutzer'], $_POST['passwort']);
+          $authProvider->legacyLogin($_POST['benutzer'], $_POST['passwort']);
           return $this->redirect($this->league->uri() . "?admin=desktop--");
         } else if (str_starts_with($_GET['admin'], 'logout-')) {
           $authProvider->legacyLogout();
