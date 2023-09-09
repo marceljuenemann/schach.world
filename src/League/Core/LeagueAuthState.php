@@ -12,7 +12,7 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
  */
 class LeagueAuthState
 {
-  function __construct(
+  private function __construct(
     private bool $isManager,
     private Division|null $_managedDivision,
     private string|null $errorMessage
