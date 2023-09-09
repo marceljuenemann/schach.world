@@ -133,7 +133,7 @@ class LegacyController extends AbstractLeagueController {
   }
 
   private function legacyAdminSystem() {
-    $this->auth->checkManagerAccess();
+    $this->auth->requireDivisionManager();
 
     ob_start();
     require_once('login.inc.php');

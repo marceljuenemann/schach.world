@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Core;
 
+use Exception;
 use Nsv\League\Entity\Division;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
@@ -13,7 +14,7 @@ class LeagueAuthState
 {
   function __construct(
     private bool $isManager,
-    private Division|null $managedDivision,
+    private Division|null $_managedDivision,
     private string|null $errorMessage
   ) {}
 
@@ -22,7 +23,7 @@ class LeagueAuthState
    * settings for the league.
    */
   public function isLeagueManager(): bool {
-    return $this->isManager && $this->managedDivision === null;
+    return $this->isManager && $this->_managedDivision === null;
   }
 
   /**
@@ -31,7 +32,7 @@ class LeagueAuthState
    * the user may manage that specific division.
    */
   public function isDivisionManager(Division|null $division = null): bool {
-    return $this->isManager && ($division === null || $this->managedDivision === null || $this->managedDivision === $division);
+    return $this->isManager && ($division === null || $this->_managedDivision === null || $this->_managedDivision === $division);
   }
 
   /**
@@ -62,24 +63,13 @@ class LeagueAuthState
   }
 
   /**
-   * Verifies that the current user is a manager for the given league.
-   * 
-   * @return Division|null the division for which the user is authorized, or null
-   *    if the user may manage all divisions.
-   * @throws AccessDeniedHttpException if verification failed.
+   * Returns the Division that this user manages.
    */
-  /**
-   * TODO replace checkManagerAccess with:
-   * - requireDivisionManager(Division|null)
-   * - requireLeagueManager
-   * - managedDivision
-   */
-  public function checkManagerAccess(): Division|null {
-    if ($this->isManager) {
-      return $this->managedDivision;      
-    } else {
-      throw new AccessDeniedHttpException($this->errorMessage);
+  public function managedDivision(): Division {
+    if (!$this->_managedDivision instanceof Division) {
+      throw new Exception('Must manage a Division');
     }
+    return $this->_managedDivision;
   }
 
   public static function unauthorized(string $errorMessage): LeagueAuthState {

@@ -73,29 +73,20 @@ class AbstractLeagueController extends AbstractController {
    * Sets the global $admin variable if the user is logged in.
    */
   private function initializeLegacySession() {
-    $requestStack = $this->container->get('request_stack');
-    $request = $requestStack->getCurrentRequest();
-
-    // Check whether PHPSESSID cookie is present.
-    if (!$request->hasPreviousSession()) return;
+    if (!$this->auth->isDivisionManager()) return;
 
     global $admin;
-    try {
-      $division = $this->auth->checkManagerAccess($this->league);
-      $user = $division ? $division->manager : $this->league->manager;  
-      $admin = [
-        'usertype' => $division ? 's' : 't',
-        'userid' => $user->id,
-        'username' => $user->name,
-        'usermail' => $user->mail,
-        'staffel' => $division ? $division->id : 0,
-        'pageid' => isset($_GET['admin']) ? substr($_GET['admin'], 0, strpos($_GET['admin'], '-')) : null,
-        'session' => ''
-      ];
-    } catch (AccessDeniedHttpException $e) {
-      // Session is probably expired, silently proceed.
-      unset($admin);
-    }
+    $division = $this->auth->isLeagueManager() ? null : $this->auth->managedDivision();
+    $user = $division ? $division->manager : $this->league->manager;
+    $admin = [
+      'usertype' => $division ? 's' : 't',
+      'userid' => $user->id,
+      'username' => $user->name,
+      'usermail' => $user->mail,
+      'staffel' => $division ? $division->id : 0,
+      'pageid' => isset($_GET['admin']) ? substr($_GET['admin'], 0, strpos($_GET['admin'], '-')) : null,
+      'session' => ''
+    ];
   }
 
   /**

@@ -54,24 +54,13 @@ class ApiController extends AbstractLeagueController {
   
   // TODO: Move somewhere more general?
   private function checkLeagueAccess() {
-    $this->auth->checkManagerAccess($this->league);
+    $this->auth->requireDivisionManager();
   }
 
   // TODO: refactor
   private function checkLeagueManagerAccess() {
-    if ($this->auth->checkManagerAccess($this->league) != null) {
-      throw new AccessDeniedHttpException('League manager access required');
-    }
+    $this->auth->requireLeagueManager();
   }
-
-  // TODO: refactor
-  private function checkDivisionAccess(int $divisionId) {
-    $division = $this->auth->checkManagerAccess($this->league);
-    if ($division && $division->id != $divisionId) {
-      throw new AccessDeniedHttpException('No access to this division');
-    }
-  }
-
 
   /*
   TODO: enable NSV ApiErrors like this:
