@@ -7,20 +7,13 @@ use Nsv\League\Api\Request\CreateDivisionRequest;
 use Nsv\League\Api\Request\DivisionOrderRequest;
 use Nsv\League\Api\Service\DivisionService;
 use Nsv\League\Api\Service\ScheduleService;
-use Nsv\League\Core\Auth;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 #[Route('/ligen/{league}/api/', name: 'league_api_')]
 class ApiController extends AbstractLeagueController {
-
-  function __construct(
-    private Auth $auth,
-    private ValidatorInterface $validator
-  ) {}
 
   /**
    * *Unstable* API for displaying a pairing list in the admin area.
@@ -61,22 +54,13 @@ class ApiController extends AbstractLeagueController {
   
   // TODO: Move somewhere more general?
   private function checkLeagueAccess() {
-    $this->auth->checkManagerAccess($this->league);
+    $this->auth->requireDivisionManager();
   }
 
+  // TODO: refactor
   private function checkLeagueManagerAccess() {
-    if ($this->auth->checkManagerAccess($this->league) != null) {
-      throw new AccessDeniedHttpException('League manager access required');
-    }
+    $this->auth->requireLeagueManager();
   }
-
-  private function checkDivisionAccess(int $divisionId) {
-    $division = $this->auth->checkManagerAccess($this->league);
-    if ($division && $division->id != $divisionId) {
-      throw new AccessDeniedHttpException('No access to this division');
-    }
-  }
-
 
   /*
   TODO: enable NSV ApiErrors like this:

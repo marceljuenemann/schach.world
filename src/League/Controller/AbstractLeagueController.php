@@ -2,8 +2,8 @@
 
 namespace Nsv\League\Controller;
 
-use Nsv\League\Core\Auth;
 use Nsv\League\Core\Encoding;
+use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\WebApp\Core\WordPress\Auth as WpAuth;
@@ -20,19 +20,18 @@ use Throwable;
  */
 class AbstractLeagueController extends AbstractController {
 
-  /**
-   * The league for which the request should be executed.
-   * 
-   * This field is automatically set by the ControllerInterceptor if the path contains a `league` parameter. 
-   */
-  public ?League $league = null;
+  function __construct(
+    protected League $league,
+    protected LeagueAuthState $auth
+  ) {}
 
   /**
    * The division for which the request should be executed.
-   * 
-   * This field is automatically set by the ControllerInterceptor if the path contains a `division` parameter. 
+   *
+   * Remove from AbstractLeagueController once no longer passed to
+   * the legacy system.
    */
-  public ?Division $division = null;
+  protected ?Division $division = null;
 
   /**
    * Info messages to show on the page.
@@ -74,30 +73,20 @@ class AbstractLeagueController extends AbstractController {
    * Sets the global $admin variable if the user is logged in.
    */
   private function initializeLegacySession() {
-    $requestStack = $this->container->get('request_stack');
-    $request = $requestStack->getCurrentRequest();
-
-    // Check whether PHPSESSID cookie is present.
-    if (!$request->hasPreviousSession()) return;
+    if (!$this->auth->isDivisionManager()) return;
 
     global $admin;
-    $auth = new Auth($requestStack);
-    try {
-      $division = $auth->checkManagerAccess($this->league);
-      $user = $division ? $division->manager : $this->league->manager;  
-      $admin = [
-        'usertype' => $division ? 's' : 't',
-        'userid' => $user->id,
-        'username' => $user->name,
-        'usermail' => $user->mail,
-        'staffel' => $division ? $division->id : 0,
-        'pageid' => isset($_GET['admin']) ? substr($_GET['admin'], 0, strpos($_GET['admin'], '-')) : null,
-        'session' => ''
-      ];
-    } catch (AccessDeniedHttpException $e) {
-      // Session is probably expired, silently proceed.
-      unset($admin);
-    }
+    $division = $this->auth->isLeagueManager() ? null : $this->auth->managedDivision();
+    $user = $division ? $division->manager : $this->league->manager;
+    $admin = [
+      'usertype' => $division ? 's' : 't',
+      'userid' => $user->id,
+      'username' => $user->name,
+      'usermail' => $user->mail,
+      'staffel' => $division ? $division->id : 0,
+      'pageid' => isset($_GET['admin']) ? substr($_GET['admin'], 0, strpos($_GET['admin'], '-')) : null,
+      'session' => ''
+    ];
   }
 
   /**
@@ -115,6 +104,7 @@ class AbstractLeagueController extends AbstractController {
   protected function render(string $view, array $parameters = [], Response $response = null): Response {
     $view = '@league/' . $view;
 
+    $parameters['auth'] = $this->auth;
     $parameters['messages'] = $this->messages;
     if ($this->league) {
       $parameters['league'] = $this->league;

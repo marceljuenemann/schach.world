@@ -10,6 +10,8 @@ Array
                 (
                     [0] => Nsv\League\Api\Model\Pairing Object
                         (
+                            [id] => 75
+                            [round] => 2
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 36
@@ -50,6 +52,8 @@ Array
                 (
                     [0] => Nsv\League\Api\Model\Pairing Object
                         (
+                            [id] => 73
+                            [round] => 1
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 35
@@ -78,6 +82,8 @@ Array
 
                     [1] => Nsv\League\Api\Model\Pairing Object
                         (
+                            [id] => 74
+                            [round] => 1
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 36
@@ -118,6 +124,8 @@ Array
                 (
                     [0] => Nsv\League\Api\Model\Pairing Object
                         (
+                            [id] => 76
+                            [round] => 4
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 35
@@ -146,6 +154,8 @@ Array
 
                     [1] => Nsv\League\Api\Model\Pairing Object
                         (
+                            [id] => 77
+                            [round] => 4
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 35
@@ -174,6 +184,8 @@ Array
 
                     [2] => Nsv\League\Api\Model\Pairing Object
                         (
+                            [id] => 78
+                            [round] => 4
                             [team1] => Nsv\League\Api\Model\Team Object
                                 (
                                     [id] => 35

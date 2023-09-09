@@ -18,6 +18,8 @@ Array
                                 (
                                     [0] => Nsv\League\Api\Model\Pairing Object
                                         (
+                                            [id] => 73
+                                            [round] => 1
                                             [team1] => Nsv\League\Api\Model\Team Object
                                                 (
                                                     [id] => 35
@@ -46,6 +48,8 @@ Array
 
                                     [1] => Nsv\League\Api\Model\Pairing Object
                                         (
+                                            [id] => 74
+                                            [round] => 1
                                             [team1] => Nsv\League\Api\Model\Team Object
                                                 (
                                                     [id] => 36

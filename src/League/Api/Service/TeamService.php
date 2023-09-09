@@ -9,7 +9,6 @@ use Nsv\League\Api\Model\TeamPairing;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity;
 use Nsv\League\Repository\PairingRepository;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class TeamService
 {
@@ -17,12 +16,7 @@ class TeamService
     private PairingRepository $pairingRepository
   ) {}
 
-  public function team(Entity\League $league, int $teamId): Team {
-    $team = $league->teamById($teamId);
-    if ($team->league != $league) {
-      throw new NotFoundHttpException("Team not found");
-    }
-
+  public function team(Entity\Team $team): Team {
     // Fetch basic info and players.
     $model = Team::fromEntityWithDetails($team);
     $model->playersByTeamNumber = [];
@@ -38,7 +32,7 @@ class TeamService
     ksort($model->playersByTeamNumber);
 
     // Fetch pairings and games.
-    $pairings = $this->pairingRepository->findByTeam($teamId);
+    $pairings = $this->pairingRepository->findByTeam($team);
     foreach ($pairings as $pairing) {
       $tp = TeamPairing::forTeam($team, $pairing);
       $model->pairingsByDivision[$pairing->division->id][] = $tp;
