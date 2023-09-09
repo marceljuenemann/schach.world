@@ -31,6 +31,12 @@ services:
         resource: '../src/League/Core/'
     Nsv\League\Repository\:
         resource: '../src/League/Repository/'
+    Nsv\League\Entity\League:
+        factory: '@Nsv\League\Core\LeagueProvider'
+    Nsv\League\Entity\Division:
+        factory: '@Nsv\League\Core\DivisionProvider'
+    Nsv\League\Core\LeagueAuthState:
+        factory: ['@Nsv\League\Core\LeagueAuthProvider', 'authState']
 
     # Misc services
     Nsv\Dwz\:

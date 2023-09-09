@@ -12,8 +12,15 @@
   {% endif %}
 {% endmacro %}
 
+{% macro editButton() %}
+  <button class="btn btn-success btn-sm rounded-pill align-bottom ms-2" {{ nsv.tooltip('Bearbeiten') }}>
+    {{ nsv.icon('edit') }}
+  </button>
+{% endmacro %}
+
 {% block content %}
 <div class="row">
+  {# Schedule #}
   {% if team.pairingsByDivision|default(false) %}
     <div class="col-12 col-lg-6">
       {% for division in league.divisions %}
@@ -41,8 +48,15 @@
       {% endfor %}
     </div>
   {% endif %}
+
   <div class="col-12 col-lg-6">
-    <h4 class="mt-4">Spiellokal</h4>
+    {# Venue #}
+    <h4 class="mt-4">
+      Spiellokal
+      {% if auth.isDivisionManager(teamEntity.division) %}
+        <a href="{{ league.uri }}?admin=manndata--&amp;mid={{ team.id }}">{{ _self.editButton() }}</a>
+      {% endif %}
+    </h4>
     {% if team.venue.note %} <i>{{ team.venue.note }}</i><br> {% endif %}
     {{ team.venue.name }}<br>
     {{ team.venue.street }}<br>
@@ -52,7 +66,13 @@
     {% if team.venue.hasAccessibleToilet %}<img {{ nsv.tooltip('WC barrierefrei') }} src='/ligen/_templates/systemicons/barrierefrei_wc.jpg' alt='WC barrierefrei' width='25' height='25'>{% endif %}
     <a href='{{ team.venue.directionsUri|raw }}' target='_blank'>Google Maps</a><br>
 
-    <h4 class="mt-4">Mannschaftsf&uuml;hrer:in</h4>
+    {# Captain #}
+    <h4 class="mt-4">
+      Mannschaftsf&uuml;hrer:in
+      {% if auth.isDivisionManager(teamEntity.division) %}
+        <a href="{{ league.uri }}?admin=manndata--&amp;mid={{ team.id }}">{{ _self.editButton() }}</a>
+      {% endif %}
+    </h4>
     {{ team.captain.name }}<br>
     {% if showContactInfo %}
       {% if team.captain.phone %} Tel. {{ team.captain.phone }}<br> {% endif %}
@@ -71,8 +91,6 @@
       <th>Nr.</th>
       <th>Name</th>
       <th class="border-right-bold">DWZ</th>
-      {# TODO: ensure sorted by API, with the team's division first #}
-      {# TODO: set border width to 2px for some cells #}
       {% for division in league.divisions %}
         {% if team.pairingsByDivision[division.id]|default(false) %}
           {% for pairing in team.pairingsByDivision[division.id] %}
@@ -91,9 +109,10 @@
         <tr>
           <td class="text-end">{{ player.number }}</td>
           <td class="text-start">
+            {# <span class="dashicons dashicons-edit"></span> #}
             {{ nsv.link(player) }}
             {% if player.isGuest %}
-              <span {{ nsv.tooltip('Gastspieler:in') }} class="badge badge-pill badge-secondary">G</span>
+              <span {{ nsv.tooltip('Gastspieler:in') }} class="badge bg-secondary rounded-circle ms-1">G</span>
             {% endif %}
           </td>
           <td class="border-right-bold">{{ player.dwz }}</td>

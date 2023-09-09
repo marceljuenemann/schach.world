@@ -3,9 +3,10 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Core\Encoding;
+use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
-use Nsv\WebApp\Core\WordPress\Auth;
+use Nsv\WebApp\Core\WordPress\Auth as WpAuth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,19 +20,18 @@ use Throwable;
  */
 class AbstractLeagueController extends AbstractController {
 
-  /**
-   * The league for which the request should be executed.
-   * 
-   * This field is automatically set by the ControllerInterceptor if the path contains a `league` parameter. 
-   */
-  public ?League $league = null;
+  function __construct(
+    protected League $league,
+    protected LeagueAuthState $auth
+  ) {}
 
   /**
    * The division for which the request should be executed.
-   * 
-   * This field is automatically set by the ControllerInterceptor if the path contains a `division` parameter. 
+   *
+   * Remove from AbstractLeagueController once no longer passed to
+   * the legacy system.
    */
-  public ?Division $division = null;
+  protected ?Division $division = null;
 
   /**
    * Info messages to show on the page.
@@ -43,7 +43,7 @@ class AbstractLeagueController extends AbstractController {
    * processing the request or outputting anything.
    */
   protected function initializeLegacySystem() {
-    if (Auth::isAdmin()) {
+    if (WpAuth::isAdmin()) {
       $_GET['debugme'] = 1;
     }
 
@@ -65,6 +65,28 @@ class AbstractLeagueController extends AbstractController {
 
     // Don't send Content-Type header: https://www.saotn.org/php-56-default_charset-change-may-break-html-output/
     ini_set( 'default_charset', "" );
+
+    $this->initializeLegacySession();
+  }
+
+  /**
+   * Sets the global $admin variable if the user is logged in.
+   */
+  private function initializeLegacySession() {
+    if (!$this->auth->isDivisionManager()) return;
+
+    global $admin;
+    $division = $this->auth->isLeagueManager() ? null : $this->auth->managedDivision();
+    $user = $division ? $division->manager : $this->league->manager;
+    $admin = [
+      'usertype' => $division ? 's' : 't',
+      'userid' => $user->id,
+      'username' => $user->name,
+      'usermail' => $user->mail,
+      'staffel' => $division ? $division->id : 0,
+      'pageid' => isset($_GET['admin']) ? substr($_GET['admin'], 0, strpos($_GET['admin'], '-')) : null,
+      'session' => ''
+    ];
   }
 
   /**
@@ -82,6 +104,7 @@ class AbstractLeagueController extends AbstractController {
   protected function render(string $view, array $parameters = [], Response $response = null): Response {
     $view = '@league/' . $view;
 
+    $parameters['auth'] = $this->auth;
     $parameters['messages'] = $this->messages;
     if ($this->league) {
       $parameters['league'] = $this->league;

@@ -4,11 +4,11 @@ namespace Nsv\League\Repository;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\Collections\Criteria;
 use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\Pairing;
+use Nsv\League\Entity\Team;
 
 /**
  * @extends ServiceEntityRepository<Pairing>
@@ -22,7 +22,7 @@ class PairingRepository extends ServiceEntityRepository
   /**
    * Returns all pairings for the specified team, also fetching all games and players.
    */
-  public function findByTeam(int $teamId) {
+  public function findByTeam(Team $team) {
     return $this->getEntityManager()
       ->createQueryBuilder()
       ->select('p, g, s1, s2')
@@ -35,7 +35,7 @@ class PairingRepository extends ServiceEntityRepository
       ->addOrderBy('p.round', 'ASC')
       ->addOrderBy('p.host', 'ASC')
       ->addOrderBy('p.id', 'ASC')
-      ->setParameter('team', $teamId)
+      ->setParameter('team', $team)
       ->getQuery()
       ->getResult();
   }

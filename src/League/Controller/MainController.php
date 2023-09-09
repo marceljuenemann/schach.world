@@ -13,8 +13,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * Controller for the main publicly accessible routes.
- * 
- * TODO: Merge with Division and Team controller
  */
 #[Route('/ligen/{league}/', name: 'league_')]
 class MainController extends AbstractLeagueController {
@@ -36,12 +34,7 @@ class MainController extends AbstractLeagueController {
 
     $today = date('Y-m-d');
     $dateToShow = $date ?: $service->closestDate($allDates, $today);
-    $matches = $service->matchesByDate($this->league, $dateToShow);
-
-    // Show at most three future dates and at most five tabs in total.
-    $pos = array_search($dateToShow, $allDates);
-    $tabs = array_slice($allDates, 0, $pos + 1 + self::HOME_NEXT_DATES_COUNT);
-    $tabs = array_slice($tabs, max(count($tabs) - self::HOME_MAX_DATES_COUNT, 0));
+    $matches = $service->matchesByDate($this->league, $dateToShow);  // TODO: ...ForDate
 
     $hasMatches = false;
     foreach ($matches as $division) {
@@ -52,7 +45,7 @@ class MainController extends AbstractLeagueController {
     }
     
     return $this->renderWithLegacySystem('overview.html.twig', [
-      'tabs' => $tabs,
+      'tabs' => $allDates,
       'activeTab' => $dateToShow,
       'matches' => $matches,
       'hasMatches' => $hasMatches
@@ -61,17 +54,19 @@ class MainController extends AbstractLeagueController {
 
   #[Route('m/{teamId}/', name: 'team')]
   public function team(TeamService $service, int $teamId): Response {
-    $team = $service->team($this->league, $teamId);
-    $showContactInfo = $this->league->year >= date('Y') - 1;
+    $teamEntity = $this->league->teamById($teamId);
+    $team = $service->team($teamEntity);
     return $this->renderWithLegacySystem('team.html.twig', [
       'team' => $team,
-      'showContactInfo' => $showContactInfo
+      'teamEntity' => $teamEntity,
+      'showContactInfo' => $this->league->year >= date('Y') - 1
     ]);
   }
 
   #[Route('api/teams/{teamId}/', name: 'api_team')]
   public function team_api(TeamService $service, int $teamId): Response {
-    $team = $service->team($this->league, $teamId);
+    $teamEntity = $this->league->teamById($teamId);
+    $team = $service->team($teamEntity);
     $team->captain->mail = '** REDACTED **';
     $team->captain->phone = '** REDACTED **';
     $team->captain->phone2 = '** REDACTED **';

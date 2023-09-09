@@ -22,8 +22,8 @@
 
   <br /><br /><b>25. bis 27. August</b><br />Lessing-Open in Wolfenb&uuml;ttel
   <br /><a href='https://nsv-online.de/2023/05/nsv-grandprix-lessing-open-in-wolfenbuettel-ausschreibung-2/'>Ausschreibung</a>
- | <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>
-<!--   | <a href='https://nsv-online.de/2022/08/nsv-grandprix-lessing-open-in-wolfenbuettel-hannes-ewert-gewinnt-a-turnier/'>Ergebnisse</a>-->
+<!-- | <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>-->
+   | <a href='https://nsv-online.de/2023/08/lessing-open-2023-torben-knuedel-und-ulrich-schuette-paavo-alexander-kraeuter-gewinnen/'>Ergebnisse</a>
 
 
 <!-- <br /><br /><b>01. bis 03. Oktober</b><br />Tostedter Schachherbst-->

@@ -23,6 +23,7 @@ class ApiErrorInterceptor
 
     $exception = $event->getThrowable();
     // TODO: handle NsvError
+    // TODO: convert all HttpExceptions. Include message + debug if admin. 
     if ($exception instanceof HttpException && $exception->getPrevious() instanceof ValidationFailedException) {
       $event->setResponse($this->handleValidationFailure($exception->getPrevious()));
     }

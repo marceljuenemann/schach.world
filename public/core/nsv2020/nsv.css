@@ -331,7 +331,31 @@ table.nsv-table {
 }
 
 /****************************************
+          COMPONENT: nsv-tabs
+
+A tab navigation that scrolls vertically
+instead of wrapping around. nsv.js is
+responsible for scrolling to the active
+element on page load.
+*****************************************/
+
+ul.nav-tabs.nsv-tabs {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Note: Scrollbar is shown on Firefox, but looks much better anyways. */
+ul.nav-tabs.nsv-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+/****************************************
           COMPONENT: nsv-details
+
+Elements with .nsv-details are hidden on
+small screens, unless they are switched
+on again using .nsv-details-show.          
 *****************************************/
 
 @media (max-width: 575.98px) {
