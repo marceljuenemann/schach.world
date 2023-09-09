@@ -93,7 +93,11 @@ final class LeagueAuthProviderTest extends TestCase
     $this->auth->legacyLogin('s-' . (self::DIVISION_ID + 1), self::DIVISION_MANAGER_PW);
   }
 
-  // TODO: test logout
+  public function testLegacyLogout_clearsSession() {
+    $this->session->set(LeagueAuthProvider::SESSION_KEY_LOGIN, 'test');
+    $this->auth->legacyLogout();
+    $this->assertFalse($this->session->has(LeagueAuthProvider::SESSION_KEY_LOGIN));
+  }
 
   public function testAuthState_noSession_errorState() {
     $this->expectException(AccessDeniedHttpException::class);
@@ -149,5 +153,30 @@ final class LeagueAuthProviderTest extends TestCase
 
     $division = $this->league->divisionById(self::DIVISION_ID);
     $this->assertTrue($this->auth->authState()->isDivisionManager($division));
+  }
+
+  public function testAuthState_requireDivisionManager_forWrongDivision_throws() {
+    $this->request->cookies->set($this->session->getName(), 'FakeSessionId');
+    $this->session->set(LeagueAuthProvider::SESSION_KEY_LOGIN, time());
+    $this->session->set(LeagueAuthProvider::SESSION_KEY_LEAGUE, self::LEAGUE_ID);
+    $this->session->set(LeagueAuthProvider::SESSION_KEY_DIVISION, self::DIVISION_ID);
+
+    $this->expectException(AccessDeniedHttpException::class);
+    $this->expectExceptionMessage('Kein Zugriff auf diese Staffel');
+
+    $division = new Division();
+    $division->id = self::DIVISION_ID + 1;
+    $this->auth->authState()->requireDivisionManager($division);
+  }
+
+  public function testAuthState_requireLeagueManager_forDivisionManager_throws() {
+    $this->request->cookies->set($this->session->getName(), 'FakeSessionId');
+    $this->session->set(LeagueAuthProvider::SESSION_KEY_LOGIN, time());
+    $this->session->set(LeagueAuthProvider::SESSION_KEY_LEAGUE, self::LEAGUE_ID);
+    $this->session->set(LeagueAuthProvider::SESSION_KEY_DIVISION, self::DIVISION_ID);
+
+    $this->expectException(AccessDeniedHttpException::class);
+    $this->expectExceptionMessage('Turnierleiter:innen Zugriff erforderlich');
+    $this->auth->authState()->requireLeagueManager();
   }
 }
