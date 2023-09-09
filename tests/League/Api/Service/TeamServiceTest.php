@@ -13,20 +13,20 @@ class TeamServiceTest extends AbstractApiTest
 
   public function testTeam1() {
     $team = $this->division->teams()[0];
-    $model = $this->service->team($this->league, $team->id);
+    $model = $this->service->team($team);
     $this->assertModel($model, __FILE__, __FUNCTION__);
   }
 
   public function testTeam1_withSubstitute() {
     $this->league->configSubstituteTeams = 1;
     $team = $this->division->teams()[0];
-    $model = $this->service->team($this->league, $team->id);
+    $model = $this->service->team($team);
     $this->assertModel($model, __FILE__, __FUNCTION__);
   }
 
   public function testTeam2() {
     $team = $this->division->teams()[1];
-    $model = $this->service->team($this->league, $team->id);
+    $model = $this->service->team($team);
     $this->assertModel($model, __FILE__, __FUNCTION__);
   }
 }

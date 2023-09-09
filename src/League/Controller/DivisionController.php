@@ -3,7 +3,7 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Api\Service\ScheduleService;
-use Nsv\League\Core\LeagueAuth;
+use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,7 +17,7 @@ class DivisionController extends AbstractLeagueController {
 
   function __construct(
     League $league,
-    LeagueAuth $auth,
+    LeagueAuthState $auth,
     Division $division
   ) {
     parent::__construct($league, $auth);

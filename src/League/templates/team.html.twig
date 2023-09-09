@@ -53,7 +53,7 @@
     {# Venue #}
     <h4 class="mt-4">
       Spiellokal
-      {% if auth.isTeamManager(teamEntity) %}
+      {% if auth.isDivisionManager(teamEntity.division) %}
         <a href="{{ league.uri }}?admin=manndata--&amp;mid={{ team.id }}">{{ _self.editButton() }}</a>
       {% endif %}
     </h4>
@@ -68,11 +68,10 @@
     {% if team.venue.hasAccessibleToilet %}<img {{ nsv.tooltip('WC barrierefrei') }} src='/ligen/_templates/systemicons/barrierefrei_wc.jpg' alt='WC barrierefrei' width='25' height='25'>{% endif %}
     <a href='{{ team.venue.directionsUri|raw }}' target='_blank'>Google Maps</a><br>
 
-
     {# Captain #}
     <h4 class="mt-4">
       Mannschaftsf&uuml;hrer:in
-      {% if auth.isTeamManager(teamEntity) %}
+      {% if auth.isDivisionManager(teamEntity.division) %}
         <a href="{{ league.uri }}?admin=manndata--&amp;mid={{ team.id }}">{{ _self.editButton() }}</a>
       {% endif %}
     </h4>

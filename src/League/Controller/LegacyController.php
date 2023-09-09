@@ -4,7 +4,8 @@ namespace Nsv\League\Controller;
 
 use Doctrine\ORM\EntityNotFoundException;
 use Nsv\League\Core\Encoding;
-use Nsv\League\Core\LeagueAuth;
+use Nsv\League\Core\LeagueAuthProvider;
+use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Entity\League;
 use Nsv\League\Repository\DivisionRepository;
 use Nsv\League\Repository\PlayerRepository;
@@ -27,13 +28,13 @@ class LegacyController extends AbstractLeagueController {
     private TeamRepository $teamRepository,
     private NsvJs $nsvJs,
     League $league,
-    LeagueAuth $auth
+    LeagueAuthState $auth
   ) {
     parent::__construct($league, $auth);
   }
 
   #[Route('ligen/{league}/', name: 'legacy')]
-  public function legacy(Request $request): Response {
+  public function legacy(Request $request, LeagueAuthProvider $authProvider): Response {
     $this->initializeLegacySystem();
     try {
       // Calculate $globals[mod], i.e. which module to call.
@@ -46,10 +47,10 @@ class LegacyController extends AbstractLeagueController {
       } else if ($globals['mod'] === 'staffelleiter') {
         // Handle legacy admin system.
         if ($_GET['admin'] === 'login') {
-          $this->auth->legacyLogin($this->league, $_POST['benutzer'], $_POST['passwort']);
+          $authProvider->legacyLogin($this->league, $_POST['benutzer'], $_POST['passwort']);
           return $this->redirect($this->league->uri() . "?admin=desktop--");
         } else if (str_starts_with($_GET['admin'], 'logout-')) {
-          $this->auth->legacyLogout();
+          $authProvider->legacyLogout();
           return $this->redirect($this->league->uri());
         } else {
           $this->legacyAdminSystem();

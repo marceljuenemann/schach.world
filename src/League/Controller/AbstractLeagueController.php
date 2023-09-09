@@ -3,7 +3,7 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Core\Encoding;
-use Nsv\League\Core\LeagueAuth;
+use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\WebApp\Core\WordPress\Auth as WpAuth;
@@ -22,7 +22,7 @@ class AbstractLeagueController extends AbstractController {
 
   function __construct(
     protected League $league,
-    protected LeagueAuth $auth
+    protected LeagueAuthState $auth
   ) {}
 
   /**
