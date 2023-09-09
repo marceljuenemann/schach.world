@@ -194,7 +194,7 @@ class Division
     }
 
     public function matchDayApiUri(int $round): string {
-      return $this->league->uri() . 'api/' . $this->path() . '/' . $round . '/';
+      return "{$this->league->uri()}api/divisions/{$this->path()}/rounds/$round/";
     }
 
     public function __call($property, $args) {

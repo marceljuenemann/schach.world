@@ -2,11 +2,9 @@
 
 namespace Nsv\League\Controller;
 
-use Nsv\League\Api\Service\MatchDayService;
 use Nsv\League\Api\Service\PlayerService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Api\Service\TeamService;
-use Nsv\League\Entity\Round;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapQueryParameter;
 use Symfony\Component\Routing\Annotation\Route;
@@ -84,70 +82,5 @@ class MainController extends AbstractLeagueController {
     $player = $service->player($this->league, $playerId);
     return $this->debugResponse($player);
   }
-
-  #[Route('{division}/spielplan/', name: 'schedule')]
-  public function schedule(ScheduleService $service): Response {
-    $matchDays = $service->matchDays($this->division);
-    return $this->renderWithLegacySystem('schedule.html.twig', [
-      'matchDays' => $matchDays,
-      'tabs' => $this->divisionTabs('schedule')
-    ]);
-  }
-
-  #[Route('{division}/spielplan/debug/', name: 'schedule_debug')]
-  public function schedule_debug(ScheduleService $service): Response {
-    $matchDays = $service->matchDays($this->division);
-    return $this->debugResponse($matchDays);
-  }
-
-  // TODO: round optional
-  // TODO: requirements, otherwise matches schedule and stats
-  #[Route('{division}/{round}/', name: 'matchday' /*, requirements: ['round' => '/\d+/'] */)]
-  public function matchday(int $round, MatchDayService $service): Response {
-    $matchDay = $this->matchday_internal($service, $round);
-    return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
-      'matchDay' => $matchDay,
-      'tabs' => $this->divisionTabs($round)
-    ]);
-  }
-  
-  #[Route('api/{division}/{round}/', name: 'api_matchday')]
-  public function matchday_api(int $round, MatchDayService $service): Response {
-    return $this->apiResponse($this->matchday_internal($service, $round));
-  }
-
-  private function matchday_internal(MatchDayService $service, int $round) {
-    return $service->matchDay($this->division, $round, function() use ($round) {
-      $this->initializeLegacySystem();
-      $_GET['r'] = $round;
-      require_once('tabelle.inc.php');
-      return Tabelle($this->division->id, $round, true /* TODO: $kreuztabelle = false? */);
-    });
-  }
-
-  /**
-   * Returns the tab navigation configuration for division pages.
-   */
-  private function divisionTabs(mixed $active): array {
-    $tabs = array_map(function(Round $round) use ($active) {
-      return [
-        'label' => 'R' . $round->round,
-        'uri' => "../{$round->round}/",
-        'active' => $active === $round->round
-      ];
-    }, $this->division->rounds());
-    $tabs [] = [
-      'label' => 'Spielplan',
-      'uri' => $this->division->scheduleUri(),
-      'active' => $active === 'schedule'
-    ];
-    $tabs[] = [
-      'label' => 'Statistik',
-      'uri' => $this->division->statsUri(),
-      'active' => $active === 'stats'
-    ];
-    return $tabs;
-  }
-
 }
  
