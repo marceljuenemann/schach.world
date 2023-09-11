@@ -2,20 +2,45 @@ import { Alert, Button, Modal } from "react-bootstrap";
 import React, { ReactElement, ReactNode } from "react";
 import ReactDOM from 'react-dom/client';
 import { ApiError } from "./api";
+import { NsvFormProps } from "./form";
 
 /**
- * Abstract dialog component showing a title and close button.
+ * Abstract dialog component with save and close buttons.  
  */
-export abstract class NsvDialog<S = {}, R = void, P = {}> extends React.Component<P & {
-    onClose: (result?: R) => void
-  }, S & {title: string}> {
+export abstract class NsvDialog<P = {}, R = boolean> extends React.Component<P & {
+  onClose: (result?: R) => void,  // TODO: add saved param
+}, {
+  saveHandler?: () => Promise<R>,
+  saveError?: ApiError
+}> {
+  constructor(props: any) {
+    super(props)
+    this.state = {}
+  }
 
-  protected abstract renderBody(): ReactNode
+  /**
+   * The dialog title.
+   */
+  abstract title(): string
 
-  protected renderFooter(): ReactNode {
+  /**
+   * The body of the dialog. The props contain validation errors and can
+   * also be used to register a handler for the save button. Until a
+   * save handler has been registered, the save button will be disabled.
+   */
+  abstract renderBody(props: NsvFormProps<R>): ReactNode
+
+  renderFooter(): ReactNode {
     return (
       <Modal.Footer>
-        <Button onClick={() => this.props.onClose()}>Schlie&szlig;en</Button>
+        {
+          this.state.saveError && this.state.saveError.messages.map((message, i) => {
+            return <Alert key={i} variant='danger' className="w-100">{ message }</Alert>
+          })
+        }
+        <Button variant="secondary" onClick={() => this.props.onClose()}>Abbrechen</Button>
+        {/* TODO: fix color of disabled button */}
+        <Button variant="primary" onClick={() => this.onSave()} disabled={!this.state.saveHandler}>Speichern</Button>
       </Modal.Footer>
     );
   }
@@ -29,49 +54,26 @@ export abstract class NsvDialog<S = {}, R = void, P = {}> extends React.Componen
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title id="modal-title">
-            { this.state.title }
-          </Modal.Title>
+          <Modal.Title id="modal-title">{ this.title() }</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          { this.renderBody() }
-        </Modal.Body>
+        <Modal.Body> {
+          this.renderBody({
+            onSave: saveHandler => this.setState({saveHandler}),
+            validationErrors: this.state.saveError?.validationErrors
+          })
+        } </Modal.Body>
         { this.renderFooter() }
       </Modal>
     );
   }
-}
 
-export interface NsvSaveDialogState {
-  saveError?: ApiError
-}
-
-/**
- * Abstract dialog with Save and Cancel buttons. 
- */
-export abstract class NsvSaveDialog<S extends NsvSaveDialogState = NsvSaveDialogState, R = boolean, P = {}> extends NsvDialog<S, R, P> {
-
-  protected abstract save(): Promise<R>
-
-  private onSave() {
-    this.save().then(
-      result => this.props.onClose(result),
-      error => this.setState({saveError: ApiError.from(error)})
-    )
-  }
-
-  protected override renderFooter(): ReactNode {
-    return (
-      <Modal.Footer>
-        {
-          this.state.saveError && this.state.saveError.messages.map((message, i) => {
-            return <Alert key={i} variant='danger' className="w-100">{ message }</Alert>
-          })
-        }
-        <Button variant="secondary" onClick={() => this.props.onClose()}>Abbrechen</Button>
-        <Button variant="primary" onClick={() => this.onSave()}>Speichern</Button>
-      </Modal.Footer>
-    );
+  private async onSave() {
+    if (this.state.saveHandler) {
+      this.state.saveHandler().then(
+        result => this.props.onClose(result),
+        error => this.setState({saveError: ApiError.from(error)})
+      )
+    }
   }
 }
 

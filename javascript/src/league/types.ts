@@ -3,8 +3,13 @@ export interface Team {
   name: string,
   zps?: string
   uri: string
-  venue?: any,
+  venue?: TeamVenue,
   captain?: any
+}
+
+export interface TeamVenue {
+  name: string,
+  note: string
 }
 
 export interface Pairing {
