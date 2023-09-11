@@ -41,11 +41,11 @@ function createDialogComponent(elem: HTMLElement, onClose: () => void): ReactEle
   switch (type) {
     case 'SortDivisions':
       return <SortDivisionsDialog onClose={onClose} />;
-      case 'CreateDivision':
-        return <CreateDivisionDialog onClose={onClose} />;
-      case 'UpdateTeamVenueDialog':
-        return <UpdateTeamVenueDialog onClose={onClose} teamId={intAttr('team-id')} />;
-      default:
-        throw new Error(`Invalid NSV dialog type ${type}`);
+    case 'CreateDivision':
+      return <CreateDivisionDialog onClose={onClose} />;
+    case 'UpdateTeamVenue':
+      return <UpdateTeamVenueDialog onClose={onClose} teamId={intAttr('team-id')} />;
+    default:
+      throw new Error(`Invalid NSV dialog type ${type}`);
   }
 }

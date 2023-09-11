@@ -54,7 +54,7 @@
     <h4 class="mt-4">
       Spiellokal
       {% if auth.isDivisionManager(teamEntity.division) %}
-        <a data-nsv-dialog="UpdateTeamVenueDialog" data-nsv-on-save="reload" data-team-id="{{ team.id }}">{{ _self.editButton() }}</a>
+        <a data-nsv-dialog="UpdateTeamVenue" data-nsv-on-save="reload" data-team-id="{{ team.id }}">{{ _self.editButton() }}</a>
       {% endif %}
     </h4>
     {{ team.venue.name }}<br>
