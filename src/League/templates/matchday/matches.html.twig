@@ -3,7 +3,8 @@
 {% if matchDay.pairings %}
   <div class="overflow-auto">
     {{ nsv.detailsToggle('DWZ anzeigen') }}
-    <div class='nsv-table sed-ergebnisse mb-4'>
+    {# TODO: delete sed-ergebnisse-v2 #}
+    <div class='nsv-table sed-ergebnisse sed-ergebnisse-v2 mb-4'>
       {% for pairing in matchDay.pairings %}
         {# Anchors for deeplinking #}
         <a name="p{{ pairing.team1.id }}x{{ pairing.team2.id }}" class="anchor"></a>

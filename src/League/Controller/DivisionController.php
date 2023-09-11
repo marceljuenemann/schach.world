@@ -43,16 +43,25 @@ class DivisionController extends AbstractLeagueController {
 
   #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]
   public function matchday_api(int $round, MatchDayService $service): Response {
-    return $this->apiResponse($this->matchday_internal($service, $round));
+    return $this->apiResponse($this->matchday_model($service, $round));
   }
 
   #[Route('{division}/{round}/', name: 'matchday')]
   public function matchday(int $round, MatchDayService $service): Response {
-    $matchDay = $this->matchday_internal($service, $round);
+    $matchDay = $this->matchday_model($service, $round);
     return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
       'matchDay' => $matchDay,
       'tabs' => $this->divisionTabs($round)
     ]);
+  }
+  
+  private function matchday_model(MatchDayService $service, int $round) {
+    return $service->matchDay($this->division, $round, function() use ($round) {
+      $this->initializeLegacySystem();
+      $_GET['r'] = $round;
+      require_once('tabelle.inc.php');
+      return Tabelle($this->division->id, $round, true /* TODO: $kreuztabelle = false? */);
+    });
   }
 
   #[Route('{division}/', name: 'index')]
@@ -63,15 +72,6 @@ class DivisionController extends AbstractLeagueController {
     } else {
       return $this->schedule($scheduleService);
     }
-  }
-  
-  private function matchday_internal(MatchDayService $service, int $round) {
-    return $service->matchDay($this->division, $round, function() use ($round) {
-      $this->initializeLegacySystem();
-      $_GET['r'] = $round;
-      require_once('tabelle.inc.php');
-      return Tabelle($this->division->id, $round, true /* TODO: $kreuztabelle = false? */);
-    });
   }
 
   /**
