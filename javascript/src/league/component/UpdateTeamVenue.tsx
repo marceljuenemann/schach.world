@@ -20,7 +20,6 @@ class UpdateTeamVenueForm extends React.Component<
     this.props.onSave(async () => {
       // TODO: New API call.
       await this.leagueApi.createDivision(this.state.values)
-      return true
     })
   }
 

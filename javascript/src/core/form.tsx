@@ -2,7 +2,7 @@ import React, { ReactElement } from "react"
 import { FloatingLabel, Form } from "react-bootstrap"
 import { ValidationErrors } from "./api"
 
-export type NsvFormProps<R = boolean> = {
+export type NsvFormProps<R = void> = {
   // Callback to register a save handler with the parent component.
   onSave: (saveHandler: () => Promise<R>) => void,
   validationErrors?: ValidationErrors

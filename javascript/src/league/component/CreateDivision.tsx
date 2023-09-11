@@ -17,7 +17,6 @@ class CreateDivisionForm extends React.Component<
     }
     this.props.onSave(async () => {
       await this.leagueApi.createDivision(this.state.values)
-      return true
     })
   }
 

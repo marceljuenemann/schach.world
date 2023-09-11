@@ -19,7 +19,6 @@ class SortDivisions extends React.Component<
     this.props.onSave(async () => {
       const ids = this.state.divisions.map(division => division.id)
       await this.leagueApi.updateDivisionSortOrder(ids)
-      return true
     })
   }
 

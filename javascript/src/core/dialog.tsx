@@ -4,11 +4,14 @@ import ReactDOM from 'react-dom/client';
 import { ApiError } from "./api";
 import { NsvFormProps } from "./form";
 
+export type DialogResult<R> = {saved: true, value: R}
+export type CloseHandler<R> = (result?: DialogResult<R>) => void
+
 /**
  * Abstract dialog component with save and close buttons.  
  */
-export abstract class NsvDialog<P = {}, R = boolean> extends React.Component<P & {
-  onClose: (result?: R) => void,  // TODO: add saved param
+export abstract class NsvDialog<P = {}, R = void> extends React.Component<P & {
+  onClose: CloseHandler<R>
 }, {
   saveHandler?: () => Promise<R>,
   saveError?: ApiError
@@ -70,7 +73,7 @@ export abstract class NsvDialog<P = {}, R = boolean> extends React.Component<P &
   private async onSave() {
     if (this.state.saveHandler) {
       this.state.saveHandler().then(
-        result => this.props.onClose(result),
+        result => this.props.onClose({saved: true, value: result}),
         error => this.setState({saveError: ApiError.from(error)})
       )
     }
@@ -81,11 +84,10 @@ export abstract class NsvDialog<P = {}, R = boolean> extends React.Component<P &
  * Launches a dialog by creating a new React root element in the DOM.
  * 
  * @param dialogFactory factory for creating the dialog component, given the onClose handler
- * @returns a promise that will resolve once the dialog was closed again. It
- * will resolve to the value returned by the dialog, which will be undefined
- * if the dialog was closed without saving.
+ * @returns a promise that will resolve if the dialog was closed. It might contain a DialogResult
+ *  if the dialog was saved. 
  */
-export function launchDialog<R>(dialogFactory: (onClose: (result?: R) => void) => ReactElement): Promise<R|undefined> {
+export function launchDialog<R>(dialogFactory: (onClose: CloseHandler<R>) => ReactElement): Promise<DialogResult<R>|undefined> {
   return new Promise(resolve => {
     // Create a new root element in the DOM.
     const container = $("<div>")
@@ -93,7 +95,7 @@ export function launchDialog<R>(dialogFactory: (onClose: (result?: R) => void) =
     const root = ReactDOM.createRoot(container[0])
 
     // onClose: Remove root element again and resolve Promise.
-    const onClose = (result?: R) => {
+    const onClose = (result?: DialogResult<R>) => {
       root.unmount()
       container.remove()
       resolve(result)
