@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { LeagueApi } from '../api';
 import { Division } from '../types';
-import { Alert, Col, Form, Row, Spinner } from 'react-bootstrap';
+import { Alert, Col, Form, Row } from 'react-bootstrap';
+import { LoadingComponent } from '../../core/loader';
 
 const CURRENT_ROUND = -1
 
@@ -12,13 +13,11 @@ const CURRENT_ROUND = -1
 export class PairingList extends React.Component<{
     // The ID of the division the user is allowed to edit, or 0 if they may edit all divisions.
     division: number
+    divisions: Array<Division>,
   }, {
-    divisions?: Array<Division>,
     selectedDivision: number,
     selectedRound: number
   }> {
-
-  private leagueApi = new LeagueApi()
 
   constructor(props: any) {
     super(props)
@@ -28,19 +27,9 @@ export class PairingList extends React.Component<{
     }
   }
 
-  componentDidMount() {
-    // TODO: store in flight calls and cancel them when needed.
-    this.leagueApi.fetchPairings().then(divisions => {
-      if (this.props.division) {
-        divisions = divisions.filter(d => d.id === this.props.division)
-      }
-      this.setState({divisions})
-    })
-  }
-
   rounds(): Set<number> {
     let rounds = new Set<number>();
-    for (let division of this.state.divisions || []) {
+    for (let division of this.props.divisions) {
       for (let matchDay of division.matchDays) {
         rounds.add(matchDay.round);
       }
@@ -49,7 +38,7 @@ export class PairingList extends React.Component<{
   }
 
   hasPairings(): boolean {
-    for (let division of this.state.divisions || []) {
+    for (let division of this.props.divisions) {
       for (let matchDay of division.matchDays) {
         if (matchDay.pairings.length) return true
       }
@@ -58,7 +47,7 @@ export class PairingList extends React.Component<{
   }
 
   *pairings() {
-    for (let division of this.state.divisions || []) {
+    for (let division of this.props.divisions) {
       if (this.state.selectedDivision && division.id != this.state.selectedDivision) continue;
       for (let matchDay of division.matchDays) {
         if (this.state.selectedRound > 0 && matchDay.round != this.state.selectedRound) continue;
@@ -71,9 +60,6 @@ export class PairingList extends React.Component<{
   }
 
   render() {
-    if (!this.state.divisions) {
-      return <Spinner animation="border" role="status"></Spinner>
-    }
     if (!this.hasPairings()) {
       return <Alert variant='info'>Noch keine Paarungen hinterlegt</Alert>
     }
@@ -90,7 +76,7 @@ export class PairingList extends React.Component<{
                     aria-label="Staffelauswahl">
                   <option value="0">Alle Staffeln</option>
                   {
-                    Array.from(this.state.divisions).map(division => (
+                    Array.from(this.props.divisions).map(division => (
                       <option key={ division.id } value={ division.id }>{ division.name }</option>
                     ))
                   }
@@ -150,5 +136,17 @@ export class PairingList extends React.Component<{
         </table>
       </div>
     );
+  }
+}
+
+export class PairingListLoader extends LoadingComponent<{division: number}> {
+  private leagueApi = new LeagueApi()
+
+  async loadComponent(): Promise<ReactNode> {
+    let divisions: Array<Division> = await this.leagueApi.fetchPairings()
+    if (this.props.division) {
+      divisions = divisions.filter(d => d.id === this.props.division)
+    }
+    return <PairingList division={this.props.division} divisions={divisions}></PairingList>
   }
 }

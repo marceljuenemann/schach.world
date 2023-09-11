@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 
-import { PairingList } from './league/component/PairingList';
+import { PairingList, PairingListLoader } from './league/component/PairingList';
 import { ReactElement } from 'react';
 import { SortDivisions } from './league/component/SortDivisions';
 import { CreateDivision } from './league/component/CreateDivision';
@@ -17,7 +17,7 @@ function createComponent(elem: HTMLElement): ReactElement {
   switch (elem.getAttribute('data-nsv-component')) {
     case 'PairingList':
       const division = parseInt(elem.getAttribute('data-nsv-division') || '0')
-      return <PairingList division={division} />;
+      return <PairingListLoader division={division} />;
   }
   throw new Error('Invalid NSV component type');
 }
@@ -35,12 +35,13 @@ $('[data-nsv-dialog]').on('click', async event => {
 })
 
 function createDialogComponent(elem: HTMLElement, onClose: () => void): ReactElement {
-  switch (elem.getAttribute('data-nsv-dialog')) {
+  const type = elem.getAttribute('data-nsv-dialog')
+  switch (type) {
     case 'SortDivisions':
       return <SortDivisions onClose={onClose} />;
     case 'CreateDivision':
       return <CreateDivision onClose={onClose} />;
     default:
-      throw new Error('Invalid NSV dialog type');
+      throw new Error(`Invalid NSV dialog type ${type}`);
   }
 }
