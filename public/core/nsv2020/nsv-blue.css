@@ -19,6 +19,8 @@ a, a:hover, .nav-link, .nav-link:hover {
 .btn-primary {
   background-color: #2b6096;
   border-color: #2b6096;
+  --bs-btn-disabled-bg: #2971a8 !important;
+  --bs-btn-disabled-border-color: #2971a8 !important;
 }
 
 .btn-primary:hover,

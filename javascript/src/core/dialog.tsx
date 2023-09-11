@@ -42,7 +42,6 @@ export abstract class NsvDialog<P = {}, R = void> extends React.Component<P & {
           })
         }
         <Button variant="secondary" onClick={() => this.props.onClose()}>Abbrechen</Button>
-        {/* TODO: fix color of disabled button */}
         <Button variant="primary" onClick={() => this.onSave()} disabled={!this.state.saveHandler}>Speichern</Button>
       </Modal.Footer>
     );
