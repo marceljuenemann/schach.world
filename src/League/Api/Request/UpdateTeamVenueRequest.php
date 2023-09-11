@@ -6,16 +6,16 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 class UpdateTeamVenueRequest
 {
-  public string $name;
+  public ?string $name;
 
-  public string $note;
+  public ?string $note;
 
-  public string $street;
+  public ?string $street;
 
-  #[Assert\Length(['min' => 5, 'max' => 5])]
-  public string $postCode;
+  #[Assert\Regex('/^\d{5}$/')]
+  public ?string $postCode;
 
-  public string $city;
+  public ?string $city;
 
-  public string $phone;
+  public ?string $phone;
 }

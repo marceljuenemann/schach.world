@@ -9,6 +9,7 @@ use Nsv\League\Api\Request\UpdateTeamVenueRequest;
 use Nsv\League\Api\Service\DivisionService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Api\Service\TeamService;
+use Nsv\League\Core\Encoding;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\Routing\Annotation\Route;
@@ -41,6 +42,7 @@ class ApiController extends AbstractLeagueController {
   #[Route('divisions/create/', methods: ['POST'], name: 'division_create')]
   public function createDivision(#[MapRequestPayload] CreateDivisionRequest $request, DivisionService $service): Response {
     $this->auth->requireLeagueManager();
+    Encoding::deep_utf8_decode($request);
     $service->createDivision($this->league, $request);
     return $this->apiResponse();
   }
@@ -54,9 +56,9 @@ class ApiController extends AbstractLeagueController {
 
   #[Route('teams/{teamId}/venue/', methods: ['PUT'], name: 'team_venue_update')]
   public function updateTeamVenue(int $teamId, #[MapRequestPayload] UpdateTeamVenueRequest $request, TeamService $service): Response {
-    // TODO: decode UTF8
     $team = $this->league->teamById($teamId);
     $this->auth->requireDivisionManager($team->division);
+    Encoding::deep_utf8_decode($request);
     $service->updateVenue($team, $request);
     return $this->apiResponse();
   }

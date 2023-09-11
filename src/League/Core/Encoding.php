@@ -36,6 +36,17 @@ class Encoding
     });
   }
 
+  /**
+   * Recursively converts all strings in an object from UTF-8 to CHARSET.
+   */
+  public static function deep_utf8_decode($obj) {
+    return self::deep_walk($obj, function(&$val) {
+      if (is_string($val)) {
+        $val = self::utf8_decode($val);
+      }
+    });
+  }
+
   private static function deep_walk(&$obj, $callback) {
     if (is_array($obj) || is_object($obj)) {
       foreach ($obj as $key => &$val) {

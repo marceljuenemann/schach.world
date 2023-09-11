@@ -60,7 +60,7 @@
     {{ team.venue.name }}<br>
     {{ team.venue.street }}<br>
     {{ team.venue.postCode }} {{ team.venue.city }}<br>
-    {% if team.venue.phone %} {{ team.venue.phone }}<br> {% endif %}
+    {% if team.venue.phone %} Tel. {{ team.venue.phone }}<br> {% endif %}
     {% if team.venue.note %} <i>{{ team.venue.note }}</i><br> {% endif %}
     {% if team.venue.isAccessible %}<img {{ nsv.tooltip('Zugang barrierefrei') }} src='/ligen/_templates/systemicons/barrierefrei_zugang.jpg' alt='Zugang barrierefrei' width='25' height='25'>{% endif %}
     {% if team.venue.hasAccessibleToilet %}<img {{ nsv.tooltip('WC barrierefrei') }} src='/ligen/_templates/systemicons/barrierefrei_wc.jpg' alt='WC barrierefrei' width='25' height='25'>{% endif %}
