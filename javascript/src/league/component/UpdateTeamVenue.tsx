@@ -6,37 +6,27 @@ import { LoadingComponent } from "../../core/loader";
 import { TeamVenue } from "../types";
 import { NsvDialog } from "../../core/dialog";
 
-class UpdateTeamVenueForm extends React.Component<
-  {teamId: number, venue: TeamVenue} & NsvFormProps,
-  {values: Record<string, any>}
-> {
-  private leagueApi = new LeagueApi()
-
+class UpdateTeamVenueForm extends NsvForm<{teamId: number, venue: TeamVenue}> {
   constructor(props: any) {
     super(props)
-    this.state = {
-      values: this.props.venue
-    }
-    this.props.onSave(async () => {
-      await this.leagueApi.updateTeamVenue(this.props.teamId, this.state.values as TeamVenue)
-    })
+    this.state = {values: this.props.venue}
+  }
+
+  async save(): Promise<void> {
+    await new LeagueApi().updateTeamVenue(this.props.teamId, this.values as TeamVenue)
   }
 
   render() {
     return (
-      <NsvForm values={this.state.values} onChange={(values) => this.setState({values})} validationErrors={this.props.validationErrors}>
-        {(form: NsvForm) => (
-          <Form>
-            <NsvForm.Control form={form} id="name" label="Name" />
-            <NsvForm.Control form={form} id="street" label="Straße und Hausnummer" />
-            <NsvForm.Control form={form} id="postCode" label="Postleitzahl" />
-            <NsvForm.Control form={form} id="city" label="Stadt" />
-            <NsvForm.Control form={form} id="phone" label="Telefon" />
-            <NsvForm.Control form={form} id="note" label="Anmerkung" />
-          </Form>
-        )}
-      </NsvForm>
-    );
+      <Form>
+        <NsvForm.Control form={this} id="name" label="Name" />
+        <NsvForm.Control form={this} id="street" label="Straße und Hausnummer" />
+        <NsvForm.Control form={this} id="postCode" label="Postleitzahl" />
+        <NsvForm.Control form={this} id="city" label="Stadt" />
+        <NsvForm.Control form={this} id="phone" label="Telefon" />
+        <NsvForm.Control form={this} id="note" label="Anmerkung" />
+      </Form>
+    )
   }
 }
 
@@ -51,6 +41,7 @@ class UpdateTeamVenueLoader extends LoadingComponent<{venue: TeamVenue}, {teamId
   }
 }
 
+// TODO: NsvLoadingDialog for less boilerplate
 export class UpdateTeamVenueDialog extends NsvDialog<{teamId: number}> {
   title = () => 'Spiellokal'
   renderBody(props: NsvFormProps) {

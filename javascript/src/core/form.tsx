@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react"
+import React, { ReactElement, ReactNode } from "react"
 import { FloatingLabel, Form } from "react-bootstrap"
 import { ValidationErrors } from "./api"
 
@@ -9,23 +9,28 @@ export type NsvFormProps<R = void> = {
 }
 
 /**
- * Utility component for building beautiful, consistent forms without the boilerplate.
+ * Utility component for building beautiful and consistent forms without the boilerplate.
  */
-export class NsvForm extends React.Component<{
-    children: (form: NsvForm) => ReactElement,
-    values: Record<string, any>,
-    onChange: (values: Record<string, any>) => void,
-    validationErrors?: ValidationErrors
-  }> {
-
-  onFieldChange(id: string, value: any): void {
-    const values = {...this.props.values}
-    values[id] = value
-    this.props.onChange(values)
+export abstract class NsvForm<P = {}, R = void> extends React.Component<
+  P & NsvFormProps<R>,
+  {values: Record<string, any>}
+> {
+  constructor(props: P & NsvFormProps<R>) {
+    super(props)
+    this.state = {values: {}}
+    this.props.onSave(() => this.save())
   }
 
-  render() {
-    return this.props.children(this)
+  abstract save(): Promise<R>
+
+  get values(): Record<string, any> {
+    return this.state.values
+  }
+
+  onFieldChange(id: string, value: any): void {
+    const values = {...this.state.values}
+    values[id] = value
+    this.setState({values})
   }
 
   /**
@@ -53,7 +58,7 @@ export class NsvForm extends React.Component<{
           <Form.Control
             type={this.props.type || "text"}
             placeholder={this.props.label}
-            value={this.props.form.props.values[this.props.id] || ''}
+            value={this.props.form.state.values[this.props.id] || ''}
             onChange={e => this.props.form.onFieldChange(this.props.id, e.target.value)}
             isValid={this.formErrors && !this.errors.length}
             isInvalid={this.errors.length > 0}
@@ -68,17 +73,12 @@ export class NsvForm extends React.Component<{
       )
     }
 
-    private get form(): NsvForm {
-      return this.props.form
-    }
-
     private get formErrors(): ValidationErrors|undefined {
-      return this.form.props.validationErrors
+      return this.props.form.props.validationErrors
     }
     
     private get errors(): Array<{message: string}> {
-      let errors = this.formErrors && this.formErrors[this.props.id]
-      return errors || []
+      return (this.formErrors && this.formErrors[this.props.id]) || []
     }
   }
 }
