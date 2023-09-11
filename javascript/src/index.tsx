@@ -1,10 +1,11 @@
 import ReactDOM from 'react-dom/client';
 
-import { PairingList } from './league/component/PairingList';
+import { PairingListLoader } from './league/component/PairingList';
 import { ReactElement } from 'react';
-import { SortDivisions } from './league/component/SortDivisions';
-import { CreateDivision } from './league/component/CreateDivision';
+import { SortDivisionsDialog } from './league/component/SortDivisions';
+import { CreateDivisionDialog } from './league/component/CreateDivision';
 import { launchDialog } from './core/dialog';
+import { UpdateTeamVenueDialog } from './league/component/UpdateTeamVenue';
 
 /**
  * All elements with data-nsv-component will be rendered as a React component.
@@ -17,7 +18,7 @@ function createComponent(elem: HTMLElement): ReactElement {
   switch (elem.getAttribute('data-nsv-component')) {
     case 'PairingList':
       const division = parseInt(elem.getAttribute('data-nsv-division') || '0')
-      return <PairingList division={division} />;
+      return <PairingListLoader division={division} />;
   }
   throw new Error('Invalid NSV component type');
 }
@@ -26,7 +27,7 @@ function createComponent(elem: HTMLElement): ReactElement {
  * All elements with a data-nsv-dialog attribute will launch a React dialog.
  */
 $('[data-nsv-dialog]').on('click', async event => {
-  const elem: HTMLElement = event.target
+  const elem: HTMLElement = event.currentTarget
   const result = await launchDialog(onClose => createDialogComponent(elem, onClose))
   // Possibly reload the page.
   if (result && elem.getAttribute('data-nsv-on-save') === 'reload') {
@@ -35,12 +36,16 @@ $('[data-nsv-dialog]').on('click', async event => {
 })
 
 function createDialogComponent(elem: HTMLElement, onClose: () => void): ReactElement {
-  switch (elem.getAttribute('data-nsv-dialog')) {
+  const intAttr = (key: string) => parseInt(elem.getAttribute('data-' + key) as string)
+  const type = elem.getAttribute('data-nsv-dialog')
+  switch (type) {
     case 'SortDivisions':
-      return <SortDivisions onClose={onClose} />;
+      return <SortDivisionsDialog onClose={onClose} />;
     case 'CreateDivision':
-      return <CreateDivision onClose={onClose} />;
+      return <CreateDivisionDialog onClose={onClose} />;
+    case 'UpdateTeamVenue':
+      return <UpdateTeamVenueDialog onClose={onClose} teamId={intAttr('team-id')} />;
     default:
-      throw new Error('Invalid NSV dialog type');
+      throw new Error(`Invalid NSV dialog type ${type}`);
   }
 }

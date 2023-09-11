@@ -2,10 +2,12 @@
 
 namespace Nsv\League\Api\Service;
 
+use Doctrine\ORM\EntityManagerInterface;
 use Nsv\League\Api\Model\Player;
 use Nsv\League\Api\Model\PlayerGame;
 use Nsv\League\Api\Model\Team;
 use Nsv\League\Api\Model\TeamPairing;
+use Nsv\League\Api\Request\UpdateTeamVenueRequest;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity;
 use Nsv\League\Repository\PairingRepository;
@@ -13,7 +15,8 @@ use Nsv\League\Repository\PairingRepository;
 class TeamService
 {
   function __construct(
-    private PairingRepository $pairingRepository
+    private PairingRepository $pairingRepository,
+    private EntityManagerInterface $leagueEntityManager
   ) {}
 
   public function team(Entity\Team $team): Team {
@@ -50,5 +53,17 @@ class TeamService
       }
     }
     return $model;
+  }
+
+  public function updateVenue(Entity\Team $team, UpdateTeamVenueRequest $request) {
+    $team->venueName = $request->name;
+    $team->venueNote = $request->note;
+    $team->venueStreet = $request->street;
+    $team->venuePostCode = $request->postCode;
+    $team->venueCity = $request->city;
+    $team->venuePhone = $request->phone;
+    // TODO: Allow updating accessibility.
+    $this->leagueEntityManager->persist($team);
+    $this->leagueEntityManager->flush();
   }
 }
