@@ -36,6 +36,7 @@ $('[data-nsv-dialog]').on('click', async event => {
 })
 
 function createDialogComponent(elem: HTMLElement, onClose: () => void): ReactElement {
+  const intAttr = (key: string) => parseInt(elem.getAttribute('data-' + key) as string)
   const type = elem.getAttribute('data-nsv-dialog')
   switch (type) {
     case 'SortDivisions':
@@ -43,7 +44,7 @@ function createDialogComponent(elem: HTMLElement, onClose: () => void): ReactEle
       case 'CreateDivision':
         return <CreateDivisionDialog onClose={onClose} />;
       case 'UpdateTeamVenueDialog':
-        return <UpdateTeamVenueDialog onClose={onClose} />;
+        return <UpdateTeamVenueDialog onClose={onClose} teamId={intAttr('team-id')} />;
       default:
         throw new Error(`Invalid NSV dialog type ${type}`);
   }

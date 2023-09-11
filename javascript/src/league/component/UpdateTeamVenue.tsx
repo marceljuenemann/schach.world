@@ -51,9 +51,9 @@ class UpdateTeamVenueLoader extends LoadingComponent<{venue: TeamVenue}, {teamId
   }
 }
 
-export class UpdateTeamVenueDialog extends NsvDialog {
+export class UpdateTeamVenueDialog extends NsvDialog<{teamId: number}> {
   title = () => 'Spiellokal'
   renderBody(props: NsvFormProps) {
-    return <UpdateTeamVenueLoader teamId={3} {...props}></UpdateTeamVenueLoader>
+    return <UpdateTeamVenueLoader {...this.props} {...props}></UpdateTeamVenueLoader>
   } 
 }
