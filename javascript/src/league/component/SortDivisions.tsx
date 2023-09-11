@@ -61,10 +61,13 @@ class SortDivisions extends React.Component<
   }
 }
 
-class SortDivisionsLoader extends LoadingComponent<NsvFormProps> {
-  override async loadComponent(): Promise<ReactNode> {
-    const divisions = await new LeagueApi().fetchPairings();
-    return <SortDivisions divisions={divisions} {...this.props}></SortDivisions>
+class SortDivisionsLoader extends LoadingComponent<{divisions: Array<Division>}, NsvFormProps> {
+  async loadProps() {
+    return {divisions: await new LeagueApi().fetchPairings()}
+  }
+
+  renderWithProps(props: {divisions: Array<Division>}) {
+    return <SortDivisions {...this.props} {...props}></SortDivisions>
   }
 }
 

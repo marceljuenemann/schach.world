@@ -8,8 +8,12 @@ export interface Team {
 }
 
 export interface TeamVenue {
-  name: string,
+  name: string
   note: string
+  street: string
+  postCode: string
+  city: string
+  phone: string
 }
 
 export interface Pairing {

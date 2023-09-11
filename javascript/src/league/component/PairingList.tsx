@@ -139,14 +139,16 @@ export class PairingList extends React.Component<{
   }
 }
 
-export class PairingListLoader extends LoadingComponent<{division: number}> {
-  private leagueApi = new LeagueApi()
-
-  async loadComponent(): Promise<ReactNode> {
-    let divisions: Array<Division> = await this.leagueApi.fetchPairings()
+export class PairingListLoader extends LoadingComponent<{divisions: Array<Division>}, {division: number}> {
+  async loadProps() {
+    let divisions = await new LeagueApi().fetchPairings()
     if (this.props.division) {
       divisions = divisions.filter(d => d.id === this.props.division)
     }
-    return <PairingList division={this.props.division} divisions={divisions}></PairingList>
+    return {divisions}
+  }
+
+  renderWithProps(props: {divisions: Array<Division>}) {
+    return <PairingList {...this.props} {...props}></PairingList>
   }
 }

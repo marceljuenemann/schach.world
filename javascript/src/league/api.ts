@@ -7,6 +7,10 @@ export class LeagueApi extends NsvApi {
     return this.request(`teams/${id}/`)
   }
 
+  async updateTeamVenue(id: number, venue: TeamVenue): Promise<void> {
+    return this.request(`teams/${id}/venue/`, 'PUT', venue)
+  }
+
   async fetchPairings(): Promise<Array<Division>> {
     return this.request('unstable/pairings/')
   }

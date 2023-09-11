@@ -18,8 +18,7 @@ class UpdateTeamVenueForm extends React.Component<
       values: this.props.venue
     }
     this.props.onSave(async () => {
-      // TODO: New API call.
-      await this.leagueApi.createDivision(this.state.values)
+      await this.leagueApi.updateTeamVenue(this.props.teamId, this.state.values as TeamVenue)
     })
   }
 
@@ -29,6 +28,10 @@ class UpdateTeamVenueForm extends React.Component<
         {(form: NsvForm) => (
           <Form>
             <NsvForm.Control form={form} id="name" label="Name" />
+            <NsvForm.Control form={form} id="street" label="Straße und Hausnummer" />
+            <NsvForm.Control form={form} id="postCode" label="Postleitzahl" />
+            <NsvForm.Control form={form} id="city" label="Stadt" />
+            <NsvForm.Control form={form} id="phone" label="Telefon" />
             <NsvForm.Control form={form} id="note" label="Anmerkung" />
           </Form>
         )}
@@ -37,19 +40,20 @@ class UpdateTeamVenueForm extends React.Component<
   }
 }
 
-class UpdateTeamVenueLoader extends LoadingComponent<NsvFormProps> {
-  override async loadComponent(): Promise<ReactNode> {
-    const team = await new LeagueApi().fetchTeam(3) // TODO: ID
-    return <UpdateTeamVenueForm teamId={team.id} venue={team.venue} {...this.props}></UpdateTeamVenueForm>
+class UpdateTeamVenueLoader extends LoadingComponent<{venue: TeamVenue}, {teamId: number} & NsvFormProps> {
+  async loadProps() {
+    const team = await new LeagueApi().fetchTeam(this.props.teamId)
+    return {venue: team.venue} 
+  }
+
+  renderWithProps(props: {venue: TeamVenue}): ReactNode {
+    return <UpdateTeamVenueForm {...this.props} {...props}></UpdateTeamVenueForm>
   }
 }
 
 export class UpdateTeamVenueDialog extends NsvDialog {
-  override title(): string {
-    return 'Spiellokal'
-  }
-
-  renderBody(props: NsvFormProps): ReactNode {
-    return <UpdateTeamVenueLoader {...props}></UpdateTeamVenueLoader>
+  title = () => 'Spiellokal'
+  renderBody(props: NsvFormProps) {
+    return <UpdateTeamVenueLoader teamId={3} {...props}></UpdateTeamVenueLoader>
   } 
 }
