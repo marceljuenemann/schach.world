@@ -53,7 +53,7 @@ class ScheduleService
    * Returns the round closest to the given date, or null if there are no rounds.
    */
   public function closestRound(Entity\Division $division, string $date): Round|null {
-    $rounds = $division->rounds();
+    $rounds = $division->roundsWithDate();
     $dates = array_map(function ($round) { return $round->date; }, $rounds);
     $closestDate = $this->closestDate($dates, $date);
 

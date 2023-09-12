@@ -94,10 +94,8 @@ class Division
     /**
      * Returns all Rounds for which a date has been set.
      */
-    // TODO: Rename to roundsWithDate()
     // TODO: Use Rounds instead of Dates everywhere possible.
-    // TODO: Unit test
-    public function rounds(): array {
+    public function roundsWithDate(): array {
       $maxRound = $this->config('rounds');
       $rounds = [];
       foreach ($this->dates() as $date) {
@@ -113,7 +111,7 @@ class Division
      */
     // TODO: Return without Date if not set.
     public function round(int $round): Round|null {
-      $rounds = $this->rounds();
+      $rounds = $this->roundsWithDate();
       return isset($rounds[$round]) ? $rounds[$round] : null;
     }
 

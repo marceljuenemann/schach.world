@@ -80,7 +80,7 @@ class DivisionController extends AbstractLeagueController {
         'uri' => "../{$round->round}/",  // TODO: Use URI once launched.
         'active' => $active === $round->round
       ];
-    }, $this->division->rounds());
+    }, $this->division->roundsWithDate());
     $tabs [] = [
       'label' => 'Spielplan',
       'uri' => $this->division->scheduleUri(),
