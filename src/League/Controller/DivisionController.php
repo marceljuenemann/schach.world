@@ -67,11 +67,7 @@ class DivisionController extends AbstractLeagueController {
   #[Route('{division}/', name: 'index')]
   public function index(ScheduleService $scheduleService, MatchDayService $matchDayService): Response {
     $round = $scheduleService->closestRound($this->division, date('Y-m-d'));
-    if ($round) {
-      return $this->matchday($round->round, $matchDayService);
-    } else {
-      return $this->schedule($scheduleService);
-    }
+    return $this->matchday($round ? $round->round : 1, $matchDayService);
   }
 
   /**
