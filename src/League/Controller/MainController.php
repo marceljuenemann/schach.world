@@ -77,9 +77,11 @@ class MainController extends AbstractLeagueController {
   public function team_api(TeamService $service, int $teamId): Response {
     $teamEntity = $this->league->teamById($teamId);
     $team = $service->team($teamEntity);
-    $team->captain->mail = '** REDACTED **';
-    $team->captain->phone = '** REDACTED **';
-    $team->captain->phone2 = '** REDACTED **';
+    if (!$this->auth->isDivisionManager()) {
+      $team->captain->mail = '** REDACTED **';
+      $team->captain->phone = '** REDACTED **';
+      $team->captain->phone2 = '** REDACTED **';
+    }
     return $this->apiResponse($team);
   }
 

@@ -38,6 +38,6 @@ export class UpdateTeamVenueDialog extends NsvLoadingDialog<{venue: TeamVenue}, 
   }
 
   renderBodyWithProps(props: {venue: TeamVenue} & NsvFormProps): ReactNode {
-    return <UpdateTeamVenueForm {...this.props} {...props}></UpdateTeamVenueForm>
+    return <UpdateTeamVenueForm {...this.props} {...props} />
   }
 }

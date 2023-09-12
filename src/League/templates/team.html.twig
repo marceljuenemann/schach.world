@@ -70,7 +70,7 @@
     <h4 class="mt-4">
       Mannschaftsf&uuml;hrer:in
       {% if auth.isDivisionManager(teamEntity.division) %}
-        <a href="{{ league.uri }}?admin=manndata--&amp;mid={{ team.id }}">{{ _self.editButton() }}</a>
+        <a data-nsv-dialog="UpdateTeamCaptain" data-nsv-on-save="reload" data-team-id="{{ team.id }}">{{ _self.editButton() }}</a>
       {% endif %}
     </h4>
     {{ team.captain.name }}<br>
