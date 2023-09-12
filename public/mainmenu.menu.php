@@ -12,7 +12,7 @@ $nsvMainmenu = array (
 	"Satzung und Ordnungen" => "ordnungen/",
 	"Mitgliederverwaltung" => "mitgliederverwaltung/",
 
-	"Galerie der Meister:innen" => "ruhmeshalle/",
+	"Ruhmeshalle" => "ruhmeshalle/",
 	"Ehrentafel" => "ehrentafel/",
 	"Vorstandschronik" => "vorstandschronik/"
 ),
