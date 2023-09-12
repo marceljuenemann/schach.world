@@ -3,6 +3,8 @@
 
 {{ legacy_league_header(title) }}
 
+<script src="{{ nsv_js_src() }}" defer></script>
+
 {% block headline %}
   <h2>{{ title }}</h2>
 {% endblock %}
@@ -17,5 +19,3 @@
 {{ nsv.tooltipInit() }}
 
 {{ legacy_league_footer() }}
-
-{# TODO: include nsv.js here #}

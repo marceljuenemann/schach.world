@@ -13,7 +13,7 @@
 {% endmacro %}
 
 {% macro editButton() %}
-  <button class="btn btn-success btn-sm rounded-pill align-bottom ms-2" {{ nsv.tooltip('Bearbeiten') }}>
+  <button class="btn btn-success btn-sm rounded-pill align-bottom ms-2 d-print-none" {{ nsv.tooltip('Bearbeiten') }}>
     {{ nsv.icon('edit') }}
   </button>
 {% endmacro %}
@@ -54,14 +54,14 @@
     <h4 class="mt-4">
       Spiellokal
       {% if auth.isDivisionManager(teamEntity.division) %}
-        <a href="{{ league.uri }}?admin=manndata--&amp;mid={{ team.id }}">{{ _self.editButton() }}</a>
+        <a data-nsv-dialog="UpdateTeamVenue" data-nsv-on-save="reload" data-team-id="{{ team.id }}">{{ _self.editButton() }}</a>
       {% endif %}
     </h4>
-    {% if team.venue.note %} <i>{{ team.venue.note }}</i><br> {% endif %}
     {{ team.venue.name }}<br>
     {{ team.venue.street }}<br>
     {{ team.venue.postCode }} {{ team.venue.city }}<br>
-    {% if team.venue.phone %} {{ team.venue.phone }}<br> {% endif %}
+    {% if team.venue.phone %} Tel. {{ team.venue.phone }}<br> {% endif %}
+    {% if team.venue.note %} <i>{{ team.venue.note }}</i><br> {% endif %}
     {% if team.venue.isAccessible %}<img {{ nsv.tooltip('Zugang barrierefrei') }} src='/ligen/_templates/systemicons/barrierefrei_zugang.jpg' alt='Zugang barrierefrei' width='25' height='25'>{% endif %}
     {% if team.venue.hasAccessibleToilet %}<img {{ nsv.tooltip('WC barrierefrei') }} src='/ligen/_templates/systemicons/barrierefrei_wc.jpg' alt='WC barrierefrei' width='25' height='25'>{% endif %}
     <a href='{{ team.venue.directionsUri|raw }}' target='_blank'>Google Maps</a><br>

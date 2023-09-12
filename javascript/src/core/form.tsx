@@ -1,6 +1,12 @@
 import React, { ReactElement } from "react"
-import { Button, FloatingLabel, Form } from "react-bootstrap"
+import { FloatingLabel, Form } from "react-bootstrap"
 import { ValidationErrors } from "./api"
+
+export type NsvFormProps<R = void> = {
+  // Callback to register a save handler with the parent component.
+  onSave: (saveHandler: () => Promise<R>) => void,
+  validationErrors?: ValidationErrors
+}
 
 /**
  * Utility component for building beautiful, consistent forms without the boilerplate.
@@ -53,7 +59,7 @@ export class NsvForm extends React.Component<{
             isInvalid={this.errors.length > 0}
           />
           {
-            this.errors.map(error => <Form.Control.Feedback type="invalid">{error.message}</Form.Control.Feedback>)
+            this.errors.map(error => <Form.Control.Feedback type="invalid" key={error.message}>{error.message}</Form.Control.Feedback>)
           }
           {
             this.props.type === 'password' && <Form.Text muted>Passwortvorschlag: {this.suggestedPassword}</Form.Text>

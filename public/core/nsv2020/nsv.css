@@ -19,6 +19,7 @@
 }
 
 a, a:hover, .nav-link, .nav-link:hover {
+  /* TODO: darker hover color, also for buttons */
   color: #c32811;
   text-decoration: none;
 }
@@ -53,6 +54,8 @@ a.anchor {
 .btn-primary {
   background-color: #c32811;
   border-color: #c32811;
+  --bs-btn-disabled-bg: #c32811;
+  --bs-btn-disabled-border-color: #c32811;
 }
 
 .btn-primary:hover,
