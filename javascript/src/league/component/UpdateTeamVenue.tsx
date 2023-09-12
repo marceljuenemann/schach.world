@@ -1,10 +1,9 @@
 import { Form } from "react-bootstrap";
 import { NsvForm, NsvFormProps } from "../../core/form";
 import { LeagueApi } from "../api";
-import React, { ReactNode } from "react";
-import { LoadingComponent } from "../../core/loader";
+import { ReactNode } from "react";
 import { TeamVenue } from "../types";
-import { NsvDialog } from "../../core/dialog";
+import { NsvLoadingDialog } from "../../core/dialog";
 
 class UpdateTeamVenueForm extends NsvForm<{teamId: number, venue: TeamVenue}> {
   constructor(props: any) {
@@ -30,21 +29,15 @@ class UpdateTeamVenueForm extends NsvForm<{teamId: number, venue: TeamVenue}> {
   }
 }
 
-class UpdateTeamVenueLoader extends LoadingComponent<{venue: TeamVenue}, {teamId: number} & NsvFormProps> {
+export class UpdateTeamVenueDialog extends NsvLoadingDialog<{venue: TeamVenue}, {teamId: number}> {
+  title = () => 'Spiellokal'
+
   async loadProps() {
     const team = await new LeagueApi().fetchTeam(this.props.teamId)
     return {venue: team.venue} 
   }
 
-  renderWithProps(props: {venue: TeamVenue}): ReactNode {
+  renderBodyWithProps(props: {venue: TeamVenue} & NsvFormProps): ReactNode {
     return <UpdateTeamVenueForm {...this.props} {...props}></UpdateTeamVenueForm>
   }
-}
-
-// TODO: NsvLoadingDialog for less boilerplate
-export class UpdateTeamVenueDialog extends NsvDialog<{teamId: number}> {
-  title = () => 'Spiellokal'
-  renderBody(props: NsvFormProps) {
-    return <UpdateTeamVenueLoader {...this.props} {...props}></UpdateTeamVenueLoader>
-  } 
 }

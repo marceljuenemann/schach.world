@@ -3,6 +3,7 @@ import React, { ReactElement, ReactNode } from "react";
 import ReactDOM from 'react-dom/client';
 import { ApiError } from "./api";
 import { NsvFormProps } from "./form";
+import { LoadingComponent } from "./loader";
 
 export type DialogResult<R> = {saved: true, value: R}
 export type CloseHandler<R> = (result?: DialogResult<R>) => void
@@ -75,6 +76,26 @@ export abstract class NsvDialog<P = {}, R = void> extends React.Component<P & {
         result => this.props.onClose({saved: true, value: result}),
         error => this.setState({saveError: ApiError.from(error)})
       )
+    }
+  }
+}
+
+/**
+ * Dialog with a LoadingComponent as body.
+ */
+export abstract class NsvLoadingDialog<L = {}, P = {}, R = void> extends NsvDialog<P, R> {
+ 
+  abstract loadProps(): Promise<L>
+  abstract renderBodyWithProps(props: L & NsvFormProps<R>): ReactNode
+
+  renderBody(formProps: NsvFormProps<R>): ReactNode {
+    return <NsvLoadingDialog.DelegatingLoader dialog={this} formProps={formProps}></NsvLoadingDialog.DelegatingLoader>
+  }
+
+  static DelegatingLoader = class<L, R> extends LoadingComponent<L, {dialog: NsvLoadingDialog<L, any, R>, formProps: NsvFormProps<R>}> {
+    loadProps = () => this.props.dialog.loadProps()
+    renderWithProps(props: L) {
+      return this.props.dialog.renderBodyWithProps({...this.props.formProps, ...props})
     }
   }
 }
