@@ -1,0 +1,132 @@
+Nsv\League\Api\Model\MatchDay Object
+(
+    [round] => 4
+    [date] => 2025-03-03
+    [uri] => /ligen/test/?staffel=40&r=4
+    [uriPdf] => /ligen/test/?staffel=40&r=4&ausgabe=pdf
+    [uriApi] => /ligen/test/api/divisions/test-division/rounds/4/
+    [pairings] => Array
+        (
+            [0] => Nsv\League\Api\Model\Pairing Object
+                (
+                    [id] => 88
+                    [round] => 4
+                    [team1] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 47
+                            [name] => Team
+                            [zps] => 
+                            [uri] => /ligen/test/m/47/
+                            [apiUri] => /ligen/test/api/teams/47/
+                        )
+
+                    [team2] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 48
+                            [name] => Team 2
+                            [zps] => 
+                            [uri] => /ligen/test/m/48/
+                            [apiUri] => /ligen/test/api/teams/48/
+                        )
+
+                    [host] => 
+                    [result] => 
+                    [result1] => 
+                    [result2] => 
+                    [comment] => 
+                    [wasMoved] => 1
+                    [moveDate] => 2025-04-05
+                )
+
+            [1] => Nsv\League\Api\Model\Pairing Object
+                (
+                    [id] => 89
+                    [round] => 4
+                    [team1] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 47
+                            [name] => Team
+                            [zps] => 
+                            [uri] => /ligen/test/m/47/
+                            [apiUri] => /ligen/test/api/teams/47/
+                        )
+
+                    [team2] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 48
+                            [name] => Team 2
+                            [zps] => 
+                            [uri] => /ligen/test/m/48/
+                            [apiUri] => /ligen/test/api/teams/48/
+                        )
+
+                    [host] => 
+                    [result] => 
+                    [result1] => 
+                    [result2] => 
+                    [comment] => 
+                    [wasMoved] => 1
+                    [moveDate] => 
+                )
+
+            [2] => Nsv\League\Api\Model\Pairing Object
+                (
+                    [id] => 90
+                    [round] => 4
+                    [team1] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 47
+                            [name] => Team
+                            [zps] => 
+                            [uri] => /ligen/test/m/47/
+                            [apiUri] => /ligen/test/api/teams/47/
+                        )
+
+                    [team2] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 48
+                            [name] => Team 2
+                            [zps] => 
+                            [uri] => /ligen/test/m/48/
+                            [apiUri] => /ligen/test/api/teams/48/
+                        )
+
+                    [host] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 48
+                            [name] => Team 2
+                            [zps] => 
+                            [uri] => /ligen/test/m/48/
+                            [apiUri] => /ligen/test/api/teams/48/
+                        )
+
+                    [result] => 
+                    [result1] => 
+                    [result2] => 
+                    [comment] => 
+                    [wasMoved] => 
+                    [moveDate] => 
+                )
+
+        )
+
+    [ranking] => Array
+        (
+            [test] => ranking
+        )
+
+    [nextMatchDay] => Nsv\League\Api\Model\MatchDay Object
+        (
+            [round] => 5
+            [date] => 
+            [uri] => /ligen/test/?staffel=40&r=5
+            [uriPdf] => /ligen/test/?staffel=40&r=5&ausgabe=pdf
+            [uriApi] => /ligen/test/api/divisions/test-division/rounds/5/
+            [pairings] => Array
+                (
+                )
+
+        )
+
+    [lastModified] => 2023-09-12 16:58:11
+)

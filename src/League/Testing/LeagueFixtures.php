@@ -264,6 +264,8 @@ class LeagueFixtures extends Fixture
     $game6->board = 3;
     $game6->player1 = $player2;
     $game6->player2 = $player1;
+    $game6->result1 = Result::UNKNOWN;
+    $game6->result2 = Result::UNKNOWN;
     $manager->persist($game6);
 
     // Game against NULL player.
