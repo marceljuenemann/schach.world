@@ -13,6 +13,7 @@ use Nsv\League\Entity\League;
 use Nsv\League\Entity\LegacyUser;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Player;
+use Nsv\League\Entity\RoundComment;
 use Nsv\League\Entity\Team;
 
 /**
@@ -131,6 +132,13 @@ class LeagueFixtures extends Fixture
     $date3->date = '2025-03-03';
     $manager->persist($date3);
 
+    $roundComment3 = new RoundComment();
+    $roundComment3->division = $division;
+    $roundComment3->round = 3;
+    $roundComment3->text = "Lorem Ipsum\nDolor sit amit";
+    $roundComment3->lastModified = '2030-01-01 15:42:00';
+    $manager->persist($roundComment3);
+
     // ROUND 4: Round with the same date.
     $date4 = new Date();
     $date4->league = $league;
@@ -200,12 +208,14 @@ class LeagueFixtures extends Fixture
     $player2->birth = '18.03.2004';
     $manager->persist($player2);
 
-    // PLAYER 3: Without any games or rating
+    // PLAYER 3: Without any games or rating, late registered
     $player3 = new Player();
     $player3->team = $team1;
     $player3->number = 2;
     $player3->lastName = 'Spiellos';
     $player3->firstName = 'Max';
+    $player3->lateRegistrationDivision = $division;
+    $player3->lateRegistrationRound = 3;
     $manager->persist($player3);
     
     /////////////////////////////////////
