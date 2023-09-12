@@ -92,6 +92,15 @@ class Division
     }
 
     /**
+     * Returns the Round object for the given round.
+     */
+    public function round(int $round): Round|null {
+      $dates = $this->dates();
+      $date = isset($dates[$round]) ? $dates[$round]->date : null;
+      return new Round($this, $round, $date);
+    }
+
+    /**
      * Returns all Rounds for which a date has been set.
      */
     // TODO: Use Rounds instead of Dates everywhere possible.
@@ -107,30 +116,6 @@ class Division
     }
 
     /**
-     * Returns the Round object for the given round, if it has a date set.
-     */
-    // TODO: Return without Date if not set.
-    public function round(int $round): Round|null {
-      $rounds = $this->roundsWithDate();
-      return isset($rounds[$round]) ? $rounds[$round] : null;
-    }
-
-    /**
-     * Returns the date for a specific round, if one is configured.
-     */
-    // TODO: Use rounds() instead
-    // TODO: Unit test.
-    public function dateOfRound(int $round): string|null {
-      // Note: Dates are ordered by division, so dates for the entire tournament come last.
-      foreach ($this->league->dates as $date) {
-        if ($date->round != $round) continue;
-        if ($date->division && $date->division != $this) continue;
-        return $date->date;
-      }
-      return null;
-    }    
-
-    /**
      * Yields all rounds that happen on the given date.
      */
     // TODO: Use rounds() instead
@@ -142,6 +127,7 @@ class Division
       }
     }
 
+    // TODO: move to round
     public function roundComment(int $round): RoundComment|null {
       foreach ($this->roundComments as $comment) {
         if ($comment->round == $round) {
