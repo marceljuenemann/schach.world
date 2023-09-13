@@ -26,7 +26,6 @@ class RoundComment
   #[ORM\Column(name: 'text')]
   private string $text;
 
-  // TODO: Use proper DateTime type?
   #[ORM\Column(name: 'timestamp')]
   private string $lastModified;
 

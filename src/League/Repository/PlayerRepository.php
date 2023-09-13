@@ -32,10 +32,7 @@ class PlayerRepository extends ServiceEntityRepository
    * Returns all players who were late registered.
    */
   public function findLateRegistrations(Division $division, int $minRound, int $maxRound) {
-    return $this->getEntityManager()
-      ->createQueryBuilder()
-      ->select('p')
-      ->from(Player::class, 'p')
+    return $this->createQueryBuilder('p')
       ->where('p.lateRegistrationDivision = :division')
       ->andWhere('p.lateRegistrationRound >= :minRound')
       ->andWhere('p.lateRegistrationRound <= :maxRound')

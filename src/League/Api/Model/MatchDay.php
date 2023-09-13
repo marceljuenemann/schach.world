@@ -17,7 +17,7 @@ class MatchDay
   public string $uriApi;
 
   public array $pairings = array();
-  public ?array $ranking;
+  public ?array $legacyRanking;
   public ?string $comment;
   public ?array $lateRegisteredPlayers;
   public ?MatchDay $nextMatchDay;

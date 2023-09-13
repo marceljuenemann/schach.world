@@ -1,20 +1,20 @@
 {% import "macros.html.twig" as nsv %}
 
 {# TODO: rewrite the model from scratch to something nicer #}
-{% if matchDay.ranking %}
+{% if matchDay.legacyRanking|default(false) %}
   <div class='overflow-auto mb-4'>
     <table class='nsv-table borders-bold text-center text-nowrap'>
       <tr>
         {# Header row #}
-        {% for col in matchDay.ranking[0] %}
+        {% for col in matchDay.legacyRanking[0] %}
           <th class='
             {{ loop.index0 == 1 ? 'border-right-bold' : '' }}
-            {{ (loop.index0 >= 2 and loop.index0 < matchDay.ranking[0]|length - 2) ? 'nsv-details' : '' }}
-            {{ loop.index0 == matchDay.ranking[0]|length - 2 ? 'border-left-bold' : '' }}
+            {{ (loop.index0 >= 2 and loop.index0 < matchDay.legacyRanking[0]|length - 2) ? 'nsv-details' : '' }}
+            {{ loop.index0 == matchDay.legacyRanking[0]|length - 2 ? 'border-left-bold' : '' }}
           '>{{ col }}</th>
         {% endfor %}
       </tr>
-      {% for row in matchDay.ranking|slice(1) %}
+      {% for row in matchDay.legacyRanking|slice(1) %}
         <tr>
           {# Rank and name #}
           <td class="text-end sed_{{ row[row|length - 1] }}">{{ row[0] }}</td>
