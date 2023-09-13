@@ -22,9 +22,9 @@ class DivisionTest extends TestCase
     $this->division->league = $this->league;
   }
 
-  public function testMatchDayUri() {
-    $this->assertEquals("/ligen/test-league/?staffel=42&r=", $this->division->matchDayUri());
-    $this->assertEquals("/ligen/test-league/?staffel=42&r=2", $this->division->matchDayUri(2));
+  public function testUri() {
+    $this->assertEquals("/ligen/test-league/?staffel=42&r=", $this->division->uri());
+    $this->assertEquals("/ligen/test-league/?staffel=42&r=2", $this->division->round(2)->uri());
   }
 
   public function testDates() {

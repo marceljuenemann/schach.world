@@ -139,24 +139,16 @@ class Division
       }
     }
 
+    public function uri(): string {
+      return $this->league->uri() . "?staffel={$this->id}&r=";
+    }
+
     public function scheduleUri() {
       return $this->league->uri() . $this->path() . "/spielplan/";
     }
 
     public function statsUri() {
       return $this->league->uri() . "?staffel={$this->id}&r=statistik";
-    }
-
-    public function matchDayUri($round = ''): string {
-      return $this->league->uri() . "?staffel={$this->id}&r=$round";
-    }
-
-    public function matchDayPdfUri($round = ''): string {
-      return $this->league->uri() . "?staffel={$this->id}&r=$round&ausgabe=pdf";
-    }
-
-    public function matchDayApiUri(int $round): string {
-      return "{$this->league->uri()}api/divisions/{$this->path()}/rounds/$round/";
     }
 
     public function __call($property, $args) {

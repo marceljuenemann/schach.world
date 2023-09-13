@@ -22,8 +22,16 @@ class Round
     }
     return null;
   }
-  
-  function uri(): string {
-    return $this->division->matchDayUri($this->round);
+
+  public function uri(): string {
+    return $this->division->uri() . $this->round;
+  }
+
+  public function pdfUri(): string {
+    return $this->division->league->uri() . "?staffel={$this->division->id}&r={$this->round}&ausgabe=pdf";
+  }
+
+  public function apiUri(): string {
+    return $this->division->league->uri() . "api/divisions/{$this->division->path()}/rounds/{$this->round}/";
   }
 }

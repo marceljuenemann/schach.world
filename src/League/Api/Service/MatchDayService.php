@@ -20,7 +20,7 @@ class MatchDayService
   ) {}
 
   public function matchDay(Entity\Division $division, int $round, callable $legacyRanking) {
-    $model = MatchDay::create($division, $round, $division->round($round)->date);
+    $model = MatchDay::fromRound($division->round($round));
 
     $pairings = $this->pairingRepository->findByRound($division, $round);
     foreach ($pairings as $pairing) {

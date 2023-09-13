@@ -4,7 +4,7 @@ Array
         (
             [id] => 44
             [name] => Test Division
-            [matchDayUri] => /ligen/test/?staffel=44&r=
+            [uri] => /ligen/test/?staffel=44&r=
             [scheduleUri] => /ligen/test/test-division/spielplan/
             [statsUri] => /ligen/test/?staffel=44&r=statistik
             [matchDays] => Array

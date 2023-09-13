@@ -101,14 +101,11 @@ class ScheduleService
   /**
    * Returns all match days for a specific division.
    */
-  // TODO: rename to divisionSchedule
-  public function matchDays(Entity\Division $division): array {
+  public function divisionSchedule(Entity\Division $division): array {
     $matchDays = [];
-    $dates = $division->dates();
     foreach ($division->pairings as $pairing) {
       if (!isset($matchDays[$pairing->round])) {
-        $date = isset($dates[$pairing->round]) ? $dates[$pairing->round]->date : null;
-        $matchDays[$pairing->round] = MatchDay::create($division, $pairing->round, $date);
+        $matchDays[$pairing->round] = MatchDay::fromRound($division->round($pairing->round));
       }
       $matchDays[$pairing->round]->pairings[] = Pairing::fromEntity($pairing);
     }

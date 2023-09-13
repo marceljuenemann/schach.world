@@ -23,7 +23,7 @@ class TeamPairing
     $result->id = $pairing->id;
     $result->round = $pairing->round;
     $result->date = $pairing->wasMoved() ? $pairing->moveDate() : $pairing->division->round($pairing->round)->date;
-    $result->uri = $pairing->division->matchDayUri($pairing->round);
+    $result->uri = $pairing->division->round($pairing->round)->uri();
 
     if ($pairing->team1 == $team) {
       $result->home = true;

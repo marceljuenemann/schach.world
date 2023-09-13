@@ -28,7 +28,7 @@ class DivisionController extends AbstractLeagueController {
 
   #[Route('{division}/spielplan/', name: 'schedule')]
   public function schedule(ScheduleService $service): Response {
-    $matchDays = $service->matchDays($this->division);
+    $matchDays = $service->divisionSchedule($this->division);
     return $this->renderWithLegacySystem('schedule.html.twig', [
       'matchDays' => $matchDays,
       'tabs' => $this->divisionTabs('schedule')
@@ -37,7 +37,7 @@ class DivisionController extends AbstractLeagueController {
 
   #[Route('{division}/spielplan/debug/', name: 'schedule_debug')]
   public function schedule_debug(ScheduleService $service): Response {
-    $matchDays = $service->matchDays($this->division);
+    $matchDays = $service->divisionSchedule($this->division);
     return $this->debugResponse($matchDays);
   }
 

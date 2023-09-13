@@ -23,19 +23,14 @@ class MatchDay
   public ?MatchDay $nextMatchDay;
   public ?string $lastModified;
 
-  // TODO: Only allow creation from round object, can move some functions there.
-  public static function create(Division $division, int $round, string|null $date = null): MatchDay {
-    $result = new MatchDay();
-    $result->round = $round;
-    $result->date = $date;
-    $result->uri = $division->matchDayUri($round);
-    $result->uriPdf = $division->matchDayPdfUri($round);
-    $result->uriApi = $division->matchDayApiUri($round);
-    return $result;
-  }
-
   public static function fromRound(Round $round): MatchDay {
-    return self::create($round->division, $round->round, $round->date);
+    $result = new MatchDay();
+    $result->round = $round->round;
+    $result->date = $round->date;
+    $result->uri = $round->uri();
+    $result->uriPdf = $round->pdfUri();
+    $result->uriApi = $round->apiUri();
+    return $result;
   }
 
   public static function compare(MatchDay $a, MatchDay $b) {

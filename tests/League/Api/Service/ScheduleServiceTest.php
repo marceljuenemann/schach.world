@@ -63,8 +63,8 @@ class ScheduleServiceTest extends AbstractApiTest
     $this->assertModel($matchDays, __FILE__, __FUNCTION__);
   }
 
-  public function testMatchDays() {
-    $matchDays = $this->service->matchDays($this->division);
+  public function testDivisionSchedule() {
+    $matchDays = $this->service->divisionSchedule($this->division);
     $this->assertModel($matchDays, __FILE__, __FUNCTION__);
   }
 
