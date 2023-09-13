@@ -47,11 +47,9 @@ class MatchDayService
 
     if ($division->config('showNextMatchDay')) {
       $nextRound = $division->round($round + 1);
-      if ($nextRound) {
-        $model->nextMatchDay = MatchDay::fromRound($nextRound);
-        foreach ($this->pairingRepository->findByRounds([$nextRound]) as $pairing) {
-          $model->nextMatchDay->pairings[] = Pairing::fromEntity($pairing);
-        }
+      $model->nextMatchDay = MatchDay::fromRound($nextRound);
+      foreach ($nextRound->pairings() as $pairing) {
+        $model->nextMatchDay->pairings[] = Pairing::fromEntity($pairing);
       }
     }
 
