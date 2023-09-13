@@ -1,0 +1,71 @@
+{% import "macros.html.twig" as nsv %}
+
+{% if matchDay.pairings %}
+  <div class="overflow-auto">
+    {{ nsv.detailsToggle('DWZ anzeigen') }}
+    {# TODO: delete sed-ergebnisse-v2 #}
+    <div class='nsv-table sed-ergebnisse sed-ergebnisse-v2 mb-4'>
+      {% for pairing in matchDay.pairings %}
+        {# Anchors for deeplinking #}
+        <a name="p{{ pairing.team1.id }}x{{ pairing.team2.id }}" class="anchor"></a>
+        <a name="p{{ pairing.team2.id }}x{{ pairing.team1.id }}" class="anchor"></a>
+
+        {# Header with team names and result #}
+        <div class='nsv-table-header d-flex text-nowrap {{ loop.first ? 'mt-2' : 'mt-4' }}'>
+          <div class='sed-mannschaft text-start'>{{ nsv.link(pairing.team1) }}</div>
+          <div class='text-center'>&nbsp;{{ pairing.result|default(':') }}&nbsp;</div>
+          <div class='sed-mannschaft text-end'>{{ nsv.link(pairing.team2) }}</div>
+        </div>
+
+        {% if pairing.wasBye %}
+          <div class='nsv-table-cell text-center'>(kampflos)</div>
+        {% elseif pairing.games|default(false) %}
+          {# Games #}
+          {% for game in pairing.games %}
+            <div class='d-flex'>
+              {# TODO: Show player number on mobile as well (if switched on) #}
+              {% if division.config('playerNumbers') %}
+                <div class='nsv-table-cell sed-passnr d-none d-sm-block'>{{ game.player1.number|default('') }}</div>
+              {% endif %}
+              <div class='nsv-table-cell sed-spieler sed-spieler1'>
+                {% if game.player1 %}
+                  <div class='sed-name'>{{ nsv.link(game.player1) }}</div>
+                  <div class='sed-dwz nsv-details align-self-end'>{% if game.player1.dwz %}({{ game.player1.dwz }}){% endif %}</div>
+                {% endif %}
+              </div>
+              <div class='nsv-table-cell sed-ergebnis'>
+                {{ game.result1 }} : {{ game.result2 }}
+              </div>
+              <div class='nsv-table-cell sed-spieler sed-spieler2'>
+                {% if game.player2 %}
+                  <div class='sed-dwz nsv-details align-self-end'>{% if game.player2.dwz %}({{ game.player2.dwz }}){% endif %}</div>
+                  <div class='sed-name'>{{ nsv.link(game.player2) }}</div>
+                {% endif %}
+              </div>
+              {% if division.config('playerNumbers') %}
+                <div class='nsv-table-cell sed-passnr d-none d-sm-block'>{{ game.player2.number|default('') }}</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        {% else %}
+          {% if pairing.wasMoved %}
+            {% if pairing.moveDate %}
+              <div class='nsv-table-cell text-center'>Verlegt auf den {{ pairing.moveDate|date('d.m.Y') }}</div>
+            {% else %}
+              <div class='nsv-table-cell text-center'>Spiel verlegt</div>
+            {% endif %}
+          {% endif %}
+          {% if pairing.host %}
+            <div class='nsv-table-cell text-center'>Ausrichter: {{ nsv.link(pairing.host) }}</div>
+          {% endif %}
+        {% endif %}
+
+        {% if pairing.comment %}
+          <p class="fst-italic mt-2">{{ pairing.comment }}</p>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% else %}
+  {{ nsv.message('F&uuml;r diese Runde sind keine Paarungen hinterlegt') }}
+{% endif %}

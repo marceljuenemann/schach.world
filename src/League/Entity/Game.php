@@ -3,6 +3,7 @@
 namespace Nsv\League\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Nsv\League\Core\Result;
 
 /**
  * A game happens between two players and is part of a pairing.
@@ -32,10 +33,10 @@ class Game
     private ?Player $player2 = null;
 
     #[ORM\Column(name: 'ergebnis1')]
-    private ?string $result1;
+    private string $result1 = Result::UNKNOWN;
 
     #[ORM\Column(name: 'ergebnis2')]
-    private ?string $result2;
+    private string $result2 = Result::UNKNOWN;
 
     public function __call($property, $args) {
       return $this->$property;

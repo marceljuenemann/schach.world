@@ -1,6 +1,6 @@
 Nsv\League\Api\Model\Player Object
 (
-    [id] => 27
+    [id] => 42
     [name] => Spiellos, Max
     [lastName] => Spiellos
     [firstName] => Max
@@ -11,15 +11,16 @@ Nsv\League\Api\Model\Player Object
     [elo] => 
     [gender] => 
     [isGuest] => 
-    [uri] => /ligen/test/s/27/
+    [lateRegistrationRound] => 3
+    [uri] => /ligen/test/s/42/
     [dsbUri] => 
     [team] => Nsv\League\Api\Model\Team Object
         (
-            [id] => 35
+            [id] => 55
             [name] => Team
-            [zps] => 0
-            [uri] => /ligen/test/m/35/
-            [apiUri] => /ligen/test/api/teams/35/
+            [zps] => 
+            [uri] => /ligen/test/m/55/
+            [apiUri] => /ligen/test/api/teams/55/
         )
 
 )

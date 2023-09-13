@@ -35,7 +35,7 @@ class PlayerGame
     $result->opponentTeam = Team::fromEntity($result->home ? $game->pairing->team2 : $game->pairing->team1);
     $opponentPlayer = $result->home ? $game->player2 : $game->player1;
     $result->opponentPlayer = $opponentPlayer ? Player::fromEntity($opponentPlayer) : null;
-    $result->uri = $game->pairing->division->matchDayUri($result->round);
+    $result->uri = $game->pairing->division->round($result->round)->uri();
     return $result;
   }
 }

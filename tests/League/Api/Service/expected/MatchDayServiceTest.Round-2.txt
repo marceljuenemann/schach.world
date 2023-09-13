@@ -1,0 +1,247 @@
+Nsv\League\Api\Model\MatchDay Object
+(
+    [round] => 2
+    [date] => 2024-12-31
+    [uri] => /ligen/test/?staffel=44&r=2
+    [uriPdf] => /ligen/test/?staffel=44&r=2&ausgabe=pdf
+    [uriApi] => /ligen/test/api/divisions/test-division/rounds/2/
+    [pairings] => Array
+        (
+            [0] => Nsv\League\Api\Model\Pairing Object
+                (
+                    [id] => 108
+                    [round] => 2
+                    [team1] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 56
+                            [name] => Team 2
+                            [zps] => 
+                            [uri] => /ligen/test/m/56/
+                            [apiUri] => /ligen/test/api/teams/56/
+                        )
+
+                    [team2] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 55
+                            [name] => Team
+                            [zps] => 
+                            [uri] => /ligen/test/m/55/
+                            [apiUri] => /ligen/test/api/teams/55/
+                        )
+
+                    [host] => 
+                    [result] => 
+                    [result1] => 
+                    [result2] => 
+                    [comment] => 
+                    [wasMoved] => 
+                    [moveDate] => 
+                    [games] => Array
+                        (
+                            [0] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 1
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 41
+                                            [name] => Salzmann, Jan
+                                            [lastName] => Salzmann
+                                            [firstName] => Jan
+                                            [title] => 
+                                            [number] => 201
+                                            [zps] => 70101-1023
+                                            [dwz] => 1500
+                                            [elo] => 
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/test/s/41/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 40
+                                            [name] => GM Dr. Jünemann, Marcel
+                                            [lastName] => Jünemann
+                                            [firstName] => Marcel
+                                            [title] => GM Dr.
+                                            [number] => 1
+                                            [zps] => 70156-117
+                                            [dwz] => 1942
+                                            [elo] => 2020
+                                            [gender] => w
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/test/s/40/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
+                                        )
+
+                                    [result1] => +
+                                    [result2] => -
+                                )
+
+                            [1] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 2
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 41
+                                            [name] => Salzmann, Jan
+                                            [lastName] => Salzmann
+                                            [firstName] => Jan
+                                            [title] => 
+                                            [number] => 201
+                                            [zps] => 70101-1023
+                                            [dwz] => 1500
+                                            [elo] => 
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/test/s/41/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 40
+                                            [name] => GM Dr. Jünemann, Marcel
+                                            [lastName] => Jünemann
+                                            [firstName] => Marcel
+                                            [title] => GM Dr.
+                                            [number] => 1
+                                            [zps] => 70156-117
+                                            [dwz] => 1942
+                                            [elo] => 2020
+                                            [gender] => w
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/test/s/40/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
+                                        )
+
+                                    [result1] => ?
+                                    [result2] => ?
+                                )
+
+                            [2] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 3
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 41
+                                            [name] => Salzmann, Jan
+                                            [lastName] => Salzmann
+                                            [firstName] => Jan
+                                            [title] => 
+                                            [number] => 201
+                                            [zps] => 70101-1023
+                                            [dwz] => 1500
+                                            [elo] => 
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/test/s/41/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 40
+                                            [name] => GM Dr. Jünemann, Marcel
+                                            [lastName] => Jünemann
+                                            [firstName] => Marcel
+                                            [title] => GM Dr.
+                                            [number] => 1
+                                            [zps] => 70156-117
+                                            [dwz] => 1942
+                                            [elo] => 2020
+                                            [gender] => w
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/test/s/40/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
+                                        )
+
+                                    [result1] => ?
+                                    [result2] => ?
+                                )
+
+                            [3] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 4
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 41
+                                            [name] => Salzmann, Jan
+                                            [lastName] => Salzmann
+                                            [firstName] => Jan
+                                            [title] => 
+                                            [number] => 201
+                                            [zps] => 70101-1023
+                                            [dwz] => 1500
+                                            [elo] => 
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/test/s/41/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+                                        )
+
+                                    [player2] => 
+                                    [result1] => +
+                                    [result2] => -
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [legacyRanking] => Array
+        (
+            [test] => ranking
+        )
+
+    [lateRegisteredPlayers] => Array
+        (
+            [55] => Array
+                (
+                    [0] => Nsv\League\Api\Model\Player Object
+                        (
+                            [id] => 42
+                            [name] => Spiellos, Max
+                            [lastName] => Spiellos
+                            [firstName] => Max
+                            [title] => 
+                            [number] => 2
+                            [zps] => 
+                            [dwz] => 
+                            [elo] => 
+                            [gender] => 
+                            [isGuest] => 
+                            [lateRegistrationRound] => 3
+                            [uri] => /ligen/test/s/42/
+                            [dsbUri] => 
+                        )
+
+                )
+
+        )
+
+    [nextMatchDay] => Nsv\League\Api\Model\MatchDay Object
+        (
+            [round] => 3
+            [date] => 2025-03-03
+            [uri] => /ligen/test/?staffel=44&r=3
+            [uriPdf] => /ligen/test/?staffel=44&r=3&ausgabe=pdf
+            [uriApi] => /ligen/test/api/divisions/test-division/rounds/3/
+            [pairings] => Array
+                (
+                )
+
+        )
+
+    [lastModified] => 2023-09-12 18:11:53
+)

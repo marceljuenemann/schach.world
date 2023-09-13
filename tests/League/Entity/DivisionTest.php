@@ -22,9 +22,9 @@ class DivisionTest extends TestCase
     $this->division->league = $this->league;
   }
 
-  public function testMatchDayUri() {
-    $this->assertEquals("/ligen/test-league/?staffel=42&r=", $this->division->matchDayUri());
-    $this->assertEquals("/ligen/test-league/?staffel=42&r=2", $this->division->matchDayUri(2));
+  public function testUri() {
+    $this->assertEquals("/ligen/test-league/?staffel=42&r=", $this->division->uri());
+    $this->assertEquals("/ligen/test-league/?staffel=42&r=2", $this->division->round(2)->uri());
   }
 
   public function testDates() {
@@ -34,6 +34,18 @@ class DivisionTest extends TestCase
     $fake2 = $this->addDate(2, '2020-02-03');
 
     $this->assertEquals([1 => $date1, 2 => $date2], $this->division->dates());
+  }
+
+  public function testRoundsWithDate() {
+    $date2 = $this->addDate(2, '2020-01-01');
+    $date1 = $this->addDate(1, '2020-02-02');
+    $date5 = $this->addDate(5, '2020-03-03');
+    $this->division->configRounds = 3;  // Only 3 rounds
+
+    $rounds = $this->division->roundsWithDate();
+    $this->assertEquals([2, 1], array_keys($rounds));
+    $this->assertEquals('2020-01-01', $rounds[2]->date);
+    $this->assertEquals('2020-02-02', $rounds[1]->date);
   }
 
   private function addDate($round, $date, $division = null) {

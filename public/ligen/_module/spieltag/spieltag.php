@@ -83,7 +83,7 @@
         SED_Error ( "Der Spieltag scheint nicht zu existieren!", true );
 
     // Keine Kreuztabelle anzeigen?
-    // TODO: doesn't seem to work anymore?
+    // TODO: doesn't seem to work anymore? Vermutlich wegen des typos in der nächsten Zeile :D
     if ( count ( $daten ['paarungen'] ) > 6 )
         $kreuztablle = false;
     if ( $staffel ['id'] == 807 ) $kreuztabelle = false; // hack

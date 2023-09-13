@@ -10,8 +10,10 @@ use Nsv\League\Entity\Date;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\Game;
 use Nsv\League\Entity\League;
+use Nsv\League\Entity\LegacyUser;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Player;
+use Nsv\League\Entity\RoundComment;
 use Nsv\League\Entity\Team;
 
 /**
@@ -28,6 +30,11 @@ class LeagueFixtures extends Fixture
     $league->name = "Test League";
     $league->path = "test";
     $league->organisation = '7';
+    $league->manager = new LegacyUser();
+    $league->manager->name = 'League Admin';
+    $league->manager->password = md5('123456');
+    $league->manager->mail = 'league@example.com';
+    $manager->persist($league->manager);
     $manager->persist($league);
 
     /////////////////////////////////////
@@ -38,6 +45,11 @@ class LeagueFixtures extends Fixture
     $division->league = $league;
     $division->name = "Test Division";
     $division->sortId = 1;
+    $division->manager = new LegacyUser();
+    $division->manager->name = 'Division Admin';
+    $division->manager->password = md5('654321');
+    $division->manager->mail = 'division@example.com';
+    $manager->persist($division->manager);
     $manager->persist($division);
 
     /////////////////////////////////////
@@ -77,6 +89,7 @@ class LeagueFixtures extends Fixture
     $pairing1a->team2 = $team2;
     $pairing1a->result1 = 2.5;
     $pairing1a->result2 = 1.5;
+    $pairing1a->lastModified = date('Y-m-d H:i:s');
     $manager->persist($pairing1a);
 
     // PAIRING 1B: Match without result.
@@ -85,6 +98,7 @@ class LeagueFixtures extends Fixture
     $pairing1b->round = 1;
     $pairing1b->team1 = $team2;
     $pairing1b->team2 = $team1;
+    $pairing1b->lastModified = date('Y-m-d H:i:s');
     $manager->persist($pairing1b);
 
     // ROUND 2:
@@ -108,6 +122,7 @@ class LeagueFixtures extends Fixture
     $pairing2->round = 2;
     $pairing2->team1 = $team2;
     $pairing2->team2 = $team1;
+    $pairing2->lastModified = date('Y-m-d H:i:s');
     $manager->persist($pairing2);
 
     // ROUND 3: Round with a date, but no games.
@@ -117,11 +132,18 @@ class LeagueFixtures extends Fixture
     $date3->date = '2025-03-03';
     $manager->persist($date3);
 
-    // ROUND 4: Round without a date.
+    $roundComment3 = new RoundComment();
+    $roundComment3->division = $division;
+    $roundComment3->round = 3;
+    $roundComment3->text = "Lorem Ipsum\nDolor sit amit";
+    $roundComment3->lastModified = '2030-01-01 15:42:00';
+    $manager->persist($roundComment3);
+
+    // ROUND 4: Round with the same date.
     $date4 = new Date();
     $date4->league = $league;
     $date4->round = 4;
-    $date4->date = '2025-04-04';
+    $date4->date = '2025-03-03';
     $manager->persist($date4);
 
     // PAIRING 4A: Custom date
@@ -131,6 +153,7 @@ class LeagueFixtures extends Fixture
     $pairing4A->team1 = $team1;
     $pairing4A->team2 = $team2;
     $pairing4A->customDate = '2025-04-05';
+    $pairing4A->lastModified = date('Y-m-d H:i:s');
     $manager->persist($pairing4A);
 
     // PAIRING 4B: Moved without date set
@@ -140,6 +163,7 @@ class LeagueFixtures extends Fixture
     $pairing4B->team1 = $team1;
     $pairing4B->team2 = $team2;
     $pairing4B->customDate = Pairing::UNKNOWN_DATE;
+    $pairing4B->lastModified = date('Y-m-d H:i:s');
     $manager->persist($pairing4B);
 
     // PAIRING 4C: Custom host.
@@ -149,6 +173,7 @@ class LeagueFixtures extends Fixture
     $pairing4C->team1 = $team1;
     $pairing4C->team2 = $team2;
     $pairing4C->host = $team2;
+    $pairing4C->lastModified = date('Y-m-d H:i:s');
     $manager->persist($pairing4C);
 
     /////////////////////////////////////
@@ -183,12 +208,14 @@ class LeagueFixtures extends Fixture
     $player2->birth = '18.03.2004';
     $manager->persist($player2);
 
-    // PLAYER 3: Without any games or rating
+    // PLAYER 3: Without any games or rating, late registered
     $player3 = new Player();
     $player3->team = $team1;
     $player3->number = 2;
     $player3->lastName = 'Spiellos';
     $player3->firstName = 'Max';
+    $player3->lateRegistrationDivision = $division;
+    $player3->lateRegistrationRound = 3;
     $manager->persist($player3);
     
     /////////////////////////////////////
@@ -247,6 +274,8 @@ class LeagueFixtures extends Fixture
     $game6->board = 3;
     $game6->player1 = $player2;
     $game6->player2 = $player1;
+    $game6->result1 = Result::UNKNOWN;
+    $game6->result2 = Result::UNKNOWN;
     $manager->persist($game6);
 
     // Game against NULL player.

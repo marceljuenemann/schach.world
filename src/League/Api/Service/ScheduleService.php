@@ -6,6 +6,7 @@ use Nsv\League\Api\Model\Division;
 use Nsv\League\Api\Model\MatchDay;
 use Nsv\League\Api\Model\Pairing;
 use Nsv\League\Entity;
+use Nsv\League\Entity\Round;
 use Nsv\League\Repository\PairingRepository;
 
 class ScheduleService
@@ -49,6 +50,25 @@ class ScheduleService
   }
 
   /**
+   * Returns the round closest to the given date, or null if there are no rounds.
+   */
+  public function closestRound(Entity\Division $division, string $date): Round|null {
+    $rounds = $division->roundsWithDate();
+    $dates = array_map(function ($round) { return $round->date; }, $rounds);
+    $closestDate = $this->closestDate($dates, $date);
+
+    // If there are multiple rounds on the closest date, then we return the
+    // last one if the date is in the past, and the first one otherwise.
+    if ($closestDate < $date) $rounds = array_reverse($rounds);
+    foreach ($rounds as $round) {
+      if ($round->date === $closestDate) {
+        return $round;
+      }
+    }
+    return null;
+  }
+
+  /**
    * Returns an overview of matches in the league for the given date.
    * 
    * @param league the league for which to generate the overview
@@ -61,9 +81,11 @@ class ScheduleService
     $roundsToFetch = [];
     foreach ($league->divisions as $division) {
       $result[$division->id] = Division::fromEntity($division);
-      foreach ($division->roundsOnDate($date) as $round) {
-        $roundsToFetch[] = $round;
-        $result[$division->id]->matchDays[$round->round] = MatchDay::fromRound($round);
+      foreach ($division->roundsWithDate() as $round) {
+        if ($round->date == $date) {
+          $roundsToFetch[] = $round;
+          $result[$division->id]->matchDays[$round->round] = MatchDay::fromRound($round);
+        }
       }
     }
 
@@ -79,14 +101,11 @@ class ScheduleService
   /**
    * Returns all match days for a specific division.
    */
-  // TODO: rename to divisionSchedule
-  public function matchDays(Entity\Division $division): array {
+  public function divisionSchedule(Entity\Division $division): array {
     $matchDays = [];
-    $dates = $division->dates();
     foreach ($division->pairings as $pairing) {
       if (!isset($matchDays[$pairing->round])) {
-        $date = isset($dates[$pairing->round]) ? $dates[$pairing->round]->date : null;
-        $matchDays[$pairing->round] = MatchDay::create($division, $pairing->round, $date);
+        $matchDays[$pairing->round] = MatchDay::fromRound($division->round($pairing->round));
       }
       $matchDays[$pairing->round]->pairings[] = Pairing::fromEntity($pairing);
     }

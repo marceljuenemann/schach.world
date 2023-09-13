@@ -8,7 +8,8 @@ class Division
 {
   public int $id;
   public string $name;
-  public string $matchDayUri;
+  public string $uri;
+  public string $scheduleUri;
   public string $statsUri;
 
   public ?array $matchDays;
@@ -29,7 +30,8 @@ class Division
     $result = new Division();
     $result->id = $division->id;
     $result->name = $division->name;
-    $result->matchDayUri = $division->matchDayUri();
+    $result->uri = $division->uri();
+    $result->scheduleUri = $division->scheduleUri();
     $result->statsUri = $division->statsUri();
     return $result;
   }

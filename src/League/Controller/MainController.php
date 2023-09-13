@@ -50,18 +50,6 @@ class MainController extends AbstractLeagueController {
     ]);
   }
 
-  #[Route('{division}/spielplan/', name: 'schedule')]
-  public function schedule(ScheduleService $service): Response {
-    $matchDays = $service->matchDays($this->division);
-    return $this->renderWithLegacySystem('schedule.html.twig', ['matchDays' => $matchDays]);
-  }
-
-  #[Route('{division}/spielplan/debug/', name: 'schedule_debug')]
-  public function schedule_debug(ScheduleService $service): Response {
-    $matchDays = $service->matchDays($this->division);
-    return $this->debugResponse($matchDays);
-  }
-
   #[Route('m/{teamId}/', name: 'team')]
   public function team(TeamService $service, int $teamId): Response {
     $teamEntity = $this->league->teamById($teamId);
@@ -95,3 +83,4 @@ class MainController extends AbstractLeagueController {
     return $this->debugResponse($player);
   }
 }
+ 

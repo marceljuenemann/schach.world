@@ -1,0 +1,160 @@
+Nsv\League\Api\Model\MatchDay Object
+(
+    [round] => 3
+    [date] => 2025-03-03
+    [uri] => /ligen/test/?staffel=44&r=3
+    [uriPdf] => /ligen/test/?staffel=44&r=3&ausgabe=pdf
+    [uriApi] => /ligen/test/api/divisions/test-division/rounds/3/
+    [pairings] => Array
+        (
+        )
+
+    [legacyRanking] => Array
+        (
+            [test] => ranking
+        )
+
+    [comment] => Lorem Ipsum
+Dolor sit amit
+    [lateRegisteredPlayers] => Array
+        (
+            [55] => Array
+                (
+                    [0] => Nsv\League\Api\Model\Player Object
+                        (
+                            [id] => 42
+                            [name] => Spiellos, Max
+                            [lastName] => Spiellos
+                            [firstName] => Max
+                            [title] => 
+                            [number] => 2
+                            [zps] => 
+                            [dwz] => 
+                            [elo] => 
+                            [gender] => 
+                            [isGuest] => 
+                            [lateRegistrationRound] => 3
+                            [uri] => /ligen/test/s/42/
+                            [dsbUri] => 
+                        )
+
+                )
+
+        )
+
+    [nextMatchDay] => Nsv\League\Api\Model\MatchDay Object
+        (
+            [round] => 4
+            [date] => 2025-03-03
+            [uri] => /ligen/test/?staffel=44&r=4
+            [uriPdf] => /ligen/test/?staffel=44&r=4&ausgabe=pdf
+            [uriApi] => /ligen/test/api/divisions/test-division/rounds/4/
+            [pairings] => Array
+                (
+                    [0] => Nsv\League\Api\Model\Pairing Object
+                        (
+                            [id] => 109
+                            [round] => 4
+                            [team1] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 55
+                                    [name] => Team
+                                    [zps] => 
+                                    [uri] => /ligen/test/m/55/
+                                    [apiUri] => /ligen/test/api/teams/55/
+                                )
+
+                            [team2] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 56
+                                    [name] => Team 2
+                                    [zps] => 
+                                    [uri] => /ligen/test/m/56/
+                                    [apiUri] => /ligen/test/api/teams/56/
+                                )
+
+                            [host] => 
+                            [result] => 
+                            [result1] => 
+                            [result2] => 
+                            [comment] => 
+                            [wasMoved] => 1
+                            [moveDate] => 2025-04-05
+                        )
+
+                    [1] => Nsv\League\Api\Model\Pairing Object
+                        (
+                            [id] => 110
+                            [round] => 4
+                            [team1] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 55
+                                    [name] => Team
+                                    [zps] => 
+                                    [uri] => /ligen/test/m/55/
+                                    [apiUri] => /ligen/test/api/teams/55/
+                                )
+
+                            [team2] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 56
+                                    [name] => Team 2
+                                    [zps] => 
+                                    [uri] => /ligen/test/m/56/
+                                    [apiUri] => /ligen/test/api/teams/56/
+                                )
+
+                            [host] => 
+                            [result] => 
+                            [result1] => 
+                            [result2] => 
+                            [comment] => 
+                            [wasMoved] => 1
+                            [moveDate] => 
+                        )
+
+                    [2] => Nsv\League\Api\Model\Pairing Object
+                        (
+                            [id] => 111
+                            [round] => 4
+                            [team1] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 55
+                                    [name] => Team
+                                    [zps] => 
+                                    [uri] => /ligen/test/m/55/
+                                    [apiUri] => /ligen/test/api/teams/55/
+                                )
+
+                            [team2] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 56
+                                    [name] => Team 2
+                                    [zps] => 
+                                    [uri] => /ligen/test/m/56/
+                                    [apiUri] => /ligen/test/api/teams/56/
+                                )
+
+                            [host] => Nsv\League\Api\Model\Team Object
+                                (
+                                    [id] => 56
+                                    [name] => Team 2
+                                    [zps] => 
+                                    [uri] => /ligen/test/m/56/
+                                    [apiUri] => /ligen/test/api/teams/56/
+                                )
+
+                            [result] => 
+                            [result1] => 
+                            [result2] => 
+                            [comment] => 
+                            [wasMoved] => 
+                            [moveDate] => 
+                        )
+
+                )
+
+        )
+
+    [lastModified] => 2030-01-01 16:42:00
+)

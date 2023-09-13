@@ -79,6 +79,7 @@ class Player
   /**
    * If the player was registered late, the round to which they were registered.
    */
+  #[ORM\Column(name: 'nmR')]
   private ?int $lateRegistrationRound;
 
   public function uri() {

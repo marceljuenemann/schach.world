@@ -47,6 +47,9 @@ class Pairing
     #[ORM\Column(name: 'bemerkung', length: 200)]
     private ?string $comment;
 
+    #[ORM\Column(name: 'timestamp')]
+    private ?string $lastModified;
+
     /**
      * If the pairing is hosted by someone other than team1, this field is set.
      */

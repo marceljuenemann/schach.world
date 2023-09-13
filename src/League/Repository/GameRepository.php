@@ -31,6 +31,7 @@ class GameRepository extends ServiceEntityRepository
       ->leftJoin('g.player1', 's1')
       ->leftJoin('g.player2', 's2')
       ->where('g.player1 = :player OR g.player2 = :player')
+      ->orderBy('p.round, g.board')
       ->setParameter('player', $player)
       ->getQuery()
       ->getResult();

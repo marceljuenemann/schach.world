@@ -1,0 +1,46 @@
+{% import "macros.html.twig" as nsv %}
+
+{# TODO: rewrite the model from scratch to something nicer #}
+{% if matchDay.legacyRanking|default(false) %}
+  <div class='overflow-auto mb-4'>
+    <table class='nsv-table borders-bold text-center text-nowrap'>
+      <tr>
+        {# Header row #}
+        {% for col in matchDay.legacyRanking[0] %}
+          <th class='
+            {{ loop.index0 == 1 ? 'border-right-bold' : '' }}
+            {{ (loop.index0 >= 2 and loop.index0 < matchDay.legacyRanking[0]|length - 2) ? 'nsv-details' : '' }}
+            {{ loop.index0 == matchDay.legacyRanking[0]|length - 2 ? 'border-left-bold' : '' }}
+          '>{{ col }}</th>
+        {% endfor %}
+      </tr>
+      {% for row in matchDay.legacyRanking|slice(1) %}
+        <tr>
+          {# Rank and name #}
+          <td class="text-end sed_{{ row[row|length - 1] }}">{{ row[0] }}</td>
+          <td class="text-start border-right-bold">
+            <a href='{{ league.uri }}{{ row[1].url }}'>{{ row[1].text }}</a>
+          </td>
+
+          {# Results #}
+          {% for results in row|slice(2, row|length - 5) %}
+            {% if results == 'xxx' %}
+              <td style="background: #ddd; min-width: 34px" class="nsv-details"></td>
+            {% else %}
+              <td class="nsv-details">
+                {% for result in results %}
+                  <a class="d-block" href='{{ league.uri }}{{ result.url }}' {{ nsv.tooltip(result.title) }}>{{ result.text }}</a>
+                {% endfor %}
+              </td>
+            {% endif %}
+          {% endfor %}
+
+          {# Scores #}
+          <td class="border-left-bold">{{ row[row|length - 3] }}</td>
+          <td>{{ row[row|length - 2] }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+    {{ nsv.detailsToggle('Kreuztabelle') }}
+  </div>
+{% endif %}

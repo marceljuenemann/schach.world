@@ -6,6 +6,7 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Criteria;
 use Doctrine\Persistence\ManagerRegistry;
+use Nsv\League\Entity\Division;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Team;
 
@@ -35,6 +36,27 @@ class PairingRepository extends ServiceEntityRepository
       ->addOrderBy('p.host', 'ASC')
       ->addOrderBy('p.id', 'ASC')
       ->setParameter('team', $team)
+      ->getQuery()
+      ->getResult();
+  }
+
+  /**
+   * Returns all pairings for the specified round, also fetching all games and players.
+   */
+  public function findByRound(Division $division, int $round) {
+    return $this->getEntityManager()
+      ->createQueryBuilder()
+      ->select('p, g, s1, s2')
+      ->from(Pairing::class, 'p')
+      ->leftJoin('p.games', 'g')
+      // leftJoin to allow NULL players.
+      ->leftJoin('g.player1', 's1')
+      ->leftJoin('g.player2', 's2')
+      ->where('p.division = :division AND p.round = :round')
+      ->addOrderBy('p.host', 'ASC')
+      ->addOrderBy('p.id', 'ASC')
+      ->setParameter('division', $division)
+      ->setParameter('round', $round)
       ->getQuery()
       ->getResult();
   }
