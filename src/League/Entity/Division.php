@@ -115,18 +115,6 @@ class Division
       return $rounds;
     }
 
-    /**
-     * Yields all rounds that happen on the given date.
-     */
-    // TODO: Use rounds() instead
-    public function roundsOnDate(string $date) {
-      foreach ($this->dates() as $matchDate) {
-        if ($matchDate->date == $date) {
-          yield new Round($this, $matchDate->round, $matchDate->date);
-        }
-      }
-    }
-
     // TODO: move to round
     public function roundComment(int $round): RoundComment|null {
       foreach ($this->roundComments as $comment) {

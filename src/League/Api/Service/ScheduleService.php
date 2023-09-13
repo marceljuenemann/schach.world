@@ -81,9 +81,11 @@ class ScheduleService
     $roundsToFetch = [];
     foreach ($league->divisions as $division) {
       $result[$division->id] = Division::fromEntity($division);
-      foreach ($division->roundsOnDate($date) as $round) {
-        $roundsToFetch[] = $round;
-        $result[$division->id]->matchDays[$round->round] = MatchDay::fromRound($round);
+      foreach ($division->roundsWithDate() as $round) {
+        if ($round->date == $date) {
+          $roundsToFetch[] = $round;
+          $result[$division->id]->matchDays[$round->round] = MatchDay::fromRound($round);
+        }
       }
     }
 
