@@ -95,15 +95,17 @@ class Division
    * Returns the Round object for the given round.
    */
   public function round(int $round): Round {
-    $dates = $this->dates();
-    $date = isset($dates[$round]) ? $dates[$round]->date : null;
-    return new Round($this, $round, $date);
+    return $this->createRound($round, $this->dates());
+  }
+
+  private function createRound(int $round, array $dates): Round {
+    return new Round($this, $round, isset($dates[$round]) ? $dates[$round]->date : null);
   }
 
   /**
    * Returns all Rounds for which a date has been set.
    */
-  // TODO: Use Rounds instead of Dates everywhere possible.
+  // TODO: Not really used anymore, replace with something more useful for the remaining use cases.
   public function roundsWithDate(): array {
     $maxRound = $this->config('rounds');
     $rounds = [];
@@ -112,6 +114,22 @@ class Division
         $rounds[$date->round] = new Round($this, $date->round, $date->date);
       }
     }
+    return $rounds;
+  }
+
+  /**
+   * Returns all Rounds with at least one pairing.
+   */
+  public function roundsWithPairing(): array {
+    $dates = $this->dates();
+    $rounds = [];
+    foreach ($this->pairings as $pairing) {
+      $round = $pairing->round;
+      if (!isset($rounds[$round])) {
+        $rounds[$round] = $this->createRound($round, $dates);
+      }
+    }
+    uasort($rounds, [Date::class, 'compare']);
     return $rounds;
   }
 

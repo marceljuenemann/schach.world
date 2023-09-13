@@ -74,13 +74,14 @@ class DivisionController extends AbstractLeagueController {
    * Returns the tab navigation configuration for division pages.
    */
   private function divisionTabs(mixed $active): array {
+    $rounds = $this->division->roundsWithPairing();
     $tabs = array_map(function(Round $round) use ($active) {
       return [
         'label' => 'R' . $round->round,
         'uri' => "../{$round->round}/",  // TODO: Use URI once launched.
         'active' => $active === $round->round
       ];
-    }, $this->division->roundsWithDate());
+    }, $rounds);
     $tabs [] = [
       'label' => 'Spielplan',
       'uri' => $this->division->scheduleUri(),

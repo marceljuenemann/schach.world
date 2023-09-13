@@ -2,8 +2,8 @@ Nsv\League\Api\Model\MatchDay Object
 (
     [round] => 5
     [date] => 
-    [uri] => /ligen/test/?staffel=44&r=5
-    [uriPdf] => /ligen/test/?staffel=44&r=5&ausgabe=pdf
+    [uri] => /ligen/test/?staffel=46&r=5
+    [uriPdf] => /ligen/test/?staffel=46&r=5&ausgabe=pdf
     [uriApi] => /ligen/test/api/divisions/test-division/rounds/5/
     [pairings] => Array
         (
@@ -18,8 +18,8 @@ Nsv\League\Api\Model\MatchDay Object
         (
             [round] => 6
             [date] => 
-            [uri] => /ligen/test/?staffel=44&r=6
-            [uriPdf] => /ligen/test/?staffel=44&r=6&ausgabe=pdf
+            [uri] => /ligen/test/?staffel=46&r=6
+            [uriPdf] => /ligen/test/?staffel=46&r=6&ausgabe=pdf
             [uriApi] => /ligen/test/api/divisions/test-division/rounds/6/
             [pairings] => Array
                 (

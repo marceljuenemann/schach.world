@@ -51,11 +51,13 @@ class ScheduleService
 
   /**
    * Returns the round closest to the given date, or null if there are no rounds.
+   * Only rounds with at least one pairing are taken into account.
    */
   public function closestRound(Entity\Division $division, string $date): Round|null {
-    $rounds = $division->roundsWithDate();
-    $dates = array_map(function ($round) { return $round->date; }, $rounds);
+    $rounds = $division->roundsWithPairing();
+    $dates = array_filter(array_map(function ($round) { return $round->date; }, $rounds));
     $closestDate = $this->closestDate($dates, $date);
+    if (!$closestDate) return null;
 
     // If there are multiple rounds on the closest date, then we return the
     // last one if the date is in the past, and the first one otherwise.

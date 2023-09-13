@@ -114,7 +114,7 @@ class LeagueFixtures extends Fixture
     $date2b->league = $league;
     $date2b->division = $division;
     $date2b->round = 2;
-    $date2b->date = '2024-12-31';
+    $date2b->date = '2024-02-02';
     $manager->persist($date2b);
 
     $pairing2 = new Pairing();
@@ -139,11 +139,11 @@ class LeagueFixtures extends Fixture
     $roundComment3->lastModified = '2030-01-01 15:42:00';
     $manager->persist($roundComment3);
 
-    // ROUND 4: Round with the same date.
+    // ROUND 4: Round with the same date as round 2.
     $date4 = new Date();
     $date4->league = $league;
     $date4->round = 4;
-    $date4->date = '2025-03-03';
+    $date4->date = '2024-02-02';
     $manager->persist($date4);
 
     // PAIRING 4A: Custom date

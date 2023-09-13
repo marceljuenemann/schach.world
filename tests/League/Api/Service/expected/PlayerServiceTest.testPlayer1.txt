@@ -1,6 +1,6 @@
 Nsv\League\Api\Model\Player Object
 (
-    [id] => 40
+    [id] => 46
     [name] => GM Dr. Jünemann, Marcel
     [lastName] => Jünemann
     [firstName] => Marcel
@@ -12,15 +12,15 @@ Nsv\League\Api\Model\Player Object
     [gender] => w
     [isGuest] => 
     [lateRegistrationRound] => 
-    [uri] => /ligen/test/s/40/
+    [uri] => /ligen/test/s/46/
     [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
     [team] => Nsv\League\Api\Model\Team Object
         (
-            [id] => 55
+            [id] => 59
             [name] => Team
             [zps] => 
-            [uri] => /ligen/test/m/55/
-            [apiUri] => /ligen/test/api/teams/55/
+            [uri] => /ligen/test/m/59/
+            [apiUri] => /ligen/test/api/teams/59/
         )
 
     [games] => Array
@@ -35,16 +35,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => 0
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 56
+                            [id] => 60
                             [name] => Team 2
                             [zps] => 
-                            [uri] => /ligen/test/m/56/
-                            [apiUri] => /ligen/test/api/teams/56/
+                            [uri] => /ligen/test/m/60/
+                            [apiUri] => /ligen/test/api/teams/60/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 41
+                            [id] => 47
                             [name] => Salzmann, Jan
                             [lastName] => Salzmann
                             [firstName] => Jan
@@ -56,11 +56,11 @@ Nsv\League\Api\Model\Player Object
                             [gender] => m
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/41/
+                            [uri] => /ligen/test/s/47/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                         )
 
-                    [uri] => /ligen/test/?staffel=44&r=1
+                    [uri] => /ligen/test/?staffel=46&r=1
                 )
 
             [1] => Nsv\League\Api\Model\PlayerGame Object
@@ -73,16 +73,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => ½
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 56
+                            [id] => 60
                             [name] => Team 2
                             [zps] => 
-                            [uri] => /ligen/test/m/56/
-                            [apiUri] => /ligen/test/api/teams/56/
+                            [uri] => /ligen/test/m/60/
+                            [apiUri] => /ligen/test/api/teams/60/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 41
+                            [id] => 47
                             [name] => Salzmann, Jan
                             [lastName] => Salzmann
                             [firstName] => Jan
@@ -94,11 +94,11 @@ Nsv\League\Api\Model\Player Object
                             [gender] => m
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/41/
+                            [uri] => /ligen/test/s/47/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                         )
 
-                    [uri] => /ligen/test/?staffel=44&r=1
+                    [uri] => /ligen/test/?staffel=46&r=1
                 )
 
             [2] => Nsv\League\Api\Model\PlayerGame Object
@@ -111,16 +111,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => 1
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 56
+                            [id] => 60
                             [name] => Team 2
                             [zps] => 
-                            [uri] => /ligen/test/m/56/
-                            [apiUri] => /ligen/test/api/teams/56/
+                            [uri] => /ligen/test/m/60/
+                            [apiUri] => /ligen/test/api/teams/60/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 41
+                            [id] => 47
                             [name] => Salzmann, Jan
                             [lastName] => Salzmann
                             [firstName] => Jan
@@ -132,11 +132,11 @@ Nsv\League\Api\Model\Player Object
                             [gender] => m
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/41/
+                            [uri] => /ligen/test/s/47/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                         )
 
-                    [uri] => /ligen/test/?staffel=44&r=1
+                    [uri] => /ligen/test/?staffel=46&r=1
                 )
 
             [3] => Nsv\League\Api\Model\PlayerGame Object
@@ -149,16 +149,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => +
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 56
+                            [id] => 60
                             [name] => Team 2
                             [zps] => 
-                            [uri] => /ligen/test/m/56/
-                            [apiUri] => /ligen/test/api/teams/56/
+                            [uri] => /ligen/test/m/60/
+                            [apiUri] => /ligen/test/api/teams/60/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 41
+                            [id] => 47
                             [name] => Salzmann, Jan
                             [lastName] => Salzmann
                             [firstName] => Jan
@@ -170,11 +170,11 @@ Nsv\League\Api\Model\Player Object
                             [gender] => m
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/41/
+                            [uri] => /ligen/test/s/47/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                         )
 
-                    [uri] => /ligen/test/?staffel=44&r=2
+                    [uri] => /ligen/test/?staffel=46&r=2
                 )
 
             [4] => Nsv\League\Api\Model\PlayerGame Object
@@ -187,16 +187,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => ?
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 56
+                            [id] => 60
                             [name] => Team 2
                             [zps] => 
-                            [uri] => /ligen/test/m/56/
-                            [apiUri] => /ligen/test/api/teams/56/
+                            [uri] => /ligen/test/m/60/
+                            [apiUri] => /ligen/test/api/teams/60/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 41
+                            [id] => 47
                             [name] => Salzmann, Jan
                             [lastName] => Salzmann
                             [firstName] => Jan
@@ -208,11 +208,11 @@ Nsv\League\Api\Model\Player Object
                             [gender] => m
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/41/
+                            [uri] => /ligen/test/s/47/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                         )
 
-                    [uri] => /ligen/test/?staffel=44&r=2
+                    [uri] => /ligen/test/?staffel=46&r=2
                 )
 
             [5] => Nsv\League\Api\Model\PlayerGame Object
@@ -225,16 +225,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => ?
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 56
+                            [id] => 60
                             [name] => Team 2
                             [zps] => 
-                            [uri] => /ligen/test/m/56/
-                            [apiUri] => /ligen/test/api/teams/56/
+                            [uri] => /ligen/test/m/60/
+                            [apiUri] => /ligen/test/api/teams/60/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 41
+                            [id] => 47
                             [name] => Salzmann, Jan
                             [lastName] => Salzmann
                             [firstName] => Jan
@@ -246,11 +246,11 @@ Nsv\League\Api\Model\Player Object
                             [gender] => m
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/41/
+                            [uri] => /ligen/test/s/47/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                         )
 
-                    [uri] => /ligen/test/?staffel=44&r=2
+                    [uri] => /ligen/test/?staffel=46&r=2
                 )
 
         )
