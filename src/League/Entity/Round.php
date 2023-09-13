@@ -13,6 +13,16 @@ class Round
     public readonly ?string $date
   ) {}
 
+  public function comment(): RoundComment|null {
+    // TODO: Create unique index on table.
+    foreach ($this->division->roundComments as $comment) {
+      if ($comment->round == $this->round) {
+        return $comment;
+      }
+    }
+    return null;
+  }
+  
   function uri(): string {
     return $this->division->matchDayUri($this->round);
   }

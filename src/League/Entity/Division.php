@@ -94,7 +94,7 @@ class Division
     /**
      * Returns the Round object for the given round.
      */
-    public function round(int $round): Round|null {
+    public function round(int $round): Round {
       $dates = $this->dates();
       $date = isset($dates[$round]) ? $dates[$round]->date : null;
       return new Round($this, $round, $date);
@@ -113,17 +113,6 @@ class Division
         }
       }
       return $rounds;
-    }
-
-    // TODO: move to round
-    public function roundComment(int $round): RoundComment|null {
-      foreach ($this->roundComments as $comment) {
-        if ($comment->round == $round) {
-          // TODO: Create unique index on table.
-          return $comment;
-        }
-      }
-      return null;
     }
 
     public function teams(): array {

@@ -32,7 +32,7 @@ class MatchDayService
 
     $model->ranking = $legacyRanking();
 
-    $comment = $division->roundComment($round);
+    $comment = $division->round($round)->comment();
     if ($comment) {
       $model->comment = $comment->text;
       if (!isset($model->lastModified) || $comment->lastModified > $model->lastModified) {
