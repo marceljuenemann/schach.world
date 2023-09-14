@@ -375,3 +375,15 @@ on again using .nsv-details-show.
     display: table-cell;
   }
 }
+
+/****************************************
+          COMPONENT: nsv-print
+
+Utilities for print layout.    
+*****************************************/
+
+@media print {
+  .nsv-print-w50 {
+    width: 50%!important;
+  }
+}

@@ -22,7 +22,7 @@
 <div class="row">
   {# Schedule #}
   {% if team.pairingsByDivision|default(false) %}
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-lg-6 nsv-print-w50">
       {% for division in league.divisions %}
         {% if team.pairingsByDivision[division.id]|default(false) %}
           <h4 class="mt-4">{{ division.name }}</h4>
@@ -49,7 +49,7 @@
     </div>
   {% endif %}
 
-  <div class="col-12 col-lg-6">
+  <div class="col-12 col-lg-6 nsv-print-w50">
     {# Venue #}
     <h4 class="mt-4">
       Spiellokal
