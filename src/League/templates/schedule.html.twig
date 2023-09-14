@@ -4,9 +4,8 @@
 {% set title = division.name %}
 
 {% block content %}
-  {#}
-    {{ nsv.tabNavigation(tabs) }}
-  #}
+
+  {{ nsv.tabNavigation(tabs) }}
 
   <div class="nsv-table">
     {% for matchDay in matchDays %}

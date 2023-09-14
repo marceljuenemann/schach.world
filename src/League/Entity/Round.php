@@ -38,7 +38,7 @@ class Round
   }
 
   public function uri(): string {
-    return $this->division->uri() . $this->round;
+    return $this->division->uri() . $this->round . '/';
   }
 
   public function pdfUri(): string {

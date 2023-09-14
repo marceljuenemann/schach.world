@@ -7,7 +7,7 @@
 
   {{ nsv.tabNavigation(tabs) }}
 
-  {% if matchDay.allRounds %}
+  {% if matchDay.allRounds|default(false) %}
     <ul class="pagination pagination-sm mb-4 d-print-none">
       <li class="page-item disabled"><span class="page-link border-0">Spieltag:</span></li>
       {% for round in matchDay.allRounds %}

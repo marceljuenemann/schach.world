@@ -158,7 +158,7 @@ class Division
   }
 
   public function uri(): string {
-    return $this->league->uri() . "?staffel={$this->id}&r=";
+    return $this->league->uri() . $this->path() . '/';
   }
 
   public function scheduleUri() {

@@ -110,6 +110,22 @@ class LegacyController extends AbstractLeagueController {
             'league' => $division->league->path
           ]);
 
+        case 'spieltag':
+          if (isset($_GET['ausgabe'])) return null;
+          $division = $this->divisionRepository->find($_GET['staffel']);
+          if ($_GET['r']) {
+            return $this->redirectToRoute('league_division_matchday', [
+              'round' => $_GET['r'],
+              'division' => $division->path(),
+              'league' => $division->league->path
+            ]);
+          } else {
+            return $this->redirectToRoute('league_division_index', [
+              'division' => $division->path(),
+              'league' => $division->league->path
+            ]);
+          }
+  
         case 'mannschaft':
           $team = $this->teamRepository->find($_GET['mannschaft']);
           return $this->redirectToRoute('league_team', [
