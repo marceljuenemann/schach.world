@@ -20,8 +20,9 @@ class MatchDay
   public ?array $legacyRanking;
   public ?string $comment;
   public ?array $lateRegisteredPlayers;
-  public ?MatchDay $nextMatchDay;
+  public ?array $allRounds;
   public ?string $lastModified;
+  public ?string $generatedAt;
 
   public static function fromRound(Round $round): MatchDay {
     $result = new MatchDay();
@@ -31,6 +32,11 @@ class MatchDay
     $result->uriPdf = $round->pdfUri();
     $result->uriApi = $round->apiUri();
     return $result;
+  }
+
+  public function nextMatchDay(): MatchDay|null {
+    if (!isset($this->allRounds[$this->round + 1])) return null;
+    return $this->allRounds[$this->round + 1];
   }
 
   public static function compare(MatchDay $a, MatchDay $b) {

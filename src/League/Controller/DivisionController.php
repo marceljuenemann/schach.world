@@ -51,13 +51,12 @@ class DivisionController extends AbstractLeagueController {
     $matchDay = $this->matchday_model($service, $round);
     return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
       'matchDay' => $matchDay,
-      'tabs' => $this->divisionTabs(),
-      'rounds' => $this->division->roundsWithPairing()
+      'tabs' => $this->divisionTabs()
     ]);
   }
   
   private function matchday_model(MatchDayService $service, int $round) {
-    return $service->matchDay($this->division, $round, function() use ($round) {
+    return $service->matchDayCached($this->division, $round, function() use ($round) {
       $this->initializeLegacySystem();
       $_GET['r'] = $round;
       require_once('tabelle.inc.php');

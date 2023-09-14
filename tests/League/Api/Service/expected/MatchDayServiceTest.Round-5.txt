@@ -14,17 +14,48 @@ Nsv\League\Api\Model\MatchDay Object
             [test] => ranking
         )
 
-    [nextMatchDay] => Nsv\League\Api\Model\MatchDay Object
+    [allRounds] => Array
         (
-            [round] => 6
-            [date] => 
-            [uri] => /ligen/test/?staffel=46&r=6
-            [uriPdf] => /ligen/test/?staffel=46&r=6&ausgabe=pdf
-            [uriApi] => /ligen/test/api/divisions/test-division/rounds/6/
-            [pairings] => Array
+            [2] => Nsv\League\Api\Model\MatchDay Object
                 (
+                    [round] => 2
+                    [date] => 2024-02-02
+                    [uri] => /ligen/test/?staffel=46&r=2
+                    [uriPdf] => /ligen/test/?staffel=46&r=2&ausgabe=pdf
+                    [uriApi] => /ligen/test/api/divisions/test-division/rounds/2/
+                    [pairings] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Nsv\League\Api\Model\MatchDay Object
+                (
+                    [round] => 4
+                    [date] => 2024-02-02
+                    [uri] => /ligen/test/?staffel=46&r=4
+                    [uriPdf] => /ligen/test/?staffel=46&r=4&ausgabe=pdf
+                    [uriApi] => /ligen/test/api/divisions/test-division/rounds/4/
+                    [pairings] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Nsv\League\Api\Model\MatchDay Object
+                (
+                    [round] => 1
+                    [date] => 2025-01-01
+                    [uri] => /ligen/test/?staffel=46&r=1
+                    [uriPdf] => /ligen/test/?staffel=46&r=1&ausgabe=pdf
+                    [uriApi] => /ligen/test/api/divisions/test-division/rounds/1/
+                    [pairings] => Array
+                        (
+                        )
+
                 )
 
         )
 
+    [generatedAt] => 2023-09-14 12:36:34
 )

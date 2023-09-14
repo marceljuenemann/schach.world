@@ -35,7 +35,7 @@ class MatchDayServiceTest extends AbstractApiTest
 
   private function testMatchDay(int $round) {
     $ranking = function() { return ['test' => 'ranking']; };
-    $model = $this->service->matchDay($this->division, $round, $ranking);
+    $model = $this->service->matchDayCached($this->division, $round, $ranking);
     $this->assertModel($model, __FILE__, "Round-$round");
   } 
 }

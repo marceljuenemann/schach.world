@@ -6,6 +6,8 @@ use Nsv\League\Api\Model\MatchDay;
 use Nsv\League\Api\Model\Pairing;
 use Nsv\League\Api\Model\Player;
 use Nsv\League\Entity;
+use Nsv\League\Entity\CacheEntry;
+use Nsv\League\Repository\CacheRepository;
 use Nsv\League\Repository\PairingRepository;
 use Nsv\League\Repository\PlayerRepository;
 
@@ -16,7 +18,8 @@ class MatchDayService
 {
   function __construct(
     private PairingRepository $pairingRepository,
-    private PlayerRepository $playerRepository
+    private PlayerRepository $playerRepository,
+    private CacheRepository $cacheRepository
   ) {}
 
   public function matchDay(Entity\Division $division, int $round, callable $legacyRanking) {
@@ -45,14 +48,24 @@ class MatchDayService
       }
     }
 
-    if ($division->config('showNextMatchDay')) {
-      $nextRound = $division->round($round + 1);
-      $model->nextMatchDay = MatchDay::fromRound($nextRound);
-      foreach ($nextRound->pairings() as $pairing) {
-        $model->nextMatchDay->pairings[] = Pairing::fromEntity($pairing);
+    foreach ($division->roundsWithPairing() as $roundObj) {
+      $roundModel = MatchDay::fromRound($roundObj);
+      if ($division->config('showNextMatchDay') && $roundObj->round == $round + 1) {
+        foreach ($roundObj->pairings() as $pairing) {
+          $roundModel->pairings[] = Pairing::fromEntity($pairing);
+        }
       }
+      $model->allRounds[$roundModel->round] = $roundModel;
     }
 
+    $model->generatedAt = date('Y-m-d H:i:s');
     return $model;
+  }
+
+  public function matchDayCached(Entity\Division $division, int $round, callable $legacyRanking) {
+    $callback = function() use ($division, $round, $legacyRanking) {
+      return $this->matchDay($division, $round, $legacyRanking);
+    };
+    return $this->cacheRepository->getOrCompute(CacheEntry::TYPE_MATCH_DAY, $division, $round, $callback);
   }
 }

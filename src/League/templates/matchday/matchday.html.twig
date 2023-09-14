@@ -7,12 +7,12 @@
 
   {{ nsv.tabNavigation(tabs) }}
 
-  {% if rounds %}
+  {% if matchDay.allRounds %}
     <ul class="pagination pagination-sm mb-4 d-print-none">
-      <li class="page-item disabled"><span class="page-link border-0">Spieltage:</span></li>
-      {% for round in rounds %}
+      <li class="page-item disabled"><span class="page-link border-0">Spieltag:</span></li>
+      {% for round in matchDay.allRounds %}
         <li {{ round.date ? nsv.tooltip(round.date|date('d.m.Y')) : '' }} class="page-item {{ round.round == matchDay.round ? 'active' : ''  }}">
-          <a class="page-link" href="{{ round.uri() }}">{{ round.round }}</a>
+          <a class="page-link" href="{{ round.uri }}">{{ round.round }}</a>
         </li>
       {% endfor %}
     </ul>
@@ -62,7 +62,7 @@
     </div>
   {% endfor %}
 
-  {% if matchDay.nextMatchDay|default(false) and matchDay.nextMatchDay.pairings %}
+  {% if matchDay.nextMatchDay %}
     <div class="mb-4">
       <h6><a href="{{ matchDay.nextMatchDay.uri }}">
         N&auml;chster Spieltag
