@@ -62,7 +62,7 @@
     </div>
   {% endfor %}
 
-  {% if matchDay.nextMatchDay %}
+  {% if matchDay.nextMatchDay.pairings|default(false) %}
     <div class="mb-4">
       <h6><a href="{{ matchDay.nextMatchDay.uri }}">
         N&auml;chster Spieltag

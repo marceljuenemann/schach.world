@@ -380,13 +380,13 @@ function Tabelle ( $staffel, $runde, $kreuztabelle, $sortmode = SED_SORT_DEFAULT
     // Aufsteiger und Absteiger
     if ( count ( $data ) ){
         $i = 0;
-        for ( $i = 1; $i <= $infos ['spielAufsteiger']; ++$i )
+        for ( $i = 1; $i <= $infos ['spielAufsteiger'] && isset($data[$i]); ++$i )
             $data [$i][count($data[$i])-1] = "aufsteiger";
-        for ( ; $i <= $infos ['spielAufsteiger']+$infos ['spielAufsteigerRelegation']; ++$i )
+        for ( ; $i <= $infos ['spielAufsteiger']+$infos ['spielAufsteigerRelegation'] && isset($data[$i]); ++$i )
             $data [$i][count($data[$i])-1] = "aufsteigerRelegation";
-        for ( $i = count($data)-1; $i >= count($data)-$infos ['spielAbsteiger']; --$i )
+        for ( $i = count($data)-1; $i >= count($data)-$infos ['spielAbsteiger'] && isset($data[$i]); --$i )
             $data [$i][count($data[$i])-1] = "absteiger";
-        for ( ; $i >= count($data)-$infos ['spielAbsteiger']-$infos ['spielAbsteigerRelegation']; --$i )
+        for ( ; $i >= count($data)-$infos ['spielAbsteiger']-$infos ['spielAbsteigerRelegation'] && isset($data[$i]); --$i )
             $data [$i][count($data[$i])-1] = "absteigerRelegation";
     }
 

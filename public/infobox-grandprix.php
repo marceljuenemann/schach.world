@@ -47,15 +47,14 @@
 
 
 
-<!-- <br /><br /><b>02. bis 04. Dezember</b><br />Wieste-Cup in Sottrum-->
-<!-- <br /><a href='/grandprix/ausschreibungen/wieste-cup-2022.pdf'>Ausschreibung</a>-->
-<!--  | <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>-->
-     <!-- | <a href='https://nsv-online.de/turniere/wieste-cup-2021/?ak=Wieste-Cup&show=TeilRang&r=5#menu'>Ergebnisse</a>-->
-
-
 
         <br /><br /><b>10. bis 12. November</b><br />Andreas-Schaar-Gedenkturnier<br />in Nordhorn
         <br /><a href='https://nsv-online.de/2023/08/nsv-grandprix-9-andreas-schaar-gedenkturnier-ausschreibung/'>Ausschreibung</a>
               | <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>
           <!--   | <a href='http://nsv-online.de/turniere/andreas-schaar-gedenkturnier-2019/?ak=Nordhorn%20Gruppe%20A#menu'>Ergebnisse</a>-->
 
+
+<br /><br /><b>08. bis 10. Dezember</b><br />Wieste-Cup in Sottrum
+<br /><a href='https://nsv-online.de/2023/09/nsv-grandprix-wieste-cup-in-sottrum-ausschreibung-2/'>Ausschreibung</a>
+ | <a href='http://nsv-grandprix.de/anmeldung/'>Anmeldung</a>
+     <!-- | <a href='https://nsv-online.de/turniere/wieste-cup-2021/?ak=Wieste-Cup&show=TeilRang&r=5#menu'>Ergebnisse</a>-->
