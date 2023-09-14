@@ -1,0 +1,19 @@
+{% extends '@league/legacy-layout.html.twig' %}
+{% import "@league/macros.html.twig" as macros %}
+{% import "macros.html.twig" as nsv %}
+
+{% block headline %}
+
+  <h2>
+    {{ division.name }}
+    <span class="dropdown d-lg-none">
+      <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></span>
+      <ul class="dropdown-menu">
+        {% for d in league.divisions %}
+          <li><a class="dropdown-item" href="{{ d.uri }}">{{ d.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </span>
+  </h2>
+
+{% endblock %}
