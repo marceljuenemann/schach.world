@@ -12,7 +12,7 @@
     {% for matchDay in matchDays %}
       <h4 class="mt-4">
         <a href="{{matchDay.uri}}">
-          Runde {{matchDay.round}}
+          {{matchDay.round}}. Spieltag
           {% if matchDay.date %}
             &ndash; {{matchDay.date|date('d.m.Y')}}
           {% endif %}

@@ -51,7 +51,8 @@ class DivisionController extends AbstractLeagueController {
     $matchDay = $this->matchday_model($service, $round);
     return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
       'matchDay' => $matchDay,
-      'tabs' => $this->divisionTabs($round)
+      'tabs' => $this->divisionTabs(),
+      'rounds' => $this->division->roundsWithPairing()
     ]);
   }
   
@@ -73,15 +74,13 @@ class DivisionController extends AbstractLeagueController {
   /**
    * Returns the tab navigation configuration for division pages.
    */
-  private function divisionTabs(mixed $active): array {
-    $rounds = $this->division->roundsWithPairing();
-    $tabs = array_map(function(Round $round) use ($active) {
-      return [
-        'label' => 'R' . $round->round,
-        'uri' => "../{$round->round}/",  // TODO: Use URI once launched.
-        'active' => $active === $round->round
-      ];
-    }, $rounds);
+  // TODO: Might no longer need this?
+  private function divisionTabs(string $active = null): array {
+    $tabs [] = [
+      'label' => 'Spieltage',
+      'uri' => $this->league->uri() . $this->division->path() . '/',  // TODO: use uri()
+      'active' => $active === null
+    ];
     $tabs [] = [
       'label' => 'Spielplan',
       'uri' => $this->division->scheduleUri(),
