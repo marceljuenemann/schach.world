@@ -1,10 +1,10 @@
 Nsv\League\Api\Model\Team Object
 (
-    [id] => 60
+    [id] => 62
     [name] => Team 2
     [zps] => 
-    [uri] => /ligen/test/m/60/
-    [apiUri] => /ligen/test/api/teams/60/
+    [uri] => /ligen/test/m/62/
+    [apiUri] => /ligen/test/api/teams/62/
     [venue] => stdClass Object
         (
             [name] => 
@@ -28,115 +28,115 @@ Nsv\League\Api\Model\Team Object
 
     [pairingsByDivision] => Array
         (
-            [46] => Array
+            [48] => Array
                 (
                     [0] => Nsv\League\Api\Model\TeamPairing Object
                         (
-                            [id] => 118
+                            [id] => 124
                             [opponent] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 59
+                                    [id] => 61
                                     [name] => Team
                                     [zps] => 
-                                    [uri] => /ligen/test/m/59/
-                                    [apiUri] => /ligen/test/api/teams/59/
+                                    [uri] => /ligen/test/m/61/
+                                    [apiUri] => /ligen/test/api/teams/61/
                                 )
 
                             [round] => 1
                             [home] => 
                             [date] => 2025-01-01
                             [result] => 1½:2½
-                            [uri] => /ligen/test/?staffel=46&r=1
+                            [uri] => /ligen/test/test-division/1/
                         )
 
                     [1] => Nsv\League\Api\Model\TeamPairing Object
                         (
-                            [id] => 119
+                            [id] => 125
                             [opponent] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 59
+                                    [id] => 61
                                     [name] => Team
                                     [zps] => 
-                                    [uri] => /ligen/test/m/59/
-                                    [apiUri] => /ligen/test/api/teams/59/
+                                    [uri] => /ligen/test/m/61/
+                                    [apiUri] => /ligen/test/api/teams/61/
                                 )
 
                             [round] => 1
                             [home] => 1
                             [date] => 2025-01-01
-                            [uri] => /ligen/test/?staffel=46&r=1
+                            [uri] => /ligen/test/test-division/1/
                         )
 
                     [2] => Nsv\League\Api\Model\TeamPairing Object
                         (
-                            [id] => 120
+                            [id] => 126
                             [opponent] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 59
+                                    [id] => 61
                                     [name] => Team
                                     [zps] => 
-                                    [uri] => /ligen/test/m/59/
-                                    [apiUri] => /ligen/test/api/teams/59/
+                                    [uri] => /ligen/test/m/61/
+                                    [apiUri] => /ligen/test/api/teams/61/
                                 )
 
                             [round] => 2
                             [home] => 1
                             [date] => 2024-02-02
-                            [uri] => /ligen/test/?staffel=46&r=2
+                            [uri] => /ligen/test/test-division/2/
                         )
 
                     [3] => Nsv\League\Api\Model\TeamPairing Object
                         (
-                            [id] => 121
+                            [id] => 127
                             [opponent] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 59
+                                    [id] => 61
                                     [name] => Team
                                     [zps] => 
-                                    [uri] => /ligen/test/m/59/
-                                    [apiUri] => /ligen/test/api/teams/59/
+                                    [uri] => /ligen/test/m/61/
+                                    [apiUri] => /ligen/test/api/teams/61/
                                 )
 
                             [round] => 4
                             [home] => 
                             [date] => 2025-04-05
-                            [uri] => /ligen/test/?staffel=46&r=4
+                            [uri] => /ligen/test/test-division/4/
                         )
 
                     [4] => Nsv\League\Api\Model\TeamPairing Object
                         (
-                            [id] => 122
+                            [id] => 128
                             [opponent] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 59
+                                    [id] => 61
                                     [name] => Team
                                     [zps] => 
-                                    [uri] => /ligen/test/m/59/
-                                    [apiUri] => /ligen/test/api/teams/59/
+                                    [uri] => /ligen/test/m/61/
+                                    [apiUri] => /ligen/test/api/teams/61/
                                 )
 
                             [round] => 4
                             [home] => 
                             [date] => 
-                            [uri] => /ligen/test/?staffel=46&r=4
+                            [uri] => /ligen/test/test-division/4/
                         )
 
                     [5] => Nsv\League\Api\Model\TeamPairing Object
                         (
-                            [id] => 123
+                            [id] => 129
                             [opponent] => Nsv\League\Api\Model\Team Object
                                 (
-                                    [id] => 59
+                                    [id] => 61
                                     [name] => Team
                                     [zps] => 
-                                    [uri] => /ligen/test/m/59/
-                                    [apiUri] => /ligen/test/api/teams/59/
+                                    [uri] => /ligen/test/m/61/
+                                    [apiUri] => /ligen/test/api/teams/61/
                                 )
 
                             [round] => 4
                             [home] => 
                             [date] => 2024-02-02
-                            [uri] => /ligen/test/?staffel=46&r=4
+                            [uri] => /ligen/test/test-division/4/
                         )
 
                 )
@@ -149,7 +149,7 @@ Nsv\League\Api\Model\Team Object
                 (
                     [0] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 47
+                            [id] => 50
                             [name] => Salzmann, Jan
                             [lastName] => Salzmann
                             [firstName] => Jan
@@ -161,11 +161,11 @@ Nsv\League\Api\Model\Team Object
                             [gender] => m
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/47/
+                            [uri] => /ligen/test/s/50/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                             [games] => Array
                                 (
-                                    [118] => Nsv\League\Api\Model\PlayerGame Object
+                                    [124] => Nsv\League\Api\Model\PlayerGame Object
                                         (
                                             [round] => 1
                                             [board] => 3
@@ -175,16 +175,16 @@ Nsv\League\Api\Model\Team Object
                                             [opponentResult] => 0
                                             [opponentTeam] => Nsv\League\Api\Model\Team Object
                                                 (
-                                                    [id] => 59
+                                                    [id] => 61
                                                     [name] => Team
                                                     [zps] => 
-                                                    [uri] => /ligen/test/m/59/
-                                                    [apiUri] => /ligen/test/api/teams/59/
+                                                    [uri] => /ligen/test/m/61/
+                                                    [apiUri] => /ligen/test/api/teams/61/
                                                 )
 
                                             [opponentPlayer] => Nsv\League\Api\Model\Player Object
                                                 (
-                                                    [id] => 46
+                                                    [id] => 49
                                                     [name] => GM Dr. Jünemann, Marcel
                                                     [lastName] => Jünemann
                                                     [firstName] => Marcel
@@ -196,14 +196,14 @@ Nsv\League\Api\Model\Team Object
                                                     [gender] => w
                                                     [isGuest] => 
                                                     [lateRegistrationRound] => 
-                                                    [uri] => /ligen/test/s/46/
+                                                    [uri] => /ligen/test/s/49/
                                                     [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                                                 )
 
-                                            [uri] => /ligen/test/?staffel=46&r=1
+                                            [uri] => /ligen/test/test-division/1/
                                         )
 
-                                    [120] => Nsv\League\Api\Model\PlayerGame Object
+                                    [126] => Nsv\League\Api\Model\PlayerGame Object
                                         (
                                             [round] => 2
                                             [board] => 4
@@ -213,15 +213,15 @@ Nsv\League\Api\Model\Team Object
                                             [opponentResult] => -
                                             [opponentTeam] => Nsv\League\Api\Model\Team Object
                                                 (
-                                                    [id] => 59
+                                                    [id] => 61
                                                     [name] => Team
                                                     [zps] => 
-                                                    [uri] => /ligen/test/m/59/
-                                                    [apiUri] => /ligen/test/api/teams/59/
+                                                    [uri] => /ligen/test/m/61/
+                                                    [apiUri] => /ligen/test/api/teams/61/
                                                 )
 
                                             [opponentPlayer] => 
-                                            [uri] => /ligen/test/?staffel=46&r=2
+                                            [uri] => /ligen/test/test-division/2/
                                         )
 
                                 )
