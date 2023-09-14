@@ -59,7 +59,7 @@ function nsv2020_custom_sitename() {
 
 
 include ("$globals[basedir]/../core/nsv2020/header.php");
-echo "<div class='col-12 col-lg-9 order-lg-2'><div class='card shadow nsv-card'><div class='card-body'>";
+echo "<div class='col-12 col-lg-9 nsv-print-w100 order-lg-2'><div class='card shadow nsv-card'><div class='card-body'>";
 
 if (strlen($prefs['infomeldung']) > 2) {
   echo "<div class='sed_infomeldung d-print-none'>$prefs[infomeldung]</div>";

@@ -105,6 +105,12 @@ a.anchor {
   margin-bottom: 1rem!important;
 }
 
+@media print {
+  .container {
+    max-width: unset;  /* No max width. */
+  }
+}
+
 /****************************************
               NSV LAYOUT
 *****************************************/
@@ -394,5 +400,13 @@ Utilities for print layout.
 @media print {
   .nsv-print-w50 {
     width: 50%!important;
+  }
+
+  .nsv-print-w100 {
+    width: 100%!important;
+  }
+
+  .nsv-print-hide-toggle::after {
+    display: none;
   }
 }
