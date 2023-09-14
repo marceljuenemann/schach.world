@@ -203,6 +203,15 @@ body {
   width: 100%;
 }
 
+#nsv-sidebar .nsv-sidebar-card .nav .nav-link {
+  font-size: 0.9rem;
+  padding-left: 0;
+}
+
+#nsv-sidebar .nsv-sidebar-card .nav .nav-link.active {
+  font-weight: bold;
+}
+
 #nsv-footer {
   background-color: #2a2730;
   color: #99979c;
