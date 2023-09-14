@@ -46,7 +46,8 @@ class MainController extends AbstractLeagueController {
       'tabs' => $allDates,
       'activeTab' => $dateToShow,
       'matches' => $matches,
-      'hasMatches' => $hasMatches
+      'hasMatches' => $hasMatches,
+      'isHomescreen' => true
     ]);
   }
 

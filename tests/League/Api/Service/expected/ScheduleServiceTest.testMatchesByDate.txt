@@ -1,43 +1,43 @@
 Array
 (
-    [46] => Nsv\League\Api\Model\Division Object
+    [48] => Nsv\League\Api\Model\Division Object
         (
-            [id] => 46
+            [id] => 48
             [name] => Test Division
-            [uri] => /ligen/test/?staffel=46&r=
+            [uri] => /ligen/test/test-division/
             [scheduleUri] => /ligen/test/test-division/spielplan/
-            [statsUri] => /ligen/test/?staffel=46&r=statistik
+            [statsUri] => /ligen/test/?staffel=48&r=statistik
             [matchDays] => Array
                 (
                     [1] => Nsv\League\Api\Model\MatchDay Object
                         (
                             [round] => 1
                             [date] => 2025-01-01
-                            [uri] => /ligen/test/?staffel=46&r=1
-                            [uriPdf] => /ligen/test/?staffel=46&r=1&ausgabe=pdf
+                            [uri] => /ligen/test/test-division/1/
+                            [uriPdf] => /ligen/test/?staffel=48&r=1&ausgabe=pdf
                             [uriApi] => /ligen/test/api/divisions/test-division/rounds/1/
                             [pairings] => Array
                                 (
                                     [0] => Nsv\League\Api\Model\Pairing Object
                                         (
-                                            [id] => 118
+                                            [id] => 124
                                             [round] => 1
                                             [team1] => Nsv\League\Api\Model\Team Object
                                                 (
-                                                    [id] => 59
+                                                    [id] => 61
                                                     [name] => Team
                                                     [zps] => 
-                                                    [uri] => /ligen/test/m/59/
-                                                    [apiUri] => /ligen/test/api/teams/59/
+                                                    [uri] => /ligen/test/m/61/
+                                                    [apiUri] => /ligen/test/api/teams/61/
                                                 )
 
                                             [team2] => Nsv\League\Api\Model\Team Object
                                                 (
-                                                    [id] => 60
+                                                    [id] => 62
                                                     [name] => Team 2
                                                     [zps] => 
-                                                    [uri] => /ligen/test/m/60/
-                                                    [apiUri] => /ligen/test/api/teams/60/
+                                                    [uri] => /ligen/test/m/62/
+                                                    [apiUri] => /ligen/test/api/teams/62/
                                                 )
 
                                             [host] => 
@@ -51,24 +51,24 @@ Array
 
                                     [1] => Nsv\League\Api\Model\Pairing Object
                                         (
-                                            [id] => 119
+                                            [id] => 125
                                             [round] => 1
                                             [team1] => Nsv\League\Api\Model\Team Object
                                                 (
-                                                    [id] => 60
+                                                    [id] => 62
                                                     [name] => Team 2
                                                     [zps] => 
-                                                    [uri] => /ligen/test/m/60/
-                                                    [apiUri] => /ligen/test/api/teams/60/
+                                                    [uri] => /ligen/test/m/62/
+                                                    [apiUri] => /ligen/test/api/teams/62/
                                                 )
 
                                             [team2] => Nsv\League\Api\Model\Team Object
                                                 (
-                                                    [id] => 59
+                                                    [id] => 61
                                                     [name] => Team
                                                     [zps] => 
-                                                    [uri] => /ligen/test/m/59/
-                                                    [apiUri] => /ligen/test/api/teams/59/
+                                                    [uri] => /ligen/test/m/61/
+                                                    [apiUri] => /ligen/test/api/teams/61/
                                                 )
 
                                             [host] => 

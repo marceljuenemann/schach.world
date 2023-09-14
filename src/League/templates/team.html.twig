@@ -47,6 +47,12 @@
         {% endif %}
       {% endfor %}
     </div>
+  {% elseif teamEntity.division %}
+    {# Link to division (if there is no schedule yet) #}
+    <div class="col-12">
+      <h4 class="mt-4">Staffel</h4>
+      {{ nsv.link(teamEntity.division) }}
+    </div>
   {% endif %}
 
   <div class="col-12 col-lg-6 nsv-print-w50">

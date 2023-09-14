@@ -20,12 +20,13 @@ class DivisionTest extends TestCase
 
     $this->division = new Division();
     $this->division->id = 42;
+    $this->division->name = 'test-div';
     $this->division->league = $this->league;
   }
 
   public function testUri() {
-    $this->assertEquals("/ligen/test-league/?staffel=42&r=", $this->division->uri());
-    $this->assertEquals("/ligen/test-league/?staffel=42&r=2", $this->division->round(2)->uri());
+    $this->assertEquals("/ligen/test-league/test-div/", $this->division->uri());
+    $this->assertEquals("/ligen/test-league/test-div/2/", $this->division->round(2)->uri());
   }
 
   public function testDates() {

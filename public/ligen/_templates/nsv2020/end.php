@@ -2,6 +2,43 @@
 </div> <!-- card -->
 </div> <!-- column -->
 <div class="col-12 col-lg-3" id="nsv-sidebar">
+
+  <!-- New navigation card -->
+  <div class='card shadow nsv-card nsv-sidebar-card'>
+    <div class='card-body overflow-visible'>
+
+      <!-- Headline with season selection -->
+      <h5 class='card-title' style="cursor: pointer">
+        <span class="dropdown">
+          <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Saison <?= $prefs['startjahr'].'/'.substr($prefs['startjahr']+1, 2)?>
+          </span>
+          <ul class="dropdown-menu">
+            <?php foreach (SED_GetSaisonLinks() as $path => $name): ?>
+              <li><a class="dropdown-item" href="/ligen/<?=$path?>/"><?=$name?></a></li>
+            <?php endforeach; ?>
+          </ul>
+        </span>
+      </h5>
+
+      <!-- Divisions -->
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link <?=isset($globals['isHomescreen']) && $globals['isHomescreen'] ? 'active' : ''?>" href="<?=$globals['basepath']?>">&Uuml;bersicht</a>
+        </li>
+        <?php foreach ($globals['staffeln'] as $id => $name): ?>
+          <li class="nav-item">
+            <a class="nav-link <?=isset($_GET['staffel']) && $id == $_GET['staffel'] ? 'active' : ''?>"
+              href="<?=$globals['basepath']?>/?staffel=<?=$id?>&r="><?=$name?></a>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+
+    </div>
+  </div>
+
+
+
 <?php
 
 // AUFSTELLUNGEN
@@ -20,111 +57,24 @@ echo "<h5 class='card-title'>Aufstellungen</h5>";
 <?
 echo "</div></div>";
 
-  
-// NAVIGATION
-echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
-echo "<h5 class='card-title'>Staffeln</h5>";
-$style = ( isset ( $globals ['mod'] ) && $globals ['mod'] == "startseite_html" ) ? "font-weight: bold;" : "";
-echo "<a href='$globals[basepath]/?' style='$style'>&Uuml;bersicht</a><br>";
-foreach ( $globals ['staffeln'] as $id=>$name ) {
-  $style = ( isset ( $_GET ['staffel'] ) && $_GET ['staffel'] == $id ) ? "font-weight: bold;" : "";
-  echo "<a href='$globals[basepath]/?staffel=$id&r=' style='$style'>$name</a><br>";
-}
-echo "</div></div>";
-
-  
 // LINKS
 if ( $menu = SED_GetMenue () ) {
   echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
   echo "<h5 class='card-title'>Links</h5>";
+  echo '<ul class="nav flex-column">';
   while ( $entry = mysql_fetch_array ( $menu, MYSQL_ASSOC ) ) {
-    echo "<a href='$entry[url]' ". ( "$entry[neuesfenster]" ? "target='_blank'" : "" ) . ">$entry[titel]</a><br>";
+    echo "<li class='nav-item'><a class='nav-link' href='$entry[url]' ". ( "$entry[neuesfenster]" ? "target='_blank'" : "" ) . ">$entry[titel]</a></li>";
   }
-  echo "</div></div>";
+  echo "</ul></div></div>";
 }
   
-  
-// SPIELTAG-AUSWAHL
-if ( count ( $globals ['staffeln'] ) )
-{
-  echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
-  echo "<h5 class='card-title'>Spieltag-Auswahl</h5>";
-  echo "<form class='' method='get' action='$globals[basepath]/'><div>";
-
-  // Staffelauswahl
-  if ( count ( $globals ['staffeln'] ) == 1 )
-  {
-    // Nur eine Staffel
-    foreach ( $globals ['staffeln'] as $id=>$name )
-    echo "<input type='hidden' name='staffel' value='$id' />";
-  }
-  else
-  {
-    // Staffeln sammeln
-    $options = "";
-    foreach ( $globals ['staffeln'] as $id=>$name )
-    $options .= "<option value='$id'>$name</option>";
-
-    // Falls eine Staffel ausgewählt ist
-    if ( isset ( $_GET ['staffel'] ) )
-    $options = SED_SelectOption ( $options, $_GET ['staffel'] );
-
-    // Liste ausgeben
-    echo "<div class='form-group'><select name='staffel' onchange='this.form.submit()' class='form-select'>";
-    echo "$options</select></div>";
-  }
-
-  // Spieltag-Auswahl
-  ?>
-    <div class="form-group">
-      <select name="r" onchange="this.form.submit()" class='form-select'>
-      <option value="statistik">Statistik</option>
-      <option value="spielplan">Spielplan</option>
-      <option value="" selected="selected">Aktueller Spieltag</option>
-      <?
-        for ( $i = 1; $i <= $prefs ['runden']; ++$i ){
-            $selected = (isset ( $_GET['r'] )&&$_GET['r']==$i) ? "selected='selected'" : "";
-            echo "<option value='$i' $selected>$i. Spieltag</option>";
-        }
-      ?>
-      </select>
-    </div>
-
-    <input type="submit" value="Anzeigen" class="btn btn-sm btn-primary">
-    <input type="submit" name="ausgabe" value="PDF" class="btn btn-sm btn-primary">
-  <?php
-  echo '</div></form></div></div>';
-}
-
-  
-// SAISON-AUSWAHL
-$links = SED_GetSaisonLinks();
-if (count($links)) {
-  echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
-  echo "<h5 class='card-title'>Saisonauswahl</h5>";
-  ?>
-    <form class='form'><div>
-        <select name="saison" onchange="window.location.href = '/ligen/' + this.value" class="form-select">
-        <?
-          foreach ( $links as $value => $label ) {
-            $selected = $value == $prefs['directory'] ? 'selected="selected"' : '';
-            echo "<option value='$value' $selected>$label</option>";
-          }
-        ?>
-        </select>
-    </div></form>
-  <?
-  echo "</div></div>";
-}
-
-    
   
 // LOGIN
 echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
 echo "<h5 class='card-title'>Turnierleitung</h5>";
 
 global $admin, $globals;
-if (isset($admin)) {
+if (isset($admin)):
   echo "<p>Angemeldet als ";
   if ($admin['usertype'] == 't') {
     echo "Turnierleiter:in";
@@ -143,18 +93,17 @@ if (isset($admin)) {
       </a>
     </div> 
  <?php
-} else {
+else:
   ?>
   <form action="<?=$globals['basepath']?>/?admin=login" method="post"><div>
     <div class="form-group"><select class="form-select" name="benutzer">
       <?
         $benutzer = isset ( $_GET ['staffel'] ) ? $_GET ['staffel'] : ""; // nur über tinyurl möglich
-        echo "<option value='t-$globals[tid]'>--- Benutzer ---</option>";
+        echo "<option value='t-$globals[tid]'>Turnierleiter:in</option>";
         foreach ( $globals ['staffeln'] as $id=>$name ){
             $selected = $benutzer == $id ? "selected='selected'" : "";
             echo "<option value='s-$id' $selected>$name</option>";
         }
-        echo "<option value='t-$globals[tid]'>Turnierleiter</option>";
       ?>
     </select></div>
     <div class="form-group">
@@ -163,7 +112,7 @@ if (isset($admin)) {
     <input type="submit" value="Einloggen" class="btn btn-sm btn-primary" />
   </div></form>
   <?php  
-}
+endif;
 echo "</div></div>";   // END OF LOGIN
 
   

@@ -51,6 +51,7 @@ class LeagueFixtures extends Fixture
     $division->manager->mail = 'division@example.com';
     $manager->persist($division->manager);
     $manager->persist($division);
+    $manager->flush();  // Needed for Team->division hack
 
     /////////////////////////////////////
     // TEAMS
