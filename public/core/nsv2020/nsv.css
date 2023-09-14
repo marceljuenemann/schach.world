@@ -78,6 +78,11 @@ a.anchor {
   background-color: #c32811;
 }
 
+.dropdown-item:focus, .dropdown-item:hover {
+  background: linear-gradient(0deg, #c32811, #e15b58);
+  color: white !important;
+}
+
 .form-switch .form-check-input:checked {
   background-color: #c32811;
   border-color: #c32811;
@@ -162,11 +167,6 @@ body {
 
 #nsv-navbar .nav-item:hover a.nav-link {
   color: #eee;
-}
-
-#nsv-navbar .dropdown-item:focus, #nsv-navbar .dropdown-item:hover {
-  background: linear-gradient(0deg, #c32811, #e15b58);
-  color: white;
 }
 
 @media (min-width: 991.98px) {
