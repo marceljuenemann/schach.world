@@ -26,3 +26,8 @@ add_filter('template_include', function($template) {
   }
   return $template;
 });
+
+// Enable automatic updates despite .git folder.
+add_filter('automatic_updates_is_vcs_checkout', function($checkout, $context) {
+  return false;
+}, 10, 2);
