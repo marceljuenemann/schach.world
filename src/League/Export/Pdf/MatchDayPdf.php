@@ -3,6 +3,8 @@
 namespace Nsv\League\Export\Pdf;
 
 use Nsv\League\Core\Encoding;
+use Nsv\Util\Pdf\Cell;
+use Nsv\Util\Pdf\LineBreak;
 use Nsv\Util\Pdf\Pdf;
 use Nsv\Util\Pdf\Text;
 
@@ -20,6 +22,19 @@ Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem 
     ";
 
     (new Text($x))->render($pdf);
+
+    $ln = new LineBreak();
+
+    $ln->render($pdf);
+
+    $cell = new Cell();
+    $cell->text = 'My cell';
+    $cell->link = 'https://example.com';
+    $cell->border = 1;
+    $cell->align = 'C';
+    $cell->render($pdf);
+    $ln->render($pdf);
+
 
 
     return $pdf->asResponse('Hello.pdf', Encoding::UNICODE_ENABLED);

@@ -18,7 +18,7 @@ class Pdf extends Fpdf {
     parent::__construct();
     $this->AddPage();
     $this->SetFont('helvetica', '', 10);
-    $this->lineHeight = 4.0;
+    $this->lineHeight = 4.5;
 
     /*
     $pdf->SetAutoPageBreak(true, 15);
