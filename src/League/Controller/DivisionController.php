@@ -7,7 +7,7 @@ use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
-use Nsv\League\Entity\Round;
+use Nsv\League\Export\Pdf\MatchDayPdf;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -53,6 +53,12 @@ class DivisionController extends AbstractLeagueController {
       'matchDay' => $matchDay,
       'tabs' => $this->divisionTabs()
     ]);
+  }
+
+  #[Route('{division}/{round}/pdf/', name: 'matchday_pdf')]
+  public function matchday_pdf(int $round, MatchDayService $service): Response {
+    $matchDay = $this->matchday_model($service, $round);
+    return (new MatchDayPdf())->getResponse();
   }
   
   private function matchday_model(MatchDayService $service, int $round) {
