@@ -25,6 +25,22 @@ class Pdf extends Fpdf {
     */
   }
 
+
+  /**
+   * Executes the callback with a different font size. Also adjusts the
+   * line height proportionally.
+   */
+  public function withFontSize(int $fontSize, callable $callback) {
+    $prevSize = $this->FontSizePt;
+    $prevLineHeight = $this->lineHeight;
+    $this->SetFontSize($fontSize);
+    $this->lineHeight *= $fontSize / $prevSize;
+
+    $callback();
+    $this->SetFontSize($prevSize);
+    $this->lineHeight = $prevLineHeight;
+  }
+
   public function render(Element $element) {
     // TODO: width
     //$width = $this->w - $this->lMargin - $this->rMargin;

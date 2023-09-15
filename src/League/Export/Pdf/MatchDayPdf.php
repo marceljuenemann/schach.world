@@ -15,14 +15,6 @@ class MatchDayPdf {
 
     (new Text('Hello World!'))->render($pdf);
     (new Text('Hello Country!'))->render($pdf);
-
-    $x = "Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.
-Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.
-    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.
-    ";
-
-    (new Text($x))->render($pdf);
-
     $ln = new LineBreak();
 
     $ln->render($pdf);
@@ -34,6 +26,31 @@ Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem 
     $cell->align = 'C';
     $cell->render($pdf);
     $ln->render($pdf);
+
+    $cell = new Cell();
+    $cell->text = 'Landes- und Verbandsligen';
+    $cell->fontSize = 16;
+    $cell->align = 'C';
+    $cell->border = 1;
+    $cell->render($pdf);
+    $ln->render($pdf);
+
+    $cell = new Cell();
+    $cell->text = 'Staffel 3000';
+    $cell->fontSize = 19;
+    $cell->align = 'C';
+    $cell->border = 1;
+    $cell->render($pdf);
+    $ln->render($pdf);
+
+
+    $x = "Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.
+Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.
+    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.
+    ";
+
+    (new Text($x))->render($pdf);
+
 
 
 

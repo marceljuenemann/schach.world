@@ -8,6 +8,11 @@ namespace Nsv\Util\Pdf;
 abstract class Element {
 
   /**
+   * Font size in pt if different from the parent font size.
+   */
+  public ?int $fontSize = null;
+
+  /**
    * Returns the desired width of the element, or null if it
    * should take as much space as possible.
    */
@@ -22,4 +27,10 @@ abstract class Element {
   // TODO: if this is it, then it's not needed :)
   public abstract function render(Pdf $pdf);
 
+  /**
+   * Executes the callback with style changes (font size etc.) applied.
+   */
+  protected function withStyles(Pdf $pdf, callable $callback) {
+    $this->fontSize ? $pdf->withFontSize($this->fontSize, $callback) : $callback();
+  }
 }
