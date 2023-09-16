@@ -9,11 +9,7 @@ class Text extends Element {
 
   function __construct(private $text) {}
 
-  public function desiredWidth(Pdf $pdf): float|null {
-    return null;
-  }
-
-  public function render(Pdf $pdf) {
+  protected function renderWithStyles(Pdf $pdf) {
     $pdf->write($pdf->lineHeight, $this->text);
   }
 }

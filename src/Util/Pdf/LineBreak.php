@@ -2,9 +2,10 @@
 
 namespace Nsv\Util\Pdf;
 
+// TODO: unnecessary?
 class LineBreak extends Element {
 
-  public function render(Pdf $pdf) {
+  protected function renderWithStyles(Pdf $pdf) {
     $pdf->Ln();
   }
 }

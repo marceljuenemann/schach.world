@@ -25,6 +25,17 @@ class Pdf extends Fpdf {
     */
   }
 
+  public function GetLeftMargin() {
+    return $this->lMargin;
+  }
+
+  public function GetRightMargin() {
+    return $this->rMargin;
+  }
+
+  public function pageWidth(): float {
+    return $this->w;
+  }
 
   /**
    * Executes the callback with a different font size. Also adjusts the

@@ -24,8 +24,15 @@ abstract class Element {
    * should render at the current X and Y position and render within
    * the current margins, which are informed by the desired width.
    */
-  // TODO: if this is it, then it's not needed :)
-  public abstract function render(Pdf $pdf);
+  // TODO: update doc to say it has styles applied.
+  // TODO: find a better name, it's really confusing. Or probaby go back to calling withStyles manually.
+  protected abstract function renderWithStyles(Pdf $pdf);
+
+  public function render(Pdf $pdf) {
+    $this->withStyles($pdf, function() use ($pdf) {
+      $this->renderWithStyles($pdf);
+    });
+  }
 
   /**
    * Executes the callback with style changes (font size etc.) applied.
