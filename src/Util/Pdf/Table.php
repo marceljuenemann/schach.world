@@ -11,13 +11,14 @@ class Table extends Element {
 
   private array $rows = [];
 
+  // TODO: addRow
   public function addRows(array $rows) {
     // TODO: check col span
     $this->rows = array_merge($this->rows, $rows);
   }
 
   private function calculateColumnWidths(): array {
-    return [50, 100, 50];
+     return [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
   }
   
   protected function renderWithStyles(Pdf $pdf) {

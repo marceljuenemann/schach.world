@@ -14,14 +14,18 @@ use Nsv\Util\Pdf\Text;
 
 class MatchDayPdf {
 
-  private $pdf;
+  private Pdf $pdf;
+  private Ranking $ranking;
 
   public function __construct(private Division $division, private MatchDay $matchDay) {
     $this->pdf = new Pdf();
+    $this->ranking = new Ranking($matchDay->legacyRanking); // TODO: support no table
   }
 
   public function render() {
     $this->renderHeader();
+
+    $this->ranking->render($this->pdf);
   }
   
   private function renderHeader() {
@@ -30,6 +34,7 @@ class MatchDayPdf {
     $cell->align = 'C';
     $cell->render($this->pdf);
 
+    // TODO: bold
     $cell = new Cell($this->division->name);
     $cell->fontSize = 16;
     $cell->align = 'C';
@@ -46,6 +51,8 @@ class MatchDayPdf {
 
     $this->pdf->Ln();  // TODO: padding
   }
+
+
 
   public function getResponse() {
     return $this->pdf->asResponse('Hello.pdf', Encoding::UNICODE_ENABLED);
