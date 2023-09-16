@@ -77,8 +77,8 @@ Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem 
     $table = new Table();
     $table->addRows([
       new TableRow([
-        $cell,
-        $text
+        $text,
+        $cell
       ])
     ]);
     return $table;

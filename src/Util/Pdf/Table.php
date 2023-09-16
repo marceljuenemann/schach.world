@@ -16,7 +16,7 @@ class Table extends Element {
     $this->rows = array_merge($this->rows, $rows);
   }
 
-  private function calculateColumnWidths() {
+  private function calculateColumnWidths(): array {
     return [50, 50];
   }
   
