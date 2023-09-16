@@ -2,7 +2,9 @@
 
 namespace Nsv\League\Export\Pdf;
 
+use Nsv\League\Api\Model\MatchDay;
 use Nsv\League\Core\Encoding;
+use Nsv\League\Entity\Division;
 use Nsv\Util\Pdf\Cell;
 use Nsv\Util\Pdf\LineBreak;
 use Nsv\Util\Pdf\Pdf;
@@ -12,75 +14,40 @@ use Nsv\Util\Pdf\Text;
 
 class MatchDayPdf {
 
-  public function getResponse() {
-    $pdf = new Pdf();
+  private $pdf;
 
-    (new Text('Hello World!'))->render($pdf);
-    (new Text('Hello Country!'))->render($pdf);
-    $ln = new LineBreak();
-
-    $ln->render($pdf);
-
-    $cell = new Cell();
-    $cell->text = 'My cell';
-    $cell->link = 'https://example.com';
-    $cell->border = 1;
-    $cell->align = 'C';
-    $cell->render($pdf);
-    $ln->render($pdf);
-
-    $cell = new Cell();
-    $cell->text = 'Landes- und Verbandsligen';
-    $cell->fontSize = 16;
-    $cell->align = 'C';
-    $cell->border = 1;
-    $cell->render($pdf);
-    $ln->render($pdf);
-
-    $cell = new Cell();
-    $cell->text = 'Staffel 3000';
-    $cell->fontSize = 19;
-    $cell->align = 'C';
-    $cell->border = 1;
-    $cell->render($pdf);
-    $ln->render($pdf);
-    $ln->render($pdf);
-    $ln->render($pdf);
-    $ln->render($pdf);
-
-
-    $table = $this->table();
-    $table->render($pdf);
-
-
-    $cell->render($pdf);
-
-
-
-
-
-    return $pdf->asResponse('Hello.pdf', Encoding::UNICODE_ENABLED);
+  public function __construct(private Division $division, private MatchDay $matchDay) {
+    $this->pdf = new Pdf();
   }
 
-  private function table(): Table {
-    $cell = new Cell();
-    $cell->text = 'Staffel 3000';
-    $cell->fontSize = 19;
+  public function render() {
+    $this->renderHeader();
+  }
+  
+  private function renderHeader() {
+    $cell = new Cell($this->division->league->name);
+    $cell->fontSize = 12;
     $cell->align = 'C';
-    $cell->border = 1;
+    $cell->render($this->pdf);
 
-    $text = new Text("Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.
-Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.
-    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.    Lorem Ipsum dolor sit.  Lorem Ipsum dolor sit.
-    ");
+    $cell = new Cell($this->division->name);
+    $cell->fontSize = 16;
+    $cell->align = 'C';
+    $cell->render($this->pdf);
 
-    $table = new Table();
-    $table->addRows([
-      new TableRow([
-        $text,
-        $cell
-      ])
-    ]);
-    return $table;
+    $text = $this->matchDay->round . '. Spieltag';
+    if ($this->matchDay->date) {
+      $text .= ' - ' . date('d.m.Y', date_create($this->matchDay->date)->getTimestamp());
+    }
+    $cell = new Cell($text);
+    $cell->fontSize = 12;
+    $cell->align = 'C';
+    $cell->render($this->pdf);
+
+    $this->pdf->Ln();  // TODO: padding
+  }
+
+  public function getResponse() {
+    return $this->pdf->asResponse('Hello.pdf', Encoding::UNICODE_ENABLED);
   }
 }

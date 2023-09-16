@@ -17,7 +17,7 @@ class Table extends Element {
   }
 
   private function calculateColumnWidths(): array {
-    return [50, 50];
+    return [50, 100, 50];
   }
   
   protected function renderWithStyles(Pdf $pdf) {

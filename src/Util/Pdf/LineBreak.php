@@ -2,7 +2,7 @@
 
 namespace Nsv\Util\Pdf;
 
-// TODO: unnecessary?
+// TODO: rename to padding, use parameter.
 class LineBreak extends Element {
 
   protected function renderWithStyles(Pdf $pdf) {

@@ -26,6 +26,7 @@ abstract class Element {
    */
   // TODO: update doc to say it has styles applied.
   // TODO: find a better name, it's really confusing. Or probaby go back to calling withStyles manually.
+  // TODO: position should be set to the beginning of the  next row
   protected abstract function renderWithStyles(Pdf $pdf);
 
   public function render(Pdf $pdf) {

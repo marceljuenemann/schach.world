@@ -24,18 +24,15 @@ class TableRow {
       $pdf->SetRightMargin($pdf->pageWidth() - ($pdf->GetX() + $width));
       $cell->render($pdf);  // TODO: support array? Or just use div
 
-      if ($pdf->GetY() > $prevY) {
-        $maxY = max($maxY, $pdf->GetY());
-      }
+      if ($pdf->GetY() > $maxY) $maxY = $pdf->GetY();
       $pdf->SetXY($pdf->GetLeftMargin() + $width, $prevY);
-
       $column++;  // TODO: colspan
     }
 
     // Reset for next row.
     $pdf->SetLeftMargin($prevL);
     $pdf->SetRightMargin($prevR);
-    $pdf->SetXY($prevL, $maxY + $pdf->lineHeight);
+    $pdf->SetXY($prevL, $maxY + .3 );
   }
 
 //      $pdf->Write($pdf->lineHeight, print_r($width, true));

@@ -7,7 +7,8 @@ namespace Nsv\Util\Pdf;
  */
 class Cell extends Element {
 
-  public string $text = '';  // TODO: move to constructor
+  public function __construct(private string $text) {}
+
   public string $link = '';
 
   /**
@@ -36,5 +37,6 @@ class Cell extends Element {
     $ln = 0;     // always use Ln() for line breaks.
     $pdf->Cell($width, $this->height ?: $pdf->lineHeight, $this->text,
       $this->border, $ln, $this->align, $this->fill, $this->link);
+    $pdf->Ln();
   }
 }
