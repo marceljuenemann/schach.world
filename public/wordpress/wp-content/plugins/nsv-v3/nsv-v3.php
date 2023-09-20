@@ -43,12 +43,33 @@ add_action('init', function() {
     );
     $cb = $cbByWeekday[date('N')];
     return "
-      <div id='widget-chessbase'>
+      <div class='nsv-widget' id='widget-chessbase'>
         <a href='https://shop.chessbase.com/de/products/$cb[url]?ReF=RF310-OONJK95SZC'>
           <img src='https://nsv-online.de/images/chessbase/$cb[img].png' alt='ChessBase'>
         </a>
       </div>
     ";
+  });
+
+  // Calendar Widget.
+  add_shortcode('nsv-termine', function() {
+    ob_start();
+    require_once(ABSPATH . '../termine/main.inc.php');
+    NsvTermineSidebox();
+    return "<div class='nsv-widget' id='widget-termine>" . ob_get_clean() . "</div>";
+  });
+
+  // Headlines Widget.
+  add_shortcode('nsv-schlagzeilen', function() {
+    $content = utf8_encode(file_get_contents(ABSPATH . '../core/modules/schlagzeilen.html'));
+    return "<div class='nsv-widget' id='widget-schlagzeilen>$content</div>";
+  });
+
+  // DWZ Widget.
+  add_shortcode('nsv-dwz-suche', function() {
+    ob_start();
+    get_template_part('sidebar/dwz-widget');
+    return ob_get_clean();
   });
 });
 
@@ -56,4 +77,3 @@ add_action('init', function() {
 add_filter('automatic_updates_is_vcs_checkout', function($checkout, $context) {
   return false;
 }, 10, 2);
-
