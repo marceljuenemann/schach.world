@@ -56,13 +56,13 @@ add_action('init', function() {
     ob_start();
     require_once(ABSPATH . '../termine/main.inc.php');
     NsvTermineSidebox();
-    return "<div class='nsv-widget' id='widget-termine>" . ob_get_clean() . "</div>";
+    return "<div class='nsv-widget' id='widget-termine'>" . ob_get_clean() . "</div>";
   });
 
   // Headlines Widget.
   add_shortcode('nsv-schlagzeilen', function() {
     $content = utf8_encode(file_get_contents(ABSPATH . '../core/modules/schlagzeilen.html'));
-    return "<div class='nsv-widget' id='widget-schlagzeilen>$content</div>";
+    return "<div class='nsv-widget' id='widget-schlagzeilen'>$content</div>";
   });
 
   // DWZ Widget.

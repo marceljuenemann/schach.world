@@ -8,9 +8,8 @@ Version: 1.0
 Text Domain: nsv2020
 */
 
-.nsv-widget {
-	/** Annoyingly, the WordPress shortcode block adds empty p tags... */  
-	margin-bottom: -15px;
+.wp-widget-group__inner-blocks > p:last-child {
+	margin-bottom: 0px;
 }
 
 #widget-schlagzeilen td:first-child {

@@ -21,7 +21,7 @@ add_action( 'widgets_init', function() {
   register_sidebar([
     'name'          => 'Startseiten Sidebar',
     'id'            => 'frontpage_sidebar',
-    'before_widget' => "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>",
+    'before_widget' => "<div class='card shadow nsv-card nsv-sidebar-card' data-widget-title='%2\$s'><div class='card-body'>",
     'after_widget'  => "</div></div>",
     'before_title'  => "<h5 class='card-title'>",
     'after_title'   => '</h5>',
