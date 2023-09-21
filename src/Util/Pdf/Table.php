@@ -3,39 +3,88 @@
 namespace Nsv\Util\Pdf;
 
 /**
- * Table with dynamic column sizing.
+ * Table that calculates column widths based on content width.
+ * 
+ * TODO: bold
+ * TODO: thicker border
  */
-class Table {
+class Table extends Element {
 
-  // TODO: Columns in constructor
+  /**
+   * Widths of columns by column index. These are calculated
+   * by layout() based on the content and may be modified
+   * before calling render().
+   */
+  public array $columnWidths;
+
+  /**
+   * Cell padding left and right of the content.
+   */
+  public float $padding = 3.0;
 
   private array $rows = [];
 
-  // TODO: addRow
-  public function addRows(array $rows) {
-    // TODO: check col span
-    $this->rows = array_merge($this->rows, $rows);
+  // TODO: verify TableCell
+  public function addRow(array $cells) {
+    $this->rows[] = $cells;
   }
 
   public function rowCount() {
     return count($this->rows);
   }
   
-  public function render(Pdf $pdf, array $columnWidths) {
+  public function layout(): array {
     foreach ($this->rows as $row) {
-      $row->render($pdf, $columnWidths);
-    }
-  }
-
-  public function desiredColumnWidth(Pdf $pdf, int $column) {
-    $minWidth = 0;
-    foreach ($this->rows as $row) {
-      $element = $row->cells[$column];
-      $layout = $element->layout($pdf);
-      if (isset($layout['minWidth']) && $layout['minWidth'] > $minWidth) {
-        $minWidth = $layout['minWidth'];
+      $column = 0;
+      foreach ($row as $cell) {
+        $layout = $cell->layout();
+        if (isset($layout['minWidth'])) {
+          $w = $layout['minWidth'] + $this->padding;
+          if (!isset($this->columnWidths[$column]) || $w > $this->columnWidths[$column]) {
+            $this->columnWidths[$column] = $w;
+          }
+        }
+        $column++;
       }
     }
-    return $minWidth;
+    // TODO: Return minWidth
+    return [];
+  }
+
+  public function render() {
+    $this->withStyles(function() {
+      foreach ($this->rows as $row) {
+        $this->renderRow($row);
+      }
+    });
+  }
+
+  private function renderRow(array $row) {
+    $prevL = $this->pdf->GetLeftMargin();
+    $prevR = $this->pdf->GetRightMargin();
+    $prevY = $this->pdf->GetY();
+
+    $maxY = $prevY;  // Keep track of the heighest column.
+    $column = 0;  
+
+    foreach ($row as $cell) {
+      $width = $this->columnWidths[$column] ?: 0;
+      if (!$width) continue;
+
+      // Use margins to restrict rendering to desired width.
+      $this->pdf->SetLeftMargin($this->pdf->GetX());
+      $this->pdf->SetRightMargin($this->pdf->pageWidth() - ($this->pdf->GetX() + $width));
+      $cell->render();
+
+      // Update $maxY to get correct table height.
+      if ($this->pdf->GetY() > $maxY) $maxY = $this->pdf->GetY();
+      $this->pdf->SetXY($this->pdf->GetLeftMargin() + $width, $prevY);
+      $column++;  // TODO: colspan
+    }
+
+    // Reset for next row.
+    $this->pdf->SetLeftMargin($prevL);
+    $this->pdf->SetRightMargin($prevR);
+    $this->pdf->SetXY($prevL, $maxY + .3 );
   }
 }

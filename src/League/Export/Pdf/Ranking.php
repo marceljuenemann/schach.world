@@ -27,6 +27,7 @@ class Ranking extends Element {
   }
   
   public function layout(): array {
+    /*
     $teamCount = $this->table->rowCount() - 1;
 
     // Calculate column widths.
@@ -53,24 +54,27 @@ class Ranking extends Element {
 
     $this->columnWidths = $widths;  // TODO: move to Table.
     return [];
+    */
+    $this->table->layout();
+    return [];
   }
 
   public function render() {
     $this->withStyles(function() {
-      $this->table->render($this->pdf, $this->columnWidths);
+      $this->table->render();
     });
   }
 
   private static function createTable(Pdf $pdf, array $legacyRanking) {
-    $table = new Table();
-    $table->addRows(array_map(function ($row) use ($pdf) {
-      return Ranking::createTableRow($pdf, $row);
-    }, $legacyRanking));
+    $table = new Table($pdf);
+    foreach ($legacyRanking as $row) {
+      $table->addRow(Ranking::createTableRow($pdf, $row));
+    }
     return $table;
   }
 
-  private static function createTableRow(Pdf $pdf, array $row) {
-    return new TableRow(array_map(function ($data) use ($pdf) {
+  private static function createTableRow(Pdf $pdf, array $row): array {
+    return array_map(function ($data) use ($pdf) {
       if (is_array($data)) {
         if (isset($data['text'])) {
           $text = str_replace('xxx', '', $data['text']);
@@ -86,6 +90,6 @@ class Ranking extends Element {
       $cell->border = 1;
       $cell->align = 'C';
       return $cell;
-    }, $row));
+    }, $row);
   }
 }
