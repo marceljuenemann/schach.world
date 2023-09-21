@@ -5,7 +5,7 @@ namespace Nsv\Util\Pdf;
 /**
  * Table with dynamic column sizing.
  */
-class Table extends Element {
+class Table {
 
   // TODO: Columns in constructor
 
@@ -17,14 +17,25 @@ class Table extends Element {
     $this->rows = array_merge($this->rows, $rows);
   }
 
-  private function calculateColumnWidths(): array {
-     return [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
+  public function rowCount() {
+    return count($this->rows);
   }
   
-  protected function renderWithStyles(Pdf $pdf) {
-    $columnWidths = $this->calculateColumnWidths();
+  public function render(Pdf $pdf, array $columnWidths) {
     foreach ($this->rows as $row) {
       $row->render($pdf, $columnWidths);
     }
+  }
+
+  public function desiredColumnWidth(Pdf $pdf, int $column) {
+    $minWidth = 0;
+    foreach ($this->rows as $row) {
+      $element = $row->cells[$column];
+      $layout = $element->layout($pdf);
+      if (isset($layout['minWidth']) && $layout['minWidth'] > $minWidth) {
+        $minWidth = $layout['minWidth'];
+      }
+    }
+    return $minWidth;
   }
 }

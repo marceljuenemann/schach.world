@@ -2,9 +2,10 @@
 
 namespace Nsv\Util\Pdf;
 
+// TODO: Seems overengineered, integrate into Table
 class TableRow {
 
-  public function __construct(private array $cells) {
+  public function __construct(public array $cells) {
     // TODO: verify cell type?
   }
   
@@ -18,6 +19,7 @@ class TableRow {
 
     foreach ($this->cells as $cell) {
       $width = $columnWidths[$column];
+      if (!$width) continue;
 
       // Use margins to restrict rendering to desired width.
       $pdf->SetLeftMargin($pdf->GetX());

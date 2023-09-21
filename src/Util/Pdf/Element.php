@@ -12,33 +12,32 @@ abstract class Element {
    */
   public ?int $fontSize = null;
 
+  public function __construct(protected Pdf $pdf) {}
+
   /**
-   * Returns the desired width of the element, or null if it
-   * should take as much space as possible.
+   * Layout the element in preparation for rendering. This function
+   * should be called by the parent element and may contain the
+   * following elements:
+   * 
+   * - minWidth: the width that should be available for rendering
+   *     the element properly
    */
-  // TODO: for cells only?
-  // public abstract function desiredWidth(Pdf $pdf): float|null;
+  public function layout(): array {
+    return [];
+  }
 
   /**
    * Render the element onto the PDF with the given width. The element
    * should render at the current X and Y position and render within
    * the current margins, which are informed by the desired width.
    */
-  // TODO: update doc to say it has styles applied.
-  // TODO: find a better name, it's really confusing. Or probaby go back to calling withStyles manually.
   // TODO: position should be set to the beginning of the  next row
-  protected abstract function renderWithStyles(Pdf $pdf);
-
-  public function render(Pdf $pdf) {
-    $this->withStyles($pdf, function() use ($pdf) {
-      $this->renderWithStyles($pdf);
-    });
-  }
+  public abstract function render();
 
   /**
    * Executes the callback with style changes (font size etc.) applied.
    */
-  protected function withStyles(Pdf $pdf, callable $callback) {
-    $this->fontSize ? $pdf->withFontSize($this->fontSize, $callback) : $callback();
+  protected function withStyles(callable $callback): mixed {
+    return $this->fontSize ? $this->pdf->withFontSize($this->fontSize, $callback) : $callback();
   }
 }

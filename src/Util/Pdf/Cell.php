@@ -7,7 +7,9 @@ namespace Nsv\Util\Pdf;
  */
 class Cell extends Element {
 
-  public function __construct(private string $text) {}
+  public function __construct(Pdf $pdf, private string $text) {
+    parent::__construct($pdf);
+  }
 
   public string $link = '';
 
@@ -32,11 +34,21 @@ class Cell extends Element {
    */
   public bool $fill = false;  // TODO: optional color
 
-  protected function renderWithStyles(Pdf $pdf) {
-    $width = 0;  // always stretch until rMargin.
-    $ln = 0;     // always use Ln() for line breaks.
-    $pdf->Cell($width, $this->height ?: $pdf->lineHeight, $this->text,
-      $this->border, $ln, $this->align, $this->fill, $this->link);
-    $pdf->Ln();
+  public function layout(): array {
+    $width = $this->withStyles(function() {
+      return $this->pdf->GetStringWidth($this->text);
+    });
+    return ['minWidth' => $width];
+  }
+
+  public function render() {
+    $this->withStyles(function () {
+      $width = 0;  // always stretch until rMargin.
+      $ln = 0;     // always use Ln() for line breaks.
+      $lh = $this->height ?: $this->pdf->lineHeight;
+      $this->pdf->Cell($width, $lh, $this->text, $this->border,
+        $ln, $this->align, $this->fill, $this->link);
+      $this->pdf->Ln();
+    });
   }
 }
