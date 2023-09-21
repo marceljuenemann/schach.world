@@ -18,6 +18,14 @@
   // Whether we'll show an inline sidebar.
   $inline_sidebar = $wp_query->post_count >= INLINE_SIDEBAR_MIN_POSTS;
 
+  function printSidebar() {
+    if (isset($_GET['widgets'])) {
+      dynamic_sidebar('frontpage_sidebar');
+    } else {
+      get_template_part('sidebar/frontpage-sidebar');
+    }
+  }
+
   get_header();
   echo '<div class="col-12 col-lg-9">';
 
@@ -43,7 +51,7 @@
       
       // Output sidebar with inline-sidebar class.
       echo '</div><div class="col-12 col-lg-3 inline-sidebar" id="nsv-sidebar">';
-      get_template_part('sidebar/frontpage-sidebar');
+      printSidebar();
       echo '</div><div class="col-12 col-lg-9">';
     }
   }
@@ -53,7 +61,7 @@
 
   if (!$inline_sidebar) {
     echo '</div><div class="col-12 col-lg-3" id="nsv-sidebar">';
-    get_template_part('sidebar/frontpage-sidebar');
+    printSidebar();
   }
 
   get_footer(); 

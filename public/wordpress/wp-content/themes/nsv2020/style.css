@@ -8,6 +8,11 @@ Version: 1.0
 Text Domain: nsv2020
 */
 
+.nsv-widget {
+	/** Annoyingly, the WordPress shortcode block adds empty p tags... */  
+	margin-bottom: -15px;
+}
+
 #widget-schlagzeilen td:first-child {
   font-size: inherit !important;
   padding-right: 5px;

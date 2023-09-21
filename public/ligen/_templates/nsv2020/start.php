@@ -34,13 +34,13 @@ function nsv2020_navbar() {
     return nsv2020_bezirk1_navbar();
   }
   
-  $menu = array("&Uuml;bersicht" => array("?"));
+  $menu = array("&Uuml;bersicht" => array($globals['basepath']));
   foreach ( $globals ["staffeln"] as $id => $name ) {
     // Namen ggf. kürzen verarbeiten
     if ( count ( $globals ["staffeln"] ) > 3 ) {
       $name = str_replace ( "Staffel ", "", str_replace ( "Gruppe ", "", $name ) );
     }
-    $menu[$name] = array("?staffel=$id&r=");
+    $menu[$name] = array($globals['basepath'] . "?staffel=$id&r=");
   }
   return $menu;
 }
