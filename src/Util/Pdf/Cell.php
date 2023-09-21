@@ -7,10 +7,11 @@ namespace Nsv\Util\Pdf;
  */
 class Cell extends Element {
 
-  public function __construct(Pdf $pdf, private string $text) {
+  public function __construct(Pdf $pdf) {
     parent::__construct($pdf);
   }
 
+  public string $text = '';
   public string $link = '';
 
   /**

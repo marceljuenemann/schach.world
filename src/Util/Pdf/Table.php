@@ -2,6 +2,8 @@
 
 namespace Nsv\Util\Pdf;
 
+use TypeError;
+
 /**
  * Table that calculates column widths based on content width.
  * 
@@ -26,6 +28,11 @@ class Table extends Element {
 
   // TODO: verify TableCell
   public function addRow(array $cells) {
+    foreach ($cells as $cell) {
+      if (!$cell instanceof TableCell) {
+        throw new TypeError('TableCell expected');
+      }
+    }
     $this->rows[] = $cells;
   }
 
@@ -38,7 +45,7 @@ class Table extends Element {
       $column = 0;
       foreach ($row as $cell) {
         $layout = $cell->content->layout();
-        if (isset($layout['minWidth'])) {
+        if ($cell->colspan == 1 && isset($layout['minWidth'])) {
           $w = $layout['minWidth'] + $this->padding;
           if (!isset($this->columnWidths[$column]) || $w > $this->columnWidths[$column]) {
             $this->columnWidths[$column] = $w;
@@ -68,7 +75,11 @@ class Table extends Element {
     $column = 0;  
 
     foreach ($row as $cell) {
-      $width = $this->columnWidths[$column] ?: 0;
+      // Calculate width while respecting colspan.
+      $width = 0;
+      for ($i = 0; $i < $cell->colspan; $i++) {
+        $width += $this->columnWidths[$column + $i] ?: 0;
+      } 
       if (!$width) continue;
 
       // Use margins to restrict rendering to desired width.
@@ -79,7 +90,7 @@ class Table extends Element {
       // Update $maxY to get correct table height.
       if ($this->pdf->GetY() > $maxY) $maxY = $this->pdf->GetY();
       $this->pdf->SetXY($this->pdf->GetLeftMargin() + $width, $prevY);
-      $column++;  // TODO: colspan
+      $column += $cell->colspan;
     }
 
     // Reset for next row.

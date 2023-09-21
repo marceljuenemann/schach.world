@@ -15,45 +15,51 @@ use Nsv\Util\Pdf\Text;
 class MatchDayPdf {
 
   private Pdf $pdf;
+  private PairingList $pairingList;
   private Ranking $ranking;
 
   public function __construct(private Division $division, private MatchDay $matchDay) {
     $this->pdf = new Pdf();
-    $this->ranking = new Ranking($this->pdf, $matchDay->legacyRanking); // TODO: support no table
+    $this->pairingList = new PairingList($this->pdf, $matchDay);
+    $this->ranking = new Ranking($this->pdf, $matchDay->legacyRanking);
   }
 
   public function render() {
     $this->renderHeader();
 
+    $this->pairingList->layout();
     $this->ranking->layout();
-    $this->ranking->render($this->pdf);
+
+    $this->pairingList->render();
+    $this->ranking->render();
   }
   
   private function renderHeader() {
-    $cell = new Cell($this->pdf, $this->division->league->name);
+    $cell = new Cell($this->pdf);
+    $cell->text = $this->division->league->name;
     $cell->fontSize = 12;
     $cell->align = 'C';
-    $cell->render($this->pdf);
+    $cell->render();
 
     // TODO: bold
-    $cell = new Cell($this->pdf, $this->division->name);
+    $cell = new Cell($this->pdf);
+    $cell->text = $this->division->name;
     $cell->fontSize = 16;
     $cell->align = 'C';
-    $cell->render($this->pdf);
+    $cell->render();
 
     $text = $this->matchDay->round . '. Spieltag';
     if ($this->matchDay->date) {
       $text .= ' - ' . date('d.m.Y', date_create($this->matchDay->date)->getTimestamp());
     }
-    $cell = new Cell($this->pdf, $text);
+    $cell = new Cell($this->pdf);
+    $cell->text = $text;
     $cell->fontSize = 12;
     $cell->align = 'C';
     $cell->render($this->pdf);
 
     $this->pdf->Ln();  // TODO: padding
   }
-
-
 
   public function getResponse() {
     return $this->pdf->asResponse('Hello.pdf', Encoding::UNICODE_ENABLED);

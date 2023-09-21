@@ -87,7 +87,8 @@ class Ranking extends Element {
       } else {
         $text = str_replace('xxx', '', $data);
       }
-      $cell = new Cell($pdf, $text);
+      $cell = new Cell($pdf);
+      $cell->text = $text;
       $cell->border = 1;
       $cell->align = 'C';
       return new TableCell($cell);
