@@ -37,14 +37,14 @@ class Table extends Element {
     foreach ($this->rows as $row) {
       $column = 0;
       foreach ($row as $cell) {
-        $layout = $cell->layout();
+        $layout = $cell->content->layout();
         if (isset($layout['minWidth'])) {
           $w = $layout['minWidth'] + $this->padding;
           if (!isset($this->columnWidths[$column]) || $w > $this->columnWidths[$column]) {
             $this->columnWidths[$column] = $w;
           }
         }
-        $column++;
+        $column += $cell->colspan;
       }
     }
     // TODO: Return minWidth
@@ -74,7 +74,7 @@ class Table extends Element {
       // Use margins to restrict rendering to desired width.
       $this->pdf->SetLeftMargin($this->pdf->GetX());
       $this->pdf->SetRightMargin($this->pdf->pageWidth() - ($this->pdf->GetX() + $width));
-      $cell->render();
+      $cell->content->render();
 
       // Update $maxY to get correct table height.
       if ($this->pdf->GetY() > $maxY) $maxY = $this->pdf->GetY();
@@ -85,6 +85,6 @@ class Table extends Element {
     // Reset for next row.
     $this->pdf->SetLeftMargin($prevL);
     $this->pdf->SetRightMargin($prevR);
-    $this->pdf->SetXY($prevL, $maxY + .3 );
+    $this->pdf->SetXY($prevL, $maxY /* TODO: border + .2 */ );
   }
 }

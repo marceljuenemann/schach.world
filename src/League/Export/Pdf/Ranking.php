@@ -6,18 +6,19 @@ use Nsv\Util\Pdf\Cell;
 use Nsv\Util\Pdf\Element;
 use Nsv\Util\Pdf\Pdf;
 use Nsv\Util\Pdf\Table;
+use Nsv\Util\Pdf\TableCell;
 use Nsv\Util\Pdf\TableRow;
 
 /**
  * Ranking pdf element.
+ * 
+ * TODO: fill color
+ * TODO: bold headings
+ * TODO: equal column widths for results
+ * TODO: thick border
+ * TODO: decide whether to render full table dynamically
  */
 class Ranking extends Element {
-
-  /**
-   * 
-   */
-  public array $columnWidths;
-
 
   private Table $table;
 
@@ -89,7 +90,7 @@ class Ranking extends Element {
       $cell = new Cell($pdf, $text);
       $cell->border = 1;
       $cell->align = 'C';
-      return $cell;
+      return new TableCell($cell);
     }, $row);
   }
 }
