@@ -3,6 +3,8 @@
 header("Content-type: text/plain");
 echo "welcome!\n";
 
+global $games, $teams;
+
 $teams = array (); // $team => $location (where is $team playing this round?)
 $games = array (); // $location => $pid  (which games are at the location?)
 $loc = 1;
