@@ -31,9 +31,10 @@ class CacheRepository extends ServiceEntityRepository
     $entry->round = $round;
     $entry->type = $type;
     $entry->value = serialize($val);
-    $this->getEntityManager()->persist($entry);
-    $this->getEntityManager()->flush();
-
+    if (strlen($entry->value) < 65000) {  // Fix for too large cache entries.
+      $this->getEntityManager()->persist($entry);
+      $this->getEntityManager()->flush();
+    }
     return $val;
   }
 
