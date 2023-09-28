@@ -20,6 +20,10 @@ class Auth {
     }
   }
 
+  public static function isAdmin() {
+    return current_user_can('manage_options');
+  }
+
   public static function requireAdmin() {
     Auth::requireCapability('manage_options');
   }

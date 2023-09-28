@@ -1,0 +1,27 @@
+{
+  "headline": "LEM 2017",
+  "headline2": "vom 5. bis 8. Januar in Verden/Aller",
+  
+  "groups": {
+    "meister": {
+      "name": "Meisterturnier",
+      "swtname": "Meisterturnier"
+    },
+    "a": {
+      "name": "Open A",
+      "swtname": "A-Open"
+    },
+    "b": {
+      "name": "Open B",
+      "swtname": "B-Open"
+    },
+    "c": {
+      "name": "Open C",
+      "swtname": "C-Open"
+    },
+    "schnellschach": {
+      "name": "Schnellschach",
+      "swtname": "Schnellschach"
+    }    
+  }
+}
