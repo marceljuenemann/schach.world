@@ -53,10 +53,8 @@ add_action('init', function() {
 
   // Calendar Widget.
   add_shortcode('nsv-termine', function() {
-    ob_start();
-    require_once(ABSPATH . '../termine/main.inc.php');
-    NsvTermineSidebox();
-    return "<div class='nsv-widget' id='widget-termine'>" . ob_get_clean() . "</div>";
+    $calendar = new \NSV\Misc\Calendar();
+    return "<div class='nsv-widget' id='widget-termine'>" . $calendar->widget() . "</div>";
   });
 
   // Headlines Widget.
