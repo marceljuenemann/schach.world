@@ -1,3 +1,5 @@
+{% import "macros.html.twig" as nsv %}
+
 {{ set_title(title) }}
 {{ get_header() }}
 {% set show_sidebar = not hide_sidebar|default(false) %}
@@ -8,6 +10,16 @@
     <div class="card-body">
       {% block headline %}
         <h2>{{ title }}</h2>
+      {% endblock %}
+            
+      {% block flashes %}
+        {% if app.request.hasPreviousSession %}
+          {% for type, messages in app.flashes %}
+            {% for message in messages %}
+              {{ nsv.message(message, type) }}
+            {% endfor %}
+          {% endfor %}
+        {% endif %}
       {% endblock %}
 
       {% block content %}

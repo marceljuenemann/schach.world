@@ -2,9 +2,12 @@
 
 namespace Nsv\WebApp\Controller;
 
+use Doctrine\ORM\EntityManagerInterface;
+use Nsv\WebApp\Core\WordPress\Auth;
 use Nsv\WebApp\Entity\Event;
 use Nsv\WebApp\Repository\EventRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -25,9 +28,9 @@ class CalendarController extends AbstractController {
   }
 
   #[Route('/v3/termine/eintragen/', name: 'calendar-add')]
-  public function addEntry(Request $request): Response {
+  public function addEntry(Request $request, EntityManagerInterface $em): Response {
     $event = new Event();
-    $form = $this->createFormBuilder($event)
+    $builder = $this->createFormBuilder($event)
         ->add('date', DateType::class, [
           'label' => 'Datum',
           'widget' => 'single_text',
@@ -35,26 +38,39 @@ class CalendarController extends AbstractController {
           'constraints' => [new GreaterThanOrEqual(date('Y-m-d'))]
         ])
         ->add('name', TextType::class)
-        ->add('url', UrlType::class, ['label' => 'Link'])
-        ->add('captcha', IntegerType::class, [
-          'label' => 'Wie viele Felder hat ein Schachbrett?',
-          'mapped' => false,
-          'constraints' => [new EqualTo(64)],
-        ])
-        ->add('eintragen', SubmitType::class)
-        ->getForm();
+        ->add('url', UrlType::class, ['label' => 'Link']);
+    if (Auth::isAuthor()) {
+      $builder = $builder->add('isNsv', CheckboxType::class, [
+        'label' => 'Offizieller NSV Termin',
+        'required' => false
+      ]);
+    } else {
+      $builder = $builder->add('captcha', IntegerType::class, [
+        'label' => 'Wie viele Felder hat ein Schachbrett?',
+        'mapped' => false,
+        'constraints' => [new EqualTo(64)],
+      ]);
+    }
+    $form = $builder->add('eintragen', SubmitType::class)->getForm();
  
     $form->handleRequest($request);
     if ($form->isSubmitted() && $form->isValid()) {
-        $event = $form->getData();
-        
-        print_r($event);
-        // TODO: insert row
+      // If the user has Author permissions, approve right away. 
+      $isAuthor = Auth::isAuthor();
+      $event = $form->getData();
+      $event->isApproved = $isAuthor;
+      
+      // Store.
+      $em->persist($event);
+      $em->flush();
+      if ($isAuthor) {
+        $this->addFlash('success', 'Termin erfolgreich eingetragen');
+      } else {
         // TODO: send eMail
-        // TODO: Admin verification
-        // TODO: redirect and show message
+        $this->addFlash('info', 'Der Termin wird nach Freischaltung veröffentlicht');
+      }
 
-        //return $this->redirectToRoute('task_success');
+      return $this->redirectToRoute('calendar');
     }
 
     return $this->render('calendar/add.html.twig', [
