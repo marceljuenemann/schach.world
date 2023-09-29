@@ -1,0 +1,49 @@
+{# TODO: create email template #}
+{% apply inky_to_html|inline_css(source('email/vendor/foundation-emails.css')) %}
+  <container>
+    <row class="header">
+      <columns>
+        <spacer size="16"></spacer>
+        <h1>Neuer Termin</h1>
+      </columns>
+    </row>
+
+    <row>
+      <columns large="2">
+        <strong>Datum:</strong>
+      </columns>
+      <columns large="10">
+        Sa, 12. Dezember 2023
+      </columns>
+    </row>
+    <row>
+      <columns large="2">
+        <strong>Name:</strong>
+      </columns>
+      <columns large="10">
+        3000. Lehrter Open
+      </columns>
+    </row>
+    <row>
+      <columns large="2">
+        <strong>URL:</strong>
+      </columns>
+      <columns large="10">
+        <a href="http://example.com">http://example.com</a>
+      </columns>
+    </row>
+
+    <row>
+      <columns>
+        <button href="#" class="radius alert">Termin veröffentlichen</button>
+      </columns>
+    </row>
+
+    <row>
+      <columns>
+        <a href="https://nsv-online.de/termine/">Zum Terminkalender</a>
+      </columns> 
+    </row>
+
+  </container>
+{% endapply %}

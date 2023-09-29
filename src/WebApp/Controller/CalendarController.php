@@ -6,6 +6,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Nsv\WebApp\Core\WordPress\Auth;
 use Nsv\WebApp\Entity\Event;
 use Nsv\WebApp\Repository\EventRepository;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
@@ -15,6 +16,9 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\UrlType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Mime\Address;
+use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Validator\Constraints\EqualTo;
 use Symfony\Component\Validator\Constraints\GreaterThanOrEqual;
@@ -28,7 +32,7 @@ class CalendarController extends AbstractController {
   }
 
   #[Route('/v3/termine/eintragen/', name: 'calendar-add')]
-  public function addEntry(Request $request, EntityManagerInterface $em): Response {
+  public function addEntry(Request $request, EntityManagerInterface $em, MailerInterface $mailer): Response {
     $event = new Event();
     $builder = $this->createFormBuilder($event)
         ->add('date', DateType::class, [
@@ -66,16 +70,28 @@ class CalendarController extends AbstractController {
       if ($isAuthor) {
         $this->addFlash('success', 'Termin erfolgreich eingetragen');
       } else {
-        // TODO: send eMail
+        $this->sendApprovalMail($mailer, $event);
         $this->addFlash('info', 'Der Termin wird nach Freischaltung veröffentlicht');
       }
 
-      return $this->redirectToRoute('calendar');
+//      return $this->redirectToRoute('calendar');
     }
 
     return $this->render('calendar/add.html.twig', [
       'form' => $form
     ]);
+  }
+
+  // TODO: send eMail
+  private function sendApprovalMail(MailerInterface $mailer, Event $event) {
+    $email = (new TemplatedEmail())
+      ->to(new Address('test@marcel.world', 'Marcel Jünemann'))
+      ->subject('Test')
+      ->htmlTemplate('email/calendar-approval.html.twig')
+      ->context([
+        'username' => 'foo',
+      ]);
+    $mailer->send($email);
   }
 
   // TODO: implement approval link
