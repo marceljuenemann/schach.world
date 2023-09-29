@@ -1,0 +1,38 @@
+{#
+  Twig re-implementaton of Bootstrap Email components.
+
+  The macros don't aim to fully implement all options offered by Bootstrap Email,
+  but rather offer an opinionated version for use in NSV eMails.
+#}
+
+{# Vertical spacer. #}
+{% macro spacer(height = 10) %}
+  <table class="s-{{ height }} w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+    <tbody>
+      <tr>
+        <td style="line-height: {{ height * 4 }}px; font-size: {{ height * 4 }}px; width: 100%; height: {{ height * 4 }}px; margin: 0;" align="left" width="100%" height="{{ height * 4 }}">
+          &#160;
+        </td>
+      </tr>
+    </tbody>
+  </table>
+{% endmacro %}
+
+{# Headline attributes. #}
+{% macro h1_attrs() %}
+  class="h3" style="padding-top: 0; padding-bottom: 0; font-weight: 500; vertical-align: baseline; font-size: 28px; line-height: 33.6px; margin: 0;" align="left"
+{% endmacro %}
+
+{# <hr> tag. #}
+{% macro hr() %}
+  {{ _self.spacer(5) }}
+  <table class="hr" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td style="line-height: 24px; font-size: 16px; border-top-width: 1px; border-top-color: #e2e8f0; border-top-style: solid; height: 1px; width: 100%; margin: 0;" align="left">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  {{ _self.spacer(5) }}
+{% endmacro %}

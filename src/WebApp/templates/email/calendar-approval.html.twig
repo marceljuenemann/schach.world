@@ -1,11 +1,15 @@
 {% extends 'email/layout/layout.html.twig' %}
 
-
 {% block content %}
 
   {% embed "email/layout/card.html.twig" %}
+    {% import "email/layout/bootstrap.html.twig" as bootstrap %}
     {% block content %}
-      Hi!
+
+      <h1 {{ bootstrap.h1_attrs }}>Neuer Termin</h1>
+      {{ bootstrap.hr }}
+      Hello World!
+
     {% endblock %}
   {% endembed %}
 
