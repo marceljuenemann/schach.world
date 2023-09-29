@@ -1,68 +1,29 @@
-{% import "email/bootstrap.html.twig" as bootstrap %}
-{{ bootstrap.body }}
+{% import "email/bootstrap.html.twig" as bs %}
+{{ bs.body }}
 
-  {{ bootstrap.card }}
+  {{ bs.card }}
 
-    <h1 {{ bootstrap.h1_attrs }}>Neuer Termin</h1>
-    {{ bootstrap.hr }}
+    <h1 {{ bs.h1_attrs }}>Neuer Termin</h1>
+    {{ bs.hr }}
 
-    {{ bootstrap.row }}
-      Hello World!
-    {{ bootstrap.endrow }}
+    {{ bs.row }}
+      {{ bs.col(2) }}<strong>Datum:</strong>{{ bs.endcol }}
+      {{ bs.col(10) }}Sa, 12. Dezember 2023{{ bs.endcol }}
+    {{ bs.endrow }}
+    {{ bs.spacer(2) }}
+    {{ bs.row }}
+      {{ bs.col(2) }}<strong>Name:</strong>{{ bs.endcol }}
+      {{ bs.col(10) }}Lehrter Open{{ bs.endcol }}
+    {{ bs.endrow }}
+    {{ bs.spacer(2) }}
+    {{ bs.row }}
+      {{ bs.col(2) }}<strong>URL:</strong>{{ bs.endcol }}
+      {{ bs.col(10) }}<span class="text-primary" style="color: #0d6efd;"><a href="http://example.com">http://example.com</a></span>{{ bs.endcol }}
+    {{ bs.endrow }}
 
-  {{ bootstrap.endcard }}
+    {{ bs.hr }}
+    {{ bs.button('http://example.com', 'Veröffentlichen') }}
 
-{{ bootstrap.endbody }}
+  {{ bs.endcard }}
 
-
-
-{#}
-{% apply inky_to_html|inline_css(source('email/vendor/foundation-emails.css')) %}
-  <container>
-    <row class="header">
-      <columns>
-        <spacer size="16"></spacer>
-        <h1>Neuer Termin</h1>
-      </columns>
-    </row>
-
-    <row>
-      <columns large="2">
-        <strong>Datum:</strong>
-      </columns>
-      <columns large="10">
-        Sa, 12. Dezember 2023
-      </columns>
-    </row>
-    <row>
-      <columns large="2">
-        <strong>Name:</strong>
-      </columns>
-      <columns large="10">
-        3000. Lehrter Open
-      </columns>
-    </row>
-    <row>
-      <columns large="2">
-        <strong>URL:</strong>
-      </columns>
-      <columns large="10">
-        <a href="http://example.com">http://example.com</a>
-      </columns>
-    </row>
-
-    <row>
-      <columns>
-        <button href="#" class="radius alert">Termin veröffentlichen</button>
-      </columns>
-    </row>
-
-    <row>
-      <columns>
-        <a href="https://nsv-online.de/termine/">Zum Terminkalender</a>
-      </columns> 
-    </row>
-
-  </container>
-{% endapply %}
-#}
+{{ bs.endbody }}

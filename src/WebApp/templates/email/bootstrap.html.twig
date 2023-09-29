@@ -37,6 +37,19 @@
   {{ _self.spacer(5) }}
 {% endmacro %}
 
+{# Button component. #}
+{% macro button(href, label = null) %}
+  <table class="btn btn-danger" role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-radius: 6px; border-collapse: separate !important;">
+    <tbody>
+      <tr>
+        <td style="line-height: 24px; font-size: 16px; border-radius: 6px; margin: 0;" align="center" bgcolor="#dc3545">
+          <a href="{{ href }}" style="color: #ffffff; font-size: 16px; font-family: Helvetica, Arial, sans-serif; text-decoration: none; border-radius: 6px; line-height: 20px; display: block; font-weight: normal; white-space: nowrap; background-color: #dc3545; padding: 8px 12px; border: 1px solid #dc3545;">{{ label|default(href) }}</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+{% endmacro %}
+
 {# Row to be used with columns. Requires calling endrow() as well. #}
 {% macro row() %}
   <div class="row" style="margin-right: -24px;">
@@ -49,6 +62,14 @@
       </tbody>
     </table>
   </div>
+{% endmacro %}
+
+{# Column to be placed in a row. Grid system consists of 12 columns. #}
+{% macro col(width = 12) %}
+  <td class="col-{{width}}" style="line-height: 24px; font-size: 16px; min-height: 1px; font-weight: normal; padding-right: 24px; width: {{ width * 8.333333 }}%; margin: 0;" align="left" valign="top">
+{% endmacro %}
+{% macro endcol() %}
+  </td>
 {% endmacro %}
 
 {# Card component. #}
