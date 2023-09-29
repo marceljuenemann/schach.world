@@ -96,7 +96,7 @@ class CalendarController extends AbstractController {
       ->subject('Test')
       ->htmlTemplate('email/calendar-approval.html.twig')
       ->context([
-        'username' => 'foo',
+        'event' => $event,
       ]);
     $mailer->send($email);
   }
