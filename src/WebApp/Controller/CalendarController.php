@@ -82,6 +82,13 @@ class CalendarController extends AbstractController {
     ]);
   }
 
+  #[Route('/v3/termine/maildebug/', name: 'calendar-mail-debug')]
+  public function debugMail(Request $request): Response {
+    return $this->render('email/calendar-approval.html.twig', [
+      'username' => 'foo'
+    ]);
+  }
+
   // TODO: send eMail
   private function sendApprovalMail(MailerInterface $mailer, Event $event) {
     $email = (new TemplatedEmail())

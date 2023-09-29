@@ -1,4 +1,19 @@
-{# TODO: create email template #}
+{% extends 'email/layout/layout.html.twig' %}
+
+
+{% block content %}
+
+  {% embed "email/layout/card.html.twig" %}
+    {% block content %}
+      Hi!
+    {% endblock %}
+  {% endembed %}
+
+{% endblock %}
+
+
+
+{#}
 {% apply inky_to_html|inline_css(source('email/vendor/foundation-emails.css')) %}
   <container>
     <row class="header">
@@ -47,3 +62,4 @@
 
   </container>
 {% endapply %}
+#}
