@@ -1,4 +1,82 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{#
+  Simplified re-implementaton of Bootstrap Email (see bootstrapemail.com).
+
+  The macros don't aim to fully implement all options offered by Bootstrap Email,
+  but rather offer an opinionated version for use in NSV eMails.
+#}
+
+{# Vertical spacer (s-5, s-10 etc. in Bootstrap Email). #}
+{% macro spacer(height = 10) %}
+  <table class="s-{{ height }} w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+    <tbody>
+      <tr>
+        <td style="line-height: {{ height * 4 }}px; font-size: {{ height * 4 }}px; width: 100%; height: {{ height * 4 }}px; margin: 0;" align="left" width="100%" height="{{ height * 4 }}">
+          &#160;
+        </td>
+      </tr>
+    </tbody>
+  </table>
+{% endmacro %}
+
+{# Headline attributes. #}
+{% macro h1_attrs() %}
+  class="h3" style="padding-top: 0; padding-bottom: 0; font-weight: 500; vertical-align: baseline; font-size: 28px; line-height: 33.6px; margin: 0;" align="left"
+{% endmacro %}
+
+{# <hr> tag. #}
+{% macro hr() %}
+  {{ _self.spacer(5) }}
+  <table class="hr" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+    <tbody>
+      <tr>
+        <td style="line-height: 24px; font-size: 16px; border-top-width: 1px; border-top-color: #e2e8f0; border-top-style: solid; height: 1px; width: 100%; margin: 0;" align="left">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  {{ _self.spacer(5) }}
+{% endmacro %}
+
+{# Row to be used with columns. Requires calling endrow() as well. #}
+{% macro row() %}
+  <div class="row" style="margin-right: -24px;">
+    <table class="" role="presentation" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed; width: 100%;" width="100%">
+      <tbody>
+        <tr>
+{% endmacro %}
+{% macro endrow() %}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+{% endmacro %}
+
+{# Card component. #}
+{% macro card() %}
+  {{ _self.spacer }}
+  <table class="card" role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-radius: 6px; border-collapse: separate !important; width: 100%; overflow: hidden; border: 1px solid #e2e8f0;" bgcolor="#ffffff">
+    <tbody>
+      <tr>
+        <td style="line-height: 24px; font-size: 16px; width: 100%; margin: 0;" align="left" bgcolor="#ffffff">
+          <table class="card-body" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+              <tr>
+                <td style="line-height: 24px; font-size: 16px; width: 100%; margin: 0; padding: 20px;" align="left">
+{% endmacro %}
+{% macro endcard() %}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+{% endmacro %}
+
+{# Base eMail layout (with container component). #}
+{% macro body()
+%}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
     <!-- Compiled with Bootstrap Email version: 1.4.0 --><meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -29,8 +107,8 @@
                       <tbody>
                         <tr>
                           <td style="line-height: 24px; font-size: 16px; margin: 0;" align="left">
-                            {% block content %}{% endblock %}
-                            {% block footer %}{% endblock %}
+{% endmacro %}
+{% macro endbody() %}
                           </td>
                         </tr>
                       </tbody>
@@ -51,3 +129,4 @@
     </table>
   </body>
 </html>
+{% endmacro %}

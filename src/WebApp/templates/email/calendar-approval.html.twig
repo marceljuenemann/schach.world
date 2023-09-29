@@ -1,19 +1,18 @@
-{% extends 'email/layout/layout.html.twig' %}
+{% import "email/bootstrap.html.twig" as bootstrap %}
+{{ bootstrap.body }}
 
-{% block content %}
+  {{ bootstrap.card }}
 
-  {% embed "email/layout/card.html.twig" %}
-    {% import "email/layout/bootstrap.html.twig" as bootstrap %}
-    {% block content %}
+    <h1 {{ bootstrap.h1_attrs }}>Neuer Termin</h1>
+    {{ bootstrap.hr }}
 
-      <h1 {{ bootstrap.h1_attrs }}>Neuer Termin</h1>
-      {{ bootstrap.hr }}
+    {{ bootstrap.row }}
       Hello World!
+    {{ bootstrap.endrow }}
 
-    {% endblock %}
-  {% endembed %}
+  {{ bootstrap.endcard }}
 
-{% endblock %}
+{{ bootstrap.endbody }}
 
 
 
