@@ -16,6 +16,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\UrlType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
@@ -24,11 +25,15 @@ use Symfony\Component\Validator\Constraints\GreaterThanOrEqual;
 
 class CalendarController extends AbstractController {
 
-  function __construct(private EntityManagerInterface $em, private MailerInterface $mailer) {}
+  function __construct(
+    private EventRepository $eventRepository,
+    private EntityManagerInterface $em,
+    private MailerInterface $mailer
+  ) {}
 
   #[Route('/v3/termine/', name: 'calendar')]
-  public function calendar(EventRepository $eventRepository): Response {
-    $events = $eventRepository->getUpcoming();
+  public function calendar(): Response {
+    $events = $this->eventRepository->getUpcoming();
     return $this->render('calendar/calendar.html.twig', ['events' => $events]);
   }
 
@@ -85,9 +90,22 @@ class CalendarController extends AbstractController {
   }
 
   #[Route('/v3/termine/approve/{id}/', name: 'calendar-approve')]
-  public function approveEntry(int $id): Response {
-    return $this->render('calendar/add.html.twig', [
-    ]);
+  public function approveEntry(Request $request, int $id): Response {
+    $event = $this->eventRepository->findOneById($id);
+    if (!$event) throw new NotFoundHttpException();
+    if (!Auth::isLoggedIn()) {
+      return Auth::loginRedirect($request->getUri());
+    }
+    if (Auth::isAuthor()) {
+      $event->isApproved = true;
+      $this->em->persist($event);
+      $this->em->flush();
+      $this->addFlash('success', 'Termin wurde freigeschaltet');
+    } else {
+      $this->addFlash('danger', 'Nicht berechtigt zum Freischalten');
+
+    }
+    return $this->redirectToRoute('calendar');
   }
   
   private function sendApprovalMail(Event $event) {
