@@ -17,13 +17,14 @@ use Symfony\Component\Form\Extension\Core\Type\UrlType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mailer\MailerInterface;
-use Symfony\Component\Mime\Address;
-use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Validator\Constraints\EqualTo;
 use Symfony\Component\Validator\Constraints\GreaterThanOrEqual;
 
 class CalendarController extends AbstractController {
+
+  function __construct(private EntityManagerInterface $em, private MailerInterface $mailer) {}
 
   #[Route('/v3/termine/', name: 'calendar')]
   public function calendar(EventRepository $eventRepository): Response {
@@ -32,7 +33,7 @@ class CalendarController extends AbstractController {
   }
 
   #[Route('/v3/termine/eintragen/', name: 'calendar-add')]
-  public function addEntry(Request $request, EntityManagerInterface $em, MailerInterface $mailer): Response {
+  public function addEntry(Request $request): Response {
     $event = new Event();
     $builder = $this->createFormBuilder($event)
         ->add('date', DateType::class, [
@@ -65,16 +66,17 @@ class CalendarController extends AbstractController {
       $event->isApproved = $isAuthor;
       
       // Store.
-      $em->persist($event);
-      $em->flush();
+      $this->em->persist($event);
+      $this->em->flush();
+
+      // Approval mail and messages.
       if ($isAuthor) {
         $this->addFlash('success', 'Termin erfolgreich eingetragen');
       } else {
-        $this->sendApprovalMail($mailer, $event);
+        $this->sendApprovalMail($event);
         $this->addFlash('info', 'Der Termin wird nach Freischaltung veröffentlicht');
       }
-
-//      return $this->redirectToRoute('calendar');
+      return $this->redirectToRoute('calendar');
     }
 
     return $this->render('calendar/add.html.twig', [
@@ -82,24 +84,21 @@ class CalendarController extends AbstractController {
     ]);
   }
 
-  #[Route('/v3/termine/maildebug/', name: 'calendar-mail-debug')]
-  public function debugMail(Request $request): Response {
-    return $this->render('email/calendar-approval.html.twig', [
-      'username' => 'foo'
+  #[Route('/v3/termine/approve/{id}/', name: 'calendar-approve')]
+  public function approveEntry(int $id): Response {
+    return $this->render('calendar/add.html.twig', [
     ]);
   }
-
-  // TODO: send eMail
-  private function sendApprovalMail(MailerInterface $mailer, Event $event) {
+  
+  private function sendApprovalMail(Event $event) {
     $email = (new TemplatedEmail())
-      ->to(new Address('test@marcel.world', 'Marcel Jünemann'))
-      ->subject('Test')
+      ->to($_ENV['CALENDAR_APPROVER'])
+      ->subject('[NSV Terminkalender] ' . $event->name)
       ->htmlTemplate('email/calendar-approval.html.twig')
       ->context([
         'event' => $event,
+        'approvalUrl' => $this->generateUrl('calendar-approve', ['id' => $event->id], UrlGeneratorInterface::ABSOLUTE_URL)
       ]);
-    $mailer->send($email);
+    $this->mailer->send($email);
   }
-
-  // TODO: implement approval link
 }
