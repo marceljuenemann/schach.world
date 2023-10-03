@@ -17,7 +17,10 @@ export interface TeamVenue {
 }
 
 export interface TeamCaptain {
-  name: string
+  name: string,
+  mail: string,
+  phone: string,
+  phone2: string
 }
 
 export interface Pairing {

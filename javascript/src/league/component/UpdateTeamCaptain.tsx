@@ -12,7 +12,7 @@ class UpdateTeamCaptainForm extends NsvForm<{teamId: number, captain: TeamCaptai
   }
 
   async save(): Promise<void> {
-    //await new LeagueApi().updateTeamVenue(this.props.teamId, this.values as TeamVenue)
+    await new LeagueApi().updateTeamCaptain(this.props.teamId, this.values as TeamCaptain)
   }
 
   render() {

@@ -7,6 +7,7 @@ use Nsv\League\Api\Model\Player;
 use Nsv\League\Api\Model\PlayerGame;
 use Nsv\League\Api\Model\Team;
 use Nsv\League\Api\Model\TeamPairing;
+use Nsv\League\Api\Request\UpdateTeamCaptainRequest;
 use Nsv\League\Api\Request\UpdateTeamVenueRequest;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity;
@@ -63,6 +64,15 @@ class TeamService
     $team->venueCity = $request->city;
     $team->venuePhone = $request->phone;
     // TODO: Allow updating accessibility.
+    $this->leagueEntityManager->persist($team);
+    $this->leagueEntityManager->flush();
+  }
+
+  public function updateCaptain(Entity\Team $team, UpdateTeamCaptainRequest $request) {
+    $team->captainName = $request->name;
+    $team->captainMail = $request->mail;
+    $team->captainPhone = $request->phone;
+    $team->captainPhone2= $request->phone2;
     $this->leagueEntityManager->persist($team);
     $this->leagueEntityManager->flush();
   }

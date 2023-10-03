@@ -5,6 +5,7 @@ namespace Nsv\League\Controller;
 use Nsv\League\Api\Model\Division;
 use Nsv\League\Api\Request\CreateDivisionRequest;
 use Nsv\League\Api\Request\DivisionOrderRequest;
+use Nsv\League\Api\Request\UpdateTeamCaptainRequest;
 use Nsv\League\Api\Request\UpdateTeamVenueRequest;
 use Nsv\League\Api\Service\DivisionService;
 use Nsv\League\Api\Service\ScheduleService;
@@ -60,6 +61,15 @@ class ApiController extends AbstractLeagueController {
     $this->auth->requireDivisionManager($team->division);
     Encoding::deep_utf8_decode($request);
     $service->updateVenue($team, $request);
+    return $this->apiResponse();
+  }
+
+  #[Route('teams/{teamId}/captain/', methods: ['PUT'], name: 'team_captain_update')]
+  public function updateTeamCaptain(int $teamId, #[MapRequestPayload] UpdateTeamCaptainRequest $request, TeamService $service): Response {
+    $team = $this->league->teamById($teamId);
+    $this->auth->requireDivisionManager($team->division);
+    Encoding::deep_utf8_decode($request);
+    $service->updateCaptain($team, $request);
     return $this->apiResponse();
   }
 }
