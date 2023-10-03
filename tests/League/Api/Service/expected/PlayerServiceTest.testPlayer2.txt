@@ -1,6 +1,6 @@
 Nsv\League\Api\Model\Player Object
 (
-    [id] => 50
+    [id] => 26
     [name] => Salzmann, Jan
     [lastName] => Salzmann
     [firstName] => Jan
@@ -12,15 +12,15 @@ Nsv\League\Api\Model\Player Object
     [gender] => m
     [isGuest] => 
     [lateRegistrationRound] => 
-    [uri] => /ligen/test/s/50/
+    [uri] => /ligen/test/s/26/
     [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
     [team] => Nsv\League\Api\Model\Team Object
         (
-            [id] => 62
+            [id] => 18
             [name] => Team 2
             [zps] => 
-            [uri] => /ligen/test/m/62/
-            [apiUri] => /ligen/test/api/teams/62/
+            [uri] => /ligen/test/m/18/
+            [apiUri] => /ligen/test/api/teams/18/
         )
 
     [games] => Array
@@ -35,16 +35,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => 1
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 61
+                            [id] => 17
                             [name] => Team
                             [zps] => 
-                            [uri] => /ligen/test/m/61/
-                            [apiUri] => /ligen/test/api/teams/61/
+                            [uri] => /ligen/test/m/17/
+                            [apiUri] => /ligen/test/api/teams/17/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 49
+                            [id] => 25
                             [name] => GM Dr. Jünemann, Marcel
                             [lastName] => Jünemann
                             [firstName] => Marcel
@@ -56,7 +56,7 @@ Nsv\League\Api\Model\Player Object
                             [gender] => w
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/49/
+                            [uri] => /ligen/test/s/25/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                         )
 
@@ -73,16 +73,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => ½
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 61
+                            [id] => 17
                             [name] => Team
                             [zps] => 
-                            [uri] => /ligen/test/m/61/
-                            [apiUri] => /ligen/test/api/teams/61/
+                            [uri] => /ligen/test/m/17/
+                            [apiUri] => /ligen/test/api/teams/17/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 49
+                            [id] => 25
                             [name] => GM Dr. Jünemann, Marcel
                             [lastName] => Jünemann
                             [firstName] => Marcel
@@ -94,7 +94,7 @@ Nsv\League\Api\Model\Player Object
                             [gender] => w
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/49/
+                            [uri] => /ligen/test/s/25/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                         )
 
@@ -111,16 +111,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => 0
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 61
+                            [id] => 17
                             [name] => Team
                             [zps] => 
-                            [uri] => /ligen/test/m/61/
-                            [apiUri] => /ligen/test/api/teams/61/
+                            [uri] => /ligen/test/m/17/
+                            [apiUri] => /ligen/test/api/teams/17/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 49
+                            [id] => 25
                             [name] => GM Dr. Jünemann, Marcel
                             [lastName] => Jünemann
                             [firstName] => Marcel
@@ -132,7 +132,7 @@ Nsv\League\Api\Model\Player Object
                             [gender] => w
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/49/
+                            [uri] => /ligen/test/s/25/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                         )
 
@@ -149,16 +149,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => -
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 61
+                            [id] => 17
                             [name] => Team
                             [zps] => 
-                            [uri] => /ligen/test/m/61/
-                            [apiUri] => /ligen/test/api/teams/61/
+                            [uri] => /ligen/test/m/17/
+                            [apiUri] => /ligen/test/api/teams/17/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 49
+                            [id] => 25
                             [name] => GM Dr. Jünemann, Marcel
                             [lastName] => Jünemann
                             [firstName] => Marcel
@@ -170,7 +170,7 @@ Nsv\League\Api\Model\Player Object
                             [gender] => w
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/49/
+                            [uri] => /ligen/test/s/25/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                         )
 
@@ -187,16 +187,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => ?
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 61
+                            [id] => 17
                             [name] => Team
                             [zps] => 
-                            [uri] => /ligen/test/m/61/
-                            [apiUri] => /ligen/test/api/teams/61/
+                            [uri] => /ligen/test/m/17/
+                            [apiUri] => /ligen/test/api/teams/17/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 49
+                            [id] => 25
                             [name] => GM Dr. Jünemann, Marcel
                             [lastName] => Jünemann
                             [firstName] => Marcel
@@ -208,7 +208,7 @@ Nsv\League\Api\Model\Player Object
                             [gender] => w
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/49/
+                            [uri] => /ligen/test/s/25/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                         )
 
@@ -225,16 +225,16 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => ?
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 61
+                            [id] => 17
                             [name] => Team
                             [zps] => 
-                            [uri] => /ligen/test/m/61/
-                            [apiUri] => /ligen/test/api/teams/61/
+                            [uri] => /ligen/test/m/17/
+                            [apiUri] => /ligen/test/api/teams/17/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 49
+                            [id] => 25
                             [name] => GM Dr. Jünemann, Marcel
                             [lastName] => Jünemann
                             [firstName] => Marcel
@@ -246,7 +246,7 @@ Nsv\League\Api\Model\Player Object
                             [gender] => w
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/49/
+                            [uri] => /ligen/test/s/25/
                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                         )
 
@@ -263,11 +263,11 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => -
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 61
+                            [id] => 17
                             [name] => Team
                             [zps] => 
-                            [uri] => /ligen/test/m/61/
-                            [apiUri] => /ligen/test/api/teams/61/
+                            [uri] => /ligen/test/m/17/
+                            [apiUri] => /ligen/test/api/teams/17/
                         )
 
                     [opponentPlayer] => 

@@ -83,6 +83,7 @@ class Team
   private $players;
 
   #[ORM\OneToMany(targetEntity: TeamRecipient::class, mappedBy: 'team')]   
+  #[ORM\OrderBy(["id" => "ASC"])]
   private $additionalRecipients;
 
   #[ORM\OneToMany(targetEntity: TeamDetail::class, mappedBy: 'team')]   

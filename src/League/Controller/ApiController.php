@@ -79,8 +79,7 @@ class ApiController extends AbstractLeagueController {
     $team = $this->league->teamById($teamId);
     $this->auth->requireDivisionManager($team->division);
     Encoding::deep_utf8_decode($request);
-//    $service->updateCaptain($team, $request);
-throw new \Exception('blub');
+    $service->updateRecipients($team, $request);
     return $this->apiResponse();
   }
 }
