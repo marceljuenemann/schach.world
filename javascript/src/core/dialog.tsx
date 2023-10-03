@@ -62,6 +62,7 @@ export abstract class NsvDialog<P = {}, R = void> extends React.Component<P & {
         <Modal.Body> {
           this.renderBody({
             onSave: saveHandler => this.setState({saveHandler}),
+            triggerSave: () => this.onSave(),
             validationErrors: this.state.saveError?.validationErrors
           })
         } </Modal.Body>

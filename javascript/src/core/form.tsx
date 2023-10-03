@@ -5,6 +5,8 @@ import { ValidationErrors } from "./api"
 export type NsvFormProps<R = void> = {
   // Callback to register a save handler with the parent component.
   onSave: (saveHandler: () => Promise<R>) => void,
+  // Callback to trigger a save action.
+  triggerSave: () => void,
   validationErrors?: ValidationErrors
 }
 
@@ -21,6 +23,9 @@ export abstract class NsvForm<P = {}, R = void> extends React.Component<
     this.props.onSave(() => this.save())
   }
 
+  /**
+   * Save handler to be implemented by the extending child class.
+   */
   abstract save(): Promise<R>
 
   get values(): Record<string, any> {
@@ -60,6 +65,7 @@ export abstract class NsvForm<P = {}, R = void> extends React.Component<
             placeholder={this.props.label}
             value={this.props.form.state.values[this.props.id] || ''}
             onChange={e => this.props.form.onFieldChange(this.props.id, e.target.value)}
+            onKeyDown={e => { if (e.key === 'Enter') this.props.form.props.triggerSave() }}
             isValid={this.formErrors && !this.errors.length}
             isInvalid={this.errors.length > 0}
           />
