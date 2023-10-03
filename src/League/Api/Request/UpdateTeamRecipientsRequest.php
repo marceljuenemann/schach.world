@@ -6,7 +6,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 class UpdateTeamRecipientsRequest
 {
-  #[Assert\NotBlank]
+  #[Assert\NotNull]
   #[Assert\All(['constraints' => [new Assert\Email()]])]
   public array $recipients;
 }

@@ -28,7 +28,7 @@ class UpdateTeamRecipientsForm extends React.Component<{teamId: number, emails: 
   }
 
   private remove(index: number) {
-    const list = this.state.emails
+    const list = [...this.state.emails]
     list.splice(index, 1)
     this.setState({emails: list})
   }

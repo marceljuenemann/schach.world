@@ -96,7 +96,7 @@
     {% if allowEdit %}
       <br><strong>Zus&auml;tzliche E-Mail Empf&auml;nger:</strong>
       {# TODO: use team instead of teamEntity #}
-      {% if teamEntity.additionalRecipients %}
+      {% if teamEntity.additionalRecipients|length %}
         {% for recipient in teamEntity.additionalRecipients %}
           <span class="badge bg-secondary">{{ recipient.mail }}</span>          
         {% endfor %}
