@@ -73,7 +73,7 @@ class SED_Cache {
     // Löscht eine Spieltag-Ansicht
     static function clearSpieltag ( $staffel = 0, $runde = 0 ){
         global $globals;
-        $sql = "turnier='$globals[tid]' AND typ='Spieltag'";
+        $sql = "turnier='$globals[tid]' AND (typ='Spieltag' OR typ='MatchDay')";
         $sql .= $staffel ? " AND staffel='$staffel'" : "";
         $sql .= $runde ? " AND runde='$runde'" : "";
         return SED_Cache::clear ( $sql );

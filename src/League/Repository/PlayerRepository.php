@@ -3,8 +3,8 @@
 namespace Nsv\League\Repository;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\EntityNotFoundException;
 use Doctrine\Persistence\ManagerRegistry;
+use Nsv\League\Entity\Division;
 use Nsv\League\Entity\Player;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
@@ -19,7 +19,6 @@ class PlayerRepository extends ServiceEntityRepository
     parent::__construct($registry, Player::class);
   }
 
-
   // TODO: move into our own abstract repository? 
   public function find($id, $lockMode = null, $lockVersion = null): Player {
     $entity = parent::find((int) $id, $lockMode, $lockVersion);
@@ -27,5 +26,22 @@ class PlayerRepository extends ServiceEntityRepository
       throw new NotFoundHttpException("Player not found");
     }
     return $entity;
+  }
+
+  /**
+   * Returns all players who were late registered.
+   */
+  public function findLateRegistrations(Division $division, int $minRound, int $maxRound) {
+    return $this->createQueryBuilder('p')
+      ->where('p.lateRegistrationDivision = :division')
+      ->andWhere('p.lateRegistrationRound >= :minRound')
+      ->andWhere('p.lateRegistrationRound <= :maxRound')
+      ->addOrderBy('p.team', 'ASC')
+      ->addOrderBy('p.number', 'ASC')
+      ->setParameter('division', $division)
+      ->setParameter('minRound', $minRound)
+      ->setParameter('maxRound', $maxRound)
+      ->getQuery()
+      ->getResult();
   }
 }

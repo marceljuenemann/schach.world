@@ -6,15 +6,15 @@ $nsvMainmenu = array (
 	(bool) strstr ( $_SERVER ['PHP_SELF'], "/archiv/" ),
 
 	"Neuigkeiten" => "",
-	"Verbandsnachrichten" => "verbandsnachrichten/",
 	"Vorstand" => "vorstand/",
 	"Kongress" => "kongress/",
 	"Satzung und Ordnungen" => "ordnungen/",
 	"Mitgliederverwaltung" => "mitgliederverwaltung/",
 
-	"Galerie der Meister:innen" => "ruhmeshalle/",
+	"Ruhmeshalle" => "ruhmeshalle/",
 	"Ehrentafel" => "ehrentafel/",
-	"Vorstandschronik" => "vorstandschronik/"
+	"Vorstandschronik" => "vorstandschronik/",
+	"Verbandsnachrichten" => "verbandsnachrichten/"
 ),
 
 "Ligen" => array (

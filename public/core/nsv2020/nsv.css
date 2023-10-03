@@ -24,6 +24,11 @@ a, a:hover, .nav-link, .nav-link:hover {
   text-decoration: none;
 }
 
+/* Links in headlines should be black. */
+h2 a, h4 a, h6 a {
+  color: var(--bs-body-color);
+}
+
 /* Account for sticky navbar and card header when scrolling to an anchor. */
 a.anchor {
   display: block;
@@ -73,6 +78,11 @@ a.anchor {
   background-color: #c32811;
 }
 
+.dropdown-item:focus, .dropdown-item:hover {
+  background: linear-gradient(0deg, #c32811, #e15b58);
+  color: white !important;
+}
+
 .form-switch .form-check-input:checked {
   background-color: #c32811;
   border-color: #c32811;
@@ -93,6 +103,12 @@ a.anchor {
  */
 .form-group {
   margin-bottom: 1rem!important;
+}
+
+@media print {
+  .container {
+    max-width: unset;  /* No max width. */
+  }
 }
 
 /****************************************
@@ -159,11 +175,6 @@ body {
   color: #eee;
 }
 
-#nsv-navbar .dropdown-item:focus, #nsv-navbar .dropdown-item:hover {
-  background: linear-gradient(0deg, #c32811, #e15b58);
-  color: white;
-}
-
 @media (min-width: 991.98px) {
   #nsv-navbar .nsv-navbar-search {
     margin-left: auto;
@@ -196,6 +207,15 @@ body {
   display: inline-block;
   font-size: 0.8rem;
   width: 100%;
+}
+
+#nsv-sidebar .nsv-sidebar-card .nav .nav-link {
+  font-size: 0.9rem;
+  padding-left: 0;
+}
+
+#nsv-sidebar .nsv-sidebar-card .nav .nav-link.active {
+  font-weight: bold;
 }
 
 #nsv-footer {
@@ -368,5 +388,25 @@ on again using .nsv-details-show.
   .nsv-details-show td.nsv-details,
   .nsv-details-show th.nsv-details {
     display: table-cell;
+  }
+}
+
+/****************************************
+          COMPONENT: nsv-print
+
+Utilities for print layout.    
+*****************************************/
+
+@media print {
+  .nsv-print-w50 {
+    width: 50%!important;
+  }
+
+  .nsv-print-w100 {
+    width: 100%!important;
+  }
+
+  .nsv-print-hide-toggle::after {
+    display: none;
   }
 }

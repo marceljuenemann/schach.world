@@ -14,16 +14,6 @@ public/wordpress/wp-content/plugins/*
 !public/wordpress/wp-content/plugins/nsv-v3
 # TODO: Add plugins/nsv-archive after moving spreadsheet links to config file
 
-# Add some config files for nsv-turniere plugin (just as an example really) 
-!public/wordpress/wp-content/uploads
-public/wordpress/wp-content/uploads/*
-!public/wordpress/wp-content/uploads/turniere
-public/wordpress/wp-content/uploads/turniere/*
-!public/wordpress/wp-content/uploads/turniere/*.json
-!public/wordpress/wp-content/uploads/turniere/lem
-public/wordpress/wp-content/uploads/turniere/lem/*
-!public/wordpress/wp-content/uploads/turniere/lem/*.json
-
 # TODO: The following files are legacy code and should be rewritten rather than added to the repo
 public/anmeldung/
 public/bezirke/
@@ -37,6 +27,7 @@ public/turniere/
 public/verband/
 
 # Files that should actually be excluded
+data/
 public/cache/
 public/downloads/
 public/images/

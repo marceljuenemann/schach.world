@@ -9,7 +9,11 @@ class TextSanitizer {
    * This is similar to WordPress' sanitize_title and intended to be generate readable URLs. 
    */
   public static function slug($str) {
-    return strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', TextSanitizer::replaceUmlauts($str))));
+    $str = trim($str);
+    $str = strtolower($str);
+    $str = TextSanitizer::replaceUmlauts($str);
+    $str = preg_replace('/[^A-Za-z0-9-]+/', '-', $str);
+    return $str;
   }
 
   public static function replaceUmlauts($str) {

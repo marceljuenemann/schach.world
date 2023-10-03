@@ -14,19 +14,29 @@ class MatchDay
   public ?string $date;
   public string $uri;
   public string $uriPdf;
-  public array $pairings = array();
+  public string $uriApi;
 
-  public static function create(Division $division, int $round, string|null $date = null): MatchDay {
-    $result = new MatchDay();
-    $result->round = $round;
-    $result->date = $date;
-    $result->uri = $division->matchDayUri($round);
-    $result->uriPdf = $division->matchDayUri($round, true);
-    return $result;
-  } 
+  public array $pairings = array();
+  public ?array $legacyRanking;
+  public ?string $comment;
+  public ?array $lateRegisteredPlayers;
+  public ?array $allRounds;
+  public ?string $lastModified;
+  public ?string $generatedAt;
 
   public static function fromRound(Round $round): MatchDay {
-    return self::create($round->division, $round->round, $round->date);
+    $result = new MatchDay();
+    $result->round = $round->round;
+    $result->date = $round->date;
+    $result->uri = $round->uri();
+    $result->uriPdf = $round->pdfUri();
+    $result->uriApi = $round->apiUri();
+    return $result;
+  }
+
+  public function nextMatchDay(): MatchDay|null {
+    if (!isset($this->allRounds[$this->round + 1])) return null;
+    return $this->allRounds[$this->round + 1];
   }
 
   public static function compare(MatchDay $a, MatchDay $b) {

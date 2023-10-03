@@ -34,13 +34,13 @@ function nsv2020_navbar() {
     return nsv2020_bezirk1_navbar();
   }
   
-  $menu = array("&Uuml;bersicht" => array("?"));
+  $menu = array("&Uuml;bersicht" => array($globals['basepath']));
   foreach ( $globals ["staffeln"] as $id => $name ) {
     // Namen ggf. kürzen verarbeiten
     if ( count ( $globals ["staffeln"] ) > 3 ) {
       $name = str_replace ( "Staffel ", "", str_replace ( "Gruppe ", "", $name ) );
     }
-    $menu[$name] = array("?staffel=$id&r=");
+    $menu[$name] = array($globals['basepath'] . "?staffel=$id&r=");
   }
   return $menu;
 }
@@ -62,6 +62,6 @@ include ("$globals[basedir]/../core/nsv2020/header.php");
 echo "<div class='col-12 col-lg-9 order-lg-2'><div class='card shadow nsv-card'><div class='card-body'>";
 
 if (strlen($prefs['infomeldung']) > 2) {
-  echo "<div class='sed_infomeldung'>$prefs[infomeldung]</div>";
+  echo "<div class='sed_infomeldung d-print-none'>$prefs[infomeldung]</div>";
   echo "</div></div><div class='card shadow nsv-card'><div class='card-body'>";
 }

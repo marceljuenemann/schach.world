@@ -3,9 +3,28 @@
 {% set title = "Terminkalender" %}
 
 {% block content %}
-<ul>
-  {% for event in events %}
-    <li>{{ event.date.format('Y-m-d') }} {{ event.name }}</li>
-  {% endfor %}
-</ul>
+
+  {# TODO: nice button #}
+  <a href="addentry.php">Termin eintragen</a>
+ 
+  <table cellpadding="3">
+    {% for event in events %}
+      {% set month = event.date|format_date(pattern='MMMM Y') %}
+      {% if month != lastmonth|default('') %}
+        <tr><td colspan='2'><h3 class='mt-4'>{{ month }}</h3></td></tr>
+        {% set lastmonth = month %}
+      {% endif %}
+
+      <tr>
+        <td class='text-nowrap'>{{ event.date|format_date(pattern='ccc, dd.MM.') }}</td>
+        <td>
+          <a href='{{ event.url }}' class='{{ event.isNsv ? 'fw-bold' : '' }}'>{{ event.name }}</a>
+          {#{% if event.isNsv %}
+            <span class="badge bg-secondary ms-1">NSV</span>
+          {% endif %}#}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+
 {% endblock %}

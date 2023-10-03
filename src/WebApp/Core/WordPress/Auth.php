@@ -8,4 +8,7 @@ class Auth {
     return current_user_can('manage_options');
   }
 
+  static function isAuthor() {
+    return current_user_can('publish_posts');
+  }
 }

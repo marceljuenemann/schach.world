@@ -27,9 +27,10 @@ abstract class AbstractApiTest extends KernelTestCase
     $expectedPath = str_replace('/Api/Service/', '/Api/Service/expected/',  $path);
     $actualPath = str_replace('/Api/Service/', '/Api/Service/actual/',  $path);
 
-    $expected = Encoding::utf8_decode(file_get_contents($expectedPath));
     $actual = print_r($model, true);
     file_put_contents($actualPath, Encoding::utf8_encode($actual));
+    $expected = Encoding::utf8_decode(file_get_contents($expectedPath));
+
     $this->assertEquals($expected, $actual);
   }
 }

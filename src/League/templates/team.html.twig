@@ -22,10 +22,10 @@
 <div class="row">
   {# Schedule #}
   {% if team.pairingsByDivision|default(false) %}
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-lg-6 nsv-print-w50">
       {% for division in league.divisions %}
         {% if team.pairingsByDivision[division.id]|default(false) %}
-          <h4 class="mt-4">{{ division.name }}</h4>
+          <h4 class="mt-4">{{ nsv.link(division) }}</h4>
           <table class='nsv-table text-center'>
             <tr>
               <th>R</th>
@@ -47,9 +47,15 @@
         {% endif %}
       {% endfor %}
     </div>
+  {% elseif teamEntity.division %}
+    {# Link to division (if there is no schedule yet) #}
+    <div class="col-12">
+      <h4 class="mt-4">Staffel</h4>
+      {{ nsv.link(teamEntity.division) }}
+    </div>
   {% endif %}
 
-  <div class="col-12 col-lg-6">
+  <div class="col-12 col-lg-6 nsv-print-w50">
     {# Venue #}
     <h4 class="mt-4">
       Spiellokal
@@ -145,12 +151,5 @@
 <div class="d-none d-lg-block text-end">
   <a href="{{ team.apiUri }}"><span class="badge bg-secondary">API</span></a>
 </div>
-
-{# TODO: Move somewhere more general. Maybe set enable_tooltips to true? Or depending on whether tooltip macro was called? #}
-<script type="text/javascript">
-  $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-  })
-</script>
 
 {% endblock %}

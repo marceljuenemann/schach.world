@@ -26,8 +26,11 @@ class Event
     #[ORM\Column(type: 'date')]
     private \DateTimeInterface $date;
 
+    #[ORM\Column('is_nsv')]
+    private bool $isNsv = false;
+
     #[ORM\Column]
-    private bool $isApproved;
+    private bool $isApproved = false;
 
     public function __call($property, $args) {
       return $this->$property;

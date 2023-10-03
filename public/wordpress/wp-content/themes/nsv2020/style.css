@@ -8,6 +8,10 @@ Version: 1.0
 Text Domain: nsv2020
 */
 
+.wp-widget-group__inner-blocks > p:last-child {
+	margin-bottom: 0px;
+}
+
 #widget-schlagzeilen td:first-child {
   font-size: inherit !important;
   padding-right: 5px;

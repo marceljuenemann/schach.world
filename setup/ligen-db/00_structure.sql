@@ -74,7 +74,7 @@ CREATE TABLE `cache` (
   `turnier` int(11) NOT NULL,
   `staffel` int(11) NOT NULL,
   `runde` int(4) NOT NULL,
-  `typ` enum('Spieltag','Tabelle','Kreuztabelle','TabelleOhneLinks','KreuztabelleOhneLinks','TeamSpielplan','TeamAufstellung','TeamErgebnisse') NOT NULL,
+  `typ` enum('MatchDay','Spieltag','Tabelle','Kreuztabelle','TabelleOhneLinks','KreuztabelleOhneLinks','TeamSpielplan','TeamAufstellung','TeamErgebnisse') NOT NULL,
   `inhalt` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 

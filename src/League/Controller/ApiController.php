@@ -30,7 +30,7 @@ class ApiController extends AbstractLeagueController {
     $divisions = [];
     foreach ($this->league->divisions as $division) {
       $model = Division::fromEntity($division);
-      $model->matchDays = $scheduleService->matchDays($division);
+      $model->matchDays = $scheduleService->divisionSchedule($division);
       $model->closestDate = $scheduleService->closestDate(array_map(function ($date) {
         return $date->date;  // TODO: make this cleaner
       }, $division->dates()), $today);

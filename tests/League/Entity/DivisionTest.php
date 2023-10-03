@@ -5,6 +5,7 @@ namespace Nsv\League\Api\Service;
 use Nsv\League\Entity\Date;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
+use Nsv\League\Entity\Pairing;
 use PHPUnit\Framework\TestCase;
 
 class DivisionTest extends TestCase
@@ -19,12 +20,13 @@ class DivisionTest extends TestCase
 
     $this->division = new Division();
     $this->division->id = 42;
+    $this->division->name = 'test-div';
     $this->division->league = $this->league;
   }
 
-  public function testMatchDayUri() {
-    $this->assertEquals("/ligen/test-league/?staffel=42&r=", $this->division->matchDayUri());
-    $this->assertEquals("/ligen/test-league/?staffel=42&r=2", $this->division->matchDayUri(2));
+  public function testUri() {
+    $this->assertEquals("/ligen/test-league/test-div/", $this->division->uri());
+    $this->assertEquals("/ligen/test-league/test-div/2/", $this->division->round(2)->uri());
   }
 
   public function testDates() {
@@ -34,6 +36,40 @@ class DivisionTest extends TestCase
     $fake2 = $this->addDate(2, '2020-02-03');
 
     $this->assertEquals([1 => $date1, 2 => $date2], $this->division->dates());
+  }
+
+  public function testRoundsWithDate() {
+    $date2 = $this->addDate(2, '2020-01-01');
+    $date1 = $this->addDate(1, '2020-02-02');
+    $date5 = $this->addDate(5, '2020-03-03');
+    $this->division->configRounds = 3;  // Only 3 rounds
+
+    $rounds = $this->division->roundsWithDate();
+    $this->assertEquals([2, 1], array_keys($rounds));
+    $this->assertEquals('2020-01-01', $rounds[2]->date);
+    $this->assertEquals('2020-02-02', $rounds[1]->date);
+  }
+
+  public function testRoundsWithPairing() {
+    // Pairings in rounds 1, 2 and 4.
+    $this->division->pairings = array_map(function ($round) {
+      $entity = new Pairing();
+      $entity->division = $this->division;
+      $entity->round = $round;
+      return $entity;
+    }, [1, 2, 4]);
+
+    // Dates in different order than rounds (covid case).
+    $this->addDate(1, '2020-02-02');
+    $this->addDate(2, '2020-01-01');
+    $this->addDate(3, '2020-03-03');  // Should be ignored
+    $this->division->configRounds = 1;  // Should be ignored
+
+    $rounds = $this->division->roundsWithPairing();
+    $this->assertEquals([2, 1, 4], array_keys($rounds));
+    $this->assertEquals('2020-02-02', $rounds[1]->date);
+    $this->assertEquals('2020-01-01', $rounds[2]->date);
+    $this->assertNull($rounds[4]->date);
   }
 
   private function addDate($round, $date, $division = null) {

@@ -49,8 +49,10 @@ class Date
   /**
    * Sorts first by date and then by round.
    */
-  public static function compare(Date $a, Date $b) {
+  public static function compare(Date|Round $a, Date|Round $b) {
     if ($a->date == $b->date) return $a->round - $b->round;
+    if ($a->date == null) return 1;
+    if ($b->date == null) return -1;    
     return $a->date < $b->date ? -1 : 1;
   }
 }

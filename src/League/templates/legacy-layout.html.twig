@@ -1,7 +1,7 @@
 {# TODO: Instead of using legacy functions, go through WordPress via layout.html.twig #}
 {% import "macros.html.twig" as nsv %}
 
-{{ legacy_league_header(title) }}
+{{ legacy_league_header(title, isHomescreen|default(false)) }}
 
 <script src="{{ nsv_js_src() }}" defer></script>
 
@@ -15,5 +15,7 @@
 
 {% block content %}
 {% endblock %}
+
+{{ nsv.tooltipInit() }}
 
 {{ legacy_league_footer() }}

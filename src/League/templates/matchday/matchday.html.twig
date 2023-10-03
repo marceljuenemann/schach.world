@@ -1,0 +1,97 @@
+{% extends '@league/division-layout.html.twig' %}
+{% import "@league/macros.html.twig" as macros %}
+{% import "macros.html.twig" as nsv %}
+{% set title = division.name %} 
+
+{% block content %}
+
+  {{ nsv.tabNavigation(tabs) }}
+
+  {% if matchDay.allRounds|default(false) %}
+    <ul class="pagination pagination-sm mb-4 d-print-none">
+      <li class="page-item disabled"><span class="page-link border-0">Spieltag:</span></li>
+      {% for round in matchDay.allRounds %}
+        <li {{ round.date ? nsv.tooltip(round.date|date('d.m.Y')) : '' }} class="page-item {{ round.round == matchDay.round ? 'active' : ''  }}">
+          <a class="page-link" href="{{ round.uri }}">{{ round.round }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <div class="d-flex justify-content-between text-nowrap">
+    <h4>
+      {{ matchDay.round }}. Spieltag 
+      {% if matchDay.date %}
+        &ndash; {{ matchDay.date|date('d.m.Y') }}
+      {% endif %}
+    </h4>
+    <div class="ms-2 d-print-none">
+      <a href="{{ matchDay.uriPdf }}"><span class="badge bg-danger">PDF</span></a>
+      <a href="{{ matchDay.uriApi }}"><span class="badge bg-secondary">API</span></a>
+    </div>
+  </div>
+
+  {% include '@league/matchday/matches.html.twig' %}
+
+  {% include '@league/matchday/ranking.html.twig' %}
+
+  {% if matchDay.comment|default(false) %}
+    <div class="mb-4">
+      <h6>Anmerkungen</h6>
+      <div>{{ matchDay.comment|nl2br }}</div>
+    </div>
+  {% endif %}
+
+  {% for teamId, players in matchDay.lateRegisteredPlayers|default([]) %}
+    <div class="mb-4">
+      <h6>
+        Nachmeldungen
+        <a href="{{ league.teamById(teamId).uri }}">
+          {{ league.teamById(teamId).nameWithNumber }}
+        </a>
+      </h6>
+      {% for player in players %}
+        <div>
+          {{ player.number }}
+          {{ nsv.link(player) }}
+          {% if player.lateRegistrationRound != matchDay.round %}
+            (ab {{ player.lateRegistrationRound }}. Spieltag)
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+
+  {% if matchDay.nextMatchDay.pairings|default(false) %}
+    <div class="mb-4">
+      <h6><a href="{{ matchDay.nextMatchDay.uri }}">
+        N&auml;chster Spieltag
+        {% if matchDay.nextMatchDay.date %}
+          &ndash; {{matchDay.nextMatchDay.date|date('d.m.Y')}}
+        {% endif %}
+      </a></h6>
+      <div class="nsv-table">
+        {{ macros.pairings(matchDay.nextMatchDay.pairings) }}
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="mb-4">
+    <h6>Staffelleitung</h6>
+    <div>
+      {{ division.manager.name }},
+      {# TODO: Delete phone2 field #}
+      {% if division.manager.phone %}
+        Tel. {{ division.manager.phone }},
+      {% endif %}
+      {{ nsv.email(division.manager.mail) }}
+    </div>
+  </div>
+
+  {% if matchDay.lastModified|default(false) %}
+    <div class="text-muted text-end">
+      Letzte &Auml;nderung: {{ matchDay.lastModified|date('d.m.Y H:i') }}
+    </div>
+  {% endif %}
+
+{% endblock %}

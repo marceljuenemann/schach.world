@@ -46,20 +46,9 @@ class MainController extends AbstractLeagueController {
       'tabs' => $allDates,
       'activeTab' => $dateToShow,
       'matches' => $matches,
-      'hasMatches' => $hasMatches
+      'hasMatches' => $hasMatches,
+      'isHomescreen' => true
     ]);
-  }
-
-  #[Route('{division}/spielplan/', name: 'schedule')]
-  public function schedule(ScheduleService $service): Response {
-    $matchDays = $service->matchDays($this->division);
-    return $this->renderWithLegacySystem('schedule.html.twig', ['matchDays' => $matchDays]);
-  }
-
-  #[Route('{division}/spielplan/debug/', name: 'schedule_debug')]
-  public function schedule_debug(ScheduleService $service): Response {
-    $matchDays = $service->matchDays($this->division);
-    return $this->debugResponse($matchDays);
   }
 
   #[Route('m/{teamId}/', name: 'team')]
@@ -97,3 +86,4 @@ class MainController extends AbstractLeagueController {
     return $this->debugResponse($player);
   }
 }
+ 

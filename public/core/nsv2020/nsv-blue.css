@@ -39,6 +39,11 @@ a, a:hover, .nav-link, .nav-link:hover {
   background-color: #2b6096;
 }
 
+.dropdown-item:focus, .dropdown-item:hover {
+  background: linear-gradient(0deg, #2b6096, #2971a8);
+  color: white !important;
+}
+
 .form-switch .form-check-input:checked {
   background-color: #2b6096;
   border-color: #2b6096;
@@ -58,11 +63,6 @@ a, a:hover, .nav-link, .nav-link:hover {
 
 #nsv-navbar .nav-item:hover a.nav-link {
   color: #eee;
-}
-
-#nsv-navbar .dropdown-item:focus, #nsv-navbar .dropdown-item:hover {
-  background: linear-gradient(0deg, #2b6096, #2971a8);
-  color: white;
 }
 
 /****************************************

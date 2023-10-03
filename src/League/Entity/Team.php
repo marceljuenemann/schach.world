@@ -18,11 +18,11 @@ class Team
 
   #[ORM\ManyToOne(targetEntity: League::class, inversedBy: 'divisions')]
   #[ORM\JoinColumn(name: "turnier", referencedColumnName: "id")]
-  private $league;
+  private League $league;
 
-  #[ORM\ManyToOne(targetEntity: Division::class, inversedBy: 'teams')]
-  #[ORM\JoinColumn(name: "staffel", referencedColumnName: "id")]
-  private $division;
+  // TODO: Use ManyToOne once zero values have been replaces with null.
+  #[ORM\Column(name: 'staffel')]
+  private int $divisionId = 0;
 
   #[ORM\Column(length: 20)]
   private string $name;
@@ -147,10 +147,18 @@ class Team
   }
 
   public function __get($property) {
+    if ($property === 'division') {
+      // TODO: Use ManyToOne once zero values have been replaces with null.
+      return $this->divisionId ? $this->league->divisionById($this->divisionId) : null;
+    }
     return $this->$property;
   }
 
   public function __set($property, $value) {
+    if ($property === 'division') {
+      // TODO: Use ManyToOne once zero values have been replaces with null.
+      $this->divisionId = $value->id;
+    }
     $this->$property = $value;
   }
 }

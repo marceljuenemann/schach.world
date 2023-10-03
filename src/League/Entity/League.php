@@ -49,10 +49,34 @@ class League
   private $manager;
 
   /**
+   * Number of rounds.
+   */
+  #[ORM\Column(name: 'runden')]
+  private int $configRounds = 9;
+
+  /**
    * Number of subsequent teams whose players may be used as substitute players.
    */
   #[ORM\Column(name: 'spielErsatzmannschaft')]
   private int $configSubstituteTeams = 0;
+
+  /**
+   * Whether to show player numbers in the UI.
+   */
+  #[ORM\Column(name: 'showPassNr')]
+  private bool $configPlayerNumbers = true;
+
+  /**
+   * Whether to show late registrations on the match day page.
+   */
+  #[ORM\Column(name: 'showNachmeldungen')]
+  private bool $configShowLateRegistrations = true;
+
+  /**
+   * Whether to show a preview of the next match day.
+   */
+  #[ORM\Column(name: 'showSpieltagvorschau')]
+  private bool $configShowNextMatchDay = true;
 
   #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
   #[ORM\OrderBy(["sortId" => "ASC", "id" => "ASC"])]
