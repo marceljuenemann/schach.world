@@ -19,7 +19,7 @@ class UpdateTeamCaptainForm extends NsvForm<{teamId: number, captain: TeamCaptai
     return (
       <Form>
         <NsvForm.Control form={this} id="name" label="Name" />
-        <NsvForm.Control form={this} id="mail" label="eMail" />
+        <NsvForm.Control form={this} id="mail" label="E-Mail" />
         <NsvForm.Control form={this} id="phone" label="Telefon" />
         <NsvForm.Control form={this} id="phone2" label="Telefon (alternativ)" />
       </Form>

@@ -94,14 +94,10 @@
 
     {# Additional recipients #}
     {% if allowEdit %}
-      <br><strong>Zus&auml;tzliche Emailempf&auml;nger:</strong>
+      <br><strong>Zus&auml;tzliche E-Mail Empf&auml;nger:</strong>
       {# TODO: use team instead of teamEntity #}
       {% if teamEntity.additionalRecipients %}
         {% for recipient in teamEntity.additionalRecipients %}
-          <span class="badge bg-secondary">{{ recipient.mail }}</span>          
-          <span class="badge bg-secondary">{{ recipient.mail }}</span>          
-          <span class="badge bg-secondary">{{ recipient.mail }}</span>          
-          <span class="badge bg-secondary">{{ recipient.mail }}</span>          
           <span class="badge bg-secondary">{{ recipient.mail }}</span>          
         {% endfor %}
       {% else %}

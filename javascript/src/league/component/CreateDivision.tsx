@@ -17,7 +17,7 @@ class CreateDivisionForm extends NsvForm {
 
         <h5 className="mb-3">Staffelleiter:in</h5>
         <NsvForm.Control form={this} id="managerName" label="Name" />
-        <NsvForm.Control form={this} id="managerMail" label="eMail" />
+        <NsvForm.Control form={this} id="managerMail" label="E-Mail" />
         <NsvForm.Control form={this} id="managerPhone" label="Telefon" />
         <NsvForm.Control form={this} id="managerPhone2" label="Telefon alternativ" />
         <NsvForm.Control form={this} id="managerPassword" label="Passwort" type="password" />

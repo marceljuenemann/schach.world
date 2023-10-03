@@ -7,6 +7,7 @@ import { CreateDivisionDialog } from './league/component/CreateDivision';
 import { launchDialog } from './core/dialog';
 import { UpdateTeamVenueDialog } from './league/component/UpdateTeamVenue';
 import { UpdateTeamCaptainDialog } from './league/component/UpdateTeamCaptain';
+import { UpdateTeamRecipientsDialog } from './league/component/UpdateTeamRecipients';
 
 /**
  * All elements with data-nsv-component will be rendered as a React component.
@@ -46,6 +47,8 @@ function createDialogComponent(elem: HTMLElement, onClose: () => void): ReactEle
       return <CreateDivisionDialog onClose={onClose} />;
     case 'UpdateTeamCaptain':
       return <UpdateTeamCaptainDialog onClose={onClose} teamId={intAttr('team-id')} />;
+    case 'UpdateTeamRecipients':
+      return <UpdateTeamRecipientsDialog onClose={onClose} teamId={intAttr('team-id')} />;
     case 'UpdateTeamVenue':
       return <UpdateTeamVenueDialog onClose={onClose} teamId={intAttr('team-id')} />;
     default:
