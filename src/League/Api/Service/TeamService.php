@@ -22,9 +22,16 @@ class TeamService
     private EntityManagerInterface $leagueEntityManager
   ) {}
 
-  public function team(Entity\Team $team): Team {
-    // Fetch basic info and players.
+  public function team(Entity\Team $team, bool $additionalRecipients = false): Team {
+    // Fetch basic info.
     $model = Team::fromEntityWithDetails($team);
+    if ($additionalRecipients) {
+      $model->additionalRecipients = array_map(function (TeamRecipient $recipient) {
+        return $recipient->mail;
+      }, \iterator_to_array($team->additionalRecipients));
+    }
+
+    // Fetch players.
     $model->playersByTeamNumber = [];
     $players = [];
     foreach ([$team, ...$team->substituteTeams()] as $t) {
@@ -97,6 +104,7 @@ class TeamService
         $entity->team = $team;
         $entity->mail = $recipient;
         $this->leagueEntityManager->persist($entity);
+        $existingRecipients[$recipient] = true;
       }
     }
 

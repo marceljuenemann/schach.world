@@ -54,8 +54,8 @@ class MainController extends AbstractLeagueController {
   #[Route('m/{teamId}/', name: 'team')]
   public function team(TeamService $service, int $teamId): Response {
     $teamEntity = $this->league->teamById($teamId);
-    $team = $service->team($teamEntity);
     $allowEdit = $this->auth->isDivisionManager($teamEntity->division);
+    $team = $service->team($teamEntity, $allowEdit);
     return $this->renderWithLegacySystem('team.html.twig', [
       'team' => $team,
       'teamEntity' => $teamEntity,
@@ -67,7 +67,8 @@ class MainController extends AbstractLeagueController {
   #[Route('api/teams/{teamId}/', name: 'api_team')]
   public function team_api(TeamService $service, int $teamId): Response {
     $teamEntity = $this->league->teamById($teamId);
-    $team = $service->team($teamEntity);
+    $allowEdit = $this->auth->isDivisionManager($teamEntity->division);
+    $team = $service->team($teamEntity, $allowEdit);
     if (!$this->auth->isDivisionManager()) {
       $team->captain->mail = '** REDACTED **';
       $team->captain->phone = '** REDACTED **';

@@ -3,8 +3,9 @@ export interface Team {
   name: string
   zps?: string
   uri: string
-  venue?: TeamVenue
-  captain?: TeamCaptain
+  venue: TeamVenue
+  captain: TeamCaptain
+  additionalRecipients: Array<string>
 }
 
 export interface TeamVenue {

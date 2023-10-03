@@ -3,7 +3,7 @@ import { Division, Team, TeamCaptain, TeamVenue } from "./types"
 
 export class LeagueApi extends NsvApi {
 
-  async fetchTeam(id: number): Promise<Team & {venue: TeamVenue, captain: TeamCaptain}> {
+  async fetchTeam(id: number): Promise<Team> {
     return this.request(`teams/${id}/`)
   }
 

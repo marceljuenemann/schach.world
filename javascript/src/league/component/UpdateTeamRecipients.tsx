@@ -73,8 +73,8 @@ export class UpdateTeamRecipientsDialog extends NsvLoadingDialog<{emails: Array<
   title = () => 'Zusätzliche E-Mail Empfänger'
 
   async loadProps() {
-    //const team = await new LeagueApi().fetchTeam(this.props.teamId)
-    return {emails: ['hello@example.com']}
+    const team = await new LeagueApi().fetchTeam(this.props.teamId)
+    return {emails: team.additionalRecipients}
   }
 
   renderBodyWithProps(props: {emails: Array<string>} & NsvFormProps): ReactNode {
