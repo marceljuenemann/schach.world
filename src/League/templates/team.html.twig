@@ -94,7 +94,10 @@
 
     {# Additional recipients #}
     {% if allowEdit %}
-      <br><strong>Zus&auml;tzliche E-Mail Empf&auml;nger:</strong>
+      <h4 class="mt-4">
+        Zus&auml;tzliche E-Mail Empf&auml;nger
+        <a data-nsv-dialog="UpdateTeamRecipients" data-nsv-on-save="reload" data-team-id="{{ team.id }}">{{ _self.editButton() }}</a>
+      </h4>
       {% if team.additionalRecipients|length %}
         {% for recipient in team.additionalRecipients %}
           <span class="badge bg-secondary">{{ recipient }}</span>          
@@ -102,7 +105,6 @@
       {% else %}
         Keine
       {% endif %}
-      <a data-nsv-dialog="UpdateTeamRecipients" data-nsv-on-save="reload" data-team-id="{{ team.id }}">{{ _self.editIcon() }}</a>
     {% endif %}
     
   </div>
