@@ -8,6 +8,7 @@ use Nsv\League\Entity\League;
  * Implements part of the chess regulations that differ between organizations. This is
  * where we do a bunch of hacks :)
  */
+// TODO: Move to Chess namespace.
 class Regulation
 {
   /**
