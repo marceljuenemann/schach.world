@@ -14,6 +14,7 @@ use Nsv\WebApp\Core\NsvJs;
 use Nsv\WebApp\Core\WordPress\Auth as WordPressAuth;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -67,7 +68,7 @@ class LegacyController extends AbstractLeagueController {
     } catch (\Exception $e) {
       // Report the error.
       // TODO: move this task to the logger.
-      if (!($e instanceof NotFoundHttpException) && !WordPressAuth::isAdmin()) {
+      if (!($e instanceof NotFoundHttpException) && !($e instanceof AccessDeniedHttpException) && !WordPressAuth::isAdmin()) {
         global $globals;
         @wp_mail($globals['webmaster_mail'], 'LeagueController Exception', $request->getUri() . "\n\n".$e);
       }
