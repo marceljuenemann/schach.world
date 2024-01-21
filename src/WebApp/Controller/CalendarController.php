@@ -22,6 +22,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Validator\Constraints\EqualTo;
 use Symfony\Component\Validator\Constraints\GreaterThanOrEqual;
+use Symfony\Component\Validator\Constraints\Url;
 
 class CalendarController extends AbstractController {
 
@@ -39,6 +40,7 @@ class CalendarController extends AbstractController {
 
   #[Route('/v3/termine/eintragen/', name: 'calendar-add')]
   public function addEntry(Request $request): Response {
+    $isAuthor = Auth::isAuthor();
     $event = new Event();
     $builder = $this->createFormBuilder($event)
         ->add('date', DateType::class, [
@@ -48,8 +50,11 @@ class CalendarController extends AbstractController {
           'constraints' => [new GreaterThanOrEqual(date('Y-m-d'))]
         ])
         ->add('name', TextType::class)
-        ->add('url', UrlType::class, ['label' => 'Link']);
-    if (Auth::isAuthor()) {
+        ->add('url', UrlType::class, [
+          'label' => 'Link',
+          'constraints' => [new Url()],
+        ]);
+    if ($isAuthor) {
       $builder = $builder->add('isNsv', CheckboxType::class, [
         'label' => 'Offizieller NSV Termin',
         'required' => false
@@ -66,7 +71,6 @@ class CalendarController extends AbstractController {
     $form->handleRequest($request);
     if ($form->isSubmitted() && $form->isValid()) {
       // If the user has Author permissions, approve right away. 
-      $isAuthor = Auth::isAuthor();
       $event = $form->getData();
       $event->isApproved = $isAuthor;
       
@@ -103,7 +107,6 @@ class CalendarController extends AbstractController {
       $this->addFlash('success', 'Termin wurde freigeschaltet');
     } else {
       $this->addFlash('danger', 'Nicht berechtigt zum Freischalten');
-
     }
     return $this->redirectToRoute('calendar');
   }
