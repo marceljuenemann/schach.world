@@ -24,6 +24,7 @@ use Symfony\Component\Validator\Constraints\EqualTo;
 use Symfony\Component\Validator\Constraints\GreaterThanOrEqual;
 use Symfony\Component\Validator\Constraints\Url;
 
+#[Route('/termine/', name: 'calendar_')]
 class CalendarController extends AbstractController {
 
   function __construct(
@@ -32,13 +33,13 @@ class CalendarController extends AbstractController {
     private MailerInterface $mailer
   ) {}
 
-  #[Route('/v3/termine/', name: 'calendar')]
+  #[Route('', name: 'index')]
   public function calendar(): Response {
     $events = $this->eventRepository->getUpcoming();
     return $this->render('calendar/calendar.html.twig', ['events' => $events]);
   }
 
-  #[Route('/v3/termine/eintragen/', name: 'calendar-add')]
+  #[Route('eintragen/', name: 'add')]
   public function addEntry(Request $request): Response {
     $isAuthor = Auth::isAuthor();
     $event = new Event();
@@ -85,7 +86,7 @@ class CalendarController extends AbstractController {
         $this->sendApprovalMail($event);
         $this->addFlash('info', 'Der Termin wird nach Freischaltung veröffentlicht');
       }
-      return $this->redirectToRoute('calendar');
+      return $this->redirectToRoute('calendar_index');
     }
 
     return $this->render('calendar/add.html.twig', [
@@ -93,7 +94,7 @@ class CalendarController extends AbstractController {
     ]);
   }
 
-  #[Route('/v3/termine/approve/{id}/', name: 'calendar-approve')]
+  #[Route('approve/{id}/', name: 'approve')]
   public function approveEntry(Request $request, int $id): Response {
     $event = $this->eventRepository->findOneById($id);
     if (!$event) throw new NotFoundHttpException();
@@ -108,7 +109,7 @@ class CalendarController extends AbstractController {
     } else {
       $this->addFlash('danger', 'Nicht berechtigt zum Freischalten');
     }
-    return $this->redirectToRoute('calendar');
+    return $this->redirectToRoute('calendar_index');
   }
   
   private function sendApprovalMail(Event $event) {
@@ -118,7 +119,7 @@ class CalendarController extends AbstractController {
       ->htmlTemplate('email/calendar-approval.html.twig')
       ->context([
         'event' => $event,
-        'approvalUrl' => $this->generateUrl('calendar-approve', ['id' => $event->id], UrlGeneratorInterface::ABSOLUTE_URL)
+        'approvalUrl' => $this->generateUrl('calendar_approve', ['id' => $event->id], UrlGeneratorInterface::ABSOLUTE_URL)
       ]);
     $this->mailer->send($email);
   }

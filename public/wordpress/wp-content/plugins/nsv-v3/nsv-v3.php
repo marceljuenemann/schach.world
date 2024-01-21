@@ -16,6 +16,7 @@ add_filter('template_include', function($template) {
   $prefixes = [
     'v3',
     'ligen',
+    'termine',
     '_error'
   ];
   foreach ($prefixes as $prefix) {
