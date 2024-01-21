@@ -19,7 +19,7 @@
               <li><a href="https://schachbezirk-braunschweig.de">Bezirk Braunschweig</a></li>
               <li><a href="http://schachbezirk3.de">Bezirk S&uuml;dniedersachsen</a></li>
               <li><a href="http://schachbezirk4.de">Bezirk L&uuml;neburg</a></li>
-              <li><a href="http://schachbezirk-oldenburg-ostfriesland.de">Bezirk Oldenburg-Ostfriesland</a></li>
+              <li><a href="https://sboo.de/">Bezirk Oldenburg-Ostfriesland</a></li>
               <li><a href="http://schachbezirk-osnabrueck-emsland.de">Bezirk Osnabr&uuml;ck-Emsland</a></li>
               <li><a href="/bezirke/Websites.php">Vereine</a></li>
             </ul>
@@ -31,7 +31,7 @@
               | <a href="https://schachbezirk-hannover.de/impressum/">Impressum</a>
               | <a href="https://schachbezirk-hannover.de/impressum/#datenschutz">Datenschutz</a>
             </div>
-          </div>        
+          </div>
         <?php elseif (nsv2020_theme() == 'ergebnisdienst'): ?>
           <div class="row">
             <div class="col-12" style="text-align: center">
@@ -39,8 +39,8 @@
               | <a href="http://nsv-online.de/goto/Impressum">Impressum</a>
               | <a href="http://nsv-online.de/core/apps/kontakt/">Kontakt</a>
             </div>
-          </div>        
-        <?php endif; ?>        
+          </div>
+        <?php endif; ?>
       </div>
     </footer>
   </body>
