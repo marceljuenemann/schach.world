@@ -29,8 +29,7 @@ define( 'DB_USER', 'docker' );
 define( 'DB_PASSWORD', 'docker' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
-define( 'DB_PORT', '6465' );
+define( 'DB_HOST', 'nsv-database' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
