@@ -13,14 +13,14 @@ services:
     links:
       - database
     volumes:
-      - ../:/var/www/nsv:rw
+      - ../:/var/www/html:rw
       - ./config/php/php.ini:/usr/local/etc/php/php.ini
       - ./config/ssl:/etc/apache2/ssl/
       - ./config/vhosts:/etc/apache2/sites-enabled
       - ./var/log/apache2:/var/log/apache2
       - ./var/log/xdebug:/var/log/xdebug
     environment:
-      APACHE_DOCUMENT_ROOT: /var/www/nsv/public
+      APACHE_DOCUMENT_ROOT: /var/www/html/public
       PMA_PORT: ${HOST_MACHINE_PMA_PORT}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_USER: ${MYSQL_USER}

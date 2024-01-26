@@ -1,3 +1,5 @@
+USE `nsv-ligen`;
+
 -- phpMyAdmin SQL Dump
 -- version 5.1.1deb5ubuntu1
 -- https://www.phpmyadmin.net/
@@ -81,7 +83,7 @@ INSERT INTO `termine` (`id`, `turnier`, `staffel`, `runde`, `datum`) VALUES
 --
 
 INSERT INTO `turniere` (`id`, `leiter`, `name`, `organisation`, `startjahr`, `runden`, `brettzahl`, `directory`, `template`, `infomeldung`, `anmAktiv`, `anmGeburt`, `anmGeschlecht`, `anmVerband`, `anmZusatzfelder`, `anmTLMail`, `spielErsatzmannschaft`, `spielNachmeldungen`, `spielDreistelligeNr`, `spielAufsteiger`, `spielAbsteiger`, `spielAufsteigerRelegation`, `spielAbsteigerRelegation`, `spielHatGruppen`, `sysKeinNewsletter`, `sysEingabelinks`, `showTabelle`, `showNachmeldungen`, `showSpieltagvorschau`, `showPassNr`) VALUES
-(1, 7, 'Test', '7', 2022, 1, 4, 'test-2022', 'sjbh', '', 1, 1900, NULL, '7', NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1);
+(1, 7, 'Test', '7', 2022, 1, 4, 'test-2022', 'sjbh', '', 1, 1900, NULL, '7', '', 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

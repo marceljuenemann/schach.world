@@ -82,9 +82,10 @@ When logged into WordPress as Admin, Symfony automatically runs in debug mode, s
 **League Manager Test setup:**
 1. Create local database for running integration tests
 1. Import structure from setup/ligen-db/00_structure.sql
-1. Configure connection in `.env.test.local` (TODO: doesn't seem to work? Need to use `.evn.test` for now)
+1. Configure connection in `.env.test.local` (TODO: doesn't seem to work? Need to use `.env.test` for now)
 1. To insert test data, run `php bin/console --env=test --em=league doctrine:fixtures:load` (Note: currently you'll get a bunch of errors. Mostly the answer is just to update the default values of the fields. Feel free to change the structure SQL accordingly!)
 1. To run integration and unit tests, run `php bin/phpunit`
+  - Many tests just dump the API output into a text file and compare it with the expected output. Use a diff tool like `meld` to compare the files in `tests/League/Api/Service/` and update the `expected` output if the changes were intended.
 
 ## Known Issues
 
