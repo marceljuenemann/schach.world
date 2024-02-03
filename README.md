@@ -17,76 +17,43 @@ but the vision is to turn a lot of the code into a PSR-4 compliant web app that 
     * `plugins/nsv-turniere`: this plugin can display tournament results based on the text file export from SwissChess. 
        [Live Example](https://nsv-online.de/turniere/lem/2023/)
 
-## Setup for local development  
+## Local Development  
 
-### General Setup
+### Initial Setup
 
-1. Install apache with PHP 8, pointing the DocumentRoot to the `public` directory
-1. Enable the `headers` apache module. On Ubuntu that's just `sudo a2enmod headers` and `sudo service apache2 restart` (alternatively, just uncomment the `Header` lines from `.htaccess`)
-1. Enable SSL
-    * This is necessary because `.htaccess` will redirect any request to HTTPs. Alternatively, you can uncomment those redirects in the `.htaccess`, but then you need to be careful when committing...
-    * Instructions for Ubuntu can be found here: https://stackoverflow.com/a/25946171/1620264
-    * You probably also want to tell your browser to accept the self-sigend certificate: https://stackoverflow.com/a/31900210/1620264
-1. Open https://localhost/infobox-lem.php to make sure PHP is working
-1. Verify short_open_tag is set to On. Otherwise modify your php.ini accordingly.
-1. Make sure display_errors is set to On for debugging purposes. I recommend disabling E_NOTICE and E_STRICT though as the code will spew lots of those otherwise :)
-1. Install MySQL (or MariaDB)
-1. Install phpmyadmin or a DB editor of your choice
- 
-### Setup for ligen/
+We have a docker based development environment that runs Apache, MySQL and PhpMyAdmin for you. Follow [these instructions](dev/setup.md) for setup.
 
-These are the setup steps to get the Ergebnisdienst (ligen/) running locally
+### Docker Usage
 
-1. Open localhost/ligen/. You should get a Fatal error from mysql_connect at this point
-1. Set up the database
-    1. Create a database for the Ergebnisdienst (excuse my Denglish :)
-    1. Import structure from setup/ligen-db/00_structure.sql
-    1. Import DWZ data (vereine.sql and spieler.sql) from https://www.schachbund.de/download-dwz-daten.html
-        - The files are in iso-8859-1 charset. Make sure to select that when importing!
-        - If you use all DSB data, you might have to increase upload_max_filesize and post_max_size in your php.ini. But for testing using the data from a single state is probably sufficient.
-        - Spielberechtigung seems to be nullable these days, just change the field to be nullable :)
-    1. Import data for geodb and verbaende tables from `setup/ligen-db/01_data.sql`
-    1. Import test data from `setup/ligen-db/02_testdata.sql`. This contains a simple test tournament.
-1. Copy `ligen/config.inc.php.example` to `ligen/config.inc.php` and add your database connection info to it. This file should not be commited and is part of `.gitignore`
-1. Open https://localhost/ligen/?m=serverinfo. You should now get some statistics including "Anzahl Turniere: 1"
-1. Open https://localhost/ligen/. You should see the same statistics screen. If you don't, you need to enable `mod_rewrite` in apache. Also make sure .htaccess files are parsed at all by setting `AllowOverride All` in your apache config.
-1. Open localhost/ligen/test-2022/. You should now see the test tournament data :)
-1. You can use the master password (123456 by default) to login as any user (Staffelleiter oder Turnierleiter).
+- **Start containers:** `docker compose up -d` in the `dev` directory
+- **Stop containers:** `docker compose down`
+- **SSH into webserver:** `docker exec -it nsv-webserver /bin/bash`. This allows you to run composer and symfony commands without having PHP installed. Even if you have PHP installed on the host, this ensures you run PHP with the same version as the webserver.
 
-### WordPress Setup
+### Composer & Symfony Usage
 
-In order to get a local WordPress installation with the NSV theme and plugins, follow these instructions.
+Some useful commands for Symfony development:
 
-1. [Download WordPress](https://wordpress.org/download/) and extract it into `public/wordpress/`
-1. Create a database for WordPress and enter the connection credentials into `public/wordpress/wp-config.php`
-1. Open https://localhost/wordpress and follow WordPress' installation wizard
-1. You should now be able to see the default WordPress theme at https://localhost
-1. Create the following empty files: `public/core/config.inc.php` and `public/core/functions.inc.php` (these are part of the legacy NSV site and still required at the moment by the theme)  
-1. Log into /wp-admin and change the following settings:
-    1. Under General settings, set the URLs to https://localhost/ (without the wordpress/ suffix)
-    1. Under Appearance / Themes, activate *NSV 2020 Local Dev Edition*. This is a child theme of the production theme with some sidebar widgets excluded that require legacy code not included in this repo.
-1. https://localhost should now show you a website in the NSV theme :)
+- **Update dependencies:** `composer update`
+- **Clear cache:** `./bin/console cache:clear`. This should only be needed if the enviornment is set to `PROD`.
 
-Next, let's enable the NSV plugins for custom routes (like turniere/):
+### Running tests
 
-1. Under Admin > Plugins, enable all the NSV plugins (especially NSV Core, which the other plugins depend on)
-1. Go to Admin > Setting > Permalinks and click save in order to rebuild WordPress' cached routes
-1. https://localhost/sandbox should now show you the custom page generated by `plugins/nsv-core/testpage.class.php`
+Some of the league manager tests run against an actual database. If you use the docker environment, a separate test database is already set up for you. However, you still need to fill in test data (*fixtures*) with the following command:
 
-### Symfony Setup
+`./bin/console --env=test --em=league doctrine:fixtures:load` 
 
-The very latest cutting-edge code runs as a relatively standard Symfony app that is invoked from WordPress. This only happens for specific route prefix via the nsv-v3 WordPress plugin, so make sure you enable that. The code of the Symfony web app can be found in `src/WebApp`.
+You can then run the tests with
 
-When logged into WordPress as Admin, Symfony automatically runs in debug mode, so the cache is deactivated and full stack traces are shown.
+`./bin/phpunit`
 
-**League Manager Test setup:**
-1. Create local database for running integration tests
-1. Import structure from setup/ligen-db/00_structure.sql
-1. Configure connection in `.env.test.local` (TODO: doesn't seem to work? Need to use `.env.test` for now)
-1. To insert test data, run `php bin/console --env=test --em=league doctrine:fixtures:load` (Note: currently you'll get a bunch of errors. Mostly the answer is just to update the default values of the fields. Feel free to change the structure SQL accordingly!)
-1. To run integration and unit tests, run `php bin/phpunit`
-  - Many tests just dump the API output into a text file and compare it with the expected output. Use a diff tool like `meld` to compare the files in `tests/League/Api/Service/` and update the `expected` output if the changes were intended.
+Note that many of the league manager tests just dump the API output into a text file and compare it with the expected output. Use a diff tool like `meld` to compare the files in `tests/League/Api/Service/` and update the `expected` output if the changes were intended.
 
-## Known Issues
+If you do change the fixtures, you will need to rerun the command from above again to fill the test database. However, if you want to make sure that the IDs stay the same, you should first empty the database tables of `nsv-ligen-test` manually via PhpMyAdmin. TODO: Make this work using the `--purge-with-truncate` flag.
 
-* **Ergebnisdienst:** Some UPDATE queries fail with my local MySQL database as it doesn't allow '' instead of null for integer fields. That seems to work in production right now, so probably there is some configuration that's required for the database to work as expected (maybe sql_mode=''?). Either way, building a new data layer for ligen/ is quite high on the todo list anyways :)
+### React Development
+
+Some of the most recent frontend code uses React components. You can find the code and instructions for that in the [javascript](javascript/README.md) folder. 
+
+### Debugging with XDebug
+
+*TODO: XDebug is already installed in Docker. Just need to enable it in php.ini and add instructions*
