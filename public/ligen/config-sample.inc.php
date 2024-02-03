@@ -20,7 +20,7 @@
   ///////////////////////////////////////////////////////
 
   // Pfad zum Ergebnisdienst
-  $globals ['httppath']          = "https://localhost/ligen/";
+  $globals ['httppath']          = "https://localhost:6464/ligen/";
 
   // Pfad zu den Icons
   $globals ['systemicons']          = "$globals[basedir]/_templates/systemicons/";
@@ -30,11 +30,11 @@
   ///////////////////////////////////////////////////////
 
   // Benutzername und Passwort für Datenbank
-  $globals ['dbuser']            = "marcel";
-  $globals ['dbpw']              = "123456";
+  $globals ['dbuser']            = "docker";
+  $globals ['dbpw']              = "docker";
 
   // Datenbankserver
-  $globals ['dbhost']            = "localhost";
+  $globals ['dbhost']            = "nsv-database";
 
   // Datenbankname
   $globals ['dbname']            = "nsv-ligen";
@@ -61,8 +61,7 @@
 
   // Welche Fehler anzeigen, wenn $globals ['debug'] = true? Error-Konstanten wie
   // z.B. E_ERROR, E_WARNING, E_ALL oder 0 benutzen! (siehe http://php.net)
-  $globals ['debugmode']         = E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT;
-
+  $globals ['debugmode']         = E_ALL;
 
   ///////////////////////////////////////////////////////
   // WEBMASTER

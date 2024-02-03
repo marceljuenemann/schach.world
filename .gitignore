@@ -1,5 +1,6 @@
 # Exclude the WordPress installation, except for custom NSV themes and plugins
 public/wordpress/*
+!public/wordpress/wp-config-sample-nsv.php
 !public/wordpress/wp-content
 public/wordpress/wp-content/*
 !public/wordpress/wp-content/themes
