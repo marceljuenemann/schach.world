@@ -2,8 +2,10 @@
 
 namespace Nsv\League\Command;
 
+use Nsv\League\Repository\LeagueRepository;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -13,24 +15,27 @@ use Symfony\Component\Console\Output\OutputInterface;
 )]
 class NextSeasonCommand extends Command
 {
-    protected function execute(InputInterface $input, OutputInterface $output): int
-    {
-        // ... put here the code to create the user
+  function __construct(private LeagueRepository $leagueRepository) {
+    parent::__construct();
+  }
 
-        // this method must return an integer number with the "exit status code"
-        // of the command. You can also use these constants to make code more readable
+  protected function configure(): void {
+    $this->addArgument('year', InputArgument::REQUIRED, 'The year in which the new season should start');
+  }
 
-        // return this if there was no problem running the command
-        // (it's equivalent to returning int(0))
-        $output->writeln('Hello NSV!');
-        return Command::SUCCESS;
+  protected function execute(InputInterface $input, OutputInterface $output): int {
+    $year = $input->getArgument('year');
+    $lastYear = $year - 1;
+    $output->writeln('Hello NSV! ' . $year . ' ' . $lastYear);
 
-        // or return this if some error happened during the execution
-        // (it's equivalent to returning int(1))
-        // return Command::FAILURE;
-
-        // or return this to indicate incorrect command usage; e.g. invalid options
-        // or missing arguments (it's equivalent to returning int(2))
-        // return Command::INVALID
+    foreach ($this->leagueRepository->findByYear($lastYear) as $league) {
+      $output->writeln($league->name);
     }
+
+
+
+
+
+    return Command::SUCCESS;
+  }
 }
