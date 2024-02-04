@@ -25,6 +25,8 @@ services:
     # League Manager services
     Nsv\League\Api\Service\:
         resource: '../src/League/Api/Service/'
+    Nsv\League\Command\:
+        resource: '../src/League/Command/'
     Nsv\League\Controller\:
         resource: '../src/League/Controller/'
     Nsv\League\Core\:
