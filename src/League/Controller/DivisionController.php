@@ -46,6 +46,11 @@ class DivisionController extends AbstractLeagueController {
     return $this->apiResponse($this->matchday_model($service, $round));
   }
 
+  #[Route('{division}/statistik', name: 'statistik')]
+  public function statistics(): Response {
+    return $this->renderWithLegacySystem('division/statistics.html.twig', ['home' => 'Bezirksliga']);
+  }
+
   #[Route('{division}/{round}/', name: 'matchday')]
   public function matchday(int $round, MatchDayService $service): Response {
     $matchDay = $this->matchday_model($service, $round);
@@ -70,10 +75,7 @@ class DivisionController extends AbstractLeagueController {
     return $this->matchday($round ? $round->round : 1, $matchDayService);
   }
 
-  #[Route('{division}/statistik', name: 'statistik')]
-  public function statistics(): Response {
-    return $this->renderWithLegacySystem('division/statistics.html.twig', ['division' => 'Bezirksliga']);
-  }
+
 
   /**
    * Returns the tab navigation configuration for division pages.
