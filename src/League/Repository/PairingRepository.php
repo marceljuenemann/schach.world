@@ -15,14 +15,16 @@ use Nsv\League\Entity\Team;
  */
 class PairingRepository extends ServiceEntityRepository
 {
-  public function __construct(ManagerRegistry $registry) {
+  public function __construct(ManagerRegistry $registry)
+  {
     parent::__construct($registry, Pairing::class);
   }
 
   /**
    * Returns all pairings for the specified team, also fetching all games and players.
    */
-  public function findByTeam(Team $team) {
+  public function findByTeam(Team $team)
+  {
     return $this->getEntityManager()
       ->createQueryBuilder()
       ->select('p, g, s1, s2')
@@ -43,7 +45,8 @@ class PairingRepository extends ServiceEntityRepository
   /**
    * Returns all pairings for the specified round, also fetching all games and players.
    */
-  public function findByRound(Division $division, int $round) {
+  public function findByRound(Division $division, int $round)
+  {
     return $this->getEntityManager()
       ->createQueryBuilder()
       ->select('p, g, s1, s2')
@@ -64,7 +67,8 @@ class PairingRepository extends ServiceEntityRepository
   /**
    * Returns all pairings for the specified Round objects.
    */
-  public function findByRounds(array $rounds) {
+  public function findByRounds(array $rounds)
+  {
     if (count($rounds) == 0) {
       return new ArrayCollection();
     }
@@ -78,5 +82,21 @@ class PairingRepository extends ServiceEntityRepository
       $criteria->orderBy(Pairing::ORDERING);
     }
     return $this->matching($criteria);
+  }
+
+  /**
+   * Finds all games for a division and a tournament with
+   * player data dwz and birth date
+   */
+  public function findAllGamesDivision($division)
+  {
+    return $this->getEntityManager()
+      ->createQueryBuilder()
+      ->select('mannschaft1, mannschaft2')
+      ->from(Pairing::class, 'p')
+
+      ->getQuery()
+      ->getResult();
+
   }
 }

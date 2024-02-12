@@ -7,9 +7,11 @@ use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
+use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Round;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Doctrine\Persistence\ManagerRegistry;
 
 /**
  * Controller for division specific routes.
@@ -17,13 +19,17 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/ligen/{league}/', name: 'league_division_', priority: -100)]
 class DivisionController extends AbstractLeagueController {
 
+  private $entityManager;
+
   function __construct(
     League $league,
     LeagueAuthState $auth,
-    Division $division
+    Division $division,
+    private ManagerRegistry $doctrine
   ) {
     parent::__construct($league, $auth);
     $this->division = $division;
+    $this->entityManager = $this->doctrine->getManager('league');
   }
 
   #[Route('{division}/spielplan/', name: 'schedule')]
@@ -48,6 +54,10 @@ class DivisionController extends AbstractLeagueController {
 
   #[Route('{division}/statistik', name: 'statistik')]
   public function statistics(): Response {
+    // Get the data to create the statistics output
+    $pairing_repository = $this->doctrine->getRepository(Pairing::class);
+    $data = $pairing_repository->findAllGamesDivision($this->division);
+
     return $this->renderWithLegacySystem('division/statistics.html.twig', ['home' => 'Bezirksliga']);
   }
 
