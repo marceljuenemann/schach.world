@@ -90,13 +90,14 @@ class PairingRepository extends ServiceEntityRepository
    */
   public function findAllGamesDivision($division)
   {
-    return $this->getEntityManager()
-      ->createQueryBuilder()
-      ->select('mannschaft1, mannschaft2')
-      ->from(Pairing::class, 'p')
-
+    return $this->createQueryBuilder('pairings')
+      ->select('pairings, games, player1, player2, team1, team2')
+      ->innerJoin('pairings.games', 'games')
+      ->leftJoin('games.player1', 'player1')
+      ->leftJoin('games.player2', 'player2')
+      ->leftJoin('pairings.team1', 'team1')
+      ->leftJoin('pairings.team2', 'team2')
       ->getQuery()
       ->getResult();
-
   }
 }
