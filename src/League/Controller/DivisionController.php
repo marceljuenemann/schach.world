@@ -12,6 +12,7 @@ use Nsv\League\Entity\Round;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Doctrine\Persistence\ManagerRegistry;
+use Nsv\League\Api\Service\StatisticsService;
 
 /**
  * Controller for division specific routes.
@@ -53,10 +54,8 @@ class DivisionController extends AbstractLeagueController {
   }
 
   #[Route('{division}/statistik', name: 'statistik')]
-  public function statistics(): Response {
-    // Get the data to create the statistics output
-    $pairing_repository = $this->doctrine->getRepository(Pairing::class);
-    $data = $pairing_repository->findAllGamesDivision($this->division);
+  public function statistics(StatisticsService $service): Response {
+    $data = $service->team_all_games($this->division);
 
     return $this->renderWithLegacySystem('division/statistics.html.twig', ['home' => 'Bezirksliga']);
   }
