@@ -38,12 +38,34 @@ class StatisticsService {
                 'class' => 'result'
             ];
             $games = $pairing->games->getValues();
-            foreach($games as $key => $game) {
+            foreach($games as $key2 => $game) {
                 $player1_name = $game->player1->firstName . ' ' . $game->player1->lastName;
                 $player2_name = $game->player2->firstName . ' ' . $game->player2->lastName;
-                $table['body'][$key][]['game1'] = [
+                if($key2 == 0) {
+                    $table['body'][$key][]['game1'] = [
+                        'text' => $player1_name . ' - ' . $player2_name,
+                        'class' => 'game1'
+                    ];
+                }
+                if($key2 == 1) {
+                    $table['body'][$key][]['game2'] = [
+                        'text' => $player1_name . ' - ' . $player2_name,
+                        'class' => 'game2'
+                    ];
+                }
+                if($key2 == 2) {
+                    $table['body'][$key][]['game3'] = [
+                        'text' => $player1_name . ' - ' . $player2_name,
+                        'class' => 'game3'
+                    ];
+                }
+                if($key2 == 3) {
+                    $table['body'][$key][]['game4'] = [
+                        'text' => $player1_name . ' - ' . $player2_name,
+                        'class' => 'game4'
+                    ];
+                }
 
-                ];
 
             }
 
