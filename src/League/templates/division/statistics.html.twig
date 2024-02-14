@@ -1,10 +1,12 @@
 {% extends '@league/legacy-layout.html.twig' %}
-{% import "macros.html.twig" as nsv %}
+{% import "@league/macros/table-macro.html.twig" as table_macro %}
 {% set title = 'Statistiken ' ~ home %}
 
 {% block content %}
     <p>
         Statistiken f&uuml;r {{ home }}
     </p>
+
+    {{ table_macro.table(table_data) }}
 
 {% endblock %}

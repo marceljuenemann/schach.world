@@ -1,0 +1,16 @@
+{% macro table(table_data) %}
+    <table class="nsv-table borders-bold text-center text-nowrap">
+        <tr>
+            {% for cell in table_data.header %}
+                <th class="{{ cell.class }}">{{ cell.text }}</th>
+            {% endfor %}
+        </tr>
+        {% for row in table_data.body %}
+            <tr>
+                {% for cell in row %}
+                    <td class="{{ cell.class }}">{{ cell.text }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+{% endmacro %}

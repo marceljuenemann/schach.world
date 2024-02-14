@@ -55,9 +55,9 @@ class DivisionController extends AbstractLeagueController {
 
   #[Route('{division}/statistik', name: 'statistik')]
   public function statistics(StatisticsService $service): Response {
-    $data = $service->team_all_games($this->division);
+    $table_data = $service->team_all_games($this->division);
 
-    return $this->renderWithLegacySystem('division/statistics.html.twig', ['home' => 'Bezirksliga']);
+    return $this->renderWithLegacySystem('division/statistics.html.twig', ['home' => 'Bezirksliga', 'table_data' => $table_data]);
   }
 
   #[Route('{division}/{round}/', name: 'matchday')]
