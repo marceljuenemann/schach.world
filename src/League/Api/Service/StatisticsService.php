@@ -32,8 +32,8 @@ class StatisticsService
 
     // Collect all data for our table
     foreach ($data as $key => $pairing) {
-      $table['body'][$key][] = ['text' => $pairing->team1->name, 'class' => 'team-name team1'];
-      $table['body'][$key][] = ['text' => $pairing->team2->name, 'class' => 'team-name team2'];
+      $table['body'][$key][] = ['text' => $pairing->team1->name . ' ' . $pairing->team1->number, 'class' => 'team-name team1'];
+      $table['body'][$key][] = ['text' => $pairing->team2->name . ' ' . $pairing->team2->number, 'class' => 'team-name team2'];
       $table['body'][$key][] = [
         'text' => $pairing->result1 . ' : ' . $pairing->result2,
         'class' => 'result'
