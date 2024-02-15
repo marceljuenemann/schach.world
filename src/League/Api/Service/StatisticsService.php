@@ -75,4 +75,28 @@ class StatisticsService
     }
     return $table;
   }
+
+  public function active_players_division($division) {
+
+      $pairing_repository = $this->doctrine->getRepository(Pairing::class);
+      $data = $pairing_repository->findAllGamesDivision($division);
+
+      $all_games = [];
+      $all_games_ids = [];
+
+      foreach ($data as $key => $pairing) {
+          $games = $pairing->games->getValues();
+          foreach ($games as $key2 => $game) {
+              if(!in_array($game->id, $all_games_ids)) {
+                  $all_games_ids[] = $game->id;
+                  $all_games[] = $game;
+              }
+
+              $otto = 7;
+          }
+      }
+      $karl = 2;
+
+
+  }
 }

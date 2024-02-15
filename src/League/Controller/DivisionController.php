@@ -58,6 +58,8 @@ class DivisionController extends AbstractLeagueController {
     $division_name = $this->division->name;
     $table_data = $service->team_all_games($this->division);
 
+    $active_players = $service->active_players_division($this->division);
+
 
     return $this->renderWithLegacySystem('division/statistics.html.twig', ['division_name' => $division_name, 'table_data' => $table_data]);
   }
