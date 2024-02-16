@@ -3,7 +3,9 @@
 namespace Nsv\League\Api\Service;
 
 use Doctrine\Persistence\ManagerRegistry;
+use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Pairing;
+use Nsv\League\Core\Result;
 
 class StatisticsService
 {
@@ -104,19 +106,23 @@ class StatisticsService
     $games = $all_games;
     $active_players = [];
     $active_players_ids = [];
-    foreach($all_games as $game) {
+    foreach($all_games as $key => $game) {
       if(is_object($game->player1)) {
         // Make sure we add the players only once to our array
         if(!in_array($game->player1->id, $active_players_ids)) {
           $active_players_ids[] = $game->player1->id;
-          $active_players[]['player'] = $game->player1;
+          $active_players[$key]['player'] = $game->player1;
+          $active_players[$key]['points'] = (int) 0;
+          $active_players[$key]['draws'] = (int) 0;
         }
       }
       if(is_object($game->player2)) {
         if(!in_array($game->player2->id, $active_players_ids)) {
           // Make sure we add the players only once to our array
           $active_players_ids[] = $game->player2->id;
-          $active_players[]['player'] = $game->player1;
+          $active_players[$key]['player'] = $game->player2;
+          $active_players[$key]['points'] = (int) 0;
+          $active_players[$key]['draws'] = (int) 0;
         }
       }
     }
@@ -128,30 +134,43 @@ class StatisticsService
    * for each player.
    */
   public function active_players_with_games($active_players, $all_games) {
-    $players_with_games = [];
     foreach($active_players as $key => &$player){
       $player_games_ids = [];
       if(!isset($player['games'])) {
-        foreach($all_games as $game) {
+       /* foreach($all_games as $game) {
           if(is_object($game->player1) && $game->player1->id  == $player['player']->id) {
             // It is probably not necessary but we check to only add a game once to
             // the player's games.
             if(!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
               $player['games'][] = $game;
+              $result1 = Encoding::utf8_encode($game->result1);
+              if($result1 == 1) {
+                $player['points'] += (float) 1.0;
+              }
+              if($result1 == Result::UNICODE_DRAW) {
+                $player['points'] += (float) 0.5;
+              }
             }
           }
           if(is_object($game->player2) && $game->player2->id == $player['player']->id) {
             if(!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
               $player['games'][] = $game;
+              $result2 = Encoding::utf8_encode($game->result1);
+              if($result2 == 1) {
+                $player['points'] += (float) 1.0;
+              }
+              if($result2 == Result::UNICODE_DRAW) {
+                $player['points'] += (float) 0.5;
+              }
             }
           }
-        }
+        }*/
       }
-
-    }
-    $susi = 'still';
+      }
+    $active_players_with_games = $active_players;
+    return $active_players_with_games;
   }
 
 }
