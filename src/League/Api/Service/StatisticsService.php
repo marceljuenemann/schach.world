@@ -112,7 +112,7 @@ class StatisticsService
         if(!in_array($game->player1->id, $active_players_ids)) {
           $active_players_ids[] = $game->player1->id;
           $active_players[$key]['player'] = $game->player1;
-          $active_players[$key]['points'] = (int) 0;
+          $active_players[$key]['points'] = (float) 0.0;
           $active_players[$key]['draws'] = (int) 0;
         }
       }
@@ -121,7 +121,7 @@ class StatisticsService
           // Make sure we add the players only once to our array
           $active_players_ids[] = $game->player2->id;
           $active_players[$key]['player'] = $game->player2;
-          $active_players[$key]['points'] = (int) 0;
+          $active_players[$key]['points'] = (float) 0.0;
           $active_players[$key]['draws'] = (int) 0;
         }
       }
