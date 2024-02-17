@@ -111,18 +111,26 @@ class StatisticsService
         // Make sure we add the players only once to our array
         if(!in_array($game->player1->id, $active_players_ids)) {
           $active_players_ids[] = $game->player1->id;
-          $active_players[$key]['player'] = $game->player1;
-          $active_players[$key]['points'] = (float) 0.0;
-          $active_players[$key]['draws'] = (int) 0;
+          $active_players[$game->player1->id]['player'] = $game->player1;
+          if(!isset($active_players[$game->player1->id]['points'])) {
+              $active_players[$game->player1->id]['points'] = (float) 0.0;
+          }
+            if(!isset($active_players[$game->player1->id]['draws'])) {
+                $active_players[$game->player1->id]['draws'] = (int)0;
+            }
         }
       }
       if(is_object($game->player2)) {
         if(!in_array($game->player2->id, $active_players_ids)) {
           // Make sure we add the players only once to our array
           $active_players_ids[] = $game->player2->id;
-          $active_players[$key]['player'] = $game->player2;
-          $active_players[$key]['points'] = (float) 0.0;
-          $active_players[$key]['draws'] = (int) 0;
+          $active_players[$game->player2->id]['player'] = $game->player2;
+            if(!isset($active_players[$game->player2->id]['points'])) {
+                $active_players[$game->player2->id]['points'] = (float)0.0;
+            }
+            if(!isset($active_players[$game->player2->id]['draws'])) {
+                $active_players[$game->player2->id]['draws'] = (int)0;
+            }
         }
       }
     }
@@ -137,7 +145,7 @@ class StatisticsService
     foreach($active_players as $key => &$player){
       $player_games_ids = [];
       if(!isset($player['games'])) {
-       /* foreach($all_games as $game) {
+        foreach($all_games as $game) {
           if(is_object($game->player1) && $game->player1->id  == $player['player']->id) {
             // It is probably not necessary but we check to only add a game once to
             // the player's games.
@@ -146,10 +154,11 @@ class StatisticsService
               $player['games'][] = $game;
               $result1 = Encoding::utf8_encode($game->result1);
               if($result1 == 1) {
-                $player['points'] += (float) 1.0;
+                $player['points'] += 1.0;
               }
               if($result1 == Result::UNICODE_DRAW) {
-                $player['points'] += (float) 0.5;
+                $player['points'] += 0.5;
+                $player['draws'] += 1;
               }
             }
           }
@@ -159,14 +168,15 @@ class StatisticsService
               $player['games'][] = $game;
               $result2 = Encoding::utf8_encode($game->result1);
               if($result2 == 1) {
-                $player['points'] += (float) 1.0;
+                $player['points'] += 1.0;
               }
               if($result2 == Result::UNICODE_DRAW) {
-                $player['points'] += (float) 0.5;
+                $player['points'] += 0.5;
+                $player['draws'] += 1;
               }
             }
           }
-        }*/
+        }
       }
       }
     $active_players_with_games = $active_players;
