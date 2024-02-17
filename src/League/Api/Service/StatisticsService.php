@@ -147,6 +147,7 @@ class StatisticsService
       if(!isset($player['games'])) {
         foreach($all_games as $game) {
           if(is_object($game->player1) && $game->player1->id  == $player['player']->id) {
+
             // It is probably not necessary but we check to only add a game once to
             // the player's games.
             if(!in_array($game->id, $player_games_ids)) {
@@ -166,7 +167,7 @@ class StatisticsService
             if(!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
               $player['games'][] = $game;
-              $result2 = Encoding::utf8_encode($game->result1);
+              $result2 = Encoding::utf8_encode($game->result2);
               if($result2 == 1) {
                 $player['points'] += 1.0;
               }
