@@ -248,6 +248,7 @@ class StatisticsService
         ],
         [
           'text' => $dwz,
+          'link' => '',
           'class' => 'dwz'
         ],
         [
@@ -257,14 +258,17 @@ class StatisticsService
         ],
         [
           'text' => $board,
+          'link' => '',
           'class' => 'board'
         ],
         [
           'text' => $games_count,
+          'link' => '',
           'class' => 'games-count'
         ],
         [
           'text' => $points,
+          'link' => '',
           'class' => 'points'
         ],
       ];
