@@ -6,12 +6,11 @@ use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Core\Result;
-use Nsv\Util\HtmlCreation;
 
 class StatisticsService
 {
   public function __construct(
-    private ManagerRegistry $doctrine, private Encoding $encoding, private HtmlCreation $htmlCreation
+    private ManagerRegistry $doctrine, private Encoding $encoding
   )
   {
     $this->entityManager = $this->doctrine->getManager('league');
@@ -234,11 +233,9 @@ class StatisticsService
       $first_name = $player['player']->firstName;
       $last_name = $player['player']->lastName;
       $player_uri = $player['player']->uri();
-      //$linked_player_name = $this->htmlCreation->internalLink($player_uri, $first_name . ' ' . $last_name);
       $dwz = $player['player']->dwz ?? '';
       $team = $player['player']->team->name;
       $team_uri = $player['player']->team->uri();
-      //$linked_team_name = $this->htmlCreation->internalLink($team_uri, $team);
       $board = $player['player']->number ?? '';
       $games_count = count($player['games']);
       $points = $player['points'];
