@@ -1,4 +1,9 @@
+{% macro table_link(uri, text) %}
+    <a href="{{ uri }}">{{ text }}</a>
+{% endmacro %}
+
 {% macro table(table_data) %}
+    {% import "macros.html.twig" as nsv %}
     <table class="nsv-table borders-bold text-center text-nowrap">
         <tr>
             {% for cell in table_data.header %}
@@ -8,9 +13,14 @@
         {% for row in table_data.body %}
             <tr>
                 {% for cell in row %}
-                    <td class="{{ cell.class }}">{{ cell.text }}</td>
+                    {% if cell.link %}
+                        {{ _self.table_link(cell.link, cell.text) }}
+                    {% else %}
+                        <td class="{{ cell.class }}">{{ cell.text }}</td>
+                    {% endif %}
                 {% endfor %}
             </tr>
         {% endfor %}
     </table>
 {% endmacro %}
+

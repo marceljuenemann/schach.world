@@ -6,11 +6,12 @@ use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Core\Result;
+use Nsv\Util\HtmlCreation;
 
 class StatisticsService
 {
   public function __construct(
-    private ManagerRegistry $doctrine
+    private ManagerRegistry $doctrine, private Encoding $encoding, private HtmlCreation $htmlCreation
   )
   {
     $this->entityManager = $this->doctrine->getManager('league');
@@ -156,7 +157,7 @@ class StatisticsService
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
               $player['games'][] = $game;
-              $result1 = Encoding::utf8_encode($game->result1);
+              $result1 = $this->encoding->utf8_encode($game->result1);
               if ($result1 == 1) {
                 $player['points'] += 1.0;
               }
@@ -170,7 +171,7 @@ class StatisticsService
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
               $player['games'][] = $game;
-              $result2 = Encoding::utf8_encode($game->result2);
+              $result2 = $this->encoding->utf8_encode($game->result2);
               if ($result2 == 1) {
                 $player['points'] += 1.0;
               }
@@ -230,10 +231,14 @@ class StatisticsService
     ];
 
     foreach ($top_ten_scorers as $key => $player) {
-      $first_name = Encoding::utf8_encode($player['player']->firstName);
-      $last_name = Encoding::utf8_encode($player['player']->lastName);
+      $first_name = $player['player']->firstName;
+      $last_name = $player['player']->lastName;
+      $player_uri = $player['player']->uri();
+      //$linked_player_name = $this->htmlCreation->internalLink($player_uri, $first_name . ' ' . $last_name);
       $dwz = $player['player']->dwz ?? '';
       $team = $player['player']->team->name;
+      $team_uri = $player['player']->team->uri();
+      //$linked_team_name = $this->htmlCreation->internalLink($team_uri, $team);
       $board = $player['player']->number ?? '';
       $games_count = count($player['games']);
       $points = $player['points'];
@@ -241,6 +246,7 @@ class StatisticsService
       $topscorer_table['body'][] = [
         [
           'text' => $first_name . ' ' . $last_name,
+          'link' => $player_uri,
           'class' => 'name'
         ],
         [
@@ -249,6 +255,7 @@ class StatisticsService
         ],
         [
           'text' => $team,
+          'link' => $team_uri,
           'class' => 'team'
         ],
         [

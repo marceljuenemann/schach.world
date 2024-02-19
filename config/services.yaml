@@ -42,6 +42,9 @@ services:
     Nsv\Dwz\:
         resource: '../src/Dwz/'
 
+    Nsv\Util\:
+        resource: '../src/Util/'
+
 when@test:
     services:
         Nsv\League\Testing\:

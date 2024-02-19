@@ -18,23 +18,26 @@ use Nsv\League\Api\Service\StatisticsService;
  * Controller for division specific routes.
  */
 #[Route('/ligen/{league}/', name: 'league_division_', priority: -100)]
-class DivisionController extends AbstractLeagueController {
+class DivisionController extends AbstractLeagueController
+{
 
   private $entityManager;
 
   function __construct(
-    League $league,
-    LeagueAuthState $auth,
-    Division $division,
+    League                  $league,
+    LeagueAuthState         $auth,
+    Division                $division,
     private ManagerRegistry $doctrine
-  ) {
+  )
+  {
     parent::__construct($league, $auth);
     $this->division = $division;
     $this->entityManager = $this->doctrine->getManager('league');
   }
 
   #[Route('{division}/spielplan/', name: 'schedule')]
-  public function schedule(ScheduleService $service): Response {
+  public function schedule(ScheduleService $service): Response
+  {
     $matchDays = $service->divisionSchedule($this->division);
     return $this->renderWithLegacySystem('schedule.html.twig', [
       'matchDays' => $matchDays,
@@ -43,37 +46,48 @@ class DivisionController extends AbstractLeagueController {
   }
 
   #[Route('{division}/spielplan/debug/', name: 'schedule_debug')]
-  public function schedule_debug(ScheduleService $service): Response {
+  public function schedule_debug(ScheduleService $service): Response
+  {
     $matchDays = $service->divisionSchedule($this->division);
     return $this->debugResponse($matchDays);
   }
 
   #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]
-  public function matchday_api(int $round, MatchDayService $service): Response {
+  public function matchday_api(int $round, MatchDayService $service): Response
+  {
     return $this->apiResponse($this->matchday_model($service, $round));
   }
 
   #[Route('{division}/statistik', name: 'statistik')]
-  public function statistics(StatisticsService $service): Response {
+  public function statistics(StatisticsService $service): Response
+  {
     $division_name = $this->division->name;
     $table_data = $service->team_all_games($this->division);
 
     $topscorer_table = $service->create_topscorer_table($this->division);
 
-    return $this->renderWithLegacySystem('division/statistics.html.twig', ['division_name' => $division_name, 'table_data' => $table_data]);
+    return $this->renderWithLegacySystem('division/statistics.html.twig',
+      [
+        'division_name' => $division_name,
+        'table_data' => $table_data,
+        'topscorer_table' => $topscorer_table,
+      ]);
+
   }
 
   #[Route('{division}/{round}/', name: 'matchday')]
-  public function matchday(int $round, MatchDayService $service): Response {
+  public function matchday(int $round, MatchDayService $service): Response
+  {
     $matchDay = $this->matchday_model($service, $round);
     return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
       'matchDay' => $matchDay,
       'tabs' => $this->divisionTabs()
     ]);
   }
-  
-  private function matchday_model(MatchDayService $service, int $round) {
-    return $service->matchDayCached($this->division, $round, function() use ($round) {
+
+  private function matchday_model(MatchDayService $service, int $round)
+  {
+    return $service->matchDayCached($this->division, $round, function () use ($round) {
       $this->initializeLegacySystem();
       $_GET['r'] = $round;
       require_once('tabelle.inc.php');
@@ -82,7 +96,8 @@ class DivisionController extends AbstractLeagueController {
   }
 
   #[Route('{division}/', name: 'index')]
-  public function index(ScheduleService $scheduleService, MatchDayService $matchDayService): Response {
+  public function index(ScheduleService $scheduleService, MatchDayService $matchDayService): Response
+  {
     $round = $scheduleService->closestRound($this->division, date('Y-m-d'));
     return $this->matchday($round ? $round->round : 1, $matchDayService);
   }
@@ -93,7 +108,8 @@ class DivisionController extends AbstractLeagueController {
    * Returns the tab navigation configuration for division pages.
    */
   // TODO: Might no longer need this?
-  private function divisionTabs(string $active = null): array {
+  private function divisionTabs(string $active = null): array
+  {
     $tabs [] = [
       'label' => 'Spieltage',
       'uri' => $this->league->uri() . $this->division->path() . '/',  // TODO: use uri()
