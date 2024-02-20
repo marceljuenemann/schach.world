@@ -6,6 +6,7 @@ use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Core\Result;
+use Nsv\League\Entity\Team;
 
 class StatisticsService
 {
@@ -76,20 +77,34 @@ class StatisticsService
         return $active_players;
     }
 
+    /**
+     * Get all teams active in the division and add
+     * active players and all players (including passive ones) as separate arrays.
+     */
     public function active_teams_with_players($active_players)
     {
-        $active_teams = [];
+        $active_teams_with_players = [];
         // Collect all active teams and add active players to them
-        foreach($active_players as $player) {
+        foreach ($active_players as $player) {
             $team = $player['player']->team;
             $team_id = $player['player']->team->id;
-            if(!array_key_exists($team_id, $active_teams)) {
-                $active_teams[$team_id]['team'] = $team;
+            $player_id = $player['player']->id;
+            if (!array_key_exists($team_id, $active_teams_with_players)) {
+                $active_teams_with_players[$team_id]['team'] = $team;
             }
-           $active_teams[$team_id]['active_players'][] = $player['player'];
+            $active_teams_with_players[$team_id]['active_players'][$player_id] = $player['player'];
         }
 
-        $olli = 'go';
+        foreach ($active_teams_with_players as $key => &$team) {
+            // Get all players for a team, also the passive ones
+            $team_repository = $this->doctrine->getRepository(Team::class);
+            $team_with_players = $team_repository->team_all_players($team['team']);
+            $team_players = reset($team_with_players)->players->getValues();
+            foreach ($team_players as $team_player) {
+                $team['all_players'][] = $team_player;
+            }
+        }
+        return $active_teams_with_players;
     }
 
     /**
@@ -139,6 +154,13 @@ class StatisticsService
 
         $active_players_with_games = $active_players;
         return $active_players_with_games;
+    }
+
+    /**
+     * Calculate the DWZ averages for the table
+     */
+    public function teams_dwz_calculation($active_teams_with_players) {
+
     }
 
     /**

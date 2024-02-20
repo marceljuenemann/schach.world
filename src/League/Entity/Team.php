@@ -4,8 +4,9 @@ namespace Nsv\League\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Nsv\League\Core\Encoding;
+use Nsv\League\Repository\TeamRepository;
 
-#[ORM\Entity]
+#[ORM\Entity(repositoryClass: TeamRepository::class)]
 #[ORM\Table(name: 'mannschaften')]
 class Team
 {
