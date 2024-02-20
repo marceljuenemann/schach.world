@@ -62,14 +62,14 @@ class DivisionController extends AbstractLeagueController
   public function statistics(StatisticsService $service): Response
   {
     $division_name = $this->division->name;
-    $table_data = $service->team_all_games($this->division);
+
+    $dwz_statistics_table = $service->create_dwz_statistics_table($this->division);
 
     $topscorer_table = $service->create_topscorer_table($this->division);
 
     return $this->renderWithLegacySystem('division/statistics.html.twig',
       [
         'division_name' => $division_name,
-        'table_data' => $table_data,
         'topscorer_table' => $topscorer_table,
       ]);
 
