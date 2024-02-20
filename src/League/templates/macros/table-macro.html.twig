@@ -14,7 +14,9 @@
             <tr>
                 {% for cell in row %}
                     {% if cell.link %}
-                        {{ _self.table_link(cell.link, cell.text) }}
+                        <td class="{{ cell.class }}">
+                            {{ _self.table_link(cell.link, cell.text) }}
+                        </td>
                     {% else %}
                         <td class="{{ cell.class }}">{{ cell.text }}</td>
                     {% endif %}
