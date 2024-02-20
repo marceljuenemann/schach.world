@@ -78,9 +78,15 @@ class StatisticsService
 
     public function active_teams_with_players($active_players)
     {
+        $active_teams = [];
         // Collect all active teams and add active players to them
         foreach($active_players as $player) {
-            
+            $team = $player['player']->team;
+            $team_id = $player['player']->team->id;
+            if(!array_key_exists($team_id, $active_teams)) {
+                $active_teams[$team_id]['team'] = $team;
+            }
+           $active_teams[$team_id]['active_players'][] = $player['player'];
         }
 
         $olli = 'go';
