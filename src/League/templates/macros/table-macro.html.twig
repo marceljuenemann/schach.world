@@ -2,9 +2,9 @@
     <a href="{{ uri }}">{{ text }}</a>
 {% endmacro %}
 
-{% macro table(table_data) %}
+{% macro table(table_data, classes) %}
     {% import "macros.html.twig" as nsv %}
-    <table class="nsv-table borders-bold text-center text-nowrap">
+    <table class="nsv-table borders-bold text-center text-nowrap {{ classes }}">
         <tr>
             {% for cell in table_data.header %}
                 <th class="{{ cell.class }}">{{ cell.text }}</th>
