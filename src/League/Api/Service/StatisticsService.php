@@ -114,7 +114,7 @@ class StatisticsService
             $team_with_players = $team_repository->team_all_players($team['team']);
             $team_players = reset($team_with_players)->players->getValues();
             foreach ($team_players as $team_player) {
-                if($team_player->number <= $board_count) {
+                if ($team_player->number <= $board_count) {
                     $team['top_x_players'][] = $team_player;
                 }
             }
@@ -215,23 +215,49 @@ class StatisticsService
             // These are the players that are registered to a regular board.
             // If the League plays with 8 boards per team, it is the top 8 registered players.
 
-
-
-            $dwz_data[$key]['all_dwz_sum'] = (int)0;
-            foreach ($team['all_players'] as $player) {
+            $dwz_data[$key]['top_dwz_sum'] = (int)0;
+            foreach ($team['top_x_players'] as $player) {
                 $dwz = $player->dwz;
                 if (empty($dwz)) {
-                    $dwz_data[$key]['all_dwz_sum'] += 700;
+                    $dwz_data[$key]['top_dwz_sum'] += 700;
                 } else {
-                    $dwz_data[$key]['all_dwz_sum'] += $player->dwz;
+                    $dwz_data[$key]['top_dwz_sum'] += $player->dwz;
                 }
             }
-            // calculate all player DWZ average
-            $all_players_count = count($team['all_players']);
-            $dwz_all_average = $dwz_data[$key]['all_dwz_sum'] / $all_players_count;
-            $team['all_dwz_average'] = round($dwz_all_average);
+            // calculate top player DWZ average
+            $top_players_count = count($team['top_x_players']);
+            $dwz_top_average = $dwz_data[$key]['top_dwz_sum'] / $top_players_count;
+            $team['top_x_dwz_average'] = round($dwz_top_average);
+
+            // Calculate the average age for the active players
+            $dwz_data[$key]['active_age_sum'] = (int)0;
+            $aged_players_count = (int)0;
+            foreach ($team['active_players'] as $player) {
+                $birthyear = $player->birth;
+                $date = new \DateTime();
+                $timezone = new \DateTimeZone('Europe/Berlin');
+                $date->setTimezone($timezone);
+                $current_year = $date->format('Y');
+
+
+                if (!empty($birthyear)) {
+                    $dwz_data[$key]['active_age_sum'] += $current_year - $birthyear;
+                    $aged_players_count += 1;
+                }
+            }
+            // calculate the active age average
+            // It could be that we have no age for any of the players.
+            if (!empty($aged_players_count)) {
+                $age_active_average = $dwz_data[$key]['active_age_sum'] / $aged_players_count;
+                $team['active_age_average'] = round($age_active_average);
+            }
         }
-        $ulla = 'grün';
+        // Sort the teams by the highest DWZ average
+        uasort($active_teams_with_dwz, function ($a, $b) {
+            return [$b['active_dwz_average']] <=> [$a['active_dwz_average']];
+        });
+
+        return $active_teams_with_dwz;
     }
 
     /**
@@ -266,6 +292,42 @@ class StatisticsService
         $active_players = $this->active_players_division($all_games);
         $active_players_with_games = $this->active_teams_with_players($active_players);
         $dwz_calculation = $this->teams_dwz_calculation($active_players_with_games);
+
+        // Get the board count
+        $first_team = reset($dwz_calculation);
+        $board_count = $first_team['team']->league->boardCount;
+
+        $dwz_table = [];
+
+        $dwz_table['header'] = [
+            [
+                'text' => 'Mannschaft',
+                'class' => 'team'
+            ],
+            [
+                'text' => 'Eingesetzte',
+                'class' => 'active',
+                'title' => 'DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.'
+            ],
+            [
+                'text' => 'Top ' . $board_count,
+                'class' => 'top',
+                'title' => 'Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet.'
+            ],
+            [
+                'text' => 'Alle Spieler',
+                'class' => 'all',
+                'title' => 'Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.'
+            ],
+            [
+                'text' => 'Alter ∅',
+                'class' => 'age',
+                'title' => 'Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben.'
+            ],
+        ];
+
+
+        $ulla = 3;
     }
 
     /**
