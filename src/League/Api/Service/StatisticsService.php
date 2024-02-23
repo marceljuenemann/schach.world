@@ -252,10 +252,65 @@ class StatisticsService
         $team['active_age_average'] = round($age_active_average);
       }
     }
+    // Sort by age to find the team with the highest age average
+    uasort($active_teams_with_dwz, function ($a, $b) {
+      return [$b['active_age_average']] <=> [$a['active_age_average']];
+    });
+
+
+    foreach ($active_teams_with_dwz as &$team) {
+      if ($team['team']->id == reset($active_teams_with_dwz)['team']->id) {
+        $team['age_rank'] = 'top';
+      } else {
+        $team['age_rank'] = 'normal';
+      }
+    }
+    // Sort by all_dwz to the team with the highest top_dwz average
+    uasort($active_teams_with_dwz, function ($a, $b) {
+      return [$b['top_x_dwz_average']] <=> [$a['top_x_dwz_average']];
+    });
+
+    // Mark the team with the highest all players DWZ average
+    // so we can format that bold in the table
+    foreach ($active_teams_with_dwz as &$team) {
+      if ($team['team']->id == reset($active_teams_with_dwz)['team']->id) {
+        $team['top_dwz_rank'] = 'top';
+      } else {
+        $team['top_dwz_rank'] = 'normal';
+      }
+    }
+
+    // Sort by all_dwz to the team with the highest all_dwz average
+    uasort($active_teams_with_dwz, function ($a, $b) {
+      return [$b['all_dwz_average']] <=> [$a['all_dwz_average']];
+    });
+
+    // Mark the team with the highest all players DWZ average
+    // so we can format that bold in the table
+    foreach ($active_teams_with_dwz as &$team) {
+      if ($team['team']->id == reset($active_teams_with_dwz)['team']->id) {
+        $team['all_dwz_rank'] = 'top';
+      } else {
+        $team['all_dwz_rank'] = 'normal';
+      }
+    }
+
     // Sort the teams by the highest DWZ average
     uasort($active_teams_with_dwz, function ($a, $b) {
       return [$b['active_dwz_average']] <=> [$a['active_dwz_average']];
     });
+
+    // Mark the team with the highest DWZ average
+    // so we can format that bold in the table
+    // We sort by this number last because this is the way
+    // we display the table.
+    foreach ($active_teams_with_dwz as &$team) {
+      if ($team['team']->id == reset($active_teams_with_dwz)['team']->id) {
+        $team['dwz_rank'] = 'top';
+      } else {
+        $team['dwz_rank'] = 'normal';
+      }
+    }
 
     return $active_teams_with_dwz;
   }
@@ -307,22 +362,22 @@ class StatisticsService
       [
         'text' => 'Eingesetzte',
         'class' => 'active',
-        'title' => 'DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.'
+        'title' => $this->encoding->utf8_decode('DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.')
       ],
       [
         'text' => 'Top ' . $board_count,
         'class' => 'top',
-        'title' => 'Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet.'
+        'title' => $this->encoding->utf8_decode('Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet.')
       ],
       [
         'text' => 'Alle Spieler',
         'class' => 'all',
-        'title' => 'Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.'
+        'title' => $this->encoding->utf8_decode('Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.')
       ],
       [
-        'text' => 'Alter ∅',
+        'text' => $this->encoding->utf8_decode('Alter ∅'),
         'class' => 'age',
-        'title' => 'Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben.'
+        'title' => $this->encoding->utf8_decode('Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben.')
       ],
     ];
 
@@ -341,6 +396,26 @@ class StatisticsService
       $dwz_top = $team['top_x_dwz_average'];
       $dwz_all = $team['all_dwz_average'];
       $age = $team['active_age_average'];
+      if ($team['dwz_rank'] == 'top') {
+        $active_dwz_classes = 'active-dwz format-bold ';
+      } else {
+        $active_dwz_classes = 'active-dwz';
+      }
+      if ($team['top_dwz_rank'] == 'top') {
+        $top_dwz_classes = 'top-dwz format-bold';
+      } else {
+        $top_dwz_classes = 'top-dwz';
+      }
+      if ($team['all_dwz_rank'] == 'top') {
+        $all_dwz_classes = 'all-dwz format-bold';
+      } else {
+        $all_dwz_classes = 'all-dwz';
+      }
+      if ($team['age_rank'] == 'top') {
+        $age_classes = 'age format-bold';
+      } else {
+        $age_classes = 'age';
+      }
 
       // Add each team's value to the sum so we can
       // calculate the average for the last row.
@@ -357,19 +432,19 @@ class StatisticsService
         ],
         [
           'text' => $dwz_active,
-          'class' => 'active'
+          'class' => $active_dwz_classes
         ],
         [
           'text' => $dwz_top,
-          'class' => 'top'
+          'class' => $top_dwz_classes
         ],
         [
           'text' => $dwz_all,
-          'class' => 'all'
+          'class' => $all_dwz_classes
         ],
         [
           'text' => $age,
-          'class' => 'age'
+          'class' => $age_classes
         ],
       ];
     }

@@ -305,4 +305,7 @@ div.sed_infomeldung {
 table.statistics-topscorer td.points {
   font-weight: bold;
 }
+table td.format-bold {
+  font-weight: bold;
+}
 
