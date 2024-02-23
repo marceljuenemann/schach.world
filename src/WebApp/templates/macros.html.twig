@@ -44,6 +44,10 @@
   data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{ title }}"
 {% endmacro %}
 
+{% macro tooltip_top(title) %}
+  data-bs-toggle="tooltip" data-bs-placement="top" title="{{ title }}"
+{% endmacro %}
+
 {# Initializes tooltips. Should only be called from template footers. #}
 {% macro tooltipInit() %}
   <script type="text/javascript">

@@ -9,12 +9,12 @@
             {% for cell in table_data.header %}
                 {# Set the title attribute for the th @TODO: find a more elegant way #}
                 {% if cell.title %}
-                    {% set cell_title = 'title="' ~ cell.title ~ '"' %}
+                    {% set cell_title = cell.title%}
                 {% else %}
                     {% set cell_title = '' %}
                 {% endif %}
 
-                <th class="{{ cell.class }}" {{ cell_title }}>{{ cell.text }}</th>
+                <th class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title|raw) }}>{{ cell.text }}</th>
             {% endfor %}
         </tr>
         {% for row in table_data.body %}
@@ -22,17 +22,17 @@
                 {% for cell in row %}
                     {# Set the title attribute for the td. @TODO: find a more elegant way #}
                     {% if cell.title %}
-                        {% set cell_title = 'title="' ~ cell.title ~ '"' %}
+                        {% set cell_title = cell.title%}
                     {% else %}
                         {% set cell_title = '' %}
                     {% endif %}
 
                     {% if cell.link %}
-                        <td class="{{ cell.class }}" {{ cell_title }}>
+                        <td class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title|raw) }}>
                             {{ _self.table_link(cell.link, cell.text) }}
                         </td>
                     {% else %}
-                        <td class="{{ cell.class }}" {{ cell_title }}>{{ cell.text }}</td>
+                        <td class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title|raw) }}>{{ cell.text }}</td>
                     {% endif %}
                 {% endfor %}
             </tr>

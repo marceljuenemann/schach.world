@@ -375,7 +375,7 @@ class StatisticsService
         'title' => $this->encoding->utf8_decode('Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.')
       ],
       [
-        'text' => $this->encoding->utf8_decode('Alter ∅'),
+        'text' => $this->encoding->utf8_decode('Alter Ø'),
         'class' => 'age',
         'title' => $this->encoding->utf8_decode('Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben.')
       ],
@@ -432,7 +432,7 @@ class StatisticsService
         ],
         [
           'text' => $dwz_active,
-          'class' => $active_dwz_classes
+          'class' => $active_dwz_classes,
         ],
         [
           'text' => $dwz_top,
@@ -457,6 +457,7 @@ class StatisticsService
       'age' => round($average_sums['age'] / $team_count),
     ];
 
+    // Add an extra row to the table with the average values for all teams.
     $dwz_table['body'][] = [
       [
         'text' => 'Durchschnitt:',
@@ -482,8 +483,6 @@ class StatisticsService
 
     return $dwz_table;
 
-
-    $ulla = 3;
   }
 
   /**
