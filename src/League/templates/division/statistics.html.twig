@@ -1,12 +1,18 @@
 {% extends '@league/legacy-layout.html.twig' %}
 {% import "@league/macros/table-macro.html.twig" as table_macro %}
 {% set title = 'Statistiken ' ~ division_name %}
-{% set topscorer_classes = 'statistics-topscorer' %}
 
 {% block content %}
 <div class="statistics-container">
    <p>&nbsp;</p>
+
+   <h3 class="table-subheading">DWZ-Statistik</h3>
+   {{ table_macro.table(dwz_table, 'statistics-dwz') }}
+   <p>&nbsp;</p>
+
    <h3 class="table-subheading">Topscorer</h3>
-   {{ table_macro.table(topscorer_table, topscorer_classes) }}
+   {{ table_macro.table(topscorer_table, 'statistics-topscorer') }}
+
+
 </div>
 {% endblock %}
