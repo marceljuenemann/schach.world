@@ -7,7 +7,6 @@ use Nsv\Dwz\DsbDatabase;
 use Nsv\League\Core\Encoding;
 use Nsv\WebApp\Core\ApiResponse;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 

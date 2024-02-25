@@ -6,6 +6,8 @@
 
 {% block content %}
 
+  <div data-nsv-component="ClubsMap"></div>
+
   {% for district in districts %}
     <h4>{{district.name}}</h4>
     <a href="{{district.website}}">{{district.website}}</a>
@@ -22,7 +24,6 @@
         </tr>
       {% endfor %}
     </table>
-
   {% endfor %}
 
 {% endblock %}
