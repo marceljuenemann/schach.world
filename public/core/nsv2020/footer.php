@@ -15,12 +15,12 @@
               <li><a href="https://schachbund.de">Deutscher Schachbund (DSB)</a></li>
             </ul>
             <ul class="col-12 col-sm-6">
-              <li><a href="https://schachbezirk-hannover.de">Bezirk Hannover</a></li>
-              <li><a href="https://schachbezirk-braunschweig.de">Bezirk Braunschweig</a></li>
-              <li><a href="http://schachbezirk3.de">Bezirk S&uuml;dniedersachsen</a></li>
-              <li><a href="http://schachbezirk4.de">Bezirk L&uuml;neburg</a></li>
-              <li><a href="https://sboo.de/">Bezirk Oldenburg-Ostfriesland</a></li>
-              <li><a href="http://schachbezirk-osnabrueck-emsland.de">Bezirk Osnabr&uuml;ck-Emsland</a></li>
+              <?php
+                $bezirke = require(dirname(__FILE__) . '/bezirke.php');
+                foreach ($bezirke as $bezirk) {
+                  echo "<li><a href='$bezirk[website]'>".htmlentities($bezirk['name'])."</a><li>";
+                }
+              ?>
               <li><a href="/bezirke/Websites.php">Vereine</a></li>
             </ul>
           </div>
