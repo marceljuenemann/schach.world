@@ -18,7 +18,7 @@
               <?php
                 $bezirke = require(dirname(__FILE__) . '/bezirke.php');
                 foreach ($bezirke as $bezirk) {
-                  echo "<li><a href='$bezirk[website]'>".htmlentities($bezirk['name'])."</a><li>";
+                  echo "<li><a href='$bezirk[website]'>".htmlentities($bezirk['name'], 0, 'UTF-8')."</a><li>";
                 }
               ?>
               <li><a href="/bezirke/Websites.php">Vereine</a></li>

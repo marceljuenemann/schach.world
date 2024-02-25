@@ -6,6 +6,23 @@
 
 {% block content %}
 
-  Hello World!
+  {% for district in districts %}
+    <h4>{{district.name}}</h4>
+    <a href="{{district.website}}">{{district.website}}</a>
+    
+    <table class="table table-striped mt-4 mb-4" style="max-width: 600px">
+      <tr><th>Nr.</th><th>Verein</th><th>Links</th></tr>
+      {% for club in district.clubs %}
+        <tr>
+          <td>{{club.zps}}</td>
+          <td>{{club.name}}</td>
+          <td>
+            <a href="{{club.dwzUri}}">DWZ</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+
+  {% endfor %}
 
 {% endblock %}
