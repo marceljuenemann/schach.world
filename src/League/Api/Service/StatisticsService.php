@@ -316,6 +316,17 @@ class StatisticsService
   }
 
   /**
+   * Calculate the data for the team game score "Spiel-Statistik"
+   */
+  public function team_game_score_data($division) {
+    $all_games = $this->all_games_division($division);
+    $teams_game_scores = [];
+
+    $paul = 'dabei';
+  }
+
+
+  /**
    * Sort the players by points
    */
   public function players_sorted_by_points($active_players_with_games)
