@@ -44,9 +44,8 @@ export class ClubsMap extends React.Component<{
     L.Icon.Default.imagePath = '/core/nsv2020/images/marker/';
     return (
       <MapContainer style={{height: '100%'}} center={[INIT_LAT, INIT_LON]} zoom={INIT_ZOOM} scrollWheelZoom={true}>
-        {/* TODO: Attribute schach.in */}
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | <a href="https://schach.in">schach.in</a>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         {
