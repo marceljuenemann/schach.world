@@ -17,6 +17,7 @@ export interface District {
 export interface Club {
   zps: string
   name: string
+  website?: string
   detailsUri?: string
   dwzUri: string
   properties: {
@@ -63,21 +64,29 @@ export class ClubsMap extends React.Component<{
     );
   }
 
-  renderClub(club: Club, district: District, icon: Icon) {
+  private renderClub(club: Club, district: District, icon: Icon) {
     return (
       <Marker key={club.zps} position={club.properties.coordinates} icon={icon}>
         <Popup>
           <h6>{club.name}</h6>
+          {club.website && <><a href={club.website}>{this.prettyWebsite(club.website)}</a><br /></>}
 
           {club.detailsUri && <a href={club.detailsUri}>Details</a>}&nbsp;|&nbsp;
           <a href={club.dwzUri}>DWZ-Liste</a> <br />
-          <a href={district.website}>{district.name}</a><br />
 
           {club.properties.members} Mitglieder ({club.properties.u25} U25)<br />
-          ø-DWZ: {club.properties.avg_rating}&nbsp;&nbsp;ø-Alter: {club.properties.avg_age}
+          ø-DWZ: {club.properties.avg_rating}&nbsp;&nbsp;ø-Alter: {club.properties.avg_age}<br />
+          <a href={district.website}>{district.name}</a>
         </Popup>
       </Marker>
     )
   }
+
+  private prettyWebsite(url: string) {
+    url = url.replace('https://', '')
+    url = url.replace('http://', '')
+    url = url.replace('www.', '')
+    return url
+  } 
 
 }

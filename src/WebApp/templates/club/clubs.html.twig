@@ -34,6 +34,9 @@
               <a href="{{club.detailsUri}}">Details</a> |
             {% endif %}
             <a href="{{club.dwzUri}}">DWZ</a>
+            {% if club.website|default(false) %}
+              | <a href="{{club.website}}">Website</a>
+            {% endif %}
           </td>
         </tr>
       {% endfor %}

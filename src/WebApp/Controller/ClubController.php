@@ -7,6 +7,7 @@ use Nsv\Dwz\DsbDatabase;
 use Nsv\League\Core\Encoding;
 use Nsv\Util\TextSanitizer;
 use Nsv\WebApp\Core\ApiResponse;
+use SimpleXMLElement;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -40,7 +41,6 @@ class ClubController extends AbstractController {
   #[Route('api/', name: 'api')]
   public function clubs_api(): Response {
     $data = $this->fetchDistricts();
-    //$data = $this->fetchMapData();
     return new ApiResponse($data);
   }
 
@@ -51,11 +51,15 @@ class ClubController extends AbstractController {
     $districts = require($this->projectDir . '/public/core/nsv2020/bezirke.php');
     $clubs = $this->fetchClubs();
     $mapData = $this->fetchMapData();
+    $websites = $this->fetchWebsites();
     foreach ($clubs as $club) {
       $slug = TextSanitizer::slug($club['name']);
       if (isset($mapData[$slug])) {
         $club['properties'] = $mapData[$slug];
         $club['detailsUri'] = SCHACH_IN_URL . $club['properties']->identifier;
+      }
+      if (isset($websites[$club['zps']]['website'])) {
+        $club['website'] = $websites[$club['zps']]['website'];
       }
       $districts[$club['district']]['clubs'][$club['zps']] = $club;
     }
@@ -99,5 +103,37 @@ class ClubController extends AbstractController {
       $clubs[$to] = $clubs[$from];
     }
     return $clubs;
+  }
+
+  /**
+   * Fetches websites from legacy mivis XML
+   * 
+   * TODO: Hopefully can fetch data from schach.in as well.
+   */
+  private function fetchWebsites() {
+    $xmlstr = file_get_contents($this->projectDir . '/data/clubs/legacy-mivis-export.xml');
+    $xml = new SimpleXMLElement($xmlstr);
+
+    $vereine = array();
+    foreach($xml->vereine->verein as $verein){
+      $zps = "" . $verein->vkz;
+      if ( !strlen($zps) || substr ( $zps, 2, 1 ) === "0" ) continue;
+      
+      $homepage = "";
+      foreach ( $verein->spiellokale->spiellokal as $spiellokal ){
+        if ( strlen ( $spiellokal->url ) ){
+          $homepage = "".$spiellokal->url;
+        }
+      }
+      if ( strlen ( $verein->homepage ) ) {
+        $homepage = "".$verein->homepage;
+      }
+      if ( strlen ( $homepage ) && strpos ( $homepage, "http://" ) === false && strpos ( $homepage, "https://" ) === false )
+        $homepage = "http://$homepage";
+      if ($homepage) {
+        $vereine[$zps]["website"] = $homepage;
+      }
+    }
+    return $vereine;
   }
 }
