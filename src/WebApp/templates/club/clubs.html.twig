@@ -6,7 +6,6 @@
 
 {% block content %}
 
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
@@ -24,6 +23,9 @@
           <td>{{club.zps}}</td>
           <td>{{club.name}}</td>
           <td>
+            {% if club.properties|default(false) %}
+              <a href="https://schach.in/{{club.properties.identifier}}/">Details</a> |
+            {% endif %}
             <a href="{{club.dwzUri}}">DWZ</a>
           </td>
         </tr>
