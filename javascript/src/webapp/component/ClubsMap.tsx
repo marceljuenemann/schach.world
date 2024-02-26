@@ -9,6 +9,7 @@ const INIT_ZOOM = 7
 
 export interface District {
   name: string
+  website: string
   markerColor: string
   clubs: Club[]
 }
@@ -16,6 +17,7 @@ export interface District {
 export interface Club {
   zps: string
   name: string
+  detailsUri?: string
   dwzUri: string
   properties: {
     coordinates: LatLngTuple
@@ -54,23 +56,25 @@ export class ClubsMap extends React.Component<{
               iconUrl: `marker-icon-${district.markerColor}.png`,
               iconRetinaUrl: `marker-icon-red-${district.markerColor}.png`
             }) as Icon;
-            return Object.values(district.clubs).map(club => this.renderClub(club, icon))
+            return Object.values(district.clubs).map(club => this.renderClub(club, district, icon))
           }).flat()
         }
       </MapContainer>
     );
   }
 
-  // TODO: Links
-  // TODO: Bezirk
-  renderClub(club: Club, icon: Icon) {
+  renderClub(club: Club, district: District, icon: Icon) {
     return (
       <Marker key={club.zps} position={club.properties.coordinates} icon={icon}>
         <Popup>
           <h6>{club.name}</h6>
 
+          {club.detailsUri && <a href={club.detailsUri}>Details</a>}&nbsp;|&nbsp;
+          <a href={club.dwzUri}>DWZ-Liste</a> <br />
+          <a href={district.website}>{district.name}</a><br />
+
           {club.properties.members} Mitglieder ({club.properties.u25} U25)<br />
-          ø-DWZ: {club.properties.avg_rating}&nbsp;&nbsp;&nbsp;ø-Alter: {club.properties.avg_age}
+          ø-DWZ: {club.properties.avg_rating}&nbsp;&nbsp;ø-Alter: {club.properties.avg_age}
         </Popup>
       </Marker>
     )

@@ -11,6 +11,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+const SCHACH_IN_URL = 'https://schach.in/';
+
 // Schach.in does not provide ZPS in the export, so we try to match by name...
 const SCHACH_IN_HACKS = [
   'mtv-salzhausen' => 'sabt-mtv-salzhausen',
@@ -53,6 +55,7 @@ class ClubController extends AbstractController {
       $slug = TextSanitizer::slug($club['name']);
       if (isset($mapData[$slug])) {
         $club['properties'] = $mapData[$slug];
+        $club['detailsUri'] = SCHACH_IN_URL . $club['properties']->identifier;
       }
       $districts[$club['district']]['clubs'][$club['zps']] = $club;
     }

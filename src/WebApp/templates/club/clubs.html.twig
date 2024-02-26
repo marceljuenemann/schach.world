@@ -30,8 +30,8 @@
           <td>{{club.zps}}</td>
           <td>{{club.name}}</td>
           <td>
-            {% if club.properties|default(false) %}
-              <a href="https://schach.in/{{club.properties.identifier}}/">Details</a> |
+            {% if club.detailsUri|default(false) %}
+              <a href="{{club.detailsUri}}">Details</a> |
             {% endif %}
             <a href="{{club.dwzUri}}">DWZ</a>
           </td>

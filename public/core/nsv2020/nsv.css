@@ -24,6 +24,10 @@ a, a:hover, .nav-link, .nav-link:hover {
   text-decoration: none;
 }
 
+.leaflet-container a {
+  color: #c32811 !important;
+}
+
 /* Links in headlines should be black. */
 h2 a, h4 a, h6 a {
   color: var(--bs-body-color);
