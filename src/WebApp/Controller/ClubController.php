@@ -29,7 +29,10 @@ class ClubController extends AbstractController {
   public function clubs(): Response {
     // TODO: Add cache
     $districts = $this->fetchDistricts();
-    return $this->render('club/clubs.html.twig', ['districts' => $districts]);
+    return $this->render('club/clubs.html.twig', [
+      'districts' => $districts,
+      'jsonData' => json_encode($districts)
+    ]);
   }
 
   #[Route('api/', name: 'api')]
@@ -84,9 +87,9 @@ class ClubController extends AbstractController {
     // TODO: Load from prod.
     $content = file_get_contents(dirname(__FILE__) . '/tmp.json');
     foreach (json_decode($content)->features as $feature) {
-      $feature->properties->coordinates = $feature->geometry->coordinates;
       // TODO: Ask schach.in to provide ZPS to avoid matching by name.
       $slug = TextSanitizer::slug($feature->properties->org);
+      $feature->properties->coordinates = array_reverse($feature->geometry->coordinates);
       $clubs[$slug] = $feature->properties;
     }
     foreach (SCHACH_IN_HACKS as $from => $to) {

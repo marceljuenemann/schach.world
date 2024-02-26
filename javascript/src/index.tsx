@@ -19,15 +19,16 @@ $('[data-nsv-component]').each((_, elem: HTMLElement) => {
 })
 
 function createComponent(elem: HTMLElement): ReactElement {
+  const attr = (id: string) => elem.getAttribute(`data-nsv-${id}`)
   switch (elem.getAttribute('data-nsv-component')) {
     // League manager
     case 'PairingList':
-      const division = parseInt(elem.getAttribute('data-nsv-division') || '0')
+      const division = parseInt(attr('division') || '0')
       return <PairingListLoader division={division} />;
 
     // NSV WebApp
     case 'ClubsMap':
-      return <ClubsMap />
+      return <ClubsMap districts={JSON.parse(attr('districts')!)} />
   }
   throw new Error('Invalid NSV component type');
 }
