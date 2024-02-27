@@ -61,6 +61,30 @@ class League
   private int $configSubstituteTeams = 0;
 
   /**
+   * Number of teams that will be promoted to a higher league.
+   */
+  #[ORM\Column(name: 'spielAufsteiger')]
+  private int $configTeamsPromoted = 0;
+
+  /**
+   * Number of teams that will be relegated.
+   */
+  #[ORM\Column(name: 'spielAbsteiger')]
+  private int $configTeamsDemoted = 0;
+
+  /**
+   * Number of teams that face a relegation battle for a higher league.
+   */
+  #[ORM\Column(name: 'spielAufsteigerRelegation')]
+  private int $configTeamsMaybePromoted = 0;
+
+  /**
+   * Number of teams that face a relegation battle for a lower league.
+   */
+  #[ORM\Column(name: 'spielAbsteigerRelegation')]
+  private int $configTeamsMaybeDemoted = 0;
+
+  /**
    * Whether to show player numbers in the UI.
    */
   #[ORM\Column(name: 'showPassNr')]
@@ -77,6 +101,19 @@ class League
    */
   #[ORM\Column(name: 'showSpieltagvorschau')]
   private bool $configShowNextMatchDay = true;
+
+  /**
+   * Additional team details to ask for during registration.
+   * TODO: document the format
+   */
+  #[ORM\Column(name: 'anmZusatzfelder')]
+  private string $registrationTeamDetails = '';
+
+  /**
+   * A public message to be shown.
+   */
+  #[ORM\Column(name: 'infomeldung')]
+  private string $announcement = '';
 
   #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
   #[ORM\OrderBy(["sortId" => "ASC", "id" => "ASC"])]

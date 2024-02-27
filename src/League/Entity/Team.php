@@ -52,7 +52,7 @@ class Team
   private ?string $venueName;
 
   #[ORM\Column(name: 'so_hinweis', length: 255)]
-  private ?string $venueNote;
+  private string $venueNote = '';
 
   #[ORM\Column(name: 'so_strasse', length: 30)]
   private ?string $venueStreet;

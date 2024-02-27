@@ -1,0 +1,46 @@
+{% extends 'layout.html.twig' %}
+{% import "macros.html.twig" as nsv %}
+
+{% set title = "Vereine" %}
+{% set hide_sidebar = true %}
+
+{% block content %}
+
+  {# TODO: info on how to change data #}
+  {# TODO: check old pages for missing bits #}
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  {# TODO: min width #}
+  <div
+    data-nsv-component="ClubsMap"
+    data-nsv-districts="{{ jsonData | escape('html_attr') }}"
+    style="height: 450px"
+    class="mb-4"></div>
+
+  {% for district in districts %}
+    <h4>{{district.name}}</h4>
+    <a href="{{district.website}}">{{district.website}}</a>
+    
+    <table class="table table-striped mt-4 mb-4" style="max-width: 600px">
+      <tr><th>Nr.</th><th>Verein</th><th>Links</th></tr>
+      {% for club in district.clubs %}
+        <tr>
+          <td>{{club.zps}}</td>
+          <td>{{club.name}}</td>
+          <td>
+            {% if club.detailsUri|default(false) %}
+              <a href="{{club.detailsUri}}">Details</a> |
+            {% endif %}
+            <a href="{{club.dwzUri}}">DWZ</a>
+            {% if club.website|default(false) %}
+              | <a href="{{club.website}}">Website</a>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% endfor %}
+
+{% endblock %}
