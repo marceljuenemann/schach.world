@@ -55,7 +55,7 @@ export class ClubsMap extends React.Component<{
           Object.values(this.props.districts).map(district => {
             const icon = new L.Icon.Default({
               iconUrl: `marker-icon-${district.markerColor}.png`,
-              iconRetinaUrl: `marker-icon-red-${district.markerColor}.png`
+              iconRetinaUrl: `marker-icon-${district.markerColor}-2x.png`
             }) as Icon;
             return Object.values(district.clubs).map(club => this.renderClub(club, district, icon))
           }).flat()
