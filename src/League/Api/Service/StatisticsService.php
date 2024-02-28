@@ -365,10 +365,10 @@ class StatisticsService
       $teams_game_scores[$team_id]['wins'] = 0;
       $teams_game_scores[$team_id]['draws'] = 0;
       $teams_game_scores[$team_id]['losses'] = 0;
-      $teams_game_scores[$team_id]['white_count'] = (int) 0;
+      $teams_game_scores[$team_id]['white_count'] = (int)0;
       $teams_game_scores[$team_id]['white_points'] = 0;
       $teams_game_scores[$team_id]['white_score'] = 0;
-      $teams_game_scores[$team_id]['black_count'] = (int) 0;
+      $teams_game_scores[$team_id]['black_count'] = (int)0;
       $teams_game_scores[$team_id]['black_points'] = 0;
       $teams_game_scores[$team_id]['black_score'] = 0;
       foreach ($team['pairings'] as $pairing) {
@@ -400,6 +400,7 @@ class StatisticsService
               case Result::UNICODE_DRAW:
                 $teams_game_scores[$team_id]['draws'] += 1;
                 $teams_game_scores[$team_id]['game_count_played'] += 1;
+                $result = 0.5;
                 break;
               case 0:
                 $teams_game_scores[$team_id]['losses'] += 1;
@@ -409,24 +410,29 @@ class StatisticsService
             // Collect how many games have been actually played with white
             // and black and add up the score for each
             if ($pairing->team1->id == $team_id) {
-              // If the team is team1, it plays on board 2,4,6 etc with white.
+              // If the team is the home team and thus team1, it plays on board 2,4,6 etc with white.
               // Translated to array keys those are the odd ones like 1,3,5 etc.
               // Those are the numbers not divisible by two and not zero
-              if($game_key != 0 && $game_key % 2 != 0) {
-                if($result != '+' && $result != '-' && $result != Result::UNICODE_DRAW) {
+              if ($game_key != 0 && $game_key % 2 != 0) {
+                if ($result != '+' && $result != '-') {
                   $teams_game_scores[$team_id]['white_count'] += 1;
                   $teams_game_scores[$team_id]['white_points'] += $result;
-                } if($result == Result::UNICODE_DRAW)  {
-                  $teams_game_scores[$team_id]['white_count'] += 1;
-                  $teams_game_scores[$team_id]['white_points'] += 0.5;
                 }
               }
+              // Now reverse the logic and cound the black games for the home team
+              if ($game_key != 0 || $game_key % 2 == 0) {
+                if ($result != '+' && $result != '-') {
+                  $teams_game_scores[$team_id]['black_count'] += 1;
+                  $teams_game_scores[$team_id]['black_points'] += $result;
+                }
+              }
+            }
+            if ($pairing->team2->id == $team_id) {
 
             }
-
           }
         }
-        // Collect scores as for white and black
+
 
 
       }
