@@ -365,6 +365,12 @@ class StatisticsService
       $teams_game_scores[$team_id]['wins'] = 0;
       $teams_game_scores[$team_id]['draws'] = 0;
       $teams_game_scores[$team_id]['losses'] = 0;
+      $teams_game_scores[$team_id]['white_count'] = (int) 0;
+      $teams_game_scores[$team_id]['white_points'] = 0;
+      $teams_game_scores[$team_id]['white_score'] = 0;
+      $teams_game_scores[$team_id]['black_count'] = (int) 0;
+      $teams_game_scores[$team_id]['black_points'] = 0;
+      $teams_game_scores[$team_id]['black_score'] = 0;
       foreach ($team['pairings'] as $pairing) {
         $teams_game_scores[$team_id]['game_count'] += count($pairing->games->getValues());
         // Get scores for games results
@@ -377,7 +383,7 @@ class StatisticsService
 
         if (isset($result_select)) {
 
-          foreach ($pairing->games->getValues() as $game) {
+          foreach ($pairing->games->getValues() as $game_key => $game) {
             $result = $this->encoding->utf8_encode($game->$result_select);
 
             switch ($result) {
@@ -400,6 +406,24 @@ class StatisticsService
                 $teams_game_scores[$team_id]['game_count_played'] += 1;
                 break;
             }
+            // Collect how many games have been actually played with white
+            // and black and add up the score for each
+            if ($pairing->team1->id == $team_id) {
+              // If the team is team1, it plays on board 2,4,6 etc with white.
+              // Translated to array keys those are the odd ones like 1,3,5 etc.
+              // Those are the numbers not divisible by two and not zero
+              if($game_key != 0 && $game_key % 2 != 0) {
+                if($result != '+' && $result != '-' && $result != Result::UNICODE_DRAW) {
+                  $teams_game_scores[$team_id]['white_count'] += 1;
+                  $teams_game_scores[$team_id]['white_points'] += $result;
+                } if($result == Result::UNICODE_DRAW)  {
+                  $teams_game_scores[$team_id]['white_count'] += 1;
+                  $teams_game_scores[$team_id]['white_points'] += 0.5;
+                }
+              }
+
+            }
+
           }
         }
         // Collect scores as for white and black
