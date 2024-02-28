@@ -359,21 +359,28 @@ class StatisticsService
 
     foreach ($active_teams_with_parings as $team_id => $team) {
       $teams_game_scores[$team_id]['game_count'] = (int)0;
+      $teams_game_scores[$team_id]['game_count_played'] = (int)0;
       $teams_game_scores[$team_id]['forfeit_wins'] = (int)0;
       $teams_game_scores[$team_id]['forfeit_losses'] = (int)0;
-      $teams_game_scores[$team_id]['wins'] = (int)0;
-      $teams_game_scores[$team_id]['draws'] = (int)0;
-      $teams_game_scores[$team_id]['losses'] = (int)0;
+      $teams_game_scores[$team_id]['wins'] = 0;
+      $teams_game_scores[$team_id]['draws'] = 0;
+      $teams_game_scores[$team_id]['losses'] = 0;
       foreach ($team['pairings'] as $pairing) {
         $teams_game_scores[$team_id]['game_count'] += count($pairing->games->getValues());
         // Get scores for games results
 
         if ($pairing->team1->id == $team_id) {
-          //$result_select = 'result1';
-          foreach ($pairing->games->getValues() as $game) {
-            $result = $this->encoding->utf8_encode($game->result1);
+          $result_select = 'result1';
+        } elseif ($pairing->team2->id == $team_id) {
+          $result_select = 'result2';
+        }
 
-            switch($result) {
+        if (isset($result_select)) {
+
+          foreach ($pairing->games->getValues() as $game) {
+            $result = $this->encoding->utf8_encode($game->$result_select);
+
+            switch ($result) {
               case '+':
                 $teams_game_scores[$team_id]['forfeit_wins'] += 1;
                 break;
@@ -382,19 +389,35 @@ class StatisticsService
                 break;
               case 1:
                 $teams_game_scores[$team_id]['wins'] += 1;
+                $teams_game_scores[$team_id]['game_count_played'] += 1;
                 break;
               case Result::UNICODE_DRAW:
                 $teams_game_scores[$team_id]['draws'] += 1;
+                $teams_game_scores[$team_id]['game_count_played'] += 1;
                 break;
               case 0:
                 $teams_game_scores[$team_id]['losses'] += 1;
+                $teams_game_scores[$team_id]['game_count_played'] += 1;
                 break;
             }
           }
         }
+        // Collect scores as for white and black
 
 
       }
+      // Convert the scores for the actually played games to percentages
+      $game_count_played = $teams_game_scores[$team_id]['game_count_played'];
+
+      $win_percentage = round(100 * ($teams_game_scores[$team_id]['wins'] / $game_count_played));
+      $teams_game_scores[$team_id]['wins'] = $win_percentage . '%';
+
+      $draw_percentage = round(100 * ($teams_game_scores[$team_id]['draws'] / $game_count_played));
+      $teams_game_scores[$team_id]['draws'] = $draw_percentage . '%';
+
+      $loss_percentage = round(100 * ($teams_game_scores[$team_id]['losses'] / $game_count_played));
+      $teams_game_scores[$team_id]['losses'] = $loss_percentage . '%';
+
     }
 
 
