@@ -420,21 +420,32 @@ class StatisticsService
                 }
               }
               // Now reverse the logic and cound the black games for the home team
-              if ($game_key != 0 || $game_key % 2 == 0) {
+              if ($game_key == 0 || $game_key % 2 == 0) {
                 if ($result != '+' && $result != '-') {
                   $teams_game_scores[$team_id]['black_count'] += 1;
                   $teams_game_scores[$team_id]['black_points'] += $result;
                 }
               }
             }
+            // Collect white games for the away team
             if ($pairing->team2->id == $team_id) {
+              if ($game_key == 0 || $game_key % 2 == 0) {
+                if ($result != '+' && $result != '-') {
+                  $teams_game_scores[$team_id]['white_count'] += 1;
+                  $teams_game_scores[$team_id]['white_points'] += $result;
+                }
+              }
+              // black games
+              if ($game_key != 0 && $game_key % 2 != 0) {
+                if ($result != '+' && $result != '-') {
+                  $teams_game_scores[$team_id]['black_count'] += 1;
+                  $teams_game_scores[$team_id]['black_points'] += $result;
+                }
+              }
 
             }
           }
         }
-
-
-
       }
       // Convert the scores for the actually played games to percentages
       $game_count_played = $teams_game_scores[$team_id]['game_count_played'];
@@ -448,10 +459,19 @@ class StatisticsService
       $loss_percentage = round(100 * ($teams_game_scores[$team_id]['losses'] / $game_count_played));
       $teams_game_scores[$team_id]['losses'] = $loss_percentage . '%';
 
+      // Convert the white and black points to percentages
+      $white_percentage = round(100 * ($teams_game_scores[$team_id]['white_points'] / $teams_game_scores[$team_id]['white_count']));
+      $teams_game_scores[$team_id]['white_score'] = $white_percentage . '%';
+      unset($teams_game_scores[$team_id]['white_points'], $teams_game_scores[$team_id]['white_count']);
+
+      $black_percentage = round(100 * ($teams_game_scores[$team_id]['black_points'] / $teams_game_scores[$team_id]['black_count']));
+      $teams_game_scores[$team_id]['black_score'] = $black_percentage . '%';
+      unset($teams_game_scores[$team_id]['black_points'], $teams_game_scores[$team_id]['black_count']);
+
     }
 
 
-    $paul = 'dabei';
+    return $teams_game_scores;
   }
 
 
