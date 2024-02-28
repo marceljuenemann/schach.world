@@ -351,9 +351,8 @@ class StatisticsService
   /**
    * Calculate the data for the team game score "Spiel-Statistik"
    */
-  public function team_game_score_data($division)
+  public function team_game_score_data($active_teams_with_parings)
   {
-    $active_teams_with_parings = $this->active_teams_with_parings($division);
     $teams_game_scores = [];
 
 
@@ -710,6 +709,67 @@ class StatisticsService
     }
 
     return $topscorer_table;
+  }
+
+  /**
+   * Create the table array for the team game score that
+   * is sent to the template in the controller.
+   */
+  public function create_team_game_score_table($division) {
+    $active_teams_with_parings = $this->active_teams_with_parings($division);
+    $team_game_score_data = $this->team_game_score_data($active_teams_with_parings);
+
+    $team_game_score_table = [];
+
+    $team_game_score_table['header'] = [
+      [
+        'text' => 'Mannschaft',
+        'class' => 'team'
+      ],
+      [
+        'text' => $this->encoding->utf8_decode('∑'),
+        'class' => 'game-all-count border-left-bold',
+        'title' => $this->encoding->utf8_decode('Wie viele Partien hat die Mannschaft bislang gespielt?')
+      ],
+      [
+        'text' => '+',
+        'class' => 'forfeit-wins',
+        'title' => $this->encoding->utf8_decode('Kampflose Siege')
+      ],
+      [
+        'text' => '-',
+        'class' => 'forfeit-losses border-right-bold',
+        'title' => $this->encoding->utf8_decode('Kampflose Niederlagen')
+      ],
+      [
+        'text' => '1',
+        'class' => 'wins',
+        'title' => $this->encoding->utf8_decode('Siege aus den wirklich gespielten Partien')
+      ],
+      [
+        'text' => $this->encoding->utf8_decode(Result::UNICODE_DRAW),
+        'class' => 'draws',
+        'title' => $this->encoding->utf8_decode('Remis')
+      ],
+      [
+        'text' => '0',
+        'class' => 'losses',
+        'title' => $this->encoding->utf8_decode('Niederlagen')
+      ],
+      [
+        'text' => 'W',
+        'class' => 'white-score',
+        'title' => $this->encoding->utf8_decode('Score mit Weiß')
+      ],
+      [
+        'text' => 'S',
+        'class' => 'black-score',
+        'title' => $this->encoding->utf8_decode('Score mit Schwarz')
+      ],
+    ];
+
+    return $team_game_score_table;
+
   }
 
 
