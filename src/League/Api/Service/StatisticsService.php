@@ -357,6 +357,8 @@ class StatisticsService
 
 
     foreach ($active_teams_with_parings as $team_id => $team) {
+      $teams_game_scores[$team_id]['name'] = $team['team']->name;
+      $teams_game_scores[$team_id]['uri'] = $team['team']->uri();
       $teams_game_scores[$team_id]['game_count'] = (int)0;
       $teams_game_scores[$team_id]['game_count_played'] = (int)0;
       $teams_game_scores[$team_id]['forfeit_wins'] = (int)0;
@@ -449,22 +451,22 @@ class StatisticsService
       // Convert the scores for the actually played games to percentages
       $game_count_played = $teams_game_scores[$team_id]['game_count_played'];
 
-      $win_percentage = round(100 * ($teams_game_scores[$team_id]['wins'] / $game_count_played));
-      $teams_game_scores[$team_id]['wins'] = $win_percentage . '%';
+      $win_percentage = 100 * ($teams_game_scores[$team_id]['wins'] / $game_count_played);
+      $teams_game_scores[$team_id]['wins'] = $win_percentage;
 
-      $draw_percentage = round(100 * ($teams_game_scores[$team_id]['draws'] / $game_count_played));
-      $teams_game_scores[$team_id]['draws'] = $draw_percentage . '%';
+      $draw_percentage = 100 * ($teams_game_scores[$team_id]['draws'] / $game_count_played);
+      $teams_game_scores[$team_id]['draws'] = $draw_percentage;
 
-      $loss_percentage = round(100 * ($teams_game_scores[$team_id]['losses'] / $game_count_played));
-      $teams_game_scores[$team_id]['losses'] = $loss_percentage . '%';
+      $loss_percentage = 100 * ($teams_game_scores[$team_id]['losses'] / $game_count_played);
+      $teams_game_scores[$team_id]['losses'] = $loss_percentage;
 
       // Convert the white and black points to percentages
-      $white_percentage = round(100 * ($teams_game_scores[$team_id]['white_points'] / $teams_game_scores[$team_id]['white_count']));
-      $teams_game_scores[$team_id]['white_score'] = $white_percentage . '%';
+      $white_percentage = 100 * ($teams_game_scores[$team_id]['white_points'] / $teams_game_scores[$team_id]['white_count']);
+      $teams_game_scores[$team_id]['white_score'] = $white_percentage;
       unset($teams_game_scores[$team_id]['white_points'], $teams_game_scores[$team_id]['white_count']);
 
-      $black_percentage = round(100 * ($teams_game_scores[$team_id]['black_points'] / $teams_game_scores[$team_id]['black_count']));
-      $teams_game_scores[$team_id]['black_score'] = $black_percentage . '%';
+      $black_percentage = 100 * ($teams_game_scores[$team_id]['black_points'] / $teams_game_scores[$team_id]['black_count']);
+      $teams_game_scores[$team_id]['black_score'] = $black_percentage;
       unset($teams_game_scores[$team_id]['black_points'], $teams_game_scores[$team_id]['black_count']);
 
     }
@@ -715,7 +717,8 @@ class StatisticsService
    * Create the table array for the team game score that
    * is sent to the template in the controller.
    */
-  public function create_team_game_score_table($division) {
+  public function create_team_game_score_table($division)
+  {
     $active_teams_with_parings = $this->active_teams_with_parings($division);
     $team_game_score_data = $this->team_game_score_data($active_teams_with_parings);
 
@@ -753,7 +756,7 @@ class StatisticsService
       ],
       [
         'text' => '0',
-        'class' => 'losses',
+        'class' => 'losses border-right-bold',
         'title' => $this->encoding->utf8_decode('Niederlagen')
       ],
       [
@@ -768,7 +771,119 @@ class StatisticsService
       ],
     ];
 
-    return $team_game_score_table;
+    // Set initial values for the last table row that displays the average scores
+    $sum_game_count = 0;
+    $sum_forfeit_wins = 0;
+    $sum_forfeit_losses = 0;
+    $sum_wins = 0;
+    $sum_draws = 0;
+    $sum_losses = 0;
+    $sum_white_score = 0;
+    $sum_black_score = 0;
+
+    foreach ($team_game_score_data as $key => $team) {
+      $team_game_score_table['body'][] = [
+        [
+          'text' => $team['name'],
+          'link' => $team['uri'],
+          'class' => 'name'
+        ],
+        [
+          'text' => $team['game_count'],
+          'class' => 'game-all-count border-left-bold',
+        ],
+        [
+          'text' => $team['forfeit_wins'],
+          'class' => 'forfeit-wins'
+        ],
+        [
+          'text' => $team['forfeit_losses'],
+          'class' => 'forfeit-losses border-right-bold',
+        ],
+        [
+          'text' => round($team['wins']) . '%',
+          'class' => 'wins',
+        ],
+        [
+          'text' => round($team['draws']) . '%',
+          'class' => 'draws',
+        ],
+        [
+          'text' => round($team['losses']) . '%',
+          'class' => 'losses border-right-bold',
+        ],
+        [
+          'text' => round($team['white_score']) . '%',
+          'class' => 'white-score',
+        ],
+        [
+          'text' => round($team['black_score']) . '%',
+          'class' => 'black-score',
+        ],
+      ];
+
+      $sum_game_count += $team['game_count'];
+      $sum_forfeit_wins += $team['forfeit_wins'];
+      $sum_forfeit_losses += $team['forfeit_losses'];
+      $sum_wins += $team['wins'];
+      $sum_draws += $team['draws'];
+      $sum_losses += $team['losses'];
+      $sum_white_score += $team['white_score'];
+      $sum_black_score += $team['black_score'];
+
+    }
+
+
+  // Calculate the average values
+    $team_count = count($active_teams_with_parings);
+    $average_wins = $sum_wins / $team_count;
+    $average_draws = $sum_draws / $team_count;
+    $average_losses = $sum_losses / $team_count;
+    $average_white_score = $sum_white_score / $team_count;
+    $average_black_score  = $sum_black_score / $team_count;
+
+    // Add the average values to the table
+
+    $team_game_score_table['body'][] = [
+      [
+        'text' => 'Summe:',
+        'class' => 'name format-bold'
+      ],
+      [
+        'text' => $sum_game_count,
+        'class' => 'game-all-count border-left-bold format-bold',
+      ],
+      [
+        'text' => $sum_forfeit_wins,
+        'class' => 'forfeit-wins format-bold'
+      ],
+      [
+        'text' => $sum_forfeit_losses,
+        'class' => 'forfeit-losses border-right-bold format-bold',
+      ],
+      [
+        'text' => round($average_wins) . '%',
+        'class' => 'wins format-bold',
+      ],
+      [
+        'text' => round($average_draws) . '%',
+        'class' => 'draws format-bold',
+      ],
+      [
+        'text' => round($average_losses) . '%',
+        'class' => 'losses border-right-bold format-bold',
+      ],
+      [
+        'text' => round($average_white_score) . '%',
+        'class' => 'white-score format-bold',
+      ],
+      [
+        'text' => round($average_black_score) . '%',
+        'class' => 'black-score format-bold',
+      ],
+    ];
+
+>    return $team_game_score_table;
 
   }
 
