@@ -727,7 +727,7 @@ class StatisticsService
         'class' => 'team'
       ],
       [
-        'text' => $this->encoding->utf8_decode('∑'),
+        'text' => '&sum;',
         'class' => 'game-all-count border-left-bold',
         'title' => $this->encoding->utf8_decode('Wie viele Partien hat die Mannschaft bislang gespielt?')
       ],

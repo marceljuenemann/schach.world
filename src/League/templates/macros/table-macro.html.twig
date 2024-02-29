@@ -14,7 +14,7 @@
                     {% set cell_title = '' %}
                 {% endif %}
 
-                <th class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title|raw) }}>{{ cell.text }}</th>
+                <th class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title|raw) }}>{{ cell.text | raw }}</th>
             {% endfor %}
         </tr>
         {% for row in table_data.body %}
