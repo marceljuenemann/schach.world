@@ -883,7 +883,7 @@ class StatisticsService
       ],
     ];
 
->    return $team_game_score_table;
+   return $team_game_score_table;
 
   }
 
