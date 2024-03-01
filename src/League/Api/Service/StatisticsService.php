@@ -499,6 +499,17 @@ class StatisticsService
   }
 
   /**
+   * Create the text above the tables which highlights some of the table data
+   */
+/*  public function create_statistics_text($division) {
+    $all_games = $this->all_games_division($division);
+    $active_players = $this->active_players_division($all_games);
+    $active_players_with_games = $this->active_teams_with_players($active_players);
+    $dwz_calculation = $this->teams_dwz_calculation($active_players_with_games);
+
+  }*/
+
+  /**
    * Create the table array for DWZ statistics that
    * is sent to the template in the controller.
    */
@@ -513,7 +524,12 @@ class StatisticsService
     $first_team = reset($dwz_calculation);
     $board_count = $first_team['team']->league->boardCount;
 
+    // We also return part of statistics text, so the dwz_table is only part of the returned data
+
+    $dwz_data = [];
+
     $dwz_table = [];
+    $dwz_text = '';
 
     $dwz_table['header'] = [
       [
@@ -618,6 +634,8 @@ class StatisticsService
       'age' => round($average_sums['age'] / $team_count),
     ];
 
+    $dwz_text = $this->encoding->utf8_decode("Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine DWZ von " . $average_values['dwz_active'] . " und ist " . $average_values['age'] . " Jahre alt.");
+
     // Add an extra row to the table with the average values for all teams.
     $dwz_table['body'][] = [
       [
@@ -642,7 +660,10 @@ class StatisticsService
       ],
     ];
 
-    return $dwz_table;
+    $dwz_data['table'] = $dwz_table;
+    $dwz_data['text'] = $dwz_text;
+
+    return $dwz_data;
 
   }
 
@@ -658,7 +679,9 @@ class StatisticsService
     $players_with_games_by_points = $this->players_sorted_by_points($active_players_with_games);
     $top_ten_scorers = array_slice($players_with_games_by_points, 0, 10, true);
 
+    $topscorer_data = [];
     $topscorer_table = [];
+    $topscorer_text = '';
 
     $topscorer_table['header'] = [
       ['text' => 'Name', 'class' => 'name'],
@@ -668,6 +691,10 @@ class StatisticsService
       ['text' => 'Partien', 'class' => 'games'],
       ['text' => 'Punkte', 'class' => 'points']
     ];
+
+    // find the topscorer(s) and the draw king(s)
+    $first_player = reset($top_ten_scorers);
+    $highest_points_score = $first_player['points'];
 
     foreach ($top_ten_scorers as $key => $player) {
       $first_name = $player['player']->firstName;
@@ -710,7 +737,9 @@ class StatisticsService
       ];
     }
 
-    return $topscorer_table;
+    $topscorer_data['table'] = $topscorer_table;
+
+    return $topscorer_data;
   }
 
   /**

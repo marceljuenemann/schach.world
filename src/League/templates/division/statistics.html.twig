@@ -4,7 +4,9 @@
 
 {% block content %}
 <div class="statistics-container">
-   <p>&nbsp;</p>
+   <br>
+   <p>{{ statistics_text }}<br><br></p>
+
 
    <h3 class="table-subheading">DWZ-Statistik</h3>
    {{ table_macro.table(dwz_table, 'statistics-dwz') }}
