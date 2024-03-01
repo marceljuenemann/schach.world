@@ -357,7 +357,7 @@ class StatisticsService
 
 
     foreach ($active_teams_with_parings as $team_id => $team) {
-      $teams_game_scores[$team_id]['name'] = $team['team']->name;
+      $teams_game_scores[$team_id]['name'] = $team['team']->name . ' ' . $team['team']->number;
       $teams_game_scores[$team_id]['uri'] = $team['team']->uri();
       $teams_game_scores[$team_id]['game_count'] = (int)0;
       $teams_game_scores[$team_id]['game_count_played'] = (int)0;
@@ -500,15 +500,16 @@ class StatisticsService
   }
 
   /**
-   * Create the text above the tables which highlights some of the table data
+   * Though we should not, we need to create links before sending the
+   * data to the template. To make it a little less ugly, use a method for that.
    */
-/*  public function create_statistics_text($division) {
-    $all_games = $this->all_games_division($division);
-    $active_players = $this->active_players_division($all_games);
-    $active_players_with_games = $this->active_teams_with_players($active_players);
-    $dwz_calculation = $this->teams_dwz_calculation($active_players_with_games);
+  public function statistics_html_link($uri, $text) {
+    $link = '<a href="' . $uri . '">';
+    $link .= $text;
+    $link .= '</a>';
 
-  }*/
+    return $link;
+  }
 
   /**
    * Create the table array for DWZ statistics that
@@ -568,7 +569,7 @@ class StatisticsService
 
     // Create the table body
     foreach ($dwz_calculation as $key => $team) {
-      $team_name = $team['team']->name;
+      $team_name = $team['team']->name  . ' ' . $team['team']->number;
       $team_uri = $team['team']->uri();
       $dwz_active = $team['active_dwz_average'];
       $dwz_top = $team['top_x_dwz_average'];
@@ -677,10 +678,10 @@ class StatisticsService
     $all_games = $this->all_games_division($division);
     $active_players = $this->active_players_division($all_games);
     $active_players_with_games = $this->active_players_with_games($active_players, $all_games);
-    $players_with_games_by_points = $this->players_sorted_by_points_and_games($active_players_with_games);
+    $players_with_games_by_points_and_games = $this->players_sorted_by_points_and_games($active_players_with_games);
     $players_with_games_by_draws = $this->players_sorted_by_draws($active_players_with_games);
     $top_ten_drawers = array_slice($players_with_games_by_draws, 0, 10, true);
-    $top_ten_scorers = array_slice($players_with_games_by_points, 0, 10, true);
+    $top_ten_scorers = array_slice($players_with_games_by_points_and_games, 0, 10, true);
 
     $topscorer_data = [];
     $topscorer_table = [];
@@ -714,7 +715,7 @@ class StatisticsService
       $points = $player['points'];
 
       // Collect the top scorers
-      if($player['points'] == $highest_points_score && $games_count == $lowest_game_score) {
+      if ($player['points'] == $highest_points_score && $games_count == $lowest_game_score) {
         $top_scorers[] = $player;
       }
 
@@ -753,13 +754,59 @@ class StatisticsService
     $highest_draw_score = $first_drawer['draws'];
     $draw_kings = [];
 
-    foreach($top_ten_drawers as $drawer) {
-      if($drawer['draws'] == $highest_draw_score) {
+    foreach ($top_ten_drawers as $drawer) {
+      if ($drawer['draws'] == $highest_draw_score) {
         $draw_kings[] = $drawer;
       }
     }
-    //Der Top-Scorer mit 6 Punkten aus 6 Partien ist Thomas Orlowski (SV Bückeburg). Der Remiskönig mit 3 Remis ist Walter Böer (SV Bückeburg).
 
+    // Create the Topscorer text
+    // If there are multiple Topscorers, they are all named
+    if (count($top_scorers) > 1) {
+      $top_text_1 = $this->encoding->utf8_decode('Die Top-Scorer mit ' . $highest_points_score . ' Punkten aus ' . $lowest_game_score . ' Partien sind: ');
+      $top_text_2 = '';
+
+
+      foreach ($top_scorers as $key => $scorer) {
+        // We need the player with link and his team with link.
+        $player_linked = $this->statistics_html_link(
+          $scorer['player']->uri(), $scorer['player']->firstName . ' ' . $scorer ['player']->lastName . ' '
+        );
+        $team_linked = $this->statistics_html_link(
+          $scorer['player']->team->uri(), '(' . $scorer['player']->team->name . ' ' . $scorer['player']->team->number . ')'
+        );
+        $player_linked_with_team = $player_linked . $team_linked;
+
+
+        if ($key < count($top_scorers) - 2) {
+          $top_text_2 .= $player_linked_with_team . ', ';
+        }
+        if ($key == count($top_scorers) - 2) {
+          $top_text_2 .= $player_linked_with_team . ' und ';
+        } if ($key == count($top_scorers) - 1) {
+          $top_text_2 .= $player_linked_with_team . '. ';
+        }
+      }
+    } else {
+      // If there is only one top scorer
+      $top_text_1 = $this->encoding->utf8_decode('Der Top-Scorer mit ' . $highest_points_score . ' Punkten aus ' . $lowest_game_score . ' Partien ist ');
+      $top_text_2 = '';
+
+      foreach ($top_scorers as $key => $scorer) {
+        // We need the player with link and his team with link.
+        $player_linked = $this->statistics_html_link(
+          $scorer['player']->uri(), $scorer['player']->firstName . ' ' . $scorer ['player']->lastName . ' '
+        );
+        $team_linked = $this->statistics_html_link(
+          $scorer['player']->team->uri(), '(' . $scorer['player']->team->name . ' ' . $scorer['player']->team->number . ')'
+        );
+        $player_linked_with_team = $player_linked . $team_linked;
+
+        $top_text_2 .= $player_linked_with_team . '. ';
+      }
+    }
+    $topscorer_data['text'] = $top_text_1 . $top_text_2;
+    //Der Top-Scorer mit 6 Punkten aus 6 Partien ist Thomas Orlowski (SV Bückeburg). Der Remiskönig mit 3 Remis ist Walter Böer (SV Bückeburg).
 
 
     $topscorer_data['table'] = $topscorer_table;
@@ -771,7 +818,8 @@ class StatisticsService
    * Create the table array for the team game score that
    * is sent to the template in the controller.
    */
-  public function create_team_game_score_table($division)
+  public
+  function create_team_game_score_table($division)
   {
     $active_teams_with_parings = $this->active_teams_with_parings($division);
     $team_game_score_data = $this->team_game_score_data($active_teams_with_parings);
@@ -888,13 +936,13 @@ class StatisticsService
     }
 
 
-  // Calculate the average values
+    // Calculate the average values
     $team_count = count($active_teams_with_parings);
     $average_wins = $sum_wins / $team_count;
     $average_draws = $sum_draws / $team_count;
     $average_losses = $sum_losses / $team_count;
     $average_white_score = $sum_white_score / $team_count;
-    $average_black_score  = $sum_black_score / $team_count;
+    $average_black_score = $sum_black_score / $team_count;
 
     // Add the average values to the table
 
@@ -937,7 +985,7 @@ class StatisticsService
       ],
     ];
 
-   return $team_game_score_table;
+    return $team_game_score_table;
 
   }
 
