@@ -477,12 +477,13 @@ class StatisticsService
 
 
   /**
-   * Sort the players by points
+   * Sort the players by points first and by played games after that.
+   * Who has played less games will be sorted further up.
    */
-  public function players_sorted_by_points($active_players_with_games)
+  public function players_sorted_by_points_and_games($active_players_with_games)
   {
     uasort($active_players_with_games, function ($a, $b) {
-      return [$b['points']] <=> [$a['points']];
+      return [$b['points'], count($a['games'])] <=> [$a['points'], count($b['games'])];
     });
     return $active_players_with_games;
   }
@@ -676,7 +677,9 @@ class StatisticsService
     $all_games = $this->all_games_division($division);
     $active_players = $this->active_players_division($all_games);
     $active_players_with_games = $this->active_players_with_games($active_players, $all_games);
-    $players_with_games_by_points = $this->players_sorted_by_points($active_players_with_games);
+    $players_with_games_by_points = $this->players_sorted_by_points_and_games($active_players_with_games);
+    $players_with_games_by_draws = $this->players_sorted_by_draws($active_players_with_games);
+    $top_ten_drawers = array_slice($players_with_games_by_draws, 0, 10, true);
     $top_ten_scorers = array_slice($players_with_games_by_points, 0, 10, true);
 
     $topscorer_data = [];
@@ -695,6 +698,9 @@ class StatisticsService
     // find the topscorer(s) and the draw king(s)
     $first_player = reset($top_ten_scorers);
     $highest_points_score = $first_player['points'];
+    // The lowest game score of the players with the most points
+    $lowest_game_score = count($first_player['games']);
+    $top_scorers = [];
 
     foreach ($top_ten_scorers as $key => $player) {
       $first_name = $player['player']->firstName;
@@ -706,6 +712,11 @@ class StatisticsService
       $board = $player['player']->number ?? '';
       $games_count = count($player['games']);
       $points = $player['points'];
+
+      // Collect the top scorers
+      if($player['points'] == $highest_points_score && $games_count == $lowest_game_score) {
+        $top_scorers[] = $player;
+      }
 
       $topscorer_table['body'][] = [
         [
@@ -736,6 +747,20 @@ class StatisticsService
         ],
       ];
     }
+
+    // Collect the draw kings
+    $first_drawer = reset($top_ten_drawers);
+    $highest_draw_score = $first_drawer['draws'];
+    $draw_kings = [];
+
+    foreach($top_ten_drawers as $drawer) {
+      if($drawer['draws'] == $highest_draw_score) {
+        $draw_kings[] = $drawer;
+      }
+    }
+    //Der Top-Scorer mit 6 Punkten aus 6 Partien ist Thomas Orlowski (SV Bückeburg). Der Remiskönig mit 3 Remis ist Walter Böer (SV Bückeburg).
+
+
 
     $topscorer_data['table'] = $topscorer_table;
 
