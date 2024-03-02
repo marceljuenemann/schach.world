@@ -28,7 +28,7 @@ class ClubController extends AbstractController {
     $this->cache = new FilesystemAdapter(self::CACHE_NAMESPACE, 0, $this->projectDir . self::CACHE_DIR);
   }
 
-  #[Route('', name: 'index')]
+  #[Route('beta/', name: 'index')]
   public function clubs(): Response {
     $districts = $this->fetchDistrictsCached();
     return $this->render('club/clubs.html.twig', [
