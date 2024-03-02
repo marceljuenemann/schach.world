@@ -14,7 +14,8 @@ require_once(ABSPATH . '../../vendor/autoload.php');
 add_filter('template_include', function($template) {
   global $wp;
   $prefixes = [
-    'vereine',
+    'vereine/api',
+    'vereine/beta',
     '_error'
   ];
   foreach ($prefixes as $prefix) {
