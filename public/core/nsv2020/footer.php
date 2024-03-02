@@ -21,7 +21,7 @@
                   echo "<li><a href='$bezirk[website]'>".htmlentities($bezirk['name'], 0, 'UTF-8')."</a><li>";
                 }
               ?>
-              <li><a href="/bezirke/Websites.php">Vereine</a></li>
+              <li><a href="/vereine">Vereine</a></li>
             </ul>
           </div>
         <?php elseif (nsv2020_theme() == 'bezirk1'): ?>

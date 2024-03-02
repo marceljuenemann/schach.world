@@ -21,20 +21,15 @@
     <a href="{{district.website}}">{{district.website}}</a>
     
     <table class="table table-striped mt-4 mb-4" style="max-width: 600px">
-      <tr><th>Nr.</th><th>Verein</th><th>Links</th></tr>
+      <tr><th>Nr.</th><th>Verein</th><th class="d-none d-md-table-cell">Links</th></tr>
       {% for club in district.clubs %}
         <tr>
           <td>{{club.zps}}</td>
-          <td>{{club.name}}</td>
           <td>
-            {% if club.detailsUri|default(false) %}
-              <a href="{{club.detailsUri}}">Details</a> |
-            {% endif %}
-            <a href="{{club.dwzUri}}">DWZ</a>
-            {% if club.website|default(false) %}
-              | <a href="{{club.website}}">Website</a>
-            {% endif %}
+            <div>{{club.name}}</div>
+            <div class="d-md-none">{{_self.links(club)}}</div>
           </td>
+          <td class="d-none d-md-table-cell">{{_self.links(club)}}</td>
         </tr>
       {% endfor %}
     </table>
@@ -50,3 +45,13 @@
   </div>
 
 {% endblock %}
+
+{% macro links(club) %}
+  {% if club.detailsUri|default(false) %}
+    <a href="{{club.detailsUri}}">Details</a> |
+  {% endif %}
+  <a href="{{club.dwzUri}}">DWZ</a>
+  {% if club.website|default(false) %}
+    | <a href="{{club.website}}">Website</a>
+  {% endif %}
+{% endmacro %}
