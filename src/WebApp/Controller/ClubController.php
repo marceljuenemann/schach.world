@@ -14,6 +14,7 @@ use Symfony\Contracts\Cache\ItemInterface;
 
 #[Route('/vereine/', name: 'club_')]
 class ClubController extends AbstractController {
+  const CACHE_DIR = '/var/tmp';
   const CACHE_NAMESPACE = 'nsvclub';
   const CACHE_KEY = 'districts-schachin';
   const CACHE_EXPIRATION = 60 * 60 * 24;  // 1 day
@@ -21,10 +22,10 @@ class ClubController extends AbstractController {
   private CacheInterface $cache;
 
   function __construct(
-    private EntityManagerInterface $leagueEntityManager,
     private string $projectDir
   ) {
-    $this->cache = new FilesystemAdapter(self::CACHE_NAMESPACE);
+    // TODO: Extract into a Cache service.
+    $this->cache = new FilesystemAdapter(self::CACHE_NAMESPACE, 0, $this->projectDir . self::CACHE_DIR);
   }
 
   #[Route('', name: 'index')]
