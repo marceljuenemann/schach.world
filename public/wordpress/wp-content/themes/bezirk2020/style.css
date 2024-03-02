@@ -1,17 +1,16 @@
 /*
-Theme Name: Legacy Bezirk Theme
-Theme URI: http://nsv-online.de
-Author: Marcel Jünemann
+Theme Name: Bezirk Hannover Theme
+Theme URI: http://nsv-online.de/localhost
+Author: Marcel Juenemann
 Author URI: http://marcel.world
-Description: The new responsive design created in 2020.
+Description: Based on the NSV redesign from 2020.
 Version: 1.0
-Text Domain: nsv2020
+Text Domain: bezirk2020
+Template: nsv2020
 */
 
-/**** Widget Cusomization *****/
-
-#nsv-sidebar ul {
-  padding-inline-start: 20px;
+.wp-widget-group__inner-blocks > p:last-child {
+	margin-bottom: 0px;
 }
 
 /* == WordPress fixes == */
