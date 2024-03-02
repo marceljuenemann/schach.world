@@ -17,15 +17,18 @@ export interface District {
 export interface Club {
   zps: string
   name: string
-  website?: string
-  detailsUri?: string
+  website: string | null
+  instagramUri: string | null
+  detailsUri: string
   dwzUri: string
-  properties: {
-    coordinates: LatLngTuple
-    awards: number
+  venue: {
+    latitude: string
+    longitude: string
+  }
+  stats: {
     members: number
-    u25: number
-    female: number
+    members_u25: number
+    members_female: number
     avg_age: number
     avg_rating: number
   }
@@ -65,17 +68,19 @@ export class ClubsMap extends React.Component<{
   }
 
   private renderClub(club: Club, district: District, icon: Icon) {
+    const coordinates = [parseFloat(club.venue!.latitude), parseFloat(club.venue!.longitude)] as [number, number]
     return (
-      <Marker key={club.zps} position={club.properties.coordinates} icon={icon}>
+      <Marker key={club.zps} position={coordinates} icon={icon}>
         <Popup>
           <h6>{club.name}</h6>
           {club.website && <><a href={club.website}>{this.prettyWebsite(club.website)}</a><br /></>}
 
-          {club.detailsUri && <a href={club.detailsUri}>Details</a>}&nbsp;|&nbsp;
-          <a href={club.dwzUri}>DWZ-Liste</a> <br />
+          {club.instagramUri && <><a href={club.instagramUri}>Instagram</a>&nbsp;|&nbsp;</>}
+          <a href={club.detailsUri}>Details</a>&nbsp;|&nbsp;
+          <a href={club.dwzUri}>DWZ-Liste</a><br />
 
-          {club.properties.members} Mitglieder ({club.properties.u25} U25)<br />
-          ø-DWZ: {club.properties.avg_rating}&nbsp;&nbsp;ø-Alter: {club.properties.avg_age}<br />
+          {club.stats.members} Mitglieder ({club.stats.members_u25} U25)<br />
+          ø-DWZ: {club.stats.avg_rating}&nbsp;&nbsp;ø-Alter: {club.stats.avg_age}<br />
           <a href={district.website}>{district.name}</a>
         </Popup>
       </Marker>
