@@ -6,7 +6,8 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
 
 # Weiterleitungen
-RewriteRule ^bezirke/([A-Za-z]*)$ /bezirke/bezirk.php?kurzname=$1 [L]
+RewriteRule ^bezirke/Websites.php$ /vereine [R,L]
+RewriteRule ^bezirke/([A-Za-z]*)$ /vereine [R,L]
 RewriteRule ^core/apps/kontakt/?$ /kontakt/ [R,L]
 RewriteRule ^cutenews/data/upimages/(.*)$ downloads/cutenews/$1 [R,L]
 RewriteRule ^goto/(.*)$ /goto.php?goto=$1 [QSA,L]
@@ -29,7 +30,7 @@ RewriteRule ^verband/NSV.html /nsv/ [R,L]
 RewriteRule ^verband/Ordnungen.html /ordnungen/ [R,L]
 RewriteRule ^verband/Turniergericht.html /turniergericht/ [R,L]
 RewriteRule ^verband/Vorstand.html /vorstand/ [R,L]
-RewriteRule ^vereine/70([0-9]*)$ /bezirke/verein.php?zps=70$1 [L]
+RewriteRule ^vereine/70([0-9]*)$ /vereine [R,L]
 
 # WordPress
 # Bis auf existierende Dateien und Order wird alles von WP verarbeitet!
