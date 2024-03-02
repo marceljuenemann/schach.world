@@ -12,10 +12,11 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Cache\CacheInterface;
 use Symfony\Contracts\Cache\ItemInterface;
 
-const CACHE_EXPIRATION = 60 * 60 * 24;  // 1 day
-
 #[Route('/vereine/', name: 'club_')]
 class ClubController extends AbstractController {
+  const CACHE_NAMESPACE = 'nsvclub';
+  const CACHE_KEY = 'districts-schachin';
+  const CACHE_EXPIRATION = 60 * 60 * 24;  // 1 day
 
   private CacheInterface $cache;
 
@@ -23,7 +24,7 @@ class ClubController extends AbstractController {
     private EntityManagerInterface $leagueEntityManager,
     private string $projectDir
   ) {
-    $this->cache = new FilesystemAdapter('nsvclub');
+    $this->cache = new FilesystemAdapter(self::CACHE_NAMESPACE);
   }
 
   #[Route('', name: 'index')]
@@ -44,8 +45,8 @@ class ClubController extends AbstractController {
    * Cached version of fetchDistricts().
    */
   private function fetchDistrictsCached(): array {
-    return $this->cache->get('districts-schachin', function (ItemInterface $item): array {
-      $item->expiresAfter(CACHE_EXPIRATION);
+    return $this->cache->get(self::CACHE_KEY, function (ItemInterface $item): array {
+      $item->expiresAfter(self::CACHE_EXPIRATION);
       return $this->fetchDistricts();
     });
   }
