@@ -6,13 +6,10 @@
 
 {% block content %}
 
-  {# TODO: info on how to change data #}
-  {# TODO: check old pages for missing bits #}
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
-  {# TODO: min width #}
+
   <div
     data-nsv-component="ClubsMap"
     data-nsv-districts="{{ jsonData | escape('html_attr') }}"
@@ -42,5 +39,14 @@
       {% endfor %}
     </table>
   {% endfor %}
+
+  <p>
+    <strong>Hinweis:</strong> Die Daten werden einmal täglich von <a href="https://schach.in">schach.in</a> importiert.
+    Änderungen und Ergänzungen können nach Klick auf <i>Details</i> direkt auf der schach.in Seite vorgenommen werden.  
+  </p>
+
+  <div class="d-none d-lg-block text-end">
+    <a href="/vereine/api"><span class="badge bg-secondary">API</span></a>
+  </div>
 
 {% endblock %}

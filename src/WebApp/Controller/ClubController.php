@@ -37,8 +37,7 @@ class ClubController extends AbstractController {
 
   #[Route('api/', name: 'api')]
   public function clubs_api(): Response {
-    $data = $this->fetchDistricts();
-    return new ApiResponse($data);
+    return new ApiResponse($this->fetchDistrictsCached());
   }
 
   /**

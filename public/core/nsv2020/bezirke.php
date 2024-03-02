@@ -13,12 +13,12 @@ return [
   '703' => [
     'name' => 'Bezirk Südniedersachsen',
     'website' => 'https://schachbezirk3.de',
-    'markerColor' => 'yellow',
+    'markerColor' => 'orange',
   ],
   '704' => [
     'name' => 'Bezirk Lüneburg',
     'website' => 'http://schachbezirk4.de',
-    'markerColor' => 'gold',
+    'markerColor' => 'yellow',
   ],
   '705' => [
     'name' => 'Bezirk Oldenburg-Ostfriesland',
@@ -28,6 +28,6 @@ return [
   '706' => [
     'name' => 'Bezirk Osnabrück-Emsland',
     'website' => 'http://schachbezirk-osnabrueck-emsland.de',
-    'markerColor' => 'orange',
+    'markerColor' => 'gold',
   ],
 ];
