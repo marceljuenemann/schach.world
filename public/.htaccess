@@ -22,7 +22,7 @@ RewriteRule ^turniere/ems-vechta-cup-2017[AB] /turniere/ems-vechte-cup/2017/ [R,
 RewriteRule ^turniere/lem20([0-9]+) /turniere/lem/20$1/ [R,L]
 RewriteRule ^turniere/ljem2015 /turniere/ljem/2015/ [R,L]
 RewriteRule ^turniere/NSVOM2020 /nsvom2020 [R,L]
-RewriteRule ^turniere/([a-z-]+)-([0-9]+) /turniere/$1/$2/ [R,L]
+RewriteRule ^turniere/([a-z0-9-]+)-([0-9]+) /turniere/$1/$2/ [R,L]
 RewriteRule ^verband/Ehrengericht.html /ehrengericht/ [R,L]
 RewriteRule ^verband/Impressum.html /impressum/ [R,L]
 RewriteRule ^verband/Ligenuebersicht.php /alle-ligen/ [R,L]
