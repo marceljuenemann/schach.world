@@ -10,12 +10,14 @@
 
 require_once(ABSPATH . '../../vendor/autoload.php');
 
+// Check for redirects.
+require_once(dirname(__FILE__) . '/redirects.php' );
+
 // Forward to the Symfony based WebApp for specific route prefixes. 
 add_filter('template_include', function($template) {
   global $wp;
   $prefixes = [
-    'vereine/api',
-    'vereine/beta',
+    'vereine',
     '_error'
   ];
   foreach ($prefixes as $prefix) {
