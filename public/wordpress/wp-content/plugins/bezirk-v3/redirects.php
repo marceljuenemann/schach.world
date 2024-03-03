@@ -35,11 +35,13 @@ $fixed = array (
     "/u20-liga/" => "http://sjbh.de/u20/",
     "/u20-klasse/" => "http://sjbh.de/u20/",
 
-    "/impressum.php" => "/bezirk/impressum",
-    "/kontakt.php" => "/bezirk/impressum/#kontakt",
-    "/vorstand.php" => "/bezirk/vorstand",
-    "/bezirk/kontakt" => "/bezirk/impressum/#kontakt",
-    );
+    "/impressum.php" => "/impressum",
+    "/kontakt/" => "/vorstand",
+    "/kontakt.php" => "/vorstand",
+    "/vorstand.php" => "/vorstand",
+    "/bezirk/kontakt" => "/vorstand",
+);
+
 if ( isset ( $fixed [$request] ) ){
     header("Location: ".$fixed[$request]);
     exit;

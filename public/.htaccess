@@ -5,9 +5,6 @@ RewriteBase /
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
 
-# Bezirk Weiterleitungen
-RewriteRule ^kontakt/ /vorstand [R,L]
-
 # Weiterleitungen
 RewriteRule ^bezirke/Websites.php$ /vereine [R,L]
 RewriteRule ^bezirke/([A-Za-z]*)$ /vereine [R,L]
