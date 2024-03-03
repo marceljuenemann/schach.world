@@ -1,2 +1,0 @@
-#!/usr/bin/env sh
-php81 ./bin/console cache:clear
