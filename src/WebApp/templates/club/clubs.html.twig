@@ -12,13 +12,15 @@
 
   <div
     data-nsv-component="ClubsMap"
-    data-nsv-districts="{{ jsonData | escape('html_attr') }}"
+    data-nsv-data="{{ jsonData | escape('html_attr') }}"
     style="height: 450px"
     class="mb-4"></div>
 
   {% for district in districts %}
-    <h4>{{district.name}}</h4>
-    <a href="{{district.website}}">{{district.website}}</a>
+    {% if districts|length > 1 %}
+      <h4>{{district.name}}</h4>
+      <a href="{{district.website}}">{{district.website}}</a>
+    {% endif %}
     
     <table class="table table-striped mt-4 mb-4" style="max-width: 600px">
       <tr><th>Nr.</th><th>Verein</th><th class="d-none d-md-table-cell">Links</th></tr>

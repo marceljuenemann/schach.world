@@ -33,7 +33,12 @@ class ClubController extends AbstractController {
     $districts = $this->fetchDistrictsCached();
     return $this->render('club/clubs.html.twig', [
       'districts' => $districts,
-      'jsonData' => json_encode($districts)
+      'jsonData' => json_encode([
+        'districts' => $districts,
+        'lat' => (float) $_ENV['CLUBS_LAT'],
+        'lon' => (float) $_ENV['CLUBS_LON'],
+        'zoom' => (float) $_ENV['CLUBS_ZOOM']
+      ])
     ]);
   }
 
@@ -57,11 +62,18 @@ class ClubController extends AbstractController {
    */
   private function fetchDistricts(): array {
     $districts = require($this->projectDir . '/public/core/nsv2020/bezirke.php');
-    foreach ((new SchachInClient())->fetchZps('7') as $entity) {
+
+    // Populate clubs in districts.
+    foreach ((new SchachInClient())->fetchZps($_ENV['CLUBS_ZPS']) as $entity) {
       if (!$entity->isClub()) continue;
       $club = $entity->clubData();
       $districts[$club->districtZps]['clubs'][$club->zps] = $club;
     }
+
+    // Remove districts without clubs.
+    $districts = array_filter($districts, function($district) {
+      return isset($district['clubs']);
+    });
     return $districts;
   }
 }

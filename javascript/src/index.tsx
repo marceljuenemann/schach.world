@@ -28,7 +28,7 @@ function createComponent(elem: HTMLElement): ReactElement {
 
     // NSV WebApp
     case 'ClubsMap':
-      return <ClubsMap districts={JSON.parse(attr('districts')!)} />
+      return <ClubsMap data={JSON.parse(attr('data')!)} />
   }
   throw new Error('Invalid NSV component type');
 }
