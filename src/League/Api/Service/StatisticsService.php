@@ -8,11 +8,12 @@ use Nsv\League\Entity\Pairing;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity\Team;
 use Nsv\League\Api\Service\DivisionService;
+use Nsv\Util\HtmlCreation;
 
 class StatisticsService
 {
   public function __construct(
-    private ManagerRegistry $doctrine, private Encoding $encoding, private DivisionService $divisionService
+    private ManagerRegistry $doctrine, private Encoding $encoding, private DivisionService $divisionService, private HtmlCreation $htmlCreation
   )
   {
     $this->entityManager = $this->doctrine->getManager('league');
@@ -499,19 +500,7 @@ class StatisticsService
     return $active_players_with_games;
   }
 
-  /**
-   * Though we should not, we need to create links before sending the
-   * data to the template. To make it a little less ugly, use a method for that.
-   */
-  public function statistics_html_link($uri, $text) {
-    $link = '<a href="' . $uri . '">';
-    $link .= $text;
-    $link .= '</a>';
-
-    return $link;
-  }
-
-  /**
+ /**
    * Create the table array for DWZ statistics that
    * is sent to the template in the controller.
    */
@@ -703,6 +692,8 @@ class StatisticsService
     $lowest_game_score = count($first_player['games']);
     $top_scorers = [];
 
+
+
     foreach ($top_ten_scorers as $key => $player) {
       $first_name = $player['player']->firstName;
       $last_name = $player['player']->lastName;
@@ -769,10 +760,10 @@ class StatisticsService
 
       foreach ($top_scorers as $key => $scorer) {
         // We need the player with link and his team with link.
-        $player_linked = $this->statistics_html_link(
+        $player_linked = $this->htmlCreation->internalLink(
           $scorer['player']->uri(), $scorer['player']->firstName . ' ' . $scorer ['player']->lastName . ' '
         );
-        $team_linked = $this->statistics_html_link(
+        $team_linked = $this->htmlCreation->internalLink(
           $scorer['player']->team->uri(), '(' . $scorer['player']->team->name . ' ' . $scorer['player']->team->number . ')'
         );
         $player_linked_with_team = $player_linked . $team_linked;
@@ -794,10 +785,10 @@ class StatisticsService
 
       foreach ($top_scorers as $key => $scorer) {
         // We need the player with link and his team with link.
-        $player_linked = $this->statistics_html_link(
+        $player_linked = $this->htmlCreation->internalLink(
           $scorer['player']->uri(), $scorer['player']->firstName . ' ' . $scorer ['player']->lastName . ' '
         );
-        $team_linked = $this->statistics_html_link(
+        $team_linked = $this->htmlCreation->internalLink(
           $scorer['player']->team->uri(), '(' . $scorer['player']->team->name . ' ' . $scorer['player']->team->number . ')'
         );
         $player_linked_with_team = $player_linked . $team_linked;
