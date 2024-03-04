@@ -740,16 +740,6 @@ class StatisticsService
       ];
     }
 
-    // Collect the draw kings
-    $first_drawer = reset($top_ten_drawers);
-    $highest_draw_score = $first_drawer['draws'];
-    $draw_kings = [];
-
-    foreach ($top_ten_drawers as $drawer) {
-      if ($drawer['draws'] == $highest_draw_score) {
-        $draw_kings[] = $drawer;
-      }
-    }
 
     // Create the Topscorer text
     // If there are multiple Topscorers, they are all named
@@ -761,7 +751,7 @@ class StatisticsService
       foreach ($top_scorers as $key => $scorer) {
         // We need the player with link and his team with link.
         $player_linked = $this->htmlCreation->internalLink(
-          $scorer['player']->uri(), $scorer['player']->firstName . ' ' . $scorer ['player']->lastName . ' '
+          $scorer['player']->uri(), $scorer['player']->firstName . ' ' . $scorer['player']->lastName . ' '
         );
         $team_linked = $this->htmlCreation->internalLink(
           $scorer['player']->team->uri(), '(' . $scorer['player']->team->name . ' ' . $scorer['player']->team->number . ')'
@@ -796,8 +786,68 @@ class StatisticsService
         $top_text_2 .= $player_linked_with_team . '. ';
       }
     }
-    $topscorer_data['text'] = $top_text_1 . $top_text_2;
-    //Der Top-Scorer mit 6 Punkten aus 6 Partien ist Thomas Orlowski (SV Bückeburg). Der Remiskönig mit 3 Remis ist Walter Böer (SV Bückeburg).
+
+    // Collect the draw kings
+    $first_drawer = reset($top_ten_drawers);
+    $highest_draw_score = $first_drawer['draws'];
+    $draw_kings = [];
+
+    foreach ($top_ten_drawers as $drawer) {
+      if ($drawer['draws'] == $highest_draw_score) {
+        $draw_kings[] = $drawer;
+      }
+    }
+
+    // Create the draw kings text
+    // If there are multiple draw kings
+    if (count($draw_kings) > 1) {
+      $draw_text_1 = $this->encoding->utf8_decode('Die Remiskönige mit ' . $highest_draw_score . ' Remis sind: ');
+      $draw_text_2 = '';
+
+
+      foreach ($draw_kings as $key => $king) {
+        // We need the player with link and his team with link.
+        $player_linked = $this->htmlCreation->internalLink(
+          $king['player']->uri(), $king['player']->firstName . ' ' . $king['player']->lastName . ' '
+        );
+        $team_linked = $this->htmlCreation->internalLink(
+          $king['player']->team->uri(), '(' . $king['player']->team->name . ' ' . $king['player']->team->number . ')'
+        );
+        $player_linked_with_team = $player_linked . $team_linked;
+
+
+        if ($key < count($draw_kings) - 2) {
+          $draw_text_2 .= $player_linked_with_team . ', ';
+        }
+        if ($key == count($draw_kings) - 2) {
+          $draw_text_2 .= $player_linked_with_team . ' und ';
+        } if ($key == count($draw_kings) - 1) {
+          $draw_text_2 .= $player_linked_with_team . '. ';
+        }
+      }
+    } else {
+      // If there is only one draw king
+      $draw_text_1 = $this->encoding->utf8_decode('Der Remiskönig mit ' . $highest_draw_score  . ' Remis ist ');
+      $draw_text_2 = '';
+
+      foreach ($draw_kings as $key => $king) {
+        // We need the player with link and his team with link.
+        $player_linked = $this->htmlCreation->internalLink(
+          $king['player']->uri(), $king['player']->firstName . ' ' . $king['player']->lastName . ' '
+        );
+        $team_linked = $this->htmlCreation->internalLink(
+          $king['player']->team->uri(), '(' . $king['player']->team->name . ' ' . $king['player']->team->number . ')'
+        );
+        $player_linked_with_team = $player_linked . $team_linked;
+
+        $draw_text_2 .= $player_linked_with_team . '. ';
+      }
+    }
+
+    $topscorer_text = $top_text_1 . $top_text_2;
+    $topscorer_text .= '<br>' . $draw_text_1 . $draw_text_2;
+
+    $topscorer_data['text'] = $topscorer_text;
 
 
     $topscorer_data['table'] = $topscorer_table;
