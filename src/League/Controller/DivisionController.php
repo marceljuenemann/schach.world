@@ -79,7 +79,9 @@ class DivisionController extends AbstractLeagueController
 
     $team_game_score_table = $team_game_score_data['table'];
 
-    $statistics_text = $dwz_text . '<br>' . $topscorer_text;
+    $team_game_score_text = $team_game_score_data['text'];
+
+    $statistics_text = $dwz_text . '<br>' . $topscorer_text . '<br>' . $team_game_score_text;
 
     return $this->renderWithLegacySystem('division/statistics.html.twig',
       [

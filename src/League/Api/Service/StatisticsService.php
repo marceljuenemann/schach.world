@@ -625,7 +625,7 @@ class StatisticsService
       'age' => round($average_sums['age'] / $team_count),
     ];
 
-    $dwz_text = $this->encoding->utf8_decode("Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine DWZ von " . $average_values['dwz_active'] . " und ist " . $average_values['age'] . " Jahre alt.");
+    $dwz_text = $this->encoding->utf8_decode("Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine <strong>DWZ von " . $average_values['dwz_active'] . "</strong> und ist <strong>" . $average_values['age'] . "</strong> Jahre alt.");
 
     // Add an extra row to the table with the average values for all teams.
     $dwz_table['body'][] = [
@@ -1042,7 +1042,7 @@ class StatisticsService
     // Create the team game score text.
     $forfeit_percentage = 100 * ($sum_forfeit_losses / $sum_game_count);
 
-    $score_text = sprintf("%d Spiele wurden kampflos verloren gegeben, das sind %d%%. Von den %d wirklich gespielten Partien sind %d%% Remis ausgegangen. Die Weißspieler haben einen Score von %d%%, der Score von Schwarz ist %d%%.",
+    $score_text = sprintf("%d Spiele wurden kampflos verloren gegeben, das sind <strong>%d%%</strong>. Von den %d wirklich gespielten Partien sind <strong>%d%%</strong> Remis ausgegangen. Die Weißspieler haben einen Score von <strong>%d%%</strong>, der Score von Schwarz ist <strong>%d%%</strong>.",
       $sum_forfeit_losses, $forfeit_percentage, $sum_game_count_played, round($average_draws), round($average_white_score), round($average_black_score));
 
     $team_game_score_text = $this->encoding->utf8_decode($score_text);
