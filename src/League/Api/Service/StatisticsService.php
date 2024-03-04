@@ -708,7 +708,7 @@ class StatisticsService
       $last_name = $player['player']->lastName;
       $player_uri = $player['player']->uri();
       $dwz = $player['player']->dwz ?? '';
-      $team = $player['player']->team->name;
+      $team = $player['player']->team->name . ' ' . $player['player']->team->number;
       $team_uri = $player['player']->team->uri();
       $board = $player['player']->number ?? '';
       $games_count = count($player['games']);
