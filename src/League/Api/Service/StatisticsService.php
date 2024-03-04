@@ -976,6 +976,10 @@ class StatisticsService
 
     }
 
+    //The total sum of games must be halved, since always two players
+    // of different teams are playing in one game.
+    $sum_game_count = $sum_game_count / 2;
+
 
     // Calculate the average values
     $team_count = count($active_teams_with_parings);
@@ -995,6 +999,7 @@ class StatisticsService
       [
         'text' => $sum_game_count,
         'class' => 'game-all-count border-left-bold format-bold',
+        'title' => $this->encoding->utf8_decode('All games including forfeits. The sum is only half of the above, since always two players of different teams play one game.'),
       ],
       [
         'text' => $sum_forfeit_wins,
