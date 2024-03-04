@@ -75,7 +75,9 @@ class DivisionController extends AbstractLeagueController
 
     $topscorer_text = $topscorer_data['text'];
 
-    $team_game_score_table = $service->create_team_game_score_table($this->division);
+    $team_game_score_data = $service->create_team_game_score_table($this->division);
+
+    $team_game_score_table = $team_game_score_data['table'];
 
     $statistics_text = $dwz_text . '<br>' . $topscorer_text;
 

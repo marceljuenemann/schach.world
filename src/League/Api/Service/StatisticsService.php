@@ -916,6 +916,7 @@ class StatisticsService
 
     // Set initial values for the last table row that displays the average scores
     $sum_game_count = 0;
+    $sum_game_count_played = 0;
     $sum_forfeit_wins = 0;
     $sum_forfeit_losses = 0;
     $sum_wins = 0;
@@ -966,6 +967,7 @@ class StatisticsService
       ];
 
       $sum_game_count += $team['game_count'];
+      $sum_game_count_played += $team['game_count_played'];
       $sum_forfeit_wins += $team['forfeit_wins'];
       $sum_forfeit_losses += $team['forfeit_losses'];
       $sum_wins += $team['wins'];
@@ -978,7 +980,11 @@ class StatisticsService
 
     //The total sum of games must be halved, since always two players
     // of different teams are playing in one game.
+    // Sum with forfeits
     $sum_game_count = $sum_game_count / 2;
+
+    // Sum of actually played games
+    $sum_game_count_played = $sum_game_count_played / 2;
 
 
     // Calculate the average values
@@ -1031,7 +1037,20 @@ class StatisticsService
       ],
     ];
 
-    return $team_game_score_table;
+
+
+    // Create the team game score text.
+    $forfeit_percentage = 100 * ($sum_forfeit_losses / $sum_game_count);
+
+    $score_text = sprintf("%d Spiele wurden kampflos verloren gegeben, das sind %d%%. Von den %d wirklich gespielten Partien sind %d%% Remis ausgegangen. Die Weißspieler haben einen Score von %d%%, der Score von Schwarz ist %d%%.",
+      $sum_forfeit_losses, $forfeit_percentage, $sum_game_count_played, round($average_draws), round($average_white_score), round($average_black_score));
+
+    $team_game_score_text = $this->encoding->utf8_decode($score_text);
+
+
+    $team_game_score_data['table'] = $team_game_score_table;
+    $team_game_score_data['text'] = $team_game_score_text;
+    return $team_game_score_data;
 
   }
 
