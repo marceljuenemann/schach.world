@@ -17,6 +17,7 @@ add_filter('template_include', function($template) {
     'v3',
     'ligen',
     'termine',
+    'vereine',
     '_error'
   ];
   foreach ($prefixes as $prefix) {
