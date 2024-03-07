@@ -358,7 +358,7 @@ class StatisticsService
 
 
     foreach ($active_teams_with_parings as $team_id => $team) {
-      $teams_game_scores[$team_id]['name'] = $team['team']->name . ' ' . $team['team']->number;
+      $teams_game_scores[$team_id]['name'] = $team['team']->nameWithNumber();
       $teams_game_scores[$team_id]['uri'] = $team['team']->uri();
       $teams_game_scores[$team_id]['game_count'] = (int)0;
       $teams_game_scores[$team_id]['game_count_played'] = (int)0;
@@ -558,7 +558,7 @@ class StatisticsService
 
     // Create the table body
     foreach ($dwz_calculation as $key => $team) {
-      $team_name = $team['team']->name  . ' ' . $team['team']->number;
+      $team_name = $team['team']->nameWithNumber();
       $team_uri = $team['team']->uri();
       $dwz_active = $team['active_dwz_average'];
       $dwz_top = $team['top_x_dwz_average'];
@@ -695,8 +695,7 @@ class StatisticsService
 
 
     foreach ($top_ten_scorers as $key => $player) {
-      $first_name = $player['player']->firstName;
-      $last_name = $player['player']->lastName;
+      $player_name = $player['player']->name();
       $player_uri = $player['player']->uri();
       $dwz = $player['player']->dwz ?? '';
       $team = $player['player']->team->name . ' ' . $player['player']->team->number;
@@ -712,7 +711,7 @@ class StatisticsService
 
       $topscorer_table['body'][] = [
         [
-          'text' => $first_name . ' ' . $last_name,
+          'text' => $player_name,
           'link' => $player_uri,
           'class' => 'name'
         ],
