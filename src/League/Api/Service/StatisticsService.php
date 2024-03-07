@@ -684,7 +684,7 @@ class StatisticsService
       ['text' => 'Partien', 'class' => 'games'],
       ['text' => 'Punkte', 'class' => 'points']
     ];
-
+ 
     // find the topscorer(s) and the draw king(s)
     $first_player = reset($top_ten_scorers);
     $highest_points_score = $first_player['points'];
@@ -751,10 +751,10 @@ class StatisticsService
       foreach ($top_scorers as $key => $scorer) {
         // We need the player with link and his team with link.
         $player_linked = $this->htmlCreation->internalLink(
-          $scorer['player']->uri(), $scorer['player']->firstName . ' ' . $scorer['player']->lastName . ' '
+          $scorer['player']->uri(), $scorer['player']->name() . ' '
         );
         $team_linked = $this->htmlCreation->internalLink(
-          $scorer['player']->team->uri(), '(' . $scorer['player']->team->name . ' ' . $scorer['player']->team->number . ')'
+          $scorer['player']->team->uri(), '(' . $scorer['player']->team->nameWithNumber() . ')'
         );
         $player_linked_with_team = $player_linked . $team_linked;
 
@@ -776,10 +776,10 @@ class StatisticsService
       foreach ($top_scorers as $key => $scorer) {
         // We need the player with link and his team with link.
         $player_linked = $this->htmlCreation->internalLink(
-          $scorer['player']->uri(), $scorer['player']->firstName . ' ' . $scorer ['player']->lastName . ' '
+          $scorer['player']->uri(), $scorer['player']->name() . ' '
         );
         $team_linked = $this->htmlCreation->internalLink(
-          $scorer['player']->team->uri(), '(' . $scorer['player']->team->name . ' ' . $scorer['player']->team->number . ')'
+          $scorer['player']->team->uri(), '(' . $scorer['player']->team->nameWithNumber() . ')'
         );
         $player_linked_with_team = $player_linked . $team_linked;
 
@@ -808,10 +808,10 @@ class StatisticsService
       foreach ($draw_kings as $key => $king) {
         // We need the player with link and his team with link.
         $player_linked = $this->htmlCreation->internalLink(
-          $king['player']->uri(), $king['player']->firstName . ' ' . $king['player']->lastName . ' '
+          $king['player']->uri(), $king['player']->name() . ' '
         );
         $team_linked = $this->htmlCreation->internalLink(
-          $king['player']->team->uri(), '(' . $king['player']->team->name . ' ' . $king['player']->team->number . ')'
+          $king['player']->team->uri(), '(' . $king['player']->team->nameWithNumber() . ')'
         );
         $player_linked_with_team = $player_linked . $team_linked;
 
@@ -833,10 +833,10 @@ class StatisticsService
       foreach ($draw_kings as $key => $king) {
         // We need the player with link and his team with link.
         $player_linked = $this->htmlCreation->internalLink(
-          $king['player']->uri(), $king['player']->firstName . ' ' . $king['player']->lastName . ' '
+          $king['player']->uri(), $king['player']->name() . ' '
         );
         $team_linked = $this->htmlCreation->internalLink(
-          $king['player']->team->uri(), '(' . $king['player']->team->name . ' ' . $king['player']->team->number . ')'
+          $king['player']->team->uri(), '(' . $king['player']->team->nameWithNumber() . ')'
         );
         $player_linked_with_team = $player_linked . $team_linked;
 
