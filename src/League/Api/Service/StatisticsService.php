@@ -625,7 +625,10 @@ class StatisticsService
       'age' => round($average_sums['age'] / $team_count),
     ];
 
-    $dwz_text = $this->encoding->utf8_decode("Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine <strong>DWZ von " . $average_values['dwz_active'] . "</strong> und ist <strong>" . $average_values['age'] . "</strong> Jahre alt.");
+    $dwz_text_values = [
+      'dwz_active_average' => $average_values['dwz_active'],
+      'age_average' => $average_values['age'],
+    ];
 
     // Add an extra row to the table with the average values for all teams.
     $dwz_table['body'][] = [
@@ -652,7 +655,7 @@ class StatisticsService
     ];
 
     $dwz_data['table'] = $dwz_table;
-    $dwz_data['text'] = $dwz_text;
+    $dwz_data['text_values'] = $dwz_text_values;
 
     return $dwz_data;
 
@@ -786,6 +789,14 @@ class StatisticsService
       }
     }
 
+    $text_top_scorers = [];
+    foreach ($top_scorers as $key => $scorer) {
+      $text_top_scorers[$key]['player_name'] = $scorer['player']->name();
+      $text_top_scorers[$key]['player_uri'] = $scorer['player']->uri();
+      $text_top_scorers[$key]['team_name'] = $scorer['player']->team->nameWithNumber();
+      $text_top_scorers[$key]['team_uri'] = $scorer['player']->team->uri();
+    }
+
     // Collect the draw kings
     $first_drawer = reset($top_ten_drawers);
     $highest_draw_score = $first_drawer['draws'];
@@ -847,6 +858,8 @@ class StatisticsService
     $topscorer_text .= '<br>' . $draw_text_1 . $draw_text_2;
 
     $topscorer_data['text'] = $topscorer_text;
+
+    $topscorer_data['text_values']['text_top_scorers'] = $text_top_scorers;
 
 
     $topscorer_data['table'] = $topscorer_table;
@@ -1044,11 +1057,18 @@ class StatisticsService
     $score_text = sprintf("%d Spiele wurden kampflos verloren gegeben, das sind <strong>%d%%</strong>. Von den %d wirklich gespielten Partien sind <strong>%d%%</strong> Remis ausgegangen. Die Weißspieler haben einen Score von <strong>%d%%</strong>, der Score von Schwarz ist <strong>%d%%</strong>.",
       $sum_forfeit_losses, $forfeit_percentage, $sum_game_count_played, round($average_draws), round($average_white_score), round($average_black_score));
 
-    $team_game_score_text = $this->encoding->utf8_decode($score_text);
+    $team_game_score_values = [
+      'sum_forfeit_losses' => $sum_forfeit_losses,
+      'forfeit_percentage' => round($forfeit_percentage),
+      'sum_game_count_played' => $sum_game_count_played,
+      'average_draws' => round($average_draws),
+      'average_white_score' => round($average_white_score),
+      'average_black_score' => round($average_black_score),
+    ];
 
 
     $team_game_score_data['table'] = $team_game_score_table;
-    $team_game_score_data['text'] = $team_game_score_text;
+    $team_game_score_data['text_values'] = $team_game_score_values;
     return $team_game_score_data;
 
   }
