@@ -11,9 +11,7 @@
 {% endmacro %}
 
 {# A modular version of simple link. Can pass in any value as link and text #}
-{% macro modular_link(uri, text) %}
-  <a href="{{uri}}">{{text|e}}</a>
-{% endmacro %}
+{% macro modular_link(uri, text) %}<a href="{{uri}}">{{text|e}}</a>{% endmacro %}
 
 {# An icon using dashicons, the icon set shipped with WordPress. #}
 {% macro icon(id) %}
