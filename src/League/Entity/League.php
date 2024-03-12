@@ -130,16 +130,14 @@ class League
   #[ORM\OrderBy(["division" => "DESC"])]
   private $dates;
 
-  public function uri()
-  {
+  public function uri() {
     return "/ligen/{$this->path}/";
   }
 
   /**
    * @throws NotFoundHttpException
    */
-  public function divisionByPath(string $path)
-  {
+  public function divisionByPath(string $path) {
     foreach ($this->divisions as $division) {
       if ($path === $division->path()) {
         return $division;
@@ -151,8 +149,7 @@ class League
   /**
    * @throws NotFoundHttpException
    */
-  public function divisionById(int $id): Division
-  {
+  public function divisionById(int $id): Division {
     foreach ($this->divisions as $division) {
       if ($id === $division->id) {
         return $division;
@@ -164,8 +161,7 @@ class League
   /**
    * @throws NotFoundHttpException
    */
-  public function teamById($id): Team
-  {
+  public function teamById($id): Team {
     // We always fetch all teams anyways, so this is the most efficient way.
     foreach ($this->teams as $team) {
       if ($team->id === $id) {
@@ -175,18 +171,15 @@ class League
     throw new NotFoundHttpException('Team not found');
   }
 
-  public function __call($property, $args)
-  {
+  public function __call($property, $args) {
     return $this->$property;
   }
 
-  public function __get($property)
-  {
+  public function __get($property) {
     return $this->$property;
   }
 
-  public function __set($property, $value)
-  {
+  public function __set($property, $value) {
     $this->$property = $value;
   }
 }

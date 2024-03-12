@@ -80,28 +80,23 @@ class Pairing
   #[ORM\OrderBy(["board" => "ASC"])]
   private $games;
 
-  public function wasMoved(): bool
-  {
+  public function wasMoved(): bool {
     return (bool)$this->customDate;
   }
 
-  public function moveDate(): string|null
-  {
+  public function moveDate(): string|null {
     return $this->wasMoved() && $this->customDate != self::UNKNOWN_DATE ? $this->customDate : null;
   }
 
-  public function __call($property, $args)
-  {
+  public function __call($property, $args) {
     return $this->$property;
   }
 
-  public function __get($property)
-  {
+  public function __get($property) {
     return $this->$property;
   }
 
-  public function __set($property, $value)
-  {
+  public function __set($property, $value) {
     $this->$property = $value;
   }
 }

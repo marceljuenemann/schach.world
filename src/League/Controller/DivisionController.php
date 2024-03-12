@@ -71,8 +71,6 @@ class DivisionController extends AbstractLeagueController
 
     $topscorer_table = $topscorer_data['table'];
 
-    $topscorer_text = $topscorer_data['text'];
-
     $team_game_score_data = $service->create_team_game_score_table($this->division);
 
     $team_game_score_table = $team_game_score_data['table'];
@@ -80,12 +78,9 @@ class DivisionController extends AbstractLeagueController
     $intro_text_values = array_merge($dwz_data['text_values'], $topscorer_data['text_values'], $team_game_score_data['text_values']);
 
 
-    $statistics_text = $topscorer_text;
-
     return $this->renderWithLegacySystem('division/statistics.html.twig',
       [
         'division_name' => $division_name,
-        'statistics_text' => $statistics_text,
         'intro_text_values' => $intro_text_values,
         'dwz_table' => $dwz_table,
         'topscorer_table' => $topscorer_table,

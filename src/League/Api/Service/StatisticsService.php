@@ -14,8 +14,7 @@ class StatisticsService
 {
   public function __construct(
     private ManagerRegistry $doctrine, private Encoding $encoding, private DivisionService $divisionService, private HtmlCreation $htmlCreation
-  )
-  {
+  ) {
     $this->entityManager = $this->doctrine->getManager('league');
   }
 
@@ -23,8 +22,7 @@ class StatisticsService
    * Return all games that have been played in a divison during
    * the season.
    */
-  public function all_games_division($division)
-  {
+  public function all_games_division($division) {
 
     $pairing_repository = $this->doctrine->getRepository(Pairing::class);
     $data = $pairing_repository->findAllGamesDivision($division);
@@ -44,8 +42,7 @@ class StatisticsService
     return $all_games;
   }
 
-  public function active_players_division($all_games)
-  {
+  public function active_players_division($all_games) {
     $active_players = [];
     $active_players_ids = [];
     foreach ($all_games as $key => $game) {
@@ -83,8 +80,7 @@ class StatisticsService
    * Get all teams active in the division and add
    * active players and all players (including passive ones) as separate arrays.
    */
-  public function active_teams_with_players($active_players)
-  {
+  public function active_teams_with_players($active_players) {
     $team_repository = $this->doctrine->getRepository(Team::class);
     $active_teams_with_players = [];
     // Collect all active teams and add active players to them
@@ -128,8 +124,7 @@ class StatisticsService
    * Return all active players with their played games as a subarray
    * for each player.
    */
-  public function active_players_with_games($active_players, $all_games)
-  {
+  public function active_players_with_games($active_players, $all_games) {
     foreach ($active_players as $key => &$player) {
       $player_games_ids = [];
       if (!isset($player['games'])) {
@@ -176,8 +171,7 @@ class StatisticsService
   /**
    * Calculate the DWZ averages for the table
    */
-  public function teams_dwz_calculation($active_teams_with_players)
-  {
+  public function teams_dwz_calculation($active_teams_with_players) {
     $active_teams_with_dwz = $active_teams_with_players;
     $dwz_data = [];
 
@@ -319,8 +313,7 @@ class StatisticsService
   /**
    * Get the active teams and collect the pairings with each team.
    */
-  public function active_teams_with_parings($division)
-  {
+  public function active_teams_with_parings($division) {
     $all_games = $this->all_games_division($division);
     $teams_with_pairings = [];
     $active_teams_ids = [];
@@ -352,8 +345,7 @@ class StatisticsService
   /**
    * Calculate the data for the team game score "Spiel-Statistik"
    */
-  public function team_game_score_data($active_teams_with_parings)
-  {
+  public function team_game_score_data($active_teams_with_parings) {
     $teams_game_scores = [];
 
 
@@ -481,8 +473,7 @@ class StatisticsService
    * Sort the players by points first and by played games after that.
    * Who has played less games will be sorted further up.
    */
-  public function players_sorted_by_points_and_games($active_players_with_games)
-  {
+  public function players_sorted_by_points_and_games($active_players_with_games) {
     uasort($active_players_with_games, function ($a, $b) {
       return [$b['points'], count($a['games'])] <=> [$a['points'], count($b['games'])];
     });
@@ -492,20 +483,18 @@ class StatisticsService
   /**
    * Sort the players by draws
    */
-  public function players_sorted_by_draws($active_players_with_games)
-  {
+  public function players_sorted_by_draws($active_players_with_games) {
     uasort($active_players_with_games, function ($a, $b) {
       return [$b['draws']] <=> [$a['draws']];
     });
     return $active_players_with_games;
   }
 
- /**
+  /**
    * Create the table array for DWZ statistics that
    * is sent to the template in the controller.
    */
-  public function create_dwz_statistics_table($division)
-  {
+  public function create_dwz_statistics_table($division) {
     $all_games = $this->all_games_division($division);
     $active_players = $this->active_players_division($all_games);
     $active_players_with_games = $this->active_teams_with_players($active_players);
@@ -665,8 +654,7 @@ class StatisticsService
    * Create the table array for topscorers that
    * is sent to the template in the controller.
    */
-  public function create_topscorer_table($division)
-  {
+  public function create_topscorer_table($division) {
     $all_games = $this->all_games_division($division);
     $active_players = $this->active_players_division($all_games);
     $active_players_with_games = $this->active_players_with_games($active_players, $all_games);
@@ -687,14 +675,13 @@ class StatisticsService
       ['text' => 'Partien', 'class' => 'games'],
       ['text' => 'Punkte', 'class' => 'points']
     ];
- 
+
     // find the topscorer(s) and the draw king(s)
     $first_player = reset($top_ten_scorers);
     $highest_points_score = $first_player['points'];
     // The lowest game score of the players with the most points
     $lowest_game_score = count($first_player['games']);
     $top_scorers = [];
-
 
 
     foreach ($top_ten_scorers as $key => $player) {
@@ -761,60 +748,19 @@ class StatisticsService
         $draw_kings[] = $drawer;
       }
     }
-
-    // Create the draw kings text
-    // If there are multiple draw kings
-    if (count($draw_kings) > 1) {
-      $draw_text_1 = $this->encoding->utf8_decode('Die Remiskönige mit ' . $highest_draw_score . ' Remis sind: ');
-      $draw_text_2 = '';
-
-
-      foreach ($draw_kings as $key => $king) {
-        // We need the player with link and his team with link.
-        $player_linked = $this->htmlCreation->internalLink(
-          $king['player']->uri(), $king['player']->name() . ' '
-        );
-        $team_linked = $this->htmlCreation->internalLink(
-          $king['player']->team->uri(), '(' . $king['player']->team->nameWithNumber() . ')'
-        );
-        $player_linked_with_team = $player_linked . $team_linked;
-
-
-        if ($key < count($draw_kings) - 2) {
-          $draw_text_2 .= $player_linked_with_team . ', ';
-        }
-        if ($key == count($draw_kings) - 2) {
-          $draw_text_2 .= $player_linked_with_team . ' und ';
-        } if ($key == count($draw_kings) - 1) {
-          $draw_text_2 .= $player_linked_with_team . '. ';
-        }
-      }
-    } else {
-      // If there is only one draw king
-      $draw_text_1 = $this->encoding->utf8_decode('Der Remiskönig mit ' . $highest_draw_score  . ' Remis ist ');
-      $draw_text_2 = '';
-
-      foreach ($draw_kings as $key => $king) {
-        // We need the player with link and his team with link.
-        $player_linked = $this->htmlCreation->internalLink(
-          $king['player']->uri(), $king['player']->name() . ' '
-        );
-        $team_linked = $this->htmlCreation->internalLink(
-          $king['player']->team->uri(), '(' . $king['player']->team->nameWithNumber() . ')'
-        );
-        $player_linked_with_team = $player_linked . $team_linked;
-
-        $draw_text_2 .= $player_linked_with_team . '. ';
-      }
+    $text_draw_kings = [];
+    foreach ($draw_kings as $key => $drawer) {
+      $text_draw_kings[$key]['player_name'] = $drawer['player']->name();
+      $text_draw_kings[$key]['player_uri'] = $drawer['player']->uri();
+      $text_draw_kings[$key]['team_name'] = $drawer['player']->team->nameWithNumber();
+      $text_draw_kings[$key]['team_uri'] = $drawer['player']->team->uri();
     }
 
-    $topscorer_text .= '<br>' . $draw_text_1 . $draw_text_2;
-
-    $topscorer_data['text'] = $topscorer_text;
-
     $topscorer_data['text_values']['text_top_scorers'] = $text_top_scorers;
+    $topscorer_data['text_values']['text_draw_kings'] = $text_draw_kings;
     $topscorer_data['text_values']['highest_point_score'] = $highest_points_score;
     $topscorer_data['text_values']['lowest_game_score'] = $lowest_game_score;
+    $topscorer_data['text_values']['highest_draw_score'] = $highest_draw_score;
 
 
     $topscorer_data['table'] = $topscorer_table;
@@ -827,8 +773,7 @@ class StatisticsService
    * is sent to the template in the controller.
    */
   public
-  function create_team_game_score_table($division)
-  {
+  function create_team_game_score_table($division) {
     $active_teams_with_parings = $this->active_teams_with_parings($division);
     $team_game_score_data = $this->team_game_score_data($active_teams_with_parings);
 
@@ -1005,12 +950,8 @@ class StatisticsService
     ];
 
 
-
     // Create the team game score text.
     $forfeit_percentage = 100 * ($sum_forfeit_losses / $sum_game_count);
-
-    $score_text = sprintf("%d Spiele wurden kampflos verloren gegeben, das sind <strong>%d%%</strong>. Von den %d wirklich gespielten Partien sind <strong>%d%%</strong> Remis ausgegangen. Die Weißspieler haben einen Score von <strong>%d%%</strong>, der Score von Schwarz ist <strong>%d%%</strong>.",
-      $sum_forfeit_losses, $forfeit_percentage, $sum_game_count_played, round($average_draws), round($average_white_score), round($average_black_score));
 
     $team_game_score_values = [
       'sum_forfeit_losses' => $sum_forfeit_losses,
