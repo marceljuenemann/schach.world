@@ -3,30 +3,30 @@ Nsv\League\Api\Model\MatchDay Object
     [round] => 2
     [date] => 2024-02-02
     [uri] => /ligen/test/test-division/2/
-    [uriPdf] => /ligen/test/?staffel=9&r=2&ausgabe=pdf
+    [uriPdf] => /ligen/test/?staffel=1&r=2&ausgabe=pdf
     [uriApi] => /ligen/test/api/divisions/test-division/rounds/2/
     [pairings] => Array
         (
             [0] => Nsv\League\Api\Model\Pairing Object
                 (
-                    [id] => 51
+                    [id] => 3
                     [round] => 2
                     [team1] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 18
+                            [id] => 2
                             [name] => Team 2
                             [zps] => 
-                            [uri] => /ligen/test/m/18/
-                            [apiUri] => /ligen/test/api/teams/18/
+                            [uri] => /ligen/test/m/2/
+                            [apiUri] => /ligen/test/api/teams/2/
                         )
 
                     [team2] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 17
+                            [id] => 1
                             [name] => Team
                             [zps] => 
-                            [uri] => /ligen/test/m/17/
-                            [apiUri] => /ligen/test/api/teams/17/
+                            [uri] => /ligen/test/m/1/
+                            [apiUri] => /ligen/test/api/teams/1/
                         )
 
                     [host] => 
@@ -43,7 +43,7 @@ Nsv\League\Api\Model\MatchDay Object
                                     [board] => 1
                                     [player1] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 26
+                                            [id] => 2
                                             [name] => Salzmann, Jan
                                             [lastName] => Salzmann
                                             [firstName] => Jan
@@ -55,13 +55,13 @@ Nsv\League\Api\Model\MatchDay Object
                                             [gender] => m
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/26/
+                                            [uri] => /ligen/test/s/2/
                                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                                         )
 
                                     [player2] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 25
+                                            [id] => 1
                                             [name] => GM Dr. Jünemann, Marcel
                                             [lastName] => Jünemann
                                             [firstName] => Marcel
@@ -73,7 +73,7 @@ Nsv\League\Api\Model\MatchDay Object
                                             [gender] => w
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/25/
+                                            [uri] => /ligen/test/s/1/
                                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                                         )
 
@@ -86,7 +86,7 @@ Nsv\League\Api\Model\MatchDay Object
                                     [board] => 2
                                     [player1] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 26
+                                            [id] => 2
                                             [name] => Salzmann, Jan
                                             [lastName] => Salzmann
                                             [firstName] => Jan
@@ -98,13 +98,13 @@ Nsv\League\Api\Model\MatchDay Object
                                             [gender] => m
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/26/
+                                            [uri] => /ligen/test/s/2/
                                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                                         )
 
                                     [player2] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 25
+                                            [id] => 1
                                             [name] => GM Dr. Jünemann, Marcel
                                             [lastName] => Jünemann
                                             [firstName] => Marcel
@@ -116,7 +116,7 @@ Nsv\League\Api\Model\MatchDay Object
                                             [gender] => w
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/25/
+                                            [uri] => /ligen/test/s/1/
                                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                                         )
 
@@ -129,7 +129,7 @@ Nsv\League\Api\Model\MatchDay Object
                                     [board] => 3
                                     [player1] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 26
+                                            [id] => 2
                                             [name] => Salzmann, Jan
                                             [lastName] => Salzmann
                                             [firstName] => Jan
@@ -141,13 +141,13 @@ Nsv\League\Api\Model\MatchDay Object
                                             [gender] => m
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/26/
+                                            [uri] => /ligen/test/s/2/
                                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                                         )
 
                                     [player2] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 25
+                                            [id] => 1
                                             [name] => GM Dr. Jünemann, Marcel
                                             [lastName] => Jünemann
                                             [firstName] => Marcel
@@ -159,7 +159,7 @@ Nsv\League\Api\Model\MatchDay Object
                                             [gender] => w
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/25/
+                                            [uri] => /ligen/test/s/1/
                                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
                                         )
 
@@ -172,7 +172,7 @@ Nsv\League\Api\Model\MatchDay Object
                                     [board] => 4
                                     [player1] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 26
+                                            [id] => 2
                                             [name] => Salzmann, Jan
                                             [lastName] => Salzmann
                                             [firstName] => Jan
@@ -184,7 +184,7 @@ Nsv\League\Api\Model\MatchDay Object
                                             [gender] => m
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/26/
+                                            [uri] => /ligen/test/s/2/
                                             [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
                                         )
 
@@ -206,11 +206,11 @@ Nsv\League\Api\Model\MatchDay Object
 
     [lateRegisteredPlayers] => Array
         (
-            [17] => Array
+            [1] => Array
                 (
                     [0] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 27
+                            [id] => 3
                             [name] => Spiellos, Max
                             [lastName] => Spiellos
                             [firstName] => Max
@@ -222,7 +222,7 @@ Nsv\League\Api\Model\MatchDay Object
                             [gender] => 
                             [isGuest] => 
                             [lateRegistrationRound] => 3
-                            [uri] => /ligen/test/s/27/
+                            [uri] => /ligen/test/s/3/
                             [dsbUri] => 
                         )
 
@@ -237,7 +237,7 @@ Nsv\League\Api\Model\MatchDay Object
                     [round] => 2
                     [date] => 2024-02-02
                     [uri] => /ligen/test/test-division/2/
-                    [uriPdf] => /ligen/test/?staffel=9&r=2&ausgabe=pdf
+                    [uriPdf] => /ligen/test/?staffel=1&r=2&ausgabe=pdf
                     [uriApi] => /ligen/test/api/divisions/test-division/rounds/2/
                     [pairings] => Array
                         (
@@ -250,7 +250,7 @@ Nsv\League\Api\Model\MatchDay Object
                     [round] => 4
                     [date] => 2024-02-02
                     [uri] => /ligen/test/test-division/4/
-                    [uriPdf] => /ligen/test/?staffel=9&r=4&ausgabe=pdf
+                    [uriPdf] => /ligen/test/?staffel=1&r=4&ausgabe=pdf
                     [uriApi] => /ligen/test/api/divisions/test-division/rounds/4/
                     [pairings] => Array
                         (
@@ -263,7 +263,7 @@ Nsv\League\Api\Model\MatchDay Object
                     [round] => 1
                     [date] => 2025-01-01
                     [uri] => /ligen/test/test-division/1/
-                    [uriPdf] => /ligen/test/?staffel=9&r=1&ausgabe=pdf
+                    [uriPdf] => /ligen/test/?staffel=1&r=1&ausgabe=pdf
                     [uriApi] => /ligen/test/api/divisions/test-division/rounds/1/
                     [pairings] => Array
                         (
@@ -273,6 +273,5 @@ Nsv\League\Api\Model\MatchDay Object
 
         )
 
-    [lastModified] => 2023-10-03 22:54:29
-    [generatedAt] => 2023-10-03 20:54:37
+    [lastModified] => 2024-02-03 21:39:43
 )

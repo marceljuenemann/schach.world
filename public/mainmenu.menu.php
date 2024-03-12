@@ -38,15 +38,9 @@ $nsvMainmenu = array (
 	(bool) strstr ( $_SERVER ['REQUEST_URI'], "/vorstand/" )
 ),
 
-"Bezirke" => array (
-	"bezirke/bezirk.php?kurzname=",
-	(bool) strstr ( $_SERVER ['PHP_SELF'], "/bezirke/" ),
-	"Hannover" => "bezirke/Hannover",
-	"Braunschweig" => "bezirke/Braunschweig",
-	"S&uuml;dniedersachsen" => "bezirke/Sued",
-	"L&uuml;neburg" => "bezirke/Lueneburg",
-	"Oldenburg-Ostfriesland" => "bezirke/Oldenburg",
-	"Osnabr&uuml;ck-Emsland" => "bezirke/Osnabrueck"
+"Vereine" => array (
+	"vereine/",
+	(bool) strstr ( $_SERVER ['REQUEST_URI'], "/vereine/" )
 ),
 
 "Termine" => array (
