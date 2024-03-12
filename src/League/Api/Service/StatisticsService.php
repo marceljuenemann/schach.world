@@ -743,52 +743,6 @@ class StatisticsService
     }
 
 
-    // Create the Topscorer text
-    // If there are multiple Topscorers, they are all named
-    if (count($top_scorers) > 1) {
-      $top_text_1 = $this->encoding->utf8_decode('Die Top-Scorer mit ' . $highest_points_score . ' Punkten aus ' . $lowest_game_score . ' Partien sind: ');
-      $top_text_2 = '';
-
-
-      foreach ($top_scorers as $key => $scorer) {
-        // We need the player with link and his team with link.
-        $player_linked = $this->htmlCreation->internalLink(
-          $scorer['player']->uri(), $scorer['player']->name() . ' '
-        );
-        $team_linked = $this->htmlCreation->internalLink(
-          $scorer['player']->team->uri(), '(' . $scorer['player']->team->nameWithNumber() . ')'
-        );
-        $player_linked_with_team = $player_linked . $team_linked;
-
-
-        if ($key < count($top_scorers) - 2) {
-          $top_text_2 .= $player_linked_with_team . ', ';
-        }
-        if ($key == count($top_scorers) - 2) {
-          $top_text_2 .= $player_linked_with_team . ' und ';
-        } if ($key == count($top_scorers) - 1) {
-          $top_text_2 .= $player_linked_with_team . '. ';
-        }
-      }
-    } else {
-      // If there is only one top scorer
-      $top_text_1 = $this->encoding->utf8_decode('Der Top-Scorer mit ' . $highest_points_score . ' Punkten aus ' . $lowest_game_score . ' Partien ist ');
-      $top_text_2 = '';
-
-      foreach ($top_scorers as $key => $scorer) {
-        // We need the player with link and his team with link.
-        $player_linked = $this->htmlCreation->internalLink(
-          $scorer['player']->uri(), $scorer['player']->name() . ' '
-        );
-        $team_linked = $this->htmlCreation->internalLink(
-          $scorer['player']->team->uri(), '(' . $scorer['player']->team->nameWithNumber() . ')'
-        );
-        $player_linked_with_team = $player_linked . $team_linked;
-
-        $top_text_2 .= $player_linked_with_team . '. ';
-      }
-    }
-
     $text_top_scorers = [];
     foreach ($top_scorers as $key => $scorer) {
       $text_top_scorers[$key]['player_name'] = $scorer['player']->name();
@@ -854,12 +808,13 @@ class StatisticsService
       }
     }
 
-    $topscorer_text = $top_text_1 . $top_text_2;
     $topscorer_text .= '<br>' . $draw_text_1 . $draw_text_2;
 
     $topscorer_data['text'] = $topscorer_text;
 
     $topscorer_data['text_values']['text_top_scorers'] = $text_top_scorers;
+    $topscorer_data['text_values']['highest_point_score'] = $highest_points_score;
+    $topscorer_data['text_values']['lowest_game_score'] = $lowest_game_score;
 
 
     $topscorer_data['table'] = $topscorer_table;
