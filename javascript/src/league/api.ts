@@ -1,14 +1,22 @@
 import { NsvApi } from "../core/api";
-import { Division, Team, TeamVenue } from "./types"
+import { Division, Team, TeamCaptain, TeamVenue } from "./types"
 
 export class LeagueApi extends NsvApi {
 
-  async fetchTeam(id: number): Promise<Team & {venue: TeamVenue}> {
+  async fetchTeam(id: number): Promise<Team> {
     return this.request(`teams/${id}/`)
+  }
+
+  async updateTeamCaptain(id: number, captain: TeamCaptain): Promise<void> {
+    return this.request(`teams/${id}/captain/`, 'PUT', captain)
   }
 
   async updateTeamVenue(id: number, venue: TeamVenue): Promise<void> {
     return this.request(`teams/${id}/venue/`, 'PUT', venue)
+  }
+
+  async updateTeamRecipients(id: number, recipients: Array<string>): Promise<void> {
+    return this.request(`teams/${id}/recipients/`, 'PUT', {recipients})
   }
 
   async fetchPairings(): Promise<Array<Division>> {
