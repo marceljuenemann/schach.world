@@ -21,8 +21,7 @@ class Kernel extends BaseKernel
     $runtime = new SymfonyRuntime(['project_dir' => $projectDir]);
     [$app, $args] = $runtime->getResolver(function (array $context) {
       $env = $context[0];
-      $debug = ((bool) $env['APP_DEBUG']) || Auth::isAdmin();
-      return new Kernel($env['APP_ENV'], $debug);
+      return new Kernel($env['APP_ENV'], (bool) $env['APP_DEBUG']);
     })->resolve();
     $app = $app($args);
     $runtime->getRunner($app)->run();
