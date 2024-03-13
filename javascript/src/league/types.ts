@@ -1,10 +1,11 @@
 export interface Team {
-  id: number,
-  name: string,
+  id: number
+  name: string
   zps?: string
   uri: string
-  venue?: TeamVenue,
-  captain?: any
+  venue: TeamVenue
+  captain: TeamCaptain
+  additionalRecipients: Array<string>
 }
 
 export interface TeamVenue {
@@ -14,6 +15,13 @@ export interface TeamVenue {
   postCode: string
   city: string
   phone: string
+}
+
+export interface TeamCaptain {
+  name: string,
+  mail: string,
+  phone: string,
+  phone2: string
 }
 
 export interface Pairing {

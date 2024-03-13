@@ -6,7 +6,7 @@ namespace Nsv\WebApp\Core;
  * Utility for integrating the React components from /javascript.
  */
 class NsvJs {
-  const DEV_SERVER = 'http://localhost:6464/static/js/bundle.js';
+  const DEV_SERVER = 'http://localhost:6460/static/js/bundle.js';
   const BUILD_MANIFEST = '/public/core/js-build/asset-manifest.json';
   const BUILD_PATH = '/core/js-build';
 

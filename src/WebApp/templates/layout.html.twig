@@ -4,6 +4,8 @@
 {{ get_header() }}
 {% set show_sidebar = not hide_sidebar|default(false) %}
 
+<script src="{{ nsv_js_src() }}" defer></script>
+
 <div class="col-12 {% if show_sidebar %} col-lg-9 {% endif %}">
   
   <div class="card shadow nsv-card">

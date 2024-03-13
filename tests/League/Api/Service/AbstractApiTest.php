@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Api\Service;
 
+use Doctrine\ORM\EntityManagerInterface;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
@@ -12,13 +13,20 @@ use Symfony\Component\DependencyInjection\Container;
 abstract class AbstractApiTest extends KernelTestCase
 {
   protected Container $container;
+  protected EntityManagerInterface $em;
   protected League $league;
   protected Division $division;
 
   protected function setUp(): void {
     $this->container = static::getContainer();
+    $this->em = $this->container->get(LeagueRepository::class)->getEntityManager();
     $this->league = $this->container->get(LeagueRepository::class)->findByPath('test');
     $this->division = $this->league->divisions[0];
+  }
+
+  protected function clear(): void {
+    $this->em->clear();
+    $this->setUp();
   }
 
   protected function assertModel($model, $filename, $function) {

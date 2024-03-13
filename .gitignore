@@ -5,10 +5,12 @@ public/wordpress/*
 public/wordpress/wp-content/*
 !public/wordpress/wp-content/themes
 public/wordpress/wp-content/themes/*
+!public/wordpress/wp-content/themes/bezirk2020
 !public/wordpress/wp-content/themes/nsv2020
 !public/wordpress/wp-content/themes/nsv2020-local
 !public/wordpress/wp-content/plugins
 public/wordpress/wp-content/plugins/*
+!public/wordpress/wp-content/plugins/bezirk-v3
 !public/wordpress/wp-content/plugins/nsv-core
 !public/wordpress/wp-content/plugins/nsv-turniere
 !public/wordpress/wp-content/plugins/nsv-misc
@@ -45,6 +47,9 @@ tests/League/Api/Service/actual/
 
 # Don't want to share VS Code settings as I disable git when mounting with sshfs :)
 .vscode
+
+#Ignore PHPstorm settings directory
+.idea
 
 
 ###> symfony/framework-bundle ###

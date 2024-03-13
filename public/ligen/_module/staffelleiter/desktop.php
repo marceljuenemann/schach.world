@@ -66,101 +66,6 @@
   echo "<fieldset class='sed_admin_desk'><legend>Paarungseingabe</legend>";
   echo "<div data-nsv-component='PairingList' data-nsv-division='$admin[staffel]'></div>";
   echo "</fieldset><br><br>";
-  /*
-  TODO: Delete the old code paths once the new season started successfully.
-  {
-    // Vorbereitung
-    echo "<a name='peingabe'></a><fieldset class='sed_admin_desk'><legend>Paarungseingabe</legend>";
-
-    // Auswahl-Formular
-    if ( $admin ['usertype'] != "m" )
-    {
-        echo "<form action='' method='get'><div><input type='hidden' name='admin' value='desktop-$admin[userid]-$admin[session]' id='pl_hidden' />Selektieren: ";
-
-        // Staffelauswahl
-        if ( $admin ['usertype'] == "t" )
-        {
-            $options = "<option value='alle'>Alle Staffeln</option>";
-            foreach ( $globals ['staffeln'] as $k => $v )
-              $options .= "<option value='$k'>$v</option>";
-            $options = SED_SelectOption ( $options, isset ( $_GET ['staffel'] ) ? $_GET ['staffel'] : "nichts" );
-            echo "<select name='staffel' id='pl_staffel' onchange='js_SED_GetPaarungsauflistung();' style='font-family: Tahoma,Verdana; font-size: 10pt;'>$options</select>&nbsp;&nbsp;";
-        }
-        else // Bei Staffelleitern
-            echo "<input type='hidden' name='staffel' id='pl_staffel' value='".$admin['staffel']."' />";
-
-        // Rundenauswahl
-        $options = "<option value='akt'>Aktuelle Runde</option><option value='alle'>Alle Runden</option>";
-        for ( $i = 1; $i <= $prefs ['runden']; ++$i )
-          $options .= "<option value='$i'>Nur $i. Spieltag</option>";
-        $options = SED_SelectOption ( $options, isset ( $_GET ['runde'] ) ? $_GET ['runde'] : "nichts" );
-        echo "<select name='runde' onchange='js_SED_GetPaarungsauflistung();' id='pl_runde' style='font-family: Tahoma,Verdana; font-size: 10pt;'>$options</select>&nbsp;&nbsp;";
-
-        echo "<input type='submit' class='submit' value='Anzeigen' /></div></form>";
-    }
-
-    // Paarungen ausgeben
-    echo "<div id='pl_content'>";
-    require_once ( "paarungsauflistung.inc.php" );
-    SED_Paarungsauflistung ();
-    echo "</div>";
-
-    // Ende
-    echo "</fieldset><br /><br />";
-
-    // Javascript
-    ?>
-    <script type='text/javascript'><!--
-
-      function js_SED_GetPaarungsauflistung ()
-      {
-        {
-          // URL zusammensetzen
-          var admin = document.getElementById ( "pl_hidden" ).value;
-          var staffel = document.getElementById ( "pl_staffel" ).value;
-          var runde = document.getElementById ( "pl_runde" ).value;
-          var url = '<? echo "$globals[httppath]$prefs[directory]/?type=GetPaarungsauflistung"; ?>' + "&admin=" + admin + "&staffel=" + staffel + "&runde=" + runde;
-
-          // Ajax initialisieren
-          var req = null;
-          try { req = new XMLHttpRequest(); }
-          catch (e) {
-            try { req = new ActiveXObject('Msxml2.XMLHTTP'); }
-            catch (e) {
-              try { req = new ActiveXObject('Microsoft.XMLHTTP'); }
-              catch ( failed ) { req = null; }
-            }
-          }
-
-
-          // Anfrage stellen
-          if ( req != null )
-          {
-            // Anfrage abschicken
-            req.open ( 'GET', url, true );
-
-            // Bei Antwort folgendes ausführen:
-            req.onreadystatechange = function ()
-            {
-              if ( req.readyState == 4 && req.status == 200 )
-              {
-                document.getElementById ( "pl_content" ).innerHTML = req.responseText;
-                return true;
-              }
-              return false;
-            };
-
-            // Endgültig senden
-            req.setRequestHeader ( 'Content-Type', 'application/x-www-form-urlencoded' );
-            req.send ( null );
-          }
-        }
-      }
-
-    --></script>
-    <?
-  }
-  */
 
   // Staffelverwaltung
   if ( $admin ['usertype'] == "t" )
@@ -248,5 +153,3 @@
 
   // Ausgabe beenden
   echo "</div></form>";
-
-?>
