@@ -8,12 +8,11 @@ use Nsv\League\Entity\Pairing;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity\Team;
 use Nsv\League\Api\Service\DivisionService;
-use Nsv\Util\HtmlCreation;
 
 class StatisticsService
 {
   public function __construct(
-    private ManagerRegistry $doctrine, private Encoding $encoding, private DivisionService $divisionService, private HtmlCreation $htmlCreation
+    private ManagerRegistry $doctrine, private Encoding $encoding, private DivisionService $divisionService
   ) {
     $this->entityManager = $this->doctrine->getManager('league');
   }
