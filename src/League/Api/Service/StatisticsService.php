@@ -553,22 +553,22 @@ class StatisticsService
       $dwz_all = $team['all_dwz_average'];
       $age = $team['active_age_average'];
       if ($team['dwz_rank'] == 'top') {
-        $active_dwz_classes = 'active-dwz format-bold ';
+        $active_dwz_classes = 'active-dwz fw-bold ';
       } else {
         $active_dwz_classes = 'active-dwz';
       }
       if ($team['top_dwz_rank'] == 'top') {
-        $top_dwz_classes = 'top-dwz format-bold';
+        $top_dwz_classes = 'top-dwz fw-bold';
       } else {
         $top_dwz_classes = 'top-dwz';
       }
       if ($team['all_dwz_rank'] == 'top') {
-        $all_dwz_classes = 'all-dwz format-bold';
+        $all_dwz_classes = 'all-dwz fw-bold';
       } else {
         $all_dwz_classes = 'all-dwz';
       }
       if ($team['age_rank'] == 'top') {
-        $age_classes = 'age format-bold';
+        $age_classes = 'age fw-bold';
       } else {
         $age_classes = 'age';
       }
@@ -622,23 +622,23 @@ class StatisticsService
     $dwz_table['body'][] = [
       [
         'text' => 'Durchschnitt:',
-        'class' => 'average-active format-bold'
+        'class' => 'average-active fw-bold'
       ],
       [
         'text' => $average_values['dwz_active'],
-        'class' => 'average-active format-bold'
+        'class' => 'average-active fw-bold'
       ],
       [
         'text' => $average_values['dwz_top'],
-        'class' => 'average-top format-bold'
+        'class' => 'average-top fw-bold'
       ],
       [
         'text' => $average_values['dwz_all'],
-        'class' => 'average-all format-bold'
+        'class' => 'average-all fw-bold'
       ],
       [
         'text' => $average_values['age'],
-        'class' => 'average-age format-bold'
+        'class' => 'average-age fw-bold'
       ],
     ];
 
@@ -723,7 +723,7 @@ class StatisticsService
         ],
         [
           'text' => $points,
-          'class' => 'points'
+          'class' => 'points fw-bold'
         ],
       ];
     }
@@ -911,40 +911,40 @@ class StatisticsService
     $team_game_score_table['body'][] = [
       [
         'text' => 'Summe:',
-        'class' => 'name format-bold'
+        'class' => 'name fw-bold'
       ],
       [
         'text' => $sum_game_count,
-        'class' => 'game-all-count border-left-bold format-bold',
+        'class' => 'game-all-count border-left-bold fw-bold',
         'title' => $this->encoding->utf8_decode('All games including forfeits. The sum is only half of the above, since always two players of different teams play one game.'),
       ],
       [
         'text' => $sum_forfeit_wins,
-        'class' => 'forfeit-wins format-bold'
+        'class' => 'forfeit-wins fw-bold'
       ],
       [
         'text' => $sum_forfeit_losses,
-        'class' => 'forfeit-losses border-right-bold format-bold',
+        'class' => 'forfeit-losses border-right-bold fw-bold',
       ],
       [
         'text' => round($average_wins) . '%',
-        'class' => 'wins format-bold',
+        'class' => 'wins fw-bold',
       ],
       [
         'text' => round($average_draws) . '%',
-        'class' => 'draws format-bold',
+        'class' => 'draws fw-bold',
       ],
       [
         'text' => round($average_losses) . '%',
-        'class' => 'losses border-right-bold format-bold',
+        'class' => 'losses border-right-bold fw-bold',
       ],
       [
         'text' => round($average_white_score) . '%',
-        'class' => 'white-score format-bold',
+        'class' => 'white-score fw-bold',
       ],
       [
         'text' => round($average_black_score) . '%',
-        'class' => 'black-score format-bold',
+        'class' => 'black-score fw-bold',
       ],
     ];
 
