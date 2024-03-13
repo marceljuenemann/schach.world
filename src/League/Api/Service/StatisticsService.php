@@ -11,6 +11,8 @@ use Nsv\League\Api\Service\DivisionService;
 
 class StatisticsService
 {
+
+  const MIN_DWZ = 700;
   public function __construct(
     private ManagerRegistry $doctrine, private Encoding $encoding, private DivisionService $divisionService
   ) {
@@ -180,7 +182,7 @@ class StatisticsService
       foreach ($team['active_players'] as $player) {
         $dwz = $player->dwz;
         if (empty($dwz)) {
-          $dwz_data[$key]['active_dwz_sum'] += 700;
+          $dwz_data[$key]['active_dwz_sum'] += self::MIN_DWZ;
         } else {
           $dwz_data[$key]['active_dwz_sum'] += $player->dwz;
         }
@@ -195,7 +197,7 @@ class StatisticsService
       foreach ($team['all_players'] as $player) {
         $dwz = $player->dwz;
         if (empty($dwz)) {
-          $dwz_data[$key]['all_dwz_sum'] += 700;
+          $dwz_data[$key]['all_dwz_sum'] += self::MIN_DWZ;
         } else {
           $dwz_data[$key]['all_dwz_sum'] += $player->dwz;
         }
@@ -213,7 +215,7 @@ class StatisticsService
       foreach ($team['top_x_players'] as $player) {
         $dwz = $player->dwz;
         if (empty($dwz)) {
-          $dwz_data[$key]['top_dwz_sum'] += 700;
+          $dwz_data[$key]['top_dwz_sum'] += self::MIN_DWZ;
         } else {
           $dwz_data[$key]['top_dwz_sum'] += $player->dwz;
         }
