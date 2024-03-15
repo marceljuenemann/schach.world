@@ -55,6 +55,7 @@ class NextSeasonCommand extends Command
     $newLeague->name = $this->processName($league->name, $league->year);
     $newLeague->path = $this->processName($league->path, $league->year);
     $newLeague->year = $league->year + 1;
+    $newLeague->registrationMinYearOfBirth = $league->registrationMinYearOfBirth + 1;
     $output->writeln("  Creating league: " . $newLeague->name);
 
     $newLeague->manager = $this->cloneUser($league->manager, $output);
@@ -83,9 +84,7 @@ class NextSeasonCommand extends Command
     $this->leagueEntityManager->persist($newDivision);
   }
 
-  // TODO: Add path to console output
   // TODO: Add all divison fields
-  // TODO: Add all league fields
 
   private function cloneUser(LegacyUser $user, OutputInterface $output) {
     $output->writeln("    Creating user: " . $user->name);
