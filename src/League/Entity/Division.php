@@ -46,6 +46,48 @@ class Division
   private int|null $configRounds = null;
 
   /**
+   * Number of boards. If set to null, the league-wide config should be used.
+   */
+  #[ORM\Column(name: 'brettzahl')]
+  private int|null $configBoardCount = null;
+
+  /**
+   * Whether to send eMails with result links to team leaders, so that they
+   * can enter results themselves. If set to null, the league-wide configuration
+   * should be used.
+   */
+  #[ORM\Column(name: 'sysEingabelinks')]
+  private bool|null $configSendResultLinkMails = null;
+
+  /**
+   * Number of teams that will be promoted to a higher league. If set to null,
+   * the league-wide configuration should be used.
+   */
+  #[ORM\Column(name: 'spielAufsteiger')]
+  private int|null $configTeamsPromoted = null;
+
+  /**
+   * Number of teams that will be relegated. If set to null,
+   * the league-wide configuration should be used.
+   */
+  #[ORM\Column(name: 'spielAbsteiger')]
+  private int|null $configTeamsDemoted = null;
+
+  /**
+   * Number of teams that face a relegation battle for a higher league. If set
+   * to null, the league-wide configuration should be used.
+   */
+  #[ORM\Column(name: 'spielAufsteigerRelegation')]
+  private int|null $configTeamsMaybePromoted = null;
+
+  /**
+   * Number of teams that face a relegation battle for a lower league. If set
+   * to null, the league-wide configuration should be used.
+   */
+  #[ORM\Column(name: 'spielAbsteigerRelegation')]
+  private int|null $configTeamsMaybeDemoted = null;
+
+  /**
    * Whether to show player numbers in the UI. If set to null, the league-wide
    * configuration should be used.
    */
@@ -53,16 +95,25 @@ class Division
   private bool|null $configPlayerNumbers = null;
 
   /**
-   * Whether to show late registrations on the match day page.
+   * Whether to show late registrations on the match day page. If set to null,
+   * the league-wide configuration should be used.
    */
   #[ORM\Column(name: 'showNachmeldungen')]
   private bool|null $configShowLateRegistrations = null;
 
   /**
-   * Whether to show a preview of the next match day.
+   * Whether to show a preview of the next match day. If set to null,
+   * the league-wide configuration should be used.
    */
   #[ORM\Column(name: 'showSpieltagvorschau')]
   private bool|null $configShowNextMatchDay = null;
+
+  /**
+   * Whether to show the ranking. If set to null, the league-wide
+   * configuration should be used.
+   */
+  #[ORM\Column(name: 'showTabelle')]
+  private bool|null $configShowRanking = null;
 
   #[ORM\OneToMany(targetEntity: Pairing::class, mappedBy: 'division')]   
   #[ORM\OrderBy(Pairing::ORDERING)]
