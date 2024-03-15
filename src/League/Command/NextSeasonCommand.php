@@ -84,8 +84,6 @@ class NextSeasonCommand extends Command
     $this->leagueEntityManager->persist($newDivision);
   }
 
-  // TODO: Add all divison fields
-
   private function cloneUser(LegacyUser $user, OutputInterface $output) {
     $output->writeln("    Creating user: " . $user->name);
     $newUser = clone $user;
