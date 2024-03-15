@@ -32,6 +32,9 @@ class League
   #[ORM\Column(name: 'organisation', length: 15)]
   private string $organisation;
 
+  #[ORM\Column(name: 'template')]
+  private string $theme;
+
   /**
    * The year in which the league started.
    */
@@ -55,10 +58,23 @@ class League
   private int $configRounds = 9;
 
   /**
+   * Number of boards per match.
+   */
+  #[ORM\Column(name: 'brettzahl')]
+  private int $configBoardCount = 8;
+
+  /**
    * Number of subsequent teams whose players may be used as substitute players.
    */
   #[ORM\Column(name: 'spielErsatzmannschaft')]
   private int $configSubstituteTeams = 0;
+
+  /**
+   * Whether to send eMails with result links to team leaders, so that they
+   * can enter results themselves.
+   */
+  #[ORM\Column(name: 'sysEingabelinks')]
+  private bool $configSendResultLinkMails = false;
 
   /**
    * Number of teams that will be promoted to a higher league.
@@ -91,6 +107,19 @@ class League
   private bool $configPlayerNumbers = true;
 
   /**
+   * Whether to prefix all player numbers with the team number, e.g.
+   * 302 instead of 2 for the second player in the third team.
+   */
+  #[ORM\Column(name: 'spielDreistelligeNr')]
+  private bool $configPlayerNumbersWithTeamNumber = false;
+
+  /**
+   * Whether to allow late registrations by team managers.
+   */
+  #[ORM\Column(name: 'spielNachmeldungen')]
+  private bool $configLateRegistrationEnabled = true;
+
+  /**
    * Whether to show late registrations on the match day page.
    */
   #[ORM\Column(name: 'showNachmeldungen')]
@@ -101,6 +130,28 @@ class League
    */
   #[ORM\Column(name: 'showSpieltagvorschau')]
   private bool $configShowNextMatchDay = true;
+
+  #[ORM\Column(name: 'showTabelle')]
+  private bool $configShowRanking = true;
+
+  #[ORM\Column(name: 'anmAktiv')]
+  private bool $registrationEnabled = false;
+
+  #[ORM\Column(name: 'anmGeburt')]
+  private int $registrationMinYearOfBirth = 1900;
+
+  #[ORM\Column(name: 'anmGeschlecht', length: 1)]
+  private string $registrationSex;
+
+  #[ORM\Column(name: 'anmVerband', length: 3)]
+  private string $registrationOrganisationZps;
+
+  /**
+   * Whether the league manager should receive a confirmation mail for
+   * each registration.
+   */
+  #[ORM\Column(name: 'anmTLMail')]
+  private bool $registrationConfirmationMail = true;
 
   /**
    * Additional team details to ask for during registration.
