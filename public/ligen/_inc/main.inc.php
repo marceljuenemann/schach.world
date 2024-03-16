@@ -12,10 +12,12 @@
  * @subpackage main
  */
 
-  require_once ( "../../libs/mysql-shim.php" );
-  require_once ( "../../../vendor/autoload.php" );
+use Nsv\League\Core\Encoding;
+use Nsv\League\Core\Result;
 
-  define('SED_REMIS', utf8_decode('½'));
+  require_once ( "../../libs/mysql-shim.php" );
+
+  define('SED_REMIS', Result::DRAW());
 
   // Gibt eine rote Fehlermeldung aus
   function SED_Error ( $msg, $exit = false, $back = false, $mail = false )
@@ -125,14 +127,5 @@
    * Converts from UTF-8 to the application charset.
    */
   function SED_utf8_decode($str) {
-    // TODO: Convert application to UTF-8 and remove this.
-    return mb_convert_encoding($str, 'ISO-8859-1', 'UTF-8');
-  }
-
-  /**
-   * Converts from the application charset to UTF-8.
-   */
-  function SED_utf8_encode($str) {
-    // TODO: Convert application to UTF-8 and remove this.
-    return mb_convert_encoding($str, 'UTF-8', 'ISO-8859-1');
+    return Encoding::utf8_decode($str);
   }
