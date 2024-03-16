@@ -3,6 +3,7 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Repository\DivisionRepository;
+use Nsv\League\Repository\TeamRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -16,13 +17,22 @@ use Symfony\Component\Routing\Annotation\Route;
 class RootController extends AbstractController {
 
   function __construct(
-    private DivisionRepository $divisionRepository
+    private DivisionRepository $divisionRepository,
+    private TeamRepository $teamRepository
   ) {}
 
   #[Route('', name: 'root')]
   public function root(): Response {
     // Redirect to an overview page outside the league manager.
     return $this->redirect('/alle-ligen/');
+  }
+
+  #[Route('2/{param}', name: 'team_edit')]
+  public function teamEdit(string $param): Response {
+    $auth = substr($param, 4);
+    $teamId = base_convert(substr($param, 0, 4), 36, 10);
+    $team = $this->teamRepository->find($teamId);
+    return $this->redirect($team->league->uri() . '?m=mannschaftsdaten&mid=' . $team->id . "&auth=$auth");
   }
 
   #[Route('3/{divisionId}', name: 'division_login')]
