@@ -9,6 +9,7 @@ use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Team;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
  * @extends ServiceEntityRepository<Pairing>
@@ -17,6 +18,15 @@ class PairingRepository extends ServiceEntityRepository
 {
   public function __construct(ManagerRegistry $registry) {
     parent::__construct($registry, Pairing::class);
+  }
+
+  // TODO: move into our own abstract repository? 
+  public function find($id, $lockMode = null, $lockVersion = null): Pairing {
+    $entity = parent::find((int) $id, $lockMode, $lockVersion);
+    if (!$entity) {
+      throw new NotFoundHttpException("Pairing not found");
+    }
+    return $entity;
   }
 
   /**

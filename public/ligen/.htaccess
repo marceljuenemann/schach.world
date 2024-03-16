@@ -29,13 +29,7 @@ RewriteRule ^/$ /wordpress/index.php [L]
 RewriteRule ^([A-Za-z0-9\-]+)/Rundschreiben/([0-9]*)/Runde([0-9]*).pdf /ligen/$1/?staffel=$2&r=$3&ausgabe=pdf [R,L]
 RewriteRule ^([A-Za-z0-9\-]+)/anmeldung.html /ligen/$1/?m=anmeldung [R]
 
-# TINYURL
-RewriteRule ^([0-9])/([a-z0-9]+)$ /ligen/index.php?m=tinyurl&type=$1&p1=$2 [L]
-RewriteRule ^([0-9])/([a-z0-9]+)-([a-z0-9]+)$ /ligen/index.php?m=tinyurl&type=$1&p1=$2&p2=$3 [L]
-RewriteRule ^([0-9])/([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$ /ligen/index.php?m=tinyurl&type=$1&p1=$2&p2=$3&p3=$4 [L]
-
 # Das Wichtigste
 # TODO: Try to remove these, parent .htaccess should forward to WordPress already.
 RewriteRule ^([A-Za-z0-9\-]+)$ /ligen/$1/ [R]
-#RewriteRule ^([A-Za-z0-9\-]+)/ /ligen/index.php?dir=$1 [QSA] [L]
 RewriteRule ^([A-Za-z0-9\-]+)/ /wordpress/index.php [L]
