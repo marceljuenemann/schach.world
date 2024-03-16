@@ -3,6 +3,7 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Repository\DivisionRepository;
+use Nsv\League\Repository\PairingRepository;
 use Nsv\League\Repository\TeamRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,13 +19,22 @@ class RootController extends AbstractController {
 
   function __construct(
     private DivisionRepository $divisionRepository,
-    private TeamRepository $teamRepository
+    private TeamRepository $teamRepository,
+    private PairingRepository $pairingRepository
   ) {}
 
   #[Route('', name: 'root')]
   public function root(): Response {
     // Redirect to an overview page outside the league manager.
     return $this->redirect('/alle-ligen/');
+  }
+
+  #[Route('1/{param}', name: 'result_edit')]
+  public function resultEdit(string $param): Response {
+    $auth = substr($param, 4);
+    $pairingId = base_convert(substr($param, 0, 4), 36, 10);
+    $pairing = $this->pairingRepository->find($pairingId);
+    return $this->redirect($pairing->division->league->uri() . '?m=eingabe&pid=' . $pairing->id . "&auth=$auth");
   }
 
   #[Route('2/{param}', name: 'team_edit')]
