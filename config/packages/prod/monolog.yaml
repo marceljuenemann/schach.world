@@ -1,0 +1,11 @@
+monolog:
+    handlers:
+        main:
+            type: fingers_crossed
+            excluded_http_codes: [403, 404]
+
+        file_log:
+            type: stream
+            # log to var/log/(environment).log
+            path: "%kernel.logs_dir%/%kernel.environment%.log"
+            level: warning
