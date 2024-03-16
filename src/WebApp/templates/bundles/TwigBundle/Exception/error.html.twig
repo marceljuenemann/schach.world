@@ -26,10 +26,8 @@
   {{ exception.trace[0].line }}
   <br>
 
-  <strong>Exception Dump: </strong>
-  <pre>
-    {{ dump(exception) }}
-  </pre>
+  See /var/log/prod.log for full stacktrace.
+
 {% endif %}
 
 {% endblock %}
