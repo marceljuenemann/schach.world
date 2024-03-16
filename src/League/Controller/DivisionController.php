@@ -41,7 +41,7 @@ class DivisionController extends AbstractLeagueController {
     return $this->debugResponse($matchDays);
   }
 
-  #[Route('{division}-R{round}.pdf', name: 'pdf')]
+  #[Route('{division}/{round}/pdf/', name: 'pdf')]
   public function pdf(int $round): Response {
     $this->initializeLegacySystem();
     $_GET['r'] = $round;
