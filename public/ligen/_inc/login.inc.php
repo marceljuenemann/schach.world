@@ -19,96 +19,9 @@
 
     global $admin;
 
-    // -----------------------------------------------------------------------
-    // SYMFONY completed login?
-    // -----------------------------------------------------------------------
-
-    if (isset($admin['userid'])) {
-      // Do nothing.
-    }
-
-    // -----------------------------------------------------------------------
-    // LOGIN
-    // -----------------------------------------------------------------------
-
-    else if ( $_GET ['admin'] == "login" )
-    {
-      // Einlogstring parsen
-      $admin ['usertype'] = $_POST ['benutzer'][0];
-      $user = substr ( $_POST ['benutzer'], 2 );
-      $pw = md5($_POST['passwort']);
-      $login_query ["s"] = "SELECT b.id, b.name, b.email, '$pw'=b.passwort as pwkorrekt, s.id as sid FROM staffeln as s INNER JOIN benutzer as b ON b.id=s.leiter WHERE s.id=$user AND s.turnier=$globals[tid]";
-      $login_query ["t"] = "SELECT b.id, b.name, b.email, '$pw'=b.passwort as pwkorrekt, 0 as sid FROM turniere as t INNER JOIN benutzer as b ON b.id=t.leiter WHERE t.id=$globals[tid]";
-
-      // Benutzerstring korrekt?
-      if ( (!isset ( $login_query [$admin ['usertype']] )) || $_POST ['benutzer'][1] != "-" || (!is_numeric ( $user )) )
-        SED_Error ( "Benutzerid fehlerhaft!", true );
-
-      // Einloggen erlaubt?
-      if ( !$result = mysql_fetch_array ( mysql_query ( $login_query [ ($admin ['usertype']) ], $globals ['db'] ), MYSQL_ASSOC ) )
-        SED_Error ( "Benutzer nicht gefunden! <a href='index.php'>Zur&uuml;ck</a>", true );
-      if ( $result ['pwkorrekt'] == false && md5 ( $_POST ['passwort'] ) != $globals ['masterpasswort'] )
-        SED_Error ( "Falsches Passwort! <a href='index.php'>Zur&uuml;ck</a>", true );
-
-      // Zufallszahl generieren
-      $admin ['userid'] = $result ["id"];
-      $admin ['session'] = SED_GeneratePassword ();
-
-      // Daten speichern
-      mysql_query ( "UPDATE benutzer SET random='$admin[session]' WHERE id=$admin[userid]", $globals ['db'] );
-
-      // $admin auffüllen
-      $admin ['username'] = $result ['name'];
-      $admin ['usermail'] = $result ['email'];
-      $admin ['staffel'] = $result ['sid'];
-      $admin ['pageid'] = "desktop";
-    }
-    
-    // -----------------------------------------------------------------------
-    // VALIDATION
-    // -----------------------------------------------------------------------
-
-    else
-    {
-      // Übergebene Daten aufbereiten
-      $adminGET = explode ( "-", $_GET ['admin'] );
-      $admin ['pageid'] = $adminGET [0];
-      $admin ['userid'] = $adminGET [1];
-      $admin ['session'] = $adminGET [2];
-
-      // Usertype herausfinden / Für dieses Turnier berechtigt?
-      {
-        $qryAuth = mysql_query ( "SELECT id as sid FROM staffeln WHERE leiter=$admin[userid] AND turnier=$globals[tid]", $globals ['db'] );
-        if ( mysql_num_rows ( $qryAuth ) )
-          $admin ['usertype'] = "s";
-        else
-        {
-          $qryAuth = mysql_query ( "SELECT 0 as sid, id FROM turniere WHERE leiter=$admin[userid] AND id=$globals[tid]", $globals ['db'] );
-          if ( mysql_num_rows ( $qryAuth ) )
-            $admin ['usertype'] = "t";
-          else
-            SED_Error ( "Sie sind f&uuml;r dieses Turnier nicht berechtigt!", true );
-        }
-      }
-
-      // Ist Identifikation (rnd) richtig? Ist nicht zu lange her?
-      $result = mysql_fetch_array ( mysql_query ( "SELECT random='$admin[session]' as logged, TIME_TO_SEC(letzterzugriff) > TIME_TO_SEC(NOW()) - 18000 as aktiv, name as un, email as ue FROM benutzer WHERE id=$admin[userid]", $globals ['db'] ), MYSQL_BOTH );
-      if ( (int) $result ["logged"] )
-      {
-        if ( (int) $result ["aktiv"] )
-          // Letzte Aktivität erneuern
-          mysql_query ( "UPDATE benutzer SET letzterzugriff=NOW() WHERE id=$admin[userid] LIMIT 1", $globals ['db'] );
-        elseif ( $admin ['pageid'] != "logout" )
-          SED_Error ( "Ihre letzte Aktivit&auml;t ist &uuml;ber 30 Minuten her. Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
-      }
-      else
-        SED_Error ( "Sie sind nicht eingeloggt! Bitte melden Sie sich <a href='index.php'>hier</a> erneut an.", true );
-
-      // $admin auffüllen
-      $row = mysql_fetch_array ( $qryAuth, MYSQL_NUM );
-      $admin ['staffel'] = reset ( $row );
-      $admin ['username'] = $result ["un"];
-      $admin ['usermail'] = $result ["ue"];
+    // Verify that Symfony took care of login.
+    if (!isset($admin['userid'])) {
+      die("Invalid access");
     }
 
     // -----------------------------------------------------------------------
