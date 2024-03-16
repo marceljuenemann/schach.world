@@ -14,14 +14,13 @@
  * @subpackage admin
  */
 
-    require_once ( "admin.inc.php" );
-    require_once ( "cache.inc.php" );
-    if ( $_GET ["auth"] != substr ( $globals ["masterpasswort"], 5, 5 ) )
-        SED_Error ( "Keine Berechtigung!", true );
+    $globals['adminScript'] === 'DwzUpdate' or die('Invalid invocation');
+
+    // require_once ( "cache.inc.php" );
 
     // Aktuelle Saison berechnen (Update nur bis Ende April)
     // In 2020 Update bis Ende September (Corona)...
-    if ( date ( "n" ) <= 4 || (date ("Y") == '2020' && date ( "n" ) <= 10) )
+    if ( date ( "n" ) <= 5 )
         $saison = date ( "Y" ) - 1;
     else
         $saison = date ( "Y" );
@@ -73,8 +72,7 @@
             , $globals ['db'] );
         $count += mysql_affected_rows ( $globals ['db'] );
     }
-    echo "<b>Habe $count Wertungszahlen aktualisiert.</b>";
+    echo "Habe $count Wertungszahlen aktualisiert.";
 
     // Cache löschen
-    SED_Cache::clear (); // also für alle Turniere
-?>
+    // SED_Cache::clear (); // also für alle Turniere

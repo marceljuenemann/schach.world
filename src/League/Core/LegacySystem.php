@@ -11,7 +11,7 @@ use Nsv\WebApp\Core\WordPress\Auth;
  */
 class LegacySystem
 {
-  function __construct() {}
+  function __construct(private string $projectDir) {}
 
   /**
    * Sets up the database connection and global variables of the legacy system without
@@ -24,7 +24,7 @@ class LegacySystem
       $_GET['debugme'] = 1;
     }
 
-    chdir(ABSPATH . '../ligen/_inc');
+    chdir($this->projectDir . '/public/ligen/_inc');
     global $globals;
     $globals['basedir'] = '..';
 
@@ -42,5 +42,16 @@ class LegacySystem
 
     // Don't send Content-Type header: https://www.saotn.org/php-56-default_charset-change-may-break-html-output/
     ini_set( 'default_charset', "" );
+  }
+
+  /**
+   * Invokes an _admin script and returns the output.
+   */
+  function invokeAdminScript(string $scriptName) {
+    global $globals;
+    $globals['adminScript'] = $scriptName;
+    ob_start();
+    include("../_admin/{$scriptName}.php");
+    return ob_get_clean();
   }
 }
