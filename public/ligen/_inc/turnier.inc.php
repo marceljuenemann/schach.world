@@ -18,7 +18,7 @@
   // Symfony will take care of setting $globals[tid] already.
   global $globals;
   global $prefs;
-  $prefs = mysql_fetch_array ( mysql_query ( "SELECT t.* FROM turniere as t WHERE t.id=$globals[tid]", $globals ['db'] ), MYSQL_ASSOC );
+  $prefs = SED_Query("SELECT t.* FROM turniere as t WHERE t.id=?", [$globals['tid']])->fetchAssociative();
 
   // Fehler?
   if ( !is_array ( $prefs ) )
@@ -47,7 +47,17 @@
   {
     global $globals;
     // Eigentlich gibt es mittlerweile ja viewStaffeltermine, allerdings funktioniert das hier auch, wenn keine Turniertermine festgelegt wurden, sondern nur Staffeltermine
-    return SED_MYSQL_Value("SELECT DATE_FORMAT(te.datum,'$datumsformat') as datum FROM termine as te WHERE te.turnier=$globals[tid] and te.runde=$runde and (te.staffel is null or te.staffel=$staffel) ORDER BY staffel DESC LIMIT 1" );
+    return SED_Query("
+      SELECT DATE_FORMAT(te.datum,'$datumsformat') as datum
+      FROM termine as te
+      WHERE te.turnier=? and te.runde=? and (te.staffel is null or te.staffel=?)
+      ORDER BY staffel DESC LIMIT 1",
+      [
+        $globals['tid'],
+        $runde,
+        $staffel
+      ]
+    )->fetchOne();
   }
 
   // Liefert die Anzahl der Runden einer Staffel
@@ -64,13 +74,16 @@
             return $prefs [$feld];
 
     // Abfragen, ob die Anzahl vom Turnier-Standart abweicht
-    return SED_MYSQL_Value("SELECT IF($feld IS NULL,".$prefs[$feld].",$feld) FROM staffeln WHERE id=$staffel");
+    return SED_Value("
+      SELECT IF($feld IS NULL,".$prefs[$feld].",$feld) FROM staffeln WHERE id=?",
+      [$staffel]
+    );
   }
 
   // Liefert die letzte Runde in der eine Paarung gesetzt ist
   function SED_GetLetzteRunde ( $staffel )
   {
-    return SED_MYSQL_Value("SELECT MAX( runde )  FROM paarungen WHERE staffel='$staffel'");
+    return SED_Query("SELECT MAX( runde )  FROM paarungen WHERE staffel=?", [$staffel])->fetchOne();
   }
 
   // Liefert die Anzahl der Bretter einer Staffel

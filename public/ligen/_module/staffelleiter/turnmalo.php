@@ -13,7 +13,7 @@
     require_once ( "login.inc.php");
 
     // Hat die Mannschaft schon Spiele?
-    $hasGames = SED_MYSQL_Array ( "SELECT id FROM paarungen WHERE mannschaft1='$_GET[mid]' OR mannschaft2='$_GET[mid]' LIMIT 1", false );
+    $hasGames = SED_Query("SELECT id FROM paarungen WHERE mannschaft1=? OR mannschaft2=? LIMIT 1", [$_GET['mid'], $_GET['mid']])->fetchOne();
     if ( $hasGames ) SED_Error ( "F&uuml;r die Mannschaft wurden bereits Paarungen gesetzt => Sie kann nicht gel&ouml;scht werden.", true );
 
     if ( isset ( $_GET ['mid'] ) )

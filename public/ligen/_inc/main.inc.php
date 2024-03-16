@@ -12,6 +12,7 @@
  * @subpackage main
  */
 
+use Doctrine\DBAL\Result as DBALResult;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Core\Result;
 
@@ -79,37 +80,43 @@ use Nsv\League\Core\Result;
     return filter_var ( $email, FILTER_VALIDATE_EMAIL );
   }
 
-	
-	// Liefert das erste Ergebnis einer Abfrage als Array
-	function SED_MYSQL_Array ( $sql, $exit = false )
-	{
-		global $globals;
-		$rsrc = mysql_query ( $sql, $globals ['db'] );
-		if ( !$rsrc )
-		{
-			if ( $exit )
-				SED_Error ( "Fehler in Abfrage! <!-- $sql -->", true );
-			else 
-				return false;
-		}
-		return mysql_fetch_array ( $rsrc, MYSQL_ASSOC );
-	}
- 
- 
-	// Liefert den erste Wert einer Abfrage, oder null.
-	function SED_MYSQL_Value ( $sql, $exit = false )
-	{
-		global $globals;
-    $row = SED_MYSQL_Array($sql, $exit);
-    if (!$row || !count($row)) {
-			if ( $exit )
-				SED_Error ( "Fehler in Abfrage! <!-- $sql -->", true );
-			else 
-				return null;
-		}
-    return reset($row);
-	}
- 
+  /**
+   * Prepares and executes the given query.
+   * 
+   * @param sql the query to prepare
+   * @param params the parameters to fill in
+   * @see Connection#executeQuery
+   * @return DBALResult
+   * @throws Exception
+   */
+  function SED_Query(string $sql, array $params = []): DBALResult {
+    global $globals;
+    $connection = $globals['em']->getConnection();
+    return $connection->executeQuery($sql, $params);
+  }
+
+  /**
+   * Returns the first row of a query and throws an exception if no row was found.
+   * 
+   * Use SED_Query(...)->fetchAssociative() if you don't want an exception to be thrown.
+   */
+  function SED_Row(string $sql, array $params = []): array {
+    $data = SED_Query($sql, $params)->fetchAssociative();
+    if ($data === false) {
+      throw new \Exception("No results for query {$sql}");
+    }
+    return $data;
+  }
+
+  /**
+   * Returns the first value of a query and throws an exception if no value was found.
+   * 
+   * Use SED_Query(...)->fetchOne() if you don't want an exception to be thrown.
+   */
+  function SED_Value(string $sql, array $params = []): mixed {
+    $row = SED_Row($sql, $params);
+    return current($row);
+  }
   
   // Generiert den Pfad für Formulare, wenn die Zielseite gleich ist
   function SED_GenerateFormAction ( $without = false )
