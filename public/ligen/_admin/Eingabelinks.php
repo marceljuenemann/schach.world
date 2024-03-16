@@ -13,15 +13,13 @@
  * @subpackage admin
  */
 
+    $globals['adminScript'] === 'Eingabelinks' or die('Invalid invocation');
+
     // Kann auch mal etwas länger dauern
     ini_set ( "max_execution_time", 30000 );
-    echo "Willkommen zur Eingabelinkversendung\n";
 
-    require_once ( "admin.inc.php" );
     require_once ( "tinyurl.inc.php" );
     require_once ( "mail.eingabelink.inc.php" );
-    if ( $_GET ["auth"] != substr ( $globals ["masterpasswort"], 5, 5 ) )
-        SED_Error ( "Keine Berechtigung!", true );
 
     // Paarungen sammeln
     $paar = mysql_query ( "
