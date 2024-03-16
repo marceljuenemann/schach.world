@@ -26,7 +26,7 @@ RewriteRule ^$  /wordpress/index.php [L]
 RewriteRule ^/$ /wordpress/index.php [L]
 
 # Sonderbehandlungen für Spezielle URLs
-RewriteRule ^([A-Za-z0-9\-]+)/Rundschreiben/([0-9]*)/Runde([0-9]*).pdf /ligen/index.php?dir=$1&staffel=$2&r=$3&ausgabe=pdf [L]
+RewriteRule ^([A-Za-z0-9\-]+)/Rundschreiben/([0-9]*)/Runde([0-9]*).pdf /ligen/$1/?staffel=$2&r=$3&ausgabe=pdf [R,L]
 RewriteRule ^([A-Za-z0-9\-]+)/anmeldung.html /ligen/$1/?m=anmeldung [R]
 
 # TINYURL
