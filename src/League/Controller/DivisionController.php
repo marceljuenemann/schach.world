@@ -6,6 +6,7 @@ use Nsv\League\Api\Service\MatchDayService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LeagueAuthState;
+use Nsv\League\Core\LegacySystem;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Symfony\Component\HttpFoundation\Response;
@@ -20,9 +21,10 @@ class DivisionController extends AbstractLeagueController {
   function __construct(
     League $league,
     LeagueAuthState $auth,
+    LegacySystem $legacySystem,
     Division $division
   ) {
-    parent::__construct($league, $auth);
+    parent::__construct($league, $auth, $legacySystem);
     $this->division = $division;
   }
 
