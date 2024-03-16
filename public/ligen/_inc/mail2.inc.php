@@ -52,8 +52,10 @@ function SED_SendMail($mailer, $to, $vars = array()) {
           echo "Gesendet.<br />";
           $success = "SENT";
       }
-      else
+      else {
           echo "Ein Fehler beim Senden.<br />";
+          echo "<!-- " . $mailer->ErrorInfo . " -->";
+      }
 
       // Versand loggen
       $log = "eMail $success - Betreff: ".$mailer->Subject." An: ";

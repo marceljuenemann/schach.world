@@ -96,12 +96,12 @@
   ///////////////////////////////////////////////////////
 
   function SED_SmtpConfig($mail) {
-    $mail->Host       = 'sslout.df.eu';
-    $mail->Port       = 465;
+    // For development, I recommend using mailtrap.io
+    $mail->Host       = 'sandbox.smtp.mailtrap.io';
+    $mail->Port       = 2525;
     $mail->SMTPAuth   = true;
-    $mail->SMTPSecure = 'ssl';
-    $mail->Username   = 'webmaster@nsv-online.de';
-    $mail->Password   = 'ADD PASSWORD HERE';
+    $mail->Username   = 'YOUR USERNAME';
+    $mail->Password   = 'YOUR PASSWORD';
     $mail->setFrom('webmaster@nsv-online.de', 'Schach Ergebnisdienst');
   }
 ?>
