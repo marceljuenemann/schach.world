@@ -4,10 +4,10 @@ namespace Nsv\League\Controller;
 
 use Nsv\League\Api\Service\MatchDayService;
 use Nsv\League\Api\Service\ScheduleService;
+use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
-use Nsv\League\Entity\Round;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -39,6 +39,20 @@ class DivisionController extends AbstractLeagueController {
   public function schedule_debug(ScheduleService $service): Response {
     $matchDays = $service->divisionSchedule($this->division);
     return $this->debugResponse($matchDays);
+  }
+
+  #[Route('{division}/{round}/pdf/', name: 'pdf')]
+  public function pdf(int $round): Response {
+    $this->initializeLegacySystem();
+    $_GET['r'] = $round;
+    $_GET['ausgabe'] = 'pdf';
+
+    ob_start();
+    require('../_module/spieltag/spieltag.php');
+    $body = ob_get_clean();
+    $response = new Response($body);
+    $response->setCharset(Encoding::CHARSET);
+    return $response;
   }
 
   #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]

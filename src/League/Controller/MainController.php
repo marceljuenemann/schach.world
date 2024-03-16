@@ -12,6 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * Controller for the main publicly accessible routes.
  */
+// TODO: Maybe rename to LeagueController?
 #[Route('/ligen/{league}/', name: 'league_')]
 class MainController extends AbstractLeagueController {
 
