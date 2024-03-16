@@ -4,6 +4,11 @@ monolog:
         - deprecation
         # Channel used by the league manager
         - league
+    handlers:
+        league_log:
+            type: stream
+            path: "%kernel.logs_dir%/league.log"
+            channels: ["league"]
 
 when@dev:
     monolog:

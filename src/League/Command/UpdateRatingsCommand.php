@@ -3,6 +3,7 @@
 namespace Nsv\League\Command;
 
 use Nsv\League\Core\LegacySystem;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -14,7 +15,10 @@ use Symfony\Component\Console\Output\OutputInterface;
 )]
 class UpdateRatingsCommand extends Command
 {
-  function __construct(private LegacySystem $legacySystem) {
+  function __construct(
+    private LoggerInterface $leagueLogger,
+    private LegacySystem $legacySystem
+  ) {
     parent::__construct();
   }
 
@@ -24,9 +28,8 @@ class UpdateRatingsCommand extends Command
     $buffered = $this->legacySystem->invokeAdminScript('DwzUpdate');
     $buffered = preg_replace('/\<br(\s*)?\/?\>/i', "\n", $buffered);
     
-    // TODO: log to league.log
-    // TODO: cron script
     $output->writeln($buffered);
+    $this->leagueLogger->info('league:update-ratings output: ' . $buffered);
 
     return Command::SUCCESS;
   }

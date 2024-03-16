@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+php81 ../console league:update-ratings
