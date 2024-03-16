@@ -83,7 +83,11 @@ class Team
   #[ORM\OrderBy(["number" => "ASC"])]
   private $players;
 
-  #[ORM\OneToMany(targetEntity: TeamDetail::class, mappedBy: 'team')]
+  #[ORM\OneToMany(targetEntity: TeamRecipient::class, mappedBy: 'team')]
+  #[ORM\OrderBy(["id" => "ASC"])]
+  private $additionalRecipients;
+
+  #[ORM\OneToMany(targetEntity: TeamDetail::class, mappedBy: 'team')]   
   private $details;
 
   public function nameWithNumber() {

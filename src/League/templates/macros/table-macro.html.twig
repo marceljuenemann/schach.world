@@ -14,7 +14,7 @@
                     {% set cell_title = '' %}
                 {% endif %}
 
-                <th class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title|raw) }}>{{ cell.text | raw }}</th>
+                <th class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>{{ cell.text|raw}}</th>
             {% endfor %}
         </tr>
         {% for row in table_data.body %}
@@ -28,11 +28,11 @@
                     {% endif %}
 
                     {% if cell.link %}
-                        <td class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title|raw) }}>
+                        <td class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>
                             {{ _self.table_link(cell.link, cell.text) }}
                         </td>
                     {% else %}
-                        <td class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title|raw) }}>{{ cell.text }}</td>
+                        <td class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>{{ cell.text }}</td>
                     {% endif %}
                 {% endfor %}
             </tr>

@@ -298,14 +298,3 @@ div.sed_infomeldung {
   width: 75%;
 }
 
-/************************************/
-/*** New Division Statistics Page ***/
-/************************************/
-
-table.statistics-topscorer td.points {
-  font-weight: bold;
-}
-table td.format-bold {
-  font-weight: bold;
-}
-

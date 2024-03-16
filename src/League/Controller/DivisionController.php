@@ -11,8 +11,8 @@ use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Round;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Api\Service\StatisticsService;
+use Doctrine\ORM\EntityManagerInterface;
 
 /**
  * Controller for division specific routes.
@@ -27,12 +27,12 @@ class DivisionController extends AbstractLeagueController
     League                  $league,
     LeagueAuthState         $auth,
     Division                $division,
-    private ManagerRegistry $doctrine
+    private EntityManagerInterface $leagueEntityManager
   )
   {
     parent::__construct($league, $auth);
     $this->division = $division;
-    $this->entityManager = $this->doctrine->getManager('league');
+    $this->entityManager = $this->leagueEntityManager;
   }
 
   #[Route('{division}/spielplan/', name: 'schedule')]
@@ -61,7 +61,8 @@ class DivisionController extends AbstractLeagueController
   #[Route('{division}/statistik', name: 'statistik')]
   public function statistics(StatisticsService $service): Response
   {
-    $division_name = $this->division->name;
+
+       $division_name = $this->division->name;
 
     $dwz_data = $service->create_dwz_statistics_table($this->division);
 
