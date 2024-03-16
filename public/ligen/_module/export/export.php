@@ -13,9 +13,14 @@
     require_once ( "mannschaft.class.php" );
 
     function getZusatz ( $feld ){
-        global $globals;
         $mid = $_GET ["mid"];
-        return SED_MYSQL_Value("SELECT inhalt FROM anmeldungZusatzfelder WHERE feldname LIKE '$feld' AND mannschaft=$mid");
+        return SED_Query("
+          SELECT inhalt
+          FROM anmeldungZusatzfelder
+          WHERE feldname LIKE ?
+            AND mannschaft=?",
+          [$feld, $mid]
+        )->fetchOne();
     }
 
     function toInline ( $str ){

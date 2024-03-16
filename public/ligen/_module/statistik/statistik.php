@@ -170,15 +170,17 @@
             $teams [$m]["alter"] = "";
 
         // Top X berechnen
-        $topX = SED_MYSQL_Value(
+        $topX = SED_Query(
             "SELECT ROUND(AVG(dwz2))
             FROM (
                 SELECT IF(dwz IS NOT NULL and dwz>0,dwz,700) as dwz2
                 FROM spieler
-                WHERE mannschaft=$mannschaft[mnr]
+                WHERE mannschaft=?
                 ORDER BY brettnr
                 LIMIT $brettzahl
-            ) as a");
+            ) as a",
+            [$mannschaft['mnr']]
+        )->fetchOne();
         $teams [$m]["topX"] = $topX;
     }
 

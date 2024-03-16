@@ -30,7 +30,7 @@ function SED_SendMail($mailer, $to, $vars = array()) {
       if ( SED_IsValidEmail ( $to ) ) {
           $mailer->AddAddress ( $to );
       } elseif ( $to == SED_MAIL_TURNIERLEITER ) {
-         $mailer->AddAddress ( SED_MYSQL_Value ( "SELECT email FROM benutzer WHERE id=$prefs[leiter] LIMIT 1" ) );
+         $mailer->AddAddress ( SED_Value ( "SELECT email FROM benutzer WHERE id=? LIMIT 1", [$prefs['leiter']] ) );
       } 
   }
 

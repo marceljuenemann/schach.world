@@ -117,37 +117,6 @@ use Nsv\League\Core\Result;
     $row = SED_Row($sql, $params);
     return current($row);
   }
-
-  // Liefert das erste Ergebnis einer Abfrage als Array
-	function SED_MYSQL_Array ( $sql, $exit = false )
-	{
-		global $globals;
-		$rsrc = mysql_query ( $sql, $globals ['db'] );
-		if ( !$rsrc )
-		{
-			if ( $exit )
-				SED_Error ( "Fehler in Abfrage! <!-- $sql -->", true );
-			else 
-				return false;
-		}
-		return mysql_fetch_array ( $rsrc, MYSQL_ASSOC );
-	}
- 
- 
-	// Liefert den erste Wert einer Abfrage, oder null.
-	function SED_MYSQL_Value ( $sql, $exit = false )
-	{
-		global $globals;
-    $row = SED_MYSQL_Array($sql, $exit);
-    if (!$row || !count($row)) {
-			if ( $exit )
-				SED_Error ( "Fehler in Abfrage! <!-- $sql -->", true );
-			else 
-				return null;
-		}
-    return reset($row);
-	}
- 
   
   // Generiert den Pfad für Formulare, wenn die Zielseite gleich ist
   function SED_GenerateFormAction ( $without = false )
