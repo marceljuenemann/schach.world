@@ -60,13 +60,13 @@ class SED_Anmeldung {
         // Guten Namen aus der Datenbank holen
         foreach ( $this->getZpsList () as $zps ){
             if ( $name = SED_Query ( "SELECT name FROM mannschaften WHERE zps=? ORDER BY id DESC LIMIT 1", [$zps] )->fetchOne() )
-                return reset ( $name );
+                return $name;
         }
         
         // Einfach den Vereinsnamen abschneiden
         foreach ( $this->getZpsList () as $zps ){
             if ( $name = SED_Query ( "SELECT Vereinname FROM dwz_vereine WHERE ZPS=?", [$zps] )->fetchOne() )
-                return reset ( $name );
+                return $name;
         }
         
         // Ansonsten ist irgendwas schief gelaufen...
