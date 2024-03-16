@@ -133,7 +133,7 @@
     $koenig = count($koenig) ? reset($koenig[max(array_keys($koenig))]) : '';
     foreach ( array_merge ( $topscorer, $koenig ? [$koenig] : [] ) as $id ){
         if ( $id )
-            foreach ( SED_MYSQL_Array ( "SELECT id, CONCAT(vorname,' ',nachname) name, dwz, mannschaft FROM spieler WHERE id=$id LIMIT 1" ) as $key=>$value )
+            foreach ( SED_Row ( "SELECT id, CONCAT(vorname,' ',nachname) name, dwz, mannschaft FROM spieler WHERE id=? LIMIT 1", [$id] ) as $key=>$value )
                 $spieler [$id][$key] = $value;
     }
 

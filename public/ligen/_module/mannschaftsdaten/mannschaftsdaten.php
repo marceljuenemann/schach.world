@@ -24,7 +24,7 @@
 
     function getDaten ()
     {
-        return SED_MYSQL_Array ( "SELECT * FROM mannschaften WHERE id='$_GET[mid]'", true );
+      return SED_Row("SELECT * FROM mannschaften WHERE id=?", [$_GET['mid']]);
     }
 
       ///////////////////////////////////////

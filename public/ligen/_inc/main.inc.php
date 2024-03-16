@@ -95,6 +95,29 @@ use Nsv\League\Core\Result;
     return $connection->executeQuery($sql, $params);
   }
 
+  /**
+   * Returns the first row of a query and throws an exception if no row was found.
+   * 
+   * Use SED_Query(...)->fetchAssociative() if you don't want an exception to be thrown.
+   */
+  function SED_Row(string $sql, array $params = []): array {
+    $data = SED_Query($sql, $params)->fetchAssociative();
+    if ($data === false) {
+      throw new \Exception("No results for query {$sql}");
+    }
+    return $data;
+  }
+
+  /**
+   * Returns the first value of a query and throws an exception if no value was found.
+   * 
+   * Use SED_Query(...)->fetchOne() if you don't want an exception to be thrown.
+   */
+  function SED_Value(string $sql, array $params = []): mixed {
+    $row = SED_Row($sql, $params);
+    return current($row);
+  }
+
   // Liefert das erste Ergebnis einer Abfrage als Array
 	function SED_MYSQL_Array ( $sql, $exit = false )
 	{

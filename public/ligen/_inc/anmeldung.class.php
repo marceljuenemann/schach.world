@@ -59,13 +59,13 @@ class SED_Anmeldung {
 
         // Guten Namen aus der Datenbank holen
         foreach ( $this->getZpsList () as $zps ){
-            if ( $name = SED_MYSQL_Array ( "SELECT name FROM mannschaften WHERE zps='$zps' ORDER BY id DESC LIMIT 1" ) )
+            if ( $name = SED_Query ( "SELECT name FROM mannschaften WHERE zps=? ORDER BY id DESC LIMIT 1", [$zps] )->fetchOne() )
                 return reset ( $name );
         }
         
         // Einfach den Vereinsnamen abschneiden
         foreach ( $this->getZpsList () as $zps ){
-            if ( $name = SED_MYSQL_Array ( "SELECT Vereinname FROM dwz_vereine WHERE ZPS='$zps'" ) )
+            if ( $name = SED_Query ( "SELECT Vereinname FROM dwz_vereine WHERE ZPS=?", [$zps] )->fetchOne() )
                 return reset ( $name );
         }
         
@@ -82,7 +82,7 @@ class SED_Anmeldung {
         
         // Letztes angegebenes Spiellokal
         foreach ( $this->getZpsList () as $zps ){
-            if ( $so = SED_MYSQL_Array ( "SELECT * FROM mannschaften WHERE zps='$zps' AND LENGTH(so_plz)=5 ORDER BY id DESC" ) )
+            if ( $so = SED_Query ( "SELECT * FROM mannschaften WHERE zps=? AND LENGTH(so_plz)=5 ORDER BY id DESC", [$zps] )->fetchAssociative() )
                 return $so;
         }
         
@@ -100,12 +100,19 @@ class SED_Anmeldung {
         }
         
         // Versuch über letztes Jahr
-        if ( $mf = SED_MYSQL_Array ( "SELECT * FROM turniere t INNER JOIN mannschaften m ON m.turnier=t.id AND m.zps='".$this->data['zps']."' AND m.mnr='".$this->data['mnr']."' WHERE t.organisation='$prefs[organisation]' AND t.startjahr=".((int) $prefs['startjahr'])."-1 LIMIT 1" ) )
+        if ( $mf = SED_Query ( "
+                SELECT *
+                FROM turniere t
+                INNER JOIN mannschaften m ON m.turnier=t.id AND m.zps=? AND m.mnr=?
+                WHERE t.organisation=? AND t.startjahr=?
+                LIMIT 1", 
+                [$this->data['zps'], $this->data['mnr'], $prefs['organisation'], $prefs['startjahr'] - 1]
+            )->fetchAssociative())
             return $mf;
         
         // Letzter angegebener Mannschaftsführer
         foreach ( $this->getZpsList () as $zps ){
-            if ( $mf = SED_MYSQL_Array ( "SELECT * FROM mannschaften WHERE zps='$zps' AND LENGTH(so_plz)=5 ORDER BY id DESC" ) )
+            if ( $mf = SED_Query ( "SELECT * FROM mannschaften WHERE zps=? AND LENGTH(so_plz)=5 ORDER BY id DESC", [$zps] )->fetchAssociative() )
                 return $mf;
         }
         
