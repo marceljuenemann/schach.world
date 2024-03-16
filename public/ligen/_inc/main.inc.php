@@ -12,6 +12,7 @@
  * @subpackage main
  */
 
+use Doctrine\DBAL\Result as DBALResult;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Core\Result;
 
@@ -79,8 +80,22 @@ use Nsv\League\Core\Result;
     return filter_var ( $email, FILTER_VALIDATE_EMAIL );
   }
 
-	
-	// Liefert das erste Ergebnis einer Abfrage als Array
+  /**
+   * Prepares and executes the given query.
+   * 
+   * @param sql the query to prepare
+   * @param params the parameters to fill in
+   * @see Connection#executeQuery
+   * @return DBALResult
+   * @throws Exception
+   */
+  function SED_Query(string $sql, array $params = []): DBALResult {
+    global $globals;
+    $connection = $globals['em']->getConnection();
+    return $connection->executeQuery($sql, $params);
+  }
+
+  // Liefert das erste Ergebnis einer Abfrage als Array
 	function SED_MYSQL_Array ( $sql, $exit = false )
 	{
 		global $globals;

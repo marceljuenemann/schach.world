@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Core;
 
+use Doctrine\ORM\EntityManagerInterface;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\WebApp\Core\WordPress\Auth;
@@ -11,7 +12,7 @@ use Nsv\WebApp\Core\WordPress\Auth;
  */
 class LegacySystem
 {
-  function __construct(private string $projectDir) {}
+  function __construct(private string $projectDir, private EntityManagerInterface $leagueEntityManager) {}
 
   /**
    * Sets up the database connection and global variables of the legacy system without
@@ -27,6 +28,7 @@ class LegacySystem
     chdir($this->projectDir . '/public/ligen/_inc');
     global $globals;
     $globals['basedir'] = '..';
+    $globals['em'] = $this->leagueEntityManager;
 
     if (isset($league)) {
       $globals['league'] = $league;

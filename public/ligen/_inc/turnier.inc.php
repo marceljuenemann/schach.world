@@ -18,7 +18,7 @@
   // Symfony will take care of setting $globals[tid] already.
   global $globals;
   global $prefs;
-  $prefs = mysql_fetch_array ( mysql_query ( "SELECT t.* FROM turniere as t WHERE t.id=$globals[tid]", $globals ['db'] ), MYSQL_ASSOC );
+  $prefs = SED_Query("SELECT t.* FROM turniere as t WHERE t.id=?", [$globals['tid']])->fetchAssociative();
 
   // Fehler?
   if ( !is_array ( $prefs ) )
