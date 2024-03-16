@@ -20,23 +20,23 @@ class TeamRepository extends ServiceEntityRepository
 
   // TODO: move into our own abstract repository? 
   public function find($id, $lockMode = null, $lockVersion = null): Team {
-    $entity = parent::find((int) $id, $lockMode, $lockVersion);
+    $entity = parent::find((int)$id, $lockMode, $lockVersion);
     if (!$entity) {
       throw new NotFoundHttpException("Team not found");
     }
     return $entity;
   }
 
-    /**
-     * Find all players for a team, also the inactive ones.
-     */
+  /**
+   * Find all players for a team, also the inactive ones.
+   */
   public function team_all_players($team) {
-      return $this->createQueryBuilder('team')
-          ->select('team, players')
-          ->leftJoin('team.players', 'players')
-          ->where('team.id = :team')
-          ->setParameter('team', $team->id)
-          ->getQuery()
-          ->getResult();
+    return $this->createQueryBuilder('team')
+      ->select('team, players')
+      ->leftJoin('team.players', 'players')
+      ->where('team.id = :team')
+      ->setParameter('team', $team->id)
+      ->getQuery()
+      ->getResult();
   }
 }
