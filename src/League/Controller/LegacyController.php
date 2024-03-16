@@ -6,6 +6,7 @@ use Doctrine\ORM\EntityNotFoundException;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LeagueAuthProvider;
 use Nsv\League\Core\LeagueAuthState;
+use Nsv\League\Core\LegacySystem;
 use Nsv\League\Entity\League;
 use Nsv\League\Repository\DivisionRepository;
 use Nsv\League\Repository\PlayerRepository;
@@ -29,9 +30,10 @@ class LegacyController extends AbstractLeagueController {
     private TeamRepository $teamRepository,
     private NsvJs $nsvJs,
     League $league,
-    LeagueAuthState $auth
+    LeagueAuthState $auth,
+    LegacySystem $legacySystem
   ) {
-    parent::__construct($league, $auth);
+    parent::__construct($league, $auth, $legacySystem);
   }
 
   #[Route('ligen/{league}/', name: 'legacy')]
