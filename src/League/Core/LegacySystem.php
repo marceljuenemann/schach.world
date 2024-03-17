@@ -6,13 +6,19 @@ use Doctrine\ORM\EntityManagerInterface;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\WebApp\Core\WordPress\Auth;
+use Psr\Log\LoggerInterface;
 
 /**
  * Integration with the legacy league system located in the public/ligen/ directory.
  */
 class LegacySystem
 {
-  function __construct(private string $projectDir, private EntityManagerInterface $leagueEntityManager) {}
+  function __construct(
+    private string $projectDir,
+    // Pubic variables exposed to the legacy system.
+    public readonly EntityManagerInterface $leagueEntityManager,
+    public readonly LoggerInterface $leagueLogger
+  ) {}
 
   /**
    * Sets up the database connection and global variables of the legacy system without
@@ -28,7 +34,7 @@ class LegacySystem
     chdir($this->projectDir . '/public/ligen/_inc');
     global $globals;
     $globals['basedir'] = '..';
-    $globals['em'] = $this->leagueEntityManager;
+    $globals['bridge'] = $this;
 
     if (isset($league)) {
       $globals['league'] = $league;
