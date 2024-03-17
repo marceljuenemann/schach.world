@@ -14,6 +14,7 @@
 
 use Doctrine\DBAL\Result as DBALResult;
 use Nsv\League\Core\Encoding;
+use Nsv\League\Core\LegacySystem;
 use Nsv\League\Core\Result;
 
   require_once ( "../../libs/mysql-shim.php" );
@@ -81,6 +82,14 @@ use Nsv\League\Core\Result;
   }
 
   /**
+   * Bridge into the new Symfony application.
+   */
+  function SED_Bridge(): LegacySystem {
+    global $globals;
+    return $globals['bridge'];
+  }
+
+  /**
    * Prepares and executes the given query.
    * 
    * @param sql the query to prepare
@@ -90,8 +99,7 @@ use Nsv\League\Core\Result;
    * @throws Exception
    */
   function SED_Query(string $sql, array $params = []): DBALResult {
-    global $globals;
-    $connection = $globals['em']->getConnection();
+    $connection = SED_Bridge()->leagueEntityManager->getConnection();
     return $connection->executeQuery($sql, $params);
   }
 
