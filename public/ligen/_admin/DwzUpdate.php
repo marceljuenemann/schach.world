@@ -27,29 +27,38 @@
     echo "Aktuelle Saison ist: $saison<br />";
 
     // Alle betroffenen Mannschaften finden, die noch ein Spiel ohne Ergebnis haben.
-    // $teams = mysql_query ( "SELECT m.id, m.zps FROM mannschaften m INNER JOIN turniere t ON t.id=m.turnier WHERE t.startjahr='$saison'", $globals ["db"] );
-    $teams = mysql_query ( "SELECT DISTINCT m.id, m.zps FROM mannschaften m INNER JOIN turniere t ON t.id=m.turnier WHERE t.startjahr='$saison' AND EXISTS(SELECT 1 FROM paarungen p WHERE p.erg1 IS NULL AND p.erg2 IS NULL AND (p.mannschaft1=m.id OR p.mannschaft2=m.id))", $globals ["db"] );
-    echo "Anzahl betroffener Mannschaften: ".mysql_num_rows($teams)."<br />";
+    $teams = SED_Query("
+        SELECT DISTINCT m.id, m.zps
+        FROM mannschaften m
+        INNER JOIN turniere t ON t.id=m.turnier
+        WHERE t.startjahr=? AND EXISTS(
+            SELECT 1
+            FROM paarungen p
+            WHERE p.erg1 IS NULL AND p.erg2 IS NULL
+             AND (p.mannschaft1=m.id OR p.mannschaft2=m.id))",
+        [$saison]
+    )->fetchAllAssociative();
+    echo "Anzahl betroffener Mannschaften: ".count($teams)."<br />";
 
     // Spielern ohne ZPS eine ZPS geben
-    while ( $team = mysql_fetch_array ( $teams ) ){
+    foreach($teams as $team){
         // Spieler ohne ZPS suchen
-        $spieler = mysql_query ( "SELECT * FROM spieler s WHERE s.mannschaft=$team[id] AND (LENGTH(s.zps)<7 OR s.zps IS NULL)", $globals ['db'] );
+        $spieler = SED_Query("SELECT * FROM spieler s WHERE s.mannschaft=? AND (LENGTH(s.zps)<7 OR s.zps IS NULL)", [$team['id']])->fetchAllAssociative();
 
         // Anzahl der Spieler ausgeben
-        if ( $spieler && $count = mysql_affected_rows ( $globals ['db'] ) ){
+        if ( $count = count($spieler) ){
             echo "<b>In der Mannschaft $team[id] haben $count Spieler keine ZPS.</b><br />";
 
             // Fuer jeden Spieler eine ZPS suchen
-            while ( $sp = mysql_fetch_array ( $spieler ) ){
-                if (  mysql_query (
+            foreach ($spieler as $sp){
+                if (  SED_Query (
                     "UPDATE spieler s
                         INNER JOIN dwz_spieler d
                         ON d.Spielername LIKE CONCAT(s.nachname,',',s.vorname,'%')
-                        AND (d.ZPS=SUBSTR('$team[zps]',1,5) OR d.ZPS=SUBSTR('$team[zps]',6,5))
+                        AND (d.ZPS=SUBSTR(?,1,5) OR d.ZPS=SUBSTR(?,6,5))
                     SET s.zps=CONCAT(d.ZPS,'-',d.Mgl_Nr)
-                    WHERE s.id=$sp[id]"
-                    , $globals ['db'] ) && mysql_affected_rows () )
+                    WHERE s.id=?",
+                    [$team['zps'], $team['zps'], $sp['id']])->rowCount())
                 {
                     echo "$sp[nachname] hat eine ZPS bekommen.<br />";
                 } else {
@@ -60,17 +69,16 @@
     }
 
     // DWZ-Update
-    mysql_data_seek ( $teams, 0 );
     $count = 0;
-    while ( $team = mysql_fetch_array ( $teams ) ){
-        $spieler = mysql_query ( $x=
+    foreach($teams as $team) {
+        $count += SED_Query (
             "UPDATE spieler s
                 INNER JOIN dwz_spieler d
                 ON d.ZPS=SUBSTR(s.zps,1,5) AND d.Mgl_Nr=SUBSTR(s.zps,7)
             SET s.dwz=d.DWZ, s.elo=d.FIDE_Elo, s.geschlecht=LOWER(d.Geschlecht), s.geburt=d.Geburtsjahr
-            WHERE s.mannschaft=$team[id] AND (s.dwz IS NULL or s.dwz<>d.DWZ OR s.elo<>d.FIDE_Elo)"
-            , $globals ['db'] );
-        $count += mysql_affected_rows ( $globals ['db'] );
+            WHERE s.mannschaft=? AND (s.dwz IS NULL or s.dwz<>d.DWZ OR s.elo<>d.FIDE_Elo)",
+            [$team['id']]
+        )->rowCount();
     }
     echo "Habe $count Wertungszahlen aktualisiert.";
 

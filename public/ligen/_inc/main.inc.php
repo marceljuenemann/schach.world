@@ -104,6 +104,20 @@ use Nsv\League\Core\Result;
   }
 
   /**
+   * Prepares and executes the given query and returns the result or false if an exception occurred.
+   * 
+   * This is intended to be an easy replacement from mysql_query().
+   */
+  function SED_TryQuery(string $sql, array $params = []): DBALResult|false {
+    try {
+      return SED_Query($sql, $params);
+    } catch (\Exception $e) {
+      SED_Bridge()->leagueLogger->error("SED_TryQuery failed: {$e->getMessage()}", ['sql' => $sql, 'params' => $params]);
+      return false;
+    }
+  }
+
+  /**
    * Returns the first row of a query and throws an exception if no row was found.
    * 
    * Use SED_Query(...)->fetchAssociative() if you don't want an exception to be thrown.
