@@ -13,6 +13,7 @@ use Nsv\League\Repository\PlayerRepository;
 use Nsv\League\Repository\TeamRepository;
 use Nsv\WebApp\Core\NsvJs;
 use Nsv\WebApp\Core\WordPress\Auth as WordPressAuth;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
@@ -29,6 +30,7 @@ class LegacyController extends AbstractLeagueController {
     private PlayerRepository $playerRepository,
     private TeamRepository $teamRepository,
     private NsvJs $nsvJs,
+    private LoggerInterface $leagueLogger,
     League $league,
     LeagueAuthState $auth,
     LegacySystem $legacySystem
@@ -68,11 +70,9 @@ class LegacyController extends AbstractLeagueController {
         require_once ( $modulpfad );
       }
     } catch (\Exception $e) {
-      // Report the error.
-      // TODO: move this task to the logger.
-      if (!($e instanceof NotFoundHttpException) && !($e instanceof AccessDeniedHttpException) && !WordPressAuth::isAdmin()) {
-        global $globals;
-        @wp_mail($globals['webmaster_mail'], 'LeagueController Exception', $request->getUri() . "\n\n".$e);
+      // Log the error.
+      if (!($e instanceof NotFoundHttpException) && !($e instanceof AccessDeniedHttpException)) {
+        $this->leagueLogger->error("Exception in legacy league system: " . $e->getMessage(), ['exception' => $e]);
       }
 
       // The legacy script often outputs HTML before fully processing the request.
