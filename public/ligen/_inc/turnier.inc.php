@@ -14,10 +14,13 @@
  * @subpackage main
  */
 
+  $bridge = SED_Bridge();
+  $league = $bridge->league;
+
   // Felder aus Turnier-Tabelle in $prefs speichern
-  // Symfony will take care of setting $globals[tid] already.
   global $globals;
   global $prefs;
+  $globals['tid'] = $league->id;
   $prefs = SED_Query("SELECT t.* FROM turniere as t WHERE t.id=?", [$globals['tid']])->fetchAssociative();
 
   // Fehler?
@@ -32,13 +35,16 @@
 
   // Staffeln
   $globals ['staffeln'] = array ();
-  foreach ($globals['league']->divisions as $division) {
+  foreach ($league->divisions as $division) {
     $globals['staffeln'][$division->id] = $division->name;
   }
-
+  if ($bridge->division) {
+    $_GET['staffel'] = $bridge->division->id;
+  }
+  
   // Mannschaften
   $globals ['teams'] = array ();
-  foreach ($globals['league']->teams as $team) {
+  foreach ($league->teams as $team) {
     $globals['teams'][$team->id] = $team->nameWithNumber();
   }
 

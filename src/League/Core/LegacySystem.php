@@ -13,6 +13,10 @@ use Psr\Log\LoggerInterface;
  */
 class LegacySystem
 {
+  // Global variables for the legacy system.
+  public League|null $league = null;
+  public Division|null $division = null;
+
   function __construct(
     private string $projectDir,
     // Pubic variables exposed to the legacy system.
@@ -23,10 +27,8 @@ class LegacySystem
   /**
    * Sets up the database connection and global variables of the legacy system without
    * processing the request or outputting anything.
-   * 
-   * TODO: Ensure this is the only entry point into the legacy system.
    */
-  function initialize(League|null $league = null, Division|null $division = null) {
+  function initialize() {
     if (Auth::isAdmin()) {
       $_GET['debugme'] = 1;
     }
@@ -35,15 +37,6 @@ class LegacySystem
     global $globals;
     $globals['basedir'] = '..';
     $globals['bridge'] = $this;
-
-    if (isset($league)) {
-      $globals['league'] = $league;
-      $globals['tid'] = $league->id;
-      if (isset($division)) {
-        $globals['division'] = $division;
-        $_GET['staffel'] = $division->id;
-      }
-    }
 
     require_once ( "main.inc.php" );
     require_once ( "connect.inc.php" );
