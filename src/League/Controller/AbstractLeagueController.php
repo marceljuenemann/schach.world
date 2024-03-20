@@ -4,9 +4,9 @@ namespace Nsv\League\Controller;
 
 use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LeagueAuthState;
+use Nsv\League\Core\LegacySystem;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
-use Nsv\WebApp\Core\WordPress\Auth as WpAuth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -22,7 +22,8 @@ class AbstractLeagueController extends AbstractController {
 
   function __construct(
     protected League $league,
-    protected LeagueAuthState $auth
+    protected LeagueAuthState $auth,
+    private LegacySystem $legacySystem
   ) {}
 
   /**
@@ -43,29 +44,7 @@ class AbstractLeagueController extends AbstractController {
    * processing the request or outputting anything.
    */
   protected function initializeLegacySystem() {
-    if (WpAuth::isAdmin()) {
-      $_GET['debugme'] = 1;
-    }
-
-    chdir(ABSPATH . '../ligen/_inc');
-    global $globals;
-    $globals['basedir'] = '..';
-
-    if (isset($this->league)) {
-      $globals['league'] = $this->league;
-      $globals['tid'] = $this->league->id;
-      if (isset($this->division)) {
-        $globals['division'] = $this->division;
-        $_GET['staffel'] = $this->division->id;
-      }
-    }
-
-    require_once ( "main.inc.php" );
-    require_once ( "connect.inc.php" );
-
-    // Don't send Content-Type header: https://www.saotn.org/php-56-default_charset-change-may-break-html-output/
-    ini_set( 'default_charset', "" );
-
+    $this->legacySystem->initialize($this->league, $this->division);
     $this->initializeLegacySession();
   }
 

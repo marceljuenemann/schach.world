@@ -17,45 +17,8 @@
  * 2-MIDauth            Mannschaftsdaten (4 Stellen MID)
  * 3-sid                Staffelleiter-Login
  *
- *
+ * NOTE: These are now handled in Symfony by the RootController
  */
-
-function SED_TINYURL_parse ()
-{
-    global $globals;
-
-    switch ( $_GET ['type'] )
-    {
-        case 1:
-            $_GET ['pid'] = substr ( $_GET ['p1'], 0, 4 );
-            $_GET ['pid'] = base_convert ( $_GET ['pid'], 36, 10 );
-            $_GET ['auth'] = substr ( $_GET ['p1'], 4 );
-            require_once ( "turnier.inc.php" );
-            header ( "Location: $globals[httppath]$prefs[directory]/?m=eingabe&pid=$_GET[pid]&auth=$_GET[auth]" );
-            exit;
-
-            $globals ['mod'] = "eingabe";
-            break;
-
-        case 2:
-            $_GET ['mid'] = substr ( $_GET ['p1'], 0, 4 );
-            $_GET ['mid'] = base_convert ( $_GET ['mid'], 36, 10 );
-            $_GET ['auth'] = substr ( $_GET ['p1'], 4 );
-            require_once ( "turnier.inc.php" );
-            header ( "Location: $globals[httppath]$prefs[directory]/?m=mannschaftsdaten&mid=$_GET[mid]&auth=$_GET[auth]" );
-            exit;
-
-            $globals ['mod'] = "mannschaftsdaten";
-            break;
-
-        case 3:
-            $_GET ['staffel'] = $_GET ['p1'];
-            require_once ( "turnier.inc.php" );
-            header ( "Location: $globals[httppath]$prefs[directory]/?m=startseite&staffel=$_GET[staffel]" );
-            exit;
-            break;
-    }
-}
 
 function SED_TINYURL_Paarung ( $pid )
 {

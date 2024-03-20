@@ -4,7 +4,9 @@ namespace Nsv\League\Controller;
 
 use Nsv\League\Api\Service\MatchDayService;
 use Nsv\League\Api\Service\ScheduleService;
+use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LeagueAuthState;
+use Nsv\League\Core\LegacySystem;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\League\Entity\Pairing;
@@ -24,13 +26,13 @@ class DivisionController extends AbstractLeagueController
   private $entityManager;
 
   function __construct(
-    League                  $league,
-    LeagueAuthState         $auth,
-    Division                $division,
+    League $league,
+    LeagueAuthState $auth,
+    LegacySystem $legacySystem,
+    Division $division,
     private EntityManagerInterface $leagueEntityManager
-  )
-  {
-    parent::__construct($league, $auth);
+  ) {
+    parent::__construct($league, $auth, $legacySystem);
     $this->division = $division;
     $this->entityManager = $this->leagueEntityManager;
   }
@@ -50,6 +52,20 @@ class DivisionController extends AbstractLeagueController
   {
     $matchDays = $service->divisionSchedule($this->division);
     return $this->debugResponse($matchDays);
+  }
+
+  #[Route('{division}/{round}/pdf/', name: 'pdf')]
+  public function pdf(int $round): Response {
+    $this->initializeLegacySystem();
+    $_GET['r'] = $round;
+    $_GET['ausgabe'] = 'pdf';
+
+    ob_start();
+    require('../_module/spieltag/spieltag.php');
+    $body = ob_get_clean();
+    $response = new Response($body);
+    $response->setCharset(Encoding::CHARSET);
+    return $response;
   }
 
   #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]

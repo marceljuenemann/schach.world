@@ -15,37 +15,14 @@
  */
 
   // Felder aus Turnier-Tabelle in $prefs speichern
+  // Symfony will take care of setting $globals[tid] already.
   global $globals;
-  if ( isset ( $globals ['tid'] ) )
-    $query = "SELECT t.* FROM turniere as t WHERE t.id=$globals[tid]";
-  elseif ( isset ( $_GET ['tid'] ) )
-    $query = "SELECT t.* FROM turniere as t WHERE t.id=$_GET[tid]";
-  elseif ( isset ( $_GET ['dir'] ) )
-    $query = "SELECT t.* FROM turniere as t WHERE t.directory='$_GET[dir]'";
-  elseif ( isset ( $_GET ['staffel'] ) )
-    $query = "SELECT t.* FROM staffeln as s INNER JOIN turniere as t ON t.id=s.turnier WHERE s.id=$_GET[staffel]";
-  elseif ( isset ( $_GET ['mid'] ) )
-    $query = "SELECT t.* FROM mannschaften as m INNER JOIN staffeln as s ON s.id=m.staffel INNER JOIN turniere as t ON t.id=s.turnier WHERE m.id=$_GET[mid]";
-  elseif ( isset ( $_GET ['mannschaft'] ) )
-    $query = "SELECT t.* FROM mannschaften as m INNER JOIN staffeln as s ON s.id=m.staffel INNER JOIN turniere as t ON t.id=s.turnier WHERE m.id=$_GET[mannschaft]";
-  elseif ( isset ( $_GET ['spieler'] ) )
-    $query = "SELECT t.* FROM spieler as sp INNER JOIN mannschaften as m ON m.id=sp.mannschaft INNER JOIN staffeln as s ON s.id=m.staffel INNER JOIN turniere as t ON t.id=s.turnier WHERE sp.id=$_GET[spieler]";
-  elseif ( isset ( $_GET ['pid'] ) )
-    $query = "SELECT t.* FROM paarungen as p INNER JOIN staffeln as s ON s.id=p.staffel INNER JOIN turniere as t ON t.id=s.turnier WHERE p.id=$_GET[pid]";
-  else
-    SED_Error ( "Es konnte kein passendes Turnier gefunden werden!", true );
-  global $prefs;  // available globally.
-  $prefs = mysql_fetch_array ( mysql_query ( $query, $globals ['db'] ), MYSQL_ASSOC );
+  global $prefs;
+  $prefs = SED_Query("SELECT t.* FROM turniere as t WHERE t.id=?", [$globals['tid']])->fetchAssociative();
 
   // Fehler?
   if ( !is_array ( $prefs ) )
     SED_Error ( "Das Turnier scheint nicht zu existieren!", true );
-
-  // Temporary hack: Disable Rundmail sign up since it's being used for spam mails.
-  $prefs['sysKeinNewsletter'] = 1;
-
-  // Für $globals [tid] sorgen
-  $globals ['tid'] = $prefs ['id'];
 
   // Template berechnen
   $globals ['templatedir'] = "$globals[basedir]/_templates/nsv2020";
@@ -55,26 +32,14 @@
 
   // Staffeln
   $globals ['staffeln'] = array ();
-  if (isset($globals['league'])) {
-    foreach ($globals['league']->divisions as $division) {
-      $globals['staffeln'][$division->id] = $division->name;
-    }
-  } else {
-    $res = mysql_query ( "SELECT id, name FROM staffeln WHERE turnier=$globals[tid] ORDER BY sortid", $globals ['db'] );
-    while ( $temp = mysql_fetch_array ( $res, MYSQL_BOTH ) )
-      $globals ['staffeln'][$temp ['id']] = $temp ['name'];
+  foreach ($globals['league']->divisions as $division) {
+    $globals['staffeln'][$division->id] = $division->name;
   }
 
   // Mannschaften
   $globals ['teams'] = array ();
-  if (isset($globals['league'])) {
-    foreach ($globals['league']->teams as $team) {
-      $globals['teams'][$team->id] = $team->nameWithNumber();
-    }
-  } else {
-    $res = mysql_query ( "SELECT m.id, IF(m.mnr>1,CONCAT(TRIM(m.name),' ',m.mnr),TRIM(m.name)) as name FROM mannschaften as m WHERE m.turnier=$globals[tid] ORDER BY name", $globals ['db'] );
-    while ( $temp = mysql_fetch_array ( $res, MYSQL_BOTH ) )
-      $globals ['teams'][$temp ['id']] = $temp ['name'];
+  foreach ($globals['league']->teams as $team) {
+    $globals['teams'][$team->id] = $team->nameWithNumber();
   }
 
   // Liefert zu einem Spieltag den Timestamp
@@ -82,7 +47,17 @@
   {
     global $globals;
     // Eigentlich gibt es mittlerweile ja viewStaffeltermine, allerdings funktioniert das hier auch, wenn keine Turniertermine festgelegt wurden, sondern nur Staffeltermine
-    return SED_MYSQL_Value("SELECT DATE_FORMAT(te.datum,'$datumsformat') as datum FROM termine as te WHERE te.turnier=$globals[tid] and te.runde=$runde and (te.staffel is null or te.staffel=$staffel) ORDER BY staffel DESC LIMIT 1" );
+    return SED_Query("
+      SELECT DATE_FORMAT(te.datum,'$datumsformat') as datum
+      FROM termine as te
+      WHERE te.turnier=? and te.runde=? and (te.staffel is null or te.staffel=?)
+      ORDER BY staffel DESC LIMIT 1",
+      [
+        $globals['tid'],
+        $runde,
+        $staffel
+      ]
+    )->fetchOne();
   }
 
   // Liefert die Anzahl der Runden einer Staffel
@@ -99,13 +74,16 @@
             return $prefs [$feld];
 
     // Abfragen, ob die Anzahl vom Turnier-Standart abweicht
-    return SED_MYSQL_Value("SELECT IF($feld IS NULL,".$prefs[$feld].",$feld) FROM staffeln WHERE id=$staffel");
+    return SED_Value("
+      SELECT IF($feld IS NULL,".$prefs[$feld].",$feld) FROM staffeln WHERE id=?",
+      [$staffel]
+    );
   }
 
   // Liefert die letzte Runde in der eine Paarung gesetzt ist
   function SED_GetLetzteRunde ( $staffel )
   {
-    return SED_MYSQL_Value("SELECT MAX( runde )  FROM paarungen WHERE staffel='$staffel'");
+    return SED_Query("SELECT MAX( runde )  FROM paarungen WHERE staffel=?", [$staffel])->fetchOne();
   }
 
   // Liefert die Anzahl der Bretter einer Staffel

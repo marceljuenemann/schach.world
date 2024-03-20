@@ -18,18 +18,6 @@
     require_once ( "tabelle.inc.php" );
     require_once ( "runde.inc.php" );
 
-    // Wurde das Turnier z.B. umbenannt?
-    if ( !isset ( $globals ['staffeln'][$_GET ['staffel']] ) )
-    {
-        require_once ( "gui.inc.php" );
-        $staffel = (int) $_GET['staffel'];
-        if ($staffel != $_GET['staffel']) exit();
-        $tname = SED_MYSQL_Value("SELECT t.directory FROM staffeln s INNER JOIN turniere t ON t.id=s.turnier WHERE s.id='$staffel'");
-        echo "<b>Sie werden weitergeleitet...</b> $staffel $tname";
-        echo "<meta http-equiv='refresh' content='0;URL=$globals[httppath]$tname/?staffel=$_GET[staffel]&r=$_GET[r]' />";
-        exit;
-    }
-
     // Welcher Ausgabetyp?
     if ( isset ( $_GET ['ausgabe'] ) )
     {

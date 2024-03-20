@@ -6,12 +6,14 @@ use Doctrine\ORM\EntityNotFoundException;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LeagueAuthProvider;
 use Nsv\League\Core\LeagueAuthState;
+use Nsv\League\Core\LegacySystem;
 use Nsv\League\Entity\League;
 use Nsv\League\Repository\DivisionRepository;
 use Nsv\League\Repository\PlayerRepository;
 use Nsv\League\Repository\TeamRepository;
 use Nsv\WebApp\Core\NsvJs;
 use Nsv\WebApp\Core\WordPress\Auth as WordPressAuth;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
@@ -28,10 +30,12 @@ class LegacyController extends AbstractLeagueController {
     private PlayerRepository $playerRepository,
     private TeamRepository $teamRepository,
     private NsvJs $nsvJs,
+    private LoggerInterface $leagueLogger,
     League $league,
-    LeagueAuthState $auth
+    LeagueAuthState $auth,
+    LegacySystem $legacySystem
   ) {
-    parent::__construct($league, $auth);
+    parent::__construct($league, $auth, $legacySystem);
   }
 
   #[Route('ligen/{league}/', name: 'legacy')]
@@ -66,11 +70,9 @@ class LegacyController extends AbstractLeagueController {
         require_once ( $modulpfad );
       }
     } catch (\Exception $e) {
-      // Report the error.
-      // TODO: move this task to the logger.
-      if (!($e instanceof NotFoundHttpException) && !($e instanceof AccessDeniedHttpException) && !WordPressAuth::isAdmin()) {
-        global $globals;
-        @wp_mail($globals['webmaster_mail'], 'LeagueController Exception', $request->getUri() . "\n\n".$e);
+      // Log the error.
+      if (!($e instanceof NotFoundHttpException) && !($e instanceof AccessDeniedHttpException)) {
+        $this->leagueLogger->error("Exception in legacy league system: " . $e->getMessage(), ['exception' => $e]);
       }
 
       // The legacy script often outputs HTML before fully processing the request.
@@ -112,21 +114,30 @@ class LegacyController extends AbstractLeagueController {
           ]);
 
         case 'spieltag':
-          if (isset($_GET['ausgabe'])) return null;
-          $division = $this->divisionRepository->find($_GET['staffel']);
-          if ($_GET['r']) {
-            return $this->redirectToRoute('league_division_matchday', [
+          if (!isset($_GET['ausgabe'])) {
+            $division = $this->divisionRepository->find($_GET['staffel']);
+            if ($_GET['r']) {
+              return $this->redirectToRoute('league_division_matchday', [
+                'round' => $_GET['r'],
+                'division' => $division->path(),
+                'league' => $division->league->path
+              ]);
+            } else {
+              return $this->redirectToRoute('league_division_index', [
+                'division' => $division->path(),
+                'league' => $division->league->path
+              ]);
+            }
+          } else if ($_GET['ausgabe'] === 'pdf' && $_GET['r']) {
+            $division = $this->divisionRepository->find($_GET['staffel']);
+            return $this->redirectToRoute('league_division_pdf', [
               'round' => $_GET['r'],
               'division' => $division->path(),
               'league' => $division->league->path
             ]);
-          } else {
-            return $this->redirectToRoute('league_division_index', [
-              'division' => $division->path(),
-              'league' => $division->league->path
-            ]);
           }
-  
+          return null;
+
         case 'mannschaft':
           $team = $this->teamRepository->find($_GET['mannschaft']);
           return $this->redirectToRoute('league_team', [

@@ -52,7 +52,7 @@
   $rsrcTeamsAlle = mysql_query ( "SELECT m.id, g.lat, g.lon, m.staffel FROM mannschaften as m LEFT JOIN geodb as g ON g.plz=m.so_plz WHERE m.turnier=$globals[tid] ORDER BY m.name, m.mnr", $globals ['db'] );
   $rsrcTeamsStaffel = mysql_query ( "SELECT m.id, g.lat, g.lon FROM mannschaften as m LEFT JOIN geodb as g ON g.plz=m.so_plz WHERE m.staffel=$admin[staffel] ORDER BY m.name, m.mnr", $globals ['db'] );
   $rsrcPaarungen = mysql_query ( "SELECT runde, mannschaft1, mannschaft2 FROM paarungen WHERE staffel=$admin[staffel] AND erg1 IS NULL AND erg2 IS NULL", $globals ['db'] );
-  $isRunning = SED_MYSQL_Value("SELECT COUNT(*) FROM paarungen WHERE staffel=$admin[staffel] LIMIT 1");
+  $isRunning = SED_Value("SELECT COUNT(*) FROM paarungen WHERE staffel=? LIMIT 1", [$admin['staffel']]);
 
   // Überprüfung
   if ( !$rsrcTeamsStaffel || !mysql_num_rows ( $rsrcTeamsStaffel ) )

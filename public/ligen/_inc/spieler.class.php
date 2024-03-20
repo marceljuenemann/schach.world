@@ -333,13 +333,13 @@ class SED_Spieler {
     // Liefert die nächste freie Brett-Nummer
     static function getNextBrettNr ( $mid ){
         // Wenn es Spieler in der Mannschaft gibt, dann sollte es klappen
-        if ( $bnr = SED_MYSQL_Array ( "SELECT brettnr+1 FROM spieler WHERE mannschaft='$mid' ORDER BY brettnr DESC LIMIT 1" ) )
-            return reset ( $bnr );
+        if ( $bnr = SED_Query ( "SELECT brettnr+1 FROM spieler WHERE mannschaft=? ORDER BY brettnr DESC LIMIT 1", [$mid] )->fetchOne() )
+            return $bnr;
 
         // Ansonsten einfach die 1
         global $prefs;
         if ( !$prefs ['spielDreistelligeNr'] ) return 1;
-        return reset ( SED_MYSQL_Array ( "SELECT mnr*100+1 FROM mannschaften WHERE id='$mid' LIMIT 1", true ) );
+        return SED_Value ( "SELECT mnr*100+1 FROM mannschaften WHERE id=? LIMIT 1", [$mid] );
     }
 }
 ?>

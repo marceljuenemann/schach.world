@@ -46,10 +46,3 @@
 		$globals ['mod'] = "startseite";
 
 	$globals ['mod'] = str_replace ( "..", "_", $globals ['mod'] );
-	
-	// TINYURL
-	if ( $globals ['mod'] == "tinyurl" )
-	{
-		require_once ( "tinyurl.inc.php" );
-		SED_TINYURL_parse ();
-	}

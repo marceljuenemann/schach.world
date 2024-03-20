@@ -133,7 +133,7 @@
     $koenig = count($koenig) ? reset($koenig[max(array_keys($koenig))]) : '';
     foreach ( array_merge ( $topscorer, $koenig ? [$koenig] : [] ) as $id ){
         if ( $id )
-            foreach ( SED_MYSQL_Array ( "SELECT id, CONCAT(vorname,' ',nachname) name, dwz, mannschaft FROM spieler WHERE id=$id LIMIT 1" ) as $key=>$value )
+            foreach ( SED_Row ( "SELECT id, CONCAT(vorname,' ',nachname) name, dwz, mannschaft FROM spieler WHERE id=? LIMIT 1", [$id] ) as $key=>$value )
                 $spieler [$id][$key] = $value;
     }
 
@@ -170,15 +170,17 @@
             $teams [$m]["alter"] = "";
 
         // Top X berechnen
-        $topX = SED_MYSQL_Value(
+        $topX = SED_Query(
             "SELECT ROUND(AVG(dwz2))
             FROM (
                 SELECT IF(dwz IS NOT NULL and dwz>0,dwz,700) as dwz2
                 FROM spieler
-                WHERE mannschaft=$mannschaft[mnr]
+                WHERE mannschaft=?
                 ORDER BY brettnr
                 LIMIT $brettzahl
-            ) as a");
+            ) as a",
+            [$mannschaft['mnr']]
+        )->fetchOne();
         $teams [$m]["topX"] = $topX;
     }
 
