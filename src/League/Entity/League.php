@@ -57,9 +57,6 @@ class League
   #[ORM\Column(name: 'runden')]
   private int $configRounds = 9;
 
-  #[ORM\Column(name: 'brettzahl')]
-  private int $boardCount = 0;
-
   /**
    * Number of boards per match.
    */

@@ -108,7 +108,13 @@ class StatisticsService
     // If the League plays with 8 boards per team, it is the top 8 registered players.
     foreach ($active_teams_with_players as $key => &$team) {
       // First get the number of boards the league is played with
-      $board_count = $team['team']->league->boardCount;
+      // Get it from the division, and if it is not set there get it from the league.
+      $division = $team['team']->division;
+      if(!empty($division->configRounds)) {
+        $board_count = $division->configBoardCount;
+      } else {
+        $board_count = $team['team']->league->configBoardCount;
+      }
       $team_with_players = $team_repository->team_all_players($team['team']);
       $team_players = reset($team_with_players)->players->getValues();
       foreach ($team_players as $team_player) {
@@ -503,7 +509,7 @@ class StatisticsService
 
     // Get the board count
     $first_team = reset($dwz_calculation);
-    $board_count = $first_team['team']->league->boardCount;
+    $board_count = $first_team['team']->league->configBoardCount;
 
     // We also return part of statistics text, so the dwz_table is only part of the returned data
 
