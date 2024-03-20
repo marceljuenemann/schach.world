@@ -13,6 +13,7 @@ class StatisticsService
 {
 
   const MIN_DWZ = 700;
+
   public function __construct(
     private ManagerRegistry $doctrine, private Encoding $encoding, private DivisionService $divisionService
   ) {
@@ -110,7 +111,7 @@ class StatisticsService
       // First get the number of boards the league is played with
       // Get it from the division, and if it is not set there get it from the league.
       $division = $team['team']->division;
-      if(!empty($division->configRounds)) {
+      if (!empty($division->configBoardCount)) {
         $board_count = $division->configBoardCount;
       } else {
         $board_count = $team['team']->league->configBoardCount;
@@ -176,17 +177,33 @@ class StatisticsService
   }
 
   /**
+   * Create an array with player ID and games played to use it in the DWZ calculation
+   */
+  public function gameCountPlayer($active_players_with_games) {
+    $players_games_count = [];
+    foreach($active_players_with_games as $key => $player) {
+      $players_games_count[$key]['games_played'] = count($player['games']);
+    }
+    return $players_games_count;
+  }
+
+  /**
    * Calculate the DWZ averages for the table
    */
-  public function teams_dwz_calculation($active_teams_with_players) {
+  public function teams_dwz_calculation($active_teams_with_players, $active_players_with_games) {
     $active_teams_with_dwz = $active_teams_with_players;
     $dwz_data = [];
+
+    $players_games_count = $this->gameCountPlayer($active_players_with_games);
 
     foreach ($active_teams_with_dwz as $key => &$team) {
       // Add up all DWZ numbers from the active players
       $dwz_data[$key]['active_dwz_sum'] = (int)0;
       foreach ($team['active_players'] as $player) {
         $dwz = $player->dwz;
+        $player_id = $player->id();
+        $games_played = $players_games_count[$player_id]['games_played'];
+
         if (empty($dwz)) {
           $dwz_data[$key]['active_dwz_sum'] += self::MIN_DWZ;
         } else {
@@ -194,6 +211,8 @@ class StatisticsService
         }
       }
       // calculate the active DWZ average
+      // Get the numbers of games each player has played
+
       $players_count = count($team['active_players']);
       $dwz_active_average = $dwz_data[$key]['active_dwz_sum'] / $players_count;
       $team['active_dwz_average'] = round($dwz_active_average);
@@ -504,8 +523,9 @@ class StatisticsService
   public function create_dwz_statistics_table($division) {
     $all_games = $this->all_games_division($division);
     $active_players = $this->active_players_division($all_games);
-    $active_players_with_games = $this->active_teams_with_players($active_players);
-    $dwz_calculation = $this->teams_dwz_calculation($active_players_with_games);
+    $active_teams_with_players = $this->active_teams_with_players($active_players);
+    $active_players_with_games = $this->active_players_with_games($active_players, $all_games);
+    $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players, $active_players_with_games);
 
     // Get the board count
     $first_team = reset($dwz_calculation);
