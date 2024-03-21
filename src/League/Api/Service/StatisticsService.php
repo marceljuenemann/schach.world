@@ -182,7 +182,13 @@ class StatisticsService
   public function gameCountPlayer($active_players_with_games) {
     $players_games_count = [];
     foreach($active_players_with_games as $key => $player) {
-      $players_games_count[$key]['games_played'] = count($player['games']);
+      $players_games_count[$key]['games_played'] = 0;
+      foreach($player['games'] as $game) {
+        // Only count the games that were actually played
+        if($game->result1 != '-' && $game->result2 != '-') {
+          $players_games_count[$key]['games_played'] += 1;
+        }
+      }
     }
     return $players_games_count;
   }
@@ -196,7 +202,10 @@ class StatisticsService
 
     $players_games_count = $this->gameCountPlayer($active_players_with_games);
 
+
     foreach ($active_teams_with_dwz as $key => &$team) {
+      // Start counting the total games for each team seperately
+      $team_total_games = 0;
       // Add up all DWZ numbers from the active players
       $dwz_data[$key]['active_dwz_sum'] = (int)0;
       foreach ($team['active_players'] as $player) {
@@ -204,17 +213,20 @@ class StatisticsService
         $player_id = $player->id();
         $games_played = $players_games_count[$player_id]['games_played'];
 
+        // Add up the total games played in order to divide the sum by that number later.
+        $team_total_games += $games_played;
+
         if (empty($dwz)) {
-          $dwz_data[$key]['active_dwz_sum'] += self::MIN_DWZ;
+          $dwz_data[$key]['active_dwz_sum'] += self::MIN_DWZ * $games_played;
         } else {
-          $dwz_data[$key]['active_dwz_sum'] += $player->dwz;
+          $dwz_data[$key]['active_dwz_sum'] += $player->dwz * $games_played;
         }
       }
       // calculate the active DWZ average
       // Get the numbers of games each player has played
 
       $players_count = count($team['active_players']);
-      $dwz_active_average = $dwz_data[$key]['active_dwz_sum'] / $players_count;
+      $dwz_active_average = $dwz_data[$key]['active_dwz_sum'] / $team_total_games;
       $team['active_dwz_average'] = round($dwz_active_average);
 
       // Add up all DWZ numbers from all players (including passive)
