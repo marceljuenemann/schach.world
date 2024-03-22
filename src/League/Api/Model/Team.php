@@ -12,8 +12,10 @@ class Team
   public ?string $zps;
   public string $uri;
   public string $apiUri;
-  public \stdClass $venue;
-  public \stdClass $captain;
+
+  public ?\stdClass $venue;
+  public ?\stdClass $captain;
+  public ?array $additionalRecipients;
 
   public ?array $pairingsByDivision;
   public ?array $playersByTeamNumber;

@@ -179,7 +179,7 @@
 
         // Ist der Benutzer zur Eingabe berechtigt? staffel=0 beachten!
         if ( $spieler->isFieldSet ( "id" ) ){ // Keine Nachmeldung
-            $staffel = SED_MYSQL_Array ( "SELECT m.staffel FROM spieler s INNER JOIN mannschaften m ON m.id=s.mannschaft WHERE s.id='".$spieler->get("id")."' LIMIT 1", true );
+            $staffel = SED_Value ( "SELECT m.staffel FROM spieler s INNER JOIN mannschaften m ON m.id=s.mannschaft WHERE s.id=? LIMIT 1", [$spieler->get("id")] );
             if ( !isset ( $globals ['staffeln'][reset($staffel)] ) && reset($staffel) )
                 SED_Error ( "Die Staffel des Spielers geh&ouml;rt nicht zum Turnier!", true );
             if ( $admin ['staffel'] && reset($staffel) && reset($staffel) != $admin['staffel'] )
@@ -244,14 +244,14 @@
     if ( isset ( $_GET ['swap'] ) )
     {
         // Überprüfen, ob es den Tauschpartner gibt
-        if ( $partner = SED_MYSQL_Array ( "SELECT id FROM spieler WHERE mannschaft=$_GET[mid] AND brettnr=$_GET[with] LIMIT 1" ) )
+        if ( $partner = SED_Query ( "SELECT id FROM spieler WHERE mannschaft=? AND brettnr=? LIMIT 1", [$_GET['mid'], $_GET['with']] )->fetchOne() )
         {
             // Neue Brett-Nummer setzen
             if ( !mysql_query ( "UPDATE spieler SET brettnr=$_GET[with] WHERE mannschaft=$_GET[mid] AND brettnr=$_GET[swap] LIMIT 1", $globals ['db'] ) )
                 SED_Error ( "Der Spieler konnte nicht gefunden werden!", true );
                 
             // Neue Brett-Nummer setzen Nr. 2
-            if ( !mysql_query ( "UPDATE spieler SET brettnr=$_GET[swap] WHERE id=".reset($partner)." LIMIT 1", $globals ['db'] ) )
+            if ( !mysql_query ( "UPDATE spieler SET brettnr=$_GET[swap] WHERE id=".$partner." LIMIT 1", $globals ['db'] ) )
                 SED_Error ( "Der Spieler konnte nicht gefunden werden!", true );
                 
             // Mannschaftsdaten neu laden

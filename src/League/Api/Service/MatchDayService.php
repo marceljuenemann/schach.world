@@ -58,7 +58,7 @@ class MatchDayService
       $model->allRounds[$roundModel->round] = $roundModel;
     }
 
-    $model->generatedAt = date('Y-m-d H:i:s');
+    // $model->generatedAt = date('Y-m-d H:i:s');
     return $model;
   }
 

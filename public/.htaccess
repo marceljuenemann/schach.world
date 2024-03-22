@@ -6,7 +6,8 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
 
 # Weiterleitungen
-RewriteRule ^bezirke/([A-Za-z]*)$ /bezirke/bezirk.php?kurzname=$1 [L]
+RewriteRule ^bezirke/Websites.php$ /vereine [R,L]
+RewriteRule ^bezirke/([A-Za-z]*)$ /vereine [R,L]
 RewriteRule ^core/apps/kontakt/?$ /kontakt/ [R,L]
 RewriteRule ^cutenews/data/upimages/(.*)$ downloads/cutenews/$1 [R,L]
 RewriteRule ^goto/(.*)$ /goto.php?goto=$1 [QSA,L]
@@ -21,7 +22,7 @@ RewriteRule ^turniere/ems-vechta-cup-2017[AB] /turniere/ems-vechte-cup/2017/ [R,
 RewriteRule ^turniere/lem20([0-9]+) /turniere/lem/20$1/ [R,L]
 RewriteRule ^turniere/ljem2015 /turniere/ljem/2015/ [R,L]
 RewriteRule ^turniere/NSVOM2020 /nsvom2020 [R,L]
-RewriteRule ^turniere/([a-z-]+)-([0-9]+) /turniere/$1/$2/ [R,L]
+RewriteRule ^turniere/([a-z0-9-]+)-([0-9]+) /turniere/$1/$2/ [R,L]
 RewriteRule ^verband/Ehrengericht.html /ehrengericht/ [R,L]
 RewriteRule ^verband/Impressum.html /impressum/ [R,L]
 RewriteRule ^verband/Ligenuebersicht.php /alle-ligen/ [R,L]
@@ -29,7 +30,7 @@ RewriteRule ^verband/NSV.html /nsv/ [R,L]
 RewriteRule ^verband/Ordnungen.html /ordnungen/ [R,L]
 RewriteRule ^verband/Turniergericht.html /turniergericht/ [R,L]
 RewriteRule ^verband/Vorstand.html /vorstand/ [R,L]
-RewriteRule ^vereine/70([0-9]*)$ /bezirke/verein.php?zps=70$1 [L]
+RewriteRule ^vereine/70([0-9]*)$ /vereine [R,L]
 
 # WordPress
 # Bis auf existierende Dateien und Order wird alles von WP verarbeitet!

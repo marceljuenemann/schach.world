@@ -52,7 +52,7 @@ class Team
   private ?string $venueName;
 
   #[ORM\Column(name: 'so_hinweis', length: 255)]
-  private ?string $venueNote;
+  private string $venueNote = '';
 
   #[ORM\Column(name: 'so_strasse', length: 30)]
   private ?string $venueStreet;
@@ -81,6 +81,10 @@ class Team
   #[ORM\OneToMany(targetEntity: Player::class, mappedBy: 'team')]   
   #[ORM\OrderBy(["number" => "ASC"])]
   private $players;
+
+  #[ORM\OneToMany(targetEntity: TeamRecipient::class, mappedBy: 'team')]   
+  #[ORM\OrderBy(["id" => "ASC"])]
+  private $additionalRecipients;
 
   #[ORM\OneToMany(targetEntity: TeamDetail::class, mappedBy: 'team')]   
   private $details;

@@ -24,7 +24,8 @@ class Calendar {
         $curDate = $date;
       }
   
-      $content .= "<li><a href='$termin[url]'>$termin[name]</a></li>";
+      $title = htmlspecialchars($termin['name']);
+      $content .= "<li><a href='$termin[url]'>$title</a></li>";
     }
   
     $content .= "</ul></div>";

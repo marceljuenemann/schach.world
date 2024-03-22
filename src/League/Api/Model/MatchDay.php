@@ -22,7 +22,8 @@ class MatchDay
   public ?array $lateRegisteredPlayers;
   public ?array $allRounds;
   public ?string $lastModified;
-  public ?string $generatedAt;
+  // TODO: Remove if we are sure that we don't need a cache anymore.
+  // public ?string $generatedAt;
 
   public static function fromRound(Round $round): MatchDay {
     $result = new MatchDay();

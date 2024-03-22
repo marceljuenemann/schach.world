@@ -7,9 +7,12 @@ use Nsv\League\Api\Model\Player;
 use Nsv\League\Api\Model\PlayerGame;
 use Nsv\League\Api\Model\Team;
 use Nsv\League\Api\Model\TeamPairing;
+use Nsv\League\Api\Request\UpdateTeamCaptainRequest;
+use Nsv\League\Api\Request\UpdateTeamRecipientsRequest;
 use Nsv\League\Api\Request\UpdateTeamVenueRequest;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity;
+use Nsv\League\Entity\TeamRecipient;
 use Nsv\League\Repository\PairingRepository;
 
 class TeamService
@@ -19,9 +22,16 @@ class TeamService
     private EntityManagerInterface $leagueEntityManager
   ) {}
 
-  public function team(Entity\Team $team): Team {
-    // Fetch basic info and players.
+  public function team(Entity\Team $team, bool $additionalRecipients = false): Team {
+    // Fetch basic info.
     $model = Team::fromEntityWithDetails($team);
+    if ($additionalRecipients) {
+      $model->additionalRecipients = array_map(function (TeamRecipient $recipient) {
+        return $recipient->mail;
+      }, \iterator_to_array($team->additionalRecipients));
+    }
+
+    // Fetch players.
     $model->playersByTeamNumber = [];
     $players = [];
     foreach ([$team, ...$team->substituteTeams()] as $t) {
@@ -64,6 +74,40 @@ class TeamService
     $team->venuePhone = $request->phone;
     // TODO: Allow updating accessibility.
     $this->leagueEntityManager->persist($team);
+    $this->leagueEntityManager->flush();
+  }
+
+  public function updateCaptain(Entity\Team $team, UpdateTeamCaptainRequest $request) {
+    $team->captainName = $request->name;
+    $team->captainMail = $request->mail;
+    $team->captainPhone = $request->phone;
+    $team->captainPhone2= $request->phone2;
+    $this->leagueEntityManager->persist($team);
+    $this->leagueEntityManager->flush();
+  }
+
+  public function updateRecipients(Entity\Team $team, UpdateTeamRecipientsRequest $request) {
+    // Delete recipients no longer present.
+    $existingRecipients = [];
+    foreach ($team->additionalRecipients as $recipient) {
+      if (array_search($recipient->mail, $request->recipients) === false) {
+        $this->leagueEntityManager->remove($recipient);
+      } else {
+        $existingRecipients[$recipient->mail] = true;
+      }
+    }
+
+    // Add recipients that didn't exist before.
+    foreach ($request->recipients as $recipient) {
+      if (!isset($existingRecipients[$recipient])) {
+        $entity = new TeamRecipient();
+        $entity->team = $team;
+        $entity->mail = $recipient;
+        $this->leagueEntityManager->persist($entity);
+        $existingRecipients[$recipient] = true;
+      }
+    }
+
     $this->leagueEntityManager->flush();
   }
 }

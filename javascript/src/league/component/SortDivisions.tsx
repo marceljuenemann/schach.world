@@ -1,10 +1,9 @@
 import { Card } from "react-bootstrap";
-import { NsvDialog } from "../../core/dialog";
+import { NsvLoadingDialog } from "../../core/dialog";
 import { Division } from "../types";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { LeagueApi } from "../api";
-import React, { ReactElement, ReactNode } from "react";
-import { LoadingComponent } from "../../core/loader";
+import React from "react";
 import { NsvFormProps } from "../../core/form";
 
 class SortDivisions extends React.Component<
@@ -61,22 +60,14 @@ class SortDivisions extends React.Component<
   }
 }
 
-class SortDivisionsLoader extends LoadingComponent<{divisions: Array<Division>}, NsvFormProps> {
+export class SortDivisionsDialog extends NsvLoadingDialog<{divisions: Array<Division>}> {
+  title = () => 'Staffeln umsortieren'
+
   async loadProps() {
     return {divisions: await new LeagueApi().fetchPairings()}
   }
 
-  renderWithProps(props: {divisions: Array<Division>}) {
+  renderBodyWithProps(props: {divisions: Array<Division>} & NsvFormProps) {
     return <SortDivisions {...this.props} {...props}></SortDivisions>
-  }
-}
-
-export class SortDivisionsDialog extends NsvDialog {
-  override title(): string {
-    return 'Staffeln umsortieren'
-  }
-
-  override renderBody(props: NsvFormProps): ReactElement {
-    return <SortDivisionsLoader {...props}></SortDivisionsLoader>
   }
 }

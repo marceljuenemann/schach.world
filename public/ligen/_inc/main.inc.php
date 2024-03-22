@@ -12,10 +12,14 @@
  * @subpackage main
  */
 
-  require_once ( "../../libs/mysql-shim.php" );
-  require_once ( "../../../vendor/autoload.php" );
+use Doctrine\DBAL\Result as DBALResult;
+use Nsv\League\Core\Encoding;
+use Nsv\League\Core\LegacySystem;
+use Nsv\League\Core\Result;
 
-  define('SED_REMIS', utf8_decode('½'));
+  require_once ( "../../libs/mysql-shim.php" );
+
+  define('SED_REMIS', Result::DRAW());
 
   // Gibt eine rote Fehlermeldung aus
   function SED_Error ( $msg, $exit = false, $back = false, $mail = false )
@@ -77,37 +81,64 @@
     return filter_var ( $email, FILTER_VALIDATE_EMAIL );
   }
 
-	
-	// Liefert das erste Ergebnis einer Abfrage als Array
-	function SED_MYSQL_Array ( $sql, $exit = false )
-	{
-		global $globals;
-		$rsrc = mysql_query ( $sql, $globals ['db'] );
-		if ( !$rsrc )
-		{
-			if ( $exit )
-				SED_Error ( "Fehler in Abfrage! <!-- $sql -->", true );
-			else 
-				return false;
-		}
-		return mysql_fetch_array ( $rsrc, MYSQL_ASSOC );
-	}
- 
- 
-	// Liefert den erste Wert einer Abfrage, oder null.
-	function SED_MYSQL_Value ( $sql, $exit = false )
-	{
-		global $globals;
-    $row = SED_MYSQL_Array($sql, $exit);
-    if (!$row || !count($row)) {
-			if ( $exit )
-				SED_Error ( "Fehler in Abfrage! <!-- $sql -->", true );
-			else 
-				return null;
-		}
-    return reset($row);
-	}
- 
+  /**
+   * Bridge into the new Symfony application.
+   */
+  function SED_Bridge(): LegacySystem {
+    global $globals;
+    return $globals['bridge'];
+  }
+
+  /**
+   * Prepares and executes the given query.
+   * 
+   * @param sql the query to prepare
+   * @param params the parameters to fill in
+   * @see Connection#executeQuery
+   * @return DBALResult
+   * @throws Exception
+   */
+  function SED_Query(string $sql, array $params = []): DBALResult {
+    $connection = SED_Bridge()->leagueEntityManager->getConnection();
+    return $connection->executeQuery($sql, $params);
+  }
+
+  /**
+   * Prepares and executes the given query and returns the result or false if an exception occurred.
+   * 
+   * This is intended to be an easy replacement from mysql_query().
+   */
+  function SED_TryQuery(string $sql, array $params = []): DBALResult|false {
+    try {
+      return SED_Query($sql, $params);
+    } catch (\Exception $e) {
+      SED_Bridge()->leagueLogger->error("SED_TryQuery failed: {$e->getMessage()}", ['sql' => $sql, 'params' => $params]);
+      return false;
+    }
+  }
+
+  /**
+   * Returns the first row of a query and throws an exception if no row was found.
+   * 
+   * Use SED_Query(...)->fetchAssociative() if you don't want an exception to be thrown.
+   */
+  function SED_Row(string $sql, array $params = []): array {
+    $data = SED_Query($sql, $params)->fetchAssociative();
+    if ($data === false) {
+      throw new \Exception("No results for query {$sql}");
+    }
+    return $data;
+  }
+
+  /**
+   * Returns the first value of a query and throws an exception if no value was found.
+   * 
+   * Use SED_Query(...)->fetchOne() if you don't want an exception to be thrown.
+   */
+  function SED_Value(string $sql, array $params = []): mixed {
+    $row = SED_Row($sql, $params);
+    return current($row);
+  }
   
   // Generiert den Pfad für Formulare, wenn die Zielseite gleich ist
   function SED_GenerateFormAction ( $without = false )
@@ -125,14 +156,5 @@
    * Converts from UTF-8 to the application charset.
    */
   function SED_utf8_decode($str) {
-    // TODO: Convert application to UTF-8 and remove this.
-    return mb_convert_encoding($str, 'ISO-8859-1', 'UTF-8');
-  }
-
-  /**
-   * Converts from the application charset to UTF-8.
-   */
-  function SED_utf8_encode($str) {
-    // TODO: Convert application to UTF-8 and remove this.
-    return mb_convert_encoding($str, 'UTF-8', 'ISO-8859-1');
+    return Encoding::utf8_decode($str);
   }

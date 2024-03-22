@@ -6,6 +6,12 @@ import { SortDivisionsDialog } from './league/component/SortDivisions';
 import { CreateDivisionDialog } from './league/component/CreateDivision';
 import { launchDialog } from './core/dialog';
 import { UpdateTeamVenueDialog } from './league/component/UpdateTeamVenue';
+import { UpdateTeamCaptainDialog } from './league/component/UpdateTeamCaptain';
+import { UpdateTeamRecipientsDialog } from './league/component/UpdateTeamRecipients';
+import { ClubsMap } from './webapp/component/ClubsMap';
+
+// @ts-ignore
+$ = jQuery || $;
 
 /**
  * All elements with data-nsv-component will be rendered as a React component.
@@ -15,10 +21,16 @@ $('[data-nsv-component]').each((_, elem: HTMLElement) => {
 })
 
 function createComponent(elem: HTMLElement): ReactElement {
+  const attr = (id: string) => elem.getAttribute(`data-nsv-${id}`)
   switch (elem.getAttribute('data-nsv-component')) {
+    // League manager
     case 'PairingList':
-      const division = parseInt(elem.getAttribute('data-nsv-division') || '0')
+      const division = parseInt(attr('division') || '0')
       return <PairingListLoader division={division} />;
+
+    // NSV WebApp
+    case 'ClubsMap':
+      return <ClubsMap data={JSON.parse(attr('data')!)} />
   }
   throw new Error('Invalid NSV component type');
 }
@@ -43,6 +55,10 @@ function createDialogComponent(elem: HTMLElement, onClose: () => void): ReactEle
       return <SortDivisionsDialog onClose={onClose} />;
     case 'CreateDivision':
       return <CreateDivisionDialog onClose={onClose} />;
+    case 'UpdateTeamCaptain':
+      return <UpdateTeamCaptainDialog onClose={onClose} teamId={intAttr('team-id')} />;
+    case 'UpdateTeamRecipients':
+      return <UpdateTeamRecipientsDialog onClose={onClose} teamId={intAttr('team-id')} />;
     case 'UpdateTeamVenue':
       return <UpdateTeamVenueDialog onClose={onClose} teamId={intAttr('team-id')} />;
     default:

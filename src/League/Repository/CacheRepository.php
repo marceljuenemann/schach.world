@@ -21,6 +21,9 @@ class CacheRepository extends ServiceEntityRepository
    * by invoking the callback function and then stored in the cache.
    */
   public function getOrCompute(string $type, Division $division, int $round, callable $callback): mixed {
+    // Experimenting without a cache.
+    return $callback();
+    /*
     $val = $this->get($type, $division, $round);
     if ($val) return $val;
     $val = $callback();
@@ -36,6 +39,7 @@ class CacheRepository extends ServiceEntityRepository
       $this->getEntityManager()->flush();
     }
     return $val;
+    */
   }
 
   public function get(string $type, Division $division, int $round): mixed {
