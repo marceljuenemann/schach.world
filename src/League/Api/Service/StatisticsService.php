@@ -111,11 +111,7 @@ class StatisticsService
       // First get the number of boards the league is played with
       // Get it from the division, and if it is not set there get it from the league.
       $division = $team['team']->division;
-      if (!empty($division->configBoardCount)) {
-        $board_count = $division->configBoardCount;
-      } else {
-        $board_count = $team['team']->league->configBoardCount;
-      }
+      $board_count = $division->config('boardCount');
       $team_with_players = $team_repository->team_all_players($team['team']);
       $team_players = reset($team_with_players)->players->getValues();
       foreach ($team_players as $team_player) {
@@ -181,11 +177,11 @@ class StatisticsService
    */
   public function gameCountPlayer($active_players_with_games) {
     $players_games_count = [];
-    foreach($active_players_with_games as $key => $player) {
+    foreach ($active_players_with_games as $key => $player) {
       $players_games_count[$key]['games_played'] = 0;
-      foreach($player['games'] as $game) {
+      foreach ($player['games'] as $game) {
         // Only count the games that were actually played
-        if($game->result1 != '-' && $game->result2 != '-') {
+        if ($game->result1 != '-' && $game->result2 != '-') {
           $players_games_count[$key]['games_played'] += 1;
         }
       }
@@ -541,7 +537,8 @@ class StatisticsService
 
     // Get the board count
     $first_team = reset($dwz_calculation);
-    $board_count = $first_team['team']->league->configBoardCount;
+    $division = $first_team['team']->division;
+    $board_count = $division->config('boardCount');
 
     // We also return part of statistics text, so the dwz_table is only part of the returned data
 
