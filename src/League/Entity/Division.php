@@ -217,7 +217,7 @@ class Division
   }
 
   public function statsUri() {
-    return $this->league->uri() . '/' . strtolower($this->name) . "/statistik";
+    return $this->league->uri() . '/' . $this->path() . "/statistik";
   }
 
   public function __call($property, $args) {

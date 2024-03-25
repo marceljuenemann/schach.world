@@ -118,7 +118,11 @@ class StatisticsService
       }
       $team_with_players = $team_repository->team_all_players($team['team']);
       $team_players = reset($team_with_players)->players->getValues();
-      foreach ($team_players as $team_player) {
+      // Make absolutely sure the players are sorted by their numbers
+      $team_players = $this->players_sorted_by_player_number($team_players);
+      foreach ($team_players as $key => $team_player) {
+        // reassign the player number starting from 1. The player numbers sometimes are 101 or 601 instead of 1
+        $team_player->number = $key + 1;
         if ($team_player->number <= $board_count) {
           $team['top_x_players'][] = $team_player;
         }
@@ -506,6 +510,18 @@ class StatisticsService
     return $teams_game_scores;
   }
 
+  /**
+   * Sort the players by their registration (board) number.
+   * This number sometimes does not start with 1 but 101 or 601
+   */
+  public function players_sorted_by_player_number($players) {
+    uasort($players, function ($a, $b) {
+      return [$a->number] <=> [$b->number];
+    });
+    return $players;
+  }
+
+
 
   /**
    * Sort the players by points first and by played games after that.
@@ -527,6 +543,7 @@ class StatisticsService
     });
     return $active_players_with_games;
   }
+
 
   /**
    * Create the table array for DWZ statistics that
