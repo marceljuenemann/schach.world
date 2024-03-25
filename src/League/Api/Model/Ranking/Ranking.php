@@ -1,9 +1,9 @@
 <?php
 
-namespace Nsv\League\Chess\Ranking;
+namespace Nsv\League\Api\Model\Ranking;
 
-use Nsv\League\Entity\Division;
 use Nsv\League\Entity;
+use Nsv\League\Entity\Division;
 
 /**
  * Ranking for a specific division and round.
@@ -24,7 +24,7 @@ class Ranking {
 
    public function calculate() {
     $ranking = [array_map(function (Entity\Team $team) {
-      return new Team($team);
+      return new RankingTeam($team);
     }, $this->division->teams())];
     
   }
