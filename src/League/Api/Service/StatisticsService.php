@@ -84,21 +84,39 @@ class StatisticsService
    */
   public function active_teams_with_players($active_players, $division) {
     $team_repository = $this->doctrine->getRepository(Team::class);
+    $pairing_repository = $this->doctrine->getRepository(Pairing::class);
+
+    $teams_by_division = $team_repository->findByDivision($division);
+
+    $teams_with_pairings = [];
+    // Add pairings to teams
+    foreach ($teams_by_division as &$team) {
+      $pairings = $pairing_repository->findByTeam($team);
+      $teams_with_pairings[$team->id]['team'] = $team;
+      $teams_with_pairings[$team->id]['pairings'] = $pairings;
+    }
 
     $active_teams_with_players = [];
+    $players_by_club_name = [];
     // Collect all active teams and add active players to them
     foreach ($active_players as $player) {
       $team = $player['player']->team;
       $team_id = $player['player']->team->id;
       $player_id = $player['player']->id;
+      $club_name = $this->encoding->utf8_encode($team->name);
       // Only add teams thare are actually playing in the division.
       // The active players contain also players that play in a lower team of the same club.
       if ($team->divisionId == $division->id) {
         if (!array_key_exists($team_id, $active_teams_with_players)) {
           $active_teams_with_players[$team_id]['team'] = $team;
+          $active_teams_with_players[$team_id]['club_name'] = $team->name;
         }
         $active_teams_with_players[$team_id]['active_players'][$player_id] = $player['player'];
       }
+      // Collect the players by club name so we can add them later to the teams.
+      // This is necessary, because for players from lower ranked teams that played
+      // in the match the team_id does not match the team.
+      $players_by_club_name[$club_name][] = $player;
     }
 
     // Get all players for a team, also the passive ones
@@ -521,7 +539,6 @@ class StatisticsService
     });
     return $players;
   }
-
 
 
   /**

@@ -8,6 +8,7 @@ use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Entity\Player;
 use Nsv\League\Entity\Team;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Nsv\League\Entity\Division;
 
 /**
  * @extends ServiceEntityRepository<Team>
@@ -39,4 +40,17 @@ class TeamRepository extends ServiceEntityRepository
       ->getQuery()
       ->getResult();
   }
+
+  /**
+   * Find all teams in a division
+   */
+  public function findByDivision(Division $division) {
+    return $this->createQueryBuilder('team')
+      ->select('team')
+      ->where('team.divisionId = :division')
+      ->setParameter('division', $division->id)
+      ->getQuery()
+      ->getResult();
+  }
+
 }
