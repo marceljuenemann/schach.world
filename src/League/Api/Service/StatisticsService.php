@@ -82,18 +82,23 @@ class StatisticsService
    * Get all teams active in the division and add
    * active players and all players (including passive ones) as separate arrays.
    */
-  public function active_teams_with_players($active_players) {
+  public function active_teams_with_players($active_players, $division) {
     $team_repository = $this->doctrine->getRepository(Team::class);
+
     $active_teams_with_players = [];
     // Collect all active teams and add active players to them
     foreach ($active_players as $player) {
       $team = $player['player']->team;
       $team_id = $player['player']->team->id;
       $player_id = $player['player']->id;
-      if (!array_key_exists($team_id, $active_teams_with_players)) {
-        $active_teams_with_players[$team_id]['team'] = $team;
+      // Only add teams thare are actually playing in the division.
+      // The active players contain also players that play in a lower team of the same club.
+      if ($team->divisionId == $division->id) {
+        if (!array_key_exists($team_id, $active_teams_with_players)) {
+          $active_teams_with_players[$team_id]['team'] = $team;
+        }
+        $active_teams_with_players[$team_id]['active_players'][$player_id] = $player['player'];
       }
-      $active_teams_with_players[$team_id]['active_players'][$player_id] = $player['player'];
     }
 
     // Get all players for a team, also the passive ones
@@ -548,7 +553,7 @@ class StatisticsService
   public function create_dwz_statistics_table($division) {
     $all_games = $this->all_games_division($division);
     $active_players = $this->active_players_division($all_games);
-    $active_teams_with_players = $this->active_teams_with_players($active_players);
+    $active_teams_with_players = $this->active_teams_with_players($active_players, $division);
     $active_players_with_games = $this->active_players_with_games($active_players, $all_games);
     $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players, $active_players_with_games);
 
