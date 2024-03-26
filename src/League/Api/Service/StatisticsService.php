@@ -91,10 +91,6 @@ class StatisticsService
       $teams_with_pairings[$team->id]['team'] = $team;
       $teams_with_pairings[$team->id]['pairings'] = $pairings;
     }
-    // Create functions for array_map to reduce nested foreach loops.
-    function add_player_1($game) {
-
-    }
 
     // Now extract the players from the pairings and add to each player the games he has played.
     foreach ($teams_with_pairings as &$team) {
