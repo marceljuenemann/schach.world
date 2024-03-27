@@ -84,16 +84,16 @@ class StatisticsService
 
     $teams_by_division = $team_repository->findByDivision($division);
 
-    $teams_with_pairings = [];
+    $teams_with_active_players = [];
     // Add pairings to teams
     foreach ($teams_by_division as &$team) {
       $pairings = $pairing_repository->findByTeam($team);
-      $teams_with_pairings[$team->id]['team'] = $team;
-      $teams_with_pairings[$team->id]['pairings'] = $pairings;
+      $teams_with_active_players[$team->id]['team'] = $team;
+      $teams_with_active_players[$team->id]['pairings'] = $pairings;
     }
 
     // Now extract the players from the pairings and add to each player the games he has played.
-    foreach ($teams_with_pairings as &$team) {
+    foreach ($teams_with_active_players as &$team) {
       $active_players_ids = [];
       foreach ($team['pairings'] as $pairing) {
         if ($pairing->team1->id == $team['team']->id) {
@@ -102,7 +102,11 @@ class StatisticsService
               // Make sure we add the players only once to our array
               if (!in_array($game->player1->id, $active_players_ids)) {
                 $active_players_ids[] = $game->player1->id;
-                $team['players'][$game->player1->id] = $game->player1;
+                $team['active_players'][$game->player1->id]['player'] = $game->player1;
+              }
+              // If the game is not a forfeit game, add it to the player's games
+              if(!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                $team['active_players'][$game->player1->id]['games'][] = $game;
               }
             }
           }
@@ -113,46 +117,28 @@ class StatisticsService
               // Make sure we add the players only once to our array
               if (!in_array($game->player2->id, $active_players_ids)) {
                 $active_players_ids[] = $game->player2->id;
-                $team['players'][$game->player2->id] = $game->player2;
+                $team['active_players'][$game->player2->id]['player'] = $game->player2;
+              }
+              // If the game is not a forfeit game, add it to the player's games
+              if(!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                $team['active_players'][$game->player2->id]['games'][] = $game;
               }
             }
           }
         }
       }
     }
-    return $teams_with_pairings;
+    return $teams_with_active_players;
   }
 
   /**
    * Get all teams active in the division and add
    * active players and all players (including passive ones) as separate arrays.
    */
-  public function active_teams_with_players($active_players, $division) {
+  public function active_teams_with_players($active_players, $teams_with_active_players, $division) {
     $team_repository = $this->doctrine->getRepository(Team::class);
-    $teams_with_pairings = $this->teams_with_active_players($division);
 
-    $active_teams_with_players = [];
-    $players_by_club_name = [];
-    // Collect all active teams and add active players to them
-    foreach ($active_players as $player) {
-      $team = $player['player']->team;
-      $team_id = $player['player']->team->id;
-      $player_id = $player['player']->id;
-      $club_name = $this->encoding->utf8_encode($team->name);
-      // Only add teams thare are actually playing in the division.
-      // The active players contain also players that play in a lower team of the same club.
-      if ($team->divisionId == $division->id) {
-        if (!array_key_exists($team_id, $active_teams_with_players)) {
-          $active_teams_with_players[$team_id]['team'] = $team;
-          $active_teams_with_players[$team_id]['club_name'] = $team->name;
-        }
-        $active_teams_with_players[$team_id]['active_players'][$player_id] = $player['player'];
-      }
-      // Collect the players by club name so we can add them later to the teams.
-      // This is necessary, because for players from lower ranked teams that played
-      // in the match the team_id does not match the team.
-      $players_by_club_name[$club_name][] = $player;
-    }
+    $active_teams_with_players = $teams_with_active_players;
 
     // Get all players for a team, also the passive ones
     foreach ($active_teams_with_players as $key => &$team) {
@@ -267,8 +253,8 @@ class StatisticsService
       // Add up all DWZ numbers from the active players
       $dwz_data[$key]['active_dwz_sum'] = (int)0;
       foreach ($team['active_players'] as $player) {
-        $dwz = $player->dwz;
-        $player_id = $player->id();
+        $dwz = $player['player']->dwz;
+        $player_id = $player['player']->id();
         $games_played = $players_games_count[$player_id]['games_played'];
 
         // Add up the total games played in order to divide the sum by that number later.
@@ -277,7 +263,7 @@ class StatisticsService
         if (empty($dwz)) {
           $dwz_data[$key]['active_dwz_sum'] += self::MIN_DWZ * $games_played;
         } else {
-          $dwz_data[$key]['active_dwz_sum'] += $player->dwz * $games_played;
+          $dwz_data[$key]['active_dwz_sum'] += $player['player']->dwz * $games_played;
         }
       }
       // calculate the active DWZ average
@@ -324,7 +310,7 @@ class StatisticsService
       $dwz_data[$key]['active_age_sum'] = (int)0;
       $aged_players_count = (int)0;
       foreach ($team['active_players'] as $player) {
-        $birthyear = $player->birth;
+        $birthyear = $player['player']->birth;
         $date = new \DateTime();
         $timezone = new \DateTimeZone('Europe/Berlin');
         $date->setTimezone($timezone);
@@ -409,8 +395,7 @@ class StatisticsService
   /**
    * Get the active teams and collect the pairings with each team.
    */
-  public
-  function active_teams_with_parings($division) {
+  public function active_teams_with_parings($division) {
     $all_games = $this->all_games_division($division);
     $teams_with_pairings = [];
     $active_teams_ids = [];
@@ -606,7 +591,8 @@ class StatisticsService
   public function create_dwz_statistics_table($division) {
     $all_games = $this->all_games_division($division);
     $active_players = $this->active_players_division($all_games);
-    $active_teams_with_players = $this->active_teams_with_players($active_players, $division);
+    $teams_with_active_players = $this->teams_with_active_players($division);
+    $active_teams_with_players = $this->active_teams_with_players($active_players, $teams_with_active_players, $division);
     $active_players_with_games = $this->active_players_with_games($active_players, $all_games);
     $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players, $active_players_with_games);
 
