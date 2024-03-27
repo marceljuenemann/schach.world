@@ -105,8 +105,8 @@ class StatisticsService
                 $team['active_players'][$game->player1->id]['player'] = $game->player1;
               }
               // If the game is not a forfeit game, add it to the player's games
-              if(!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
-                $team['active_players'][$game->player1->id]['games'][] = $game;
+              if (!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                $team['active_players'][$game->player1->id]['games_played'][] = $game;
               }
             }
           }
@@ -120,8 +120,8 @@ class StatisticsService
                 $team['active_players'][$game->player2->id]['player'] = $game->player2;
               }
               // If the game is not a forfeit game, add it to the player's games
-              if(!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
-                $team['active_players'][$game->player2->id]['games'][] = $game;
+              if (!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                $team['active_players'][$game->player2->id]['games_played'][] = $game;
               }
             }
           }
@@ -135,7 +135,7 @@ class StatisticsService
    * Get all teams active in the division and add
    * active players and all players (including passive ones) as separate arrays.
    */
-  public function active_teams_with_players($active_players, $teams_with_active_players, $division) {
+  public function active_teams_with_players($teams_with_active_players) {
     $team_repository = $this->doctrine->getRepository(Team::class);
 
     $active_teams_with_players = $teams_with_active_players;
@@ -221,31 +221,11 @@ class StatisticsService
   }
 
   /**
-   * Create an array with player ID and games played to use it in the DWZ calculation
-   */
-  public function gameCountPlayer($active_players_with_games) {
-    $players_games_count = [];
-    foreach ($active_players_with_games as $key => $player) {
-      $players_games_count[$key]['games_played'] = 0;
-      foreach ($player['games'] as $game) {
-        // Only count the games that were actually played
-        if ($game->result1 != '-' && $game->result2 != '-') {
-          $players_games_count[$key]['games_played'] += 1;
-        }
-      }
-    }
-    return $players_games_count;
-  }
-
-  /**
    * Calculate the DWZ averages for the table
    */
   public function teams_dwz_calculation($active_teams_with_players, $active_players_with_games) {
     $active_teams_with_dwz = $active_teams_with_players;
     $dwz_data = [];
-
-    $players_games_count = $this->gameCountPlayer($active_players_with_games);
-
 
     foreach ($active_teams_with_dwz as $key => &$team) {
       // Start counting the total games for each team seperately
@@ -255,7 +235,7 @@ class StatisticsService
       foreach ($team['active_players'] as $player) {
         $dwz = $player['player']->dwz;
         $player_id = $player['player']->id();
-        $games_played = $players_games_count[$player_id]['games_played'];
+        $games_played = count($player['games_played']);
 
         // Add up the total games played in order to divide the sum by that number later.
         $team_total_games += $games_played;
@@ -269,7 +249,6 @@ class StatisticsService
       // calculate the active DWZ average
       // Get the numbers of games each player has played
 
-      $players_count = count($team['active_players']);
       $dwz_active_average = $dwz_data[$key]['active_dwz_sum'] / $team_total_games;
       $team['active_dwz_average'] = round($dwz_active_average);
 
@@ -591,8 +570,10 @@ class StatisticsService
   public function create_dwz_statistics_table($division) {
     $all_games = $this->all_games_division($division);
     $active_players = $this->active_players_division($all_games);
+    // Sorry for the very similar naming of the methods teams_with_active_players and active_teams_with_players
+    // but I had no better idea.
     $teams_with_active_players = $this->teams_with_active_players($division);
-    $active_teams_with_players = $this->active_teams_with_players($active_players, $teams_with_active_players, $division);
+    $active_teams_with_players = $this->active_teams_with_players($teams_with_active_players);
     $active_players_with_games = $this->active_players_with_games($active_players, $all_games);
     $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players, $active_players_with_games);
 
