@@ -87,9 +87,9 @@ class StatisticsService
     $teams_with_active_players = [];
     // Add pairings to teams
     foreach ($teams_by_division as &$team) {
-        $pairings = $pairing_repository->findByTeam($team);
-        $teams_with_active_players[$team->id]['team'] = $team;
-        $teams_with_active_players[$team->id]['pairings'] = $pairings;
+      $pairings = $pairing_repository->findByTeam($team);
+      $teams_with_active_players[$team->id]['team'] = $team;
+      $teams_with_active_players[$team->id]['pairings'] = $pairings;
     }
 
     // Now extract the players from the pairings and add to each player the games he has played.
@@ -100,7 +100,7 @@ class StatisticsService
           foreach ($pairing->games->getValues() as $game) {
             if (is_object($game->player1)) {
               // Make sure we add the players only once to our array
-              if (!in_array($game->player1->id, $active_players_ids)) {
+              if (!in_array($game->player1->id, $active_players_ids) && !Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
                 $active_players_ids[] = $game->player1->id;
                 $team['active_players'][$game->player1->id]['player'] = $game->player1;
               }
@@ -115,7 +115,8 @@ class StatisticsService
           foreach ($pairing->games->getValues() as $game) {
             if (is_object($game->player2)) {
               // Make sure we add the players only once to our array
-              if (!in_array($game->player2->id, $active_players_ids)) {
+              // Add players to the active players only if the game has not a bye result.
+              if (!in_array($game->player2->id, $active_players_ids) && !Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
                 $active_players_ids[] = $game->player2->id;
                 $team['active_players'][$game->player2->id]['player'] = $game->player2;
               }
@@ -189,7 +190,7 @@ class StatisticsService
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
               $player['games'][] = $game;
-              if(!empty($game->board && !in_array($game->board, $boards_played))) {
+              if (!empty($game->board && !in_array($game->board, $boards_played))) {
                 $boards_played[] = $game->board;
               }
               $result1 = $this->encoding->utf8_encode($game->result1);
@@ -206,7 +207,7 @@ class StatisticsService
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
               $player['games'][] = $game;
-              if(!empty($game->board && !in_array($game->board, $boards_played))) {
+              if (!empty($game->board && !in_array($game->board, $boards_played))) {
                 $boards_played[] = $game->board;
               }
               $result2 = $this->encoding->utf8_encode($game->result2);
@@ -219,14 +220,13 @@ class StatisticsService
               }
             }
           }
-          if(count($boards_played) > 1) {
+          if (count($boards_played) > 1) {
             $min_board = min($boards_played);
             $max_board = max($boards_played);
-            if($min_board != $max_board) {
+            if ($min_board != $max_board) {
               $player['boards_played'] = $min_board . '-' . $max_board;
             }
-          }
-          else {
+          } else {
             $player['boards_played'] = reset($boards_played);
           }
 
@@ -253,7 +253,9 @@ class StatisticsService
       foreach ($team['active_players'] as $player) {
         $dwz = $player['player']->dwz;
         $player_id = $player['player']->id();
+
         $games_played = count($player['games_played']);
+
 
         // Add up the total games played in order to divide the sum by that number later.
         $team_total_games += $games_played;
@@ -314,7 +316,6 @@ class StatisticsService
         $current_year = $date->format('Y');
 
         $games_played = count($player['games_played']);
-
 
         if (!empty($birthyear)) {
           $dwz_data[$key]['active_age_sum'] += ($current_year - $birthyear) * $games_played;
