@@ -923,7 +923,7 @@ class StatisticsService
           'class' => 'name'
         ],
         [
-          'text' => $team['game_count'],
+          'text' => $team['game_count_played'],
           'class' => 'game-all-count border-left-bold',
         ],
         [
