@@ -297,14 +297,14 @@ class StatisticsService
 
 
         if (!empty($birthyear)) {
-          $dwz_data[$key]['active_age_sum'] += $current_year - $birthyear;
+          $dwz_data[$key]['active_age_sum'] += ($current_year - $birthyear) * $games_played;
           $aged_players_count += 1;
         }
       }
       // calculate the active age average
       // It could be that we have no age for any of the players.
       if (!empty($aged_players_count)) {
-        $age_active_average = $dwz_data[$key]['active_age_sum'] / $aged_players_count;
+        $age_active_average = $dwz_data[$key]['active_age_sum'];
         $team['active_age_average'] = round($age_active_average);
       }
     }
