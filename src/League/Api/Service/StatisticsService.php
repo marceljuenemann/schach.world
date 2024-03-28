@@ -87,9 +87,9 @@ class StatisticsService
     $teams_with_active_players = [];
     // Add pairings to teams
     foreach ($teams_by_division as &$team) {
-      $pairings = $pairing_repository->findByTeam($team);
-      $teams_with_active_players[$team->id]['team'] = $team;
-      $teams_with_active_players[$team->id]['pairings'] = $pairings;
+        $pairings = $pairing_repository->findByTeam($team);
+        $teams_with_active_players[$team->id]['team'] = $team;
+        $teams_with_active_players[$team->id]['pairings'] = $pairings;
     }
 
     // Now extract the players from the pairings and add to each player the games he has played.
@@ -223,7 +223,7 @@ class StatisticsService
   /**
    * Calculate the DWZ averages for the table
    */
-  public function teams_dwz_calculation($active_teams_with_players, $active_players_with_games) {
+  public function teams_dwz_calculation($active_teams_with_players) {
     $active_teams_with_dwz = $active_teams_with_players;
     $dwz_data = [];
 
@@ -295,6 +295,8 @@ class StatisticsService
         $date->setTimezone($timezone);
         $current_year = $date->format('Y');
 
+        $games_played = count($player['games_played']);
+
 
         if (!empty($birthyear)) {
           $dwz_data[$key]['active_age_sum'] += ($current_year - $birthyear) * $games_played;
@@ -304,7 +306,7 @@ class StatisticsService
       // calculate the active age average
       // It could be that we have no age for any of the players.
       if (!empty($aged_players_count)) {
-        $age_active_average = $dwz_data[$key]['active_age_sum'];
+        $age_active_average = $dwz_data[$key]['active_age_sum'] / $team_total_games;
         $team['active_age_average'] = round($age_active_average);
       }
     }
@@ -574,8 +576,7 @@ class StatisticsService
     // but I had no better idea.
     $teams_with_active_players = $this->teams_with_active_players($division);
     $active_teams_with_players = $this->active_teams_with_players($teams_with_active_players);
-    $active_players_with_games = $this->active_players_with_games($active_players, $all_games);
-    $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players, $active_players_with_games);
+    $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players);
 
     // Get the board count
     $first_team = reset($dwz_calculation);
