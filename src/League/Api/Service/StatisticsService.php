@@ -178,6 +178,7 @@ class StatisticsService
    */
   public function active_players_with_games($active_players, $all_games) {
     foreach ($active_players as $key => &$player) {
+      $boards_played = [];
       $player_games_ids = [];
       if (!isset($player['games'])) {
         foreach ($all_games as $game) {
@@ -188,6 +189,9 @@ class StatisticsService
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
               $player['games'][] = $game;
+              if(!empty($game->board && !in_array($game->board, $boards_played))) {
+                $boards_played[] = $game->board;
+              }
               $result1 = $this->encoding->utf8_encode($game->result1);
               if ($result1 == 1) {
                 $player['points'] += 1.0;
@@ -202,6 +206,9 @@ class StatisticsService
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
               $player['games'][] = $game;
+              if(!empty($game->board && !in_array($game->board, $boards_played))) {
+                $boards_played[] = $game->board;
+              }
               $result2 = $this->encoding->utf8_encode($game->result2);
               if ($result2 == 1) {
                 $player['points'] += 1.0;
@@ -212,6 +219,17 @@ class StatisticsService
               }
             }
           }
+          if(count($boards_played) > 1) {
+            $min_board = min($boards_played);
+            $max_board = max($boards_played);
+            if($min_board != $max_board) {
+              $player['boards_played'] = $min_board . '-' . $max_board;
+            }
+          }
+          else {
+            $player['boards_played'] = reset($boards_played);
+          }
+
         }
       }
     }
@@ -769,7 +787,7 @@ class StatisticsService
       $dwz = $player['player']->dwz ?? '';
       $team = $player['player']->team->name . ' ' . $player['player']->team->number;
       $team_uri = $player['player']->team->uri();
-      $board = $player['player']->number ?? '';
+      $board = $player['boards_played'] ?? '';
       $games_count = count($player['games']);
       $points = $player['points'];
 
