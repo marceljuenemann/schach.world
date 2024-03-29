@@ -537,15 +537,22 @@ class StatisticsService
 
       // Convert the white and black points to percentages
       $white_percentage = 100 * ($teams_game_scores[$team_id]['white_points'] / $teams_game_scores[$team_id]['white_count']);
-      $teams_game_scores[$team_id]['white_score'] = $white_percentage;
+      $teams_game_scores[$team_id]['white_score'] = round($white_percentage);
       unset($teams_game_scores[$team_id]['white_points'], $teams_game_scores[$team_id]['white_count']);
 
       $black_percentage = 100 * ($teams_game_scores[$team_id]['black_points'] / $teams_game_scores[$team_id]['black_count']);
-      $teams_game_scores[$team_id]['black_score'] = $black_percentage;
+      $teams_game_scores[$team_id]['black_score'] = round($black_percentage);
       unset($teams_game_scores[$team_id]['black_points'], $teams_game_scores[$team_id]['black_count']);
 
-    }
+      $combined_white_black_percentage = round($white_percentage) + round($black_percentage);
 
+      $teams_game_scores[$team_id]['combined_score'] = $combined_white_black_percentage;
+
+    }
+    // Sort the teams by their combined score
+    uasort($teams_game_scores, function ($a, $b) {
+      return [$b['combined_score']] <=> [$a['combined_score']];
+    });
 
     return $teams_game_scores;
   }
@@ -1046,7 +1053,6 @@ class StatisticsService
       ],
     ];
 
-
     // Create the team game score text.
     $forfeit_percentage = 100 * ($sum_forfeit_losses / $sum_game_count);
 
@@ -1059,12 +1065,9 @@ class StatisticsService
       'average_black_score' => round($average_black_score),
     ];
 
-
     $team_game_score_data['table'] = $team_game_score_table;
     $team_game_score_data['text_values'] = $team_game_score_values;
     return $team_game_score_data;
-
   }
-
 
 }
