@@ -5,7 +5,7 @@ namespace Nsv\League\Api\Service;
 use Nsv\League\Api\Model\MatchDay;
 use Nsv\League\Api\Model\Pairing;
 use Nsv\League\Api\Model\Player;
-use Nsv\League\Api\Service\RankingService;
+//use Nsv\League\Api\Service\RankingService;
 use Nsv\League\Entity;
 use Nsv\League\Entity\CacheEntry;
 use Nsv\League\Repository\CacheRepository;
@@ -21,7 +21,7 @@ class MatchDayService
     private PairingRepository $pairingRepository,
     private PlayerRepository $playerRepository,
     private CacheRepository $cacheRepository,
-    private RankingService $rankingService
+    //private RankingService $rankingService
   ) {}
 
 
