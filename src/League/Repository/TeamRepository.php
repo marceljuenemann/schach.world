@@ -26,4 +26,28 @@ class TeamRepository extends ServiceEntityRepository
     }
     return $entity;
   }
+  /**
+   * Find all players for a team, also the inactive ones.
+   */
+  public function team_all_players($team) {
+    return $this->createQueryBuilder('team')
+      ->select('team, players')
+      ->leftJoin('team.players', 'players')
+      ->where('team.id = :team')
+      ->setParameter('team', $team->id)
+      ->getQuery()
+      ->getResult();
+  }
+
+  /**
+   * Find all teams in a division
+   */
+  public function findByDivision(Division $division) {
+    return $this->createQueryBuilder('team')
+      ->select('team')
+      ->where('team.divisionId = :division')
+      ->setParameter('division', $division->id)
+      ->getQuery()
+      ->getResult();
+  }
 }

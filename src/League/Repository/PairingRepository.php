@@ -22,7 +22,7 @@ class PairingRepository extends ServiceEntityRepository
 
   // TODO: move into our own abstract repository? 
   public function find($id, $lockMode = null, $lockVersion = null): Pairing {
-    $entity = parent::find((int) $id, $lockMode, $lockVersion);
+    $entity = parent::find((int)$id, $lockMode, $lockVersion);
     if (!$entity) {
       throw new NotFoundHttpException("Pairing not found");
     }
@@ -46,6 +46,20 @@ class PairingRepository extends ServiceEntityRepository
       ->addOrderBy('p.host', 'ASC')
       ->addOrderBy('p.id', 'ASC')
       ->setParameter('team', $team)
+      ->getQuery()
+      ->getResult();
+  }
+
+  /**
+   * Find pairing by team without additional sub-entities
+   */
+  public function findByTeamOnlyPairing(Team $team) {
+    return $this->getEntityManager()
+      ->createQueryBuilder()
+      ->setParameter('team', $team)
+      ->select('pairing')
+      ->where('pairing.team1 = :team OR pairing.team2 = :team')
+      ->addOrderBy('pairing.id', 'ASC')
       ->getQuery()
       ->getResult();
   }
