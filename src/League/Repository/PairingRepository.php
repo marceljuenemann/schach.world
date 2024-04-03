@@ -53,12 +53,14 @@ class PairingRepository extends ServiceEntityRepository
   /**
    * Find pairing by team without additional sub-entities
    */
-  public function findByTeamOnlyPairing(Team $team) {
+  public function findByTeamOnlyPairing(Team $team, $round) {
     return $this->getEntityManager()
       ->createQueryBuilder()
-      ->setParameter('team', $team)
       ->select('pairing')
       ->where('pairing.team1 = :team OR pairing.team2 = :team')
+      ->where('pairing.round = :round')
+      ->setParameter('team', $team)
+      ->setParameter('round', $round)
       ->addOrderBy('pairing.id', 'ASC')
       ->getQuery()
       ->getResult();
