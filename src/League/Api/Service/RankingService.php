@@ -17,8 +17,14 @@ class RankingService {
    */
   public function rankingTemp($division) {
     $team_repository = $this->leagueEntityManager->getRepository(Team::class);
+    $pairing_repository = $this->leagueEntityManager->getRepository(Pairing::class);
     $teams_division = $team_repository->findByDivision($division);
-    //$teams_with_pairings = $this->leagueEntityManager->getRepository(Pairing::class)->find
+    $teams_with_pairings = [];
+    foreach($teams_division as $key => $team) {
+      $round = 1;
+      $teams_with_pairings[$key]['team'] = $team;
+      $teams_with_pairings[$key]['pairings'][$round] = $pairing_repository->findByTeamOnlyPairing($team, $round);
+    }
 
     //return $teams_division;
     return 'MyHouse';
