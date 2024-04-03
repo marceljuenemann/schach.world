@@ -8,6 +8,7 @@ use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Entity\Player;
 use Nsv\League\Entity\Team;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Nsv\League\Entity\Division;
 
 /**
  * @extends ServiceEntityRepository<Team>

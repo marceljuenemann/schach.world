@@ -3,6 +3,7 @@
 namespace Nsv\League\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Nsv\League\Repository\PairingRepository;
 
 /**
  * A pairing is a match between two teams. It belongs to a specific division and round and
@@ -10,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * 
  * NB: This class would be called Match if that wasn't a reserved keyword in PHP.
  */
-#[ORM\Entity]
+#[ORM\Entity(repositoryClass: PairingRepository::class)]
 #[ORM\Table(name: 'paarungen')]
 class Pairing
 {

@@ -17,7 +17,7 @@ class RankingService {
    */
   public function rankingTemp($division) {
     $team_repository = $this->leagueEntityManager->getRepository(Team::class);
-    //$teams_division = $team_repository->findByDivision($division);
+    $teams_division = $team_repository->findByDivision($division);
     //$teams_with_pairings = $this->leagueEntityManager->getRepository(Pairing::class)->find
 
     //return $teams_division;
