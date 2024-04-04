@@ -134,7 +134,7 @@ class RankingService
         $team['ranking_position'] = $array_position;
       }
 
-      // We store the current array for the next iteration in the loop
+      // We store the current array key for the next iteration in the loop
       $prev_team_id = $key;
     }
     return $teams_with_pairings_crosstable;
