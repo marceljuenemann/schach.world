@@ -27,13 +27,15 @@ class RankingService {
       $teams_with_pairings[$team->id]['team_points'] = $this->addTeamPoints($team, $pairings);
       $teams_with_pairings[$team->id]['board_points'] = $this->addBoardPoints($team, $pairings);
     }
+    // Sort the pairings for the crosstable display
+    $teams_with_pairings_crosstable = $this->sortPairingsCrosstable($teams_with_pairings);
   // Sort the teams by team_points and after that by board_points.
     uasort($teams_with_pairings, function ($a, $b) {
       return [$b['team_points'], $b['board_points']] <=> [$a['team_points'], $a['board_points']];
     });
 
     //return $teams_division;
-    return 'MyHouse';
+    return $teams_with_pairings;
   }
 
   /**
@@ -89,4 +91,32 @@ class RankingService {
     return $team_points;
   }
 
+  /**
+   * Sort the pairings per team into the crosstable order
+   */
+  public function sortPairingsCrosstable($teams_with_pairings) {
+    $teams_with_pairings_crosstable = $teams_with_pairings;
+    $team_count = count($teams_with_pairings_crosstable);
+    $standings_current = array_keys($teams_with_pairings_crosstable);
+    $standings_grid = [];
+    foreach($teams_with_pairings_crosstable as $key => $team) {
+      $standings_grid[$key] = [];
+    }
+    foreach($teams_with_pairings_crosstable as &$team) {
+      $team['crosstable_pairings'] = $standings_grid;
+      foreach($team['pairings'] as $pairing) {
+        if($pairing->team1->id == $team['team']->id) {
+          $opponent_id = $pairing->team2->id;
+          $team['crosstable_pairings'][$opponent_id]['board_points'] = $pairing->result1;
+          $team['crosstable_pairings'][$opponent_id]['round'] = $pairing->round;
+        }
+        if($pairing->team2->id == $team['team']->id) {
+          $opponent_id = $pairing->team1->id;
+          $team['crosstable_pairings'][$opponent_id]['board_points'] = $pairing->result2;
+          $team['crosstable_pairings'][$opponent_id]['round'] = $pairing->round;
+        }
+      }
+    }
+    return $teams_with_pairings_crosstable;
+  }
 }
