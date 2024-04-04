@@ -1,14 +1,16 @@
 <?php
 
 namespace Nsv\League\Api\Service;
+
 use Doctrine\ORM\EntityManagerInterface;
 use Nsv\League\Entity\Team;
 use Nsv\League\Entity\Pairing;
 use Doctrine\Persistence\ManagerRegistry;
 
-class RankingService {
+class RankingService
+{
 
-  public function __construct (private EntityManagerInterface $leagueEntityManager) {
+  public function __construct(private EntityManagerInterface $leagueEntityManager) {
 
   }
 
@@ -20,19 +22,20 @@ class RankingService {
     $pairing_repository = $this->leagueEntityManager->getRepository(Pairing::class);
     $teams_division = $team_repository->findByDivision($division);
     $teams_with_pairings = [];
-    foreach($teams_division as $team) {
+    foreach ($teams_division as $team) {
       $teams_with_pairings[$team->id]['team'] = $team;
       $pairings = $pairing_repository->findByTeamOnlyPairing($team, $round);
       $teams_with_pairings[$team->id]['pairings'] = $pairings;
       $teams_with_pairings[$team->id]['team_points'] = $this->addTeamPoints($team, $pairings);
       $teams_with_pairings[$team->id]['board_points'] = $this->addBoardPoints($team, $pairings);
     }
-    // Sort the pairings for the crosstable display
-    $teams_with_pairings_crosstable = $this->sortPairingsCrosstable($teams_with_pairings);
-  // Sort the teams by team_points and after that by board_points.
+    // Sort the teams by team_points and after that by board_points.
     uasort($teams_with_pairings, function ($a, $b) {
       return [$b['team_points'], $b['board_points']] <=> [$a['team_points'], $a['board_points']];
     });
+    // Sort the pairings for the crosstable display
+    $teams_with_pairings_crosstable = $this->sortPairingsCrosstable($teams_with_pairings);
+
 
     //return $teams_division;
     return $teams_with_pairings;
@@ -42,12 +45,12 @@ class RankingService {
    * Calculate the team points from the team and its pairings.
    */
   public function addTeamPoints($team, array $pairings) {
-    $team_points = (int) 0;
-    foreach($pairings as $pairing) {
-      if($pairing->team1->id == $team->id) {
+    $team_points = (int)0;
+    foreach ($pairings as $pairing) {
+      if ($pairing->team1->id == $team->id) {
         $team_points += $this->teamPointsFromResult($pairing->result1, $pairing->result2);
       }
-      if($pairing->team2->id == $team->id) {
+      if ($pairing->team2->id == $team->id) {
         $team_points += $this->teamPointsFromResult($pairing->result2, $pairing->result1);
       }
     }
@@ -58,8 +61,8 @@ class RankingService {
    * Calculate the board points from the team and its pairings.
    */
   public function addBoardPoints($team, array $pairings) {
-    $board_points = (float) 0;
-    foreach($pairings as $pairing) {
+    $board_points = (float)0;
+    foreach ($pairings as $pairing) {
       if ($pairing->team1->id == $team->id) {
         $board_points += $pairing->result1;
       }
@@ -75,17 +78,17 @@ class RankingService {
    * Saves repetition of this code.
    */
   public function teamPointsFromResult($result1, $result2) {
-    if($result1 > $result2) {
+    if ($result1 > $result2) {
       $team_points = 2;
     }
-    if($result1 < $result2) {
+    if ($result1 < $result2) {
       $team_points = 0;
     }
     // This is for the case the pairing was not played at all
-    if(empty($result1) && empty($result1)) {
+    if (empty($result1) && empty($result1)) {
       $team_points = 0;
     }
-    if($result1 == $result2 && !empty($result1)) {
+    if ($result1 == $result2 && !empty($result1)) {
       $team_points = 1;
     }
     return $team_points;
@@ -99,24 +102,45 @@ class RankingService {
     $team_count = count($teams_with_pairings_crosstable);
     $standings_current = array_keys($teams_with_pairings_crosstable);
     $standings_grid = [];
-    foreach($teams_with_pairings_crosstable as $key => $team) {
+    foreach ($teams_with_pairings_crosstable as $key => $team) {
       $standings_grid[$key] = [];
     }
-    foreach($teams_with_pairings_crosstable as &$team) {
+    $prev_team_id = 0;
+    foreach ($teams_with_pairings_crosstable as $key => &$team) {
+      $team['ranking_position'] = 0;
       $team['crosstable_pairings'] = $standings_grid;
-      foreach($team['pairings'] as $pairing) {
-        if($pairing->team1->id == $team['team']->id) {
+      foreach ($team['pairings'] as $pairing) {
+        if ($pairing->team1->id == $team['team']->id) {
           $opponent_id = $pairing->team2->id;
           $team['crosstable_pairings'][$opponent_id]['board_points'] = $pairing->result1;
           $team['crosstable_pairings'][$opponent_id]['round'] = $pairing->round;
         }
-        if($pairing->team2->id == $team['team']->id) {
+        if ($pairing->team2->id == $team['team']->id) {
           $opponent_id = $pairing->team1->id;
           $team['crosstable_pairings'][$opponent_id]['board_points'] = $pairing->result2;
           $team['crosstable_pairings'][$opponent_id]['round'] = $pairing->round;
         }
       }
+      // Also add the ranking number to each team
+      $array_position = array_search($key, array_keys($teams_with_pairings_crosstable)) + 1;
+
+      // If the team has the same team and board points as the team before it, it gets the same ranking position
+      if (!empty($prev_team_id)) {
+        if ($team['team_points'] == $teams_with_pairings_crosstable[$prev_team_id]['team_points'] &&
+          $team['board_points'] == $teams_with_pairings_crosstable[$prev_team_id]['board_points']) {
+          $team['ranking_position'] = $teams_with_pairings_crosstable[$prev_team_id]['ranking_position'];
+        }
+      } else {
+        $team['ranking_position'] = $array_position;
+      }
+
+      $umper = 'mi';
+      // We store the current array key so we can access this
+      // value in the next loop iteration
+      $prev_team_id = $key;
     }
+
+
     return $teams_with_pairings_crosstable;
   }
 }
