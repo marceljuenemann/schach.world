@@ -99,8 +99,6 @@ class RankingService
    */
   public function sortPairingsCrosstable($teams_with_pairings) {
     $teams_with_pairings_crosstable = $teams_with_pairings;
-    $team_count = count($teams_with_pairings_crosstable);
-    $standings_current = array_keys($teams_with_pairings_crosstable);
     $standings_grid = [];
     foreach ($teams_with_pairings_crosstable as $key => $team) {
       $standings_grid[$key] = [];
@@ -129,18 +127,16 @@ class RankingService
         if ($team['team_points'] == $teams_with_pairings_crosstable[$prev_team_id]['team_points'] &&
           $team['board_points'] == $teams_with_pairings_crosstable[$prev_team_id]['board_points']) {
           $team['ranking_position'] = $teams_with_pairings_crosstable[$prev_team_id]['ranking_position'];
+        } else {
+          $team['ranking_position'] = $array_position;
         }
       } else {
         $team['ranking_position'] = $array_position;
       }
 
-      $umper = 'mi';
-      // We store the current array key so we can access this
-      // value in the next loop iteration
+      // We store the current array for the next iteration in the loop
       $prev_team_id = $key;
     }
-
-
     return $teams_with_pairings_crosstable;
   }
 }
