@@ -137,6 +137,34 @@ class RankingService
       // We store the current array key for the next iteration in the loop
       $prev_team_id = $key;
     }
+    $crosstable_table = $this->create_crosstable_table($teams_with_pairings_crosstable);
     return $teams_with_pairings_crosstable;
   }
+
+  /**
+   * create the table structure to send to TWIG.
+   */
+  public function create_crosstable_table($teams_with_pairings_crosstable) {
+    $team_count = count($teams_with_pairings_crosstable);
+
+    $crosstable_table['header'] = [
+      ['text' => '', 'class' => 'ranking-position'],
+      ['text' => 'Mannschaft', 'class' => 'team'],
+      ['text' => 'MP', 'class' => 'team-points'],
+      ['text' => 'BP', 'class' => 'board-points']
+    ];
+
+    // Create header cells for every team numbered from 1 to $team_count
+    $crosstable_pairings_numbers = [];
+    for($i=1; $i<=$team_count; $i++) {
+      $crosstable_pairings_numbers[] = ['text' => $i, 'class' => 'pairing-' . $i];
+    }
+
+    // insert the numbered th elements into the table header.
+    array_splice($crosstable_table['header'], 2, 0, $crosstable_pairings_numbers);
+
+    return $crosstable_table;
+  }
+
+
 }
