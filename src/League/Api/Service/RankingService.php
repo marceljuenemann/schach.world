@@ -111,12 +111,12 @@ class RankingService
         if ($pairing->team1->id == $team['team']->id) {
           $opponent_id = $pairing->team2->id;
           $team['crosstable_pairings'][$opponent_id]['board_points'] = $pairing->result1;
-          $team['crosstable_pairings'][$opponent_id]['round'] = $pairing->round;
+          $team['crosstable_pairings'][$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
         }
         if ($pairing->team2->id == $team['team']->id) {
           $opponent_id = $pairing->team1->id;
           $team['crosstable_pairings'][$opponent_id]['board_points'] = $pairing->result2;
-          $team['crosstable_pairings'][$opponent_id]['round'] = $pairing->round;
+          $team['crosstable_pairings'][$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
         }
       }
       // Also add the ranking number to each team
@@ -149,19 +149,76 @@ class RankingService
 
     $crosstable_table['header'] = [
       ['text' => '', 'class' => 'ranking-position'],
-      ['text' => 'Mannschaft', 'class' => 'team'],
-      ['text' => 'MP', 'class' => 'team-points'],
+      ['text' => 'Mannschaft', 'class' => 'team border-right-bold'],
+      ['text' => 'MP', 'class' => 'team-points border-left-bold'],
       ['text' => 'BP', 'class' => 'board-points']
     ];
 
     // Create header cells for every team numbered from 1 to $team_count
     $crosstable_pairings_numbers = [];
-    for($i=1; $i<=$team_count; $i++) {
+    for ($i = 1; $i <= $team_count; $i++) {
       $crosstable_pairings_numbers[] = ['text' => $i, 'class' => 'pairing-' . $i];
     }
 
     // insert the numbered th elements into the table header.
     array_splice($crosstable_table['header'], 2, 0, $crosstable_pairings_numbers);
+
+    foreach ($teams_with_pairings_crosstable as $key => $team) {
+      $crosstable_table['body'][$key] = [
+        [
+          'text' => $team['ranking_position'],
+          'class' => 'ranking-position'
+        ],
+        [
+          'text' => $team['team']->nameWithNumber(),
+          'link' => $team['team']->uri(),
+          'class' => 'name border-right-bold',
+        ],
+        [
+          'text' => $team['team_points'],
+          'class' => 'team-points border-left-bold'
+        ],
+        [
+          'text' => $team['board_points'],
+          'class' => 'board-points'
+        ],
+      ];
+    }
+
+    // Create crosstable cells with pairing results
+    $results_grid = [];
+    foreach($teams_with_pairings_crosstable as $key => $team) {
+      foreach($team['crosstable_pairings'] as $pairing_key => $pairing) {
+        if(!empty($pairing['board_points'])) {
+          $results_grid[$key][] = [
+            'text' => $pairing['board_points'],
+            'link' => $pairing['round_uri'],
+            'title' => 'gegen ' . $teams_with_pairings_crosstable[$pairing_key]['team']->nameWithNumber(),
+          ];
+        } elseif($key == $pairing_key) {
+          // If the team is paired against itself, make the table cell grey.
+          $results_grid[$key][] = [
+            'text' => '',
+            'class' =>  'self-pairing'
+          ];
+        }
+        else {
+          $results_grid[$key][] = [
+            'text' => '',
+          ];
+        }
+      }
+    }
+
+    // Insert the results grid into the table body
+    foreach($crosstable_table['body'] as $key => &$row) {
+      array_splice($row, 2, 0, $results_grid[$key]);
+    }
+
+    // reset the array keys of the table body. We don't need the team ids anymore.
+    $crosstable_table['body'] = array_values($crosstable_table['body']);
+
+
 
     return $crosstable_table;
   }
