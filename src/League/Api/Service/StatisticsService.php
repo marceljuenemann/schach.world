@@ -93,7 +93,7 @@ class StatisticsService
     }
 
     // Now extract the players from the pairings and add to each player the games he has played.
-    foreach ($teams_with_active_players as &$team) {
+    foreach ($teams_with_active_players as $key => &$team) {
       $active_players_ids = [];
       foreach ($team['pairings'] as $pairing) {
         if ($pairing->team1->id == $team['team']->id) {
@@ -127,6 +127,10 @@ class StatisticsService
             }
           }
         }
+      }
+      // Remove teams that have not played any game
+      if(empty($team['active_players'])) {
+        unset($teams_with_active_players[$key]);
       }
     }
     return $teams_with_active_players;

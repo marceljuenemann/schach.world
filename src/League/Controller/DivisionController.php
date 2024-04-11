@@ -26,10 +26,10 @@ class DivisionController extends AbstractLeagueController
   private $entityManager;
 
   function __construct(
-    League $league,
-    LeagueAuthState $auth,
-    LegacySystem $legacySystem,
-    Division $division,
+    League                         $league,
+    LeagueAuthState                $auth,
+    LegacySystem                   $legacySystem,
+    Division                       $division,
     private EntityManagerInterface $leagueEntityManager
   ) {
     parent::__construct($league, $auth, $legacySystem);
@@ -38,8 +38,7 @@ class DivisionController extends AbstractLeagueController
   }
 
   #[Route('{division}/spielplan/', name: 'schedule')]
-  public function schedule(ScheduleService $service): Response
-  {
+  public function schedule(ScheduleService $service): Response {
     $matchDays = $service->divisionSchedule($this->division);
     return $this->renderWithLegacySystem('schedule.html.twig', [
       'matchDays' => $matchDays,
@@ -48,8 +47,7 @@ class DivisionController extends AbstractLeagueController
   }
 
   #[Route('{division}/spielplan/debug/', name: 'schedule_debug')]
-  public function schedule_debug(ScheduleService $service): Response
-  {
+  public function schedule_debug(ScheduleService $service): Response {
     $matchDays = $service->divisionSchedule($this->division);
     return $this->debugResponse($matchDays);
   }
@@ -69,46 +67,52 @@ class DivisionController extends AbstractLeagueController
   }
 
   #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]
-  public function matchday_api(int $round, MatchDayService $service): Response
-  {
+  public function matchday_api(int $round, MatchDayService $service): Response {
     return $this->apiResponse($this->matchday_model($service, $round));
   }
 
   #[Route('{division}/statistik', name: 'statistik')]
-  public function statistics(StatisticsService $service): Response
-  {
+  public function statistics(StatisticsService $service): Response {
 
-       $division_name = $this->division->name;
+    $division_name = $this->division->name;
 
-    $dwz_data = $service->create_dwz_statistics_table($this->division);
+    // Check if any games have been played. Some leagues have been
+    // created, but no games were ever played and entered into the system.
+    if (!empty($service->all_games_division($this->division))) {
 
-    $dwz_table = $dwz_data['table'];
+      $dwz_data = $service->create_dwz_statistics_table($this->division);
+      $dwz_table = $dwz_data['table'];
 
-    $topscorer_data = $service->create_topscorer_table($this->division);
+      $topscorer_data = $service->create_topscorer_table($this->division);
+      $topscorer_table = $topscorer_data['table'];
 
-    $topscorer_table = $topscorer_data['table'];
+      $team_game_score_data = $service->create_team_game_score_table($this->division);
+      $team_game_score_table = $team_game_score_data['table'];
 
-    $team_game_score_data = $service->create_team_game_score_table($this->division);
+      $intro_text_values = array_merge($dwz_data['text_values'], $topscorer_data['text_values'], $team_game_score_data['text_values']);
+      return $this->renderWithLegacySystem('division/statistics.html.twig',
+        [
+          'division_name' => $division_name,
+          'intro_text_values' => $intro_text_values,
+          'dwz_table' => $dwz_table,
+          'topscorer_table' => $topscorer_table,
+          'team_game_score_table' => $team_game_score_table,
+        ]);
+    } else {
+      // If no games have been played, just return the Division title.
+      // This relies on "strict_variables: false" in twig.yaml. Else
+      // the template would create errors due to missing content variables.
+      return $this->renderWithLegacySystem('division/statistics.html.twig',
+        [
+          'division_name' => $division_name,
+        ]);
+    }
 
-    $team_game_score_table = $team_game_score_data['table'];
-
-    $intro_text_values = array_merge($dwz_data['text_values'], $topscorer_data['text_values'], $team_game_score_data['text_values']);
-
-
-    return $this->renderWithLegacySystem('division/statistics.html.twig',
-      [
-        'division_name' => $division_name,
-        'intro_text_values' => $intro_text_values,
-        'dwz_table' => $dwz_table,
-        'topscorer_table' => $topscorer_table,
-        'team_game_score_table' => $team_game_score_table,
-      ]);
 
   }
 
   #[Route('{division}/{round}/', name: 'matchday')]
-  public function matchday(int $round, MatchDayService $service): Response
-  {
+  public function matchday(int $round, MatchDayService $service): Response {
     $matchDay = $this->matchday_model($service, $round);
     return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
       'matchDay' => $matchDay,
@@ -116,8 +120,7 @@ class DivisionController extends AbstractLeagueController
     ]);
   }
 
-  private function matchday_model(MatchDayService $service, int $round)
-  {
+  private function matchday_model(MatchDayService $service, int $round) {
     return $service->matchDayCached($this->division, $round, function () use ($round) {
       $this->initializeLegacySystem();
       $_GET['r'] = $round;
@@ -127,8 +130,7 @@ class DivisionController extends AbstractLeagueController
   }
 
   #[Route('{division}/', name: 'index')]
-  public function index(ScheduleService $scheduleService, MatchDayService $matchDayService): Response
-  {
+  public function index(ScheduleService $scheduleService, MatchDayService $matchDayService): Response {
     $round = $scheduleService->closestRound($this->division, date('Y-m-d'));
     return $this->matchday($round ? $round->round : 1, $matchDayService);
   }
@@ -139,8 +141,7 @@ class DivisionController extends AbstractLeagueController
    * Returns the tab navigation configuration for division pages.
    */
   // TODO: Might no longer need this?
-  private function divisionTabs(string $active = null): array
-  {
+  private function divisionTabs(string $active = null): array {
     $tabs [] = [
       'label' => 'Spieltage',
       'uri' => $this->league->uri() . $this->division->path() . '/',  // TODO: use uri()
