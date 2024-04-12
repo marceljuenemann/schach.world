@@ -50,6 +50,26 @@ class PairingRepository extends ServiceEntityRepository
       ->getResult();
   }
 
+  public function findByTeamAndDivision(Team $team, Division $division) {
+      return $this->getEntityManager()
+        ->createQueryBuilder()
+        ->select('p, g, s1, s2')
+        ->from(Pairing::class, 'p')
+        ->leftJoin('p.games', 'g')
+        // leftJoin to allow NULL players.
+        ->leftJoin('g.player1', 's1')
+        ->leftJoin('g.player2', 's2')
+        ->where('p.team1 = :team OR p.team2 = :team')
+        ->andWhere('p.division = :division')
+        ->addOrderBy('p.round', 'ASC')
+        ->addOrderBy('p.host', 'ASC')
+        ->addOrderBy('p.id', 'ASC')
+        ->setParameter('team', $team)
+        ->setParameter('division', $division)
+        ->getQuery()
+        ->getResult();
+  }
+
   /**
    * Returns all pairings for the specified round, also fetching all games and players.
    */

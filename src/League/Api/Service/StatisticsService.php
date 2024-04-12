@@ -87,7 +87,7 @@ class StatisticsService
     $teams_with_active_players = [];
     // Add pairings to teams
     foreach ($teams_by_division as &$team) {
-      $pairings = $pairing_repository->findByTeam($team);
+      $pairings = $pairing_repository->findByTeamAndDivision($team, $division);
       $teams_with_active_players[$team->id]['team'] = $team;
       $teams_with_active_players[$team->id]['pairings'] = $pairings;
     }
@@ -313,11 +313,11 @@ class StatisticsService
       $dwz_data[$key]['active_age_sum'] = (int)0;
       $aged_players_count = (int)0;
       foreach ($team['active_players'] as $player) {
-        $birthyear = $player['player']->birth;
+        $birthyear = intval($player['player']->birth);
         $date = new \DateTime();
         $timezone = new \DateTimeZone('Europe/Berlin');
         $date->setTimezone($timezone);
-        $current_year = $date->format('Y');
+        $current_year = intval($date->format('Y'));
 
         $games_played = count($player['games_played']);
 
