@@ -76,10 +76,14 @@ class DivisionController extends AbstractLeagueController
 
     $division_name = $this->division->name;
 
+    $teams_with_active_players = $service->teams_with_active_players($this->division);
+    $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players);
+
     // Check if any games have been played. Some leagues have been
     // created, but no games were ever played and entered into the system.
     if (!empty($service->all_games_division($this->division))
-      && !empty($service->create_topscorer_table($this->division))) {
+      && !empty($service->create_topscorer_table($this->division))
+      && !empty($active_teams_with_players)) {
 
       $dwz_data = $service->create_dwz_statistics_table($this->division);
       $dwz_table = $dwz_data['table'];
@@ -98,6 +102,7 @@ class DivisionController extends AbstractLeagueController
           'dwz_table' => $dwz_table,
           'topscorer_table' => $topscorer_table,
           'team_game_score_table' => $team_game_score_table,
+          'tabs' => $this->divisionTabs('stats')
         ]);
     } else {
       // If no games have been played, just return the Division title.

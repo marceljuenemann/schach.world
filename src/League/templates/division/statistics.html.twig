@@ -1,9 +1,12 @@
 {% extends '@league/legacy-layout.html.twig' %}
 {% import "@league/macros/table-macro.html.twig" as table_macro %}
 {% import "@league/macros/players-clubs-macro.html.twig" as players_clubs_macro %}
+{% import "macros.html.twig" as nsv %}
 {% set title = 'Statistiken ' ~ division_name %}
 
 {% block content %}
+    {{ nsv.tabNavigation(tabs) }}
+
     {% if intro_text_values %}
         <div class="statistics-container">
             <br>

@@ -629,7 +629,7 @@ class StatisticsService
     $teams_with_active_players = $this->teams_with_active_players($division);
     $active_teams_with_players = $this->active_teams_with_players($teams_with_active_players);
     $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players);
-
+if(!empty($active_teams_with_players)) {
     // Get the board count
     $first_team = reset($dwz_calculation);
     $division = $first_team['team']->division;
@@ -778,6 +778,12 @@ class StatisticsService
     $dwz_data['text_values'] = $dwz_text_values;
 
     return $dwz_data;
+  }
+
+    else {
+      return '';
+    }
+
 
   }
 
