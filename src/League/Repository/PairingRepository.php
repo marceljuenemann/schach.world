@@ -71,6 +71,25 @@ class PairingRepository extends ServiceEntityRepository
   }
 
   /**
+   * Check if there are rows for team1 and team2 in the "mannschaften" table
+   * for the given pairing. This way we can find pairings that contain teams
+   * that have been deleted or are nonexisting.
+   */
+  public function findPairingTeams($pairing_id) {
+    $conn = $this->getEntityManager()->getConnection();
+    $sql = '
+            SELECT * FROM paarungen p
+            WHERE p.id = :pairing_id
+            INNER JOIN mannschaften m ON m.staffel = p.id
+         ';
+    $stmt = $conn->prepare($sql);
+    $result = $stmt->executeQuery(['pairing_id' => $pairing_id]);
+    $data = $result->fetchAllAssociative();
+    return $data;
+  }
+
+
+  /**
    * Returns all pairings for the specified round, also fetching all games and players.
    */
   public function findByRound(Division $division, int $round) {
