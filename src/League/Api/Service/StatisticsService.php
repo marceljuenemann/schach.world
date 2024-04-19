@@ -7,17 +7,22 @@ use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity\Team;
-use Nsv\League\Api\Service\DivisionService;
 
 class StatisticsService
 {
 
   const MIN_DWZ = 700;
 
+  private $pairingRepository;
+
+  private $teamRepository;
+
   public function __construct(
     private ManagerRegistry $doctrine, private Encoding $encoding, private DivisionService $divisionService
   ) {
     $this->entityManager = $this->doctrine->getManager('league');
+    $this->pairingRepository = $this->doctrine->getRepository(Pairing::class);
+    $this->teamRepository = $this->doctrine->getRepository(Team::class);
   }
 
   /**
@@ -26,8 +31,7 @@ class StatisticsService
    */
   public function all_games_division($division) {
 
-    $pairing_repository = $this->doctrine->getRepository(Pairing::class);
-    $data = $pairing_repository->findAllGamesDivision($division);
+    $data = $this->pairingRepository->findAllGamesDivision($division);
 
     $all_games = [];
     $all_games_ids = [];
@@ -93,43 +97,61 @@ class StatisticsService
     }
 
     // Now extract the players from the pairings and add to each player the games he has played.
-    foreach ($teams_with_active_players as $key => &$team) {
+      foreach ($teams_with_active_players as $key => &$team) {
       $active_players_ids = [];
-      foreach ($team['pairings'] as $pairing) {
-        if ($pairing->team1->id == $team['team']->id) {
-          foreach ($pairing->games->getValues() as $game) {
-            if (is_object($game->player1)) {
-              // Make sure we add the players only once to our array
-              if (!in_array($game->player1->id, $active_players_ids) && !Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
-                $active_players_ids[] = $game->player1->id;
-                $team['active_players'][$game->player1->id]['player'] = $game->player1;
-              }
-              // If the game is not a forfeit game, add it to the player's games
-              if (!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
-                $team['active_players'][$game->player1->id]['games_played'][] = $game;
+      foreach ($team['pairings'] as &$pairing) {
+        // There are corrupt pairings that contain nonexisting teams. We need
+        // to weed those out and not use them for statistics.
+        $team_ids = $pairing_repository->findPairingTeamIds($pairing->id);
+        $team_ids = reset($team_ids);
+        $team1_exists = '';
+        $team2_exists = '';
+
+        if (!empty($team_ids['mannschaft1'])) {
+          $team1_exists = $team_repository->checkIfExists($team_ids['mannschaft1']);
+        }
+        if (!empty($team_ids['mannschaft2'])) {
+          $team2_exists = $team_repository->checkIfExists($team_ids['mannschaft2']);
+        }
+        if (empty($team1_exists) || empty($team2_exists)) {
+          unset($pairing);
+        } else {
+         if ($pairing->team1->id == $team['team']->id) {
+            foreach ($pairing->games->getValues() as $game) {
+              if (is_object($game->player1)) {
+                // Make sure we add the players only once to our array
+                if (!in_array($game->player1->id, $active_players_ids) && !Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                  $active_players_ids[] = $game->player1->id;
+                  $team['active_players'][$game->player1->id]['player'] = $game->player1;
+                }
+                // If the game is not a forfeit game, add it to the player's games
+                if (!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                  $team['active_players'][$game->player1->id]['games_played'][] = $game;
+                }
               }
             }
           }
-        }
-        if ($pairing->team2->id == $team['team']->id) {
-          foreach ($pairing->games->getValues() as $game) {
-            if (is_object($game->player2)) {
-              // Make sure we add the players only once to our array
-              // Add players to the active players only if the game has not a bye result.
-              if (!in_array($game->player2->id, $active_players_ids) && !Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
-                $active_players_ids[] = $game->player2->id;
-                $team['active_players'][$game->player2->id]['player'] = $game->player2;
-              }
-              // If the game is not a forfeit game, add it to the player's games
-              if (!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
-                $team['active_players'][$game->player2->id]['games_played'][] = $game;
+
+          if ($pairing->team2->id == $team['team']->id) {
+            foreach ($pairing->games->getValues() as $game) {
+              if (is_object($game->player2)) {
+                // Make sure we add the players only once to our array
+                // Add players to the active players only if the game has not a bye result.
+                if (!in_array($game->player2->id, $active_players_ids) && !Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                  $active_players_ids[] = $game->player2->id;
+                  $team['active_players'][$game->player2->id]['player'] = $game->player2;
+                }
+                // If the game is not a forfeit game, add it to the player's games
+                if (!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                  $team['active_players'][$game->player2->id]['games_played'][] = $game;
+                }
               }
             }
           }
         }
       }
       // Remove teams that have not played any game
-      if(empty($team['active_players'])) {
+      if (empty($team['active_players'])) {
         unset($teams_with_active_players[$key]);
       }
     }
@@ -407,6 +429,7 @@ class StatisticsService
     $active_teams_ids = [];
 
     foreach ($all_games as $game) {
+
       // Make sure we add the teams only once to our array
       if (!in_array($game->pairing->team1->id, $active_teams_ids)) {
         $active_teams_ids[] = $game->pairing->team1->id;
@@ -596,28 +619,6 @@ class StatisticsService
 
 
   /**
-   * Sort the players by points first and by played games after that.
-   * Who has played less games will be sorted further up.
-   */
-  public function players_sorted_by_points_and_games($active_players_with_games) {
-    uasort($active_players_with_games, function ($a, $b) {
-      return [$b['points'], count($a['games'])] <=> [$a['points'], count($b['games'])];
-    });
-    return $active_players_with_games;
-  }
-
-  /**
-   * Sort the players by draws
-   */
-  public function players_sorted_by_draws($active_players_with_games) {
-    uasort($active_players_with_games, function ($a, $b) {
-      return [$b['draws']] <=> [$a['draws']];
-    });
-    return $active_players_with_games;
-  }
-
-
-  /**
    * Create the table array for DWZ statistics that
    * is sent to the template in the controller.
    */
@@ -629,158 +630,156 @@ class StatisticsService
     $teams_with_active_players = $this->teams_with_active_players($division);
     $active_teams_with_players = $this->active_teams_with_players($teams_with_active_players);
     $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players);
-if(!empty($active_teams_with_players)) {
-    // Get the board count
-    $first_team = reset($dwz_calculation);
-    $division = $first_team['team']->division;
-    $board_count = $division->config('boardCount');
+    if (!empty($active_teams_with_players)) {
+      // Get the board count
+      $first_team = reset($dwz_calculation);
+      $division = $first_team['team']->division;
+      $board_count = $division->config('boardCount');
 
-    // We also return part of statistics text, so the dwz_table is only part of the returned data
+      // We also return part of statistics text, so the dwz_table is only part of the returned data
 
-    $dwz_data = [];
+      $dwz_data = [];
 
-    $dwz_table = [];
-    $dwz_text = '';
+      $dwz_table = [];
+      $dwz_text = '';
 
-    $dwz_table['header'] = [
-      [
-        'text' => 'Mannschaft',
-        'class' => 'team'
-      ],
-      [
-        'text' => 'Eingesetzte',
-        'class' => 'active',
-        'title' => $this->encoding->utf8_decode('DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.')
-      ],
-      [
-        'text' => 'Top ' . $board_count,
-        'class' => 'top',
-        'title' => $this->encoding->utf8_decode('Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet.')
-      ],
-      [
-        'text' => 'Alle Spieler',
-        'class' => 'all',
-        'title' => $this->encoding->utf8_decode('Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.')
-      ],
-      [
-        'text' => $this->encoding->utf8_decode('Alter Ø'),
-        'class' => 'age',
-        'title' => $this->encoding->utf8_decode('Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben.')
-      ],
-    ];
-
-    $average_sums = [
-      'dwz_active' => (int)0,
-      'dwz_top' => (int)0,
-      'dwz_all' => (int)0,
-      'age' => (int)0,
-    ];
-
-    // Create the table body
-    foreach ($dwz_calculation as $key => $team) {
-      $team_name = $team['team']->nameWithNumber();
-      $team_uri = $team['team']->uri();
-      $dwz_active = $team['active_dwz_average'];
-      $dwz_top = $team['top_x_dwz_average'];
-      $dwz_all = $team['all_dwz_average'];
-      $age = $team['active_age_average'];
-      if ($team['dwz_rank'] == 'top') {
-        $active_dwz_classes = 'active-dwz fw-bold ';
-      } else {
-        $active_dwz_classes = 'active-dwz';
-      }
-      if ($team['top_dwz_rank'] == 'top') {
-        $top_dwz_classes = 'top-dwz fw-bold';
-      } else {
-        $top_dwz_classes = 'top-dwz';
-      }
-      if ($team['all_dwz_rank'] == 'top') {
-        $all_dwz_classes = 'all-dwz fw-bold';
-      } else {
-        $all_dwz_classes = 'all-dwz';
-      }
-      if ($team['age_rank'] == 'top') {
-        $age_classes = 'age fw-bold';
-      } else {
-        $age_classes = 'age';
-      }
-
-      // Add each team's value to the sum so we can
-      // calculate the average for the last row.
-      $average_sums['dwz_active'] += $dwz_active;
-      $average_sums['dwz_top'] += $dwz_top;
-      $average_sums['dwz_all'] += $dwz_all;
-      $average_sums['age'] += $age;
-
-      $dwz_table['body'][] = [
+      $dwz_table['header'] = [
         [
-          'text' => $team_name,
-          'link' => $team_uri,
+          'text' => 'Mannschaft',
           'class' => 'team'
         ],
         [
-          'text' => $dwz_active,
-          'class' => $active_dwz_classes,
+          'text' => 'Eingesetzte',
+          'class' => 'active',
+          'title' => $this->encoding->utf8_decode('DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.')
         ],
         [
-          'text' => $dwz_top,
-          'class' => $top_dwz_classes
+          'text' => 'Top ' . $board_count,
+          'class' => 'top',
+          'title' => $this->encoding->utf8_decode('Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet.')
         ],
         [
-          'text' => $dwz_all,
-          'class' => $all_dwz_classes
+          'text' => 'Alle Spieler',
+          'class' => 'all',
+          'title' => $this->encoding->utf8_decode('Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.')
         ],
         [
-          'text' => $age,
-          'class' => $age_classes
+          'text' => $this->encoding->utf8_decode('Alter Ø'),
+          'class' => 'age',
+          'title' => $this->encoding->utf8_decode('Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben.')
         ],
       ];
-    }
 
-    $team_count = count($dwz_calculation);
-    $average_values = [
-      'dwz_active' => round($average_sums['dwz_active'] / $team_count),
-      'dwz_top' => round($average_sums['dwz_top'] / $team_count),
-      'dwz_all' => round($average_sums['dwz_all'] / $team_count),
-      'age' => round($average_sums['age'] / $team_count),
-    ];
+      $average_sums = [
+        'dwz_active' => (int)0,
+        'dwz_top' => (int)0,
+        'dwz_all' => (int)0,
+        'age' => (int)0,
+      ];
 
-    $dwz_text_values = [
-      'dwz_active_average' => $average_values['dwz_active'],
-      'age_average' => $average_values['age'],
-    ];
+      // Create the table body
+      foreach ($dwz_calculation as $key => $team) {
+        $team_name = $team['team']->nameWithNumber();
+        $team_uri = $team['team']->uri();
+        $dwz_active = $team['active_dwz_average'];
+        $dwz_top = $team['top_x_dwz_average'];
+        $dwz_all = $team['all_dwz_average'];
+        $age = $team['active_age_average'];
+        if ($team['dwz_rank'] == 'top') {
+          $active_dwz_classes = 'active-dwz fw-bold ';
+        } else {
+          $active_dwz_classes = 'active-dwz';
+        }
+        if ($team['top_dwz_rank'] == 'top') {
+          $top_dwz_classes = 'top-dwz fw-bold';
+        } else {
+          $top_dwz_classes = 'top-dwz';
+        }
+        if ($team['all_dwz_rank'] == 'top') {
+          $all_dwz_classes = 'all-dwz fw-bold';
+        } else {
+          $all_dwz_classes = 'all-dwz';
+        }
+        if ($team['age_rank'] == 'top') {
+          $age_classes = 'age fw-bold';
+        } else {
+          $age_classes = 'age';
+        }
 
-    // Add an extra row to the table with the average values for all teams.
-    $dwz_table['body'][] = [
-      [
-        'text' => 'Durchschnitt:',
-        'class' => 'average-active fw-bold'
-      ],
-      [
-        'text' => $average_values['dwz_active'],
-        'class' => 'average-active fw-bold'
-      ],
-      [
-        'text' => $average_values['dwz_top'],
-        'class' => 'average-top fw-bold'
-      ],
-      [
-        'text' => $average_values['dwz_all'],
-        'class' => 'average-all fw-bold'
-      ],
-      [
-        'text' => $average_values['age'],
-        'class' => 'average-age fw-bold'
-      ],
-    ];
+        // Add each team's value to the sum so we can
+        // calculate the average for the last row.
+        $average_sums['dwz_active'] += $dwz_active;
+        $average_sums['dwz_top'] += $dwz_top;
+        $average_sums['dwz_all'] += $dwz_all;
+        $average_sums['age'] += $age;
 
-    $dwz_data['table'] = $dwz_table;
-    $dwz_data['text_values'] = $dwz_text_values;
+        $dwz_table['body'][] = [
+          [
+            'text' => $team_name,
+            'link' => $team_uri,
+            'class' => 'team'
+          ],
+          [
+            'text' => $dwz_active,
+            'class' => $active_dwz_classes,
+          ],
+          [
+            'text' => $dwz_top,
+            'class' => $top_dwz_classes
+          ],
+          [
+            'text' => $dwz_all,
+            'class' => $all_dwz_classes
+          ],
+          [
+            'text' => $age,
+            'class' => $age_classes
+          ],
+        ];
+      }
 
-    return $dwz_data;
-  }
+      $team_count = count($dwz_calculation);
+      $average_values = [
+        'dwz_active' => round($average_sums['dwz_active'] / $team_count),
+        'dwz_top' => round($average_sums['dwz_top'] / $team_count),
+        'dwz_all' => round($average_sums['dwz_all'] / $team_count),
+        'age' => round($average_sums['age'] / $team_count),
+      ];
 
-    else {
+      $dwz_text_values = [
+        'dwz_active_average' => $average_values['dwz_active'],
+        'age_average' => $average_values['age'],
+      ];
+
+      // Add an extra row to the table with the average values for all teams.
+      $dwz_table['body'][] = [
+        [
+          'text' => 'Durchschnitt:',
+          'class' => 'average-active fw-bold'
+        ],
+        [
+          'text' => $average_values['dwz_active'],
+          'class' => 'average-active fw-bold'
+        ],
+        [
+          'text' => $average_values['dwz_top'],
+          'class' => 'average-top fw-bold'
+        ],
+        [
+          'text' => $average_values['dwz_all'],
+          'class' => 'average-all fw-bold'
+        ],
+        [
+          'text' => $average_values['age'],
+          'class' => 'average-age fw-bold'
+        ],
+      ];
+
+      $dwz_data['table'] = $dwz_table;
+      $dwz_data['text_values'] = $dwz_text_values;
+
+      return $dwz_data;
+    } else {
       return '';
     }
 
@@ -804,7 +803,7 @@ if(!empty($active_teams_with_players)) {
     $topscorer_table = [];
     $topscorer_text = '';
 
-    if(!empty($top_ten_scorers)) {
+    if (!empty($top_ten_scorers)) {
 
       $topscorer_table['header'] = [
         ['text' => 'Name', 'class' => 'name'],
@@ -905,8 +904,7 @@ if(!empty($active_teams_with_players)) {
       $topscorer_data['table'] = $topscorer_table;
 
       return $topscorer_data;
-    }
-    else {
+    } else {
       return '';
     }
   }
@@ -1109,6 +1107,41 @@ if(!empty($active_teams_with_players)) {
     $team_game_score_data['table'] = $team_game_score_table;
     $team_game_score_data['text_values'] = $team_game_score_values;
     return $team_game_score_data;
+  }
+
+  public function checkPairingForNonexistingTeam($pairing) {
+    $team_ids = $pairing_repository->findPairingTeamIds($pairing->id);
+    $team_ids = reset($team_ids);
+    $team1_exists = '';
+    $team2_exists = '';
+
+    if (!empty($team_ids['mannschaft1'])) {
+      $team1_exists = $team_repository->checkIfExists($team_ids['mannschaft1']);
+    }
+    if (!empty($team_ids['mannschaft2'])) {
+      $team2_exists = $team_repository->checkIfExists($team_ids['mannschaft2']);
+    }
+  }
+
+  /**
+   * Sort the players by points first and by played games after that.
+   * Who has played less games will be sorted further up.
+   */
+  public function players_sorted_by_points_and_games($active_players_with_games) {
+    uasort($active_players_with_games, function ($a, $b) {
+      return [$b['points'], count($a['games'])] <=> [$a['points'], count($b['games'])];
+    });
+    return $active_players_with_games;
+  }
+
+  /**
+   * Sort the players by draws
+   */
+  public function players_sorted_by_draws($active_players_with_games) {
+    uasort($active_players_with_games, function ($a, $b) {
+      return [$b['draws']] <=> [$a['draws']];
+    });
+    return $active_players_with_games;
   }
 
 }
