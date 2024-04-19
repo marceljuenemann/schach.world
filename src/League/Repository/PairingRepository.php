@@ -75,12 +75,11 @@ class PairingRepository extends ServiceEntityRepository
    * for the given pairing. This way we can find pairings that contain teams
    * that have been deleted or are nonexisting.
    */
-  public function findPairingTeams($pairing_id) {
+  public function findPairingTeamIds($pairing_id) {
     $conn = $this->getEntityManager()->getConnection();
     $sql = '
-            SELECT * FROM paarungen p
+            SELECT mannschaft1, mannschaft2 FROM paarungen p
             WHERE p.id = :pairing_id
-            INNER JOIN mannschaften m ON m.staffel = p.id
          ';
     $stmt = $conn->prepare($sql);
     $result = $stmt->executeQuery(['pairing_id' => $pairing_id]);

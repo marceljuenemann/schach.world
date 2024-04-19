@@ -102,18 +102,7 @@ class StatisticsService
       foreach ($team['pairings'] as &$pairing) {
         // There are corrupt pairings that contain nonexisting teams. We need
         // to weed those out and not use them for statistics.
-        $team_ids = $pairing_repository->findPairingTeamIds($pairing->id);
-        $team_ids = reset($team_ids);
-        $team1_exists = '';
-        $team2_exists = '';
-
-        if (!empty($team_ids['mannschaft1'])) {
-          $team1_exists = $team_repository->checkIfExists($team_ids['mannschaft1']);
-        }
-        if (!empty($team_ids['mannschaft2'])) {
-          $team2_exists = $team_repository->checkIfExists($team_ids['mannschaft2']);
-        }
-        if (empty($team1_exists) || empty($team2_exists)) {
+        if ($this->checkPairingForNonexistingTeam($pairing)) {
           unset($pairing);
         } else {
          if ($pairing->team1->id == $team['team']->id) {
@@ -429,23 +418,28 @@ class StatisticsService
     $active_teams_ids = [];
 
     foreach ($all_games as $game) {
+      // Check if the games are contained in pairings that contain
+      // nonexisting teams
+      $pairing = $game->pairing;
+      if ($this->checkPairingForNonexistingTeam($pairing) == false) {
 
-      // Make sure we add the teams only once to our array
-      if (!in_array($game->pairing->team1->id, $active_teams_ids)) {
-        $active_teams_ids[] = $game->pairing->team1->id;
-        $teams_with_pairings[$game->pairing->team1->id]['team'] = $game->pairing->team1;
-        $teams_with_pairings[$game->pairing->team1->id]['pairings'][$game->pairing->id] = $game->pairing;
-      } elseif (in_array($game->pairing->team1->id, $active_teams_ids)) {
-        $teams_with_pairings[$game->pairing->team1->id]['pairings'][$game->pairing->id] = $game->pairing;
-      }
+        // Make sure we add the teams only once to our array
+        if (!in_array($game->pairing->team1->id, $active_teams_ids)) {
+          $active_teams_ids[] = $game->pairing->team1->id;
+          $teams_with_pairings[$game->pairing->team1->id]['team'] = $game->pairing->team1;
+          $teams_with_pairings[$game->pairing->team1->id]['pairings'][$game->pairing->id] = $game->pairing;
+        } elseif (in_array($game->pairing->team1->id, $active_teams_ids)) {
+          $teams_with_pairings[$game->pairing->team1->id]['pairings'][$game->pairing->id] = $game->pairing;
+        }
 
-      // Now add the teams from the team2 reference
-      if (!in_array($game->pairing->team2->id, $active_teams_ids)) {
-        $active_teams_ids[] = $game->pairing->team2->id;
-        $teams_with_pairings[$game->pairing->team2->id]['team'] = $game->pairing->team2;
-        $teams_with_pairings[$game->pairing->team2->id]['pairings'][$game->pairing->id] = $game->pairing;
-      } elseif (in_array($game->pairing->team2->id, $active_teams_ids)) {
-        $teams_with_pairings[$game->pairing->team2->id]['pairings'][$game->pairing->id] = $game->pairing;
+        // Now add the teams from the team2 reference
+        if (!in_array($game->pairing->team2->id, $active_teams_ids)) {
+          $active_teams_ids[] = $game->pairing->team2->id;
+          $teams_with_pairings[$game->pairing->team2->id]['team'] = $game->pairing->team2;
+          $teams_with_pairings[$game->pairing->team2->id]['pairings'][$game->pairing->id] = $game->pairing;
+        } elseif (in_array($game->pairing->team2->id, $active_teams_ids)) {
+          $teams_with_pairings[$game->pairing->team2->id]['pairings'][$game->pairing->id] = $game->pairing;
+        }
       }
     }
 
@@ -1110,16 +1104,21 @@ class StatisticsService
   }
 
   public function checkPairingForNonexistingTeam($pairing) {
-    $team_ids = $pairing_repository->findPairingTeamIds($pairing->id);
+    $team_ids = $this->pairingRepository->findPairingTeamIds($pairing->id);
     $team_ids = reset($team_ids);
     $team1_exists = '';
     $team2_exists = '';
 
     if (!empty($team_ids['mannschaft1'])) {
-      $team1_exists = $team_repository->checkIfExists($team_ids['mannschaft1']);
+      $team1_exists = $this->teamRepository->checkIfExists($team_ids['mannschaft1']);
     }
     if (!empty($team_ids['mannschaft2'])) {
-      $team2_exists = $team_repository->checkIfExists($team_ids['mannschaft2']);
+      $team2_exists = $this->teamRepository->checkIfExists($team_ids['mannschaft2']);
+    }
+    if(empty($team1_exists) || empty($team2_exists)) {
+      return true;
+    } else {
+      return false;
     }
   }
 
