@@ -29,6 +29,9 @@ class RankingService
       $teams_with_pairings[$team->id]['team_points'] = $this->addTeamPoints($team, $pairings);
       $teams_with_pairings[$team->id]['board_points'] = $this->addBoardPoints($team, $pairings);
     }
+
+    // Add team and board points that are won against teams tying for the same ranking spot
+    $teams_with_pairings = $this->getTiedTeamData($teams_with_pairings);
     // Sort the teams by team_points and after that by board_points.
     uasort($teams_with_pairings, function ($a, $b) {
       return [$b['team_points'], $b['board_points']] <=> [$a['team_points'], $a['board_points']];
@@ -92,6 +95,15 @@ class RankingService
       $team_points = 1;
     }
     return $team_points;
+  }
+
+  /**
+   * return $teams_with_pairings[]
+   * Add the team and board points teams have one against the other ones tied with them.
+   * This is only used if multiple teams are tied for a ranking position.
+   */
+  public function getTiedTeamData($teams_with_pairings) {
+    return $teams_with_pairings;
   }
 
   /**
@@ -187,22 +199,21 @@ class RankingService
 
     // Create crosstable cells with pairing results
     $results_grid = [];
-    foreach($teams_with_pairings_crosstable as $key => $team) {
-      foreach($team['crosstable_pairings'] as $pairing_key => $pairing) {
-        if(!empty($pairing['board_points'])) {
+    foreach ($teams_with_pairings_crosstable as $key => $team) {
+      foreach ($team['crosstable_pairings'] as $pairing_key => $pairing) {
+        if (!empty($pairing['board_points'])) {
           $results_grid[$key][] = [
             'text' => $pairing['board_points'],
             'link' => $pairing['round_uri'],
             'title' => 'gegen ' . $teams_with_pairings_crosstable[$pairing_key]['team']->nameWithNumber(),
           ];
-        } elseif($key == $pairing_key) {
+        } elseif ($key == $pairing_key) {
           // If the team is paired against itself, make the table cell grey.
           $results_grid[$key][] = [
             'text' => '',
-            'class' =>  'self-pairing'
+            'class' => 'self-pairing'
           ];
-        }
-        else {
+        } else {
           $results_grid[$key][] = [
             'text' => '',
           ];
@@ -211,13 +222,12 @@ class RankingService
     }
 
     // Insert the results grid into the table body
-    foreach($crosstable_table['body'] as $key => &$row) {
+    foreach ($crosstable_table['body'] as $key => &$row) {
       array_splice($row, 2, 0, $results_grid[$key]);
     }
 
     // reset the array keys of the table body. We don't need the team ids anymore.
     $crosstable_table['body'] = array_values($crosstable_table['body']);
-
 
 
     return $crosstable_table;
