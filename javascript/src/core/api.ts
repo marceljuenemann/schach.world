@@ -46,13 +46,19 @@ export class ApiError {
 export class NsvApi {
 
   protected request<T>(url: string, method: string = 'GET', body: any = null, options: RequestInit = {}): Promise<T> {
+    const headers = (options.headers || {}) as Record<string, string>
+    if (body) {
+      headers["Content-Type"] = "application/json";
+    }
+    // TODO: properly read auth.
+    if (true || window.location.search.includes('auth=')) {
+      headers["X-Auth"] = window.location.search.substring("?auth=".length)
+    }
     options = {
       ...options,
       method,
       body: body && JSON.stringify(body),
-      headers: body ? {
-        "Content-Type": "application/json",
-      } : undefined
+      headers
     }
     return fetch(url, options).then(
       async response => {

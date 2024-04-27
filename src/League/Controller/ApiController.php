@@ -56,6 +56,8 @@ class ApiController extends AbstractLeagueController {
     return $this->apiResponse();
   }
 
+  // TODO: Allow token auth.
+
   #[Route('teams/{teamId}/venue/', methods: ['PUT'], name: 'team_venue_update')]
   public function updateTeamVenue(int $teamId, #[MapRequestPayload] UpdateTeamVenueRequest $request, TeamService $service): Response {
     $team = $this->league->teamById($teamId);
