@@ -32,7 +32,7 @@ class RankingService
       $teams_with_pairings[$team->id]['team_points'] = $this->addTeamPoints($team, $pairings);
       $teams_with_pairings[$team->id]['board_points'] = $this->addBoardPoints($team, $pairings);
       // Sort the teams into the ranking helper array
-      $ranking_helper[$this->addTeamPoints($team, $pairings)][$this->addBoardPoints($team, $pairings)][] = $team;
+      $ranking_helper[$this->addTeamPoints($team, $pairings)][(string) $this->addBoardPoints($team, $pairings)][] = $team;
     }
     // Add team and board points that are won against teams tying for the same ranking spot
     $teams_with_pairings = $this->getTiedTeamData($teams_with_pairings);
