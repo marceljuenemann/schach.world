@@ -34,8 +34,20 @@ class RankingService
       // Sort the teams into the ranking helper array
       $ranking_helper[$this->addTeamPoints($team, $pairings)][(string) $this->addBoardPoints($team, $pairings)][] = $team;
     }
-    // Add team and board points that are won against teams tying for the same ranking spot
-    $teams_with_pairings = $this->getTiedTeamData($teams_with_pairings);
+
+    // Now apply direct comparison to teams that are tied by team and board points
+    // inside the $ranking_helper array
+    foreach($ranking_helper as &$mptied) {
+      foreach($mptied as &$bptied) {
+        // If there is more than one team inside
+        // a $bptied group, those teams are tied and
+        // we need to apply a direct comparison for fine ranking
+        // We use the same basic method as in the legacy tabelle.inc.php
+        if(count($bptied) > 1) {
+          $bptied = $this->directComparison($bptied);
+        }
+      }
+    }
 
     // Sort the teams by team_points and after that by board_points.
     uasort($teams_with_pairings, function ($a, $b) {
@@ -86,9 +98,11 @@ class RankingService
    * Saves repetition of this code.
    */
   public function teamPointsFromResult($result1, $result2) {
+    // Team 1 wins
     if ($result1 > $result2) {
       $team_points = 2;
     }
+    // Team 1 loses
     if ($result1 < $result2) {
       $team_points = 0;
     }
@@ -96,6 +110,7 @@ class RankingService
     if (empty($result1) && empty($result1)) {
       $team_points = 0;
     }
+    // Draw
     if ($result1 == $result2 && !empty($result1)) {
       $team_points = 1;
     }
@@ -103,43 +118,37 @@ class RankingService
   }
 
   /**
-   * return $teams_with_pairings[]
-   * Add the team and board points teams have one against the other ones tied with them.
-   * This is only used if multiple teams are tied for a ranking position.
+   * Do a direct comparison to sort (fine ranking) tied teams.
    */
-  public function getTiedTeamData($teams_with_pairings) {
-    $team_point_values = [];
-    $tied_tp_board_point_values = [];
-    // Create an array with all occurring team point score.
-    // If a team point score already exists, add 1 to the occurrences count.
-    foreach ($teams_with_pairings as $team_id => $team) {
-      if (!array_key_exists($team['team_points'], $team_point_values)) {
-        $team_point_values[$team['team_points']]['score'] = $team['team_points'];
-        $team_point_values[$team['team_points']]['occurrences'] = 1;
-      } else {
-        $team_point_values[$team['team_points']]['occurrences'] += 1;
+  public function directComparison($bptied) {
+    // We are not interested in the points the teams won totally,
+    // we want only the points they won against the teams they are tied with.
+    $directComparisonPoints = [];
+    foreach($bptied as $a => $tied_team) {
+      // loop over all possible matchups
+      // we can follow the old method direkterVergleich() quite closely here.
+      // We build another $ranking_helper() array, only this time we only use
+      // the points gained against the tied teams like described above.
+      for($a = 0; $a < count($bptied); ++$a) {
+
       }
     }
-    // Now check for the team point scores that occur multiple times, if the
-    // board points for the involved teams are also identical
-    // For the moment I have no better idea than to foreach again through
-    // the teams. Some loop multiplication is bound to happen anyway.
-   /* foreach ($teams_with_pairings as $team_id => $team) {
-      // Check if the team's team point score occurs more than once
-      if ($team_point_values[$team['team_points']]['occurrences'] > 1) {
-        // We use the board points multiplied by 10 for the array key since
-        // the board points can be floats and we cannot use floats as array keys.
-        if (!array_key_exists($tied_tp_board_point_values[$team['board_points'] * 10], $tied_tp_board_point_values)) {
-          $tied_tp_board_point_values[$team['board_points'] * 10]['score'] = $team['board_points'];
-          $tied_tp_board_point_values[$team['board_points'] * 10]['occurrences'] = 1;
-          $tied_tp_board_point_values[$team['board_points'] * 10]['team_points'] = $team['team_points'];
-        } else {
-          $tied_tp_board_point_values[$team['board_points'] * 10]['occurrences'] += 1;
-        }
-      }
-    }*/
+  }
 
-    return $teams_with_pairings;
+  /**
+   * Return the team points a team won against another team
+   * in the current season in the current division
+   */
+  public function teamPointsAgainstTeam($team, $round) {
+
+  }
+
+  /**
+   * Return the board points a team won against another team
+   * in the current season in the current division
+   */
+  public function boardPointsAgainstTeam($team, $round) {
+
   }
 
   /**
