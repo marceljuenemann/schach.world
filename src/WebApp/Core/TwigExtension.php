@@ -17,6 +17,10 @@ class TwigExtension extends AbstractExtension {
 
       new TwigFunction('nsv_md5', function($str) {
         return md5($str);
+      }),
+      
+      new TwigFunction('stacktrace', function($e) {
+        return PHP_EOL . '<pre>' . PHP_EOL . $e->getTraceAsString() . PHP_EOL . '</pre>' . PHP_EOL;
       })
     ];
   }
