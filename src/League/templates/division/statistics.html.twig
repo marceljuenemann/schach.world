@@ -2,14 +2,13 @@
 {% import "@league/macros/table-macro.html.twig" as table_macro %}
 {% import "@league/macros/players-clubs-macro.html.twig" as players_clubs_macro %}
 {% import "macros.html.twig" as nsv %}
-{% set title = 'Statistiken ' ~ division_name %}
+{% set title = division_name %}
 
 {% block content %}
     {{ nsv.tabNavigation(tabs) }}
 
     {% if intro_text_values %}
         <div class="statistics-container">
-            <br>
             <p>Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine <strong>DWZ
                     von {{ intro_text_values.dwz_active_average }}</strong> und ist
                 <strong>{{ intro_text_values.age_average }}</strong> Jahre alt.</p>

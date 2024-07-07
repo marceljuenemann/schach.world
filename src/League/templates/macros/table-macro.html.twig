@@ -2,6 +2,7 @@
     <a href="{{ uri }}">{{ text }}</a>
 {% endmacro %}
 
+{# TODO: This macro is breaking MVC separation IMO by moving to much view logic into the controller/service. #}
 {% macro table(table_data, classes) %}
     {% import "macros.html.twig" as nsv %}
     <table class="nsv-table borders-bold text-center text-nowrap {{ classes }}">
@@ -14,6 +15,7 @@
                     {% set cell_title = '' %}
                 {% endif %}
 
+                {# TODO: Remove usage of raw #}
                 <th class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>{{ cell.text|raw}}</th>
             {% endfor %}
         </tr>

@@ -3,9 +3,7 @@
 namespace Nsv\League\Repository;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\EntityNotFoundException;
 use Doctrine\Persistence\ManagerRegistry;
-use Nsv\League\Entity\Player;
 use Nsv\League\Entity\Team;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Nsv\League\Entity\Division;
@@ -33,6 +31,7 @@ class TeamRepository extends ServiceEntityRepository
    * But since above the find method has been changed to throw a HTTP error if the
    * team is not found we need one that just checks for the id without returning errors.
    */
+  // TODO: Remove this.
   public function checkIfExists($id) {
     return $this->createQueryBuilder('team')
       ->select('team')
@@ -45,6 +44,7 @@ class TeamRepository extends ServiceEntityRepository
   /**
    * Find all players for a team, also the inactive ones.
    */
+  // TODO: Replace with $team->players.
   public function team_all_players($team) {
     return $this->createQueryBuilder('team')
       ->select('team, players')
@@ -58,6 +58,7 @@ class TeamRepository extends ServiceEntityRepository
   /**
    * Find all teams in a division
    */
+  // TODO: Replace with $division->teams.
   public function findByDivision(Division $division) {
     return $this->createQueryBuilder('team')
       ->select('team')
