@@ -26,7 +26,7 @@ class League
 
   /**
    * For German chess federations, this should be the ZPS code prefix of the organisation.
-   *
+   * 
    * Note that some organisation-specific rules are hardcoded in Regulation.php
    */
   #[ORM\Column(name: 'organisation', length: 15)]
@@ -43,7 +43,7 @@ class League
 
   /**
    * The legacy user of the league manager.
-   *
+   * 
    * TODO: Use WordPress user system.
    * TODO: Allow multiple users to manage a league.
    */
@@ -166,7 +166,7 @@ class League
   #[ORM\Column(name: 'infomeldung')]
   private string $announcement = '';
 
-  #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]
+  #[ORM\OneToMany(targetEntity: Division::class, mappedBy: 'league')]   
   #[ORM\OrderBy(["sortId" => "ASC", "id" => "ASC"])]
   private $divisions;
 
@@ -181,7 +181,7 @@ class League
   public function uri() {
     return "/ligen/{$this->path}/";
   }
-
+  
   /**
    * @throws NotFoundHttpException
    */

@@ -10,9 +10,6 @@
   {% if model %}<a href="{{model.uri}}">{{model.name|e}}</a>{% endif %}
 {% endmacro %}
 
-{# A modular version of simple link. Can pass in any value as link and text #}
-{% macro modular_link(uri, text) %}<a href="{{uri}}">{{text|e}}</a>{% endmacro %}
-
 {# An icon using dashicons, the icon set shipped with WordPress. #}
 {% macro icon(id) %}
   <span class="dashicons dashicons-{{ id }}"></span>
@@ -45,10 +42,6 @@
 {# TODO: Initilization currently only happens in league manager #}
 {% macro tooltip(title) %}
   data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{ title }}"
-{% endmacro %}
-
-{% macro tooltip_top(title) %}
-  data-bs-toggle="tooltip" data-bs-placement="top" title="{{ title }}"
 {% endmacro %}
 
 {# Initializes tooltips. Should only be called from template footers. #}

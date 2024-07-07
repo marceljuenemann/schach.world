@@ -19,9 +19,9 @@ class PlayerRepository extends ServiceEntityRepository
     parent::__construct($registry, Player::class);
   }
 
-  // TODO: move into our own abstract repository?
+  // TODO: move into our own abstract repository? 
   public function find($id, $lockMode = null, $lockVersion = null): Player {
-    $entity = parent::find((int)$id, $lockMode, $lockVersion);
+    $entity = parent::find((int) $id, $lockMode, $lockVersion);
     if (!$entity) {
       throw new NotFoundHttpException("Player not found");
     }
