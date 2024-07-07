@@ -3,11 +3,10 @@
 namespace Nsv\League\Repository;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\EntityNotFoundException;
 use Doctrine\Persistence\ManagerRegistry;
-use Nsv\League\Entity\Player;
 use Nsv\League\Entity\Team;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Nsv\League\Entity\Division;
 
 /**
  * @extends ServiceEntityRepository<Team>
@@ -20,10 +19,53 @@ class TeamRepository extends ServiceEntityRepository
 
   // TODO: move into our own abstract repository? 
   public function find($id, $lockMode = null, $lockVersion = null): Team {
-    $entity = parent::find((int) $id, $lockMode, $lockVersion);
+    $entity = parent::find((int)$id, $lockMode, $lockVersion);
     if (!$entity) {
       throw new NotFoundHttpException("Team not found");
     }
     return $entity;
   }
+
+  /**
+   * This is essentially the same as the original Symfony find() method per repository.
+   * But since above the find method has been changed to throw a HTTP error if the
+   * team is not found we need one that just checks for the id without returning errors.
+   */
+  // TODO: Remove this.
+  public function checkIfExists($id) {
+    return $this->createQueryBuilder('team')
+      ->select('team')
+      ->where('team.id = :id')
+      ->setParameter('id', $id)
+      ->getQuery()
+      ->getResult();
+  }
+
+  /**
+   * Find all players for a team, also the inactive ones.
+   */
+  // TODO: Replace with $team->players.
+  public function team_all_players($team) {
+    return $this->createQueryBuilder('team')
+      ->select('team, players')
+      ->leftJoin('team.players', 'players')
+      ->where('team.id = :team')
+      ->setParameter('team', $team->id)
+      ->getQuery()
+      ->getResult();
+  }
+
+  /**
+   * Find all teams in a division
+   */
+  // TODO: Replace with $division->teams.
+  public function findByDivision(Division $division) {
+    return $this->createQueryBuilder('team')
+      ->select('team')
+      ->where('team.divisionId = :division')
+      ->setParameter('division', $division->id)
+      ->getQuery()
+      ->getResult();
+  }
+
 }

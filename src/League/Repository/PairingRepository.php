@@ -50,6 +50,44 @@ class PairingRepository extends ServiceEntityRepository
       ->getResult();
   }
 
+  public function findByTeamAndDivision(Team $team, Division $division) {
+      return $this->getEntityManager()
+        ->createQueryBuilder()
+        ->select('p, g, s1, s2')
+        ->from(Pairing::class, 'p')
+        ->leftJoin('p.games', 'g')
+        // leftJoin to allow NULL players.
+        ->leftJoin('g.player1', 's1')
+        ->leftJoin('g.player2', 's2')
+        ->where('p.team1 = :team OR p.team2 = :team')
+        ->andWhere('p.division = :division')
+        ->addOrderBy('p.round', 'ASC')
+        ->addOrderBy('p.host', 'ASC')
+        ->addOrderBy('p.id', 'ASC')
+        ->setParameter('team', $team)
+        ->setParameter('division', $division)
+        ->getQuery()
+        ->getResult();
+  }
+
+  /**
+   * Check if there are rows for team1 and team2 in the "mannschaften" table
+   * for the given pairing. This way we can find pairings that contain teams
+   * that have been deleted or are nonexisting.
+   */
+  public function findPairingTeamIds($pairing_id) {
+    $conn = $this->getEntityManager()->getConnection();
+    $sql = '
+            SELECT mannschaft1, mannschaft2 FROM paarungen p
+            WHERE p.id = :pairing_id
+         ';
+    $stmt = $conn->prepare($sql);
+    $result = $stmt->executeQuery(['pairing_id' => $pairing_id]);
+    $data = $result->fetchAllAssociative();
+    return $data;
+  }
+
+
   /**
    * Returns all pairings for the specified round, also fetching all games and players.
    */
@@ -88,5 +126,26 @@ class PairingRepository extends ServiceEntityRepository
       $criteria->orderBy(Pairing::ORDERING);
     }
     return $this->matching($criteria);
+  }
+
+  /**
+   * Finds all games for a division and a tournament with
+   * player data dwz and birth date
+   */
+  public function findAllGamesDivision($division) {
+    return $this->createQueryBuilder('pairings')
+      ->select('pairings, games, player1, player2, team1, team2')
+      ->innerJoin('pairings.games', 'games')
+      ->leftJoin('pairings.division', 'p_division')
+      ->leftJoin('games.player1', 'player1')
+      ->leftJoin('games.player2', 'player2')
+      ->leftJoin('pairings.team1', 'team1')
+      ->leftJoin('pairings.team2', 'team2')
+      ->where('p_division.id = :division')
+      ->where('team1.divisionId = :division')
+      ->where('team2.divisionId = :division')
+      ->setParameter('division', $division->id)
+      ->getQuery()
+      ->getResult();
   }
 }
