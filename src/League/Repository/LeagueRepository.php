@@ -33,7 +33,7 @@ class LeagueRepository extends ServiceEntityRepository
       ->andWhere('EXISTS (SELECT 1 FROM '.Team::class.' t WHERE t.league = l.id)')
       ->addOrderBy('l.year', 'DESC')
       ->setMaxResults(1)
-      ->setParameter('path', $path.'-%')
+      ->setParameter('path', $path.'-____')
       ->getQuery()
       ->getOneOrNullResult();
   }
