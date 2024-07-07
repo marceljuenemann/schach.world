@@ -41,7 +41,7 @@ class PairingRepository extends ServiceEntityRepository
       // leftJoin to allow NULL players.
       ->leftJoin('g.player1', 's1')
       ->leftJoin('g.player2', 's2')
-      ->where('p.team1 = :team OR p.team2 = :team')
+      ->where('(p.team1 = :team OR p.team2 = :team) AND p.division > 0')
       ->addOrderBy('p.round', 'ASC')
       ->addOrderBy('p.host', 'ASC')
       ->addOrderBy('p.id', 'ASC')
@@ -100,7 +100,7 @@ class PairingRepository extends ServiceEntityRepository
       // leftJoin to allow NULL players.
       ->leftJoin('g.player1', 's1')
       ->leftJoin('g.player2', 's2')
-      ->where('p.division = :division AND p.round = :round')
+      ->where('p.division = :division AND p.division > 0 AND p.round = :round')
       ->addOrderBy('p.host', 'ASC')
       ->addOrderBy('p.id', 'ASC')
       ->setParameter('division', $division)
