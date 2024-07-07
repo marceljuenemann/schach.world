@@ -207,6 +207,14 @@ class SWI_Spieler {
 		
 		return $this->results[$runde];
 	}
+  
+  /**
+   * Checks whether the result index for the given round is available.
+   */
+  function isIndexUsed($runde, $index) {
+    $results = $this->getResults($runde);
+    return isset($results[$index]);
+  }
 	
 	function getHash(){
 		return $this->get("brettnr") + $this->getMannschaft() * 100;
@@ -256,11 +264,22 @@ class SWI_Export {
 		$c1 = $this->getColor($brett, true);
 		$c2 = $this->getColor($brett, false);
     
+    /*
     // Check if there are already results for this round registered on the player.
     $index = max(count($this->getSpieler($s1)->getResults($runde)), count($this->getSpieler($s2)->getResults($runde)));
 		$gamecount1 = $this->getSpieler($s1)->addErgebnis($runde, $index, $erg1, $c1, $s2);
 		$gamecount2 = $this->getSpieler($s2)->addErgebnis($runde, $index, $erg2, $c2, $s1);
-		
+    */
+    
+    // Find the first available index (=column) to insert this game.
+    for ($index = 0; $index < 10; $index++) {
+      if ($this->getSpieler($s1)->isIndexUsed($runde, $index)) continue;
+      if ($this->getSpieler($s2)->isIndexUsed($runde, $index)) continue;
+      $gamecount1 = $this->getSpieler($s1)->addErgebnis($runde, $index, $erg1, $c1, $s2);
+      $gamecount2 = $this->getSpieler($s2)->addErgebnis($runde, $index, $erg2, $c2, $s1);
+      break;
+    }
+
 		// Doppelrunden fix
 		if (!isset($this->maxGameCounts[$runde])){
 			$this->maxGameCounts[$runde] = 1;

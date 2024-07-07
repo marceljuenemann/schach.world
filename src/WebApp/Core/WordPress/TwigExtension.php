@@ -18,6 +18,10 @@ class TwigExtension extends AbstractExtension {
           $data['title'] = $title;
           return $data;
         });
+      }),
+
+      new TwigFunction('is_admin', function() {
+        return Auth::isAdmin();
       })
     ];
   }

@@ -12,6 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * Controller for the main publicly accessible routes.
  */
+// TODO: Maybe rename to LeagueController?
 #[Route('/ligen/{league}/', name: 'league_')]
 class MainController extends AbstractLeagueController {
 
@@ -54,21 +55,26 @@ class MainController extends AbstractLeagueController {
   #[Route('m/{teamId}/', name: 'team')]
   public function team(TeamService $service, int $teamId): Response {
     $teamEntity = $this->league->teamById($teamId);
-    $team = $service->team($teamEntity);
+    $allowEdit = $this->auth->isDivisionManager($teamEntity->division);
+    $team = $service->team($teamEntity, $allowEdit);
     return $this->renderWithLegacySystem('team.html.twig', [
       'team' => $team,
       'teamEntity' => $teamEntity,
-      'showContactInfo' => $this->league->year >= date('Y') - 1
+      'allowEdit' => $allowEdit,
+      'showContactInfo' =>  $this->league->year >= date('Y') - 1 || $allowEdit
     ]);
   }
 
   #[Route('api/teams/{teamId}/', name: 'api_team')]
   public function team_api(TeamService $service, int $teamId): Response {
     $teamEntity = $this->league->teamById($teamId);
-    $team = $service->team($teamEntity);
-    $team->captain->mail = '** REDACTED **';
-    $team->captain->phone = '** REDACTED **';
-    $team->captain->phone2 = '** REDACTED **';
+    $allowEdit = $this->auth->isDivisionManager($teamEntity->division);
+    $team = $service->team($teamEntity, $allowEdit);
+    if (!$this->auth->isDivisionManager()) {
+      $team->captain->mail = '** REDACTED **';
+      $team->captain->phone = '** REDACTED **';
+      $team->captain->phone2 = '** REDACTED **';
+    }
     return $this->apiResponse($team);
   }
 

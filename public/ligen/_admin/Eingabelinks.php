@@ -13,18 +13,16 @@
  * @subpackage admin
  */
 
+    $globals['adminScript'] === 'Eingabelinks' or die('Invalid invocation');
+
     // Kann auch mal etwas länger dauern
     ini_set ( "max_execution_time", 30000 );
-    echo "Willkommen zur Eingabelinkversendung\n";
 
-    require_once ( "admin.inc.php" );
     require_once ( "tinyurl.inc.php" );
     require_once ( "mail.eingabelink.inc.php" );
-    if ( $_GET ["auth"] != substr ( $globals ["masterpasswort"], 5, 5 ) )
-        SED_Error ( "Keine Berechtigung!", true );
 
     // Paarungen sammeln
-    $paar = mysql_query ( "
+    $paar = SED_Query ( "
         SELECT p.mannschaft1 as mid, p.mannschaft2 mid2, ausr.id ausrichter, ausr.mf_email, p.id as paarung, p.staffel, p.runde, vs.turnier, vs.staffelleiter slname, vs.email slmail
         FROM paarungen as p
         INNER JOIN viewTermine vt ON vt.paarung=p.id
@@ -32,12 +30,12 @@
         INNER JOIN viewStaffeln vs ON vs.id=p.staffel
         WHERE vs.sysEingabelinks=1 AND p.linkGesendet=0 AND p.erg1 IS NULL
             AND vt.termin=DATE_ADD(CURDATE(),INTERVAL 3 DAY)
-        ORDER BY ausr.id", $globals ['db'] );
-    echo mysql_num_rows ($paar) . " Paarungen gefunden\n";
+        ORDER BY ausr.id")->fetchAllAssociative();
+    echo count($paar) . " Paarungen gefunden\n";
 
     // eMails vorbereiten
     $mails = array (); // ausrichter => list of arrays (mid, mi2, paarung, ...)
-    while ( $spiel = mysql_fetch_array ( $paar, MYSQL_ASSOC ) ){
+    foreach($paar as $spiel) {
         // Speichern
         $mails [$spiel ["ausrichter"]] [] = $spiel;
     }
@@ -47,7 +45,7 @@
         @SED_Eingabelinkmail ( $ausrichter, $paarungen );
         foreach ( $paarungen as $spiel ) {
             // Damit die Mail nicht nochmal versendet wird...
-            mysql_query ( "UPDATE paarungen SET linkGesendet=1 WHERE id=$spiel[paarung] LIMIT 1", $globals ['db'] );
+            SED_Query( "UPDATE paarungen SET linkGesendet=1 WHERE id=? LIMIT 1", [$spiel['paarung']] );
         }
     }
 ?>
