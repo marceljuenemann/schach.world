@@ -1,6 +1,0 @@
-{# renders an array of players linked to their player page with their club linked to the club page #}
-{% macro players_clubs(player_clubs_data) %}
-    {% import "macros.html.twig" as nsv %}
-    {% for item in  player_clubs_data %}
-        {{ nsv.modular_link(item.player_uri, item.player_name) }} ({{nsv.modular_link(item.team_uri, item.team_name)}}){% if loop.revindex == 2 %} und {% elseif loop.revindex > 2 %}, {% endif %}{% endfor %}
-{% endmacro %}
