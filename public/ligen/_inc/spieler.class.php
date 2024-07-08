@@ -42,6 +42,7 @@ class SED_Spieler {
     var $fields = array ( "id", "mannschaft", "nachname", "vorname",
         "titel", "zps", "brettnr", "dwz", "elo", "geburt", "geschlecht",
         "nmSid", "nmR" );
+    var $optionalFields = array ( "elo", "nmSid", "nmR" );
     var $xnachname = array ( "ter", "zur", "zum", "zu", "der", "dem",
         "den", "da", "de", "Jr", "Jr.", "im", "in", "aus", "vor", "el", "la",
         "bei", "v.", "vom", "von", "van" );
@@ -213,16 +214,12 @@ class SED_Spieler {
     function autofill ($verband = ""){
         // Ist die ID gesetzt?
         if ( $this->isFieldSet ( "id" ) ){
-            global $globals;
-
             // Datenbank-Abfrage
             $id = $this->get ( "id" );
-            $rsrc = mysql_query ( "SELECT * FROM spieler WHERE id=$id LIMIT 1", $globals ['db'] );
-            if ( !$rsrc || !mysql_num_rows ( $rsrc ) )
-                throw new UnknownIDException ( $id );
+            $fields = SED_Query("SELECT * FROM spieler WHERE id=? LIMIT 1", [$id])->fetchAssociative();
 
             // Felder setzten
-            foreach ( mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) as $name=>$value )
+            foreach ( $fields as $name=>$value )
                 $this->set ( $name, $value );
             return true;
         }
@@ -284,28 +281,31 @@ class SED_Spieler {
             $this->set ( "brettnr", SED_Spieler::getNextBrettNr ( $this->get ( "mannschaft" ) ) );
         }
 
-        // SET generieren
+        // SET query part generieren
         $set = array ();
+        $setParams = array (); 
         foreach ( $this->fields as $field ){
             if ( $field == "id" ) continue; // Nachmeldung bzw. so lassen
             $value = $this->isFieldSet ( $field ) ? $this->getDecoded ( $field ) : "";
-            $value = str_replace ( "'", "\\'", $value );
-            $set [] = "$field='$value'";
+            if ($value || !in_array($field, $this->optionalFields)) {
+                $set [] = "$field=?";
+                $setParams [] = $value;
+            }
         }
         $set = implode ( ", ", $set );
 
         // Nachmeldung?
         if ( !$this->isFieldSet ( "id" ) ){
             $sql = "INSERT INTO spieler SET $set";
-            if ( !mysql_query ( $sql, $globals['db'] ) )
-                SED_Error ( "Spielerdaten konnten nicht gespeichert werden! <!-- $set -->", true );
-            $this->set ( "id", mysql_insert_id () );
+            if ( !SED_TryQuery ( $sql, $setParams ) )
+                SED_Error ( "Spielerdaten konnten nicht gespeichert werden! <!-- $set $setParams -->", true );
+            $this->set ( "id", SED_Connection()->lastInsertId() );
 
         // Datenänderung
         } else {
-            $sql = "UPDATE spieler SET $set WHERE id='".$this->get("id")."' LIMIT 1";
-            if ( !mysql_query ( $sql, $globals['db'] ) )
-                SED_Error ( "Spielerdaten konnten nicht geändert werden! <!-- $set -->", true );
+            $sql = "UPDATE spieler SET $set WHERE id=? LIMIT 1";
+            if ( !SED_TryQuery ( $sql, array_merge($setParams, [$this->get('id')]) ) )
+                SED_Error ( "Spielerdaten konnten nicht geändert werden! <!-- $set $setParams -->", true );
         }
 
         // Cache leeren

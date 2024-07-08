@@ -180,9 +180,9 @@
         // Ist der Benutzer zur Eingabe berechtigt? staffel=0 beachten!
         if ( $spieler->isFieldSet ( "id" ) ){ // Keine Nachmeldung
             $staffel = SED_Value ( "SELECT m.staffel FROM spieler s INNER JOIN mannschaften m ON m.id=s.mannschaft WHERE s.id=? LIMIT 1", [$spieler->get("id")] );
-            if ( !isset ( $globals ['staffeln'][reset($staffel)] ) && reset($staffel) )
+            if ( $staffel && !isset ( $globals ['staffeln'][$staffel] ) )
                 SED_Error ( "Die Staffel des Spielers geh&ouml;rt nicht zum Turnier!", true );
-            if ( $admin ['staffel'] && reset($staffel) && reset($staffel) != $admin['staffel'] )
+            if ( $staffel && $admin ['staffel'] && $staffel != $admin['staffel'] )
                 SED_Error ( "Die Staffel des Spielers geh&ouml;rt nicht zur Staffel!", true );
         }
 

@@ -12,6 +12,7 @@
  * @subpackage main
  */
 
+use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Result as DBALResult;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LegacySystem;
@@ -88,6 +89,14 @@ use Nsv\League\Core\Result;
     global $globals;
     return $globals['bridge'];
   }
+  
+  /**
+   * Returns the PDO connection object.
+   */
+  function SED_Connection(): Connection {
+    $connection = SED_Bridge()->leagueEntityManager->getConnection();
+    return $connection;
+  }
 
   /**
    * Prepares and executes the given query.
@@ -99,8 +108,7 @@ use Nsv\League\Core\Result;
    * @throws Exception
    */
   function SED_Query(string $sql, array $params = []): DBALResult {
-    $connection = SED_Bridge()->leagueEntityManager->getConnection();
-    return $connection->executeQuery($sql, $params);
+    return SED_Connection()->executeQuery($sql, $params);
   }
 
   /**
