@@ -42,6 +42,7 @@ class SED_Spieler {
     var $fields = array ( "id", "mannschaft", "nachname", "vorname",
         "titel", "zps", "brettnr", "dwz", "elo", "geburt", "geschlecht",
         "nmSid", "nmR" );
+    var $optionalFields = array ( "elo", "nmSid", "nmR" );
     var $xnachname = array ( "ter", "zur", "zum", "zu", "der", "dem",
         "den", "da", "de", "Jr", "Jr.", "im", "in", "aus", "vor", "el", "la",
         "bei", "v.", "vom", "von", "van" );
@@ -290,7 +291,9 @@ class SED_Spieler {
             if ( $field == "id" ) continue; // Nachmeldung bzw. so lassen
             $value = $this->isFieldSet ( $field ) ? $this->getDecoded ( $field ) : "";
             $value = str_replace ( "'", "\\'", $value );
-            $set [] = "$field='$value'";
+            if ($value || !in_array($field, $this->optionalFields)) {
+                $set [] = "$field='$value'";
+            }
         }
         $set = implode ( ", ", $set );
 
