@@ -15,11 +15,9 @@ class Player
   // Note: Unfortunately, the DSB database only contains null for male or W for female :(
   const GENDER_FEMALE = 'W';
 
-  /*
   #[ORM\ManyToOne(targetEntity: Club::class)]
   #[ORM\JoinColumn(name: "ZPS", referencedColumnName: "ZPS")]
   public $club;
-  */
   
   #[ORM\Id, ORM\Column('ZPS', length: 5)]
   public string $zps;
