@@ -2,6 +2,8 @@
 
 namespace Nsv\Dwz\Controller;
 
+use Doctrine\ORM\EntityManagerInterface;
+use Nsv\Dwz\Entity\Player;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -13,7 +15,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class DwzController extends AbstractController {
 
   #[Route('players/', name: 'players')]
-  public function players(): Response {
-    return new Response("Hello World!");
+  public function players(EntityManagerInterface $mainEntityManager): Response {
+    $player = $mainEntityManager->getRepository(Player::class)->find('Jünemann,Marcel');
+    return new Response($player->name);
   }
 }
