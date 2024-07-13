@@ -5,7 +5,6 @@ namespace Nsv\Dwz\Controller;
 use Doctrine\ORM\EntityManagerInterface;
 use Nsv\Dwz\DsbDatabase;
 use Nsv\Dwz\Entity\Club;
-use Nsv\Dwz\Entity\Player;
 use Nsv\Dwz\Repository\PlayerRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -26,14 +25,13 @@ class DwzController extends AbstractController {
     private NormalizerInterface $normalizer
   ) {}
 
-  // TODO: Add prefered ZPS
   #[Route('players/', name: 'players')]
   public function players(
     #[MapQueryParameter] string $name,
-    #[MapQueryParameter] string $zps,
-    #[MapQueryParameter] ?bool $active
+    #[MapQueryParameter] string $preferredZps,
+    #[MapQueryParameter] ?bool $active,
   ): Response {
-    $entities = $this->playerRepository->search($name, $zps, $active);
+    $entities = $this->playerRepository->searchWithPreferredZps($name, $preferredZps, $active);
     $data = array_map(function($player) {
       $data = $this->normalizer->normalize($player);
       $data['uri'] = DsbDatabase::playerRecordUri($player->fullZps());

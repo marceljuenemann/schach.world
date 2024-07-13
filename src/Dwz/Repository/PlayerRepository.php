@@ -18,7 +18,7 @@ class PlayerRepository extends ServiceEntityRepository
   }
 
   /** Finds players filtered by various parameters */
-  public function search(string $name, ?string $zps, ?bool $active): array {
+  public function search(string $name, string $zps = '', bool $active = true): array {
     return $this->createQueryBuilder('p')
       ->where('p.name LIKE :name')
       ->andWhere('p.zps LIKE :zps')
@@ -31,5 +31,17 @@ class PlayerRepository extends ServiceEntityRepository
       ->setParameter('status', $active ? 'A' : '%')
       ->getQuery()
       ->getResult();
+  }
+
+  /**
+   * First tries to find players with the $preferredZps, then fills up with
+   * other players.
+   */
+  public function searchWithPreferredZps(string $name, string $preferredZps, bool $active = true, int $limit = 10): array {
+    $players = $this->search($name, $preferredZps, $active);
+    if (count($players) < $limit) {
+      $players += $this->search($name, '', $active);
+    }
+    return array_slice($players, 0, $limit);
   }
 }
