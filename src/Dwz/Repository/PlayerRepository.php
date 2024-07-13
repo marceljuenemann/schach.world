@@ -28,7 +28,7 @@ class PlayerRepository extends ServiceEntityRepository
       // TODO: allow first name search?
       ->setParameter('name', $name.'%')
       ->setParameter('zps', $zps.'%')
-      ->setParameter('status', $active ? 'A' : '%')
+      ->setParameter('status', $active ? Player::STATUS_ACTIVE : '%')
       ->getQuery()
       ->getResult();
   }
