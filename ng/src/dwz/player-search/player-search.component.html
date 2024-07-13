@@ -1,20 +1,17 @@
 <ng-template #rt let-player="result" let-t="term">
 	<ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
-  <i>&nbsp;({{player.club.name}})</i>
+  <i>&nbsp;({{player.club}})</i>
 </ng-template>
 
-<!-- TODO: fix , etc. -->
 <input
   id="typeahead-template"
   type="text"
-  class="form-control col"
+  class="form-control"
   placeholder="Nachname, Vorname"
-  [(ngModel)]="model"
+  [(ngModel)]="player"
+  (ngModelChange)="playerSelected.emit($event)"
   [ngbTypeahead]="search"
   [resultTemplate]="rt"
   [inputFormatter]="formatter"
   [editable]="false"
 />
-
-<hr />
-<pre>Model: {{ model | json }}</pre>

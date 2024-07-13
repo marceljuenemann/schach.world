@@ -1,6 +1,7 @@
 import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { PlayerSearchComponent } from '../dwz/player-search/player-search.component';
+import { DwzPlayer } from '../dwz/dwz.service';
 
 @Component({
   selector: 'nsv-registration',
@@ -19,5 +20,9 @@ export class RegistrationComponent {
         console.log(`Closed with: ${result}`)
       }
     )
+  }
+
+  selected(player: DwzPlayer|undefined) {
+    console.log(player)
   }
 }
