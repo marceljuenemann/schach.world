@@ -32,11 +32,16 @@
     function DwzSpielerAutocomplete(name) {
       if (name.length < 3) return;
       jQuery.ajax({
-        url: "/api/dwz/spieler/",
-        data: { name: name }, 
+        url: "/dwz/api/players/",
+        data: {
+          name: name,
+          preferredZps: '7',
+          active: true
+        },
         dataType: 'json',
         success: function(result) {
-          html = result.map(player => "<li><a href='" + player.link + "'>" + player.Spielername.replace(",", ", ") + "</a></li>").join('');
+          result = result.slice(0, 6);
+          html = result.map(player => "<li><a href='" + player.uri + "'>" + player.name.replace(",", ", ") + "</a></li>").join('');
           jQuery('#dwz-autocomplete-spieler').css('display', 'block').html(html);
         }
       });
@@ -45,11 +50,12 @@
     function DwzVereinAutocomplete(name) {
       if (name.length < 3) return;
       jQuery.ajax({
-        url: "/api/dwz/vereine/",
-        data: { name: name }, 
+        url: "/dwz/api/clubs/",
+        data: { name: name, zps: '7' },
         dataType: 'json',
         success: function(result) {
-          html = result.map(club => "<li><a href='https://www.schachbund.de/verein.html?zps=" + club.ZPS + "'>" + club.Vereinname + "</a></li>").join('');
+          result = result.slice(0, 6);
+          html = result.map(club => "<li><a href='https://www.schachbund.de/verein.html?zps=" + club.zps + "'>" + club.name + "</a></li>").join('');
           jQuery('#dwz-autocomplete-vereine').css('display', 'block').html(html);
         }
       });

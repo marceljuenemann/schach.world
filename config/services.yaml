@@ -47,6 +47,8 @@ services:
     # Misc services
     Nsv\Dwz\:
         resource: '../src/Dwz/'
+    Nsv\Dwz\Controller\:
+        resource: '../src/Dwz/Controller/'
 
 when@test:
     services:

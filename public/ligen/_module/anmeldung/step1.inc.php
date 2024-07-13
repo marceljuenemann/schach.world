@@ -12,7 +12,7 @@
     require_once ( "ajax.inc.php" );
 
     // Vereinsliste abfragen
-    $vereine = mysql_query ( "SELECT * FROM dwz_vereine WHERE ZPS LIKE '$prefs[anmVerband]%' AND ZPS NOT LIKE '%00' ORDER BY Vereinname", $globals ['db'] );
+    $vereine = SED_Query("SELECT * FROM dwz_vereine WHERE ZPS LIKE ? AND ZPS NOT LIKE '%00' ORDER BY Vereinname", [$prefs['anmVerband'].'%'])->fetchAllAssociative();
 
     // Mannschaften ohne Spieler vorschlagen
     $playerless = SED_Anmeldung::getPlayerlessTeams ();
@@ -34,7 +34,7 @@
     <option value=''>- Verein w&auml;hlen -</option>
     <?
         // Vereinsliste ausgeben
-        while ( $verein = mysql_fetch_array ( $vereine, MYSQL_ASSOC ) )
+        foreach ($vereine as $verein)
             echo "<option value='$verein[ZPS]'>$verein[Vereinname]</option>";
         echo "<option value=''>- Anderer... -</option></select><br /><br />";
     
@@ -47,8 +47,7 @@
     <option value=''>- Keine Spielgemeinschaft -</option>
     <?
         // Vereinsliste ausgeben
-        mysql_data_seek ( $vereine, 0 );
-        while ( $verein = mysql_fetch_array ( $vereine, MYSQL_ASSOC ) )
+        foreach ($vereine as $verein)
             echo "<option value='$verein[ZPS]'>$verein[Vereinname]</option>";
         echo "<option value=''>- Anderer... -</option></select><br /><br />";
     
