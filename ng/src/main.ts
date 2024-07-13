@@ -1,11 +1,19 @@
-import { bootstrapApplication } from '@angular/platform-browser';
+import { createCustomElement } from '@angular/elements';
+import { createApplication } from '@angular/platform-browser';
 import { RegistrationComponent } from './registration/registration.component';
 import { provideHttpClient } from '@angular/common/http';
 
-// TODO: Better error handler
-bootstrapApplication(RegistrationComponent, {
-  providers: [
-    provideHttpClient()
-  ]
+// Custom web elements that we define.
+const COMPONENTS = {
+  'nsv-ng-registration': RegistrationComponent
+}
+
+// Create an application.
+createApplication({providers: [
+  provideHttpClient()
+]}).then(app => {
+  // Register custom web elements.
+  for (let [tag, component] of Object.entries(COMPONENTS)) {
+    customElements.define(tag, createCustomElement(component, {injector: app.injector}))
+  }
 })
-.catch((err) => console.error(err));

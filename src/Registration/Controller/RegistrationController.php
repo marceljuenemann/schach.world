@@ -6,10 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * Controller for the DWZ API.
- */
-#[Route('/anmeldung/{tournament}/', name: 'registration_')]
+#[Route('/v3/anmeldung/{tournament}/', name: 'registration_')]
 class RegistrationController extends AbstractController {
 
   function __construct(
