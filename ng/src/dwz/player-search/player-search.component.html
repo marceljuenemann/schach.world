@@ -1,8 +1,9 @@
-<ng-template #rt let-r="result" let-t="term">
-	<ngb-highlight [result]="r.name" [term]="t"></ngb-highlight>
-  <i>&nbsp;(SK Lehrte)</i>
+<ng-template #rt let-player="result" let-t="term">
+	<ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
+  <i>&nbsp;({{player.club.name}})</i>
 </ng-template>
 
+<!-- TODO: fix , etc. -->
 <input
   id="typeahead-template"
   type="text"
