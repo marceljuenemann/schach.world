@@ -1,6 +1,5 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { RegistrationComponent } from './registration/registration.component';
 
-bootstrapApplication(AppComponent)
-  .catch((err) => console.error(err));
+// TODO: Better error handler
+bootstrapApplication(RegistrationComponent).catch((err) => console.error(err));
