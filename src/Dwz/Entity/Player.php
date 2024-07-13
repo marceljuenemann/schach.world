@@ -58,4 +58,8 @@ class Player
 
   #[ORM\Column(name: 'FIDE_Land', length: 3)]
   public ?string $fideCountry;
+
+  function fullZps() {
+    return $this->zps . '-' . $this->memberId;
+  }
 }

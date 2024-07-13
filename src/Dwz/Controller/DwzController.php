@@ -3,6 +3,7 @@
 namespace Nsv\Dwz\Controller;
 
 use Doctrine\ORM\EntityManagerInterface;
+use Nsv\Dwz\DsbDatabase;
 use Nsv\Dwz\Entity\Club;
 use Nsv\Dwz\Entity\Player;
 use Nsv\Dwz\Repository\PlayerRepository;
@@ -32,16 +33,13 @@ class DwzController extends AbstractController {
     #[MapQueryParameter] string $zps,
     #[MapQueryParameter] ?bool $active
   ): Response {
-/*
-    return array_map(function($player) {
-      $player['link'] = NsvDsbSpielerLink($player['ZPS'], $player['Mgl_Nr']);
-      return $player;
-    }, $results);
-*/
-
     $entities = $this->playerRepository->search($name, $zps, $active);
-
-    return new JsonResponse($this->normalizer->normalize($entities));    
+    $data = array_map(function($player) {
+      $data = $this->normalizer->normalize($player);
+      $data['uri'] = DsbDatabase::playerRecordUri($player->fullZps());
+      return $data;
+    }, $entities);
+    return new JsonResponse($data);
   }
 
   #[Route('clubs/', name: 'clubs')]
