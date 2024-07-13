@@ -3,8 +3,9 @@
 namespace Nsv\Dwz\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Nsv\Dwz\Repository\PlayerRepository;
 
-#[ORM\Entity]
+#[ORM\Entity(PlayerRepository::class)]
 #[ORM\Table(name: 'dwz_spieler')]
 class Player
 {
