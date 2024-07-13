@@ -7,6 +7,7 @@ use Twig\TwigFunction;
 
 class TwigExtension extends AbstractExtension {
 
+  // TODO: Prefix all with wp_
   function getFunctions(): array {
     return [
       $this->allowFunction('get_header'),

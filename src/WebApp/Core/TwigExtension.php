@@ -11,6 +11,10 @@ class TwigExtension extends AbstractExtension {
 
   function getFunctions(): array {
     return [
+      new TwigFunction('include_nsv_ng', function() {
+        return $this->nsvJs->nsvNgTags();
+      }, ['is_safe' => array('html')]),
+
       new TwigFunction('nsv_js_src', function() {
         return $this->nsvJs->scriptUrl();
       }),
