@@ -23,6 +23,7 @@ class DwzController extends AbstractController {
     private NormalizerInterface $normalizer
   ) {}
 
+  // TODO: Add prefered ZPS
   #[Route('players/', name: 'players')]
   public function players(): Response {
     $player = $this->mainEntityManager->getRepository(Player::class)->findOneByName('Jünemann,Marcel');
