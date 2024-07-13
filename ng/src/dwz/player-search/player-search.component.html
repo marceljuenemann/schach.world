@@ -1,0 +1,19 @@
+<ng-template #rt let-r="result" let-t="term">
+	<ngb-highlight [result]="r.name" [term]="t"></ngb-highlight>
+  <i>&nbsp;(SK Lehrte)</i>
+</ng-template>
+
+<input
+  id="typeahead-template"
+  type="text"
+  class="form-control col"
+  placeholder="Nachname, Vorname"
+  [(ngModel)]="model"
+  [ngbTypeahead]="search"
+  [resultTemplate]="rt"
+  [inputFormatter]="formatter"
+  [editable]="false"
+/>
+
+<hr />
+<pre>Model: {{ model | json }}</pre>

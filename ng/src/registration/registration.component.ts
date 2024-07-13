@@ -1,10 +1,11 @@
 import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PlayerSearchComponent } from '../dwz/player-search/player-search.component';
 
 @Component({
   selector: 'nsv-registration',
   standalone: true,
-  imports: [],
+  imports: [PlayerSearchComponent],
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css'
 })
