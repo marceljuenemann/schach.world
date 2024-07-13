@@ -40,8 +40,12 @@ class PlayerRepository extends ServiceEntityRepository
   public function searchWithPreferredZps(string $name, string $preferredZps, bool $active = true, int $limit = 10): array {
     $players = $this->search($name, $preferredZps, $active);
     if (count($players) < $limit) {
-      $players += $this->search($name, '', $active);
+      foreach ($this->search($name, '', $active) as $player) {
+        if (count($players) >= $limit) break;
+        if (array_search($player, $players) !== false) continue;
+        $players[] = $player;
+      }
     }
-    return array_slice($players, 0, $limit);
+    return $players;
   }
 }

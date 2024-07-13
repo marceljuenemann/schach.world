@@ -31,6 +31,7 @@ class DwzController extends AbstractController {
     #[MapQueryParameter] string $preferredZps,
     #[MapQueryParameter] ?bool $active,
   ): Response {
+    $name = str_replace(", ", ",", $name);
     $entities = $this->playerRepository->searchWithPreferredZps($name, $preferredZps, $active);
     $data = array_map(function($player) {
       $data = $this->normalizer->normalize($player);

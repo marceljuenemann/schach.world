@@ -32,11 +32,16 @@
     function DwzSpielerAutocomplete(name) {
       if (name.length < 3) return;
       jQuery.ajax({
-        url: "/api/dwz/spieler/",
-        data: { name: name }, 
+        url: "/dwz/api/players/",
+        data: {
+          name: name,
+          preferredZps: '7',
+          active: true
+        },
         dataType: 'json',
         success: function(result) {
-          html = result.map(player => "<li><a href='" + player.link + "'>" + player.Spielername.replace(",", ", ") + "</a></li>").join('');
+          result = result.slice(0, 6);
+          html = result.map(player => "<li><a href='" + player.uri + "'>" + player.name.replace(",", ", ") + "</a></li>").join('');
           jQuery('#dwz-autocomplete-spieler').css('display', 'block').html(html);
         }
       });
