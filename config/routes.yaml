@@ -4,6 +4,12 @@ WebAppControllers:
         namespace: Nsv\WebApp\Controller
     type: attribute
 
+DwzControllers:
+    resource:
+        path: ../src/Dwz/Controller/
+        namespace: Nsv\Dwz\Controller
+    type: attribute
+
 LeagueControllers:
     resource:
         path: ../src/League/Controller/
