@@ -2,7 +2,7 @@
   <!-- Name selection with DWZ database backing -->
   <ng-template #rt let-player="result" let-t="term">
     <ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
-    <i>&nbsp;({{player.club}})</i>
+    <i>&nbsp;({{player.data ? player.data.club : 'Nicht in Mitgliederdatenbank'}})</i>
   </ng-template>
   <div class="form-floating">
     <input
@@ -10,7 +10,7 @@
       id="typeahead-template"
       type="text"
       class="form-control"
-      [class.is-valid]="selectedPlayer.value"
+      [class.is-valid]="selectedPlayer.value && selectedPlayer.value.data"
       [formControl]="selectedPlayer"
       [ngbTypeahead]="search"
       [resultTemplate]="rt"
@@ -21,6 +21,11 @@
     <div class="valid-feedback">
       Teilnehmer:in aus Mitgliederdatenbank ausgewählt
     </div>
+    @if (selectedPlayer.value && !selectedPlayer.value.data) {
+      <div class="warning-feedback">
+        Teilnehmer:in nicht in Mitgliederdatenbank
+      </div>
+    }
   </div>
 <form [formGroup]="form">
   <div class="form-floating">
