@@ -1,5 +1,4 @@
-<form [formGroup]="form">
-
+<form>
   <!-- Name selection with DWZ database backing -->
   <ng-template #rt let-player="result" let-t="term">
     <ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
@@ -11,7 +10,7 @@
       id="typeahead-template"
       type="text"
       class="form-control mb-3 is-invalid"
-      formControlName="selectedPlayer"
+      [formControl]="selectedPlayer"
       [ngbTypeahead]="search"
       [resultTemplate]="rt"
       [inputFormatter]="formatter"
@@ -24,26 +23,31 @@
     </div>
     -->
   </div>
-
+<form [formGroup]="form">
   <div class="form-floating">
     <!-- TODO: Typeahead -->
     <input formControlName="club" id="club" type="text" class="form-control mb-3" placeholder="Verein">
     <label for="floatingInput">Verein</label>
   </div>
 
-  <div class="form-floating">
-    <!-- TODO: Typeahead -->
-    <input formControlName="zps" id="zps" type="text" class="form-control mb-3" placeholder="Vereins-Nr.">
-    <label for="floatingInput">Vereins-Nr.</label>
+  <div class="row">
+    @for (control of controlOptions; track control.id) {
+      <div class="col-6">
+        <div class="form-floating">
+          <input
+            [formControlName]="control.id"
+            [id]="control.id"
+            type="text"
+            class="form-control mb-3"
+            [placeholder]="control.label">
+          <label [for]="control.id">{{control.label}}</label>
+        </div>
+      </div>
+    }
   </div>
-  <div class="form-floating">
-    <!-- TODO: Typeahead -->
-    <input formControlName="memberId" id="memberId" type="text" class="form-control mb-3" placeholder="Mgl.-Nr.">
-    <label for="floatingInput">Mgl.-Nr.</label>
-  </div>
-
 </form>
 
 <pre>
-  Model: {{form.value | json}}
+  selectedPlayer: {{selectedPlayer.value | json}}
+  form: {{form.value | json}}
 </pre>

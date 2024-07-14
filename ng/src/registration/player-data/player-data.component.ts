@@ -14,10 +14,8 @@ import { JsonPipe } from '@angular/common';
 })
 export class PlayerDataComponent implements OnInit {
   // The selected database entry, or the player name in case of manual input.
-	// selectedPlayer = model<PlayerData|string>('')
-
+  selectedPlayer = new FormControl<PlayerData|string>('')
   form = new FormGroup({
-    selectedPlayer: new FormControl<PlayerData|string>(''),
     club: new FormControl(''),
     zps: new FormControl(''),
     memberId: new FormControl(''),
@@ -29,24 +27,33 @@ export class PlayerDataComponent implements OnInit {
     fideTitle: new FormControl(''),
   });
 
+  controlOptions = [
+    {id: 'zps', label: 'Vereins-Nr.'},
+    {id: 'memberId', label: 'Mitglieds-Nr.'},
+    {id: 'yearOfBirth', label: 'Geburtsjahr'},
+    {id: 'gender', label: 'Geschlecht'},
+    {id: 'dwz', label: 'DWZ'},
+    {id: 'elo', label: 'ELO'},
+    {id: 'fideId', label: 'FIDE-ID'},
+    {id: 'fideTitle', label: 'FIDE-Titel'},
+  ]
+
   @Output() playerSelected = new EventEmitter<PlayerData|undefined>();
 
   constructor(private dwz: DwzService) {}
 
   ngOnInit() {
-    this.form.controls.selectedPlayer.valueChanges.subscribe(player => {
+    this.selectedPlayer.valueChanges.subscribe(player => {
       if (player && typeof player === 'object') {
-        this.form.controls.club.setValue(player.club)
-        this.form.controls.zps.setValue(player.zps)
-        this.form.controls.memberId.setValue(player.memberId)
+        for (let field in this.form.controls) {
+          this.form.get(field)!.setValue((player as any)[field])
+        }
       }
     })
   }
 
-
 	search = (text$: Observable<string>) => {
 		return text$.pipe(
-			debounceTime(200),
 			switchMap((term: string) => {
 				return term === '' ? of([]) : this.dwz.findPlayer(term, '')
       }),
