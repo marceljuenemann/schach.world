@@ -9,24 +9,27 @@
       ngbAutofocus
       id="typeahead-template"
       type="text"
-      class="form-control mb-3 is-invalid"
+      class="form-control"
+      [class.is-valid]="selectedPlayer.value"
       [formControl]="selectedPlayer"
       [ngbTypeahead]="search"
       [resultTemplate]="rt"
       [inputFormatter]="formatter"
-      placeholder="Nachname, Vorname"
+      [editable]="false"
     />
     <label for="typeahead-template">Nachname, Vorname</label>
-    <!--
-    <div class="invalid-feedback">
-      Please enter a message in the textarea.
+    <div class="valid-feedback">
+      Teilnehmer:in aus Mitgliederdatenbank ausgewählt
     </div>
-    -->
   </div>
 <form [formGroup]="form">
   <div class="form-floating">
     <!-- TODO: Typeahead -->
-    <input formControlName="club" id="club" type="text" class="form-control mb-3" placeholder="Verein">
+    <input
+      formControlName="club"
+      id="club"
+      type="text"
+      class="form-control mt-3">
     <label for="floatingInput">Verein</label>
   </div>
 
@@ -38,8 +41,7 @@
             [formControlName]="control.id"
             [id]="control.id"
             type="text"
-            class="form-control mb-3"
-            [placeholder]="control.label">
+            class="form-control mt-3">
           <label [for]="control.id">{{control.label}}</label>
         </div>
       </div>

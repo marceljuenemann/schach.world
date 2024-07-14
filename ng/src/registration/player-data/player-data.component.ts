@@ -14,7 +14,7 @@ import { JsonPipe } from '@angular/common';
 })
 export class PlayerDataComponent implements OnInit {
   // The selected database entry, or the player name in case of manual input.
-  selectedPlayer = new FormControl<PlayerData|string>('')
+  selectedPlayer = new FormControl<PlayerData | undefined>(undefined)
   form = new FormGroup({
     club: new FormControl(''),
     zps: new FormControl(''),
@@ -31,7 +31,7 @@ export class PlayerDataComponent implements OnInit {
     {id: 'zps', label: 'Vereins-Nr.'},
     {id: 'memberId', label: 'Mitglieds-Nr.'},
     {id: 'yearOfBirth', label: 'Geburtsjahr'},
-    {id: 'gender', label: 'Geschlecht'},
+    {id: 'gender', label: 'Geschlecht (M/W/D)'},
     {id: 'dwz', label: 'DWZ'},
     {id: 'elo', label: 'ELO'},
     {id: 'fideId', label: 'FIDE-ID'},
@@ -44,9 +44,19 @@ export class PlayerDataComponent implements OnInit {
 
   ngOnInit() {
     this.selectedPlayer.valueChanges.subscribe(player => {
-      if (player && typeof player === 'object') {
+      if (player) {
+        // Player was selected from the database.
+        this.selectedPlayer.setErrors(null)
         for (let field in this.form.controls) {
-          this.form.get(field)!.setValue((player as any)[field])
+          const control = this.form.get(field)!
+          control.setValue((player as any)[field])
+          control.disable()
+        }
+      } else {
+        for (let field in this.form.controls) {
+          const control = this.form.get(field)!
+          control.setValue('')
+          control.disable()
         }
       }
     })
@@ -59,6 +69,9 @@ export class PlayerDataComponent implements OnInit {
       }),
 		)
   }
-
 	formatter = (player: PlayerData) => player.name
+
+  get isValidPlayer() {
+    return this.selectedPlayer.value
+  }
 }
