@@ -1,25 +1,49 @@
-<ng-template #rt let-player="result" let-t="term">
-	<ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
-  <i>&nbsp;({{player.club}})</i>
-</ng-template>
+<form [formGroup]="form">
 
-<div class="form-floating">
-  <input
-    ngbAutofocus
-    id="typeahead-template"
-    type="text"
-    class="form-control is-invalid"
-    [(ngModel)]="player"
-    (ngModelChange)="playerSelected.emit($event)"
-    [ngbTypeahead]="search"
-    [resultTemplate]="rt"
-    [inputFormatter]="formatter"
-  />
-  <label for="typeahead-template">Nachname, Vorname</label>
-  <div class="invalid-feedback">
-    Please enter a message in the textarea.
+  <!-- Name selection with DWZ database backing -->
+  <ng-template #rt let-player="result" let-t="term">
+    <ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
+    <i>&nbsp;({{player.club}})</i>
+  </ng-template>
+  <div class="form-floating">
+    <input
+      ngbAutofocus
+      id="typeahead-template"
+      type="text"
+      class="form-control mb-3 is-invalid"
+      formControlName="selectedPlayer"
+      [ngbTypeahead]="search"
+      [resultTemplate]="rt"
+      [inputFormatter]="formatter"
+      placeholder="Nachname, Vorname"
+    />
+    <label for="typeahead-template">Nachname, Vorname</label>
+    <!--
+    <div class="invalid-feedback">
+      Please enter a message in the textarea.
+    </div>
+    -->
   </div>
-  <pre>
-    Model: {{player | json}}
-  </pre>
-</div>
+
+  <div class="form-floating">
+    <!-- TODO: Typeahead -->
+    <input formControlName="club" id="club" type="text" class="form-control mb-3" placeholder="Verein">
+    <label for="floatingInput">Verein</label>
+  </div>
+
+  <div class="form-floating">
+    <!-- TODO: Typeahead -->
+    <input formControlName="zps" id="zps" type="text" class="form-control mb-3" placeholder="Vereins-Nr.">
+    <label for="floatingInput">Vereins-Nr.</label>
+  </div>
+  <div class="form-floating">
+    <!-- TODO: Typeahead -->
+    <input formControlName="memberId" id="memberId" type="text" class="form-control mb-3" placeholder="Mgl.-Nr.">
+    <label for="floatingInput">Mgl.-Nr.</label>
+  </div>
+
+</form>
+
+<pre>
+  Model: {{form.value | json}}
+</pre>

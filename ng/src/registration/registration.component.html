@@ -10,9 +10,10 @@
 		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
 	</div>
 	<div class="modal-body">
-		<form class="was-validated">
-      <player-data class="mb-4" (playerSelected)="selected($event)"></player-data>
+    <player-data class="mb-4"></player-data>
 
+    <!--
+    <form>
       <div class="form-check mt-4">
         <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
         <label class="form-check-label" for="validationFormCheck2">Toggle this radio</label>
@@ -24,6 +25,7 @@
       </div>
 
 		</form>
+    -->
 	</div>
 	<div class="modal-footer">
 		<button type="button" class="btn btn-primary" (click)="modal.close('Save click')">Speichern</button>
