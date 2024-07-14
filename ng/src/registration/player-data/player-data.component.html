@@ -10,8 +10,10 @@
       id="typeahead-template"
       type="text"
       class="form-control"
-      [class.is-valid]="selectedPlayer.value && selectedPlayer.value.data"
       [formControl]="selectedPlayer"
+      [class.is-valid]="selectedPlayer.value && selectedPlayer.value.data"
+      [class.is-invalid]="validatePlayerSelection && !selectedPlayer.value"
+      (blur)="validatePlayerSelection = true"
       [ngbTypeahead]="search"
       [resultTemplate]="rt"
       [inputFormatter]="formatter"
@@ -21,8 +23,11 @@
     <div class="valid-feedback">
       Teilnehmer:in aus Mitgliederdatenbank ausgewählt
     </div>
-    @if (selectedPlayer.value && !selectedPlayer.value.data) {
-      <div class="warning-feedback">
+    <div class="invalid-feedback">
+      Geben Sie den Name im Format <i>Nachname, Vorname</i> ein und wählen Sie einen Eintrag aus der Mitgliederdatenbank aus
+    </div>
+    @if (isManualEntry) {
+      <div class="small">
         Teilnehmer:in nicht in Mitgliederdatenbank
       </div>
     }
@@ -39,15 +44,15 @@
   </div>
 
   <div class="row">
-    @for (control of controlOptions; track control.id) {
+    @for (control of visibleControls; track control) {
       <div class="col-6">
         <div class="form-floating">
           <input
-            [formControlName]="control.id"
-            [id]="control.id"
+            [formControlName]="control"
+            [id]="control"
             type="text"
             class="form-control mt-3">
-          <label [for]="control.id">{{control.label}}</label>
+          <label [for]="control">{{controlLabel(control)}}</label>
         </div>
       </div>
     }

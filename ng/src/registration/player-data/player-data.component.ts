@@ -1,11 +1,22 @@
-import { model, Component, EventEmitter, Output, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit } from '@angular/core';
 import { PlayerData, DwzService } from '../../dwz/dwz.service';
-import { concat, debounceTime, map, Observable, of, switchMap } from 'rxjs';
-import { NgbTypeahead, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormControl, FormGroup, FormGroupDirective, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { map, Observable, of, switchMap } from 'rxjs';
+import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormControl, FormGroup, FormGroupDirective, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { JsonPipe } from '@angular/common';
 
 type PlayerOption = {name: string, data?: PlayerData}
+
+const CONTROL_OPTIONS = {
+  zps: {label: 'Vereins-Nr.'},
+  memberId: {label: 'Mitglieds-Nr.'},
+  yearOfBirth: {label: 'Geburtsjahr'},
+  gender: {label: 'Geschlecht (M/W/D)'},
+  dwz: {label: 'DWZ'},
+  elo: {label: 'ELO'},
+  fideId: {label: 'FIDE-ID'},
+  fideTitle: {label: 'FIDE-Titel'},
+}
 
 @Component({
   selector: 'player-data',
@@ -17,6 +28,8 @@ type PlayerOption = {name: string, data?: PlayerData}
 export class PlayerDataComponent implements OnInit {
   // The selected database entry, or the player name in case of manual input.
   selectedPlayer = new FormControl<PlayerOption|null>(null)
+  validatePlayerSelection = false
+
   form = new FormGroup({
     club: new FormControl(''),
     zps: new FormControl(''),
@@ -29,40 +42,48 @@ export class PlayerDataComponent implements OnInit {
     fideTitle: new FormControl(''),
   });
 
-  controlOptions = [
-    {id: 'zps', label: 'Vereins-Nr.'},
-    {id: 'memberId', label: 'Mitglieds-Nr.'},
-    {id: 'yearOfBirth', label: 'Geburtsjahr'},
-    {id: 'gender', label: 'Geschlecht (M/W/D)'},
-    {id: 'dwz', label: 'DWZ'},
-    {id: 'elo', label: 'ELO'},
-    {id: 'fideId', label: 'FIDE-ID'},
-    {id: 'fideTitle', label: 'FIDE-Titel'},
-  ]
-
+  // TODO: remove
   @Output() playerSelected = new EventEmitter<PlayerData|undefined>();
 
-  constructor(private dwz: DwzService) {}
+  constructor(private dwz: DwzService) {
+    this.form.disable()
+  }
 
   ngOnInit() {
     this.selectedPlayer.valueChanges.subscribe(player => {
+      this.form.disable()
       if (player && player.data) {
         // Player was selected from the database.
         this.selectedPlayer.setErrors(null)
+        // TODO: use patch?
         for (let field in this.form.controls) {
           const control = this.form.get(field)!
           control.setValue((player.data as any)[field])
-          control.disable()  // TODO: do this declaratively in template
         }
+      } else if (player) {
+        this.form.enable()
       } else {
         for (let field in this.form.controls) {
           const control = this.form.get(field)!
           control.setValue('')
-          control.disable()
         }
       }
     })
   }
+
+  get isManualEntry() {
+    return this.selectedPlayer.value && !this.selectedPlayer.value.data
+  }
+
+  get visibleControls() {
+    if (this.isManualEntry) {
+      return ['yearOfBirth', 'gender']
+    } else {
+      return ['dwz', 'elo']
+    }
+  }
+
+  controlLabel = (id: string) => (CONTROL_OPTIONS as any)[id].label
 
 	search = (text$: Observable<string>) => {
 		return text$.pipe(
