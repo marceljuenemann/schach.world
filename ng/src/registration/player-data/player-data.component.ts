@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit, input } from '@angular/core';
 import { PlayerData, DwzService } from '../../dwz/dwz.service';
 import { map, Observable, of, switchMap } from 'rxjs';
 import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
@@ -25,12 +25,13 @@ const CONTROL_OPTIONS = {
   templateUrl: './player-data.component.html',
   styleUrl: './player-data.component.css'
 })
-export class PlayerDataComponent implements OnInit {
+export class PlayerDataComponent {
   // The selected database entry, or the player name in case of manual input.
   selectedPlayer = new FormControl<PlayerOption|null>(null)
   validatePlayerSelection = false
 
   form = new FormGroup({
+    // TODO: Add validators for all!
     club: new FormControl(''),
     zps: new FormControl(''),
     memberId: new FormControl(''),
@@ -46,15 +47,12 @@ export class PlayerDataComponent implements OnInit {
   @Output() playerSelected = new EventEmitter<PlayerData|undefined>();
 
   constructor(private dwz: DwzService) {
-    this.form.disable()
-  }
-
-  ngOnInit() {
+    this.form.disable() // TODO: move to updateDisabledState() or something.
     this.selectedPlayer.valueChanges.subscribe(player => {
       this.form.disable()
       if (player && player.data) {
         // Player was selected from the database.
-        this.selectedPlayer.setErrors(null)
+        this.selectedPlayer.setErrors(null)  // TODO: delete
         // TODO: use patch?
         for (let field in this.form.controls) {
           const control = this.form.get(field)!
