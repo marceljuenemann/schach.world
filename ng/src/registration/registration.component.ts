@@ -1,12 +1,12 @@
 import { Component, TemplateRef } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { PlayerSearchComponent } from '../dwz/player-search/player-search.component';
-import { DwzPlayer } from '../dwz/dwz.service';
+import { NgbAccordionModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PlayerData } from '../dwz/dwz.service';
+import { PlayerDataComponent } from './player-data/player-data.component';
 
 @Component({
   selector: 'nsv-registration',
   standalone: true,
-  imports: [PlayerSearchComponent],
+  imports: [PlayerDataComponent],
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css'
 })
@@ -22,7 +22,7 @@ export class RegistrationComponent {
     )
   }
 
-  selected(player: DwzPlayer|undefined) {
+  selected(player: PlayerData|undefined) {
     console.log(player)
   }
 }

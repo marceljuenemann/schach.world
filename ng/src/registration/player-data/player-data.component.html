@@ -1,0 +1,25 @@
+<ng-template #rt let-player="result" let-t="term">
+	<ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
+  <i>&nbsp;({{player.club}})</i>
+</ng-template>
+
+<div class="form-floating">
+  <input
+    ngbAutofocus
+    id="typeahead-template"
+    type="text"
+    class="form-control is-invalid"
+    [(ngModel)]="player"
+    (ngModelChange)="playerSelected.emit($event)"
+    [ngbTypeahead]="search"
+    [resultTemplate]="rt"
+    [inputFormatter]="formatter"
+  />
+  <label for="typeahead-template">Nachname, Vorname</label>
+  <div class="invalid-feedback">
+    Please enter a message in the textarea.
+  </div>
+  <pre>
+    Model: {{player | json}}
+  </pre>
+</div>
