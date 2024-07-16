@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output, OnInit, input } from '@angular/core';
-import { PlayerData, DwzService } from '../../dwz/dwz.service';
+import { PlayerData, DwzService, DwzClub } from '../../dwz/dwz.service';
 import { map, Observable, of, switchMap } from 'rxjs';
 import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormControl, FormGroup, FormGroupDirective, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -100,4 +100,11 @@ export class PlayerDataComponent {
 		)
   }
 	formatter = (player: PlayerOption) => player.name
+
+	searchClub = (text$: Observable<string>) => {
+		return text$.pipe(
+			switchMap((term: string) => term === '' ? of([]) : this.dwz.findClub(term, '')),
+      map((clubs: DwzClub[]) => clubs.map(club => club.name))
+		)
+  }
 }

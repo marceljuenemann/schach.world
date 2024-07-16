@@ -17,6 +17,11 @@ export interface PlayerData {
   fideCountry: string|null
 }
 
+export interface DwzClub {
+  zps: string
+  name: string
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -39,5 +44,9 @@ export class DwzService {
         return player
       }))
     )
+  }
+
+  findClub(name: string, zps: string): Observable<DwzClub[]> {
+    return this.http.get<any>('/dwz/api/clubs/', {params: {name, zps}})
   }
 }

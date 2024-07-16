@@ -33,12 +33,18 @@
     }
   </div>
 <form [formGroup]="form">
+
+  <!-- Club selection -->
+  <ng-template #rtClub let-club="result" let-t="term">
+    <ngb-highlight [result]="club" [term]="t"></ngb-highlight>
+  </ng-template>
   <div class="form-floating">
-    <!-- TODO: Typeahead -->
     <input
       formControlName="club"
       id="club"
       type="text"
+      [ngbTypeahead]="searchClub"
+      [resultTemplate]="rtClub"
       class="form-control mt-3">
     <label for="floatingInput">Verein</label>
   </div>
