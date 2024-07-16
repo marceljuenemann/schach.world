@@ -35,10 +35,7 @@
   function SED_GetMenue ()
   {
     global $globals;
-    $rsrc = mysql_query ( "SELECT titel, url, neuesfenster, topnavigation FROM turniermenue WHERE turnier=$globals[tid] ORDER BY sortid", $globals ['db'] );
-    if ( $rsrc && mysql_num_rows ( $rsrc ) )
-      return $rsrc;
-    return false;
+    return SED_Query("SELECT titel, url, neuesfenster, topnavigation FROM turniermenue WHERE turnier=? ORDER BY sortid", [$globals['tid']])->fetchAllAssociative();
   }
 
   // Wählt eine Option bei Selectstrings aus
