@@ -1,8 +1,8 @@
-import { Component, TemplateRef } from '@angular/core';
-import { NgbAccordionModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { DwzPlayer } from '../dwz/dwz.service';
+import { Component, Input, TemplateRef } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { PlayerData, PlayerDataComponent } from './player-data/player-data.component';
 import { JsonPipe } from '@angular/common';
+import { Config } from './types';
 
 @Component({
   selector: 'nsv-registration',
@@ -12,9 +12,12 @@ import { JsonPipe } from '@angular/common';
   styleUrl: './registration.component.css'
 })
 export class RegistrationComponent {
+  @Input({alias: "config"}) configString: string | undefined
+
   playerData: PlayerData | null = null
 
-  constructor(private modalService: NgbModal) {}
+  constructor(private modalService: NgbModal) {
+  }
 
   openRegistration(content: TemplateRef<any>) {
     this.modalService.open(content).result.then(
@@ -22,5 +25,9 @@ export class RegistrationComponent {
         console.log(`Closed with: ${result}`)
       }
     )
+  }
+
+  get config(): Config {
+    return JSON.parse(this.configString!)
   }
 }
