@@ -1,11 +1,16 @@
-import { Component, EventEmitter, Output, OnInit, input } from '@angular/core';
-import { PlayerData, DwzService, DwzClub } from '../../dwz/dwz.service';
-import { map, Observable, of, switchMap } from 'rxjs';
+import { Component } from '@angular/core';
+import { DwzPlayer, DwzService, DwzClub } from '../../dwz/dwz.service';
+import { combineLatest, map, Observable, of, switchMap, zip } from 'rxjs';
 import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormControl, FormGroup, FormGroupDirective, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { JsonPipe } from '@angular/common';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { outputFromObservable } from '@angular/core/rxjs-interop';
 
-type PlayerOption = {name: string, data?: PlayerData}
+export type PlayerData = Omit<DwzPlayer, 'status' | 'gender' | 'yearOfBirth' | 'fideCountry'> & {
+  gender: 'X' | 'M' | 'D' | null
+  yearOfBirth: number | null
+}
+
+type PlayerOption = {name: string, data?: DwzPlayer}
 
 const CONTROL_OPTIONS = {
   zps: {label: 'Vereins-Nr.'},
@@ -21,7 +26,7 @@ const CONTROL_OPTIONS = {
 @Component({
   selector: 'player-data',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgbTypeaheadModule, JsonPipe],
+  imports: [FormsModule, ReactiveFormsModule, NgbTypeaheadModule],
   templateUrl: './player-data.component.html',
   styleUrl: './player-data.component.css'
 })
@@ -31,7 +36,6 @@ export class PlayerDataComponent {
   validatePlayerSelection = false
 
   form = new FormGroup({
-    // TODO: Add validators for all!
     club: new FormControl(''),
     zps: new FormControl(''),
     memberId: new FormControl(''),
@@ -43,11 +47,28 @@ export class PlayerDataComponent {
     fideTitle: new FormControl(''),
   });
 
-  // TODO: remove
-  @Output() playerSelected = new EventEmitter<PlayerData|undefined>();
+  onPlayerDataChange = outputFromObservable<PlayerData|null>(
+    combineLatest([this.selectedPlayer.valueChanges, this.form.valueChanges])
+    .pipe(map(([selectedPlayer, formData]) => {
+      console.log(selectedPlayer, formData)
+      if (!selectedPlayer || !selectedPlayer.name) return null
+      return {
+        name: selectedPlayer.name,
+        club: formData.club || '',
+        zps: formData.zps || '',
+        memberId: formData.memberId || '',
+        gender: (formData.gender as any) || null,
+        yearOfBirth: parseInt(formData.yearOfBirth!) || null,
+        dwz: parseInt(formData.dwz!) || null,
+        elo: parseInt(formData.elo!) || null,
+        fideTitle: (formData.fideTitle as any) || null,
+        fideId: parseInt(formData.fideId!) || null
+      }
+    })))
 
   constructor(private dwz: DwzService) {
     this.form.disable() // TODO: move to updateDisabledState() or something.
+    // TODO: unsubscribe.
     this.selectedPlayer.valueChanges.subscribe(player => {
       this.form.disable()
       if (player && player.data) {
@@ -88,7 +109,7 @@ export class PlayerDataComponent {
 			switchMap((term: string) => {
         // Get suggestions based on the term.
 				const options = term === '' ? of([]) : this.dwz.findPlayer(term, '')
-        return options.pipe(map((players: PlayerData[]) => {
+        return options.pipe(map((players: DwzPlayer[]) => {
           const options: PlayerOption[] = players.map(p => { return{name: p.name, data: p} })
           // Possibly add option for manual entry.
           if (term.match(/.+, .+/g)) {

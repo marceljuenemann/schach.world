@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 
-export interface PlayerData {
+export interface DwzPlayer {
   name: string
   club: string
   zps: string
@@ -32,7 +32,7 @@ export class DwzService {
   /**
    * Searches for players in the DWZ database.
    */
-  findPlayer(name: string, preferredZps: string): Observable<PlayerData[]> {
+  findPlayer(name: string, preferredZps: string): Observable<DwzPlayer[]> {
     return this.http.get<any>('/dwz/api/players/', {params: {name, preferredZps, active: 1}}).pipe(
       map(players => players.slice(0, 6).map((player: any) => {
         player.name = player.name.replaceAll(',', ', ' )

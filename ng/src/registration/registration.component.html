@@ -10,7 +10,11 @@
 		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
 	</div>
 	<div class="modal-body">
-    <player-data class="mb-4"></player-data>
+    <player-data class="mb-4" (onPlayerDataChange)="playerData = $event"></player-data>
+
+    <pre>
+      playerData: {{playerData | json}}
+    </pre>
 
     <!--
     <form>
