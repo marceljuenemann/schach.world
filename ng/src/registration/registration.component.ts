@@ -1,30 +1,30 @@
-import { Component, Input, TemplateRef } from '@angular/core';
+import { Component, Injector, Input } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { PlayerData, PlayerDataComponent } from './player-data/player-data.component';
-import { JsonPipe } from '@angular/common';
-import { Config } from './types';
+import { Config, CONFIG_TOKEN } from './types';
+import { PlayerDialogComponent } from './player-dialog/player-dialog.component';
 
 @Component({
   selector: 'nsv-registration',
   standalone: true,
-  imports: [PlayerDataComponent, JsonPipe],
+  imports: [],
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css'
 })
 export class RegistrationComponent {
   @Input({alias: "config"}) configString: string | undefined
 
-  playerData: PlayerData | null = null
-
   constructor(private modalService: NgbModal) {
   }
 
-  openRegistration(content: TemplateRef<any>) {
-    this.modalService.open(content).result.then(
-      (result) => {
-        console.log(`Closed with: ${result}`)
-      }
-    )
+  async openRegistration() {
+    // TODO: Make scrollable within the dialog
+    const dialog = this.modalService.open(PlayerDialogComponent, {
+      injector: Injector.create({providers: [{
+        provide: CONFIG_TOKEN, useValue: this.config
+      }]})
+    })
+    const result = await dialog.result
+    console.log(`Closed with: ${result}`)
   }
 
   get config(): Config {

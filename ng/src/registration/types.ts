@@ -1,3 +1,5 @@
+import { InjectionToken } from "@angular/core"
+
 export interface Config {
   tournamentName: string
   groups: Array<GroupConfig>
@@ -8,3 +10,6 @@ export interface GroupConfig {
   name: string
   // TODO: add a description for DWZ and such?
 }
+
+// TODO: Maybe move this into some dialog helper instead?
+export const CONFIG_TOKEN = new InjectionToken<Config>('RegistrationConfig')

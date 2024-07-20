@@ -1,40 +1,6 @@
 <h4>{{config.tournamentName}}</h4>
 
-<button (click)="openRegistration(content)" type="button" class="btn btn-primary">
+<button (click)="openRegistration()" type="button" class="btn btn-primary">
   <span class="dashicons dashicons-plus" style="vertical-align: bottom"></span>
   Anmelden
 </button>
-
-<!-- TODO: Make scrollable within the dialog -->
-<ng-template #content let-modal>
-	<div class="modal-header">
-		<h4 class="modal-title" id="modal-basic-title">Anmeldung</h4>
-		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
-	</div>
-	<div class="modal-body">
-    <player-data class="mb-4" (onPlayerDataChange)="playerData = $event"></player-data>
-
-    <pre>
-      playerData: {{playerData | json}}
-    </pre>
-
-    <!--
-    <form>
-      <div class="form-check mt-4">
-        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
-        <label class="form-check-label" for="validationFormCheck2">Toggle this radio</label>
-      </div>
-      <div class="form-check mb-4">
-        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
-        <label class="form-check-label" for="validationFormCheck3">Or toggle this other radio</label>
-        <div class="invalid-feedback">More example invalid feedback text</div>
-      </div>
-
-		</form>
-    -->
-	</div>
-	<div class="modal-footer">
-		<button type="button" class="btn btn-primary" (click)="modal.close('Save click')">Speichern</button>
-	</div>
-</ng-template>
-
