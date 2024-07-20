@@ -31,6 +31,8 @@ const CONTROL_OPTIONS = {
   styleUrl: './player-data.component.css'
 })
 export class PlayerDataComponent {
+  private subscription
+
   // The selected database entry, or the player name in case of manual input.
   selectedPlayer = new FormControl<PlayerOption|null>(null)
   validatePlayerSelection = false
@@ -50,7 +52,6 @@ export class PlayerDataComponent {
   onPlayerDataChange = outputFromObservable<PlayerData|null>(
     combineLatest([this.selectedPlayer.valueChanges, this.form.valueChanges])
     .pipe(map(([selectedPlayer, formData]) => {
-      console.log(selectedPlayer, formData)
       if (!selectedPlayer || !selectedPlayer.name) return null
       return {
         name: selectedPlayer.name,
@@ -67,25 +68,19 @@ export class PlayerDataComponent {
     })))
 
   constructor(private dwz: DwzService) {
-    this.form.disable() // TODO: move to updateDisabledState() or something.
-    // TODO: unsubscribe.
-    this.selectedPlayer.valueChanges.subscribe(player => {
-      this.form.disable()
+    this.form.disable()
+    this.subscription = this.selectedPlayer.valueChanges.subscribe(player => {
       if (player && player.data) {
         // Player was selected from the database.
-        this.selectedPlayer.setErrors(null)  // TODO: delete
-        // TODO: use patch?
-        for (let field in this.form.controls) {
-          const control = this.form.get(field)!
-          control.setValue((player.data as any)[field])
-        }
+        this.form.patchValue(player.data as any)
+        this.form.disable()
       } else if (player) {
+        // Player name was entered manually.
         this.form.enable()
       } else {
-        for (let field in this.form.controls) {
-          const control = this.form.get(field)!
-          control.setValue('')
-        }
+        // No player selected.
+        this.form.reset()
+        this.form.disable()
       }
     })
   }
@@ -127,5 +122,9 @@ export class PlayerDataComponent {
 			switchMap((term: string) => term === '' ? of([]) : this.dwz.findClub(term, '')),
       map((clubs: DwzClub[]) => clubs.map(club => club.name))
 		)
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe()
   }
 }
