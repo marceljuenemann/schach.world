@@ -18,6 +18,7 @@ export class RegistrationComponent {
 
   async openRegistration() {
     // TODO: Make scrollable within the dialog
+    // TODO: Probably wrap this in a nicer dialog service?
     const dialog = this.modalService.open(PlayerDialogComponent, {
       injector: Injector.create({providers: [{
         provide: CONFIG_TOKEN, useValue: this.config

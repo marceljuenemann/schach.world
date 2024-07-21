@@ -2,8 +2,11 @@
 
 namespace Nsv\Registration\Controller;
 
+use Nsv\Registration\Api\Request\RegisterPlayerRequest;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\Routing\Annotation\Route;
 
 // See /ng/src/registration/types.ts for schema.
@@ -45,17 +48,22 @@ const TEST_CONFIG = [
   ]
 ];
 
-#[Route('/v3/anmeldung/{tournament}/', name: 'registration_')]
+#[Route('/v3/anmeldung/', name: 'registration_')]
 class RegistrationController extends AbstractController {
 
   function __construct(
 
     ) {}
 
-  #[Route('/', name: 'registration')]
+  #[Route('{tournament}/', name: 'registration')]
   public function registration(): Response {
     return $this->render('@registration/registration.html.twig', [
       'reg_config' => json_encode(TEST_CONFIG)
     ]);
+  }
+
+  #[Route('api/{tournament}/players/', methods: ['POST'], name: 'players_register')]
+  public function registerPlayer(#[MapRequestPayload] RegisterPlayerRequest $request): Response {
+    return new JsonResponse(['status' => 'Hello!']);
   }
 }

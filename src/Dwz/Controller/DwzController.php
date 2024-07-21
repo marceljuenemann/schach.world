@@ -3,7 +3,7 @@
 namespace Nsv\Dwz\Controller;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Nsv\Dwz\DsbDatabase;
+use Nsv\Dwz\Api\Model\PlayerData;
 use Nsv\Dwz\Entity\Club;
 use Nsv\Dwz\Repository\PlayerRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -33,11 +33,7 @@ class DwzController extends AbstractController {
   ): Response {
     $name = str_replace(", ", ",", $name);
     $entities = $this->playerRepository->searchWithPreferredZps($name, $preferredZps, $active);
-    $data = array_map(function($player) {
-      $data = $this->normalizer->normalize($player);
-      $data['uri'] = DsbDatabase::playerRecordUri($player->fullZps());
-      return $data;
-    }, $entities);
+    $data = array_map([PlayerData::class, 'fromDwzEntity'], $entities);
     return new JsonResponse($data);
   }
 

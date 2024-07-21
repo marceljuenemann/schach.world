@@ -34,15 +34,8 @@ export class DwzService {
    */
   findPlayer(name: string, preferredZps: string): Observable<DwzPlayer[]> {
     return this.http.get<any>('/dwz/api/players/', {params: {name, preferredZps, active: 1}}).pipe(
-      map(players => players.slice(0, 6).map((player: any) => {
-        player.name = player.name.replaceAll(',', ', ' )
-        player.club = player.club.name
-        player.gender = player.gender || 'M'
-        if (player.fideTitle && player.fideTitle[0] == 'W') {
-          player.fideTitle += 'M'
-        }
-        return player
-      }))
+      // TODO: Add a limit parameter.
+      map(players => players.slice(0, 6))
     )
   }
 
