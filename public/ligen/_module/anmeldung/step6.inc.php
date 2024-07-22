@@ -62,6 +62,6 @@
         
 } // endif saveToDB
 else {
-    return SED_Error ( "Da ist etwas schief gegangen. Wir k&uuml;mmern uns drum. <!-- ".mysql_error()." -->", false, false, true );
+    return SED_Error ( "Da ist etwas schief gegangen. Wir k&uuml;mmern uns drum.", false, false, true );
 }
 ?>

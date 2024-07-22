@@ -4,6 +4,7 @@ twig:
     charset: 'iso-8859-15'  # required to be able to output ISO variables.
     paths:
         '%kernel.project_dir%/src/League/templates': league
+        '%kernel.project_dir%/src/Registration/templates': registration
     strict_variables: false
 
 when@test:

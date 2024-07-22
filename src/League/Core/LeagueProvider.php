@@ -28,7 +28,7 @@ class LeagueProvider
       throw new Exception("League can only be injected for routes with a {league} path parameter");
     }
 
-    $league = $this->leagueRepository->findByPath($leagueName);
+    $league = $this->leagueRepository->findByPathOrPrefix($leagueName);
     if (!$league) {
       throw new NotFoundHttpException("League not found");
     }
