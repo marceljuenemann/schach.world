@@ -26,17 +26,20 @@ class DivisionController extends AbstractLeagueController
 
   private $entityManager;
 
+  private $profiler;
+
   function __construct(
     League                         $league,
     LeagueAuthState                $auth,
     LegacySystem                   $legacySystem,
     Division                       $division,
     private EntityManagerInterface $leagueEntityManager,
-    private ?Profiler $profiler
+    Profiler $profiler
   ) {
     parent::__construct($league, $auth, $legacySystem);
     $this->division = $division;
     $this->entityManager = $this->leagueEntityManager;
+    $this->profiler = $profiler;
   }
 
   #[Route('{division}/spielplan/', name: 'schedule')]
@@ -75,6 +78,10 @@ class DivisionController extends AbstractLeagueController
 
   #[Route('{division}/statistik', name: 'statistik')]
   public function statistics(StatisticsService $service): Response {
+
+    $profiler = $this->profiler;
+
+//    $profile = $profiler->loadProfile('30f285');
 
     $division_name = $this->division->name;
 
