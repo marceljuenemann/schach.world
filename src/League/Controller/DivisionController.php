@@ -21,8 +21,7 @@ use Symfony\Component\HttpKernel\Profiler\Profiler;
  * Controller for division specific routes.
  */
 #[Route('/ligen/{league}/', name: 'league_division_', priority: -100)]
-class DivisionController extends AbstractLeagueController
-{
+class DivisionController extends AbstractLeagueController {
 
   private $entityManager;
 
@@ -34,7 +33,7 @@ class DivisionController extends AbstractLeagueController
     LegacySystem                   $legacySystem,
     Division                       $division,
     private EntityManagerInterface $leagueEntityManager,
-    Profiler $profiler
+    Profiler                       $profiler
   ) {
     parent::__construct($league, $auth, $legacySystem);
     $this->division = $division;
@@ -97,8 +96,8 @@ class DivisionController extends AbstractLeagueController
       $dwz_data = $service->create_dwz_statistics_table($this->division);
       $dwz_table = $dwz_data['table'];
 
-     $topscorer_data = $service->create_topscorer_table($this->division);
-     $topscorer_table = $topscorer_data['table'];
+      $topscorer_data = $service->create_topscorer_table($this->division);
+      $topscorer_table = $topscorer_data['table'];
 
       $team_game_score_data = $service->create_team_game_score_table($this->division);
       $team_game_score_table = $team_game_score_data['table'];
