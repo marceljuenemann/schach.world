@@ -6,7 +6,6 @@ end_of_line = lf
 indent_size = 2
 indent_style = space
 insert_final_newline = false
-max_line_length = 120
 tab_width = 2
 
 [{*.inc,.php,*.php4,*.php5,*.phtml}]
@@ -14,6 +13,7 @@ indent_size = 2
 tab_width = 2
 ij_php_class_brace_style = end_of_line
 ij_php_method_brace_style = end_of_line
+ij_php_blank_lines_before_return_statement = 0
 
 
 [*.twig]
