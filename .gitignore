@@ -76,6 +76,6 @@ tests/League/Api/Service/actual/
 /config/services_dev.yaml
 /src/League/Controller/UtilityController.php
 /src/League/templates/utility
-/public/utility
+#/public/utility
 
 ###> Ignore stuff used by Thomas for Development purposes only <###
