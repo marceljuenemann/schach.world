@@ -15,7 +15,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Nsv\League\Api\Service\StatisticsService;
 use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Component\HttpKernel\Profiler\Profiler;
 
 /**
  * Controller for division specific routes.
@@ -25,20 +24,15 @@ class DivisionController extends AbstractLeagueController {
 
   private $entityManager;
 
-  private $profiler;
-
   function __construct(
     League                         $league,
     LeagueAuthState                $auth,
     LegacySystem                   $legacySystem,
     Division                       $division,
-    private EntityManagerInterface $leagueEntityManager,
-    Profiler                       $profiler
-  ) {
+    private EntityManagerInterface $leagueEntityManager) {
     parent::__construct($league, $auth, $legacySystem);
     $this->division = $division;
     $this->entityManager = $this->leagueEntityManager;
-    $this->profiler = $profiler;
   }
 
   #[Route('{division}/spielplan/', name: 'schedule')]
@@ -78,10 +72,6 @@ class DivisionController extends AbstractLeagueController {
   #[Route('{division}/statistik', name: 'statistik')]
   public function statistics(StatisticsService $service): Response {
 
-    $profiler = $this->profiler;
-
-//    $profile = $profiler->loadProfile('30f285');
-
     $division_name = $this->division->name;
 
     $teams_with_active_players = $service->teams_with_active_players($this->division);
@@ -103,9 +93,6 @@ class DivisionController extends AbstractLeagueController {
       $team_game_score_table = $team_game_score_data['table'];
 
       $intro_text_values = array_merge($dwz_data['text_values'], $topscorer_data['text_values'], $team_game_score_data['text_values']);
-
-      // Load the profiler for the response
-      //$profile = $this->profiler->loadProfileFromResponse($dwz_data);
 
       return $this->renderWithLegacySystem('division/statistics.html.twig',
         [

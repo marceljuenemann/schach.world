@@ -71,3 +71,10 @@ tests/League/Api/Service/actual/
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+
+###> Ignore stuff used by Thomas for Development purposes only <###
+/config/services_dev.yaml
+/src/League/Controller/UtilityController.php
+/src/League/templates/utility
+
+###> Ignore stuff used by Thomas for Development purposes only <###
