@@ -3,17 +3,25 @@
 namespace Nsv\League\Controller;
 
 
+use Nsv\League\Api\Service\MatchDayService;
+use Nsv\League\Api\Service\ScheduleService;
+use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Core\LegacySystem;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
-use Symfony\Component\HttpKernel\Profiler\Profiler;
+use Nsv\League\Entity\Pairing;
+use Nsv\League\Entity\Round;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Nsv\League\Api\Service\StatisticsService;
+use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpKernel\Profiler\Profiler;
 
 /**
  * Controller for utility routes, only used for development purposes.
  */
-#[Route('/ligen/', name: 'utility_', priority: -100)]
+#[Route('/ligen/{league}/', name: 'utility_', priority: -100)]
 class UtilityController extends AbstractLeagueController {
 
   private $profiler;
@@ -29,9 +37,9 @@ class UtilityController extends AbstractLeagueController {
   }
 
 
-  #[Route('{division}/profiler-queries', name: 'profiler-queries', methods: ['GET'])]
+  #[Route('profiler-queries/{division}', name: 'profiler-queries', methods: ['GET'], priority: 1000)]
   public function profilerQueries() {
-    return $this->renderWithLegacySystem('utility/profiler-queries.html.twig', []);
+    return $this->render('utility/profiler-queries.html.twig', []);
   }
 
 }
