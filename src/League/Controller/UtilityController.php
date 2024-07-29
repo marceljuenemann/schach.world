@@ -12,6 +12,7 @@ use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Round;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Nsv\League\Api\Service\StatisticsService;
@@ -37,9 +38,17 @@ class UtilityController extends AbstractLeagueController {
   }
 
 
-  #[Route('profiler-queries/{division}', name: 'profiler-queries', methods: ['GET'], priority: 1000)]
-  public function profilerQueries() {
-    return $this->render('utility/profiler-queries.html.twig', []);
+  /**
+   * Output the SQL Queries for a response. Use the X-Debug-Token of Symfonys profiler.
+   */
+  #[Route('profiler-queries/{division}/{token}', name: 'profiler-queries', methods: ['GET'], priority: 1000)]
+  public function profilerQueries(Request $request, string $token): Response {
+    $profile = $this->profiler->loadProfile($token);
+    // Get the queries from the DB Collector.
+    $queries = $profile->getCollector('db')->getQueries();
+
+    return $this->render('utility/profiler-queries.html.twig', ['queries' => $queries['league']]);
   }
+
 
 }

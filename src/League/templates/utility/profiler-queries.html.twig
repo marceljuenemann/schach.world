@@ -1,1 +1,31 @@
-Hey here we go!
+{% extends '@league/utility/profiler-base.html.twig' %}
+
+{% block content %}
+
+  <h1>Queries executed in request / displayed page</h1>
+
+  {% if queries %}
+
+    <table class="nsv-table">
+      <tr>
+        <th>Number</th>
+        <th>Time</th>
+        <th>Query</th>
+      </tr>
+
+
+      {% for query in queries %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td>{{ (query.executionMS * 1000)|round(2, 'common') }} ms</td>
+          <td class="query">{{ query.sql }}</td>
+        </tr>
+
+      {% endfor %}
+
+    </table>
+
+  {% endif %}
+
+
+{% endblock %}
