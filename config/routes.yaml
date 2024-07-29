@@ -15,3 +15,9 @@ LeagueControllers:
         path: ../src/League/Controller/
         namespace: Nsv\League\Controller
     type: attribute
+
+RegistrationControllers:
+    resource:
+        path: ../src/Registration/Controller/
+        namespace: Nsv\Registration\Controller
+    type: attribute

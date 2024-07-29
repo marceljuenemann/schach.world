@@ -2,6 +2,8 @@
 
 React components for the nsv-online.de frontend.
 
+**NOTE: React sucks, Angular is much better :) Any new components should go into /ng instead and this directory will be deleted in the future**
+
 ## Development
 
 1. Run `npm install` to install dependencies
