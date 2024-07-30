@@ -102,9 +102,9 @@ class StatisticsService
       foreach ($team['pairings'] as &$pairing) {
         // There are corrupt pairings that contain nonexisting teams. We need
         // to weed those out and not use them for statistics.
-        if ($this->checkPairingForNonexistingTeam($pairing)) {
-          unset($pairing);
-        } else {
+//        if ($this->checkPairingForNonexistingTeam($pairing)) {
+//          unset($pairing);
+//        } else {
          if ($pairing->team1->id == $team['team']->id) {
             foreach ($pairing->games->getValues() as $game) {
               if (is_object($game->player1)) {
@@ -138,7 +138,7 @@ class StatisticsService
             }
           }
         }
-      }
+//      }
       // Remove teams that have not played any game
       if (empty($team['active_players'])) {
         unset($teams_with_active_players[$key]);
@@ -421,7 +421,7 @@ class StatisticsService
       // Check if the games are contained in pairings that contain
       // nonexisting teams
       $pairing = $game->pairing;
-      if ($this->checkPairingForNonexistingTeam($pairing) == false) {
+//      if ($this->checkPairingForNonexistingTeam($pairing) == false) {
 
         // Make sure we add the teams only once to our array
         if (!in_array($game->pairing->team1->id, $active_teams_ids)) {
@@ -440,7 +440,7 @@ class StatisticsService
         } elseif (in_array($game->pairing->team2->id, $active_teams_ids)) {
           $teams_with_pairings[$game->pairing->team2->id]['pairings'][$game->pairing->id] = $game->pairing;
         }
-      }
+//      }
     }
 
     return $teams_with_pairings;
@@ -1103,6 +1103,12 @@ class StatisticsService
     return $team_game_score_data;
   }
 
+  /**
+   * There pairings in the database that contain teams that once existed, but
+   * were deleted. This are corrupt data, because you cannot load the pairings
+   * that contain nonexisting teams. A php fatal occurs.
+   * We want to identify these pairings and not use them for statistics.
+   */
   public function checkPairingForNonexistingTeam($pairing) {
     $team_ids = $this->pairingRepository->findPairingTeamIds($pairing->id);
     $team_ids = reset($team_ids);
