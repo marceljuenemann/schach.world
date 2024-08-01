@@ -73,9 +73,7 @@ tests/League/Api/Service/actual/
 ###< phpunit/phpunit ###
 
 ###> Ignore stuff used by Thomas for Development purposes only <###
-/config/services_dev.yaml
 /src/League/Controller/UtilityController.php
 /src/League/templates/utility
 /public/utility
-
 ###> Ignore stuff used by Thomas for Development purposes only <###
