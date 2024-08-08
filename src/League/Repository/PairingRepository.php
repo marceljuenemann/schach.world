@@ -150,6 +150,9 @@ class PairingRepository extends ServiceEntityRepository
   }
 
   public function findAllGamesDivisionExistingTeams($division) {
+
+    $excluded_pairings = [1,7,9];
+
     return $this->createQueryBuilder('pairings')
       ->select('pairings, games, player1, player2, team1, team2')
       ->innerJoin('pairings.games', 'games')
@@ -161,9 +164,9 @@ class PairingRepository extends ServiceEntityRepository
       ->andWhere('p_division.id = :division')
       ->andWhere('team1.divisionId = :division')
       ->andWhere('team2.divisionId = :division')
-      ->andWhere('pairings.id NOT IN (1,7,9)')
+      ->andWhere('pairings.id NOT IN (:excluded_pairings)')
       ->setParameter('division', $division->id)
-      //->setParameter('nonexisting_teams', '1,7,8')
+      ->setParameter('excluded_pairings', $excluded_pairings)
       ->getQuery()
       ->getResult();
   }
