@@ -89,6 +89,27 @@ class PairingRepository extends ServiceEntityRepository
 
 
   /**
+   * Find pairings that contain nonexisting teams
+   */
+  public function findPairingsWithNonexistingTeams($division_id) {
+    $conn = $this->getEntityManager()->getConnection();
+    $sql = '
+            SELECT id 
+            FROM paarungen p
+            WHERE p.staffel = :division_id
+            AND p.mannschaft1  NOT IN
+            (SELECT id FROM mannschaften)
+            OR p.mannschaft2  NOT IN
+            (SELECT id FROM mannschaften)
+         ';
+    $stmt = $conn->prepare($sql);
+    $result = $stmt->executeQuery(['division_id' => $division_id]);
+    $data = $result->fetchAllAssociative();
+    return $data;
+  }
+
+
+  /**
    * Returns all pairings for the specified round, also fetching all games and players.
    */
   public function findByRound(Division $division, int $round) {
@@ -151,23 +172,49 @@ class PairingRepository extends ServiceEntityRepository
 
   public function findAllGamesDivisionExistingTeams($division) {
 
-    $excluded_pairings = [1,7,9];
+    $division_id = $division->id();
 
-    return $this->createQueryBuilder('pairings')
-      ->select('pairings, games, player1, player2, team1, team2')
-      ->innerJoin('pairings.games', 'games')
-      ->leftJoin('pairings.division', 'p_division')
-      ->leftJoin('games.player1', 'player1')
-      ->leftJoin('games.player2', 'player2')
-      ->leftJoin('pairings.team1', 'team1')
-      ->leftJoin('pairings.team2', 'team2')
-      ->andWhere('p_division.id = :division')
-      ->andWhere('team1.divisionId = :division')
-      ->andWhere('team2.divisionId = :division')
-      ->andWhere('pairings.id NOT IN (:excluded_pairings)')
-      ->setParameter('division', $division->id)
-      ->setParameter('excluded_pairings', $excluded_pairings)
-      ->getQuery()
-      ->getResult();
+
+    $excluded_pairings = $this->findPairingsWithNonexistingTeams($division_id);
+
+    // If there are pairings that contain nonexisting teams,
+    // exclude those parings
+    if(count($excluded_pairings)) {
+      return $this->createQueryBuilder('pairings')
+        ->select('pairings, games, player1, player2, team1, team2')
+        ->innerJoin('pairings.games', 'games')
+        ->leftJoin('pairings.division', 'p_division')
+        ->leftJoin('games.player1', 'player1')
+        ->leftJoin('games.player2', 'player2')
+        ->leftJoin('pairings.team1', 'team1')
+        ->leftJoin('pairings.team2', 'team2')
+        ->andWhere('p_division.id = :division')
+        ->andWhere('team1.divisionId = :division')
+        ->andWhere('team2.divisionId = :division')
+        ->andWhere('pairings.id NOT IN (:excluded_pairings)')
+        ->setParameter('division', $division->id)
+        ->setParameter('excluded_pairings', $excluded_pairings)
+        ->getQuery()
+        ->getResult();
+    } else {
+      // If there are no nonexisting teams, do not run the
+      // NOT IN. This is necessary, because a NOT IN with
+      // an empty array returns a SQL error.
+      return $this->createQueryBuilder('pairings')
+        ->select('pairings, games, player1, player2, team1, team2')
+        ->innerJoin('pairings.games', 'games')
+        ->leftJoin('pairings.division', 'p_division')
+        ->leftJoin('games.player1', 'player1')
+        ->leftJoin('games.player2', 'player2')
+        ->leftJoin('pairings.team1', 'team1')
+        ->leftJoin('pairings.team2', 'team2')
+        ->where('p_division.id = :division')
+        ->where('team1.divisionId = :division')
+        ->where('team2.divisionId = :division')
+        ->setParameter('division', $division->id)
+        ->getQuery()
+        ->getResult();
+    }
+
   }
 }
