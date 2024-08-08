@@ -74,6 +74,8 @@ class DivisionController extends AbstractLeagueController {
 
 //    $test_simpler_queries = $service->active_teams_with_players_2($this->division);
 
+    $pairings_existing_teams = $service->pairings_existing_teams($this->division);
+
     $division_name = $this->division->name;
 
     $teams_with_active_players = $service->teams_with_active_players($this->division);

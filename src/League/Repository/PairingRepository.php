@@ -148,4 +148,23 @@ class PairingRepository extends ServiceEntityRepository
       ->getQuery()
       ->getResult();
   }
+
+  public function findAllGamesDivisionExistingTeams($division) {
+    return $this->createQueryBuilder('pairings')
+      ->select('pairings, games, player1, player2, team1, team2')
+      ->innerJoin('pairings.games', 'games')
+      ->leftJoin('pairings.division', 'p_division')
+      ->leftJoin('games.player1', 'player1')
+      ->leftJoin('games.player2', 'player2')
+      ->leftJoin('pairings.team1', 'team1')
+      ->leftJoin('pairings.team2', 'team2')
+      ->andWhere('p_division.id = :division')
+      ->andWhere('team1.divisionId = :division')
+      ->andWhere('team2.divisionId = :division')
+      ->andWhere('pairings.id NOT IN (1,7,9)')
+      ->setParameter('division', $division->id)
+      //->setParameter('nonexisting_teams', '1,7,8')
+      ->getQuery()
+      ->getResult();
+  }
 }

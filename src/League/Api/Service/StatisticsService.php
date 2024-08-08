@@ -1161,4 +1161,11 @@ class StatisticsService {
     return $active_players_with_games;
   }
 
+  public function pairings_existing_teams($division) {
+    $pairing_repository = $this->doctrine->getRepository(Pairing::class);
+    $all_games_division = $pairing_repository->findAllGamesDivisionExistingTeams($division);
+
+    return $all_games_division;
+  }
+
 }
