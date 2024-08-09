@@ -91,15 +91,15 @@ class PairingRepository extends ServiceEntityRepository
   /**
    * Find pairings that contain nonexisting teams
    */
-  public function findPairingsWithNonexistingTeams($division_id) {
+  public function findPairingsWithExistingTeams($division_id) {
     $conn = $this->getEntityManager()->getConnection();
     $sql = '
             SELECT id 
             FROM paarungen p
             WHERE p.staffel = :division_id
-            AND p.mannschaft1  NOT IN
+            AND p.mannschaft1 IN
             (SELECT id FROM mannschaften)
-            OR p.mannschaft2  NOT IN
+            AND p.mannschaft2 IN
             (SELECT id FROM mannschaften)
          ';
     $stmt = $conn->prepare($sql);
@@ -174,12 +174,9 @@ class PairingRepository extends ServiceEntityRepository
 
     $division_id = $division->id();
 
+    // Only allow verified pairings whre all participating teams exist
+    $verified_pairings = $this->findPairingsWithExistingTeams($division_id);
 
-    $excluded_pairings = $this->findPairingsWithNonexistingTeams($division_id);
-
-    // If there are pairings that contain nonexisting teams,
-    // exclude those parings
-    if(count($excluded_pairings)) {
       return $this->createQueryBuilder('pairings')
         ->select('pairings, games, player1, player2, team1, team2')
         ->innerJoin('pairings.games', 'games')
@@ -191,30 +188,10 @@ class PairingRepository extends ServiceEntityRepository
         ->andWhere('p_division.id = :division')
         ->andWhere('team1.divisionId = :division')
         ->andWhere('team2.divisionId = :division')
-        ->andWhere('pairings.id NOT IN (:excluded_pairings)')
+        ->andWhere('pairings.id IN (:verified_pairings)')
         ->setParameter('division', $division->id)
-        ->setParameter('excluded_pairings', $excluded_pairings)
+        ->setParameter('verified_pairings', $verified_pairings)
         ->getQuery()
         ->getResult();
-    } else {
-      // If there are no nonexisting teams, do not run the
-      // NOT IN. This is necessary, because a NOT IN with
-      // an empty array returns a SQL error.
-      return $this->createQueryBuilder('pairings')
-        ->select('pairings, games, player1, player2, team1, team2')
-        ->innerJoin('pairings.games', 'games')
-        ->leftJoin('pairings.division', 'p_division')
-        ->leftJoin('games.player1', 'player1')
-        ->leftJoin('games.player2', 'player2')
-        ->leftJoin('pairings.team1', 'team1')
-        ->leftJoin('pairings.team2', 'team2')
-        ->where('p_division.id = :division')
-        ->where('team1.divisionId = :division')
-        ->where('team2.divisionId = :division')
-        ->setParameter('division', $division->id)
-        ->getQuery()
-        ->getResult();
-    }
-
   }
 }
