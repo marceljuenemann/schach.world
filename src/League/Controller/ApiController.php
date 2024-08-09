@@ -60,6 +60,7 @@ class ApiController extends AbstractLeagueController {
 
   #[Route('teams/{teamId}/venue/', methods: ['PUT'], name: 'team_venue_update')]
   public function updateTeamVenue(int $teamId, #[MapRequestPayload] UpdateTeamVenueRequest $request, TeamService $service): Response {
+    // TODO: Might be able to just replace this with injecting the entity.
     $team = $this->league->teamById($teamId);
     $this->auth->requireDivisionManager($team->division);
     Encoding::deep_utf8_decode($request);

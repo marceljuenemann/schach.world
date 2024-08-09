@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+{% import "macros.html.twig" as nsv %}
+
+{% set title = "Anmeldung" %}
+{% set hide_sidebar = false %}
+
+{% block content %}
+
+  <nsv-ng-registration></nsv-ng-registration>
+
+  {{ include_nsv_ng() }}
+
+{% endblock %}

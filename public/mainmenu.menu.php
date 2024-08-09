@@ -48,25 +48,22 @@ $nsvMainmenu = array (
 	(bool) strstr ( $_SERVER ['PHP_SELF'], "/termine/" )
 ),
 
-"Ausbildung" => array (
-	"kategorie/ausbildung/",
-	false
+"Turniere" => array (
+	"nsv-grandprix/",
+	(bool) strstr ( $_SERVER ['PHP_SELF'], "/nsv-grandprix/" ),
+	"NSV-Grandprix" => "/nsv-grandprix/",
 ),
 
-"Frauen" => array (
-	"kategorie/frauenschach/",
-	false
+"Referate" => array (
+	"vorstand/",
+	(bool) strstr ( $_SERVER ['PHP_SELF'], "/vorstand/" ),
+	"Ausbildung" => "kategorie/ausbildung/",
+	"Frauen" => "kategorie/frauenschach/",
+	"Jugend" => "goto/jugend",
+	"Senioren" => "goto/Senioren",
 ),
 
-"Jugend" => array (
-	"goto/jugend",
-	false
-),
 
-"Senioren" => array (
-	"goto/Senioren",
-	false
-)
 );
 ?>
 

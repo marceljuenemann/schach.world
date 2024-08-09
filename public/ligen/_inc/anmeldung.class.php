@@ -181,15 +181,17 @@ class SED_Anmeldung {
     
     // Liefert Standartwerte für die Zusatzfelder
     function getZusatzFelderDefault (){
-        global $globals; global $prefs;
-        $rsrc = mysql_query ( "SELECT a.feldname, a.inhalt 
+        global $prefs;
+        $rows = SED_Query ( "SELECT a.feldname, a.inhalt 
             FROM mannschaften m
             INNER JOIN turniere t ON t.id=m.turnier
             INNER JOIN anmeldungZusatzfelder a ON a.mannschaft=m.id
-            WHERE m.zps='".$this->get("zps")."' AND m.mnr='".$this->get("mnr")."' 
-                AND t.organisation='$prefs[organisation]' AND t.startjahr='".(int)$prefs['startjahr']."'-1", $globals ['db'] );
+            WHERE m.zps=? AND m.mnr=? 
+                AND t.organisation=? AND t.startjahr=?", 
+            [$this->get("zps"), $this->get("mnr"), $prefs['organisation'], ((int)$prefs['startjahr'])-1] )
+            ->fetchAllAssociative();
         $default = array ();
-        if ( $rsrc ) while ( $entry = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) )
+        foreach ($rows as $entry) 
             $default [$entry ["feldname"]] = $entry ["inhalt"];
         return $default;
     }
@@ -227,26 +229,30 @@ class SED_Anmeldung {
             SED_Error ( "Einen Mannschaftsnamen sollte man schon angeben!", true );
 
         // Anfrage (SET) zusammensetzen
-        $query = "SET turnier=$globals[tid]";
-        foreach ( $this->fields as $field )
-            if ( $field == "zps" && $this->get($field)=="" )
-                $query .= ", $field=NULL";
-            else
-                $query .= ", $field='".$this->get($field)."'";
+        $query = "SET turnier=?";
+        $params = [$globals['tid']];
+        foreach ( $this->fields as $field ) {
+            if ( $this->get($field) || $field != "zps" ) {
+                $query .= ", $field=?";
+                $params[] = $this->get($field);
+            }
+        }
 
         // Soll eine Mannschaft ohne Spieler bearbeitet werden?
         if ( $mid ){
             $pl = SED_Anmeldung::getPlayerlessTeams ();
             while ( $team = mysql_fetch_array ( $pl ) )
-                if ( $team ["id"] == $mid )
-                    $query = "UPDATE mannschaften $query WHERE id=$mid LIMIT 1"; 
+                if ( $team ["id"] == $mid ) {
+                    $query = "UPDATE mannschaften $query WHERE id=? LIMIT 1"; 
+                    $params[] = $mid;
+                }
         } else
             $query = "INSERT INTO mannschaften $query";
             
         // Query ausführen
-        if ( !mysql_query ( $query, $globals ['db'] ) )
-            return SED_Error ( "Mannschaftsanmeldung fehlgeschlagen <!-- $query -->", false, false, true );
-        $this->data ["id"] = $mid ? $mid : mysql_insert_id ();
+        if ( !SED_TryQuery ( $query, $params ) )
+            return SED_Error ( "Mannschaftsanmeldung fehlgeschlagen <!-- $query $params -->", false, false, true );
+        $this->data ["id"] = $mid ? $mid : SED_Connection()->lastInsertId();
 
         // Spieler einfügen
         foreach ( $this->players as $spieler ){
@@ -263,7 +269,7 @@ class SED_Anmeldung {
         {
             if ( SED_IsValidEmail ( $mail ) )
             {
-                if ( !mysql_query ( $query = "INSERT INTO zusatzempfaenger SET mannschaft=".$this->data["id"].", email='$mail'", $globals ['db'] ) )
+                if ( !SED_TryQuery ( $query = "INSERT INTO zusatzempfaenger SET mannschaft=?, email=?", [$this->data["id"], $mail]) )
                     return SED_Error ( "Zusatzempfänger fehlgeschlagen <!-- $query -->", false, false, true );
             }
         }
@@ -273,7 +279,7 @@ class SED_Anmeldung {
         {
             if ( isset ( $this->data [$id] ) )
                 if ( $content = $this->data [$id] )
-                    if ( !mysql_query ( $query = "INSERT INTO anmeldungZusatzfelder SET mannschaft=".$this->data["id"].", feldname='".base64_decode($id)."', inhalt='$content'", $globals ['db'] ) )
+                    if ( !SED_TryQuery ( $query = "INSERT INTO anmeldungZusatzfelder SET mannschaft=?, feldname=?, inhalt=?", [$this->data["id"], base64_decode($id), $content] ) )
                         return SED_Error ( "Zusatzfeld fehlgeschlagen <!-- $query -->", false, false, true );
         }
     
