@@ -98,11 +98,6 @@ class StatisticsService {
     foreach ($teams_with_active_players as $key => &$team) {
       $active_players_ids = [];
       foreach ($team['pairings'] as &$pairing) {
-        // There are corrupt pairings that contain nonexisting teams. We need
-        // to weed those out and not use them for statistics.
-//        if ($this->checkPairingForNonexistingTeam($pairing)) {
-//          unset($pairing);
-//        } else {
         if ($pairing->team1->id == $team['team']->id) {
           foreach ($pairing->games->getValues() as $game) {
             if (is_object($game->player1)) {
@@ -136,7 +131,6 @@ class StatisticsService {
           }
         }
       }
-//      }
       // Remove teams that have not played any game
       if (empty($team['active_players'])) {
         unset($teams_with_active_players[$key]);
@@ -435,7 +429,6 @@ class StatisticsService {
       // Check if the games are contained in pairings that contain
       // nonexisting teams
       $pairing = $game->pairing;
-//      if ($this->checkPairingForNonexistingTeam($pairing) == false) {
 
       // Make sure we add the teams only once to our array
       if (!in_array($game->pairing->team1->id, $active_teams_ids)) {
@@ -454,7 +447,6 @@ class StatisticsService {
       } elseif (in_array($game->pairing->team2->id, $active_teams_ids)) {
         $teams_with_pairings[$game->pairing->team2->id]['pairings'][$game->pairing->id] = $game->pairing;
       }
-//      }
     }
 
     return $teams_with_pairings;
@@ -1163,7 +1155,7 @@ class StatisticsService {
 
   public function pairings_existing_teams($division) {
     $pairing_repository = $this->doctrine->getRepository(Pairing::class);
-    $all_games_division = $pairing_repository->findAllGamesDivisionExistingTeams($division);
+    $all_games_division = $pairing_repository->findAllPairingsDivision($division);
 
     return $all_games_division;
   }

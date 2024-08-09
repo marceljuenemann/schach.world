@@ -51,6 +51,10 @@ class PairingRepository extends ServiceEntityRepository
   }
 
   public function findByTeamAndDivision(Team $team, Division $division) {
+    $division_id = $division->id();
+    // Only allow verified pairings whre all participating teams exist
+    $verified_pairings = $this->findPairingsWithExistingTeams($division_id);
+
       return $this->getEntityManager()
         ->createQueryBuilder()
         ->select('p, g, s1, s2')
@@ -61,11 +65,13 @@ class PairingRepository extends ServiceEntityRepository
         ->leftJoin('g.player2', 's2')
         ->andWhere('p.team1 = :team OR p.team2 = :team')
         ->andWhere('p.division = :division')
+        ->andWhere('p.id IN (:verified_pairings)')
         ->addOrderBy('p.round', 'ASC')
         ->addOrderBy('p.host', 'ASC')
         ->addOrderBy('p.id', 'ASC')
         ->setParameter('team', $team)
         ->setParameter('division', $division)
+        ->setParameter('verified_pairings', $verified_pairings)
         ->getQuery()
         ->getResult();
   }
@@ -154,6 +160,10 @@ class PairingRepository extends ServiceEntityRepository
    * player data dwz and birth date
    */
   public function findAllPairingsDivision($division) {
+    $division_id = $division->id();
+    // Only allow verified pairings whre all participating teams exist
+    $verified_pairings = $this->findPairingsWithExistingTeams($division_id);
+
     return $this->createQueryBuilder('pairings')
       ->select('pairings, games, player1, player2, team1, team2')
       ->innerJoin('pairings.games', 'games')
@@ -165,33 +175,10 @@ class PairingRepository extends ServiceEntityRepository
       ->andWhere('p_division.id = :division')
       ->andWhere('team1.divisionId = :division')
       ->andWhere('team2.divisionId = :division')
+      ->andWhere('pairings.id IN (:verified_pairings)')
       ->setParameter('division', $division->id)
+      ->setParameter('verified_pairings', $verified_pairings)
       ->getQuery()
       ->getResult();
-  }
-
-  public function findAllGamesDivisionExistingTeams($division) {
-
-    $division_id = $division->id();
-
-    // Only allow verified pairings whre all participating teams exist
-    $verified_pairings = $this->findPairingsWithExistingTeams($division_id);
-
-      return $this->createQueryBuilder('pairings')
-        ->select('pairings, games, player1, player2, team1, team2')
-        ->innerJoin('pairings.games', 'games')
-        ->leftJoin('pairings.division', 'p_division')
-        ->leftJoin('games.player1', 'player1')
-        ->leftJoin('games.player2', 'player2')
-        ->leftJoin('pairings.team1', 'team1')
-        ->leftJoin('pairings.team2', 'team2')
-        ->andWhere('p_division.id = :division')
-        ->andWhere('team1.divisionId = :division')
-        ->andWhere('team2.divisionId = :division')
-        ->andWhere('pairings.id IN (:verified_pairings)')
-        ->setParameter('division', $division->id)
-        ->setParameter('verified_pairings', $verified_pairings)
-        ->getQuery()
-        ->getResult();
   }
 }
