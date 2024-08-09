@@ -12,6 +12,8 @@ use Nsv\League\Api\Service\DivisionService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Api\Service\TeamService;
 use Nsv\League\Core\Encoding;
+use Nsv\League\Core\TokenAuth;
+use Nsv\League\Entity\Team;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\Routing\Annotation\Route;
@@ -56,31 +58,25 @@ class ApiController extends AbstractLeagueController {
     return $this->apiResponse();
   }
 
-  // TODO: Allow token auth.
-
-  #[Route('teams/{teamId}/venue/', methods: ['PUT'], name: 'team_venue_update')]
-  public function updateTeamVenue(int $teamId, #[MapRequestPayload] UpdateTeamVenueRequest $request, TeamService $service): Response {
-    // TODO: Might be able to just replace this with injecting the entity.
-    $team = $this->league->teamById($teamId);
-    $this->auth->requireDivisionManager($team->division);
+  #[Route('teams/{id}/venue/', methods: ['PUT'], name: 'team_venue_update')]
+  public function updateTeamVenue(Team $team, #[MapRequestPayload] UpdateTeamVenueRequest $request, TeamService $service, TokenAuth $auth): Response {
+    $auth->requireTeamManager($team);
     Encoding::deep_utf8_decode($request);
     $service->updateVenue($team, $request);
     return $this->apiResponse();
   }
 
-  #[Route('teams/{teamId}/captain/', methods: ['PUT'], name: 'team_captain_update')]
-  public function updateTeamCaptain(int $teamId, #[MapRequestPayload] UpdateTeamCaptainRequest $request, TeamService $service): Response {
-    $team = $this->league->teamById($teamId);
-    $this->auth->requireDivisionManager($team->division);
+  #[Route('teams/{id}/captain/', methods: ['PUT'], name: 'team_captain_update')]
+  public function updateTeamCaptain(Team $team, #[MapRequestPayload] UpdateTeamCaptainRequest $request, TeamService $service, TokenAuth $auth): Response {
+    $auth->requireTeamManager($team);
     Encoding::deep_utf8_decode($request);
     $service->updateCaptain($team, $request);
     return $this->apiResponse();
   }
 
-  #[Route('teams/{teamId}/recipients/', methods: ['PUT'], name: 'team_recipients_update')]
-  public function updateTeamRecipients(int $teamId, #[MapRequestPayload] UpdateTeamRecipientsRequest $request, TeamService $service): Response {
-    $team = $this->league->teamById($teamId);
-    $this->auth->requireDivisionManager($team->division);
+  #[Route('teams/{id}/recipients/', methods: ['PUT'], name: 'team_recipients_update')]
+  public function updateTeamRecipients(Team $team, #[MapRequestPayload] UpdateTeamRecipientsRequest $request, TeamService $service, TokenAuth $auth): Response {
+    $auth->requireTeamManager($team);
     Encoding::deep_utf8_decode($request);
     $service->updateRecipients($team, $request);
     return $this->apiResponse();

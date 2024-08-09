@@ -50,10 +50,11 @@ export class NsvApi {
     if (body) {
       headers["Content-Type"] = "application/json";
     }
-    // TODO: properly read auth.
-    if (true || window.location.search.includes('auth=')) {
-      headers["X-Auth"] = window.location.search.substring("?auth=".length)
+    const auth = new URL(window.location.href).searchParams.get('auth')
+    if (auth) {
+      headers["X-Auth"] = auth
     }
+
     options = {
       ...options,
       method,

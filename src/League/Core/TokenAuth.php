@@ -27,25 +27,13 @@ class TokenAuth
    * user is logged in with appropriate rights to edit this team's data.
    */
   function mayEditTeam(Team $team): bool {
-    return $this->auth->isDivisionManager($team->division) || $this->hasToken(function () use ($team) {
-      return $this->teamToken($team);
-    });
+    return $this->auth->isDivisionManager($team->division) || $this->getRequestToken() === $this->teamToken($team);
   }
 
-  private function hasToken(callable $tokenProvider): bool {
-    if ($token = $this->getRequestToken()) {
-      return $token === call_user_func($tokenProvider);
+  function requireTeamManager(Team $team) {
+    if ($this->getRequestToken() !== $this->teamToken($team)) {
+      $this->auth->requireDivisionManager($team->division);
     }
-    return false;
-  }
-
-  private function getRequestToken(): string|null {
-    if ($this->request->query->has('auth')) {
-      return $this->request->query->get('auth');
-    } else if ($this->request->headers->has('X-Auth')) {
-      return $this->request->headers->get('X-Auth');
-    }
-    return null;
   }
 
   private function teamToken(Team $team): string {
@@ -56,5 +44,14 @@ class TokenAuth
     $this->legacySystem->initialize();
     global $globals;
     return substr(md5("$str$globals[salt]"), 0, $globals['md5-length']); 
+  }
+
+  private function getRequestToken(): string|null {
+    if ($this->request->query->has('auth')) {
+      return $this->request->query->get('auth');
+    } else if ($this->request->headers->has('X-Auth')) {
+      return $this->request->headers->get('X-Auth');
+    }
+    return null;
   }
 }

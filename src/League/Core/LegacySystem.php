@@ -17,6 +17,8 @@ class LegacySystem
   public League|null $league = null;
   public Division|null $division = null;
 
+  private bool $intialized = false;
+
   function __construct(
     private string $projectDir,
     // Pubic variables exposed to the legacy system.
@@ -29,6 +31,9 @@ class LegacySystem
    * processing the request or outputting anything.
    */
   function initialize() {
+    if ($this->intialized) return;
+    $this->intialized = true;
+
     if (Auth::isAdmin()) {
       $_GET['debugme'] = 1;
     }
