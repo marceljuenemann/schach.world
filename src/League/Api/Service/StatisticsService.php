@@ -29,7 +29,7 @@ class StatisticsService {
    * the season.
    */
   public function all_games_division($division) {
-    $data = $this->pairingRepository->findAllGamesDivision($division);
+    $data = $this->pairingRepository->findAllPairingsDivision($division);
 
     $all_games = [];
     $all_games_ids = [];
@@ -187,7 +187,7 @@ class StatisticsService {
 
 
   public function active_teams_with_players_2($division) {
-      $all_pairings_division = $this->pairingRepository->findAllGamesDivision($division);
+      $all_pairings_division = $this->pairingRepository->findAllPairingsDivision($division);
 
       // Create an array of all teams in the pairings and add the pairings to each team
     $teams = [];

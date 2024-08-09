@@ -35,7 +35,7 @@ class TeamRepository extends ServiceEntityRepository
   public function checkIfExists($id) {
     return $this->createQueryBuilder('team')
       ->select('team')
-      ->where('team.id = :id')
+      ->andWhere('team.id = :id')
       ->setParameter('id', $id)
       ->getQuery()
       ->getResult();
@@ -49,7 +49,7 @@ class TeamRepository extends ServiceEntityRepository
     return $this->createQueryBuilder('team')
       ->select('team, players')
       ->leftJoin('team.players', 'players')
-      ->where('team.id = :team')
+      ->andWhere('team.id = :team')
       ->setParameter('team', $team->id)
       ->getQuery()
       ->getResult();
@@ -62,7 +62,7 @@ class TeamRepository extends ServiceEntityRepository
   public function findByDivision(Division $division) {
     return $this->createQueryBuilder('team')
       ->select('team')
-      ->where('team.divisionId = :division')
+      ->andWhere('team.divisionId = :division')
       ->setParameter('division', $division->id)
       ->getQuery()
       ->getResult();
