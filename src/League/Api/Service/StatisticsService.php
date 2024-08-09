@@ -179,24 +179,6 @@ class StatisticsService {
     return $active_teams_with_players;
   }
 
-
-  public function active_teams_with_players_2($division) {
-      $all_pairings_division = $this->pairingRepository->findAllPairingsDivision($division);
-
-      // Create an array of all teams in the pairings and add the pairings to each team
-    $teams = [];
-    foreach($all_pairings_division as $pairing) {
-      if(!array_key_exists($pairing->team1->id, $teams)) {
-        $teams[$pairing->team1->id]['team'] = $pairing->team1;
-      }
-      if(!array_key_exists($pairing->team2->id, $teams)) {
-        $teams[$pairing->team2->id]['team'] = $pairing->team2;
-      }
-    }
-
-    return $teams;
-  }
-
   /**
    * Return all active players with their played games as a subarray
    * for each player.
@@ -1152,12 +1134,4 @@ class StatisticsService {
     });
     return $active_players_with_games;
   }
-
-  public function pairings_existing_teams($division) {
-    $pairing_repository = $this->doctrine->getRepository(Pairing::class);
-    $all_games_division = $pairing_repository->findAllPairingsDivision($division);
-
-    return $all_games_division;
-  }
-
 }

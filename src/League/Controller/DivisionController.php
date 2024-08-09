@@ -72,8 +72,6 @@ class DivisionController extends AbstractLeagueController {
   #[Route('{division}/statistik', name: 'statistik')]
   public function statistics(StatisticsService $service): Response {
 
-    $pairings_existing_teams = $service->pairings_existing_teams($this->division);
-
     $division_name = $this->division->name;
 
     $teams_with_active_players = $service->teams_with_active_players($this->division);
