@@ -27,21 +27,6 @@ class TeamRepository extends ServiceEntityRepository
   }
 
   /**
-   * This is essentially the same as the original Symfony find() method per repository.
-   * But since above the find method has been changed to throw a HTTP error if the
-   * team is not found we need one that just checks for the id without returning errors.
-   */
-  // TODO: Remove this.
-  public function checkIfExists($id) {
-    return $this->createQueryBuilder('team')
-      ->select('team')
-      ->andWhere('team.id = :id')
-      ->setParameter('id', $id)
-      ->getQuery()
-      ->getResult();
-  }
-
-  /**
    * Find all players for a team, also the inactive ones.
    */
   // TODO: Replace with $team->players.

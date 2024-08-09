@@ -408,8 +408,6 @@ class StatisticsService {
     $active_teams_ids = [];
 
     foreach ($all_games as $game) {
-      // Check if the games are contained in pairings that contain
-      // nonexisting teams
       $pairing = $game->pairing;
 
       // Make sure we add the teams only once to our array
@@ -1087,31 +1085,6 @@ class StatisticsService {
     $team_game_score_data['table'] = $team_game_score_table;
     $team_game_score_data['text_values'] = $team_game_score_values;
     return $team_game_score_data;
-  }
-
-  /**
-   * There pairings in the database that contain teams that once existed, but
-   * were deleted. This are corrupt data, because you cannot load the pairings
-   * that contain nonexisting teams. A php fatal occurs.
-   * We want to identify these pairings and not use them for statistics.
-   */
-  public function checkPairingForNonexistingTeam($pairing) {
-    $team_ids = $this->pairingRepository->findPairingTeamIds($pairing->id);
-    $team_ids = reset($team_ids);
-    $team1_exists = '';
-    $team2_exists = '';
-
-    if (!empty($team_ids['mannschaft1'])) {
-      $team1_exists = $this->teamRepository->checkIfExists($team_ids['mannschaft1']);
-    }
-    if (!empty($team_ids['mannschaft2'])) {
-      $team2_exists = $this->teamRepository->checkIfExists($team_ids['mannschaft2']);
-    }
-    if (empty($team1_exists) || empty($team2_exists)) {
-      return TRUE;
-    } else {
-      return FALSE;
-    }
   }
 
   /**
