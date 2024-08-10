@@ -150,8 +150,7 @@ class StatisticsService {
 
     // Get all players for a team, also the passive ones
     foreach ($active_teams_with_players as $key => &$team) {
-      $team_with_players = $team_repository->team_all_players($team['team']);
-      $team_players = reset($team_with_players)->players->getValues();
+      $team_players = $team['team']->players->getValues();
       foreach ($team_players as $team_player) {
         $team['all_players'][] = $team_player;
       }
@@ -163,8 +162,7 @@ class StatisticsService {
       // Get it from the division, and if it is not set there get it from the league.
       $division = $team['team']->division;
       $board_count = $division->config('boardCount');
-      $team_with_players = $team_repository->team_all_players($team['team']);
-      $team_players = reset($team_with_players)->players->getValues();
+      $team_players = $team['team']->players->getValues();
       // Make absolutely sure the players are sorted by their numbers
       $team_players = $this->players_sorted_by_player_number($team_players);
       foreach ($team_players as $key => $team_player) {
