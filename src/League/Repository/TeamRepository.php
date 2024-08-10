@@ -27,20 +27,6 @@ class TeamRepository extends ServiceEntityRepository
   }
 
   /**
-   * Find all players for a team, also the inactive ones.
-   */
-  // TODO: Replace with $team->players.
-  public function team_all_players($team) {
-    return $this->createQueryBuilder('team')
-      ->select('team, players')
-      ->leftJoin('team.players', 'players')
-      ->andWhere('team.id = :team')
-      ->setParameter('team', $team->id)
-      ->getQuery()
-      ->getResult();
-  }
-
-  /**
    * Find all teams in a division
    */
   // TODO: Replace with $division->teams.
