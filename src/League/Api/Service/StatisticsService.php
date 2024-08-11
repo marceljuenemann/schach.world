@@ -86,51 +86,68 @@ class StatisticsService {
 
     $teams_by_division = $team_repository->findByDivision($division);
 
+
     $teams_with_active_players = [];
+
     // Add pairings to teams
     foreach ($teams_by_division as &$team) {
       $pairings = $pairing_repository->findByTeamAndDivision($team, $division);
       $teams_with_active_players[$team->id]['team'] = $team;
       $teams_with_active_players[$team->id]['pairings'] = $pairings;
     }
+    $all_pairings_division = $pairing_repository->findAllPairingsDivision($division);
+
+//    foreach ($teams_by_division as &$team) {
+//      $teams_with_active_players[$team->id]['team'] = $team;
+//      foreach($all_pairings_division as $pairing) {
+//        if($pairing->team1->id == $team->id || $pairing->team2->id == $team->id) {
+//          $teams_with_active_players[$team->id]['pairings'][] = $pairing;
+//        }
+//      }
+//    }
+
+
+
 
     // Now extract the players from the pairings and add to each player the games he has played.
     foreach ($teams_with_active_players as $key => &$team) {
       $active_players_ids = [];
-      foreach ($team['pairings'] as &$pairing) {
-        if ($pairing->team1->id == $team['team']->id) {
-          foreach ($pairing->games->getValues() as $game) {
-            if (is_object($game->player1)) {
-              // Make sure we add the players only once to our array
-              if (!in_array($game->player1->id, $active_players_ids) && !Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
-                $active_players_ids[] = $game->player1->id;
-                $team['active_players'][$game->player1->id]['player'] = $game->player1;
-              }
-              // If the game is not a forfeit game, add it to the player's games
-              if (!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
-                $team['active_players'][$game->player1->id]['games_played'][] = $game;
+      if (!empty($team['pairings'])) {
+        foreach ($team['pairings'] as &$pairing) {
+          if ($pairing->team1->id == $team['team']->id) {
+            foreach ($pairing->games->getValues() as $game) {
+              if (is_object($game->player1)) {
+                // Make sure we add the players only once to our array
+                if (!in_array($game->player1->id, $active_players_ids) && !Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                  $active_players_ids[] = $game->player1->id;
+                  $team['active_players'][$game->player1->id]['player'] = $game->player1;
+                }
+                // If the game is not a forfeit game, add it to the player's games
+                if (!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                  $team['active_players'][$game->player1->id]['games_played'][] = $game;
+                }
               }
             }
           }
-        }
 
-        if ($pairing->team2->id == $team['team']->id) {
-          foreach ($pairing->games->getValues() as $game) {
-            if (is_object($game->player2)) {
-              // Make sure we add the players only once to our array
-              // Add players to the active players only if the game has not a bye result.
-              if (!in_array($game->player2->id, $active_players_ids) && !Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
-                $active_players_ids[] = $game->player2->id;
-                $team['active_players'][$game->player2->id]['player'] = $game->player2;
-              }
-              // If the game is not a forfeit game, add it to the player's games
-              if (!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
-                $team['active_players'][$game->player2->id]['games_played'][] = $game;
+          if ($pairing->team2->id == $team['team']->id) {
+            foreach ($pairing->games->getValues() as $game) {
+              if (is_object($game->player2)) {
+                // Make sure we add the players only once to our array
+                // Add players to the active players only if the game has not a bye result.
+                if (!in_array($game->player2->id, $active_players_ids) && !Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                  $active_players_ids[] = $game->player2->id;
+                  $team['active_players'][$game->player2->id]['player'] = $game->player2;
+                }
+                // If the game is not a forfeit game, add it to the player's games
+                if (!Result::wasBye($game->result1) && !Result::wasBye($game->result2)) {
+                  $team['active_players'][$game->player2->id]['games_played'][] = $game;
+                }
               }
             }
           }
         }
-      }
+    }
       // Remove teams that have not played any game
       if (empty($team['active_players'])) {
         unset($teams_with_active_players[$key]);
