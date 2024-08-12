@@ -140,6 +140,8 @@ class PairingRepository extends ServiceEntityRepository
   /**
    * Finds all games for a division and a tournament with
    * player data dwz and birth date
+   * Because of the inner join on pairings.games Pairings with no games
+   * are not included.
    */
   public function findAllPairingsDivision($division) {
     $division_id = $division->id();
