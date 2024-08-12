@@ -89,22 +89,16 @@ class StatisticsService {
 
     $teams_with_active_players = [];
 
-    // Add pairings to teams
-    foreach ($teams_by_division as &$team) {
-      $pairings = $pairing_repository->findByTeamAndDivision($team, $division);
-      $teams_with_active_players[$team->id]['team'] = $team;
-      $teams_with_active_players[$team->id]['pairings'] = $pairings;
-    }
     $all_pairings_division = $pairing_repository->findAllPairingsDivision($division);
 
-//    foreach ($teams_by_division as &$team) {
-//      $teams_with_active_players[$team->id]['team'] = $team;
-//      foreach($all_pairings_division as $pairing) {
-//        if($pairing->team1->id == $team->id || $pairing->team2->id == $team->id) {
-//          $teams_with_active_players[$team->id]['pairings'][] = $pairing;
-//        }
-//      }
-//    }
+    foreach ($teams_by_division as &$team) {
+      $teams_with_active_players[$team->id]['team'] = $team;
+      foreach($all_pairings_division as $pairing) {
+        if($pairing->team1->id == $team->id || $pairing->team2->id == $team->id) {
+          $teams_with_active_players[$team->id]['pairings'][] = $pairing;
+        }
+      }
+    }
 
 
 
