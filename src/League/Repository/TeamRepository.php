@@ -32,7 +32,8 @@ class TeamRepository extends ServiceEntityRepository
   // TODO: Replace with $division->teams.
   public function findByDivision(Division $division) {
     return $this->createQueryBuilder('team')
-      ->select('team')
+      ->select('team', 'players')
+      ->leftJoin('team.players', 'players')
       ->andWhere('team.divisionId = :division')
       ->setParameter('division', $division->id)
       ->getQuery()
