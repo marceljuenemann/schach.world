@@ -51,27 +51,6 @@ class PairingRepository extends ServiceEntityRepository
   }
 
   /**
-   * Find pairings that contain nonexisting teams
-   */
-  public function findPairingsWithExistingTeams($division_id) {
-    $conn = $this->getEntityManager()->getConnection();
-    $sql = '
-            SELECT id 
-            FROM paarungen p
-            WHERE p.staffel = :division_id
-            AND p.mannschaft1 IN
-            (SELECT id FROM mannschaften)
-            AND p.mannschaft2 IN
-            (SELECT id FROM mannschaften)
-         ';
-    $stmt = $conn->prepare($sql);
-    $result = $stmt->executeQuery(['division_id' => $division_id]);
-    $data = $result->fetchAllAssociative();
-    return $data;
-  }
-
-
-  /**
    * Returns all pairings for the specified round, also fetching all games and players.
    */
   public function findByRound(Division $division, int $round) {
@@ -114,28 +93,18 @@ class PairingRepository extends ServiceEntityRepository
   /**
    * Finds all games for a division and a tournament with
    * player data dwz and birth date
-   * Because of the inner join on pairings.games Pairings with no games
-   * are not included.
    */
   public function findAllPairingsDivision($division) {
-    $division_id = $division->id();
-    // Only allow verified pairings whre all participating teams exist
-    $verified_pairings = $this->findPairingsWithExistingTeams($division_id);
-
     return $this->createQueryBuilder('pairings')
       ->select('pairings, games, player1, player2, team1, team2')
       ->leftJoin('pairings.games', 'games')
       ->leftJoin('pairings.division', 'p_division')
       ->leftJoin('games.player1', 'player1')
       ->leftJoin('games.player2', 'player2')
-      ->leftJoin('pairings.team1', 'team1')
-      ->leftJoin('pairings.team2', 'team2')
+      ->innerJoin('pairings.team1', 'team1')
+      ->innerJoin('pairings.team2', 'team2')
       ->andWhere('p_division.id = :division')
-      ->andWhere('team1.divisionId = :division')
-      ->andWhere('team2.divisionId = :division')
-      ->andWhere('pairings.id IN (:verified_pairings)')
       ->setParameter('division', $division->id)
-      ->setParameter('verified_pairings', $verified_pairings)
       ->getQuery()
       ->getResult();
   }
