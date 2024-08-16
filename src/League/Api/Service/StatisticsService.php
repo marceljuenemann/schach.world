@@ -81,16 +81,27 @@ class StatisticsService {
   }
 
   public function teams_with_active_players($division) {
-    $team_repository = $this->doctrine->getRepository(Team::class);
     $pairing_repository = $this->doctrine->getRepository(Pairing::class);
-
-    $teams_by_division = $team_repository->findByDivision($division);
-
 
     $teams_with_active_players = [];
 
     $all_pairings_division = $pairing_repository->findAllPairingsDivision($division);
 
+    //Get the teams from the pairings
+    $teams_already_added_ids = [];
+    $teams_by_division = [];
+    foreach ($all_pairings_division as $pairing) {
+      if(!in_array($pairing->team1->id, $teams_already_added_ids)) {
+        $teams_by_division[] = $pairing->team1;
+        $teams_already_added_ids[] = $pairing->team1->id;
+      }
+      if(!in_array($pairing->team2->id, $teams_already_added_ids)) {
+        $teams_by_division[] = $pairing->team2;
+        $teams_already_added_ids[] = $pairing->team2->id;
+      }
+    }
+
+    // add the pairings to the teams
     foreach ($teams_by_division as &$team) {
       $teams_with_active_players[$team->id]['team'] = $team;
       foreach($all_pairings_division as $pairing) {

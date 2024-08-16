@@ -26,18 +26,4 @@ class TeamRepository extends ServiceEntityRepository
     return $entity;
   }
 
-  /**
-   * Find all teams in a division
-   */
-  // TODO: Replace with $division->teams.
-  public function findByDivision(Division $division) {
-    return $this->createQueryBuilder('team')
-      ->select('team', 'players')
-      ->leftJoin('team.players', 'players')
-      ->andWhere('team.divisionId = :division')
-      ->setParameter('division', $division->id)
-      ->getQuery()
-      ->getResult();
-  }
-
 }
