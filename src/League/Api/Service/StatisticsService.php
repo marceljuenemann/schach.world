@@ -334,7 +334,18 @@ class StatisticsService {
       $aged_players_count = (int) 0;
       foreach ($team['active_players'] as $player) {
         $birthyear = intval($player['player']->birth);
-        $league_playing_year = $division->league->year;
+        $date = new \DateTime();
+        $timezone = new \DateTimeZone('Europe/Berlin');
+        $date->setTimezone($timezone);
+        $current_year = intval($date->format('Y'));
+        if(!empty($division->league->year)) {
+          $league_playing_year = $division->league->year;
+        } else {
+          // Use the current year as a fallback if no starting year
+          // is set in the league.
+          $league_playing_year = $current_year;
+        }
+
 
         $games_played = count($player['games_played']);
 
