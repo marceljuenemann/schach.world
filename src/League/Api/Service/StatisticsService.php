@@ -265,7 +265,7 @@ class StatisticsService {
   /**
    * Calculate the DWZ averages for the table
    */
-  public function teams_dwz_calculation($active_teams_with_players) {
+  public function teams_dwz_calculation($active_teams_with_players, $division) {
     $active_teams_with_dwz = $active_teams_with_players;
     $dwz_data = [];
 
@@ -334,15 +334,12 @@ class StatisticsService {
       $aged_players_count = (int) 0;
       foreach ($team['active_players'] as $player) {
         $birthyear = intval($player['player']->birth);
-        $date = new \DateTime();
-        $timezone = new \DateTimeZone('Europe/Berlin');
-        $date->setTimezone($timezone);
-        $current_year = intval($date->format('Y'));
+        $league_playing_year = $division->league->year;
 
         $games_played = count($player['games_played']);
 
         if (!empty($birthyear)) {
-          $dwz_data[$key]['active_age_sum'] += ($current_year - $birthyear) * $games_played;
+          $dwz_data[$key]['active_age_sum'] += ($league_playing_year - $birthyear) * $games_played;
           $aged_players_count += 1;
         }
       }
@@ -627,7 +624,7 @@ class StatisticsService {
     // but I had no better idea.
     $teams_with_active_players = $this->teams_with_active_players($division);
     $active_teams_with_players = $this->active_teams_with_players($teams_with_active_players, $division);
-    $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players);
+    $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players, $division);
     if (!empty($active_teams_with_players)) {
       // Get the board counts
       $board_count = $division->config('boardCount');
