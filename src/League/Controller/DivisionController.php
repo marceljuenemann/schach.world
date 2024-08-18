@@ -75,7 +75,7 @@ class DivisionController extends AbstractLeagueController {
     $division_name = $this->division->name;
 
     $teams_with_active_players = $service->teams_with_active_players($this->division);
-    $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players);
+    $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players, $this->division);
 
     // Check if any games have been played. Some leagues have been
     // created, but no games were ever played and entered into the system.

@@ -165,7 +165,7 @@ class StatisticsService {
    * Get all teams active in the division and add
    * active players and all players (including passive ones) as separate arrays.
    */
-  public function active_teams_with_players($teams_with_active_players) {
+  public function active_teams_with_players($teams_with_active_players, $division) {
     $team_repository = $this->doctrine->getRepository(Team::class);
 
     $active_teams_with_players = $teams_with_active_players;
@@ -182,7 +182,6 @@ class StatisticsService {
     foreach ($active_teams_with_players as $key => &$team) {
       // First get the number of boards the league is played with
       // Get it from the division, and if it is not set there get it from the league.
-      $division = $team['team']->division;
       $board_count = $division->config('boardCount');
       $team_players = $team['team']->players->getValues();
       // Make absolutely sure the players are sorted by their numbers
@@ -627,12 +626,10 @@ class StatisticsService {
     // Sorry for the very similar naming of the methods teams_with_active_players and active_teams_with_players
     // but I had no better idea.
     $teams_with_active_players = $this->teams_with_active_players($division);
-    $active_teams_with_players = $this->active_teams_with_players($teams_with_active_players);
+    $active_teams_with_players = $this->active_teams_with_players($teams_with_active_players, $division);
     $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players);
     if (!empty($active_teams_with_players)) {
-      // Get the board count
-      $first_team = reset($dwz_calculation);
-      $division = $first_team['team']->division;
+      // Get the board counts
       $board_count = $division->config('boardCount');
 
       // We also return part of statistics text, so the dwz_table is only part of the returned data
