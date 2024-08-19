@@ -338,13 +338,16 @@ class StatisticsService {
         $timezone = new \DateTimeZone('Europe/Berlin');
         $date->setTimezone($timezone);
         $current_year = intval($date->format('Y'));
-        if(!empty($division->league->year)) {
-          $league_playing_year = $division->league->year;
-        } else {
+
+        $league_playing_year = $division->league->year;
+
+        if(empty($league_playing_year)) {
           // Use the current year as a fallback if no starting year
           // is set in the league.
           $league_playing_year = $current_year;
         }
+
+
 
 
         $games_played = count($player['games_played']);
