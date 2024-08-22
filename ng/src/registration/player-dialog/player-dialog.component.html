@@ -4,7 +4,7 @@
   <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
 </div>
 <div class="modal-body">
-  <player-data class="mb-4" (onPlayerDataChange)="playerData = $event"></player-data>
+  <player-data class="mb-4" [validationErrors]="errors?.validationErrors" (onPlayerDataChange)="playerData = $event"></player-data>
 
   <form class="mt-4">
     @for (group of config.groups; track group.id) {
@@ -16,8 +16,10 @@
       </div>
     }
   </form>
-
 </div>
 <div class="modal-footer">
-  <button type="button" class="btn btn-primary" (click)="modal.close('Save click')">Speichern</button>
+  @for (message of errors?.errorMessages; track $index) {
+    <div class="alert alert-danger w-100" role="alert">{{ message }}</div>
+  }
+  <button type="button" class="btn btn-primary" (click)="save()" [disabled]="!playerData">Speichern</button>
 </div>

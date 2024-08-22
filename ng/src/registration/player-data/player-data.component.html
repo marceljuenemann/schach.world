@@ -55,10 +55,16 @@
         <div class="form-floating">
           <input
             [formControlName]="control"
-            [id]="control"
+            id="nsv-control-{{control}}"
             type="text"
-            class="form-control mt-3">
-          <label [for]="control">{{controlLabel(control)}}</label>
+            class="form-control mt-3"
+            [class.is-invalid]="validationErrors && validationErrors['playerData.' + control]">
+          <label for="nsv-control-{{control}}">{{controlLabel(control)}}</label>
+          @if (validationErrors && validationErrors['playerData.' + control]) {
+            @for (error of validationErrors['playerData.' + control]; track $index) {
+              <div class="invalid-feedback">{{error.message}}</div>
+            }
+          }
         </div>
       </div>
     }

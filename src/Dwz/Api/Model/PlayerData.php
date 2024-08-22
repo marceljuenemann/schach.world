@@ -20,27 +20,33 @@ class PlayerData
 
   public string $club;
   
+  #[Assert\Regex('/^[A-Z0-9]{5}$/')]
   public ?string $zps;
 
+  #[Assert\Regex('/^[0-9]{1,4}$/')]
   public ?string $memberId;
 
+  #[Assert\Regex('/^A|P$/')]
   public string $status;
 
+  #[Assert\Regex('/^[MWD]?$/')]
   public ?string $gender;
   
+  #[Assert\Range(min: 1900, max: 2100)]
   public ?int $yearOfBirth;
 
+  #[Assert\Range(min: 100, max: 5000)]
   public ?int $dwz;
 
+  #[Assert\Range(min: 100, max: 5000)]
   public ?int $elo;
 
-  /**
-   * FIDE title, one of GM, IM, FM, CM, WG, WI, WF, WC, null.
-   */
+  #[Assert\Regex('/^W?[GIFC]M?$/')]
   public ?string $fideTitle;
 
   public ?int $fideId;
 
+  #[Assert\Regex('/^[A-Z]{3}$/')]
   public ?string $fideCountry;
 
   public ?string $uri;

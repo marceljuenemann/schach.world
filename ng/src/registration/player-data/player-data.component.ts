@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DwzPlayer, DwzService, DwzClub } from '../../dwz/dwz.service';
 import { combineLatest, map, Observable, of, switchMap, zip } from 'rxjs';
 import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { outputFromObservable } from '@angular/core/rxjs-interop';
+import { ValidationErrors } from '../../core/api';
 
 export type PlayerData = Omit<DwzPlayer, 'status' | 'gender' | 'yearOfBirth' | 'fideCountry'> & {
   gender: 'X' | 'M' | 'D' | null
@@ -33,6 +34,9 @@ const CONTROL_OPTIONS = {
 export class PlayerDataComponent {
   private subscription
 
+  @Input()
+  validationErrors: ValidationErrors | undefined = undefined
+
   // The selected database entry, or the player name in case of manual input.
   selectedPlayer = new FormControl<PlayerOption|null>(null)
   validatePlayerSelection = false
@@ -58,7 +62,7 @@ export class PlayerDataComponent {
         club: formData.club || '',
         zps: formData.zps || '',
         memberId: formData.memberId || '',
-        gender: (formData.gender as any) || null,
+        gender: (formData.gender?.toUpperCase() || null) as any,
         yearOfBirth: parseInt(formData.yearOfBirth!) || null,
         dwz: parseInt(formData.dwz!) || null,
         elo: parseInt(formData.elo!) || null,

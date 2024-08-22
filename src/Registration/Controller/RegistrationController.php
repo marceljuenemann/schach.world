@@ -64,6 +64,6 @@ class RegistrationController extends AbstractController {
 
   #[Route('api/{tournament}/players/', methods: ['POST'], name: 'players_register')]
   public function registerPlayer(#[MapRequestPayload] RegisterPlayerRequest $request): Response {
-    return new JsonResponse(['status' => 'Hello!']);
+    return new JsonResponse();
   }
 }

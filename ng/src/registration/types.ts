@@ -1,4 +1,5 @@
 import { InjectionToken } from "@angular/core"
+import { PlayerData } from "./player-data/player-data.component"
 
 export interface Config {
   tournamentName: string
@@ -13,3 +14,7 @@ export interface GroupConfig {
 
 // TODO: Maybe move this into some dialog helper instead?
 export const CONFIG_TOKEN = new InjectionToken<Config>('RegistrationConfig')
+
+export interface Player {
+  playerData: PlayerData
+}
