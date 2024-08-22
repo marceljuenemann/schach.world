@@ -7,12 +7,16 @@
   <player-data class="mb-4" [validationErrors]="errors?.validationErrors" (onPlayerDataChange)="playerData = $event"></player-data>
 
   <form class="mt-4">
-    @for (group of config.groups; track group.id) {
+    @for (group of config.groups.values(); track group.id) {
       <div class="form-check">
-        <input type="radio" class="form-check-input" id="tournamentRadio-{{group.id}}"
-          name="radio-stacked" required [disabled]="!playerData">
+        <input
+          type="radio"
+          class="form-check-input"
+          id="tournamentRadio-{{group.id}}"
+          name="radio-stacked"
+          [disabled]="isGroupDisabled(group.id)"
+          required>
         <label class="form-check-label" for="tournamentRadio-{{group.id}}">{{group.name}}</label>
-        <div class="invalid-feedback">More example invalid feedback text</div>
       </div>
     }
   </form>

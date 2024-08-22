@@ -1,6 +1,6 @@
 import { Component, Injector, Input } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Config, CONFIG_TOKEN } from './types';
+import { Config, CONFIG_TOKEN, GroupConfig } from './types';
 import { PlayerDialogComponent } from './player-dialog/player-dialog.component';
 
 @Component({
@@ -29,6 +29,8 @@ export class RegistrationComponent {
   }
 
   get config(): Config {
-    return JSON.parse(this.configString!)
+    let config = JSON.parse(this.configString!)
+    config.groups = new Map(config.groups.map((g: GroupConfig) => [g.id, g]));
+    return config
   }
 }

@@ -24,6 +24,14 @@ export class PlayerDialogComponent {
     private registrationService: RegistrationService
   ) {}
 
+  isGroupDisabled(groupId: string): boolean {
+    if (!this.playerData) return true
+    const group = this.config.groups.get(groupId)!
+    if (group.maxDwz && (this.playerData.dwz || 0) > group.maxDwz) return true
+    if (group.minYearOfBirth && (this.playerData.yearOfBirth || Infinity) < group.minYearOfBirth) return true
+    return false
+  }
+
   save() {
     const player = {playerData: this.playerData!}
     firstValueFrom(this.registrationService.registerPlayer('test', player)).then(

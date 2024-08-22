@@ -19,31 +19,38 @@ const TEST_CONFIG = [
     ],
     [
       'id' => 'B',
-      'name' => 'Gruppe B (DWZ 1500-1750)'
+      'name' => 'Gruppe B (DWZ 1500-1750)',
+      'maxDwz' => 1750
     ],
     [
       'id' => 'C',
-      'name' => 'Gruppe C (bis DWZ 1500)'
+      'name' => 'Gruppe C (bis DWZ 1500)',
+      'maxDwz' => 1500
     ],
     [
       'id' => 'U18',
-      'name' => 'Altersklasse U18'
+      'name' => 'Altersklasse U18',
+      'minYearOfBirth' => 2007
     ],
     [
       'id' => 'U16',
-      'name' => 'Altersklasse U16'
+      'name' => 'Altersklasse U16',
+      'minYearOfBirth' => 2009
     ],
     [
       'id' => 'U14',
-      'name' => 'Altersklasse U14'
+      'name' => 'Altersklasse U14',
+      'minYearOfBirth' => 2011
     ],
     [
       'id' => 'U12',
-      'name' => 'Altersklasse U12'
+      'name' => 'Altersklasse U12',
+      'minYearOfBirth' => 2013
     ],
     [
       'id' => 'U10',
-      'name' => 'Altersklasse U10'
+      'name' => 'Altersklasse U10',
+      'minYearOfBirth' => 2015
     ]
   ]
 ];
