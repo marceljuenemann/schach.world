@@ -21,7 +21,8 @@ export class RegistrationComponent {
   async openRegistration() {
     // TODO: Make scrollable within the dialog
     this.dialogService.open<PlayerDialogParams>(PlayerDialogComponent, {
-      config: this.config
+      config: this.config,
+      lastPlayer: this.lastPlayer
     }).result.then(result => {
       this.players.push(result)
       this.lastPlayer = result

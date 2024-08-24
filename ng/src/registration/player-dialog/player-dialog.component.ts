@@ -10,7 +10,8 @@ import { JsonPipe } from '@angular/common';
 import { Dialog } from '../../core/dialog';
 
 export interface PlayerDialogParams {
-  config: Config
+  config: Config,
+  lastPlayer: Player | null
 }
 
 @Component({
@@ -33,6 +34,9 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
     private registrationService: RegistrationService
   ) {
     super()
+    if (this.params.lastPlayer) {
+      this.contactDetails.setValue(this.params.lastPlayer.contactDetails)
+    }
   }
 
   isGroupDisabled(groupId: string): boolean {

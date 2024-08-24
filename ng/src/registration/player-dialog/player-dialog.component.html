@@ -4,7 +4,7 @@
   <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
 </div>
 <div class="modal-body">
-  <player-data class="mb-4" [validationErrors]="errors?.validationErrors" (onPlayerDataChange)="playerData = $event"></player-data>
+  <player-data class="mb-4" [lastPlayer]="params.lastPlayer" [validationErrors]="errors?.validationErrors" (onPlayerDataChange)="playerData = $event"></player-data>
 
   <form class="mt-4">
     @for (group of params.config.groups.values(); track group.id) {

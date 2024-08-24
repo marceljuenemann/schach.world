@@ -5,6 +5,7 @@ import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { outputFromObservable } from '@angular/core/rxjs-interop';
 import { ValidationErrors } from '../../core/api';
+import { Player } from '../types';
 
 export type PlayerData = Omit<DwzPlayer, 'status' | 'gender' | 'yearOfBirth' | 'fideCountry'> & {
   gender: 'W' | 'M' | 'D' | null
@@ -34,8 +35,8 @@ const CONTROL_OPTIONS = {
 export class PlayerDataComponent {
   private subscription
 
-  @Input()
-  validationErrors: ValidationErrors | undefined = undefined
+  @Input() lastPlayer: Player | null = null
+  @Input() validationErrors: ValidationErrors | undefined = undefined
 
   // The selected database entry, or the player name in case of manual input.
   selectedPlayer = new FormControl<PlayerOption|null>(null)
@@ -107,7 +108,8 @@ export class PlayerDataComponent {
 		return text$.pipe(
 			switchMap((term: string) => {
         // Get suggestions based on the term.
-				const options = term === '' ? of([]) : this.dwz.findPlayer(term, '')
+        const preferredZps = this.lastPlayer?.playerData?.zps || ''
+				const options = term === '' ? of([]) : this.dwz.findPlayer(term, preferredZps)
         return options.pipe(map((players: DwzPlayer[]) => {
           const options: PlayerOption[] = players.map(p => { return{name: p.name, data: p} })
           // Possibly add option for manual entry.
