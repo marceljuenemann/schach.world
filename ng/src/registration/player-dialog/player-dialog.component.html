@@ -7,7 +7,7 @@
   <player-data class="mb-4" [validationErrors]="errors?.validationErrors" (onPlayerDataChange)="playerData = $event"></player-data>
 
   <form class="mt-4">
-    @for (group of config.groups.values(); track group.id) {
+    @for (group of params.config.groups.values(); track group.id) {
       <div class="form-check">
         <input
           type="radio"

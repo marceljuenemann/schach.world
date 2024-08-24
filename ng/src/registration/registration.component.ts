@@ -1,7 +1,7 @@
 import { Component, Injector, Input } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Config, CONFIG_TOKEN, GroupConfig, Player } from './types';
-import { PlayerDialogComponent } from './player-dialog/player-dialog.component';
+import { Config, GroupConfig, Player } from './types';
+import { PlayerDialogComponent, PlayerDialogParams } from './player-dialog/player-dialog.component';
+import { DialogService } from '../core/dialog.service';
 
 @Component({
   selector: 'nsv-registration',
@@ -14,19 +14,17 @@ export class RegistrationComponent {
   @Input({alias: "config"}) configString: string | undefined
 
   players: Player[] = []
+  lastPlayer: Player | null = null
 
-  constructor(private modalService: NgbModal) {
-  }
+  constructor(private dialogService: DialogService) {}
 
   async openRegistration() {
     // TODO: Make scrollable within the dialog
-    // TODO: Probably wrap this in a nicer dialog service?
-    this.modalService.open(PlayerDialogComponent, {
-      injector: Injector.create({providers: [{
-        provide: CONFIG_TOKEN, useValue: this.config
-      }]})
+    this.dialogService.open<PlayerDialogParams>(PlayerDialogComponent, {
+      config: this.config
     }).result.then(result => {
       this.players.push(result)
+      this.lastPlayer = result
     })
   }
 
