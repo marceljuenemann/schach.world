@@ -23,12 +23,9 @@ export class NsvFormComponent {
   // Number of columns to show the inputs in
   @Input() columns: number
 
-  // TODO: simplify with @let in angular 18?
-  get visibleControls(): Array<{id: string, control: NsvFormControl}> {
+  get visibleControls() {
     //return ['yearOfBirth', 'gender']
-    return Object.entries(this.form.controls).map(([id, control]) => {
-      return {id, control} as any
-    })
+    return Object.keys(this.form.controls)
   }
 
   get colClass() {

@@ -1,15 +1,16 @@
 <form [formGroup]="form">
   <div class="row">
-    @for (control of visibleControls; track control.id) {
+    @for (id of visibleControls; track id) {
+      @let control = form.controls[id];
       <div class="{{colClass}}">
         <div class="form-floating">
           <input
-            [formControlName]="control.id"
-            id="nsv-form-{{control.id}}"
+            [formControlName]="id"
+            id="nsv-form-{{id}}"
             type="text"
             class="form-control mt-3"
               >
-          <label for="nsv-form-{{control.id}}">{{control.control.label}}</label>
+          <label for="nsv-form-{{id}}">{{control.label}}</label>
 <!--
           @if (validationErrors && validationErrors['playerData.' + control]) {
             @for (error of validationErrors['playerData.' + control]; track $index) {
