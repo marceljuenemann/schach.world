@@ -40,7 +40,7 @@
   </ng-template>
   <div class="form-floating">
     <input
-      formControlName="club"
+      [formControl]="club"
       id="club"
       type="text"
       [ngbTypeahead]="searchClub"
@@ -49,24 +49,6 @@
     <label for="floatingInput">Verein</label>
   </div>
 
-  <div class="row">
-    @for (control of visibleControls; track control) {
-      <div class="col-6">
-        <div class="form-floating">
-          <input
-            [formControlName]="control"
-            id="nsv-control-{{control}}"
-            type="text"
-            class="form-control mt-3"
-            [class.is-invalid]="validationErrors && validationErrors['playerData.' + control]">
-          <label for="nsv-control-{{control}}">{{controlLabel(control)}}</label>
-          @if (validationErrors && validationErrors['playerData.' + control]) {
-            @for (error of validationErrors['playerData.' + control]; track $index) {
-              <div class="invalid-feedback">{{error.message}}</div>
-            }
-          }
-        </div>
-      </div>
-    }
-  </div>
+
+  <nsv-form [form]="form" [validationErrors]="validationErrors" validationErrorPrefix="playerData." [columns]="2"></nsv-form>
 </form>

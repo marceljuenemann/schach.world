@@ -2,10 +2,12 @@ import { Component, Input } from '@angular/core';
 import { DwzPlayer, DwzService, DwzClub } from '../../dwz/dwz.service';
 import { combineLatest, map, Observable, of, switchMap, zip } from 'rxjs';
 import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { outputFromObservable } from '@angular/core/rxjs-interop';
 import { ValidationErrors } from '../../core/api';
 import { Player } from '../types';
+import { IntControl, NsvFormGroup, TextControl } from '../../core/form/form-group';
+import { NsvFormComponent } from '../../core/form/form.component';
 
 export type PlayerData = Omit<DwzPlayer, 'status' | 'gender' | 'yearOfBirth' | 'fideCountry'> & {
   gender: 'W' | 'M' | 'D' | null
@@ -14,21 +16,10 @@ export type PlayerData = Omit<DwzPlayer, 'status' | 'gender' | 'yearOfBirth' | '
 
 type PlayerOption = {name: string, data?: DwzPlayer}
 
-const CONTROL_OPTIONS = {
-  zps: {label: 'Vereins-Nr.'},
-  memberId: {label: 'Mitglieds-Nr.'},
-  yearOfBirth: {label: 'Geburtsjahr'},
-  gender: {label: 'Geschlecht (M/W/D)'},
-  dwz: {label: 'DWZ'},
-  elo: {label: 'ELO'},
-  fideId: {label: 'FIDE-ID'},
-  fideTitle: {label: 'FIDE-Titel'},
-}
-
 @Component({
   selector: 'player-data',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgbTypeaheadModule],
+  imports: [ReactiveFormsModule, NgbTypeaheadModule, NsvFormComponent],
   templateUrl: './player-data.component.html',
   styleUrl: './player-data.component.css'
 })
@@ -40,27 +31,29 @@ export class PlayerDataComponent {
 
   // The selected database entry, or the player name in case of manual input.
   selectedPlayer = new FormControl<PlayerOption|null>(null)
-  validatePlayerSelection = false
+  validatePlayerSelection = false  // Replace with opts = {updateOn: 'blur'}?
 
-  form = new FormGroup({
-    club: new FormControl(''),
-    zps: new FormControl(''),
-    memberId: new FormControl(''),
-    yearOfBirth: new FormControl(''),
-    gender: new FormControl(''),
-    dwz: new FormControl(''),
-    elo: new FormControl(''),
-    fideId: new FormControl(''),
-    fideTitle: new FormControl(''),
-  });
+  club = new FormControl('')
+  form = new NsvFormGroup({
+    zps: new TextControl('Vereins-Nr.'),
+    memberId: new TextControl('Mitglieds-Nr.'),
+    yearOfBirth: new IntControl('Geburtsjahr'),
+    gender: new TextControl('Geschlecht (M/W/D)'),
+    dwz: new IntControl('DWZ'),
+    elo: new IntControl('ELO'),
+    fideId: new IntControl('FIDE-ID'),
+    fideTitle: new TextControl('FIDE-Titel'),
+  })
 
   onPlayerDataChange = outputFromObservable<PlayerData|null>(
-    combineLatest([this.selectedPlayer.valueChanges, this.form.valueChanges])
-    .pipe(map(([selectedPlayer, formData]) => {
+    combineLatest([this.selectedPlayer.valueChanges, this.club.valueChanges, this.form.valueChanges])
+    .pipe(map(([selectedPlayer, club, formData]) => {
       if (!selectedPlayer || !selectedPlayer.name) return null
+      console.log(formData) // TODO: remove
+      // TODO: simplify by using form.transformedValue (IntControl performs parseInt)
       return {
         name: selectedPlayer.name,
-        club: formData.club || '',
+        club: club || '',
         zps: formData.zps || '',
         memberId: formData.memberId || '',
         gender: (formData.gender?.toUpperCase() || null) as any,
@@ -73,36 +66,37 @@ export class PlayerDataComponent {
     })))
 
   constructor(private dwz: DwzService) {
-    this.form.disable()
+    this.updateControlStatus()
     this.subscription = this.selectedPlayer.valueChanges.subscribe(player => {
-      if (player && player.data) {
-        // Player was selected from the database.
-        this.form.patchValue(player.data as any)
-        this.form.disable()
-      } else if (player) {
-        // Player name was entered manually.
-        this.form.enable()
-      } else {
+      if (!player) {
         // No player selected.
+        this.club.reset()
         this.form.reset()
-        this.form.disable()
+      } else if (player.data) {
+        // Player was selected from the database.
+        this.club.setValue(player.data.club)
+        this.form.patchValue(player.data as any)
       }
+      this.updateControlStatus()
     })
+  }
+
+  private updateControlStatus() {
+    this.form.hideControls()
+    if (this.isManualEntry) {
+      this.form.enable()
+      this.form.controls.yearOfBirth.visible = true
+      this.form.controls.gender.visible = true
+    } else {
+      this.form.disable()
+      this.form.controls.dwz.visible = true
+      this.form.controls.elo.visible = true
+    }
   }
 
   get isManualEntry() {
     return this.selectedPlayer.value && !this.selectedPlayer.value.data
   }
-
-  get visibleControls() {
-    if (this.isManualEntry) {
-      return ['yearOfBirth', 'gender']
-    } else {
-      return ['dwz', 'elo']
-    }
-  }
-
-  controlLabel = (id: string) => (CONTROL_OPTIONS as any)[id].label
 
 	search = (text$: Observable<string>) => {
 		return text$.pipe(
