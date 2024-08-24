@@ -1,17 +1,18 @@
 import { Component, Inject, inject } from '@angular/core';
 import { PlayerData, PlayerDataComponent } from '../player-data/player-data.component';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { Config, CONFIG_TOKEN } from '../types';
+import { Config, CONFIG_TOKEN, Player } from '../types';
 import { RegistrationService } from '../registration.service';
 import { firstValueFrom } from 'rxjs';
 import { NsvError, processApiError } from '../../core/api';
 import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvFormGroup, TextControl } from '../../core/form/form-group';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'player-dialog',
   standalone: true,
-  imports: [PlayerDataComponent, NsvFormComponent],
+  imports: [PlayerDataComponent, NsvFormComponent, JsonPipe],
   templateUrl: './player-dialog.component.html',
   styleUrl: './player-dialog.component.css'
 })
@@ -22,8 +23,8 @@ export class PlayerDialogComponent {
   errors: NsvError | null = null
 
   contactDetails = new NsvFormGroup({
-    name: new TextControl('Kontaktperson'),
-    email: new TextControl('E-Mail-Adresse')
+    name: new TextControl('Kontaktperson', {required: true}),
+    email: new TextControl('E-Mail-Adresse', {required: true})
   })
 
   constructor(
@@ -39,10 +40,17 @@ export class PlayerDialogComponent {
     return false
   }
 
+  get isValid() {
+    return this.playerData && this.contactDetails.valid
+  }
+
   save() {
-    const player = {playerData: this.playerData!}
+    const player = {
+      playerData: this.playerData!,
+      contactDetails: this.contactDetails.value
+    } as Player
     firstValueFrom(this.registrationService.registerPlayer('test', player)).then(
-      success => this.modal.close(),
+      success => this.modal.close(player),
       error => this.errors = processApiError(error)
     )
   }

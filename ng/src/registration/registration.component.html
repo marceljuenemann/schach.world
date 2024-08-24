@@ -4,3 +4,10 @@
   <span class="dashicons dashicons-plus" style="vertical-align: bottom"></span>
   Anmelden
 </button>
+
+@for (player of players; track $index) {
+  <div class="alert alert-success mt-3">
+    {{player.playerData.name}} wurde angemeldet
+  </div>
+}
+

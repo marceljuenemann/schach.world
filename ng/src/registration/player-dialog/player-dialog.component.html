@@ -21,11 +21,11 @@
     }
   </form>
 
-  <nsv-form [form]="contactDetails"></nsv-form>
+  <nsv-form [form]="contactDetails" [validationErrors]="errors?.validationErrors" validationErrorPrefix="contactDetails."></nsv-form>
 </div>
 <div class="modal-footer">
   @for (message of errors?.errorMessages; track $index) {
     <div class="alert alert-danger w-100" role="alert">{{ message }}</div>
   }
-  <button type="button" class="btn btn-primary" (click)="save()" [disabled]="!playerData">Speichern</button>
+  <button type="button" class="btn btn-primary" (click)="save()" [disabled]="!isValid">Speichern</button>
 </div>

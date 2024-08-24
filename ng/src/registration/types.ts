@@ -17,6 +17,12 @@ export interface GroupConfig {
 // TODO: Maybe move this into some dialog helper instead?
 export const CONFIG_TOKEN = new InjectionToken<Config>('RegistrationConfig')
 
+export interface ContactDetails {
+  name: string,
+  email: string
+}
+
 export interface Player {
-  playerData: PlayerData
+  playerData: PlayerData,
+  contactDetails: ContactDetails
 }

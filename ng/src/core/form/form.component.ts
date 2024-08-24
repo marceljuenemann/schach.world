@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { NsvFormControl, NsvFormGroup } from './form-group';
+import { NsvFormGroup } from './form-group';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ValidationErrors } from '../api';
 
 /**
  * Automatically displays form inputs based on an NsvFormGroup.
@@ -20,12 +21,22 @@ export class NsvFormComponent {
   // The NsvFormGroup used for managing state.
   @Input({required: true}) form: NsvFormGroup
 
+  // ValidationErrors (usually returned by the NSV server)
+  @Input() validationErrors: ValidationErrors | undefined = undefined
+  @Input() validationErrorPrefix: string = ''
+
   // Number of columns to show the inputs in
   @Input() columns: number
 
   get visibleControls() {
     //return ['yearOfBirth', 'gender']
     return Object.keys(this.form.controls)
+  }
+
+  validationError(controlId: string): string | null {
+    if (!this.validationErrors) return null
+    const errors = this.validationErrors[this.validationErrorPrefix + controlId] || []
+    return errors.map(e => e.message).join(' ') || null
   }
 
   get colClass() {

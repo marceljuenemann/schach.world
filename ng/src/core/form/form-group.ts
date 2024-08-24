@@ -1,4 +1,4 @@
-import { FormControl, FormGroup } from "@angular/forms"
+import { FormControl, FormGroup, Validators } from "@angular/forms"
 
 /**
  * Extension of FormGroup that also helps with things like
@@ -15,7 +15,7 @@ export abstract class NsvFormControl<T = any> extends FormControl {
 }
 
 export class TextControl extends NsvFormControl<string> {
-  constructor(public readonly label: string) {
-    super();
+  constructor(public readonly label: string, opts: {required?: boolean} = {}) {
+    super('', opts.required ? Validators.required : undefined);
   }
 }
