@@ -20,6 +20,8 @@
       </div>
     }
   </form>
+
+  <nsv-form [form]="contactDetails"></nsv-form>
 </div>
 <div class="modal-footer">
   @for (message of errors?.errorMessages; track $index) {

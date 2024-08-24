@@ -5,11 +5,13 @@ import { Config, CONFIG_TOKEN } from '../types';
 import { RegistrationService } from '../registration.service';
 import { firstValueFrom } from 'rxjs';
 import { NsvError, processApiError } from '../../core/api';
+import { NsvFormComponent } from '../../core/form/form.component';
+import { NsvFormGroup, TextControl } from '../../core/form/form-group';
 
 @Component({
   selector: 'player-dialog',
   standalone: true,
-  imports: [PlayerDataComponent],
+  imports: [PlayerDataComponent, NsvFormComponent],
   templateUrl: './player-dialog.component.html',
   styleUrl: './player-dialog.component.css'
 })
@@ -18,6 +20,11 @@ export class PlayerDialogComponent {
 
   playerData: PlayerData | null = null
   errors: NsvError | null = null
+
+  contactDetails = new NsvFormGroup({
+    name: new TextControl('Kontaktperson'),
+    email: new TextControl('E-Mail-Adresse')
+  })
 
   constructor(
     @Inject(CONFIG_TOKEN) public config: Config,

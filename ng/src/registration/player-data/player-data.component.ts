@@ -7,7 +7,7 @@ import { outputFromObservable } from '@angular/core/rxjs-interop';
 import { ValidationErrors } from '../../core/api';
 
 export type PlayerData = Omit<DwzPlayer, 'status' | 'gender' | 'yearOfBirth' | 'fideCountry'> & {
-  gender: 'X' | 'M' | 'D' | null
+  gender: 'W' | 'M' | 'D' | null
   yearOfBirth: number | null
 }
 

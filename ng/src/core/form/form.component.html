@@ -1,0 +1,24 @@
+<form [formGroup]="form">
+  <div class="row">
+    @for (control of visibleControls; track control.id) {
+      <div class="{{colClass}}">
+        <div class="form-floating">
+          <input
+            [formControlName]="control.id"
+            id="nsv-form-{{control.id}}"
+            type="text"
+            class="form-control mt-3"
+              >
+          <label for="nsv-form-{{control.id}}">{{control.control.label}}</label>
+<!--
+          @if (validationErrors && validationErrors['playerData.' + control]) {
+            @for (error of validationErrors['playerData.' + control]; track $index) {
+              <div class="invalid-feedback">{{error.message}}</div>
+            }
+          }
+            -->
+        </div>
+      </div>
+    }
+  </div>
+</form>
