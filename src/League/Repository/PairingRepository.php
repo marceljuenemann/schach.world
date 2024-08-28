@@ -57,15 +57,7 @@ class PairingRepository extends ServiceEntityRepository
     return $this->createQueryBuilder('pairing')
       ->select('pairing')
       ->where('pairing.team1 = :team OR pairing.team2 = :team')
-      ->andWhere('pairing.round <
-      
-      
-      
-      
-      
-      
-      
-      = :round')
+      ->andWhere('pairing.round <= :round')
       ->setParameter('team', $team)
       ->setParameter('round', $round)
       ->addOrderBy('pairing.id', 'ASC')
