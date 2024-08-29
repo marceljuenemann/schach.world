@@ -13,6 +13,6 @@ class RankingTeam {
   public array $pairings;
   public array $crosstable_pairings;
   public int $ranking_position = 0;
-  public ?int $team_points;
-  public ?float $board_points;
+  public int $team_points = 0;
+  public float $board_points = 0;
 }
