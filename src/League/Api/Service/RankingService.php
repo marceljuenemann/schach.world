@@ -24,27 +24,25 @@ class RankingService {
     // The ranking_helper array orders all teams into an array keyed by team points
     // on the first level and by board points on the second level.
     $ranking_helper = [];
-    $ranking_helper_2 = [];
     $teams_with_pairings = [];
-    $teams_with_pairings_objects = [];
     foreach ($teams_division as $team) {
-      $teams_with_pairings[$team->id]['team'] = $team;
-      $pairings = $pairing_repository->findByTeamOnlyPairing($team, $round);
-      $teams_with_pairings[$team->id]['pairings'] = $pairings;
-      $teams_with_pairings[$team->id]['team_points'] = $this->addTeamPoints($team, $pairings);
-      $teams_with_pairings[$team->id]['board_points'] = $this->addBoardPoints($team, $pairings);
-      // Sort the teams into the ranking helper array
-      $ranking_helper[$this->addTeamPoints($team, $pairings)][(string) $this->addBoardPoints($team, $pairings)][] = $team;
+//      $teams_with_pairings[$team->id]['team'] = $team;
+//      $pairings = $pairing_repository->findByTeamOnlyPairing($team, $round);
+//      $teams_with_pairings[$team->id]['pairings'] = $pairings;
+//      $teams_with_pairings[$team->id]['team_points'] = $this->addTeamPoints($team, $pairings);
+//      $teams_with_pairings[$team->id]['board_points'] = $this->addBoardPoints($team, $pairings);
+//      // Sort the teams into the ranking helper array
+//      $ranking_helper[$this->addTeamPoints($team, $pairings)][(string) $this->addBoardPoints($team, $pairings)][] = $team;
 
       // Now create each team as an object instance of RankingTeam
       $rankingTeam = new RankingTeam();
-      $teams_with_pairings_objects[$team->id] = $rankingTeam;
       $rankingTeam->team = $team;
-      //$pairings = $pairing_repository->findByTeamOnlyPairing($team, $round);
+      $pairings = $pairing_repository->findByTeamOnlyPairing($team, $round);
       $rankingTeam->pairings = $pairings;
       $rankingTeam->team_points = $this->addTeamPoints($team, $pairings);
       $rankingTeam->board_points = $this->addBoardPoints($team, $pairings);
-      $ranking_helper_2[$rankingTeam->team_points][(string)$rankingTeam->board_points][$team->id] = $team;
+      $teams_with_pairings[$team->id] = $rankingTeam;
+      $ranking_helper[$rankingTeam->team_points][(string) $rankingTeam->board_points][$team->id] = $team;
     }
 
     // Now apply direct comparison to teams that are tied by team and board points
@@ -63,7 +61,7 @@ class RankingService {
 
     // Sort the teams by team_points and after that by board_points.
     uasort($teams_with_pairings, function ($a, $b) {
-      return [$b['team_points'], $b['board_points']] <=> [$a['team_points'], $a['board_points']];
+      return [$b->team_points, $b->board_points] <=> [$a->team_points, $a->board_points];
     });
     // Sort the pairings for the crosstable display
     $teams_with_pairings_crosstable = $this->sortPairingsCrosstable($teams_with_pairings);
@@ -174,18 +172,18 @@ class RankingService {
     }
     $prev_team_id = 0;
     foreach ($teams_with_pairings_crosstable as $key => &$team) {
-      $team['ranking_position'] = 0;
-      $team['crosstable_pairings'] = $standings_grid;
-      foreach ($team['pairings'] as $pairing) {
-        if ($pairing->team1->id==$team['team']->id) {
+      $team->ranking_position = 0;
+      $team->crosstable_pairings = $standings_grid;
+      foreach ($team->pairings as $pairing) {
+        if ($pairing->team1->id==$team->team->id) {
           $opponent_id = $pairing->team2->id;
-          $team['crosstable_pairings'][$opponent_id]['board_points'] = $pairing->result1;
-          $team['crosstable_pairings'][$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
+          $team->crosstable_pairings[$opponent_id]['board_points'] = $pairing->result1;
+          $team->crosstable_pairings[$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
         }
-        if ($pairing->team2->id==$team['team']->id) {
+        if ($pairing->team2->id==$team->team->id) {
           $opponent_id = $pairing->team1->id;
-          $team['crosstable_pairings'][$opponent_id]['board_points'] = $pairing->result2;
-          $team['crosstable_pairings'][$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
+          $team->crosstable_pairings[$opponent_id]['board_points'] = $pairing->result2;
+          $team->crosstable_pairings[$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
         }
       }
       // Also add the ranking number to each team
@@ -193,14 +191,14 @@ class RankingService {
 
       // If the team has the same team and board points as the team before it, it gets the same ranking position
       if (!empty($prev_team_id)) {
-        if ($team['team_points']==$teams_with_pairings_crosstable[$prev_team_id]['team_points'] &&
-            $team['board_points']==$teams_with_pairings_crosstable[$prev_team_id]['board_points']) {
-          $team['ranking_position'] = $teams_with_pairings_crosstable[$prev_team_id]['ranking_position'];
+        if ($team->team_points==$teams_with_pairings_crosstable[$prev_team_id]['team_points'] &&
+          $team->board_points==$teams_with_pairings_crosstable[$prev_team_id]['board_points']) {
+          $team->ranking_position = $teams_with_pairings_crosstable[$prev_team_id]['ranking_position'];
         } else {
-          $team['ranking_position'] = $array_position;
+          $team->ranking_position = $array_position;
         }
       } else {
-        $team['ranking_position'] = $array_position;
+        $team->ranking_position = $array_position;
       }
 
       // We store the current array key for the next iteration in the loop
@@ -217,10 +215,10 @@ class RankingService {
     $team_count = count($teams_with_pairings_crosstable);
 
     $crosstable_table['header'] = [
-        ['text' => '', 'class' => 'ranking-position'],
-        ['text' => 'Mannschaft', 'class' => 'team border-right-bold'],
-        ['text' => 'MP', 'class' => 'team-points border-left-bold'],
-        ['text' => 'BP', 'class' => 'board-points']
+      ['text' => '', 'class' => 'ranking-position'],
+      ['text' => 'Mannschaft', 'class' => 'team border-right-bold'],
+      ['text' => 'MP', 'class' => 'team-points border-left-bold'],
+      ['text' => 'BP', 'class' => 'board-points']
     ];
 
     // Create header cells for every team numbered from 1 to $team_count
@@ -234,45 +232,45 @@ class RankingService {
 
     foreach ($teams_with_pairings_crosstable as $key => $team) {
       $crosstable_table['body'][$key] = [
-          [
-              'text' => $team['ranking_position'],
-              'class' => 'ranking-position'
-          ],
-          [
-              'text' => $team['team']->nameWithNumber(),
-              'link' => $team['team']->uri(),
-              'class' => 'name border-right-bold',
-          ],
-          [
-              'text' => $team['team_points'],
-              'class' => 'team-points border-left-bold'
-          ],
-          [
-              'text' => $team['board_points'],
-              'class' => 'board-points'
-          ],
+        [
+          'text' => $team['ranking_position'],
+          'class' => 'ranking-position'
+        ],
+        [
+          'text' => $team['team']->nameWithNumber(),
+          'link' => $team['team']->uri(),
+          'class' => 'name border-right-bold',
+        ],
+        [
+          'text' => $team['team_points'],
+          'class' => 'team-points border-left-bold'
+        ],
+        [
+          'text' => $team['board_points'],
+          'class' => 'board-points'
+        ],
       ];
     }
 
     // Create crosstable cells with pairing results
     $results_grid = [];
     foreach ($teams_with_pairings_crosstable as $key => $team) {
-      foreach ($team['crosstable_pairings'] as $pairing_key => $pairing) {
+      foreach ($team->crosstable_pairings as $pairing_key => $pairing) {
         if (!empty($pairing['board_points'])) {
           $results_grid[$key][] = [
-              'text' => $pairing['board_points'],
-              'link' => $pairing['round_uri'],
-              'title' => 'gegen ' . $teams_with_pairings_crosstable[$pairing_key]['team']->nameWithNumber(),
+            'text' => $pairing['board_points'],
+            'link' => $pairing['round_uri'],
+            'title' => 'gegen ' . $teams_with_pairings_crosstable[$pairing_key]['team']->nameWithNumber(),
           ];
         } elseif ($key==$pairing_key) {
           // If the team is paired against itself, make the table cell grey.
           $results_grid[$key][] = [
-              'text' => '',
-              'class' => 'self-pairing'
+            'text' => '',
+            'class' => 'self-pairing'
           ];
         } else {
           $results_grid[$key][] = [
-              'text' => '',
+            'text' => '',
           ];
         }
       }
