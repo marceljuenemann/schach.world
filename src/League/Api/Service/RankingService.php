@@ -191,9 +191,9 @@ class RankingService {
 
       // If the team has the same team and board points as the team before it, it gets the same ranking position
       if (!empty($prev_team_id)) {
-        if ($team->team_points==$teams_with_pairings_crosstable[$prev_team_id]['team_points'] &&
-          $team->board_points==$teams_with_pairings_crosstable[$prev_team_id]['board_points']) {
-          $team->ranking_position = $teams_with_pairings_crosstable[$prev_team_id]['ranking_position'];
+        if ($team->team_points==$teams_with_pairings_crosstable[$prev_team_id]->team_points &&
+          $team->board_points==$teams_with_pairings_crosstable[$prev_team_id]->board_points) {
+          $team->ranking_position = $teams_with_pairings_crosstable[$prev_team_id]->ranking_position;
         } else {
           $team->ranking_position = $array_position;
         }
@@ -204,7 +204,7 @@ class RankingService {
       // We store the current array key for the next iteration in the loop
       $prev_team_id = $key;
     }
-    $crosstable_table = $this->create_crosstable_table($teams_with_pairings_crosstable);
+    //$crosstable_table = $this->create_crosstable_table($teams_with_pairings_crosstable);
     return $teams_with_pairings_crosstable;
   }
 
