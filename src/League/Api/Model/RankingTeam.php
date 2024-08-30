@@ -1,6 +1,6 @@
 <?php
 
-namespace League\Api\Model;
+namespace Nsv\League\Api\Model;
 
 use Nsv\League\Entity\Team;
 

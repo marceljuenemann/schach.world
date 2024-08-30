@@ -6,6 +6,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Nsv\League\Entity\Team;
 use Nsv\League\Entity\Pairing;
 use Doctrine\Persistence\ManagerRegistry;
+use Nsv\League\Api\Model\RankingTeam;
 
 class RankingService {
 
@@ -23,7 +24,9 @@ class RankingService {
     // The ranking_helper array orders all teams into an array keyed by team points
     // on the first level and by board points on the second level.
     $ranking_helper = [];
+    $ranking_helper_2 = [];
     $teams_with_pairings = [];
+    $teams_with_pairings_objects = [];
     foreach ($teams_division as $team) {
       $teams_with_pairings[$team->id]['team'] = $team;
       $pairings = $pairing_repository->findByTeamOnlyPairing($team, $round);
@@ -32,6 +35,16 @@ class RankingService {
       $teams_with_pairings[$team->id]['board_points'] = $this->addBoardPoints($team, $pairings);
       // Sort the teams into the ranking helper array
       $ranking_helper[$this->addTeamPoints($team, $pairings)][(string) $this->addBoardPoints($team, $pairings)][] = $team;
+
+      // Now create each team as an object instance of RankingTeam
+      $rankingTeam = new RankingTeam();
+      $teams_with_pairings_objects[$team->id] = $rankingTeam;
+      $rankingTeam->team = $team;
+      //$pairings = $pairing_repository->findByTeamOnlyPairing($team, $round);
+      $rankingTeam->pairings = $pairings;
+      $rankingTeam->team_points = $this->addTeamPoints($team, $pairings);
+      $rankingTeam->board_points = $this->addBoardPoints($team, $pairings);
+      $ranking_helper_2[$rankingTeam->team_points][(string)$rankingTeam->board_points][$team->id] = $team;
     }
 
     // Now apply direct comparison to teams that are tied by team and board points
