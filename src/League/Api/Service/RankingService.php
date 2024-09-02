@@ -18,10 +18,9 @@ class RankingService {
    * A temporary method to get started
    */
   public function teamsWithPairings($division, $round) {
-    $team_repository = $this->leagueEntityManager->getRepository(Team::class);
     $pairing_repository = $this->leagueEntityManager->getRepository(Pairing::class);
-    $teams_division = $this->getTeamsFromPairings($division);
-
+    $pairings_division = $pairing_repository->findByDivisionWithTeams($division);
+    $teams_division = $this->getTeamsFromPairings($pairings_division);
 
     // The ranking_helper array orders all teams into an array keyed by team points
     // on the first level and by board points on the second level.
@@ -31,7 +30,7 @@ class RankingService {
       // Now create each team as an object instance of RankingTeam
       $rankingTeam = new RankingTeam();
       $rankingTeam->team = $team;
-      $pairings = $pairing_repository->findByTeamOnlyPairing($team, $round);
+      $pairings = $this->getPairingsTeamUntilRound($pairings_division, $team, $round);
       $rankingTeam->pairings = $pairings;
       $rankingTeam->team_points = $this->addTeamPoints($team, $pairings);
       $rankingTeam->board_points = $this->addBoardPoints($team, $pairings);
@@ -70,24 +69,36 @@ class RankingService {
    * division in the team does not match the division we are creating the
    * rankings for.
    */
-  public function getTeamsFromPairings($division) {
-    $pairing_repository = $this->leagueEntityManager->getRepository(Pairing::class);
-    $pairings_division = $pairing_repository->findByDivisionWithTeams($division);
+  public function getTeamsFromPairings($pairings_division) {
     $teams_division = [];
 
     $teams_already_added_ids = [];
     $teams_division = [];
     foreach ($pairings_division as $pairing) {
-      if(!in_array($pairing->team1->id, $teams_already_added_ids)) {
+      if (!in_array($pairing->team1->id, $teams_already_added_ids)) {
         $teams_division[] = $pairing->team1;
         $teams_already_added_ids[] = $pairing->team1->id;
       }
-      if(!in_array($pairing->team2->id, $teams_already_added_ids)) {
+      if (!in_array($pairing->team2->id, $teams_already_added_ids)) {
         $teams_division[] = $pairing->team2;
         $teams_already_added_ids[] = $pairing->team2->id;
       }
     }
     return $teams_division;
+  }
+
+  /**
+   * Get all pairings that the team has played up to
+   * the round that we are viewing.
+   */
+  public function getPairingsTeamUntilRound($pairings_division, $team, $round) {
+    $pairings_team = [];
+    foreach ($pairings_division as $pairing) {
+      if (($pairing->team1==$team || $pairing->team2==$team) && $pairing->round<=$round) {
+        $pairings_team[] = $pairing;
+      }
+    }
+    return $pairings_team;
   }
 
   /**
