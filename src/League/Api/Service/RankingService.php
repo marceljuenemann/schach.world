@@ -20,20 +20,14 @@ class RankingService {
   public function teamsWithPairings($division, $round) {
     $team_repository = $this->leagueEntityManager->getRepository(Team::class);
     $pairing_repository = $this->leagueEntityManager->getRepository(Pairing::class);
-    $teams_division = $team_repository->findByDivision($division);
+    $teams_division = $this->getTeamsFromPairings($division);
+
+
     // The ranking_helper array orders all teams into an array keyed by team points
     // on the first level and by board points on the second level.
     $ranking_helper = [];
     $teams_with_pairings = [];
     foreach ($teams_division as $team) {
-//      $teams_with_pairings[$team->id]['team'] = $team;
-//      $pairings = $pairing_repository->findByTeamOnlyPairing($team, $round);
-//      $teams_with_pairings[$team->id]['pairings'] = $pairings;
-//      $teams_with_pairings[$team->id]['team_points'] = $this->addTeamPoints($team, $pairings);
-//      $teams_with_pairings[$team->id]['board_points'] = $this->addBoardPoints($team, $pairings);
-//      // Sort the teams into the ranking helper array
-//      $ranking_helper[$this->addTeamPoints($team, $pairings)][(string) $this->addBoardPoints($team, $pairings)][] = $team;
-
       // Now create each team as an object instance of RankingTeam
       $rankingTeam = new RankingTeam();
       $rankingTeam->team = $team;
@@ -64,11 +58,36 @@ class RankingService {
       return [$b->team_points, $b->board_points] <=> [$a->team_points, $a->board_points];
     });
     // Sort the pairings for the crosstable display
-    $teams_with_pairings_crosstable = $this->sortPairingsCrosstable($teams_with_pairings);
-
+    $teams_with_pairings = $this->sortPairingsCrosstable($teams_with_pairings);
 
     //return $teams_division;
     return $teams_with_pairings;
+  }
+
+  /**
+   * Get the teams from the pairings of the division.
+   * We get the teams this way because sometimes the entry for the
+   * division in the team does not match the division we are creating the
+   * rankings for.
+   */
+  public function getTeamsFromPairings($division) {
+    $pairing_repository = $this->leagueEntityManager->getRepository(Pairing::class);
+    $pairings_division = $pairing_repository->findByDivisionWithTeams($division);
+    $teams_division = [];
+
+    $teams_already_added_ids = [];
+    $teams_division = [];
+    foreach ($pairings_division as $pairing) {
+      if(!in_array($pairing->team1->id, $teams_already_added_ids)) {
+        $teams_division[] = $pairing->team1;
+        $teams_already_added_ids[] = $pairing->team1->id;
+      }
+      if(!in_array($pairing->team2->id, $teams_already_added_ids)) {
+        $teams_division[] = $pairing->team2;
+        $teams_already_added_ids[] = $pairing->team2->id;
+      }
+    }
+    return $teams_division;
   }
 
   /**

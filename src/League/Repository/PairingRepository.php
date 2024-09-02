@@ -87,6 +87,21 @@ class PairingRepository extends ServiceEntityRepository
   }
 
   /**
+   * Returns all pairings for division, also fetching the teams.
+   */
+  public function findByDivisionWithTeams(Division $division) {
+    return $this->createQueryBuilder('p')
+      ->select('p, t1, t2')
+      ->innerJoin('p.team1', 't1')
+      ->innerJoin('p.team2', 't2')
+      ->where('p.division = :division')
+      ->addOrderBy('p.id', 'ASC')
+      ->setParameter('division', $division)
+      ->getQuery()
+      ->getResult();
+  }
+
+  /**
    * Returns all pairings for the specified Round objects.
    */
   public function findByRounds(array $rounds) {
