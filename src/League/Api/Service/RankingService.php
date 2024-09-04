@@ -30,6 +30,7 @@ class RankingService {
       // Now create each team as an object instance of RankingTeam
       $rankingTeam = new RankingTeam();
       $rankingTeam->team = $team;
+      $rankingTeam->name = $team->nameWithNumber();
       $pairings = $this->getPairingsTeamUntilRound($pairings_division, $team, $round);
       $rankingTeam->pairings = $pairings;
       $rankingTeam->team_points = $this->addTeamPoints($team, $pairings);

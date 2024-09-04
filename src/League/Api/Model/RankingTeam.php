@@ -10,6 +10,7 @@ use Nsv\League\Entity\Team;
  */
 class RankingTeam {
   public Team $team;
+  public string $name;
   public array $pairings;
   public array $crosstable_pairings;
   public int $ranking_position = 0;
