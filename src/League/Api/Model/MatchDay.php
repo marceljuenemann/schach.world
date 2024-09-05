@@ -18,6 +18,7 @@ class MatchDay
 
   public array $pairings = array();
   public ?array $legacyRanking;
+  public ?array $rankingNew;
   public ?string $comment;
   public ?array $lateRegisteredPlayers;
   public ?array $allRounds;

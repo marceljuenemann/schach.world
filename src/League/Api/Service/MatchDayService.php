@@ -26,11 +26,13 @@ class MatchDayService
 
 
   public function matchDay(Entity\Division $division, int $round, callable $legacyRanking) {
-    $rankingService = $this->rankingService;
-    $teams_division = $rankingService->teamsWithPairings($division, $round);
-
     $model = MatchDay::fromRound($division->round($round));
     $model->legacyRanking = $legacyRanking();
+
+    // Add the new ranking
+    $rankingService = $this->rankingService;
+    $ranking_new = $rankingService->teamsWithPairings($division, $round);
+    $model->rankingNew = $ranking_new;
 
     $pairings = $this->pairingRepository->findByRound($division, $round);
     foreach ($pairings as $pairing) {

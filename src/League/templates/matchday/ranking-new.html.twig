@@ -1,0 +1,16 @@
+{% import "macros.html.twig" as nsv %}
+
+<table>
+  <tr>
+    <th>Position</th>
+    <th>ID</th>
+    <th>Team</th>
+  </tr>
+  {% for team in matchDay.rankingNew %}
+    <tr>
+      <td>{{ team.ranking_position }}</td>
+      <td>{{ team.team.id }}</td>
+      <td>{{ team.name }}</td>
+    </tr>
+  {% endfor %}
+</table>

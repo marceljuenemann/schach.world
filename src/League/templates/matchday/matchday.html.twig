@@ -35,6 +35,10 @@
 
   {% include '@league/matchday/ranking.html.twig' %}
 
+  <h3>New ranking</h3>
+
+  {% include '@league/matchday/ranking-new.html.twig' %}
+
   {% if matchDay.comment|default(false) %}
     <div class="mb-4">
       <h6>Anmerkungen</h6>
