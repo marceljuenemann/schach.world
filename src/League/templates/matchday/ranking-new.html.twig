@@ -1,16 +1,33 @@
 {% import "macros.html.twig" as nsv %}
 
-<table>
+<table class="nsv-table borders-bold text-center text-nowrap">
   <tr>
-    <th>Position</th>
-    <th>ID</th>
-    <th>Team</th>
+    <th></th>
+    <th>Mannschaft</th>
+    {% for team_count in matchDay.rankingNew %}
+      <th>{{ loop.index }}</th>
+    {% endfor %}
+    <th>MP</th>
+    <th>BP</th>
   </tr>
-  {% for team in matchDay.rankingNew %}
-    <tr>
-      <td>{{ team.ranking_position }}</td>
-      <td>{{ team.team.id }}</td>
-      <td>{{ team.name }}</td>
-    </tr>
-  {% endfor %}
+
+    {% for team in matchDay.rankingNew %}
+  <tr>
+    <td class="ranking-position">{{ team.ranking_position }}</td>
+    <td class="team-name">{{ team.name }}</td>
+    {% for crosstable_pairing in team.crosstable_pairings %}
+      <td class="crosstable-pairing-{{ loop.index }}">
+        {# @TODO: make sure the variables we render are always set. Inside the array TWIGs strict_variables = false does not apply and empty values give errors. #}
+        {#  {{ crosstable_pairing.board_points }} #}
+      </td>
+    {% endfor %}
+    <td class="team-points">{{ team.team_points }}</td>
+    <td class="board-points">{{ team.board_points }}</td>
+
+  </tr>
+    {% endfor %}
+
 </table>
+<p>&nbsp;</p>
+
+
