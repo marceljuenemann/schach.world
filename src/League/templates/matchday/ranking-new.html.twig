@@ -11,21 +11,28 @@
     <th>BP</th>
   </tr>
 
-    {% for team in matchDay.rankingNew %}
-  <tr>
-    <td class="ranking-position">{{ team.ranking_position }}</td>
-    <td class="team-name">{{ team.name }}</td>
-    {% for crosstable_pairing in team.crosstable_pairings %}
-      <td class="crosstable-pairing-{{ loop.index }}">
-        {# @TODO: make sure the variables we render are always set. Inside the array TWIGs strict_variables = false does not apply and empty values give errors. #}
-        {#  {{ crosstable_pairing.board_points }} #}
-      </td>
-    {% endfor %}
-    <td class="team-points">{{ team.team_points }}</td>
-    <td class="board-points">{{ team.board_points }}</td>
+  {% for team in matchDay.rankingNew %}
+    <tr>
+      <td class="ranking-position">{{ team.ranking_position }}.</td>
+      <td class="team-name text-start">{{ team.name }}</td>
+      {% for crosstable_pairing in team.crosstable_pairings %}
+        {% if crosstable_pairing.board_points == 888 %}
+          <td title="{{  }}" class="crosspairing pairing-{{ loop.index }} self-pairing">
+          </td>
+        {% elseif crosstable_pairing.board_points == 999 %}
+          <td class="crosspairing pairing-{{ loop.index }}">
+          </td>
+        {% else %}
+          <td class="crosspairing pairing-{{ loop.index }}">
+            {{ crosstable_pairing.board_points }}
+          </td>
+        {% endif %}
+      {% endfor %}
+      <td class="team-points">{{ team.team_points }}</td>
+      <td class="board-points">{{ team.board_points }}</td>
 
-  </tr>
-    {% endfor %}
+    </tr>
+  {% endfor %}
 
 </table>
 <p>&nbsp;</p>

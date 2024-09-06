@@ -31,6 +31,7 @@ class RankingService {
       $rankingTeam = new RankingTeam();
       $rankingTeam->team = $team;
       $rankingTeam->name = $team->nameWithNumber();
+      $rankingTeam->uri = $team->uri();
       $pairings = $this->getPairingsTeamUntilRound($pairings_division, $team, $round);
       $rankingTeam->pairings = $pairings;
       $rankingTeam->team_points = $this->addTeamPoints($team, $pairings);
@@ -199,22 +200,29 @@ class RankingService {
     $teams_with_pairings_crosstable = $teams_with_pairings;
     $standings_grid = [];
     foreach ($teams_with_pairings_crosstable as $key => $team) {
-      $standings_grid[$key] = [];
+      // Initialize all games with 999 board points, so this
+      // is the number for not yet played and it is not empty so TWIG does not
+      // throw an error when calling it.
+      $standings_grid[$key] = ['board_points' => 999];
     }
     $prev_team_id = 0;
     foreach ($teams_with_pairings_crosstable as $key => &$team) {
       $team->ranking_position = 0;
       $team->crosstable_pairings = $standings_grid;
+      // Mark the game against oneself with 888 board points.
+      $team->crosstable_pairings[$team->team->id]['board_points'] = 888;
       foreach ($team->pairings as $pairing) {
         if ($pairing->team1->id==$team->team->id) {
           $opponent_id = $pairing->team2->id;
           $team->crosstable_pairings[$opponent_id]['board_points'] = $pairing->result1;
           $team->crosstable_pairings[$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
+          $team->crosstable_pairings[$opponent_id]['title_text'] = 'gegen ' . $pairing->team2->nameWithNumber();
         }
         if ($pairing->team2->id==$team->team->id) {
           $opponent_id = $pairing->team1->id;
           $team->crosstable_pairings[$opponent_id]['board_points'] = $pairing->result2;
           $team->crosstable_pairings[$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
+          $team->crosstable_pairings[$opponent_id]['title_text'] = 'gegen ' . $pairing->team1->nameWithNumber();
         }
       }
       // Also add the ranking number to each team

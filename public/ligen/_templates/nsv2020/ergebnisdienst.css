@@ -292,4 +292,12 @@ div.sed_infomeldung {
   padding: 10px;
   padding-left: 42px;
   width: 75%;
-}       
+}
+
+/*******************/
+/*** Ranking New ***/
+/*******************/
+table.nsv-table td.crosspairing.self-pairing {
+  background: #ddd;
+  min-width: 34px;
+}
