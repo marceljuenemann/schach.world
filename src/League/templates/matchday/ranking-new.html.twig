@@ -3,32 +3,32 @@
 <table class="nsv-table borders-bold text-center text-nowrap">
   <tr>
     <th></th>
-    <th>Mannschaft</th>
+    <th class="team-name border-right-bold">Mannschaft</th>
     {% for team_count in matchDay.rankingNew %}
-      <th>{{ loop.index }}</th>
+      <th class="crosspairing pairing-{{ loop.index }}">{{ loop.index }}</th>
     {% endfor %}
-    <th>MP</th>
-    <th>BP</th>
+    <th class="team-points border-left-bold">MP</th>
+    <th class="board-points">BP</th>
   </tr>
 
   {% for team in matchDay.rankingNew %}
     <tr>
       <td class="ranking-position">{{ team.ranking_position }}.</td>
-      <td class="team-name text-start">{{ team.name }}</td>
+      <td class="team-name text-start border-right-bold"><a href="{{ team.uri }}">{{ team.name }}</a></td>
       {% for crosstable_pairing in team.crosstable_pairings %}
         {% if crosstable_pairing.board_points == 888 %}
-          <td title="{{  }}" class="crosspairing pairing-{{ loop.index }} self-pairing">
+          <td class="crosspairing pairing-{{ loop.index }} self-pairing">
           </td>
         {% elseif crosstable_pairing.board_points == 999 %}
           <td class="crosspairing pairing-{{ loop.index }}">
           </td>
         {% else %}
-          <td class="crosspairing pairing-{{ loop.index }}">
-            {{ crosstable_pairing.board_points }}
+          <td {{ nsv.tooltip(crosstable_pairing.title_text) }} class="crosspairing pairing-{{ loop.index }}">
+            <a href="{{ crosstable_pairing.round_uri }}">{{ crosstable_pairing.board_points }}</a>
           </td>
         {% endif %}
       {% endfor %}
-      <td class="team-points">{{ team.team_points }}</td>
+      <td class="team-points border-left-bold">{{ team.team_points }}</td>
       <td class="board-points">{{ team.board_points }}</td>
 
     </tr>
