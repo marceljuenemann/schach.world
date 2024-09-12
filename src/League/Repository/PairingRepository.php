@@ -76,7 +76,8 @@ class PairingRepository extends ServiceEntityRepository
    */
   public function findByDivisionWithTeams(Division $division) {
     return $this->createQueryBuilder('p')
-      ->select('p, t1, t2')
+      ->select('p, g, t1, t2')
+      ->leftJoin('p.games', 'g')
       ->innerJoin('p.team1', 't1')
       ->innerJoin('p.team2', 't2')
       ->where('p.division = :division')
