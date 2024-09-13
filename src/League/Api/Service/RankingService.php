@@ -181,7 +181,7 @@ class RankingService {
    * Return the team points a team won against another team
    * in the current season in the current division
    */
-  public function teamPointsAgainstTeam($team, $round) {
+  public function getMPvs($team) {
 
   }
 
@@ -189,7 +189,7 @@ class RankingService {
    * Return the board points a team won against another team
    * in the current season in the current division
    */
-  public function boardPointsAgainstTeam($team, $round) {
+  public function getBPvs($team) {
 
   }
 
