@@ -9,10 +9,14 @@ use Nsv\League\Entity\Team;
 
 class RankingServiceTest extends KernelTestCase {
 
-  public $teamsWithPairings;
+  public $rankingService;
+
   public function setUp(): void {
     self::bootKernel();
+    $this->rankingService = self::getContainer()->get(RankingService::class);
+  }
 
+  public function createTeamsData() {
     $team1 = new Team();
     $team1->id = 1;
     $team1->name = 'Panthers';
@@ -50,16 +54,23 @@ class RankingServiceTest extends KernelTestCase {
     $team2->pairings = [$pairing2, $pairing3];
     $team3->pairings = [$pairing1, $pairing2];
 
-    $this->teamsWithPairings = [$team1, $team2, $team3];
+    return [$team1, $team2, $team3];
   }
 
+  /**
+   * @dataProvider teamPairingsDataProvider
+   */
+  public function testGetMpvs(string $teamIsSet, string $teamIsOpponent, Pairing $pairing, float $expectedResult) {
+    $getMPvs = $this->rankingService->getMpvs();
+    $actual_points = $pairing->result1;
+    $points_from_method = $teamIsSet->$getMPvs($teamIsOpponent);
+    //self::
+  }
 
-  public function testGetMpvs() {
-    $teamsWithPairings = $this->teamsWithPairings;
+  public function getMpvsDataProvider() {
+    $teamsWithPairings = $this->createTeamsData();
 
-    $ulter = 2;
-
-
+    yield 'team1 against team3 team points' => ['team1', 'team3', $teamsWithPairings[0], 2.5];
 
   }
 
