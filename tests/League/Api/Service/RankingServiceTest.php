@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Nsv\League\Api\Service\RankingService;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Team;
-
+use Nsv\League\Api\Model\RankingTeam;
 class RankingServiceTest extends KernelTestCase {
 
   public $rankingService;
@@ -17,17 +17,23 @@ class RankingServiceTest extends KernelTestCase {
   }
 
   public function createTeamsData() {
-    $team1 = new Team();
-    $team1->id = 1;
-    $team1->name = 'Panthers';
+    $team1_team = new Team();
+    $team1 = new RankingTeam();
+    $team1->team = $team1_team;
+    $team1->team->id = 1;
+    $team1->team->name = 'Panthers';
 
-    $team2 = new Team();
-    $team2->id = 2;
-    $team2->name = 'Sharks';
+    $team2_team = new Team();
+    $team2 = new RankingTeam();
+    $team2->team = $team2_team;
+    $team2->team->id = 2;
+    $team2->team->name = 'Sharks';
 
-    $team3 = new Team();
-    $team3->id = 3;
-    $team3->name = 'Tigers';
+    $team3_team = new Team();
+    $team3 = new RankingTeam();
+    $team3->team = $team3_team;
+    $team3->team->id = 3;
+    $team3->team->name = 'Tigers';
 
     $pairing1 = new Pairing();
     $pairing1->id = 1;
@@ -60,16 +66,16 @@ class RankingServiceTest extends KernelTestCase {
   /**
    * @dataProvider teamPairingsDataProvider
    */
-  public function testGetMpvs(string $teamIsSet, string $teamIsOpponent, Pairing $pairing, float $expectedResult) {
+  public function testGetMpvs(RankingTeam $teamCurrent, RankingTeam $teamOpponent, float $expectedResult) {
 
-    $points_from_method = $this->rankingService->getMpvs($teamIsSet, $teamIsOpponent, $pairings);
+    $points_from_method = $this->rankingService->getMpvs($teamCurrent, $teamOpponent);
     //self::
   }
 
-  public function getMpvsDataProvider() {
+  public function teamPairingsDataProvider() {
     $teamsWithPairings = $this->createTeamsData();
 
-    yield 'team1 against team3 team points' => ['team1', 'team3', $teamsWithPairings[0], 2.5];
+    yield 'team1 against team3 team points' => [$teamsWithPairings[0], $teamsWithPairings[2], 2.5];
 
   }
 

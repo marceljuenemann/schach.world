@@ -190,12 +190,13 @@ class RankingService {
    * in the current season in the current division
    */
   public function getMPvs($teamCurrent, $teamOpponent) {
+    // @TODO What if result1 or result2 is null?
     $teamOpponentId = $teamOpponent->team->id;
     foreach ($teamCurrent->pairings as $pairing) {
       if ($pairing->team1->id==$teamOpponentId) {
-        return $pairing->result2;
+        return $this->teamPointsFromResult($pairing->result2, $pairing->result1);
       } elseif ($pairing->team2->id==$teamOpponentId) {
-        return $pairing->result1;
+        return $this->teamPointsFromResult($pairing->result1, $pairing->result2);
       }
     }
   }
