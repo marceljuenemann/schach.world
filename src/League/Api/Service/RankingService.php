@@ -37,7 +37,7 @@ class RankingService {
       $rankingTeam->team_points = $this->addTeamPoints($team, $pairings);
       $rankingTeam->board_points = $this->addBoardPoints($team, $pairings);
       $teams_with_pairings[$team->id] = $rankingTeam;
-      $ranking_helper[$rankingTeam->team_points][(string) $rankingTeam->board_points][$team->id] = $team;
+      $ranking_helper[$rankingTeam->team_points][(string) $rankingTeam->board_points][$team->id] = $rankingTeam;
     }
 
     // Now apply direct comparison to teams that are tied by team and board points
@@ -96,7 +96,7 @@ class RankingService {
   public function getPairingsTeamUntilRound($pairings_division, $team, $round) {
     $pairings_team = [];
     foreach ($pairings_division as $pairing) {
-      if (($pairing->team1==$team || $pairing->team2==$team) && $pairing->round<=$round) {
+      if (($pairing->team1==$team || $pairing->team2==$team) && $pairing->round <= $round) {
         $pairings_team[] = $pairing;
       }
     }
@@ -165,31 +165,39 @@ class RankingService {
   public function directComparison($bptied) {
     // We are not interested in the points the teams won totally,
     // we want only the points they won against the teams they are tied with.
-    $directComparisonPoints = [];
-    foreach ($bptied as $a => $tied_team) {
+
+    $rankingHelperDirect = [];
+    $mp = [];// mid => mp
+    $bp = []; // mid => bp
+    $bw = [];
+    foreach ($bptied as $mid1 => $tied_team) {
       // loop over all possible matchups
       // we can follow the old method direkterVergleich() quite closely here.
       // We build another $ranking_helper() array, only this time we only use
       // the points gained against the tied teams like described above.
-      for ($a = 0; $a < count($bptied); ++$a) {
-
+      foreach ($bptied as $mid2 => $opponent_team) {
+        if ($mid1==$mid2) {
+          continue;
+        }
+        $mp[$mid1] = getMPvs($bptied[$mid1], $bptied[$mid1]);
       }
     }
+    $sullo = 'obi';
   }
 
   /**
    * Return the team points a team won against another team
    * in the current season in the current division
    */
-  public function getMPvs($team) {
-
+  public function getMPvs($teamCurrent, $teamOpponent) {
+    
   }
 
   /**
    * Return the board points a team won against another team
    * in the current season in the current division
    */
-  public function getBPvs($team) {
+  public function getBPvs($teamCurrent, $teamOpponent, $pairings) {
 
   }
 

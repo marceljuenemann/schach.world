@@ -61,9 +61,8 @@ class RankingServiceTest extends KernelTestCase {
    * @dataProvider teamPairingsDataProvider
    */
   public function testGetMpvs(string $teamIsSet, string $teamIsOpponent, Pairing $pairing, float $expectedResult) {
-    $getMPvs = $this->rankingService->getMpvs();
-    $actual_points = $pairing->result1;
-    $points_from_method = $teamIsSet->$getMPvs($teamIsOpponent);
+
+    $points_from_method = $this->rankingService->getMpvs($teamIsSet, $teamIsOpponent, $pairings);
     //self::
   }
 
