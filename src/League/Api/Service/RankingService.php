@@ -179,7 +179,7 @@ class RankingService {
         if ($mid1==$mid2) {
           continue;
         }
-        $mp[$mid1] = getMPvs($bptied[$mid1], $bptied[$mid1]);
+        $mp[$mid1] = $this->getMPvs($bptied[$mid1], $bptied[$mid1]);
       }
     }
     $sullo = 'obi';
@@ -190,7 +190,14 @@ class RankingService {
    * in the current season in the current division
    */
   public function getMPvs($teamCurrent, $teamOpponent) {
-    
+    $teamOpponentId = $teamOpponent->team->id;
+    foreach ($teamCurrent->pairings as $pairing) {
+      if ($pairing->team1->id==$teamOpponentId) {
+        return $pairing->result2;
+      } elseif ($pairing->team2->id==$teamOpponentId) {
+        return $pairing->result1;
+      }
+    }
   }
 
   /**
