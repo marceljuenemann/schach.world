@@ -204,7 +204,7 @@ class RankingService {
    * Return the team points a team won against another team
    * in the current season in the current division
    */
-  public function getMPvs($teamCurrent, $teamOpponent) {
+  public function getMPvs(RankingTeam $teamCurrent, RankingTeam $teamOpponent) {
     // @TODO What if result1 or result2 is null?
     $teamOpponentId = $teamOpponent->team->id;
     foreach ($teamCurrent->pairings as $pairing) {

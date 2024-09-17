@@ -7,6 +7,7 @@ use Nsv\League\Api\Service\RankingService;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Team;
 use Nsv\League\Api\Model\RankingTeam;
+
 class RankingServiceTest extends KernelTestCase {
 
   public $rankingService;
@@ -16,6 +17,9 @@ class RankingServiceTest extends KernelTestCase {
     $this->rankingService = self::getContainer()->get(RankingService::class);
   }
 
+  /**
+   * Create some RankingTeam Objects with teams and pairings.
+   */
   public function createTeamsData() {
     $team1_team = new Team();
     $team1 = new RankingTeam();
@@ -37,22 +41,22 @@ class RankingServiceTest extends KernelTestCase {
 
     $pairing1 = new Pairing();
     $pairing1->id = 1;
-    $pairing1->team1 = $team1;
-    $pairing1->team2 = $team3;
+    $pairing1->team1 = $team1->team;
+    $pairing1->team2 = $team3->team;
     $pairing1->result1 = floatval(2.5);
     $pairing1->result2 = floatval(5.5);
 
     $pairing2 = new Pairing();
     $pairing2->id = 1;
-    $pairing2->team1 = $team3;
-    $pairing2->team2 = $team2;
+    $pairing2->team1 = $team3->team;
+    $pairing2->team2 = $team2->team;
     $pairing2->result1 = floatval(4);
     $pairing2->result2 = floatval(4);
 
     $pairing3 = new Pairing();
     $pairing3->id = 1;
-    $pairing3->team1 = $team2;
-    $pairing3->team2 = $team1;
+    $pairing3->team1 = $team2->team;
+    $pairing3->team2 = $team1->team;
     $pairing3->result1 = floatval(3.5);
     $pairing3->result2 = floatval(4.5);
 
@@ -65,18 +69,20 @@ class RankingServiceTest extends KernelTestCase {
 
   /**
    * @dataProvider teamPairingsDataProvider
+   *
+   * Test the Method getMPvs if the right team points are returned.
    */
-  public function testGetMpvs(RankingTeam $teamCurrent, RankingTeam $teamOpponent, float $expectedResult) {
-
+  public function testGetMpvs(RankingTeam $teamCurrent, RankingTeam $teamOpponent, int $expectedResult) {
     $points_from_method = $this->rankingService->getMpvs($teamCurrent, $teamOpponent);
-    //self::
+    self::assertSame($expectedResult, $points_from_method);
   }
 
   public function teamPairingsDataProvider() {
     $teamsWithPairings = $this->createTeamsData();
 
-    yield 'team1 against team3 team points' => [$teamsWithPairings[0], $teamsWithPairings[2], 2.5];
-
+    yield 'team1 against team3 team points' => [$teamsWithPairings[0], $teamsWithPairings[2], 0];
+    yield 'team2 against team3 team points' => [$teamsWithPairings[1], $teamsWithPairings[2], 1];
+    yield 'team1 against team2 team points' => [$teamsWithPairings[0], $teamsWithPairings[1], 2];
   }
 
 
