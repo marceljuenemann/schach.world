@@ -42,6 +42,8 @@ class TeamRepository extends ServiceEntityRepository
 
   /**
    * Find all teams in a division
+   * We use this to find teams who are part of a division
+   * but are not part of any pairings.
    */
   public function findByDivision(Division $division) {
     return $this->createQueryBuilder('team')

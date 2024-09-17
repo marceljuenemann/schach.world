@@ -15,12 +15,27 @@ class RankingService {
   }
 
   /**
+   *  A short comparison method for array_udiff to find objects in array2,
+   *  that are not in array1
+   */
+  public function compare_team_by_id($team1, $team2) {
+    return($team1->id - $team2->id);
+  }
+
+  /**
    * A temporary method to get started
    */
   public function teamsWithPairings($division, $round) {
     $pairing_repository = $this->leagueEntityManager->getRepository(Pairing::class);
     $pairings_division = $pairing_repository->findByDivisionWithTeams($division);
     $teams_division = $this->getTeamsFromPairings($pairings_division);
+    // If a team is registered for the league but is not part of any pairings, we still want to display it.
+    $teams_from_division = $this->leagueEntityManager->getRepository(Team::class)->findByDivision($division);
+    $teams_no_pairings = array_udiff($teams_from_division, $teams_division,  [$this, 'compare_team_by_id']);
+    // If there are teams with no pairings, merge them into $teams_division
+    if(!empty($teams_no_pairings)) {
+      $teams_division = array_merge($teams_division, $teams_no_pairings);
+    }
 
     // The ranking_helper array orders all teams into an array keyed by team points
     // on the first level and by board points on the second level.
