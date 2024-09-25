@@ -7,10 +7,12 @@ use Nsv\League\Entity\Team;
 use Nsv\League\Entity\Pairing;
 use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Api\Model\RankingTeam;
+use Nsv\League\Core\Result;
+use Nsv\League\Core\Encoding;
 
 class RankingService {
 
-  public function __construct(private EntityManagerInterface $leagueEntityManager) {
+  public function __construct(private EntityManagerInterface $leagueEntityManager, private Encoding $encoding) {
 
   }
 
@@ -64,9 +66,10 @@ class RankingService {
         // we need to apply a direct comparison for fine ranking
         // We use the same basic method as in the legacy tabelle.inc.php
         if (count($bptied) > 1) {
-          $bptied = $this->directComparison($bptied);
+          $bptied = $this->directComparison($bptied, $division);
         }
       }
+      $wutti = 'watte';
     }
 
     // Sort the teams by team_points and after that by board_points.
@@ -177,7 +180,7 @@ class RankingService {
   /**
    * Do a direct comparison to sort (fine ranking) tied teams.
    */
-  public function directComparison($bptied) {
+  public function directComparison($bptied, $division) {
     // We are not interested in the points the teams won totally,
     // we want only the points they won against the teams they are tied with.
 
@@ -194,7 +197,9 @@ class RankingService {
         if ($mid1==$mid2) {
           continue;
         }
-        $mp[$mid1] = $this->getMPvs($bptied[$mid1], $bptied[$mid1]);
+        $mp[$mid1] = $this->getMPvs($bptied[$mid1], $bptied[$mid2]);
+        $bp[$mid1] = $this->getBPvs($bptied[$mid1], $bptied[$mid2]);
+        $bw[$mid1] = $this->berlinerWertung($bptied[$mid1], $bptied[$mid2], $division);
       }
     }
     $sullo = 'obi';
@@ -205,7 +210,6 @@ class RankingService {
    * in the current season in the current division
    */
   public function getMPvs(RankingTeam $teamCurrent, RankingTeam $teamOpponent) {
-    // @TODO What if result1 or result2 is null?
     $teamOpponentId = $teamOpponent->team->id;
     foreach ($teamCurrent->pairings as $pairing) {
       if ($pairing->team1->id==$teamOpponentId) {
@@ -220,8 +224,40 @@ class RankingService {
    * Return the board points a team won against another team
    * in the current season in the current division
    */
-  public function getBPvs($teamCurrent, $teamOpponent, $pairings) {
+  public function getBPvs(RankingTeam $teamCurrent, RankingTeam $teamOpponent) {
+    // @TODO What if result1 or result2 is null?
+    $teamOpponentId = $teamOpponent->team->id;
+    foreach ($teamCurrent->pairings as $pairing) {
+      if ($pairing->team1->id==$teamOpponentId) {
+        return $pairing->result2;
+      } elseif ($pairing->team2->id==$teamOpponentId) {
+        return $pairing->result1;
+      }
+    }
+  }
 
+  public function berlinerWertung(RankingTeam $teamCurrent, RankingTeam $teamOpponent, $division) {
+    $teamOpponentId = $teamOpponent->team->id;
+    foreach ($teamCurrent->pairings as $pairing) {
+      $berlinScore = floatval(0.0);
+      $board_count = $division->config('boardCount');
+      if ($pairing->team1->id==$teamOpponentId) {
+        foreach($pairing->games as $game) {
+          $board = $game->board;
+          $multiplier = $board_count - $board + 1;
+          $result2 = $game->result2;
+          $berlinScore += Result::score($result2) * $multiplier;
+        }
+      } elseif ($pairing->team2->id==$teamOpponentId) {
+        foreach($pairing->games as $game) {
+          $board = $game->board;
+          $multiplier = $board_count - $board + 1;
+          $result1 = $game->result1;
+          $berlinScore += Result::score($result1) * $multiplier;
+        }
+      }
+    }
+    return $berlinScore;
   }
 
   /**
