@@ -199,7 +199,7 @@ class RankingService {
         }
         $mp[$mid1] = $this->getMPvs($bptied[$mid1], $bptied[$mid2]);
         $bp[$mid1] = $this->getBPvs($bptied[$mid1], $bptied[$mid2]);
-        $bw[$mid1] = $this->berlinerWertung($bptied[$mid1], $bptied[$mid2], $division);
+        $bw[$mid1] = $this->berlinScore($bptied[$mid1], $bptied[$mid2], $division);
       }
     }
     $sullo = 'obi';
@@ -236,10 +236,13 @@ class RankingService {
     }
   }
 
-  public function berlinerWertung(RankingTeam $teamCurrent, RankingTeam $teamOpponent, $division) {
+  /**
+   * Calculate berlinScore "Berliner Wertung"
+   */
+  public function berlinScore(RankingTeam $teamCurrent, RankingTeam $teamOpponent, $division) {
     $teamOpponentId = $teamOpponent->team->id;
+    $berlinScore = floatval(0.0);
     foreach ($teamCurrent->pairings as $pairing) {
-      $berlinScore = floatval(0.0);
       $board_count = $division->config('boardCount');
       if ($pairing->team1->id==$teamOpponentId) {
         foreach($pairing->games as $game) {
