@@ -85,5 +85,23 @@ class RankingServiceTest extends KernelTestCase {
     yield 'team1 against team2 team points' => [$teamsWithPairings[0], $teamsWithPairings[1], 2];
   }
 
+  /**
+   * @dataProvider teamPairingsBpDataProvider
+   *
+   * Test the Method getBPvs if the right team points are returned.
+   */
+  public function testGetBPvs(RankingTeam $teamCurrent, RankingTeam $teamOpponent, float $expectedResult) {
+    $points_from_method = $this->rankingService->getMpvs($teamCurrent, $teamOpponent);
+    self::assertSame($expectedResult, $points_from_method);
+  }
+
+  public function teamPairingsBpDataProvider() {
+    $teamsWithPairings = $this->createTeamsData();
+
+    yield 'team1 against team3 board points' => [$teamsWithPairings[0], $teamsWithPairings[2], 2.5];
+    yield 'team2 against team3 board points' => [$teamsWithPairings[1], $teamsWithPairings[2], 4.0];
+    yield 'team1 against team2 board points' => [$teamsWithPairings[0], $teamsWithPairings[1], 4.5];
+  }
+
 
 }
