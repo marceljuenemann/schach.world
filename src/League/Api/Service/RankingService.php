@@ -12,16 +12,14 @@ use Nsv\League\Core\Encoding;
 
 class RankingService {
 
-  public function __construct(private EntityManagerInterface $leagueEntityManager, private Encoding $encoding) {
-
-  }
+  public function __construct(private EntityManagerInterface $leagueEntityManager, private Encoding $encoding) {}
 
   /**
    *  A short comparison method for array_udiff to find objects in array2,
    *  that are not in array1
    */
   public function compare_team_by_id($team1, $team2) {
-    return($team1->id - $team2->id);
+    return ($team1->id - $team2->id);
   }
 
   /**
@@ -33,9 +31,9 @@ class RankingService {
     $teams_division = $this->getTeamsFromPairings($pairings_division);
     // If a team is registered for the league but is not part of any pairings, we still want to display it.
     $teams_from_division = $this->leagueEntityManager->getRepository(Team::class)->findByDivision($division);
-    $teams_no_pairings = array_udiff($teams_from_division, $teams_division,  [$this, 'compare_team_by_id']);
+    $teams_no_pairings = array_udiff($teams_from_division, $teams_division, [$this, 'compare_team_by_id']);
     // If there are teams with no pairings, merge them into $teams_division
-    if(!empty($teams_no_pairings)) {
+    if (!empty($teams_no_pairings)) {
       $teams_division = array_merge($teams_division, $teams_no_pairings);
     }
 
@@ -59,21 +57,24 @@ class RankingService {
 
     // Now apply direct comparison to teams that are tied by team and board points
     // inside the $ranking_helper array
+    krsort($ranking_helper);
     foreach ($ranking_helper as &$mptied) {
+      krsort($mptied);
       foreach ($mptied as &$bptied) {
         // If there is more than one team inside
         // a $bptied group, those teams are tied and
         // we need to apply a direct comparison for fine ranking
         // We use the same basic method as in the legacy tabelle.inc.php
         if (count($bptied) > 1) {
-          $bptied = $this->directComparison($bptied, $division);
+          $ranking_helper_direct = $this->directComparison($bptied, $division);
+          $wutti = 'watte';
         }
       }
-      $wutti = 'watte';
+
     }
 
     // Sort the teams by team_points and after that by board_points.
-    uasort($teams_with_pairings, function ($a, $b) {
+    uasort($teams_with_pairings, function($a, $b) {
       return [$b->team_points, $b->board_points] <=> [$a->team_points, $a->board_points];
     });
     // Sort the pairings for the crosstable display
@@ -114,7 +115,7 @@ class RankingService {
   public function getPairingsTeamUntilRound($pairings_division, $team, $round) {
     $pairings_team = [];
     foreach ($pairings_division as $pairing) {
-      if (($pairing->team1==$team || $pairing->team2==$team) && $pairing->round <= $round) {
+      if (($pairing->team1 == $team || $pairing->team2 == $team) && $pairing->round <= $round) {
         $pairings_team[] = $pairing;
       }
     }
@@ -127,10 +128,10 @@ class RankingService {
   public function addTeamPoints($team, array $pairings) {
     $team_points = (int) 0;
     foreach ($pairings as $pairing) {
-      if ($pairing->team1->id==$team->id) {
+      if ($pairing->team1->id == $team->id) {
         $team_points += $this->teamPointsFromResult($pairing->result1, $pairing->result2);
       }
-      if ($pairing->team2->id==$team->id) {
+      if ($pairing->team2->id == $team->id) {
         $team_points += $this->teamPointsFromResult($pairing->result2, $pairing->result1);
       }
     }
@@ -143,10 +144,10 @@ class RankingService {
   public function addBoardPoints($team, array $pairings) {
     $board_points = (float) 0;
     foreach ($pairings as $pairing) {
-      if ($pairing->team1->id==$team->id) {
+      if ($pairing->team1->id == $team->id) {
         $board_points += $pairing->result1;
       }
-      if ($pairing->team2->id==$team->id) {
+      if ($pairing->team2->id == $team->id) {
         $board_points += $pairing->result2;
       }
     }
@@ -171,7 +172,7 @@ class RankingService {
       $team_points = 0;
     }
     // Draw
-    if ($result1==$result2 && !empty($result1)) {
+    if ($result1 == $result2 && !empty($result1)) {
       $team_points = 1;
     }
     return $team_points;
@@ -194,15 +195,16 @@ class RankingService {
       // We build another $ranking_helper() array, only this time we only use
       // the points gained against the tied teams like described above.
       foreach ($bptied as $mid2 => $opponent_team) {
-        if ($mid1==$mid2) {
+        if ($mid1 == $mid2) {
           continue;
         }
         $mp[$mid1] = $this->getMPvs($bptied[$mid1], $bptied[$mid2]);
         $bp[$mid1] = $this->getBPvs($bptied[$mid1], $bptied[$mid2]);
         $bw[$mid1] = $this->berlinScore($bptied[$mid1], $bptied[$mid2], $division);
       }
+      $rankingHelperDirect[$mp[$mid1]][(string) $bp[$mid1]][(string) $bw[$mid1]][] = $tied_team;
     }
-    $sullo = 'obi';
+    return $rankingHelperDirect;
   }
 
   /**
@@ -212,9 +214,9 @@ class RankingService {
   public function getMPvs(RankingTeam $teamCurrent, RankingTeam $teamOpponent) {
     $teamOpponentId = $teamOpponent->team->id;
     foreach ($teamCurrent->pairings as $pairing) {
-      if ($pairing->team1->id==$teamOpponentId) {
+      if ($pairing->team1->id == $teamOpponentId) {
         return $this->teamPointsFromResult($pairing->result2, $pairing->result1);
-      } elseif ($pairing->team2->id==$teamOpponentId) {
+      } elseif ($pairing->team2->id == $teamOpponentId) {
         return $this->teamPointsFromResult($pairing->result1, $pairing->result2);
       }
     }
@@ -228,9 +230,9 @@ class RankingService {
     // @TODO What if result1 or result2 is null?
     $teamOpponentId = $teamOpponent->team->id;
     foreach ($teamCurrent->pairings as $pairing) {
-      if ($pairing->team1->id==$teamOpponentId) {
+      if ($pairing->team1->id == $teamOpponentId) {
         return $pairing->result2;
-      } elseif ($pairing->team2->id==$teamOpponentId) {
+      } elseif ($pairing->team2->id == $teamOpponentId) {
         return $pairing->result1;
       }
     }
@@ -244,15 +246,15 @@ class RankingService {
     $berlinScore = floatval(0.0);
     foreach ($teamCurrent->pairings as $pairing) {
       $board_count = $division->config('boardCount');
-      if ($pairing->team1->id==$teamOpponentId) {
-        foreach($pairing->games as $game) {
+      if ($pairing->team1->id == $teamOpponentId) {
+        foreach ($pairing->games as $game) {
           $board = $game->board;
           $multiplier = $board_count - $board + 1;
           $result2 = $game->result2;
           $berlinScore += Result::score($result2) * $multiplier;
         }
-      } elseif ($pairing->team2->id==$teamOpponentId) {
-        foreach($pairing->games as $game) {
+      } elseif ($pairing->team2->id == $teamOpponentId) {
+        foreach ($pairing->games as $game) {
           $board = $game->board;
           $multiplier = $board_count - $board + 1;
           $result1 = $game->result1;
@@ -282,13 +284,13 @@ class RankingService {
       // Mark the game against oneself with 888 board points.
       $team->crosstable_pairings[$team->team->id]['board_points'] = 888;
       foreach ($team->pairings as $pairing) {
-        if ($pairing->team1->id==$team->team->id) {
+        if ($pairing->team1->id == $team->team->id) {
           $opponent_id = $pairing->team2->id;
           $team->crosstable_pairings[$opponent_id]['board_points'] = $pairing->result1;
           $team->crosstable_pairings[$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
           $team->crosstable_pairings[$opponent_id]['title_text'] = 'gegen ' . $pairing->team2->nameWithNumber();
         }
-        if ($pairing->team2->id==$team->team->id) {
+        if ($pairing->team2->id == $team->team->id) {
           $opponent_id = $pairing->team1->id;
           $team->crosstable_pairings[$opponent_id]['board_points'] = $pairing->result2;
           $team->crosstable_pairings[$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
@@ -300,8 +302,8 @@ class RankingService {
 
       // If the team has the same team and board points as the team before it, it gets the same ranking position
       if (!empty($prev_team_id)) {
-        if ($team->team_points==$teams_with_pairings_crosstable[$prev_team_id]->team_points &&
-          $team->board_points==$teams_with_pairings_crosstable[$prev_team_id]->board_points) {
+        if ($team->team_points == $teams_with_pairings_crosstable[$prev_team_id]->team_points &&
+          $team->board_points == $teams_with_pairings_crosstable[$prev_team_id]->board_points) {
           $team->ranking_position = $teams_with_pairings_crosstable[$prev_team_id]->ranking_position;
         } else {
           $team->ranking_position = $array_position;
