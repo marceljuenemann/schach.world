@@ -186,6 +186,7 @@ class RankingService {
     // we want only the points they won against the teams they are tied with.
 
     $rankingHelperDirect = [];
+    $teamsAfterDirectComparison = [];
     $mp = [];// mid => mp
     $bp = []; // mid => bp
     $bw = [];
@@ -202,9 +203,37 @@ class RankingService {
         $bp[$mid1] = $this->getBPvs($bptied[$mid1], $bptied[$mid2]);
         $bw[$mid1] = $this->berlinScore($bptied[$mid1], $bptied[$mid2], $division);
       }
-      $rankingHelperDirect[$mp[$mid1]][(string) $bp[$mid1]][(string) $bw[$mid1]][] = $tied_team;
+      $rankingHelperDirect[$mp[$mid1]][(string) $bp[$mid1]][(string) $bw[$mid1]][$mid1] = $tied_team;
+      // Now sort $rankingHelperDirect
+      // First sort by team points
+      krsort($rankingHelperDirect);
+      foreach ($rankingHelperDirect as &$mptied1) {
+        krsort($mptied1);
+
+        foreach ($mptied1 as &$bptied1) {
+
+          krsort($bptied1);
+          // If there is more than one team inside a berlin score,
+          // those two teams are still tied after applying the berlin score.
+          foreach ($bptied1 as &$berlin) {
+
+              foreach($berlin as $berlinTeam) {
+                if(count($berlin) > 1) {
+                  $berlinTeam->tied_after_berlin = TRUE;
+                }
+
+                 // @TODO: The teams are not yet returned in the correct order
+                 // in $teamsAfterDirectComparison. Find out why and correct.
+                $teamsAfterDirectComparison[$berlinTeam->team->id] = $berlinTeam;
+              }
+            }
+
+        }
+      }
+      // It might be that the teams are still tied even after applying the berinScore.
+      // We need to communicate back if this is the case
     }
-    return $rankingHelperDirect;
+    return $teamsAfterDirectComparison;
   }
 
   /**
@@ -279,7 +308,7 @@ class RankingService {
     }
     $prev_team_id = 0;
     foreach ($teams_with_pairings_crosstable as $key => &$team) {
-      $team->ranking_position = 0;
+      //$team->ranking_position = 0;
       $team->crosstable_pairings = $standings_grid;
       // Mark the game against oneself with 888 board points.
       $team->crosstable_pairings[$team->team->id]['board_points'] = 888;
@@ -301,16 +330,16 @@ class RankingService {
       $array_position = array_search($key, array_keys($teams_with_pairings_crosstable)) + 1;
 
       // If the team has the same team and board points as the team before it, it gets the same ranking position
-      if (!empty($prev_team_id)) {
-        if ($team->team_points == $teams_with_pairings_crosstable[$prev_team_id]->team_points &&
-          $team->board_points == $teams_with_pairings_crosstable[$prev_team_id]->board_points) {
-          $team->ranking_position = $teams_with_pairings_crosstable[$prev_team_id]->ranking_position;
-        } else {
-          $team->ranking_position = $array_position;
-        }
-      } else {
-        $team->ranking_position = $array_position;
-      }
+//      if (!empty($prev_team_id)) {
+//        if ($team->team_points == $teams_with_pairings_crosstable[$prev_team_id]->team_points &&
+//          $team->board_points == $teams_with_pairings_crosstable[$prev_team_id]->board_points) {
+//          $team->ranking_position = $teams_with_pairings_crosstable[$prev_team_id]->ranking_position;
+//        } else {
+//          $team->ranking_position = $array_position;
+//        }
+//      } else {
+//        $team->ranking_position = $array_position;
+//      }
 
       // We store the current array key for the next iteration in the loop
       $prev_team_id = $key;

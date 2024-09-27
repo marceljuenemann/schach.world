@@ -16,4 +16,5 @@ class RankingTeam {
   public int $ranking_position = 0;
   public int $team_points = 0;
   public float $board_points = 0;
+  public bool $tied_after_berlin = false;
 }
