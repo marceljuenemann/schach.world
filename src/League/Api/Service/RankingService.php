@@ -66,11 +66,10 @@ class RankingService {
         // we need to apply a direct comparison for fine ranking
         // We use the same basic method as in the legacy tabelle.inc.php
         if (count($bptied) > 1) {
-          $ranking_helper_direct = $this->directComparison($bptied, $division);
+          $bptied = $this->directComparison($bptied, $division);
           $wutti = 'watte';
         }
       }
-
     }
 
     // Sort the teams by team_points and after that by board_points.
@@ -224,14 +223,25 @@ class RankingService {
 
                  // @TODO: The teams are not yet returned in the correct order
                  // in $teamsAfterDirectComparison. Find out why and correct.
-                $teamsAfterDirectComparison[$berlinTeam->team->id] = $berlinTeam;
+
+                //$teamsAfterDirectComparison[] = $berlinTeam;
               }
             }
 
         }
+        // Now return the tied teams in the correct order.
       }
       // It might be that the teams are still tied even after applying the berinScore.
       // We need to communicate back if this is the case
+    }
+    foreach($rankingHelperDirect as &$mptied2) {
+      foreach($mptied2 as &$bptied2) {
+        foreach($bptied2 as &$berlin) {
+          foreach($berlin as $berlinTeam) {
+            $teamsAfterDirectComparison[$berlinTeam->team->id] = $berlinTeam;
+          }
+        }
+      }
     }
     return $teamsAfterDirectComparison;
   }
