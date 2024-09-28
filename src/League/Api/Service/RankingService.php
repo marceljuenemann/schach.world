@@ -71,16 +71,20 @@ class RankingService {
         }
       }
     }
-
-    // Sort the teams by team_points and after that by board_points.
-    uasort($teams_with_pairings, function($a, $b) {
-      return [$b->team_points, $b->board_points] <=> [$a->team_points, $a->board_points];
-    });
+    // Now extract the correctly sorted teams aftter directComparison() from $ranking_helper
+    $sorted_teams_with_pairings = [];
+    foreach($ranking_helper as &$mptied1) {
+      foreach($mptied1 as &$bptied1) {
+        foreach($bptied1 as $ranking_team) {
+          $sorted_teams_with_pairings[$ranking_team->team->id] = $ranking_team;
+        }
+      }
+    }
     // Sort the pairings for the crosstable display
-    $teams_with_pairings = $this->sortPairingsCrosstable($teams_with_pairings);
+    $sorted_teams_with_pairings = $this->sortPairingsCrosstable($sorted_teams_with_pairings);
 
     //return $teams_division;
-    return $teams_with_pairings;
+    return $sorted_teams_with_pairings;
   }
 
   /**
