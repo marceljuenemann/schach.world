@@ -204,6 +204,20 @@ class RankingService {
     $mp = [];// mid => mp
     $bp = []; // mid => bp
     $bw = [];
+    // Find the highest ranking_position from the tied teams
+    $rankingPositions = [];
+    foreach($bptied as $rankingTeam) {
+      $rankingPositions[] = $rankingTeam->ranking_position;
+      $highestRankingPosition = min($rankingPositions);
+    }
+    // We need two ranking counters for later.
+    // $tiedRankingPosition stays the same if a team is tied after the berlin score
+    // While $countRankingPosition is always increasing.
+    // This is necessary because if three teams share rankingPosition 2, the next team
+    // that is not tied would be on rankingPosition 5.
+    $tiedRankingPosition = $highestRankingPosition;
+    $countRankingPosition = $highestRankingPosition;
+
     foreach ($bptied as $mid1 => $tied_team) {
       // loop over all possible matchups
       // we can follow the old method direkterVergleich() quite closely here.
@@ -252,7 +266,16 @@ class RankingService {
     foreach($rankingHelperDirect as &$mptied2) {
       foreach($mptied2 as &$bptied2) {
         foreach($bptied2 as &$berlin) {
-          foreach($berlin as $berlinTeam) {
+          foreach($berlin as &$berlinTeam) {
+            if($berlinTeam->tied_after_berlin == true) {
+              $berlinTeam->ranking_position = $tiedRankingPosition;
+              $countRankingPosition ++;
+            }
+            if($berlinTeam->tied_after_berlin == false) {
+              $berlinTeam->ranking_position = $countRankingPosition;
+              $countRankingPosition ++;
+              $tiedRankingPosition = $countRankingPosition;
+            }
             $teamsAfterDirectComparison[$berlinTeam->team->id] = $berlinTeam;
           }
         }
