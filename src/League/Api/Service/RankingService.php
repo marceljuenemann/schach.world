@@ -52,7 +52,19 @@ class RankingService {
       $rankingTeam->team_points = $this->addTeamPoints($team, $pairings);
       $rankingTeam->board_points = $this->addBoardPoints($team, $pairings);
       $teams_with_pairings[$team->id] = $rankingTeam;
-      $ranking_helper[$rankingTeam->team_points][(string) $rankingTeam->board_points][$team->id] = $rankingTeam;
+
+    }
+
+    // Sort the teams by team_points and after that by board_points.
+    uasort($teams_with_pairings, function ($a, $b) {
+      return [$b->team_points, $b->board_points] <=> [$a->team_points, $a->board_points];
+    });
+    $rough_ranking_position = 1;
+    foreach($teams_with_pairings as $key => &$rankingTeam) {
+      // Add a rough ranking_position. Will be refined later for tied teams.
+      $rankingTeam->ranking_position = $rough_ranking_position;
+      $rough_ranking_position++;
+      $ranking_helper[$rankingTeam->team_points][(string) $rankingTeam->board_points][$rankingTeam->team->id] = $rankingTeam;
     }
 
     // Now apply direct comparison to teams that are tied by team and board points
@@ -67,7 +79,6 @@ class RankingService {
         // We use the same basic method as in the legacy tabelle.inc.php
         if (count($bptied) > 1) {
           $bptied = $this->directComparison($bptied, $division);
-          $wutti = 'watte';
         }
       }
     }
