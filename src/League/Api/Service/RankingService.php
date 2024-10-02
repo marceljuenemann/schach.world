@@ -12,7 +12,8 @@ use Nsv\League\Core\Encoding;
 
 class RankingService {
 
-  public function __construct(private EntityManagerInterface $leagueEntityManager, private Encoding $encoding) {}
+  public function __construct(private EntityManagerInterface $leagueEntityManager, private Encoding $encoding) {
+  }
 
   /**
    *  A short comparison method for array_udiff to find objects in array2,
@@ -60,7 +61,7 @@ class RankingService {
       return [$b->team_points, $b->board_points] <=> [$a->team_points, $a->board_points];
     });
     $rough_ranking_position = 1;
-    foreach($teams_with_pairings as $key => &$rankingTeam) {
+    foreach ($teams_with_pairings as $key => &$rankingTeam) {
       // Add a rough ranking_position. Will be refined later for tied teams.
       $rankingTeam->ranking_position = $rough_ranking_position;
       $rough_ranking_position++;
@@ -84,9 +85,9 @@ class RankingService {
     }
     // Now extract the correctly sorted teams aftter directComparison() from $ranking_helper
     $sorted_teams_with_pairings = [];
-    foreach($ranking_helper as &$mptied1) {
-      foreach($mptied1 as &$bptied1) {
-        foreach($bptied1 as $ranking_team) {
+    foreach ($ranking_helper as &$mptied1) {
+      foreach ($mptied1 as &$bptied1) {
+        foreach ($bptied1 as $ranking_team) {
           $sorted_teams_with_pairings[$ranking_team->team->id] = $ranking_team;
         }
       }
@@ -129,7 +130,7 @@ class RankingService {
   public function getPairingsTeamUntilRound($pairings_division, $team, $round) {
     $pairings_team = [];
     foreach ($pairings_division as $pairing) {
-      if (($pairing->team1 == $team || $pairing->team2 == $team) && $pairing->round <= $round) {
+      if (($pairing->team1==$team || $pairing->team2==$team) && $pairing->round <= $round) {
         $pairings_team[] = $pairing;
       }
     }
@@ -142,10 +143,10 @@ class RankingService {
   public function addTeamPoints($team, array $pairings) {
     $team_points = (int) 0;
     foreach ($pairings as $pairing) {
-      if ($pairing->team1->id == $team->id) {
+      if ($pairing->team1->id==$team->id) {
         $team_points += $this->teamPointsFromResult($pairing->result1, $pairing->result2);
       }
-      if ($pairing->team2->id == $team->id) {
+      if ($pairing->team2->id==$team->id) {
         $team_points += $this->teamPointsFromResult($pairing->result2, $pairing->result1);
       }
     }
@@ -158,10 +159,10 @@ class RankingService {
   public function addBoardPoints($team, array $pairings) {
     $board_points = (float) 0;
     foreach ($pairings as $pairing) {
-      if ($pairing->team1->id == $team->id) {
+      if ($pairing->team1->id==$team->id) {
         $board_points += $pairing->result1;
       }
-      if ($pairing->team2->id == $team->id) {
+      if ($pairing->team2->id==$team->id) {
         $board_points += $pairing->result2;
       }
     }
@@ -186,7 +187,7 @@ class RankingService {
       $team_points = 0;
     }
     // Draw
-    if ($result1 == $result2 && !empty($result1)) {
+    if ($result1==$result2 && !empty($result1)) {
       $team_points = 1;
     }
     return $team_points;
@@ -204,19 +205,7 @@ class RankingService {
     $mp = [];// mid => mp
     $bp = []; // mid => bp
     $bw = [];
-    // Find the highest ranking_position from the tied teams
-    $rankingPositions = [];
-    foreach($bptied as $rankingTeam) {
-      $rankingPositions[] = $rankingTeam->ranking_position;
-      $highestRankingPosition = min($rankingPositions);
-    }
-    // We need two ranking counters for later.
-    // $tiedRankingPosition stays the same if a team is tied after the berlin score
-    // While $countRankingPosition is always increasing.
-    // This is necessary because if three teams share rankingPosition 2, the next team
-    // that is not tied would be on rankingPosition 5.
-    $tiedRankingPosition = $highestRankingPosition;
-    $countRankingPosition = $highestRankingPosition;
+
 
     foreach ($bptied as $mid1 => $tied_team) {
       // loop over all possible matchups
@@ -224,7 +213,7 @@ class RankingService {
       // We build another $ranking_helper() array, only this time we only use
       // the points gained against the tied teams like described above.
       foreach ($bptied as $mid2 => $opponent_team) {
-        if ($mid1 == $mid2) {
+        if ($mid1==$mid2) {
           continue;
         }
         $mp[$mid1] = $this->getMPvs($bptied[$mid1], $bptied[$mid2]);
@@ -245,35 +234,81 @@ class RankingService {
           // those two teams are still tied after applying the berlin score.
           foreach ($bptied1 as &$berlin) {
 
-              foreach($berlin as $berlinTeam) {
-                if(count($berlin) > 1) {
-                  $berlinTeam->tied_after_berlin = TRUE;
-                }
-
-                 // @TODO: The teams are not yet returned in the correct order
-                 // in $teamsAfterDirectComparison. Find out why and correct.
-
-                //$teamsAfterDirectComparison[] = $berlinTeam;
+            foreach ($berlin as $berlinTeam) {
+              if (count($berlin) > 1) {
+                $berlinTeam->tied_after_berlin = TRUE;
               }
             }
-
+          }
         }
-        // Now return the tied teams in the correct order.
       }
-      // It might be that the teams are still tied even after applying the berinScore.
-      // We need to communicate back if this is the case
     }
-    foreach($rankingHelperDirect as &$mptied2) {
-      foreach($mptied2 as &$bptied2) {
-        foreach($bptied2 as &$berlin) {
-          foreach($berlin as &$berlinTeam) {
-            if($berlinTeam->tied_after_berlin == true) {
-              $berlinTeam->ranking_position = $tiedRankingPosition;
-              $countRankingPosition ++;
+
+    $teamsAfterDirectComparison = $this->extractDirectRankedTeams($rankingHelperDirect, $bptied);
+    return $teamsAfterDirectComparison;
+  }
+
+  /**
+   * Return an array of rankingTeams from $rankingHelperDirect
+   */
+  public function extractDirectRankedTeams($rankingHelperDirect, $bptied) {
+    // Find the highest ranking_position from the tied teams
+    $rankingPositions = [];
+    foreach ($bptied as $rankingTeam) {
+      $rankingPositions[] = $rankingTeam->ranking_position;
+      $highestRankingPosition = min($rankingPositions);
+    }
+    // We need two ranking counters for later.
+    // $tiedRankingPosition stays the same if a team is tied after the berlin score
+    // While $countRankingPosition is always increasing.
+    // This is necessary because if three teams share rankingPosition 2, the next team
+    // that is not tied would be on rankingPosition 5.
+    $tiedRankingPosition = $highestRankingPosition;
+    $countRankingPosition = $highestRankingPosition;
+    $lastTeamValues = [];
+    // Extract the teams from $rankingHelperDirect to return them.
+
+    foreach ($rankingHelperDirect as $mpkey2 => &$mptied2) {
+      foreach ($mptied2 as $bpkey2 => &$bptied2) {
+        foreach ($bptied2 as $berlinkey2 => &$berlin) {
+          foreach ($berlin as &$berlinTeam) {
+            if ($berlinTeam->tied_after_berlin==true) {
+              // $currentTeamValues and $lastTeamValues are for an extreme edge case in calculating
+              // the rankingTeams $ranking_position.
+              // In one bptied group there might be 4 teams or more.
+              // After running directComparision, there might be two groups of teams that are different
+              // to each other (different mp, bp or berlin score) but still be tied inside the group.
+              // If this would happen, the logic to reset
+              // $tiedRankingPosition to $countRankingPosition might not be enough, because for all rankingTeams
+              // involved the property $tied_after_berlin is set to TRUE.
+
+              $currentTeamValues = [
+                'mp' => $mpkey2,
+                'bp' => $bpkey2,
+                'berlin' => $berlinkey2,
+              ];
+              if ($currentTeamValues == $lastTeamValues) {
+                $berlinTeam->ranking_position = $tiedRankingPosition;
+                $countRankingPosition++;
+              } else {
+                // If $currentTeamValues are different from $lastTeamValues,
+                // this is a new tied group and we need to reset
+                // $tiedRankingPosition to $countRankingPosition
+                $berlinTeam->ranking_position = $countRankingPosition;
+                $countRankingPosition++;
+                //$tiedRankingPosition = $countRankingPosition;
+              }
+
+              // Save this rankingTeams point values for the next loop cycle
+              $lastTeamValues = [
+                'mp' => $mpkey2,
+                'bp' => $bpkey2,
+                'berlin' => $berlinkey2,
+              ];
             }
-            if($berlinTeam->tied_after_berlin == false) {
+            if ($berlinTeam->tied_after_berlin==false) {
               $berlinTeam->ranking_position = $countRankingPosition;
-              $countRankingPosition ++;
+              $countRankingPosition++;
               $tiedRankingPosition = $countRankingPosition;
             }
             $teamsAfterDirectComparison[$berlinTeam->team->id] = $berlinTeam;
@@ -285,15 +320,31 @@ class RankingService {
   }
 
   /**
+   * This function is for an extreme edge case in calculating the rankingTeams $ranking_position.
+   * In one bptied group there might be 4 teams or more.
+   * After running directComparision, there might be two groups of teams that are different
+   * to each other (different mp, bp or berlin score) but still be tied inside the group.
+   * If this would happen, my logic inside extractDirectRankedTeams() to reset
+   * $tiedRankingPosition to $countRankingPosition might not be enough, because for all rankingTeams
+   * involved the property $tied_after_berlin is set to TRUE.
+   */
+  public function compareCurrentLastTeamValues($currentTeamValues, $lastTeamValues) {
+    $comparisonResult = 'same';
+    if ($currentTeamValues['mp']!=$lastTeamValues['mp']) {
+      $comparisonResult = 'different';
+    }
+  }
+
+  /**
    * Return the team points a team won against another team
    * in the current season in the current division
    */
   public function getMPvs(RankingTeam $teamCurrent, RankingTeam $teamOpponent) {
     $teamOpponentId = $teamOpponent->team->id;
     foreach ($teamCurrent->pairings as $pairing) {
-      if ($pairing->team1->id == $teamOpponentId) {
+      if ($pairing->team1->id==$teamOpponentId) {
         return $this->teamPointsFromResult($pairing->result2, $pairing->result1);
-      } elseif ($pairing->team2->id == $teamOpponentId) {
+      } elseif ($pairing->team2->id==$teamOpponentId) {
         return $this->teamPointsFromResult($pairing->result1, $pairing->result2);
       }
     }
@@ -307,9 +358,9 @@ class RankingService {
     // @TODO What if result1 or result2 is null?
     $teamOpponentId = $teamOpponent->team->id;
     foreach ($teamCurrent->pairings as $pairing) {
-      if ($pairing->team1->id == $teamOpponentId) {
+      if ($pairing->team1->id==$teamOpponentId) {
         return $pairing->result2;
-      } elseif ($pairing->team2->id == $teamOpponentId) {
+      } elseif ($pairing->team2->id==$teamOpponentId) {
         return $pairing->result1;
       }
     }
@@ -323,14 +374,14 @@ class RankingService {
     $berlinScore = floatval(0.0);
     foreach ($teamCurrent->pairings as $pairing) {
       $board_count = $division->config('boardCount');
-      if ($pairing->team1->id == $teamOpponentId) {
+      if ($pairing->team1->id==$teamOpponentId) {
         foreach ($pairing->games as $game) {
           $board = $game->board;
           $multiplier = $board_count - $board + 1;
           $result2 = $game->result2;
           $berlinScore += Result::score($result2) * $multiplier;
         }
-      } elseif ($pairing->team2->id == $teamOpponentId) {
+      } elseif ($pairing->team2->id==$teamOpponentId) {
         foreach ($pairing->games as $game) {
           $board = $game->board;
           $multiplier = $board_count - $board + 1;
@@ -361,13 +412,13 @@ class RankingService {
       // Mark the game against oneself with 888 board points.
       $team->crosstable_pairings[$team->team->id]['board_points'] = 888;
       foreach ($team->pairings as $pairing) {
-        if ($pairing->team1->id == $team->team->id) {
+        if ($pairing->team1->id==$team->team->id) {
           $opponent_id = $pairing->team2->id;
           $team->crosstable_pairings[$opponent_id]['board_points'] = $pairing->result1;
           $team->crosstable_pairings[$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
           $team->crosstable_pairings[$opponent_id]['title_text'] = 'gegen ' . $pairing->team2->nameWithNumber();
         }
-        if ($pairing->team2->id == $team->team->id) {
+        if ($pairing->team2->id==$team->team->id) {
           $opponent_id = $pairing->team1->id;
           $team->crosstable_pairings[$opponent_id]['board_points'] = $pairing->result2;
           $team->crosstable_pairings[$opponent_id]['round_uri'] = $pairing->division->uri() . $pairing->round;
