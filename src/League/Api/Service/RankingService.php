@@ -295,8 +295,10 @@ class RankingService {
                 // this is a new tied group and we need to reset
                 // $tiedRankingPosition to $countRankingPosition
                 $berlinTeam->ranking_position = $countRankingPosition;
+                // We reset $tiedRankingPosition before increasing $countRankingPosition this time.
+                $tiedRankingPosition = $countRankingPosition;
                 $countRankingPosition++;
-                //$tiedRankingPosition = $countRankingPosition;
+
               }
 
               // Save this rankingTeams point values for the next loop cycle
