@@ -7,19 +7,6 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 # Udo...
 RewriteRule ^frl/anmelden.html /ligen/frl/?m=anmeldung [R]
 
-# Saisonunabhaengig
-RewriteRule ^bezirk1/ /ligen/bezirk1-2324/ [R] [QSA]
-RewriteRule ^bezirk2/ /ligen/bezirk2-2324/ [R] [QSA]
-RewriteRule ^bezirk3/ /ligen/bezirk3-2324/ [R] [QSA]
-RewriteRule ^bezirk6/ /ligen/bezirk6-2324/ [R] [QSA]
-RewriteRule ^jbln/ /ligen/jbln-2324/ [R] [QSA]
-RewriteRule ^nsj/ /ligen/nsj-2324/ [R] [QSA]
-RewriteRule ^pokal/ /ligen/pokal-2324/ [R] [QSA]
-RewriteRule ^nsv/ /ligen/nsv-2324/ [R] [QSA]
-RewriteRule ^fll/ /ligen/fll-2324/ [R] [QSA]
-RewriteRule ^fbl/ /ligen/fbl-1819/ [R] [QSA]
-RewriteRule ^frl/ /ligen/frl-2122/ [R] [QSA]
-
 # Sonderbehandlungen für Spezielle URLs
 RewriteRule ^([A-Za-z0-9\-]+)/Rundschreiben/([0-9]*)/Runde([0-9]*).pdf /ligen/$1/?staffel=$2&r=$3&ausgabe=pdf [R,L]
 RewriteRule ^([A-Za-z0-9\-]+)/anmeldung.html /ligen/$1/?m=anmeldung [R]

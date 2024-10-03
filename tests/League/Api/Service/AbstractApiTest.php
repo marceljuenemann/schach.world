@@ -20,7 +20,7 @@ abstract class AbstractApiTest extends KernelTestCase
   protected function setUp(): void {
     $this->container = static::getContainer();
     $this->em = $this->container->get(LeagueRepository::class)->getEntityManager();
-    $this->league = $this->container->get(LeagueRepository::class)->findByPath('test');
+    $this->league = $this->container->get(LeagueRepository::class)->findByPathOrPrefix('test');
     $this->division = $this->league->divisions[0];
   }
 
