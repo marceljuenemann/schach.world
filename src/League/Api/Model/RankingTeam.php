@@ -17,4 +17,5 @@ class RankingTeam {
   public int $team_points = 0;
   public float $board_points = 0;
   public bool $tied_after_berlin = false;
+  public string $relegation = 'none';
 }

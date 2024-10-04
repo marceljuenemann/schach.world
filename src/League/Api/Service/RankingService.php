@@ -94,7 +94,8 @@ class RankingService {
     }
     // Sort the pairings for the crosstable display
     $sorted_teams_with_pairings = $this->sortPairingsCrosstable($sorted_teams_with_pairings);
-
+    // Relegation: Highlight promoted and demoted teams
+    $sorted_teams_with_pairings = $this->highlightPromotionDemotion($sorted_teams_with_pairings, $division);
     //return $teams_division;
     return $sorted_teams_with_pairings;
   }
@@ -287,7 +288,7 @@ class RankingService {
                 'bp' => $bpkey2,
                 'berlin' => $berlinkey2,
               ];
-              if ($currentTeamValues == $lastTeamValues) {
+              if ($currentTeamValues==$lastTeamValues) {
                 $berlinTeam->ranking_position = $tiedRankingPosition;
                 $countRankingPosition++;
               } else {
@@ -319,6 +320,29 @@ class RankingService {
       }
     }
     return $teamsAfterDirectComparison;
+  }
+
+  /**
+   * Highlight promoted and demoted teams by setting the property
+   * 'relegation' in the $rankingTeam.
+   */
+  private function highlightPromotionDemotion($teamsAfterDirectComparison, $division): array {
+    $countPromotedTeams = $division->config('TeamsPromoted');
+    $countDemotedTeams = $division->config('TeamsDemoted');
+    $teamsWithHighlighting = $teamsAfterDirectComparison;
+    $loopCount = 1;
+    foreach ($teamsWithHighlighting as &$rankingTeam) {
+      if (!is_null($countPromotedTeams) && $countPromotedTeams > 0 && $loopCount <= $countPromotedTeams) {
+        $rankingTeam->relegation = 'promoted';
+      }
+      if (!is_null($countDemotedTeams) && $countDemotedTeams > 0 && $loopCount > (count($teamsWithHighlighting) - $countDemotedTeams)) {
+        $rankingTeam->relegation = 'demoted';
+      }
+      $loopCount++;
+    }
+
+
+    return $teamsWithHighlighting;
   }
 
   /**

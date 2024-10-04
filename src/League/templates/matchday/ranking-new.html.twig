@@ -1,5 +1,6 @@
 {% import "macros.html.twig" as nsv %}
 
+
 <table class="nsv-table borders-bold text-center text-nowrap">
   <tr>
     <th></th>
@@ -12,8 +13,10 @@
   </tr>
 
   {% for team in matchDay.rankingNew %}
+    {% set relegation_class = ((team.relegation == 'promoted') ? ' sed_aufsteiger')
+      ~ ((team.relegation == 'demoted') ? ' sed_absteiger') %}
     <tr>
-      <td class="ranking-position">{{ team.ranking_position }}.</td>
+      <td class="ranking-position{{ relegation_class }}">{{ team.ranking_position }}.</td>
       <td class="team-name text-start border-right-bold"><a href="{{ team.uri }}">{{ team.name }}</a></td>
       {% for crosstable_pairing in team.crosstable_pairings %}
         {% if crosstable_pairing.board_points == 888 %}
