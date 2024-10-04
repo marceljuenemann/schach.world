@@ -24,12 +24,12 @@
           </td>
         {% else %}
           <td {{ nsv.tooltip(crosstable_pairing.title_text) }} class="crosspairing pairing-{{ loop.index }}">
-            <a href="{{ crosstable_pairing.round_uri }}">{{ crosstable_pairing.board_points }}</a>
+            <a href="{{ crosstable_pairing.round_uri }}">{{ crosstable_pairing.board_points|format_float_result }}</a>
           </td>
         {% endif %}
       {% endfor %}
       <td class="team-points border-left-bold">{{ team.team_points }}</td>
-      <td class="board-points">{{ team.board_points }}</td>
+      <td class="board-points">{{ team.board_points|format_float_result }}</td>
 
     </tr>
   {% endfor %}
