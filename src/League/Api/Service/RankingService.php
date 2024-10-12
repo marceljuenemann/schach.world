@@ -24,9 +24,10 @@ class RankingService {
   }
 
   /**
-   * A temporary method to get started
+   * Putting everything together and returning
+   * the final ranking to the controller.
    */
-  public function teamsWithPairings($division, $round) {
+  public function buildFinalRankingRound($division, $round) {
     $pairing_repository = $this->leagueEntityManager->getRepository(Pairing::class);
     $pairings_division = $pairing_repository->findByDivisionWithTeams($division);
     $teams_division = $this->getTeamsFromPairings($pairings_division);

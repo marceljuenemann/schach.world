@@ -31,7 +31,7 @@ class MatchDayService
 
     // Add the new ranking
     $rankingService = $this->rankingService;
-    $ranking_new = $rankingService->teamsWithPairings($division, $round);
+    $ranking_new = $rankingService->buildFinalRankingRound($division, $round);
     $model->rankingNew = $ranking_new;
 
     $pairings = $this->pairingRepository->findByRound($division, $round);
