@@ -1,4 +1,5 @@
 <!-- TODO: Consider using a dialog helper rather than duplicating this. -->
+<!-- TODO: Probably should have a DialogContainer Consider using a dialog helper rather than duplicating this. -->
 <div class="modal-header">
   <h4 class="modal-title" id="modal-basic-title">Anmeldung</h4>
   <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
@@ -6,15 +7,17 @@
 <div class="modal-body">
   <player-data class="mb-4" [lastPlayer]="params.lastPlayer" [validationErrors]="errors?.validationErrors" (onPlayerDataChange)="onPlayerDataChange($event)"></player-data>
 
-  <form class="mt-4">
+  <form [formGroup]="formData" class="mt-4">
     @for (group of params.config.groups.values(); track group.id) {
       <div class="form-check">
         <input
           type="radio"
-          class="form-check-input"
           id="tournamentRadio-{{group.id}}"
-          name="radio-stacked"
-          [disabled]="isGroupDisabled(group.id)"
+          name="group"
+          formControlName="group"
+          [value]="group.id"
+          [attr.disabled]="isGroupDisabled(group.id) || null"
+          class="form-check-input"
           required>
         <label class="form-check-label" for="tournamentRadio-{{group.id}}">{{group.name}}</label>
       </div>

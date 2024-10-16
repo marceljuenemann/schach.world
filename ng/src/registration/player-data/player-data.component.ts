@@ -49,7 +49,6 @@ export class PlayerDataComponent {
     combineLatest([this.selectedPlayer.valueChanges, this.club.valueChanges, this.form.valueChanges])
     .pipe(map(([selectedPlayer, club, formData]) => {
       if (!selectedPlayer || !selectedPlayer.name) return null
-      console.log(formData) // TODO: remove
       // TODO: simplify by using form.transformedValue (IntControl performs parseInt)
       return {
         name: selectedPlayer.name,

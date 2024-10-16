@@ -6,8 +6,8 @@ import { firstValueFrom } from 'rxjs';
 import { NsvError, processApiError } from '../../core/api';
 import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvFormGroup, TextControl } from '../../core/form/form-group';
-import { JsonPipe } from '@angular/common';
 import { Dialog } from '../../core/dialog';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 export interface PlayerDialogParams {
   config: Config,
@@ -17,7 +17,7 @@ export interface PlayerDialogParams {
 @Component({
   selector: 'player-dialog',
   standalone: true,
-  imports: [PlayerDataComponent, NsvFormComponent, JsonPipe],
+  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule],
   templateUrl: './player-dialog.component.html',
   styleUrl: './player-dialog.component.css'
 })
@@ -25,6 +25,11 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
   playerData: PlayerData | null = null
   errors: NsvError | null = null
 
+  formData = new FormGroup({
+    group: new FormControl()
+  })
+
+  // ToDo: move into formData.
   contactDetails = new NsvFormGroup({
     name: new TextControl('Kontaktperson', {required: true}),
     email: new TextControl('E-Mail-Adresse', {required: true})
@@ -47,10 +52,26 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
     return false
   }
 
+  get selectedGroup() {
+    return this.formData.controls.group.value
+  }
+
   onPlayerDataChange(playerData: PlayerData | null) {
     this.playerData = playerData
     if (!this.contactDetails.controls.name.value && playerData && playerData.name) {
       this.contactDetails.controls.name.setValue(playerData.name)
+    }
+    // Unselect current group selection and select last valid group.
+    if (!this.selectedGroup || this.isGroupDisabled(this.selectedGroup)) {
+      this.formData.controls.group.setValue(null)
+      if (playerData?.dwz && playerData.yearOfBirth) {
+        for (let groupId of Array.from(this.params.config.groups.keys()).reverse()) {
+          if (!this.isGroupDisabled(groupId)) {
+            this.formData.controls.group.setValue(groupId)
+            break
+          }
+        }
+      }
     }
   }
 
@@ -61,6 +82,7 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
   save() {
     const player = {
       playerData: this.playerData!,
+      group: this.formData.controls.group.value,
       contactDetails: this.contactDetails.value
     } as Player
     firstValueFrom(this.registrationService.registerPlayer('test', player)).then(
