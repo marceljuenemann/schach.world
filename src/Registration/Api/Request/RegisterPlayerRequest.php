@@ -13,6 +13,9 @@ class RegisterPlayerRequest
   public PlayerData $playerData;
 
   #[Assert\NotBlank]
+  public string $group;
+
+  #[Assert\NotBlank]
   #[Assert\Valid]
   public ContactDetails $contactDetails;
 }

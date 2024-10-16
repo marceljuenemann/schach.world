@@ -62,7 +62,7 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
       this.contactDetails.controls.name.setValue(playerData.name)
     }
     // Unselect current group selection and select last valid group.
-    if (!this.selectedGroup || this.isGroupDisabled(this.selectedGroup)) {
+    if (playerData && (!this.selectedGroup || this.isGroupDisabled(this.selectedGroup))) {
       this.formData.controls.group.setValue(null)
       if (playerData?.dwz && playerData.yearOfBirth) {
         for (let groupId of Array.from(this.params.config.groups.keys()).reverse()) {
@@ -76,7 +76,7 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
   }
 
   get isValid() {
-    return this.playerData && this.contactDetails.valid
+    return this.playerData && this.selectedGroup && this.contactDetails.valid
   }
 
   save() {
