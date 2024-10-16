@@ -30,5 +30,6 @@
   @for (message of errors?.errorMessages; track $index) {
     <div class="alert alert-danger w-100" role="alert">{{ message }}</div>
   }
+  <button type="button" class="btn btn-secondary" (click)="modal.dismiss('Cancel button')">Abbrechen</button>
   <button type="button" class="btn btn-primary" (click)="save()" [disabled]="!isValid">Speichern</button>
 </div>
