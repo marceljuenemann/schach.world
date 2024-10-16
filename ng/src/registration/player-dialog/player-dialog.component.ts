@@ -80,6 +80,7 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
   }
 
   save() {
+    if (!this.isValid) return
     const player = {
       playerData: this.playerData!,
       group: this.formData.controls.group.value,

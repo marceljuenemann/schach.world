@@ -7,7 +7,7 @@
 <div class="modal-body">
   <player-data class="mb-4" [lastPlayer]="params.lastPlayer" [validationErrors]="errors?.validationErrors" (onPlayerDataChange)="onPlayerDataChange($event)"></player-data>
 
-  <form [formGroup]="formData" class="mt-4">
+  <form [formGroup]="formData" class="mt-4" (keyup.enter)="save()">
     @for (group of params.config.groups.values(); track group.id) {
       <div class="form-check">
         <input
@@ -24,7 +24,7 @@
     }
   </form>
 
-  <nsv-form [form]="contactDetails" [validationErrors]="errors?.validationErrors" validationErrorPrefix="contactDetails."></nsv-form>
+  <nsv-form [form]="contactDetails" [validationErrors]="errors?.validationErrors" validationErrorPrefix="contactDetails." (keyup.enter)="save()"></nsv-form>
 </div>
 <div class="modal-footer">
   @for (message of errors?.errorMessages; track $index) {
