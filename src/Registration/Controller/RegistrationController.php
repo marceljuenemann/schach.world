@@ -2,19 +2,75 @@
 
 namespace Nsv\Registration\Controller;
 
+use Nsv\Registration\Api\Request\RegisterPlayerRequest;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/v3/anmeldung/{tournament}/', name: 'registration_')]
+// See /ng/src/registration/types.ts for schema.
+const TEST_CONFIG = [
+  'tournamentName' => 'Testturnier 2024',
+  'groups' => [
+    [
+      'id' => 'A',
+      'name' => 'Gruppe A (ab DWZ 1750)'
+    ],
+    [
+      'id' => 'B',
+      'name' => 'Gruppe B (DWZ 1500-1750)',
+      'maxDwz' => 1750
+    ],
+    [
+      'id' => 'C',
+      'name' => 'Gruppe C (bis DWZ 1500)',
+      'maxDwz' => 1500
+    ],
+    [
+      'id' => 'U18',
+      'name' => 'Altersklasse U18',
+      'minYearOfBirth' => 2007
+    ],
+    [
+      'id' => 'U16',
+      'name' => 'Altersklasse U16',
+      'minYearOfBirth' => 2009
+    ],
+    [
+      'id' => 'U14',
+      'name' => 'Altersklasse U14',
+      'minYearOfBirth' => 2011
+    ],
+    [
+      'id' => 'U12',
+      'name' => 'Altersklasse U12',
+      'minYearOfBirth' => 2013
+    ],
+    [
+      'id' => 'U10',
+      'name' => 'Altersklasse U10',
+      'minYearOfBirth' => 2015
+    ]
+  ]
+];
+
+#[Route('/v3/anmeldung/', name: 'registration_')]
 class RegistrationController extends AbstractController {
 
   function __construct(
 
     ) {}
 
-  #[Route('/', name: 'registration')]
+  #[Route('{tournament}/', name: 'registration')]
   public function registration(): Response {
-    return $this->render('@registration/registration.html.twig');
+    return $this->render('@registration/registration.html.twig', [
+      'reg_config' => json_encode(TEST_CONFIG)
+    ]);
+  }
+
+  #[Route('api/{tournament}/players/', methods: ['POST'], name: 'players_register')]
+  public function registerPlayer(#[MapRequestPayload] RegisterPlayerRequest $request): Response {
+    return new JsonResponse();
   }
 }

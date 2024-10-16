@@ -1,0 +1,28 @@
+<form [formGroup]="form">
+  <div class="row">
+    @for (id of visibleControls; track id) {
+      @let control = form.controls[id];
+      @let error = validationError(id);
+      @if (control.visible) {
+        <div class="{{colClass}}">
+          <div class="form-floating">
+            <input
+              [formControlName]="id"
+              id="nsv-form-{{id}}"
+              type="text"
+              class="form-control mt-3"
+              [class.is-invalid]="error || (control.invalid && control.touched)"
+                >
+            <label for="nsv-form-{{id}}">{{control.label}}</label>
+            @if (control.hasError('required')) {
+              <div class="invalid-feedback">{{control.label}} darf nicht leer sein</div>
+            }
+            @if (error) {
+              <div class="invalid-feedback">{{error}}</div>
+            }
+          </div>
+        </div>
+      }
+    }
+  </div>
+</form>
