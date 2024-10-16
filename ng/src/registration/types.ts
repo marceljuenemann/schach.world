@@ -21,5 +21,6 @@ export interface ContactDetails {
 
 export interface Player {
   playerData: PlayerData,
+  group: string,
   contactDetails: ContactDetails
 }

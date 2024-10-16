@@ -97,12 +97,12 @@ export class PlayerDataComponent {
     return this.selectedPlayer.value && !this.selectedPlayer.value.data
   }
 
-	search = (text$: Observable<string>) => {
-		return text$.pipe(
-			switchMap((term: string) => {
+  search = (text$: Observable<string>) => {
+    return text$.pipe(
+      switchMap((term: string) => {
         // Get suggestions based on the term.
         const preferredZps = this.lastPlayer?.playerData?.zps || ''
-				const options = term === '' ? of([]) : this.dwz.findPlayer(term, preferredZps)
+        const options = term === '' ? of([]) : this.dwz.findPlayer(term, preferredZps)
         return options.pipe(map((players: DwzPlayer[]) => {
           const options: PlayerOption[] = players.map(p => { return{name: p.name, data: p} })
           // Possibly add option for manual entry.
@@ -112,15 +112,15 @@ export class PlayerDataComponent {
           return options
         }))
       })
-		)
+    )
   }
-	formatter = (player: PlayerOption) => player.name
+  formatter = (player: PlayerOption) => player.name
 
-	searchClub = (text$: Observable<string>) => {
-		return text$.pipe(
-			switchMap((term: string) => term === '' ? of([]) : this.dwz.findClub(term, '')),
+  searchClub = (text$: Observable<string>) => {
+    return text$.pipe(
+      switchMap((term: string) => term === '' ? of([]) : this.dwz.findClub(term, '')),
       map((clubs: DwzClub[]) => clubs.map(club => club.name))
-		)
+    )
   }
 
   ngOnDestroy() {
