@@ -28,8 +28,8 @@ export class NsvFormComponent {
   // Number of columns to show the inputs in
   @Input() columns: number
 
+  // TODO: Delete, replace with controlIds or similar.
   get visibleControls() {
-    //return ['yearOfBirth', 'gender']
     return Object.keys(this.form.controls)
   }
 

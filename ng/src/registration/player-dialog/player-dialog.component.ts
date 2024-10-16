@@ -47,6 +47,13 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
     return false
   }
 
+  onPlayerDataChange(playerData: PlayerData | null) {
+    this.playerData = playerData
+    if (!this.contactDetails.controls.name.value && playerData && playerData.name) {
+      this.contactDetails.controls.name.setValue(playerData.name)
+    }
+  }
+
   get isValid() {
     return this.playerData && this.contactDetails.valid
   }
