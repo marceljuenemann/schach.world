@@ -62,7 +62,7 @@ class PairingRepository extends ServiceEntityRepository
       // leftJoin to allow NULL players.
       ->leftJoin('g.player1', 's1')
       ->leftJoin('g.player2', 's2')
-      ->where('p.division = :division AND p.division > 0 AND p.round = :round')
+      ->andWhere('p.division = :division AND p.division > 0 AND p.round = :round')
       ->addOrderBy('p.host', 'ASC')
       ->addOrderBy('p.id', 'ASC')
       ->setParameter('division', $division)
@@ -88,5 +88,24 @@ class PairingRepository extends ServiceEntityRepository
       $criteria->orderBy(Pairing::ORDERING);
     }
     return $this->matching($criteria);
+  }
+
+  /**
+   * Finds all games for a division and a tournament with
+   * player data dwz and birth date
+   */
+  public function findAllPairingsDivision($division) {
+    return $this->createQueryBuilder('pairings')
+      ->select('pairings, games, player1, player2, team1, team2')
+      ->leftJoin('pairings.games', 'games')
+      ->leftJoin('pairings.division', 'p_division')
+      ->leftJoin('games.player1', 'player1')
+      ->leftJoin('games.player2', 'player2')
+      ->innerJoin('pairings.team1', 'team1')
+      ->innerJoin('pairings.team2', 'team2')
+      ->andWhere('p_division.id = :division')
+      ->setParameter('division', $division->id)
+      ->getQuery()
+      ->getResult();
   }
 }
