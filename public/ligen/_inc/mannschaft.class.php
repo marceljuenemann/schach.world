@@ -69,8 +69,7 @@ class SED_Mannschaft {
 
     // Allgemeine Daten aus der Tabelle mannschaften laden
     private function loadInfos (){
-        global $globals;
-        $this->infos = mysql_fetch_array ( mysql_query ( "SELECT * FROM mannschaften as m WHERE m.id=".$this->infos["id"], $globals ['db'] ), MYSQL_ASSOC );
+        $this->infos = SED_Row("SELECT * FROM mannschaften as m WHERE m.id=?", [$this->infos["id"]]);
     }
 
     // Liefert die Aufstellung
@@ -80,29 +79,31 @@ class SED_Mannschaft {
             return $data;
 
         // Vorbereitungen
-        global $globals; global $prefs;
+        global $prefs;
         $aufstellung = array ();
         if ( !isset ( $prefs ['spielErsatzmannschaft'] ) )
             $prefs ['spielErsatzmannschaft'] = 0;
 
         // Aufstellung abfragen
-        $rsrc = mysql_query (
+        $players = SED_Query(
             "SELECT s.*,
                 IF(s.nmR IS NULL,0,s.nmR) berechtigtAb,
-                s.mannschaft, s.mannschaft<>".$this->get("id")." as istErsatz
+                s.mannschaft, s.mannschaft<>? as istErsatz
             FROM mannschaften m
             INNER JOIN mannschaften m2 ON
                 m.turnier=m2.turnier AND
                 (m.id=m2.id OR m.mnr<m2.mnr) AND
-                m.mnr+$prefs[spielErsatzmannschaft]>=m2.mnr AND
+                m.mnr+?>=m2.mnr AND
                 IF(m.zps IS NULL, m.name=m2.name, m.zps=m2.zps) AND
                 m.gruppe=m2.gruppe
             INNER JOIN spieler s ON s.mannschaft=m2.id
-            WHERE m.id=".$this->get("id")."
-            ORDER BY m2.mnr, s.brettnr", $globals ['db'] );
+            WHERE m.id=?
+            ORDER BY m2.mnr, s.brettnr",
+            [$this->get("id"), $prefs['spielErsatzmannschaft'], $this->get("id")]
+        )->fetchAllAssociative();
 
         // Verarbeiten
-        while ( $spieler = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) ){
+        foreach ( $players as $spieler ){
             // Gastspieler?
             $spieler ['zpsverein'] = substr ( $spieler ["zps"], 0, 5 );
             $spieler ['istGastspieler'] = (bool) (
