@@ -19,16 +19,4 @@ class TwigExtension extends AbstractExtension {
       TwigFunctions::outputBuffering('legacy_league_footer', 'SED_GUIclose'),
     ];
   }
-
-  public function getFilters()
-  {
-    return array(
-      new TwigFilter('unescape_html_entity', [$this, 'unescape_html_entity']),
-    );
-  }
-
-  public function unescape_html_entity($value)
-  {
-    return html_entity_decode($value);
-  }
 }

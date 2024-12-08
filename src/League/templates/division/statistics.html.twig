@@ -19,11 +19,14 @@
                 {% endif %}
                 {{ players_clubs_macro.players_clubs(intro_text_values.text_top_scorers) }}.<br>
 
-                {% if intro_text_values.text_draw_kings|length == 1 %}Der Remisk&ouml;nig mit {{ intro_text_values.highest_draw_score }} Remis ist
-                {% else %}
-                    Die Remisk&ouml;nige mit {{ intro_text_values.highest_draw_score }} Remis sind
+                {% if intro_text_values.highest_draw_score > 0 %}
+                  {% if intro_text_values.text_draw_kings|length == 1 %}Der Remisk&ouml;nig mit {{ intro_text_values.highest_draw_score }} Remis ist
+                  {% else %}
+                      Die Remisk&ouml;nige mit {{ intro_text_values.highest_draw_score }} Remis sind
+                  {% endif %}
+                  {{ players_clubs_macro.players_clubs(intro_text_values.text_draw_kings) }}.
                 {% endif %}
-                {{ players_clubs_macro.players_clubs(intro_text_values.text_draw_kings) }}.</p>
+              </p>
 
             <p>{{ intro_text_values.sum_forfeit_losses }} Spiele wurden kampflos verloren gegeben, das sind
                 <strong>{{ intro_text_values.forfeit_percentage }}%</strong>. Von
@@ -33,18 +36,14 @@
                 <strong>{{ intro_text_values.average_black_score }}%</strong>.</p>
 
 
-            <h3 class="table-subheading">DWZ-Statistik</h3>
+            <h4 class="mt-4">DWZ-Statistik</h4>
             {{ table_macro.table(dwz_table, 'statistics-dwz') }}
-            <p>&nbsp;</p>
 
-            <h3 class="table-subheading">Topscorer</h3>
+            <h4 class="mt-4">Topscorer</h4>
             {{ table_macro.table(topscorer_table, 'statistics-topscorer') }}
-            <p>&nbsp;</p>
 
-            <h3 class="table-subheading">Spiel-Statistik</h3>
+            <h4 class="mt-4">Spiel-Statistik</h4>
             {{ table_macro.table(team_game_score_table, 'statistics-games') }}
-            <p>&nbsp;</p>
-
 
         </div>
         {% else %}
