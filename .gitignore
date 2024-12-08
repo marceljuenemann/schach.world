@@ -19,14 +19,11 @@ public/wordpress/wp-content/plugins/*
 
 # TODO: The following files are legacy code and should be rewritten rather than added to the repo
 public/anmeldung/
-public/bezirke/
 public/core/apps/
 public/core/modules/
 public/core/templates/
 public/core/*.php
 public/grandprix/
-public/termine/
-public/turniere/
 public/verband/
 
 # Files that should actually be excluded
@@ -38,10 +35,7 @@ public/ligen/config.inc.php
 public/ligen/_test/swi/*.swi
 public/schachzeitung/
 public/z-*
-
 public/.user.ini
-public/cronjob_*
-public/goto.php
 
 tests/League/Api/Service/actual/
 
