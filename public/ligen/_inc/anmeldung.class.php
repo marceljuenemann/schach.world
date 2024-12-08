@@ -207,7 +207,7 @@ class SED_Anmeldung {
         // DWZ-Abfrage vorbereiten
         require_once ( "dwzdb.inc.php" );
         $db = new SED_DWZ_Request ();
-        $db->addConditionList ( $this->getZpsList ( "ZPS='", "'" ) );
+        $db->setZpsOptions ( $this->getZpsList() );
         if ( $prefs ["anmGeburt"] ) $db->setGeburt ( $prefs ["anmGeburt"] );
         if ( $prefs ["anmGeschlecht"] ) $db->setGeschlecht ( $prefs ["anmGeschlecht"] );
 
