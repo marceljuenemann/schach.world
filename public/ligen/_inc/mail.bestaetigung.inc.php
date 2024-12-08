@@ -78,12 +78,10 @@ Um einzustellen, wer in Ihrem Verein diese und ähnliche eMails erhalten soll, k
         SED_SendMail( $mail, $mannschaft->get('mf_email'), $vars );
 
         // An Zusatzempfänger senden
-        $rsrc = mysql_query ( "SELECT email FROM zusatzempfaenger WHERE mannschaft=".$mannschaft->get("id")." and bestaetigung=1", $globals ['db'] );
-        if ( $rsrc )
-            while ( $email = ( mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) ) )
-            {
-                SED_SendMail( $mail, reset ( $email ), $vars );
-            }
+        $emails = SED_Query( "SELECT email FROM zusatzempfaenger WHERE mannschaft=? and bestaetigung=1", [$mannschaft->get("id")] )->fetchFirstColumn();
+        foreach ($emails as $email) {
+          SED_SendMail( $mail, $email, $vars );
+        }
     }
 
     // Für Staffelleiter Nachmeldungen aufbereiten
