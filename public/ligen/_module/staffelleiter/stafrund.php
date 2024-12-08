@@ -62,18 +62,8 @@
     echo "<span class='sed_hl2'>Liste der Empf&auml;nger</span><br /><br />";
     
     foreach ( $tos as $team => $empfaenger ){
-        // Mannschaftsführer
-        if ( $team != "newsletter" ){
-            echo "<b>".$globals['teams'][$team].":</b> ";
-            echo implode ( ", ", $empfaenger );
-            echo "<br />";
-        
-        // Newsletter
-        } else {
-            if ( count ( $empfaenger ) )
-                echo "<br /><b>Newsletter-Abbonomenten:</b><br />";
-            foreach ( $empfaenger as $nl )
-                echo "$nl[email]<br />";
-        }
+      echo "<b>".$globals['teams'][$team].":</b> ";
+      echo implode ( ", ", $empfaenger );
+      echo "<br />";
     }
 ?>
