@@ -60,11 +60,8 @@ Bei Fragen wenden Sie sich bitte an Ihren Staffelleitung (@STAFFELLEITER@)." );
   $vars["STAFFELLEITER"] = $slmail;
 
   // Empfänger-Liste erzeugen
-  $to = array ( $paarungen [0]["mf_email"] ); // Ausrichter-Email
-  $rsrc = mysql_query ( "SELECT email FROM zusatzempfaenger WHERE mannschaft=$ausrichter and eingabelink=1", $globals ['db'] );
-  if ( $rsrc )
-    while ( $email = ( mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) ) )
-      $to [] = reset ( $email );
+  $to = SED_Query( "SELECT email FROM zusatzempfaenger WHERE mannschaft=? and eingabelink=1", [$ausrichter] )->fetchFirstColumn();
+  $to[] = $paarungen [0]["mf_email"]; // Ausrichter-Email
 
   // Reply-To
   $mail->ClearReplyTos();
