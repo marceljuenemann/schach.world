@@ -831,8 +831,8 @@ class StatisticsService {
       foreach ($top_ten_scorers as $key => $player) {
         $player_name = $player['player']->name();
         $player_uri = $player['player']->uri();
-        $dwz = $player['player']->dwz ?? '';
-        $team = $player['player']->team->name . ' ' . $player['player']->team->number;
+        $dwz = $player['player']->dwz ? $player['player']->dwz : '';
+        $team = $player['player']->team->nameWithNumber();
         $team_uri = $player['player']->team->uri();
         $board = $player['boards_played'] ?? '';
         $games_count = count($player['games']);
