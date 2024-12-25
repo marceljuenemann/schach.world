@@ -4,7 +4,7 @@ namespace Nsv\Registration\Api\Model;
 
 use Nsv\Dwz\Api\Model\PlayerData;
 use Nsv\Registration\Api\Model\ContactDetails;
-use Nsv\Registration\Entity\RegisteredPlayer;
+use Nsv\Registration\Entity as Entity;
 use Symfony\Component\Validator\Constraints as Assert;
 
 class PlayerRegistration
@@ -23,12 +23,34 @@ class PlayerRegistration
   public ContactDetails $contactDetails;
 
 
-  static function fromEntity(RegisteredPlayer $player): PlayerRegistration {
+  static function fromEntity(Entity\PlayerRegistration $player): PlayerRegistration {
     $reg = new PlayerRegistration();
     $reg->id = $player->id;
     $reg->group = $player->group;
-    //$reg->playerData = PlayerData::fromEntity($player);
+
+    $reg->playerData = $p = new PlayerData();
+    $p->name = $player->name;
+    $p->zps = $player->zps;
+    $p->memberId = $player->memberId;
+    $p->gender = $player->gender;
+    $p->dwz = $player->dwz;  // TODO: Populate from DWZ database where possible.
+    $p->elo = $player->elo;  // TODO: Populate from DWZ database where possible.
+    $p->fideTitle = $player->fideTitle;
+    $p->fideId = $player->fideId;
+    $p->fideCountry = $player->fideCountry;
+
+    if ($player->club) {
+      $p->club = $player->club;
+    } else {
+      // TODO: Populate from DWZ database.
+      $p->club = 'POPULATE ME';
+    }
+
+
+    // Only populate if authorized.
+    // $p->yearOfBirth = $player->yearOfBirth;
     //$reg->contactDetails = ContactDetails::fromEntity($player);
+
     return $reg;
   } 
 }
