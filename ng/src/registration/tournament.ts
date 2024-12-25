@@ -32,7 +32,14 @@ export class Group {
   }
 
   get players() {
-    return this.tournament.players.filter(p => p.group === this.id)
+    return this.tournament.players
+      .filter(p => p.group === this.id)
+      .sort((a, b) => {
+        if (a.playerData.dwz !== b.playerData.dwz) {
+          return (b.playerData.dwz ?? 0) - (a.playerData.dwz ?? 0);
+        }
+        return a.playerData.name.localeCompare(b.playerData.name);
+      });
   }
 
 }
