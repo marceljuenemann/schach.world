@@ -2,7 +2,10 @@
 
 namespace Nsv\Registration\Controller;
 
+use Doctrine\ORM\EntityManagerInterface;
+use Nsv\Registration\Api\Model\PlayerRegistration;
 use Nsv\Registration\Api\Request\RegisterPlayerRequest;
+use Nsv\Registration\Entity\RegisteredPlayer;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -59,14 +62,29 @@ const TEST_CONFIG = [
 class RegistrationController extends AbstractController {
 
   function __construct(
-
-    ) {}
+    private EntityManagerInterface $mainEntityManager
+  ) {}
 
   #[Route('{tournament}/', name: 'registration')]
   public function registration(): Response {
     return $this->render('@registration/registration.html.twig', [
       'reg_config' => json_encode(TEST_CONFIG)
     ]);
+  }
+
+  #[Route('api/{tournament}/players/', name: 'players')]
+  public function players(string $tournament): Response {
+    // TODO: Redact contact details, YOB etc.
+    $repo = $this->mainEntityManager->getRepository(RegisteredPlayer::class);
+    $players = $repo->findByTournament($tournament);
+    $players = array_map(fn($p) => PlayerRegistration::fromEntity($p), $players);
+
+    return new JsonResponse($players);
+/*
+    return $this->render('@registration/registration.html.twig', [
+      'reg_config' => json_encode(TEST_CONFIG)
+    ]);
+*/
   }
 
   #[Route('api/{tournament}/players/', methods: ['POST'], name: 'players_register')]

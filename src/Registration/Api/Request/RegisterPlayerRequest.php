@@ -6,6 +6,7 @@ use Nsv\Dwz\Api\Model\PlayerData;
 use Nsv\Registration\Api\Model\ContactDetails;
 use Symfony\Component\Validator\Constraints as Assert;
 
+// TODO: Replce with PlayerRegistration
 class RegisterPlayerRequest
 {
   #[Assert\NotBlank]

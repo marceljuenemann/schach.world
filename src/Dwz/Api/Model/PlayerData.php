@@ -27,7 +27,7 @@ class PlayerData
   public ?string $memberId;
 
   #[Assert\Regex('/^A|P$/')]
-  public string $status;
+  public ?string $status;
 
   #[Assert\Regex('/^[MWD]?$/')]
   public ?string $gender;
