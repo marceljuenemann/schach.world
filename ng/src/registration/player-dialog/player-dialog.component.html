@@ -8,7 +8,7 @@
   <player-data class="mb-4" [lastPlayer]="params.lastPlayer" [validationErrors]="errors?.validationErrors" (onPlayerDataChange)="onPlayerDataChange($event)"></player-data>
 
   <form [formGroup]="formData" class="mt-4" (keyup.enter)="save()">
-    @for (group of params.config.groups.values(); track group.id) {
+    @for (group of params.tournament.groups.values(); track group.id) {
       <div class="form-check">
         <input
           type="radio"

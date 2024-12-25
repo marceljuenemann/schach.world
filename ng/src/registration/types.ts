@@ -3,7 +3,7 @@ import { PlayerData } from "./player-data/player-data.component"
 
 export interface Config {
   tournamentName: string
-  groups: Map<string, GroupConfig>
+  groups: GroupConfig[]
 }
 
 export interface GroupConfig {
@@ -20,7 +20,8 @@ export interface ContactDetails {
 }
 
 export interface Player {
-  playerData: PlayerData,
+  id: number,
   group: string,
+  playerData: PlayerData,
   contactDetails: ContactDetails
 }

@@ -8,9 +8,10 @@ import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvFormGroup, TextControl } from '../../core/form/form-group';
 import { Dialog } from '../../core/dialog';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { Tournament } from '../tournament';
 
 export interface PlayerDialogParams {
-  config: Config,
+  tournament: Tournament,
   lastPlayer: Player | null
 }
 
@@ -46,9 +47,10 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
 
   isGroupDisabled(groupId: string): boolean {
     if (!this.playerData) return true
-    const group = this.params.config.groups.get(groupId)!
-    if (group.maxDwz && (this.playerData.dwz || 0) > group.maxDwz) return true
-    if (group.minYearOfBirth && (this.playerData.yearOfBirth || Infinity) < group.minYearOfBirth) return true
+    const group = this.params.tournament.groups.get(groupId)!
+    // TODO: Move into Group class.
+    if (group.config.maxDwz && (this.playerData.dwz || 0) > group.config.maxDwz) return true
+    if (group.config.minYearOfBirth && (this.playerData.yearOfBirth || Infinity) < group.config.minYearOfBirth) return true
     return false
   }
 
@@ -65,7 +67,7 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
     if (playerData && (!this.selectedGroup || this.isGroupDisabled(this.selectedGroup))) {
       this.formData.controls.group.setValue(null)
       if (playerData?.dwz && playerData.yearOfBirth) {
-        for (let groupId of Array.from(this.params.config.groups.keys()).reverse()) {
+        for (let groupId of Array.from(this.params.tournament.groups.keys()).reverse()) {
           if (!this.isGroupDisabled(groupId)) {
             this.formData.controls.group.setValue(groupId)
             break

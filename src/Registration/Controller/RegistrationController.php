@@ -66,23 +66,26 @@ class RegistrationController extends AbstractController {
   ) {}
 
   #[Route('{tournament}/', name: 'registration')]
-  public function registration(): Response {
+  public function registration(string $tournament): Response {
     return $this->render('@registration/registration.html.twig', [
-      'reg_config' => json_encode(TEST_CONFIG)
+      'reg_config' => json_encode(TEST_CONFIG),
+      'reg_players' => json_encode($this->getPlayers($tournament))
     ]);
   }
 
   #[Route('api/{tournament}/players/', name: 'players')]
   public function players(string $tournament): Response {
-    // TODO: Redact contact details, YOB etc.
-    $repo = $this->mainEntityManager->getRepository(Entity\PlayerRegistration::class);
-    $players = $repo->findByTournament($tournament);
-    $players = array_map(fn($p) => PlayerRegistration::fromEntity($p), $players);
-    return new JsonResponse($players);
+    return new JsonResponse($this->getPlayers($tournament));
   }
 
   #[Route('api/{tournament}/players/', methods: ['POST'], name: 'players_register')]
   public function registerPlayer(#[MapRequestPayload] RegisterPlayerRequest $request): Response {
     return new JsonResponse();
+  }
+
+  private function getPlayers(string $tournament): array {
+    $repo = $this->mainEntityManager->getRepository(Entity\PlayerRegistration::class);
+    $players = $repo->findByTournament($tournament);
+    return array_map(fn($p) => PlayerRegistration::fromEntity($p), $players);
   }
 }
