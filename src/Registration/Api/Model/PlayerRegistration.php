@@ -35,7 +35,6 @@ class PlayerRegistration
     $p->gender = $player->gender;
     $p->fideTitle = $player->fideTitle;
     $p->fideId = $player->fideId;
-    $p->fideCountry = $player->fideCountry;
 
     // Populate from DWZ database where possible.
     $p->club = $player->club ?? $player->dwzPlayer?->club->name ?? '';

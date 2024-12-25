@@ -74,13 +74,31 @@ class RegistrationController extends AbstractController {
     ]);
   }
 
-  #[Route('api/{tournament}/players/', name: 'players')]
+  #[Route('api/{tournament}/players/', methods: ['GET'], name: 'players')]
   public function players(string $tournament): Response {
     return new JsonResponse($this->getPlayers($tournament));
   }
 
   #[Route('api/{tournament}/players/', methods: ['POST'], name: 'players_register')]
-  public function registerPlayer(#[MapRequestPayload] RegisterPlayerRequest $request): Response {
+  public function registerPlayer(string $tournament, #[MapRequestPayload] PlayerRegistration $request): Response {
+    $player = new Entity\PlayerRegistration();
+    $player->tournament = $tournament;
+    $player->group = $request->group;
+    $player->name = $request->playerData->name;
+    $player->club = $request->playerData->club;
+    $player->zps = $request->playerData->zps;
+    $player->memberId = $request->playerData->memberId;
+    $player->gender = $request->playerData->gender;
+    $player->yearOfBirth = $request->playerData->yearOfBirth;
+    $player->dwz = $request->playerData->dwz;
+    $player->elo = $request->playerData->elo;
+    $player->fideTitle = $request->playerData->fideTitle;
+    $player->fideId = $request->playerData->fideId;
+    $player->contactName = $request->contactDetails->name;
+    $player->contactEMail = $request->contactDetails->email;
+
+    $this->mainEntityManager->persist($player);
+    $this->mainEntityManager->flush();
     return new JsonResponse();
   }
 

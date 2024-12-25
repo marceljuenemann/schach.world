@@ -59,9 +59,6 @@ class PlayerRegistration
   #[ORM\Column(name: "fide_id")]
   public ?int $fideId;
 
-  #[ORM\Column(name: "fide_country", length: 3)]
-  public ?string $fideCountry;
-
   #[ORM\Column(name: "contact_name", length: 60)]
   public string $contactName;
 

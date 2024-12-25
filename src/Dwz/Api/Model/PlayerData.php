@@ -18,7 +18,7 @@ class PlayerData
   #[Assert\Regex('/^.+, .+$/')]
   public string $name;
 
-  public string $club;
+  public ?string $club;
   
   #[Assert\Regex('/^[A-Z0-9]{5}$/')]
   public ?string $zps;
@@ -51,7 +51,7 @@ class PlayerData
 
   public ?string $uri;
   
-  static function fromDwzEntity(Player $player): PLayerData {
+  static function fromDwzEntity(Player $player): PlayerData {
     $data = new PlayerData();
     $data->name = str_replace(',', ', ', $player->name);
     $data->club = $player->club->name;
