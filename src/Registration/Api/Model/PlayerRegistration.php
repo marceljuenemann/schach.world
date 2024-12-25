@@ -33,19 +33,14 @@ class PlayerRegistration
     $p->zps = $player->zps;
     $p->memberId = $player->memberId;
     $p->gender = $player->gender;
-    $p->dwz = $player->dwz;  // TODO: Populate from DWZ database where possible.
-    $p->elo = $player->elo;  // TODO: Populate from DWZ database where possible.
     $p->fideTitle = $player->fideTitle;
     $p->fideId = $player->fideId;
     $p->fideCountry = $player->fideCountry;
 
-    if ($player->club) {
-      $p->club = $player->club;
-    } else {
-      // TODO: Populate from DWZ database.
-      $p->club = 'POPULATE ME';
-    }
-
+    // Populate from DWZ database where possible.
+    $p->club = $player->club ?? $player->dwzPlayer?->club->name ?? '';
+    $p->dwz = $player->dwz ?? $player->dwzPlayer?->dwz;
+    $p->elo = $player->elo ?? $player->dwzPlayer?->elo;
 
     // Only populate if authorized.
     // $p->yearOfBirth = $player->yearOfBirth;

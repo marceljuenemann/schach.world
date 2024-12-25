@@ -3,6 +3,7 @@
 namespace Nsv\Registration\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Nsv\Dwz\Entity\Player;
 
 #[ORM\Entity]
 #[ORM\Table(name: 'registration_players')]
@@ -66,4 +67,9 @@ class PlayerRegistration
 
   #[ORM\Column(name: "contact_email", length: 100)]
   public string $contactEMail;
+
+  #[ORM\ManyToOne(targetEntity: Player::class)]
+  #[ORM\JoinColumn(name: "zps", referencedColumnName: "ZPS")]
+  #[ORM\JoinColumn(name: "member_id", referencedColumnName: "Mgl_Nr")]
+  public ?Player $dwzPlayer;
 }
