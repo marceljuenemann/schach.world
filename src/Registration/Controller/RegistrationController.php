@@ -68,6 +68,7 @@ class RegistrationController extends AbstractController {
   #[Route('{tournament}/', name: 'registration')]
   public function registration(string $tournament): Response {
     return $this->render('@registration/registration.html.twig', [
+      'title' => TEST_CONFIG['tournamentName'],
       'reg_config' => json_encode(TEST_CONFIG),
       'reg_players' => json_encode($this->getPlayers($tournament))
     ]);

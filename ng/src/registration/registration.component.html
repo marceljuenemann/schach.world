@@ -1,5 +1,3 @@
-<h4>{{tournament!.config.tournamentName}}</h4>
-
 <button (click)="openRegistration()" type="button" class="btn btn-primary">
   <span class="dashicons dashicons-plus" style="vertical-align: bottom"></span>
   Anmelden
@@ -11,3 +9,40 @@
   </div>
 }
 
+@for (group of tournament!.groups.values(); track group.id) {
+  <h4 class="mt-4">{{group.name}}</h4>
+
+  @if (group.players.length) {
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Verein</th>
+          <th>DWZ</th>
+          <th>ELO</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (player of group.players; track player.id) {
+          <tr>
+            <td>
+              <b>{{ player.playerData.fideTitle }}</b>
+              {{ player.playerData.name }}
+            </td>
+            <td>{{ player.playerData.club }}</td>
+            <td>{{ player.playerData.dwz }}</td>
+            <td>{{ player.playerData.elo }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+
+    @if (group.players.length > 5) {
+      <i>{{ group.players.length }} Anmeldungen</i>
+    }
+  } @else {
+    <div class="alert alert-secondary">
+      Bislang keine Anmeldungen
+    </div>
+  }
+}

@@ -31,4 +31,8 @@ export class Group {
     return this.config.name
   }
 
+  get players() {
+    return this.tournament.players.filter(p => p.group === this.id)
+  }
+
 }
