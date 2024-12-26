@@ -16,6 +16,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 // See /ng/src/registration/types.ts for schema.
 const TEST_CONFIG = [
+  'id' => 'test',
   'tournamentName' => 'Testturnier 2024',
   'groups' => [
     [

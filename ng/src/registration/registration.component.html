@@ -3,7 +3,7 @@
   Anmelden
 </button>
 
-@for (player of players; track $index) {
+@for (player of registeredPlayers; track $index) {
   <div class="alert alert-success mt-3">
     {{player.playerData.name}} wurde angemeldet
   </div>

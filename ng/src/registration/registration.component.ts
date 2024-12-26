@@ -1,8 +1,9 @@
-import { Component, Injector, Input, OnInit } from '@angular/core';
-import { Config, GroupConfig, Player } from './types';
+import { Component, Input, OnInit } from '@angular/core';
+import { Player } from './types';
 import { PlayerDialogComponent, PlayerDialogParams } from './player-dialog/player-dialog.component';
 import { DialogService } from '../core/dialog.service';
 import { Tournament } from './tournament';
+import { RegistrationService } from './registration.service';
 
 @Component({
   selector: 'nsv-registration',
@@ -16,10 +17,12 @@ export class RegistrationComponent implements OnInit {
   @Input({alias: "players"}) playersString: string
 
   tournament: Tournament | null = null
-  players: Player[] = []
-  lastPlayer: Player | null = null
+  registeredPlayers: Player[] = []
 
-  constructor(private dialogService: DialogService) {}
+  constructor(
+    private dialogService: DialogService,
+    private registrationService: RegistrationService
+  ) {}
 
   ngOnInit() {
     this.tournament = new Tournament(
@@ -30,12 +33,14 @@ export class RegistrationComponent implements OnInit {
 
   async openRegistration() {
     // TODO: Make scrollable within the dialog
-    this.dialogService.open<PlayerDialogParams>(PlayerDialogComponent, {
+    const player = await this.dialogService.open<PlayerDialogParams>(PlayerDialogComponent, {
       tournament: this.tournament!,
-      lastPlayer: this.lastPlayer
-    }).result.then(result => {
-      this.players.push(result)
-      this.lastPlayer = result
-    })
+      lastPlayer: this.registeredPlayers.slice(-1)[0]
+    }).result;
+    this.registeredPlayers.push(player)
+
+    // Reload player list.
+    const players = await this.registrationService.players(this.tournament!.config.id)
+    this.tournament = new Tournament(this.tournament!.config, players)
   }
 }
