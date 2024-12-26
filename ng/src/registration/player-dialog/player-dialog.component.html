@@ -2,7 +2,7 @@
 <!-- TODO: Probably should have a DialogContainer Consider using a dialog helper rather than duplicating this. -->
 <div class="modal-header">
   <h4 class="modal-title" id="modal-basic-title">Anmeldung</h4>
-  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
 </div>
 <div class="modal-body">
   <player-data class="mb-4" [lastPlayer]="params.lastPlayer" [validationErrors]="errors?.validationErrors" (onPlayerDataChange)="onPlayerDataChange($event)"></player-data>
@@ -26,10 +26,4 @@
 
   <nsv-form [form]="contactDetails" [validationErrors]="errors?.validationErrors" validationErrorPrefix="contactDetails." (keyup.enter)="save()"></nsv-form>
 </div>
-<div class="modal-footer">
-  @for (message of errors?.errorMessages; track $index) {
-    <div class="alert alert-danger w-100" role="alert">{{ message }}</div>
-  }
-  <button type="button" class="btn btn-secondary" (click)="modal.dismiss('Cancel button')">Abbrechen</button>
-  <button type="button" class="btn btn-primary" (click)="saveDialog()" [disabled]="!isValid">Speichern</button>
-</div>
+<nsv-dialog-footer [dialog]="this"></nsv-dialog-footer>

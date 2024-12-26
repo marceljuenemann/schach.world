@@ -7,7 +7,7 @@ export const DIALOG_PARAMS = new InjectionToken<any>('NsvDialogParams')
 /**
  * Base class for dialog components to help with parameter injection.
  */
-export abstract class Dialog<TParams, TResult = void> {
+export abstract class NsvDialog<TParams, TResult = void> {
   // Reference to the NgbActiveModal.
   public modal = inject(NgbActiveModal)
 

@@ -5,9 +5,10 @@ import { RegistrationService } from '../registration.service';
 import { firstValueFrom } from 'rxjs';
 import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvFormGroup, TextControl } from '../../core/form/form-group';
-import { Dialog } from '../../core/dialog/dialog';
+import { NsvDialog } from '../../core/dialog/dialog';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Tournament } from '../tournament';
+import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer.component';
 
 export interface PlayerDialogParams {
   tournament: Tournament,
@@ -17,11 +18,11 @@ export interface PlayerDialogParams {
 @Component({
   selector: 'player-dialog',
   standalone: true,
-  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule],
+  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent],
   templateUrl: './player-dialog.component.html',
   styleUrl: './player-dialog.component.css'
 })
-export class PlayerDialogComponent extends Dialog<PlayerDialogParams, Player> {
+export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player> {
   playerData: PlayerData | null = null
 
   formData = new FormGroup({
