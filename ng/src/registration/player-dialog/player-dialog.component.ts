@@ -1,12 +1,11 @@
-import { Component, Inject, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { PlayerData, PlayerDataComponent } from '../player-data/player-data.component';
-import { Config, Player } from '../types';
+import { Player } from '../types';
 import { RegistrationService } from '../registration.service';
 import { firstValueFrom } from 'rxjs';
-import { NsvError, processApiError } from '../../core/api';
 import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvFormGroup, TextControl } from '../../core/form/form-group';
-import { Dialog } from '../../core/dialog';
+import { Dialog } from '../../core/dialog/dialog';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Tournament } from '../tournament';
 
@@ -22,9 +21,8 @@ export interface PlayerDialogParams {
   templateUrl: './player-dialog.component.html',
   styleUrl: './player-dialog.component.css'
 })
-export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
+export class PlayerDialogComponent extends Dialog<PlayerDialogParams, Player> {
   playerData: PlayerData | null = null
-  errors: NsvError | null = null
 
   formData = new FormGroup({
     group: new FormControl()
@@ -77,20 +75,17 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
     }
   }
 
-  get isValid() {
+  override get isValid() {
     return this.playerData && this.selectedGroup && this.contactDetails.valid
   }
 
-  save() {
-    if (!this.isValid) return
+  override async save(): Promise<Player> {
     const player = {
       playerData: this.playerData!,
       group: this.formData.controls.group.value,
       contactDetails: this.contactDetails.value
     } as Player
-    firstValueFrom(this.registrationService.registerPlayer('test', player)).then(
-      success => this.modal.close(player),
-      error => this.errors = processApiError(error)
-    )
+    await firstValueFrom(this.registrationService.registerPlayer('test', player))
+    return player
   }
 }

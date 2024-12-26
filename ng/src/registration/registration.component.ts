@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Player } from './types';
 import { PlayerDialogComponent, PlayerDialogParams } from './player-dialog/player-dialog.component';
-import { DialogService } from '../core/dialog.service';
+import { DialogService } from '../core/dialog/dialog.service';
 import { Tournament } from './tournament';
 import { RegistrationService } from './registration.service';
 
