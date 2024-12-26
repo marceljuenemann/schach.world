@@ -7,6 +7,7 @@ use Nsv\Dwz\Repository\PlayerRepository;
 use Nsv\Registration\Repository\PlayerRegistrationRepository;
 use Nsv\Registration\Api\Model\PlayerRegistration;
 use Nsv\Registration\Entity as Entity;
+use Nsv\WebApp\Core\ApiResponse;
 use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -85,7 +86,7 @@ class RegistrationController extends AbstractController {
 
   #[Route('api/{tournament}/players/', methods: ['GET'], name: 'players')]
   public function players(string $tournament): Response {
-    return new JsonResponse($this->getPlayers($tournament));
+    return new ApiResponse($this->getPlayers($tournament));
   }
 
   #[Route('api/{tournament}/players/', methods: ['POST'], name: 'players_register')]
@@ -142,8 +143,9 @@ class RegistrationController extends AbstractController {
   }
 
   private function getPlayers(string $tournament): array {
+    $includeSensitive = $this->isManager(TEST_CONFIG);
     $players = $this->repository->findByTournament($tournament);
-    return array_map(fn($p) => PlayerRegistration::fromEntity($p), $players);
+    return array_map(fn($p) => PlayerRegistration::fromEntity($p, $includeSensitive), $players);
   }
 
   private function isManager($config): bool {

@@ -38,12 +38,15 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     private registrationService: RegistrationService
   ) {
     super()
-    if (this.params.lastPlayer) {
+    if (this.params.player) {
+      this.formData.patchValue(this.params.player)
+    } else if (this.params.lastPlayer) {
       this.contactDetails.setValue(this.params.lastPlayer.contactDetails)
     }
   }
 
   isGroupDisabled(groupId: string): boolean {
+    if (this.editing) return false
     if (!this.playerData) return true
     const group = this.params.tournament.groups.get(groupId)!
     // TODO: Move into Group class.
@@ -54,6 +57,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
 
   onPlayerDataChange(playerData: PlayerData | null) {
     this.playerData = playerData
+    if (this.editing) return
     if (!this.contactDetails.controls.name.value && playerData && playerData.name) {
       this.contactDetails.controls.name.setValue(playerData.name)
     }

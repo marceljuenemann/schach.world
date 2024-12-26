@@ -23,7 +23,7 @@ class PlayerRegistration
   public ContactDetails $contactDetails;
 
 
-  static function fromEntity(Entity\PlayerRegistration $player): PlayerRegistration {
+  static function fromEntity(Entity\PlayerRegistration $player, bool $includeSensitive): PlayerRegistration {
     $reg = new PlayerRegistration();
     $reg->id = $player->id;
     $reg->group = $player->group;
@@ -42,9 +42,10 @@ class PlayerRegistration
     $p->elo = $player->elo ?? $player->dwzPlayer?->elo;
 
     // Only populate if authorized.
-    // $p->yearOfBirth = $player->yearOfBirth;
-    //$reg->contactDetails = ContactDetails::fromEntity($player);
-
+    if ($includeSensitive) {
+      $p->yearOfBirth = $player->yearOfBirth;
+      $reg->contactDetails = ContactDetails::fromEntity($player);
+    }
     return $reg;
   } 
 }
