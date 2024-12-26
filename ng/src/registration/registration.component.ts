@@ -15,6 +15,7 @@ import { RegistrationService } from './registration.service';
 export class RegistrationComponent implements OnInit {
   @Input({alias: "config"}) configString: string
   @Input({alias: "players"}) playersString: string
+  @Input({alias: "manager"}) isManager: boolean
 
   tournament: Tournament | null = null
   registeredPlayers: Player[] = []
@@ -42,5 +43,13 @@ export class RegistrationComponent implements OnInit {
     // Reload player list.
     const players = await this.registrationService.players(this.tournament!.config.id)
     this.tournament = new Tournament(this.tournament!.config, players)
+  }
+
+  async editPlayer(player: Player) {
+    alert("Edit ")
+  }
+
+  async deletePlayer(player: Player) {
+    alert("Delete ")
   }
 }

@@ -7,6 +7,7 @@ use Nsv\Dwz\Repository\PlayerRepository;
 use Nsv\Registration\Repository\PlayerRegistrationRepository;
 use Nsv\Registration\Api\Model\PlayerRegistration;
 use Nsv\Registration\Entity as Entity;
+use Nsv\WebApp\Core\WordPress\Auth;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,6 +19,7 @@ use Symfony\Component\Routing\Annotation\Route;
 const TEST_CONFIG = [
   'id' => 'test',
   'tournamentName' => 'Testturnier 2024',
+  'managers' => ['marcel', 'beni'],
   'groups' => [
     [
       'id' => 'A',
@@ -75,7 +77,8 @@ class RegistrationController extends AbstractController {
     return $this->render('@registration/registration.html.twig', [
       'title' => TEST_CONFIG['tournamentName'],
       'reg_config' => json_encode(TEST_CONFIG),
-      'reg_players' => json_encode($this->getPlayers($tournament))
+      'reg_players' => json_encode($this->getPlayers($tournament)),
+      'is_manager' => $this->isManager(TEST_CONFIG)
     ]);
   }
 
@@ -130,5 +133,9 @@ class RegistrationController extends AbstractController {
   private function getPlayers(string $tournament): array {
     $players = $this->repository->findByTournament($tournament);
     return array_map(fn($p) => PlayerRegistration::fromEntity($p), $players);
+  }
+
+  private function isManager($config): bool {
+    return Auth::isAdmin() || in_array(Auth::userName(), $config['managers']);
   }
 }

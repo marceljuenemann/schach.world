@@ -20,6 +20,9 @@
           <th>Verein</th>
           <th>DWZ</th>
           <th>ELO</th>
+          @if (isManager) {
+            <th></th>
+          }
         </tr>
       </thead>
       <tbody>
@@ -32,6 +35,12 @@
             <td>{{ player.playerData.club }}</td>
             <td>{{ player.playerData.dwz }}</td>
             <td>{{ player.playerData.elo }}</td>
+            @if (isManager) {
+              <td class="text-end">
+                <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
+                <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
+              </td>
+            }
           </tr>
         }
       </tbody>

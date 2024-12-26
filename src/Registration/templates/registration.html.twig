@@ -5,7 +5,7 @@
 
 {% block content %}
 
-  <nsv-ng-registration config="{{reg_config}}" players="{{reg_players}}"></nsv-ng-registration>
+  <nsv-ng-registration config="{{reg_config}}" players="{{reg_players}}" manager="{{is_manager}}"></nsv-ng-registration>
 
   <div class="text-muted text-end">
     {% if nsv_is_logged_in() %}
