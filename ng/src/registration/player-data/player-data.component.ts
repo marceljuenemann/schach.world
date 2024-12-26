@@ -25,8 +25,13 @@ type PlayerOption = {name: string, data?: DwzPlayer}
 export class PlayerDataComponent {
   private subscription
 
-  @Input() _showAllFields: boolean = false
+  // If set to true, users can't change details of player data selected from
+  // the DWZ database.
+  @Input() restrictEditing: boolean = true
+
+  // If set, players with this ZPS will be suggested first.
   @Input() preferredZps: string | undefined = undefined
+
   @Input() validationErrors: ValidationErrors | undefined = undefined
 
   // The selected database entry, or the player name in case of manual input.
@@ -77,12 +82,6 @@ export class PlayerDataComponent {
     this.editing = true
   }
 
-  // TODO: replace with restrictEditing
-  @Input()
-  set showAllFields(value: boolean) {
-    this._showAllFields = value
-  }
-
   constructor(private dwz: DwzService) {
     this.subscription = this.selectedPlayer.valueChanges.subscribe(player => {
       if (!player && !this.editing) {
@@ -98,7 +97,7 @@ export class PlayerDataComponent {
   }
 
   get visibleControls() {
-    if (this._showAllFields) {
+    if (!this.restrictEditing) {
       return null
     } else if (this.isManualEntry) {
       return [this.form.controls.yearOfBirth, this.form.controls.gender]

@@ -52,7 +52,7 @@
 
   <nsv-form
     [form]="form"
-    [disabled]="!_showAllFields && !isManualEntry"
+    [disabled]="restrictEditing && !isManualEntry"
     [visibleControls]="visibleControls"
     [validationErrors]="validationErrors"
     validationErrorPrefix="playerData."
