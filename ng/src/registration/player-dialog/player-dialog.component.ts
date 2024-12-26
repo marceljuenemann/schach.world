@@ -12,6 +12,7 @@ import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer
 
 export interface PlayerDialogParams {
   tournament: Tournament,
+  isManager: boolean,
   player?: Player,
   lastPlayer?: Player | null
 }
@@ -46,7 +47,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
   }
 
   isGroupDisabled(groupId: string): boolean {
-    if (this.editing) return false
+    if (this.params.isManager) return false
     if (!this.playerData) return true
     const group = this.params.tournament.groups.get(groupId)!
     // TODO: Move into Group class.

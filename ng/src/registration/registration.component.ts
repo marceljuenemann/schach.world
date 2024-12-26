@@ -35,6 +35,7 @@ export class RegistrationComponent implements OnInit {
   async openRegistration() {
     const player = await this.dialogService.open<PlayerDialogParams>(PlayerDialogComponent, {
       tournament: this.tournament!,
+      isManager: this.isManager,
       lastPlayer: this.registeredPlayers.slice(-1)[0]
     }).result;
     this.registeredPlayers.push(player)
@@ -43,7 +44,9 @@ export class RegistrationComponent implements OnInit {
 
   async editPlayer(player: Player) {
     await this.dialogService.open<PlayerDialogParams>(PlayerDialogComponent, {
-      tournament: this.tournament!, player
+      tournament: this.tournament!,
+      isManager: this.isManager,
+      player
     }).result;
     this.reloadPlayerList()
   }

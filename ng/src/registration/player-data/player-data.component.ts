@@ -25,6 +25,7 @@ type PlayerOption = {name: string, data?: DwzPlayer}
 export class PlayerDataComponent {
   private subscription
 
+  @Input() _showAllFields: boolean = false
   @Input() preferredZps: string | undefined = undefined
   @Input() validationErrors: ValidationErrors | undefined = undefined
 
@@ -67,12 +68,19 @@ export class PlayerDataComponent {
   /**
    * Input for initial player data in case of editing.
    */
-  @Input() set initialPlayerData(playerData: PlayerData | undefined) {
+  @Input()
+  set initialPlayerData(playerData: PlayerData | undefined) {
     if (!playerData) return
     this.selectedPlayer.setValue({name: playerData.name})
     this.club.setValue(playerData.club)
     this.form.patchValue(playerData)
     this.editing = true
+    this.updateControlStatus()
+  }
+
+  @Input()
+  set showAllFields(value: boolean) {
+    this._showAllFields = value
     this.updateControlStatus()
   }
 
@@ -92,8 +100,10 @@ export class PlayerDataComponent {
     })
   }
 
+  // TODO: Make this more declarative, e.g. an attribute on nsv-form.
   private updateControlStatus() {
-    if (this.editing) {
+    if (this._showAllFields) {
+      this.form.enable()
       this.form.showControls()
     } else {
       this.form.hideControls()

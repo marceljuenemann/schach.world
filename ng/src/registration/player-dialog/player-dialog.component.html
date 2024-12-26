@@ -6,6 +6,7 @@
   <player-data class="mb-4"
     (onPlayerDataChange)="onPlayerDataChange($event)"
     [initialPlayerData]="params.player?.playerData"
+    [showAllFields]="params.isManager"
     [preferredZps]="params.lastPlayer?.playerData?.zps"
     [validationErrors]="errors?.validationErrors"
   ></player-data>
