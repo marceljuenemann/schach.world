@@ -12,6 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -126,6 +127,16 @@ class RegistrationController extends AbstractController {
     }
 
     $this->mainEntityManager->persist($player);
+    $this->mainEntityManager->flush();
+    return new JsonResponse();
+  }
+
+  #[Route('api/{tournament}/players/{id}/', methods: 'DELETE', name: 'delete_player')]
+  public function delete_player(string $tournament, Entity\PlayerRegistration $registration): Response {
+    if (!$this->isManager(TEST_CONFIG) || $registration->tournament !== $tournament) {
+      throw new AccessDeniedHttpException();
+    }
+    $this->mainEntityManager->remove($registration);
     $this->mainEntityManager->flush();
     return new JsonResponse();
   }

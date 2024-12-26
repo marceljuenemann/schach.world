@@ -39,10 +39,7 @@ export class RegistrationComponent implements OnInit {
       lastPlayer: this.registeredPlayers.slice(-1)[0]
     }).result;
     this.registeredPlayers.push(player)
-
-    // Reload player list.
-    const players = await this.registrationService.players(this.tournament!.config.id)
-    this.tournament = new Tournament(this.tournament!.config, players)
+    this.reloadPlayerList()
   }
 
   async editPlayer(player: Player) {
@@ -55,14 +52,14 @@ export class RegistrationComponent implements OnInit {
       message: `${player.playerData.name} wirklich löschen?`,
       confirmText: "Löschen",
       onConfirm: async () => {
-        console.log("Saving")
-        /*
-        await this.registrationService.deletePlayer(player.id)
-
-        this.registeredPlayers = this.registeredPlayers.filter(p => p !== player)
-        return player
-        */
+        await this.registrationService.deletePlayer(this.tournament!.config.id, player.id)
+        this.reloadPlayerList()
       }
     })
+  }
+
+  private async reloadPlayerList() {
+    const players = await this.registrationService.players(this.tournament!.config.id)
+    this.tournament = new Tournament(this.tournament!.config, players)
   }
 }
