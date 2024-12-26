@@ -5,7 +5,6 @@ import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { outputFromObservable } from '@angular/core/rxjs-interop';
 import { ValidationErrors } from '../../core/api';
-import { Player } from '../types';
 import { IntControl, NsvFormGroup, TextControl } from '../../core/form/form-group';
 import { NsvFormComponent } from '../../core/form/form.component';
 
@@ -32,6 +31,7 @@ export class PlayerDataComponent {
   // The selected database entry, or the player name in case of manual input.
   selectedPlayer = new FormControl<PlayerOption|null>(null)
   validatePlayerSelection = false  // Replace with opts = {updateOn: 'blur'}?
+  editing: boolean = false
 
   club = new FormControl('')
   form = new NsvFormGroup({
@@ -64,14 +64,26 @@ export class PlayerDataComponent {
       }
     })))
 
+  /**
+   * Input for initial player data in case of editing.
+   */
+  @Input() set initialPlayerData(playerData: PlayerData | undefined) {
+    if (!playerData) return
+    this.selectedPlayer.setValue({name: playerData.name})
+    this.club.setValue(playerData.club)
+    this.form.patchValue(playerData)
+    this.editing = true
+    this.updateControlStatus()
+  }
+
   constructor(private dwz: DwzService) {
     this.updateControlStatus()
     this.subscription = this.selectedPlayer.valueChanges.subscribe(player => {
-      if (!player) {
+      if (!player && !this.editing) {
         // No player selected.
         this.club.reset()
         this.form.reset()
-      } else if (player.data) {
+      } else if (player && player.data) {
         // Player was selected from the database.
         this.club.setValue(player.data.club)
         this.form.patchValue(player.data as any)
@@ -81,15 +93,19 @@ export class PlayerDataComponent {
   }
 
   private updateControlStatus() {
-    this.form.hideControls()
-    if (this.isManualEntry) {
-      this.form.enable()
-      this.form.controls.yearOfBirth.visible = true
-      this.form.controls.gender.visible = true
+    if (this.editing) {
+      this.form.showControls()
     } else {
-      this.form.disable()
-      this.form.controls.dwz.visible = true
-      this.form.controls.elo.visible = true
+      this.form.hideControls()
+      if (this.isManualEntry) {
+        this.form.enable()
+        this.form.controls.yearOfBirth.visible = true
+        this.form.controls.gender.visible = true
+      } else {
+        this.form.disable()
+        this.form.controls.dwz.visible = true
+        this.form.controls.elo.visible = true
+      }
     }
   }
 

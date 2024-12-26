@@ -11,8 +11,8 @@
       type="text"
       class="form-control"
       [formControl]="selectedPlayer"
-      [class.is-valid]="selectedPlayer.value && selectedPlayer.value.data"
-      [class.is-invalid]="validatePlayerSelection && !selectedPlayer.value"
+      [class.is-valid]="!editing && selectedPlayer.value && selectedPlayer.value.data"
+      [class.is-invalid]="!editing && validatePlayerSelection && !selectedPlayer.value"
       (blur)="validatePlayerSelection = true"
       [ngbTypeahead]="search"
       [resultTemplate]="rt"
@@ -26,7 +26,7 @@
     <div class="invalid-feedback">
       Geben Sie den Name im Format <i>Nachname, Vorname</i> ein und wählen Sie einen Eintrag aus der Mitgliederdatenbank aus
     </div>
-    @if (isManualEntry) {
+    @if (!editing && isManualEntry) {
       <div class="small">
         Teilnehmer:in nicht in Mitgliederdatenbank
       </div>

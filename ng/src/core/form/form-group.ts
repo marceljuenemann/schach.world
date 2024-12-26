@@ -14,6 +14,12 @@ export class NsvFormGroup<T extends {[K in keyof T]: NsvFormControl<any>} = any>
       (control as NsvFormControl).visible = false
     }
   }
+
+  showControls() {
+    for (const control of Object.values(this.controls)) {
+      (control as NsvFormControl).visible = true
+    }
+  }
 }
 
 export abstract class NsvFormControl<T = any> extends FormControl {

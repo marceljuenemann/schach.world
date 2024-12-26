@@ -3,7 +3,12 @@
   <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
 </div>
 <div class="modal-body">
-  <player-data class="mb-4" [preferredZps]="params.lastPlayer?.playerData?.zps" [validationErrors]="errors?.validationErrors" (onPlayerDataChange)="onPlayerDataChange($event)"></player-data>
+  <player-data class="mb-4"
+    (onPlayerDataChange)="onPlayerDataChange($event)"
+    [initialPlayerData]="params.player?.playerData"
+    [preferredZps]="params.lastPlayer?.playerData?.zps"
+    [validationErrors]="errors?.validationErrors"
+  ></player-data>
 
   <form [formGroup]="formData" class="mt-4" (keyup.enter)="save()">
     @for (group of params.tournament.groups.values(); track group.id) {
