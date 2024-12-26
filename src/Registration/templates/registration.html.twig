@@ -7,6 +7,15 @@
 
   <nsv-ng-registration config="{{reg_config}}" players="{{reg_players}}"></nsv-ng-registration>
 
+  <div class="text-muted text-end">
+    {% if nsv_is_logged_in() %}
+      Angemeldet als {{ nsv_username() }}
+      <a href="{{ nsv_logout_redirect(app.request.uri) }}" class="text-muted">(abmelden)</a>
+    {% else %}
+      <a href="{{ nsv_login_redirect(app.request.uri) }}" class="text-muted">Turnierleitung</a>
+    {% endif %}
+  </div>
+
   {{ include_nsv_ng() }}
 
 {% endblock %}
