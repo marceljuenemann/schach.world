@@ -50,6 +50,19 @@ export class RegistrationComponent implements OnInit {
   }
 
   async deletePlayer(player: Player) {
-    alert("Delete ")
+    this.dialogService.confirm({
+      title: "Spieler löschen",
+      message: `${player.playerData.name} wirklich löschen?`,
+      confirmText: "Löschen",
+      onConfirm: async () => {
+        console.log("Saving")
+        /*
+        await this.registrationService.deletePlayer(player.id)
+
+        this.registeredPlayers = this.registeredPlayers.filter(p => p !== player)
+        return player
+        */
+      }
+    })
   }
 }

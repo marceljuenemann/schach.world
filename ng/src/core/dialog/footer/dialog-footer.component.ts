@@ -10,5 +10,5 @@ import { NsvDialog } from '../dialog';
 })
 export class NsvDialogFooterComponent {
   @Input() dialog: NsvDialog<any, any>
-
+  @Input() saveButtonLabel: string | undefined
 }

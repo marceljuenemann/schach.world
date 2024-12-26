@@ -3,5 +3,5 @@
     <div class="alert alert-danger w-100" role="alert">{{ message }}</div>
   }
   <button type="button" class="btn btn-secondary" (click)="dialog.modal.dismiss()">Abbrechen</button>
-  <button type="button" class="btn btn-primary" (click)="dialog.saveDialog()" [disabled]="!dialog.isValid">Speichern</button>
+  <button type="button" class="btn btn-primary" (click)="dialog.saveDialog()" [disabled]="!dialog.isValid">{{ saveButtonLabel || 'Speichern' }}</button>
 </div>
