@@ -4,6 +4,7 @@ namespace Nsv\Registration\Controller;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Nsv\Dwz\Repository\PlayerRepository;
+use Nsv\Registration\Repository\PlayerRegistrationRepository;
 use Nsv\Registration\Api\Model\PlayerRegistration;
 use Nsv\Registration\Entity as Entity;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -64,6 +65,7 @@ class RegistrationController extends AbstractController {
 
   function __construct(
     private EntityManagerInterface $mainEntityManager,
+    private PlayerRegistrationRepository $repository,
     private PlayerRepository $dwzRepository
   ) {}
 
@@ -125,8 +127,7 @@ class RegistrationController extends AbstractController {
   }
 
   private function getPlayers(string $tournament): array {
-    $repo = $this->mainEntityManager->getRepository(Entity\PlayerRegistration::class);
-    $players = $repo->findByTournament($tournament);
+    $players = $this->repository->findByTournament($tournament);
     return array_map(fn($p) => PlayerRegistration::fromEntity($p), $players);
   }
 }
