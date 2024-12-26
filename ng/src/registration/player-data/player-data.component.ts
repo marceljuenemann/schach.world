@@ -26,7 +26,7 @@ type PlayerOption = {name: string, data?: DwzPlayer}
 export class PlayerDataComponent {
   private subscription
 
-  @Input() lastPlayer: Player | null = null
+  @Input() preferredZps: string | undefined = undefined
   @Input() validationErrors: ValidationErrors | undefined = undefined
 
   // The selected database entry, or the player name in case of manual input.
@@ -101,8 +101,7 @@ export class PlayerDataComponent {
     return text$.pipe(
       switchMap((term: string) => {
         // Get suggestions based on the term.
-        const preferredZps = this.lastPlayer?.playerData?.zps || ''
-        const options = term === '' ? of([]) : this.dwz.findPlayer(term, preferredZps)
+        const options = term === '' ? of([]) : this.dwz.findPlayer(term, this.preferredZps)
         return options.pipe(map((players: DwzPlayer[]) => {
           const options: PlayerOption[] = players.map(p => { return{name: p.name, data: p} })
           // Possibly add option for manual entry.

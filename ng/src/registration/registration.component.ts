@@ -33,7 +33,6 @@ export class RegistrationComponent implements OnInit {
   }
 
   async openRegistration() {
-    // TODO: Make scrollable within the dialog
     const player = await this.dialogService.open<PlayerDialogParams>(PlayerDialogComponent, {
       tournament: this.tournament!,
       lastPlayer: this.registeredPlayers.slice(-1)[0]
@@ -43,7 +42,10 @@ export class RegistrationComponent implements OnInit {
   }
 
   async editPlayer(player: Player) {
-    alert("Edit ")
+    await this.dialogService.open<PlayerDialogParams>(PlayerDialogComponent, {
+      tournament: this.tournament!, player
+    }).result;
+    this.reloadPlayerList()
   }
 
   async deletePlayer(player: Player) {

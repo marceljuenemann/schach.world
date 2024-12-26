@@ -32,8 +32,8 @@ export class DwzService {
   /**
    * Searches for players in the DWZ database.
    */
-  findPlayer(name: string, preferredZps: string): Observable<DwzPlayer[]> {
-    return this.http.get<any>('/dwz/api/players/', {params: {name, preferredZps, active: 1}}).pipe(
+  findPlayer(name: string, preferredZps?: string): Observable<DwzPlayer[]> {
+    return this.http.get<any>('/dwz/api/players/', {params: {name, preferredZps: preferredZps || '', active: 1}}).pipe(
       // TODO: Add a limit parameter.
       map(players => players.slice(0, 6))
     )

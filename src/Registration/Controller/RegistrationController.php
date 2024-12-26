@@ -116,13 +116,13 @@ class RegistrationController extends AbstractController {
     $player->club = $request->playerData->club;
     $player->dwz = $request->playerData->dwz;
     $player->elo = $request->playerData->elo;
-    if ($player->club == $player->dwzPlayer->club->name) {
+    if ($player->club == $player->dwzPlayer?->club?->name) {
       $player->club = null;
     }
-    if ($player->dwz == $player->dwzPlayer->dwz) {
+    if ($player->dwz == $player->dwzPlayer?->dwz) {
       $player->dwz = null;
     }
-    if ($player->elo == $player->dwzPlayer->elo) {
+    if ($player->elo == $player->dwzPlayer?->elo) {
       $player->elo = null;
     }
 

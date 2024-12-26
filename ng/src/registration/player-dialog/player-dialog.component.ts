@@ -12,7 +12,8 @@ import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer
 
 export interface PlayerDialogParams {
   tournament: Tournament,
-  lastPlayer: Player | null
+  player?: Player,
+  lastPlayer?: Player | null
 }
 
 @Component({
@@ -26,13 +27,11 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
   playerData: PlayerData | null = null
 
   formData = new FormGroup({
-    group: new FormControl()
-  })
-
-  // ToDo: move into formData.
-  contactDetails = new NsvFormGroup({
-    name: new TextControl('Kontaktperson', {required: true}),
-    email: new TextControl('E-Mail-Adresse', {required: true})
+    group: new FormControl(),
+    contactDetails: new NsvFormGroup({
+      name: new TextControl('Kontaktperson', {required: true}),
+      email: new TextControl('E-Mail-Adresse', {required: true})
+    })
   })
 
   constructor(
@@ -51,10 +50,6 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     if (group.config.maxDwz && (this.playerData.dwz || 0) > group.config.maxDwz) return true
     if (group.config.minYearOfBirth && (this.playerData.yearOfBirth || Infinity) < group.config.minYearOfBirth) return true
     return false
-  }
-
-  get selectedGroup() {
-    return this.formData.controls.group.value
   }
 
   onPlayerDataChange(playerData: PlayerData | null) {
@@ -82,11 +77,27 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
 
   override async save(): Promise<Player> {
     const player = {
-      playerData: this.playerData!,
-      group: this.formData.controls.group.value,
-      contactDetails: this.contactDetails.value
+      ...this.params.player || {},
+      ...this.formData.value,
+      playerData: this.playerData!
     } as Player
     await firstValueFrom(this.registrationService.registerPlayer('test', player))
     return player
+  }
+
+  private get editing() {
+    return this.params.player
+  }
+
+  private get groupControl() {
+    return this.formData.controls.group
+  }
+
+  get selectedGroup() {
+    return this.groupControl.value
+  }
+
+  get contactDetails() {
+    return this.formData.controls.contactDetails
   }
 }

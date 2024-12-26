@@ -26,7 +26,7 @@ class PlayerRegistration
   #[ORM\ManyToOne(targetEntity: Player::class)]
   #[ORM\JoinColumn(name: "zps", referencedColumnName: "ZPS")]
   #[ORM\JoinColumn(name: "member_id", referencedColumnName: "Mgl_Nr")]
-  public ?Player $dwzPlayer;
+  public ?Player $dwzPlayer = null;
 
   /**
    * If null, the club name should be populated from the DWZ database where possible.
