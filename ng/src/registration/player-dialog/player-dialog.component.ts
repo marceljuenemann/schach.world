@@ -46,29 +46,19 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     }
   }
 
-  isGroupDisabled(groupId: string): boolean {
-    if (this.params.isManager) return false
-    if (!this.playerData) return true
-    const group = this.params.tournament.groups.get(groupId)!
-    // TODO: Move into Group class.
-    if (group.config.maxDwz && (this.playerData.dwz || 0) > group.config.maxDwz) return true
-    if (group.config.minYearOfBirth && (this.playerData.yearOfBirth || Infinity) < group.config.minYearOfBirth) return true
-    return false
-  }
-
   onPlayerDataChange(playerData: PlayerData | null) {
     this.playerData = playerData
-    if (this.editing) return
-    if (!this.contactDetails.controls.name.value && playerData && playerData.name) {
+    if (this.editing || !playerData) return
+    if (!this.contactDetails.controls.name.value && playerData.name) {
       this.contactDetails.controls.name.setValue(playerData.name)
     }
-    // Unselect current group selection and select last valid group.
-    if (playerData && (!this.selectedGroup || this.isGroupDisabled(this.selectedGroup))) {
+    // Possibly unselect current group selection and select last valid group.
+    if (!this.selectedGroup || !this.params.tournament.groups.get(this.selectedGroup)?.mayRegister(playerData)) {
       this.formData.controls.group.setValue(null)
-      if (playerData?.dwz && playerData.yearOfBirth) {
-        for (let groupId of Array.from(this.params.tournament.groups.keys()).reverse()) {
-          if (!this.isGroupDisabled(groupId)) {
-            this.formData.controls.group.setValue(groupId)
+      if (playerData.zps) {
+        for (let group of Array.from(this.params.tournament.groups.values()).reverse()) {
+          if (group.mayRegister(playerData)) {
+            this.formData.controls.group.setValue(group.id)
             break
           }
         }

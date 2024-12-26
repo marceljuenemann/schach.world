@@ -20,7 +20,7 @@
           name="group"
           formControlName="group"
           [value]="group.id"
-          [attr.disabled]="isGroupDisabled(group.id) || null"
+          [attr.disabled]="!this.params.isManager && (!this.playerData || !group.mayRegister(this.playerData)) || null"
           class="form-check-input"
           required>
         <label class="form-check-label" for="tournamentRadio-{{group.id}}">{{group.name}}</label>
