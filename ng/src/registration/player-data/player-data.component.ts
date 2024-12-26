@@ -54,20 +54,12 @@ export class PlayerDataComponent {
   onPlayerDataChange = outputFromObservable<PlayerData|null>(
     combineLatest([this.selectedPlayer.valueChanges, this.club.valueChanges, this.form.valueChanges])
     .pipe(map(([selectedPlayer, club, formData]) => {
-      if (!selectedPlayer || !selectedPlayer.name) return null
-      // TODO: simplify by using form.transformedValue (IntControl performs parseInt)
+      if (!selectedPlayer || !selectedPlayer.name || this.form.invalid) return null
       return {
         name: selectedPlayer.name,
         club: club || '',
-        zps: formData.zps || '',
-        memberId: formData.memberId || '',
-        gender: (formData.gender?.toUpperCase() || null) as any,
-        yearOfBirth: parseInt(formData.yearOfBirth!) || null,
-        dwz: parseInt(formData.dwz!) || null,
-        elo: parseInt(formData.elo!) || null,
-        fideTitle: (formData.fideTitle as any) || null,
-        fideId: parseInt(formData.fideId!) || null
-      }
+        ...this.form.transformedValue
+      } as PlayerData
     })))
 
   /**
