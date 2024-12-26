@@ -11,6 +11,7 @@ export class DialogService {
   constructor(private injector: Injector, private modalService: NgbModal) { }
 
   open<TParams>(component: any, params: TParams, options: NgbModalOptions = {}): NgbModalRef {
+    options.centered = true
     options.injector = Injector.create({
       providers: [{
         provide: DIALOG_PARAMS, useValue: params
