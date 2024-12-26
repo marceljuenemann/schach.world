@@ -93,6 +93,25 @@ class RegistrationController extends AbstractController {
   public function registerPlayer(string $tournament, #[MapRequestPayload] PlayerRegistration $request): Response {
     $player = new Entity\PlayerRegistration();
     $player->tournament = $tournament;
+    $this->populateEntity($request, $player);
+ 
+    $this->mainEntityManager->persist($player);
+    $this->mainEntityManager->flush();
+    return new ApiResponse();
+  }
+
+  #[Route('api/{tournament}/players/{id}/', methods: ['PUT'], name: 'players_update')]
+  public function updatePlayer(string $tournament, Entity\PlayerRegistration $registration, #[MapRequestPayload] PlayerRegistration $request): Response {
+    if (!$this->isManager(TEST_CONFIG) || $registration->tournament !== $tournament) {
+      throw new AccessDeniedHttpException();
+    }
+    $this->populateEntity($request, $registration);
+    $this->mainEntityManager->persist($registration);
+    $this->mainEntityManager->flush();
+    return new ApiResponse();
+  }
+
+  private function populateEntity(PlayerRegistration $request, Entity\PlayerRegistration $player): void {
     $player->group = $request->group;
     $player->name = $request->playerData->name;
     $player->gender = $request->playerData->gender;
@@ -126,10 +145,6 @@ class RegistrationController extends AbstractController {
     if ($player->elo == $player->dwzPlayer?->elo) {
       $player->elo = null;
     }
-
-    $this->mainEntityManager->persist($player);
-    $this->mainEntityManager->flush();
-    return new JsonResponse();
   }
 
   #[Route('api/{tournament}/players/{id}/', methods: 'DELETE', name: 'delete_player')]

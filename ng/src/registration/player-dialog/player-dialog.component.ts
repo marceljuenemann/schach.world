@@ -85,7 +85,11 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
       ...this.formData.value,
       playerData: this.playerData!
     } as Player
-    await firstValueFrom(this.registrationService.registerPlayer('test', player))
+    if (this.editing) {
+      await this.registrationService.updatePlayer(this.params.tournament.config.id, player)
+    } else {
+      await this.registrationService.registerPlayer(this.params.tournament.config.id, player)
+    }
     return player
   }
 

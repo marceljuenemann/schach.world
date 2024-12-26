@@ -16,8 +16,12 @@ export class RegistrationService {
     return lastValueFrom(this.http.get<any>(`${ENDPOINT}/${tournamentId}/players/`))
   }
 
-  registerPlayer(tournamentId: string, player: Player): Observable<void> {
-    return this.http.post<any>(`${ENDPOINT}/${tournamentId}/players/`, player)
+  registerPlayer(tournamentId: string, player: Player): Promise<void> {
+    return lastValueFrom(this.http.post<any>(`${ENDPOINT}/${tournamentId}/players/`, player))
+  }
+
+  updatePlayer(tournamentId: string, player: Player): Promise<void> {
+    return lastValueFrom(this.http.put<any>(`${ENDPOINT}/${tournamentId}/players/${player.id}/`, player))
   }
 
   deletePlayer(tournamentId: string, playerId: number): Promise<void> {
