@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { NsvFormGroup } from './form-group';
+import { NsvFormControl, NsvFormGroup } from './form-group';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ValidationErrors } from '../api';
 
@@ -25,12 +25,28 @@ export class NsvFormComponent {
   @Input() validationErrors: ValidationErrors | undefined = undefined
   @Input() validationErrorPrefix: string = ''
 
+  // Which controls to show (all will be shown if set to null or undefined)
+  @Input() visibleControls: NsvFormControl<any>[] | null | undefined = undefined
+
   // Number of columns to show the inputs in
   @Input() columns: number
 
-  // TODO: Delete, replace with controlIds or similar.
-  get visibleControls() {
+  // Whether to disable the inputs.
+  @Input()
+  set disabled(value: boolean) {
+    if (value) {
+      this.form.disable()
+    } else {
+      this.form.enable()
+    }
+  }
+
+  get controlIds() {
     return Object.keys(this.form.controls)
+  }
+
+  isVisible(control: NsvFormControl<any>): boolean {
+    return !this.visibleControls || this.visibleControls.includes(control)
   }
 
   validationError(controlId: string): string | null {

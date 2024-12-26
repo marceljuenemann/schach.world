@@ -1,9 +1,9 @@
 <form [formGroup]="form">
   <div class="row">
-    @for (id of visibleControls; track id) {
+    @for (id of controlIds; track id) {
       @let control = form.controls[id];
       @let error = validationError(id);
-      @if (control.visible) {
+      @if (isVisible(control)) {
         <div class="{{colClass}}">
           <div class="form-floating">
             <input

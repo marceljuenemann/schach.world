@@ -8,23 +8,10 @@ export class NsvFormGroup<T extends {[K in keyof T]: NsvFormControl<any>} = any>
   constructor(public override controls: T) {
     super(controls)
   }
-
-  hideControls() {
-    for (const control of Object.values(this.controls)) {
-      (control as NsvFormControl).visible = false
-    }
-  }
-
-  showControls() {
-    for (const control of Object.values(this.controls)) {
-      (control as NsvFormControl).visible = true
-    }
-  }
 }
 
 export abstract class NsvFormControl<T = any> extends FormControl {
   public abstract readonly label: string
-  public visible: boolean = true
 }
 
 export class TextControl extends NsvFormControl<string> {

@@ -32,6 +32,7 @@
       </div>
     }
   </div>
+</form>
 <form [formGroup]="form">
 
   <!-- Club selection -->
@@ -49,5 +50,12 @@
     <label for="floatingInput">Verein</label>
   </div>
 
-  <nsv-form [form]="form" [validationErrors]="validationErrors" validationErrorPrefix="playerData." [columns]="2"></nsv-form>
+  <nsv-form
+    [form]="form"
+    [disabled]="!_showAllFields && !isManualEntry"
+    [visibleControls]="visibleControls"
+    [validationErrors]="validationErrors"
+    validationErrorPrefix="playerData."
+    [columns]="2"
+  ></nsv-form>
 </form>

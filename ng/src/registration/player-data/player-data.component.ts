@@ -75,17 +75,15 @@ export class PlayerDataComponent {
     this.club.setValue(playerData.club)
     this.form.patchValue(playerData)
     this.editing = true
-    this.updateControlStatus()
   }
 
+  // TODO: replace with restrictEditing
   @Input()
   set showAllFields(value: boolean) {
     this._showAllFields = value
-    this.updateControlStatus()
   }
 
   constructor(private dwz: DwzService) {
-    this.updateControlStatus()
     this.subscription = this.selectedPlayer.valueChanges.subscribe(player => {
       if (!player && !this.editing) {
         // No player selected.
@@ -96,26 +94,16 @@ export class PlayerDataComponent {
         this.club.setValue(player.data.club)
         this.form.patchValue(player.data as any)
       }
-      this.updateControlStatus()
     })
   }
 
-  // TODO: Make this more declarative, e.g. an attribute on nsv-form.
-  private updateControlStatus() {
+  get visibleControls() {
     if (this._showAllFields) {
-      this.form.enable()
-      this.form.showControls()
+      return null
+    } else if (this.isManualEntry) {
+      return [this.form.controls.yearOfBirth, this.form.controls.gender]
     } else {
-      this.form.hideControls()
-      if (this.isManualEntry) {
-        this.form.enable()
-        this.form.controls.yearOfBirth.visible = true
-        this.form.controls.gender.visible = true
-      } else {
-        this.form.disable()
-        this.form.controls.dwz.visible = true
-        this.form.controls.elo.visible = true
-      }
+      return [this.form.controls.dwz, this.form.controls.elo]
     }
   }
 
