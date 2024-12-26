@@ -36,7 +36,6 @@ CREATE TABLE `registration_players` (
   `elo` int(11) DEFAULT NULL,
   `fide_title` varchar(3) DEFAULT NULL,
   `fide_id` int(11) DEFAULT NULL,
-  `fide_country` varchar(3) DEFAULT NULL,
   `contact_name` varchar(60) NOT NULL,
   `contact_email` varchar(100) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,

@@ -30,8 +30,8 @@ class PlayerRegistration
 
     $reg->playerData = $p = new PlayerData();
     $p->name = $player->name;
-    $p->zps = $player->zps;
-    $p->memberId = $player->memberId;
+    $p->zps = $player->dwzPlayer?->zps;
+    $p->memberId = $player->dwzPlayer?->memberId;
     $p->gender = $player->gender;
     $p->fideTitle = $player->fideTitle;
     $p->fideId = $player->fideId;

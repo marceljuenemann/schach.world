@@ -23,18 +23,17 @@ class PlayerRegistration
   #[ORM\Column(length: 60)]
   public string $name;
 
+  #[ORM\ManyToOne(targetEntity: Player::class)]
+  #[ORM\JoinColumn(name: "zps", referencedColumnName: "ZPS")]
+  #[ORM\JoinColumn(name: "member_id", referencedColumnName: "Mgl_Nr")]
+  public ?Player $dwzPlayer;
+
   /**
    * If null, the club name should be populated from the DWZ database where possible.
    */
   #[ORM\Column(length: 60)]
   public ?string $club;
   
-  #[ORM\Column(length: 5)]
-  public ?string $zps;
-
-  #[ORM\Column(name: "member_id", length: 4)]
-  public ?string $memberId;
-
   #[ORM\Column(length: 1)]
   public ?string $gender;
   
@@ -64,9 +63,4 @@ class PlayerRegistration
 
   #[ORM\Column(name: "contact_email", length: 100)]
   public string $contactEMail;
-
-  #[ORM\ManyToOne(targetEntity: Player::class)]
-  #[ORM\JoinColumn(name: "zps", referencedColumnName: "ZPS")]
-  #[ORM\JoinColumn(name: "member_id", referencedColumnName: "Mgl_Nr")]
-  public ?Player $dwzPlayer;
 }
