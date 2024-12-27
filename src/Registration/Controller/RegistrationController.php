@@ -131,7 +131,7 @@ class RegistrationController extends AbstractController {
   }
 
   private function isManager($config): bool {
-    return Auth::isAdmin() || in_array(Auth::userName(), $config['managers']);
+    return Auth::isAdmin() || in_array(Auth::userName(), $config->managers);
   }
 
   private function getConfig(string $tournament): TournamentConfig {
@@ -150,13 +150,13 @@ class RegistrationController extends AbstractController {
     $email = (new TemplatedEmail())
       // TODO: Add reply to
       ->to($player->contactDetails->email)  // TODO: Add cc to managers.
-      ->subject("[Anmeldung $config[tournamentName]] " . $player->playerData->name)
+      ->subject("[Anmeldung " . $config->tournamentName . "] " . $player->playerData->name)
       ->htmlTemplate('@registration/email/confirmation.html.twig')
       ->context([
         'config' => $config,
         'player' => $player,
         'overviewUri' => $this->generateUrl('registration_overview', [
-          'tournament' => $config['id'],
+          'tournament' => $config->id,
         ], UrlGeneratorInterface::ABSOLUTE_URL)
       ]);
     $this->mailer->send($email);

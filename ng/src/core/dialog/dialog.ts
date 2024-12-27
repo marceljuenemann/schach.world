@@ -14,6 +14,9 @@ export abstract class NsvDialog<TParams, TResult = void> {
   // Parameters passed by the caller.
   public readonly params: TParams = inject(DIALOG_PARAMS)
 
+  // Whether saving is currently in progress.
+  public isSaving: boolean = false
+
   // Errors, usually received from the NSV server.
   public errors: NsvError | null = null
 
@@ -32,9 +35,13 @@ export abstract class NsvDialog<TParams, TResult = void> {
 
   saveDialog() {
     if (!this.isValid) return
+    this.isSaving = true
     this.save().then(
       result => this.modal.close(result),
-      error => this.errors = processApiError(error)
+      error => {
+        this.errors = processApiError(error)
+        this.isSaving = false
+      }
     )
   }
 }
