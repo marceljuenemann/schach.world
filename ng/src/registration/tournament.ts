@@ -21,6 +21,10 @@ export class Tournament {
     deadline.setDate(deadline.getDate() + 1)
     return new Date() >= deadline
   }
+
+  get maxPlayersReached() {
+    return this.players.length >= (this.config.maxPlayers || Infinity)
+  }
 }
 
 export class Group {

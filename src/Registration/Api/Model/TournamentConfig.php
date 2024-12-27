@@ -25,6 +25,11 @@ class TournamentConfig {
   public string $deadline;
 
   /**
+   * Maximum number of players for the tournament in total.
+   */
+  public ?int $maxPlayers;
+
+  /**
    * List of groups that are part of the tournament.
    */
   #[Assert\NotBlank]

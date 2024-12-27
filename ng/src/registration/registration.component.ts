@@ -19,7 +19,7 @@ export class RegistrationComponent implements OnInit {
   @Input({alias: "players"}) playersString: string
   @Input({alias: "manager"}) isManager: boolean
 
-  tournament: Tournament | null = null
+  tournament: Tournament
   registeredPlayers: Player[] = []
 
   constructor(

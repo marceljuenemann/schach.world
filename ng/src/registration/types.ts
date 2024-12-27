@@ -5,6 +5,7 @@ export interface Config {
   id: string
   tournamentName: string
   deadline: string
+  maxPlayers?: number
   groups: GroupConfig[]
   links: Record<string, string>
 }
