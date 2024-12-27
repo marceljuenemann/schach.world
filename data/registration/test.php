@@ -8,7 +8,7 @@ $config->tournamentName = 'Testturnier';
 $config->deadline = '2024-12-27';
 $config->maxPlayers = 38;
 
-$config->managers = ['marcel', 'beni'];
+$config->managers = ['marcel', 'beni', 'joerg'];
 $config->emailCc = [
   'test-cc1@marcel.world',
   'test-cc2@marcel.world',
