@@ -4,6 +4,7 @@ import { PlayerData } from "./player-data/player-data.component"
 export interface Config {
   id: string
   tournamentName: string
+  deadline: string
   groups: GroupConfig[]
   links: Record<string, string>
 }

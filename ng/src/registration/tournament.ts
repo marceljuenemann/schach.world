@@ -15,6 +15,12 @@ export class Tournament {
       this.groups.set(groupConfig.id, new Group(this, groupConfig))
     }
   }
+
+  get deadlinePassed() {
+    let deadline = new Date(this.config.deadline)
+    deadline.setDate(deadline.getDate() + 1)
+    return new Date() >= deadline
+  }
 }
 
 export class Group {

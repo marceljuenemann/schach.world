@@ -5,6 +5,8 @@ use Nsv\Registration\Api\Model\GroupConfig;
 
 $config = new TournamentConfig();
 $config->tournamentName = 'Testturnier';
+$config->deadline = '2024-12-26';
+
 $config->managers = ['marcel', 'beni'];
 $config->emailCc = [
   'test-cc1@marcel.world',

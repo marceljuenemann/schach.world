@@ -19,6 +19,12 @@ class TournamentConfig {
   public string $tournamentName;
 
   /**
+   * Date until which registration is open.
+   */
+  #[Assert\Date]
+  public string $deadline;
+
+  /**
    * List of groups that are part of the tournament.
    */
   #[Assert\NotBlank]
