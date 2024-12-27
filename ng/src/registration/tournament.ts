@@ -52,9 +52,14 @@ export class Group {
       });
   }
 
+  get maxPlayersReached() {
+    return this.players.length >= (this.config.maxPlayers || Infinity)
+  }
+
   mayRegister(playerData: PlayerData): boolean {
     if (this.config.maxDwz && (playerData.dwz || 0) > this.config.maxDwz) return false
     if (this.config.minYearOfBirth && (playerData.yearOfBirth || Infinity) < this.config.minYearOfBirth) return false
+    if (this.maxPlayersReached) return false
     return true
   }
 }

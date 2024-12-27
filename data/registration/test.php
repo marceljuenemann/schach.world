@@ -22,12 +22,14 @@ $config->links = [
 $group = new GroupConfig();
 $group->id = 'A';
 $group->name = 'Gruppe A (ab DWZ 1750)';
+$group->maxPlayers = 10;
 $config->groups[] = $group;
 
 $group = new GroupConfig();
 $group->id = 'B';
 $group->name = 'Gruppe B (DWZ 1500-1750)';
 $group->maxDwz = 1750;
+$group->maxPlayers = 30;
 $config->groups[] = $group;
 
 $group = new GroupConfig();
@@ -46,6 +48,7 @@ $group = new GroupConfig();
 $group->id = 'U16';
 $group->name = 'Altersklasse U16';
 $group->minYearOfBirth = 2009;
+$group->maxPlayers = 3;
 $config->groups[] = $group;
 
 $group = new GroupConfig();

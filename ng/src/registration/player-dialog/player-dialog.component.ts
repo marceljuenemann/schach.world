@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { PlayerData, PlayerDataComponent } from '../player-data/player-data.component';
 import { Player } from '../types';
 import { RegistrationService } from '../registration.service';
-import { firstValueFrom } from 'rxjs';
 import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvFormGroup, TextControl } from '../../core/form/form-group';
 import { NsvDialog } from '../../core/dialog/dialog';

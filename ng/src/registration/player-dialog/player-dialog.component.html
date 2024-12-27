@@ -23,7 +23,12 @@
           [attr.disabled]="!this.params.isManager && (!this.playerData || !group.mayRegister(this.playerData)) || null"
           class="form-check-input"
           required>
-        <label class="form-check-label" for="tournamentRadio-{{group.id}}">{{group.name}}</label>
+        <label class="form-check-label" for="tournamentRadio-{{group.id}}">
+          {{group.name}}
+          @if (group.maxPlayersReached) {
+            <span style="font-size: smaller">— Anmeldegrenze erreicht</span>
+          }
+        </label>
       </div>
     }
   </form>

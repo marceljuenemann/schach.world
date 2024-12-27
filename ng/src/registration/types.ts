@@ -16,6 +16,7 @@ export interface GroupConfig {
   // TODO: add a description for DWZ and such?
   maxDwz?: number
   minYearOfBirth?: number
+  maxPlayers?: number
 }
 
 export interface ContactDetails {

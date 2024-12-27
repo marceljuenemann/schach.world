@@ -26,4 +26,9 @@ class GroupConfig {
    * Minimum year of birth constraint for this group.
    */
   public ?int $minYearOfBirth;
+
+  /**
+   * Maximum number of players that may register for this group.
+   */
+  public ?int $maxPlayers;
 }
