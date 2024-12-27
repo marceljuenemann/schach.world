@@ -8,14 +8,6 @@
 
 {% block content %}
 
-{#}
-
-  #[ORM\Column(name: "fide_title", length: 3)]
-  public ?string $fideTitle;
-
-#}
-
-
   {{ bs.dd('Name') }} {{ player.playerData.name }} {{ bs.end_dd }}
   {{ bs.dd('Verein') }} {{ player.playerData.club }} {{ bs.end_dd }}
   {{ bs.dd('Kontakt') }} {{ player.contactDetails.name }} {{ bs.end_dd }}
@@ -23,21 +15,25 @@
 
   {{ bs.hr }}
 
-  {{ bs.alert_primary }} Hello World {{ bs.endalert }}
-  {{ bs.alert_secondary }} Hello World {{ bs.endalert }}
-  {{ bs.alert_success }} Hello World {{ bs.endalert }}
-  {{ bs.alert_warning }} Hello World {{ bs.endalert }}
-  {{ bs.alert_danger }} Hello World {{ bs.endalert }}
-
-  {{ bs.dd('ZPS') }} {{ player.playerData.zps }}-{{ player.playerData.memberId }} {{ bs.end_dd }}
-  {{ bs.dd('DWZ') }} {{ player.playerData.dwz }} {{ bs.end_dd }}
-  {{ bs.dd('ELO') }} {{ player.playerData.elo }} {{ bs.end_dd }}
-  {{ bs.dd('FIDE-ID') }} {{ player.playerData.fideId }} {{ bs.end_dd }}
-  {{ bs.dd('Geburt') }} {{ player.playerData.yearOfBirth }} {{ bs.end_dd }}
-  {{ bs.dd('Geschlecht') }} {{ player.playerData.gender }} {{ bs.end_dd }}
-
+  {% if (player.playerData.zps) %}
+    {{ bs.alert_success }} 
+      Es wurde ein Eintrag in der DWZ-Datenbank gefunden 
+    {{ bs.endalert }}
+    {{ bs.dd('DWZ') }} {{ player.playerData.dwz }} {{ bs.end_dd }}
+    {{ bs.dd('ELO') }} {{ player.playerData.elo }} {{ bs.end_dd }}
+    {{ bs.dd('Titel') }} {{ player.playerData.fideTitle }} {{ bs.end_dd }}
+    {{ bs.dd('FIDE-ID') }} {{ player.playerData.fideId }} {{ bs.end_dd }}
+    {{ bs.dd('ZPS') }} {{ player.playerData.zps }}-{{ player.playerData.memberId }} {{ bs.end_dd }}
+  {% else %}
+    {{ bs.alert_warning }}
+      Es wurde kein Eintrag in der DWZ-Datenbank gefunden. Die folgenden Daten wurden manuell eingetragen.
+    {{ bs.endalert }}
+    {{ bs.dd('Geburt') }} {{ player.playerData.yearOfBirth }} {{ bs.end_dd }}
+    {{ bs.dd('Geschlecht') }} {{ player.playerData.gender }} {{ bs.end_dd }}
+  {% endif %}
 
   {{ bs.hr }}
-  {{ bs.button("http://example.com", 'Veröffentlichen') }}
+
+  {{ bs.link(overviewUri) }} Aktuelle Meldeliste {{ bs.endlink }}
 
 {% endblock %}

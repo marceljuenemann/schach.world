@@ -18,6 +18,7 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 // See /ng/src/registration/types.ts for schema.
 const TEST_CONFIG = [
@@ -77,7 +78,7 @@ class RegistrationController extends AbstractController {
     private MailerInterface $mailer
   ) {}
 
-  #[Route('{tournament}/', name: 'registration')]
+  #[Route('{tournament}/', name: 'overview')]
   public function registration(string $tournament): Response {
     return $this->render('@registration/registration.html.twig', [
       'title' => TEST_CONFIG['tournamentName'],
@@ -181,6 +182,9 @@ class RegistrationController extends AbstractController {
       ->context([
         'config' => TEST_CONFIG,
         'player' => $player,
+        'overviewUri' => $this->generateUrl('registration_overview', [
+          'tournament' => $config['id'],
+        ], UrlGeneratorInterface::ABSOLUTE_URL)
       ]);
     $this->mailer->send($email);
   }

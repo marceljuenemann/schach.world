@@ -50,8 +50,18 @@
   </table>
 {% endmacro %}
 
+{# Simple link. #}
+{# Usage: {{ bs.link(uri) }} More info... {{ bs.endlink }} #}
+{% macro link(uri) %}
+  <span class="text-primary" style="color: #0d6efd;"><a href="{{uri}}">
+{% endmacro %}
+{% macro endlink() %}
+  </a></span>
+{% endmacro %}
+
 {# A description list. #}
 {# Usage: {{ bs.dd('Name') }} {{ item.name }} {{ bs.end_dd }} #}
+{# TODO: Experiment with col-lg to make it responsive. #}
 {% macro dd(title) %}
   {{ _self.spacer(1) }}
   {{ _self.row }}
