@@ -6,6 +6,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Nsv\Dwz\Repository\PlayerRepository;
 use Nsv\Registration\Repository\PlayerRegistrationRepository;
 use Nsv\Registration\Api\Model\PlayerRegistration;
+use Nsv\Registration\Api\Model\TournamentConfig;
 use Nsv\Registration\Entity as Entity;
 use Nsv\WebApp\Core\ApiResponse;
 use Nsv\WebApp\Core\WordPress\Auth;
@@ -15,63 +16,17 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
-// See /ng/src/registration/types.ts for schema.
-const TEST_CONFIG = [
-  'id' => 'test',
-  'tournamentName' => 'Testturnier 2024',
-  'managers' => ['marcel', 'beni'],
-  'groups' => [
-    [
-      'id' => 'A',
-      'name' => 'Gruppe A (ab DWZ 1750)'
-    ],
-    [
-      'id' => 'B',
-      'name' => 'Gruppe B (DWZ 1500-1750)',
-      'maxDwz' => 1750
-    ],
-    [
-      'id' => 'C',
-      'name' => 'Gruppe C (bis DWZ 1500)',
-      'maxDwz' => 1500
-    ],
-    [
-      'id' => 'U18',
-      'name' => 'Altersklasse U18',
-      'minYearOfBirth' => 2007
-    ],
-    [
-      'id' => 'U16',
-      'name' => 'Altersklasse U16',
-      'minYearOfBirth' => 2009
-    ],
-    [
-      'id' => 'U14',
-      'name' => 'Altersklasse U14',
-      'minYearOfBirth' => 2011
-    ],
-    [
-      'id' => 'U12',
-      'name' => 'Altersklasse U12',
-      'minYearOfBirth' => 2013
-    ],
-    [
-      'id' => 'U10',
-      'name' => 'Altersklasse U10',
-      'minYearOfBirth' => 2015
-    ]
-  ]
-];
-
 #[Route('/v3/anmeldung/', name: 'registration_')]
 class RegistrationController extends AbstractController {
 
   function __construct(
+    private string $projectDir,
     private EntityManagerInterface $mainEntityManager,
     private PlayerRegistrationRepository $repository,
     private PlayerRepository $dwzRepository,
@@ -80,35 +35,40 @@ class RegistrationController extends AbstractController {
 
   #[Route('{tournament}/', name: 'overview')]
   public function registration(string $tournament): Response {
+    $config = $this->getConfig($tournament);
     return $this->render('@registration/registration.html.twig', [
-      'title' => TEST_CONFIG['tournamentName'],
-      'reg_config' => json_encode(TEST_CONFIG),
-      'reg_players' => json_encode($this->getPlayers($tournament)),
-      'is_manager' => $this->isManager(TEST_CONFIG)
+      'title' => $config->tournamentName,
+      'reg_config' => json_encode($config),
+      'reg_players' => json_encode($this->getPlayers($config)),
+      'is_manager' => $this->isManager($config)
     ]);
   }
 
   #[Route('api/{tournament}/players/', methods: ['GET'], name: 'players')]
   public function players(string $tournament): Response {
-    return new ApiResponse($this->getPlayers($tournament));
+    $config = $this->getConfig($tournament);
+    return new ApiResponse($this->getPlayers($config));
   }
 
   #[Route('api/{tournament}/players/', methods: ['POST'], name: 'players_register')]
   public function registerPlayer(string $tournament, #[MapRequestPayload] PlayerRegistration $request): Response {
+    $config = $this->getConfig($tournament);
+
     $player = new Entity\PlayerRegistration();
-    $player->tournament = $tournament;
+    $player->tournament = $config->id;
     $this->populateEntity($request, $player);
  
     $this->mainEntityManager->persist($player);
     $this->mainEntityManager->flush();
 
-    $this->sendConfirmationMail(TEST_CONFIG, $request);
+    $this->sendConfirmationMail($config, $request);
     return new ApiResponse();
   }
 
   #[Route('api/{tournament}/players/{id}/', methods: ['PUT'], name: 'players_update')]
   public function updatePlayer(string $tournament, Entity\PlayerRegistration $registration, #[MapRequestPayload] PlayerRegistration $request): Response {
-    if (!$this->isManager(TEST_CONFIG) || $registration->tournament !== $tournament) {
+    $config = $this->getConfig($tournament);
+    if (!$this->isManager($config) || $registration->tournament !== $config->id) {
       throw new AccessDeniedHttpException();
     }
     $this->populateEntity($request, $registration);
@@ -155,7 +115,8 @@ class RegistrationController extends AbstractController {
 
   #[Route('api/{tournament}/players/{id}/', methods: 'DELETE', name: 'delete_player')]
   public function delete_player(string $tournament, Entity\PlayerRegistration $registration): Response {
-    if (!$this->isManager(TEST_CONFIG) || $registration->tournament !== $tournament) {
+    $config = $this->getConfig($tournament);
+    if (!$this->isManager($config) || $registration->tournament !== $config->id) {
       throw new AccessDeniedHttpException();
     }
     $this->mainEntityManager->remove($registration);
@@ -163,9 +124,9 @@ class RegistrationController extends AbstractController {
     return new JsonResponse();
   }
 
-  private function getPlayers(string $tournament): array {
-    $includeSensitive = $this->isManager(TEST_CONFIG);
-    $players = $this->repository->findByTournament($tournament);
+  private function getPlayers(TournamentConfig $config): array {
+    $includeSensitive = $this->isManager($config);
+    $players = $this->repository->findByTournament($config->id);
     return array_map(fn($p) => PlayerRegistration::fromEntity($p, $includeSensitive), $players);
   }
 
@@ -173,14 +134,26 @@ class RegistrationController extends AbstractController {
     return Auth::isAdmin() || in_array(Auth::userName(), $config['managers']);
   }
 
-  private function sendConfirmationMail($config, PlayerRegistration $player) {
+  private function getConfig(string $tournament): TournamentConfig {
+    if (!preg_match('/^[a-z0-9-]+$/', $tournament)) {
+      throw new BadRequestHttpException("Invalid tournament identifier");
+    }
+    $configFile = $this->projectDir . '/data/registration/' . $tournament . '.php';
+    $config = require($configFile);
+    if ($config instanceof TournamentConfig) {
+      return $config;
+    }
+    throw new NotFoundHttpException("Tournament not found");
+  }
+
+  private function sendConfirmationMail(TournamentConfig $config, PlayerRegistration $player) {
     $email = (new TemplatedEmail())
       // TODO: Add reply to
       ->to($player->contactDetails->email)  // TODO: Add cc to managers.
       ->subject("[Anmeldung $config[tournamentName]] " . $player->playerData->name)
       ->htmlTemplate('@registration/email/confirmation.html.twig')
       ->context([
-        'config' => TEST_CONFIG,
+        'config' => $config,
         'player' => $player,
         'overviewUri' => $this->generateUrl('registration_overview', [
           'tournament' => $config['id'],
