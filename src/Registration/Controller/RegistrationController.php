@@ -141,6 +141,7 @@ class RegistrationController extends AbstractController {
     $configFile = $this->projectDir . '/data/registration/' . $tournament . '.php';
     $config = require($configFile);
     if ($config instanceof TournamentConfig) {
+      $config->id = $tournament;
       return $config;
     }
     throw new NotFoundHttpException("Tournament not found");
