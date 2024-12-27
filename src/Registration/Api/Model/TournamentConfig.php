@@ -2,6 +2,7 @@
 
 namespace Nsv\Registration\Api\Model;
 
+use RuntimeException;
 use Symfony\Component\Validator\Constraints as Assert;
 
 class TournamentConfig {
@@ -30,4 +31,27 @@ class TournamentConfig {
   #[Assert\NotBlank]
   #[Assert\All(['constraints' => [new Assert\Type('string')]])]
   public array $managers;
+
+  /**
+   * The Reply-To address for eMails.
+   */
+  #[Assert\NotBlank]
+  #[Assert\All(['constraints' => [new Assert\Type('string')]])]
+  public array $emailReplyTo;
+
+  /**
+   * eMails addresses in CC for all eMails.
+   */
+  #[Assert\All(['constraints' => [new Assert\Type('string')]])]
+  public array $emailCc;
+
+
+  function group(string $id): GroupConfig {
+    foreach ($this->groups as $group) {
+      if ($group->id === $id) {
+        return $group;
+      }
+    }
+    throw new RuntimeException("Group not found");
+  }
 }

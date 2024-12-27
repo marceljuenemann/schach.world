@@ -2,8 +2,7 @@
 {% import "email/bootstrap.html.twig" as bs %}
 
 {% block headline %}
-  Anmeldung
-  {# TODO: Gruppe #}
+  {{ config.group(player.group).name }}
 {% endblock %}
 
 {% block content %}

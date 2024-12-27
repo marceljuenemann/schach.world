@@ -148,8 +148,9 @@ class RegistrationController extends AbstractController {
 
   private function sendConfirmationMail(TournamentConfig $config, PlayerRegistration $player) {
     $email = (new TemplatedEmail())
-      // TODO: Add reply to
-      ->to($player->contactDetails->email)  // TODO: Add cc to managers.
+      ->to($player->contactDetails->email)
+      ->cc(...$config->emailCc)
+      ->replyTo(...$config->emailReplyTo)
       ->subject("[Anmeldung " . $config->tournamentName . "] " . $player->playerData->name)
       ->htmlTemplate('@registration/email/confirmation.html.twig')
       ->context([
