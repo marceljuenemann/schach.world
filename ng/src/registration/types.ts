@@ -2,8 +2,13 @@ import { InjectionToken } from "@angular/core"
 import { PlayerData } from "./player-data/player-data.component"
 
 export interface Config {
+  id: string
   tournamentName: string
-  groups: Map<string, GroupConfig>
+  deadline: string
+  maxPlayers?: number
+  groups: GroupConfig[]
+  links: Record<string, string>
+  termsAndConditions: string
 }
 
 export interface GroupConfig {
@@ -12,6 +17,7 @@ export interface GroupConfig {
   // TODO: add a description for DWZ and such?
   maxDwz?: number
   minYearOfBirth?: number
+  maxPlayers?: number
 }
 
 export interface ContactDetails {
@@ -20,6 +26,8 @@ export interface ContactDetails {
 }
 
 export interface Player {
+  id: number,
+  group: string,
   playerData: PlayerData,
   contactDetails: ContactDetails
 }

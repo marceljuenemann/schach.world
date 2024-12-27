@@ -1,14 +1,18 @@
-<!-- TODO: Consider using a dialog helper rather than duplicating this. -->
-<!-- TODO: Probably should have a DialogContainer Consider using a dialog helper rather than duplicating this. -->
 <div class="modal-header">
   <h4 class="modal-title" id="modal-basic-title">Anmeldung</h4>
-  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
 </div>
 <div class="modal-body">
-  <player-data class="mb-4" [lastPlayer]="params.lastPlayer" [validationErrors]="errors?.validationErrors" (onPlayerDataChange)="onPlayerDataChange($event)"></player-data>
+  <player-data class="mb-4"
+    (onPlayerDataChange)="onPlayerDataChange($event)"
+    [initialPlayerData]="params.player?.playerData"
+    [restrictEditing]="!params.isManager"
+    [preferredZps]="params.lastPlayer?.playerData?.zps"
+    [validationErrors]="errors?.validationErrors"
+  ></player-data>
 
   <form [formGroup]="formData" class="mt-4" (keyup.enter)="save()">
-    @for (group of params.config.groups.values(); track group.id) {
+    @for (group of params.tournament.groups.values(); track group.id) {
       <div class="form-check">
         <input
           type="radio"
@@ -16,20 +20,28 @@
           name="group"
           formControlName="group"
           [value]="group.id"
-          [attr.disabled]="isGroupDisabled(group.id) || null"
+          [attr.disabled]="!this.params.isManager && (!this.playerData || !group.mayRegister(this.playerData)) || null"
           class="form-check-input"
           required>
-        <label class="form-check-label" for="tournamentRadio-{{group.id}}">{{group.name}}</label>
+        <label class="form-check-label" for="tournamentRadio-{{group.id}}">
+          {{group.name}}
+          @if (group.maxPlayersReached) {
+            <span style="font-size: smaller">— Anmeldegrenze erreicht</span>
+          }
+        </label>
       </div>
     }
   </form>
 
   <nsv-form [form]="contactDetails" [validationErrors]="errors?.validationErrors" validationErrorPrefix="contactDetails." (keyup.enter)="save()"></nsv-form>
-</div>
-<div class="modal-footer">
-  @for (message of errors?.errorMessages; track $index) {
-    <div class="alert alert-danger w-100" role="alert">{{ message }}</div>
+
+  @if (!editing) {
+    <form [formGroup]="formData" class="mt-3">
+      <div class="form-check mt-3">
+        <input formControlName="termsAndConditions" class="form-check-input" type="checkbox" role="switch" id="toc">
+        <label class="form-check-label" for="toc"><strong>Datenschutzerklärung: </strong>{{ params.tournament.config.termsAndConditions }}</label>
+      </div>
+    </form>
   }
-  <button type="button" class="btn btn-secondary" (click)="modal.dismiss('Cancel button')">Abbrechen</button>
-  <button type="button" class="btn btn-primary" (click)="save()" [disabled]="!isValid">Speichern</button>
 </div>
+<nsv-dialog-footer [dialog]="this"></nsv-dialog-footer>

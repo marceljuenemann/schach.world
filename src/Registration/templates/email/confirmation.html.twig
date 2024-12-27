@@ -1,0 +1,38 @@
+{% extends 'email/layout.html.twig' %}
+{% import "email/bootstrap.html.twig" as bs %}
+
+{% block headline %}
+  {{ config.group(player.group).name }}
+{% endblock %}
+
+{% block content %}
+
+  {{ bs.dd('Name') }} {{ player.playerData.name }} {{ bs.end_dd }}
+  {{ bs.dd('Verein') }} {{ player.playerData.club }} {{ bs.end_dd }}
+  {{ bs.dd('Kontakt') }} {{ player.contactDetails.name }} {{ bs.end_dd }}
+  {{ bs.dd('Email') }} {{ player.contactDetails.email }} {{ bs.end_dd }}
+
+  {{ bs.hr }}
+
+  {% if (player.playerData.zps) %}
+    {{ bs.alert_success }} 
+      Es wurde ein Eintrag in der DWZ-Datenbank gefunden 
+    {{ bs.endalert }}
+    {{ bs.dd('DWZ') }} {{ player.playerData.dwz }} {{ bs.end_dd }}
+    {{ bs.dd('ELO') }} {{ player.playerData.elo }} {{ bs.end_dd }}
+    {{ bs.dd('Titel') }} {{ player.playerData.fideTitle }} {{ bs.end_dd }}
+    {{ bs.dd('FIDE-ID') }} {{ player.playerData.fideId }} {{ bs.end_dd }}
+    {{ bs.dd('ZPS') }} {{ player.playerData.zps }}-{{ player.playerData.memberId }} {{ bs.end_dd }}
+  {% else %}
+    {{ bs.alert_warning }}
+      Es wurde kein Eintrag in der DWZ-Datenbank gefunden. Die folgenden Daten wurden manuell eingetragen.
+    {{ bs.endalert }}
+    {{ bs.dd('Geburt') }} {{ player.playerData.yearOfBirth }} {{ bs.end_dd }}
+    {{ bs.dd('Geschlecht') }} {{ player.playerData.gender }} {{ bs.end_dd }}
+  {% endif %}
+
+  {{ bs.hr }}
+
+  {{ bs.link(overviewUri) }} Aktuelle Meldeliste {{ bs.endlink }}
+
+{% endblock %}

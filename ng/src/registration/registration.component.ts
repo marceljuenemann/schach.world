@@ -1,37 +1,72 @@
-import { Component, Injector, Input } from '@angular/core';
-import { Config, GroupConfig, Player } from './types';
+import { Component, Input, OnInit } from '@angular/core';
+import { Player } from './types';
 import { PlayerDialogComponent, PlayerDialogParams } from './player-dialog/player-dialog.component';
-import { DialogService } from '../core/dialog.service';
+import { DialogService } from '../core/dialog/dialog.service';
+import { Tournament } from './tournament';
+import { RegistrationService } from './registration.service';
+import { CommonModule } from '@angular/common';
+import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'nsv-registration',
   standalone: true,
-  imports: [],
+  imports: [NgbTooltipModule, CommonModule],
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css'
 })
-export class RegistrationComponent {
-  @Input({alias: "config"}) configString: string | undefined
+export class RegistrationComponent implements OnInit {
+  @Input({alias: "config"}) configString: string
+  @Input({alias: "players"}) playersString: string
+  @Input({alias: "manager"}) isManager: boolean
 
-  players: Player[] = []
-  lastPlayer: Player | null = null
+  tournament: Tournament
+  registeredPlayers: Player[] = []
 
-  constructor(private dialogService: DialogService) {}
+  constructor(
+    private dialogService: DialogService,
+    private registrationService: RegistrationService
+  ) {}
+
+  ngOnInit() {
+    this.tournament = new Tournament(
+      JSON.parse(this.configString),
+      JSON.parse(this.playersString)
+    )
+  }
 
   async openRegistration() {
-    // TODO: Make scrollable within the dialog
-    this.dialogService.open<PlayerDialogParams>(PlayerDialogComponent, {
-      config: this.config,
-      lastPlayer: this.lastPlayer
-    }).result.then(result => {
-      this.players.push(result)
-      this.lastPlayer = result
+    const player = await this.dialogService.open<PlayerDialogParams>(PlayerDialogComponent, {
+      tournament: this.tournament!,
+      isManager: this.isManager,
+      lastPlayer: this.registeredPlayers.slice(-1)[0]
+    }).result;
+    this.registeredPlayers.push(player)
+    this.reloadPlayerList()
+  }
+
+  async editPlayer(player: Player) {
+    await this.dialogService.open<PlayerDialogParams>(PlayerDialogComponent, {
+      tournament: this.tournament!,
+      isManager: this.isManager,
+      player
+    }).result;
+    this.reloadPlayerList()
+  }
+
+  async deletePlayer(player: Player) {
+    this.dialogService.confirm({
+      title: "Spieler löschen",
+      message: `${player.playerData.name} wirklich löschen?`,
+      confirmText: "Löschen",
+      onConfirm: async () => {
+        await this.registrationService.deletePlayer(this.tournament!.config.id, player.id)
+        this.reloadPlayerList()
+      }
     })
   }
 
-  get config(): Config {
-    let config = JSON.parse(this.configString!)
-    config.groups = new Map(config.groups.map((g: GroupConfig) => [g.id, g]));
-    return config
+  private async reloadPlayerList() {
+    const players = await this.registrationService.players(this.tournament!.config.id)
+    this.tournament = new Tournament(this.tournament!.config, players)
   }
 }

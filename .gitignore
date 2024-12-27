@@ -28,6 +28,7 @@ public/verband/
 
 # Files that should actually be excluded
 data/
+!data/registration/test.php
 public/cache/
 public/downloads/
 public/images/

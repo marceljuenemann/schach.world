@@ -1,0 +1,17 @@
+{# General layout for emails #}
+{% import "email/bootstrap.html.twig" as bs %}
+
+{{ bs.body }}
+
+  {{ bs.card }}
+
+    <h1 {{ bs.h1_attrs }}>{% block headline %}{% endblock %}</h1>
+    {{ bs.hr }}
+
+    {% block content %}{% endblock %}
+
+  {{ bs.endcard }}
+
+  {{ bs.spacer }} {# TODO: replace with footer #}
+
+{{ bs.endbody }}

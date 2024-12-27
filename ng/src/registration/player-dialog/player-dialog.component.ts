@@ -1,73 +1,67 @@
-import { Component, Inject, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { PlayerData, PlayerDataComponent } from '../player-data/player-data.component';
-import { Config, Player } from '../types';
+import { Player } from '../types';
 import { RegistrationService } from '../registration.service';
-import { firstValueFrom } from 'rxjs';
-import { NsvError, processApiError } from '../../core/api';
 import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvFormGroup, TextControl } from '../../core/form/form-group';
-import { Dialog } from '../../core/dialog';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { NsvDialog } from '../../core/dialog/dialog';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Tournament } from '../tournament';
+import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer.component';
 
 export interface PlayerDialogParams {
-  config: Config,
-  lastPlayer: Player | null
+  tournament: Tournament,
+  isManager: boolean,
+  player?: Player,
+  lastPlayer?: Player | null
 }
 
 @Component({
   selector: 'player-dialog',
   standalone: true,
-  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule],
+  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent],
   templateUrl: './player-dialog.component.html',
   styleUrl: './player-dialog.component.css'
 })
-export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
+export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player> {
   playerData: PlayerData | null = null
-  errors: NsvError | null = null
 
   formData = new FormGroup({
-    group: new FormControl()
-  })
-
-  // ToDo: move into formData.
-  contactDetails = new NsvFormGroup({
-    name: new TextControl('Kontaktperson', {required: true}),
-    email: new TextControl('E-Mail-Adresse', {required: true})
+    group: new FormControl<string|null>(null, Validators.required),
+    contactDetails: new NsvFormGroup({
+      name: new TextControl('Kontaktperson', {required: true}),
+      email: new TextControl('E-Mail-Adresse', {required: true})
+    }),
+    termsAndConditions: new FormControl(false, Validators.requiredTrue)
   })
 
   constructor(
     private registrationService: RegistrationService
   ) {
     super()
-    if (this.params.lastPlayer) {
+    if (this.params.player) {
+      this.formData.patchValue(this.params.player)
+    } else if (this.params.lastPlayer) {
       this.contactDetails.setValue(this.params.lastPlayer.contactDetails)
     }
-  }
-
-  isGroupDisabled(groupId: string): boolean {
-    if (!this.playerData) return true
-    const group = this.params.config.groups.get(groupId)!
-    if (group.maxDwz && (this.playerData.dwz || 0) > group.maxDwz) return true
-    if (group.minYearOfBirth && (this.playerData.yearOfBirth || Infinity) < group.minYearOfBirth) return true
-    return false
-  }
-
-  get selectedGroup() {
-    return this.formData.controls.group.value
+    if (this.params.isManager) {
+      this.formData.controls.termsAndConditions.setValue(true)
+    }
   }
 
   onPlayerDataChange(playerData: PlayerData | null) {
     this.playerData = playerData
-    if (!this.contactDetails.controls.name.value && playerData && playerData.name) {
+    if (this.editing || !playerData) return
+    if (!this.contactDetails.controls.name.value && playerData.name) {
       this.contactDetails.controls.name.setValue(playerData.name)
     }
-    // Unselect current group selection and select last valid group.
-    if (playerData && (!this.selectedGroup || this.isGroupDisabled(this.selectedGroup))) {
+    // Possibly unselect current group selection and select last valid group.
+    if (!this.selectedGroup || !this.params.tournament.groups.get(this.selectedGroup)?.mayRegister(playerData)) {
       this.formData.controls.group.setValue(null)
-      if (playerData?.dwz && playerData.yearOfBirth) {
-        for (let groupId of Array.from(this.params.config.groups.keys()).reverse()) {
-          if (!this.isGroupDisabled(groupId)) {
-            this.formData.controls.group.setValue(groupId)
+      if (playerData.zps) {
+        for (let group of Array.from(this.params.tournament.groups.values()).reverse()) {
+          if (group.mayRegister(playerData)) {
+            this.formData.controls.group.setValue(group.id)
             break
           }
         }
@@ -75,20 +69,37 @@ export class PlayerDialogComponent extends Dialog<PlayerDialogParams> {
     }
   }
 
-  get isValid() {
-    return this.playerData && this.selectedGroup && this.contactDetails.valid
+  override get isValid() {
+    return !!this.playerData && this.formData.valid
   }
 
-  save() {
-    if (!this.isValid) return
+  override async save(): Promise<Player> {
     const player = {
-      playerData: this.playerData!,
-      group: this.formData.controls.group.value,
-      contactDetails: this.contactDetails.value
+      ...this.params.player || {},
+      ...this.formData.value,
+      playerData: this.playerData!
     } as Player
-    firstValueFrom(this.registrationService.registerPlayer('test', player)).then(
-      success => this.modal.close(player),
-      error => this.errors = processApiError(error)
-    )
+    if (this.editing) {
+      await this.registrationService.updatePlayer(this.params.tournament.config.id, player)
+    } else {
+      await this.registrationService.registerPlayer(this.params.tournament.config.id, player)
+    }
+    return player
+  }
+
+  get editing() {
+    return this.params.player
+  }
+
+  private get groupControl() {
+    return this.formData.controls.group
+  }
+
+  get selectedGroup() {
+    return this.groupControl.value
+  }
+
+  get contactDetails() {
+    return this.formData.controls.contactDetails
   }
 }
