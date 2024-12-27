@@ -5,6 +5,7 @@ export interface Config {
   id: string
   tournamentName: string
   groups: GroupConfig[]
+  links: Record<string, string>
 }
 
 export interface GroupConfig {

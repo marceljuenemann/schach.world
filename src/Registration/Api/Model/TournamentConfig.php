@@ -26,6 +26,11 @@ class TournamentConfig {
   public array $groups;
 
   /**
+   * Links to show in the frontend.
+   */
+  public array $links;
+
+  /**
    * List of usernames of users allowed to manage the tournament.
    */
   #[Assert\NotBlank]
