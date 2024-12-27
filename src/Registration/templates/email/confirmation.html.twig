@@ -1,0 +1,43 @@
+{% extends 'email/layout.html.twig' %}
+{% import "email/bootstrap.html.twig" as bs %}
+
+{% block headline %}
+  Anmeldung
+  {# TODO: Gruppe #}
+{% endblock %}
+
+{% block content %}
+
+{#}
+
+  #[ORM\Column(name: "fide_title", length: 3)]
+  public ?string $fideTitle;
+
+#}
+
+
+  {{ bs.dd('Name') }} {{ player.playerData.name }} {{ bs.end_dd }}
+  {{ bs.dd('Verein') }} {{ player.playerData.club }} {{ bs.end_dd }}
+  {{ bs.dd('Kontakt') }} {{ player.contactDetails.name }} {{ bs.end_dd }}
+  {{ bs.dd('Email') }} {{ player.contactDetails.email }} {{ bs.end_dd }}
+
+  {{ bs.hr }}
+
+  {{ bs.alert_primary }} Hello World {{ bs.endalert }}
+  {{ bs.alert_secondary }} Hello World {{ bs.endalert }}
+  {{ bs.alert_success }} Hello World {{ bs.endalert }}
+  {{ bs.alert_warning }} Hello World {{ bs.endalert }}
+  {{ bs.alert_danger }} Hello World {{ bs.endalert }}
+
+  {{ bs.dd('ZPS') }} {{ player.playerData.zps }}-{{ player.playerData.memberId }} {{ bs.end_dd }}
+  {{ bs.dd('DWZ') }} {{ player.playerData.dwz }} {{ bs.end_dd }}
+  {{ bs.dd('ELO') }} {{ player.playerData.elo }} {{ bs.end_dd }}
+  {{ bs.dd('FIDE-ID') }} {{ player.playerData.fideId }} {{ bs.end_dd }}
+  {{ bs.dd('Geburt') }} {{ player.playerData.yearOfBirth }} {{ bs.end_dd }}
+  {{ bs.dd('Geschlecht') }} {{ player.playerData.gender }} {{ bs.end_dd }}
+
+
+  {{ bs.hr }}
+  {{ bs.button("http://example.com", 'Veröffentlichen') }}
+
+{% endblock %}

@@ -9,12 +9,14 @@ use Nsv\Registration\Api\Model\PlayerRegistration;
 use Nsv\Registration\Entity as Entity;
 use Nsv\WebApp\Core\ApiResponse;
 use Nsv\WebApp\Core\WordPress\Auth;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 // See /ng/src/registration/types.ts for schema.
@@ -71,7 +73,8 @@ class RegistrationController extends AbstractController {
   function __construct(
     private EntityManagerInterface $mainEntityManager,
     private PlayerRegistrationRepository $repository,
-    private PlayerRepository $dwzRepository
+    private PlayerRepository $dwzRepository,
+    private MailerInterface $mailer
   ) {}
 
   #[Route('{tournament}/', name: 'registration')]
@@ -97,6 +100,8 @@ class RegistrationController extends AbstractController {
  
     $this->mainEntityManager->persist($player);
     $this->mainEntityManager->flush();
+
+    $this->sendConfirmationMail(TEST_CONFIG, $request);
     return new ApiResponse();
   }
 
@@ -165,5 +170,18 @@ class RegistrationController extends AbstractController {
 
   private function isManager($config): bool {
     return Auth::isAdmin() || in_array(Auth::userName(), $config['managers']);
+  }
+
+  private function sendConfirmationMail($config, PlayerRegistration $player) {
+    $email = (new TemplatedEmail())
+      // TODO: Add reply to
+      ->to($player->contactDetails->email)  // TODO: Add cc to managers.
+      ->subject("[Anmeldung $config[tournamentName]] " . $player->playerData->name)
+      ->htmlTemplate('@registration/email/confirmation.html.twig')
+      ->context([
+        'config' => TEST_CONFIG,
+        'player' => $player,
+      ]);
+    $this->mailer->send($email);
   }
 }
