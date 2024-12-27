@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Player } from './types';
 import { HttpClient } from '@angular/common/http';
-import { firstValueFrom, lastValueFrom, Observable } from 'rxjs';
+import { lastValueFrom } from 'rxjs';
 
-const ENDPOINT = '/v3/anmeldung/api';
+const ENDPOINT = '/anmeldung/api';
 
 @Injectable({
   providedIn: 'root'

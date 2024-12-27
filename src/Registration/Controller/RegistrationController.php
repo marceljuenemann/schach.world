@@ -22,7 +22,7 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
-#[Route('/v3/anmeldung/', name: 'registration_')]
+#[Route('/anmeldung/', name: 'registration_')]
 class RegistrationController extends AbstractController {
 
   function __construct(
