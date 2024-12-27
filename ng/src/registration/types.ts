@@ -8,6 +8,7 @@ export interface Config {
   maxPlayers?: number
   groups: GroupConfig[]
   links: Record<string, string>
+  termsAndConditions: string
 }
 
 export interface GroupConfig {

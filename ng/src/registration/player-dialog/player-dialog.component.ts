@@ -5,7 +5,7 @@ import { RegistrationService } from '../registration.service';
 import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvFormGroup, TextControl } from '../../core/form/form-group';
 import { NsvDialog } from '../../core/dialog/dialog';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Tournament } from '../tournament';
 import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer.component';
 
@@ -27,11 +27,12 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
   playerData: PlayerData | null = null
 
   formData = new FormGroup({
-    group: new FormControl(),
+    group: new FormControl<string|null>(null, Validators.required),
     contactDetails: new NsvFormGroup({
       name: new TextControl('Kontaktperson', {required: true}),
       email: new TextControl('E-Mail-Adresse', {required: true})
-    })
+    }),
+    termsAndConditions: new FormControl(false, Validators.requiredTrue)
   })
 
   constructor(
@@ -42,6 +43,9 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
       this.formData.patchValue(this.params.player)
     } else if (this.params.lastPlayer) {
       this.contactDetails.setValue(this.params.lastPlayer.contactDetails)
+    }
+    if (this.params.isManager) {
+      this.formData.controls.termsAndConditions.setValue(true)
     }
   }
 
@@ -66,7 +70,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
   }
 
   override get isValid() {
-    return this.playerData && this.selectedGroup && this.contactDetails.valid
+    return !!this.playerData && this.formData.valid
   }
 
   override async save(): Promise<Player> {
@@ -83,7 +87,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     return player
   }
 
-  private get editing() {
+  get editing() {
     return this.params.player
   }
 

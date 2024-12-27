@@ -61,6 +61,11 @@ class TournamentConfig {
   #[Assert\All(['constraints' => [new Assert\Type('string')]])]
   public array $emailCc;
 
+  /**
+   * The terms and conditions that players need to agree to.
+   */
+  #[Assert\NotBlank]
+  public string $termsAndConditions;
 
   function group(string $id): GroupConfig {
     foreach ($this->groups as $group) {

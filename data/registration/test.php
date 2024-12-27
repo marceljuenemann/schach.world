@@ -14,10 +14,18 @@ $config->emailCc = [
   'test-cc2@marcel.world',
 ];
 $config->emailReplyTo = $config->emailCc;
+
 $config->links = [
   'Ausschreibung' => 'https://example.com/ausschreibung.pdf',
   'NSV Homepage' => 'https://nsv-online.de',
 ];
+$config->termsAndConditions = "
+  Ich stimme der Verarbeitung meiner personenbezogenen Daten zum Zwecke
+  der Turnierdurchführung sowie der Veröffentlichung von 
+  Turnierergebnissen, Fotos und Partien zu.
+  Ich erlaube die Weiterleitung meiner Daten an den Deutschen Schachbund
+  und die FIDE zur DWZ- und ELO-Auswertung.
+";
 
 $group = new GroupConfig();
 $group->id = 'A';
