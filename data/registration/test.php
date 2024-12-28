@@ -5,7 +5,7 @@ use Nsv\Registration\Api\Model\GroupConfig;
 
 $config = new TournamentConfig();
 $config->tournamentName = 'Testturnier';
-$config->deadline = '2024-12-27';
+$config->deadline = '2035-12-27';
 $config->maxPlayers = 38;
 
 $config->managers = ['marcel', 'beni', 'joerg'];
