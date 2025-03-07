@@ -29,13 +29,17 @@
     {{ title }}
     {# TODO: Ensure not for team managers #}
     {% if allowEdit %}
-      <nsv-dialog-launcher>
-        content
+      {# TODO: Select dialog #}
+      {# TODO: Reload page #}
+      {# TODO: Pass parameters #}
+      {# TODO: Implement team name (and number) edit #}
+      <nsv-dialog-launcher component="editTeamName" reload-on-save>
+        {{ _self.editButton() }}
       </nsv-dialog-launcher>
     {% endif %}
   </h2>
  {#
-      <a data-nsv-dialog="UpdateTeamVenue" data-nsv-on-save="reload" data-team-id="{{ team.id }}">{{ _self.editButton() }}</a>
+      <a data-nsv-dialog="UpdateTeamVenue" data-nsv-on-save="reload" data-team-id="{{ team.id }}"></a>
   #}
 {% endblock %}
 

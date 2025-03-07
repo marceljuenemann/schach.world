@@ -13,4 +13,7 @@ import { Component } from '@angular/core';
 })
 export class DialogLauncherComponent {
 
+  launchDialog() {
+    alert("Hello, world!");
+  }
 }
