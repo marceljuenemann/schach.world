@@ -56,11 +56,13 @@ class MainController extends AbstractLeagueController {
   public function team(TeamService $service, int $teamId): Response {
     $teamEntity = $this->league->teamById($teamId);
     $allowEdit = $this->auth->isDivisionManager($teamEntity->division);
+    $allowPlayerEdit = $this->auth->isDivisionManager($teamEntity->division);
     $team = $service->team($teamEntity, $allowEdit);
     return $this->renderWithLegacySystem('team.html.twig', [
       'team' => $team,
       'teamEntity' => $teamEntity,
       'allowEdit' => $allowEdit,
+      'allowPlayerEdit' => $allowPlayerEdit,
       'showContactInfo' =>  $this->league->year >= date('Y') - 1 || $allowEdit
     ]);
   }
