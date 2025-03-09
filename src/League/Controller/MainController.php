@@ -63,7 +63,12 @@ class MainController extends AbstractLeagueController {
       'teamEntity' => $teamEntity,
       'allowEdit' => $allowEdit,
       'allowPlayerEdit' => $allowPlayerEdit,
-      'showContactInfo' =>  $this->league->year >= date('Y') - 1 || $allowEdit
+      'showContactInfo' =>  $this->league->year >= date('Y') - 1 || $allowEdit,
+      'updateNameDialogParams' => json_encode([
+        'id' => $teamId,
+        'name' => $teamEntity->name,
+        'number' => $teamEntity->number
+      ])
     ]);
   }
 
