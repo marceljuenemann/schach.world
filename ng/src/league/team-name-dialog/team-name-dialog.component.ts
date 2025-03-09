@@ -3,6 +3,7 @@ import { NsvDialog } from '../../core/dialog/dialog';
 import { IntControl, NsvFormGroup, TextControl } from '../../core/form/form-group';
 import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer.component';
+import { LeagueService } from '../league.service';
 
 export interface TeamNameDialogParams {
   id: number
@@ -24,7 +25,7 @@ export class TeamNameDialog extends NsvDialog<TeamNameDialogParams> {
     number: new IntControl('Mannschaftsnummer', {required: true}),
   })
 
-  constructor() {
+  constructor(private leagueService: LeagueService) {
     super()
     this.form.patchValue(this.params)
   }
@@ -34,6 +35,6 @@ export class TeamNameDialog extends NsvDialog<TeamNameDialogParams> {
   }
 
   override save(): Promise<void> {
-    throw new Error('Method not implemented.');
+    return this.leagueService.updateTeamNameAndNumber(this.params.id, this.form.transformedValue as any)
   }
 }

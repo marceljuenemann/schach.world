@@ -4,7 +4,7 @@
 </div>
 <div class="modal-body mb-3">
 
-  <nsv-form [form]="form" [validationErrors]="errors?.validationErrors" (keyup.enter)="save()"></nsv-form>
+  <nsv-form [form]="form" [validationErrors]="errors?.validationErrors" (keyup.enter)="saveDialog()"></nsv-form>
 
 </div>
 <nsv-dialog-footer [dialog]="this"></nsv-dialog-footer>

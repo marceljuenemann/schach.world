@@ -34,6 +34,10 @@ export class TextControl extends NsvFormControl<string> {
   constructor(public readonly label: string, opts: {required?: boolean} = {}) {
     super('', opts.required ? Validators.required : undefined);
   }
+
+  override get transformedValue() {
+    return this.value.trim()
+  }
 }
 
 export class IntControl extends NsvFormControl<number> {
