@@ -29,9 +29,7 @@
     {{ title }}
     {# TODO: Ensure not for team managers #}
     {% if allowEdit %}
-      {# TODO: Implement team name (and number) edit #}
-      {# TODO: Reload page #}
-      <nsv-dialog-launcher dialog="teamName" params="{{ updateNameDialogParams }}" reload-on-save>
+      <nsv-dialog-launcher dialog="teamName" params="{{ updateNameDialogParams }}" on-save="reload">
         {{ _self.editButton() }}
       </nsv-dialog-launcher>
     {% endif %}

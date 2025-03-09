@@ -20,6 +20,9 @@ export class DialogLauncherComponent {
   // Dialog parameters encoded as JSON.
   @Input() params: string;
 
+  // Whether to reload the page when the dialog was saved.
+  @Input({alias: 'on-save'}) onSave: string;
+
   constructor(private dialogService: DialogService) {}
 
   async launchDialog() {
@@ -27,6 +30,9 @@ export class DialogLauncherComponent {
     const params = JSON.parse(this.params)
     const ref = this.dialogService.open(component, params)
     const result = await ref.result
-    // TODO: Maybe reload page.
+
+    if (this.onSave === 'reload') {
+      window.location.reload()
+    }
   }
 }
