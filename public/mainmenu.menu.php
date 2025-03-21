@@ -52,14 +52,14 @@ $nsvMainmenu = array (
 	"nsv-grandprix/",
 	(bool) strstr ( $_SERVER ['PHP_SELF'], "/nsv-grandprix/" ),
 	"NSV-Grandprix" => "/nsv-grandprix/",
-	"Einladungsturnier 2024" => "/einladungsturnier/",
-	"Jubil&auml;umsgrandprix 2024" => "2024/11/nsv-jubilaeumsgrandprix-im-egor-bogdanov-ulf-stoy-sowie-jannes-haverlandt-gewinnen-ihre-gruppen/",
-	"D&auml;hne-Pokal 2024" => "2024/11/daehne-pokal-sebastian-mueer-gewinnt-finale/",
-	"Bulletmeisterschaft 2024" => "2024/11/2-offene-niedersaechsische-bulletmeisterschaft-in-kooperation-mit-der-csa/",
-	"Blitzeinzelmeisterschaft 2024" => "2024/10/ausschreibung-landesblitzeinzelmeisterschaft-2024/",
-	"Blitzmannschaftsmeisterschaft 2024" => "2024/10/landesblitzmannschaftsmeisterschaft-2024-ausschreibung/",
-	"Hochschulmeisterschaft 2024" => "2024/10/3-offene-niedersaechsische-hochschulmeisterschaft-2024-ausschreibung/",
-	"LEM 2025" => "/2024/09/lem-2025-ausschreibung-und-anmeldungen/",
+	"100 Jahre NSV" => "nsv-jubilaeum-100-jahre-nsv/",
+	"LEM 2025" => "2025/01/lem-2025-abschlussbericht/",
+	"Schnellschacheinzelm. 2025" => "2025/02/nsv-schnellschach-einzelmeisterschaft-anderter-open-2025-ausschreibung/",
+	"Pokalmannschaftsm. 2024/25" => "2025/02/pokalmannschaftsmeisterschaft-2024-25-ausschreibung/",
+	"Frauenmeisterschaften 2025" => "2025/02/frauenschachpower-pur/",
+	"Frauenblitzschach 2025" => "2025/01/niedersaechsische-frauenblitzeinzelmeisterschaften-2025-ausschreibung/",
+	"Frauenschnellschach 2025" => "2025/01/niedersaechsische-frauenschnellschachmeisterschaft-2025-ausschreibung/",
+	"Probleml&ouml;semeisterschaft 2025" => "2024/12/offene-niedersaechsische-problemloesemeisterschaft-ausschreibung-4/",
 ),
 
 "Referate" => array (
@@ -67,15 +67,11 @@ $nsvMainmenu = array (
 	(bool) strstr ( $_SERVER ['PHP_SELF'], "/vorstand/" ),
 	"Spielgeschehen" => "kategorie/spielgeschehen/",
 	"Ausbildung" => "kategorie/ausbildung/",
+	"Leistungssport" => "kategorie/leistungssport/",
 	"Frauen" => "kategorie/frauenschach/",
 	"Problemschach" => "kategorie/problemschach/",
 	"Jugend" => "goto/jugend",
 	"Senioren" => "goto/Senioren",
-),
-
-"100-Jahre NSV" => array (
-	"nsv-jubilaeum-100-jahre-nsv/",
-	(bool) strstr ( $_SERVER ['PHP_SELF'], "/nsv-jubilaeum-100-jahre-nsv/" ),
 ),
 
 
