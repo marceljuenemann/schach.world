@@ -60,7 +60,7 @@ function SED_SendMail($mailer, $to, $vars = array()) {
       // Versand loggen
       $log = "eMail $success - Betreff: ".$mailer->Subject." An: ";
       $log .= is_array( $to ) ? implode( ",", $to ) : $to;
-      mysql_query ( "INSERT INTO log SET subject='$log'", $globals ['db'] );
+      SED_Query ( "INSERT INTO log SET subject=?", [$log] );
   } catch (phpmailerException $e) {
     echo $e->errorMessage();
   } catch (Exception $e) {

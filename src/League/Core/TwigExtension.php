@@ -4,6 +4,7 @@ namespace Nsv\League\Core;
 
 use Nsv\Util\TwigFunctions;
 use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
 class TwigExtension extends AbstractExtension {
 
