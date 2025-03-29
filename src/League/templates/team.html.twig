@@ -27,16 +27,12 @@
 {% block headline %}
   <h2>
     {{ title }}
-    {# TODO: Ensure not for team managers #}
-    {% if allowEdit %}
+    {% if allowPlayerEdit %}
       <nsv-dialog-launcher dialog="teamName" params="{{ updateNameDialogParams }}" on-save="reload">
         {{ _self.editButton() }}
       </nsv-dialog-launcher>
     {% endif %}
   </h2>
- {#
-      <a data-nsv-dialog="UpdateTeamVenue" data-nsv-on-save="reload" data-team-id="{{ team.id }}"></a>
-  #}
 {% endblock %}
 
 {% block content %}
