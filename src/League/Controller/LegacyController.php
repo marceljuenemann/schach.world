@@ -113,6 +113,13 @@ class LegacyController extends AbstractLeagueController {
             'league' => $division->league->path
           ]);
 
+        case 'statistik':
+          $division = $this->divisionRepository->find($_GET['staffel']);
+          return $this->redirectToRoute('league_division_statistik', [
+            'division' => $division->path(),
+            'league' => $division->league->path
+          ]);
+
         case 'spieltag':
           if (!isset($_GET['ausgabe'])) {
             $division = $this->divisionRepository->find($_GET['staffel']);
