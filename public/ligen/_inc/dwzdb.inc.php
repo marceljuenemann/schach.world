@@ -18,31 +18,35 @@
 
 class SED_DWZ_Request {
     private $where = "";
+    private $params = [];
     const SORT_DWZ = "dwz DESC, Spielername";
     const SORT_NAME = "Spielername";
 
-    function addCondition ( $where ){
+    private function addCondition ( $where, $param ){
         $this->where .= " AND $where";
+        $this->params[] = $param;
     }
 
-    function addConditionList ( $where ){
-        $this->where .= " AND (".implode (" OR ", $where ).")";
+    function setZpsOptions ( $options ){
+      $conditions = array_map(function($zps) { return 'ZPS = ?'; }, $options);
+      $this->where .= " AND (".implode (" OR ", $conditions ).")";
+      $this->params = array_merge($this->params, $options);
     }
 
     function setName ( $name ){
-        $this->addCondition ( "Spielername LIKE '$name%'" );
+        $this->addCondition ( "Spielername LIKE ?", $name .'%' );
     }
 
     function setGeburt ( $geburt ){
-        $this->addCondition ( "$geburt<=Geburtsjahr" );
+        $this->addCondition ( "?<=Geburtsjahr", $geburt );
     }
 
     function setGeschlecht ( $ges ){
-        $this->addCondition ( "'$ges'=Geschlecht" );
+        $this->addCondition ( "?=Geschlecht", $ges );
     }
 
     function setVerband ( $verband ){
-        $this->addCondition ( "ZPS like '$verband%'" );
+        $this->addCondition ( "ZPS like ?", $verband . '%' );
     }
 
     // zps im Format "ZPS-Mgl_Nr"
@@ -50,12 +54,11 @@ class SED_DWZ_Request {
         $verein = substr ( $zps, 0, 5 );
         $mgl = substr ( $zps, 6 );
         $this->setVerband ( $verein );
-        $this->addCondition ( "Mgl_Nr='$mgl'" );
+        $this->addCondition ( "Mgl_Nr=?", $mgl );
     }
 
     function doQuery ( $limit, $sort ){
-        global $globals;
-        $rsrc = mysql_query ( $x = "
+        return SED_Query("
             SELECT
                 CONCAT(ZPS,'-',Mgl_Nr) zps,
                 Spielername,
@@ -68,31 +71,28 @@ class SED_DWZ_Request {
                 (status IS NULL OR status<>'P')
                 ".$this->where."
             ORDER BY $sort
-            LIMIT $limit", $globals ['db'] );
-        return $rsrc;
+            LIMIT $limit", $this->params
+        )->fetchAllAssociative();
     }
 
     // Als Spieler-Objekte zurückgeben
     function getPlayerObjectList ( $limit, $sort ){
         require_once ( "spieler.class.php" );
         $players = array ();
-        $rsrc = $this->doQuery ( $limit, $sort );
-
-        // Anfrage auswerten
-        if ( $rsrc ) while ( $infos = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) ){
-            try {
-                // Jeden Werte einzeln setzen
-                $spieler = new SED_Spieler ();
-                foreach ( $infos as $name => $value ){
-                    if ( $name == "Spielername" )
-                        $spieler->setName ( $value );
-                    else
-                        $spieler->set ( $name, $value );
-                }
-                $players [] = $spieler;
-            } catch ( WrongFormatException $e ) {
-                // Da ist irgenein Fehler in der DWZ-DB!?!
+        foreach ($this->doQuery ( $limit, $sort ) as $infos) {
+          try {
+            // Jeden Werte einzeln setzen
+            $spieler = new SED_Spieler ();
+            foreach ( $infos as $name => $value ){
+                if ( $name == "Spielername" )
+                    $spieler->setName ( $value );
+                else
+                    $spieler->set ( $name, $value );
             }
+            $players [] = $spieler;
+          } catch ( WrongFormatException $e ) {
+              // Da ist irgenein Fehler in der DWZ-DB!?!
+          }
         }
         return $players;
     }

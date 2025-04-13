@@ -30,9 +30,9 @@
         if ( $staffel ){
             // Den (staffelabhängigen) Termin finden, der am nächsten an heute ist
             // Das Problem an dieser Version war, das einzelne Spiele, die verlegt wurden, zu schlechten Ergebnissen führen
-            //$rsrc = mysql_query ( "SELECT runde FROM viewTermine WHERE staffel=$staffel ORDER BY ABS(UNIX_TIMESTAMP(termin)-UNIX_TIMESTAMP(CURDATE())) LIMIT 1", $globals ['db'] );
+            //$rsrc = mysql_ query ( "SELECT runde FROM viewTermine WHERE staffel=$staffel ORDER BY ABS(UNIX_TIMESTAMP(termin)-UNIX_TIMESTAMP(CURDATE())) LIMIT 1", $globals ['db'] );
             // Diese Query funktioniert, allerdings wurde bei Doppelspieltagen immer der letzte angezeigt.
-            //$rsrc = mysql_query ( "SELECT runde FROM viewStaffeltermine WHERE id=$staffel AND runde<='$maxRunde' ORDER BY ABS(UNIX_TIMESTAMP(datum)-UNIX_TIMESTAMP(CURDATE())), runde DESC LIMIT 1", $globals ['db'] );
+            //$rsrc = mysql_ query ( "SELECT runde FROM viewStaffeltermine WHERE id=$staffel AND runde<='$maxRunde' ORDER BY ABS(UNIX_TIMESTAMP(datum)-UNIX_TIMESTAMP(CURDATE())), runde DESC LIMIT 1", $globals ['db'] );
             $maxRunde = SED_GetLetzteRunde ( $staffel );
             $runde = SED_Query( '
                 SELECT runde, IF(datum<=CURDATE(),-runde,runde) doppelspieltag

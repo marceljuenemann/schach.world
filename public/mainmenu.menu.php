@@ -48,25 +48,33 @@ $nsvMainmenu = array (
 	(bool) strstr ( $_SERVER ['PHP_SELF'], "/termine/" )
 ),
 
-"Ausbildung" => array (
-	"kategorie/ausbildung/",
-	false
+"Turniere" => array (
+	"nsv-grandprix/",
+	(bool) strstr ( $_SERVER ['PHP_SELF'], "/nsv-grandprix/" ),
+	"NSV-Grandprix" => "/nsv-grandprix/",
+	"100 Jahre NSV" => "nsv-jubilaeum-100-jahre-nsv/",
+	"LEM 2025" => "2025/01/lem-2025-abschlussbericht/",
+	"Schnellschacheinzelm. 2025" => "2025/02/nsv-schnellschach-einzelmeisterschaft-anderter-open-2025-ausschreibung/",
+	"Pokalmannschaftsm. 2024/25" => "2025/02/pokalmannschaftsmeisterschaft-2024-25-ausschreibung/",
+	"Frauenmeisterschaften 2025" => "2025/02/frauenschachpower-pur/",
+	"Frauenblitzschach 2025" => "2025/01/niedersaechsische-frauenblitzeinzelmeisterschaften-2025-ausschreibung/",
+	"Frauenschnellschach 2025" => "2025/01/niedersaechsische-frauenschnellschachmeisterschaft-2025-ausschreibung/",
+	"Probleml&ouml;semeisterschaft 2025" => "2024/12/offene-niedersaechsische-problemloesemeisterschaft-ausschreibung-4/",
 ),
 
-"Frauen" => array (
-	"kategorie/frauenschach/",
-	false
+"Referate" => array (
+	"vorstand/",
+	(bool) strstr ( $_SERVER ['PHP_SELF'], "/vorstand/" ),
+	"Spielgeschehen" => "kategorie/spielgeschehen/",
+	"Ausbildung" => "kategorie/ausbildung/",
+	"Leistungssport" => "kategorie/leistungssport/",
+	"Frauen" => "kategorie/frauenschach/",
+	"Problemschach" => "kategorie/problemschach/",
+	"Jugend" => "goto/jugend",
+	"Senioren" => "goto/Senioren",
 ),
 
-"Jugend" => array (
-	"goto/jugend",
-	false
-),
 
-"Senioren" => array (
-	"goto/Senioren",
-	false
-)
 );
 ?>
 

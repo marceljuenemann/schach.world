@@ -47,6 +47,11 @@ doctrine:
                         dir: '%kernel.project_dir%/src/Dwz/Entity'
                         prefix: 'Nsv\Dwz\Entity'
                         alias: Dwz
+                    Registration:
+                        is_bundle: false
+                        dir: '%kernel.project_dir%/src/Registration/Entity'
+                        prefix: 'Nsv\Registration\Entity'
+                        alias: Registration
 
 when@test:
     doctrine:

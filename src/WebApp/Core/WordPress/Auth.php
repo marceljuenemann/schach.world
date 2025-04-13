@@ -29,12 +29,20 @@ class Auth {
     return Auth::isWordPress() && current_user_can('publish_posts');
   }
 
+  static function userName() {
+    return Auth::isLoggedIn() ? wp_get_current_user()->user_login : null;
+  }
+
   /**
-   * Creates a redirect response that redirects the user to the login page.
+   * Return the URI that redirects the user to the login page.
    * 
    * @param redirectTo the URL to redirect to after login
    */
   static function loginRedirect(string $redirectTo) {
-    return new RedirectResponse('/wp-login.php?redirect_to=' . urlencode($redirectTo));
+    return '/wp-login.php?redirect_to=' . urlencode($redirectTo);
+  }
+
+  static function logoutRedirect(string $redirectTo) {
+    return Auth::loginRedirect($redirectTo) . '&action=logout';
   }
 }

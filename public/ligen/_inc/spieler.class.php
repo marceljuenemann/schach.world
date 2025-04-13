@@ -229,7 +229,7 @@ class SED_Spieler {
             // Request erstellen
             require_once ( "dwzdb.inc.php" );
             $req = new SED_DWZ_Request ();
-			$req->setVerband ($verband);
+      			$req->setVerband ($verband);
 			
             // ZPS bekannt?
             if ( $this->isFieldSet ( "zps" ) )
@@ -246,10 +246,10 @@ class SED_Spieler {
             $result = $req->doQuery ( 2, SED_DWZ_Request::SORT_DWZ );
 
             // Anfrage auswerten
-            if ( $result && mysql_num_rows ( $result ) == 1 ){
+            if ( $result && count ( $result ) == 1 ){
                 // Daten einzeln setzen
                 try {
-                    foreach ( mysql_fetch_array ( $result, MYSQL_ASSOC ) as $name => $value ){
+                    foreach ( $result[0] as $name => $value ){
                         if ( $name == "Spielername" )
                             $this->setName ( $value );
                         else

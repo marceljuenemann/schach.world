@@ -42,7 +42,7 @@ class RootController extends AbstractController {
     $auth = substr($param, 4);
     $teamId = base_convert(substr($param, 0, 4), 36, 10);
     $team = $this->teamRepository->find($teamId);
-    return $this->redirect($team->league->uri() . '?m=mannschaftsdaten&mid=' . $team->id . "&auth=$auth");
+    return $this->redirect($team->uri() . "?auth=$auth");
   }
 
   #[Route('3/{divisionId}', name: 'division_login')]

@@ -10,7 +10,7 @@
 
 require_once(ABSPATH . '../../vendor/autoload.php');
 
-// Forward to the Symfony based WebApp for specific route prefixes. 
+// Forward to the Symfony based WebApp for specific route prefixes.
 add_filter('template_include', function($template) {
   global $wp;
   $prefixes = [
@@ -37,13 +37,13 @@ add_action('init', function() {
   // ChessBase Widget.
   add_shortcode('nsv-chessbase', function() {
     $cbByWeekday = array(
-      '1' => array('url' => 'mega_database_2022', 'img' => 'Mega2022'),
-      '2' => array('url' => 'fritz_18', 'img' => 'Fritz18'),
-      '3' => array('url' => 'corr_2022', 'img' => 'Corr2022'),
-      '4' => array('url' => 'chessbase_16_mega_package', 'img' => 'CB16'),
-      '5' => array('url' => 'mega_database_2022', 'img' => 'Mega2022'),
-      '6' => array('url' => 'fritz_18', 'img' => 'Fritz18'),
-      '7' => array('url' => 'chessbase_16_mega_package', 'img' => 'CB16')
+      '1' => array('url' => 'chessbase_18_mega_package', 'img' => 'CB18'),
+      '2' => array('url' => 'chessbase_18_mega_package', 'img' => 'CB18'),
+      '3' => array('url' => 'chessbase_18_mega_package', 'img' => 'CB18'),
+      '4' => array('url' => 'chessbase_18_mega_package', 'img' => 'CB18'),
+      '5' => array('url' => 'chessbase_18_mega_package', 'img' => 'CB18'),
+      '6' => array('url' => 'chessbase_18_mega_package', 'img' => 'CB18'),
+      '7' => array('url' => 'chessbase_18_mega_package', 'img' => 'CB18')
     );
     $cb = $cbByWeekday[date('N')];
     return "

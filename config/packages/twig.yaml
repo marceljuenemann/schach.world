@@ -5,6 +5,7 @@ twig:
     paths:
         '%kernel.project_dir%/src/League/templates': league
         '%kernel.project_dir%/src/Registration/templates': registration
+    strict_variables: false
 
 when@test:
     twig:
