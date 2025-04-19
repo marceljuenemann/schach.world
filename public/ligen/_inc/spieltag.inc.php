@@ -105,7 +105,7 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
     else
     {
         // Informationen und Einstellungen über die Staffel abfragen
-        $infos = mysql_fetch_array ( mysql_query ( "SELECT * FROM viewStaffeln WHERE id=$staffel", $globals ['db'] ), MYSQL_ASSOC );
+        $infos = SED_Row("SELECT * FROM viewStaffeln WHERE id=?", [$staffel]);
         if ( !is_array ( $infos ) ) return false;
 
         // Die ersten Daten setzen
@@ -121,16 +121,16 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
         // Spieltag-Bemerkung abfragen
         $result ['bemerkung'] = "";
         $result ['timestamp'] = 0;
-        $temp = mysql_query ( "SELECT text, UNIX_TIMESTAMP(timestamp) FROM bemerkungen WHERE staffel=$staffel AND runde=$runde LIMIT 1", $globals ['db'] );
-        if ( mysql_num_rows ( $temp ) > 0 && $tmp = mysql_fetch_array ( $temp ) ){
-            $result ['bemerkung'] = $tmp [0];
-            $result ['timestamp'] = $tmp [1];
+        $temp = SED_TryQuery("SELECT text, UNIX_TIMESTAMP(timestamp) ts FROM bemerkungen WHERE staffel=? AND runde=? LIMIT 1", [$staffel, $runde]);
+        if ($temp && $tmp = $temp->fetchAssociative()) {
+            $result ['bemerkung'] = $tmp ['text'];
+            $result ['timestamp'] = $tmp ['ts'];
         }
 
         // Paarungen
         $i = 0;
-        $temp = mysql_query ( "SELECT p.id, p.mannschaft1 as mid1, p.mannschaft2 as mid2, p.erg1, p.erg2, p.bemerkung, DATE_FORMAT(vt.termin,'%d.%m.%Y') as datum, UNIX_TIMESTAMP(p.timestamp) timestamp, vt.ausrichter as ausrichterId FROM paarungen as p INNER JOIN viewTermine vt ON p.id=vt.paarung WHERE p.staffel=$staffel AND p.runde=$runde", $globals ['db'] );
-        while ( $result ['paarungen'][$i] = mysql_fetch_array ( $temp, MYSQL_ASSOC ) )
+        $temp = SED_TryQuery("SELECT p.id, p.mannschaft1 as mid1, p.mannschaft2 as mid2, p.erg1, p.erg2, p.bemerkung, DATE_FORMAT(vt.termin,'%d.%m.%Y') as datum, UNIX_TIMESTAMP(p.timestamp) timestamp, vt.ausrichter as ausrichterId FROM paarungen as p INNER JOIN viewTermine vt ON p.id=vt.paarung WHERE p.staffel=? AND p.runde=?", [$staffel, $runde]);
+        while ( $result ['paarungen'][$i] = $temp->fetchAssociative() )
         {
             // Mannschaft und Ergebnisse
             $result ['paarungen'][$i]['m1'] = $globals ['teams'][$result ['paarungen'][$i]['mid1']];
@@ -150,8 +150,8 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
             // Spielerpaarungen
             $j = 0;
             $kampflos = 1;
-            $temp2 = mysql_query ( "SELECT s1.nachname as s1nachname, s1.vorname as s1vorname, TRIM(s1.titel) as s1titel, s1.brettnr as s1pass, s2.nachname as s2nachname, s2.vorname as s2vorname, s2.titel as s2titel, s2.brettnr as s2pass, sp.spieler1 as sid1, sp.spieler2 as sid2, IF(s1.dwz=0,'',s1.dwz) as dwz1, IF(s2.dwz=0,'',s2.dwz) as dwz2, sp.ergebnis1 as erg1, sp.ergebnis2 as erg2 FROM spielerpaarungen as sp LEFT JOIN spieler as s1 ON s1.id=sp.spieler1 LEFT JOIN spieler as s2 ON s2.id=sp.spieler2 WHERE paarung=".$result ['paarungen'][$i]['id']." ORDER BY brett", $globals ['db'] );
-            while ( $result ['paarungen'][$i]['paarungen'][$j] = mysql_fetch_array ( $temp2, MYSQL_ASSOC ) )
+            $temp2 = SED_TryQuery("SELECT s1.nachname as s1nachname, s1.vorname as s1vorname, TRIM(s1.titel) as s1titel, s1.brettnr as s1pass, s2.nachname as s2nachname, s2.vorname as s2vorname, s2.titel as s2titel, s2.brettnr as s2pass, sp.spieler1 as sid1, sp.spieler2 as sid2, IF(s1.dwz=0,'',s1.dwz) as dwz1, IF(s2.dwz=0,'',s2.dwz) as dwz2, sp.ergebnis1 as erg1, sp.ergebnis2 as erg2 FROM spielerpaarungen as sp LEFT JOIN spieler as s1 ON s1.id=sp.spieler1 LEFT JOIN spieler as s2 ON s2.id=sp.spieler2 WHERE paarung=? ORDER BY brett", [$result ['paarungen'][$i]['id']]);
+            while ( $result ['paarungen'][$i]['paarungen'][$j] = $temp2->fetchAssociative() )
             {
                 // Vollständige Namen zusammensetzen
                 $result ['paarungen'][$i]['paarungen'][$j]['s1fullname'] = SED_Spielername ( $result ['paarungen'][$i]['paarungen'][$j], "s1" );
@@ -162,11 +162,11 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
                     $kampflos = 0;
                 ++$j;
             }          
-            array_pop ( $result ['paarungen'][$i]['paarungen'] ); // das letzte element ist einfach false, wegen mysql_fetch_array. entfernen
+            array_pop ( $result ['paarungen'][$i]['paarungen'] ); // das letzte element ist einfach false, wegen fetchAssociative. entfernen
             $result ['paarungen'][$i]['kampflos'] = $kampflos;
             ++$i;
         }
-        array_pop ( $result ['paarungen'] ); // s. oben, auch wegen false durch mysql_fetch_array
+        array_pop ( $result ['paarungen'] ); // s. oben, auch wegen false durch fetchAssociative
 
         // Nachmeldungen
         {
