@@ -310,14 +310,8 @@ class SWI_Export {
 }
 
 class SWI_TextWriter {
-  function __construct() {
-	  $this->erg_allowed = array ("1", "0", "+", "-", "R");
-  	$this->color_allowed = array ("B", "W", ":");
-  }
-
-	function sendHeaders(){
-		header("Content-type: text/plain; charset=cp850");
-	}
+  private $erg_allowed = array ("1", "0", "+", "-", "R");
+  private $color_allowed = array ("B", "W", ":");
 	
 	function write($text){
 		echo $text;
@@ -373,8 +367,9 @@ class SWI_TextWriter {
 class SWI_Main extends SWI_TextWriter {
 	private $ex;
 
+  function __construct(private $staffel) {}
+
 	function main (){
-		$this->sendHeaders();
 		$this->createExporter();
 		$info = $this->getTournamentInfo();
 
@@ -460,42 +455,32 @@ class SWI_Main extends SWI_TextWriter {
 	function createExporter (){
 		global $globals;
 		$this->ex = new SWI_Export();
-		if ( isset ( $_GET ['staffel'] ) ){
-			$this->ex->addStaffel($_GET['staffel']);
-		} else {
-			$r = mysql_query("SELECT id FROM staffeln WHERE turnier='$globals[tid]'");
-			while ($s = mysql_fetch_array($r, MYSQL_ASSOC)){
-				$this->ex->addStaffel($s['id']);
-			}
-		}
+    $this->ex->addStaffel($this->staffel);
 		$this->ex->createIndex();
 	}
 
 	function getTournamentInfo(){
 		global $globals, $prefs;
-		$staffel = $_GET['staffel'];
 		
 		$result = new stdClass();
 		$result->name = $prefs['name'];
-		$result->hauptSchiedsrichter = @reset(mysql_fetch_array(mysql_query(
-			"select name from benutzer where id=$prefs[leiter]"
-		)));
-		$result->schiedsrichter = @reset(mysql_fetch_array(mysql_query(
-			"select b.name from benutzer b join staffeln s on s.leiter=b.id where s.id=$staffel"
-		)));		
+		$result->hauptSchiedsrichter = SED_Query(
+			"select name from benutzer where id=?", [$prefs['leiter']]
+		)->fetchOne();
+		$result->schiedsrichter = SED_Query(
+			"select b.name from benutzer b join staffeln s on s.leiter=b.id where s.id=?", [$this->staffel]
+		)->fetchOne();
 		$result->datumStart = date('d.m.Y', strtotime(
-			@reset(mysql_fetch_array(mysql_query(
-			"select datum from viewStaffeltermine where id=$staffel order by datum asc limit 1"
-		)))));
+			SED_Query(
+  			"select datum from viewStaffeltermine where id=? order by datum asc limit 1", [$this->staffel]
+		  )->fetchOne()
+    ));
 		$result->datumEnde = date('d.m.Y', strtotime(
-			@reset(mysql_fetch_array(mysql_query(
-			"select datum from viewStaffeltermine where id=$staffel order by datum desc limit 1"
-		)))));
+			SED_Query(
+  			"select datum from viewStaffeltermine where id=? order by datum desc limit 1", [$this->staffel]
+  		)->fetchOne()
+    ));
 
 		return $result;
 	}
 }
-	
-	
-$main = new SWI_Main();
-$main->main();

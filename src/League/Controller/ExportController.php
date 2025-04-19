@@ -21,13 +21,16 @@ class ExportController extends AbstractLeagueController {
   public function divisionSwi(string $divisionPath): Response {
     $this->division = $this->league->divisionByPath($divisionPath);
     $this->initializeLegacySystem();
-    $_GET['staffel'] = $this->division->id;
+    require_once("turnier.inc.php");
+    require_once('../_module/export/swi.inc.php');
 
     ob_start();
-    require_once("turnier.inc.php");
-    require('../_module/export/swi.inc.php');
+    $main = new \SWI_Main($this->division->id);
+    $main->main();
     $body = ob_get_clean();
+
     $response = new Response($body);
+    $response->headers->set('Content-Type', 'text/plain');
     $response->setCharset('CP850');
     return $response;
   }
