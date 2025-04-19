@@ -171,18 +171,23 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
         // Nachmeldungen
         {
             // Abfrage
-            $result ['nachmeldungen'] = array ();
+            $result['nachmeldungen'] = array();
             $i = 0;
-            $temp = mysql_query ( "SELECT id, nachname, vorname, titel, mannschaft as mid, geburt, dwz, brettnr as passnr, nmR as berechtigtAb FROM spieler WHERE nmSid=$staffel AND (nmR=$runde OR nmR=$runde+1) ORDER BY mid, brettnr, id", $globals ['db'] );
-            if ( $temp && mysql_num_rows ( $temp ) > 0 && $infos ['showNachmeldungen'] )
-            {
-                while ( $result ['nachmeldungen'][$i] = mysql_fetch_array ( $temp, MYSQL_ASSOC ) )
-                {
-                    $result ['nachmeldungen'][$i]['fullname'] = SED_Spielername($result ['nachmeldungen'][$i]);
-                    $result ['nachmeldungen'][$i]['mannschaft'] = $globals ['teams'][$result ['nachmeldungen'][$i]['mid']];
+            $temp = SED_Query(
+                "SELECT id, nachname, vorname, titel, mannschaft as mid, geburt, dwz, brettnr as passnr, nmR as berechtigtAb 
+                FROM spieler 
+                WHERE nmSid = ? AND (nmR = ? OR nmR = ? + 1) 
+                ORDER BY mid, brettnr, id",
+                [$staffel, $runde, $runde]
+            );
+
+            if ($temp->rowCount() > 0 && $infos['showNachmeldungen']) {
+                while ($row = $temp->fetchAssociative()) {
+                    $result['nachmeldungen'][$i] = $row;
+                    $result['nachmeldungen'][$i]['fullname'] = SED_Spielername($result['nachmeldungen'][$i]);
+                    $result['nachmeldungen'][$i]['mannschaft'] = $globals['teams'][$result['nachmeldungen'][$i]['mid']];
                     ++$i;
                 }
-                array_pop ( $result ['nachmeldungen'] );
             }
         }
 
