@@ -192,19 +192,23 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
         }
 
         // Spieltag Vorschau
-        $result ['vorschautermin'] = SED_GetTermin ( $runde + 1, $staffel );
-        $rsrc = mysql_query ( "SELECT mannschaft1 as mid1, mannschaft2 as mid2, DATE_FORMAT(termin,'%d.%m.%Y') verlegung FROM paarungen WHERE staffel=$staffel and runde=$runde+1", $globals ['db'] );
-        if ( $rsrc && mysql_num_rows ( $rsrc ) /* && $staffel ['infos'] */ )
-        {
-            for ( $i = 0; $temp = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ); ++$i )
-            {
-                $result ['vorschau'][$i] = $temp;
-                $result ['vorschau'][$i]['mannschaft1'] = $globals ['teams'][$result ['vorschau'][$i]['mid1']];
-                $result ['vorschau'][$i]['mannschaft2'] = $globals ['teams'][$result ['vorschau'][$i]['mid2']];
+        $result['vorschautermin'] = SED_GetTermin($runde + 1, $staffel);
+        $rsrc = SED_Query(
+            "SELECT mannschaft1 as mid1, mannschaft2 as mid2, DATE_FORMAT(termin,'%d.%m.%Y') verlegung 
+             FROM paarungen 
+             WHERE staffel = ? AND runde = ?",
+            [$staffel, $runde + 1]
+        );
+        
+        if ($rsrc->rowCount() > 0) {
+            for ($i = 0; $temp = $rsrc->fetchAssociative(); ++$i) {
+                $result['vorschau'][$i] = $temp;
+                $result['vorschau'][$i]['mannschaft1'] = $globals['teams'][$result['vorschau'][$i]['mid1']];
+                $result['vorschau'][$i]['mannschaft2'] = $globals['teams'][$result['vorschau'][$i]['mid2']];
             }
+        } else {
+            $result['vorschau'] = false;
         }
-        else
-            $result ['vorschau'] = false;
 
         // Im Cache speichern
         SED_Cache::cache ( $result, SED_Cache::SPIELTAG, $runde, $staffel, $turnier );
