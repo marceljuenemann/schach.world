@@ -34,16 +34,15 @@
             // Diese Query funktioniert, allerdings wurde bei Doppelspieltagen immer der letzte angezeigt.
             //$rsrc = mysql_ query ( "SELECT runde FROM viewStaffeltermine WHERE id=$staffel AND runde<='$maxRunde' ORDER BY ABS(UNIX_TIMESTAMP(datum)-UNIX_TIMESTAMP(CURDATE())), runde DESC LIMIT 1", $globals ['db'] );
             $maxRunde = SED_GetLetzteRunde ( $staffel );
-            $runde = SED_Query ( "
+            $runde = SED_Query( '
                 SELECT runde, IF(datum<=CURDATE(),-runde,runde) doppelspieltag
                 FROM viewStaffeltermine
                 WHERE id=? AND runde<=?
                 ORDER BY
                   ABS(UNIX_TIMESTAMP(datum)-UNIX_TIMESTAMP(CURDATE())),
                   doppelspieltag
-                LIMIT 1", [$staffel, $maxRunde])->fetchOne();
-            if ( $runde )
-              return $runde;
+                LIMIT 1', [$staffel, $maxRunde])->fetchOne();
+            if ( $runde ) return $runde;
         }
 
         // Staffelunabhängig

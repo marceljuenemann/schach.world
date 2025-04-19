@@ -26,17 +26,17 @@ class SED_Anmeldung {
 
     static function getPlayerlessTeams (){
         global $globals;
-        return mysql_query ( "SELECT m.* FROM mannschaften m WHERE turnier=$globals[tid] AND NOT EXISTS (SELECT id FROM spieler WHERE mannschaft=m.id)", $globals['db'] ); 
+        return SED_Query("SELECT m.* FROM mannschaften m WHERE turnier=? AND NOT EXISTS (SELECT id FROM spieler WHERE mannschaft=m.id)", [$globals['tid']])->fetchAllAssociative(); 
     }
     
     function __construct ( $mid = 0 ){
         // Existiert die Mannschaft bereits in der Datenbank?
-        $rsrc = $this->getPlayerlessTeams ();
-        while ( $team = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) )
+        foreach($this->getPlayerlessTeams() as $team) {
             if ( $mid==$team['id'] ){
                 $this->data = $team;
                 break;
             }
+        }
     }
 
     // z.B. return array ( "7010170102", "70101", "70102" )
@@ -241,11 +241,12 @@ class SED_Anmeldung {
         // Soll eine Mannschaft ohne Spieler bearbeitet werden?
         if ( $mid ){
             $pl = SED_Anmeldung::getPlayerlessTeams ();
-            while ( $team = mysql_fetch_array ( $pl ) )
+            foreach ($pl as $team) {
                 if ( $team ["id"] == $mid ) {
                     $query = "UPDATE mannschaften $query WHERE id=? LIMIT 1"; 
                     $params[] = $mid;
                 }
+            }
         } else
             $query = "INSERT INTO mannschaften $query";
             

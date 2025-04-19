@@ -19,7 +19,7 @@
     if ( !Spieltag ( $globals ['tid'], $_GET ['staffel'], $_GET ['r'], $data ) )
         SED_Error ( "Fehler beim Laden der Spieltag-Daten.", true );
     $table = Tabelle ( $_GET ['staffel'], $_GET ['r'], true );
-    $options = mysql_fetch_array ( mysql_query ( "SELECT * FROM viewStaffeln WHERE id=$_GET[staffel]", $globals ['db'] ), MYSQL_ASSOC );
+    $options = SED_Row('SELECT * FROM viewStaffeln WHERE id=?', [$_GET['staffel']]);
     $urlbase = $globals ['httppath'] . $prefs ['directory'] . '/';
 
 
