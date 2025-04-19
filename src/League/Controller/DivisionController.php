@@ -9,8 +9,6 @@ use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Core\LegacySystem;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
-use Nsv\League\Entity\Pairing;
-use Nsv\League\Entity\Round;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Nsv\League\Api\Service\StatisticsService;
@@ -71,7 +69,6 @@ class DivisionController extends AbstractLeagueController {
 
   #[Route('{division}/statistik', name: 'statistik')]
   public function statistics(StatisticsService $service): Response {
-
     $division_name = $this->division->name;
 
     $teams_with_active_players = $service->teams_with_active_players($this->division);
@@ -112,8 +109,6 @@ class DivisionController extends AbstractLeagueController {
           'division_name' => $division_name,
         ]);
     }
-
-
   }
 
   #[Route('{division}/{round}/', name: 'matchday')]
@@ -139,8 +134,6 @@ class DivisionController extends AbstractLeagueController {
     $round = $scheduleService->closestRound($this->division, date('Y-m-d'));
     return $this->matchday($round ? $round->round : 1, $matchDayService);
   }
-
-
 
   /**
    * Returns the tab navigation configuration for division pages.

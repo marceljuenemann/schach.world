@@ -116,14 +116,22 @@ class SED_Tabelle {
         $this->teams = array();
 
         // Mannschaften holen
-        $res = mysql_query ( "SELECT m.id FROM mannschaften as m WHERE m.staffel=$staffel", $globals ['db'] );
-        if ( $res ) while ( $team = mysql_fetch_array ( $res, MYSQL_NUM ) )
-            $this->teams [$team[0]] = new SED_Tabelle_Team ( $team [0] );
+        $rows = SED_Query(
+          "SELECT m.id FROM mannschaften AS m WHERE m.staffel = ?",
+          [$staffel]
+        )->fetchAllAssociative();
+        foreach ($rows as $team) {
+          $this->teams[$team['id']] = new SED_Tabelle_Team($team['id']);
+        }
 
         // Ergebnisse holen
-        $res = mysql_query ( "SELECT mannschaft1 as mid1, mannschaft2 as mid2, erg1, erg2, runde FROM paarungen WHERE staffel=$staffel AND runde<=$runde AND erg1 IS NOT NULL AND erg2 IS NOT NULL", $globals ['db'] );
-        if ( $res ) while ( $game = mysql_fetch_array ( $res, MYSQL_ASSOC ) )
-        {
+        $games = SED_Query(
+          "SELECT mannschaft1 AS mid1, mannschaft2 AS mid2, erg1, erg2, runde 
+          FROM paarungen 
+          WHERE staffel = ? AND runde <= ? AND erg1 IS NOT NULL AND erg2 IS NOT NULL",
+          [$staffel, $runde]
+        )->fetchAllAssociative();
+        foreach ($games as $game) {        
             // Mannschaften überhaupt in der Tabelle vorhanden?
             if ( !isset ( $this->teams [$game["mid1"]] ) || !isset ( $this->teams [$game["mid2"]] ) )
                 continue;
@@ -274,15 +282,22 @@ foreach ( $sort as $mp=>$a )
     // Berliner Wertung
     static function berlinerWertung ( $m1, $m2 ){
         $bw = array ( 0.0, 0.0 );
-        global $globals;
 
         // Einzelergebnisse laden
-        $res = mysql_query ( "SELECT sp.ergebnis1, sp.ergebnis2, sp.brett FROM spielerpaarungen sp INNER JOIN paarungen p ON p.id=sp.paarung WHERE p.mannschaft1=$m1 AND p.mannschaft2=$m2", $globals ['db'] );
-        $brettzahl = mysql_num_rows ( $res ); // stimmt vielleicht nicht...
-        if ( $res ) while ( $spiel = mysql_fetch_array ( $res, MYSQL_ASSOC ) ){
-            $bw [0] += ($brettzahl-$spiel ["brett"]+1) * SED_Tabelle::valueOfSpielergebnis ( $spiel ["ergebnis1"] );
-            $bw [1] += ($brettzahl-$spiel ["brett"]+1) * SED_Tabelle::valueOfSpielergebnis ( $spiel ["ergebnis2"] );
+        $rows = SED_Query(
+          "SELECT sp.ergebnis1, sp.ergebnis2, sp.brett 
+          FROM spielerpaarungen sp 
+          INNER JOIN paarungen p ON p.id = sp.paarung 
+          WHERE p.mannschaft1 = ? AND p.mannschaft2 = ?",
+          [$m1, $m2]
+        )->fetchAllAssociative();
+        $brettzahl = count($rows);
+
+        foreach ($rows as $spiel) {
+          $bw[0] += ($brettzahl - $spiel["brett"] + 1) * SED_Tabelle::valueOfSpielergebnis($spiel["ergebnis1"]);
+          $bw[1] += ($brettzahl - $spiel["brett"] + 1) * SED_Tabelle::valueOfSpielergebnis($spiel["ergebnis2"]);
         }
+
         return $bw;
     }
 
@@ -373,7 +388,7 @@ function Tabelle ( $staffel, $runde, $kreuztabelle, $sortmode = SED_SORT_DEFAULT
     $data = $table->getTable ( $kreuztabelle );
 
     // Infos zur Staffel (wie Aufsteiger-Anzahl)
-    $infos = mysql_fetch_array ( mysql_query ( "SELECT * FROM viewStaffeln WHERE id=$staffel", $globals ['db'] ), MYSQL_ASSOC );
+    $infos = SED_Query ( "SELECT * FROM viewStaffeln WHERE id=?", [$staffel] )->fetchAssociative();
     if ( !is_array ( $infos ) || !$infos ['showTabelle'] )
         return array ();
 
