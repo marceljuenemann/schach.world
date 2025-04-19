@@ -1,14 +1,12 @@
-<?
-/* Mannschaftsaufstellung und ähnliches
- *
- * @copyright Copyright (c) 2006-2010, Marcel Jünemann
- * @version 0.8.0 (2010/7)
- * @license GNU Public License v3
- * @author Marcel Jünemann <mail@marcel-juenemann.de>
- *
- * @package schach-ergebnisdienst
- * @subpackage mannschaft
+<?php
+
+/**
+ * Exports are deprecated and will be removed in the future.
+ * If there is a need for it in the future, I'd recommend to use the public JSON API.
  */
+global $globals;
+@$_GET['auth'] === substr($globals['masterpasswort'], 0, 8) or die('Bitte wenden Sie sich an webmaster@nsv-online.de für Exporte');
+
     require_once ( "turnier.inc.php" );
     require_once ( "mannschaft.class.php" );
 
@@ -35,33 +33,7 @@
     );
   }
 
-if ( isset($_GET['zip']) ) {
-  $tmpfile = tempnam(sys_get_temp_dir(), "sed_export_zip");
-  $zip = new ZipArchive;
-  $res = $zip->open($tmpfile, ZipArchive::CREATE);
-  if ($res === TRUE) {
-    foreach ($globals['staffeln'] as $id => $name) {
-      $content = file_get_contents($globals['httppath'].$prefs['directory'].'/?m=export&format='.$_GET['format'].'&staffel='.$id);
-      $zip->addFromString(replaceUmlauts($name).'.'.$_GET['format'], $content);
-    }
-    $zip->close();
-
-      header("Content-Type: application/zip");
-    header("Content-Disposition: attachment; filename=Export.zip");
-    header("Content-Length: " . filesize($tmpfile));
-
-    readfile($tmpfile);
-    exit;
-  } else {
-    SED_Error ("Could not create zip file", true);
-  }
-}
-
-if ( $_GET ["format"] == "swi" ){
-  require_once("../_module/export/swi.inc.php");
-}
-
-else if ( $_GET ["format"] == "u12spielplaner"){
+if ( $_GET ["format"] == "u12spielplaner"){
   require_once("../_module/export/u12spielplaner.inc.php");
 }
 
