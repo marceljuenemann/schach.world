@@ -1,9 +1,5 @@
-<? /* charset:utf8 2022-10-10 */
-/**
- * Hi Marcel,
-
-das einfachste ist, ein Export im Stil der SwissChess Ausgabe zu
-erstellen. Anbei mal ein Beispiel.
+<?php /**
+SWI FORMAT
 
 Die ersten zwei Zeilen kannst Du ignorieren.
 
@@ -59,52 +55,22 @@ Wenn Du sonst Fragen hast, melde Dich einfach.
 
 viele Grüße,
 Holger
-
-                                                                     
-                                                                     
-                                                                     
-                                             
-6. Stadtmeisterschaft LE 2011
-
-ES  12  7  1 #860#
- ttt. rrr nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv lll ffffffffff pppppppppp gggggggg eeee dddd  zzzzz mmmm  
-   1.   1 Reck, Moritz                     Bebenhausen                                                              2096              1W  6 RB  4 1W 12 1B  2 0W  3 1B 11 1W  5 
-   2.   3 Zoellmer, Fritz                  SC Stetten                                                               1958              1B  7 1W 11 RB  3 0W  1 1B  9 RW  4 1B  8 
-   3.   2 Schieweck, Gert                  SC Stetten                                                               1875              1W  8 1B 12 RW  2 RB  4 1B  1 RW  5 1B  7 
-   4.   5 Gehringer, Frank                 SC Leinfelden                                                            1860              1B  9 RW  1 1B  7 RW  3 0B  5 RB  2 -: 10 
-   5.   4 Böhmler, Thomas                  Renningen                                                                1830              0W 11 RB  8 1W 10 1B  6 1W  4 RB  3 0B  1 
-   6.  10 Viehoff, Jürgen                  SC Stetten                                                               1772              0B  1 1W  9 0B 11 0W  5 1B 10 0W  7 1B 12 
-   7.   8 Pudmensky, Stefan                Oeffingen                                                                1671              0W  2 1B 10 0W  4 1B 11 0W  8 1B  6 0W  3 
-   8.   9 Tölg, Wolfgang                   Oeffingen                                                                1601              0B  3 RW  5 0B  9 RW 10 1B  7 1W 12 0W  2 
-   9.   7 Kunzi, Jürgen                    SG Filder                                                                1580              0W  4 0B  6 1W  8 1B 12 0W  2 1B 10 RW 11 
-  10.  11 Menzel, Siegfried                SC Leinfelden                                                            1481  C0512  135  0W 12 0W  7 0B  5 RB  8 0W  6 0W  9 +:  4 
-  11.   6 Schmidt, Heiko                   SC Stetten                                                               1462  C0520   80  1B  5 0B  2 1W  6 0W  7 1B 12 0W  1 RB  9 
-  12.  12 Charalambakis, Michail           SV Altbach                                                               1138              1B 10 0W  3 0B  1 0W  9 0W 11 0B  8 0W  6 
-###
-Name:       6. Stadtmeisterschaft LE 2011           
-Ort:        Leinfelden-Echterdingen                 
-FIDE-Land:                                          
-Datum(S):   13.10.2011           Datum(E):   16.02.2012          
-Züge(1):    90 Min.              Züge(2):                         Züge(3):                        
-Hauptschiedsrichter:Jürgen Viehoff                                              
-Weitere Schiedsrichter:Jürgen Viehoff                                              
-Anwender:        Schachkreis-Stuttgart-West                                  
-Ser.Nummer:      9603051462                                                  
-
 */
 
 class SWI_Mannschaft {
 	private $data;
 	
-	function __construct($id){
-		$r = mysql_query("SELECT name, mnr, Vereinname as vname FROM mannschaften m LEFT JOIN dwz_vereine d ON d.ZPS=m.zps WHERE m.id='$id'");
-		if (mysql_num_rows($r) != 1){
-			die("SWI_Mannschaft failed to construct for id: ".$id);
-		}
-		$this->data = mysql_fetch_array($r, MYSQL_ASSOC);
-	}
-	
-	function getName($maxlength){
+  function __construct($id) {
+      $this->data = SED_Row(
+          "SELECT name, mnr, Vereinname as vname 
+           FROM mannschaften m 
+           LEFT JOIN dwz_vereine d ON d.ZPS = m.zps 
+           WHERE m.id = ?",
+          [$id]
+      );
+  }	
+
+  function getName($maxlength){
 		$name = $this->data['name'];
 		if (strlen($this->data['vname'] ?: '') > 2){
 			$name = $this->data['vname'];
@@ -123,15 +89,11 @@ class SWI_Spieler {
 	private $data;
 	private $results = array();
 	
-	function __construct($id){
-		$r = mysql_query("SELECT id, mannschaft, zps, brettnr, vorname, nachname, dwz, elo, geburt FROM spieler WHERE id='$id'");
-		if (mysql_num_rows($r) != 1){
-			throw new Exception("SWI_Spieler failed to construct for id: ".$id);
-		}
-		$this->data = mysql_fetch_array($r, MYSQL_ASSOC);
-	}
+  function __construct($id) {
+    $this->data = SED_Row("SELECT id, mannschaft, zps, brettnr, vorname, nachname, dwz, elo, geburt FROM spieler WHERE id = ?", [$id]);
+  }
 
-	private function get($field){
+  private function get($field){
 		if (!isset ($this->data[$field])){
 			die ("no such field: ".$field);
 		}
@@ -237,14 +199,25 @@ class SWI_Export {
 	// gibt an, wie viele spiele je spieltag ein maximal gespielt hat (vor allem doppelrunde)
 	private $maxGameCounts = array();
 	
-	function addStaffel ($id) {
-		$r = mysql_query("SELECT runde, brett, spieler1, spieler2, ergebnis1, ergebnis2 FROM spielerpaarungen sp INNER JOIN paarungen p ON p.id=sp.paarung WHERE p.staffel=$_GET[staffel] AND sp.spieler1 IS NOT NULL AND sp.spieler2 IS NOT NULL");
-		while ($paarung = mysql_fetch_array($r, MYSQL_ASSOC)){
-      $this->addErgebnis($paarung['runde'], $paarung['brett'], $paarung['spieler1'], $paarung['spieler2'], $paarung['ergebnis1'], $paarung['ergebnis2']);
-		}
-	}
-	
-	private function addSpieler($id){
+  function addStaffel($id) {
+      $sql = "SELECT runde, brett, spieler1, spieler2, ergebnis1, ergebnis2 
+              FROM spielerpaarungen sp 
+              INNER JOIN paarungen p ON p.id = sp.paarung 
+              WHERE p.staffel = ? AND sp.spieler1 IS NOT NULL AND sp.spieler2 IS NOT NULL";
+      $result = SED_Query($sql, [$id]);
+      while ($paarung = $result->fetchAssociative()) {
+          $this->addErgebnis(
+              $paarung['runde'], 
+              $paarung['brett'], 
+              $paarung['spieler1'], 
+              $paarung['spieler2'], 
+              $paarung['ergebnis1'], 
+              $paarung['ergebnis2']
+          );
+      }
+  }	
+
+  private function addSpieler($id){
 		if (!isset($this->spieler[$id])){
 			$spieler = new SWI_Spieler($id);
 			$this->addMannschaft($spieler->getMannschaft());
@@ -518,20 +491,10 @@ class SWI_Main extends SWI_TextWriter {
 			@reset(mysql_fetch_array(mysql_query(
 			"select datum from viewStaffeltermine where id=$staffel order by datum desc limit 1"
 		)))));
-		
-		/* Alle Staffelleiter
-		$rsrc = mysql_query("select b.name from benutzer b join staffeln s on s.leiter=b.id where s.turnier=$prefs[id]");
-		while ($name = (mysql_fetch_array($rsrc)))
-			$names[] = reset($name);
-		sort($names);
-		$result->schiedsrichter = implode(', ', array_unique($names));
-		*/
 
 		return $result;
 	}
 }
-	
-
 	
 	
 $main = new SWI_Main();
