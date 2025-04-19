@@ -5,6 +5,7 @@ namespace Nsv\League\Controller;
 use Nsv\League\Api\Service\PlayerService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Api\Service\TeamService;
+use Nsv\League\Core\Encoding;
 use Nsv\League\Core\TokenAuth;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapQueryParameter;
@@ -65,11 +66,11 @@ class MainController extends AbstractLeagueController {
       'allowEdit' => $allowEdit,
       'allowPlayerEdit' => $allowPlayerEdit,
       'showContactInfo' =>  $this->league->year >= date('Y') - 1 || $allowEdit,
-      'updateNameDialogParams' => json_encode([
+      'updateNameDialogParams' => json_encode(Encoding::deep_utf8_encode([
         'id' => $teamId,
         'name' => $teamEntity->name,
         'number' => $teamEntity->number
-      ])
+      ]))
     ]);
   }
 
