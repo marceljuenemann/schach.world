@@ -36,7 +36,7 @@ export class TextControl extends NsvFormControl<string> {
   }
 
   override get transformedValue() {
-    return this.value.trim()
+    return this.value?.trim()
   }
 }
 
