@@ -18,38 +18,38 @@ class PlayerData
   #[Assert\Regex('/^.+, .+$/')]
   public string $name;
 
-  public ?string $club;
+  public ?string $club = null;
   
   #[Assert\Regex('/^[A-Z0-9]{5}$/')]
-  public ?string $zps;
+  public ?string $zps = null;
 
   #[Assert\Regex('/^[0-9]{1,4}$/')]
-  public ?string $memberId;
+  public ?string $memberId = null;
 
   #[Assert\Regex('/^A|P$/')]
-  public ?string $status;
+  public ?string $status = null;
 
   #[Assert\Regex('/^[MWD]?$/')]
-  public ?string $gender;
+  public ?string $gender = null;
   
   #[Assert\Range(min: 1900, max: 2100)]
-  public ?int $yearOfBirth;
+  public ?int $yearOfBirth = null;
 
   #[Assert\Range(min: 100, max: 5000)]
-  public ?int $dwz;
+  public ?int $dwz = null;
 
   #[Assert\Range(min: 100, max: 5000)]
-  public ?int $elo;
+  public ?int $elo = null;
 
   #[Assert\Regex('/^W?[GIFC]M?$/')]
-  public ?string $fideTitle;
+  public ?string $fideTitle = null;
 
-  public ?int $fideId;
+  public ?int $fideId = null;
 
   #[Assert\Regex('/^[A-Z]{3}$/')]
-  public ?string $fideCountry;
+  public ?string $fideCountry = null;
 
-  public ?string $uri;
+  public ?string $uri = null;
   
   static function fromDwzEntity(Player $player): PlayerData {
     $data = new PlayerData();

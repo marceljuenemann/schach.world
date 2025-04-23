@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 class PlayerRegistration
 {
-  public ?int $id;
+  public ?int $id = null;
 
   #[Assert\NotBlank]
   public string $group;

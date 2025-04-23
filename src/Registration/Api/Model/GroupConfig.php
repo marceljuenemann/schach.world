@@ -20,15 +20,15 @@ class GroupConfig {
   /**
    * Maximum DWZ constraint for this group.
    */
-  public ?int $maxDwz;
+  public ?int $maxDwz = null;
 
   /**
    * Minimum year of birth constraint for this group.
    */
-  public ?int $minYearOfBirth;
+  public ?int $minYearOfBirth = null;
 
   /**
    * Maximum number of players that may register for this group.
    */
-  public ?int $maxPlayers;
+  public ?int $maxPlayers = null;
 }
