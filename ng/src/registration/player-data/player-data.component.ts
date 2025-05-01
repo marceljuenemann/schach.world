@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { DwzPlayer, DwzService, DwzClub } from '../../dwz/dwz.service';
-import { combineLatest, map, Observable, of, switchMap, zip } from 'rxjs';
+import { catchError, combineLatest, map, Observable, of, switchMap, zip } from 'rxjs';
 import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { outputFromObservable } from '@angular/core/rxjs-interop';
@@ -115,6 +115,12 @@ export class PlayerDataComponent {
           }
           return options
         }))
+      }),
+      catchError(err => {
+        // If we don't catch errors here, autocompletion will stop working altogether.
+        // It's better to just show no suggestions so subsequent requests can be made.
+        console.error('Error generating autocomplete options:', err)
+        return of([])
       })
     )
   }
