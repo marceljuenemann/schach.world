@@ -55,5 +55,6 @@ class Encoding
     } else {
       $callback($obj);
     }
+    return $obj;
   }
 }

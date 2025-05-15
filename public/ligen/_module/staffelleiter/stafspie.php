@@ -211,21 +211,21 @@
     if ( isset ( $_GET ['del'] ) )
     {
         // Wurde der Spieler bereits eingesetzt?
-        $rsrc = mysql_query ( "SELECT id FROM spielerpaarungen WHERE spieler1=$_GET[del] or spieler2=$_GET[del]", $globals ['db'] ); 
-        if ( mysql_num_rows ( $rsrc ) )
-            SED_Error ( "Der Spieler konnte nicht gel&ouml;scht werden, da er bereits in einem Spiel eingesetzt wurde." );
+        $result = SED_Query("SELECT id FROM spielerpaarungen WHERE spieler1=? OR spieler2=?", [$_GET['del'], $_GET['del']]);
+        if ($result->rowCount() > 0)
+            SED_Error("Der Spieler konnte nicht gel&ouml;scht werden, da er bereits in einem Spiel eingesetzt wurde.");
         else {
             // Lösche, wenn die Berechtigung vorhanden ist.
-            if ( !mysql_query ( "DELETE FROM spieler WHERE id=$_GET[del] AND mannschaft=$_GET[mid] LIMIT 1", $globals ['db'] ) )
-                SED_Error ( "Der Spieler konnte nicht gel&ouml;scht werden. Evtl. fehlt Ihnen die Berechtigung dazu.", true );
+            if (!($delResult = SED_TryQuery("DELETE FROM spieler WHERE id=? AND mannschaft=? LIMIT 1", [$_GET['del'], $_GET['mid']])))
+                SED_Error("Der Spieler konnte nicht gel&ouml;scht werden. Evtl. fehlt Ihnen die Berechtigung dazu.", true);
                 
             // Gab es den Spieler überhaupt nicht?
-            if ( !mysql_affected_rows () )
-                SED_Error ( "Den angegebenen Spieler gab es nicht (mehr)!", true );
+            if ($delResult->rowCount() == 0)
+                SED_Error("Den angegebenen Spieler gab es nicht (mehr)!", true);
 
             // Brett-Nummern aufrücken lassen
-            if ( !mysql_query ( "UPDATE spieler SET brettnr=brettnr-1 WHERE mannschaft=$_GET[mid] AND brettnr>$_GET[bnr]", $globals ['db'] ) )
-                SED_Error ( "Fehler beim &Auml;ndern der nachfolgenden Brett-Nummern", true );
+            if (!SED_TryQuery("UPDATE spieler SET brettnr=brettnr-1 WHERE mannschaft=? AND brettnr>?", [$_GET['mid'], $_GET['bnr']]))
+                SED_Error("Fehler beim &Auml;ndern der nachfolgenden Brett-Nummern", true);
 
             // Mannschaftsdaten neu laden
             $team = new SED_Mannschaft ( $_GET ['mid'] );
@@ -247,12 +247,12 @@
         if ( $partner = SED_Query ( "SELECT id FROM spieler WHERE mannschaft=? AND brettnr=? LIMIT 1", [$_GET['mid'], $_GET['with']] )->fetchOne() )
         {
             // Neue Brett-Nummer setzen
-            if ( !mysql_query ( "UPDATE spieler SET brettnr=$_GET[with] WHERE mannschaft=$_GET[mid] AND brettnr=$_GET[swap] LIMIT 1", $globals ['db'] ) )
-                SED_Error ( "Der Spieler konnte nicht gefunden werden!", true );
+            if (!SED_TryQuery("UPDATE spieler SET brettnr=? WHERE mannschaft=? AND brettnr=? LIMIT 1", [$_GET['with'], $_GET['mid'], $_GET['swap']]))
+                SED_Error("Der Spieler konnte nicht gefunden werden!", true);
                 
             // Neue Brett-Nummer setzen Nr. 2
-            if ( !mysql_query ( "UPDATE spieler SET brettnr=$_GET[swap] WHERE id=".$partner." LIMIT 1", $globals ['db'] ) )
-                SED_Error ( "Der Spieler konnte nicht gefunden werden!", true );
+            if (!SED_TryQuery("UPDATE spieler SET brettnr=? WHERE id=? LIMIT 1", [$_GET['swap'], $partner]))
+                SED_Error("Der Spieler konnte nicht gefunden werden!", true);
                 
             // Mannschaftsdaten neu laden
             $team = new SED_Mannschaft ( $_GET ['mid'] );

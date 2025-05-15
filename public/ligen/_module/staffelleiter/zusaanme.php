@@ -25,10 +25,17 @@
       $prefs ['anmVerband'] = $_POST ['verband'];
       $prefs ['anmGeburt'] = (int) $_POST ['geburt'];
       $prefs ['anmGeschlecht'] = $_POST ['geschlecht'];
-      $prefs ['anmTLMail'] = $_POST ['TLMail'];
+      $prefs ['anmTLMail'] = @$_POST ['TLMail'] ?: 0;
 
       // In Datenbank speichern
-      if ( mysql_query ( "UPDATE turniere SET anmAktiv=$prefs[anmAktiv], anmVerband='$prefs[anmVerband]', anmGeburt=$prefs[anmGeburt], anmGeschlecht='$prefs[anmGeschlecht]', anmTLMail='$prefs[anmTLMail]' WHERE id=$globals[tid] LIMIT 1", $globals ['db'] ) )
+      if (SED_TryQuery("UPDATE turniere SET anmAktiv=?, anmVerband=?, anmGeburt=?, anmGeschlecht=?, anmTLMail=? WHERE id=? LIMIT 1", [
+          $prefs['anmAktiv'], 
+          $prefs['anmVerband'], 
+          $prefs['anmGeburt'], 
+          $prefs['anmGeschlecht'], 
+          $prefs['anmTLMail'], 
+          $globals['tid']
+      ]))
       {
         echo "<b>&Auml;nderungen erfolgreich gespeichert!</b><br /><br />";
 
@@ -36,7 +43,7 @@
         echo "<meta http-equiv='refresh' content='0;URL=?admin=desktop-$admin[userid]-$admin[session]' />";
       }
       else
-        SED_Error ( "Ausnahmefehler #935" );
+        SED_Error("Ausnahmefehler #935");
 
     }
 
@@ -46,10 +53,10 @@
     $attribTLMail = $prefs ['anmTLMail'] ? "checked='checked'" : "";
 
     // Verband
-    $verbaende = mysql_query ( "SELECT * FROM verbaende", $globals ['db'] );
+    $verbaende = SED_Query("SELECT * FROM verbaende")->fetchAllAssociative();
     $optionsVerband = "";
-    while ( $verband = mysql_fetch_array ( $verbaende, MYSQL_ASSOC ) )
-      $optionsVerband .= "<option value='$verband[zps]'>" . str_replace ( " ", "&nbsp;", $verband ['name'] ) . "</option>";
+    foreach ($verbaende as $verband)
+      $optionsVerband .= "<option value='" . $verband['zps'] . "'>" . str_replace(" ", "&nbsp;", $verband['name']) . "</option>";
     $optionsVerband = SED_SelectOption ( $optionsVerband, $prefs ['anmVerband'] );
 
     // Geschlechtsbegrenzung
@@ -103,10 +110,10 @@
         if ( isset ( $_POST ['anme_felder'] ) )
         {
             // In Datenbank speichern
-            if ( mysql_query ( "UPDATE turniere SET anmZusatzfelder='$_POST[anme_textarea]' WHERE id=$globals[tid] LIMIT 1", $globals ['db'] ) )
+            if (SED_TryQuery("UPDATE turniere SET anmZusatzfelder=? WHERE id=? LIMIT 1", [$_POST['anme_textarea'], $globals['tid']]))
             {
                 echo "<b>&Auml;nderungen erfolgreich gespeichert!</b><br /><br />";
-                $prefs ['anmZusatzfelder'] = $_POST ['anme_textarea'];
+                $prefs['anmZusatzfelder'] = $_POST['anme_textarea'];
             }
         }
     ?>        
@@ -128,9 +135,9 @@
     ?>
             <table class='sed_tabelle'><tr><th>Mannschaft</th><th>Feld</th><th>Inhalt</th></tr>
                 <?
-                    $rsrc = mysql_query ( "SELECT * FROM anmeldungZusatzfelder a INNER JOIN mannschaften m ON m.id=a.mannschaft WHERE m.turnier=$globals[tid] AND inhalt<>'' ORDER BY m.name, a.feldname", $globals ['db'] );
-                    while ( $tmp = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) )
-                        echo "<tr><td>".$globals['teams'][$tmp['mannschaft']]."</td><td>$tmp[feldname]</td><td>".nl2br ( $tmp['inhalt'] )."</td></tr>";
+                    $zusatzfelder = SED_Query("SELECT * FROM anmeldungZusatzfelder a INNER JOIN mannschaften m ON m.id=a.mannschaft WHERE m.turnier=? AND inhalt<>'' ORDER BY m.name, a.feldname", [$globals['tid']])->fetchAllAssociative();
+                    foreach ($zusatzfelder as $tmp)
+                        echo "<tr><td>".$globals['teams'][$tmp['mannschaft']]."</td><td>".$tmp['feldname']."</td><td>".nl2br($tmp['inhalt'])."</td></tr>";
                 ?>
             </table>
     <?

@@ -3,9 +3,7 @@
 namespace Nsv\League\Repository;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\EntityNotFoundException;
 use Doctrine\Persistence\ManagerRegistry;
-use Nsv\League\Entity\Player;
 use Nsv\League\Entity\Team;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Nsv\League\Entity\Division;
@@ -21,7 +19,7 @@ class TeamRepository extends ServiceEntityRepository
 
   // TODO: move into our own abstract repository? 
   public function find($id, $lockMode = null, $lockVersion = null): Team {
-    $entity = parent::find((int) $id, $lockMode, $lockVersion);
+    $entity = parent::find((int)$id, $lockMode, $lockVersion);
     if (!$entity) {
       throw new NotFoundHttpException("Team not found");
     }

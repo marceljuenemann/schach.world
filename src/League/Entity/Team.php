@@ -42,7 +42,7 @@ class Team
    * If two teams are in different groups, they can never be substitutes for
    * each other. This is useful if a league has many divisions that aren't all
    * created equal, e.g. if they have different age groups.
-   * 
+   *
    * TODO: Instead create a group column on the division entity. Also show that
    * group in the UI so that teams can more easily be distinguished.
    */
@@ -79,11 +79,11 @@ class Team
   #[ORM\Column(name: 'mf_telefon2', length: 30)]
   private ?string $captainPhone2 = '';
 
-  #[ORM\OneToMany(targetEntity: Player::class, mappedBy: 'team')]   
+  #[ORM\OneToMany(targetEntity: Player::class, mappedBy: 'team')]
   #[ORM\OrderBy(["number" => "ASC"])]
   private $players;
 
-  #[ORM\OneToMany(targetEntity: TeamRecipient::class, mappedBy: 'team')]   
+  #[ORM\OneToMany(targetEntity: TeamRecipient::class, mappedBy: 'team')]
   #[ORM\OrderBy(["id" => "ASC"])]
   private $additionalRecipients;
 

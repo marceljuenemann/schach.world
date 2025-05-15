@@ -43,7 +43,7 @@ class SchachInEntity {
   }
 
   public function isClub() {
-    return $this->alive && ($this->scope === 'verein' || $this->scope === 'schachabteilung');
+    return $this->alive && in_array($this->scope, ['verein', 'verein-schachabteilung']);
   }
 
   /**

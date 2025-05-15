@@ -45,7 +45,6 @@
       array ( "turnmalo", -1, "t", false, "Mannschaft löschen", "Mannschaft löschen", "Hier können Sie eine Mannschaft endgültig aus dem Turnier entfernen" ),
       array ( "stafspie", -1, "st", false, "Spieler", "Spieler bearbeiten", "Über diese Funktion können Sie alle Daten der Spieler bearbeiten" ),
       array ( "alleeing", -1, "st", false, "Ergebnisse eingeben", "Ergebnisse eingeben", "" ),
-      array ( "manndata", -1, "st", false, "Mannschaftsdaten ändern", "Mannschaftsdaten ändern", "" ),
       array ( "logout", -1, "st", false, "Logout", "Logout", "" ),
 
       // Mein Turnier

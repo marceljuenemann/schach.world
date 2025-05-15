@@ -6,6 +6,7 @@ namespace NSV\Turniere\Core;
  * are expected to be stored in wp-content/uploads/turniere/$name/$year.
  */
 class Tournament {
+  static private $base_dir = ABSPATH . '../../data/tournaments/';
 
   public $dir;
   public $id;
@@ -55,12 +56,11 @@ class Tournament {
     if (!filter_var($year, FILTER_VALIDATE_REGEXP, array('options' => array('regexp' => "/^[a-z0-9]+$/")))) throw new \Exception("Invalid year");
     
     // Directories.
-    $base_dir = ABSPATH . '../../data/tournaments/';
-    $tournament_dir = $base_dir . $id . '/';
+    $tournament_dir = Tournament::$base_dir . $id . '/';
     $year_dir = $tournament_dir . $year . '/';
     
     // Load base config.
-    $a = json_decode(file_get_contents($base_dir . 'config.json'), true);
+    $a = json_decode(file_get_contents(Tournament::$base_dir . 'config.json'), true);
     $b = json_decode(file_get_contents($tournament_dir . 'config.json'), true);
 
     // Load torunament config.
@@ -72,6 +72,10 @@ class Tournament {
     
     // Load files and create Tournament instance.
     return new Tournament($year_dir, $id, $year, $config, Tournament::loadFiles($year_dir, $config));
+  }
+
+  public static function exists($id, $year) {
+    return is_dir(Tournament::$base_dir . $id . '/' . $year);
   }
     
   // Loads all files from the year directory with filenames unchanged from SwissChess export.

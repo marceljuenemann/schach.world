@@ -61,13 +61,13 @@ class Player
    * is currently no enforcement of the format whatsoever.
    */
   #[ORM\Column(name: 'geburt', length: 13)]
-  private string $birth = '';
+  private ?string $birth = '';
 
   /**
    * Player's gender as single character, should be one of the constants defined above.
    */
   #[ORM\Column(name: 'geschlecht', length: 1)]
-  private string $gender = '';
+  private ?string $gender = '';
 
   /**
    * If the player was registered late, the division for which they were registered.

@@ -44,8 +44,14 @@ function doJoin($from, $to){
 
 		
 $lastR = 1;
-$r = mysql_query("SELECT paarungen.id, m1.name n1, m1.mnr nr1, m1.id mn1, m2.name n2, m2.mnr nr2, m2.id mn2, runde FROM paarungen JOIN mannschaften m1 ON m1.id=mannschaft1 JOIN mannschaften m2 ON m2.id=mannschaft2 WHERE paarungen.staffel='$_GET[staffel]' ORDER BY runde", $globals['db']);
-while ($p = mysql_fetch_array($r, MYSQL_ASSOC)){
+$r = SED_Query("SELECT paarungen.id, m1.name n1, m1.mnr nr1, m1.id mn1, m2.name n2, m2.mnr nr2, m2.id mn2, runde 
+                FROM paarungen 
+                JOIN mannschaften m1 ON m1.id=mannschaft1 
+                JOIN mannschaften m2 ON m2.id=mannschaft2 
+                WHERE paarungen.staffel=? 
+                ORDER BY runde", [$_GET['staffel']]);
+$pairings = $r->fetchAllAssociative();
+foreach ($pairings as $p) {
 	extract($p);
 	$m1 = "$mn1-$n1$nr1";
 	$m2 = "$mn2-$n2$nr2";

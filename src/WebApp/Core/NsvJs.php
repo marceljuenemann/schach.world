@@ -43,8 +43,8 @@ class NsvJs {
     };
 
     $html = '<link rel="stylesheet" href="'.$findPath('styles-').'"></head>';
-    $html .= '<script src="'.$findPath('polyfills-').'" type="module"></script>';
-    $html .= '<script src="'.$findPath('main-').'" type="module"></script>';
+    $html .= '<script defer src="'.$findPath('polyfills-').'" type="module"></script>';
+    $html .= '<script defer src="'.$findPath('main-').'" type="module"></script>';
     return $html;
   }
 

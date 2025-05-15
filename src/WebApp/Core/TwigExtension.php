@@ -2,6 +2,7 @@
 
 namespace Nsv\WebApp\Core;
 
+use Nsv\WebApp\Core\WordPress\Auth;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
@@ -14,6 +15,22 @@ class TwigExtension extends AbstractExtension {
       new TwigFunction('include_nsv_ng', function() {
         return $this->nsvJs->nsvNgTags();
       }, ['is_safe' => array('html')]),
+
+      new TwigFunction('nsv_is_logged_in', function() {
+        return Auth::isLoggedIn();
+      }),
+
+      new TwigFunction('nsv_login_redirect', function($uri) {
+        return Auth::loginRedirect($uri);
+      }),
+
+      new TwigFunction('nsv_logout_redirect', function($uri) {
+        return Auth::logoutRedirect($uri);
+      }),
+
+      new TwigFunction('nsv_username', function() {
+        return Auth::userName();
+      }),
 
       new TwigFunction('nsv_js_src', function() {
         return $this->nsvJs->scriptUrl();
