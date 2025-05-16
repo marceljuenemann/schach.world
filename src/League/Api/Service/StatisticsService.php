@@ -261,9 +261,9 @@ class StatisticsService {
 
         }
       }
-      // If the player still has no real games, remove him from the array.
+      // If the player has played no real games, remove him from $active_players.
       if (!isset($player['games'])) {
-        unset($player[$key]);
+        unset($active_players[$key]);
       }
     }
 
@@ -1129,9 +1129,9 @@ class StatisticsService {
    * Who has played less games will be sorted further up.
    */
   public function players_sorted_by_points_and_games($active_players_with_games) {
-//    uasort($active_players_with_games, function($a, $b) {
-//        return [$b['points'], count($a['games'])] <=> [$a['points'], count($b['games'])];
-//    });
+    uasort($active_players_with_games, function($a, $b) {
+        return [$b['points'], count($a['games'])] <=> [$a['points'], count($b['games'])];
+    });
     return $active_players_with_games;
   }
 
