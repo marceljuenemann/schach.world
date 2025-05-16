@@ -96,9 +96,12 @@ class RegistrationController extends AbstractController {
       if (!$player->dwzPlayer) {
         throw new NotFoundHttpException("ZPS und Mitgliedsnummer nicht gefunden");
       }
+    } else {
+      // Delete a possible existing connection to the DWZ database.
+      $player->dwzPlayer = null;
     }
 
-    // Store nulls to always load DWZ from reference database.
+    // Nulls here mean the latest data from the DWZ database should be used.
     $player->club = $request->playerData->club;
     $player->dwz = $request->playerData->dwz;
     $player->elo = $request->playerData->elo;
