@@ -56,6 +56,10 @@ services:
     Nsv\Dwz\Controller\:
         resource: '../src/Dwz/Controller/'
 
+    #Util services
+    Nsv\Util\Command\:
+      resource: '../src/Util/Command/'
+
 when@test:
     services:
         Nsv\League\Testing\:
