@@ -72,7 +72,7 @@ class DivisionController extends AbstractLeagueController {
   public function statistics(StatisticsService $service, StatisticsSmoketest $smokeTest): Response {
     $division_name = $this->division->name;
 
-    $mySmokeTest = $smokeTest;
+    $testString = $smokeTest->execute();
 
     $teams_with_active_players = $service->teams_with_active_players($this->division);
     $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players, $this->division);
