@@ -37,6 +37,8 @@ services:
         resource: '../src/League/Core/'
     Nsv\League\Repository\:
         resource: '../src/League/Repository/'
+    Nsv\League\Testing\:
+      resource: '../src/League/Testing/'
     Nsv\League\Entity\League:
         factory: '@Nsv\League\Core\LeagueProvider'
     Nsv\League\Entity\Division:
@@ -59,6 +61,8 @@ services:
     #Util services
     Nsv\Util\Command\:
       resource: '../src/Util/Command/'
+    Nsv\Util\Testing\:
+      resource: '../src/Util/Testing/'
 
 when@test:
     services:
