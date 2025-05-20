@@ -73,3 +73,8 @@ tests/League/Api/Service/actual/
 /public/utility
 ###> Ignore stuff used by Thomas for Development purposes only <###
 
+
+###> squizlabs/php_codesniffer ###
+/.phpcs-cache
+/phpcs.xml
+###< squizlabs/php_codesniffer ###
