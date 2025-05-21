@@ -2,10 +2,10 @@
 
 namespace Nsv\League\Testing\Smoketests;
 
-use Nsv\Util\Testing\Smoketest\SmoketestInferface;
+use Nsv\Util\Testing\Smoketest\SmoketestInterface;
 use Nsv\Util\Testing\Smoketest\SmoketestProvider;
 
-class StatisticsSmoketest {
+class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterface {
 
   /**
    * @inheritDoc
