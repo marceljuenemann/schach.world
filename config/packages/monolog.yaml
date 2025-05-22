@@ -4,6 +4,8 @@ monolog:
         - deprecation
         # Channel used by the league manager
         - league
+        # Channel for smoke tests
+        - smoketest
     handlers:
         league_log:
             type: stream
@@ -22,6 +24,11 @@ when@dev:
                 type: console
                 process_psr_3_messages: false
                 channels: ["!event", "!doctrine", "!console"]
+            smoketest:
+                level: debug
+                type: stream
+                path: "%kernel.logs_dir%/smoketest.log"
+                channels: [smoketest]
 
 when@test:
     monolog:

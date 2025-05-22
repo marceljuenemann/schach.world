@@ -10,6 +10,7 @@ use Nsv\League\Core\LegacySystem;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\League\Testing\Smoketests\StatisticsSmoketest;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Nsv\League\Api\Service\StatisticsService;
@@ -28,7 +29,8 @@ class DivisionController extends AbstractLeagueController {
     LeagueAuthState                $auth,
     LegacySystem                   $legacySystem,
     Division                       $division,
-    private EntityManagerInterface $leagueEntityManager) {
+    private EntityManagerInterface $leagueEntityManager,
+    private LoggerInterface $logger,) {
     parent::__construct($league, $auth, $legacySystem);
     $this->division = $division;
     $this->entityManager = $this->leagueEntityManager;
@@ -73,6 +75,10 @@ class DivisionController extends AbstractLeagueController {
     $division_name = $this->division->name;
 
     $testString = $smokeTest->execute();
+
+    $this->logger->info('Ja da wird was geloggt, hier!');
+
+
 
     $teams_with_active_players = $service->teams_with_active_players($this->division);
     $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players, $this->division);

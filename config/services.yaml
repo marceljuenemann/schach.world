@@ -33,6 +33,9 @@ services:
         resource: '../src/League/Command/'
     Nsv\League\Controller\:
         resource: '../src/League/Controller/'
+    Nsv\League\Controller\DivisionController:
+        tags:
+            - { name: monolog.logger, channel: smoketest }
     Nsv\League\Core\:
         resource: '../src/League/Core/'
     Nsv\League\Repository\:
