@@ -4,6 +4,7 @@ namespace Nsv\League\Testing\Smoketests;
 
 use Nsv\Util\Testing\Smoketest\SmoketestInterface;
 use Nsv\Util\Testing\Smoketest\SmoketestProvider;
+use Psr\Log\LoggerInterface;
 
 class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterface {
 
@@ -22,7 +23,7 @@ class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterfac
   }
 
   public function execute() {
-    // TODO: Implement execute() method.
+    $this->logger->info('Logs auftrennen ist gut.');
     return ('I would be a smoketest');
   }
 }

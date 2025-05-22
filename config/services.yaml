@@ -13,6 +13,11 @@ services:
         bind:
             string $projectDir: '%kernel.project_dir%'
 
+    _instanceof:
+      Nsv\Util\Testing\Smoketest\SmoketestInterface:
+        tags:
+          - { name: monolog.logger, channel: smoketest }
+
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
     Nsv\WebApp\Command\:
@@ -33,9 +38,6 @@ services:
         resource: '../src/League/Command/'
     Nsv\League\Controller\:
         resource: '../src/League/Controller/'
-    Nsv\League\Controller\DivisionController:
-        tags:
-            - { name: monolog.logger, channel: smoketest }
     Nsv\League\Core\:
         resource: '../src/League/Core/'
     Nsv\League\Repository\:
