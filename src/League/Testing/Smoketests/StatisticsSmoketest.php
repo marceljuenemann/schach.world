@@ -12,7 +12,9 @@ class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterfac
    * @inheritDoc
    */
   public function urls(): array {
-    // TODO: Implement urls() method.
+    $url_1 = '/ligen/test-2022/beirksliga/3';
+    $url_2 = '/ligen/test-2022/beirksliga/4';
+    return [$url_1, $url_2];
   }
 
   /**
@@ -23,7 +25,8 @@ class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterfac
   }
 
   public function execute() {
+    $responses = $this->checkUrls();
     $this->logger->info('Logs auftrennen ist gut.');
-    return ('I would be a smoketest');
+    return $responses;
   }
 }

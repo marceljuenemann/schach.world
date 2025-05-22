@@ -32,8 +32,10 @@ class SmoketestProvider implements SmoketestInterface {
     return $responses;
   }
 
-  protected function requestUrl(array $urls): array {
-    $response = [];
+  protected function requestUrl(string $url): Response {
+    $request = Request::create($url);
+    $response = new Response();
+    $response->prepare($request);
     return $response;
   }
 }
