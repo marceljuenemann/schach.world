@@ -13,7 +13,7 @@ class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterfac
    */
   public function urls(): array {
     $url_1 = '/ligen/test-2022/beirksliga/3';
-    $url_2 = '/ligen/test-2022/beirksliga/4';
+    $url_2 = '/ligen/test-2022/bezirksliga/4';
     return [$url_1, $url_2];
   }
 
@@ -25,8 +25,7 @@ class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterfac
   }
 
   public function execute() {
-    $responses = $this->checkUrls();
+    $response = $this->checkUrls();
     $this->logger->info('Logs auftrennen ist gut.');
-    return $responses;
   }
 }
