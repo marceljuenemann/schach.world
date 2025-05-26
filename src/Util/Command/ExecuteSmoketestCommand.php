@@ -16,7 +16,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 )]
 class ExecuteSmoketestCommand extends Command
 {
-    public function __construct()
+    public function __construct(private iterable $smoketestInstances)
     {
         parent::__construct();
     }
@@ -30,8 +30,12 @@ class ExecuteSmoketestCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
-
         $className = $io->ask('Provide the name of your smoke test class:');
+
+        foreach ($this->smoketestInstances as $smoketestInstance) {
+          //$result = $smoketestInstance->execute();
+          $papa = 'rolling stone';
+        }
 
         $io->success('You have a new command! Now make it your own! Pass --help to see your options.');
 
