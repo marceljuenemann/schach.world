@@ -2,6 +2,7 @@
 
 namespace Nsv\Util\Command;
 
+use Nsv\Util\Message\SmoketestMessage;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -9,6 +10,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use Symfony\Component\Messenger\MessageBusInterface;
 
 #[AsCommand(
     name: 'testing:execute-smoketest',
@@ -16,7 +18,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 )]
 class ExecuteSmoketestCommand extends Command
 {
-    public function __construct(private iterable $smoketestInstances)
+    public function __construct(private MessageBusInterface $messageBus)
     {
         parent::__construct();
     }
@@ -32,10 +34,7 @@ class ExecuteSmoketestCommand extends Command
 
         $className = $io->ask('Provide the name of your smoke test class:');
 
-        foreach ($this->smoketestInstances as $smoketestInstance) {
-          //$result = $smoketestInstance->execute();
-          $papa = 'rolling stone';
-        }
+        $this->messageBus->dispatch(new SmoketestMessage($className));
 
         $io->success('You have a new command! Now make it your own! Pass --help to see your options.');
 

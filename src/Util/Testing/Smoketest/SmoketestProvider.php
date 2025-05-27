@@ -3,7 +3,6 @@
 namespace Nsv\Util\Testing\Smoketest;
 
 use Psr\Log\LoggerInterface;
-use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 /**
  * Runs smoketests against a given array of URLs.
@@ -11,7 +10,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 class SmoketestProvider implements SmoketestInterface {
 
 
-  public function __construct(private HttpClientInterface $client, protected LoggerInterface $logger) {}
+  public function __construct(protected LoggerInterface $logger) {}
 
   public function urls(): array {
   }
@@ -40,11 +39,6 @@ class SmoketestProvider implements SmoketestInterface {
   }
 
   protected function requestUrl(string $url, $cSession = null) {
-//    $response = $this->client->withOptions(["verify_peer"=>false,"verify_host"=>false])->request('GET', $url);
-//    $statusCode = $response->getStatusCode();
-//    $title = $response->getInfo();
-//    $content = $response->getContent();
-    //$complete = $response->toArray($content);
     curl_setopt($cSession, CURLOPT_URL, $url);
     $html = curl_exec($cSession);
 

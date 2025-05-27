@@ -67,7 +67,7 @@ services:
     #Util services
     Nsv\Util\Command\:
       resource: '../src/Util/Command/'
-    Nsv\Util\Command\ExecuteSmoketestCommand:
+    Nsv\Util\MessageHandler\SmoketestMessageHandler:
       arguments:
         # inject all services that implement SmoketestInterface
         $smoketestInstances: !tagged_iterator smoketest
