@@ -7,7 +7,7 @@ use Psr\Log\LoggerInterface;
 /**
  * Runs smoketests against a given array of URLs.
  */
-class SmoketestProvider implements SmoketestInterface {
+class SmoketestProvider {
 
 
   public function __construct(protected LoggerInterface $logger) {}
