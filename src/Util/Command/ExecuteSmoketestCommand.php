@@ -18,7 +18,7 @@ use Symfony\Component\Messenger\MessageBusInterface;
 )]
 class ExecuteSmoketestCommand extends Command
 {
-    public function __construct(private MessageBusInterface $messageBus)
+    public function __construct(private MessageBusInterface $messageBus, private iterable $smoketestInstances)
     {
         parent::__construct();
     }
@@ -32,9 +32,18 @@ class ExecuteSmoketestCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
-        $className = $io->ask('Provide the name of your smoke test class:');
+        $classnames = [];
+        // Extract the class names from $smoketestInstances
+        foreach ($this->smoketestInstances as $smoketestInstance) {
+          $namespaceName = get_class($smoketestInstance);
+          $nameComponents = explode('\\', $namespaceName);
+          $className = end($nameComponents);
+          $classNames[] = end($className);
+        }
 
-        $this->messageBus->dispatch(new SmoketestMessage($className));
+        $selectedClassName = $io->choice('Provide the name of your smoke test class:', $classnames);
+
+        $this->messageBus->dispatch(new SmoketestMessage($selectedClassName));
 
         $io->success('You have a new command! Now make it your own! Pass --help to see your options.');
 
