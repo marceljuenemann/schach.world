@@ -32,20 +32,19 @@ class ExecuteSmoketestCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
-        $classnames = [];
+        $classNames = [];
         // Extract the class names from $smoketestInstances
         foreach ($this->smoketestInstances as $smoketestInstance) {
           $namespaceName = get_class($smoketestInstance);
           $nameComponents = explode('\\', $namespaceName);
-          $className = end($nameComponents);
-          $classNames[] = end($className);
+          $classNames[] = end($nameComponents);
         }
 
-        $selectedClassName = $io->choice('Provide the name of your smoke test class:', $classnames);
+        $selectedClassName = $io->choice('Provide the name of your smoke test class:', $classNames);
 
         $this->messageBus->dispatch(new SmoketestMessage($selectedClassName));
 
-        $io->success('You have a new command! Now make it your own! Pass --help to see your options.');
+        $io->success(sprintf('You have selected the class name %s.', $selectedClassName));
 
         return Command::SUCCESS;
     }
