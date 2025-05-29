@@ -213,7 +213,9 @@ class StatisticsService {
             // the player's games.
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
-              $player['games'][] = $game;
+              if(Result::wasPlayed($game->result1) && Result::wasPlayed($game->result2)) {
+                $player['games'][] = $game;
+              }
               if (!empty($game->board && !in_array($game->board, $boards_played))) {
                 $boards_played[] = $game->board;
               }
@@ -230,7 +232,9 @@ class StatisticsService {
           if (is_object($game->player2) && $game->player2->id == $player['player']->id) {
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
-              $player['games'][] = $game;
+              if(Result::wasPlayed($game->result1) && Result::wasPlayed($game->result2)) {
+                $player['games'][] = $game;
+              }
               if (!empty($game->board && !in_array($game->board, $boards_played))) {
                 $boards_played[] = $game->board;
               }
