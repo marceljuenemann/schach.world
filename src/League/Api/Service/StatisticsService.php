@@ -213,10 +213,7 @@ class StatisticsService {
             // the player's games.
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
-              if(Result::wasPlayed($game->result1) && Result::wasPlayed($game->result2)) {
-                $player['games'][] = $game;
-              }
-
+              $player['games'][] = $game;
               if (!empty($game->board && !in_array($game->board, $boards_played))) {
                 $boards_played[] = $game->board;
               }
@@ -233,9 +230,7 @@ class StatisticsService {
           if (is_object($game->player2) && $game->player2->id == $player['player']->id) {
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
-              if(Result::wasPlayed($game->result1) && Result::wasPlayed($game->result2)) {
-                $player['games'][] = $game;
-              }
+              $player['games'][] = $game;
               if (!empty($game->board && !in_array($game->board, $boards_played))) {
                 $boards_played[] = $game->board;
               }
@@ -1130,7 +1125,7 @@ class StatisticsService {
    */
   public function players_sorted_by_points_and_games($active_players_with_games) {
     uasort($active_players_with_games, function($a, $b) {
-        return [$b['points'], count($a['games'])] <=> [$a['points'], count($b['games'])];
+      return [$b['points'], count($a['games'])] <=> [$a['points'], count($b['games'])];
     });
     return $active_players_with_games;
   }
@@ -1144,6 +1139,4 @@ class StatisticsService {
     });
     return $active_players_with_games;
   }
-
-
 }
