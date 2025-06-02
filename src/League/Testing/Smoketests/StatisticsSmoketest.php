@@ -25,7 +25,7 @@ class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterfac
   }
 
   public function execute() {
-//    $response = $this->checkUrls();
+    //$response = $this->checkUrls($this->urls());
 //    $this->logger->info('Logs auftrennen ist gut.');
     return 'I am the voice';
   }
