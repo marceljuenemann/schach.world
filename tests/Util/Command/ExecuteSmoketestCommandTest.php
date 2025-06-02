@@ -1,6 +1,6 @@
 <?php
 
-namespace Nsv\Tests\Util\Command;
+namespace Tests\Util\Command;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
@@ -11,7 +11,7 @@ use Symfony\Component\Console\Tester\CommandTester;
 class ExecuteSmoketestCommandTest extends KernelTestCase
 {
 
-  public function testExecute(InputInterface $input, OutputInterface $output)
+  public function testExecute()
   {
     $kernel = self::bootKernel();
 
@@ -23,7 +23,7 @@ class ExecuteSmoketestCommandTest extends KernelTestCase
 
     $commandTester->setInputs(['Test']);
     $commandTester->execute([
-      'command' => $command->getName(),
+      'command' => $command->getName()
       ]);
     $commandTester->assertCommandIsSuccessful();
     $output = $commandTester->getDisplay();
