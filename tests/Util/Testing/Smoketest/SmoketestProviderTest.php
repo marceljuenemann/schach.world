@@ -1,6 +1,6 @@
 <?php
 
-namespace Nsv\Util\Testing\Smoketest;
+namespace Nsv\Tests\Util\Testing\Smoketest;
 
 class SmoketestProviderTest {
 
