@@ -11,6 +11,13 @@ class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterfac
   /**
    * @inheritDoc
    */
+  public function getBaseURL(): string {
+    return 'https://nsv-online.local/';
+  }
+
+  /**
+   * @inheritDoc
+   */
   public function urls(): array {
     $url_1 = '/ligen/test-2022/beirksliga/3';
     $url_2 = '/ligen/test-2022/bezirksliga/4';
@@ -25,7 +32,7 @@ class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterfac
   }
 
   public function execute() {
-//    $response = $this->checkUrls();
+    $response = $this->checkUrls();
 //    $this->logger->info('Logs auftrennen ist gut.');
     return 'I am the voice';
   }
