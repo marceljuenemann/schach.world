@@ -9,8 +9,11 @@ use Psr\Log\LoggerInterface;
  */
 class SmoketestProvider {
 
-
   public function __construct(protected LoggerInterface $logger) {}
+
+  public function getBaseURL(): string {
+    return 'https://nsv-online.local/';
+  }
 
   public function urls(): array {
   }
@@ -21,11 +24,7 @@ class SmoketestProvider {
 
   public function execute() {}
 
-  private function getBaseURL() {
-    $server = $_SERVER;
-    $baseUrl = $server['REQUEST_SCHEME'] . '://' . $server['SERVER_NAME'];
-    return $baseUrl;
-  }
+
 
   protected function checkUrls(): array {
     $baseUrl = $this->getBaseURL();
