@@ -16,7 +16,6 @@ services:
     _instanceof:
       Nsv\Util\Testing\Smoketest\SmoketestInterface:
         tags:
-          - { name: monolog.logger, channel: smoketest }
           - { name: smoketest }
 
     # makes classes in src/ available to be used as services
@@ -66,17 +65,20 @@ services:
 
     #Util services
     Nsv\Util\Command\:
-      resource: '../src/Util/Command/'
+        resource: '../src/Util/Command/'
     Nsv\Util\Command\ExecuteSmoketestCommand:
-      arguments:
-        # inject all services that implement SmoketestInterface
-        $smoketestInstances: !tagged_iterator smoketest
+        arguments:
+            # inject all services that implement SmoketestInterface
+            $smoketestInstances: !tagged_iterator smoketest
     Nsv\Util\MessageHandler\SmoketestMessageHandler:
-      arguments:
-        # inject all services that implement SmoketestInterface
-        $smoketestInstances: !tagged_iterator smoketest
+        arguments:
+            # inject all services that implement SmoketestInterface
+            $smoketestInstances: !tagged_iterator smoketest
     Nsv\Util\Testing\:
-      resource: '../src/Util/Testing/'
+        resource: '../src/Util/Testing/'
+    Nsv\Util\Testing\Smoketest\SmoketestProvider:
+      tags:
+        - { name: monolog.logger, channel: smoketest }
 
 when@test:
     services:
