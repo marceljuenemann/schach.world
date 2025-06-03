@@ -23,9 +23,4 @@ interface SmoketestInterface {
    * Choose a messenger transport.
    */
   public function transport(): string;
-
-  /**
-   * Run the smoketest. The actual custom logic.
-   */
-  public function execute();
 }

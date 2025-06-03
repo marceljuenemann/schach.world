@@ -23,12 +23,4 @@ class DummySmoketest implements SmoketestInterface {
   public function transport(): string {
     // TODO: Implement transport() method.
   }
-
-  /**
-   * @inheritDoc
-   */
-  public function execute() {
-    // TODO: Implement execute() method.
-    return 'This is only a dummy message';
-  }
 }

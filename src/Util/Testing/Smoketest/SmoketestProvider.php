@@ -3,6 +3,7 @@
 namespace Nsv\Util\Testing\Smoketest;
 
 use Psr\Log\LoggerInterface;
+use function PHPUnit\Framework\isNull;
 
 /**
  * Runs smoketests against a given array of URLs.
@@ -22,25 +23,35 @@ class SmoketestProvider {
     // TODO: Implement transport() method.
   }
 
-  public function execute() {}
+  public function execute() {
+    $responses = $this->checkUrls();
+    if(!isNull($responses)) {
+      foreach ($responses as $response) {
+        $this->logger->info($response);
+      }
+    }
+  }
 
-
-
-  protected function checkUrls(): array {
+  private function checkUrls(): array {
     $baseUrl = $this->getBaseURL();
     $urls = $this->urls();
     $cSession = $this->startCurlSession();
-    $responses = [];
-    foreach ($urls as $url) {
-      $responses[] = $this->requestUrl($baseUrl . $url, $cSession);
+    $responses = null;
+    if($cSession) {
+      $responses = [];
+      foreach ($urls as $url) {
+        $responses[] = $this->requestUrl($baseUrl . $url, $cSession);
+      }
     }
+    // Make sure in case of missing curl something is written
+    // to the log or it can handle the empty array in responses
+    // and does not create an error.
     return $responses;
   }
 
-  protected function requestUrl(string $url, $cSession = null) {
+  private function requestUrl(string $url, $cSession = null) {
     curl_setopt($cSession, CURLOPT_URL, $url);
     $html = curl_exec($cSession);
-
     $info = curl_getinfo($cSession);
     return $info;
   }
@@ -58,6 +69,8 @@ class SmoketestProvider {
       curl_setopt($cSession, CURLOPT_SSL_VERIFYPEER, FALSE);
       curl_setopt($cSession, CURLOPT_FOLLOWLOCATION, TRUE);
       return $cSession;
+    } else {
+      return FALSE;
     }
   }
 
