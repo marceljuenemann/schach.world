@@ -13,39 +13,50 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Messenger\MessageBusInterface;
 
 #[AsCommand(
-    name: 'testing:execute-smoketest',
-    description: 'Runs smoketests you have defined',
+  name: 'testing:execute-smoketest',
+  description: 'Runs smoketests you have defined',
 )]
-class ExecuteSmoketestCommand extends Command
-{
-    public function __construct(private MessageBusInterface $messageBus, private iterable $smoketestInstances)
-    {
-        parent::__construct();
+class ExecuteSmoketestCommand extends Command {
+  public function __construct(private MessageBusInterface $messageBus, private iterable $smoketestInstances) {
+    parent::__construct();
+  }
+
+  protected function configure(): void {}
+
+  protected function execute(InputInterface $input, OutputInterface $output): int {
+    $io = new SymfonyStyle($input, $output);
+
+    $classNames = [];
+    // Extract the class names from $smoketestInstances
+    foreach ($this->smoketestInstances as $smoketestInstance) {
+      $namespaceName = get_class($smoketestInstance);
+      $nameComponents = explode('\\', $namespaceName);
+      $classNames[] = end($nameComponents);
     }
 
-    protected function configure(): void
-    {
+    $selectedClassName = $io->choice('Provide the name of your smoke test class:', $classNames);
 
-    }
+    $this->dispatchMessages($selectedClassName);
 
-    protected function execute(InputInterface $input, OutputInterface $output): int
-    {
-        $io = new SymfonyStyle($input, $output);
+    $io->success(sprintf('You have selected the class name %s.', $selectedClassName));
 
-        $classNames = [];
-        // Extract the class names from $smoketestInstances
-        foreach ($this->smoketestInstances as $smoketestInstance) {
-          $namespaceName = get_class($smoketestInstance);
-          $nameComponents = explode('\\', $namespaceName);
-          $classNames[] = end($nameComponents);
+
+    return Command::SUCCESS;
+  }
+
+  private function dispatchMessages($selectedClassName) {
+    // Now get the urls from the selected class
+    foreach ($this->smoketestInstances as $selectedSmoketestInstance) {
+      $selectedNamespaceName = get_class($selectedSmoketestInstance);
+      $selectedNameComponents = explode('\\', $selectedNamespaceName);
+      if ($selectedClassName == end($selectedNameComponents)) {
+        $urls = $selectedSmoketestInstance->returnCompleteUrls();
+        if (!empty($urls)) {
+          foreach ($urls as $url) {
+            $this->messageBus->dispatch(new SmoketestMessage($selectedClassName));
+          }
         }
-
-        $selectedClassName = $io->choice('Provide the name of your smoke test class:', $classNames);
-
-        $this->messageBus->dispatch(new SmoketestMessage($selectedClassName));
-
-        $io->success(sprintf('You have selected the class name %s.', $selectedClassName));
-
-        return Command::SUCCESS;
+      }
     }
+  }
 }

@@ -8,9 +8,9 @@ final class SmoketestMessage {
    * to hold the data for this message class.
    */
 
-  public function __construct(private string $className) {}
+  public function __construct(private string $url) {}
 
-  public function getClassName(): string {
-    return $this->className;
+  public function getUrl(): string {
+    return $this->url;
   }
 }
