@@ -12,7 +12,7 @@ class SmoketestProvider {
   public function __construct(protected LoggerInterface $logger) {}
 
   public function getBaseURL(): string {
-    return 'https://nsv-online.local/';
+    return 'https://nsv-online.local';
   }
 
   public function urls(): array {
@@ -56,6 +56,7 @@ class SmoketestProvider {
       curl_setopt($cSession, CURLOPT_RETURNTRANSFER, TRUE);
       curl_setopt($cSession, CURLOPT_HEADER, FALSE);
       curl_setopt($cSession, CURLOPT_SSL_VERIFYPEER, FALSE);
+      curl_setopt($cSession, CURLOPT_FOLLOWLOCATION, TRUE);
       return $cSession;
     }
   }

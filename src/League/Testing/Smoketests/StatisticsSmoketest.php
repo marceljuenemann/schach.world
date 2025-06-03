@@ -12,7 +12,7 @@ class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterfac
    * @inheritDoc
    */
   public function getBaseURL(): string {
-    return 'https://nsv-online.local/';
+    return 'https://nsv-online.local';
   }
 
   /**
@@ -32,7 +32,7 @@ class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterfac
   }
 
   public function execute() {
-    $response = $this->checkUrls($this->urls());
+    $response = $this->checkUrls();
 //    $this->logger->info('Logs auftrennen ist gut.');
     return 'I am the voice';
   }

@@ -15,6 +15,7 @@ interface SmoketestInterface {
 
   /**
    * Provide an array of URLS to run HTTP requests against.
+   * Provide urls with a leading slash like /ligen/(...)
    */
   public function urls(): array;
 

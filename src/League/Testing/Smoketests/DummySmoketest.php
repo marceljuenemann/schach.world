@@ -7,7 +7,7 @@ use Nsv\Util\Testing\Smoketest\SmoketestInterface;
 class DummySmoketest implements SmoketestInterface {
 
   public function getBaseURL(): string {
-    return 'https://nsv-online.local/';
+    return 'https://nsv-online.local';
   }
 
   /**
