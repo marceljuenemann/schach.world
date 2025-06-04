@@ -14,7 +14,7 @@ class SmoketestProvider {
     return 'https://nsv-online.local';
   }
 
-  public function urls(): array {
+  public function routes(): array {
   }
 
   public function transport(): string {
@@ -22,7 +22,7 @@ class SmoketestProvider {
   }
 
   public function returnCompleteUrls() {
-    $urls = $this->urls();
+    $urls = $this->routes();
     foreach($urls as &$url) {
       $url = $this->getBaseURL() . $url;
     }

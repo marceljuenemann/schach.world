@@ -13,7 +13,7 @@ class DummySmoketest implements SmoketestInterface {
   /**
    * @inheritDoc
    */
-  public function urls(): array {
+  public function routes(): array {
     // TODO: Implement urls() method.
   }
 
