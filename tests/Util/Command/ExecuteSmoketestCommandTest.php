@@ -15,11 +15,9 @@ class ExecuteSmoketestCommandTest extends KernelTestCase
   {
     $kernel = self::bootKernel();
 
-
     $application = new Application($kernel);
     $command = $application->find('testing:execute-smoketest');
     $commandTester = new CommandTester($command);
-
 
     $commandTester->setInputs(['Test']);
     $commandTester->execute([

@@ -70,10 +70,11 @@ services:
         arguments:
             # inject all services that implement SmoketestInterface
             $smoketestInstances: !tagged_iterator smoketest
+    Nsv\Util\MessageHandler\:
+      resource: '../src/Util/MessageHandler/'
     Nsv\Util\MessageHandler\SmoketestMessageHandler:
-        arguments:
-            # inject all services that implement SmoketestInterface
-            $smoketestInstances: !tagged_iterator smoketest
+      tags:
+        - { name: monolog.logger, channel: smoketest }
     Nsv\Util\Testing\:
         resource: '../src/Util/Testing/'
     Nsv\Util\Testing\Smoketest\SmoketestProvider:

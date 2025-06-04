@@ -40,7 +40,6 @@ class ExecuteSmoketestCommand extends Command {
 
     $io->success(sprintf('You have selected the class name %s.', $selectedClassName));
 
-
     return Command::SUCCESS;
   }
 
@@ -53,7 +52,7 @@ class ExecuteSmoketestCommand extends Command {
         $urls = $selectedSmoketestInstance->returnCompleteUrls();
         if (!empty($urls)) {
           foreach ($urls as $url) {
-            $this->messageBus->dispatch(new SmoketestMessage($selectedClassName));
+            $this->messageBus->dispatch(new SmoketestMessage($url));
           }
         }
       }
