@@ -5,26 +5,24 @@ namespace Nsv\Util\MessageHandler;
 use Nsv\Util\Message\SmoketestMessage;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Messenger\Attribute\AsMessageHandler;
+use Symfony\Component\Serializer\Encoder\EncoderInterface;
 
 #[AsMessageHandler]
 class SmoketestMessageHandler {
 
-  public function __construct(private LoggerInterface $logger) {}
+  public function __construct(private LoggerInterface $logger, private EncoderInterface $encoder) {}
 
   public function __invoke(SmoketestMessage $message): void {
     $url = $message->getUrl();
 
     $response = $this->checkUrl($url);
-
-
-    // @TODO: Add logic to only add logger message when
-    // HTTP response code is not 200
     if(!is_null($response)) {
-      $this->logger->info($response);
+      if($response['status_code'] != 200) {
+        $this->logger->error($response['title'],[$this->encoder->encode($response, 'json')]);
+      } else {
+        $this->logger->info($this->encoder->encode($response, 'json'));
+      }
     }
-
-
-    $willi = 'Schuhe';
   }
 
   private function checkUrl($url): array {
@@ -33,9 +31,6 @@ class SmoketestMessageHandler {
     if ($cSession) {
         $response = $this->requestUrl($url, $cSession);
     }
-    // Make sure in case of missing curl something is written
-    // to the log or it can handle the empty array in responses
-    // and does not create an error.
     return $response;
   }
 
