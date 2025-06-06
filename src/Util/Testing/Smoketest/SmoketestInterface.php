@@ -11,7 +11,7 @@ interface SmoketestInterface {
    * Since we are querying our application like we would query an
    * external URL, the base URL needs to be provided.
    */
-  public function getBaseURL(): string;
+  public function baseUrl(): string;
 
   /**
    * Provide an array of URLS to run HTTP requests against.

@@ -6,12 +6,12 @@ use Nsv\Util\Testing\Smoketest\SmoketestInterface;
 use Nsv\Util\Testing\Smoketest\SmoketestProvider;
 use Psr\Log\LoggerInterface;
 
-class StatisticsSmoketest extends SmoketestProvider implements SmoketestInterface {
+class StatisticsSmoketest implements SmoketestInterface {
 
   /**
    * @inheritDoc
    */
-  public function getBaseURL(): string {
+  public function baseUrl(): string {
     return 'https://nsv-online.local';
   }
 

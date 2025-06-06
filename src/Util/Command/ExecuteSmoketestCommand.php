@@ -49,9 +49,11 @@ class ExecuteSmoketestCommand extends Command {
       $selectedNamespaceName = get_class($selectedSmoketestInstance);
       $selectedNameComponents = explode('\\', $selectedNamespaceName);
       if ($selectedClassName == end($selectedNameComponents)) {
-        $urls = $selectedSmoketestInstance->returnCompleteUrls();
-        if (!empty($urls)) {
-          foreach ($urls as $url) {
+        $routes = $selectedSmoketestInstance->routes();
+        $baseUrl = $selectedSmoketestInstance->baseUrl();
+        if (!empty($routes)) {
+          foreach ($routes as $route) {
+            $url = $baseUrl . $route;
             $this->messageBus->dispatch(new SmoketestMessage($url));
           }
         }
