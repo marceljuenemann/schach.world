@@ -4,10 +4,10 @@ framework:
     # failure_transport: failed
 
     transports:
-    # https://symfony.com/doc/current/messenger.html#transport-configuration
+      # https://symfony.com/doc/current/messenger.html#transport-configuration
       async: '%env(MESSENGER_TRANSPORT_DSN)%'
-    # failed: 'doctrine://default?queue_name=failed'
-    # sync: 'sync://'
+      # failed: 'doctrine://default?queue_name=failed'
+      # sync: 'sync://'
 
     routing:
       # Route your messages to the transports
