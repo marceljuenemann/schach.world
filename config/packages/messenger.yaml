@@ -10,8 +10,8 @@ framework:
     # sync: 'sync://'
 
     routing:
-    # Route your messages to the transports
-    # 'App\Message\YourMessage': async
+      # Route your messages to the transports
+      'Nsv\Util\Message\SmoketestMessage': async
 
 # when@test:
 #    framework:
