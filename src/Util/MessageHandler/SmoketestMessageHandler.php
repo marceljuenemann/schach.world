@@ -20,7 +20,7 @@ class SmoketestMessageHandler {
       if($response['status_code'] != 200) {
         $this->logger->error($response['title'],[$this->encoder->encode($response, 'json')]);
       } else {
-        $this->logger->info($this->encoder->encode($response, 'json'));
+        $this->logger->info('HTTP Status: OK', [$this->encoder->encode($response, 'json')]);
       }
     }
   }
@@ -38,6 +38,7 @@ class SmoketestMessageHandler {
     curl_setopt($cSession, CURLOPT_URL, $url);
     $html = curl_exec($cSession);
     $info = curl_getinfo($cSession);
+
     $response = [
       'title' => $this->get_html_title($html),
       'status_code' => $info['http_code'],
@@ -48,7 +49,12 @@ class SmoketestMessageHandler {
 
   private function get_html_title($html) {
     preg_match("/\<title.*\>(.*)\<\/title\>/isU", $html, $matches);
-    return $matches[1];
+    if($matches) {
+      return $matches[1];
+    } else {
+      return 'No title found';
+    }
+
   }
 
   private function startCurlSession() {
