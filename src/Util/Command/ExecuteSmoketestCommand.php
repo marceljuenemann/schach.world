@@ -28,6 +28,8 @@ class ExecuteSmoketestCommand extends Command {
 
     $classNames = [];
     // Extract the class names from $smoketestInstances
+    // These are all classes that implement SmoketestInterface
+    // We get a selection with the class names in console.
     foreach ($this->smoketestInstances as $smoketestInstance) {
       $namespaceName = get_class($smoketestInstance);
       $nameComponents = explode('\\', $namespaceName);
@@ -43,8 +45,11 @@ class ExecuteSmoketestCommand extends Command {
     return Command::SUCCESS;
   }
 
+  /**
+   * Dispatch one message per URL that is given
+   * in the smoketest class.
+   */
   private function dispatchMessages($selectedClassName) {
-    // Now get the urls from the selected class
     foreach ($this->smoketestInstances as $selectedSmoketestInstance) {
       $selectedNamespaceName = get_class($selectedSmoketestInstance);
       $selectedNameComponents = explode('\\', $selectedNamespaceName);
