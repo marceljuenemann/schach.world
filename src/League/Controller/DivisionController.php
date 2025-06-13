@@ -9,7 +9,6 @@ use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Core\LegacySystem;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
-//use Nsv\League\Testing\Smoketests\StatisticsSmoketest;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Nsv\League\Api\Service\StatisticsService;
@@ -69,10 +68,8 @@ class DivisionController extends AbstractLeagueController {
   }
 
   #[Route('{division}/statistik', name: 'statistik')]
-  public function statistics(StatisticsService $service, \Nsv\League\Testing\Smoketests\StatisticsSmoketest $smokeTest): Response {
+  public function statistics(StatisticsService $service): Response {
     $division_name = $this->division->name;
-
-    $testString = $smokeTest->execute();
 
     $teams_with_active_players = $service->teams_with_active_players($this->division);
     $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players, $this->division);
