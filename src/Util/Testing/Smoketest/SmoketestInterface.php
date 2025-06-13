@@ -6,7 +6,6 @@ namespace  Nsv\Util\Testing\Smoketest;
  * Interface for smoketest classes.
  */
 interface SmoketestInterface {
-
   /**
    * Since we are querying our application like we would query an
    * external URL, the base URL needs to be provided.
@@ -18,9 +17,4 @@ interface SmoketestInterface {
    * Provide urls with a leading slash like /ligen/(...)
    */
   public function routes(): array;
-
-  /**
-   * Choose a messenger transport.
-   */
-  public function transport(): string;
 }
