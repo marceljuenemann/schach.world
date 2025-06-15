@@ -18,7 +18,11 @@
       <tr>
         <td class='text-nowrap'>{{ event.date|format_date(pattern='ccc, dd.MM.') }}</td>
         <td>
-          <a href='{{ event.url }}' class='{{ event.isNsv ? 'fw-bold' : '' }}'>{{ event.name }}</a>
+          {% if event.url %}
+            <a href='{{ event.url }}' class='{{ event.isNsv ? 'fw-bold' : '' }}'>{{ event.name }}</a>
+          {% else %}
+            <span class='{{ event.isNsv ? 'fw-bold' : '' }}'>{{ event.name }}</span>
+          {% endif %}
         </td>
       </tr>
     {% endfor %}

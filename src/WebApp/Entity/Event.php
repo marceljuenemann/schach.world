@@ -21,7 +21,7 @@ class Event
 
     #[ORM\Column(length: 200)]
     #[Assert\Length(min: 10, max: 200)]
-    private string $url;
+    private ?string $url = null;
 
     #[ORM\Column(type: 'date')]
     private \DateTimeInterface $date;
