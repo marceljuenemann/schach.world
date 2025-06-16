@@ -29,4 +29,17 @@ class DivisionRepository extends ServiceEntityRepository
   public function persist(Division $entity) {
     $this->getEntityManager()->persist($entity);
   }
+
+  /**
+   * We have quite some divisions where the league
+   * is set to 0. Those are invalid and we only
+   * want valid ones.
+   */
+  public function findAllThatHaveLeague(){
+    return $this->createQueryBuilder('divisions')
+      ->select('divisions')
+      ->innerJoin('divisions.league', 'league')
+      ->getQuery()
+      ->getResult();
+  }
 }

@@ -2,34 +2,32 @@
 
 namespace Nsv\League\Testing\Smoketests;
 
+use Doctrine\ORM\EntityManagerInterface;
+use Nsv\League\Repository\DivisionRepository;
 use Nsv\Util\Testing\Smoketest\SmoketestInterface;
-use Nsv\Util\Testing\Smoketest\SmoketestProvider;
 use Psr\Log\LoggerInterface;
 
 class StatisticsSmoketest implements SmoketestInterface {
 
+  public function __construct(private DivisionRepository $divisionRepository) {
+  }
   /**
    * @inheritDoc
    */
   public function baseUrl(): string {
-    return '';
+    return 'https://nsv-online.local';
   }
 
   /**
    * @inheritDoc
    */
   public function routes(): array {
-//    $url_1 = '/ligen/test-2022/beirksliga/3';
-//    $url_2 = '/ligen/test-2022/bezirksliga/4';
-    $url_1 ='https://httpstat.us/500';
-    $url_2 ='https://httpstat.us/200';
-    return [$url_1, $url_2];
-  }
-
-  /**
-   * @inheritDoc
-   */
-  public function transport(): string {
-    // TODO: Implement transport() method.
+    $routes = [];
+    $allDivisions = $this->divisionRepository->findAllThatHaveLeague();
+    foreach($allDivisions as $division) {
+      $divisionPath = $division->uri();
+      $routes[] = $divisionPath . 'statistik';
+    }
+    return $routes;
   }
 }
