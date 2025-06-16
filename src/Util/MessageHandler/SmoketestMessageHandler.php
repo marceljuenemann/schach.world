@@ -25,7 +25,7 @@ class SmoketestMessageHandler {
     }
   }
 
-  private function checkUrl($url): array {
+  private function checkUrl(string $url): array {
     $cSession = $this->startCurlSession();
     $response = NULL;
     if ($cSession) {
@@ -34,7 +34,7 @@ class SmoketestMessageHandler {
     return $response;
   }
 
-  private function requestUrl(string $url, $cSession = NULL) {
+  private function requestUrl(string $url, $cSession = NULL): array {
     curl_setopt($cSession, CURLOPT_URL, $url);
     $html = curl_exec($cSession);
     $info = curl_getinfo($cSession);
@@ -47,7 +47,7 @@ class SmoketestMessageHandler {
     return $response;
   }
 
-  private function get_html_title($html) {
+  private function get_html_title($html): string {
     preg_match("/\<title.*\>(.*)\<\/title\>/isU", $html, $matches);
     if($matches) {
       return $matches[1];
@@ -70,7 +70,7 @@ class SmoketestMessageHandler {
     }
   }
 
-  private function isCurlInstalled() {
+  private function isCurlInstalled(): bool {
     if (in_array('curl', get_loaded_extensions())) {
       return TRUE;
     } else {
