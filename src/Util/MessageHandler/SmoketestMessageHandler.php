@@ -25,6 +25,7 @@ class SmoketestMessageHandler {
     }
   }
 
+
   /**
    * Run a curl request on the url and extract HTTP status code
    * and error description from HTML title.
@@ -45,6 +46,7 @@ class SmoketestMessageHandler {
     }
     return $response;
   }
+
 
 private function requestUrl(string $url, $cSession = NULL): array {
     curl_setopt($cSession, CURLOPT_URL, $url);
