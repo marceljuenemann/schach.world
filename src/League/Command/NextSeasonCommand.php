@@ -58,7 +58,7 @@ class NextSeasonCommand extends Command
     if ($league->registrationMinYearOfBirth) {
       $newLeague->registrationMinYearOfBirth = $league->registrationMinYearOfBirth + 1;
     } else {
-      $newLeague->registrationMinYearOfBirth = null;
+      $newLeague->registrationMinYearOfBirth = 0;
     }
     $output->writeln("  Creating league: " . $newLeague->name);
 
