@@ -55,7 +55,11 @@ class NextSeasonCommand extends Command
     $newLeague->name = $this->processName($league->name, $league->year);
     $newLeague->path = $this->processName($league->path, $league->year);
     $newLeague->year = $league->year + 1;
-    $newLeague->registrationMinYearOfBirth = $league->registrationMinYearOfBirth + 1;
+    if ($league->registrationMinYearOfBirth) {
+      $newLeague->registrationMinYearOfBirth = $league->registrationMinYearOfBirth + 1;
+    } else {
+      $newLeague->registrationMinYearOfBirth = null;
+    }
     $output->writeln("  Creating league: " . $newLeague->name);
 
     $newLeague->manager = $this->cloneUser($league->manager, $output);
