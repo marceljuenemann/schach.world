@@ -4,6 +4,9 @@ Create a class that implements SmoketestInterface.php. It provides the URLs that
 for HTTP Status and if there are errors, for error message. All successfully checked URLs and errors are written to var/log/smoketest.log
 The process uses Symfony Messenger to do the cURL Requests, since these can take a while.
 
+#### Install cURL PHP extension
+cURL needs to be installed on dev, as required for dev in composer.json
+
 #### Class that provides the urls
 The class that implements SmoketestInterface.php returns an array of URLs. This could be /statistik for all Divisions, like src/League/Testing/Smoketest/StatisticsSmoketest does. When you have written your class it can be selected in the console command.
 
@@ -18,7 +21,8 @@ When executing this command, you are given a select for all the class names that
 
 #### Messenger config
 The dispatched messages are set to use an async transport for the test to be able to process larger quantities of URLs. It is configured in config/packages/messenger.yaml.
-You need to enable the doctrine transport in .env or .env.local. Sample config is given outcommented in .env, outcomment the line
+You need to enable the doctrine transport in .env or .env.local. Sample config is given outcommented in .env.
+Outcomment the line
 
 ~~~
 MESSENGER_TRANSPORT_DSN=doctrine://webapp
@@ -37,6 +41,7 @@ console messenger:consume
 
 This starts the doctrine transport, which sends the messages one by one to src/Util/Command/MessageHandler/SmoketestMessageHandler. If you have a lot of URLS (e.g. /statistics for all divisions are ca 900) this can take a few minutes. Using Messenger and the doctrine transport avoids a PHP timeout.
 The SmoketestMessageHandler checks the URLs and writes the result to smoketest.log
-The handler also extracts the error message. This only works in DEV mode, since Symfony provides an error message in the HTML title tag when set to show all errors.
+The handler also extracts the error message, if there is one. This only works in DEV mode, since Symfony provides an error message in the HTML title tag when set to show all errors.
+The doctrine transport runs until it is stopped again in the terminal window.
 
 
