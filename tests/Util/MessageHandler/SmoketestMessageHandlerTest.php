@@ -29,8 +29,8 @@ class SmoketestMessageHandlerTest extends TestCase {
     $this->assertSame($statusCode, $response['status_code']);
   }
   private function checkUrlProvider(): \Generator {
-    yield ['Status 200 ok'] => ['https://httpstat.us/200', 200];
-    yield ['Status 404 Not Found'] => ['https://httpstat.us/404', 404];
-    yield ['Status 500 Internal Error'] => ['https://httpstat.us/500', 500];
+    yield 'Status 200 ok' => ['https://httpstat.us/200', 200];
+    yield 'Status 404 Not Found' => ['https://httpstat.us/404', 404];
+    yield 'Status 500 Internal Error' => ['https://httpstat.us/500', 500];
   }
 }
