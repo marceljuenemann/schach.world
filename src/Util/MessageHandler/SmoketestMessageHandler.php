@@ -40,24 +40,10 @@ class SmoketestMessageHandler {
 
       $response = [
         'title' => $this->get_html_title($html),
-        'status_code' => $info['http_code'],
+        'status_code' => intval($info['http_code']),
         'url' => $url,
       ];
     }
-    return $response;
-  }
-
-
-private function requestUrl(string $url, $cSession = NULL): array {
-    curl_setopt($cSession, CURLOPT_URL, $url);
-    $html = curl_exec($cSession);
-    $info = curl_getinfo($cSession);
-
-    $response = [
-      'title' => $this->get_html_title($html),
-      'status_code' => $info['http_code'],
-      'url' => $url,
-    ];
     return $response;
   }
 
