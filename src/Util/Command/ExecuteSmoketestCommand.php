@@ -36,13 +36,7 @@ class ExecuteSmoketestCommand extends Command {
       $nameComponents = explode('\\', $namespaceName);
       $classNames[] = end($nameComponents);
     }
-    $helper = $this->getHelper('question');
-    $question = new ChoiceQuestion(
-      'Provide the name of your smoke test class:', $classNames, 0
-    );
-
-
-    $selectedClassName = $helper->ask($input, $output, $question);
+    $selectedClassName = $io->choice('Provide the name of your smoke test class:', $classNames);
 
     $this->dispatchMessages($selectedClassName);
 
