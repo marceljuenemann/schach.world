@@ -11,6 +11,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Messenger\MessageBusInterface;
+use Symfony\Component\Console\Question\ChoiceQuestion;
 
 #[AsCommand(
   name: 'testing:execute-smoketest',
@@ -35,8 +36,13 @@ class ExecuteSmoketestCommand extends Command {
       $nameComponents = explode('\\', $namespaceName);
       $classNames[] = end($nameComponents);
     }
+    $helper = $this->getHelper('question');
+    $question = new ChoiceQuestion(
+      'Provide the name of your smoke test class:', $classNames, 0
+    );
 
-    $selectedClassName = $io->choice('Provide the name of your smoke test class:', $classNames);
+
+    $selectedClassName = $helper->ask($input, $output, $question);
 
     $this->dispatchMessages($selectedClassName);
 
