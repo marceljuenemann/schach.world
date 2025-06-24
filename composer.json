@@ -96,6 +96,7 @@
         "symfony/maker-bundle": "^1.49",
         "symfony/phpunit-bridge": "^6.3",
         "symfony/stopwatch": "6.4.*",
-        "vimeo/psalm": "^6.12"
+        "vimeo/psalm": "^6.12",
+        "zenstruck/console-test": "^1.7"
     }
 }
