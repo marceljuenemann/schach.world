@@ -14,7 +14,7 @@ export interface Config {
 export interface GroupConfig {
   id: string
   name: string
-  // TODO: add a description for DWZ and such?
+  minDwz?: number
   maxDwz?: number
   minYearOfBirth?: number
   maxPlayers?: number

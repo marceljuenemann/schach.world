@@ -57,6 +57,7 @@ export class Group {
   }
 
   mayRegister(playerData: PlayerData): boolean {
+    if (this.config.minDwz && (playerData.dwz || 0) < this.config.minDwz) return false
     if (this.config.maxDwz && (playerData.dwz || 0) > this.config.maxDwz) return false
     if (this.config.minYearOfBirth && (playerData.yearOfBirth || Infinity) < this.config.minYearOfBirth) return false
     if (this.maxPlayersReached) return false

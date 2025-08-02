@@ -30,12 +30,14 @@ $config->termsAndConditions = "
 $group = new GroupConfig();
 $group->id = 'A';
 $group->name = 'Gruppe A (ab DWZ 1750)';
+$group->minDwz = 1750;
 $group->maxPlayers = 10;
 $config->groups[] = $group;
 
 $group = new GroupConfig();
 $group->id = 'B';
 $group->name = 'Gruppe B (DWZ 1500-1750)';
+$group->minDwz = 1500;
 $group->maxDwz = 1750;
 $group->maxPlayers = 30;
 $config->groups[] = $group;

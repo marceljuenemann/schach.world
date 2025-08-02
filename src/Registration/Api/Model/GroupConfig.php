@@ -18,6 +18,11 @@ class GroupConfig {
   public string $name;
 
   /**
+   * Minimum DWZ constraint for this group.
+   */
+  public ?int $minDwz = null;
+
+  /**
    * Maximum DWZ constraint for this group.
    */
   public ?int $maxDwz = null;
