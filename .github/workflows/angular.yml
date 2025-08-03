@@ -16,36 +16,41 @@ jobs:
       run:
         working-directory: ./ng
         
-    strategy:
-      matrix:
-        node-version: [20.x]
-
     steps:
     - uses: actions/checkout@v3
     
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 20
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: '20'
         cache: 'npm'
         cache-dependency-path: './ng/package-lock.json'
         
     - name: Install dependencies
       run: npm ci
-      
-    - name: Build Angular app
-      run: npm run build
-      
-    - name: Check for uncommitted build changes
-      run: |
-        if [[ -n $(git status --porcelain ..) ]]; then
-          echo "⚠️ There are uncommitted changes after build:"
-          git status --porcelain
-          echo "This may indicate that generated files were modified but not committed."
-          exit 1
-        else
-          echo "✅ Git directory is clean after build."
-        fi
 
     - name: Run tests
       run: npm test -- --browsers=ChromeHeadless --watch=false --progress=false
+
+    - name: Build Angular app
+      run: npm run build
+      
+    - name: Commit changes if any
+      run: |
+        if [[ -n $(git status --porcelain ..) ]]; then
+          echo "🔄 Changes detected after build, committing automatically..."
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add -A ..
+          git commit -m "Auto-build: Update Angular build artifacts [skip ci]"
+          echo "✅ Changes committed successfully"
+        else
+          echo "✅ No changes detected after build"
+        fi
+        
+    - name: Push changes
+      if: success() && github.event_name != 'pull_request'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
