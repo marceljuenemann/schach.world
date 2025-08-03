@@ -9,7 +9,7 @@ on:
       - 'ng/**'
 
 jobs:
-  test:
+  ng:
     runs-on: ubuntu-latest
     
     defaults:
@@ -33,5 +33,19 @@ jobs:
     - name: Install dependencies
       run: npm ci
       
+    - name: Build Angular app
+      run: npm run build
+
     - name: Run tests
       run: npm test -- --browsers=ChromeHeadless --watch=false --progress=false
+      
+    - name: Check for uncommitted changes
+      run: |
+        if [[ -n $(git status --porcelain ..) ]]; then
+          echo "⚠️ There are uncommitted changes after build:"
+          git status --porcelain
+          echo "This may indicate that generated files were modified but not committed."
+          exit 1
+        else
+          echo "✅ Git directory is clean after build."
+        fi
