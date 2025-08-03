@@ -1,19 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DialogFooterComponent } from './dialog-footer.component';
+import { NsvDialogFooterComponent } from './dialog-footer.component';
 
-describe('DialogFooterComponent', () => {
-  let component: DialogFooterComponent;
-  let fixture: ComponentFixture<DialogFooterComponent>;
+describe('NsvDialogFooterComponent', () => {
+  let component: NsvDialogFooterComponent;
+  let fixture: ComponentFixture<NsvDialogFooterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DialogFooterComponent]
+      imports: [NsvDialogFooterComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DialogFooterComponent);
+    fixture = TestBed.createComponent(NsvDialogFooterComponent);
     component = fixture.componentInstance;
+    component.dialog = { erorrs: [] } as any; // TODO: use Spy or real Dialog instance
     fixture.detectChanges();
   });
 
