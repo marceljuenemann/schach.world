@@ -1,0 +1,37 @@
+name: ng-tests
+
+on:
+  push:
+    paths:
+      - 'ng/**'
+  pull_request:
+    paths:
+      - 'ng/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./ng
+        
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: './ng/package-lock.json'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run tests
+      run: npm test -- --browsers=ChromeHeadless --watch=false --progress=false
