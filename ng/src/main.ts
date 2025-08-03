@@ -16,6 +16,7 @@ createApplication({providers: [
   provideHttpClient()
 ]}).then(app => {
   // Register custom web elements.
+  console.log("Test");
   for (let [tag, component] of Object.entries(COMPONENTS)) {
     customElements.define(tag, createCustomElement(component, {injector: app.injector}))
   }

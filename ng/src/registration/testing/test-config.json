@@ -1,0 +1,88 @@
+{
+    "id": "test",
+    "tournamentName": "Testturnier",
+    "deadline": "2035-12-27",
+    "maxPlayers": 38,
+    "groups": [
+        {
+            "id": "A",
+            "name": "Gruppe A (ab DWZ 1750)",
+            "minDwz": 1750,
+            "maxDwz": null,
+            "minYearOfBirth": null,
+            "maxPlayers": 10
+        },
+        {
+            "id": "B",
+            "name": "Gruppe B (DWZ 1500-1750)",
+            "minDwz": 1500,
+            "maxDwz": 1750,
+            "minYearOfBirth": null,
+            "maxPlayers": 30
+        },
+        {
+            "id": "C",
+            "name": "Gruppe C (bis DWZ 1500)",
+            "minDwz": null,
+            "maxDwz": 1500,
+            "minYearOfBirth": null,
+            "maxPlayers": null
+        },
+        {
+            "id": "U18",
+            "name": "Altersklasse U18",
+            "minDwz": null,
+            "maxDwz": null,
+            "minYearOfBirth": 2007,
+            "maxPlayers": null
+        },
+        {
+            "id": "U16",
+            "name": "Altersklasse U16",
+            "minDwz": null,
+            "maxDwz": null,
+            "minYearOfBirth": 2009,
+            "maxPlayers": 3
+        },
+        {
+            "id": "U14",
+            "name": "Altersklasse U14",
+            "minDwz": null,
+            "maxDwz": null,
+            "minYearOfBirth": 2011,
+            "maxPlayers": null
+        },
+        {
+            "id": "U12",
+            "name": "Altersklasse U12",
+            "minDwz": null,
+            "maxDwz": null,
+            "minYearOfBirth": 2013,
+            "maxPlayers": null
+        },
+        {
+            "id": "U10",
+            "name": "Altersklasse U10",
+            "minDwz": null,
+            "maxDwz": null,
+            "minYearOfBirth": 2015,
+            "maxPlayers": null
+        }
+    ],
+    "links": {
+        "Ausschreibung": "https://example.com/ausschreibung.pdf",
+        "NSV Homepage": "https://nsv-online.de"
+    },
+    "managers": [
+        "marcel",
+        "beni",
+        "joerg"
+    ],
+    "emailReplyTo": [
+        "turnierleiter@example.com"
+    ],
+    "emailCc": [
+        "turnierleiter@example.com"
+    ],
+    "termsAndConditions": "Example ToC text"
+}
