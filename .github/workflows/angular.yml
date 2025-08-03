@@ -1,4 +1,4 @@
-name: ng-tests
+name: angular
 
 on:
   push:
@@ -41,7 +41,7 @@ jobs:
           echo "🔄 Changes detected after build, committing automatically..."
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add -A ..
+          git add -A ../public/core/ng-build
           git commit -m "Auto-build: Update Angular build artifacts [skip ci]"
           echo "✅ Changes committed successfully"
         else
@@ -49,7 +49,7 @@ jobs:
         fi
         
     - name: Push changes
-      if: success()
+      if: success() && github.event_name != 'pull_request'
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
