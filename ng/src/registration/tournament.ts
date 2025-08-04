@@ -6,6 +6,7 @@ import { Config, GroupConfig, Player } from "./types"
  */
 export class Tournament {
   public readonly groups: Map<string, Group> = new Map()
+  public readonly constraints: { groups: string[], availableSlots: number }[]
 
   constructor(
     public readonly config: Config,
@@ -14,6 +15,15 @@ export class Tournament {
     for (const groupConfig of config.groups) {
       this.groups.set(groupConfig.id, new Group(this, groupConfig))
     }
+    // Calculate available slots for cross-group constraints.
+    this.constraints = (config.constraints || []).map(constraint => {
+      const groups = constraint.groups.map(id => this.groups.get(id))
+      const playerCount = groups.reduce((sum, group) => sum + (group?.players.length || 0), 0)
+      return {
+        groups: constraint.groups,
+        availableSlots: constraint.maxPlayers ? Math.max(0, constraint.maxPlayers - playerCount) : Infinity
+      }
+    })
   }
 
   get availableSlots() {
@@ -57,6 +67,11 @@ export class Group {
     let availableSlots = this.tournament.availableSlots
     if (this.config.maxPlayers) {
       availableSlots = Math.min(Math.max(this.config.maxPlayers - this.players.length, 0), availableSlots)
+    }
+    for (const constraint of this.tournament.constraints) {
+      if (constraint.groups.includes(this.id)) {
+        availableSlots = Math.min(availableSlots, constraint.availableSlots)
+      }
     }
     return availableSlots
   }

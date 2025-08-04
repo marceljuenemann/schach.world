@@ -6,6 +6,7 @@ export interface Config {
   deadline: string
   maxPlayers?: number | null
   groups: GroupConfig[]
+  constraints?: RegistrationConstraint[]
   links: Record<string, string>
   termsAndConditions: string
 }
@@ -16,6 +17,13 @@ export interface GroupConfig {
   minDwz?: number | null
   maxDwz?: number | null
   minYearOfBirth?: number | null
+  // TODO: Replace with RegistrationConstraint once the config is edited via a UI?
+  maxPlayers?: number | null
+}
+
+/* Registration constraint that applies across multiple groups */
+export interface RegistrationConstraint {
+  groups: string[]
   maxPlayers?: number | null
 }
 

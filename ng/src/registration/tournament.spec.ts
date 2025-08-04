@@ -82,5 +82,30 @@ describe('Group', () => {
         .build();
       expect(tournament.groups.get('A')?.availableSlots).toEqual(Infinity);
     });
+
+    it('should return constraint if no other limit set', () => {
+      const tournament = new TournamentBuilder()
+        .config({maxPlayers: null, constraints: [{groups: ['A', 'B'], maxPlayers: 10}]})
+        .groupConfig('A', {maxPlayers: null})
+        .groupConfig('B', {maxPlayers: null})
+        .groupConfig('C', {maxPlayers: null})
+        .addPlayers({'A': 3, 'B': 2, 'C': 1})
+        .build();
+      expect(tournament.groups.get('A')?.availableSlots).toEqual(5);
+      expect(tournament.groups.get('B')?.availableSlots).toEqual(5);
+      expect(tournament.groups.get('C')?.availableSlots).toEqual(Infinity);
+    });
+
+    it('should return lowest applicable limit', () => {
+      const tournament = new TournamentBuilder()
+        .config({maxPlayers: 10, constraints: [{groups: ['A', 'B'], maxPlayers: 5}]})
+        .groupConfig('A', {maxPlayers: 3})
+        .groupConfig('B', {maxPlayers: 7})
+        .groupConfig('C', {maxPlayers: 15})
+        .build();
+      expect(tournament.groups.get('A')?.availableSlots).toEqual(3);
+      expect(tournament.groups.get('B')?.availableSlots).toEqual(5);
+      expect(tournament.groups.get('C')?.availableSlots).toEqual(10);
+    });
   })
 })
