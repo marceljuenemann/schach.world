@@ -25,7 +25,7 @@
           required>
         <label class="form-check-label" for="tournamentRadio-{{group.id}}">
           {{group.name}}
-          @if (group.maxPlayersReached) {
+          @if (!group.availableSlots) {
             <span style="font-size: smaller">— Anmeldegrenze erreicht</span>
           }
         </label>

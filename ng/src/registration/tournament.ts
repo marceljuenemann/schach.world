@@ -16,33 +16,26 @@ export class Tournament {
     }
   }
 
+  get availableSlots() {
+    if (!this.config.maxPlayers) return Infinity
+    return Math.max(this.config.maxPlayers - this.players.length, 0)
+  }
+
   get deadlinePassed() {
     let deadline = new Date(this.config.deadline)
     deadline.setDate(deadline.getDate() + 1)
     return new Date() >= deadline
   }
-
-  get maxPlayersReached() {
-    return this.players.length >= (this.config.maxPlayers || Infinity)
-  }
 }
 
 export class Group {
+  public readonly players: Player[]
+
   constructor(
     public readonly tournament: Tournament,
     public readonly config: GroupConfig
-  ) {}
-
-  get id() {
-    return this.config.id
-  }
-
-  get name() {
-    return this.config.name
-  }
-
-  get players() {
-    return this.tournament.players
+  ) {
+    this.players = tournament.players
       .filter(p => p.group === this.id)
       .sort((a, b) => {
         if (a.playerData.dwz !== b.playerData.dwz) {
@@ -52,15 +45,26 @@ export class Group {
       });
   }
 
-  get maxPlayersReached() {
-    return this.players.length >= (this.config.maxPlayers || Infinity)
+  get id() {
+    return this.config.id
+  }
+
+  get name() {
+    return this.config.name
+  }
+
+  get availableSlots() {
+    let availableSlots = this.tournament.availableSlots
+    if (this.config.maxPlayers) {
+      availableSlots = Math.min(Math.max(this.config.maxPlayers - this.players.length, 0), availableSlots)
+    }
+    return availableSlots
   }
 
   mayRegister(playerData: PlayerData): boolean {
     if (this.config.minDwz && (playerData.dwz || 0) < this.config.minDwz) return false
     if (this.config.maxDwz && (playerData.dwz || 0) > this.config.maxDwz) return false
     if (this.config.minYearOfBirth && (playerData.yearOfBirth || Infinity) < this.config.minYearOfBirth) return false
-    if (this.maxPlayersReached) return false
-    return true
+    return !!this.availableSlots
   }
 }

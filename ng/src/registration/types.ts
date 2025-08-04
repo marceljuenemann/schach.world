@@ -1,11 +1,10 @@
-import { InjectionToken } from "@angular/core"
 import { PlayerData } from "./player-data/player-data.component"
 
 export interface Config {
   id: string
   tournamentName: string
   deadline: string
-  maxPlayers?: number
+  maxPlayers?: number | null
   groups: GroupConfig[]
   links: Record<string, string>
   termsAndConditions: string
@@ -14,10 +13,10 @@ export interface Config {
 export interface GroupConfig {
   id: string
   name: string
-  minDwz?: number
-  maxDwz?: number
-  minYearOfBirth?: number
-  maxPlayers?: number
+  minDwz?: number | null
+  maxDwz?: number | null
+  minYearOfBirth?: number | null
+  maxPlayers?: number | null
 }
 
 export interface ContactDetails {
