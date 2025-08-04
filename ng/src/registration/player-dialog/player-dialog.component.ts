@@ -73,20 +73,20 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
    * Return the reason why a player may not register for the given group, if any.
    */
   registrationRestriction(group: Group, playerData: PlayerData): string | null {
+    if (group.config.minYearOfBirth && (playerData.yearOfBirth || 0) < group.config.minYearOfBirth) {
+      return `bis Jahrgang ${group.config.minYearOfBirth}`
+    }
     if (group.config.minDwz && (playerData.dwz || 0) < group.config.minDwz) {
       return `ab DWZ ${group.config.minDwz}`
     }
     if (group.config.maxDwz && (playerData.dwz || 0) > group.config.maxDwz) {
       return `bis DWZ ${group.config.maxDwz}`
     }
-    if (group.config.minYearOfBirth && (playerData.yearOfBirth || 0) < group.config.minYearOfBirth) {
-      return `bis Jahrgang ${group.config.minYearOfBirth}`
-    }
     return null
   }
 
   isWaitlistGroupSelected(): boolean {
-    if (!this.selectedGroup) return false
+    if (this.editing || !this.selectedGroup) return false
     const group = this.params.tournament.groups.get(this.selectedGroup)
     return group ? !group.availableSlots : false
   }
@@ -104,6 +104,9 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     if (this.editing) {
       await this.registrationService.updatePlayer(this.params.tournament.config.id, player)
     } else {
+      if (this.isWaitlistGroupSelected()) {
+        player.waitlist = true
+      }
       await this.registrationService.registerPlayer(this.params.tournament.config.id, player)
     }
     return player

@@ -20,6 +20,9 @@ class PlayerRegistration
   #[ORM\Column(name: "tournament_group", length: 20)]
   public string $group;
 
+  #[ORM\Column(name: "waitlist")] 
+  public bool $waitlist = false;
+
   #[ORM\Column(length: 60)]
   public string $name;
 

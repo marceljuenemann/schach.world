@@ -14,6 +14,8 @@ class PlayerRegistration
   #[Assert\NotBlank]
   public string $group;
 
+  public bool $waitlist = false;
+
   #[Assert\NotBlank]
   #[Assert\Valid]
   public PlayerData $playerData;
@@ -27,6 +29,7 @@ class PlayerRegistration
     $reg = new PlayerRegistration();
     $reg->id = $player->id;
     $reg->group = $player->group;
+    $reg->waitlist = $player->waitlist;
 
     $reg->playerData = $p = new PlayerData();
     $p->name = $player->name;

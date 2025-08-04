@@ -27,7 +27,7 @@
           {{group.name}}
           @if (this.playerData && this.registrationRestriction(group, this.playerData)) {
             <span style="font-size: smaller">— {{ this.registrationRestriction(group, this.playerData) }}</span>
-          } @else if (!group.availableSlots) {
+          } @else if (!editing && !group.availableSlots) {
             &nbsp;<span class="badge text-bg-danger">Warteliste</span>
           }
         </label>

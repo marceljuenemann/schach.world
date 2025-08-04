@@ -79,6 +79,7 @@ class RegistrationController extends AbstractController {
 
   private function populateEntity(PlayerRegistration $request, Entity\PlayerRegistration $player): void {
     $player->group = $request->group;
+    $player->waitlist = $request->waitlist ?? false;
     $player->name = $request->playerData->name;
     $player->gender = $request->playerData->gender;
     $player->yearOfBirth = $request->playerData->yearOfBirth;

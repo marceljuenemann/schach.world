@@ -46,7 +46,7 @@ export class Group {
     public readonly config: GroupConfig
   ) {
     this.players = tournament.players
-      .filter(p => p.group === this.id)
+      .filter(p => p.group === this.id && !p.waitlist)
       .sort((a, b) => {
         if (a.playerData.dwz !== b.playerData.dwz) {
           return (b.playerData.dwz ?? 0) - (a.playerData.dwz ?? 0);
