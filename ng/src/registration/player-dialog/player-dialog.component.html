@@ -20,15 +20,23 @@
           name="group"
           formControlName="group"
           [value]="group.id"
-          [attr.disabled]="!this.params.isManager && (!this.playerData || !group.mayRegister(this.playerData)) || null"
+          [attr.disabled]="!this.params.isManager && (!this.playerData || this.registrationRestriction(group, this.playerData)) || null"
           class="form-check-input"
           required>
         <label class="form-check-label" for="tournamentRadio-{{group.id}}">
           {{group.name}}
-          @if (!group.availableSlots) {
-            <span style="font-size: smaller">— Anmeldegrenze erreicht</span>
+          @if (this.playerData && this.registrationRestriction(group, this.playerData)) {
+            <span style="font-size: smaller">— {{ this.registrationRestriction(group, this.playerData) }}</span>
+          } @else if (!group.availableSlots) {
+            &nbsp;<span class="badge text-bg-danger">Warteliste</span>
           }
         </label>
+      </div>
+    }
+
+    @if (this.isWaitlistGroupSelected()) {
+      <div class="alert alert-danger mt-3">
+        <strong>Warteliste:</strong> Die Anmeldegrenze für dieses Turnier ist bereits erreicht, aber Sie können sich für die Warteliste registrieren. Sie werden benachrichtigt, sollte ein Platz frei werden.
       </div>
     }
   </form>
