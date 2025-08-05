@@ -5,12 +5,12 @@ import { DialogService } from '../core/dialog/dialog.service';
 import { Tournament } from './tournament';
 import { RegistrationService } from './registration.service';
 import { CommonModule } from '@angular/common';
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'nsv-registration',
   standalone: true,
-  imports: [NgbTooltipModule, CommonModule],
+  imports: [NgbNavModule, NgbTooltipModule, CommonModule],
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css'
 })
@@ -23,6 +23,7 @@ export class RegistrationComponent implements OnInit {
 
   tournament: Tournament
   registeredPlayers: Player[] = []
+  activeTab = 1;
 
   constructor(
     private dialogService: DialogService,

@@ -23,52 +23,68 @@
   </div>
 }
 
-@for (group of tournament!.groups.values(); track group.id) {
-  <h4 class="mt-4">{{group.name}}</h4>
+<ul ngbNav #tabs="ngbNav" [(activeId)]="activeTab" class="nav-tabs mt-4" [class.d-none]="!isManager">
+	<li [ngbNavItem]="1">
+		<button ngbNavLink>Anmeldungen</button>
+		<ng-template ngbNavContent>
+      @for (group of tournament!.groups.values(); track group.id) {
+        <h4 class="mt-4">{{group.name}}</h4>
 
-  <div class="text-muted mb-2" style="font-style: italic">
-    {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
-    @if (group.availableSlots != this.INFINITY) {
-      , {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
-    }
-  </div>
-
-  @if (group.players.length) {
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Verein</th>
-          <th>DWZ</th>
-          <th>ELO</th>
-          @if (isManager) {
-            <th></th>
+        <div class="text-muted mb-2" style="font-style: italic">
+          {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
+          @if (group.availableSlots != this.INFINITY) {
+            , {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
           }
-        </tr>
-      </thead>
-      <tbody>
-        @for (player of group.players; track player.id) {
-          <tr>
-            <td>
-              <b>{{ player.playerData.fideTitle }}</b>
-              {{ player.playerData.name }}
-            </td>
-            <td>{{ player.playerData.club }}</td>
-            <td>{{ player.playerData.dwz }}</td>
-            <td>{{ player.playerData.elo }}</td>
-            @if (isManager) {
-              <td class="text-end">
-                <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
-                <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
-              </td>
-            }
-          </tr>
-        }
-      </tbody>
-    </table>
-  }
-}
+        </div>
 
-<div class="mt-3 text-muted">
-  Anmeldungen insgesamt: {{ tournament.players.length }}
-</div>
+        @if (group.players.length) {
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Verein</th>
+                <th>DWZ</th>
+                <th>ELO</th>
+                @if (isManager) {
+                  <th></th>
+                }
+              </tr>
+            </thead>
+            <tbody>
+              @for (player of group.players; track player.id) {
+                <tr>
+                  <td>
+                    <b>{{ player.playerData.fideTitle }}</b>
+                    {{ player.playerData.name }}
+                  </td>
+                  <td>{{ player.playerData.club }}</td>
+                  <td>{{ player.playerData.dwz }}</td>
+                  <td>{{ player.playerData.elo }}</td>
+                  @if (isManager) {
+                    <td class="text-end">
+                      <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
+                      <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
+                    </td>
+                  }
+                </tr>
+              }
+            </tbody>
+          </table>
+        }
+      }
+
+      <div class="mt-3 text-muted">
+        Anmeldungen insgesamt: {{ tournament.players.length }}
+      </div>
+
+		</ng-template>
+	</li>
+	<li [ngbNavItem]="2">
+		<button ngbNavLink>Warteliste</button>
+		<ng-template ngbNavContent>
+			TO BE IMPLEMENTED
+		</ng-template>
+	</li>
+</ul>
+
+<div [ngbNavOutlet]="tabs" class="mt-3"></div>
