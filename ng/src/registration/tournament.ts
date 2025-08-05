@@ -28,7 +28,7 @@ export class Tournament {
     // Generate waitlist.
     this.waitlist = players
       .filter(p => p.waitlist)
-      .sort((a, b) => a.created < b.created ? -1 : 1)
+      .sort((a, b) => (a.created || "") < (b.created || "") ? -1 : 1)
   }
 
   get availableSlots() {
