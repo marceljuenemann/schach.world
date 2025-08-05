@@ -156,7 +156,7 @@ class RegistrationController extends AbstractController {
       ->to($player->contactDetails->email)
       ->cc(...$config->emailCc)
       ->replyTo(...$config->emailReplyTo)
-      ->subject("[Anmeldung " . $config->tournamentName . "] " . $player->playerData->name)
+      ->subject("[" . ($player->waitlist ? 'Warteliste' : 'Anmeldung') .  " " . $config->tournamentName . "] " . $player->playerData->name)
       ->htmlTemplate('@registration/email/confirmation.html.twig')
       ->context([
         'config' => $config,

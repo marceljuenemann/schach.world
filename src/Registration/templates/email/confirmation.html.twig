@@ -7,6 +7,14 @@
 
 {% block content %}
 
+  {% if (player.waitlist) %}
+    {{ bs.alert_danger }}
+      <b>Warteliste:</b> Die Anmeldegrenze für dieses Turnier ist bereits erreicht, daher kann die
+      Teilnahme nicht garantiert werden. Sie sind nun aber auf der Warteliste und werden benachrichtigt,
+      sollte ein Platz frei werden.
+    {{ bs.endalert }}
+  {% endif %}
+
   {{ bs.dd('Name') }} {{ player.playerData.name }} {{ bs.end_dd }}
   {{ bs.dd('Verein') }} {{ player.playerData.club }} {{ bs.end_dd }}
   {{ bs.dd('Kontakt') }} {{ player.contactDetails.name }} {{ bs.end_dd }}
