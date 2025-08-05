@@ -7,6 +7,7 @@ import { Config, GroupConfig, Player } from "./types"
 export class Tournament {
   public readonly groups: Map<string, Group> = new Map()
   public readonly constraints: { groups: string[], availableSlots: number }[]
+  public readonly waitlist: Player[]
 
   constructor(
     public readonly config: Config,
@@ -24,6 +25,10 @@ export class Tournament {
         availableSlots: constraint.maxPlayers ? Math.max(0, constraint.maxPlayers - playerCount) : Infinity
       }
     })
+    // Generate waitlist.
+    this.waitlist = players
+      .filter(p => p.waitlist)
+      .sort((a, b) => a.created < b.created ? -1 : 1)
   }
 
   get availableSlots() {

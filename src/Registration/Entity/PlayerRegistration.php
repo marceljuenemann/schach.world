@@ -66,4 +66,7 @@ class PlayerRegistration
 
   #[ORM\Column(name: "contact_email", length: 100)]
   public string $contactEMail;
+
+  #[ORM\Column(type: "datetime_immutable")]
+  public \DateTimeImmutable $created;
 }

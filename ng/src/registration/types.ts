@@ -37,5 +37,6 @@ export interface Player {
   group: string,
   waitlist?: boolean,
   playerData: PlayerData,
-  contactDetails: ContactDetails
+  contactDetails: ContactDetails,
+  created: string
 }

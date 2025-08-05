@@ -82,7 +82,44 @@
 	<li [ngbNavItem]="2">
 		<button ngbNavLink>Warteliste</button>
 		<ng-template ngbNavContent>
-			TO BE IMPLEMENTED
+      @if (tournament.waitlist.length) {
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Turnier</th>
+              <th>Name</th>
+              <th>Verein</th>
+              <th>DWZ</th>
+              <th>ELO</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (player of tournament.waitlist; track player.id) {
+              <tr>
+                <td>{{ player.created }}</td>
+                <td>{{ player.group }}</td>
+                <td>
+                  <b>{{ player.playerData.fideTitle }}</b>
+                  {{ player.playerData.name }}
+                </td>
+                <td>{{ player.playerData.club }}</td>
+                <td>{{ player.playerData.dwz }}</td>
+                <td>{{ player.playerData.elo }}</td>
+                <td class="text-end">
+                  <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
+                  <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      } @else {
+        <div class="alert alert-success mt-3">
+          Keine Anmeldungen auf der Warteliste
+        </div>
+      }
 		</ng-template>
 	</li>
 </ul>
