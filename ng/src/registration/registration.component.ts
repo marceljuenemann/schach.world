@@ -19,6 +19,8 @@ export class RegistrationComponent implements OnInit {
   @Input({alias: "players"}) playersString: string
   @Input({alias: "manager"}) isManager: boolean
 
+  readonly INFINITY = Infinity;
+
   tournament: Tournament
   registeredPlayers: Player[] = []
 

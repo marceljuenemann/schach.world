@@ -7,7 +7,7 @@ use Nsv\Registration\Api\Model\RegistrationConstraint;
 $config = new TournamentConfig();
 $config->tournamentName = 'Testturnier';
 $config->deadline = '2035-12-27';
-//$config->maxPlayers = 38;
+$config->maxPlayers = 38;
 
 $config->managers = ['marcel', 'beni', 'joerg'];
 $config->emailCc = [
