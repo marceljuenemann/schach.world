@@ -61,7 +61,7 @@ class RegistrationController extends AbstractController {
     $this->mainEntityManager->persist($player);
     $this->mainEntityManager->flush();
 
-    $this->sendConfirmationMail($config, $request);
+    $this->sendConfirmationMail($config, $request, false);
     return new ApiResponse();
   }
 
@@ -71,9 +71,15 @@ class RegistrationController extends AbstractController {
     if (!$this->isManager($config) || $registration->tournament !== $config->id) {
       throw new AccessDeniedHttpException();
     }
+    $waitlistConfirmed = !$request->waitlist && $registration->waitlist;
+
     $this->populateEntity($request, $registration);
     $this->mainEntityManager->persist($registration);
     $this->mainEntityManager->flush();
+
+    if ($waitlistConfirmed) {
+      $this->sendConfirmationMail($config, $request, true);
+    }
     return new ApiResponse();
   }
 
@@ -155,7 +161,7 @@ class RegistrationController extends AbstractController {
     throw new NotFoundHttpException("Tournament not found");
   }
 
-  private function sendConfirmationMail(TournamentConfig $config, PlayerRegistration $player) {
+  private function sendConfirmationMail(TournamentConfig $config, PlayerRegistration $player, bool $waitlistConfirmation): void {
     $email = (new TemplatedEmail())
       ->to($player->contactDetails->email)
       ->cc(...$config->emailCc)
@@ -165,6 +171,7 @@ class RegistrationController extends AbstractController {
       ->context([
         'config' => $config,
         'player' => $player,
+        'waitlistConfirmation' => $waitlistConfirmation,
         'overviewUri' => $this->generateUrl('registration_overview', [
           'tournament' => $config->id,
         ], UrlGeneratorInterface::ABSOLUTE_URL)

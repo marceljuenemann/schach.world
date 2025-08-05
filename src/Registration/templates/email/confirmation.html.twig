@@ -13,6 +13,12 @@
       Teilnahme nicht garantiert werden. Sie sind nun aber auf der Warteliste und werden benachrichtigt,
       sollte ein Platz frei werden.
     {{ bs.endalert }}
+  {% elseif (waitlistConfirmation) %}
+    {{ bs.alert_success }}
+      <b>Anmeldung erfolgreich:</b> Ihre Anmeldung wurde von der Warteliste in das Turnier aufgenommen.
+      Falls Sie nicht länger am Turnier teilnehmen können, wenden Sie sich bitte an die Turnierleitung.
+      Sie können dazu auf diese E-Mail antworten.
+    {{ bs.endalert }}
   {% endif %}
 
   {{ bs.dd('Name') }} {{ player.playerData.name }} {{ bs.end_dd }}
