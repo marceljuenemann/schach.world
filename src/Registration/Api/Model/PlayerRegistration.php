@@ -31,7 +31,6 @@ class PlayerRegistration
     $reg->id = $player->id;
     $reg->group = $player->group;
     $reg->waitlist = $player->waitlist;
-    $reg->created = $player->created->setTimezone(new \DateTimeZone('Europe/Berlin'))->format('Y-m-d H:i');
 
     $reg->playerData = $p = new PlayerData();
     $p->name = $player->name;
@@ -50,6 +49,7 @@ class PlayerRegistration
     if ($includeSensitive) {
       $p->yearOfBirth = $player->yearOfBirth;
       $reg->contactDetails = ContactDetails::fromEntity($player);
+      $reg->created = $player->created->setTimezone(new \DateTimeZone('Europe/Berlin'))->format('Y-m-d H:i');
     }
     return $reg;
   } 

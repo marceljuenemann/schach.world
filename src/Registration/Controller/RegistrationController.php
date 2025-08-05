@@ -131,6 +131,10 @@ class RegistrationController extends AbstractController {
   private function getPlayers(TournamentConfig $config): array {
     $includeSensitive = $this->isManager($config);
     $players = $this->repository->findByTournament($config->id);
+    if (!$includeSensitive) {
+      $players = array_filter($players, fn(Entity\PlayerRegistration $p) => !$p->waitlist);
+      $players = array_values($players);  // Re-index the array to fix JSON encoding.
+    }
     return array_map(fn($p) => PlayerRegistration::fromEntity($p, $includeSensitive), $players);
   }
 
