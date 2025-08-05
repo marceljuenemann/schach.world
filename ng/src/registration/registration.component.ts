@@ -56,9 +56,21 @@ export class RegistrationComponent implements OnInit {
     this.reloadPlayerList()
   }
 
+  async confirmWaitlistPlayer(player: Player) {
+    this.dialogService.confirm({
+      title: "In Turnier aufnehmen",
+      message: `${player.playerData.name} in das Turnier aufnehmen? Eine Bestätigung wird an ${player.contactDetails.email} gesendet.`,
+      confirmText: "Aufnehmen",
+      onConfirm: async () => {
+        await this.registrationService.updatePlayer(this.tournament!.config.id, {...player, waitlist: false})
+        this.reloadPlayerList()
+      }
+    })
+  }
+
   async deletePlayer(player: Player) {
     this.dialogService.confirm({
-      title: "Spieler löschen",
+      title: "Anmeldung löschen",
       message: `${player.playerData.name} wirklich löschen?`,
       confirmText: "Löschen",
       onConfirm: async () => {

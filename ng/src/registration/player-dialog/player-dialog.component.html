@@ -3,6 +3,12 @@
   <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
 </div>
 <div class="modal-body">
+  @if (editing && params.player?.waitlist) {
+    <div class="alert alert-warning">
+      Diese Anmeldung befindet sich auf der Warteliste.
+    </div>
+  }
+
   <player-data class="mb-4"
     (onPlayerDataChange)="onPlayerDataChange($event)"
     [initialPlayerData]="params.player?.playerData"

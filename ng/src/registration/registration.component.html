@@ -107,7 +107,8 @@
                 <td>{{ player.playerData.club }}</td>
                 <td>{{ player.playerData.dwz }}</td>
                 <td>{{ player.playerData.elo }}</td>
-                <td class="text-end">
+                <td class="text-end" style="min-width: 75px">
+                  <span (click)="confirmWaitlistPlayer(player)" class="dashicons dashicons-yes-alt" role="button"></span>
                   <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
                   <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
                 </td>
