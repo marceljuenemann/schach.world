@@ -14,6 +14,8 @@ class PlayerRegistration
   #[Assert\NotBlank]
   public string $group;
 
+  public bool $waitlist = false;
+
   #[Assert\NotBlank]
   #[Assert\Valid]
   public PlayerData $playerData;
@@ -22,11 +24,13 @@ class PlayerRegistration
   #[Assert\Valid]
   public ContactDetails $contactDetails;
 
+  public ?string $created;
 
   static function fromEntity(Entity\PlayerRegistration $player, bool $includeSensitive): PlayerRegistration {
     $reg = new PlayerRegistration();
     $reg->id = $player->id;
     $reg->group = $player->group;
+    $reg->waitlist = $player->waitlist;
 
     $reg->playerData = $p = new PlayerData();
     $p->name = $player->name;
@@ -45,6 +49,7 @@ class PlayerRegistration
     if ($includeSensitive) {
       $p->yearOfBirth = $player->yearOfBirth;
       $reg->contactDetails = ContactDetails::fromEntity($player);
+      $reg->created = $player->created->setTimezone(new \DateTimeZone('Europe/Berlin'))->format('Y-m-d H:i');
     }
     return $reg;
   } 

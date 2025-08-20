@@ -6,7 +6,7 @@ import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvFormGroup, TextControl } from '../../core/form/form-group';
 import { NsvDialog } from '../../core/dialog/dialog';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Tournament } from '../tournament';
+import { Group, Tournament } from '../tournament';
 import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer.component';
 
 export interface PlayerDialogParams {
@@ -56,17 +56,39 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
       this.contactDetails.controls.name.setValue(playerData.name)
     }
     // Possibly unselect current group selection and select last valid group.
-    if (!this.selectedGroup || !this.params.tournament.groups.get(this.selectedGroup)?.mayRegister(playerData)) {
+    if (!this.selectedGroup || this.registrationRestriction(this.params.tournament.groups.get(this.selectedGroup)!, playerData)) {
       this.formData.controls.group.setValue(null)
       if (playerData.zps) {
         for (let group of Array.from(this.params.tournament.groups.values()).reverse()) {
-          if (group.mayRegister(playerData)) {
+          if (!this.registrationRestriction(group, playerData)) {
             this.formData.controls.group.setValue(group.id)
             break
           }
         }
       }
     }
+  }
+
+  /**
+   * Return the reason why a player may not register for the given group, if any.
+   */
+  registrationRestriction(group: Group, playerData: PlayerData): string | null {
+    if (group.config.minYearOfBirth && (playerData.yearOfBirth || 0) < group.config.minYearOfBirth) {
+      return `bis Jahrgang ${group.config.minYearOfBirth}`
+    }
+    if (group.config.minDwz && (playerData.dwz || 0) < group.config.minDwz) {
+      return `ab DWZ ${group.config.minDwz}`
+    }
+    if (group.config.maxDwz && (playerData.dwz || 0) > group.config.maxDwz) {
+      return `bis DWZ ${group.config.maxDwz}`
+    }
+    return null
+  }
+
+  isWaitlistGroupSelected(): boolean {
+    if (this.editing || !this.selectedGroup) return false
+    const group = this.params.tournament.groups.get(this.selectedGroup)
+    return group ? !group.availableSlots : false
   }
 
   override get isValid() {
@@ -82,6 +104,9 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     if (this.editing) {
       await this.registrationService.updatePlayer(this.params.tournament.config.id, player)
     } else {
+      if (this.isWaitlistGroupSelected()) {
+        player.waitlist = true
+      }
       await this.registrationService.registerPlayer(this.params.tournament.config.id, player)
     }
     return player

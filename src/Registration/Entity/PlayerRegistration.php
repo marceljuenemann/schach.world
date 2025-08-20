@@ -20,6 +20,9 @@ class PlayerRegistration
   #[ORM\Column(name: "tournament_group", length: 20)]
   public string $group;
 
+  #[ORM\Column(name: "waitlist")] 
+  public bool $waitlist = false;
+
   #[ORM\Column(length: 60)]
   public string $name;
 
@@ -63,4 +66,7 @@ class PlayerRegistration
 
   #[ORM\Column(name: "contact_email", length: 100)]
   public string $contactEMail;
+
+  #[ORM\Column(type: "datetime_immutable")]
+  public \DateTimeImmutable $created;
 }

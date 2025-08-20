@@ -61,7 +61,7 @@ class RegistrationController extends AbstractController {
     $this->mainEntityManager->persist($player);
     $this->mainEntityManager->flush();
 
-    $this->sendConfirmationMail($config, $request);
+    $this->sendConfirmationMail($config, $request, false);
     return new ApiResponse();
   }
 
@@ -71,14 +71,21 @@ class RegistrationController extends AbstractController {
     if (!$this->isManager($config) || $registration->tournament !== $config->id) {
       throw new AccessDeniedHttpException();
     }
+    $waitlistConfirmed = !$request->waitlist && $registration->waitlist;
+
     $this->populateEntity($request, $registration);
     $this->mainEntityManager->persist($registration);
     $this->mainEntityManager->flush();
+
+    if ($waitlistConfirmed) {
+      $this->sendConfirmationMail($config, $request, true);
+    }
     return new ApiResponse();
   }
 
   private function populateEntity(PlayerRegistration $request, Entity\PlayerRegistration $player): void {
     $player->group = $request->group;
+    $player->waitlist = $request->waitlist ?? false;
     $player->name = $request->playerData->name;
     $player->gender = $request->playerData->gender;
     $player->yearOfBirth = $request->playerData->yearOfBirth;
@@ -130,6 +137,10 @@ class RegistrationController extends AbstractController {
   private function getPlayers(TournamentConfig $config): array {
     $includeSensitive = $this->isManager($config);
     $players = $this->repository->findByTournament($config->id);
+    if (!$includeSensitive) {
+      $players = array_filter($players, fn(Entity\PlayerRegistration $p) => !$p->waitlist);
+      $players = array_values($players);  // Re-index the array to fix JSON encoding.
+    }
     return array_map(fn($p) => PlayerRegistration::fromEntity($p, $includeSensitive), $players);
   }
 
@@ -150,16 +161,17 @@ class RegistrationController extends AbstractController {
     throw new NotFoundHttpException("Tournament not found");
   }
 
-  private function sendConfirmationMail(TournamentConfig $config, PlayerRegistration $player) {
+  private function sendConfirmationMail(TournamentConfig $config, PlayerRegistration $player, bool $waitlistConfirmation): void {
     $email = (new TemplatedEmail())
       ->to($player->contactDetails->email)
       ->cc(...$config->emailCc)
       ->replyTo(...$config->emailReplyTo)
-      ->subject("[Anmeldung " . $config->tournamentName . "] " . $player->playerData->name)
+      ->subject("[" . ($player->waitlist ? 'Warteliste' : 'Anmeldung') .  " " . $config->tournamentName . "] " . $player->playerData->name)
       ->htmlTemplate('@registration/email/confirmation.html.twig')
       ->context([
         'config' => $config,
         'player' => $player,
+        'waitlistConfirmation' => $waitlistConfirmation,
         'overviewUri' => $this->generateUrl('registration_overview', [
           'tournament' => $config->id,
         ], UrlGeneratorInterface::ABSOLUTE_URL)

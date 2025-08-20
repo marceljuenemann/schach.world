@@ -2,7 +2,7 @@
     "id": "test",
     "tournamentName": "Testturnier",
     "deadline": "2035-12-27",
-    "maxPlayers": 38,
+    "maxPlayers": 8,
     "groups": [
         {
             "id": "A",
@@ -10,7 +10,7 @@
             "minDwz": 1750,
             "maxDwz": null,
             "minYearOfBirth": null,
-            "maxPlayers": 10
+            "maxPlayers": 3
         },
         {
             "id": "B",
@@ -18,7 +18,7 @@
             "minDwz": 1500,
             "maxDwz": 1750,
             "minYearOfBirth": null,
-            "maxPlayers": 30
+            "maxPlayers": 3
         },
         {
             "id": "C",
@@ -26,7 +26,7 @@
             "minDwz": null,
             "maxDwz": 1500,
             "minYearOfBirth": null,
-            "maxPlayers": null
+            "maxPlayers": 3
         },
         {
             "id": "U18",
@@ -34,7 +34,7 @@
             "minDwz": null,
             "maxDwz": null,
             "minYearOfBirth": 2007,
-            "maxPlayers": null
+            "maxPlayers": 3
         },
         {
             "id": "U16",
@@ -50,7 +50,7 @@
             "minDwz": null,
             "maxDwz": null,
             "minYearOfBirth": 2011,
-            "maxPlayers": null
+            "maxPlayers": 3
         },
         {
             "id": "U12",
@@ -58,7 +58,7 @@
             "minDwz": null,
             "maxDwz": null,
             "minYearOfBirth": 2013,
-            "maxPlayers": null
+            "maxPlayers": 3
         },
         {
             "id": "U10",
@@ -66,7 +66,7 @@
             "minDwz": null,
             "maxDwz": null,
             "minYearOfBirth": 2015,
-            "maxPlayers": null
+            "maxPlayers": 3
         }
     ],
     "links": {

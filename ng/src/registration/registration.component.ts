@@ -5,12 +5,12 @@ import { DialogService } from '../core/dialog/dialog.service';
 import { Tournament } from './tournament';
 import { RegistrationService } from './registration.service';
 import { CommonModule } from '@angular/common';
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'nsv-registration',
   standalone: true,
-  imports: [NgbTooltipModule, CommonModule],
+  imports: [NgbNavModule, NgbTooltipModule, CommonModule],
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css'
 })
@@ -19,8 +19,11 @@ export class RegistrationComponent implements OnInit {
   @Input({alias: "players"}) playersString: string
   @Input({alias: "manager"}) isManager: boolean
 
+  readonly INFINITY = Infinity;
+
   tournament: Tournament
   registeredPlayers: Player[] = []
+  activeTab = 1;
 
   constructor(
     private dialogService: DialogService,
@@ -53,9 +56,21 @@ export class RegistrationComponent implements OnInit {
     this.reloadPlayerList()
   }
 
+  async confirmWaitlistPlayer(player: Player) {
+    this.dialogService.confirm({
+      title: "In Turnier aufnehmen",
+      message: `${player.playerData.name} in das Turnier aufnehmen? Eine Bestätigung wird an ${player.contactDetails.email} gesendet.`,
+      confirmText: "Aufnehmen",
+      onConfirm: async () => {
+        await this.registrationService.updatePlayer(this.tournament!.config.id, {...player, waitlist: false})
+        this.reloadPlayerList()
+      }
+    })
+  }
+
   async deletePlayer(player: Player) {
     this.dialogService.confirm({
-      title: "Spieler löschen",
+      title: "Anmeldung löschen",
       message: `${player.playerData.name} wirklich löschen?`,
       confirmText: "Löschen",
       onConfirm: async () => {

@@ -3,6 +3,12 @@
   <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
 </div>
 <div class="modal-body">
+  @if (editing && params.player?.waitlist) {
+    <div class="alert alert-warning">
+      Diese Anmeldung befindet sich auf der Warteliste.
+    </div>
+  }
+
   <player-data class="mb-4"
     (onPlayerDataChange)="onPlayerDataChange($event)"
     [initialPlayerData]="params.player?.playerData"
@@ -20,15 +26,23 @@
           name="group"
           formControlName="group"
           [value]="group.id"
-          [attr.disabled]="!this.params.isManager && (!this.playerData || !group.mayRegister(this.playerData)) || null"
+          [attr.disabled]="!this.params.isManager && (!this.playerData || this.registrationRestriction(group, this.playerData)) || null"
           class="form-check-input"
           required>
         <label class="form-check-label" for="tournamentRadio-{{group.id}}">
           {{group.name}}
-          @if (group.maxPlayersReached) {
-            <span style="font-size: smaller">— Anmeldegrenze erreicht</span>
+          @if (this.playerData && this.registrationRestriction(group, this.playerData)) {
+            <span style="font-size: smaller">— {{ this.registrationRestriction(group, this.playerData) }}</span>
+          } @else if (!editing && !group.availableSlots) {
+            &nbsp;<span class="badge text-bg-danger">Warteliste</span>
           }
         </label>
+      </div>
+    }
+
+    @if (this.isWaitlistGroupSelected()) {
+      <div class="alert alert-danger mt-3">
+        <strong>Warteliste:</strong> Die Anmeldegrenze für dieses Turnier ist bereits erreicht, aber Sie können sich für die Warteliste registrieren. Sie werden benachrichtigt, sollte ein Platz frei werden.
       </div>
     }
   </form>

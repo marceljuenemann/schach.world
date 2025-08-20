@@ -2,6 +2,7 @@
 
 use Nsv\Registration\Api\Model\TournamentConfig;
 use Nsv\Registration\Api\Model\GroupConfig;
+use Nsv\Registration\Api\Model\RegistrationConstraint;
 
 $config = new TournamentConfig();
 $config->tournamentName = 'Testturnier';
@@ -78,5 +79,15 @@ $group->id = 'U10';
 $group->name = 'Altersklasse U10';
 $group->minYearOfBirth = 2015;
 $config->groups[] = $group;
+
+$constraint = new RegistrationConstraint();
+$constraint->groups = ['A', 'B', 'C'];
+$constraint->maxPlayers = 25;
+$config->constraints[] = $constraint;
+
+$constraint = new RegistrationConstraint();
+$constraint->groups = ['U18', 'U16', 'U14', 'U12', 'U10'];
+$constraint->maxPlayers = 15;
+$config->constraints[] = $constraint;
 
 return $config;

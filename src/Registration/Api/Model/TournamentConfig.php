@@ -37,6 +37,12 @@ class TournamentConfig {
   public array $groups;
 
   /**
+   * List of cross-group registration constraints.
+   */
+  #[Assert\All(['constraints' => [new Assert\Type(RegistrationConstraint::class)]])]
+  public array $constraints;
+
+  /**
    * Links to show in the frontend.
    */
   public array $links;
@@ -52,13 +58,13 @@ class TournamentConfig {
    * The Reply-To address for eMails.
    */
   #[Assert\NotBlank]
-  #[Assert\All(['constraints' => [new Assert\Type('string')]])]
+  #[Assert\All(['constraints' => [new Assert\Email]])]
   public array $emailReplyTo;
 
   /**
    * eMails addresses in CC for all eMails.
    */
-  #[Assert\All(['constraints' => [new Assert\Type('string')]])]
+  #[Assert\All(['constraints' => [new Assert\Email]])]
   public array $emailCc;
 
   /**
