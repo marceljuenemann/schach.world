@@ -3,7 +3,7 @@ import { Config, GroupConfig, Player } from "../types";
 
 import * as TEST_CONFIG from "./test-config.json";
 
-const TEST_PLAYER: Player = {
+export const TEST_PLAYER: Player = {
   id: 1,
   group: "A",
   playerData: {

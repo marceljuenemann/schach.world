@@ -41,6 +41,16 @@ export class Tournament {
     deadline.setDate(deadline.getDate() + 1)
     return new Date() >= deadline
   }
+
+  hasPlayer(player: Pick<PlayerData, 'name' | 'zps' | 'memberId'>): boolean {
+    return this.players.some(p => {
+      if (player.zps && player.memberId) {
+        return p.playerData.zps === player.zps && p.playerData.memberId === player.memberId;
+      } else {
+        return p.playerData.name === player.name
+      }
+    });
+  }
 }
 
 export class Group {

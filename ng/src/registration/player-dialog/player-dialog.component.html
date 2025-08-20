@@ -17,6 +17,12 @@
     [validationErrors]="errors?.validationErrors"
   ></player-data>
 
+  @if (this.isDuplicatePlayer) {
+    <div class="alert alert-danger mt-3">
+      Es liegt bereits eine Anmeldung mit diesem Namen oder dieser Mitgliedsnummer vor.
+    </div>
+  }
+
   <form [formGroup]="formData" class="mt-4" (keyup.enter)="save()">
     @for (group of params.tournament.groups.values(); track group.id) {
       <div class="form-check">

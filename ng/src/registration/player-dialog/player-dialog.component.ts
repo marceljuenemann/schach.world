@@ -25,6 +25,7 @@ export interface PlayerDialogParams {
 })
 export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player> {
   playerData: PlayerData | null = null
+  isDuplicatePlayer: boolean = false
 
   formData = new FormGroup({
     group: new FormControl<string|null>(null, Validators.required),
@@ -51,7 +52,9 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
 
   onPlayerDataChange(playerData: PlayerData | null) {
     this.playerData = playerData
-    if (this.editing || !playerData) return
+    this.isDuplicatePlayer = !!playerData && !this.editing && this.params.tournament.hasPlayer(playerData)
+    if (this.editing || !playerData || this.isDuplicatePlayer) return
+
     if (!this.contactDetails.controls.name.value && playerData.name) {
       this.contactDetails.controls.name.setValue(playerData.name)
     }
@@ -95,7 +98,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
   }
 
   override get isValid() {
-    return !!this.playerData && this.formData.valid
+    return !!this.playerData && !this.isDuplicatePlayer && this.formData.valid
   }
 
   override async save(): Promise<Player> {
