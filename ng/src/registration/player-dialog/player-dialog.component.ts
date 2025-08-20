@@ -82,6 +82,9 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     if (group.config.maxDwz && (playerData.dwz || 0) > group.config.maxDwz) {
       return `bis DWZ ${group.config.maxDwz}`
     }
+    if (group.config.requireFideId && !playerData.fideId) {
+      return `FIDE-ID erforderlich`
+    }
     return null
   }
 

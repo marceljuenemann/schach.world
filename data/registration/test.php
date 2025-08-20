@@ -33,6 +33,7 @@ $group->id = 'A';
 $group->name = 'Gruppe A (ab DWZ 1750)';
 $group->minDwz = 1750;
 $group->maxPlayers = 10;
+$group->requireFideId = true;
 $config->groups[] = $group;
 
 $group = new GroupConfig();

@@ -17,6 +17,7 @@ export interface GroupConfig {
   minDwz?: number | null
   maxDwz?: number | null
   minYearOfBirth?: number | null
+  requireFideId?: boolean
   // TODO: Replace with RegistrationConstraint once the config is edited via a UI?
   maxPlayers?: number | null
 }
