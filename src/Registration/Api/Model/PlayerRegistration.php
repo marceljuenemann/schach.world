@@ -49,7 +49,7 @@ class PlayerRegistration
     if ($includeSensitive) {
       $p->yearOfBirth = $player->yearOfBirth;
       $reg->contactDetails = ContactDetails::fromEntity($player);
-      $reg->created = $player->created->setTimezone(new \DateTimeZone('Europe/Berlin'))->format('Y-m-d H:i');
+      $reg->created = $player->created->format('Y-m-d H:i');
     }
     return $reg;
   } 
