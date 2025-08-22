@@ -52,6 +52,7 @@ class PlayerRegistration
     if ($includeSensitive) {
       $p->yearOfBirth = $player->yearOfBirth;
       $reg->contactDetails = ContactDetails::fromEntity($player);
+      $reg->additionalFields = $player->additionalFields ?? [];
       $reg->created = $player->created->format('Y-m-d H:i');
     }
     return $reg;
