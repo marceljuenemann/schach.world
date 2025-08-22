@@ -1,6 +1,16 @@
 import { FormControl, FormGroup, Validators } from "@angular/forms"
 
 /**
+ * Configuration options for a form control.
+ */
+export interface NsvFormConfig {
+  type: 'text' | 'int' | 'multiline' | 'select'
+  id: string
+  label: string
+  required: boolean
+}
+
+/**
  * Extension of FormGroup that also helps with things like
  * transforming values, manging visibility, showing errors.
  */
@@ -19,6 +29,26 @@ export class NsvFormGroup<T extends {[K in keyof T]: NsvFormControl<any>} = any>
         return [key, (control as NsvFormControl).transformedValue];
       })
     )
+  }
+
+  /**
+   * Dynamically adds a control generated from the configuration passed.
+   */
+  addControls(config: NsvFormConfig[]) {
+    for (const cfg of config) {
+      switch (cfg.type) {
+        case 'text':
+        case 'multiline':
+          this.addControl(cfg.id, new TextControl(cfg.label, {required: cfg.required}))
+          break
+        case 'int':
+          this.addControl(cfg.id, new IntControl(cfg.label, {required: cfg.required}))
+          break
+        default:
+          console.warn(`Unsupported control type ${cfg.type}`)
+          continue
+      }
+    }
   }
 }
 

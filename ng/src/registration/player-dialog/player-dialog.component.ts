@@ -8,6 +8,7 @@ import { NsvDialog } from '../../core/dialog/dialog';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Group, Tournament } from '../tournament';
 import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer.component';
+import { JsonPipe } from '@angular/common';
 
 export interface PlayerDialogParams {
   tournament: Tournament,
@@ -19,7 +20,7 @@ export interface PlayerDialogParams {
 @Component({
   selector: 'player-dialog',
   standalone: true,
-  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent],
+  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent, JsonPipe],
   templateUrl: './player-dialog.component.html',
   styleUrl: './player-dialog.component.css'
 })
@@ -29,6 +30,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
 
   formData = new FormGroup({
     group: new FormControl<string|null>(null, Validators.required),
+    additionalFields: new NsvFormGroup({}),
     contactDetails: new NsvFormGroup({
       name: new TextControl('Kontaktperson', {required: true}),
       email: new TextControl('E-Mail-Adresse', {required: true})
@@ -40,6 +42,22 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     private registrationService: RegistrationService
   ) {
     super()
+
+    this.additionalFields.addControls([
+      {
+        type: 'text',
+        id: 'customField1',
+        label: 'Custom Field 1',
+        required: false
+      },
+      {
+        type: 'int',
+        id: 'customField2',
+        label: 'Custom Field 2',
+        required: true
+      }
+    ])
+
     if (this.params.player) {
       this.formData.patchValue(this.params.player)
     } else if (this.params.lastPlayer) {
@@ -128,6 +146,10 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
 
   get selectedGroup() {
     return this.groupControl.value
+  }
+
+  get additionalFields() {
+    return this.formData.controls.additionalFields
   }
 
   get contactDetails() {

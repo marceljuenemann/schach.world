@@ -53,6 +53,8 @@
     }
   </form>
 
+  <nsv-form [form]="additionalFields" [validationErrors]="errors?.validationErrors" validationErrorPrefix="additionalFields ." (keyup.enter)="save()"></nsv-form>
+
   <nsv-form [form]="contactDetails" [validationErrors]="errors?.validationErrors" validationErrorPrefix="contactDetails." (keyup.enter)="save()"></nsv-form>
 
   @if (!editing) {
@@ -64,4 +66,7 @@
     </form>
   }
 </div>
+
+<pre>{{ formData.value | json }}</pre>
+
 <nsv-dialog-footer [dialog]="this"></nsv-dialog-footer>
