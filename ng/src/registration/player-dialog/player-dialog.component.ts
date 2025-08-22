@@ -45,16 +45,27 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
 
     this.additionalFields.addControls([
       {
-        type: 'text',
+        type: 'multiline',
         id: 'customField1',
         label: 'Custom Field 1',
-        required: false
+        required: true
       },
       {
         type: 'int',
         id: 'customField2',
         label: 'Custom Field 2',
         required: true
+      },
+      {
+        type: 'select',
+        id: 'customField3',
+        label: 'Custom Field 3',
+        required: true,
+        options: [
+          { label: 'Option 1', value: 'option1' },
+          { label: 'Option 2', value: 'option2', disabled: true },
+          { label: 'Option 3', value: 'option3' }
+        ]
       }
     ])
 
