@@ -1,3 +1,4 @@
+import { NsvFormConfig } from "../core/form/form-group"
 import { PlayerData } from "./player-data/player-data.component"
 
 export interface Config {
@@ -9,6 +10,7 @@ export interface Config {
   constraints?: RegistrationConstraint[]
   links: Record<string, string>
   termsAndConditions: string
+  additionalFields?: NsvFormConfig[]
 }
 
 export interface GroupConfig {

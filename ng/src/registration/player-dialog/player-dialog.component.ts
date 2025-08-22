@@ -42,33 +42,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     private registrationService: RegistrationService
   ) {
     super()
-
-    this.additionalFields.addControls([
-      {
-        type: 'multiline',
-        id: 'customField1',
-        label: 'Custom Field 1',
-        required: true
-      },
-      {
-        type: 'int',
-        id: 'customField2',
-        label: 'Custom Field 2',
-        required: true
-      },
-      {
-        type: 'select',
-        id: 'customField3',
-        label: 'Custom Field 3',
-        required: true,
-        options: [
-          { label: 'Option 1', value: 'option1' },
-          { label: 'Option 2', value: 'option2', disabled: true },
-          { label: 'Option 3', value: 'option3' }
-        ]
-      }
-    ])
-
+    this.additionalFields.addControls(this.params.tournament.config.additionalFields || [])
     if (this.params.player) {
       this.formData.patchValue(this.params.player)
     } else if (this.params.lastPlayer) {

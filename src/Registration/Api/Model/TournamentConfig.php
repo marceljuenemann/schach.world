@@ -73,6 +73,12 @@ class TournamentConfig {
   #[Assert\NotBlank]
   public string $termsAndConditions;
 
+  /**
+   * Additional fields that should be displayed in the registration form.
+   */
+  #[Assert\All(['constraints' => [new Assert\Type(AdditionalFieldConfig::class)]])]
+  public array $additionalFields = [];
+
   function group(string $id): GroupConfig {
     foreach ($this->groups as $group) {
       if ($group->id === $id) {
