@@ -22,6 +22,7 @@ export interface GroupConfig {
   requireFideId?: boolean
   // TODO: Replace with RegistrationConstraint once the config is edited via a UI?
   maxPlayers?: number | null
+  hidden?: boolean
 }
 
 /* Registration constraint that applies across multiple groups */

@@ -66,7 +66,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
       this.formData.controls.group.setValue(null)
       if (playerData.zps) {
         for (let group of Array.from(this.params.tournament.groups.values()).reverse()) {
-          if (!this.registrationRestriction(group, playerData)) {
+          if (!group.config.hidden && !this.registrationRestriction(group, playerData)) {
             this.formData.controls.group.setValue(group.id)
             break
           }

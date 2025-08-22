@@ -9,7 +9,7 @@ use Nsv\Registration\Api\Model\AdditionalFieldOption;
 $config = new TournamentConfig();
 $config->tournamentName = 'Testturnier';
 $config->deadline = '2035-12-27';
-$config->maxPlayers = 38;
+$config->maxPlayers = 100;
 
 $config->managers = ['marcel', 'beni', 'joerg'];
 $config->emailCc = [
@@ -81,6 +81,12 @@ $group = new GroupConfig();
 $group->id = 'U10';
 $group->name = 'Altersklasse U10';
 $group->minYearOfBirth = 2015;
+$config->groups[] = $group;
+
+$group = new GroupConfig();
+$group->id = 'Betreuer';
+$group->name = 'Betreuer';
+$group->hidden = true;
 $config->groups[] = $group;
 
 $constraint = new RegistrationConstraint();
