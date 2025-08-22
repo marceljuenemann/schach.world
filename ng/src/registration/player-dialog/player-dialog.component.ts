@@ -8,6 +8,7 @@ import { NsvDialog } from '../../core/dialog/dialog';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Group, Tournament } from '../tournament';
 import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer.component';
+import { JsonPipe } from '@angular/common';
 
 export interface PlayerDialogParams {
   tournament: Tournament,
@@ -19,7 +20,7 @@ export interface PlayerDialogParams {
 @Component({
   selector: 'player-dialog',
   standalone: true,
-  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent],
+  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent, JsonPipe],
   templateUrl: './player-dialog.component.html',
   styleUrl: './player-dialog.component.css'
 })
@@ -29,6 +30,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
 
   formData = new FormGroup({
     group: new FormControl<string|null>(null, Validators.required),
+    additionalFields: new NsvFormGroup({}),
     contactDetails: new NsvFormGroup({
       name: new TextControl('Kontaktperson', {required: true}),
       email: new TextControl('E-Mail-Adresse', {required: true})
@@ -40,6 +42,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     private registrationService: RegistrationService
   ) {
     super()
+    this.additionalFields.addControls(this.params.tournament.config.additionalFields || [])
     if (this.params.player) {
       this.formData.patchValue(this.params.player)
     } else if (this.params.lastPlayer) {
@@ -63,7 +66,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
       this.formData.controls.group.setValue(null)
       if (playerData.zps) {
         for (let group of Array.from(this.params.tournament.groups.values()).reverse()) {
-          if (!this.registrationRestriction(group, playerData)) {
+          if (!group.config.hidden && !this.registrationRestriction(group, playerData)) {
             this.formData.controls.group.setValue(group.id)
             break
           }
@@ -128,6 +131,10 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
 
   get selectedGroup() {
     return this.groupControl.value
+  }
+
+  get additionalFields() {
+    return this.formData.controls.additionalFields
   }
 
   get contactDetails() {

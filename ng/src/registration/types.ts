@@ -1,3 +1,4 @@
+import { NsvFormConfig } from "../core/form/form-group"
 import { PlayerData } from "./player-data/player-data.component"
 
 export interface Config {
@@ -9,6 +10,7 @@ export interface Config {
   constraints?: RegistrationConstraint[]
   links: Record<string, string>
   termsAndConditions: string
+  additionalFields?: NsvFormConfig[]
 }
 
 export interface GroupConfig {
@@ -20,6 +22,7 @@ export interface GroupConfig {
   requireFideId?: boolean
   // TODO: Replace with RegistrationConstraint once the config is edited via a UI?
   maxPlayers?: number | null
+  hidden?: boolean
 }
 
 /* Registration constraint that applies across multiple groups */
@@ -38,6 +41,7 @@ export interface Player {
   group: string,
   waitlist?: boolean,
   playerData: PlayerData,
+  additionalFields?: Record<string, string>,
   contactDetails: ContactDetails,
   created?: string
 }

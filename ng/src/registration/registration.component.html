@@ -28,48 +28,50 @@
 		<button ngbNavLink>Anmeldungen</button>
 		<ng-template ngbNavContent>
       @for (group of tournament!.groups.values(); track group.id) {
-        <h4 class="mt-4">{{group.name}}</h4>
+        @if (!group.config.hidden || this.isManager) {
+          <h4 class="mt-4">{{group.name}}</h4>
 
-        <div class="text-muted mb-2" style="font-style: italic">
-          {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
-          @if (group.availableSlots != this.INFINITY) {
-            , {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
-          }
-        </div>
+          <div class="text-muted mb-2" style="font-style: italic">
+            {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
+            @if (group.availableSlots != this.INFINITY) {
+              , {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+            }
+          </div>
 
-        @if (group.players.length) {
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Verein</th>
-                <th>DWZ</th>
-                <th>ELO</th>
-                @if (isManager) {
-                  <th></th>
-                }
-              </tr>
-            </thead>
-            <tbody>
-              @for (player of group.players; track player.id) {
+          @if (group.players.length) {
+            <table class="table table-striped">
+              <thead>
                 <tr>
-                  <td>
-                    <b>{{ player.playerData.fideTitle }}</b>
-                    {{ player.playerData.name }}
-                  </td>
-                  <td>{{ player.playerData.club }}</td>
-                  <td>{{ player.playerData.dwz }}</td>
-                  <td>{{ player.playerData.elo }}</td>
+                  <th>Name</th>
+                  <th>Verein</th>
+                  <th>DWZ</th>
+                  <th>ELO</th>
                   @if (isManager) {
-                    <td class="text-end">
-                      <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
-                      <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
-                    </td>
+                    <th></th>
                   }
                 </tr>
-              }
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                @for (player of group.players; track player.id) {
+                  <tr>
+                    <td>
+                      <b>{{ player.playerData.fideTitle }}</b>
+                      {{ player.playerData.name }}
+                    </td>
+                    <td>{{ player.playerData.club }}</td>
+                    <td>{{ player.playerData.dwz }}</td>
+                    <td>{{ player.playerData.elo }}</td>
+                    @if (isManager) {
+                      <td class="text-end">
+                        <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
+                        <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
+                      </td>
+                    }
+                  </tr>
+                }
+              </tbody>
+            </table>
+          }
         }
       }
 

@@ -41,4 +41,9 @@ class GroupConfig {
    * Maximum number of players that may register for this group.
    */
   public ?int $maxPlayers = null;
+
+  /**
+   * Hidden groups are not shown in the overview.
+   */
+  public ?bool $hidden = false;
 }
