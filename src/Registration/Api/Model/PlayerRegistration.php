@@ -20,6 +20,9 @@ class PlayerRegistration
   #[Assert\Valid]
   public PlayerData $playerData;
 
+  #[Assert\All([new Assert\Type('string')])]
+  public array $additionalFields;
+
   #[Assert\NotBlank]
   #[Assert\Valid]
   public ContactDetails $contactDetails;
@@ -52,5 +55,5 @@ class PlayerRegistration
       $reg->created = $player->created->format('Y-m-d H:i');
     }
     return $reg;
-  } 
+  }
 }

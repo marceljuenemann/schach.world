@@ -57,3 +57,10 @@ Some of the most recent frontend code uses React components. You can find the co
 ### Debugging with XDebug
 
 *TODO: XDebug is already installed in Docker. Just need to enable it in php.ini and add instructions*
+
+## Migrations
+
+The most recent DB changes should be applied using Doctrine migrations with the following command:
+
+`./bin/console doctrine:migrations:migrate --em main`
+

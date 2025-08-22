@@ -93,6 +93,7 @@ class RegistrationController extends AbstractController {
     $player->fideId = $request->playerData->fideId;
     $player->contactName = $request->contactDetails->name;
     $player->contactEMail = $request->contactDetails->email;
+    $player->additionalFields = $request->additionalFields ?: null;
 
     // Find in DWZ database.
     if ($request->playerData->zps || $request->playerData->memberId) {
