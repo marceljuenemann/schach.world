@@ -23,7 +23,7 @@
     </div>
   }
 
-  <form [formGroup]="formData" class="mt-4" (keyup.enter)="save()">
+  <form [formGroup]="formData" class="mt-4" (keyup.enter)="saveDialog()">
     @for (group of params.tournament.groups.values(); track group.id) {
       <div class="form-check">
         <input
@@ -53,9 +53,9 @@
     }
   </form>
 
-  <nsv-form [form]="additionalFields" [validationErrors]="errors?.validationErrors" validationErrorPrefix="additionalFields ." (keyup.enter)="save()"></nsv-form>
+  <nsv-form [form]="additionalFields" [validationErrors]="errors?.validationErrors" validationErrorPrefix="additionalFields."></nsv-form>
 
-  <nsv-form [form]="contactDetails" [validationErrors]="errors?.validationErrors" validationErrorPrefix="contactDetails." (keyup.enter)="save()"></nsv-form>
+  <nsv-form [form]="contactDetails" [validationErrors]="errors?.validationErrors" validationErrorPrefix="contactDetails." (keyup.enter)="saveDialog()"></nsv-form>
 
   @if (!editing) {
     <form [formGroup]="formData" class="mt-3">
