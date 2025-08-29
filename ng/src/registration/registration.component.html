@@ -32,9 +32,10 @@
           <h4 class="mt-4">{{group.name}}</h4>
 
           <div class="text-muted mb-2" style="font-style: italic">
-            {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
             @if (group.availableSlots != this.INFINITY) {
-              , {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+              {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}, {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+            } @else {
+              {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
             }
           </div>
 
