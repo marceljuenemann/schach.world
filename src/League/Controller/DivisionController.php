@@ -62,6 +62,12 @@ class DivisionController extends AbstractLeagueController {
     return $response;
   }
 
+  #[Route('api/divisions/{division}/rounds/current/', name: 'api_current_matchday')]
+  public function current_matchday_api(ScheduleService $scheduleService, MatchDayService $service): Response {
+    $round = $scheduleService->closestRound($this->division, date('Y-m-d'));
+    return $this->apiResponse($this->matchday_model($service, $round ? $round->round : 1));
+  }
+
   #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]
   public function matchday_api(int $round, MatchDayService $service): Response {
     return $this->apiResponse($this->matchday_model($service, $round));
