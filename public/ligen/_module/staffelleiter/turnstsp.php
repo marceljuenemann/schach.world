@@ -61,8 +61,8 @@
   // Überlegen, was gemacht wird
   $showInfopage = !$isRunning && !isset ( $_GET ['modus'] );
   $showInfobox = $isRunning;
-  $showTabelle = !$isRunning && !$showInfopage && mysql_num_rows ( $rsrcTeamsStaffel ) < 15;
   $showSchnelleingabe = !$isRunning && isset ( $_GET ['modus'] ) && $_GET ['modus'] == "schnell";
+  $showTabelle = !$isRunning && !$showInfopage && (mysql_num_rows ( $rsrcTeamsStaffel ) < 15 || $showSchnelleingabe);
   $showPaarungen = !$showInfopage;
   $showKM = $showTabelle;
   $showButtons = !$showInfopage;
