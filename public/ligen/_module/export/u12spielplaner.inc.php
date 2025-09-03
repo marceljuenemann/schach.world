@@ -1,7 +1,6 @@
 <?php
 
 header("Content-type: text/plain");
-echo "welcome!\n";
 
 global $games, $teams;
 
@@ -17,7 +16,7 @@ function doPrint(){
 		foreach ($teams as $team => $loc2){
 			if ($loc2 == $loc1){
 				// unterdrückt zweite mannschaften (nimmt an, dass die immer partner sind)
-				if (substr($team, -1) == 1) {
+				if (in_array(substr($team, -1), [1, 3, 5])) {
 					echo ',"'.$team.'"';
 				}
 			}
