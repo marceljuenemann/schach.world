@@ -77,7 +77,7 @@
       }
 
       <div class="mt-3 text-muted">
-        Anmeldungen insgesamt: {{ tournament.players.length }}
+        Anmeldungen insgesamt: {{ tournament.players.length - tournament.waitlist.length }}
       </div>
 
 		</ng-template>
