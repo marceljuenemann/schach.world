@@ -6,11 +6,12 @@ import { Tournament } from './tournament';
 import { RegistrationService } from './registration.service';
 import { CommonModule } from '@angular/common';
 import { NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { NsvTableComponent } from '../core/table/table.component';
 
 @Component({
   selector: 'nsv-registration',
   standalone: true,
-  imports: [NgbNavModule, NgbTooltipModule, CommonModule],
+  imports: [NgbNavModule, NgbTooltipModule, CommonModule, NsvTableComponent],
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css'
 })

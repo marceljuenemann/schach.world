@@ -25,7 +25,7 @@
 
 <ul ngbNav #tabs="ngbNav" [(activeId)]="activeTab" class="nav-tabs mt-4" [class.d-none]="!isManager">
 	<li [ngbNavItem]="1">
-		<button ngbNavLink>Anmeldungen</button>
+		<button ngbNavLink>Übersicht</button>
 		<ng-template ngbNavContent>
       @for (group of tournament!.groups.values(); track group.id) {
         @if (!group.config.hidden || this.isManager) {
@@ -82,7 +82,7 @@
 
 		</ng-template>
 	</li>
-	<li [ngbNavItem]="2">
+  <li [ngbNavItem]="2">
 		<button ngbNavLink>Warteliste</button>
 		<ng-template ngbNavContent>
       @if (tournament.waitlist.length) {
@@ -126,6 +126,12 @@
       }
 		</ng-template>
 	</li>
+	<li [ngbNavItem]="3">
+		<button ngbNavLink>Details</button>
+		<ng-template ngbNavContent>
+      <nsv-table></nsv-table>
+    </ng-template>
+  </li>
 </ul>
 
 <div [ngbNavOutlet]="tabs" class="mt-3"></div>
