@@ -1,1 +1,20 @@
-<p>table works!</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      @for (column of options.columns; track column.id) {
+        <th>{{ column.label }}</th>
+      }
+    </tr>
+  </thead>
+  <tbody>
+    @for (row of data; track options.idFn(row)) {
+      <tr>
+        @for (column of options.columns; track column.id) {
+          <td>
+            {{ getValue(row, column) }}
+          </td>
+        }
+      </tr>
+    }
+  </tbody>
+</table>

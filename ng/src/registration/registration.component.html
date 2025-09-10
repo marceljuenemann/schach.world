@@ -129,7 +129,7 @@
 	<li [ngbNavItem]="3">
 		<button ngbNavLink>Details</button>
 		<ng-template ngbNavContent>
-      <nsv-table></nsv-table>
+      <nsv-table [options]="tableOptions" [data]="tournament.players"></nsv-table>
     </ng-template>
   </li>
 </ul>

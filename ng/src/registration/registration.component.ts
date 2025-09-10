@@ -6,7 +6,7 @@ import { Tournament } from './tournament';
 import { RegistrationService } from './registration.service';
 import { CommonModule } from '@angular/common';
 import { NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
-import { NsvTableComponent } from '../core/table/table.component';
+import { NsvTableComponent, TableOptions } from '../core/table/table.component';
 
 @Component({
   selector: 'nsv-registration',
@@ -20,11 +20,22 @@ export class RegistrationComponent implements OnInit {
   @Input({alias: "players"}) playersString: string
   @Input({alias: "manager"}) isManager: boolean
 
-  readonly INFINITY = Infinity;
-
   tournament: Tournament
   registeredPlayers: Player[] = []
   activeTab = 1;
+
+  readonly INFINITY = Infinity;
+  readonly tableOptions: TableOptions<Player> = {
+    columns: [
+      { id: 'group', label: 'Turnier', valueFn: (player: Player) => player.group },
+      { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name },
+      { id: 'club', label: 'Verein', valueFn: (player: Player) => player.playerData.club },
+      { id: 'dwz', label: 'DWZ', valueFn: (player: Player) => player.playerData.dwz },
+      { id: 'elo', label: 'Elo', valueFn: (player: Player) => player.playerData.elo },
+      { id: 'waitlist', label: 'Warteliste' }
+    ],
+    idFn: (player: Player) => player.id
+  }
 
   constructor(
     private dialogService: DialogService,
