@@ -1,15 +1,35 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      @for (column of options.columns; track column.id) {
-        <th>{{ column.label }}</th>
+      @for (column of options().columns; track column.id) {
+        <th
+          [class.sortable]="column.sortable"
+          [class.sorted]="isSorted(column)"
+          [class.asc]="getSortDirection(column) === 'asc'"
+          [class.desc]="getSortDirection(column) === 'desc'"
+          (click)="onHeaderClick(column)"
+        >
+          {{ column.label }}
+          @if (column.sortable !== false) {
+            <span class="sort-indicator">
+              <!-- TODO: Nicer indicators -->
+              @if (getSortDirection(column) === 'asc') {
+                ↑
+              } @else if (getSortDirection(column) === 'desc') {
+                ↓
+              } @else {
+                ↕
+              }
+            </span>
+          }
+        </th>
       }
     </tr>
   </thead>
   <tbody>
-    @for (row of data; track options.idFn(row)) {
+    @for (row of sortedData(); track options().idFn(row)) {
       <tr>
-        @for (column of options.columns; track column.id) {
+        @for (column of options().columns; track column.id) {
           <td>
             {{ getValue(row, column) }}
           </td>

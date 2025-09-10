@@ -34,7 +34,8 @@ export class RegistrationComponent implements OnInit {
       { id: 'elo', label: 'Elo', valueFn: (player: Player) => player.playerData.elo },
       { id: 'waitlist', label: 'Warteliste' }
     ],
-    idFn: (player: Player) => player.id
+    idFn: (player: Player) => player.id,
+    defaultSorting: { columnId: 'club', direction: 'desc' }
   }
 
   constructor(
