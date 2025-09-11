@@ -5,6 +5,7 @@ export type TableColumn<Row extends object, Value> = {
   label: string,
   valueFn?: (row: Row) => Value,
   sortable?: boolean  // Default to true
+  defaultSortDirection?: 'asc' | 'desc'  // Default to 'asc'
 }
 
 export type SortState = {
@@ -28,7 +29,15 @@ export class NsvTableComponent {
   options = input.required<TableOptions<any>>();
   data = input.required<object[]>();
 
-  sortState = linkedSignal<SortState[]>(() => this.options().defaultSorting || []);
+  sortState = linkedSignal<SortState[]>(() => {
+    return this.options().defaultSorting || [];
+  });
+  sortColumn = computed(() => {
+    return this.sortState().length ? this.sortState()[0].columnId : null;
+  });
+  sortDirection = computed(() => {
+    return this.sortState().length ? this.sortState()[0].direction : null;
+  });
   sortedData = computed(() => {
     if (!this.sortState().length) {
       return this.data();
@@ -45,6 +54,19 @@ export class NsvTableComponent {
     }
   });
 
+  onHeaderClick(column: TableColumn<any, any>) {
+    if (column.sortable === false) return;
+    this.sortState.update((sortState: SortState[]) => {
+      let direction = column.defaultSortDirection || 'asc';
+      if (this.sortColumn() === column.id) {
+        direction = this.sortDirection() === 'asc' ? 'desc' : 'asc';
+      }
+      return [{ columnId: column.id, direction } as SortState].concat(
+        sortState.filter(s => s.columnId !== column.id)
+      );
+    })
+  }
+
   getColumn(columnId: string): TableColumn<any, any> {
     const column = this.options().columns.find(col => col.id === columnId);
     if (!column) {
@@ -55,11 +77,5 @@ export class NsvTableComponent {
 
   getValue(row: any, column: TableColumn<any, any>) {
     return column.valueFn ? column.valueFn(row) : row[column.id];
-  }
-
-  onHeaderClick(column: TableColumn<any, any>) {
-    if (column.sortable === false) {
-      return;
-    }
   }
 }

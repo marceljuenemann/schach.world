@@ -3,11 +3,14 @@
 - [x] track by row ID (add option)
 - [ ] Sorting
   - [x] Default Sorting
-  - [ ] UI
-  - [ ] Change Sorting
+  - [x] UI
+  - [x] Change Sorting
+  - [ ] Tests
+- [ ] Show actions
+- [ ] Ja / Nein for boolean
+- [ ] Support "playerData.dwz" as ID without need for valueFn
 - [ ] Show/hide columns
 - [ ] Add all columns
-- [ ] Show actions
 - [ ] Publish first version
 
 - [ ] CSV Download
