@@ -40,7 +40,8 @@ export class RegistrationComponent implements OnInit {
       { columnId: 'group', direction: 'asc' },
       { columnId: 'waitlist', direction: 'asc' },
       { columnId: 'name', direction: 'asc' }
-    ]
+    ],
+    showColumnSelection: true
   }
 
   constructor(

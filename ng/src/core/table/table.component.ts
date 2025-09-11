@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, TemplateRef, computed, input, linkedSignal, Signal } from '@angular/core';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 export type TableColumn<Row extends object, Value> = {
   id: string,
@@ -19,11 +20,12 @@ export type TableOptions<Row extends object> = {
   columns: TableColumn<Row, any>[]
   idFn: (row: Row) => string | number
   defaultSorting?: SortState[]
+  showColumnSelection?: boolean
 }
 
 @Component({
     selector: 'nsv-table',
-    imports: [CommonModule],
+    imports: [NgbDropdownModule, CommonModule],
     templateUrl: './table.component.html',
     styleUrl: './table.component.css'
 })

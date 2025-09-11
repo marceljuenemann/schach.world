@@ -6,12 +6,12 @@
   - [x] UI
   - [x] Change Sorting
   - [x] Tests
-- [ ] Show actions
-- [ ] Ja / Nein for boolean
-- [ ] Support "playerData.dwz" as ID without need for valueFn
-      => Downside is it's not typed? Although really doesn't matter here.
+- [x] Show actions
+- [x] Ja / Nein for boolean
 - [ ] Show/hide columns
 - [ ] Add all columns
+- [ ] Back to first tab as default
+- [ ] Use table for overview as well
 - [ ] Publish first version
 
 - [ ] CSV Download
