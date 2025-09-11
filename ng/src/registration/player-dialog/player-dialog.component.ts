@@ -18,11 +18,10 @@ export interface PlayerDialogParams {
 }
 
 @Component({
-  selector: 'player-dialog',
-  standalone: true,
-  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent, JsonPipe],
-  templateUrl: './player-dialog.component.html',
-  styleUrl: './player-dialog.component.css'
+    selector: 'player-dialog',
+    imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent, JsonPipe],
+    templateUrl: './player-dialog.component.html',
+    styleUrl: './player-dialog.component.css'
 })
 export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player> {
   playerData: PlayerData | null = null

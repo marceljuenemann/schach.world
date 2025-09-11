@@ -10,11 +10,10 @@ export interface ConfirmationDialogParams<T> {
 }
 
 @Component({
-  selector: 'confirmation-dialog',
-  standalone: true,
-  imports: [NsvDialogFooterComponent],
-  templateUrl: './confirmation-dialog.component.html',
-  styleUrl: './confirmation-dialog.component.css'
+    selector: 'confirmation-dialog',
+    imports: [NsvDialogFooterComponent],
+    templateUrl: './confirmation-dialog.component.html',
+    styleUrl: './confirmation-dialog.component.css'
 })
 export class ConfirmationDialogComponent<T> extends NsvDialog<ConfirmationDialogParams<T>, T> {
   constructor() {

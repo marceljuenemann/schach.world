@@ -19,11 +19,10 @@ export type TableOptions<Row extends object> = {
 }
 
 @Component({
-  selector: 'nsv-table',
-  standalone: true,
-  imports: [],
-  templateUrl: './table.component.html',
-  styleUrl: './table.component.css'
+    selector: 'nsv-table',
+    imports: [],
+    templateUrl: './table.component.html',
+    styleUrl: './table.component.css'
 })
 export class NsvTableComponent implements OnInit {
   options = input.required<TableOptions<any>>();

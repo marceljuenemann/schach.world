@@ -9,11 +9,10 @@ import { NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { NsvTableComponent, TableOptions } from '../core/table/table.component';
 
 @Component({
-  selector: 'nsv-registration',
-  standalone: true,
-  imports: [NgbNavModule, NgbTooltipModule, CommonModule, NsvTableComponent],
-  templateUrl: './registration.component.html',
-  styleUrl: './registration.component.css'
+    selector: 'nsv-registration',
+    imports: [NgbNavModule, NgbTooltipModule, CommonModule, NsvTableComponent],
+    templateUrl: './registration.component.html',
+    styleUrl: './registration.component.css'
 })
 export class RegistrationComponent implements OnInit {
   @Input({alias: "config"}) configString: string
