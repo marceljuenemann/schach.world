@@ -15,24 +15,34 @@ import { NsvTableComponent, TableOptions } from '../core/table/table.component';
     styleUrl: './registration.component.css'
 })
 export class RegistrationComponent implements OnInit {
+  INFINITY = Infinity;
+
   @Input({alias: "config"}) configString: string
   @Input({alias: "players"}) playersString: string
   @Input({alias: "manager"}) isManager: boolean
 
   tournament: Tournament
   registeredPlayers: Player[] = []
-  activeTab = 3;  // TODO: DO NOT SUBMIT
+  activeTab = 1;
 
-  readonly INFINITY = Infinity;
-  readonly playerActionsTemplate = viewChild.required<TemplateRef<Player>>('playerActions');
-  readonly tableOptions: TableOptions<Player> = {
+  playerNameTemplate = viewChild.required<TemplateRef<Player>>('playerName');
+  playerActionsTemplate = viewChild.required<TemplateRef<Player>>('playerActions');
+  tableOptions: TableOptions<Player> = {
     columns: [
+      { id: 'created', label: 'Datum', visibility: 'hide' },
       { id: 'group', label: 'Turnier', valueFn: (player: Player) => player.group },
       { id: 'waitlist', label: 'Warteliste', valueFn: (player: Player) => player.waitlist ? 'Ja' : 'Nein' },
-      { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always' },
+      { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always', templateRef: this.playerNameTemplate },
       { id: 'club', label: 'Verein', valueFn: (player: Player) => player.playerData.club },
+      { id: 'gender', label: 'Geschlecht', valueFn: (player: Player) => player.playerData.gender, visibility: 'hide' },
+      { id: 'yearOfBirth', label: 'Geburtsjahr', valueFn: (player: Player) => player.playerData.yearOfBirth, defaultSortDirection: 'desc', visibility: 'hide' },
       { id: 'dwz', label: 'DWZ', valueFn: (player: Player) => player.playerData.dwz, defaultSortDirection: 'desc' },
       { id: 'elo', label: 'Elo', valueFn: (player: Player) => player.playerData.elo, defaultSortDirection: 'desc' },
+      { id: 'zps', label: 'ZPS', valueFn: (player: Player) => player.playerData.zps ? `${player.playerData.zps}-${player.playerData.memberId}` : '', visibility: 'hide' },
+      { id: 'fideId', label: 'FIDE-ID', valueFn: (player: Player) => player.playerData.fideId, visibility: 'hide' },
+      { id: 'contactName', label: 'Kontaktname', valueFn: (player: Player) => player.contactDetails.name, visibility: 'hide' },
+      { id: 'contactMail', label: 'E-Mail', valueFn: (player: Player) => player.contactDetails.email, visibility: 'hide' },
+      { id: 'id', label: 'Anmeldungs-ID', visibility: 'hide' },
       { id: 'actions', label: '', sortable: false, templateRef: this.playerActionsTemplate, visibility: 'always' }
     ],
     idFn: (player: Player) => player.id,
@@ -54,6 +64,14 @@ export class RegistrationComponent implements OnInit {
       JSON.parse(this.configString),
       JSON.parse(this.playersString)
     )
+    for (const field of this.tournament.config.additionalFields || []) {
+      this.tableOptions.columns.splice(this.tableOptions.columns.length - 2, 0, {
+        id: `additionalField-${field.id}`,
+        label: field.label,
+        valueFn: (player: Player) => player.additionalFields ? (player.additionalFields[field.id] || '') : '',
+        visibility: 'hide'
+      })
+    }
   }
 
   async openRegistration() {

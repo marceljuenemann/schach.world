@@ -139,3 +139,8 @@
 </ul>
 
 <div [ngbNavOutlet]="tabs" class="mt-3"></div>
+
+<ng-template #playerName let-player="row">
+  <b>{{ player.playerData.fideTitle }}</b>
+  {{ player.playerData.name }}
+</ng-template>

@@ -9,12 +9,14 @@
 - [x] Show actions
 - [x] Ja / Nein for boolean
 - [x] Show/hide columns
-- [ ] Add all columns
-- [ ] Back to first tab as default
+- [x] Name rendering
+- [x] Add all columns
+- [x] Back to first tab as default
 - [ ] Use table for overview as well
 - [ ] Publish first version
 
 - [ ] CSV Download
+- [ ] Responsive (Verein below Name)
 - [ ] Search
   - [ ] Using specified fields only (Name & Verein?)
 - [ ] Enum & Bool filter
