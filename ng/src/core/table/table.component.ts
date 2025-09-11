@@ -8,7 +8,7 @@ export type TableColumn<Row extends object, Value> = {
   valueFn?: (row: Row) => Value,  // Defaults to row[column.id]
   sortable?: boolean  // Defaults to true
   defaultSortDirection?: 'asc' | 'desc'  // Defaults to 'asc'
-  templateRef?: Signal<TemplateRef<any>>  // Default to displaying the value
+  templateRef?: Signal<TemplateRef<any>>  // Defaults to displaying the value
   visibility?: 'show' | 'hide' | 'always' | 'never'  // Defaults to 'show'
 }
 

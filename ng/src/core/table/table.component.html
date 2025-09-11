@@ -1,12 +1,12 @@
 @if (options().showColumnSelection) {
   <div class="mb-2 text-end">
     <div ngbDropdown autoClose="outside" class="d-inline-block">
-			<button ngbDropdownToggle type="button" class="btn btn-primary btn-sm">
+      <button ngbDropdownToggle type="button" class="btn btn-primary btn-sm">
         <span class="dashicons dashicons-admin-settings" style="vertical-align: bottom"></span>
         Spalten
-			</button>
-			<div ngbDropdownMenu>
-				@for (column of options().columns; track column.id) {
+      </button>
+      <div ngbDropdownMenu>
+        @for (column of options().columns; track column.id) {
           @if (column.visibility !== 'always' && column.visibility !== 'never') {
             <button ngbDropdownItem (click)="toggleColumnVisibility(column)">
               <span style="min-width: 16px; display: inline-block">
@@ -17,9 +17,9 @@
               {{ column.label }}
             </button>
           }
-				}
-			</div>
-		</div>
+        }
+      </div>
+    </div>
   </div>
 }
 
@@ -27,19 +27,14 @@
   <thead>
     <tr>
       @for (column of visibleColumns(); track column.id) {
-        <th
-          [class.sortable]="column.sortable !== false"
-          (click)="onHeaderClick(column)"
-        >
+        <th [class.sortable]="column.sortable !== false" (click)="onHeaderClick(column)">
           {{ column.label }}
-          @if (column.sortable !== false) {
+          @if (sortColumn() == column.id) {
             <span class="sort-indicator">
-              @if (sortColumn() == column.id) {
-                @if (sortDirection() == 'asc') {
-                  ▼
-                } @else {
-                  ▲
-                }
+              @if (sortDirection() == 'asc') {
+                ▼
+              } @else {
+                ▲
               }
             </span>
           }
