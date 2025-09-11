@@ -53,6 +53,27 @@ export class RegistrationComponent implements OnInit {
     ],
     showColumnSelection: true
   }
+  waitlistTableOptions: TableOptions<Player> = {
+    columns: this.tableOptions.columns.map(col => {
+      if (col.id == 'created') return { ...col, visibility: 'show' }
+      if (col.id == 'waitlist') return { ...col, visibility: 'never' }
+      return col
+    }),
+    idFn: this.tableOptions.idFn,
+    defaultSorting: [{ columnId: 'created', direction: 'asc' }],
+    showColumnSelection: true
+  }
+  overviewTableOptions: TableOptions<Player> = {
+    columns: [
+      { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always', templateRef: this.playerNameTemplate },
+      { id: 'club', label: 'Verein', valueFn: (player: Player) => player.playerData.club },
+      { id: 'dwz', label: 'DWZ', valueFn: (player: Player) => player.playerData.dwz, defaultSortDirection: 'desc' },
+      { id: 'elo', label: 'Elo', valueFn: (player: Player) => player.playerData.elo, defaultSortDirection: 'desc' },
+      { id: 'actions', label: '', sortable: false, templateRef: this.playerActionsTemplate, visibility: 'always' }
+    ],
+    idFn: (player: Player) => player.id,
+    defaultSorting: [{ columnId: 'dwz', direction: 'desc' }]
+  }
 
   constructor(
     private dialogService: DialogService,
