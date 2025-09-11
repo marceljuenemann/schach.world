@@ -62,6 +62,7 @@ a.anchor {
   --bs-btn-disabled-border-color: #c32811;
 }
 
+.btn-primary.show,
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {

@@ -8,7 +8,6 @@ import { NsvDialog } from '../../core/dialog/dialog';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Group, Tournament } from '../tournament';
 import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer.component';
-import { JsonPipe } from '@angular/common';
 
 export interface PlayerDialogParams {
   tournament: Tournament,
@@ -18,11 +17,10 @@ export interface PlayerDialogParams {
 }
 
 @Component({
-  selector: 'player-dialog',
-  standalone: true,
-  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent, JsonPipe],
-  templateUrl: './player-dialog.component.html',
-  styleUrl: './player-dialog.component.css'
+    selector: 'player-dialog',
+    imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent],
+    templateUrl: './player-dialog.component.html',
+    styleUrl: './player-dialog.component.css'
 })
 export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player> {
   playerData: PlayerData | null = null

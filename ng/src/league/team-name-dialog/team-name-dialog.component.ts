@@ -12,11 +12,10 @@ export interface TeamNameDialogParams {
 }
 
 @Component({
-  selector: 'team-name-dialog',
-  standalone: true,
-  imports: [NsvFormComponent, NsvDialogFooterComponent],
-  templateUrl: './team-name-dialog.component.html',
-  styleUrl: './team-name-dialog.component.css'
+    selector: 'team-name-dialog',
+    imports: [NsvFormComponent, NsvDialogFooterComponent],
+    templateUrl: './team-name-dialog.component.html',
+    styleUrl: './team-name-dialog.component.css'
 })
 export class TeamNameDialog extends NsvDialog<TeamNameDialogParams> {
 

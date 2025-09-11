@@ -25,7 +25,7 @@
 
 <ul ngbNav #tabs="ngbNav" [(activeId)]="activeTab" class="nav-tabs mt-4" [class.d-none]="!isManager">
 	<li [ngbNavItem]="1">
-		<button ngbNavLink>Anmeldungen</button>
+		<button ngbNavLink>Übersicht</button>
 		<ng-template ngbNavContent>
       @for (group of tournament!.groups.values(); track group.id) {
         @if (!group.config.hidden || this.isManager) {
@@ -40,38 +40,7 @@
           </div>
 
           @if (group.players.length) {
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Verein</th>
-                  <th>DWZ</th>
-                  <th>ELO</th>
-                  @if (isManager) {
-                    <th></th>
-                  }
-                </tr>
-              </thead>
-              <tbody>
-                @for (player of group.players; track player.id) {
-                  <tr>
-                    <td>
-                      <b>{{ player.playerData.fideTitle }}</b>
-                      {{ player.playerData.name }}
-                    </td>
-                    <td>{{ player.playerData.club }}</td>
-                    <td>{{ player.playerData.dwz }}</td>
-                    <td>{{ player.playerData.elo }}</td>
-                    @if (isManager) {
-                      <td class="text-end">
-                        <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
-                        <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
-                      </td>
-                    }
-                  </tr>
-                }
-              </tbody>
-            </table>
+            <nsv-table [options]="overviewTableOptions" [data]="group.players"></nsv-table>
           }
         }
       }
@@ -82,43 +51,11 @@
 
 		</ng-template>
 	</li>
-	<li [ngbNavItem]="2">
+  <li [ngbNavItem]="2">
 		<button ngbNavLink>Warteliste</button>
 		<ng-template ngbNavContent>
       @if (tournament.waitlist.length) {
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Datum</th>
-              <th>Turnier</th>
-              <th>Name</th>
-              <th>Verein</th>
-              <th>DWZ</th>
-              <th>ELO</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            @for (player of tournament.waitlist; track player.id) {
-              <tr>
-                <td>{{ player.created }}</td>
-                <td>{{ player.group }}</td>
-                <td>
-                  <b>{{ player.playerData.fideTitle }}</b>
-                  {{ player.playerData.name }}
-                </td>
-                <td>{{ player.playerData.club }}</td>
-                <td>{{ player.playerData.dwz }}</td>
-                <td>{{ player.playerData.elo }}</td>
-                <td class="text-end" style="min-width: 75px">
-                  <span (click)="confirmWaitlistPlayer(player)" class="dashicons dashicons-yes-alt" role="button"></span>
-                  <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
-                  <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
-                </td>
-              </tr>
-            }
-          </tbody>
-        </table>
+        <nsv-table [options]="waitlistTableOptions" [data]="tournament.waitlist"></nsv-table>
       } @else {
         <div class="alert alert-success mt-3">
           Keine Anmeldungen auf der Warteliste
@@ -126,6 +63,27 @@
       }
 		</ng-template>
 	</li>
+	<li [ngbNavItem]="3">
+		<button ngbNavLink>Details</button>
+		<ng-template ngbNavContent>
+      <nsv-table [options]="tableOptions" [data]="tournament.players"></nsv-table>
+    </ng-template>
+  </li>
 </ul>
 
 <div [ngbNavOutlet]="tabs" class="mt-3"></div>
+
+<ng-template #playerName let-player="row">
+  <b>{{ player.playerData.fideTitle }}</b>
+  {{ player.playerData.name }}
+</ng-template>
+
+<ng-template #playerActions let-player="row">
+  @if (isManager) {
+    @if (activeTab == 2) {
+      <span (click)="confirmWaitlistPlayer(player)" class="dashicons dashicons-yes-alt" role="button"></span>
+    }
+    <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
+    <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
+  }
+</ng-template>
