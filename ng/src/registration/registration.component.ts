@@ -37,7 +37,7 @@ export class RegistrationComponent implements OnInit {
       { id: 'gender', label: 'Geschlecht', valueFn: (player: Player) => player.playerData.gender, visibility: 'hide' },
       { id: 'yearOfBirth', label: 'Geburtsjahr', valueFn: (player: Player) => player.playerData.yearOfBirth, defaultSortDirection: 'desc', visibility: 'hide' },
       { id: 'dwz', label: 'DWZ', valueFn: (player: Player) => player.playerData.dwz, defaultSortDirection: 'desc' },
-      { id: 'elo', label: 'Elo', valueFn: (player: Player) => player.playerData.elo, defaultSortDirection: 'desc' },
+      { id: 'elo', label: 'ELO', valueFn: (player: Player) => player.playerData.elo, defaultSortDirection: 'desc' },
       { id: 'zps', label: 'ZPS', valueFn: (player: Player) => player.playerData.zps ? `${player.playerData.zps}-${player.playerData.memberId}` : '', visibility: 'hide' },
       { id: 'fideId', label: 'FIDE-ID', valueFn: (player: Player) => player.playerData.fideId, visibility: 'hide' },
       { id: 'contactName', label: 'Kontaktname', valueFn: (player: Player) => player.contactDetails.name, visibility: 'hide' },
