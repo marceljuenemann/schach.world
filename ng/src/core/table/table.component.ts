@@ -3,9 +3,9 @@ import { Component, OnInit, computed, signal, input, linkedSignal } from '@angul
 export type TableColumn<Row extends object, Value> = {
   id: string,
   label: string,
-  valueFn?: (row: Row) => Value,
-  sortable?: boolean  // Default to true
-  defaultSortDirection?: 'asc' | 'desc'  // Default to 'asc'
+  valueFn?: (row: Row) => Value,  // Defaults to row[column.id]
+  sortable?: boolean  // Defaults to true
+  defaultSortDirection?: 'asc' | 'desc'  // Defaults to 'asc'
 }
 
 export type SortState = {
@@ -29,6 +29,7 @@ export class NsvTableComponent {
   options = input.required<TableOptions<any>>();
   data = input.required<object[]>();
 
+  // We use an array of SortState to allow multi-column sorting.
   sortState = linkedSignal<SortState[]>(() => {
     return this.options().defaultSorting || [];
   });
@@ -61,9 +62,8 @@ export class NsvTableComponent {
       if (this.sortColumn() === column.id) {
         direction = this.sortDirection() === 'asc' ? 'desc' : 'asc';
       }
-      return [{ columnId: column.id, direction } as SortState].concat(
-        sortState.filter(s => s.columnId !== column.id)
-      );
+      return [{ columnId: column.id, direction } as SortState]
+        .concat(sortState.filter(s => s.columnId !== column.id));
     })
   }
 
