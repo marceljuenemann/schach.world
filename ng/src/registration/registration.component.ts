@@ -21,20 +21,24 @@ export class RegistrationComponent implements OnInit {
 
   tournament: Tournament
   registeredPlayers: Player[] = []
-  activeTab = 1;
+  activeTab = 3;  // TODO: DO NOT SUBMIT
 
   readonly INFINITY = Infinity;
   readonly tableOptions: TableOptions<Player> = {
     columns: [
       { id: 'group', label: 'Turnier', valueFn: (player: Player) => player.group },
+      { id: 'waitlist', label: 'Warteliste' },
       { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name },
       { id: 'club', label: 'Verein', valueFn: (player: Player) => player.playerData.club },
       { id: 'dwz', label: 'DWZ', valueFn: (player: Player) => player.playerData.dwz },
       { id: 'elo', label: 'Elo', valueFn: (player: Player) => player.playerData.elo },
-      { id: 'waitlist', label: 'Warteliste' }
     ],
     idFn: (player: Player) => player.id,
-    defaultSorting: { columnId: 'club', direction: 'desc' }
+    defaultSorting: [
+      { columnId: 'group', direction: 'asc' },
+      { columnId: 'waitlist', direction: 'asc' },
+      { columnId: 'name', direction: 'asc' }
+    ]
   }
 
   constructor(

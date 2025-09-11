@@ -4,22 +4,18 @@
       @for (column of options().columns; track column.id) {
         <th
           [class.sortable]="column.sortable"
-          [class.sorted]="isSorted(column)"
-          [class.asc]="getSortDirection(column) === 'asc'"
-          [class.desc]="getSortDirection(column) === 'desc'"
           (click)="onHeaderClick(column)"
         >
           {{ column.label }}
           @if (column.sortable !== false) {
             <span class="sort-indicator">
-              <!-- TODO: Nicer indicators -->
-              @if (getSortDirection(column) === 'asc') {
+              <!-- TODO: Nicer indicators
+              @if ('getSortDirection(column)' === 'asc') {
                 ↑
-              } @else if (getSortDirection(column) === 'desc') {
-                ↓
               } @else {
                 ↕
               }
+                -->
             </span>
           }
         </th>

@@ -2,7 +2,7 @@
 
 - [x] track by row ID (add option)
 - [ ] Sorting
-  - [ ] Default Sorting
+  - [x] Default Sorting
   - [ ] UI
   - [ ] Change Sorting
 - [ ] Show/hide columns
