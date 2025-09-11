@@ -9,6 +9,7 @@ export type TableColumn<Row extends object, Value> = {
   sortable?: boolean  // Defaults to true
   defaultSortDirection?: 'asc' | 'desc'  // Defaults to 'asc'
   templateRef?: Signal<TemplateRef<any>>  // Default to displaying the value
+  visibility?: 'show' | 'hide' | 'always' | 'never'  // Defaults to 'show'
 }
 
 export type SortState = {
@@ -32,6 +33,8 @@ export type TableOptions<Row extends object> = {
 export class NsvTableComponent {
   options = input.required<TableOptions<any>>();
   data = input.required<object[]>();
+
+  columnVisibility = new Map<string, boolean>();
 
   // We use an array of SortState to allow multi-column sorting.
   sortState = linkedSignal<SortState[]>(() => {
@@ -81,5 +84,21 @@ export class NsvTableComponent {
 
   getValue(row: any, column: TableColumn<any, any>) {
     return column.valueFn ? column.valueFn(row) : row[column.id];
+  }
+
+  isColumnVisible(column: TableColumn<any, any>): boolean {
+    if (this.columnVisibility.has(column.id)) {
+      return this.columnVisibility.get(column.id)!;
+    } else {
+      return !column.visibility || column.visibility == 'show' || column.visibility == 'always';
+    }
+  }
+
+  toggleColumnVisibility(column: TableColumn<any, any>) {
+    this.columnVisibility.set(column.id, !this.isColumnVisible(column));
+  }
+
+  visibleColumns() {
+    return this.options().columns.filter(column => this.isColumnVisible(column));
   }
 }

@@ -1,13 +1,23 @@
 @if (options().showColumnSelection) {
   <div class="mb-2 text-end">
-    <div ngbDropdown class="d-inline-block">
-			<button ngbDropdownToggle type="button" class="btn btn-primary btn-sm" id="dropdownBasic1">
-				Spalten
+    <div ngbDropdown autoClose="outside" class="d-inline-block">
+			<button ngbDropdownToggle type="button" class="btn btn-primary btn-sm">
+        <span class="dashicons dashicons-admin-settings" style="vertical-align: bottom"></span>
+        Spalten
 			</button>
-			<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-				<button ngbDropdownItem>Action - 1</button>
-				<button ngbDropdownItem>Another Action</button>
-				<button ngbDropdownItem>Something else is here</button>
+			<div ngbDropdownMenu>
+				@for (column of options().columns; track column.id) {
+          @if (column.visibility !== 'always' && column.visibility !== 'never') {
+            <button ngbDropdownItem (click)="toggleColumnVisibility(column)">
+              <span style="min-width: 16px; display: inline-block">
+                @if (isColumnVisible(column)) {
+                  ✓
+                }
+              </span>
+              {{ column.label }}
+            </button>
+          }
+				}
 			</div>
 		</div>
   </div>
@@ -16,7 +26,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      @for (column of options().columns; track column.id) {
+      @for (column of visibleColumns(); track column.id) {
         <th
           [class.sortable]="column.sortable !== false"
           (click)="onHeaderClick(column)"
@@ -40,7 +50,7 @@
   <tbody>
     @for (row of sortedData(); track options().idFn(row)) {
       <tr>
-        @for (column of options().columns; track column.id) {
+        @for (column of visibleColumns(); track column.id) {
           <td>
             @if (column.templateRef) {
               <ng-container [ngTemplateOutlet]="column.templateRef()" [ngTemplateOutletContext]="{ row: row }"></ng-container>

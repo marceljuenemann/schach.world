@@ -29,11 +29,11 @@ export class RegistrationComponent implements OnInit {
     columns: [
       { id: 'group', label: 'Turnier', valueFn: (player: Player) => player.group },
       { id: 'waitlist', label: 'Warteliste', valueFn: (player: Player) => player.waitlist ? 'Ja' : 'Nein' },
-      { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name },
+      { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always' },
       { id: 'club', label: 'Verein', valueFn: (player: Player) => player.playerData.club },
       { id: 'dwz', label: 'DWZ', valueFn: (player: Player) => player.playerData.dwz, defaultSortDirection: 'desc' },
       { id: 'elo', label: 'Elo', valueFn: (player: Player) => player.playerData.elo, defaultSortDirection: 'desc' },
-      { id: 'actions', label: '', sortable: false, templateRef: this.playerActionsTemplate }
+      { id: 'actions', label: '', sortable: false, templateRef: this.playerActionsTemplate, visibility: 'always' }
     ],
     idFn: (player: Player) => player.id,
     defaultSorting: [

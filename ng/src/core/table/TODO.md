@@ -8,7 +8,7 @@
   - [x] Tests
 - [x] Show actions
 - [x] Ja / Nein for boolean
-- [ ] Show/hide columns
+- [x] Show/hide columns
 - [ ] Add all columns
 - [ ] Back to first tab as default
 - [ ] Use table for overview as well
