@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, TemplateRef, viewChild } from '@angular/core';
 import { Player } from './types';
 import { PlayerDialogComponent, PlayerDialogParams } from './player-dialog/player-dialog.component';
 import { DialogService } from '../core/dialog/dialog.service';
@@ -24,14 +24,16 @@ export class RegistrationComponent implements OnInit {
   activeTab = 3;  // TODO: DO NOT SUBMIT
 
   readonly INFINITY = Infinity;
+  readonly playerActionsTemplate = viewChild.required<TemplateRef<Player>>('playerActions');
   readonly tableOptions: TableOptions<Player> = {
     columns: [
       { id: 'group', label: 'Turnier', valueFn: (player: Player) => player.group },
-      { id: 'waitlist', label: 'Warteliste', defaultSortDirection: 'desc' },
+      { id: 'waitlist', label: 'Warteliste', valueFn: (player: Player) => player.waitlist ? 'Ja' : 'Nein' },
       { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name },
       { id: 'club', label: 'Verein', valueFn: (player: Player) => player.playerData.club },
       { id: 'dwz', label: 'DWZ', valueFn: (player: Player) => player.playerData.dwz, defaultSortDirection: 'desc' },
       { id: 'elo', label: 'Elo', valueFn: (player: Player) => player.playerData.elo, defaultSortDirection: 'desc' },
+      { id: 'actions', label: '', sortable: false, templateRef: this.playerActionsTemplate }
     ],
     idFn: (player: Player) => player.id,
     defaultSorting: [

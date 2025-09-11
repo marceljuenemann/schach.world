@@ -1,4 +1,5 @@
-import { Component, OnInit, computed, signal, input, linkedSignal } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, TemplateRef, computed, input, linkedSignal, Signal } from '@angular/core';
 
 export type TableColumn<Row extends object, Value> = {
   id: string,
@@ -6,6 +7,7 @@ export type TableColumn<Row extends object, Value> = {
   valueFn?: (row: Row) => Value,  // Defaults to row[column.id]
   sortable?: boolean  // Defaults to true
   defaultSortDirection?: 'asc' | 'desc'  // Defaults to 'asc'
+  templateRef?: Signal<TemplateRef<any>>  // Default to displaying the value
 }
 
 export type SortState = {
@@ -21,7 +23,7 @@ export type TableOptions<Row extends object> = {
 
 @Component({
     selector: 'nsv-table',
-    imports: [],
+    imports: [CommonModule],
     templateUrl: './table.component.html',
     styleUrl: './table.component.css'
 })

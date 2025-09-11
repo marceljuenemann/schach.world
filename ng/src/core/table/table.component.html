@@ -27,7 +27,11 @@
       <tr>
         @for (column of options().columns; track column.id) {
           <td>
-            {{ getValue(row, column) }}
+            @if (column.templateRef) {
+              <ng-container [ngTemplateOutlet]="column.templateRef()" [ngTemplateOutletContext]="{ row: row }"></ng-container>
+            } @else {
+              {{ getValue(row, column) }}
+            }
           </td>
         }
       </tr>

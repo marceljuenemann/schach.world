@@ -131,6 +131,10 @@
 		<ng-template ngbNavContent>
       <nsv-table [options]="tableOptions" [data]="tournament.players"></nsv-table>
     </ng-template>
+    <ng-template #playerActions let-player="row">
+      <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
+      <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
+    </ng-template>
   </li>
 </ul>
 
