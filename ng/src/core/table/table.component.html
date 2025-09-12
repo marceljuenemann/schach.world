@@ -1,25 +1,34 @@
-@if (options().showColumnSelection) {
+@if (options().showColumnSelection || options().csvFileName) {
   <div class="mb-2 text-end">
-    <div ngbDropdown autoClose="outside" class="d-inline-block">
-      <button ngbDropdownToggle type="button" class="btn btn-primary btn-sm">
-        <span class="dashicons dashicons-admin-settings" style="vertical-align: bottom"></span>
-        Spalten
+    @if (options().csvFileName) {
+      <button type="button" class="btn btn-primary btn-sm d-inline-block" style="margin-right: 8px" (click)="exportCsv()">
+        <span class="dashicons dashicons-download" style="vertical-align: bottom"></span>
+        CSV
       </button>
-      <div ngbDropdownMenu>
-        @for (column of options().columns; track column.id) {
-          @if (column.visibility !== 'always' && column.visibility !== 'never') {
-            <button ngbDropdownItem (click)="toggleColumnVisibility(column)">
-              <span style="min-width: 16px; display: inline-block">
-                @if (isColumnVisible(column)) {
-                  ✓
-                }
-              </span>
-              {{ column.label }}
-            </button>
+    }
+
+    @if (options().showColumnSelection) {
+      <div ngbDropdown autoClose="outside" class="d-inline-block">
+        <button ngbDropdownToggle type="button" class="btn btn-primary btn-sm">
+          <span class="dashicons dashicons-admin-settings" style="vertical-align: bottom"></span>
+          Spalten
+        </button>
+        <div ngbDropdownMenu>
+          @for (column of options().columns; track column.id) {
+            @if (column.visibility !== 'always' && column.visibility !== 'never') {
+              <button ngbDropdownItem (click)="toggleColumnVisibility(column)">
+                <span style="min-width: 16px; display: inline-block">
+                  @if (isColumnVisible(column)) {
+                    ✓
+                  }
+                </span>
+                {{ column.label }}
+              </button>
+            }
           }
-        }
+        </div>
       </div>
-    </div>
+    }
   </div>
 }
 

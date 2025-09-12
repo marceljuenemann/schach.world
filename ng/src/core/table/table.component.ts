@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, TemplateRef, computed, input, linkedSignal, Signal } from '@angular/core';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { downloadCsv } from '../util';
 
 export type TableColumn<Row extends object, Value> = {
   id: string,
@@ -10,6 +11,7 @@ export type TableColumn<Row extends object, Value> = {
   defaultSortDirection?: 'asc' | 'desc'  // Defaults to 'asc'
   templateRef?: Signal<TemplateRef<any>>  // Defaults to displaying the value
   visibility?: 'show' | 'hide' | 'always' | 'never'  // Defaults to 'show'
+  skipExport?: boolean  // Defaults to false
 }
 
 export type SortState = {
@@ -19,9 +21,10 @@ export type SortState = {
 
 export type TableOptions<Row extends object> = {
   columns: TableColumn<Row, any>[]
-  idFn: (row: Row) => string | number
-  defaultSorting?: SortState[]
-  showColumnSelection?: boolean
+  idFn: (row: Row) => string | number  // Function to get a unique ID for each row.
+  defaultSorting?: SortState[]  // Defaults to no sorting.
+  showColumnSelection?: boolean  // If enabled, user can configure visible columns.
+  csvFileName?: (data: any[][]) => string  // If provided, CSV export is enabled.
 }
 
 @Component({
@@ -100,5 +103,13 @@ export class NsvTableComponent {
 
   visibleColumns() {
     return this.options().columns.filter(column => this.isColumnVisible(column));
+  }
+
+  exportCsv() {
+    const columns = this.options().columns.filter(col => !col.skipExport);
+    const rows = this.sortedData().map(row => {
+      return columns.map(col => this.getValue(row, col));
+    });
+    downloadCsv([columns.map(col => col.label)].concat(rows), this.options().csvFileName!);
   }
 }

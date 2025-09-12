@@ -43,7 +43,7 @@ export class RegistrationComponent implements OnInit {
       { id: 'contactName', label: 'Kontaktname', valueFn: (player: Player) => player.contactDetails.name, visibility: 'hide' },
       { id: 'contactMail', label: 'E-Mail', valueFn: (player: Player) => player.contactDetails.email, visibility: 'hide' },
       { id: 'id', label: 'Anmeldungs-ID', visibility: 'hide' },
-      { id: 'actions', label: '', sortable: false, templateRef: this.playerActionsTemplate, visibility: 'always' }
+      { id: 'actions', label: '', sortable: false, templateRef: this.playerActionsTemplate, visibility: 'always', skipExport: true }
     ],
     idFn: (player: Player) => player.id,
     defaultSorting: [
@@ -51,7 +51,8 @@ export class RegistrationComponent implements OnInit {
       { columnId: 'waitlist', direction: 'asc' },
       { columnId: 'name', direction: 'asc' }
     ],
-    showColumnSelection: true
+    showColumnSelection: true,
+    csvFileName: () => `${this.tournament?.config.id}-${new Date().toISOString().substring(0, 10)}.csv`
   }
   waitlistTableOptions: TableOptions<Player> = {
     columns: this.tableOptions.columns.map(col => {
