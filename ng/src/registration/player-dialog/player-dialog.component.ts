@@ -40,7 +40,22 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     private registrationService: RegistrationService
   ) {
     super()
-    this.additionalFields.addControls(this.params.tournament.config.additionalFields || [])
+
+    // Make sure managers can still select disabled options.
+    this.additionalFields.addControls((this.params.tournament.config.additionalFields || []).map(field => {
+      if (this.params.isManager && field.options) {
+        // Defensive copy to not modify original config.
+        field = {...field, options: field.options.map(opt => {
+          if (opt.disabled) {
+            return {...opt, disabled: false, label: `${opt.label} [deaktiviert]`}
+          } else {
+            return opt
+          }
+        })}
+      }
+      return field
+    }))
+
     if (this.params.player) {
       this.formData.patchValue(this.params.player)
     } else if (this.params.lastPlayer) {
