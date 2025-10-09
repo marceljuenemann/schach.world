@@ -52,6 +52,7 @@ export class RegistrationComponent implements OnInit {
       { columnId: 'name', direction: 'asc' }
     ],
     showColumnSelection: true,
+    showRowCount: true,
     csvFileName: () => `${this.tournament?.config.id}-${new Date().toISOString().substring(0, 10)}.csv`
   }
   waitlistTableOptions: TableOptions<Player> = {
@@ -62,7 +63,8 @@ export class RegistrationComponent implements OnInit {
     }),
     idFn: this.tableOptions.idFn,
     defaultSorting: [{ columnId: 'created', direction: 'asc' }],
-    showColumnSelection: true
+    showColumnSelection: true,
+    showRowCount: true
   }
   overviewTableOptions: TableOptions<Player> = {
     columns: [

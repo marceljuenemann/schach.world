@@ -67,3 +67,10 @@
     }
   </tbody>
 </table>
+
+@if (this.options().showRowCount) {
+  <div class="mt-3 text-muted fst-italic">
+    {{ this.sortedData().length }}
+    {{ this.sortedData().length != 1 ? 'Einträge' : 'Eintrag' }}
+  </div>
+}

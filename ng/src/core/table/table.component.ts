@@ -25,6 +25,7 @@ export type TableOptions<Row extends object> = {
   defaultSorting?: SortState[]  // Defaults to no sorting.
   showColumnSelection?: boolean  // If enabled, user can configure visible columns.
   csvFileName?: (data: any[][]) => string  // If provided, CSV export is enabled.
+  showRowCount?: boolean  // If true, show the number of rows below the table. Defaults to false.
 }
 
 @Component({
