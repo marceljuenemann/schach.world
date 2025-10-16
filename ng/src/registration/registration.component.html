@@ -9,8 +9,8 @@
 
 <div>
   <!-- Tooltip on a span as disabled buttons don't support tooltips. -->
-  <span [ngbTooltip]="tournament!.deadlinePassed ? 'Anmeldeschluss verstrichen' : null" placement="bottom">
-    <button (click)="openRegistration()" [disabled]="tournament!.deadlinePassed" type="button" class="btn btn-primary">
+  <span [ngbTooltip]="this.mayOpenRegistration ? null : 'Anmeldeschluss verstrichen'" placement="bottom">
+    <button (click)="openRegistration()" [disabled]="!mayOpenRegistration" type="button" class="btn btn-primary">
       <span class="dashicons dashicons-plus" style="vertical-align: bottom"></span>
       Anmelden
     </button>

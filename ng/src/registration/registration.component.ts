@@ -24,6 +24,7 @@ export class RegistrationComponent implements OnInit {
   tournament: Tournament
   registeredPlayers: Player[] = []
   activeTab = 1;
+  mayOpenRegistration: boolean;
 
   playerNameTemplate = viewChild.required<TemplateRef<Player>>('playerName');
   playerActionsTemplate = viewChild.required<TemplateRef<Player>>('playerActions');
@@ -88,6 +89,7 @@ export class RegistrationComponent implements OnInit {
       JSON.parse(this.configString),
       JSON.parse(this.playersString)
     )
+    this.mayOpenRegistration = !this.tournament.deadlinePassed || this.isManager
     for (const field of this.tournament.config.additionalFields || []) {
       this.tableOptions.columns.splice(this.tableOptions.columns.length - 2, 0, {
         id: `additionalField-${field.id}`,
