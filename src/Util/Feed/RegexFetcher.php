@@ -13,7 +13,7 @@ final class RegexFetcher implements ArticleFetcher
     private string $dateFormat = 'd.m.Y',
   ) {}
 
-  public function fetch(): iterable
+  public function fetch(string $provider): iterable
   {
     $html = @file_get_contents($this->url);
     if ($html === false) {
@@ -51,6 +51,7 @@ final class RegexFetcher implements ArticleFetcher
       }
 
       yield new Article(
+        provider: $provider,
         url: $this->url,
         title: $title,
         date: $date,

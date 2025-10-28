@@ -8,5 +8,5 @@ interface ArticleFetcher
    *
    * @return iterable<Article>
    */
-  public function fetch(): iterable;
+  public function fetch(string $provider): iterable;
 }

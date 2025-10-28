@@ -10,11 +10,6 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-/**
- * TODO:
- * - Log or mail errors
- * - Render as HTML
- */
 #[AsCommand(name: 'nsv:headlines')]
 class HeadlinesCommand extends Command
 {
@@ -47,7 +42,7 @@ class HeadlinesCommand extends Command
         titleGroup: 1,
         dateGroup: 2,
         dateFormat: 'd.m.Y'
-      ),      
+      ),
     ];
   }
 
@@ -58,9 +53,17 @@ class HeadlinesCommand extends Command
 
   protected function execute(InputInterface $input, OutputInterface $output): int {
     $provider = $input->getArgument('provider');
+    $articles = iterator_to_array($this->fetchArticles($provider));
 
-    foreach ($this->fetchArticles($provider) as $article) {
-      $output->writeln($article->date->format('Y-m-d') . ' - ' . $article->title);
+    // Sort by date (newest first)
+    usort($articles, function ($a, $b) {
+      $at = $a->date->getTimestamp();
+      $bt = $b->date->getTimestamp();
+      return $bt <=> $at;
+    });
+
+    foreach ($articles as $article) {
+      $output->writeln($article->provider . ' - ' . $article->date->format('Y-m-d') . ' - ' . $article->title);
     }
 
     return Command::SUCCESS;
@@ -83,7 +86,7 @@ class HeadlinesCommand extends Command
       }
 
       $articleCount = 0;
-      foreach ($fetcher->fetch() as $article) {
+      foreach ($fetcher->fetch($name) as $article) {
         if ($article->date < $thirtyDaysAgo) {
           break;
         }

@@ -9,7 +9,7 @@ final class RssFetcher implements ArticleFetcher
     private readonly string $url,
   ) {}
 
-  public function fetch(): iterable
+  public function fetch(string $provider): iterable
   {
     $xmlContent = file_get_contents($this->url);
     if ($xmlContent === false) {
@@ -36,6 +36,7 @@ final class RssFetcher implements ArticleFetcher
       }
 
       yield new Article(
+        provider: $provider,
         url: $link,
         title: $title,
         date: $date,
