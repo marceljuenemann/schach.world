@@ -49,6 +49,7 @@ class HeadlinesCommand extends Command
   protected function configure(): void
   {
     $this->addArgument('provider', InputArgument::OPTIONAL, 'Specific provider to fetch from (DSB, NSJ, (1), ...)');
+    $this->addOption('render', null, null, 'Render output as HTML');
   }
 
   protected function execute(InputInterface $input, OutputInterface $output): int {
@@ -64,6 +65,10 @@ class HeadlinesCommand extends Command
 
     foreach ($articles as $article) {
       $output->writeln($article->provider . ' - ' . $article->date->format('Y-m-d') . ' - ' . $article->title);
+    }
+
+    if ($input->getOption('render')) {
+      $this->render($articles);
     }
 
     return Command::SUCCESS;
@@ -99,5 +104,25 @@ class HeadlinesCommand extends Command
         }
       }
     }
+  }
+
+  /**
+   * Renders articles as a simple HTML file to be included in the sidebar.
+   */
+  private function render(array $articles): void
+  {
+    $filename = $this->projectDir . '/data/headlines/headlines.html';
+    $fh = fopen($filename, "w");
+    fputs($fh, "<table cellpadding='0'>");
+
+    foreach( $articles as $entry )
+    {
+      $title = htmlspecialchars($entry->title, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+      $url = htmlspecialchars($entry->url, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+      fputs ( $fh, "<tr><td style='font-size: smaller'>{$entry->provider}</td><td style='padding-bottom: 3px'><a href='{$url}'>{$title}</a></td></tr>" );
+    }
+
+    fputs ( $fh, "</table>" );
+    fclose ( $fh );
   }
 }
