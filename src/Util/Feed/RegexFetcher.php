@@ -19,6 +19,7 @@ final class RegexFetcher implements ArticleFetcher
     if ($html === false) {
       return;
     }
+    $html = str_replace("&#8203;", "", $html); // Remove zero-width spaces
 
     $matches = [];
     if (!preg_match_all($this->pattern, $html, $matches, PREG_SET_ORDER)) {

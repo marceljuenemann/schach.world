@@ -2,17 +2,16 @@
 
 namespace Nsv\WebApp\Command;
 
+use Nsv\Util\Feed\RegexFetcher;
+use Nsv\Util\Feed\RssFetcher;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Nsv\Util\Feed\RssFetcher;
 
 /**
  * TODO:
- * - Limit number of articles per provider
- * - Other districts
  * - Log or mail errors
  * - Render as HTML
  */
@@ -27,9 +26,28 @@ class HeadlinesCommand extends Command
       'DSB' => new RssFetcher('https://www.schachbund.de/share/dsb-feed.xml'),
       'NSJ' => new RssFetcher('http://www.nsj-online.de/wordpress/feed/'),
       '(1)' => new RssFetcher('https://schachbezirk-hannover.de/feed/'),
+      /*
+      '(2)' => new RegexFetcher(
+        url: 'https://www.schachbezirk-braunschweig.de/',
+        pattern: '/<h1[^>]*>([^<]+)<\/h1>/is',
+      ),
+      */
       '(3)' => new RssFetcher('https://www.schachbezirk3.de/rss'),
-      //'Bezirk4' => new RssFetcher('https://www.schachbezirk4.de/rss'),
+      '(4)' => new RegexFetcher(
+        url: 'http://schachbezirk4.de/b4_home.php',
+        pattern: '/<td><h3>([^<]+)<\/h3><\/td>[\s]*<td align="right"><h3>(\d\d\.\d\d\.\d\d\d\d)<\/h3><\/td>/i',
+        titleGroup: 1,
+        dateGroup: 2,
+        dateFormat: 'd.m.Y'
+      ),
       '(5)' => new RssFetcher('http://sboo.de/index.php?format=feed&type=rss'),
+      '(6)' => new RegexFetcher(
+        url: 'http://www.schachbezirk-osnabrueck-emsland.de/news/index.php?rubrik=1',
+        pattern: '/<h3[^>]*><a[^>]*>([^<]+)<\/a><\/h3><p class=\"vorschau\">(\d\d\.\d\d\.\d\d\d\d):/i',
+        titleGroup: 1,
+        dateGroup: 2,
+        dateFormat: 'd.m.Y'
+      ),      
     ];
   }
 
