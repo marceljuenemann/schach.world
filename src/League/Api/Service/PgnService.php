@@ -32,9 +32,9 @@ class PgnService {
 
     $event = $division->league->name . ' - ' . $division->name;
     $date = $round->date;
+    $table = 1;
  
     foreach ($pairings as $pairing) {
-      $table = 1;
       $host = $pairing->host ?? $pairing->team1;
       $site = $host->venueCity ?: '?';
       $pairingDate = $pairing->customDate ?? $date;
