@@ -63,7 +63,7 @@ add_action('init', function() {
 
   // Headlines Widget.
   add_shortcode('nsv-schlagzeilen', function() {
-    $content = utf8_encode(file_get_contents(ABSPATH . '../core/modules/schlagzeilen.html'));
+    $content = file_get_contents(ABSPATH . '../../data/headlines/headlines.html');
     return "<div class='nsv-widget' id='widget-schlagzeilen'>$content</div>";
   });
 
