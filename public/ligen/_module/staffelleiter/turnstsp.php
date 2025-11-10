@@ -89,7 +89,7 @@
     // Über bereits eingegeben Paarungen informieren
     if ( $showInfobox )
     {
-        echo "<div class='sed_infomeldung'>Paarungen, deren Ergebnisse bereits eingegeben wurden, werden in dieser Ansicht nicht angezeigt! Um jene Paarungen zu bearbeiten, müssen Sie die Ergebnisse zun&auml;chst &uuml;ber die Paarungseinstellungen l&ouml;schen.</div>";
+        echo "<div class='sed_infomeldung'>Paarungen, deren Ergebnisse bereits eingegeben wurden, werden in dieser Ansicht nicht angezeigt! Um jene Paarungen zu bearbeiten, m&uuml;ssen Sie die Ergebnisse zun&auml;chst &uuml;ber die Paarungseinstellungen l&ouml;schen.</div>";
     }
 
 

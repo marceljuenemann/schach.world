@@ -22,8 +22,8 @@
     // Spiel verlegen
     if ( isset ( $_POST ['extra_verlegung'] ) )
     {
-        $value = "null";
-        if ( $_POST ['extra_verlegung_aktiv'] == "1" )
+        $value = null;
+        if ( isset( $_POST ['extra_verlegung_aktiv']) && $_POST ['extra_verlegung_aktiv'] == "1" )
         {
             if ( $_POST ['extra_verlegung_unbekannt'] == "1" )
                 $value = "20201224";
