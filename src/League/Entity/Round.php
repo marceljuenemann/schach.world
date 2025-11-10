@@ -45,6 +45,10 @@ class Round
     return $this->uri() . 'pdf/';
   }
 
+  public function pgnUri(): string {
+    return $this->uri() . 'pgn/';
+  }
+
   public function apiUri(): string {
     return $this->division->league->uri() . "api/divisions/{$this->division->path()}/rounds/{$this->round}/";
   }

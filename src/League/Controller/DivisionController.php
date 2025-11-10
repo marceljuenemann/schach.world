@@ -13,6 +13,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Nsv\League\Api\Service\StatisticsService;
 use Doctrine\ORM\EntityManagerInterface;
+use Nsv\League\Api\Service\PgnService;
 
 /**
  * Controller for division specific routes.
@@ -59,6 +60,15 @@ class DivisionController extends AbstractLeagueController {
     $body = ob_get_clean();
     $response = new Response($body);
     $response->setCharset(Encoding::CHARSET);
+    return $response;
+  }
+
+  #[Route('{division}/{round}/pgn/', name: 'pgn')]
+  public function pgn(PgnService $pgnService, int $round): Response {
+    $response = new Response($pgnService->renderPgn($this->division, $this->division->round($round)));
+    $filename = $this->division->path() . '-R' . $round . '.pgn';
+    $response->headers->set('Content-Disposition', 'attachment; filename="' . $filename . '"');
+    $response->headers->set('Content-Type', 'application/x-chess-pgn; charset=' . Encoding::CHARSET_UTF8);
     return $response;
   }
 
