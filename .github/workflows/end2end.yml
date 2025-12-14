@@ -21,9 +21,9 @@ jobs:
         run: |
           cd dev
           docker compose up -d
-      - name: Wait for Apache
+      - name: Check for Apache
         run: |
-          until curl -sSf https://localhost:6464/core/nsv2020/images/nsv.png > /dev/null; do sleep 2; done
+          curl -sSf --insecure https://localhost:6464/core/nsv2020/images/nsv.png > /dev/null
       - name: Run tests
         run: |
           docker exec -it nsv-webserver ls -lash
