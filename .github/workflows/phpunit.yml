@@ -3,15 +3,15 @@ name: phpunit
 on:
   push:
     branches:
+      - main
       - php-ci
-    #paths:
-    #  - '**/*.php'
   pull_request:
-    paths:
-      - '**/*.php'
+    branches:
+      - main
+      - php-ci
 
 jobs:
-  test:
+  phpunit:
     runs-on: ubuntu-latest
     services:
       database:
