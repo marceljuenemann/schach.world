@@ -28,15 +28,6 @@ jobs:
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - uses: actions/checkout@v4
-      #- name: Install MySQL client
-      #  run: sudo apt-get update && sudo apt-get install -y mysql-client
-      - name: Check databases
-        run: mysql -h 127.0.0.1 -P 3306 -u root -proot -e 'SHOW DATABASES;'
-      - name: Initialize database
-        run: |
-          mysql -h 127.0.0.1 -P 3306 -u root -proot nsv-test-ligen < ./dev/dbinit/90-test-ligen-structure.sql && \
-          mysql -h 127.0.0.1 -P 3306 -u root -proot nsv-test-ligen < ./dev/dbinit/91-test-ligen-data.sql
-
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -44,11 +35,16 @@ jobs:
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-interaction --no-progress --no-scripts
 
+      - name: Initialize database
+        run: |
+          mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-test-ligen < ./dev/dbinit/90-test-ligen-structure.sql && \
+          mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-test-ligen < ./dev/dbinit/91-test-ligen-data.sql
       - name: Prepare test fixtures
         run: |
-          ./bin/console --env=test --em=league doctrine:fixtures:load
-        env:
-          LEAGUE_DATABASE_URL: "mysql://root:root@127.0.0.1:3306/nsv-test-ligen?serverVersion=5.78&charset=latin1"
+          ./bin/console --env=test --em=league doctrine:fixtures:load --no-interaction
+        #env:
+        #  LEAGUE_DATABASE_URL: "mysql://docker:docker@127.0.0.1:3306/nsv-test-ligen?serverVersion=5.78&charset=latin1"
+
       - name: Run tests
         run: |
           ./bin/phpunit
