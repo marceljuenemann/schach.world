@@ -4,6 +4,7 @@ Nsv\League\Api\Model\MatchDay Object
     [date] => 2025-01-01
     [uri] => /ligen/test/test-division/1/
     [uriPdf] => /ligen/test/test-division/1/pdf/
+    [uriPgn] => /ligen/test/test-division/1/pgn/
     [uriApi] => /ligen/test/api/divisions/test-division/rounds/1/
     [pairings] => Array
         (
@@ -217,6 +218,7 @@ Nsv\League\Api\Model\MatchDay Object
                     [date] => 2024-02-02
                     [uri] => /ligen/test/test-division/2/
                     [uriPdf] => /ligen/test/test-division/2/pdf/
+                    [uriPgn] => /ligen/test/test-division/2/pgn/
                     [uriApi] => /ligen/test/api/divisions/test-division/rounds/2/
                     [pairings] => Array
                         (
@@ -261,6 +263,7 @@ Nsv\League\Api\Model\MatchDay Object
                     [date] => 2024-02-02
                     [uri] => /ligen/test/test-division/4/
                     [uriPdf] => /ligen/test/test-division/4/pdf/
+                    [uriPgn] => /ligen/test/test-division/4/pgn/
                     [uriApi] => /ligen/test/api/divisions/test-division/rounds/4/
                     [pairings] => Array
                         (
@@ -274,6 +277,7 @@ Nsv\League\Api\Model\MatchDay Object
                     [date] => 2025-01-01
                     [uri] => /ligen/test/test-division/1/
                     [uriPdf] => /ligen/test/test-division/1/pdf/
+                    [uriPgn] => /ligen/test/test-division/1/pgn/
                     [uriApi] => /ligen/test/api/divisions/test-division/rounds/1/
                     [pairings] => Array
                         (
