@@ -155,7 +155,7 @@ class DivisionController extends AbstractLeagueController {
    * Returns the tab navigation configuration for division pages.
    */
   // TODO: Might no longer need this?
-  private function divisionTabs(string $active = null): array {
+  private function divisionTabs(string | null $active = null): array {
     $tabs [] = [
       'label' => 'Spieltage',
       'uri' => $this->league->uri() . $this->division->path() . '/',  // TODO: use uri()

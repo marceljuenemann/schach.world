@@ -5,7 +5,6 @@ namespace Nsv\League\Core;
 use Doctrine\ORM\EntityManagerInterface;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
-use Nsv\WebApp\Core\WordPress\Auth;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -34,17 +33,13 @@ class LegacySystem
     if ($this->intialized) return;
     $this->intialized = true;
 
-    if (Auth::isAdmin()) {
-      $_GET['debugme'] = 1;
-    }
-
     chdir($this->projectDir . '/public/ligen/_inc');
     global $globals;
     $globals['basedir'] = '..';
     $globals['bridge'] = $this;
 
+    require_once ( "../config.inc.php" );
     require_once ( "main.inc.php" );
-    require_once ( "connect.inc.php" );
 
     // Don't send Content-Type header: https://www.saotn.org/php-56-default_charset-change-may-break-html-output/
     ini_set( 'default_charset', "" );
