@@ -56,14 +56,12 @@
 
   // Überprüfung
   if ( count ( $rsrcTeamsStaffel ) == 0 )
-  if ( count ( $rsrcTeamsStaffel ) == 0 )
     SED_Error ( "Sie haben dieser Staffel noch keine Mannschaften zugeordnet! Dies geht &uuml;ber die Funktion Bearbeiten.", false );
 
   // Überlegen, was gemacht wird
   $showInfopage = !$isRunning && !isset ( $_GET ['modus'] );
   $showInfobox = $isRunning;
   $showSchnelleingabe = !$isRunning && isset ( $_GET ['modus'] ) && $_GET ['modus'] == "schnell";
-  $showTabelle = !$isRunning && !$showInfopage && (count ( $rsrcTeamsStaffel ) < 15 || $showSchnelleingabe);
   $showTabelle = !$isRunning && !$showInfopage && (count ( $rsrcTeamsStaffel ) < 15 || $showSchnelleingabe);
   $showPaarungen = !$showInfopage;
   $showKM = $showTabelle;
@@ -105,14 +103,8 @@
         // Paarungen mit Standart-Paarungstafel erzeugen
         require_once ( "paarungstafel.inc.php" );
         $strPaarungen = Paarungstafel ( count ( $rsrcTeamsStaffel ) );
-        $strPaarungen = Paarungstafel ( count ( $rsrcTeamsStaffel ) );
 
         // Die Standart-Bezeichnungen durch die Mannschaftsid ersetzen
-        $i = 1;
-        foreach ( $rsrcTeamsStaffel as $team ) {
-          $strPaarungen = str_replace ( "m$i~", "$team[id]~", $strPaarungen );
-          $i++;
-        }
         $i = 1;
         foreach ( $rsrcTeamsStaffel as $team ) {
           $strPaarungen = str_replace ( "m$i~", "$team[id]~", $strPaarungen );

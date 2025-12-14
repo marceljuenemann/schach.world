@@ -112,8 +112,6 @@
           // Bisherige Links ausgeben
           foreach ($rsrc as $tmp)
             __AddForm ( "$tmp[titel]", "$tmp[url]", "$tmp[neuesfenster]" );
-          foreach ($rsrc as $tmp)
-            __AddForm ( "$tmp[titel]", "$tmp[url]", "$tmp[neuesfenster]" );
 
           // Weitere Felder ausgeben
           for ( $i = 0; $i < 5; ++$i )
@@ -128,9 +126,6 @@
     $rsrc = SED_Query ( 'SELECT name, directory, id FROM turniere t WHERE t.organisation=? AND (t.startjahr=? OR t.startjahr=?-1) AND t.id<>? ORDER BY t.startjahr DESC', [$prefs['organisation'], $prefs['startjahr'], $prefs['startjahr'], $globals['tid']] )->fetchAllAssociative();
     if ( $rsrc && count($rsrc) ){
         echo "<span class='sed_hl2'>Vorschl&auml;ge:</span><br /><br />";
-        foreach ( $rsrc as $turnier ){
-          // Link zu dem Turnier
-          echo "<a href='javascript:add(\"$turnier[name]\",\"$globals[httppath]$turnier[directory]/?esw=1\")'>$turnier[name]</a><br />";
         foreach ( $rsrc as $turnier ){
           // Link zu dem Turnier
           echo "<a href='javascript:add(\"$turnier[name]\",\"$globals[httppath]$turnier[directory]/?esw=1\")'>$turnier[name]</a><br />";
