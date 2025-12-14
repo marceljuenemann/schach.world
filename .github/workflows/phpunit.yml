@@ -23,6 +23,8 @@ jobs:
         env:
           MYSQL_ROOT_PASSWORD: root
           MYSQL_DATABASE: nsv-test-ligen
+          MYSQL_USER: docker
+          MYSQL_PASSWORD: docker
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - uses: actions/checkout@v4
