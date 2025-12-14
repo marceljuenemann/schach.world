@@ -75,6 +75,7 @@
     {
       // Speichervorgang vorbereiten
       $sql = "";
+      $values = [];
       for ( $i = 0; $i < count ( $frmMF ); ++$i )
       {
         // Trennlinie?
@@ -85,12 +86,14 @@
         $prefs [ $frmMF [$i][0] ] = $_POST ["frmManager_" . $frmMF [$i][0]];
 
         // In MySQL Speichern
-        $sql .= ", ".$frmMF [$i][0]."='".$_POST ["frmManager_" . $frmMF [$i][0]]."'";
+        $sql .= ", ".$frmMF [$i][0]."=?";
+        $values[] = $_POST ["frmManager_" . $frmMF [$i][0]];
       }
       
       // Speichervorgang durchführen
-      $sql = "UPDATE turniere SET ".substr ( $sql, 2 )." WHERE id=$globals[tid] LIMIT 1";
-      if ( !mysql_query ( $sql, $globals ['db'] ) )
+      $sql = "UPDATE turniere SET ".substr ( $sql, 2 )." WHERE id=? LIMIT 1";
+      $values[] = $globals['tid'];
+      if ( !SED_TryQuery ( $sql, $values ) )
         SED_Error ( "Es ist ein Fehler aufgetreten!", true );
 
 	  // Cache leeren
