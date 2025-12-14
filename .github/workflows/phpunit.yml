@@ -1,4 +1,4 @@
-name: end2end
+name: phpunit
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       - name: Start database
         run: |
           cd dev
-          docker compose up -d nsv-database
+          docker compose up -d database
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
