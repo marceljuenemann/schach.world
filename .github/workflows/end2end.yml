@@ -20,7 +20,7 @@ jobs:
       - name: Build and start containers
         run: |
           cd dev
-          docker-compose up -d
+          docker compose up -d
       - name: Wait for Apache
         run: |
           until curl -sSf https://localhost:6464/core/nsv2020/images/nsv.png > /dev/null; do sleep 2; done
@@ -30,4 +30,4 @@ jobs:
       - name: Stop containers
         run: |
           cd dev
-          docker-compose down
+          docker compose down
