@@ -27,6 +27,13 @@ jobs:
         run: |
           cd dev
           docker compose up -d database
+      - name: Verify MySQL is up
+        run: |
+          for i in {1..5}; do
+            nc -z 127.0.0.1 6465 && echo "MySQL is up" && exit 0
+            sleep 2
+          done
+          echo "MySQL did not start in time" && exit 1
       - name: Prepare test fixtures
         run: |
           ./bin/console --env=test --em=league doctrine:fixtures:load
