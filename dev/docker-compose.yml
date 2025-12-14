@@ -4,7 +4,7 @@ name: nsv
 services:
   webserver:
     build:
-      context: ./docker/php81
+      context: ./docker/php84
     container_name: "nsv-webserver"
     restart: "always"
     ports:
