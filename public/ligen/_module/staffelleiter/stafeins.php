@@ -69,6 +69,7 @@
       // Speichervorgang vorbereiten
       $sql = "";
       $params = [];
+      $params = [];
       for ( $i = 0; $i < count ( $frmMF ); ++$i )
       {
         // Trennlinie?
@@ -79,13 +80,19 @@
         $value = $_POST ["frmManager_" . $frmMF [$i][0]];
         if ( $value == "" )
             $value = null;
+            $value = null;
 
         // In MySQL Speichern
+        $sql .= ", ".$frmMF [$i][0]."=?";
+        $params[] = $value;
         $sql .= ", ".$frmMF [$i][0]."=?";
         $params[] = $value;
       }
       
       // Speichervorgang durchführen
+      $sql = "UPDATE staffeln SET ".substr ( $sql, 2 )." WHERE id=? LIMIT 1";
+      $params[] = $admin["staffel"];
+      if ( !SED_Query ( $sql, $params ) )
       $sql = "UPDATE staffeln SET ".substr ( $sql, 2 )." WHERE id=? LIMIT 1";
       $params[] = $admin["staffel"];
       if ( !SED_Query ( $sql, $params ) )
