@@ -17,13 +17,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-      - name: Build and start containers
+      - name: Start database
         run: |
           cd dev
-          docker compose up -d
-      - name: Check for Apache
-        run: |
-          curl -sSf --insecure https://localhost:6464/core/nsv2020/images/nsv.png > /dev/null
+          docker compose up -d nsv-database
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+      - name: Install Composer dependencies
+        run: composer install --prefer-dist --no-interaction --no-progress
       - name: Run tests
         run: |
           docker exec -it nsv-webserver ls -lash
