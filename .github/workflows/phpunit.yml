@@ -32,7 +32,7 @@ jobs:
         run: mysql -h 127.0.0.1 -P 3306 -u root -proot -e 'SHOW DATABASES;'
       - name: Initialize database
         run: |
-          mysql -h 127.0.0.1 -P 3306 -u root -proot nsv-test-ligen < ./dev/dbinit/90-test-ligen-structure.sql
+          mysql -h 127.0.0.1 -P 3306 -u root -proot nsv-test-ligen < ./dev/dbinit/90-test-ligen-structure.sql && \
           mysql -h 127.0.0.1 -P 3306 -u root -proot nsv-test-ligen < ./dev/dbinit/91-test-ligen-data.sql
 
       - name: Set up PHP
