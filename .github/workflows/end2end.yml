@@ -1,0 +1,33 @@
+name: end2end
+
+on:
+  push:
+    branches:
+      - php-ci
+    #paths:
+    #  - '**/*.php'
+  pull_request:
+    paths:
+      - '**/*.php'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Build and start containers
+        run: |
+          cd dev
+          docker-compose up -d
+      - name: Wait for Apache
+        run: |
+          until curl -sSf https://localhost:6464/core/nsv2020/images/nsv.png > /dev/null; do sleep 2; done
+      - name: Run tests
+        run: |
+          docker exec -it nsv-webserver ls -lash
+      - name: Stop containers
+        run: |
+          cd dev
+          docker-compose down
