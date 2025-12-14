@@ -15,17 +15,16 @@
   if ( isset ( $_POST ['admin_sl_bemerkungen'] ) )
   {
     // Bemerkung einfügen / bearbeiten
-    $result = SED_Query("SELECT id FROM bemerkungen WHERE staffel=? AND runde=?", [$admin['staffel'], $_POST['r']]);
+    $result = SED_Query('SELECT id FROM bemerkungen WHERE staffel=? AND runde=?', [$admin['staffel'], $_POST['r']]);
     if ($result->rowCount() > 0)
     {
-      SED_TryQuery("UPDATE bemerkungen SET text=? WHERE staffel=? AND runde=? AND text<>? LIMIT 1", 
+      SED_TryQuery('UPDATE bemerkungen SET text=? WHERE staffel=? AND runde=? AND text<>? LIMIT 1', 
         [$_POST['text'], $admin['staffel'], $_POST['r'], $_POST['text']]);
       SED_Cache::clearSpieltag($admin['staffel'], $_POST["r"]);
 	  }
     else
     {
-      if (!SED_TryQuery("INSERT INTO bemerkungen SET staffel=?, runde=?, text=?", 
-           [$admin['staffel'], $_POST['r'], $_POST['text']]))
+      if (!SED_TryQuery('INSERT INTO bemerkungen SET staffel=?, runde=?, text=?', [$admin['staffel'], $_POST['r'], $_POST['text']]))
         SED_Error("Fehler beim einf&uuml;gen der Bemerkung!");
       SED_Cache::clearSpieltag($admin['staffel'], $_POST["r"]);
     }
@@ -39,13 +38,13 @@
     require ( "runde.inc.php" );
 
     // Gespeicherte Bemerkungen herausfinden
-    $remarks = SED_Query("SELECT runde, text FROM bemerkungen WHERE staffel=?", [$admin['staffel']])->fetchAllAssociative();
+    $remarks = SED_Query('SELECT runde, text FROM bemerkungen WHERE staffel=?', [$admin['staffel']])->fetchAllAssociative();
     $bemerkungen = array();
     foreach ($remarks as $row)
         $bemerkungen[$row['runde']] = $row['text'];
 
     // Alle Spiele finden
-    $matches = SED_Query("SELECT * FROM paarungen WHERE staffel=?", [$admin['staffel']])->fetchAllAssociative();
+    $matches = SED_Query('SELECT * FROM paarungen WHERE staffel=?', [$admin['staffel']])->fetchAllAssociative();
     $spiele = array();
     foreach ($matches as $spiel)
         $spiele[$spiel["runde"]][] = $spiel;

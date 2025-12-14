@@ -216,7 +216,7 @@ class SED_Spieler {
         if ( $this->isFieldSet ( "id" ) ){
             // Datenbank-Abfrage
             $id = $this->get ( "id" );
-            $fields = SED_Query("SELECT * FROM spieler WHERE id=? LIMIT 1", [$id])->fetchAssociative();
+            $fields = SED_Query('SELECT * FROM spieler WHERE id=? LIMIT 1', [$id])->fetchAssociative();
 
             // Felder setzten
             foreach ( $fields as $name=>$value )
@@ -333,13 +333,13 @@ class SED_Spieler {
     // Liefert die nächste freie Brett-Nummer
     static function getNextBrettNr ( $mid ){
         // Wenn es Spieler in der Mannschaft gibt, dann sollte es klappen
-        if ( $bnr = SED_Query ( "SELECT brettnr+1 FROM spieler WHERE mannschaft=? ORDER BY brettnr DESC LIMIT 1", [$mid] )->fetchOne() )
+        if ( $bnr = SED_Query ( 'SELECT brettnr+1 FROM spieler WHERE mannschaft=? ORDER BY brettnr DESC LIMIT 1', [$mid] )->fetchOne() )
             return $bnr;
 
         // Ansonsten einfach die 1
         global $prefs;
         if ( !$prefs ['spielDreistelligeNr'] ) return 1;
-        return SED_Value ( "SELECT mnr*100+1 FROM mannschaften WHERE id=? LIMIT 1", [$mid] );
+        return SED_Value ( 'SELECT mnr*100+1 FROM mannschaften WHERE id=? LIMIT 1', [$mid] );
     }
 }
 ?>

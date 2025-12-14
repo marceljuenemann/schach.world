@@ -21,7 +21,7 @@
   global $globals;
   global $prefs;
   $globals['tid'] = $league->id;
-  $prefs = SED_Query("SELECT t.* FROM turniere as t WHERE t.id=?", [$globals['tid']])->fetchAssociative();
+  $prefs = SED_Query('SELECT t.* FROM turniere as t WHERE t.id=?', [$globals['tid']])->fetchAssociative();
 
   // Fehler?
   if ( !is_array ( $prefs ) )
@@ -53,11 +53,11 @@
   {
     global $globals;
     // Eigentlich gibt es mittlerweile ja viewStaffeltermine, allerdings funktioniert das hier auch, wenn keine Turniertermine festgelegt wurden, sondern nur Staffeltermine
-    return SED_Query("
-      SELECT DATE_FORMAT(te.datum,'$datumsformat') as datum
+    return SED_Query('
+      SELECT DATE_FORMAT(te.datum,\'$datumsformat\') as datum
       FROM termine as te
       WHERE te.turnier=? and te.runde=? and (te.staffel is null or te.staffel=?)
-      ORDER BY staffel DESC LIMIT 1",
+      ORDER BY staffel DESC LIMIT 1',
       [
         $globals['tid'],
         $runde,
@@ -80,8 +80,8 @@
             return $prefs [$feld];
 
     // Abfragen, ob die Anzahl vom Turnier-Standart abweicht
-    return SED_Value("
-      SELECT IF($feld IS NULL,".$prefs[$feld].",$feld) FROM staffeln WHERE id=?",
+    return SED_Value('
+      SELECT IF($feld IS NULL,'.$prefs[$feld].',$feld) FROM staffeln WHERE id=?',
       [$staffel]
     );
   }
@@ -89,7 +89,7 @@
   // Liefert die letzte Runde in der eine Paarung gesetzt ist
   function SED_GetLetzteRunde ( $staffel )
   {
-    return SED_Query("SELECT MAX( runde )  FROM paarungen WHERE staffel=?", [$staffel])->fetchOne();
+    return SED_Query('SELECT MAX( runde )  FROM paarungen WHERE staffel=?', [$staffel])->fetchOne();
   }
 
   // Liefert die Anzahl der Bretter einer Staffel

@@ -23,10 +23,10 @@
         if ( preg_match ( $regexpr, $tmp ) )
         {
             // Alte löschen
-            if ( !SED_TryQuery ( "DELETE FROM termine WHERE turnier=? and staffel is null and runde=?", [$globals['tid'], $r]) )
+            if ( !SED_TryQuery ( 'DELETE FROM termine WHERE turnier=? and staffel is null and runde=?', [$globals['tid'], $r]) )
                 SED_Error ( "Alte Termine konnten nicht gel&ouml;scht werden!", true );
             $datum = substr ( $tmp, 6 ) . substr ( $tmp, 3, 2 ) . substr ( $tmp, 0, 2 );
-            if ( !SED_TryQuery ( "INSERT INTO termine SET turnier=?, runde=?, datum=?", [$globals['tid'], $r, $datum]) )
+            if ( !SED_TryQuery ( 'INSERT INTO termine SET turnier=?, runde=?, datum=?', [$globals['tid'], $r, $datum]) )
                 SED_Error ( "Termin $r konnte nicht eingef&uuml;gt werden.", true );
         }
         else
@@ -54,7 +54,7 @@
   <?
     // Bisherige Termine abfragen
     $termine = array ();
-    $rsrc = SED_Query ( "SELECT runde, DATE_FORMAT(datum,'%d.%m.%Y') as datum FROM termine WHERE turnier=? and staffel is null ORDER BY runde", [$globals['tid']] )->fetchAllAssociative();
+    $rsrc = SED_Query ( 'SELECT runde, DATE_FORMAT(datum,\'%d.%m.%Y\') as datum FROM termine WHERE turnier=? and staffel is null ORDER BY runde', [$globals['tid']] )->fetchAllAssociative();
     foreach ( $rsrc as $tmp )
       $termine [$tmp ['runde']] = $tmp ['datum'];
 
@@ -83,7 +83,7 @@
   {
     if ( preg_match ( $regexpr, $_POST ['abw_datum'] ) ) {
       $datum = substr ( $_POST ['abw_datum'], 6 ) . substr ( $_POST ['abw_datum'], 3, 2 ) . substr ( $_POST ['abw_datum'], 0, 2 );
-      if ( !SED_TryQuery ( "INSERT INTO termine SET turnier=?, staffel=?, runde=?, datum=?", [$globals['tid'], $_POST['abw_staffel'], $_POST['abw_runde'], $datum]) )
+      if ( !SED_TryQuery ( 'INSERT INTO termine SET turnier=?, staffel=?, runde=?, datum=?', [$globals['tid'], $_POST['abw_staffel'], $_POST['abw_runde'], $datum]) )
         SED_Error ( "Termin konnte nicht eingef&uuml;gt werden.", true );
     }
     else
@@ -97,7 +97,7 @@
   // Einen abweichenden Termin entfernen
   if ( isset ( $_GET ['abw_del'] ) )
   {
-    if ( !SED_TryQuery ( "DELETE FROM termine WHERE id=? and turnier=? LIMIT 1", [$_GET['abw_del'], $globals['tid']]) )
+    if ( !SED_TryQuery ( 'DELETE FROM termine WHERE id=? and turnier=? LIMIT 1', [$_GET['abw_del'], $globals['tid']]) )
       SED_Error ( "Termin konnte nicht gel&ouml;scht werden.", true );
   }
 ?>
@@ -106,7 +106,7 @@
   <tr><th>Staffel</th><th>Runde</th><th>Datum</th><th></th></tr>
   <?
     // Bisherige Termine abfragen
-    $rsrc = SED_Query ( "SELECT id, staffel, runde, DATE_FORMAT(datum,'%d.%m.%Y') as datum FROM termine WHERE turnier=? and staffel IS NOT NULL ORDER BY staffel, runde", [$globals['tid']] )->fetchAllAssociative();
+    $rsrc = SED_Query ( 'SELECT id, staffel, runde, DATE_FORMAT(datum,\'%d.%m.%Y\') as datum FROM termine WHERE turnier=? and staffel IS NOT NULL ORDER BY staffel, runde', [$globals['tid']] )->fetchAllAssociative();
     foreach ( $rsrc as $tmp )
     {
       echo "<tr><td>" . $globals ['staffeln'][$tmp ['staffel']] . "</td><td>$tmp[runde]</td><td>$tmp[datum]</td>";

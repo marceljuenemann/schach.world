@@ -17,7 +17,7 @@
 	echo "Mit den folgenden Links k&ouml;nnen die jeweiligen Paarungen in das System eingegeben werden. Sollte die Eingabe durch Mannschaftsf&uuml;hrer bei Ihrem Turnier aktiviert sein, so erhalten die Mannschaftsf&uuml;hrer diese Links automatisch drei Tage vor einem Spieltag. Sollte jemand Probleme haben, Mails vom System zu empfangen, so k&ouml;nnen Sie ihm seinen Link direkt aush&auml;ndigen.<br />";
 
 	// Iteration über alle Paarungen
-	$rsrc = SED_Query ( "SELECT id, runde, mannschaft1, mannschaft2 FROM paarungen WHERE staffel=? ORDER BY runde", [$admin['staffel']])->fetchAllAssociative();
+	$rsrc = SED_Query ( 'SELECT id, runde, mannschaft1, mannschaft2 FROM paarungen WHERE staffel=? ORDER BY runde', [$admin['staffel']])->fetchAllAssociative();
   $runde = 0;
 	foreach ( $rsrc as $paarung )
 	{

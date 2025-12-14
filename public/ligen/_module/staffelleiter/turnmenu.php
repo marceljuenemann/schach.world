@@ -16,7 +16,7 @@
   if ( isset ( $_POST ['menue_save'] ) )
   {
     // Alte Links löschen
-    SED_TryQuery ( "DELETE FROM turniermenue WHERE turnier=? LIMIT 100", [$globals['tid']] );
+    SED_TryQuery ( 'DELETE FROM turniermenue WHERE turnier=? LIMIT 100', [$globals['tid']] );
 
     // Neue Links einfügen
     for ( $i = 1; isset ( $_POST ["linkTitel$i"] ); ++$i )
@@ -24,7 +24,7 @@
       if ( $_POST ["linkTitel$i"] )
       {
         $neuesfenster = (int) ( isset ( $_POST ["linkNeu$i"] ) && $_POST ["linkNeu$i"] );
-        SED_TryQuery ( "INSERT INTO turniermenue SET turnier=?, sortid=?, titel=?, url=?, neuesfenster=?", [$globals['tid'], $i, $_POST["linkTitel$i"], $_POST["linkUrl$i"], $neuesfenster] );
+        SED_TryQuery ( 'INSERT INTO turniermenue SET turnier=?, sortid=?, titel=?, url=?, neuesfenster=?', [$globals['tid'], $i, $_POST["linkTitel$i"], $_POST["linkUrl$i"], $neuesfenster] );
       }
     }
 
@@ -107,7 +107,7 @@
 
         <?
           // Bisherige Links abfragen
-          $rsrc = SED_Query ( "SELECT * FROM turniermenue WHERE turnier=? ORDER BY sortid", [$globals['tid']] )->fetchAllAssociative();
+          $rsrc = SED_Query ( 'SELECT * FROM turniermenue WHERE turnier=? ORDER BY sortid', [$globals['tid']] )->fetchAllAssociative();
 
           // Bisherige Links ausgeben
           foreach ($rsrc as $tmp)
@@ -123,7 +123,7 @@
   </form><br />
 
 <?
-    $rsrc = SED_Query ( "SELECT name, directory, id FROM turniere t WHERE t.organisation=? AND (t.startjahr=? OR t.startjahr=?-1) AND t.id<>? ORDER BY t.startjahr DESC", [$prefs['organisation'], $prefs['startjahr'], $prefs['startjahr'], $globals['tid']] )->fetchAllAssociative();
+    $rsrc = SED_Query ( 'SELECT name, directory, id FROM turniere t WHERE t.organisation=? AND (t.startjahr=? OR t.startjahr=?-1) AND t.id<>? ORDER BY t.startjahr DESC', [$prefs['organisation'], $prefs['startjahr'], $prefs['startjahr'], $globals['tid']] )->fetchAllAssociative();
     if ( $rsrc && count($rsrc) ){
         echo "<span class='sed_hl2'>Vorschl&auml;ge:</span><br /><br />";
         foreach ( $rsrc as $turnier ){
@@ -131,7 +131,7 @@
           echo "<a href='javascript:add(\"$turnier[name]\",\"$globals[httppath]$turnier[directory]/?esw=1\")'>$turnier[name]</a><br />";
 			
           // Turniermenüeinträge der letzten Saison
-          $lastMenu = SED_Query ( "SELECT * FROM turniermenue WHERE turnier=? ORDER BY sortid", [$turnier['id']] )->fetchAllAssociative();
+          $lastMenu = SED_Query ( 'SELECT * FROM turniermenue WHERE turnier=? ORDER BY sortid', [$turnier['id']] )->fetchAllAssociative();
           foreach ( $lastMenu as $tmp ){
             echo "<a href='javascript:add(\"$tmp[titel]\",\"$tmp[url]\")'>$tmp[titel]</a><br />";
           }

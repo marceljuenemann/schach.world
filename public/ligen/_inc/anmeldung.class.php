@@ -26,7 +26,7 @@ class SED_Anmeldung {
 
     static function getPlayerlessTeams (){
         global $globals;
-        return SED_Query("SELECT m.* FROM mannschaften m WHERE turnier=? AND NOT EXISTS (SELECT id FROM spieler WHERE mannschaft=m.id)", [$globals['tid']])->fetchAllAssociative(); 
+        return SED_Query('SELECT m.* FROM mannschaften m WHERE turnier=? AND NOT EXISTS (SELECT id FROM spieler WHERE mannschaft=m.id)', [$globals['tid']])->fetchAllAssociative(); 
     }
     
     function __construct ( $mid = 0 ){
@@ -59,13 +59,13 @@ class SED_Anmeldung {
 
         // Guten Namen aus der Datenbank holen
         foreach ( $this->getZpsList () as $zps ){
-            if ( $name = SED_Query ( "SELECT name FROM mannschaften WHERE zps=? ORDER BY id DESC LIMIT 1", [$zps] )->fetchOne() )
+            if ( $name = SED_Query ( 'SELECT name FROM mannschaften WHERE zps=? ORDER BY id DESC LIMIT 1', [$zps] )->fetchOne() )
                 return $name;
         }
         
         // Einfach den Vereinsnamen abschneiden
         foreach ( $this->getZpsList () as $zps ){
-            if ( $name = SED_Query ( "SELECT Vereinname FROM dwz_vereine WHERE ZPS=?", [$zps] )->fetchOne() )
+            if ( $name = SED_Query ( 'SELECT Vereinname FROM dwz_vereine WHERE ZPS=?', [$zps] )->fetchOne() )
                 return $name;
         }
         
@@ -82,7 +82,7 @@ class SED_Anmeldung {
         
         // Letztes angegebenes Spiellokal
         foreach ( $this->getZpsList () as $zps ){
-            if ( $so = SED_Query ( "SELECT * FROM mannschaften WHERE zps=? AND LENGTH(so_plz)=5 ORDER BY id DESC", [$zps] )->fetchAssociative() )
+            if ( $so = SED_Query ( 'SELECT * FROM mannschaften WHERE zps=? AND LENGTH(so_plz)=5 ORDER BY id DESC', [$zps] )->fetchAssociative() )
                 return $so;
         }
         
@@ -100,19 +100,19 @@ class SED_Anmeldung {
         }
         
         // Versuch über letztes Jahr
-        if ( $mf = SED_Query ( "
+        if ( $mf = SED_Query ( '
                 SELECT *
                 FROM turniere t
                 INNER JOIN mannschaften m ON m.turnier=t.id AND m.zps=? AND m.mnr=?
                 WHERE t.organisation=? AND t.startjahr=?
-                LIMIT 1", 
+                LIMIT 1',
                 [$this->data['zps'], $this->data['mnr'], $prefs['organisation'], $prefs['startjahr'] - 1]
             )->fetchAssociative())
             return $mf;
         
         // Letzter angegebener Mannschaftsführer
         foreach ( $this->getZpsList () as $zps ){
-            if ( $mf = SED_Query ( "SELECT * FROM mannschaften WHERE zps=? AND LENGTH(so_plz)=5 ORDER BY id DESC", [$zps] )->fetchAssociative() )
+            if ( $mf = SED_Query ( 'SELECT * FROM mannschaften WHERE zps=? AND LENGTH(so_plz)=5 ORDER BY id DESC', [$zps] )->fetchAssociative() )
                 return $mf;
         }
         
@@ -182,12 +182,12 @@ class SED_Anmeldung {
     // Liefert Standartwerte für die Zusatzfelder
     function getZusatzFelderDefault (){
         global $prefs;
-        $rows = SED_Query ( "SELECT a.feldname, a.inhalt 
+        $rows = SED_Query ( 'SELECT a.feldname, a.inhalt 
             FROM mannschaften m
             INNER JOIN turniere t ON t.id=m.turnier
             INNER JOIN anmeldungZusatzfelder a ON a.mannschaft=m.id
             WHERE m.zps=? AND m.mnr=? 
-                AND t.organisation=? AND t.startjahr=?", 
+                AND t.organisation=? AND t.startjahr=?',
             [$this->get("zps"), $this->get("mnr"), $prefs['organisation'], ((int)$prefs['startjahr'])-1] )
             ->fetchAllAssociative();
         $default = array ();

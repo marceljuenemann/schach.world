@@ -12,7 +12,7 @@
     require_once ( "ajax.inc.php" );
 
     // Vereinsliste abfragen
-    $vereine = SED_Query("SELECT * FROM dwz_vereine WHERE ZPS LIKE ? AND ZPS NOT LIKE '%00' ORDER BY Vereinname", [$prefs['anmVerband'].'%'])->fetchAllAssociative();
+    $vereine = SED_Query('SELECT * FROM dwz_vereine WHERE ZPS LIKE ? AND ZPS NOT LIKE \'%00\' ORDER BY Vereinname', [$prefs['anmVerband'].'%'])->fetchAllAssociative();
 
     // Mannschaften ohne Spieler vorschlagen
     $playerless = SED_Anmeldung::getPlayerlessTeams ();

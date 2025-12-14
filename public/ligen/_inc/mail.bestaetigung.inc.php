@@ -78,7 +78,7 @@ Um einzustellen, wer in Ihrem Verein diese und ähnliche eMails erhalten soll, k
         SED_SendMail( $mail, $mannschaft->get('mf_email'), $vars );
 
         // An Zusatzempfänger senden
-        $emails = SED_Query( "SELECT email FROM zusatzempfaenger WHERE mannschaft=? and bestaetigung=1", [$mannschaft->get("id")] )->fetchFirstColumn();
+        $emails = SED_Query( 'SELECT email FROM zusatzempfaenger WHERE mannschaft=? and bestaetigung=1', [$mannschaft->get("id")] )->fetchFirstColumn();
         foreach ($emails as $email) {
           SED_SendMail( $mail, $email, $vars );
         }
