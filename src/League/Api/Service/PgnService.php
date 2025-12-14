@@ -40,7 +40,7 @@ class PgnService {
       $pairingDate = $pairing->customDate ?? $date;
 
       foreach ($pairing->games() as $game) {
-        if (!$game->player1 && !$game->player2) {
+        if (!$game->player1 || !$game->player2) {
           continue;
         }
 

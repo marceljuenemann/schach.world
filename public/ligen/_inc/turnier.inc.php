@@ -54,7 +54,7 @@
     global $globals;
     // Eigentlich gibt es mittlerweile ja viewStaffeltermine, allerdings funktioniert das hier auch, wenn keine Turniertermine festgelegt wurden, sondern nur Staffeltermine
     return SED_Query('
-      SELECT DATE_FORMAT(te.datum,\'$datumsformat\') as datum
+      SELECT DATE_FORMAT(te.datum,\''.$datumsformat.'\') as datum
       FROM termine as te
       WHERE te.turnier=? and te.runde=? and (te.staffel is null or te.staffel=?)
       ORDER BY staffel DESC LIMIT 1',
@@ -81,7 +81,7 @@
 
     // Abfragen, ob die Anzahl vom Turnier-Standart abweicht
     return SED_Value('
-      SELECT IF($feld IS NULL,'.$prefs[$feld].',$feld) FROM staffeln WHERE id=?',
+      SELECT IF('.$feld.' IS NULL,'.$prefs[$feld].','.$feld.') FROM staffeln WHERE id=?',
       [$staffel]
     );
   }
