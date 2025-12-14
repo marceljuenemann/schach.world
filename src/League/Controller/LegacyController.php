@@ -82,7 +82,7 @@ class LegacyController extends AbstractLeagueController {
           echo "<pre style='text-wrap: wrap'>$e</pre>";
         }
       } else {
-        ob_end_clean();
+        @ob_end_clean();
         throw $e;
       }
     }
