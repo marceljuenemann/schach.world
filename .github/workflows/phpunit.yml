@@ -29,7 +29,7 @@ jobs:
         run: composer install --prefer-dist --no-interaction --no-progress --no-scripts
       - name: Run tests
         run: |
-          docker exec -it nsv-webserver ls -lash
+          ./bin/phpunit
       - name: Stop containers
         run: |
           cd dev
