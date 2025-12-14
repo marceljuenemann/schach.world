@@ -13,34 +13,34 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    services:
+      database:
+        image: mysql:5.7
+        ports:
+          - 3306:3306"
+        volumes:
+          - ./dbinit:/docker-entrypoint-initdb.d
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_USER: docker
+          MYSQL_PASSWORD: docker
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Install MySQL client
+        run: sudo apt-get update && sudo apt-get install -y mysql-client
+      - name: Check databases
+        run: mysql -h 127.0.0.1 -P 3306 -u root -proot -e 'SHOW DATABASES;'
+
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.4'
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-interaction --no-progress --no-scripts
-      - name: Start database
-        run: |
-          cd dev
-          docker compose up -d database
-      - name: Verify MySQL is up
-        run: |
-          for i in {1..5}; do
-            nc -z 127.0.0.1 6465 && echo "MySQL is up" && exit 0
-            sleep 2
-          done
-          echo "MySQL did not start in time" && exit 1
+
       - name: Prepare test fixtures
         run: |
           ./bin/console --env=test --em=league doctrine:fixtures:load
       - name: Run tests
         run: |
           ./bin/phpunit
-      - name: Stop containers
-        run: |
-          cd dev
-          docker compose down
