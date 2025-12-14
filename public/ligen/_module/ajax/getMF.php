@@ -11,7 +11,7 @@
  */
 
 	// Nun die aktuellsten Daten abfragen
-	$fields = SED_Query ( "SELECT mf_telefon as telefon, mf_telefon2 as telefon2, mf_email as mf_email FROM mannschaften WHERE mf_name LIKE ? ORDER BY id DESC", [utf8_decode($_GET["name"]).'%'] )->fetchAssociative();
+	$fields = SED_Query ( 'SELECT mf_telefon as telefon, mf_telefon2 as telefon2, mf_email as mf_email FROM mannschaften WHERE mf_name LIKE ? ORDER BY id DESC', [utf8_decode($_GET["name"]).'%'] )->fetchAssociative();
 	
 	// Wenn er existierte, dann diesen zurückgeben
 	if ( $fields )

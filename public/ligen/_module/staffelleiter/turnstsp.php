@@ -20,7 +20,7 @@
   if ( isset ( $_POST ['hidden_paarungen'] ) )
   {
     // Alte löschen
-    if ( !SED_TryQuery ( "DELETE FROM paarungen WHERE staffel=? AND erg1 IS NULL AND erg2 IS NULL", [$admin['staffel']] ) )
+    if ( !SED_TryQuery ( 'DELETE FROM paarungen WHERE staffel=? AND erg1 IS NULL AND erg2 IS NULL', [$admin['staffel']] ) )
       SED_Error ( "Konnte alten Spielplan nicht l&ouml;schen!", true );
 
     // Einfügen
@@ -29,7 +29,7 @@
     {
       $tmp = explode ( "~", $paarung );
       if ( count ( $tmp ) == 4 )
-        SED_Query ( "INSERT INTO paarungen SET staffel=?, runde=?, mannschaft1=?, mannschaft2=?", [$admin['staffel'], $tmp[0], $tmp[1], $tmp[2]] );
+        SED_Query ( 'INSERT INTO paarungen SET staffel=?, runde=?, mannschaft1=?, mannschaft2=?', [$admin['staffel'], $tmp[0], $tmp[1], $tmp[2]] );
     }
 
     // Cache leeren
@@ -49,10 +49,10 @@
   /////////////////////////////////////////////
 
   // Abfragen
-  $rsrcTeamsAlle = SED_Query ( "SELECT m.id, g.lat, g.lon, m.staffel FROM mannschaften as m LEFT JOIN geodb as g ON g.plz=m.so_plz WHERE m.turnier=? ORDER BY m.name, m.mnr", [$globals['tid']] )->fetchAllAssociative();
-  $rsrcTeamsStaffel = SED_Query ( "SELECT m.id, g.lat, g.lon FROM mannschaften as m LEFT JOIN geodb as g ON g.plz=m.so_plz WHERE m.staffel=? ORDER BY m.name, m.mnr", [$admin['staffel']] )->fetchAllAssociative();
-  $rsrcPaarungen = SED_Query ( "SELECT runde, mannschaft1, mannschaft2 FROM paarungen WHERE staffel=? AND erg1 IS NULL AND erg2 IS NULL", [$admin['staffel']] )->fetchAllNumeric();
-  $isRunning = SED_Value("SELECT COUNT(*) FROM paarungen WHERE staffel=? LIMIT 1", [$admin['staffel']]);
+  $rsrcTeamsAlle = SED_Query ( 'SELECT m.id, g.lat, g.lon, m.staffel FROM mannschaften as m LEFT JOIN geodb as g ON g.plz=m.so_plz WHERE m.turnier=? ORDER BY m.name, m.mnr', [$globals['tid']] )->fetchAllAssociative();
+  $rsrcTeamsStaffel = SED_Query ( 'SELECT m.id, g.lat, g.lon FROM mannschaften as m LEFT JOIN geodb as g ON g.plz=m.so_plz WHERE m.staffel=? ORDER BY m.name, m.mnr', [$admin['staffel']] )->fetchAllAssociative();
+  $rsrcPaarungen = SED_Query ( 'SELECT runde, mannschaft1, mannschaft2 FROM paarungen WHERE staffel=? AND erg1 IS NULL AND erg2 IS NULL', [$admin['staffel']] )->fetchAllNumeric();
+  $isRunning = SED_Value('SELECT COUNT(*) FROM paarungen WHERE staffel=? LIMIT 1', [$admin['staffel']]);
 
   // Überprüfung
   if ( count ( $rsrcTeamsStaffel ) == 0 )

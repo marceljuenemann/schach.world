@@ -103,7 +103,7 @@
   if ( $admin ['usertype'] == "s" )
   {
     // Mannschaften abfragen
-    $res = SED_Query ( "SELECT id FROM mannschaften WHERE staffel=? ORDER BY name, mnr, id", [$admin['staffel']] )->fetchAllAssociative();
+    $res = SED_Query ( 'SELECT id FROM mannschaften WHERE staffel=? ORDER BY name, mnr, id', [$admin['staffel']] )->fetchAllAssociative();
     if ( count( $res ) > 0 )
     {
         // Ausgabe
@@ -124,7 +124,7 @@
   if ( $admin ['usertype'] == "t" )
   {
     // Mannschaften abfragen
-    $res = SED_Query ( "SELECT id FROM mannschaften WHERE staffel=0 AND turnier=? ORDER BY name, mnr, id", [$globals['tid']] )->fetchAllAssociative();
+    $res = SED_Query ( 'SELECT id FROM mannschaften WHERE staffel=0 AND turnier=? ORDER BY name, mnr, id', [$globals['tid']] )->fetchAllAssociative();
     if ( count ( $res ) > 0 )
     {
         // Ausgabe

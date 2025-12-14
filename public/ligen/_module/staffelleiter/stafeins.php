@@ -91,7 +91,7 @@
       if ( !SED_Query ( $sql, $params ) )
         SED_Error ( "Es ist ein Fehler aufgetreten!", true );
 
-	  // Cache leeren
+  	  // Cache leeren
       SED_Cache::clearAll ( $admin ["staffel"] );
       
       // Erfolgsmeldung
@@ -103,8 +103,8 @@
 
 
   // Daten abfragen
-  $staffel = SED_Row ( "SELECT * FROM staffeln WHERE id=?", [$admin['staffel']]);
-  $einstellungen = SED_Row ( "SELECT * FROM viewStaffeln WHERE id=?", [$admin['staffel']]);
+  $staffel = SED_Row ( 'SELECT * FROM staffeln WHERE id=?', [$admin['staffel']]);
+  $einstellungen = SED_Row ( 'SELECT * FROM viewStaffeln WHERE id=?', [$admin['staffel']]);
 
 
   // Felder ausgeben

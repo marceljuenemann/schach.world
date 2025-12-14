@@ -90,7 +90,7 @@ class SWI_Spieler {
 	private $results = array();
 	
   function __construct($id) {
-    $this->data = SED_Row("SELECT id, mannschaft, zps, brettnr, vorname, nachname, dwz, elo, geburt FROM spieler WHERE id = ?", [$id]);
+	$this->data = SED_Row('SELECT id, mannschaft, zps, brettnr, vorname, nachname, dwz, elo, geburt FROM spieler WHERE id = ?', [$id]);
   }
 
   private function get($field){

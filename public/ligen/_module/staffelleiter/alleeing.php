@@ -36,7 +36,7 @@
                     SED_Error ( "Das Datum muss das Format TT.MM.JJJJ haben!" );
             }
         }
-        if ( SED_TryQuery("UPDATE paarungen SET termin=? WHERE id=? LIMIT 1", [$value, $_GET['pid']]) )
+        if ( SED_TryQuery('UPDATE paarungen SET termin=? WHERE id=? LIMIT 1', [$value, $_GET['pid']]) )
         {
             // Erfolgsmeldung
             SED_Cache::clearSpieltag ( $g_paarung ["staffel"], $g_paarung ["runde"] );
@@ -53,7 +53,7 @@
     if ( isset ( $_POST ['extra_nurbem'] ) )
     {
       // Daten ändern
-      SED_TryQuery("UPDATE paarungen SET bemerkung=? WHERE id=? LIMIT 1", [htmlspecialchars($_POST['extra_nurbem_input'], ENT_COMPAT | ENT_HTML401, 'ISO-8859-1'), $_GET['pid']]);
+      SED_TryQuery('UPDATE paarungen SET bemerkung=? WHERE id=? LIMIT 1', [htmlspecialchars($_POST['extra_nurbem_input'], ENT_COMPAT | ENT_HTML401, 'ISO-8859-1'), $_GET['pid']]);
       SED_Cache::clearSpieltag($g_paarung["staffel"], $g_paarung["runde"]);
 
       // Erfolgsmeldung
@@ -66,8 +66,8 @@
     if ( isset ( $_POST ['extra_delete'] ) )
     {
       // Daten ändern
-      SED_TryQuery("DELETE FROM spielerpaarungen WHERE paarung=?", [$_GET['pid']]);
-      SED_TryQuery("UPDATE paarungen SET erg1=NULL, erg2=NULL, bemerkung=NULL WHERE id=? LIMIT 1", [$_GET['pid']]);
+      SED_TryQuery('DELETE FROM spielerpaarungen WHERE paarung=?', [$_GET['pid']]);
+      SED_TryQuery('UPDATE paarungen SET erg1=NULL, erg2=NULL, bemerkung=NULL WHERE id=? LIMIT 1', [$_GET['pid']]);
       SED_Cache::clearAll();
 
       // Erfolgsmeldung
@@ -80,7 +80,7 @@
     if ( isset ( $_POST ['extra_ausrichter'] ) )
     {
       // Daten ändern - Hinweis: Hier absichtlich keine Fehlerprüfung für value=0
-      SED_TryQuery("UPDATE paarungen SET ausrichter=? WHERE id=? LIMIT 1", [is_numeric($_POST['extra_ausrichter_select']) ? $_POST['extra_ausrichter_select'] : null, $_GET['pid']]);
+      SED_TryQuery('UPDATE paarungen SET ausrichter=? WHERE id=? LIMIT 1', [is_numeric($_POST['extra_ausrichter_select']) ? $_POST['extra_ausrichter_select'] : null, $_GET['pid']]);
       SED_Cache::clearSpieltag ( $g_paarung ['staffel'], $g_paarung ['runde'] );
       SED_Cache::clearTeam ( 0, SED_Cache::TEAM_SPIELPLAN );
 

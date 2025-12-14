@@ -388,7 +388,7 @@ function Tabelle ( $staffel, $runde, $kreuztabelle, $sortmode = SED_SORT_DEFAULT
     $data = $table->getTable ( $kreuztabelle );
 
     // Infos zur Staffel (wie Aufsteiger-Anzahl)
-    $infos = SED_Query ( "SELECT * FROM viewStaffeln WHERE id=?", [$staffel] )->fetchAssociative();
+    $infos = SED_Query ( 'SELECT * FROM viewStaffeln WHERE id=?', [$staffel] )->fetchAssociative();
     if ( !is_array ( $infos ) || !$infos ['showTabelle'] )
         return array ();
 

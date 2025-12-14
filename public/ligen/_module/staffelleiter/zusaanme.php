@@ -28,7 +28,7 @@
       $prefs ['anmTLMail'] = @$_POST ['TLMail'] ?: 0;
 
       // In Datenbank speichern
-      if (SED_TryQuery("UPDATE turniere SET anmAktiv=?, anmVerband=?, anmGeburt=?, anmGeschlecht=?, anmTLMail=? WHERE id=? LIMIT 1", [
+    if (SED_TryQuery('UPDATE turniere SET anmAktiv=?, anmVerband=?, anmGeburt=?, anmGeschlecht=?, anmTLMail=? WHERE id=? LIMIT 1', [
           $prefs['anmAktiv'], 
           $prefs['anmVerband'], 
           $prefs['anmGeburt'], 
@@ -53,7 +53,7 @@
     $attribTLMail = $prefs ['anmTLMail'] ? "checked='checked'" : "";
 
     // Verband
-    $verbaende = SED_Query("SELECT * FROM verbaende")->fetchAllAssociative();
+    $verbaende = SED_Query('SELECT * FROM verbaende')->fetchAllAssociative();
     $optionsVerband = "";
     foreach ($verbaende as $verband)
       $optionsVerband .= "<option value='" . $verband['zps'] . "'>" . str_replace(" ", "&nbsp;", $verband['name']) . "</option>";
@@ -110,7 +110,7 @@
         if ( isset ( $_POST ['anme_felder'] ) )
         {
             // In Datenbank speichern
-            if (SED_TryQuery("UPDATE turniere SET anmZusatzfelder=? WHERE id=? LIMIT 1", [$_POST['anme_textarea'], $globals['tid']]))
+            if (SED_TryQuery('UPDATE turniere SET anmZusatzfelder=? WHERE id=? LIMIT 1', [$_POST['anme_textarea'], $globals['tid']]))
             {
                 echo "<b>&Auml;nderungen erfolgreich gespeichert!</b><br /><br />";
                 $prefs['anmZusatzfelder'] = $_POST['anme_textarea'];
@@ -135,7 +135,7 @@
     ?>
             <table class='sed_tabelle'><tr><th>Mannschaft</th><th>Feld</th><th>Inhalt</th></tr>
                 <?
-                    $zusatzfelder = SED_Query("SELECT * FROM anmeldungZusatzfelder a INNER JOIN mannschaften m ON m.id=a.mannschaft WHERE m.turnier=? AND inhalt<>'' ORDER BY m.name, a.feldname", [$globals['tid']])->fetchAllAssociative();
+                    $zusatzfelder = SED_Query('SELECT * FROM anmeldungZusatzfelder a INNER JOIN mannschaften m ON m.id=a.mannschaft WHERE m.turnier=? AND inhalt<>\'\' ORDER BY m.name, a.feldname', [$globals['tid']])->fetchAllAssociative();
                     foreach ($zusatzfelder as $tmp)
                         echo "<tr><td>".$globals['teams'][$tmp['mannschaft']]."</td><td>".$tmp['feldname']."</td><td>".nl2br($tmp['inhalt'])."</td></tr>";
                 ?>

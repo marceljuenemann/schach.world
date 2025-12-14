@@ -18,20 +18,20 @@
     // Mannschaft löschen
     if ( isset ( $_GET ['delmann'] ) )
     {
-      SED_TryQuery("UPDATE mannschaften SET staffel=0 WHERE id=? AND turnier=? LIMIT 1", [$_GET['delmann'], $globals['tid']]);
+      SED_TryQuery('UPDATE mannschaften SET staffel=0 WHERE id=? AND turnier=? LIMIT 1', [$_GET['delmann'], $globals['tid']]);
       SED_Cache::clearTables ( $admin ["staffel"] );
     }
 
     // Mannschaft hinzufügen
     if ( isset ( $_GET ['addmann'] ) )
     {
-      SED_TryQuery("UPDATE mannschaften SET staffel=? WHERE id=? AND turnier=? LIMIT 1", [$admin['staffel'], $_GET['addmann'], $globals['tid']]);
+      SED_TryQuery('UPDATE mannschaften SET staffel=? WHERE id=? AND turnier=? LIMIT 1', [$admin['staffel'], $_GET['addmann'], $globals['tid']]);
       SED_Cache::clearTables ( $admin ["staffel"] );
     }
 
     // Mannschaftsverwaltung
     echo "<fieldset class='sed_admin_desk'><legend>Mannschaftsverwaltung</legend><table cellspacing='0' cellpadding='3'>";
-    $teams = SED_Query("SELECT id FROM mannschaften WHERE staffel=? ORDER BY name, mnr, id", [$admin['staffel']])->fetchAllAssociative();
+    $teams = SED_Query('SELECT id FROM mannschaften WHERE staffel=? ORDER BY name, mnr, id', [$admin['staffel']])->fetchAllAssociative();
 
     // Mannschaften auflisten
     foreach ($teams as $team)
@@ -45,7 +45,7 @@
     }
 
     // Neue Mannschaft
-    $availableTeams = SED_Query("SELECT id FROM mannschaften WHERE turnier=? AND staffel=0 ORDER BY name, mnr, id", [$globals['tid']])->fetchAllAssociative();
+    $availableTeams = SED_Query('SELECT id FROM mannschaften WHERE turnier=? AND staffel=0 ORDER BY name, mnr, id', [$globals['tid']])->fetchAllAssociative();
     echo "<tr><td colspan='2'><input type='hidden' name='admin' value='turnstbe-$admin[userid]-$admin[session]' /><input type='hidden' name='staffel' value='$admin[staffel]' /><select name='addmann'>";
     foreach ($availableTeams as $team)
       echo "<option value='".$team['id']."'>" . $globals['teams'][$team['id']] . "</option>";

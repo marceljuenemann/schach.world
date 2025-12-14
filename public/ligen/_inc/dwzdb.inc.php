@@ -58,9 +58,9 @@ class SED_DWZ_Request {
     }
 
     function doQuery ( $limit, $sort ){
-        return SED_Query("
+        return SED_Query('
             SELECT
-                CONCAT(ZPS,'-',Mgl_Nr) zps,
+                CONCAT(ZPS,\'-\',Mgl_Nr) zps,
                 Spielername,
                 FIDE_Titel as titel,
                 DWZ as dwz,
@@ -68,10 +68,10 @@ class SED_DWZ_Request {
                 Geburtsjahr as geburt,
                 LOWER(Geschlecht) as geschlecht
             FROM dwz_spieler WHERE
-                (status IS NULL OR status<>'P')
-                ".$this->where."
-            ORDER BY $sort
-            LIMIT $limit", $this->params
+                (status IS NULL OR status<>\'P\')
+                '.$this->where.'
+            ORDER BY '.$sort.'
+            LIMIT '.$limit, $this->params
         )->fetchAllAssociative();
     }
 
