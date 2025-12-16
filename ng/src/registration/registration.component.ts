@@ -7,10 +7,11 @@ import { RegistrationService } from './registration.service';
 import { CommonModule } from '@angular/common';
 import { NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { NsvTableComponent, TableOptions } from '../core/table/table.component';
+import { SwissChessComponent } from './swiss-chess/swiss-chess.component';
 
 @Component({
     selector: 'nsv-registration',
-    imports: [NgbNavModule, NgbTooltipModule, CommonModule, NsvTableComponent],
+    imports: [NgbNavModule, NgbTooltipModule, CommonModule, NsvTableComponent, SwissChessComponent],
     templateUrl: './registration.component.html',
     styleUrl: './registration.component.css'
 })

@@ -69,6 +69,12 @@
       <nsv-table [options]="tableOptions" [data]="tournament.players"></nsv-table>
     </ng-template>
   </li>
+	<li [ngbNavItem]="4">
+		<button ngbNavLink>Swiss-Chess</button>
+		<ng-template ngbNavContent>
+      <swiss-chess-export [tournament]="tournament"></swiss-chess-export>
+    </ng-template>
+  </li>
 </ul>
 
 <div [ngbNavOutlet]="tabs" class="mt-3"></div>
