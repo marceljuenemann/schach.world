@@ -1,5 +1,6 @@
 import { Component, input } from '@angular/core';
-import { Tournament } from '../tournament';
+import { Group, Tournament } from '../tournament';
+import { downloadJson } from '../../core/util';
 
 @Component({
   selector: 'swiss-chess-export',
@@ -10,7 +11,31 @@ import { Tournament } from '../tournament';
 export class SwissChessComponent {
   tournament = input.required<Tournament>()
 
-  download() {
-
+  export(group: Group) {
+    const players = group.players.map(player => {
+      const data = player.playerData;
+      return {
+        "lastname": data.name,
+        "teamname": data.club || '',
+        "fed": "",
+        "rtg_fid": (data.elo || '').toString(),
+        "rtg_nat": (data.dwz || '').toString(),
+        "title": data.fideTitle || '',
+        "birth": (data.yearOfBirth || '').toString(),
+        "nat_id": "",
+        "fide_id": (data.fideId || '').toString(),
+        "player_id": "",
+        "sex": data.gender || '',
+        "select": "",
+        "zps_fed": "",
+        "zps_team": data.zps || '',
+        "zps_play": data.memberId || '',
+        "info_play_1": "",
+        "info_play_2": "",
+        "info_play_3": "",
+        "info_play_4": "",
+      }
+    })
+    downloadJson({player: players}, `${group.id}.json`);
   }
 }
