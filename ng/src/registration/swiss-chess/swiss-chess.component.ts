@@ -12,6 +12,11 @@ export class SwissChessComponent {
   tournament = input.required<Tournament>()
 
   export(group: Group) {
+    downloadJson(this.generateExport(group), `${group.id}.json`);
+  }
+
+  // visible-for-testing
+  generateExport(group: Group) {
     const players = group.players.map(player => {
       const data = player.playerData;
       return {
@@ -36,6 +41,6 @@ export class SwissChessComponent {
         "info_play_4": "",
       }
     })
-    downloadJson({player: players}, `${group.id}.json`);
+    return { player: players }
   }
 }
