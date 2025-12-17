@@ -27,44 +27,60 @@
 	<li [ngbNavItem]="1">
 		<button ngbNavLink>Übersicht</button>
 		<ng-template ngbNavContent>
-
-      <div ngbAccordion [closeOthers]="true">
-        @for (group of tournament!.groups.values(); track group.id) {
-          @if (!group.config.hidden || this.isManager) {
-            <div ngbAccordionItem [collapsed]="tournament.groups.values.length > 0" [disabled]="group.players.length == 0">
-              <h2 ngbAccordionHeader>
-                <button ngbAccordionButton>
-                  <div>
-                    <div><b>{{ group.name }}</b></div>
-                    <div class="text-muted mt-1" style="font-style: italic">
-                      @if (group.availableSlots != this.INFINITY) {
-                        {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}, {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
-                      } @else {
-                        {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
-                      }
+      @if (tournament.groups.size == 1) {
+        @let group = tournament.groups.values().next().value!;
+        @if (group.players.length) {
+          <h4>Anmeldungen</h4>
+          <div class="text-muted mt-1" style="font-style: italic">
+            @if (group.availableSlots != this.INFINITY) {
+              {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}, {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+            } @else {
+              {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
+            }
+          </div>
+          <nsv-table [options]="overviewTableOptions" [data]="group!.players"></nsv-table>
+        } @else {
+          <div class="alert alert-warning">
+            Noch keine Anmeldungen
+          </div>
+        }
+      } @else {
+        <div ngbAccordion [closeOthers]="true">
+          @for (group of tournament!.groups.values(); track group.id) {
+            @if (!group.config.hidden || this.isManager) {
+              <div ngbAccordionItem [collapsed]="false" [disabled]="group.players.length == 0">
+                <h2 ngbAccordionHeader>
+                  <button ngbAccordionButton>
+                    <div>
+                      <div><b>{{ group.name }}</b></div>
+                      <div class="text-muted mt-1" style="font-style: italic">
+                        @if (group.availableSlots != this.INFINITY) {
+                          {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}, {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+                        } @else {
+                          {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
+                        }
+                      </div>
                     </div>
+                  </button>
+                </h2>
+                <div ngbAccordionCollapse>
+                  <div ngbAccordionBody>
+                    <ng-template>
+                      @if (group.players.length) {
+                        <h5 class="mb-3" style="padding-left: 5px">{{ group.name }}</h5>
+                        <nsv-table [options]="overviewTableOptions" [data]="group.players"></nsv-table>
+                      }
+                    </ng-template>
                   </div>
-                </button>
-              </h2>
-              <div ngbAccordionCollapse>
-                <div ngbAccordionBody>
-                  <ng-template>
-                    @if (group.players.length) {
-                      <h5 class="mb-3" style="padding-left: 5px">{{ group.name }}</h5>
-                      <nsv-table [options]="overviewTableOptions" [data]="group.players"></nsv-table>
-                    }
-                  </ng-template>
                 </div>
               </div>
-            </div>
+            }
           }
-        }
-      </div>
-
-      <div class="mt-3 text-muted">
-        Anmeldungen insgesamt: {{ tournament.players.length - tournament.waitlist.length }}
-      </div>
-
+        </div>
+        <div class="mt-3 text-muted">
+          Anmeldungen insgesamt: {{ tournament.players.length - tournament.waitlist.length }}
+        </div>
+      }
 		</ng-template>
 	</li>
   <li [ngbNavItem]="2">
