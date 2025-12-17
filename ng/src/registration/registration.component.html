@@ -31,7 +31,7 @@
       <div ngbAccordion [closeOthers]="true">
         @for (group of tournament!.groups.values(); track group.id) {
           @if (!group.config.hidden || this.isManager) {
-            <div ngbAccordionItem [collapsed]="true">
+            <div ngbAccordionItem [collapsed]="tournament.groups.values.length > 0" [disabled]="group.players.length == 0">
               <h2 ngbAccordionHeader>
                 <button ngbAccordionButton>
                   <div>
