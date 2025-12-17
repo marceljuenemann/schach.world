@@ -23,35 +23,43 @@
     </div>
   }
 
-  <form [formGroup]="formData" class="mt-4" (keyup.enter)="saveDialog()">
-    @for (group of params.tournament.groups.values(); track group.id) {
-      <div class="form-check">
-        <input
-          type="radio"
-          id="tournamentRadio-{{group.id}}"
-          name="group"
-          formControlName="group"
-          [value]="group.id"
-          [attr.disabled]="!this.params.isManager && (!this.playerData || this.registrationRestriction(group, this.playerData)) || null"
-          class="form-check-input"
-          required>
-        <label class="form-check-label" for="tournamentRadio-{{group.id}}">
-          {{group.name}}
-          @if (this.playerData && this.registrationRestriction(group, this.playerData)) {
-            <span style="font-size: smaller">— {{ this.registrationRestriction(group, this.playerData) }}</span>
-          } @else if (!editing && !group.availableSlots) {
-            &nbsp;<span class="badge text-bg-danger">Warteliste</span>
-          }
-        </label>
-      </div>
-    }
-
-    @if (this.isWaitlistGroupSelected()) {
+  @if (params.tournament.groups.size > 1) {
+    <form [formGroup]="formData" class="mt-4" (keyup.enter)="saveDialog()">
+      @for (group of params.tournament.groups.values(); track group.id) {
+        <div class="form-check">
+          <input
+            type="radio"
+            id="tournamentRadio-{{group.id}}"
+            name="group"
+            formControlName="group"
+            [value]="group.id"
+            [attr.disabled]="!this.params.isManager && this.registrationRestriction(group) || null"
+            class="form-check-input"
+            required>
+          <label class="form-check-label" for="tournamentRadio-{{group.id}}">
+            {{group.name}}
+            @if (this.registrationRestriction(group)) {
+              <span style="font-size: smaller">— {{ this.registrationRestriction(group) }}</span>
+            } @else if (!editing && !group.availableSlots) {
+              &nbsp;<span class="badge text-bg-danger">Warteliste</span>
+            }
+          </label>
+        </div>
+      }
+    </form>
+  } @else if (params.tournament.singleGroup) {
+    <!-- If there is only one group, still show registration restrictions. -->
+    @if (this.registrationRestriction(params.tournament.singleGroup)) {
       <div class="alert alert-danger mt-3">
-        <strong>Warteliste:</strong> Die Anmeldegrenze für dieses Turnier ist bereits erreicht, aber Sie können sich für die Warteliste registrieren. Sie werden benachrichtigt, sollte ein Platz frei werden.
+        <strong>Anmeldung nicht möglich:</strong> {{ this.registrationRestriction(params.tournament.singleGroup) }}
       </div>
     }
-  </form>
+  }
+  @if (this.isWaitlistGroupSelected()) {
+    <div class="alert alert-danger mt-3">
+      <strong>Warteliste:</strong> Die Anmeldegrenze für dieses Turnier ist bereits erreicht, aber Sie können sich für die Warteliste registrieren. Sie werden benachrichtigt, sollte ein Platz frei werden.
+    </div>
+  }
 
   <nsv-form [form]="additionalFields" [validationErrors]="errors?.validationErrors" validationErrorPrefix="additionalFields."></nsv-form>
 

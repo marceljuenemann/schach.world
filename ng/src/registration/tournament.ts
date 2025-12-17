@@ -51,6 +51,16 @@ export class Tournament {
       }
     });
   }
+
+  /**
+   * Returns the only group of the tournament, if there is exactly one group.
+   */
+  get singleGroup(): Group | null {
+    if (this.groups.size == 1) {
+      return this.groups.values().next().value!
+    }
+    return null
+  }
 }
 
 export class Group {

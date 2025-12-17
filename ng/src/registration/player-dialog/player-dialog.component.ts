@@ -41,8 +41,9 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
   ) {
     super()
 
-    // Make sure managers can still select disabled options.
+    // Create form fields for additional fields.
     this.additionalFields.addControls((this.params.tournament.config.additionalFields || []).map(field => {
+      // Make sure managers can still select disabled options.
       if (this.params.isManager && field.options) {
         // Defensive copy to not modify original config.
         field = {...field, options: field.options.map(opt => {
@@ -56,6 +57,7 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
       return field
     }))
 
+    // Prefill form data.
     if (this.params.player) {
       this.formData.patchValue(this.params.player)
     } else if (this.params.lastPlayer) {
@@ -75,33 +77,40 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
       this.contactDetails.controls.name.setValue(playerData.name)
     }
     // Possibly unselect current group selection and select last valid group.
-    if (!this.selectedGroup || this.registrationRestriction(this.params.tournament.groups.get(this.selectedGroup)!, playerData)) {
+    if (!this.selectedGroup || this.registrationRestriction(this.params.tournament.groups.get(this.selectedGroup)!)) {
       this.formData.controls.group.setValue(null)
       if (playerData.zps) {
         for (let group of Array.from(this.params.tournament.groups.values()).reverse()) {
-          if (!group.config.hidden && !this.registrationRestriction(group, playerData)) {
+          if (!group.config.hidden && !this.registrationRestriction(group)) {
             this.formData.controls.group.setValue(group.id)
             break
           }
         }
       }
     }
+    // If there's only one group, select it automatically.
+    if (this.params.tournament.singleGroup) {
+      if (this.params.isManager || !this.registrationRestriction(this.params.tournament.singleGroup)) {
+        this.formData.controls.group.setValue(this.params.tournament.singleGroup.id)
+      }
+    }
   }
 
   /**
-   * Return the reason why a player may not register for the given group, if any.
+   * Return the reason why the selected player may not register for the given group, if any.
    */
-  registrationRestriction(group: Group, playerData: PlayerData): string | null {
-    if (group.config.minYearOfBirth && (playerData.yearOfBirth || 0) < group.config.minYearOfBirth) {
+  registrationRestriction(group: Group): string | null {
+    if (!this.playerData) return null
+    if (group.config.minYearOfBirth && (this.playerData.yearOfBirth || 0) < group.config.minYearOfBirth) {
       return `bis Jahrgang ${group.config.minYearOfBirth}`
     }
-    if (group.config.minDwz && (playerData.dwz || 0) < group.config.minDwz) {
+    if (group.config.minDwz && (this.playerData.dwz || 0) < group.config.minDwz) {
       return `ab DWZ ${group.config.minDwz}`
     }
-    if (group.config.maxDwz && (playerData.dwz || 0) > group.config.maxDwz) {
+    if (group.config.maxDwz && (this.playerData.dwz || 0) > group.config.maxDwz) {
       return `bis DWZ ${group.config.maxDwz}`
     }
-    if (group.config.requireFideId && !playerData.fideId) {
+    if (group.config.requireFideId && !this.playerData.fideId) {
       return `FIDE-ID erforderlich`
     }
     return null
