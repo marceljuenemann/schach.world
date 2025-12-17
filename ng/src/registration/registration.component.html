@@ -31,7 +31,7 @@
         @let group = tournament.groups.values().next().value!;
         @if (group.players.length) {
           <h4>Anmeldungen</h4>
-          <div class="text-muted mt-1" style="font-style: italic">
+          <div class="text-muted mt-1 mb-2" style="font-style: italic">
             @if (group.availableSlots != this.INFINITY) {
               {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}, {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
             } @else {
