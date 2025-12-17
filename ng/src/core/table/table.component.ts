@@ -1,7 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, TemplateRef, computed, input, linkedSignal, Signal } from '@angular/core';
+import { Component, TemplateRef, computed, input, linkedSignal, Signal, signal, model } from '@angular/core';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { downloadCsv, genericCompare } from '../util';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { toSignal } from '@angular/core/rxjs-interop';
+
+const MIN_ENTRIES_FOR_SEARCH = 10;
 
 export type TableColumn<Row extends object, Value> = {
   id: string,
@@ -25,6 +29,7 @@ export type TableOptions<Row extends object> = {
   columns: TableColumn<Row, any>[]
   idFn: (row: Row) => string | number  // Function to get a unique ID for each row.
   defaultSorting?: SortState[]  // Defaults to no sorting.
+  searchColumns?: string[]  // If provided, a search box is shown that filters by the given columns.
   showColumnSelection?: boolean  // If enabled, user can configure visible columns.
   csvFileName?: (data: any[][]) => string  // If provided, CSV export is enabled.
   showRowCount?: boolean  // If true, show the number of rows below the table. Defaults to false.
@@ -32,7 +37,7 @@ export type TableOptions<Row extends object> = {
 
 @Component({
     selector: 'nsv-table',
-    imports: [NgbDropdownModule, CommonModule],
+    imports: [NgbDropdownModule, ReactiveFormsModule, CommonModule],
     templateUrl: './table.component.html',
     styleUrl: './table.component.css'
 })
@@ -41,6 +46,27 @@ export class NsvTableComponent {
   data = input.required<object[]>();
 
   columnVisibility = new Map<string, boolean>();
+
+  search = new FormControl('');
+  search$ = toSignal(this.search.valueChanges);
+
+  filteredData = computed(() => {
+    const tokens = (this.search$() || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+    if (!tokens.length) {
+      return this.data();
+    }
+    return this.data().filter(row => {
+      // Ensure all tokens are found in the row.
+      return tokens.every(token => {
+        return (this.options().searchColumns || []).some(columnId => {
+          const column = this.options().columns.find(col => col.id === columnId);
+          if (!column) return false;
+          const value = this.getValue(row, column);
+          return value != null && value.toString().toLowerCase().includes(token.toLowerCase());
+        });
+      });
+    });
+  })
 
   // We use an array of SortState to allow multi-column sorting.
   sortState = linkedSignal<SortState[]>(() => {
@@ -54,9 +80,9 @@ export class NsvTableComponent {
   });
   sortedData = computed(() => {
     if (!this.sortState().length) {
-      return this.data();
+      return this.filteredData();
     } else {
-      return [...this.data()].sort((a, b) => {
+      return [...this.filteredData()].sort((a, b) => {
         for (const sort of this.sortState()) {
           const aValue = this.getValue(a, this.getColumn(sort.columnId));
           const bValue = this.getValue(b, this.getColumn(sort.columnId));
@@ -114,6 +140,10 @@ export class NsvTableComponent {
     return this.options().columns.filter(col => {
       return col.responsiveBelow === columnId && this.isColumnVisible(col);
     })
+  }
+
+  get showSearch(): boolean {
+    return !!this.options().searchColumns && this.data().length >= MIN_ENTRIES_FOR_SEARCH;
   }
 
   exportCsv() {

@@ -66,6 +66,7 @@ export class RegistrationComponent implements OnInit {
       { columnId: 'waitlist', direction: 'asc' },
       { columnId: 'name', direction: 'asc' }
     ],
+    searchColumns: ['name', 'club'],
     showColumnSelection: true,
     showRowCount: true,
     csvFileName: () => `${this.tournament?.config.id}-${new Date().toISOString().substring(0, 10)}.csv`
@@ -78,6 +79,7 @@ export class RegistrationComponent implements OnInit {
     }),
     idFn: this.tableOptions.idFn,
     defaultSorting: [{ columnId: 'created', direction: 'asc' }],
+    searchColumns: ['name', 'club'],
     showColumnSelection: true,
     showRowCount: true
   }
@@ -90,7 +92,8 @@ export class RegistrationComponent implements OnInit {
       { id: 'actions', label: '', sortable: false, templateRef: this.playerActionsTemplate, visibility: 'always' }
     ],
     idFn: (player: Player) => player.id,
-    defaultSorting: [{ columnId: 'dwz', direction: 'desc' }]
+    defaultSorting: [{ columnId: 'dwz', direction: 'desc' }],
+    searchColumns: ['name', 'club'],
   }
 
   constructor(

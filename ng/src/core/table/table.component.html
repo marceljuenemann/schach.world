@@ -1,34 +1,47 @@
-@if (options().showColumnSelection || options().csvFileName) {
-  <div class="mb-2 text-end">
-    @if (options().csvFileName) {
-      <button type="button" class="btn btn-primary btn-sm d-inline-block" style="margin-right: 8px" (click)="exportCsv()">
-        <span class="dashicons dashicons-download" style="vertical-align: bottom"></span>
-        CSV
-      </button>
-    }
-
-    @if (options().showColumnSelection) {
-      <div ngbDropdown autoClose="outside" class="d-inline-block">
-        <button ngbDropdownToggle type="button" class="btn btn-primary btn-sm">
-          <span class="dashicons dashicons-admin-settings" style="vertical-align: bottom"></span>
-          Spalten
-        </button>
-        <div ngbDropdownMenu>
-          @for (column of options().columns; track column.id) {
-            @if (column.visibility !== 'always' && column.visibility !== 'never') {
-              <button ngbDropdownItem (click)="toggleColumnVisibility(column)">
-                <span style="min-width: 16px; display: inline-block">
-                  @if (isColumnVisible(column)) {
-                    ✓
-                  }
-                </span>
-                {{ column.label }}
-              </button>
-            }
-          }
+@if (this.showSearch || options().showColumnSelection || options().csvFileName) {
+  <div class="d-flex justify-content-between mb-2">
+    <div>
+      @if (this.showSearch) {
+        <div class="input-group input-group-sm">
+          <input type="text" class="form-control" placeholder="Suchen..." aria-label="Suchen"
+            [formControl]="search">
+          <button class="btn btn-outline-secondary" type="button">
+            <span class="dashicons dashicons-search"></span>
+          </button>
         </div>
-      </div>
-    }
+      }
+    </div>
+    <div>
+      @if (options().csvFileName) {
+        <button type="button" class="btn btn-primary btn-sm d-inline-block" style="margin-right: 8px" (click)="exportCsv()">
+          <span class="dashicons dashicons-download" style="vertical-align: bottom"></span>
+          CSV
+        </button>
+      }
+
+      @if (options().showColumnSelection) {
+        <div ngbDropdown autoClose="outside" class="d-inline-block">
+          <button ngbDropdownToggle type="button" class="btn btn-primary btn-sm">
+            <span class="dashicons dashicons-admin-settings" style="vertical-align: bottom"></span>
+            Spalten
+          </button>
+          <div ngbDropdownMenu>
+            @for (column of options().columns; track column.id) {
+              @if (column.visibility !== 'always' && column.visibility !== 'never') {
+                <button ngbDropdownItem (click)="toggleColumnVisibility(column)">
+                  <span style="min-width: 16px; display: inline-block">
+                    @if (isColumnVisible(column)) {
+                      ✓
+                    }
+                  </span>
+                  {{ column.label }}
+                </button>
+              }
+            }
+          </div>
+        </div>
+      }
+    </div>
   </div>
 }
 
@@ -89,4 +102,9 @@
     {{ this.sortedData().length }}
     {{ this.sortedData().length != 1 ? 'Einträge' : 'Eintrag' }}
   </div>
+} @else if (this.filteredData().length == 0) {
+  <div class="alert alert-secondary">
+    Keine Einträge
+  </div>
 }
+
