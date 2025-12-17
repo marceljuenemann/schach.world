@@ -5,13 +5,26 @@ import { DialogService } from '../core/dialog/dialog.service';
 import { Tournament } from './tournament';
 import { RegistrationService } from './registration.service';
 import { CommonModule } from '@angular/common';
-import { NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAccordionBody, NgbAccordionButton, NgbAccordionCollapse, NgbAccordionDirective, NgbAccordionHeader, NgbAccordionItem, NgbAccordionToggle, NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { NsvTableComponent, TableOptions } from '../core/table/table.component';
 import { SwissChessComponent } from './swiss-chess/swiss-chess.component';
 
 @Component({
     selector: 'nsv-registration',
-    imports: [NgbNavModule, NgbTooltipModule, CommonModule, NsvTableComponent, SwissChessComponent],
+    imports: [
+      CommonModule,
+      NgbAccordionBody,
+      NgbAccordionButton,
+      NgbAccordionDirective,
+      NgbAccordionHeader,
+      NgbAccordionItem,
+      NgbAccordionToggle,
+      NgbAccordionCollapse,
+      NgbNavModule,
+      NgbTooltipModule,
+      NsvTableComponent,
+      SwissChessComponent
+    ],
     templateUrl: './registration.component.html',
     styleUrl: './registration.component.css'
 })
