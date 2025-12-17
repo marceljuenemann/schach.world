@@ -48,7 +48,7 @@ export class RegistrationComponent implements OnInit {
       { id: 'group', label: 'Turnier', valueFn: (player: Player) => player.group },
       { id: 'waitlist', label: 'Warteliste', valueFn: (player: Player) => player.waitlist ? 'Ja' : 'Nein' },
       { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always', templateRef: this.playerNameTemplate },
-      { id: 'club', label: 'Verein', valueFn: (player: Player) => player.playerData.club },
+      { id: 'club', label: 'Verein', responsiveBelow: 'name', valueFn: (player: Player) => player.playerData.club },
       { id: 'gender', label: 'Geschlecht', valueFn: (player: Player) => player.playerData.gender, visibility: 'hide' },
       { id: 'yearOfBirth', label: 'Geburtsjahr', valueFn: (player: Player) => player.playerData.yearOfBirth, defaultSortDirection: 'desc', visibility: 'hide' },
       { id: 'dwz', label: 'DWZ', valueFn: (player: Player) => player.playerData.dwz, defaultSortDirection: 'desc' },
@@ -84,7 +84,7 @@ export class RegistrationComponent implements OnInit {
   overviewTableOptions: TableOptions<Player> = {
     columns: [
       { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always', templateRef: this.playerNameTemplate },
-      { id: 'club', label: 'Verein', valueFn: (player: Player) => player.playerData.club },
+      { id: 'club', label: 'Verein', responsiveBelow: 'name', valueFn: (player: Player) => player.playerData.club },
       { id: 'dwz', label: 'DWZ', valueFn: (player: Player) => player.playerData.dwz, defaultSortDirection: 'desc' },
       { id: 'elo', label: 'Elo', valueFn: (player: Player) => player.playerData.elo, defaultSortDirection: 'desc' },
       { id: 'actions', label: '', sortable: false, templateRef: this.playerActionsTemplate, visibility: 'always' }

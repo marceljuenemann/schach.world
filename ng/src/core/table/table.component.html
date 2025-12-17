@@ -36,7 +36,10 @@
   <thead>
     <tr>
       @for (column of visibleColumns(); track column.id) {
-        <th [class.sortable]="column.sortable !== false" (click)="onHeaderClick(column)">
+        <th [class.sortable]="column.sortable !== false"
+            [class.d-none]="column.responsiveBelow"
+            [class.d-md-table-cell]="column.responsiveBelow"
+            (click)="onHeaderClick(column)">
           {{ column.label }}
           @if (sortColumn() == column.id) {
             <span class="sort-indicator">
@@ -55,11 +58,24 @@
     @for (row of sortedData(); track options().idFn(row)) {
       <tr>
         @for (column of visibleColumns(); track column.id) {
-          <td>
+          <td [class.d-none]="column.responsiveBelow"
+              [class.d-md-table-cell]="column.responsiveBelow"
+          >
             @if (column.templateRef) {
               <ng-container [ngTemplateOutlet]="column.templateRef()" [ngTemplateOutletContext]="{ row: row }"></ng-container>
             } @else {
               {{ getValue(row, column) }}
+            }
+
+            <!-- Possibly show other columns below on small devices -->
+            @for (colocatedColumn of colocatedColumns(column.id); track colocatedColumn.id) {
+              <div class="d-md-none mt-1">
+                @if (colocatedColumn.templateRef) {
+                  <ng-container [ngTemplateOutlet]="colocatedColumn.templateRef()" [ngTemplateOutletContext]="{ row: row }"></ng-container>
+                } @else {
+                  <i>{{ getValue(row, colocatedColumn) }}</i>&nbsp;
+                }
+              </div>
             }
           </td>
         }

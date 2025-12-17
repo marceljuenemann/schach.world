@@ -12,6 +12,8 @@ export type TableColumn<Row extends object, Value> = {
   templateRef?: Signal<TemplateRef<any>>  // Defaults to displaying the value
   visibility?: 'show' | 'hide' | 'always' | 'never'  // Defaults to 'show'
   skipExport?: boolean  // Defaults to false
+  // If set, the column will be shown below the specified column on small devices
+  responsiveBelow?: string
 }
 
 export type SortState = {
@@ -104,6 +106,15 @@ export class NsvTableComponent {
 
   visibleColumns() {
     return this.options().columns.filter(column => this.isColumnVisible(column));
+  }
+
+  /**
+   * Returns all columns that should be shown below the given column on small devices.
+   */
+  colocatedColumns(columnId: string) {
+    return this.options().columns.filter(col => {
+      return col.responsiveBelow === columnId && this.isColumnVisible(col);
+    })
   }
 
   exportCsv() {
