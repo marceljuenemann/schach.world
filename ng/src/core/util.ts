@@ -36,3 +36,21 @@ export function downloadFile(content: string, filename: string, contentType: str
   link.click();
   document.body.removeChild(link);
 }
+
+/**
+ * Uses localCompare for strings and normal comparison for numbers.
+ */
+export function genericCompare(a: any, b: any, order: 'asc' | 'desc', nullsFirst: boolean = false): number {
+  return genericCompareAsc(a, b, nullsFirst) * (order === 'asc' ? 1 : -1);
+}
+
+function genericCompareAsc(a: any, b: any, nullsFirst: boolean): number {
+  if (typeof a === 'number' && typeof b === 'number') {
+    return a - b;
+  } else if (a === null && b !== null) {
+    return nullsFirst ? -1 : 1;
+  } else if (a !== null && b === null) {
+    return nullsFirst ? 1 : -1;
+  }
+  return String(a).localeCompare(String(b));
+}

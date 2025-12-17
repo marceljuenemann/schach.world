@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, TemplateRef, computed, input, linkedSignal, Signal } from '@angular/core';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
-import { downloadCsv } from '../util';
+import { downloadCsv, genericCompare } from '../util';
 
 export type TableColumn<Row extends object, Value> = {
   id: string,
@@ -60,8 +60,7 @@ export class NsvTableComponent {
         for (const sort of this.sortState()) {
           const aValue = this.getValue(a, this.getColumn(sort.columnId));
           const bValue = this.getValue(b, this.getColumn(sort.columnId));
-          if (aValue < bValue) return sort.direction === 'asc' ? -1 : 1;
-          if (aValue > bValue) return sort.direction === 'asc' ? 1 : -1;
+          return genericCompare(aValue, bValue, sort.direction, true /* nullsFirst */);
         }
         return 0;
       });
