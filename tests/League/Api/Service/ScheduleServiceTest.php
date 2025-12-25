@@ -8,10 +8,14 @@ use Nsv\League\Entity\League;
 class ScheduleServiceTest extends AbstractApiTest
 {
   private ScheduleService $service;
+  private League $league;
+  private Division $division;
 
   protected function setUp(): void {
     parent::setUp();
     $this->service = $this->container->get(ScheduleService::class);
+    $this->league = $this->leagueRepository->findByPathOrPrefix('nsj-1819');
+    $this->division = $this->league->divisionByPath('landesklasse-sued');
   }
 
   public function testClosestDate() {
@@ -39,31 +43,32 @@ class ScheduleServiceTest extends AbstractApiTest
   }
 
   public function testClosestRound_futureDate_returnsFirst() {
-    // Round 2 and 4 are both set to 2025-02-02 in LeagueFixture.
-    $round = $this->service->closestRound($this->division, '2024-02-01');
-    $this->assertEquals('2024-02-02', $round->date);
-    $this->assertEquals(2, $round->round);
+    // Round 5, 6 and 7 are all scheduled for 2018-12-02.
+    $round = $this->service->closestRound($this->division, '2018-11-20');
+    $this->assertEquals('2018-12-02', $round->date);
+    $this->assertEquals(5, $round->round);
   }
 
   public function testClosestRound_sameDate_returnsFirst() {
-    // Round 2 and 4 are both set to 2025-02-02 in LeagueFixture.
-    $round = $this->service->closestRound($this->division, '2024-02-02');
-    $this->assertEquals('2024-02-02', $round->date);
-    $this->assertEquals(2, $round->round);
+    // Round 5, 6 and 7 are all scheduled for 2018-12-02.
+    $round = $this->service->closestRound($this->division, '2018-12-02');
+    $this->assertEquals('2018-12-02', $round->date);
+    $this->assertEquals(5, $round->round);
   }
 
   public function testClosestRound_pastDate_returnsLast() {
-    // Round 2 and 4 are both set to 2025-02-02 in LeagueFixture.
-    $round = $this->service->closestRound($this->division, '2024-02-03');
-    $this->assertEquals('2024-02-02', $round->date);
-    $this->assertEquals(4, $round->round);
+    // Round 5, 6 and 7 are all scheduled for 2018-12-02.
+    $round = $this->service->closestRound($this->division, '2018-12-03');
+    $this->assertEquals('2018-12-02', $round->date);
+    $this->assertEquals(7, $round->round);
   }
 
   public function testClosestRound_roundWithNoPairing_roundIgnored() {
-    // Round 3 is scheduled on 2025-03-03, but has no pairings.
-    $round = $this->service->closestRound($this->division, '2025-03-03');
-    $this->assertEquals(1, $round->round);
-    $this->assertEquals('2025-01-01', $round->date);
+    // Round 7 is scheduled on 2019-05-05, but has no pairings.
+    $division = $this->league->divisionByPath('aufstiegsspiele');
+    $round = $this->service->closestRound($division, '2019-05-17');
+    $this->assertEquals(3, $round->round);
+    $this->assertEquals('2019-05-04', $round->date);
   }
 
   public function testClosestRound_noDates_noRoundReturned() {

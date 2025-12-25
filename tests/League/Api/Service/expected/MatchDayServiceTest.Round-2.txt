@@ -1,39 +1,39 @@
 Nsv\League\Api\Model\MatchDay Object
 (
     [round] => 2
-    [date] => 2024-02-02
-    [uri] => /ligen/test/test-division/2/
-    [uriPdf] => /ligen/test/test-division/2/pdf/
-    [uriPgn] => /ligen/test/test-division/2/pgn/
-    [uriApi] => /ligen/test/api/divisions/test-division/rounds/2/
+    [date] => 2025-11-16
+    [uri] => /ligen/nsv-2526/landesliga-nord/2/
+    [uriPdf] => /ligen/nsv-2526/landesliga-nord/2/pdf/
+    [uriPgn] => /ligen/nsv-2526/landesliga-nord/2/pgn/
+    [uriApi] => /ligen/nsv-2526/api/divisions/landesliga-nord/rounds/2/
     [pairings] => Array
         (
             [0] => Nsv\League\Api\Model\Pairing Object
                 (
-                    [id] => 3
+                    [id] => 38673
                     [round] => 2
                     [team1] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 2
-                            [name] => Team 2
-                            [zps] => 
-                            [uri] => /ligen/test/m/2/
-                            [apiUri] => /ligen/test/api/teams/2/
+                            [id] => 8324
+                            [name] => Fortuna Logabirum
+                            [zps] => 70506
+                            [uri] => /ligen/nsv-2526/m/8324/
+                            [apiUri] => /ligen/nsv-2526/api/teams/8324/
                         )
 
                     [team2] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 1
-                            [name] => Team
-                            [zps] => 
-                            [uri] => /ligen/test/m/1/
-                            [apiUri] => /ligen/test/api/teams/1/
+                            [id] => 8323
+                            [name] => SG Osnabrück
+                            [zps] => 70608
+                            [uri] => /ligen/nsv-2526/m/8323/
+                            [apiUri] => /ligen/nsv-2526/api/teams/8323/
                         )
 
                     [host] => 
-                    [result] => 
-                    [result1] => 
-                    [result2] => 
+                    [result] => 3 : 5
+                    [result1] => 3
+                    [result2] => 5
                     [comment] => 
                     [wasMoved] => 
                     [moveDate] => 
@@ -44,42 +44,42 @@ Nsv\League\Api\Model\MatchDay Object
                                     [board] => 1
                                     [player1] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 2
-                                            [name] => Salzmann, Jan
-                                            [lastName] => Salzmann
-                                            [firstName] => Jan
+                                            [id] => 538122
+                                            [name] => Player f189, f640fd3
+                                            [lastName] => Player f189
+                                            [firstName] => f640fd3
                                             [title] => 
-                                            [number] => 201
-                                            [zps] => 70101-1023
-                                            [dwz] => 1500
-                                            [elo] => 
+                                            [number] => 1
+                                            [zps] => 70506-974
+                                            [dwz] => 2142
+                                            [elo] => 2108
                                             [gender] => m
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/2/
-                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+                                            [uri] => /ligen/nsv-2526/s/538122/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70506-974
                                         )
 
                                     [player2] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 1
-                                            [name] => GM Dr. Jünemann, Marcel
-                                            [lastName] => Jünemann
-                                            [firstName] => Marcel
-                                            [title] => GM Dr.
+                                            [id] => 538055
+                                            [name] => FM Player 5c2d, a1df188
+                                            [lastName] => Player 5c2d
+                                            [firstName] => a1df188
+                                            [title] => FM
                                             [number] => 1
-                                            [zps] => 70156-117
-                                            [dwz] => 1942
-                                            [elo] => 2020
-                                            [gender] => w
+                                            [zps] => 70608-1546
+                                            [dwz] => 2228
+                                            [elo] => 2249
+                                            [gender] => m
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/1/
-                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
+                                            [uri] => /ligen/nsv-2526/s/538055/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70608-1546
                                         )
 
-                                    [result1] => +
-                                    [result2] => -
+                                    [result1] => ½
+                                    [result2] => ½
                                 )
 
                             [1] => Nsv\League\Api\Model\Game Object
@@ -87,42 +87,42 @@ Nsv\League\Api\Model\MatchDay Object
                                     [board] => 2
                                     [player1] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 2
-                                            [name] => Salzmann, Jan
-                                            [lastName] => Salzmann
-                                            [firstName] => Jan
+                                            [id] => 538123
+                                            [name] => Player 833c, b093c7b
+                                            [lastName] => Player 833c
+                                            [firstName] => b093c7b
                                             [title] => 
-                                            [number] => 201
-                                            [zps] => 70101-1023
-                                            [dwz] => 1500
-                                            [elo] => 
+                                            [number] => 2
+                                            [zps] => 70506-1097
+                                            [dwz] => 2008
+                                            [elo] => 2053
                                             [gender] => m
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/2/
-                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+                                            [uri] => /ligen/nsv-2526/s/538123/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70506-1097
                                         )
 
                                     [player2] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 1
-                                            [name] => GM Dr. Jünemann, Marcel
-                                            [lastName] => Jünemann
-                                            [firstName] => Marcel
-                                            [title] => GM Dr.
-                                            [number] => 1
-                                            [zps] => 70156-117
-                                            [dwz] => 1942
-                                            [elo] => 2020
-                                            [gender] => w
+                                            [id] => 538059
+                                            [name] => Player c6f6, 4d748fb
+                                            [lastName] => Player c6f6
+                                            [firstName] => 4d748fb
+                                            [title] => 
+                                            [number] => 5
+                                            [zps] => 70608-851
+                                            [dwz] => 1992
+                                            [elo] => 1993
+                                            [gender] => m
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/1/
-                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
+                                            [uri] => /ligen/nsv-2526/s/538059/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70608-851
                                         )
 
-                                    [result1] => ?
-                                    [result2] => ?
+                                    [result1] => 1
+                                    [result2] => 0
                                 )
 
                             [2] => Nsv\League\Api\Model\Game Object
@@ -130,42 +130,42 @@ Nsv\League\Api\Model\MatchDay Object
                                     [board] => 3
                                     [player1] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 2
-                                            [name] => Salzmann, Jan
-                                            [lastName] => Salzmann
-                                            [firstName] => Jan
+                                            [id] => 538124
+                                            [name] => Player 4e1a, 87e90fe
+                                            [lastName] => Player 4e1a
+                                            [firstName] => 87e90fe
                                             [title] => 
-                                            [number] => 201
-                                            [zps] => 70101-1023
-                                            [dwz] => 1500
-                                            [elo] => 
+                                            [number] => 3
+                                            [zps] => 70506-1474
+                                            [dwz] => 2002
+                                            [elo] => 1924
                                             [gender] => m
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/2/
-                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+                                            [uri] => /ligen/nsv-2526/s/538124/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70506-1474
                                         )
 
                                     [player2] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 1
-                                            [name] => GM Dr. Jünemann, Marcel
-                                            [lastName] => Jünemann
-                                            [firstName] => Marcel
-                                            [title] => GM Dr.
-                                            [number] => 1
-                                            [zps] => 70156-117
-                                            [dwz] => 1942
-                                            [elo] => 2020
-                                            [gender] => w
+                                            [id] => 538060
+                                            [name] => Player c757, 4b36816
+                                            [lastName] => Player c757
+                                            [firstName] => 4b36816
+                                            [title] => 
+                                            [number] => 6
+                                            [zps] => 70608-1458
+                                            [dwz] => 1974
+                                            [elo] => 2061
+                                            [gender] => m
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/1/
-                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
+                                            [uri] => /ligen/nsv-2526/s/538060/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70608-1458
                                         )
 
-                                    [result1] => ?
-                                    [result2] => ?
+                                    [result1] => 1
+                                    [result2] => 0
                                 )
 
                             [3] => Nsv\League\Api\Model\Game Object
@@ -173,25 +173,1730 @@ Nsv\League\Api\Model\MatchDay Object
                                     [board] => 4
                                     [player1] => Nsv\League\Api\Model\Player Object
                                         (
-                                            [id] => 2
-                                            [name] => Salzmann, Jan
-                                            [lastName] => Salzmann
-                                            [firstName] => Jan
+                                            [id] => 538125
+                                            [name] => Player cce3, 4a76b15
+                                            [lastName] => Player cce3
+                                            [firstName] => 4a76b15
                                             [title] => 
-                                            [number] => 201
-                                            [zps] => 70101-1023
-                                            [dwz] => 1500
+                                            [number] => 4
+                                            [zps] => 70506-244
+                                            [dwz] => 2028
+                                            [elo] => 2148
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538125/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70506-244
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538061
+                                            [name] => Player 14f3, 33c1bd7
+                                            [lastName] => Player 14f3
+                                            [firstName] => 33c1bd7
+                                            [title] => 
+                                            [number] => 7
+                                            [zps] => 70608-823
+                                            [dwz] => 2044
+                                            [elo] => 2188
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538061/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70608-823
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [4] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 5
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538126
+                                            [name] => Player 4bf2, 01d5756
+                                            [lastName] => Player 4bf2
+                                            [firstName] => 01d5756
+                                            [title] => 
+                                            [number] => 5
+                                            [zps] => 70506-1397
+                                            [dwz] => 1908
+                                            [elo] => 1971
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538126/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70506-1397
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538062
+                                            [name] => Player 07b1, 2848553
+                                            [lastName] => Player 07b1
+                                            [firstName] => 2848553
+                                            [title] => 
+                                            [number] => 8
+                                            [zps] => 70608-275
+                                            [dwz] => 1984
+                                            [elo] => 1944
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538062/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70608-275
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                            [5] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 6
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538128
+                                            [name] => Player 30bd, 1d9b51d
+                                            [lastName] => Player 30bd
+                                            [firstName] => 1d9b51d
+                                            [title] => 
+                                            [number] => 7
+                                            [zps] => 70506-1090
+                                            [dwz] => 1793
+                                            [elo] => 1836
+                                            [gender] => w
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538128/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70506-1090
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538064
+                                            [name] => Player f4aa, 34e5731
+                                            [lastName] => Player f4aa
+                                            [firstName] => 34e5731
+                                            [title] => 
+                                            [number] => 10
+                                            [zps] => 70608-873
+                                            [dwz] => 2009
+                                            [elo] => 2017
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538064/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70608-873
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                            [6] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 7
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538129
+                                            [name] => Player ceea, 58f5b47
+                                            [lastName] => Player ceea
+                                            [firstName] => 58f5b47
+                                            [title] => 
+                                            [number] => 8
+                                            [zps] => 70506-966
+                                            [dwz] => 1860
                                             [elo] => 
                                             [gender] => m
                                             [isGuest] => 
                                             [lateRegistrationRound] => 
-                                            [uri] => /ligen/test/s/2/
-                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+                                            [uri] => /ligen/nsv-2526/s/538129/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70506-966
                                         )
 
-                                    [player2] => 
-                                    [result1] => +
-                                    [result2] => -
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538065
+                                            [name] => Player ccb8, 3461271
+                                            [lastName] => Player ccb8
+                                            [firstName] => 3461271
+                                            [title] => 
+                                            [number] => 11
+                                            [zps] => 70608-1213
+                                            [dwz] => 1944
+                                            [elo] => 1941
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538065/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70608-1213
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                            [7] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 8
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538139
+                                            [name] => Player 0036, a2a690f
+                                            [lastName] => Player 0036
+                                            [firstName] => a2a690f
+                                            [title] => 
+                                            [number] => 18
+                                            [zps] => 70506-1242
+                                            [dwz] => 1533
+                                            [elo] => 1779
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538139/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70506-1242
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538067
+                                            [name] => Player 598c, 93ad56a
+                                            [lastName] => Player 598c
+                                            [firstName] => 93ad56a
+                                            [title] => 
+                                            [number] => 13
+                                            [zps] => 70608-295
+                                            [dwz] => 1855
+                                            [elo] => 1918
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538067/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70608-295
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                        )
+
+                )
+
+            [1] => Nsv\League\Api\Model\Pairing Object
+                (
+                    [id] => 38674
+                    [round] => 2
+                    [team1] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 8320
+                            [name] => SG Ammerland
+                            [zps] => 70526
+                            [uri] => /ligen/nsv-2526/m/8320/
+                            [apiUri] => /ligen/nsv-2526/api/teams/8320/
+                        )
+
+                    [team2] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 8333
+                            [name] => SK Nordhorn-Blanke 2
+                            [zps] => 70616
+                            [uri] => /ligen/nsv-2526/m/8333/
+                            [apiUri] => /ligen/nsv-2526/api/teams/8333/
+                        )
+
+                    [host] => 
+                    [result] => 3 : 5
+                    [result1] => 3
+                    [result2] => 5
+                    [comment] => 
+                    [wasMoved] => 
+                    [moveDate] => 
+                    [games] => Array
+                        (
+                            [0] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 1
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537983
+                                            [name] => Player 96a4, a0a595e
+                                            [lastName] => Player 96a4
+                                            [firstName] => a0a595e
+                                            [title] => 
+                                            [number] => 1
+                                            [zps] => 70526-573
+                                            [dwz] => 2183
+                                            [elo] => 
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537983/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70526-573
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538273
+                                            [name] => Player bab5, f25edfa
+                                            [lastName] => Player bab5
+                                            [firstName] => f25edfa
+                                            [title] => 
+                                            [number] => 4
+                                            [zps] => 70616-1492
+                                            [dwz] => 2040
+                                            [elo] => 2040
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538273/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70616-1492
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [1] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 2
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537985
+                                            [name] => Player a284, c2a4ffb
+                                            [lastName] => Player a284
+                                            [firstName] => c2a4ffb
+                                            [title] => 
+                                            [number] => 3
+                                            [zps] => 70526-646
+                                            [dwz] => 1951
+                                            [elo] => 2104
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537985/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70526-646
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538277
+                                            [name] => Player 58fc, 48ae76a
+                                            [lastName] => Player 58fc
+                                            [firstName] => 48ae76a
+                                            [title] => 
+                                            [number] => 8
+                                            [zps] => 70616-1289
+                                            [dwz] => 2026
+                                            [elo] => 1971
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538277/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70616-1289
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                            [2] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 3
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537987
+                                            [name] => Player 1437, 03644ef
+                                            [lastName] => Player 1437
+                                            [firstName] => 03644ef
+                                            [title] => 
+                                            [number] => 5
+                                            [zps] => 70526-119
+                                            [dwz] => 1894
+                                            [elo] => 1884
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537987/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70526-119
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538278
+                                            [name] => Player e3aa, 29975f8
+                                            [lastName] => Player e3aa
+                                            [firstName] => 29975f8
+                                            [title] => 
+                                            [number] => 9
+                                            [zps] => 70616-334
+                                            [dwz] => 2017
+                                            [elo] => 2017
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538278/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70616-334
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [3] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 4
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537988
+                                            [name] => Player 431b, a6d40cd
+                                            [lastName] => Player 431b
+                                            [firstName] => a6d40cd
+                                            [title] => 
+                                            [number] => 6
+                                            [zps] => 70526-777
+                                            [dwz] => 1901
+                                            [elo] => 1966
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537988/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70526-777
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538279
+                                            [name] => Player 7389, 5261df2
+                                            [lastName] => Player 7389
+                                            [firstName] => 5261df2
+                                            [title] => 
+                                            [number] => 10
+                                            [zps] => 70616-682
+                                            [dwz] => 1987
+                                            [elo] => 1989
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538279/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70616-682
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
+                                )
+
+                            [4] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 5
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537989
+                                            [name] => Player 750b, ce8b153
+                                            [lastName] => Player 750b
+                                            [firstName] => ce8b153
+                                            [title] => 
+                                            [number] => 7
+                                            [zps] => 70526-1549
+                                            [dwz] => 1918
+                                            [elo] => 1973
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537989/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70526-1549
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538280
+                                            [name] => WCM Player 1cc5, 62e7a6f
+                                            [lastName] => Player 1cc5
+                                            [firstName] => 62e7a6f
+                                            [title] => WCM
+                                            [number] => 11
+                                            [zps] => 70616-957
+                                            [dwz] => 1888
+                                            [elo] => 1939
+                                            [gender] => w
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538280/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70616-957
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                            [5] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 6
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537990
+                                            [name] => Player 20dc, 4dc04bd
+                                            [lastName] => Player 20dc
+                                            [firstName] => 4dc04bd
+                                            [title] => 
+                                            [number] => 8
+                                            [zps] => 70526-1199
+                                            [dwz] => 1953
+                                            [elo] => 1905
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537990/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70526-1199
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538283
+                                            [name] => Player fea9, c36de88
+                                            [lastName] => Player fea9
+                                            [firstName] => c36de88
+                                            [title] => 
+                                            [number] => 14
+                                            [zps] => 70616-612
+                                            [dwz] => 1861
+                                            [elo] => 1954
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538283/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70616-612
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                            [6] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 7
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537991
+                                            [name] => Player 1d57, 2044a2e
+                                            [lastName] => Player 1d57
+                                            [firstName] => 2044a2e
+                                            [title] => 
+                                            [number] => 9
+                                            [zps] => 70526-434
+                                            [dwz] => 1960
+                                            [elo] => 1961
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537991/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70526-434
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538285
+                                            [name] => Player 7992, ec2da9c
+                                            [lastName] => Player 7992
+                                            [firstName] => ec2da9c
+                                            [title] => 
+                                            [number] => 16
+                                            [zps] => 70616-961
+                                            [dwz] => 1803
+                                            [elo] => 1887
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538285/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70616-961
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
+                                )
+
+                            [7] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 8
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537994
+                                            [name] => Player 458b, 775e806
+                                            [lastName] => Player 458b
+                                            [firstName] => 775e806
+                                            [title] => 
+                                            [number] => 12
+                                            [zps] => 70526-913
+                                            [dwz] => 1965
+                                            [elo] => 2116
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537994/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70526-913
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 544386
+                                            [name] => Player 827d, 713ed1f
+                                            [lastName] => Player 827d
+                                            [firstName] => 713ed1f
+                                            [title] => 
+                                            [number] => 19
+                                            [zps] => 70616-1089
+                                            [dwz] => 1651
+                                            [elo] => 1639
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 2
+                                            [uri] => /ligen/nsv-2526/s/544386/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70616-1089
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                        )
+
+                )
+
+            [2] => Nsv\League\Api\Model\Pairing Object
+                (
+                    [id] => 38675
+                    [round] => 2
+                    [team1] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 8261
+                            [name] => SK Bremen-Nord
+                            [zps] => 0
+                            [uri] => /ligen/nsv-2526/m/8261/
+                            [apiUri] => /ligen/nsv-2526/api/teams/8261/
+                        )
+
+                    [team2] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 8274
+                            [name] => Stader SV
+                            [zps] => 70422
+                            [uri] => /ligen/nsv-2526/m/8274/
+                            [apiUri] => /ligen/nsv-2526/api/teams/8274/
+                        )
+
+                    [host] => 
+                    [result] => 4 : 4
+                    [result1] => 4
+                    [result2] => 4
+                    [comment] => 
+                    [wasMoved] => 
+                    [moveDate] => 
+                    [games] => Array
+                        (
+                            [0] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 1
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537519
+                                            [name] => Player 5885, 278dda9
+                                            [lastName] => Player 5885
+                                            [firstName] => 278dda9
+                                            [title] => 
+                                            [number] => 1
+                                            [zps] => B0016-1148
+                                            [dwz] => 2111
+                                            [elo] => 2097
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537519/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0016-1148
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537677
+                                            [name] => Player 626a, 11b797d
+                                            [lastName] => Player 626a
+                                            [firstName] => 11b797d
+                                            [title] => 
+                                            [number] => 1
+                                            [zps] => 70422-1462
+                                            [dwz] => 2063
+                                            [elo] => 2088
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537677/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70422-1462
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [1] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 2
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537520
+                                            [name] => Player ece3, ec6728a
+                                            [lastName] => Player ece3
+                                            [firstName] => ec6728a
+                                            [title] => 
+                                            [number] => 2
+                                            [zps] => B0016-146
+                                            [dwz] => 2079
+                                            [elo] => 2210
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537520/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0016-146
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537678
+                                            [name] => Player 5fd9, 4f5a12f
+                                            [lastName] => Player 5fd9
+                                            [firstName] => 4f5a12f
+                                            [title] => 
+                                            [number] => 2
+                                            [zps] => 70422-770
+                                            [dwz] => 2170
+                                            [elo] => 2271
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537678/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70422-770
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [2] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 3
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537518
+                                            [name] => Player 869a, 51c653a
+                                            [lastName] => Player 869a
+                                            [firstName] => 51c653a
+                                            [title] => 
+                                            [number] => 3
+                                            [zps] => B0016-1533
+                                            [dwz] => 2063
+                                            [elo] => 2197
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537518/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0016-1533
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537679
+                                            [name] => Player 7a97, 4e818de
+                                            [lastName] => Player 7a97
+                                            [firstName] => 4e818de
+                                            [title] => 
+                                            [number] => 3
+                                            [zps] => 70422-1201
+                                            [dwz] => 2081
+                                            [elo] => 2047
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537679/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70422-1201
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                            [3] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 4
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537521
+                                            [name] => Player cafd, 63cb708
+                                            [lastName] => Player cafd
+                                            [firstName] => 63cb708
+                                            [title] => 
+                                            [number] => 4
+                                            [zps] => B0016-548
+                                            [dwz] => 1957
+                                            [elo] => 
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537521/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0016-548
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537680
+                                            [name] => Player 7bcb, dd204a3
+                                            [lastName] => Player 7bcb
+                                            [firstName] => dd204a3
+                                            [title] => 
+                                            [number] => 4
+                                            [zps] => 70422-1218
+                                            [dwz] => 2086
+                                            [elo] => 1968
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537680/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70422-1218
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
+                                )
+
+                            [4] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 5
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537522
+                                            [name] => Player 25c7, beb6e0d
+                                            [lastName] => Player 25c7
+                                            [firstName] => beb6e0d
+                                            [title] => 
+                                            [number] => 5
+                                            [zps] => B0016-335
+                                            [dwz] => 2007
+                                            [elo] => 2191
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537522/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0016-335
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537681
+                                            [name] => Player 047d, e7707f4
+                                            [lastName] => Player 047d
+                                            [firstName] => e7707f4
+                                            [title] => 
+                                            [number] => 5
+                                            [zps] => 70422-626
+                                            [dwz] => 2054
+                                            [elo] => 2031
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537681/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70422-626
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
+                                )
+
+                            [5] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 6
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537523
+                                            [name] => Player f14c, d130aed
+                                            [lastName] => Player f14c
+                                            [firstName] => d130aed
+                                            [title] => 
+                                            [number] => 6
+                                            [zps] => B0016-924
+                                            [dwz] => 2073
+                                            [elo] => 2068
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537523/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0016-924
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537682
+                                            [name] => Player a748, 2d55311
+                                            [lastName] => Player a748
+                                            [firstName] => 2d55311
+                                            [title] => 
+                                            [number] => 6
+                                            [zps] => 70422-172
+                                            [dwz] => 2049
+                                            [elo] => 2082
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537682/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70422-172
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [6] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 7
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537524
+                                            [name] => Player a86f, 20d26ee
+                                            [lastName] => Player a86f
+                                            [firstName] => 20d26ee
+                                            [title] => 
+                                            [number] => 7
+                                            [zps] => B0016-1493
+                                            [dwz] => 1978
+                                            [elo] => 2115
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537524/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0016-1493
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537683
+                                            [name] => Player 4bfd, ec001f4
+                                            [lastName] => Player 4bfd
+                                            [firstName] => ec001f4
+                                            [title] => 
+                                            [number] => 7
+                                            [zps] => 70422-442
+                                            [dwz] => 2003
+                                            [elo] => 2010
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537683/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70422-442
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [7] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 8
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537456
+                                            [name] => Player 80d0, 999ef86
+                                            [lastName] => Player 80d0
+                                            [firstName] => 999ef86
+                                            [title] => 
+                                            [number] => 8
+                                            [zps] => B0016-319
+                                            [dwz] => 1795
+                                            [elo] => 1819
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537456/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0016-319
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537684
+                                            [name] => Player d382, bc55282
+                                            [lastName] => Player d382
+                                            [firstName] => bc55282
+                                            [title] => 
+                                            [number] => 8
+                                            [zps] => 70422-661
+                                            [dwz] => 1997
+                                            [elo] => 2075
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537684/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70422-661
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                        )
+
+                )
+
+            [3] => Nsv\League\Api\Model\Pairing Object
+                (
+                    [id] => 38676
+                    [round] => 2
+                    [team1] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 8371
+                            [name] => SV Werder Bremen 4
+                            [zps] => B0023
+                            [uri] => /ligen/nsv-2526/m/8371/
+                            [apiUri] => /ligen/nsv-2526/api/teams/8371/
+                        )
+
+                    [team2] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 8266
+                            [name] => SC Turm Lüneburg
+                            [zps] => 70476
+                            [uri] => /ligen/nsv-2526/m/8266/
+                            [apiUri] => /ligen/nsv-2526/api/teams/8266/
+                        )
+
+                    [host] => 
+                    [result] => 4½ : 3½
+                    [result1] => 4.5
+                    [result2] => 3.5
+                    [comment] => 
+                    [wasMoved] => 
+                    [moveDate] => 
+                    [games] => Array
+                        (
+                            [0] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 1
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538940
+                                            [name] => Player 86c4, fd52f91
+                                            [lastName] => Player 86c4
+                                            [firstName] => fd52f91
+                                            [title] => 
+                                            [number] => 3
+                                            [zps] => B0023-1430
+                                            [dwz] => 1988
+                                            [elo] => 1967
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538940/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0023-1430
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537545
+                                            [name] => CM Player 0d88, 299285a
+                                            [lastName] => Player 0d88
+                                            [firstName] => 299285a
+                                            [title] => CM
+                                            [number] => 2
+                                            [zps] => 70476-1541
+                                            [dwz] => 2189
+                                            [elo] => 2179
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537545/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70476-1541
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [1] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 2
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538941
+                                            [name] => Player d98d, c80a044
+                                            [lastName] => Player d98d
+                                            [firstName] => c80a044
+                                            [title] => 
+                                            [number] => 4
+                                            [zps] => B0023-243
+                                            [dwz] => 2056
+                                            [elo] => 2065
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538941/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0023-243
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537546
+                                            [name] => Player ca31, 80151bb
+                                            [lastName] => Player ca31
+                                            [firstName] => 80151bb
+                                            [title] => 
+                                            [number] => 3
+                                            [zps] => 70476-897
+                                            [dwz] => 1935
+                                            [elo] => 1936
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537546/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70476-897
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                            [2] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 3
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538942
+                                            [name] => CM Player 3d62, 502bdc8
+                                            [lastName] => Player 3d62
+                                            [firstName] => 502bdc8
+                                            [title] => CM
+                                            [number] => 5
+                                            [zps] => B0023-709
+                                            [dwz] => 2129
+                                            [elo] => 2185
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538942/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0023-709
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537547
+                                            [name] => Player 3180, d1aaa0a
+                                            [lastName] => Player 3180
+                                            [firstName] => d1aaa0a
+                                            [title] => 
+                                            [number] => 4
+                                            [zps] => 70476-739
+                                            [dwz] => 1989
+                                            [elo] => 1946
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537547/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70476-739
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [3] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 4
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538943
+                                            [name] => Player c0af, 56cf03b
+                                            [lastName] => Player c0af
+                                            [firstName] => 56cf03b
+                                            [title] => 
+                                            [number] => 6
+                                            [zps] => B0023-1215
+                                            [dwz] => 2100
+                                            [elo] => 2092
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538943/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0023-1215
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537548
+                                            [name] => Player 6509, 8d110cd
+                                            [lastName] => Player 6509
+                                            [firstName] => 8d110cd
+                                            [title] => 
+                                            [number] => 5
+                                            [zps] => 70476-372
+                                            [dwz] => 2010
+                                            [elo] => 
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537548/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70476-372
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [4] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 5
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538945
+                                            [name] => Player 653b, 5ac483e
+                                            [lastName] => Player 653b
+                                            [firstName] => 5ac483e
+                                            [title] => 
+                                            [number] => 8
+                                            [zps] => B0023-1553
+                                            [dwz] => 1922
+                                            [elo] => 1898
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538945/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0023-1553
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537549
+                                            [name] => Player ba50, c0d55dd
+                                            [lastName] => Player ba50
+                                            [firstName] => c0d55dd
+                                            [title] => 
+                                            [number] => 6
+                                            [zps] => 70476-1175
+                                            [dwz] => 1934
+                                            [elo] => 1937
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537549/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70476-1175
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
+                                )
+
+                            [5] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 6
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538947
+                                            [name] => Player 0f21, 7790018
+                                            [lastName] => Player 0f21
+                                            [firstName] => 7790018
+                                            [title] => 
+                                            [number] => 10
+                                            [zps] => B0023-1067
+                                            [dwz] => 1747
+                                            [elo] => 1796
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538947/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0023-1067
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537550
+                                            [name] => Player 1d61, 72aada2
+                                            [lastName] => Player 1d61
+                                            [firstName] => 72aada2
+                                            [title] => 
+                                            [number] => 7
+                                            [zps] => 70476-551
+                                            [dwz] => 1975
+                                            [elo] => 2035
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537550/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70476-551
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
+                                )
+
+                            [6] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 7
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538948
+                                            [name] => Player bf75, e980c54
+                                            [lastName] => Player bf75
+                                            [firstName] => e980c54
+                                            [title] => 
+                                            [number] => 11
+                                            [zps] => B0023-803
+                                            [dwz] => 1769
+                                            [elo] => 1799
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538948/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0023-803
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537551
+                                            [name] => Player 1a34, 83df16d
+                                            [lastName] => Player 1a34
+                                            [firstName] => 83df16d
+                                            [title] => 
+                                            [number] => 8
+                                            [zps] => 70476-400
+                                            [dwz] => 1894
+                                            [elo] => 1929
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537551/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70476-400
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
+                                )
+
+                            [7] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 8
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 544278
+                                            [name] => Player 08a1, 58522f5
+                                            [lastName] => Player 08a1
+                                            [firstName] => 58522f5
+                                            [title] => 
+                                            [number] => 18
+                                            [zps] => B0023-842
+                                            [dwz] => 1642
+                                            [elo] => 1800
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 1
+                                            [uri] => /ligen/nsv-2526/s/544278/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0023-842
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537552
+                                            [name] => Player c605, 95d74f2
+                                            [lastName] => Player c605
+                                            [firstName] => 95d74f2
+                                            [title] => 
+                                            [number] => 9
+                                            [zps] => 70476-446
+                                            [dwz] => 1881
+                                            [elo] => 1921
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537552/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70476-446
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                        )
+
+                )
+
+            [4] => Nsv\League\Api\Model\Pairing Object
+                (
+                    [id] => 38677
+                    [round] => 2
+                    [team1] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 8366
+                            [name] => Hagener SV
+                            [zps] => 70604
+                            [uri] => /ligen/nsv-2526/m/8366/
+                            [apiUri] => /ligen/nsv-2526/api/teams/8366/
+                        )
+
+                    [team2] => Nsv\League\Api\Model\Team Object
+                        (
+                            [id] => 8269
+                            [name] => Sfr Bremer Osten
+                            [zps] => B0038
+                            [uri] => /ligen/nsv-2526/m/8269/
+                            [apiUri] => /ligen/nsv-2526/api/teams/8269/
+                        )
+
+                    [host] => 
+                    [result] => 6 : 2
+                    [result1] => 6
+                    [result2] => 2
+                    [comment] => 
+                    [wasMoved] => 
+                    [moveDate] => 
+                    [games] => Array
+                        (
+                            [0] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 1
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538854
+                                            [name] => Player 44a9, d094e01
+                                            [lastName] => Player 44a9
+                                            [firstName] => d094e01
+                                            [title] => 
+                                            [number] => 1
+                                            [zps] => 70604-211
+                                            [dwz] => 2189
+                                            [elo] => 2216
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538854/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70604-211
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537591
+                                            [name] => Player a8fe, 37004d3
+                                            [lastName] => Player a8fe
+                                            [firstName] => 37004d3
+                                            [title] => 
+                                            [number] => 1
+                                            [zps] => B0038-872
+                                            [dwz] => 2046
+                                            [elo] => 2051
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537591/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0038-872
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
+                                )
+
+                            [1] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 2
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538855
+                                            [name] => Player 27a8, 2586afe
+                                            [lastName] => Player 27a8
+                                            [firstName] => 2586afe
+                                            [title] => 
+                                            [number] => 2
+                                            [zps] => 70604-1012
+                                            [dwz] => 2157
+                                            [elo] => 2199
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538855/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70604-1012
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537593
+                                            [name] => Player f26e, dc8e955
+                                            [lastName] => Player f26e
+                                            [firstName] => dc8e955
+                                            [title] => 
+                                            [number] => 3
+                                            [zps] => B0038-1464
+                                            [dwz] => 2046
+                                            [elo] => 2079
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537593/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0038-1464
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
+                                )
+
+                            [2] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 3
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538867
+                                            [name] => Player 3b12, b9bbdd7
+                                            [lastName] => Player 3b12
+                                            [firstName] => b9bbdd7
+                                            [title] => 
+                                            [number] => 4
+                                            [zps] => 70604-336
+                                            [dwz] => 2001
+                                            [elo] => 2026
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538867/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70604-336
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537594
+                                            [name] => Player 7ec8, 88764bd
+                                            [lastName] => Player 7ec8
+                                            [firstName] => 88764bd
+                                            [title] => 
+                                            [number] => 4
+                                            [zps] => B0038-1436
+                                            [dwz] => 2015
+                                            [elo] => 2155
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537594/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0038-1436
+                                        )
+
+                                    [result1] => 0
+                                    [result2] => 1
+                                )
+
+                            [3] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 4
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538864
+                                            [name] => Player c042, 0ca7306
+                                            [lastName] => Player c042
+                                            [firstName] => 0ca7306
+                                            [title] => 
+                                            [number] => 8
+                                            [zps] => 70604-463
+                                            [dwz] => 1946
+                                            [elo] => 1959
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538864/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70604-463
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537595
+                                            [name] => Player 4a2d, cb5175f
+                                            [lastName] => Player 4a2d
+                                            [firstName] => cb5175f
+                                            [title] => 
+                                            [number] => 5
+                                            [zps] => B0038-1420
+                                            [dwz] => 1999
+                                            [elo] => 2024
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537595/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0038-1420
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [4] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 5
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538865
+                                            [name] => Player fb29, 8954e30
+                                            [lastName] => Player fb29
+                                            [firstName] => 8954e30
+                                            [title] => 
+                                            [number] => 13
+                                            [zps] => 70604-1458
+                                            [dwz] => 1845
+                                            [elo] => 1852
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538865/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70604-1458
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537596
+                                            [name] => Player 49e0, 767c622
+                                            [lastName] => Player 49e0
+                                            [firstName] => 767c622
+                                            [title] => 
+                                            [number] => 6
+                                            [zps] => B0038-1346
+                                            [dwz] => 1993
+                                            [elo] => 2132
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537596/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0038-1346
+                                        )
+
+                                    [result1] => ½
+                                    [result2] => ½
+                                )
+
+                            [5] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 6
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538866
+                                            [name] => Player 0d2e, 984c77a
+                                            [lastName] => Player 0d2e
+                                            [firstName] => 984c77a
+                                            [title] => 
+                                            [number] => 14
+                                            [zps] => 70604-1519
+                                            [dwz] => 1909
+                                            [elo] => 1911
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538866/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70604-1519
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537597
+                                            [name] => Player 4db8, 05c0ac7
+                                            [lastName] => Player 4db8
+                                            [firstName] => 05c0ac7
+                                            [title] => 
+                                            [number] => 7
+                                            [zps] => B0038-1291
+                                            [dwz] => 1880
+                                            [elo] => 1994
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537597/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0038-1291
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
+                                )
+
+                            [6] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 7
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538868
+                                            [name] => Player ee1e, 8846fee
+                                            [lastName] => Player ee1e
+                                            [firstName] => 8846fee
+                                            [title] => 
+                                            [number] => 15
+                                            [zps] => 70604-713
+                                            [dwz] => 1970
+                                            [elo] => 2006
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538868/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70604-713
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537598
+                                            [name] => Player 6c7f, 38f5a7e
+                                            [lastName] => Player 6c7f
+                                            [firstName] => 38f5a7e
+                                            [title] => 
+                                            [number] => 8
+                                            [zps] => B0038-227
+                                            [dwz] => 
+                                            [elo] => 
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537598/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0038-227
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
+                                )
+
+                            [7] => Nsv\League\Api\Model\Game Object
+                                (
+                                    [board] => 8
+                                    [player1] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 538869
+                                            [name] => Player 9ec7, df86173
+                                            [lastName] => Player 9ec7
+                                            [firstName] => df86173
+                                            [title] => 
+                                            [number] => 16
+                                            [zps] => 70604-772
+                                            [dwz] => 1858
+                                            [elo] => 1930
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/538869/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70604-772
+                                        )
+
+                                    [player2] => Nsv\League\Api\Model\Player Object
+                                        (
+                                            [id] => 537599
+                                            [name] => Player 87ac, ee5879d
+                                            [lastName] => Player 87ac
+                                            [firstName] => ee5879d
+                                            [title] => 
+                                            [number] => 9
+                                            [zps] => B0038-1375
+                                            [dwz] => 1887
+                                            [elo] => 1897
+                                            [gender] => m
+                                            [isGuest] => 
+                                            [lateRegistrationRound] => 
+                                            [uri] => /ligen/nsv-2526/s/537599/
+                                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=B0038-1375
+                                        )
+
+                                    [result1] => 1
+                                    [result2] => 0
                                 )
 
                         )
@@ -205,26 +1910,67 @@ Nsv\League\Api\Model\MatchDay Object
             [test] => ranking
         )
 
+    [comment] => This is an example match day comment.
     [lateRegisteredPlayers] => Array
         (
-            [1] => Array
+            [8323] => Array
                 (
                     [0] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 3
-                            [name] => Spiellos, Max
-                            [lastName] => Spiellos
-                            [firstName] => Max
+                            [id] => 544417
+                            [name] => Player 6245, 03d0194
+                            [lastName] => Player 6245
+                            [firstName] => 03d0194
                             [title] => 
-                            [number] => 2
-                            [zps] => 
-                            [dwz] => 
+                            [number] => 17
+                            [zps] => 70608-398
+                            [dwz] => 1869
                             [elo] => 
-                            [gender] => 
+                            [gender] => m
                             [isGuest] => 
                             [lateRegistrationRound] => 3
-                            [uri] => /ligen/test/s/3/
-                            [dsbUri] => 
+                            [uri] => /ligen/nsv-2526/s/544417/
+                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70608-398
+                        )
+
+                    [1] => Nsv\League\Api\Model\Player Object
+                        (
+                            [id] => 544437
+                            [name] => Player f132, 11e455f
+                            [lastName] => Player f132
+                            [firstName] => 11e455f
+                            [title] => 
+                            [number] => 18
+                            [zps] => 70608-194
+                            [dwz] => 
+                            [elo] => 
+                            [gender] => m
+                            [isGuest] => 
+                            [lateRegistrationRound] => 3
+                            [uri] => /ligen/nsv-2526/s/544437/
+                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70608-194
+                        )
+
+                )
+
+            [8333] => Array
+                (
+                    [0] => Nsv\League\Api\Model\Player Object
+                        (
+                            [id] => 544386
+                            [name] => Player 827d, 713ed1f
+                            [lastName] => Player 827d
+                            [firstName] => 713ed1f
+                            [title] => 
+                            [number] => 19
+                            [zps] => 70616-1089
+                            [dwz] => 1651
+                            [elo] => 1639
+                            [gender] => m
+                            [isGuest] => 
+                            [lateRegistrationRound] => 2
+                            [uri] => /ligen/nsv-2526/s/544386/
+                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70616-1089
                         )
 
                 )
@@ -233,16 +1979,199 @@ Nsv\League\Api\Model\MatchDay Object
 
     [allRounds] => Array
         (
+            [1] => Nsv\League\Api\Model\MatchDay Object
+                (
+                    [round] => 1
+                    [date] => 2025-09-28
+                    [uri] => /ligen/nsv-2526/landesliga-nord/1/
+                    [uriPdf] => /ligen/nsv-2526/landesliga-nord/1/pdf/
+                    [uriPgn] => /ligen/nsv-2526/landesliga-nord/1/pgn/
+                    [uriApi] => /ligen/nsv-2526/api/divisions/landesliga-nord/rounds/1/
+                    [pairings] => Array
+                        (
+                        )
+
+                )
+
             [2] => Nsv\League\Api\Model\MatchDay Object
                 (
                     [round] => 2
-                    [date] => 2024-02-02
-                    [uri] => /ligen/test/test-division/2/
-                    [uriPdf] => /ligen/test/test-division/2/pdf/
-                    [uriPgn] => /ligen/test/test-division/2/pgn/
-                    [uriApi] => /ligen/test/api/divisions/test-division/rounds/2/
+                    [date] => 2025-11-16
+                    [uri] => /ligen/nsv-2526/landesliga-nord/2/
+                    [uriPdf] => /ligen/nsv-2526/landesliga-nord/2/pdf/
+                    [uriPgn] => /ligen/nsv-2526/landesliga-nord/2/pgn/
+                    [uriApi] => /ligen/nsv-2526/api/divisions/landesliga-nord/rounds/2/
                     [pairings] => Array
                         (
+                        )
+
+                )
+
+            [3] => Nsv\League\Api\Model\MatchDay Object
+                (
+                    [round] => 3
+                    [date] => 2025-12-07
+                    [uri] => /ligen/nsv-2526/landesliga-nord/3/
+                    [uriPdf] => /ligen/nsv-2526/landesliga-nord/3/pdf/
+                    [uriPgn] => /ligen/nsv-2526/landesliga-nord/3/pgn/
+                    [uriApi] => /ligen/nsv-2526/api/divisions/landesliga-nord/rounds/3/
+                    [pairings] => Array
+                        (
+                            [0] => Nsv\League\Api\Model\Pairing Object
+                                (
+                                    [id] => 38678
+                                    [round] => 3
+                                    [team1] => Nsv\League\Api\Model\Team Object
+                                        (
+                                            [id] => 8323
+                                            [name] => SG Osnabrück
+                                            [zps] => 70608
+                                            [uri] => /ligen/nsv-2526/m/8323/
+                                            [apiUri] => /ligen/nsv-2526/api/teams/8323/
+                                        )
+
+                                    [team2] => Nsv\League\Api\Model\Team Object
+                                        (
+                                            [id] => 8366
+                                            [name] => Hagener SV
+                                            [zps] => 70604
+                                            [uri] => /ligen/nsv-2526/m/8366/
+                                            [apiUri] => /ligen/nsv-2526/api/teams/8366/
+                                        )
+
+                                    [host] => 
+                                    [result] => 4 : 4
+                                    [result1] => 4
+                                    [result2] => 4
+                                    [comment] => 
+                                    [wasMoved] => 
+                                    [moveDate] => 
+                                )
+
+                            [1] => Nsv\League\Api\Model\Pairing Object
+                                (
+                                    [id] => 38679
+                                    [round] => 3
+                                    [team1] => Nsv\League\Api\Model\Team Object
+                                        (
+                                            [id] => 8333
+                                            [name] => SK Nordhorn-Blanke 2
+                                            [zps] => 70616
+                                            [uri] => /ligen/nsv-2526/m/8333/
+                                            [apiUri] => /ligen/nsv-2526/api/teams/8333/
+                                        )
+
+                                    [team2] => Nsv\League\Api\Model\Team Object
+                                        (
+                                            [id] => 8371
+                                            [name] => SV Werder Bremen 4
+                                            [zps] => B0023
+                                            [uri] => /ligen/nsv-2526/m/8371/
+                                            [apiUri] => /ligen/nsv-2526/api/teams/8371/
+                                        )
+
+                                    [host] => 
+                                    [result] => 5 : 3
+                                    [result1] => 5
+                                    [result2] => 3
+                                    [comment] => 
+                                    [wasMoved] => 
+                                    [moveDate] => 
+                                )
+
+                            [2] => Nsv\League\Api\Model\Pairing Object
+                                (
+                                    [id] => 38680
+                                    [round] => 3
+                                    [team1] => Nsv\League\Api\Model\Team Object
+                                        (
+                                            [id] => 8274
+                                            [name] => Stader SV
+                                            [zps] => 70422
+                                            [uri] => /ligen/nsv-2526/m/8274/
+                                            [apiUri] => /ligen/nsv-2526/api/teams/8274/
+                                        )
+
+                                    [team2] => Nsv\League\Api\Model\Team Object
+                                        (
+                                            [id] => 8320
+                                            [name] => SG Ammerland
+                                            [zps] => 70526
+                                            [uri] => /ligen/nsv-2526/m/8320/
+                                            [apiUri] => /ligen/nsv-2526/api/teams/8320/
+                                        )
+
+                                    [host] => 
+                                    [result] => 4 : 4
+                                    [result1] => 4
+                                    [result2] => 4
+                                    [comment] => 
+                                    [wasMoved] => 
+                                    [moveDate] => 
+                                )
+
+                            [3] => Nsv\League\Api\Model\Pairing Object
+                                (
+                                    [id] => 38681
+                                    [round] => 3
+                                    [team1] => Nsv\League\Api\Model\Team Object
+                                        (
+                                            [id] => 8266
+                                            [name] => SC Turm Lüneburg
+                                            [zps] => 70476
+                                            [uri] => /ligen/nsv-2526/m/8266/
+                                            [apiUri] => /ligen/nsv-2526/api/teams/8266/
+                                        )
+
+                                    [team2] => Nsv\League\Api\Model\Team Object
+                                        (
+                                            [id] => 8324
+                                            [name] => Fortuna Logabirum
+                                            [zps] => 70506
+                                            [uri] => /ligen/nsv-2526/m/8324/
+                                            [apiUri] => /ligen/nsv-2526/api/teams/8324/
+                                        )
+
+                                    [host] => 
+                                    [result] => 6 : 2
+                                    [result1] => 6
+                                    [result2] => 2
+                                    [comment] => 
+                                    [wasMoved] => 
+                                    [moveDate] => 
+                                )
+
+                            [4] => Nsv\League\Api\Model\Pairing Object
+                                (
+                                    [id] => 38682
+                                    [round] => 3
+                                    [team1] => Nsv\League\Api\Model\Team Object
+                                        (
+                                            [id] => 8269
+                                            [name] => Sfr Bremer Osten
+                                            [zps] => B0038
+                                            [uri] => /ligen/nsv-2526/m/8269/
+                                            [apiUri] => /ligen/nsv-2526/api/teams/8269/
+                                        )
+
+                                    [team2] => Nsv\League\Api\Model\Team Object
+                                        (
+                                            [id] => 8261
+                                            [name] => SK Bremen-Nord
+                                            [zps] => 0
+                                            [uri] => /ligen/nsv-2526/m/8261/
+                                            [apiUri] => /ligen/nsv-2526/api/teams/8261/
+                                        )
+
+                                    [host] => 
+                                    [result] => 3 : 5
+                                    [result1] => 3
+                                    [result2] => 5
+                                    [comment] => 
+                                    [wasMoved] => 
+                                    [moveDate] => 
+                                )
+
                         )
 
                 )
@@ -250,25 +2179,81 @@ Nsv\League\Api\Model\MatchDay Object
             [4] => Nsv\League\Api\Model\MatchDay Object
                 (
                     [round] => 4
-                    [date] => 2024-02-02
-                    [uri] => /ligen/test/test-division/4/
-                    [uriPdf] => /ligen/test/test-division/4/pdf/
-                    [uriPgn] => /ligen/test/test-division/4/pgn/
-                    [uriApi] => /ligen/test/api/divisions/test-division/rounds/4/
+                    [date] => 2026-01-18
+                    [uri] => /ligen/nsv-2526/landesliga-nord/4/
+                    [uriPdf] => /ligen/nsv-2526/landesliga-nord/4/pdf/
+                    [uriPgn] => /ligen/nsv-2526/landesliga-nord/4/pgn/
+                    [uriApi] => /ligen/nsv-2526/api/divisions/landesliga-nord/rounds/4/
                     [pairings] => Array
                         (
                         )
 
                 )
 
-            [1] => Nsv\League\Api\Model\MatchDay Object
+            [5] => Nsv\League\Api\Model\MatchDay Object
                 (
-                    [round] => 1
-                    [date] => 2025-01-01
-                    [uri] => /ligen/test/test-division/1/
-                    [uriPdf] => /ligen/test/test-division/1/pdf/
-                    [uriPgn] => /ligen/test/test-division/1/pgn/
-                    [uriApi] => /ligen/test/api/divisions/test-division/rounds/1/
+                    [round] => 5
+                    [date] => 2026-02-08
+                    [uri] => /ligen/nsv-2526/landesliga-nord/5/
+                    [uriPdf] => /ligen/nsv-2526/landesliga-nord/5/pdf/
+                    [uriPgn] => /ligen/nsv-2526/landesliga-nord/5/pgn/
+                    [uriApi] => /ligen/nsv-2526/api/divisions/landesliga-nord/rounds/5/
+                    [pairings] => Array
+                        (
+                        )
+
+                )
+
+            [6] => Nsv\League\Api\Model\MatchDay Object
+                (
+                    [round] => 6
+                    [date] => 2026-03-01
+                    [uri] => /ligen/nsv-2526/landesliga-nord/6/
+                    [uriPdf] => /ligen/nsv-2526/landesliga-nord/6/pdf/
+                    [uriPgn] => /ligen/nsv-2526/landesliga-nord/6/pgn/
+                    [uriApi] => /ligen/nsv-2526/api/divisions/landesliga-nord/rounds/6/
+                    [pairings] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Nsv\League\Api\Model\MatchDay Object
+                (
+                    [round] => 7
+                    [date] => 2026-03-22
+                    [uri] => /ligen/nsv-2526/landesliga-nord/7/
+                    [uriPdf] => /ligen/nsv-2526/landesliga-nord/7/pdf/
+                    [uriPgn] => /ligen/nsv-2526/landesliga-nord/7/pgn/
+                    [uriApi] => /ligen/nsv-2526/api/divisions/landesliga-nord/rounds/7/
+                    [pairings] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Nsv\League\Api\Model\MatchDay Object
+                (
+                    [round] => 8
+                    [date] => 2026-04-12
+                    [uri] => /ligen/nsv-2526/landesliga-nord/8/
+                    [uriPdf] => /ligen/nsv-2526/landesliga-nord/8/pdf/
+                    [uriPgn] => /ligen/nsv-2526/landesliga-nord/8/pgn/
+                    [uriApi] => /ligen/nsv-2526/api/divisions/landesliga-nord/rounds/8/
+                    [pairings] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Nsv\League\Api\Model\MatchDay Object
+                (
+                    [round] => 9
+                    [date] => 2026-04-26
+                    [uri] => /ligen/nsv-2526/landesliga-nord/9/
+                    [uriPdf] => /ligen/nsv-2526/landesliga-nord/9/pdf/
+                    [uriPgn] => /ligen/nsv-2526/landesliga-nord/9/pgn/
+                    [uriApi] => /ligen/nsv-2526/api/divisions/landesliga-nord/rounds/9/
                     [pairings] => Array
                         (
                         )
