@@ -18,11 +18,9 @@ jobs:
         image: mysql:5.7
         ports:
           - 3306:3306
-        volumes:
-          - ./dbinit:/docker-entrypoint-initdb.d
         env:
           MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: nsv-test-ligen
+          MYSQL_DATABASE: nsv-main
           MYSQL_USER: docker
           MYSQL_PASSWORD: docker
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
@@ -39,11 +37,9 @@ jobs:
 
       - name: Initialize database
         run: |
-          mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-test-ligen < ./dev/dbinit/90-test-ligen-structure.sql && \
-          mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-test-ligen < ./dev/dbinit/91-test-ligen-data.sql
-      - name: Prepare test fixtures
-        run: |
-          ./bin/console --env=test --em=league doctrine:fixtures:load --no-interaction
+          for sqlfile in ./dev/dbinit/*.sql; do
+            mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-main < "$sqlfile"
+          done        
       - name: Prepare snapshot tests
         run: |
           mkdir -p tests/League/Api/Service/actual
