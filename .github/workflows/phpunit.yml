@@ -38,8 +38,10 @@ jobs:
       - name: Initialize database
         run: |
           for sqlfile in ./dev/dbinit/*.sql; do
-            mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-main < "$sqlfile"
-          done        
+            if [[ "$(basename "$sqlfile")" != "00-create-databases.sql" ]]; then
+              mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-main < "$sqlfile"
+            fi
+          done
       - name: Prepare snapshot tests
         run: |
           mkdir -p tests/League/Api/Service/actual
