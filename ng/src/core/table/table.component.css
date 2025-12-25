@@ -1,0 +1,14 @@
+th {
+  white-space: nowrap;
+}
+
+th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sort-indicator {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 2px;
+}

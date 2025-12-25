@@ -5,6 +5,8 @@ namespace Nsv\League\Controller;
 use Nsv\League\Api\Service\PlayerService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Api\Service\TeamService;
+use Nsv\League\Core\Encoding;
+use Nsv\League\Core\TokenAuth;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapQueryParameter;
 use Symfony\Component\Routing\Annotation\Route;
@@ -53,24 +55,31 @@ class MainController extends AbstractLeagueController {
   }
 
   #[Route('m/{teamId}/', name: 'team')]
-  public function team(TeamService $service, int $teamId): Response {
+  public function team(TeamService $service, int $teamId, TokenAuth $tokenAuth): Response {
     $teamEntity = $this->league->teamById($teamId);
-    $allowEdit = $this->auth->isDivisionManager($teamEntity->division);
+    $allowEdit = $tokenAuth->mayEditTeam($teamEntity);
+    $allowPlayerEdit = $this->auth->isDivisionManager($teamEntity->division);
     $team = $service->team($teamEntity, $allowEdit);
     return $this->renderWithLegacySystem('team.html.twig', [
       'team' => $team,
       'teamEntity' => $teamEntity,
       'allowEdit' => $allowEdit,
-      'showContactInfo' =>  $this->league->year >= date('Y') - 1 || $allowEdit
+      'allowPlayerEdit' => $allowPlayerEdit,
+      'showContactInfo' =>  $this->league->year >= date('Y') - 1 || $allowEdit,
+      'updateNameDialogParams' => json_encode(Encoding::deep_utf8_encode([
+        'id' => $teamId,
+        'name' => $teamEntity->name,
+        'number' => $teamEntity->number
+      ]))
     ]);
   }
 
   #[Route('api/teams/{teamId}/', name: 'api_team')]
-  public function team_api(TeamService $service, int $teamId): Response {
+  public function team_api(TeamService $service, int $teamId, TokenAuth $tokenAuth): Response {
     $teamEntity = $this->league->teamById($teamId);
-    $allowEdit = $this->auth->isDivisionManager($teamEntity->division);
+    $allowEdit = $tokenAuth->mayEditTeam($teamEntity);
     $team = $service->team($teamEntity, $allowEdit);
-    if (!$this->auth->isDivisionManager()) {
+    if (!$allowEdit) {
       $team->captain->mail = '** REDACTED **';
       $team->captain->phone = '** REDACTED **';
       $team->captain->phone2 = '** REDACTED **';

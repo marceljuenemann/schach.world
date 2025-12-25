@@ -11,11 +11,11 @@
  */
 
 	// Nun die aktuellsten Daten abfragen
-	$rsrc = mysql_query ( "SELECT mf_telefon as telefon, mf_telefon2 as telefon2, mf_email as mf_email FROM mannschaften WHERE mf_name LIKE '".utf8_decode($_GET["name"])."%' ORDER BY id DESC", $globals ['db'] );
+	$fields = SED_Query ( 'SELECT mf_telefon as telefon, mf_telefon2 as telefon2, mf_email as mf_email FROM mannschaften WHERE mf_name LIKE ? ORDER BY id DESC', [utf8_decode($_GET["name"]).'%'] )->fetchAssociative();
 	
 	// Wenn er existierte, dann diesen zurückgeben
-	if ( $rsrc && mysql_num_rows ( $rsrc ) )
-		echo utf8_encode ( implode ( ";", mysql_fetch_array ( $rsrc, MYSQL_NUM ) ) );
+	if ( $fields )
+		echo utf8_encode ( implode ( ";", $fields ) );
 	
 	// Ansonsten keine Daten ausgeben
 	else	

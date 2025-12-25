@@ -14,6 +14,7 @@ use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\UrlType;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -53,6 +54,7 @@ class CalendarController extends AbstractController {
         ->add('name', TextType::class)
         ->add('url', UrlType::class, [
           'label' => 'Link',
+          'required' => !$isAuthor,
           'constraints' => [new Url()],
         ]);
     if ($isAuthor) {
@@ -99,7 +101,7 @@ class CalendarController extends AbstractController {
     $event = $this->eventRepository->findOneById($id);
     if (!$event) throw new NotFoundHttpException();
     if (!Auth::isLoggedIn()) {
-      return Auth::loginRedirect($request->getUri());
+      return new RedirectResponse(Auth::loginRedirect($request->getUri()));
     }
     if (Auth::isAuthor()) {
       $event->isApproved = true;

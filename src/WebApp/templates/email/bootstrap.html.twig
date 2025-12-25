@@ -50,6 +50,30 @@
   </table>
 {% endmacro %}
 
+{# Simple link. #}
+{# Usage: {{ bs.link(uri) }} More info... {{ bs.endlink }} #}
+{% macro link(uri) %}
+  <span class="text-primary" style="color: #0d6efd;"><a href="{{uri}}">
+{% endmacro %}
+{% macro endlink() %}
+  </a></span>
+{% endmacro %}
+
+{# A description list. #}
+{# Usage: {{ bs.dd('Name') }} {{ item.name }} {{ bs.end_dd }} #}
+{# TODO: Experiment with col-lg to make it responsive. #}
+{% macro dd(title) %}
+  {{ _self.spacer(1) }}
+  {{ _self.row }}
+    {{ _self.col(3) }}<strong>{{title}}:</strong>{{ _self.endcol }}
+    {{ _self.col(9) }}
+{% endmacro %}
+{% macro end_dd() %}
+  {{ _self.endcol }}
+  {{ _self.endrow }}
+  {{ _self.spacer(1) }}
+{% endmacro %}
+
 {# Row to be used with columns. Requires calling endrow() as well. #}
 {% macro row() %}
   <div class="row" style="margin-right: -24px;">
@@ -70,6 +94,37 @@
 {% endmacro %}
 {% macro endcol() %}
   </td>
+{% endmacro %}
+
+{# Alert component. #}
+{# Usage: {{ bs.alert_primary }} Hello World! {{ bs.endalert }} #}
+{% macro alert_primary() %} {{ _self.alert('primary', '#d7e7ff', '#012e70') }} {% endmacro %}
+{% macro alert_secondary() %} {{ _self.alert('secondary', '#e6e9ed', '#2f353f') }} {% endmacro %}
+{% macro alert_success() %} {{ _self.alert('success', '#d1e7dd', '#0f5132') }} {% endmacro %}
+{% macro alert_danger() %} {{ _self.alert('danger', '#fae3e5', '#66121a') }} {% endmacro %}
+{% macro alert_warning() %} {{ _self.alert('warning', '#fff4d3', '#6d5200') }} {% endmacro %}
+{% macro alert(type, bgcolor, fontcolor) %}
+  <table class="alert alert-{{type}}" role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; width: 100%; border-width: 0;">
+    <tbody>
+      <tr>
+        <td style="line-height: 24px; font-size: 16px; border-radius: 4px; color: {{fontcolor}}; margin: 0; padding: 12px 20px; border: 1px solid transparent;" align="left" bgcolor="{{bgcolor}}">
+          <div>
+{% endmacro %}
+{% macro endalert() %}
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+    <tbody>
+      <tr>
+        <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+          &#160;
+        </td>
+      </tr>
+    </tbody>
+  </table>
 {% endmacro %}
 
 {# Card component. #}

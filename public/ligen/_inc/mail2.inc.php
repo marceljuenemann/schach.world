@@ -30,7 +30,7 @@ function SED_SendMail($mailer, $to, $vars = array()) {
       if ( SED_IsValidEmail ( $to ) ) {
           $mailer->AddAddress ( $to );
       } elseif ( $to == SED_MAIL_TURNIERLEITER ) {
-         $mailer->AddAddress ( SED_Value ( "SELECT email FROM benutzer WHERE id=? LIMIT 1", [$prefs['leiter']] ) );
+         $mailer->AddAddress ( SED_Value ( 'SELECT email FROM benutzer WHERE id=? LIMIT 1', [$prefs['leiter']] ) );
       } 
   }
 
@@ -60,7 +60,7 @@ function SED_SendMail($mailer, $to, $vars = array()) {
       // Versand loggen
       $log = "eMail $success - Betreff: ".$mailer->Subject." An: ";
       $log .= is_array( $to ) ? implode( ",", $to ) : $to;
-      mysql_query ( "INSERT INTO log SET subject='$log'", $globals ['db'] );
+    SED_Query ( 'INSERT INTO log SET subject=?', [$log] );
   } catch (phpmailerException $e) {
     echo $e->errorMessage();
   } catch (Exception $e) {

@@ -44,7 +44,9 @@ class AbstractLeagueController extends AbstractController {
    * processing the request or outputting anything.
    */
   protected function initializeLegacySystem() {
-    $this->legacySystem->initialize($this->league, $this->division);
+    $this->legacySystem->initialize();
+    $this->legacySystem->league = $this->league;
+    $this->legacySystem->division = $this->division;
     $this->initializeLegacySession();
   }
 

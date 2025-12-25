@@ -13,7 +13,7 @@
 {% endmacro %}
 
 {% macro editButton() %}
-  <button class="btn btn-success btn-sm rounded-pill align-bottom ms-2 d-print-none" {{ nsv.tooltip('Bearbeiten') }}>
+  <button class="btn btn-success btn-sm rounded-pill align-text-bottom ms-2 d-print-none" {{ nsv.tooltip('Bearbeiten') }}>
     {{ nsv.icon('edit') }}
   </button>
 {% endmacro %}
@@ -23,6 +23,17 @@
     {{ nsv.icon('edit') }}
   </span>
 {% endmacro %}
+
+{% block headline %}
+  <h2>
+    {{ title }}
+    {% if allowPlayerEdit %}
+      <nsv-dialog-launcher dialog="teamName" params="{{ updateNameDialogParams }}" on-save="reload">
+        {{ _self.editButton() }}
+      </nsv-dialog-launcher>
+    {% endif %}
+  </h2>
+{% endblock %}
 
 {% block content %}
 <div class="row">

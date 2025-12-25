@@ -24,8 +24,10 @@
     if ( isset ( $_POST ['savebutton'] ) )
     {
         // Spielfestsetzung
-        if ( $_POST ['runde'] )
-            mysql_query ( "UPDATE paarungen SET festgelegt=1 WHERE staffel=$staffel AND runde=$_POST[runde] AND erg1 IS NOT NULL", $globals ['db'] );
+        if ($_POST['runde']) {
+            SED_TryQuery('UPDATE paarungen SET festgelegt=1 WHERE staffel=? AND runde=? AND erg1 IS NOT NULL', 
+                [$staffel, $_POST['runde']]);
+        }
 
         // Versenden
         $rundmail->Send ( $_POST ["subject"], $_POST ["text"] );
@@ -62,18 +64,8 @@
     echo "<span class='sed_hl2'>Liste der Empf&auml;nger</span><br /><br />";
     
     foreach ( $tos as $team => $empfaenger ){
-        // Mannschaftsführer
-        if ( $team != "newsletter" ){
-            echo "<b>".$globals['teams'][$team].":</b> ";
-            echo implode ( ", ", $empfaenger );
-            echo "<br />";
-        
-        // Newsletter
-        } else {
-            if ( count ( $empfaenger ) )
-                echo "<br /><b>Newsletter-Abbonomenten:</b><br />";
-            foreach ( $empfaenger as $nl )
-                echo "$nl[email]<br />";
-        }
+      echo "<b>".$globals['teams'][$team].":</b> ";
+      echo implode ( ", ", $empfaenger );
+      echo "<br />";
     }
 ?>

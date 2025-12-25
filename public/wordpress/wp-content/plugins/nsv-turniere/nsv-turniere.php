@@ -9,6 +9,7 @@
  */
 
 add_action('nsv_router_init', function($router) {
+  $router->addRoute('^turniere/([a-z0-9-]+)/?$', 'NSV\\Turniere\\Ergebnisse\\Redirect', array('turnier'));
   $router->addRoute('^turniere/([a-z0-9-]+)/([a-z0-9]+)/?$', 'NSV\\Turniere\\Ergebnisse\\Home', array('turnier', 'jahr'));
   $router->addRoute('^turniere/([a-z0-9-]+)/([a-z0-9]+)/admin/?$', 'NSV\\Turniere\\Ergebnisse\\Admin', array('turnier', 'jahr'));
   $router->addRoute('^turniere/([a-z0-9-]+)/([a-z0-9]+)/upload/?$', 'NSV\\Turniere\\Ergebnisse\\Upload', array('turnier', 'jahr'));

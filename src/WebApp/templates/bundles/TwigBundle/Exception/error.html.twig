@@ -25,8 +25,8 @@
   <strong>Line: </strong>
   {{ exception.trace[0].line }}
   <br>
-
-  See /var/log/prod.log for full stacktrace.
+  
+  {{ stacktrace(exception) }}
 
 {% endif %}
 

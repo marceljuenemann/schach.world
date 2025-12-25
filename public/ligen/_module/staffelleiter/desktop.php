@@ -103,18 +103,17 @@
   if ( $admin ['usertype'] == "s" )
   {
     // Mannschaften abfragen
-    $res = mysql_query ( "SELECT id FROM mannschaften WHERE staffel=$admin[staffel] ORDER BY name, mnr, id", $globals ['db'] );
-    if ( $res && mysql_num_rows ( $res ) )
+    $res = SED_Query ( 'SELECT id FROM mannschaften WHERE staffel=? ORDER BY name, mnr, id', [$admin['staffel']] )->fetchAllAssociative();
+    if ( count( $res ) > 0 )
     {
         // Ausgabe
         echo "<fieldset class='sed_admin_desk'><legend>Mannschaftsverwaltung</legend><table cellspacing='0' cellpadding='3'>";
-          while ( $team = mysql_fetch_array ( $res, MYSQL_ASSOC ) )
+          foreach ( $res as $team )
           {
             echo "<tr><td>".$globals['teams'][$team['id']]."&nbsp;&nbsp;</td><td>
                     <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]&edit=0'><img src='$globals[systemicons]desk_nachmeldung.png' alt='Nachmeldungen' class='sed_admin_icon' />Nachmeldung</a>
                     <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spieler.png' alt='Spieler' class='sed_admin_icon' />Spieler</a>
-                    <a style='text-decoration: none' href='?admin=manndata-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Mannschaftsf&uuml;hrer' class='sed_admin_icon' />Bearbeiten</a>
-                    <a style='text-decoration: none' href='?admin=manndata-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spiellokal.png' alt='Spiellokal' class='sed_admin_icon' /></a>
+                    <a style='text-decoration: none' href='m/$team[id]/'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Mannschaftsf&uuml;hrer' class='sed_admin_icon' />Bearbeiten</a>
                   </td></tr>";
           }
         echo "</table></fieldset><br /><br />";
@@ -125,19 +124,18 @@
   if ( $admin ['usertype'] == "t" )
   {
     // Mannschaften abfragen
-    $res = mysql_query ( "SELECT id FROM mannschaften WHERE staffel=0 AND turnier=$globals[tid] ORDER BY name, mnr, id", $globals ['db'] );
-    if ( $res && mysql_num_rows ( $res ) )
+    $res = SED_Query ( 'SELECT id FROM mannschaften WHERE staffel=0 AND turnier=? ORDER BY name, mnr, id', [$globals['tid']] )->fetchAllAssociative();
+    if ( count ( $res ) > 0 )
     {
         // Ausgabe
         echo "<fieldset class='sed_admin_desk'><legend>Mannschaften ohne Staffel</legend>Im folgenden sind alle Mannschaften aufgelistet, denen noch keine Staffel zugeordnet wurde:<br /><br /><table cellspacing='0' cellpadding='3'>";
 
         // Mannschaften auflisten
-          while ( $team = mysql_fetch_array ( $res, MYSQL_ASSOC ) )
+          foreach ( $res as $team )
           {
             echo "<tr><td>".$globals['teams'][$team['id']]."&nbsp;&nbsp;</td><td>
                     <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spieler.png' alt='Spieler' class='sed_admin_icon' />Spieler</a>
-                    <a style='text-decoration: none' href='?admin=manndata-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Bearbeiten' class='sed_admin_icon' />Bearbeiten</a>
-                    <a style='text-decoration: none' href='?admin=manndata-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spiellokal.png' alt='Spiellokal' class='sed_admin_icon' /></a>
+                    <a style='text-decoration: none' href='m/$team[id]/'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Bearbeiten' class='sed_admin_icon' />Bearbeiten</a>
                     <a style='text-decoration: none' href='?admin=turnmalo-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_loeschen.png' alt='' class='sed_admin_icon' />L&ouml;schen</a>
                   </td></tr>";
           }

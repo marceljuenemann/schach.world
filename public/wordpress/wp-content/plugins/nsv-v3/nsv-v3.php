@@ -10,11 +10,13 @@
 
 require_once(ABSPATH . '../../vendor/autoload.php');
 
-// Forward to the Symfony based WebApp for specific route prefixes. 
+// Forward to the Symfony based WebApp for specific route prefixes.
 add_filter('template_include', function($template) {
   global $wp;
   $prefixes = [
     'v3',
+    'anmeldung',
+    'dwz',
     'ligen',
     'termine',
     'vereine',
@@ -35,13 +37,13 @@ add_action('init', function() {
   // ChessBase Widget.
   add_shortcode('nsv-chessbase', function() {
     $cbByWeekday = array(
-      '1' => array('url' => 'mega_database_2022', 'img' => 'Mega2022'),
-      '2' => array('url' => 'fritz_18', 'img' => 'Fritz18'),
-      '3' => array('url' => 'corr_2022', 'img' => 'Corr2022'),
-      '4' => array('url' => 'chessbase_16_mega_package', 'img' => 'CB16'),
-      '5' => array('url' => 'mega_database_2022', 'img' => 'Mega2022'),
-      '6' => array('url' => 'fritz_18', 'img' => 'Fritz18'),
-      '7' => array('url' => 'chessbase_16_mega_package', 'img' => 'CB16')
+      '1' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
+      '2' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
+      '3' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
+      '4' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
+      '5' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
+      '6' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
+      '7' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26')
     );
     $cb = $cbByWeekday[date('N')];
     return "
@@ -61,7 +63,7 @@ add_action('init', function() {
 
   // Headlines Widget.
   add_shortcode('nsv-schlagzeilen', function() {
-    $content = utf8_encode(file_get_contents(ABSPATH . '../core/modules/schlagzeilen.html'));
+    $content = file_get_contents(ABSPATH . '../../data/headlines/headlines.html');
     return "<div class='nsv-widget' id='widget-schlagzeilen'>$content</div>";
   });
 

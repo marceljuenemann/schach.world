@@ -62,7 +62,7 @@ if ( $menu = SED_GetMenue () ) {
   echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
   echo "<h5 class='card-title'>Links</h5>";
   echo '<ul class="nav flex-column">';
-  while ( $entry = mysql_fetch_array ( $menu, MYSQL_ASSOC ) ) {
+  foreach ( $menu as $entry ) {
     echo "<li class='nav-item'><a class='nav-link' href='$entry[url]' ". ( "$entry[neuesfenster]" ? "target='_blank'" : "" ) . ">$entry[titel]</a></li>";
   }
   echo "</ul></div></div>";

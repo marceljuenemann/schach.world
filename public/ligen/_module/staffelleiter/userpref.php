@@ -18,7 +18,7 @@
 
     // Der Turnierleiter bearbeitet den Staffelleiter?
     $up_userid = ( isset ( $_GET ['staffel'] ) && $admin ['usertype'] == "t" ) 
-        ? SED_Value ( "SELECT leiter FROM staffeln WHERE id=? AND turnier=?", [$_GET['staffel'], $globals['tid']] ) 
+        ? SED_Value ( 'SELECT leiter FROM staffeln WHERE id=? AND turnier=?', [$_GET['staffel'], $globals['tid']] ) 
         : $admin ['userid'];
 
     // Benutzername
@@ -41,7 +41,7 @@
             SED_Error ( "Bitte geben Sie ein neues Passwort an!" );
         else
         {
-            if ( !mysql_query ( "UPDATE benutzer SET passwort=MD5('$_POST[pw_new1]') WHERE id=$up_userid LIMIT 1", $globals ['db'] ) )
+            if ( !SED_TryQuery ( 'UPDATE benutzer SET passwort=MD5(?) WHERE id=?', [$_POST['pw_new1'], $up_userid] ) )
                 SED_Error ( "Fehler beim Setzen des neuen Passworts!" );
             else
             {
@@ -79,7 +79,7 @@
         // Daten ändern
         else
         {
-            if ( !mysql_query ( "UPDATE benutzer SET name='$_POST[name]', email='$_POST[email]', telefon='$_POST[telefon]', telefon2='$_POST[telefon2]' WHERE id=$up_userid LIMIT 1", $globals ['db'] ) )
+            if ( !SED_TryQuery ( 'UPDATE benutzer SET name=?, email=?, telefon=?, telefon2=? WHERE id=? LIMIT 1', [$_POST['name'], $_POST['email'], $_POST['telefon'], $_POST['telefon2'], $up_userid] ) )
                 SED_Error ( "Fehler beim Setzen der neuen Daten!" );
             else
             {
@@ -98,7 +98,7 @@
     
     /////////////////////////////
     // Kontaktdaten bearbeiten
-    $daten = mysql_fetch_array ( mysql_query ( "SELECT name, telefon, telefon2, email FROM benutzer WHERE id=$up_userid", $globals ['db'] ), MYSQL_ASSOC );
+    $daten = SED_Row ( 'SELECT name, telefon, telefon2, email FROM benutzer WHERE id=?', [$up_userid]);
     ?>
         <form action="<? echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
         <legend>Kontaktdaten</legend>

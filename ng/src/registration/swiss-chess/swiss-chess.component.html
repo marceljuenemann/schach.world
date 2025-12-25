@@ -1,0 +1,41 @@
+<h3 class="mt-4">Swiss-Chess Export</h3>
+
+@for (group of this.tournament().groups.values(); track group.id) {
+  @if (!group.config.hidden) {
+    <div class="mt-2">
+      <button (click)="export(group)" type="button" class="btn btn-primary">
+        <span class="dashicons dashicons-download" style="vertical-align: bottom"></span>
+        {{ group.id }}.json
+      </button>
+    </div>
+  }
+}
+
+
+<h4 class="mt-4">Anleitung</h4>
+
+Um die obigen Dateien in Swiss-Chess zu importieren, gehen Sie bitte wie folgt vor:
+
+<ol>
+  <li>Swiss-Chess öffnen und Teilnehmerliste anzeigen</li>
+  <li>Im Menü <i>Bearbeiten</i> den Eintrage <i>Datenaustausch (Textdatei)</i> auswählen (oder F8 drücken)</li>
+  <li>*.Json als Dateiformat auswählen</li>
+  <li>Die oben heruntergeladene Datei auswählen und importieren</li>
+</ol>
+
+<img src="/core/assets/img/swiss-chess-import.png" alt="Swiss-Chess Import Dialog" class="img-fluid my-3" />
+
+
+<h4 class="mt-4">Hintergrund-Datei</h4>
+
+<p>
+  Die DWZ- und Elo-Zahlen im Anmeldesystem werden täglich mit der DSB Datenbank abgeglichen, sollten
+  also identisch sein mit der in der <a href="https://swiss-chess.de/dt_daten.php">Hintergrunddatei</a>,
+  die Swiss-Chess bereitstellt.
+</p>
+
+<p>
+  Die Hintergrunddatei kann aber auch zur Aktualiserung der DWZ- und Elo-Zahlen verwendet werden, oder
+  um evtl. fehlende Felder wie Land zu ergänzen. Dazu im Menü <i>Spielerdaten</i> den Eintrag
+  <i>Teilnehmer aktualisieren (über ZPS) verwenden.</i>
+</p>

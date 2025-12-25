@@ -10,14 +10,14 @@
  * @subpackage staffelleiter
  */
 
-    require_once ( "login.inc.php");
+  require_once ( "login.inc.php");
 
   if ( isset ( $_GET ['aks'] ) )
   {
-    mysql_query ( "UPDATE staffeln SET turnier=0 WHERE id=$admin[staffel] AND turnier=$globals[tid]", $globals ['db'] );
-    mysql_query ( "UPDATE mannschaften SET staffel=0 WHERE staffel=$admin[staffel] AND turnier=$globals[tid]", $globals ['db'] );
-    mysql_query ( "UPDATE paarungen SET staffel=0 WHERE staffel=$admin[staffel]", $globals ['db'] );
-	SED_Cache::clearAll ();
+    SED_TryQuery('UPDATE staffeln SET turnier=0 WHERE id=? AND turnier=?', [$admin['staffel'], $globals['tid']]);
+    SED_TryQuery('UPDATE mannschaften SET staffel=0 WHERE staffel=? AND turnier=?', [$admin['staffel'], $globals['tid']]);
+    SED_TryQuery('UPDATE paarungen SET staffel=0 WHERE staffel=?', [$admin['staffel']]);
+	  SED_Cache::clearAll ();
     echo "<meta http-equiv='refresh' content='0;URL=?admin=desktop-$admin[userid]-$admin[session]' />";
   }
 

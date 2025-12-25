@@ -8,7 +8,9 @@ namespace Nsv\League\Core;
 class Encoding
 {
   // TODO: Move everything to Unicode
-  const CHARSET = 'ISO-8859-1';
+  const CHARSET_LATIN1 = 'ISO-8859-1';
+  const CHARSET_UTF8 = 'UTF-8';
+  const CHARSET = self::CHARSET_LATIN1;
   const UNICODE_ENABLED = false;
 
   /**
@@ -55,5 +57,6 @@ class Encoding
     } else {
       $callback($obj);
     }
+    return $obj;
   }
 }

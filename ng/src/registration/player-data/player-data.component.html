@@ -1,0 +1,61 @@
+<form>
+  <!-- Name selection with DWZ database backing -->
+  <ng-template #rt let-player="result" let-t="term">
+    <ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
+    <i>&nbsp;({{player.data ? player.data.club : 'Nicht in Mitgliederdatenbank'}})</i>
+  </ng-template>
+  <div class="form-floating">
+    <input
+      ngbAutofocus
+      id="typeahead-template"
+      type="text"
+      class="form-control"
+      [formControl]="selectedPlayer"
+      [class.is-valid]="!editing && selectedPlayer.value && selectedPlayer.value.data"
+      [class.is-invalid]="!editing && validatePlayerSelection && !selectedPlayer.value"
+      (blur)="validatePlayerSelection = true"
+      [ngbTypeahead]="search"
+      [resultTemplate]="rt"
+      [inputFormatter]="formatter"
+      [editable]="false"
+    />
+    <label for="typeahead-template">Nachname, Vorname</label>
+    <div class="valid-feedback">
+      Teilnehmer:in aus Mitgliederdatenbank ausgewählt
+    </div>
+    <div class="invalid-feedback">
+      Geben Sie den Name im Format <i>Nachname, Vorname</i> ein und wählen Sie einen Eintrag aus der Mitgliederdatenbank aus
+    </div>
+    @if (!editing && isManualEntry) {
+      <div class="small">
+        Teilnehmer:in nicht in Mitgliederdatenbank
+      </div>
+    }
+  </div>
+</form>
+<form [formGroup]="form">
+
+  <!-- Club selection -->
+  <ng-template #rtClub let-club="result" let-t="term">
+    <ngb-highlight [result]="club" [term]="t"></ngb-highlight>
+  </ng-template>
+  <div class="form-floating">
+    <input
+      [formControl]="club"
+      id="club"
+      type="text"
+      [ngbTypeahead]="searchClub"
+      [resultTemplate]="rtClub"
+      class="form-control mt-3">
+    <label for="floatingInput">Verein</label>
+  </div>
+
+  <nsv-form
+    [form]="form"
+    [disabled]="restrictEditing && !isManualEntry"
+    [visibleControls]="visibleControls"
+    [validationErrors]="validationErrors"
+    validationErrorPrefix="playerData."
+    [columns]="2"
+  ></nsv-form>
+</form>

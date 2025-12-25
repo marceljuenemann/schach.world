@@ -1,0 +1,44 @@
+<form [formGroup]="form">
+  <div class="row">
+    @for (id of controlIds; track id) {
+      @let control = form.controls[id];
+      @let error = validationError(id);
+      @if (isVisible(control)) {
+        <div class="{{colClass}}">
+          <div class="form-floating">
+            @if (control.type === 'multiline') {
+              <textarea
+                [formControlName]="id"
+                id="nsv-form-{{id}}"
+                style="height: 100px"
+                class="form-control mt-3"
+                [class.is-invalid]="error || (control.invalid && control.touched)"
+              ></textarea>
+            } @else if (control.type === 'select') {
+              <select [formControlName]="id" id="nsv-form-{{id}}" class="form-select mt-3" [class.is-invalid]="error || (control.invalid && control.touched)">
+                @for (option of control.options; track option.value) {
+                  <option [value]="option.value" [disabled]="option.disabled">{{option.label}}</option>
+                }
+              </select>
+            } @else {
+              <input
+                type="text"
+                [formControlName]="id"
+                id="nsv-form-{{id}}"
+                class="form-control mt-3"
+                [class.is-invalid]="error || (control.invalid && control.touched)"
+                />
+            }
+            <label for="nsv-form-{{id}}">{{control.label}}</label>
+            @if (control.hasError('required')) {
+              <div class="invalid-feedback">{{control.label}} darf nicht leer sein</div>
+            }
+            @if (error) {
+              <div class="invalid-feedback">{{error}}</div>
+            }
+          </div>
+        </div>
+      }
+    }
+  </div>
+</form>

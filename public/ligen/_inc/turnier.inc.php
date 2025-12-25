@@ -14,11 +14,14 @@
  * @subpackage main
  */
 
+  $bridge = SED_Bridge();
+  $league = $bridge->league;
+
   // Felder aus Turnier-Tabelle in $prefs speichern
-  // Symfony will take care of setting $globals[tid] already.
   global $globals;
   global $prefs;
-  $prefs = SED_Query("SELECT t.* FROM turniere as t WHERE t.id=?", [$globals['tid']])->fetchAssociative();
+  $globals['tid'] = $league->id;
+  $prefs = SED_Query('SELECT t.* FROM turniere as t WHERE t.id=?', [$globals['tid']])->fetchAssociative();
 
   // Fehler?
   if ( !is_array ( $prefs ) )
@@ -32,13 +35,16 @@
 
   // Staffeln
   $globals ['staffeln'] = array ();
-  foreach ($globals['league']->divisions as $division) {
+  foreach ($league->divisions as $division) {
     $globals['staffeln'][$division->id] = $division->name;
   }
-
+  if ($bridge->division) {
+    $_GET['staffel'] = $bridge->division->id;
+  }
+  
   // Mannschaften
   $globals ['teams'] = array ();
-  foreach ($globals['league']->teams as $team) {
+  foreach ($league->teams as $team) {
     $globals['teams'][$team->id] = $team->nameWithNumber();
   }
 
@@ -47,11 +53,11 @@
   {
     global $globals;
     // Eigentlich gibt es mittlerweile ja viewStaffeltermine, allerdings funktioniert das hier auch, wenn keine Turniertermine festgelegt wurden, sondern nur Staffeltermine
-    return SED_Query("
-      SELECT DATE_FORMAT(te.datum,'$datumsformat') as datum
+    return SED_Query('
+      SELECT DATE_FORMAT(te.datum,\''.$datumsformat.'\') as datum
       FROM termine as te
       WHERE te.turnier=? and te.runde=? and (te.staffel is null or te.staffel=?)
-      ORDER BY staffel DESC LIMIT 1",
+      ORDER BY staffel DESC LIMIT 1',
       [
         $globals['tid'],
         $runde,
@@ -74,8 +80,8 @@
             return $prefs [$feld];
 
     // Abfragen, ob die Anzahl vom Turnier-Standart abweicht
-    return SED_Value("
-      SELECT IF($feld IS NULL,".$prefs[$feld].",$feld) FROM staffeln WHERE id=?",
+    return SED_Value('
+      SELECT IF('.$feld.' IS NULL,'.$prefs[$feld].','.$feld.') FROM staffeln WHERE id=?',
       [$staffel]
     );
   }
@@ -83,7 +89,7 @@
   // Liefert die letzte Runde in der eine Paarung gesetzt ist
   function SED_GetLetzteRunde ( $staffel )
   {
-    return SED_Query("SELECT MAX( runde )  FROM paarungen WHERE staffel=?", [$staffel])->fetchOne();
+    return SED_Query('SELECT MAX( runde )  FROM paarungen WHERE staffel=?', [$staffel])->fetchOne();
   }
 
   // Liefert die Anzahl der Bretter einer Staffel
@@ -110,8 +116,10 @@
       'bezirk1' => 2008,
       'bezirk2' => 2015,
       'bezirk3' => 2010,
+      'bezirk3-jugend' => 2013,
       'bezirk6' => 2007,
       'fbl' => 2013,
+      'fll' => 2018,
       'frl' => 2010,
       'jbln' => 2008,
       'nsj' => 2007,

@@ -6,7 +6,7 @@ Array
             [name] => Test Division
             [uri] => /ligen/test/test-division/
             [scheduleUri] => /ligen/test/test-division/spielplan/
-            [statsUri] => /ligen/test/?staffel=1&r=statistik
+            [statsUri] => /ligen/test/test-division/statistik/
             [matchDays] => Array
                 (
                     [1] => Nsv\League\Api\Model\MatchDay Object
@@ -14,7 +14,8 @@ Array
                             [round] => 1
                             [date] => 2025-01-01
                             [uri] => /ligen/test/test-division/1/
-                            [uriPdf] => /ligen/test/?staffel=1&r=1&ausgabe=pdf
+                            [uriPdf] => /ligen/test/test-division/1/pdf/
+                            [uriPgn] => /ligen/test/test-division/1/pgn/
                             [uriApi] => /ligen/test/api/divisions/test-division/rounds/1/
                             [pairings] => Array
                                 (

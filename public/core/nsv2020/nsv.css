@@ -62,6 +62,7 @@ a.anchor {
   --bs-btn-disabled-border-color: #c32811;
 }
 
+.btn-primary.show,
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
@@ -72,6 +73,11 @@ a.anchor {
 .nav-tabs .nav-link.active {
   color: black;
   font-weight: bold;
+}
+
+.accordion {
+  --bs-accordion-active-color: #212529;
+  --bs-accordion-active-bg: #f5f5f5;
 }
 
 .accordion .card-header .btn:focus {

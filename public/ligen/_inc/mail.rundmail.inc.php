@@ -23,12 +23,11 @@ class SED_Rundmail {
         $this->runde = $runde;
 
         // MySQL-Abfragen: Staffelinformationen, Aktuelle Runde
-        $this->infos = mysql_fetch_array ( mysql_query ( "SELECT s.name as staffel, b.name, b.email, b.telefon FROM staffeln as s INNER JOIN benutzer as b ON s.leiter=b.id WHERE s.id=$staffel LIMIT 1", $globals ['db'] ), MYSQL_ASSOC );
+        $this->infos = SED_Row('SELECT s.name as staffel, b.name, b.email, b.telefon FROM staffeln as s INNER JOIN benutzer as b ON s.leiter=b.id WHERE s.id=? LIMIT 1', [$staffel]);
 
-        // MySQL-Abfragen: Mannschaftsführer, Newsletter-Empfänger, Zusatzempfänger
-        $this->mannschaften = mysql_query ( "SELECT id, mf_name name, mf_email email FROM mannschaften as m WHERE m.staffel=$staffel ORDER BY m.name", $globals ['db'] );
-        $this->zusatzempfaenger = mysql_query ( "SELECT z.mannschaft, z.email FROM mannschaften m INNER JOIN zusatzempfaenger z ON z.mannschaft=m.id WHERE m.staffel=$staffel and z.rundmail=1", $globals ['db'] );
-        $this->newsletter = mysql_query ( "SELECT id, random, email FROM rundmail WHERE staffel=$staffel AND aktiv=1", $globals ['db'] );
+        // MySQL-Abfragen: Mannschaftsführer, Zusatzempfänger
+        $this->mannschaften = SED_Query ( 'SELECT id, mf_name name, mf_email email FROM mannschaften as m WHERE m.staffel=? ORDER BY m.name', [$staffel] )->fetchAllAssociative();
+        $this->zusatzempfaenger = SED_Query ( 'SELECT z.mannschaft, z.email FROM mannschaften m INNER JOIN zusatzempfaenger z ON z.mannschaft=m.id WHERE m.staffel=? and z.rundmail=1', [$staffel])->fetchAllAssociative();
 
         // Rundenzahl
         $this->rundenzahl = SED_GetRundenzahl ( $staffel );
@@ -50,29 +49,17 @@ class SED_Rundmail {
     function getTo (){
         $result = array ();
 
-        // Mannschaften
-        if ( $this->mannschaften )
-            while ( $team = mysql_fetch_array ( $this->mannschaften ) ){
-                if ( SED_IsValidEmail ( $team ['email'] ) )
-                    if ( !isset ( $result [$team ['id']] ) )
-                        $result [$team ['id']] = array ( $team ['email'] );
-                    else
-                        $result [$team ['id']][] = $team ['email'];
-            }
-
-        // Zusatzempfänger
-        if ( $this->zusatzempfaenger )
-            while ( $zusatz = mysql_fetch_array ( $this->zusatzempfaenger ) )
-                if ( !isset ( $result [$zusatz ['mannschaft']] ) )
-                    $result [$zusatz ['mannschaft']] = array ( $zusatz ['email'] );
-                else
-                    $result [$zusatz ['mannschaft']][] = $zusatz ['email'];
-
-        // Newsletter
-        $result ['newsletter'] = array ();
-        if ( $this->newsletter )
-            while ( $nl = mysql_fetch_array ( $this->newsletter ) )
-                $result ['newsletter'][] = $nl;
+        // Mannschaften & Zusatzemfänger.
+        foreach ($this->mannschaften as $team) {
+          if ( SED_IsValidEmail ( $team ['email'] ) ) {
+            $result [$team ['id']][] = $team ['email'];
+          }
+        }
+        foreach ($this->zusatzempfaenger as $empf) {
+          if ( SED_IsValidEmail ( $empf ['email'] ) ) {
+            $result [$empf ['mannschaft']][] = $empf ['email'];
+          }
+        }
 
         return $result;
     }
@@ -97,19 +84,11 @@ class SED_Rundmail {
         SED_SendMail( $mail, $this->infos ["email"], array() );
 
         foreach ( $this->getTo () as $mannschaft=>$to ){
-            if ( $mannschaft != "newsletter" ){
-                // An Mannschaften senden
-                $sig = "\n\nUm einzustellen, wer in Ihrem Verein diese und andere eMails erhalten soll, klicken Sie bitte auf folgenden Link: ";
-                $sig .= SED_TINYURL_Mannschaftsdaten ( $mannschaft );
-                $mail->Body = $body.$sig;
-                SED_SendMail( $mail, $to, array() );
-            } else {
-                // An Newsletter senden
-                foreach ( $to as $nl ){
-                    $mail->Body = $body . "\n\n----------------------\nUm in Zukunft keine Rundschreiben mehr zu erhalten, klicken Sie auf folgenden Link: $globals[httppath]$prefs[directory]/?m=newsletter&validate=$nl[id]&remove=true&rnd=$nl[random]";
-                    SED_SendMail( $mail, $nl ['email'], array() );
-                }
-            }
+            // An Mannschaften senden
+            $sig = "\n\nUm einzustellen, wer in Ihrem Verein diese und andere eMails erhalten soll, klicken Sie bitte auf folgenden Link: ";
+            $sig .= SED_TINYURL_Mannschaftsdaten ( $mannschaft );
+            $mail->Body = $body.$sig;
+            SED_SendMail( $mail, $to, array() );
         }
     }
 }

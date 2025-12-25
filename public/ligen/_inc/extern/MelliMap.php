@@ -22,7 +22,7 @@
   {
     // Blauen Kreis zeichnen
     $color = ImageColorAllocate ( $img, 0, 0, 255 );
-    imagefilledellipse ( $img, $x, $y, 7, 7, $color );
+    imagefilledellipse ( $img, (int) $x, (int) $y, 7, 7, $color );
   }
 
   // Berechnung der Koordinaten
@@ -36,7 +36,7 @@
   foreach ( explode ( ";", $_GET ['locations'] ) as $location )
   {
     $data = explode ( "-", $location );
-    if ( count ( $data ) > 2 )
+    if ( count ( $data ) >= 2 )
       DrawLocation ( $img, CoordX ( $data [1], $data [0] ), CoordY ( $data [0] ), $data [2] );
   }
 

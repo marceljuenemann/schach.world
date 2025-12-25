@@ -44,9 +44,17 @@ services:
     Nsv\League\Core\LeagueAuthState:
         factory: ['@Nsv\League\Core\LeagueAuthProvider', 'authState']
 
-    # Misc services
+    # Registration services
+    Nsv\Registration\Controller\:
+        resource: '../src/Registration/Controller/'
+    Nsv\Registration\Repository\:
+        resource: '../src/Registration/Repository/'
+
+    # Rating & player database services
     Nsv\Dwz\:
         resource: '../src/Dwz/'
+    Nsv\Dwz\Controller\:
+        resource: '../src/Dwz/Controller/'
 
 when@test:
     services:

@@ -68,6 +68,7 @@
     {
       // Speichervorgang vorbereiten
       $sql = "";
+      $params = [];
       for ( $i = 0; $i < count ( $frmMF ); ++$i )
       {
         // Trennlinie?
@@ -77,20 +78,20 @@
         // Wert berechnen
         $value = $_POST ["frmManager_" . $frmMF [$i][0]];
         if ( $value == "" )
-            $value = "NULL";
-        else
-            $value = "'$value'";
+            $value = null;
 
         // In MySQL Speichern
-        $sql .= ", ".$frmMF [$i][0]."=".$value;
+        $sql .= ", ".$frmMF [$i][0]."=?";
+        $params[] = $value;
       }
       
       // Speichervorgang durchführen
-      $sql = "UPDATE staffeln SET ".substr ( $sql, 2 )." WHERE id=$admin[staffel] LIMIT 1";
-      if ( !mysql_query ( $sql, $globals ['db'] ) )
+      $sql = "UPDATE staffeln SET ".substr ( $sql, 2 )." WHERE id=? LIMIT 1";
+      $params[] = $admin["staffel"];
+      if ( !SED_Query ( $sql, $params ) )
         SED_Error ( "Es ist ein Fehler aufgetreten!", true );
 
-	  // Cache leeren
+  	  // Cache leeren
       SED_Cache::clearAll ( $admin ["staffel"] );
       
       // Erfolgsmeldung
@@ -102,8 +103,8 @@
 
 
   // Daten abfragen
-  $staffel = mysql_fetch_array ( mysql_query ( "SELECT * FROM staffeln WHERE id=$admin[staffel]", $globals['db'] ) );
-  $einstellungen = mysql_fetch_array ( mysql_query ( "SELECT * FROM viewStaffeln WHERE id=$admin[staffel]", $globals['db'] ) );
+  $staffel = SED_Row ( 'SELECT * FROM staffeln WHERE id=?', [$admin['staffel']]);
+  $einstellungen = SED_Row ( 'SELECT * FROM viewStaffeln WHERE id=?', [$admin['staffel']]);
 
 
   // Felder ausgeben

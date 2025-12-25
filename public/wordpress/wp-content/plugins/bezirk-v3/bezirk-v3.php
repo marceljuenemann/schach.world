@@ -17,6 +17,8 @@ require_once(dirname(__FILE__) . '/redirects.php' );
 add_filter('template_include', function($template) {
   global $wp;
   $prefixes = [
+    'anmeldung',
+    'dwz',
     'vereine',
     '_error'
   ];
@@ -33,3 +35,8 @@ add_filter('template_include', function($template) {
 add_filter('automatic_updates_is_vcs_checkout', function($checkout, $context) {
   return false;
 }, 10, 2);
+
+// Disable permalink guessing. By default, WordPress is very eager to try to find a post that matches the
+// given URL. However, when we have various custom URLs, then that often gets in the way and WordPress
+// intercepts an URL that we meant to handle by a custom route.
+add_filter('do_redirect_guess_404_permalink', '__return_false');
