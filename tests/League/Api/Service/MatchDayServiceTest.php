@@ -2,13 +2,20 @@
 
 namespace Nsv\League\Api\Service;
 
+use Nsv\League\Entity\Division;
+use Nsv\League\Entity\League;
+
 class MatchDayServiceTest extends AbstractApiTest
 {
   private MatchDayService $service;
+  private League $league;
+  private Division $division;
 
   protected function setUp(): void {
     parent::setUp();
     $this->service = $this->container->get(MatchDayService::class);
+    $this->league = $this->leagueRepository->findByPathOrPrefix('nsv-2526');
+    $this->division = $this->league->divisions[0];
   }
 
   // TODO: Test lastModified field manually.

@@ -1,26 +1,26 @@
 Nsv\League\Api\Model\Player Object
 (
-    [id] => 3
-    [name] => Spiellos, Max
-    [lastName] => Spiellos
-    [firstName] => Max
+    [id] => 539818
+    [name] => Player 790b, c2a8e09
+    [lastName] => Player 790b
+    [firstName] => c2a8e09
     [title] => 
-    [number] => 2
-    [zps] => 
-    [dwz] => 
-    [elo] => 
-    [gender] => 
+    [number] => 101
+    [zps] => 70156-480
+    [dwz] => 2031
+    [elo] => 2080
+    [gender] => m
     [isGuest] => 
-    [lateRegistrationRound] => 3
-    [uri] => /ligen/test/s/3/
-    [dsbUri] => 
+    [lateRegistrationRound] => 
+    [uri] => /ligen/nsj-2526/s/539818/
+    [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-480
     [team] => Nsv\League\Api\Model\Team Object
         (
-            [id] => 1
-            [name] => Team
-            [zps] => 
-            [uri] => /ligen/test/m/1/
-            [apiUri] => /ligen/test/api/teams/1/
+            [id] => 8412
+            [name] => SK Lehrte
+            [zps] => 70156
+            [uri] => /ligen/nsj-2526/m/8412/
+            [apiUri] => /ligen/nsj-2526/api/teams/8412/
         )
 
 )

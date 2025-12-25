@@ -3,16 +3,22 @@
 namespace Nsv\League\Api\Service;
 
 use Nsv\League\Api\Request\UpdateTeamRecipientsRequest;
+use Nsv\League\Entity\Division;
+use Nsv\League\Entity\League;
 use Nsv\League\Entity\Team;
 use Nsv\League\Entity\TeamRecipient;
 
 class TeamServiceTest extends AbstractApiTest
 {
   private TeamService $service;
+  private League $league;
+  private Division $division;
 
   protected function setUp(): void {
     parent::setUp();
     $this->service = $this->container->get(TeamService::class);
+    $this->league = $this->leagueRepository->findByPathOrPrefix('nsv-2526');
+    $this->division = $this->league->divisions[0];
   }
 
   public function testTeam1() {

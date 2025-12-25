@@ -1,4 +1,4 @@
-USE `nsv-webapp`;
+USE `nsv-main`;
 
 CREATE TABLE `termine2` (
   `id` int(11) NOT NULL,
