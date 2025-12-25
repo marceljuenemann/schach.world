@@ -1,26 +1,26 @@
 Nsv\League\Api\Model\Player Object
 (
-    [id] => 2
-    [name] => Salzmann, Jan
-    [lastName] => Salzmann
-    [firstName] => Jan
+    [id] => 539819
+    [name] => Player a88f, f2c350b
+    [lastName] => Player a88f
+    [firstName] => f2c350b
     [title] => 
-    [number] => 201
-    [zps] => 70101-1023
-    [dwz] => 1500
-    [elo] => 
+    [number] => 102
+    [zps] => 70156-467
+    [dwz] => 1982
+    [elo] => 1948
     [gender] => m
     [isGuest] => 
     [lateRegistrationRound] => 
-    [uri] => /ligen/test/s/2/
-    [dsbUri] => https://www.schachbund.de/spieler.html?zps=70101-1023
+    [uri] => /ligen/nsj-2526/s/539819/
+    [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-467
     [team] => Nsv\League\Api\Model\Team Object
         (
-            [id] => 2
-            [name] => Team 2
-            [zps] => 
-            [uri] => /ligen/test/m/2/
-            [apiUri] => /ligen/test/api/teams/2/
+            [id] => 8412
+            [name] => SK Lehrte
+            [zps] => 70156
+            [uri] => /ligen/nsj-2526/m/8412/
+            [apiUri] => /ligen/nsj-2526/api/teams/8412/
         )
 
     [games] => Array
@@ -35,259 +35,85 @@ Nsv\League\Api\Model\Player Object
                     [opponentResult] => 1
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 1
-                            [name] => Team
-                            [zps] => 
-                            [uri] => /ligen/test/m/1/
-                            [apiUri] => /ligen/test/api/teams/1/
+                            [id] => 8416
+                            [name] => SV Osnabrück v. 1919
+                            [zps] => 70611
+                            [uri] => /ligen/nsj-2526/m/8416/
+                            [apiUri] => /ligen/nsj-2526/api/teams/8416/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 1
-                            [name] => GM Dr. Jünemann, Marcel
-                            [lastName] => Jünemann
-                            [firstName] => Marcel
-                            [title] => GM Dr.
-                            [number] => 1
-                            [zps] => 70156-117
-                            [dwz] => 1942
-                            [elo] => 2020
-                            [gender] => w
+                            [id] => 539984
+                            [name] => Player dfc0, 0abe303
+                            [lastName] => Player dfc0
+                            [firstName] => 0abe303
+                            [title] => 
+                            [number] => 101
+                            [zps] => 70611-217
+                            [dwz] => 2038
+                            [elo] => 2080
+                            [gender] => m
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/1/
-                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
+                            [uri] => /ligen/nsj-2526/s/539984/
+                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70611-217
                         )
 
-                    [uri] => /ligen/test/test-division/1/
+                    [uri] => /ligen/nsj-2526/jugendliga-niedersachsen/1/
                 )
 
             [1] => Nsv\League\Api\Model\PlayerGame Object
                 (
-                    [round] => 1
-                    [board] => 2
-                    [home] => 
+                    [round] => 3
+                    [board] => 1
+                    [home] => 1
                     [white] => 
                     [result] => ½
                     [opponentResult] => ½
                     [opponentTeam] => Nsv\League\Api\Model\Team Object
                         (
-                            [id] => 1
-                            [name] => Team
-                            [zps] => 
-                            [uri] => /ligen/test/m/1/
-                            [apiUri] => /ligen/test/api/teams/1/
+                            [id] => 8409
+                            [name] => Peiner SV
+                            [zps] => 70224
+                            [uri] => /ligen/nsj-2526/m/8409/
+                            [apiUri] => /ligen/nsj-2526/api/teams/8409/
                         )
 
                     [opponentPlayer] => Nsv\League\Api\Model\Player Object
                         (
-                            [id] => 1
-                            [name] => GM Dr. Jünemann, Marcel
-                            [lastName] => Jünemann
-                            [firstName] => Marcel
-                            [title] => GM Dr.
-                            [number] => 1
-                            [zps] => 70156-117
-                            [dwz] => 1942
-                            [elo] => 2020
-                            [gender] => w
+                            [id] => 539786
+                            [name] => Player 7da3, 8253108
+                            [lastName] => Player 7da3
+                            [firstName] => 8253108
+                            [title] => 
+                            [number] => 101
+                            [zps] => 70224-749
+                            [dwz] => 1597
+                            [elo] => 1708
+                            [gender] => m
                             [isGuest] => 
                             [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/1/
-                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
+                            [uri] => /ligen/nsj-2526/s/539786/
+                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70224-749
                         )
 
-                    [uri] => /ligen/test/test-division/1/
-                )
-
-            [2] => Nsv\League\Api\Model\PlayerGame Object
-                (
-                    [round] => 1
-                    [board] => 3
-                    [home] => 
-                    [white] => 1
-                    [result] => 1
-                    [opponentResult] => 0
-                    [opponentTeam] => Nsv\League\Api\Model\Team Object
-                        (
-                            [id] => 1
-                            [name] => Team
-                            [zps] => 
-                            [uri] => /ligen/test/m/1/
-                            [apiUri] => /ligen/test/api/teams/1/
-                        )
-
-                    [opponentPlayer] => Nsv\League\Api\Model\Player Object
-                        (
-                            [id] => 1
-                            [name] => GM Dr. Jünemann, Marcel
-                            [lastName] => Jünemann
-                            [firstName] => Marcel
-                            [title] => GM Dr.
-                            [number] => 1
-                            [zps] => 70156-117
-                            [dwz] => 1942
-                            [elo] => 2020
-                            [gender] => w
-                            [isGuest] => 
-                            [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/1/
-                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
-                        )
-
-                    [uri] => /ligen/test/test-division/1/
-                )
-
-            [3] => Nsv\League\Api\Model\PlayerGame Object
-                (
-                    [round] => 2
-                    [board] => 1
-                    [home] => 1
-                    [white] => 
-                    [result] => +
-                    [opponentResult] => -
-                    [opponentTeam] => Nsv\League\Api\Model\Team Object
-                        (
-                            [id] => 1
-                            [name] => Team
-                            [zps] => 
-                            [uri] => /ligen/test/m/1/
-                            [apiUri] => /ligen/test/api/teams/1/
-                        )
-
-                    [opponentPlayer] => Nsv\League\Api\Model\Player Object
-                        (
-                            [id] => 1
-                            [name] => GM Dr. Jünemann, Marcel
-                            [lastName] => Jünemann
-                            [firstName] => Marcel
-                            [title] => GM Dr.
-                            [number] => 1
-                            [zps] => 70156-117
-                            [dwz] => 1942
-                            [elo] => 2020
-                            [gender] => w
-                            [isGuest] => 
-                            [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/1/
-                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
-                        )
-
-                    [uri] => /ligen/test/test-division/2/
-                )
-
-            [4] => Nsv\League\Api\Model\PlayerGame Object
-                (
-                    [round] => 2
-                    [board] => 2
-                    [home] => 1
-                    [white] => 1
-                    [result] => ?
-                    [opponentResult] => ?
-                    [opponentTeam] => Nsv\League\Api\Model\Team Object
-                        (
-                            [id] => 1
-                            [name] => Team
-                            [zps] => 
-                            [uri] => /ligen/test/m/1/
-                            [apiUri] => /ligen/test/api/teams/1/
-                        )
-
-                    [opponentPlayer] => Nsv\League\Api\Model\Player Object
-                        (
-                            [id] => 1
-                            [name] => GM Dr. Jünemann, Marcel
-                            [lastName] => Jünemann
-                            [firstName] => Marcel
-                            [title] => GM Dr.
-                            [number] => 1
-                            [zps] => 70156-117
-                            [dwz] => 1942
-                            [elo] => 2020
-                            [gender] => w
-                            [isGuest] => 
-                            [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/1/
-                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
-                        )
-
-                    [uri] => /ligen/test/test-division/2/
-                )
-
-            [5] => Nsv\League\Api\Model\PlayerGame Object
-                (
-                    [round] => 2
-                    [board] => 3
-                    [home] => 1
-                    [white] => 
-                    [result] => ?
-                    [opponentResult] => ?
-                    [opponentTeam] => Nsv\League\Api\Model\Team Object
-                        (
-                            [id] => 1
-                            [name] => Team
-                            [zps] => 
-                            [uri] => /ligen/test/m/1/
-                            [apiUri] => /ligen/test/api/teams/1/
-                        )
-
-                    [opponentPlayer] => Nsv\League\Api\Model\Player Object
-                        (
-                            [id] => 1
-                            [name] => GM Dr. Jünemann, Marcel
-                            [lastName] => Jünemann
-                            [firstName] => Marcel
-                            [title] => GM Dr.
-                            [number] => 1
-                            [zps] => 70156-117
-                            [dwz] => 1942
-                            [elo] => 2020
-                            [gender] => w
-                            [isGuest] => 
-                            [lateRegistrationRound] => 
-                            [uri] => /ligen/test/s/1/
-                            [dsbUri] => https://www.schachbund.de/spieler.html?zps=70156-117
-                        )
-
-                    [uri] => /ligen/test/test-division/2/
-                )
-
-            [6] => Nsv\League\Api\Model\PlayerGame Object
-                (
-                    [round] => 2
-                    [board] => 4
-                    [home] => 1
-                    [white] => 1
-                    [result] => +
-                    [opponentResult] => -
-                    [opponentTeam] => Nsv\League\Api\Model\Team Object
-                        (
-                            [id] => 1
-                            [name] => Team
-                            [zps] => 
-                            [uri] => /ligen/test/m/1/
-                            [apiUri] => /ligen/test/api/teams/1/
-                        )
-
-                    [opponentPlayer] => 
-                    [uri] => /ligen/test/test-division/2/
+                    [uri] => /ligen/nsj-2526/jugendliga-niedersachsen/3/
                 )
 
         )
 
     [dwzCalculation] => Array
         (
-            [0] => 1500
+            [0] => 1982
             [1] => Array
                 (
-                    [0] => 1942
-                    [1] => 1942
-                    [2] => 1942
+                    [0] => 2038
+                    [1] => 1597
                 )
 
-            [2] => 1.5
-            [3] => 2004
+            [2] => 0.5
+            [3] => 1987
         )
 
 )
