@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV 3', url: '?mannschaft=3973', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=888&r=7#p3973x3979', title: 'gegen SV Hellern 5', text: 5½ }]
+    - [{ url: '?staffel=888&r=1#p3973x3980', title: 'gegen Hagener SV 4', text: 4½ }]
+    - [{ url: '?staffel=888&r=4#p3973x3974', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=888&r=3#p3973x3976', title: 'gegen Bersenbrück/Bramsche 2', text: 5½ }]
+    - [{ url: '?staffel=888&r=5#p3973x3977', title: 'gegen TSV Osnabrück', text: 6½ }]
+    - [{ url: '?staffel=888&r=2#p3973x3978', title: 'gegen TSV Riemsloh 2', text: 7½ }]
+    - [{ url: '?staffel=888&r=6#p3973x3975', title: 'gegen SV Bad Essen 3', text: 6½ }]
+    - 12
+    - '39'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Hellern 5', url: '?mannschaft=3979', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=888&r=7#p3979x3973', title: 'gegen Hagener SV 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=888&r=3#p3979x3980', title: 'gegen Hagener SV 4', text: '4' }]
+    - [{ url: '?staffel=888&r=6#p3979x3974', title: 'gegen SV Osnabrück 3', text: 4½ }]
+    - [{ url: '?staffel=888&r=5#p3979x3976', title: 'gegen Bersenbrück/Bramsche 2', text: 7½ }]
+    - [{ url: '?staffel=888&r=2#p3979x3977', title: 'gegen TSV Osnabrück', text: '7' }]
+    - [{ url: '?staffel=888&r=4#p3979x3978', title: 'gegen TSV Riemsloh 2', text: '5' }]
+    - [{ url: '?staffel=888&r=1#p3979x3975', title: 'gegen SV Bad Essen 3', text: '5' }]
+    - 11
+    - 35½
+    - ''
+-
+    - '3.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=3980', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=888&r=1#p3980x3973', title: 'gegen Hagener SV 3', text: 3½ }]
+    - [{ url: '?staffel=888&r=3#p3980x3979', title: 'gegen SV Hellern 5', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=888&r=7#p3980x3974', title: 'gegen SV Osnabrück 3', text: '4' }]
+    - [{ url: '?staffel=888&r=6#p3980x3976', title: 'gegen Bersenbrück/Bramsche 2', text: 4½ }]
+    - [{ url: '?staffel=888&r=4#p3980x3977', title: 'gegen TSV Osnabrück', text: '6' }]
+    - [{ url: '?staffel=888&r=5#p3980x3978', title: 'gegen TSV Riemsloh 2', text: '4' }]
+    - [{ url: '?staffel=888&r=2#p3980x3975', title: 'gegen SV Bad Essen 3', text: 5½ }]
+    - 9
+    - 31½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück 3', url: '?mannschaft=3974', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=888&r=4#p3974x3973', title: 'gegen Hagener SV 3', text: '5' }]
+    - [{ url: '?staffel=888&r=6#p3974x3979', title: 'gegen SV Hellern 5', text: 3½ }]
+    - [{ url: '?staffel=888&r=7#p3974x3980', title: 'gegen Hagener SV 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=888&r=2#p3974x3976', title: 'gegen Bersenbrück/Bramsche 2', text: 5½ }]
+    - [{ url: '?staffel=888&r=3#p3974x3977', title: 'gegen TSV Osnabrück', text: '3' }]
+    - [{ url: '?staffel=888&r=1#p3974x3978', title: 'gegen TSV Riemsloh 2', text: '4' }]
+    - [{ url: '?staffel=888&r=5#p3974x3975', title: 'gegen SV Bad Essen 3', text: 5½ }]
+    - 8
+    - 30½
+    - ''
+-
+    - '5.'
+    - { text: 'Bersenbrück/Bramsche 2', url: '?mannschaft=3976', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=888&r=3#p3976x3973', title: 'gegen Hagener SV 3', text: 2½ }]
+    - [{ url: '?staffel=888&r=5#p3976x3979', title: 'gegen SV Hellern 5', text: ½ }]
+    - [{ url: '?staffel=888&r=6#p3976x3980', title: 'gegen Hagener SV 4', text: 3½ }]
+    - [{ url: '?staffel=888&r=2#p3976x3974', title: 'gegen SV Osnabrück 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=888&r=1#p3976x3977', title: 'gegen TSV Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=888&r=7#p3976x3978', title: 'gegen TSV Riemsloh 2', text: '5' }]
+    - [{ url: '?staffel=888&r=4#p3976x3975', title: 'gegen SV Bad Essen 3', text: 5½ }]
+    - 6
+    - '24'
+    - ''
+-
+    - '6.'
+    - { text: 'TSV Osnabrück', url: '?mannschaft=3977', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=888&r=5#p3977x3973', title: 'gegen Hagener SV 3', text: 1½ }]
+    - [{ url: '?staffel=888&r=2#p3977x3979', title: 'gegen SV Hellern 5', text: '1' }]
+    - [{ url: '?staffel=888&r=4#p3977x3980', title: 'gegen Hagener SV 4', text: '2' }]
+    - [{ url: '?staffel=888&r=3#p3977x3974', title: 'gegen SV Osnabrück 3', text: '5' }]
+    - [{ url: '?staffel=888&r=1#p3977x3976', title: 'gegen Bersenbrück/Bramsche 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=888&r=6#p3977x3978', title: 'gegen TSV Riemsloh 2', text: 4½ }]
+    - [{ url: '?staffel=888&r=7#p3977x3975', title: 'gegen SV Bad Essen 3', text: '4' }]
+    - 6
+    - 21½
+    - ''
+-
+    - '7.'
+    - { text: 'TSV Riemsloh 2', url: '?mannschaft=3978', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=888&r=2#p3978x3973', title: 'gegen Hagener SV 3', text: ½ }]
+    - [{ url: '?staffel=888&r=4#p3978x3979', title: 'gegen SV Hellern 5', text: '3' }]
+    - [{ url: '?staffel=888&r=5#p3978x3980', title: 'gegen Hagener SV 4', text: '4' }]
+    - [{ url: '?staffel=888&r=1#p3978x3974', title: 'gegen SV Osnabrück 3', text: '4' }]
+    - [{ url: '?staffel=888&r=7#p3978x3976', title: 'gegen Bersenbrück/Bramsche 2', text: '3' }]
+    - [{ url: '?staffel=888&r=6#p3978x3977', title: 'gegen TSV Osnabrück', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=888&r=3#p3978x3975', title: 'gegen SV Bad Essen 3', text: 4½ }]
+    - 4
+    - 22½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Bad Essen 3', url: '?mannschaft=3975', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=888&r=6#p3975x3973', title: 'gegen Hagener SV 3', text: 1½ }]
+    - [{ url: '?staffel=888&r=1#p3975x3979', title: 'gegen SV Hellern 5', text: '3' }]
+    - [{ url: '?staffel=888&r=2#p3975x3980', title: 'gegen Hagener SV 4', text: 2½ }]
+    - [{ url: '?staffel=888&r=5#p3975x3974', title: 'gegen SV Osnabrück 3', text: 2½ }]
+    - [{ url: '?staffel=888&r=4#p3975x3976', title: 'gegen Bersenbrück/Bramsche 2', text: 2½ }]
+    - [{ url: '?staffel=888&r=7#p3975x3977', title: 'gegen TSV Osnabrück', text: '3' }]
+    - [{ url: '?staffel=888&r=3#p3975x3978', title: 'gegen TSV Riemsloh 2', text: 3½ }]
+    - xxx
+    - 0
+    - 18½
+    - ''

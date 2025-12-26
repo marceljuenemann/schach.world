@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=4779', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=970&r=5#p4779x4761', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=970&r=1#p4779x4644', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=970&r=3#p4779x4747', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=970&r=4#p4779x4753', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=970&r=2#p4779x4680', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 10
+    - 16½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte', url: '?mannschaft=4761', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=970&r=5#p4761x4779', title: 'gegen SZ Bemerode', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=970&r=3#p4761x4644', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=970&r=4#p4761x4747', title: 'gegen SV Bückeburg', text: '2' }]
+    - [{ url: '?staffel=970&r=2#p4761x4753', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=970&r=1#p4761x4680', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Springe', url: '?mannschaft=4644', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=970&r=1#p4644x4779', title: 'gegen SZ Bemerode', text: ½ }]
+    - [{ url: '?staffel=970&r=3#p4644x4761', title: 'gegen SK Lehrte', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=970&r=2#p4644x4747', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=970&r=5#p4644x4753', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=970&r=4#p4644x4680', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=4747', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=970&r=3#p4747x4779', title: 'gegen SZ Bemerode', text: ½ }]
+    - [{ url: '?staffel=970&r=4#p4747x4761', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=970&r=2#p4747x4644', title: 'gegen SV Springe', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=970&r=1#p4747x4753', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=970&r=5#p4747x4680', title: 'gegen SG Garbsen/Marienw', text: '0' }]
+    - 5
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=4753', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=970&r=4#p4753x4779', title: 'gegen SZ Bemerode', text: 1½ }]
+    - [{ url: '?staffel=970&r=2#p4753x4761', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=970&r=5#p4753x4644', title: 'gegen SV Springe', text: 1½ }]
+    - [{ url: '?staffel=970&r=1#p4753x4747', title: 'gegen SV Bückeburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=970&r=3#p4753x4680', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 3
+    - '10'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Garbsen/Marienw', url: '?mannschaft=4680', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=970&r=2#p4680x4779', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=970&r=1#p4680x4761', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=970&r=4#p4680x4644', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=970&r=5#p4680x4747', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=970&r=3#p4680x4753', title: 'gegen SD Isernhagen', text: '0' }]
+    - xxx
+    - 2
+    - '4'
+    - ''

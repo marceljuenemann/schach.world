@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'BW Buchholz', url: '?mannschaft=7998', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1823&r=2#p7998x7991', title: 'gegen SC 81 Schneverdingen', text: 2½ }]
+    - [{ url: '?staffel=1823&r=1#p7998x8000', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - [{ url: '?staffel=1823&r=5#p7998x7997', title: 'gegen Stader SV', text: 3½ }]
+    - [{ url: '?staffel=1823&r=5#p7998x7994', title: 'gegen SF Buxtehude', text: '2' }]
+    - [{ url: '?staffel=1823&r=3#p7998x7992', title: 'gegen SV Bad Bevensen', text: '4' }]
+    - [{ url: '?staffel=1823&r=3#p7998x7999', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=1823&r=1#p7998x7995', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - [{ url: '?staffel=1823&r=2#p7998x7993', title: 'gegen Läuferpaar Verden', text: '4' }]
+    - [{ url: '?staffel=1823&r=4#p7998x7996', title: 'gegen MTV Salzhausen', text: '3' }]
+    - 15
+    - '28'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SC 81 Schneverdingen', url: '?mannschaft=7991', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1823&r=2#p7991x7998', title: 'gegen BW Buchholz', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1823&r=3#p7991x8000', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=1823&r=4#p7991x7997', title: 'gegen Stader SV', text: 2½ }]
+    - [{ url: '?staffel=1823&r=4#p7991x7994', title: 'gegen SF Buxtehude', text: '3' }]
+    - [{ url: '?staffel=1823&r=5#p7991x7992', title: 'gegen SV Bad Bevensen', text: '4' }]
+    - [{ url: '?staffel=1823&r=5#p7991x7999', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=1823&r=3#p7991x7995', title: 'gegen SV Winsen (Luhe)', text: '2' }]
+    - [{ url: '?staffel=1823&r=1#p7991x7993', title: 'gegen Läuferpaar Verden', text: '4' }]
+    - [{ url: '?staffel=1823&r=2#p7991x7996', title: 'gegen MTV Salzhausen', text: '4' }]
+    - 15
+    - '28'
+    - ''
+-
+    - '3.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=8000', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1823&r=1#p8000x7998', title: 'gegen BW Buchholz', text: '3' }]
+    - [{ url: '?staffel=1823&r=3#p8000x7991', title: 'gegen SC 81 Schneverdingen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1823&r=2#p8000x7997', title: 'gegen Stader SV', text: '3' }]
+    - [{ url: '?staffel=1823&r=2#p8000x7994', title: 'gegen SF Buxtehude', text: 3½ }]
+    - [{ url: '?staffel=1823&r=4#p8000x7992', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=1823&r=4#p8000x7999', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1823&r=5#p8000x7995', title: 'gegen SV Winsen (Luhe)', text: 3½ }]
+    - [{ url: '?staffel=1823&r=3#p8000x7993', title: 'gegen Läuferpaar Verden', text: '4' }]
+    - [{ url: '?staffel=1823&r=1#p8000x7996', title: 'gegen MTV Salzhausen', text: '4' }]
+    - 15
+    - '27'
+    - ''
+-
+    - '4.'
+    - { text: 'Stader SV', url: '?mannschaft=7997', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1823&r=5#p7997x7998', title: 'gegen BW Buchholz', text: ½ }]
+    - [{ url: '?staffel=1823&r=4#p7997x7991', title: 'gegen SC 81 Schneverdingen', text: 1½ }]
+    - [{ url: '?staffel=1823&r=2#p7997x8000', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1823&r=3#p7997x7994', title: 'gegen SF Buxtehude', text: '2' }]
+    - [{ url: '?staffel=1823&r=1#p7997x7992', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=1823&r=1#p7997x7999', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=1823&r=2#p7997x7995', title: 'gegen SV Winsen (Luhe)', text: '2' }]
+    - [{ url: '?staffel=1823&r=4#p7997x7993', title: 'gegen Läuferpaar Verden', text: '4' }]
+    - [{ url: '?staffel=1823&r=5#p7997x7996', title: 'gegen MTV Salzhausen', text: '4' }]
+    - 9
+    - '21'
+    - ''
+-
+    - '5.'
+    - { text: 'SF Buxtehude', url: '?mannschaft=7994', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1823&r=5#p7994x7998', title: 'gegen BW Buchholz', text: '2' }]
+    - [{ url: '?staffel=1823&r=4#p7994x7991', title: 'gegen SC 81 Schneverdingen', text: '1' }]
+    - [{ url: '?staffel=1823&r=2#p7994x8000', title: 'gegen SC Turm Lüneburg', text: ½ }]
+    - [{ url: '?staffel=1823&r=3#p7994x7997', title: 'gegen Stader SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1823&r=1#p7994x7992', title: 'gegen SV Bad Bevensen', text: '1' }]
+    - [{ url: '?staffel=1823&r=1#p7994x7999', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - [{ url: '?staffel=1823&r=2#p7994x7995', title: 'gegen SV Winsen (Luhe)', text: '3' }]
+    - [{ url: '?staffel=1823&r=4#p7994x7993', title: 'gegen Läuferpaar Verden', text: '3' }]
+    - [{ url: '?staffel=1823&r=5#p7994x7996', title: 'gegen MTV Salzhausen', text: 3½ }]
+    - 9
+    - '18'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=7992', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1823&r=3#p7992x7998', title: 'gegen BW Buchholz', text: '0' }]
+    - [{ url: '?staffel=1823&r=5#p7992x7991', title: 'gegen SC 81 Schneverdingen', text: '0' }]
+    - [{ url: '?staffel=1823&r=4#p7992x8000', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - [{ url: '?staffel=1823&r=1#p7992x7997', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=1823&r=1#p7992x7994', title: 'gegen SF Buxtehude', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1823&r=2#p7992x7999', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - [{ url: '?staffel=1823&r=4#p7992x7995', title: 'gegen SV Winsen (Luhe)', text: 2½ }]
+    - [{ url: '?staffel=1823&r=5#p7992x7993', title: 'gegen Läuferpaar Verden', text: '1' }]
+    - [{ url: '?staffel=1823&r=3#p7992x7996', title: 'gegen MTV Salzhausen', text: '3' }]
+    - 9
+    - 15½
+    - ''
+-
+    - '7.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=7999', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1823&r=3#p7999x7998', title: 'gegen BW Buchholz', text: '0' }]
+    - [{ url: '?staffel=1823&r=5#p7999x7991', title: 'gegen SC 81 Schneverdingen', text: '0' }]
+    - [{ url: '?staffel=1823&r=4#p7999x8000', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - [{ url: '?staffel=1823&r=1#p7999x7997', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=1823&r=1#p7999x7994', title: 'gegen SF Buxtehude', text: '2' }]
+    - [{ url: '?staffel=1823&r=2#p7999x7992', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1823&r=4#p7999x7995', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - [{ url: '?staffel=1823&r=5#p7999x7993', title: 'gegen Läuferpaar Verden', text: '3' }]
+    - [{ url: '?staffel=1823&r=3#p7999x7996', title: 'gegen MTV Salzhausen', text: 2½ }]
+    - 8
+    - 14½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Winsen (Luhe)', url: '?mannschaft=7995', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1823&r=1#p7995x7998', title: 'gegen BW Buchholz', text: '0' }]
+    - [{ url: '?staffel=1823&r=3#p7995x7991', title: 'gegen SC 81 Schneverdingen', text: '2' }]
+    - [{ url: '?staffel=1823&r=5#p7995x8000', title: 'gegen SC Turm Lüneburg', text: ½ }]
+    - [{ url: '?staffel=1823&r=2#p7995x7997', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=1823&r=2#p7995x7994', title: 'gegen SF Buxtehude', text: '1' }]
+    - [{ url: '?staffel=1823&r=4#p7995x7992', title: 'gegen SV Bad Bevensen', text: 1½ }]
+    - [{ url: '?staffel=1823&r=4#p7995x7999', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1823&r=3#p7995x7993', title: 'gegen Läuferpaar Verden', text: '2' }]
+    - [{ url: '?staffel=1823&r=1#p7995x7996', title: 'gegen MTV Salzhausen', text: '3' }]
+    - 5
+    - '12'
+    - ''
+-
+    - '9.'
+    - { text: 'Läuferpaar Verden', url: '?mannschaft=7993', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1823&r=2#p7993x7998', title: 'gegen BW Buchholz', text: '0' }]
+    - [{ url: '?staffel=1823&r=1#p7993x7991', title: 'gegen SC 81 Schneverdingen', text: '0' }]
+    - [{ url: '?staffel=1823&r=3#p7993x8000', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=1823&r=4#p7993x7997', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=1823&r=4#p7993x7994', title: 'gegen SF Buxtehude', text: '1' }]
+    - [{ url: '?staffel=1823&r=5#p7993x7992', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - [{ url: '?staffel=1823&r=5#p7993x7999', title: 'gegen Post SV Uelzen 2', text: '1' }]
+    - [{ url: '?staffel=1823&r=3#p7993x7995', title: 'gegen SV Winsen (Luhe)', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1823&r=2#p7993x7996', title: 'gegen MTV Salzhausen', text: '2' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '10.'
+    - { text: 'MTV Salzhausen', url: '?mannschaft=7996', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1823&r=4#p7996x7998', title: 'gegen BW Buchholz', text: '1' }]
+    - [{ url: '?staffel=1823&r=2#p7996x7991', title: 'gegen SC 81 Schneverdingen', text: '0' }]
+    - [{ url: '?staffel=1823&r=1#p7996x8000', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=1823&r=5#p7996x7997', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=1823&r=5#p7996x7994', title: 'gegen SF Buxtehude', text: ½ }]
+    - [{ url: '?staffel=1823&r=3#p7996x7992', title: 'gegen SV Bad Bevensen', text: '1' }]
+    - [{ url: '?staffel=1823&r=3#p7996x7999', title: 'gegen Post SV Uelzen 2', text: 1½ }]
+    - [{ url: '?staffel=1823&r=1#p7996x7995', title: 'gegen SV Winsen (Luhe)', text: '1' }]
+    - [{ url: '?staffel=1823&r=2#p7996x7993', title: 'gegen Läuferpaar Verden', text: '2' }]
+    - xxx
+    - 1
+    - '7'
+    - ''

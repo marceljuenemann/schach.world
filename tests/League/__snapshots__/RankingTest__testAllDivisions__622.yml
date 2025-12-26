@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Lingen 4', url: '?mannschaft=5421', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1366&r=5#p5421x5423', title: 'gegen SF Spelle 2', text: '5' }, { url: '?staffel=1366&r=10#p5421x5423', title: 'gegen SF Spelle 2', text: '4' }]
+    - [{ url: '?staffel=1366&r=3#p5421x5424', title: 'gegen SC HT Herzlake', text: '5' }, { url: '?staffel=1366&r=8#p5421x5424', title: 'gegen SC HT Herzlake', text: '5' }]
+    - [{ url: '?staffel=1366&r=4#p5421x5425', title: 'gegen TuS Aschendorf 2', text: '5' }, { url: '?staffel=1366&r=9#p5421x5425', title: 'gegen TuS Aschendorf 2', text: 4½ }]
+    - [{ url: '?staffel=1366&r=2#p5421x5426', title: 'gegen SK Nordhorn-Blanke 6', text: 3½ }, { url: '?staffel=1366&r=7#p5421x5426', title: 'gegen SK Nordhorn-Blanke 6', text: '5' }]
+    - [{ url: '?staffel=1366&r=1#p5421x5422', title: 'gegen Bentheim/Nordho 2', text: 4½ }, { url: '?staffel=1366&r=6#p5421x5422', title: 'gegen Bentheim/Nordho 2', text: 4½ }]
+    - 20
+    - '46'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=5423', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1366&r=5#p5423x5421', title: 'gegen SV Lingen 4', text: '1' }, { url: '?staffel=1366&r=10#p5423x5421', title: 'gegen SV Lingen 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1366&r=4#p5423x5424', title: 'gegen SC HT Herzlake', text: '4' }, { url: '?staffel=1366&r=9#p5423x5424', title: 'gegen SC HT Herzlake', text: '3' }]
+    - [{ url: '?staffel=1366&r=2#p5423x5425', title: 'gegen TuS Aschendorf 2', text: 2½ }, { url: '?staffel=1366&r=7#p5423x5425', title: 'gegen TuS Aschendorf 2', text: '4' }]
+    - [{ url: '?staffel=1366&r=1#p5423x5426', title: 'gegen SK Nordhorn-Blanke 6', text: '5' }, { url: '?staffel=1366&r=6#p5423x5426', title: 'gegen SK Nordhorn-Blanke 6', text: '0' }]
+    - [{ url: '?staffel=1366&r=3#p5423x5422', title: 'gegen Bentheim/Nordho 2', text: '5' }, { url: '?staffel=1366&r=8#p5423x5422', title: 'gegen Bentheim/Nordho 2', text: '4' }]
+    - 11
+    - 30½
+    - ''
+-
+    - '3.'
+    - { text: 'SC HT Herzlake', url: '?mannschaft=5424', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1366&r=3#p5424x5421', title: 'gegen SV Lingen 4', text: '1' }, { url: '?staffel=1366&r=8#p5424x5421', title: 'gegen SV Lingen 4', text: '1' }]
+    - [{ url: '?staffel=1366&r=4#p5424x5423', title: 'gegen SF Spelle 2', text: '2' }, { url: '?staffel=1366&r=9#p5424x5423', title: 'gegen SF Spelle 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1366&r=1#p5424x5425', title: 'gegen TuS Aschendorf 2', text: '5' }, { url: '?staffel=1366&r=6#p5424x5425', title: 'gegen TuS Aschendorf 2', text: 4½ }]
+    - [{ url: '?staffel=1366&r=5#p5424x5426', title: 'gegen SK Nordhorn-Blanke 6', text: '3' }, { url: '?staffel=1366&r=10#p5424x5426', title: 'gegen SK Nordhorn-Blanke 6', text: '1' }]
+    - [{ url: '?staffel=1366&r=2#p5424x5422', title: 'gegen Bentheim/Nordho 2', text: 5½ }, { url: '?staffel=1366&r=7#p5424x5422', title: 'gegen Bentheim/Nordho 2', text: '3' }]
+    - 9
+    - '29'
+    - ''
+-
+    - '4.'
+    - { text: 'TuS Aschendorf 2', url: '?mannschaft=5425', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1366&r=4#p5425x5421', title: 'gegen SV Lingen 4', text: '1' }, { url: '?staffel=1366&r=9#p5425x5421', title: 'gegen SV Lingen 4', text: 1½ }]
+    - [{ url: '?staffel=1366&r=2#p5425x5423', title: 'gegen SF Spelle 2', text: 3½ }, { url: '?staffel=1366&r=7#p5425x5423', title: 'gegen SF Spelle 2', text: '2' }]
+    - [{ url: '?staffel=1366&r=1#p5425x5424', title: 'gegen SC HT Herzlake', text: '1' }, { url: '?staffel=1366&r=6#p5425x5424', title: 'gegen SC HT Herzlake', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1366&r=3#p5425x5426', title: 'gegen SK Nordhorn-Blanke 6', text: '4' }, { url: '?staffel=1366&r=8#p5425x5426', title: 'gegen SK Nordhorn-Blanke 6', text: 4½ }]
+    - [{ url: '?staffel=1366&r=5#p5425x5422', title: 'gegen Bentheim/Nordho 2', text: '2' }, { url: '?staffel=1366&r=10#p5425x5422', title: 'gegen Bentheim/Nordho 2', text: 3½ }]
+    - 8
+    - 24½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Nordhorn-Blanke 6', url: '?mannschaft=5426', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1366&r=2#p5426x5421', title: 'gegen SV Lingen 4', text: 2½ }, { url: '?staffel=1366&r=7#p5426x5421', title: 'gegen SV Lingen 4', text: '1' }]
+    - [{ url: '?staffel=1366&r=1#p5426x5423', title: 'gegen SF Spelle 2', text: '1' }, { url: '?staffel=1366&r=6#p5426x5423', title: 'gegen SF Spelle 2', text: '6' }]
+    - [{ url: '?staffel=1366&r=5#p5426x5424', title: 'gegen SC HT Herzlake', text: '3' }, { url: '?staffel=1366&r=10#p5426x5424', title: 'gegen SC HT Herzlake', text: '5' }]
+    - [{ url: '?staffel=1366&r=3#p5426x5425', title: 'gegen TuS Aschendorf 2', text: '2' }, { url: '?staffel=1366&r=8#p5426x5425', title: 'gegen TuS Aschendorf 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1366&r=4#p5426x5422', title: 'gegen Bentheim/Nordho 2', text: 2½ }, { url: '?staffel=1366&r=9#p5426x5422', title: 'gegen Bentheim/Nordho 2', text: '3' }]
+    - 6
+    - 27½
+    - ''
+-
+    - '6.'
+    - { text: 'Bentheim/Nordho 2', url: '?mannschaft=5422', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1366&r=1#p5422x5421', title: 'gegen SV Lingen 4', text: 1½ }, { url: '?staffel=1366&r=6#p5422x5421', title: 'gegen SV Lingen 4', text: 1½ }]
+    - [{ url: '?staffel=1366&r=3#p5422x5423', title: 'gegen SF Spelle 2', text: '1' }, { url: '?staffel=1366&r=8#p5422x5423', title: 'gegen SF Spelle 2', text: '2' }]
+    - [{ url: '?staffel=1366&r=2#p5422x5424', title: 'gegen SC HT Herzlake', text: ½ }, { url: '?staffel=1366&r=7#p5422x5424', title: 'gegen SC HT Herzlake', text: '3' }]
+    - [{ url: '?staffel=1366&r=5#p5422x5425', title: 'gegen TuS Aschendorf 2', text: '4' }, { url: '?staffel=1366&r=10#p5422x5425', title: 'gegen TuS Aschendorf 2', text: 2½ }]
+    - [{ url: '?staffel=1366&r=4#p5422x5426', title: 'gegen SK Nordhorn-Blanke 6', text: 3½ }, { url: '?staffel=1366&r=9#p5422x5426', title: 'gegen SK Nordhorn-Blanke 6', text: '3' }]
+    - xxx
+    - 6
+    - 22½
+    - ''

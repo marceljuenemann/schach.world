@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=1908', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=573&r=1#p1908x1896', title: 'gegen Hamburger SK 2', text: 2½ }]
+    - [{ url: '?staffel=573&r=5#p1908x1869', title: 'gegen SV Quickborn', text: 1½ }]
+    - [{ url: '?staffel=573&r=4#p1908x1900', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - [{ url: '?staffel=573&r=6#p1908x1871', title: 'gegen Weiße Dame HH', text: '2' }]
+    - [{ url: '?staffel=573&r=2#p1908x1904', title: 'gegen SVgg Blankenese', text: '3' }]
+    - 7
+    - 11½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamburger SK 2', url: '?mannschaft=1896', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=573&r=1#p1896x1908', title: 'gegen TuRa Harksheide', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=573&r=2#p1896x1869', title: 'gegen SV Quickborn', text: 2½ }]
+    - [{ url: '?staffel=573&r=5#p1896x1900', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=573&r=4#p1896x1871', title: 'gegen Weiße Dame HH', text: 2½ }]
+    - [{ url: '?staffel=573&r=6#p1896x1904', title: 'gegen SVgg Blankenese', text: '4' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Quickborn', url: '?mannschaft=1869', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=573&r=5#p1869x1908', title: 'gegen TuRa Harksheide', text: 2½ }]
+    - [{ url: '?staffel=573&r=2#p1869x1896', title: 'gegen Hamburger SK 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=573&r=6#p1869x1900', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=573&r=1#p1869x1871', title: 'gegen Weiße Dame HH', text: 3½ }]
+    - [{ url: '?staffel=573&r=4#p1869x1904', title: 'gegen SVgg Blankenese', text: '2' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=1900', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=573&r=4#p1900x1908', title: 'gegen TuRa Harksheide', text: 1½ }]
+    - [{ url: '?staffel=573&r=5#p1900x1896', title: 'gegen Hamburger SK 2', text: '2' }]
+    - [{ url: '?staffel=573&r=6#p1900x1869', title: 'gegen SV Quickborn', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=573&r=2#p1900x1871', title: 'gegen Weiße Dame HH', text: ½ }]
+    - [{ url: '?staffel=573&r=1#p1900x1904', title: 'gegen SVgg Blankenese', text: '4' }]
+    - 5
+    - 10½
+    - ''
+-
+    - '5.'
+    - { text: 'Weiße Dame HH', url: '?mannschaft=1871', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=573&r=6#p1871x1908', title: 'gegen TuRa Harksheide', text: '2' }]
+    - [{ url: '?staffel=573&r=4#p1871x1896', title: 'gegen Hamburger SK 2', text: 1½ }]
+    - [{ url: '?staffel=573&r=1#p1871x1869', title: 'gegen SV Quickborn', text: ½ }]
+    - [{ url: '?staffel=573&r=2#p1871x1900', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=573&r=5#p1871x1904', title: 'gegen SVgg Blankenese', text: 2½ }]
+    - 5
+    - '10'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SVgg Blankenese', url: '?mannschaft=1904', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=573&r=2#p1904x1908', title: 'gegen TuRa Harksheide', text: '1' }]
+    - [{ url: '?staffel=573&r=6#p1904x1896', title: 'gegen Hamburger SK 2', text: '0' }]
+    - [{ url: '?staffel=573&r=4#p1904x1869', title: 'gegen SV Quickborn', text: '2' }]
+    - [{ url: '?staffel=573&r=1#p1904x1900', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=573&r=5#p1904x1871', title: 'gegen Weiße Dame HH', text: 1½ }]
+    - xxx
+    - 1
+    - 4½
+    - absteiger

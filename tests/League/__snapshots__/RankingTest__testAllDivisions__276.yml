@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Hellern', url: '?mannschaft=3196', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=710&r=9#p3196x3198', title: 'gegen SK Wildeshausen', text: 5½ }]
+    - [{ url: '?staffel=710&r=6#p3196x3203', title: 'gegen Hagener SV', text: 7½ }]
+    - [{ url: '?staffel=710&r=4#p3196x3197', title: 'gegen SG Osnabrück', text: '4' }]
+    - [{ url: '?staffel=710&r=3#p3196x3205', title: 'gegen Stader SV', text: '5' }]
+    - [{ url: '?staffel=710&r=2#p3196x3199', title: 'gegen SK Bremen-Nord', text: '6' }]
+    - [{ url: '?staffel=710&r=5#p3196x3201', title: 'gegen SK Union Oldenburg 2', text: '5' }]
+    - [{ url: '?staffel=710&r=7#p3196x3204', title: 'gegen Post SV Uelzen', text: 4½ }]
+    - [{ url: '?staffel=710&r=8#p3196x3200', title: 'gegen SF Leherheide', text: 7½ }]
+    - [{ url: '?staffel=710&r=1#p3196x3202', title: 'gegen Bremer SG 2', text: '6' }]
+    - 17
+    - '51'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Wildeshausen', url: '?mannschaft=3198', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=710&r=9#p3198x3196', title: 'gegen SV Hellern', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=710&r=2#p3198x3203', title: 'gegen Hagener SV', text: '6' }]
+    - [{ url: '?staffel=710&r=3#p3198x3197', title: 'gegen SG Osnabrück', text: '3' }]
+    - [{ url: '?staffel=710&r=8#p3198x3205', title: 'gegen Stader SV', text: '5' }]
+    - [{ url: '?staffel=710&r=4#p3198x3199', title: 'gegen SK Bremen-Nord', text: 4½ }]
+    - [{ url: '?staffel=710&r=6#p3198x3201', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - [{ url: '?staffel=710&r=1#p3198x3204', title: 'gegen Post SV Uelzen', text: '6' }]
+    - [{ url: '?staffel=710&r=5#p3198x3200', title: 'gegen SF Leherheide', text: '7' }]
+    - [{ url: '?staffel=710&r=7#p3198x3202', title: 'gegen Bremer SG 2', text: '5' }]
+    - 13
+    - '43'
+    - ''
+-
+    - '3.'
+    - { text: 'Hagener SV', url: '?mannschaft=3203', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=710&r=6#p3203x3196', title: 'gegen SV Hellern', text: ½ }]
+    - [{ url: '?staffel=710&r=2#p3203x3198', title: 'gegen SK Wildeshausen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=710&r=7#p3203x3197', title: 'gegen SG Osnabrück', text: '5' }]
+    - [{ url: '?staffel=710&r=4#p3203x3205', title: 'gegen Stader SV', text: 6½ }]
+    - [{ url: '?staffel=710&r=8#p3203x3199', title: 'gegen SK Bremen-Nord', text: 5½ }]
+    - [{ url: '?staffel=710&r=1#p3203x3201', title: 'gegen SK Union Oldenburg 2', text: '6' }]
+    - [{ url: '?staffel=710&r=5#p3203x3204', title: 'gegen Post SV Uelzen', text: 4½ }]
+    - [{ url: '?staffel=710&r=9#p3203x3200', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=710&r=3#p3203x3202', title: 'gegen Bremer SG 2', text: 6½ }]
+    - 12
+    - '40'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Osnabrück', url: '?mannschaft=3197', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=710&r=4#p3197x3196', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=710&r=3#p3197x3198', title: 'gegen SK Wildeshausen', text: '5' }]
+    - [{ url: '?staffel=710&r=7#p3197x3203', title: 'gegen Hagener SV', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=710&r=5#p3197x3205', title: 'gegen Stader SV', text: 3½ }]
+    - [{ url: '?staffel=710&r=6#p3197x3199', title: 'gegen SK Bremen-Nord', text: 5½ }]
+    - [{ url: '?staffel=710&r=2#p3197x3201', title: 'gegen SK Union Oldenburg 2', text: 5½ }]
+    - [{ url: '?staffel=710&r=8#p3197x3204', title: 'gegen Post SV Uelzen', text: 2½ }]
+    - [{ url: '?staffel=710&r=1#p3197x3200', title: 'gegen SF Leherheide', text: 4½ }]
+    - [{ url: '?staffel=710&r=9#p3197x3202', title: 'gegen Bremer SG 2', text: '8' }]
+    - 11
+    - 41½
+    - ''
+-
+    - '5.'
+    - { text: 'Stader SV', url: '?mannschaft=3205', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=710&r=3#p3205x3196', title: 'gegen SV Hellern', text: '3' }]
+    - [{ url: '?staffel=710&r=8#p3205x3198', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=710&r=4#p3205x3203', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=710&r=5#p3205x3197', title: 'gegen SG Osnabrück', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=710&r=1#p3205x3199', title: 'gegen SK Bremen-Nord', text: 3½ }]
+    - [{ url: '?staffel=710&r=9#p3205x3201', title: 'gegen SK Union Oldenburg 2', text: 5½ }]
+    - [{ url: '?staffel=710&r=6#p3205x3204', title: 'gegen Post SV Uelzen', text: 4½ }]
+    - [{ url: '?staffel=710&r=7#p3205x3200', title: 'gegen SF Leherheide', text: '5' }]
+    - [{ url: '?staffel=710&r=2#p3205x3202', title: 'gegen Bremer SG 2', text: '5' }]
+    - 10
+    - 35½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Bremen-Nord', url: '?mannschaft=3199', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=710&r=2#p3199x3196', title: 'gegen SV Hellern', text: '2' }]
+    - [{ url: '?staffel=710&r=4#p3199x3198', title: 'gegen SK Wildeshausen', text: 3½ }]
+    - [{ url: '?staffel=710&r=8#p3199x3203', title: 'gegen Hagener SV', text: 2½ }]
+    - [{ url: '?staffel=710&r=6#p3199x3197', title: 'gegen SG Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=710&r=1#p3199x3205', title: 'gegen Stader SV', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=710&r=7#p3199x3201', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - [{ url: '?staffel=710&r=9#p3199x3204', title: 'gegen Post SV Uelzen', text: '3' }]
+    - [{ url: '?staffel=710&r=3#p3199x3200', title: 'gegen SF Leherheide', text: '5' }]
+    - [{ url: '?staffel=710&r=5#p3199x3202', title: 'gegen Bremer SG 2', text: '5' }]
+    - 7
+    - '32'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Union Oldenburg 2', url: '?mannschaft=3201', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=710&r=5#p3201x3196', title: 'gegen SV Hellern', text: '3' }]
+    - [{ url: '?staffel=710&r=6#p3201x3198', title: 'gegen SK Wildeshausen', text: '4' }]
+    - [{ url: '?staffel=710&r=1#p3201x3203', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=710&r=2#p3201x3197', title: 'gegen SG Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=710&r=9#p3201x3205', title: 'gegen Stader SV', text: 2½ }]
+    - [{ url: '?staffel=710&r=7#p3201x3199', title: 'gegen SK Bremen-Nord', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=710&r=3#p3201x3204', title: 'gegen Post SV Uelzen', text: 4½ }]
+    - [{ url: '?staffel=710&r=4#p3201x3200', title: 'gegen SF Leherheide', text: '5' }]
+    - [{ url: '?staffel=710&r=8#p3201x3202', title: 'gegen Bremer SG 2', text: 3½ }]
+    - 6
+    - '31'
+    - ''
+-
+    - '8.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=3204', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=710&r=7#p3204x3196', title: 'gegen SV Hellern', text: 3½ }]
+    - [{ url: '?staffel=710&r=1#p3204x3198', title: 'gegen SK Wildeshausen', text: '2' }]
+    - [{ url: '?staffel=710&r=5#p3204x3203', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=710&r=8#p3204x3197', title: 'gegen SG Osnabrück', text: 5½ }]
+    - [{ url: '?staffel=710&r=6#p3204x3205', title: 'gegen Stader SV', text: 3½ }]
+    - [{ url: '?staffel=710&r=9#p3204x3199', title: 'gegen SK Bremen-Nord', text: '5' }]
+    - [{ url: '?staffel=710&r=3#p3204x3201', title: 'gegen SK Union Oldenburg 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=710&r=2#p3204x3200', title: 'gegen SF Leherheide', text: '4' }]
+    - [{ url: '?staffel=710&r=4#p3204x3202', title: 'gegen Bremer SG 2', text: 3½ }]
+    - 5
+    - '34'
+    - ''
+-
+    - '9.'
+    - { text: 'SF Leherheide', url: '?mannschaft=3200', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=710&r=8#p3200x3196', title: 'gegen SV Hellern', text: ½ }]
+    - [{ url: '?staffel=710&r=5#p3200x3198', title: 'gegen SK Wildeshausen', text: '1' }]
+    - [{ url: '?staffel=710&r=9#p3200x3203', title: 'gegen Hagener SV', text: 4½ }]
+    - [{ url: '?staffel=710&r=1#p3200x3197', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=710&r=7#p3200x3205', title: 'gegen Stader SV', text: '3' }]
+    - [{ url: '?staffel=710&r=3#p3200x3199', title: 'gegen SK Bremen-Nord', text: '3' }]
+    - [{ url: '?staffel=710&r=4#p3200x3201', title: 'gegen SK Union Oldenburg 2', text: '3' }]
+    - [{ url: '?staffel=710&r=2#p3200x3204', title: 'gegen Post SV Uelzen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=710&r=6#p3200x3202', title: 'gegen Bremer SG 2', text: '6' }]
+    - 5
+    - 28½
+    - ''
+-
+    - '10.'
+    - { text: 'Bremer SG 2', url: '?mannschaft=3202', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=710&r=1#p3202x3196', title: 'gegen SV Hellern', text: '2' }]
+    - [{ url: '?staffel=710&r=7#p3202x3198', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=710&r=3#p3202x3203', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=710&r=9#p3202x3197', title: 'gegen SG Osnabrück', text: '0' }]
+    - [{ url: '?staffel=710&r=2#p3202x3205', title: 'gegen Stader SV', text: '3' }]
+    - [{ url: '?staffel=710&r=5#p3202x3199', title: 'gegen SK Bremen-Nord', text: '3' }]
+    - [{ url: '?staffel=710&r=8#p3202x3201', title: 'gegen SK Union Oldenburg 2', text: 4½ }]
+    - [{ url: '?staffel=710&r=4#p3202x3204', title: 'gegen Post SV Uelzen', text: 4½ }]
+    - [{ url: '?staffel=710&r=6#p3202x3200', title: 'gegen SF Leherheide', text: '2' }]
+    - xxx
+    - 4
+    - 23½
+    - ''

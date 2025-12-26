@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Lingen', url: '?mannschaft=4566', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=948&r=3#p4566x4532', title: 'gegen MTV Tostedt', text: 5½ }]
+    - [{ url: '?staffel=948&r=7#p4566x4604', title: 'gegen SG Osnabrück', text: 5½ }]
+    - [{ url: '?staffel=948&r=9#p4566x4596', title: 'gegen SV Osnabrück', text: 6½ }]
+    - [{ url: '?staffel=948&r=2#p4566x4560', title: 'gegen Stader SV', text: '5' }]
+    - [{ url: '?staffel=948&r=4#p4566x4578', title: 'gegen Nordhorn-Blanke 2', text: 4½ }]
+    - [{ url: '?staffel=948&r=1#p4566x4595', title: 'gegen SC Turm Lüneburg', text: 7½ }]
+    - [{ url: '?staffel=948&r=8#p4566x4601', title: 'gegen Hagener SV', text: '5' }]
+    - [{ url: '?staffel=948&r=5#p4566x4603', title: 'gegen SK Union Oldenburg 2', text: '7' }]
+    - [{ url: '?staffel=948&r=6#p4566x4573', title: 'gegen SV Hellern 2', text: '6' }]
+    - 18
+    - 52½
+    - ''
+-
+    - '2.'
+    - { text: 'MTV Tostedt', url: '?mannschaft=4532', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=948&r=3#p4532x4566', title: 'gegen SV Lingen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=948&r=4#p4532x4604', title: 'gegen SG Osnabrück', text: 6½ }]
+    - [{ url: '?staffel=948&r=6#p4532x4596', title: 'gegen SV Osnabrück', text: '5' }]
+    - [{ url: '?staffel=948&r=7#p4532x4560', title: 'gegen Stader SV', text: 4½ }]
+    - [{ url: '?staffel=948&r=1#p4532x4578', title: 'gegen Nordhorn-Blanke 2', text: '5' }]
+    - [{ url: '?staffel=948&r=9#p4532x4595', title: 'gegen SC Turm Lüneburg', text: '5' }]
+    - [{ url: '?staffel=948&r=5#p4532x4601', title: 'gegen Hagener SV', text: 4½ }]
+    - [{ url: '?staffel=948&r=2#p4532x4603', title: 'gegen SK Union Oldenburg 2', text: 5½ }]
+    - [{ url: '?staffel=948&r=8#p4532x4573', title: 'gegen SV Hellern 2', text: '7' }]
+    - 16
+    - 45½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Osnabrück', url: '?mannschaft=4604', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=948&r=7#p4604x4566', title: 'gegen SV Lingen', text: 2½ }]
+    - [{ url: '?staffel=948&r=4#p4604x4532', title: 'gegen MTV Tostedt', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=948&r=2#p4604x4596', title: 'gegen SV Osnabrück', text: '4' }]
+    - [{ url: '?staffel=948&r=1#p4604x4560', title: 'gegen Stader SV', text: '5' }]
+    - [{ url: '?staffel=948&r=5#p4604x4578', title: 'gegen Nordhorn-Blanke 2', text: '4' }]
+    - [{ url: '?staffel=948&r=8#p4604x4595', title: 'gegen SC Turm Lüneburg', text: 4½ }]
+    - [{ url: '?staffel=948&r=9#p4604x4601', title: 'gegen Hagener SV', text: '5' }]
+    - [{ url: '?staffel=948&r=6#p4604x4603', title: 'gegen SK Union Oldenburg 2', text: 4½ }]
+    - [{ url: '?staffel=948&r=3#p4604x4573', title: 'gegen SV Hellern 2', text: '3' }]
+    - 10
+    - '34'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück', url: '?mannschaft=4596', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=948&r=9#p4596x4566', title: 'gegen SV Lingen', text: 1½ }]
+    - [{ url: '?staffel=948&r=6#p4596x4532', title: 'gegen MTV Tostedt', text: '3' }]
+    - [{ url: '?staffel=948&r=2#p4596x4604', title: 'gegen SG Osnabrück', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=948&r=3#p4596x4560', title: 'gegen Stader SV', text: 4½ }]
+    - [{ url: '?staffel=948&r=7#p4596x4578', title: 'gegen Nordhorn-Blanke 2', text: '7' }]
+    - [{ url: '?staffel=948&r=5#p4596x4595', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=948&r=1#p4596x4601', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=948&r=8#p4596x4603', title: 'gegen SK Union Oldenburg 2', text: 4½ }]
+    - [{ url: '?staffel=948&r=4#p4596x4573', title: 'gegen SV Hellern 2', text: '6' }]
+    - 9
+    - '37'
+    - ''
+-
+    - '5.'
+    - { text: 'Stader SV', url: '?mannschaft=4560', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=948&r=2#p4560x4566', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=948&r=7#p4560x4532', title: 'gegen MTV Tostedt', text: 3½ }]
+    - [{ url: '?staffel=948&r=1#p4560x4604', title: 'gegen SG Osnabrück', text: '3' }]
+    - [{ url: '?staffel=948&r=3#p4560x4596', title: 'gegen SV Osnabrück', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=948&r=8#p4560x4578', title: 'gegen Nordhorn-Blanke 2', text: 4½ }]
+    - [{ url: '?staffel=948&r=6#p4560x4595', title: 'gegen SC Turm Lüneburg', text: '5' }]
+    - [{ url: '?staffel=948&r=4#p4560x4601', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=948&r=9#p4560x4603', title: 'gegen SK Union Oldenburg 2', text: 6½ }]
+    - [{ url: '?staffel=948&r=5#p4560x4573', title: 'gegen SV Hellern 2', text: '6' }]
+    - 8
+    - 38½
+    - ''
+-
+    - '6.'
+    - { text: 'Nordhorn-Blanke 2', url: '?mannschaft=4578', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=948&r=4#p4578x4566', title: 'gegen SV Lingen', text: 3½ }]
+    - [{ url: '?staffel=948&r=1#p4578x4532', title: 'gegen MTV Tostedt', text: '3' }]
+    - [{ url: '?staffel=948&r=5#p4578x4604', title: 'gegen SG Osnabrück', text: '4' }]
+    - [{ url: '?staffel=948&r=7#p4578x4596', title: 'gegen SV Osnabrück', text: '1' }]
+    - [{ url: '?staffel=948&r=8#p4578x4560', title: 'gegen Stader SV', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=948&r=2#p4578x4595', title: 'gegen SC Turm Lüneburg', text: 5½ }]
+    - [{ url: '?staffel=948&r=6#p4578x4601', title: 'gegen Hagener SV', text: 5½ }]
+    - [{ url: '?staffel=948&r=3#p4578x4603', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - [{ url: '?staffel=948&r=9#p4578x4573', title: 'gegen SV Hellern 2', text: '7' }]
+    - 8
+    - '37'
+    - ''
+-
+    - '7.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=4595', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=948&r=1#p4595x4566', title: 'gegen SV Lingen', text: ½ }]
+    - [{ url: '?staffel=948&r=9#p4595x4532', title: 'gegen MTV Tostedt', text: '3' }]
+    - [{ url: '?staffel=948&r=8#p4595x4604', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=948&r=5#p4595x4596', title: 'gegen SV Osnabrück', text: '5' }]
+    - [{ url: '?staffel=948&r=6#p4595x4560', title: 'gegen Stader SV', text: '3' }]
+    - [{ url: '?staffel=948&r=2#p4595x4578', title: 'gegen Nordhorn-Blanke 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=948&r=3#p4595x4601', title: 'gegen Hagener SV', text: '6' }]
+    - [{ url: '?staffel=948&r=4#p4595x4603', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - [{ url: '?staffel=948&r=7#p4595x4573', title: 'gegen SV Hellern 2', text: 4½ }]
+    - 7
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'Hagener SV', url: '?mannschaft=4601', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=948&r=8#p4601x4566', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=948&r=5#p4601x4532', title: 'gegen MTV Tostedt', text: 3½ }]
+    - [{ url: '?staffel=948&r=9#p4601x4604', title: 'gegen SG Osnabrück', text: '3' }]
+    - [{ url: '?staffel=948&r=1#p4601x4596', title: 'gegen SV Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=948&r=4#p4601x4560', title: 'gegen Stader SV', text: 4½ }]
+    - [{ url: '?staffel=948&r=6#p4601x4578', title: 'gegen Nordhorn-Blanke 2', text: 2½ }]
+    - [{ url: '?staffel=948&r=3#p4601x4595', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=948&r=7#p4601x4603', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - [{ url: '?staffel=948&r=2#p4601x4573', title: 'gegen SV Hellern 2', text: '4' }]
+    - 6
+    - '31'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Union Oldenburg 2', url: '?mannschaft=4603', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=948&r=5#p4603x4566', title: 'gegen SV Lingen', text: '1' }]
+    - [{ url: '?staffel=948&r=2#p4603x4532', title: 'gegen MTV Tostedt', text: 2½ }]
+    - [{ url: '?staffel=948&r=6#p4603x4604', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=948&r=8#p4603x4596', title: 'gegen SV Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=948&r=9#p4603x4560', title: 'gegen Stader SV', text: 1½ }]
+    - [{ url: '?staffel=948&r=3#p4603x4578', title: 'gegen Nordhorn-Blanke 2', text: '4' }]
+    - [{ url: '?staffel=948&r=4#p4603x4595', title: 'gegen SC Turm Lüneburg', text: '4' }]
+    - [{ url: '?staffel=948&r=7#p4603x4601', title: 'gegen Hagener SV', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=948&r=1#p4603x4573', title: 'gegen SV Hellern 2', text: '4' }]
+    - 4
+    - '28'
+    - ''
+-
+    - '10.'
+    - { text: 'SV Hellern 2', url: '?mannschaft=4573', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=948&r=6#p4573x4566', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=948&r=8#p4573x4532', title: 'gegen MTV Tostedt', text: '1' }]
+    - [{ url: '?staffel=948&r=3#p4573x4604', title: 'gegen SG Osnabrück', text: '5' }]
+    - [{ url: '?staffel=948&r=4#p4573x4596', title: 'gegen SV Osnabrück', text: '2' }]
+    - [{ url: '?staffel=948&r=5#p4573x4560', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=948&r=9#p4573x4578', title: 'gegen Nordhorn-Blanke 2', text: '1' }]
+    - [{ url: '?staffel=948&r=7#p4573x4595', title: 'gegen SC Turm Lüneburg', text: 3½ }]
+    - [{ url: '?staffel=948&r=2#p4573x4601', title: 'gegen Hagener SV', text: '4' }]
+    - [{ url: '?staffel=948&r=1#p4573x4603', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - xxx
+    - 4
+    - 24½
+    - ''

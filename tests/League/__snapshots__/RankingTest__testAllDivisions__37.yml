@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Spelle', url: '?mannschaft=804', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=435&r=4#p804x808', title: 'gegen SK Brake', text: '3' }]
+    - [{ url: '?staffel=435&r=7#p804x809', title: 'gegen SV Bückeburg', text: '5' }]
+    - [{ url: '?staffel=435&r=3#p804x805', title: 'gegen Hagener SV 2', text: '4' }]
+    - [{ url: '?staffel=435&r=5#p804x806', title: 'gegen Hagener SV 3', text: '4' }]
+    - [{ url: '?staffel=435&r=1#p804x807', title: 'gegen SG Oesede-Gmht. 2', text: '6' }]
+    - [{ url: '?staffel=435&r=2#p804x811', title: 'gegen SCSS Bad Zw.ahn', text: '5' }]
+    - 11
+    - '27'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Brake', url: '?mannschaft=808', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=435&r=4#p808x804', title: 'gegen SF Spelle', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=435&r=1#p808x809', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=435&r=6#p808x805', title: 'gegen Hagener SV 2', text: 3½ }]
+    - [{ url: '?staffel=435&r=2#p808x806', title: 'gegen Hagener SV 3', text: '4' }]
+    - [{ url: '?staffel=435&r=7#p808x807', title: 'gegen SG Oesede-Gmht. 2', text: '5' }]
+    - [{ url: '?staffel=435&r=5#p808x811', title: 'gegen SCSS Bad Zw.ahn', text: 5½ }]
+    - 11
+    - 24½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=809', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=435&r=7#p809x804', title: 'gegen SF Spelle', text: '1' }]
+    - [{ url: '?staffel=435&r=1#p809x808', title: 'gegen SK Brake', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=435&r=5#p809x805', title: 'gegen Hagener SV 2', text: '5' }]
+    - [{ url: '?staffel=435&r=3#p809x806', title: 'gegen Hagener SV 3', text: 4½ }]
+    - [{ url: '?staffel=435&r=4#p809x807', title: 'gegen SG Oesede-Gmht. 2', text: '4' }]
+    - [{ url: '?staffel=435&r=6#p809x811', title: 'gegen SCSS Bad Zw.ahn', text: '6' }]
+    - 8
+    - '23'
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV 2', url: '?mannschaft=805', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=435&r=3#p805x804', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=435&r=6#p805x808', title: 'gegen SK Brake', text: 2½ }]
+    - [{ url: '?staffel=435&r=5#p805x809', title: 'gegen SV Bückeburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=435&r=1#p805x806', title: 'gegen Hagener SV 3', text: 3½ }]
+    - [{ url: '?staffel=435&r=2#p805x807', title: 'gegen SG Oesede-Gmht. 2', text: 3½ }]
+    - [{ url: '?staffel=435&r=7#p805x811', title: 'gegen SCSS Bad Zw.ahn', text: '6' }]
+    - 6
+    - 18½
+    - ''
+-
+    - '5.'
+    - { text: 'Hagener SV 3', url: '?mannschaft=806', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=435&r=5#p806x804', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=435&r=2#p806x808', title: 'gegen SK Brake', text: '2' }]
+    - [{ url: '?staffel=435&r=3#p806x809', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=435&r=1#p806x805', title: 'gegen Hagener SV 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=435&r=6#p806x807', title: 'gegen SG Oesede-Gmht. 2', text: '4' }]
+    - [{ url: '?staffel=435&r=4#p806x811', title: 'gegen SCSS Bad Zw.ahn', text: '6' }]
+    - 4
+    - '18'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Oesede-Gmht. 2', url: '?mannschaft=807', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=435&r=1#p807x804', title: 'gegen SF Spelle', text: '0' }]
+    - [{ url: '?staffel=435&r=7#p807x808', title: 'gegen SK Brake', text: '1' }]
+    - [{ url: '?staffel=435&r=4#p807x809', title: 'gegen SV Bückeburg', text: '2' }]
+    - [{ url: '?staffel=435&r=2#p807x805', title: 'gegen Hagener SV 2', text: 2½ }]
+    - [{ url: '?staffel=435&r=6#p807x806', title: 'gegen Hagener SV 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=435&r=3#p807x811', title: 'gegen SCSS Bad Zw.ahn', text: '5' }]
+    - 2
+    - 12½
+    - ''
+-
+    - '7.'
+    - { text: 'SCSS Bad Zw.ahn', url: '?mannschaft=811', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=435&r=2#p811x804', title: 'gegen SF Spelle', text: '1' }]
+    - [{ url: '?staffel=435&r=5#p811x808', title: 'gegen SK Brake', text: ½ }]
+    - [{ url: '?staffel=435&r=6#p811x809', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=435&r=7#p811x805', title: 'gegen Hagener SV 2', text: '0' }]
+    - [{ url: '?staffel=435&r=4#p811x806', title: 'gegen Hagener SV 3', text: '0' }]
+    - [{ url: '?staffel=435&r=3#p811x807', title: 'gegen SG Oesede-Gmht. 2', text: '1' }]
+    - xxx
+    - 0
+    - 2½
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TSV Zeulenroda', url: '?mannschaft=2933', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=719&r=2#p2933x2903', title: 'gegen TuS Coswig 1920', text: 2½ }]
+    - [{ url: '?staffel=719&r=5#p2933x3092', title: 'gegen Rodewischer SM 2', text: '3' }]
+    - [{ url: '?staffel=719&r=4#p2933x3098', title: 'gegen USG Chemnitz', text: '4' }]
+    - [{ url: '?staffel=719&r=3#p2933x2906', title: 'gegen SG GW Dresden', text: 2½ }]
+    - [{ url: '?staffel=719&r=1#p2933x2910', title: 'gegen USV TU Dresden', text: '3' }]
+    - 10
+    - '15'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TuS Coswig 1920', url: '?mannschaft=2903', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=719&r=2#p2903x2933', title: 'gegen TSV Zeulenroda', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=719&r=3#p2903x3092', title: 'gegen Rodewischer SM 2', text: '2' }]
+    - [{ url: '?staffel=719&r=1#p2903x3098', title: 'gegen USG Chemnitz', text: '4' }]
+    - [{ url: '?staffel=719&r=4#p2903x2906', title: 'gegen SG GW Dresden', text: 3½ }]
+    - [{ url: '?staffel=719&r=5#p2903x2910', title: 'gegen USV TU Dresden', text: '3' }]
+    - 7
+    - '14'
+    - ''
+-
+    - '3.'
+    - { text: 'Rodewischer SM 2', url: '?mannschaft=3092', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=719&r=5#p3092x2933', title: 'gegen TSV Zeulenroda', text: '1' }]
+    - [{ url: '?staffel=719&r=3#p3092x2903', title: 'gegen TuS Coswig 1920', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=719&r=2#p3092x3098', title: 'gegen USG Chemnitz', text: 2½ }]
+    - [{ url: '?staffel=719&r=1#p3092x2906', title: 'gegen SG GW Dresden', text: '2' }]
+    - [{ url: '?staffel=719&r=4#p3092x2910', title: 'gegen USV TU Dresden', text: '3' }]
+    - 6
+    - 10½
+    - ''
+-
+    - '4.'
+    - { text: 'USG Chemnitz', url: '?mannschaft=3098', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=719&r=4#p3098x2933', title: 'gegen TSV Zeulenroda', text: '0' }]
+    - [{ url: '?staffel=719&r=1#p3098x2903', title: 'gegen TuS Coswig 1920', text: '0' }]
+    - [{ url: '?staffel=719&r=2#p3098x3092', title: 'gegen Rodewischer SM 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=719&r=5#p3098x2906', title: 'gegen SG GW Dresden', text: 2½ }]
+    - [{ url: '?staffel=719&r=3#p3098x2910', title: 'gegen USV TU Dresden', text: 2½ }]
+    - 4
+    - 6½
+    - ''
+-
+    - '5.'
+    - { text: 'SG GW Dresden', url: '?mannschaft=2906', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=719&r=3#p2906x2933', title: 'gegen TSV Zeulenroda', text: 1½ }]
+    - [{ url: '?staffel=719&r=4#p2906x2903', title: 'gegen TuS Coswig 1920', text: ½ }]
+    - [{ url: '?staffel=719&r=1#p2906x3092', title: 'gegen Rodewischer SM 2', text: '2' }]
+    - [{ url: '?staffel=719&r=5#p2906x3098', title: 'gegen USG Chemnitz', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=719&r=2#p2906x2910', title: 'gegen USV TU Dresden', text: '3' }]
+    - 3
+    - 8½
+    - absteiger
+-
+    - '6.'
+    - { text: 'USV TU Dresden', url: '?mannschaft=2910', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=719&r=1#p2910x2933', title: 'gegen TSV Zeulenroda', text: '1' }]
+    - [{ url: '?staffel=719&r=5#p2910x2903', title: 'gegen TuS Coswig 1920', text: '1' }]
+    - [{ url: '?staffel=719&r=4#p2910x3092', title: 'gegen Rodewischer SM 2', text: '1' }]
+    - [{ url: '?staffel=719&r=3#p2910x3098', title: 'gegen USG Chemnitz', text: 1½ }]
+    - [{ url: '?staffel=719&r=2#p2910x2906', title: 'gegen SG GW Dresden', text: '1' }]
+    - xxx
+    - 0
+    - 5½
+    - absteiger

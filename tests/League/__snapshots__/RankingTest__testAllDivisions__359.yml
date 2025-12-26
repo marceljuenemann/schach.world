@@ -1,0 +1,203 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=3405', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=800&r=1#p3405x3502', title: 'gegen SV Gretenberg 2', text: 5½ }]
+    - [{ url: '?staffel=800&r=8#p3405x3452', title: 'gegen SV Laatzen 3', text: 5½ }]
+    - [{ url: '?staffel=800&r=10#p3405x3478', title: 'gegen ST Langenhagen 2', text: '2' }]
+    - [{ url: '?staffel=800&r=9#p3405x3499', title: 'gegen HSK Lister Turm 5', text: '5' }]
+    - [{ url: '?staffel=800&r=2#p3405x3421', title: 'gegen SV Laatzen 4', text: '6' }]
+    - [{ url: '?staffel=800&r=11#p3405x3557', title: 'gegen SD Isernhagen 3', text: 5½ }]
+    - [{ url: '?staffel=800&r=3#p3405x3482', title: 'gegen SG Döhren-Gleid 2', text: 3½ }]
+    - [{ url: '?staffel=800&r=7#p3405x3487', title: 'gegen SK Lehrte 6', text: 6½ }]
+    - [{ url: '?staffel=800&r=4#p3405x3469', title: 'gegen SC Hämelerwald 2', text: '6' }]
+    - [{ url: '?staffel=800&r=6#p3405x3558', title: 'gegen SD Isernhagen 4', text: 5½ }]
+    - 16
+    - '51'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Gretenberg 2', url: '?mannschaft=3502', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=800&r=1#p3502x3405', title: 'gegen SK Anderten 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=800&r=4#p3502x3452', title: 'gegen SV Laatzen 3', text: 5½ }]
+    - [{ url: '?staffel=800&r=6#p3502x3478', title: 'gegen ST Langenhagen 2', text: '5' }]
+    - [{ url: '?staffel=800&r=5#p3502x3499', title: 'gegen HSK Lister Turm 5', text: 5½ }]
+    - [{ url: '?staffel=800&r=9#p3502x3421', title: 'gegen SV Laatzen 4', text: 5½ }]
+    - [{ url: '?staffel=800&r=7#p3502x3557', title: 'gegen SD Isernhagen 3', text: 1½ }]
+    - [{ url: '?staffel=800&r=10#p3502x3482', title: 'gegen SG Döhren-Gleid 2', text: '5' }]
+    - [{ url: '?staffel=800&r=3#p3502x3487', title: 'gegen SK Lehrte 6', text: 7½ }]
+    - [{ url: '?staffel=800&r=11#p3502x3469', title: 'gegen SC Hämelerwald 2', text: '5' }]
+    - [{ url: '?staffel=800&r=2#p3502x3558', title: 'gegen SD Isernhagen 4', text: '7' }]
+    - 16
+    - '50'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Laatzen 3', url: '?mannschaft=3452', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=800&r=8#p3452x3405', title: 'gegen SK Anderten 2', text: 2½ }]
+    - [{ url: '?staffel=800&r=4#p3452x3502', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=800&r=2#p3452x3478', title: 'gegen ST Langenhagen 2', text: 3½ }]
+    - [{ url: '?staffel=800&r=1#p3452x3499', title: 'gegen HSK Lister Turm 5', text: '5' }]
+    - [{ url: '?staffel=800&r=5#p3452x3421', title: 'gegen SV Laatzen 4', text: 6½ }]
+    - [{ url: '?staffel=800&r=3#p3452x3557', title: 'gegen SD Isernhagen 3', text: '7' }]
+    - [{ url: '?staffel=800&r=6#p3452x3482', title: 'gegen SG Döhren-Gleid 2', text: 4½ }]
+    - [{ url: '?staffel=800&r=10#p3452x3487', title: 'gegen SK Lehrte 6', text: 6½ }]
+    - [{ url: '?staffel=800&r=7#p3452x3469', title: 'gegen SC Hämelerwald 2', text: '6' }]
+    - [{ url: '?staffel=800&r=9#p3452x3558', title: 'gegen SD Isernhagen 4', text: '7' }]
+    - 14
+    - '51'
+    - ''
+-
+    - '4.'
+    - { text: 'ST Langenhagen 2', url: '?mannschaft=3478', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=800&r=10#p3478x3405', title: 'gegen SK Anderten 2', text: '6' }]
+    - [{ url: '?staffel=800&r=6#p3478x3502', title: 'gegen SV Gretenberg 2', text: '3' }]
+    - [{ url: '?staffel=800&r=2#p3478x3452', title: 'gegen SV Laatzen 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=800&r=3#p3478x3499', title: 'gegen HSK Lister Turm 5', text: '4' }]
+    - [{ url: '?staffel=800&r=7#p3478x3421', title: 'gegen SV Laatzen 4', text: 3½ }]
+    - [{ url: '?staffel=800&r=5#p3478x3557', title: 'gegen SD Isernhagen 3', text: '2' }]
+    - [{ url: '?staffel=800&r=8#p3478x3482', title: 'gegen SG Döhren-Gleid 2', text: '6' }]
+    - [{ url: '?staffel=800&r=1#p3478x3487', title: 'gegen SK Lehrte 6', text: '0' }]
+    - [{ url: '?staffel=800&r=9#p3478x3469', title: 'gegen SC Hämelerwald 2', text: '5' }]
+    - [{ url: '?staffel=800&r=11#p3478x3558', title: 'gegen SD Isernhagen 4', text: '5' }]
+    - 12
+    - '39'
+    - ''
+-
+    - '5.'
+    - { text: 'HSK Lister Turm 5', url: '?mannschaft=3499', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=800&r=9#p3499x3405', title: 'gegen SK Anderten 2', text: '3' }]
+    - [{ url: '?staffel=800&r=5#p3499x3502', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - [{ url: '?staffel=800&r=1#p3499x3452', title: 'gegen SV Laatzen 3', text: '3' }]
+    - [{ url: '?staffel=800&r=3#p3499x3478', title: 'gegen ST Langenhagen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=800&r=6#p3499x3421', title: 'gegen SV Laatzen 4', text: 3½ }]
+    - [{ url: '?staffel=800&r=4#p3499x3557', title: 'gegen SD Isernhagen 3', text: '6' }]
+    - [{ url: '?staffel=800&r=7#p3499x3482', title: 'gegen SG Döhren-Gleid 2', text: '5' }]
+    - [{ url: '?staffel=800&r=11#p3499x3487', title: 'gegen SK Lehrte 6', text: 6½ }]
+    - [{ url: '?staffel=800&r=8#p3499x3469', title: 'gegen SC Hämelerwald 2', text: '6' }]
+    - [{ url: '?staffel=800&r=10#p3499x3558', title: 'gegen SD Isernhagen 4', text: '7' }]
+    - 11
+    - 46½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Laatzen 4', url: '?mannschaft=3421', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=800&r=2#p3421x3405', title: 'gegen SK Anderten 2', text: '2' }]
+    - [{ url: '?staffel=800&r=9#p3421x3502', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - [{ url: '?staffel=800&r=5#p3421x3452', title: 'gegen SV Laatzen 3', text: 1½ }]
+    - [{ url: '?staffel=800&r=7#p3421x3478', title: 'gegen ST Langenhagen 2', text: 3½ }]
+    - [{ url: '?staffel=800&r=6#p3421x3499', title: 'gegen HSK Lister Turm 5', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=800&r=8#p3421x3557', title: 'gegen SD Isernhagen 3', text: '4' }]
+    - [{ url: '?staffel=800&r=11#p3421x3482', title: 'gegen SG Döhren-Gleid 2', text: 4½ }]
+    - [{ url: '?staffel=800&r=4#p3421x3487', title: 'gegen SK Lehrte 6', text: '4' }]
+    - [{ url: '?staffel=800&r=1#p3421x3469', title: 'gegen SC Hämelerwald 2', text: '5' }]
+    - [{ url: '?staffel=800&r=3#p3421x3558', title: 'gegen SD Isernhagen 4', text: 6½ }]
+    - 11
+    - '38'
+    - ''
+-
+    - '7.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=3557', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=800&r=11#p3557x3405', title: 'gegen SK Anderten 2', text: 2½ }]
+    - [{ url: '?staffel=800&r=7#p3557x3502', title: 'gegen SV Gretenberg 2', text: 6½ }]
+    - [{ url: '?staffel=800&r=3#p3557x3452', title: 'gegen SV Laatzen 3', text: '1' }]
+    - [{ url: '?staffel=800&r=5#p3557x3478', title: 'gegen ST Langenhagen 2', text: '6' }]
+    - [{ url: '?staffel=800&r=4#p3557x3499', title: 'gegen HSK Lister Turm 5', text: '2' }]
+    - [{ url: '?staffel=800&r=8#p3557x3421', title: 'gegen SV Laatzen 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=800&r=9#p3557x3482', title: 'gegen SG Döhren-Gleid 2', text: '4' }]
+    - [{ url: '?staffel=800&r=2#p3557x3487', title: 'gegen SK Lehrte 6', text: '4' }]
+    - [{ url: '?staffel=800&r=10#p3557x3469', title: 'gegen SC Hämelerwald 2', text: '4' }]
+    - [{ url: '?staffel=800&r=1#p3557x3558', title: 'gegen SD Isernhagen 4', text: '5' }]
+    - 10
+    - '39'
+    - ''
+-
+    - '8.'
+    - { text: 'SG Döhren-Gleid 2', url: '?mannschaft=3482', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=800&r=3#p3482x3405', title: 'gegen SK Anderten 2', text: 4½ }]
+    - [{ url: '?staffel=800&r=10#p3482x3502', title: 'gegen SV Gretenberg 2', text: '3' }]
+    - [{ url: '?staffel=800&r=6#p3482x3452', title: 'gegen SV Laatzen 3', text: 3½ }]
+    - [{ url: '?staffel=800&r=8#p3482x3478', title: 'gegen ST Langenhagen 2', text: '2' }]
+    - [{ url: '?staffel=800&r=7#p3482x3499', title: 'gegen HSK Lister Turm 5', text: '3' }]
+    - [{ url: '?staffel=800&r=11#p3482x3421', title: 'gegen SV Laatzen 4', text: 2½ }]
+    - [{ url: '?staffel=800&r=9#p3482x3557', title: 'gegen SD Isernhagen 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=800&r=5#p3482x3487', title: 'gegen SK Lehrte 6', text: 4½ }]
+    - [{ url: '?staffel=800&r=2#p3482x3469', title: 'gegen SC Hämelerwald 2', text: '5' }]
+    - [{ url: '?staffel=800&r=4#p3482x3558', title: 'gegen SD Isernhagen 4', text: '5' }]
+    - 9
+    - '37'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Lehrte 6', url: '?mannschaft=3487', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=800&r=7#p3487x3405', title: 'gegen SK Anderten 2', text: 1½ }]
+    - [{ url: '?staffel=800&r=3#p3487x3502', title: 'gegen SV Gretenberg 2', text: ½ }]
+    - [{ url: '?staffel=800&r=10#p3487x3452', title: 'gegen SV Laatzen 3', text: 1½ }]
+    - [{ url: '?staffel=800&r=1#p3487x3478', title: 'gegen ST Langenhagen 2', text: '8' }]
+    - [{ url: '?staffel=800&r=11#p3487x3499', title: 'gegen HSK Lister Turm 5', text: 1½ }]
+    - [{ url: '?staffel=800&r=4#p3487x3421', title: 'gegen SV Laatzen 4', text: '4' }]
+    - [{ url: '?staffel=800&r=2#p3487x3557', title: 'gegen SD Isernhagen 3', text: '4' }]
+    - [{ url: '?staffel=800&r=5#p3487x3482', title: 'gegen SG Döhren-Gleid 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=800&r=6#p3487x3469', title: 'gegen SC Hämelerwald 2', text: '7' }]
+    - [{ url: '?staffel=800&r=8#p3487x3558', title: 'gegen SD Isernhagen 4', text: 4½ }]
+    - 8
+    - '36'
+    - ''
+-
+    - '10.'
+    - { text: 'SC Hämelerwald 2', url: '?mannschaft=3469', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=800&r=4#p3469x3405', title: 'gegen SK Anderten 2', text: '2' }]
+    - [{ url: '?staffel=800&r=11#p3469x3502', title: 'gegen SV Gretenberg 2', text: '3' }]
+    - [{ url: '?staffel=800&r=7#p3469x3452', title: 'gegen SV Laatzen 3', text: '2' }]
+    - [{ url: '?staffel=800&r=9#p3469x3478', title: 'gegen ST Langenhagen 2', text: '3' }]
+    - [{ url: '?staffel=800&r=8#p3469x3499', title: 'gegen HSK Lister Turm 5', text: '2' }]
+    - [{ url: '?staffel=800&r=1#p3469x3421', title: 'gegen SV Laatzen 4', text: '3' }]
+    - [{ url: '?staffel=800&r=10#p3469x3557', title: 'gegen SD Isernhagen 3', text: '4' }]
+    - [{ url: '?staffel=800&r=2#p3469x3482', title: 'gegen SG Döhren-Gleid 2', text: '3' }]
+    - [{ url: '?staffel=800&r=6#p3469x3487', title: 'gegen SK Lehrte 6', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=800&r=5#p3469x3558', title: 'gegen SD Isernhagen 4', text: '5' }]
+    - 3
+    - '28'
+    - ''
+-
+    - '11.'
+    - { text: 'SD Isernhagen 4', url: '?mannschaft=3558', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=800&r=6#p3558x3405', title: 'gegen SK Anderten 2', text: 2½ }]
+    - [{ url: '?staffel=800&r=2#p3558x3502', title: 'gegen SV Gretenberg 2', text: '1' }]
+    - [{ url: '?staffel=800&r=9#p3558x3452', title: 'gegen SV Laatzen 3', text: '1' }]
+    - [{ url: '?staffel=800&r=11#p3558x3478', title: 'gegen ST Langenhagen 2', text: '3' }]
+    - [{ url: '?staffel=800&r=10#p3558x3499', title: 'gegen HSK Lister Turm 5', text: '1' }]
+    - [{ url: '?staffel=800&r=3#p3558x3421', title: 'gegen SV Laatzen 4', text: 1½ }]
+    - [{ url: '?staffel=800&r=1#p3558x3557', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - [{ url: '?staffel=800&r=4#p3558x3482', title: 'gegen SG Döhren-Gleid 2', text: '3' }]
+    - [{ url: '?staffel=800&r=8#p3558x3487', title: 'gegen SK Lehrte 6', text: 3½ }]
+    - [{ url: '?staffel=800&r=5#p3558x3469', title: 'gegen SC Hämelerwald 2', text: '3' }]
+    - xxx
+    - 0
+    - 22½
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=6267', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1430&r=1#p6267x6268', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=1430&r=5#p6267x6356', title: 'gegen SZ Bemerode', text: '4' }]
+    - [{ url: '?staffel=1430&r=3#p6267x6322', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=1430&r=4#p6267x6264', title: 'gegen SV Gretenberg', text: '3' }]
+    - [{ url: '?staffel=1430&r=2#p6267x6277', title: 'gegen SG SF Ricklingen', text: 3½ }]
+    - 10
+    - 17½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=6268', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1430&r=1#p6268x6267', title: 'gegen SK Lehrte 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1430&r=2#p6268x6356', title: 'gegen SZ Bemerode', text: '2' }]
+    - [{ url: '?staffel=1430&r=4#p6268x6322', title: 'gegen HSK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=1430&r=5#p6268x6264', title: 'gegen SV Gretenberg', text: '4' }]
+    - [{ url: '?staffel=1430&r=3#p6268x6277', title: 'gegen SG SF Ricklingen', text: '3' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=6356', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1430&r=5#p6356x6267', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1430&r=2#p6356x6268', title: 'gegen SK Lehrte 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1430&r=1#p6356x6322', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1430&r=3#p6356x6264', title: 'gegen SV Gretenberg', text: '4' }]
+    - [{ url: '?staffel=1430&r=4#p6356x6277', title: 'gegen SG SF Ricklingen', text: 3½ }]
+    - 5
+    - 9½
+    - ''
+-
+    - '4.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=6322', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1430&r=3#p6322x6267', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1430&r=4#p6322x6268', title: 'gegen SK Lehrte 4', text: '1' }]
+    - [{ url: '?staffel=1430&r=1#p6322x6356', title: 'gegen SZ Bemerode', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1430&r=2#p6322x6264', title: 'gegen SV Gretenberg', text: 1½ }]
+    - [{ url: '?staffel=1430&r=5#p6322x6277', title: 'gegen SG SF Ricklingen', text: '3' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Gretenberg', url: '?mannschaft=6264', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1430&r=4#p6264x6267', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=1430&r=5#p6264x6268', title: 'gegen SK Lehrte 4', text: '0' }]
+    - [{ url: '?staffel=1430&r=3#p6264x6356', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1430&r=2#p6264x6322', title: 'gegen HSK Lister Turm', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1430&r=1#p6264x6277', title: 'gegen SG SF Ricklingen', text: '4' }]
+    - 4
+    - 7½
+    - ''
+-
+    - '6.'
+    - { text: 'SG SF Ricklingen', url: '?mannschaft=6277', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1430&r=2#p6277x6267', title: 'gegen SK Lehrte 3', text: ½ }]
+    - [{ url: '?staffel=1430&r=3#p6277x6268', title: 'gegen SK Lehrte 4', text: '1' }]
+    - [{ url: '?staffel=1430&r=4#p6277x6356', title: 'gegen SZ Bemerode', text: ½ }]
+    - [{ url: '?staffel=1430&r=5#p6277x6322', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1430&r=1#p6277x6264', title: 'gegen SV Gretenberg', text: '0' }]
+    - xxx
+    - 0
+    - '3'
+    - ''

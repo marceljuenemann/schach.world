@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'WSV Clausthal', url: '?mannschaft=8605', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1856&r=1#p8605x8602', title: 'gegen SG Holzminden 2', text: '2' }]
+    - [{ url: '?staffel=1856&r=3#p8605x8508', title: 'gegen ESV Göttingen 6', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1856&r=2#p8605x8581', title: 'gegen Hamelner SV 5', text: '4' }]
+    - {  }
+    - {  }
+    - 4
+    - 10½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Tempo Göttingen 3', url: '?mannschaft=8584', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1856&r=1#p8584x8508', title: 'gegen ESV Göttingen 6', text: '3' }]
+    - [{ url: '?staffel=1856&r=2#p8584x8480', title: 'gegen SK Goslar 2', text: '3' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1856&r=3#p8584x8606', title: 'gegen Turm Vienenburg', text: '4' }]
+    - 4
+    - '10'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Holzminden 2', url: '?mannschaft=8602', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1856&r=1#p8602x8605', title: 'gegen WSV Clausthal', text: '4' }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1856&r=3#p8602x8480', title: 'gegen SK Goslar 2', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1856&r=2#p8602x8595', title: 'gegen SG Südharz 2', text: 2½ }]
+    - {  }
+    - 4
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'ESV Göttingen 6', url: '?mannschaft=8508', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1856&r=3#p8508x8605', title: 'gegen WSV Clausthal', text: 1½ }]
+    - [{ url: '?staffel=1856&r=1#p8508x8584', title: 'gegen Tempo Göttingen 3', text: '3' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1856&r=2#p8508x8606', title: 'gegen Turm Vienenburg', text: 5½ }]
+    - 3
+    - '10'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=8480', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1856&r=2#p8480x8584', title: 'gegen Tempo Göttingen 3', text: '3' }]
+    - [{ url: '?staffel=1856&r=3#p8480x8602', title: 'gegen SG Holzminden 2', text: 2½ }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1856&r=1#p8480x8595', title: 'gegen SG Südharz 2', text: '4' }]
+    - {  }
+    - 3
+    - 9½
+    - ''
+-
+    - '6.'
+    - { text: 'Hamelner SV 5', url: '?mannschaft=8581', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1856&r=2#p8581x8605', title: 'gegen WSV Clausthal', text: '2' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1856&r=3#p8581x8595', title: 'gegen SG Südharz 2', text: '4' }]
+    - [{ url: '?staffel=1856&r=1#p8581x8606', title: 'gegen Turm Vienenburg', text: '2' }]
+    - 2
+    - '8'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Südharz 2', url: '?mannschaft=8595', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1856&r=2#p8595x8602', title: 'gegen SG Holzminden 2', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1856&r=1#p8595x8480', title: 'gegen SK Goslar 2', text: '2' }]
+    - [{ url: '?staffel=1856&r=3#p8595x8581', title: 'gegen Hamelner SV 5', text: '2' }]
+    - xxx
+    - {  }
+    - 2
+    - 7½
+    - ''
+-
+    - '8.'
+    - { text: 'Turm Vienenburg', url: '?mannschaft=8606', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1856&r=3#p8606x8584', title: 'gegen Tempo Göttingen 3', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1856&r=2#p8606x8508', title: 'gegen ESV Göttingen 6', text: ½ }]
+    - {  }
+    - [{ url: '?staffel=1856&r=1#p8606x8581', title: 'gegen Hamelner SV 5', text: '4' }]
+    - {  }
+    - xxx
+    - 2
+    - 6½
+    - ''

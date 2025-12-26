@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Medizin Erfurt', url: '?mannschaft=3269', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=777&r=1#p3269x3268', title: 'gegen SG Leipzig', text: '3' }]
+    - [{ url: '?staffel=777&r=5#p3269x3263', title: 'gegen Rotation Pankow', text: '3' }]
+    - [{ url: '?staffel=777&r=3#p3269x3264', title: 'gegen Torgelow-Drögeheide', text: '3' }]
+    - [{ url: '?staffel=777&r=6#p3269x3267', title: 'gegen GW Niederwiesa', text: 4½ }]
+    - [{ url: '?staffel=777&r=4#p3269x3270', title: 'gegen SV Empor Berlin', text: 4½ }]
+    - [{ url: '?staffel=777&r=2#p3269x3265', title: 'gegen Leipzig-Lindenau', text: 3½ }]
+    - [{ url: '?staffel=777&r=7#p3269x3266', title: "gegen CSC Aufbau '95", text: 3½ }]
+    - 11
+    - '25'
+    - ''
+-
+    - '2.'
+    - { text: 'SG Leipzig', url: '?mannschaft=3268', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=777&r=1#p3268x3269', title: 'gegen SV Medizin Erfurt', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=777&r=7#p3268x3263', title: 'gegen Rotation Pankow', text: '4' }]
+    - [{ url: '?staffel=777&r=2#p3268x3264', title: 'gegen Torgelow-Drögeheide', text: '3' }]
+    - [{ url: '?staffel=777&r=4#p3268x3267', title: 'gegen GW Niederwiesa', text: 3½ }]
+    - [{ url: '?staffel=777&r=6#p3268x3270', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=777&r=3#p3268x3265', title: 'gegen Leipzig-Lindenau', text: '4' }]
+    - [{ url: '?staffel=777&r=5#p3268x3266', title: "gegen CSC Aufbau '95", text: 4½ }]
+    - 11
+    - '25'
+    - ''
+-
+    - '3.'
+    - { text: 'Rotation Pankow', url: '?mannschaft=3263', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=777&r=5#p3263x3269', title: 'gegen SV Medizin Erfurt', text: '3' }]
+    - [{ url: '?staffel=777&r=7#p3263x3268', title: 'gegen SG Leipzig', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=777&r=4#p3263x3264', title: 'gegen Torgelow-Drögeheide', text: 2½ }]
+    - [{ url: '?staffel=777&r=2#p3263x3267', title: 'gegen GW Niederwiesa', text: '4' }]
+    - [{ url: '?staffel=777&r=3#p3263x3270', title: 'gegen SV Empor Berlin', text: '4' }]
+    - [{ url: '?staffel=777&r=6#p3263x3265', title: 'gegen Leipzig-Lindenau', text: 5½ }]
+    - [{ url: '?staffel=777&r=1#p3263x3266', title: "gegen CSC Aufbau '95", text: '5' }]
+    - 9
+    - '26'
+    - ''
+-
+    - '4.'
+    - { text: Torgelow-Drögeheide, url: '?mannschaft=3264', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=777&r=3#p3264x3269', title: 'gegen SV Medizin Erfurt', text: '3' }]
+    - [{ url: '?staffel=777&r=2#p3264x3268', title: 'gegen SG Leipzig', text: '3' }]
+    - [{ url: '?staffel=777&r=4#p3264x3263', title: 'gegen Rotation Pankow', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=777&r=7#p3264x3267', title: 'gegen GW Niederwiesa', text: 2½ }]
+    - [{ url: '?staffel=777&r=5#p3264x3270', title: 'gegen SV Empor Berlin', text: '6' }]
+    - [{ url: '?staffel=777&r=1#p3264x3265', title: 'gegen Leipzig-Lindenau', text: '4' }]
+    - [{ url: '?staffel=777&r=6#p3264x3266', title: "gegen CSC Aufbau '95", text: '3' }]
+    - 9
+    - '25'
+    - ''
+-
+    - '5.'
+    - { text: 'GW Niederwiesa', url: '?mannschaft=3267', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=777&r=6#p3267x3269', title: 'gegen SV Medizin Erfurt', text: 1½ }]
+    - [{ url: '?staffel=777&r=4#p3267x3268', title: 'gegen SG Leipzig', text: 2½ }]
+    - [{ url: '?staffel=777&r=2#p3267x3263', title: 'gegen Rotation Pankow', text: '2' }]
+    - [{ url: '?staffel=777&r=7#p3267x3264', title: 'gegen Torgelow-Drögeheide', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=777&r=1#p3267x3270', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=777&r=5#p3267x3265', title: 'gegen Leipzig-Lindenau', text: 3½ }]
+    - [{ url: '?staffel=777&r=3#p3267x3266', title: "gegen CSC Aufbau '95", text: 4½ }]
+    - 6
+    - 19½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=3270', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=777&r=4#p3270x3269', title: 'gegen SV Medizin Erfurt', text: 1½ }]
+    - [{ url: '?staffel=777&r=6#p3270x3268', title: 'gegen SG Leipzig', text: '3' }]
+    - [{ url: '?staffel=777&r=3#p3270x3263', title: 'gegen Rotation Pankow', text: '2' }]
+    - [{ url: '?staffel=777&r=5#p3270x3264', title: 'gegen Torgelow-Drögeheide', text: '0' }]
+    - [{ url: '?staffel=777&r=1#p3270x3267', title: 'gegen GW Niederwiesa', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=777&r=7#p3270x3265', title: 'gegen Leipzig-Lindenau', text: 2½ }]
+    - [{ url: '?staffel=777&r=2#p3270x3266', title: "gegen CSC Aufbau '95", text: 3½ }]
+    - 5
+    - 16½
+    - ''
+-
+    - '7.'
+    - { text: Leipzig-Lindenau, url: '?mannschaft=3265', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=777&r=2#p3265x3269', title: 'gegen SV Medizin Erfurt', text: 2½ }]
+    - [{ url: '?staffel=777&r=3#p3265x3268', title: 'gegen SG Leipzig', text: '2' }]
+    - [{ url: '?staffel=777&r=6#p3265x3263', title: 'gegen Rotation Pankow', text: ½ }]
+    - [{ url: '?staffel=777&r=1#p3265x3264', title: 'gegen Torgelow-Drögeheide', text: '2' }]
+    - [{ url: '?staffel=777&r=5#p3265x3267', title: 'gegen GW Niederwiesa', text: 2½ }]
+    - [{ url: '?staffel=777&r=7#p3265x3270', title: 'gegen SV Empor Berlin', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=777&r=4#p3265x3266', title: "gegen CSC Aufbau '95", text: 3½ }]
+    - 4
+    - 16½
+    - ''
+-
+    - '8.'
+    - { text: "CSC Aufbau '95", url: '?mannschaft=3266', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=777&r=7#p3266x3269', title: 'gegen SV Medizin Erfurt', text: 2½ }]
+    - [{ url: '?staffel=777&r=5#p3266x3268', title: 'gegen SG Leipzig', text: 1½ }]
+    - [{ url: '?staffel=777&r=1#p3266x3263', title: 'gegen Rotation Pankow', text: '1' }]
+    - [{ url: '?staffel=777&r=6#p3266x3264', title: 'gegen Torgelow-Drögeheide', text: '3' }]
+    - [{ url: '?staffel=777&r=3#p3266x3267', title: 'gegen GW Niederwiesa', text: 1½ }]
+    - [{ url: '?staffel=777&r=2#p3266x3270', title: 'gegen SV Empor Berlin', text: 2½ }]
+    - [{ url: '?staffel=777&r=4#p3266x3265', title: 'gegen Leipzig-Lindenau', text: 2½ }]
+    - xxx
+    - 1
+    - 14½
+    - ''

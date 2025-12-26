@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=407', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=401&r=3#p407x403', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=401&r=5#p407x408', title: 'gegen Eldagsen/Bad Mü', text: '3' }]
+    - [{ url: '?staffel=401&r=1#p407x409', title: 'gegen SK Neustadt', text: '3' }]
+    - [{ url: '?staffel=401&r=2#p407x410', title: 'gegen SK Wennigsen', text: '3' }]
+    - [{ url: '?staffel=401&r=4#p407x406', title: 'gegen SK Rinteln', text: '3' }]
+    - 9
+    - '14'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte', url: '?mannschaft=403', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=401&r=3#p403x407', title: 'gegen SC Stadthagen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=401&r=2#p403x408', title: 'gegen Eldagsen/Bad Mü', text: 1½ }]
+    - [{ url: '?staffel=401&r=5#p403x409', title: 'gegen SK Neustadt', text: 3½ }]
+    - [{ url: '?staffel=401&r=4#p403x410', title: 'gegen SK Wennigsen', text: 3½ }]
+    - [{ url: '?staffel=401&r=1#p403x406', title: 'gegen SK Rinteln', text: '4' }]
+    - 7
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'Eldagsen/Bad Mü', url: '?mannschaft=408', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=401&r=5#p408x407', title: 'gegen SC Stadthagen', text: '1' }]
+    - [{ url: '?staffel=401&r=2#p408x403', title: 'gegen SK Lehrte', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=401&r=4#p408x409', title: 'gegen SK Neustadt', text: '2' }]
+    - [{ url: '?staffel=401&r=1#p408x410', title: 'gegen SK Wennigsen', text: 3½ }]
+    - [{ url: '?staffel=401&r=3#p408x406', title: 'gegen SK Rinteln', text: '4' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Neustadt', url: '?mannschaft=409', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=401&r=1#p409x407', title: 'gegen SC Stadthagen', text: '1' }]
+    - [{ url: '?staffel=401&r=5#p409x403', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=401&r=4#p409x408', title: 'gegen Eldagsen/Bad Mü', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=401&r=3#p409x410', title: 'gegen SK Wennigsen', text: '3' }]
+    - [{ url: '?staffel=401&r=2#p409x406', title: 'gegen SK Rinteln', text: 2½ }]
+    - 5
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=410', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=401&r=2#p410x407', title: 'gegen SC Stadthagen', text: '1' }]
+    - [{ url: '?staffel=401&r=4#p410x403', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=401&r=1#p410x408', title: 'gegen Eldagsen/Bad Mü', text: ½ }]
+    - [{ url: '?staffel=401&r=3#p410x409', title: 'gegen SK Neustadt', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=401&r=5#p410x406', title: 'gegen SK Rinteln', text: '2' }]
+    - 1
+    - '5'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Rinteln', url: '?mannschaft=406', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=401&r=4#p406x407', title: 'gegen SC Stadthagen', text: '1' }]
+    - [{ url: '?staffel=401&r=1#p406x403', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=401&r=3#p406x408', title: 'gegen Eldagsen/Bad Mü', text: '0' }]
+    - [{ url: '?staffel=401&r=2#p406x409', title: 'gegen SK Neustadt', text: 1½ }]
+    - [{ url: '?staffel=401&r=5#p406x410', title: 'gegen SK Wennigsen', text: '2' }]
+    - xxx
+    - 1
+    - 4½
+    - ''

@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Möllner SV', url: '?mannschaft=2808', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=701&r=7#p2808x2814', title: 'gegen SV Bargteheide 2', text: '3' }]
+    - [{ url: '?staffel=701&r=4#p2808x2811', title: 'gegen Lübecker SV 7', text: '2' }]
+    - [{ url: '?staffel=701&r=6#p2808x2813', title: 'gegen Lübecker SV 8', text: 2½ }]
+    - [{ url: '?staffel=701&r=3#p2808x2810', title: 'gegen TuRa Harksheide 3', text: 1½ }]
+    - [{ url: '?staffel=701&r=5#p2808x2812', title: 'gegen Lübecker SV 6', text: '4' }]
+    - [{ url: '?staffel=701&r=2#p2808x2809', title: 'gegen SV Strand', text: '4' }]
+    - 9
+    - '17'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Bargteheide 2', url: '?mannschaft=2814', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=701&r=7#p2814x2808', title: 'gegen Möllner SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=701&r=3#p2814x2811', title: 'gegen Lübecker SV 7', text: 1½ }]
+    - [{ url: '?staffel=701&r=5#p2814x2813', title: 'gegen Lübecker SV 8', text: 2½ }]
+    - [{ url: '?staffel=701&r=2#p2814x2810', title: 'gegen TuRa Harksheide 3', text: '3' }]
+    - [{ url: '?staffel=701&r=4#p2814x2812', title: 'gegen Lübecker SV 6', text: 2½ }]
+    - [{ url: '?staffel=701&r=1#p2814x2809', title: 'gegen SV Strand', text: '4' }]
+    - 8
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'Lübecker SV 7', url: '?mannschaft=2811', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=701&r=4#p2811x2808', title: 'gegen Möllner SV', text: '2' }]
+    - [{ url: '?staffel=701&r=3#p2811x2814', title: 'gegen SV Bargteheide 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=701&r=2#p2811x2813', title: 'gegen Lübecker SV 8', text: '2' }]
+    - [{ url: '?staffel=701&r=6#p2811x2810', title: 'gegen TuRa Harksheide 3', text: '1' }]
+    - [{ url: '?staffel=701&r=1#p2811x2812', title: 'gegen Lübecker SV 6', text: '2' }]
+    - [{ url: '?staffel=701&r=5#p2811x2809', title: 'gegen SV Strand', text: 3½ }]
+    - 7
+    - '13'
+    - ''
+-
+    - '4.'
+    - { text: 'Lübecker SV 8', url: '?mannschaft=2813', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=701&r=6#p2813x2808', title: 'gegen Möllner SV', text: 1½ }]
+    - [{ url: '?staffel=701&r=5#p2813x2814', title: 'gegen SV Bargteheide 2', text: 1½ }]
+    - [{ url: '?staffel=701&r=2#p2813x2811', title: 'gegen Lübecker SV 7', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=701&r=1#p2813x2810', title: 'gegen TuRa Harksheide 3', text: '2' }]
+    - [{ url: '?staffel=701&r=3#p2813x2812', title: 'gegen Lübecker SV 6', text: '4' }]
+    - [{ url: '?staffel=701&r=7#p2813x2809', title: 'gegen SV Strand', text: '3' }]
+    - 6
+    - '14'
+    - ''
+-
+    - '5.'
+    - { text: 'TuRa Harksheide 3', url: '?mannschaft=2810', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=701&r=3#p2810x2808', title: 'gegen Möllner SV', text: 2½ }]
+    - [{ url: '?staffel=701&r=2#p2810x2814', title: 'gegen SV Bargteheide 2', text: '1' }]
+    - [{ url: '?staffel=701&r=6#p2810x2811', title: 'gegen Lübecker SV 7', text: '3' }]
+    - [{ url: '?staffel=701&r=1#p2810x2813', title: 'gegen Lübecker SV 8', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=701&r=7#p2810x2812', title: 'gegen Lübecker SV 6', text: '0' }]
+    - [{ url: '?staffel=701&r=4#p2810x2809', title: 'gegen SV Strand', text: '2' }]
+    - 6
+    - 10½
+    - ''
+-
+    - '6.'
+    - { text: 'Lübecker SV 6', url: '?mannschaft=2812', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=701&r=5#p2812x2808', title: 'gegen Möllner SV', text: '0' }]
+    - [{ url: '?staffel=701&r=4#p2812x2814', title: 'gegen SV Bargteheide 2', text: 1½ }]
+    - [{ url: '?staffel=701&r=1#p2812x2811', title: 'gegen Lübecker SV 7', text: '2' }]
+    - [{ url: '?staffel=701&r=3#p2812x2813', title: 'gegen Lübecker SV 8', text: '0' }]
+    - [{ url: '?staffel=701&r=7#p2812x2810', title: 'gegen TuRa Harksheide 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=701&r=6#p2812x2809', title: 'gegen SV Strand', text: '4' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Strand', url: '?mannschaft=2809', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=701&r=2#p2809x2808', title: 'gegen Möllner SV', text: '0' }]
+    - [{ url: '?staffel=701&r=1#p2809x2814', title: 'gegen SV Bargteheide 2', text: '0' }]
+    - [{ url: '?staffel=701&r=5#p2809x2811', title: 'gegen Lübecker SV 7', text: ½ }]
+    - [{ url: '?staffel=701&r=7#p2809x2813', title: 'gegen Lübecker SV 8', text: '1' }]
+    - [{ url: '?staffel=701&r=4#p2809x2810', title: 'gegen TuRa Harksheide 3', text: '2' }]
+    - [{ url: '?staffel=701&r=6#p2809x2812', title: 'gegen Lübecker SV 6', text: '0' }]
+    - xxx
+    - 1
+    - 3½
+    - absteiger

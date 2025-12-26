@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Tempo Göttingen 2', url: '?mannschaft=8127', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1786&r=7#p8127x8072', title: 'gegen SK Duderstadt', text: 4½ }]
+    - [{ url: '?staffel=1786&r=4#p8127x8133', title: 'gegen Alfelder SV', text: 4½ }]
+    - [{ url: '?staffel=1786&r=2#p8127x8121', title: 'gegen Hamelner SV 4', text: '2' }]
+    - [{ url: '?staffel=1786&r=1#p8127x8135', title: 'gegen PSV Bad Pyrmont', text: 4½ }]
+    - [{ url: '?staffel=1786&r=9#p8127x8116', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - [{ url: '?staffel=1786&r=3#p8127x8118', title: 'gegen SK Goslar 2', text: '4' }]
+    - [{ url: '?staffel=1786&r=5#p8127x8138', title: 'gegen ESV Göttingen 4', text: 4½ }]
+    - [{ url: '?staffel=1786&r=8#p8127x8115', title: 'gegen Hildesheimer SV 4', text: 4½ }]
+    - [{ url: '?staffel=1786&r=6#p8127x8110', title: 'gegen Turm Vienenburg', text: 4½ }]
+    - 16
+    - '37'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Duderstadt', url: '?mannschaft=8072', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1786&r=7#p8072x8127', title: 'gegen Tempo Göttingen 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1786&r=6#p8072x8133', title: 'gegen Alfelder SV', text: '4' }]
+    - [{ url: '?staffel=1786&r=1#p8072x8121', title: 'gegen Hamelner SV 4', text: '4' }]
+    - [{ url: '?staffel=1786&r=2#p8072x8135', title: 'gegen PSV Bad Pyrmont', text: '3' }]
+    - [{ url: '?staffel=1786&r=5#p8072x8116', title: 'gegen SK Bad Harzburg', text: '0' }]
+    - [{ url: '?staffel=1786&r=4#p8072x8118', title: 'gegen SK Goslar 2', text: 3½ }]
+    - [{ url: '?staffel=1786&r=8#p8072x8138', title: 'gegen ESV Göttingen 4', text: '4' }]
+    - [{ url: '?staffel=1786&r=9#p8072x8115', title: 'gegen Hildesheimer SV 4', text: 3½ }]
+    - [{ url: '?staffel=1786&r=3#p8072x8110', title: 'gegen Turm Vienenburg', text: '4' }]
+    - 13
+    - 27½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Alfelder SV', url: '?mannschaft=8133', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1786&r=4#p8133x8127', title: 'gegen Tempo Göttingen 2', text: 1½ }]
+    - [{ url: '?staffel=1786&r=6#p8133x8072', title: 'gegen SK Duderstadt', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1786&r=7#p8133x8121', title: 'gegen Hamelner SV 4', text: 3½ }]
+    - [{ url: '?staffel=1786&r=5#p8133x8135', title: 'gegen PSV Bad Pyrmont', text: '2' }]
+    - [{ url: '?staffel=1786&r=8#p8133x8116', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - [{ url: '?staffel=1786&r=1#p8133x8118', title: 'gegen SK Goslar 2', text: 4½ }]
+    - [{ url: '?staffel=1786&r=9#p8133x8138', title: 'gegen ESV Göttingen 4', text: 5½ }]
+    - [{ url: '?staffel=1786&r=3#p8133x8115', title: 'gegen Hildesheimer SV 4', text: 3½ }]
+    - [{ url: '?staffel=1786&r=2#p8133x8110', title: 'gegen Turm Vienenburg', text: 4½ }]
+    - 12
+    - '31'
+    - ''
+-
+    - '4.'
+    - { text: 'Hamelner SV 4', url: '?mannschaft=8121', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1786&r=2#p8121x8127', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=1786&r=1#p8121x8072', title: 'gegen SK Duderstadt', text: '2' }]
+    - [{ url: '?staffel=1786&r=7#p8121x8133', title: 'gegen Alfelder SV', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1786&r=6#p8121x8135', title: 'gegen PSV Bad Pyrmont', text: '4' }]
+    - [{ url: '?staffel=1786&r=3#p8121x8116', title: 'gegen SK Bad Harzburg', text: 3½ }]
+    - [{ url: '?staffel=1786&r=9#p8121x8118', title: 'gegen SK Goslar 2', text: '5' }]
+    - [{ url: '?staffel=1786&r=4#p8121x8138', title: 'gegen ESV Göttingen 4', text: 2½ }]
+    - [{ url: '?staffel=1786&r=5#p8121x8115', title: 'gegen Hildesheimer SV 4', text: '3' }]
+    - [{ url: '?staffel=1786&r=8#p8121x8110', title: 'gegen Turm Vienenburg', text: '6' }]
+    - 11
+    - 32½
+    - ''
+-
+    - '5.'
+    - { text: 'PSV Bad Pyrmont', url: '?mannschaft=8135', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1786&r=1#p8135x8127', title: 'gegen Tempo Göttingen 2', text: 1½ }]
+    - [{ url: '?staffel=1786&r=2#p8135x8072', title: 'gegen SK Duderstadt', text: '3' }]
+    - [{ url: '?staffel=1786&r=5#p8135x8133', title: 'gegen Alfelder SV', text: '4' }]
+    - [{ url: '?staffel=1786&r=6#p8135x8121', title: 'gegen Hamelner SV 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1786&r=4#p8135x8116', title: 'gegen SK Bad Harzburg', text: 5½ }]
+    - [{ url: '?staffel=1786&r=8#p8135x8118', title: 'gegen SK Goslar 2', text: '6' }]
+    - [{ url: '?staffel=1786&r=3#p8135x8138', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - [{ url: '?staffel=1786&r=7#p8135x8115', title: 'gegen Hildesheimer SV 4', text: 2½ }]
+    - [{ url: '?staffel=1786&r=9#p8135x8110', title: 'gegen Turm Vienenburg', text: 2½ }]
+    - 8
+    - '30'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Bad Harzburg', url: '?mannschaft=8116', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1786&r=9#p8116x8127', title: 'gegen Tempo Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1786&r=5#p8116x8072', title: 'gegen SK Duderstadt', text: '6' }]
+    - [{ url: '?staffel=1786&r=8#p8116x8133', title: 'gegen Alfelder SV', text: '2' }]
+    - [{ url: '?staffel=1786&r=3#p8116x8121', title: 'gegen Hamelner SV 4', text: 2½ }]
+    - [{ url: '?staffel=1786&r=4#p8116x8135', title: 'gegen PSV Bad Pyrmont', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1786&r=6#p8116x8118', title: 'gegen SK Goslar 2', text: 1½ }]
+    - [{ url: '?staffel=1786&r=2#p8116x8138', title: 'gegen ESV Göttingen 4', text: 3½ }]
+    - [{ url: '?staffel=1786&r=1#p8116x8115', title: 'gegen Hildesheimer SV 4', text: '4' }]
+    - [{ url: '?staffel=1786&r=7#p8116x8110', title: 'gegen Turm Vienenburg', text: 3½ }]
+    - 8
+    - 25½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=8118', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1786&r=3#p8118x8127', title: 'gegen Tempo Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1786&r=4#p8118x8072', title: 'gegen SK Duderstadt', text: 2½ }]
+    - [{ url: '?staffel=1786&r=1#p8118x8133', title: 'gegen Alfelder SV', text: 1½ }]
+    - [{ url: '?staffel=1786&r=9#p8118x8121', title: 'gegen Hamelner SV 4', text: '1' }]
+    - [{ url: '?staffel=1786&r=8#p8118x8135', title: 'gegen PSV Bad Pyrmont', text: '0' }]
+    - [{ url: '?staffel=1786&r=6#p8118x8116', title: 'gegen SK Bad Harzburg', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1786&r=7#p8118x8138', title: 'gegen ESV Göttingen 4', text: 4½ }]
+    - [{ url: '?staffel=1786&r=2#p8118x8115', title: 'gegen Hildesheimer SV 4', text: 4½ }]
+    - [{ url: '?staffel=1786&r=5#p8118x8110', title: 'gegen Turm Vienenburg', text: '3' }]
+    - 7
+    - 23½
+    - ''
+-
+    - '8.'
+    - { text: 'ESV Göttingen 4', url: '?mannschaft=8138', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1786&r=5#p8138x8127', title: 'gegen Tempo Göttingen 2', text: 1½ }]
+    - [{ url: '?staffel=1786&r=8#p8138x8072', title: 'gegen SK Duderstadt', text: '2' }]
+    - [{ url: '?staffel=1786&r=9#p8138x8133', title: 'gegen Alfelder SV', text: ½ }]
+    - [{ url: '?staffel=1786&r=4#p8138x8121', title: 'gegen Hamelner SV 4', text: 3½ }]
+    - [{ url: '?staffel=1786&r=3#p8138x8135', title: 'gegen PSV Bad Pyrmont', text: '3' }]
+    - [{ url: '?staffel=1786&r=2#p8138x8116', title: 'gegen SK Bad Harzburg', text: 2½ }]
+    - [{ url: '?staffel=1786&r=7#p8138x8118', title: 'gegen SK Goslar 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1786&r=6#p8138x8115', title: 'gegen Hildesheimer SV 4', text: '4' }]
+    - [{ url: '?staffel=1786&r=1#p8138x8110', title: 'gegen Turm Vienenburg', text: 4½ }]
+    - 7
+    - '23'
+    - ''
+-
+    - '9.'
+    - { text: 'Hildesheimer SV 4', url: '?mannschaft=8115', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1786&r=8#p8115x8127', title: 'gegen Tempo Göttingen 2', text: 1½ }]
+    - [{ url: '?staffel=1786&r=9#p8115x8072', title: 'gegen SK Duderstadt', text: 1½ }]
+    - [{ url: '?staffel=1786&r=3#p8115x8133', title: 'gegen Alfelder SV', text: 2½ }]
+    - [{ url: '?staffel=1786&r=5#p8115x8121', title: 'gegen Hamelner SV 4', text: '3' }]
+    - [{ url: '?staffel=1786&r=7#p8115x8135', title: 'gegen PSV Bad Pyrmont', text: 3½ }]
+    - [{ url: '?staffel=1786&r=1#p8115x8116', title: 'gegen SK Bad Harzburg', text: '2' }]
+    - [{ url: '?staffel=1786&r=2#p8115x8118', title: 'gegen SK Goslar 2', text: 1½ }]
+    - [{ url: '?staffel=1786&r=6#p8115x8138', title: 'gegen ESV Göttingen 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1786&r=4#p8115x8110', title: 'gegen Turm Vienenburg', text: '3' }]
+    - 4
+    - 20½
+    - ''
+-
+    - '10.'
+    - { text: 'Turm Vienenburg', url: '?mannschaft=8110', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1786&r=6#p8110x8127', title: 'gegen Tempo Göttingen 2', text: 1½ }]
+    - [{ url: '?staffel=1786&r=3#p8110x8072', title: 'gegen SK Duderstadt', text: '2' }]
+    - [{ url: '?staffel=1786&r=2#p8110x8133', title: 'gegen Alfelder SV', text: 1½ }]
+    - [{ url: '?staffel=1786&r=8#p8110x8121', title: 'gegen Hamelner SV 4', text: '0' }]
+    - [{ url: '?staffel=1786&r=9#p8110x8135', title: 'gegen PSV Bad Pyrmont', text: 2½ }]
+    - [{ url: '?staffel=1786&r=7#p8110x8116', title: 'gegen SK Bad Harzburg', text: 2½ }]
+    - [{ url: '?staffel=1786&r=5#p8110x8118', title: 'gegen SK Goslar 2', text: '3' }]
+    - [{ url: '?staffel=1786&r=1#p8110x8138', title: 'gegen ESV Göttingen 4', text: 1½ }]
+    - [{ url: '?staffel=1786&r=4#p8110x8115', title: 'gegen Hildesheimer SV 4', text: '3' }]
+    - xxx
+    - 2
+    - 17½
+    - absteiger

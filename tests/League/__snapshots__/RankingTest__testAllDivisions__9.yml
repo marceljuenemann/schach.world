@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SVg Salzgitter', url: '?mannschaft=442', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=405&r=1#p442x446', title: 'gegen SV Gifhorn', text: 4½ }]
+    - [{ url: '?staffel=405&r=3#p442x441', title: 'gegen SV Bückeburg 2', text: '6' }]
+    - [{ url: '?staffel=405&r=7#p442x440', title: 'gegen Hamelner SV', text: '6' }]
+    - [{ url: '?staffel=405&r=4#p442x444', title: 'gegen Braunschw. SF', text: '6' }]
+    - [{ url: '?staffel=405&r=6#p442x445', title: 'gegen SG Schöningen', text: 5½ }]
+    - [{ url: '?staffel=405&r=5#p442x443', title: 'gegen SF Fallersleben', text: 4½ }]
+    - [{ url: '?staffel=405&r=2#p442x439', title: 'gegen SV Springe', text: '6' }]
+    - 14
+    - 38½
+    - ''
+-
+    - '2.'
+    - { text: 'SV Gifhorn', url: '?mannschaft=446', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=405&r=1#p446x442', title: 'gegen SVg Salzgitter', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=405&r=2#p446x441', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=405&r=6#p446x440', title: 'gegen Hamelner SV', text: '3' }]
+    - [{ url: '?staffel=405&r=5#p446x444', title: 'gegen Braunschw. SF', text: 5½ }]
+    - [{ url: '?staffel=405&r=4#p446x445', title: 'gegen SG Schöningen', text: 3½ }]
+    - [{ url: '?staffel=405&r=3#p446x443', title: 'gegen SF Fallersleben', text: '5' }]
+    - [{ url: '?staffel=405&r=7#p446x439', title: 'gegen SV Springe', text: '6' }]
+    - 10
+    - 27½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=441', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=405&r=3#p441x442', title: 'gegen SVg Salzgitter', text: '0' }]
+    - [{ url: '?staffel=405&r=2#p441x446', title: 'gegen SV Gifhorn', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=405&r=5#p441x440', title: 'gegen Hamelner SV', text: '3' }]
+    - [{ url: '?staffel=405&r=1#p441x444', title: 'gegen Braunschw. SF', text: 3½ }]
+    - [{ url: '?staffel=405&r=7#p441x445', title: 'gegen SG Schöningen', text: '3' }]
+    - [{ url: '?staffel=405&r=6#p441x443', title: 'gegen SF Fallersleben', text: '5' }]
+    - [{ url: '?staffel=405&r=4#p441x439', title: 'gegen SV Springe', text: '6' }]
+    - 9
+    - 23½
+    - ''
+-
+    - '4.'
+    - { text: 'Hamelner SV', url: '?mannschaft=440', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=405&r=7#p440x442', title: 'gegen SVg Salzgitter', text: '0' }]
+    - [{ url: '?staffel=405&r=6#p440x446', title: 'gegen SV Gifhorn', text: '3' }]
+    - [{ url: '?staffel=405&r=5#p440x441', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=405&r=2#p440x444', title: 'gegen Braunschw. SF', text: '4' }]
+    - [{ url: '?staffel=405&r=1#p440x445', title: 'gegen SG Schöningen', text: '4' }]
+    - [{ url: '?staffel=405&r=4#p440x443', title: 'gegen SF Fallersleben', text: '2' }]
+    - [{ url: '?staffel=405&r=3#p440x439', title: 'gegen SV Springe', text: '6' }]
+    - 8
+    - '22'
+    - ''
+-
+    - '5.'
+    - { text: 'Braunschw. SF', url: '?mannschaft=444', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=405&r=4#p444x442', title: 'gegen SVg Salzgitter', text: '0' }]
+    - [{ url: '?staffel=405&r=5#p444x446', title: 'gegen SV Gifhorn', text: ½ }]
+    - [{ url: '?staffel=405&r=1#p444x441', title: 'gegen SV Bückeburg 2', text: 2½ }]
+    - [{ url: '?staffel=405&r=2#p444x440', title: 'gegen Hamelner SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=405&r=3#p444x445', title: 'gegen SG Schöningen', text: 3½ }]
+    - [{ url: '?staffel=405&r=7#p444x443', title: 'gegen SF Fallersleben', text: '5' }]
+    - [{ url: '?staffel=405&r=6#p444x439', title: 'gegen SV Springe', text: '6' }]
+    - 6
+    - 19½
+    - ''
+-
+    - '6.'
+    - { text: 'SG Schöningen', url: '?mannschaft=445', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=405&r=6#p445x442', title: 'gegen SVg Salzgitter', text: ½ }]
+    - [{ url: '?staffel=405&r=4#p445x446', title: 'gegen SV Gifhorn', text: 2½ }]
+    - [{ url: '?staffel=405&r=7#p445x441', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=405&r=1#p445x440', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=405&r=3#p445x444', title: 'gegen Braunschw. SF', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=405&r=2#p445x443', title: 'gegen SF Fallersleben', text: '5' }]
+    - [{ url: '?staffel=405&r=5#p445x439', title: 'gegen SV Springe', text: '6' }]
+    - 5
+    - 21½
+    - ''
+-
+    - '7.'
+    - { text: 'SF Fallersleben', url: '?mannschaft=443', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=405&r=5#p443x442', title: 'gegen SVg Salzgitter', text: 1½ }]
+    - [{ url: '?staffel=405&r=3#p443x446', title: 'gegen SV Gifhorn', text: '1' }]
+    - [{ url: '?staffel=405&r=6#p443x441', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - [{ url: '?staffel=405&r=4#p443x440', title: 'gegen Hamelner SV', text: '4' }]
+    - [{ url: '?staffel=405&r=7#p443x444', title: 'gegen Braunschw. SF', text: '1' }]
+    - [{ url: '?staffel=405&r=2#p443x445', title: 'gegen SG Schöningen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=405&r=1#p443x439', title: 'gegen SV Springe', text: '6' }]
+    - 4
+    - 15½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Springe', url: '?mannschaft=439', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=405&r=2#p439x442', title: 'gegen SVg Salzgitter', text: '0' }]
+    - [{ url: '?staffel=405&r=7#p439x446', title: 'gegen SV Gifhorn', text: '0' }]
+    - [{ url: '?staffel=405&r=4#p439x441', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - [{ url: '?staffel=405&r=3#p439x440', title: 'gegen Hamelner SV', text: '0' }]
+    - [{ url: '?staffel=405&r=6#p439x444', title: 'gegen Braunschw. SF', text: '0' }]
+    - [{ url: '?staffel=405&r=5#p439x445', title: 'gegen SG Schöningen', text: '0' }]
+    - [{ url: '?staffel=405&r=1#p439x443', title: 'gegen SF Fallersleben', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

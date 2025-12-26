@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamburger SK', url: '?mannschaft=6916', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1611&r=1#p6916x6915', title: 'gegen SK Doppelbauer Kiel', text: '5' }]
+    - [{ url: '?staffel=1611&r=5#p6916x6917', title: 'gegen Lübecker SV', text: 5½ }]
+    - [{ url: '?staffel=1611&r=4#p6916x6919', title: 'gegen TuRa Harksheide', text: 4½ }]
+    - [{ url: '?staffel=1611&r=7#p6916x6918', title: 'gegen Bad Schwartau', text: 5½ }]
+    - [{ url: '?staffel=1611&r=6#p6916x6921', title: 'gegen Weiße Dame HH', text: '6' }]
+    - [{ url: '?staffel=1611&r=3#p6916x6923', title: 'gegen Johanneum Eppendorf', text: '5' }]
+    - [{ url: '?staffel=1611&r=2#p6916x6922', title: 'gegen SVgg Blankenese', text: 5½ }]
+    - 14
+    - '37'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Doppelbauer Kiel', url: '?mannschaft=6915', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1611&r=1#p6915x6916', title: 'gegen Hamburger SK', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1611&r=7#p6915x6917', title: 'gegen Lübecker SV', text: '3' }]
+    - [{ url: '?staffel=1611&r=6#p6915x6919', title: 'gegen TuRa Harksheide', text: 3½ }]
+    - [{ url: '?staffel=1611&r=2#p6915x6918', title: 'gegen Bad Schwartau', text: '4' }]
+    - [{ url: '?staffel=1611&r=3#p6915x6921', title: 'gegen Weiße Dame HH', text: '3' }]
+    - [{ url: '?staffel=1611&r=5#p6915x6923', title: 'gegen Johanneum Eppendorf', text: '4' }]
+    - [{ url: '?staffel=1611&r=4#p6915x6922', title: 'gegen SVgg Blankenese', text: '4' }]
+    - 10
+    - 22½
+    - ''
+-
+    - '3.'
+    - { text: 'Lübecker SV', url: '?mannschaft=6917', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1611&r=5#p6917x6916', title: 'gegen Hamburger SK', text: ½ }]
+    - [{ url: '?staffel=1611&r=7#p6917x6915', title: 'gegen SK Doppelbauer Kiel', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1611&r=3#p6917x6919', title: 'gegen TuRa Harksheide', text: '1' }]
+    - [{ url: '?staffel=1611&r=6#p6917x6918', title: 'gegen Bad Schwartau', text: 3½ }]
+    - [{ url: '?staffel=1611&r=4#p6917x6921', title: 'gegen Weiße Dame HH', text: '4' }]
+    - [{ url: '?staffel=1611&r=2#p6917x6923', title: 'gegen Johanneum Eppendorf', text: '4' }]
+    - [{ url: '?staffel=1611&r=1#p6917x6922', title: 'gegen SVgg Blankenese', text: '5' }]
+    - 9
+    - '21'
+    - ''
+-
+    - '4.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=6919', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1611&r=4#p6919x6916', title: 'gegen Hamburger SK', text: 1½ }]
+    - [{ url: '?staffel=1611&r=6#p6919x6915', title: 'gegen SK Doppelbauer Kiel', text: 2½ }]
+    - [{ url: '?staffel=1611&r=3#p6919x6917', title: 'gegen Lübecker SV', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1611&r=5#p6919x6918', title: 'gegen Bad Schwartau', text: 4½ }]
+    - [{ url: '?staffel=1611&r=2#p6919x6921', title: 'gegen Weiße Dame HH', text: 2½ }]
+    - [{ url: '?staffel=1611&r=1#p6919x6923', title: 'gegen Johanneum Eppendorf', text: '4' }]
+    - [{ url: '?staffel=1611&r=7#p6919x6922', title: 'gegen SVgg Blankenese', text: '6' }]
+    - 8
+    - '26'
+    - ''
+-
+    - '5.'
+    - { text: 'Bad Schwartau', url: '?mannschaft=6918', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1611&r=7#p6918x6916', title: 'gegen Hamburger SK', text: ½ }]
+    - [{ url: '?staffel=1611&r=2#p6918x6915', title: 'gegen SK Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=1611&r=6#p6918x6917', title: 'gegen Lübecker SV', text: 2½ }]
+    - [{ url: '?staffel=1611&r=5#p6918x6919', title: 'gegen TuRa Harksheide', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1611&r=1#p6918x6921', title: 'gegen Weiße Dame HH', text: '4' }]
+    - [{ url: '?staffel=1611&r=4#p6918x6923', title: 'gegen Johanneum Eppendorf', text: 4½ }]
+    - [{ url: '?staffel=1611&r=3#p6918x6922', title: 'gegen SVgg Blankenese', text: '5' }]
+    - 6
+    - '20'
+    - ''
+-
+    - '6.'
+    - { text: 'Weiße Dame HH', url: '?mannschaft=6921', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1611&r=6#p6921x6916', title: 'gegen Hamburger SK', text: '0' }]
+    - [{ url: '?staffel=1611&r=3#p6921x6915', title: 'gegen SK Doppelbauer Kiel', text: '3' }]
+    - [{ url: '?staffel=1611&r=4#p6921x6917', title: 'gegen Lübecker SV', text: '2' }]
+    - [{ url: '?staffel=1611&r=2#p6921x6919', title: 'gegen TuRa Harksheide', text: 3½ }]
+    - [{ url: '?staffel=1611&r=1#p6921x6918', title: 'gegen Bad Schwartau', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1611&r=7#p6921x6923', title: 'gegen Johanneum Eppendorf', text: 1½ }]
+    - [{ url: '?staffel=1611&r=5#p6921x6922', title: 'gegen SVgg Blankenese', text: '3' }]
+    - 4
+    - '15'
+    - absteigerRelegation
+-
+    - '7.'
+    - { text: 'Johanneum Eppendorf', url: '?mannschaft=6923', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1611&r=3#p6923x6916', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=1611&r=5#p6923x6915', title: 'gegen SK Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=1611&r=2#p6923x6917', title: 'gegen Lübecker SV', text: '2' }]
+    - [{ url: '?staffel=1611&r=1#p6923x6919', title: 'gegen TuRa Harksheide', text: '2' }]
+    - [{ url: '?staffel=1611&r=4#p6923x6918', title: 'gegen Bad Schwartau', text: 1½ }]
+    - [{ url: '?staffel=1611&r=7#p6923x6921', title: 'gegen Weiße Dame HH', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1611&r=6#p6923x6922', title: 'gegen SVgg Blankenese', text: '3' }]
+    - 3
+    - '16'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SVgg Blankenese', url: '?mannschaft=6922', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1611&r=2#p6922x6916', title: 'gegen Hamburger SK', text: ½ }]
+    - [{ url: '?staffel=1611&r=4#p6922x6915', title: 'gegen SK Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=1611&r=1#p6922x6917', title: 'gegen Lübecker SV', text: '1' }]
+    - [{ url: '?staffel=1611&r=7#p6922x6919', title: 'gegen TuRa Harksheide', text: '0' }]
+    - [{ url: '?staffel=1611&r=3#p6922x6918', title: 'gegen Bad Schwartau', text: '1' }]
+    - [{ url: '?staffel=1611&r=5#p6922x6921', title: 'gegen Weiße Dame HH', text: '3' }]
+    - [{ url: '?staffel=1611&r=6#p6922x6923', title: 'gegen Johanneum Eppendorf', text: '3' }]
+    - xxx
+    - 2
+    - 10½
+    - absteiger

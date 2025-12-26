@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Eystruper SK', url: '?mannschaft=4647', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=960&r=7#p4647x4397', title: 'gegen WB Eilenriede 2', text: 5½ }]
+    - [{ url: '?staffel=960&r=5#p4647x4666', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=960&r=8#p4647x4661', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=960&r=1#p4647x4659', title: 'gegen SK Rinteln 2', text: '5' }]
+    - [{ url: '?staffel=960&r=9#p4647x4662', title: 'gegen SG Eldagsen/BM', text: '5' }]
+    - [{ url: '?staffel=960&r=3#p4647x4623', title: 'gegen SV Warmsen', text: 7½ }]
+    - [{ url: '?staffel=960&r=4#p4647x4545', title: 'gegen SK Wennigsen', text: '4' }]
+    - [{ url: '?staffel=960&r=6#p4647x4547', title: 'gegen SK Neustadt 2', text: 6½ }]
+    - [{ url: '?staffel=960&r=2#p4647x4515', title: 'gegen SK Stolzenau 2', text: 4½ }]
+    - 14
+    - '45'
+    - ''
+-
+    - '2.'
+    - { text: 'WB Eilenriede 2', url: '?mannschaft=4397', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=960&r=7#p4397x4647', title: 'gegen Eystruper SK', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=960&r=6#p4397x4666', title: 'gegen TuS Wunstorf', text: 5½ }]
+    - [{ url: '?staffel=960&r=3#p4397x4661', title: 'gegen SK Ricklingen 2', text: 4½ }]
+    - [{ url: '?staffel=960&r=4#p4397x4659', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - [{ url: '?staffel=960&r=8#p4397x4662', title: 'gegen SG Eldagsen/BM', text: '5' }]
+    - [{ url: '?staffel=960&r=5#p4397x4623', title: 'gegen SV Warmsen', text: '3' }]
+    - [{ url: '?staffel=960&r=1#p4397x4545', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=960&r=2#p4397x4547', title: 'gegen SK Neustadt 2', text: 6½ }]
+    - [{ url: '?staffel=960&r=9#p4397x4515', title: 'gegen SK Stolzenau 2', text: '8' }]
+    - 14
+    - '44'
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=4666', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=960&r=5#p4666x4647', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=960&r=6#p4666x4397', title: 'gegen WB Eilenriede 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=960&r=2#p4666x4661', title: 'gegen SK Ricklingen 2', text: 3½ }]
+    - [{ url: '?staffel=960&r=3#p4666x4659', title: 'gegen SK Rinteln 2', text: '6' }]
+    - [{ url: '?staffel=960&r=7#p4666x4662', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=960&r=4#p4666x4623', title: 'gegen SV Warmsen', text: 5½ }]
+    - [{ url: '?staffel=960&r=9#p4666x4545', title: 'gegen SK Wennigsen', text: '4' }]
+    - [{ url: '?staffel=960&r=1#p4666x4547', title: 'gegen SK Neustadt 2', text: 4½ }]
+    - [{ url: '?staffel=960&r=8#p4666x4515', title: 'gegen SK Stolzenau 2', text: '8' }]
+    - 12
+    - '43'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=4661', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=960&r=8#p4661x4647', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=960&r=3#p4661x4397', title: 'gegen WB Eilenriede 2', text: 3½ }]
+    - [{ url: '?staffel=960&r=2#p4661x4666', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=960&r=9#p4661x4659', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - [{ url: '?staffel=960&r=4#p4661x4662', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=960&r=1#p4661x4623', title: 'gegen SV Warmsen', text: 3½ }]
+    - [{ url: '?staffel=960&r=6#p4661x4545', title: 'gegen SK Wennigsen', text: 5½ }]
+    - [{ url: '?staffel=960&r=7#p4661x4547', title: 'gegen SK Neustadt 2', text: '7' }]
+    - [{ url: '?staffel=960&r=5#p4661x4515', title: 'gegen SK Stolzenau 2', text: '6' }]
+    - 12
+    - 42½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=4659', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=960&r=1#p4659x4647', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=960&r=4#p4659x4397', title: 'gegen WB Eilenriede 2', text: 3½ }]
+    - [{ url: '?staffel=960&r=3#p4659x4666', title: 'gegen TuS Wunstorf', text: '2' }]
+    - [{ url: '?staffel=960&r=9#p4659x4661', title: 'gegen SK Ricklingen 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=960&r=5#p4659x4662', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=960&r=2#p4659x4623', title: 'gegen SV Warmsen', text: '6' }]
+    - [{ url: '?staffel=960&r=7#p4659x4545', title: 'gegen SK Wennigsen', text: '5' }]
+    - [{ url: '?staffel=960&r=8#p4659x4547', title: 'gegen SK Neustadt 2', text: '5' }]
+    - [{ url: '?staffel=960&r=6#p4659x4515', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - 9
+    - '37'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Eldagsen/BM', url: '?mannschaft=4662', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=960&r=9#p4662x4647', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=960&r=8#p4662x4397', title: 'gegen WB Eilenriede 2', text: '3' }]
+    - [{ url: '?staffel=960&r=7#p4662x4666', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=960&r=4#p4662x4661', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=960&r=5#p4662x4659', title: 'gegen SK Rinteln 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=960&r=6#p4662x4623', title: 'gegen SV Warmsen', text: 2½ }]
+    - [{ url: '?staffel=960&r=2#p4662x4545', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=960&r=3#p4662x4547', title: 'gegen SK Neustadt 2', text: 5½ }]
+    - [{ url: '?staffel=960&r=1#p4662x4515', title: 'gegen SK Stolzenau 2', text: 4½ }]
+    - 9
+    - '35'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Warmsen', url: '?mannschaft=4623', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=960&r=3#p4623x4647', title: 'gegen Eystruper SK', text: ½ }]
+    - [{ url: '?staffel=960&r=5#p4623x4397', title: 'gegen WB Eilenriede 2', text: '5' }]
+    - [{ url: '?staffel=960&r=4#p4623x4666', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=960&r=1#p4623x4661', title: 'gegen SK Ricklingen 2', text: 4½ }]
+    - [{ url: '?staffel=960&r=2#p4623x4659', title: 'gegen SK Rinteln 2', text: '2' }]
+    - [{ url: '?staffel=960&r=6#p4623x4662', title: 'gegen SG Eldagsen/BM', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=960&r=8#p4623x4545', title: 'gegen SK Wennigsen', text: 3½ }]
+    - [{ url: '?staffel=960&r=9#p4623x4547', title: 'gegen SK Neustadt 2', text: 2½ }]
+    - [{ url: '?staffel=960&r=7#p4623x4515', title: 'gegen SK Stolzenau 2', text: '6' }]
+    - 8
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=4545', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=960&r=4#p4545x4647', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=960&r=1#p4545x4397', title: 'gegen WB Eilenriede 2', text: 3½ }]
+    - [{ url: '?staffel=960&r=9#p4545x4666', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=960&r=6#p4545x4661', title: 'gegen SK Ricklingen 2', text: 2½ }]
+    - [{ url: '?staffel=960&r=7#p4545x4659', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=960&r=2#p4545x4662', title: 'gegen SG Eldagsen/BM', text: 3½ }]
+    - [{ url: '?staffel=960&r=8#p4545x4623', title: 'gegen SV Warmsen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=960&r=5#p4545x4547', title: 'gegen SK Neustadt 2', text: 3½ }]
+    - [{ url: '?staffel=960&r=3#p4545x4515', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - 6
+    - 33½
+    - ''
+-
+    - '9.'
+    - { text: 'SK Neustadt 2', url: '?mannschaft=4547', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=960&r=6#p4547x4647', title: 'gegen Eystruper SK', text: 1½ }]
+    - [{ url: '?staffel=960&r=2#p4547x4397', title: 'gegen WB Eilenriede 2', text: 1½ }]
+    - [{ url: '?staffel=960&r=1#p4547x4666', title: 'gegen TuS Wunstorf', text: 3½ }]
+    - [{ url: '?staffel=960&r=7#p4547x4661', title: 'gegen SK Ricklingen 2', text: '1' }]
+    - [{ url: '?staffel=960&r=8#p4547x4659', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=960&r=3#p4547x4662', title: 'gegen SG Eldagsen/BM', text: 2½ }]
+    - [{ url: '?staffel=960&r=9#p4547x4623', title: 'gegen SV Warmsen', text: 5½ }]
+    - [{ url: '?staffel=960&r=5#p4547x4545', title: 'gegen SK Wennigsen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=960&r=4#p4547x4515', title: 'gegen SK Stolzenau 2', text: '4' }]
+    - 5
+    - '27'
+    - ''
+-
+    - '10.'
+    - { text: 'SK Stolzenau 2', url: '?mannschaft=4515', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=960&r=2#p4515x4647', title: 'gegen Eystruper SK', text: 3½ }]
+    - [{ url: '?staffel=960&r=9#p4515x4397', title: 'gegen WB Eilenriede 2', text: '0' }]
+    - [{ url: '?staffel=960&r=8#p4515x4666', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=960&r=5#p4515x4661', title: 'gegen SK Ricklingen 2', text: '2' }]
+    - [{ url: '?staffel=960&r=6#p4515x4659', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=960&r=1#p4515x4662', title: 'gegen SG Eldagsen/BM', text: 3½ }]
+    - [{ url: '?staffel=960&r=7#p4515x4623', title: 'gegen SV Warmsen', text: '2' }]
+    - [{ url: '?staffel=960&r=3#p4515x4545', title: 'gegen SK Wennigsen', text: '3' }]
+    - [{ url: '?staffel=960&r=4#p4515x4547', title: 'gegen SK Neustadt 2', text: '4' }]
+    - xxx
+    - 1
+    - '21'
+    - ''

@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Application;
 
+use Doctrine\ORM\EntityNotFoundException;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Division;
 use SED_Cache;
@@ -139,7 +140,7 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testRelegation() {
-    $division = $this->division('bezirk3-1  920', 'kreisliga');
+    $division = $this->division('bezirk3-1920', 'kreisliga');
     $ranking = $this->legacyRanking($division, 11);
     $this->assertEquals("aufsteigerRelegation", $ranking[3][15]);
     $this->assertEquals("absteigerRelegation", $ranking[11][15]);
@@ -166,22 +167,20 @@ class RankingTest extends LeagueTestCase
     $this->assertMatchesSnapshot($ranking);
   }
 
-
-  /**
-   * Tests
-   * - Test all divisions (specify division ID?)
-   */
-
-  /*
-  #[DataProvider('rankingProvider')]
-  public function testRanking(string $league, string $division, int $round): void {
-    $league = $this->leagueRepository->findByPathOrPrefix($league);
-    $division = $league->divisionByPath($division);
-    $ranking = $this->legacyRanking($division, $round);
-    Encoding::deep_utf8_encode($ranking);
-    $this->assertMatchesSnapshot($ranking);
+  public function testAllDivisions() {
+    // TODO: Probably remove this test altogether after ranking is rewritten.
+    $this->markTestSkipped('This is an expensive test.');
+    $divisions = $this->em->getRepository(Division::class)->findBy([], ['id' => 'ASC']);
+    foreach ($divisions as $division) {
+      try {
+        if (!$division->league->id) continue;
+      } catch (EntityNotFoundException $e) {
+        continue;
+      }
+      $ranking = $this->legacyRanking($division, 99);
+      $this->assertMatchesSnapshot($ranking);
+    }
   }
-  */
 
   private function legacyRanking(Division $div, int $round): array {
     $this->legacySystem->initialize();
@@ -206,14 +205,4 @@ class RankingTest extends LeagueTestCase
     $league = $this->leagueRepository->findByPathOrPrefix($leaguePath);
     return $league->divisionByPath($divisionPath);
   }
-
-  /*S
-  public static function rankingProvider(): array {
-    return [
-      ['nsv-2526', 'landesliga-sued', 3],
-      ['nsv-2526', 'landesliga-sued', 4],
-      ['nsj-1819', 'jugendliga-niedersachsen', 5],
-    ];
-  }
-  */
 }

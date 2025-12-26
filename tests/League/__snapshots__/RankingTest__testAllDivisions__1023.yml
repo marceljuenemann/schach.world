@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Uetze-Hänigsen 2', url: '?mannschaft=8322', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1873&r=2#p8322x8453', title: 'gegen SD Isernhagen 2', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1873&r=3#p8322x8464', title: 'gegen SC Hämelerwald', text: '6' }]
+    - [{ url: '?staffel=1873&r=1#p8322x8474', title: 'gegen SV Laatzen 3', text: 6½ }]
+    - 6
+    - 17½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Döhren-Gleidingen', url: '?mannschaft=8457', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1873&r=1#p8457x8538', title: 'gegen SK Lehrte 7', text: 5½ }]
+    - {  }
+    - [{ url: '?staffel=1873&r=2#p8457x8472', title: 'gegen SK Anderten 2', text: 6½ }]
+    - {  }
+    - [{ url: '?staffel=1873&r=3#p8457x8474', title: 'gegen SV Laatzen 3', text: '5' }]
+    - 6
+    - '17'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SK Lehrte 7', url: '?mannschaft=8538', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1873&r=1#p8538x8457', title: 'gegen SG Döhren-Gleidingen', text: 2½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1873&r=3#p8538x8472', title: 'gegen SK Anderten 2', text: 3½ }]
+    - [{ url: '?staffel=1873&r=2#p8538x8464', title: 'gegen SC Hämelerwald', text: 4½ }]
+    - {  }
+    - 2
+    - 10½
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=8453', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1873&r=2#p8453x8322', title: 'gegen SC Uetze-Hänigsen 2', text: '3' }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1873&r=1#p8453x8472', title: 'gegen SK Anderten 2', text: 5½ }]
+    - {  }
+    - {  }
+    - 2
+    - 8½
+    - absteigerRelegation
+-
+    - '5.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=8472', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1873&r=2#p8472x8457', title: 'gegen SG Döhren-Gleidingen', text: 1½ }]
+    - [{ url: '?staffel=1873&r=3#p8472x8538', title: 'gegen SK Lehrte 7', text: 4½ }]
+    - [{ url: '?staffel=1873&r=1#p8472x8453', title: 'gegen SD Isernhagen 2', text: 2½ }]
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - 8½
+    - absteiger
+-
+    - '6.'
+    - { text: 'SC Hämelerwald', url: '?mannschaft=8464', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1873&r=3#p8464x8322', title: 'gegen SC Uetze-Hänigsen 2', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1873&r=2#p8464x8538', title: 'gegen SK Lehrte 7', text: 3½ }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - 5½
+    - absteiger
+-
+    - '7.'
+    - { text: 'SV Laatzen 3', url: '?mannschaft=8474', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1873&r=1#p8474x8322', title: 'gegen SC Uetze-Hänigsen 2', text: 1½ }]
+    - [{ url: '?staffel=1873&r=3#p8474x8457', title: 'gegen SG Döhren-Gleidingen', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - 4½
+    - absteiger

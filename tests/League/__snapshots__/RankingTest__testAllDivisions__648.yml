@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Allianz Leipzig', url: '?mannschaft=5509', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1396&r=6#p5509x5507', title: 'gegen SC Zeulenroda', text: '4' }]
+    - [{ url: '?staffel=1396&r=5#p5509x5502', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=1396&r=3#p5509x5508', title: 'gegen Leipzig-Lindenau', text: 3½ }]
+    - [{ url: '?staffel=1396&r=4#p5509x5503', title: 'gegen SG Leipzig', text: '4' }]
+    - [{ url: '?staffel=1396&r=2#p5509x5505', title: 'gegen SV Niederwiesa', text: '4' }]
+    - [{ url: '?staffel=1396&r=1#p5509x5506', title: 'gegen USV TU Dresden', text: 5½ }]
+    - [{ url: '?staffel=1396&r=7#p5509x5504', title: 'gegen MTV Saalfeld', text: 4½ }]
+    - 13
+    - 28½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Zeulenroda', url: '?mannschaft=5507', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1396&r=6#p5507x5509', title: 'gegen SV Allianz Leipzig', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1396&r=7#p5507x5502', title: 'gegen SG Löberitz', text: 3½ }]
+    - [{ url: '?staffel=1396&r=1#p5507x5508', title: 'gegen Leipzig-Lindenau', text: 4½ }]
+    - [{ url: '?staffel=1396&r=2#p5507x5503', title: 'gegen SG Leipzig', text: 4½ }]
+    - [{ url: '?staffel=1396&r=4#p5507x5505', title: 'gegen SV Niederwiesa', text: 3½ }]
+    - [{ url: '?staffel=1396&r=3#p5507x5506', title: 'gegen USV TU Dresden', text: 3½ }]
+    - [{ url: '?staffel=1396&r=5#p5507x5504', title: 'gegen MTV Saalfeld', text: '5' }]
+    - 12
+    - 26½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Löberitz', url: '?mannschaft=5502', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1396&r=5#p5502x5509', title: 'gegen SV Allianz Leipzig', text: '3' }]
+    - [{ url: '?staffel=1396&r=7#p5502x5507', title: 'gegen SC Zeulenroda', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1396&r=4#p5502x5508', title: 'gegen Leipzig-Lindenau', text: 2½ }]
+    - [{ url: '?staffel=1396&r=3#p5502x5503', title: 'gegen SG Leipzig', text: 3½ }]
+    - [{ url: '?staffel=1396&r=1#p5502x5505', title: 'gegen SV Niederwiesa', text: '4' }]
+    - [{ url: '?staffel=1396&r=2#p5502x5506', title: 'gegen USV TU Dresden', text: 5½ }]
+    - [{ url: '?staffel=1396&r=6#p5502x5504', title: 'gegen MTV Saalfeld', text: '5' }]
+    - 9
+    - '26'
+    - ''
+-
+    - '4.'
+    - { text: Leipzig-Lindenau, url: '?mannschaft=5508', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1396&r=3#p5508x5509', title: 'gegen SV Allianz Leipzig', text: 2½ }]
+    - [{ url: '?staffel=1396&r=1#p5508x5507', title: 'gegen SC Zeulenroda', text: 1½ }]
+    - [{ url: '?staffel=1396&r=4#p5508x5502', title: 'gegen SG Löberitz', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1396&r=5#p5508x5503', title: 'gegen SG Leipzig', text: '2' }]
+    - [{ url: '?staffel=1396&r=7#p5508x5505', title: 'gegen SV Niederwiesa', text: '4' }]
+    - [{ url: '?staffel=1396&r=6#p5508x5506', title: 'gegen USV TU Dresden', text: 5½ }]
+    - [{ url: '?staffel=1396&r=2#p5508x5504', title: 'gegen MTV Saalfeld', text: 4½ }]
+    - 8
+    - 23½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Leipzig', url: '?mannschaft=5503', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1396&r=4#p5503x5509', title: 'gegen SV Allianz Leipzig', text: '2' }]
+    - [{ url: '?staffel=1396&r=2#p5503x5507', title: 'gegen SC Zeulenroda', text: 1½ }]
+    - [{ url: '?staffel=1396&r=3#p5503x5502', title: 'gegen SG Löberitz', text: 2½ }]
+    - [{ url: '?staffel=1396&r=5#p5503x5508', title: 'gegen Leipzig-Lindenau', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1396&r=6#p5503x5505', title: 'gegen SV Niederwiesa', text: '4' }]
+    - [{ url: '?staffel=1396&r=7#p5503x5506', title: 'gegen USV TU Dresden', text: 5½ }]
+    - [{ url: '?staffel=1396&r=1#p5503x5504', title: 'gegen MTV Saalfeld', text: '3' }]
+    - 7
+    - 22½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Niederwiesa', url: '?mannschaft=5505', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1396&r=2#p5505x5509', title: 'gegen SV Allianz Leipzig', text: '2' }]
+    - [{ url: '?staffel=1396&r=4#p5505x5507', title: 'gegen SC Zeulenroda', text: 2½ }]
+    - [{ url: '?staffel=1396&r=1#p5505x5502', title: 'gegen SG Löberitz', text: '2' }]
+    - [{ url: '?staffel=1396&r=7#p5505x5508', title: 'gegen Leipzig-Lindenau', text: '2' }]
+    - [{ url: '?staffel=1396&r=6#p5505x5503', title: 'gegen SG Leipzig', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1396&r=5#p5505x5506', title: 'gegen USV TU Dresden', text: '5' }]
+    - [{ url: '?staffel=1396&r=3#p5505x5504', title: 'gegen MTV Saalfeld', text: '4' }]
+    - 4
+    - 19½
+    - ''
+-
+    - '7.'
+    - { text: 'USV TU Dresden', url: '?mannschaft=5506', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1396&r=1#p5506x5509', title: 'gegen SV Allianz Leipzig', text: ½ }]
+    - [{ url: '?staffel=1396&r=3#p5506x5507', title: 'gegen SC Zeulenroda', text: 2½ }]
+    - [{ url: '?staffel=1396&r=2#p5506x5502', title: 'gegen SG Löberitz', text: ½ }]
+    - [{ url: '?staffel=1396&r=6#p5506x5508', title: 'gegen Leipzig-Lindenau', text: ½ }]
+    - [{ url: '?staffel=1396&r=7#p5506x5503', title: 'gegen SG Leipzig', text: ½ }]
+    - [{ url: '?staffel=1396&r=5#p5506x5505', title: 'gegen SV Niederwiesa', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1396&r=4#p5506x5504', title: 'gegen MTV Saalfeld', text: 3½ }]
+    - 2
+    - '9'
+    - absteiger
+-
+    - '8.'
+    - { text: 'MTV Saalfeld', url: '?mannschaft=5504', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1396&r=7#p5504x5509', title: 'gegen SV Allianz Leipzig', text: 1½ }]
+    - [{ url: '?staffel=1396&r=5#p5504x5507', title: 'gegen SC Zeulenroda', text: '1' }]
+    - [{ url: '?staffel=1396&r=6#p5504x5502', title: 'gegen SG Löberitz', text: '1' }]
+    - [{ url: '?staffel=1396&r=2#p5504x5508', title: 'gegen Leipzig-Lindenau', text: 1½ }]
+    - [{ url: '?staffel=1396&r=1#p5504x5503', title: 'gegen SG Leipzig', text: '3' }]
+    - [{ url: '?staffel=1396&r=3#p5504x5505', title: 'gegen SV Niederwiesa', text: '2' }]
+    - [{ url: '?staffel=1396&r=4#p5504x5506', title: 'gegen USV TU Dresden', text: 2½ }]
+    - xxx
+    - 1
+    - 12½
+    - absteiger

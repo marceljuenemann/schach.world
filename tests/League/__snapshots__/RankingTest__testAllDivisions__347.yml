@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Königssprin. BS', url: '?mannschaft=3628', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=788&r=8#p3628x3630', title: 'gegen SV Gifhorn', text: 3½ }]
+    - [{ url: '?staffel=788&r=3#p3628x3569', title: 'gegen Hamelner SV 2', text: '5' }]
+    - [{ url: '?staffel=788&r=9#p3628x3627', title: 'gegen Peiner SV', text: '4' }]
+    - [{ url: '?staffel=788&r=4#p3628x3465', title: 'gegen ESV Göttingen', text: 6½ }]
+    - [{ url: '?staffel=788&r=7#p3628x3629', title: 'gegen Bad Salzdetfurth', text: '6' }]
+    - [{ url: '?staffel=788&r=2#p3628x3626', title: 'gegen Plesse Bovenden', text: '5' }]
+    - [{ url: '?staffel=788&r=1#p3628x3631', title: 'gegen Tempo Göttingen 2', text: '6' }]
+    - [{ url: '?staffel=788&r=5#p3628x3393', title: 'gegen SVG Salzgitter 2', text: '6' }]
+    - [{ url: '?staffel=788&r=6#p3628x3587', title: 'gegen Wolfenbüttel 2', text: 5½ }]
+    - 15
+    - 47½
+    - ''
+-
+    - '2.'
+    - { text: 'SV Gifhorn', url: '?mannschaft=3630', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=788&r=8#p3630x3628', title: 'gegen Königssprin. BS', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=788&r=5#p3630x3569', title: 'gegen Hamelner SV 2', text: '3' }]
+    - [{ url: '?staffel=788&r=1#p3630x3627', title: 'gegen Peiner SV', text: '6' }]
+    - [{ url: '?staffel=788&r=3#p3630x3465', title: 'gegen ESV Göttingen', text: '4' }]
+    - [{ url: '?staffel=788&r=6#p3630x3629', title: 'gegen Bad Salzdetfurth', text: 4½ }]
+    - [{ url: '?staffel=788&r=4#p3630x3626', title: 'gegen Plesse Bovenden', text: 5½ }]
+    - [{ url: '?staffel=788&r=2#p3630x3631', title: 'gegen Tempo Göttingen 2', text: '5' }]
+    - [{ url: '?staffel=788&r=7#p3630x3393', title: 'gegen SVG Salzgitter 2', text: 4½ }]
+    - [{ url: '?staffel=788&r=9#p3630x3587', title: 'gegen Wolfenbüttel 2', text: 6½ }]
+    - 15
+    - 43½
+    - ''
+-
+    - '3.'
+    - { text: 'Hamelner SV 2', url: '?mannschaft=3569', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=788&r=3#p3569x3628', title: 'gegen Königssprin. BS', text: '3' }]
+    - [{ url: '?staffel=788&r=5#p3569x3630', title: 'gegen SV Gifhorn', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=788&r=6#p3569x3627', title: 'gegen Peiner SV', text: 4½ }]
+    - [{ url: '?staffel=788&r=9#p3569x3465', title: 'gegen ESV Göttingen', text: '6' }]
+    - [{ url: '?staffel=788&r=4#p3569x3629', title: 'gegen Bad Salzdetfurth', text: '5' }]
+    - [{ url: '?staffel=788&r=8#p3569x3626', title: 'gegen Plesse Bovenden', text: 3½ }]
+    - [{ url: '?staffel=788&r=7#p3569x3631', title: 'gegen Tempo Göttingen 2', text: 5½ }]
+    - [{ url: '?staffel=788&r=1#p3569x3393', title: 'gegen SVG Salzgitter 2', text: '5' }]
+    - [{ url: '?staffel=788&r=2#p3569x3587', title: 'gegen Wolfenbüttel 2', text: '8' }]
+    - 14
+    - 45½
+    - ''
+-
+    - '4.'
+    - { text: 'Peiner SV', url: '?mannschaft=3627', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=788&r=9#p3627x3628', title: 'gegen Königssprin. BS', text: '4' }]
+    - [{ url: '?staffel=788&r=1#p3627x3630', title: 'gegen SV Gifhorn', text: '2' }]
+    - [{ url: '?staffel=788&r=6#p3627x3569', title: 'gegen Hamelner SV 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=788&r=2#p3627x3465', title: 'gegen ESV Göttingen', text: '6' }]
+    - [{ url: '?staffel=788&r=8#p3627x3629', title: 'gegen Bad Salzdetfurth', text: '3' }]
+    - [{ url: '?staffel=788&r=5#p3627x3626', title: 'gegen Plesse Bovenden', text: '6' }]
+    - [{ url: '?staffel=788&r=3#p3627x3631', title: 'gegen Tempo Göttingen 2', text: '5' }]
+    - [{ url: '?staffel=788&r=4#p3627x3393', title: 'gegen SVG Salzgitter 2', text: '5' }]
+    - [{ url: '?staffel=788&r=7#p3627x3587', title: 'gegen Wolfenbüttel 2', text: '3' }]
+    - 9
+    - 37½
+    - ''
+-
+    - '5.'
+    - { text: 'ESV Göttingen', url: '?mannschaft=3465', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=788&r=4#p3465x3628', title: 'gegen Königssprin. BS', text: 1½ }]
+    - [{ url: '?staffel=788&r=3#p3465x3630', title: 'gegen SV Gifhorn', text: '4' }]
+    - [{ url: '?staffel=788&r=9#p3465x3569', title: 'gegen Hamelner SV 2', text: '2' }]
+    - [{ url: '?staffel=788&r=2#p3465x3627', title: 'gegen Peiner SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=788&r=1#p3465x3629', title: 'gegen Bad Salzdetfurth', text: 5½ }]
+    - [{ url: '?staffel=788&r=7#p3465x3626', title: 'gegen Plesse Bovenden', text: 4½ }]
+    - [{ url: '?staffel=788&r=5#p3465x3631', title: 'gegen Tempo Göttingen 2', text: 5½ }]
+    - [{ url: '?staffel=788&r=6#p3465x3393', title: 'gegen SVG Salzgitter 2', text: '4' }]
+    - [{ url: '?staffel=788&r=8#p3465x3587', title: 'gegen Wolfenbüttel 2', text: '4' }]
+    - 9
+    - '33'
+    - ''
+-
+    - '6.'
+    - { text: 'Bad Salzdetfurth', url: '?mannschaft=3629', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=788&r=7#p3629x3628', title: 'gegen Königssprin. BS', text: '2' }]
+    - [{ url: '?staffel=788&r=6#p3629x3630', title: 'gegen SV Gifhorn', text: 3½ }]
+    - [{ url: '?staffel=788&r=4#p3629x3569', title: 'gegen Hamelner SV 2', text: '3' }]
+    - [{ url: '?staffel=788&r=8#p3629x3627', title: 'gegen Peiner SV', text: '5' }]
+    - [{ url: '?staffel=788&r=1#p3629x3465', title: 'gegen ESV Göttingen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=788&r=3#p3629x3626', title: 'gegen Plesse Bovenden', text: '4' }]
+    - [{ url: '?staffel=788&r=9#p3629x3631', title: 'gegen Tempo Göttingen 2', text: '6' }]
+    - [{ url: '?staffel=788&r=2#p3629x3393', title: 'gegen SVG Salzgitter 2', text: 3½ }]
+    - [{ url: '?staffel=788&r=5#p3629x3587', title: 'gegen Wolfenbüttel 2', text: 4½ }]
+    - 7
+    - '34'
+    - ''
+-
+    - '7.'
+    - { text: 'Plesse Bovenden', url: '?mannschaft=3626', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=788&r=2#p3626x3628', title: 'gegen Königssprin. BS', text: '3' }]
+    - [{ url: '?staffel=788&r=4#p3626x3630', title: 'gegen SV Gifhorn', text: 2½ }]
+    - [{ url: '?staffel=788&r=8#p3626x3569', title: 'gegen Hamelner SV 2', text: 4½ }]
+    - [{ url: '?staffel=788&r=5#p3626x3627', title: 'gegen Peiner SV', text: '2' }]
+    - [{ url: '?staffel=788&r=7#p3626x3465', title: 'gegen ESV Göttingen', text: 3½ }]
+    - [{ url: '?staffel=788&r=3#p3626x3629', title: 'gegen Bad Salzdetfurth', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=788&r=6#p3626x3631', title: 'gegen Tempo Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=788&r=9#p3626x3393', title: 'gegen SVG Salzgitter 2', text: 4½ }]
+    - [{ url: '?staffel=788&r=1#p3626x3587', title: 'gegen Wolfenbüttel 2', text: '5' }]
+    - 7
+    - '31'
+    - ''
+-
+    - '8.'
+    - { text: 'Tempo Göttingen 2', url: '?mannschaft=3631', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=788&r=1#p3631x3628', title: 'gegen Königssprin. BS', text: '2' }]
+    - [{ url: '?staffel=788&r=2#p3631x3630', title: 'gegen SV Gifhorn', text: '3' }]
+    - [{ url: '?staffel=788&r=7#p3631x3569', title: 'gegen Hamelner SV 2', text: 2½ }]
+    - [{ url: '?staffel=788&r=3#p3631x3627', title: 'gegen Peiner SV', text: '3' }]
+    - [{ url: '?staffel=788&r=5#p3631x3465', title: 'gegen ESV Göttingen', text: 2½ }]
+    - [{ url: '?staffel=788&r=9#p3631x3629', title: 'gegen Bad Salzdetfurth', text: '2' }]
+    - [{ url: '?staffel=788&r=6#p3631x3626', title: 'gegen Plesse Bovenden', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=788&r=8#p3631x3393', title: 'gegen SVG Salzgitter 2', text: 5½ }]
+    - [{ url: '?staffel=788&r=4#p3631x3587', title: 'gegen Wolfenbüttel 2', text: 4½ }]
+    - 6
+    - '31'
+    - ''
+-
+    - '9.'
+    - { text: 'SVG Salzgitter 2', url: '?mannschaft=3393', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=788&r=5#p3393x3628', title: 'gegen Königssprin. BS', text: '2' }]
+    - [{ url: '?staffel=788&r=7#p3393x3630', title: 'gegen SV Gifhorn', text: 3½ }]
+    - [{ url: '?staffel=788&r=1#p3393x3569', title: 'gegen Hamelner SV 2', text: '3' }]
+    - [{ url: '?staffel=788&r=4#p3393x3627', title: 'gegen Peiner SV', text: '3' }]
+    - [{ url: '?staffel=788&r=6#p3393x3465', title: 'gegen ESV Göttingen', text: '4' }]
+    - [{ url: '?staffel=788&r=2#p3393x3629', title: 'gegen Bad Salzdetfurth', text: 4½ }]
+    - [{ url: '?staffel=788&r=9#p3393x3626', title: 'gegen Plesse Bovenden', text: 3½ }]
+    - [{ url: '?staffel=788&r=8#p3393x3631', title: 'gegen Tempo Göttingen 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=788&r=3#p3393x3587', title: 'gegen Wolfenbüttel 2', text: '4' }]
+    - 4
+    - '30'
+    - ''
+-
+    - '10.'
+    - { text: 'Wolfenbüttel 2', url: '?mannschaft=3587', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=788&r=6#p3587x3628', title: 'gegen Königssprin. BS', text: 2½ }]
+    - [{ url: '?staffel=788&r=9#p3587x3630', title: 'gegen SV Gifhorn', text: 1½ }]
+    - [{ url: '?staffel=788&r=2#p3587x3569', title: 'gegen Hamelner SV 2', text: '0' }]
+    - [{ url: '?staffel=788&r=7#p3587x3627', title: 'gegen Peiner SV', text: '5' }]
+    - [{ url: '?staffel=788&r=8#p3587x3465', title: 'gegen ESV Göttingen', text: '4' }]
+    - [{ url: '?staffel=788&r=5#p3587x3629', title: 'gegen Bad Salzdetfurth', text: 3½ }]
+    - [{ url: '?staffel=788&r=1#p3587x3626', title: 'gegen Plesse Bovenden', text: '3' }]
+    - [{ url: '?staffel=788&r=4#p3587x3631', title: 'gegen Tempo Göttingen 2', text: 3½ }]
+    - [{ url: '?staffel=788&r=3#p3587x3393', title: 'gegen SVG Salzgitter 2', text: '4' }]
+    - xxx
+    - 4
+    - '27'
+    - ''

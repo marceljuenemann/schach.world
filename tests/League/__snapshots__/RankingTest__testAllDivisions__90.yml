@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=1163', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=503&r=6#p1163x1156', title: 'gegen SK Meppen', text: 3½ }]
+    - [{ url: '?staffel=503&r=8#p1163x1158', title: 'gegen SV Osnabrück', text: 5½ }]
+    - [{ url: '?staffel=503&r=7#p1163x1160', title: 'gegen Nordhorn-Blanke 2', text: '6' }]
+    - [{ url: '?staffel=503&r=5#p1163x1164', title: 'gegen SCSS Bad Zw.ahn', text: 7½ }]
+    - [{ url: '?staffel=503&r=3#p1163x1162', title: 'gegen SK Rastede', text: 4½ }]
+    - [{ url: '?staffel=503&r=2#p1163x1157', title: 'gegen SC Melle 2', text: 6½ }]
+    - [{ url: '?staffel=503&r=1#p1163x1161', title: 'gegen IGM Osnabrück', text: '5' }]
+    - [{ url: '?staffel=503&r=4#p1163x1155', title: 'gegen SK Varel', text: '4' }]
+    - [{ url: '?staffel=503&r=9#p1163x1159', title: 'gegen Kaponier Vechta', text: '8' }]
+    - 15
+    - 50½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Meppen', url: '?mannschaft=1156', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=503&r=6#p1156x1163', title: 'gegen SG Oesede-Gmht.', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=503&r=3#p1156x1158', title: 'gegen SV Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=503&r=1#p1156x1160', title: 'gegen Nordhorn-Blanke 2', text: '5' }]
+    - [{ url: '?staffel=503&r=9#p1156x1164', title: 'gegen SCSS Bad Zw.ahn', text: 4½ }]
+    - [{ url: '?staffel=503&r=7#p1156x1162', title: 'gegen SK Rastede', text: '5' }]
+    - [{ url: '?staffel=503&r=5#p1156x1157', title: 'gegen SC Melle 2', text: '5' }]
+    - [{ url: '?staffel=503&r=2#p1156x1161', title: 'gegen IGM Osnabrück', text: '5' }]
+    - [{ url: '?staffel=503&r=8#p1156x1155', title: 'gegen SK Varel', text: '5' }]
+    - [{ url: '?staffel=503&r=4#p1156x1159', title: 'gegen Kaponier Vechta', text: '4' }]
+    - 15
+    - 40½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Osnabrück', url: '?mannschaft=1158', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=503&r=8#p1158x1163', title: 'gegen SG Oesede-Gmht.', text: 2½ }]
+    - [{ url: '?staffel=503&r=3#p1158x1156', title: 'gegen SK Meppen', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=503&r=9#p1158x1160', title: 'gegen Nordhorn-Blanke 2', text: '4' }]
+    - [{ url: '?staffel=503&r=2#p1158x1164', title: 'gegen SCSS Bad Zw.ahn', text: '6' }]
+    - [{ url: '?staffel=503&r=4#p1158x1162', title: 'gegen SK Rastede', text: 4½ }]
+    - [{ url: '?staffel=503&r=6#p1158x1157', title: 'gegen SC Melle 2', text: 3½ }]
+    - [{ url: '?staffel=503&r=5#p1158x1161', title: 'gegen IGM Osnabrück', text: 5½ }]
+    - [{ url: '?staffel=503&r=7#p1158x1155', title: 'gegen SK Varel', text: '5' }]
+    - [{ url: '?staffel=503&r=1#p1158x1159', title: 'gegen Kaponier Vechta', text: '5' }]
+    - 13
+    - 41½
+    - ''
+-
+    - '4.'
+    - { text: 'Nordhorn-Blanke 2', url: '?mannschaft=1160', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=503&r=7#p1160x1163', title: 'gegen SG Oesede-Gmht.', text: '2' }]
+    - [{ url: '?staffel=503&r=1#p1160x1156', title: 'gegen SK Meppen', text: '3' }]
+    - [{ url: '?staffel=503&r=9#p1160x1158', title: 'gegen SV Osnabrück', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=503&r=8#p1160x1164', title: 'gegen SCSS Bad Zw.ahn', text: 2½ }]
+    - [{ url: '?staffel=503&r=6#p1160x1162', title: 'gegen SK Rastede', text: '5' }]
+    - [{ url: '?staffel=503&r=3#p1160x1157', title: 'gegen SC Melle 2', text: '6' }]
+    - [{ url: '?staffel=503&r=4#p1160x1161', title: 'gegen IGM Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=503&r=5#p1160x1155', title: 'gegen SK Varel', text: '5' }]
+    - [{ url: '?staffel=503&r=2#p1160x1159', title: 'gegen Kaponier Vechta', text: 4½ }]
+    - 11
+    - 36½
+    - ''
+-
+    - '5.'
+    - { text: 'SCSS Bad Zw.ahn', url: '?mannschaft=1164', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=503&r=5#p1164x1163', title: 'gegen SG Oesede-Gmht.', text: ½ }]
+    - [{ url: '?staffel=503&r=9#p1164x1156', title: 'gegen SK Meppen', text: 3½ }]
+    - [{ url: '?staffel=503&r=2#p1164x1158', title: 'gegen SV Osnabrück', text: '2' }]
+    - [{ url: '?staffel=503&r=8#p1164x1160', title: 'gegen Nordhorn-Blanke 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=503&r=1#p1164x1162', title: 'gegen SK Rastede', text: 1½ }]
+    - [{ url: '?staffel=503&r=4#p1164x1157', title: 'gegen SC Melle 2', text: 4½ }]
+    - [{ url: '?staffel=503&r=3#p1164x1161', title: 'gegen IGM Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=503&r=6#p1164x1155', title: 'gegen SK Varel', text: '4' }]
+    - [{ url: '?staffel=503&r=7#p1164x1159', title: 'gegen Kaponier Vechta', text: 6½ }]
+    - 9
+    - 32½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Rastede', url: '?mannschaft=1162', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=503&r=3#p1162x1163', title: 'gegen SG Oesede-Gmht.', text: 3½ }]
+    - [{ url: '?staffel=503&r=7#p1162x1156', title: 'gegen SK Meppen', text: '3' }]
+    - [{ url: '?staffel=503&r=4#p1162x1158', title: 'gegen SV Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=503&r=6#p1162x1160', title: 'gegen Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=503&r=1#p1162x1164', title: 'gegen SCSS Bad Zw.ahn', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=503&r=9#p1162x1157', title: 'gegen SC Melle 2', text: '6' }]
+    - [{ url: '?staffel=503&r=8#p1162x1161', title: 'gegen IGM Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=503&r=2#p1162x1155', title: 'gegen SK Varel', text: '6' }]
+    - [{ url: '?staffel=503&r=5#p1162x1159', title: 'gegen Kaponier Vechta', text: 4½ }]
+    - 8
+    - 39½
+    - ''
+-
+    - '7.'
+    - { text: 'SC Melle 2', url: '?mannschaft=1157', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=503&r=2#p1157x1163', title: 'gegen SG Oesede-Gmht.', text: 1½ }]
+    - [{ url: '?staffel=503&r=5#p1157x1156', title: 'gegen SK Meppen', text: '3' }]
+    - [{ url: '?staffel=503&r=6#p1157x1158', title: 'gegen SV Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=503&r=3#p1157x1160', title: 'gegen Nordhorn-Blanke 2', text: '2' }]
+    - [{ url: '?staffel=503&r=4#p1157x1164', title: 'gegen SCSS Bad Zw.ahn', text: 3½ }]
+    - [{ url: '?staffel=503&r=9#p1157x1162', title: 'gegen SK Rastede', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=503&r=7#p1157x1161', title: 'gegen IGM Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=503&r=1#p1157x1155', title: 'gegen SK Varel', text: '5' }]
+    - [{ url: '?staffel=503&r=8#p1157x1159', title: 'gegen Kaponier Vechta', text: '5' }]
+    - 8
+    - '31'
+    - ''
+-
+    - '8.'
+    - { text: 'IGM Osnabrück', url: '?mannschaft=1161', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=503&r=1#p1161x1163', title: 'gegen SG Oesede-Gmht.', text: '3' }]
+    - [{ url: '?staffel=503&r=2#p1161x1156', title: 'gegen SK Meppen', text: '3' }]
+    - [{ url: '?staffel=503&r=5#p1161x1158', title: 'gegen SV Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=503&r=4#p1161x1160', title: 'gegen Nordhorn-Blanke 2', text: 3½ }]
+    - [{ url: '?staffel=503&r=3#p1161x1164', title: 'gegen SCSS Bad Zw.ahn', text: 3½ }]
+    - [{ url: '?staffel=503&r=8#p1161x1162', title: 'gegen SK Rastede', text: 4½ }]
+    - [{ url: '?staffel=503&r=7#p1161x1157', title: 'gegen SC Melle 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=503&r=9#p1161x1155', title: 'gegen SK Varel', text: '5' }]
+    - [{ url: '?staffel=503&r=6#p1161x1159', title: 'gegen Kaponier Vechta', text: 5½ }]
+    - 6
+    - '34'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Varel', url: '?mannschaft=1155', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=503&r=4#p1155x1163', title: 'gegen SG Oesede-Gmht.', text: '4' }]
+    - [{ url: '?staffel=503&r=8#p1155x1156', title: 'gegen SK Meppen', text: '3' }]
+    - [{ url: '?staffel=503&r=7#p1155x1158', title: 'gegen SV Osnabrück', text: '3' }]
+    - [{ url: '?staffel=503&r=5#p1155x1160', title: 'gegen Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=503&r=6#p1155x1164', title: 'gegen SCSS Bad Zw.ahn', text: '4' }]
+    - [{ url: '?staffel=503&r=2#p1155x1162', title: 'gegen SK Rastede', text: '2' }]
+    - [{ url: '?staffel=503&r=1#p1155x1157', title: 'gegen SC Melle 2', text: '3' }]
+    - [{ url: '?staffel=503&r=9#p1155x1161', title: 'gegen IGM Osnabrück', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=503&r=3#p1155x1159', title: 'gegen Kaponier Vechta', text: 4½ }]
+    - 4
+    - 29½
+    - ''
+-
+    - '10.'
+    - { text: 'Kaponier Vechta', url: '?mannschaft=1159', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=503&r=9#p1159x1163', title: 'gegen SG Oesede-Gmht.', text: '0' }]
+    - [{ url: '?staffel=503&r=4#p1159x1156', title: 'gegen SK Meppen', text: '4' }]
+    - [{ url: '?staffel=503&r=1#p1159x1158', title: 'gegen SV Osnabrück', text: '3' }]
+    - [{ url: '?staffel=503&r=2#p1159x1160', title: 'gegen Nordhorn-Blanke 2', text: 3½ }]
+    - [{ url: '?staffel=503&r=7#p1159x1164', title: 'gegen SCSS Bad Zw.ahn', text: 1½ }]
+    - [{ url: '?staffel=503&r=5#p1159x1162', title: 'gegen SK Rastede', text: 3½ }]
+    - [{ url: '?staffel=503&r=8#p1159x1157', title: 'gegen SC Melle 2', text: '3' }]
+    - [{ url: '?staffel=503&r=6#p1159x1161', title: 'gegen IGM Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=503&r=3#p1159x1155', title: 'gegen SK Varel', text: 3½ }]
+    - xxx
+    - 1
+    - 24½
+    - ''

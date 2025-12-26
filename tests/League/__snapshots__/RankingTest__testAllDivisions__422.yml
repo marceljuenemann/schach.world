@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=4255', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=884&r=1#p4255x4225', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=884&r=2#p4255x4286', title: 'gegen SK Lehrte 1919 eV 2', text: '4' }]
+    - [{ url: '?staffel=884&r=5#p4255x4143', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=884&r=3#p4255x4090', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=884&r=4#p4255x4266', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 10
+    - '18'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=4225', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=884&r=1#p4225x4255', title: 'gegen SZ Bemerode', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=884&r=4#p4225x4286', title: 'gegen SK Lehrte 1919 eV 2', text: '2' }]
+    - [{ url: '?staffel=884&r=2#p4225x4143', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=884&r=5#p4225x4090', title: 'gegen SV Springe', text: 2½ }]
+    - [{ url: '?staffel=884&r=3#p4225x4266', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 7
+    - 12½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte 1919 eV 2', url: '?mannschaft=4286', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=884&r=2#p4286x4255', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=884&r=4#p4286x4225', title: 'gegen SV Bückeburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=884&r=3#p4286x4143', title: 'gegen Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=884&r=1#p4286x4090', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=884&r=5#p4286x4266', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: Barsinghausen, url: '?mannschaft=4143', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=884&r=5#p4143x4255', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=884&r=2#p4143x4225', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=884&r=3#p4143x4286', title: 'gegen SK Lehrte 1919 eV 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=884&r=4#p4143x4090', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=884&r=1#p4143x4266', title: 'gegen SG Garbsen/Marienw', text: 3½ }]
+    - 4
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Springe', url: '?mannschaft=4090', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=884&r=3#p4090x4255', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=884&r=5#p4090x4225', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=884&r=1#p4090x4286', title: 'gegen SK Lehrte 1919 eV 2', text: '1' }]
+    - [{ url: '?staffel=884&r=4#p4090x4143', title: 'gegen Barsinghausen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=884&r=2#p4090x4266', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 3
+    - 9½
+    - ''
+-
+    - '6.'
+    - { text: 'SG Garbsen/Marienw', url: '?mannschaft=4266', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=884&r=4#p4266x4255', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=884&r=3#p4266x4225', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=884&r=5#p4266x4286', title: 'gegen SK Lehrte 1919 eV 2', text: '0' }]
+    - [{ url: '?staffel=884&r=1#p4266x4143', title: 'gegen Barsinghausen', text: ½ }]
+    - [{ url: '?staffel=884&r=2#p4266x4090', title: 'gegen SV Springe', text: '0' }]
+    - xxx
+    - 0
+    - ½
+    - ''

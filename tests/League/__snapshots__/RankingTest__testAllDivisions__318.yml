@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC SW Northeim 3', url: '?mannschaft=3067', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=756&r=3#p3067x3069', title: 'gegen SK Bad Harzburg 3', text: '2' }]
+    - [{ url: '?staffel=756&r=7#p3067x2939', title: 'gegen SK Goslar 2', text: '3' }]
+    - [{ url: '?staffel=756&r=2#p3067x2941', title: 'gegen VfL Oker', text: 3½ }]
+    - [{ url: '?staffel=756&r=6#p3067x2987', title: 'gegen KSV Rochade GÖ 2', text: '3' }]
+    - [{ url: '?staffel=756&r=1#p3067x2940', title: 'gegen SK Goslar 3', text: '3' }]
+    - [{ url: '?staffel=756&r=4#p3067x3070', title: 'gegen SK Bad Harzburg 4', text: '4' }]
+    - 11
+    - 18½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SK Bad Harzburg 3', url: '?mannschaft=3069', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=756&r=3#p3069x3067', title: 'gegen SC SW Northeim 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=756&r=4#p3069x2939', title: 'gegen SK Goslar 2', text: '2' }]
+    - [{ url: '?staffel=756&r=6#p3069x2941', title: 'gegen VfL Oker', text: '3' }]
+    - [{ url: '?staffel=756&r=7#p3069x2987', title: 'gegen KSV Rochade GÖ 2', text: 3½ }]
+    - [{ url: '?staffel=756&r=5#p3069x2940', title: 'gegen SK Goslar 3', text: '4' }]
+    - [{ url: '?staffel=756&r=1#p3069x3070', title: 'gegen SK Bad Harzburg 4', text: '4' }]
+    - 10
+    - 18½
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=2939', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=756&r=7#p2939x3067', title: 'gegen SC SW Northeim 3', text: '1' }]
+    - [{ url: '?staffel=756&r=4#p2939x3069', title: 'gegen SK Bad Harzburg 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=756&r=1#p2939x2941', title: 'gegen VfL Oker', text: 2½ }]
+    - [{ url: '?staffel=756&r=5#p2939x2987', title: 'gegen KSV Rochade GÖ 2', text: ½ }]
+    - [{ url: '?staffel=756&r=2#p2939x2940', title: 'gegen SK Goslar 3', text: '3' }]
+    - [{ url: '?staffel=756&r=3#p2939x3070', title: 'gegen SK Bad Harzburg 4', text: 2½ }]
+    - 7
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'VfL Oker', url: '?mannschaft=2941', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=756&r=2#p2941x3067', title: 'gegen SC SW Northeim 3', text: ½ }]
+    - [{ url: '?staffel=756&r=6#p2941x3069', title: 'gegen SK Bad Harzburg 3', text: '1' }]
+    - [{ url: '?staffel=756&r=1#p2941x2939', title: 'gegen SK Goslar 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=756&r=3#p2941x2987', title: 'gegen KSV Rochade GÖ 2', text: '3' }]
+    - [{ url: '?staffel=756&r=7#p2941x2940', title: 'gegen SK Goslar 3', text: 3½ }]
+    - [{ url: '?staffel=756&r=5#p2941x3070', title: 'gegen SK Bad Harzburg 4', text: '3' }]
+    - 6
+    - 12½
+    - ''
+-
+    - '5.'
+    - { text: 'KSV Rochade GÖ 2', url: '?mannschaft=2987', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=756&r=6#p2987x3067', title: 'gegen SC SW Northeim 3', text: '1' }]
+    - [{ url: '?staffel=756&r=7#p2987x3069', title: 'gegen SK Bad Harzburg 3', text: ½ }]
+    - [{ url: '?staffel=756&r=5#p2987x2939', title: 'gegen SK Goslar 2', text: 3½ }]
+    - [{ url: '?staffel=756&r=3#p2987x2941', title: 'gegen VfL Oker', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=756&r=4#p2987x2940', title: 'gegen SK Goslar 3', text: '2' }]
+    - [{ url: '?staffel=756&r=2#p2987x3070', title: 'gegen SK Bad Harzburg 4', text: '2' }]
+    - 4
+    - '10'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Goslar 3', url: '?mannschaft=2940', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=756&r=1#p2940x3067', title: 'gegen SC SW Northeim 3', text: '1' }]
+    - [{ url: '?staffel=756&r=5#p2940x3069', title: 'gegen SK Bad Harzburg 3', text: '0' }]
+    - [{ url: '?staffel=756&r=2#p2940x2939', title: 'gegen SK Goslar 2', text: '1' }]
+    - [{ url: '?staffel=756&r=7#p2940x2941', title: 'gegen VfL Oker', text: ½ }]
+    - [{ url: '?staffel=756&r=4#p2940x2987', title: 'gegen KSV Rochade GÖ 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=756&r=6#p2940x3070', title: 'gegen SK Bad Harzburg 4', text: '2' }]
+    - 2
+    - 6½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Bad Harzburg 4', url: '?mannschaft=3070', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=756&r=4#p3070x3067', title: 'gegen SC SW Northeim 3', text: '0' }]
+    - [{ url: '?staffel=756&r=1#p3070x3069', title: 'gegen SK Bad Harzburg 3', text: '0' }]
+    - [{ url: '?staffel=756&r=3#p3070x2939', title: 'gegen SK Goslar 2', text: 1½ }]
+    - [{ url: '?staffel=756&r=5#p3070x2941', title: 'gegen VfL Oker', text: '1' }]
+    - [{ url: '?staffel=756&r=2#p3070x2987', title: 'gegen KSV Rochade GÖ 2', text: '2' }]
+    - [{ url: '?staffel=756&r=6#p3070x2940', title: 'gegen SK Goslar 3', text: '2' }]
+    - xxx
+    - 2
+    - 6½
+    - ''

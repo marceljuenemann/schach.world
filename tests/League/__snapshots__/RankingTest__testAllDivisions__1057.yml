@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Helmstedter SV', url: '?mannschaft=8281', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1908&r=3#p8281x8304', title: 'gegen SV Hankensbüttel', text: 4½ }]
+    - [{ url: '?staffel=1908&r=2#p8281x8277', title: 'gegen SG Elmrochade 2', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1908&r=1#p8281x8379', title: 'gegen Helmstedter SV 2', text: '5' }]
+    - {  }
+    - 6
+    - '14'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Fallersleben 2', url: '?mannschaft=8299', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1908&r=1#p8299x8304', title: 'gegen SV Hankensbüttel', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1908&r=3#p8299x8295', title: 'gegen SG Gifhorn-Wolfsburg 4', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1908&r=2#p8299x8280', title: 'gegen KS Braunschweig 2', text: 4½ }]
+    - 6
+    - '13'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SVG Salzgitter e. V. 2', url: '?mannschaft=8307', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1908&r=1#p8307x8289', title: 'gegen SC BS Gliesmarode 5', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1908&r=3#p8307x8277', title: 'gegen SG Elmrochade 2', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1908&r=2#p8307x8379', title: 'gegen Helmstedter SV 2', text: '5' }]
+    - {  }
+    - 5
+    - '13'
+    - ''
+-
+    - '4.'
+    - { text: 'SC BS Gliesmarode 6', url: '?mannschaft=8290', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1908&r=2#p8290x8289', title: 'gegen SC BS Gliesmarode 5', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1908&r=3#p8290x8379', title: 'gegen Helmstedter SV 2', text: 3½ }]
+    - [{ url: '?staffel=1908&r=1#p8290x8280', title: 'gegen KS Braunschweig 2', text: 4½ }]
+    - 5
+    - '11'
+    - ''
+-
+    - '5.'
+    - { text: 'SC BS Gliesmarode 5', url: '?mannschaft=8289', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1908&r=1#p8289x8307', title: 'gegen SVG Salzgitter e. V. 2', text: '3' }]
+    - [{ url: '?staffel=1908&r=2#p8289x8290', title: 'gegen SC BS Gliesmarode 6', text: '3' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1908&r=3#p8289x8280', title: 'gegen KS Braunschweig 2', text: '5' }]
+    - 4
+    - '11'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Hankensbüttel', url: '?mannschaft=8304', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1908&r=3#p8304x8281', title: 'gegen Helmstedter SV', text: 1½ }]
+    - [{ url: '?staffel=1908&r=1#p8304x8299', title: 'gegen SF Fallersleben 2', text: '2' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1908&r=2#p8304x8295', title: 'gegen SG Gifhorn-Wolfsburg 4', text: 4½ }]
+    - {  }
+    - {  }
+    - 2
+    - '8'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Elmrochade 2', url: '?mannschaft=8277', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1908&r=2#p8277x8281', title: 'gegen Helmstedter SV', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1908&r=3#p8277x8307', title: 'gegen SVG Salzgitter e. V. 2', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1908&r=1#p8277x8295', title: 'gegen SG Gifhorn-Wolfsburg 4', text: '4' }]
+    - {  }
+    - {  }
+    - 2
+    - 6½
+    - ''
+-
+    - '8.'
+    - { text: 'SG Gifhorn-Wolfsburg 4', url: '?mannschaft=8295', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1908&r=3#p8295x8299', title: 'gegen SF Fallersleben 2', text: 1½ }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1908&r=2#p8295x8304', title: 'gegen SV Hankensbüttel', text: 1½ }]
+    - [{ url: '?staffel=1908&r=1#p8295x8277', title: 'gegen SG Elmrochade 2', text: '2' }]
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '5'
+    - ''
+-
+    - '9.'
+    - { text: 'Helmstedter SV 2', url: '?mannschaft=8379', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1908&r=1#p8379x8281', title: 'gegen Helmstedter SV', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1908&r=2#p8379x8307', title: 'gegen SVG Salzgitter e. V. 2', text: '1' }]
+    - [{ url: '?staffel=1908&r=3#p8379x8290', title: 'gegen SC BS Gliesmarode 6', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - 4½
+    - absteiger
+-
+    - '10.'
+    - { text: 'KS Braunschweig 2', url: '?mannschaft=8280', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1908&r=2#p8280x8299', title: 'gegen SF Fallersleben 2', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1908&r=1#p8280x8290', title: 'gegen SC BS Gliesmarode 6', text: 1½ }]
+    - [{ url: '?staffel=1908&r=3#p8280x8289', title: 'gegen SC BS Gliesmarode 5', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '4'
+    - absteiger

@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Duderstadt', url: '?mannschaft=6911', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1535&r=2#p6911x6888', title: 'gegen Hamelner SV 4', text: '3' }]
+    - [{ url: '?staffel=1535&r=3#p6911x6902', title: 'gegen Bad Lauterberg', text: 3½ }]
+    - [{ url: '?staffel=1535&r=5#p6911x6910', title: 'gegen Turm Vienenburg', text: 4½ }]
+    - [{ url: '?staffel=1535&r=4#p6911x6896', title: 'gegen Hildesheimer SV 3', text: 3½ }]
+    - [{ url: '?staffel=1535&r=7#p6911x6925', title: 'gegen ESV Göttingen 3', text: 3½ }]
+    - [{ url: '?staffel=1535&r=1#p6911x6895', title: 'gegen Bad Salzdetfurth 2', text: '3' }]
+    - 10
+    - '21'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamelner SV 4', url: '?mannschaft=6888', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1535&r=2#p6888x6911', title: 'gegen SK Duderstadt', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1535&r=5#p6888x6902', title: 'gegen Bad Lauterberg', text: '4' }]
+    - [{ url: '?staffel=1535&r=6#p6888x6910', title: 'gegen Turm Vienenburg', text: '0' }]
+    - [{ url: '?staffel=1535&r=3#p6888x6896', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=1535&r=1#p6888x6925', title: 'gegen ESV Göttingen 3', text: 3½ }]
+    - [{ url: '?staffel=1535&r=4#p6888x6895', title: 'gegen Bad Salzdetfurth 2', text: '4' }]
+    - 9
+    - 18½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Bad Lauterberg', url: '?mannschaft=6902', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1535&r=3#p6902x6911', title: 'gegen SK Duderstadt', text: 2½ }]
+    - [{ url: '?staffel=1535&r=5#p6902x6888', title: 'gegen Hamelner SV 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1535&r=1#p6902x6910', title: 'gegen Turm Vienenburg', text: '3' }]
+    - [{ url: '?staffel=1535&r=6#p6902x6896', title: 'gegen Hildesheimer SV 3', text: 4½ }]
+    - [{ url: '?staffel=1535&r=4#p6902x6925', title: 'gegen ESV Göttingen 3', text: '5' }]
+    - [{ url: '?staffel=1535&r=7#p6902x6895', title: 'gegen Bad Salzdetfurth 2', text: '4' }]
+    - 7
+    - '21'
+    - ''
+-
+    - '4.'
+    - { text: 'Turm Vienenburg', url: '?mannschaft=6910', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1535&r=5#p6910x6911', title: 'gegen SK Duderstadt', text: 1½ }]
+    - [{ url: '?staffel=1535&r=6#p6910x6888', title: 'gegen Hamelner SV 4', text: '6' }]
+    - [{ url: '?staffel=1535&r=1#p6910x6902', title: 'gegen Bad Lauterberg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1535&r=7#p6910x6896', title: 'gegen Hildesheimer SV 3', text: '2' }]
+    - [{ url: '?staffel=1535&r=2#p6910x6925', title: 'gegen ESV Göttingen 3', text: '3' }]
+    - [{ url: '?staffel=1535&r=3#p6910x6895', title: 'gegen Bad Salzdetfurth 2', text: '4' }]
+    - 6
+    - 19½
+    - ''
+-
+    - '5.'
+    - { text: 'Hildesheimer SV 3', url: '?mannschaft=6896', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1535&r=4#p6896x6911', title: 'gegen SK Duderstadt', text: 2½ }]
+    - [{ url: '?staffel=1535&r=3#p6896x6888', title: 'gegen Hamelner SV 4', text: '2' }]
+    - [{ url: '?staffel=1535&r=6#p6896x6902', title: 'gegen Bad Lauterberg', text: 1½ }]
+    - [{ url: '?staffel=1535&r=7#p6896x6910', title: 'gegen Turm Vienenburg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1535&r=5#p6896x6925', title: 'gegen ESV Göttingen 3', text: '4' }]
+    - [{ url: '?staffel=1535&r=2#p6896x6895', title: 'gegen Bad Salzdetfurth 2', text: '2' }]
+    - 4
+    - '16'
+    - ''
+-
+    - '6.'
+    - { text: 'ESV Göttingen 3', url: '?mannschaft=6925', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1535&r=7#p6925x6911', title: 'gegen SK Duderstadt', text: 2½ }]
+    - [{ url: '?staffel=1535&r=1#p6925x6888', title: 'gegen Hamelner SV 4', text: 2½ }]
+    - [{ url: '?staffel=1535&r=4#p6925x6902', title: 'gegen Bad Lauterberg', text: '1' }]
+    - [{ url: '?staffel=1535&r=2#p6925x6910', title: 'gegen Turm Vienenburg', text: '3' }]
+    - [{ url: '?staffel=1535&r=5#p6925x6896', title: 'gegen Hildesheimer SV 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1535&r=6#p6925x6895', title: 'gegen Bad Salzdetfurth 2', text: '5' }]
+    - 3
+    - '16'
+    - ''
+-
+    - '7.'
+    - { text: 'Bad Salzdetfurth 2', url: '?mannschaft=6895', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1535&r=1#p6895x6911', title: 'gegen SK Duderstadt', text: '3' }]
+    - [{ url: '?staffel=1535&r=4#p6895x6888', title: 'gegen Hamelner SV 4', text: '2' }]
+    - [{ url: '?staffel=1535&r=7#p6895x6902', title: 'gegen Bad Lauterberg', text: '2' }]
+    - [{ url: '?staffel=1535&r=3#p6895x6910', title: 'gegen Turm Vienenburg', text: '2' }]
+    - [{ url: '?staffel=1535&r=2#p6895x6896', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=1535&r=6#p6895x6925', title: 'gegen ESV Göttingen 3', text: '1' }]
+    - xxx
+    - 3
+    - '14'
+    - absteigerRelegation

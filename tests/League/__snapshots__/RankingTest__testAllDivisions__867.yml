@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Goslar-Harzburg 1', url: '?mannschaft=7283', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1691&r=5#p7283x7285', title: 'gegen Plesse Bovenden 1', text: 3½ }]
+    - [{ url: '?staffel=1691&r=3#p7283x7284', title: 'gegen SG Goslar-Harzburg 2', text: '4' }]
+    - [{ url: '?staffel=1691&r=6#p7283x7286', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - [{ url: '?staffel=1691&r=2#p7283x7282', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1691&r=1#p7283x7281', title: 'gegen Hamelner SV', text: '3' }]
+    - 10
+    - 17½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'Plesse Bovenden 1', url: '?mannschaft=7285', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1691&r=5#p7285x7283', title: 'gegen SG Goslar-Harzburg 1', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1691&r=6#p7285x7284', title: 'gegen SG Goslar-Harzburg 2', text: '3' }]
+    - [{ url: '?staffel=1691&r=1#p7285x7286', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - [{ url: '?staffel=1691&r=4#p7285x7282', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - [{ url: '?staffel=1691&r=3#p7285x7281', title: 'gegen Hamelner SV', text: '4' }]
+    - 8
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Goslar-Harzburg 2', url: '?mannschaft=7284', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1691&r=3#p7284x7283', title: 'gegen SG Goslar-Harzburg 1', text: '0' }]
+    - [{ url: '?staffel=1691&r=6#p7284x7285', title: 'gegen Plesse Bovenden 1', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1691&r=5#p7284x7286', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - [{ url: '?staffel=1691&r=1#p7284x7282', title: 'gegen Hildesheimer SV 2', text: '2' }]
+    - [{ url: '?staffel=1691&r=2#p7284x7281', title: 'gegen Hamelner SV', text: '3' }]
+    - 5
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'Plesse Bovenden 2', url: '?mannschaft=7286', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1691&r=6#p7286x7283', title: 'gegen SG Goslar-Harzburg 1', text: '1' }]
+    - [{ url: '?staffel=1691&r=1#p7286x7285', title: 'gegen Plesse Bovenden 1', text: '1' }]
+    - [{ url: '?staffel=1691&r=5#p7286x7284', title: 'gegen SG Goslar-Harzburg 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1691&r=3#p7286x7282', title: 'gegen Hildesheimer SV 2', text: '2' }]
+    - [{ url: '?staffel=1691&r=4#p7286x7281', title: 'gegen Hamelner SV', text: '4' }]
+    - 3
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=7282', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1691&r=2#p7282x7283', title: 'gegen SG Goslar-Harzburg 1', text: '0' }]
+    - [{ url: '?staffel=1691&r=4#p7282x7285', title: 'gegen Plesse Bovenden 1', text: '1' }]
+    - [{ url: '?staffel=1691&r=1#p7282x7284', title: 'gegen SG Goslar-Harzburg 2', text: '2' }]
+    - [{ url: '?staffel=1691&r=3#p7282x7286', title: 'gegen Plesse Bovenden 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1691&r=5#p7282x7281', title: 'gegen Hamelner SV', text: 1½ }]
+    - 3
+    - 6½
+    - ''
+-
+    - '6.'
+    - { text: 'Hamelner SV', url: '?mannschaft=7281', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1691&r=1#p7281x7283', title: 'gegen SG Goslar-Harzburg 1', text: '1' }]
+    - [{ url: '?staffel=1691&r=3#p7281x7285', title: 'gegen Plesse Bovenden 1', text: '0' }]
+    - [{ url: '?staffel=1691&r=2#p7281x7284', title: 'gegen SG Goslar-Harzburg 2', text: '1' }]
+    - [{ url: '?staffel=1691&r=4#p7281x7286', title: 'gegen Plesse Bovenden 2', text: '0' }]
+    - [{ url: '?staffel=1691&r=5#p7281x7282', title: 'gegen Hildesheimer SV 2', text: 1½ }]
+    - xxx
+    - 1
+    - 3½
+    - ''

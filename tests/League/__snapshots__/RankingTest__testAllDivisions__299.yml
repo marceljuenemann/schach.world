@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=3232', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=737&r=5#p3232x3148', title: 'gegen SV Laatzen', text: '2' }]
+    - [{ url: '?staffel=737&r=3#p3232x3237', title: 'gegen Schachakademie', text: '3' }]
+    - [{ url: '?staffel=737&r=4#p3232x3238', title: 'gegen Schachakademie 2', text: '4' }]
+    - [{ url: '?staffel=737&r=2#p3232x3134', title: 'gegen SF Hannover', text: '4' }]
+    - 7
+    - '13'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SV Laatzen', url: '?mannschaft=3148', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=737&r=5#p3148x3232', title: 'gegen SK Lehrte 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=737&r=2#p3148x3237', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=737&r=3#p3148x3238', title: 'gegen Schachakademie 2', text: '3' }]
+    - [{ url: '?staffel=737&r=1#p3148x3134', title: 'gegen SF Hannover', text: '4' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: Schachakademie, url: '?mannschaft=3237', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=737&r=3#p3237x3232', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=737&r=2#p3237x3148', title: 'gegen SV Laatzen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=737&r=1#p3237x3238', title: 'gegen Schachakademie 2', text: '3' }]
+    - [{ url: '?staffel=737&r=4#p3237x3134', title: 'gegen SF Hannover', text: 3½ }]
+    - 4
+    - 7½
+    - ''
+-
+    - '4.'
+    - { text: 'Schachakademie 2', url: '?mannschaft=3238', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=737&r=4#p3238x3232', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=737&r=3#p3238x3148', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=737&r=1#p3238x3237', title: 'gegen Schachakademie', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=737&r=5#p3238x3134', title: 'gegen SF Hannover', text: '4' }]
+    - 2
+    - '6'
+    - ''
+-
+    - '5.'
+    - { text: 'SF Hannover', url: '?mannschaft=3134', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=737&r=2#p3134x3232', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=737&r=1#p3134x3148', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=737&r=4#p3134x3237', title: 'gegen Schachakademie', text: ½ }]
+    - [{ url: '?staffel=737&r=5#p3134x3238', title: 'gegen Schachakademie 2', text: '0' }]
+    - xxx
+    - 0
+    - ½
+    - ''

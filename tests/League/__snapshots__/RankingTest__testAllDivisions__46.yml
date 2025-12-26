@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamburger SK', url: '?mannschaft=822', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=445&r=6#p822x829', title: 'gegen Königsspringer', text: '6' }]
+    - [{ url: '?staffel=445&r=2#p822x828', title: 'gegen Werder Bremen', text: '3' }]
+    - [{ url: '?staffel=445&r=3#p822x827', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=445&r=7#p822x823', title: 'gegen Elmshorner SC', text: 2½ }]
+    - [{ url: '?staffel=445&r=8#p822x825', title: 'gegen Wilhelmshav. SF', text: '6' }]
+    - [{ url: '?staffel=445&r=5#p822x821', title: 'gegen Joha. Eppendorf', text: 4½ }]
+    - [{ url: '?staffel=445&r=1#p822x826', title: 'gegen SK Marmstorf GW', text: '5' }]
+    - [{ url: '?staffel=445&r=4#p822x830', title: 'gegen Lübecker SV', text: '5' }]
+    - [{ url: '?staffel=445&r=9#p822x824', title: 'gegen Weiße Dame HH', text: '6' }]
+    - 14
+    - '41'
+    - ''
+-
+    - '2.'
+    - { text: Königsspringer, url: '?mannschaft=829', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=445&r=6#p829x822', title: 'gegen Hamburger SK', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=445&r=9#p829x828', title: 'gegen Werder Bremen', text: 4½ }]
+    - [{ url: '?staffel=445&r=1#p829x827', title: 'gegen Nordhorn-Blanke', text: '2' }]
+    - [{ url: '?staffel=445&r=5#p829x823', title: 'gegen Elmshorner SC', text: '3' }]
+    - [{ url: '?staffel=445&r=4#p829x825', title: 'gegen Wilhelmshav. SF', text: '4' }]
+    - [{ url: '?staffel=445&r=3#p829x821', title: 'gegen Joha. Eppendorf', text: 5½ }]
+    - [{ url: '?staffel=445&r=8#p829x826', title: 'gegen SK Marmstorf GW', text: '4' }]
+    - [{ url: '?staffel=445&r=2#p829x830', title: 'gegen Lübecker SV', text: '5' }]
+    - [{ url: '?staffel=445&r=7#p829x824', title: 'gegen Weiße Dame HH', text: 4½ }]
+    - 13
+    - 32½
+    - ''
+-
+    - '3.'
+    - { text: 'Werder Bremen', url: '?mannschaft=828', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=445&r=2#p828x822', title: 'gegen Hamburger SK', text: '3' }]
+    - [{ url: '?staffel=445&r=9#p828x829', title: 'gegen Königsspringer', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=445&r=6#p828x827', title: 'gegen Nordhorn-Blanke', text: 1½ }]
+    - [{ url: '?staffel=445&r=1#p828x823', title: 'gegen Elmshorner SC', text: 4½ }]
+    - [{ url: '?staffel=445&r=5#p828x825', title: 'gegen Wilhelmshav. SF', text: '4' }]
+    - [{ url: '?staffel=445&r=8#p828x821', title: 'gegen Joha. Eppendorf', text: '4' }]
+    - [{ url: '?staffel=445&r=4#p828x826', title: 'gegen SK Marmstorf GW', text: '5' }]
+    - [{ url: '?staffel=445&r=7#p828x830', title: 'gegen Lübecker SV', text: '4' }]
+    - [{ url: '?staffel=445&r=3#p828x824', title: 'gegen Weiße Dame HH', text: '5' }]
+    - 13
+    - 32½
+    - ''
+-
+    - '4.'
+    - { text: Nordhorn-Blanke, url: '?mannschaft=827', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=445&r=3#p827x822', title: 'gegen Hamburger SK', text: '3' }]
+    - [{ url: '?staffel=445&r=1#p827x829', title: 'gegen Königsspringer', text: '4' }]
+    - [{ url: '?staffel=445&r=6#p827x828', title: 'gegen Werder Bremen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=445&r=2#p827x823', title: 'gegen Elmshorner SC', text: '3' }]
+    - [{ url: '?staffel=445&r=7#p827x825', title: 'gegen Wilhelmshav. SF', text: 2½ }]
+    - [{ url: '?staffel=445&r=9#p827x821', title: 'gegen Joha. Eppendorf', text: 1½ }]
+    - [{ url: '?staffel=445&r=5#p827x826', title: 'gegen SK Marmstorf GW', text: '6' }]
+    - [{ url: '?staffel=445&r=8#p827x830', title: 'gegen Lübecker SV', text: 5½ }]
+    - [{ url: '?staffel=445&r=4#p827x824', title: 'gegen Weiße Dame HH', text: '5' }]
+    - 12
+    - '35'
+    - ''
+-
+    - '5.'
+    - { text: 'Elmshorner SC', url: '?mannschaft=823', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=445&r=7#p823x822', title: 'gegen Hamburger SK', text: 3½ }]
+    - [{ url: '?staffel=445&r=5#p823x829', title: 'gegen Königsspringer', text: '3' }]
+    - [{ url: '?staffel=445&r=1#p823x828', title: 'gegen Werder Bremen', text: 1½ }]
+    - [{ url: '?staffel=445&r=2#p823x827', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=445&r=6#p823x825', title: 'gegen Wilhelmshav. SF', text: 2½ }]
+    - [{ url: '?staffel=445&r=4#p823x821', title: 'gegen Joha. Eppendorf', text: 4½ }]
+    - [{ url: '?staffel=445&r=9#p823x826', title: 'gegen SK Marmstorf GW', text: 3½ }]
+    - [{ url: '?staffel=445&r=3#p823x830', title: 'gegen Lübecker SV', text: 5½ }]
+    - [{ url: '?staffel=445&r=8#p823x824', title: 'gegen Weiße Dame HH', text: 5½ }]
+    - 12
+    - 32½
+    - ''
+-
+    - '6.'
+    - { text: 'Wilhelmshav. SF', url: '?mannschaft=825', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=445&r=8#p825x822', title: 'gegen Hamburger SK', text: '0' }]
+    - [{ url: '?staffel=445&r=4#p825x829', title: 'gegen Königsspringer', text: '2' }]
+    - [{ url: '?staffel=445&r=5#p825x828', title: 'gegen Werder Bremen', text: '2' }]
+    - [{ url: '?staffel=445&r=7#p825x827', title: 'gegen Nordhorn-Blanke', text: 3½ }]
+    - [{ url: '?staffel=445&r=6#p825x823', title: 'gegen Elmshorner SC', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=445&r=2#p825x821', title: 'gegen Joha. Eppendorf', text: '3' }]
+    - [{ url: '?staffel=445&r=3#p825x826', title: 'gegen SK Marmstorf GW', text: '4' }]
+    - [{ url: '?staffel=445&r=9#p825x830', title: 'gegen Lübecker SV', text: '3' }]
+    - [{ url: '?staffel=445&r=1#p825x824', title: 'gegen Weiße Dame HH', text: 4½ }]
+    - 10
+    - 25½
+    - ''
+-
+    - '7.'
+    - { text: 'Joha. Eppendorf', url: '?mannschaft=821', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=445&r=5#p821x822', title: 'gegen Hamburger SK', text: 1½ }]
+    - [{ url: '?staffel=445&r=3#p821x829', title: 'gegen Königsspringer', text: ½ }]
+    - [{ url: '?staffel=445&r=8#p821x828', title: 'gegen Werder Bremen', text: '2' }]
+    - [{ url: '?staffel=445&r=9#p821x827', title: 'gegen Nordhorn-Blanke', text: 4½ }]
+    - [{ url: '?staffel=445&r=4#p821x823', title: 'gegen Elmshorner SC', text: 1½ }]
+    - [{ url: '?staffel=445&r=2#p821x825', title: 'gegen Wilhelmshav. SF', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=445&r=7#p821x826', title: 'gegen SK Marmstorf GW', text: '4' }]
+    - [{ url: '?staffel=445&r=1#p821x830', title: 'gegen Lübecker SV', text: '3' }]
+    - [{ url: '?staffel=445&r=6#p821x824', title: 'gegen Weiße Dame HH', text: '4' }]
+    - 8
+    - '24'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Marmstorf GW', url: '?mannschaft=826', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=445&r=1#p826x822', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=445&r=8#p826x829', title: 'gegen Königsspringer', text: '2' }]
+    - [{ url: '?staffel=445&r=4#p826x828', title: 'gegen Werder Bremen', text: '1' }]
+    - [{ url: '?staffel=445&r=5#p826x827', title: 'gegen Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=445&r=9#p826x823', title: 'gegen Elmshorner SC', text: 2½ }]
+    - [{ url: '?staffel=445&r=3#p826x825', title: 'gegen Wilhelmshav. SF', text: '2' }]
+    - [{ url: '?staffel=445&r=7#p826x821', title: 'gegen Joha. Eppendorf', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=445&r=6#p826x830', title: 'gegen Lübecker SV', text: 3½ }]
+    - [{ url: '?staffel=445&r=2#p826x824', title: 'gegen Weiße Dame HH', text: 5½ }]
+    - 4
+    - 19½
+    - ''
+-
+    - '9.'
+    - { text: 'Lübecker SV', url: '?mannschaft=830', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=445&r=4#p830x822', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=445&r=2#p830x829', title: 'gegen Königsspringer', text: '1' }]
+    - [{ url: '?staffel=445&r=7#p830x828', title: 'gegen Werder Bremen', text: '2' }]
+    - [{ url: '?staffel=445&r=8#p830x827', title: 'gegen Nordhorn-Blanke', text: ½ }]
+    - [{ url: '?staffel=445&r=3#p830x823', title: 'gegen Elmshorner SC', text: ½ }]
+    - [{ url: '?staffel=445&r=9#p830x825', title: 'gegen Wilhelmshav. SF', text: '3' }]
+    - [{ url: '?staffel=445&r=1#p830x821', title: 'gegen Joha. Eppendorf', text: '3' }]
+    - [{ url: '?staffel=445&r=6#p830x826', title: 'gegen SK Marmstorf GW', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=445&r=5#p830x824', title: 'gegen Weiße Dame HH', text: 3½ }]
+    - 4
+    - '17'
+    - ''
+-
+    - '10.'
+    - { text: 'Weiße Dame HH', url: '?mannschaft=824', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=445&r=9#p824x822', title: 'gegen Hamburger SK', text: '0' }]
+    - [{ url: '?staffel=445&r=7#p824x829', title: 'gegen Königsspringer', text: 1½ }]
+    - [{ url: '?staffel=445&r=3#p824x828', title: 'gegen Werder Bremen', text: '0' }]
+    - [{ url: '?staffel=445&r=4#p824x827', title: 'gegen Nordhorn-Blanke', text: '1' }]
+    - [{ url: '?staffel=445&r=8#p824x823', title: 'gegen Elmshorner SC', text: ½ }]
+    - [{ url: '?staffel=445&r=1#p824x825', title: 'gegen Wilhelmshav. SF', text: 1½ }]
+    - [{ url: '?staffel=445&r=6#p824x821', title: 'gegen Joha. Eppendorf', text: '2' }]
+    - [{ url: '?staffel=445&r=2#p824x826', title: 'gegen SK Marmstorf GW', text: ½ }]
+    - [{ url: '?staffel=445&r=5#p824x830', title: 'gegen Lübecker SV', text: 2½ }]
+    - xxx
+    - 0
+    - 9½
+    - ''

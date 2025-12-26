@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Laatzen', url: '?mannschaft=3735', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=819&r=3#p3735x3734', title: 'gegen C. Wolfenbüttel', text: 3½ }]
+    - [{ url: '?staffel=819&r=7#p3735x3732', title: 'gegen Hildesheimer SV', text: '3' }]
+    - [{ url: '?staffel=819&r=6#p3735x3733', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - [{ url: '?staffel=819&r=1#p3735x3753', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=819&r=4#p3735x3736', title: 'gegen FG Wohlde', text: '4' }]
+    - [{ url: '?staffel=819&r=2#p3735x3754', title: 'gegen SK Lehrte 4', text: 3½ }]
+    - [{ url: '?staffel=819&r=5#p3735x3737', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 14
+    - '24'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'C. Wolfenbüttel', url: '?mannschaft=3734', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=819&r=3#p3734x3735', title: 'gegen SV Laatzen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=819&r=6#p3734x3732', title: 'gegen Hildesheimer SV', text: '3' }]
+    - [{ url: '?staffel=819&r=7#p3734x3733', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=819&r=2#p3734x3753', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=819&r=5#p3734x3736', title: 'gegen FG Wohlde', text: '4' }]
+    - [{ url: '?staffel=819&r=1#p3734x3754', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=819&r=4#p3734x3737', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 11
+    - 20½
+    - ''
+-
+    - '3.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=3732', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=819&r=7#p3732x3735', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=819&r=6#p3732x3734', title: 'gegen C. Wolfenbüttel', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=819&r=3#p3732x3733', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - [{ url: '?staffel=819&r=5#p3732x3753', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=819&r=1#p3732x3736', title: 'gegen FG Wohlde', text: '3' }]
+    - [{ url: '?staffel=819&r=4#p3732x3754', title: 'gegen SK Lehrte 4', text: '4' }]
+    - [{ url: '?staffel=819&r=2#p3732x3737', title: 'gegen FG Wohlde 2', text: 3½ }]
+    - 10
+    - 19½
+    - ''
+-
+    - '4.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=3733', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=819&r=6#p3733x3735', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=819&r=7#p3733x3734', title: 'gegen C. Wolfenbüttel', text: '0' }]
+    - [{ url: '?staffel=819&r=3#p3733x3732', title: 'gegen Hildesheimer SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=819&r=4#p3733x3753', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=819&r=2#p3733x3736', title: 'gegen FG Wohlde', text: '2' }]
+    - [{ url: '?staffel=819&r=5#p3733x3754', title: 'gegen SK Lehrte 4', text: 2½ }]
+    - [{ url: '?staffel=819&r=1#p3733x3737', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 7
+    - 13½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=3753', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=819&r=1#p3753x3735', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=819&r=2#p3753x3734', title: 'gegen C. Wolfenbüttel', text: '2' }]
+    - [{ url: '?staffel=819&r=5#p3753x3732', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=819&r=4#p3753x3733', title: 'gegen Hildesheimer SV 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=819&r=7#p3753x3736', title: 'gegen FG Wohlde', text: '3' }]
+    - [{ url: '?staffel=819&r=3#p3753x3754', title: 'gegen SK Lehrte 4', text: '2' }]
+    - [{ url: '?staffel=819&r=6#p3753x3737', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 6
+    - '13'
+    - ''
+-
+    - '6.'
+    - { text: 'FG Wohlde', url: '?mannschaft=3736', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=819&r=4#p3736x3735', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=819&r=5#p3736x3734', title: 'gegen C. Wolfenbüttel', text: '0' }]
+    - [{ url: '?staffel=819&r=1#p3736x3732', title: 'gegen Hildesheimer SV', text: '1' }]
+    - [{ url: '?staffel=819&r=2#p3736x3733', title: 'gegen Hildesheimer SV 2', text: '2' }]
+    - [{ url: '?staffel=819&r=7#p3736x3753', title: 'gegen SK Lehrte 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=819&r=6#p3736x3754', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=819&r=3#p3736x3737', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=3754', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=819&r=2#p3754x3735', title: 'gegen SV Laatzen', text: ½ }]
+    - [{ url: '?staffel=819&r=1#p3754x3734', title: 'gegen C. Wolfenbüttel', text: '1' }]
+    - [{ url: '?staffel=819&r=4#p3754x3732', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=819&r=5#p3754x3733', title: 'gegen Hildesheimer SV 2', text: 1½ }]
+    - [{ url: '?staffel=819&r=3#p3754x3753', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=819&r=6#p3754x3736', title: 'gegen FG Wohlde', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=819&r=7#p3754x3737', title: 'gegen FG Wohlde 2', text: '2' }]
+    - 2
+    - '8'
+    - ''
+-
+    - '8.'
+    - { text: 'FG Wohlde 2', url: '?mannschaft=3737', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=819&r=5#p3737x3735', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=819&r=4#p3737x3734', title: 'gegen C. Wolfenbüttel', text: '0' }]
+    - [{ url: '?staffel=819&r=2#p3737x3732', title: 'gegen Hildesheimer SV', text: ½ }]
+    - [{ url: '?staffel=819&r=1#p3737x3733', title: 'gegen Hildesheimer SV 2', text: '0' }]
+    - [{ url: '?staffel=819&r=6#p3737x3753', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=819&r=3#p3737x3736', title: 'gegen FG Wohlde', text: '0' }]
+    - [{ url: '?staffel=819&r=7#p3737x3754', title: 'gegen SK Lehrte 4', text: '2' }]
+    - xxx
+    - 1
+    - 2½
+    - ''

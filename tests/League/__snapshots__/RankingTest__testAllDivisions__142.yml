@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'WSV Clausthal-Z', url: '?mannschaft=1741', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=555&r=4#p1741x1750', title: 'gegen SK Bad Harzburg 2', text: '4' }]
+    - [{ url: '?staffel=555&r=5#p1741x1746', title: 'gegen Bad Lauterberg', text: '4' }]
+    - [{ url: '?staffel=555&r=3#p1741x1745', title: 'gegen KSV Rochade GÖ', text: '4' }]
+    - [{ url: '?staffel=555&r=9#p1741x1747', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - [{ url: '?staffel=555&r=6#p1741x1748', title: 'gegen SC Langelsheim', text: '6' }]
+    - [{ url: '?staffel=555&r=8#p1741x1743', title: 'gegen Einbecker SC', text: '4' }]
+    - [{ url: '?staffel=555&r=1#p1741x1742', title: 'gegen SC SW Northeim 2', text: 4½ }]
+    - [{ url: '?staffel=555&r=2#p1741x1744', title: 'gegen Bad Gandersheim', text: '4' }]
+    - [{ url: '?staffel=555&r=7#p1741x1749', title: 'gegen BadSalzdetfurth 3', text: 2½ }]
+    - 15
+    - '36'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Bad Harzburg 2', url: '?mannschaft=1750', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=555&r=4#p1750x1741', title: 'gegen WSV Clausthal-Z', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=555&r=6#p1750x1746', title: 'gegen Bad Lauterberg', text: 2½ }]
+    - [{ url: '?staffel=555&r=8#p1750x1745', title: 'gegen KSV Rochade GÖ', text: 3½ }]
+    - [{ url: '?staffel=555&r=3#p1750x1747', title: 'gegen Hildesheimer SV 3', text: 3½ }]
+    - [{ url: '?staffel=555&r=7#p1750x1748', title: 'gegen SC Langelsheim', text: 4½ }]
+    - [{ url: '?staffel=555&r=1#p1750x1743', title: 'gegen Einbecker SC', text: '4' }]
+    - [{ url: '?staffel=555&r=5#p1750x1742', title: 'gegen SC SW Northeim 2', text: '3' }]
+    - [{ url: '?staffel=555&r=9#p1750x1744', title: 'gegen Bad Gandersheim', text: '4' }]
+    - [{ url: '?staffel=555&r=2#p1750x1749', title: 'gegen BadSalzdetfurth 3', text: '4' }]
+    - 13
+    - '31'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Bad Lauterberg', url: '?mannschaft=1746', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=555&r=5#p1746x1741', title: 'gegen WSV Clausthal-Z', text: '2' }]
+    - [{ url: '?staffel=555&r=6#p1746x1750', title: 'gegen SK Bad Harzburg 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=555&r=4#p1746x1745', title: 'gegen KSV Rochade GÖ', text: ½ }]
+    - [{ url: '?staffel=555&r=2#p1746x1747', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - [{ url: '?staffel=555&r=1#p1746x1748', title: 'gegen SC Langelsheim', text: 4½ }]
+    - [{ url: '?staffel=555&r=9#p1746x1743', title: 'gegen Einbecker SC', text: '3' }]
+    - [{ url: '?staffel=555&r=7#p1746x1742', title: 'gegen SC SW Northeim 2', text: '3' }]
+    - [{ url: '?staffel=555&r=8#p1746x1744', title: 'gegen Bad Gandersheim', text: '4' }]
+    - [{ url: '?staffel=555&r=3#p1746x1749', title: 'gegen BadSalzdetfurth 3', text: '4' }]
+    - 11
+    - 27½
+    - ''
+-
+    - '4.'
+    - { text: 'KSV Rochade GÖ', url: '?mannschaft=1745', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=555&r=3#p1745x1741', title: 'gegen WSV Clausthal-Z', text: '2' }]
+    - [{ url: '?staffel=555&r=8#p1745x1750', title: 'gegen SK Bad Harzburg 2', text: 2½ }]
+    - [{ url: '?staffel=555&r=4#p1745x1746', title: 'gegen Bad Lauterberg', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=555&r=1#p1745x1747', title: 'gegen Hildesheimer SV 3', text: '2' }]
+    - [{ url: '?staffel=555&r=2#p1745x1748', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=555&r=7#p1745x1743', title: 'gegen Einbecker SC', text: 4½ }]
+    - [{ url: '?staffel=555&r=6#p1745x1742', title: 'gegen SC SW Northeim 2', text: 3½ }]
+    - [{ url: '?staffel=555&r=5#p1745x1744', title: 'gegen Bad Gandersheim', text: '5' }]
+    - [{ url: '?staffel=555&r=9#p1745x1749', title: 'gegen BadSalzdetfurth 3', text: 3½ }]
+    - 10
+    - 30½
+    - ''
+-
+    - '5.'
+    - { text: 'Hildesheimer SV 3', url: '?mannschaft=1747', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=555&r=9#p1747x1741', title: 'gegen WSV Clausthal-Z', text: '3' }]
+    - [{ url: '?staffel=555&r=3#p1747x1750', title: 'gegen SK Bad Harzburg 2', text: 2½ }]
+    - [{ url: '?staffel=555&r=2#p1747x1746', title: 'gegen Bad Lauterberg', text: '3' }]
+    - [{ url: '?staffel=555&r=1#p1747x1745', title: 'gegen KSV Rochade GÖ', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=555&r=8#p1747x1748', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=555&r=5#p1747x1743', title: 'gegen Einbecker SC', text: 3½ }]
+    - [{ url: '?staffel=555&r=4#p1747x1742', title: 'gegen SC SW Northeim 2', text: 3½ }]
+    - [{ url: '?staffel=555&r=7#p1747x1744', title: 'gegen Bad Gandersheim', text: 2½ }]
+    - [{ url: '?staffel=555&r=6#p1747x1749', title: 'gegen BadSalzdetfurth 3', text: '4' }]
+    - 10
+    - '28'
+    - ''
+-
+    - '6.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=1748', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=555&r=6#p1748x1741', title: 'gegen WSV Clausthal-Z', text: '0' }]
+    - [{ url: '?staffel=555&r=7#p1748x1750', title: 'gegen SK Bad Harzburg 2', text: 1½ }]
+    - [{ url: '?staffel=555&r=1#p1748x1746', title: 'gegen Bad Lauterberg', text: 1½ }]
+    - [{ url: '?staffel=555&r=2#p1748x1745', title: 'gegen KSV Rochade GÖ', text: '4' }]
+    - [{ url: '?staffel=555&r=8#p1748x1747', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=555&r=3#p1748x1743', title: 'gegen Einbecker SC', text: '1' }]
+    - [{ url: '?staffel=555&r=9#p1748x1742', title: 'gegen SC SW Northeim 2', text: 3½ }]
+    - [{ url: '?staffel=555&r=4#p1748x1744', title: 'gegen Bad Gandersheim', text: 3½ }]
+    - [{ url: '?staffel=555&r=5#p1748x1749', title: 'gegen BadSalzdetfurth 3', text: '4' }]
+    - 10
+    - '23'
+    - ''
+-
+    - '7.'
+    - { text: 'Einbecker SC', url: '?mannschaft=1743', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=555&r=8#p1743x1741', title: 'gegen WSV Clausthal-Z', text: '2' }]
+    - [{ url: '?staffel=555&r=1#p1743x1750', title: 'gegen SK Bad Harzburg 2', text: '2' }]
+    - [{ url: '?staffel=555&r=9#p1743x1746', title: 'gegen Bad Lauterberg', text: '3' }]
+    - [{ url: '?staffel=555&r=7#p1743x1745', title: 'gegen KSV Rochade GÖ', text: 1½ }]
+    - [{ url: '?staffel=555&r=5#p1743x1747', title: 'gegen Hildesheimer SV 3', text: 2½ }]
+    - [{ url: '?staffel=555&r=3#p1743x1748', title: 'gegen SC Langelsheim', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=555&r=2#p1743x1742', title: 'gegen SC SW Northeim 2', text: '3' }]
+    - [{ url: '?staffel=555&r=6#p1743x1744', title: 'gegen Bad Gandersheim', text: 3½ }]
+    - [{ url: '?staffel=555&r=4#p1743x1749', title: 'gegen BadSalzdetfurth 3', text: 4½ }]
+    - 8
+    - '27'
+    - ''
+-
+    - '8.'
+    - { text: 'SC SW Northeim 2', url: '?mannschaft=1742', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=555&r=1#p1742x1741', title: 'gegen WSV Clausthal-Z', text: 1½ }]
+    - [{ url: '?staffel=555&r=5#p1742x1750', title: 'gegen SK Bad Harzburg 2', text: '3' }]
+    - [{ url: '?staffel=555&r=7#p1742x1746', title: 'gegen Bad Lauterberg', text: '3' }]
+    - [{ url: '?staffel=555&r=6#p1742x1745', title: 'gegen KSV Rochade GÖ', text: 2½ }]
+    - [{ url: '?staffel=555&r=4#p1742x1747', title: 'gegen Hildesheimer SV 3', text: 2½ }]
+    - [{ url: '?staffel=555&r=9#p1742x1748', title: 'gegen SC Langelsheim', text: 2½ }]
+    - [{ url: '?staffel=555&r=2#p1742x1743', title: 'gegen Einbecker SC', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=555&r=3#p1742x1744', title: 'gegen Bad Gandersheim', text: '3' }]
+    - [{ url: '?staffel=555&r=8#p1742x1749', title: 'gegen BadSalzdetfurth 3', text: '3' }]
+    - 5
+    - '24'
+    - ''
+-
+    - '9.'
+    - { text: 'Bad Gandersheim', url: '?mannschaft=1744', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=555&r=2#p1744x1741', title: 'gegen WSV Clausthal-Z', text: '2' }]
+    - [{ url: '?staffel=555&r=9#p1744x1750', title: 'gegen SK Bad Harzburg 2', text: '2' }]
+    - [{ url: '?staffel=555&r=8#p1744x1746', title: 'gegen Bad Lauterberg', text: '2' }]
+    - [{ url: '?staffel=555&r=5#p1744x1745', title: 'gegen KSV Rochade GÖ', text: '1' }]
+    - [{ url: '?staffel=555&r=7#p1744x1747', title: 'gegen Hildesheimer SV 3', text: 3½ }]
+    - [{ url: '?staffel=555&r=4#p1744x1748', title: 'gegen SC Langelsheim', text: 2½ }]
+    - [{ url: '?staffel=555&r=6#p1744x1743', title: 'gegen Einbecker SC', text: 2½ }]
+    - [{ url: '?staffel=555&r=3#p1744x1742', title: 'gegen SC SW Northeim 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=555&r=1#p1744x1749', title: 'gegen BadSalzdetfurth 3', text: 3½ }]
+    - 5
+    - '22'
+    - absteiger
+-
+    - '10.'
+    - { text: 'BadSalzdetfurth 3', url: '?mannschaft=1749', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=555&r=7#p1749x1741', title: 'gegen WSV Clausthal-Z', text: 3½ }]
+    - [{ url: '?staffel=555&r=2#p1749x1750', title: 'gegen SK Bad Harzburg 2', text: '2' }]
+    - [{ url: '?staffel=555&r=3#p1749x1746', title: 'gegen Bad Lauterberg', text: '2' }]
+    - [{ url: '?staffel=555&r=9#p1749x1745', title: 'gegen KSV Rochade GÖ', text: 2½ }]
+    - [{ url: '?staffel=555&r=6#p1749x1747', title: 'gegen Hildesheimer SV 3', text: '2' }]
+    - [{ url: '?staffel=555&r=5#p1749x1748', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=555&r=4#p1749x1743', title: 'gegen Einbecker SC', text: 1½ }]
+    - [{ url: '?staffel=555&r=8#p1749x1742', title: 'gegen SC SW Northeim 2', text: '3' }]
+    - [{ url: '?staffel=555&r=1#p1749x1744', title: 'gegen Bad Gandersheim', text: 2½ }]
+    - xxx
+    - 3
+    - '21'
+    - absteiger

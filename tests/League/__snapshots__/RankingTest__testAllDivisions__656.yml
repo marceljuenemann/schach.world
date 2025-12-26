@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'ST Langenhagen', url: '?mannschaft=6032', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1406&r=3#p6032x6056', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1406&r=9#p6032x6111', title: 'gegen HSK Lister Turm 3', text: '8' }]
+    - [{ url: '?staffel=1406&r=5#p6032x6084', title: 'gegen SG SF Ricklingen 2', text: 5½ }]
+    - [{ url: '?staffel=1406&r=2#p6032x6134', title: 'gegen SK Lehrte 3', text: 5½ }]
+    - [{ url: '?staffel=1406&r=7#p6032x6132', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=1406&r=1#p6032x6030', title: 'gegen SC Uetze-Hänigsen', text: 6½ }]
+    - [{ url: '?staffel=1406&r=8#p6032x6147', title: 'gegen SV FB Wedemark', text: 4½ }]
+    - [{ url: '?staffel=1406&r=6#p6032x6057', title: 'gegen SG WB Eilenriede', text: 6½ }]
+    - 14
+    - 44½
+    - ''
+-
+    - '2.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=6056', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1406&r=3#p6056x6032', title: 'gegen ST Langenhagen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1406&r=4#p6056x6111', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=1406&r=9#p6056x6084', title: 'gegen SG SF Ricklingen 2', text: '0' }]
+    - [{ url: '?staffel=1406&r=6#p6056x6134', title: 'gegen SK Lehrte 3', text: 3½ }]
+    - [{ url: '?staffel=1406&r=2#p6056x6132', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=1406&r=5#p6056x6030', title: 'gegen SC Uetze-Hänigsen', text: 5½ }]
+    - [{ url: '?staffel=1406&r=7#p6056x6147', title: 'gegen SV FB Wedemark', text: 4½ }]
+    - [{ url: '?staffel=1406&r=1#p6056x6057', title: 'gegen SG WB Eilenriede', text: '5' }]
+    - 11
+    - 31½
+    - ''
+-
+    - '3.'
+    - { text: 'HSK Lister Turm 3', url: '?mannschaft=6111', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1406&r=9#p6111x6032', title: 'gegen ST Langenhagen', text: '0' }]
+    - [{ url: '?staffel=1406&r=4#p6111x6056', title: 'gegen SD Isernhagen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1406&r=6#p6111x6084', title: 'gegen SG SF Ricklingen 2', text: 5½ }]
+    - [{ url: '?staffel=1406&r=3#p6111x6134', title: 'gegen SK Lehrte 3', text: '5' }]
+    - [{ url: '?staffel=1406&r=8#p6111x6132', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1406&r=2#p6111x6030', title: 'gegen SC Uetze-Hänigsen', text: '5' }]
+    - [{ url: '?staffel=1406&r=1#p6111x6147', title: 'gegen SV FB Wedemark', text: '4' }]
+    - [{ url: '?staffel=1406&r=7#p6111x6057', title: 'gegen SG WB Eilenriede', text: '4' }]
+    - 10
+    - 31½
+    - ''
+-
+    - '4.'
+    - { text: 'SG SF Ricklingen 2', url: '?mannschaft=6084', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1406&r=5#p6084x6032', title: 'gegen ST Langenhagen', text: 2½ }]
+    - [{ url: '?staffel=1406&r=9#p6084x6056', title: 'gegen SD Isernhagen', text: '8' }]
+    - [{ url: '?staffel=1406&r=6#p6084x6111', title: 'gegen HSK Lister Turm 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1406&r=8#p6084x6134', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1406&r=4#p6084x6132', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1406&r=7#p6084x6030', title: 'gegen SC Uetze-Hänigsen', text: 5½ }]
+    - [{ url: '?staffel=1406&r=2#p6084x6147', title: 'gegen SV FB Wedemark', text: 5½ }]
+    - [{ url: '?staffel=1406&r=3#p6084x6057', title: 'gegen SG WB Eilenriede', text: 4½ }]
+    - 9
+    - 32½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=6134', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1406&r=2#p6134x6032', title: 'gegen ST Langenhagen', text: 2½ }]
+    - [{ url: '?staffel=1406&r=6#p6134x6056', title: 'gegen SD Isernhagen', text: 4½ }]
+    - [{ url: '?staffel=1406&r=3#p6134x6111', title: 'gegen HSK Lister Turm 3', text: '3' }]
+    - [{ url: '?staffel=1406&r=8#p6134x6084', title: 'gegen SG SF Ricklingen 2', text: '8' }]
+    - xxx
+    - [{ url: '?staffel=1406&r=1#p6134x6132', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - [{ url: '?staffel=1406&r=4#p6134x6030', title: 'gegen SC Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=1406&r=5#p6134x6147', title: 'gegen SV FB Wedemark', text: '5' }]
+    - [{ url: '?staffel=1406&r=9#p6134x6057', title: 'gegen SG WB Eilenriede', text: 5½ }]
+    - 8
+    - 34½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=6132', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1406&r=7#p6132x6032', title: 'gegen ST Langenhagen', text: 3½ }]
+    - [{ url: '?staffel=1406&r=2#p6132x6056', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1406&r=8#p6132x6111', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=1406&r=4#p6132x6084', title: 'gegen SG SF Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=1406&r=1#p6132x6134', title: 'gegen SK Lehrte 3', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1406&r=9#p6132x6030', title: 'gegen SC Uetze-Hänigsen', text: '4' }]
+    - [{ url: '?staffel=1406&r=6#p6132x6147', title: 'gegen SV FB Wedemark', text: '4' }]
+    - [{ url: '?staffel=1406&r=5#p6132x6057', title: 'gegen SG WB Eilenriede', text: 4½ }]
+    - 8
+    - '33'
+    - ''
+-
+    - '7.'
+    - { text: 'SC Uetze-Hänigsen', url: '?mannschaft=6030', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1406&r=1#p6030x6032', title: 'gegen ST Langenhagen', text: 1½ }]
+    - [{ url: '?staffel=1406&r=5#p6030x6056', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=1406&r=2#p6030x6111', title: 'gegen HSK Lister Turm 3', text: '3' }]
+    - [{ url: '?staffel=1406&r=7#p6030x6084', title: 'gegen SG SF Ricklingen 2', text: 2½ }]
+    - [{ url: '?staffel=1406&r=4#p6030x6134', title: 'gegen SK Lehrte 3', text: 4½ }]
+    - [{ url: '?staffel=1406&r=9#p6030x6132', title: 'gegen SK Lehrte 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1406&r=3#p6030x6147', title: 'gegen SV FB Wedemark', text: 2½ }]
+    - [{ url: '?staffel=1406&r=8#p6030x6057', title: 'gegen SG WB Eilenriede', text: '6' }]
+    - 5
+    - 26½
+    - ''
+-
+    - '8.'
+    - { text: 'SV FB Wedemark', url: '?mannschaft=6147', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1406&r=8#p6147x6032', title: 'gegen ST Langenhagen', text: 3½ }]
+    - [{ url: '?staffel=1406&r=7#p6147x6056', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1406&r=1#p6147x6111', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=1406&r=2#p6147x6084', title: 'gegen SG SF Ricklingen 2', text: 2½ }]
+    - [{ url: '?staffel=1406&r=5#p6147x6134', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=1406&r=6#p6147x6132', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1406&r=3#p6147x6030', title: 'gegen SC Uetze-Hänigsen', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1406&r=4#p6147x6057', title: 'gegen SG WB Eilenriede', text: 3½ }]
+    - 4
+    - 29½
+    - ''
+-
+    - '9.'
+    - { text: 'SG WB Eilenriede', url: '?mannschaft=6057', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1406&r=6#p6057x6032', title: 'gegen ST Langenhagen', text: 1½ }]
+    - [{ url: '?staffel=1406&r=1#p6057x6056', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=1406&r=7#p6057x6111', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=1406&r=3#p6057x6084', title: 'gegen SG SF Ricklingen 2', text: 3½ }]
+    - [{ url: '?staffel=1406&r=9#p6057x6134', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=1406&r=5#p6057x6132', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - [{ url: '?staffel=1406&r=8#p6057x6030', title: 'gegen SC Uetze-Hänigsen', text: '2' }]
+    - [{ url: '?staffel=1406&r=4#p6057x6147', title: 'gegen SV FB Wedemark', text: 4½ }]
+    - xxx
+    - 3
+    - 24½
+    - ''

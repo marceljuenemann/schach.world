@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Bl. 2', url: '?mannschaft=448', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=407&r=5#p448x455', title: 'gegen SF Spelle', text: '0' }]
+    - [{ url: '?staffel=407&r=7#p448x451', title: 'gegen SK Brake', text: 4½ }]
+    - [{ url: '?staffel=407&r=1#p448x453', title: 'gegen Hagener SV 2', text: '6' }]
+    - [{ url: '?staffel=407&r=2#p448x452', title: 'gegen SC Bad Zwi.ahn', text: '6' }]
+    - [{ url: '?staffel=407&r=3#p448x454', title: 'gegen SG Oesede Gmht. 2', text: '5' }]
+    - [{ url: '?staffel=407&r=4#p448x449', title: 'gegen SV Veldhausen', text: '6' }]
+    - [{ url: '?staffel=407&r=6#p448x450', title: 'gegen SK Varel', text: '6' }]
+    - 12
+    - 33½
+    - ''
+-
+    - '2.'
+    - { text: 'SF Spelle', url: '?mannschaft=455', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=407&r=5#p455x448', title: 'gegen SK Nordhorn-Bl. 2', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=407&r=1#p455x451', title: 'gegen SK Brake', text: '3' }]
+    - [{ url: '?staffel=407&r=2#p455x453', title: 'gegen Hagener SV 2', text: '5' }]
+    - [{ url: '?staffel=407&r=6#p455x452', title: 'gegen SC Bad Zwi.ahn', text: 2½ }]
+    - [{ url: '?staffel=407&r=7#p455x454', title: 'gegen SG Oesede Gmht. 2', text: 5½ }]
+    - [{ url: '?staffel=407&r=3#p455x449', title: 'gegen SV Veldhausen', text: 3½ }]
+    - [{ url: '?staffel=407&r=4#p455x450', title: 'gegen SK Varel', text: '4' }]
+    - 11
+    - 29½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Brake', url: '?mannschaft=451', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=407&r=7#p451x448', title: 'gegen SK Nordhorn-Bl. 2', text: 1½ }]
+    - [{ url: '?staffel=407&r=1#p451x455', title: 'gegen SF Spelle', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=407&r=3#p451x453', title: 'gegen Hagener SV 2', text: 4½ }]
+    - [{ url: '?staffel=407&r=4#p451x452', title: 'gegen SC Bad Zwi.ahn', text: 3½ }]
+    - [{ url: '?staffel=407&r=6#p451x454', title: 'gegen SG Oesede Gmht. 2', text: 2½ }]
+    - [{ url: '?staffel=407&r=2#p451x449', title: 'gegen SV Veldhausen', text: '4' }]
+    - [{ url: '?staffel=407&r=5#p451x450', title: 'gegen SK Varel', text: '2' }]
+    - 7
+    - '21'
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV 2', url: '?mannschaft=453', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=407&r=1#p453x448', title: 'gegen SK Nordhorn-Bl. 2', text: '0' }]
+    - [{ url: '?staffel=407&r=2#p453x455', title: 'gegen SF Spelle', text: '1' }]
+    - [{ url: '?staffel=407&r=3#p453x451', title: 'gegen SK Brake', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=407&r=5#p453x452', title: 'gegen SC Bad Zwi.ahn', text: '2' }]
+    - [{ url: '?staffel=407&r=4#p453x454', title: 'gegen SG Oesede Gmht. 2', text: '4' }]
+    - [{ url: '?staffel=407&r=6#p453x449', title: 'gegen SV Veldhausen', text: '4' }]
+    - [{ url: '?staffel=407&r=7#p453x450', title: 'gegen SK Varel', text: 4½ }]
+    - 6
+    - '17'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Bad Zwi.ahn', url: '?mannschaft=452', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=407&r=2#p452x448', title: 'gegen SK Nordhorn-Bl. 2', text: '0' }]
+    - [{ url: '?staffel=407&r=6#p452x455', title: 'gegen SF Spelle', text: 3½ }]
+    - [{ url: '?staffel=407&r=4#p452x451', title: 'gegen SK Brake', text: 2½ }]
+    - [{ url: '?staffel=407&r=5#p452x453', title: 'gegen Hagener SV 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=407&r=1#p452x454', title: 'gegen SG Oesede Gmht. 2', text: '0' }]
+    - [{ url: '?staffel=407&r=7#p452x449', title: 'gegen SV Veldhausen', text: '3' }]
+    - [{ url: '?staffel=407&r=3#p452x450', title: 'gegen SK Varel', text: '3' }]
+    - 6
+    - '16'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Oesede Gmht. 2', url: '?mannschaft=454', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=407&r=3#p454x448', title: 'gegen SK Nordhorn-Bl. 2', text: '1' }]
+    - [{ url: '?staffel=407&r=7#p454x455', title: 'gegen SF Spelle', text: ½ }]
+    - [{ url: '?staffel=407&r=6#p454x451', title: 'gegen SK Brake', text: 3½ }]
+    - [{ url: '?staffel=407&r=4#p454x453', title: 'gegen Hagener SV 2', text: '2' }]
+    - [{ url: '?staffel=407&r=1#p454x452', title: 'gegen SC Bad Zwi.ahn', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=407&r=5#p454x449', title: 'gegen SV Veldhausen', text: '2' }]
+    - [{ url: '?staffel=407&r=2#p454x450', title: 'gegen SK Varel', text: '3' }]
+    - 5
+    - '18'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Veldhausen', url: '?mannschaft=449', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=407&r=4#p449x448', title: 'gegen SK Nordhorn-Bl. 2', text: '0' }]
+    - [{ url: '?staffel=407&r=3#p449x455', title: 'gegen SF Spelle', text: 2½ }]
+    - [{ url: '?staffel=407&r=2#p449x451', title: 'gegen SK Brake', text: '2' }]
+    - [{ url: '?staffel=407&r=6#p449x453', title: 'gegen Hagener SV 2', text: '2' }]
+    - [{ url: '?staffel=407&r=7#p449x452', title: 'gegen SC Bad Zwi.ahn', text: '3' }]
+    - [{ url: '?staffel=407&r=5#p449x454', title: 'gegen SG Oesede Gmht. 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=407&r=1#p449x450', title: 'gegen SK Varel', text: '4' }]
+    - 5
+    - 17½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Varel', url: '?mannschaft=450', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=407&r=6#p450x448', title: 'gegen SK Nordhorn-Bl. 2', text: '0' }]
+    - [{ url: '?staffel=407&r=4#p450x455', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=407&r=5#p450x451', title: 'gegen SK Brake', text: '4' }]
+    - [{ url: '?staffel=407&r=7#p450x453', title: 'gegen Hagener SV 2', text: 1½ }]
+    - [{ url: '?staffel=407&r=3#p450x452', title: 'gegen SC Bad Zwi.ahn', text: '3' }]
+    - [{ url: '?staffel=407&r=2#p450x454', title: 'gegen SG Oesede Gmht. 2', text: '3' }]
+    - [{ url: '?staffel=407&r=1#p450x449', title: 'gegen SV Veldhausen', text: '2' }]
+    - xxx
+    - 4
+    - 15½
+    - ''

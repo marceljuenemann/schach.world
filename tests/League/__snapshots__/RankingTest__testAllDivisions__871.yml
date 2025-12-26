@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Königsjäger Süd-West', url: '?mannschaft=7336', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1695&r=3#p7336x7333', title: 'gegen TSG Oberschöneweide', text: 3½ }]
+    - [{ url: '?staffel=1695&r=5#p7336x7335', title: 'gegen Makkabi Rostock', text: '4' }]
+    - [{ url: '?staffel=1695&r=1#p7336x7331', title: 'gegen Barnimer SF', text: '4' }]
+    - [{ url: '?staffel=1695&r=4#p7336x7332', title: 'gegen SC Kreuzberg', text: '3' }]
+    - [{ url: '?staffel=1695&r=2#p7336x7334', title: 'gegen Empor Potsdam', text: '6' }]
+    - 9
+    - 20½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TSG Oberschöneweide', url: '?mannschaft=7333', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1695&r=3#p7333x7336', title: 'gegen Königsjäger Süd-West', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1695&r=4#p7333x7335', title: 'gegen Makkabi Rostock', text: '6' }]
+    - [{ url: '?staffel=1695&r=5#p7333x7331', title: 'gegen Barnimer SF', text: '3' }]
+    - [{ url: '?staffel=1695&r=2#p7333x7332', title: 'gegen SC Kreuzberg', text: '4' }]
+    - [{ url: '?staffel=1695&r=1#p7333x7334', title: 'gegen Empor Potsdam', text: '6' }]
+    - 7
+    - 21½
+    - ''
+-
+    - '3.'
+    - { text: 'Makkabi Rostock', url: '?mannschaft=7335', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1695&r=5#p7335x7336', title: 'gegen Königsjäger Süd-West', text: '2' }]
+    - [{ url: '?staffel=1695&r=4#p7335x7333', title: 'gegen TSG Oberschöneweide', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1695&r=2#p7335x7331', title: 'gegen Barnimer SF', text: '3' }]
+    - [{ url: '?staffel=1695&r=1#p7335x7332', title: 'gegen SC Kreuzberg', text: 3½ }]
+    - [{ url: '?staffel=1695&r=3#p7335x7334', title: 'gegen Empor Potsdam', text: '4' }]
+    - 5
+    - 12½
+    - ''
+-
+    - '4.'
+    - { text: 'Barnimer SF', url: '?mannschaft=7331', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1695&r=1#p7331x7336', title: 'gegen Königsjäger Süd-West', text: '2' }]
+    - [{ url: '?staffel=1695&r=5#p7331x7333', title: 'gegen TSG Oberschöneweide', text: '3' }]
+    - [{ url: '?staffel=1695&r=2#p7331x7335', title: 'gegen Makkabi Rostock', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1695&r=3#p7331x7332', title: 'gegen SC Kreuzberg', text: '0' }]
+    - [{ url: '?staffel=1695&r=4#p7331x7334', title: 'gegen Empor Potsdam', text: '4' }]
+    - 4
+    - '12'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Kreuzberg', url: '?mannschaft=7332', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1695&r=4#p7332x7336', title: 'gegen Königsjäger Süd-West', text: '3' }]
+    - [{ url: '?staffel=1695&r=2#p7332x7333', title: 'gegen TSG Oberschöneweide', text: '2' }]
+    - [{ url: '?staffel=1695&r=1#p7332x7335', title: 'gegen Makkabi Rostock', text: 2½ }]
+    - [{ url: '?staffel=1695&r=3#p7332x7331', title: 'gegen Barnimer SF', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1695&r=5#p7332x7334', title: 'gegen Empor Potsdam', text: 1½ }]
+    - 3
+    - '15'
+    - ''
+-
+    - '6.'
+    - { text: 'Empor Potsdam', url: '?mannschaft=7334', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1695&r=2#p7334x7336', title: 'gegen Königsjäger Süd-West', text: '0' }]
+    - [{ url: '?staffel=1695&r=1#p7334x7333', title: 'gegen TSG Oberschöneweide', text: '0' }]
+    - [{ url: '?staffel=1695&r=3#p7334x7335', title: 'gegen Makkabi Rostock', text: '2' }]
+    - [{ url: '?staffel=1695&r=4#p7334x7331', title: 'gegen Barnimer SF', text: '2' }]
+    - [{ url: '?staffel=1695&r=5#p7334x7332', title: 'gegen SC Kreuzberg', text: 4½ }]
+    - xxx
+    - 2
+    - 8½
+    - absteigerRelegation

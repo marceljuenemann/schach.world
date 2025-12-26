@@ -1,0 +1,23 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Kreuzberg', url: '?mannschaft=7018', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1649&r=1#p7018x7013', title: 'gegen Königsjäger Süd-West', text: '5' }]
+    - 2
+    - '5'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Königsjäger Süd-West', url: '?mannschaft=7013', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1649&r=1#p7013x7018', title: 'gegen SC Kreuzberg', text: '1' }]
+    - xxx
+    - 0
+    - '1'
+    - ''

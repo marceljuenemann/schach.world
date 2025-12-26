@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hildesheimer SV 5', url: '?mannschaft=3825', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=831&r=3#p3825x3823', title: 'gegen ESV Göttingen 3', text: '2' }]
+    - [{ url: '?staffel=831&r=2#p3825x3824', title: 'gegen SK Gronau 2', text: '3' }]
+    - [{ url: '?staffel=831&r=1#p3825x3826', title: 'gegen VfL Oker', text: '4' }]
+    - 5
+    - '9'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'ESV Göttingen 3', url: '?mannschaft=3823', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=831&r=3#p3823x3825', title: 'gegen Hildesheimer SV 5', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=831&r=1#p3823x3824', title: 'gegen SK Gronau 2', text: 2½ }]
+    - [{ url: '?staffel=831&r=2#p3823x3826', title: 'gegen VfL Oker', text: '3' }]
+    - 5
+    - 7½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SK Gronau 2', url: '?mannschaft=3824', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=831&r=2#p3824x3825', title: 'gegen Hildesheimer SV 5', text: '1' }]
+    - [{ url: '?staffel=831&r=1#p3824x3823', title: 'gegen ESV Göttingen 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=831&r=3#p3824x3826', title: 'gegen VfL Oker', text: 2½ }]
+    - 2
+    - '5'
+    - ''
+-
+    - '4.'
+    - { text: 'VfL Oker', url: '?mannschaft=3826', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=831&r=1#p3826x3825', title: 'gegen Hildesheimer SV 5', text: '0' }]
+    - [{ url: '?staffel=831&r=2#p3826x3823', title: 'gegen ESV Göttingen 3', text: '1' }]
+    - [{ url: '?staffel=831&r=3#p3826x3824', title: 'gegen SK Gronau 2', text: 1½ }]
+    - xxx
+    - 0
+    - 2½
+    - ''

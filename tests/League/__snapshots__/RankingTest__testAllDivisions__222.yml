@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Leipzig-Lind', url: '?mannschaft=2530', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=649&r=3#p2530x2344', title: 'gegen USC Magdeburg', text: '3' }]
+    - [{ url: '?staffel=649&r=4#p2530x2412', title: 'gegen SG Löberitz', text: 3½ }]
+    - [{ url: '?staffel=649&r=5#p2530x2373', title: 'gegen SV Merseburg', text: '3' }]
+    - [{ url: '?staffel=649&r=1#p2530x2456', title: 'gegen SG Leipzig 2', text: '4' }]
+    - [{ url: '?staffel=649&r=2#p2530x2410', title: 'gegen CAISSA Kassel 1', text: '3' }]
+    - 10
+    - 16½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'USC Magdeburg', url: '?mannschaft=2344', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=649&r=3#p2344x2530', title: 'gegen SC Leipzig-Lind', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=649&r=5#p2344x2412', title: 'gegen SG Löberitz', text: 2½ }]
+    - [{ url: '?staffel=649&r=1#p2344x2373', title: 'gegen SV Merseburg', text: '1' }]
+    - [{ url: '?staffel=649&r=2#p2344x2456', title: 'gegen SG Leipzig 2', text: '3' }]
+    - [{ url: '?staffel=649&r=4#p2344x2410', title: 'gegen CAISSA Kassel 1', text: '4' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Löberitz', url: '?mannschaft=2412', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=649&r=4#p2412x2530', title: 'gegen SC Leipzig-Lind', text: ½ }]
+    - [{ url: '?staffel=649&r=5#p2412x2344', title: 'gegen USC Magdeburg', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=649&r=2#p2412x2373', title: 'gegen SV Merseburg', text: '2' }]
+    - [{ url: '?staffel=649&r=3#p2412x2456', title: 'gegen SG Leipzig 2', text: '3' }]
+    - [{ url: '?staffel=649&r=1#p2412x2410', title: 'gegen CAISSA Kassel 1', text: '4' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Merseburg', url: '?mannschaft=2373', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=649&r=5#p2373x2530', title: 'gegen SC Leipzig-Lind', text: '1' }]
+    - [{ url: '?staffel=649&r=1#p2373x2344', title: 'gegen USC Magdeburg', text: '3' }]
+    - [{ url: '?staffel=649&r=2#p2373x2412', title: 'gegen SG Löberitz', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=649&r=4#p2373x2456', title: 'gegen SG Leipzig 2', text: '0' }]
+    - [{ url: '?staffel=649&r=3#p2373x2410', title: 'gegen CAISSA Kassel 1', text: 2½ }]
+    - 5
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Leipzig 2', url: '?mannschaft=2456', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=649&r=1#p2456x2530', title: 'gegen SC Leipzig-Lind', text: '0' }]
+    - [{ url: '?staffel=649&r=2#p2456x2344', title: 'gegen USC Magdeburg', text: '1' }]
+    - [{ url: '?staffel=649&r=3#p2456x2412', title: 'gegen SG Löberitz', text: '1' }]
+    - [{ url: '?staffel=649&r=4#p2456x2373', title: 'gegen SV Merseburg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=649&r=5#p2456x2410', title: 'gegen CAISSA Kassel 1', text: '2' }]
+    - 3
+    - '8'
+    - absteiger
+-
+    - '6.'
+    - { text: 'CAISSA Kassel 1', url: '?mannschaft=2410', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=649&r=2#p2410x2530', title: 'gegen SC Leipzig-Lind', text: '1' }]
+    - [{ url: '?staffel=649&r=4#p2410x2344', title: 'gegen USC Magdeburg', text: '0' }]
+    - [{ url: '?staffel=649&r=1#p2410x2412', title: 'gegen SG Löberitz', text: '0' }]
+    - [{ url: '?staffel=649&r=3#p2410x2373', title: 'gegen SV Merseburg', text: 1½ }]
+    - [{ url: '?staffel=649&r=5#p2410x2456', title: 'gegen SG Leipzig 2', text: '2' }]
+    - xxx
+    - 1
+    - 4½
+    - absteiger

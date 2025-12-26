@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'FC Bayern München', url: '?mannschaft=4192', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=926&r=5#p4192x4191', title: 'gegen SG Augsburg', text: 3½ }]
+    - [{ url: '?staffel=926&r=4#p4192x4190', title: 'gegen SK Langen', text: '3' }]
+    - [{ url: '?staffel=926&r=1#p4192x4195', title: 'gegen TSV Schott Mainz', text: '4' }]
+    - [{ url: '?staffel=926&r=3#p4192x4193', title: 'gegen SV Hofheim', text: '4' }]
+    - [{ url: '?staffel=926&r=2#p4192x4188', title: 'gegen Wadgass./Differten', text: 3½ }]
+    - [{ url: '?staffel=926&r=6#p4192x4194', title: 'gegen SC Zeulenroda', text: 3½ }]
+    - [{ url: '?staffel=926&r=7#p4192x4189', title: 'gegen CSC Aufbau 95', text: '3' }]
+    - 12
+    - 24½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Augsburg', url: '?mannschaft=4191', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=926&r=5#p4191x4192', title: 'gegen FC Bayern München', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=926&r=3#p4191x4190', title: 'gegen SK Langen', text: '4' }]
+    - [{ url: '?staffel=926&r=2#p4191x4195', title: 'gegen TSV Schott Mainz', text: '3' }]
+    - [{ url: '?staffel=926&r=4#p4191x4193', title: 'gegen SV Hofheim', text: 4½ }]
+    - [{ url: '?staffel=926&r=1#p4191x4188', title: 'gegen Wadgass./Differten', text: '4' }]
+    - [{ url: '?staffel=926&r=7#p4191x4194', title: 'gegen SC Zeulenroda', text: 3½ }]
+    - [{ url: '?staffel=926&r=6#p4191x4189', title: 'gegen CSC Aufbau 95', text: 4½ }]
+    - 11
+    - '26'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Langen', url: '?mannschaft=4190', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=926&r=4#p4190x4192', title: 'gegen FC Bayern München', text: '3' }]
+    - [{ url: '?staffel=926&r=3#p4190x4191', title: 'gegen SG Augsburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=926&r=7#p4190x4195', title: 'gegen TSV Schott Mainz', text: '3' }]
+    - [{ url: '?staffel=926&r=5#p4190x4193', title: 'gegen SV Hofheim', text: '4' }]
+    - [{ url: '?staffel=926&r=6#p4190x4188', title: 'gegen Wadgass./Differten', text: '1' }]
+    - [{ url: '?staffel=926&r=2#p4190x4194', title: 'gegen SC Zeulenroda', text: 3½ }]
+    - [{ url: '?staffel=926&r=1#p4190x4189', title: 'gegen CSC Aufbau 95', text: 3½ }]
+    - 8
+    - '20'
+    - ''
+-
+    - '4.'
+    - { text: 'TSV Schott Mainz', url: '?mannschaft=4195', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=926&r=1#p4195x4192', title: 'gegen FC Bayern München', text: '2' }]
+    - [{ url: '?staffel=926&r=2#p4195x4191', title: 'gegen SG Augsburg', text: '3' }]
+    - [{ url: '?staffel=926&r=7#p4195x4190', title: 'gegen SK Langen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=926&r=6#p4195x4193', title: 'gegen SV Hofheim', text: 2½ }]
+    - [{ url: '?staffel=926&r=5#p4195x4188', title: 'gegen Wadgass./Differten', text: '3' }]
+    - [{ url: '?staffel=926&r=3#p4195x4194', title: 'gegen SC Zeulenroda', text: 3½ }]
+    - [{ url: '?staffel=926&r=4#p4195x4189', title: 'gegen CSC Aufbau 95', text: '4' }]
+    - 7
+    - '21'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Hofheim', url: '?mannschaft=4193', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=926&r=3#p4193x4192', title: 'gegen FC Bayern München', text: '2' }]
+    - [{ url: '?staffel=926&r=4#p4193x4191', title: 'gegen SG Augsburg', text: 1½ }]
+    - [{ url: '?staffel=926&r=5#p4193x4190', title: 'gegen SK Langen', text: '2' }]
+    - [{ url: '?staffel=926&r=6#p4193x4195', title: 'gegen TSV Schott Mainz', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=926&r=7#p4193x4188', title: 'gegen Wadgass./Differten', text: '3' }]
+    - [{ url: '?staffel=926&r=1#p4193x4194', title: 'gegen SC Zeulenroda', text: '4' }]
+    - [{ url: '?staffel=926&r=2#p4193x4189', title: 'gegen CSC Aufbau 95', text: 3½ }]
+    - 7
+    - 19½
+    - ''
+-
+    - '6.'
+    - { text: Wadgass./Differten, url: '?mannschaft=4188', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=926&r=2#p4188x4192', title: 'gegen FC Bayern München', text: 2½ }]
+    - [{ url: '?staffel=926&r=1#p4188x4191', title: 'gegen SG Augsburg', text: '2' }]
+    - [{ url: '?staffel=926&r=6#p4188x4190', title: 'gegen SK Langen', text: '5' }]
+    - [{ url: '?staffel=926&r=5#p4188x4195', title: 'gegen TSV Schott Mainz', text: '3' }]
+    - [{ url: '?staffel=926&r=7#p4188x4193', title: 'gegen SV Hofheim', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=926&r=4#p4188x4194', title: 'gegen SC Zeulenroda', text: 2½ }]
+    - [{ url: '?staffel=926&r=3#p4188x4189', title: 'gegen CSC Aufbau 95', text: 3½ }]
+    - 6
+    - 21½
+    - ''
+-
+    - '7.'
+    - { text: 'SC Zeulenroda', url: '?mannschaft=4194', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=926&r=6#p4194x4192', title: 'gegen FC Bayern München', text: 2½ }]
+    - [{ url: '?staffel=926&r=7#p4194x4191', title: 'gegen SG Augsburg', text: 2½ }]
+    - [{ url: '?staffel=926&r=2#p4194x4190', title: 'gegen SK Langen', text: 2½ }]
+    - [{ url: '?staffel=926&r=3#p4194x4195', title: 'gegen TSV Schott Mainz', text: 2½ }]
+    - [{ url: '?staffel=926&r=1#p4194x4193', title: 'gegen SV Hofheim', text: '2' }]
+    - [{ url: '?staffel=926&r=4#p4194x4188', title: 'gegen Wadgass./Differten', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=926&r=5#p4194x4189', title: 'gegen CSC Aufbau 95', text: 3½ }]
+    - 4
+    - '19'
+    - absteiger
+-
+    - '8.'
+    - { text: 'CSC Aufbau 95', url: '?mannschaft=4189', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=926&r=7#p4189x4192', title: 'gegen FC Bayern München', text: '3' }]
+    - [{ url: '?staffel=926&r=6#p4189x4191', title: 'gegen SG Augsburg', text: 1½ }]
+    - [{ url: '?staffel=926&r=1#p4189x4190', title: 'gegen SK Langen', text: 2½ }]
+    - [{ url: '?staffel=926&r=4#p4189x4195', title: 'gegen TSV Schott Mainz', text: '2' }]
+    - [{ url: '?staffel=926&r=2#p4189x4193', title: 'gegen SV Hofheim', text: 2½ }]
+    - [{ url: '?staffel=926&r=3#p4189x4188', title: 'gegen Wadgass./Differten', text: 2½ }]
+    - [{ url: '?staffel=926&r=5#p4189x4194', title: 'gegen SC Zeulenroda', text: 2½ }]
+    - xxx
+    - 1
+    - 16½
+    - absteiger

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Stader SV', url: '?mannschaft=7647', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1759&r=5#p7647x7649', title: 'gegen SK Verden', text: ½ }]
+    - [{ url: '?staffel=1759&r=7#p7647x7651', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - [{ url: '?staffel=1759&r=2#p7647x7653', title: 'gegen BW Buchholz', text: 3½ }]
+    - [{ url: '?staffel=1759&r=6#p7647x7652', title: 'gegen SV Bad Bevensen 2', text: '3' }]
+    - [{ url: '?staffel=1759&r=1#p7647x7646', title: 'gegen SG Eystrup/Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=1759&r=3#p7647x7650', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - [{ url: '?staffel=1759&r=4#p7647x7648', title: 'gegen Läuferpaar Verden', text: '4' }]
+    - 12
+    - 21½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SK Verden', url: '?mannschaft=7649', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1759&r=5#p7649x7647', title: 'gegen Stader SV', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1759&r=3#p7649x7651', title: 'gegen SV Bad Bevensen', text: 1½ }]
+    - [{ url: '?staffel=1759&r=6#p7649x7653', title: 'gegen BW Buchholz', text: '2' }]
+    - [{ url: '?staffel=1759&r=2#p7649x7652', title: 'gegen SV Bad Bevensen 2', text: '3' }]
+    - [{ url: '?staffel=1759&r=4#p7649x7646', title: 'gegen SG Eystrup/Stolzenau', text: '3' }]
+    - [{ url: '?staffel=1759&r=7#p7649x7650', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - [{ url: '?staffel=1759&r=1#p7649x7648', title: 'gegen Läuferpaar Verden', text: '3' }]
+    - 12
+    - '20'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=7651', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1759&r=7#p7651x7647', title: 'gegen Stader SV', text: '1' }]
+    - [{ url: '?staffel=1759&r=3#p7651x7649', title: 'gegen SK Verden', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1759&r=5#p7651x7653', title: 'gegen BW Buchholz', text: '3' }]
+    - [{ url: '?staffel=1759&r=1#p7651x7652', title: 'gegen SV Bad Bevensen 2', text: '2' }]
+    - [{ url: '?staffel=1759&r=6#p7651x7646', title: 'gegen SG Eystrup/Stolzenau', text: '4' }]
+    - [{ url: '?staffel=1759&r=4#p7651x7650', title: 'gegen SV Winsen (Luhe)', text: 2½ }]
+    - [{ url: '?staffel=1759&r=2#p7651x7648', title: 'gegen Läuferpaar Verden', text: '3' }]
+    - 10
+    - '17'
+    - ''
+-
+    - '4.'
+    - { text: 'BW Buchholz', url: '?mannschaft=7653', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1759&r=2#p7653x7647', title: 'gegen Stader SV', text: ½ }]
+    - [{ url: '?staffel=1759&r=6#p7653x7649', title: 'gegen SK Verden', text: '2' }]
+    - [{ url: '?staffel=1759&r=5#p7653x7651', title: 'gegen SV Bad Bevensen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1759&r=4#p7653x7652', title: 'gegen SV Bad Bevensen 2', text: 2½ }]
+    - [{ url: '?staffel=1759&r=3#p7653x7646', title: 'gegen SG Eystrup/Stolzenau', text: '2' }]
+    - [{ url: '?staffel=1759&r=1#p7653x7650', title: 'gegen SV Winsen (Luhe)', text: '3' }]
+    - [{ url: '?staffel=1759&r=7#p7653x7648', title: 'gegen Läuferpaar Verden', text: '3' }]
+    - 8
+    - '14'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Bad Bevensen 2', url: '?mannschaft=7652', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1759&r=6#p7652x7647', title: 'gegen Stader SV', text: '1' }]
+    - [{ url: '?staffel=1759&r=2#p7652x7649', title: 'gegen SK Verden', text: '0' }]
+    - [{ url: '?staffel=1759&r=1#p7652x7651', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=1759&r=4#p7652x7653', title: 'gegen BW Buchholz', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1759&r=7#p7652x7646', title: 'gegen SG Eystrup/Stolzenau', text: '4' }]
+    - [{ url: '?staffel=1759&r=5#p7652x7650', title: 'gegen SV Winsen (Luhe)', text: '2' }]
+    - [{ url: '?staffel=1759&r=3#p7652x7648', title: 'gegen Läuferpaar Verden', text: '3' }]
+    - 6
+    - 13½
+    - ''
+-
+    - '6.'
+    - { text: 'SG Eystrup/Stolzenau', url: '?mannschaft=7646', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1759&r=1#p7646x7647', title: 'gegen Stader SV', text: ½ }]
+    - [{ url: '?staffel=1759&r=4#p7646x7649', title: 'gegen SK Verden', text: '1' }]
+    - [{ url: '?staffel=1759&r=6#p7646x7651', title: 'gegen SV Bad Bevensen', text: '0' }]
+    - [{ url: '?staffel=1759&r=3#p7646x7653', title: 'gegen BW Buchholz', text: '2' }]
+    - [{ url: '?staffel=1759&r=7#p7646x7652', title: 'gegen SV Bad Bevensen 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1759&r=2#p7646x7650', title: 'gegen SV Winsen (Luhe)', text: 2½ }]
+    - [{ url: '?staffel=1759&r=5#p7646x7648', title: 'gegen Läuferpaar Verden', text: '3' }]
+    - 5
+    - '9'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Winsen (Luhe)', url: '?mannschaft=7650', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1759&r=3#p7650x7647', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=1759&r=7#p7650x7649', title: 'gegen SK Verden', text: '0' }]
+    - [{ url: '?staffel=1759&r=4#p7650x7651', title: 'gegen SV Bad Bevensen', text: 1½ }]
+    - [{ url: '?staffel=1759&r=1#p7650x7653', title: 'gegen BW Buchholz', text: '1' }]
+    - [{ url: '?staffel=1759&r=5#p7650x7652', title: 'gegen SV Bad Bevensen 2', text: '2' }]
+    - [{ url: '?staffel=1759&r=2#p7650x7646', title: 'gegen SG Eystrup/Stolzenau', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1759&r=6#p7650x7648', title: 'gegen Läuferpaar Verden', text: '4' }]
+    - 3
+    - '10'
+    - ''
+-
+    - '8.'
+    - { text: 'Läuferpaar Verden', url: '?mannschaft=7648', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1759&r=4#p7648x7647', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=1759&r=1#p7648x7649', title: 'gegen SK Verden', text: '1' }]
+    - [{ url: '?staffel=1759&r=2#p7648x7651', title: 'gegen SV Bad Bevensen', text: '1' }]
+    - [{ url: '?staffel=1759&r=7#p7648x7653', title: 'gegen BW Buchholz', text: '1' }]
+    - [{ url: '?staffel=1759&r=3#p7648x7652', title: 'gegen SV Bad Bevensen 2', text: '1' }]
+    - [{ url: '?staffel=1759&r=5#p7648x7646', title: 'gegen SG Eystrup/Stolzenau', text: '1' }]
+    - [{ url: '?staffel=1759&r=6#p7648x7650', title: 'gegen SV Winsen (Luhe)', text: '0' }]
+    - xxx
+    - 0
+    - '5'
+    - ''

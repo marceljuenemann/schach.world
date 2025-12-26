@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hannover 96 2', url: '?mannschaft=7204', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1673&r=7#p7204x7126', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=1673&r=4#p7204x7234', title: 'gegen SV Springe 2', text: '6' }]
+    - [{ url: '?staffel=1673&r=3#p7204x7235', title: 'gegen SK Rinteln 2', text: '5' }]
+    - [{ url: '?staffel=1673&r=6#p7204x7232', title: 'gegen HSK Lister Turm 7', text: '5' }]
+    - [{ url: '?staffel=1673&r=2#p7204x7161', title: 'gegen SVg Calenberg 2', text: '6' }]
+    - [{ url: '?staffel=1673&r=1#p7204x7150', title: 'gegen SF Barsinghausen 2', text: '6' }]
+    - [{ url: '?staffel=1673&r=5#p7204x7085', title: 'gegen SV Warmsen', text: 6½ }]
+    - 13
+    - 38½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=7126', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1673&r=7#p7126x7204', title: 'gegen Hannover 96 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1673&r=2#p7126x7234', title: 'gegen SV Springe 2', text: '5' }]
+    - [{ url: '?staffel=1673&r=6#p7126x7235', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1673&r=4#p7126x7232', title: 'gegen HSK Lister Turm 7', text: 4½ }]
+    - [{ url: '?staffel=1673&r=5#p7126x7161', title: 'gegen SVg Calenberg 2', text: '5' }]
+    - [{ url: '?staffel=1673&r=3#p7126x7150', title: 'gegen SF Barsinghausen 2', text: 5½ }]
+    - [{ url: '?staffel=1673&r=1#p7126x7085', title: 'gegen SV Warmsen', text: '5' }]
+    - 12
+    - '33'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SV Springe 2', url: '?mannschaft=7234', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1673&r=4#p7234x7204', title: 'gegen Hannover 96 2', text: '2' }]
+    - [{ url: '?staffel=1673&r=2#p7234x7126', title: 'gegen SV Bückeburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1673&r=7#p7234x7235', title: 'gegen SK Rinteln 2', text: '7' }]
+    - [{ url: '?staffel=1673&r=5#p7234x7232', title: 'gegen HSK Lister Turm 7', text: ½ }]
+    - [{ url: '?staffel=1673&r=1#p7234x7161', title: 'gegen SVg Calenberg 2', text: 5½ }]
+    - [{ url: '?staffel=1673&r=6#p7234x7150', title: 'gegen SF Barsinghausen 2', text: '4' }]
+    - [{ url: '?staffel=1673&r=3#p7234x7085', title: 'gegen SV Warmsen', text: '8' }]
+    - 7
+    - '30'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=7235', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1673&r=3#p7235x7204', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=1673&r=6#p7235x7126', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=1673&r=7#p7235x7234', title: 'gegen SV Springe 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1673&r=1#p7235x7232', title: 'gegen HSK Lister Turm 7', text: '6' }]
+    - [{ url: '?staffel=1673&r=4#p7235x7161', title: 'gegen SVg Calenberg 2', text: 3½ }]
+    - [{ url: '?staffel=1673&r=5#p7235x7150', title: 'gegen SF Barsinghausen 2', text: '6' }]
+    - [{ url: '?staffel=1673&r=2#p7235x7085', title: 'gegen SV Warmsen', text: '5' }]
+    - 7
+    - 28½
+    - ''
+-
+    - '5.'
+    - { text: 'HSK Lister Turm 7', url: '?mannschaft=7232', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1673&r=6#p7232x7204', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=1673&r=4#p7232x7126', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=1673&r=5#p7232x7234', title: 'gegen SV Springe 2', text: 7½ }]
+    - [{ url: '?staffel=1673&r=1#p7232x7235', title: 'gegen SK Rinteln 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1673&r=3#p7232x7161', title: 'gegen SVg Calenberg 2', text: '2' }]
+    - [{ url: '?staffel=1673&r=2#p7232x7150', title: 'gegen SF Barsinghausen 2', text: '6' }]
+    - [{ url: '?staffel=1673&r=7#p7232x7085', title: 'gegen SV Warmsen', text: '8' }]
+    - 6
+    - '32'
+    - ''
+-
+    - '6.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=7161', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1673&r=2#p7161x7204', title: 'gegen Hannover 96 2', text: '2' }]
+    - [{ url: '?staffel=1673&r=5#p7161x7126', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=1673&r=1#p7161x7234', title: 'gegen SV Springe 2', text: 2½ }]
+    - [{ url: '?staffel=1673&r=4#p7161x7235', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - [{ url: '?staffel=1673&r=3#p7161x7232', title: 'gegen HSK Lister Turm 7', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1673&r=7#p7161x7150', title: 'gegen SF Barsinghausen 2', text: '2' }]
+    - [{ url: '?staffel=1673&r=6#p7161x7085', title: 'gegen SV Warmsen', text: '3' }]
+    - 4
+    - '23'
+    - ''
+-
+    - '7.'
+    - { text: 'SF Barsinghausen 2', url: '?mannschaft=7150', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1673&r=1#p7150x7204', title: 'gegen Hannover 96 2', text: '2' }]
+    - [{ url: '?staffel=1673&r=3#p7150x7126', title: 'gegen SV Bückeburg', text: 2½ }]
+    - [{ url: '?staffel=1673&r=6#p7150x7234', title: 'gegen SV Springe 2', text: '4' }]
+    - [{ url: '?staffel=1673&r=5#p7150x7235', title: 'gegen SK Rinteln 2', text: '2' }]
+    - [{ url: '?staffel=1673&r=2#p7150x7232', title: 'gegen HSK Lister Turm 7', text: '2' }]
+    - [{ url: '?staffel=1673&r=7#p7150x7161', title: 'gegen SVg Calenberg 2', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1673&r=4#p7150x7085', title: 'gegen SV Warmsen', text: '4' }]
+    - 4
+    - 22½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Warmsen', url: '?mannschaft=7085', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1673&r=5#p7085x7204', title: 'gegen Hannover 96 2', text: 1½ }]
+    - [{ url: '?staffel=1673&r=1#p7085x7126', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=1673&r=3#p7085x7234', title: 'gegen SV Springe 2', text: '0' }]
+    - [{ url: '?staffel=1673&r=2#p7085x7235', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=1673&r=7#p7085x7232', title: 'gegen HSK Lister Turm 7', text: '0' }]
+    - [{ url: '?staffel=1673&r=6#p7085x7161', title: 'gegen SVg Calenberg 2', text: '5' }]
+    - [{ url: '?staffel=1673&r=4#p7085x7150', title: 'gegen SF Barsinghausen 2', text: '4' }]
+    - xxx
+    - 3
+    - 16½
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=2318', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=684&r=4#p2318x2471', title: 'gegen SK Bad Harzburg 3', text: '3' }, { url: '?staffel=684&r=9#p2318x2471', title: 'gegen SK Bad Harzburg 3', text: 1½ }]
+    - [{ url: '?staffel=684&r=5#p2318x2365', title: 'gegen SK Goslar 2', text: '3' }, { url: '?staffel=684&r=6#p2318x2365', title: 'gegen SK Goslar 2', text: 2½ }]
+    - [{ url: '?staffel=684&r=1#p2318x2363', title: 'gegen VfL Oker', text: 3½ }, { url: '?staffel=684&r=2#p2318x2363', title: 'gegen VfL Oker', text: '3' }]
+    - [{ url: '?staffel=684&r=7#p2318x2366', title: 'gegen SK Goslar 3', text: '3' }, { url: '?staffel=684&r=8#p2318x2366', title: 'gegen SK Goslar 3', text: '4' }]
+    - [{ url: '?staffel=684&r=3#p2318x2472', title: 'gegen SK Bad Harzburg 4', text: '4' }, { url: '?staffel=684&r=10#p2318x2472', title: 'gegen SK Bad Harzburg 4', text: '4' }]
+    - 18
+    - 31½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Bad Harzburg 3', url: '?mannschaft=2471', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=684&r=4#p2471x2318', title: 'gegen SC Langelsheim', text: '1' }, { url: '?staffel=684&r=9#p2471x2318', title: 'gegen SC Langelsheim', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=684&r=3#p2471x2365', title: 'gegen SK Goslar 2', text: '2' }, { url: '?staffel=684&r=7#p2471x2365', title: 'gegen SK Goslar 2', text: 2½ }]
+    - [{ url: '?staffel=684&r=6#p2471x2363', title: 'gegen VfL Oker', text: '2' }, { url: '?staffel=684&r=8#p2471x2363', title: 'gegen VfL Oker', text: '3' }]
+    - [{ url: '?staffel=684&r=5#p2471x2366', title: 'gegen SK Goslar 3', text: 3½ }, { url: '?staffel=684&r=10#p2471x2366', title: 'gegen SK Goslar 3', text: '4' }]
+    - [{ url: '?staffel=684&r=1#p2471x2472', title: 'gegen SK Bad Harzburg 4', text: '4' }, { url: '?staffel=684&r=2#p2471x2472', title: 'gegen SK Bad Harzburg 4', text: '4' }]
+    - 16
+    - 28½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=2365', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=684&r=5#p2365x2318', title: 'gegen SC Langelsheim', text: '1' }, { url: '?staffel=684&r=6#p2365x2318', title: 'gegen SC Langelsheim', text: 1½ }]
+    - [{ url: '?staffel=684&r=3#p2365x2471', title: 'gegen SK Bad Harzburg 3', text: '2' }, { url: '?staffel=684&r=7#p2365x2471', title: 'gegen SK Bad Harzburg 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=684&r=9#p2365x2363', title: 'gegen VfL Oker', text: 2½ }, { url: '?staffel=684&r=10#p2365x2363', title: 'gegen VfL Oker', text: 2½ }]
+    - [{ url: '?staffel=684&r=1#p2365x2366', title: 'gegen SK Goslar 3', text: '3' }, { url: '?staffel=684&r=2#p2365x2366', title: 'gegen SK Goslar 3', text: '4' }]
+    - [{ url: '?staffel=684&r=4#p2365x2472', title: 'gegen SK Bad Harzburg 4', text: '3' }, { url: '?staffel=684&r=8#p2365x2472', title: 'gegen SK Bad Harzburg 4', text: '4' }]
+    - 13
+    - '25'
+    - ''
+-
+    - '4.'
+    - { text: 'VfL Oker', url: '?mannschaft=2363', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=684&r=1#p2363x2318', title: 'gegen SC Langelsheim', text: ½ }, { url: '?staffel=684&r=2#p2363x2318', title: 'gegen SC Langelsheim', text: '1' }]
+    - [{ url: '?staffel=684&r=6#p2363x2471', title: 'gegen SK Bad Harzburg 3', text: '2' }, { url: '?staffel=684&r=8#p2363x2471', title: 'gegen SK Bad Harzburg 3', text: '1' }]
+    - [{ url: '?staffel=684&r=9#p2363x2365', title: 'gegen SK Goslar 2', text: 1½ }, { url: '?staffel=684&r=10#p2363x2365', title: 'gegen SK Goslar 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=684&r=3#p2363x2366', title: 'gegen SK Goslar 3', text: '3' }, { url: '?staffel=684&r=4#p2363x2366', title: 'gegen SK Goslar 3', text: '3' }]
+    - [{ url: '?staffel=684&r=5#p2363x2472', title: 'gegen SK Bad Harzburg 4', text: '4' }, { url: '?staffel=684&r=7#p2363x2472', title: 'gegen SK Bad Harzburg 4', text: '2' }]
+    - 8
+    - 19½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Goslar 3', url: '?mannschaft=2366', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=684&r=7#p2366x2318', title: 'gegen SC Langelsheim', text: '1' }, { url: '?staffel=684&r=8#p2366x2318', title: 'gegen SC Langelsheim', text: '0' }]
+    - [{ url: '?staffel=684&r=5#p2366x2471', title: 'gegen SK Bad Harzburg 3', text: ½ }, { url: '?staffel=684&r=10#p2366x2471', title: 'gegen SK Bad Harzburg 3', text: '0' }]
+    - [{ url: '?staffel=684&r=1#p2366x2365', title: 'gegen SK Goslar 2', text: '1' }, { url: '?staffel=684&r=2#p2366x2365', title: 'gegen SK Goslar 2', text: '0' }]
+    - [{ url: '?staffel=684&r=3#p2366x2363', title: 'gegen VfL Oker', text: '1' }, { url: '?staffel=684&r=4#p2366x2363', title: 'gegen VfL Oker', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=684&r=6#p2366x2472', title: 'gegen SK Bad Harzburg 4', text: '4' }, { url: '?staffel=684&r=9#p2366x2472', title: 'gegen SK Bad Harzburg 4', text: '2' }]
+    - 3
+    - 10½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Bad Harzburg 4', url: '?mannschaft=2472', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=684&r=3#p2472x2318', title: 'gegen SC Langelsheim', text: '0' }, { url: '?staffel=684&r=10#p2472x2318', title: 'gegen SC Langelsheim', text: '0' }]
+    - [{ url: '?staffel=684&r=1#p2472x2471', title: 'gegen SK Bad Harzburg 3', text: '0' }, { url: '?staffel=684&r=2#p2472x2471', title: 'gegen SK Bad Harzburg 3', text: '0' }]
+    - [{ url: '?staffel=684&r=4#p2472x2365', title: 'gegen SK Goslar 2', text: '1' }, { url: '?staffel=684&r=8#p2472x2365', title: 'gegen SK Goslar 2', text: '0' }]
+    - [{ url: '?staffel=684&r=5#p2472x2363', title: 'gegen VfL Oker', text: '0' }, { url: '?staffel=684&r=7#p2472x2363', title: 'gegen VfL Oker', text: '2' }]
+    - [{ url: '?staffel=684&r=6#p2472x2366', title: 'gegen SK Goslar 3', text: '0' }, { url: '?staffel=684&r=9#p2472x2366', title: 'gegen SK Goslar 3', text: '2' }]
+    - xxx
+    - 2
+    - '5'
+    - ''

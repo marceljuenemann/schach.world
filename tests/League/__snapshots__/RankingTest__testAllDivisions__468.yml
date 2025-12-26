@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=4559', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=946&r=4#p4559x4575', title: 'gegen HSK Lister Turm 2', text: 6½ }]
+    - [{ url: '?staffel=946&r=3#p4559x4394', title: 'gegen Barsinghausen', text: '6' }]
+    - [{ url: '?staffel=946&r=9#p4559x4543', title: 'gegen SV Laatzen', text: '6' }]
+    - [{ url: '?staffel=946&r=1#p4559x4568', title: 'gegen ST Langenhagen', text: 3½ }]
+    - [{ url: '?staffel=946&r=6#p4559x4396', title: 'gegen WB Eilenriede', text: 6½ }]
+    - [{ url: '?staffel=946&r=5#p4559x4529', title: 'gegen SD Isernhagen', text: 5½ }]
+    - [{ url: '?staffel=946&r=7#p4559x4570', title: 'gegen SF Hannover 2', text: 6½ }]
+    - [{ url: '?staffel=946&r=2#p4559x4488', title: 'gegen SC Uetze-Hänigsen', text: 6½ }]
+    - 14
+    - '47'
+    - ''
+-
+    - '2.'
+    - { text: 'HSK Lister Turm 2', url: '?mannschaft=4575', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=946&r=4#p4575x4559', title: 'gegen SK Ricklingen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=946&r=9#p4575x4394', title: 'gegen Barsinghausen', text: 5½ }]
+    - [{ url: '?staffel=946&r=6#p4575x4543', title: 'gegen SV Laatzen', text: '5' }]
+    - [{ url: '?staffel=946&r=7#p4575x4568', title: 'gegen ST Langenhagen', text: '6' }]
+    - [{ url: '?staffel=946&r=3#p4575x4396', title: 'gegen WB Eilenriede', text: '5' }]
+    - [{ url: '?staffel=946&r=2#p4575x4529', title: 'gegen SD Isernhagen', text: 6½ }]
+    - [{ url: '?staffel=946&r=1#p4575x4570', title: 'gegen SF Hannover 2', text: 5½ }]
+    - [{ url: '?staffel=946&r=8#p4575x4488', title: 'gegen SC Uetze-Hänigsen', text: '7' }]
+    - 14
+    - '42'
+    - ''
+-
+    - '3.'
+    - { text: Barsinghausen, url: '?mannschaft=4394', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=946&r=3#p4394x4559', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=946&r=9#p4394x4575', title: 'gegen HSK Lister Turm 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=946&r=5#p4394x4543', title: 'gegen SV Laatzen', text: 4½ }]
+    - [{ url: '?staffel=946&r=6#p4394x4568', title: 'gegen ST Langenhagen', text: 4½ }]
+    - [{ url: '?staffel=946&r=2#p4394x4396', title: 'gegen WB Eilenriede', text: '4' }]
+    - [{ url: '?staffel=946&r=1#p4394x4529', title: 'gegen SD Isernhagen', text: 4½ }]
+    - [{ url: '?staffel=946&r=8#p4394x4570', title: 'gegen SF Hannover 2', text: '5' }]
+    - [{ url: '?staffel=946&r=7#p4394x4488', title: 'gegen SC Uetze-Hänigsen', text: 4½ }]
+    - 11
+    - 31½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Laatzen', url: '?mannschaft=4543', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=946&r=9#p4543x4559', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=946&r=6#p4543x4575', title: 'gegen HSK Lister Turm 2', text: '3' }]
+    - [{ url: '?staffel=946&r=5#p4543x4394', title: 'gegen Barsinghausen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=946&r=3#p4543x4568', title: 'gegen ST Langenhagen', text: 4½ }]
+    - [{ url: '?staffel=946&r=8#p4543x4396', title: 'gegen WB Eilenriede', text: '4' }]
+    - [{ url: '?staffel=946&r=7#p4543x4529', title: 'gegen SD Isernhagen', text: '6' }]
+    - [{ url: '?staffel=946&r=2#p4543x4570', title: 'gegen SF Hannover 2', text: '7' }]
+    - [{ url: '?staffel=946&r=4#p4543x4488', title: 'gegen SC Uetze-Hänigsen', text: 4½ }]
+    - 9
+    - 34½
+    - ''
+-
+    - '5.'
+    - { text: 'ST Langenhagen', url: '?mannschaft=4568', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=946&r=1#p4568x4559', title: 'gegen SK Ricklingen', text: 4½ }]
+    - [{ url: '?staffel=946&r=7#p4568x4575', title: 'gegen HSK Lister Turm 2', text: '2' }]
+    - [{ url: '?staffel=946&r=6#p4568x4394', title: 'gegen Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=946&r=3#p4568x4543', title: 'gegen SV Laatzen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=946&r=9#p4568x4396', title: 'gegen WB Eilenriede', text: '4' }]
+    - [{ url: '?staffel=946&r=8#p4568x4529', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=946&r=4#p4568x4570', title: 'gegen SF Hannover 2', text: '4' }]
+    - [{ url: '?staffel=946&r=5#p4568x4488', title: 'gegen SC Uetze-Hänigsen', text: '4' }]
+    - 6
+    - 29½
+    - ''
+-
+    - '6.'
+    - { text: 'WB Eilenriede', url: '?mannschaft=4396', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=946&r=6#p4396x4559', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=946&r=3#p4396x4575', title: 'gegen HSK Lister Turm 2', text: '3' }]
+    - [{ url: '?staffel=946&r=2#p4396x4394', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=946&r=8#p4396x4543', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=946&r=9#p4396x4568', title: 'gegen ST Langenhagen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=946&r=4#p4396x4529', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=946&r=5#p4396x4570', title: 'gegen SF Hannover 2', text: 3½ }]
+    - [{ url: '?staffel=946&r=1#p4396x4488', title: 'gegen SC Uetze-Hänigsen', text: '5' }]
+    - 6
+    - '29'
+    - ''
+-
+    - '7.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=4529', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=946&r=5#p4529x4559', title: 'gegen SK Ricklingen', text: 2½ }]
+    - [{ url: '?staffel=946&r=2#p4529x4575', title: 'gegen HSK Lister Turm 2', text: 1½ }]
+    - [{ url: '?staffel=946&r=1#p4529x4394', title: 'gegen Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=946&r=7#p4529x4543', title: 'gegen SV Laatzen', text: '2' }]
+    - [{ url: '?staffel=946&r=8#p4529x4568', title: 'gegen ST Langenhagen', text: '4' }]
+    - [{ url: '?staffel=946&r=4#p4529x4396', title: 'gegen WB Eilenriede', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=946&r=3#p4529x4570', title: 'gegen SF Hannover 2', text: '6' }]
+    - [{ url: '?staffel=946&r=9#p4529x4488', title: 'gegen SC Uetze-Hänigsen', text: '4' }]
+    - 5
+    - 27½
+    - ''
+-
+    - '8.'
+    - { text: 'SF Hannover 2', url: '?mannschaft=4570', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=946&r=7#p4570x4559', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=946&r=1#p4570x4575', title: 'gegen HSK Lister Turm 2', text: 2½ }]
+    - [{ url: '?staffel=946&r=8#p4570x4394', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=946&r=2#p4570x4543', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=946&r=4#p4570x4568', title: 'gegen ST Langenhagen', text: '4' }]
+    - [{ url: '?staffel=946&r=5#p4570x4396', title: 'gegen WB Eilenriede', text: 4½ }]
+    - [{ url: '?staffel=946&r=3#p4570x4529', title: 'gegen SD Isernhagen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=946&r=6#p4570x4488', title: 'gegen SC Uetze-Hänigsen', text: 4½ }]
+    - 5
+    - '23'
+    - ''
+-
+    - '9.'
+    - { text: 'SC Uetze-Hänigsen', url: '?mannschaft=4488', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=946&r=2#p4488x4559', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=946&r=8#p4488x4575', title: 'gegen HSK Lister Turm 2', text: '1' }]
+    - [{ url: '?staffel=946&r=7#p4488x4394', title: 'gegen Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=946&r=4#p4488x4543', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=946&r=5#p4488x4568', title: 'gegen ST Langenhagen', text: '4' }]
+    - [{ url: '?staffel=946&r=1#p4488x4396', title: 'gegen WB Eilenriede', text: '3' }]
+    - [{ url: '?staffel=946&r=9#p4488x4529', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=946&r=6#p4488x4570', title: 'gegen SF Hannover 2', text: 3½ }]
+    - xxx
+    - 2
+    - '24'
+    - ''

@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'HSK / Post SV', url: '?mannschaft=304', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=301&r=5#p304x308', title: 'gegen SK Ricklingen', text: 3½ }]
+    - [{ url: '?staffel=301&r=4#p304x301', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=301&r=5#p304x309', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=301&r=2#p304x302', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=301&r=4#p304x306', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=301&r=3#p304x305', title: 'gegen Eldagsen/Bad Mü', text: '3' }]
+    - [{ url: '?staffel=301&r=2#p304x303', title: 'gegen SV Bückeburg 3', text: '4' }]
+    - [{ url: '?staffel=301&r=1#p304x307', title: 'gegen SK Lehrte 2', text: '3' }]
+    - 16
+    - 29½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=308', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=301&r=5#p308x304', title: 'gegen HSK / Post SV', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=301&r=2#p308x301', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=301&r=3#p308x309', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=301&r=1#p308x302', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=301&r=2#p308x306', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=301&r=4#p308x305', title: 'gegen Eldagsen/Bad Mü', text: 3½ }]
+    - [{ url: '?staffel=301&r=1#p308x303', title: 'gegen SV Bückeburg 3', text: '4' }]
+    - [{ url: '?staffel=301&r=5#p308x307', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - 14
+    - 26½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=301', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=301&r=4#p301x304', title: 'gegen HSK / Post SV', text: '0' }]
+    - [{ url: '?staffel=301&r=2#p301x308', title: 'gegen SK Ricklingen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=301&r=2#p301x309', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=301&r=3#p301x302', title: 'gegen SV Bückeburg 2', text: 3½ }]
+    - [{ url: '?staffel=301&r=5#p301x306', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=301&r=1#p301x305', title: 'gegen Eldagsen/Bad Mü', text: '3' }]
+    - [{ url: '?staffel=301&r=3#p301x303', title: 'gegen SV Bückeburg 3', text: '4' }]
+    - [{ url: '?staffel=301&r=4#p301x307', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - 12
+    - 20½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=309', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=301&r=5#p309x304', title: 'gegen HSK / Post SV', text: '0' }]
+    - [{ url: '?staffel=301&r=3#p309x308', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=301&r=2#p309x301', title: 'gegen SV Bückeburg', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=301&r=1#p309x302', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - [{ url: '?staffel=301&r=2#p309x306', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=301&r=4#p309x305', title: 'gegen Eldagsen/Bad Mü', text: '3' }]
+    - [{ url: '?staffel=301&r=1#p309x303', title: 'gegen SV Bückeburg 3', text: '2' }]
+    - [{ url: '?staffel=301&r=5#p309x307', title: 'gegen SK Lehrte 2', text: '2' }]
+    - 7
+    - '12'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=302', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=301&r=2#p302x304', title: 'gegen HSK / Post SV', text: '0' }]
+    - [{ url: '?staffel=301&r=1#p302x308', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=301&r=3#p302x301', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=301&r=1#p302x309', title: 'gegen SK Ricklingen 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=301&r=3#p302x306', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=301&r=5#p302x305', title: 'gegen Eldagsen/Bad Mü', text: '2' }]
+    - [{ url: '?staffel=301&r=4#p302x303', title: 'gegen SV Bückeburg 3', text: '3' }]
+    - [{ url: '?staffel=301&r=2#p302x307', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 6
+    - '13'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte', url: '?mannschaft=306', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=301&r=4#p306x304', title: 'gegen HSK / Post SV', text: '0' }]
+    - [{ url: '?staffel=301&r=2#p306x308', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=301&r=5#p306x301', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=301&r=2#p306x309', title: 'gegen SK Ricklingen 2', text: '1' }]
+    - [{ url: '?staffel=301&r=3#p306x302', title: 'gegen SV Bückeburg 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=301&r=1#p306x305', title: 'gegen Eldagsen/Bad Mü', text: '2' }]
+    - [{ url: '?staffel=301&r=3#p306x303', title: 'gegen SV Bückeburg 3', text: '3' }]
+    - [{ url: '?staffel=301&r=4#p306x307', title: 'gegen SK Lehrte 2', text: '2' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '7.'
+    - { text: 'Eldagsen/Bad Mü', url: '?mannschaft=305', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=301&r=3#p305x304', title: 'gegen HSK / Post SV', text: '1' }]
+    - [{ url: '?staffel=301&r=4#p305x308', title: 'gegen SK Ricklingen', text: ½ }]
+    - [{ url: '?staffel=301&r=1#p305x301', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=301&r=4#p305x309', title: 'gegen SK Ricklingen 2', text: '1' }]
+    - [{ url: '?staffel=301&r=5#p305x302', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - [{ url: '?staffel=301&r=1#p305x306', title: 'gegen SK Lehrte', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=301&r=5#p305x303', title: 'gegen SV Bückeburg 3', text: '2' }]
+    - [{ url: '?staffel=301&r=3#p305x307', title: 'gegen SK Lehrte 2', text: '3' }]
+    - 5
+    - 12½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Bückeburg 3', url: '?mannschaft=303', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=301&r=2#p303x304', title: 'gegen HSK / Post SV', text: '0' }]
+    - [{ url: '?staffel=301&r=1#p303x308', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=301&r=3#p303x301', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=301&r=1#p303x309', title: 'gegen SK Ricklingen 2', text: '2' }]
+    - [{ url: '?staffel=301&r=4#p303x302', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - [{ url: '?staffel=301&r=3#p303x306', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=301&r=5#p303x305', title: 'gegen Eldagsen/Bad Mü', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=301&r=2#p303x307', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=307', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=301&r=1#p307x304', title: 'gegen HSK / Post SV', text: '1' }]
+    - [{ url: '?staffel=301&r=5#p307x308', title: 'gegen SK Ricklingen', text: ½ }]
+    - [{ url: '?staffel=301&r=4#p307x301', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=301&r=5#p307x309', title: 'gegen SK Ricklingen 2', text: '2' }]
+    - [{ url: '?staffel=301&r=2#p307x302', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - [{ url: '?staffel=301&r=4#p307x306', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=301&r=3#p307x305', title: 'gegen Eldagsen/Bad Mü', text: '1' }]
+    - [{ url: '?staffel=301&r=2#p307x303', title: 'gegen SV Bückeburg 3', text: '0' }]
+    - xxx
+    - 2
+    - '8'
+    - ''

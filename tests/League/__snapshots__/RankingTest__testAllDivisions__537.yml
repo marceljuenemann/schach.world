@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Mülheim-Nord', url: '?mannschaft=4953', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1020&r=3#p4953x5096', title: 'gegen Schachverein He', text: 3½ }]
+    - [{ url: '?staffel=1020&r=6#p4953x4887', title: 'gegen DJK Aachen Ladies', text: '4' }]
+    - [{ url: '?staffel=1020&r=5#p4953x5087', title: 'gegen SG Solingen', text: 1½ }]
+    - [{ url: '?staffel=1020&r=2#p4953x5065', title: 'gegen Dortmunder SV 1875', text: 2½ }]
+    - [{ url: '?staffel=1020&r=4#p4953x5168', title: 'gegen SK Münster 32 2', text: 2½ }]
+    - 8
+    - '14'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Schachverein He', url: '?mannschaft=5096', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1020&r=3#p5096x4953', title: 'gegen SV Mülheim-Nord', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1020&r=4#p5096x4887', title: 'gegen DJK Aachen Ladies', text: '4' }]
+    - [{ url: '?staffel=1020&r=6#p5096x5087', title: 'gegen SG Solingen', text: '4' }]
+    - [{ url: '?staffel=1020&r=5#p5096x5065', title: 'gegen Dortmunder SV 1875', text: 2½ }]
+    - [{ url: '?staffel=1020&r=2#p5096x5168', title: 'gegen SK Münster 32 2', text: '3' }]
+    - 8
+    - '14'
+    - ''
+-
+    - '3.'
+    - { text: 'DJK Aachen Ladies', url: '?mannschaft=4887', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1020&r=6#p4887x4953', title: 'gegen SV Mülheim-Nord', text: '0' }]
+    - [{ url: '?staffel=1020&r=4#p4887x5096', title: 'gegen Schachverein He', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1020&r=2#p4887x5087', title: 'gegen SG Solingen', text: '4' }]
+    - [{ url: '?staffel=1020&r=3#p4887x5065', title: 'gegen Dortmunder SV 1875', text: '4' }]
+    - [{ url: '?staffel=1020&r=5#p4887x5168', title: 'gegen SK Münster 32 2', text: '4' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Solingen', url: '?mannschaft=5087', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1020&r=5#p5087x4953', title: 'gegen SV Mülheim-Nord', text: 2½ }]
+    - [{ url: '?staffel=1020&r=6#p5087x5096', title: 'gegen Schachverein He', text: '0' }]
+    - [{ url: '?staffel=1020&r=2#p5087x4887', title: 'gegen DJK Aachen Ladies', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1020&r=4#p5087x5065', title: 'gegen Dortmunder SV 1875', text: 2½ }]
+    - [{ url: '?staffel=1020&r=3#p5087x5168', title: 'gegen SK Münster 32 2', text: '3' }]
+    - 6
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'Dortmunder SV 1875', url: '?mannschaft=5065', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1020&r=2#p5065x4953', title: 'gegen SV Mülheim-Nord', text: 1½ }]
+    - [{ url: '?staffel=1020&r=5#p5065x5096', title: 'gegen Schachverein He', text: 1½ }]
+    - [{ url: '?staffel=1020&r=3#p5065x4887', title: 'gegen DJK Aachen Ladies', text: '0' }]
+    - [{ url: '?staffel=1020&r=4#p5065x5087', title: 'gegen SG Solingen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1020&r=6#p5065x5168', title: 'gegen SK Münster 32 2', text: 2½ }]
+    - 2
+    - '7'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SK Münster 32 2', url: '?mannschaft=5168', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1020&r=4#p5168x4953', title: 'gegen SV Mülheim-Nord', text: 1½ }]
+    - [{ url: '?staffel=1020&r=2#p5168x5096', title: 'gegen Schachverein He', text: '1' }]
+    - [{ url: '?staffel=1020&r=5#p5168x4887', title: 'gegen DJK Aachen Ladies', text: '0' }]
+    - [{ url: '?staffel=1020&r=3#p5168x5087', title: 'gegen SG Solingen', text: '1' }]
+    - [{ url: '?staffel=1020&r=6#p5168x5065', title: 'gegen Dortmunder SV 1875', text: 1½ }]
+    - xxx
+    - 0
+    - '5'
+    - absteiger

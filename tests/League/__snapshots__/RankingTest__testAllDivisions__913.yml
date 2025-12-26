@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=7721', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1747&r=7#p7721x7728', title: 'gegen SK Lehrte 3', text: 3½ }]
+    - [{ url: '?staffel=1747&r=1#p7721x7701', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=1747&r=2#p7721x7719', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=1747&r=6#p7721x7734', title: 'gegen SK Mädchen Bezirk 1', text: '4' }]
+    - [{ url: '?staffel=1747&r=3#p7721x7672', title: 'gegen SF Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=1747&r=4#p7721x7725', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=1747&r=5#p7721x7732', title: 'gegen SK Rinteln', text: '3' }]
+    - 13
+    - 20½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=7728', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1747&r=7#p7728x7721', title: 'gegen SK Wennigsen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1747&r=4#p7728x7701', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1747&r=1#p7728x7719', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=1747&r=3#p7728x7734', title: 'gegen SK Mädchen Bezirk 1', text: '2' }]
+    - [{ url: '?staffel=1747&r=5#p7728x7672', title: 'gegen SF Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=1747&r=2#p7728x7725', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=1747&r=6#p7728x7732', title: 'gegen SK Rinteln', text: '3' }]
+    - 10
+    - 18½
+    - ''
+-
+    - '3.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=7701', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1747&r=1#p7701x7721', title: 'gegen SK Wennigsen', text: 1½ }]
+    - [{ url: '?staffel=1747&r=4#p7701x7728', title: 'gegen SK Lehrte 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1747&r=5#p7701x7719', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=1747&r=7#p7701x7734', title: 'gegen SK Mädchen Bezirk 1', text: '3' }]
+    - [{ url: '?staffel=1747&r=2#p7701x7672', title: 'gegen SF Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=1747&r=6#p7701x7725', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=1747&r=3#p7701x7732', title: 'gegen SK Rinteln', text: '4' }]
+    - 8
+    - 15½
+    - ''
+-
+    - '4.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=7719', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1747&r=2#p7719x7721', title: 'gegen SK Wennigsen', text: 1½ }]
+    - [{ url: '?staffel=1747&r=1#p7719x7728', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1747&r=5#p7719x7701', title: 'gegen SD Isernhagen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1747&r=4#p7719x7734', title: 'gegen SK Mädchen Bezirk 1', text: 2½ }]
+    - [{ url: '?staffel=1747&r=6#p7719x7672', title: 'gegen SF Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=1747&r=3#p7719x7725', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=1747&r=7#p7719x7732', title: 'gegen SK Rinteln', text: '2' }]
+    - 8
+    - '15'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Mädchen Bezirk 1', url: '?mannschaft=7734', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1747&r=6#p7734x7721', title: 'gegen SK Wennigsen', text: '0' }]
+    - [{ url: '?staffel=1747&r=3#p7734x7728', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=1747&r=7#p7734x7701', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1747&r=4#p7734x7719', title: 'gegen TuS Wunstorf', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1747&r=1#p7734x7672', title: 'gegen SF Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=1747&r=5#p7734x7725', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=1747&r=2#p7734x7732', title: 'gegen SK Rinteln', text: '3' }]
+    - 6
+    - '13'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Barsinghausen', url: '?mannschaft=7672', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1747&r=3#p7672x7721', title: 'gegen SK Wennigsen', text: '2' }]
+    - [{ url: '?staffel=1747&r=5#p7672x7728', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=1747&r=2#p7672x7701', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1747&r=6#p7672x7719', title: 'gegen TuS Wunstorf', text: '1' }]
+    - [{ url: '?staffel=1747&r=1#p7672x7734', title: 'gegen SK Mädchen Bezirk 1', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1747&r=7#p7672x7725', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=1747&r=4#p7672x7732', title: 'gegen SK Rinteln', text: '2' }]
+    - 4
+    - 11½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Springe', url: '?mannschaft=7725', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1747&r=4#p7725x7721', title: 'gegen SK Wennigsen', text: '1' }]
+    - [{ url: '?staffel=1747&r=2#p7725x7728', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1747&r=6#p7725x7701', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1747&r=3#p7725x7719', title: 'gegen TuS Wunstorf', text: '2' }]
+    - [{ url: '?staffel=1747&r=5#p7725x7734', title: 'gegen SK Mädchen Bezirk 1', text: '2' }]
+    - [{ url: '?staffel=1747&r=7#p7725x7672', title: 'gegen SF Barsinghausen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1747&r=1#p7725x7732', title: 'gegen SK Rinteln', text: '2' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Rinteln', url: '?mannschaft=7732', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1747&r=5#p7732x7721', title: 'gegen SK Wennigsen', text: '1' }]
+    - [{ url: '?staffel=1747&r=6#p7732x7728', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=1747&r=3#p7732x7701', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1747&r=7#p7732x7719', title: 'gegen TuS Wunstorf', text: '2' }]
+    - [{ url: '?staffel=1747&r=2#p7732x7734', title: 'gegen SK Mädchen Bezirk 1', text: '1' }]
+    - [{ url: '?staffel=1747&r=4#p7732x7672', title: 'gegen SF Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=1747&r=1#p7732x7725', title: 'gegen SV Springe', text: '2' }]
+    - xxx
+    - 3
+    - '9'
+    - ''

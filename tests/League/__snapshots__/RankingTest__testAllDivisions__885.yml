@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=7354', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1716&r=3#p7354x7340', title: 'gegen SC Papenburg', text: '3' }]
+    - [{ url: '?staffel=1716&r=1#p7354x7342', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=1716&r=2#p7354x7341', title: 'gegen SC Papenburg 2', text: '4' }]
+    - 6
+    - '11'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Papenburg', url: '?mannschaft=7340', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1716&r=3#p7340x7354', title: 'gegen SK Lehrte 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1716&r=2#p7340x7342', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=1716&r=1#p7340x7341', title: 'gegen SC Papenburg 2', text: '3' }]
+    - 4
+    - '8'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'Hannover 96', url: '?mannschaft=7342', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1716&r=1#p7342x7354', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1716&r=2#p7342x7340', title: 'gegen SC Papenburg', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1716&r=3#p7342x7341', title: 'gegen SC Papenburg 2', text: '3' }]
+    - 2
+    - '3'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Papenburg 2', url: '?mannschaft=7341', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1716&r=2#p7341x7354', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1716&r=1#p7341x7340', title: 'gegen SC Papenburg', text: '1' }]
+    - [{ url: '?staffel=1716&r=3#p7341x7342', title: 'gegen Hannover 96', text: '1' }]
+    - xxx
+    - 0
+    - '2'
+    - ''

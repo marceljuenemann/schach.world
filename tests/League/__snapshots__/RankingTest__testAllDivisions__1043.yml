@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC BS Gliesmarode', url: '?mannschaft=8421', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1893&r=1#p8421x8423', title: 'gegen Roch. Braunschweig 2', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1893&r=3#p8421x8391', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1893&r=3#p8421x8419', title: 'gegen MTV Eintracht Celle 3', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1893&r=2#p8421x8424', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - [{ url: '?staffel=1893&r=2#p8421x8420', title: 'gegen SV Gifhorn 2', text: '4' }]
+    - [{ url: '?staffel=1893&r=4#p8421x8426', title: 'gegen SZ Bemerode', text: '4' }]
+    - 12
+    - 21½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'MTV Eintracht Celle', url: '?mannschaft=8417', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1893&r=1#p8417x8425', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1893&r=2#p8417x8391', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1893&r=2#p8417x8419', title: 'gegen MTV Eintracht Celle 3', text: '3' }]
+    - [{ url: '?staffel=1893&r=3#p8417x8418', title: 'gegen MTV Eintracht Celle 2', text: '3' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1893&r=1#p8417x8426', title: 'gegen SZ Bemerode', text: '4' }]
+    - 10
+    - '17'
+    - ''
+-
+    - '3.'
+    - { text: 'Roch. Braunschweig 2', url: '?mannschaft=8423', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1893&r=1#p8423x8421', title: 'gegen SC BS Gliesmarode', text: '0' }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1893&r=3#p8423x8391', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1893&r=3#p8423x8419', title: 'gegen MTV Eintracht Celle 3', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1893&r=2#p8423x8424', title: 'gegen SC Wolfsburg', text: '2' }]
+    - [{ url: '?staffel=1893&r=2#p8423x8420', title: 'gegen SV Gifhorn 2', text: '3' }]
+    - [{ url: '?staffel=1893&r=4#p8423x8426', title: 'gegen SZ Bemerode', text: '4' }]
+    - 9
+    - '15'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=8425', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1893&r=1#p8425x8417', title: 'gegen MTV Eintracht Celle', text: '0' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1893&r=1#p8425x8418', title: 'gegen MTV Eintracht Celle 2', text: 2½ }]
+    - [{ url: '?staffel=1893&r=3#p8425x8424', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=1893&r=3#p8425x8420', title: 'gegen SV Gifhorn 2', text: '2' }]
+    - [{ url: '?staffel=1893&r=2#p8425x8426', title: 'gegen SZ Bemerode', text: '4' }]
+    - 7
+    - 12½
+    - ''
+-
+    - '5.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=8391', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1893&r=3#p8391x8421', title: 'gegen SC BS Gliesmarode', text: '1' }]
+    - [{ url: '?staffel=1893&r=2#p8391x8417', title: 'gegen MTV Eintracht Celle', text: '1' }]
+    - [{ url: '?staffel=1893&r=3#p8391x8423', title: 'gegen Roch. Braunschweig 2', text: '1' }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1893&r=2#p8391x8418', title: 'gegen MTV Eintracht Celle 2', text: '2' }]
+    - [{ url: '?staffel=1893&r=1#p8391x8424', title: 'gegen SC Wolfsburg', text: '2' }]
+    - [{ url: '?staffel=1893&r=1#p8391x8420', title: 'gegen SV Gifhorn 2', text: '3' }]
+    - [{ url: '?staffel=1893&r=5#p8391x8426', title: 'gegen SZ Bemerode', text: '4' }]
+    - 6
+    - '14'
+    - ''
+-
+    - '5.'
+    - { text: 'MTV Eintracht Celle 3', url: '?mannschaft=8419', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1893&r=3#p8419x8421', title: 'gegen SC BS Gliesmarode', text: '1' }]
+    - [{ url: '?staffel=1893&r=2#p8419x8417', title: 'gegen MTV Eintracht Celle', text: '1' }]
+    - [{ url: '?staffel=1893&r=3#p8419x8423', title: 'gegen Roch. Braunschweig 2', text: '1' }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1893&r=2#p8419x8418', title: 'gegen MTV Eintracht Celle 2', text: '1' }]
+    - [{ url: '?staffel=1893&r=1#p8419x8424', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - [{ url: '?staffel=1893&r=1#p8419x8420', title: 'gegen SV Gifhorn 2', text: 2½ }]
+    - [{ url: '?staffel=1893&r=5#p8419x8426', title: 'gegen SZ Bemerode', text: '4' }]
+    - 6
+    - '14'
+    - ''
+-
+    - '7.'
+    - { text: 'MTV Eintracht Celle 2', url: '?mannschaft=8418', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1893&r=3#p8418x8417', title: 'gegen MTV Eintracht Celle', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1893&r=1#p8418x8425', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=1893&r=2#p8418x8391', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - [{ url: '?staffel=1893&r=2#p8418x8419', title: 'gegen MTV Eintracht Celle 3', text: '3' }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1893&r=1#p8418x8426', title: 'gegen SZ Bemerode', text: '4' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '8.'
+    - { text: 'SC Wolfsburg', url: '?mannschaft=8424', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1893&r=2#p8424x8421', title: 'gegen SC BS Gliesmarode', text: ½ }]
+    - {  }
+    - [{ url: '?staffel=1893&r=2#p8424x8423', title: 'gegen Roch. Braunschweig 2', text: '2' }]
+    - [{ url: '?staffel=1893&r=3#p8424x8425', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1893&r=1#p8424x8391', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - [{ url: '?staffel=1893&r=1#p8424x8419', title: 'gegen MTV Eintracht Celle 3', text: ½ }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1893&r=3#p8424x8426', title: 'gegen SZ Bemerode', text: '4' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '9.'
+    - { text: 'SV Gifhorn 2', url: '?mannschaft=8420', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1893&r=2#p8420x8421', title: 'gegen SC BS Gliesmarode', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1893&r=2#p8420x8423', title: 'gegen Roch. Braunschweig 2', text: '1' }]
+    - [{ url: '?staffel=1893&r=3#p8420x8425', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1893&r=1#p8420x8391', title: 'gegen Post SV Uelzen 2', text: '1' }]
+    - [{ url: '?staffel=1893&r=1#p8420x8419', title: 'gegen MTV Eintracht Celle 3', text: 1½ }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1893&r=3#p8420x8426', title: 'gegen SZ Bemerode', text: '4' }]
+    - 3
+    - 9½
+    - ''
+-
+    - '10.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=8426', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1893&r=4#p8426x8421', title: 'gegen SC BS Gliesmarode', text: '0' }]
+    - [{ url: '?staffel=1893&r=1#p8426x8417', title: 'gegen MTV Eintracht Celle', text: '0' }]
+    - [{ url: '?staffel=1893&r=4#p8426x8423', title: 'gegen Roch. Braunschweig 2', text: '0' }]
+    - [{ url: '?staffel=1893&r=2#p8426x8425', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1893&r=5#p8426x8391', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - [{ url: '?staffel=1893&r=5#p8426x8419', title: 'gegen MTV Eintracht Celle 3', text: '0' }]
+    - [{ url: '?staffel=1893&r=1#p8426x8418', title: 'gegen MTV Eintracht Celle 2', text: '0' }]
+    - [{ url: '?staffel=1893&r=3#p8426x8424', title: 'gegen SC Wolfsburg', text: '0' }]
+    - [{ url: '?staffel=1893&r=3#p8426x8420', title: 'gegen SV Gifhorn 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

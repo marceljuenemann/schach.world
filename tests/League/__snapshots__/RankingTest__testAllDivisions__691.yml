@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Rochade Göttingen', url: '?mannschaft=6013', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1442&r=6#p6013x6025', title: 'gegen Papenbg.-Heisfelde', text: 3½ }]
+    - [{ url: '?staffel=1442&r=2#p6013x6023', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=1442&r=7#p6013x6012', title: 'gegen SK Nordhorn-Blanke', text: '4' }]
+    - [{ url: '?staffel=1442&r=5#p6013x6024', title: 'gegen SZ Bemerode', text: 5½ }]
+    - [{ url: '?staffel=1442&r=4#p6013x6016', title: 'gegen SG Hildesh.-Göttg.', text: 3½ }]
+    - [{ url: '?staffel=1442&r=3#p6013x6039', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=1442&r=1#p6013x6015', title: 'gegen SG Tostedt-Buchhz.', text: 3½ }]
+    - 13
+    - 27½
+    - aufsteiger
+-
+    - '2.'
+    - { text: Papenbg.-Heisfelde, url: '?mannschaft=6025', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1442&r=6#p6025x6013', title: 'gegen Rochade Göttingen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1442&r=5#p6025x6023', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=1442&r=4#p6025x6012', title: 'gegen SK Nordhorn-Blanke', text: '4' }]
+    - [{ url: '?staffel=1442&r=1#p6025x6024', title: 'gegen SZ Bemerode', text: 3½ }]
+    - [{ url: '?staffel=1442&r=2#p6025x6016', title: 'gegen SG Hildesh.-Göttg.', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1442&r=3#p6025x6015', title: 'gegen SG Tostedt-Buchhz.', text: 3½ }]
+    - 9
+    - '21'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Lingen', url: '?mannschaft=6023', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1442&r=2#p6023x6013', title: 'gegen Rochade Göttingen', text: '3' }]
+    - [{ url: '?staffel=1442&r=5#p6023x6025', title: 'gegen Papenbg.-Heisfelde', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1442&r=3#p6023x6012', title: 'gegen SK Nordhorn-Blanke', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1442&r=6#p6023x6016', title: 'gegen SG Hildesh.-Göttg.', text: 2½ }]
+    - [{ url: '?staffel=1442&r=1#p6023x6039', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1442&r=4#p6023x6015', title: 'gegen SG Tostedt-Buchhz.', text: 4½ }]
+    - 8
+    - 21½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Blanke', url: '?mannschaft=6012', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1442&r=7#p6012x6013', title: 'gegen Rochade Göttingen', text: '2' }]
+    - [{ url: '?staffel=1442&r=4#p6012x6025', title: 'gegen Papenbg.-Heisfelde', text: '2' }]
+    - [{ url: '?staffel=1442&r=3#p6012x6023', title: 'gegen SV Lingen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1442&r=6#p6012x6024', title: 'gegen SZ Bemerode', text: 3½ }]
+    - [{ url: '?staffel=1442&r=1#p6012x6016', title: 'gegen SG Hildesh.-Göttg.', text: 5½ }]
+    - [{ url: '?staffel=1442&r=2#p6012x6039', title: 'gegen SK Lehrte 2', text: 5½ }]
+    - [{ url: '?staffel=1442&r=5#p6012x6015', title: 'gegen SG Tostedt-Buchhz.', text: '3' }]
+    - 7
+    - '23'
+    - ''
+-
+    - '5.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=6024', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1442&r=5#p6024x6013', title: 'gegen Rochade Göttingen', text: ½ }]
+    - [{ url: '?staffel=1442&r=1#p6024x6025', title: 'gegen Papenbg.-Heisfelde', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1442&r=6#p6024x6012', title: 'gegen SK Nordhorn-Blanke', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1442&r=3#p6024x6016', title: 'gegen SG Hildesh.-Göttg.', text: '4' }]
+    - [{ url: '?staffel=1442&r=4#p6024x6039', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - [{ url: '?staffel=1442&r=2#p6024x6015', title: 'gegen SG Tostedt-Buchhz.', text: '4' }]
+    - 4
+    - '16'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Hildesh.-Göttg.', url: '?mannschaft=6016', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1442&r=4#p6016x6013', title: 'gegen Rochade Göttingen', text: 2½ }]
+    - [{ url: '?staffel=1442&r=2#p6016x6025', title: 'gegen Papenbg.-Heisfelde', text: 1½ }]
+    - [{ url: '?staffel=1442&r=6#p6016x6023', title: 'gegen SV Lingen', text: 3½ }]
+    - [{ url: '?staffel=1442&r=1#p6016x6012', title: 'gegen SK Nordhorn-Blanke', text: ½ }]
+    - [{ url: '?staffel=1442&r=3#p6016x6024', title: 'gegen SZ Bemerode', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1442&r=5#p6016x6039', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - {  }
+    - 4
+    - 13½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=6039', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1442&r=3#p6039x6013', title: 'gegen Rochade Göttingen', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1442&r=1#p6039x6023', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=1442&r=2#p6039x6012', title: 'gegen SK Nordhorn-Blanke', text: ½ }]
+    - [{ url: '?staffel=1442&r=4#p6039x6024', title: 'gegen SZ Bemerode', text: 3½ }]
+    - [{ url: '?staffel=1442&r=5#p6039x6016', title: 'gegen SG Hildesh.-Göttg.', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1442&r=6#p6039x6015', title: 'gegen SG Tostedt-Buchhz.', text: 3½ }]
+    - 4
+    - 13½
+    - ''
+-
+    - '8.'
+    - { text: 'SG Tostedt-Buchhz.', url: '?mannschaft=6015', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1442&r=1#p6015x6013', title: 'gegen Rochade Göttingen', text: 2½ }]
+    - [{ url: '?staffel=1442&r=3#p6015x6025', title: 'gegen Papenbg.-Heisfelde', text: 2½ }]
+    - [{ url: '?staffel=1442&r=4#p6015x6023', title: 'gegen SV Lingen', text: 1½ }]
+    - [{ url: '?staffel=1442&r=5#p6015x6012', title: 'gegen SK Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=1442&r=2#p6015x6024', title: 'gegen SZ Bemerode', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1442&r=6#p6015x6039', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - xxx
+    - 1
+    - '14'
+    - absteiger

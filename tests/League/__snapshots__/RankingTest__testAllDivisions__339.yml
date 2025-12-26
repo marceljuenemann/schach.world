@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Schwäbisch Hall', url: '?mannschaft=3275', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=778&r=7#p3275x3272', title: 'gegen Karlsruher SF', text: '3' }]
+    - [{ url: '?staffel=778&r=4#p3275x3273', title: 'gegen Bayern München', text: '5' }]
+    - [{ url: '?staffel=778&r=3#p3275x3274', title: 'gegen Stuttgart-Wolfbusch', text: '4' }]
+    - [{ url: '?staffel=778&r=2#p3275x3271', title: 'gegen SV 1920 Hofheim', text: 4½ }]
+    - [{ url: '?staffel=778&r=1#p3275x3278', title: 'gegen Wadgassen/Differten', text: 5½ }]
+    - [{ url: '?staffel=778&r=5#p3275x3276', title: 'gegen SG Augsburg 1873', text: 5½ }]
+    - [{ url: '?staffel=778&r=6#p3275x3277', title: 'gegen TSG Mutterstadt', text: '6' }]
+    - 13
+    - 33½
+    - ''
+-
+    - '2.'
+    - { text: 'Karlsruher SF', url: '?mannschaft=3272', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=778&r=7#p3272x3275', title: 'gegen SK Schwäbisch Hall', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=778&r=2#p3272x3273', title: 'gegen Bayern München', text: 4½ }]
+    - [{ url: '?staffel=778&r=6#p3272x3274', title: 'gegen Stuttgart-Wolfbusch', text: 4½ }]
+    - [{ url: '?staffel=778&r=4#p3272x3271', title: 'gegen SV 1920 Hofheim', text: '5' }]
+    - [{ url: '?staffel=778&r=5#p3272x3278', title: 'gegen Wadgassen/Differten', text: '4' }]
+    - [{ url: '?staffel=778&r=1#p3272x3276', title: 'gegen SG Augsburg 1873', text: '5' }]
+    - [{ url: '?staffel=778&r=3#p3272x3277', title: 'gegen TSG Mutterstadt', text: 5½ }]
+    - 13
+    - 31½
+    - ''
+-
+    - '3.'
+    - { text: 'Bayern München', url: '?mannschaft=3273', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=778&r=4#p3273x3275', title: 'gegen SK Schwäbisch Hall', text: '1' }]
+    - [{ url: '?staffel=778&r=2#p3273x3272', title: 'gegen Karlsruher SF', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=778&r=5#p3273x3274', title: 'gegen Stuttgart-Wolfbusch', text: 3½ }]
+    - [{ url: '?staffel=778&r=7#p3273x3271', title: 'gegen SV 1920 Hofheim', text: '4' }]
+    - [{ url: '?staffel=778&r=6#p3273x3278', title: 'gegen Wadgassen/Differten', text: '5' }]
+    - [{ url: '?staffel=778&r=3#p3273x3276', title: 'gegen SG Augsburg 1873', text: 5½ }]
+    - [{ url: '?staffel=778&r=1#p3273x3277', title: 'gegen TSG Mutterstadt', text: 4½ }]
+    - 10
+    - '25'
+    - ''
+-
+    - '4.'
+    - { text: Stuttgart-Wolfbusch, url: '?mannschaft=3274', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=778&r=3#p3274x3275', title: 'gegen SK Schwäbisch Hall', text: '2' }]
+    - [{ url: '?staffel=778&r=6#p3274x3272', title: 'gegen Karlsruher SF', text: 1½ }]
+    - [{ url: '?staffel=778&r=5#p3274x3273', title: 'gegen Bayern München', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=778&r=1#p3274x3271', title: 'gegen SV 1920 Hofheim', text: '4' }]
+    - [{ url: '?staffel=778&r=2#p3274x3278', title: 'gegen Wadgassen/Differten', text: '4' }]
+    - [{ url: '?staffel=778&r=4#p3274x3276', title: 'gegen SG Augsburg 1873', text: '4' }]
+    - [{ url: '?staffel=778&r=7#p3274x3277', title: 'gegen TSG Mutterstadt', text: 4½ }]
+    - 8
+    - 22½
+    - ''
+-
+    - '5.'
+    - { text: 'SV 1920 Hofheim', url: '?mannschaft=3271', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=778&r=2#p3271x3275', title: 'gegen SK Schwäbisch Hall', text: 1½ }]
+    - [{ url: '?staffel=778&r=4#p3271x3272', title: 'gegen Karlsruher SF', text: '1' }]
+    - [{ url: '?staffel=778&r=7#p3271x3273', title: 'gegen Bayern München', text: '2' }]
+    - [{ url: '?staffel=778&r=1#p3271x3274', title: 'gegen Stuttgart-Wolfbusch', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=778&r=3#p3271x3278', title: 'gegen Wadgassen/Differten', text: 2½ }]
+    - [{ url: '?staffel=778&r=6#p3271x3276', title: 'gegen SG Augsburg 1873', text: 3½ }]
+    - [{ url: '?staffel=778&r=5#p3271x3277', title: 'gegen TSG Mutterstadt', text: '5' }]
+    - 4
+    - 17½
+    - ''
+-
+    - '6.'
+    - { text: Wadgassen/Differten, url: '?mannschaft=3278', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=778&r=1#p3278x3275', title: 'gegen SK Schwäbisch Hall', text: ½ }]
+    - [{ url: '?staffel=778&r=5#p3278x3272', title: 'gegen Karlsruher SF', text: '2' }]
+    - [{ url: '?staffel=778&r=6#p3278x3273', title: 'gegen Bayern München', text: '1' }]
+    - [{ url: '?staffel=778&r=2#p3278x3274', title: 'gegen Stuttgart-Wolfbusch', text: '2' }]
+    - [{ url: '?staffel=778&r=3#p3278x3271', title: 'gegen SV 1920 Hofheim', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=778&r=7#p3278x3276', title: 'gegen SG Augsburg 1873', text: '2' }]
+    - [{ url: '?staffel=778&r=4#p3278x3277', title: 'gegen TSG Mutterstadt', text: 5½ }]
+    - 4
+    - 16½
+    - ''
+-
+    - '7.'
+    - { text: 'SG Augsburg 1873', url: '?mannschaft=3276', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=778&r=5#p3276x3275', title: 'gegen SK Schwäbisch Hall', text: ½ }]
+    - [{ url: '?staffel=778&r=1#p3276x3272', title: 'gegen Karlsruher SF', text: '1' }]
+    - [{ url: '?staffel=778&r=3#p3276x3273', title: 'gegen Bayern München', text: ½ }]
+    - [{ url: '?staffel=778&r=4#p3276x3274', title: 'gegen Stuttgart-Wolfbusch', text: '2' }]
+    - [{ url: '?staffel=778&r=6#p3276x3271', title: 'gegen SV 1920 Hofheim', text: 2½ }]
+    - [{ url: '?staffel=778&r=7#p3276x3278', title: 'gegen Wadgassen/Differten', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=778&r=2#p3276x3277', title: 'gegen TSG Mutterstadt', text: 5½ }]
+    - 4
+    - '16'
+    - ''
+-
+    - '8.'
+    - { text: 'TSG Mutterstadt', url: '?mannschaft=3277', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=778&r=6#p3277x3275', title: 'gegen SK Schwäbisch Hall', text: '0' }]
+    - [{ url: '?staffel=778&r=3#p3277x3272', title: 'gegen Karlsruher SF', text: ½ }]
+    - [{ url: '?staffel=778&r=1#p3277x3273', title: 'gegen Bayern München', text: 1½ }]
+    - [{ url: '?staffel=778&r=7#p3277x3274', title: 'gegen Stuttgart-Wolfbusch', text: 1½ }]
+    - [{ url: '?staffel=778&r=5#p3277x3271', title: 'gegen SV 1920 Hofheim', text: '1' }]
+    - [{ url: '?staffel=778&r=4#p3277x3278', title: 'gegen Wadgassen/Differten', text: ½ }]
+    - [{ url: '?staffel=778&r=2#p3277x3276', title: 'gegen SG Augsburg 1873', text: ½ }]
+    - xxx
+    - 0
+    - 5½
+    - ''

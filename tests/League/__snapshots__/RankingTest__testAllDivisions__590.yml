@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamelner SV 7', url: '?mannschaft=5366', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1327&r=1#p5366x5365', title: 'gegen Hamelner SV 6', text: '2' }]
+    - [{ url: '?staffel=1327&r=3#p5366x5362', title: 'gegen SK Gronau 2', text: 2½ }]
+    - [{ url: '?staffel=1327&r=2#p5366x5356', title: 'gegen Bad Salzdetfurth 3', text: '3' }]
+    - [{ url: '?staffel=1327&r=4#p5366x5369', title: 'gegen Hildesheimer SV 6', text: '4' }]
+    - [{ url: '?staffel=1327&r=5#p5366x5371', title: 'gegen Hildesheimer Damen 8', text: '4' }]
+    - [{ url: '?staffel=1327&r=7#p5366x5370', title: 'gegen Hildesheimer SV 7', text: 2½ }]
+    - 11
+    - '18'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'Hamelner SV 6', url: '?mannschaft=5365', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1327&r=1#p5365x5366', title: 'gegen Hamelner SV 7', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1327&r=4#p5365x5362', title: 'gegen SK Gronau 2', text: '3' }]
+    - [{ url: '?staffel=1327&r=3#p5365x5356', title: 'gegen Bad Salzdetfurth 3', text: '3' }]
+    - [{ url: '?staffel=1327&r=6#p5365x5369', title: 'gegen Hildesheimer SV 6', text: '3' }]
+    - [{ url: '?staffel=1327&r=7#p5365x5371', title: 'gegen Hildesheimer Damen 8', text: '3' }]
+    - [{ url: '?staffel=1327&r=2#p5365x5370', title: 'gegen Hildesheimer SV 7', text: '3' }]
+    - 11
+    - '17'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SK Gronau 2', url: '?mannschaft=5362', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1327&r=3#p5362x5366', title: 'gegen Hamelner SV 7', text: 1½ }]
+    - [{ url: '?staffel=1327&r=4#p5362x5365', title: 'gegen Hamelner SV 6', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1327&r=1#p5362x5356', title: 'gegen Bad Salzdetfurth 3', text: '3' }]
+    - [{ url: '?staffel=1327&r=7#p5362x5369', title: 'gegen Hildesheimer SV 6', text: '2' }]
+    - [{ url: '?staffel=1327&r=6#p5362x5371', title: 'gegen Hildesheimer Damen 8', text: 2½ }]
+    - [{ url: '?staffel=1327&r=5#p5362x5370', title: 'gegen Hildesheimer SV 7', text: '4' }]
+    - 7
+    - '14'
+    - ''
+-
+    - '4.'
+    - { text: 'Bad Salzdetfurth 3', url: '?mannschaft=5356', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1327&r=2#p5356x5366', title: 'gegen Hamelner SV 7', text: '1' }]
+    - [{ url: '?staffel=1327&r=3#p5356x5365', title: 'gegen Hamelner SV 6', text: '1' }]
+    - [{ url: '?staffel=1327&r=1#p5356x5362', title: 'gegen SK Gronau 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1327&r=5#p5356x5369', title: 'gegen Hildesheimer SV 6', text: '2' }]
+    - [{ url: '?staffel=1327&r=4#p5356x5371', title: 'gegen Hildesheimer Damen 8', text: 2½ }]
+    - [{ url: '?staffel=1327&r=6#p5356x5370', title: 'gegen Hildesheimer SV 7', text: '3' }]
+    - 5
+    - 10½
+    - ''
+-
+    - '5.'
+    - { text: 'Hildesheimer SV 6', url: '?mannschaft=5369', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1327&r=4#p5369x5366', title: 'gegen Hamelner SV 7', text: '0' }]
+    - [{ url: '?staffel=1327&r=6#p5369x5365', title: 'gegen Hamelner SV 6', text: '1' }]
+    - [{ url: '?staffel=1327&r=7#p5369x5362', title: 'gegen SK Gronau 2', text: '2' }]
+    - [{ url: '?staffel=1327&r=5#p5369x5356', title: 'gegen Bad Salzdetfurth 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1327&r=2#p5369x5371', title: 'gegen Hildesheimer Damen 8', text: '2' }]
+    - [{ url: '?staffel=1327&r=1#p5369x5370', title: 'gegen Hildesheimer SV 7', text: 3½ }]
+    - 5
+    - 10½
+    - ''
+-
+    - '6.'
+    - { text: 'Hildesheimer Damen 8', url: '?mannschaft=5371', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1327&r=5#p5371x5366', title: 'gegen Hamelner SV 7', text: '0' }]
+    - [{ url: '?staffel=1327&r=7#p5371x5365', title: 'gegen Hamelner SV 6', text: '1' }]
+    - [{ url: '?staffel=1327&r=6#p5371x5362', title: 'gegen SK Gronau 2', text: 1½ }]
+    - [{ url: '?staffel=1327&r=4#p5371x5356', title: 'gegen Bad Salzdetfurth 3', text: 1½ }]
+    - [{ url: '?staffel=1327&r=2#p5371x5369', title: 'gegen Hildesheimer SV 6', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1327&r=3#p5371x5370', title: 'gegen Hildesheimer SV 7', text: 2½ }]
+    - 3
+    - 8½
+    - ''
+-
+    - '7.'
+    - { text: 'Hildesheimer SV 7', url: '?mannschaft=5370', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1327&r=7#p5370x5366', title: 'gegen Hamelner SV 7', text: 1½ }]
+    - [{ url: '?staffel=1327&r=2#p5370x5365', title: 'gegen Hamelner SV 6', text: '1' }]
+    - [{ url: '?staffel=1327&r=5#p5370x5362', title: 'gegen SK Gronau 2', text: '0' }]
+    - [{ url: '?staffel=1327&r=6#p5370x5356', title: 'gegen Bad Salzdetfurth 3', text: '1' }]
+    - [{ url: '?staffel=1327&r=1#p5370x5369', title: 'gegen Hildesheimer SV 6', text: ½ }]
+    - [{ url: '?staffel=1327&r=3#p5370x5371', title: 'gegen Hildesheimer Damen 8', text: 1½ }]
+    - xxx
+    - 0
+    - 5½
+    - ''

@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Bl.', url: '?mannschaft=2263', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=629&r=1#p2263x2266', title: 'gegen SF Spelle', text: '4' }]
+    - [{ url: '?staffel=629&r=2#p2263x2264', title: 'gegen SV Lingen', text: '4' }]
+    - [{ url: '?staffel=629&r=3#p2263x2265', title: 'gegen SV Lingen 2', text: '4' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '2.'
+    - { text: 'SF Spelle', url: '?mannschaft=2266', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=629&r=1#p2266x2263', title: 'gegen SK Nordhorn-Bl.', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=629&r=3#p2266x2264', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=629&r=2#p2266x2265', title: 'gegen SV Lingen 2', text: '4' }]
+    - 3
+    - '6'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Lingen', url: '?mannschaft=2264', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=629&r=2#p2264x2263', title: 'gegen SK Nordhorn-Bl.', text: '0' }]
+    - [{ url: '?staffel=629&r=3#p2264x2266', title: 'gegen SF Spelle', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=629&r=1#p2264x2265', title: 'gegen SV Lingen 2', text: '2' }]
+    - 2
+    - '4'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=2265', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=629&r=3#p2265x2263', title: 'gegen SK Nordhorn-Bl.', text: '0' }]
+    - [{ url: '?staffel=629&r=2#p2265x2266', title: 'gegen SF Spelle', text: '0' }]
+    - [{ url: '?staffel=629&r=1#p2265x2264', title: 'gegen SV Lingen', text: '2' }]
+    - xxx
+    - 1
+    - '2'
+    - ''

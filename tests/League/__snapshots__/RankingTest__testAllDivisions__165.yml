@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=2010', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=584&r=4#p2010x2096', title: 'gegen Laatzen / Gleid', text: '4' }]
+    - [{ url: '?staffel=584&r=1#p2010x2011', title: 'gegen SV Bückeburg 2', text: 3½ }]
+    - [{ url: '?staffel=584&r=2#p2010x1910', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=584&r=3#p2010x1923', title: 'gegen SVg Calenberg', text: '4' }]
+    - [{ url: '?staffel=584&r=5#p2010x2100', title: 'gegen Schachakademie', text: 3½ }]
+    - 10
+    - '18'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Laatzen / Gleid', url: '?mannschaft=2096', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=584&r=4#p2096x2010', title: 'gegen SV Bückeburg', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=584&r=3#p2096x2011', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=584&r=1#p2096x1910', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=584&r=5#p2096x1923', title: 'gegen SVg Calenberg', text: '3' }]
+    - [{ url: '?staffel=584&r=2#p2096x2100', title: 'gegen Schachakademie', text: '4' }]
+    - 8
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=2011', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=584&r=1#p2011x2010', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=584&r=3#p2011x2096', title: 'gegen Laatzen / Gleid', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=584&r=5#p2011x1910', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=584&r=2#p2011x1923', title: 'gegen SVg Calenberg', text: '1' }]
+    - [{ url: '?staffel=584&r=4#p2011x2100', title: 'gegen Schachakademie', text: '4' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '4.'
+    - { text: Barsinghausen, url: '?mannschaft=1910', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=584&r=2#p1910x2010', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=584&r=1#p1910x2096', title: 'gegen Laatzen / Gleid', text: '1' }]
+    - [{ url: '?staffel=584&r=5#p1910x2011', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=584&r=4#p1910x1923', title: 'gegen SVg Calenberg', text: '3' }]
+    - [{ url: '?staffel=584&r=3#p1910x2100', title: 'gegen Schachakademie', text: '3' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'SVg Calenberg', url: '?mannschaft=1923', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=584&r=3#p1923x2010', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=584&r=5#p1923x2096', title: 'gegen Laatzen / Gleid', text: '1' }]
+    - [{ url: '?staffel=584&r=2#p1923x2011', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=584&r=4#p1923x1910', title: 'gegen Barsinghausen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=584&r=1#p1923x2100', title: 'gegen Schachakademie', text: '3' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '6.'
+    - { text: Schachakademie, url: '?mannschaft=2100', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=584&r=5#p2100x2010', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=584&r=2#p2100x2096', title: 'gegen Laatzen / Gleid', text: '0' }]
+    - [{ url: '?staffel=584&r=4#p2100x2011', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - [{ url: '?staffel=584&r=3#p2100x1910', title: 'gegen Barsinghausen', text: '1' }]
+    - [{ url: '?staffel=584&r=1#p2100x1923', title: 'gegen SVg Calenberg', text: '1' }]
+    - xxx
+    - 0
+    - 2½
+    - ''

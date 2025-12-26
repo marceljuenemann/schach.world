@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Karlsruher SF', url: '?mannschaft=3634', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=848&r=1#p3634x3635', title: 'gegen FC Bayern München', text: '4' }]
+    - [{ url: '?staffel=848&r=6#p3634x3636', title: 'gegen SV Hofheim', text: 3½ }]
+    - [{ url: '?staffel=848&r=7#p3634x3640', title: 'gegen TSV Schott Mainz', text: 3½ }]
+    - [{ url: '?staffel=848&r=2#p3634x3641', title: 'gegen SG Augsburg', text: '6' }]
+    - [{ url: '?staffel=848&r=4#p3634x3639', title: 'gegen Wadgass./Differten', text: 4½ }]
+    - [{ url: '?staffel=848&r=5#p3634x3638', title: 'gegen SV Stuttgart-Wo', text: 4½ }]
+    - [{ url: '?staffel=848&r=3#p3634x3637', title: 'gegen SK Gernsheim', text: '5' }]
+    - 14
+    - '31'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'FC Bayern München', url: '?mannschaft=3635', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=848&r=1#p3635x3634', title: 'gegen Karlsruher SF', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=848&r=3#p3635x3636', title: 'gegen SV Hofheim', text: 2½ }]
+    - [{ url: '?staffel=848&r=4#p3635x3640', title: 'gegen TSV Schott Mainz', text: '4' }]
+    - [{ url: '?staffel=848&r=5#p3635x3641', title: 'gegen SG Augsburg', text: 5½ }]
+    - [{ url: '?staffel=848&r=7#p3635x3639', title: 'gegen Wadgass./Differten', text: '4' }]
+    - [{ url: '?staffel=848&r=2#p3635x3638', title: 'gegen SV Stuttgart-Wo', text: 3½ }]
+    - [{ url: '?staffel=848&r=6#p3635x3637', title: 'gegen SK Gernsheim', text: 3½ }]
+    - 10
+    - '25'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Hofheim', url: '?mannschaft=3636', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=848&r=6#p3636x3634', title: 'gegen Karlsruher SF', text: 2½ }]
+    - [{ url: '?staffel=848&r=3#p3636x3635', title: 'gegen FC Bayern München', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=848&r=5#p3636x3640', title: 'gegen TSV Schott Mainz', text: '3' }]
+    - [{ url: '?staffel=848&r=4#p3636x3641', title: 'gegen SG Augsburg', text: '2' }]
+    - [{ url: '?staffel=848&r=2#p3636x3639', title: 'gegen Wadgass./Differten', text: '4' }]
+    - [{ url: '?staffel=848&r=7#p3636x3638', title: 'gegen SV Stuttgart-Wo', text: 3½ }]
+    - [{ url: '?staffel=848&r=1#p3636x3637', title: 'gegen SK Gernsheim', text: '4' }]
+    - 9
+    - 22½
+    - ''
+-
+    - '4.'
+    - { text: 'TSV Schott Mainz', url: '?mannschaft=3640', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=848&r=7#p3640x3634', title: 'gegen Karlsruher SF', text: 2½ }]
+    - [{ url: '?staffel=848&r=4#p3640x3635', title: 'gegen FC Bayern München', text: '2' }]
+    - [{ url: '?staffel=848&r=5#p3640x3636', title: 'gegen SV Hofheim', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=848&r=3#p3640x3641', title: 'gegen SG Augsburg', text: 3½ }]
+    - [{ url: '?staffel=848&r=1#p3640x3639', title: 'gegen Wadgass./Differten', text: 3½ }]
+    - [{ url: '?staffel=848&r=6#p3640x3638', title: 'gegen SV Stuttgart-Wo', text: 3½ }]
+    - [{ url: '?staffel=848&r=2#p3640x3637', title: 'gegen SK Gernsheim', text: '4' }]
+    - 9
+    - '22'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Augsburg', url: '?mannschaft=3641', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=848&r=2#p3641x3634', title: 'gegen Karlsruher SF', text: '0' }]
+    - [{ url: '?staffel=848&r=5#p3641x3635', title: 'gegen FC Bayern München', text: ½ }]
+    - [{ url: '?staffel=848&r=4#p3641x3636', title: 'gegen SV Hofheim', text: '4' }]
+    - [{ url: '?staffel=848&r=3#p3641x3640', title: 'gegen TSV Schott Mainz', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=848&r=6#p3641x3639', title: 'gegen Wadgass./Differten', text: 2½ }]
+    - [{ url: '?staffel=848&r=1#p3641x3638', title: 'gegen SV Stuttgart-Wo', text: 3½ }]
+    - [{ url: '?staffel=848&r=7#p3641x3637', title: 'gegen SK Gernsheim', text: 4½ }]
+    - 6
+    - 17½
+    - ''
+-
+    - '6.'
+    - { text: Wadgass./Differten, url: '?mannschaft=3639', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=848&r=4#p3639x3634', title: 'gegen Karlsruher SF', text: 1½ }]
+    - [{ url: '?staffel=848&r=7#p3639x3635', title: 'gegen FC Bayern München', text: '2' }]
+    - [{ url: '?staffel=848&r=2#p3639x3636', title: 'gegen SV Hofheim', text: '2' }]
+    - [{ url: '?staffel=848&r=1#p3639x3640', title: 'gegen TSV Schott Mainz', text: 2½ }]
+    - [{ url: '?staffel=848&r=6#p3639x3641', title: 'gegen SG Augsburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=848&r=3#p3639x3638', title: 'gegen SV Stuttgart-Wo', text: 3½ }]
+    - [{ url: '?staffel=848&r=5#p3639x3637', title: 'gegen SK Gernsheim', text: 1½ }]
+    - 4
+    - 16½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Stuttgart-Wo', url: '?mannschaft=3638', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=848&r=5#p3638x3634', title: 'gegen Karlsruher SF', text: 1½ }]
+    - [{ url: '?staffel=848&r=2#p3638x3635', title: 'gegen FC Bayern München', text: 2½ }]
+    - [{ url: '?staffel=848&r=7#p3638x3636', title: 'gegen SV Hofheim', text: 2½ }]
+    - [{ url: '?staffel=848&r=6#p3638x3640', title: 'gegen TSV Schott Mainz', text: 2½ }]
+    - [{ url: '?staffel=848&r=1#p3638x3641', title: 'gegen SG Augsburg', text: 2½ }]
+    - [{ url: '?staffel=848&r=3#p3638x3639', title: 'gegen Wadgass./Differten', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=848&r=4#p3638x3637', title: 'gegen SK Gernsheim', text: 5½ }]
+    - 2
+    - 19½
+    - absteiger
+-
+    - '8.'
+    - { text: 'SK Gernsheim', url: '?mannschaft=3637', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=848&r=3#p3637x3634', title: 'gegen Karlsruher SF', text: '1' }]
+    - [{ url: '?staffel=848&r=6#p3637x3635', title: 'gegen FC Bayern München', text: 2½ }]
+    - [{ url: '?staffel=848&r=1#p3637x3636', title: 'gegen SV Hofheim', text: '2' }]
+    - [{ url: '?staffel=848&r=2#p3637x3640', title: 'gegen TSV Schott Mainz', text: '2' }]
+    - [{ url: '?staffel=848&r=7#p3637x3641', title: 'gegen SG Augsburg', text: 1½ }]
+    - [{ url: '?staffel=848&r=5#p3637x3639', title: 'gegen Wadgass./Differten', text: 4½ }]
+    - [{ url: '?staffel=848&r=4#p3637x3638', title: 'gegen SV Stuttgart-Wo', text: ½ }]
+    - xxx
+    - 2
+    - '14'
+    - absteiger

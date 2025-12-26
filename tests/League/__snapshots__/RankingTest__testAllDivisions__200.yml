@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Lingen', url: '?mannschaft=2250', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=626&r=7#p2250x2247', title: 'gegen Hamelner SV', text: 2½ }]
+    - [{ url: '?staffel=626&r=1#p2250x2249', title: 'gegen SG Oesede-Gmht. 2', text: '2' }]
+    - [{ url: '?staffel=626&r=5#p2250x2253', title: 'gegen SK Nordhorn-Bl. 2', text: '2' }]
+    - [{ url: '?staffel=626&r=4#p2250x2248', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=626&r=3#p2250x2252', title: 'gegen SG Schöningen', text: '2' }]
+    - [{ url: '?staffel=626&r=6#p2250x2251', title: 'gegen SVg Steinhude', text: '4' }]
+    - 9
+    - 15½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamelner SV', url: '?mannschaft=2247', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=626&r=7#p2247x2250', title: 'gegen SV Lingen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=626&r=3#p2247x2249', title: 'gegen SG Oesede-Gmht. 2', text: 2½ }]
+    - [{ url: '?staffel=626&r=6#p2247x2253', title: 'gegen SK Nordhorn-Bl. 2', text: '2' }]
+    - [{ url: '?staffel=626&r=1#p2247x2248', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - [{ url: '?staffel=626&r=2#p2247x2252', title: 'gegen SG Schöningen', text: 2½ }]
+    - [{ url: '?staffel=626&r=5#p2247x2251', title: 'gegen SVg Steinhude', text: 3½ }]
+    - 9
+    - 15½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Oesede-Gmht. 2', url: '?mannschaft=2249', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=626&r=1#p2249x2250', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=626&r=3#p2249x2247', title: 'gegen Hamelner SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=626&r=2#p2249x2253', title: 'gegen SK Nordhorn-Bl. 2', text: '3' }]
+    - [{ url: '?staffel=626&r=6#p2249x2248', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=626&r=7#p2249x2252', title: 'gegen SG Schöningen', text: 3½ }]
+    - [{ url: '?staffel=626&r=4#p2249x2251', title: 'gegen SVg Steinhude', text: '2' }]
+    - 6
+    - 13½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Bl. 2', url: '?mannschaft=2253', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=626&r=5#p2253x2250', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=626&r=6#p2253x2247', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=626&r=2#p2253x2249', title: 'gegen SG Oesede-Gmht. 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=626&r=3#p2253x2248', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=626&r=4#p2253x2252', title: 'gegen SG Schöningen', text: '2' }]
+    - [{ url: '?staffel=626&r=7#p2253x2251', title: 'gegen SVg Steinhude', text: 2½ }]
+    - 6
+    - 11½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=2248', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=626&r=4#p2248x2250', title: 'gegen SV Lingen', text: '1' }]
+    - [{ url: '?staffel=626&r=1#p2248x2247', title: 'gegen Hamelner SV', text: ½ }]
+    - [{ url: '?staffel=626&r=6#p2248x2249', title: 'gegen SG Oesede-Gmht. 2', text: 2½ }]
+    - [{ url: '?staffel=626&r=3#p2248x2253', title: 'gegen SK Nordhorn-Bl. 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=626&r=5#p2248x2252', title: 'gegen SG Schöningen', text: '3' }]
+    - [{ url: '?staffel=626&r=2#p2248x2251', title: 'gegen SVg Steinhude', text: '1' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Schöningen', url: '?mannschaft=2252', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=626&r=3#p2252x2250', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=626&r=2#p2252x2247', title: 'gegen Hamelner SV', text: 1½ }]
+    - [{ url: '?staffel=626&r=7#p2252x2249', title: 'gegen SG Oesede-Gmht. 2', text: ½ }]
+    - [{ url: '?staffel=626&r=4#p2252x2253', title: 'gegen SK Nordhorn-Bl. 2', text: '2' }]
+    - [{ url: '?staffel=626&r=5#p2252x2248', title: 'gegen SK Lehrte 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=626&r=1#p2252x2251', title: 'gegen SVg Steinhude', text: 2½ }]
+    - 4
+    - 9½
+    - ''
+-
+    - '7.'
+    - { text: 'SVg Steinhude', url: '?mannschaft=2251', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=626&r=6#p2251x2250', title: 'gegen SV Lingen', text: '0' }]
+    - [{ url: '?staffel=626&r=5#p2251x2247', title: 'gegen Hamelner SV', text: ½ }]
+    - [{ url: '?staffel=626&r=4#p2251x2249', title: 'gegen SG Oesede-Gmht. 2', text: '2' }]
+    - [{ url: '?staffel=626&r=7#p2251x2253', title: 'gegen SK Nordhorn-Bl. 2', text: 1½ }]
+    - [{ url: '?staffel=626&r=2#p2251x2248', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=626&r=1#p2251x2252', title: 'gegen SG Schöningen', text: 1½ }]
+    - xxx
+    - 3
+    - 8½
+    - ''

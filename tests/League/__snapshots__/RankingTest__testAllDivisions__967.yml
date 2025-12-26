@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 9', url: '?mannschaft=8051', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1806&r=1#p8051x8060', title: 'gegen HSK Lister Turm 8', text: 4½ }, { url: '?staffel=1806&r=10#p8051x8060', title: 'gegen HSK Lister Turm 8', text: 2½ }]
+    - [{ url: '?staffel=1806&r=5#p8051x8018', title: 'gegen SD Isernhagen 4', text: '3' }, { url: '?staffel=1806&r=9#p8051x8018', title: 'gegen SD Isernhagen 4', text: '6' }]
+    - [{ url: '?staffel=1806&r=4#p8051x7876', title: 'gegen SG WB Eilenriede 4', text: 4½ }, { url: '?staffel=1806&r=8#p8051x7876', title: 'gegen SG WB Eilenriede 4', text: 5½ }]
+    - [{ url: '?staffel=1806&r=2#p8051x8050', title: 'gegen SK Lehrte 8', text: 4½ }, { url: '?staffel=1806&r=6#p8051x8050', title: 'gegen SK Lehrte 8', text: 5½ }]
+    - 12
+    - '36'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'HSK Lister Turm 8', url: '?mannschaft=8060', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1806&r=1#p8060x8051', title: 'gegen SK Lehrte 9', text: 3½ }, { url: '?staffel=1806&r=10#p8060x8051', title: 'gegen SK Lehrte 9', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1806&r=3#p8060x8018', title: 'gegen SD Isernhagen 4', text: 4½ }, { url: '?staffel=1806&r=7#p8060x8018', title: 'gegen SD Isernhagen 4', text: '8' }]
+    - [{ url: '?staffel=1806&r=5#p8060x7876', title: 'gegen SG WB Eilenriede 4', text: 5½ }, { url: '?staffel=1806&r=9#p8060x7876', title: 'gegen SG WB Eilenriede 4', text: 4½ }]
+    - [{ url: '?staffel=1806&r=4#p8060x8050', title: 'gegen SK Lehrte 8', text: '3' }, { url: '?staffel=1806&r=8#p8060x8050', title: 'gegen SK Lehrte 8', text: '4' }]
+    - 11
+    - 38½
+    - ''
+-
+    - '3.'
+    - { text: 'SD Isernhagen 4', url: '?mannschaft=8018', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1806&r=5#p8018x8051', title: 'gegen SK Lehrte 9', text: '5' }, { url: '?staffel=1806&r=9#p8018x8051', title: 'gegen SK Lehrte 9', text: '2' }]
+    - [{ url: '?staffel=1806&r=3#p8018x8060', title: 'gegen HSK Lister Turm 8', text: 3½ }, { url: '?staffel=1806&r=7#p8018x8060', title: 'gegen HSK Lister Turm 8', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1806&r=2#p8018x7876', title: 'gegen SG WB Eilenriede 4', text: 3½ }, { url: '?staffel=1806&r=6#p8018x7876', title: 'gegen SG WB Eilenriede 4', text: '4' }]
+    - [{ url: '?staffel=1806&r=1#p8018x8050', title: 'gegen SK Lehrte 8', text: 6½ }, { url: '?staffel=1806&r=10#p8018x8050', title: 'gegen SK Lehrte 8', text: '6' }]
+    - 7
+    - 30½
+    - ''
+-
+    - '4.'
+    - { text: 'SG WB Eilenriede 4', url: '?mannschaft=7876', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1806&r=4#p7876x8051', title: 'gegen SK Lehrte 9', text: 3½ }, { url: '?staffel=1806&r=8#p7876x8051', title: 'gegen SK Lehrte 9', text: 2½ }]
+    - [{ url: '?staffel=1806&r=5#p7876x8060', title: 'gegen HSK Lister Turm 8', text: 2½ }, { url: '?staffel=1806&r=9#p7876x8060', title: 'gegen HSK Lister Turm 8', text: 2½ }]
+    - [{ url: '?staffel=1806&r=2#p7876x8018', title: 'gegen SD Isernhagen 4', text: 4½ }, { url: '?staffel=1806&r=6#p7876x8018', title: 'gegen SD Isernhagen 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1806&r=3#p7876x8050', title: 'gegen SK Lehrte 8', text: '5' }, { url: '?staffel=1806&r=7#p7876x8050', title: 'gegen SK Lehrte 8', text: 3½ }]
+    - 5
+    - '28'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 8', url: '?mannschaft=8050', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1806&r=2#p8050x8051', title: 'gegen SK Lehrte 9', text: 3½ }, { url: '?staffel=1806&r=6#p8050x8051', title: 'gegen SK Lehrte 9', text: 2½ }]
+    - [{ url: '?staffel=1806&r=4#p8050x8060', title: 'gegen HSK Lister Turm 8', text: '5' }, { url: '?staffel=1806&r=8#p8050x8060', title: 'gegen HSK Lister Turm 8', text: '4' }]
+    - [{ url: '?staffel=1806&r=1#p8050x8018', title: 'gegen SD Isernhagen 4', text: 1½ }, { url: '?staffel=1806&r=10#p8050x8018', title: 'gegen SD Isernhagen 4', text: '2' }]
+    - [{ url: '?staffel=1806&r=3#p8050x7876', title: 'gegen SG WB Eilenriede 4', text: '3' }, { url: '?staffel=1806&r=7#p8050x7876', title: 'gegen SG WB Eilenriede 4', text: 4½ }]
+    - xxx
+    - 5
+    - '26'
+    - ''

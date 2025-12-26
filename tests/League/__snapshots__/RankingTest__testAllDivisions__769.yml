@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=6566', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1571&r=3#p6566x6567', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1571&r=5#p6566x6544', title: 'gegen Rochade Magdeburg', text: 5½ }]
+    - [{ url: '?staffel=1571&r=1#p6566x6546', title: 'gegen VfL Gräfenhain.', text: '6' }]
+    - [{ url: '?staffel=1571&r=4#p6566x6569', title: 'gegen Rochade Göttingen', text: 4½ }]
+    - 7
+    - '19'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte', url: '?mannschaft=6567', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1571&r=3#p6567x6566', title: 'gegen Post SV Uelzen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1571&r=1#p6567x6544', title: 'gegen Rochade Magdeburg', text: '3' }]
+    - [{ url: '?staffel=1571&r=2#p6567x6546', title: 'gegen VfL Gräfenhain.', text: 5½ }]
+    - [{ url: '?staffel=1571&r=5#p6567x6569', title: 'gegen Rochade Göttingen', text: '6' }]
+    - 6
+    - 17½
+    - ''
+-
+    - '3.'
+    - { text: 'Rochade Magdeburg', url: '?mannschaft=6544', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1571&r=5#p6544x6566', title: 'gegen Post SV Uelzen', text: ½ }]
+    - [{ url: '?staffel=1571&r=1#p6544x6567', title: 'gegen SK Lehrte', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1571&r=4#p6544x6546', title: 'gegen VfL Gräfenhain.', text: '5' }]
+    - [{ url: '?staffel=1571&r=2#p6544x6569', title: 'gegen Rochade Göttingen', text: '4' }]
+    - 5
+    - 12½
+    - ''
+-
+    - '4.'
+    - { text: 'VfL Gräfenhain.', url: '?mannschaft=6546', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1571&r=1#p6546x6566', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=1571&r=2#p6546x6567', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=1571&r=4#p6546x6544', title: 'gegen Rochade Magdeburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1571&r=3#p6546x6569', title: 'gegen Rochade Göttingen', text: 5½ }]
+    - 2
+    - '7'
+    - ''
+-
+    - '5.'
+    - { text: 'Rochade Göttingen', url: '?mannschaft=6569', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1571&r=4#p6569x6566', title: 'gegen Post SV Uelzen', text: 1½ }]
+    - [{ url: '?staffel=1571&r=5#p6569x6567', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1571&r=2#p6569x6544', title: 'gegen Rochade Magdeburg', text: '2' }]
+    - [{ url: '?staffel=1571&r=3#p6569x6546', title: 'gegen VfL Gräfenhain.', text: ½ }]
+    - xxx
+    - 0
+    - '4'
+    - ''

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: Ankum/Bersenbrü, url: '?mannschaft=1988', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=599&r=8#p1988x1983', title: 'gegen Hagener SV 3', text: '6' }]
+    - [{ url: '?staffel=599&r=3#p1988x1987', title: 'gegen SG Osnabrück 4', text: '4' }]
+    - [{ url: '?staffel=599&r=6#p1988x1990', title: 'gegen TSV Riemsloh', text: 4½ }]
+    - [{ url: '?staffel=599&r=9#p1988x1984', title: 'gegen TSV Osnabrück', text: '6' }]
+    - [{ url: '?staffel=599&r=1#p1988x1985', title: 'gegen Gaste-Hasbergen', text: '4' }]
+    - [{ url: '?staffel=599&r=7#p1988x1982', title: 'gegen SC Fürstenau 2', text: 5½ }]
+    - [{ url: '?staffel=599&r=5#p1988x1989', title: 'gegen SK Rulle', text: 5½ }]
+    - [{ url: '?staffel=599&r=4#p1988x1991', title: 'gegen SV Osnabrück 4', text: 6½ }]
+    - [{ url: '?staffel=599&r=2#p1988x1986', title: 'gegen SG Oesede-Gmht. 3', text: '6' }]
+    - 16
+    - '48'
+    - ''
+-
+    - '2.'
+    - { text: 'Hagener SV 3', url: '?mannschaft=1983', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=599&r=8#p1983x1988', title: 'gegen Ankum/Bersenbrü', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=599&r=7#p1983x1987', title: 'gegen SG Osnabrück 4', text: 5½ }]
+    - [{ url: '?staffel=599&r=1#p1983x1990', title: 'gegen TSV Riemsloh', text: '6' }]
+    - [{ url: '?staffel=599&r=4#p1983x1984', title: 'gegen TSV Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=599&r=5#p1983x1985', title: 'gegen Gaste-Hasbergen', text: 5½ }]
+    - [{ url: '?staffel=599&r=2#p1983x1982', title: 'gegen SC Fürstenau 2', text: '3' }]
+    - [{ url: '?staffel=599&r=9#p1983x1989', title: 'gegen SK Rulle', text: '6' }]
+    - [{ url: '?staffel=599&r=3#p1983x1991', title: 'gegen SV Osnabrück 4', text: '7' }]
+    - [{ url: '?staffel=599&r=6#p1983x1986', title: 'gegen SG Oesede-Gmht. 3', text: 4½ }]
+    - 14
+    - '44'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Osnabrück 4', url: '?mannschaft=1987', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=599&r=3#p1987x1988', title: 'gegen Ankum/Bersenbrü', text: '4' }]
+    - [{ url: '?staffel=599&r=7#p1987x1983', title: 'gegen Hagener SV 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=599&r=5#p1987x1990', title: 'gegen TSV Riemsloh', text: 5½ }]
+    - [{ url: '?staffel=599&r=8#p1987x1984', title: 'gegen TSV Osnabrück', text: '3' }]
+    - [{ url: '?staffel=599&r=9#p1987x1985', title: 'gegen Gaste-Hasbergen', text: '5' }]
+    - [{ url: '?staffel=599&r=6#p1987x1982', title: 'gegen SC Fürstenau 2', text: 5½ }]
+    - [{ url: '?staffel=599&r=4#p1987x1989', title: 'gegen SK Rulle', text: '5' }]
+    - [{ url: '?staffel=599&r=2#p1987x1991', title: 'gegen SV Osnabrück 4', text: 6½ }]
+    - [{ url: '?staffel=599&r=1#p1987x1986', title: 'gegen SG Oesede-Gmht. 3', text: 4½ }]
+    - 13
+    - 41½
+    - ''
+-
+    - '4.'
+    - { text: 'TSV Riemsloh', url: '?mannschaft=1990', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=599&r=6#p1990x1988', title: 'gegen Ankum/Bersenbrü', text: 3½ }]
+    - [{ url: '?staffel=599&r=1#p1990x1983', title: 'gegen Hagener SV 3', text: '2' }]
+    - [{ url: '?staffel=599&r=5#p1990x1987', title: 'gegen SG Osnabrück 4', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=599&r=2#p1990x1984', title: 'gegen TSV Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=599&r=3#p1990x1985', title: 'gegen Gaste-Hasbergen', text: 5½ }]
+    - [{ url: '?staffel=599&r=9#p1990x1982', title: 'gegen SC Fürstenau 2', text: '5' }]
+    - [{ url: '?staffel=599&r=7#p1990x1989', title: 'gegen SK Rulle', text: 5½ }]
+    - [{ url: '?staffel=599&r=8#p1990x1991', title: 'gegen SV Osnabrück 4', text: '5' }]
+    - [{ url: '?staffel=599&r=4#p1990x1986', title: 'gegen SG Oesede-Gmht. 3', text: '4' }]
+    - 11
+    - 37½
+    - ''
+-
+    - '5.'
+    - { text: 'TSV Osnabrück', url: '?mannschaft=1984', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=599&r=9#p1984x1988', title: 'gegen Ankum/Bersenbrü', text: '2' }]
+    - [{ url: '?staffel=599&r=4#p1984x1983', title: 'gegen Hagener SV 3', text: 3½ }]
+    - [{ url: '?staffel=599&r=8#p1984x1987', title: 'gegen SG Osnabrück 4', text: '5' }]
+    - [{ url: '?staffel=599&r=2#p1984x1990', title: 'gegen TSV Riemsloh', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=599&r=6#p1984x1985', title: 'gegen Gaste-Hasbergen', text: 5½ }]
+    - [{ url: '?staffel=599&r=3#p1984x1982', title: 'gegen SC Fürstenau 2', text: '6' }]
+    - [{ url: '?staffel=599&r=1#p1984x1989', title: 'gegen SK Rulle', text: '4' }]
+    - [{ url: '?staffel=599&r=5#p1984x1991', title: 'gegen SV Osnabrück 4', text: '2' }]
+    - [{ url: '?staffel=599&r=7#p1984x1986', title: 'gegen SG Oesede-Gmht. 3', text: '4' }]
+    - 8
+    - 35½
+    - ''
+-
+    - '6.'
+    - { text: Gaste-Hasbergen, url: '?mannschaft=1985', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=599&r=1#p1985x1988', title: 'gegen Ankum/Bersenbrü', text: '4' }]
+    - [{ url: '?staffel=599&r=5#p1985x1983', title: 'gegen Hagener SV 3', text: 2½ }]
+    - [{ url: '?staffel=599&r=9#p1985x1987', title: 'gegen SG Osnabrück 4', text: '3' }]
+    - [{ url: '?staffel=599&r=3#p1985x1990', title: 'gegen TSV Riemsloh', text: 2½ }]
+    - [{ url: '?staffel=599&r=6#p1985x1984', title: 'gegen TSV Osnabrück', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=599&r=4#p1985x1982', title: 'gegen SC Fürstenau 2', text: 3½ }]
+    - [{ url: '?staffel=599&r=2#p1985x1989', title: 'gegen SK Rulle', text: '5' }]
+    - [{ url: '?staffel=599&r=7#p1985x1991', title: 'gegen SV Osnabrück 4', text: '5' }]
+    - [{ url: '?staffel=599&r=8#p1985x1986', title: 'gegen SG Oesede-Gmht. 3', text: '4' }]
+    - 6
+    - '32'
+    - ''
+-
+    - '7.'
+    - { text: 'SC Fürstenau 2', url: '?mannschaft=1982', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=599&r=7#p1982x1988', title: 'gegen Ankum/Bersenbrü', text: 2½ }]
+    - [{ url: '?staffel=599&r=2#p1982x1983', title: 'gegen Hagener SV 3', text: '5' }]
+    - [{ url: '?staffel=599&r=6#p1982x1987', title: 'gegen SG Osnabrück 4', text: 2½ }]
+    - [{ url: '?staffel=599&r=9#p1982x1990', title: 'gegen TSV Riemsloh', text: '3' }]
+    - [{ url: '?staffel=599&r=3#p1982x1984', title: 'gegen TSV Osnabrück', text: '2' }]
+    - [{ url: '?staffel=599&r=4#p1982x1985', title: 'gegen Gaste-Hasbergen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=599&r=8#p1982x1989', title: 'gegen SK Rulle', text: '4' }]
+    - [{ url: '?staffel=599&r=1#p1982x1991', title: 'gegen SV Osnabrück 4', text: 3½ }]
+    - [{ url: '?staffel=599&r=5#p1982x1986', title: 'gegen SG Oesede-Gmht. 3', text: '4' }]
+    - 6
+    - '31'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Rulle', url: '?mannschaft=1989', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=599&r=5#p1989x1988', title: 'gegen Ankum/Bersenbrü', text: 2½ }]
+    - [{ url: '?staffel=599&r=9#p1989x1983', title: 'gegen Hagener SV 3', text: '2' }]
+    - [{ url: '?staffel=599&r=4#p1989x1987', title: 'gegen SG Osnabrück 4', text: '3' }]
+    - [{ url: '?staffel=599&r=7#p1989x1990', title: 'gegen TSV Riemsloh', text: 2½ }]
+    - [{ url: '?staffel=599&r=1#p1989x1984', title: 'gegen TSV Osnabrück', text: '4' }]
+    - [{ url: '?staffel=599&r=2#p1989x1985', title: 'gegen Gaste-Hasbergen', text: '3' }]
+    - [{ url: '?staffel=599&r=8#p1989x1982', title: 'gegen SC Fürstenau 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=599&r=6#p1989x1991', title: 'gegen SV Osnabrück 4', text: 4½ }]
+    - [{ url: '?staffel=599&r=3#p1989x1986', title: 'gegen SG Oesede-Gmht. 3', text: 5½ }]
+    - 6
+    - '31'
+    - ''
+-
+    - '9.'
+    - { text: 'SV Osnabrück 4', url: '?mannschaft=1991', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=599&r=4#p1991x1988', title: 'gegen Ankum/Bersenbrü', text: 1½ }]
+    - [{ url: '?staffel=599&r=3#p1991x1983', title: 'gegen Hagener SV 3', text: '1' }]
+    - [{ url: '?staffel=599&r=2#p1991x1987', title: 'gegen SG Osnabrück 4', text: 1½ }]
+    - [{ url: '?staffel=599&r=8#p1991x1990', title: 'gegen TSV Riemsloh', text: '3' }]
+    - [{ url: '?staffel=599&r=5#p1991x1984', title: 'gegen TSV Osnabrück', text: '6' }]
+    - [{ url: '?staffel=599&r=7#p1991x1985', title: 'gegen Gaste-Hasbergen', text: '3' }]
+    - [{ url: '?staffel=599&r=1#p1991x1982', title: 'gegen SC Fürstenau 2', text: 4½ }]
+    - [{ url: '?staffel=599&r=6#p1991x1989', title: 'gegen SK Rulle', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=599&r=9#p1991x1986', title: 'gegen SG Oesede-Gmht. 3', text: 5½ }]
+    - 6
+    - 29½
+    - ''
+-
+    - '10.'
+    - { text: 'SG Oesede-Gmht. 3', url: '?mannschaft=1986', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=599&r=2#p1986x1988', title: 'gegen Ankum/Bersenbrü', text: '2' }]
+    - [{ url: '?staffel=599&r=6#p1986x1983', title: 'gegen Hagener SV 3', text: 3½ }]
+    - [{ url: '?staffel=599&r=1#p1986x1987', title: 'gegen SG Osnabrück 4', text: 3½ }]
+    - [{ url: '?staffel=599&r=4#p1986x1990', title: 'gegen TSV Riemsloh', text: '4' }]
+    - [{ url: '?staffel=599&r=7#p1986x1984', title: 'gegen TSV Osnabrück', text: '4' }]
+    - [{ url: '?staffel=599&r=8#p1986x1985', title: 'gegen Gaste-Hasbergen', text: '4' }]
+    - [{ url: '?staffel=599&r=5#p1986x1982', title: 'gegen SC Fürstenau 2', text: '4' }]
+    - [{ url: '?staffel=599&r=3#p1986x1989', title: 'gegen SK Rulle', text: 2½ }]
+    - [{ url: '?staffel=599&r=9#p1986x1991', title: 'gegen SV Osnabrück 4', text: 2½ }]
+    - xxx
+    - 4
+    - '30'
+    - ''

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Bad Harzburg 2', url: '?mannschaft=3902', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=905&r=3#p3902x3875', title: 'gegen Alfelder SV', text: 2½ }]
+    - [{ url: '?staffel=905&r=1#p3902x3881', title: 'gegen Hildesheimer SV 4', text: 4½ }]
+    - [{ url: '?staffel=905&r=9#p3902x3839', title: 'gegen SG Holzminden 2', text: 5½ }]
+    - [{ url: '?staffel=905&r=2#p3902x3841', title: 'gegen KSV Rochade GÖ 2', text: '4' }]
+    - [{ url: '?staffel=905&r=5#p3902x3910', title: 'gegen ESV Göttingen 3', text: 4½ }]
+    - [{ url: '?staffel=905&r=7#p3902x3848', title: 'gegen Turm Vienenburg', text: 3½ }]
+    - [{ url: '?staffel=905&r=8#p3902x3862', title: 'gegen PSV Bad Pyrmont 2', text: 5½ }]
+    - [{ url: '?staffel=905&r=4#p3902x3908', title: 'gegen SK Gronau 2', text: '5' }]
+    - [{ url: '?staffel=905&r=6#p3902x3846', title: 'gegen VfL Oker', text: 5½ }]
+    - 16
+    - 40½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Alfelder SV', url: '?mannschaft=3875', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=905&r=3#p3875x3902', title: 'gegen SK Bad Harzburg 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=905&r=7#p3875x3881', title: 'gegen Hildesheimer SV 4', text: 4½ }]
+    - [{ url: '?staffel=905&r=2#p3875x3839', title: 'gegen SG Holzminden 2', text: 2½ }]
+    - [{ url: '?staffel=905&r=5#p3875x3841', title: 'gegen KSV Rochade GÖ 2', text: '4' }]
+    - [{ url: '?staffel=905&r=4#p3875x3910', title: 'gegen ESV Göttingen 3', text: 5½ }]
+    - [{ url: '?staffel=905&r=6#p3875x3848', title: 'gegen Turm Vienenburg', text: '5' }]
+    - [{ url: '?staffel=905&r=9#p3875x3862', title: 'gegen PSV Bad Pyrmont 2', text: '5' }]
+    - [{ url: '?staffel=905&r=8#p3875x3908', title: 'gegen SK Gronau 2', text: '4' }]
+    - [{ url: '?staffel=905&r=1#p3875x3846', title: 'gegen VfL Oker', text: '6' }]
+    - 16
+    - '40'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Hildesheimer SV 4', url: '?mannschaft=3881', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=905&r=1#p3881x3902', title: 'gegen SK Bad Harzburg 2', text: 1½ }]
+    - [{ url: '?staffel=905&r=7#p3881x3875', title: 'gegen Alfelder SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=905&r=8#p3881x3839', title: 'gegen SG Holzminden 2', text: '5' }]
+    - [{ url: '?staffel=905&r=3#p3881x3841', title: 'gegen KSV Rochade GÖ 2', text: '3' }]
+    - [{ url: '?staffel=905&r=2#p3881x3910', title: 'gegen ESV Göttingen 3', text: 3½ }]
+    - [{ url: '?staffel=905&r=9#p3881x3848', title: 'gegen Turm Vienenburg', text: 3½ }]
+    - [{ url: '?staffel=905&r=5#p3881x3862', title: 'gegen PSV Bad Pyrmont 2', text: '6' }]
+    - [{ url: '?staffel=905&r=6#p3881x3908', title: 'gegen SK Gronau 2', text: 4½ }]
+    - [{ url: '?staffel=905&r=4#p3881x3846', title: 'gegen VfL Oker', text: 5½ }]
+    - 13
+    - '34'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Holzminden 2', url: '?mannschaft=3839', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=905&r=9#p3839x3902', title: 'gegen SK Bad Harzburg 2', text: ½ }]
+    - [{ url: '?staffel=905&r=2#p3839x3875', title: 'gegen Alfelder SV', text: 3½ }]
+    - [{ url: '?staffel=905&r=8#p3839x3881', title: 'gegen Hildesheimer SV 4', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=905&r=4#p3839x3841', title: 'gegen KSV Rochade GÖ 2', text: '5' }]
+    - [{ url: '?staffel=905&r=7#p3839x3910', title: 'gegen ESV Göttingen 3', text: '1' }]
+    - [{ url: '?staffel=905&r=1#p3839x3848', title: 'gegen Turm Vienenburg', text: 4½ }]
+    - [{ url: '?staffel=905&r=6#p3839x3862', title: 'gegen PSV Bad Pyrmont 2', text: '3' }]
+    - [{ url: '?staffel=905&r=5#p3839x3908', title: 'gegen SK Gronau 2', text: '6' }]
+    - [{ url: '?staffel=905&r=3#p3839x3846', title: 'gegen VfL Oker', text: 3½ }]
+    - 11
+    - '28'
+    - ''
+-
+    - '5.'
+    - { text: 'KSV Rochade GÖ 2', url: '?mannschaft=3841', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=905&r=2#p3841x3902', title: 'gegen SK Bad Harzburg 2', text: '2' }]
+    - [{ url: '?staffel=905&r=5#p3841x3875', title: 'gegen Alfelder SV', text: '2' }]
+    - [{ url: '?staffel=905&r=3#p3841x3881', title: 'gegen Hildesheimer SV 4', text: '3' }]
+    - [{ url: '?staffel=905&r=4#p3841x3839', title: 'gegen SG Holzminden 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=905&r=6#p3841x3910', title: 'gegen ESV Göttingen 3', text: '3' }]
+    - [{ url: '?staffel=905&r=8#p3841x3848', title: 'gegen Turm Vienenburg', text: '5' }]
+    - [{ url: '?staffel=905&r=7#p3841x3862', title: 'gegen PSV Bad Pyrmont 2', text: '5' }]
+    - [{ url: '?staffel=905&r=1#p3841x3908', title: 'gegen SK Gronau 2', text: '5' }]
+    - [{ url: '?staffel=905&r=9#p3841x3846', title: 'gegen VfL Oker', text: '4' }]
+    - 10
+    - '30'
+    - ''
+-
+    - '6.'
+    - { text: 'ESV Göttingen 3', url: '?mannschaft=3910', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=905&r=5#p3910x3902', title: 'gegen SK Bad Harzburg 2', text: 1½ }]
+    - [{ url: '?staffel=905&r=4#p3910x3875', title: 'gegen Alfelder SV', text: ½ }]
+    - [{ url: '?staffel=905&r=2#p3910x3881', title: 'gegen Hildesheimer SV 4', text: 2½ }]
+    - [{ url: '?staffel=905&r=7#p3910x3839', title: 'gegen SG Holzminden 2', text: '5' }]
+    - [{ url: '?staffel=905&r=6#p3910x3841', title: 'gegen KSV Rochade GÖ 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=905&r=3#p3910x3848', title: 'gegen Turm Vienenburg', text: '1' }]
+    - [{ url: '?staffel=905&r=1#p3910x3862', title: 'gegen PSV Bad Pyrmont 2', text: '4' }]
+    - [{ url: '?staffel=905&r=9#p3910x3908', title: 'gegen SK Gronau 2', text: 5½ }]
+    - [{ url: '?staffel=905&r=8#p3910x3846', title: 'gegen VfL Oker', text: 4½ }]
+    - 9
+    - 27½
+    - ''
+-
+    - '7.'
+    - { text: 'Turm Vienenburg', url: '?mannschaft=3848', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=905&r=7#p3848x3902', title: 'gegen SK Bad Harzburg 2', text: 2½ }]
+    - [{ url: '?staffel=905&r=6#p3848x3875', title: 'gegen Alfelder SV', text: '1' }]
+    - [{ url: '?staffel=905&r=9#p3848x3881', title: 'gegen Hildesheimer SV 4', text: 2½ }]
+    - [{ url: '?staffel=905&r=1#p3848x3839', title: 'gegen SG Holzminden 2', text: 1½ }]
+    - [{ url: '?staffel=905&r=8#p3848x3841', title: 'gegen KSV Rochade GÖ 2', text: '1' }]
+    - [{ url: '?staffel=905&r=3#p3848x3910', title: 'gegen ESV Göttingen 3', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=905&r=4#p3848x3862', title: 'gegen PSV Bad Pyrmont 2', text: '3' }]
+    - [{ url: '?staffel=905&r=2#p3848x3908', title: 'gegen SK Gronau 2', text: 4½ }]
+    - [{ url: '?staffel=905&r=5#p3848x3846', title: 'gegen VfL Oker', text: '4' }]
+    - 7
+    - '25'
+    - ''
+-
+    - '8.'
+    - { text: 'PSV Bad Pyrmont 2', url: '?mannschaft=3862', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=905&r=8#p3862x3902', title: 'gegen SK Bad Harzburg 2', text: ½ }]
+    - [{ url: '?staffel=905&r=9#p3862x3875', title: 'gegen Alfelder SV', text: '1' }]
+    - [{ url: '?staffel=905&r=5#p3862x3881', title: 'gegen Hildesheimer SV 4', text: '0' }]
+    - [{ url: '?staffel=905&r=6#p3862x3839', title: 'gegen SG Holzminden 2', text: '3' }]
+    - [{ url: '?staffel=905&r=7#p3862x3841', title: 'gegen KSV Rochade GÖ 2', text: '1' }]
+    - [{ url: '?staffel=905&r=1#p3862x3910', title: 'gegen ESV Göttingen 3', text: '2' }]
+    - [{ url: '?staffel=905&r=4#p3862x3848', title: 'gegen Turm Vienenburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=905&r=3#p3862x3908', title: 'gegen SK Gronau 2', text: 3½ }]
+    - [{ url: '?staffel=905&r=2#p3862x3846', title: 'gegen VfL Oker', text: '5' }]
+    - 6
+    - '19'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Gronau 2', url: '?mannschaft=3908', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=905&r=4#p3908x3902', title: 'gegen SK Bad Harzburg 2', text: '1' }]
+    - [{ url: '?staffel=905&r=8#p3908x3875', title: 'gegen Alfelder SV', text: '2' }]
+    - [{ url: '?staffel=905&r=6#p3908x3881', title: 'gegen Hildesheimer SV 4', text: 1½ }]
+    - [{ url: '?staffel=905&r=5#p3908x3839', title: 'gegen SG Holzminden 2', text: '0' }]
+    - [{ url: '?staffel=905&r=1#p3908x3841', title: 'gegen KSV Rochade GÖ 2', text: '1' }]
+    - [{ url: '?staffel=905&r=9#p3908x3910', title: 'gegen ESV Göttingen 3', text: ½ }]
+    - [{ url: '?staffel=905&r=2#p3908x3848', title: 'gegen Turm Vienenburg', text: 1½ }]
+    - [{ url: '?staffel=905&r=3#p3908x3862', title: 'gegen PSV Bad Pyrmont 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=905&r=7#p3908x3846', title: 'gegen VfL Oker', text: 3½ }]
+    - 2
+    - 13½
+    - absteiger
+-
+    - '10.'
+    - { text: 'VfL Oker', url: '?mannschaft=3846', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=905&r=6#p3846x3902', title: 'gegen SK Bad Harzburg 2', text: ½ }]
+    - [{ url: '?staffel=905&r=1#p3846x3875', title: 'gegen Alfelder SV', text: '0' }]
+    - [{ url: '?staffel=905&r=4#p3846x3881', title: 'gegen Hildesheimer SV 4', text: ½ }]
+    - [{ url: '?staffel=905&r=3#p3846x3839', title: 'gegen SG Holzminden 2', text: 2½ }]
+    - [{ url: '?staffel=905&r=9#p3846x3841', title: 'gegen KSV Rochade GÖ 2', text: '2' }]
+    - [{ url: '?staffel=905&r=8#p3846x3910', title: 'gegen ESV Göttingen 3', text: 1½ }]
+    - [{ url: '?staffel=905&r=5#p3846x3848', title: 'gegen Turm Vienenburg', text: '2' }]
+    - [{ url: '?staffel=905&r=2#p3846x3862', title: 'gegen PSV Bad Pyrmont 2', text: '1' }]
+    - [{ url: '?staffel=905&r=7#p3846x3908', title: 'gegen SK Gronau 2', text: 2½ }]
+    - xxx
+    - 0
+    - 12½
+    - absteiger

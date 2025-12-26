@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamelner SV', url: '?mannschaft=8184', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1841&r=3#p8184x8182', title: 'gegen SK Lehrte 3', text: 3½ }]
+    - [{ url: '?staffel=1841&r=5#p8184x8181', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=1841&r=4#p8184x8185', title: 'gegen HSK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=1841&r=1#p8184x8183', title: 'gegen MTV Dannenberg', text: 2½ }]
+    - [{ url: '?staffel=1841&r=2#p8184x8179', title: 'gegen SZ Bemerode', text: '3' }]
+    - {  }
+    - {  }
+    - 10
+    - '15'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=8182', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1841&r=3#p8182x8184', title: 'gegen Hamelner SV', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1841&r=1#p8182x8181', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - [{ url: '?staffel=1841&r=2#p8182x8185', title: 'gegen HSK Lister Turm', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1841&r=5#p8182x8179', title: 'gegen SZ Bemerode', text: '3' }]
+    - [{ url: '?staffel=1841&r=4#p8182x8180', title: 'gegen Plesse Bovenden', text: '4' }]
+    - {  }
+    - 8
+    - '14'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=8181', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1841&r=5#p8181x8184', title: 'gegen Hamelner SV', text: '1' }]
+    - [{ url: '?staffel=1841&r=1#p8181x8182', title: 'gegen SK Lehrte 3', text: ½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1841&r=3#p8181x8183', title: 'gegen MTV Dannenberg', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1841&r=2#p8181x8180', title: 'gegen Plesse Bovenden', text: '3' }]
+    - [{ url: '?staffel=1841&r=4#p8181x8193', title: 'gegen spielfrei', text: '4' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '4.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=8185', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1841&r=4#p8185x8184', title: 'gegen Hamelner SV', text: '1' }]
+    - [{ url: '?staffel=1841&r=2#p8185x8182', title: 'gegen SK Lehrte 3', text: '1' }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1841&r=3#p8185x8179', title: 'gegen SZ Bemerode', text: 2½ }]
+    - [{ url: '?staffel=1841&r=1#p8185x8180', title: 'gegen Plesse Bovenden', text: 2½ }]
+    - [{ url: '?staffel=1841&r=5#p8185x8193', title: 'gegen spielfrei', text: '4' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '5.'
+    - { text: 'MTV Dannenberg', url: '?mannschaft=8183', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1841&r=1#p8183x8184', title: 'gegen Hamelner SV', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1841&r=3#p8183x8181', title: 'gegen SK Lehrte 2', text: ½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1841&r=4#p8183x8179', title: 'gegen SZ Bemerode', text: '2' }]
+    - [{ url: '?staffel=1841&r=5#p8183x8180', title: 'gegen Plesse Bovenden', text: '4' }]
+    - [{ url: '?staffel=1841&r=2#p8183x8193', title: 'gegen spielfrei', text: '4' }]
+    - 5
+    - '12'
+    - ''
+-
+    - '6.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=8179', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1841&r=2#p8179x8184', title: 'gegen Hamelner SV', text: '1' }]
+    - [{ url: '?staffel=1841&r=5#p8179x8182', title: 'gegen SK Lehrte 3', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1841&r=3#p8179x8185', title: 'gegen HSK Lister Turm', text: 1½ }]
+    - [{ url: '?staffel=1841&r=4#p8179x8183', title: 'gegen MTV Dannenberg', text: '2' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1841&r=1#p8179x8193', title: 'gegen spielfrei', text: '4' }]
+    - 3
+    - 9½
+    - ''
+-
+    - '7.'
+    - { text: 'Plesse Bovenden', url: '?mannschaft=8180', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1841&r=4#p8180x8182', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1841&r=2#p8180x8181', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=1841&r=1#p8180x8185', title: 'gegen HSK Lister Turm', text: 1½ }]
+    - [{ url: '?staffel=1841&r=5#p8180x8183', title: 'gegen MTV Dannenberg', text: '0' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1841&r=3#p8180x8193', title: 'gegen spielfrei', text: '4' }]
+    - 2
+    - 6½
+    - ''
+-
+    - '8.'
+    - { text: spielfrei, url: '?mannschaft=8193', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1841&r=4#p8193x8181', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1841&r=5#p8193x8185', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1841&r=2#p8193x8183', title: 'gegen MTV Dannenberg', text: '0' }]
+    - [{ url: '?staffel=1841&r=1#p8193x8179', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1841&r=3#p8193x8180', title: 'gegen Plesse Bovenden', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

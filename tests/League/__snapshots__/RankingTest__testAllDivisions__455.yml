@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Stgt-Wolfbusch', url: '?mannschaft=4071', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=931&r=5#p4071x4034', title: 'gegen SK Gernsheim', text: 2½ }]
+    - [{ url: '?staffel=931&r=2#p4071x4139', title: 'gegen SK Neuperlach', text: 3½ }]
+    - [{ url: '?staffel=931&r=1#p4071x4065', title: 'gegen FC Bayern München 2', text: 2½ }]
+    - [{ url: '?staffel=931&r=3#p4071x4063', title: 'gegen SC Landskrone', text: 3½ }]
+    - [{ url: '?staffel=931&r=4#p4071x4056', title: 'gegen SV Riegelsberg', text: 3½ }]
+    - 10
+    - 15½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Gernsheim', url: '?mannschaft=4034', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=931&r=5#p4034x4071', title: 'gegen SV Stgt-Wolfbusch', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=931&r=6#p4034x4139', title: 'gegen SK Neuperlach', text: 1½ }]
+    - [{ url: '?staffel=931&r=4#p4034x4065', title: 'gegen FC Bayern München 2', text: '3' }]
+    - [{ url: '?staffel=931&r=2#p4034x4063', title: 'gegen SC Landskrone', text: '4' }]
+    - [{ url: '?staffel=931&r=3#p4034x4056', title: 'gegen SV Riegelsberg', text: '4' }]
+    - 6
+    - '14'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Neuperlach', url: '?mannschaft=4139', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=931&r=2#p4139x4071', title: 'gegen SV Stgt-Wolfbusch', text: ½ }]
+    - [{ url: '?staffel=931&r=6#p4139x4034', title: 'gegen SK Gernsheim', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=931&r=5#p4139x4065', title: 'gegen FC Bayern München 2', text: 1½ }]
+    - [{ url: '?staffel=931&r=4#p4139x4063', title: 'gegen SC Landskrone', text: '3' }]
+    - [{ url: '?staffel=931&r=1#p4139x4056', title: 'gegen SV Riegelsberg', text: 2½ }]
+    - 6
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'FC Bayern München 2', url: '?mannschaft=4065', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=931&r=1#p4065x4071', title: 'gegen SV Stgt-Wolfbusch', text: 1½ }]
+    - [{ url: '?staffel=931&r=4#p4065x4034', title: 'gegen SK Gernsheim', text: '1' }]
+    - [{ url: '?staffel=931&r=5#p4065x4139', title: 'gegen SK Neuperlach', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=931&r=6#p4065x4063', title: 'gegen SC Landskrone', text: 3½ }]
+    - [{ url: '?staffel=931&r=2#p4065x4056', title: 'gegen SV Riegelsberg', text: '2' }]
+    - 5
+    - 10½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Landskrone', url: '?mannschaft=4063', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=931&r=3#p4063x4071', title: 'gegen SV Stgt-Wolfbusch', text: ½ }]
+    - [{ url: '?staffel=931&r=2#p4063x4034', title: 'gegen SK Gernsheim', text: '0' }]
+    - [{ url: '?staffel=931&r=4#p4063x4139', title: 'gegen SK Neuperlach', text: '1' }]
+    - [{ url: '?staffel=931&r=6#p4063x4065', title: 'gegen FC Bayern München 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=931&r=5#p4063x4056', title: 'gegen SV Riegelsberg', text: 2½ }]
+    - 2
+    - 4½
+    - absteiger
+-
+    - '6.'
+    - { text: 'SV Riegelsberg', url: '?mannschaft=4056', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=931&r=4#p4056x4071', title: 'gegen SV Stgt-Wolfbusch', text: ½ }]
+    - [{ url: '?staffel=931&r=3#p4056x4034', title: 'gegen SK Gernsheim', text: '0' }]
+    - [{ url: '?staffel=931&r=1#p4056x4139', title: 'gegen SK Neuperlach', text: 1½ }]
+    - [{ url: '?staffel=931&r=2#p4056x4065', title: 'gegen FC Bayern München 2', text: '2' }]
+    - [{ url: '?staffel=931&r=5#p4056x4063', title: 'gegen SC Landskrone', text: 1½ }]
+    - xxx
+    - 1
+    - 5½
+    - absteiger

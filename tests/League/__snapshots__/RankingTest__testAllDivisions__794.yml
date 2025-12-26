@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Blanke 8', url: '?mannschaft=6674', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1603&r=3#p6674x6701', title: 'gegen TuS Aschendorf 3', text: '3' }]
+    - [{ url: '?staffel=1603&r=1#p6674x6661', title: 'gegen SF Spelle 4', text: '3' }]
+    - [{ url: '?staffel=1603&r=5#p6674x6669', title: 'gegen SK Meppen 4', text: '4' }]
+    - [{ url: '?staffel=1603&r=4#p6674x6668', title: 'gegen SK Meppen 3', text: '4' }]
+    - 8
+    - '14'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TuS Aschendorf 3', url: '?mannschaft=6701', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1603&r=3#p6701x6674', title: 'gegen SK Nordhorn-Blanke 8', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1603&r=2#p6701x6661', title: 'gegen SF Spelle 4', text: '4' }]
+    - [{ url: '?staffel=1603&r=1#p6701x6669', title: 'gegen SK Meppen 4', text: '3' }]
+    - [{ url: '?staffel=1603&r=5#p6701x6668', title: 'gegen SK Meppen 3', text: '4' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Spelle 4', url: '?mannschaft=6661', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1603&r=1#p6661x6674', title: 'gegen SK Nordhorn-Blanke 8', text: '1' }]
+    - [{ url: '?staffel=1603&r=2#p6661x6701', title: 'gegen TuS Aschendorf 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1603&r=4#p6661x6669', title: 'gegen SK Meppen 4', text: '2' }]
+    - [{ url: '?staffel=1603&r=3#p6661x6668', title: 'gegen SK Meppen 3', text: '3' }]
+    - 3
+    - '6'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Meppen 4', url: '?mannschaft=6669', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1603&r=5#p6669x6674', title: 'gegen SK Nordhorn-Blanke 8', text: '0' }]
+    - [{ url: '?staffel=1603&r=1#p6669x6701', title: 'gegen TuS Aschendorf 3', text: '1' }]
+    - [{ url: '?staffel=1603&r=4#p6669x6661', title: 'gegen SF Spelle 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1603&r=2#p6669x6668', title: 'gegen SK Meppen 3', text: 2½ }]
+    - 3
+    - 5½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Meppen 3', url: '?mannschaft=6668', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1603&r=4#p6668x6674', title: 'gegen SK Nordhorn-Blanke 8', text: '0' }]
+    - [{ url: '?staffel=1603&r=5#p6668x6701', title: 'gegen TuS Aschendorf 3', text: '0' }]
+    - [{ url: '?staffel=1603&r=3#p6668x6661', title: 'gegen SF Spelle 4', text: '1' }]
+    - [{ url: '?staffel=1603&r=2#p6668x6669', title: 'gegen SK Meppen 4', text: 1½ }]
+    - xxx
+    - 0
+    - 2½
+    - ''

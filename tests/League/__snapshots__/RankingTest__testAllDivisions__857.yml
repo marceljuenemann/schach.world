@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Laatzen', url: '?mannschaft=7263', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1681&r=4#p7263x7215', title: 'gegen Eystrup/Stolzenau', text: 2½ }]
+    - [{ url: '?staffel=1681&r=2#p7263x7265', title: 'gegen SV Laatzen 3', text: '4' }]
+    - [{ url: '?staffel=1681&r=6#p7263x7259', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=1681&r=5#p7263x7269', title: 'gegen SG Rinteln/Stadth.', text: 2½ }]
+    - [{ url: '?staffel=1681&r=1#p7263x7264', title: 'gegen SV Laatzen 2', text: '4' }]
+    - [{ url: '?staffel=1681&r=3#p7263x7268', title: 'gegen TuS Wunstorf', text: '4' }]
+    - 12
+    - 19½
+    - aufsteiger
+-
+    - '2.'
+    - { text: Eystrup/Stolzenau, url: '?mannschaft=7215', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1681&r=4#p7215x7263', title: 'gegen SV Laatzen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1681&r=6#p7215x7265', title: 'gegen SV Laatzen 3', text: '4' }]
+    - [{ url: '?staffel=1681&r=3#p7215x7259', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=1681&r=2#p7215x7269', title: 'gegen SG Rinteln/Stadth.', text: 3½ }]
+    - [{ url: '?staffel=1681&r=5#p7215x7264', title: 'gegen SV Laatzen 2', text: '3' }]
+    - [{ url: '?staffel=1681&r=7#p7215x7268', title: 'gegen TuS Wunstorf', text: '3' }]
+    - 9
+    - '17'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Laatzen 3', url: '?mannschaft=7265', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1681&r=2#p7265x7263', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=1681&r=6#p7265x7215', title: 'gegen Eystrup/Stolzenau', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1681&r=1#p7265x7259', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=1681&r=7#p7265x7269', title: 'gegen SG Rinteln/Stadth.', text: '4' }]
+    - [{ url: '?staffel=1681&r=3#p7265x7264', title: 'gegen SV Laatzen 2', text: '1' }]
+    - [{ url: '?staffel=1681&r=5#p7265x7268', title: 'gegen TuS Wunstorf', text: '3' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=7259', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1681&r=6#p7259x7263', title: 'gegen SV Laatzen', text: 1½ }]
+    - [{ url: '?staffel=1681&r=3#p7259x7215', title: 'gegen Eystrup/Stolzenau', text: '2' }]
+    - [{ url: '?staffel=1681&r=1#p7259x7265', title: 'gegen SV Laatzen 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1681&r=4#p7259x7269', title: 'gegen SG Rinteln/Stadth.', text: '1' }]
+    - [{ url: '?staffel=1681&r=7#p7259x7264', title: 'gegen SV Laatzen 2', text: 2½ }]
+    - [{ url: '?staffel=1681&r=2#p7259x7268', title: 'gegen TuS Wunstorf', text: '2' }]
+    - 4
+    - '10'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Rinteln/Stadth.', url: '?mannschaft=7269', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1681&r=5#p7269x7263', title: 'gegen SV Laatzen', text: 1½ }]
+    - [{ url: '?staffel=1681&r=2#p7269x7215', title: 'gegen Eystrup/Stolzenau', text: ½ }]
+    - [{ url: '?staffel=1681&r=7#p7269x7265', title: 'gegen SV Laatzen 3', text: '0' }]
+    - [{ url: '?staffel=1681&r=4#p7269x7259', title: 'gegen SK Lehrte 3', text: '3' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1681&r=1#p7269x7268', title: 'gegen TuS Wunstorf', text: '4' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Laatzen 2', url: '?mannschaft=7264', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1681&r=1#p7264x7263', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=1681&r=5#p7264x7215', title: 'gegen Eystrup/Stolzenau', text: '1' }]
+    - [{ url: '?staffel=1681&r=3#p7264x7265', title: 'gegen SV Laatzen 3', text: '2' }]
+    - [{ url: '?staffel=1681&r=7#p7264x7259', title: 'gegen SK Lehrte 3', text: 1½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1681&r=4#p7264x7268', title: 'gegen TuS Wunstorf', text: '4' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '7.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=7268', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1681&r=3#p7268x7263', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=1681&r=7#p7268x7215', title: 'gegen Eystrup/Stolzenau', text: '1' }]
+    - [{ url: '?staffel=1681&r=5#p7268x7265', title: 'gegen SV Laatzen 3', text: '1' }]
+    - [{ url: '?staffel=1681&r=2#p7268x7259', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=1681&r=1#p7268x7269', title: 'gegen SG Rinteln/Stadth.', text: '0' }]
+    - [{ url: '?staffel=1681&r=4#p7268x7264', title: 'gegen SV Laatzen 2', text: '0' }]
+    - xxx
+    - 1
+    - '4'
+    - ''

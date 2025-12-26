@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamelner SV', url: '?mannschaft=4569', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=947&r=9#p4569x4541', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=947&r=8#p4569x4611', title: 'gegen Hildesheimer SV', text: '6' }]
+    - [{ url: '?staffel=947&r=5#p4569x4539', title: 'gegen SVG Salzgitter', text: '6' }]
+    - [{ url: '?staffel=947&r=7#p4569x4610', title: 'gegen SK Lehrte 1919 eV', text: '6' }]
+    - [{ url: '?staffel=947&r=2#p4569x4602', title: 'gegen SK Rinteln', text: 5½ }]
+    - [{ url: '?staffel=947&r=4#p4569x4492', title: 'gegen ESV Göttingen', text: 4½ }]
+    - [{ url: '?staffel=947&r=1#p4569x4561', title: 'gegen SV Berenbostel', text: 5½ }]
+    - [{ url: '?staffel=947&r=6#p4569x4571', title: 'gegen BS Gliesmarode', text: 4½ }]
+    - [{ url: '?staffel=947&r=3#p4569x4471', title: 'gegen C. Wolfenbüttel', text: '6' }]
+    - 17
+    - '48'
+    - ''
+-
+    - '2.'
+    - { text: 'SC Wolfsburg', url: '?mannschaft=4541', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=947&r=9#p4541x4569', title: 'gegen Hamelner SV', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=947&r=1#p4541x4611', title: 'gegen Hildesheimer SV', text: 4½ }]
+    - [{ url: '?staffel=947&r=6#p4541x4539', title: 'gegen SVG Salzgitter', text: 4½ }]
+    - [{ url: '?staffel=947&r=8#p4541x4610', title: 'gegen SK Lehrte 1919 eV', text: 3½ }]
+    - [{ url: '?staffel=947&r=4#p4541x4602', title: 'gegen SK Rinteln', text: '6' }]
+    - [{ url: '?staffel=947&r=3#p4541x4492', title: 'gegen ESV Göttingen', text: '4' }]
+    - [{ url: '?staffel=947&r=2#p4541x4561', title: 'gegen SV Berenbostel', text: 4½ }]
+    - [{ url: '?staffel=947&r=7#p4541x4571', title: 'gegen BS Gliesmarode', text: '4' }]
+    - [{ url: '?staffel=947&r=5#p4541x4471', title: 'gegen C. Wolfenbüttel', text: 3½ }]
+    - 11
+    - 38½
+    - ''
+-
+    - '3.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=4611', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=947&r=8#p4611x4569', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=947&r=1#p4611x4541', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=947&r=9#p4611x4539', title: 'gegen SVG Salzgitter', text: '3' }]
+    - [{ url: '?staffel=947&r=6#p4611x4610', title: 'gegen SK Lehrte 1919 eV', text: '4' }]
+    - [{ url: '?staffel=947&r=7#p4611x4602', title: 'gegen SK Rinteln', text: 5½ }]
+    - [{ url: '?staffel=947&r=2#p4611x4492', title: 'gegen ESV Göttingen', text: 4½ }]
+    - [{ url: '?staffel=947&r=3#p4611x4561', title: 'gegen SV Berenbostel', text: '4' }]
+    - [{ url: '?staffel=947&r=5#p4611x4571', title: 'gegen BS Gliesmarode', text: '5' }]
+    - [{ url: '?staffel=947&r=4#p4611x4471', title: 'gegen C. Wolfenbüttel', text: '6' }]
+    - 10
+    - 37½
+    - ''
+-
+    - '4.'
+    - { text: 'SVG Salzgitter', url: '?mannschaft=4539', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=947&r=5#p4539x4569', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=947&r=6#p4539x4541', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - [{ url: '?staffel=947&r=9#p4539x4611', title: 'gegen Hildesheimer SV', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=947&r=4#p4539x4610', title: 'gegen SK Lehrte 1919 eV', text: 4½ }]
+    - [{ url: '?staffel=947&r=3#p4539x4602', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=947&r=7#p4539x4492', title: 'gegen ESV Göttingen', text: 4½ }]
+    - [{ url: '?staffel=947&r=8#p4539x4561', title: 'gegen SV Berenbostel', text: 2½ }]
+    - [{ url: '?staffel=947&r=2#p4539x4571', title: 'gegen BS Gliesmarode', text: 5½ }]
+    - [{ url: '?staffel=947&r=1#p4539x4471', title: 'gegen C. Wolfenbüttel', text: 4½ }]
+    - 10
+    - '35'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 1919 eV', url: '?mannschaft=4610', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=947&r=7#p4610x4569', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=947&r=8#p4610x4541', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=947&r=6#p4610x4611', title: 'gegen Hildesheimer SV', text: '4' }]
+    - [{ url: '?staffel=947&r=4#p4610x4539', title: 'gegen SVG Salzgitter', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=947&r=5#p4610x4602', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=947&r=1#p4610x4492', title: 'gegen ESV Göttingen', text: '6' }]
+    - [{ url: '?staffel=947&r=9#p4610x4561', title: 'gegen SV Berenbostel', text: '5' }]
+    - [{ url: '?staffel=947&r=3#p4610x4571', title: 'gegen BS Gliesmarode', text: '4' }]
+    - [{ url: '?staffel=947&r=2#p4610x4471', title: 'gegen C. Wolfenbüttel', text: '4' }]
+    - 9
+    - 36½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Rinteln', url: '?mannschaft=4602', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=947&r=2#p4602x4569', title: 'gegen Hamelner SV', text: 2½ }]
+    - [{ url: '?staffel=947&r=4#p4602x4541', title: 'gegen SC Wolfsburg', text: '2' }]
+    - [{ url: '?staffel=947&r=7#p4602x4611', title: 'gegen Hildesheimer SV', text: 2½ }]
+    - [{ url: '?staffel=947&r=3#p4602x4539', title: 'gegen SVG Salzgitter', text: '5' }]
+    - [{ url: '?staffel=947&r=5#p4602x4610', title: 'gegen SK Lehrte 1919 eV', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=947&r=8#p4602x4492', title: 'gegen ESV Göttingen', text: 1½ }]
+    - [{ url: '?staffel=947&r=6#p4602x4561', title: 'gegen SV Berenbostel', text: 3½ }]
+    - [{ url: '?staffel=947&r=1#p4602x4571', title: 'gegen BS Gliesmarode', text: 4½ }]
+    - [{ url: '?staffel=947&r=9#p4602x4471', title: 'gegen C. Wolfenbüttel', text: '5' }]
+    - 8
+    - '31'
+    - ''
+-
+    - '7.'
+    - { text: 'ESV Göttingen', url: '?mannschaft=4492', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=947&r=4#p4492x4569', title: 'gegen Hamelner SV', text: 3½ }]
+    - [{ url: '?staffel=947&r=3#p4492x4541', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=947&r=2#p4492x4611', title: 'gegen Hildesheimer SV', text: 3½ }]
+    - [{ url: '?staffel=947&r=7#p4492x4539', title: 'gegen SVG Salzgitter', text: 3½ }]
+    - [{ url: '?staffel=947&r=1#p4492x4610', title: 'gegen SK Lehrte 1919 eV', text: '2' }]
+    - [{ url: '?staffel=947&r=8#p4492x4602', title: 'gegen SK Rinteln', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=947&r=5#p4492x4561', title: 'gegen SV Berenbostel', text: 3½ }]
+    - [{ url: '?staffel=947&r=9#p4492x4571', title: 'gegen BS Gliesmarode', text: '5' }]
+    - [{ url: '?staffel=947&r=6#p4492x4471', title: 'gegen C. Wolfenbüttel', text: 5½ }]
+    - 7
+    - '37'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Berenbostel', url: '?mannschaft=4561', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=947&r=1#p4561x4569', title: 'gegen Hamelner SV', text: 2½ }]
+    - [{ url: '?staffel=947&r=2#p4561x4541', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - [{ url: '?staffel=947&r=3#p4561x4611', title: 'gegen Hildesheimer SV', text: '4' }]
+    - [{ url: '?staffel=947&r=8#p4561x4539', title: 'gegen SVG Salzgitter', text: 5½ }]
+    - [{ url: '?staffel=947&r=9#p4561x4610', title: 'gegen SK Lehrte 1919 eV', text: '3' }]
+    - [{ url: '?staffel=947&r=6#p4561x4602', title: 'gegen SK Rinteln', text: 4½ }]
+    - [{ url: '?staffel=947&r=5#p4561x4492', title: 'gegen ESV Göttingen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=947&r=4#p4561x4571', title: 'gegen BS Gliesmarode', text: '3' }]
+    - [{ url: '?staffel=947&r=7#p4561x4471', title: 'gegen C. Wolfenbüttel', text: 3½ }]
+    - 7
+    - '34'
+    - ''
+-
+    - '9.'
+    - { text: 'BS Gliesmarode', url: '?mannschaft=4571', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=947&r=6#p4571x4569', title: 'gegen Hamelner SV', text: 3½ }]
+    - [{ url: '?staffel=947&r=7#p4571x4541', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=947&r=5#p4571x4611', title: 'gegen Hildesheimer SV', text: '3' }]
+    - [{ url: '?staffel=947&r=2#p4571x4539', title: 'gegen SVG Salzgitter', text: 2½ }]
+    - [{ url: '?staffel=947&r=3#p4571x4610', title: 'gegen SK Lehrte 1919 eV', text: '4' }]
+    - [{ url: '?staffel=947&r=1#p4571x4602', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=947&r=9#p4571x4492', title: 'gegen ESV Göttingen', text: '3' }]
+    - [{ url: '?staffel=947&r=4#p4571x4561', title: 'gegen SV Berenbostel', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=947&r=8#p4571x4471', title: 'gegen C. Wolfenbüttel', text: 4½ }]
+    - 6
+    - '33'
+    - ''
+-
+    - '10.'
+    - { text: 'C. Wolfenbüttel', url: '?mannschaft=4471', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=947&r=3#p4471x4569', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=947&r=5#p4471x4541', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=947&r=4#p4471x4611', title: 'gegen Hildesheimer SV', text: '2' }]
+    - [{ url: '?staffel=947&r=1#p4471x4539', title: 'gegen SVG Salzgitter', text: 3½ }]
+    - [{ url: '?staffel=947&r=2#p4471x4610', title: 'gegen SK Lehrte 1919 eV', text: '4' }]
+    - [{ url: '?staffel=947&r=9#p4471x4602', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=947&r=6#p4471x4492', title: 'gegen ESV Göttingen', text: 2½ }]
+    - [{ url: '?staffel=947&r=7#p4471x4561', title: 'gegen SV Berenbostel', text: 4½ }]
+    - [{ url: '?staffel=947&r=8#p4471x4571', title: 'gegen BS Gliesmarode', text: 3½ }]
+    - xxx
+    - 5
+    - 29½
+    - ''

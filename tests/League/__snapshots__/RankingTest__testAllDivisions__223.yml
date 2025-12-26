@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=2516', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=650&r=4#p2516x2367', title: 'gegen GW Niederwiesa', text: 2½ }]
+    - [{ url: '?staffel=650&r=3#p2516x2414', title: 'gegen TuS Coswig 1920', text: '3' }]
+    - [{ url: '?staffel=650&r=2#p2516x2426', title: 'gegen SG GW Dresden', text: '2' }]
+    - [{ url: '?staffel=650&r=1#p2516x2501', title: 'gegen Rodewischer SM 2', text: 2½ }]
+    - [{ url: '?staffel=650&r=5#p2516x2443', title: 'gegen USV TU Dresden', text: 3½ }]
+    - 9
+    - 13½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'GW Niederwiesa', url: '?mannschaft=2367', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=650&r=4#p2367x2516', title: 'gegen SV Empor Berlin', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=650&r=2#p2367x2414', title: 'gegen TuS Coswig 1920', text: '4' }]
+    - [{ url: '?staffel=650&r=5#p2367x2426', title: 'gegen SG GW Dresden', text: '4' }]
+    - [{ url: '?staffel=650&r=3#p2367x2501', title: 'gegen Rodewischer SM 2', text: '3' }]
+    - [{ url: '?staffel=650&r=1#p2367x2443', title: 'gegen USV TU Dresden', text: 3½ }]
+    - 8
+    - '16'
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Coswig 1920', url: '?mannschaft=2414', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=650&r=3#p2414x2516', title: 'gegen SV Empor Berlin', text: '1' }]
+    - [{ url: '?staffel=650&r=2#p2414x2367', title: 'gegen GW Niederwiesa', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=650&r=1#p2414x2426', title: 'gegen SG GW Dresden', text: 2½ }]
+    - [{ url: '?staffel=650&r=5#p2414x2501', title: 'gegen Rodewischer SM 2', text: '4' }]
+    - [{ url: '?staffel=650&r=4#p2414x2443', title: 'gegen USV TU Dresden', text: 2½ }]
+    - 6
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'SG GW Dresden', url: '?mannschaft=2426', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=650&r=2#p2426x2516', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=650&r=5#p2426x2367', title: 'gegen GW Niederwiesa', text: '0' }]
+    - [{ url: '?staffel=650&r=1#p2426x2414', title: 'gegen TuS Coswig 1920', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=650&r=4#p2426x2501', title: 'gegen Rodewischer SM 2', text: '2' }]
+    - [{ url: '?staffel=650&r=3#p2426x2443', title: 'gegen USV TU Dresden', text: '3' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'Rodewischer SM 2', url: '?mannschaft=2501', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=650&r=1#p2501x2516', title: 'gegen SV Empor Berlin', text: 1½ }]
+    - [{ url: '?staffel=650&r=3#p2501x2367', title: 'gegen GW Niederwiesa', text: '1' }]
+    - [{ url: '?staffel=650&r=5#p2501x2414', title: 'gegen TuS Coswig 1920', text: '0' }]
+    - [{ url: '?staffel=650&r=4#p2501x2426', title: 'gegen SG GW Dresden', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=650&r=2#p2501x2443', title: 'gegen USV TU Dresden', text: '3' }]
+    - 3
+    - 7½
+    - absteiger
+-
+    - '6.'
+    - { text: 'USV TU Dresden', url: '?mannschaft=2443', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=650&r=5#p2443x2516', title: 'gegen SV Empor Berlin', text: ½ }]
+    - [{ url: '?staffel=650&r=1#p2443x2367', title: 'gegen GW Niederwiesa', text: ½ }]
+    - [{ url: '?staffel=650&r=4#p2443x2414', title: 'gegen TuS Coswig 1920', text: 1½ }]
+    - [{ url: '?staffel=650&r=3#p2443x2426', title: 'gegen SG GW Dresden', text: '1' }]
+    - [{ url: '?staffel=650&r=2#p2443x2501', title: 'gegen Rodewischer SM 2', text: '1' }]
+    - xxx
+    - 0
+    - 4½
+    - absteiger

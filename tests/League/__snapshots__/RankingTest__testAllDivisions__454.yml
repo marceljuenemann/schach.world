@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Aachener SV', url: '?mannschaft=4061', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=930&r=2#p4061x4047', title: 'gegen SF Birkenfeld', text: '0' }]
+    - [{ url: '?staffel=930&r=3#p4061x4035', title: 'gegen DJK Aachen', text: 2½ }]
+    - [{ url: '?staffel=930&r=4#p4061x4121', title: 'gegen SF 1891Friedberg 2', text: '3' }]
+    - [{ url: '?staffel=930&r=1#p4061x3897', title: 'gegen SC Eschborn', text: 2½ }]
+    - [{ url: '?staffel=930&r=5#p4061x3864', title: 'gegen SV Hofheim', text: '4' }]
+    - 8
+    - '12'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Birkenfeld', url: '?mannschaft=4047', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=930&r=2#p4047x4061', title: 'gegen Aachener SV', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=930&r=1#p4047x4035', title: 'gegen DJK Aachen', text: ½ }]
+    - [{ url: '?staffel=930&r=3#p4047x4121', title: 'gegen SF 1891Friedberg 2', text: '2' }]
+    - [{ url: '?staffel=930&r=5#p4047x3897', title: 'gegen SC Eschborn', text: 2½ }]
+    - [{ url: '?staffel=930&r=4#p4047x3864', title: 'gegen SV Hofheim', text: '4' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: 'DJK Aachen', url: '?mannschaft=4035', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=930&r=3#p4035x4061', title: 'gegen Aachener SV', text: 1½ }]
+    - [{ url: '?staffel=930&r=1#p4035x4047', title: 'gegen SF Birkenfeld', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=930&r=5#p4035x4121', title: 'gegen SF 1891Friedberg 2', text: 1½ }]
+    - [{ url: '?staffel=930&r=4#p4035x3897', title: 'gegen SC Eschborn', text: '3' }]
+    - [{ url: '?staffel=930&r=2#p4035x3864', title: 'gegen SV Hofheim', text: '3' }]
+    - 6
+    - 12½
+    - ''
+-
+    - '4.'
+    - { text: 'SF 1891Friedberg 2', url: '?mannschaft=4121', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=930&r=4#p4121x4061', title: 'gegen Aachener SV', text: '1' }]
+    - [{ url: '?staffel=930&r=3#p4121x4047', title: 'gegen SF Birkenfeld', text: '2' }]
+    - [{ url: '?staffel=930&r=5#p4121x4035', title: 'gegen DJK Aachen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=930&r=2#p4121x3897', title: 'gegen SC Eschborn', text: '3' }]
+    - [{ url: '?staffel=930&r=1#p4121x3864', title: 'gegen SV Hofheim', text: 3½ }]
+    - 5
+    - '11'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Eschborn', url: '?mannschaft=3897', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=930&r=1#p3897x4061', title: 'gegen Aachener SV', text: 1½ }]
+    - [{ url: '?staffel=930&r=5#p3897x4047', title: 'gegen SF Birkenfeld', text: 1½ }]
+    - [{ url: '?staffel=930&r=4#p3897x4035', title: 'gegen DJK Aachen', text: '1' }]
+    - [{ url: '?staffel=930&r=2#p3897x4121', title: 'gegen SF 1891Friedberg 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=930&r=3#p3897x3864', title: 'gegen SV Hofheim', text: '2' }]
+    - 1
+    - '7'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SV Hofheim', url: '?mannschaft=3864', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=930&r=5#p3864x4061', title: 'gegen Aachener SV', text: '0' }]
+    - [{ url: '?staffel=930&r=4#p3864x4047', title: 'gegen SF Birkenfeld', text: '0' }]
+    - [{ url: '?staffel=930&r=2#p3864x4035', title: 'gegen DJK Aachen', text: '0' }]
+    - [{ url: '?staffel=930&r=1#p3864x4121', title: 'gegen SF 1891Friedberg 2', text: ½ }]
+    - [{ url: '?staffel=930&r=3#p3864x3897', title: 'gegen SC Eschborn', text: '2' }]
+    - xxx
+    - 1
+    - 2½
+    - absteiger

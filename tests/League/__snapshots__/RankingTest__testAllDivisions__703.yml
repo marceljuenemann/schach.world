@@ -1,0 +1,203 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Bad Harzburg 2', url: '?mannschaft=6283', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1454&r=1#p6283x6301', title: 'gegen PSV Bad Pyrmont 2', text: 1½ }]
+    - [{ url: '?staffel=1454&r=8#p6283x6280', title: 'gegen Plesse Bovenden 3', text: 1½ }]
+    - [{ url: '?staffel=1454&r=3#p6283x6309', title: 'gegen Hildesheimer SV 6', text: '3' }]
+    - [{ url: '?staffel=1454&r=5#p6283x6312', title: 'gegen SK Duderstadt 2', text: '3' }]
+    - [{ url: '?staffel=1454&r=6#p6283x6288', title: 'gegen VfL Oker', text: 2½ }]
+    - [{ url: '?staffel=1454&r=7#p6283x6293', title: 'gegen Tempo Göttingen 3', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=2#p6283x6308', title: 'gegen Hildesheimer Damen 5', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=4#p6283x6291', title: 'gegen SK Goslar 3', text: '3' }]
+    - 12
+    - 20½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'PSV Bad Pyrmont 2', url: '?mannschaft=6301', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1454&r=1#p6301x6283', title: 'gegen SK Bad Harzburg 2', text: 2½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1454&r=4#p6301x6309', title: 'gegen Hildesheimer SV 6', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=2#p6301x6288', title: 'gegen VfL Oker', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=3#p6301x6286', title: 'gegen SK Gronau 2', text: '4' }]
+    - [{ url: '?staffel=1454&r=5#p6301x6308', title: 'gegen Hildesheimer Damen 5', text: 2½ }]
+    - [{ url: '?staffel=1454&r=8#p6301x6287', title: 'gegen SK Gronau 3', text: '0' }]
+    - [{ url: '?staffel=1454&r=6#p6301x6291', title: 'gegen SK Goslar 3', text: '3' }]
+    - 12
+    - '18'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Plesse Bovenden 3', url: '?mannschaft=6280', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1454&r=8#p6280x6283', title: 'gegen SK Bad Harzburg 2', text: 2½ }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1454&r=7#p6280x6312', title: 'gegen SK Duderstadt 2', text: 2½ }]
+    - [{ url: '?staffel=1454&r=1#p6280x6288', title: 'gegen VfL Oker', text: '2' }]
+    - [{ url: '?staffel=1454&r=3#p6280x6293', title: 'gegen Tempo Göttingen 3', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=4#p6280x6308', title: 'gegen Hildesheimer Damen 5', text: 3½ }]
+    - [{ url: '?staffel=1454&r=5#p6280x6287', title: 'gegen SK Gronau 3', text: '2' }]
+    - [{ url: '?staffel=1454&r=2#p6280x6291', title: 'gegen SK Goslar 3', text: '2' }]
+    - 11
+    - 17½
+    - ''
+-
+    - '4.'
+    - { text: 'Hildesheimer SV 6', url: '?mannschaft=6309', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1454&r=3#p6309x6283', title: 'gegen SK Bad Harzburg 2', text: '1' }]
+    - [{ url: '?staffel=1454&r=4#p6309x6301', title: 'gegen PSV Bad Pyrmont 2', text: '1' }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1454&r=5#p6309x6288', title: 'gegen VfL Oker', text: 1½ }]
+    - [{ url: '?staffel=1454&r=8#p6309x6293', title: 'gegen Tempo Göttingen 3', text: '4' }]
+    - [{ url: '?staffel=1454&r=6#p6309x6286', title: 'gegen SK Gronau 2', text: '4' }]
+    - [{ url: '?staffel=1454&r=1#p6309x6308', title: 'gegen Hildesheimer Damen 5', text: 2½ }]
+    - [{ url: '?staffel=1454&r=7#p6309x6287', title: 'gegen SK Gronau 3', text: '4' }]
+    - {  }
+    - 8
+    - '18'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Duderstadt 2', url: '?mannschaft=6312', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1454&r=5#p6312x6283', title: 'gegen SK Bad Harzburg 2', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=7#p6312x6280', title: 'gegen Plesse Bovenden 3', text: 1½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1454&r=8#p6312x6288', title: 'gegen VfL Oker', text: '3' }]
+    - [{ url: '?staffel=1454&r=6#p6312x6293', title: 'gegen Tempo Göttingen 3', text: '2' }]
+    - [{ url: '?staffel=1454&r=2#p6312x6286', title: 'gegen SK Gronau 2', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=4#p6312x6287', title: 'gegen SK Gronau 3', text: '4' }]
+    - [{ url: '?staffel=1454&r=3#p6312x6291', title: 'gegen SK Goslar 3', text: '3' }]
+    - 8
+    - 16½
+    - ''
+-
+    - '6.'
+    - { text: 'VfL Oker', url: '?mannschaft=6288', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1454&r=6#p6288x6283', title: 'gegen SK Bad Harzburg 2', text: 1½ }]
+    - [{ url: '?staffel=1454&r=2#p6288x6301', title: 'gegen PSV Bad Pyrmont 2', text: '1' }]
+    - [{ url: '?staffel=1454&r=1#p6288x6280', title: 'gegen Plesse Bovenden 3', text: '2' }]
+    - [{ url: '?staffel=1454&r=5#p6288x6309', title: 'gegen Hildesheimer SV 6', text: 2½ }]
+    - [{ url: '?staffel=1454&r=8#p6288x6312', title: 'gegen SK Duderstadt 2', text: '1' }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1454&r=3#p6288x6308', title: 'gegen Hildesheimer Damen 5', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=7#p6288x6291', title: 'gegen SK Goslar 3', text: 3½ }]
+    - 6
+    - 13½
+    - ''
+-
+    - '7.'
+    - { text: 'Tempo Göttingen 3', url: '?mannschaft=6293', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1454&r=7#p6293x6283', title: 'gegen SK Bad Harzburg 2', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=3#p6293x6280', title: 'gegen Plesse Bovenden 3', text: '1' }]
+    - [{ url: '?staffel=1454&r=8#p6293x6309', title: 'gegen Hildesheimer SV 6', text: '0' }]
+    - [{ url: '?staffel=1454&r=6#p6293x6312', title: 'gegen SK Duderstadt 2', text: '2' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1454&r=4#p6293x6286', title: 'gegen SK Gronau 2', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=2#p6293x6287', title: 'gegen SK Gronau 3', text: '4' }]
+    - [{ url: '?staffel=1454&r=1#p6293x6291', title: 'gegen SK Goslar 3', text: 2½ }]
+    - 6
+    - 12½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Gronau 2', url: '?mannschaft=6286', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1454&r=3#p6286x6301', title: 'gegen PSV Bad Pyrmont 2', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=6#p6286x6309', title: 'gegen Hildesheimer SV 6', text: '0' }]
+    - [{ url: '?staffel=1454&r=2#p6286x6312', title: 'gegen SK Duderstadt 2', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=4#p6286x6293', title: 'gegen Tempo Göttingen 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1454&r=7#p6286x6308', title: 'gegen Hildesheimer Damen 5', text: '3' }]
+    - [{ url: '?staffel=1454&r=1#p6286x6287', title: 'gegen SK Gronau 3', text: '2' }]
+    - [{ url: '?staffel=1454&r=5#p6286x6291', title: 'gegen SK Goslar 3', text: 1½ }]
+    - 5
+    - 10½
+    - ''
+-
+    - '9.'
+    - { text: 'Hildesheimer Damen 5', url: '?mannschaft=6308', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1454&r=2#p6308x6283', title: 'gegen SK Bad Harzburg 2', text: '1' }]
+    - [{ url: '?staffel=1454&r=5#p6308x6301', title: 'gegen PSV Bad Pyrmont 2', text: 1½ }]
+    - [{ url: '?staffel=1454&r=4#p6308x6280', title: 'gegen Plesse Bovenden 3', text: ½ }]
+    - [{ url: '?staffel=1454&r=1#p6308x6309', title: 'gegen Hildesheimer SV 6', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1454&r=3#p6308x6288', title: 'gegen VfL Oker', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=7#p6308x6286', title: 'gegen SK Gronau 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1454&r=6#p6308x6287', title: 'gegen SK Gronau 3', text: '3' }]
+    - [{ url: '?staffel=1454&r=8#p6308x6291', title: 'gegen SK Goslar 3', text: '2' }]
+    - 4
+    - 12½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Gronau 3', url: '?mannschaft=6287', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1454&r=8#p6287x6301', title: 'gegen PSV Bad Pyrmont 2', text: '4' }]
+    - [{ url: '?staffel=1454&r=5#p6287x6280', title: 'gegen Plesse Bovenden 3', text: '2' }]
+    - [{ url: '?staffel=1454&r=7#p6287x6309', title: 'gegen Hildesheimer SV 6', text: '0' }]
+    - [{ url: '?staffel=1454&r=4#p6287x6312', title: 'gegen SK Duderstadt 2', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=2#p6287x6293', title: 'gegen Tempo Göttingen 3', text: '0' }]
+    - [{ url: '?staffel=1454&r=1#p6287x6286', title: 'gegen SK Gronau 2', text: '2' }]
+    - [{ url: '?staffel=1454&r=6#p6287x6308', title: 'gegen Hildesheimer Damen 5', text: '1' }]
+    - xxx
+    - {  }
+    - 4
+    - '9'
+    - ''
+-
+    - '11.'
+    - { text: 'SK Goslar 3', url: '?mannschaft=6291', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1454&r=4#p6291x6283', title: 'gegen SK Bad Harzburg 2', text: '1' }]
+    - [{ url: '?staffel=1454&r=6#p6291x6301', title: 'gegen PSV Bad Pyrmont 2', text: '1' }]
+    - [{ url: '?staffel=1454&r=2#p6291x6280', title: 'gegen Plesse Bovenden 3', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1454&r=3#p6291x6312', title: 'gegen SK Duderstadt 2', text: '1' }]
+    - [{ url: '?staffel=1454&r=7#p6291x6288', title: 'gegen VfL Oker', text: ½ }]
+    - [{ url: '?staffel=1454&r=1#p6291x6293', title: 'gegen Tempo Göttingen 3', text: 1½ }]
+    - [{ url: '?staffel=1454&r=5#p6291x6286', title: 'gegen SK Gronau 2', text: 1½ }]
+    - [{ url: '?staffel=1454&r=8#p6291x6308', title: 'gegen Hildesheimer Damen 5', text: '2' }]
+    - {  }
+    - xxx
+    - 2
+    - 10½
+    - ''

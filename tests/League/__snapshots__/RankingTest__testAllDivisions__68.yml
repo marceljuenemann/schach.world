@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV', url: '?mannschaft=1001', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=467&r=3#p1001x1003', title: 'gegen SG Oesede-Gmht.', text: '3' }]
+    - [{ url: '?staffel=467&r=5#p1001x999', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=467&r=1#p1001x1000', title: 'gegen TSV Riemsloh', text: 3½ }]
+    - [{ url: '?staffel=467&r=4#p1001x998', title: 'gegen SF Spelle', text: 2½ }]
+    - [{ url: '?staffel=467&r=2#p1001x1002', title: 'gegen SF Spelle 2', text: '3' }]
+    - 9
+    - '14'
+    - ''
+-
+    - '2.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=1003', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=467&r=3#p1003x1001', title: 'gegen Hagener SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=467&r=1#p1003x999', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=467&r=2#p1003x1000', title: 'gegen TSV Riemsloh', text: '4' }]
+    - [{ url: '?staffel=467&r=5#p1003x998', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=467&r=4#p1003x1002', title: 'gegen SF Spelle 2', text: '3' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Lingen', url: '?mannschaft=999', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=467&r=5#p999x1001', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=467&r=1#p999x1003', title: 'gegen SG Oesede-Gmht.', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=467&r=4#p999x1000', title: 'gegen TSV Riemsloh', text: '2' }]
+    - [{ url: '?staffel=467&r=2#p999x998', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=467&r=3#p999x1002', title: 'gegen SF Spelle 2', text: '3' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'TSV Riemsloh', url: '?mannschaft=1000', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=467&r=1#p1000x1001', title: 'gegen Hagener SV', text: ½ }]
+    - [{ url: '?staffel=467&r=2#p1000x1003', title: 'gegen SG Oesede-Gmht.', text: '0' }]
+    - [{ url: '?staffel=467&r=4#p1000x999', title: 'gegen SV Lingen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=467&r=3#p1000x998', title: 'gegen SF Spelle', text: '4' }]
+    - [{ url: '?staffel=467&r=5#p1000x1002', title: 'gegen SF Spelle 2', text: '2' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Spelle', url: '?mannschaft=998', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=467&r=4#p998x1001', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=467&r=5#p998x1003', title: 'gegen SG Oesede-Gmht.', text: '2' }]
+    - [{ url: '?staffel=467&r=2#p998x999', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=467&r=3#p998x1000', title: 'gegen TSV Riemsloh', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=467&r=1#p998x1002', title: 'gegen SF Spelle 2', text: '2' }]
+    - 3
+    - 7½
+    - ''
+-
+    - '6.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=1002', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=467&r=2#p1002x1001', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=467&r=4#p1002x1003', title: 'gegen SG Oesede-Gmht.', text: '1' }]
+    - [{ url: '?staffel=467&r=3#p1002x999', title: 'gegen SV Lingen', text: '1' }]
+    - [{ url: '?staffel=467&r=5#p1002x1000', title: 'gegen TSV Riemsloh', text: '2' }]
+    - [{ url: '?staffel=467&r=1#p1002x998', title: 'gegen SF Spelle', text: '2' }]
+    - xxx
+    - 2
+    - '7'
+    - ''

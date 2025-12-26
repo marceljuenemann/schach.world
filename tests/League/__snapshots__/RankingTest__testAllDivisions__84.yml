@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamburger SK', url: '?mannschaft=1189', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=497&r=1#p1189x1193', title: 'gegen SVG Salzgitter', text: '4' }]
+    - [{ url: '?staffel=497&r=5#p1189x1196', title: 'gegen Königsspringer', text: 3½ }]
+    - [{ url: '?staffel=497&r=8#p1189x1197', title: 'gegen Segeberger SF', text: '4' }]
+    - [{ url: '?staffel=497&r=4#p1189x1194', title: 'gegen Nordhorn-Blanke', text: '5' }]
+    - [{ url: '?staffel=497&r=7#p1189x1195', title: 'gegen Werder Bremen', text: '3' }]
+    - [{ url: '?staffel=497&r=9#p1189x1188', title: 'gegen Joha. Eppendorf', text: 4½ }]
+    - [{ url: '?staffel=497&r=2#p1189x1198', title: 'gegen Elmshorner SC', text: 3½ }]
+    - [{ url: '?staffel=497&r=6#p1189x1192', title: 'gegen Wilhelmshav. SF', text: 4½ }]
+    - [{ url: '?staffel=497&r=3#p1189x1191', title: 'gegen SC Diogenes eV', text: '5' }]
+    - 17
+    - '37'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SVG Salzgitter', url: '?mannschaft=1193', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=497&r=1#p1193x1189', title: 'gegen Hamburger SK', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=497&r=8#p1193x1196', title: 'gegen Königsspringer', text: 4½ }]
+    - [{ url: '?staffel=497&r=2#p1193x1197', title: 'gegen Segeberger SF', text: '6' }]
+    - [{ url: '?staffel=497&r=7#p1193x1194', title: 'gegen Nordhorn-Blanke', text: '5' }]
+    - [{ url: '?staffel=497&r=4#p1193x1195', title: 'gegen Werder Bremen', text: '4' }]
+    - [{ url: '?staffel=497&r=3#p1193x1188', title: 'gegen Joha. Eppendorf', text: '5' }]
+    - [{ url: '?staffel=497&r=5#p1193x1198', title: 'gegen Elmshorner SC', text: 4½ }]
+    - [{ url: '?staffel=497&r=9#p1193x1192', title: 'gegen Wilhelmshav. SF', text: '6' }]
+    - [{ url: '?staffel=497&r=6#p1193x1191', title: 'gegen SC Diogenes eV', text: '4' }]
+    - 16
+    - '41'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: Königsspringer, url: '?mannschaft=1196', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=497&r=5#p1196x1189', title: 'gegen Hamburger SK', text: 2½ }]
+    - [{ url: '?staffel=497&r=8#p1196x1193', title: 'gegen SVG Salzgitter', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=497&r=6#p1196x1197', title: 'gegen Segeberger SF', text: 1½ }]
+    - [{ url: '?staffel=497&r=2#p1196x1194', title: 'gegen Nordhorn-Blanke', text: 3½ }]
+    - [{ url: '?staffel=497&r=3#p1196x1195', title: 'gegen Werder Bremen', text: 4½ }]
+    - [{ url: '?staffel=497&r=7#p1196x1188', title: 'gegen Joha. Eppendorf', text: '5' }]
+    - [{ url: '?staffel=497&r=9#p1196x1198', title: 'gegen Elmshorner SC', text: 4½ }]
+    - [{ url: '?staffel=497&r=4#p1196x1192', title: 'gegen Wilhelmshav. SF', text: 5½ }]
+    - [{ url: '?staffel=497&r=1#p1196x1191', title: 'gegen SC Diogenes eV', text: '5' }]
+    - 12
+    - 33½
+    - ''
+-
+    - '4.'
+    - { text: 'Segeberger SF', url: '?mannschaft=1197', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=497&r=8#p1197x1189', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=497&r=2#p1197x1193', title: 'gegen SVG Salzgitter', text: '0' }]
+    - [{ url: '?staffel=497&r=6#p1197x1196', title: 'gegen Königsspringer', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=497&r=5#p1197x1194', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=497&r=9#p1197x1195', title: 'gegen Werder Bremen', text: 3½ }]
+    - [{ url: '?staffel=497&r=1#p1197x1188', title: 'gegen Joha. Eppendorf', text: 4½ }]
+    - [{ url: '?staffel=497&r=3#p1197x1198', title: 'gegen Elmshorner SC', text: '3' }]
+    - [{ url: '?staffel=497&r=7#p1197x1192', title: 'gegen Wilhelmshav. SF', text: '3' }]
+    - [{ url: '?staffel=497&r=4#p1197x1191', title: 'gegen SC Diogenes eV', text: 5½ }]
+    - 11
+    - '29'
+    - ''
+-
+    - '5.'
+    - { text: Nordhorn-Blanke, url: '?mannschaft=1194', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=497&r=4#p1194x1189', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=497&r=7#p1194x1193', title: 'gegen SVG Salzgitter', text: '1' }]
+    - [{ url: '?staffel=497&r=2#p1194x1196', title: 'gegen Königsspringer', text: 2½ }]
+    - [{ url: '?staffel=497&r=5#p1194x1197', title: 'gegen Segeberger SF', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=497&r=1#p1194x1195', title: 'gegen Werder Bremen', text: 3½ }]
+    - [{ url: '?staffel=497&r=6#p1194x1188', title: 'gegen Joha. Eppendorf', text: 5½ }]
+    - [{ url: '?staffel=497&r=8#p1194x1198', title: 'gegen Elmshorner SC', text: '4' }]
+    - [{ url: '?staffel=497&r=3#p1194x1192', title: 'gegen Wilhelmshav. SF', text: '3' }]
+    - [{ url: '?staffel=497&r=9#p1194x1191', title: 'gegen SC Diogenes eV', text: '3' }]
+    - 9
+    - 26½
+    - ''
+-
+    - '6.'
+    - { text: 'Werder Bremen', url: '?mannschaft=1195', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=497&r=7#p1195x1189', title: 'gegen Hamburger SK', text: '3' }]
+    - [{ url: '?staffel=497&r=4#p1195x1193', title: 'gegen SVG Salzgitter', text: '2' }]
+    - [{ url: '?staffel=497&r=3#p1195x1196', title: 'gegen Königsspringer', text: 1½ }]
+    - [{ url: '?staffel=497&r=9#p1195x1197', title: 'gegen Segeberger SF', text: 2½ }]
+    - [{ url: '?staffel=497&r=1#p1195x1194', title: 'gegen Nordhorn-Blanke', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=497&r=2#p1195x1188', title: 'gegen Joha. Eppendorf', text: '3' }]
+    - [{ url: '?staffel=497&r=6#p1195x1198', title: 'gegen Elmshorner SC', text: 3½ }]
+    - [{ url: '?staffel=497&r=5#p1195x1192', title: 'gegen Wilhelmshav. SF', text: 3½ }]
+    - [{ url: '?staffel=497&r=8#p1195x1191', title: 'gegen SC Diogenes eV', text: 4½ }]
+    - 8
+    - '26'
+    - ''
+-
+    - '7.'
+    - { text: 'Joha. Eppendorf', url: '?mannschaft=1188', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=497&r=9#p1188x1189', title: 'gegen Hamburger SK', text: 1½ }]
+    - [{ url: '?staffel=497&r=3#p1188x1193', title: 'gegen SVG Salzgitter', text: '1' }]
+    - [{ url: '?staffel=497&r=7#p1188x1196', title: 'gegen Königsspringer', text: '1' }]
+    - [{ url: '?staffel=497&r=1#p1188x1197', title: 'gegen Segeberger SF', text: 1½ }]
+    - [{ url: '?staffel=497&r=6#p1188x1194', title: 'gegen Nordhorn-Blanke', text: ½ }]
+    - [{ url: '?staffel=497&r=2#p1188x1195', title: 'gegen Werder Bremen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=497&r=4#p1188x1198', title: 'gegen Elmshorner SC', text: 4½ }]
+    - [{ url: '?staffel=497&r=8#p1188x1192', title: 'gegen Wilhelmshav. SF', text: '3' }]
+    - [{ url: '?staffel=497&r=5#p1188x1191', title: 'gegen SC Diogenes eV', text: 4½ }]
+    - 6
+    - 20½
+    - absteiger
+-
+    - '8.'
+    - { text: 'Elmshorner SC', url: '?mannschaft=1198', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=497&r=2#p1198x1189', title: 'gegen Hamburger SK', text: 2½ }]
+    - [{ url: '?staffel=497&r=5#p1198x1193', title: 'gegen SVG Salzgitter', text: 1½ }]
+    - [{ url: '?staffel=497&r=9#p1198x1196', title: 'gegen Königsspringer', text: 1½ }]
+    - [{ url: '?staffel=497&r=3#p1198x1197', title: 'gegen Segeberger SF', text: '3' }]
+    - [{ url: '?staffel=497&r=8#p1198x1194', title: 'gegen Nordhorn-Blanke', text: '2' }]
+    - [{ url: '?staffel=497&r=6#p1198x1195', title: 'gegen Werder Bremen', text: 2½ }]
+    - [{ url: '?staffel=497&r=4#p1198x1188', title: 'gegen Joha. Eppendorf', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=497&r=1#p1198x1192', title: 'gegen Wilhelmshav. SF', text: 3½ }]
+    - [{ url: '?staffel=497&r=7#p1198x1191', title: 'gegen SC Diogenes eV', text: '5' }]
+    - 5
+    - '23'
+    - absteiger
+-
+    - '9.'
+    - { text: 'Wilhelmshav. SF', url: '?mannschaft=1192', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=497&r=6#p1192x1189', title: 'gegen Hamburger SK', text: 1½ }]
+    - [{ url: '?staffel=497&r=9#p1192x1193', title: 'gegen SVG Salzgitter', text: '0' }]
+    - [{ url: '?staffel=497&r=4#p1192x1196', title: 'gegen Königsspringer', text: ½ }]
+    - [{ url: '?staffel=497&r=7#p1192x1197', title: 'gegen Segeberger SF', text: '3' }]
+    - [{ url: '?staffel=497&r=3#p1192x1194', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=497&r=5#p1192x1195', title: 'gegen Werder Bremen', text: 2½ }]
+    - [{ url: '?staffel=497&r=8#p1192x1188', title: 'gegen Joha. Eppendorf', text: '3' }]
+    - [{ url: '?staffel=497&r=1#p1192x1198', title: 'gegen Elmshorner SC', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=497&r=2#p1192x1191', title: 'gegen SC Diogenes eV', text: 5½ }]
+    - 5
+    - 21½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SC Diogenes eV', url: '?mannschaft=1191', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=497&r=3#p1191x1189', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=497&r=6#p1191x1193', title: 'gegen SVG Salzgitter', text: '2' }]
+    - [{ url: '?staffel=497&r=1#p1191x1196', title: 'gegen Königsspringer', text: '1' }]
+    - [{ url: '?staffel=497&r=4#p1191x1197', title: 'gegen Segeberger SF', text: ½ }]
+    - [{ url: '?staffel=497&r=9#p1191x1194', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=497&r=8#p1191x1195', title: 'gegen Werder Bremen', text: 1½ }]
+    - [{ url: '?staffel=497&r=5#p1191x1188', title: 'gegen Joha. Eppendorf', text: 1½ }]
+    - [{ url: '?staffel=497&r=7#p1191x1198', title: 'gegen Elmshorner SC', text: '1' }]
+    - [{ url: '?staffel=497&r=2#p1191x1192', title: 'gegen Wilhelmshav. SF', text: ½ }]
+    - xxx
+    - 1
+    - '12'
+    - absteiger

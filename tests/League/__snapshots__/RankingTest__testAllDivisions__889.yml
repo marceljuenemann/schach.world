@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'PSV Bad Pyrmont', url: '?mannschaft=7764', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1721&r=3#p7764x7749', title: 'gegen SK Duderstadt', text: 3½ }]
+    - [{ url: '?staffel=1721&r=5#p7764x7758', title: 'gegen Hamelner SV 4', text: '3' }]
+    - [{ url: '?staffel=1721&r=6#p7764x7676', title: 'gegen Alfelder SV', text: 3½ }]
+    - [{ url: '?staffel=1721&r=9#p7764x7753', title: 'gegen ESV Göttingen 4', text: '4' }]
+    - [{ url: '?staffel=1721&r=8#p7764x7727', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - [{ url: '?staffel=1721&r=2#p7764x7747', title: 'gegen SK Goslar 2', text: 3½ }]
+    - [{ url: '?staffel=1721&r=7#p7764x7741', title: 'gegen Turm Vienenburg', text: 5½ }]
+    - [{ url: '?staffel=1721&r=1#p7764x7762', title: 'gegen SC Langelsheim', text: '4' }]
+    - [{ url: '?staffel=1721&r=4#p7764x7675', title: 'gegen SC Bad Salzdetfurth 2', text: 4½ }]
+    - 16
+    - 34½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Duderstadt', url: '?mannschaft=7749', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1721&r=3#p7749x7764', title: 'gegen PSV Bad Pyrmont', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1721&r=9#p7749x7758', title: 'gegen Hamelner SV 4', text: '6' }]
+    - [{ url: '?staffel=1721&r=1#p7749x7676', title: 'gegen Alfelder SV', text: '3' }]
+    - [{ url: '?staffel=1721&r=4#p7749x7753', title: 'gegen ESV Göttingen 4', text: 4½ }]
+    - [{ url: '?staffel=1721&r=5#p7749x7727', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - [{ url: '?staffel=1721&r=7#p7749x7747', title: 'gegen SK Goslar 2', text: 3½ }]
+    - [{ url: '?staffel=1721&r=6#p7749x7741', title: 'gegen Turm Vienenburg', text: '2' }]
+    - [{ url: '?staffel=1721&r=8#p7749x7762', title: 'gegen SC Langelsheim', text: 3½ }]
+    - [{ url: '?staffel=1721&r=2#p7749x7675', title: 'gegen SC Bad Salzdetfurth 2', text: '4' }]
+    - 13
+    - '33'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Hamelner SV 4', url: '?mannschaft=7758', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1721&r=5#p7758x7764', title: 'gegen PSV Bad Pyrmont', text: '3' }]
+    - [{ url: '?staffel=1721&r=9#p7758x7749', title: 'gegen SK Duderstadt', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1721&r=3#p7758x7676', title: 'gegen Alfelder SV', text: '5' }]
+    - [{ url: '?staffel=1721&r=8#p7758x7753', title: 'gegen ESV Göttingen 4', text: '2' }]
+    - [{ url: '?staffel=1721&r=6#p7758x7727', title: 'gegen Plesse Bovenden 2', text: 3½ }]
+    - [{ url: '?staffel=1721&r=1#p7758x7747', title: 'gegen SK Goslar 2', text: 3½ }]
+    - [{ url: '?staffel=1721&r=2#p7758x7741', title: 'gegen Turm Vienenburg', text: 3½ }]
+    - [{ url: '?staffel=1721&r=4#p7758x7762', title: 'gegen SC Langelsheim', text: 3½ }]
+    - [{ url: '?staffel=1721&r=7#p7758x7675', title: 'gegen SC Bad Salzdetfurth 2', text: 5½ }]
+    - 13
+    - 29½
+    - ''
+-
+    - '4.'
+    - { text: 'Alfelder SV', url: '?mannschaft=7676', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1721&r=6#p7676x7764', title: 'gegen PSV Bad Pyrmont', text: 2½ }]
+    - [{ url: '?staffel=1721&r=1#p7676x7749', title: 'gegen SK Duderstadt', text: '3' }]
+    - [{ url: '?staffel=1721&r=3#p7676x7758', title: 'gegen Hamelner SV 4', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1721&r=2#p7676x7753', title: 'gegen ESV Göttingen 4', text: '4' }]
+    - [{ url: '?staffel=1721&r=4#p7676x7727', title: 'gegen Plesse Bovenden 2', text: 2½ }]
+    - [{ url: '?staffel=1721&r=8#p7676x7747', title: 'gegen SK Goslar 2', text: 3½ }]
+    - [{ url: '?staffel=1721&r=9#p7676x7741', title: 'gegen Turm Vienenburg', text: '3' }]
+    - [{ url: '?staffel=1721&r=7#p7676x7762', title: 'gegen SC Langelsheim', text: 3½ }]
+    - [{ url: '?staffel=1721&r=5#p7676x7675', title: 'gegen SC Bad Salzdetfurth 2', text: '4' }]
+    - 10
+    - '27'
+    - ''
+-
+    - '5.'
+    - { text: 'ESV Göttingen 4', url: '?mannschaft=7753', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1721&r=9#p7753x7764', title: 'gegen PSV Bad Pyrmont', text: '2' }]
+    - [{ url: '?staffel=1721&r=4#p7753x7749', title: 'gegen SK Duderstadt', text: 1½ }]
+    - [{ url: '?staffel=1721&r=8#p7753x7758', title: 'gegen Hamelner SV 4', text: '4' }]
+    - [{ url: '?staffel=1721&r=2#p7753x7676', title: 'gegen Alfelder SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1721&r=7#p7753x7727', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - [{ url: '?staffel=1721&r=5#p7753x7747', title: 'gegen SK Goslar 2', text: '3' }]
+    - [{ url: '?staffel=1721&r=1#p7753x7741', title: 'gegen Turm Vienenburg', text: '4' }]
+    - [{ url: '?staffel=1721&r=3#p7753x7762', title: 'gegen SC Langelsheim', text: '4' }]
+    - [{ url: '?staffel=1721&r=6#p7753x7675', title: 'gegen SC Bad Salzdetfurth 2', text: '3' }]
+    - 9
+    - 26½
+    - ''
+-
+    - '6.'
+    - { text: 'Plesse Bovenden 2', url: '?mannschaft=7727', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1721&r=8#p7727x7764', title: 'gegen PSV Bad Pyrmont', text: '3' }]
+    - [{ url: '?staffel=1721&r=5#p7727x7749', title: 'gegen SK Duderstadt', text: '2' }]
+    - [{ url: '?staffel=1721&r=6#p7727x7758', title: 'gegen Hamelner SV 4', text: 2½ }]
+    - [{ url: '?staffel=1721&r=4#p7727x7676', title: 'gegen Alfelder SV', text: 3½ }]
+    - [{ url: '?staffel=1721&r=7#p7727x7753', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1721&r=9#p7727x7747', title: 'gegen SK Goslar 2', text: 3½ }]
+    - [{ url: '?staffel=1721&r=3#p7727x7741', title: 'gegen Turm Vienenburg', text: '2' }]
+    - [{ url: '?staffel=1721&r=2#p7727x7762', title: 'gegen SC Langelsheim', text: 1½ }]
+    - [{ url: '?staffel=1721&r=1#p7727x7675', title: 'gegen SC Bad Salzdetfurth 2', text: '4' }]
+    - 8
+    - '25'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=7747', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1721&r=2#p7747x7764', title: 'gegen PSV Bad Pyrmont', text: 2½ }]
+    - [{ url: '?staffel=1721&r=7#p7747x7749', title: 'gegen SK Duderstadt', text: 2½ }]
+    - [{ url: '?staffel=1721&r=1#p7747x7758', title: 'gegen Hamelner SV 4', text: 2½ }]
+    - [{ url: '?staffel=1721&r=8#p7747x7676', title: 'gegen Alfelder SV', text: 2½ }]
+    - [{ url: '?staffel=1721&r=5#p7747x7753', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - [{ url: '?staffel=1721&r=9#p7747x7727', title: 'gegen Plesse Bovenden 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1721&r=4#p7747x7741', title: 'gegen Turm Vienenburg', text: 3½ }]
+    - [{ url: '?staffel=1721&r=6#p7747x7762', title: 'gegen SC Langelsheim', text: '4' }]
+    - [{ url: '?staffel=1721&r=3#p7747x7675', title: 'gegen SC Bad Salzdetfurth 2', text: 3½ }]
+    - 7
+    - 26½
+    - ''
+-
+    - '8.'
+    - { text: 'Turm Vienenburg', url: '?mannschaft=7741', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1721&r=7#p7741x7764', title: 'gegen PSV Bad Pyrmont', text: ½ }]
+    - [{ url: '?staffel=1721&r=6#p7741x7749', title: 'gegen SK Duderstadt', text: '4' }]
+    - [{ url: '?staffel=1721&r=2#p7741x7758', title: 'gegen Hamelner SV 4', text: 2½ }]
+    - [{ url: '?staffel=1721&r=9#p7741x7676', title: 'gegen Alfelder SV', text: '3' }]
+    - [{ url: '?staffel=1721&r=1#p7741x7753', title: 'gegen ESV Göttingen 4', text: '2' }]
+    - [{ url: '?staffel=1721&r=3#p7741x7727', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - [{ url: '?staffel=1721&r=4#p7741x7747', title: 'gegen SK Goslar 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1721&r=5#p7741x7762', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=1721&r=8#p7741x7675', title: 'gegen SC Bad Salzdetfurth 2', text: '6' }]
+    - 7
+    - 26½
+    - ''
+-
+    - '9.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=7762', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1721&r=1#p7762x7764', title: 'gegen PSV Bad Pyrmont', text: '2' }]
+    - [{ url: '?staffel=1721&r=8#p7762x7749', title: 'gegen SK Duderstadt', text: 2½ }]
+    - [{ url: '?staffel=1721&r=4#p7762x7758', title: 'gegen Hamelner SV 4', text: 2½ }]
+    - [{ url: '?staffel=1721&r=7#p7762x7676', title: 'gegen Alfelder SV', text: 2½ }]
+    - [{ url: '?staffel=1721&r=3#p7762x7753', title: 'gegen ESV Göttingen 4', text: '2' }]
+    - [{ url: '?staffel=1721&r=2#p7762x7727', title: 'gegen Plesse Bovenden 2', text: 4½ }]
+    - [{ url: '?staffel=1721&r=6#p7762x7747', title: 'gegen SK Goslar 2', text: '2' }]
+    - [{ url: '?staffel=1721&r=5#p7762x7741', title: 'gegen Turm Vienenburg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1721&r=9#p7762x7675', title: 'gegen SC Bad Salzdetfurth 2', text: 5½ }]
+    - 6
+    - 27½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SC Bad Salzdetfurth 2', url: '?mannschaft=7675', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1721&r=4#p7675x7764', title: 'gegen PSV Bad Pyrmont', text: 1½ }]
+    - [{ url: '?staffel=1721&r=2#p7675x7749', title: 'gegen SK Duderstadt', text: '2' }]
+    - [{ url: '?staffel=1721&r=7#p7675x7758', title: 'gegen Hamelner SV 4', text: ½ }]
+    - [{ url: '?staffel=1721&r=5#p7675x7676', title: 'gegen Alfelder SV', text: '2' }]
+    - [{ url: '?staffel=1721&r=6#p7675x7753', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - [{ url: '?staffel=1721&r=1#p7675x7727', title: 'gegen Plesse Bovenden 2', text: '2' }]
+    - [{ url: '?staffel=1721&r=3#p7675x7747', title: 'gegen SK Goslar 2', text: 2½ }]
+    - [{ url: '?staffel=1721&r=8#p7675x7741', title: 'gegen Turm Vienenburg', text: '0' }]
+    - [{ url: '?staffel=1721&r=9#p7675x7762', title: 'gegen SC Langelsheim', text: ½ }]
+    - xxx
+    - 1
+    - '14'
+    - absteiger

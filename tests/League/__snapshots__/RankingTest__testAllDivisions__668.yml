@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=6112', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1418&r=2#p6112x6191', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=1418&r=5#p6112x6211', title: 'gegen SV Berenbostel 2', text: '5' }]
+    - [{ url: '?staffel=1418&r=6#p6112x5914', title: 'gegen SF Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=1418&r=7#p6112x6188', title: 'gegen SF Mühlenberg', text: '6' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1418&r=4#p6112x6200', title: 'gegen SV Gretenberg', text: '8' }]
+    - [{ url: '?staffel=1418&r=1#p6112x6275', title: 'gegen SG SF Ricklingen 3', text: '6' }]
+    - [{ url: '?staffel=1418&r=3#p6112x6170', title: 'gegen SC Hämelerwald', text: 6½ }]
+    - 11
+    - '39'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Springe', url: '?mannschaft=6191', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1418&r=2#p6191x6112', title: 'gegen SK Stolzenau', text: 4½ }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1418&r=1#p6191x6188', title: 'gegen SF Mühlenberg', text: '4' }]
+    - [{ url: '?staffel=1418&r=5#p6191x6168', title: 'gegen SK Neustadt', text: '5' }]
+    - [{ url: '?staffel=1418&r=3#p6191x6152', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - [{ url: '?staffel=1418&r=7#p6191x6200', title: 'gegen SV Gretenberg', text: 5½ }]
+    - [{ url: '?staffel=1418&r=4#p6191x6275', title: 'gegen SG SF Ricklingen 3', text: '6' }]
+    - [{ url: '?staffel=1418&r=6#p6191x6170', title: 'gegen SC Hämelerwald', text: '5' }]
+    - 11
+    - '33'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Berenbostel 2', url: '?mannschaft=6211', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1418&r=5#p6211x6112', title: 'gegen SK Stolzenau', text: '3' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1418&r=3#p6211x5914', title: 'gegen SF Barsinghausen', text: '5' }]
+    - [{ url: '?staffel=1418&r=4#p6211x6188', title: 'gegen SF Mühlenberg', text: 5½ }]
+    - [{ url: '?staffel=1418&r=2#p6211x6168', title: 'gegen SK Neustadt', text: '4' }]
+    - [{ url: '?staffel=1418&r=6#p6211x6152', title: 'gegen SG Garbsen/Marienw', text: '5' }]
+    - [{ url: '?staffel=1418&r=1#p6211x6200', title: 'gegen SV Gretenberg', text: 4½ }]
+    - [{ url: '?staffel=1418&r=7#p6211x6275', title: 'gegen SG SF Ricklingen 3', text: 5½ }]
+    - {  }
+    - 11
+    - 32½
+    - ''
+-
+    - '4.'
+    - { text: 'SF Barsinghausen', url: '?mannschaft=5914', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1418&r=6#p5914x6112', title: 'gegen SK Stolzenau', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1418&r=3#p5914x6211', title: 'gegen SV Berenbostel 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1418&r=5#p5914x6188', title: 'gegen SF Mühlenberg', text: 3½ }]
+    - [{ url: '?staffel=1418&r=4#p5914x6168', title: 'gegen SK Neustadt', text: '6' }]
+    - [{ url: '?staffel=1418&r=7#p5914x6152', title: 'gegen SG Garbsen/Marienw', text: 6½ }]
+    - [{ url: '?staffel=1418&r=2#p5914x6200', title: 'gegen SV Gretenberg', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1418&r=1#p5914x6170', title: 'gegen SC Hämelerwald', text: '8' }]
+    - 9
+    - 35½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Mühlenberg', url: '?mannschaft=6188', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1418&r=7#p6188x6112', title: 'gegen SK Stolzenau', text: '2' }]
+    - [{ url: '?staffel=1418&r=1#p6188x6191', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=1418&r=4#p6188x6211', title: 'gegen SV Berenbostel 2', text: 2½ }]
+    - [{ url: '?staffel=1418&r=5#p6188x5914', title: 'gegen SF Barsinghausen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1418&r=6#p6188x6168', title: 'gegen SK Neustadt', text: 5½ }]
+    - {  }
+    - [{ url: '?staffel=1418&r=3#p6188x6200', title: 'gegen SV Gretenberg', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1418&r=2#p6188x6170', title: 'gegen SC Hämelerwald', text: '5' }]
+    - 7
+    - '27'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Neustadt', url: '?mannschaft=6168', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1418&r=5#p6168x6191', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=1418&r=2#p6168x6211', title: 'gegen SV Berenbostel 2', text: '4' }]
+    - [{ url: '?staffel=1418&r=4#p6168x5914', title: 'gegen SF Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=1418&r=6#p6168x6188', title: 'gegen SF Mühlenberg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1418&r=1#p6168x6152', title: 'gegen SG Garbsen/Marienw', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1418&r=3#p6168x6275', title: 'gegen SG SF Ricklingen 3', text: '5' }]
+    - [{ url: '?staffel=1418&r=7#p6168x6170', title: 'gegen SC Hämelerwald', text: 5½ }]
+    - 7
+    - 26½
+    - ''
+-
+    - '7.'
+    - { text: 'SG Garbsen/Marienw', url: '?mannschaft=6152', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1418&r=3#p6152x6191', title: 'gegen SV Springe', text: '5' }]
+    - [{ url: '?staffel=1418&r=6#p6152x6211', title: 'gegen SV Berenbostel 2', text: '3' }]
+    - [{ url: '?staffel=1418&r=7#p6152x5914', title: 'gegen SF Barsinghausen', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1418&r=1#p6152x6168', title: 'gegen SK Neustadt', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1418&r=5#p6152x6200', title: 'gegen SV Gretenberg', text: 3½ }]
+    - [{ url: '?staffel=1418&r=2#p6152x6275', title: 'gegen SG SF Ricklingen 3', text: '5' }]
+    - [{ url: '?staffel=1418&r=4#p6152x6170', title: 'gegen SC Hämelerwald', text: '5' }]
+    - 6
+    - 26½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Gretenberg', url: '?mannschaft=6200', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1418&r=4#p6200x6112', title: 'gegen SK Stolzenau', text: '0' }]
+    - [{ url: '?staffel=1418&r=7#p6200x6191', title: 'gegen SV Springe', text: 2½ }]
+    - [{ url: '?staffel=1418&r=1#p6200x6211', title: 'gegen SV Berenbostel 2', text: 3½ }]
+    - [{ url: '?staffel=1418&r=2#p6200x5914', title: 'gegen SF Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=1418&r=3#p6200x6188', title: 'gegen SF Mühlenberg', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1418&r=5#p6200x6152', title: 'gegen SG Garbsen/Marienw', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1418&r=6#p6200x6275', title: 'gegen SG SF Ricklingen 3', text: 6½ }]
+    - {  }
+    - 6
+    - '25'
+    - ''
+-
+    - '9.'
+    - { text: 'SG SF Ricklingen 3', url: '?mannschaft=6275', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1418&r=1#p6275x6112', title: 'gegen SK Stolzenau', text: '2' }]
+    - [{ url: '?staffel=1418&r=4#p6275x6191', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=1418&r=7#p6275x6211', title: 'gegen SV Berenbostel 2', text: 2½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1418&r=3#p6275x6168', title: 'gegen SK Neustadt', text: '3' }]
+    - [{ url: '?staffel=1418&r=2#p6275x6152', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - [{ url: '?staffel=1418&r=6#p6275x6200', title: 'gegen SV Gretenberg', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1418&r=5#p6275x6170', title: 'gegen SC Hämelerwald', text: 5½ }]
+    - 2
+    - 19½
+    - ''
+-
+    - '10.'
+    - { text: 'SC Hämelerwald', url: '?mannschaft=6170', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1418&r=3#p6170x6112', title: 'gegen SK Stolzenau', text: 1½ }]
+    - [{ url: '?staffel=1418&r=6#p6170x6191', title: 'gegen SV Springe', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1418&r=1#p6170x5914', title: 'gegen SF Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=1418&r=2#p6170x6188', title: 'gegen SF Mühlenberg', text: '3' }]
+    - [{ url: '?staffel=1418&r=7#p6170x6168', title: 'gegen SK Neustadt', text: 2½ }]
+    - [{ url: '?staffel=1418&r=4#p6170x6152', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1418&r=5#p6170x6275', title: 'gegen SG SF Ricklingen 3', text: 2½ }]
+    - xxx
+    - 0
+    - 15½
+    - ''

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'AE Magdeburg', url: '?mannschaft=2682', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=680&r=2#p2682x2685', title: 'gegen GW Baumschulenw', text: '3' }]
+    - [{ url: '?staffel=680&r=7#p2682x2683', title: 'gegen SV Empor Berlin', text: '5' }]
+    - [{ url: '?staffel=680&r=1#p2682x2677', title: 'gegen SV Merseburg', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=680&r=3#p2682x2681', title: 'gegen Zitad. Spandau', text: '4' }]
+    - [{ url: '?staffel=680&r=4#p2682x2688', title: 'gegen SG Löberitz', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=680&r=6#p2682x2678', title: 'gegen CFC Köthen', text: '3' }]
+    - [{ url: '?staffel=680&r=5#p2682x2687', title: 'gegen USC Magdeburg', text: 3½ }]
+    - 11
+    - 26½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'GW Baumschulenw', url: '?mannschaft=2685', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=680&r=2#p2685x2682', title: 'gegen AE Magdeburg', text: '3' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=680&r=3#p2685x2677', title: 'gegen SV Merseburg', text: 4½ }]
+    - [{ url: '?staffel=680&r=1#p2685x2686', title: 'gegen Treptower SV 19', text: '3' }]
+    - [{ url: '?staffel=680&r=5#p2685x2681', title: 'gegen Zitad. Spandau', text: 3½ }]
+    - [{ url: '?staffel=680&r=6#p2685x2688', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=680&r=4#p2685x2684', title: 'gegen SC Mecklenburge', text: 5½ }]
+    - {  }
+    - [{ url: '?staffel=680&r=7#p2685x2687', title: 'gegen USC Magdeburg', text: '3' }]
+    - 10
+    - 25½
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=2683', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=680&r=7#p2683x2682', title: 'gegen AE Magdeburg', text: '1' }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=680&r=6#p2683x2686', title: 'gegen Treptower SV 19', text: '5' }]
+    - [{ url: '?staffel=680&r=1#p2683x2681', title: 'gegen Zitad. Spandau', text: '3' }]
+    - [{ url: '?staffel=680&r=2#p2683x2688', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=680&r=5#p2683x2684', title: 'gegen SC Mecklenburge', text: 4½ }]
+    - [{ url: '?staffel=680&r=4#p2683x2678', title: 'gegen CFC Köthen', text: 4½ }]
+    - [{ url: '?staffel=680&r=3#p2683x2687', title: 'gegen USC Magdeburg', text: '4' }]
+    - 10
+    - '25'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Merseburg', url: '?mannschaft=2677', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=680&r=1#p2677x2682', title: 'gegen AE Magdeburg', text: '3' }]
+    - [{ url: '?staffel=680&r=3#p2677x2685', title: 'gegen GW Baumschulenw', text: 1½ }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=680&r=4#p2677x2681', title: 'gegen Zitad. Spandau', text: '2' }]
+    - [{ url: '?staffel=680&r=5#p2677x2688', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=680&r=2#p2677x2684', title: 'gegen SC Mecklenburge', text: '4' }]
+    - [{ url: '?staffel=680&r=7#p2677x2678', title: 'gegen CFC Köthen', text: '5' }]
+    - [{ url: '?staffel=680&r=6#p2677x2687', title: 'gegen USC Magdeburg', text: '5' }]
+    - 8
+    - 23½
+    - ''
+-
+    - '5.'
+    - { text: 'Treptower SV 19', url: '?mannschaft=2686', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=680&r=1#p2686x2685', title: 'gegen GW Baumschulenw', text: '3' }]
+    - [{ url: '?staffel=680&r=6#p2686x2683', title: 'gegen SV Empor Berlin', text: '1' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=680&r=2#p2686x2681', title: 'gegen Zitad. Spandau', text: 1½ }]
+    - [{ url: '?staffel=680&r=3#p2686x2688', title: 'gegen SG Löberitz', text: 3½ }]
+    - [{ url: '?staffel=680&r=7#p2686x2684', title: 'gegen SC Mecklenburge', text: '3' }]
+    - [{ url: '?staffel=680&r=5#p2686x2678', title: 'gegen CFC Köthen', text: '4' }]
+    - [{ url: '?staffel=680&r=4#p2686x2687', title: 'gegen USC Magdeburg', text: '5' }]
+    - 8
+    - '21'
+    - ''
+-
+    - '6.'
+    - { text: 'Zitad. Spandau', url: '?mannschaft=2681', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=680&r=3#p2681x2682', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=680&r=5#p2681x2685', title: 'gegen GW Baumschulenw', text: 2½ }]
+    - [{ url: '?staffel=680&r=1#p2681x2683', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=680&r=4#p2681x2677', title: 'gegen SV Merseburg', text: '4' }]
+    - [{ url: '?staffel=680&r=2#p2681x2686', title: 'gegen Treptower SV 19', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=680&r=7#p2681x2688', title: 'gegen SG Löberitz', text: 3½ }]
+    - [{ url: '?staffel=680&r=6#p2681x2684', title: 'gegen SC Mecklenburge', text: 2½ }]
+    - {  }
+    - {  }
+    - 7
+    - '22'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Löberitz', url: '?mannschaft=2688', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=680&r=4#p2688x2682', title: 'gegen AE Magdeburg', text: '1' }]
+    - [{ url: '?staffel=680&r=6#p2688x2685', title: 'gegen GW Baumschulenw', text: '3' }]
+    - [{ url: '?staffel=680&r=2#p2688x2683', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=680&r=5#p2688x2677', title: 'gegen SV Merseburg', text: '3' }]
+    - [{ url: '?staffel=680&r=3#p2688x2686', title: 'gegen Treptower SV 19', text: 2½ }]
+    - [{ url: '?staffel=680&r=7#p2688x2681', title: 'gegen Zitad. Spandau', text: 2½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=680&r=1#p2688x2678', title: 'gegen CFC Köthen', text: '5' }]
+    - {  }
+    - 5
+    - '20'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SC Mecklenburge', url: '?mannschaft=2684', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=680&r=4#p2684x2685', title: 'gegen GW Baumschulenw', text: ½ }]
+    - [{ url: '?staffel=680&r=5#p2684x2683', title: 'gegen SV Empor Berlin', text: 1½ }]
+    - [{ url: '?staffel=680&r=2#p2684x2677', title: 'gegen SV Merseburg', text: '2' }]
+    - [{ url: '?staffel=680&r=7#p2684x2686', title: 'gegen Treptower SV 19', text: '3' }]
+    - [{ url: '?staffel=680&r=6#p2684x2681', title: 'gegen Zitad. Spandau', text: 3½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=680&r=3#p2684x2678', title: 'gegen CFC Köthen', text: '2' }]
+    - [{ url: '?staffel=680&r=1#p2684x2687', title: 'gegen USC Magdeburg', text: '6' }]
+    - 5
+    - 18½
+    - absteiger
+-
+    - '9.'
+    - { text: 'CFC Köthen', url: '?mannschaft=2678', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=680&r=6#p2678x2682', title: 'gegen AE Magdeburg', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=680&r=4#p2678x2683', title: 'gegen SV Empor Berlin', text: 1½ }]
+    - [{ url: '?staffel=680&r=7#p2678x2677', title: 'gegen SV Merseburg', text: '1' }]
+    - [{ url: '?staffel=680&r=5#p2678x2686', title: 'gegen Treptower SV 19', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=680&r=1#p2678x2688', title: 'gegen SG Löberitz', text: '1' }]
+    - [{ url: '?staffel=680&r=3#p2678x2684', title: 'gegen SC Mecklenburge', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=680&r=2#p2678x2687', title: 'gegen USC Magdeburg', text: 4½ }]
+    - 5
+    - '17'
+    - absteiger
+-
+    - '10.'
+    - { text: 'USC Magdeburg', url: '?mannschaft=2687', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=680&r=5#p2687x2682', title: 'gegen AE Magdeburg', text: 2½ }]
+    - [{ url: '?staffel=680&r=7#p2687x2685', title: 'gegen GW Baumschulenw', text: '3' }]
+    - [{ url: '?staffel=680&r=3#p2687x2683', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=680&r=6#p2687x2677', title: 'gegen SV Merseburg', text: '1' }]
+    - [{ url: '?staffel=680&r=4#p2687x2686', title: 'gegen Treptower SV 19', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=680&r=1#p2687x2684', title: 'gegen SC Mecklenburge', text: '0' }]
+    - [{ url: '?staffel=680&r=2#p2687x2678', title: 'gegen CFC Köthen', text: 1½ }]
+    - xxx
+    - 1
+    - '11'
+    - absteiger

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Veldhausen/Uel. 2', url: '?mannschaft=4919', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1042&r=3#p4919x4920', title: 'gegen SV Lingen 4', text: '5' }, { url: '?staffel=1042&r=8#p4919x4920', title: 'gegen SV Lingen 4', text: 2½ }]
+    - [{ url: '?staffel=1042&r=5#p4919x4921', title: 'gegen Bentheim/Nordho 2', text: '4' }, { url: '?staffel=1042&r=10#p4919x4921', title: 'gegen Bentheim/Nordho 2', text: 5½ }]
+    - [{ url: '?staffel=1042&r=4#p4919x4918', title: 'gegen SF Spelle 2', text: 4½ }, { url: '?staffel=1042&r=9#p4919x4918', title: 'gegen SF Spelle 2', text: '3' }]
+    - [{ url: '?staffel=1042&r=1#p4919x4922', title: 'gegen SC HT Herzlake', text: '3' }, { url: '?staffel=1042&r=6#p4919x4922', title: 'gegen SC HT Herzlake', text: '4' }]
+    - [{ url: '?staffel=1042&r=2#p4919x4923', title: 'gegen TuS Aschendorf 2', text: 4½ }, { url: '?staffel=1042&r=7#p4919x4923', title: 'gegen TuS Aschendorf 2', text: 5½ }]
+    - 16
+    - 41½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Lingen 4', url: '?mannschaft=4920', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1042&r=3#p4920x4919', title: 'gegen Veldhausen/Uel. 2', text: '1' }, { url: '?staffel=1042&r=8#p4920x4919', title: 'gegen Veldhausen/Uel. 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1042&r=2#p4920x4921', title: 'gegen Bentheim/Nordho 2', text: 4½ }, { url: '?staffel=1042&r=7#p4920x4921', title: 'gegen Bentheim/Nordho 2', text: 2½ }]
+    - [{ url: '?staffel=1042&r=5#p4920x4918', title: 'gegen SF Spelle 2', text: 3½ }, { url: '?staffel=1042&r=10#p4920x4918', title: 'gegen SF Spelle 2', text: '6' }]
+    - [{ url: '?staffel=1042&r=4#p4920x4922', title: 'gegen SC HT Herzlake', text: '4' }, { url: '?staffel=1042&r=9#p4920x4922', title: 'gegen SC HT Herzlake', text: 4½ }]
+    - [{ url: '?staffel=1042&r=1#p4920x4923', title: 'gegen TuS Aschendorf 2', text: 3½ }, { url: '?staffel=1042&r=6#p4920x4923', title: 'gegen TuS Aschendorf 2', text: '4' }]
+    - 16
+    - '37'
+    - ''
+-
+    - '3.'
+    - { text: 'Bentheim/Nordho 2', url: '?mannschaft=4921', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1042&r=5#p4921x4919', title: 'gegen Veldhausen/Uel. 2', text: '2' }, { url: '?staffel=1042&r=10#p4921x4919', title: 'gegen Veldhausen/Uel. 2', text: ½ }]
+    - [{ url: '?staffel=1042&r=2#p4921x4920', title: 'gegen SV Lingen 4', text: 1½ }, { url: '?staffel=1042&r=7#p4921x4920', title: 'gegen SV Lingen 4', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1042&r=1#p4921x4918', title: 'gegen SF Spelle 2', text: 3½ }, { url: '?staffel=1042&r=6#p4921x4918', title: 'gegen SF Spelle 2', text: '3' }]
+    - [{ url: '?staffel=1042&r=3#p4921x4922', title: 'gegen SC HT Herzlake', text: '5' }, { url: '?staffel=1042&r=8#p4921x4922', title: 'gegen SC HT Herzlake', text: '2' }]
+    - [{ url: '?staffel=1042&r=4#p4921x4923', title: 'gegen TuS Aschendorf 2', text: '5' }, { url: '?staffel=1042&r=9#p4921x4923', title: 'gegen TuS Aschendorf 2', text: '4' }]
+    - 11
+    - '30'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=4918', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1042&r=4#p4918x4919', title: 'gegen Veldhausen/Uel. 2', text: 1½ }, { url: '?staffel=1042&r=9#p4918x4919', title: 'gegen Veldhausen/Uel. 2', text: '3' }]
+    - [{ url: '?staffel=1042&r=5#p4918x4920', title: 'gegen SV Lingen 4', text: 2½ }, { url: '?staffel=1042&r=10#p4918x4920', title: 'gegen SV Lingen 4', text: '0' }]
+    - [{ url: '?staffel=1042&r=1#p4918x4921', title: 'gegen Bentheim/Nordho 2', text: 2½ }, { url: '?staffel=1042&r=6#p4918x4921', title: 'gegen Bentheim/Nordho 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1042&r=2#p4918x4922', title: 'gegen SC HT Herzlake', text: '4' }, { url: '?staffel=1042&r=7#p4918x4922', title: 'gegen SC HT Herzlake', text: 5½ }]
+    - [{ url: '?staffel=1042&r=3#p4918x4923', title: 'gegen TuS Aschendorf 2', text: '3' }, { url: '?staffel=1042&r=8#p4918x4923', title: 'gegen TuS Aschendorf 2', text: 3½ }]
+    - 9
+    - 28½
+    - ''
+-
+    - '5.'
+    - { text: 'SC HT Herzlake', url: '?mannschaft=4922', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1042&r=1#p4922x4919', title: 'gegen Veldhausen/Uel. 2', text: '3' }, { url: '?staffel=1042&r=6#p4922x4919', title: 'gegen Veldhausen/Uel. 2', text: '2' }]
+    - [{ url: '?staffel=1042&r=4#p4922x4920', title: 'gegen SV Lingen 4', text: '2' }, { url: '?staffel=1042&r=9#p4922x4920', title: 'gegen SV Lingen 4', text: 1½ }]
+    - [{ url: '?staffel=1042&r=3#p4922x4921', title: 'gegen Bentheim/Nordho 2', text: '1' }, { url: '?staffel=1042&r=8#p4922x4921', title: 'gegen Bentheim/Nordho 2', text: '4' }]
+    - [{ url: '?staffel=1042&r=2#p4922x4918', title: 'gegen SF Spelle 2', text: '2' }, { url: '?staffel=1042&r=7#p4922x4918', title: 'gegen SF Spelle 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1042&r=5#p4922x4923', title: 'gegen TuS Aschendorf 2', text: '2' }, { url: '?staffel=1042&r=10#p4922x4923', title: 'gegen TuS Aschendorf 2', text: 3½ }]
+    - 5
+    - 21½
+    - ''
+-
+    - '6.'
+    - { text: 'TuS Aschendorf 2', url: '?mannschaft=4923', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1042&r=2#p4923x4919', title: 'gegen Veldhausen/Uel. 2', text: 1½ }, { url: '?staffel=1042&r=7#p4923x4919', title: 'gegen Veldhausen/Uel. 2', text: ½ }]
+    - [{ url: '?staffel=1042&r=1#p4923x4920', title: 'gegen SV Lingen 4', text: 2½ }, { url: '?staffel=1042&r=6#p4923x4920', title: 'gegen SV Lingen 4', text: '2' }]
+    - [{ url: '?staffel=1042&r=4#p4923x4921', title: 'gegen Bentheim/Nordho 2', text: '1' }, { url: '?staffel=1042&r=9#p4923x4921', title: 'gegen Bentheim/Nordho 2', text: '2' }]
+    - [{ url: '?staffel=1042&r=3#p4923x4918', title: 'gegen SF Spelle 2', text: '3' }, { url: '?staffel=1042&r=8#p4923x4918', title: 'gegen SF Spelle 2', text: 2½ }]
+    - [{ url: '?staffel=1042&r=5#p4923x4922', title: 'gegen SC HT Herzlake', text: '4' }, { url: '?staffel=1042&r=10#p4923x4922', title: 'gegen SC HT Herzlake', text: 2½ }]
+    - xxx
+    - 3
+    - 21½
+    - ''

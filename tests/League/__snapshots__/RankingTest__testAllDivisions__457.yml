@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TuS Coswig 1920', url: '?mannschaft=3867', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=933&r=4#p3867x4051', title: 'gegen SG GW Dresden', text: '2' }]
+    - [{ url: '?staffel=933&r=2#p3867x4140', title: 'gegen Schachmiezen 2', text: '4' }]
+    - [{ url: '?staffel=933&r=1#p3867x4114', title: 'gegen USV TU Dresden', text: '2' }]
+    - [{ url: '?staffel=933&r=5#p3867x3931', title: 'gegen SV Empor Berlin', text: 2½ }]
+    - [{ url: '?staffel=933&r=3#p3867x4080', title: 'gegen USG Chemnitz', text: '3' }]
+    - 8
+    - 13½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG GW Dresden', url: '?mannschaft=4051', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=933&r=4#p4051x3867', title: 'gegen TuS Coswig 1920', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=933&r=3#p4051x4140', title: 'gegen Schachmiezen 2', text: '2' }]
+    - [{ url: '?staffel=933&r=5#p4051x4114', title: 'gegen USV TU Dresden', text: 2½ }]
+    - [{ url: '?staffel=933&r=2#p4051x3931', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=933&r=1#p4051x4080', title: 'gegen USG Chemnitz', text: '3' }]
+    - 8
+    - 12½
+    - ''
+-
+    - '3.'
+    - { text: 'Schachmiezen 2', url: '?mannschaft=4140', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=933&r=2#p4140x3867', title: 'gegen TuS Coswig 1920', text: '0' }]
+    - [{ url: '?staffel=933&r=3#p4140x4051', title: 'gegen SG GW Dresden', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=933&r=4#p4140x4114', title: 'gegen USV TU Dresden', text: 2½ }]
+    - [{ url: '?staffel=933&r=1#p4140x3931', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=933&r=5#p4140x4080', title: 'gegen USG Chemnitz', text: 3½ }]
+    - 6
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'USV TU Dresden', url: '?mannschaft=4114', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=933&r=1#p4114x3867', title: 'gegen TuS Coswig 1920', text: '2' }]
+    - [{ url: '?staffel=933&r=5#p4114x4051', title: 'gegen SG GW Dresden', text: 1½ }]
+    - [{ url: '?staffel=933&r=4#p4114x4140', title: 'gegen Schachmiezen 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=933&r=3#p4114x3931', title: 'gegen SV Empor Berlin', text: 2½ }]
+    - [{ url: '?staffel=933&r=2#p4114x4080', title: 'gegen USG Chemnitz', text: '3' }]
+    - 5
+    - 10½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=3931', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=933&r=5#p3931x3867', title: 'gegen TuS Coswig 1920', text: 1½ }]
+    - [{ url: '?staffel=933&r=2#p3931x4051', title: 'gegen SG GW Dresden', text: '1' }]
+    - [{ url: '?staffel=933&r=1#p3931x4140', title: 'gegen Schachmiezen 2', text: '2' }]
+    - [{ url: '?staffel=933&r=3#p3931x4114', title: 'gegen USV TU Dresden', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=933&r=4#p3931x4080', title: 'gegen USG Chemnitz', text: '4' }]
+    - 3
+    - '10'
+    - absteiger
+-
+    - '6.'
+    - { text: 'USG Chemnitz', url: '?mannschaft=4080', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=933&r=3#p4080x3867', title: 'gegen TuS Coswig 1920', text: '1' }]
+    - [{ url: '?staffel=933&r=1#p4080x4051', title: 'gegen SG GW Dresden', text: '1' }]
+    - [{ url: '?staffel=933&r=5#p4080x4140', title: 'gegen Schachmiezen 2', text: ½ }]
+    - [{ url: '?staffel=933&r=2#p4080x4114', title: 'gegen USV TU Dresden', text: '1' }]
+    - [{ url: '?staffel=933&r=4#p4080x3931', title: 'gegen SV Empor Berlin', text: '0' }]
+    - xxx
+    - 0
+    - 3½
+    - absteiger

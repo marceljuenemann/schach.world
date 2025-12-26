@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Schachzentrum S', url: '?mannschaft=6987', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1585&r=1#p6987x6988', title: 'gegen USV TU Dresden', text: '4' }]
+    - [{ url: '?staffel=1585&r=6#p6987x6990', title: 'gegen CSC Aufbau 95', text: 2½ }]
+    - [{ url: '?staffel=1585&r=2#p6987x6989', title: 'gegen SV Niederwiesa', text: '3' }]
+    - [{ url: '?staffel=1585&r=4#p6987x6985', title: 'gegen SG GW Dresden', text: '4' }]
+    - [{ url: '?staffel=1585&r=5#p6987x6986', title: 'gegen USG Chemnitz', text: '4' }]
+    - 10
+    - 17½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'USV TU Dresden', url: '?mannschaft=6988', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1585&r=1#p6988x6987', title: 'gegen Schachzentrum S', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1585&r=2#p6988x6990', title: 'gegen CSC Aufbau 95', text: '3' }]
+    - [{ url: '?staffel=1585&r=4#p6988x6989', title: 'gegen SV Niederwiesa', text: 2½ }]
+    - [{ url: '?staffel=1585&r=5#p6988x6985', title: 'gegen SG GW Dresden', text: '2' }]
+    - [{ url: '?staffel=1585&r=6#p6988x6986', title: 'gegen USG Chemnitz', text: 3½ }]
+    - 7
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'CSC Aufbau 95', url: '?mannschaft=6990', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1585&r=6#p6990x6987', title: 'gegen Schachzentrum S', text: 1½ }]
+    - [{ url: '?staffel=1585&r=2#p6990x6988', title: 'gegen USV TU Dresden', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1585&r=5#p6990x6989', title: 'gegen SV Niederwiesa', text: 2½ }]
+    - [{ url: '?staffel=1585&r=1#p6990x6985', title: 'gegen SG GW Dresden', text: 2½ }]
+    - [{ url: '?staffel=1585&r=4#p6990x6986', title: 'gegen USG Chemnitz', text: '4' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Niederwiesa', url: '?mannschaft=6989', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1585&r=2#p6989x6987', title: 'gegen Schachzentrum S', text: '1' }]
+    - [{ url: '?staffel=1585&r=4#p6989x6988', title: 'gegen USV TU Dresden', text: 1½ }]
+    - [{ url: '?staffel=1585&r=5#p6989x6990', title: 'gegen CSC Aufbau 95', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1585&r=6#p6989x6985', title: 'gegen SG GW Dresden', text: 3½ }]
+    - [{ url: '?staffel=1585&r=1#p6989x6986', title: 'gegen USG Chemnitz', text: '2' }]
+    - 3
+    - 9½
+    - ''
+-
+    - '5.'
+    - { text: 'SG GW Dresden', url: '?mannschaft=6985', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1585&r=4#p6985x6987', title: 'gegen Schachzentrum S', text: '0' }]
+    - [{ url: '?staffel=1585&r=5#p6985x6988', title: 'gegen USV TU Dresden', text: '2' }]
+    - [{ url: '?staffel=1585&r=1#p6985x6990', title: 'gegen CSC Aufbau 95', text: 1½ }]
+    - [{ url: '?staffel=1585&r=6#p6985x6989', title: 'gegen SV Niederwiesa', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1585&r=2#p6985x6986', title: 'gegen USG Chemnitz', text: '3' }]
+    - 3
+    - '7'
+    - absteiger
+-
+    - '6.'
+    - { text: 'USG Chemnitz', url: '?mannschaft=6986', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1585&r=5#p6986x6987', title: 'gegen Schachzentrum S', text: '0' }]
+    - [{ url: '?staffel=1585&r=6#p6986x6988', title: 'gegen USV TU Dresden', text: ½ }]
+    - [{ url: '?staffel=1585&r=4#p6986x6990', title: 'gegen CSC Aufbau 95', text: '0' }]
+    - [{ url: '?staffel=1585&r=1#p6986x6989', title: 'gegen SV Niederwiesa', text: '2' }]
+    - [{ url: '?staffel=1585&r=2#p6986x6985', title: 'gegen SG GW Dresden', text: '1' }]
+    - xxx
+    - 1
+    - 3½
+    - absteiger

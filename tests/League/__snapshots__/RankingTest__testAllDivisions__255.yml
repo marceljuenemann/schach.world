@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Goslar', url: '?mannschaft=2845', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=686&r=4#p2845x2841', title: 'gegen SK Bad Harzburg', text: 3½ }]
+    - [{ url: '?staffel=686&r=3#p2845x2843', title: 'gegen SHG Hildesheim', text: 1½ }]
+    - [{ url: '?staffel=686&r=5#p2845x2844', title: 'gegen Hildesheimer SV', text: '2' }]
+    - [{ url: '?staffel=686&r=1#p2845x2846', title: 'gegen VfL Oker', text: '3' }]
+    - [{ url: '?staffel=686&r=2#p2845x2842', title: 'gegen SK Bad Harzburg 2', text: '3' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Bad Harzburg', url: '?mannschaft=2841', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=686&r=4#p2841x2845', title: 'gegen SK Goslar', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=686&r=2#p2841x2843', title: 'gegen SHG Hildesheim', text: '3' }]
+    - [{ url: '?staffel=686&r=3#p2841x2844', title: 'gegen Hildesheimer SV', text: 2½ }]
+    - [{ url: '?staffel=686&r=5#p2841x2846', title: 'gegen VfL Oker', text: 1½ }]
+    - [{ url: '?staffel=686&r=1#p2841x2842', title: 'gegen SK Bad Harzburg 2', text: '4' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '3.'
+    - { text: 'SHG Hildesheim', url: '?mannschaft=2843', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=686&r=3#p2843x2845', title: 'gegen SK Goslar', text: 2½ }]
+    - [{ url: '?staffel=686&r=2#p2843x2841', title: 'gegen SK Bad Harzburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=686&r=1#p2843x2844', title: 'gegen Hildesheimer SV', text: '1' }]
+    - [{ url: '?staffel=686&r=4#p2843x2846', title: 'gegen VfL Oker', text: 3½ }]
+    - [{ url: '?staffel=686&r=5#p2843x2842', title: 'gegen SK Bad Harzburg 2', text: '3' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=2844', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=686&r=5#p2844x2845', title: 'gegen SK Goslar', text: '2' }]
+    - [{ url: '?staffel=686&r=3#p2844x2841', title: 'gegen SK Bad Harzburg', text: 1½ }]
+    - [{ url: '?staffel=686&r=1#p2844x2843', title: 'gegen SHG Hildesheim', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=686&r=2#p2844x2846', title: 'gegen VfL Oker', text: '0' }]
+    - [{ url: '?staffel=686&r=4#p2844x2842', title: 'gegen SK Bad Harzburg 2', text: '4' }]
+    - 5
+    - 10½
+    - ''
+-
+    - '5.'
+    - { text: 'VfL Oker', url: '?mannschaft=2846', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=686&r=1#p2846x2845', title: 'gegen SK Goslar', text: '1' }]
+    - [{ url: '?staffel=686&r=5#p2846x2841', title: 'gegen SK Bad Harzburg', text: 2½ }]
+    - [{ url: '?staffel=686&r=4#p2846x2843', title: 'gegen SHG Hildesheim', text: ½ }]
+    - [{ url: '?staffel=686&r=2#p2846x2844', title: 'gegen Hildesheimer SV', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=686&r=3#p2846x2842', title: 'gegen SK Bad Harzburg 2', text: '2' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Bad Harzburg 2', url: '?mannschaft=2842', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=686&r=2#p2842x2845', title: 'gegen SK Goslar', text: '1' }]
+    - [{ url: '?staffel=686&r=1#p2842x2841', title: 'gegen SK Bad Harzburg', text: '0' }]
+    - [{ url: '?staffel=686&r=5#p2842x2843', title: 'gegen SHG Hildesheim', text: '1' }]
+    - [{ url: '?staffel=686&r=4#p2842x2844', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=686&r=3#p2842x2846', title: 'gegen VfL Oker', text: '2' }]
+    - xxx
+    - 1
+    - '4'
+    - ''

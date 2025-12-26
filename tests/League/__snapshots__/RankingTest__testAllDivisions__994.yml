@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Roch. Braunschweig', url: '?mannschaft=8076', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1837&r=3#p8076x8102', title: 'gegen KS Braunschweig', text: '6' }]
+    - [{ url: '?staffel=1837&r=9#p8076x8104', title: 'gegen SG Elmrochade', text: '6' }]
+    - [{ url: '?staffel=1837&r=6#p8076x8088', title: 'gegen Peiner SV 2', text: 6½ }]
+    - [{ url: '?staffel=1837&r=8#p8076x8082', title: 'gegen SC BS Gliesmarode 3', text: '8' }]
+    - [{ url: '?staffel=1837&r=7#p8076x8078', title: 'gegen SG Gifhorn-Wolfsburg 3', text: '7' }]
+    - [{ url: '?staffel=1837&r=1#p8076x8083', title: 'gegen SC BS Gliesmarode 4', text: 7½ }]
+    - [{ url: '?staffel=1837&r=5#p8076x8091', title: 'gegen SF Fallersleben', text: '5' }]
+    - [{ url: '?staffel=1837&r=4#p8076x8095', title: 'gegen SV Cai. Wolfenbüttel 2', text: '6' }]
+    - [{ url: '?staffel=1837&r=2#p8076x8089', title: 'gegen Rochade Göttingen', text: '8' }]
+    - 18
+    - '60'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'KS Braunschweig', url: '?mannschaft=8102', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1837&r=3#p8102x8076', title: 'gegen Roch. Braunschweig', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1837&r=5#p8102x8104', title: 'gegen SG Elmrochade', text: '4' }]
+    - [{ url: '?staffel=1837&r=2#p8102x8088', title: 'gegen Peiner SV 2', text: '5' }]
+    - [{ url: '?staffel=1837&r=4#p8102x8082', title: 'gegen SC BS Gliesmarode 3', text: '6' }]
+    - [{ url: '?staffel=1837&r=8#p8102x8078', title: 'gegen SG Gifhorn-Wolfsburg 3', text: '5' }]
+    - [{ url: '?staffel=1837&r=6#p8102x8083', title: 'gegen SC BS Gliesmarode 4', text: 6½ }]
+    - [{ url: '?staffel=1837&r=1#p8102x8091', title: 'gegen SF Fallersleben', text: '7' }]
+    - [{ url: '?staffel=1837&r=9#p8102x8095', title: 'gegen SV Cai. Wolfenbüttel 2', text: '5' }]
+    - [{ url: '?staffel=1837&r=7#p8102x8089', title: 'gegen Rochade Göttingen', text: '8' }]
+    - 15
+    - 48½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Elmrochade', url: '?mannschaft=8104', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1837&r=9#p8104x8076', title: 'gegen Roch. Braunschweig', text: '2' }]
+    - [{ url: '?staffel=1837&r=5#p8104x8102', title: 'gegen KS Braunschweig', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1837&r=8#p8104x8088', title: 'gegen Peiner SV 2', text: 4½ }]
+    - [{ url: '?staffel=1837&r=1#p8104x8082', title: 'gegen SC BS Gliesmarode 3', text: 4½ }]
+    - [{ url: '?staffel=1837&r=2#p8104x8078', title: 'gegen SG Gifhorn-Wolfsburg 3', text: '4' }]
+    - [{ url: '?staffel=1837&r=3#p8104x8083', title: 'gegen SC BS Gliesmarode 4', text: '5' }]
+    - [{ url: '?staffel=1837&r=7#p8104x8091', title: 'gegen SF Fallersleben', text: 6½ }]
+    - [{ url: '?staffel=1837&r=6#p8104x8095', title: 'gegen SV Cai. Wolfenbüttel 2', text: '6' }]
+    - [{ url: '?staffel=1837&r=4#p8104x8089', title: 'gegen Rochade Göttingen', text: '8' }]
+    - 14
+    - 44½
+    - ''
+-
+    - '4.'
+    - { text: 'Peiner SV 2', url: '?mannschaft=8088', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1837&r=6#p8088x8076', title: 'gegen Roch. Braunschweig', text: 1½ }]
+    - [{ url: '?staffel=1837&r=2#p8088x8102', title: 'gegen KS Braunschweig', text: '3' }]
+    - [{ url: '?staffel=1837&r=8#p8088x8104', title: 'gegen SG Elmrochade', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1837&r=7#p8088x8082', title: 'gegen SC BS Gliesmarode 3', text: '6' }]
+    - [{ url: '?staffel=1837&r=5#p8088x8078', title: 'gegen SG Gifhorn-Wolfsburg 3', text: 5½ }]
+    - [{ url: '?staffel=1837&r=9#p8088x8083', title: 'gegen SC BS Gliesmarode 4', text: '5' }]
+    - [{ url: '?staffel=1837&r=4#p8088x8091', title: 'gegen SF Fallersleben', text: 1½ }]
+    - [{ url: '?staffel=1837&r=3#p8088x8095', title: 'gegen SV Cai. Wolfenbüttel 2', text: 4½ }]
+    - [{ url: '?staffel=1837&r=1#p8088x8089', title: 'gegen Rochade Göttingen', text: '8' }]
+    - 10
+    - 38½
+    - ''
+-
+    - '5.'
+    - { text: 'SC BS Gliesmarode 3', url: '?mannschaft=8082', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1837&r=8#p8082x8076', title: 'gegen Roch. Braunschweig', text: '0' }]
+    - [{ url: '?staffel=1837&r=4#p8082x8102', title: 'gegen KS Braunschweig', text: '2' }]
+    - [{ url: '?staffel=1837&r=1#p8082x8104', title: 'gegen SG Elmrochade', text: 3½ }]
+    - [{ url: '?staffel=1837&r=7#p8082x8088', title: 'gegen Peiner SV 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1837&r=9#p8082x8078', title: 'gegen SG Gifhorn-Wolfsburg 3', text: '6' }]
+    - [{ url: '?staffel=1837&r=2#p8082x8083', title: 'gegen SC BS Gliesmarode 4', text: 6½ }]
+    - [{ url: '?staffel=1837&r=6#p8082x8091', title: 'gegen SF Fallersleben', text: '3' }]
+    - [{ url: '?staffel=1837&r=5#p8082x8095', title: 'gegen SV Cai. Wolfenbüttel 2', text: 4½ }]
+    - [{ url: '?staffel=1837&r=3#p8082x8089', title: 'gegen Rochade Göttingen', text: '8' }]
+    - 8
+    - 35½
+    - ''
+-
+    - '6.'
+    - { text: 'SG Gifhorn-Wolfsburg 3', url: '?mannschaft=8078', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1837&r=7#p8078x8076', title: 'gegen Roch. Braunschweig', text: '1' }]
+    - [{ url: '?staffel=1837&r=8#p8078x8102', title: 'gegen KS Braunschweig', text: '3' }]
+    - [{ url: '?staffel=1837&r=2#p8078x8104', title: 'gegen SG Elmrochade', text: '4' }]
+    - [{ url: '?staffel=1837&r=5#p8078x8088', title: 'gegen Peiner SV 2', text: 2½ }]
+    - [{ url: '?staffel=1837&r=9#p8078x8082', title: 'gegen SC BS Gliesmarode 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1837&r=4#p8078x8083', title: 'gegen SC BS Gliesmarode 4', text: 2½ }]
+    - [{ url: '?staffel=1837&r=3#p8078x8091', title: 'gegen SF Fallersleben', text: 4½ }]
+    - [{ url: '?staffel=1837&r=1#p8078x8095', title: 'gegen SV Cai. Wolfenbüttel 2', text: '5' }]
+    - [{ url: '?staffel=1837&r=6#p8078x8089', title: 'gegen Rochade Göttingen', text: '8' }]
+    - 7
+    - 32½
+    - ''
+-
+    - '7.'
+    - { text: 'SC BS Gliesmarode 4', url: '?mannschaft=8083', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1837&r=1#p8083x8076', title: 'gegen Roch. Braunschweig', text: ½ }]
+    - [{ url: '?staffel=1837&r=6#p8083x8102', title: 'gegen KS Braunschweig', text: 1½ }]
+    - [{ url: '?staffel=1837&r=3#p8083x8104', title: 'gegen SG Elmrochade', text: '3' }]
+    - [{ url: '?staffel=1837&r=9#p8083x8088', title: 'gegen Peiner SV 2', text: '3' }]
+    - [{ url: '?staffel=1837&r=2#p8083x8082', title: 'gegen SC BS Gliesmarode 3', text: 1½ }]
+    - [{ url: '?staffel=1837&r=4#p8083x8078', title: 'gegen SG Gifhorn-Wolfsburg 3', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1837&r=8#p8083x8091', title: 'gegen SF Fallersleben', text: '5' }]
+    - [{ url: '?staffel=1837&r=7#p8083x8095', title: 'gegen SV Cai. Wolfenbüttel 2', text: '4' }]
+    - [{ url: '?staffel=1837&r=5#p8083x8089', title: 'gegen Rochade Göttingen', text: '8' }]
+    - 7
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'SF Fallersleben', url: '?mannschaft=8091', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1837&r=5#p8091x8076', title: 'gegen Roch. Braunschweig', text: '3' }]
+    - [{ url: '?staffel=1837&r=1#p8091x8102', title: 'gegen KS Braunschweig', text: '1' }]
+    - [{ url: '?staffel=1837&r=7#p8091x8104', title: 'gegen SG Elmrochade', text: 1½ }]
+    - [{ url: '?staffel=1837&r=4#p8091x8088', title: 'gegen Peiner SV 2', text: 6½ }]
+    - [{ url: '?staffel=1837&r=6#p8091x8082', title: 'gegen SC BS Gliesmarode 3', text: '5' }]
+    - [{ url: '?staffel=1837&r=3#p8091x8078', title: 'gegen SG Gifhorn-Wolfsburg 3', text: 3½ }]
+    - [{ url: '?staffel=1837&r=8#p8091x8083', title: 'gegen SC BS Gliesmarode 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1837&r=2#p8091x8095', title: 'gegen SV Cai. Wolfenbüttel 2', text: '1' }]
+    - [{ url: '?staffel=1837&r=9#p8091x8089', title: 'gegen Rochade Göttingen', text: '8' }]
+    - 6
+    - 32½
+    - ''
+-
+    - '9.'
+    - { text: 'SV Cai. Wolfenbüttel 2', url: '?mannschaft=8095', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1837&r=4#p8095x8076', title: 'gegen Roch. Braunschweig', text: '1' }]
+    - [{ url: '?staffel=1837&r=9#p8095x8102', title: 'gegen KS Braunschweig', text: '3' }]
+    - [{ url: '?staffel=1837&r=6#p8095x8104', title: 'gegen SG Elmrochade', text: '2' }]
+    - [{ url: '?staffel=1837&r=3#p8095x8088', title: 'gegen Peiner SV 2', text: 3½ }]
+    - [{ url: '?staffel=1837&r=5#p8095x8082', title: 'gegen SC BS Gliesmarode 3', text: 3½ }]
+    - [{ url: '?staffel=1837&r=1#p8095x8078', title: 'gegen SG Gifhorn-Wolfsburg 3', text: '3' }]
+    - [{ url: '?staffel=1837&r=7#p8095x8083', title: 'gegen SC BS Gliesmarode 4', text: '4' }]
+    - [{ url: '?staffel=1837&r=2#p8095x8091', title: 'gegen SF Fallersleben', text: '7' }]
+    - xxx
+    - [{ url: '?staffel=1837&r=8#p8095x8089', title: 'gegen Rochade Göttingen', text: '8' }]
+    - 5
+    - '35'
+    - absteiger
+-
+    - '10.'
+    - { text: 'Rochade Göttingen', url: '?mannschaft=8089', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1837&r=2#p8089x8076', title: 'gegen Roch. Braunschweig', text: '0' }]
+    - [{ url: '?staffel=1837&r=7#p8089x8102', title: 'gegen KS Braunschweig', text: '0' }]
+    - [{ url: '?staffel=1837&r=4#p8089x8104', title: 'gegen SG Elmrochade', text: '0' }]
+    - [{ url: '?staffel=1837&r=1#p8089x8088', title: 'gegen Peiner SV 2', text: '0' }]
+    - [{ url: '?staffel=1837&r=3#p8089x8082', title: 'gegen SC BS Gliesmarode 3', text: '0' }]
+    - [{ url: '?staffel=1837&r=6#p8089x8078', title: 'gegen SG Gifhorn-Wolfsburg 3', text: '0' }]
+    - [{ url: '?staffel=1837&r=5#p8089x8083', title: 'gegen SC BS Gliesmarode 4', text: '0' }]
+    - [{ url: '?staffel=1837&r=9#p8089x8091', title: 'gegen SF Fallersleben', text: '0' }]
+    - [{ url: '?staffel=1837&r=8#p8089x8095', title: 'gegen SV Cai. Wolfenbüttel 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

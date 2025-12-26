@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=6259', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1416&r=4#p6259x6249', title: 'gegen USV Halle', text: 3½ }]
+    - [{ url: '?staffel=1416&r=1#p6259x6263', title: 'gegen SG Leipzig 2', text: 3½ }]
+    - [{ url: '?staffel=1416&r=5#p6259x6250', title: 'gegen Schachzwerge Ma', text: '2' }]
+    - [{ url: '?staffel=1416&r=2#p6259x6251', title: 'gegen SC Zugzwang 95', text: '4' }]
+    - 7
+    - '13'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'USV Halle', url: '?mannschaft=6249', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1416&r=4#p6249x6259', title: 'gegen SK Lehrte 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1416&r=3#p6249x6263', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - [{ url: '?staffel=1416&r=2#p6249x6250', title: 'gegen Schachzwerge Ma', text: 3½ }]
+    - [{ url: '?staffel=1416&r=1#p6249x6251', title: 'gegen SC Zugzwang 95', text: '4' }]
+    - 6
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Leipzig 2', url: '?mannschaft=6263', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1416&r=1#p6263x6259', title: 'gegen SK Lehrte 2', text: ½ }]
+    - [{ url: '?staffel=1416&r=3#p6263x6249', title: 'gegen USV Halle', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1416&r=4#p6263x6250', title: 'gegen Schachzwerge Ma', text: '4' }]
+    - [{ url: '?staffel=1416&r=5#p6263x6251', title: 'gegen SC Zugzwang 95', text: '4' }]
+    - 4
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'Schachzwerge Ma', url: '?mannschaft=6250', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1416&r=5#p6250x6259', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1416&r=2#p6250x6249', title: 'gegen USV Halle', text: ½ }]
+    - [{ url: '?staffel=1416&r=4#p6250x6263', title: 'gegen SG Leipzig 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1416&r=3#p6250x6251', title: 'gegen SC Zugzwang 95', text: '4' }]
+    - 3
+    - 6½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Zugzwang 95', url: '?mannschaft=6251', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1416&r=2#p6251x6259', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1416&r=1#p6251x6249', title: 'gegen USV Halle', text: '0' }]
+    - [{ url: '?staffel=1416&r=5#p6251x6263', title: 'gegen SG Leipzig 2', text: '0' }]
+    - [{ url: '?staffel=1416&r=3#p6251x6250', title: 'gegen Schachzwerge Ma', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TSV Riemsloh 3', url: '?mannschaft=3541', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=853&r=5#p3541x3542', title: 'gegen SV Osnabrück 6', text: '4' }, { url: '?staffel=853&r=10#p3541x3542', title: 'gegen SV Osnabrück 6', text: '2' }]
+    - [{ url: '?staffel=853&r=2#p3541x3544', title: 'gegen Gaste-Hasbergen 2', text: 5½ }, { url: '?staffel=853&r=7#p3541x3544', title: 'gegen Gaste-Hasbergen 2', text: '3' }]
+    - [{ url: '?staffel=853&r=1#p3541x3545', title: 'gegen SC Fürstenau 2', text: 3½ }, { url: '?staffel=853&r=6#p3541x3545', title: 'gegen SC Fürstenau 2', text: 2½ }]
+    - [{ url: '?staffel=853&r=3#p3541x3543', title: 'gegen Bersenbrück/Bramsche 4', text: 4½ }, { url: '?staffel=853&r=8#p3541x3543', title: 'gegen Bersenbrück/Bramsche 4', text: 5½ }]
+    - 11
+    - 30½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Osnabrück 6', url: '?mannschaft=3542', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=853&r=5#p3542x3541', title: 'gegen TSV Riemsloh 3', text: '2' }, { url: '?staffel=853&r=10#p3542x3541', title: 'gegen TSV Riemsloh 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=853&r=3#p3542x3544', title: 'gegen Gaste-Hasbergen 2', text: '3' }, { url: '?staffel=853&r=8#p3542x3544', title: 'gegen Gaste-Hasbergen 2', text: '2' }]
+    - [{ url: '?staffel=853&r=2#p3542x3545', title: 'gegen SC Fürstenau 2', text: '6' }, { url: '?staffel=853&r=7#p3542x3545', title: 'gegen SC Fürstenau 2', text: 3½ }]
+    - [{ url: '?staffel=853&r=4#p3542x3543', title: 'gegen Bersenbrück/Bramsche 4', text: '3' }, { url: '?staffel=853&r=9#p3542x3543', title: 'gegen Bersenbrück/Bramsche 4', text: '4' }]
+    - 10
+    - 27½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Gaste-Hasbergen 2', url: '?mannschaft=3544', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=853&r=2#p3544x3541', title: 'gegen TSV Riemsloh 3', text: ½ }, { url: '?staffel=853&r=7#p3544x3541', title: 'gegen TSV Riemsloh 3', text: '3' }]
+    - [{ url: '?staffel=853&r=3#p3544x3542', title: 'gegen SV Osnabrück 6', text: '3' }, { url: '?staffel=853&r=8#p3544x3542', title: 'gegen SV Osnabrück 6', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=853&r=4#p3544x3545', title: 'gegen SC Fürstenau 2', text: '0' }, { url: '?staffel=853&r=9#p3544x3545', title: 'gegen SC Fürstenau 2', text: '4' }]
+    - [{ url: '?staffel=853&r=1#p3544x3543', title: 'gegen Bersenbrück/Bramsche 4', text: '3' }, { url: '?staffel=853&r=6#p3544x3543', title: 'gegen Bersenbrück/Bramsche 4', text: 4½ }]
+    - 9
+    - '22'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Fürstenau 2', url: '?mannschaft=3545', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=853&r=1#p3545x3541', title: 'gegen TSV Riemsloh 3', text: 2½ }, { url: '?staffel=853&r=6#p3545x3541', title: 'gegen TSV Riemsloh 3', text: 3½ }]
+    - [{ url: '?staffel=853&r=2#p3545x3542', title: 'gegen SV Osnabrück 6', text: '0' }, { url: '?staffel=853&r=7#p3545x3542', title: 'gegen SV Osnabrück 6', text: 2½ }]
+    - [{ url: '?staffel=853&r=4#p3545x3544', title: 'gegen Gaste-Hasbergen 2', text: '6' }, { url: '?staffel=853&r=9#p3545x3544', title: 'gegen Gaste-Hasbergen 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=853&r=5#p3545x3543', title: 'gegen Bersenbrück/Bramsche 4', text: '5' }, { url: '?staffel=853&r=10#p3545x3543', title: 'gegen Bersenbrück/Bramsche 4', text: '4' }]
+    - 8
+    - 25½
+    - ''
+-
+    - '5.'
+    - { text: 'Bersenbrück/Bramsche 4', url: '?mannschaft=3543', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=853&r=3#p3543x3541', title: 'gegen TSV Riemsloh 3', text: 1½ }, { url: '?staffel=853&r=8#p3543x3541', title: 'gegen TSV Riemsloh 3', text: ½ }]
+    - [{ url: '?staffel=853&r=4#p3543x3542', title: 'gegen SV Osnabrück 6', text: '3' }, { url: '?staffel=853&r=9#p3543x3542', title: 'gegen SV Osnabrück 6', text: '2' }]
+    - [{ url: '?staffel=853&r=1#p3543x3544', title: 'gegen Gaste-Hasbergen 2', text: '3' }, { url: '?staffel=853&r=6#p3543x3544', title: 'gegen Gaste-Hasbergen 2', text: 1½ }]
+    - [{ url: '?staffel=853&r=5#p3543x3545', title: 'gegen SC Fürstenau 2', text: '1' }, { url: '?staffel=853&r=10#p3543x3545', title: 'gegen SC Fürstenau 2', text: '2' }]
+    - xxx
+    - 2
+    - 14½
+    - ''

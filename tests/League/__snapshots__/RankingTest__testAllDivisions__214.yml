@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=2738', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=641&r=4#p2738x2733', title: 'gegen SG Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=641&r=8#p2738x2734', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=641&r=5#p2738x2735', title: 'gegen SK Wildeshausen', text: '5' }]
+    - [{ url: '?staffel=641&r=7#p2738x2740', title: 'gegen SK Bremen-Nord', text: 3½ }]
+    - [{ url: '?staffel=641&r=6#p2738x2736', title: 'gegen SF Leherheide', text: 4½ }]
+    - [{ url: '?staffel=641&r=1#p2738x2732', title: 'gegen SK Union Oldenburg 2', text: '5' }]
+    - [{ url: '?staffel=641&r=9#p2738x2737', title: 'gegen Bremer SG 2', text: '4' }]
+    - [{ url: '?staffel=641&r=2#p2738x2731', title: 'gegen SV Werder Bremen 3', text: '6' }]
+    - [{ url: '?staffel=641&r=3#p2738x2739', title: 'gegen Delmenhorster SK 2', text: '8' }]
+    - 14
+    - 44½
+    - ''
+-
+    - '2.'
+    - { text: 'SG Osnabrück', url: '?mannschaft=2733', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=641&r=4#p2733x2738', title: 'gegen SC Turm Lüneburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=641&r=5#p2733x2734', title: 'gegen SV Hellern', text: 3½ }]
+    - [{ url: '?staffel=641&r=6#p2733x2735', title: 'gegen SK Wildeshausen', text: 4½ }]
+    - [{ url: '?staffel=641&r=2#p2733x2740', title: 'gegen SK Bremen-Nord', text: 4½ }]
+    - [{ url: '?staffel=641&r=3#p2733x2736', title: 'gegen SF Leherheide', text: '5' }]
+    - [{ url: '?staffel=641&r=7#p2733x2732', title: 'gegen SK Union Oldenburg 2', text: 4½ }]
+    - [{ url: '?staffel=641&r=1#p2733x2737', title: 'gegen Bremer SG 2', text: '6' }]
+    - [{ url: '?staffel=641&r=8#p2733x2731', title: 'gegen SV Werder Bremen 3', text: 4½ }]
+    - [{ url: '?staffel=641&r=9#p2733x2739', title: 'gegen Delmenhorster SK 2', text: '8' }]
+    - 14
+    - '44'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Hellern', url: '?mannschaft=2734', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=641&r=8#p2734x2738', title: 'gegen SC Turm Lüneburg', text: '4' }]
+    - [{ url: '?staffel=641&r=5#p2734x2733', title: 'gegen SG Osnabrück', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=641&r=4#p2734x2735', title: 'gegen SK Wildeshausen', text: 3½ }]
+    - [{ url: '?staffel=641&r=9#p2734x2740', title: 'gegen SK Bremen-Nord', text: '4' }]
+    - [{ url: '?staffel=641&r=7#p2734x2736', title: 'gegen SF Leherheide', text: '6' }]
+    - [{ url: '?staffel=641&r=6#p2734x2732', title: 'gegen SK Union Oldenburg 2', text: 6½ }]
+    - [{ url: '?staffel=641&r=3#p2734x2737', title: 'gegen Bremer SG 2', text: '4' }]
+    - [{ url: '?staffel=641&r=1#p2734x2731', title: 'gegen SV Werder Bremen 3', text: 4½ }]
+    - [{ url: '?staffel=641&r=2#p2734x2739', title: 'gegen Delmenhorster SK 2', text: '8' }]
+    - 13
+    - '45'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Wildeshausen', url: '?mannschaft=2735', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=641&r=5#p2735x2738', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=641&r=6#p2735x2733', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=641&r=4#p2735x2734', title: 'gegen SV Hellern', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=641&r=3#p2735x2740', title: 'gegen SK Bremen-Nord', text: '4' }]
+    - [{ url: '?staffel=641&r=1#p2735x2736', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=641&r=2#p2735x2732', title: 'gegen SK Union Oldenburg 2', text: 5½ }]
+    - [{ url: '?staffel=641&r=8#p2735x2737', title: 'gegen Bremer SG 2', text: 4½ }]
+    - [{ url: '?staffel=641&r=9#p2735x2731', title: 'gegen SV Werder Bremen 3', text: '5' }]
+    - [{ url: '?staffel=641&r=7#p2735x2739', title: 'gegen Delmenhorster SK 2', text: '8' }]
+    - 11
+    - 41½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Bremen-Nord', url: '?mannschaft=2740', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=641&r=7#p2740x2738', title: 'gegen SC Turm Lüneburg', text: 4½ }]
+    - [{ url: '?staffel=641&r=2#p2740x2733', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=641&r=9#p2740x2734', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=641&r=3#p2740x2735', title: 'gegen SK Wildeshausen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=641&r=5#p2740x2736', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=641&r=8#p2740x2732', title: 'gegen SK Union Oldenburg 2', text: '3' }]
+    - [{ url: '?staffel=641&r=4#p2740x2737', title: 'gegen Bremer SG 2', text: '5' }]
+    - [{ url: '?staffel=641&r=6#p2740x2731', title: 'gegen SV Werder Bremen 3', text: '7' }]
+    - [{ url: '?staffel=641&r=1#p2740x2739', title: 'gegen Delmenhorster SK 2', text: '8' }]
+    - 10
+    - 42½
+    - ''
+-
+    - '6.'
+    - { text: 'SF Leherheide', url: '?mannschaft=2736', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=641&r=6#p2736x2738', title: 'gegen SC Turm Lüneburg', text: 3½ }]
+    - [{ url: '?staffel=641&r=3#p2736x2733', title: 'gegen SG Osnabrück', text: '3' }]
+    - [{ url: '?staffel=641&r=7#p2736x2734', title: 'gegen SV Hellern', text: '2' }]
+    - [{ url: '?staffel=641&r=1#p2736x2735', title: 'gegen SK Wildeshausen', text: 4½ }]
+    - [{ url: '?staffel=641&r=5#p2736x2740', title: 'gegen SK Bremen-Nord', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=641&r=9#p2736x2732', title: 'gegen SK Union Oldenburg 2', text: 3½ }]
+    - [{ url: '?staffel=641&r=2#p2736x2737', title: 'gegen Bremer SG 2', text: '4' }]
+    - [{ url: '?staffel=641&r=4#p2736x2731', title: 'gegen SV Werder Bremen 3', text: '5' }]
+    - [{ url: '?staffel=641&r=8#p2736x2739', title: 'gegen Delmenhorster SK 2', text: '8' }]
+    - 9
+    - '38'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Union Oldenburg 2', url: '?mannschaft=2732', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=641&r=1#p2732x2738', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=641&r=7#p2732x2733', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=641&r=6#p2732x2734', title: 'gegen SV Hellern', text: 1½ }]
+    - [{ url: '?staffel=641&r=2#p2732x2735', title: 'gegen SK Wildeshausen', text: 2½ }]
+    - [{ url: '?staffel=641&r=8#p2732x2740', title: 'gegen SK Bremen-Nord', text: '5' }]
+    - [{ url: '?staffel=641&r=9#p2732x2736', title: 'gegen SF Leherheide', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=641&r=5#p2732x2737', title: 'gegen Bremer SG 2', text: '4' }]
+    - [{ url: '?staffel=641&r=3#p2732x2731', title: 'gegen SV Werder Bremen 3', text: 3½ }]
+    - [{ url: '?staffel=641&r=4#p2732x2739', title: 'gegen Delmenhorster SK 2', text: '8' }]
+    - 7
+    - 35½
+    - ''
+-
+    - '8.'
+    - { text: 'Bremer SG 2', url: '?mannschaft=2737', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=641&r=9#p2737x2738', title: 'gegen SC Turm Lüneburg', text: '4' }]
+    - [{ url: '?staffel=641&r=1#p2737x2733', title: 'gegen SG Osnabrück', text: '2' }]
+    - [{ url: '?staffel=641&r=3#p2737x2734', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=641&r=8#p2737x2735', title: 'gegen SK Wildeshausen', text: 3½ }]
+    - [{ url: '?staffel=641&r=4#p2737x2740', title: 'gegen SK Bremen-Nord', text: '3' }]
+    - [{ url: '?staffel=641&r=2#p2737x2736', title: 'gegen SF Leherheide', text: '4' }]
+    - [{ url: '?staffel=641&r=5#p2737x2732', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=641&r=7#p2737x2731', title: 'gegen SV Werder Bremen 3', text: '3' }]
+    - [{ url: '?staffel=641&r=6#p2737x2739', title: 'gegen Delmenhorster SK 2', text: '8' }]
+    - 6
+    - 35½
+    - ''
+-
+    - '9.'
+    - { text: 'SV Werder Bremen 3', url: '?mannschaft=2731', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=641&r=2#p2731x2738', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - [{ url: '?staffel=641&r=8#p2731x2733', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=641&r=1#p2731x2734', title: 'gegen SV Hellern', text: 3½ }]
+    - [{ url: '?staffel=641&r=9#p2731x2735', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=641&r=6#p2731x2740', title: 'gegen SK Bremen-Nord', text: '1' }]
+    - [{ url: '?staffel=641&r=4#p2731x2736', title: 'gegen SF Leherheide', text: '3' }]
+    - [{ url: '?staffel=641&r=3#p2731x2732', title: 'gegen SK Union Oldenburg 2', text: 4½ }]
+    - [{ url: '?staffel=641&r=7#p2731x2737', title: 'gegen Bremer SG 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=641&r=5#p2731x2739', title: 'gegen Delmenhorster SK 2', text: '8' }]
+    - 6
+    - 33½
+    - ''
+-
+    - '10.'
+    - { text: 'Delmenhorster SK 2', url: '?mannschaft=2739', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=641&r=3#p2739x2738', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=641&r=9#p2739x2733', title: 'gegen SG Osnabrück', text: '0' }]
+    - [{ url: '?staffel=641&r=2#p2739x2734', title: 'gegen SV Hellern', text: '0' }]
+    - [{ url: '?staffel=641&r=7#p2739x2735', title: 'gegen SK Wildeshausen', text: '0' }]
+    - [{ url: '?staffel=641&r=1#p2739x2740', title: 'gegen SK Bremen-Nord', text: '0' }]
+    - [{ url: '?staffel=641&r=8#p2739x2736', title: 'gegen SF Leherheide', text: '0' }]
+    - [{ url: '?staffel=641&r=4#p2739x2732', title: 'gegen SK Union Oldenburg 2', text: '0' }]
+    - [{ url: '?staffel=641&r=6#p2739x2737', title: 'gegen Bremer SG 2', text: '0' }]
+    - [{ url: '?staffel=641&r=5#p2739x2731', title: 'gegen SV Werder Bremen 3', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

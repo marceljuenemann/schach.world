@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamburger SK', url: '?mannschaft=7936', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1826&r=7#p7936x7939', title: 'gegen Lübecker SV', text: '2' }]
+    - [{ url: '?staffel=1826&r=6#p7936x7938', title: 'gegen SK Doppelbauer Kiel', text: '4' }]
+    - [{ url: '?staffel=1826&r=4#p7936x7937', title: 'gegen Bad Schwartau', text: '5' }]
+    - [{ url: '?staffel=1826&r=5#p7936x7943', title: 'gegen SC Agon Neumünster', text: 3½ }]
+    - [{ url: '?staffel=1826&r=3#p7936x7940', title: 'gegen Johanneum Eppendorf', text: '5' }]
+    - [{ url: '?staffel=1826&r=2#p7936x7941', title: 'gegen SVgg Blankenese', text: '6' }]
+    - [{ url: '?staffel=1826&r=1#p7936x7942', title: 'gegen Raisdorfer SG', text: 3½ }]
+    - 12
+    - '29'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Lübecker SV', url: '?mannschaft=7939', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1826&r=7#p7939x7936', title: 'gegen Hamburger SK', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1826&r=4#p7939x7938', title: 'gegen SK Doppelbauer Kiel', text: '0' }]
+    - [{ url: '?staffel=1826&r=2#p7939x7937', title: 'gegen Bad Schwartau', text: 4½ }]
+    - [{ url: '?staffel=1826&r=3#p7939x7943', title: 'gegen SC Agon Neumünster', text: '5' }]
+    - [{ url: '?staffel=1826&r=1#p7939x7940', title: 'gegen Johanneum Eppendorf', text: 3½ }]
+    - [{ url: '?staffel=1826&r=5#p7939x7941', title: 'gegen SVgg Blankenese', text: '3' }]
+    - [{ url: '?staffel=1826&r=6#p7939x7942', title: 'gegen Raisdorfer SG', text: 5½ }]
+    - 11
+    - 25½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Doppelbauer Kiel', url: '?mannschaft=7938', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1826&r=6#p7938x7936', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=1826&r=4#p7938x7939', title: 'gegen Lübecker SV', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1826&r=1#p7938x7937', title: 'gegen Bad Schwartau', text: 2½ }]
+    - [{ url: '?staffel=1826&r=2#p7938x7943', title: 'gegen SC Agon Neumünster', text: '4' }]
+    - [{ url: '?staffel=1826&r=7#p7938x7940', title: 'gegen Johanneum Eppendorf', text: '4' }]
+    - [{ url: '?staffel=1826&r=3#p7938x7941', title: 'gegen SVgg Blankenese', text: '5' }]
+    - [{ url: '?staffel=1826&r=5#p7938x7942', title: 'gegen Raisdorfer SG', text: 4½ }]
+    - 10
+    - '28'
+    - ''
+-
+    - '4.'
+    - { text: 'Bad Schwartau', url: '?mannschaft=7937', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1826&r=4#p7937x7936', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=1826&r=2#p7937x7939', title: 'gegen Lübecker SV', text: 1½ }]
+    - [{ url: '?staffel=1826&r=1#p7937x7938', title: 'gegen SK Doppelbauer Kiel', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1826&r=7#p7937x7943', title: 'gegen SC Agon Neumünster', text: '3' }]
+    - [{ url: '?staffel=1826&r=5#p7937x7940', title: 'gegen Johanneum Eppendorf', text: 3½ }]
+    - [{ url: '?staffel=1826&r=6#p7937x7941', title: 'gegen SVgg Blankenese', text: '3' }]
+    - [{ url: '?staffel=1826&r=3#p7937x7942', title: 'gegen Raisdorfer SG', text: '5' }]
+    - 8
+    - 20½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Agon Neumünster', url: '?mannschaft=7943', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1826&r=5#p7943x7936', title: 'gegen Hamburger SK', text: 2½ }]
+    - [{ url: '?staffel=1826&r=3#p7943x7939', title: 'gegen Lübecker SV', text: '1' }]
+    - [{ url: '?staffel=1826&r=2#p7943x7938', title: 'gegen SK Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=1826&r=7#p7943x7937', title: 'gegen Bad Schwartau', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1826&r=6#p7943x7940', title: 'gegen Johanneum Eppendorf', text: 5½ }]
+    - [{ url: '?staffel=1826&r=1#p7943x7941', title: 'gegen SVgg Blankenese', text: '6' }]
+    - [{ url: '?staffel=1826&r=4#p7943x7942', title: 'gegen Raisdorfer SG', text: 3½ }]
+    - 7
+    - 23½
+    - ''
+-
+    - '6.'
+    - { text: 'Johanneum Eppendorf', url: '?mannschaft=7940', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1826&r=3#p7940x7936', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=1826&r=1#p7940x7939', title: 'gegen Lübecker SV', text: 2½ }]
+    - [{ url: '?staffel=1826&r=7#p7940x7938', title: 'gegen SK Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=1826&r=5#p7940x7937', title: 'gegen Bad Schwartau', text: 2½ }]
+    - [{ url: '?staffel=1826&r=6#p7940x7943', title: 'gegen SC Agon Neumünster', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1826&r=4#p7940x7941', title: 'gegen SVgg Blankenese', text: 3½ }]
+    - [{ url: '?staffel=1826&r=2#p7940x7942', title: 'gegen Raisdorfer SG', text: 4½ }]
+    - 4
+    - 16½
+    - absteigerRelegation
+-
+    - '7.'
+    - { text: 'SVgg Blankenese', url: '?mannschaft=7941', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1826&r=2#p7941x7936', title: 'gegen Hamburger SK', text: '0' }]
+    - [{ url: '?staffel=1826&r=5#p7941x7939', title: 'gegen Lübecker SV', text: '3' }]
+    - [{ url: '?staffel=1826&r=3#p7941x7938', title: 'gegen SK Doppelbauer Kiel', text: '1' }]
+    - [{ url: '?staffel=1826&r=6#p7941x7937', title: 'gegen Bad Schwartau', text: '3' }]
+    - [{ url: '?staffel=1826&r=1#p7941x7943', title: 'gegen SC Agon Neumünster', text: '0' }]
+    - [{ url: '?staffel=1826&r=4#p7941x7940', title: 'gegen Johanneum Eppendorf', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1826&r=7#p7941x7942', title: 'gegen Raisdorfer SG', text: 4½ }]
+    - 4
+    - '14'
+    - absteiger
+-
+    - '8.'
+    - { text: 'Raisdorfer SG', url: '?mannschaft=7942', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1826&r=1#p7942x7936', title: 'gegen Hamburger SK', text: 2½ }]
+    - [{ url: '?staffel=1826&r=6#p7942x7939', title: 'gegen Lübecker SV', text: ½ }]
+    - [{ url: '?staffel=1826&r=5#p7942x7938', title: 'gegen SK Doppelbauer Kiel', text: 1½ }]
+    - [{ url: '?staffel=1826&r=3#p7942x7937', title: 'gegen Bad Schwartau', text: '1' }]
+    - [{ url: '?staffel=1826&r=4#p7942x7943', title: 'gegen SC Agon Neumünster', text: 2½ }]
+    - [{ url: '?staffel=1826&r=2#p7942x7940', title: 'gegen Johanneum Eppendorf', text: 1½ }]
+    - [{ url: '?staffel=1826&r=7#p7942x7941', title: 'gegen SVgg Blankenese', text: 1½ }]
+    - xxx
+    - 0
+    - '11'
+    - absteiger

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 1919 eV 2', url: '?mannschaft=3892', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=929&r=2#p3892x4062', title: 'gegen SK Münster 32', text: '3' }]
+    - [{ url: '?staffel=929&r=3#p3892x4117', title: 'gegen Dortmunder SV 1875', text: '2' }]
+    - [{ url: '?staffel=929&r=1#p3892x3851', title: 'gegen Walsum SC 72', text: '3' }]
+    - [{ url: '?staffel=929&r=5#p3892x3855', title: 'gegen Delmenhorster SK 2', text: '2' }]
+    - [{ url: '?staffel=929&r=4#p3892x4076', title: 'gegen Turm Krefeld', text: '4' }]
+    - 8
+    - '14'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Münster 32', url: '?mannschaft=4062', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=929&r=2#p4062x3892', title: 'gegen SK Lehrte 1919 eV 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=929&r=1#p4062x4117', title: 'gegen Dortmunder SV 1875', text: 2½ }]
+    - [{ url: '?staffel=929&r=4#p4062x3851', title: 'gegen Walsum SC 72', text: '3' }]
+    - [{ url: '?staffel=929&r=3#p4062x3855', title: 'gegen Delmenhorster SK 2', text: 3½ }]
+    - [{ url: '?staffel=929&r=5#p4062x4076', title: 'gegen Turm Krefeld', text: 2½ }]
+    - 8
+    - 12½
+    - ''
+-
+    - '3.'
+    - { text: 'Dortmunder SV 1875', url: '?mannschaft=4117', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=929&r=3#p4117x3892', title: 'gegen SK Lehrte 1919 eV 2', text: '2' }]
+    - [{ url: '?staffel=929&r=1#p4117x4062', title: 'gegen SK Münster 32', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=929&r=5#p4117x3851', title: 'gegen Walsum SC 72', text: '2' }]
+    - [{ url: '?staffel=929&r=4#p4117x3855', title: 'gegen Delmenhorster SK 2', text: '3' }]
+    - [{ url: '?staffel=929&r=2#p4117x4076', title: 'gegen Turm Krefeld', text: '4' }]
+    - 6
+    - 12½
+    - ''
+-
+    - '4.'
+    - { text: 'Walsum SC 72', url: '?mannschaft=3851', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=929&r=1#p3851x3892', title: 'gegen SK Lehrte 1919 eV 2', text: '1' }]
+    - [{ url: '?staffel=929&r=4#p3851x4062', title: 'gegen SK Münster 32', text: '1' }]
+    - [{ url: '?staffel=929&r=5#p3851x4117', title: 'gegen Dortmunder SV 1875', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=929&r=2#p3851x3855', title: 'gegen Delmenhorster SK 2', text: '3' }]
+    - [{ url: '?staffel=929&r=3#p3851x4076', title: 'gegen Turm Krefeld', text: 2½ }]
+    - 5
+    - 9½
+    - ''
+-
+    - '5.'
+    - { text: 'Delmenhorster SK 2', url: '?mannschaft=3855', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=929&r=5#p3855x3892', title: 'gegen SK Lehrte 1919 eV 2', text: '1' }]
+    - [{ url: '?staffel=929&r=3#p3855x4062', title: 'gegen SK Münster 32', text: ½ }]
+    - [{ url: '?staffel=929&r=4#p3855x4117', title: 'gegen Dortmunder SV 1875', text: '1' }]
+    - [{ url: '?staffel=929&r=2#p3855x3851', title: 'gegen Walsum SC 72', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=929&r=1#p3855x4076', title: 'gegen Turm Krefeld', text: 3½ }]
+    - 2
+    - '7'
+    - absteiger
+-
+    - '6.'
+    - { text: 'Turm Krefeld', url: '?mannschaft=4076', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=929&r=4#p4076x3892', title: 'gegen SK Lehrte 1919 eV 2', text: '0' }]
+    - [{ url: '?staffel=929&r=5#p4076x4062', title: 'gegen SK Münster 32', text: 1½ }]
+    - [{ url: '?staffel=929&r=2#p4076x4117', title: 'gegen Dortmunder SV 1875', text: '0' }]
+    - [{ url: '?staffel=929&r=3#p4076x3851', title: 'gegen Walsum SC 72', text: 1½ }]
+    - [{ url: '?staffel=929&r=1#p4076x3855', title: 'gegen Delmenhorster SK 2', text: ½ }]
+    - xxx
+    - 0
+    - 3½
+    - absteiger

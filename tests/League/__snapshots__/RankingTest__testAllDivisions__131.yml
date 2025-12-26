@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Heiden 62 eV', url: '?mannschaft=1517', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=544&r=4#p1517x1365', title: 'gegen Mülheim Nord 2', text: 3½ }]
+    - [{ url: '?staffel=544&r=2#p1517x1477', title: 'gegen Walsum SC 72', text: 3½ }]
+    - [{ url: '?staffel=544&r=1#p1517x1529', title: 'gegen Nordhorn-Blanke', text: '4' }]
+    - [{ url: '?staffel=544&r=3#p1517x1356', title: 'gegen SK KS Emden', text: '2' }]
+    - [{ url: '?staffel=544&r=5#p1517x1439', title: 'gegen SC WD Borbeck', text: '3' }]
+    - 9
+    - '16'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Mülheim Nord 2', url: '?mannschaft=1365', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=544&r=4#p1365x1517', title: 'gegen SV Heiden 62 eV', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=544&r=5#p1365x1477', title: 'gegen Walsum SC 72', text: 3½ }]
+    - [{ url: '?staffel=544&r=3#p1365x1529', title: 'gegen Nordhorn-Blanke', text: 1½ }]
+    - [{ url: '?staffel=544&r=2#p1365x1356', title: 'gegen SK KS Emden', text: '3' }]
+    - [{ url: '?staffel=544&r=1#p1365x1439', title: 'gegen SC WD Borbeck', text: '3' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '3.'
+    - { text: 'Walsum SC 72', url: '?mannschaft=1477', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=544&r=2#p1477x1517', title: 'gegen SV Heiden 62 eV', text: ½ }]
+    - [{ url: '?staffel=544&r=5#p1477x1365', title: 'gegen Mülheim Nord 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=544&r=4#p1477x1529', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=544&r=1#p1477x1356', title: 'gegen SK KS Emden', text: '4' }]
+    - [{ url: '?staffel=544&r=3#p1477x1439', title: 'gegen SC WD Borbeck', text: 2½ }]
+    - 6
+    - 10½
+    - ''
+-
+    - '4.'
+    - { text: Nordhorn-Blanke, url: '?mannschaft=1529', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=544&r=1#p1529x1517', title: 'gegen SV Heiden 62 eV', text: '0' }]
+    - [{ url: '?staffel=544&r=3#p1529x1365', title: 'gegen Mülheim Nord 2', text: 2½ }]
+    - [{ url: '?staffel=544&r=4#p1529x1477', title: 'gegen Walsum SC 72', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=544&r=5#p1529x1356', title: 'gegen SK KS Emden', text: '2' }]
+    - [{ url: '?staffel=544&r=2#p1529x1439', title: 'gegen SC WD Borbeck', text: 3½ }]
+    - 5
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'SK KS Emden', url: '?mannschaft=1356', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=544&r=3#p1356x1517', title: 'gegen SV Heiden 62 eV', text: '2' }]
+    - [{ url: '?staffel=544&r=2#p1356x1365', title: 'gegen Mülheim Nord 2', text: '1' }]
+    - [{ url: '?staffel=544&r=1#p1356x1477', title: 'gegen Walsum SC 72', text: '0' }]
+    - [{ url: '?staffel=544&r=5#p1356x1529', title: 'gegen Nordhorn-Blanke', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=544&r=4#p1356x1439', title: 'gegen SC WD Borbeck', text: '2' }]
+    - 3
+    - '7'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SC WD Borbeck', url: '?mannschaft=1439', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=544&r=5#p1439x1517', title: 'gegen SV Heiden 62 eV', text: '1' }]
+    - [{ url: '?staffel=544&r=1#p1439x1365', title: 'gegen Mülheim Nord 2', text: '1' }]
+    - [{ url: '?staffel=544&r=3#p1439x1477', title: 'gegen Walsum SC 72', text: 1½ }]
+    - [{ url: '?staffel=544&r=2#p1439x1529', title: 'gegen Nordhorn-Blanke', text: ½ }]
+    - [{ url: '?staffel=544&r=4#p1439x1356', title: 'gegen SK KS Emden', text: '2' }]
+    - xxx
+    - 1
+    - '6'
+    - absteiger

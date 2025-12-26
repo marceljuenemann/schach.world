@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Springe 2', url: '?mannschaft=6192', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1480&r=3#p6192x6195', title: 'gegen SVg Calenberg 2', text: '4' }]
+    - [{ url: '?staffel=1480&r=7#p6192x6276', title: 'gegen SG SF Ricklingen 4', text: '6' }]
+    - [{ url: '?staffel=1480&r=4#p6192x6213', title: 'gegen SK Rinteln 3', text: 5½ }]
+    - 5
+    - 15½
+    - ''
+-
+    - '2.'
+    - { text: 'SG Garbsen/Marienw 2', url: '?mannschaft=6125', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1480&r=4#p6125x6137', title: 'gegen SK Lehrte 6', text: 4½ }]
+    - [{ url: '?staffel=1480&r=7#p6125x6195', title: 'gegen SVg Calenberg 2', text: '4' }]
+    - [{ url: '?staffel=1480&r=2#p6125x6276', title: 'gegen SG SF Ricklingen 4', text: 4½ }]
+    - {  }
+    - 5
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte 6', url: '?mannschaft=6137', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1480&r=4#p6137x6125', title: 'gegen SG Garbsen/Marienw 2', text: 3½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1480&r=5#p6137x6276', title: 'gegen SG SF Ricklingen 4', text: '6' }]
+    - [{ url: '?staffel=1480&r=7#p6137x6213', title: 'gegen SK Rinteln 3', text: '7' }]
+    - 4
+    - 16½
+    - ''
+-
+    - '4.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=6195', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1480&r=3#p6195x6192', title: 'gegen SV Springe 2', text: '4' }]
+    - [{ url: '?staffel=1480&r=7#p6195x6125', title: 'gegen SG Garbsen/Marienw 2', text: '4' }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1480&r=2#p6195x6213', title: 'gegen SK Rinteln 3', text: 4½ }]
+    - 4
+    - 12½
+    - ''
+-
+    - '5.'
+    - { text: 'SG SF Ricklingen 4', url: '?mannschaft=6276', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1480&r=7#p6276x6192', title: 'gegen SV Springe 2', text: '2' }]
+    - [{ url: '?staffel=1480&r=2#p6276x6125', title: 'gegen SG Garbsen/Marienw 2', text: 3½ }]
+    - [{ url: '?staffel=1480&r=5#p6276x6137', title: 'gegen SK Lehrte 6', text: '2' }]
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - 7½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Rinteln 3', url: '?mannschaft=6213', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1480&r=4#p6213x6192', title: 'gegen SV Springe 2', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1480&r=7#p6213x6137', title: 'gegen SK Lehrte 6', text: '1' }]
+    - [{ url: '?staffel=1480&r=2#p6213x6195', title: 'gegen SVg Calenberg 2', text: 3½ }]
+    - {  }
+    - xxx
+    - 0
+    - '7'
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Löberitz', url: '?mannschaft=2899', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=718&r=5#p2899x2867', title: 'gegen USV Potsdam', text: '3' }]
+    - [{ url: '?staffel=718&r=2#p2899x2886', title: 'gegen SV Merseburg', text: 2½ }]
+    - [{ url: '?staffel=718&r=1#p2899x3091', title: 'gegen USC Magdeburg', text: '2' }]
+    - [{ url: '?staffel=718&r=4#p2899x2868', title: 'gegen SV 1919 Grimma', text: '3' }]
+    - [{ url: '?staffel=718&r=3#p2899x3088', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - 9
+    - '13'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'USV Potsdam', url: '?mannschaft=2867', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=718&r=5#p2867x2899', title: 'gegen SG Löberitz', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=718&r=3#p2867x2886', title: 'gegen SV Merseburg', text: 3½ }]
+    - [{ url: '?staffel=718&r=2#p2867x3091', title: 'gegen USC Magdeburg', text: '3' }]
+    - [{ url: '?staffel=718&r=1#p2867x2868', title: 'gegen SV 1919 Grimma', text: 2½ }]
+    - [{ url: '?staffel=718&r=4#p2867x3088', title: 'gegen SG Leipzig 2', text: '4' }]
+    - 8
+    - '14'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Merseburg', url: '?mannschaft=2886', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=718&r=2#p2886x2899', title: 'gegen SG Löberitz', text: 1½ }]
+    - [{ url: '?staffel=718&r=3#p2886x2867', title: 'gegen USV Potsdam', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=718&r=4#p2886x3091', title: 'gegen USC Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=718&r=5#p2886x2868', title: 'gegen SV 1919 Grimma', text: '3' }]
+    - [{ url: '?staffel=718&r=1#p2886x3088', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'USC Magdeburg', url: '?mannschaft=3091', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=718&r=1#p3091x2899', title: 'gegen SG Löberitz', text: '2' }]
+    - [{ url: '?staffel=718&r=2#p3091x2867', title: 'gegen USV Potsdam', text: '1' }]
+    - [{ url: '?staffel=718&r=4#p3091x2886', title: 'gegen SV Merseburg', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=718&r=3#p3091x2868', title: 'gegen SV 1919 Grimma', text: '3' }]
+    - [{ url: '?staffel=718&r=5#p3091x3088', title: 'gegen SG Leipzig 2', text: 1½ }]
+    - 3
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'SV 1919 Grimma', url: '?mannschaft=2868', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=718&r=4#p2868x2899', title: 'gegen SG Löberitz', text: '1' }]
+    - [{ url: '?staffel=718&r=1#p2868x2867', title: 'gegen USV Potsdam', text: 1½ }]
+    - [{ url: '?staffel=718&r=5#p2868x2886', title: 'gegen SV Merseburg', text: '1' }]
+    - [{ url: '?staffel=718&r=3#p2868x3091', title: 'gegen USC Magdeburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=718&r=2#p2868x3088', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - 2
+    - '7'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SG Leipzig 2', url: '?mannschaft=3088', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=718&r=3#p3088x2899', title: 'gegen SG Löberitz', text: 1½ }]
+    - [{ url: '?staffel=718&r=4#p3088x2867', title: 'gegen USV Potsdam', text: '0' }]
+    - [{ url: '?staffel=718&r=1#p3088x2886', title: 'gegen SV Merseburg', text: 1½ }]
+    - [{ url: '?staffel=718&r=5#p3088x3091', title: 'gegen USC Magdeburg', text: 2½ }]
+    - [{ url: '?staffel=718&r=2#p3088x2868', title: 'gegen SV 1919 Grimma', text: 1½ }]
+    - xxx
+    - 2
+    - '7'
+    - absteiger

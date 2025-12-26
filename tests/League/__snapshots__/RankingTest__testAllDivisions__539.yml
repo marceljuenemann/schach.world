@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Bavaria Rgbg', url: '?mannschaft=5025', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1022&r=5#p5025x5099', title: 'gegen FC Bayern München 2', text: 2½ }]
+    - [{ url: '?staffel=1022&r=2#p5025x5143', title: 'gegen SK Neuperlach', text: '3' }]
+    - [{ url: '?staffel=1022&r=4#p5025x5319', title: 'gegen TSV Forstenried 2', text: '4' }]
+    - [{ url: '?staffel=1022&r=3#p5025x5100', title: 'gegen FC Bayern München 3', text: '3' }]
+    - {  }
+    - 8
+    - 12½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'FC Bayern München 2', url: '?mannschaft=5099', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1022&r=5#p5099x5025', title: 'gegen SC Bavaria Rgbg', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1022&r=6#p5099x5143', title: 'gegen SK Neuperlach', text: 2½ }]
+    - [{ url: '?staffel=1022&r=3#p5099x5319', title: 'gegen TSV Forstenried 2', text: 3½ }]
+    - [{ url: '?staffel=1022&r=2#p5099x5100', title: 'gegen FC Bayern München 3', text: '4' }]
+    - {  }
+    - 6
+    - 11½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Neuperlach', url: '?mannschaft=5143', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1022&r=2#p5143x5025', title: 'gegen SC Bavaria Rgbg', text: '1' }]
+    - [{ url: '?staffel=1022&r=6#p5143x5099', title: 'gegen FC Bayern München 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1022&r=5#p5143x5319', title: 'gegen TSV Forstenried 2', text: '3' }]
+    - [{ url: '?staffel=1022&r=4#p5143x5100', title: 'gegen FC Bayern München 3', text: 3½ }]
+    - {  }
+    - 4
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'TSV Forstenried 2', url: '?mannschaft=5319', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1022&r=4#p5319x5025', title: 'gegen SC Bavaria Rgbg', text: '0' }]
+    - [{ url: '?staffel=1022&r=3#p5319x5099', title: 'gegen FC Bayern München 2', text: ½ }]
+    - [{ url: '?staffel=1022&r=5#p5319x5143', title: 'gegen SK Neuperlach', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1022&r=6#p5319x5100', title: 'gegen FC Bayern München 3', text: 3½ }]
+    - {  }
+    - 2
+    - '5'
+    - ''
+-
+    - '5.'
+    - { text: 'FC Bayern München 3', url: '?mannschaft=5100', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1022&r=3#p5100x5025', title: 'gegen SC Bavaria Rgbg', text: '1' }]
+    - [{ url: '?staffel=1022&r=2#p5100x5099', title: 'gegen FC Bayern München 2', text: '0' }]
+    - [{ url: '?staffel=1022&r=4#p5100x5143', title: 'gegen SK Neuperlach', text: ½ }]
+    - [{ url: '?staffel=1022&r=6#p5100x5319', title: 'gegen TSV Forstenried 2', text: ½ }]
+    - xxx
+    - {  }
+    - 0
+    - '2'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Neuperlach', url: '?mannschaft=5797', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - absteiger

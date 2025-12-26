@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Osnabrück v. 1919 2', url: '?mannschaft=8201', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=3#p8201x8337', title: 'gegen SK Jever', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1861&r=1#p8201x8254', title: 'gegen SV Kaponier Vechta', text: '5' }]
+    - [{ url: '?staffel=1861&r=2#p8201x8334', title: 'gegen SK Nordhorn-Blanke 3', text: '5' }]
+    - {  }
+    - {  }
+    - 6
+    - 14½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Lingen', url: '?mannschaft=8355', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=2#p8355x8337', title: 'gegen SK Jever', text: '5' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=1#p8355x8334', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - [{ url: '?staffel=1861&r=3#p8355x8347', title: 'gegen SF Spelle', text: '5' }]
+    - {  }
+    - 5
+    - '14'
+    - ''
+-
+    - '3.'
+    - { text: 'KS Emden', url: '?mannschaft=8256', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1861&r=1#p8256x8313', title: 'gegen SK Union Oldenburg 2', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1861&r=3#p8256x8327', title: 'gegen SV Hellern 2', text: 5½ }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=2#p8256x8315', title: 'gegen SF Quakenbrück', text: '6' }]
+    - 4
+    - '14'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Union Oldenburg 2', url: '?mannschaft=8313', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=1#p8313x8256', title: 'gegen KS Emden', text: 5½ }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=3#p8313x8334', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - [{ url: '?staffel=1861&r=2#p8313x8347', title: 'gegen SF Spelle', text: 2½ }]
+    - {  }
+    - 3
+    - '12'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Jever', url: '?mannschaft=8337', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1861&r=3#p8337x8201', title: 'gegen SV Osnabrück v. 1919 2', text: 3½ }]
+    - [{ url: '?staffel=1861&r=2#p8337x8355', title: 'gegen SV Lingen', text: '3' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=1#p8337x8347', title: 'gegen SF Spelle', text: 6½ }]
+    - {  }
+    - 2
+    - '13'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Hellern 2', url: '?mannschaft=8327', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=3#p8327x8256', title: 'gegen KS Emden', text: 2½ }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1861&r=2#p8327x8254', title: 'gegen SV Kaponier Vechta', text: 3½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=1#p8327x8315', title: 'gegen SF Quakenbrück', text: '6' }]
+    - 2
+    - '12'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Kaponier Vechta', url: '?mannschaft=8254', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1861&r=1#p8254x8201', title: 'gegen SV Osnabrück v. 1919 2', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=2#p8254x8327', title: 'gegen SV Hellern 2', text: 4½ }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=3#p8254x8315', title: 'gegen SF Quakenbrück', text: 3½ }]
+    - 2
+    - '11'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Nordhorn-Blanke 3', url: '?mannschaft=8334', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1861&r=2#p8334x8201', title: 'gegen SV Osnabrück v. 1919 2', text: '3' }]
+    - [{ url: '?staffel=1861&r=1#p8334x8355', title: 'gegen SV Lingen', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1861&r=3#p8334x8313', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - '11'
+    - ''
+-
+    - '9.'
+    - { text: 'SF Spelle', url: '?mannschaft=8347', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1861&r=3#p8347x8355', title: 'gegen SV Lingen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1861&r=2#p8347x8313', title: 'gegen SK Union Oldenburg 2', text: 5½ }]
+    - [{ url: '?staffel=1861&r=1#p8347x8337', title: 'gegen SK Jever', text: 1½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 2
+    - '10'
+    - absteiger
+-
+    - '10.'
+    - { text: 'SF Quakenbrück', url: '?mannschaft=8315', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=2#p8315x8256', title: 'gegen KS Emden', text: '2' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=1#p8315x8327', title: 'gegen SV Hellern 2', text: '2' }]
+    - [{ url: '?staffel=1861&r=3#p8315x8254', title: 'gegen SV Kaponier Vechta', text: 4½ }]
+    - {  }
+    - {  }
+    - xxx
+    - 2
+    - 8½
+    - absteiger

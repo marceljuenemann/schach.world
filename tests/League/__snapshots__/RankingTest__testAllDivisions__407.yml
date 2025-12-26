@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Werder Bremen 3', url: '?mannschaft=4237', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=862&r=9#p4237x4242', title: 'gegen Post SV Uelzen', text: 5½ }]
+    - [{ url: '?staffel=862&r=5#p4237x4236', title: 'gegen SK Wildeshausen', text: 4½ }]
+    - [{ url: '?staffel=862&r=7#p4237x4243', title: 'gegen SC Turm Lüneburg', text: 3½ }]
+    - [{ url: '?staffel=862&r=8#p4237x4235', title: 'gegen SG Osnabrück', text: '5' }]
+    - [{ url: '?staffel=862&r=4#p4237x4238', title: 'gegen SV Hellern 2', text: '6' }]
+    - [{ url: '?staffel=862&r=3#p4237x4241', title: 'gegen Hagener SV', text: 5½ }]
+    - [{ url: '?staffel=862&r=1#p4237x4240', title: 'gegen SV Lingen', text: 4½ }]
+    - [{ url: '?staffel=862&r=2#p4237x4239', title: 'gegen SK Union Oldenburg 2', text: 5½ }]
+    - [{ url: '?staffel=862&r=6#p4237x4234', title: 'gegen Delmenhorster SK 2', text: '6' }]
+    - 16
+    - '46'
+    - ''
+-
+    - '2.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=4242', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=862&r=9#p4242x4237', title: 'gegen Werder Bremen 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=862&r=4#p4242x4236', title: 'gegen SK Wildeshausen', text: 2½ }]
+    - [{ url: '?staffel=862&r=6#p4242x4243', title: 'gegen SC Turm Lüneburg', text: 6½ }]
+    - [{ url: '?staffel=862&r=5#p4242x4235', title: 'gegen SG Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=862&r=2#p4242x4238', title: 'gegen SV Hellern 2', text: '5' }]
+    - [{ url: '?staffel=862&r=7#p4242x4241', title: 'gegen Hagener SV', text: 4½ }]
+    - [{ url: '?staffel=862&r=8#p4242x4240', title: 'gegen SV Lingen', text: 5½ }]
+    - [{ url: '?staffel=862&r=1#p4242x4239', title: 'gegen SK Union Oldenburg 2', text: '7' }]
+    - [{ url: '?staffel=862&r=3#p4242x4234', title: 'gegen Delmenhorster SK 2', text: '6' }]
+    - 14
+    - '44'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Wildeshausen', url: '?mannschaft=4236', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=862&r=5#p4236x4237', title: 'gegen Werder Bremen 3', text: 3½ }]
+    - [{ url: '?staffel=862&r=4#p4236x4242', title: 'gegen Post SV Uelzen', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=862&r=8#p4236x4243', title: 'gegen SC Turm Lüneburg', text: 4½ }]
+    - [{ url: '?staffel=862&r=9#p4236x4235', title: 'gegen SG Osnabrück', text: '3' }]
+    - [{ url: '?staffel=862&r=6#p4236x4238', title: 'gegen SV Hellern 2', text: '5' }]
+    - [{ url: '?staffel=862&r=1#p4236x4241', title: 'gegen Hagener SV', text: '5' }]
+    - [{ url: '?staffel=862&r=2#p4236x4240', title: 'gegen SV Lingen', text: 5½ }]
+    - [{ url: '?staffel=862&r=3#p4236x4239', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - [{ url: '?staffel=862&r=7#p4236x4234', title: 'gegen Delmenhorster SK 2', text: 4½ }]
+    - 13
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=4243', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=862&r=7#p4243x4237', title: 'gegen Werder Bremen 3', text: 4½ }]
+    - [{ url: '?staffel=862&r=6#p4243x4242', title: 'gegen Post SV Uelzen', text: 1½ }]
+    - [{ url: '?staffel=862&r=8#p4243x4236', title: 'gegen SK Wildeshausen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=862&r=3#p4243x4235', title: 'gegen SG Osnabrück', text: '5' }]
+    - [{ url: '?staffel=862&r=1#p4243x4238', title: 'gegen SV Hellern 2', text: 5½ }]
+    - [{ url: '?staffel=862&r=4#p4243x4241', title: 'gegen Hagener SV', text: 4½ }]
+    - [{ url: '?staffel=862&r=9#p4243x4240', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=862&r=5#p4243x4239', title: 'gegen SK Union Oldenburg 2', text: '6' }]
+    - [{ url: '?staffel=862&r=2#p4243x4234', title: 'gegen Delmenhorster SK 2', text: 5½ }]
+    - 12
+    - '39'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Osnabrück', url: '?mannschaft=4235', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=862&r=8#p4235x4237', title: 'gegen Werder Bremen 3', text: '3' }]
+    - [{ url: '?staffel=862&r=5#p4235x4242', title: 'gegen Post SV Uelzen', text: 3½ }]
+    - [{ url: '?staffel=862&r=9#p4235x4236', title: 'gegen SK Wildeshausen', text: '5' }]
+    - [{ url: '?staffel=862&r=3#p4235x4243', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=862&r=7#p4235x4238', title: 'gegen SV Hellern 2', text: 5½ }]
+    - [{ url: '?staffel=862&r=2#p4235x4241', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=862&r=4#p4235x4240', title: 'gegen SV Lingen', text: 5½ }]
+    - [{ url: '?staffel=862&r=6#p4235x4239', title: 'gegen SK Union Oldenburg 2', text: 7½ }]
+    - [{ url: '?staffel=862&r=1#p4235x4234', title: 'gegen Delmenhorster SK 2', text: '5' }]
+    - 10
+    - '41'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Hellern 2', url: '?mannschaft=4238', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=862&r=4#p4238x4237', title: 'gegen Werder Bremen 3', text: '2' }]
+    - [{ url: '?staffel=862&r=2#p4238x4242', title: 'gegen Post SV Uelzen', text: '3' }]
+    - [{ url: '?staffel=862&r=6#p4238x4236', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=862&r=1#p4238x4243', title: 'gegen SC Turm Lüneburg', text: 2½ }]
+    - [{ url: '?staffel=862&r=7#p4238x4235', title: 'gegen SG Osnabrück', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=862&r=5#p4238x4241', title: 'gegen Hagener SV', text: '4' }]
+    - [{ url: '?staffel=862&r=3#p4238x4240', title: 'gegen SV Lingen', text: 4½ }]
+    - [{ url: '?staffel=862&r=9#p4238x4239', title: 'gegen SK Union Oldenburg 2', text: '6' }]
+    - [{ url: '?staffel=862&r=8#p4238x4234', title: 'gegen Delmenhorster SK 2', text: 4½ }]
+    - 7
+    - '32'
+    - ''
+-
+    - '7.'
+    - { text: 'Hagener SV', url: '?mannschaft=4241', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=862&r=3#p4241x4237', title: 'gegen Werder Bremen 3', text: 2½ }]
+    - [{ url: '?staffel=862&r=7#p4241x4242', title: 'gegen Post SV Uelzen', text: 3½ }]
+    - [{ url: '?staffel=862&r=1#p4241x4236', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=862&r=4#p4241x4243', title: 'gegen SC Turm Lüneburg', text: 3½ }]
+    - [{ url: '?staffel=862&r=2#p4241x4235', title: 'gegen SG Osnabrück', text: '5' }]
+    - [{ url: '?staffel=862&r=5#p4241x4238', title: 'gegen SV Hellern 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=862&r=6#p4241x4240', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=862&r=8#p4241x4239', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - [{ url: '?staffel=862&r=9#p4241x4234', title: 'gegen Delmenhorster SK 2', text: 5½ }]
+    - 6
+    - '34'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Lingen', url: '?mannschaft=4240', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=862&r=1#p4240x4237', title: 'gegen Werder Bremen 3', text: 3½ }]
+    - [{ url: '?staffel=862&r=8#p4240x4242', title: 'gegen Post SV Uelzen', text: 2½ }]
+    - [{ url: '?staffel=862&r=2#p4240x4236', title: 'gegen SK Wildeshausen', text: 2½ }]
+    - [{ url: '?staffel=862&r=9#p4240x4243', title: 'gegen SC Turm Lüneburg', text: '5' }]
+    - [{ url: '?staffel=862&r=4#p4240x4235', title: 'gegen SG Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=862&r=3#p4240x4238', title: 'gegen SV Hellern 2', text: 3½ }]
+    - [{ url: '?staffel=862&r=6#p4240x4241', title: 'gegen Hagener SV', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=862&r=7#p4240x4239', title: 'gegen SK Union Oldenburg 2', text: 3½ }]
+    - [{ url: '?staffel=862&r=5#p4240x4234', title: 'gegen Delmenhorster SK 2', text: '5' }]
+    - 6
+    - '33'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Union Oldenburg 2', url: '?mannschaft=4239', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=862&r=2#p4239x4237', title: 'gegen Werder Bremen 3', text: 2½ }]
+    - [{ url: '?staffel=862&r=1#p4239x4242', title: 'gegen Post SV Uelzen', text: '1' }]
+    - [{ url: '?staffel=862&r=3#p4239x4236', title: 'gegen SK Wildeshausen', text: '4' }]
+    - [{ url: '?staffel=862&r=5#p4239x4243', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - [{ url: '?staffel=862&r=6#p4239x4235', title: 'gegen SG Osnabrück', text: ½ }]
+    - [{ url: '?staffel=862&r=9#p4239x4238', title: 'gegen SV Hellern 2', text: '2' }]
+    - [{ url: '?staffel=862&r=8#p4239x4241', title: 'gegen Hagener SV', text: '4' }]
+    - [{ url: '?staffel=862&r=7#p4239x4240', title: 'gegen SV Lingen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=862&r=4#p4239x4234', title: 'gegen Delmenhorster SK 2', text: '3' }]
+    - 4
+    - 23½
+    - ''
+-
+    - '10.'
+    - { text: 'Delmenhorster SK 2', url: '?mannschaft=4234', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=862&r=6#p4234x4237', title: 'gegen Werder Bremen 3', text: '2' }]
+    - [{ url: '?staffel=862&r=3#p4234x4242', title: 'gegen Post SV Uelzen', text: '2' }]
+    - [{ url: '?staffel=862&r=7#p4234x4236', title: 'gegen SK Wildeshausen', text: 3½ }]
+    - [{ url: '?staffel=862&r=2#p4234x4243', title: 'gegen SC Turm Lüneburg', text: 2½ }]
+    - [{ url: '?staffel=862&r=1#p4234x4235', title: 'gegen SG Osnabrück', text: '3' }]
+    - [{ url: '?staffel=862&r=8#p4234x4238', title: 'gegen SV Hellern 2', text: 3½ }]
+    - [{ url: '?staffel=862&r=9#p4234x4241', title: 'gegen Hagener SV', text: 2½ }]
+    - [{ url: '?staffel=862&r=5#p4234x4240', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=862&r=4#p4234x4239', title: 'gegen SK Union Oldenburg 2', text: '5' }]
+    - xxx
+    - 2
+    - '27'
+    - ''

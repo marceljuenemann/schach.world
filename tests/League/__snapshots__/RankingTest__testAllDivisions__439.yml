@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamelner SV 3', url: '?mannschaft=3911', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=903&r=1#p3911x3879', title: 'gegen Hildesheimer SV 2', text: 4½ }]
+    - [{ url: '?staffel=903&r=7#p3911x3904', title: 'gegen Osterode-Südharz', text: '6' }]
+    - [{ url: '?staffel=903&r=9#p3911x3915', title: 'gegen SC SW Northeim', text: 7½ }]
+    - [{ url: '?staffel=903&r=5#p3911x3838', title: 'gegen SG Holzminden', text: 5½ }]
+    - [{ url: '?staffel=903&r=6#p3911x3907', title: 'gegen SK Gronau', text: '4' }]
+    - [{ url: '?staffel=903&r=8#p3911x3873', title: 'gegen SV GW Parensen', text: '8' }]
+    - [{ url: '?staffel=903&r=3#p3911x3900', title: 'gegen Bad Lauterberg', text: 4½ }]
+    - [{ url: '?staffel=903&r=2#p3911x3916', title: 'gegen SC SW Northeim 2', text: 6½ }]
+    - [{ url: '?staffel=903&r=4#p3911x3840', title: 'gegen KSV Rochade GÖ', text: '8' }]
+    - 17
+    - 54½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=3879', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=903&r=1#p3879x3911', title: 'gegen Hamelner SV 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=903&r=8#p3879x3904', title: 'gegen Osterode-Südharz', text: 2½ }]
+    - [{ url: '?staffel=903&r=2#p3879x3915', title: 'gegen SC SW Northeim', text: '5' }]
+    - [{ url: '?staffel=903&r=7#p3879x3838', title: 'gegen SG Holzminden', text: 5½ }]
+    - [{ url: '?staffel=903&r=5#p3879x3907', title: 'gegen SK Gronau', text: '4' }]
+    - [{ url: '?staffel=903&r=4#p3879x3873', title: 'gegen SV GW Parensen', text: 6½ }]
+    - [{ url: '?staffel=903&r=9#p3879x3900', title: 'gegen Bad Lauterberg', text: 4½ }]
+    - [{ url: '?staffel=903&r=6#p3879x3916', title: 'gegen SC SW Northeim 2', text: 5½ }]
+    - [{ url: '?staffel=903&r=3#p3879x3840', title: 'gegen KSV Rochade GÖ', text: '8' }]
+    - 13
+    - '45'
+    - ''
+-
+    - '3.'
+    - { text: Osterode-Südharz, url: '?mannschaft=3904', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=903&r=7#p3904x3911', title: 'gegen Hamelner SV 3', text: '2' }]
+    - [{ url: '?staffel=903&r=8#p3904x3879', title: 'gegen Hildesheimer SV 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=903&r=5#p3904x3915', title: 'gegen SC SW Northeim', text: '3' }]
+    - [{ url: '?staffel=903&r=2#p3904x3838', title: 'gegen SG Holzminden', text: '5' }]
+    - [{ url: '?staffel=903&r=4#p3904x3907', title: 'gegen SK Gronau', text: '4' }]
+    - [{ url: '?staffel=903&r=3#p3904x3873', title: 'gegen SV GW Parensen', text: '5' }]
+    - [{ url: '?staffel=903&r=6#p3904x3900', title: 'gegen Bad Lauterberg', text: 5½ }]
+    - [{ url: '?staffel=903&r=9#p3904x3916', title: 'gegen SC SW Northeim 2', text: '7' }]
+    - [{ url: '?staffel=903&r=1#p3904x3840', title: 'gegen KSV Rochade GÖ', text: '8' }]
+    - 13
+    - '44'
+    - ''
+-
+    - '4.'
+    - { text: 'SC SW Northeim', url: '?mannschaft=3915', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=903&r=9#p3915x3911', title: 'gegen Hamelner SV 3', text: ½ }]
+    - [{ url: '?staffel=903&r=2#p3915x3879', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - [{ url: '?staffel=903&r=5#p3915x3904', title: 'gegen Osterode-Südharz', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=903&r=3#p3915x3838', title: 'gegen SG Holzminden', text: 3½ }]
+    - [{ url: '?staffel=903&r=8#p3915x3907', title: 'gegen SK Gronau', text: 6½ }]
+    - [{ url: '?staffel=903&r=6#p3915x3873', title: 'gegen SV GW Parensen', text: 5½ }]
+    - [{ url: '?staffel=903&r=4#p3915x3900', title: 'gegen Bad Lauterberg', text: 5½ }]
+    - [{ url: '?staffel=903&r=1#p3915x3916', title: 'gegen SC SW Northeim 2', text: '6' }]
+    - [{ url: '?staffel=903&r=7#p3915x3840', title: 'gegen KSV Rochade GÖ', text: '8' }]
+    - 12
+    - 43½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Holzminden', url: '?mannschaft=3838', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=903&r=5#p3838x3911', title: 'gegen Hamelner SV 3', text: 2½ }]
+    - [{ url: '?staffel=903&r=7#p3838x3879', title: 'gegen Hildesheimer SV 2', text: 2½ }]
+    - [{ url: '?staffel=903&r=2#p3838x3904', title: 'gegen Osterode-Südharz', text: '3' }]
+    - [{ url: '?staffel=903&r=3#p3838x3915', title: 'gegen SC SW Northeim', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=903&r=9#p3838x3907', title: 'gegen SK Gronau', text: '4' }]
+    - [{ url: '?staffel=903&r=1#p3838x3873', title: 'gegen SV GW Parensen', text: 4½ }]
+    - [{ url: '?staffel=903&r=8#p3838x3900', title: 'gegen Bad Lauterberg', text: '5' }]
+    - [{ url: '?staffel=903&r=4#p3838x3916', title: 'gegen SC SW Northeim 2', text: 6½ }]
+    - [{ url: '?staffel=903&r=6#p3838x3840', title: 'gegen KSV Rochade GÖ', text: '8' }]
+    - 11
+    - 40½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Gronau', url: '?mannschaft=3907', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=903&r=6#p3907x3911', title: 'gegen Hamelner SV 3', text: '4' }]
+    - [{ url: '?staffel=903&r=5#p3907x3879', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=903&r=4#p3907x3904', title: 'gegen Osterode-Südharz', text: '4' }]
+    - [{ url: '?staffel=903&r=8#p3907x3915', title: 'gegen SC SW Northeim', text: 1½ }]
+    - [{ url: '?staffel=903&r=9#p3907x3838', title: 'gegen SG Holzminden', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=903&r=7#p3907x3873', title: 'gegen SV GW Parensen', text: 3½ }]
+    - [{ url: '?staffel=903&r=1#p3907x3900', title: 'gegen Bad Lauterberg', text: '3' }]
+    - [{ url: '?staffel=903&r=3#p3907x3916', title: 'gegen SC SW Northeim 2', text: '5' }]
+    - [{ url: '?staffel=903&r=2#p3907x3840', title: 'gegen KSV Rochade GÖ', text: '8' }]
+    - 8
+    - '37'
+    - ''
+-
+    - '7.'
+    - { text: 'SV GW Parensen', url: '?mannschaft=3873', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=903&r=8#p3873x3911', title: 'gegen Hamelner SV 3', text: '0' }]
+    - [{ url: '?staffel=903&r=4#p3873x3879', title: 'gegen Hildesheimer SV 2', text: 1½ }]
+    - [{ url: '?staffel=903&r=3#p3873x3904', title: 'gegen Osterode-Südharz', text: '3' }]
+    - [{ url: '?staffel=903&r=6#p3873x3915', title: 'gegen SC SW Northeim', text: 2½ }]
+    - [{ url: '?staffel=903&r=1#p3873x3838', title: 'gegen SG Holzminden', text: 3½ }]
+    - [{ url: '?staffel=903&r=7#p3873x3907', title: 'gegen SK Gronau', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=903&r=2#p3873x3900', title: 'gegen Bad Lauterberg', text: 4½ }]
+    - [{ url: '?staffel=903&r=5#p3873x3916', title: 'gegen SC SW Northeim 2', text: 4½ }]
+    - [{ url: '?staffel=903&r=9#p3873x3840', title: 'gegen KSV Rochade GÖ', text: '8' }]
+    - 8
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'Bad Lauterberg', url: '?mannschaft=3900', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=903&r=3#p3900x3911', title: 'gegen Hamelner SV 3', text: 3½ }]
+    - [{ url: '?staffel=903&r=9#p3900x3879', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - [{ url: '?staffel=903&r=6#p3900x3904', title: 'gegen Osterode-Südharz', text: 2½ }]
+    - [{ url: '?staffel=903&r=4#p3900x3915', title: 'gegen SC SW Northeim', text: 2½ }]
+    - [{ url: '?staffel=903&r=8#p3900x3838', title: 'gegen SG Holzminden', text: '3' }]
+    - [{ url: '?staffel=903&r=1#p3900x3907', title: 'gegen SK Gronau', text: '5' }]
+    - [{ url: '?staffel=903&r=2#p3900x3873', title: 'gegen SV GW Parensen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=903&r=7#p3900x3916', title: 'gegen SC SW Northeim 2', text: 3½ }]
+    - [{ url: '?staffel=903&r=5#p3900x3840', title: 'gegen KSV Rochade GÖ', text: '8' }]
+    - 4
+    - '35'
+    - ''
+-
+    - '9.'
+    - { text: 'SC SW Northeim 2', url: '?mannschaft=3916', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=903&r=2#p3916x3911', title: 'gegen Hamelner SV 3', text: 1½ }]
+    - [{ url: '?staffel=903&r=6#p3916x3879', title: 'gegen Hildesheimer SV 2', text: 2½ }]
+    - [{ url: '?staffel=903&r=9#p3916x3904', title: 'gegen Osterode-Südharz', text: '1' }]
+    - [{ url: '?staffel=903&r=1#p3916x3915', title: 'gegen SC SW Northeim', text: '2' }]
+    - [{ url: '?staffel=903&r=4#p3916x3838', title: 'gegen SG Holzminden', text: 1½ }]
+    - [{ url: '?staffel=903&r=3#p3916x3907', title: 'gegen SK Gronau', text: '3' }]
+    - [{ url: '?staffel=903&r=5#p3916x3873', title: 'gegen SV GW Parensen', text: 3½ }]
+    - [{ url: '?staffel=903&r=7#p3916x3900', title: 'gegen Bad Lauterberg', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=903&r=8#p3916x3840', title: 'gegen KSV Rochade GÖ', text: '8' }]
+    - 4
+    - 27½
+    - absteiger
+-
+    - '10.'
+    - { text: 'KSV Rochade GÖ', url: '?mannschaft=3840', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=903&r=4#p3840x3911', title: 'gegen Hamelner SV 3', text: '0' }]
+    - [{ url: '?staffel=903&r=3#p3840x3879', title: 'gegen Hildesheimer SV 2', text: '0' }]
+    - [{ url: '?staffel=903&r=1#p3840x3904', title: 'gegen Osterode-Südharz', text: '0' }]
+    - [{ url: '?staffel=903&r=7#p3840x3915', title: 'gegen SC SW Northeim', text: '0' }]
+    - [{ url: '?staffel=903&r=6#p3840x3838', title: 'gegen SG Holzminden', text: '0' }]
+    - [{ url: '?staffel=903&r=2#p3840x3907', title: 'gegen SK Gronau', text: '0' }]
+    - [{ url: '?staffel=903&r=9#p3840x3873', title: 'gegen SV GW Parensen', text: '0' }]
+    - [{ url: '?staffel=903&r=5#p3840x3900', title: 'gegen Bad Lauterberg', text: '0' }]
+    - [{ url: '?staffel=903&r=8#p3840x3916', title: 'gegen SC SW Northeim 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

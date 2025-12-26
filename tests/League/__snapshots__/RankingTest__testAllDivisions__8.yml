@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Wilhelmshav. SF', url: '?mannschaft=437', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=404&r=7#p437x434', title: 'gegen SC Melle', text: 4½ }]
+    - [{ url: '?staffel=404&r=5#p437x431', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=404&r=2#p437x435', title: 'gegen SG Oesede Gmht.', text: '5' }]
+    - [{ url: '?staffel=404&r=6#p437x430', title: 'gegen SG Göttingen', text: '6' }]
+    - [{ url: '?staffel=404&r=1#p437x432', title: 'gegen SK Ricklingen', text: '6' }]
+    - [{ url: '?staffel=404&r=3#p437x433', title: 'gegen SVg Steinhude', text: '6' }]
+    - [{ url: '?staffel=404&r=4#p437x436', title: 'gegen HSK-Post SV 2', text: '6' }]
+    - 13
+    - 36½
+    - ''
+-
+    - '2.'
+    - { text: 'SC Melle', url: '?mannschaft=434', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=404&r=7#p434x437', title: 'gegen Wilhelmshav. SF', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=404&r=1#p434x431', title: 'gegen Hagener SV', text: '4' }]
+    - [{ url: '?staffel=404&r=4#p434x435', title: 'gegen SG Oesede Gmht.', text: '3' }]
+    - [{ url: '?staffel=404&r=3#p434x430', title: 'gegen SG Göttingen', text: 3½ }]
+    - [{ url: '?staffel=404&r=5#p434x432', title: 'gegen SK Ricklingen', text: '6' }]
+    - [{ url: '?staffel=404&r=6#p434x433', title: 'gegen SVg Steinhude', text: 4½ }]
+    - [{ url: '?staffel=404&r=2#p434x436', title: 'gegen HSK-Post SV 2', text: '6' }]
+    - 11
+    - 28½
+    - ''
+-
+    - '3.'
+    - { text: 'Hagener SV', url: '?mannschaft=431', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=404&r=5#p431x437', title: 'gegen Wilhelmshav. SF', text: '3' }]
+    - [{ url: '?staffel=404&r=1#p431x434', title: 'gegen SC Melle', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=404&r=3#p431x435', title: 'gegen SG Oesede Gmht.', text: 1½ }]
+    - [{ url: '?staffel=404&r=7#p431x430', title: 'gegen SG Göttingen', text: 5½ }]
+    - [{ url: '?staffel=404&r=2#p431x432', title: 'gegen SK Ricklingen', text: '5' }]
+    - [{ url: '?staffel=404&r=4#p431x433', title: 'gegen SVg Steinhude', text: 4½ }]
+    - [{ url: '?staffel=404&r=6#p431x436', title: 'gegen HSK-Post SV 2', text: '6' }]
+    - 9
+    - 27½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Oesede Gmht.', url: '?mannschaft=435', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=404&r=2#p435x437', title: 'gegen Wilhelmshav. SF', text: '1' }]
+    - [{ url: '?staffel=404&r=4#p435x434', title: 'gegen SC Melle', text: '3' }]
+    - [{ url: '?staffel=404&r=3#p435x431', title: 'gegen Hagener SV', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=404&r=5#p435x430', title: 'gegen SG Göttingen', text: '3' }]
+    - [{ url: '?staffel=404&r=6#p435x432', title: 'gegen SK Ricklingen', text: 2½ }]
+    - [{ url: '?staffel=404&r=1#p435x433', title: 'gegen SVg Steinhude', text: 4½ }]
+    - [{ url: '?staffel=404&r=7#p435x436', title: 'gegen HSK-Post SV 2', text: '6' }]
+    - 8
+    - 24½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Göttingen', url: '?mannschaft=430', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=404&r=6#p430x437', title: 'gegen Wilhelmshav. SF', text: '0' }]
+    - [{ url: '?staffel=404&r=3#p430x434', title: 'gegen SC Melle', text: 2½ }]
+    - [{ url: '?staffel=404&r=7#p430x431', title: 'gegen Hagener SV', text: ½ }]
+    - [{ url: '?staffel=404&r=5#p430x435', title: 'gegen SG Oesede Gmht.', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=404&r=4#p430x432', title: 'gegen SK Ricklingen', text: 3½ }]
+    - [{ url: '?staffel=404&r=2#p430x433', title: 'gegen SVg Steinhude', text: '6' }]
+    - [{ url: '?staffel=404&r=1#p430x436', title: 'gegen HSK-Post SV 2', text: '5' }]
+    - 7
+    - 20½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=432', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=404&r=1#p432x437', title: 'gegen Wilhelmshav. SF', text: '0' }]
+    - [{ url: '?staffel=404&r=5#p432x434', title: 'gegen SC Melle', text: '0' }]
+    - [{ url: '?staffel=404&r=2#p432x431', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=404&r=6#p432x435', title: 'gegen SG Oesede Gmht.', text: 3½ }]
+    - [{ url: '?staffel=404&r=4#p432x430', title: 'gegen SG Göttingen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=404&r=7#p432x433', title: 'gegen SVg Steinhude', text: 2½ }]
+    - [{ url: '?staffel=404&r=3#p432x436', title: 'gegen HSK-Post SV 2', text: '6' }]
+    - 4
+    - 15½
+    - ''
+-
+    - '7.'
+    - { text: 'SVg Steinhude', url: '?mannschaft=433', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=404&r=3#p433x437', title: 'gegen Wilhelmshav. SF', text: '0' }]
+    - [{ url: '?staffel=404&r=6#p433x434', title: 'gegen SC Melle', text: 1½ }]
+    - [{ url: '?staffel=404&r=4#p433x431', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=404&r=1#p433x435', title: 'gegen SG Oesede Gmht.', text: 1½ }]
+    - [{ url: '?staffel=404&r=2#p433x430', title: 'gegen SG Göttingen', text: '0' }]
+    - [{ url: '?staffel=404&r=7#p433x432', title: 'gegen SK Ricklingen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=404&r=5#p433x436', title: 'gegen HSK-Post SV 2', text: 4½ }]
+    - 4
+    - 12½
+    - ''
+-
+    - '8.'
+    - { text: 'HSK-Post SV 2', url: '?mannschaft=436', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=404&r=4#p436x437', title: 'gegen Wilhelmshav. SF', text: '0' }]
+    - [{ url: '?staffel=404&r=2#p436x434', title: 'gegen SC Melle', text: '0' }]
+    - [{ url: '?staffel=404&r=6#p436x431', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=404&r=7#p436x435', title: 'gegen SG Oesede Gmht.', text: '0' }]
+    - [{ url: '?staffel=404&r=1#p436x430', title: 'gegen SG Göttingen', text: '1' }]
+    - [{ url: '?staffel=404&r=3#p436x432', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=404&r=5#p436x433', title: 'gegen SVg Steinhude', text: 1½ }]
+    - xxx
+    - 0
+    - 2½
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Reideburger SV', url: '?mannschaft=6396', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1481&r=9#p6396x6397', title: 'gegen SC Kreuzberg', text: '3' }]
+    - [{ url: '?staffel=1481&r=8#p6396x6394', title: 'gegen Greifswalder SV', text: '4' }]
+    - [{ url: '?staffel=1481&r=4#p6396x6395', title: 'gegen Mattnetz Berlin', text: 3½ }]
+    - [{ url: '?staffel=1481&r=5#p6396x6399', title: 'gegen Caissa Falkensee', text: 4½ }]
+    - [{ url: '?staffel=1481&r=7#p6396x6398', title: 'gegen Borus. Lichtenberg', text: 2½ }]
+    - 7
+    - 17½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Kreuzberg', url: '?mannschaft=6397', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1481&r=9#p6397x6396', title: 'gegen Reideburger SV', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1481&r=4#p6397x6394', title: 'gegen Greifswalder SV', text: 3½ }]
+    - [{ url: '?staffel=1481&r=2#p6397x6395', title: 'gegen Mattnetz Berlin', text: '2' }]
+    - [{ url: '?staffel=1481&r=7#p6397x6399', title: 'gegen Caissa Falkensee', text: '4' }]
+    - [{ url: '?staffel=1481&r=8#p6397x6398', title: 'gegen Borus. Lichtenberg', text: '4' }]
+    - 7
+    - 16½
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'Greifswalder SV', url: '?mannschaft=6394', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1481&r=8#p6394x6396', title: 'gegen Reideburger SV', text: '2' }]
+    - [{ url: '?staffel=1481&r=4#p6394x6397', title: 'gegen SC Kreuzberg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1481&r=6#p6394x6395', title: 'gegen Mattnetz Berlin', text: 3½ }]
+    - [{ url: '?staffel=1481&r=2#p6394x6399', title: 'gegen Caissa Falkensee', text: '3' }]
+    - [{ url: '?staffel=1481&r=3#p6394x6398', title: 'gegen Borus. Lichtenberg', text: '5' }]
+    - 5
+    - '16'
+    - absteiger
+-
+    - '4.'
+    - { text: 'Mattnetz Berlin', url: '?mannschaft=6395', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1481&r=4#p6395x6396', title: 'gegen Reideburger SV', text: 2½ }]
+    - [{ url: '?staffel=1481&r=2#p6395x6397', title: 'gegen SC Kreuzberg', text: '4' }]
+    - [{ url: '?staffel=1481&r=6#p6395x6394', title: 'gegen Greifswalder SV', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1481&r=9#p6395x6399', title: 'gegen Caissa Falkensee', text: 3½ }]
+    - [{ url: '?staffel=1481&r=1#p6395x6398', title: 'gegen Borus. Lichtenberg', text: '3' }]
+    - 5
+    - 15½
+    - absteiger
+-
+    - '5.'
+    - { text: 'Caissa Falkensee', url: '?mannschaft=6399', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1481&r=5#p6399x6396', title: 'gegen Reideburger SV', text: 1½ }]
+    - [{ url: '?staffel=1481&r=7#p6399x6397', title: 'gegen SC Kreuzberg', text: '2' }]
+    - [{ url: '?staffel=1481&r=2#p6399x6394', title: 'gegen Greifswalder SV', text: '3' }]
+    - [{ url: '?staffel=1481&r=9#p6399x6395', title: 'gegen Mattnetz Berlin', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1481&r=6#p6399x6398', title: 'gegen Borus. Lichtenberg', text: 3½ }]
+    - 3
+    - 12½
+    - absteiger
+-
+    - '6.'
+    - { text: 'Borus. Lichtenberg', url: '?mannschaft=6398', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1481&r=7#p6398x6396', title: 'gegen Reideburger SV', text: 3½ }]
+    - [{ url: '?staffel=1481&r=8#p6398x6397', title: 'gegen SC Kreuzberg', text: '2' }]
+    - [{ url: '?staffel=1481&r=3#p6398x6394', title: 'gegen Greifswalder SV', text: '1' }]
+    - [{ url: '?staffel=1481&r=1#p6398x6395', title: 'gegen Mattnetz Berlin', text: '3' }]
+    - [{ url: '?staffel=1481&r=6#p6398x6399', title: 'gegen Caissa Falkensee', text: 2½ }]
+    - xxx
+    - 3
+    - '12'
+    - absteiger

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=3151', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=725&r=2#p3151x3087', title: 'gegen SG Döhren-Gleid 2', text: 5½ }]
+    - [{ url: '?staffel=725&r=6#p3151x3130', title: 'gegen SK Stolzenau 2', text: 2½ }]
+    - [{ url: '?staffel=725&r=8#p3151x3156', title: 'gegen SV Berenbostel 3', text: 5½ }]
+    - [{ url: '?staffel=725&r=3#p3151x3115', title: 'gegen Eystruper SK 2', text: '4' }]
+    - [{ url: '?staffel=725&r=1#p3151x3173', title: 'gegen HSK Lister Turm 5', text: 5½ }]
+    - [{ url: '?staffel=725&r=7#p3151x3138', title: 'gegen SVg Calenberg 2', text: 6½ }]
+    - [{ url: '?staffel=725&r=5#p3151x2856', title: 'gegen Barsinghausen 3', text: '7' }]
+    - [{ url: '?staffel=725&r=9#p3151x3211', title: 'gegen Hannover 96 4', text: '7' }]
+    - [{ url: '?staffel=725&r=4#p3151x3144', title: 'gegen SF Hannover 5', text: 7½ }]
+    - 15
+    - '51'
+    - ''
+-
+    - '2.'
+    - { text: 'SG Döhren-Gleid 2', url: '?mannschaft=3087', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=725&r=2#p3087x3151', title: 'gegen SK Rinteln 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=725&r=4#p3087x3130', title: 'gegen SK Stolzenau 2', text: 4½ }]
+    - [{ url: '?staffel=725&r=5#p3087x3156', title: 'gegen SV Berenbostel 3', text: 4½ }]
+    - [{ url: '?staffel=725&r=7#p3087x3115', title: 'gegen Eystruper SK 2', text: '4' }]
+    - [{ url: '?staffel=725&r=6#p3087x3173', title: 'gegen HSK Lister Turm 5', text: '4' }]
+    - [{ url: '?staffel=725&r=9#p3087x3138', title: 'gegen SVg Calenberg 2', text: 4½ }]
+    - [{ url: '?staffel=725&r=8#p3087x2856', title: 'gegen Barsinghausen 3', text: 3½ }]
+    - [{ url: '?staffel=725&r=1#p3087x3211', title: 'gegen Hannover 96 4', text: '8' }]
+    - [{ url: '?staffel=725&r=3#p3087x3144', title: 'gegen SF Hannover 5', text: 5½ }]
+    - 12
+    - '41'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Stolzenau 2', url: '?mannschaft=3130', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=725&r=6#p3130x3151', title: 'gegen SK Rinteln 2', text: 5½ }]
+    - [{ url: '?staffel=725&r=4#p3130x3087', title: 'gegen SG Döhren-Gleid 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=725&r=7#p3130x3156', title: 'gegen SV Berenbostel 3', text: '5' }]
+    - [{ url: '?staffel=725&r=9#p3130x3115', title: 'gegen Eystruper SK 2', text: 4½ }]
+    - [{ url: '?staffel=725&r=8#p3130x3173', title: 'gegen HSK Lister Turm 5', text: '5' }]
+    - [{ url: '?staffel=725&r=2#p3130x3138', title: 'gegen SVg Calenberg 2', text: '5' }]
+    - [{ url: '?staffel=725&r=1#p3130x2856', title: 'gegen Barsinghausen 3', text: 3½ }]
+    - [{ url: '?staffel=725&r=3#p3130x3211', title: 'gegen Hannover 96 4', text: 2½ }]
+    - [{ url: '?staffel=725&r=5#p3130x3144', title: 'gegen SF Hannover 5', text: '5' }]
+    - 12
+    - 39½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Berenbostel 3', url: '?mannschaft=3156', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=725&r=8#p3156x3151', title: 'gegen SK Rinteln 2', text: 2½ }]
+    - [{ url: '?staffel=725&r=5#p3156x3087', title: 'gegen SG Döhren-Gleid 2', text: 3½ }]
+    - [{ url: '?staffel=725&r=7#p3156x3130', title: 'gegen SK Stolzenau 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=725&r=1#p3156x3115', title: 'gegen Eystruper SK 2', text: '5' }]
+    - [{ url: '?staffel=725&r=9#p3156x3173', title: 'gegen HSK Lister Turm 5', text: 3½ }]
+    - [{ url: '?staffel=725&r=3#p3156x3138', title: 'gegen SVg Calenberg 2', text: 6½ }]
+    - [{ url: '?staffel=725&r=2#p3156x2856', title: 'gegen Barsinghausen 3', text: '5' }]
+    - [{ url: '?staffel=725&r=4#p3156x3211', title: 'gegen Hannover 96 4', text: '5' }]
+    - [{ url: '?staffel=725&r=6#p3156x3144', title: 'gegen SF Hannover 5', text: '5' }]
+    - 11
+    - '39'
+    - ''
+-
+    - '5.'
+    - { text: 'Eystruper SK 2', url: '?mannschaft=3115', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=725&r=3#p3115x3151', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=725&r=7#p3115x3087', title: 'gegen SG Döhren-Gleid 2', text: '4' }]
+    - [{ url: '?staffel=725&r=9#p3115x3130', title: 'gegen SK Stolzenau 2', text: 3½ }]
+    - [{ url: '?staffel=725&r=1#p3115x3156', title: 'gegen SV Berenbostel 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=725&r=2#p3115x3173', title: 'gegen HSK Lister Turm 5', text: '4' }]
+    - [{ url: '?staffel=725&r=5#p3115x3138', title: 'gegen SVg Calenberg 2', text: '4' }]
+    - [{ url: '?staffel=725&r=4#p3115x2856', title: 'gegen Barsinghausen 3', text: 4½ }]
+    - [{ url: '?staffel=725&r=6#p3115x3211', title: 'gegen Hannover 96 4', text: 5½ }]
+    - [{ url: '?staffel=725&r=8#p3115x3144', title: 'gegen SF Hannover 5', text: '5' }]
+    - 10
+    - 37½
+    - ''
+-
+    - '6.'
+    - { text: 'HSK Lister Turm 5', url: '?mannschaft=3173', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=725&r=1#p3173x3151', title: 'gegen SK Rinteln 2', text: 2½ }]
+    - [{ url: '?staffel=725&r=6#p3173x3087', title: 'gegen SG Döhren-Gleid 2', text: '4' }]
+    - [{ url: '?staffel=725&r=8#p3173x3130', title: 'gegen SK Stolzenau 2', text: '2' }]
+    - [{ url: '?staffel=725&r=9#p3173x3156', title: 'gegen SV Berenbostel 3', text: 3½ }]
+    - [{ url: '?staffel=725&r=2#p3173x3115', title: 'gegen Eystruper SK 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=725&r=4#p3173x3138', title: 'gegen SVg Calenberg 2', text: 1½ }]
+    - [{ url: '?staffel=725&r=3#p3173x2856', title: 'gegen Barsinghausen 3', text: '5' }]
+    - [{ url: '?staffel=725&r=5#p3173x3211', title: 'gegen Hannover 96 4', text: 5½ }]
+    - [{ url: '?staffel=725&r=7#p3173x3144', title: 'gegen SF Hannover 5', text: 7½ }]
+    - 9
+    - 35½
+    - ''
+-
+    - '7.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=3138', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=725&r=7#p3138x3151', title: 'gegen SK Rinteln 2', text: 1½ }]
+    - [{ url: '?staffel=725&r=9#p3138x3087', title: 'gegen SG Döhren-Gleid 2', text: 2½ }]
+    - [{ url: '?staffel=725&r=2#p3138x3130', title: 'gegen SK Stolzenau 2', text: '3' }]
+    - [{ url: '?staffel=725&r=3#p3138x3156', title: 'gegen SV Berenbostel 3', text: 1½ }]
+    - [{ url: '?staffel=725&r=5#p3138x3115', title: 'gegen Eystruper SK 2', text: '4' }]
+    - [{ url: '?staffel=725&r=4#p3138x3173', title: 'gegen HSK Lister Turm 5', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=725&r=6#p3138x2856', title: 'gegen Barsinghausen 3', text: 4½ }]
+    - [{ url: '?staffel=725&r=8#p3138x3211', title: 'gegen Hannover 96 4', text: '0' }]
+    - [{ url: '?staffel=725&r=1#p3138x3144', title: 'gegen SF Hannover 5', text: '4' }]
+    - 7
+    - 27½
+    - ''
+-
+    - '8.'
+    - { text: 'Barsinghausen 3', url: '?mannschaft=2856', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=725&r=5#p2856x3151', title: 'gegen SK Rinteln 2', text: '1' }]
+    - [{ url: '?staffel=725&r=8#p2856x3087', title: 'gegen SG Döhren-Gleid 2', text: 4½ }]
+    - [{ url: '?staffel=725&r=1#p2856x3130', title: 'gegen SK Stolzenau 2', text: 4½ }]
+    - [{ url: '?staffel=725&r=2#p2856x3156', title: 'gegen SV Berenbostel 3', text: '3' }]
+    - [{ url: '?staffel=725&r=4#p2856x3115', title: 'gegen Eystruper SK 2', text: 3½ }]
+    - [{ url: '?staffel=725&r=3#p2856x3173', title: 'gegen HSK Lister Turm 5', text: '3' }]
+    - [{ url: '?staffel=725&r=6#p2856x3138', title: 'gegen SVg Calenberg 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=725&r=7#p2856x3211', title: 'gegen Hannover 96 4', text: '5' }]
+    - [{ url: '?staffel=725&r=9#p2856x3144', title: 'gegen SF Hannover 5', text: 3½ }]
+    - 6
+    - 31½
+    - ''
+-
+    - '9.'
+    - { text: 'Hannover 96 4', url: '?mannschaft=3211', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=725&r=9#p3211x3151', title: 'gegen SK Rinteln 2', text: '1' }]
+    - [{ url: '?staffel=725&r=1#p3211x3087', title: 'gegen SG Döhren-Gleid 2', text: '0' }]
+    - [{ url: '?staffel=725&r=3#p3211x3130', title: 'gegen SK Stolzenau 2', text: 5½ }]
+    - [{ url: '?staffel=725&r=4#p3211x3156', title: 'gegen SV Berenbostel 3', text: '2' }]
+    - [{ url: '?staffel=725&r=6#p3211x3115', title: 'gegen Eystruper SK 2', text: 2½ }]
+    - [{ url: '?staffel=725&r=5#p3211x3173', title: 'gegen HSK Lister Turm 5', text: 2½ }]
+    - [{ url: '?staffel=725&r=8#p3211x3138', title: 'gegen SVg Calenberg 2', text: '8' }]
+    - [{ url: '?staffel=725&r=7#p3211x2856', title: 'gegen Barsinghausen 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=725&r=2#p3211x3144', title: 'gegen SF Hannover 5', text: '3' }]
+    - 4
+    - 27½
+    - ''
+-
+    - '10.'
+    - { text: 'SF Hannover 5', url: '?mannschaft=3144', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=725&r=4#p3144x3151', title: 'gegen SK Rinteln 2', text: ½ }]
+    - [{ url: '?staffel=725&r=3#p3144x3087', title: 'gegen SG Döhren-Gleid 2', text: 2½ }]
+    - [{ url: '?staffel=725&r=5#p3144x3130', title: 'gegen SK Stolzenau 2', text: '3' }]
+    - [{ url: '?staffel=725&r=6#p3144x3156', title: 'gegen SV Berenbostel 3', text: '2' }]
+    - [{ url: '?staffel=725&r=8#p3144x3115', title: 'gegen Eystruper SK 2', text: '3' }]
+    - [{ url: '?staffel=725&r=7#p3144x3173', title: 'gegen HSK Lister Turm 5', text: ½ }]
+    - [{ url: '?staffel=725&r=1#p3144x3138', title: 'gegen SVg Calenberg 2', text: '3' }]
+    - [{ url: '?staffel=725&r=9#p3144x2856', title: 'gegen Barsinghausen 3', text: 4½ }]
+    - [{ url: '?staffel=725&r=2#p3144x3211', title: 'gegen Hannover 96 4', text: '5' }]
+    - xxx
+    - 4
+    - '24'
+    - ''

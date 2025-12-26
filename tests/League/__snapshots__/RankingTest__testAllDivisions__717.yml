@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Eystruper SK 2', url: '?mannschaft=6210', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1476&r=2#p6210x6178', title: 'gegen SD Isernhagen 4', text: 4½ }]
+    - [{ url: '?staffel=1476&r=7#p6210x5981', title: 'gegen SV Warmsen', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1476&r=5#p6210x6216', title: 'gegen HSK Lister Turm 8', text: '6' }]
+    - 5
+    - 14½
+    - ''
+-
+    - '2.'
+    - { text: 'SD Isernhagen 4', url: '?mannschaft=6178', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1476&r=2#p6178x6210', title: 'gegen Eystruper SK 2', text: 3½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1476&r=6#p6178x5912', title: 'gegen SF Barsinghausen 3', text: '5' }]
+    - [{ url: '?staffel=1476&r=4#p6178x6216', title: 'gegen HSK Lister Turm 8', text: '6' }]
+    - 4
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Warmsen', url: '?mannschaft=5981', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1476&r=7#p5981x6210', title: 'gegen Eystruper SK 2', text: '4' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1476&r=3#p5981x5912', title: 'gegen SF Barsinghausen 3', text: '5' }]
+    - {  }
+    - 3
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Barsinghausen 3', url: '?mannschaft=5912', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1476&r=6#p5912x6178', title: 'gegen SD Isernhagen 4', text: '2' }]
+    - [{ url: '?staffel=1476&r=3#p5912x5981', title: 'gegen SV Warmsen', text: '3' }]
+    - xxx
+    - {  }
+    - 0
+    - '5'
+    - ''
+-
+    - '5.'
+    - { text: 'HSK Lister Turm 8', url: '?mannschaft=6216', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1476&r=5#p6216x6210', title: 'gegen Eystruper SK 2', text: '2' }]
+    - [{ url: '?staffel=1476&r=4#p6216x6178', title: 'gegen SD Isernhagen 4', text: '2' }]
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '4'
+    - ''
