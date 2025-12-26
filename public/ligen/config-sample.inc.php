@@ -34,10 +34,10 @@
   $globals ['dbpw']              = "docker";
 
   // Datenbankserver
-  $globals ['dbhost']            = "nsv-database";
+  $globals ['dbhost']            = "127.0.0.1";
 
   // Datenbankname
-  $globals ['dbname']            = "nsv-ligen";
+  $globals ['dbname']            = "nsv-main";
 
 
   ///////////////////////////////////////////////////////
