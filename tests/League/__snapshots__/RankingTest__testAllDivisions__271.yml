@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'H96 Schach 4', url: '?mannschaft=2332', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=705&r=7#p2332x2543', title: 'gegen SK Lehrte 5', text: 4½ }]
+    - [{ url: '?staffel=705&r=8#p2332x2606', title: 'gegen Schachzentrum B', text: '4' }]
+    - [{ url: '?staffel=705&r=4#p2332x2578', title: 'gegen SG Döhren-Gleid 2', text: '5' }]
+    - [{ url: '?staffel=705&r=3#p2332x2613', title: 'gegen SD Isernhagen 3', text: '5' }]
+    - [{ url: '?staffel=705&r=6#p2332x2632', title: 'gegen SK Anderten 2', text: 5½ }]
+    - 9
+    - '24'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte 5', url: '?mannschaft=2543', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=705&r=7#p2543x2332', title: 'gegen H96 Schach 4', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=705&r=5#p2543x2606', title: 'gegen Schachzentrum B', text: '5' }]
+    - [{ url: '?staffel=705&r=6#p2543x2578', title: 'gegen SG Döhren-Gleid 2', text: 5½ }]
+    - [{ url: '?staffel=705&r=8#p2543x2613', title: 'gegen SD Isernhagen 3', text: 7½ }]
+    - [{ url: '?staffel=705&r=3#p2543x2632', title: 'gegen SK Anderten 2', text: '4' }]
+    - 7
+    - 25½
+    - ''
+-
+    - '3.'
+    - { text: 'Schachzentrum B', url: '?mannschaft=2606', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=705&r=8#p2606x2332', title: 'gegen H96 Schach 4', text: '4' }]
+    - [{ url: '?staffel=705&r=5#p2606x2543', title: 'gegen SK Lehrte 5', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=705&r=7#p2606x2578', title: 'gegen SG Döhren-Gleid 2', text: 5½ }]
+    - [{ url: '?staffel=705&r=6#p2606x2613', title: 'gegen SD Isernhagen 3', text: 5½ }]
+    - [{ url: '?staffel=705&r=2#p2606x2632', title: 'gegen SK Anderten 2', text: '4' }]
+    - 6
+    - '22'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Döhren-Gleid 2', url: '?mannschaft=2578', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=705&r=4#p2578x2332', title: 'gegen H96 Schach 4', text: '3' }]
+    - [{ url: '?staffel=705&r=6#p2578x2543', title: 'gegen SK Lehrte 5', text: 2½ }]
+    - [{ url: '?staffel=705&r=7#p2578x2606', title: 'gegen Schachzentrum B', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=705&r=1#p2578x2613', title: 'gegen SD Isernhagen 3', text: 4½ }]
+    - [{ url: '?staffel=705&r=8#p2578x2632', title: 'gegen SK Anderten 2', text: '8' }]
+    - 4
+    - 20½
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=2613', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=705&r=3#p2613x2332', title: 'gegen H96 Schach 4', text: '3' }]
+    - [{ url: '?staffel=705&r=8#p2613x2543', title: 'gegen SK Lehrte 5', text: ½ }]
+    - [{ url: '?staffel=705&r=6#p2613x2606', title: 'gegen Schachzentrum B', text: 2½ }]
+    - [{ url: '?staffel=705&r=1#p2613x2578', title: 'gegen SG Döhren-Gleid 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=705&r=7#p2613x2632', title: 'gegen SK Anderten 2', text: '5' }]
+    - 2
+    - 14½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=2632', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=705&r=6#p2632x2332', title: 'gegen H96 Schach 4', text: 2½ }]
+    - [{ url: '?staffel=705&r=3#p2632x2543', title: 'gegen SK Lehrte 5', text: '4' }]
+    - [{ url: '?staffel=705&r=2#p2632x2606', title: 'gegen Schachzentrum B', text: '4' }]
+    - [{ url: '?staffel=705&r=8#p2632x2578', title: 'gegen SG Döhren-Gleid 2', text: '0' }]
+    - [{ url: '?staffel=705&r=7#p2632x2613', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - xxx
+    - 2
+    - 13½
+    - ''

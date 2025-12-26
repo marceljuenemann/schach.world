@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Mannschaft melden
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann

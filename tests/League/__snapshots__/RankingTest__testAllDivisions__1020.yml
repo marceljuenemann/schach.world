@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG STL/Berenbostel 2', url: '?mannschaft=8506', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1870&r=1#p8506x8473', title: 'gegen SV Laatzen', text: 4½ }]
+    - [{ url: '?staffel=1870&r=3#p8506x8378', title: 'gegen TuS Wunstorf', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1870&r=2#p8506x8530', title: 'gegen SK Lehrte 4', text: 5½ }]
+    - {  }
+    - {  }
+    - {  }
+    - 6
+    - '15'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Springe', url: '?mannschaft=8528', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1870&r=2#p8528x8195', title: 'gegen SG WB Eilenriede 2', text: 5½ }]
+    - {  }
+    - [{ url: '?staffel=1870&r=1#p8528x8317', title: 'gegen SG Garbsen/Marienw', text: '6' }]
+    - {  }
+    - [{ url: '?staffel=1870&r=3#p8528x8513', title: 'gegen SC Stadthagen', text: '4' }]
+    - 5
+    - 15½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=8555', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1870&r=2#p8555x8473', title: 'gegen SV Laatzen', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1870&r=3#p8555x8530', title: 'gegen SK Lehrte 4', text: 4½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1870&r=1#p8555x8513', title: 'gegen SC Stadthagen', text: '5' }]
+    - 5
+    - 13½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Laatzen', url: '?mannschaft=8473', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1870&r=1#p8473x8506', title: 'gegen SG STL/Berenbostel 2', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1870&r=2#p8473x8555', title: 'gegen SZ Bemerode', text: '4' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1870&r=3#p8473x8450', title: 'gegen SF Ricklingen 2', text: '6' }]
+    - {  }
+    - 3
+    - 13½
+    - ''
+-
+    - '5.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=8378', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1870&r=3#p8378x8506', title: 'gegen SG STL/Berenbostel 2', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1870&r=1#p8378x8530', title: 'gegen SK Lehrte 4', text: 3½ }]
+    - [{ url: '?staffel=1870&r=2#p8378x8317', title: 'gegen SG Garbsen/Marienw', text: '5' }]
+    - {  }
+    - {  }
+    - 2
+    - 11½
+    - ''
+-
+    - '6.'
+    - { text: 'SG WB Eilenriede 2', url: '?mannschaft=8195', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1870&r=2#p8195x8528', title: 'gegen SV Springe', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1870&r=3#p8195x8317', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - [{ url: '?staffel=1870&r=1#p8195x8450', title: 'gegen SF Ricklingen 2', text: '5' }]
+    - {  }
+    - 2
+    - 10½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=8530', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1870&r=2#p8530x8506', title: 'gegen SG STL/Berenbostel 2', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1870&r=3#p8530x8555', title: 'gegen SZ Bemerode', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1870&r=1#p8530x8378', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - 2
+    - 10½
+    - ''
+-
+    - '8.'
+    - { text: 'SG Garbsen/Marienw', url: '?mannschaft=8317', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1870&r=1#p8317x8528', title: 'gegen SV Springe', text: '2' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1870&r=2#p8317x8378', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=1870&r=3#p8317x8195', title: 'gegen SG WB Eilenriede 2', text: '5' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - '10'
+    - ''
+-
+    - '9.'
+    - { text: 'SF Ricklingen 2', url: '?mannschaft=8450', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1870&r=3#p8450x8473', title: 'gegen SV Laatzen', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1870&r=1#p8450x8195', title: 'gegen SG WB Eilenriede 2', text: '3' }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1870&r=2#p8450x8513', title: 'gegen SC Stadthagen', text: 4½ }]
+    - 2
+    - 9½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=8513', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1870&r=3#p8513x8528', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=1870&r=1#p8513x8555', title: 'gegen SZ Bemerode', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1870&r=2#p8513x8450', title: 'gegen SF Ricklingen 2', text: 3½ }]
+    - xxx
+    - 1
+    - 10½
+    - absteiger

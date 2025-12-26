@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=6945', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1605&r=3#p6945x6942', title: 'gegen SG Goslar-Harzburg', text: 2½ }]
+    - [{ url: '?staffel=1605&r=5#p6945x6946', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=1605&r=6#p6945x6944', title: 'gegen SG Hameln-Rinteln', text: '4' }]
+    - [{ url: '?staffel=1605&r=7#p6945x6941', title: 'gegen Bad Salzdetfurth', text: 3½ }]
+    - [{ url: '?staffel=1605&r=1#p6945x6947', title: 'gegen Plesse Bovenden', text: 2½ }]
+    - [{ url: '?staffel=1605&r=4#p6945x6943', title: 'gegen SG Goslar-Harzburg 2', text: '4' }]
+    - [{ url: '?staffel=1605&r=2#p6945x6948', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - 14
+    - 23½
+    - ''
+-
+    - '2.'
+    - { text: 'SG Goslar-Harzburg', url: '?mannschaft=6942', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1605&r=3#p6942x6945', title: 'gegen Hildesheimer SV 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1605&r=4#p6942x6946', title: 'gegen Hildesheimer SV 3', text: '2' }]
+    - [{ url: '?staffel=1605&r=2#p6942x6944', title: 'gegen SG Hameln-Rinteln', text: 2½ }]
+    - [{ url: '?staffel=1605&r=1#p6942x6941', title: 'gegen Bad Salzdetfurth', text: '3' }]
+    - [{ url: '?staffel=1605&r=7#p6942x6947', title: 'gegen Plesse Bovenden', text: 3½ }]
+    - [{ url: '?staffel=1605&r=5#p6942x6943', title: 'gegen SG Goslar-Harzburg 2', text: '3' }]
+    - [{ url: '?staffel=1605&r=6#p6942x6948', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - 11
+    - 18½
+    - ''
+-
+    - '3.'
+    - { text: 'Hildesheimer SV 3', url: '?mannschaft=6946', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1605&r=5#p6946x6945', title: 'gegen Hildesheimer SV 2', text: '0' }]
+    - [{ url: '?staffel=1605&r=4#p6946x6942', title: 'gegen SG Goslar-Harzburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1605&r=7#p6946x6944', title: 'gegen SG Hameln-Rinteln', text: '0' }]
+    - [{ url: '?staffel=1605&r=6#p6946x6941', title: 'gegen Bad Salzdetfurth', text: '2' }]
+    - [{ url: '?staffel=1605&r=2#p6946x6947', title: 'gegen Plesse Bovenden', text: 2½ }]
+    - [{ url: '?staffel=1605&r=3#p6946x6943', title: 'gegen SG Goslar-Harzburg 2', text: '4' }]
+    - [{ url: '?staffel=1605&r=1#p6946x6948', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - 8
+    - 13½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Hameln-Rinteln', url: '?mannschaft=6944', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1605&r=6#p6944x6945', title: 'gegen Hildesheimer SV 2', text: '0' }]
+    - [{ url: '?staffel=1605&r=2#p6944x6942', title: 'gegen SG Goslar-Harzburg', text: 1½ }]
+    - [{ url: '?staffel=1605&r=7#p6944x6946', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1605&r=5#p6944x6941', title: 'gegen Bad Salzdetfurth', text: '2' }]
+    - [{ url: '?staffel=1605&r=4#p6944x6947', title: 'gegen Plesse Bovenden', text: 1½ }]
+    - [{ url: '?staffel=1605&r=1#p6944x6943', title: 'gegen SG Goslar-Harzburg 2', text: '2' }]
+    - [{ url: '?staffel=1605&r=3#p6944x6948', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - 6
+    - '15'
+    - ''
+-
+    - '5.'
+    - { text: 'Bad Salzdetfurth', url: '?mannschaft=6941', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1605&r=7#p6941x6945', title: 'gegen Hildesheimer SV 2', text: ½ }]
+    - [{ url: '?staffel=1605&r=1#p6941x6942', title: 'gegen SG Goslar-Harzburg', text: '1' }]
+    - [{ url: '?staffel=1605&r=6#p6941x6946', title: 'gegen Hildesheimer SV 3', text: '2' }]
+    - [{ url: '?staffel=1605&r=5#p6941x6944', title: 'gegen SG Hameln-Rinteln', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1605&r=3#p6941x6947', title: 'gegen Plesse Bovenden', text: 2½ }]
+    - [{ url: '?staffel=1605&r=2#p6941x6943', title: 'gegen SG Goslar-Harzburg 2', text: '1' }]
+    - [{ url: '?staffel=1605&r=4#p6941x6948', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - 6
+    - '13'
+    - ''
+-
+    - '6.'
+    - { text: 'Plesse Bovenden', url: '?mannschaft=6947', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1605&r=1#p6947x6945', title: 'gegen Hildesheimer SV 2', text: 1½ }]
+    - [{ url: '?staffel=1605&r=7#p6947x6942', title: 'gegen SG Goslar-Harzburg', text: ½ }]
+    - [{ url: '?staffel=1605&r=2#p6947x6946', title: 'gegen Hildesheimer SV 3', text: 1½ }]
+    - [{ url: '?staffel=1605&r=4#p6947x6944', title: 'gegen SG Hameln-Rinteln', text: 2½ }]
+    - [{ url: '?staffel=1605&r=3#p6947x6941', title: 'gegen Bad Salzdetfurth', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1605&r=6#p6947x6943', title: 'gegen SG Goslar-Harzburg 2', text: '3' }]
+    - [{ url: '?staffel=1605&r=5#p6947x6948', title: 'gegen Plesse Bovenden 2', text: 2½ }]
+    - 6
+    - '13'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Goslar-Harzburg 2', url: '?mannschaft=6943', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1605&r=4#p6943x6945', title: 'gegen Hildesheimer SV 2', text: '0' }]
+    - [{ url: '?staffel=1605&r=5#p6943x6942', title: 'gegen SG Goslar-Harzburg', text: '1' }]
+    - [{ url: '?staffel=1605&r=3#p6943x6946', title: 'gegen Hildesheimer SV 3', text: '0' }]
+    - [{ url: '?staffel=1605&r=1#p6943x6944', title: 'gegen SG Hameln-Rinteln', text: '2' }]
+    - [{ url: '?staffel=1605&r=2#p6943x6941', title: 'gegen Bad Salzdetfurth', text: '3' }]
+    - [{ url: '?staffel=1605&r=6#p6943x6947', title: 'gegen Plesse Bovenden', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1605&r=7#p6943x6948', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '8.'
+    - { text: 'Plesse Bovenden 2', url: '?mannschaft=6948', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1605&r=2#p6948x6945', title: 'gegen Hildesheimer SV 2', text: '1' }]
+    - [{ url: '?staffel=1605&r=6#p6948x6942', title: 'gegen SG Goslar-Harzburg', text: '1' }]
+    - [{ url: '?staffel=1605&r=1#p6948x6946', title: 'gegen Hildesheimer SV 3', text: '1' }]
+    - [{ url: '?staffel=1605&r=3#p6948x6944', title: 'gegen SG Hameln-Rinteln', text: '0' }]
+    - [{ url: '?staffel=1605&r=4#p6948x6941', title: 'gegen Bad Salzdetfurth', text: '0' }]
+    - [{ url: '?staffel=1605&r=5#p6948x6947', title: 'gegen Plesse Bovenden', text: 1½ }]
+    - [{ url: '?staffel=1605&r=7#p6948x6943', title: 'gegen SG Goslar-Harzburg 2', text: '1' }]
+    - xxx
+    - 0
+    - 5½
+    - ''

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SVG Salzgitter', url: '?mannschaft=801', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=434&r=7#p801x799', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=434&r=3#p801x800', title: 'gegen SG Oesede-Gmht.', text: '6' }]
+    - [{ url: '?staffel=434&r=2#p801x802', title: 'gegen SK Nordhorn-Bl. 2', text: '5' }]
+    - [{ url: '?staffel=434&r=6#p801x797', title: 'gegen SC Melle', text: '6' }]
+    - [{ url: '?staffel=434&r=5#p801x798', title: 'gegen SVg Steinhude', text: '6' }]
+    - [{ url: '?staffel=434&r=4#p801x796', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=434&r=1#p801x803', title: 'gegen SC Stadthagen', text: '6' }]
+    - 14
+    - 36½
+    - ''
+-
+    - '2.'
+    - { text: 'Hagener SV', url: '?mannschaft=799', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=434&r=7#p799x801', title: 'gegen SVG Salzgitter', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=434&r=1#p799x800', title: 'gegen SG Oesede-Gmht.', text: '3' }]
+    - [{ url: '?staffel=434&r=4#p799x802', title: 'gegen SK Nordhorn-Bl. 2', text: 3½ }]
+    - [{ url: '?staffel=434&r=5#p799x797', title: 'gegen SC Melle', text: '4' }]
+    - [{ url: '?staffel=434&r=6#p799x798', title: 'gegen SVg Steinhude', text: 4½ }]
+    - [{ url: '?staffel=434&r=3#p799x796', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=434&r=2#p799x803', title: 'gegen SC Stadthagen', text: '4' }]
+    - 10
+    - 24½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=800', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=434&r=3#p800x801', title: 'gegen SVG Salzgitter', text: '0' }]
+    - [{ url: '?staffel=434&r=1#p800x799', title: 'gegen Hagener SV', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=434&r=5#p800x802', title: 'gegen SK Nordhorn-Bl. 2', text: '5' }]
+    - [{ url: '?staffel=434&r=4#p800x797', title: 'gegen SC Melle', text: '3' }]
+    - [{ url: '?staffel=434&r=2#p800x798', title: 'gegen SVg Steinhude', text: 3½ }]
+    - [{ url: '?staffel=434&r=7#p800x796', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=434&r=6#p800x803', title: 'gegen SC Stadthagen', text: 3½ }]
+    - 10
+    - 21½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Bl. 2', url: '?mannschaft=802', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=434&r=2#p802x801', title: 'gegen SVG Salzgitter', text: '1' }]
+    - [{ url: '?staffel=434&r=4#p802x799', title: 'gegen Hagener SV', text: 2½ }]
+    - [{ url: '?staffel=434&r=5#p802x800', title: 'gegen SG Oesede-Gmht.', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=434&r=1#p802x797', title: 'gegen SC Melle', text: 4½ }]
+    - [{ url: '?staffel=434&r=7#p802x798', title: 'gegen SVg Steinhude', text: 3½ }]
+    - [{ url: '?staffel=434&r=6#p802x796', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=434&r=3#p802x803', title: 'gegen SC Stadthagen', text: 3½ }]
+    - 8
+    - 19½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Melle', url: '?mannschaft=797', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=434&r=6#p797x801', title: 'gegen SVG Salzgitter', text: '0' }]
+    - [{ url: '?staffel=434&r=5#p797x799', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=434&r=4#p797x800', title: 'gegen SG Oesede-Gmht.', text: '3' }]
+    - [{ url: '?staffel=434&r=1#p797x802', title: 'gegen SK Nordhorn-Bl. 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=434&r=3#p797x798', title: 'gegen SVg Steinhude', text: '4' }]
+    - [{ url: '?staffel=434&r=2#p797x796', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=434&r=7#p797x803', title: 'gegen SC Stadthagen', text: 3½ }]
+    - 7
+    - 17½
+    - ''
+-
+    - '6.'
+    - { text: 'SVg Steinhude', url: '?mannschaft=798', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=434&r=5#p798x801', title: 'gegen SVG Salzgitter', text: '0' }]
+    - [{ url: '?staffel=434&r=6#p798x799', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=434&r=2#p798x800', title: 'gegen SG Oesede-Gmht.', text: 2½ }]
+    - [{ url: '?staffel=434&r=7#p798x802', title: 'gegen SK Nordhorn-Bl. 2', text: 2½ }]
+    - [{ url: '?staffel=434&r=3#p798x797', title: 'gegen SC Melle', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=434&r=1#p798x796', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=434&r=4#p798x803', title: 'gegen SC Stadthagen', text: 4½ }]
+    - 4
+    - 16½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Lehrte', url: '?mannschaft=796', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=434&r=4#p796x801', title: 'gegen SVG Salzgitter', text: '2' }]
+    - [{ url: '?staffel=434&r=3#p796x799', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=434&r=7#p796x800', title: 'gegen SG Oesede-Gmht.', text: 2½ }]
+    - [{ url: '?staffel=434&r=6#p796x802', title: 'gegen SK Nordhorn-Bl. 2', text: 2½ }]
+    - [{ url: '?staffel=434&r=2#p796x797', title: 'gegen SC Melle', text: 2½ }]
+    - [{ url: '?staffel=434&r=1#p796x798', title: 'gegen SVg Steinhude', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=434&r=5#p796x803', title: 'gegen SC Stadthagen', text: 5½ }]
+    - 3
+    - 20½
+    - ''
+-
+    - '8.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=803', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=434&r=1#p803x801', title: 'gegen SVG Salzgitter', text: '0' }]
+    - [{ url: '?staffel=434&r=2#p803x799', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=434&r=6#p803x800', title: 'gegen SG Oesede-Gmht.', text: 2½ }]
+    - [{ url: '?staffel=434&r=3#p803x802', title: 'gegen SK Nordhorn-Bl. 2', text: 2½ }]
+    - [{ url: '?staffel=434&r=7#p803x797', title: 'gegen SC Melle', text: 2½ }]
+    - [{ url: '?staffel=434&r=4#p803x798', title: 'gegen SVg Steinhude', text: 1½ }]
+    - [{ url: '?staffel=434&r=5#p803x796', title: 'gegen SK Lehrte', text: ½ }]
+    - xxx
+    - 0
+    - 11½
+    - ''

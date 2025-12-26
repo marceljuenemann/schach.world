@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=6206', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1420&r=3#p6206x6208', title: 'gegen Eystruper SK', text: '6' }]
+    - {  }
+    - [{ url: '?staffel=1420&r=6#p6206x6212', title: 'gegen SK Rinteln 2', text: 5½ }]
+    - [{ url: '?staffel=1420&r=7#p6206x6189', title: 'gegen SF Mühlenberg 2', text: '2' }]
+    - [{ url: '?staffel=1420&r=5#p6206x6149', title: 'gegen SV Bückeburg', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1420&r=1#p6206x5978', title: 'gegen TuS Wunstorf', text: 6½ }]
+    - [{ url: '?staffel=1420&r=2#p6206x6169', title: 'gegen SK Neustadt 2', text: '6' }]
+    - [{ url: '?staffel=1420&r=4#p6206x6113', title: 'gegen SK Stolzenau 2', text: '6' }]
+    - 12
+    - '37'
+    - ''
+-
+    - '2.'
+    - { text: 'Eystruper SK', url: '?mannschaft=6208', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1420&r=3#p6208x6206', title: 'gegen SC Stadthagen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1420&r=2#p6208x6123', title: 'gegen SV Laatzen 3', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1420&r=1#p6208x6189', title: 'gegen SF Mühlenberg 2', text: 6½ }]
+    - {  }
+    - [{ url: '?staffel=1420&r=6#p6208x5911', title: 'gegen SF Barsinghausen 2', text: 5½ }]
+    - [{ url: '?staffel=1420&r=4#p6208x5978', title: 'gegen TuS Wunstorf', text: 5½ }]
+    - [{ url: '?staffel=1420&r=5#p6208x6169', title: 'gegen SK Neustadt 2', text: '7' }]
+    - [{ url: '?staffel=1420&r=7#p6208x6113', title: 'gegen SK Stolzenau 2', text: 5½ }]
+    - 12
+    - '37'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Laatzen 3', url: '?mannschaft=6123', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1420&r=2#p6123x6208', title: 'gegen Eystruper SK', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1420&r=5#p6123x6212', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1420&r=6#p6123x6189', title: 'gegen SF Mühlenberg 2', text: 4½ }]
+    - [{ url: '?staffel=1420&r=4#p6123x6149', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=1420&r=7#p6123x5911', title: 'gegen SF Barsinghausen 2', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1420&r=1#p6123x6169', title: 'gegen SK Neustadt 2', text: 4½ }]
+    - [{ url: '?staffel=1420&r=3#p6123x6113', title: 'gegen SK Stolzenau 2', text: 5½ }]
+    - 11
+    - '31'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=6212', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1420&r=6#p6212x6206', title: 'gegen SC Stadthagen', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1420&r=5#p6212x6123', title: 'gegen SV Laatzen 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1420&r=4#p6212x6189', title: 'gegen SF Mühlenberg 2', text: '3' }]
+    - [{ url: '?staffel=1420&r=2#p6212x6149', title: 'gegen SV Bückeburg', text: 5½ }]
+    - [{ url: '?staffel=1420&r=3#p6212x5911', title: 'gegen SF Barsinghausen 2', text: 5½ }]
+    - [{ url: '?staffel=1420&r=7#p6212x5978', title: 'gegen TuS Wunstorf', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1420&r=1#p6212x6113', title: 'gegen SK Stolzenau 2', text: 5½ }]
+    - 9
+    - '31'
+    - ''
+-
+    - '5.'
+    - { text: 'SF Mühlenberg 2', url: '?mannschaft=6189', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1420&r=7#p6189x6206', title: 'gegen SC Stadthagen', text: '6' }]
+    - [{ url: '?staffel=1420&r=1#p6189x6208', title: 'gegen Eystruper SK', text: 1½ }]
+    - [{ url: '?staffel=1420&r=6#p6189x6123', title: 'gegen SV Laatzen 3', text: 3½ }]
+    - [{ url: '?staffel=1420&r=4#p6189x6212', title: 'gegen SK Rinteln 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1420&r=3#p6189x6149', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=1420&r=5#p6189x5911', title: 'gegen SF Barsinghausen 2', text: 4½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1420&r=2#p6189x6113', title: 'gegen SK Stolzenau 2', text: 4½ }]
+    - 9
+    - '29'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=6149', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1420&r=5#p6149x6206', title: 'gegen SC Stadthagen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1420&r=4#p6149x6123', title: 'gegen SV Laatzen 3', text: 3½ }]
+    - [{ url: '?staffel=1420&r=2#p6149x6212', title: 'gegen SK Rinteln 2', text: 2½ }]
+    - [{ url: '?staffel=1420&r=3#p6149x6189', title: 'gegen SF Mühlenberg 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1420&r=1#p6149x5911', title: 'gegen SF Barsinghausen 2', text: '5' }]
+    - [{ url: '?staffel=1420&r=6#p6149x5978', title: 'gegen TuS Wunstorf', text: 6½ }]
+    - [{ url: '?staffel=1420&r=7#p6149x6169', title: 'gegen SK Neustadt 2', text: '4' }]
+    - {  }
+    - 6
+    - 28½
+    - ''
+-
+    - '7.'
+    - { text: 'SF Barsinghausen 2', url: '?mannschaft=5911', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1420&r=6#p5911x6208', title: 'gegen Eystruper SK', text: 2½ }]
+    - [{ url: '?staffel=1420&r=7#p5911x6123', title: 'gegen SV Laatzen 3', text: '3' }]
+    - [{ url: '?staffel=1420&r=3#p5911x6212', title: 'gegen SK Rinteln 2', text: 2½ }]
+    - [{ url: '?staffel=1420&r=5#p5911x6189', title: 'gegen SF Mühlenberg 2', text: 3½ }]
+    - [{ url: '?staffel=1420&r=1#p5911x6149', title: 'gegen SV Bückeburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1420&r=2#p5911x5978', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=1420&r=4#p5911x6169', title: 'gegen SK Neustadt 2', text: '6' }]
+    - {  }
+    - 4
+    - '25'
+    - ''
+-
+    - '8.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=5978', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1420&r=1#p5978x6206', title: 'gegen SC Stadthagen', text: 1½ }]
+    - [{ url: '?staffel=1420&r=4#p5978x6208', title: 'gegen Eystruper SK', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1420&r=7#p5978x6212', title: 'gegen SK Rinteln 2', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1420&r=6#p5978x6149', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=1420&r=2#p5978x5911', title: 'gegen SF Barsinghausen 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1420&r=3#p5978x6169', title: 'gegen SK Neustadt 2', text: '5' }]
+    - [{ url: '?staffel=1420&r=5#p5978x6113', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - 4
+    - '22'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Neustadt 2', url: '?mannschaft=6169', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1420&r=2#p6169x6206', title: 'gegen SC Stadthagen', text: '2' }]
+    - [{ url: '?staffel=1420&r=5#p6169x6208', title: 'gegen Eystruper SK', text: '1' }]
+    - [{ url: '?staffel=1420&r=1#p6169x6123', title: 'gegen SV Laatzen 3', text: 3½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1420&r=7#p6169x6149', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=1420&r=4#p6169x5911', title: 'gegen SF Barsinghausen 2', text: '2' }]
+    - [{ url: '?staffel=1420&r=3#p6169x5978', title: 'gegen TuS Wunstorf', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1420&r=6#p6169x6113', title: 'gegen SK Stolzenau 2', text: 5½ }]
+    - 3
+    - '21'
+    - ''
+-
+    - '10.'
+    - { text: 'SK Stolzenau 2', url: '?mannschaft=6113', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1420&r=4#p6113x6206', title: 'gegen SC Stadthagen', text: '2' }]
+    - [{ url: '?staffel=1420&r=7#p6113x6208', title: 'gegen Eystruper SK', text: 2½ }]
+    - [{ url: '?staffel=1420&r=3#p6113x6123', title: 'gegen SV Laatzen 3', text: 2½ }]
+    - [{ url: '?staffel=1420&r=1#p6113x6212', title: 'gegen SK Rinteln 2', text: 1½ }]
+    - [{ url: '?staffel=1420&r=2#p6113x6189', title: 'gegen SF Mühlenberg 2', text: 3½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1420&r=5#p6113x5978', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=1420&r=6#p6113x6169', title: 'gegen SK Neustadt 2', text: 2½ }]
+    - xxx
+    - 0
+    - 17½
+    - ''

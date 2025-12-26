@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'USV TU Dresden', url: '?mannschaft=4520', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=957&r=2#p4520x4391', title: 'gegen SV Merseburg', text: 3½ }]
+    - [{ url: '?staffel=957&r=5#p4520x4476', title: 'gegen SF Friedrichshagen', text: '4' }]
+    - [{ url: '?staffel=957&r=3#p4520x4431', title: 'gegen Meuselwitzer SV', text: 3½ }]
+    - [{ url: '?staffel=957&r=1#p4520x4517', title: 'gegen SG Leipzig 2', text: '3' }]
+    - 8
+    - '14'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Merseburg', url: '?mannschaft=4391', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=957&r=2#p4391x4520', title: 'gegen USV TU Dresden', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=957&r=4#p4391x4476', title: 'gegen SF Friedrichshagen', text: 3½ }]
+    - [{ url: '?staffel=957&r=5#p4391x4431', title: 'gegen Meuselwitzer SV', text: 1½ }]
+    - [{ url: '?staffel=957&r=3#p4391x4517', title: 'gegen SG Leipzig 2', text: '3' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '3.'
+    - { text: 'SF Friedrichshagen', url: '?mannschaft=4476', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=957&r=5#p4476x4520', title: 'gegen USV TU Dresden', text: '0' }]
+    - [{ url: '?staffel=957&r=4#p4476x4391', title: 'gegen SV Merseburg', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=957&r=1#p4476x4431', title: 'gegen Meuselwitzer SV', text: 3½ }]
+    - [{ url: '?staffel=957&r=2#p4476x4517', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - 4
+    - 6½
+    - ''
+-
+    - '4.'
+    - { text: 'Meuselwitzer SV', url: '?mannschaft=4431', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=957&r=3#p4431x4520', title: 'gegen USV TU Dresden', text: ½ }]
+    - [{ url: '?staffel=957&r=5#p4431x4391', title: 'gegen SV Merseburg', text: 2½ }]
+    - [{ url: '?staffel=957&r=1#p4431x4476', title: 'gegen SF Friedrichshagen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=957&r=4#p4431x4517', title: 'gegen SG Leipzig 2', text: '2' }]
+    - 3
+    - 5½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Leipzig 2', url: '?mannschaft=4517', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=957&r=1#p4517x4520', title: 'gegen USV TU Dresden', text: '1' }]
+    - [{ url: '?staffel=957&r=3#p4517x4391', title: 'gegen SV Merseburg', text: '1' }]
+    - [{ url: '?staffel=957&r=2#p4517x4476', title: 'gegen SF Friedrichshagen', text: 1½ }]
+    - [{ url: '?staffel=957&r=4#p4517x4431', title: 'gegen Meuselwitzer SV', text: '2' }]
+    - xxx
+    - 1
+    - 5½
+    - absteiger

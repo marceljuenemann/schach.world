@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Kaltenkirche', url: '?mannschaft=1542', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=543&r=5#p1542x1532', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - [{ url: '?staffel=543&r=2#p1542x1514', title: 'gegen SV Quickborn', text: '2' }]
+    - [{ url: '?staffel=543&r=3#p1542x1520', title: 'gegen TuRa Harksheide', text: 2½ }]
+    - [{ url: '?staffel=543&r=1#p1542x1516', title: 'gegen Hamburger SK 2', text: 2½ }]
+    - [{ url: '?staffel=543&r=4#p1542x1523', title: 'gegen Post SV LWL', text: 3½ }]
+    - 9
+    - '13'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=1532', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=543&r=5#p1532x1542', title: 'gegen SK Kaltenkirche', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=543&r=3#p1532x1514', title: 'gegen SV Quickborn', text: '2' }]
+    - [{ url: '?staffel=543&r=4#p1532x1520', title: 'gegen TuRa Harksheide', text: '2' }]
+    - [{ url: '?staffel=543&r=2#p1532x1516', title: 'gegen Hamburger SK 2', text: 2½ }]
+    - [{ url: '?staffel=543&r=1#p1532x1523', title: 'gegen Post SV LWL', text: '3' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Quickborn', url: '?mannschaft=1514', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=543&r=2#p1514x1542', title: 'gegen SK Kaltenkirche', text: '2' }]
+    - [{ url: '?staffel=543&r=3#p1514x1532', title: 'gegen SK Lehrte 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=543&r=1#p1514x1520', title: 'gegen TuRa Harksheide', text: '3' }]
+    - [{ url: '?staffel=543&r=4#p1514x1516', title: 'gegen Hamburger SK 2', text: '1' }]
+    - [{ url: '?staffel=543&r=5#p1514x1523', title: 'gegen Post SV LWL', text: 2½ }]
+    - 6
+    - 10½
+    - ''
+-
+    - '4.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=1520', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=543&r=3#p1520x1542', title: 'gegen SK Kaltenkirche', text: 1½ }]
+    - [{ url: '?staffel=543&r=4#p1520x1532', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=543&r=1#p1520x1514', title: 'gegen SV Quickborn', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=543&r=5#p1520x1516', title: 'gegen Hamburger SK 2', text: 2½ }]
+    - [{ url: '?staffel=543&r=2#p1520x1523', title: 'gegen Post SV LWL', text: '4' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '5.'
+    - { text: 'Hamburger SK 2', url: '?mannschaft=1516', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=543&r=1#p1516x1542', title: 'gegen SK Kaltenkirche', text: 1½ }]
+    - [{ url: '?staffel=543&r=2#p1516x1532', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=543&r=4#p1516x1514', title: 'gegen SV Quickborn', text: '3' }]
+    - [{ url: '?staffel=543&r=5#p1516x1520', title: 'gegen TuRa Harksheide', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=543&r=3#p1516x1523', title: 'gegen Post SV LWL', text: '4' }]
+    - 4
+    - 11½
+    - absteiger
+-
+    - '6.'
+    - { text: 'Post SV LWL', url: '?mannschaft=1523', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=543&r=4#p1523x1542', title: 'gegen SK Kaltenkirche', text: ½ }]
+    - [{ url: '?staffel=543&r=1#p1523x1532', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=543&r=5#p1523x1514', title: 'gegen SV Quickborn', text: 1½ }]
+    - [{ url: '?staffel=543&r=2#p1523x1520', title: 'gegen TuRa Harksheide', text: '0' }]
+    - [{ url: '?staffel=543&r=3#p1523x1516', title: 'gegen Hamburger SK 2', text: '0' }]
+    - xxx
+    - 0
+    - '3'
+    - absteiger

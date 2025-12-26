@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Fürstenau 2', url: '?mannschaft=6654', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1602&r=5#p6654x6683', title: 'gegen SV Hellern 7', text: '4' }]
+    - [{ url: '?staffel=1602&r=4#p6654x6679', title: 'gegen SV Bad Essen 3', text: 1½ }]
+    - [{ url: '?staffel=1602&r=2#p6654x6650', title: 'gegen Hagener SV 5', text: '3' }]
+    - [{ url: '?staffel=1602&r=3#p6654x6691', title: 'gegen SV Osnabrück 6', text: '4' }]
+    - [{ url: '?staffel=1602&r=1#p6654x6696', title: 'gegen Gaste-Hasbergen 2', text: 3½ }]
+    - 8
+    - '16'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Hellern 7', url: '?mannschaft=6683', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1602&r=5#p6683x6654', title: 'gegen SC Fürstenau 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1602&r=3#p6683x6679', title: 'gegen SV Bad Essen 3', text: '3' }]
+    - [{ url: '?staffel=1602&r=4#p6683x6650', title: 'gegen Hagener SV 5', text: 2½ }]
+    - [{ url: '?staffel=1602&r=1#p6683x6691', title: 'gegen SV Osnabrück 6', text: '3' }]
+    - [{ url: '?staffel=1602&r=2#p6683x6696', title: 'gegen Gaste-Hasbergen 2', text: '3' }]
+    - 8
+    - 11½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bad Essen 3', url: '?mannschaft=6679', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1602&r=4#p6679x6654', title: 'gegen SC Fürstenau 2', text: 2½ }]
+    - [{ url: '?staffel=1602&r=3#p6679x6683', title: 'gegen SV Hellern 7', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1602&r=1#p6679x6650', title: 'gegen Hagener SV 5', text: '2' }]
+    - [{ url: '?staffel=1602&r=2#p6679x6691', title: 'gegen SV Osnabrück 6', text: '3' }]
+    - [{ url: '?staffel=1602&r=5#p6679x6696', title: 'gegen Gaste-Hasbergen 2', text: 2½ }]
+    - 7
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV 5', url: '?mannschaft=6650', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1602&r=2#p6650x6654', title: 'gegen SC Fürstenau 2', text: '1' }]
+    - [{ url: '?staffel=1602&r=4#p6650x6683', title: 'gegen SV Hellern 7', text: 1½ }]
+    - [{ url: '?staffel=1602&r=1#p6650x6679', title: 'gegen SV Bad Essen 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1602&r=5#p6650x6691', title: 'gegen SV Osnabrück 6', text: '2' }]
+    - [{ url: '?staffel=1602&r=3#p6650x6696', title: 'gegen Gaste-Hasbergen 2', text: '2' }]
+    - 3
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Osnabrück 6', url: '?mannschaft=6691', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1602&r=3#p6691x6654', title: 'gegen SC Fürstenau 2', text: '0' }]
+    - [{ url: '?staffel=1602&r=1#p6691x6683', title: 'gegen SV Hellern 7', text: '1' }]
+    - [{ url: '?staffel=1602&r=2#p6691x6679', title: 'gegen SV Bad Essen 3', text: '1' }]
+    - [{ url: '?staffel=1602&r=5#p6691x6650', title: 'gegen Hagener SV 5', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1602&r=4#p6691x6696', title: 'gegen Gaste-Hasbergen 2', text: '4' }]
+    - 3
+    - '8'
+    - ''
+-
+    - '6.'
+    - { text: 'Gaste-Hasbergen 2', url: '?mannschaft=6696', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1602&r=1#p6696x6654', title: 'gegen SC Fürstenau 2', text: ½ }]
+    - [{ url: '?staffel=1602&r=2#p6696x6683', title: 'gegen SV Hellern 7', text: '1' }]
+    - [{ url: '?staffel=1602&r=5#p6696x6679', title: 'gegen SV Bad Essen 3', text: 1½ }]
+    - [{ url: '?staffel=1602&r=3#p6696x6650', title: 'gegen Hagener SV 5', text: '2' }]
+    - [{ url: '?staffel=1602&r=4#p6696x6691', title: 'gegen SV Osnabrück 6', text: '0' }]
+    - xxx
+    - 1
+    - '5'
+    - ''

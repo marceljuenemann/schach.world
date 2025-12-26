@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Verden', url: '?mannschaft=6021', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1445&r=8#p6021x6038', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=1445&r=3#p6021x6028', title: 'gegen Peiner SV', text: '3' }]
+    - [{ url: '?staffel=1445&r=7#p6021x5985', title: 'gegen SZ Bemerode 2', text: 3½ }]
+    - [{ url: '?staffel=1445&r=1#p6021x6040', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=1445&r=6#p6021x6022', title: 'gegen SK Verden 2', text: '4' }]
+    - [{ url: '?staffel=1445&r=4#p6021x6029', title: 'gegen Peiner SV 2', text: 3½ }]
+    - 12
+    - '20'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=6038', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1445&r=8#p6038x6021', title: 'gegen SK Verden', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1445&r=1#p6038x6028', title: 'gegen Peiner SV', text: '3' }]
+    - [{ url: '?staffel=1445&r=4#p6038x5985', title: 'gegen SZ Bemerode 2', text: '3' }]
+    - [{ url: '?staffel=1445&r=5#p6038x6040', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=1445&r=7#p6038x6022', title: 'gegen SK Verden 2', text: '3' }]
+    - [{ url: '?staffel=1445&r=2#p6038x6029', title: 'gegen Peiner SV 2', text: '3' }]
+    - 10
+    - '16'
+    - ''
+-
+    - '3.'
+    - { text: 'Peiner SV', url: '?mannschaft=6028', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1445&r=3#p6028x6021', title: 'gegen SK Verden', text: '1' }]
+    - [{ url: '?staffel=1445&r=1#p6028x6038', title: 'gegen SD Isernhagen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1445&r=2#p6028x5985', title: 'gegen SZ Bemerode 2', text: '2' }]
+    - [{ url: '?staffel=1445&r=7#p6028x6040', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=1445&r=4#p6028x6022', title: 'gegen SK Verden 2', text: '4' }]
+    - [{ url: '?staffel=1445&r=6#p6028x6029', title: 'gegen Peiner SV 2', text: '4' }]
+    - 7
+    - '16'
+    - ''
+-
+    - '4.'
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=5985', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1445&r=7#p5985x6021', title: 'gegen SK Verden', text: ½ }]
+    - [{ url: '?staffel=1445&r=4#p5985x6038', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1445&r=2#p5985x6028', title: 'gegen Peiner SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1445&r=3#p5985x6040', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=1445&r=8#p5985x6022', title: 'gegen SK Verden 2', text: '2' }]
+    - [{ url: '?staffel=1445&r=1#p5985x6029', title: 'gegen Peiner SV 2', text: '4' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Springe', url: '?mannschaft=6040', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1445&r=1#p6040x6021', title: 'gegen SK Verden', text: '1' }]
+    - [{ url: '?staffel=1445&r=5#p6040x6038', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1445&r=7#p6040x6028', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1445&r=3#p6040x5985', title: 'gegen SZ Bemerode 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1445&r=2#p6040x6022', title: 'gegen SK Verden 2', text: 2½ }]
+    - [{ url: '?staffel=1445&r=8#p6040x6029', title: 'gegen Peiner SV 2', text: '4' }]
+    - 5
+    - 10½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Verden 2', url: '?mannschaft=6022', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1445&r=6#p6022x6021', title: 'gegen SK Verden', text: '0' }]
+    - [{ url: '?staffel=1445&r=7#p6022x6038', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1445&r=4#p6022x6028', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1445&r=8#p6022x5985', title: 'gegen SZ Bemerode 2', text: '2' }]
+    - [{ url: '?staffel=1445&r=2#p6022x6040', title: 'gegen SV Springe', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1445&r=3#p6022x6029', title: 'gegen Peiner SV 2', text: '2' }]
+    - 2
+    - 6½
+    - ''
+-
+    - '7.'
+    - { text: 'Peiner SV 2', url: '?mannschaft=6029', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1445&r=4#p6029x6021', title: 'gegen SK Verden', text: ½ }]
+    - [{ url: '?staffel=1445&r=2#p6029x6038', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1445&r=6#p6029x6028', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1445&r=1#p6029x5985', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1445&r=8#p6029x6040', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1445&r=3#p6029x6022', title: 'gegen SK Verden 2', text: '2' }]
+    - xxx
+    - 1
+    - 3½
+    - ''

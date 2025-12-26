@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=3632', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=805&r=4#p3632x3713', title: 'gegen SF Hannover', text: '1' }]
+    - [{ url: '?staffel=805&r=2#p3632x3748', title: 'gegen SK Rinteln', text: '5' }]
+    - [{ url: '?staffel=805&r=7#p3632x3497', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=805&r=3#p3632x3750', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=805&r=1#p3632x3706', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=805&r=5#p3632x3755', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=805&r=6#p3632x3690', title: 'gegen Eystruper SK', text: 3½ }]
+    - 12
+    - 23½
+    - ''
+-
+    - '2.'
+    - { text: 'SF Hannover', url: '?mannschaft=3713', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=805&r=4#p3713x3632', title: 'gegen SK Ricklingen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=805&r=7#p3713x3748', title: 'gegen SK Rinteln', text: '2' }]
+    - [{ url: '?staffel=805&r=3#p3713x3497', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=805&r=2#p3713x3750', title: 'gegen Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=805&r=5#p3713x3706', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=805&r=6#p3713x3755', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=805&r=1#p3713x3690', title: 'gegen Eystruper SK', text: '3' }]
+    - 11
+    - '19'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Rinteln', url: '?mannschaft=3748', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=805&r=2#p3748x3632', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=805&r=7#p3748x3713', title: 'gegen SF Hannover', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=805&r=5#p3748x3497', title: 'gegen Hannover 96', text: 2½ }]
+    - [{ url: '?staffel=805&r=1#p3748x3750', title: 'gegen Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=805&r=6#p3748x3706', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=805&r=3#p3748x3755', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=805&r=4#p3748x3690', title: 'gegen Eystruper SK', text: '3' }]
+    - 9
+    - '17'
+    - ''
+-
+    - '4.'
+    - { text: 'Hannover 96', url: '?mannschaft=3497', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=805&r=7#p3497x3632', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=805&r=3#p3497x3713', title: 'gegen SF Hannover', text: '2' }]
+    - [{ url: '?staffel=805&r=5#p3497x3748', title: 'gegen SK Rinteln', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=805&r=6#p3497x3750', title: 'gegen Barsinghausen', text: 2½ }]
+    - [{ url: '?staffel=805&r=4#p3497x3706', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=805&r=1#p3497x3755', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=805&r=2#p3497x3690', title: 'gegen Eystruper SK', text: '3' }]
+    - 9
+    - '16'
+    - ''
+-
+    - '5.'
+    - { text: Barsinghausen, url: '?mannschaft=3750', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=805&r=3#p3750x3632', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=805&r=2#p3750x3713', title: 'gegen SF Hannover', text: '2' }]
+    - [{ url: '?staffel=805&r=1#p3750x3748', title: 'gegen SK Rinteln', text: ½ }]
+    - [{ url: '?staffel=805&r=6#p3750x3497', title: 'gegen Hannover 96', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=805&r=7#p3750x3706', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=805&r=4#p3750x3755', title: 'gegen TuS Wunstorf', text: 3½ }]
+    - [{ url: '?staffel=805&r=5#p3750x3690', title: 'gegen Eystruper SK', text: 3½ }]
+    - 7
+    - '14'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=3706', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=805&r=1#p3706x3632', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=805&r=5#p3706x3713', title: 'gegen SF Hannover', text: '1' }]
+    - [{ url: '?staffel=805&r=6#p3706x3748', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=805&r=4#p3706x3497', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=805&r=7#p3706x3750', title: 'gegen Barsinghausen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=805&r=2#p3706x3755', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=805&r=3#p3706x3690', title: 'gegen Eystruper SK', text: '3' }]
+    - 6
+    - '14'
+    - ''
+-
+    - '7.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=3755', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=805&r=5#p3755x3632', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=805&r=6#p3755x3713', title: 'gegen SF Hannover', text: '0' }]
+    - [{ url: '?staffel=805&r=3#p3755x3748', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=805&r=1#p3755x3497', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=805&r=4#p3755x3750', title: 'gegen Barsinghausen', text: ½ }]
+    - [{ url: '?staffel=805&r=2#p3755x3706', title: 'gegen SV Bückeburg', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=805&r=7#p3755x3690', title: 'gegen Eystruper SK', text: '3' }]
+    - 2
+    - 4½
+    - ''
+-
+    - '8.'
+    - { text: 'Eystruper SK', url: '?mannschaft=3690', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=805&r=6#p3690x3632', title: 'gegen SK Ricklingen', text: ½ }]
+    - [{ url: '?staffel=805&r=1#p3690x3713', title: 'gegen SF Hannover', text: '1' }]
+    - [{ url: '?staffel=805&r=4#p3690x3748', title: 'gegen SK Rinteln', text: '1' }]
+    - [{ url: '?staffel=805&r=2#p3690x3497', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=805&r=5#p3690x3750', title: 'gegen Barsinghausen', text: ½ }]
+    - [{ url: '?staffel=805&r=3#p3690x3706', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=805&r=7#p3690x3755', title: 'gegen TuS Wunstorf', text: '1' }]
+    - xxx
+    - 0
+    - '6'
+    - ''

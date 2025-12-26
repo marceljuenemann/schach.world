@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=2063', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=607&r=1#p2063x2031', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=607&r=5#p2063x2097', title: 'gegen Laatzen / Gleid 2', text: '3' }]
+    - [{ url: '?staffel=607&r=4#p2063x2038', title: 'gegen Eystruper SK', text: 3½ }]
+    - [{ url: '?staffel=607&r=3#p2063x2141', title: 'gegen Freib. Wedemark', text: 3½ }]
+    - 8
+    - '13'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=2031', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=607&r=1#p2031x2063', title: 'gegen SK Lehrte', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=607&r=4#p2031x2097', title: 'gegen Laatzen / Gleid 2', text: '3' }]
+    - [{ url: '?staffel=607&r=3#p2031x2038', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=607&r=2#p2031x2141', title: 'gegen Freib. Wedemark', text: '3' }]
+    - 6
+    - '10'
+    - ''
+-
+    - '3.'
+    - { text: 'Laatzen / Gleid 2', url: '?mannschaft=2097', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=607&r=5#p2097x2063', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=607&r=4#p2097x2031', title: 'gegen SK Ricklingen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=607&r=2#p2097x2038', title: 'gegen Eystruper SK', text: '2' }]
+    - [{ url: '?staffel=607&r=1#p2097x2141', title: 'gegen Freib. Wedemark', text: '2' }]
+    - 2
+    - '6'
+    - ''
+-
+    - '4.'
+    - { text: 'Eystruper SK', url: '?mannschaft=2038', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=607&r=4#p2038x2063', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=607&r=3#p2038x2031', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=607&r=2#p2038x2097', title: 'gegen Laatzen / Gleid 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=607&r=5#p2038x2141', title: 'gegen Freib. Wedemark', text: '2' }]
+    - 2
+    - 5½
+    - ''
+-
+    - '4.'
+    - { text: 'Freib. Wedemark', url: '?mannschaft=2141', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=607&r=3#p2141x2063', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=607&r=2#p2141x2031', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=607&r=1#p2141x2097', title: 'gegen Laatzen / Gleid 2', text: '2' }]
+    - [{ url: '?staffel=607&r=5#p2141x2038', title: 'gegen Eystruper SK', text: '2' }]
+    - xxx
+    - 2
+    - 5½
+    - ''

@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'OSG Baden-Baden 2', url: '?mannschaft=1866', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=582&r=5#p1866x1838', title: 'gegen SC Unterpfaffen', text: 3½ }]
+    - [{ url: '?staffel=582&r=4#p1866x1888', title: 'gegen SC Uttenreuth', text: '4' }]
+    - [{ url: '?staffel=582&r=6#p1866x1843', title: 'gegen Karlsruher SF 2', text: '2' }]
+    - [{ url: '?staffel=582&r=2#p1866x1835', title: 'gegen Sfr. Heidesheim', text: '4' }]
+    - 7
+    - 13½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Unterpfaffen', url: '?mannschaft=1838', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=582&r=5#p1838x1866', title: 'gegen OSG Baden-Baden 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=582&r=2#p1838x1888', title: 'gegen SC Uttenreuth', text: '3' }]
+    - [{ url: '?staffel=582&r=1#p1838x1843', title: 'gegen Karlsruher SF 2', text: 3½ }]
+    - [{ url: '?staffel=582&r=6#p1838x1835', title: 'gegen Sfr. Heidesheim', text: '4' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'SC Uttenreuth', url: '?mannschaft=1888', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=582&r=4#p1888x1866', title: 'gegen OSG Baden-Baden 2', text: '0' }]
+    - [{ url: '?staffel=582&r=2#p1888x1838', title: 'gegen SC Unterpfaffen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=582&r=5#p1888x1843', title: 'gegen Karlsruher SF 2', text: '4' }]
+    - [{ url: '?staffel=582&r=1#p1888x1835', title: 'gegen Sfr. Heidesheim', text: '4' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'Karlsruher SF 2', url: '?mannschaft=1843', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=582&r=6#p1843x1866', title: 'gegen OSG Baden-Baden 2', text: '2' }]
+    - [{ url: '?staffel=582&r=1#p1843x1838', title: 'gegen SC Unterpfaffen', text: ½ }]
+    - [{ url: '?staffel=582&r=5#p1843x1888', title: 'gegen SC Uttenreuth', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=582&r=4#p1843x1835', title: 'gegen Sfr. Heidesheim', text: '4' }]
+    - 3
+    - 6½
+    - ''
+-
+    - '5.'
+    - { text: 'Sfr. Heidesheim', url: '?mannschaft=1835', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=582&r=2#p1835x1866', title: 'gegen OSG Baden-Baden 2', text: '0' }]
+    - [{ url: '?staffel=582&r=6#p1835x1838', title: 'gegen SC Unterpfaffen', text: '0' }]
+    - [{ url: '?staffel=582&r=1#p1835x1888', title: 'gegen SC Uttenreuth', text: '0' }]
+    - [{ url: '?staffel=582&r=4#p1835x1843', title: 'gegen Karlsruher SF 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

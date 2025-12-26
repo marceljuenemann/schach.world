@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Spelle 4', url: '?mannschaft=4012', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=892&r=1#p4012x4015', title: 'gegen TuS Aschendorf 3', text: '0' }, { url: '?staffel=892&r=6#p4012x4015', title: 'gegen TuS Aschendorf 3', text: '3' }]
+    - [{ url: '?staffel=892&r=4#p4012x4013', title: 'gegen SK Nordhorn-Bl. 9', text: '2' }, { url: '?staffel=892&r=9#p4012x4013', title: 'gegen SK Nordhorn-Bl. 9', text: '3' }]
+    - [{ url: '?staffel=892&r=5#p4012x4011', title: 'gegen SV Lingen 5', text: '2' }, { url: '?staffel=892&r=10#p4012x4011', title: 'gegen SV Lingen 5', text: 2½ }]
+    - [{ url: '?staffel=892&r=2#p4012x4119', title: 'gegen SK Nordhorn-Bl. 10', text: '3' }, { url: '?staffel=892&r=7#p4012x4119', title: 'gegen SK Nordhorn-Bl. 10', text: '3' }]
+    - [{ url: '?staffel=892&r=3#p4012x4014', title: 'gegen SV Lingen 6', text: 3½ }, { url: '?staffel=892&r=8#p4012x4014', title: 'gegen SV Lingen 6', text: '3' }]
+    - 16
+    - '25'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TuS Aschendorf 3', url: '?mannschaft=4015', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=892&r=1#p4015x4012', title: 'gegen SF Spelle 4', text: '4' }, { url: '?staffel=892&r=6#p4015x4012', title: 'gegen SF Spelle 4', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=892&r=5#p4015x4013', title: 'gegen SK Nordhorn-Bl. 9', text: 1½ }, { url: '?staffel=892&r=10#p4015x4013', title: 'gegen SK Nordhorn-Bl. 9', text: '2' }]
+    - [{ url: '?staffel=892&r=2#p4015x4011', title: 'gegen SV Lingen 5', text: '2' }, { url: '?staffel=892&r=7#p4015x4011', title: 'gegen SV Lingen 5', text: '4' }]
+    - [{ url: '?staffel=892&r=3#p4015x4119', title: 'gegen SK Nordhorn-Bl. 10', text: '3' }, { url: '?staffel=892&r=8#p4015x4119', title: 'gegen SK Nordhorn-Bl. 10', text: 2½ }]
+    - [{ url: '?staffel=892&r=4#p4015x4014', title: 'gegen SV Lingen 6', text: '4' }, { url: '?staffel=892&r=9#p4015x4014', title: 'gegen SV Lingen 6', text: 3½ }]
+    - 14
+    - 27½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SK Nordhorn-Bl. 9', url: '?mannschaft=4013', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=892&r=4#p4013x4012', title: 'gegen SF Spelle 4', text: '2' }, { url: '?staffel=892&r=9#p4013x4012', title: 'gegen SF Spelle 4', text: '1' }]
+    - [{ url: '?staffel=892&r=5#p4013x4015', title: 'gegen TuS Aschendorf 3', text: 2½ }, { url: '?staffel=892&r=10#p4013x4015', title: 'gegen TuS Aschendorf 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=892&r=3#p4013x4011', title: 'gegen SV Lingen 5', text: '1' }, { url: '?staffel=892&r=8#p4013x4011', title: 'gegen SV Lingen 5', text: '1' }]
+    - [{ url: '?staffel=892&r=1#p4013x4119', title: 'gegen SK Nordhorn-Bl. 10', text: '3' }, { url: '?staffel=892&r=6#p4013x4119', title: 'gegen SK Nordhorn-Bl. 10', text: '4' }]
+    - [{ url: '?staffel=892&r=2#p4013x4014', title: 'gegen SV Lingen 6', text: '4' }, { url: '?staffel=892&r=7#p4013x4014', title: 'gegen SV Lingen 6', text: '3' }]
+    - 12
+    - 23½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Lingen 5', url: '?mannschaft=4011', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=892&r=5#p4011x4012', title: 'gegen SF Spelle 4', text: '2' }, { url: '?staffel=892&r=10#p4011x4012', title: 'gegen SF Spelle 4', text: 1½ }]
+    - [{ url: '?staffel=892&r=2#p4011x4015', title: 'gegen TuS Aschendorf 3', text: '2' }, { url: '?staffel=892&r=7#p4011x4015', title: 'gegen TuS Aschendorf 3', text: '0' }]
+    - [{ url: '?staffel=892&r=3#p4011x4013', title: 'gegen SK Nordhorn-Bl. 9', text: '3' }, { url: '?staffel=892&r=8#p4011x4013', title: 'gegen SK Nordhorn-Bl. 9', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=892&r=4#p4011x4119', title: 'gegen SK Nordhorn-Bl. 10', text: '1' }, { url: '?staffel=892&r=9#p4011x4119', title: 'gegen SK Nordhorn-Bl. 10', text: '2' }]
+    - [{ url: '?staffel=892&r=1#p4011x4014', title: 'gegen SV Lingen 6', text: 2½ }, { url: '?staffel=892&r=6#p4011x4014', title: 'gegen SV Lingen 6', text: '1' }]
+    - 9
+    - '18'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Nordhorn-Bl. 10', url: '?mannschaft=4119', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=892&r=2#p4119x4012', title: 'gegen SF Spelle 4', text: '1' }, { url: '?staffel=892&r=7#p4119x4012', title: 'gegen SF Spelle 4', text: '1' }]
+    - [{ url: '?staffel=892&r=3#p4119x4015', title: 'gegen TuS Aschendorf 3', text: '1' }, { url: '?staffel=892&r=8#p4119x4015', title: 'gegen TuS Aschendorf 3', text: 1½ }]
+    - [{ url: '?staffel=892&r=1#p4119x4013', title: 'gegen SK Nordhorn-Bl. 9', text: '1' }, { url: '?staffel=892&r=6#p4119x4013', title: 'gegen SK Nordhorn-Bl. 9', text: '0' }]
+    - [{ url: '?staffel=892&r=4#p4119x4011', title: 'gegen SV Lingen 5', text: '3' }, { url: '?staffel=892&r=9#p4119x4011', title: 'gegen SV Lingen 5', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=892&r=5#p4119x4014', title: 'gegen SV Lingen 6', text: 2½ }, { url: '?staffel=892&r=10#p4119x4014', title: 'gegen SV Lingen 6', text: '2' }]
+    - 6
+    - '15'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Lingen 6', url: '?mannschaft=4014', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=892&r=3#p4014x4012', title: 'gegen SF Spelle 4', text: ½ }, { url: '?staffel=892&r=8#p4014x4012', title: 'gegen SF Spelle 4', text: '1' }]
+    - [{ url: '?staffel=892&r=4#p4014x4015', title: 'gegen TuS Aschendorf 3', text: '0' }, { url: '?staffel=892&r=9#p4014x4015', title: 'gegen TuS Aschendorf 3', text: ½ }]
+    - [{ url: '?staffel=892&r=2#p4014x4013', title: 'gegen SK Nordhorn-Bl. 9', text: '0' }, { url: '?staffel=892&r=7#p4014x4013', title: 'gegen SK Nordhorn-Bl. 9', text: '1' }]
+    - [{ url: '?staffel=892&r=1#p4014x4011', title: 'gegen SV Lingen 5', text: 1½ }, { url: '?staffel=892&r=6#p4014x4011', title: 'gegen SV Lingen 5', text: '3' }]
+    - [{ url: '?staffel=892&r=5#p4014x4119', title: 'gegen SK Nordhorn-Bl. 10', text: 1½ }, { url: '?staffel=892&r=10#p4014x4119', title: 'gegen SK Nordhorn-Bl. 10', text: '2' }]
+    - xxx
+    - 3
+    - '11'
+    - ''

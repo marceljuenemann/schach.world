@@ -38,25 +38,38 @@ Some useful commands for Symfony development:
 
 ### Running tests
 
-Some of the league manager tests run against an actual database. If you use the docker environment, a separate test database is already set up for you. However, you still need to fill in test data (*fixtures*) with the following command:
-
-`./bin/console --env=test --em=league doctrine:fixtures:load` 
-
-You can then run the tests with
+You can run the tests with
 
 `./bin/phpunit`
 
-Note that many of the league manager tests just dump the API output into a text file and compare it with the expected output. Use a diff tool like `meld` to compare the files in `tests/League/Api/Service/` and update the `expected` output if the changes were intended.
+You might want to run this from the docker webserver container if you don't have the appropriate PHP version installed on your host.
 
-If you do change the fixtures, you will need to rerun the command from above again to fill the test database. However, if you want to make sure that the IDs stay the same, you should first empty the database tables of `nsv-ligen-test` manually via PhpMyAdmin. TODO: Make this work using the `--purge-with-truncate` flag.
+### Updating test snapshots
+
+Many of the tests run against the actual database docker container and the league manager test cases make extensive
+use of the anonymized production database dump in order to have meaningful tests. In addition, [snapshot tests](https://github.com/spatie/phpunit-snapshot-assertions)
+are used for large test coverage with minimal test setup. If you expect snapshots to change, run tests with 
+
+`./bin/phpunit -d --update-snapshots`
+
+and check that the snapshot changes are expected before opening a pull request.
+
+### Test coverage
+
+You can generate a test coverage report with
+
+`XDEBUG_MODE=coverage ./bin/phpunit --coverage-html var/coverage`
+
+This is also generated as part of the GitHub workflow.
+
+### Angular Development
+
+The more interactive components of the frontend are gradually being rewritten in Angular. See [ng](ng/README.md)
+for instructions.
 
 ### React Development
 
-Some of the most recent frontend code uses React components. You can find the code and instructions for that in the [javascript](javascript/README.md) folder. 
-
-### Debugging with XDebug
-
-*TODO: XDebug is already installed in Docker. Just need to enable it in php.ini and add instructions*
+A few components were written in React before I decided to move to Angular. You can find the code and instructions for those in the [javascript](javascript/README.md) folder. 
 
 ## Migrations
 
@@ -64,3 +77,4 @@ The most recent DB changes should be applied using Doctrine migrations with the 
 
 `./bin/console doctrine:migrations:migrate --em main`
 
+TODO: Add to CI.

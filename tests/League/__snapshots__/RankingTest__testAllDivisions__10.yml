@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=462', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=406&r=3#p462x460', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=406&r=7#p462x461', title: 'gegen SK Neustadt', text: 3½ }]
+    - [{ url: '?staffel=406&r=6#p462x464', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=406&r=5#p462x463', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=406&r=1#p462x459', title: 'gegen SK Verden', text: 3½ }]
+    - [{ url: '?staffel=406&r=4#p462x465', title: 'gegen SF Buxtehude', text: 3½ }]
+    - [{ url: '?staffel=406&r=2#p462x466', title: 'gegen SK Rinteln', text: '3' }]
+    - 11
+    - 22½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=460', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=406&r=3#p460x462', title: 'gegen SC Stadthagen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=406&r=1#p460x461', title: 'gegen SK Neustadt', text: '2' }]
+    - [{ url: '?staffel=406&r=2#p460x464', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=406&r=4#p460x463', title: 'gegen SK Ricklingen 2', text: 5½ }]
+    - [{ url: '?staffel=406&r=5#p460x459', title: 'gegen SK Verden', text: 1½ }]
+    - [{ url: '?staffel=406&r=7#p460x465', title: 'gegen SF Buxtehude', text: '6' }]
+    - [{ url: '?staffel=406&r=6#p460x466', title: 'gegen SK Rinteln', text: '6' }]
+    - 10
+    - 29½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Neustadt', url: '?mannschaft=461', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=406&r=7#p461x462', title: 'gegen SC Stadthagen', text: 2½ }]
+    - [{ url: '?staffel=406&r=1#p461x460', title: 'gegen SK Lehrte 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=406&r=5#p461x464', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=406&r=3#p461x463', title: 'gegen SK Ricklingen 2', text: '3' }]
+    - [{ url: '?staffel=406&r=2#p461x459', title: 'gegen SK Verden', text: '3' }]
+    - [{ url: '?staffel=406&r=6#p461x465', title: 'gegen SF Buxtehude', text: 2½ }]
+    - [{ url: '?staffel=406&r=4#p461x466', title: 'gegen SK Rinteln', text: 3½ }]
+    - 8
+    - '21'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=464', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=406&r=6#p464x462', title: 'gegen SC Stadthagen', text: 2½ }]
+    - [{ url: '?staffel=406&r=2#p464x460', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=406&r=5#p464x461', title: 'gegen SK Neustadt', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=406&r=7#p464x463', title: 'gegen SK Ricklingen 2', text: '5' }]
+    - [{ url: '?staffel=406&r=4#p464x459', title: 'gegen SK Verden', text: '5' }]
+    - [{ url: '?staffel=406&r=1#p464x465', title: 'gegen SF Buxtehude', text: '3' }]
+    - [{ url: '?staffel=406&r=3#p464x466', title: 'gegen SK Rinteln', text: '4' }]
+    - 7
+    - '24'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=463', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=406&r=5#p463x462', title: 'gegen SC Stadthagen', text: '2' }]
+    - [{ url: '?staffel=406&r=4#p463x460', title: 'gegen SK Lehrte 2', text: ½ }]
+    - [{ url: '?staffel=406&r=3#p463x461', title: 'gegen SK Neustadt', text: '3' }]
+    - [{ url: '?staffel=406&r=7#p463x464', title: 'gegen SV Bückeburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=406&r=6#p463x459', title: 'gegen SK Verden', text: '3' }]
+    - [{ url: '?staffel=406&r=2#p463x465', title: 'gegen SF Buxtehude', text: '6' }]
+    - [{ url: '?staffel=406&r=1#p463x466', title: 'gegen SK Rinteln', text: 5½ }]
+    - 6
+    - '21'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Verden', url: '?mannschaft=459', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=406&r=1#p459x462', title: 'gegen SC Stadthagen', text: 2½ }]
+    - [{ url: '?staffel=406&r=5#p459x460', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=406&r=2#p459x461', title: 'gegen SK Neustadt', text: '3' }]
+    - [{ url: '?staffel=406&r=4#p459x464', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=406&r=6#p459x463', title: 'gegen SK Ricklingen 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=406&r=3#p459x465', title: 'gegen SF Buxtehude', text: '6' }]
+    - [{ url: '?staffel=406&r=7#p459x466', title: 'gegen SK Rinteln', text: '0' }]
+    - 6
+    - '20'
+    - ''
+-
+    - '7.'
+    - { text: 'SF Buxtehude', url: '?mannschaft=465', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=406&r=4#p465x462', title: 'gegen SC Stadthagen', text: 2½ }]
+    - [{ url: '?staffel=406&r=7#p465x460', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=406&r=6#p465x461', title: 'gegen SK Neustadt', text: 3½ }]
+    - [{ url: '?staffel=406&r=1#p465x464', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=406&r=2#p465x463', title: 'gegen SK Ricklingen 2', text: '0' }]
+    - [{ url: '?staffel=406&r=3#p465x459', title: 'gegen SK Verden', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=406&r=5#p465x466', title: 'gegen SK Rinteln', text: '6' }]
+    - 5
+    - '15'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Rinteln', url: '?mannschaft=466', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=406&r=2#p466x462', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=406&r=6#p466x460', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=406&r=4#p466x461', title: 'gegen SK Neustadt', text: 2½ }]
+    - [{ url: '?staffel=406&r=3#p466x464', title: 'gegen SV Bückeburg', text: '2' }]
+    - [{ url: '?staffel=406&r=1#p466x463', title: 'gegen SK Ricklingen 2', text: ½ }]
+    - [{ url: '?staffel=406&r=7#p466x459', title: 'gegen SK Verden', text: '6' }]
+    - [{ url: '?staffel=406&r=5#p466x465', title: 'gegen SF Buxtehude', text: '0' }]
+    - xxx
+    - 3
+    - '14'
+    - ''

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=1210', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=508&r=6#p1210x1245', title: 'gegen Marienw/Gar/See 2', text: '6' }]
+    - [{ url: '?staffel=508&r=3#p1210x1246', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=508&r=2#p1210x1242', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=508&r=8#p1210x1243', title: 'gegen SF Mühlenberg', text: 4½ }]
+    - [{ url: '?staffel=508&r=7#p1210x1226', title: 'gegen SK Neustadt 2', text: 5½ }]
+    - [{ url: '?staffel=508&r=5#p1210x1216', title: 'gegen SG Eldagsen/BM 2', text: '7' }]
+    - [{ url: '?staffel=508&r=1#p1210x1239', title: 'gegen SK Stolzenau 2', text: 5½ }]
+    - [{ url: '?staffel=508&r=4#p1210x1205', title: 'gegen SV Warmsen', text: 5½ }]
+    - [{ url: '?staffel=508&r=9#p1210x1232', title: 'gegen SK Ricklingen 3', text: 5½ }]
+    - 17
+    - '48'
+    - ''
+-
+    - '2.'
+    - { text: 'Marienw/Gar/See 2', url: '?mannschaft=1245', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=508&r=6#p1245x1210', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=508&r=9#p1245x1246', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=508&r=4#p1245x1242', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=508&r=7#p1245x1243', title: 'gegen SF Mühlenberg', text: '4' }]
+    - [{ url: '?staffel=508&r=2#p1245x1226', title: 'gegen SK Neustadt 2', text: 5½ }]
+    - [{ url: '?staffel=508&r=1#p1245x1216', title: 'gegen SG Eldagsen/BM 2', text: 6½ }]
+    - [{ url: '?staffel=508&r=8#p1245x1239', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - [{ url: '?staffel=508&r=5#p1245x1205', title: 'gegen SV Warmsen', text: '6' }]
+    - [{ url: '?staffel=508&r=3#p1245x1232', title: 'gegen SK Ricklingen 3', text: '8' }]
+    - 15
+    - 46½
+    - ''
+-
+    - '3.'
+    - { text: 'Eystruper SK', url: '?mannschaft=1246', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=508&r=3#p1246x1210', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=508&r=9#p1246x1245', title: 'gegen Marienw/Gar/See 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=508&r=7#p1246x1242', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=508&r=1#p1246x1243', title: 'gegen SF Mühlenberg', text: '4' }]
+    - [{ url: '?staffel=508&r=5#p1246x1226', title: 'gegen SK Neustadt 2', text: '5' }]
+    - [{ url: '?staffel=508&r=4#p1246x1216', title: 'gegen SG Eldagsen/BM 2', text: 5½ }]
+    - [{ url: '?staffel=508&r=2#p1246x1239', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - [{ url: '?staffel=508&r=8#p1246x1205', title: 'gegen SV Warmsen', text: 4½ }]
+    - [{ url: '?staffel=508&r=6#p1246x1232', title: 'gegen SK Ricklingen 3', text: '6' }]
+    - 14
+    - 41½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=1242', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=508&r=2#p1242x1210', title: 'gegen SV Bückeburg 2', text: 3½ }]
+    - [{ url: '?staffel=508&r=4#p1242x1245', title: 'gegen Marienw/Gar/See 2', text: 3½ }]
+    - [{ url: '?staffel=508&r=7#p1242x1246', title: 'gegen Eystruper SK', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=508&r=5#p1242x1243', title: 'gegen SF Mühlenberg', text: '5' }]
+    - [{ url: '?staffel=508&r=9#p1242x1226', title: 'gegen SK Neustadt 2', text: '6' }]
+    - [{ url: '?staffel=508&r=8#p1242x1216', title: 'gegen SG Eldagsen/BM 2', text: '7' }]
+    - [{ url: '?staffel=508&r=6#p1242x1239', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - [{ url: '?staffel=508&r=3#p1242x1205', title: 'gegen SV Warmsen', text: '7' }]
+    - [{ url: '?staffel=508&r=1#p1242x1232', title: 'gegen SK Ricklingen 3', text: 6½ }]
+    - 12
+    - '47'
+    - ''
+-
+    - '5.'
+    - { text: 'SF Mühlenberg', url: '?mannschaft=1243', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=508&r=8#p1243x1210', title: 'gegen SV Bückeburg 2', text: 3½ }]
+    - [{ url: '?staffel=508&r=7#p1243x1245', title: 'gegen Marienw/Gar/See 2', text: '4' }]
+    - [{ url: '?staffel=508&r=1#p1243x1246', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=508&r=5#p1243x1242', title: 'gegen SK Wennigsen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=508&r=3#p1243x1226', title: 'gegen SK Neustadt 2', text: '3' }]
+    - [{ url: '?staffel=508&r=2#p1243x1216', title: 'gegen SG Eldagsen/BM 2', text: '5' }]
+    - [{ url: '?staffel=508&r=9#p1243x1239', title: 'gegen SK Stolzenau 2', text: '6' }]
+    - [{ url: '?staffel=508&r=6#p1243x1205', title: 'gegen SV Warmsen', text: '7' }]
+    - [{ url: '?staffel=508&r=4#p1243x1232', title: 'gegen SK Ricklingen 3', text: '5' }]
+    - 10
+    - 40½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Neustadt 2', url: '?mannschaft=1226', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=508&r=7#p1226x1210', title: 'gegen SV Bückeburg 2', text: 2½ }]
+    - [{ url: '?staffel=508&r=2#p1226x1245', title: 'gegen Marienw/Gar/See 2', text: 2½ }]
+    - [{ url: '?staffel=508&r=5#p1226x1246', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=508&r=9#p1226x1242', title: 'gegen SK Wennigsen', text: '2' }]
+    - [{ url: '?staffel=508&r=3#p1226x1243', title: 'gegen SF Mühlenberg', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=508&r=6#p1226x1216', title: 'gegen SG Eldagsen/BM 2', text: 5½ }]
+    - [{ url: '?staffel=508&r=4#p1226x1239', title: 'gegen SK Stolzenau 2', text: 5½ }]
+    - [{ url: '?staffel=508&r=1#p1226x1205', title: 'gegen SV Warmsen', text: '5' }]
+    - [{ url: '?staffel=508&r=8#p1226x1232', title: 'gegen SK Ricklingen 3', text: 4½ }]
+    - 10
+    - 35½
+    - ''
+-
+    - '7.'
+    - { text: 'SG Eldagsen/BM 2', url: '?mannschaft=1216', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=508&r=5#p1216x1210', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - [{ url: '?staffel=508&r=1#p1216x1245', title: 'gegen Marienw/Gar/See 2', text: 1½ }]
+    - [{ url: '?staffel=508&r=4#p1216x1246', title: 'gegen Eystruper SK', text: 2½ }]
+    - [{ url: '?staffel=508&r=8#p1216x1242', title: 'gegen SK Wennigsen', text: '1' }]
+    - [{ url: '?staffel=508&r=2#p1216x1243', title: 'gegen SF Mühlenberg', text: '3' }]
+    - [{ url: '?staffel=508&r=6#p1216x1226', title: 'gegen SK Neustadt 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=508&r=3#p1216x1239', title: 'gegen SK Stolzenau 2', text: 5½ }]
+    - [{ url: '?staffel=508&r=9#p1216x1205', title: 'gegen SV Warmsen', text: '5' }]
+    - [{ url: '?staffel=508&r=7#p1216x1232', title: 'gegen SK Ricklingen 3', text: '4' }]
+    - 5
+    - '26'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Stolzenau 2', url: '?mannschaft=1239', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=508&r=1#p1239x1210', title: 'gegen SV Bückeburg 2', text: 2½ }]
+    - [{ url: '?staffel=508&r=8#p1239x1245', title: 'gegen Marienw/Gar/See 2', text: '3' }]
+    - [{ url: '?staffel=508&r=2#p1239x1246', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=508&r=6#p1239x1242', title: 'gegen SK Wennigsen', text: '3' }]
+    - [{ url: '?staffel=508&r=9#p1239x1243', title: 'gegen SF Mühlenberg', text: '2' }]
+    - [{ url: '?staffel=508&r=4#p1239x1226', title: 'gegen SK Neustadt 2', text: 2½ }]
+    - [{ url: '?staffel=508&r=3#p1239x1216', title: 'gegen SG Eldagsen/BM 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=508&r=7#p1239x1205', title: 'gegen SV Warmsen', text: 5½ }]
+    - [{ url: '?staffel=508&r=5#p1239x1232', title: 'gegen SK Ricklingen 3', text: '5' }]
+    - 4
+    - '29'
+    - ''
+-
+    - '9.'
+    - { text: 'SV Warmsen', url: '?mannschaft=1205', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=508&r=4#p1205x1210', title: 'gegen SV Bückeburg 2', text: 2½ }]
+    - [{ url: '?staffel=508&r=5#p1205x1245', title: 'gegen Marienw/Gar/See 2', text: '2' }]
+    - [{ url: '?staffel=508&r=8#p1205x1246', title: 'gegen Eystruper SK', text: 3½ }]
+    - [{ url: '?staffel=508&r=3#p1205x1242', title: 'gegen SK Wennigsen', text: '1' }]
+    - [{ url: '?staffel=508&r=6#p1205x1243', title: 'gegen SF Mühlenberg', text: '1' }]
+    - [{ url: '?staffel=508&r=1#p1205x1226', title: 'gegen SK Neustadt 2', text: '3' }]
+    - [{ url: '?staffel=508&r=9#p1205x1216', title: 'gegen SG Eldagsen/BM 2', text: '3' }]
+    - [{ url: '?staffel=508&r=7#p1205x1239', title: 'gegen SK Stolzenau 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=508&r=2#p1205x1232', title: 'gegen SK Ricklingen 3', text: '6' }]
+    - 2
+    - 24½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Ricklingen 3', url: '?mannschaft=1232', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=508&r=9#p1232x1210', title: 'gegen SV Bückeburg 2', text: 2½ }]
+    - [{ url: '?staffel=508&r=3#p1232x1245', title: 'gegen Marienw/Gar/See 2', text: '0' }]
+    - [{ url: '?staffel=508&r=6#p1232x1246', title: 'gegen Eystruper SK', text: '2' }]
+    - [{ url: '?staffel=508&r=1#p1232x1242', title: 'gegen SK Wennigsen', text: 1½ }]
+    - [{ url: '?staffel=508&r=4#p1232x1243', title: 'gegen SF Mühlenberg', text: '3' }]
+    - [{ url: '?staffel=508&r=8#p1232x1226', title: 'gegen SK Neustadt 2', text: 3½ }]
+    - [{ url: '?staffel=508&r=7#p1232x1216', title: 'gegen SG Eldagsen/BM 2', text: '4' }]
+    - [{ url: '?staffel=508&r=5#p1232x1239', title: 'gegen SK Stolzenau 2', text: '3' }]
+    - [{ url: '?staffel=508&r=2#p1232x1205', title: 'gegen SV Warmsen', text: '2' }]
+    - xxx
+    - 1
+    - 21½
+    - ''

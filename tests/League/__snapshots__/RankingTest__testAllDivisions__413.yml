@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Neustadt', url: '?mannschaft=4069', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=873&r=7#p4069x4023', title: 'gegen SK Lehrte 1919 eV 3', text: '5' }]
+    - [{ url: '?staffel=873&r=5#p4069x4111', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=873&r=2#p4069x4038', title: 'gegen SV Gretenberg', text: 3½ }]
+    - [{ url: '?staffel=873&r=3#p4069x3939', title: 'gegen SF Mühlenberg', text: 5½ }]
+    - [{ url: '?staffel=873&r=9#p4069x4093', title: 'gegen HSK Lister Turm 4', text: '5' }]
+    - [{ url: '?staffel=873&r=8#p4069x3889', title: 'gegen SC Hämelerwald', text: '5' }]
+    - [{ url: '?staffel=873&r=6#p4069x4041', title: 'gegen SG Döhren-Gleid', text: '5' }]
+    - [{ url: '?staffel=873&r=1#p4069x3865', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=873&r=4#p4069x3868', title: 'gegen SK Wennigsen', text: 6½ }]
+    - 14
+    - 44½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte 1919 eV 3', url: '?mannschaft=4023', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=873&r=7#p4023x4069', title: 'gegen SK Neustadt', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=873&r=2#p4023x4111', title: 'gegen SK Anderten', text: 4½ }]
+    - [{ url: '?staffel=873&r=8#p4023x4038', title: 'gegen SV Gretenberg', text: '5' }]
+    - [{ url: '?staffel=873&r=9#p4023x3939', title: 'gegen SF Mühlenberg', text: 4½ }]
+    - [{ url: '?staffel=873&r=6#p4023x4093', title: 'gegen HSK Lister Turm 4', text: 4½ }]
+    - [{ url: '?staffel=873&r=5#p4023x3889', title: 'gegen SC Hämelerwald', text: '3' }]
+    - [{ url: '?staffel=873&r=3#p4023x4041', title: 'gegen SG Döhren-Gleid', text: 5½ }]
+    - [{ url: '?staffel=873&r=4#p4023x3865', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=873&r=1#p4023x3868', title: 'gegen SK Wennigsen', text: '6' }]
+    - 14
+    - '41'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Anderten', url: '?mannschaft=4111', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=873&r=5#p4111x4069', title: 'gegen SK Neustadt', text: 4½ }]
+    - [{ url: '?staffel=873&r=2#p4111x4023', title: 'gegen SK Lehrte 1919 eV 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=873&r=6#p4111x4038', title: 'gegen SV Gretenberg', text: 4½ }]
+    - [{ url: '?staffel=873&r=7#p4111x3939', title: 'gegen SF Mühlenberg', text: '3' }]
+    - [{ url: '?staffel=873&r=4#p4111x4093', title: 'gegen HSK Lister Turm 4', text: '6' }]
+    - [{ url: '?staffel=873&r=3#p4111x3889', title: 'gegen SC Hämelerwald', text: 3½ }]
+    - [{ url: '?staffel=873&r=1#p4111x4041', title: 'gegen SG Döhren-Gleid', text: 5½ }]
+    - [{ url: '?staffel=873&r=9#p4111x3865', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=873&r=8#p4111x3868', title: 'gegen SK Wennigsen', text: '5' }]
+    - 12
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Gretenberg', url: '?mannschaft=4038', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=873&r=2#p4038x4069', title: 'gegen SK Neustadt', text: 4½ }]
+    - [{ url: '?staffel=873&r=8#p4038x4023', title: 'gegen SK Lehrte 1919 eV 3', text: '3' }]
+    - [{ url: '?staffel=873&r=6#p4038x4111', title: 'gegen SK Anderten', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=873&r=4#p4038x3939', title: 'gegen SF Mühlenberg', text: '4' }]
+    - [{ url: '?staffel=873&r=1#p4038x4093', title: 'gegen HSK Lister Turm 4', text: '3' }]
+    - [{ url: '?staffel=873&r=9#p4038x3889', title: 'gegen SC Hämelerwald', text: 5½ }]
+    - [{ url: '?staffel=873&r=7#p4038x4041', title: 'gegen SG Döhren-Gleid', text: '5' }]
+    - [{ url: '?staffel=873&r=3#p4038x3865', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=873&r=5#p4038x3868', title: 'gegen SK Wennigsen', text: 5½ }]
+    - 11
+    - 39½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Mühlenberg', url: '?mannschaft=3939', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=873&r=3#p3939x4069', title: 'gegen SK Neustadt', text: 2½ }]
+    - [{ url: '?staffel=873&r=9#p3939x4023', title: 'gegen SK Lehrte 1919 eV 3', text: 3½ }]
+    - [{ url: '?staffel=873&r=7#p3939x4111', title: 'gegen SK Anderten', text: '5' }]
+    - [{ url: '?staffel=873&r=4#p3939x4038', title: 'gegen SV Gretenberg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=873&r=2#p3939x4093', title: 'gegen HSK Lister Turm 4', text: '5' }]
+    - [{ url: '?staffel=873&r=1#p3939x3889', title: 'gegen SC Hämelerwald', text: '5' }]
+    - [{ url: '?staffel=873&r=8#p3939x4041', title: 'gegen SG Döhren-Gleid', text: 5½ }]
+    - [{ url: '?staffel=873&r=5#p3939x3865', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=873&r=6#p3939x3868', title: 'gegen SK Wennigsen', text: '5' }]
+    - 11
+    - 38½
+    - ''
+-
+    - '6.'
+    - { text: 'HSK Lister Turm 4', url: '?mannschaft=4093', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=873&r=9#p4093x4069', title: 'gegen SK Neustadt', text: '3' }]
+    - [{ url: '?staffel=873&r=6#p4093x4023', title: 'gegen SK Lehrte 1919 eV 3', text: 3½ }]
+    - [{ url: '?staffel=873&r=4#p4093x4111', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=873&r=1#p4093x4038', title: 'gegen SV Gretenberg', text: '5' }]
+    - [{ url: '?staffel=873&r=2#p4093x3939', title: 'gegen SF Mühlenberg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=873&r=7#p4093x3889', title: 'gegen SC Hämelerwald', text: 4½ }]
+    - [{ url: '?staffel=873&r=5#p4093x4041', title: 'gegen SG Döhren-Gleid', text: 5½ }]
+    - [{ url: '?staffel=873&r=8#p4093x3865', title: 'gegen Eystruper SK', text: 6½ }]
+    - [{ url: '?staffel=873&r=3#p4093x3868', title: 'gegen SK Wennigsen', text: 5½ }]
+    - 10
+    - 38½
+    - ''
+-
+    - '7.'
+    - { text: 'SC Hämelerwald', url: '?mannschaft=3889', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=873&r=8#p3889x4069', title: 'gegen SK Neustadt', text: '3' }]
+    - [{ url: '?staffel=873&r=5#p3889x4023', title: 'gegen SK Lehrte 1919 eV 3', text: '5' }]
+    - [{ url: '?staffel=873&r=3#p3889x4111', title: 'gegen SK Anderten', text: 4½ }]
+    - [{ url: '?staffel=873&r=9#p3889x4038', title: 'gegen SV Gretenberg', text: 2½ }]
+    - [{ url: '?staffel=873&r=1#p3889x3939', title: 'gegen SF Mühlenberg', text: '3' }]
+    - [{ url: '?staffel=873&r=7#p3889x4093', title: 'gegen HSK Lister Turm 4', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=873&r=4#p3889x4041', title: 'gegen SG Döhren-Gleid', text: 3½ }]
+    - [{ url: '?staffel=873&r=6#p3889x3865', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=873&r=2#p3889x3868', title: 'gegen SK Wennigsen', text: 5½ }]
+    - 8
+    - '36'
+    - ''
+-
+    - '8.'
+    - { text: 'SG Döhren-Gleid', url: '?mannschaft=4041', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=873&r=6#p4041x4069', title: 'gegen SK Neustadt', text: '3' }]
+    - [{ url: '?staffel=873&r=3#p4041x4023', title: 'gegen SK Lehrte 1919 eV 3', text: 2½ }]
+    - [{ url: '?staffel=873&r=1#p4041x4111', title: 'gegen SK Anderten', text: 2½ }]
+    - [{ url: '?staffel=873&r=7#p4041x4038', title: 'gegen SV Gretenberg', text: '3' }]
+    - [{ url: '?staffel=873&r=8#p4041x3939', title: 'gegen SF Mühlenberg', text: 2½ }]
+    - [{ url: '?staffel=873&r=5#p4041x4093', title: 'gegen HSK Lister Turm 4', text: 2½ }]
+    - [{ url: '?staffel=873&r=4#p4041x3889', title: 'gegen SC Hämelerwald', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=873&r=2#p4041x3865', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=873&r=9#p4041x3868', title: 'gegen SK Wennigsen', text: '5' }]
+    - 6
+    - '31'
+    - ''
+-
+    - '9.'
+    - { text: 'Eystruper SK', url: '?mannschaft=3865', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=873&r=1#p3865x4069', title: 'gegen SK Neustadt', text: 2½ }]
+    - [{ url: '?staffel=873&r=4#p3865x4023', title: 'gegen SK Lehrte 1919 eV 3', text: '3' }]
+    - [{ url: '?staffel=873&r=9#p3865x4111', title: 'gegen SK Anderten', text: '3' }]
+    - [{ url: '?staffel=873&r=3#p3865x4038', title: 'gegen SV Gretenberg', text: 2½ }]
+    - [{ url: '?staffel=873&r=5#p3865x3939', title: 'gegen SF Mühlenberg', text: '5' }]
+    - [{ url: '?staffel=873&r=8#p3865x4093', title: 'gegen HSK Lister Turm 4', text: 1½ }]
+    - [{ url: '?staffel=873&r=6#p3865x3889', title: 'gegen SC Hämelerwald', text: 2½ }]
+    - [{ url: '?staffel=873&r=2#p3865x4041', title: 'gegen SG Döhren-Gleid', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=873&r=7#p3865x3868', title: 'gegen SK Wennigsen', text: 5½ }]
+    - 4
+    - '28'
+    - ''
+-
+    - '10.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=3868', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=873&r=4#p3868x4069', title: 'gegen SK Neustadt', text: 1½ }]
+    - [{ url: '?staffel=873&r=1#p3868x4023', title: 'gegen SK Lehrte 1919 eV 3', text: '2' }]
+    - [{ url: '?staffel=873&r=8#p3868x4111', title: 'gegen SK Anderten', text: '3' }]
+    - [{ url: '?staffel=873&r=5#p3868x4038', title: 'gegen SV Gretenberg', text: 2½ }]
+    - [{ url: '?staffel=873&r=6#p3868x3939', title: 'gegen SF Mühlenberg', text: '3' }]
+    - [{ url: '?staffel=873&r=3#p3868x4093', title: 'gegen HSK Lister Turm 4', text: 2½ }]
+    - [{ url: '?staffel=873&r=2#p3868x3889', title: 'gegen SC Hämelerwald', text: 2½ }]
+    - [{ url: '?staffel=873&r=9#p3868x4041', title: 'gegen SG Döhren-Gleid', text: '3' }]
+    - [{ url: '?staffel=873&r=7#p3868x3865', title: 'gegen Eystruper SK', text: 2½ }]
+    - xxx
+    - 0
+    - 22½
+    - ''

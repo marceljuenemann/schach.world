@@ -1,4 +1,4 @@
-<?
+<?php
 /* DWZ Datenbank
  *
  * In dieser Datei wird die Klasse SED_DWZ_Request zur Verfügung

@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bad Essen 3', url: '?mannschaft=8238', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1888&r=2#p8238x8240', title: 'gegen SV Osnabrück v. 1919 7', text: '2' }]
+    - [{ url: '?staffel=1888&r=1#p8238x8241', title: 'gegen Dissen-Bad Roth 2', text: '3' }]
+    - [{ url: '?staffel=1888&r=4#p8238x8242', title: 'gegen SV Osnabrück v. 1919 8', text: '2' }]
+    - [{ url: '?staffel=1888&r=3#p8238x8239', title: 'gegen TuS Lemförde', text: '3' }]
+    - 6
+    - '10'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Osnabrück v. 1919 7', url: '?mannschaft=8240', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1888&r=2#p8240x8238', title: 'gegen SV Bad Essen 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1888&r=3#p8240x8241', title: 'gegen Dissen-Bad Roth 2', text: ½ }]
+    - [{ url: '?staffel=1888&r=1#p8240x8242', title: 'gegen SV Osnabrück v. 1919 8', text: '4' }]
+    - {  }
+    - 3
+    - 6½
+    - ''
+-
+    - '3.'
+    - { text: 'Dissen-Bad Roth 2', url: '?mannschaft=8241', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1888&r=1#p8241x8238', title: 'gegen SV Bad Essen 3', text: '1' }]
+    - [{ url: '?staffel=1888&r=3#p8241x8240', title: 'gegen SV Osnabrück v. 1919 7', text: 3½ }]
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - 4½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück v. 1919 8', url: '?mannschaft=8242', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1888&r=4#p8242x8238', title: 'gegen SV Bad Essen 3', text: '2' }]
+    - [{ url: '?staffel=1888&r=1#p8242x8240', title: 'gegen SV Osnabrück v. 1919 7', text: '0' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1888&r=2#p8242x8239', title: 'gegen TuS Lemförde', text: '2' }]
+    - 2
+    - '4'
+    - ''
+-
+    - '5.'
+    - { text: 'TuS Lemförde', url: '?mannschaft=8239', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1888&r=3#p8239x8238', title: 'gegen SV Bad Essen 3', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1888&r=2#p8239x8242', title: 'gegen SV Osnabrück v. 1919 8', text: '2' }]
+    - xxx
+    - 1
+    - '3'
+    - ''

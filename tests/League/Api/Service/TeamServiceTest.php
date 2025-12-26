@@ -3,35 +3,42 @@
 namespace Nsv\League\Api\Service;
 
 use Nsv\League\Api\Request\UpdateTeamRecipientsRequest;
+use Nsv\League\Entity\Division;
+use Nsv\League\Entity\League;
 use Nsv\League\Entity\Team;
 use Nsv\League\Entity\TeamRecipient;
+use Tests\League\LeagueTestCase;
 
-class TeamServiceTest extends AbstractApiTest
+class TeamServiceTest extends LeagueTestCase
 {
   private TeamService $service;
+  private League $league;
+  private Division $division;
 
   protected function setUp(): void {
     parent::setUp();
     $this->service = $this->container->get(TeamService::class);
+    $this->league = $this->leagueRepository->findByPathOrPrefix('nsv-2526');
+    $this->division = $this->league->divisions[0];
   }
 
   public function testTeam1() {
     $team = $this->division->teams()[0];
     $model = $this->service->team($team);
-    $this->assertModel($model, __FILE__, __FUNCTION__);
+    $this->assertMatchesSnapshot($model);
   }
 
   public function testTeam1_withSubstitute() {
     $this->league->configSubstituteTeams = 1;
     $team = $this->division->teams()[0];
     $model = $this->service->team($team);
-    $this->assertModel($model, __FILE__, __FUNCTION__);
+    $this->assertMatchesSnapshot($model);
   }
 
   public function testTeam2() {
     $team = $this->division->teams()[1];
     $model = $this->service->team($team);
-    $this->assertModel($model, __FILE__, __FUNCTION__);
+    $this->assertMatchesSnapshot($model);
   }
 
   public function testUpdateRecipients() {

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Papenburg', url: '?mannschaft=7969', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1824&r=2#p7969x7965', title: 'gegen SK Meppen', text: '3' }]
+    - [{ url: '?staffel=1824&r=3#p7969x7971', title: 'gegen SV Lingen', text: '1' }]
+    - [{ url: '?staffel=1824&r=4#p7969x7967', title: 'gegen SK Nordhorn-Blanke 2', text: '2' }]
+    - [{ url: '?staffel=1824&r=2#p7969x7966', title: 'gegen Fortuna Logabirum', text: '3' }]
+    - [{ url: '?staffel=1824&r=1#p7969x7970', title: 'gegen SC Papenburg 2', text: '3' }]
+    - [{ url: '?staffel=1824&r=4#p7969x7968', title: 'gegen SK Nordhorn-Blanke 3', text: '3' }]
+    - [{ url: '?staffel=1824&r=3#p7969x7972', title: 'gegen SV Lingen 2', text: 2½ }]
+    - 11
+    - 17½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SK Meppen', url: '?mannschaft=7965', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1824&r=2#p7965x7969', title: 'gegen SC Papenburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1824&r=4#p7965x7971', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=1824&r=3#p7965x7967', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=1824&r=1#p7965x7966', title: 'gegen Fortuna Logabirum', text: 1½ }]
+    - [{ url: '?staffel=1824&r=2#p7965x7970', title: 'gegen SC Papenburg 2', text: '4' }]
+    - [{ url: '?staffel=1824&r=3#p7965x7968', title: 'gegen SK Nordhorn-Blanke 3', text: '3' }]
+    - [{ url: '?staffel=1824&r=4#p7965x7972', title: 'gegen SV Lingen 2', text: '4' }]
+    - 10
+    - 19½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Lingen', url: '?mannschaft=7971', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1824&r=3#p7971x7969', title: 'gegen SC Papenburg', text: '3' }]
+    - [{ url: '?staffel=1824&r=4#p7971x7965', title: 'gegen SK Meppen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1824&r=2#p7971x7967', title: 'gegen SK Nordhorn-Blanke 2', text: '2' }]
+    - [{ url: '?staffel=1824&r=4#p7971x7966', title: 'gegen Fortuna Logabirum', text: '2' }]
+    - [{ url: '?staffel=1824&r=3#p7971x7970', title: 'gegen SC Papenburg 2', text: '3' }]
+    - [{ url: '?staffel=1824&r=2#p7971x7968', title: 'gegen SK Nordhorn-Blanke 3', text: '3' }]
+    - [{ url: '?staffel=1824&r=1#p7971x7972', title: 'gegen SV Lingen 2', text: 3½ }]
+    - 10
+    - 17½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Blanke 2', url: '?mannschaft=7967', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1824&r=4#p7967x7969', title: 'gegen SC Papenburg', text: '2' }]
+    - [{ url: '?staffel=1824&r=3#p7967x7965', title: 'gegen SK Meppen', text: '1' }]
+    - [{ url: '?staffel=1824&r=2#p7967x7971', title: 'gegen SV Lingen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1824&r=3#p7967x7966', title: 'gegen Fortuna Logabirum', text: '2' }]
+    - [{ url: '?staffel=1824&r=4#p7967x7970', title: 'gegen SC Papenburg 2', text: '2' }]
+    - [{ url: '?staffel=1824&r=1#p7967x7968', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - [{ url: '?staffel=1824&r=2#p7967x7972', title: 'gegen SV Lingen 2', text: '3' }]
+    - 8
+    - '16'
+    - ''
+-
+    - '5.'
+    - { text: 'Fortuna Logabirum', url: '?mannschaft=7966', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1824&r=2#p7966x7969', title: 'gegen SC Papenburg', text: '1' }]
+    - [{ url: '?staffel=1824&r=1#p7966x7965', title: 'gegen SK Meppen', text: 2½ }]
+    - [{ url: '?staffel=1824&r=4#p7966x7971', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=1824&r=3#p7966x7967', title: 'gegen SK Nordhorn-Blanke 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1824&r=2#p7966x7970', title: 'gegen SC Papenburg 2', text: 1½ }]
+    - [{ url: '?staffel=1824&r=3#p7966x7968', title: 'gegen SK Nordhorn-Blanke 3', text: 1½ }]
+    - [{ url: '?staffel=1824&r=4#p7966x7972', title: 'gegen SV Lingen 2', text: '4' }]
+    - 6
+    - 14½
+    - ''
+-
+    - '6.'
+    - { text: 'SC Papenburg 2', url: '?mannschaft=7970', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1824&r=1#p7970x7969', title: 'gegen SC Papenburg', text: '1' }]
+    - [{ url: '?staffel=1824&r=2#p7970x7965', title: 'gegen SK Meppen', text: '0' }]
+    - [{ url: '?staffel=1824&r=3#p7970x7971', title: 'gegen SV Lingen', text: '1' }]
+    - [{ url: '?staffel=1824&r=4#p7970x7967', title: 'gegen SK Nordhorn-Blanke 2', text: '2' }]
+    - [{ url: '?staffel=1824&r=2#p7970x7966', title: 'gegen Fortuna Logabirum', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1824&r=4#p7970x7968', title: 'gegen SK Nordhorn-Blanke 3', text: 3½ }]
+    - [{ url: '?staffel=1824&r=3#p7970x7972', title: 'gegen SV Lingen 2', text: '2' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Nordhorn-Blanke 3', url: '?mannschaft=7968', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1824&r=4#p7968x7969', title: 'gegen SC Papenburg', text: '1' }]
+    - [{ url: '?staffel=1824&r=3#p7968x7965', title: 'gegen SK Meppen', text: '1' }]
+    - [{ url: '?staffel=1824&r=2#p7968x7971', title: 'gegen SV Lingen', text: '1' }]
+    - [{ url: '?staffel=1824&r=1#p7968x7967', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=1824&r=3#p7968x7966', title: 'gegen Fortuna Logabirum', text: 2½ }]
+    - [{ url: '?staffel=1824&r=4#p7968x7970', title: 'gegen SC Papenburg 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1824&r=2#p7968x7972', title: 'gegen SV Lingen 2', text: 3½ }]
+    - 4
+    - 9½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=7972', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1824&r=3#p7972x7969', title: 'gegen SC Papenburg', text: 1½ }]
+    - [{ url: '?staffel=1824&r=4#p7972x7965', title: 'gegen SK Meppen', text: '0' }]
+    - [{ url: '?staffel=1824&r=1#p7972x7971', title: 'gegen SV Lingen', text: ½ }]
+    - [{ url: '?staffel=1824&r=2#p7972x7967', title: 'gegen SK Nordhorn-Blanke 2', text: '1' }]
+    - [{ url: '?staffel=1824&r=4#p7972x7966', title: 'gegen Fortuna Logabirum', text: '0' }]
+    - [{ url: '?staffel=1824&r=3#p7972x7970', title: 'gegen SC Papenburg 2', text: '2' }]
+    - [{ url: '?staffel=1824&r=2#p7972x7968', title: 'gegen SK Nordhorn-Blanke 3', text: ½ }]
+    - xxx
+    - 1
+    - 5½
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Veldhausen/Uel. 2', url: '?mannschaft=7862', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1818&r=4#p7862x7844', title: 'gegen SV Bad Bentheim', text: '3' }, { url: '?staffel=1818&r=9#p7862x7844', title: 'gegen SV Bad Bentheim', text: '4' }]
+    - [{ url: '?staffel=1818&r=3#p7862x7835', title: 'gegen SK Meppen 2', text: 3½ }, { url: '?staffel=1818&r=8#p7862x7835', title: 'gegen SK Meppen 2', text: 4½ }]
+    - [{ url: '?staffel=1818&r=2#p7862x7840', title: 'gegen SK Nordhorn-Blanke 6', text: '5' }, { url: '?staffel=1818&r=7#p7862x7840', title: 'gegen SK Nordhorn-Blanke 6', text: 2½ }]
+    - [{ url: '?staffel=1818&r=1#p7862x7831', title: 'gegen SF Spelle 3', text: 5½ }, { url: '?staffel=1818&r=6#p7862x7831', title: 'gegen SF Spelle 3', text: 4½ }]
+    - [{ url: '?staffel=1818&r=5#p7862x7868', title: 'gegen TuS Aschendorf 2', text: '5' }, { url: '?staffel=1818&r=10#p7862x7868', title: 'gegen TuS Aschendorf 2', text: 3½ }]
+    - 17
+    - '41'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Bad Bentheim', url: '?mannschaft=7844', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1818&r=4#p7844x7862', title: 'gegen Veldhausen/Uel. 2', text: '3' }, { url: '?staffel=1818&r=9#p7844x7862', title: 'gegen Veldhausen/Uel. 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1818&r=1#p7844x7835', title: 'gegen SK Meppen 2', text: 4½ }, { url: '?staffel=1818&r=6#p7844x7835', title: 'gegen SK Meppen 2', text: 3½ }]
+    - [{ url: '?staffel=1818&r=3#p7844x7840', title: 'gegen SK Nordhorn-Blanke 6', text: '2' }, { url: '?staffel=1818&r=8#p7844x7840', title: 'gegen SK Nordhorn-Blanke 6', text: '3' }]
+    - [{ url: '?staffel=1818&r=5#p7844x7831', title: 'gegen SF Spelle 3', text: 4½ }, { url: '?staffel=1818&r=10#p7844x7831', title: 'gegen SF Spelle 3', text: 1½ }]
+    - [{ url: '?staffel=1818&r=2#p7844x7868', title: 'gegen TuS Aschendorf 2', text: 4½ }, { url: '?staffel=1818&r=7#p7844x7868', title: 'gegen TuS Aschendorf 2', text: '5' }]
+    - 12
+    - 33½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Meppen 2', url: '?mannschaft=7835', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1818&r=3#p7835x7862', title: 'gegen Veldhausen/Uel. 2', text: 2½ }, { url: '?staffel=1818&r=8#p7835x7862', title: 'gegen Veldhausen/Uel. 2', text: 1½ }]
+    - [{ url: '?staffel=1818&r=1#p7835x7844', title: 'gegen SV Bad Bentheim', text: 1½ }, { url: '?staffel=1818&r=6#p7835x7844', title: 'gegen SV Bad Bentheim', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1818&r=5#p7835x7840', title: 'gegen SK Nordhorn-Blanke 6', text: 4½ }, { url: '?staffel=1818&r=10#p7835x7840', title: 'gegen SK Nordhorn-Blanke 6', text: '6' }]
+    - [{ url: '?staffel=1818&r=2#p7835x7831', title: 'gegen SF Spelle 3', text: '5' }, { url: '?staffel=1818&r=7#p7835x7831', title: 'gegen SF Spelle 3', text: '5' }]
+    - [{ url: '?staffel=1818&r=4#p7835x7868', title: 'gegen TuS Aschendorf 2', text: '3' }, { url: '?staffel=1818&r=9#p7835x7868', title: 'gegen TuS Aschendorf 2', text: '5' }]
+    - 11
+    - 36½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Blanke 6', url: '?mannschaft=7840', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1818&r=2#p7840x7862', title: 'gegen Veldhausen/Uel. 2', text: '1' }, { url: '?staffel=1818&r=7#p7840x7862', title: 'gegen Veldhausen/Uel. 2', text: 3½ }]
+    - [{ url: '?staffel=1818&r=3#p7840x7844', title: 'gegen SV Bad Bentheim', text: '4' }, { url: '?staffel=1818&r=8#p7840x7844', title: 'gegen SV Bad Bentheim', text: '3' }]
+    - [{ url: '?staffel=1818&r=5#p7840x7835', title: 'gegen SK Meppen 2', text: 1½ }, { url: '?staffel=1818&r=10#p7840x7835', title: 'gegen SK Meppen 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1818&r=4#p7840x7831', title: 'gegen SF Spelle 3', text: '5' }, { url: '?staffel=1818&r=9#p7840x7831', title: 'gegen SF Spelle 3', text: 2½ }]
+    - [{ url: '?staffel=1818&r=1#p7840x7868', title: 'gegen TuS Aschendorf 2', text: 4½ }, { url: '?staffel=1818&r=6#p7840x7868', title: 'gegen TuS Aschendorf 2', text: 3½ }]
+    - 11
+    - 28½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Spelle 3', url: '?mannschaft=7831', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1818&r=1#p7831x7862', title: 'gegen Veldhausen/Uel. 2', text: ½ }, { url: '?staffel=1818&r=6#p7831x7862', title: 'gegen Veldhausen/Uel. 2', text: 1½ }]
+    - [{ url: '?staffel=1818&r=5#p7831x7844', title: 'gegen SV Bad Bentheim', text: 1½ }, { url: '?staffel=1818&r=10#p7831x7844', title: 'gegen SV Bad Bentheim', text: 4½ }]
+    - [{ url: '?staffel=1818&r=2#p7831x7835', title: 'gegen SK Meppen 2', text: '1' }, { url: '?staffel=1818&r=7#p7831x7835', title: 'gegen SK Meppen 2', text: '1' }]
+    - [{ url: '?staffel=1818&r=4#p7831x7840', title: 'gegen SK Nordhorn-Blanke 6', text: '1' }, { url: '?staffel=1818&r=9#p7831x7840', title: 'gegen SK Nordhorn-Blanke 6', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1818&r=3#p7831x7868', title: 'gegen TuS Aschendorf 2', text: '2' }, { url: '?staffel=1818&r=8#p7831x7868', title: 'gegen TuS Aschendorf 2', text: 4½ }]
+    - 6
+    - '21'
+    - ''
+-
+    - '6.'
+    - { text: 'TuS Aschendorf 2', url: '?mannschaft=7868', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1818&r=5#p7868x7862', title: 'gegen Veldhausen/Uel. 2', text: '1' }, { url: '?staffel=1818&r=10#p7868x7862', title: 'gegen Veldhausen/Uel. 2', text: 2½ }]
+    - [{ url: '?staffel=1818&r=2#p7868x7844', title: 'gegen SV Bad Bentheim', text: 1½ }, { url: '?staffel=1818&r=7#p7868x7844', title: 'gegen SV Bad Bentheim', text: '1' }]
+    - [{ url: '?staffel=1818&r=4#p7868x7835', title: 'gegen SK Meppen 2', text: '3' }, { url: '?staffel=1818&r=9#p7868x7835', title: 'gegen SK Meppen 2', text: '1' }]
+    - [{ url: '?staffel=1818&r=1#p7868x7840', title: 'gegen SK Nordhorn-Blanke 6', text: 1½ }, { url: '?staffel=1818&r=6#p7868x7840', title: 'gegen SK Nordhorn-Blanke 6', text: 2½ }]
+    - [{ url: '?staffel=1818&r=3#p7868x7831', title: 'gegen SF Spelle 3', text: '4' }, { url: '?staffel=1818&r=8#p7868x7831', title: 'gegen SF Spelle 3', text: 1½ }]
+    - xxx
+    - 3
+    - 19½
+    - absteiger

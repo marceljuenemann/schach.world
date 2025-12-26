@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Gifhorn-Wolfsburg 2', url: '?mannschaft=7682', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1772&r=4#p7682x7645', title: 'gegen Caissa WF 2', text: '4' }]
+    - [{ url: '?staffel=1772&r=1#p7682x7688', title: 'gegen SG Elmrochade', text: '5' }]
+    - [{ url: '?staffel=1772&r=3#p7682x7700', title: 'gegen SC BS Gliesmarode 3', text: '3' }]
+    - [{ url: '?staffel=1772&r=7#p7682x7684', title: 'gegen Roch. Braunschweig', text: 4½ }]
+    - [{ url: '?staffel=1772&r=8#p7682x7617', title: 'gegen Peiner SV 2', text: 3½ }]
+    - [{ url: '?staffel=1772&r=5#p7682x7699', title: 'gegen SC BS Gliesmarode 4', text: '5' }]
+    - [{ url: '?staffel=1772&r=9#p7682x7692', title: 'gegen SG Elm/Lappwald', text: 3½ }]
+    - [{ url: '?staffel=1772&r=6#p7682x7614', title: 'gegen SK Salzgitter-Bad', text: '4' }]
+    - [{ url: '?staffel=1772&r=2#p7682x7622', title: 'gegen SV Apelnstedt', text: '5' }]
+    - 17
+    - 37½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Caissa WF 2', url: '?mannschaft=7645', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1772&r=4#p7645x7682', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1772&r=9#p7645x7688', title: 'gegen SG Elmrochade', text: 2½ }]
+    - [{ url: '?staffel=1772&r=2#p7645x7700', title: 'gegen SC BS Gliesmarode 3', text: '3' }]
+    - [{ url: '?staffel=1772&r=6#p7645x7684', title: 'gegen Roch. Braunschweig', text: 3½ }]
+    - [{ url: '?staffel=1772&r=7#p7645x7617', title: 'gegen Peiner SV 2', text: '3' }]
+    - [{ url: '?staffel=1772&r=3#p7645x7699', title: 'gegen SC BS Gliesmarode 4', text: '3' }]
+    - [{ url: '?staffel=1772&r=8#p7645x7692', title: 'gegen SG Elm/Lappwald', text: 3½ }]
+    - [{ url: '?staffel=1772&r=5#p7645x7614', title: 'gegen SK Salzgitter-Bad', text: '3' }]
+    - [{ url: '?staffel=1772&r=1#p7645x7622', title: 'gegen SV Apelnstedt', text: 3½ }]
+    - 10
+    - '27'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Elmrochade', url: '?mannschaft=7688', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1772&r=1#p7688x7682', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '1' }]
+    - [{ url: '?staffel=1772&r=9#p7688x7645', title: 'gegen Caissa WF 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1772&r=8#p7688x7700', title: 'gegen SC BS Gliesmarode 3', text: 3½ }]
+    - [{ url: '?staffel=1772&r=3#p7688x7684', title: 'gegen Roch. Braunschweig', text: '3' }]
+    - [{ url: '?staffel=1772&r=4#p7688x7617', title: 'gegen Peiner SV 2', text: '3' }]
+    - [{ url: '?staffel=1772&r=6#p7688x7699', title: 'gegen SC BS Gliesmarode 4', text: 1½ }]
+    - [{ url: '?staffel=1772&r=5#p7688x7692', title: 'gegen SG Elm/Lappwald', text: 2½ }]
+    - [{ url: '?staffel=1772&r=2#p7688x7614', title: 'gegen SK Salzgitter-Bad', text: 3½ }]
+    - [{ url: '?staffel=1772&r=7#p7688x7622', title: 'gegen SV Apelnstedt', text: 3½ }]
+    - 10
+    - '25'
+    - ''
+-
+    - '4.'
+    - { text: 'SC BS Gliesmarode 3', url: '?mannschaft=7700', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1772&r=3#p7700x7682', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '3' }]
+    - [{ url: '?staffel=1772&r=2#p7700x7645', title: 'gegen Caissa WF 2', text: '3' }]
+    - [{ url: '?staffel=1772&r=8#p7700x7688', title: 'gegen SG Elmrochade', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1772&r=5#p7700x7684', title: 'gegen Roch. Braunschweig', text: 3½ }]
+    - [{ url: '?staffel=1772&r=6#p7700x7617', title: 'gegen Peiner SV 2', text: '3' }]
+    - [{ url: '?staffel=1772&r=1#p7700x7699', title: 'gegen SC BS Gliesmarode 4', text: 5½ }]
+    - [{ url: '?staffel=1772&r=7#p7700x7692', title: 'gegen SG Elm/Lappwald', text: '2' }]
+    - [{ url: '?staffel=1772&r=4#p7700x7614', title: 'gegen SK Salzgitter-Bad', text: 2½ }]
+    - [{ url: '?staffel=1772&r=9#p7700x7622', title: 'gegen SV Apelnstedt', text: 4½ }]
+    - 9
+    - 29½
+    - ''
+-
+    - '5.'
+    - { text: 'Roch. Braunschweig', url: '?mannschaft=7684', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1772&r=7#p7684x7682', title: 'gegen SG Gifhorn-Wolfsburg 2', text: 1½ }]
+    - [{ url: '?staffel=1772&r=6#p7684x7645', title: 'gegen Caissa WF 2', text: 2½ }]
+    - [{ url: '?staffel=1772&r=3#p7684x7688', title: 'gegen SG Elmrochade', text: '3' }]
+    - [{ url: '?staffel=1772&r=5#p7684x7700', title: 'gegen SC BS Gliesmarode 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1772&r=1#p7684x7617', title: 'gegen Peiner SV 2', text: 4½ }]
+    - [{ url: '?staffel=1772&r=9#p7684x7699', title: 'gegen SC BS Gliesmarode 4', text: '4' }]
+    - [{ url: '?staffel=1772&r=2#p7684x7692', title: 'gegen SG Elm/Lappwald', text: 3½ }]
+    - [{ url: '?staffel=1772&r=8#p7684x7614', title: 'gegen SK Salzgitter-Bad', text: '3' }]
+    - [{ url: '?staffel=1772&r=4#p7684x7622', title: 'gegen SV Apelnstedt', text: '3' }]
+    - 9
+    - 27½
+    - ''
+-
+    - '6.'
+    - { text: 'Peiner SV 2', url: '?mannschaft=7617', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1772&r=8#p7617x7682', title: 'gegen SG Gifhorn-Wolfsburg 2', text: 2½ }]
+    - [{ url: '?staffel=1772&r=7#p7617x7645', title: 'gegen Caissa WF 2', text: '3' }]
+    - [{ url: '?staffel=1772&r=4#p7617x7688', title: 'gegen SG Elmrochade', text: '3' }]
+    - [{ url: '?staffel=1772&r=6#p7617x7700', title: 'gegen SC BS Gliesmarode 3', text: '3' }]
+    - [{ url: '?staffel=1772&r=1#p7617x7684', title: 'gegen Roch. Braunschweig', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1772&r=2#p7617x7699', title: 'gegen SC BS Gliesmarode 4', text: 3½ }]
+    - [{ url: '?staffel=1772&r=3#p7617x7692', title: 'gegen SG Elm/Lappwald', text: 1½ }]
+    - [{ url: '?staffel=1772&r=9#p7617x7614', title: 'gegen SK Salzgitter-Bad', text: '4' }]
+    - [{ url: '?staffel=1772&r=5#p7617x7622', title: 'gegen SV Apelnstedt', text: 4½ }]
+    - 9
+    - 26½
+    - ''
+-
+    - '7.'
+    - { text: 'SC BS Gliesmarode 4', url: '?mannschaft=7699', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1772&r=5#p7699x7682', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '1' }]
+    - [{ url: '?staffel=1772&r=3#p7699x7645', title: 'gegen Caissa WF 2', text: '3' }]
+    - [{ url: '?staffel=1772&r=6#p7699x7688', title: 'gegen SG Elmrochade', text: 4½ }]
+    - [{ url: '?staffel=1772&r=1#p7699x7700', title: 'gegen SC BS Gliesmarode 3', text: ½ }]
+    - [{ url: '?staffel=1772&r=9#p7699x7684', title: 'gegen Roch. Braunschweig', text: '2' }]
+    - [{ url: '?staffel=1772&r=2#p7699x7617', title: 'gegen Peiner SV 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1772&r=4#p7699x7692', title: 'gegen SG Elm/Lappwald', text: 3½ }]
+    - [{ url: '?staffel=1772&r=7#p7699x7614', title: 'gegen SK Salzgitter-Bad', text: '5' }]
+    - [{ url: '?staffel=1772&r=8#p7699x7622', title: 'gegen SV Apelnstedt', text: '4' }]
+    - 9
+    - '26'
+    - ''
+-
+    - '8.'
+    - { text: 'SG Elm/Lappwald', url: '?mannschaft=7692', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1772&r=9#p7692x7682', title: 'gegen SG Gifhorn-Wolfsburg 2', text: 2½ }]
+    - [{ url: '?staffel=1772&r=8#p7692x7645', title: 'gegen Caissa WF 2', text: 2½ }]
+    - [{ url: '?staffel=1772&r=5#p7692x7688', title: 'gegen SG Elmrochade', text: 3½ }]
+    - [{ url: '?staffel=1772&r=7#p7692x7700', title: 'gegen SC BS Gliesmarode 3', text: '4' }]
+    - [{ url: '?staffel=1772&r=2#p7692x7684', title: 'gegen Roch. Braunschweig', text: 2½ }]
+    - [{ url: '?staffel=1772&r=3#p7692x7617', title: 'gegen Peiner SV 2', text: 4½ }]
+    - [{ url: '?staffel=1772&r=4#p7692x7699', title: 'gegen SC BS Gliesmarode 4', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1772&r=1#p7692x7614', title: 'gegen SK Salzgitter-Bad', text: '2' }]
+    - [{ url: '?staffel=1772&r=6#p7692x7622', title: 'gegen SV Apelnstedt', text: 3½ }]
+    - 8
+    - 27½
+    - ''
+-
+    - '9.'
+    - { text: 'SK Salzgitter-Bad', url: '?mannschaft=7614', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1772&r=6#p7614x7682', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '2' }]
+    - [{ url: '?staffel=1772&r=5#p7614x7645', title: 'gegen Caissa WF 2', text: '3' }]
+    - [{ url: '?staffel=1772&r=2#p7614x7688', title: 'gegen SG Elmrochade', text: 2½ }]
+    - [{ url: '?staffel=1772&r=4#p7614x7700', title: 'gegen SC BS Gliesmarode 3', text: 3½ }]
+    - [{ url: '?staffel=1772&r=8#p7614x7684', title: 'gegen Roch. Braunschweig', text: '3' }]
+    - [{ url: '?staffel=1772&r=9#p7614x7617', title: 'gegen Peiner SV 2', text: '2' }]
+    - [{ url: '?staffel=1772&r=7#p7614x7699', title: 'gegen SC BS Gliesmarode 4', text: '1' }]
+    - [{ url: '?staffel=1772&r=1#p7614x7692', title: 'gegen SG Elm/Lappwald', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1772&r=3#p7614x7622', title: 'gegen SV Apelnstedt', text: 2½ }]
+    - 7
+    - 23½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SV Apelnstedt', url: '?mannschaft=7622', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1772&r=2#p7622x7682', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '1' }]
+    - [{ url: '?staffel=1772&r=1#p7622x7645', title: 'gegen Caissa WF 2', text: 2½ }]
+    - [{ url: '?staffel=1772&r=7#p7622x7688', title: 'gegen SG Elmrochade', text: 2½ }]
+    - [{ url: '?staffel=1772&r=9#p7622x7700', title: 'gegen SC BS Gliesmarode 3', text: 1½ }]
+    - [{ url: '?staffel=1772&r=4#p7622x7684', title: 'gegen Roch. Braunschweig', text: '3' }]
+    - [{ url: '?staffel=1772&r=5#p7622x7617', title: 'gegen Peiner SV 2', text: 1½ }]
+    - [{ url: '?staffel=1772&r=8#p7622x7699', title: 'gegen SC BS Gliesmarode 4', text: '2' }]
+    - [{ url: '?staffel=1772&r=6#p7622x7692', title: 'gegen SG Elm/Lappwald', text: 2½ }]
+    - [{ url: '?staffel=1772&r=3#p7622x7614', title: 'gegen SK Salzgitter-Bad', text: 2½ }]
+    - xxx
+    - 2
+    - '19'
+    - absteiger

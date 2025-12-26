@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'USV Potsdam', url: '?mannschaft=3602', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=793&r=1#p3602x3450', title: 'gegen TuS Coswig 1920', text: '3' }]
+    - [{ url: '?staffel=793&r=5#p3602x3496', title: 'gegen SG GW Dresden', text: '3' }]
+    - [{ url: '?staffel=793&r=3#p3602x3589', title: 'gegen USV TU Dresden', text: '4' }]
+    - [{ url: '?staffel=793&r=4#p3602x3387', title: 'gegen SV 1919 Grimma', text: 2½ }]
+    - 8
+    - 12½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TuS Coswig 1920', url: '?mannschaft=3450', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=793&r=1#p3450x3602', title: 'gegen USV Potsdam', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=793&r=3#p3450x3496', title: 'gegen SG GW Dresden', text: 3½ }]
+    - [{ url: '?staffel=793&r=2#p3450x3589', title: 'gegen USV TU Dresden', text: '2' }]
+    - [{ url: '?staffel=793&r=5#p3450x3387', title: 'gegen SV 1919 Grimma', text: '2' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '3.'
+    - { text: 'SG GW Dresden', url: '?mannschaft=3496', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=793&r=5#p3496x3602', title: 'gegen USV Potsdam', text: '1' }]
+    - [{ url: '?staffel=793&r=3#p3496x3450', title: 'gegen TuS Coswig 1920', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=793&r=4#p3496x3589', title: 'gegen USV TU Dresden', text: '2' }]
+    - [{ url: '?staffel=793&r=2#p3496x3387', title: 'gegen SV 1919 Grimma', text: '3' }]
+    - 3
+    - 6½
+    - ''
+-
+    - '4.'
+    - { text: 'USV TU Dresden', url: '?mannschaft=3589', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=793&r=3#p3589x3602', title: 'gegen USV Potsdam', text: '0' }]
+    - [{ url: '?staffel=793&r=2#p3589x3450', title: 'gegen TuS Coswig 1920', text: '2' }]
+    - [{ url: '?staffel=793&r=4#p3589x3496', title: 'gegen SG GW Dresden', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=793&r=1#p3589x3387', title: 'gegen SV 1919 Grimma', text: '2' }]
+    - 3
+    - '6'
+    - ''
+-
+    - '5.'
+    - { text: 'SV 1919 Grimma', url: '?mannschaft=3387', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=793&r=4#p3387x3602', title: 'gegen USV Potsdam', text: 1½ }]
+    - [{ url: '?staffel=793&r=5#p3387x3450', title: 'gegen TuS Coswig 1920', text: '2' }]
+    - [{ url: '?staffel=793&r=2#p3387x3496', title: 'gegen SG GW Dresden', text: '1' }]
+    - [{ url: '?staffel=793&r=1#p3387x3589', title: 'gegen USV TU Dresden', text: '2' }]
+    - xxx
+    - 2
+    - 6½
+    - absteiger

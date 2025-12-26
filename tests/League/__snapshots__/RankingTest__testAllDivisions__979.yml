@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bad Essen 3', url: '?mannschaft=7847', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1819&r=2#p7847x7833', title: 'gegen Bersenbrück/Bramsche 2', text: 3½ }, { url: '?staffel=1819&r=5#p7847x7833', title: 'gegen Bersenbrück/Bramsche 2', text: ½ }]
+    - [{ url: '?staffel=1819&r=3#p7847x7869', title: 'gegen TuS Lemförde', text: '3' }, { url: '?staffel=1819&r=6#p7847x7869', title: 'gegen TuS Lemförde', text: 2½ }]
+    - [{ url: '?staffel=1819&r=1#p7847x7860', title: 'gegen SV Osnabrück v. 1919 7', text: '4' }, { url: '?staffel=1819&r=4#p7847x7860', title: 'gegen SV Osnabrück v. 1919 7', text: '2' }]
+    - 9
+    - 15½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Bersenbrück/Bramsche 2', url: '?mannschaft=7833', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1819&r=2#p7833x7847', title: 'gegen SV Bad Essen 3', text: ½ }, { url: '?staffel=1819&r=5#p7833x7847', title: 'gegen SV Bad Essen 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1819&r=1#p7833x7869', title: 'gegen TuS Lemförde', text: '4' }, { url: '?staffel=1819&r=4#p7833x7869', title: 'gegen TuS Lemförde', text: 2½ }]
+    - [{ url: '?staffel=1819&r=3#p7833x7860', title: 'gegen SV Osnabrück v. 1919 7', text: 1½ }, { url: '?staffel=1819&r=6#p7833x7860', title: 'gegen SV Osnabrück v. 1919 7', text: 2½ }]
+    - 8
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Lemförde', url: '?mannschaft=7869', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1819&r=3#p7869x7847', title: 'gegen SV Bad Essen 3', text: '1' }, { url: '?staffel=1819&r=6#p7869x7847', title: 'gegen SV Bad Essen 3', text: 1½ }]
+    - [{ url: '?staffel=1819&r=1#p7869x7833', title: 'gegen Bersenbrück/Bramsche 2', text: '0' }, { url: '?staffel=1819&r=4#p7869x7833', title: 'gegen Bersenbrück/Bramsche 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1819&r=2#p7869x7860', title: 'gegen SV Osnabrück v. 1919 7', text: '4' }, { url: '?staffel=1819&r=5#p7869x7860', title: 'gegen SV Osnabrück v. 1919 7', text: '3' }]
+    - 4
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück v. 1919 7', url: '?mannschaft=7860', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1819&r=1#p7860x7847', title: 'gegen SV Bad Essen 3', text: '0' }, { url: '?staffel=1819&r=4#p7860x7847', title: 'gegen SV Bad Essen 3', text: '2' }]
+    - [{ url: '?staffel=1819&r=3#p7860x7833', title: 'gegen Bersenbrück/Bramsche 2', text: 2½ }, { url: '?staffel=1819&r=6#p7860x7833', title: 'gegen Bersenbrück/Bramsche 2', text: 1½ }]
+    - [{ url: '?staffel=1819&r=2#p7860x7869', title: 'gegen TuS Lemförde', text: '0' }, { url: '?staffel=1819&r=5#p7860x7869', title: 'gegen TuS Lemförde', text: '1' }]
+    - xxx
+    - 3
+    - '7'
+    - ''

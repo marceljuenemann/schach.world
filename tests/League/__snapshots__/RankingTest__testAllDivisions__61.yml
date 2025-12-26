@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Warmsen', url: '?mannschaft=929', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=460&r=4#p929x909', title: 'gegen PSC Hannover 5', text: 5½ }]
+    - [{ url: '?staffel=460&r=6#p929x788', title: 'gegen Eldagsen/Bad Mü 3', text: '6' }]
+    - [{ url: '?staffel=460&r=3#p929x784', title: 'gegen SVg Calenberg 2', text: 6½ }]
+    - [{ url: '?staffel=460&r=1#p929x928', title: 'gegen Neubruchhausen', text: 4½ }]
+    - [{ url: '?staffel=460&r=2#p929x921', title: 'gegen Eystruper SK 2', text: '4' }]
+    - [{ url: '?staffel=460&r=7#p929x754', title: 'gegen SK Stolzenau 3', text: '6' }]
+    - [{ url: '?staffel=460&r=5#p929x759', title: 'gegen SK Rinteln 3', text: '8' }]
+    - 13
+    - 40½
+    - ''
+-
+    - '2.'
+    - { text: 'PSC Hannover 5', url: '?mannschaft=909', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=460&r=4#p909x929', title: 'gegen SV Warmsen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=460&r=3#p909x788', title: 'gegen Eldagsen/Bad Mü 3', text: 3½ }]
+    - [{ url: '?staffel=460&r=7#p909x784', title: 'gegen SVg Calenberg 2', text: 4½ }]
+    - [{ url: '?staffel=460&r=5#p909x928', title: 'gegen Neubruchhausen', text: '6' }]
+    - [{ url: '?staffel=460&r=6#p909x921', title: 'gegen Eystruper SK 2', text: '5' }]
+    - [{ url: '?staffel=460&r=1#p909x754', title: 'gegen SK Stolzenau 3', text: '6' }]
+    - [{ url: '?staffel=460&r=2#p909x759', title: 'gegen SK Rinteln 3', text: 6½ }]
+    - 10
+    - '34'
+    - ''
+-
+    - '3.'
+    - { text: 'Eldagsen/Bad Mü 3', url: '?mannschaft=788', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=460&r=6#p788x929', title: 'gegen SV Warmsen', text: '2' }]
+    - [{ url: '?staffel=460&r=3#p788x909', title: 'gegen PSC Hannover 5', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=460&r=2#p788x784', title: 'gegen SVg Calenberg 2', text: '5' }]
+    - [{ url: '?staffel=460&r=7#p788x928', title: 'gegen Neubruchhausen', text: 3½ }]
+    - [{ url: '?staffel=460&r=1#p788x921', title: 'gegen Eystruper SK 2', text: '4' }]
+    - [{ url: '?staffel=460&r=5#p788x754', title: 'gegen SK Stolzenau 3', text: '4' }]
+    - [{ url: '?staffel=460&r=4#p788x759', title: 'gegen SK Rinteln 3', text: 6½ }]
+    - 8
+    - 29½
+    - ''
+-
+    - '4.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=784', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=460&r=3#p784x929', title: 'gegen SV Warmsen', text: 1½ }]
+    - [{ url: '?staffel=460&r=7#p784x909', title: 'gegen PSC Hannover 5', text: 3½ }]
+    - [{ url: '?staffel=460&r=2#p784x788', title: 'gegen Eldagsen/Bad Mü 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=460&r=4#p784x928', title: 'gegen Neubruchhausen', text: '5' }]
+    - [{ url: '?staffel=460&r=5#p784x921', title: 'gegen Eystruper SK 2', text: 4½ }]
+    - [{ url: '?staffel=460&r=6#p784x754', title: 'gegen SK Stolzenau 3', text: '5' }]
+    - [{ url: '?staffel=460&r=1#p784x759', title: 'gegen SK Rinteln 3', text: 6½ }]
+    - 8
+    - '29'
+    - ''
+-
+    - '5.'
+    - { text: Neubruchhausen, url: '?mannschaft=928', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=460&r=1#p928x929', title: 'gegen SV Warmsen', text: 3½ }]
+    - [{ url: '?staffel=460&r=5#p928x909', title: 'gegen PSC Hannover 5', text: '2' }]
+    - [{ url: '?staffel=460&r=7#p928x788', title: 'gegen Eldagsen/Bad Mü 3', text: 4½ }]
+    - [{ url: '?staffel=460&r=4#p928x784', title: 'gegen SVg Calenberg 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=460&r=3#p928x921', title: 'gegen Eystruper SK 2', text: 4½ }]
+    - [{ url: '?staffel=460&r=2#p928x754', title: 'gegen SK Stolzenau 3', text: '6' }]
+    - [{ url: '?staffel=460&r=6#p928x759', title: 'gegen SK Rinteln 3', text: '4' }]
+    - 7
+    - 27½
+    - ''
+-
+    - '6.'
+    - { text: 'Eystruper SK 2', url: '?mannschaft=921', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=460&r=2#p921x929', title: 'gegen SV Warmsen', text: '4' }]
+    - [{ url: '?staffel=460&r=6#p921x909', title: 'gegen PSC Hannover 5', text: '3' }]
+    - [{ url: '?staffel=460&r=1#p921x788', title: 'gegen Eldagsen/Bad Mü 3', text: '4' }]
+    - [{ url: '?staffel=460&r=5#p921x784', title: 'gegen SVg Calenberg 2', text: 3½ }]
+    - [{ url: '?staffel=460&r=3#p921x928', title: 'gegen Neubruchhausen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=460&r=4#p921x754', title: 'gegen SK Stolzenau 3', text: '4' }]
+    - [{ url: '?staffel=460&r=7#p921x759', title: 'gegen SK Rinteln 3', text: 6½ }]
+    - 5
+    - 28½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Stolzenau 3', url: '?mannschaft=754', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=460&r=7#p754x929', title: 'gegen SV Warmsen', text: '2' }]
+    - [{ url: '?staffel=460&r=1#p754x909', title: 'gegen PSC Hannover 5', text: '2' }]
+    - [{ url: '?staffel=460&r=5#p754x788', title: 'gegen Eldagsen/Bad Mü 3', text: '4' }]
+    - [{ url: '?staffel=460&r=6#p754x784', title: 'gegen SVg Calenberg 2', text: '3' }]
+    - [{ url: '?staffel=460&r=2#p754x928', title: 'gegen Neubruchhausen', text: '2' }]
+    - [{ url: '?staffel=460&r=4#p754x921', title: 'gegen Eystruper SK 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=460&r=3#p754x759', title: 'gegen SK Rinteln 3', text: 5½ }]
+    - 4
+    - 22½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Rinteln 3', url: '?mannschaft=759', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=460&r=5#p759x929', title: 'gegen SV Warmsen', text: '0' }]
+    - [{ url: '?staffel=460&r=2#p759x909', title: 'gegen PSC Hannover 5', text: 1½ }]
+    - [{ url: '?staffel=460&r=4#p759x788', title: 'gegen Eldagsen/Bad Mü 3', text: 1½ }]
+    - [{ url: '?staffel=460&r=1#p759x784', title: 'gegen SVg Calenberg 2', text: 1½ }]
+    - [{ url: '?staffel=460&r=6#p759x928', title: 'gegen Neubruchhausen', text: '4' }]
+    - [{ url: '?staffel=460&r=7#p759x921', title: 'gegen Eystruper SK 2', text: 1½ }]
+    - [{ url: '?staffel=460&r=3#p759x754', title: 'gegen SK Stolzenau 3', text: 2½ }]
+    - xxx
+    - 1
+    - 12½
+    - ''

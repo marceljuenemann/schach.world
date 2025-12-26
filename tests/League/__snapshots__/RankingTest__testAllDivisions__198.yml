@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Rinteln 3', url: '?mannschaft=2088', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=621&r=1#p2088x2093', title: 'gegen SK Ricklingen 3', text: '3' }, { url: '?staffel=621&r=5#p2088x2093', title: 'gegen SK Ricklingen 3', text: '1' }]
+    - [{ url: '?staffel=621&r=2#p2088x2069', title: 'gegen SK Anderten 3', text: 3½ }, { url: '?staffel=621&r=6#p2088x2069', title: 'gegen SK Anderten 3', text: '4' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Ricklingen 3', url: '?mannschaft=2093', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=621&r=1#p2093x2088', title: 'gegen SK Rinteln 3', text: '1' }, { url: '?staffel=621&r=5#p2093x2088', title: 'gegen SK Rinteln 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=621&r=3#p2093x2069', title: 'gegen SK Anderten 3', text: 2½ }, { url: '?staffel=621&r=4#p2093x2069', title: 'gegen SK Anderten 3', text: '2' }]
+    - 5
+    - 7½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Anderten 3', url: '?mannschaft=2069', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=621&r=2#p2069x2088', title: 'gegen SK Rinteln 3', text: ½ }, { url: '?staffel=621&r=6#p2069x2088', title: 'gegen SK Rinteln 3', text: '0' }]
+    - [{ url: '?staffel=621&r=3#p2069x2093', title: 'gegen SK Ricklingen 3', text: 1½ }, { url: '?staffel=621&r=4#p2069x2093', title: 'gegen SK Ricklingen 3', text: '2' }]
+    - xxx
+    - 1
+    - '4'
+    - ''

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamburger SK', url: '?mannschaft=3760', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=821&r=1#p3760x3759', title: 'gegen Lübecker SV', text: 2½ }]
+    - [{ url: '?staffel=821&r=6#p3760x3768', title: 'gegen Doppelbauer Kiel', text: '4' }]
+    - [{ url: '?staffel=821&r=3#p3760x3761', title: 'gegen SK Wildeshausen', text: '5' }]
+    - [{ url: '?staffel=821&r=8#p3760x3766', title: 'gegen SV Lingen', text: '4' }]
+    - [{ url: '?staffel=821&r=5#p3760x3763', title: 'gegen Hagener SV', text: 4½ }]
+    - [{ url: '?staffel=821&r=2#p3760x3764', title: 'gegen Königsspr. HH', text: 3½ }]
+    - [{ url: '?staffel=821&r=7#p3760x3767', title: 'gegen TuRa Harksheide', text: 5½ }]
+    - [{ url: '?staffel=821&r=9#p3760x3765', title: 'gegen Werder Bremen', text: 3½ }]
+    - [{ url: '?staffel=821&r=4#p3760x3762', title: 'gegen Delmenhorster SK', text: '4' }]
+    - 16
+    - 36½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Lübecker SV', url: '?mannschaft=3759', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=821&r=1#p3759x3760', title: 'gegen Hamburger SK', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=821&r=5#p3759x3768', title: 'gegen Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=821&r=2#p3759x3761', title: 'gegen SK Wildeshausen', text: '2' }]
+    - [{ url: '?staffel=821&r=7#p3759x3766', title: 'gegen SV Lingen', text: '4' }]
+    - [{ url: '?staffel=821&r=4#p3759x3763', title: 'gegen Hagener SV', text: 4½ }]
+    - [{ url: '?staffel=821&r=9#p3759x3764', title: 'gegen Königsspr. HH', text: 4½ }]
+    - [{ url: '?staffel=821&r=6#p3759x3767', title: 'gegen TuRa Harksheide', text: '4' }]
+    - [{ url: '?staffel=821&r=8#p3759x3765', title: 'gegen Werder Bremen', text: '3' }]
+    - [{ url: '?staffel=821&r=3#p3759x3762', title: 'gegen Delmenhorster SK', text: '4' }]
+    - 13
+    - 31½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Doppelbauer Kiel', url: '?mannschaft=3768', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=821&r=6#p3768x3760', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=821&r=5#p3768x3759', title: 'gegen Lübecker SV', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=821&r=7#p3768x3761', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=821&r=3#p3768x3766', title: 'gegen SV Lingen', text: 3½ }]
+    - [{ url: '?staffel=821&r=9#p3768x3763', title: 'gegen Hagener SV', text: 2½ }]
+    - [{ url: '?staffel=821&r=1#p3768x3764', title: 'gegen Königsspr. HH', text: '3' }]
+    - [{ url: '?staffel=821&r=2#p3768x3767', title: 'gegen TuRa Harksheide', text: 4½ }]
+    - [{ url: '?staffel=821&r=4#p3768x3765', title: 'gegen Werder Bremen', text: '5' }]
+    - [{ url: '?staffel=821&r=8#p3768x3762', title: 'gegen Delmenhorster SK', text: 4½ }]
+    - 12
+    - '32'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Wildeshausen', url: '?mannschaft=3761', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=821&r=3#p3761x3760', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=821&r=2#p3761x3759', title: 'gegen Lübecker SV', text: '4' }]
+    - [{ url: '?staffel=821&r=7#p3761x3768', title: 'gegen Doppelbauer Kiel', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=821&r=9#p3761x3766', title: 'gegen SV Lingen', text: 4½ }]
+    - [{ url: '?staffel=821&r=6#p3761x3763', title: 'gegen Hagener SV', text: '4' }]
+    - [{ url: '?staffel=821&r=4#p3761x3764', title: 'gegen Königsspr. HH', text: '3' }]
+    - [{ url: '?staffel=821&r=8#p3761x3767', title: 'gegen TuRa Harksheide', text: '3' }]
+    - [{ url: '?staffel=821&r=1#p3761x3765', title: 'gegen Werder Bremen', text: '3' }]
+    - [{ url: '?staffel=821&r=5#p3761x3762', title: 'gegen Delmenhorster SK', text: '4' }]
+    - 12
+    - 29½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Lingen', url: '?mannschaft=3766', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=821&r=8#p3766x3760', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=821&r=7#p3766x3759', title: 'gegen Lübecker SV', text: '2' }]
+    - [{ url: '?staffel=821&r=3#p3766x3768', title: 'gegen Doppelbauer Kiel', text: 2½ }]
+    - [{ url: '?staffel=821&r=9#p3766x3761', title: 'gegen SK Wildeshausen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=821&r=2#p3766x3763', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=821&r=5#p3766x3764', title: 'gegen Königsspr. HH', text: '4' }]
+    - [{ url: '?staffel=821&r=4#p3766x3767', title: 'gegen TuRa Harksheide', text: 3½ }]
+    - [{ url: '?staffel=821&r=6#p3766x3765', title: 'gegen Werder Bremen', text: '4' }]
+    - [{ url: '?staffel=821&r=1#p3766x3762', title: 'gegen Delmenhorster SK', text: 4½ }]
+    - 9
+    - '27'
+    - ''
+-
+    - '6.'
+    - { text: 'Hagener SV', url: '?mannschaft=3763', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=821&r=5#p3763x3760', title: 'gegen Hamburger SK', text: 1½ }]
+    - [{ url: '?staffel=821&r=4#p3763x3759', title: 'gegen Lübecker SV', text: 1½ }]
+    - [{ url: '?staffel=821&r=9#p3763x3768', title: 'gegen Doppelbauer Kiel', text: 3½ }]
+    - [{ url: '?staffel=821&r=6#p3763x3761', title: 'gegen SK Wildeshausen', text: '2' }]
+    - [{ url: '?staffel=821&r=2#p3763x3766', title: 'gegen SV Lingen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=821&r=8#p3763x3764', title: 'gegen Königsspr. HH', text: '3' }]
+    - [{ url: '?staffel=821&r=1#p3763x3767', title: 'gegen TuRa Harksheide', text: '5' }]
+    - [{ url: '?staffel=821&r=3#p3763x3765', title: 'gegen Werder Bremen', text: 3½ }]
+    - [{ url: '?staffel=821&r=7#p3763x3762', title: 'gegen Delmenhorster SK', text: 2½ }]
+    - 8
+    - 25½
+    - ''
+-
+    - '7.'
+    - { text: 'Königsspr. HH', url: '?mannschaft=3764', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=821&r=2#p3764x3760', title: 'gegen Hamburger SK', text: 2½ }]
+    - [{ url: '?staffel=821&r=9#p3764x3759', title: 'gegen Lübecker SV', text: 1½ }]
+    - [{ url: '?staffel=821&r=1#p3764x3768', title: 'gegen Doppelbauer Kiel', text: '3' }]
+    - [{ url: '?staffel=821&r=4#p3764x3761', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=821&r=5#p3764x3766', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=821&r=8#p3764x3763', title: 'gegen Hagener SV', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=821&r=3#p3764x3767', title: 'gegen TuRa Harksheide', text: 3½ }]
+    - [{ url: '?staffel=821&r=7#p3764x3765', title: 'gegen Werder Bremen', text: '4' }]
+    - [{ url: '?staffel=821&r=6#p3764x3762', title: 'gegen Delmenhorster SK', text: '2' }]
+    - 7
+    - 24½
+    - absteiger
+-
+    - '8.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=3767', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=821&r=7#p3767x3760', title: 'gegen Hamburger SK', text: ½ }]
+    - [{ url: '?staffel=821&r=6#p3767x3759', title: 'gegen Lübecker SV', text: '2' }]
+    - [{ url: '?staffel=821&r=2#p3767x3768', title: 'gegen Doppelbauer Kiel', text: 1½ }]
+    - [{ url: '?staffel=821&r=8#p3767x3761', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=821&r=4#p3767x3766', title: 'gegen SV Lingen', text: 2½ }]
+    - [{ url: '?staffel=821&r=1#p3767x3763', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=821&r=3#p3767x3764', title: 'gegen Königsspr. HH', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=821&r=5#p3767x3765', title: 'gegen Werder Bremen', text: 3½ }]
+    - [{ url: '?staffel=821&r=9#p3767x3762', title: 'gegen Delmenhorster SK', text: 3½ }]
+    - 5
+    - '20'
+    - absteiger
+-
+    - '9.'
+    - { text: 'Werder Bremen', url: '?mannschaft=3765', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=821&r=9#p3765x3760', title: 'gegen Hamburger SK', text: 2½ }]
+    - [{ url: '?staffel=821&r=8#p3765x3759', title: 'gegen Lübecker SV', text: '3' }]
+    - [{ url: '?staffel=821&r=4#p3765x3768', title: 'gegen Doppelbauer Kiel', text: '1' }]
+    - [{ url: '?staffel=821&r=1#p3765x3761', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=821&r=6#p3765x3766', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=821&r=3#p3765x3763', title: 'gegen Hagener SV', text: 2½ }]
+    - [{ url: '?staffel=821&r=7#p3765x3764', title: 'gegen Königsspr. HH', text: '2' }]
+    - [{ url: '?staffel=821&r=5#p3765x3767', title: 'gegen TuRa Harksheide', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=821&r=2#p3765x3762', title: 'gegen Delmenhorster SK', text: '4' }]
+    - 4
+    - 22½
+    - absteiger
+-
+    - '10.'
+    - { text: 'Delmenhorster SK', url: '?mannschaft=3762', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=821&r=4#p3762x3760', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=821&r=3#p3762x3759', title: 'gegen Lübecker SV', text: '2' }]
+    - [{ url: '?staffel=821&r=8#p3762x3768', title: 'gegen Doppelbauer Kiel', text: 1½ }]
+    - [{ url: '?staffel=821&r=5#p3762x3761', title: 'gegen SK Wildeshausen', text: '2' }]
+    - [{ url: '?staffel=821&r=1#p3762x3766', title: 'gegen SV Lingen', text: 1½ }]
+    - [{ url: '?staffel=821&r=7#p3762x3763', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=821&r=6#p3762x3764', title: 'gegen Königsspr. HH', text: '4' }]
+    - [{ url: '?staffel=821&r=9#p3762x3767', title: 'gegen TuRa Harksheide', text: 2½ }]
+    - [{ url: '?staffel=821&r=2#p3762x3765', title: 'gegen Werder Bremen', text: '2' }]
+    - xxx
+    - 4
+    - '21'
+    - absteiger

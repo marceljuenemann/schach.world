@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Dortmunder SV', url: '?mannschaft=1526', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=540&r=4#p1526x1510', title: 'gegen DSV  1854', text: 2½ }]
+    - [{ url: '?staffel=540&r=1#p1526x1438', title: 'gegen SV Erftstadt', text: '3' }]
+    - [{ url: '?staffel=540&r=2#p1526x1541', title: 'gegen SK 1858 Gießen', text: '2' }]
+    - [{ url: '?staffel=540&r=3#p1526x1522', title: 'gegen TTC Fritzdorf 1', text: 2½ }]
+    - 7
+    - '10'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'DSV  1854', url: '?mannschaft=1510', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=540&r=4#p1510x1526', title: 'gegen Dortmunder SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=540&r=5#p1510x1438', title: 'gegen SV Erftstadt', text: 2½ }]
+    - [{ url: '?staffel=540&r=1#p1510x1541', title: 'gegen SK 1858 Gießen', text: 2½ }]
+    - [{ url: '?staffel=540&r=2#p1510x1522', title: 'gegen TTC Fritzdorf 1', text: 3½ }]
+    - 6
+    - '10'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Erftstadt', url: '?mannschaft=1438', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=540&r=1#p1438x1526', title: 'gegen Dortmunder SV', text: '0' }]
+    - [{ url: '?staffel=540&r=5#p1438x1510', title: 'gegen DSV  1854', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=540&r=3#p1438x1541', title: 'gegen SK 1858 Gießen', text: '3' }]
+    - [{ url: '?staffel=540&r=4#p1438x1522', title: 'gegen TTC Fritzdorf 1', text: '3' }]
+    - 4
+    - 7½
+    - ''
+-
+    - '4.'
+    - { text: 'SK 1858 Gießen', url: '?mannschaft=1541', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=540&r=2#p1541x1526', title: 'gegen Dortmunder SV', text: '2' }]
+    - [{ url: '?staffel=540&r=1#p1541x1510', title: 'gegen DSV  1854', text: 1½ }]
+    - [{ url: '?staffel=540&r=3#p1541x1438', title: 'gegen SV Erftstadt', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=540&r=5#p1541x1522', title: 'gegen TTC Fritzdorf 1', text: '3' }]
+    - 3
+    - 7½
+    - ''
+-
+    - '5.'
+    - { text: 'TTC Fritzdorf 1', url: '?mannschaft=1522', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=540&r=3#p1522x1526', title: 'gegen Dortmunder SV', text: 1½ }]
+    - [{ url: '?staffel=540&r=2#p1522x1510', title: 'gegen DSV  1854', text: ½ }]
+    - [{ url: '?staffel=540&r=4#p1522x1438', title: 'gegen SV Erftstadt', text: '1' }]
+    - [{ url: '?staffel=540&r=5#p1522x1541', title: 'gegen SK 1858 Gießen', text: '0' }]
+    - xxx
+    - 0
+    - '3'
+    - absteiger

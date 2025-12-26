@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Kirchweyhe 3', url: '?mannschaft=8270', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1860&r=2#p8270x8272', title: 'gegen Bremer SG', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1860&r=3#p8270x8325', title: 'gegen Delmenhorster SK 2', text: '7' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1860&r=1#p8270x8348', title: 'gegen SG Niederelbe', text: '6' }]
+    - {  }
+    - 6
+    - 17½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Verden', url: '?mannschaft=8339', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1860&r=3#p8339x8326', title: 'gegen SF Leherheide', text: 3½ }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1860&r=1#p8339x8328', title: 'gegen SG FinWest', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1860&r=2#p8339x8258', title: 'gegen SF Buxtehude', text: 5½ }]
+    - 4
+    - '14'
+    - ''
+-
+    - '2.'
+    - { text: 'Bremer SG', url: '?mannschaft=8272', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1860&r=2#p8272x8270', title: 'gegen SK Kirchweyhe 3', text: 3½ }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1860&r=3#p8272x8259', title: 'gegen Post SV Uelzen 2', text: '5' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1860&r=1#p8272x8258', title: 'gegen SF Buxtehude', text: 5½ }]
+    - 4
+    - '14'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Leherheide', url: '?mannschaft=8326', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1860&r=3#p8326x8339', title: 'gegen SK Verden', text: 4½ }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1860&r=1#p8326x8350', title: 'gegen SK SpringerRotenburg', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1860&r=2#p8326x8328', title: 'gegen SG FinWest', text: '5' }]
+    - {  }
+    - {  }
+    - 4
+    - 12½
+    - ''
+-
+    - '5.'
+    - { text: 'Delmenhorster SK 2', url: '?mannschaft=8325', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1860&r=3#p8325x8270', title: 'gegen SK Kirchweyhe 3', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1860&r=1#p8325x8259', title: 'gegen Post SV Uelzen 2', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1860&r=2#p8325x8348', title: 'gegen SG Niederelbe', text: 4½ }]
+    - {  }
+    - 4
+    - '10'
+    - ''
+-
+    - '6.'
+    - { text: 'SK SpringerRotenburg', url: '?mannschaft=8350', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1860&r=1#p8350x8326', title: 'gegen SF Leherheide', text: '5' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1860&r=2#p8350x8259', title: 'gegen Post SV Uelzen 2', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1860&r=3#p8350x8348', title: 'gegen SG Niederelbe', text: 3½ }]
+    - {  }
+    - 2
+    - '12'
+    - ''
+-
+    - '7.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=8259', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1860&r=3#p8259x8272', title: 'gegen Bremer SG', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1860&r=1#p8259x8325', title: 'gegen Delmenhorster SK 2', text: 3½ }]
+    - [{ url: '?staffel=1860&r=2#p8259x8350', title: 'gegen SK SpringerRotenburg', text: 4½ }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - 2
+    - '11'
+    - ''
+-
+    - '8.'
+    - { text: 'SG FinWest', url: '?mannschaft=8328', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1860&r=1#p8328x8339', title: 'gegen SK Verden', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1860&r=2#p8328x8326', title: 'gegen SF Leherheide', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1860&r=3#p8328x8258', title: 'gegen SF Buxtehude', text: 4½ }]
+    - 2
+    - 10½
+    - ''
+-
+    - '9.'
+    - { text: 'SG Niederelbe', url: '?mannschaft=8348', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1860&r=1#p8348x8270', title: 'gegen SK Kirchweyhe 3', text: '2' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1860&r=2#p8348x8325', title: 'gegen Delmenhorster SK 2', text: 3½ }]
+    - [{ url: '?staffel=1860&r=3#p8348x8350', title: 'gegen SK SpringerRotenburg', text: 4½ }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 2
+    - '10'
+    - absteiger
+-
+    - '10.'
+    - { text: 'SF Buxtehude', url: '?mannschaft=8258', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1860&r=2#p8258x8339', title: 'gegen SK Verden', text: 2½ }]
+    - [{ url: '?staffel=1860&r=1#p8258x8272', title: 'gegen Bremer SG', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1860&r=3#p8258x8328', title: 'gegen SG FinWest', text: 3½ }]
+    - {  }
+    - xxx
+    - 0
+    - 8½
+    - absteiger

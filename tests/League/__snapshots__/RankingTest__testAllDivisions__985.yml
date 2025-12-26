@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Peiner SV', url: '?mannschaft=7989', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1825&r=5#p7989x7984', title: 'gegen SC BS Gliesmarode', text: 2½ }]
+    - [{ url: '?staffel=1825&r=5#p7989x7990', title: 'gegen SVG Salzgitter e. V.', text: '3' }]
+    - [{ url: '?staffel=1825&r=3#p7989x7983', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=1825&r=2#p7989x7988', title: 'gegen MTV Eintracht Celle 2', text: '4' }]
+    - [{ url: '?staffel=1825&r=1#p7989x7981', title: 'gegen SV Gifhorn 2', text: 3½ }]
+    - [{ url: '?staffel=1825&r=2#p7989x7982', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=1825&r=1#p7989x7987', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=1825&r=4#p7989x7985', title: 'gegen Braunschw. SF', text: '0' }]
+    - [{ url: '?staffel=1825&r=4#p7989x7986', title: 'gegen Braunschw. SF 2', text: '0' }]
+    - 14
+    - 23½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SC BS Gliesmarode', url: '?mannschaft=7984', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1825&r=5#p7984x7989', title: 'gegen Peiner SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1825&r=4#p7984x7990', title: 'gegen SVG Salzgitter e. V.', text: 2½ }]
+    - [{ url: '?staffel=1825&r=5#p7984x7983', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=1825&r=1#p7984x7988', title: 'gegen MTV Eintracht Celle 2', text: '3' }]
+    - [{ url: '?staffel=1825&r=3#p7984x7981', title: 'gegen SV Gifhorn 2', text: '3' }]
+    - [{ url: '?staffel=1825&r=1#p7984x7982', title: 'gegen TuS Wunstorf', text: 3½ }]
+    - [{ url: '?staffel=1825&r=3#p7984x7987', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=1825&r=2#p7984x7985', title: 'gegen Braunschw. SF', text: '0' }]
+    - [{ url: '?staffel=1825&r=2#p7984x7986', title: 'gegen Braunschw. SF 2', text: '0' }]
+    - 12
+    - 21½
+    - ''
+-
+    - '3.'
+    - { text: 'SVG Salzgitter e. V.', url: '?mannschaft=7990', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1825&r=5#p7990x7989', title: 'gegen Peiner SV', text: '1' }]
+    - [{ url: '?staffel=1825&r=4#p7990x7984', title: 'gegen SC BS Gliesmarode', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1825&r=5#p7990x7983', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=1825&r=1#p7990x7988', title: 'gegen MTV Eintracht Celle 2', text: '4' }]
+    - [{ url: '?staffel=1825&r=3#p7990x7981', title: 'gegen SV Gifhorn 2', text: '2' }]
+    - [{ url: '?staffel=1825&r=1#p7990x7982', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=1825&r=3#p7990x7987', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=1825&r=2#p7990x7985', title: 'gegen Braunschw. SF', text: '0' }]
+    - [{ url: '?staffel=1825&r=2#p7990x7986', title: 'gegen Braunschw. SF 2', text: '0' }]
+    - 9
+    - 18½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=7983', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1825&r=3#p7983x7989', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1825&r=5#p7983x7984', title: 'gegen SC BS Gliesmarode', text: '0' }]
+    - [{ url: '?staffel=1825&r=5#p7983x7990', title: 'gegen SVG Salzgitter e. V.', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1825&r=2#p7983x7988', title: 'gegen MTV Eintracht Celle 2', text: '1' }]
+    - [{ url: '?staffel=1825&r=1#p7983x7981', title: 'gegen SV Gifhorn 2', text: '4' }]
+    - [{ url: '?staffel=1825&r=2#p7983x7982', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=1825&r=1#p7983x7987', title: 'gegen SC Wolfsburg', text: '3' }]
+    - [{ url: '?staffel=1825&r=4#p7983x7985', title: 'gegen Braunschw. SF', text: '0' }]
+    - [{ url: '?staffel=1825&r=4#p7983x7986', title: 'gegen Braunschw. SF 2', text: '0' }]
+    - 6
+    - '13'
+    - ''
+-
+    - '5.'
+    - { text: 'MTV Eintracht Celle 2', url: '?mannschaft=7988', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1825&r=2#p7988x7989', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1825&r=1#p7988x7984', title: 'gegen SC BS Gliesmarode', text: '1' }]
+    - [{ url: '?staffel=1825&r=1#p7988x7990', title: 'gegen SVG Salzgitter e. V.', text: '0' }]
+    - [{ url: '?staffel=1825&r=2#p7988x7983', title: 'gegen SK Lehrte 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1825&r=4#p7988x7981', title: 'gegen SV Gifhorn 2', text: '1' }]
+    - [{ url: '?staffel=1825&r=5#p7988x7982', title: 'gegen TuS Wunstorf', text: '2' }]
+    - [{ url: '?staffel=1825&r=4#p7988x7987', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=1825&r=3#p7988x7985', title: 'gegen Braunschw. SF', text: '0' }]
+    - [{ url: '?staffel=1825&r=3#p7988x7986', title: 'gegen Braunschw. SF 2', text: '0' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Gifhorn 2', url: '?mannschaft=7981', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1825&r=1#p7981x7989', title: 'gegen Peiner SV', text: ½ }]
+    - [{ url: '?staffel=1825&r=3#p7981x7984', title: 'gegen SC BS Gliesmarode', text: '1' }]
+    - [{ url: '?staffel=1825&r=3#p7981x7990', title: 'gegen SVG Salzgitter e. V.', text: '2' }]
+    - [{ url: '?staffel=1825&r=1#p7981x7983', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1825&r=4#p7981x7988', title: 'gegen MTV Eintracht Celle 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1825&r=4#p7981x7982', title: 'gegen TuS Wunstorf', text: '2' }]
+    - [{ url: '?staffel=1825&r=2#p7981x7987', title: 'gegen SC Wolfsburg', text: '2' }]
+    - [{ url: '?staffel=1825&r=5#p7981x7985', title: 'gegen Braunschw. SF', text: '0' }]
+    - [{ url: '?staffel=1825&r=5#p7981x7986', title: 'gegen Braunschw. SF 2', text: '0' }]
+    - 5
+    - 10½
+    - ''
+-
+    - '7.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=7982', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1825&r=2#p7982x7989', title: 'gegen Peiner SV', text: 1½ }]
+    - [{ url: '?staffel=1825&r=1#p7982x7984', title: 'gegen SC BS Gliesmarode', text: ½ }]
+    - [{ url: '?staffel=1825&r=1#p7982x7990', title: 'gegen SVG Salzgitter e. V.', text: '1' }]
+    - [{ url: '?staffel=1825&r=2#p7982x7983', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1825&r=5#p7982x7988', title: 'gegen MTV Eintracht Celle 2', text: '2' }]
+    - [{ url: '?staffel=1825&r=4#p7982x7981', title: 'gegen SV Gifhorn 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1825&r=4#p7982x7987', title: 'gegen SC Wolfsburg', text: '3' }]
+    - [{ url: '?staffel=1825&r=3#p7982x7985', title: 'gegen Braunschw. SF', text: '0' }]
+    - [{ url: '?staffel=1825&r=3#p7982x7986', title: 'gegen Braunschw. SF 2', text: '0' }]
+    - 4
+    - '10'
+    - ''
+-
+    - '8.'
+    - { text: 'SC Wolfsburg', url: '?mannschaft=7987', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1825&r=1#p7987x7989', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1825&r=3#p7987x7984', title: 'gegen SC BS Gliesmarode', text: '0' }]
+    - [{ url: '?staffel=1825&r=3#p7987x7990', title: 'gegen SVG Salzgitter e. V.', text: '0' }]
+    - [{ url: '?staffel=1825&r=1#p7987x7983', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=1825&r=4#p7987x7988', title: 'gegen MTV Eintracht Celle 2', text: '0' }]
+    - [{ url: '?staffel=1825&r=2#p7987x7981', title: 'gegen SV Gifhorn 2', text: '2' }]
+    - [{ url: '?staffel=1825&r=4#p7987x7982', title: 'gegen TuS Wunstorf', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1825&r=5#p7987x7985', title: 'gegen Braunschw. SF', text: '0' }]
+    - [{ url: '?staffel=1825&r=5#p7987x7986', title: 'gegen Braunschw. SF 2', text: '0' }]
+    - 1
+    - '4'
+    - ''
+-
+    - '9.'
+    - { text: 'Braunschw. SF', url: '?mannschaft=7985', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1825&r=4#p7985x7989', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1825&r=2#p7985x7984', title: 'gegen SC BS Gliesmarode', text: '0' }]
+    - [{ url: '?staffel=1825&r=2#p7985x7990', title: 'gegen SVG Salzgitter e. V.', text: '0' }]
+    - [{ url: '?staffel=1825&r=4#p7985x7983', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1825&r=3#p7985x7988', title: 'gegen MTV Eintracht Celle 2', text: '0' }]
+    - [{ url: '?staffel=1825&r=5#p7985x7981', title: 'gegen SV Gifhorn 2', text: '0' }]
+    - [{ url: '?staffel=1825&r=3#p7985x7982', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=1825&r=5#p7985x7987', title: 'gegen SC Wolfsburg', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1825&r=1#p7985x7986', title: 'gegen Braunschw. SF 2', text: '0' }]
+    - 0
+    - '0'
+    - ''
+-
+    - '10.'
+    - { text: 'Braunschw. SF 2', url: '?mannschaft=7986', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1825&r=4#p7986x7989', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1825&r=2#p7986x7984', title: 'gegen SC BS Gliesmarode', text: '0' }]
+    - [{ url: '?staffel=1825&r=2#p7986x7990', title: 'gegen SVG Salzgitter e. V.', text: '0' }]
+    - [{ url: '?staffel=1825&r=4#p7986x7983', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1825&r=3#p7986x7988', title: 'gegen MTV Eintracht Celle 2', text: '0' }]
+    - [{ url: '?staffel=1825&r=5#p7986x7981', title: 'gegen SV Gifhorn 2', text: '0' }]
+    - [{ url: '?staffel=1825&r=3#p7986x7982', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=1825&r=5#p7986x7987', title: 'gegen SC Wolfsburg', text: '0' }]
+    - [{ url: '?staffel=1825&r=1#p7986x7985', title: 'gegen Braunschw. SF', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

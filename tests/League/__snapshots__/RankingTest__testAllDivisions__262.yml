@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Laatzen', url: '?mannschaft=2537', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=693&r=5#p2537x2690', title: 'gegen Schachakademie', text: 3½ }]
+    - [{ url: '?staffel=693&r=4#p2537x2526', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=693&r=1#p2537x2598', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=693&r=3#p2537x2550', title: 'gegen Barsinghausen', text: '4' }]
+    - 7
+    - 12½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: Schachakademie, url: '?mannschaft=2690', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=693&r=5#p2690x2537', title: 'gegen SV Laatzen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=693&r=2#p2690x2526', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=693&r=4#p2690x2598', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=693&r=1#p2690x2550', title: 'gegen Barsinghausen', text: '4' }]
+    - 6
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=2526', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=693&r=4#p2526x2537', title: 'gegen SV Laatzen', text: '2' }]
+    - [{ url: '?staffel=693&r=2#p2526x2690', title: 'gegen Schachakademie', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=693&r=3#p2526x2598', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=693&r=5#p2526x2550', title: 'gegen Barsinghausen', text: '4' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=2598', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=693&r=1#p2598x2537', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=693&r=4#p2598x2690', title: 'gegen Schachakademie', text: '1' }]
+    - [{ url: '?staffel=693&r=3#p2598x2526', title: 'gegen SK Ricklingen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=693&r=2#p2598x2550', title: 'gegen Barsinghausen', text: '3' }]
+    - 2
+    - '6'
+    - ''
+-
+    - '5.'
+    - { text: Barsinghausen, url: '?mannschaft=2550', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=693&r=3#p2550x2537', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=693&r=1#p2550x2690', title: 'gegen Schachakademie', text: '0' }]
+    - [{ url: '?staffel=693&r=5#p2550x2526', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=693&r=2#p2550x2598', title: 'gegen SV Bückeburg', text: '1' }]
+    - xxx
+    - 0
+    - '1'
+    - ''

@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: Uetze-Hänigsen, url: '?mannschaft=3821', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=802&r=3#p3821x3820', title: 'gegen HSK Lister Turm 2', text: 1½ }]
+    - [{ url: '?staffel=802&r=2#p3821x3822', title: 'gegen WB Eilenriede', text: 3½ }]
+    - 2
+    - '5'
+    - ''
+-
+    - '2.'
+    - { text: 'HSK Lister Turm 2', url: '?mannschaft=3820', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=802&r=3#p3820x3821', title: 'gegen Uetze-Hänigsen', text: 2½ }]
+    - xxx
+    - {  }
+    - 2
+    - 2½
+    - ''
+-
+    - '3.'
+    - { text: 'WB Eilenriede', url: '?mannschaft=3822', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=802&r=2#p3822x3821', title: 'gegen Uetze-Hänigsen', text: ½ }]
+    - {  }
+    - xxx
+    - 0
+    - ½
+    - ''

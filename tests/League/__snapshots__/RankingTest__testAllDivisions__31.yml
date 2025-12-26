@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: Nordhorn-Blanke, url: '?mannschaft=620', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=428&r=3#p620x623', title: 'gegen SF Spelle', text: '3' }]
+    - [{ url: '?staffel=428&r=2#p620x625', title: 'gegen TSV Riemsloh', text: '1' }]
+    - [{ url: '?staffel=428&r=4#p620x622', title: 'gegen SG Oesede Gmht.', text: '2' }]
+    - [{ url: '?staffel=428&r=1#p620x621', title: 'gegen SK Nordhorn-Bl. 2', text: '4' }]
+    - [{ url: '?staffel=428&r=5#p620x624', title: 'gegen SF Spelle 2', text: '4' }]
+    - 7
+    - '14'
+    - ''
+-
+    - '2.'
+    - { text: 'SF Spelle', url: '?mannschaft=623', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=428&r=3#p623x620', title: 'gegen Nordhorn-Blanke', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=428&r=4#p623x625', title: 'gegen TSV Riemsloh', text: '3' }]
+    - [{ url: '?staffel=428&r=5#p623x622', title: 'gegen SG Oesede Gmht.', text: '2' }]
+    - [{ url: '?staffel=428&r=2#p623x621', title: 'gegen SK Nordhorn-Bl. 2', text: '4' }]
+    - [{ url: '?staffel=428&r=1#p623x624', title: 'gegen SF Spelle 2', text: '4' }]
+    - 7
+    - '14'
+    - ''
+-
+    - '3.'
+    - { text: 'TSV Riemsloh', url: '?mannschaft=625', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=428&r=2#p625x620', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=428&r=4#p625x623', title: 'gegen SF Spelle', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=428&r=1#p625x622', title: 'gegen SG Oesede Gmht.', text: 1½ }]
+    - [{ url: '?staffel=428&r=5#p625x621', title: 'gegen SK Nordhorn-Bl. 2', text: 2½ }]
+    - [{ url: '?staffel=428&r=3#p625x624', title: 'gegen SF Spelle 2', text: 3½ }]
+    - 6
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Oesede Gmht.', url: '?mannschaft=622', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=428&r=4#p622x620', title: 'gegen Nordhorn-Blanke', text: '2' }]
+    - [{ url: '?staffel=428&r=5#p622x623', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=428&r=1#p622x625', title: 'gegen TSV Riemsloh', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=428&r=3#p622x621', title: 'gegen SK Nordhorn-Bl. 2', text: '2' }]
+    - [{ url: '?staffel=428&r=2#p622x624', title: 'gegen SF Spelle 2', text: '2' }]
+    - 6
+    - 10½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Nordhorn-Bl. 2', url: '?mannschaft=621', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=428&r=1#p621x620', title: 'gegen Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=428&r=2#p621x623', title: 'gegen SF Spelle', text: '0' }]
+    - [{ url: '?staffel=428&r=5#p621x625', title: 'gegen TSV Riemsloh', text: 1½ }]
+    - [{ url: '?staffel=428&r=3#p621x622', title: 'gegen SG Oesede Gmht.', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=428&r=4#p621x624', title: 'gegen SF Spelle 2', text: 2½ }]
+    - 3
+    - '6'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=624', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=428&r=5#p624x620', title: 'gegen Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=428&r=1#p624x623', title: 'gegen SF Spelle', text: '0' }]
+    - [{ url: '?staffel=428&r=3#p624x625', title: 'gegen TSV Riemsloh', text: ½ }]
+    - [{ url: '?staffel=428&r=2#p624x622', title: 'gegen SG Oesede Gmht.', text: '2' }]
+    - [{ url: '?staffel=428&r=4#p624x621', title: 'gegen SK Nordhorn-Bl. 2', text: 1½ }]
+    - xxx
+    - 1
+    - '4'
+    - ''

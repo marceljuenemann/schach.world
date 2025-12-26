@@ -1,4 +1,4 @@
-<?
+<?php
 /* Spieltag-Anzeige als PDF
  *
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann

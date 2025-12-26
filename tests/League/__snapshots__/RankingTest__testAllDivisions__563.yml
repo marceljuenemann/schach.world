@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Rochade Göttingen', url: '?mannschaft=5205', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1049&r=1#p5205x5207', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=1049&r=7#p5205x5216', title: 'gegen SC Aurich', text: 3½ }]
+    - [{ url: '?staffel=1049&r=3#p5205x5212', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1049&r=6#p5205x5210', title: 'gegen SK Nordhorn-Blanke', text: '5' }]
+    - [{ url: '?staffel=1049&r=2#p5205x5211', title: 'gegen Papenbg.-Heisfelde', text: 4½ }]
+    - [{ url: '?staffel=1049&r=4#p5205x5193', title: 'gegen SV Lingen', text: '5' }]
+    - [{ url: '?staffel=1049&r=5#p5205x5215', title: 'gegen Hagener SV 2', text: 4½ }]
+    - 12
+    - 28½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Stader SV', url: '?mannschaft=5207', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1049&r=1#p5207x5205', title: 'gegen Rochade Göttingen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1049&r=2#p5207x5216', title: 'gegen SC Aurich', text: 4½ }]
+    - [{ url: '?staffel=1049&r=4#p5207x5212', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=1049&r=7#p5207x5210', title: 'gegen SK Nordhorn-Blanke', text: 2½ }]
+    - [{ url: '?staffel=1049&r=3#p5207x5211', title: 'gegen Papenbg.-Heisfelde', text: '4' }]
+    - [{ url: '?staffel=1049&r=5#p5207x5193', title: 'gegen SV Lingen', text: 4½ }]
+    - [{ url: '?staffel=1049&r=6#p5207x5215', title: 'gegen Hagener SV 2', text: '6' }]
+    - 10
+    - 26½
+    - ''
+-
+    - '3.'
+    - { text: 'SC Aurich', url: '?mannschaft=5216', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1049&r=7#p5216x5205', title: 'gegen Rochade Göttingen', text: 2½ }]
+    - [{ url: '?staffel=1049&r=2#p5216x5207', title: 'gegen Stader SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1049&r=1#p5216x5212', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=1049&r=3#p5216x5210', title: 'gegen SK Nordhorn-Blanke', text: '5' }]
+    - [{ url: '?staffel=1049&r=5#p5216x5211', title: 'gegen Papenbg.-Heisfelde', text: '4' }]
+    - [{ url: '?staffel=1049&r=6#p5216x5193', title: 'gegen SV Lingen', text: '4' }]
+    - [{ url: '?staffel=1049&r=4#p5216x5215', title: 'gegen Hagener SV 2', text: '5' }]
+    - 10
+    - 26½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=5212', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1049&r=3#p5212x5205', title: 'gegen Rochade Göttingen', text: '2' }]
+    - [{ url: '?staffel=1049&r=4#p5212x5207', title: 'gegen Stader SV', text: '5' }]
+    - [{ url: '?staffel=1049&r=1#p5212x5216', title: 'gegen SC Aurich', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1049&r=5#p5212x5210', title: 'gegen SK Nordhorn-Blanke', text: '4' }]
+    - [{ url: '?staffel=1049&r=6#p5212x5211', title: 'gegen Papenbg.-Heisfelde', text: '4' }]
+    - [{ url: '?staffel=1049&r=7#p5212x5193', title: 'gegen SV Lingen', text: 3½ }]
+    - [{ url: '?staffel=1049&r=2#p5212x5215', title: 'gegen Hagener SV 2', text: '5' }]
+    - 10
+    - '25'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Nordhorn-Blanke', url: '?mannschaft=5210', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1049&r=6#p5210x5205', title: 'gegen Rochade Göttingen', text: '1' }]
+    - [{ url: '?staffel=1049&r=7#p5210x5207', title: 'gegen Stader SV', text: 3½ }]
+    - [{ url: '?staffel=1049&r=3#p5210x5216', title: 'gegen SC Aurich', text: '1' }]
+    - [{ url: '?staffel=1049&r=5#p5210x5212', title: 'gegen SK Lehrte 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1049&r=4#p5210x5211', title: 'gegen Papenbg.-Heisfelde', text: 3½ }]
+    - [{ url: '?staffel=1049&r=2#p5210x5193', title: 'gegen SV Lingen', text: 2½ }]
+    - [{ url: '?staffel=1049&r=1#p5210x5215', title: 'gegen Hagener SV 2', text: 4½ }]
+    - 6
+    - '18'
+    - ''
+-
+    - '6.'
+    - { text: Papenbg.-Heisfelde, url: '?mannschaft=5211', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1049&r=2#p5211x5205', title: 'gegen Rochade Göttingen', text: 1½ }]
+    - [{ url: '?staffel=1049&r=3#p5211x5207', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=1049&r=5#p5211x5216', title: 'gegen SC Aurich', text: '2' }]
+    - [{ url: '?staffel=1049&r=6#p5211x5212', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1049&r=4#p5211x5210', title: 'gegen SK Nordhorn-Blanke', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1049&r=1#p5211x5193', title: 'gegen SV Lingen', text: 3½ }]
+    - [{ url: '?staffel=1049&r=7#p5211x5215', title: 'gegen Hagener SV 2', text: 3½ }]
+    - 4
+    - '17'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Lingen', url: '?mannschaft=5193', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1049&r=4#p5193x5205', title: 'gegen Rochade Göttingen', text: '1' }]
+    - [{ url: '?staffel=1049&r=5#p5193x5207', title: 'gegen Stader SV', text: 1½ }]
+    - [{ url: '?staffel=1049&r=6#p5193x5216', title: 'gegen SC Aurich', text: '2' }]
+    - [{ url: '?staffel=1049&r=7#p5193x5212', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - [{ url: '?staffel=1049&r=2#p5193x5210', title: 'gegen SK Nordhorn-Blanke', text: 3½ }]
+    - [{ url: '?staffel=1049&r=1#p5193x5211', title: 'gegen Papenbg.-Heisfelde', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1049&r=3#p5193x5215', title: 'gegen Hagener SV 2', text: 3½ }]
+    - 4
+    - 16½
+    - ''
+-
+    - '8.'
+    - { text: 'Hagener SV 2', url: '?mannschaft=5215', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1049&r=5#p5215x5205', title: 'gegen Rochade Göttingen', text: 1½ }]
+    - [{ url: '?staffel=1049&r=6#p5215x5207', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=1049&r=4#p5215x5216', title: 'gegen SC Aurich', text: '1' }]
+    - [{ url: '?staffel=1049&r=2#p5215x5212', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=1049&r=1#p5215x5210', title: 'gegen SK Nordhorn-Blanke', text: 1½ }]
+    - [{ url: '?staffel=1049&r=7#p5215x5211', title: 'gegen Papenbg.-Heisfelde', text: 2½ }]
+    - [{ url: '?staffel=1049&r=3#p5215x5193', title: 'gegen SV Lingen', text: 2½ }]
+    - xxx
+    - 0
+    - '10'
+    - absteiger

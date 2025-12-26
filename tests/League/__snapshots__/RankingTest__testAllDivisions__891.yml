@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hildesheimer SV 5', url: '?mannschaft=7757', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1723&r=3#p7757x7766', title: 'gegen SG Südharz 2', text: '3' }, { url: '?staffel=1723&r=5#p7757x7766', title: 'gegen SG Südharz 2', text: 3½ }]
+    - [{ url: '?staffel=1723&r=2#p7757x7761', title: 'gegen SK Gronau 2', text: '3' }, { url: '?staffel=1723&r=6#p7757x7761', title: 'gegen SK Gronau 2', text: '4' }]
+    - [{ url: '?staffel=1723&r=1#p7757x7763', title: 'gegen Schach-AG Hildesheim', text: '4' }, { url: '?staffel=1723&r=4#p7757x7763', title: 'gegen Schach-AG Hildesheim', text: '4' }]
+    - 12
+    - 21½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Südharz 2', url: '?mannschaft=7766', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1723&r=3#p7766x7757', title: 'gegen Hildesheimer SV 5', text: '1' }, { url: '?staffel=1723&r=5#p7766x7757', title: 'gegen Hildesheimer SV 5', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1723&r=1#p7766x7761', title: 'gegen SK Gronau 2', text: 3½ }, { url: '?staffel=1723&r=4#p7766x7761', title: 'gegen SK Gronau 2', text: '3' }]
+    - [{ url: '?staffel=1723&r=2#p7766x7763', title: 'gegen Schach-AG Hildesheim', text: '4' }, { url: '?staffel=1723&r=6#p7766x7763', title: 'gegen Schach-AG Hildesheim', text: '4' }]
+    - 8
+    - '16'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SK Gronau 2', url: '?mannschaft=7761', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1723&r=2#p7761x7757', title: 'gegen Hildesheimer SV 5', text: '1' }, { url: '?staffel=1723&r=6#p7761x7757', title: 'gegen Hildesheimer SV 5', text: '0' }]
+    - [{ url: '?staffel=1723&r=1#p7761x7766', title: 'gegen SG Südharz 2', text: ½ }, { url: '?staffel=1723&r=4#p7761x7766', title: 'gegen SG Südharz 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1723&r=3#p7761x7763', title: 'gegen Schach-AG Hildesheim', text: '4' }, { url: '?staffel=1723&r=5#p7761x7763', title: 'gegen Schach-AG Hildesheim', text: '4' }]
+    - 4
+    - 10½
+    - ''
+-
+    - '4.'
+    - { text: 'Schach-AG Hildesheim', url: '?mannschaft=7763', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1723&r=1#p7763x7757', title: 'gegen Hildesheimer SV 5', text: '0' }, { url: '?staffel=1723&r=4#p7763x7757', title: 'gegen Hildesheimer SV 5', text: '0' }]
+    - [{ url: '?staffel=1723&r=2#p7763x7766', title: 'gegen SG Südharz 2', text: '0' }, { url: '?staffel=1723&r=6#p7763x7766', title: 'gegen SG Südharz 2', text: '0' }]
+    - [{ url: '?staffel=1723&r=3#p7763x7761', title: 'gegen SK Gronau 2', text: '0' }, { url: '?staffel=1723&r=5#p7763x7761', title: 'gegen SK Gronau 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

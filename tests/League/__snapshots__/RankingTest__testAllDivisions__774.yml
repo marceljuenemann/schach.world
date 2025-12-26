@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Osnabrück', url: '?mannschaft=6873', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1576&r=2#p6873x6805', title: 'gegen KS Emden', text: '6' }]
+    - [{ url: '?staffel=1576&r=1#p6873x6874', title: 'gegen SG Ammerland 2', text: '5' }]
+    - [{ url: '?staffel=1576&r=4#p6873x6872', title: 'gegen SV Esens', text: 6½ }]
+    - [{ url: '?staffel=1576&r=3#p6873x6814', title: 'gegen SK Nordhorn-Blanke 3', text: 5½ }]
+    - [{ url: '?staffel=1576&r=5#p6873x6810', title: 'gegen SV Bad Essen', text: '6' }]
+    - [{ url: '?staffel=1576&r=6#p6873x6809', title: 'gegen SV Hellern 2', text: '6' }]
+    - [{ url: '?staffel=1576&r=7#p6873x6803', title: 'gegen SK Union Oldenburg 2', text: '5' }]
+    - 14
+    - '40'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'KS Emden', url: '?mannschaft=6805', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1576&r=2#p6805x6873', title: 'gegen SG Osnabrück', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1576&r=5#p6805x6874', title: 'gegen SG Ammerland 2', text: 4½ }]
+    - [{ url: '?staffel=1576&r=1#p6805x6872', title: 'gegen SV Esens', text: '4' }]
+    - [{ url: '?staffel=1576&r=7#p6805x6814', title: 'gegen SK Nordhorn-Blanke 3', text: '5' }]
+    - [{ url: '?staffel=1576&r=4#p6805x6810', title: 'gegen SV Bad Essen', text: 5½ }]
+    - [{ url: '?staffel=1576&r=3#p6805x6809', title: 'gegen SV Hellern 2', text: '8' }]
+    - [{ url: '?staffel=1576&r=6#p6805x6803', title: 'gegen SK Union Oldenburg 2', text: 3½ }]
+    - 9
+    - 32½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Ammerland 2', url: '?mannschaft=6874', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1576&r=1#p6874x6873', title: 'gegen SG Osnabrück', text: '3' }]
+    - [{ url: '?staffel=1576&r=5#p6874x6805', title: 'gegen KS Emden', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1576&r=7#p6874x6872', title: 'gegen SV Esens', text: '5' }]
+    - [{ url: '?staffel=1576&r=2#p6874x6814', title: 'gegen SK Nordhorn-Blanke 3', text: 4½ }]
+    - [{ url: '?staffel=1576&r=6#p6874x6810', title: 'gegen SV Bad Essen', text: 4½ }]
+    - [{ url: '?staffel=1576&r=4#p6874x6809', title: 'gegen SV Hellern 2', text: '3' }]
+    - [{ url: '?staffel=1576&r=3#p6874x6803', title: 'gegen SK Union Oldenburg 2', text: 4½ }]
+    - 8
+    - '28'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Esens', url: '?mannschaft=6872', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1576&r=4#p6872x6873', title: 'gegen SG Osnabrück', text: 1½ }]
+    - [{ url: '?staffel=1576&r=1#p6872x6805', title: 'gegen KS Emden', text: '4' }]
+    - [{ url: '?staffel=1576&r=7#p6872x6874', title: 'gegen SG Ammerland 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1576&r=6#p6872x6814', title: 'gegen SK Nordhorn-Blanke 3', text: '5' }]
+    - [{ url: '?staffel=1576&r=3#p6872x6810', title: 'gegen SV Bad Essen', text: '0' }]
+    - [{ url: '?staffel=1576&r=2#p6872x6809', title: 'gegen SV Hellern 2', text: 5½ }]
+    - [{ url: '?staffel=1576&r=5#p6872x6803', title: 'gegen SK Union Oldenburg 2', text: 4½ }]
+    - 7
+    - 23½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Nordhorn-Blanke 3', url: '?mannschaft=6814', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1576&r=3#p6814x6873', title: 'gegen SG Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=1576&r=7#p6814x6805', title: 'gegen KS Emden', text: '3' }]
+    - [{ url: '?staffel=1576&r=2#p6814x6874', title: 'gegen SG Ammerland 2', text: 3½ }]
+    - [{ url: '?staffel=1576&r=6#p6814x6872', title: 'gegen SV Esens', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1576&r=1#p6814x6810', title: 'gegen SV Bad Essen', text: '4' }]
+    - [{ url: '?staffel=1576&r=5#p6814x6809', title: 'gegen SV Hellern 2', text: 6½ }]
+    - [{ url: '?staffel=1576&r=4#p6814x6803', title: 'gegen SK Union Oldenburg 2', text: 6½ }]
+    - 5
+    - '29'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Bad Essen', url: '?mannschaft=6810', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1576&r=5#p6810x6873', title: 'gegen SG Osnabrück', text: '2' }]
+    - [{ url: '?staffel=1576&r=4#p6810x6805', title: 'gegen KS Emden', text: 2½ }]
+    - [{ url: '?staffel=1576&r=6#p6810x6874', title: 'gegen SG Ammerland 2', text: 3½ }]
+    - [{ url: '?staffel=1576&r=3#p6810x6872', title: 'gegen SV Esens', text: '8' }]
+    - [{ url: '?staffel=1576&r=1#p6810x6814', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1576&r=7#p6810x6809', title: 'gegen SV Hellern 2', text: '3' }]
+    - [{ url: '?staffel=1576&r=2#p6810x6803', title: 'gegen SK Union Oldenburg 2', text: 4½ }]
+    - 5
+    - 27½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Hellern 2', url: '?mannschaft=6809', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1576&r=6#p6809x6873', title: 'gegen SG Osnabrück', text: '2' }]
+    - [{ url: '?staffel=1576&r=3#p6809x6805', title: 'gegen KS Emden', text: '0' }]
+    - [{ url: '?staffel=1576&r=4#p6809x6874', title: 'gegen SG Ammerland 2', text: '5' }]
+    - [{ url: '?staffel=1576&r=2#p6809x6872', title: 'gegen SV Esens', text: 2½ }]
+    - [{ url: '?staffel=1576&r=5#p6809x6814', title: 'gegen SK Nordhorn-Blanke 3', text: 1½ }]
+    - [{ url: '?staffel=1576&r=7#p6809x6810', title: 'gegen SV Bad Essen', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1576&r=1#p6809x6803', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - 5
+    - '20'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SK Union Oldenburg 2', url: '?mannschaft=6803', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1576&r=7#p6803x6873', title: 'gegen SG Osnabrück', text: '3' }]
+    - [{ url: '?staffel=1576&r=6#p6803x6805', title: 'gegen KS Emden', text: 4½ }]
+    - [{ url: '?staffel=1576&r=3#p6803x6874', title: 'gegen SG Ammerland 2', text: 3½ }]
+    - [{ url: '?staffel=1576&r=5#p6803x6872', title: 'gegen SV Esens', text: 3½ }]
+    - [{ url: '?staffel=1576&r=4#p6803x6814', title: 'gegen SK Nordhorn-Blanke 3', text: 1½ }]
+    - [{ url: '?staffel=1576&r=2#p6803x6810', title: 'gegen SV Bad Essen', text: 3½ }]
+    - [{ url: '?staffel=1576&r=1#p6803x6809', title: 'gegen SV Hellern 2', text: '4' }]
+    - xxx
+    - 3
+    - 23½
+    - absteiger

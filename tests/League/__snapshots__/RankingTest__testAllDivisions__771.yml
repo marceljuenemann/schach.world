@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'HSK Lister Turm 2', url: '?mannschaft=6863', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1573&r=3#p6863x6788', title: 'gegen Hannover 96', text: 6½ }]
+    - [{ url: '?staffel=1573&r=9#p6863x6779', title: 'gegen Hildesheimer SV', text: '6' }]
+    - [{ url: '?staffel=1573&r=1#p6863x6825', title: 'gegen SK Rinteln', text: '5' }]
+    - [{ url: '?staffel=1573&r=8#p6863x6791', title: 'gegen SV Laatzen', text: 6½ }]
+    - [{ url: '?staffel=1573&r=4#p6863x6866', title: 'gegen Hamelner SV 2', text: 6½ }]
+    - [{ url: '?staffel=1573&r=5#p6863x6816', title: 'gegen SC BS Gliesmarode', text: '6' }]
+    - [{ url: '?staffel=1573&r=2#p6863x6793', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=1573&r=7#p6863x6864', title: 'gegen ST Langenhagen', text: '8' }]
+    - [{ url: '?staffel=1573&r=6#p6863x6884', title: 'gegen Tempo Göttingen', text: '7' }]
+    - 17
+    - 55½
+    - ''
+-
+    - '2.'
+    - { text: 'Hannover 96', url: '?mannschaft=6788', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1573&r=3#p6788x6863', title: 'gegen HSK Lister Turm 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1573&r=4#p6788x6779', title: 'gegen Hildesheimer SV', text: 4½ }]
+    - [{ url: '?staffel=1573&r=5#p6788x6825', title: 'gegen SK Rinteln', text: 4½ }]
+    - [{ url: '?staffel=1573&r=2#p6788x6791', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=1573&r=7#p6788x6866', title: 'gegen Hamelner SV 2', text: '5' }]
+    - [{ url: '?staffel=1573&r=1#p6788x6816', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - [{ url: '?staffel=1573&r=6#p6788x6793', title: 'gegen SD Isernhagen', text: '5' }]
+    - [{ url: '?staffel=1573&r=9#p6788x6864', title: 'gegen ST Langenhagen', text: 4½ }]
+    - [{ url: '?staffel=1573&r=8#p6788x6884', title: 'gegen Tempo Göttingen', text: '5' }]
+    - 14
+    - '38'
+    - ''
+-
+    - '3.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=6779', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1573&r=9#p6779x6863', title: 'gegen HSK Lister Turm 2', text: '2' }]
+    - [{ url: '?staffel=1573&r=4#p6779x6788', title: 'gegen Hannover 96', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1573&r=2#p6779x6825', title: 'gegen SK Rinteln', text: '5' }]
+    - [{ url: '?staffel=1573&r=6#p6779x6791', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=1573&r=8#p6779x6866', title: 'gegen Hamelner SV 2', text: 5½ }]
+    - [{ url: '?staffel=1573&r=7#p6779x6816', title: 'gegen SC BS Gliesmarode', text: '6' }]
+    - [{ url: '?staffel=1573&r=3#p6779x6793', title: 'gegen SD Isernhagen', text: '5' }]
+    - [{ url: '?staffel=1573&r=1#p6779x6864', title: 'gegen ST Langenhagen', text: '6' }]
+    - [{ url: '?staffel=1573&r=5#p6779x6884', title: 'gegen Tempo Göttingen', text: '8' }]
+    - 13
+    - '45'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Rinteln', url: '?mannschaft=6825', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1573&r=1#p6825x6863', title: 'gegen HSK Lister Turm 2', text: '3' }]
+    - [{ url: '?staffel=1573&r=5#p6825x6788', title: 'gegen Hannover 96', text: 3½ }]
+    - [{ url: '?staffel=1573&r=2#p6825x6779', title: 'gegen Hildesheimer SV', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1573&r=9#p6825x6791', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=1573&r=6#p6825x6866', title: 'gegen Hamelner SV 2', text: 4½ }]
+    - [{ url: '?staffel=1573&r=8#p6825x6816', title: 'gegen SC BS Gliesmarode', text: '6' }]
+    - [{ url: '?staffel=1573&r=4#p6825x6793', title: 'gegen SD Isernhagen', text: 4½ }]
+    - [{ url: '?staffel=1573&r=3#p6825x6864', title: 'gegen ST Langenhagen', text: 4½ }]
+    - [{ url: '?staffel=1573&r=7#p6825x6884', title: 'gegen Tempo Göttingen', text: '5' }]
+    - 10
+    - 37½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Laatzen', url: '?mannschaft=6791', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1573&r=8#p6791x6863', title: 'gegen HSK Lister Turm 2', text: 1½ }]
+    - [{ url: '?staffel=1573&r=2#p6791x6788', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=1573&r=6#p6791x6779', title: 'gegen Hildesheimer SV', text: '4' }]
+    - [{ url: '?staffel=1573&r=9#p6791x6825', title: 'gegen SK Rinteln', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1573&r=1#p6791x6866', title: 'gegen Hamelner SV 2', text: '3' }]
+    - [{ url: '?staffel=1573&r=4#p6791x6816', title: 'gegen SC BS Gliesmarode', text: 3½ }]
+    - [{ url: '?staffel=1573&r=7#p6791x6793', title: 'gegen SD Isernhagen', text: '5' }]
+    - [{ url: '?staffel=1573&r=5#p6791x6864', title: 'gegen ST Langenhagen', text: 5½ }]
+    - [{ url: '?staffel=1573&r=3#p6791x6884', title: 'gegen Tempo Göttingen', text: 5½ }]
+    - 10
+    - 36½
+    - ''
+-
+    - '6.'
+    - { text: 'Hamelner SV 2', url: '?mannschaft=6866', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1573&r=4#p6866x6863', title: 'gegen HSK Lister Turm 2', text: 1½ }]
+    - [{ url: '?staffel=1573&r=7#p6866x6788', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=1573&r=8#p6866x6779', title: 'gegen Hildesheimer SV', text: 2½ }]
+    - [{ url: '?staffel=1573&r=6#p6866x6825', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=1573&r=1#p6866x6791', title: 'gegen SV Laatzen', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1573&r=3#p6866x6816', title: 'gegen SC BS Gliesmarode', text: 4½ }]
+    - [{ url: '?staffel=1573&r=5#p6866x6793', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=1573&r=2#p6866x6864', title: 'gegen ST Langenhagen', text: '4' }]
+    - [{ url: '?staffel=1573&r=9#p6866x6884', title: 'gegen Tempo Göttingen', text: 4½ }]
+    - 8
+    - 32½
+    - ''
+-
+    - '7.'
+    - { text: 'SC BS Gliesmarode', url: '?mannschaft=6816', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1573&r=5#p6816x6863', title: 'gegen HSK Lister Turm 2', text: '2' }]
+    - [{ url: '?staffel=1573&r=1#p6816x6788', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=1573&r=7#p6816x6779', title: 'gegen Hildesheimer SV', text: '2' }]
+    - [{ url: '?staffel=1573&r=8#p6816x6825', title: 'gegen SK Rinteln', text: '2' }]
+    - [{ url: '?staffel=1573&r=4#p6816x6791', title: 'gegen SV Laatzen', text: 4½ }]
+    - [{ url: '?staffel=1573&r=3#p6816x6866', title: 'gegen Hamelner SV 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1573&r=9#p6816x6793', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=1573&r=6#p6816x6864', title: 'gegen ST Langenhagen', text: 4½ }]
+    - [{ url: '?staffel=1573&r=2#p6816x6884', title: 'gegen Tempo Göttingen', text: 3½ }]
+    - 6
+    - '30'
+    - ''
+-
+    - '8.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=6793', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1573&r=2#p6793x6863', title: 'gegen HSK Lister Turm 2', text: '4' }]
+    - [{ url: '?staffel=1573&r=6#p6793x6788', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=1573&r=3#p6793x6779', title: 'gegen Hildesheimer SV', text: '3' }]
+    - [{ url: '?staffel=1573&r=4#p6793x6825', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=1573&r=7#p6793x6791', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=1573&r=5#p6793x6866', title: 'gegen Hamelner SV 2', text: '4' }]
+    - [{ url: '?staffel=1573&r=9#p6793x6816', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1573&r=8#p6793x6864', title: 'gegen ST Langenhagen', text: 3½ }]
+    - [{ url: '?staffel=1573&r=1#p6793x6884', title: 'gegen Tempo Göttingen', text: 4½ }]
+    - 5
+    - 32½
+    - ''
+-
+    - '9.'
+    - { text: 'ST Langenhagen', url: '?mannschaft=6864', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1573&r=7#p6864x6863', title: 'gegen HSK Lister Turm 2', text: '0' }]
+    - [{ url: '?staffel=1573&r=9#p6864x6788', title: 'gegen Hannover 96', text: 3½ }]
+    - [{ url: '?staffel=1573&r=1#p6864x6779', title: 'gegen Hildesheimer SV', text: '2' }]
+    - [{ url: '?staffel=1573&r=3#p6864x6825', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=1573&r=5#p6864x6791', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=1573&r=2#p6864x6866', title: 'gegen Hamelner SV 2', text: '4' }]
+    - [{ url: '?staffel=1573&r=6#p6864x6816', title: 'gegen SC BS Gliesmarode', text: 3½ }]
+    - [{ url: '?staffel=1573&r=8#p6864x6793', title: 'gegen SD Isernhagen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1573&r=4#p6864x6884', title: 'gegen Tempo Göttingen', text: 5½ }]
+    - 5
+    - '29'
+    - ''
+-
+    - '10.'
+    - { text: 'Tempo Göttingen', url: '?mannschaft=6884', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1573&r=6#p6884x6863', title: 'gegen HSK Lister Turm 2', text: '1' }]
+    - [{ url: '?staffel=1573&r=8#p6884x6788', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=1573&r=5#p6884x6779', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=1573&r=7#p6884x6825', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=1573&r=3#p6884x6791', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=1573&r=9#p6884x6866', title: 'gegen Hamelner SV 2', text: 3½ }]
+    - [{ url: '?staffel=1573&r=2#p6884x6816', title: 'gegen SC BS Gliesmarode', text: 4½ }]
+    - [{ url: '?staffel=1573&r=1#p6884x6793', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1573&r=4#p6884x6864', title: 'gegen ST Langenhagen', text: 2½ }]
+    - xxx
+    - 2
+    - 23½
+    - ''

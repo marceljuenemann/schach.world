@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Peiner SV', url: '?mannschaft=4107', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=896&r=7#p4107x3943', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=896&r=6#p4107x4100', title: 'gegen SG Hild.-Salzd.', text: 2½ }]
+    - [{ url: '?staffel=896&r=2#p4107x4131', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=896&r=3#p4107x3920', title: "gegen SK Celle-W'cel.", text: '4' }]
+    - [{ url: '?staffel=896&r=4#p4107x4101', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=896&r=1#p4107x4132', title: 'gegen SK Lehrte 4', text: '4' }]
+    - [{ url: '?staffel=896&r=5#p4107x4102', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - 14
+    - '23'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SV Laatzen', url: '?mannschaft=3943', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=896&r=7#p3943x4107', title: 'gegen Peiner SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=896&r=3#p3943x4100', title: 'gegen SG Hild.-Salzd.', text: '2' }]
+    - [{ url: '?staffel=896&r=5#p3943x4131', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=896&r=6#p3943x3920', title: "gegen SK Celle-W'cel.", text: '3' }]
+    - [{ url: '?staffel=896&r=2#p3943x4101', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=896&r=4#p3943x4132', title: 'gegen SK Lehrte 4', text: 3½ }]
+    - [{ url: '?staffel=896&r=1#p3943x4102', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - 11
+    - '21'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Hild.-Salzd.', url: '?mannschaft=4100', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=896&r=6#p4100x4107', title: 'gegen Peiner SV', text: 1½ }]
+    - [{ url: '?staffel=896&r=3#p4100x3943', title: 'gegen SV Laatzen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=896&r=4#p4100x4131', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=896&r=7#p4100x3920', title: "gegen SK Celle-W'cel.", text: '1' }]
+    - [{ url: '?staffel=896&r=1#p4100x4101', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - [{ url: '?staffel=896&r=5#p4100x4132', title: 'gegen SK Lehrte 4', text: '4' }]
+    - [{ url: '?staffel=896&r=2#p4100x4102', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - 9
+    - '18'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=4131', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=896&r=2#p4131x4107', title: 'gegen Peiner SV', text: '1' }]
+    - [{ url: '?staffel=896&r=5#p4131x3943', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=896&r=4#p4131x4100', title: 'gegen SG Hild.-Salzd.', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=896&r=1#p4131x3920', title: "gegen SK Celle-W'cel.", text: '2' }]
+    - [{ url: '?staffel=896&r=6#p4131x4101', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - [{ url: '?staffel=896&r=3#p4131x4132', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=896&r=7#p4131x4102', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - 7
+    - '14'
+    - ''
+-
+    - '5.'
+    - { text: "SK Celle-W'cel.", url: '?mannschaft=3920', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=896&r=3#p3920x4107', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=896&r=6#p3920x3943', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=896&r=7#p3920x4100', title: 'gegen SG Hild.-Salzd.', text: '3' }]
+    - [{ url: '?staffel=896&r=1#p3920x4131', title: 'gegen SK Lehrte 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=896&r=5#p3920x4101', title: 'gegen Hildesheimer SV 2', text: '1' }]
+    - [{ url: '?staffel=896&r=2#p3920x4132', title: 'gegen SK Lehrte 4', text: '2' }]
+    - [{ url: '?staffel=896&r=4#p3920x4102', title: 'gegen Hildesheimer SV 3', text: '2' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '6.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=4101', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=896&r=4#p4101x4107', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=896&r=2#p4101x3943', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=896&r=1#p4101x4100', title: 'gegen SG Hild.-Salzd.', text: ½ }]
+    - [{ url: '?staffel=896&r=6#p4101x4131', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=896&r=5#p4101x3920', title: "gegen SK Celle-W'cel.", text: '3' }]
+    - xxx
+    - [{ url: '?staffel=896&r=7#p4101x4132', title: 'gegen SK Lehrte 4', text: '2' }]
+    - [{ url: '?staffel=896&r=3#p4101x4102', title: 'gegen Hildesheimer SV 3', text: '2' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=4132', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=896&r=1#p4132x4107', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=896&r=4#p4132x3943', title: 'gegen SV Laatzen', text: ½ }]
+    - [{ url: '?staffel=896&r=5#p4132x4100', title: 'gegen SG Hild.-Salzd.', text: '0' }]
+    - [{ url: '?staffel=896&r=3#p4132x4131', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=896&r=2#p4132x3920', title: "gegen SK Celle-W'cel.", text: '2' }]
+    - [{ url: '?staffel=896&r=7#p4132x4101', title: 'gegen Hildesheimer SV 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=896&r=6#p4132x4102', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '8.'
+    - { text: 'Hildesheimer SV 3', url: '?mannschaft=4102', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=896&r=5#p4102x4107', title: 'gegen Peiner SV', text: '1' }]
+    - [{ url: '?staffel=896&r=1#p4102x3943', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=896&r=2#p4102x4100', title: 'gegen SG Hild.-Salzd.', text: '1' }]
+    - [{ url: '?staffel=896&r=7#p4102x4131', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=896&r=4#p4102x3920', title: "gegen SK Celle-W'cel.", text: '2' }]
+    - [{ url: '?staffel=896&r=3#p4102x4101', title: 'gegen Hildesheimer SV 2', text: '2' }]
+    - [{ url: '?staffel=896&r=6#p4102x4132', title: 'gegen SK Lehrte 4', text: '1' }]
+    - xxx
+    - 2
+    - '8'
+    - ''

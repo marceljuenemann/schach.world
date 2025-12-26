@@ -1,0 +1,233 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'USV Potsdam', url: '?mannschaft=3163', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=750&r=9#p3163x3164', title: 'gegen SV Merseburg', text: 4½ }]
+    - [{ url: '?staffel=750&r=1#p3163x3180', title: 'gegen AE Magdeburg', text: '5' }]
+    - [{ url: '?staffel=750&r=7#p3163x3166', title: 'gegen SV Empor Berlin', text: '4' }]
+    - [{ url: '?staffel=750&r=8#p3163x3178', title: 'gegen Treptower SV', text: 3½ }]
+    - [{ url: '?staffel=750&r=6#p3163x3224', title: 'gegen Zitad. Spandau', text: '4' }]
+    - [{ url: '?staffel=750&r=3#p3163x3168', title: 'gegen CFC Köthen', text: '4' }]
+    - [{ url: '?staffel=750&r=4#p3163x3165', title: 'gegen Chem. Weißensee', text: '4' }]
+    - [{ url: '?staffel=750&r=10#p3163x3051', title: 'gegen SG Löberitz', text: 5½ }]
+    - [{ url: '?staffel=750&r=5#p3163x3167', title: 'gegen Mecklenb. Spr.', text: 4½ }]
+    - [{ url: '?staffel=750&r=2#p3163x3179', title: 'gegen USC Magdeburg', text: 4½ }]
+    - [{ url: '?staffel=750&r=11#p3163x3223', title: 'gegen GW Granschütz', text: '5' }]
+    - 22
+    - 48½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Merseburg', url: '?mannschaft=3164', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=750&r=9#p3164x3163', title: 'gegen USV Potsdam', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=750&r=7#p3164x3180', title: 'gegen AE Magdeburg', text: 2½ }]
+    - [{ url: '?staffel=750&r=8#p3164x3166', title: 'gegen SV Empor Berlin', text: 3½ }]
+    - [{ url: '?staffel=750&r=6#p3164x3178', title: 'gegen Treptower SV', text: 3½ }]
+    - [{ url: '?staffel=750&r=4#p3164x3224', title: 'gegen Zitad. Spandau', text: 4½ }]
+    - [{ url: '?staffel=750&r=2#p3164x3168', title: 'gegen CFC Köthen', text: 4½ }]
+    - [{ url: '?staffel=750&r=5#p3164x3165', title: 'gegen Chem. Weißensee', text: '4' }]
+    - [{ url: '?staffel=750&r=11#p3164x3051', title: 'gegen SG Löberitz', text: '4' }]
+    - [{ url: '?staffel=750&r=10#p3164x3167', title: 'gegen Mecklenb. Spr.', text: 4½ }]
+    - [{ url: '?staffel=750&r=1#p3164x3179', title: 'gegen USC Magdeburg', text: '4' }]
+    - [{ url: '?staffel=750&r=3#p3164x3223', title: 'gegen GW Granschütz', text: 4½ }]
+    - 18
+    - '41'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'AE Magdeburg', url: '?mannschaft=3180', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=750&r=1#p3180x3163', title: 'gegen USV Potsdam', text: '1' }]
+    - [{ url: '?staffel=750&r=7#p3180x3164', title: 'gegen SV Merseburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=750&r=10#p3180x3166', title: 'gegen SV Empor Berlin', text: 2½ }]
+    - [{ url: '?staffel=750&r=11#p3180x3178', title: 'gegen Treptower SV', text: '3' }]
+    - [{ url: '?staffel=750&r=3#p3180x3224', title: 'gegen Zitad. Spandau', text: 3½ }]
+    - [{ url: '?staffel=750&r=4#p3180x3168', title: 'gegen CFC Köthen', text: 2½ }]
+    - [{ url: '?staffel=750&r=2#p3180x3165', title: 'gegen Chem. Weißensee', text: '4' }]
+    - [{ url: '?staffel=750&r=8#p3180x3051', title: 'gegen SG Löberitz', text: '4' }]
+    - [{ url: '?staffel=750&r=9#p3180x3167', title: 'gegen Mecklenb. Spr.', text: '4' }]
+    - [{ url: '?staffel=750&r=5#p3180x3179', title: 'gegen USC Magdeburg', text: '6' }]
+    - [{ url: '?staffel=750&r=6#p3180x3223', title: 'gegen GW Granschütz', text: '5' }]
+    - 15
+    - '39'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=3166', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=750&r=7#p3166x3163', title: 'gegen USV Potsdam', text: '2' }]
+    - [{ url: '?staffel=750&r=8#p3166x3164', title: 'gegen SV Merseburg', text: 2½ }]
+    - [{ url: '?staffel=750&r=10#p3166x3180', title: 'gegen AE Magdeburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=750&r=3#p3166x3178', title: 'gegen Treptower SV', text: '2' }]
+    - [{ url: '?staffel=750&r=2#p3166x3224', title: 'gegen Zitad. Spandau', text: '3' }]
+    - [{ url: '?staffel=750&r=5#p3166x3168', title: 'gegen CFC Köthen', text: 4½ }]
+    - [{ url: '?staffel=750&r=1#p3166x3165', title: 'gegen Chem. Weißensee', text: '4' }]
+    - [{ url: '?staffel=750&r=6#p3166x3051', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=750&r=11#p3166x3167', title: 'gegen Mecklenb. Spr.', text: '5' }]
+    - [{ url: '?staffel=750&r=9#p3166x3179', title: 'gegen USC Magdeburg', text: 4½ }]
+    - [{ url: '?staffel=750&r=4#p3166x3223', title: 'gegen GW Granschütz', text: '5' }]
+    - 14
+    - '39'
+    - ''
+-
+    - '5.'
+    - { text: 'Treptower SV', url: '?mannschaft=3178', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=750&r=8#p3178x3163', title: 'gegen USV Potsdam', text: 2½ }]
+    - [{ url: '?staffel=750&r=6#p3178x3164', title: 'gegen SV Merseburg', text: 2½ }]
+    - [{ url: '?staffel=750&r=11#p3178x3180', title: 'gegen AE Magdeburg', text: '3' }]
+    - [{ url: '?staffel=750&r=3#p3178x3166', title: 'gegen SV Empor Berlin', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=750&r=1#p3178x3224', title: 'gegen Zitad. Spandau', text: 1½ }]
+    - [{ url: '?staffel=750&r=9#p3178x3168', title: 'gegen CFC Köthen', text: 2½ }]
+    - [{ url: '?staffel=750&r=7#p3178x3165', title: 'gegen Chem. Weißensee', text: '5' }]
+    - [{ url: '?staffel=750&r=4#p3178x3051', title: 'gegen SG Löberitz', text: '5' }]
+    - [{ url: '?staffel=750&r=2#p3178x3167', title: 'gegen Mecklenb. Spr.', text: '4' }]
+    - [{ url: '?staffel=750&r=10#p3178x3179', title: 'gegen USC Magdeburg', text: '4' }]
+    - [{ url: '?staffel=750&r=5#p3178x3223', title: 'gegen GW Granschütz', text: '3' }]
+    - 12
+    - '37'
+    - ''
+-
+    - '6.'
+    - { text: 'Zitad. Spandau', url: '?mannschaft=3224', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=750&r=6#p3224x3163', title: 'gegen USV Potsdam', text: '2' }]
+    - [{ url: '?staffel=750&r=4#p3224x3164', title: 'gegen SV Merseburg', text: 1½ }]
+    - [{ url: '?staffel=750&r=3#p3224x3180', title: 'gegen AE Magdeburg', text: 2½ }]
+    - [{ url: '?staffel=750&r=2#p3224x3166', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=750&r=1#p3224x3178', title: 'gegen Treptower SV', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=750&r=10#p3224x3168', title: 'gegen CFC Köthen', text: 3½ }]
+    - [{ url: '?staffel=750&r=8#p3224x3165', title: 'gegen Chem. Weißensee', text: 4½ }]
+    - [{ url: '?staffel=750&r=5#p3224x3051', title: 'gegen SG Löberitz', text: 2½ }]
+    - [{ url: '?staffel=750&r=7#p3224x3167', title: 'gegen Mecklenb. Spr.', text: '5' }]
+    - [{ url: '?staffel=750&r=11#p3224x3179', title: 'gegen USC Magdeburg', text: '0' }]
+    - [{ url: '?staffel=750&r=9#p3224x3223', title: 'gegen GW Granschütz', text: '4' }]
+    - 11
+    - '33'
+    - ''
+-
+    - '7.'
+    - { text: 'CFC Köthen', url: '?mannschaft=3168', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=750&r=3#p3168x3163', title: 'gegen USV Potsdam', text: '2' }]
+    - [{ url: '?staffel=750&r=2#p3168x3164', title: 'gegen SV Merseburg', text: 1½ }]
+    - [{ url: '?staffel=750&r=4#p3168x3180', title: 'gegen AE Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=750&r=5#p3168x3166', title: 'gegen SV Empor Berlin', text: 1½ }]
+    - [{ url: '?staffel=750&r=9#p3168x3178', title: 'gegen Treptower SV', text: 3½ }]
+    - [{ url: '?staffel=750&r=10#p3168x3224', title: 'gegen Zitad. Spandau', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=750&r=11#p3168x3165', title: 'gegen Chem. Weißensee', text: 2½ }]
+    - [{ url: '?staffel=750&r=1#p3168x3051', title: 'gegen SG Löberitz', text: 5½ }]
+    - [{ url: '?staffel=750&r=8#p3168x3167', title: 'gegen Mecklenb. Spr.', text: 4½ }]
+    - [{ url: '?staffel=750&r=6#p3168x3179', title: 'gegen USC Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=750&r=7#p3168x3223', title: 'gegen GW Granschütz', text: 1½ }]
+    - 10
+    - '32'
+    - absteiger
+-
+    - '8.'
+    - { text: 'Chem. Weißensee', url: '?mannschaft=3165', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=750&r=4#p3165x3163', title: 'gegen USV Potsdam', text: '2' }]
+    - [{ url: '?staffel=750&r=5#p3165x3164', title: 'gegen SV Merseburg', text: '2' }]
+    - [{ url: '?staffel=750&r=2#p3165x3180', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=750&r=1#p3165x3166', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=750&r=7#p3165x3178', title: 'gegen Treptower SV', text: '1' }]
+    - [{ url: '?staffel=750&r=8#p3165x3224', title: 'gegen Zitad. Spandau', text: 1½ }]
+    - [{ url: '?staffel=750&r=11#p3165x3168', title: 'gegen CFC Köthen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=750&r=9#p3165x3051', title: 'gegen SG Löberitz', text: 3½ }]
+    - [{ url: '?staffel=750&r=6#p3165x3167', title: 'gegen Mecklenb. Spr.', text: 4½ }]
+    - [{ url: '?staffel=750&r=3#p3165x3179', title: 'gegen USC Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=750&r=10#p3165x3223', title: 'gegen GW Granschütz', text: 5½ }]
+    - 10
+    - '31'
+    - absteiger
+-
+    - '9.'
+    - { text: 'SG Löberitz', url: '?mannschaft=3051', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=750&r=10#p3051x3163', title: 'gegen USV Potsdam', text: ½ }]
+    - [{ url: '?staffel=750&r=11#p3051x3164', title: 'gegen SV Merseburg', text: '2' }]
+    - [{ url: '?staffel=750&r=8#p3051x3180', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=750&r=6#p3051x3166', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=750&r=4#p3051x3178', title: 'gegen Treptower SV', text: '1' }]
+    - [{ url: '?staffel=750&r=5#p3051x3224', title: 'gegen Zitad. Spandau', text: 3½ }]
+    - [{ url: '?staffel=750&r=1#p3051x3168', title: 'gegen CFC Köthen', text: ½ }]
+    - [{ url: '?staffel=750&r=9#p3051x3165', title: 'gegen Chem. Weißensee', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=750&r=3#p3051x3167', title: 'gegen Mecklenb. Spr.', text: '3' }]
+    - [{ url: '?staffel=750&r=7#p3051x3179', title: 'gegen USC Magdeburg', text: '4' }]
+    - [{ url: '?staffel=750&r=2#p3051x3223', title: 'gegen GW Granschütz', text: '3' }]
+    - 7
+    - '25'
+    - absteiger
+-
+    - '10.'
+    - { text: 'Mecklenb. Spr.', url: '?mannschaft=3167', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=750&r=5#p3167x3163', title: 'gegen USV Potsdam', text: 1½ }]
+    - [{ url: '?staffel=750&r=10#p3167x3164', title: 'gegen SV Merseburg', text: 1½ }]
+    - [{ url: '?staffel=750&r=9#p3167x3180', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=750&r=11#p3167x3166', title: 'gegen SV Empor Berlin', text: '1' }]
+    - [{ url: '?staffel=750&r=2#p3167x3178', title: 'gegen Treptower SV', text: '2' }]
+    - [{ url: '?staffel=750&r=7#p3167x3224', title: 'gegen Zitad. Spandau', text: '1' }]
+    - [{ url: '?staffel=750&r=8#p3167x3168', title: 'gegen CFC Köthen', text: 1½ }]
+    - [{ url: '?staffel=750&r=6#p3167x3165', title: 'gegen Chem. Weißensee', text: 1½ }]
+    - [{ url: '?staffel=750&r=3#p3167x3051', title: 'gegen SG Löberitz', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=750&r=4#p3167x3179', title: 'gegen USC Magdeburg', text: 5½ }]
+    - [{ url: '?staffel=750&r=1#p3167x3223', title: 'gegen GW Granschütz', text: '6' }]
+    - 5
+    - 26½
+    - absteiger
+-
+    - '11.'
+    - { text: 'USC Magdeburg', url: '?mannschaft=3179', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=750&r=2#p3179x3163', title: 'gegen USV Potsdam', text: 1½ }]
+    - [{ url: '?staffel=750&r=1#p3179x3164', title: 'gegen SV Merseburg', text: '2' }]
+    - [{ url: '?staffel=750&r=5#p3179x3180', title: 'gegen AE Magdeburg', text: '0' }]
+    - [{ url: '?staffel=750&r=9#p3179x3166', title: 'gegen SV Empor Berlin', text: 1½ }]
+    - [{ url: '?staffel=750&r=10#p3179x3178', title: 'gegen Treptower SV', text: '2' }]
+    - [{ url: '?staffel=750&r=11#p3179x3224', title: 'gegen Zitad. Spandau', text: '6' }]
+    - [{ url: '?staffel=750&r=6#p3179x3168', title: 'gegen CFC Köthen', text: 2½ }]
+    - [{ url: '?staffel=750&r=3#p3179x3165', title: 'gegen Chem. Weißensee', text: 2½ }]
+    - [{ url: '?staffel=750&r=7#p3179x3051', title: 'gegen SG Löberitz', text: '2' }]
+    - [{ url: '?staffel=750&r=4#p3179x3167', title: 'gegen Mecklenb. Spr.', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=750&r=8#p3179x3223', title: 'gegen GW Granschütz', text: '4' }]
+    - 4
+    - 24½
+    - absteiger
+-
+    - '12.'
+    - { text: 'GW Granschütz', url: '?mannschaft=3223', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=750&r=11#p3223x3163', title: 'gegen USV Potsdam', text: '1' }]
+    - [{ url: '?staffel=750&r=3#p3223x3164', title: 'gegen SV Merseburg', text: 1½ }]
+    - [{ url: '?staffel=750&r=6#p3223x3180', title: 'gegen AE Magdeburg', text: '1' }]
+    - [{ url: '?staffel=750&r=4#p3223x3166', title: 'gegen SV Empor Berlin', text: '1' }]
+    - [{ url: '?staffel=750&r=5#p3223x3178', title: 'gegen Treptower SV', text: '3' }]
+    - [{ url: '?staffel=750&r=9#p3223x3224', title: 'gegen Zitad. Spandau', text: '2' }]
+    - [{ url: '?staffel=750&r=7#p3223x3168', title: 'gegen CFC Köthen', text: 4½ }]
+    - [{ url: '?staffel=750&r=10#p3223x3165', title: 'gegen Chem. Weißensee', text: ½ }]
+    - [{ url: '?staffel=750&r=2#p3223x3051', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=750&r=1#p3223x3167', title: 'gegen Mecklenb. Spr.', text: '0' }]
+    - [{ url: '?staffel=750&r=8#p3223x3179', title: 'gegen USC Magdeburg', text: '2' }]
+    - xxx
+    - 4
+    - 19½
+    - absteiger

@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Rochade Göttingen', url: '?mannschaft=7376', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1696&r=4#p7376x7371', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1696&r=6#p7376x7372', title: 'gegen USC Magdeburg', text: '4' }]
+    - [{ url: '?staffel=1696&r=7#p7376x7377', title: 'gegen SV Werder Bremen', text: '5' }]
+    - [{ url: '?staffel=1696&r=3#p7376x7374', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=1696&r=5#p7376x7378', title: 'gegen 1. SC Anhalt', text: '3' }]
+    - [{ url: '?staffel=1696&r=1#p7376x7375', title: 'gegen Roch. Braunschweig', text: '3' }]
+    - 7
+    - '20'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte', url: '?mannschaft=7371', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1696&r=4#p7371x7376', title: 'gegen Rochade Göttingen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1696&r=1#p7371x7372', title: 'gegen USC Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=1696&r=2#p7371x7377', title: 'gegen SV Werder Bremen', text: 1½ }]
+    - [{ url: '?staffel=1696&r=5#p7371x7374', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=1696&r=7#p7371x7378', title: 'gegen 1. SC Anhalt', text: '3' }]
+    - [{ url: '?staffel=1696&r=3#p7371x7375', title: 'gegen Roch. Braunschweig', text: 4½ }]
+    - 7
+    - 18½
+    - ''
+-
+    - '3.'
+    - { text: 'USC Magdeburg', url: '?mannschaft=7372', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1696&r=6#p7372x7376', title: 'gegen Rochade Göttingen', text: '2' }]
+    - [{ url: '?staffel=1696&r=1#p7372x7371', title: 'gegen SK Lehrte', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1696&r=4#p7372x7377', title: 'gegen SV Werder Bremen', text: 2½ }]
+    - [{ url: '?staffel=1696&r=7#p7372x7374', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=1696&r=2#p7372x7378', title: 'gegen 1. SC Anhalt', text: 4½ }]
+    - [{ url: '?staffel=1696&r=5#p7372x7375', title: 'gegen Roch. Braunschweig', text: 4½ }]
+    - 6
+    - 19½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Werder Bremen', url: '?mannschaft=7377', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1696&r=7#p7377x7376', title: 'gegen Rochade Göttingen', text: '1' }]
+    - [{ url: '?staffel=1696&r=2#p7377x7371', title: 'gegen SK Lehrte', text: 4½ }]
+    - [{ url: '?staffel=1696&r=4#p7377x7372', title: 'gegen USC Magdeburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1696&r=1#p7377x7374', title: 'gegen Hagener SV', text: 2½ }]
+    - [{ url: '?staffel=1696&r=3#p7377x7378', title: 'gegen 1. SC Anhalt', text: '5' }]
+    - [{ url: '?staffel=1696&r=6#p7377x7375', title: 'gegen Roch. Braunschweig', text: '2' }]
+    - 6
+    - 18½
+    - ''
+-
+    - '5.'
+    - { text: 'Hagener SV', url: '?mannschaft=7374', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1696&r=3#p7374x7376', title: 'gegen Rochade Göttingen', text: '4' }]
+    - [{ url: '?staffel=1696&r=5#p7374x7371', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1696&r=7#p7374x7372', title: 'gegen USC Magdeburg', text: 2½ }]
+    - [{ url: '?staffel=1696&r=1#p7374x7377', title: 'gegen SV Werder Bremen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1696&r=6#p7374x7378', title: 'gegen 1. SC Anhalt', text: 1½ }]
+    - [{ url: '?staffel=1696&r=2#p7374x7375', title: 'gegen Roch. Braunschweig', text: '3' }]
+    - 6
+    - 17½
+    - ''
+-
+    - '6.'
+    - { text: '1. SC Anhalt', url: '?mannschaft=7378', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1696&r=5#p7378x7376', title: 'gegen Rochade Göttingen', text: '3' }]
+    - [{ url: '?staffel=1696&r=7#p7378x7371', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1696&r=2#p7378x7372', title: 'gegen USC Magdeburg', text: 1½ }]
+    - [{ url: '?staffel=1696&r=3#p7378x7377', title: 'gegen SV Werder Bremen', text: '1' }]
+    - [{ url: '?staffel=1696&r=6#p7378x7374', title: 'gegen Hagener SV', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1696&r=4#p7378x7375', title: 'gegen Roch. Braunschweig', text: '3' }]
+    - 5
+    - '16'
+    - absteigerRelegation
+-
+    - '7.'
+    - { text: 'Roch. Braunschweig', url: '?mannschaft=7375', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1696&r=1#p7375x7376', title: 'gegen Rochade Göttingen', text: '3' }]
+    - [{ url: '?staffel=1696&r=3#p7375x7371', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=1696&r=5#p7375x7372', title: 'gegen USC Magdeburg', text: 1½ }]
+    - [{ url: '?staffel=1696&r=6#p7375x7377', title: 'gegen SV Werder Bremen', text: '4' }]
+    - [{ url: '?staffel=1696&r=2#p7375x7374', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=1696&r=4#p7375x7378', title: 'gegen 1. SC Anhalt', text: '3' }]
+    - xxx
+    - 5
+    - '16'
+    - absteiger

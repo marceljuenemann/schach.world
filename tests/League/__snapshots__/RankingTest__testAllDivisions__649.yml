@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Medizin Erfurt', url: '?mannschaft=5517', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1397&r=5#p5517x5510', title: 'gegen SV Wolfbusch', text: '4' }]
+    - [{ url: '?staffel=1397&r=4#p5517x5511', title: 'gegen SG Augsburg', text: '5' }]
+    - [{ url: '?staffel=1397&r=2#p5517x5513', title: 'gegen SK Langen', text: '3' }]
+    - [{ url: '?staffel=1397&r=7#p5517x5512', title: 'gegen FR-Zähringen 1887', text: '5' }]
+    - [{ url: '?staffel=1397&r=3#p5517x5516', title: 'gegen SC Bavaria Rgbg', text: '4' }]
+    - [{ url: '?staffel=1397&r=6#p5517x5515', title: 'gegen SF Wadgassen', text: '4' }]
+    - [{ url: '?staffel=1397&r=1#p5517x5514', title: 'gegen TSV Schott Mainz', text: '4' }]
+    - 13
+    - '29'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Wolfbusch', url: '?mannschaft=5510', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1397&r=5#p5510x5517', title: 'gegen SV Medizin Erfurt', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1397&r=3#p5510x5511', title: 'gegen SG Augsburg', text: '3' }]
+    - [{ url: '?staffel=1397&r=1#p5510x5513', title: 'gegen SK Langen', text: 4½ }]
+    - [{ url: '?staffel=1397&r=6#p5510x5512', title: 'gegen FR-Zähringen 1887', text: 3½ }]
+    - [{ url: '?staffel=1397&r=4#p5510x5516', title: 'gegen SC Bavaria Rgbg', text: '5' }]
+    - [{ url: '?staffel=1397&r=7#p5510x5515', title: 'gegen SF Wadgassen', text: 4½ }]
+    - [{ url: '?staffel=1397&r=2#p5510x5514', title: 'gegen TSV Schott Mainz', text: '3' }]
+    - 10
+    - 25½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Augsburg', url: '?mannschaft=5511', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1397&r=4#p5511x5517', title: 'gegen SV Medizin Erfurt', text: '1' }]
+    - [{ url: '?staffel=1397&r=3#p5511x5510', title: 'gegen SV Wolfbusch', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1397&r=6#p5511x5513', title: 'gegen SK Langen', text: 3½ }]
+    - [{ url: '?staffel=1397&r=1#p5511x5512', title: 'gegen FR-Zähringen 1887', text: '3' }]
+    - [{ url: '?staffel=1397&r=5#p5511x5516', title: 'gegen SC Bavaria Rgbg', text: 3½ }]
+    - [{ url: '?staffel=1397&r=2#p5511x5515', title: 'gegen SF Wadgassen', text: '3' }]
+    - [{ url: '?staffel=1397&r=7#p5511x5514', title: 'gegen TSV Schott Mainz', text: 4½ }]
+    - 9
+    - 21½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Langen', url: '?mannschaft=5513', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1397&r=2#p5513x5517', title: 'gegen SV Medizin Erfurt', text: '3' }]
+    - [{ url: '?staffel=1397&r=1#p5513x5510', title: 'gegen SV Wolfbusch', text: 1½ }]
+    - [{ url: '?staffel=1397&r=6#p5513x5511', title: 'gegen SG Augsburg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1397&r=3#p5513x5512', title: 'gegen FR-Zähringen 1887', text: '3' }]
+    - [{ url: '?staffel=1397&r=7#p5513x5516', title: 'gegen SC Bavaria Rgbg', text: '4' }]
+    - [{ url: '?staffel=1397&r=4#p5513x5515', title: 'gegen SF Wadgassen', text: '5' }]
+    - [{ url: '?staffel=1397&r=5#p5513x5514', title: 'gegen TSV Schott Mainz', text: '4' }]
+    - 8
+    - '23'
+    - ''
+-
+    - '5.'
+    - { text: 'FR-Zähringen 1887', url: '?mannschaft=5512', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1397&r=7#p5512x5517', title: 'gegen SV Medizin Erfurt', text: '1' }]
+    - [{ url: '?staffel=1397&r=6#p5512x5510', title: 'gegen SV Wolfbusch', text: 2½ }]
+    - [{ url: '?staffel=1397&r=1#p5512x5511', title: 'gegen SG Augsburg', text: '3' }]
+    - [{ url: '?staffel=1397&r=3#p5512x5513', title: 'gegen SK Langen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1397&r=2#p5512x5516', title: 'gegen SC Bavaria Rgbg', text: 3½ }]
+    - [{ url: '?staffel=1397&r=5#p5512x5515', title: 'gegen SF Wadgassen', text: 4½ }]
+    - [{ url: '?staffel=1397&r=4#p5512x5514', title: 'gegen TSV Schott Mainz', text: 4½ }]
+    - 8
+    - '22'
+    - ''
+-
+    - '6.'
+    - { text: 'SC Bavaria Rgbg', url: '?mannschaft=5516', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1397&r=3#p5516x5517', title: 'gegen SV Medizin Erfurt', text: '2' }]
+    - [{ url: '?staffel=1397&r=4#p5516x5510', title: 'gegen SV Wolfbusch', text: '1' }]
+    - [{ url: '?staffel=1397&r=5#p5516x5511', title: 'gegen SG Augsburg', text: 2½ }]
+    - [{ url: '?staffel=1397&r=7#p5516x5513', title: 'gegen SK Langen', text: '2' }]
+    - [{ url: '?staffel=1397&r=2#p5516x5512', title: 'gegen FR-Zähringen 1887', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1397&r=1#p5516x5515', title: 'gegen SF Wadgassen', text: 3½ }]
+    - [{ url: '?staffel=1397&r=6#p5516x5514', title: 'gegen TSV Schott Mainz', text: 5½ }]
+    - 4
+    - '19'
+    - ''
+-
+    - '7.'
+    - { text: 'SF Wadgassen', url: '?mannschaft=5515', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1397&r=6#p5515x5517', title: 'gegen SV Medizin Erfurt', text: '2' }]
+    - [{ url: '?staffel=1397&r=7#p5515x5510', title: 'gegen SV Wolfbusch', text: 1½ }]
+    - [{ url: '?staffel=1397&r=2#p5515x5511', title: 'gegen SG Augsburg', text: '3' }]
+    - [{ url: '?staffel=1397&r=4#p5515x5513', title: 'gegen SK Langen', text: '1' }]
+    - [{ url: '?staffel=1397&r=5#p5515x5512', title: 'gegen FR-Zähringen 1887', text: 1½ }]
+    - [{ url: '?staffel=1397&r=1#p5515x5516', title: 'gegen SC Bavaria Rgbg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1397&r=3#p5515x5514', title: 'gegen TSV Schott Mainz', text: 2½ }]
+    - 1
+    - '14'
+    - absteiger
+-
+    - '8.'
+    - { text: 'TSV Schott Mainz', url: '?mannschaft=5514', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1397&r=1#p5514x5517', title: 'gegen SV Medizin Erfurt', text: '2' }]
+    - [{ url: '?staffel=1397&r=2#p5514x5510', title: 'gegen SV Wolfbusch', text: '3' }]
+    - [{ url: '?staffel=1397&r=7#p5514x5511', title: 'gegen SG Augsburg', text: 1½ }]
+    - [{ url: '?staffel=1397&r=5#p5514x5513', title: 'gegen SK Langen', text: '2' }]
+    - [{ url: '?staffel=1397&r=4#p5514x5512', title: 'gegen FR-Zähringen 1887', text: 1½ }]
+    - [{ url: '?staffel=1397&r=6#p5514x5516', title: 'gegen SC Bavaria Rgbg', text: ½ }]
+    - [{ url: '?staffel=1397&r=3#p5514x5515', title: 'gegen SF Wadgassen', text: 1½ }]
+    - xxx
+    - 1
+    - '12'
+    - absteiger

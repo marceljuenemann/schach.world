@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'WSV Clausthal-Z 2', url: '?mannschaft=1719', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=552&r=5#p1719x1717', title: 'gegen SK Bad Harzburg 3', text: 2½ }, { url: '?staffel=552&r=6#p1719x1717', title: 'gegen SK Bad Harzburg 3', text: '2' }]
+    - [{ url: '?staffel=552&r=1#p1719x1716', title: 'gegen Osterode-Südharz 2', text: 1½ }, { url: '?staffel=552&r=2#p1719x1716', title: 'gegen Osterode-Südharz 2', text: 1½ }]
+    - [{ url: '?staffel=552&r=8#p1719x1715', title: 'gegen SK Goslar 2', text: 2½ }, { url: '?staffel=552&r=10#p1719x1715', title: 'gegen SK Goslar 2', text: 2½ }]
+    - [{ url: '?staffel=552&r=7#p1719x1720', title: 'gegen Bad Lauterberg 2', text: '3' }, { url: '?staffel=552&r=9#p1719x1720', title: 'gegen Bad Lauterberg 2', text: 3½ }]
+    - [{ url: '?staffel=552&r=3#p1719x1718', title: 'gegen VfL Oker', text: '3' }, { url: '?staffel=552&r=4#p1719x1718', title: 'gegen VfL Oker', text: '4' }]
+    - 15
+    - '26'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Bad Harzburg 3', url: '?mannschaft=1717', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=552&r=5#p1717x1719', title: 'gegen WSV Clausthal-Z 2', text: 1½ }, { url: '?staffel=552&r=6#p1717x1719', title: 'gegen WSV Clausthal-Z 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=552&r=8#p1717x1716', title: 'gegen Osterode-Südharz 2', text: 3½ }, { url: '?staffel=552&r=10#p1717x1716', title: 'gegen Osterode-Südharz 2', text: 2½ }]
+    - [{ url: '?staffel=552&r=7#p1717x1715', title: 'gegen SK Goslar 2', text: 1½ }, { url: '?staffel=552&r=9#p1717x1715', title: 'gegen SK Goslar 2', text: 2½ }]
+    - [{ url: '?staffel=552&r=3#p1717x1720', title: 'gegen Bad Lauterberg 2', text: '2' }, { url: '?staffel=552&r=4#p1717x1720', title: 'gegen Bad Lauterberg 2', text: '3' }]
+    - [{ url: '?staffel=552&r=1#p1717x1718', title: 'gegen VfL Oker', text: '4' }, { url: '?staffel=552&r=2#p1717x1718', title: 'gegen VfL Oker', text: '1' }]
+    - 12
+    - 23½
+    - ''
+-
+    - '3.'
+    - { text: 'Osterode-Südharz 2', url: '?mannschaft=1716', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=552&r=1#p1716x1719', title: 'gegen WSV Clausthal-Z 2', text: 2½ }, { url: '?staffel=552&r=2#p1716x1719', title: 'gegen WSV Clausthal-Z 2', text: 2½ }]
+    - [{ url: '?staffel=552&r=8#p1716x1717', title: 'gegen SK Bad Harzburg 3', text: ½ }, { url: '?staffel=552&r=10#p1716x1717', title: 'gegen SK Bad Harzburg 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=552&r=3#p1716x1715', title: 'gegen SK Goslar 2', text: 1½ }, { url: '?staffel=552&r=4#p1716x1715', title: 'gegen SK Goslar 2', text: 2½ }]
+    - [{ url: '?staffel=552&r=5#p1716x1720', title: 'gegen Bad Lauterberg 2', text: '0' }, { url: '?staffel=552&r=6#p1716x1720', title: 'gegen Bad Lauterberg 2', text: '2' }]
+    - [{ url: '?staffel=552&r=7#p1716x1718', title: 'gegen VfL Oker', text: '3' }, { url: '?staffel=552&r=9#p1716x1718', title: 'gegen VfL Oker', text: 2½ }]
+    - 11
+    - 18½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=1715', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=552&r=8#p1715x1719', title: 'gegen WSV Clausthal-Z 2', text: 1½ }, { url: '?staffel=552&r=10#p1715x1719', title: 'gegen WSV Clausthal-Z 2', text: 1½ }]
+    - [{ url: '?staffel=552&r=7#p1715x1717', title: 'gegen SK Bad Harzburg 3', text: 2½ }, { url: '?staffel=552&r=9#p1715x1717', title: 'gegen SK Bad Harzburg 3', text: 1½ }]
+    - [{ url: '?staffel=552&r=3#p1715x1716', title: 'gegen Osterode-Südharz 2', text: 2½ }, { url: '?staffel=552&r=4#p1715x1716', title: 'gegen Osterode-Südharz 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=552&r=1#p1715x1720', title: 'gegen Bad Lauterberg 2', text: '2' }, { url: '?staffel=552&r=2#p1715x1720', title: 'gegen Bad Lauterberg 2', text: '2' }]
+    - [{ url: '?staffel=552&r=5#p1715x1718', title: 'gegen VfL Oker', text: 3½ }, { url: '?staffel=552&r=6#p1715x1718', title: 'gegen VfL Oker', text: 2½ }]
+    - 10
+    - '21'
+    - ''
+-
+    - '5.'
+    - { text: 'Bad Lauterberg 2', url: '?mannschaft=1720', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=552&r=7#p1720x1719', title: 'gegen WSV Clausthal-Z 2', text: '1' }, { url: '?staffel=552&r=9#p1720x1719', title: 'gegen WSV Clausthal-Z 2', text: ½ }]
+    - [{ url: '?staffel=552&r=3#p1720x1717', title: 'gegen SK Bad Harzburg 3', text: '2' }, { url: '?staffel=552&r=4#p1720x1717', title: 'gegen SK Bad Harzburg 3', text: '1' }]
+    - [{ url: '?staffel=552&r=5#p1720x1716', title: 'gegen Osterode-Südharz 2', text: '4' }, { url: '?staffel=552&r=6#p1720x1716', title: 'gegen Osterode-Südharz 2', text: '2' }]
+    - [{ url: '?staffel=552&r=1#p1720x1715', title: 'gegen SK Goslar 2', text: '2' }, { url: '?staffel=552&r=2#p1720x1715', title: 'gegen SK Goslar 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=552&r=8#p1720x1718', title: 'gegen VfL Oker', text: '2' }, { url: '?staffel=552&r=10#p1720x1718', title: 'gegen VfL Oker', text: 1½ }]
+    - 7
+    - '18'
+    - ''
+-
+    - '6.'
+    - { text: 'VfL Oker', url: '?mannschaft=1718', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=552&r=3#p1718x1719', title: 'gegen WSV Clausthal-Z 2', text: '1' }, { url: '?staffel=552&r=4#p1718x1719', title: 'gegen WSV Clausthal-Z 2', text: '0' }]
+    - [{ url: '?staffel=552&r=1#p1718x1717', title: 'gegen SK Bad Harzburg 3', text: '0' }, { url: '?staffel=552&r=2#p1718x1717', title: 'gegen SK Bad Harzburg 3', text: '3' }]
+    - [{ url: '?staffel=552&r=7#p1718x1716', title: 'gegen Osterode-Südharz 2', text: '1' }, { url: '?staffel=552&r=9#p1718x1716', title: 'gegen Osterode-Südharz 2', text: 1½ }]
+    - [{ url: '?staffel=552&r=5#p1718x1715', title: 'gegen SK Goslar 2', text: ½ }, { url: '?staffel=552&r=6#p1718x1715', title: 'gegen SK Goslar 2', text: 1½ }]
+    - [{ url: '?staffel=552&r=8#p1718x1720', title: 'gegen Bad Lauterberg 2', text: '2' }, { url: '?staffel=552&r=10#p1718x1720', title: 'gegen Bad Lauterberg 2', text: 2½ }]
+    - xxx
+    - 5
+    - '13'
+    - ''

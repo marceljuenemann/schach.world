@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Steinfurt', url: '?mannschaft=4484', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=953&r=1#p4484x4519', title: 'gegen Dortmunder SV 1875', text: '4' }]
+    - [{ url: '?staffel=953&r=6#p4484x4498', title: 'gegen SK Lehrte 1919 eV 2', text: 3½ }]
+    - [{ url: '?staffel=953&r=2#p4484x4407', title: 'gegen TuRa Harksheide', text: '3' }]
+    - [{ url: '?staffel=953&r=4#p4484x4387', title: 'gegen Walsum SC 72', text: '3' }]
+    - [{ url: '?staffel=953&r=3#p4484x4395', title: 'gegen Delmenhorster SK 2', text: '4' }]
+    - 10
+    - 17½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Dortmunder SV 1875', url: '?mannschaft=4519', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=953&r=1#p4519x4484', title: 'gegen SC Steinfurt', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=953&r=4#p4519x4498', title: 'gegen SK Lehrte 1919 eV 2', text: 2½ }]
+    - [{ url: '?staffel=953&r=6#p4519x4407', title: 'gegen TuRa Harksheide', text: 3½ }]
+    - [{ url: '?staffel=953&r=3#p4519x4387', title: 'gegen Walsum SC 72', text: 3½ }]
+    - [{ url: '?staffel=953&r=5#p4519x4395', title: 'gegen Delmenhorster SK 2', text: '4' }]
+    - 8
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte 1919 eV 2', url: '?mannschaft=4498', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=953&r=6#p4498x4484', title: 'gegen SC Steinfurt', text: ½ }]
+    - [{ url: '?staffel=953&r=4#p4498x4519', title: 'gegen Dortmunder SV 1875', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=953&r=3#p4498x4407', title: 'gegen TuRa Harksheide', text: '4' }]
+    - [{ url: '?staffel=953&r=1#p4498x4387', title: 'gegen Walsum SC 72', text: '4' }]
+    - [{ url: '?staffel=953&r=2#p4498x4395', title: 'gegen Delmenhorster SK 2', text: '4' }]
+    - 6
+    - '14'
+    - ''
+-
+    - '4.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=4407', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=953&r=2#p4407x4484', title: 'gegen SC Steinfurt', text: '1' }]
+    - [{ url: '?staffel=953&r=6#p4407x4519', title: 'gegen Dortmunder SV 1875', text: ½ }]
+    - [{ url: '?staffel=953&r=3#p4407x4498', title: 'gegen SK Lehrte 1919 eV 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=953&r=5#p4407x4387', title: 'gegen Walsum SC 72', text: 3½ }]
+    - [{ url: '?staffel=953&r=4#p4407x4395', title: 'gegen Delmenhorster SK 2', text: '4' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'Walsum SC 72', url: '?mannschaft=4387', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=953&r=4#p4387x4484', title: 'gegen SC Steinfurt', text: '1' }]
+    - [{ url: '?staffel=953&r=3#p4387x4519', title: 'gegen Dortmunder SV 1875', text: ½ }]
+    - [{ url: '?staffel=953&r=1#p4387x4498', title: 'gegen SK Lehrte 1919 eV 2', text: '0' }]
+    - [{ url: '?staffel=953&r=5#p4387x4407', title: 'gegen TuRa Harksheide', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=953&r=6#p4387x4395', title: 'gegen Delmenhorster SK 2', text: '4' }]
+    - 2
+    - '6'
+    - absteiger
+-
+    - '6.'
+    - { text: 'Delmenhorster SK 2', url: '?mannschaft=4395', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=953&r=3#p4395x4484', title: 'gegen SC Steinfurt', text: '0' }]
+    - [{ url: '?staffel=953&r=5#p4395x4519', title: 'gegen Dortmunder SV 1875', text: '0' }]
+    - [{ url: '?staffel=953&r=2#p4395x4498', title: 'gegen SK Lehrte 1919 eV 2', text: '0' }]
+    - [{ url: '?staffel=953&r=4#p4395x4407', title: 'gegen TuRa Harksheide', text: '0' }]
+    - [{ url: '?staffel=953&r=6#p4395x4387', title: 'gegen Walsum SC 72', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

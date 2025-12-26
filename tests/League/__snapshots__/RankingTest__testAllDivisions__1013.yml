@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Ricklingen', url: '?mannschaft=8342', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1863&r=2#p8342x8267', title: 'gegen SD Isernhagen', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1863&r=1#p8342x8360', title: 'gegen HSK Lister Turm 5', text: 5½ }]
+    - {  }
+    - [{ url: '?staffel=1863&r=3#p8342x8335', title: 'gegen SK Stolzenau', text: 6½ }]
+    - 5
+    - '16'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Uetze-Hänigsen', url: '?mannschaft=8311', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1863&r=1#p8311x8341', title: 'gegen SK Lehrte 3', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1863&r=3#p8311x8360', title: 'gegen HSK Lister Turm 5', text: '5' }]
+    - [{ url: '?staffel=1863&r=2#p8311x8309', title: 'gegen Hannover 96', text: '6' }]
+    - {  }
+    - 5
+    - '15'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=8341', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1863&r=1#p8341x8311', title: 'gegen SC Uetze-Hänigsen', text: '4' }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1863&r=3#p8341x8267', title: 'gegen SD Isernhagen', text: '5' }]
+    - [{ url: '?staffel=1863&r=2#p8341x8316', title: 'gegen SV FB Wedemark', text: 5½ }]
+    - {  }
+    - {  }
+    - {  }
+    - 5
+    - 14½
+    - ''
+-
+    - '4.'
+    - { text: 'HSK Lister Turm 4', url: '?mannschaft=8359', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1863&r=1#p8359x8321', title: 'gegen SF Barsinghausen', text: 5½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1863&r=2#p8359x8360', title: 'gegen HSK Lister Turm 5', text: 3½ }]
+    - [{ url: '?staffel=1863&r=3#p8359x8309', title: 'gegen Hannover 96', text: '6' }]
+    - {  }
+    - 4
+    - '15'
+    - ''
+-
+    - '5.'
+    - { text: 'SF Barsinghausen', url: '?mannschaft=8321', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1863&r=1#p8321x8359', title: 'gegen HSK Lister Turm 4', text: 2½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1863&r=3#p8321x8316', title: 'gegen SV FB Wedemark', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1863&r=2#p8321x8335', title: 'gegen SK Stolzenau', text: '6' }]
+    - 3
+    - 12½
+    - ''
+-
+    - '6.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=8267', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1863&r=2#p8267x8342', title: 'gegen SF Ricklingen', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1863&r=3#p8267x8341', title: 'gegen SK Lehrte 3', text: '3' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1863&r=1#p8267x8309', title: 'gegen Hannover 96', text: 4½ }]
+    - {  }
+    - 3
+    - 11½
+    - ''
+-
+    - '6.'
+    - { text: 'SV FB Wedemark', url: '?mannschaft=8316', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1863&r=2#p8316x8341', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1863&r=3#p8316x8321', title: 'gegen SF Barsinghausen', text: '4' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1863&r=1#p8316x8335', title: 'gegen SK Stolzenau', text: '5' }]
+    - 3
+    - 11½
+    - ''
+-
+    - '8.'
+    - { text: 'HSK Lister Turm 5', url: '?mannschaft=8360', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1863&r=1#p8360x8342', title: 'gegen SF Ricklingen', text: 2½ }]
+    - [{ url: '?staffel=1863&r=3#p8360x8311', title: 'gegen SC Uetze-Hänigsen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1863&r=2#p8360x8359', title: 'gegen HSK Lister Turm 4', text: 4½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - '10'
+    - ''
+-
+    - '9.'
+    - { text: 'Hannover 96', url: '?mannschaft=8309', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1863&r=2#p8309x8311', title: 'gegen SC Uetze-Hänigsen', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1863&r=3#p8309x8359', title: 'gegen HSK Lister Turm 4', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1863&r=1#p8309x8267', title: 'gegen SD Isernhagen', text: 3½ }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - 7½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=8335', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1863&r=3#p8335x8342', title: 'gegen SF Ricklingen', text: 1½ }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1863&r=2#p8335x8321', title: 'gegen SF Barsinghausen', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1863&r=1#p8335x8316', title: 'gegen SV FB Wedemark', text: '3' }]
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - 6½
+    - absteiger

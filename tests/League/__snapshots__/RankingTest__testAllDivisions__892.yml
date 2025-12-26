@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=7443', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1724&r=7#p7443x7444', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=1724&r=4#p7443x7386', title: 'gegen SV Laatzen 2', text: 6½ }]
+    - [{ url: '?staffel=1724&r=2#p7443x7385', title: 'gegen SG WB Eilenriede', text: '6' }]
+    - [{ url: '?staffel=1724&r=8#p7443x7451', title: 'gegen SV FB Wedemark', text: '6' }]
+    - [{ url: '?staffel=1724&r=9#p7443x7437', title: 'gegen SF Barsinghausen', text: '6' }]
+    - [{ url: '?staffel=1724&r=1#p7443x7455', title: 'gegen SK Lehrte 3', text: '6' }]
+    - [{ url: '?staffel=1724&r=3#p7443x7416', title: 'gegen SC Uetze-Hänigsen', text: 7½ }]
+    - [{ url: '?staffel=1724&r=5#p7443x7415', title: 'gegen SV Springe', text: '6' }]
+    - [{ url: '?staffel=1724&r=6#p7443x7426', title: 'gegen SK Stolzenau', text: '7' }]
+    - 17
+    - '55'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'HSK Lister Turm 3', url: '?mannschaft=7444', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1724&r=7#p7444x7443', title: 'gegen SD Isernhagen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1724&r=1#p7444x7386', title: 'gegen SV Laatzen 2', text: '6' }]
+    - [{ url: '?staffel=1724&r=4#p7444x7385', title: 'gegen SG WB Eilenriede', text: '6' }]
+    - [{ url: '?staffel=1724&r=5#p7444x7451', title: 'gegen SV FB Wedemark', text: '4' }]
+    - [{ url: '?staffel=1724&r=6#p7444x7437', title: 'gegen SF Barsinghausen', text: '8' }]
+    - [{ url: '?staffel=1724&r=3#p7444x7455', title: 'gegen SK Lehrte 3', text: 7½ }]
+    - [{ url: '?staffel=1724&r=9#p7444x7416', title: 'gegen SC Uetze-Hänigsen', text: 5½ }]
+    - [{ url: '?staffel=1724&r=2#p7444x7415', title: 'gegen SV Springe', text: 6½ }]
+    - [{ url: '?staffel=1724&r=8#p7444x7426', title: 'gegen SK Stolzenau', text: '5' }]
+    - 16
+    - 52½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Laatzen 2', url: '?mannschaft=7386', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1724&r=4#p7386x7443', title: 'gegen SD Isernhagen', text: 1½ }]
+    - [{ url: '?staffel=1724&r=1#p7386x7444', title: 'gegen HSK Lister Turm 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1724&r=8#p7386x7385', title: 'gegen SG WB Eilenriede', text: '3' }]
+    - [{ url: '?staffel=1724&r=9#p7386x7451', title: 'gegen SV FB Wedemark', text: 4½ }]
+    - [{ url: '?staffel=1724&r=3#p7386x7437', title: 'gegen SF Barsinghausen', text: 4½ }]
+    - [{ url: '?staffel=1724&r=2#p7386x7455', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=1724&r=5#p7386x7416', title: 'gegen SC Uetze-Hänigsen', text: 4½ }]
+    - [{ url: '?staffel=1724&r=6#p7386x7415', title: 'gegen SV Springe', text: '5' }]
+    - [{ url: '?staffel=1724&r=7#p7386x7426', title: 'gegen SK Stolzenau', text: '8' }]
+    - 10
+    - '35'
+    - ''
+-
+    - '4.'
+    - { text: 'SG WB Eilenriede', url: '?mannschaft=7385', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1724&r=2#p7385x7443', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1724&r=4#p7385x7444', title: 'gegen HSK Lister Turm 3', text: '2' }]
+    - [{ url: '?staffel=1724&r=8#p7385x7386', title: 'gegen SV Laatzen 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1724&r=7#p7385x7451', title: 'gegen SV FB Wedemark', text: '4' }]
+    - [{ url: '?staffel=1724&r=1#p7385x7437', title: 'gegen SF Barsinghausen', text: 4½ }]
+    - [{ url: '?staffel=1724&r=5#p7385x7455', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=1724&r=6#p7385x7416', title: 'gegen SC Uetze-Hänigsen', text: '4' }]
+    - [{ url: '?staffel=1724&r=9#p7385x7415', title: 'gegen SV Springe', text: 4½ }]
+    - [{ url: '?staffel=1724&r=3#p7385x7426', title: 'gegen SK Stolzenau', text: 6½ }]
+    - 10
+    - 34½
+    - ''
+-
+    - '5.'
+    - { text: 'SV FB Wedemark', url: '?mannschaft=7451', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1724&r=8#p7451x7443', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1724&r=5#p7451x7444', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=1724&r=9#p7451x7386', title: 'gegen SV Laatzen 2', text: 3½ }]
+    - [{ url: '?staffel=1724&r=7#p7451x7385', title: 'gegen SG WB Eilenriede', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1724&r=2#p7451x7437', title: 'gegen SF Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=1724&r=6#p7451x7455', title: 'gegen SK Lehrte 3', text: 4½ }]
+    - [{ url: '?staffel=1724&r=1#p7451x7416', title: 'gegen SC Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=1724&r=3#p7451x7415', title: 'gegen SV Springe', text: '5' }]
+    - [{ url: '?staffel=1724&r=4#p7451x7426', title: 'gegen SK Stolzenau', text: 5½ }]
+    - 9
+    - '36'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Barsinghausen', url: '?mannschaft=7437', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1724&r=9#p7437x7443', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1724&r=6#p7437x7444', title: 'gegen HSK Lister Turm 3', text: '0' }]
+    - [{ url: '?staffel=1724&r=3#p7437x7386', title: 'gegen SV Laatzen 2', text: 3½ }]
+    - [{ url: '?staffel=1724&r=1#p7437x7385', title: 'gegen SG WB Eilenriede', text: 3½ }]
+    - [{ url: '?staffel=1724&r=2#p7437x7451', title: 'gegen SV FB Wedemark', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1724&r=7#p7437x7455', title: 'gegen SK Lehrte 3', text: 4½ }]
+    - [{ url: '?staffel=1724&r=8#p7437x7416', title: 'gegen SC Uetze-Hänigsen', text: 4½ }]
+    - [{ url: '?staffel=1724&r=4#p7437x7415', title: 'gegen SV Springe', text: '6' }]
+    - [{ url: '?staffel=1724&r=5#p7437x7426', title: 'gegen SK Stolzenau', text: '6' }]
+    - 9
+    - '34'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=7455', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1724&r=1#p7455x7443', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1724&r=3#p7455x7444', title: 'gegen HSK Lister Turm 3', text: ½ }]
+    - [{ url: '?staffel=1724&r=2#p7455x7386', title: 'gegen SV Laatzen 2', text: '6' }]
+    - [{ url: '?staffel=1724&r=5#p7455x7385', title: 'gegen SG WB Eilenriede', text: '6' }]
+    - [{ url: '?staffel=1724&r=6#p7455x7451', title: 'gegen SV FB Wedemark', text: 3½ }]
+    - [{ url: '?staffel=1724&r=7#p7455x7437', title: 'gegen SF Barsinghausen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1724&r=4#p7455x7416', title: 'gegen SC Uetze-Hänigsen', text: '4' }]
+    - [{ url: '?staffel=1724&r=8#p7455x7415', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=1724&r=9#p7455x7426', title: 'gegen SK Stolzenau', text: 5½ }]
+    - 8
+    - '35'
+    - ''
+-
+    - '8.'
+    - { text: 'SC Uetze-Hänigsen', url: '?mannschaft=7416', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1724&r=3#p7416x7443', title: 'gegen SD Isernhagen', text: ½ }]
+    - [{ url: '?staffel=1724&r=9#p7416x7444', title: 'gegen HSK Lister Turm 3', text: 2½ }]
+    - [{ url: '?staffel=1724&r=5#p7416x7386', title: 'gegen SV Laatzen 2', text: 3½ }]
+    - [{ url: '?staffel=1724&r=6#p7416x7385', title: 'gegen SG WB Eilenriede', text: '4' }]
+    - [{ url: '?staffel=1724&r=1#p7416x7451', title: 'gegen SV FB Wedemark', text: 4½ }]
+    - [{ url: '?staffel=1724&r=8#p7416x7437', title: 'gegen SF Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=1724&r=4#p7416x7455', title: 'gegen SK Lehrte 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1724&r=7#p7416x7415', title: 'gegen SV Springe', text: '5' }]
+    - [{ url: '?staffel=1724&r=2#p7416x7426', title: 'gegen SK Stolzenau', text: 5½ }]
+    - 8
+    - '33'
+    - absteiger
+-
+    - '9.'
+    - { text: 'SV Springe', url: '?mannschaft=7415', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1724&r=5#p7415x7443', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1724&r=2#p7415x7444', title: 'gegen HSK Lister Turm 3', text: 1½ }]
+    - [{ url: '?staffel=1724&r=6#p7415x7386', title: 'gegen SV Laatzen 2', text: '3' }]
+    - [{ url: '?staffel=1724&r=9#p7415x7385', title: 'gegen SG WB Eilenriede', text: 3½ }]
+    - [{ url: '?staffel=1724&r=3#p7415x7451', title: 'gegen SV FB Wedemark', text: '3' }]
+    - [{ url: '?staffel=1724&r=4#p7415x7437', title: 'gegen SF Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=1724&r=8#p7415x7455', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=1724&r=7#p7415x7416', title: 'gegen SC Uetze-Hänigsen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1724&r=1#p7415x7426', title: 'gegen SK Stolzenau', text: 4½ }]
+    - 3
+    - 26½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=7426', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1724&r=6#p7426x7443', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1724&r=8#p7426x7444', title: 'gegen HSK Lister Turm 3', text: '2' }]
+    - [{ url: '?staffel=1724&r=7#p7426x7386', title: 'gegen SV Laatzen 2', text: '0' }]
+    - [{ url: '?staffel=1724&r=3#p7426x7385', title: 'gegen SG WB Eilenriede', text: 1½ }]
+    - [{ url: '?staffel=1724&r=4#p7426x7451', title: 'gegen SV FB Wedemark', text: 2½ }]
+    - [{ url: '?staffel=1724&r=5#p7426x7437', title: 'gegen SF Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=1724&r=9#p7426x7455', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=1724&r=2#p7426x7416', title: 'gegen SC Uetze-Hänigsen', text: 2½ }]
+    - [{ url: '?staffel=1724&r=1#p7426x7415', title: 'gegen SV Springe', text: 3½ }]
+    - xxx
+    - 0
+    - 17½
+    - absteiger

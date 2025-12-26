@@ -6,7 +6,6 @@
          backupGlobals="false"
          colors="true"
          bootstrap="tests/bootstrap.php"
-         convertDeprecationsToExceptions="false"
 >
     <php>
         <ini name="display_errors" value="1" />
@@ -14,8 +13,8 @@
         <server name="APP_ENV" value="test" force="true" />
         <server name="SHELL_VERBOSITY" value="-1" />
         <server name="SYMFONY_PHPUNIT_REMOVE" value="" />
-        <server name="SYMFONY_PHPUNIT_VERSION" value="9.5" />
-        <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak" />
+        <server name="SYMFONY_PHPUNIT_VERSION" value="9.6" />
+        <env name="SYMFONY_DEPRECATIONS_HELPER" value="generateBaseline=true&amp;baselineFile=./tests/deprecations.json" />
     </php>
 
     <testsuites>
@@ -24,17 +23,14 @@
         </testsuite>
     </testsuites>
 
-    <coverage processUncoveredFiles="true">
+    <source>
         <include>
-            <directory suffix=".php">src</directory>
+            <directory>public/ligen</directory>
+            <directory>src</directory>
         </include>
-    </coverage>
-
-    <listeners>
-        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
-    </listeners>
-
-    <extensions>
-        <extension class="DAMA\DoctrineTestBundle\PHPUnit\PHPUnitExtension" />
-    </extensions>
+        <exclude>
+            <directory>public/ligen/_inc/extern</directory>
+            <directory>public/ligen/_templates/nsv2020</directory>
+        </exclude>
+    </source>
 </phpunit>

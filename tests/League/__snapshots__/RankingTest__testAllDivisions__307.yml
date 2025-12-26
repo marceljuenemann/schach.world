@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Lingen', url: '?mannschaft=3000', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=745&r=5#p3000x3003', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=745&r=2#p3000x2998', title: 'gegen SV Hellern', text: 5½ }]
+    - [{ url: '?staffel=745&r=3#p3000x3001', title: 'gegen SG Oesede-Gmht.', text: '6' }]
+    - [{ url: '?staffel=745&r=1#p3000x3008', title: 'gegen SK Nordhorn-Bl.', text: '3' }]
+    - [{ url: '?staffel=745&r=6#p3000x2997', title: 'gegen Roch. Göttingen', text: '4' }]
+    - [{ url: '?staffel=745&r=7#p3000x3122', title: 'gegen Hagener SV 2', text: 5½ }]
+    - [{ url: '?staffel=745&r=4#p3000x3007', title: 'gegen Peiner SV', text: '5' }]
+    - 13
+    - '33'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte', url: '?mannschaft=3003', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=745&r=5#p3003x3000', title: 'gegen SV Lingen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=745&r=6#p3003x2998', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=745&r=1#p3003x3001', title: 'gegen SG Oesede-Gmht.', text: 3½ }]
+    - [{ url: '?staffel=745&r=7#p3003x3008', title: 'gegen SK Nordhorn-Bl.', text: 3½ }]
+    - [{ url: '?staffel=745&r=4#p3003x2997', title: 'gegen Roch. Göttingen', text: '5' }]
+    - [{ url: '?staffel=745&r=3#p3003x3122', title: 'gegen Hagener SV 2', text: 4½ }]
+    - [{ url: '?staffel=745&r=2#p3003x3007', title: 'gegen Peiner SV', text: '5' }]
+    - 12
+    - 27½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Hellern', url: '?mannschaft=2998', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=745&r=2#p2998x3000', title: 'gegen SV Lingen', text: ½ }]
+    - [{ url: '?staffel=745&r=6#p2998x3003', title: 'gegen SK Lehrte', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=745&r=4#p2998x3001', title: 'gegen SG Oesede-Gmht.', text: ½ }]
+    - [{ url: '?staffel=745&r=3#p2998x3008', title: 'gegen SK Nordhorn-Bl.', text: 4½ }]
+    - [{ url: '?staffel=745&r=1#p2998x2997', title: 'gegen Roch. Göttingen', text: '4' }]
+    - [{ url: '?staffel=745&r=5#p2998x3122', title: 'gegen Hagener SV 2', text: 3½ }]
+    - [{ url: '?staffel=745&r=7#p2998x3007', title: 'gegen Peiner SV', text: '6' }]
+    - 8
+    - '21'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=3001', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=745&r=3#p3001x3000', title: 'gegen SV Lingen', text: '0' }]
+    - [{ url: '?staffel=745&r=1#p3001x3003', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=745&r=4#p3001x2998', title: 'gegen SV Hellern', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=745&r=2#p3001x3008', title: 'gegen SK Nordhorn-Bl.', text: '4' }]
+    - [{ url: '?staffel=745&r=7#p3001x2997', title: 'gegen Roch. Göttingen', text: '0' }]
+    - [{ url: '?staffel=745&r=6#p3001x3122', title: 'gegen Hagener SV 2', text: 4½ }]
+    - [{ url: '?staffel=745&r=5#p3001x3007', title: 'gegen Peiner SV', text: 3½ }]
+    - 8
+    - '20'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Nordhorn-Bl.', url: '?mannschaft=3008', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=745&r=1#p3008x3000', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=745&r=7#p3008x3003', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=745&r=3#p3008x2998', title: 'gegen SV Hellern', text: 1½ }]
+    - [{ url: '?staffel=745&r=2#p3008x3001', title: 'gegen SG Oesede-Gmht.', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=745&r=5#p3008x2997', title: 'gegen Roch. Göttingen', text: '3' }]
+    - [{ url: '?staffel=745&r=4#p3008x3122', title: 'gegen Hagener SV 2', text: '5' }]
+    - [{ url: '?staffel=745&r=6#p3008x3007', title: 'gegen Peiner SV', text: 3½ }]
+    - 6
+    - 20½
+    - ''
+-
+    - '6.'
+    - { text: 'Roch. Göttingen', url: '?mannschaft=2997', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=745&r=6#p2997x3000', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=745&r=4#p2997x3003', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=745&r=1#p2997x2998', title: 'gegen SV Hellern', text: '2' }]
+    - [{ url: '?staffel=745&r=7#p2997x3001', title: 'gegen SG Oesede-Gmht.', text: '6' }]
+    - [{ url: '?staffel=745&r=5#p2997x3008', title: 'gegen SK Nordhorn-Bl.', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=745&r=2#p2997x3122', title: 'gegen Hagener SV 2', text: 2½ }]
+    - [{ url: '?staffel=745&r=3#p2997x3007', title: 'gegen Peiner SV', text: 4½ }]
+    - 5
+    - '21'
+    - ''
+-
+    - '7.'
+    - { text: 'Hagener SV 2', url: '?mannschaft=3122', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=745&r=7#p3122x3000', title: 'gegen SV Lingen', text: ½ }]
+    - [{ url: '?staffel=745&r=3#p3122x3003', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=745&r=5#p3122x2998', title: 'gegen SV Hellern', text: 2½ }]
+    - [{ url: '?staffel=745&r=6#p3122x3001', title: 'gegen SG Oesede-Gmht.', text: 1½ }]
+    - [{ url: '?staffel=745&r=4#p3122x3008', title: 'gegen SK Nordhorn-Bl.', text: '1' }]
+    - [{ url: '?staffel=745&r=2#p3122x2997', title: 'gegen Roch. Göttingen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=745&r=1#p3122x3007', title: 'gegen Peiner SV', text: '3' }]
+    - 3
+    - 13½
+    - absteiger
+-
+    - '8.'
+    - { text: 'Peiner SV', url: '?mannschaft=3007', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=745&r=4#p3007x3000', title: 'gegen SV Lingen', text: '1' }]
+    - [{ url: '?staffel=745&r=2#p3007x3003', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=745&r=7#p3007x2998', title: 'gegen SV Hellern', text: '0' }]
+    - [{ url: '?staffel=745&r=5#p3007x3001', title: 'gegen SG Oesede-Gmht.', text: 2½ }]
+    - [{ url: '?staffel=745&r=6#p3007x3008', title: 'gegen SK Nordhorn-Bl.', text: 2½ }]
+    - [{ url: '?staffel=745&r=3#p3007x2997', title: 'gegen Roch. Göttingen', text: 1½ }]
+    - [{ url: '?staffel=745&r=1#p3007x3122', title: 'gegen Hagener SV 2', text: '3' }]
+    - xxx
+    - 1
+    - 11½
+    - absteiger

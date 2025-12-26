@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Spelle', url: '?mannschaft=6885', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1631&r=2#p6885x6930', title: 'gegen SC Papenburg 2', text: '4' }]
+    - [{ url: '?staffel=1631&r=4#p6885x6927', title: 'gegen SV Werder Bremen', text: '3' }]
+    - [{ url: '?staffel=1631&r=1#p6885x6997', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=1631&r=3#p6885x6999', title: 'gegen SK Lehrte 5', text: 3½ }]
+    - [{ url: '?staffel=1631&r=5#p6885x6998', title: 'gegen SK Lehrte 4', text: '3' }]
+    - 10
+    - '16'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SC Papenburg 2', url: '?mannschaft=6930', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1631&r=2#p6930x6885', title: 'gegen SF Spelle', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1631&r=1#p6930x6927', title: 'gegen SV Werder Bremen', text: '3' }]
+    - [{ url: '?staffel=1631&r=3#p6930x6997', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=1631&r=5#p6930x6999', title: 'gegen SK Lehrte 5', text: '4' }]
+    - [{ url: '?staffel=1631&r=4#p6930x6998', title: 'gegen SK Lehrte 4', text: '4' }]
+    - 8
+    - '14'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Werder Bremen', url: '?mannschaft=6927', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1631&r=4#p6927x6885', title: 'gegen SF Spelle', text: '1' }]
+    - [{ url: '?staffel=1631&r=1#p6927x6930', title: 'gegen SC Papenburg 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1631&r=5#p6927x6997', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1631&r=2#p6927x6999', title: 'gegen SK Lehrte 5', text: '4' }]
+    - [{ url: '?staffel=1631&r=3#p6927x6998', title: 'gegen SK Lehrte 4', text: '4' }]
+    - 4
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=6997', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1631&r=1#p6997x6885', title: 'gegen SF Spelle', text: 1½ }]
+    - [{ url: '?staffel=1631&r=3#p6997x6930', title: 'gegen SC Papenburg 2', text: '1' }]
+    - [{ url: '?staffel=1631&r=5#p6997x6927', title: 'gegen SV Werder Bremen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1631&r=4#p6997x6999', title: 'gegen SK Lehrte 5', text: '0' }]
+    - [{ url: '?staffel=1631&r=2#p6997x6998', title: 'gegen SK Lehrte 4', text: '0' }]
+    - 2
+    - 6½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 5', url: '?mannschaft=6999', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1631&r=3#p6999x6885', title: 'gegen SF Spelle', text: ½ }]
+    - [{ url: '?staffel=1631&r=5#p6999x6930', title: 'gegen SC Papenburg 2', text: '0' }]
+    - [{ url: '?staffel=1631&r=2#p6999x6927', title: 'gegen SV Werder Bremen', text: '0' }]
+    - [{ url: '?staffel=1631&r=4#p6999x6997', title: 'gegen SK Lehrte 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1631&r=1#p6999x6998', title: 'gegen SK Lehrte 4', text: '3' }]
+    - 2
+    - 3½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=6998', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1631&r=5#p6998x6885', title: 'gegen SF Spelle', text: '1' }]
+    - [{ url: '?staffel=1631&r=4#p6998x6930', title: 'gegen SC Papenburg 2', text: '0' }]
+    - [{ url: '?staffel=1631&r=3#p6998x6927', title: 'gegen SV Werder Bremen', text: '0' }]
+    - [{ url: '?staffel=1631&r=2#p6998x6997', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1631&r=1#p6998x6999', title: 'gegen SK Lehrte 5', text: '1' }]
+    - xxx
+    - 0
+    - '2'
+    - ''

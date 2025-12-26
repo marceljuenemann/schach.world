@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=7024', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1613&r=2#p7024x7022', title: 'gegen Rochade Göttingen', text: 5½ }]
+    - [{ url: '?staffel=1613&r=3#p7024x7021', title: 'gegen Delmenhorster SK', text: '6' }]
+    - [{ url: '?staffel=1613&r=4#p7024x7023', title: 'gegen Hagener SV', text: '5' }]
+    - [{ url: '?staffel=1613&r=1#p7024x7025', title: 'gegen SV Werder Bremen', text: '5' }]
+    - [{ url: '?staffel=1613&r=5#p7024x7026', title: 'gegen Rochade Magdeburg', text: 5½ }]
+    - 10
+    - '27'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Rochade Göttingen', url: '?mannschaft=7022', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1613&r=2#p7022x7024', title: 'gegen SK Lehrte', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1613&r=1#p7022x7021', title: 'gegen Delmenhorster SK', text: '6' }]
+    - [{ url: '?staffel=1613&r=5#p7022x7023', title: 'gegen Hagener SV', text: '4' }]
+    - [{ url: '?staffel=1613&r=4#p7022x7025', title: 'gegen SV Werder Bremen', text: '6' }]
+    - [{ url: '?staffel=1613&r=3#p7022x7026', title: 'gegen Rochade Magdeburg', text: '6' }]
+    - 8
+    - 22½
+    - ''
+-
+    - '3.'
+    - { text: 'Delmenhorster SK', url: '?mannschaft=7021', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1613&r=3#p7021x7024', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1613&r=1#p7021x7022', title: 'gegen Rochade Göttingen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1613&r=2#p7021x7023', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=1613&r=5#p7021x7025', title: 'gegen SV Werder Bremen', text: 3½ }]
+    - [{ url: '?staffel=1613&r=4#p7021x7026', title: 'gegen Rochade Magdeburg', text: 5½ }]
+    - 6
+    - 12½
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV', url: '?mannschaft=7023', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1613&r=4#p7023x7024', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1613&r=5#p7023x7022', title: 'gegen Rochade Göttingen', text: '2' }]
+    - [{ url: '?staffel=1613&r=2#p7023x7021', title: 'gegen Delmenhorster SK', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1613&r=3#p7023x7025', title: 'gegen SV Werder Bremen', text: 1½ }]
+    - [{ url: '?staffel=1613&r=1#p7023x7026', title: 'gegen Rochade Magdeburg', text: '4' }]
+    - 2
+    - '11'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Werder Bremen', url: '?mannschaft=7025', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1613&r=1#p7025x7024', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1613&r=4#p7025x7022', title: 'gegen Rochade Göttingen', text: '0' }]
+    - [{ url: '?staffel=1613&r=5#p7025x7021', title: 'gegen Delmenhorster SK', text: 2½ }]
+    - [{ url: '?staffel=1613&r=3#p7025x7023', title: 'gegen Hagener SV', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1613&r=2#p7025x7026', title: 'gegen Rochade Magdeburg', text: 2½ }]
+    - 2
+    - 10½
+    - ''
+-
+    - '6.'
+    - { text: 'Rochade Magdeburg', url: '?mannschaft=7026', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1613&r=5#p7026x7024', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=1613&r=3#p7026x7022', title: 'gegen Rochade Göttingen', text: '0' }]
+    - [{ url: '?staffel=1613&r=4#p7026x7021', title: 'gegen Delmenhorster SK', text: ½ }]
+    - [{ url: '?staffel=1613&r=1#p7026x7023', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=1613&r=2#p7026x7025', title: 'gegen SV Werder Bremen', text: 3½ }]
+    - xxx
+    - 2
+    - 6½
+    - ''

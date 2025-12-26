@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Laatzen', url: '?mannschaft=5549', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1337&r=8#p5549x5579', title: 'gegen SD Isernhagen', text: '5' }]
+    - [{ url: '?staffel=1337&r=2#p5549x5555', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1337&r=3#p5549x5571', title: 'gegen ST Langenhagen', text: '5' }]
+    - [{ url: '?staffel=1337&r=4#p5549x5573', title: 'gegen HSK Lister Turm 3', text: 5½ }]
+    - [{ url: '?staffel=1337&r=9#p5549x5556', title: 'gegen SK Lehrte 3', text: 4½ }]
+    - [{ url: '?staffel=1337&r=6#p5549x5541', title: 'gegen SC Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=1337&r=1#p5549x5570', title: 'gegen SF Hannover 2', text: '7' }]
+    - [{ url: '?staffel=1337&r=7#p5549x5536', title: 'gegen SF Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=1337&r=5#p5549x5550', title: 'gegen SK Stolzenau', text: '5' }]
+    - 13
+    - '43'
+    - ''
+-
+    - '2.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=5579', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1337&r=8#p5579x5549', title: 'gegen SV Laatzen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1337&r=1#p5579x5555', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1337&r=2#p5579x5571', title: 'gegen ST Langenhagen', text: '3' }]
+    - [{ url: '?staffel=1337&r=3#p5579x5573', title: 'gegen HSK Lister Turm 3', text: '6' }]
+    - [{ url: '?staffel=1337&r=7#p5579x5556', title: 'gegen SK Lehrte 3', text: 5½ }]
+    - [{ url: '?staffel=1337&r=5#p5579x5541', title: 'gegen SC Uetze-Hänigsen', text: 5½ }]
+    - [{ url: '?staffel=1337&r=9#p5579x5570', title: 'gegen SF Hannover 2', text: '6' }]
+    - [{ url: '?staffel=1337&r=6#p5579x5536', title: 'gegen SF Barsinghausen', text: 4½ }]
+    - [{ url: '?staffel=1337&r=4#p5579x5550', title: 'gegen SK Stolzenau', text: 4½ }]
+    - 13
+    - '42'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=5555', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1337&r=2#p5555x5549', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=1337&r=1#p5555x5579', title: 'gegen SD Isernhagen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1337&r=5#p5555x5571', title: 'gegen ST Langenhagen', text: '2' }]
+    - [{ url: '?staffel=1337&r=6#p5555x5573', title: 'gegen HSK Lister Turm 3', text: '3' }]
+    - [{ url: '?staffel=1337&r=4#p5555x5556', title: 'gegen SK Lehrte 3', text: '7' }]
+    - [{ url: '?staffel=1337&r=8#p5555x5541', title: 'gegen SC Uetze-Hänigsen', text: 6½ }]
+    - [{ url: '?staffel=1337&r=3#p5555x5570', title: 'gegen SF Hannover 2', text: 6½ }]
+    - [{ url: '?staffel=1337&r=9#p5555x5536', title: 'gegen SF Barsinghausen', text: 5½ }]
+    - [{ url: '?staffel=1337&r=7#p5555x5550', title: 'gegen SK Stolzenau', text: '4' }]
+    - 11
+    - 42½
+    - ''
+-
+    - '4.'
+    - { text: 'ST Langenhagen', url: '?mannschaft=5571', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1337&r=3#p5571x5549', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=1337&r=2#p5571x5579', title: 'gegen SD Isernhagen', text: '5' }]
+    - [{ url: '?staffel=1337&r=5#p5571x5555', title: 'gegen SK Lehrte 2', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1337&r=7#p5571x5573', title: 'gegen HSK Lister Turm 3', text: 3½ }]
+    - [{ url: '?staffel=1337&r=6#p5571x5556', title: 'gegen SK Lehrte 3', text: 3½ }]
+    - [{ url: '?staffel=1337&r=9#p5571x5541', title: 'gegen SC Uetze-Hänigsen', text: '6' }]
+    - [{ url: '?staffel=1337&r=4#p5571x5570', title: 'gegen SF Hannover 2', text: '3' }]
+    - [{ url: '?staffel=1337&r=1#p5571x5536', title: 'gegen SF Barsinghausen', text: '5' }]
+    - [{ url: '?staffel=1337&r=8#p5571x5550', title: 'gegen SK Stolzenau', text: '6' }]
+    - 10
+    - '41'
+    - ''
+-
+    - '5.'
+    - { text: 'HSK Lister Turm 3', url: '?mannschaft=5573', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1337&r=4#p5573x5549', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=1337&r=3#p5573x5579', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1337&r=6#p5573x5555', title: 'gegen SK Lehrte 2', text: '5' }]
+    - [{ url: '?staffel=1337&r=7#p5573x5571', title: 'gegen ST Langenhagen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1337&r=8#p5573x5556', title: 'gegen SK Lehrte 3', text: 3½ }]
+    - [{ url: '?staffel=1337&r=1#p5573x5541', title: 'gegen SC Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=1337&r=5#p5573x5570', title: 'gegen SF Hannover 2', text: 5½ }]
+    - [{ url: '?staffel=1337&r=2#p5573x5536', title: 'gegen SF Barsinghausen', text: '5' }]
+    - [{ url: '?staffel=1337&r=9#p5573x5550', title: 'gegen SK Stolzenau', text: 5½ }]
+    - 10
+    - 36½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=5556', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1337&r=9#p5556x5549', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=1337&r=7#p5556x5579', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=1337&r=4#p5556x5555', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=1337&r=6#p5556x5571', title: 'gegen ST Langenhagen', text: 4½ }]
+    - [{ url: '?staffel=1337&r=8#p5556x5573', title: 'gegen HSK Lister Turm 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1337&r=3#p5556x5541', title: 'gegen SC Uetze-Hänigsen', text: '5' }]
+    - [{ url: '?staffel=1337&r=2#p5556x5570', title: 'gegen SF Hannover 2', text: 2½ }]
+    - [{ url: '?staffel=1337&r=5#p5556x5536', title: 'gegen SF Barsinghausen', text: '5' }]
+    - [{ url: '?staffel=1337&r=1#p5556x5550', title: 'gegen SK Stolzenau', text: '4' }]
+    - 9
+    - 32½
+    - ''
+-
+    - '7.'
+    - { text: 'SC Uetze-Hänigsen', url: '?mannschaft=5541', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1337&r=6#p5541x5549', title: 'gegen SV Laatzen', text: 4½ }]
+    - [{ url: '?staffel=1337&r=5#p5541x5579', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=1337&r=8#p5541x5555', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=1337&r=9#p5541x5571', title: 'gegen ST Langenhagen', text: '2' }]
+    - [{ url: '?staffel=1337&r=1#p5541x5573', title: 'gegen HSK Lister Turm 3', text: '5' }]
+    - [{ url: '?staffel=1337&r=3#p5541x5556', title: 'gegen SK Lehrte 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1337&r=7#p5541x5570', title: 'gegen SF Hannover 2', text: 6½ }]
+    - [{ url: '?staffel=1337&r=4#p5541x5536', title: 'gegen SF Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=1337&r=2#p5541x5550', title: 'gegen SK Stolzenau', text: '4' }]
+    - 7
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'SF Hannover 2', url: '?mannschaft=5570', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1337&r=1#p5570x5549', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=1337&r=9#p5570x5579', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1337&r=3#p5570x5555', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=1337&r=4#p5570x5571', title: 'gegen ST Langenhagen', text: '5' }]
+    - [{ url: '?staffel=1337&r=5#p5570x5573', title: 'gegen HSK Lister Turm 3', text: 2½ }]
+    - [{ url: '?staffel=1337&r=2#p5570x5556', title: 'gegen SK Lehrte 3', text: 5½ }]
+    - [{ url: '?staffel=1337&r=7#p5570x5541', title: 'gegen SC Uetze-Hänigsen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1337&r=8#p5570x5536', title: 'gegen SF Barsinghausen', text: 5½ }]
+    - [{ url: '?staffel=1337&r=6#p5570x5550', title: 'gegen SK Stolzenau', text: '4' }]
+    - 7
+    - 28½
+    - ''
+-
+    - '9.'
+    - { text: 'SF Barsinghausen', url: '?mannschaft=5536', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1337&r=7#p5536x5549', title: 'gegen SV Laatzen', text: 4½ }]
+    - [{ url: '?staffel=1337&r=6#p5536x5579', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1337&r=9#p5536x5555', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - [{ url: '?staffel=1337&r=1#p5536x5571', title: 'gegen ST Langenhagen', text: '3' }]
+    - [{ url: '?staffel=1337&r=2#p5536x5573', title: 'gegen HSK Lister Turm 3', text: '3' }]
+    - [{ url: '?staffel=1337&r=5#p5536x5556', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=1337&r=4#p5536x5541', title: 'gegen SC Uetze-Hänigsen', text: '5' }]
+    - [{ url: '?staffel=1337&r=8#p5536x5570', title: 'gegen SF Hannover 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1337&r=3#p5536x5550', title: 'gegen SK Stolzenau', text: 5½ }]
+    - 6
+    - 32½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=5550', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1337&r=5#p5550x5549', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=1337&r=4#p5550x5579', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1337&r=7#p5550x5555', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1337&r=8#p5550x5571', title: 'gegen ST Langenhagen', text: '2' }]
+    - [{ url: '?staffel=1337&r=9#p5550x5573', title: 'gegen HSK Lister Turm 3', text: 2½ }]
+    - [{ url: '?staffel=1337&r=1#p5550x5556', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=1337&r=2#p5550x5541', title: 'gegen SC Uetze-Hänigsen', text: '4' }]
+    - [{ url: '?staffel=1337&r=6#p5550x5570', title: 'gegen SF Hannover 2', text: '4' }]
+    - [{ url: '?staffel=1337&r=3#p5550x5536', title: 'gegen SF Barsinghausen', text: 2½ }]
+    - xxx
+    - 4
+    - 29½
+    - ''

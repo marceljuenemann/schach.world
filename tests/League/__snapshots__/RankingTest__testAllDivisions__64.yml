@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=983', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=463&r=4#p983x984', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - [{ url: '?staffel=463&r=1#p983x988', title: 'gegen SF Hannover', text: '4' }]
+    - [{ url: '?staffel=463&r=5#p983x932', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=463&r=6#p983x933', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=463&r=2#p983x985', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=463&r=7#p983x987', title: 'gegen SK Anderten', text: '4' }]
+    - 11
+    - 20½
+    - ''
+-
+    - '2.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=984', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=463&r=4#p984x983', title: 'gegen SV Bückeburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=463&r=2#p984x988', title: 'gegen SF Hannover', text: '4' }]
+    - [{ url: '?staffel=463&r=6#p984x932', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=463&r=7#p984x933', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=463&r=3#p984x985', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=463&r=1#p984x987', title: 'gegen SK Anderten', text: 2½ }]
+    - 9
+    - '16'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Hannover', url: '?mannschaft=988', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=463&r=1#p988x983', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=463&r=2#p988x984', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=463&r=3#p988x932', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=463&r=4#p988x933', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=463&r=7#p988x985', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=463&r=5#p988x987', title: 'gegen SK Anderten', text: '3' }]
+    - 7
+    - 10½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte', url: '?mannschaft=932', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=463&r=5#p932x983', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=463&r=6#p932x984', title: 'gegen SV Bückeburg 2', text: 2½ }]
+    - [{ url: '?staffel=463&r=3#p932x988', title: 'gegen SF Hannover', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=463&r=1#p932x933', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=463&r=4#p932x985', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=463&r=2#p932x987', title: 'gegen SK Anderten', text: 1½ }]
+    - 5
+    - '13'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=933', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=463&r=6#p933x983', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=463&r=7#p933x984', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - [{ url: '?staffel=463&r=4#p933x988', title: 'gegen SF Hannover', text: '2' }]
+    - [{ url: '?staffel=463&r=1#p933x932', title: 'gegen SK Lehrte', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=463&r=5#p933x985', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=463&r=3#p933x987', title: 'gegen SK Anderten', text: '3' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '6.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=985', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=463&r=2#p985x983', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=463&r=3#p985x984', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - [{ url: '?staffel=463&r=7#p985x988', title: 'gegen SF Hannover', text: '1' }]
+    - [{ url: '?staffel=463&r=4#p985x932', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=463&r=5#p985x933', title: 'gegen SK Lehrte 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=463&r=6#p985x987', title: 'gegen SK Anderten', text: '2' }]
+    - 3
+    - '8'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Anderten', url: '?mannschaft=987', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=463&r=7#p987x983', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=463&r=1#p987x984', title: 'gegen SV Bückeburg 2', text: 1½ }]
+    - [{ url: '?staffel=463&r=5#p987x988', title: 'gegen SF Hannover', text: '1' }]
+    - [{ url: '?staffel=463&r=2#p987x932', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=463&r=3#p987x933', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=463&r=6#p987x985', title: 'gegen SD Isernhagen', text: '2' }]
+    - xxx
+    - 3
+    - '8'
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Noris-Tarras', url: '?mannschaft=7003', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1583&r=4#p7003x7001', title: 'gegen SC Bavaria Rgbg', text: '4' }]
+    - [{ url: '?staffel=1583&r=5#p7003x7004', title: 'gegen Bayern München 2', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - 4
+    - '7'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Bavaria Rgbg', url: '?mannschaft=7001', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1583&r=4#p7001x7003', title: 'gegen SC Noris-Tarras', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1583&r=1#p7001x7004', title: 'gegen Bayern München 2', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - 2
+    - 2½
+    - ''
+-
+    - '3.'
+    - { text: 'Bayern München 2', url: '?mannschaft=7004', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1583&r=5#p7004x7003', title: 'gegen SC Noris-Tarras', text: '1' }]
+    - [{ url: '?staffel=1583&r=1#p7004x7001', title: 'gegen SC Bavaria Rgbg', text: 1½ }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - 2½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Neuperlach', url: '?mannschaft=7002', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Motor Zeitz', url: '?mannschaft=7000', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '4.'
+    - { text: 'KissChess e.V. 2', url: '?mannschaft=7005', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'ESV Göttingen 4', url: '?mannschaft=6926', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1536&r=7#p6926x6907', title: 'gegen SC Langelsheim', text: '3' }]
+    - [{ url: '?staffel=1536&r=4#p6926x6904', title: 'gegen SK Goslar 2', text: '2' }]
+    - [{ url: '?staffel=1536&r=5#p6926x6897', title: 'gegen Hildesheimer SV 4', text: 4½ }]
+    - [{ url: '?staffel=1536&r=6#p6926x6890', title: 'gegen Tempo Göttingen 2', text: 3½ }]
+    - [{ url: '?staffel=1536&r=9#p6926x6889', title: 'gegen Hamelner SV 5', text: '6' }]
+    - [{ url: '?staffel=1536&r=8#p6926x6892', title: 'gegen Plesse Bovenden 3', text: '5' }]
+    - [{ url: '?staffel=1536&r=2#p6926x6920', title: 'gegen SK Bad Harzburg 2', text: '6' }]
+    - [{ url: '?staffel=1536&r=3#p6926x6901', title: 'gegen Alfelder SV', text: '6' }]
+    - 13
+    - '36'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=6907', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1536&r=7#p6907x6926', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1536&r=5#p6907x6904', title: 'gegen SK Goslar 2', text: '1' }]
+    - [{ url: '?staffel=1536&r=1#p6907x6897', title: 'gegen Hildesheimer SV 4', text: '4' }]
+    - [{ url: '?staffel=1536&r=9#p6907x6890', title: 'gegen Tempo Göttingen 2', text: '6' }]
+    - [{ url: '?staffel=1536&r=3#p6907x6889', title: 'gegen Hamelner SV 5', text: '4' }]
+    - [{ url: '?staffel=1536&r=6#p6907x6892', title: 'gegen Plesse Bovenden 3', text: '4' }]
+    - [{ url: '?staffel=1536&r=4#p6907x6920', title: 'gegen SK Bad Harzburg 2', text: '6' }]
+    - [{ url: '?staffel=1536&r=8#p6907x6901', title: 'gegen Alfelder SV', text: '6' }]
+    - 13
+    - '34'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=6904', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1536&r=4#p6904x6926', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - [{ url: '?staffel=1536&r=5#p6904x6907', title: 'gegen SC Langelsheim', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1536&r=8#p6904x6897', title: 'gegen Hildesheimer SV 4', text: '4' }]
+    - [{ url: '?staffel=1536&r=2#p6904x6890', title: 'gegen Tempo Göttingen 2', text: '0' }]
+    - [{ url: '?staffel=1536&r=7#p6904x6889', title: 'gegen Hamelner SV 5', text: '4' }]
+    - [{ url: '?staffel=1536&r=9#p6904x6892', title: 'gegen Plesse Bovenden 3', text: '3' }]
+    - [{ url: '?staffel=1536&r=6#p6904x6920', title: 'gegen SK Bad Harzburg 2', text: '6' }]
+    - [{ url: '?staffel=1536&r=1#p6904x6901', title: 'gegen Alfelder SV', text: '6' }]
+    - 12
+    - '31'
+    - ''
+-
+    - '4.'
+    - { text: 'Hildesheimer SV 4', url: '?mannschaft=6897', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1536&r=5#p6897x6926', title: 'gegen ESV Göttingen 4', text: 1½ }]
+    - [{ url: '?staffel=1536&r=1#p6897x6907', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=1536&r=8#p6897x6904', title: 'gegen SK Goslar 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1536&r=3#p6897x6890', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=1536&r=6#p6897x6889', title: 'gegen Hamelner SV 5', text: '6' }]
+    - [{ url: '?staffel=1536&r=2#p6897x6892', title: 'gegen Plesse Bovenden 3', text: 5½ }]
+    - [{ url: '?staffel=1536&r=7#p6897x6920', title: 'gegen SK Bad Harzburg 2', text: '5' }]
+    - [{ url: '?staffel=1536&r=4#p6897x6901', title: 'gegen Alfelder SV', text: '6' }]
+    - 10
+    - '32'
+    - ''
+-
+    - '5.'
+    - { text: 'Tempo Göttingen 2', url: '?mannschaft=6890', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1536&r=6#p6890x6926', title: 'gegen ESV Göttingen 4', text: 2½ }]
+    - [{ url: '?staffel=1536&r=9#p6890x6907', title: 'gegen SC Langelsheim', text: '0' }]
+    - [{ url: '?staffel=1536&r=2#p6890x6904', title: 'gegen SK Goslar 2', text: '6' }]
+    - [{ url: '?staffel=1536&r=3#p6890x6897', title: 'gegen Hildesheimer SV 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1536&r=5#p6890x6889', title: 'gegen Hamelner SV 5', text: '0' }]
+    - [{ url: '?staffel=1536&r=4#p6890x6892', title: 'gegen Plesse Bovenden 3', text: '5' }]
+    - [{ url: '?staffel=1536&r=1#p6890x6920', title: 'gegen SK Bad Harzburg 2', text: '6' }]
+    - [{ url: '?staffel=1536&r=7#p6890x6901', title: 'gegen Alfelder SV', text: '6' }]
+    - 8
+    - 27½
+    - ''
+-
+    - '6.'
+    - { text: 'Hamelner SV 5', url: '?mannschaft=6889', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1536&r=9#p6889x6926', title: 'gegen ESV Göttingen 4', text: '0' }]
+    - [{ url: '?staffel=1536&r=3#p6889x6907', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=1536&r=7#p6889x6904', title: 'gegen SK Goslar 2', text: '2' }]
+    - [{ url: '?staffel=1536&r=6#p6889x6897', title: 'gegen Hildesheimer SV 4', text: '0' }]
+    - [{ url: '?staffel=1536&r=5#p6889x6890', title: 'gegen Tempo Göttingen 2', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1536&r=1#p6889x6892', title: 'gegen Plesse Bovenden 3', text: 3½ }]
+    - [{ url: '?staffel=1536&r=8#p6889x6920', title: 'gegen SK Bad Harzburg 2', text: '6' }]
+    - [{ url: '?staffel=1536&r=2#p6889x6901', title: 'gegen Alfelder SV', text: '6' }]
+    - 8
+    - 25½
+    - ''
+-
+    - '7.'
+    - { text: 'Plesse Bovenden 3', url: '?mannschaft=6892', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1536&r=8#p6892x6926', title: 'gegen ESV Göttingen 4', text: '1' }]
+    - [{ url: '?staffel=1536&r=6#p6892x6907', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=1536&r=9#p6892x6904', title: 'gegen SK Goslar 2', text: '3' }]
+    - [{ url: '?staffel=1536&r=2#p6892x6897', title: 'gegen Hildesheimer SV 4', text: ½ }]
+    - [{ url: '?staffel=1536&r=4#p6892x6890', title: 'gegen Tempo Göttingen 2', text: '1' }]
+    - [{ url: '?staffel=1536&r=1#p6892x6889', title: 'gegen Hamelner SV 5', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1536&r=3#p6892x6920', title: 'gegen SK Bad Harzburg 2', text: '6' }]
+    - [{ url: '?staffel=1536&r=5#p6892x6901', title: 'gegen Alfelder SV', text: '6' }]
+    - 5
+    - '22'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Bad Harzburg 2', url: '?mannschaft=6920', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1536&r=2#p6920x6926', title: 'gegen ESV Göttingen 4', text: '0' }]
+    - [{ url: '?staffel=1536&r=4#p6920x6907', title: 'gegen SC Langelsheim', text: '0' }]
+    - [{ url: '?staffel=1536&r=6#p6920x6904', title: 'gegen SK Goslar 2', text: '0' }]
+    - [{ url: '?staffel=1536&r=7#p6920x6897', title: 'gegen Hildesheimer SV 4', text: '0' }]
+    - [{ url: '?staffel=1536&r=1#p6920x6890', title: 'gegen Tempo Göttingen 2', text: '0' }]
+    - [{ url: '?staffel=1536&r=8#p6920x6889', title: 'gegen Hamelner SV 5', text: '0' }]
+    - [{ url: '?staffel=1536&r=3#p6920x6892', title: 'gegen Plesse Bovenden 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1536&r=9#p6920x6901', title: 'gegen Alfelder SV', text: '0' }]
+    - 0
+    - '0'
+    - absteigerRelegation
+-
+    - '9.'
+    - { text: 'Alfelder SV', url: '?mannschaft=6901', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1536&r=3#p6901x6926', title: 'gegen ESV Göttingen 4', text: '0' }]
+    - [{ url: '?staffel=1536&r=8#p6901x6907', title: 'gegen SC Langelsheim', text: '0' }]
+    - [{ url: '?staffel=1536&r=1#p6901x6904', title: 'gegen SK Goslar 2', text: '0' }]
+    - [{ url: '?staffel=1536&r=4#p6901x6897', title: 'gegen Hildesheimer SV 4', text: '0' }]
+    - [{ url: '?staffel=1536&r=7#p6901x6890', title: 'gegen Tempo Göttingen 2', text: '0' }]
+    - [{ url: '?staffel=1536&r=2#p6901x6889', title: 'gegen Hamelner SV 5', text: '0' }]
+    - [{ url: '?staffel=1536&r=5#p6901x6892', title: 'gegen Plesse Bovenden 3', text: '0' }]
+    - [{ url: '?staffel=1536&r=9#p6901x6920', title: 'gegen SK Bad Harzburg 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

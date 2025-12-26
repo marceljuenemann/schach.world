@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Hofheim', url: '?mannschaft=4454', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1005&r=1#p4454x4457', title: 'gegen SG Leipzig', text: 4½ }]
+    - [{ url: '?staffel=1005&r=6#p4454x4456', title: 'gegen TSV Schott Mainz', text: '4' }]
+    - [{ url: '?staffel=1005&r=3#p4454x4455', title: 'gegen SV Wolfbusch', text: '4' }]
+    - [{ url: '?staffel=1005&r=5#p4454x4461', title: 'gegen SK Langen', text: '3' }]
+    - [{ url: '?staffel=1005&r=7#p4454x4459', title: 'gegen SF Wadgassen', text: 4½ }]
+    - [{ url: '?staffel=1005&r=4#p4454x4460', title: 'gegen SC Zeulenroda', text: 4½ }]
+    - [{ url: '?staffel=1005&r=2#p4454x4458', title: 'gegen SV Niederwiesa', text: 5½ }]
+    - 13
+    - '30'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Leipzig', url: '?mannschaft=4457', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1005&r=1#p4457x4454', title: 'gegen SV Hofheim', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1005&r=3#p4457x4456', title: 'gegen TSV Schott Mainz', text: 3½ }]
+    - [{ url: '?staffel=1005&r=6#p4457x4455', title: 'gegen SV Wolfbusch', text: '4' }]
+    - [{ url: '?staffel=1005&r=2#p4457x4461', title: 'gegen SK Langen', text: '2' }]
+    - [{ url: '?staffel=1005&r=4#p4457x4459', title: 'gegen SF Wadgassen', text: 4½ }]
+    - [{ url: '?staffel=1005&r=7#p4457x4460', title: 'gegen SC Zeulenroda', text: '4' }]
+    - [{ url: '?staffel=1005&r=5#p4457x4458', title: 'gegen SV Niederwiesa', text: 3½ }]
+    - 10
+    - '23'
+    - ''
+-
+    - '3.'
+    - { text: 'TSV Schott Mainz', url: '?mannschaft=4456', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1005&r=6#p4456x4454', title: 'gegen SV Hofheim', text: '2' }]
+    - [{ url: '?staffel=1005&r=3#p4456x4457', title: 'gegen SG Leipzig', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1005&r=1#p4456x4455', title: 'gegen SV Wolfbusch', text: '4' }]
+    - [{ url: '?staffel=1005&r=7#p4456x4461', title: 'gegen SK Langen', text: '3' }]
+    - [{ url: '?staffel=1005&r=5#p4456x4459', title: 'gegen SF Wadgassen', text: 4½ }]
+    - [{ url: '?staffel=1005&r=2#p4456x4460', title: 'gegen SC Zeulenroda', text: 3½ }]
+    - [{ url: '?staffel=1005&r=4#p4456x4458', title: 'gegen SV Niederwiesa', text: '3' }]
+    - 8
+    - 22½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Wolfbusch', url: '?mannschaft=4455', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1005&r=3#p4455x4454', title: 'gegen SV Hofheim', text: '2' }]
+    - [{ url: '?staffel=1005&r=6#p4455x4457', title: 'gegen SG Leipzig', text: '2' }]
+    - [{ url: '?staffel=1005&r=1#p4455x4456', title: 'gegen TSV Schott Mainz', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1005&r=4#p4455x4461', title: 'gegen SK Langen', text: '2' }]
+    - [{ url: '?staffel=1005&r=2#p4455x4459', title: 'gegen SF Wadgassen', text: 4½ }]
+    - [{ url: '?staffel=1005&r=5#p4455x4460', title: 'gegen SC Zeulenroda', text: '4' }]
+    - [{ url: '?staffel=1005&r=7#p4455x4458', title: 'gegen SV Niederwiesa', text: '5' }]
+    - 6
+    - 21½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Langen', url: '?mannschaft=4461', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1005&r=5#p4461x4454', title: 'gegen SV Hofheim', text: '3' }]
+    - [{ url: '?staffel=1005&r=2#p4461x4457', title: 'gegen SG Leipzig', text: '4' }]
+    - [{ url: '?staffel=1005&r=7#p4461x4456', title: 'gegen TSV Schott Mainz', text: '3' }]
+    - [{ url: '?staffel=1005&r=4#p4461x4455', title: 'gegen SV Wolfbusch', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1005&r=6#p4461x4459', title: 'gegen SF Wadgassen', text: 2½ }]
+    - [{ url: '?staffel=1005&r=3#p4461x4460', title: 'gegen SC Zeulenroda', text: 2½ }]
+    - [{ url: '?staffel=1005&r=1#p4461x4458', title: 'gegen SV Niederwiesa', text: '2' }]
+    - 6
+    - '21'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Wadgassen', url: '?mannschaft=4459', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1005&r=7#p4459x4454', title: 'gegen SV Hofheim', text: 1½ }]
+    - [{ url: '?staffel=1005&r=4#p4459x4457', title: 'gegen SG Leipzig', text: 1½ }]
+    - [{ url: '?staffel=1005&r=5#p4459x4456', title: 'gegen TSV Schott Mainz', text: 1½ }]
+    - [{ url: '?staffel=1005&r=2#p4459x4455', title: 'gegen SV Wolfbusch', text: 1½ }]
+    - [{ url: '?staffel=1005&r=6#p4459x4461', title: 'gegen SK Langen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1005&r=1#p4459x4460', title: 'gegen SC Zeulenroda', text: 4½ }]
+    - [{ url: '?staffel=1005&r=3#p4459x4458', title: 'gegen SV Niederwiesa', text: 3½ }]
+    - 6
+    - 17½
+    - ''
+-
+    - '7.'
+    - { text: 'SC Zeulenroda', url: '?mannschaft=4460', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1005&r=4#p4460x4454', title: 'gegen SV Hofheim', text: 1½ }]
+    - [{ url: '?staffel=1005&r=7#p4460x4457', title: 'gegen SG Leipzig', text: '2' }]
+    - [{ url: '?staffel=1005&r=2#p4460x4456', title: 'gegen TSV Schott Mainz', text: 2½ }]
+    - [{ url: '?staffel=1005&r=5#p4460x4455', title: 'gegen SV Wolfbusch', text: '2' }]
+    - [{ url: '?staffel=1005&r=3#p4460x4461', title: 'gegen SK Langen', text: 3½ }]
+    - [{ url: '?staffel=1005&r=1#p4460x4459', title: 'gegen SF Wadgassen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1005&r=6#p4460x4458', title: 'gegen SV Niederwiesa', text: '4' }]
+    - 4
+    - '17'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SV Niederwiesa', url: '?mannschaft=4458', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1005&r=2#p4458x4454', title: 'gegen SV Hofheim', text: ½ }]
+    - [{ url: '?staffel=1005&r=5#p4458x4457', title: 'gegen SG Leipzig', text: 2½ }]
+    - [{ url: '?staffel=1005&r=4#p4458x4456', title: 'gegen TSV Schott Mainz', text: '3' }]
+    - [{ url: '?staffel=1005&r=7#p4458x4455', title: 'gegen SV Wolfbusch', text: '1' }]
+    - [{ url: '?staffel=1005&r=1#p4458x4461', title: 'gegen SK Langen', text: '4' }]
+    - [{ url: '?staffel=1005&r=3#p4458x4459', title: 'gegen SF Wadgassen', text: 2½ }]
+    - [{ url: '?staffel=1005&r=6#p4458x4460', title: 'gegen SC Zeulenroda', text: '2' }]
+    - xxx
+    - 3
+    - 15½
+    - absteiger

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: Horst-Emscher31, url: '?mannschaft=2874', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=715&r=3#p2874x2862', title: 'gegen Walsum SC 72', text: '2' }]
+    - [{ url: '?staffel=715&r=1#p2874x2870', title: 'gegen DSV  1854', text: '3' }]
+    - [{ url: '?staffel=715&r=2#p2874x2887', title: 'gegen SV Welper 1922', text: 2½ }]
+    - [{ url: '?staffel=715&r=5#p2874x3142', title: 'gegen SV Erftstadt', text: '3' }]
+    - [{ url: '?staffel=715&r=4#p2874x3028', title: 'gegen Dortmund 1875', text: 3½ }]
+    - 9
+    - '14'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Walsum SC 72', url: '?mannschaft=2862', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=715&r=3#p2862x2874', title: 'gegen Horst-Emscher31', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=715&r=2#p2862x2870', title: 'gegen DSV  1854', text: '2' }]
+    - [{ url: '?staffel=715&r=4#p2862x2887', title: 'gegen SV Welper 1922', text: '2' }]
+    - [{ url: '?staffel=715&r=1#p2862x3142', title: 'gegen SV Erftstadt', text: '4' }]
+    - [{ url: '?staffel=715&r=5#p2862x3028', title: 'gegen Dortmund 1875', text: 3½ }]
+    - 7
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'DSV  1854', url: '?mannschaft=2870', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=715&r=1#p2870x2874', title: 'gegen Horst-Emscher31', text: '1' }]
+    - [{ url: '?staffel=715&r=2#p2870x2862', title: 'gegen Walsum SC 72', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=715&r=5#p2870x2887', title: 'gegen SV Welper 1922', text: 2½ }]
+    - [{ url: '?staffel=715&r=4#p2870x3142', title: 'gegen SV Erftstadt', text: 2½ }]
+    - [{ url: '?staffel=715&r=3#p2870x3028', title: 'gegen Dortmund 1875', text: '3' }]
+    - 7
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Welper 1922', url: '?mannschaft=2887', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=715&r=2#p2887x2874', title: 'gegen Horst-Emscher31', text: 1½ }]
+    - [{ url: '?staffel=715&r=4#p2887x2862', title: 'gegen Walsum SC 72', text: '2' }]
+    - [{ url: '?staffel=715&r=5#p2887x2870', title: 'gegen DSV  1854', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=715&r=3#p2887x3142', title: 'gegen SV Erftstadt', text: '2' }]
+    - [{ url: '?staffel=715&r=1#p2887x3028', title: 'gegen Dortmund 1875', text: '2' }]
+    - 3
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Erftstadt', url: '?mannschaft=3142', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=715&r=5#p3142x2874', title: 'gegen Horst-Emscher31', text: '1' }]
+    - [{ url: '?staffel=715&r=1#p3142x2862', title: 'gegen Walsum SC 72', text: '0' }]
+    - [{ url: '?staffel=715&r=4#p3142x2870', title: 'gegen DSV  1854', text: 1½ }]
+    - [{ url: '?staffel=715&r=3#p3142x2887', title: 'gegen SV Welper 1922', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=715&r=2#p3142x3028', title: 'gegen Dortmund 1875', text: '2' }]
+    - 2
+    - 6½
+    - absteiger
+-
+    - '6.'
+    - { text: 'Dortmund 1875', url: '?mannschaft=3028', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=715&r=4#p3028x2874', title: 'gegen Horst-Emscher31', text: ½ }]
+    - [{ url: '?staffel=715&r=5#p3028x2862', title: 'gegen Walsum SC 72', text: ½ }]
+    - [{ url: '?staffel=715&r=3#p3028x2870', title: 'gegen DSV  1854', text: '1' }]
+    - [{ url: '?staffel=715&r=1#p3028x2887', title: 'gegen SV Welper 1922', text: '2' }]
+    - [{ url: '?staffel=715&r=2#p3028x3142', title: 'gegen SV Erftstadt', text: '2' }]
+    - xxx
+    - 2
+    - '6'
+    - absteiger

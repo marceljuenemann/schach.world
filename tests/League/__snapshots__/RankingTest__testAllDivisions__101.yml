@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=1293', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=514&r=3#p1293x1292', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=514&r=2#p1293x1291', title: 'gegen SV Lingen', text: 2½ }]
+    - [{ url: '?staffel=514&r=1#p1293x1289', title: 'gegen Nordhorn-Blanke', text: '4' }]
+    - 6
+    - 9½
+    - ''
+-
+    - '2.'
+    - { text: 'Hagener SV', url: '?mannschaft=1292', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=514&r=3#p1292x1293', title: 'gegen SG Oesede-Gmht.', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=514&r=1#p1292x1291', title: 'gegen SV Lingen', text: 2½ }]
+    - [{ url: '?staffel=514&r=2#p1292x1289', title: 'gegen Nordhorn-Blanke', text: '4' }]
+    - 4
+    - 7½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Lingen', url: '?mannschaft=1291', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=514&r=2#p1291x1293', title: 'gegen SG Oesede-Gmht.', text: 1½ }]
+    - [{ url: '?staffel=514&r=1#p1291x1292', title: 'gegen Hagener SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=514&r=3#p1291x1289', title: 'gegen Nordhorn-Blanke', text: '2' }]
+    - 1
+    - '5'
+    - ''
+-
+    - '4.'
+    - { text: Nordhorn-Blanke, url: '?mannschaft=1289', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=514&r=1#p1289x1293', title: 'gegen SG Oesede-Gmht.', text: '0' }]
+    - [{ url: '?staffel=514&r=2#p1289x1292', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=514&r=3#p1289x1291', title: 'gegen SV Lingen', text: '2' }]
+    - xxx
+    - 1
+    - '2'
+    - ''

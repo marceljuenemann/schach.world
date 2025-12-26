@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=2244', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=625&r=5#p2244x2245', title: 'gegen Post SV Uelzen 2', text: 3½ }]
+    - [{ url: '?staffel=625&r=1#p2244x2243', title: 'gegen SK Cuxhaven', text: 2½ }]
+    - [{ url: '?staffel=625&r=4#p2244x2238', title: 'gegen SC Turm Lüneburg', text: 2½ }]
+    - [{ url: '?staffel=625&r=8#p2244x2240', title: 'gegen SK Celle-Wester', text: 3½ }]
+    - [{ url: '?staffel=625&r=10#p2244x2242', title: 'gegen SV Wesel 2', text: '3' }]
+    - [{ url: '?staffel=625&r=7#p2244x2246', title: 'gegen SV Bad Bevensen', text: 1½ }]
+    - [{ url: '?staffel=625&r=9#p2244x2241', title: 'gegen SV Wesel', text: '4' }]
+    - [{ url: '?staffel=625&r=2#p2244x2237', title: 'gegen SK Rotenburg', text: 3½ }]
+    - [{ url: '?staffel=625&r=3#p2244x2239', title: 'gegen SC Turm Lüneburg 2', text: '4' }]
+    - 16
+    - '28'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=2245', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=625&r=5#p2245x2244', title: 'gegen Post SV Uelzen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=625&r=2#p2245x2243', title: 'gegen SK Cuxhaven', text: '1' }]
+    - [{ url: '?staffel=625&r=3#p2245x2238', title: 'gegen SC Turm Lüneburg', text: 2½ }]
+    - [{ url: '?staffel=625&r=7#p2245x2240', title: 'gegen SK Celle-Wester', text: '4' }]
+    - [{ url: '?staffel=625&r=9#p2245x2242', title: 'gegen SV Wesel 2', text: '4' }]
+    - [{ url: '?staffel=625&r=8#p2245x2246', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - [{ url: '?staffel=625&r=10#p2245x2241', title: 'gegen SV Wesel', text: '4' }]
+    - [{ url: '?staffel=625&r=1#p2245x2237', title: 'gegen SK Rotenburg', text: 2½ }]
+    - [{ url: '?staffel=625&r=4#p2245x2239', title: 'gegen SC Turm Lüneburg 2', text: '4' }]
+    - 14
+    - 25½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Cuxhaven', url: '?mannschaft=2243', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=625&r=1#p2243x2244', title: 'gegen Post SV Uelzen', text: 1½ }]
+    - [{ url: '?staffel=625&r=2#p2243x2245', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=625&r=9#p2243x2238', title: 'gegen SC Turm Lüneburg', text: ½ }]
+    - [{ url: '?staffel=625&r=3#p2243x2240', title: 'gegen SK Celle-Wester', text: '3' }]
+    - [{ url: '?staffel=625&r=6#p2243x2242', title: 'gegen SV Wesel 2', text: 3½ }]
+    - [{ url: '?staffel=625&r=4#p2243x2246', title: 'gegen SV Bad Bevensen', text: 2½ }]
+    - [{ url: '?staffel=625&r=5#p2243x2241', title: 'gegen SV Wesel', text: '3' }]
+    - [{ url: '?staffel=625&r=7#p2243x2237', title: 'gegen SK Rotenburg', text: '3' }]
+    - [{ url: '?staffel=625&r=10#p2243x2239', title: 'gegen SC Turm Lüneburg 2', text: '4' }]
+    - 14
+    - '24'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=2238', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=625&r=4#p2238x2244', title: 'gegen Post SV Uelzen', text: 1½ }]
+    - [{ url: '?staffel=625&r=3#p2238x2245', title: 'gegen Post SV Uelzen 2', text: 1½ }]
+    - [{ url: '?staffel=625&r=9#p2238x2243', title: 'gegen SK Cuxhaven', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=625&r=5#p2238x2240', title: 'gegen SK Celle-Wester', text: '4' }]
+    - [{ url: '?staffel=625&r=7#p2238x2242', title: 'gegen SV Wesel 2', text: '2' }]
+    - [{ url: '?staffel=625&r=6#p2238x2246', title: 'gegen SV Bad Bevensen', text: '4' }]
+    - [{ url: '?staffel=625&r=8#p2238x2241', title: 'gegen SV Wesel', text: '3' }]
+    - [{ url: '?staffel=625&r=10#p2238x2237', title: 'gegen SK Rotenburg', text: 3½ }]
+    - [{ url: '?staffel=625&r=1#p2238x2239', title: 'gegen SC Turm Lüneburg 2', text: '3' }]
+    - 13
+    - '26'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Celle-Wester', url: '?mannschaft=2240', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=625&r=8#p2240x2244', title: 'gegen Post SV Uelzen', text: ½ }]
+    - [{ url: '?staffel=625&r=7#p2240x2245', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - [{ url: '?staffel=625&r=3#p2240x2243', title: 'gegen SK Cuxhaven', text: '1' }]
+    - [{ url: '?staffel=625&r=5#p2240x2238', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=625&r=2#p2240x2242', title: 'gegen SV Wesel 2', text: '3' }]
+    - [{ url: '?staffel=625&r=9#p2240x2246', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - [{ url: '?staffel=625&r=1#p2240x2241', title: 'gegen SV Wesel', text: '4' }]
+    - [{ url: '?staffel=625&r=4#p2240x2237', title: 'gegen SK Rotenburg', text: '4' }]
+    - [{ url: '?staffel=625&r=6#p2240x2239', title: 'gegen SC Turm Lüneburg 2', text: '4' }]
+    - 10
+    - 19½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Wesel 2', url: '?mannschaft=2242', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=625&r=10#p2242x2244', title: 'gegen Post SV Uelzen', text: '1' }]
+    - [{ url: '?staffel=625&r=9#p2242x2245', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - [{ url: '?staffel=625&r=6#p2242x2243', title: 'gegen SK Cuxhaven', text: ½ }]
+    - [{ url: '?staffel=625&r=7#p2242x2238', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - [{ url: '?staffel=625&r=2#p2242x2240', title: 'gegen SK Celle-Wester', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=625&r=1#p2242x2246', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=625&r=3#p2242x2241', title: 'gegen SV Wesel', text: 2½ }]
+    - [{ url: '?staffel=625&r=5#p2242x2237', title: 'gegen SK Rotenburg', text: '3' }]
+    - [{ url: '?staffel=625&r=8#p2242x2239', title: 'gegen SC Turm Lüneburg 2', text: '4' }]
+    - 8
+    - '16'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=2246', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=625&r=7#p2246x2244', title: 'gegen Post SV Uelzen', text: 2½ }]
+    - [{ url: '?staffel=625&r=8#p2246x2245', title: 'gegen Post SV Uelzen 2', text: '1' }]
+    - [{ url: '?staffel=625&r=4#p2246x2243', title: 'gegen SK Cuxhaven', text: 1½ }]
+    - [{ url: '?staffel=625&r=6#p2246x2238', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=625&r=9#p2246x2240', title: 'gegen SK Celle-Wester', text: '1' }]
+    - [{ url: '?staffel=625&r=1#p2246x2242', title: 'gegen SV Wesel 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=625&r=2#p2246x2241', title: 'gegen SV Wesel', text: '2' }]
+    - [{ url: '?staffel=625&r=3#p2246x2237', title: 'gegen SK Rotenburg', text: '4' }]
+    - [{ url: '?staffel=625&r=5#p2246x2239', title: 'gegen SC Turm Lüneburg 2', text: '2' }]
+    - 7
+    - '16'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Wesel', url: '?mannschaft=2241', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=625&r=9#p2241x2244', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=625&r=10#p2241x2245', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - [{ url: '?staffel=625&r=5#p2241x2243', title: 'gegen SK Cuxhaven', text: '1' }]
+    - [{ url: '?staffel=625&r=8#p2241x2238', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - [{ url: '?staffel=625&r=1#p2241x2240', title: 'gegen SK Celle-Wester', text: '0' }]
+    - [{ url: '?staffel=625&r=3#p2241x2242', title: 'gegen SV Wesel 2', text: 1½ }]
+    - [{ url: '?staffel=625&r=2#p2241x2246', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=625&r=6#p2241x2237', title: 'gegen SK Rotenburg', text: '4' }]
+    - [{ url: '?staffel=625&r=7#p2241x2239', title: 'gegen SC Turm Lüneburg 2', text: '3' }]
+    - 5
+    - 12½
+    - ''
+-
+    - '9.'
+    - { text: 'SK Rotenburg', url: '?mannschaft=2237', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=625&r=2#p2237x2244', title: 'gegen Post SV Uelzen', text: ½ }]
+    - [{ url: '?staffel=625&r=1#p2237x2245', title: 'gegen Post SV Uelzen 2', text: 1½ }]
+    - [{ url: '?staffel=625&r=7#p2237x2243', title: 'gegen SK Cuxhaven', text: '1' }]
+    - [{ url: '?staffel=625&r=10#p2237x2238', title: 'gegen SC Turm Lüneburg', text: ½ }]
+    - [{ url: '?staffel=625&r=4#p2237x2240', title: 'gegen SK Celle-Wester', text: '0' }]
+    - [{ url: '?staffel=625&r=5#p2237x2242', title: 'gegen SV Wesel 2', text: '1' }]
+    - [{ url: '?staffel=625&r=3#p2237x2246', title: 'gegen SV Bad Bevensen', text: '0' }]
+    - [{ url: '?staffel=625&r=6#p2237x2241', title: 'gegen SV Wesel', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=625&r=9#p2237x2239', title: 'gegen SC Turm Lüneburg 2', text: 2½ }]
+    - 2
+    - '7'
+    - ''
+-
+    - '10.'
+    - { text: 'SC Turm Lüneburg 2', url: '?mannschaft=2239', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=625&r=3#p2239x2244', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=625&r=4#p2239x2245', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - [{ url: '?staffel=625&r=10#p2239x2243', title: 'gegen SK Cuxhaven', text: '0' }]
+    - [{ url: '?staffel=625&r=1#p2239x2238', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - [{ url: '?staffel=625&r=6#p2239x2240', title: 'gegen SK Celle-Wester', text: '0' }]
+    - [{ url: '?staffel=625&r=8#p2239x2242', title: 'gegen SV Wesel 2', text: '0' }]
+    - [{ url: '?staffel=625&r=5#p2239x2246', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=625&r=7#p2239x2241', title: 'gegen SV Wesel', text: '1' }]
+    - [{ url: '?staffel=625&r=9#p2239x2237', title: 'gegen SK Rotenburg', text: 1½ }]
+    - xxx
+    - 1
+    - 5½
+    - ''

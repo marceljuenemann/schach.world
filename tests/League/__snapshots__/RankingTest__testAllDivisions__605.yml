@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Merseburg', url: '?mannschaft=5612', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1347&r=2#p5612x5787', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=1347&r=4#p5612x5704', title: 'gegen USV Halle', text: '3' }]
+    - [{ url: '?staffel=1347&r=5#p5612x5620', title: 'gegen Schachzwerge Ma', text: 3½ }]
+    - [{ url: '?staffel=1347&r=8#p5612x5748', title: 'gegen Meuselwitzer SV', text: '3' }]
+    - [{ url: '?staffel=1347&r=7#p5612x5605', title: 'gegen Leipzig-Lindenau', text: 3½ }]
+    - 10
+    - '16'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=5787', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1347&r=2#p5787x5612', title: 'gegen SV Merseburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1347&r=5#p5787x5704', title: 'gegen USV Halle', text: '2' }]
+    - [{ url: '?staffel=1347&r=8#p5787x5620', title: 'gegen Schachzwerge Ma', text: '4' }]
+    - [{ url: '?staffel=1347&r=3#p5787x5748', title: 'gegen Meuselwitzer SV', text: '4' }]
+    - [{ url: '?staffel=1347&r=4#p5787x5605', title: 'gegen Leipzig-Lindenau', text: '4' }]
+    - 7
+    - '15'
+    - ''
+-
+    - '3.'
+    - { text: 'USV Halle', url: '?mannschaft=5704', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1347&r=4#p5704x5612', title: 'gegen SV Merseburg', text: '1' }]
+    - [{ url: '?staffel=1347&r=5#p5704x5787', title: 'gegen SK Lehrte 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1347&r=2#p5704x5620', title: 'gegen Schachzwerge Ma', text: 3½ }]
+    - [{ url: '?staffel=1347&r=7#p5704x5748', title: 'gegen Meuselwitzer SV', text: 2½ }]
+    - [{ url: '?staffel=1347&r=8#p5704x5605', title: 'gegen Leipzig-Lindenau', text: '4' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '4.'
+    - { text: 'Schachzwerge Ma', url: '?mannschaft=5620', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1347&r=5#p5620x5612', title: 'gegen SV Merseburg', text: ½ }]
+    - [{ url: '?staffel=1347&r=8#p5620x5787', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1347&r=2#p5620x5704', title: 'gegen USV Halle', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1347&r=4#p5620x5748', title: 'gegen Meuselwitzer SV', text: '3' }]
+    - [{ url: '?staffel=1347&r=3#p5620x5605', title: 'gegen Leipzig-Lindenau', text: '3' }]
+    - 4
+    - '7'
+    - ''
+-
+    - '5.'
+    - { text: 'Meuselwitzer SV', url: '?mannschaft=5748', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1347&r=8#p5748x5612', title: 'gegen SV Merseburg', text: '1' }]
+    - [{ url: '?staffel=1347&r=3#p5748x5787', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1347&r=7#p5748x5704', title: 'gegen USV Halle', text: 1½ }]
+    - [{ url: '?staffel=1347&r=4#p5748x5620', title: 'gegen Schachzwerge Ma', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1347&r=2#p5748x5605', title: 'gegen Leipzig-Lindenau', text: '4' }]
+    - 2
+    - 7½
+    - absteiger
+-
+    - '6.'
+    - { text: Leipzig-Lindenau, url: '?mannschaft=5605', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1347&r=7#p5605x5612', title: 'gegen SV Merseburg', text: ½ }]
+    - [{ url: '?staffel=1347&r=4#p5605x5787', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1347&r=8#p5605x5704', title: 'gegen USV Halle', text: '0' }]
+    - [{ url: '?staffel=1347&r=3#p5605x5620', title: 'gegen Schachzwerge Ma', text: '1' }]
+    - [{ url: '?staffel=1347&r=2#p5605x5748', title: 'gegen Meuselwitzer SV', text: '0' }]
+    - xxx
+    - 0
+    - 1½
+    - absteiger

@@ -1,0 +1,23 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Duderstadt 2', url: '?mannschaft=8604', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1857&r=1#p8604x8597', title: 'gegen SK Gronau 2', text: 1½ }, { url: '?staffel=1857&r=2#p8604x8597', title: 'gegen SK Gronau 2', text: '4' }]
+    - 2
+    - 5½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Gronau 2', url: '?mannschaft=8597', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1857&r=1#p8597x8604', title: 'gegen SK Duderstadt 2', text: 2½ }, { url: '?staffel=1857&r=2#p8597x8604', title: 'gegen SK Duderstadt 2', text: '0' }]
+    - xxx
+    - 2
+    - 2½
+    - aufsteiger

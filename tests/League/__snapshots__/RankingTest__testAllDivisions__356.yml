@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Eystruper SK', url: '?mannschaft=3376', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=797&r=6#p3376x3462', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=797&r=9#p3376x3593', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - [{ url: '?staffel=797&r=3#p3376x3358', title: 'gegen SC Stadthagen', text: '2' }]
+    - [{ url: '?staffel=797&r=1#p3376x3363', title: 'gegen WB Eilenriede 2', text: '6' }]
+    - [{ url: '?staffel=797&r=5#p3376x3347', title: 'gegen Barsinghausen 2', text: 4½ }]
+    - [{ url: '?staffel=797&r=8#p3376x3411', title: 'gegen SK Neustadt 2', text: '7' }]
+    - [{ url: '?staffel=797&r=7#p3376x3586', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=797&r=4#p3376x3454', title: 'gegen SG Garbsen/Marienw 2', text: '6' }]
+    - 13
+    - 38½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=3462', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=797&r=6#p3462x3376', title: 'gegen Eystruper SK', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=797&r=5#p3462x3593', title: 'gegen SK Rinteln 2', text: '5' }]
+    - [{ url: '?staffel=797&r=8#p3462x3358', title: 'gegen SC Stadthagen', text: '5' }]
+    - [{ url: '?staffel=797&r=2#p3462x3363', title: 'gegen WB Eilenriede 2', text: 3½ }]
+    - [{ url: '?staffel=797&r=1#p3462x3347', title: 'gegen Barsinghausen 2', text: '7' }]
+    - [{ url: '?staffel=797&r=4#p3462x3411', title: 'gegen SK Neustadt 2', text: '7' }]
+    - [{ url: '?staffel=797&r=3#p3462x3586', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=797&r=9#p3462x3454', title: 'gegen SG Garbsen/Marienw 2', text: '7' }]
+    - 11
+    - '42'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=3593', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=797&r=9#p3593x3376', title: 'gegen Eystruper SK', text: 3½ }]
+    - [{ url: '?staffel=797&r=5#p3593x3462', title: 'gegen SK Wennigsen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=797&r=2#p3593x3358', title: 'gegen SC Stadthagen', text: ½ }]
+    - [{ url: '?staffel=797&r=8#p3593x3363', title: 'gegen WB Eilenriede 2', text: '7' }]
+    - [{ url: '?staffel=797&r=4#p3593x3347', title: 'gegen Barsinghausen 2', text: '5' }]
+    - [{ url: '?staffel=797&r=7#p3593x3411', title: 'gegen SK Neustadt 2', text: 5½ }]
+    - [{ url: '?staffel=797&r=6#p3593x3586', title: 'gegen SG Eldagsen/BM', text: '5' }]
+    - [{ url: '?staffel=797&r=3#p3593x3454', title: 'gegen SG Garbsen/Marienw 2', text: 5½ }]
+    - 10
+    - '35'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=3358', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=797&r=3#p3358x3376', title: 'gegen Eystruper SK', text: '6' }]
+    - [{ url: '?staffel=797&r=8#p3358x3462', title: 'gegen SK Wennigsen', text: '3' }]
+    - [{ url: '?staffel=797&r=2#p3358x3593', title: 'gegen SK Rinteln 2', text: 7½ }]
+    - xxx
+    - [{ url: '?staffel=797&r=5#p3358x3363', title: 'gegen WB Eilenriede 2', text: '5' }]
+    - [{ url: '?staffel=797&r=7#p3358x3347', title: 'gegen Barsinghausen 2', text: '2' }]
+    - [{ url: '?staffel=797&r=1#p3358x3411', title: 'gegen SK Neustadt 2', text: '0' }]
+    - [{ url: '?staffel=797&r=9#p3358x3586', title: 'gegen SG Eldagsen/BM', text: '5' }]
+    - [{ url: '?staffel=797&r=6#p3358x3454', title: 'gegen SG Garbsen/Marienw 2', text: '4' }]
+    - 9
+    - 32½
+    - ''
+-
+    - '5.'
+    - { text: 'WB Eilenriede 2', url: '?mannschaft=3363', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=797&r=1#p3363x3376', title: 'gegen Eystruper SK', text: '2' }]
+    - [{ url: '?staffel=797&r=2#p3363x3462', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=797&r=8#p3363x3593', title: 'gegen SK Rinteln 2', text: '1' }]
+    - [{ url: '?staffel=797&r=5#p3363x3358', title: 'gegen SC Stadthagen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=797&r=9#p3363x3347', title: 'gegen Barsinghausen 2', text: 4½ }]
+    - [{ url: '?staffel=797&r=6#p3363x3411', title: 'gegen SK Neustadt 2', text: 5½ }]
+    - [{ url: '?staffel=797&r=4#p3363x3586', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=797&r=7#p3363x3454', title: 'gegen SG Garbsen/Marienw 2', text: 6½ }]
+    - 9
+    - '31'
+    - ''
+-
+    - '6.'
+    - { text: 'Barsinghausen 2', url: '?mannschaft=3347', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=797&r=5#p3347x3376', title: 'gegen Eystruper SK', text: 3½ }]
+    - [{ url: '?staffel=797&r=1#p3347x3462', title: 'gegen SK Wennigsen', text: '1' }]
+    - [{ url: '?staffel=797&r=4#p3347x3593', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=797&r=7#p3347x3358', title: 'gegen SC Stadthagen', text: '6' }]
+    - [{ url: '?staffel=797&r=9#p3347x3363', title: 'gegen WB Eilenriede 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=797&r=3#p3347x3411', title: 'gegen SK Neustadt 2', text: '4' }]
+    - [{ url: '?staffel=797&r=2#p3347x3586', title: 'gegen SG Eldagsen/BM', text: '6' }]
+    - [{ url: '?staffel=797&r=8#p3347x3454', title: 'gegen SG Garbsen/Marienw 2', text: 5½ }]
+    - 7
+    - 32½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Neustadt 2', url: '?mannschaft=3411', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=797&r=8#p3411x3376', title: 'gegen Eystruper SK', text: '1' }]
+    - [{ url: '?staffel=797&r=4#p3411x3462', title: 'gegen SK Wennigsen', text: '1' }]
+    - [{ url: '?staffel=797&r=7#p3411x3593', title: 'gegen SK Rinteln 2', text: 2½ }]
+    - [{ url: '?staffel=797&r=1#p3411x3358', title: 'gegen SC Stadthagen', text: '8' }]
+    - [{ url: '?staffel=797&r=6#p3411x3363', title: 'gegen WB Eilenriede 2', text: 1½ }]
+    - [{ url: '?staffel=797&r=3#p3411x3347', title: 'gegen Barsinghausen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=797&r=5#p3411x3586', title: 'gegen SG Eldagsen/BM', text: 5½ }]
+    - [{ url: '?staffel=797&r=2#p3411x3454', title: 'gegen SG Garbsen/Marienw 2', text: 4½ }]
+    - 7
+    - '28'
+    - ''
+-
+    - '8.'
+    - { text: 'SG Eldagsen/BM', url: '?mannschaft=3586', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=797&r=7#p3586x3376', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=797&r=3#p3586x3462', title: 'gegen SK Wennigsen', text: '4' }]
+    - [{ url: '?staffel=797&r=6#p3586x3593', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=797&r=9#p3586x3358', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=797&r=4#p3586x3363', title: 'gegen WB Eilenriede 2', text: '4' }]
+    - [{ url: '?staffel=797&r=2#p3586x3347', title: 'gegen Barsinghausen 2', text: '2' }]
+    - [{ url: '?staffel=797&r=5#p3586x3411', title: 'gegen SK Neustadt 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=797&r=1#p3586x3454', title: 'gegen SG Garbsen/Marienw 2', text: '4' }]
+    - 4
+    - 26½
+    - ''
+-
+    - '9.'
+    - { text: 'SG Garbsen/Marienw 2', url: '?mannschaft=3454', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=797&r=4#p3454x3376', title: 'gegen Eystruper SK', text: '2' }]
+    - [{ url: '?staffel=797&r=9#p3454x3462', title: 'gegen SK Wennigsen', text: '1' }]
+    - [{ url: '?staffel=797&r=3#p3454x3593', title: 'gegen SK Rinteln 2', text: 2½ }]
+    - [{ url: '?staffel=797&r=6#p3454x3358', title: 'gegen SC Stadthagen', text: '4' }]
+    - [{ url: '?staffel=797&r=7#p3454x3363', title: 'gegen WB Eilenriede 2', text: 1½ }]
+    - [{ url: '?staffel=797&r=8#p3454x3347', title: 'gegen Barsinghausen 2', text: 2½ }]
+    - [{ url: '?staffel=797&r=2#p3454x3411', title: 'gegen SK Neustadt 2', text: 3½ }]
+    - [{ url: '?staffel=797&r=1#p3454x3586', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - xxx
+    - 2
+    - '21'
+    - ''

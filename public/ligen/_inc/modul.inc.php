@@ -1,4 +1,4 @@
-<?
+<?php
 /* URL parsen
  * 
  * Dieses Skript entscheidet an Hand der übergebenen Parameter ($_GET)

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Tempo Göttingen', url: '?mannschaft=7918', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1793&r=8#p7918x7909', title: 'gegen SV Cai. Wolfenbüttel', text: '5' }]
+    - [{ url: '?staffel=1793&r=3#p7918x7908', title: 'gegen Peiner SV', text: '5' }]
+    - [{ url: '?staffel=1793&r=5#p7918x7920', title: 'gegen SC BS Gliesmarode 2', text: '5' }]
+    - [{ url: '?staffel=1793&r=7#p7918x7899', title: 'gegen Hamelner SV 2', text: '4' }]
+    - [{ url: '?staffel=1793&r=2#p7918x7911', title: 'gegen SC Bad Salzdetfurth', text: 4½ }]
+    - [{ url: '?staffel=1793&r=6#p7918x7912', title: 'gegen SVG Salzgitter e. V.', text: '5' }]
+    - [{ url: '?staffel=1793&r=1#p7918x7903', title: 'gegen Hildesheimer SV 2', text: 4½ }]
+    - [{ url: '?staffel=1793&r=4#p7918x7910', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '5' }]
+    - [{ url: '?staffel=1793&r=9#p7918x7887', title: 'gegen ESV Göttingen 2', text: '7' }]
+    - 17
+    - '45'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Cai. Wolfenbüttel', url: '?mannschaft=7909', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1793&r=8#p7909x7918', title: 'gegen Tempo Göttingen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1793&r=4#p7909x7908', title: 'gegen Peiner SV', text: 4½ }]
+    - [{ url: '?staffel=1793&r=6#p7909x7920', title: 'gegen SC BS Gliesmarode 2', text: 4½ }]
+    - [{ url: '?staffel=1793&r=1#p7909x7899', title: 'gegen Hamelner SV 2', text: 5½ }]
+    - [{ url: '?staffel=1793&r=9#p7909x7911', title: 'gegen SC Bad Salzdetfurth', text: 4½ }]
+    - [{ url: '?staffel=1793&r=2#p7909x7912', title: 'gegen SVG Salzgitter e. V.', text: '5' }]
+    - [{ url: '?staffel=1793&r=3#p7909x7903', title: 'gegen Hildesheimer SV 2', text: '7' }]
+    - [{ url: '?staffel=1793&r=7#p7909x7910', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '5' }]
+    - [{ url: '?staffel=1793&r=5#p7909x7887', title: 'gegen ESV Göttingen 2', text: 6½ }]
+    - 16
+    - 45½
+    - ''
+-
+    - '3.'
+    - { text: 'Peiner SV', url: '?mannschaft=7908', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1793&r=3#p7908x7918', title: 'gegen Tempo Göttingen', text: '3' }]
+    - [{ url: '?staffel=1793&r=4#p7908x7909', title: 'gegen SV Cai. Wolfenbüttel', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1793&r=2#p7908x7920', title: 'gegen SC BS Gliesmarode 2', text: 4½ }]
+    - [{ url: '?staffel=1793&r=9#p7908x7899', title: 'gegen Hamelner SV 2', text: '8' }]
+    - [{ url: '?staffel=1793&r=7#p7908x7911', title: 'gegen SC Bad Salzdetfurth', text: 5½ }]
+    - [{ url: '?staffel=1793&r=8#p7908x7912', title: 'gegen SVG Salzgitter e. V.', text: '6' }]
+    - [{ url: '?staffel=1793&r=5#p7908x7903', title: 'gegen Hildesheimer SV 2', text: 4½ }]
+    - [{ url: '?staffel=1793&r=6#p7908x7910', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '4' }]
+    - [{ url: '?staffel=1793&r=1#p7908x7887', title: 'gegen ESV Göttingen 2', text: '5' }]
+    - 13
+    - '44'
+    - ''
+-
+    - '4.'
+    - { text: 'SC BS Gliesmarode 2', url: '?mannschaft=7920', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1793&r=5#p7920x7918', title: 'gegen Tempo Göttingen', text: '3' }]
+    - [{ url: '?staffel=1793&r=6#p7920x7909', title: 'gegen SV Cai. Wolfenbüttel', text: 3½ }]
+    - [{ url: '?staffel=1793&r=2#p7920x7908', title: 'gegen Peiner SV', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1793&r=8#p7920x7899', title: 'gegen Hamelner SV 2', text: '1' }]
+    - [{ url: '?staffel=1793&r=1#p7920x7911', title: 'gegen SC Bad Salzdetfurth', text: 5½ }]
+    - [{ url: '?staffel=1793&r=4#p7920x7912', title: 'gegen SVG Salzgitter e. V.', text: 5½ }]
+    - [{ url: '?staffel=1793&r=7#p7920x7903', title: 'gegen Hildesheimer SV 2', text: 4½ }]
+    - [{ url: '?staffel=1793&r=9#p7920x7910', title: 'gegen SG Gifhorn-Wolfsburg 2', text: 5½ }]
+    - [{ url: '?staffel=1793&r=3#p7920x7887', title: 'gegen ESV Göttingen 2', text: 4½ }]
+    - 10
+    - 36½
+    - ''
+-
+    - '5.'
+    - { text: 'Hamelner SV 2', url: '?mannschaft=7899', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1793&r=7#p7899x7918', title: 'gegen Tempo Göttingen', text: '4' }]
+    - [{ url: '?staffel=1793&r=1#p7899x7909', title: 'gegen SV Cai. Wolfenbüttel', text: 2½ }]
+    - [{ url: '?staffel=1793&r=9#p7899x7908', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1793&r=8#p7899x7920', title: 'gegen SC BS Gliesmarode 2', text: '7' }]
+    - xxx
+    - [{ url: '?staffel=1793&r=4#p7899x7911', title: 'gegen SC Bad Salzdetfurth', text: '2' }]
+    - [{ url: '?staffel=1793&r=3#p7899x7912', title: 'gegen SVG Salzgitter e. V.', text: '5' }]
+    - [{ url: '?staffel=1793&r=2#p7899x7903', title: 'gegen Hildesheimer SV 2', text: '5' }]
+    - [{ url: '?staffel=1793&r=5#p7899x7910', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '4' }]
+    - [{ url: '?staffel=1793&r=6#p7899x7887', title: 'gegen ESV Göttingen 2', text: '3' }]
+    - 8
+    - 32½
+    - ''
+-
+    - '6.'
+    - { text: 'SC Bad Salzdetfurth', url: '?mannschaft=7911', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1793&r=2#p7911x7918', title: 'gegen Tempo Göttingen', text: 3½ }]
+    - [{ url: '?staffel=1793&r=9#p7911x7909', title: 'gegen SV Cai. Wolfenbüttel', text: 3½ }]
+    - [{ url: '?staffel=1793&r=7#p7911x7908', title: 'gegen Peiner SV', text: 2½ }]
+    - [{ url: '?staffel=1793&r=1#p7911x7920', title: 'gegen SC BS Gliesmarode 2', text: 2½ }]
+    - [{ url: '?staffel=1793&r=4#p7911x7899', title: 'gegen Hamelner SV 2', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1793&r=5#p7911x7912', title: 'gegen SVG Salzgitter e. V.', text: 4½ }]
+    - [{ url: '?staffel=1793&r=6#p7911x7903', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1793&r=3#p7911x7910', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '3' }]
+    - [{ url: '?staffel=1793&r=8#p7911x7887', title: 'gegen ESV Göttingen 2', text: '6' }]
+    - 7
+    - 35½
+    - ''
+-
+    - '7.'
+    - { text: 'SVG Salzgitter e. V.', url: '?mannschaft=7912', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1793&r=6#p7912x7918', title: 'gegen Tempo Göttingen', text: '3' }]
+    - [{ url: '?staffel=1793&r=2#p7912x7909', title: 'gegen SV Cai. Wolfenbüttel', text: '3' }]
+    - [{ url: '?staffel=1793&r=8#p7912x7908', title: 'gegen Peiner SV', text: '2' }]
+    - [{ url: '?staffel=1793&r=4#p7912x7920', title: 'gegen SC BS Gliesmarode 2', text: 2½ }]
+    - [{ url: '?staffel=1793&r=3#p7912x7899', title: 'gegen Hamelner SV 2', text: '3' }]
+    - [{ url: '?staffel=1793&r=5#p7912x7911', title: 'gegen SC Bad Salzdetfurth', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1793&r=9#p7912x7903', title: 'gegen Hildesheimer SV 2', text: '5' }]
+    - [{ url: '?staffel=1793&r=1#p7912x7910', title: 'gegen SG Gifhorn-Wolfsburg 2', text: 5½ }]
+    - [{ url: '?staffel=1793&r=7#p7912x7887', title: 'gegen ESV Göttingen 2', text: '5' }]
+    - 6
+    - 32½
+    - ''
+-
+    - '8.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=7903', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1793&r=1#p7903x7918', title: 'gegen Tempo Göttingen', text: 3½ }]
+    - [{ url: '?staffel=1793&r=3#p7903x7909', title: 'gegen SV Cai. Wolfenbüttel', text: '1' }]
+    - [{ url: '?staffel=1793&r=5#p7903x7908', title: 'gegen Peiner SV', text: 3½ }]
+    - [{ url: '?staffel=1793&r=7#p7903x7920', title: 'gegen SC BS Gliesmarode 2', text: 3½ }]
+    - [{ url: '?staffel=1793&r=2#p7903x7899', title: 'gegen Hamelner SV 2', text: '3' }]
+    - [{ url: '?staffel=1793&r=6#p7903x7911', title: 'gegen SC Bad Salzdetfurth', text: '4' }]
+    - [{ url: '?staffel=1793&r=9#p7903x7912', title: 'gegen SVG Salzgitter e. V.', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1793&r=8#p7903x7910', title: 'gegen SG Gifhorn-Wolfsburg 2', text: 4½ }]
+    - [{ url: '?staffel=1793&r=4#p7903x7887', title: 'gegen ESV Göttingen 2', text: 6½ }]
+    - 5
+    - 32½
+    - ''
+-
+    - '9.'
+    - { text: 'SG Gifhorn-Wolfsburg 2', url: '?mannschaft=7910', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1793&r=4#p7910x7918', title: 'gegen Tempo Göttingen', text: '3' }]
+    - [{ url: '?staffel=1793&r=7#p7910x7909', title: 'gegen SV Cai. Wolfenbüttel', text: '3' }]
+    - [{ url: '?staffel=1793&r=6#p7910x7908', title: 'gegen Peiner SV', text: '4' }]
+    - [{ url: '?staffel=1793&r=9#p7910x7920', title: 'gegen SC BS Gliesmarode 2', text: 2½ }]
+    - [{ url: '?staffel=1793&r=5#p7910x7899', title: 'gegen Hamelner SV 2', text: '4' }]
+    - [{ url: '?staffel=1793&r=3#p7910x7911', title: 'gegen SC Bad Salzdetfurth', text: '5' }]
+    - [{ url: '?staffel=1793&r=1#p7910x7912', title: 'gegen SVG Salzgitter e. V.', text: 2½ }]
+    - [{ url: '?staffel=1793&r=8#p7910x7903', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1793&r=2#p7910x7887', title: 'gegen ESV Göttingen 2', text: 3½ }]
+    - 4
+    - '31'
+    - absteigerRelegation
+-
+    - '10.'
+    - { text: 'ESV Göttingen 2', url: '?mannschaft=7887', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1793&r=9#p7887x7918', title: 'gegen Tempo Göttingen', text: '1' }]
+    - [{ url: '?staffel=1793&r=5#p7887x7909', title: 'gegen SV Cai. Wolfenbüttel', text: 1½ }]
+    - [{ url: '?staffel=1793&r=1#p7887x7908', title: 'gegen Peiner SV', text: '3' }]
+    - [{ url: '?staffel=1793&r=3#p7887x7920', title: 'gegen SC BS Gliesmarode 2', text: 3½ }]
+    - [{ url: '?staffel=1793&r=6#p7887x7899', title: 'gegen Hamelner SV 2', text: '5' }]
+    - [{ url: '?staffel=1793&r=8#p7887x7911', title: 'gegen SC Bad Salzdetfurth', text: '2' }]
+    - [{ url: '?staffel=1793&r=7#p7887x7912', title: 'gegen SVG Salzgitter e. V.', text: '3' }]
+    - [{ url: '?staffel=1793&r=4#p7887x7903', title: 'gegen Hildesheimer SV 2', text: 1½ }]
+    - [{ url: '?staffel=1793&r=2#p7887x7910', title: 'gegen SG Gifhorn-Wolfsburg 2', text: 4½ }]
+    - xxx
+    - 4
+    - '25'
+    - absteiger

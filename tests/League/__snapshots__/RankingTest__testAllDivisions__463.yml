@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=3922', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=940&r=7#p3922x4297', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=940&r=3#p3922x4224', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=940&r=2#p3922x4106', title: 'gegen Stader SV 4', text: 2½ }]
+    - [{ url: '?staffel=940&r=1#p3922x4105', title: 'gegen Stader SV 3', text: '2' }]
+    - [{ url: '?staffel=940&r=5#p3922x4098', title: 'gegen SK Hermannsburg', text: 2½ }]
+    - [{ url: '?staffel=940&r=4#p3922x4099', title: 'gegen SK Hermannsburg 2', text: '3' }]
+    - 11
+    - '17'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=4297', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=940&r=7#p4297x3922', title: 'gegen SV Bad Bevensen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=940&r=6#p4297x4224', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - [{ url: '?staffel=940&r=4#p4297x4106', title: 'gegen Stader SV 4', text: 2½ }]
+    - [{ url: '?staffel=940&r=5#p4297x4105', title: 'gegen Stader SV 3', text: 2½ }]
+    - [{ url: '?staffel=940&r=1#p4297x4098', title: 'gegen SK Hermannsburg', text: 3½ }]
+    - [{ url: '?staffel=940&r=2#p4297x4099', title: 'gegen SK Hermannsburg 2', text: '3' }]
+    - 9
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=4224', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=940&r=3#p4224x3922', title: 'gegen SV Bad Bevensen', text: '1' }]
+    - [{ url: '?staffel=940&r=6#p4224x4297', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=940&r=1#p4224x4106', title: 'gegen Stader SV 4', text: 2½ }]
+    - [{ url: '?staffel=940&r=2#p4224x4105', title: 'gegen Stader SV 3', text: '1' }]
+    - [{ url: '?staffel=940&r=4#p4224x4098', title: 'gegen SK Hermannsburg', text: 3½ }]
+    - [{ url: '?staffel=940&r=5#p4224x4099', title: 'gegen SK Hermannsburg 2', text: '4' }]
+    - 7
+    - '14'
+    - ''
+-
+    - '4.'
+    - { text: 'Stader SV 4', url: '?mannschaft=4106', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=940&r=2#p4106x3922', title: 'gegen SV Bad Bevensen', text: 1½ }]
+    - [{ url: '?staffel=940&r=4#p4106x4297', title: 'gegen Post SV Uelzen 2', text: 1½ }]
+    - [{ url: '?staffel=940&r=1#p4106x4224', title: 'gegen SC Turm Lüneburg', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=940&r=3#p4106x4105', title: 'gegen Stader SV 3', text: '3' }]
+    - [{ url: '?staffel=940&r=7#p4106x4098', title: 'gegen SK Hermannsburg', text: '3' }]
+    - [{ url: '?staffel=940&r=6#p4106x4099', title: 'gegen SK Hermannsburg 2', text: '4' }]
+    - 6
+    - 14½
+    - ''
+-
+    - '5.'
+    - { text: 'Stader SV 3', url: '?mannschaft=4105', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=940&r=1#p4105x3922', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=940&r=5#p4105x4297', title: 'gegen Post SV Uelzen 2', text: 1½ }]
+    - [{ url: '?staffel=940&r=2#p4105x4224', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=940&r=3#p4105x4106', title: 'gegen Stader SV 4', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=940&r=6#p4105x4098', title: 'gegen SK Hermannsburg', text: '2' }]
+    - [{ url: '?staffel=940&r=7#p4105x4099', title: 'gegen SK Hermannsburg 2', text: 1½ }]
+    - 4
+    - '11'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Hermannsburg', url: '?mannschaft=4098', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=940&r=5#p4098x3922', title: 'gegen SV Bad Bevensen', text: 1½ }]
+    - [{ url: '?staffel=940&r=1#p4098x4297', title: 'gegen Post SV Uelzen 2', text: ½ }]
+    - [{ url: '?staffel=940&r=4#p4098x4224', title: 'gegen SC Turm Lüneburg', text: ½ }]
+    - [{ url: '?staffel=940&r=7#p4098x4106', title: 'gegen Stader SV 4', text: '1' }]
+    - [{ url: '?staffel=940&r=6#p4098x4105', title: 'gegen Stader SV 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=940&r=3#p4098x4099', title: 'gegen SK Hermannsburg 2', text: '3' }]
+    - 3
+    - 8½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Hermannsburg 2', url: '?mannschaft=4099', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=940&r=4#p4099x3922', title: 'gegen SV Bad Bevensen', text: '1' }]
+    - [{ url: '?staffel=940&r=2#p4099x4297', title: 'gegen Post SV Uelzen 2', text: '1' }]
+    - [{ url: '?staffel=940&r=5#p4099x4224', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=940&r=6#p4099x4106', title: 'gegen Stader SV 4', text: '0' }]
+    - [{ url: '?staffel=940&r=7#p4099x4105', title: 'gegen Stader SV 3', text: 2½ }]
+    - [{ url: '?staffel=940&r=3#p4099x4098', title: 'gegen SK Hermannsburg', text: '1' }]
+    - xxx
+    - 2
+    - 5½
+    - ''

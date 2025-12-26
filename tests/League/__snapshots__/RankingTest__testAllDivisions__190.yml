@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=2209', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=613&r=2#p2209x2208', title: 'gegen Makkabi Berlin', text: '2' }]
+    - [{ url: '?staffel=613&r=9#p2209x2212', title: 'gegen GW Baumschulenw', text: '4' }]
+    - [{ url: '?staffel=613&r=8#p2209x2210', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=613&r=5#p2209x2205', title: 'gegen SSC Rostock', text: 3½ }]
+    - [{ url: '?staffel=613&r=6#p2209x2207', title: 'gegen CFC Köthen', text: 5½ }]
+    - [{ url: '?staffel=613&r=7#p2209x2204', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=613&r=1#p2209x2206', title: 'gegen Zitad. Spandau', text: '4' }]
+    - [{ url: '?staffel=613&r=3#p2209x2213', title: 'gegen USC Magdeburg', text: '4' }]
+    - [{ url: '?staffel=613&r=4#p2209x2211', title: 'gegen SV Gryps', text: 4½ }]
+    - 13
+    - 32½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Makkabi Berlin', url: '?mannschaft=2208', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=613&r=2#p2208x2209', title: 'gegen SV Empor Berlin', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=613&r=8#p2208x2212', title: 'gegen GW Baumschulenw', text: 3½ }]
+    - [{ url: '?staffel=613&r=7#p2208x2210', title: 'gegen AE Magdeburg', text: '0' }]
+    - [{ url: '?staffel=613&r=4#p2208x2205', title: 'gegen SSC Rostock', text: 4½ }]
+    - [{ url: '?staffel=613&r=5#p2208x2207', title: 'gegen CFC Köthen', text: 2½ }]
+    - [{ url: '?staffel=613&r=6#p2208x2204', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=613&r=9#p2208x2206', title: 'gegen Zitad. Spandau', text: '4' }]
+    - [{ url: '?staffel=613&r=1#p2208x2213', title: 'gegen USC Magdeburg', text: '4' }]
+    - [{ url: '?staffel=613&r=3#p2208x2211', title: 'gegen SV Gryps', text: '4' }]
+    - 13
+    - 29½
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'GW Baumschulenw', url: '?mannschaft=2212', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=613&r=9#p2212x2209', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=613&r=8#p2212x2208', title: 'gegen Makkabi Berlin', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=613&r=5#p2212x2210', title: 'gegen AE Magdeburg', text: '5' }]
+    - [{ url: '?staffel=613&r=2#p2212x2205', title: 'gegen SSC Rostock', text: 3½ }]
+    - [{ url: '?staffel=613&r=3#p2212x2207', title: 'gegen CFC Köthen', text: '3' }]
+    - [{ url: '?staffel=613&r=4#p2212x2204', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=613&r=7#p2212x2206', title: 'gegen Zitad. Spandau', text: 3½ }]
+    - [{ url: '?staffel=613&r=6#p2212x2213', title: 'gegen USC Magdeburg', text: 5½ }]
+    - [{ url: '?staffel=613&r=1#p2212x2211', title: 'gegen SV Gryps', text: 3½ }]
+    - 12
+    - 31½
+    - ''
+-
+    - '4.'
+    - { text: 'AE Magdeburg', url: '?mannschaft=2210', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=613&r=8#p2210x2209', title: 'gegen SV Empor Berlin', text: '4' }]
+    - [{ url: '?staffel=613&r=7#p2210x2208', title: 'gegen Makkabi Berlin', text: '6' }]
+    - [{ url: '?staffel=613&r=5#p2210x2212', title: 'gegen GW Baumschulenw', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=613&r=1#p2210x2205', title: 'gegen SSC Rostock', text: 2½ }]
+    - [{ url: '?staffel=613&r=2#p2210x2207', title: 'gegen CFC Köthen', text: '3' }]
+    - [{ url: '?staffel=613&r=3#p2210x2204', title: 'gegen SG Löberitz', text: '4' }]
+    - [{ url: '?staffel=613&r=6#p2210x2206', title: 'gegen Zitad. Spandau', text: 2½ }]
+    - [{ url: '?staffel=613&r=4#p2210x2213', title: 'gegen USC Magdeburg', text: 4½ }]
+    - [{ url: '?staffel=613&r=9#p2210x2211', title: 'gegen SV Gryps', text: '6' }]
+    - 11
+    - 33½
+    - ''
+-
+    - '5.'
+    - { text: 'SSC Rostock', url: '?mannschaft=2205', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=613&r=5#p2205x2209', title: 'gegen SV Empor Berlin', text: 2½ }]
+    - [{ url: '?staffel=613&r=4#p2205x2208', title: 'gegen Makkabi Berlin', text: 1½ }]
+    - [{ url: '?staffel=613&r=2#p2205x2212', title: 'gegen GW Baumschulenw', text: 2½ }]
+    - [{ url: '?staffel=613&r=1#p2205x2210', title: 'gegen AE Magdeburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=613&r=8#p2205x2207', title: 'gegen CFC Köthen', text: '3' }]
+    - [{ url: '?staffel=613&r=9#p2205x2204', title: 'gegen SG Löberitz', text: 4½ }]
+    - [{ url: '?staffel=613&r=3#p2205x2206', title: 'gegen Zitad. Spandau', text: '5' }]
+    - [{ url: '?staffel=613&r=7#p2205x2213', title: 'gegen USC Magdeburg', text: '5' }]
+    - [{ url: '?staffel=613&r=6#p2205x2211', title: 'gegen SV Gryps', text: 4½ }]
+    - 11
+    - '32'
+    - ''
+-
+    - '6.'
+    - { text: 'CFC Köthen', url: '?mannschaft=2207', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=613&r=6#p2207x2209', title: 'gegen SV Empor Berlin', text: ½ }]
+    - [{ url: '?staffel=613&r=5#p2207x2208', title: 'gegen Makkabi Berlin', text: 3½ }]
+    - [{ url: '?staffel=613&r=3#p2207x2212', title: 'gegen GW Baumschulenw', text: '3' }]
+    - [{ url: '?staffel=613&r=2#p2207x2210', title: 'gegen AE Magdeburg', text: '3' }]
+    - [{ url: '?staffel=613&r=8#p2207x2205', title: 'gegen SSC Rostock', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=613&r=1#p2207x2204', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=613&r=4#p2207x2206', title: 'gegen Zitad. Spandau', text: '3' }]
+    - [{ url: '?staffel=613&r=9#p2207x2213', title: 'gegen USC Magdeburg', text: '5' }]
+    - [{ url: '?staffel=613&r=7#p2207x2211', title: 'gegen SV Gryps', text: '6' }]
+    - 11
+    - '30'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Löberitz', url: '?mannschaft=2204', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=613&r=7#p2204x2209', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=613&r=6#p2204x2208', title: 'gegen Makkabi Berlin', text: '3' }]
+    - [{ url: '?staffel=613&r=4#p2204x2212', title: 'gegen GW Baumschulenw', text: '3' }]
+    - [{ url: '?staffel=613&r=3#p2204x2210', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=613&r=9#p2204x2205', title: 'gegen SSC Rostock', text: 1½ }]
+    - [{ url: '?staffel=613&r=1#p2204x2207', title: 'gegen CFC Köthen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=613&r=5#p2204x2206', title: 'gegen Zitad. Spandau', text: '4' }]
+    - [{ url: '?staffel=613&r=2#p2204x2213', title: 'gegen USC Magdeburg', text: '4' }]
+    - [{ url: '?staffel=613&r=8#p2204x2211', title: 'gegen SV Gryps', text: '6' }]
+    - 10
+    - 29½
+    - absteiger
+-
+    - '8.'
+    - { text: 'Zitad. Spandau', url: '?mannschaft=2206', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=613&r=1#p2206x2209', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=613&r=9#p2206x2208', title: 'gegen Makkabi Berlin', text: '2' }]
+    - [{ url: '?staffel=613&r=7#p2206x2212', title: 'gegen GW Baumschulenw', text: 2½ }]
+    - [{ url: '?staffel=613&r=6#p2206x2210', title: 'gegen AE Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=613&r=3#p2206x2205', title: 'gegen SSC Rostock', text: '1' }]
+    - [{ url: '?staffel=613&r=4#p2206x2207', title: 'gegen CFC Köthen', text: '3' }]
+    - [{ url: '?staffel=613&r=5#p2206x2204', title: 'gegen SG Löberitz', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=613&r=8#p2206x2213', title: 'gegen USC Magdeburg', text: '1' }]
+    - [{ url: '?staffel=613&r=2#p2206x2211', title: 'gegen SV Gryps', text: 4½ }]
+    - 5
+    - 21½
+    - absteiger
+-
+    - '9.'
+    - { text: 'USC Magdeburg', url: '?mannschaft=2213', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=613&r=3#p2213x2209', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=613&r=1#p2213x2208', title: 'gegen Makkabi Berlin', text: '2' }]
+    - [{ url: '?staffel=613&r=6#p2213x2212', title: 'gegen GW Baumschulenw', text: ½ }]
+    - [{ url: '?staffel=613&r=4#p2213x2210', title: 'gegen AE Magdeburg', text: 1½ }]
+    - [{ url: '?staffel=613&r=7#p2213x2205', title: 'gegen SSC Rostock', text: '1' }]
+    - [{ url: '?staffel=613&r=9#p2213x2207', title: 'gegen CFC Köthen', text: '1' }]
+    - [{ url: '?staffel=613&r=2#p2213x2204', title: 'gegen SG Löberitz', text: '2' }]
+    - [{ url: '?staffel=613&r=8#p2213x2206', title: 'gegen Zitad. Spandau', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=613&r=5#p2213x2211', title: 'gegen SV Gryps', text: 3½ }]
+    - 4
+    - 18½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SV Gryps', url: '?mannschaft=2211', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=613&r=4#p2211x2209', title: 'gegen SV Empor Berlin', text: 1½ }]
+    - [{ url: '?staffel=613&r=3#p2211x2208', title: 'gegen Makkabi Berlin', text: '2' }]
+    - [{ url: '?staffel=613&r=1#p2211x2212', title: 'gegen GW Baumschulenw', text: 2½ }]
+    - [{ url: '?staffel=613&r=9#p2211x2210', title: 'gegen AE Magdeburg', text: '0' }]
+    - [{ url: '?staffel=613&r=6#p2211x2205', title: 'gegen SSC Rostock', text: 1½ }]
+    - [{ url: '?staffel=613&r=7#p2211x2207', title: 'gegen CFC Köthen', text: '0' }]
+    - [{ url: '?staffel=613&r=8#p2211x2204', title: 'gegen SG Löberitz', text: '0' }]
+    - [{ url: '?staffel=613&r=2#p2211x2206', title: 'gegen Zitad. Spandau', text: 1½ }]
+    - [{ url: '?staffel=613&r=5#p2211x2213', title: 'gegen USC Magdeburg', text: 2½ }]
+    - xxx
+    - 0
+    - 11½
+    - absteiger

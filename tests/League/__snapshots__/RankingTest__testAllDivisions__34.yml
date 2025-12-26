@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'AE Magdeburg', url: '?mannschaft=678', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=432&r=1#p678x677', title: 'gegen SK Lehrte 2', text: '5' }]
+    - {  }
+    - 2
+    - '5'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=677', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=432&r=1#p677x678', title: 'gegen AE Magdeburg', text: '0' }]
+    - xxx
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '2.'
+    - { text: 'Hamburger SK', url: '?mannschaft=679', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

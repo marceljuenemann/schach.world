@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Termine
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -49,9 +49,9 @@
   <br /><br />
 </div>
 
-<form action='<? echo SED_GenerateFormAction(); ?>' method='post'><div>
+<form action='<?php echo SED_GenerateFormAction(); ?>' method='post'><div>
 
-  <?
+  <?php
     // Bisherige Termine abfragen
     $termine = array ();
     $rsrc = SED_Query ( 'SELECT runde, DATE_FORMAT(datum,\'%d.%m.%Y\') as datum FROM termine WHERE turnier=? and staffel is null ORDER BY runde', [$globals['tid']] )->fetchAllAssociative();
@@ -63,7 +63,7 @@
       echo "Spieltag $r:&nbsp;&nbsp;<input type='text' id='termin$r' name='termin$r' size='10' maxlength='10' value='" . ( isset ( $termine [$r] ) ? $termine [$r] : "" ) . "' /> <input type='button' class='sed_submit' id='button$r' value='...' /><br /><br />";
   ?>
 
-  <input type="submit" class="sed_submit" name="buttonsave" value="Speichern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" />
+  <input type="submit" class="sed_submit" name="buttonsave" value="Speichern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<?php echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" />
 
 </div></form>
 
@@ -76,7 +76,7 @@
   wenn diese von den obigen abweichen.
   <br /><br />
 </div>
-<?
+<?php
   // Einen abweichenden Termin hinzufügen
   $regexpr = "/^[0-9]{2}\.[0-9]{2}\.[0-9]{4}$/";
   if ( isset ( $_POST ['abw_addsubmit'] ) )
@@ -101,10 +101,10 @@
       SED_Error ( "Termin konnte nicht gel&ouml;scht werden.", true );
   }
 ?>
-<form action='<? echo SED_GenerateFormAction(); ?>#AbwT' method='post'>
+<form action='<?php echo SED_GenerateFormAction(); ?>#AbwT' method='post'>
 <table class='sed_tabelle'>
   <tr><th>Staffel</th><th>Runde</th><th>Datum</th><th></th></tr>
-  <?
+  <?php
     // Bisherige Termine abfragen
     $rsrc = SED_Query ( 'SELECT id, staffel, runde, DATE_FORMAT(datum,\'%d.%m.%Y\') as datum FROM termine WHERE turnier=? and staffel IS NOT NULL ORDER BY staffel, runde', [$globals['tid']] )->fetchAllAssociative();
     foreach ( $rsrc as $tmp )
@@ -122,15 +122,15 @@
     }
     ?>
     </select></td>
-    <td><input type="text" name="abw_runde" size="1" value="<? if ( isset ( $_POST ['abw_runde'] ) ) echo $_POST ['abw_runde']+1; ?>" /></td>
-    <td><input type='text' id='abw_datum' name='abw_datum' size='10' value="<? if ( isset ( $_POST ['abw_datum'] ) ) echo $_POST ['abw_datum']; ?>" maxlength='10' /> <input type='button' class='sed_submit' id='abw_cal' value='...' /></td>
+    <td><input type="text" name="abw_runde" size="1" value="<?php if ( isset ( $_POST ['abw_runde'] ) ) echo $_POST ['abw_runde']+1; ?>" /></td>
+    <td><input type='text' id='abw_datum' name='abw_datum' size='10' value="<?php if ( isset ( $_POST ['abw_datum'] ) ) echo $_POST ['abw_datum']; ?>" maxlength='10' /> <input type='button' class='sed_submit' id='abw_cal' value='...' /></td>
     <td><input type="submit" class="sed_submit" name="abw_addsubmit" value="Hinzuf&uuml;gen" /></td></tr>
 </table></form>
 
 
 <script type="text/javascript"><!--
 
-<?
+<?php
   for ( $r = 1; $r <= $prefs ['runden']; ++$r )
     echo "Calendar.setup ( {
             inputField: 'termin$r',

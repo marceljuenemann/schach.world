@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Solingen', url: '?mannschaft=6235', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1413&r=3#p6235x6236', title: 'gegen SK Münster 32', text: 3½ }]
+    - [{ url: '?staffel=1413&r=1#p6235x6234', title: 'gegen Biebertaler SF', text: '3' }]
+    - [{ url: '?staffel=1413&r=4#p6235x6232', title: 'gegen SC Papenburg', text: 3½ }]
+    - [{ url: '?staffel=1413&r=5#p6235x6233', title: 'gegen Uedemer SK', text: '4' }]
+    - 8
+    - '14'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Münster 32', url: '?mannschaft=6236', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1413&r=3#p6236x6235', title: 'gegen SG Solingen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1413&r=2#p6236x6234', title: 'gegen Biebertaler SF', text: '2' }]
+    - [{ url: '?staffel=1413&r=5#p6236x6232', title: 'gegen SC Papenburg', text: '4' }]
+    - [{ url: '?staffel=1413&r=1#p6236x6233', title: 'gegen Uedemer SK', text: '4' }]
+    - 5
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'Biebertaler SF', url: '?mannschaft=6234', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1413&r=1#p6234x6235', title: 'gegen SG Solingen', text: '1' }]
+    - [{ url: '?staffel=1413&r=2#p6234x6236', title: 'gegen SK Münster 32', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1413&r=3#p6234x6232', title: 'gegen SC Papenburg', text: '4' }]
+    - [{ url: '?staffel=1413&r=4#p6234x6233', title: 'gegen Uedemer SK', text: 3½ }]
+    - 5
+    - 10½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Papenburg', url: '?mannschaft=6232', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1413&r=4#p6232x6235', title: 'gegen SG Solingen', text: ½ }]
+    - [{ url: '?staffel=1413&r=5#p6232x6236', title: 'gegen SK Münster 32', text: '0' }]
+    - [{ url: '?staffel=1413&r=3#p6232x6234', title: 'gegen Biebertaler SF', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1413&r=2#p6232x6233', title: 'gegen Uedemer SK', text: '3' }]
+    - 2
+    - 3½
+    - ''
+-
+    - '5.'
+    - { text: 'Uedemer SK', url: '?mannschaft=6233', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1413&r=5#p6233x6235', title: 'gegen SG Solingen', text: '0' }]
+    - [{ url: '?staffel=1413&r=1#p6233x6236', title: 'gegen SK Münster 32', text: '0' }]
+    - [{ url: '?staffel=1413&r=4#p6233x6234', title: 'gegen Biebertaler SF', text: ½ }]
+    - [{ url: '?staffel=1413&r=2#p6233x6232', title: 'gegen SC Papenburg', text: '1' }]
+    - xxx
+    - 0
+    - 1½
+    - absteiger

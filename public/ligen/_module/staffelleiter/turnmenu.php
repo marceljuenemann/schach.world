@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Turniermenü
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -101,11 +101,11 @@
 
     --></script>
 
-  <form action="<? echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;">
+  <form action="<?php echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;">
     <table cellspacing="0" cellpadding="2">
       <tr><th>Beschriftung</th><th>URL</th><th></th></tr>
 
-        <?
+        <?php
           // Bisherige Links abfragen
           $rsrc = SED_Query ( 'SELECT * FROM turniermenue WHERE turnier=? ORDER BY sortid', [$globals['tid']] )->fetchAllAssociative();
 
@@ -118,11 +118,11 @@
             __AddForm ( "", "", 0 );
         ?>
 
-      <tr><td colspan='3'><input type="submit" class="sed_submit" name="menue_save" value="Speichern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
+      <tr><td colspan='3'><input type="submit" class="sed_submit" name="menue_save" value="Speichern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<?php echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
     </table>
   </form><br />
 
-<?
+<?php
     $rsrc = SED_Query ( 'SELECT name, directory, id FROM turniere t WHERE t.organisation=? AND (t.startjahr=? OR t.startjahr=?-1) AND t.id<>? ORDER BY t.startjahr DESC', [$prefs['organisation'], $prefs['startjahr'], $prefs['startjahr'], $globals['tid']] )->fetchAllAssociative();
     if ( $rsrc && count($rsrc) ){
         echo "<span class='sed_hl2'>Vorschl&auml;ge:</span><br /><br />";

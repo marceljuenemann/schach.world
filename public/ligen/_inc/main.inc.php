@@ -1,4 +1,4 @@
-<?
+<?php
 /* Verschiedene Funktionen
  * 
  * Ein paar bunt gemischte Funktionen, die immer verfügbar sind.

@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=3231', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=736&r=3#p3231x3160', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=736&r=2#p3231x3235', title: 'gegen Hannover 96', text: 2½ }]
+    - [{ url: '?staffel=736&r=1#p3231x3206', title: 'gegen Eystruper SK', text: '4' }]
+    - 6
+    - 10½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=3160', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=736&r=3#p3160x3231', title: 'gegen SK Lehrte', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=736&r=1#p3160x3235', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=736&r=2#p3160x3206', title: 'gegen Eystruper SK', text: '3' }]
+    - 3
+    - '5'
+    - ''
+-
+    - '3.'
+    - { text: 'Hannover 96', url: '?mannschaft=3235', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=736&r=2#p3235x3231', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=736&r=1#p3235x3160', title: 'gegen SD Isernhagen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=736&r=3#p3235x3206', title: 'gegen Eystruper SK', text: '2' }]
+    - 2
+    - 5½
+    - ''
+-
+    - '4.'
+    - { text: 'Eystruper SK', url: '?mannschaft=3206', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=736&r=1#p3206x3231', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=736&r=2#p3206x3160', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=736&r=3#p3206x3235', title: 'gegen Hannover 96', text: '2' }]
+    - xxx
+    - 1
+    - '3'
+    - ''

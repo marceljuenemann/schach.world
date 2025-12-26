@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'ESV Göttingen', url: '?mannschaft=7475', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1729&r=8#p7475x7456', title: 'gegen Hamelner SV 2', text: 5½ }]
+    - [{ url: '?staffel=1729&r=6#p7475x7471', title: 'gegen Tempo Göttingen', text: '4' }]
+    - [{ url: '?staffel=1729&r=2#p7475x7465', title: 'gegen SC BS Gliesmarode 2', text: '6' }]
+    - [{ url: '?staffel=1729&r=7#p7475x7446', title: 'gegen Hildesheimer SV 2', text: '7' }]
+    - [{ url: '?staffel=1729&r=1#p7475x7474', title: 'gegen Bad Salzdetfurth', text: '6' }]
+    - [{ url: '?staffel=1729&r=5#p7475x7467', title: 'gegen Peiner SV', text: '6' }]
+    - [{ url: '?staffel=1729&r=9#p7475x7468', title: 'gegen KS Braunschweig', text: 7½ }]
+    - [{ url: '?staffel=1729&r=4#p7475x7466', title: 'gegen SF Fallersleben', text: '7' }]
+    - [{ url: '?staffel=1729&r=3#p7475x7463', title: 'gegen Hamelner SV 3', text: '8' }]
+    - 17
+    - '57'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamelner SV 2', url: '?mannschaft=7456', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1729&r=8#p7456x7475', title: 'gegen ESV Göttingen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1729&r=5#p7456x7471', title: 'gegen Tempo Göttingen', text: '3' }]
+    - [{ url: '?staffel=1729&r=3#p7456x7465', title: 'gegen SC BS Gliesmarode 2', text: '2' }]
+    - [{ url: '?staffel=1729&r=2#p7456x7446', title: 'gegen Hildesheimer SV 2', text: 4½ }]
+    - [{ url: '?staffel=1729&r=9#p7456x7474', title: 'gegen Bad Salzdetfurth', text: 6½ }]
+    - [{ url: '?staffel=1729&r=4#p7456x7467', title: 'gegen Peiner SV', text: 4½ }]
+    - [{ url: '?staffel=1729&r=7#p7456x7468', title: 'gegen KS Braunschweig', text: '4' }]
+    - [{ url: '?staffel=1729&r=6#p7456x7466', title: 'gegen SF Fallersleben', text: 5½ }]
+    - [{ url: '?staffel=1729&r=1#p7456x7463', title: 'gegen Hamelner SV 3', text: '5' }]
+    - 11
+    - 37½
+    - ''
+-
+    - '3.'
+    - { text: 'Tempo Göttingen', url: '?mannschaft=7471', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1729&r=6#p7471x7475', title: 'gegen ESV Göttingen', text: '4' }]
+    - [{ url: '?staffel=1729&r=5#p7471x7456', title: 'gegen Hamelner SV 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1729&r=9#p7471x7465', title: 'gegen SC BS Gliesmarode 2', text: '4' }]
+    - [{ url: '?staffel=1729&r=8#p7471x7446', title: 'gegen Hildesheimer SV 2', text: 2½ }]
+    - [{ url: '?staffel=1729&r=3#p7471x7474', title: 'gegen Bad Salzdetfurth', text: '0' }]
+    - [{ url: '?staffel=1729&r=1#p7471x7467', title: 'gegen Peiner SV', text: '4' }]
+    - [{ url: '?staffel=1729&r=4#p7471x7468', title: 'gegen KS Braunschweig', text: '6' }]
+    - [{ url: '?staffel=1729&r=2#p7471x7466', title: 'gegen SF Fallersleben', text: '7' }]
+    - [{ url: '?staffel=1729&r=7#p7471x7463', title: 'gegen Hamelner SV 3', text: 4½ }]
+    - 11
+    - '37'
+    - ''
+-
+    - '4.'
+    - { text: 'SC BS Gliesmarode 2', url: '?mannschaft=7465', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1729&r=2#p7465x7475', title: 'gegen ESV Göttingen', text: '2' }]
+    - [{ url: '?staffel=1729&r=3#p7465x7456', title: 'gegen Hamelner SV 2', text: '6' }]
+    - [{ url: '?staffel=1729&r=9#p7465x7471', title: 'gegen Tempo Göttingen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1729&r=6#p7465x7446', title: 'gegen Hildesheimer SV 2', text: 4½ }]
+    - [{ url: '?staffel=1729&r=4#p7465x7474', title: 'gegen Bad Salzdetfurth', text: 4½ }]
+    - [{ url: '?staffel=1729&r=8#p7465x7467', title: 'gegen Peiner SV', text: 3½ }]
+    - [{ url: '?staffel=1729&r=1#p7465x7468', title: 'gegen KS Braunschweig', text: '4' }]
+    - [{ url: '?staffel=1729&r=7#p7465x7466', title: 'gegen SF Fallersleben', text: '3' }]
+    - [{ url: '?staffel=1729&r=5#p7465x7463', title: 'gegen Hamelner SV 3', text: 6½ }]
+    - 10
+    - '38'
+    - ''
+-
+    - '5.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=7446', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1729&r=7#p7446x7475', title: 'gegen ESV Göttingen', text: '1' }]
+    - [{ url: '?staffel=1729&r=2#p7446x7456', title: 'gegen Hamelner SV 2', text: 3½ }]
+    - [{ url: '?staffel=1729&r=8#p7446x7471', title: 'gegen Tempo Göttingen', text: 5½ }]
+    - [{ url: '?staffel=1729&r=6#p7446x7465', title: 'gegen SC BS Gliesmarode 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1729&r=5#p7446x7474', title: 'gegen Bad Salzdetfurth', text: '4' }]
+    - [{ url: '?staffel=1729&r=9#p7446x7467', title: 'gegen Peiner SV', text: '4' }]
+    - [{ url: '?staffel=1729&r=3#p7446x7468', title: 'gegen KS Braunschweig', text: 6½ }]
+    - [{ url: '?staffel=1729&r=1#p7446x7466', title: 'gegen SF Fallersleben', text: 4½ }]
+    - [{ url: '?staffel=1729&r=4#p7446x7463', title: 'gegen Hamelner SV 3', text: 4½ }]
+    - 10
+    - '37'
+    - ''
+-
+    - '6.'
+    - { text: 'Bad Salzdetfurth', url: '?mannschaft=7474', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1729&r=1#p7474x7475', title: 'gegen ESV Göttingen', text: '2' }]
+    - [{ url: '?staffel=1729&r=9#p7474x7456', title: 'gegen Hamelner SV 2', text: 1½ }]
+    - [{ url: '?staffel=1729&r=3#p7474x7471', title: 'gegen Tempo Göttingen', text: '8' }]
+    - [{ url: '?staffel=1729&r=4#p7474x7465', title: 'gegen SC BS Gliesmarode 2', text: 3½ }]
+    - [{ url: '?staffel=1729&r=5#p7474x7446', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1729&r=7#p7474x7467', title: 'gegen Peiner SV', text: '3' }]
+    - [{ url: '?staffel=1729&r=6#p7474x7468', title: 'gegen KS Braunschweig', text: 4½ }]
+    - [{ url: '?staffel=1729&r=8#p7474x7466', title: 'gegen SF Fallersleben', text: '6' }]
+    - [{ url: '?staffel=1729&r=2#p7474x7463', title: 'gegen Hamelner SV 3', text: '5' }]
+    - 9
+    - 37½
+    - ''
+-
+    - '7.'
+    - { text: 'Peiner SV', url: '?mannschaft=7467', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1729&r=5#p7467x7475', title: 'gegen ESV Göttingen', text: '2' }]
+    - [{ url: '?staffel=1729&r=4#p7467x7456', title: 'gegen Hamelner SV 2', text: 3½ }]
+    - [{ url: '?staffel=1729&r=1#p7467x7471', title: 'gegen Tempo Göttingen', text: '4' }]
+    - [{ url: '?staffel=1729&r=8#p7467x7465', title: 'gegen SC BS Gliesmarode 2', text: 4½ }]
+    - [{ url: '?staffel=1729&r=9#p7467x7446', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1729&r=7#p7467x7474', title: 'gegen Bad Salzdetfurth', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1729&r=2#p7467x7468', title: 'gegen KS Braunschweig', text: 3½ }]
+    - [{ url: '?staffel=1729&r=3#p7467x7466', title: 'gegen SF Fallersleben', text: 3½ }]
+    - [{ url: '?staffel=1729&r=6#p7467x7463', title: 'gegen Hamelner SV 3', text: 4½ }]
+    - 8
+    - 34½
+    - ''
+-
+    - '8.'
+    - { text: 'KS Braunschweig', url: '?mannschaft=7468', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1729&r=9#p7468x7475', title: 'gegen ESV Göttingen', text: ½ }]
+    - [{ url: '?staffel=1729&r=7#p7468x7456', title: 'gegen Hamelner SV 2', text: '4' }]
+    - [{ url: '?staffel=1729&r=4#p7468x7471', title: 'gegen Tempo Göttingen', text: '2' }]
+    - [{ url: '?staffel=1729&r=1#p7468x7465', title: 'gegen SC BS Gliesmarode 2', text: '4' }]
+    - [{ url: '?staffel=1729&r=3#p7468x7446', title: 'gegen Hildesheimer SV 2', text: 1½ }]
+    - [{ url: '?staffel=1729&r=6#p7468x7474', title: 'gegen Bad Salzdetfurth', text: 3½ }]
+    - [{ url: '?staffel=1729&r=2#p7468x7467', title: 'gegen Peiner SV', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1729&r=5#p7468x7466', title: 'gegen SF Fallersleben', text: '5' }]
+    - [{ url: '?staffel=1729&r=8#p7468x7463', title: 'gegen Hamelner SV 3', text: 6½ }]
+    - 8
+    - 31½
+    - ''
+-
+    - '9.'
+    - { text: 'SF Fallersleben', url: '?mannschaft=7466', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1729&r=4#p7466x7475', title: 'gegen ESV Göttingen', text: '1' }]
+    - [{ url: '?staffel=1729&r=6#p7466x7456', title: 'gegen Hamelner SV 2', text: 2½ }]
+    - [{ url: '?staffel=1729&r=2#p7466x7471', title: 'gegen Tempo Göttingen', text: '1' }]
+    - [{ url: '?staffel=1729&r=7#p7466x7465', title: 'gegen SC BS Gliesmarode 2', text: '5' }]
+    - [{ url: '?staffel=1729&r=1#p7466x7446', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - [{ url: '?staffel=1729&r=8#p7466x7474', title: 'gegen Bad Salzdetfurth', text: '2' }]
+    - [{ url: '?staffel=1729&r=3#p7466x7467', title: 'gegen Peiner SV', text: 4½ }]
+    - [{ url: '?staffel=1729&r=5#p7466x7468', title: 'gegen KS Braunschweig', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1729&r=9#p7466x7463', title: 'gegen Hamelner SV 3', text: 4½ }]
+    - 6
+    - '27'
+    - absteigerRelegation
+-
+    - '10.'
+    - { text: 'Hamelner SV 3', url: '?mannschaft=7463', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1729&r=3#p7463x7475', title: 'gegen ESV Göttingen', text: '0' }]
+    - [{ url: '?staffel=1729&r=1#p7463x7456', title: 'gegen Hamelner SV 2', text: '3' }]
+    - [{ url: '?staffel=1729&r=7#p7463x7471', title: 'gegen Tempo Göttingen', text: 3½ }]
+    - [{ url: '?staffel=1729&r=5#p7463x7465', title: 'gegen SC BS Gliesmarode 2', text: 1½ }]
+    - [{ url: '?staffel=1729&r=4#p7463x7446', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - [{ url: '?staffel=1729&r=2#p7463x7474', title: 'gegen Bad Salzdetfurth', text: '3' }]
+    - [{ url: '?staffel=1729&r=6#p7463x7467', title: 'gegen Peiner SV', text: 3½ }]
+    - [{ url: '?staffel=1729&r=8#p7463x7468', title: 'gegen KS Braunschweig', text: 1½ }]
+    - [{ url: '?staffel=1729&r=9#p7463x7466', title: 'gegen SF Fallersleben', text: 3½ }]
+    - xxx
+    - 0
+    - '23'
+    - absteiger

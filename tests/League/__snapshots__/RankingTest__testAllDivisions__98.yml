@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Döhren-Gleid', url: '?mannschaft=1214', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=511&r=7#p1214x1218', title: 'gegen SF Hannover 4', text: '4' }]
+    - [{ url: '?staffel=511&r=8#p1214x1224', title: 'gegen SV Laatzen 3', text: 6½ }]
+    - [{ url: '?staffel=511&r=9#p1214x1264', title: 'gegen Neubruchhausen', text: '6' }]
+    - [{ url: '?staffel=511&r=3#p1214x1252', title: 'gegen SV Gretenberg 3', text: 5½ }]
+    - [{ url: '?staffel=511&r=1#p1214x1257', title: 'gegen SK Lehrte 5', text: '6' }]
+    - [{ url: '?staffel=511&r=2#p1214x1230', title: 'gegen PSC Hannover 6', text: '6' }]
+    - [{ url: '?staffel=511&r=4#p1214x1254', title: 'gegen SC Hämelerwald 2', text: 6½ }]
+    - [{ url: '?staffel=511&r=6#p1214x1263', title: 'gegen SD Isernhagen 3', text: '8' }]
+    - [{ url: '?staffel=511&r=5#p1214x1222', title: 'gegen SK Anderten 3', text: 5½ }]
+    - 17
+    - '54'
+    - ''
+-
+    - '2.'
+    - { text: 'SF Hannover 4', url: '?mannschaft=1218', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=511&r=7#p1218x1214', title: 'gegen SG Döhren-Gleid', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=511&r=1#p1218x1224', title: 'gegen SV Laatzen 3', text: 3½ }]
+    - [{ url: '?staffel=511&r=2#p1218x1264', title: 'gegen Neubruchhausen', text: '8' }]
+    - [{ url: '?staffel=511&r=5#p1218x1252', title: 'gegen SV Gretenberg 3', text: 6½ }]
+    - [{ url: '?staffel=511&r=3#p1218x1257', title: 'gegen SK Lehrte 5', text: '6' }]
+    - [{ url: '?staffel=511&r=4#p1218x1230', title: 'gegen PSC Hannover 6', text: '5' }]
+    - [{ url: '?staffel=511&r=6#p1218x1254', title: 'gegen SC Hämelerwald 2', text: 6½ }]
+    - [{ url: '?staffel=511&r=8#p1218x1263', title: 'gegen SD Isernhagen 3', text: '7' }]
+    - [{ url: '?staffel=511&r=9#p1218x1222', title: 'gegen SK Anderten 3', text: '7' }]
+    - 15
+    - 53½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Laatzen 3', url: '?mannschaft=1224', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=511&r=8#p1224x1214', title: 'gegen SG Döhren-Gleid', text: 1½ }]
+    - [{ url: '?staffel=511&r=1#p1224x1218', title: 'gegen SF Hannover 4', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=511&r=3#p1224x1264', title: 'gegen Neubruchhausen', text: 4½ }]
+    - [{ url: '?staffel=511&r=6#p1224x1252', title: 'gegen SV Gretenberg 3', text: 5½ }]
+    - [{ url: '?staffel=511&r=4#p1224x1257', title: 'gegen SK Lehrte 5', text: 6½ }]
+    - [{ url: '?staffel=511&r=5#p1224x1230', title: 'gegen PSC Hannover 6', text: '4' }]
+    - [{ url: '?staffel=511&r=7#p1224x1254', title: 'gegen SC Hämelerwald 2', text: 4½ }]
+    - [{ url: '?staffel=511&r=9#p1224x1263', title: 'gegen SD Isernhagen 3', text: '6' }]
+    - [{ url: '?staffel=511&r=2#p1224x1222', title: 'gegen SK Anderten 3', text: 3½ }]
+    - 13
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: Neubruchhausen, url: '?mannschaft=1264', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=511&r=9#p1264x1214', title: 'gegen SG Döhren-Gleid', text: '2' }]
+    - [{ url: '?staffel=511&r=2#p1264x1218', title: 'gegen SF Hannover 4', text: '0' }]
+    - [{ url: '?staffel=511&r=3#p1264x1224', title: 'gegen SV Laatzen 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=511&r=7#p1264x1252', title: 'gegen SV Gretenberg 3', text: '8' }]
+    - [{ url: '?staffel=511&r=5#p1264x1257', title: 'gegen SK Lehrte 5', text: 5½ }]
+    - [{ url: '?staffel=511&r=6#p1264x1230', title: 'gegen PSC Hannover 6', text: 4½ }]
+    - [{ url: '?staffel=511&r=8#p1264x1254', title: 'gegen SC Hämelerwald 2', text: 5½ }]
+    - [{ url: '?staffel=511&r=1#p1264x1263', title: 'gegen SD Isernhagen 3', text: 2½ }]
+    - [{ url: '?staffel=511&r=4#p1264x1222', title: 'gegen SK Anderten 3', text: '6' }]
+    - 10
+    - 37½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Gretenberg 3', url: '?mannschaft=1252', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=511&r=3#p1252x1214', title: 'gegen SG Döhren-Gleid', text: 2½ }]
+    - [{ url: '?staffel=511&r=5#p1252x1218', title: 'gegen SF Hannover 4', text: 1½ }]
+    - [{ url: '?staffel=511&r=6#p1252x1224', title: 'gegen SV Laatzen 3', text: 2½ }]
+    - [{ url: '?staffel=511&r=7#p1252x1264', title: 'gegen Neubruchhausen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=511&r=8#p1252x1257', title: 'gegen SK Lehrte 5', text: 4½ }]
+    - [{ url: '?staffel=511&r=9#p1252x1230', title: 'gegen PSC Hannover 6', text: 5½ }]
+    - [{ url: '?staffel=511&r=2#p1252x1254', title: 'gegen SC Hämelerwald 2', text: 5½ }]
+    - [{ url: '?staffel=511&r=4#p1252x1263', title: 'gegen SD Isernhagen 3', text: '4' }]
+    - [{ url: '?staffel=511&r=1#p1252x1222', title: 'gegen SK Anderten 3', text: '6' }]
+    - 9
+    - '32'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 5', url: '?mannschaft=1257', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=511&r=1#p1257x1214', title: 'gegen SG Döhren-Gleid', text: '2' }]
+    - [{ url: '?staffel=511&r=3#p1257x1218', title: 'gegen SF Hannover 4', text: '2' }]
+    - [{ url: '?staffel=511&r=4#p1257x1224', title: 'gegen SV Laatzen 3', text: 1½ }]
+    - [{ url: '?staffel=511&r=5#p1257x1264', title: 'gegen Neubruchhausen', text: 2½ }]
+    - [{ url: '?staffel=511&r=8#p1257x1252', title: 'gegen SV Gretenberg 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=511&r=7#p1257x1230', title: 'gegen PSC Hannover 6', text: 2½ }]
+    - [{ url: '?staffel=511&r=9#p1257x1254', title: 'gegen SC Hämelerwald 2', text: '7' }]
+    - [{ url: '?staffel=511&r=2#p1257x1263', title: 'gegen SD Isernhagen 3', text: '5' }]
+    - [{ url: '?staffel=511&r=6#p1257x1222', title: 'gegen SK Anderten 3', text: '6' }]
+    - 6
+    - '32'
+    - ''
+-
+    - '7.'
+    - { text: 'PSC Hannover 6', url: '?mannschaft=1230', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=511&r=2#p1230x1214', title: 'gegen SG Döhren-Gleid', text: '2' }]
+    - [{ url: '?staffel=511&r=4#p1230x1218', title: 'gegen SF Hannover 4', text: '3' }]
+    - [{ url: '?staffel=511&r=5#p1230x1224', title: 'gegen SV Laatzen 3', text: '4' }]
+    - [{ url: '?staffel=511&r=6#p1230x1264', title: 'gegen Neubruchhausen', text: 3½ }]
+    - [{ url: '?staffel=511&r=9#p1230x1252', title: 'gegen SV Gretenberg 3', text: 2½ }]
+    - [{ url: '?staffel=511&r=7#p1230x1257', title: 'gegen SK Lehrte 5', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=511&r=1#p1230x1254', title: 'gegen SC Hämelerwald 2', text: '0' }]
+    - [{ url: '?staffel=511&r=3#p1230x1263', title: 'gegen SD Isernhagen 3', text: 4½ }]
+    - [{ url: '?staffel=511&r=8#p1230x1222', title: 'gegen SK Anderten 3', text: '4' }]
+    - 6
+    - '29'
+    - ''
+-
+    - '8.'
+    - { text: 'SC Hämelerwald 2', url: '?mannschaft=1254', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=511&r=4#p1254x1214', title: 'gegen SG Döhren-Gleid', text: 1½ }]
+    - [{ url: '?staffel=511&r=6#p1254x1218', title: 'gegen SF Hannover 4', text: 1½ }]
+    - [{ url: '?staffel=511&r=7#p1254x1224', title: 'gegen SV Laatzen 3', text: 3½ }]
+    - [{ url: '?staffel=511&r=8#p1254x1264', title: 'gegen Neubruchhausen', text: 2½ }]
+    - [{ url: '?staffel=511&r=2#p1254x1252', title: 'gegen SV Gretenberg 3', text: 2½ }]
+    - [{ url: '?staffel=511&r=9#p1254x1257', title: 'gegen SK Lehrte 5', text: '1' }]
+    - [{ url: '?staffel=511&r=1#p1254x1230', title: 'gegen PSC Hannover 6', text: '8' }]
+    - xxx
+    - [{ url: '?staffel=511&r=5#p1254x1263', title: 'gegen SD Isernhagen 3', text: 4½ }]
+    - [{ url: '?staffel=511&r=3#p1254x1222', title: 'gegen SK Anderten 3', text: '4' }]
+    - 5
+    - '29'
+    - ''
+-
+    - '9.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=1263', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=511&r=6#p1263x1214', title: 'gegen SG Döhren-Gleid', text: '0' }]
+    - [{ url: '?staffel=511&r=8#p1263x1218', title: 'gegen SF Hannover 4', text: '1' }]
+    - [{ url: '?staffel=511&r=9#p1263x1224', title: 'gegen SV Laatzen 3', text: '2' }]
+    - [{ url: '?staffel=511&r=1#p1263x1264', title: 'gegen Neubruchhausen', text: 5½ }]
+    - [{ url: '?staffel=511&r=4#p1263x1252', title: 'gegen SV Gretenberg 3', text: '4' }]
+    - [{ url: '?staffel=511&r=2#p1263x1257', title: 'gegen SK Lehrte 5', text: '3' }]
+    - [{ url: '?staffel=511&r=3#p1263x1230', title: 'gegen PSC Hannover 6', text: 3½ }]
+    - [{ url: '?staffel=511&r=5#p1263x1254', title: 'gegen SC Hämelerwald 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=511&r=7#p1263x1222', title: 'gegen SK Anderten 3', text: '5' }]
+    - 5
+    - 27½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Anderten 3', url: '?mannschaft=1222', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=511&r=5#p1222x1214', title: 'gegen SG Döhren-Gleid', text: 2½ }]
+    - [{ url: '?staffel=511&r=9#p1222x1218', title: 'gegen SF Hannover 4', text: '1' }]
+    - [{ url: '?staffel=511&r=2#p1222x1224', title: 'gegen SV Laatzen 3', text: 4½ }]
+    - [{ url: '?staffel=511&r=4#p1222x1264', title: 'gegen Neubruchhausen', text: '2' }]
+    - [{ url: '?staffel=511&r=1#p1222x1252', title: 'gegen SV Gretenberg 3', text: '2' }]
+    - [{ url: '?staffel=511&r=6#p1222x1257', title: 'gegen SK Lehrte 5', text: '1' }]
+    - [{ url: '?staffel=511&r=8#p1222x1230', title: 'gegen PSC Hannover 6', text: '4' }]
+    - [{ url: '?staffel=511&r=3#p1222x1254', title: 'gegen SC Hämelerwald 2', text: '4' }]
+    - [{ url: '?staffel=511&r=7#p1222x1263', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - xxx
+    - 4
+    - '24'
+    - ''

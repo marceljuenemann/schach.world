@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 5', url: '?mannschaft=6739', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1635&r=1#p6739x6727', title: 'gegen TuS Wunstorf', text: '5' }]
+    - [{ url: '?staffel=1635&r=4#p6739x6780', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1635&r=5#p6739x6726', title: 'gegen SV Bückeburg', text: '8' }]
+    - [{ url: '?staffel=1635&r=6#p6739x6729', title: 'gegen SVg Calenberg 2', text: '6' }]
+    - [{ url: '?staffel=1635&r=2#p6739x6761', title: 'gegen SV Springe 2', text: '6' }]
+    - [{ url: '?staffel=1635&r=3#p6739x6766', title: 'gegen SF Mühlenberg', text: '8' }]
+    - [{ url: '?staffel=1635&r=9#p6739x6763', title: 'gegen SF Barsinghausen 2', text: '7' }]
+    - 13
+    - '44'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=6727', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1635&r=1#p6727x6739', title: 'gegen SK Lehrte 5', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1635&r=6#p6727x6780', title: 'gegen SK Rinteln 2', text: '6' }]
+    - [{ url: '?staffel=1635&r=7#p6727x6726', title: 'gegen SV Bückeburg', text: '8' }]
+    - [{ url: '?staffel=1635&r=8#p6727x6729', title: 'gegen SVg Calenberg 2', text: '7' }]
+    - [{ url: '?staffel=1635&r=4#p6727x6761', title: 'gegen SV Springe 2', text: '6' }]
+    - [{ url: '?staffel=1635&r=5#p6727x6766', title: 'gegen SF Mühlenberg', text: '8' }]
+    - [{ url: '?staffel=1635&r=2#p6727x6763', title: 'gegen SF Barsinghausen 2', text: 5½ }]
+    - 12
+    - 43½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=6780', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1635&r=4#p6780x6739', title: 'gegen SK Lehrte 5', text: '4' }]
+    - [{ url: '?staffel=1635&r=6#p6780x6727', title: 'gegen TuS Wunstorf', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1635&r=1#p6780x6726', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=1635&r=2#p6780x6729', title: 'gegen SVg Calenberg 2', text: 3½ }]
+    - [{ url: '?staffel=1635&r=7#p6780x6761', title: 'gegen SV Springe 2', text: '6' }]
+    - [{ url: '?staffel=1635&r=8#p6780x6766', title: 'gegen SF Mühlenberg', text: '8' }]
+    - [{ url: '?staffel=1635&r=5#p6780x6763', title: 'gegen SF Barsinghausen 2', text: 7½ }]
+    - 8
+    - '35'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=6726', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1635&r=5#p6726x6739', title: 'gegen SK Lehrte 5', text: '0' }]
+    - [{ url: '?staffel=1635&r=7#p6726x6727', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=1635&r=1#p6726x6780', title: 'gegen SK Rinteln 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1635&r=3#p6726x6729', title: 'gegen SVg Calenberg 2', text: 5½ }]
+    - [{ url: '?staffel=1635&r=8#p6726x6761', title: 'gegen SV Springe 2', text: 4½ }]
+    - [{ url: '?staffel=1635&r=9#p6726x6766', title: 'gegen SF Mühlenberg', text: 6½ }]
+    - [{ url: '?staffel=1635&r=6#p6726x6763', title: 'gegen SF Barsinghausen 2', text: '0' }]
+    - 7
+    - 20½
+    - ''
+-
+    - '5.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=6729', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1635&r=6#p6729x6739', title: 'gegen SK Lehrte 5', text: '2' }]
+    - [{ url: '?staffel=1635&r=8#p6729x6727', title: 'gegen TuS Wunstorf', text: '1' }]
+    - [{ url: '?staffel=1635&r=2#p6729x6780', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - [{ url: '?staffel=1635&r=3#p6729x6726', title: 'gegen SV Bückeburg', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1635&r=9#p6729x6761', title: 'gegen SV Springe 2', text: 2½ }]
+    - [{ url: '?staffel=1635&r=1#p6729x6766', title: 'gegen SF Mühlenberg', text: '5' }]
+    - [{ url: '?staffel=1635&r=7#p6729x6763', title: 'gegen SF Barsinghausen 2', text: '5' }]
+    - 6
+    - 20½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Springe 2', url: '?mannschaft=6761', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1635&r=2#p6761x6739', title: 'gegen SK Lehrte 5', text: '2' }]
+    - [{ url: '?staffel=1635&r=4#p6761x6727', title: 'gegen TuS Wunstorf', text: '2' }]
+    - [{ url: '?staffel=1635&r=7#p6761x6780', title: 'gegen SK Rinteln 2', text: '2' }]
+    - [{ url: '?staffel=1635&r=8#p6761x6726', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=1635&r=9#p6761x6729', title: 'gegen SVg Calenberg 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1635&r=6#p6761x6766', title: 'gegen SF Mühlenberg', text: '5' }]
+    - [{ url: '?staffel=1635&r=3#p6761x6763', title: 'gegen SF Barsinghausen 2', text: '4' }]
+    - 5
+    - '24'
+    - ''
+-
+    - '7.'
+    - { text: 'SF Mühlenberg', url: '?mannschaft=6766', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1635&r=3#p6766x6739', title: 'gegen SK Lehrte 5', text: '0' }]
+    - [{ url: '?staffel=1635&r=5#p6766x6727', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=1635&r=8#p6766x6780', title: 'gegen SK Rinteln 2', text: '0' }]
+    - [{ url: '?staffel=1635&r=9#p6766x6726', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=1635&r=1#p6766x6729', title: 'gegen SVg Calenberg 2', text: '3' }]
+    - [{ url: '?staffel=1635&r=6#p6766x6761', title: 'gegen SV Springe 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1635&r=4#p6766x6763', title: 'gegen SF Barsinghausen 2', text: '8' }]
+    - 2
+    - 14½
+    - ''
+-
+    - '8.'
+    - { text: 'SF Barsinghausen 2', url: '?mannschaft=6763', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1635&r=9#p6763x6739', title: 'gegen SK Lehrte 5', text: '1' }]
+    - [{ url: '?staffel=1635&r=2#p6763x6727', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=1635&r=5#p6763x6780', title: 'gegen SK Rinteln 2', text: ½ }]
+    - [{ url: '?staffel=1635&r=6#p6763x6726', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=1635&r=7#p6763x6729', title: 'gegen SVg Calenberg 2', text: '2' }]
+    - [{ url: '?staffel=1635&r=3#p6763x6761', title: 'gegen SV Springe 2', text: '4' }]
+    - [{ url: '?staffel=1635&r=4#p6763x6766', title: 'gegen SF Mühlenberg', text: '0' }]
+    - xxx
+    - 1
+    - '10'
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'CSC Aufbau 95', url: '?mannschaft=5811', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1348&r=2#p5811x5624', title: 'gegen SC Zugzwang 95', text: 1½ }]
+    - [{ url: '?staffel=1348&r=1#p5811x5670', title: 'gegen TuS Coswig', text: 3½ }]
+    - [{ url: '?staffel=1348&r=4#p5811x5796', title: 'gegen Rodewischer SM', text: 3½ }]
+    - [{ url: '?staffel=1348&r=7#p5811x5603', title: 'gegen Schachzentrum S', text: '2' }]
+    - [{ url: '?staffel=1348&r=8#p5811x5742', title: 'gegen SG GW Dresden', text: 2½ }]
+    - 7
+    - '13'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Zugzwang 95', url: '?mannschaft=5624', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1348&r=2#p5624x5811', title: 'gegen CSC Aufbau 95', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1348&r=8#p5624x5670', title: 'gegen TuS Coswig', text: '3' }]
+    - [{ url: '?staffel=1348&r=1#p5624x5796', title: 'gegen Rodewischer SM', text: '0' }]
+    - [{ url: '?staffel=1348&r=4#p5624x5603', title: 'gegen Schachzentrum S', text: 2½ }]
+    - [{ url: '?staffel=1348&r=5#p5624x5742', title: 'gegen SG GW Dresden', text: '2' }]
+    - 7
+    - '10'
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Coswig', url: '?mannschaft=5670', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1348&r=1#p5670x5811', title: 'gegen CSC Aufbau 95', text: ½ }]
+    - [{ url: '?staffel=1348&r=8#p5670x5624', title: 'gegen SC Zugzwang 95', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1348&r=2#p5670x5796', title: 'gegen Rodewischer SM', text: 3½ }]
+    - [{ url: '?staffel=1348&r=5#p5670x5603', title: 'gegen Schachzentrum S', text: 3½ }]
+    - [{ url: '?staffel=1348&r=4#p5670x5742', title: 'gegen SG GW Dresden', text: 2½ }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'Rodewischer SM', url: '?mannschaft=5796', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1348&r=4#p5796x5811', title: 'gegen CSC Aufbau 95', text: ½ }]
+    - [{ url: '?staffel=1348&r=1#p5796x5624', title: 'gegen SC Zugzwang 95', text: '3' }]
+    - [{ url: '?staffel=1348&r=2#p5796x5670', title: 'gegen TuS Coswig', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1348&r=8#p5796x5603', title: 'gegen Schachzentrum S', text: '2' }]
+    - [{ url: '?staffel=1348&r=7#p5796x5742', title: 'gegen SG GW Dresden', text: '3' }]
+    - 5
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'Schachzentrum S', url: '?mannschaft=5603', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1348&r=7#p5603x5811', title: 'gegen CSC Aufbau 95', text: '2' }]
+    - [{ url: '?staffel=1348&r=4#p5603x5624', title: 'gegen SC Zugzwang 95', text: 1½ }]
+    - [{ url: '?staffel=1348&r=5#p5603x5670', title: 'gegen TuS Coswig', text: ½ }]
+    - [{ url: '?staffel=1348&r=8#p5603x5796', title: 'gegen Rodewischer SM', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1348&r=2#p5603x5742', title: 'gegen SG GW Dresden', text: '2' }]
+    - 3
+    - '8'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SG GW Dresden', url: '?mannschaft=5742', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1348&r=8#p5742x5811', title: 'gegen CSC Aufbau 95', text: 1½ }]
+    - [{ url: '?staffel=1348&r=5#p5742x5624', title: 'gegen SC Zugzwang 95', text: '2' }]
+    - [{ url: '?staffel=1348&r=4#p5742x5670', title: 'gegen TuS Coswig', text: 1½ }]
+    - [{ url: '?staffel=1348&r=7#p5742x5796', title: 'gegen Rodewischer SM', text: '1' }]
+    - [{ url: '?staffel=1348&r=2#p5742x5603', title: 'gegen Schachzentrum S', text: '2' }]
+    - xxx
+    - 2
+    - '8'
+    - absteiger

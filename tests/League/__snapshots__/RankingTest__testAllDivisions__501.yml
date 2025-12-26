@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=4681', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=983&r=3#p4681x4704', title: 'gegen Stader SV', text: 3½ }]
+    - [{ url: '?staffel=983&r=6#p4681x4694', title: 'gegen SK Nordhorn-Blanke', text: '2' }]
+    - [{ url: '?staffel=983&r=5#p4681x4685', title: 'gegen SV Laatzen', text: '6' }]
+    - [{ url: '?staffel=983&r=4#p4681x4703', title: 'gegen Rochade Göttingen', text: 4½ }]
+    - [{ url: '?staffel=983&r=1#p4681x4687', title: 'gegen SV Hellern', text: '5' }]
+    - [{ url: '?staffel=983&r=2#p4681x4686', title: 'gegen SV Lingen', text: '6' }]
+    - [{ url: '?staffel=983&r=7#p4681x4698', title: 'gegen SC Papenburg', text: '6' }]
+    - 12
+    - '33'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Stader SV', url: '?mannschaft=4704', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=983&r=3#p4704x4681', title: 'gegen Post SV Uelzen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=983&r=1#p4704x4694', title: 'gegen SK Nordhorn-Blanke', text: '6' }]
+    - [{ url: '?staffel=983&r=4#p4704x4685', title: 'gegen SV Laatzen', text: 5½ }]
+    - [{ url: '?staffel=983&r=5#p4704x4703', title: 'gegen Rochade Göttingen', text: '3' }]
+    - [{ url: '?staffel=983&r=7#p4704x4687', title: 'gegen SV Hellern', text: 5½ }]
+    - [{ url: '?staffel=983&r=6#p4704x4686', title: 'gegen SV Lingen', text: 5½ }]
+    - [{ url: '?staffel=983&r=2#p4704x4698', title: 'gegen SC Papenburg', text: 4½ }]
+    - 11
+    - 32½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Nordhorn-Blanke', url: '?mannschaft=4694', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=983&r=6#p4694x4681', title: 'gegen Post SV Uelzen', text: '4' }]
+    - [{ url: '?staffel=983&r=1#p4694x4704', title: 'gegen Stader SV', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=983&r=2#p4694x4685', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=983&r=7#p4694x4703', title: 'gegen Rochade Göttingen', text: 3½ }]
+    - [{ url: '?staffel=983&r=4#p4694x4687', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=983&r=3#p4694x4686', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=983&r=5#p4694x4698', title: 'gegen SC Papenburg', text: '4' }]
+    - 11
+    - 22½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Laatzen', url: '?mannschaft=4685', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=983&r=5#p4685x4681', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=983&r=4#p4685x4704', title: 'gegen Stader SV', text: ½ }]
+    - [{ url: '?staffel=983&r=2#p4685x4694', title: 'gegen SK Nordhorn-Blanke', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=983&r=3#p4685x4703', title: 'gegen Rochade Göttingen', text: '3' }]
+    - [{ url: '?staffel=983&r=6#p4685x4687', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=983&r=7#p4685x4686', title: 'gegen SV Lingen', text: 3½ }]
+    - [{ url: '?staffel=983&r=1#p4685x4698', title: 'gegen SC Papenburg', text: '4' }]
+    - 7
+    - '17'
+    - ''
+-
+    - '5.'
+    - { text: 'Rochade Göttingen', url: '?mannschaft=4703', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=983&r=4#p4703x4681', title: 'gegen Post SV Uelzen', text: 1½ }]
+    - [{ url: '?staffel=983&r=5#p4703x4704', title: 'gegen Stader SV', text: '3' }]
+    - [{ url: '?staffel=983&r=7#p4703x4694', title: 'gegen SK Nordhorn-Blanke', text: 2½ }]
+    - [{ url: '?staffel=983&r=3#p4703x4685', title: 'gegen SV Laatzen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=983&r=2#p4703x4687', title: 'gegen SV Hellern', text: 2½ }]
+    - [{ url: '?staffel=983&r=1#p4703x4686', title: 'gegen SV Lingen', text: '6' }]
+    - [{ url: '?staffel=983&r=6#p4703x4698', title: 'gegen SC Papenburg', text: 3½ }]
+    - 6
+    - '22'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Hellern', url: '?mannschaft=4687', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=983&r=1#p4687x4681', title: 'gegen Post SV Uelzen', text: '1' }]
+    - [{ url: '?staffel=983&r=7#p4687x4704', title: 'gegen Stader SV', text: ½ }]
+    - [{ url: '?staffel=983&r=4#p4687x4694', title: 'gegen SK Nordhorn-Blanke', text: '2' }]
+    - [{ url: '?staffel=983&r=6#p4687x4685', title: 'gegen SV Laatzen', text: '2' }]
+    - [{ url: '?staffel=983&r=2#p4687x4703', title: 'gegen Rochade Göttingen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=983&r=5#p4687x4686', title: 'gegen SV Lingen', text: 3½ }]
+    - [{ url: '?staffel=983&r=3#p4687x4698', title: 'gegen SC Papenburg', text: 4½ }]
+    - 6
+    - '17'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Lingen', url: '?mannschaft=4686', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=983&r=2#p4686x4681', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=983&r=6#p4686x4704', title: 'gegen Stader SV', text: ½ }]
+    - [{ url: '?staffel=983&r=3#p4686x4694', title: 'gegen SK Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=983&r=7#p4686x4685', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=983&r=1#p4686x4703', title: 'gegen Rochade Göttingen', text: '0' }]
+    - [{ url: '?staffel=983&r=5#p4686x4687', title: 'gegen SV Hellern', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=983&r=4#p4686x4698', title: 'gegen SC Papenburg', text: '3' }]
+    - 2
+    - 11½
+    - ''
+-
+    - '8.'
+    - { text: 'SC Papenburg', url: '?mannschaft=4698', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=983&r=7#p4698x4681', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=983&r=2#p4698x4704', title: 'gegen Stader SV', text: 1½ }]
+    - [{ url: '?staffel=983&r=5#p4698x4694', title: 'gegen SK Nordhorn-Blanke', text: '2' }]
+    - [{ url: '?staffel=983&r=1#p4698x4685', title: 'gegen SV Laatzen', text: '2' }]
+    - [{ url: '?staffel=983&r=6#p4698x4703', title: 'gegen Rochade Göttingen', text: 2½ }]
+    - [{ url: '?staffel=983&r=3#p4698x4687', title: 'gegen SV Hellern', text: 1½ }]
+    - [{ url: '?staffel=983&r=4#p4698x4686', title: 'gegen SV Lingen', text: '3' }]
+    - xxx
+    - 1
+    - 12½
+    - absteiger

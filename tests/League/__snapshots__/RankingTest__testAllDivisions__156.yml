@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Lingen', url: '?mannschaft=1814', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=570&r=2#p1814x1816', title: 'gegen SV Hellern', text: '2' }]
+    - [{ url: '?staffel=570&r=3#p1814x1815', title: 'gegen SG Oesede-Gmht.', text: 3½ }]
+    - [{ url: '?staffel=570&r=1#p1814x1817', title: 'gegen SF Spelle', text: '4' }]
+    - 5
+    - 9½
+    - ''
+-
+    - '2.'
+    - { text: 'SV Hellern', url: '?mannschaft=1816', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=570&r=2#p1816x1814', title: 'gegen SV Lingen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=570&r=1#p1816x1815', title: 'gegen SG Oesede-Gmht.', text: '2' }]
+    - [{ url: '?staffel=570&r=3#p1816x1817', title: 'gegen SF Spelle', text: '3' }]
+    - 4
+    - '7'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=1815', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=570&r=3#p1815x1814', title: 'gegen SV Lingen', text: ½ }]
+    - [{ url: '?staffel=570&r=1#p1815x1816', title: 'gegen SV Hellern', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=570&r=2#p1815x1817', title: 'gegen SF Spelle', text: '3' }]
+    - 3
+    - 5½
+    - ''
+-
+    - '4.'
+    - { text: 'SF Spelle', url: '?mannschaft=1817', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=570&r=1#p1817x1814', title: 'gegen SV Lingen', text: '0' }]
+    - [{ url: '?staffel=570&r=3#p1817x1816', title: 'gegen SV Hellern', text: '1' }]
+    - [{ url: '?staffel=570&r=2#p1817x1815', title: 'gegen SG Oesede-Gmht.', text: '1' }]
+    - xxx
+    - 0
+    - '2'
+    - ''

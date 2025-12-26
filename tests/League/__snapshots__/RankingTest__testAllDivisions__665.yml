@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'OSG Baden-Baden II', url: '?mannschaft=6243', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1415&r=1#p6243x6246', title: 'gegen TSV Forstenried', text: '4' }]
+    - [{ url: '?staffel=1415&r=3#p6243x6244', title: 'gegen Bayern München II', text: '2' }]
+    - [{ url: '?staffel=1415&r=5#p6243x6245', title: 'gegen SK Neuperlach', text: '4' }]
+    - 5
+    - '10'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TSV Forstenried', url: '?mannschaft=6246', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1415&r=1#p6246x6243', title: 'gegen OSG Baden-Baden II', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1415&r=5#p6246x6244', title: 'gegen Bayern München II', text: '3' }]
+    - [{ url: '?staffel=1415&r=3#p6246x6245', title: 'gegen SK Neuperlach', text: 2½ }]
+    - 4
+    - 5½
+    - ''
+-
+    - '3.'
+    - { text: 'Bayern München II', url: '?mannschaft=6244', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1415&r=3#p6244x6243', title: 'gegen OSG Baden-Baden II', text: '2' }]
+    - [{ url: '?staffel=1415&r=5#p6244x6246', title: 'gegen TSV Forstenried', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1415&r=1#p6244x6245', title: 'gegen SK Neuperlach', text: '2' }]
+    - 2
+    - '5'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Neuperlach', url: '?mannschaft=6245', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1415&r=5#p6245x6243', title: 'gegen OSG Baden-Baden II', text: '0' }]
+    - [{ url: '?staffel=1415&r=3#p6245x6246', title: 'gegen TSV Forstenried', text: 1½ }]
+    - [{ url: '?staffel=1415&r=1#p6245x6244', title: 'gegen Bayern München II', text: '2' }]
+    - xxx
+    - 1
+    - 3½
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Langen', url: '?mannschaft=3396', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=791&r=4#p3396x3596', title: 'gegen SV Riegelsberg', text: '3' }]
+    - [{ url: '?staffel=791&r=2#p3396x3595', title: 'gegen SVG Oberhessen', text: 3½ }]
+    - [{ url: '?staffel=791&r=3#p3396x3369', title: 'gegen TSG Mutterstadt', text: '3' }]
+    - [{ url: '?staffel=791&r=5#p3396x3466', title: 'gegen SC Eschborn', text: '2' }]
+    - [{ url: '?staffel=791&r=1#p3396x3579', title: 'gegen Vorw.Orient Mz', text: '3' }]
+    - 9
+    - 14½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Riegelsberg', url: '?mannschaft=3596', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=791&r=4#p3596x3396', title: 'gegen SK Langen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=791&r=1#p3596x3595', title: 'gegen SVG Oberhessen', text: '3' }]
+    - [{ url: '?staffel=791&r=2#p3596x3369', title: 'gegen TSG Mutterstadt', text: '1' }]
+    - [{ url: '?staffel=791&r=3#p3596x3466', title: 'gegen SC Eschborn', text: '4' }]
+    - [{ url: '?staffel=791&r=5#p3596x3579', title: 'gegen Vorw.Orient Mz', text: 2½ }]
+    - 6
+    - 11½
+    - ''
+-
+    - '3.'
+    - { text: 'SVG Oberhessen', url: '?mannschaft=3595', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=791&r=2#p3595x3396', title: 'gegen SK Langen', text: ½ }]
+    - [{ url: '?staffel=791&r=1#p3595x3596', title: 'gegen SV Riegelsberg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=791&r=5#p3595x3369', title: 'gegen TSG Mutterstadt', text: '4' }]
+    - [{ url: '?staffel=791&r=4#p3595x3466', title: 'gegen SC Eschborn', text: '2' }]
+    - [{ url: '?staffel=791&r=3#p3595x3579', title: 'gegen Vorw.Orient Mz', text: '4' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'TSG Mutterstadt', url: '?mannschaft=3369', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=791&r=3#p3369x3396', title: 'gegen SK Langen', text: '1' }]
+    - [{ url: '?staffel=791&r=2#p3369x3596', title: 'gegen SV Riegelsberg', text: '3' }]
+    - [{ url: '?staffel=791&r=5#p3369x3595', title: 'gegen SVG Oberhessen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=791&r=1#p3369x3466', title: 'gegen SC Eschborn', text: '2' }]
+    - [{ url: '?staffel=791&r=4#p3369x3579', title: 'gegen Vorw.Orient Mz', text: '4' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Eschborn', url: '?mannschaft=3466', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=791&r=5#p3466x3396', title: 'gegen SK Langen', text: '2' }]
+    - [{ url: '?staffel=791&r=3#p3466x3596', title: 'gegen SV Riegelsberg', text: '0' }]
+    - [{ url: '?staffel=791&r=4#p3466x3595', title: 'gegen SVG Oberhessen', text: '2' }]
+    - [{ url: '?staffel=791&r=1#p3466x3369', title: 'gegen TSG Mutterstadt', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=791&r=2#p3466x3579', title: 'gegen Vorw.Orient Mz', text: 3½ }]
+    - 5
+    - 9½
+    - absteiger
+-
+    - '6.'
+    - { text: 'Vorw.Orient Mz', url: '?mannschaft=3579', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=791&r=1#p3579x3396', title: 'gegen SK Langen', text: '1' }]
+    - [{ url: '?staffel=791&r=5#p3579x3596', title: 'gegen SV Riegelsberg', text: 1½ }]
+    - [{ url: '?staffel=791&r=3#p3579x3595', title: 'gegen SVG Oberhessen', text: '0' }]
+    - [{ url: '?staffel=791&r=4#p3579x3369', title: 'gegen TSG Mutterstadt', text: '0' }]
+    - [{ url: '?staffel=791&r=2#p3579x3466', title: 'gegen SC Eschborn', text: ½ }]
+    - xxx
+    - 0
+    - '3'
+    - absteiger

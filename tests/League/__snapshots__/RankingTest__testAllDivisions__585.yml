@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'FC Bayern München', url: '?mannschaft=4980', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1071&r=7#p4980x4975', title: 'gegen SV Wolfbusch', text: '3' }]
+    - [{ url: '?staffel=1071&r=6#p4980x4982', title: 'gegen SG Augsburg', text: '4' }]
+    - [{ url: '?staffel=1071&r=2#p4980x4976', title: 'gegen SK Langen', text: '3' }]
+    - [{ url: '?staffel=1071&r=4#p4980x4979', title: 'gegen TSV Schott Mainz', text: 5½ }]
+    - [{ url: '?staffel=1071&r=5#p4980x4978', title: 'gegen SF Wadgassen', text: 4½ }]
+    - [{ url: '?staffel=1071&r=1#p4980x4981', title: 'gegen SK Gernsheim', text: '6' }]
+    - [{ url: '?staffel=1071&r=3#p4980x4977', title: 'gegen TSV Forstenried', text: 5½ }]
+    - 12
+    - 31½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Wolfbusch', url: '?mannschaft=4975', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1071&r=7#p4975x4980', title: 'gegen FC Bayern München', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1071&r=3#p4975x4982', title: 'gegen SG Augsburg', text: '5' }]
+    - [{ url: '?staffel=1071&r=4#p4975x4976', title: 'gegen SK Langen', text: '3' }]
+    - [{ url: '?staffel=1071&r=2#p4975x4979', title: 'gegen TSV Schott Mainz', text: 2½ }]
+    - [{ url: '?staffel=1071&r=1#p4975x4978', title: 'gegen SF Wadgassen', text: '5' }]
+    - [{ url: '?staffel=1071&r=5#p4975x4981', title: 'gegen SK Gernsheim', text: '5' }]
+    - [{ url: '?staffel=1071&r=6#p4975x4977', title: 'gegen TSV Forstenried', text: 4½ }]
+    - 10
+    - '28'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Augsburg', url: '?mannschaft=4982', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1071&r=6#p4982x4980', title: 'gegen FC Bayern München', text: '2' }]
+    - [{ url: '?staffel=1071&r=3#p4982x4975', title: 'gegen SV Wolfbusch', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1071&r=5#p4982x4976', title: 'gegen SK Langen', text: '5' }]
+    - [{ url: '?staffel=1071&r=1#p4982x4979', title: 'gegen TSV Schott Mainz', text: 3½ }]
+    - [{ url: '?staffel=1071&r=2#p4982x4978', title: 'gegen SF Wadgassen', text: '3' }]
+    - [{ url: '?staffel=1071&r=4#p4982x4981', title: 'gegen SK Gernsheim', text: '5' }]
+    - [{ url: '?staffel=1071&r=7#p4982x4977', title: 'gegen TSV Forstenried', text: '4' }]
+    - 9
+    - 23½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Langen', url: '?mannschaft=4976', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1071&r=2#p4976x4980', title: 'gegen FC Bayern München', text: '3' }]
+    - [{ url: '?staffel=1071&r=4#p4976x4975', title: 'gegen SV Wolfbusch', text: '3' }]
+    - [{ url: '?staffel=1071&r=5#p4976x4982', title: 'gegen SG Augsburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1071&r=7#p4976x4979', title: 'gegen TSV Schott Mainz', text: '4' }]
+    - [{ url: '?staffel=1071&r=6#p4976x4978', title: 'gegen SF Wadgassen', text: '4' }]
+    - [{ url: '?staffel=1071&r=3#p4976x4981', title: 'gegen SK Gernsheim', text: 2½ }]
+    - [{ url: '?staffel=1071&r=1#p4976x4977', title: 'gegen TSV Forstenried', text: 3½ }]
+    - 8
+    - '21'
+    - ''
+-
+    - '5.'
+    - { text: 'TSV Schott Mainz', url: '?mannschaft=4979', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1071&r=4#p4979x4980', title: 'gegen FC Bayern München', text: ½ }]
+    - [{ url: '?staffel=1071&r=2#p4979x4975', title: 'gegen SV Wolfbusch', text: 3½ }]
+    - [{ url: '?staffel=1071&r=1#p4979x4982', title: 'gegen SG Augsburg', text: 2½ }]
+    - [{ url: '?staffel=1071&r=7#p4979x4976', title: 'gegen SK Langen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1071&r=3#p4979x4978', title: 'gegen SF Wadgassen', text: '3' }]
+    - [{ url: '?staffel=1071&r=6#p4979x4981', title: 'gegen SK Gernsheim', text: '4' }]
+    - [{ url: '?staffel=1071&r=5#p4979x4977', title: 'gegen TSV Forstenried', text: '3' }]
+    - 6
+    - 18½
+    - ''
+-
+    - '6.'
+    - { text: 'SF Wadgassen', url: '?mannschaft=4978', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1071&r=5#p4978x4980', title: 'gegen FC Bayern München', text: 1½ }]
+    - [{ url: '?staffel=1071&r=1#p4978x4975', title: 'gegen SV Wolfbusch', text: '1' }]
+    - [{ url: '?staffel=1071&r=2#p4978x4982', title: 'gegen SG Augsburg', text: '3' }]
+    - [{ url: '?staffel=1071&r=6#p4978x4976', title: 'gegen SK Langen', text: '2' }]
+    - [{ url: '?staffel=1071&r=3#p4978x4979', title: 'gegen TSV Schott Mainz', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1071&r=7#p4978x4981', title: 'gegen SK Gernsheim', text: 3½ }]
+    - [{ url: '?staffel=1071&r=4#p4978x4977', title: 'gegen TSV Forstenried', text: '4' }]
+    - 6
+    - '18'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Gernsheim', url: '?mannschaft=4981', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1071&r=1#p4981x4980', title: 'gegen FC Bayern München', text: '0' }]
+    - [{ url: '?staffel=1071&r=5#p4981x4975', title: 'gegen SV Wolfbusch', text: '1' }]
+    - [{ url: '?staffel=1071&r=4#p4981x4982', title: 'gegen SG Augsburg', text: '1' }]
+    - [{ url: '?staffel=1071&r=3#p4981x4976', title: 'gegen SK Langen', text: 3½ }]
+    - [{ url: '?staffel=1071&r=6#p4981x4979', title: 'gegen TSV Schott Mainz', text: '2' }]
+    - [{ url: '?staffel=1071&r=7#p4981x4978', title: 'gegen SF Wadgassen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1071&r=2#p4981x4977', title: 'gegen TSV Forstenried', text: '3' }]
+    - 3
+    - '13'
+    - absteiger
+-
+    - '8.'
+    - { text: 'TSV Forstenried', url: '?mannschaft=4977', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1071&r=3#p4977x4980', title: 'gegen FC Bayern München', text: ½ }]
+    - [{ url: '?staffel=1071&r=6#p4977x4975', title: 'gegen SV Wolfbusch', text: 1½ }]
+    - [{ url: '?staffel=1071&r=7#p4977x4982', title: 'gegen SG Augsburg', text: '2' }]
+    - [{ url: '?staffel=1071&r=1#p4977x4976', title: 'gegen SK Langen', text: 2½ }]
+    - [{ url: '?staffel=1071&r=5#p4977x4979', title: 'gegen TSV Schott Mainz', text: '3' }]
+    - [{ url: '?staffel=1071&r=4#p4977x4978', title: 'gegen SF Wadgassen', text: '2' }]
+    - [{ url: '?staffel=1071&r=2#p4977x4981', title: 'gegen SK Gernsheim', text: '3' }]
+    - xxx
+    - 2
+    - 14½
+    - absteiger

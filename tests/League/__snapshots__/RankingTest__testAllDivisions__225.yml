@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=2587', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=652&r=2#p2587x2621', title: 'gegen TuS Wunstorf', text: '5' }]
+    - [{ url: '?staffel=652&r=1#p2587x2640', title: 'gegen SF Hannover 3', text: 4½ }]
+    - [{ url: '?staffel=652&r=6#p2587x2494', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=652&r=8#p2587x2627', title: 'gegen Eystruper SK', text: 7½ }]
+    - [{ url: '?staffel=652&r=5#p2587x2575', title: 'gegen SVg Calenberg', text: '5' }]
+    - [{ url: '?staffel=652&r=7#p2587x2545', title: 'gegen H96 Schach 3', text: 5½ }]
+    - [{ url: '?staffel=652&r=9#p2587x2614', title: 'gegen SV Springe 2', text: '8' }]
+    - [{ url: '?staffel=652&r=4#p2587x2348', title: 'gegen SK Ricklingen 2', text: 4½ }]
+    - 16
+    - 44½
+    - ''
+-
+    - '2.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=2621', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=652&r=2#p2621x2587', title: 'gegen SK Stolzenau', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=652&r=3#p2621x2640', title: 'gegen SF Hannover 3', text: 5½ }]
+    - [{ url: '?staffel=652&r=8#p2621x2494', title: 'gegen SK Wennigsen', text: '4' }]
+    - [{ url: '?staffel=652&r=1#p2621x2627', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=652&r=7#p2621x2575', title: 'gegen SVg Calenberg', text: '4' }]
+    - [{ url: '?staffel=652&r=9#p2621x2545', title: 'gegen H96 Schach 3', text: '8' }]
+    - [{ url: '?staffel=652&r=4#p2621x2614', title: 'gegen SV Springe 2', text: '6' }]
+    - [{ url: '?staffel=652&r=6#p2621x2348', title: 'gegen SK Ricklingen 2', text: '5' }]
+    - 12
+    - '41'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Hannover 3', url: '?mannschaft=2640', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=652&r=1#p2640x2587', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=652&r=3#p2640x2621', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=652&r=7#p2640x2494', title: 'gegen SK Wennigsen', text: '5' }]
+    - [{ url: '?staffel=652&r=9#p2640x2627', title: 'gegen Eystruper SK', text: 4½ }]
+    - [{ url: '?staffel=652&r=6#p2640x2575', title: 'gegen SVg Calenberg', text: 4½ }]
+    - [{ url: '?staffel=652&r=8#p2640x2545', title: 'gegen H96 Schach 3', text: '4' }]
+    - [{ url: '?staffel=652&r=2#p2640x2614', title: 'gegen SV Springe 2', text: '6' }]
+    - [{ url: '?staffel=652&r=5#p2640x2348', title: 'gegen SK Ricklingen 2', text: '7' }]
+    - 11
+    - '37'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=2494', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=652&r=6#p2494x2587', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=652&r=8#p2494x2621', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=652&r=7#p2494x2640', title: 'gegen SF Hannover 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=652&r=5#p2494x2627', title: 'gegen Eystruper SK', text: 4½ }]
+    - [{ url: '?staffel=652&r=2#p2494x2575', title: 'gegen SVg Calenberg', text: 3½ }]
+    - [{ url: '?staffel=652&r=4#p2494x2545', title: 'gegen H96 Schach 3', text: 4½ }]
+    - [{ url: '?staffel=652&r=3#p2494x2614', title: 'gegen SV Springe 2', text: '5' }]
+    - [{ url: '?staffel=652&r=1#p2494x2348', title: 'gegen SK Ricklingen 2', text: '6' }]
+    - 9
+    - '34'
+    - ''
+-
+    - '5.'
+    - { text: 'Eystruper SK', url: '?mannschaft=2627', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=652&r=8#p2627x2587', title: 'gegen SK Stolzenau', text: ½ }]
+    - [{ url: '?staffel=652&r=1#p2627x2621', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=652&r=9#p2627x2640', title: 'gegen SF Hannover 3', text: 3½ }]
+    - [{ url: '?staffel=652&r=5#p2627x2494', title: 'gegen SK Wennigsen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=652&r=4#p2627x2575', title: 'gegen SVg Calenberg', text: '6' }]
+    - [{ url: '?staffel=652&r=6#p2627x2545', title: 'gegen H96 Schach 3', text: '5' }]
+    - [{ url: '?staffel=652&r=7#p2627x2614', title: 'gegen SV Springe 2', text: '6' }]
+    - [{ url: '?staffel=652&r=3#p2627x2348', title: 'gegen SK Ricklingen 2', text: 4½ }]
+    - 8
+    - 31½
+    - ''
+-
+    - '6.'
+    - { text: 'SVg Calenberg', url: '?mannschaft=2575', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=652&r=5#p2575x2587', title: 'gegen SK Stolzenau', text: '3' }]
+    - [{ url: '?staffel=652&r=7#p2575x2621', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=652&r=6#p2575x2640', title: 'gegen SF Hannover 3', text: 3½ }]
+    - [{ url: '?staffel=652&r=2#p2575x2494', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=652&r=4#p2575x2627', title: 'gegen Eystruper SK', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=652&r=3#p2575x2545', title: 'gegen H96 Schach 3', text: '3' }]
+    - [{ url: '?staffel=652&r=1#p2575x2614', title: 'gegen SV Springe 2', text: '4' }]
+    - [{ url: '?staffel=652&r=9#p2575x2348', title: 'gegen SK Ricklingen 2', text: '6' }]
+    - 6
+    - '30'
+    - ''
+-
+    - '7.'
+    - { text: 'H96 Schach 3', url: '?mannschaft=2545', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=652&r=7#p2545x2587', title: 'gegen SK Stolzenau', text: 2½ }]
+    - [{ url: '?staffel=652&r=9#p2545x2621', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=652&r=8#p2545x2640', title: 'gegen SF Hannover 3', text: '4' }]
+    - [{ url: '?staffel=652&r=4#p2545x2494', title: 'gegen SK Wennigsen', text: 3½ }]
+    - [{ url: '?staffel=652&r=6#p2545x2627', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=652&r=3#p2545x2575', title: 'gegen SVg Calenberg', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=652&r=5#p2545x2614', title: 'gegen SV Springe 2', text: 4½ }]
+    - [{ url: '?staffel=652&r=2#p2545x2348', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - 6
+    - 26½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Springe 2', url: '?mannschaft=2614', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=652&r=9#p2614x2587', title: 'gegen SK Stolzenau', text: '0' }]
+    - [{ url: '?staffel=652&r=4#p2614x2621', title: 'gegen TuS Wunstorf', text: '2' }]
+    - [{ url: '?staffel=652&r=2#p2614x2640', title: 'gegen SF Hannover 3', text: '2' }]
+    - [{ url: '?staffel=652&r=3#p2614x2494', title: 'gegen SK Wennigsen', text: '3' }]
+    - [{ url: '?staffel=652&r=7#p2614x2627', title: 'gegen Eystruper SK', text: '2' }]
+    - [{ url: '?staffel=652&r=1#p2614x2575', title: 'gegen SVg Calenberg', text: '4' }]
+    - [{ url: '?staffel=652&r=5#p2614x2545', title: 'gegen H96 Schach 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=652&r=8#p2614x2348', title: 'gegen SK Ricklingen 2', text: '8' }]
+    - 3
+    - 24½
+    - ''
+-
+    - '9.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=2348', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=652&r=4#p2348x2587', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=652&r=6#p2348x2621', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=652&r=5#p2348x2640', title: 'gegen SF Hannover 3', text: '1' }]
+    - [{ url: '?staffel=652&r=1#p2348x2494', title: 'gegen SK Wennigsen', text: '2' }]
+    - [{ url: '?staffel=652&r=3#p2348x2627', title: 'gegen Eystruper SK', text: 3½ }]
+    - [{ url: '?staffel=652&r=9#p2348x2575', title: 'gegen SVg Calenberg', text: '2' }]
+    - [{ url: '?staffel=652&r=2#p2348x2545', title: 'gegen H96 Schach 3', text: '4' }]
+    - [{ url: '?staffel=652&r=8#p2348x2614', title: 'gegen SV Springe 2', text: '0' }]
+    - xxx
+    - 1
+    - '19'
+    - ''

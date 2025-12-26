@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Laatzen', url: '?mannschaft=3149', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=734&r=2#p3149x3239', title: 'gegen Hannover 96', text: 3½ }]
+    - [{ url: '?staffel=734&r=1#p3149x3124', title: 'gegen Barsinghausen', text: '5' }]
+    - [{ url: '?staffel=734&r=4#p3149x3174', title: 'gegen SK Ricklingen', text: 3½ }]
+    - [{ url: '?staffel=734&r=5#p3149x3225', title: 'gegen SK Anderten', text: '6' }]
+    - 8
+    - '18'
+    - ''
+-
+    - '2.'
+    - { text: 'Hannover 96', url: '?mannschaft=3239', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=734&r=2#p3239x3149', title: 'gegen SV Laatzen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=734&r=5#p3239x3124', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=734&r=3#p3239x3174', title: 'gegen SK Ricklingen', text: '5' }]
+    - [{ url: '?staffel=734&r=4#p3239x3225', title: 'gegen SK Anderten', text: '6' }]
+    - 5
+    - 16½
+    - ''
+-
+    - '3.'
+    - { text: Barsinghausen, url: '?mannschaft=3124', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=734&r=1#p3124x3149', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=734&r=5#p3124x3239', title: 'gegen Hannover 96', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=734&r=2#p3124x3174', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=734&r=3#p3124x3225', title: 'gegen SK Anderten', text: '6' }]
+    - 4
+    - '13'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=3174', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=734&r=4#p3174x3149', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=734&r=3#p3174x3239', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=734&r=2#p3174x3124', title: 'gegen Barsinghausen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=734&r=1#p3174x3225', title: 'gegen SK Anderten', text: '6' }]
+    - 3
+    - 12½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Anderten', url: '?mannschaft=3225', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=734&r=5#p3225x3149', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=734&r=4#p3225x3239', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=734&r=3#p3225x3124', title: 'gegen Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=734&r=1#p3225x3174', title: 'gegen SK Ricklingen', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - main
-      - php-ci
   pull_request:
     branches:
       - main
-      - php-ci
 
 jobs:
   phpunit:
@@ -18,36 +16,42 @@ jobs:
         image: mysql:5.7
         ports:
           - 3306:3306
-        volumes:
-          - ./dbinit:/docker-entrypoint-initdb.d
         env:
           MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: nsv-test-ligen
+          MYSQL_DATABASE: nsv-main
           MYSQL_USER: docker
           MYSQL_PASSWORD: docker
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up env file
-        run: cp .github/workflows/phpunit.env .env.test.local
+        run: |
+          cp .github/workflows/phpunit.env .env.test.local &&
+          cp public/ligen/config-sample.inc.php public/ligen/config.inc.php
+
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.4'
+
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-interaction --no-progress --no-scripts
 
       - name: Initialize database
         run: |
-          mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-test-ligen < ./dev/dbinit/90-test-ligen-structure.sql && \
-          mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-test-ligen < ./dev/dbinit/91-test-ligen-data.sql
-      - name: Prepare test fixtures
-        run: |
-          ./bin/console --env=test --em=league doctrine:fixtures:load --no-interaction
-      - name: Prepare snapshot tests
-        run: |
-          mkdir -p tests/League/Api/Service/actual
+          for sqlfile in ./dev/dbinit/*.sql; do
+            if [[ "$(basename "$sqlfile")" != "00-create-databases.sql" ]]; then
+              mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-main < "$sqlfile"
+            fi
+          done
 
       - name: Run tests
         run: |
-          ./bin/phpunit
+          XDEBUG_MODE=coverage ./bin/phpunit --coverage-html var/coverage
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: phpunit-coverage-report
+          path: var/coverage/

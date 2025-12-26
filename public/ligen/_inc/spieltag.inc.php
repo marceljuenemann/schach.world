@@ -1,4 +1,4 @@
-<?
+<?php
 /* Backend zur Spieltag-Anzeige
  * 
  * Dieses Skript berechnet alle Daten, die bei der Spieltag-Ansicht

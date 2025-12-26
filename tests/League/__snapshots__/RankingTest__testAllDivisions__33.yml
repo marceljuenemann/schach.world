@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Nordhorn-Blanke 2', url: '?mannschaft=673', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=431&r=3#p673x674', title: 'gegen SK Lehrte', text: '5' }]
+    - [{ url: '?staffel=431&r=2#p673x675', title: 'gegen Wilhelmshav. SF', text: '0' }]
+    - [{ url: '?staffel=431&r=1#p673x676', title: 'gegen SK Ricklingen', text: '5' }]
+    - 4
+    - '10'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte', url: '?mannschaft=674', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=431&r=3#p674x673', title: 'gegen Nordhorn-Blanke 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=431&r=1#p674x675', title: 'gegen Wilhelmshav. SF', text: '4' }]
+    - [{ url: '?staffel=431&r=2#p674x676', title: 'gegen SK Ricklingen', text: 3½ }]
+    - 4
+    - 7½
+    - ''
+-
+    - '3.'
+    - { text: 'Wilhelmshav. SF', url: '?mannschaft=675', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=431&r=2#p675x673', title: 'gegen Nordhorn-Blanke 2', text: '5' }]
+    - [{ url: '?staffel=431&r=1#p675x674', title: 'gegen SK Lehrte', text: '1' }]
+    - xxx
+    - {  }
+    - 2
+    - '6'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=676', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=431&r=1#p676x673', title: 'gegen Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=431&r=2#p676x674', title: 'gegen SK Lehrte', text: 1½ }]
+    - {  }
+    - xxx
+    - 0
+    - 1½
+    - ''

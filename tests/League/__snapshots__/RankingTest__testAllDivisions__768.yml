@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Mattnetz Berlin', url: '?mannschaft=6548', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1570&r=5#p6548x6545', title: 'gegen SC Kreuzberg', text: '4' }]
+    - [{ url: '?staffel=1570&r=4#p6548x6539', title: 'gegen Borus. Lichtenberg', text: 4½ }]
+    - [{ url: '?staffel=1570&r=2#p6548x6543', title: 'gegen SC Weisse Dame', text: '6' }]
+    - [{ url: '?staffel=1570&r=1#p6548x6542', title: 'gegen Königsjäger Süd-West', text: 3½ }]
+    - [{ url: '?staffel=1570&r=3#p6548x6547', title: 'gegen SC Empor Potsdam', text: '6' }]
+    - 10
+    - '24'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Kreuzberg', url: '?mannschaft=6545', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1570&r=5#p6545x6548', title: 'gegen Mattnetz Berlin', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1570&r=3#p6545x6539', title: 'gegen Borus. Lichtenberg', text: 3½ }]
+    - [{ url: '?staffel=1570&r=1#p6545x6543', title: 'gegen SC Weisse Dame', text: 5½ }]
+    - [{ url: '?staffel=1570&r=4#p6545x6542', title: 'gegen Königsjäger Süd-West', text: 5½ }]
+    - [{ url: '?staffel=1570&r=2#p6545x6547', title: 'gegen SC Empor Potsdam', text: 5½ }]
+    - 8
+    - '22'
+    - ''
+-
+    - '3.'
+    - { text: 'Borus. Lichtenberg', url: '?mannschaft=6539', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1570&r=4#p6539x6548', title: 'gegen Mattnetz Berlin', text: 1½ }]
+    - [{ url: '?staffel=1570&r=3#p6539x6545', title: 'gegen SC Kreuzberg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1570&r=5#p6539x6543', title: 'gegen SC Weisse Dame', text: 5½ }]
+    - [{ url: '?staffel=1570&r=2#p6539x6542', title: 'gegen Königsjäger Süd-West', text: 4½ }]
+    - [{ url: '?staffel=1570&r=1#p6539x6547', title: 'gegen SC Empor Potsdam', text: 3½ }]
+    - 6
+    - 17½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Weisse Dame', url: '?mannschaft=6543', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1570&r=2#p6543x6548', title: 'gegen Mattnetz Berlin', text: '0' }]
+    - [{ url: '?staffel=1570&r=1#p6543x6545', title: 'gegen SC Kreuzberg', text: ½ }]
+    - [{ url: '?staffel=1570&r=5#p6543x6539', title: 'gegen Borus. Lichtenberg', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1570&r=3#p6543x6542', title: 'gegen Königsjäger Süd-West', text: '4' }]
+    - [{ url: '?staffel=1570&r=4#p6543x6547', title: 'gegen SC Empor Potsdam', text: '6' }]
+    - 4
+    - '11'
+    - ''
+-
+    - '5.'
+    - { text: 'Königsjäger Süd-West', url: '?mannschaft=6542', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1570&r=1#p6542x6548', title: 'gegen Mattnetz Berlin', text: 2½ }]
+    - [{ url: '?staffel=1570&r=4#p6542x6545', title: 'gegen SC Kreuzberg', text: ½ }]
+    - [{ url: '?staffel=1570&r=2#p6542x6539', title: 'gegen Borus. Lichtenberg', text: 1½ }]
+    - [{ url: '?staffel=1570&r=3#p6542x6543', title: 'gegen SC Weisse Dame', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1570&r=5#p6542x6547', title: 'gegen SC Empor Potsdam', text: '6' }]
+    - 2
+    - 12½
+    - ''
+-
+    - '6.'
+    - { text: 'SC Empor Potsdam', url: '?mannschaft=6547', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1570&r=3#p6547x6548', title: 'gegen Mattnetz Berlin', text: '0' }]
+    - [{ url: '?staffel=1570&r=2#p6547x6545', title: 'gegen SC Kreuzberg', text: ½ }]
+    - [{ url: '?staffel=1570&r=1#p6547x6539', title: 'gegen Borus. Lichtenberg', text: 2½ }]
+    - [{ url: '?staffel=1570&r=4#p6547x6543', title: 'gegen SC Weisse Dame', text: '0' }]
+    - [{ url: '?staffel=1570&r=5#p6547x6542', title: 'gegen Königsjäger Süd-West', text: '0' }]
+    - xxx
+    - 0
+    - '3'
+    - ''

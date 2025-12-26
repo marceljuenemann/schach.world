@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TuS Coswig', url: '?mannschaft=6255', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1417&r=3#p6255x6256', title: 'gegen Meuselwitzer SV', text: 2½ }]
+    - [{ url: '?staffel=1417&r=4#p6255x6252', title: 'gegen Rodewischer SM 2', text: 2½ }]
+    - [{ url: '?staffel=1417&r=1#p6255x6262', title: 'gegen SG GW Dresden', text: '3' }]
+    - [{ url: '?staffel=1417&r=2#p6255x6257', title: 'gegen USG Chemnitz', text: 2½ }]
+    - [{ url: '?staffel=1417&r=5#p6255x6253', title: 'gegen Leipzig-Lindenau', text: 3½ }]
+    - 10
+    - '14'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Meuselwitzer SV', url: '?mannschaft=6256', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1417&r=3#p6256x6255', title: 'gegen TuS Coswig', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1417&r=5#p6256x6252', title: 'gegen Rodewischer SM 2', text: '2' }]
+    - [{ url: '?staffel=1417&r=2#p6256x6262', title: 'gegen SG GW Dresden', text: 2½ }]
+    - [{ url: '?staffel=1417&r=4#p6256x6257', title: 'gegen USG Chemnitz', text: '2' }]
+    - [{ url: '?staffel=1417&r=1#p6256x6253', title: 'gegen Leipzig-Lindenau', text: '3' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'Rodewischer SM 2', url: '?mannschaft=6252', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1417&r=4#p6252x6255', title: 'gegen TuS Coswig', text: 1½ }]
+    - [{ url: '?staffel=1417&r=5#p6252x6256', title: 'gegen Meuselwitzer SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1417&r=3#p6252x6262', title: 'gegen SG GW Dresden', text: 3½ }]
+    - [{ url: '?staffel=1417&r=1#p6252x6257', title: 'gegen USG Chemnitz', text: '3' }]
+    - [{ url: '?staffel=1417&r=2#p6252x6253', title: 'gegen Leipzig-Lindenau', text: '2' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SG GW Dresden', url: '?mannschaft=6262', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1417&r=1#p6262x6255', title: 'gegen TuS Coswig', text: '1' }]
+    - [{ url: '?staffel=1417&r=2#p6262x6256', title: 'gegen Meuselwitzer SV', text: 1½ }]
+    - [{ url: '?staffel=1417&r=3#p6262x6252', title: 'gegen Rodewischer SM 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1417&r=5#p6262x6257', title: 'gegen USG Chemnitz', text: 2½ }]
+    - [{ url: '?staffel=1417&r=4#p6262x6253', title: 'gegen Leipzig-Lindenau', text: '3' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'USG Chemnitz', url: '?mannschaft=6257', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1417&r=2#p6257x6255', title: 'gegen TuS Coswig', text: 1½ }]
+    - [{ url: '?staffel=1417&r=4#p6257x6256', title: 'gegen Meuselwitzer SV', text: '2' }]
+    - [{ url: '?staffel=1417&r=1#p6257x6252', title: 'gegen Rodewischer SM 2', text: '1' }]
+    - [{ url: '?staffel=1417&r=5#p6257x6262', title: 'gegen SG GW Dresden', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1417&r=3#p6257x6253', title: 'gegen Leipzig-Lindenau', text: '3' }]
+    - 3
+    - '9'
+    - absteiger
+-
+    - '6.'
+    - { text: Leipzig-Lindenau, url: '?mannschaft=6253', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1417&r=5#p6253x6255', title: 'gegen TuS Coswig', text: ½ }]
+    - [{ url: '?staffel=1417&r=1#p6253x6256', title: 'gegen Meuselwitzer SV', text: '1' }]
+    - [{ url: '?staffel=1417&r=2#p6253x6252', title: 'gegen Rodewischer SM 2', text: '2' }]
+    - [{ url: '?staffel=1417&r=4#p6253x6262', title: 'gegen SG GW Dresden', text: '0' }]
+    - [{ url: '?staffel=1417&r=3#p6253x6257', title: 'gegen USG Chemnitz', text: '1' }]
+    - xxx
+    - 1
+    - 4½
+    - absteiger

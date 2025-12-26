@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Gernsheim', url: '?mannschaft=2895', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=716&r=5#p2895x2871', title: 'gegen SK Landau', text: '2' }]
+    - [{ url: '?staffel=716&r=2#p2895x2927', title: 'gegen Vorw.Orient Mz', text: 3½ }]
+    - [{ url: '?staffel=716&r=1#p2895x2928', title: 'gegen SK Langen', text: '3' }]
+    - [{ url: '?staffel=716&r=3#p2895x3222', title: 'gegen Makkabi Wiesb.', text: '4' }]
+    - [{ url: '?staffel=716&r=4#p2895x2916', title: 'gegen SV Riegelsberg', text: 2½ }]
+    - 9
+    - '15'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Landau', url: '?mannschaft=2871', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=716&r=5#p2871x2895', title: 'gegen SK Gernsheim', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=716&r=3#p2871x2927', title: 'gegen Vorw.Orient Mz', text: '2' }]
+    - [{ url: '?staffel=716&r=2#p2871x2928', title: 'gegen SK Langen', text: 2½ }]
+    - [{ url: '?staffel=716&r=4#p2871x3222', title: 'gegen Makkabi Wiesb.', text: 2½ }]
+    - [{ url: '?staffel=716&r=1#p2871x2916', title: 'gegen SV Riegelsberg', text: '4' }]
+    - 8
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: 'Vorw.Orient Mz', url: '?mannschaft=2927', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=716&r=2#p2927x2895', title: 'gegen SK Gernsheim', text: ½ }]
+    - [{ url: '?staffel=716&r=3#p2927x2871', title: 'gegen SK Landau', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=716&r=4#p2927x2928', title: 'gegen SK Langen', text: 2½ }]
+    - [{ url: '?staffel=716&r=1#p2927x3222', title: 'gegen Makkabi Wiesb.', text: '4' }]
+    - [{ url: '?staffel=716&r=5#p2927x2916', title: 'gegen SV Riegelsberg', text: '0' }]
+    - 5
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Langen', url: '?mannschaft=2928', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=716&r=1#p2928x2895', title: 'gegen SK Gernsheim', text: '1' }]
+    - [{ url: '?staffel=716&r=2#p2928x2871', title: 'gegen SK Landau', text: 1½ }]
+    - [{ url: '?staffel=716&r=4#p2928x2927', title: 'gegen Vorw.Orient Mz', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=716&r=5#p2928x3222', title: 'gegen Makkabi Wiesb.', text: '4' }]
+    - [{ url: '?staffel=716&r=3#p2928x2916', title: 'gegen SV Riegelsberg', text: '4' }]
+    - 4
+    - '12'
+    - ''
+-
+    - '5.'
+    - { text: 'Makkabi Wiesb.', url: '?mannschaft=3222', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=716&r=3#p3222x2895', title: 'gegen SK Gernsheim', text: '0' }]
+    - [{ url: '?staffel=716&r=4#p3222x2871', title: 'gegen SK Landau', text: 1½ }]
+    - [{ url: '?staffel=716&r=1#p3222x2927', title: 'gegen Vorw.Orient Mz', text: '0' }]
+    - [{ url: '?staffel=716&r=5#p3222x2928', title: 'gegen SK Langen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=716&r=2#p3222x2916', title: 'gegen SV Riegelsberg', text: '4' }]
+    - 2
+    - 5½
+    - absteiger
+-
+    - '6.'
+    - { text: 'SV Riegelsberg', url: '?mannschaft=2916', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=716&r=4#p2916x2895', title: 'gegen SK Gernsheim', text: 1½ }]
+    - [{ url: '?staffel=716&r=1#p2916x2871', title: 'gegen SK Landau', text: '0' }]
+    - [{ url: '?staffel=716&r=5#p2916x2927', title: 'gegen Vorw.Orient Mz', text: '4' }]
+    - [{ url: '?staffel=716&r=3#p2916x2928', title: 'gegen SK Langen', text: '0' }]
+    - [{ url: '?staffel=716&r=2#p2916x3222', title: 'gegen Makkabi Wiesb.', text: '0' }]
+    - xxx
+    - 2
+    - 5½
+    - absteiger

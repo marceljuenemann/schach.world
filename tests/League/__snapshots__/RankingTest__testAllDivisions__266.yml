@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Lübecker SV', url: '?mannschaft=2708', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=698&r=7#p2708x2712', title: 'gegen Elmshorner SC', text: '4' }]
+    - [{ url: '?staffel=698&r=2#p2708x2707', title: 'gegen SF Burg', text: '4' }]
+    - [{ url: '?staffel=698&r=9#p2708x2714', title: 'gegen SK Doppelbauer 2', text: 4½ }]
+    - [{ url: '?staffel=698&r=1#p2708x2715', title: 'gegen Lübecker SV 2', text: 4½ }]
+    - [{ url: '?staffel=698&r=8#p2708x2713', title: 'gegen SC Uetersen', text: 4½ }]
+    - [{ url: '?staffel=698&r=4#p2708x2709', title: 'gegen TuRa Harksheide', text: '6' }]
+    - [{ url: '?staffel=698&r=5#p2708x2710', title: 'gegen SV Heide', text: '4' }]
+    - [{ url: '?staffel=698&r=6#p2708x2711', title: 'gegen Segeberger SF', text: '0' }]
+    - 14
+    - 31½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Elmshorner SC', url: '?mannschaft=2712', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=698&r=7#p2712x2708', title: 'gegen Lübecker SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=698&r=6#p2712x2707', title: 'gegen SF Burg', text: 3½ }]
+    - [{ url: '?staffel=698&r=4#p2712x2714', title: 'gegen SK Doppelbauer 2', text: '3' }]
+    - [{ url: '?staffel=698&r=5#p2712x2715', title: 'gegen Lübecker SV 2', text: 3½ }]
+    - [{ url: '?staffel=698&r=3#p2712x2713', title: 'gegen SC Uetersen', text: 4½ }]
+    - [{ url: '?staffel=698&r=8#p2712x2709', title: 'gegen TuRa Harksheide', text: 3½ }]
+    - [{ url: '?staffel=698&r=9#p2712x2710', title: 'gegen SV Heide', text: '5' }]
+    - [{ url: '?staffel=698&r=1#p2712x2711', title: 'gegen Segeberger SF', text: '0' }]
+    - 11
+    - '25'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Burg', url: '?mannschaft=2707', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=698&r=2#p2707x2708', title: 'gegen Lübecker SV', text: '2' }]
+    - [{ url: '?staffel=698&r=6#p2707x2712', title: 'gegen Elmshorner SC', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=698&r=8#p2707x2714', title: 'gegen SK Doppelbauer 2', text: 3½ }]
+    - [{ url: '?staffel=698&r=9#p2707x2715', title: 'gegen Lübecker SV 2', text: '6' }]
+    - [{ url: '?staffel=698&r=7#p2707x2713', title: 'gegen SC Uetersen', text: '4' }]
+    - [{ url: '?staffel=698&r=3#p2707x2709', title: 'gegen TuRa Harksheide', text: 4½ }]
+    - [{ url: '?staffel=698&r=4#p2707x2710', title: 'gegen SV Heide', text: 5½ }]
+    - [{ url: '?staffel=698&r=5#p2707x2711', title: 'gegen Segeberger SF', text: '0' }]
+    - 10
+    - '28'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Doppelbauer 2', url: '?mannschaft=2714', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=698&r=9#p2714x2708', title: 'gegen Lübecker SV', text: 1½ }]
+    - [{ url: '?staffel=698&r=4#p2714x2712', title: 'gegen Elmshorner SC', text: '3' }]
+    - [{ url: '?staffel=698&r=8#p2714x2707', title: 'gegen SF Burg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=698&r=7#p2714x2715', title: 'gegen Lübecker SV 2', text: '3' }]
+    - [{ url: '?staffel=698&r=5#p2714x2713', title: 'gegen SC Uetersen', text: '5' }]
+    - [{ url: '?staffel=698&r=1#p2714x2709', title: 'gegen TuRa Harksheide', text: 5½ }]
+    - [{ url: '?staffel=698&r=2#p2714x2710', title: 'gegen SV Heide', text: '5' }]
+    - [{ url: '?staffel=698&r=3#p2714x2711', title: 'gegen Segeberger SF', text: '0' }]
+    - 8
+    - 25½
+    - ''
+-
+    - '5.'
+    - { text: 'Lübecker SV 2', url: '?mannschaft=2715', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=698&r=1#p2715x2708', title: 'gegen Lübecker SV', text: 1½ }]
+    - [{ url: '?staffel=698&r=5#p2715x2712', title: 'gegen Elmshorner SC', text: 2½ }]
+    - [{ url: '?staffel=698&r=9#p2715x2707', title: 'gegen SF Burg', text: '0' }]
+    - [{ url: '?staffel=698&r=7#p2715x2714', title: 'gegen SK Doppelbauer 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=698&r=6#p2715x2713', title: 'gegen SC Uetersen', text: 4½ }]
+    - [{ url: '?staffel=698&r=2#p2715x2709', title: 'gegen TuRa Harksheide', text: '5' }]
+    - [{ url: '?staffel=698&r=3#p2715x2710', title: 'gegen SV Heide', text: 3½ }]
+    - [{ url: '?staffel=698&r=4#p2715x2711', title: 'gegen Segeberger SF', text: '0' }]
+    - 7
+    - '20'
+    - ''
+-
+    - '6.'
+    - { text: 'SC Uetersen', url: '?mannschaft=2713', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=698&r=8#p2713x2708', title: 'gegen Lübecker SV', text: 1½ }]
+    - [{ url: '?staffel=698&r=3#p2713x2712', title: 'gegen Elmshorner SC', text: 1½ }]
+    - [{ url: '?staffel=698&r=7#p2713x2707', title: 'gegen SF Burg', text: '2' }]
+    - [{ url: '?staffel=698&r=5#p2713x2714', title: 'gegen SK Doppelbauer 2', text: '1' }]
+    - [{ url: '?staffel=698&r=6#p2713x2715', title: 'gegen Lübecker SV 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=698&r=9#p2713x2709', title: 'gegen TuRa Harksheide', text: 3½ }]
+    - [{ url: '?staffel=698&r=1#p2713x2710', title: 'gegen SV Heide', text: '5' }]
+    - [{ url: '?staffel=698&r=2#p2713x2711', title: 'gegen Segeberger SF', text: '0' }]
+    - 4
+    - '16'
+    - ''
+-
+    - '7.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=2709', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=698&r=4#p2709x2708', title: 'gegen Lübecker SV', text: '0' }]
+    - [{ url: '?staffel=698&r=8#p2709x2712', title: 'gegen Elmshorner SC', text: 2½ }]
+    - [{ url: '?staffel=698&r=3#p2709x2707', title: 'gegen SF Burg', text: 1½ }]
+    - [{ url: '?staffel=698&r=1#p2709x2714', title: 'gegen SK Doppelbauer 2', text: ½ }]
+    - [{ url: '?staffel=698&r=2#p2709x2715', title: 'gegen Lübecker SV 2', text: '1' }]
+    - [{ url: '?staffel=698&r=9#p2709x2713', title: 'gegen SC Uetersen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=698&r=6#p2709x2710', title: 'gegen SV Heide', text: '4' }]
+    - [{ url: '?staffel=698&r=7#p2709x2711', title: 'gegen Segeberger SF', text: '0' }]
+    - 2
+    - '12'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Heide', url: '?mannschaft=2710', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=698&r=5#p2710x2708', title: 'gegen Lübecker SV', text: '1' }]
+    - [{ url: '?staffel=698&r=9#p2710x2712', title: 'gegen Elmshorner SC', text: '1' }]
+    - [{ url: '?staffel=698&r=4#p2710x2707', title: 'gegen SF Burg', text: ½ }]
+    - [{ url: '?staffel=698&r=2#p2710x2714', title: 'gegen SK Doppelbauer 2', text: '1' }]
+    - [{ url: '?staffel=698&r=3#p2710x2715', title: 'gegen Lübecker SV 2', text: 2½ }]
+    - [{ url: '?staffel=698&r=1#p2710x2713', title: 'gegen SC Uetersen', text: '1' }]
+    - [{ url: '?staffel=698&r=6#p2710x2709', title: 'gegen TuRa Harksheide', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=698&r=8#p2710x2711', title: 'gegen Segeberger SF', text: '0' }]
+    - 0
+    - '9'
+    - ''
+-
+    - '9.'
+    - { text: 'Segeberger SF', url: '?mannschaft=2711', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=698&r=6#p2711x2708', title: 'gegen Lübecker SV', text: '0' }]
+    - [{ url: '?staffel=698&r=1#p2711x2712', title: 'gegen Elmshorner SC', text: '0' }]
+    - [{ url: '?staffel=698&r=5#p2711x2707', title: 'gegen SF Burg', text: '0' }]
+    - [{ url: '?staffel=698&r=3#p2711x2714', title: 'gegen SK Doppelbauer 2', text: '0' }]
+    - [{ url: '?staffel=698&r=4#p2711x2715', title: 'gegen Lübecker SV 2', text: '0' }]
+    - [{ url: '?staffel=698&r=2#p2711x2713', title: 'gegen SC Uetersen', text: '0' }]
+    - [{ url: '?staffel=698&r=7#p2711x2709', title: 'gegen TuRa Harksheide', text: '0' }]
+    - [{ url: '?staffel=698&r=8#p2711x2710', title: 'gegen SV Heide', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

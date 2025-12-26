@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Think Rochade -', url: '?mannschaft=6979', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1580&r=1#p6979x6984', title: 'gegen Hamburger SK 3', text: '4' }]
+    - [{ url: '?staffel=1580&r=2#p6979x6980', title: 'gegen Elmshorner SC', text: '1' }]
+    - [{ url: '?staffel=1580&r=6#p6979x6983', title: 'gegen SV Quickborn', text: 2½ }]
+    - [{ url: '?staffel=1580&r=4#p6979x6981', title: 'gegen SK Doppelbauer Kiel', text: 3½ }]
+    - [{ url: '?staffel=1580&r=5#p6979x6982', title: 'gegen TuRa Harksheide 2', text: '4' }]
+    - 8
+    - '15'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamburger SK 3', url: '?mannschaft=6984', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1580&r=1#p6984x6979', title: 'gegen Think Rochade -', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1580&r=4#p6984x6980', title: 'gegen Elmshorner SC', text: 2½ }]
+    - [{ url: '?staffel=1580&r=5#p6984x6983', title: 'gegen SV Quickborn', text: 2½ }]
+    - [{ url: '?staffel=1580&r=6#p6984x6981', title: 'gegen SK Doppelbauer Kiel', text: '4' }]
+    - [{ url: '?staffel=1580&r=2#p6984x6982', title: 'gegen TuRa Harksheide 2', text: '4' }]
+    - 8
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: 'Elmshorner SC', url: '?mannschaft=6980', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1580&r=2#p6980x6979', title: 'gegen Think Rochade -', text: '3' }]
+    - [{ url: '?staffel=1580&r=4#p6980x6984', title: 'gegen Hamburger SK 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1580&r=1#p6980x6983', title: 'gegen SV Quickborn', text: '2' }]
+    - [{ url: '?staffel=1580&r=5#p6980x6981', title: 'gegen SK Doppelbauer Kiel', text: '4' }]
+    - [{ url: '?staffel=1580&r=6#p6980x6982', title: 'gegen TuRa Harksheide 2', text: '4' }]
+    - 7
+    - 14½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Quickborn', url: '?mannschaft=6983', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1580&r=6#p6983x6979', title: 'gegen Think Rochade -', text: 1½ }]
+    - [{ url: '?staffel=1580&r=5#p6983x6984', title: 'gegen Hamburger SK 3', text: 1½ }]
+    - [{ url: '?staffel=1580&r=1#p6983x6980', title: 'gegen Elmshorner SC', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1580&r=2#p6983x6981', title: 'gegen SK Doppelbauer Kiel', text: 2½ }]
+    - [{ url: '?staffel=1580&r=4#p6983x6982', title: 'gegen TuRa Harksheide 2', text: '4' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Doppelbauer Kiel', url: '?mannschaft=6981', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1580&r=4#p6981x6979', title: 'gegen Think Rochade -', text: ½ }]
+    - [{ url: '?staffel=1580&r=6#p6981x6984', title: 'gegen Hamburger SK 3', text: '0' }]
+    - [{ url: '?staffel=1580&r=5#p6981x6980', title: 'gegen Elmshorner SC', text: '0' }]
+    - [{ url: '?staffel=1580&r=2#p6981x6983', title: 'gegen SV Quickborn', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1580&r=1#p6981x6982', title: 'gegen TuRa Harksheide 2', text: '4' }]
+    - 2
+    - '6'
+    - absteiger
+-
+    - '6.'
+    - { text: 'TuRa Harksheide 2', url: '?mannschaft=6982', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1580&r=5#p6982x6979', title: 'gegen Think Rochade -', text: '0' }]
+    - [{ url: '?staffel=1580&r=2#p6982x6984', title: 'gegen Hamburger SK 3', text: '0' }]
+    - [{ url: '?staffel=1580&r=6#p6982x6980', title: 'gegen Elmshorner SC', text: '0' }]
+    - [{ url: '?staffel=1580&r=4#p6982x6983', title: 'gegen SV Quickborn', text: '0' }]
+    - [{ url: '?staffel=1580&r=1#p6982x6981', title: 'gegen SK Doppelbauer Kiel', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

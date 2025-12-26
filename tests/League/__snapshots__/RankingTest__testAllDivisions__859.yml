@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TSV Riemsloh', url: '?mannschaft=7104', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1683&r=1#p7104x7059', title: 'gegen Rochade Hollage 2', text: 5½ }]
+    - [{ url: '?staffel=1683&r=4#p7104x7065', title: 'gegen SC Fürstenau', text: 2½ }]
+    - [{ url: '?staffel=1683&r=6#p7104x7106', title: 'gegen TuS Aschendorf', text: '5' }]
+    - [{ url: '?staffel=1683&r=3#p7104x7092', title: 'gegen SV Lingen 3', text: '5' }]
+    - [{ url: '?staffel=1683&r=2#p7104x7070', title: 'gegen Bersenbrück/Bramsche', text: 4½ }]
+    - [{ url: '?staffel=1683&r=8#p7104x7100', title: 'gegen Veldhausen/Uel. 2', text: 4½ }]
+    - [{ url: '?staffel=1683&r=7#p7104x7095', title: 'gegen SV Osnabrück 3', text: '4' }]
+    - [{ url: '?staffel=1683&r=9#p7104x7088', title: 'gegen SV Hellern 4', text: 5½ }]
+    - [{ url: '?staffel=1683&r=5#p7104x7083', title: 'gegen SV Bad Bentheim', text: '6' }]
+    - 16
+    - 42½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Rochade Hollage 2', url: '?mannschaft=7059', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1683&r=1#p7059x7104', title: 'gegen TSV Riemsloh', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1683&r=7#p7059x7065', title: 'gegen SC Fürstenau', text: 1½ }]
+    - [{ url: '?staffel=1683&r=9#p7059x7106', title: 'gegen TuS Aschendorf', text: '6' }]
+    - [{ url: '?staffel=1683&r=6#p7059x7092', title: 'gegen SV Lingen 3', text: 1½ }]
+    - [{ url: '?staffel=1683&r=5#p7059x7070', title: 'gegen Bersenbrück/Bramsche', text: '4' }]
+    - [{ url: '?staffel=1683&r=2#p7059x7100', title: 'gegen Veldhausen/Uel. 2', text: 4½ }]
+    - [{ url: '?staffel=1683&r=4#p7059x7095', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=1683&r=3#p7059x7088', title: 'gegen SV Hellern 4', text: '5' }]
+    - [{ url: '?staffel=1683&r=8#p7059x7083', title: 'gegen SV Bad Bentheim', text: '3' }]
+    - 11
+    - '29'
+    - ''
+-
+    - '3.'
+    - { text: 'SC Fürstenau', url: '?mannschaft=7065', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1683&r=4#p7065x7104', title: 'gegen TSV Riemsloh', text: 3½ }]
+    - [{ url: '?staffel=1683&r=7#p7065x7059', title: 'gegen Rochade Hollage 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1683&r=3#p7065x7106', title: 'gegen TuS Aschendorf', text: 2½ }]
+    - [{ url: '?staffel=1683&r=9#p7065x7092', title: 'gegen SV Lingen 3', text: 4½ }]
+    - [{ url: '?staffel=1683&r=8#p7065x7070', title: 'gegen Bersenbrück/Bramsche', text: '3' }]
+    - [{ url: '?staffel=1683&r=5#p7065x7100', title: 'gegen Veldhausen/Uel. 2', text: 2½ }]
+    - [{ url: '?staffel=1683&r=1#p7065x7095', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=1683&r=6#p7065x7088', title: 'gegen SV Hellern 4', text: 2½ }]
+    - [{ url: '?staffel=1683&r=2#p7065x7083', title: 'gegen SV Bad Bentheim', text: '4' }]
+    - 10
+    - '30'
+    - ''
+-
+    - '4.'
+    - { text: 'TuS Aschendorf', url: '?mannschaft=7106', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1683&r=6#p7106x7104', title: 'gegen TSV Riemsloh', text: '1' }]
+    - [{ url: '?staffel=1683&r=9#p7106x7059', title: 'gegen Rochade Hollage 2', text: '0' }]
+    - [{ url: '?staffel=1683&r=3#p7106x7065', title: 'gegen SC Fürstenau', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1683&r=2#p7106x7092', title: 'gegen SV Lingen 3', text: '1' }]
+    - [{ url: '?staffel=1683&r=1#p7106x7070', title: 'gegen Bersenbrück/Bramsche', text: 1½ }]
+    - [{ url: '?staffel=1683&r=7#p7106x7100', title: 'gegen Veldhausen/Uel. 2', text: 3½ }]
+    - [{ url: '?staffel=1683&r=5#p7106x7095', title: 'gegen SV Osnabrück 3', text: '4' }]
+    - [{ url: '?staffel=1683&r=8#p7106x7088', title: 'gegen SV Hellern 4', text: 3½ }]
+    - [{ url: '?staffel=1683&r=4#p7106x7083', title: 'gegen SV Bad Bentheim', text: 4½ }]
+    - 10
+    - 22½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Lingen 3', url: '?mannschaft=7092', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1683&r=3#p7092x7104', title: 'gegen TSV Riemsloh', text: '1' }]
+    - [{ url: '?staffel=1683&r=6#p7092x7059', title: 'gegen Rochade Hollage 2', text: 4½ }]
+    - [{ url: '?staffel=1683&r=9#p7092x7065', title: 'gegen SC Fürstenau', text: 1½ }]
+    - [{ url: '?staffel=1683&r=2#p7092x7106', title: 'gegen TuS Aschendorf', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1683&r=7#p7092x7070', title: 'gegen Bersenbrück/Bramsche', text: 3½ }]
+    - [{ url: '?staffel=1683&r=4#p7092x7100', title: 'gegen Veldhausen/Uel. 2', text: 2½ }]
+    - [{ url: '?staffel=1683&r=8#p7092x7095', title: 'gegen SV Osnabrück 3', text: 1½ }]
+    - [{ url: '?staffel=1683&r=5#p7092x7088', title: 'gegen SV Hellern 4', text: '3' }]
+    - [{ url: '?staffel=1683&r=1#p7092x7083', title: 'gegen SV Bad Bentheim', text: '5' }]
+    - 9
+    - 27½
+    - ''
+-
+    - '6.'
+    - { text: Bersenbrück/Bramsche, url: '?mannschaft=7070', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1683&r=2#p7070x7104', title: 'gegen TSV Riemsloh', text: 1½ }]
+    - [{ url: '?staffel=1683&r=5#p7070x7059', title: 'gegen Rochade Hollage 2', text: '2' }]
+    - [{ url: '?staffel=1683&r=8#p7070x7065', title: 'gegen SC Fürstenau', text: '3' }]
+    - [{ url: '?staffel=1683&r=1#p7070x7106', title: 'gegen TuS Aschendorf', text: 3½ }]
+    - [{ url: '?staffel=1683&r=7#p7070x7092', title: 'gegen SV Lingen 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1683&r=3#p7070x7100', title: 'gegen Veldhausen/Uel. 2', text: 3½ }]
+    - [{ url: '?staffel=1683&r=6#p7070x7095', title: 'gegen SV Osnabrück 3', text: '4' }]
+    - [{ url: '?staffel=1683&r=4#p7070x7088', title: 'gegen SV Hellern 4', text: 1½ }]
+    - [{ url: '?staffel=1683&r=9#p7070x7083', title: 'gegen SV Bad Bentheim', text: '4' }]
+    - 9
+    - 25½
+    - ''
+-
+    - '7.'
+    - { text: 'Veldhausen/Uel. 2', url: '?mannschaft=7100', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1683&r=8#p7100x7104', title: 'gegen TSV Riemsloh', text: 1½ }]
+    - [{ url: '?staffel=1683&r=2#p7100x7059', title: 'gegen Rochade Hollage 2', text: 1½ }]
+    - [{ url: '?staffel=1683&r=5#p7100x7065', title: 'gegen SC Fürstenau', text: 3½ }]
+    - [{ url: '?staffel=1683&r=7#p7100x7106', title: 'gegen TuS Aschendorf', text: 2½ }]
+    - [{ url: '?staffel=1683&r=4#p7100x7092', title: 'gegen SV Lingen 3', text: 3½ }]
+    - [{ url: '?staffel=1683&r=3#p7100x7070', title: 'gegen Bersenbrück/Bramsche', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1683&r=9#p7100x7095', title: 'gegen SV Osnabrück 3', text: 3½ }]
+    - [{ url: '?staffel=1683&r=1#p7100x7088', title: 'gegen SV Hellern 4', text: '3' }]
+    - [{ url: '?staffel=1683&r=6#p7100x7083', title: 'gegen SV Bad Bentheim', text: '4' }]
+    - 9
+    - 25½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Osnabrück 3', url: '?mannschaft=7095', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1683&r=7#p7095x7104', title: 'gegen TSV Riemsloh', text: '2' }]
+    - [{ url: '?staffel=1683&r=4#p7095x7059', title: 'gegen Rochade Hollage 2', text: '3' }]
+    - [{ url: '?staffel=1683&r=1#p7095x7065', title: 'gegen SC Fürstenau', text: '3' }]
+    - [{ url: '?staffel=1683&r=5#p7095x7106', title: 'gegen TuS Aschendorf', text: '2' }]
+    - [{ url: '?staffel=1683&r=8#p7095x7092', title: 'gegen SV Lingen 3', text: 4½ }]
+    - [{ url: '?staffel=1683&r=6#p7095x7070', title: 'gegen Bersenbrück/Bramsche', text: '2' }]
+    - [{ url: '?staffel=1683&r=9#p7095x7100', title: 'gegen Veldhausen/Uel. 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1683&r=2#p7095x7088', title: 'gegen SV Hellern 4', text: '4' }]
+    - [{ url: '?staffel=1683&r=3#p7095x7083', title: 'gegen SV Bad Bentheim', text: 3½ }]
+    - 8
+    - 26½
+    - ''
+-
+    - '9.'
+    - { text: 'SV Hellern 4', url: '?mannschaft=7088', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1683&r=9#p7088x7104', title: 'gegen TSV Riemsloh', text: ½ }]
+    - [{ url: '?staffel=1683&r=3#p7088x7059', title: 'gegen Rochade Hollage 2', text: '1' }]
+    - [{ url: '?staffel=1683&r=6#p7088x7065', title: 'gegen SC Fürstenau', text: 3½ }]
+    - [{ url: '?staffel=1683&r=8#p7088x7106', title: 'gegen TuS Aschendorf', text: 2½ }]
+    - [{ url: '?staffel=1683&r=5#p7088x7092', title: 'gegen SV Lingen 3', text: '3' }]
+    - [{ url: '?staffel=1683&r=4#p7088x7070', title: 'gegen Bersenbrück/Bramsche', text: 4½ }]
+    - [{ url: '?staffel=1683&r=1#p7088x7100', title: 'gegen Veldhausen/Uel. 2', text: '3' }]
+    - [{ url: '?staffel=1683&r=2#p7088x7095', title: 'gegen SV Osnabrück 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1683&r=7#p7088x7083', title: 'gegen SV Bad Bentheim', text: 3½ }]
+    - 8
+    - 23½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SV Bad Bentheim', url: '?mannschaft=7083', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1683&r=5#p7083x7104', title: 'gegen TSV Riemsloh', text: '0' }]
+    - [{ url: '?staffel=1683&r=8#p7083x7059', title: 'gegen Rochade Hollage 2', text: '2' }]
+    - [{ url: '?staffel=1683&r=2#p7083x7065', title: 'gegen SC Fürstenau', text: '2' }]
+    - [{ url: '?staffel=1683&r=4#p7083x7106', title: 'gegen TuS Aschendorf', text: 1½ }]
+    - [{ url: '?staffel=1683&r=1#p7083x7092', title: 'gegen SV Lingen 3', text: '1' }]
+    - [{ url: '?staffel=1683&r=9#p7083x7070', title: 'gegen Bersenbrück/Bramsche', text: '2' }]
+    - [{ url: '?staffel=1683&r=6#p7083x7100', title: 'gegen Veldhausen/Uel. 2', text: '2' }]
+    - [{ url: '?staffel=1683&r=3#p7083x7095', title: 'gegen SV Osnabrück 3', text: 2½ }]
+    - [{ url: '?staffel=1683&r=7#p7083x7088', title: 'gegen SV Hellern 4', text: 2½ }]
+    - xxx
+    - 0
+    - 15½
+    - absteiger

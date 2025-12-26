@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Hannover 2', url: '?mannschaft=1872', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=579&r=6#p1872x1861', title: 'gegen ST Langenhagen', text: 4½ }]
+    - [{ url: '?staffel=579&r=4#p1872x1837', title: 'gegen Barsinghausen', text: '6' }]
+    - [{ url: '?staffel=579&r=3#p1872x1893', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=579&r=2#p1872x1880', title: 'gegen SK Ricklingen', text: '6' }]
+    - [{ url: '?staffel=579&r=8#p1872x1879', title: 'gegen WB Eilenriede', text: 4½ }]
+    - [{ url: '?staffel=579&r=9#p1872x1841', title: 'gegen SV Springe', text: 4½ }]
+    - [{ url: '?staffel=579&r=7#p1872x1844', title: 'gegen PSC Hannover 2', text: '6' }]
+    - [{ url: '?staffel=579&r=5#p1872x1875', title: 'gegen SD Isernhagen', text: '5' }]
+    - [{ url: '?staffel=579&r=1#p1872x1876', title: 'gegen Garbsen/Marienw', text: '8' }]
+    - 18
+    - '49'
+    - ''
+-
+    - '2.'
+    - { text: 'ST Langenhagen', url: '?mannschaft=1861', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=579&r=6#p1861x1872', title: 'gegen SF Hannover 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=579&r=3#p1861x1837', title: 'gegen Barsinghausen', text: 4½ }]
+    - [{ url: '?staffel=579&r=1#p1861x1893', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=579&r=7#p1861x1880', title: 'gegen SK Ricklingen', text: 4½ }]
+    - [{ url: '?staffel=579&r=9#p1861x1879', title: 'gegen WB Eilenriede', text: 5½ }]
+    - [{ url: '?staffel=579&r=2#p1861x1841', title: 'gegen SV Springe', text: 2½ }]
+    - [{ url: '?staffel=579&r=5#p1861x1844', title: 'gegen PSC Hannover 2', text: '6' }]
+    - [{ url: '?staffel=579&r=4#p1861x1875', title: 'gegen SD Isernhagen', text: '6' }]
+    - [{ url: '?staffel=579&r=8#p1861x1876', title: 'gegen Garbsen/Marienw', text: 5½ }]
+    - 12
+    - '41'
+    - ''
+-
+    - '3.'
+    - { text: Barsinghausen, url: '?mannschaft=1837', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=579&r=4#p1837x1872', title: 'gegen SF Hannover 2', text: '2' }]
+    - [{ url: '?staffel=579&r=3#p1837x1861', title: 'gegen ST Langenhagen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=579&r=8#p1837x1893', title: 'gegen SV Bückeburg', text: '2' }]
+    - [{ url: '?staffel=579&r=9#p1837x1880', title: 'gegen SK Ricklingen', text: '5' }]
+    - [{ url: '?staffel=579&r=5#p1837x1879', title: 'gegen WB Eilenriede', text: '5' }]
+    - [{ url: '?staffel=579&r=7#p1837x1841', title: 'gegen SV Springe', text: 5½ }]
+    - [{ url: '?staffel=579&r=2#p1837x1844', title: 'gegen PSC Hannover 2', text: 3½ }]
+    - [{ url: '?staffel=579&r=1#p1837x1875', title: 'gegen SD Isernhagen', text: '5' }]
+    - [{ url: '?staffel=579&r=6#p1837x1876', title: 'gegen Garbsen/Marienw', text: '6' }]
+    - 10
+    - 37½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=1893', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=579&r=3#p1893x1872', title: 'gegen SF Hannover 2', text: 3½ }]
+    - [{ url: '?staffel=579&r=1#p1893x1861', title: 'gegen ST Langenhagen', text: '5' }]
+    - [{ url: '?staffel=579&r=8#p1893x1837', title: 'gegen Barsinghausen', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=579&r=5#p1893x1880', title: 'gegen SK Ricklingen', text: 5½ }]
+    - [{ url: '?staffel=579&r=2#p1893x1879', title: 'gegen WB Eilenriede', text: 3½ }]
+    - [{ url: '?staffel=579&r=6#p1893x1841', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=579&r=4#p1893x1844', title: 'gegen PSC Hannover 2', text: 5½ }]
+    - [{ url: '?staffel=579&r=9#p1893x1875', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=579&r=7#p1893x1876', title: 'gegen Garbsen/Marienw', text: 3½ }]
+    - 9
+    - 39½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=1880', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=579&r=2#p1880x1872', title: 'gegen SF Hannover 2', text: '2' }]
+    - [{ url: '?staffel=579&r=7#p1880x1861', title: 'gegen ST Langenhagen', text: 3½ }]
+    - [{ url: '?staffel=579&r=9#p1880x1837', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=579&r=5#p1880x1893', title: 'gegen SV Bückeburg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=579&r=1#p1880x1879', title: 'gegen WB Eilenriede', text: '4' }]
+    - [{ url: '?staffel=579&r=4#p1880x1841', title: 'gegen SV Springe', text: 7½ }]
+    - [{ url: '?staffel=579&r=8#p1880x1844', title: 'gegen PSC Hannover 2', text: 4½ }]
+    - [{ url: '?staffel=579&r=6#p1880x1875', title: 'gegen SD Isernhagen', text: '5' }]
+    - [{ url: '?staffel=579&r=3#p1880x1876', title: 'gegen Garbsen/Marienw', text: 4½ }]
+    - 9
+    - 36½
+    - ''
+-
+    - '6.'
+    - { text: 'WB Eilenriede', url: '?mannschaft=1879', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=579&r=8#p1879x1872', title: 'gegen SF Hannover 2', text: 3½ }]
+    - [{ url: '?staffel=579&r=9#p1879x1861', title: 'gegen ST Langenhagen', text: 2½ }]
+    - [{ url: '?staffel=579&r=5#p1879x1837', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=579&r=2#p1879x1893', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=579&r=1#p1879x1880', title: 'gegen SK Ricklingen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=579&r=3#p1879x1841', title: 'gegen SV Springe', text: '6' }]
+    - [{ url: '?staffel=579&r=6#p1879x1844', title: 'gegen PSC Hannover 2', text: 4½ }]
+    - [{ url: '?staffel=579&r=7#p1879x1875', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=579&r=4#p1879x1876', title: 'gegen Garbsen/Marienw', text: '4' }]
+    - 8
+    - 35½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Springe', url: '?mannschaft=1841', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=579&r=9#p1841x1872', title: 'gegen SF Hannover 2', text: 3½ }]
+    - [{ url: '?staffel=579&r=2#p1841x1861', title: 'gegen ST Langenhagen', text: 5½ }]
+    - [{ url: '?staffel=579&r=7#p1841x1837', title: 'gegen Barsinghausen', text: 2½ }]
+    - [{ url: '?staffel=579&r=6#p1841x1893', title: 'gegen SV Bückeburg', text: '5' }]
+    - [{ url: '?staffel=579&r=4#p1841x1880', title: 'gegen SK Ricklingen', text: ½ }]
+    - [{ url: '?staffel=579&r=3#p1841x1879', title: 'gegen WB Eilenriede', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=579&r=1#p1841x1844', title: 'gegen PSC Hannover 2', text: '3' }]
+    - [{ url: '?staffel=579&r=8#p1841x1875', title: 'gegen SD Isernhagen', text: 4½ }]
+    - [{ url: '?staffel=579&r=5#p1841x1876', title: 'gegen Garbsen/Marienw', text: '7' }]
+    - 8
+    - 33½
+    - ''
+-
+    - '8.'
+    - { text: 'PSC Hannover 2', url: '?mannschaft=1844', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=579&r=7#p1844x1872', title: 'gegen SF Hannover 2', text: '2' }]
+    - [{ url: '?staffel=579&r=5#p1844x1861', title: 'gegen ST Langenhagen', text: '2' }]
+    - [{ url: '?staffel=579&r=2#p1844x1837', title: 'gegen Barsinghausen', text: 4½ }]
+    - [{ url: '?staffel=579&r=4#p1844x1893', title: 'gegen SV Bückeburg', text: 2½ }]
+    - [{ url: '?staffel=579&r=8#p1844x1880', title: 'gegen SK Ricklingen', text: 3½ }]
+    - [{ url: '?staffel=579&r=6#p1844x1879', title: 'gegen WB Eilenriede', text: 3½ }]
+    - [{ url: '?staffel=579&r=1#p1844x1841', title: 'gegen SV Springe', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=579&r=3#p1844x1875', title: 'gegen SD Isernhagen', text: 4½ }]
+    - [{ url: '?staffel=579&r=9#p1844x1876', title: 'gegen Garbsen/Marienw', text: '5' }]
+    - 8
+    - 32½
+    - ''
+-
+    - '9.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=1875', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=579&r=5#p1875x1872', title: 'gegen SF Hannover 2', text: '3' }]
+    - [{ url: '?staffel=579&r=4#p1875x1861', title: 'gegen ST Langenhagen', text: '2' }]
+    - [{ url: '?staffel=579&r=1#p1875x1837', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=579&r=9#p1875x1893', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=579&r=6#p1875x1880', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=579&r=7#p1875x1879', title: 'gegen WB Eilenriede', text: 4½ }]
+    - [{ url: '?staffel=579&r=8#p1875x1841', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=579&r=3#p1875x1844', title: 'gegen PSC Hannover 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=579&r=2#p1875x1876', title: 'gegen Garbsen/Marienw', text: 4½ }]
+    - 5
+    - '31'
+    - ''
+-
+    - '10.'
+    - { text: Garbsen/Marienw, url: '?mannschaft=1876', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=579&r=1#p1876x1872', title: 'gegen SF Hannover 2', text: '0' }]
+    - [{ url: '?staffel=579&r=8#p1876x1861', title: 'gegen ST Langenhagen', text: 2½ }]
+    - [{ url: '?staffel=579&r=6#p1876x1837', title: 'gegen Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=579&r=7#p1876x1893', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=579&r=3#p1876x1880', title: 'gegen SK Ricklingen', text: 3½ }]
+    - [{ url: '?staffel=579&r=4#p1876x1879', title: 'gegen WB Eilenriede', text: '4' }]
+    - [{ url: '?staffel=579&r=5#p1876x1841', title: 'gegen SV Springe', text: '1' }]
+    - [{ url: '?staffel=579&r=9#p1876x1844', title: 'gegen PSC Hannover 2', text: '2' }]
+    - [{ url: '?staffel=579&r=2#p1876x1875', title: 'gegen SD Isernhagen', text: 3½ }]
+    - xxx
+    - 3
+    - '23'
+    - ''

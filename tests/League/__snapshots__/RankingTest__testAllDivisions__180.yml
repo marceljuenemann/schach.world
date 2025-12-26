@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: "CSC Aufbau '95", url: '?mannschaft=1899', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=602&r=6#p1899x1887', title: 'gegen USV TU Dresden', text: 1½ }]
+    - [{ url: '?staffel=602&r=1#p1899x1878', title: 'gegen TuS Coswig 1920', text: 3½ }]
+    - [{ url: '?staffel=602&r=2#p1899x1868', title: 'gegen SG GW Dresden', text: '3' }]
+    - [{ url: '?staffel=602&r=4#p1899x2016', title: 'gegen Rodewischer SM', text: '2' }]
+    - [{ url: '?staffel=602&r=5#p1899x1894', title: 'gegen GW Niederwiesa', text: '3' }]
+    - 7
+    - '13'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'USV TU Dresden', url: '?mannschaft=1887', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=602&r=6#p1887x1899', title: "gegen CSC Aufbau '95", text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=602&r=2#p1887x1878', title: 'gegen TuS Coswig 1920', text: '2' }]
+    - [{ url: '?staffel=602&r=4#p1887x1868', title: 'gegen SG GW Dresden', text: 1½ }]
+    - [{ url: '?staffel=602&r=5#p1887x2016', title: 'gegen Rodewischer SM', text: '4' }]
+    - [{ url: '?staffel=602&r=1#p1887x1894', title: 'gegen GW Niederwiesa', text: 2½ }]
+    - 7
+    - 12½
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Coswig 1920', url: '?mannschaft=1878', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=602&r=1#p1878x1899', title: "gegen CSC Aufbau '95", text: ½ }]
+    - [{ url: '?staffel=602&r=2#p1878x1887', title: 'gegen USV TU Dresden', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=602&r=5#p1878x1868', title: 'gegen SG GW Dresden', text: '3' }]
+    - [{ url: '?staffel=602&r=6#p1878x2016', title: 'gegen Rodewischer SM', text: 2½ }]
+    - [{ url: '?staffel=602&r=4#p1878x1894', title: 'gegen GW Niederwiesa', text: '2' }]
+    - 6
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'SG GW Dresden', url: '?mannschaft=1868', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=602&r=2#p1868x1899', title: "gegen CSC Aufbau '95", text: '1' }]
+    - [{ url: '?staffel=602&r=4#p1868x1887', title: 'gegen USV TU Dresden', text: 2½ }]
+    - [{ url: '?staffel=602&r=5#p1868x1878', title: 'gegen TuS Coswig 1920', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=602&r=1#p1868x2016', title: 'gegen Rodewischer SM', text: 1½ }]
+    - [{ url: '?staffel=602&r=6#p1868x1894', title: 'gegen GW Niederwiesa', text: 2½ }]
+    - 4
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'Rodewischer SM', url: '?mannschaft=2016', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=602&r=4#p2016x1899', title: "gegen CSC Aufbau '95", text: '2' }]
+    - [{ url: '?staffel=602&r=5#p2016x1887', title: 'gegen USV TU Dresden', text: '0' }]
+    - [{ url: '?staffel=602&r=6#p2016x1878', title: 'gegen TuS Coswig 1920', text: 1½ }]
+    - [{ url: '?staffel=602&r=1#p2016x1868', title: 'gegen SG GW Dresden', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=602&r=2#p2016x1894', title: 'gegen GW Niederwiesa', text: 2½ }]
+    - 3
+    - 7½
+    - absteiger
+-
+    - '6.'
+    - { text: 'GW Niederwiesa', url: '?mannschaft=1894', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=602&r=5#p1894x1899', title: "gegen CSC Aufbau '95", text: '1' }]
+    - [{ url: '?staffel=602&r=1#p1894x1887', title: 'gegen USV TU Dresden', text: 1½ }]
+    - [{ url: '?staffel=602&r=4#p1894x1878', title: 'gegen TuS Coswig 1920', text: '2' }]
+    - [{ url: '?staffel=602&r=6#p1894x1868', title: 'gegen SG GW Dresden', text: 1½ }]
+    - [{ url: '?staffel=602&r=2#p1894x2016', title: 'gegen Rodewischer SM', text: 1½ }]
+    - xxx
+    - 1
+    - 7½
+    - absteiger

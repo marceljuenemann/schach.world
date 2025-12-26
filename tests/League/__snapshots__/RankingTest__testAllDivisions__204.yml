@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV', url: '?mannschaft=2269', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=630&r=1#p2269x2267', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=630&r=3#p2269x2268', title: 'gegen TSV Riemsloh', text: '4' }]
+    - [{ url: '?staffel=630&r=4#p2269x2270', title: 'gegen SG Oesede-Gmht.', text: '3' }]
+    - [{ url: '?staffel=630&r=5#p2269x2271', title: 'gegen TSV Riemsloh 2', text: '4' }]
+    - 8
+    - '15'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Hellern', url: '?mannschaft=2267', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=630&r=1#p2267x2269', title: 'gegen Hagener SV', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=630&r=2#p2267x2268', title: 'gegen TSV Riemsloh', text: '2' }]
+    - [{ url: '?staffel=630&r=3#p2267x2270', title: 'gegen SG Oesede-Gmht.', text: '4' }]
+    - [{ url: '?staffel=630&r=4#p2267x2271', title: 'gegen TSV Riemsloh 2', text: 3½ }]
+    - 5
+    - 9½
+    - ''
+-
+    - '3.'
+    - { text: 'TSV Riemsloh', url: '?mannschaft=2268', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=630&r=3#p2268x2269', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=630&r=2#p2268x2267', title: 'gegen SV Hellern', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=630&r=5#p2268x2270', title: 'gegen SG Oesede-Gmht.', text: '3' }]
+    - [{ url: '?staffel=630&r=1#p2268x2271', title: 'gegen TSV Riemsloh 2', text: '3' }]
+    - 5
+    - '8'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=2270', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=630&r=4#p2270x2269', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=630&r=3#p2270x2267', title: 'gegen SV Hellern', text: '0' }]
+    - [{ url: '?staffel=630&r=5#p2270x2268', title: 'gegen TSV Riemsloh', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=630&r=2#p2270x2271', title: 'gegen TSV Riemsloh 2', text: '2' }]
+    - 1
+    - '4'
+    - ''
+-
+    - '5.'
+    - { text: 'TSV Riemsloh 2', url: '?mannschaft=2271', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=630&r=5#p2271x2269', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=630&r=4#p2271x2267', title: 'gegen SV Hellern', text: ½ }]
+    - [{ url: '?staffel=630&r=1#p2271x2268', title: 'gegen TSV Riemsloh', text: '1' }]
+    - [{ url: '?staffel=630&r=2#p2271x2270', title: 'gegen SG Oesede-Gmht.', text: '2' }]
+    - xxx
+    - 1
+    - 3½
+    - ''

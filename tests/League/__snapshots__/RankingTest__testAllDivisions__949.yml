@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Tempo Göttingen 3', url: '?mannschaft=8113', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1788&r=1#p8113x8073', title: 'gegen SK Duderstadt 2', text: '2' }, { url: '?staffel=1788&r=6#p8113x8073', title: 'gegen SK Duderstadt 2', text: '3' }]
+    - [{ url: '?staffel=1788&r=2#p8113x8119', title: 'gegen SK Goslar 3', text: '2' }, { url: '?staffel=1788&r=5#p8113x8119', title: 'gegen SK Goslar 3', text: 2½ }]
+    - [{ url: '?staffel=1788&r=3#p8113x8124', title: 'gegen SK Gronau 2', text: '4' }, { url: '?staffel=1788&r=4#p8113x8124', title: 'gegen SK Gronau 2', text: '2' }]
+    - 9
+    - 15½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Duderstadt 2', url: '?mannschaft=8073', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1788&r=1#p8073x8113', title: 'gegen Tempo Göttingen 3', text: '2' }, { url: '?staffel=1788&r=6#p8073x8113', title: 'gegen Tempo Göttingen 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1788&r=3#p8073x8119', title: 'gegen SK Goslar 3', text: 2½ }, { url: '?staffel=1788&r=4#p8073x8119', title: 'gegen SK Goslar 3', text: '1' }]
+    - [{ url: '?staffel=1788&r=2#p8073x8124', title: 'gegen SK Gronau 2', text: 3½ }, { url: '?staffel=1788&r=5#p8073x8124', title: 'gegen SK Gronau 2', text: '4' }]
+    - 7
+    - '14'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SK Goslar 3', url: '?mannschaft=8119', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1788&r=2#p8119x8113', title: 'gegen Tempo Göttingen 3', text: '2' }, { url: '?staffel=1788&r=5#p8119x8113', title: 'gegen Tempo Göttingen 3', text: ½ }]
+    - [{ url: '?staffel=1788&r=3#p8119x8073', title: 'gegen SK Duderstadt 2', text: 1½ }, { url: '?staffel=1788&r=4#p8119x8073', title: 'gegen SK Duderstadt 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1788&r=1#p8119x8124', title: 'gegen SK Gronau 2', text: '4' }, { url: '?staffel=1788&r=6#p8119x8124', title: 'gegen SK Gronau 2', text: '1' }]
+    - 5
+    - '12'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Gronau 2', url: '?mannschaft=8124', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1788&r=3#p8124x8113', title: 'gegen Tempo Göttingen 3', text: '0' }, { url: '?staffel=1788&r=4#p8124x8113', title: 'gegen Tempo Göttingen 3', text: '2' }]
+    - [{ url: '?staffel=1788&r=2#p8124x8073', title: 'gegen SK Duderstadt 2', text: ½ }, { url: '?staffel=1788&r=5#p8124x8073', title: 'gegen SK Duderstadt 2', text: '0' }]
+    - [{ url: '?staffel=1788&r=1#p8124x8119', title: 'gegen SK Goslar 3', text: '0' }, { url: '?staffel=1788&r=6#p8124x8119', title: 'gegen SK Goslar 3', text: '2' }]
+    - xxx
+    - 2
+    - 4½
+    - ''

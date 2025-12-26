@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Hämelerwald', url: '?mannschaft=5540', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1350&r=3#p5540x5537', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - [{ url: '?staffel=1350&r=1#p5540x5766', title: 'gegen HSK Lister Turm 4', text: 3½ }]
+    - [{ url: '?staffel=1350&r=6#p5540x5614', title: 'gegen SVg Calenberg', text: 4½ }]
+    - [{ url: '?staffel=1350&r=5#p5540x5700', title: 'gegen SK Anderten', text: '6' }]
+    - [{ url: '?staffel=1350&r=2#p5540x5629', title: 'gegen SG Döhren-Gleid', text: 4½ }]
+    - [{ url: '?staffel=1350&r=9#p5540x5740', title: 'gegen SD Isernhagen 2', text: '5' }]
+    - [{ url: '?staffel=1350&r=8#p5540x5638', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=1350&r=7#p5540x5640', title: 'gegen SV Laatzen 2', text: 5½ }]
+    - [{ url: '?staffel=1350&r=4#p5540x5611', title: 'gegen SV Bückeburg', text: '4' }]
+    - 14
+    - '42'
+    - ''
+-
+    - '2.'
+    - { text: 'SG Garbsen/Marienw', url: '?mannschaft=5537', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1350&r=3#p5537x5540', title: 'gegen SC Hämelerwald', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1350&r=9#p5537x5766', title: 'gegen HSK Lister Turm 4', text: '4' }]
+    - [{ url: '?staffel=1350&r=5#p5537x5614', title: 'gegen SVg Calenberg', text: '5' }]
+    - [{ url: '?staffel=1350&r=4#p5537x5700', title: 'gegen SK Anderten', text: '6' }]
+    - [{ url: '?staffel=1350&r=1#p5537x5629', title: 'gegen SG Döhren-Gleid', text: '2' }]
+    - [{ url: '?staffel=1350&r=8#p5537x5740', title: 'gegen SD Isernhagen 2', text: '5' }]
+    - [{ url: '?staffel=1350&r=7#p5537x5638', title: 'gegen Eystruper SK', text: '7' }]
+    - [{ url: '?staffel=1350&r=6#p5537x5640', title: 'gegen SV Laatzen 2', text: 4½ }]
+    - [{ url: '?staffel=1350&r=2#p5537x5611', title: 'gegen SV Bückeburg', text: 4½ }]
+    - 14
+    - '42'
+    - ''
+-
+    - '3.'
+    - { text: 'HSK Lister Turm 4', url: '?mannschaft=5766', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1350&r=1#p5766x5540', title: 'gegen SC Hämelerwald', text: 4½ }]
+    - [{ url: '?staffel=1350&r=9#p5766x5537', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1350&r=3#p5766x5614', title: 'gegen SVg Calenberg', text: '6' }]
+    - [{ url: '?staffel=1350&r=2#p5766x5700', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=1350&r=8#p5766x5629', title: 'gegen SG Döhren-Gleid', text: 4½ }]
+    - [{ url: '?staffel=1350&r=6#p5766x5740', title: 'gegen SD Isernhagen 2', text: '2' }]
+    - [{ url: '?staffel=1350&r=5#p5766x5638', title: 'gegen Eystruper SK', text: 3½ }]
+    - [{ url: '?staffel=1350&r=4#p5766x5640', title: 'gegen SV Laatzen 2', text: 4½ }]
+    - [{ url: '?staffel=1350&r=7#p5766x5611', title: 'gegen SV Bückeburg', text: '6' }]
+    - 11
+    - 38½
+    - ''
+-
+    - '4.'
+    - { text: 'SVg Calenberg', url: '?mannschaft=5614', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1350&r=6#p5614x5540', title: 'gegen SC Hämelerwald', text: 3½ }]
+    - [{ url: '?staffel=1350&r=5#p5614x5537', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - [{ url: '?staffel=1350&r=3#p5614x5766', title: 'gegen HSK Lister Turm 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1350&r=7#p5614x5700', title: 'gegen SK Anderten', text: 4½ }]
+    - [{ url: '?staffel=1350&r=4#p5614x5629', title: 'gegen SG Döhren-Gleid', text: 5½ }]
+    - [{ url: '?staffel=1350&r=2#p5614x5740', title: 'gegen SD Isernhagen 2', text: '6' }]
+    - [{ url: '?staffel=1350&r=1#p5614x5638', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=1350&r=9#p5614x5640', title: 'gegen SV Laatzen 2', text: '6' }]
+    - [{ url: '?staffel=1350&r=8#p5614x5611', title: 'gegen SV Bückeburg', text: '6' }]
+    - 10
+    - 39½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Anderten', url: '?mannschaft=5700', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1350&r=5#p5700x5540', title: 'gegen SC Hämelerwald', text: '2' }]
+    - [{ url: '?staffel=1350&r=4#p5700x5537', title: 'gegen SG Garbsen/Marienw', text: '2' }]
+    - [{ url: '?staffel=1350&r=2#p5700x5766', title: 'gegen HSK Lister Turm 4', text: 4½ }]
+    - [{ url: '?staffel=1350&r=7#p5700x5614', title: 'gegen SVg Calenberg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1350&r=3#p5700x5629', title: 'gegen SG Döhren-Gleid', text: '5' }]
+    - [{ url: '?staffel=1350&r=1#p5700x5740', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - [{ url: '?staffel=1350&r=9#p5700x5638', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=1350&r=8#p5700x5640', title: 'gegen SV Laatzen 2', text: 6½ }]
+    - [{ url: '?staffel=1350&r=6#p5700x5611', title: 'gegen SV Bückeburg', text: 5½ }]
+    - 10
+    - 37½
+    - ''
+-
+    - '6.'
+    - { text: 'SG Döhren-Gleid', url: '?mannschaft=5629', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1350&r=2#p5629x5540', title: 'gegen SC Hämelerwald', text: 3½ }]
+    - [{ url: '?staffel=1350&r=1#p5629x5537', title: 'gegen SG Garbsen/Marienw', text: '6' }]
+    - [{ url: '?staffel=1350&r=8#p5629x5766', title: 'gegen HSK Lister Turm 4', text: 3½ }]
+    - [{ url: '?staffel=1350&r=4#p5629x5614', title: 'gegen SVg Calenberg', text: 2½ }]
+    - [{ url: '?staffel=1350&r=3#p5629x5700', title: 'gegen SK Anderten', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1350&r=7#p5629x5740', title: 'gegen SD Isernhagen 2', text: 5½ }]
+    - [{ url: '?staffel=1350&r=6#p5629x5638', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=1350&r=5#p5629x5640', title: 'gegen SV Laatzen 2', text: '4' }]
+    - [{ url: '?staffel=1350&r=9#p5629x5611', title: 'gegen SV Bückeburg', text: '5' }]
+    - 9
+    - 38½
+    - ''
+-
+    - '7.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=5740', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1350&r=9#p5740x5540', title: 'gegen SC Hämelerwald', text: '3' }]
+    - [{ url: '?staffel=1350&r=8#p5740x5537', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - [{ url: '?staffel=1350&r=6#p5740x5766', title: 'gegen HSK Lister Turm 4', text: '6' }]
+    - [{ url: '?staffel=1350&r=2#p5740x5614', title: 'gegen SVg Calenberg', text: '2' }]
+    - [{ url: '?staffel=1350&r=1#p5740x5700', title: 'gegen SK Anderten', text: '5' }]
+    - [{ url: '?staffel=1350&r=7#p5740x5629', title: 'gegen SG Döhren-Gleid', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1350&r=4#p5740x5638', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=1350&r=3#p5740x5640', title: 'gegen SV Laatzen 2', text: '4' }]
+    - [{ url: '?staffel=1350&r=5#p5740x5611', title: 'gegen SV Bückeburg', text: '4' }]
+    - 7
+    - 33½
+    - ''
+-
+    - '8.'
+    - { text: 'Eystruper SK', url: '?mannschaft=5638', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1350&r=8#p5638x5540', title: 'gegen SC Hämelerwald', text: '3' }]
+    - [{ url: '?staffel=1350&r=7#p5638x5537', title: 'gegen SG Garbsen/Marienw', text: '1' }]
+    - [{ url: '?staffel=1350&r=5#p5638x5766', title: 'gegen HSK Lister Turm 4', text: 4½ }]
+    - [{ url: '?staffel=1350&r=1#p5638x5614', title: 'gegen SVg Calenberg', text: '5' }]
+    - [{ url: '?staffel=1350&r=9#p5638x5700', title: 'gegen SK Anderten', text: 2½ }]
+    - [{ url: '?staffel=1350&r=6#p5638x5629', title: 'gegen SG Döhren-Gleid', text: 2½ }]
+    - [{ url: '?staffel=1350&r=4#p5638x5740', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1350&r=2#p5638x5640', title: 'gegen SV Laatzen 2', text: '4' }]
+    - [{ url: '?staffel=1350&r=3#p5638x5611', title: 'gegen SV Bückeburg', text: '2' }]
+    - 6
+    - 28½
+    - ''
+-
+    - '9.'
+    - { text: 'SV Laatzen 2', url: '?mannschaft=5640', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1350&r=7#p5640x5540', title: 'gegen SC Hämelerwald', text: 2½ }]
+    - [{ url: '?staffel=1350&r=6#p5640x5537', title: 'gegen SG Garbsen/Marienw', text: 3½ }]
+    - [{ url: '?staffel=1350&r=4#p5640x5766', title: 'gegen HSK Lister Turm 4', text: 3½ }]
+    - [{ url: '?staffel=1350&r=9#p5640x5614', title: 'gegen SVg Calenberg', text: '2' }]
+    - [{ url: '?staffel=1350&r=8#p5640x5700', title: 'gegen SK Anderten', text: 1½ }]
+    - [{ url: '?staffel=1350&r=5#p5640x5629', title: 'gegen SG Döhren-Gleid', text: '4' }]
+    - [{ url: '?staffel=1350&r=3#p5640x5740', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - [{ url: '?staffel=1350&r=2#p5640x5638', title: 'gegen Eystruper SK', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1350&r=1#p5640x5611', title: 'gegen SV Bückeburg', text: '6' }]
+    - 5
+    - '31'
+    - ''
+-
+    - '10.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=5611', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1350&r=4#p5611x5540', title: 'gegen SC Hämelerwald', text: '4' }]
+    - [{ url: '?staffel=1350&r=2#p5611x5537', title: 'gegen SG Garbsen/Marienw', text: 3½ }]
+    - [{ url: '?staffel=1350&r=7#p5611x5766', title: 'gegen HSK Lister Turm 4', text: '2' }]
+    - [{ url: '?staffel=1350&r=8#p5611x5614', title: 'gegen SVg Calenberg', text: '2' }]
+    - [{ url: '?staffel=1350&r=6#p5611x5700', title: 'gegen SK Anderten', text: 2½ }]
+    - [{ url: '?staffel=1350&r=9#p5611x5629', title: 'gegen SG Döhren-Gleid', text: '3' }]
+    - [{ url: '?staffel=1350&r=5#p5611x5740', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - [{ url: '?staffel=1350&r=3#p5611x5638', title: 'gegen Eystruper SK', text: '6' }]
+    - [{ url: '?staffel=1350&r=1#p5611x5640', title: 'gegen SV Laatzen 2', text: '2' }]
+    - xxx
+    - 4
+    - '29'
+    - ''
