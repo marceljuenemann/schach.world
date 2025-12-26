@@ -1,4 +1,4 @@
-<?
+<?php
 /* Konfiguration
  *
  * In dieser Datei sind einige Einstellungen vorzunehmen, wie Infos
