@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Spielplan
  *
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -252,8 +252,8 @@
     <span class='sed_hl2'>Spielplan speichern</span><br /><br />
     Sind Sie sicher, dass Sie den alten Spielplan unwideruflich mit den neuen Daten &uuml;berschreiben m&ouml;chten?<br /><br />
     <input type='submit' class='sed_submit' value='Speichern' />
-    <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" />
-    <?
+    <input type='button' class='sed_submit' value='Abbrechen' onclick="<?php echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" />
+    <?php
   }
   echo "</div></form>";
 ?>
@@ -337,7 +337,7 @@ function Optimize ()
 	}
 	$bestValue = OptBacktrack ($teams, 1, 999999999);
 
-	var max = <? echo count($rsrcTeamsStaffel); ?>;
+	var max = <?php echo count($rsrcTeamsStaffel); ?>;
 	for (var i = 1; i <= max; ++i){
 		for (var team in $optBestSolution){
 			if ($optBestSolution[team] === i){
@@ -350,7 +350,7 @@ function Optimize ()
 
 function OptBacktrack ( $teams, $pos, $bestValue )
 {
-	var max = <? echo count($rsrcTeamsStaffel); ?>;
+	var max = <?php echo count($rsrcTeamsStaffel); ?>;
 	if ($pos >= max){
 		if ($optCurrentValue < $bestValue){
 			$bestValue = $optCurrentValue;
@@ -385,7 +385,7 @@ function OptBacktrack ( $teams, $pos, $bestValue )
 
 function OptMove ( $team, $pos )
 {
-	var max = <? echo count($rsrcTeamsStaffel); ?>;
+	var max = <?php echo count($rsrcTeamsStaffel); ?>;
 	for (var i = $pos; i <= max; i += 1){
 		for (var j = i; j > $pos; j -= 1){
 			OnSwitch(j-1, j);
@@ -474,7 +474,7 @@ function KmCalc ()
   }
 
   // Abweichungungen berechnen
-  var $average = $average_sum / <? echo count($rsrcTeamsStaffel); ?>;
+  var $average = $average_sum / <?php echo count($rsrcTeamsStaffel); ?>;
   for ( $i = 1; $obj = document.getElementById ( "KM-" + $i + "-1" ); ++$i )
   {
     $temp = parseInt ( $obj.innerHTML );
@@ -607,7 +607,7 @@ function PvAdd ( $runde, $teamA, $teamB )
   $objTD1.style.textAlign = "left";
 
   // Zelle 2 (Bild mit Link)
-  $objIMG.setAttribute ( "src", "<? echo "$globals[systemicons]desk_loeschen.png"; ?>" );
+  $objIMG.setAttribute ( "src", "<?php echo "$globals[systemicons]desk_loeschen.png"; ?>" );
   $objIMG.setAttribute ( "alt", "Paarung l&ouml;schen" );
   $objIMG.style.border = "none";
   $objA.setAttribute ( "href", "javascript:OnDelPaar("+$runde+", "+$teamA+", "+$teamB+");" );

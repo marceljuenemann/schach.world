@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Rundmail
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann

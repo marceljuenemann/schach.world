@@ -1,4 +1,4 @@
-<?
+<?php
 /* Mannschaftsmeldung: 2. Spiellokal
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann

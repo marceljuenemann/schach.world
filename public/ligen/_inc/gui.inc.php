@@ -1,4 +1,4 @@
-<?
+<?php
 /* Graphische Oberfläche
  *
  * Dieses Skript berechnet, welches Template benutzt werden soll und

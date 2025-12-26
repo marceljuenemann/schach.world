@@ -1,4 +1,4 @@
-<?
+<?php
 /* Mannschaftsmeldung: Anmelde-Objekt
  * 
  * In dieser Datei wird die Klasse SED_Anmeldung zur Verfügung

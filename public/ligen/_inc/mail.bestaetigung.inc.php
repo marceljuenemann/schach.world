@@ -1,4 +1,4 @@
-<?
+<?php
 /* Ergebniseingabe-Bestätigungs-eMail
  *
  * Sendet zu einer gegebenen Paarung eine Bestätigungs-eMail an die

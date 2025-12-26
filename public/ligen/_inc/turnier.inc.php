@@ -1,4 +1,4 @@
-<?
+<?php
 /* Turnierdaten laden
  *
  * Findet die ID des gewählten Turniers heraus und lädt einige grund-

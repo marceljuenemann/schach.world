@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Authentifizierung
  * 
  * Dieses Skript überprüft, ob ein Benutzer wirklich auf den

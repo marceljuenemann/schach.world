@@ -1,4 +1,4 @@
-<?
+<?php
 /* Spieltag: Export Schnittstelle
  * 
  * Aufruf über ...&ausgabe=phparray. Format s. inc/spieltag

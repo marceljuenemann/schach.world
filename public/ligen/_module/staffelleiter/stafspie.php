@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Spieldaten bearbeiten
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -124,7 +124,7 @@
             // Ist die aktuelle Eingabe lang genug fuer eine Anfrage?
             if ( nachname.length > 1 )
             {
-                <?
+                <?php
                     $ajax = new SED_AjaxRequest ( "getSpieler" );
                     $ajax->setOption ( "name", "nachname" );
                     $ajax->setOption ( "verband", "'$prefs[anmVerband]'" );
@@ -148,7 +148,7 @@
         function OnSpielerClick ( json )
         {
             // Felder setzen
-            <?
+            <?php
                 foreach ( $form as $feld ){
                     if ( $feld[0] != "nmR"  )
                         echo "if ( json.$feld[0] ) document.getElementsByName ( '$feld[0]' ) [0].value = json.$feld[0];";
@@ -156,7 +156,7 @@
             ?>
         }
         --></script>
-        <?
+        <?php
     }
 
     ////////////////////////////////////////////////////////

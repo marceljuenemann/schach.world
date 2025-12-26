@@ -1,4 +1,4 @@
-<?
+<?php
 /* Rundmail
  *
  * Zum Versenden von Rundmails innerhalb der Staffel.

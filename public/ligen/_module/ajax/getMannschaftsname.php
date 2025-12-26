@@ -1,4 +1,4 @@
-<?
+<?php
 /* AJAX: Mannschaftsname nach Verein
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
