@@ -92,12 +92,12 @@
     {
         "location": "Nsv\\League\\Application\\RankingTest::setUp",
         "message": "In ORM 3.0, the AttributeDriver will report fields for the classes where they are declared. This may uncover invalid mapping configurations. To opt into the new mode today, set the \"reportFieldsWhereDeclared\" constructor parameter to true. (AttributeDriver.php:77 called by Nsv_WebApp_Core_KernelTestDebugContainer.php:583, https://github.com/doctrine/orm/pull/10455, package doctrine/orm)",
-        "count": 9
+        "count": 6
     },
     {
         "location": "Nsv\\League\\Application\\RankingTest::setUp",
         "message": "Not enabling lazy ghost objects is deprecated and will not be supported in Doctrine ORM 3.0. Ensure Doctrine\\ORM\\Configuration::setLazyGhostObjectEnabled(true) is called to enable them. (ProxyFactory.php:166 called by EntityManager.php:177, https://github.com/doctrine/orm/pull/10837/, package doctrine/orm)",
-        "count": 9
+        "count": 6
     },
     {
         "location": "Nsv\\League\\Application\\RankingTest::testNoTable",
@@ -158,15 +158,5 @@
         "location": "Nsv\\League\\Application\\RankingTest::testMultiplePairingsBetweenTeams",
         "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
         "count": 1
-    },
-    {
-        "location": "Nsv\\League\\Application\\RankingTest::testRanking",
-        "message": "Version detection logic for MySQL will change in DBAL 4. Please specify the version as the server reports it, e.g. \"5.7.40\" instead of \"5.7\". (AbstractMySQLDriver.php:107 called by VersionAwarePlatformStaticDriver.php:19, https://github.com/doctrine/dbal/pull/5779, package doctrine/orm)",
-        "count": 3
-    },
-    {
-        "location": "Nsv\\League\\Application\\RankingTest::testRanking",
-        "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
-        "count": 3
     }
 ]

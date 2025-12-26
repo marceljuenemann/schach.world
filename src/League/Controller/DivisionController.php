@@ -21,17 +21,13 @@ use Nsv\League\Api\Service\PgnService;
 #[Route('/ligen/{league}/', name: 'league_division_', priority: -100)]
 class DivisionController extends AbstractLeagueController {
 
-  private $entityManager;
-
   function __construct(
     League                         $league,
     LeagueAuthState                $auth,
     LegacySystem                   $legacySystem,
-    Division                       $division,
-    private EntityManagerInterface $leagueEntityManager) {
+    Division                       $division) {
     parent::__construct($league, $auth, $legacySystem);
     $this->division = $division;
-    $this->entityManager = $this->leagueEntityManager;
   }
 
   #[Route('{division}/spielplan/', name: 'schedule')]
@@ -83,6 +79,24 @@ class DivisionController extends AbstractLeagueController {
     return $this->apiResponse($this->matchday_model($service, $round));
   }
 
+  #[Route('{division}/{round}/', name: 'matchday')]
+  public function matchday(int $round, MatchDayService $service): Response {
+    $matchDay = $this->matchday_model($service, $round);
+    return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
+      'matchDay' => $matchDay,
+      'tabs' => $this->divisionTabs()
+    ]);
+  }
+
+  private function matchday_model(MatchDayService $service, int $round) {
+    return $service->matchDayCached($this->division, $round, function () use ($round) {
+      $this->initializeLegacySystem();
+      $_GET['r'] = $round;
+      require_once('tabelle.inc.php');
+      return Tabelle($this->division->id, $round, true /* TODO: $kreuztabelle = false? */);
+    });
+  }
+
   #[Route('{division}/statistik', name: 'statistik')]
   public function statistics(StatisticsService $service): Response {
     $division_name = $this->division->name;
@@ -125,24 +139,6 @@ class DivisionController extends AbstractLeagueController {
           'division_name' => $division_name,
         ]);
     }
-  }
-
-  #[Route('{division}/{round}/', name: 'matchday')]
-  public function matchday(int $round, MatchDayService $service): Response {
-    $matchDay = $this->matchday_model($service, $round);
-    return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
-      'matchDay' => $matchDay,
-      'tabs' => $this->divisionTabs()
-    ]);
-  }
-
-  private function matchday_model(MatchDayService $service, int $round) {
-    return $service->matchDayCached($this->division, $round, function () use ($round) {
-      $this->initializeLegacySystem();
-      $_GET['r'] = $round;
-      require_once('tabelle.inc.php');
-      return Tabelle($this->division->id, $round, true /* TODO: $kreuztabelle = false? */);
-    });
   }
 
   #[Route('{division}/', name: 'index')]
