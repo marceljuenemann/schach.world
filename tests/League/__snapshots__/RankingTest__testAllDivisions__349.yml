@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK BS Paderborn', url: '?mannschaft=3381', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=790&r=3#p3381x3563', title: 'gegen SC Steinfurt', text: '3' }]
+    - [{ url: '?staffel=790&r=5#p3381x3389', title: 'gegen SV Welper 1922', text: 2½ }]
+    - [{ url: '?staffel=790&r=4#p3381x3468', title: 'gegen SK Münster 32', text: '3' }]
+    - [{ url: '?staffel=790&r=2#p3381x3567', title: 'gegen CAISSA Kassel', text: 3½ }]
+    - [{ url: '?staffel=790&r=1#p3381x3577', title: 'gegen Dortmund 1875', text: '4' }]
+    - 10
+    - '16'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Steinfurt', url: '?mannschaft=3563', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=790&r=3#p3563x3381', title: 'gegen SK BS Paderborn', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=790&r=1#p3563x3389', title: 'gegen SV Welper 1922', text: '3' }]
+    - [{ url: '?staffel=790&r=5#p3563x3468', title: 'gegen SK Münster 32', text: '3' }]
+    - [{ url: '?staffel=790&r=4#p3563x3567', title: 'gegen CAISSA Kassel', text: '3' }]
+    - [{ url: '?staffel=790&r=2#p3563x3577', title: 'gegen Dortmund 1875', text: 3½ }]
+    - 8
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Welper 1922', url: '?mannschaft=3389', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=790&r=5#p3389x3381', title: 'gegen SK BS Paderborn', text: 1½ }]
+    - [{ url: '?staffel=790&r=1#p3389x3563', title: 'gegen SC Steinfurt', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=790&r=2#p3389x3468', title: 'gegen SK Münster 32', text: 3½ }]
+    - [{ url: '?staffel=790&r=3#p3389x3567', title: 'gegen CAISSA Kassel', text: 2½ }]
+    - [{ url: '?staffel=790&r=4#p3389x3577', title: 'gegen Dortmund 1875', text: '3' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Münster 32', url: '?mannschaft=3468', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=790&r=4#p3468x3381', title: 'gegen SK BS Paderborn', text: '1' }]
+    - [{ url: '?staffel=790&r=5#p3468x3563', title: 'gegen SC Steinfurt', text: '1' }]
+    - [{ url: '?staffel=790&r=2#p3468x3389', title: 'gegen SV Welper 1922', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=790&r=1#p3468x3567', title: 'gegen CAISSA Kassel', text: '3' }]
+    - [{ url: '?staffel=790&r=3#p3468x3577', title: 'gegen Dortmund 1875', text: 2½ }]
+    - 4
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'CAISSA Kassel', url: '?mannschaft=3567', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=790&r=2#p3567x3381', title: 'gegen SK BS Paderborn', text: ½ }]
+    - [{ url: '?staffel=790&r=4#p3567x3563', title: 'gegen SC Steinfurt', text: '1' }]
+    - [{ url: '?staffel=790&r=3#p3567x3389', title: 'gegen SV Welper 1922', text: 1½ }]
+    - [{ url: '?staffel=790&r=1#p3567x3468', title: 'gegen SK Münster 32', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=790&r=5#p3567x3577', title: 'gegen Dortmund 1875', text: '4' }]
+    - 2
+    - '8'
+    - absteiger
+-
+    - '6.'
+    - { text: 'Dortmund 1875', url: '?mannschaft=3577', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=790&r=1#p3577x3381', title: 'gegen SK BS Paderborn', text: '0' }]
+    - [{ url: '?staffel=790&r=2#p3577x3563', title: 'gegen SC Steinfurt', text: ½ }]
+    - [{ url: '?staffel=790&r=4#p3577x3389', title: 'gegen SV Welper 1922', text: '1' }]
+    - [{ url: '?staffel=790&r=3#p3577x3468', title: 'gegen SK Münster 32', text: 1½ }]
+    - [{ url: '?staffel=790&r=5#p3577x3567', title: 'gegen CAISSA Kassel', text: '0' }]
+    - xxx
+    - 0
+    - '3'
+    - absteiger

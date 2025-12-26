@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'AE Magdeburg', url: '?mannschaft=8171', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1827&r=1#p8171x8166', title: 'gegen USC Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=1827&r=6#p8171x8167', title: 'gegen Rochade Göttingen', text: '3' }]
+    - [{ url: '?staffel=1827&r=2#p8171x8165', title: 'gegen 1. SC Anhalt', text: 1½ }]
+    - [{ url: '?staffel=1827&r=5#p8171x8169', title: 'gegen Hagener SV', text: 5½ }]
+    - [{ url: '?staffel=1827&r=3#p8171x8164', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=1827&r=7#p8171x8168', title: 'gegen SV Gifhorn', text: 5½ }]
+    - [{ url: '?staffel=1827&r=4#p8171x8170', title: 'gegen TuS Varrel', text: 5½ }]
+    - 11
+    - 28½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'USC Magdeburg', url: '?mannschaft=8166', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1827&r=1#p8166x8171', title: 'gegen AE Magdeburg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1827&r=7#p8166x8167', title: 'gegen Rochade Göttingen', text: '3' }]
+    - [{ url: '?staffel=1827&r=3#p8166x8165', title: 'gegen 1. SC Anhalt', text: 3½ }]
+    - [{ url: '?staffel=1827&r=6#p8166x8169', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=1827&r=4#p8166x8164', title: 'gegen SK Lehrte', text: 4½ }]
+    - [{ url: '?staffel=1827&r=2#p8166x8168', title: 'gegen SV Gifhorn', text: 3½ }]
+    - [{ url: '?staffel=1827&r=5#p8166x8170', title: 'gegen TuS Varrel', text: '6' }]
+    - 11
+    - 26½
+    - ''
+-
+    - '3.'
+    - { text: 'Rochade Göttingen', url: '?mannschaft=8167', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1827&r=6#p8167x8171', title: 'gegen AE Magdeburg', text: '3' }]
+    - [{ url: '?staffel=1827&r=7#p8167x8166', title: 'gegen USC Magdeburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1827&r=1#p8167x8165', title: 'gegen 1. SC Anhalt', text: 3½ }]
+    - [{ url: '?staffel=1827&r=4#p8167x8169', title: 'gegen Hagener SV', text: 2½ }]
+    - [{ url: '?staffel=1827&r=2#p8167x8164', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=1827&r=5#p8167x8168', title: 'gegen SV Gifhorn', text: 4½ }]
+    - [{ url: '?staffel=1827&r=3#p8167x8170', title: 'gegen TuS Varrel', text: 5½ }]
+    - 10
+    - '26'
+    - ''
+-
+    - '4.'
+    - { text: '1. SC Anhalt', url: '?mannschaft=8165', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1827&r=2#p8165x8171', title: 'gegen AE Magdeburg', text: 4½ }]
+    - [{ url: '?staffel=1827&r=3#p8165x8166', title: 'gegen USC Magdeburg', text: 2½ }]
+    - [{ url: '?staffel=1827&r=1#p8165x8167', title: 'gegen Rochade Göttingen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1827&r=7#p8165x8169', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=1827&r=5#p8165x8164', title: 'gegen SK Lehrte', text: '6' }]
+    - [{ url: '?staffel=1827&r=4#p8165x8168', title: 'gegen SV Gifhorn', text: '4' }]
+    - [{ url: '?staffel=1827&r=6#p8165x8170', title: 'gegen TuS Varrel', text: '6' }]
+    - 8
+    - '27'
+    - ''
+-
+    - '5.'
+    - { text: 'Hagener SV', url: '?mannschaft=8169', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1827&r=5#p8169x8171', title: 'gegen AE Magdeburg', text: ½ }]
+    - [{ url: '?staffel=1827&r=6#p8169x8166', title: 'gegen USC Magdeburg', text: 2½ }]
+    - [{ url: '?staffel=1827&r=4#p8169x8167', title: 'gegen Rochade Göttingen', text: 3½ }]
+    - [{ url: '?staffel=1827&r=7#p8169x8165', title: 'gegen 1. SC Anhalt', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1827&r=1#p8169x8164', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=1827&r=3#p8169x8168', title: 'gegen SV Gifhorn', text: 4½ }]
+    - [{ url: '?staffel=1827&r=2#p8169x8170', title: 'gegen TuS Varrel', text: '5' }]
+    - 8
+    - '22'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte', url: '?mannschaft=8164', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1827&r=3#p8164x8171', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=1827&r=4#p8164x8166', title: 'gegen USC Magdeburg', text: 1½ }]
+    - [{ url: '?staffel=1827&r=2#p8164x8167', title: 'gegen Rochade Göttingen', text: '2' }]
+    - [{ url: '?staffel=1827&r=5#p8164x8165', title: 'gegen 1. SC Anhalt', text: '0' }]
+    - [{ url: '?staffel=1827&r=1#p8164x8169', title: 'gegen Hagener SV', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1827&r=6#p8164x8168', title: 'gegen SV Gifhorn', text: '3' }]
+    - [{ url: '?staffel=1827&r=7#p8164x8170', title: 'gegen TuS Varrel', text: 5½ }]
+    - 5
+    - 18½
+    - absteigerRelegation
+-
+    - '7.'
+    - { text: 'SV Gifhorn', url: '?mannschaft=8168', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1827&r=7#p8168x8171', title: 'gegen AE Magdeburg', text: ½ }]
+    - [{ url: '?staffel=1827&r=2#p8168x8166', title: 'gegen USC Magdeburg', text: 2½ }]
+    - [{ url: '?staffel=1827&r=5#p8168x8167', title: 'gegen Rochade Göttingen', text: 1½ }]
+    - [{ url: '?staffel=1827&r=4#p8168x8165', title: 'gegen 1. SC Anhalt', text: '2' }]
+    - [{ url: '?staffel=1827&r=3#p8168x8169', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=1827&r=6#p8168x8164', title: 'gegen SK Lehrte', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1827&r=1#p8168x8170', title: 'gegen TuS Varrel', text: '5' }]
+    - 3
+    - '16'
+    - absteiger
+-
+    - '8.'
+    - { text: 'TuS Varrel', url: '?mannschaft=8170', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1827&r=4#p8170x8171', title: 'gegen AE Magdeburg', text: ½ }]
+    - [{ url: '?staffel=1827&r=5#p8170x8166', title: 'gegen USC Magdeburg', text: '0' }]
+    - [{ url: '?staffel=1827&r=3#p8170x8167', title: 'gegen Rochade Göttingen', text: ½ }]
+    - [{ url: '?staffel=1827&r=6#p8170x8165', title: 'gegen 1. SC Anhalt', text: '0' }]
+    - [{ url: '?staffel=1827&r=2#p8170x8169', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=1827&r=7#p8170x8164', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=1827&r=1#p8170x8168', title: 'gegen SV Gifhorn', text: '1' }]
+    - xxx
+    - 0
+    - 3½
+    - absteiger

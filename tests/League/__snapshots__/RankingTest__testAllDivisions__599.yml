@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV', url: '?mannschaft=5457', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1341&r=7#p5457x5450', title: 'gegen SG Ammerland', text: '6' }]
+    - [{ url: '?staffel=1341&r=6#p5457x5453', title: 'gegen SV Lingen 2', text: 5½ }]
+    - [{ url: '?staffel=1341&r=9#p5457x5455', title: 'gegen SK Nordhorn-Blanke 3', text: 5½ }]
+    - [{ url: '?staffel=1341&r=1#p5457x5452', title: 'gegen KS Emden', text: 6½ }]
+    - [{ url: '?staffel=1341&r=2#p5457x5454', title: 'gegen SK Union Oldenburg 2', text: '5' }]
+    - [{ url: '?staffel=1341&r=4#p5457x5451', title: 'gegen SG Ammerland 2', text: '5' }]
+    - [{ url: '?staffel=1341&r=3#p5457x5456', title: 'gegen SV Bad Essen', text: '6' }]
+    - [{ url: '?staffel=1341&r=8#p5457x5458', title: 'gegen SV Hellern 3', text: '5' }]
+    - [{ url: '?staffel=1341&r=5#p5457x5459', title: 'gegen Quakenbrücker SF', text: 6½ }]
+    - 18
+    - '51'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Ammerland', url: '?mannschaft=5450', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1341&r=7#p5450x5457', title: 'gegen Hagener SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1341&r=9#p5450x5453', title: 'gegen SV Lingen 2', text: 4½ }]
+    - [{ url: '?staffel=1341&r=2#p5450x5455', title: 'gegen SK Nordhorn-Blanke 3', text: '7' }]
+    - [{ url: '?staffel=1341&r=6#p5450x5452', title: 'gegen KS Emden', text: 5½ }]
+    - [{ url: '?staffel=1341&r=5#p5450x5454', title: 'gegen SK Union Oldenburg 2', text: '6' }]
+    - [{ url: '?staffel=1341&r=1#p5450x5451', title: 'gegen SG Ammerland 2', text: 5½ }]
+    - [{ url: '?staffel=1341&r=4#p5450x5456', title: 'gegen SV Bad Essen', text: 5½ }]
+    - [{ url: '?staffel=1341&r=3#p5450x5458', title: 'gegen SV Hellern 3', text: 6½ }]
+    - [{ url: '?staffel=1341&r=8#p5450x5459', title: 'gegen Quakenbrücker SF', text: 6½ }]
+    - 16
+    - '49'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=5453', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1341&r=6#p5453x5457', title: 'gegen Hagener SV', text: 2½ }]
+    - [{ url: '?staffel=1341&r=9#p5453x5450', title: 'gegen SG Ammerland', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1341&r=8#p5453x5455', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - [{ url: '?staffel=1341&r=4#p5453x5452', title: 'gegen KS Emden', text: 6½ }]
+    - [{ url: '?staffel=1341&r=3#p5453x5454', title: 'gegen SK Union Oldenburg 2', text: 4½ }]
+    - [{ url: '?staffel=1341&r=2#p5453x5451', title: 'gegen SG Ammerland 2', text: '5' }]
+    - [{ url: '?staffel=1341&r=1#p5453x5456', title: 'gegen SV Bad Essen', text: 5½ }]
+    - [{ url: '?staffel=1341&r=5#p5453x5458', title: 'gegen SV Hellern 3', text: 4½ }]
+    - [{ url: '?staffel=1341&r=7#p5453x5459', title: 'gegen Quakenbrücker SF', text: 4½ }]
+    - 13
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Blanke 3', url: '?mannschaft=5455', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1341&r=9#p5455x5457', title: 'gegen Hagener SV', text: 2½ }]
+    - [{ url: '?staffel=1341&r=2#p5455x5450', title: 'gegen SG Ammerland', text: '1' }]
+    - [{ url: '?staffel=1341&r=8#p5455x5453', title: 'gegen SV Lingen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1341&r=5#p5455x5452', title: 'gegen KS Emden', text: '4' }]
+    - [{ url: '?staffel=1341&r=6#p5455x5454', title: 'gegen SK Union Oldenburg 2', text: '8' }]
+    - [{ url: '?staffel=1341&r=3#p5455x5451', title: 'gegen SG Ammerland 2', text: '4' }]
+    - [{ url: '?staffel=1341&r=7#p5455x5456', title: 'gegen SV Bad Essen', text: 4½ }]
+    - [{ url: '?staffel=1341&r=4#p5455x5458', title: 'gegen SV Hellern 3', text: '4' }]
+    - [{ url: '?staffel=1341&r=1#p5455x5459', title: 'gegen Quakenbrücker SF', text: 3½ }]
+    - 8
+    - 35½
+    - ''
+-
+    - '5.'
+    - { text: 'KS Emden', url: '?mannschaft=5452', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1341&r=1#p5452x5457', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=1341&r=6#p5452x5450', title: 'gegen SG Ammerland', text: 2½ }]
+    - [{ url: '?staffel=1341&r=4#p5452x5453', title: 'gegen SV Lingen 2', text: 1½ }]
+    - [{ url: '?staffel=1341&r=5#p5452x5455', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1341&r=9#p5452x5454', title: 'gegen SK Union Oldenburg 2', text: 4½ }]
+    - [{ url: '?staffel=1341&r=8#p5452x5451', title: 'gegen SG Ammerland 2', text: '4' }]
+    - [{ url: '?staffel=1341&r=2#p5452x5456', title: 'gegen SV Bad Essen', text: '4' }]
+    - [{ url: '?staffel=1341&r=7#p5452x5458', title: 'gegen SV Hellern 3', text: 5½ }]
+    - [{ url: '?staffel=1341&r=3#p5452x5459', title: 'gegen Quakenbrücker SF', text: '4' }]
+    - 8
+    - 31½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Union Oldenburg 2', url: '?mannschaft=5454', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1341&r=2#p5454x5457', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=1341&r=5#p5454x5450', title: 'gegen SG Ammerland', text: '2' }]
+    - [{ url: '?staffel=1341&r=3#p5454x5453', title: 'gegen SV Lingen 2', text: 3½ }]
+    - [{ url: '?staffel=1341&r=6#p5454x5455', title: 'gegen SK Nordhorn-Blanke 3', text: '0' }]
+    - [{ url: '?staffel=1341&r=9#p5454x5452', title: 'gegen KS Emden', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1341&r=7#p5454x5451', title: 'gegen SG Ammerland 2', text: '4' }]
+    - [{ url: '?staffel=1341&r=8#p5454x5456', title: 'gegen SV Bad Essen', text: 4½ }]
+    - [{ url: '?staffel=1341&r=1#p5454x5458', title: 'gegen SV Hellern 3', text: '5' }]
+    - [{ url: '?staffel=1341&r=4#p5454x5459', title: 'gegen Quakenbrücker SF', text: '5' }]
+    - 7
+    - 30½
+    - ''
+-
+    - '7.'
+    - { text: 'SG Ammerland 2', url: '?mannschaft=5451', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1341&r=4#p5451x5457', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=1341&r=1#p5451x5450', title: 'gegen SG Ammerland', text: 2½ }]
+    - [{ url: '?staffel=1341&r=2#p5451x5453', title: 'gegen SV Lingen 2', text: '3' }]
+    - [{ url: '?staffel=1341&r=3#p5451x5455', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - [{ url: '?staffel=1341&r=8#p5451x5452', title: 'gegen KS Emden', text: '4' }]
+    - [{ url: '?staffel=1341&r=7#p5451x5454', title: 'gegen SK Union Oldenburg 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1341&r=5#p5451x5456', title: 'gegen SV Bad Essen', text: '3' }]
+    - [{ url: '?staffel=1341&r=9#p5451x5458', title: 'gegen SV Hellern 3', text: '3' }]
+    - [{ url: '?staffel=1341&r=6#p5451x5459', title: 'gegen Quakenbrücker SF', text: '6' }]
+    - 5
+    - 32½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Bad Essen', url: '?mannschaft=5456', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1341&r=3#p5456x5457', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=1341&r=4#p5456x5450', title: 'gegen SG Ammerland', text: 2½ }]
+    - [{ url: '?staffel=1341&r=1#p5456x5453', title: 'gegen SV Lingen 2', text: 2½ }]
+    - [{ url: '?staffel=1341&r=7#p5456x5455', title: 'gegen SK Nordhorn-Blanke 3', text: 3½ }]
+    - [{ url: '?staffel=1341&r=2#p5456x5452', title: 'gegen KS Emden', text: '4' }]
+    - [{ url: '?staffel=1341&r=8#p5456x5454', title: 'gegen SK Union Oldenburg 2', text: 3½ }]
+    - [{ url: '?staffel=1341&r=5#p5456x5451', title: 'gegen SG Ammerland 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1341&r=6#p5456x5458', title: 'gegen SV Hellern 3', text: '3' }]
+    - [{ url: '?staffel=1341&r=9#p5456x5459', title: 'gegen Quakenbrücker SF', text: 5½ }]
+    - 5
+    - 31½
+    - ''
+-
+    - '9.'
+    - { text: 'SV Hellern 3', url: '?mannschaft=5458', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1341&r=8#p5458x5457', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=1341&r=3#p5458x5450', title: 'gegen SG Ammerland', text: 1½ }]
+    - [{ url: '?staffel=1341&r=5#p5458x5453', title: 'gegen SV Lingen 2', text: 3½ }]
+    - [{ url: '?staffel=1341&r=4#p5458x5455', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - [{ url: '?staffel=1341&r=7#p5458x5452', title: 'gegen KS Emden', text: 2½ }]
+    - [{ url: '?staffel=1341&r=1#p5458x5454', title: 'gegen SK Union Oldenburg 2', text: '3' }]
+    - [{ url: '?staffel=1341&r=9#p5458x5451', title: 'gegen SG Ammerland 2', text: '5' }]
+    - [{ url: '?staffel=1341&r=6#p5458x5456', title: 'gegen SV Bad Essen', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1341&r=2#p5458x5459', title: 'gegen Quakenbrücker SF', text: '3' }]
+    - 5
+    - 30½
+    - absteiger
+-
+    - '10.'
+    - { text: 'Quakenbrücker SF', url: '?mannschaft=5459', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1341&r=5#p5459x5457', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=1341&r=8#p5459x5450', title: 'gegen SG Ammerland', text: 1½ }]
+    - [{ url: '?staffel=1341&r=7#p5459x5453', title: 'gegen SV Lingen 2', text: 3½ }]
+    - [{ url: '?staffel=1341&r=1#p5459x5455', title: 'gegen SK Nordhorn-Blanke 3', text: 4½ }]
+    - [{ url: '?staffel=1341&r=3#p5459x5452', title: 'gegen KS Emden', text: '4' }]
+    - [{ url: '?staffel=1341&r=4#p5459x5454', title: 'gegen SK Union Oldenburg 2', text: '3' }]
+    - [{ url: '?staffel=1341&r=6#p5459x5451', title: 'gegen SG Ammerland 2', text: '2' }]
+    - [{ url: '?staffel=1341&r=9#p5459x5456', title: 'gegen SV Bad Essen', text: 2½ }]
+    - [{ url: '?staffel=1341&r=2#p5459x5458', title: 'gegen SV Hellern 3', text: '5' }]
+    - xxx
+    - 5
+    - 27½
+    - absteiger

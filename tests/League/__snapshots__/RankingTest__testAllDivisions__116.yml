@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=1537', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=529&r=1#p1537x1597', title: 'gegen SK Anderten', text: '5' }]
+    - [{ url: '?staffel=529&r=3#p1537x1644', title: 'gegen SK Lehrte 2', text: '5' }]
+    - [{ url: '?staffel=529&r=4#p1537x1635', title: 'gegen SD Isernhagen 2', text: '6' }]
+    - [{ url: '?staffel=529&r=7#p1537x1634', title: 'gegen HSK-Lister Turm', text: '6' }]
+    - [{ url: '?staffel=529&r=5#p1537x1758', title: 'gegen TuS Wunstorf', text: '6' }]
+    - [{ url: '?staffel=529&r=2#p1537x1578', title: 'gegen Barsinghausen', text: '5' }]
+    - 12
+    - '33'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Anderten', url: '?mannschaft=1597', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=529&r=1#p1597x1537', title: 'gegen SK Ricklingen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=529&r=2#p1597x1644', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=529&r=6#p1597x1635', title: 'gegen SD Isernhagen 2', text: 4½ }]
+    - [{ url: '?staffel=529&r=4#p1597x1634', title: 'gegen HSK-Lister Turm', text: '6' }]
+    - [{ url: '?staffel=529&r=3#p1597x1758', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=529&r=5#p1597x1578', title: 'gegen Barsinghausen', text: 4½ }]
+    - 8
+    - '20'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=1644', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=529&r=3#p1644x1537', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=529&r=2#p1644x1597', title: 'gegen SK Anderten', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=529&r=7#p1644x1635', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - [{ url: '?staffel=529&r=5#p1644x1634', title: 'gegen HSK-Lister Turm', text: '3' }]
+    - [{ url: '?staffel=529&r=4#p1644x1758', title: 'gegen TuS Wunstorf', text: '5' }]
+    - [{ url: '?staffel=529&r=6#p1644x1578', title: 'gegen Barsinghausen', text: '2' }]
+    - 6
+    - '20'
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=1635', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=529&r=4#p1635x1537', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=529&r=6#p1635x1597', title: 'gegen SK Anderten', text: 1½ }]
+    - [{ url: '?staffel=529&r=7#p1635x1644', title: 'gegen SK Lehrte 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=529&r=2#p1635x1634', title: 'gegen HSK-Lister Turm', text: '2' }]
+    - [{ url: '?staffel=529&r=1#p1635x1758', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=529&r=3#p1635x1578', title: 'gegen Barsinghausen', text: 3½ }]
+    - 5
+    - '14'
+    - ''
+-
+    - '5.'
+    - { text: 'HSK-Lister Turm', url: '?mannschaft=1634', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=529&r=7#p1634x1537', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=529&r=4#p1634x1597', title: 'gegen SK Anderten', text: '0' }]
+    - [{ url: '?staffel=529&r=5#p1634x1644', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=529&r=2#p1634x1635', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=529&r=6#p1634x1758', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=529&r=1#p1634x1578', title: 'gegen Barsinghausen', text: 3½ }]
+    - 5
+    - 10½
+    - ''
+-
+    - '6.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=1758', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=529&r=5#p1758x1537', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=529&r=3#p1758x1597', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=529&r=4#p1758x1644', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=529&r=1#p1758x1635', title: 'gegen SD Isernhagen 2', text: '2' }]
+    - [{ url: '?staffel=529&r=6#p1758x1634', title: 'gegen HSK-Lister Turm', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=529&r=7#p1758x1578', title: 'gegen Barsinghausen', text: 2½ }]
+    - 3
+    - 13½
+    - ''
+-
+    - '7.'
+    - { text: Barsinghausen, url: '?mannschaft=1578', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=529&r=2#p1578x1537', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=529&r=5#p1578x1597', title: 'gegen SK Anderten', text: ½ }]
+    - [{ url: '?staffel=529&r=6#p1578x1644', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=529&r=3#p1578x1635', title: 'gegen SD Isernhagen 2', text: 2½ }]
+    - [{ url: '?staffel=529&r=1#p1578x1634', title: 'gegen HSK-Lister Turm', text: 2½ }]
+    - [{ url: '?staffel=529&r=7#p1578x1758', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - xxx
+    - 3
+    - '13'
+    - ''

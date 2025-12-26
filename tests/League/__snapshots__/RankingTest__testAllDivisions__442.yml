@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Schöningen JFZ', url: '?mannschaft=4323', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=908&r=1#p4323x4320', title: 'gegen Hildesheimer SVU12', text: '3' }]
+    - [{ url: '?staffel=908&r=4#p4323x4325', title: 'gegen VfL Oker', text: '4' }]
+    - [{ url: '?staffel=908&r=8#p4323x4321', title: 'gegen Hildesheimer SVU14', text: 3½ }]
+    - [{ url: '?staffel=908&r=9#p4323x4319', title: 'gegen Hildesheimer SVU18', text: '3' }]
+    - [{ url: '?staffel=908&r=5#p4323x4324', title: 'gegen SHG Hildesheim', text: 2½ }]
+    - [{ url: '?staffel=908&r=7#p4323x4322', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - [{ url: '?staffel=908&r=2#p4323x4326', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - [{ url: '?staffel=908&r=3#p4323x4328', title: 'gegen SK Goslar', text: 2½ }]
+    - [{ url: '?staffel=908&r=6#p4323x4327', title: 'gegen SK Bad Harzburg 2', text: '4' }]
+    - 18
+    - 30½
+    - ''
+-
+    - '2.'
+    - { text: 'Hildesheimer SVU12', url: '?mannschaft=4320', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=908&r=1#p4320x4323', title: 'gegen SG Schöningen JFZ', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=908&r=9#p4320x4325', title: 'gegen VfL Oker', text: '3' }]
+    - [{ url: '?staffel=908&r=4#p4320x4321', title: 'gegen Hildesheimer SVU14', text: 2½ }]
+    - [{ url: '?staffel=908&r=3#p4320x4319', title: 'gegen Hildesheimer SVU18', text: '3' }]
+    - [{ url: '?staffel=908&r=2#p4320x4324', title: 'gegen SHG Hildesheim', text: '3' }]
+    - [{ url: '?staffel=908&r=6#p4320x4322', title: 'gegen SC BS Gliesmarode', text: 2½ }]
+    - [{ url: '?staffel=908&r=7#p4320x4326', title: 'gegen SK Bad Harzburg', text: 3½ }]
+    - [{ url: '?staffel=908&r=5#p4320x4328', title: 'gegen SK Goslar', text: 3½ }]
+    - [{ url: '?staffel=908&r=8#p4320x4327', title: 'gegen SK Bad Harzburg 2', text: 3½ }]
+    - 16
+    - 25½
+    - ''
+-
+    - '3.'
+    - { text: 'VfL Oker', url: '?mannschaft=4325', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=908&r=4#p4325x4323', title: 'gegen SG Schöningen JFZ', text: '0' }]
+    - [{ url: '?staffel=908&r=9#p4325x4320', title: 'gegen Hildesheimer SVU12', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=908&r=5#p4325x4321', title: 'gegen Hildesheimer SVU14', text: 2½ }]
+    - [{ url: '?staffel=908&r=7#p4325x4319', title: 'gegen Hildesheimer SVU18', text: 2½ }]
+    - [{ url: '?staffel=908&r=6#p4325x4324', title: 'gegen SHG Hildesheim', text: '3' }]
+    - [{ url: '?staffel=908&r=2#p4325x4322', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - [{ url: '?staffel=908&r=8#p4325x4326', title: 'gegen SK Bad Harzburg', text: 2½ }]
+    - [{ url: '?staffel=908&r=1#p4325x4328', title: 'gegen SK Goslar', text: '3' }]
+    - [{ url: '?staffel=908&r=3#p4325x4327', title: 'gegen SK Bad Harzburg 2', text: '4' }]
+    - 14
+    - 22½
+    - ''
+-
+    - '4.'
+    - { text: 'Hildesheimer SVU14', url: '?mannschaft=4321', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=908&r=8#p4321x4323', title: 'gegen SG Schöningen JFZ', text: ½ }]
+    - [{ url: '?staffel=908&r=4#p4321x4320', title: 'gegen Hildesheimer SVU12', text: 1½ }]
+    - [{ url: '?staffel=908&r=5#p4321x4325', title: 'gegen VfL Oker', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=908&r=2#p4321x4319', title: 'gegen Hildesheimer SVU18', text: 2½ }]
+    - [{ url: '?staffel=908&r=1#p4321x4324', title: 'gegen SHG Hildesheim', text: 2½ }]
+    - [{ url: '?staffel=908&r=3#p4321x4322', title: 'gegen SC BS Gliesmarode', text: '3' }]
+    - [{ url: '?staffel=908&r=6#p4321x4326', title: 'gegen SK Bad Harzburg', text: 3½ }]
+    - [{ url: '?staffel=908&r=7#p4321x4328', title: 'gegen SK Goslar', text: '3' }]
+    - [{ url: '?staffel=908&r=9#p4321x4327', title: 'gegen SK Bad Harzburg 2', text: '4' }]
+    - 12
+    - '22'
+    - ''
+-
+    - '5.'
+    - { text: 'Hildesheimer SVU18', url: '?mannschaft=4319', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=908&r=9#p4319x4323', title: 'gegen SG Schöningen JFZ', text: '1' }]
+    - [{ url: '?staffel=908&r=3#p4319x4320', title: 'gegen Hildesheimer SVU12', text: '1' }]
+    - [{ url: '?staffel=908&r=7#p4319x4325', title: 'gegen VfL Oker', text: 1½ }]
+    - [{ url: '?staffel=908&r=2#p4319x4321', title: 'gegen Hildesheimer SVU14', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=908&r=8#p4319x4324', title: 'gegen SHG Hildesheim', text: 2½ }]
+    - [{ url: '?staffel=908&r=1#p4319x4322', title: 'gegen SC BS Gliesmarode', text: '3' }]
+    - [{ url: '?staffel=908&r=4#p4319x4326', title: 'gegen SK Bad Harzburg', text: '2' }]
+    - [{ url: '?staffel=908&r=6#p4319x4328', title: 'gegen SK Goslar', text: 3½ }]
+    - [{ url: '?staffel=908&r=5#p4319x4327', title: 'gegen SK Bad Harzburg 2', text: '3' }]
+    - 9
+    - '19'
+    - ''
+-
+    - '6.'
+    - { text: 'SHG Hildesheim', url: '?mannschaft=4324', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=908&r=5#p4324x4323', title: 'gegen SG Schöningen JFZ', text: 1½ }]
+    - [{ url: '?staffel=908&r=2#p4324x4320', title: 'gegen Hildesheimer SVU12', text: '1' }]
+    - [{ url: '?staffel=908&r=6#p4324x4325', title: 'gegen VfL Oker', text: '1' }]
+    - [{ url: '?staffel=908&r=1#p4324x4321', title: 'gegen Hildesheimer SVU14', text: 1½ }]
+    - [{ url: '?staffel=908&r=8#p4324x4319', title: 'gegen Hildesheimer SVU18', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=908&r=9#p4324x4322', title: 'gegen SC BS Gliesmarode', text: '2' }]
+    - [{ url: '?staffel=908&r=3#p4324x4326', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - [{ url: '?staffel=908&r=4#p4324x4328', title: 'gegen SK Goslar', text: '3' }]
+    - [{ url: '?staffel=908&r=7#p4324x4327', title: 'gegen SK Bad Harzburg 2', text: '4' }]
+    - 7
+    - 19½
+    - ''
+-
+    - '7.'
+    - { text: 'SC BS Gliesmarode', url: '?mannschaft=4322', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=908&r=7#p4322x4323', title: 'gegen SG Schöningen JFZ', text: '0' }]
+    - [{ url: '?staffel=908&r=6#p4322x4320', title: 'gegen Hildesheimer SVU12', text: 1½ }]
+    - [{ url: '?staffel=908&r=2#p4322x4325', title: 'gegen VfL Oker', text: '0' }]
+    - [{ url: '?staffel=908&r=3#p4322x4321', title: 'gegen Hildesheimer SVU14', text: '1' }]
+    - [{ url: '?staffel=908&r=1#p4322x4319', title: 'gegen Hildesheimer SVU18', text: '1' }]
+    - [{ url: '?staffel=908&r=9#p4322x4324', title: 'gegen SHG Hildesheim', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=908&r=5#p4322x4326', title: 'gegen SK Bad Harzburg', text: 2½ }]
+    - [{ url: '?staffel=908&r=8#p4322x4328', title: 'gegen SK Goslar', text: '4' }]
+    - [{ url: '?staffel=908&r=4#p4322x4327', title: 'gegen SK Bad Harzburg 2', text: '4' }]
+    - 7
+    - '16'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Bad Harzburg', url: '?mannschaft=4326', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=908&r=2#p4326x4323', title: 'gegen SG Schöningen JFZ', text: '0' }]
+    - [{ url: '?staffel=908&r=7#p4326x4320', title: 'gegen Hildesheimer SVU12', text: ½ }]
+    - [{ url: '?staffel=908&r=8#p4326x4325', title: 'gegen VfL Oker', text: 1½ }]
+    - [{ url: '?staffel=908&r=6#p4326x4321', title: 'gegen Hildesheimer SVU14', text: ½ }]
+    - [{ url: '?staffel=908&r=4#p4326x4319', title: 'gegen Hildesheimer SVU18', text: '2' }]
+    - [{ url: '?staffel=908&r=3#p4326x4324', title: 'gegen SHG Hildesheim', text: '0' }]
+    - [{ url: '?staffel=908&r=5#p4326x4322', title: 'gegen SC BS Gliesmarode', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=908&r=9#p4326x4328', title: 'gegen SK Goslar', text: '3' }]
+    - [{ url: '?staffel=908&r=1#p4326x4327', title: 'gegen SK Bad Harzburg 2', text: '4' }]
+    - 5
+    - '13'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Goslar', url: '?mannschaft=4328', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=908&r=3#p4328x4323', title: 'gegen SG Schöningen JFZ', text: 1½ }]
+    - [{ url: '?staffel=908&r=5#p4328x4320', title: 'gegen Hildesheimer SVU12', text: ½ }]
+    - [{ url: '?staffel=908&r=1#p4328x4325', title: 'gegen VfL Oker', text: '1' }]
+    - [{ url: '?staffel=908&r=7#p4328x4321', title: 'gegen Hildesheimer SVU14', text: '1' }]
+    - [{ url: '?staffel=908&r=6#p4328x4319', title: 'gegen Hildesheimer SVU18', text: ½ }]
+    - [{ url: '?staffel=908&r=4#p4328x4324', title: 'gegen SHG Hildesheim', text: '1' }]
+    - [{ url: '?staffel=908&r=8#p4328x4322', title: 'gegen SC BS Gliesmarode', text: '0' }]
+    - [{ url: '?staffel=908&r=9#p4328x4326', title: 'gegen SK Bad Harzburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=908&r=2#p4328x4327', title: 'gegen SK Bad Harzburg 2', text: '4' }]
+    - 2
+    - 10½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Bad Harzburg 2', url: '?mannschaft=4327', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=908&r=6#p4327x4323', title: 'gegen SG Schöningen JFZ', text: '0' }]
+    - [{ url: '?staffel=908&r=8#p4327x4320', title: 'gegen Hildesheimer SVU12', text: ½ }]
+    - [{ url: '?staffel=908&r=3#p4327x4325', title: 'gegen VfL Oker', text: '0' }]
+    - [{ url: '?staffel=908&r=9#p4327x4321', title: 'gegen Hildesheimer SVU14', text: '0' }]
+    - [{ url: '?staffel=908&r=5#p4327x4319', title: 'gegen Hildesheimer SVU18', text: '1' }]
+    - [{ url: '?staffel=908&r=7#p4327x4324', title: 'gegen SHG Hildesheim', text: '0' }]
+    - [{ url: '?staffel=908&r=4#p4327x4322', title: 'gegen SC BS Gliesmarode', text: '0' }]
+    - [{ url: '?staffel=908&r=1#p4327x4326', title: 'gegen SK Bad Harzburg', text: '0' }]
+    - [{ url: '?staffel=908&r=2#p4327x4328', title: 'gegen SK Goslar', text: '0' }]
+    - xxx
+    - 0
+    - 1½
+    - ''

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Hellern', url: '?mannschaft=6002', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1444&r=5#p6002x6003', title: 'gegen SV Hellern 2', text: '4' }]
+    - [{ url: '?staffel=1444&r=1#p6002x6011', title: 'gegen SK Nordhorn-Blanke 2', text: '4' }]
+    - [{ url: '?staffel=1444&r=7#p6002x5984', title: 'gegen SV Osnabrück', text: '2' }]
+    - [{ url: '?staffel=1444&r=6#p6002x5986', title: 'gegen SV Lingen 2', text: '4' }]
+    - [{ url: '?staffel=1444&r=2#p6002x6026', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - [{ url: '?staffel=1444&r=3#p6002x6009', title: 'gegen Papenbg.-Heisfelde 2', text: 3½ }]
+    - [{ url: '?staffel=1444&r=4#p6002x6010', title: 'gegen Papenbg.-Heisfelde 3', text: '4' }]
+    - 13
+    - 25½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SV Hellern 2', url: '?mannschaft=6003', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1444&r=5#p6003x6002', title: 'gegen SV Hellern', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1444&r=2#p6003x6011', title: 'gegen SK Nordhorn-Blanke 2', text: '2' }]
+    - [{ url: '?staffel=1444&r=6#p6003x5984', title: 'gegen SV Osnabrück', text: '3' }]
+    - [{ url: '?staffel=1444&r=7#p6003x5986', title: 'gegen SV Lingen 2', text: '3' }]
+    - [{ url: '?staffel=1444&r=1#p6003x6026', title: 'gegen SK Nordhorn-Blanke 3', text: '3' }]
+    - [{ url: '?staffel=1444&r=4#p6003x6009', title: 'gegen Papenbg.-Heisfelde 2', text: 3½ }]
+    - [{ url: '?staffel=1444&r=3#p6003x6010', title: 'gegen Papenbg.-Heisfelde 3', text: '4' }]
+    - 11
+    - 18½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Nordhorn-Blanke 2', url: '?mannschaft=6011', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1444&r=1#p6011x6002', title: 'gegen SV Hellern', text: '0' }]
+    - [{ url: '?staffel=1444&r=2#p6011x6003', title: 'gegen SV Hellern 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1444&r=4#p6011x5984', title: 'gegen SV Osnabrück', text: '4' }]
+    - [{ url: '?staffel=1444&r=3#p6011x5986', title: 'gegen SV Lingen 2', text: '1' }]
+    - [{ url: '?staffel=1444&r=5#p6011x6026', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - [{ url: '?staffel=1444&r=6#p6011x6009', title: 'gegen Papenbg.-Heisfelde 2', text: '4' }]
+    - [{ url: '?staffel=1444&r=7#p6011x6010', title: 'gegen Papenbg.-Heisfelde 3', text: '4' }]
+    - 9
+    - '19'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück', url: '?mannschaft=5984', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1444&r=7#p5984x6002', title: 'gegen SV Hellern', text: '2' }]
+    - [{ url: '?staffel=1444&r=6#p5984x6003', title: 'gegen SV Hellern 2', text: '1' }]
+    - [{ url: '?staffel=1444&r=4#p5984x6011', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1444&r=5#p5984x5986', title: 'gegen SV Lingen 2', text: '3' }]
+    - [{ url: '?staffel=1444&r=3#p5984x6026', title: 'gegen SK Nordhorn-Blanke 3', text: '2' }]
+    - [{ url: '?staffel=1444&r=1#p5984x6009', title: 'gegen Papenbg.-Heisfelde 2', text: '4' }]
+    - [{ url: '?staffel=1444&r=2#p5984x6010', title: 'gegen Papenbg.-Heisfelde 3', text: '4' }]
+    - 8
+    - '16'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=5986', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1444&r=6#p5986x6002', title: 'gegen SV Hellern', text: '0' }]
+    - [{ url: '?staffel=1444&r=7#p5986x6003', title: 'gegen SV Hellern 2', text: '1' }]
+    - [{ url: '?staffel=1444&r=3#p5986x6011', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=1444&r=5#p5986x5984', title: 'gegen SV Osnabrück', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1444&r=4#p5986x6026', title: 'gegen SK Nordhorn-Blanke 3', text: '3' }]
+    - [{ url: '?staffel=1444&r=2#p5986x6009', title: 'gegen Papenbg.-Heisfelde 2', text: '3' }]
+    - [{ url: '?staffel=1444&r=1#p5986x6010', title: 'gegen Papenbg.-Heisfelde 3', text: '4' }]
+    - 8
+    - '15'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Nordhorn-Blanke 3', url: '?mannschaft=6026', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1444&r=2#p6026x6002', title: 'gegen SV Hellern', text: '0' }]
+    - [{ url: '?staffel=1444&r=1#p6026x6003', title: 'gegen SV Hellern 2', text: '1' }]
+    - [{ url: '?staffel=1444&r=5#p6026x6011', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=1444&r=3#p6026x5984', title: 'gegen SV Osnabrück', text: '2' }]
+    - [{ url: '?staffel=1444&r=4#p6026x5986', title: 'gegen SV Lingen 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1444&r=7#p6026x6009', title: 'gegen Papenbg.-Heisfelde 2', text: 3½ }]
+    - [{ url: '?staffel=1444&r=6#p6026x6010', title: 'gegen Papenbg.-Heisfelde 3', text: '3' }]
+    - 5
+    - 10½
+    - ''
+-
+    - '7.'
+    - { text: 'Papenbg.-Heisfelde 2', url: '?mannschaft=6009', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1444&r=3#p6009x6002', title: 'gegen SV Hellern', text: ½ }]
+    - [{ url: '?staffel=1444&r=4#p6009x6003', title: 'gegen SV Hellern 2', text: ½ }]
+    - [{ url: '?staffel=1444&r=6#p6009x6011', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=1444&r=1#p6009x5984', title: 'gegen SV Osnabrück', text: '0' }]
+    - [{ url: '?staffel=1444&r=2#p6009x5986', title: 'gegen SV Lingen 2', text: '1' }]
+    - [{ url: '?staffel=1444&r=7#p6009x6026', title: 'gegen SK Nordhorn-Blanke 3', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1444&r=5#p6009x6010', title: 'gegen Papenbg.-Heisfelde 3', text: '2' }]
+    - 1
+    - 4½
+    - ''
+-
+    - '8.'
+    - { text: 'Papenbg.-Heisfelde 3', url: '?mannschaft=6010', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1444&r=4#p6010x6002', title: 'gegen SV Hellern', text: '0' }]
+    - [{ url: '?staffel=1444&r=3#p6010x6003', title: 'gegen SV Hellern 2', text: '0' }]
+    - [{ url: '?staffel=1444&r=7#p6010x6011', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=1444&r=2#p6010x5984', title: 'gegen SV Osnabrück', text: '0' }]
+    - [{ url: '?staffel=1444&r=1#p6010x5986', title: 'gegen SV Lingen 2', text: '0' }]
+    - [{ url: '?staffel=1444&r=6#p6010x6026', title: 'gegen SK Nordhorn-Blanke 3', text: '1' }]
+    - [{ url: '?staffel=1444&r=5#p6010x6009', title: 'gegen Papenbg.-Heisfelde 2', text: '2' }]
+    - xxx
+    - 1
+    - '3'
+    - ''

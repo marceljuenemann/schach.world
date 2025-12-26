@@ -33,6 +33,17 @@
         "twig/extra-bundle": "^3.7",
         "twig/intl-extra": "^3.7"
     },
+    "require-dev": {
+        "dama/doctrine-test-bundle": "^7.2",
+        "doctrine/doctrine-fixtures-bundle": "^3.4",
+        "phpunit/phpunit": "^12.5",
+        "spatie/phpunit-snapshot-assertions": "^5.2",
+        "symfony/browser-kit": "6.4.*",
+        "symfony/css-selector": "6.4.*",
+        "symfony/maker-bundle": "^1.49",
+        "symfony/phpunit-bridge": "^6.3",
+        "symfony/stopwatch": "6.4.*"
+    },
     "config": {
         "allow-plugins": {
             "php-http/discovery": true,
@@ -82,16 +93,5 @@
             "allow-contrib": false,
             "require": "6.4.*"
         }
-    },
-    "require-dev": {
-        "dama/doctrine-test-bundle": "^7.2",
-        "doctrine/doctrine-fixtures-bundle": "^3.4",
-        "phpunit/phpunit": "^9.5",
-        "spatie/phpunit-snapshot-assertions": "^4.2",
-        "symfony/browser-kit": "6.4.*",
-        "symfony/css-selector": "6.4.*",
-        "symfony/maker-bundle": "^1.49",
-        "symfony/phpunit-bridge": "^6.3",
-        "symfony/stopwatch": "6.4.*"
     }
 }

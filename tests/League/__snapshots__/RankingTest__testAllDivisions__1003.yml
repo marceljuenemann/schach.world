@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Peiner SV', url: '?mannschaft=8186', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1853&r=4#p8186x8190', title: 'gegen HSK Lister Turm', text: 1½ }]
+    - [{ url: '?staffel=1853&r=3#p8186x8187', title: 'gegen SV Bad Essen', text: '3' }]
+    - [{ url: '?staffel=1853&r=1#p8186x8188', title: 'gegen SC Papenburg', text: 3½ }]
+    - [{ url: '?staffel=1853&r=5#p8186x8189', title: 'gegen BW Buchholz', text: '4' }]
+    - 6
+    - '12'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=8190', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1853&r=4#p8190x8186', title: 'gegen Peiner SV', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1853&r=5#p8190x8187', title: 'gegen SV Bad Essen', text: '4' }]
+    - [{ url: '?staffel=1853&r=3#p8190x8188', title: 'gegen SC Papenburg', text: '1' }]
+    - [{ url: '?staffel=1853&r=2#p8190x8189', title: 'gegen BW Buchholz', text: '3' }]
+    - 6
+    - 10½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SV Bad Essen', url: '?mannschaft=8187', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1853&r=3#p8187x8186', title: 'gegen Peiner SV', text: '1' }]
+    - [{ url: '?staffel=1853&r=5#p8187x8190', title: 'gegen HSK Lister Turm', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1853&r=2#p8187x8188', title: 'gegen SC Papenburg', text: '3' }]
+    - [{ url: '?staffel=1853&r=1#p8187x8189', title: 'gegen BW Buchholz', text: 2½ }]
+    - 4
+    - 6½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Papenburg', url: '?mannschaft=8188', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1853&r=1#p8188x8186', title: 'gegen Peiner SV', text: ½ }]
+    - [{ url: '?staffel=1853&r=3#p8188x8190', title: 'gegen HSK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=1853&r=2#p8188x8187', title: 'gegen SV Bad Essen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1853&r=4#p8188x8189', title: 'gegen BW Buchholz', text: '2' }]
+    - 3
+    - 6½
+    - ''
+-
+    - '5.'
+    - { text: 'BW Buchholz', url: '?mannschaft=8189', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1853&r=5#p8189x8186', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1853&r=2#p8189x8190', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1853&r=1#p8189x8187', title: 'gegen SV Bad Essen', text: 1½ }]
+    - [{ url: '?staffel=1853&r=4#p8189x8188', title: 'gegen SC Papenburg', text: '2' }]
+    - xxx
+    - 1
+    - 4½
+    - ''

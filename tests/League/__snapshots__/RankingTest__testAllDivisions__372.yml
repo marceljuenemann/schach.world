@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=3729', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=818&r=3#p3729x3730', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=818&r=1#p3729x3728', title: 'gegen SV Bad Bevensen', text: '4' }]
+    - [{ url: '?staffel=818&r=2#p3729x3724', title: "gegen SK Celle-W'cel.", text: '4' }]
+    - [{ url: '?staffel=818&r=5#p3729x3731', title: 'gegen SC Turm Lüneburg', text: '4' }]
+    - [{ url: '?staffel=818&r=7#p3729x3726', title: 'gegen Stader SV 4', text: '4' }]
+    - [{ url: '?staffel=818&r=4#p3729x3725', title: 'gegen Stader SV 3', text: '4' }]
+    - [{ url: '?staffel=818&r=6#p3729x3727', title: 'gegen Stader SV 5', text: '3' }]
+    - 14
+    - '27'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=3730', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=818&r=3#p3730x3729', title: 'gegen Post SV Uelzen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=818&r=2#p3730x3728', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=818&r=1#p3730x3724', title: "gegen SK Celle-W'cel.", text: '3' }]
+    - [{ url: '?staffel=818&r=4#p3730x3731', title: 'gegen SC Turm Lüneburg', text: 2½ }]
+    - [{ url: '?staffel=818&r=6#p3730x3726', title: 'gegen Stader SV 4', text: '3' }]
+    - [{ url: '?staffel=818&r=5#p3730x3725', title: 'gegen Stader SV 3', text: '4' }]
+    - [{ url: '?staffel=818&r=7#p3730x3727', title: 'gegen Stader SV 5', text: '4' }]
+    - 11
+    - 18½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=3728', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=818&r=1#p3728x3729', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=818&r=2#p3728x3730', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=818&r=3#p3728x3724', title: "gegen SK Celle-W'cel.", text: '2' }]
+    - [{ url: '?staffel=818&r=7#p3728x3731', title: 'gegen SC Turm Lüneburg', text: 2½ }]
+    - [{ url: '?staffel=818&r=5#p3728x3726', title: 'gegen Stader SV 4', text: '4' }]
+    - [{ url: '?staffel=818&r=6#p3728x3725', title: 'gegen Stader SV 3', text: 3½ }]
+    - [{ url: '?staffel=818&r=4#p3728x3727', title: 'gegen Stader SV 5', text: '3' }]
+    - 10
+    - '17'
+    - ''
+-
+    - '4.'
+    - { text: "SK Celle-W'cel.", url: '?mannschaft=3724', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=818&r=2#p3724x3729', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=818&r=1#p3724x3730', title: 'gegen Post SV Uelzen 2', text: '1' }]
+    - [{ url: '?staffel=818&r=3#p3724x3728', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=818&r=6#p3724x3731', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=818&r=4#p3724x3726', title: 'gegen Stader SV 4', text: '3' }]
+    - [{ url: '?staffel=818&r=7#p3724x3725', title: 'gegen Stader SV 3', text: '4' }]
+    - [{ url: '?staffel=818&r=5#p3724x3727', title: 'gegen Stader SV 5', text: '3' }]
+    - 9
+    - '16'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=3731', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=818&r=5#p3731x3729', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=818&r=4#p3731x3730', title: 'gegen Post SV Uelzen 2', text: 1½ }]
+    - [{ url: '?staffel=818&r=7#p3731x3728', title: 'gegen SV Bad Bevensen', text: 1½ }]
+    - [{ url: '?staffel=818&r=6#p3731x3724', title: "gegen SK Celle-W'cel.", text: '1' }]
+    - xxx
+    - [{ url: '?staffel=818&r=1#p3731x3726', title: 'gegen Stader SV 4', text: 2½ }]
+    - [{ url: '?staffel=818&r=3#p3731x3725', title: 'gegen Stader SV 3', text: '3' }]
+    - [{ url: '?staffel=818&r=2#p3731x3727', title: 'gegen Stader SV 5', text: '4' }]
+    - 6
+    - 13½
+    - ''
+-
+    - '6.'
+    - { text: 'Stader SV 4', url: '?mannschaft=3726', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=818&r=7#p3726x3729', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=818&r=6#p3726x3730', title: 'gegen Post SV Uelzen 2', text: '1' }]
+    - [{ url: '?staffel=818&r=5#p3726x3728', title: 'gegen SV Bad Bevensen', text: '0' }]
+    - [{ url: '?staffel=818&r=4#p3726x3724', title: "gegen SK Celle-W'cel.", text: '1' }]
+    - [{ url: '?staffel=818&r=1#p3726x3731', title: 'gegen SC Turm Lüneburg', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=818&r=2#p3726x3725', title: 'gegen Stader SV 3', text: 3½ }]
+    - [{ url: '?staffel=818&r=3#p3726x3727', title: 'gegen Stader SV 5', text: '4' }]
+    - 4
+    - '11'
+    - ''
+-
+    - '7.'
+    - { text: 'Stader SV 3', url: '?mannschaft=3725', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=818&r=4#p3725x3729', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=818&r=5#p3725x3730', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - [{ url: '?staffel=818&r=6#p3725x3728', title: 'gegen SV Bad Bevensen', text: ½ }]
+    - [{ url: '?staffel=818&r=7#p3725x3724', title: "gegen SK Celle-W'cel.", text: '0' }]
+    - [{ url: '?staffel=818&r=3#p3725x3731', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - [{ url: '?staffel=818&r=2#p3725x3726', title: 'gegen Stader SV 4', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=818&r=1#p3725x3727', title: 'gegen Stader SV 5', text: '3' }]
+    - 2
+    - '5'
+    - ''
+-
+    - '8.'
+    - { text: 'Stader SV 5', url: '?mannschaft=3727', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=818&r=6#p3727x3729', title: 'gegen Post SV Uelzen', text: '1' }]
+    - [{ url: '?staffel=818&r=7#p3727x3730', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - [{ url: '?staffel=818&r=4#p3727x3728', title: 'gegen SV Bad Bevensen', text: '1' }]
+    - [{ url: '?staffel=818&r=5#p3727x3724', title: "gegen SK Celle-W'cel.", text: '1' }]
+    - [{ url: '?staffel=818&r=2#p3727x3731', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=818&r=3#p3727x3726', title: 'gegen Stader SV 4', text: '0' }]
+    - [{ url: '?staffel=818&r=1#p3727x3725', title: 'gegen Stader SV 3', text: '1' }]
+    - xxx
+    - 0
+    - '4'
+    - ''

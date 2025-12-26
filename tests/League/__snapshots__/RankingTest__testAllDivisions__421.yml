@@ -1,0 +1,233 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=4222', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=882&r=5#p4222x4137', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=882&r=6#p4222x4254', title: 'gegen SZ Bemerode', text: 2½ }]
+    - [{ url: '?staffel=882&r=2#p4222x4283', title: 'gegen SK Lehrte 1919 eV', text: '4' }]
+    - [{ url: '?staffel=882&r=1#p4222x4223', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=882&r=4#p4222x3928', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=882&r=3#p4222x4272', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=882&r=2#p4222x4284', title: 'gegen SK Lehrte 1919 eV 2', text: '4' }]
+    - [{ url: '?staffel=882&r=6#p4222x4258', title: 'gegen SZ Bemerode 2', text: '4' }]
+    - [{ url: '?staffel=882&r=5#p4222x4138', title: 'gegen Hannover 96 2', text: '4' }]
+    - [{ url: '?staffel=882&r=4#p4222x4263', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=882&r=3#p4222x4267', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 20
+    - 36½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hannover 96', url: '?mannschaft=4137', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=882&r=5#p4137x4222', title: 'gegen SV Bückeburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=882&r=3#p4137x4254', title: 'gegen SZ Bemerode', text: 1½ }]
+    - [{ url: '?staffel=882&r=4#p4137x4283', title: 'gegen SK Lehrte 1919 eV', text: '4' }]
+    - [{ url: '?staffel=882&r=5#p4137x4223', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=882&r=6#p4137x3928', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=882&r=2#p4137x4272', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=882&r=4#p4137x4284', title: 'gegen SK Lehrte 1919 eV 2', text: 3½ }]
+    - [{ url: '?staffel=882&r=3#p4137x4258', title: 'gegen SZ Bemerode 2', text: '3' }]
+    - [{ url: '?staffel=882&r=1#p4137x4138', title: 'gegen Hannover 96 2', text: '4' }]
+    - [{ url: '?staffel=882&r=6#p4137x4263', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=882&r=2#p4137x4267', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 19
+    - 37½
+    - ''
+-
+    - '3.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=4254', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=882&r=6#p4254x4222', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=882&r=3#p4254x4137', title: 'gegen Hannover 96', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=882&r=5#p4254x4283', title: 'gegen SK Lehrte 1919 eV', text: 2½ }]
+    - [{ url: '?staffel=882&r=6#p4254x4223', title: 'gegen SV Bückeburg 2', text: 3½ }]
+    - [{ url: '?staffel=882&r=2#p4254x3928', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=882&r=4#p4254x4272', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=882&r=5#p4254x4284', title: 'gegen SK Lehrte 1919 eV 2', text: '4' }]
+    - [{ url: '?staffel=882&r=1#p4254x4258', title: 'gegen SZ Bemerode 2', text: '4' }]
+    - [{ url: '?staffel=882&r=3#p4254x4138', title: 'gegen Hannover 96 2', text: '4' }]
+    - [{ url: '?staffel=882&r=2#p4254x4263', title: 'gegen Schachakademie', text: '3' }]
+    - [{ url: '?staffel=882&r=4#p4254x4267', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 19
+    - 33½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 1919 eV', url: '?mannschaft=4283', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=882&r=2#p4283x4222', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=882&r=4#p4283x4137', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=882&r=5#p4283x4254', title: 'gegen SZ Bemerode', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=882&r=2#p4283x4223', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - [{ url: '?staffel=882&r=3#p4283x3928', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=882&r=6#p4283x4272', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=882&r=1#p4283x4284', title: 'gegen SK Lehrte 1919 eV 2', text: '2' }]
+    - [{ url: '?staffel=882&r=5#p4283x4258', title: 'gegen SZ Bemerode 2', text: '2' }]
+    - [{ url: '?staffel=882&r=4#p4283x4138', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=882&r=3#p4283x4263', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=882&r=6#p4283x4267', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 13
+    - 25½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=4223', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=882&r=1#p4223x4222', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=882&r=5#p4223x4137', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=882&r=6#p4223x4254', title: 'gegen SZ Bemerode', text: ½ }]
+    - [{ url: '?staffel=882&r=2#p4223x4283', title: 'gegen SK Lehrte 1919 eV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=882&r=4#p4223x3928', title: 'gegen SV Springe', text: 2½ }]
+    - [{ url: '?staffel=882&r=3#p4223x4272', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=882&r=2#p4223x4284', title: 'gegen SK Lehrte 1919 eV 2', text: 3½ }]
+    - [{ url: '?staffel=882&r=6#p4223x4258', title: 'gegen SZ Bemerode 2', text: '4' }]
+    - [{ url: '?staffel=882&r=5#p4223x4138', title: 'gegen Hannover 96 2', text: 2½ }]
+    - [{ url: '?staffel=882&r=4#p4223x4263', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=882&r=3#p4223x4267', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - 13
+    - '24'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Springe', url: '?mannschaft=3928', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=882&r=4#p3928x4222', title: 'gegen SV Bückeburg', text: '2' }]
+    - [{ url: '?staffel=882&r=6#p3928x4137', title: 'gegen Hannover 96', text: ½ }]
+    - [{ url: '?staffel=882&r=2#p3928x4254', title: 'gegen SZ Bemerode', text: '2' }]
+    - [{ url: '?staffel=882&r=3#p3928x4283', title: 'gegen SK Lehrte 1919 eV', text: '1' }]
+    - [{ url: '?staffel=882&r=4#p3928x4223', title: 'gegen SV Bückeburg 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=882&r=5#p3928x4272', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=882&r=3#p3928x4284', title: 'gegen SK Lehrte 1919 eV 2', text: '1' }]
+    - [{ url: '?staffel=882&r=2#p3928x4258', title: 'gegen SZ Bemerode 2', text: '3' }]
+    - [{ url: '?staffel=882&r=6#p3928x4138', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=882&r=1#p3928x4263', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=882&r=5#p3928x4267', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 11
+    - '24'
+    - ''
+-
+    - '7.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=4272', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=882&r=3#p4272x4222', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=882&r=2#p4272x4137', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=882&r=4#p4272x4254', title: 'gegen SZ Bemerode', text: 1½ }]
+    - [{ url: '?staffel=882&r=6#p4272x4283', title: 'gegen SK Lehrte 1919 eV', text: '0' }]
+    - [{ url: '?staffel=882&r=3#p4272x4223', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=882&r=5#p4272x3928', title: 'gegen SV Springe', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=882&r=6#p4272x4284', title: 'gegen SK Lehrte 1919 eV 2', text: '2' }]
+    - [{ url: '?staffel=882&r=4#p4272x4258', title: 'gegen SZ Bemerode 2', text: ½ }]
+    - [{ url: '?staffel=882&r=2#p4272x4138', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=882&r=5#p4272x4263', title: 'gegen Schachakademie', text: '2' }]
+    - [{ url: '?staffel=882&r=1#p4272x4267', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 9
+    - '19'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Lehrte 1919 eV 2', url: '?mannschaft=4284', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=882&r=2#p4284x4222', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=882&r=4#p4284x4137', title: 'gegen Hannover 96', text: ½ }]
+    - [{ url: '?staffel=882&r=5#p4284x4254', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=882&r=1#p4284x4283', title: 'gegen SK Lehrte 1919 eV', text: '2' }]
+    - [{ url: '?staffel=882&r=2#p4284x4223', title: 'gegen SV Bückeburg 2', text: ½ }]
+    - [{ url: '?staffel=882&r=3#p4284x3928', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=882&r=6#p4284x4272', title: 'gegen SD Isernhagen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=882&r=5#p4284x4258', title: 'gegen SZ Bemerode 2', text: '2' }]
+    - [{ url: '?staffel=882&r=4#p4284x4138', title: 'gegen Hannover 96 2', text: '1' }]
+    - [{ url: '?staffel=882&r=3#p4284x4263', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=882&r=6#p4284x4267', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - 9
+    - '18'
+    - ''
+-
+    - '9.'
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=4258', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=882&r=6#p4258x4222', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=882&r=3#p4258x4137', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=882&r=1#p4258x4254', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=882&r=5#p4258x4283', title: 'gegen SK Lehrte 1919 eV', text: '2' }]
+    - [{ url: '?staffel=882&r=6#p4258x4223', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - [{ url: '?staffel=882&r=2#p4258x3928', title: 'gegen SV Springe', text: '1' }]
+    - [{ url: '?staffel=882&r=4#p4258x4272', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=882&r=5#p4258x4284', title: 'gegen SK Lehrte 1919 eV 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=882&r=3#p4258x4138', title: 'gegen Hannover 96 2', text: '2' }]
+    - [{ url: '?staffel=882&r=2#p4258x4263', title: 'gegen Schachakademie', text: 2½ }]
+    - [{ url: '?staffel=882&r=4#p4258x4267', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 9
+    - '18'
+    - ''
+-
+    - '10.'
+    - { text: 'Hannover 96 2', url: '?mannschaft=4138', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=882&r=5#p4138x4222', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=882&r=1#p4138x4137', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=882&r=3#p4138x4254', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=882&r=4#p4138x4283', title: 'gegen SK Lehrte 1919 eV', text: '1' }]
+    - [{ url: '?staffel=882&r=5#p4138x4223', title: 'gegen SV Bückeburg 2', text: 1½ }]
+    - [{ url: '?staffel=882&r=6#p4138x3928', title: 'gegen SV Springe', text: '1' }]
+    - [{ url: '?staffel=882&r=2#p4138x4272', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=882&r=4#p4138x4284', title: 'gegen SK Lehrte 1919 eV 2', text: '3' }]
+    - [{ url: '?staffel=882&r=3#p4138x4258', title: 'gegen SZ Bemerode 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=882&r=6#p4138x4263', title: 'gegen Schachakademie', text: '2' }]
+    - [{ url: '?staffel=882&r=2#p4138x4267', title: 'gegen SG Garbsen/Marienw', text: 3½ }]
+    - 6
+    - '15'
+    - ''
+-
+    - '11.'
+    - { text: Schachakademie, url: '?mannschaft=4263', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=882&r=4#p4263x4222', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=882&r=6#p4263x4137', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=882&r=2#p4263x4254', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=882&r=3#p4263x4283', title: 'gegen SK Lehrte 1919 eV', text: '0' }]
+    - [{ url: '?staffel=882&r=4#p4263x4223', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - [{ url: '?staffel=882&r=1#p4263x3928', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=882&r=5#p4263x4272', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=882&r=3#p4263x4284', title: 'gegen SK Lehrte 1919 eV 2', text: '0' }]
+    - [{ url: '?staffel=882&r=2#p4263x4258', title: 'gegen SZ Bemerode 2', text: 1½ }]
+    - [{ url: '?staffel=882&r=6#p4263x4138', title: 'gegen Hannover 96 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=882&r=5#p4263x4267', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '12.'
+    - { text: 'SG Garbsen/Marienw', url: '?mannschaft=4267', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=882&r=3#p4267x4222', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=882&r=2#p4267x4137', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=882&r=4#p4267x4254', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=882&r=6#p4267x4283', title: 'gegen SK Lehrte 1919 eV', text: '0' }]
+    - [{ url: '?staffel=882&r=3#p4267x4223', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - [{ url: '?staffel=882&r=5#p4267x3928', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=882&r=1#p4267x4272', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=882&r=6#p4267x4284', title: 'gegen SK Lehrte 1919 eV 2', text: '1' }]
+    - [{ url: '?staffel=882&r=4#p4267x4258', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=882&r=2#p4267x4138', title: 'gegen Hannover 96 2', text: ½ }]
+    - [{ url: '?staffel=882&r=5#p4267x4263', title: 'gegen Schachakademie', text: '1' }]
+    - xxx
+    - 0
+    - 3½
+    - ''

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamelner SV 3', url: '?mannschaft=6295', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1451&r=7#p6295x6285', title: 'gegen SK Gronau', text: 5½ }]
+    - [{ url: '?staffel=1451&r=2#p6295x6315', title: 'gegen SC SW Northeim', text: 3½ }]
+    - [{ url: '?staffel=1451&r=4#p6295x6282', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - [{ url: '?staffel=1451&r=1#p6295x6289', title: 'gegen SK Goslar', text: '6' }]
+    - {  }
+    - [{ url: '?staffel=1451&r=3#p6295x6313', title: 'gegen SG Holzminden', text: 6½ }]
+    - {  }
+    - [{ url: '?staffel=1451&r=5#p6295x6300', title: 'gegen PSV Bad Pyrmont', text: 5½ }]
+    - [{ url: '?staffel=1451&r=6#p6295x6306', title: 'gegen Hildesheimer SV 3', text: '5' }]
+    - 11
+    - '36'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Gronau', url: '?mannschaft=6285', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1451&r=7#p6285x6295', title: 'gegen Hamelner SV 3', text: 2½ }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1451&r=4#p6285x6289', title: 'gegen SK Goslar', text: '6' }]
+    - [{ url: '?staffel=1451&r=3#p6285x6292', title: 'gegen Tempo Göttingen 2', text: 4½ }]
+    - [{ url: '?staffel=1451&r=6#p6285x6313', title: 'gegen SG Holzminden', text: '6' }]
+    - [{ url: '?staffel=1451&r=1#p6285x6279', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - [{ url: '?staffel=1451&r=2#p6285x6300', title: 'gegen PSV Bad Pyrmont', text: '5' }]
+    - [{ url: '?staffel=1451&r=5#p6285x6306', title: 'gegen Hildesheimer SV 3', text: 5½ }]
+    - 11
+    - 33½
+    - ''
+-
+    - '3.'
+    - { text: 'SC SW Northeim', url: '?mannschaft=6315', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1451&r=2#p6315x6295', title: 'gegen Hamelner SV 3', text: 4½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1451&r=1#p6315x6282', title: 'gegen SK Bad Harzburg', text: '5' }]
+    - [{ url: '?staffel=1451&r=3#p6315x6289', title: 'gegen SK Goslar', text: 1½ }]
+    - [{ url: '?staffel=1451&r=4#p6315x6292', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=1451&r=5#p6315x6313', title: 'gegen SG Holzminden', text: '5' }]
+    - [{ url: '?staffel=1451&r=7#p6315x6279', title: 'gegen Plesse Bovenden 2', text: 6½ }]
+    - [{ url: '?staffel=1451&r=6#p6315x6300', title: 'gegen PSV Bad Pyrmont', text: '6' }]
+    - {  }
+    - 11
+    - 32½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Bad Harzburg', url: '?mannschaft=6282', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1451&r=4#p6282x6295', title: 'gegen Hamelner SV 3', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1451&r=1#p6282x6315', title: 'gegen SC SW Northeim', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1451&r=6#p6282x6289', title: 'gegen SK Goslar', text: '4' }]
+    - [{ url: '?staffel=1451&r=7#p6282x6292', title: 'gegen Tempo Göttingen 2', text: '6' }]
+    - {  }
+    - [{ url: '?staffel=1451&r=5#p6282x6279', title: 'gegen Plesse Bovenden 2', text: 5½ }]
+    - [{ url: '?staffel=1451&r=3#p6282x6300', title: 'gegen PSV Bad Pyrmont', text: '5' }]
+    - [{ url: '?staffel=1451&r=2#p6282x6306', title: 'gegen Hildesheimer SV 3', text: 4½ }]
+    - 10
+    - '32'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Goslar', url: '?mannschaft=6289', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1451&r=1#p6289x6295', title: 'gegen Hamelner SV 3', text: '2' }]
+    - [{ url: '?staffel=1451&r=4#p6289x6285', title: 'gegen SK Gronau', text: '2' }]
+    - [{ url: '?staffel=1451&r=3#p6289x6315', title: 'gegen SC SW Northeim', text: 6½ }]
+    - [{ url: '?staffel=1451&r=6#p6289x6282', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1451&r=5#p6289x6292', title: 'gegen Tempo Göttingen 2', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1451&r=2#p6289x6279', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1451&r=7#p6289x6306', title: 'gegen Hildesheimer SV 3', text: '6' }]
+    - 8
+    - 29½
+    - ''
+-
+    - '6.'
+    - { text: 'Tempo Göttingen 2', url: '?mannschaft=6292', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1451&r=3#p6292x6285', title: 'gegen SK Gronau', text: 3½ }]
+    - [{ url: '?staffel=1451&r=4#p6292x6315', title: 'gegen SC SW Northeim', text: '4' }]
+    - [{ url: '?staffel=1451&r=7#p6292x6282', title: 'gegen SK Bad Harzburg', text: '2' }]
+    - [{ url: '?staffel=1451&r=5#p6292x6289', title: 'gegen SK Goslar', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1451&r=2#p6292x6313', title: 'gegen SG Holzminden', text: 4½ }]
+    - [{ url: '?staffel=1451&r=6#p6292x6279', title: 'gegen Plesse Bovenden 2', text: 5½ }]
+    - [{ url: '?staffel=1451&r=1#p6292x6300', title: 'gegen PSV Bad Pyrmont', text: '5' }]
+    - {  }
+    - 7
+    - 27½
+    - ''
+-
+    - '7.'
+    - { text: 'SG Holzminden', url: '?mannschaft=6313', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1451&r=3#p6313x6295', title: 'gegen Hamelner SV 3', text: 1½ }]
+    - [{ url: '?staffel=1451&r=6#p6313x6285', title: 'gegen SK Gronau', text: '2' }]
+    - [{ url: '?staffel=1451&r=5#p6313x6315', title: 'gegen SC SW Northeim', text: '3' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1451&r=2#p6313x6292', title: 'gegen Tempo Göttingen 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1451&r=4#p6313x6279', title: 'gegen Plesse Bovenden 2', text: 6½ }]
+    - [{ url: '?staffel=1451&r=7#p6313x6300', title: 'gegen PSV Bad Pyrmont', text: '4' }]
+    - [{ url: '?staffel=1451&r=1#p6313x6306', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - 4
+    - 24½
+    - ''
+-
+    - '8.'
+    - { text: 'Plesse Bovenden 2', url: '?mannschaft=6279', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1451&r=1#p6279x6285', title: 'gegen SK Gronau', text: '4' }]
+    - [{ url: '?staffel=1451&r=7#p6279x6315', title: 'gegen SC SW Northeim', text: 1½ }]
+    - [{ url: '?staffel=1451&r=5#p6279x6282', title: 'gegen SK Bad Harzburg', text: 2½ }]
+    - [{ url: '?staffel=1451&r=2#p6279x6289', title: 'gegen SK Goslar', text: '4' }]
+    - [{ url: '?staffel=1451&r=6#p6279x6292', title: 'gegen Tempo Göttingen 2', text: 2½ }]
+    - [{ url: '?staffel=1451&r=4#p6279x6313', title: 'gegen SG Holzminden', text: 1½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1451&r=3#p6279x6306', title: 'gegen Hildesheimer SV 3', text: 5½ }]
+    - 4
+    - 21½
+    - ''
+-
+    - '9.'
+    - { text: 'PSV Bad Pyrmont', url: '?mannschaft=6300', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1451&r=5#p6300x6295', title: 'gegen Hamelner SV 3', text: 2½ }]
+    - [{ url: '?staffel=1451&r=2#p6300x6285', title: 'gegen SK Gronau', text: '3' }]
+    - [{ url: '?staffel=1451&r=6#p6300x6315', title: 'gegen SC SW Northeim', text: '2' }]
+    - [{ url: '?staffel=1451&r=3#p6300x6282', title: 'gegen SK Bad Harzburg', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1451&r=1#p6300x6292', title: 'gegen Tempo Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1451&r=7#p6300x6313', title: 'gegen SG Holzminden', text: '4' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1451&r=4#p6300x6306', title: 'gegen Hildesheimer SV 3', text: 6½ }]
+    - 3
+    - '24'
+    - absteiger
+-
+    - '10.'
+    - { text: 'Hildesheimer SV 3', url: '?mannschaft=6306', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1451&r=6#p6306x6295', title: 'gegen Hamelner SV 3', text: '3' }]
+    - [{ url: '?staffel=1451&r=5#p6306x6285', title: 'gegen SK Gronau', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1451&r=2#p6306x6282', title: 'gegen SK Bad Harzburg', text: 3½ }]
+    - [{ url: '?staffel=1451&r=7#p6306x6289', title: 'gegen SK Goslar', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1451&r=1#p6306x6313', title: 'gegen SG Holzminden', text: '4' }]
+    - [{ url: '?staffel=1451&r=3#p6306x6279', title: 'gegen Plesse Bovenden 2', text: 2½ }]
+    - [{ url: '?staffel=1451&r=4#p6306x6300', title: 'gegen PSV Bad Pyrmont', text: 1½ }]
+    - xxx
+    - 1
+    - '19'
+    - absteiger

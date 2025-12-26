@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'BS Gliesmarode', url: '?mannschaft=426', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=411&r=6#p426x423', title: 'gegen Bad Salzdetfurth', text: 3½ }]
+    - [{ url: '?staffel=411&r=2#p426x424', title: 'gegen SC Wolfsburg', text: 2½ }]
+    - [{ url: '?staffel=411&r=5#p426x417', title: 'gegen HSK / Post SV 2', text: 5½ }]
+    - [{ url: '?staffel=411&r=4#p426x415', title: 'gegen SK Ricklingen', text: 5½ }]
+    - [{ url: '?staffel=411&r=8#p426x420', title: 'gegen SK Lehrte', text: 5½ }]
+    - [{ url: '?staffel=411&r=1#p426x422', title: 'gegen SVg Salzgitter 2', text: 5½ }]
+    - [{ url: '?staffel=411&r=3#p426x421', title: 'gegen SF Hannover', text: 5½ }]
+    - [{ url: '?staffel=411&r=9#p426x481', title: 'gegen SF Hannover 2', text: 5½ }]
+    - [{ url: '?staffel=411&r=7#p426x425', title: 'gegen SG WB Eilenriede', text: 5½ }]
+    - 14
+    - 44½
+    - ''
+-
+    - '2.'
+    - { text: 'Bad Salzdetfurth', url: '?mannschaft=423', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=411&r=6#p423x426', title: 'gegen BS Gliesmarode', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=411&r=4#p423x424', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=411&r=1#p423x417', title: 'gegen HSK / Post SV 2', text: 2½ }]
+    - [{ url: '?staffel=411&r=3#p423x415', title: 'gegen SK Ricklingen', text: 4½ }]
+    - [{ url: '?staffel=411&r=9#p423x420', title: 'gegen SK Lehrte', text: 4½ }]
+    - [{ url: '?staffel=411&r=2#p423x422', title: 'gegen SVg Salzgitter 2', text: 6½ }]
+    - [{ url: '?staffel=411&r=5#p423x421', title: 'gegen SF Hannover', text: '3' }]
+    - [{ url: '?staffel=411&r=7#p423x481', title: 'gegen SF Hannover 2', text: 5½ }]
+    - [{ url: '?staffel=411&r=8#p423x425', title: 'gegen SG WB Eilenriede', text: '5' }]
+    - 14
+    - 40½
+    - ''
+-
+    - '3.'
+    - { text: 'SC Wolfsburg', url: '?mannschaft=424', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=411&r=2#p424x426', title: 'gegen BS Gliesmarode', text: 5½ }]
+    - [{ url: '?staffel=411&r=4#p424x423', title: 'gegen Bad Salzdetfurth', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=411&r=7#p424x417', title: 'gegen HSK / Post SV 2', text: '2' }]
+    - [{ url: '?staffel=411&r=1#p424x415', title: 'gegen SK Ricklingen', text: 5½ }]
+    - [{ url: '?staffel=411&r=3#p424x420', title: 'gegen SK Lehrte', text: 4½ }]
+    - [{ url: '?staffel=411&r=8#p424x422', title: 'gegen SVg Salzgitter 2', text: 3½ }]
+    - [{ url: '?staffel=411&r=9#p424x421', title: 'gegen SF Hannover', text: '6' }]
+    - [{ url: '?staffel=411&r=6#p424x481', title: 'gegen SF Hannover 2', text: 3½ }]
+    - [{ url: '?staffel=411&r=5#p424x425', title: 'gegen SG WB Eilenriede', text: 6½ }]
+    - 10
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'HSK / Post SV 2', url: '?mannschaft=417', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=411&r=5#p417x426', title: 'gegen BS Gliesmarode', text: 2½ }]
+    - [{ url: '?staffel=411&r=1#p417x423', title: 'gegen Bad Salzdetfurth', text: 5½ }]
+    - [{ url: '?staffel=411&r=7#p417x424', title: 'gegen SC Wolfsburg', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=411&r=6#p417x415', title: 'gegen SK Ricklingen', text: '4' }]
+    - [{ url: '?staffel=411&r=2#p417x420', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=411&r=4#p417x422', title: 'gegen SVg Salzgitter 2', text: '4' }]
+    - [{ url: '?staffel=411&r=8#p417x421', title: 'gegen SF Hannover', text: 1½ }]
+    - [{ url: '?staffel=411&r=3#p417x481', title: 'gegen SF Hannover 2', text: 6½ }]
+    - [{ url: '?staffel=411&r=9#p417x425', title: 'gegen SG WB Eilenriede', text: '5' }]
+    - 10
+    - 38½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=415', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=411&r=4#p415x426', title: 'gegen BS Gliesmarode', text: 2½ }]
+    - [{ url: '?staffel=411&r=3#p415x423', title: 'gegen Bad Salzdetfurth', text: 3½ }]
+    - [{ url: '?staffel=411&r=1#p415x424', title: 'gegen SC Wolfsburg', text: 2½ }]
+    - [{ url: '?staffel=411&r=6#p415x417', title: 'gegen HSK / Post SV 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=411&r=5#p415x420', title: 'gegen SK Lehrte', text: '5' }]
+    - [{ url: '?staffel=411&r=9#p415x422', title: 'gegen SVg Salzgitter 2', text: '5' }]
+    - [{ url: '?staffel=411&r=7#p415x421', title: 'gegen SF Hannover', text: 4½ }]
+    - [{ url: '?staffel=411&r=8#p415x481', title: 'gegen SF Hannover 2', text: '5' }]
+    - [{ url: '?staffel=411&r=2#p415x425', title: 'gegen SG WB Eilenriede', text: 3½ }]
+    - 9
+    - 35½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte', url: '?mannschaft=420', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=411&r=8#p420x426', title: 'gegen BS Gliesmarode', text: 2½ }]
+    - [{ url: '?staffel=411&r=9#p420x423', title: 'gegen Bad Salzdetfurth', text: 3½ }]
+    - [{ url: '?staffel=411&r=3#p420x424', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - [{ url: '?staffel=411&r=2#p420x417', title: 'gegen HSK / Post SV 2', text: 4½ }]
+    - [{ url: '?staffel=411&r=5#p420x415', title: 'gegen SK Ricklingen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=411&r=7#p420x422', title: 'gegen SVg Salzgitter 2', text: '4' }]
+    - [{ url: '?staffel=411&r=4#p420x421', title: 'gegen SF Hannover', text: '5' }]
+    - [{ url: '?staffel=411&r=1#p420x481', title: 'gegen SF Hannover 2', text: '4' }]
+    - [{ url: '?staffel=411&r=6#p420x425', title: 'gegen SG WB Eilenriede', text: '5' }]
+    - 8
+    - '35'
+    - ''
+-
+    - '7.'
+    - { text: 'SVg Salzgitter 2', url: '?mannschaft=422', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=411&r=1#p422x426', title: 'gegen BS Gliesmarode', text: 2½ }]
+    - [{ url: '?staffel=411&r=2#p422x423', title: 'gegen Bad Salzdetfurth', text: 1½ }]
+    - [{ url: '?staffel=411&r=8#p422x424', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=411&r=4#p422x417', title: 'gegen HSK / Post SV 2', text: '4' }]
+    - [{ url: '?staffel=411&r=9#p422x415', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=411&r=7#p422x420', title: 'gegen SK Lehrte', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=411&r=6#p422x421', title: 'gegen SF Hannover', text: 4½ }]
+    - [{ url: '?staffel=411&r=5#p422x481', title: 'gegen SF Hannover 2', text: 4½ }]
+    - [{ url: '?staffel=411&r=3#p422x425', title: 'gegen SG WB Eilenriede', text: 3½ }]
+    - 8
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'SF Hannover', url: '?mannschaft=421', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=411&r=3#p421x426', title: 'gegen BS Gliesmarode', text: 2½ }]
+    - [{ url: '?staffel=411&r=5#p421x423', title: 'gegen Bad Salzdetfurth', text: '5' }]
+    - [{ url: '?staffel=411&r=9#p421x424', title: 'gegen SC Wolfsburg', text: '2' }]
+    - [{ url: '?staffel=411&r=8#p421x417', title: 'gegen HSK / Post SV 2', text: 6½ }]
+    - [{ url: '?staffel=411&r=7#p421x415', title: 'gegen SK Ricklingen', text: 3½ }]
+    - [{ url: '?staffel=411&r=4#p421x420', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=411&r=6#p421x422', title: 'gegen SVg Salzgitter 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=411&r=2#p421x481', title: 'gegen SF Hannover 2', text: 3½ }]
+    - [{ url: '?staffel=411&r=1#p421x425', title: 'gegen SG WB Eilenriede', text: '5' }]
+    - 6
+    - 34½
+    - ''
+-
+    - '9.'
+    - { text: 'SF Hannover 2', url: '?mannschaft=481', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=411&r=9#p481x426', title: 'gegen BS Gliesmarode', text: 2½ }]
+    - [{ url: '?staffel=411&r=7#p481x423', title: 'gegen Bad Salzdetfurth', text: 2½ }]
+    - [{ url: '?staffel=411&r=6#p481x424', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=411&r=3#p481x417', title: 'gegen HSK / Post SV 2', text: 1½ }]
+    - [{ url: '?staffel=411&r=8#p481x415', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=411&r=1#p481x420', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=411&r=5#p481x422', title: 'gegen SVg Salzgitter 2', text: 3½ }]
+    - [{ url: '?staffel=411&r=2#p481x421', title: 'gegen SF Hannover', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=411&r=4#p481x425', title: 'gegen SG WB Eilenriede', text: '4' }]
+    - 6
+    - '30'
+    - ''
+-
+    - '10.'
+    - { text: 'SG WB Eilenriede', url: '?mannschaft=425', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=411&r=7#p425x426', title: 'gegen BS Gliesmarode', text: 2½ }]
+    - [{ url: '?staffel=411&r=8#p425x423', title: 'gegen Bad Salzdetfurth', text: '3' }]
+    - [{ url: '?staffel=411&r=5#p425x424', title: 'gegen SC Wolfsburg', text: 1½ }]
+    - [{ url: '?staffel=411&r=9#p425x417', title: 'gegen HSK / Post SV 2', text: '3' }]
+    - [{ url: '?staffel=411&r=2#p425x415', title: 'gegen SK Ricklingen', text: 4½ }]
+    - [{ url: '?staffel=411&r=6#p425x420', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=411&r=3#p425x422', title: 'gegen SVg Salzgitter 2', text: 4½ }]
+    - [{ url: '?staffel=411&r=1#p425x421', title: 'gegen SF Hannover', text: '3' }]
+    - [{ url: '?staffel=411&r=4#p425x481', title: 'gegen SF Hannover 2', text: '4' }]
+    - xxx
+    - 5
+    - '29'
+    - ''

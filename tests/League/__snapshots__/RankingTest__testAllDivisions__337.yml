@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Mülheim Nord 2', url: '?mannschaft=3286', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=776&r=2#p3286x3282', title: 'gegen Doppelbauer Kiel', text: 3½ }]
+    - [{ url: '?staffel=776&r=3#p3286x3279', title: 'gegen SV Wattenscheid', text: 3½ }]
+    - [{ url: '?staffel=776&r=1#p3286x3283', title: 'gegen TuRa Harksheide', text: '4' }]
+    - [{ url: '?staffel=776&r=4#p3286x3285', title: 'gegen Delmenhorster SK', text: 3½ }]
+    - [{ url: '?staffel=776&r=7#p3286x3281', title: 'gegen SV Heiden', text: 4½ }]
+    - [{ url: '?staffel=776&r=5#p3286x3280', title: 'gegen SC Steinfurt', text: '3' }]
+    - [{ url: '?staffel=776&r=6#p3286x3284', title: 'gegen Krefelder SK Turm', text: 3½ }]
+    - 13
+    - 25½
+    - ''
+-
+    - '2.'
+    - { text: 'Doppelbauer Kiel', url: '?mannschaft=3282', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=776&r=2#p3282x3286', title: 'gegen Mülheim Nord 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=776&r=1#p3282x3279', title: 'gegen SV Wattenscheid', text: 4½ }]
+    - [{ url: '?staffel=776&r=3#p3282x3283', title: 'gegen TuRa Harksheide', text: '6' }]
+    - [{ url: '?staffel=776&r=7#p3282x3285', title: 'gegen Delmenhorster SK', text: 3½ }]
+    - [{ url: '?staffel=776&r=4#p3282x3281', title: 'gegen SV Heiden', text: '3' }]
+    - [{ url: '?staffel=776&r=6#p3282x3280', title: 'gegen SC Steinfurt', text: 3½ }]
+    - [{ url: '?staffel=776&r=5#p3282x3284', title: 'gegen Krefelder SK Turm', text: '5' }]
+    - 11
+    - '28'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Wattenscheid', url: '?mannschaft=3279', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=776&r=3#p3279x3286', title: 'gegen Mülheim Nord 2', text: 2½ }]
+    - [{ url: '?staffel=776&r=1#p3279x3282', title: 'gegen Doppelbauer Kiel', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=776&r=2#p3279x3283', title: 'gegen TuRa Harksheide', text: 4½ }]
+    - [{ url: '?staffel=776&r=5#p3279x3285', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=776&r=6#p3279x3281', title: 'gegen SV Heiden', text: 3½ }]
+    - [{ url: '?staffel=776&r=4#p3279x3280', title: 'gegen SC Steinfurt', text: 5½ }]
+    - [{ url: '?staffel=776&r=7#p3279x3284', title: 'gegen Krefelder SK Turm', text: 3½ }]
+    - 9
+    - '24'
+    - ''
+-
+    - '4.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=3283', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=776&r=1#p3283x3286', title: 'gegen Mülheim Nord 2', text: '2' }]
+    - [{ url: '?staffel=776&r=3#p3283x3282', title: 'gegen Doppelbauer Kiel', text: '0' }]
+    - [{ url: '?staffel=776&r=2#p3283x3279', title: 'gegen SV Wattenscheid', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=776&r=6#p3283x3285', title: 'gegen Delmenhorster SK', text: 3½ }]
+    - [{ url: '?staffel=776&r=5#p3283x3281', title: 'gegen SV Heiden', text: 4½ }]
+    - [{ url: '?staffel=776&r=7#p3283x3280', title: 'gegen SC Steinfurt', text: '3' }]
+    - [{ url: '?staffel=776&r=4#p3283x3284', title: 'gegen Krefelder SK Turm', text: 5½ }]
+    - 7
+    - '20'
+    - ''
+-
+    - '5.'
+    - { text: 'Delmenhorster SK', url: '?mannschaft=3285', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=776&r=4#p3285x3286', title: 'gegen Mülheim Nord 2', text: 2½ }]
+    - [{ url: '?staffel=776&r=7#p3285x3282', title: 'gegen Doppelbauer Kiel', text: 2½ }]
+    - [{ url: '?staffel=776&r=5#p3285x3279', title: 'gegen SV Wattenscheid', text: '3' }]
+    - [{ url: '?staffel=776&r=6#p3285x3283', title: 'gegen TuRa Harksheide', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=776&r=2#p3285x3281', title: 'gegen SV Heiden', text: 3½ }]
+    - [{ url: '?staffel=776&r=3#p3285x3280', title: 'gegen SC Steinfurt', text: '3' }]
+    - [{ url: '?staffel=776&r=1#p3285x3284', title: 'gegen Krefelder SK Turm', text: 3½ }]
+    - 6
+    - 20½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Heiden', url: '?mannschaft=3281', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=776&r=7#p3281x3286', title: 'gegen Mülheim Nord 2', text: 1½ }]
+    - [{ url: '?staffel=776&r=4#p3281x3282', title: 'gegen Doppelbauer Kiel', text: '3' }]
+    - [{ url: '?staffel=776&r=6#p3281x3279', title: 'gegen SV Wattenscheid', text: 2½ }]
+    - [{ url: '?staffel=776&r=5#p3281x3283', title: 'gegen TuRa Harksheide', text: 1½ }]
+    - [{ url: '?staffel=776&r=2#p3281x3285', title: 'gegen Delmenhorster SK', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=776&r=1#p3281x3280', title: 'gegen SC Steinfurt', text: '4' }]
+    - [{ url: '?staffel=776&r=3#p3281x3284', title: 'gegen Krefelder SK Turm', text: '4' }]
+    - 5
+    - '19'
+    - ''
+-
+    - '7.'
+    - { text: 'SC Steinfurt', url: '?mannschaft=3280', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=776&r=5#p3280x3286', title: 'gegen Mülheim Nord 2', text: '3' }]
+    - [{ url: '?staffel=776&r=6#p3280x3282', title: 'gegen Doppelbauer Kiel', text: 2½ }]
+    - [{ url: '?staffel=776&r=4#p3280x3279', title: 'gegen SV Wattenscheid', text: ½ }]
+    - [{ url: '?staffel=776&r=7#p3280x3283', title: 'gegen TuRa Harksheide', text: '3' }]
+    - [{ url: '?staffel=776&r=3#p3280x3285', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=776&r=1#p3280x3281', title: 'gegen SV Heiden', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=776&r=2#p3280x3284', title: 'gegen Krefelder SK Turm', text: '2' }]
+    - 3
+    - '16'
+    - ''
+-
+    - '8.'
+    - { text: 'Krefelder SK Turm', url: '?mannschaft=3284', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=776&r=6#p3284x3286', title: 'gegen Mülheim Nord 2', text: 2½ }]
+    - [{ url: '?staffel=776&r=5#p3284x3282', title: 'gegen Doppelbauer Kiel', text: '1' }]
+    - [{ url: '?staffel=776&r=7#p3284x3279', title: 'gegen SV Wattenscheid', text: 2½ }]
+    - [{ url: '?staffel=776&r=4#p3284x3283', title: 'gegen TuRa Harksheide', text: ½ }]
+    - [{ url: '?staffel=776&r=1#p3284x3285', title: 'gegen Delmenhorster SK', text: 2½ }]
+    - [{ url: '?staffel=776&r=3#p3284x3281', title: 'gegen SV Heiden', text: '2' }]
+    - [{ url: '?staffel=776&r=2#p3284x3280', title: 'gegen SC Steinfurt', text: '4' }]
+    - xxx
+    - 2
+    - '15'
+    - ''

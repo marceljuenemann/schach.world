@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Roch. Göttingen', url: '?mannschaft=3331', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=781&r=1#p3331x3333', title: 'gegen Hildesheimer SV', text: '3' }, { url: '?staffel=781&r=4#p3331x3333', title: 'gegen Hildesheimer SV', text: 2½ }]
+    - [{ url: '?staffel=781&r=2#p3331x3332', title: 'gegen Roch. Göttingen 2', text: 3½ }, { url: '?staffel=781&r=5#p3331x3332', title: 'gegen Roch. Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=781&r=3#p3331x3334', title: 'gegen SK Bad Harzburg', text: '4' }, { url: '?staffel=781&r=6#p3331x3334', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - 12
+    - '20'
+    - ''
+-
+    - '2.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=3333', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=781&r=1#p3333x3331', title: 'gegen Roch. Göttingen', text: '1' }, { url: '?staffel=781&r=4#p3333x3331', title: 'gegen Roch. Göttingen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=781&r=3#p3333x3332', title: 'gegen Roch. Göttingen 2', text: '3' }, { url: '?staffel=781&r=6#p3333x3332', title: 'gegen Roch. Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=781&r=2#p3333x3334', title: 'gegen SK Bad Harzburg', text: '3' }, { url: '?staffel=781&r=5#p3333x3334', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - 7
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'Roch. Göttingen 2', url: '?mannschaft=3332', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=781&r=2#p3332x3331', title: 'gegen Roch. Göttingen', text: ½ }, { url: '?staffel=781&r=5#p3332x3331', title: 'gegen Roch. Göttingen', text: '1' }]
+    - [{ url: '?staffel=781&r=3#p3332x3333', title: 'gegen Hildesheimer SV', text: '1' }, { url: '?staffel=781&r=6#p3332x3333', title: 'gegen Hildesheimer SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=781&r=1#p3332x3334', title: 'gegen SK Bad Harzburg', text: '2' }, { url: '?staffel=781&r=4#p3332x3334', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - 4
+    - 10½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Bad Harzburg', url: '?mannschaft=3334', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=781&r=3#p3334x3331', title: 'gegen Roch. Göttingen', text: '0' }, { url: '?staffel=781&r=6#p3334x3331', title: 'gegen Roch. Göttingen', text: '0' }]
+    - [{ url: '?staffel=781&r=2#p3334x3333', title: 'gegen Hildesheimer SV', text: '1' }, { url: '?staffel=781&r=5#p3334x3333', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=781&r=1#p3334x3332', title: 'gegen Roch. Göttingen 2', text: '1' }, { url: '?staffel=781&r=4#p3334x3332', title: 'gegen Roch. Göttingen 2', text: '0' }]
+    - xxx
+    - 0
+    - '2'
+    - ''

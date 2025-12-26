@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TSG Mutterstadt', url: '?mannschaft=2329', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=647&r=1#p2329x2480', title: 'gegen Vorw.Orient Mz', text: 2½ }]
+    - [{ url: '?staffel=647&r=2#p2329x2355', title: 'gegen SK Gernsheim', text: 2½ }]
+    - [{ url: '?staffel=647&r=3#p2329x2460', title: 'gegen SC 1979 Hatters', text: 3½ }]
+    - [{ url: '?staffel=647&r=4#p2329x2331', title: 'gegen SC Eschborn', text: '4' }]
+    - [{ url: '?staffel=647&r=5#p2329x2517', title: 'gegen SV 1920 Hofheim 2', text: '4' }]
+    - 10
+    - 16½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Vorw.Orient Mz', url: '?mannschaft=2480', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=647&r=1#p2480x2329', title: 'gegen TSG Mutterstadt', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=647&r=3#p2480x2355', title: 'gegen SK Gernsheim', text: '3' }]
+    - [{ url: '?staffel=647&r=4#p2480x2460', title: 'gegen SC 1979 Hatters', text: '4' }]
+    - [{ url: '?staffel=647&r=5#p2480x2331', title: 'gegen SC Eschborn', text: '3' }]
+    - [{ url: '?staffel=647&r=2#p2480x2517', title: 'gegen SV 1920 Hofheim 2', text: '3' }]
+    - 8
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Gernsheim', url: '?mannschaft=2355', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=647&r=2#p2355x2329', title: 'gegen TSG Mutterstadt', text: 1½ }]
+    - [{ url: '?staffel=647&r=3#p2355x2480', title: 'gegen Vorw.Orient Mz', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=647&r=5#p2355x2460', title: 'gegen SC 1979 Hatters', text: '2' }]
+    - [{ url: '?staffel=647&r=1#p2355x2331', title: 'gegen SC Eschborn', text: 2½ }]
+    - [{ url: '?staffel=647&r=4#p2355x2517', title: 'gegen SV 1920 Hofheim 2', text: '4' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SC 1979 Hatters', url: '?mannschaft=2460', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=647&r=3#p2460x2329', title: 'gegen TSG Mutterstadt', text: ½ }]
+    - [{ url: '?staffel=647&r=4#p2460x2480', title: 'gegen Vorw.Orient Mz', text: '0' }]
+    - [{ url: '?staffel=647&r=5#p2460x2355', title: 'gegen SK Gernsheim', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=647&r=2#p2460x2331', title: 'gegen SC Eschborn', text: '3' }]
+    - [{ url: '?staffel=647&r=1#p2460x2517', title: 'gegen SV 1920 Hofheim 2', text: 1½ }]
+    - 3
+    - '7'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Eschborn', url: '?mannschaft=2331', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=647&r=4#p2331x2329', title: 'gegen TSG Mutterstadt', text: '0' }]
+    - [{ url: '?staffel=647&r=5#p2331x2480', title: 'gegen Vorw.Orient Mz', text: '1' }]
+    - [{ url: '?staffel=647&r=1#p2331x2355', title: 'gegen SK Gernsheim', text: 1½ }]
+    - [{ url: '?staffel=647&r=2#p2331x2460', title: 'gegen SC 1979 Hatters', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=647&r=3#p2331x2517', title: 'gegen SV 1920 Hofheim 2', text: 3½ }]
+    - 2
+    - '7'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SV 1920 Hofheim 2', url: '?mannschaft=2517', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=647&r=5#p2517x2329', title: 'gegen TSG Mutterstadt', text: '0' }]
+    - [{ url: '?staffel=647&r=2#p2517x2480', title: 'gegen Vorw.Orient Mz', text: '1' }]
+    - [{ url: '?staffel=647&r=4#p2517x2355', title: 'gegen SK Gernsheim', text: '0' }]
+    - [{ url: '?staffel=647&r=1#p2517x2460', title: 'gegen SC 1979 Hatters', text: 2½ }]
+    - [{ url: '?staffel=647&r=3#p2517x2331', title: 'gegen SC Eschborn', text: ½ }]
+    - xxx
+    - 2
+    - '4'
+    - absteiger

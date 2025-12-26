@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Hellern 5', url: '?mannschaft=4904', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1041&r=2#p4904x4899', title: 'gegen Bentheim/Nordho', text: 4½ }]
+    - [{ url: '?staffel=1041&r=6#p4904x4901', title: 'gegen Bersenbrück/Bramsche', text: 5½ }]
+    - [{ url: '?staffel=1041&r=5#p4904x4907', title: 'gegen SV Lingen 3', text: '4' }]
+    - [{ url: '?staffel=1041&r=1#p4904x4903', title: 'gegen SV Bad Essen 2', text: '4' }]
+    - [{ url: '?staffel=1041&r=9#p4904x4905', title: 'gegen SK Nordhorn-Blanke 5', text: '6' }]
+    - [{ url: '?staffel=1041&r=4#p4904x4902', title: 'gegen SK Meppen', text: '4' }]
+    - [{ url: '?staffel=1041&r=3#p4904x4908', title: 'gegen TuS Aschendorf', text: '6' }]
+    - [{ url: '?staffel=1041&r=8#p4904x4900', title: 'gegen TSV Riemsloh', text: '5' }]
+    - [{ url: '?staffel=1041&r=7#p4904x4906', title: 'gegen Hagener SV 3', text: '0' }]
+    - 13
+    - '39'
+    - aufsteiger
+-
+    - '2.'
+    - { text: Bentheim/Nordho, url: '?mannschaft=4899', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1041&r=2#p4899x4904', title: 'gegen SV Hellern 5', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1041&r=5#p4899x4901', title: 'gegen Bersenbrück/Bramsche', text: '7' }]
+    - [{ url: '?staffel=1041&r=4#p4899x4907', title: 'gegen SV Lingen 3', text: '3' }]
+    - [{ url: '?staffel=1041&r=9#p4899x4903', title: 'gegen SV Bad Essen 2', text: '5' }]
+    - [{ url: '?staffel=1041&r=8#p4899x4905', title: 'gegen SK Nordhorn-Blanke 5', text: 5½ }]
+    - [{ url: '?staffel=1041&r=3#p4899x4902', title: 'gegen SK Meppen', text: '5' }]
+    - [{ url: '?staffel=1041&r=1#p4899x4908', title: 'gegen TuS Aschendorf', text: '5' }]
+    - [{ url: '?staffel=1041&r=7#p4899x4900', title: 'gegen TSV Riemsloh', text: 5½ }]
+    - [{ url: '?staffel=1041&r=6#p4899x4906', title: 'gegen Hagener SV 3', text: '0' }]
+    - 12
+    - 39½
+    - aufsteiger
+-
+    - '3.'
+    - { text: Bersenbrück/Bramsche, url: '?mannschaft=4901', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1041&r=6#p4901x4904', title: 'gegen SV Hellern 5', text: 2½ }]
+    - [{ url: '?staffel=1041&r=5#p4901x4899', title: 'gegen Bentheim/Nordho', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1041&r=8#p4901x4907', title: 'gegen SV Lingen 3', text: 5½ }]
+    - [{ url: '?staffel=1041&r=4#p4901x4903', title: 'gegen SV Bad Essen 2', text: 4½ }]
+    - [{ url: '?staffel=1041&r=3#p4901x4905', title: 'gegen SK Nordhorn-Blanke 5', text: '7' }]
+    - [{ url: '?staffel=1041&r=7#p4901x4902', title: 'gegen SK Meppen', text: 5½ }]
+    - [{ url: '?staffel=1041&r=9#p4901x4908', title: 'gegen TuS Aschendorf', text: '3' }]
+    - [{ url: '?staffel=1041&r=2#p4901x4900', title: 'gegen TSV Riemsloh', text: '5' }]
+    - [{ url: '?staffel=1041&r=1#p4901x4906', title: 'gegen Hagener SV 3', text: '0' }]
+    - 10
+    - '34'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Lingen 3', url: '?mannschaft=4907', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1041&r=5#p4907x4904', title: 'gegen SV Hellern 5', text: '4' }]
+    - [{ url: '?staffel=1041&r=4#p4907x4899', title: 'gegen Bentheim/Nordho', text: '5' }]
+    - [{ url: '?staffel=1041&r=8#p4907x4901', title: 'gegen Bersenbrück/Bramsche', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1041&r=3#p4907x4903', title: 'gegen SV Bad Essen 2', text: 3½ }]
+    - [{ url: '?staffel=1041&r=2#p4907x4905', title: 'gegen SK Nordhorn-Blanke 5', text: 7½ }]
+    - [{ url: '?staffel=1041&r=6#p4907x4902', title: 'gegen SK Meppen', text: '6' }]
+    - [{ url: '?staffel=1041&r=7#p4907x4908', title: 'gegen TuS Aschendorf', text: 2½ }]
+    - [{ url: '?staffel=1041&r=1#p4907x4900', title: 'gegen TSV Riemsloh', text: '5' }]
+    - [{ url: '?staffel=1041&r=9#p4907x4906', title: 'gegen Hagener SV 3', text: '0' }]
+    - 9
+    - '36'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Bad Essen 2', url: '?mannschaft=4903', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1041&r=1#p4903x4904', title: 'gegen SV Hellern 5', text: '4' }]
+    - [{ url: '?staffel=1041&r=9#p4903x4899', title: 'gegen Bentheim/Nordho', text: '3' }]
+    - [{ url: '?staffel=1041&r=4#p4903x4901', title: 'gegen Bersenbrück/Bramsche', text: 3½ }]
+    - [{ url: '?staffel=1041&r=3#p4903x4907', title: 'gegen SV Lingen 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1041&r=7#p4903x4905', title: 'gegen SK Nordhorn-Blanke 5', text: 2½ }]
+    - [{ url: '?staffel=1041&r=2#p4903x4902', title: 'gegen SK Meppen', text: '5' }]
+    - [{ url: '?staffel=1041&r=8#p4903x4908', title: 'gegen TuS Aschendorf', text: 5½ }]
+    - [{ url: '?staffel=1041&r=6#p4903x4900', title: 'gegen TSV Riemsloh', text: '6' }]
+    - [{ url: '?staffel=1041&r=5#p4903x4906', title: 'gegen Hagener SV 3', text: '0' }]
+    - 9
+    - '34'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Nordhorn-Blanke 5', url: '?mannschaft=4905', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1041&r=9#p4905x4904', title: 'gegen SV Hellern 5', text: '2' }]
+    - [{ url: '?staffel=1041&r=8#p4905x4899', title: 'gegen Bentheim/Nordho', text: 2½ }]
+    - [{ url: '?staffel=1041&r=3#p4905x4901', title: 'gegen Bersenbrück/Bramsche', text: '1' }]
+    - [{ url: '?staffel=1041&r=2#p4905x4907', title: 'gegen SV Lingen 3', text: ½ }]
+    - [{ url: '?staffel=1041&r=7#p4905x4903', title: 'gegen SV Bad Essen 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1041&r=1#p4905x4902', title: 'gegen SK Meppen', text: '5' }]
+    - [{ url: '?staffel=1041&r=6#p4905x4908', title: 'gegen TuS Aschendorf', text: '4' }]
+    - [{ url: '?staffel=1041&r=5#p4905x4900', title: 'gegen TSV Riemsloh', text: '5' }]
+    - [{ url: '?staffel=1041&r=4#p4905x4906', title: 'gegen Hagener SV 3', text: '0' }]
+    - 7
+    - 25½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Meppen', url: '?mannschaft=4902', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1041&r=4#p4902x4904', title: 'gegen SV Hellern 5', text: '4' }]
+    - [{ url: '?staffel=1041&r=3#p4902x4899', title: 'gegen Bentheim/Nordho', text: '3' }]
+    - [{ url: '?staffel=1041&r=7#p4902x4901', title: 'gegen Bersenbrück/Bramsche', text: 2½ }]
+    - [{ url: '?staffel=1041&r=6#p4902x4907', title: 'gegen SV Lingen 3', text: '2' }]
+    - [{ url: '?staffel=1041&r=2#p4902x4903', title: 'gegen SV Bad Essen 2', text: '3' }]
+    - [{ url: '?staffel=1041&r=1#p4902x4905', title: 'gegen SK Nordhorn-Blanke 5', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1041&r=5#p4902x4908', title: 'gegen TuS Aschendorf', text: 5½ }]
+    - [{ url: '?staffel=1041&r=9#p4902x4900', title: 'gegen TSV Riemsloh', text: '6' }]
+    - [{ url: '?staffel=1041&r=8#p4902x4906', title: 'gegen Hagener SV 3', text: '0' }]
+    - 5
+    - '29'
+    - ''
+-
+    - '8.'
+    - { text: 'TuS Aschendorf', url: '?mannschaft=4908', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1041&r=3#p4908x4904', title: 'gegen SV Hellern 5', text: '2' }]
+    - [{ url: '?staffel=1041&r=1#p4908x4899', title: 'gegen Bentheim/Nordho', text: '3' }]
+    - [{ url: '?staffel=1041&r=9#p4908x4901', title: 'gegen Bersenbrück/Bramsche', text: '5' }]
+    - [{ url: '?staffel=1041&r=7#p4908x4907', title: 'gegen SV Lingen 3', text: 5½ }]
+    - [{ url: '?staffel=1041&r=8#p4908x4903', title: 'gegen SV Bad Essen 2', text: 2½ }]
+    - [{ url: '?staffel=1041&r=6#p4908x4905', title: 'gegen SK Nordhorn-Blanke 5', text: '4' }]
+    - [{ url: '?staffel=1041&r=5#p4908x4902', title: 'gegen SK Meppen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1041&r=4#p4908x4900', title: 'gegen TSV Riemsloh', text: 3½ }]
+    - [{ url: '?staffel=1041&r=2#p4908x4906', title: 'gegen Hagener SV 3', text: '0' }]
+    - 5
+    - '28'
+    - absteiger
+-
+    - '9.'
+    - { text: 'TSV Riemsloh', url: '?mannschaft=4900', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1041&r=8#p4900x4904', title: 'gegen SV Hellern 5', text: '3' }]
+    - [{ url: '?staffel=1041&r=7#p4900x4899', title: 'gegen Bentheim/Nordho', text: 2½ }]
+    - [{ url: '?staffel=1041&r=2#p4900x4901', title: 'gegen Bersenbrück/Bramsche', text: '3' }]
+    - [{ url: '?staffel=1041&r=1#p4900x4907', title: 'gegen SV Lingen 3', text: '3' }]
+    - [{ url: '?staffel=1041&r=6#p4900x4903', title: 'gegen SV Bad Essen 2', text: '2' }]
+    - [{ url: '?staffel=1041&r=5#p4900x4905', title: 'gegen SK Nordhorn-Blanke 5', text: '3' }]
+    - [{ url: '?staffel=1041&r=9#p4900x4902', title: 'gegen SK Meppen', text: '2' }]
+    - [{ url: '?staffel=1041&r=4#p4900x4908', title: 'gegen TuS Aschendorf', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1041&r=3#p4900x4906', title: 'gegen Hagener SV 3', text: '0' }]
+    - 2
+    - '23'
+    - absteiger
+-
+    - '10.'
+    - { text: 'Hagener SV 3', url: '?mannschaft=4906', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1041&r=7#p4906x4904', title: 'gegen SV Hellern 5', text: '0' }]
+    - [{ url: '?staffel=1041&r=6#p4906x4899', title: 'gegen Bentheim/Nordho', text: '0' }]
+    - [{ url: '?staffel=1041&r=1#p4906x4901', title: 'gegen Bersenbrück/Bramsche', text: '0' }]
+    - [{ url: '?staffel=1041&r=9#p4906x4907', title: 'gegen SV Lingen 3', text: '0' }]
+    - [{ url: '?staffel=1041&r=5#p4906x4903', title: 'gegen SV Bad Essen 2', text: '0' }]
+    - [{ url: '?staffel=1041&r=4#p4906x4905', title: 'gegen SK Nordhorn-Blanke 5', text: '0' }]
+    - [{ url: '?staffel=1041&r=8#p4906x4902', title: 'gegen SK Meppen', text: '0' }]
+    - [{ url: '?staffel=1041&r=2#p4906x4908', title: 'gegen TuS Aschendorf', text: '0' }]
+    - [{ url: '?staffel=1041&r=3#p4906x4900', title: 'gegen TSV Riemsloh', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

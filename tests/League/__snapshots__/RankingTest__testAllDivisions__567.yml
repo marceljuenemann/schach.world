@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Lübecker SV', url: '?mannschaft=4993', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1053&r=7#p4993x4992', title: 'gegen Doppelbauer Kiel', text: '3' }]
+    - [{ url: '?staffel=1053&r=8#p4993x5002', title: 'gegen Hamburger SK', text: '4' }]
+    - [{ url: '?staffel=1053&r=5#p4993x4999', title: 'gegen Post SV Uelzen', text: 3½ }]
+    - [{ url: '?staffel=1053&r=1#p4993x4996', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=1053&r=9#p4993x4998', title: 'gegen Hagener SV', text: '4' }]
+    - [{ url: '?staffel=1053&r=4#p4993x5000', title: 'gegen Delmenhorster SK', text: 5½ }]
+    - [{ url: '?staffel=1053&r=6#p4993x4995', title: 'gegen Weiße Dame HH', text: '6' }]
+    - [{ url: '?staffel=1053&r=3#p4993x4997', title: 'gegen TuRa Harksheide', text: '6' }]
+    - [{ url: '?staffel=1053&r=2#p4993x4991', title: 'gegen Segeberger SF', text: '6' }]
+    - 17
+    - 41½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Doppelbauer Kiel', url: '?mannschaft=4992', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1053&r=7#p4992x4993', title: 'gegen Lübecker SV', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1053&r=3#p4992x5002', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=1053&r=9#p4992x4999', title: 'gegen Post SV Uelzen', text: 3½ }]
+    - [{ url: '?staffel=1053&r=6#p4992x4996', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=1053&r=8#p4992x4998', title: 'gegen Hagener SV', text: '6' }]
+    - [{ url: '?staffel=1053&r=1#p4992x5000', title: 'gegen Delmenhorster SK', text: '6' }]
+    - [{ url: '?staffel=1053&r=2#p4992x4995', title: 'gegen Weiße Dame HH', text: '5' }]
+    - [{ url: '?staffel=1053&r=4#p4992x4997', title: 'gegen TuRa Harksheide', text: 3½ }]
+    - [{ url: '?staffel=1053&r=5#p4992x4991', title: 'gegen Segeberger SF', text: '4' }]
+    - 15
+    - '37'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'Hamburger SK', url: '?mannschaft=5002', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1053&r=8#p5002x4993', title: 'gegen Lübecker SV', text: '2' }]
+    - [{ url: '?staffel=1053&r=3#p5002x4992', title: 'gegen Doppelbauer Kiel', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1053&r=2#p5002x4999', title: 'gegen Post SV Uelzen', text: '2' }]
+    - [{ url: '?staffel=1053&r=4#p5002x4996', title: 'gegen SK Lehrte', text: 4½ }]
+    - [{ url: '?staffel=1053&r=5#p5002x4998', title: 'gegen Hagener SV', text: '4' }]
+    - [{ url: '?staffel=1053&r=7#p5002x5000', title: 'gegen Delmenhorster SK', text: 5½ }]
+    - [{ url: '?staffel=1053&r=1#p5002x4995', title: 'gegen Weiße Dame HH', text: '6' }]
+    - [{ url: '?staffel=1053&r=9#p5002x4997', title: 'gegen TuRa Harksheide', text: '4' }]
+    - [{ url: '?staffel=1053&r=6#p5002x4991', title: 'gegen Segeberger SF', text: '5' }]
+    - 14
+    - '37'
+    - ''
+-
+    - '4.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=4999', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1053&r=5#p4999x4993', title: 'gegen Lübecker SV', text: 2½ }]
+    - [{ url: '?staffel=1053&r=9#p4999x4992', title: 'gegen Doppelbauer Kiel', text: 2½ }]
+    - [{ url: '?staffel=1053&r=2#p4999x5002', title: 'gegen Hamburger SK', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1053&r=3#p4999x4996', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1053&r=6#p4999x4998', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=1053&r=8#p4999x5000', title: 'gegen Delmenhorster SK', text: '5' }]
+    - [{ url: '?staffel=1053&r=7#p4999x4995', title: 'gegen Weiße Dame HH', text: 4½ }]
+    - [{ url: '?staffel=1053&r=1#p4999x4997', title: 'gegen TuRa Harksheide', text: '4' }]
+    - [{ url: '?staffel=1053&r=4#p4999x4991', title: 'gegen Segeberger SF', text: 4½ }]
+    - 11
+    - '30'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte', url: '?mannschaft=4996', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1053&r=1#p4996x4993', title: 'gegen Lübecker SV', text: 2½ }]
+    - [{ url: '?staffel=1053&r=6#p4996x4992', title: 'gegen Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=1053&r=4#p4996x5002', title: 'gegen Hamburger SK', text: 1½ }]
+    - [{ url: '?staffel=1053&r=3#p4996x4999', title: 'gegen Post SV Uelzen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1053&r=7#p4996x4998', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=1053&r=2#p4996x5000', title: 'gegen Delmenhorster SK', text: '5' }]
+    - [{ url: '?staffel=1053&r=9#p4996x4995', title: 'gegen Weiße Dame HH', text: '5' }]
+    - [{ url: '?staffel=1053&r=5#p4996x4997', title: 'gegen TuRa Harksheide', text: 4½ }]
+    - [{ url: '?staffel=1053&r=8#p4996x4991', title: 'gegen Segeberger SF', text: '5' }]
+    - 10
+    - 31½
+    - ''
+-
+    - '6.'
+    - { text: 'Hagener SV', url: '?mannschaft=4998', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1053&r=9#p4998x4993', title: 'gegen Lübecker SV', text: '2' }]
+    - [{ url: '?staffel=1053&r=8#p4998x4992', title: 'gegen Doppelbauer Kiel', text: '0' }]
+    - [{ url: '?staffel=1053&r=5#p4998x5002', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=1053&r=6#p4998x4999', title: 'gegen Post SV Uelzen', text: '6' }]
+    - [{ url: '?staffel=1053&r=7#p4998x4996', title: 'gegen SK Lehrte', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1053&r=3#p4998x5000', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=1053&r=4#p4998x4995', title: 'gegen Weiße Dame HH', text: '3' }]
+    - [{ url: '?staffel=1053&r=2#p4998x4997', title: 'gegen TuRa Harksheide', text: '6' }]
+    - [{ url: '?staffel=1053&r=1#p4998x4991', title: 'gegen Segeberger SF', text: 4½ }]
+    - 9
+    - 29½
+    - ''
+-
+    - '7.'
+    - { text: 'Delmenhorster SK', url: '?mannschaft=5000', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1053&r=4#p5000x4993', title: 'gegen Lübecker SV', text: ½ }]
+    - [{ url: '?staffel=1053&r=1#p5000x4992', title: 'gegen Doppelbauer Kiel', text: '0' }]
+    - [{ url: '?staffel=1053&r=7#p5000x5002', title: 'gegen Hamburger SK', text: ½ }]
+    - [{ url: '?staffel=1053&r=8#p5000x4999', title: 'gegen Post SV Uelzen', text: '1' }]
+    - [{ url: '?staffel=1053&r=2#p5000x4996', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1053&r=3#p5000x4998', title: 'gegen Hagener SV', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1053&r=5#p5000x4995', title: 'gegen Weiße Dame HH', text: 2½ }]
+    - [{ url: '?staffel=1053&r=6#p5000x4997', title: 'gegen TuRa Harksheide', text: '5' }]
+    - [{ url: '?staffel=1053&r=9#p5000x4991', title: 'gegen Segeberger SF', text: '4' }]
+    - 5
+    - 17½
+    - absteiger
+-
+    - '8.'
+    - { text: 'Weiße Dame HH', url: '?mannschaft=4995', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1053&r=6#p4995x4993', title: 'gegen Lübecker SV', text: '0' }]
+    - [{ url: '?staffel=1053&r=2#p4995x4992', title: 'gegen Doppelbauer Kiel', text: '1' }]
+    - [{ url: '?staffel=1053&r=1#p4995x5002', title: 'gegen Hamburger SK', text: '0' }]
+    - [{ url: '?staffel=1053&r=7#p4995x4999', title: 'gegen Post SV Uelzen', text: 1½ }]
+    - [{ url: '?staffel=1053&r=9#p4995x4996', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1053&r=4#p4995x4998', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=1053&r=5#p4995x5000', title: 'gegen Delmenhorster SK', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1053&r=8#p4995x4997', title: 'gegen TuRa Harksheide', text: '3' }]
+    - [{ url: '?staffel=1053&r=3#p4995x4991', title: 'gegen Segeberger SF', text: '3' }]
+    - 5
+    - '16'
+    - absteiger
+-
+    - '9.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=4997', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1053&r=3#p4997x4993', title: 'gegen Lübecker SV', text: '0' }]
+    - [{ url: '?staffel=1053&r=4#p4997x4992', title: 'gegen Doppelbauer Kiel', text: 2½ }]
+    - [{ url: '?staffel=1053&r=9#p4997x5002', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=1053&r=1#p4997x4999', title: 'gegen Post SV Uelzen', text: '2' }]
+    - [{ url: '?staffel=1053&r=5#p4997x4996', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=1053&r=2#p4997x4998', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=1053&r=6#p4997x5000', title: 'gegen Delmenhorster SK', text: '1' }]
+    - [{ url: '?staffel=1053&r=8#p4997x4995', title: 'gegen Weiße Dame HH', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1053&r=7#p4997x4991', title: 'gegen Segeberger SF', text: '5' }]
+    - 3
+    - '17'
+    - absteiger
+-
+    - '10.'
+    - { text: 'Segeberger SF', url: '?mannschaft=4991', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1053&r=2#p4991x4993', title: 'gegen Lübecker SV', text: '0' }]
+    - [{ url: '?staffel=1053&r=5#p4991x4992', title: 'gegen Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=1053&r=6#p4991x5002', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=1053&r=4#p4991x4999', title: 'gegen Post SV Uelzen', text: 1½ }]
+    - [{ url: '?staffel=1053&r=8#p4991x4996', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1053&r=1#p4991x4998', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=1053&r=9#p4991x5000', title: 'gegen Delmenhorster SK', text: '2' }]
+    - [{ url: '?staffel=1053&r=3#p4991x4995', title: 'gegen Weiße Dame HH', text: '3' }]
+    - [{ url: '?staffel=1053&r=7#p4991x4997', title: 'gegen TuRa Harksheide', text: '1' }]
+    - xxx
+    - 1
+    - '13'
+    - absteiger

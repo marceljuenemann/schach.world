@@ -1,4 +1,4 @@
-<?
+<?php
 /* AJAX Bibliothek
  * 
  * In dieser Datei wird die Klasse SED_AjaxRequest zur Verfügung

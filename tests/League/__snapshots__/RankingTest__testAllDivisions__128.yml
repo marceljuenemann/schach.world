@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Hofheim a.Ts 2', url: '?mannschaft=1357', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=541&r=4#p1357x1361', title: 'gegen TSG Mutterstadt', text: 1½ }]
+    - [{ url: '?staffel=541&r=3#p1357x1444', title: 'gegen Karlsruher SF 2', text: '3' }]
+    - [{ url: '?staffel=541&r=2#p1357x1358', title: 'gegen Sfr. Heidesheim', text: 2½ }]
+    - [{ url: '?staffel=541&r=5#p1357x1366', title: 'gegen SC Eschborn', text: '4' }]
+    - [{ url: '?staffel=541&r=1#p1357x1513', title: 'gegen Sfr. Friedberg 2', text: 3½ }]
+    - 8
+    - 14½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TSG Mutterstadt', url: '?mannschaft=1361', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=541&r=4#p1361x1357', title: 'gegen SV Hofheim a.Ts 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=541&r=5#p1361x1444', title: 'gegen Karlsruher SF 2', text: '3' }]
+    - [{ url: '?staffel=541&r=1#p1361x1358', title: 'gegen Sfr. Heidesheim', text: '1' }]
+    - [{ url: '?staffel=541&r=2#p1361x1366', title: 'gegen SC Eschborn', text: 2½ }]
+    - [{ url: '?staffel=541&r=3#p1361x1513', title: 'gegen Sfr. Friedberg 2', text: '2' }]
+    - 7
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'Karlsruher SF 2', url: '?mannschaft=1444', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=541&r=3#p1444x1357', title: 'gegen SV Hofheim a.Ts 2', text: '1' }]
+    - [{ url: '?staffel=541&r=5#p1444x1361', title: 'gegen TSG Mutterstadt', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=541&r=4#p1444x1358', title: 'gegen Sfr. Heidesheim', text: '4' }]
+    - [{ url: '?staffel=541&r=1#p1444x1366', title: 'gegen SC Eschborn', text: 3½ }]
+    - [{ url: '?staffel=541&r=2#p1444x1513', title: 'gegen Sfr. Friedberg 2', text: '3' }]
+    - 6
+    - 12½
+    - ''
+-
+    - '4.'
+    - { text: 'Sfr. Heidesheim', url: '?mannschaft=1358', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=541&r=2#p1358x1357', title: 'gegen SV Hofheim a.Ts 2', text: 1½ }]
+    - [{ url: '?staffel=541&r=1#p1358x1361', title: 'gegen TSG Mutterstadt', text: '3' }]
+    - [{ url: '?staffel=541&r=4#p1358x1444', title: 'gegen Karlsruher SF 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=541&r=3#p1358x1366', title: 'gegen SC Eschborn', text: 2½ }]
+    - [{ url: '?staffel=541&r=5#p1358x1513', title: 'gegen Sfr. Friedberg 2', text: '3' }]
+    - 6
+    - '10'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Eschborn', url: '?mannschaft=1366', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=541&r=5#p1366x1357', title: 'gegen SV Hofheim a.Ts 2', text: '0' }]
+    - [{ url: '?staffel=541&r=2#p1366x1361', title: 'gegen TSG Mutterstadt', text: 1½ }]
+    - [{ url: '?staffel=541&r=1#p1366x1444', title: 'gegen Karlsruher SF 2', text: ½ }]
+    - [{ url: '?staffel=541&r=3#p1366x1358', title: 'gegen Sfr. Heidesheim', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=541&r=4#p1366x1513', title: 'gegen Sfr. Friedberg 2', text: '3' }]
+    - 2
+    - 6½
+    - absteiger
+-
+    - '6.'
+    - { text: 'Sfr. Friedberg 2', url: '?mannschaft=1513', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=541&r=1#p1513x1357', title: 'gegen SV Hofheim a.Ts 2', text: ½ }]
+    - [{ url: '?staffel=541&r=3#p1513x1361', title: 'gegen TSG Mutterstadt', text: '2' }]
+    - [{ url: '?staffel=541&r=2#p1513x1444', title: 'gegen Karlsruher SF 2', text: '1' }]
+    - [{ url: '?staffel=541&r=5#p1513x1358', title: 'gegen Sfr. Heidesheim', text: '1' }]
+    - [{ url: '?staffel=541&r=4#p1513x1366', title: 'gegen SC Eschborn', text: '1' }]
+    - xxx
+    - 1
+    - 5½
+    - absteiger

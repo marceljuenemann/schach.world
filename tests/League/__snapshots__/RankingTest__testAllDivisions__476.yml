@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Gernsheim', url: '?mannschaft=4481', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=954&r=4#p4481x4408', title: 'gegen DJK Aachen Ladies', text: '3' }]
+    - [{ url: '?staffel=954&r=2#p4481x4393', title: 'gegen SV Riegelsberg', text: '2' }]
+    - [{ url: '?staffel=954&r=1#p4481x4380', title: 'gegen SC Eschborn', text: '3' }]
+    - [{ url: '?staffel=954&r=3#p4481x4482', title: 'gegen SK Gernsheim 2', text: '3' }]
+    - [{ url: '?staffel=954&r=5#p4481x4470', title: 'gegen SF Birkenfeld', text: '3' }]
+    - 9
+    - '14'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'DJK Aachen Ladies', url: '?mannschaft=4408', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=954&r=4#p4408x4481', title: 'gegen SK Gernsheim', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=954&r=5#p4408x4393', title: 'gegen SV Riegelsberg', text: '3' }]
+    - [{ url: '?staffel=954&r=3#p4408x4380', title: 'gegen SC Eschborn', text: '4' }]
+    - [{ url: '?staffel=954&r=2#p4408x4482', title: 'gegen SK Gernsheim 2', text: 2½ }]
+    - [{ url: '?staffel=954&r=1#p4408x4470', title: 'gegen SF Birkenfeld', text: '4' }]
+    - 8
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Riegelsberg', url: '?mannschaft=4393', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=954&r=2#p4393x4481', title: 'gegen SK Gernsheim', text: '2' }]
+    - [{ url: '?staffel=954&r=5#p4393x4408', title: 'gegen DJK Aachen Ladies', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=954&r=4#p4393x4380', title: 'gegen SC Eschborn', text: '3' }]
+    - [{ url: '?staffel=954&r=1#p4393x4482', title: 'gegen SK Gernsheim 2', text: '3' }]
+    - [{ url: '?staffel=954&r=3#p4393x4470', title: 'gegen SF Birkenfeld', text: '2' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Eschborn', url: '?mannschaft=4380', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=954&r=1#p4380x4481', title: 'gegen SK Gernsheim', text: '1' }]
+    - [{ url: '?staffel=954&r=3#p4380x4408', title: 'gegen DJK Aachen Ladies', text: '0' }]
+    - [{ url: '?staffel=954&r=4#p4380x4393', title: 'gegen SV Riegelsberg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=954&r=5#p4380x4482', title: 'gegen SK Gernsheim 2', text: '3' }]
+    - [{ url: '?staffel=954&r=2#p4380x4470', title: 'gegen SF Birkenfeld', text: '4' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Gernsheim 2', url: '?mannschaft=4482', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=954&r=3#p4482x4481', title: 'gegen SK Gernsheim', text: '1' }]
+    - [{ url: '?staffel=954&r=2#p4482x4408', title: 'gegen DJK Aachen Ladies', text: 1½ }]
+    - [{ url: '?staffel=954&r=1#p4482x4393', title: 'gegen SV Riegelsberg', text: '1' }]
+    - [{ url: '?staffel=954&r=5#p4482x4380', title: 'gegen SC Eschborn', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=954&r=4#p4482x4470', title: 'gegen SF Birkenfeld', text: 3½ }]
+    - 2
+    - '8'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SF Birkenfeld', url: '?mannschaft=4470', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=954&r=5#p4470x4481', title: 'gegen SK Gernsheim', text: '1' }]
+    - [{ url: '?staffel=954&r=1#p4470x4408', title: 'gegen DJK Aachen Ladies', text: '0' }]
+    - [{ url: '?staffel=954&r=3#p4470x4393', title: 'gegen SV Riegelsberg', text: '2' }]
+    - [{ url: '?staffel=954&r=2#p4470x4380', title: 'gegen SC Eschborn', text: '0' }]
+    - [{ url: '?staffel=954&r=4#p4470x4482', title: 'gegen SK Gernsheim 2', text: ½ }]
+    - xxx
+    - 1
+    - 3½
+    - absteiger

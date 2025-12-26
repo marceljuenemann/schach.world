@@ -1,0 +1,233 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Blanke', url: '?mannschaft=7594', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1780&r=1#p7594x7595', title: 'gegen SK Nordhorn-Blanke 2', text: '4' }]
+    - [{ url: '?staffel=1780&r=6#p7594x7603', title: 'gegen SV Osnabrück 2', text: '4' }]
+    - [{ url: '?staffel=1780&r=4#p7594x7599', title: 'gegen SC Papenburg', text: '3' }]
+    - [{ url: '?staffel=1780&r=3#p7594x7597', title: 'gegen SV Lingen', text: '4' }]
+    - [{ url: '?staffel=1780&r=5#p7594x7598', title: 'gegen Fortuna Logabirum', text: '4' }]
+    - [{ url: '?staffel=1780&r=6#p7594x7592', title: 'gegen SF Spelle', text: '4' }]
+    - [{ url: '?staffel=1780&r=1#p7594x7596', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - [{ url: '?staffel=1780&r=5#p7594x7593', title: 'gegen SK Meppen', text: '4' }]
+    - [{ url: '?staffel=1780&r=4#p7594x7600', title: 'gegen SC Papenburg 2', text: '3' }]
+    - [{ url: '?staffel=1780&r=2#p7594x7602', title: 'gegen SC Papenburg 4', text: '4' }]
+    - [{ url: '?staffel=1780&r=2#p7594x7601', title: 'gegen SC Papenburg 3', text: '4' }]
+    - 22
+    - '42'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SK Nordhorn-Blanke 2', url: '?mannschaft=7595', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1780&r=1#p7595x7594', title: 'gegen SK Nordhorn-Blanke', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1780&r=4#p7595x7603', title: 'gegen SV Osnabrück 2', text: '3' }]
+    - [{ url: '?staffel=1780&r=5#p7595x7599', title: 'gegen SC Papenburg', text: '4' }]
+    - [{ url: '?staffel=1780&r=1#p7595x7597', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=1780&r=2#p7595x7598', title: 'gegen Fortuna Logabirum', text: '2' }]
+    - [{ url: '?staffel=1780&r=4#p7595x7592', title: 'gegen SF Spelle', text: 3½ }]
+    - [{ url: '?staffel=1780&r=3#p7595x7596', title: 'gegen SK Nordhorn-Blanke 3', text: 3½ }]
+    - [{ url: '?staffel=1780&r=2#p7595x7593', title: 'gegen SK Meppen', text: '2' }]
+    - [{ url: '?staffel=1780&r=5#p7595x7600', title: 'gegen SC Papenburg 2', text: '4' }]
+    - [{ url: '?staffel=1780&r=6#p7595x7602', title: 'gegen SC Papenburg 4', text: '4' }]
+    - [{ url: '?staffel=1780&r=6#p7595x7601', title: 'gegen SC Papenburg 3', text: '4' }]
+    - 18
+    - '33'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Osnabrück 2', url: '?mannschaft=7603', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1780&r=6#p7603x7594', title: 'gegen SK Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=1780&r=4#p7603x7595', title: 'gegen SK Nordhorn-Blanke 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1780&r=2#p7603x7599', title: 'gegen SC Papenburg', text: '3' }]
+    - [{ url: '?staffel=1780&r=6#p7603x7597', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=1780&r=1#p7603x7598', title: 'gegen Fortuna Logabirum', text: '2' }]
+    - [{ url: '?staffel=1780&r=3#p7603x7592', title: 'gegen SF Spelle', text: 3½ }]
+    - [{ url: '?staffel=1780&r=4#p7603x7596', title: 'gegen SK Nordhorn-Blanke 3', text: '3' }]
+    - [{ url: '?staffel=1780&r=1#p7603x7593', title: 'gegen SK Meppen', text: '4' }]
+    - [{ url: '?staffel=1780&r=2#p7603x7600', title: 'gegen SC Papenburg 2', text: 3½ }]
+    - [{ url: '?staffel=1780&r=5#p7603x7602', title: 'gegen SC Papenburg 4', text: '4' }]
+    - [{ url: '?staffel=1780&r=5#p7603x7601', title: 'gegen SC Papenburg 3', text: '4' }]
+    - 17
+    - '31'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Papenburg', url: '?mannschaft=7599', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1780&r=4#p7599x7594', title: 'gegen SK Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=1780&r=5#p7599x7595', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=1780&r=2#p7599x7603', title: 'gegen SV Osnabrück 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1780&r=4#p7599x7597', title: 'gegen SV Lingen', text: '1' }]
+    - [{ url: '?staffel=1780&r=6#p7599x7598', title: 'gegen Fortuna Logabirum', text: '4' }]
+    - [{ url: '?staffel=1780&r=2#p7599x7592', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=1780&r=5#p7599x7596', title: 'gegen SK Nordhorn-Blanke 3', text: 2½ }]
+    - [{ url: '?staffel=1780&r=6#p7599x7593', title: 'gegen SK Meppen', text: '3' }]
+    - [{ url: '?staffel=1780&r=3#p7599x7600', title: 'gegen SC Papenburg 2', text: '3' }]
+    - [{ url: '?staffel=1780&r=1#p7599x7602', title: 'gegen SC Papenburg 4', text: '3' }]
+    - [{ url: '?staffel=1780&r=1#p7599x7601', title: 'gegen SC Papenburg 3', text: '3' }]
+    - 13
+    - 22½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Lingen', url: '?mannschaft=7597', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1780&r=3#p7597x7594', title: 'gegen SK Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=1780&r=1#p7597x7595', title: 'gegen SK Nordhorn-Blanke 2', text: '1' }]
+    - [{ url: '?staffel=1780&r=6#p7597x7603', title: 'gegen SV Osnabrück 2', text: '1' }]
+    - [{ url: '?staffel=1780&r=4#p7597x7599', title: 'gegen SC Papenburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1780&r=5#p7597x7598', title: 'gegen Fortuna Logabirum', text: '1' }]
+    - [{ url: '?staffel=1780&r=6#p7597x7592', title: 'gegen SF Spelle', text: 2½ }]
+    - [{ url: '?staffel=1780&r=1#p7597x7596', title: 'gegen SK Nordhorn-Blanke 3', text: '2' }]
+    - [{ url: '?staffel=1780&r=5#p7597x7593', title: 'gegen SK Meppen', text: '2' }]
+    - [{ url: '?staffel=1780&r=4#p7597x7600', title: 'gegen SC Papenburg 2', text: '4' }]
+    - [{ url: '?staffel=1780&r=2#p7597x7602', title: 'gegen SC Papenburg 4', text: '4' }]
+    - [{ url: '?staffel=1780&r=2#p7597x7601', title: 'gegen SC Papenburg 3', text: '4' }]
+    - 12
+    - 24½
+    - ''
+-
+    - '6.'
+    - { text: 'Fortuna Logabirum', url: '?mannschaft=7598', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1780&r=5#p7598x7594', title: 'gegen SK Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=1780&r=2#p7598x7595', title: 'gegen SK Nordhorn-Blanke 2', text: '2' }]
+    - [{ url: '?staffel=1780&r=1#p7598x7603', title: 'gegen SV Osnabrück 2', text: '2' }]
+    - [{ url: '?staffel=1780&r=6#p7598x7599', title: 'gegen SC Papenburg', text: '0' }]
+    - [{ url: '?staffel=1780&r=5#p7598x7597', title: 'gegen SV Lingen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1780&r=1#p7598x7592', title: 'gegen SF Spelle', text: '3' }]
+    - [{ url: '?staffel=1780&r=2#p7598x7596', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - [{ url: '?staffel=1780&r=3#p7598x7593', title: 'gegen SK Meppen', text: '0' }]
+    - [{ url: '?staffel=1780&r=6#p7598x7600', title: 'gegen SC Papenburg 2', text: '0' }]
+    - [{ url: '?staffel=1780&r=4#p7598x7602', title: 'gegen SC Papenburg 4', text: '3' }]
+    - [{ url: '?staffel=1780&r=4#p7598x7601', title: 'gegen SC Papenburg 3', text: '3' }]
+    - 12
+    - '20'
+    - ''
+-
+    - '7.'
+    - { text: 'SF Spelle', url: '?mannschaft=7592', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1780&r=6#p7592x7594', title: 'gegen SK Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=1780&r=4#p7592x7595', title: 'gegen SK Nordhorn-Blanke 2', text: ½ }]
+    - [{ url: '?staffel=1780&r=3#p7592x7603', title: 'gegen SV Osnabrück 2', text: ½ }]
+    - [{ url: '?staffel=1780&r=2#p7592x7599', title: 'gegen SC Papenburg', text: '2' }]
+    - [{ url: '?staffel=1780&r=6#p7592x7597', title: 'gegen SV Lingen', text: 1½ }]
+    - [{ url: '?staffel=1780&r=1#p7592x7598', title: 'gegen Fortuna Logabirum', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1780&r=4#p7592x7596', title: 'gegen SK Nordhorn-Blanke 3', text: '3' }]
+    - [{ url: '?staffel=1780&r=1#p7592x7593', title: 'gegen SK Meppen', text: 2½ }]
+    - [{ url: '?staffel=1780&r=2#p7592x7600', title: 'gegen SC Papenburg 2', text: '4' }]
+    - [{ url: '?staffel=1780&r=5#p7592x7602', title: 'gegen SC Papenburg 4', text: '4' }]
+    - [{ url: '?staffel=1780&r=5#p7592x7601', title: 'gegen SC Papenburg 3', text: '4' }]
+    - 11
+    - '23'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Nordhorn-Blanke 3', url: '?mannschaft=7596', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1780&r=1#p7596x7594', title: 'gegen SK Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=1780&r=3#p7596x7595', title: 'gegen SK Nordhorn-Blanke 2', text: ½ }]
+    - [{ url: '?staffel=1780&r=4#p7596x7603', title: 'gegen SV Osnabrück 2', text: '1' }]
+    - [{ url: '?staffel=1780&r=5#p7596x7599', title: 'gegen SC Papenburg', text: 1½ }]
+    - [{ url: '?staffel=1780&r=1#p7596x7597', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=1780&r=2#p7596x7598', title: 'gegen Fortuna Logabirum', text: '0' }]
+    - [{ url: '?staffel=1780&r=4#p7596x7592', title: 'gegen SF Spelle', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1780&r=2#p7596x7593', title: 'gegen SK Meppen', text: '3' }]
+    - [{ url: '?staffel=1780&r=5#p7596x7600', title: 'gegen SC Papenburg 2', text: '3' }]
+    - [{ url: '?staffel=1780&r=6#p7596x7602', title: 'gegen SC Papenburg 4', text: 3½ }]
+    - [{ url: '?staffel=1780&r=6#p7596x7601', title: 'gegen SC Papenburg 3', text: '4' }]
+    - 9
+    - 19½
+    - ''
+-
+    - '9.'
+    - { text: 'SK Meppen', url: '?mannschaft=7593', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1780&r=5#p7593x7594', title: 'gegen SK Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=1780&r=2#p7593x7595', title: 'gegen SK Nordhorn-Blanke 2', text: '2' }]
+    - [{ url: '?staffel=1780&r=1#p7593x7603', title: 'gegen SV Osnabrück 2', text: '0' }]
+    - [{ url: '?staffel=1780&r=6#p7593x7599', title: 'gegen SC Papenburg', text: '1' }]
+    - [{ url: '?staffel=1780&r=5#p7593x7597', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=1780&r=3#p7593x7598', title: 'gegen Fortuna Logabirum', text: '4' }]
+    - [{ url: '?staffel=1780&r=1#p7593x7592', title: 'gegen SF Spelle', text: 1½ }]
+    - [{ url: '?staffel=1780&r=2#p7593x7596', title: 'gegen SK Nordhorn-Blanke 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1780&r=6#p7593x7600', title: 'gegen SC Papenburg 2', text: '2' }]
+    - [{ url: '?staffel=1780&r=4#p7593x7602', title: 'gegen SC Papenburg 4', text: 2½ }]
+    - [{ url: '?staffel=1780&r=4#p7593x7601', title: 'gegen SC Papenburg 3', text: '3' }]
+    - 9
+    - '19'
+    - ''
+-
+    - '10.'
+    - { text: 'SC Papenburg 2', url: '?mannschaft=7600', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1780&r=4#p7600x7594', title: 'gegen SK Nordhorn-Blanke', text: '1' }]
+    - [{ url: '?staffel=1780&r=5#p7600x7595', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=1780&r=2#p7600x7603', title: 'gegen SV Osnabrück 2', text: ½ }]
+    - [{ url: '?staffel=1780&r=3#p7600x7599', title: 'gegen SC Papenburg', text: '1' }]
+    - [{ url: '?staffel=1780&r=4#p7600x7597', title: 'gegen SV Lingen', text: '0' }]
+    - [{ url: '?staffel=1780&r=6#p7600x7598', title: 'gegen Fortuna Logabirum', text: '4' }]
+    - [{ url: '?staffel=1780&r=2#p7600x7592', title: 'gegen SF Spelle', text: '0' }]
+    - [{ url: '?staffel=1780&r=5#p7600x7596', title: 'gegen SK Nordhorn-Blanke 3', text: '1' }]
+    - [{ url: '?staffel=1780&r=6#p7600x7593', title: 'gegen SK Meppen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1780&r=1#p7600x7602', title: 'gegen SC Papenburg 4', text: '2' }]
+    - [{ url: '?staffel=1780&r=1#p7600x7601', title: 'gegen SC Papenburg 3', text: '2' }]
+    - 5
+    - 13½
+    - ''
+-
+    - '11.'
+    - { text: 'SC Papenburg 4', url: '?mannschaft=7602', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1780&r=2#p7602x7594', title: 'gegen SK Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=1780&r=6#p7602x7595', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=1780&r=5#p7602x7603', title: 'gegen SV Osnabrück 2', text: '0' }]
+    - [{ url: '?staffel=1780&r=1#p7602x7599', title: 'gegen SC Papenburg', text: '1' }]
+    - [{ url: '?staffel=1780&r=2#p7602x7597', title: 'gegen SV Lingen', text: '0' }]
+    - [{ url: '?staffel=1780&r=4#p7602x7598', title: 'gegen Fortuna Logabirum', text: '1' }]
+    - [{ url: '?staffel=1780&r=5#p7602x7592', title: 'gegen SF Spelle', text: '0' }]
+    - [{ url: '?staffel=1780&r=6#p7602x7596', title: 'gegen SK Nordhorn-Blanke 3', text: ½ }]
+    - [{ url: '?staffel=1780&r=4#p7602x7593', title: 'gegen SK Meppen', text: 1½ }]
+    - [{ url: '?staffel=1780&r=1#p7602x7600', title: 'gegen SC Papenburg 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1780&r=3#p7602x7601', title: 'gegen SC Papenburg 3', text: '3' }]
+    - 3
+    - '9'
+    - ''
+-
+    - '12.'
+    - { text: 'SC Papenburg 3', url: '?mannschaft=7601', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1780&r=2#p7601x7594', title: 'gegen SK Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=1780&r=6#p7601x7595', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=1780&r=5#p7601x7603', title: 'gegen SV Osnabrück 2', text: '0' }]
+    - [{ url: '?staffel=1780&r=1#p7601x7599', title: 'gegen SC Papenburg', text: '1' }]
+    - [{ url: '?staffel=1780&r=2#p7601x7597', title: 'gegen SV Lingen', text: '0' }]
+    - [{ url: '?staffel=1780&r=4#p7601x7598', title: 'gegen Fortuna Logabirum', text: '1' }]
+    - [{ url: '?staffel=1780&r=5#p7601x7592', title: 'gegen SF Spelle', text: '0' }]
+    - [{ url: '?staffel=1780&r=6#p7601x7596', title: 'gegen SK Nordhorn-Blanke 3', text: '0' }]
+    - [{ url: '?staffel=1780&r=4#p7601x7593', title: 'gegen SK Meppen', text: '1' }]
+    - [{ url: '?staffel=1780&r=1#p7601x7600', title: 'gegen SC Papenburg 2', text: '2' }]
+    - [{ url: '?staffel=1780&r=3#p7601x7602', title: 'gegen SC Papenburg 4', text: '1' }]
+    - xxx
+    - 1
+    - '6'
+    - ''

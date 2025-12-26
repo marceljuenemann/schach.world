@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Plesse Bovenden U14', url: '?mannschaft=8175', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1852&r=3#p8175x8178', title: 'gegen ESV Göttingen U14', text: 2½ }]
+    - [{ url: '?staffel=1852&r=2#p8175x8177', title: 'gegen Plesse Bovenden U16', text: '3' }]
+    - 4
+    - 5½
+    - ''
+-
+    - '2.'
+    - { text: 'ESV Göttingen U14', url: '?mannschaft=8178', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1852&r=3#p8178x8175', title: 'gegen Plesse Bovenden U14', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1852&r=1#p8178x8177', title: 'gegen Plesse Bovenden U16', text: '3' }]
+    - 2
+    - 4½
+    - ''
+-
+    - '3.'
+    - { text: 'Plesse Bovenden U16', url: '?mannschaft=8177', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1852&r=2#p8177x8175', title: 'gegen Plesse Bovenden U14', text: '1' }]
+    - [{ url: '?staffel=1852&r=1#p8177x8178', title: 'gegen ESV Göttingen U14', text: '1' }]
+    - xxx
+    - 0
+    - '2'
+    - ''

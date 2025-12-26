@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Borus. Lichtenberg', url: '?mannschaft=7017', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1648&r=1#p7017x7012', title: 'gegen Makkabi Rostock', text: 3½ }]
+    - [{ url: '?staffel=1648&r=2#p7017x7019', title: 'gegen Barnimer SF', text: '5' }]
+    - 4
+    - 8½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Makkabi Rostock', url: '?mannschaft=7012', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1648&r=1#p7012x7017', title: 'gegen Borus. Lichtenberg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1648&r=3#p7012x7019', title: 'gegen Barnimer SF', text: '4' }]
+    - 2
+    - 6½
+    - absteigerRelegation
+-
+    - '3.'
+    - { text: 'Barnimer SF', url: '?mannschaft=7019', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1648&r=2#p7019x7017', title: 'gegen Borus. Lichtenberg', text: '1' }]
+    - [{ url: '?staffel=1648&r=3#p7019x7012', title: 'gegen Makkabi Rostock', text: '2' }]
+    - xxx
+    - 0
+    - '3'
+    - absteiger

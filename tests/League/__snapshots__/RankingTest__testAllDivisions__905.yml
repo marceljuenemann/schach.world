@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=7569', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1737&r=2#p7569x7561', title: 'gegen SF Sulingen', text: 2½ }]
+    - [{ url: '?staffel=1737&r=5#p7569x7562', title: 'gegen SZ Bemerode', text: '5' }]
+    - [{ url: '?staffel=1737&r=7#p7569x7533', title: 'gegen SK Anderten', text: '7' }]
+    - [{ url: '?staffel=1737&r=3#p7569x7577', title: 'gegen SVg Calenberg', text: 5½ }]
+    - [{ url: '?staffel=1737&r=1#p7569x7544', title: 'gegen SD Isernhagen 2', text: 5½ }]
+    - [{ url: '?staffel=1737&r=8#p7569x7519', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=1737&r=9#p7569x7559', title: 'gegen SV Bückeburg', text: 5½ }]
+    - [{ url: '?staffel=1737&r=6#p7569x7477', title: 'gegen Hannover 96 2', text: 4½ }]
+    - [{ url: '?staffel=1737&r=4#p7569x7554', title: 'gegen SC Hämelerwald', text: '6' }]
+    - 16
+    - '46'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Sulingen', url: '?mannschaft=7561', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1737&r=2#p7561x7569', title: 'gegen SC Stadthagen', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1737&r=8#p7561x7562', title: 'gegen SZ Bemerode', text: '4' }]
+    - [{ url: '?staffel=1737&r=1#p7561x7533', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=1737&r=6#p7561x7577', title: 'gegen SVg Calenberg', text: 4½ }]
+    - [{ url: '?staffel=1737&r=7#p7561x7544', title: 'gegen SD Isernhagen 2', text: '6' }]
+    - [{ url: '?staffel=1737&r=4#p7561x7519', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=1737&r=3#p7561x7559', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=1737&r=9#p7561x7477', title: 'gegen Hannover 96 2', text: '8' }]
+    - [{ url: '?staffel=1737&r=5#p7561x7554', title: 'gegen SC Hämelerwald', text: '8' }]
+    - 15
+    - 48½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=7562', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1737&r=5#p7562x7569', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=1737&r=8#p7562x7561', title: 'gegen SF Sulingen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1737&r=4#p7562x7533', title: 'gegen SK Anderten', text: 4½ }]
+    - [{ url: '?staffel=1737&r=7#p7562x7577', title: 'gegen SVg Calenberg', text: 6½ }]
+    - [{ url: '?staffel=1737&r=9#p7562x7544', title: 'gegen SD Isernhagen 2', text: 4½ }]
+    - [{ url: '?staffel=1737&r=3#p7562x7519', title: 'gegen SK Wennigsen', text: 6½ }]
+    - [{ url: '?staffel=1737&r=2#p7562x7559', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=1737&r=1#p7562x7477', title: 'gegen Hannover 96 2', text: '6' }]
+    - [{ url: '?staffel=1737&r=6#p7562x7554', title: 'gegen SC Hämelerwald', text: 6½ }]
+    - 15
+    - '46'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Anderten', url: '?mannschaft=7533', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1737&r=7#p7533x7569', title: 'gegen SC Stadthagen', text: '1' }]
+    - [{ url: '?staffel=1737&r=1#p7533x7561', title: 'gegen SF Sulingen', text: 4½ }]
+    - [{ url: '?staffel=1737&r=4#p7533x7562', title: 'gegen SZ Bemerode', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1737&r=9#p7533x7577', title: 'gegen SVg Calenberg', text: 4½ }]
+    - [{ url: '?staffel=1737&r=2#p7533x7544', title: 'gegen SD Isernhagen 2', text: 2½ }]
+    - [{ url: '?staffel=1737&r=5#p7533x7519', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=1737&r=6#p7533x7559', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=1737&r=3#p7533x7477', title: 'gegen Hannover 96 2', text: 6½ }]
+    - [{ url: '?staffel=1737&r=8#p7533x7554', title: 'gegen SC Hämelerwald', text: '6' }]
+    - 11
+    - '37'
+    - ''
+-
+    - '5.'
+    - { text: 'SVg Calenberg', url: '?mannschaft=7577', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1737&r=3#p7577x7569', title: 'gegen SC Stadthagen', text: 2½ }]
+    - [{ url: '?staffel=1737&r=6#p7577x7561', title: 'gegen SF Sulingen', text: 3½ }]
+    - [{ url: '?staffel=1737&r=7#p7577x7562', title: 'gegen SZ Bemerode', text: 1½ }]
+    - [{ url: '?staffel=1737&r=9#p7577x7533', title: 'gegen SK Anderten', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1737&r=5#p7577x7544', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - [{ url: '?staffel=1737&r=1#p7577x7519', title: 'gegen SK Wennigsen', text: '5' }]
+    - [{ url: '?staffel=1737&r=4#p7577x7559', title: 'gegen SV Bückeburg', text: '6' }]
+    - [{ url: '?staffel=1737&r=8#p7577x7477', title: 'gegen Hannover 96 2', text: '6' }]
+    - [{ url: '?staffel=1737&r=2#p7577x7554', title: 'gegen SC Hämelerwald', text: 5½ }]
+    - 8
+    - 36½
+    - ''
+-
+    - '6.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=7544', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1737&r=1#p7544x7569', title: 'gegen SC Stadthagen', text: 2½ }]
+    - [{ url: '?staffel=1737&r=7#p7544x7561', title: 'gegen SF Sulingen', text: '2' }]
+    - [{ url: '?staffel=1737&r=9#p7544x7562', title: 'gegen SZ Bemerode', text: 3½ }]
+    - [{ url: '?staffel=1737&r=2#p7544x7533', title: 'gegen SK Anderten', text: 5½ }]
+    - [{ url: '?staffel=1737&r=5#p7544x7577', title: 'gegen SVg Calenberg', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1737&r=6#p7544x7519', title: 'gegen SK Wennigsen', text: '3' }]
+    - [{ url: '?staffel=1737&r=8#p7544x7559', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=1737&r=4#p7544x7477', title: 'gegen Hannover 96 2', text: '4' }]
+    - [{ url: '?staffel=1737&r=3#p7544x7554', title: 'gegen SC Hämelerwald', text: 6½ }]
+    - 7
+    - 35½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=7519', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1737&r=8#p7519x7569', title: 'gegen SC Stadthagen', text: 3½ }]
+    - [{ url: '?staffel=1737&r=4#p7519x7561', title: 'gegen SF Sulingen', text: 3½ }]
+    - [{ url: '?staffel=1737&r=3#p7519x7562', title: 'gegen SZ Bemerode', text: 1½ }]
+    - [{ url: '?staffel=1737&r=5#p7519x7533', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=1737&r=1#p7519x7577', title: 'gegen SVg Calenberg', text: '3' }]
+    - [{ url: '?staffel=1737&r=6#p7519x7544', title: 'gegen SD Isernhagen 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1737&r=7#p7519x7559', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=1737&r=2#p7519x7477', title: 'gegen Hannover 96 2', text: 2½ }]
+    - [{ url: '?staffel=1737&r=9#p7519x7554', title: 'gegen SC Hämelerwald', text: '6' }]
+    - 6
+    - '33'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=7559', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1737&r=9#p7559x7569', title: 'gegen SC Stadthagen', text: 2½ }]
+    - [{ url: '?staffel=1737&r=3#p7559x7561', title: 'gegen SF Sulingen', text: 3½ }]
+    - [{ url: '?staffel=1737&r=2#p7559x7562', title: 'gegen SZ Bemerode', text: 3½ }]
+    - [{ url: '?staffel=1737&r=6#p7559x7533', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=1737&r=4#p7559x7577', title: 'gegen SVg Calenberg', text: '2' }]
+    - [{ url: '?staffel=1737&r=8#p7559x7544', title: 'gegen SD Isernhagen 2', text: 4½ }]
+    - [{ url: '?staffel=1737&r=7#p7559x7519', title: 'gegen SK Wennigsen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1737&r=5#p7559x7477', title: 'gegen Hannover 96 2', text: 5½ }]
+    - [{ url: '?staffel=1737&r=1#p7559x7554', title: 'gegen SC Hämelerwald', text: '4' }]
+    - 6
+    - '33'
+    - absteiger
+-
+    - '9.'
+    - { text: 'Hannover 96 2', url: '?mannschaft=7477', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1737&r=6#p7477x7569', title: 'gegen SC Stadthagen', text: 3½ }]
+    - [{ url: '?staffel=1737&r=9#p7477x7561', title: 'gegen SF Sulingen', text: '0' }]
+    - [{ url: '?staffel=1737&r=1#p7477x7562', title: 'gegen SZ Bemerode', text: '2' }]
+    - [{ url: '?staffel=1737&r=3#p7477x7533', title: 'gegen SK Anderten', text: 1½ }]
+    - [{ url: '?staffel=1737&r=8#p7477x7577', title: 'gegen SVg Calenberg', text: '2' }]
+    - [{ url: '?staffel=1737&r=4#p7477x7544', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - [{ url: '?staffel=1737&r=2#p7477x7519', title: 'gegen SK Wennigsen', text: 5½ }]
+    - [{ url: '?staffel=1737&r=5#p7477x7559', title: 'gegen SV Bückeburg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1737&r=7#p7477x7554', title: 'gegen SC Hämelerwald', text: '4' }]
+    - 4
+    - '25'
+    - absteiger
+-
+    - '10.'
+    - { text: 'SC Hämelerwald', url: '?mannschaft=7554', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1737&r=4#p7554x7569', title: 'gegen SC Stadthagen', text: '2' }]
+    - [{ url: '?staffel=1737&r=5#p7554x7561', title: 'gegen SF Sulingen', text: '0' }]
+    - [{ url: '?staffel=1737&r=6#p7554x7562', title: 'gegen SZ Bemerode', text: 1½ }]
+    - [{ url: '?staffel=1737&r=8#p7554x7533', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=1737&r=2#p7554x7577', title: 'gegen SVg Calenberg', text: 2½ }]
+    - [{ url: '?staffel=1737&r=3#p7554x7544', title: 'gegen SD Isernhagen 2', text: 1½ }]
+    - [{ url: '?staffel=1737&r=9#p7554x7519', title: 'gegen SK Wennigsen', text: '2' }]
+    - [{ url: '?staffel=1737&r=1#p7554x7559', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=1737&r=7#p7554x7477', title: 'gegen Hannover 96 2', text: '4' }]
+    - xxx
+    - 2
+    - 19½
+    - absteiger

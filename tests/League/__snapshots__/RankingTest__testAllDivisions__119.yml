@@ -1,0 +1,233 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'PSC Hannover', url: '?mannschaft=1629', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=532&r=6#p1629x1646', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=532&r=1#p1629x1586', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=532&r=6#p1629x1640', title: 'gegen Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=532&r=3#p1629x1599', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=532&r=2#p1629x1610', title: 'gegen Freib. Wedemark', text: '4' }]
+    - [{ url: '?staffel=532&r=4#p1629x1557', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=532&r=4#p1629x1677', title: 'gegen Schachakademie', text: '3' }]
+    - [{ url: '?staffel=532&r=3#p1629x1595', title: 'gegen Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=532&r=5#p1629x1676', title: 'gegen SF Sulingen', text: '4' }]
+    - [{ url: '?staffel=532&r=5#p1629x1767', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=532&r=2#p1629x1534', title: 'gegen SF Hannover', text: '4' }]
+    - 21
+    - '38'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte', url: '?mannschaft=1646', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=532&r=6#p1646x1629', title: 'gegen PSC Hannover', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=532&r=6#p1646x1586', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=532&r=1#p1646x1640', title: 'gegen Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=532&r=4#p1646x1599', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=532&r=5#p1646x1610', title: 'gegen Freib. Wedemark', text: '4' }]
+    - [{ url: '?staffel=532&r=2#p1646x1557', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=532&r=2#p1646x1677', title: 'gegen Schachakademie', text: 3½ }]
+    - [{ url: '?staffel=532&r=4#p1646x1595', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=532&r=3#p1646x1676', title: 'gegen SF Sulingen', text: '4' }]
+    - [{ url: '?staffel=532&r=3#p1646x1767', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=532&r=5#p1646x1534', title: 'gegen SF Hannover', text: '4' }]
+    - 18
+    - '36'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=1586', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=532&r=1#p1586x1629', title: 'gegen PSC Hannover', text: '2' }]
+    - [{ url: '?staffel=532&r=6#p1586x1646', title: 'gegen SK Lehrte', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=532&r=6#p1586x1640', title: 'gegen Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=532&r=3#p1586x1599', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=532&r=2#p1586x1610', title: 'gegen Freib. Wedemark', text: '3' }]
+    - [{ url: '?staffel=532&r=4#p1586x1557', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=532&r=4#p1586x1677', title: 'gegen Schachakademie', text: '3' }]
+    - [{ url: '?staffel=532&r=3#p1586x1595', title: 'gegen Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=532&r=5#p1586x1676', title: 'gegen SF Sulingen', text: '4' }]
+    - [{ url: '?staffel=532&r=5#p1586x1767', title: 'gegen HSK Lister Turm', text: 3½ }]
+    - [{ url: '?staffel=532&r=2#p1586x1534', title: 'gegen SF Hannover', text: '3' }]
+    - 18
+    - 29½
+    - ''
+-
+    - '4.'
+    - { text: Uetze-Hänigsen, url: '?mannschaft=1640', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=532&r=6#p1640x1629', title: 'gegen PSC Hannover', text: '1' }]
+    - [{ url: '?staffel=532&r=1#p1640x1646', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=532&r=6#p1640x1586', title: 'gegen SK Ricklingen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=532&r=4#p1640x1599', title: 'gegen SV Bückeburg', text: '2' }]
+    - [{ url: '?staffel=532&r=5#p1640x1610', title: 'gegen Freib. Wedemark', text: 3½ }]
+    - [{ url: '?staffel=532&r=2#p1640x1557', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=532&r=2#p1640x1677', title: 'gegen Schachakademie', text: '3' }]
+    - [{ url: '?staffel=532&r=4#p1640x1595', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=532&r=3#p1640x1676', title: 'gegen SF Sulingen', text: '4' }]
+    - [{ url: '?staffel=532&r=3#p1640x1767', title: 'gegen HSK Lister Turm', text: 3½ }]
+    - [{ url: '?staffel=532&r=5#p1640x1534', title: 'gegen SF Hannover', text: '4' }]
+    - 15
+    - 29½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=1599', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=532&r=3#p1599x1629', title: 'gegen PSC Hannover', text: '0' }]
+    - [{ url: '?staffel=532&r=4#p1599x1646', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=532&r=3#p1599x1586', title: 'gegen SK Ricklingen', text: '4' }]
+    - [{ url: '?staffel=532&r=4#p1599x1640', title: 'gegen Uetze-Hänigsen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=532&r=6#p1599x1610', title: 'gegen Freib. Wedemark', text: '1' }]
+    - [{ url: '?staffel=532&r=5#p1599x1557', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=532&r=5#p1599x1677', title: 'gegen Schachakademie', text: '1' }]
+    - [{ url: '?staffel=532&r=1#p1599x1595', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=532&r=2#p1599x1676', title: 'gegen SF Sulingen', text: '4' }]
+    - [{ url: '?staffel=532&r=2#p1599x1767', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=532&r=6#p1599x1534', title: 'gegen SF Hannover', text: '4' }]
+    - 13
+    - 27½
+    - ''
+-
+    - '6.'
+    - { text: 'Freib. Wedemark', url: '?mannschaft=1610', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=532&r=2#p1610x1629', title: 'gegen PSC Hannover', text: '0' }]
+    - [{ url: '?staffel=532&r=5#p1610x1646', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=532&r=2#p1610x1586', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=532&r=5#p1610x1640', title: 'gegen Uetze-Hänigsen', text: ½ }]
+    - [{ url: '?staffel=532&r=6#p1610x1599', title: 'gegen SV Bückeburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=532&r=3#p1610x1557', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=532&r=3#p1610x1677', title: 'gegen Schachakademie', text: 3½ }]
+    - [{ url: '?staffel=532&r=6#p1610x1595', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=532&r=4#p1610x1676', title: 'gegen SF Sulingen', text: '3' }]
+    - [{ url: '?staffel=532&r=4#p1610x1767', title: 'gegen HSK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=532&r=1#p1610x1534', title: 'gegen SF Hannover', text: '0' }]
+    - 12
+    - 19½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Laatzen', url: '?mannschaft=1557', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=532&r=4#p1557x1629', title: 'gegen PSC Hannover', text: ½ }]
+    - [{ url: '?staffel=532&r=2#p1557x1646', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=532&r=4#p1557x1586', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=532&r=2#p1557x1640', title: 'gegen Uetze-Hänigsen', text: 1½ }]
+    - [{ url: '?staffel=532&r=5#p1557x1599', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=532&r=3#p1557x1610', title: 'gegen Freib. Wedemark', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=532&r=1#p1557x1677', title: 'gegen Schachakademie', text: '3' }]
+    - [{ url: '?staffel=532&r=5#p1557x1595', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=532&r=6#p1557x1676', title: 'gegen SF Sulingen', text: 3½ }]
+    - [{ url: '?staffel=532&r=6#p1557x1767', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=532&r=3#p1557x1534', title: 'gegen SF Hannover', text: '3' }]
+    - 10
+    - '22'
+    - ''
+-
+    - '8.'
+    - { text: Schachakademie, url: '?mannschaft=1677', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=532&r=4#p1677x1629', title: 'gegen PSC Hannover', text: '1' }]
+    - [{ url: '?staffel=532&r=2#p1677x1646', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=532&r=4#p1677x1586', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=532&r=2#p1677x1640', title: 'gegen Uetze-Hänigsen', text: '1' }]
+    - [{ url: '?staffel=532&r=5#p1677x1599', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=532&r=3#p1677x1610', title: 'gegen Freib. Wedemark', text: ½ }]
+    - [{ url: '?staffel=532&r=1#p1677x1557', title: 'gegen SV Laatzen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=532&r=5#p1677x1595', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=532&r=6#p1677x1676', title: 'gegen SF Sulingen', text: '3' }]
+    - [{ url: '?staffel=532&r=6#p1677x1767', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=532&r=3#p1677x1534', title: 'gegen SF Hannover', text: '3' }]
+    - 10
+    - '21'
+    - ''
+-
+    - '9.'
+    - { text: Barsinghausen, url: '?mannschaft=1595', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=532&r=3#p1595x1629', title: 'gegen PSC Hannover', text: ½ }]
+    - [{ url: '?staffel=532&r=4#p1595x1646', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=532&r=3#p1595x1586', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=532&r=4#p1595x1640', title: 'gegen Uetze-Hänigsen', text: '0' }]
+    - [{ url: '?staffel=532&r=1#p1595x1599', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=532&r=6#p1595x1610', title: 'gegen Freib. Wedemark', text: '1' }]
+    - [{ url: '?staffel=532&r=5#p1595x1557', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=532&r=5#p1595x1677', title: 'gegen Schachakademie', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=532&r=2#p1595x1676', title: 'gegen SF Sulingen', text: '3' }]
+    - [{ url: '?staffel=532&r=2#p1595x1767', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=532&r=6#p1595x1534', title: 'gegen SF Hannover', text: '4' }]
+    - 7
+    - 16½
+    - ''
+-
+    - '10.'
+    - { text: 'SF Sulingen', url: '?mannschaft=1676', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=532&r=5#p1676x1629', title: 'gegen PSC Hannover', text: '0' }]
+    - [{ url: '?staffel=532&r=3#p1676x1646', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=532&r=5#p1676x1586', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=532&r=3#p1676x1640', title: 'gegen Uetze-Hänigsen', text: '0' }]
+    - [{ url: '?staffel=532&r=2#p1676x1599', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=532&r=4#p1676x1610', title: 'gegen Freib. Wedemark', text: '1' }]
+    - [{ url: '?staffel=532&r=6#p1676x1557', title: 'gegen SV Laatzen', text: ½ }]
+    - [{ url: '?staffel=532&r=6#p1676x1677', title: 'gegen Schachakademie', text: '1' }]
+    - [{ url: '?staffel=532&r=2#p1676x1595', title: 'gegen Barsinghausen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=532&r=1#p1676x1767', title: 'gegen HSK Lister Turm', text: '2' }]
+    - [{ url: '?staffel=532&r=4#p1676x1534', title: 'gegen SF Hannover', text: '4' }]
+    - 3
+    - 9½
+    - ''
+-
+    - '11.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=1767', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=532&r=5#p1767x1629', title: 'gegen PSC Hannover', text: '0' }]
+    - [{ url: '?staffel=532&r=3#p1767x1646', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=532&r=5#p1767x1586', title: 'gegen SK Ricklingen', text: ½ }]
+    - [{ url: '?staffel=532&r=3#p1767x1640', title: 'gegen Uetze-Hänigsen', text: ½ }]
+    - [{ url: '?staffel=532&r=2#p1767x1599', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=532&r=4#p1767x1610', title: 'gegen Freib. Wedemark', text: '1' }]
+    - [{ url: '?staffel=532&r=6#p1767x1557', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=532&r=6#p1767x1677', title: 'gegen Schachakademie', text: '0' }]
+    - [{ url: '?staffel=532&r=2#p1767x1595', title: 'gegen Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=532&r=1#p1767x1676', title: 'gegen SF Sulingen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=532&r=4#p1767x1534', title: 'gegen SF Hannover', text: '4' }]
+    - 3
+    - '8'
+    - ''
+-
+    - '12.'
+    - { text: 'SF Hannover', url: '?mannschaft=1534', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=532&r=2#p1534x1629', title: 'gegen PSC Hannover', text: '0' }]
+    - [{ url: '?staffel=532&r=5#p1534x1646', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=532&r=2#p1534x1586', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=532&r=5#p1534x1640', title: 'gegen Uetze-Hänigsen', text: '0' }]
+    - [{ url: '?staffel=532&r=6#p1534x1599', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=532&r=1#p1534x1610', title: 'gegen Freib. Wedemark', text: '0' }]
+    - [{ url: '?staffel=532&r=3#p1534x1557', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=532&r=3#p1534x1677', title: 'gegen Schachakademie', text: '0' }]
+    - [{ url: '?staffel=532&r=6#p1534x1595', title: 'gegen Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=532&r=4#p1534x1676', title: 'gegen SF Sulingen', text: '0' }]
+    - [{ url: '?staffel=532&r=4#p1534x1767', title: 'gegen HSK Lister Turm', text: '0' }]
+    - xxx
+    - 0
+    - '1'
+    - ''

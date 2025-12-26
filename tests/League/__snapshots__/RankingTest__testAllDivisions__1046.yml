@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Doppelbauer Kiel', url: '?mannschaft=8612', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1897&r=1#p8612x8614', title: 'gegen SF Wilstermarsch', text: 4½ }]
+    - [{ url: '?staffel=1897&r=3#p8612x8615', title: 'gegen SVgg Blankenese', text: '5' }]
+    - [{ url: '?staffel=1897&r=2#p8612x8568', title: 'gegen Johanneum Eppendorf', text: 4½ }]
+    - {  }
+    - {  }
+    - 6
+    - '14'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamburger SK', url: '?mannschaft=8532', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1897&r=2#p8532x8610', title: 'gegen Lübecker SV', text: '2' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1897&r=3#p8532x8568', title: 'gegen Johanneum Eppendorf', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1897&r=1#p8532x8613', title: 'gegen SK Weisse Dame HH', text: '6' }]
+    - 4
+    - 12½
+    - ''
+-
+    - '3.'
+    - { text: 'Lübecker SV', url: '?mannschaft=8610', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1897&r=2#p8610x8532', title: 'gegen Hamburger SK', text: '4' }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1897&r=1#p8610x8568', title: 'gegen Johanneum Eppendorf', text: 2½ }]
+    - [{ url: '?staffel=1897&r=3#p8610x8611', title: 'gegen SC Agon Neumünster', text: 5½ }]
+    - {  }
+    - 4
+    - '12'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Wilstermarsch', url: '?mannschaft=8614', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1897&r=1#p8614x8612', title: 'gegen SK Doppelbauer Kiel', text: 1½ }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1897&r=2#p8614x8611', title: 'gegen SC Agon Neumünster', text: 4½ }]
+    - [{ url: '?staffel=1897&r=3#p8614x8613', title: 'gegen SK Weisse Dame HH', text: '4' }]
+    - 4
+    - '10'
+    - ''
+-
+    - '5.'
+    - { text: 'SVgg Blankenese', url: '?mannschaft=8615', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1897&r=3#p8615x8612', title: 'gegen SK Doppelbauer Kiel', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1897&r=1#p8615x8611', title: 'gegen SC Agon Neumünster', text: 2½ }]
+    - [{ url: '?staffel=1897&r=2#p8615x8613', title: 'gegen SK Weisse Dame HH', text: '4' }]
+    - 2
+    - 7½
+    - ''
+-
+    - '6.'
+    - { text: 'Johanneum Eppendorf', url: '?mannschaft=8568', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1897&r=2#p8568x8612', title: 'gegen SK Doppelbauer Kiel', text: 1½ }]
+    - [{ url: '?staffel=1897&r=3#p8568x8532', title: 'gegen Hamburger SK', text: 1½ }]
+    - [{ url: '?staffel=1897&r=1#p8568x8610', title: 'gegen Lübecker SV', text: 3½ }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - 6½
+    - absteigerRelegation
+-
+    - '7.'
+    - { text: 'SC Agon Neumünster', url: '?mannschaft=8611', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1897&r=3#p8611x8610', title: 'gegen Lübecker SV', text: ½ }]
+    - [{ url: '?staffel=1897&r=2#p8611x8614', title: 'gegen SF Wilstermarsch', text: 1½ }]
+    - [{ url: '?staffel=1897&r=1#p8611x8615', title: 'gegen SVgg Blankenese', text: 3½ }]
+    - {  }
+    - xxx
+    - {  }
+    - 2
+    - 5½
+    - absteiger
+-
+    - '8.'
+    - { text: 'SK Weisse Dame HH', url: '?mannschaft=8613', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1897&r=1#p8613x8532', title: 'gegen Hamburger SK', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1897&r=3#p8613x8614', title: 'gegen SF Wilstermarsch', text: '2' }]
+    - [{ url: '?staffel=1897&r=2#p8613x8615', title: 'gegen SVgg Blankenese', text: '2' }]
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '4'
+    - absteiger

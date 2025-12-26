@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bad Essen', url: '?mannschaft=7977', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1848&r=2#p7977x7973', title: 'gegen SF Spelle', text: 3½ }]
+    - [{ url: '?staffel=1848&r=3#p7977x7979', title: 'gegen SV Osnabrück v. 1919 2', text: '4' }]
+    - [{ url: '?staffel=1848&r=4#p7977x7975', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=1848&r=2#p7977x7974', title: 'gegen SF Spelle 2', text: '4' }]
+    - [{ url: '?staffel=1848&r=3#p7977x7980', title: 'gegen SV Osnabrück v. 1919 3', text: '4' }]
+    - [{ url: '?staffel=1848&r=1#p7977x7978', title: 'gegen SV Bad Essen 2', text: '4' }]
+    - [{ url: '?staffel=1848&r=4#p7977x7976', title: 'gegen SV Hellern 2', text: '4' }]
+    - 14
+    - 27½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SF Spelle', url: '?mannschaft=7973', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1848&r=2#p7973x7977', title: 'gegen SV Bad Essen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1848&r=4#p7973x7979', title: 'gegen SV Osnabrück v. 1919 2', text: 2½ }]
+    - [{ url: '?staffel=1848&r=3#p7973x7975', title: 'gegen SV Hellern', text: 2½ }]
+    - [{ url: '?staffel=1848&r=1#p7973x7974', title: 'gegen SF Spelle 2', text: '4' }]
+    - [{ url: '?staffel=1848&r=4#p7973x7980', title: 'gegen SV Osnabrück v. 1919 3', text: 3½ }]
+    - [{ url: '?staffel=1848&r=2#p7973x7978', title: 'gegen SV Bad Essen 2', text: '4' }]
+    - [{ url: '?staffel=1848&r=3#p7973x7976', title: 'gegen SV Hellern 2', text: 3½ }]
+    - 12
+    - 20½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Osnabrück v. 1919 2', url: '?mannschaft=7979', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1848&r=3#p7979x7977', title: 'gegen SV Bad Essen', text: '0' }]
+    - [{ url: '?staffel=1848&r=4#p7979x7973', title: 'gegen SF Spelle', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1848&r=2#p7979x7975', title: 'gegen SV Hellern', text: '3' }]
+    - [{ url: '?staffel=1848&r=4#p7979x7974', title: 'gegen SF Spelle 2', text: '4' }]
+    - [{ url: '?staffel=1848&r=1#p7979x7980', title: 'gegen SV Osnabrück v. 1919 3', text: 1½ }]
+    - [{ url: '?staffel=1848&r=3#p7979x7978', title: 'gegen SV Bad Essen 2', text: '3' }]
+    - [{ url: '?staffel=1848&r=2#p7979x7976', title: 'gegen SV Hellern 2', text: 3½ }]
+    - 9
+    - 16½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Hellern', url: '?mannschaft=7975', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1848&r=4#p7975x7977', title: 'gegen SV Bad Essen', text: '0' }]
+    - [{ url: '?staffel=1848&r=3#p7975x7973', title: 'gegen SF Spelle', text: 1½ }]
+    - [{ url: '?staffel=1848&r=2#p7975x7979', title: 'gegen SV Osnabrück v. 1919 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1848&r=3#p7975x7974', title: 'gegen SF Spelle 2', text: '3' }]
+    - [{ url: '?staffel=1848&r=2#p7975x7980', title: 'gegen SV Osnabrück v. 1919 3', text: '3' }]
+    - [{ url: '?staffel=1848&r=4#p7975x7978', title: 'gegen SV Bad Essen 2', text: '0' }]
+    - [{ url: '?staffel=1848&r=1#p7975x7976', title: 'gegen SV Hellern 2', text: '2' }]
+    - 6
+    - 10½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=7974', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1848&r=2#p7974x7977', title: 'gegen SV Bad Essen', text: '0' }]
+    - [{ url: '?staffel=1848&r=1#p7974x7973', title: 'gegen SF Spelle', text: '0' }]
+    - [{ url: '?staffel=1848&r=4#p7974x7979', title: 'gegen SV Osnabrück v. 1919 2', text: '0' }]
+    - [{ url: '?staffel=1848&r=3#p7974x7975', title: 'gegen SV Hellern', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1848&r=4#p7974x7980', title: 'gegen SV Osnabrück v. 1919 3', text: '2' }]
+    - [{ url: '?staffel=1848&r=2#p7974x7978', title: 'gegen SV Bad Essen 2', text: '4' }]
+    - [{ url: '?staffel=1848&r=3#p7974x7976', title: 'gegen SV Hellern 2', text: 3½ }]
+    - 5
+    - 10½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Osnabrück v. 1919 3', url: '?mannschaft=7980', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1848&r=3#p7980x7977', title: 'gegen SV Bad Essen', text: '0' }]
+    - [{ url: '?staffel=1848&r=4#p7980x7973', title: 'gegen SF Spelle', text: ½ }]
+    - [{ url: '?staffel=1848&r=1#p7980x7979', title: 'gegen SV Osnabrück v. 1919 2', text: 1½ }]
+    - [{ url: '?staffel=1848&r=2#p7980x7975', title: 'gegen SV Hellern', text: '1' }]
+    - [{ url: '?staffel=1848&r=4#p7980x7974', title: 'gegen SF Spelle 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1848&r=3#p7980x7978', title: 'gegen SV Bad Essen 2', text: '2' }]
+    - [{ url: '?staffel=1848&r=2#p7980x7976', title: 'gegen SV Hellern 2', text: '3' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Bad Essen 2', url: '?mannschaft=7978', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1848&r=1#p7978x7977', title: 'gegen SV Bad Essen', text: '0' }]
+    - [{ url: '?staffel=1848&r=2#p7978x7973', title: 'gegen SF Spelle', text: '0' }]
+    - [{ url: '?staffel=1848&r=3#p7978x7979', title: 'gegen SV Osnabrück v. 1919 2', text: '1' }]
+    - [{ url: '?staffel=1848&r=4#p7978x7975', title: 'gegen SV Hellern', text: '0' }]
+    - [{ url: '?staffel=1848&r=2#p7978x7974', title: 'gegen SF Spelle 2', text: '0' }]
+    - [{ url: '?staffel=1848&r=3#p7978x7980', title: 'gegen SV Osnabrück v. 1919 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1848&r=4#p7978x7976', title: 'gegen SV Hellern 2', text: '4' }]
+    - 3
+    - '7'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Hellern 2', url: '?mannschaft=7976', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1848&r=4#p7976x7977', title: 'gegen SV Bad Essen', text: '0' }]
+    - [{ url: '?staffel=1848&r=3#p7976x7973', title: 'gegen SF Spelle', text: ½ }]
+    - [{ url: '?staffel=1848&r=2#p7976x7979', title: 'gegen SV Osnabrück v. 1919 2', text: ½ }]
+    - [{ url: '?staffel=1848&r=1#p7976x7975', title: 'gegen SV Hellern', text: '1' }]
+    - [{ url: '?staffel=1848&r=3#p7976x7974', title: 'gegen SF Spelle 2', text: ½ }]
+    - [{ url: '?staffel=1848&r=2#p7976x7980', title: 'gegen SV Osnabrück v. 1919 3', text: '1' }]
+    - [{ url: '?staffel=1848&r=4#p7976x7978', title: 'gegen SV Bad Essen 2', text: '0' }]
+    - xxx
+    - 0
+    - 3½
+    - ''

@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Gaste-Hasbergen 2', url: '?mannschaft=902', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=453&r=1#p902x904', title: 'gegen SG Oesede-Gmht. 4', text: 4½ }]
+    - [{ url: '?staffel=453&r=8#p902x897', title: 'gegen TSV Osnabrück 2', text: '4' }]
+    - [{ url: '?staffel=453&r=9#p902x898', title: 'gegen SV Osnabrück 5', text: '3' }]
+    - [{ url: '?staffel=453&r=4#p902x901', title: 'gegen Hagener SV 5', text: '4' }]
+    - [{ url: '?staffel=453&r=2#p902x899', title: 'gegen TSV Riemsloh 2', text: 2½ }]
+    - [{ url: '?staffel=453&r=6#p902x903', title: 'gegen Ankum/Bersenbrü 2', text: '5' }]
+    - [{ url: '?staffel=453&r=7#p902x896', title: 'gegen Hagener SV 6', text: '5' }]
+    - [{ url: '?staffel=453&r=3#p902x900', title: 'gegen SC Fürstenau 3', text: '6' }]
+    - 13
+    - '34'
+    - ''
+-
+    - '2.'
+    - { text: 'SG Oesede-Gmht. 4', url: '?mannschaft=904', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=453&r=1#p904x902', title: 'gegen Gaste-Hasbergen 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=453&r=2#p904x897', title: 'gegen TSV Osnabrück 2', text: '3' }]
+    - [{ url: '?staffel=453&r=3#p904x898', title: 'gegen SV Osnabrück 5', text: '4' }]
+    - [{ url: '?staffel=453&r=6#p904x901', title: 'gegen Hagener SV 5', text: '4' }]
+    - [{ url: '?staffel=453&r=4#p904x899', title: 'gegen TSV Riemsloh 2', text: '4' }]
+    - [{ url: '?staffel=453&r=7#p904x903', title: 'gegen Ankum/Bersenbrü 2', text: '4' }]
+    - [{ url: '?staffel=453&r=9#p904x896', title: 'gegen Hagener SV 6', text: '6' }]
+    - [{ url: '?staffel=453&r=5#p904x900', title: 'gegen SC Fürstenau 3', text: '6' }]
+    - 13
+    - 32½
+    - ''
+-
+    - '3.'
+    - { text: 'TSV Osnabrück 2', url: '?mannschaft=897', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=453&r=8#p897x902', title: 'gegen Gaste-Hasbergen 2', text: '2' }]
+    - [{ url: '?staffel=453&r=2#p897x904', title: 'gegen SG Oesede-Gmht. 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=453&r=5#p897x898', title: 'gegen SV Osnabrück 5', text: '5' }]
+    - [{ url: '?staffel=453&r=7#p897x901', title: 'gegen Hagener SV 5', text: '3' }]
+    - [{ url: '?staffel=453&r=6#p897x899', title: 'gegen TSV Riemsloh 2', text: '5' }]
+    - [{ url: '?staffel=453&r=9#p897x903', title: 'gegen Ankum/Bersenbrü 2', text: '6' }]
+    - [{ url: '?staffel=453&r=3#p897x896', title: 'gegen Hagener SV 6', text: 4½ }]
+    - [{ url: '?staffel=453&r=1#p897x900', title: 'gegen SC Fürstenau 3', text: '6' }]
+    - 12
+    - 34½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück 5', url: '?mannschaft=898', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=453&r=9#p898x902', title: 'gegen Gaste-Hasbergen 2', text: '3' }]
+    - [{ url: '?staffel=453&r=3#p898x904', title: 'gegen SG Oesede-Gmht. 4', text: '2' }]
+    - [{ url: '?staffel=453&r=5#p898x897', title: 'gegen TSV Osnabrück 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=453&r=8#p898x901', title: 'gegen Hagener SV 5', text: 4½ }]
+    - [{ url: '?staffel=453&r=1#p898x899', title: 'gegen TSV Riemsloh 2', text: '2' }]
+    - [{ url: '?staffel=453&r=2#p898x903', title: 'gegen Ankum/Bersenbrü 2', text: '5' }]
+    - [{ url: '?staffel=453&r=4#p898x896', title: 'gegen Hagener SV 6', text: '5' }]
+    - [{ url: '?staffel=453&r=7#p898x900', title: 'gegen SC Fürstenau 3', text: '6' }]
+    - 9
+    - 28½
+    - ''
+-
+    - '5.'
+    - { text: 'Hagener SV 5', url: '?mannschaft=901', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=453&r=4#p901x902', title: 'gegen Gaste-Hasbergen 2', text: '2' }]
+    - [{ url: '?staffel=453&r=6#p901x904', title: 'gegen SG Oesede-Gmht. 4', text: '2' }]
+    - [{ url: '?staffel=453&r=7#p901x897', title: 'gegen TSV Osnabrück 2', text: '3' }]
+    - [{ url: '?staffel=453&r=8#p901x898', title: 'gegen SV Osnabrück 5', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=453&r=9#p901x899', title: 'gegen TSV Riemsloh 2', text: '6' }]
+    - [{ url: '?staffel=453&r=5#p901x903', title: 'gegen Ankum/Bersenbrü 2', text: 3½ }]
+    - [{ url: '?staffel=453&r=1#p901x896', title: 'gegen Hagener SV 6', text: '4' }]
+    - [{ url: '?staffel=453&r=2#p901x900', title: 'gegen SC Fürstenau 3', text: '6' }]
+    - 9
+    - '28'
+    - ''
+-
+    - '6.'
+    - { text: 'TSV Riemsloh 2', url: '?mannschaft=899', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=453&r=2#p899x902', title: 'gegen Gaste-Hasbergen 2', text: 3½ }]
+    - [{ url: '?staffel=453&r=4#p899x904', title: 'gegen SG Oesede-Gmht. 4', text: '2' }]
+    - [{ url: '?staffel=453&r=6#p899x897', title: 'gegen TSV Osnabrück 2', text: '1' }]
+    - [{ url: '?staffel=453&r=1#p899x898', title: 'gegen SV Osnabrück 5', text: '4' }]
+    - [{ url: '?staffel=453&r=9#p899x901', title: 'gegen Hagener SV 5', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=453&r=3#p899x903', title: 'gegen Ankum/Bersenbrü 2', text: 1½ }]
+    - [{ url: '?staffel=453&r=5#p899x896', title: 'gegen Hagener SV 6', text: 3½ }]
+    - [{ url: '?staffel=453&r=8#p899x900', title: 'gegen SC Fürstenau 3', text: '6' }]
+    - 8
+    - 21½
+    - ''
+-
+    - '7.'
+    - { text: 'Ankum/Bersenbrü 2', url: '?mannschaft=903', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=453&r=6#p903x902', title: 'gegen Gaste-Hasbergen 2', text: '1' }]
+    - [{ url: '?staffel=453&r=7#p903x904', title: 'gegen SG Oesede-Gmht. 4', text: '2' }]
+    - [{ url: '?staffel=453&r=9#p903x897', title: 'gegen TSV Osnabrück 2', text: '0' }]
+    - [{ url: '?staffel=453&r=2#p903x898', title: 'gegen SV Osnabrück 5', text: '1' }]
+    - [{ url: '?staffel=453&r=5#p903x901', title: 'gegen Hagener SV 5', text: 1½ }]
+    - [{ url: '?staffel=453&r=3#p903x899', title: 'gegen TSV Riemsloh 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=453&r=8#p903x896', title: 'gegen Hagener SV 6', text: '2' }]
+    - [{ url: '?staffel=453&r=4#p903x900', title: 'gegen SC Fürstenau 3', text: '6' }]
+    - 5
+    - '18'
+    - ''
+-
+    - '8.'
+    - { text: 'Hagener SV 6', url: '?mannschaft=896', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=453&r=7#p896x902', title: 'gegen Gaste-Hasbergen 2', text: '1' }]
+    - [{ url: '?staffel=453&r=9#p896x904', title: 'gegen SG Oesede-Gmht. 4', text: '0' }]
+    - [{ url: '?staffel=453&r=3#p896x897', title: 'gegen TSV Osnabrück 2', text: 1½ }]
+    - [{ url: '?staffel=453&r=4#p896x898', title: 'gegen SV Osnabrück 5', text: '1' }]
+    - [{ url: '?staffel=453&r=1#p896x901', title: 'gegen Hagener SV 5', text: '2' }]
+    - [{ url: '?staffel=453&r=5#p896x899', title: 'gegen TSV Riemsloh 2', text: 2½ }]
+    - [{ url: '?staffel=453&r=8#p896x903', title: 'gegen Ankum/Bersenbrü 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=453&r=6#p896x900', title: 'gegen SC Fürstenau 3', text: '6' }]
+    - 3
+    - '16'
+    - ''
+-
+    - '9.'
+    - { text: 'SC Fürstenau 3', url: '?mannschaft=900', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=453&r=3#p900x902', title: 'gegen Gaste-Hasbergen 2', text: '0' }]
+    - [{ url: '?staffel=453&r=5#p900x904', title: 'gegen SG Oesede-Gmht. 4', text: '0' }]
+    - [{ url: '?staffel=453&r=1#p900x897', title: 'gegen TSV Osnabrück 2', text: '0' }]
+    - [{ url: '?staffel=453&r=7#p900x898', title: 'gegen SV Osnabrück 5', text: '0' }]
+    - [{ url: '?staffel=453&r=2#p900x901', title: 'gegen Hagener SV 5', text: '0' }]
+    - [{ url: '?staffel=453&r=8#p900x899', title: 'gegen TSV Riemsloh 2', text: '0' }]
+    - [{ url: '?staffel=453&r=4#p900x903', title: 'gegen Ankum/Bersenbrü 2', text: '0' }]
+    - [{ url: '?staffel=453&r=6#p900x896', title: 'gegen Hagener SV 6', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

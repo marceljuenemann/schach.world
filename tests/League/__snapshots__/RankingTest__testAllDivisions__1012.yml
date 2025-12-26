@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Cai. Wolfenbüttel', url: '?mannschaft=8336', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1862&r=2#p8336x8353', title: 'gegen SC BS Gliesmarode 2', text: 4½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=1#p8336x8198', title: 'gegen Hildesheimer SV 2', text: 7½ }]
+    - [{ url: '?staffel=1862&r=3#p8336x8357', title: 'gegen Hamelner SV 2', text: 4½ }]
+    - {  }
+    - {  }
+    - {  }
+    - 6
+    - 16½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Bad Salzdetfurth', url: '?mannschaft=8332', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=3#p8332x8358', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '6' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=2#p8332x8352', title: 'gegen Union Plesse Gö', text: '5' }]
+    - [{ url: '?staffel=1862&r=1#p8332x8361', title: 'gegen Roch. Braunschweig', text: 3½ }]
+    - {  }
+    - 4
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'SC BS Gliesmarode 2', url: '?mannschaft=8353', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1862&r=2#p8353x8336', title: 'gegen SV Cai. Wolfenbüttel', text: 3½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1862&r=3#p8353x8265', title: 'gegen Peiner SV', text: 4½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=1#p8353x8357', title: 'gegen Hamelner SV 2', text: 5½ }]
+    - {  }
+    - {  }
+    - {  }
+    - 4
+    - 13½
+    - ''
+-
+    - '4.'
+    - { text: 'Peiner SV', url: '?mannschaft=8265', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=3#p8265x8353', title: 'gegen SC BS Gliesmarode 2', text: 3½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1862&r=2#p8265x8198', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1862&r=1#p8265x8352', title: 'gegen Union Plesse Gö', text: '5' }]
+    - {  }
+    - {  }
+    - 3
+    - 12½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Gifhorn-Wolfsburg 2', url: '?mannschaft=8358', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1862&r=3#p8358x8332', title: 'gegen SC Bad Salzdetfurth', text: '2' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=2#p8358x8361', title: 'gegen Roch. Braunschweig', text: '5' }]
+    - [{ url: '?staffel=1862&r=1#p8358x8356', title: 'gegen SVG Salzgitter e. V.', text: '4' }]
+    - 3
+    - '11'
+    - ''
+-
+    - '6.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=8198', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1862&r=1#p8198x8336', title: 'gegen SV Cai. Wolfenbüttel', text: ½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=2#p8198x8265', title: 'gegen Peiner SV', text: '4' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=3#p8198x8356', title: 'gegen SVG Salzgitter e. V.', text: 4½ }]
+    - 3
+    - '9'
+    - ''
+-
+    - '7.'
+    - { text: 'Hamelner SV 2', url: '?mannschaft=8357', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1862&r=3#p8357x8336', title: 'gegen SV Cai. Wolfenbüttel', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1862&r=1#p8357x8353', title: 'gegen SC BS Gliesmarode 2', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=2#p8357x8356', title: 'gegen SVG Salzgitter e. V.', text: '6' }]
+    - 2
+    - '12'
+    - ''
+-
+    - '8.'
+    - { text: 'Union Plesse Gö', url: '?mannschaft=8352', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1862&r=2#p8352x8332', title: 'gegen SC Bad Salzdetfurth', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1862&r=1#p8352x8265', title: 'gegen Peiner SV', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1862&r=3#p8352x8361', title: 'gegen Roch. Braunschweig', text: '5' }]
+    - {  }
+    - 2
+    - '11'
+    - ''
+-
+    - '9.'
+    - { text: 'Roch. Braunschweig', url: '?mannschaft=8361', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1862&r=1#p8361x8332', title: 'gegen SC Bad Salzdetfurth', text: 4½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=2#p8361x8358', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '3' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=3#p8361x8352', title: 'gegen Union Plesse Gö', text: '3' }]
+    - xxx
+    - {  }
+    - 2
+    - 10½
+    - absteigerRelegation
+-
+    - '10.'
+    - { text: 'SVG Salzgitter e. V.', url: '?mannschaft=8356', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1862&r=1#p8356x8358', title: 'gegen SG Gifhorn-Wolfsburg 2', text: '4' }]
+    - [{ url: '?staffel=1862&r=3#p8356x8198', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - [{ url: '?staffel=1862&r=2#p8356x8357', title: 'gegen Hamelner SV 2', text: '2' }]
+    - {  }
+    - {  }
+    - xxx
+    - 1
+    - 9½
+    - absteiger

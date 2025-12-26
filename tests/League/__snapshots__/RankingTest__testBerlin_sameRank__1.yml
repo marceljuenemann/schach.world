@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=7930', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1814&r=1#p7930x8129', title: 'gegen SK Anderten', text: '4' }]
+    - {  }
+    - 2
+    - '4'
+    - aufsteiger
+-
+    - '1.'
+    - { text: 'SV Laatzen', url: '?mannschaft=7952', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1814&r=1#p7952x8154', title: 'gegen SK Rinteln', text: '4' }]
+    - 2
+    - '4'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=7925', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1814&r=1#p7925x8150', title: 'gegen TuS Wunstorf 2', text: '3' }]
+    - {  }
+    - {  }
+    - 2
+    - '3'
+    - ''
+-
+    - '4.'
+    - { text: 'SFB Team Spirits', url: '?mannschaft=8152', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1814&r=1#p8152x8153', title: 'gegen SFB Team Pioneers 2', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - 2
+    - 2½
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=8157', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1814&r=1#p8157x8158', title: 'gegen SD Isernhagen 2', text: '2' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 1
+    - '2'
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=8158', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1814&r=1#p8158x8157', title: 'gegen SD Isernhagen', text: '2' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 1
+    - '2'
+    - ''
+-
+    - '7.'
+    - { text: 'SFB Team Pioneers 2', url: '?mannschaft=8153', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1814&r=1#p8153x8152', title: 'gegen SFB Team Spirits', text: 1½ }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - 1½
+    - ''
+-
+    - '8.'
+    - { text: 'TuS Wunstorf 2', url: '?mannschaft=8150', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1814&r=1#p8150x7925', title: 'gegen SK Wennigsen', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '1'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Anderten', url: '?mannschaft=8129', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1814&r=1#p8129x7930', title: 'gegen SK Lehrte 4', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Rinteln', url: '?mannschaft=8154', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1814&r=1#p8154x7952', title: 'gegen SV Laatzen', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

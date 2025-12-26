@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG BraunschweigPeine', url: '?mannschaft=7612', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1757&r=1#p7612x7610', title: 'gegen SV Gifhorn', text: 2½ }]
+    - [{ url: '?staffel=1757&r=5#p7612x7605', title: 'gegen SV Osnabrück v. 1919', text: 4½ }]
+    - [{ url: '?staffel=1757&r=3#p7612x7606', title: 'gegen MTV Celle', text: '6' }]
+    - [{ url: '?staffel=1757&r=7#p7612x7611', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1757&r=2#p7612x7608', title: 'gegen Post SV Uelzen', text: '4' }]
+    - [{ url: '?staffel=1757&r=6#p7612x7604', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=1757&r=4#p7612x7607', title: 'gegen Rochade Göttingen 2', text: '6' }]
+    - 12
+    - '31'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Gifhorn', url: '?mannschaft=7610', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1757&r=1#p7610x7612', title: 'gegen SG BraunschweigPeine', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1757&r=3#p7610x7605', title: 'gegen SV Osnabrück v. 1919', text: 2½ }]
+    - [{ url: '?staffel=1757&r=6#p7610x7606', title: 'gegen MTV Celle', text: '4' }]
+    - [{ url: '?staffel=1757&r=5#p7610x7611', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=1757&r=7#p7610x7608', title: 'gegen Post SV Uelzen', text: 4½ }]
+    - [{ url: '?staffel=1757&r=4#p7610x7604', title: 'gegen SK Lehrte 2', text: 5½ }]
+    - [{ url: '?staffel=1757&r=2#p7610x7607', title: 'gegen Rochade Göttingen 2', text: 4½ }]
+    - 10
+    - '27'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Osnabrück v. 1919', url: '?mannschaft=7605', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1757&r=5#p7605x7612', title: 'gegen SG BraunschweigPeine', text: 1½ }]
+    - [{ url: '?staffel=1757&r=3#p7605x7610', title: 'gegen SV Gifhorn', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1757&r=7#p7605x7606', title: 'gegen MTV Celle', text: 3½ }]
+    - [{ url: '?staffel=1757&r=2#p7605x7611', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1757&r=4#p7605x7608', title: 'gegen Post SV Uelzen', text: 4½ }]
+    - [{ url: '?staffel=1757&r=1#p7605x7604', title: 'gegen SK Lehrte 2', text: 5½ }]
+    - [{ url: '?staffel=1757&r=6#p7605x7607', title: 'gegen Rochade Göttingen 2', text: 4½ }]
+    - 10
+    - '23'
+    - ''
+-
+    - '4.'
+    - { text: 'MTV Celle', url: '?mannschaft=7606', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1757&r=3#p7606x7612', title: 'gegen SG BraunschweigPeine', text: '0' }]
+    - [{ url: '?staffel=1757&r=6#p7606x7610', title: 'gegen SV Gifhorn', text: '2' }]
+    - [{ url: '?staffel=1757&r=7#p7606x7605', title: 'gegen SV Osnabrück v. 1919', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1757&r=4#p7606x7611', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1757&r=1#p7606x7608', title: 'gegen Post SV Uelzen', text: '3' }]
+    - [{ url: '?staffel=1757&r=2#p7606x7604', title: 'gegen SK Lehrte 2', text: 5½ }]
+    - [{ url: '?staffel=1757&r=5#p7606x7607', title: 'gegen Rochade Göttingen 2', text: '5' }]
+    - 7
+    - 21½
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=7611', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1757&r=7#p7611x7612', title: 'gegen SG BraunschweigPeine', text: 2½ }]
+    - [{ url: '?staffel=1757&r=5#p7611x7610', title: 'gegen SV Gifhorn', text: 3½ }]
+    - [{ url: '?staffel=1757&r=2#p7611x7605', title: 'gegen SV Osnabrück v. 1919', text: '6' }]
+    - [{ url: '?staffel=1757&r=4#p7611x7606', title: 'gegen MTV Celle', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1757&r=6#p7611x7608', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=1757&r=3#p7611x7604', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=1757&r=1#p7611x7607', title: 'gegen Rochade Göttingen 2', text: '0' }]
+    - 6
+    - '19'
+    - ''
+-
+    - '6.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=7608', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1757&r=2#p7608x7612', title: 'gegen SG BraunschweigPeine', text: '2' }]
+    - [{ url: '?staffel=1757&r=7#p7608x7610', title: 'gegen SV Gifhorn', text: 1½ }]
+    - [{ url: '?staffel=1757&r=4#p7608x7605', title: 'gegen SV Osnabrück v. 1919', text: 1½ }]
+    - [{ url: '?staffel=1757&r=1#p7608x7606', title: 'gegen MTV Celle', text: '3' }]
+    - [{ url: '?staffel=1757&r=6#p7608x7611', title: 'gegen SD Isernhagen', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1757&r=5#p7608x7604', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1757&r=3#p7608x7607', title: 'gegen Rochade Göttingen 2', text: '4' }]
+    - 5
+    - '20'
+    - absteigerRelegation
+-
+    - '7.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=7604', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1757&r=6#p7604x7612', title: 'gegen SG BraunschweigPeine', text: 1½ }]
+    - [{ url: '?staffel=1757&r=4#p7604x7610', title: 'gegen SV Gifhorn', text: ½ }]
+    - [{ url: '?staffel=1757&r=1#p7604x7605', title: 'gegen SV Osnabrück v. 1919', text: ½ }]
+    - [{ url: '?staffel=1757&r=2#p7604x7606', title: 'gegen MTV Celle', text: ½ }]
+    - [{ url: '?staffel=1757&r=3#p7604x7611', title: 'gegen SD Isernhagen', text: 1½ }]
+    - [{ url: '?staffel=1757&r=5#p7604x7608', title: 'gegen Post SV Uelzen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1757&r=7#p7604x7607', title: 'gegen Rochade Göttingen 2', text: '6' }]
+    - 4
+    - 14½
+    - absteigerRelegation
+-
+    - '8.'
+    - { text: 'Rochade Göttingen 2', url: '?mannschaft=7607', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1757&r=4#p7607x7612', title: 'gegen SG BraunschweigPeine', text: '0' }]
+    - [{ url: '?staffel=1757&r=2#p7607x7610', title: 'gegen SV Gifhorn', text: 1½ }]
+    - [{ url: '?staffel=1757&r=6#p7607x7605', title: 'gegen SV Osnabrück v. 1919', text: 1½ }]
+    - [{ url: '?staffel=1757&r=5#p7607x7606', title: 'gegen MTV Celle', text: '1' }]
+    - [{ url: '?staffel=1757&r=1#p7607x7611', title: 'gegen SD Isernhagen', text: '6' }]
+    - [{ url: '?staffel=1757&r=3#p7607x7608', title: 'gegen Post SV Uelzen', text: '2' }]
+    - [{ url: '?staffel=1757&r=7#p7607x7604', title: 'gegen SK Lehrte 2', text: '0' }]
+    - xxx
+    - 2
+    - '12'
+    - absteiger

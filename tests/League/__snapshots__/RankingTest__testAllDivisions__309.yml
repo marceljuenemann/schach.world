@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=3004', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=747&r=7#p3004x3011', title: 'gegen Hamelner SV', text: '3' }]
+    - [{ url: '?staffel=747&r=6#p3004x3014', title: 'gegen Hildesheimer SV', text: 3½ }]
+    - [{ url: '?staffel=747&r=5#p3004x3023', title: 'gegen C. Wolfenbüttel', text: 1½ }]
+    - [{ url: '?staffel=747&r=4#p3004x3024', title: 'gegen SVG Salzgitter', text: '4' }]
+    - [{ url: '?staffel=747&r=1#p3004x3005', title: 'gegen SK Lehrte 3', text: 3½ }]
+    - [{ url: '?staffel=747&r=3#p3004x3016', title: 'gegen Peiner SV 2', text: '4' }]
+    - [{ url: '?staffel=747&r=2#p3004x3020', title: 'gegen SVg Steinhude', text: '4' }]
+    - 12
+    - 23½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'Hamelner SV', url: '?mannschaft=3011', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=747&r=7#p3011x3004', title: 'gegen SK Lehrte 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=747&r=1#p3011x3014', title: 'gegen Hildesheimer SV', text: 2½ }]
+    - [{ url: '?staffel=747&r=3#p3011x3023', title: 'gegen C. Wolfenbüttel', text: 3½ }]
+    - [{ url: '?staffel=747&r=2#p3011x3024', title: 'gegen SVG Salzgitter', text: '4' }]
+    - [{ url: '?staffel=747&r=6#p3011x3005', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=747&r=5#p3011x3016', title: 'gegen Peiner SV 2', text: '4' }]
+    - [{ url: '?staffel=747&r=4#p3011x3020', title: 'gegen SVg Steinhude', text: '4' }]
+    - 11
+    - '21'
+    - ''
+-
+    - '3.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=3014', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=747&r=6#p3014x3004', title: 'gegen SK Lehrte 2', text: ½ }]
+    - [{ url: '?staffel=747&r=1#p3014x3011', title: 'gegen Hamelner SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=747&r=2#p3014x3023', title: 'gegen C. Wolfenbüttel', text: '3' }]
+    - [{ url: '?staffel=747&r=3#p3014x3024', title: 'gegen SVG Salzgitter', text: '2' }]
+    - [{ url: '?staffel=747&r=7#p3014x3005', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=747&r=4#p3014x3016', title: 'gegen Peiner SV 2', text: '4' }]
+    - [{ url: '?staffel=747&r=5#p3014x3020', title: 'gegen SVg Steinhude', text: '4' }]
+    - 9
+    - 17½
+    - ''
+-
+    - '4.'
+    - { text: 'C. Wolfenbüttel', url: '?mannschaft=3023', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=747&r=5#p3023x3004', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - [{ url: '?staffel=747&r=3#p3023x3011', title: 'gegen Hamelner SV', text: ½ }]
+    - [{ url: '?staffel=747&r=2#p3023x3014', title: 'gegen Hildesheimer SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=747&r=1#p3023x3024', title: 'gegen SVG Salzgitter', text: '2' }]
+    - [{ url: '?staffel=747&r=4#p3023x3005', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=747&r=6#p3023x3016', title: 'gegen Peiner SV 2', text: '4' }]
+    - [{ url: '?staffel=747&r=7#p3023x3020', title: 'gegen SVg Steinhude', text: '4' }]
+    - 9
+    - '17'
+    - ''
+-
+    - '5.'
+    - { text: 'SVG Salzgitter', url: '?mannschaft=3024', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=747&r=4#p3024x3004', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=747&r=2#p3024x3011', title: 'gegen Hamelner SV', text: '0' }]
+    - [{ url: '?staffel=747&r=3#p3024x3014', title: 'gegen Hildesheimer SV', text: '2' }]
+    - [{ url: '?staffel=747&r=1#p3024x3023', title: 'gegen C. Wolfenbüttel', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=747&r=5#p3024x3005', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=747&r=7#p3024x3016', title: 'gegen Peiner SV 2', text: '4' }]
+    - [{ url: '?staffel=747&r=6#p3024x3020', title: 'gegen SVg Steinhude', text: '4' }]
+    - 7
+    - '14'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=3005', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=747&r=1#p3005x3004', title: 'gegen SK Lehrte 2', text: ½ }]
+    - [{ url: '?staffel=747&r=6#p3005x3011', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=747&r=7#p3005x3014', title: 'gegen Hildesheimer SV', text: 1½ }]
+    - [{ url: '?staffel=747&r=4#p3005x3023', title: 'gegen C. Wolfenbüttel', text: '1' }]
+    - [{ url: '?staffel=747&r=5#p3005x3024', title: 'gegen SVG Salzgitter', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=747&r=2#p3005x3016', title: 'gegen Peiner SV 2', text: '4' }]
+    - [{ url: '?staffel=747&r=3#p3005x3020', title: 'gegen SVg Steinhude', text: '4' }]
+    - 6
+    - '15'
+    - ''
+-
+    - '7.'
+    - { text: 'Peiner SV 2', url: '?mannschaft=3016', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=747&r=3#p3016x3004', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=747&r=5#p3016x3011', title: 'gegen Hamelner SV', text: '0' }]
+    - [{ url: '?staffel=747&r=4#p3016x3014', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=747&r=6#p3016x3023', title: 'gegen C. Wolfenbüttel', text: '0' }]
+    - [{ url: '?staffel=747&r=7#p3016x3024', title: 'gegen SVG Salzgitter', text: '0' }]
+    - [{ url: '?staffel=747&r=2#p3016x3005', title: 'gegen SK Lehrte 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=747&r=1#p3016x3020', title: 'gegen SVg Steinhude', text: '4' }]
+    - 2
+    - '4'
+    - ''
+-
+    - '8.'
+    - { text: 'SVg Steinhude', url: '?mannschaft=3020', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=747&r=2#p3020x3004', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=747&r=4#p3020x3011', title: 'gegen Hamelner SV', text: '0' }]
+    - [{ url: '?staffel=747&r=5#p3020x3014', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=747&r=7#p3020x3023', title: 'gegen C. Wolfenbüttel', text: '0' }]
+    - [{ url: '?staffel=747&r=6#p3020x3024', title: 'gegen SVG Salzgitter', text: '0' }]
+    - [{ url: '?staffel=747&r=3#p3020x3005', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=747&r=1#p3020x3016', title: 'gegen Peiner SV 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

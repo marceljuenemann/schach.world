@@ -28,9 +28,9 @@ class PlayerServiceTest extends LeagueTestCase
     $player = $this->team->players[2];
     $this->dwzService->expects(self::once())
         ->method('calculate')
-        ->will($this->returnCallback(function() {
+        ->willReturnCallback(function() {
           return func_get_args();
-        }));
+        });
 
     $model = $this->service->player($this->league, $player->id);
     $this->assertMatchesSnapshot($model);
@@ -40,9 +40,9 @@ class PlayerServiceTest extends LeagueTestCase
     $player = $this->team->players[3];
     $this->dwzService->expects(self::once())
         ->method('calculate')
-        ->will($this->returnCallback(function() {
+        ->willReturnCallback(function() {
           return func_get_args();
-        }));
+        });
 
     $model = $this->service->player($this->league, $player->id);
     $this->assertMatchesSnapshot($model);

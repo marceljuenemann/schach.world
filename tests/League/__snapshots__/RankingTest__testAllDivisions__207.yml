@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Hämelerwald 2', url: '?mannschaft=2028', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=633&r=5#p2028x2050', title: 'gegen SV Gretenberg 3', text: 5½ }]
+    - [{ url: '?staffel=633&r=2#p2028x1944', title: 'gegen SG Döhren-Gleid 2', text: '5' }]
+    - [{ url: '?staffel=633&r=7#p2028x2067', title: 'gegen PSC Hannover 5', text: '8' }]
+    - [{ url: '?staffel=633&r=6#p2028x2058', title: 'gegen Schachakademie', text: '0' }]
+    - [{ url: '?staffel=633&r=8#p2028x2090', title: 'gegen HSK-Lister Turm 5', text: 6½ }]
+    - 8
+    - '25'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Gretenberg 3', url: '?mannschaft=2050', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=633&r=5#p2050x2028', title: 'gegen SC Hämelerwald 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=633&r=1#p2050x1944', title: 'gegen SG Döhren-Gleid 2', text: '5' }]
+    - [{ url: '?staffel=633&r=6#p2050x2067', title: 'gegen PSC Hannover 5', text: '8' }]
+    - [{ url: '?staffel=633&r=8#p2050x2058', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=633&r=7#p2050x2090', title: 'gegen HSK-Lister Turm 5', text: '6' }]
+    - 7
+    - 25½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Döhren-Gleid 2', url: '?mannschaft=1944', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=633&r=2#p1944x2028', title: 'gegen SC Hämelerwald 2', text: '3' }]
+    - [{ url: '?staffel=633&r=1#p1944x2050', title: 'gegen SV Gretenberg 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=633&r=8#p1944x2067', title: 'gegen PSC Hannover 5', text: 5½ }]
+    - [{ url: '?staffel=633&r=7#p1944x2058', title: 'gegen Schachakademie', text: 5½ }]
+    - [{ url: '?staffel=633&r=6#p1944x2090', title: 'gegen HSK-Lister Turm 5', text: '4' }]
+    - 6
+    - '21'
+    - ''
+-
+    - '4.'
+    - { text: 'PSC Hannover 5', url: '?mannschaft=2067', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=633&r=7#p2067x2028', title: 'gegen SC Hämelerwald 2', text: '0' }]
+    - [{ url: '?staffel=633&r=6#p2067x2050', title: 'gegen SV Gretenberg 3', text: '0' }]
+    - [{ url: '?staffel=633&r=8#p2067x1944', title: 'gegen SG Döhren-Gleid 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=633&r=2#p2067x2058', title: 'gegen Schachakademie', text: '8' }]
+    - [{ url: '?staffel=633&r=5#p2067x2090', title: 'gegen HSK-Lister Turm 5', text: 5½ }]
+    - 4
+    - '15'
+    - ''
+-
+    - '5.'
+    - { text: Schachakademie, url: '?mannschaft=2058', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=633&r=6#p2058x2028', title: 'gegen SC Hämelerwald 2', text: '8' }]
+    - [{ url: '?staffel=633&r=8#p2058x2050', title: 'gegen SV Gretenberg 3', text: '4' }]
+    - [{ url: '?staffel=633&r=7#p2058x1944', title: 'gegen SG Döhren-Gleid 2', text: 2½ }]
+    - [{ url: '?staffel=633&r=2#p2058x2067', title: 'gegen PSC Hannover 5', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=633&r=3#p2058x2090', title: 'gegen HSK-Lister Turm 5', text: 2½ }]
+    - 3
+    - '17'
+    - ''
+-
+    - '6.'
+    - { text: 'HSK-Lister Turm 5', url: '?mannschaft=2090', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=633&r=8#p2090x2028', title: 'gegen SC Hämelerwald 2', text: 1½ }]
+    - [{ url: '?staffel=633&r=7#p2090x2050', title: 'gegen SV Gretenberg 3', text: '2' }]
+    - [{ url: '?staffel=633&r=6#p2090x1944', title: 'gegen SG Döhren-Gleid 2', text: '1' }]
+    - [{ url: '?staffel=633&r=5#p2090x2067', title: 'gegen PSC Hannover 5', text: 1½ }]
+    - [{ url: '?staffel=633&r=3#p2090x2058', title: 'gegen Schachakademie', text: 5½ }]
+    - xxx
+    - 2
+    - 11½
+    - ''

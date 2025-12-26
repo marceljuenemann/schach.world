@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'PSC Hannover', url: '?mannschaft=818', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=437&r=3#p818x819', title: 'gegen SV Gifhorn', text: '3' }]
+    - [{ url: '?staffel=437&r=5#p818x812', title: 'gegen SK Ricklingen', text: '5' }]
+    - [{ url: '?staffel=437&r=6#p818x813', title: 'gegen Hamelner SV', text: '5' }]
+    - [{ url: '?staffel=437&r=2#p818x815', title: 'gegen SD Isernhagen', text: '6' }]
+    - [{ url: '?staffel=437&r=4#p818x817', title: 'gegen SK Lehrte 2', text: '6' }]
+    - [{ url: '?staffel=437&r=1#p818x814', title: 'gegen SV Bückeburg 2', text: 4½ }]
+    - [{ url: '?staffel=437&r=7#p818x816', title: 'gegen Braunschw. SF', text: '6' }]
+    - 13
+    - 35½
+    - ''
+-
+    - '2.'
+    - { text: 'SV Gifhorn', url: '?mannschaft=819', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=437&r=3#p819x818', title: 'gegen PSC Hannover', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=437&r=6#p819x812', title: 'gegen SK Ricklingen', text: '6' }]
+    - [{ url: '?staffel=437&r=1#p819x813', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=437&r=4#p819x815', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=437&r=2#p819x817', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=437&r=7#p819x814', title: 'gegen SV Bückeburg 2', text: '6' }]
+    - [{ url: '?staffel=437&r=5#p819x816', title: 'gegen Braunschw. SF', text: '6' }]
+    - 11
+    - '31'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=812', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=437&r=5#p812x818', title: 'gegen PSC Hannover', text: '1' }]
+    - [{ url: '?staffel=437&r=6#p812x819', title: 'gegen SV Gifhorn', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=437&r=4#p812x813', title: 'gegen Hamelner SV', text: '6' }]
+    - [{ url: '?staffel=437&r=7#p812x815', title: 'gegen SD Isernhagen', text: 4½ }]
+    - [{ url: '?staffel=437&r=1#p812x817', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=437&r=3#p812x814', title: 'gegen SV Bückeburg 2', text: '5' }]
+    - [{ url: '?staffel=437&r=2#p812x816', title: 'gegen Braunschw. SF', text: '6' }]
+    - 10
+    - 26½
+    - ''
+-
+    - '4.'
+    - { text: 'Hamelner SV', url: '?mannschaft=813', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=437&r=6#p813x818', title: 'gegen PSC Hannover', text: '1' }]
+    - [{ url: '?staffel=437&r=1#p813x819', title: 'gegen SV Gifhorn', text: '3' }]
+    - [{ url: '?staffel=437&r=4#p813x812', title: 'gegen SK Ricklingen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=437&r=5#p813x815', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=437&r=7#p813x817', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=437&r=2#p813x814', title: 'gegen SV Bückeburg 2', text: '5' }]
+    - [{ url: '?staffel=437&r=3#p813x816', title: 'gegen Braunschw. SF', text: '6' }]
+    - 10
+    - 22½
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=815', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=437&r=2#p815x818', title: 'gegen PSC Hannover', text: '0' }]
+    - [{ url: '?staffel=437&r=4#p815x819', title: 'gegen SV Gifhorn', text: 2½ }]
+    - [{ url: '?staffel=437&r=7#p815x812', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=437&r=5#p815x813', title: 'gegen Hamelner SV', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=437&r=3#p815x817', title: 'gegen SK Lehrte 2', text: 5½ }]
+    - [{ url: '?staffel=437&r=6#p815x814', title: 'gegen SV Bückeburg 2', text: 3½ }]
+    - [{ url: '?staffel=437&r=1#p815x816', title: 'gegen Braunschw. SF', text: '6' }]
+    - 6
+    - 21½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=817', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=437&r=4#p817x818', title: 'gegen PSC Hannover', text: '0' }]
+    - [{ url: '?staffel=437&r=2#p817x819', title: 'gegen SV Gifhorn', text: 1½ }]
+    - [{ url: '?staffel=437&r=1#p817x812', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=437&r=7#p817x813', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=437&r=3#p817x815', title: 'gegen SD Isernhagen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=437&r=5#p817x814', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=437&r=6#p817x816', title: 'gegen Braunschw. SF', text: '6' }]
+    - 4
+    - '16'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=814', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=437&r=1#p814x818', title: 'gegen PSC Hannover', text: 1½ }]
+    - [{ url: '?staffel=437&r=7#p814x819', title: 'gegen SV Gifhorn', text: '0' }]
+    - [{ url: '?staffel=437&r=3#p814x812', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=437&r=2#p814x813', title: 'gegen Hamelner SV', text: '1' }]
+    - [{ url: '?staffel=437&r=6#p814x815', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=437&r=5#p814x817', title: 'gegen SK Lehrte 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=437&r=4#p814x816', title: 'gegen Braunschw. SF', text: '6' }]
+    - 2
+    - '14'
+    - ''
+-
+    - '8.'
+    - { text: 'Braunschw. SF', url: '?mannschaft=816', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=437&r=7#p816x818', title: 'gegen PSC Hannover', text: '0' }]
+    - [{ url: '?staffel=437&r=5#p816x819', title: 'gegen SV Gifhorn', text: '0' }]
+    - [{ url: '?staffel=437&r=2#p816x812', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=437&r=3#p816x813', title: 'gegen Hamelner SV', text: '0' }]
+    - [{ url: '?staffel=437&r=1#p816x815', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=437&r=6#p816x817', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=437&r=4#p816x814', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

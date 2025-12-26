@@ -1,0 +1,233 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=7735', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1745&r=1#p7735x7736', title: 'gegen SZ Bemerode 2', text: '3' }]
+    - [{ url: '?staffel=1745&r=3#p7735x7552', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=1745&r=5#p7735x7723', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=1745&r=2#p7735x7708', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=1745&r=3#p7735x7709', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=6#p7735x7704', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=1745&r=5#p7735x7724', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=4#p7735x7541', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=1745&r=4#p7735x7550', title: 'gegen HSK Lister Turm 2', text: '3' }]
+    - [{ url: '?staffel=1745&r=2#p7735x7720', title: 'gegen Hannover 96 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=6#p7735x7705', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - 22
+    - 39½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=7736', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1745&r=1#p7736x7735', title: 'gegen SZ Bemerode', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1745&r=3#p7736x7552', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=1745&r=5#p7736x7723', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=1745&r=2#p7736x7708', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=1745&r=3#p7736x7709', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1745&r=6#p7736x7704', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=1745&r=5#p7736x7724', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=4#p7736x7541', title: 'gegen HSK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=1745&r=4#p7736x7550', title: 'gegen HSK Lister Turm 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=2#p7736x7720', title: 'gegen Hannover 96 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=6#p7736x7705', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - 19
+    - 34½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte', url: '?mannschaft=7552', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1745&r=3#p7552x7735', title: 'gegen SZ Bemerode', text: 1½ }]
+    - [{ url: '?staffel=1745&r=3#p7552x7736', title: 'gegen SZ Bemerode 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1745&r=4#p7552x7723', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=1745&r=5#p7552x7708', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=1745&r=1#p7552x7709', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1745&r=2#p7552x7704', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1745&r=4#p7552x7724', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=6#p7552x7541', title: 'gegen HSK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=1745&r=6#p7552x7550', title: 'gegen HSK Lister Turm 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=5#p7552x7720', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=1745&r=2#p7552x7705', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - 14
+    - '29'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=7723', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1745&r=5#p7723x7735', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1745&r=5#p7723x7736', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1745&r=4#p7723x7552', title: 'gegen SK Lehrte', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1745&r=6#p7723x7708', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=1745&r=4#p7723x7709', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=1745&r=3#p7723x7704', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=1745&r=1#p7723x7724', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - [{ url: '?staffel=1745&r=2#p7723x7541', title: 'gegen HSK Lister Turm', text: 2½ }]
+    - [{ url: '?staffel=1745&r=2#p7723x7550', title: 'gegen HSK Lister Turm 2', text: '3' }]
+    - [{ url: '?staffel=1745&r=6#p7723x7720', title: 'gegen Hannover 96 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=3#p7723x7705', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - 13
+    - 24½
+    - ''
+-
+    - '5.'
+    - { text: 'Hannover 96', url: '?mannschaft=7708', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1745&r=2#p7708x7735', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1745&r=2#p7708x7736', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1745&r=5#p7708x7552', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1745&r=6#p7708x7723', title: 'gegen SV Bückeburg', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1745&r=5#p7708x7709', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=1745&r=4#p7708x7704', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1745&r=6#p7708x7724', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - [{ url: '?staffel=1745&r=3#p7708x7541', title: 'gegen HSK Lister Turm', text: '2' }]
+    - [{ url: '?staffel=1745&r=3#p7708x7550', title: 'gegen HSK Lister Turm 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=1#p7708x7720', title: 'gegen Hannover 96 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=4#p7708x7705', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - 13
+    - 24½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=7709', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1745&r=3#p7709x7735', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1745&r=3#p7709x7736', title: 'gegen SZ Bemerode 2', text: '2' }]
+    - [{ url: '?staffel=1745&r=1#p7709x7552', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=1745&r=4#p7709x7723', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=1745&r=5#p7709x7708', title: 'gegen Hannover 96', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1745&r=2#p7709x7704', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1745&r=4#p7709x7724', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=1745&r=6#p7709x7541', title: 'gegen HSK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=1745&r=6#p7709x7550', title: 'gegen HSK Lister Turm 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=5#p7709x7720', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=1745&r=2#p7709x7705', title: 'gegen SD Isernhagen 2', text: '1' }]
+    - 12
+    - '23'
+    - ''
+-
+    - '7.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=7704', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1745&r=6#p7704x7735', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1745&r=6#p7704x7736', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1745&r=2#p7704x7552', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=1745&r=3#p7704x7723', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=1745&r=4#p7704x7708', title: 'gegen Hannover 96', text: ½ }]
+    - [{ url: '?staffel=1745&r=2#p7704x7709', title: 'gegen SK Lehrte 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1745&r=3#p7704x7724', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - [{ url: '?staffel=1745&r=5#p7704x7541', title: 'gegen HSK Lister Turm', text: '2' }]
+    - [{ url: '?staffel=1745&r=5#p7704x7550', title: 'gegen HSK Lister Turm 2', text: '3' }]
+    - [{ url: '?staffel=1745&r=4#p7704x7720', title: 'gegen Hannover 96 2', text: '2' }]
+    - [{ url: '?staffel=1745&r=1#p7704x7705', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - 10
+    - 19½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=7724', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1745&r=5#p7724x7735', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1745&r=5#p7724x7736', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1745&r=4#p7724x7552', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1745&r=1#p7724x7723', title: 'gegen SV Bückeburg', text: '2' }]
+    - [{ url: '?staffel=1745&r=6#p7724x7708', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=1745&r=4#p7724x7709', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=1745&r=3#p7724x7704', title: 'gegen SD Isernhagen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1745&r=2#p7724x7541', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1745&r=2#p7724x7550', title: 'gegen HSK Lister Turm 2', text: '2' }]
+    - [{ url: '?staffel=1745&r=6#p7724x7720', title: 'gegen Hannover 96 2', text: '4' }]
+    - [{ url: '?staffel=1745&r=3#p7724x7705', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - 9
+    - '20'
+    - ''
+-
+    - '9.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=7541', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1745&r=4#p7541x7735', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1745&r=4#p7541x7736', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1745&r=6#p7541x7552', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1745&r=2#p7541x7723', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=1745&r=3#p7541x7708', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=1745&r=6#p7541x7709', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=1745&r=5#p7541x7704', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1745&r=2#p7541x7724', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1745&r=1#p7541x7550', title: 'gegen HSK Lister Turm 2', text: 1½ }]
+    - [{ url: '?staffel=1745&r=3#p7541x7720', title: 'gegen Hannover 96 2', text: 2½ }]
+    - [{ url: '?staffel=1745&r=5#p7541x7705', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - 8
+    - 18½
+    - ''
+-
+    - '10.'
+    - { text: 'HSK Lister Turm 2', url: '?mannschaft=7550', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1745&r=4#p7550x7735', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1745&r=4#p7550x7736', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1745&r=6#p7550x7552', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1745&r=2#p7550x7723', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=1745&r=3#p7550x7708', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=1745&r=6#p7550x7709', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1745&r=5#p7550x7704', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1745&r=2#p7550x7724', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - [{ url: '?staffel=1745&r=1#p7550x7541', title: 'gegen HSK Lister Turm', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1745&r=3#p7550x7720', title: 'gegen Hannover 96 2', text: '2' }]
+    - [{ url: '?staffel=1745&r=5#p7550x7705', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - 6
+    - 12½
+    - ''
+-
+    - '11.'
+    - { text: 'Hannover 96 2', url: '?mannschaft=7720', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1745&r=2#p7720x7735', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1745&r=2#p7720x7736', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1745&r=5#p7720x7552', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1745&r=6#p7720x7723', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=1745&r=1#p7720x7708', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=1745&r=5#p7720x7709', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=1745&r=4#p7720x7704', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1745&r=6#p7720x7724', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - [{ url: '?staffel=1745&r=3#p7720x7541', title: 'gegen HSK Lister Turm', text: 1½ }]
+    - [{ url: '?staffel=1745&r=3#p7720x7550', title: 'gegen HSK Lister Turm 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1745&r=4#p7720x7705', title: 'gegen SD Isernhagen 2', text: '2' }]
+    - 3
+    - 9½
+    - ''
+-
+    - '12.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=7705', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1745&r=6#p7705x7735', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1745&r=6#p7705x7736', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1745&r=2#p7705x7552', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1745&r=3#p7705x7723', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=1745&r=4#p7705x7708', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=1745&r=2#p7705x7709', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=1745&r=1#p7705x7704', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1745&r=3#p7705x7724', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - [{ url: '?staffel=1745&r=5#p7705x7541', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1745&r=5#p7705x7550', title: 'gegen HSK Lister Turm 2', text: '1' }]
+    - [{ url: '?staffel=1745&r=4#p7705x7720', title: 'gegen Hannover 96 2', text: '2' }]
+    - xxx
+    - 3
+    - '9'
+    - ''

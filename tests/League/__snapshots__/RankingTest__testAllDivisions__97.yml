@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Hannover 5', url: '?mannschaft=1219', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=510&r=3#p1219x1229', title: 'gegen PSC Hannover 5', text: '6' }]
+    - [{ url: '?staffel=510&r=4#p1219x1211', title: 'gegen SV Bückeburg 3', text: '6' }]
+    - [{ url: '?staffel=510&r=8#p1219x1207', title: 'gegen Barsinghausen 3', text: 4½ }]
+    - [{ url: '?staffel=510&r=1#p1219x1267', title: 'gegen SK Rinteln 2', text: 6½ }]
+    - [{ url: '?staffel=510&r=2#p1219x1247', title: 'gegen Eystruper SK 2', text: '6' }]
+    - [{ url: '?staffel=510&r=6#p1219x1213', title: 'gegen SVg Calenberg 2', text: '5' }]
+    - [{ url: '?staffel=510&r=7#p1219x1265', title: 'gegen Neubruchhausen 2', text: 6½ }]
+    - [{ url: '?staffel=510&r=5#p1219x1240', title: 'gegen SK Stolzenau 3', text: 6½ }]
+    - 16
+    - '47'
+    - ''
+-
+    - '2.'
+    - { text: 'PSC Hannover 5', url: '?mannschaft=1229', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=510&r=3#p1229x1219', title: 'gegen SF Hannover 5', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=510&r=7#p1229x1211', title: 'gegen SV Bückeburg 3', text: '4' }]
+    - [{ url: '?staffel=510&r=2#p1229x1207', title: 'gegen Barsinghausen 3', text: 4½ }]
+    - [{ url: '?staffel=510&r=4#p1229x1267', title: 'gegen SK Rinteln 2', text: '5' }]
+    - [{ url: '?staffel=510&r=5#p1229x1247', title: 'gegen Eystruper SK 2', text: '4' }]
+    - [{ url: '?staffel=510&r=9#p1229x1213', title: 'gegen SVg Calenberg 2', text: '7' }]
+    - [{ url: '?staffel=510&r=1#p1229x1265', title: 'gegen Neubruchhausen 2', text: '6' }]
+    - [{ url: '?staffel=510&r=8#p1229x1240', title: 'gegen SK Stolzenau 3', text: 5½ }]
+    - 13
+    - '38'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bückeburg 3', url: '?mannschaft=1211', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=510&r=4#p1211x1219', title: 'gegen SF Hannover 5', text: '2' }]
+    - [{ url: '?staffel=510&r=7#p1211x1229', title: 'gegen PSC Hannover 5', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=510&r=3#p1211x1207', title: 'gegen Barsinghausen 3', text: 3½ }]
+    - [{ url: '?staffel=510&r=5#p1211x1267', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - [{ url: '?staffel=510&r=6#p1211x1247', title: 'gegen Eystruper SK 2', text: '3' }]
+    - [{ url: '?staffel=510&r=1#p1211x1213', title: 'gegen SVg Calenberg 2', text: 6½ }]
+    - [{ url: '?staffel=510&r=2#p1211x1265', title: 'gegen Neubruchhausen 2', text: '6' }]
+    - [{ url: '?staffel=510&r=9#p1211x1240', title: 'gegen SK Stolzenau 3', text: '7' }]
+    - 9
+    - 36½
+    - ''
+-
+    - '4.'
+    - { text: 'Barsinghausen 3', url: '?mannschaft=1207', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=510&r=8#p1207x1219', title: 'gegen SF Hannover 5', text: 3½ }]
+    - [{ url: '?staffel=510&r=2#p1207x1229', title: 'gegen PSC Hannover 5', text: 3½ }]
+    - [{ url: '?staffel=510&r=3#p1207x1211', title: 'gegen SV Bückeburg 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=510&r=9#p1207x1267', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=510&r=1#p1207x1247', title: 'gegen Eystruper SK 2', text: '6' }]
+    - [{ url: '?staffel=510&r=5#p1207x1213', title: 'gegen SVg Calenberg 2', text: '4' }]
+    - [{ url: '?staffel=510&r=6#p1207x1265', title: 'gegen Neubruchhausen 2', text: 6½ }]
+    - [{ url: '?staffel=510&r=4#p1207x1240', title: 'gegen SK Stolzenau 3', text: '5' }]
+    - 9
+    - '36'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=1267', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=510&r=1#p1267x1219', title: 'gegen SF Hannover 5', text: 1½ }]
+    - [{ url: '?staffel=510&r=4#p1267x1229', title: 'gegen PSC Hannover 5', text: '3' }]
+    - [{ url: '?staffel=510&r=5#p1267x1211', title: 'gegen SV Bückeburg 3', text: 3½ }]
+    - [{ url: '?staffel=510&r=9#p1267x1207', title: 'gegen Barsinghausen 3', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=510&r=3#p1267x1247', title: 'gegen Eystruper SK 2', text: '8' }]
+    - [{ url: '?staffel=510&r=7#p1267x1213', title: 'gegen SVg Calenberg 2', text: 2½ }]
+    - [{ url: '?staffel=510&r=8#p1267x1265', title: 'gegen Neubruchhausen 2', text: '8' }]
+    - [{ url: '?staffel=510&r=6#p1267x1240', title: 'gegen SK Stolzenau 3', text: '7' }]
+    - 8
+    - 38½
+    - ''
+-
+    - '6.'
+    - { text: 'Eystruper SK 2', url: '?mannschaft=1247', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=510&r=2#p1247x1219', title: 'gegen SF Hannover 5', text: '2' }]
+    - [{ url: '?staffel=510&r=5#p1247x1229', title: 'gegen PSC Hannover 5', text: '3' }]
+    - [{ url: '?staffel=510&r=6#p1247x1211', title: 'gegen SV Bückeburg 3', text: '5' }]
+    - [{ url: '?staffel=510&r=1#p1247x1207', title: 'gegen Barsinghausen 3', text: '2' }]
+    - [{ url: '?staffel=510&r=3#p1247x1267', title: 'gegen SK Rinteln 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=510&r=8#p1247x1213', title: 'gegen SVg Calenberg 2', text: '5' }]
+    - [{ url: '?staffel=510&r=9#p1247x1265', title: 'gegen Neubruchhausen 2', text: '5' }]
+    - [{ url: '?staffel=510&r=7#p1247x1240', title: 'gegen SK Stolzenau 3', text: '6' }]
+    - 8
+    - '28'
+    - ''
+-
+    - '7.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=1213', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=510&r=6#p1213x1219', title: 'gegen SF Hannover 5', text: '3' }]
+    - [{ url: '?staffel=510&r=9#p1213x1229', title: 'gegen PSC Hannover 5', text: '1' }]
+    - [{ url: '?staffel=510&r=1#p1213x1211', title: 'gegen SV Bückeburg 3', text: 1½ }]
+    - [{ url: '?staffel=510&r=5#p1213x1207', title: 'gegen Barsinghausen 3', text: '4' }]
+    - [{ url: '?staffel=510&r=7#p1213x1267', title: 'gegen SK Rinteln 2', text: 5½ }]
+    - [{ url: '?staffel=510&r=8#p1213x1247', title: 'gegen Eystruper SK 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=510&r=4#p1213x1265', title: 'gegen Neubruchhausen 2', text: '6' }]
+    - [{ url: '?staffel=510&r=2#p1213x1240', title: 'gegen SK Stolzenau 3', text: '5' }]
+    - 7
+    - '29'
+    - ''
+-
+    - '8.'
+    - { text: 'Neubruchhausen 2', url: '?mannschaft=1265', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=510&r=7#p1265x1219', title: 'gegen SF Hannover 5', text: 1½ }]
+    - [{ url: '?staffel=510&r=1#p1265x1229', title: 'gegen PSC Hannover 5', text: '2' }]
+    - [{ url: '?staffel=510&r=2#p1265x1211', title: 'gegen SV Bückeburg 3', text: '2' }]
+    - [{ url: '?staffel=510&r=6#p1265x1207', title: 'gegen Barsinghausen 3', text: 1½ }]
+    - [{ url: '?staffel=510&r=8#p1265x1267', title: 'gegen SK Rinteln 2', text: '0' }]
+    - [{ url: '?staffel=510&r=9#p1265x1247', title: 'gegen Eystruper SK 2', text: '3' }]
+    - [{ url: '?staffel=510&r=4#p1265x1213', title: 'gegen SVg Calenberg 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=510&r=3#p1265x1240', title: 'gegen SK Stolzenau 3', text: '5' }]
+    - 2
+    - '17'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Stolzenau 3', url: '?mannschaft=1240', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=510&r=5#p1240x1219', title: 'gegen SF Hannover 5', text: 1½ }]
+    - [{ url: '?staffel=510&r=8#p1240x1229', title: 'gegen PSC Hannover 5', text: 2½ }]
+    - [{ url: '?staffel=510&r=9#p1240x1211', title: 'gegen SV Bückeburg 3', text: '1' }]
+    - [{ url: '?staffel=510&r=4#p1240x1207', title: 'gegen Barsinghausen 3', text: '3' }]
+    - [{ url: '?staffel=510&r=6#p1240x1267', title: 'gegen SK Rinteln 2', text: '1' }]
+    - [{ url: '?staffel=510&r=7#p1240x1247', title: 'gegen Eystruper SK 2', text: '1' }]
+    - [{ url: '?staffel=510&r=2#p1240x1213', title: 'gegen SVg Calenberg 2', text: '3' }]
+    - [{ url: '?staffel=510&r=3#p1240x1265', title: 'gegen Neubruchhausen 2', text: '3' }]
+    - xxx
+    - 0
+    - '16'
+    - ''

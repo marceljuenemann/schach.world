@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Turnierleiter/Staffelleiter bearbeiten
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -54,15 +54,15 @@
     /////////////////////////////
     // Neues Passwort setzen
     ?>
-    <form action="<? echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
+    <form action="<?php echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
         <legend>Passwort bearbeiten</legend>
         <table cellspacing="0" cellpadding="2">
         <tr><td>Neues Passwort: </td><td><input type="password" name="pw_new1" /></td></tr>
         <tr><td>Passwort wiederholen: </td><td><input type="password" name="pw_new2" /></td></tr>
-        <tr><td></td><td><input type="submit" class="sed_submit" name="pw_change" value="&Auml;ndern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
+        <tr><td></td><td><input type="submit" class="sed_submit" name="pw_change" value="&Auml;ndern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<?php echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
         </table>
         </fieldset></form><br />
-    <?
+    <?php
 
     /////////////////////////////
     // Neues Kontaktdaten setzen
@@ -100,13 +100,13 @@
     // Kontaktdaten bearbeiten
     $daten = SED_Row ( 'SELECT name, telefon, telefon2, email FROM benutzer WHERE id=?', [$up_userid]);
     ?>
-        <form action="<? echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
+        <form action="<?php echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
         <legend>Kontaktdaten</legend>
         <table cellspacing="0" cellpadding="2">
-        <tr><td>Name: </td><td><input value="<? echo $daten ['name']; ?>" type="text" name="name" /></td></tr>
-        <tr><td>Email: </td><td><input value="<? echo $daten ['email']; ?>" type="text" name="email" /></td></tr>
-        <tr><td>Telefon: </td><td><input value="<? echo $daten ['telefon']; ?>" type="text" name="telefon" /></td></tr>
-        <tr><td>Telefon 2: </td><td><input value="<? echo $daten ['telefon2']; ?>" type="text" name="telefon2" /></td></tr>
-        <tr><td></td><td><input type="submit" class="sed_submit" name="kontakt_change" value="&Auml;ndern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
+        <tr><td>Name: </td><td><input value="<?php echo $daten ['name']; ?>" type="text" name="name" /></td></tr>
+        <tr><td>Email: </td><td><input value="<?php echo $daten ['email']; ?>" type="text" name="email" /></td></tr>
+        <tr><td>Telefon: </td><td><input value="<?php echo $daten ['telefon']; ?>" type="text" name="telefon" /></td></tr>
+        <tr><td>Telefon 2: </td><td><input value="<?php echo $daten ['telefon2']; ?>" type="text" name="telefon2" /></td></tr>
+        <tr><td></td><td><input type="submit" class="sed_submit" name="kontakt_change" value="&Auml;ndern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<?php echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
         </table>
         </fieldset></form><br />

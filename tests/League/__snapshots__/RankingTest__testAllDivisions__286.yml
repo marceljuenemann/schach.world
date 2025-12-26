@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Rinteln', url: '?mannschaft=3150', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=720&r=4#p3150x3089', title: 'gegen Uetze-Hänigsen', text: 5½ }]
+    - [{ url: '?staffel=720&r=5#p3150x3116', title: 'gegen SK Stolzenau', text: '5' }]
+    - [{ url: '?staffel=720&r=1#p3150x3119', title: 'gegen Garbsen/Marienw', text: '4' }]
+    - [{ url: '?staffel=720&r=8#p3150x3155', title: 'gegen SV Berenbostel 2', text: '6' }]
+    - [{ url: '?staffel=720&r=9#p3150x2859', title: 'gegen SVg Steinhude', text: '5' }]
+    - [{ url: '?staffel=720&r=7#p3150x2944', title: 'gegen SK Neustadt', text: '4' }]
+    - [{ url: '?staffel=720&r=2#p3150x3157', title: 'gegen SV Bückeburg', text: '5' }]
+    - [{ url: '?staffel=720&r=6#p3150x3006', title: 'gegen SC Hämelerwald', text: '5' }]
+    - [{ url: '?staffel=720&r=3#p3150x3209', title: 'gegen SF Sulingen', text: 6½ }]
+    - 16
+    - '46'
+    - ''
+-
+    - '2.'
+    - { text: Uetze-Hänigsen, url: '?mannschaft=3089', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=720&r=4#p3089x3150', title: 'gegen SK Rinteln', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=720&r=9#p3089x3116', title: 'gegen SK Stolzenau', text: 4½ }]
+    - [{ url: '?staffel=720&r=7#p3089x3119', title: 'gegen Garbsen/Marienw', text: 4½ }]
+    - [{ url: '?staffel=720&r=6#p3089x3155', title: 'gegen SV Berenbostel 2', text: 3½ }]
+    - [{ url: '?staffel=720&r=2#p3089x2859', title: 'gegen SVg Steinhude', text: '5' }]
+    - [{ url: '?staffel=720&r=1#p3089x2944', title: 'gegen SK Neustadt', text: '5' }]
+    - [{ url: '?staffel=720&r=3#p3089x3157', title: 'gegen SV Bückeburg', text: '5' }]
+    - [{ url: '?staffel=720&r=5#p3089x3006', title: 'gegen SC Hämelerwald', text: '3' }]
+    - [{ url: '?staffel=720&r=8#p3089x3209', title: 'gegen SF Sulingen', text: '8' }]
+    - 12
+    - '41'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=3116', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=720&r=5#p3116x3150', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=720&r=9#p3116x3089', title: 'gegen Uetze-Hänigsen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=720&r=3#p3116x3119', title: 'gegen Garbsen/Marienw', text: '5' }]
+    - [{ url: '?staffel=720&r=2#p3116x3155', title: 'gegen SV Berenbostel 2', text: 2½ }]
+    - [{ url: '?staffel=720&r=7#p3116x2859', title: 'gegen SVg Steinhude', text: 4½ }]
+    - [{ url: '?staffel=720&r=6#p3116x2944', title: 'gegen SK Neustadt', text: '5' }]
+    - [{ url: '?staffel=720&r=8#p3116x3157', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=720&r=1#p3116x3006', title: 'gegen SC Hämelerwald', text: 5½ }]
+    - [{ url: '?staffel=720&r=4#p3116x3209', title: 'gegen SF Sulingen', text: 5½ }]
+    - 12
+    - '39'
+    - ''
+-
+    - '4.'
+    - { text: Garbsen/Marienw, url: '?mannschaft=3119', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=720&r=1#p3119x3150', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=720&r=7#p3119x3089', title: 'gegen Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=720&r=3#p3119x3116', title: 'gegen SK Stolzenau', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=720&r=9#p3119x3155', title: 'gegen SV Berenbostel 2', text: '5' }]
+    - [{ url: '?staffel=720&r=5#p3119x2859', title: 'gegen SVg Steinhude', text: 4½ }]
+    - [{ url: '?staffel=720&r=4#p3119x2944', title: 'gegen SK Neustadt', text: 5½ }]
+    - [{ url: '?staffel=720&r=6#p3119x3157', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=720&r=8#p3119x3006', title: 'gegen SC Hämelerwald', text: 4½ }]
+    - [{ url: '?staffel=720&r=2#p3119x3209', title: 'gegen SF Sulingen', text: '4' }]
+    - 11
+    - '38'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Berenbostel 2', url: '?mannschaft=3155', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=720&r=8#p3155x3150', title: 'gegen SK Rinteln', text: '2' }]
+    - [{ url: '?staffel=720&r=6#p3155x3089', title: 'gegen Uetze-Hänigsen', text: 4½ }]
+    - [{ url: '?staffel=720&r=2#p3155x3116', title: 'gegen SK Stolzenau', text: 5½ }]
+    - [{ url: '?staffel=720&r=9#p3155x3119', title: 'gegen Garbsen/Marienw', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=720&r=4#p3155x2859', title: 'gegen SVg Steinhude', text: 2½ }]
+    - [{ url: '?staffel=720&r=3#p3155x2944', title: 'gegen SK Neustadt', text: '6' }]
+    - [{ url: '?staffel=720&r=5#p3155x3157', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=720&r=7#p3155x3006', title: 'gegen SC Hämelerwald', text: '3' }]
+    - [{ url: '?staffel=720&r=1#p3155x3209', title: 'gegen SF Sulingen', text: 6½ }]
+    - 10
+    - '37'
+    - ''
+-
+    - '6.'
+    - { text: 'SVg Steinhude', url: '?mannschaft=2859', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=720&r=9#p2859x3150', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=720&r=2#p2859x3089', title: 'gegen Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=720&r=7#p2859x3116', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=720&r=5#p2859x3119', title: 'gegen Garbsen/Marienw', text: 3½ }]
+    - [{ url: '?staffel=720&r=4#p2859x3155', title: 'gegen SV Berenbostel 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=720&r=8#p2859x2944', title: 'gegen SK Neustadt', text: 3½ }]
+    - [{ url: '?staffel=720&r=1#p2859x3157', title: 'gegen SV Bückeburg', text: 7½ }]
+    - [{ url: '?staffel=720&r=3#p2859x3006', title: 'gegen SC Hämelerwald', text: 5½ }]
+    - [{ url: '?staffel=720&r=6#p2859x3209', title: 'gegen SF Sulingen', text: '6' }]
+    - 8
+    - '41'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Neustadt', url: '?mannschaft=2944', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=720&r=7#p2944x3150', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=720&r=1#p2944x3089', title: 'gegen Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=720&r=6#p2944x3116', title: 'gegen SK Stolzenau', text: '3' }]
+    - [{ url: '?staffel=720&r=4#p2944x3119', title: 'gegen Garbsen/Marienw', text: 2½ }]
+    - [{ url: '?staffel=720&r=3#p2944x3155', title: 'gegen SV Berenbostel 2', text: '2' }]
+    - [{ url: '?staffel=720&r=8#p2944x2859', title: 'gegen SVg Steinhude', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=720&r=9#p2944x3157', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=720&r=2#p2944x3006', title: 'gegen SC Hämelerwald', text: 5½ }]
+    - [{ url: '?staffel=720&r=5#p2944x3209', title: 'gegen SF Sulingen', text: 5½ }]
+    - 7
+    - 33½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=3157', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=720&r=2#p3157x3150', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=720&r=3#p3157x3089', title: 'gegen Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=720&r=8#p3157x3116', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=720&r=6#p3157x3119', title: 'gegen Garbsen/Marienw', text: '4' }]
+    - [{ url: '?staffel=720&r=5#p3157x3155', title: 'gegen SV Berenbostel 2', text: '3' }]
+    - [{ url: '?staffel=720&r=1#p3157x2859', title: 'gegen SVg Steinhude', text: ½ }]
+    - [{ url: '?staffel=720&r=9#p3157x2944', title: 'gegen SK Neustadt', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=720&r=4#p3157x3006', title: 'gegen SC Hämelerwald', text: '5' }]
+    - [{ url: '?staffel=720&r=7#p3157x3209', title: 'gegen SF Sulingen', text: 5½ }]
+    - 7
+    - '32'
+    - ''
+-
+    - '9.'
+    - { text: 'SC Hämelerwald', url: '?mannschaft=3006', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=720&r=6#p3006x3150', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=720&r=5#p3006x3089', title: 'gegen Uetze-Hänigsen', text: '5' }]
+    - [{ url: '?staffel=720&r=1#p3006x3116', title: 'gegen SK Stolzenau', text: 2½ }]
+    - [{ url: '?staffel=720&r=8#p3006x3119', title: 'gegen Garbsen/Marienw', text: 3½ }]
+    - [{ url: '?staffel=720&r=7#p3006x3155', title: 'gegen SV Berenbostel 2', text: '5' }]
+    - [{ url: '?staffel=720&r=3#p3006x2859', title: 'gegen SVg Steinhude', text: 2½ }]
+    - [{ url: '?staffel=720&r=2#p3006x2944', title: 'gegen SK Neustadt', text: 2½ }]
+    - [{ url: '?staffel=720&r=4#p3006x3157', title: 'gegen SV Bückeburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=720&r=9#p3006x3209', title: 'gegen SF Sulingen', text: 5½ }]
+    - 6
+    - 32½
+    - ''
+-
+    - '10.'
+    - { text: 'SF Sulingen', url: '?mannschaft=3209', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=720&r=3#p3209x3150', title: 'gegen SK Rinteln', text: 1½ }]
+    - [{ url: '?staffel=720&r=8#p3209x3089', title: 'gegen Uetze-Hänigsen', text: '0' }]
+    - [{ url: '?staffel=720&r=4#p3209x3116', title: 'gegen SK Stolzenau', text: 2½ }]
+    - [{ url: '?staffel=720&r=2#p3209x3119', title: 'gegen Garbsen/Marienw', text: '4' }]
+    - [{ url: '?staffel=720&r=1#p3209x3155', title: 'gegen SV Berenbostel 2', text: 1½ }]
+    - [{ url: '?staffel=720&r=6#p3209x2859', title: 'gegen SVg Steinhude', text: '2' }]
+    - [{ url: '?staffel=720&r=5#p3209x2944', title: 'gegen SK Neustadt', text: 2½ }]
+    - [{ url: '?staffel=720&r=7#p3209x3157', title: 'gegen SV Bückeburg', text: 2½ }]
+    - [{ url: '?staffel=720&r=9#p3209x3006', title: 'gegen SC Hämelerwald', text: 2½ }]
+    - xxx
+    - 1
+    - '19'
+    - ''

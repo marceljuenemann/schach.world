@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Fürstenau 2', url: '?mannschaft=5478', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1370&r=4#p5478x5475', title: 'gegen SV Hellern 6', text: 2½ }, { url: '?staffel=1370&r=9#p5478x5475', title: 'gegen SV Hellern 6', text: 2½ }]
+    - [{ url: '?staffel=1370&r=3#p5478x5477', title: 'gegen TSV Riemsloh 3', text: 2½ }, { url: '?staffel=1370&r=8#p5478x5477', title: 'gegen TSV Riemsloh 3', text: '2' }]
+    - [{ url: '?staffel=1370&r=2#p5478x5479', title: 'gegen Gaste-Hasbergen 2', text: 1½ }, { url: '?staffel=1370&r=7#p5478x5479', title: 'gegen Gaste-Hasbergen 2', text: 3½ }]
+    - [{ url: '?staffel=1370&r=5#p5478x5476', title: 'gegen SV Osnabrück 7', text: '2' }, { url: '?staffel=1370&r=10#p5478x5476', title: 'gegen SV Osnabrück 7', text: '3' }]
+    - [{ url: '?staffel=1370&r=1#p5478x5480', title: 'gegen TSV Osnabrück 2', text: 3½ }, { url: '?staffel=1370&r=6#p5478x5480', title: 'gegen TSV Osnabrück 2', text: '4' }]
+    - 16
+    - '27'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Hellern 6', url: '?mannschaft=5475', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1370&r=4#p5475x5478', title: 'gegen SC Fürstenau 2', text: 1½ }, { url: '?staffel=1370&r=9#p5475x5478', title: 'gegen SC Fürstenau 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1370&r=5#p5475x5477', title: 'gegen TSV Riemsloh 3', text: '3' }, { url: '?staffel=1370&r=10#p5475x5477', title: 'gegen TSV Riemsloh 3', text: 1½ }]
+    - [{ url: '?staffel=1370&r=3#p5475x5479', title: 'gegen Gaste-Hasbergen 2', text: '2' }, { url: '?staffel=1370&r=8#p5475x5479', title: 'gegen Gaste-Hasbergen 2', text: '3' }]
+    - [{ url: '?staffel=1370&r=1#p5475x5476', title: 'gegen SV Osnabrück 7', text: 3½ }, { url: '?staffel=1370&r=6#p5475x5476', title: 'gegen SV Osnabrück 7', text: 2½ }]
+    - [{ url: '?staffel=1370&r=2#p5475x5480', title: 'gegen TSV Osnabrück 2', text: '3' }, { url: '?staffel=1370&r=7#p5475x5480', title: 'gegen TSV Osnabrück 2', text: 1½ }]
+    - 11
+    - '23'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'TSV Riemsloh 3', url: '?mannschaft=5477', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1370&r=3#p5477x5478', title: 'gegen SC Fürstenau 2', text: 1½ }, { url: '?staffel=1370&r=8#p5477x5478', title: 'gegen SC Fürstenau 2', text: '2' }]
+    - [{ url: '?staffel=1370&r=5#p5477x5475', title: 'gegen SV Hellern 6', text: '1' }, { url: '?staffel=1370&r=10#p5477x5475', title: 'gegen SV Hellern 6', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1370&r=1#p5477x5479', title: 'gegen Gaste-Hasbergen 2', text: ½ }, { url: '?staffel=1370&r=6#p5477x5479', title: 'gegen Gaste-Hasbergen 2', text: '4' }]
+    - [{ url: '?staffel=1370&r=2#p5477x5476', title: 'gegen SV Osnabrück 7', text: 1½ }, { url: '?staffel=1370&r=7#p5477x5476', title: 'gegen SV Osnabrück 7', text: 2½ }]
+    - [{ url: '?staffel=1370&r=4#p5477x5480', title: 'gegen TSV Osnabrück 2', text: 2½ }, { url: '?staffel=1370&r=9#p5477x5480', title: 'gegen TSV Osnabrück 2', text: '3' }]
+    - 11
+    - '21'
+    - ''
+-
+    - '4.'
+    - { text: 'Gaste-Hasbergen 2', url: '?mannschaft=5479', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1370&r=2#p5479x5478', title: 'gegen SC Fürstenau 2', text: 2½ }, { url: '?staffel=1370&r=7#p5479x5478', title: 'gegen SC Fürstenau 2', text: ½ }]
+    - [{ url: '?staffel=1370&r=3#p5479x5475', title: 'gegen SV Hellern 6', text: '2' }, { url: '?staffel=1370&r=8#p5479x5475', title: 'gegen SV Hellern 6', text: '1' }]
+    - [{ url: '?staffel=1370&r=1#p5479x5477', title: 'gegen TSV Riemsloh 3', text: 3½ }, { url: '?staffel=1370&r=6#p5479x5477', title: 'gegen TSV Riemsloh 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1370&r=4#p5479x5476', title: 'gegen SV Osnabrück 7', text: 1½ }, { url: '?staffel=1370&r=9#p5479x5476', title: 'gegen SV Osnabrück 7', text: '2' }]
+    - [{ url: '?staffel=1370&r=5#p5479x5480', title: 'gegen TSV Osnabrück 2', text: '3' }, { url: '?staffel=1370&r=10#p5479x5480', title: 'gegen TSV Osnabrück 2', text: '4' }]
+    - 10
+    - '20'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Osnabrück 7', url: '?mannschaft=5476', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1370&r=5#p5476x5478', title: 'gegen SC Fürstenau 2', text: '2' }, { url: '?staffel=1370&r=10#p5476x5478', title: 'gegen SC Fürstenau 2', text: '1' }]
+    - [{ url: '?staffel=1370&r=1#p5476x5475', title: 'gegen SV Hellern 6', text: ½ }, { url: '?staffel=1370&r=6#p5476x5475', title: 'gegen SV Hellern 6', text: 1½ }]
+    - [{ url: '?staffel=1370&r=2#p5476x5477', title: 'gegen TSV Riemsloh 3', text: 2½ }, { url: '?staffel=1370&r=7#p5476x5477', title: 'gegen TSV Riemsloh 3', text: 1½ }]
+    - [{ url: '?staffel=1370&r=4#p5476x5479', title: 'gegen Gaste-Hasbergen 2', text: 2½ }, { url: '?staffel=1370&r=9#p5476x5479', title: 'gegen Gaste-Hasbergen 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1370&r=3#p5476x5480', title: 'gegen TSV Osnabrück 2', text: '2' }, { url: '?staffel=1370&r=8#p5476x5480', title: 'gegen TSV Osnabrück 2', text: '3' }]
+    - 9
+    - 18½
+    - ''
+-
+    - '6.'
+    - { text: 'TSV Osnabrück 2', url: '?mannschaft=5480', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1370&r=1#p5480x5478', title: 'gegen SC Fürstenau 2', text: ½ }, { url: '?staffel=1370&r=6#p5480x5478', title: 'gegen SC Fürstenau 2', text: '0' }]
+    - [{ url: '?staffel=1370&r=2#p5480x5475', title: 'gegen SV Hellern 6', text: '1' }, { url: '?staffel=1370&r=7#p5480x5475', title: 'gegen SV Hellern 6', text: 2½ }]
+    - [{ url: '?staffel=1370&r=4#p5480x5477', title: 'gegen TSV Riemsloh 3', text: 1½ }, { url: '?staffel=1370&r=9#p5480x5477', title: 'gegen TSV Riemsloh 3', text: '1' }]
+    - [{ url: '?staffel=1370&r=5#p5480x5479', title: 'gegen Gaste-Hasbergen 2', text: '1' }, { url: '?staffel=1370&r=10#p5480x5479', title: 'gegen Gaste-Hasbergen 2', text: '0' }]
+    - [{ url: '?staffel=1370&r=3#p5480x5476', title: 'gegen SV Osnabrück 7', text: '2' }, { url: '?staffel=1370&r=8#p5480x5476', title: 'gegen SV Osnabrück 7', text: '1' }]
+    - xxx
+    - 3
+    - 10½
+    - ''

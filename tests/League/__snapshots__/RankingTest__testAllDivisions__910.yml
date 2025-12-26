@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=7551', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1743&r=5#p7551x7537', title: 'gegen SV Laatzen 4', text: 5½ }, { url: '?staffel=1743&r=6#p7551x7537', title: 'gegen SV Laatzen 4', text: '6' }]
+    - [{ url: '?staffel=1743&r=3#p7551x7549', title: 'gegen TuS Wunstorf 2', text: 5½ }, { url: '?staffel=1743&r=10#p7551x7549', title: 'gegen TuS Wunstorf 2', text: '2' }]
+    - [{ url: '?staffel=1743&r=4#p7551x7588', title: 'gegen SK Rinteln 3', text: '6' }, { url: '?staffel=1743&r=8#p7551x7588', title: 'gegen SK Rinteln 3', text: 6½ }]
+    - [{ url: '?staffel=1743&r=1#p7551x7560', title: 'gegen SV Bückeburg 2', text: 6½ }, { url: '?staffel=1743&r=9#p7551x7560', title: 'gegen SV Bückeburg 2', text: '8' }]
+    - 14
+    - '46'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Laatzen 4', url: '?mannschaft=7537', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1743&r=5#p7537x7551', title: 'gegen SD Isernhagen 3', text: 2½ }, { url: '?staffel=1743&r=6#p7537x7551', title: 'gegen SD Isernhagen 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1743&r=2#p7537x7549', title: 'gegen TuS Wunstorf 2', text: '6' }, { url: '?staffel=1743&r=7#p7537x7549', title: 'gegen TuS Wunstorf 2', text: '5' }]
+    - [{ url: '?staffel=1743&r=3#p7537x7588', title: 'gegen SK Rinteln 3', text: '5' }, { url: '?staffel=1743&r=10#p7537x7588', title: 'gegen SK Rinteln 3', text: 6½ }]
+    - [{ url: '?staffel=1743&r=4#p7537x7560', title: 'gegen SV Bückeburg 2', text: '5' }, { url: '?staffel=1743&r=8#p7537x7560', title: 'gegen SV Bückeburg 2', text: '7' }]
+    - 12
+    - '39'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'TuS Wunstorf 2', url: '?mannschaft=7549', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1743&r=3#p7549x7551', title: 'gegen SD Isernhagen 3', text: 2½ }, { url: '?staffel=1743&r=10#p7549x7551', title: 'gegen SD Isernhagen 3', text: '6' }]
+    - [{ url: '?staffel=1743&r=2#p7549x7537', title: 'gegen SV Laatzen 4', text: '2' }, { url: '?staffel=1743&r=7#p7549x7537', title: 'gegen SV Laatzen 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1743&r=1#p7549x7588', title: 'gegen SK Rinteln 3', text: 4½ }, { url: '?staffel=1743&r=9#p7549x7588', title: 'gegen SK Rinteln 3', text: '3' }]
+    - [{ url: '?staffel=1743&r=5#p7549x7560', title: 'gegen SV Bückeburg 2', text: 5½ }, { url: '?staffel=1743&r=6#p7549x7560', title: 'gegen SV Bückeburg 2', text: '6' }]
+    - 8
+    - 32½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Rinteln 3', url: '?mannschaft=7588', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1743&r=4#p7588x7551', title: 'gegen SD Isernhagen 3', text: '2' }, { url: '?staffel=1743&r=8#p7588x7551', title: 'gegen SD Isernhagen 3', text: 1½ }]
+    - [{ url: '?staffel=1743&r=3#p7588x7537', title: 'gegen SV Laatzen 4', text: '3' }, { url: '?staffel=1743&r=10#p7588x7537', title: 'gegen SV Laatzen 4', text: 1½ }]
+    - [{ url: '?staffel=1743&r=1#p7588x7549', title: 'gegen TuS Wunstorf 2', text: 3½ }, { url: '?staffel=1743&r=9#p7588x7549', title: 'gegen TuS Wunstorf 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1743&r=2#p7588x7560', title: 'gegen SV Bückeburg 2', text: 3½ }, { url: '?staffel=1743&r=7#p7588x7560', title: 'gegen SV Bückeburg 2', text: 5½ }]
+    - 4
+    - 25½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=7560', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1743&r=1#p7560x7551', title: 'gegen SD Isernhagen 3', text: 1½ }, { url: '?staffel=1743&r=9#p7560x7551', title: 'gegen SD Isernhagen 3', text: '0' }]
+    - [{ url: '?staffel=1743&r=4#p7560x7537', title: 'gegen SV Laatzen 4', text: '3' }, { url: '?staffel=1743&r=8#p7560x7537', title: 'gegen SV Laatzen 4', text: '1' }]
+    - [{ url: '?staffel=1743&r=5#p7560x7549', title: 'gegen TuS Wunstorf 2', text: 2½ }, { url: '?staffel=1743&r=6#p7560x7549', title: 'gegen TuS Wunstorf 2', text: '2' }]
+    - [{ url: '?staffel=1743&r=2#p7560x7588', title: 'gegen SK Rinteln 3', text: 4½ }, { url: '?staffel=1743&r=7#p7560x7588', title: 'gegen SK Rinteln 3', text: 2½ }]
+    - xxx
+    - 2
+    - '17'
+    - ''

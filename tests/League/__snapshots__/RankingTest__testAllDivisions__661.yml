@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamelner SV 2', url: '?mannschaft=6082', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1411&r=5#p6082x6157', title: 'gegen KS Braunschweig', text: '3' }]
+    - [{ url: '?staffel=1411&r=6#p6082x6105', title: 'gegen Hildesheimer SV 2', text: 2½ }]
+    - [{ url: '?staffel=1411&r=2#p6082x6159', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=1411&r=3#p6082x6162', title: 'gegen Peiner SV', text: '5' }]
+    - [{ url: '?staffel=1411&r=1#p6082x6161', title: 'gegen SV Gifhorn', text: 4½ }]
+    - [{ url: '?staffel=1411&r=7#p6082x6158', title: 'gegen C. Wolfenbüttel', text: 5½ }]
+    - [{ url: '?staffel=1411&r=9#p6082x6155', title: 'gegen Plesse Bovenden', text: '8' }]
+    - [{ url: '?staffel=1411&r=4#p6082x6156', title: 'gegen Bad Salzdetfurth', text: 6½ }]
+    - [{ url: '?staffel=1411&r=8#p6082x6160', title: 'gegen SG Elm/Lappwald', text: '7' }]
+    - 14
+    - 46½
+    - ''
+-
+    - '2.'
+    - { text: 'KS Braunschweig', url: '?mannschaft=6157', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1411&r=5#p6157x6082', title: 'gegen Hamelner SV 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1411&r=1#p6157x6105', title: 'gegen Hildesheimer SV 2', text: 4½ }]
+    - [{ url: '?staffel=1411&r=4#p6157x6159', title: 'gegen SC Wolfsburg', text: 5½ }]
+    - [{ url: '?staffel=1411&r=7#p6157x6162', title: 'gegen Peiner SV', text: '3' }]
+    - [{ url: '?staffel=1411&r=6#p6157x6161', title: 'gegen SV Gifhorn', text: 3½ }]
+    - [{ url: '?staffel=1411&r=9#p6157x6158', title: 'gegen C. Wolfenbüttel', text: '8' }]
+    - [{ url: '?staffel=1411&r=3#p6157x6155', title: 'gegen Plesse Bovenden', text: '5' }]
+    - [{ url: '?staffel=1411&r=8#p6157x6156', title: 'gegen Bad Salzdetfurth', text: 2½ }]
+    - [{ url: '?staffel=1411&r=2#p6157x6160', title: 'gegen SG Elm/Lappwald', text: 6½ }]
+    - 12
+    - 43½
+    - ''
+-
+    - '3.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=6105', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1411&r=6#p6105x6082', title: 'gegen Hamelner SV 2', text: 5½ }]
+    - [{ url: '?staffel=1411&r=1#p6105x6157', title: 'gegen KS Braunschweig', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1411&r=5#p6105x6159', title: 'gegen SC Wolfsburg', text: 2½ }]
+    - [{ url: '?staffel=1411&r=9#p6105x6162', title: 'gegen Peiner SV', text: '5' }]
+    - [{ url: '?staffel=1411&r=7#p6105x6161', title: 'gegen SV Gifhorn', text: 4½ }]
+    - [{ url: '?staffel=1411&r=8#p6105x6158', title: 'gegen C. Wolfenbüttel', text: '8' }]
+    - [{ url: '?staffel=1411&r=4#p6105x6155', title: 'gegen Plesse Bovenden', text: '4' }]
+    - [{ url: '?staffel=1411&r=2#p6105x6156', title: 'gegen Bad Salzdetfurth', text: 3½ }]
+    - [{ url: '?staffel=1411&r=3#p6105x6160', title: 'gegen SG Elm/Lappwald', text: '5' }]
+    - 11
+    - 41½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Wolfsburg', url: '?mannschaft=6159', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1411&r=2#p6159x6082', title: 'gegen Hamelner SV 2', text: 3½ }]
+    - [{ url: '?staffel=1411&r=4#p6159x6157', title: 'gegen KS Braunschweig', text: 2½ }]
+    - [{ url: '?staffel=1411&r=5#p6159x6105', title: 'gegen Hildesheimer SV 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1411&r=8#p6159x6162', title: 'gegen Peiner SV', text: 3½ }]
+    - [{ url: '?staffel=1411&r=9#p6159x6161', title: 'gegen SV Gifhorn', text: '4' }]
+    - [{ url: '?staffel=1411&r=3#p6159x6158', title: 'gegen C. Wolfenbüttel', text: 3½ }]
+    - [{ url: '?staffel=1411&r=6#p6159x6155', title: 'gegen Plesse Bovenden', text: '6' }]
+    - [{ url: '?staffel=1411&r=1#p6159x6156', title: 'gegen Bad Salzdetfurth', text: '7' }]
+    - [{ url: '?staffel=1411&r=7#p6159x6160', title: 'gegen SG Elm/Lappwald', text: '5' }]
+    - 9
+    - 40½
+    - ''
+-
+    - '5.'
+    - { text: 'Peiner SV', url: '?mannschaft=6162', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1411&r=3#p6162x6082', title: 'gegen Hamelner SV 2', text: '3' }]
+    - [{ url: '?staffel=1411&r=7#p6162x6157', title: 'gegen KS Braunschweig', text: '5' }]
+    - [{ url: '?staffel=1411&r=9#p6162x6105', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - [{ url: '?staffel=1411&r=8#p6162x6159', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1411&r=2#p6162x6161', title: 'gegen SV Gifhorn', text: '4' }]
+    - [{ url: '?staffel=1411&r=4#p6162x6158', title: 'gegen C. Wolfenbüttel', text: 3½ }]
+    - [{ url: '?staffel=1411&r=1#p6162x6155', title: 'gegen Plesse Bovenden', text: '4' }]
+    - [{ url: '?staffel=1411&r=5#p6162x6156', title: 'gegen Bad Salzdetfurth', text: 4½ }]
+    - [{ url: '?staffel=1411&r=6#p6162x6160', title: 'gegen SG Elm/Lappwald', text: 5½ }]
+    - 8
+    - '36'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Gifhorn', url: '?mannschaft=6161', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1411&r=1#p6161x6082', title: 'gegen Hamelner SV 2', text: 3½ }]
+    - [{ url: '?staffel=1411&r=6#p6161x6157', title: 'gegen KS Braunschweig', text: 4½ }]
+    - [{ url: '?staffel=1411&r=7#p6161x6105', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - [{ url: '?staffel=1411&r=9#p6161x6159', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=1411&r=2#p6161x6162', title: 'gegen Peiner SV', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1411&r=5#p6161x6158', title: 'gegen C. Wolfenbüttel', text: 7½ }]
+    - [{ url: '?staffel=1411&r=8#p6161x6155', title: 'gegen Plesse Bovenden', text: '0' }]
+    - [{ url: '?staffel=1411&r=3#p6161x6156', title: 'gegen Bad Salzdetfurth', text: 4½ }]
+    - [{ url: '?staffel=1411&r=4#p6161x6160', title: 'gegen SG Elm/Lappwald', text: 3½ }]
+    - 8
+    - '35'
+    - ''
+-
+    - '7.'
+    - { text: 'C. Wolfenbüttel', url: '?mannschaft=6158', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1411&r=7#p6158x6082', title: 'gegen Hamelner SV 2', text: 2½ }]
+    - [{ url: '?staffel=1411&r=9#p6158x6157', title: 'gegen KS Braunschweig', text: '0' }]
+    - [{ url: '?staffel=1411&r=8#p6158x6105', title: 'gegen Hildesheimer SV 2', text: '0' }]
+    - [{ url: '?staffel=1411&r=3#p6158x6159', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=1411&r=4#p6158x6162', title: 'gegen Peiner SV', text: 4½ }]
+    - [{ url: '?staffel=1411&r=5#p6158x6161', title: 'gegen SV Gifhorn', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1411&r=2#p6158x6155', title: 'gegen Plesse Bovenden', text: 4½ }]
+    - [{ url: '?staffel=1411&r=6#p6158x6156', title: 'gegen Bad Salzdetfurth', text: '6' }]
+    - [{ url: '?staffel=1411&r=1#p6158x6160', title: 'gegen SG Elm/Lappwald', text: 3½ }]
+    - 8
+    - '26'
+    - ''
+-
+    - '8.'
+    - { text: 'Plesse Bovenden', url: '?mannschaft=6155', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1411&r=9#p6155x6082', title: 'gegen Hamelner SV 2', text: '0' }]
+    - [{ url: '?staffel=1411&r=3#p6155x6157', title: 'gegen KS Braunschweig', text: '3' }]
+    - [{ url: '?staffel=1411&r=4#p6155x6105', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1411&r=6#p6155x6159', title: 'gegen SC Wolfsburg', text: '2' }]
+    - [{ url: '?staffel=1411&r=1#p6155x6162', title: 'gegen Peiner SV', text: '4' }]
+    - [{ url: '?staffel=1411&r=8#p6155x6161', title: 'gegen SV Gifhorn', text: '8' }]
+    - [{ url: '?staffel=1411&r=2#p6155x6158', title: 'gegen C. Wolfenbüttel', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1411&r=7#p6155x6156', title: 'gegen Bad Salzdetfurth', text: '5' }]
+    - [{ url: '?staffel=1411&r=5#p6155x6160', title: 'gegen SG Elm/Lappwald', text: '4' }]
+    - 7
+    - 33½
+    - ''
+-
+    - '9.'
+    - { text: 'Bad Salzdetfurth', url: '?mannschaft=6156', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1411&r=4#p6156x6082', title: 'gegen Hamelner SV 2', text: 1½ }]
+    - [{ url: '?staffel=1411&r=8#p6156x6157', title: 'gegen KS Braunschweig', text: 5½ }]
+    - [{ url: '?staffel=1411&r=2#p6156x6105', title: 'gegen Hildesheimer SV 2', text: 4½ }]
+    - [{ url: '?staffel=1411&r=1#p6156x6159', title: 'gegen SC Wolfsburg', text: '1' }]
+    - [{ url: '?staffel=1411&r=5#p6156x6162', title: 'gegen Peiner SV', text: 3½ }]
+    - [{ url: '?staffel=1411&r=3#p6156x6161', title: 'gegen SV Gifhorn', text: 3½ }]
+    - [{ url: '?staffel=1411&r=6#p6156x6158', title: 'gegen C. Wolfenbüttel', text: '2' }]
+    - [{ url: '?staffel=1411&r=7#p6156x6155', title: 'gegen Plesse Bovenden', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1411&r=9#p6156x6160', title: 'gegen SG Elm/Lappwald', text: '8' }]
+    - 6
+    - 32½
+    - ''
+-
+    - '10.'
+    - { text: 'SG Elm/Lappwald', url: '?mannschaft=6160', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1411&r=8#p6160x6082', title: 'gegen Hamelner SV 2', text: '1' }]
+    - [{ url: '?staffel=1411&r=2#p6160x6157', title: 'gegen KS Braunschweig', text: 1½ }]
+    - [{ url: '?staffel=1411&r=3#p6160x6105', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - [{ url: '?staffel=1411&r=7#p6160x6159', title: 'gegen SC Wolfsburg', text: '3' }]
+    - [{ url: '?staffel=1411&r=6#p6160x6162', title: 'gegen Peiner SV', text: 2½ }]
+    - [{ url: '?staffel=1411&r=4#p6160x6161', title: 'gegen SV Gifhorn', text: 4½ }]
+    - [{ url: '?staffel=1411&r=1#p6160x6158', title: 'gegen C. Wolfenbüttel', text: 4½ }]
+    - [{ url: '?staffel=1411&r=5#p6160x6155', title: 'gegen Plesse Bovenden', text: '4' }]
+    - [{ url: '?staffel=1411&r=9#p6160x6156', title: 'gegen Bad Salzdetfurth', text: '0' }]
+    - xxx
+    - 5
+    - '24'
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=2261', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=628&r=4#p2261x2274', title: 'gegen Hagener SV', text: '4' }]
+    - [{ url: '?staffel=628&r=3#p2261x2258', title: 'gegen SK Nordhorn-Bl.', text: '4' }]
+    - [{ url: '?staffel=628&r=5#p2261x2259', title: 'gegen SF Spelle', text: 2½ }]
+    - [{ url: '?staffel=628&r=1#p2261x2275', title: 'gegen SF Spelle 2', text: '4' }]
+    - [{ url: '?staffel=628&r=2#p2261x2303', title: 'gegen TuS Bramsche', text: '4' }]
+    - 10
+    - 18½
+    - ''
+-
+    - '2.'
+    - { text: 'Hagener SV', url: '?mannschaft=2274', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=628&r=4#p2274x2261', title: 'gegen SG Oesede-Gmht.', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=628&r=5#p2274x2258', title: 'gegen SK Nordhorn-Bl.', text: '4' }]
+    - [{ url: '?staffel=628&r=2#p2274x2259', title: 'gegen SF Spelle', text: '4' }]
+    - [{ url: '?staffel=628&r=3#p2274x2275', title: 'gegen SF Spelle 2', text: '4' }]
+    - [{ url: '?staffel=628&r=1#p2274x2303', title: 'gegen TuS Bramsche', text: '4' }]
+    - 8
+    - '16'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Nordhorn-Bl.', url: '?mannschaft=2258', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=628&r=3#p2258x2261', title: 'gegen SG Oesede-Gmht.', text: '0' }]
+    - [{ url: '?staffel=628&r=5#p2258x2274', title: 'gegen Hagener SV', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=628&r=1#p2258x2259', title: 'gegen SF Spelle', text: '3' }]
+    - [{ url: '?staffel=628&r=2#p2258x2275', title: 'gegen SF Spelle 2', text: '4' }]
+    - [{ url: '?staffel=628&r=4#p2258x2303', title: 'gegen TuS Bramsche', text: '4' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Spelle', url: '?mannschaft=2259', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=628&r=5#p2259x2261', title: 'gegen SG Oesede-Gmht.', text: 1½ }]
+    - [{ url: '?staffel=628&r=2#p2259x2274', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=628&r=1#p2259x2258', title: 'gegen SK Nordhorn-Bl.', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=628&r=4#p2259x2275', title: 'gegen SF Spelle 2', text: '3' }]
+    - [{ url: '?staffel=628&r=3#p2259x2303', title: 'gegen TuS Bramsche', text: '3' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=2275', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=628&r=1#p2275x2261', title: 'gegen SG Oesede-Gmht.', text: '0' }]
+    - [{ url: '?staffel=628&r=3#p2275x2274', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=628&r=2#p2275x2258', title: 'gegen SK Nordhorn-Bl.', text: '0' }]
+    - [{ url: '?staffel=628&r=4#p2275x2259', title: 'gegen SF Spelle', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=628&r=5#p2275x2303', title: 'gegen TuS Bramsche', text: '2' }]
+    - 1
+    - '3'
+    - ''
+-
+    - '6.'
+    - { text: 'TuS Bramsche', url: '?mannschaft=2303', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=628&r=2#p2303x2261', title: 'gegen SG Oesede-Gmht.', text: '0' }]
+    - [{ url: '?staffel=628&r=1#p2303x2274', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=628&r=4#p2303x2258', title: 'gegen SK Nordhorn-Bl.', text: '0' }]
+    - [{ url: '?staffel=628&r=3#p2303x2259', title: 'gegen SF Spelle', text: '1' }]
+    - [{ url: '?staffel=628&r=5#p2303x2275', title: 'gegen SF Spelle 2', text: '2' }]
+    - xxx
+    - 1
+    - '3'
+    - ''

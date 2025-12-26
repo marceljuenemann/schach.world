@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: Barsinghausen, url: '?mannschaft=5543', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1403&r=5#p5543x5781', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=1403&r=4#p5543x5664', title: 'gegen Eystrup/Stolzenau', text: 2½ }]
+    - [{ url: '?staffel=1403&r=2#p5543x5662', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=1403&r=1#p5543x5790', title: 'gegen SG Rinteln/Stadthage', text: 2½ }]
+    - [{ url: '?staffel=1403&r=6#p5543x5659', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=1403&r=7#p5543x5789', title: 'gegen SV Springe 2', text: '2' }]
+    - 11
+    - '16'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=5781', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1403&r=5#p5781x5543', title: 'gegen Barsinghausen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1403&r=6#p5781x5664', title: 'gegen Eystrup/Stolzenau', text: 2½ }]
+    - [{ url: '?staffel=1403&r=4#p5781x5662', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=1403&r=3#p5781x5790', title: 'gegen SG Rinteln/Stadthage', text: '3' }]
+    - [{ url: '?staffel=1403&r=1#p5781x5659', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=1403&r=2#p5781x5789', title: 'gegen SV Springe 2', text: '3' }]
+    - 10
+    - '17'
+    - ''
+-
+    - '3.'
+    - { text: Eystrup/Stolzenau, url: '?mannschaft=5664', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1403&r=4#p5664x5543', title: 'gegen Barsinghausen', text: 1½ }]
+    - [{ url: '?staffel=1403&r=6#p5664x5781', title: 'gegen SK Lehrte 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1403&r=3#p5664x5662', title: 'gegen Schachakademie', text: '2' }]
+    - [{ url: '?staffel=1403&r=2#p5664x5790', title: 'gegen SG Rinteln/Stadthage', text: '3' }]
+    - [{ url: '?staffel=1403&r=7#p5664x5659', title: 'gegen TuS Wunstorf', text: ½ }]
+    - [{ url: '?staffel=1403&r=1#p5664x5789', title: 'gegen SV Springe 2', text: '3' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: Schachakademie, url: '?mannschaft=5662', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1403&r=2#p5662x5543', title: 'gegen Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=1403&r=4#p5662x5781', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1403&r=3#p5662x5664', title: 'gegen Eystrup/Stolzenau', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1403&r=7#p5662x5790', title: 'gegen SG Rinteln/Stadthage', text: '2' }]
+    - [{ url: '?staffel=1403&r=5#p5662x5659', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=1403&r=6#p5662x5789', title: 'gegen SV Springe 2', text: '2' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Rinteln/Stadthage', url: '?mannschaft=5790', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1403&r=1#p5790x5543', title: 'gegen Barsinghausen', text: 1½ }]
+    - [{ url: '?staffel=1403&r=3#p5790x5781', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=1403&r=2#p5790x5664', title: 'gegen Eystrup/Stolzenau', text: '1' }]
+    - [{ url: '?staffel=1403&r=7#p5790x5662', title: 'gegen Schachakademie', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1403&r=4#p5790x5659', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=1403&r=5#p5790x5789', title: 'gegen SV Springe 2', text: '2' }]
+    - 4
+    - 11½
+    - ''
+-
+    - '6.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=5659', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1403&r=6#p5659x5543', title: 'gegen Barsinghausen', text: 1½ }]
+    - [{ url: '?staffel=1403&r=1#p5659x5781', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1403&r=7#p5659x5664', title: 'gegen Eystrup/Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=1403&r=5#p5659x5662', title: 'gegen Schachakademie', text: '0' }]
+    - [{ url: '?staffel=1403&r=4#p5659x5790', title: 'gegen SG Rinteln/Stadthage', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1403&r=3#p5659x5789', title: 'gegen SV Springe 2', text: 3½ }]
+    - 4
+    - 8½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Springe 2', url: '?mannschaft=5789', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1403&r=7#p5789x5543', title: 'gegen Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=1403&r=2#p5789x5781', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=1403&r=1#p5789x5664', title: 'gegen Eystrup/Stolzenau', text: '1' }]
+    - [{ url: '?staffel=1403&r=6#p5789x5662', title: 'gegen Schachakademie', text: '2' }]
+    - [{ url: '?staffel=1403&r=5#p5789x5790', title: 'gegen SG Rinteln/Stadthage', text: '2' }]
+    - [{ url: '?staffel=1403&r=3#p5789x5659', title: 'gegen TuS Wunstorf', text: ½ }]
+    - xxx
+    - 3
+    - 8½
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=2132', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=605&r=1#p2132x2131', title: 'gegen Osterode-Südharz 2', text: '2' }, { url: '?staffel=605&r=6#p2132x2131', title: 'gegen Osterode-Südharz 2', text: 2½ }]
+    - [{ url: '?staffel=605&r=5#p2132x2129', title: 'gegen WSV Clausthal-Z 2', text: '2' }, { url: '?staffel=605&r=10#p2132x2129', title: 'gegen WSV Clausthal-Z 2', text: 2½ }]
+    - [{ url: '?staffel=605&r=4#p2132x2133', title: 'gegen VfL Oker', text: '3' }, { url: '?staffel=605&r=9#p2132x2133', title: 'gegen VfL Oker', text: '1' }]
+    - [{ url: '?staffel=605&r=3#p2132x2130', title: 'gegen KSV Rochade GÖ 3', text: 3½ }, { url: '?staffel=605&r=8#p2132x2130', title: 'gegen KSV Rochade GÖ 3', text: '2' }]
+    - [{ url: '?staffel=605&r=2#p2132x2134', title: 'gegen SK Bad Harzburg 4', text: '4' }, { url: '?staffel=605&r=7#p2132x2134', title: 'gegen SK Bad Harzburg 4', text: '4' }]
+    - 15
+    - 26½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Osterode-Südharz 2', url: '?mannschaft=2131', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=605&r=1#p2131x2132', title: 'gegen SK Goslar 2', text: '2' }, { url: '?staffel=605&r=6#p2131x2132', title: 'gegen SK Goslar 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=605&r=2#p2131x2129', title: 'gegen WSV Clausthal-Z 2', text: '2' }, { url: '?staffel=605&r=7#p2131x2129', title: 'gegen WSV Clausthal-Z 2', text: '2' }]
+    - [{ url: '?staffel=605&r=3#p2131x2133', title: 'gegen VfL Oker', text: ½ }, { url: '?staffel=605&r=8#p2131x2133', title: 'gegen VfL Oker', text: '3' }]
+    - [{ url: '?staffel=605&r=5#p2131x2130', title: 'gegen KSV Rochade GÖ 3', text: '3' }, { url: '?staffel=605&r=10#p2131x2130', title: 'gegen KSV Rochade GÖ 3', text: '4' }]
+    - [{ url: '?staffel=605&r=4#p2131x2134', title: 'gegen SK Bad Harzburg 4', text: '3' }, { url: '?staffel=605&r=9#p2131x2134', title: 'gegen SK Bad Harzburg 4', text: '4' }]
+    - 13
+    - '25'
+    - ''
+-
+    - '3.'
+    - { text: 'WSV Clausthal-Z 2', url: '?mannschaft=2129', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=605&r=5#p2129x2132', title: 'gegen SK Goslar 2', text: '2' }, { url: '?staffel=605&r=10#p2129x2132', title: 'gegen SK Goslar 2', text: 1½ }]
+    - [{ url: '?staffel=605&r=2#p2129x2131', title: 'gegen Osterode-Südharz 2', text: '2' }, { url: '?staffel=605&r=7#p2129x2131', title: 'gegen Osterode-Südharz 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=605&r=1#p2129x2133', title: 'gegen VfL Oker', text: '3' }, { url: '?staffel=605&r=6#p2129x2133', title: 'gegen VfL Oker', text: '1' }]
+    - [{ url: '?staffel=605&r=4#p2129x2130', title: 'gegen KSV Rochade GÖ 3', text: '2' }, { url: '?staffel=605&r=9#p2129x2130', title: 'gegen KSV Rochade GÖ 3', text: '2' }]
+    - [{ url: '?staffel=605&r=3#p2129x2134', title: 'gegen SK Bad Harzburg 4', text: '4' }, { url: '?staffel=605&r=8#p2129x2134', title: 'gegen SK Bad Harzburg 4', text: '3' }]
+    - 11
+    - 22½
+    - ''
+-
+    - '4.'
+    - { text: 'VfL Oker', url: '?mannschaft=2133', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=605&r=4#p2133x2132', title: 'gegen SK Goslar 2', text: '1' }, { url: '?staffel=605&r=9#p2133x2132', title: 'gegen SK Goslar 2', text: '3' }]
+    - [{ url: '?staffel=605&r=3#p2133x2131', title: 'gegen Osterode-Südharz 2', text: 3½ }, { url: '?staffel=605&r=8#p2133x2131', title: 'gegen Osterode-Südharz 2', text: '1' }]
+    - [{ url: '?staffel=605&r=1#p2133x2129', title: 'gegen WSV Clausthal-Z 2', text: '1' }, { url: '?staffel=605&r=6#p2133x2129', title: 'gegen WSV Clausthal-Z 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=605&r=2#p2133x2130', title: 'gegen KSV Rochade GÖ 3', text: '1' }, { url: '?staffel=605&r=7#p2133x2130', title: 'gegen KSV Rochade GÖ 3', text: '2' }]
+    - [{ url: '?staffel=605&r=5#p2133x2134', title: 'gegen SK Bad Harzburg 4', text: '2' }, { url: '?staffel=605&r=10#p2133x2134', title: 'gegen SK Bad Harzburg 4', text: '3' }]
+    - 10
+    - 20½
+    - ''
+-
+    - '5.'
+    - { text: 'KSV Rochade GÖ 3', url: '?mannschaft=2130', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=605&r=3#p2130x2132', title: 'gegen SK Goslar 2', text: ½ }, { url: '?staffel=605&r=8#p2130x2132', title: 'gegen SK Goslar 2', text: '2' }]
+    - [{ url: '?staffel=605&r=5#p2130x2131', title: 'gegen Osterode-Südharz 2', text: '1' }, { url: '?staffel=605&r=10#p2130x2131', title: 'gegen Osterode-Südharz 2', text: '0' }]
+    - [{ url: '?staffel=605&r=4#p2130x2129', title: 'gegen WSV Clausthal-Z 2', text: '2' }, { url: '?staffel=605&r=9#p2130x2129', title: 'gegen WSV Clausthal-Z 2', text: '2' }]
+    - [{ url: '?staffel=605&r=2#p2130x2133', title: 'gegen VfL Oker', text: '3' }, { url: '?staffel=605&r=7#p2130x2133', title: 'gegen VfL Oker', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=605&r=1#p2130x2134', title: 'gegen SK Bad Harzburg 4', text: 2½ }, { url: '?staffel=605&r=6#p2130x2134', title: 'gegen SK Bad Harzburg 4', text: 3½ }]
+    - 10
+    - 18½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Bad Harzburg 4', url: '?mannschaft=2134', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=605&r=2#p2134x2132', title: 'gegen SK Goslar 2', text: '0' }, { url: '?staffel=605&r=7#p2134x2132', title: 'gegen SK Goslar 2', text: '0' }]
+    - [{ url: '?staffel=605&r=4#p2134x2131', title: 'gegen Osterode-Südharz 2', text: '1' }, { url: '?staffel=605&r=9#p2134x2131', title: 'gegen Osterode-Südharz 2', text: '0' }]
+    - [{ url: '?staffel=605&r=3#p2134x2129', title: 'gegen WSV Clausthal-Z 2', text: '0' }, { url: '?staffel=605&r=8#p2134x2129', title: 'gegen WSV Clausthal-Z 2', text: '1' }]
+    - [{ url: '?staffel=605&r=5#p2134x2133', title: 'gegen VfL Oker', text: '2' }, { url: '?staffel=605&r=10#p2134x2133', title: 'gegen VfL Oker', text: '1' }]
+    - [{ url: '?staffel=605&r=1#p2134x2130', title: 'gegen KSV Rochade GÖ 3', text: 1½ }, { url: '?staffel=605&r=6#p2134x2130', title: 'gegen KSV Rochade GÖ 3', text: ½ }]
+    - xxx
+    - 1
+    - '7'
+    - ''

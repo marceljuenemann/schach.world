@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'PSC Hannover 3', url: '?mannschaft=907', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=457&r=2#p907x766', title: 'gegen SK Lehrte 4', text: 5½ }]
+    - [{ url: '?staffel=457&r=3#p907x915', title: 'gegen SG WB Eilenriede 4', text: '6' }]
+    - [{ url: '?staffel=457&r=7#p907x749', title: 'gegen SK Neustadt 2', text: 7½ }]
+    - [{ url: '?staffel=457&r=1#p907x753', title: 'gegen SK Stolzenau 2', text: '6' }]
+    - [{ url: '?staffel=457&r=6#p907x792', title: 'gegen SF Hannover 5', text: 5½ }]
+    - [{ url: '?staffel=457&r=5#p907x780', title: 'gegen SK Lister Turm 4', text: 6½ }]
+    - [{ url: '?staffel=457&r=4#p907x911', title: 'gegen SK Ricklingen 4', text: 7½ }]
+    - 14
+    - 44½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=766', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=457&r=2#p766x907', title: 'gegen PSC Hannover 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=457&r=6#p766x915', title: 'gegen SG WB Eilenriede 4', text: '5' }]
+    - [{ url: '?staffel=457&r=3#p766x749', title: 'gegen SK Neustadt 2', text: '4' }]
+    - [{ url: '?staffel=457&r=4#p766x753', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - [{ url: '?staffel=457&r=5#p766x792', title: 'gegen SF Hannover 5', text: '6' }]
+    - [{ url: '?staffel=457&r=1#p766x780', title: 'gegen SK Lister Turm 4', text: 4½ }]
+    - [{ url: '?staffel=457&r=7#p766x911', title: 'gegen SK Ricklingen 4', text: '6' }]
+    - 11
+    - '33'
+    - ''
+-
+    - '3.'
+    - { text: 'SG WB Eilenriede 4', url: '?mannschaft=915', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=457&r=3#p915x907', title: 'gegen PSC Hannover 3', text: '2' }]
+    - [{ url: '?staffel=457&r=6#p915x766', title: 'gegen SK Lehrte 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=457&r=4#p915x749', title: 'gegen SK Neustadt 2', text: '3' }]
+    - [{ url: '?staffel=457&r=5#p915x753', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - [{ url: '?staffel=457&r=7#p915x792', title: 'gegen SF Hannover 5', text: 4½ }]
+    - [{ url: '?staffel=457&r=2#p915x780', title: 'gegen SK Lister Turm 4', text: '5' }]
+    - [{ url: '?staffel=457&r=1#p915x911', title: 'gegen SK Ricklingen 4', text: 5½ }]
+    - 8
+    - '28'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Neustadt 2', url: '?mannschaft=749', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=457&r=7#p749x907', title: 'gegen PSC Hannover 3', text: ½ }]
+    - [{ url: '?staffel=457&r=3#p749x766', title: 'gegen SK Lehrte 4', text: '4' }]
+    - [{ url: '?staffel=457&r=4#p749x915', title: 'gegen SG WB Eilenriede 4', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=457&r=2#p749x753', title: 'gegen SK Stolzenau 2', text: ½ }]
+    - [{ url: '?staffel=457&r=1#p749x792', title: 'gegen SF Hannover 5', text: '3' }]
+    - [{ url: '?staffel=457&r=6#p749x780', title: 'gegen SK Lister Turm 4', text: '5' }]
+    - [{ url: '?staffel=457&r=5#p749x911', title: 'gegen SK Ricklingen 4', text: 5½ }]
+    - 7
+    - 23½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Stolzenau 2', url: '?mannschaft=753', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=457&r=1#p753x907', title: 'gegen PSC Hannover 3', text: '2' }]
+    - [{ url: '?staffel=457&r=4#p753x766', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=457&r=5#p753x915', title: 'gegen SG WB Eilenriede 4', text: '3' }]
+    - [{ url: '?staffel=457&r=2#p753x749', title: 'gegen SK Neustadt 2', text: 7½ }]
+    - xxx
+    - [{ url: '?staffel=457&r=3#p753x792', title: 'gegen SF Hannover 5', text: 2½ }]
+    - [{ url: '?staffel=457&r=7#p753x780', title: 'gegen SK Lister Turm 4', text: 4½ }]
+    - [{ url: '?staffel=457&r=6#p753x911', title: 'gegen SK Ricklingen 4', text: 5½ }]
+    - 6
+    - '28'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Hannover 5', url: '?mannschaft=792', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=457&r=6#p792x907', title: 'gegen PSC Hannover 3', text: 2½ }]
+    - [{ url: '?staffel=457&r=5#p792x766', title: 'gegen SK Lehrte 4', text: '2' }]
+    - [{ url: '?staffel=457&r=7#p792x915', title: 'gegen SG WB Eilenriede 4', text: 3½ }]
+    - [{ url: '?staffel=457&r=1#p792x749', title: 'gegen SK Neustadt 2', text: '5' }]
+    - [{ url: '?staffel=457&r=3#p792x753', title: 'gegen SK Stolzenau 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=457&r=4#p792x780', title: 'gegen SK Lister Turm 4', text: 1½ }]
+    - [{ url: '?staffel=457&r=2#p792x911', title: 'gegen SK Ricklingen 4', text: '4' }]
+    - 5
+    - '24'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Lister Turm 4', url: '?mannschaft=780', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=457&r=5#p780x907', title: 'gegen PSC Hannover 3', text: 1½ }]
+    - [{ url: '?staffel=457&r=1#p780x766', title: 'gegen SK Lehrte 4', text: 3½ }]
+    - [{ url: '?staffel=457&r=2#p780x915', title: 'gegen SG WB Eilenriede 4', text: '3' }]
+    - [{ url: '?staffel=457&r=6#p780x749', title: 'gegen SK Neustadt 2', text: '3' }]
+    - [{ url: '?staffel=457&r=7#p780x753', title: 'gegen SK Stolzenau 2', text: 3½ }]
+    - [{ url: '?staffel=457&r=4#p780x792', title: 'gegen SF Hannover 5', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=457&r=3#p780x911', title: 'gegen SK Ricklingen 4', text: '6' }]
+    - 4
+    - '27'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Ricklingen 4', url: '?mannschaft=911', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=457&r=4#p911x907', title: 'gegen PSC Hannover 3', text: ½ }]
+    - [{ url: '?staffel=457&r=7#p911x766', title: 'gegen SK Lehrte 4', text: '1' }]
+    - [{ url: '?staffel=457&r=1#p911x915', title: 'gegen SG WB Eilenriede 4', text: 2½ }]
+    - [{ url: '?staffel=457&r=5#p911x749', title: 'gegen SK Neustadt 2', text: 2½ }]
+    - [{ url: '?staffel=457&r=6#p911x753', title: 'gegen SK Stolzenau 2', text: 2½ }]
+    - [{ url: '?staffel=457&r=2#p911x792', title: 'gegen SF Hannover 5', text: '4' }]
+    - [{ url: '?staffel=457&r=3#p911x780', title: 'gegen SK Lister Turm 4', text: '2' }]
+    - xxx
+    - 1
+    - '15'
+    - ''

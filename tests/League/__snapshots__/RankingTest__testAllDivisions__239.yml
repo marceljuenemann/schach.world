@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Bl. 4', url: '?mannschaft=2386', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=670&r=6#p2386x2404', title: 'gegen SV Lingen 2', text: 5½ }]
+    - [{ url: '?staffel=670&r=4#p2386x2433', title: 'gegen SG Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=670&r=8#p2386x2457', title: 'gegen SF Spelle', text: 4½ }]
+    - [{ url: '?staffel=670&r=3#p2386x2452', title: 'gegen SV Osnabrück 2', text: '4' }]
+    - [{ url: '?staffel=670&r=1#p2386x2437', title: 'gegen Hagener SV 3', text: '8' }]
+    - [{ url: '?staffel=670&r=2#p2386x2391', title: 'gegen Ankum/Bersenbrü', text: '5' }]
+    - [{ url: '?staffel=670&r=5#p2386x2401', title: 'gegen TuS Bramsche', text: '5' }]
+    - [{ url: '?staffel=670&r=7#p2386x2421', title: 'gegen Bentheim/Nordho 2', text: '6' }]
+    - [{ url: '?staffel=670&r=9#p2386x2447', title: 'gegen SG Oesede-Gmht. 2', text: '4' }]
+    - 14
+    - '45'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=2404', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=670&r=6#p2404x2386', title: 'gegen SK Nordhorn-Bl. 4', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=670&r=5#p2404x2433', title: 'gegen SG Osnabrück 3', text: 4½ }]
+    - [{ url: '?staffel=670&r=9#p2404x2457', title: 'gegen SF Spelle', text: '3' }]
+    - [{ url: '?staffel=670&r=4#p2404x2452', title: 'gegen SV Osnabrück 2', text: '5' }]
+    - [{ url: '?staffel=670&r=2#p2404x2437', title: 'gegen Hagener SV 3', text: '5' }]
+    - [{ url: '?staffel=670&r=3#p2404x2391', title: 'gegen Ankum/Bersenbrü', text: '6' }]
+    - [{ url: '?staffel=670&r=7#p2404x2401', title: 'gegen TuS Bramsche', text: '6' }]
+    - [{ url: '?staffel=670&r=8#p2404x2421', title: 'gegen Bentheim/Nordho 2', text: '6' }]
+    - [{ url: '?staffel=670&r=1#p2404x2447', title: 'gegen SG Oesede-Gmht. 2', text: 5½ }]
+    - 14
+    - 43½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Osnabrück 3', url: '?mannschaft=2433', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=670&r=4#p2433x2386', title: 'gegen SK Nordhorn-Bl. 4', text: '5' }]
+    - [{ url: '?staffel=670&r=5#p2433x2404', title: 'gegen SV Lingen 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=670&r=7#p2433x2457', title: 'gegen SF Spelle', text: 3½ }]
+    - [{ url: '?staffel=670&r=2#p2433x2452', title: 'gegen SV Osnabrück 2', text: 5½ }]
+    - [{ url: '?staffel=670&r=9#p2433x2437', title: 'gegen Hagener SV 3', text: '6' }]
+    - [{ url: '?staffel=670&r=1#p2433x2391', title: 'gegen Ankum/Bersenbrü', text: 7½ }]
+    - [{ url: '?staffel=670&r=3#p2433x2401', title: 'gegen TuS Bramsche', text: '3' }]
+    - [{ url: '?staffel=670&r=6#p2433x2421', title: 'gegen Bentheim/Nordho 2', text: '8' }]
+    - [{ url: '?staffel=670&r=8#p2433x2447', title: 'gegen SG Oesede-Gmht. 2', text: '8' }]
+    - 12
+    - '50'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Spelle', url: '?mannschaft=2457', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=670&r=8#p2457x2386', title: 'gegen SK Nordhorn-Bl. 4', text: 3½ }]
+    - [{ url: '?staffel=670&r=9#p2457x2404', title: 'gegen SV Lingen 2', text: '5' }]
+    - [{ url: '?staffel=670&r=7#p2457x2433', title: 'gegen SG Osnabrück 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=670&r=6#p2457x2452', title: 'gegen SV Osnabrück 2', text: 3½ }]
+    - [{ url: '?staffel=670&r=4#p2457x2437', title: 'gegen Hagener SV 3', text: 2½ }]
+    - [{ url: '?staffel=670&r=5#p2457x2391', title: 'gegen Ankum/Bersenbrü', text: 4½ }]
+    - [{ url: '?staffel=670&r=2#p2457x2401', title: 'gegen TuS Bramsche', text: '7' }]
+    - [{ url: '?staffel=670&r=1#p2457x2421', title: 'gegen Bentheim/Nordho 2', text: 6½ }]
+    - [{ url: '?staffel=670&r=3#p2457x2447', title: 'gegen SG Oesede-Gmht. 2', text: '6' }]
+    - 12
+    - '43'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Osnabrück 2', url: '?mannschaft=2452', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=670&r=3#p2452x2386', title: 'gegen SK Nordhorn-Bl. 4', text: '4' }]
+    - [{ url: '?staffel=670&r=4#p2452x2404', title: 'gegen SV Lingen 2', text: '3' }]
+    - [{ url: '?staffel=670&r=2#p2452x2433', title: 'gegen SG Osnabrück 3', text: 2½ }]
+    - [{ url: '?staffel=670&r=6#p2452x2457', title: 'gegen SF Spelle', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=670&r=8#p2452x2437', title: 'gegen Hagener SV 3', text: 3½ }]
+    - [{ url: '?staffel=670&r=9#p2452x2391', title: 'gegen Ankum/Bersenbrü', text: '7' }]
+    - [{ url: '?staffel=670&r=1#p2452x2401', title: 'gegen TuS Bramsche', text: 5½ }]
+    - [{ url: '?staffel=670&r=5#p2452x2421', title: 'gegen Bentheim/Nordho 2', text: 5½ }]
+    - [{ url: '?staffel=670&r=7#p2452x2447', title: 'gegen SG Oesede-Gmht. 2', text: '5' }]
+    - 11
+    - 40½
+    - ''
+-
+    - '6.'
+    - { text: 'Hagener SV 3', url: '?mannschaft=2437', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=670&r=1#p2437x2386', title: 'gegen SK Nordhorn-Bl. 4', text: '0' }]
+    - [{ url: '?staffel=670&r=2#p2437x2404', title: 'gegen SV Lingen 2', text: '3' }]
+    - [{ url: '?staffel=670&r=9#p2437x2433', title: 'gegen SG Osnabrück 3', text: '2' }]
+    - [{ url: '?staffel=670&r=4#p2437x2457', title: 'gegen SF Spelle', text: 5½ }]
+    - [{ url: '?staffel=670&r=8#p2437x2452', title: 'gegen SV Osnabrück 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=670&r=7#p2437x2391', title: 'gegen Ankum/Bersenbrü', text: 3½ }]
+    - [{ url: '?staffel=670&r=6#p2437x2401', title: 'gegen TuS Bramsche', text: '5' }]
+    - [{ url: '?staffel=670&r=3#p2437x2421', title: 'gegen Bentheim/Nordho 2', text: 4½ }]
+    - [{ url: '?staffel=670&r=5#p2437x2447', title: 'gegen SG Oesede-Gmht. 2', text: '5' }]
+    - 10
+    - '33'
+    - ''
+-
+    - '7.'
+    - { text: Ankum/Bersenbrü, url: '?mannschaft=2391', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=670&r=2#p2391x2386', title: 'gegen SK Nordhorn-Bl. 4', text: '3' }]
+    - [{ url: '?staffel=670&r=3#p2391x2404', title: 'gegen SV Lingen 2', text: '2' }]
+    - [{ url: '?staffel=670&r=1#p2391x2433', title: 'gegen SG Osnabrück 3', text: ½ }]
+    - [{ url: '?staffel=670&r=5#p2391x2457', title: 'gegen SF Spelle', text: 3½ }]
+    - [{ url: '?staffel=670&r=9#p2391x2452', title: 'gegen SV Osnabrück 2', text: '1' }]
+    - [{ url: '?staffel=670&r=7#p2391x2437', title: 'gegen Hagener SV 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=670&r=8#p2391x2401', title: 'gegen TuS Bramsche', text: '6' }]
+    - [{ url: '?staffel=670&r=4#p2391x2421', title: 'gegen Bentheim/Nordho 2', text: 2½ }]
+    - [{ url: '?staffel=670&r=6#p2391x2447', title: 'gegen SG Oesede-Gmht. 2', text: '5' }]
+    - 6
+    - '28'
+    - ''
+-
+    - '8.'
+    - { text: 'TuS Bramsche', url: '?mannschaft=2401', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=670&r=5#p2401x2386', title: 'gegen SK Nordhorn-Bl. 4', text: '3' }]
+    - [{ url: '?staffel=670&r=7#p2401x2404', title: 'gegen SV Lingen 2', text: '2' }]
+    - [{ url: '?staffel=670&r=3#p2401x2433', title: 'gegen SG Osnabrück 3', text: '5' }]
+    - [{ url: '?staffel=670&r=2#p2401x2457', title: 'gegen SF Spelle', text: '1' }]
+    - [{ url: '?staffel=670&r=1#p2401x2452', title: 'gegen SV Osnabrück 2', text: 2½ }]
+    - [{ url: '?staffel=670&r=6#p2401x2437', title: 'gegen Hagener SV 3', text: '3' }]
+    - [{ url: '?staffel=670&r=8#p2401x2391', title: 'gegen Ankum/Bersenbrü', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=670&r=9#p2401x2421', title: 'gegen Bentheim/Nordho 2', text: '5' }]
+    - [{ url: '?staffel=670&r=4#p2401x2447', title: 'gegen SG Oesede-Gmht. 2', text: 1½ }]
+    - 4
+    - '25'
+    - ''
+-
+    - '9.'
+    - { text: 'Bentheim/Nordho 2', url: '?mannschaft=2421', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=670&r=7#p2421x2386', title: 'gegen SK Nordhorn-Bl. 4', text: '2' }]
+    - [{ url: '?staffel=670&r=8#p2421x2404', title: 'gegen SV Lingen 2', text: '2' }]
+    - [{ url: '?staffel=670&r=6#p2421x2433', title: 'gegen SG Osnabrück 3', text: '0' }]
+    - [{ url: '?staffel=670&r=1#p2421x2457', title: 'gegen SF Spelle', text: 1½ }]
+    - [{ url: '?staffel=670&r=5#p2421x2452', title: 'gegen SV Osnabrück 2', text: 2½ }]
+    - [{ url: '?staffel=670&r=3#p2421x2437', title: 'gegen Hagener SV 3', text: 3½ }]
+    - [{ url: '?staffel=670&r=4#p2421x2391', title: 'gegen Ankum/Bersenbrü', text: 5½ }]
+    - [{ url: '?staffel=670&r=9#p2421x2401', title: 'gegen TuS Bramsche', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=670&r=2#p2421x2447', title: 'gegen SG Oesede-Gmht. 2', text: '5' }]
+    - 4
+    - '25'
+    - ''
+-
+    - '10.'
+    - { text: 'SG Oesede-Gmht. 2', url: '?mannschaft=2447', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=670&r=9#p2447x2386', title: 'gegen SK Nordhorn-Bl. 4', text: '4' }]
+    - [{ url: '?staffel=670&r=1#p2447x2404', title: 'gegen SV Lingen 2', text: 2½ }]
+    - [{ url: '?staffel=670&r=8#p2447x2433', title: 'gegen SG Osnabrück 3', text: '0' }]
+    - [{ url: '?staffel=670&r=3#p2447x2457', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=670&r=7#p2447x2452', title: 'gegen SV Osnabrück 2', text: '3' }]
+    - [{ url: '?staffel=670&r=5#p2447x2437', title: 'gegen Hagener SV 3', text: '3' }]
+    - [{ url: '?staffel=670&r=6#p2447x2391', title: 'gegen Ankum/Bersenbrü', text: '3' }]
+    - [{ url: '?staffel=670&r=4#p2447x2401', title: 'gegen TuS Bramsche', text: 6½ }]
+    - [{ url: '?staffel=670&r=2#p2447x2421', title: 'gegen Bentheim/Nordho 2', text: '3' }]
+    - xxx
+    - 3
+    - '27'
+    - ''

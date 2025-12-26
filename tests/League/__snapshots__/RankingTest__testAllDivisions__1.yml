@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Springe', url: '?mannschaft=208', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=201&r=5#p208x201', title: 'gegen SK Neustadt', text: 3½ }]
+    - [{ url: '?staffel=201&r=1#p208x211', title: 'gegen TuS Wunstorf', text: 5½ }]
+    - [{ url: '?staffel=201&r=3#p208x206', title: 'gegen SV Bückeburg 3', text: '4' }]
+    - [{ url: '?staffel=201&r=4#p208x203', title: 'gegen Barsinghausen 2', text: '5' }]
+    - 8
+    - '18'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Neustadt', url: '?mannschaft=201', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=201&r=5#p201x208', title: 'gegen SV Springe', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=201&r=4#p201x211', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=201&r=2#p201x206', title: 'gegen SV Bückeburg 3', text: '6' }]
+    - [{ url: '?staffel=201&r=3#p201x203', title: 'gegen Barsinghausen 2', text: '6' }]
+    - 6
+    - 18½
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=211', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=201&r=1#p211x208', title: 'gegen SV Springe', text: ½ }]
+    - [{ url: '?staffel=201&r=4#p211x201', title: 'gegen SK Neustadt', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=201&r=5#p211x206', title: 'gegen SV Bückeburg 3', text: '3' }]
+    - [{ url: '?staffel=201&r=2#p211x203', title: 'gegen Barsinghausen 2', text: 4½ }]
+    - 3
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bückeburg 3', url: '?mannschaft=206', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=201&r=3#p206x208', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=201&r=2#p206x201', title: 'gegen SK Neustadt', text: '0' }]
+    - [{ url: '?staffel=201&r=5#p206x211', title: 'gegen TuS Wunstorf', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=201&r=1#p206x203', title: 'gegen Barsinghausen 2', text: 3½ }]
+    - 3
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'Barsinghausen 2', url: '?mannschaft=203', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=201&r=4#p203x208', title: 'gegen SV Springe', text: '1' }]
+    - [{ url: '?staffel=201&r=3#p203x201', title: 'gegen SK Neustadt', text: '0' }]
+    - [{ url: '?staffel=201&r=2#p203x211', title: 'gegen TuS Wunstorf', text: 1½ }]
+    - [{ url: '?staffel=201&r=1#p203x206', title: 'gegen SV Bückeburg 3', text: 2½ }]
+    - xxx
+    - 0
+    - '5'
+    - ''

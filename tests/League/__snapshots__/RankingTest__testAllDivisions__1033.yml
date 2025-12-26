@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SFB Team Spirits', url: '?mannschaft=8503', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1883&r=3#p8503x8372', title: 'gegen SK Lehrte 3', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1883&r=1#p8503x8504', title: 'gegen SFB Team Pioneers 2', text: '4' }]
+    - [{ url: '?staffel=1883&r=2#p8503x8451', title: 'gegen SV Warmsen', text: '3' }]
+    - {  }
+    - {  }
+    - 4
+    - '8'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=8372', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1883&r=3#p8372x8503', title: 'gegen SFB Team Spirits', text: '3' }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1883&r=2#p8372x8459', title: 'gegen SK Wennigsen', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 4
+    - '7'
+    - ''
+-
+    - '3.'
+    - { text: 'SV FB Wedemark', url: '?mannschaft=8202', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1883&r=2#p8202x8468', title: 'gegen SK Anderten', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1883&r=1#p8202x8548', title: 'gegen TuS Wunstorf 2', text: '3' }]
+    - {  }
+    - 4
+    - 5½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Anderten', url: '?mannschaft=8468', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1883&r=2#p8468x8202', title: 'gegen SV FB Wedemark', text: 1½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1883&r=3#p8468x8504', title: 'gegen SFB Team Pioneers 2', text: '2' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1883&r=1#p8468x8505', title: 'gegen SK Rinteln', text: '2' }]
+    - 2
+    - 5½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=8459', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1883&r=2#p8459x8372', title: 'gegen SK Lehrte 3', text: '0' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1883&r=1#p8459x8451', title: 'gegen SV Warmsen', text: '4' }]
+    - {  }
+    - {  }
+    - 2
+    - '4'
+    - ''
+-
+    - '5.'
+    - { text: 'SFB Team Pioneers 2', url: '?mannschaft=8504', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1883&r=1#p8504x8503', title: 'gegen SFB Team Spirits', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1883&r=3#p8504x8468', title: 'gegen SK Anderten', text: '2' }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1883&r=2#p8504x8548', title: 'gegen TuS Wunstorf 2', text: '2' }]
+    - {  }
+    - 2
+    - '4'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Warmsen', url: '?mannschaft=8451', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1883&r=2#p8451x8503', title: 'gegen SFB Team Spirits', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1883&r=1#p8451x8459', title: 'gegen SK Wennigsen', text: '0' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1883&r=3#p8451x8548', title: 'gegen TuS Wunstorf 2', text: 2½ }]
+    - {  }
+    - 2
+    - 3½
+    - ''
+-
+    - '8.'
+    - { text: 'TuS Wunstorf 2', url: '?mannschaft=8548', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1883&r=1#p8548x8202', title: 'gegen SV FB Wedemark', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1883&r=2#p8548x8504', title: 'gegen SFB Team Pioneers 2', text: '2' }]
+    - [{ url: '?staffel=1883&r=3#p8548x8451', title: 'gegen SV Warmsen', text: 1½ }]
+    - xxx
+    - {  }
+    - 1
+    - 4½
+    - ''
+-
+    - '9.'
+    - { text: 'SK Rinteln', url: '?mannschaft=8505', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1883&r=1#p8505x8468', title: 'gegen SK Anderten', text: '2' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 1
+    - '2'
+    - ''

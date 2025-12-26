@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=5804', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1360&r=1#p5804x5809', title: 'gegen SZ Bemerode 2', text: '3' }]
+    - [{ url: '?staffel=1360&r=3#p5804x5800', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1360&r=1#p5804x5810', title: 'gegen SZ Bemerode 3', text: '3' }]
+    - [{ url: '?staffel=1360&r=5#p5804x5601', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=1360&r=3#p5804x5801', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1360&r=2#p5804x5776', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=1360&r=2#p5804x5831', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1360&r=4#p5804x5660', title: 'gegen Schachakademie', text: 3½ }]
+    - [{ url: '?staffel=1360&r=4#p5804x5661', title: 'gegen Schachakademie 2', text: '4' }]
+    - 16
+    - 28½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=5809', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1360&r=1#p5809x5804', title: 'gegen SZ Bemerode', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1360&r=4#p5809x5800', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=1360&r=2#p5809x5810', title: 'gegen SZ Bemerode 3', text: '2' }]
+    - [{ url: '?staffel=1360&r=1#p5809x5601', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=1360&r=4#p5809x5801', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - [{ url: '?staffel=1360&r=3#p5809x5776', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=1360&r=3#p5809x5831', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1360&r=5#p5809x5660', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=1360&r=5#p5809x5661', title: 'gegen Schachakademie 2', text: '4' }]
+    - 15
+    - '28'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte', url: '?mannschaft=5800', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1360&r=3#p5800x5804', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1360&r=4#p5800x5809', title: 'gegen SZ Bemerode 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1360&r=4#p5800x5810', title: 'gegen SZ Bemerode 3', text: 3½ }]
+    - [{ url: '?staffel=1360&r=3#p5800x5601', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=1360&r=1#p5800x5801', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1360&r=5#p5800x5776', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=1360&r=5#p5800x5831', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1360&r=2#p5800x5660', title: 'gegen Schachakademie', text: '3' }]
+    - [{ url: '?staffel=1360&r=2#p5800x5661', title: 'gegen Schachakademie 2', text: '4' }]
+    - 14
+    - '29'
+    - ''
+-
+    - '4.'
+    - { text: 'SZ Bemerode 3', url: '?mannschaft=5810', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1360&r=1#p5810x5804', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1360&r=2#p5810x5809', title: 'gegen SZ Bemerode 2', text: '2' }]
+    - [{ url: '?staffel=1360&r=4#p5810x5800', title: 'gegen SK Lehrte', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1360&r=1#p5810x5601', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=1360&r=4#p5810x5801', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=1360&r=3#p5810x5776', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=1360&r=3#p5810x5831', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1360&r=5#p5810x5660', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=1360&r=5#p5810x5661', title: 'gegen Schachakademie 2', text: '4' }]
+    - 13
+    - 25½
+    - ''
+-
+    - '5.'
+    - { text: 'Hannover 96', url: '?mannschaft=5601', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1360&r=5#p5601x5804', title: 'gegen SZ Bemerode', text: '3' }]
+    - [{ url: '?staffel=1360&r=1#p5601x5809', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1360&r=3#p5601x5800', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1360&r=1#p5601x5810', title: 'gegen SZ Bemerode 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1360&r=3#p5601x5801', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1360&r=2#p5601x5776', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=1360&r=2#p5601x5831', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1360&r=4#p5601x5660', title: 'gegen Schachakademie', text: 3½ }]
+    - [{ url: '?staffel=1360&r=4#p5601x5661', title: 'gegen Schachakademie 2', text: '4' }]
+    - 12
+    - 23½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=5801', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1360&r=3#p5801x5804', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1360&r=4#p5801x5809', title: 'gegen SZ Bemerode 2', text: ½ }]
+    - [{ url: '?staffel=1360&r=1#p5801x5800', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1360&r=4#p5801x5810', title: 'gegen SZ Bemerode 3', text: '1' }]
+    - [{ url: '?staffel=1360&r=3#p5801x5601', title: 'gegen Hannover 96', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1360&r=5#p5801x5776', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=1360&r=5#p5801x5831', title: 'gegen SK Rinteln 2', text: '2' }]
+    - [{ url: '?staffel=1360&r=2#p5801x5660', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=1360&r=2#p5801x5661', title: 'gegen Schachakademie 2', text: '4' }]
+    - 7
+    - 14½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Rinteln', url: '?mannschaft=5776', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1360&r=2#p5776x5804', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1360&r=3#p5776x5809', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1360&r=5#p5776x5800', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1360&r=3#p5776x5810', title: 'gegen SZ Bemerode 3', text: '0' }]
+    - [{ url: '?staffel=1360&r=2#p5776x5601', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=1360&r=5#p5776x5801', title: 'gegen SK Lehrte 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1360&r=4#p5776x5831', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1360&r=1#p5776x5660', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=1360&r=1#p5776x5661', title: 'gegen Schachakademie 2', text: '4' }]
+    - 6
+    - '15'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=5831', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1360&r=2#p5831x5804', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1360&r=3#p5831x5809', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1360&r=5#p5831x5800', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1360&r=3#p5831x5810', title: 'gegen SZ Bemerode 3', text: '0' }]
+    - [{ url: '?staffel=1360&r=2#p5831x5601', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=1360&r=5#p5831x5801', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1360&r=4#p5831x5776', title: 'gegen SK Rinteln', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1360&r=1#p5831x5660', title: 'gegen Schachakademie', text: '4' }]
+    - [{ url: '?staffel=1360&r=1#p5831x5661', title: 'gegen Schachakademie 2', text: '4' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '9.'
+    - { text: Schachakademie, url: '?mannschaft=5660', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1360&r=4#p5660x5804', title: 'gegen SZ Bemerode', text: ½ }]
+    - [{ url: '?staffel=1360&r=5#p5660x5809', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1360&r=2#p5660x5800', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1360&r=5#p5660x5810', title: 'gegen SZ Bemerode 3', text: '0' }]
+    - [{ url: '?staffel=1360&r=4#p5660x5601', title: 'gegen Hannover 96', text: ½ }]
+    - [{ url: '?staffel=1360&r=2#p5660x5801', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1360&r=1#p5660x5776', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=1360&r=1#p5660x5831', title: 'gegen SK Rinteln 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1360&r=3#p5660x5661', title: 'gegen Schachakademie 2', text: '3' }]
+    - 2
+    - '5'
+    - ''
+-
+    - '10.'
+    - { text: 'Schachakademie 2', url: '?mannschaft=5661', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1360&r=4#p5661x5804', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1360&r=5#p5661x5809', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1360&r=2#p5661x5800', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1360&r=5#p5661x5810', title: 'gegen SZ Bemerode 3', text: '0' }]
+    - [{ url: '?staffel=1360&r=4#p5661x5601', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=1360&r=2#p5661x5801', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1360&r=1#p5661x5776', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=1360&r=1#p5661x5831', title: 'gegen SK Rinteln 2', text: '0' }]
+    - [{ url: '?staffel=1360&r=3#p5661x5660', title: 'gegen Schachakademie', text: '1' }]
+    - xxx
+    - 0
+    - '1'
+    - ''

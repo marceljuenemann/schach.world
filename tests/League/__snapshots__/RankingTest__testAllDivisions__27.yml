@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=603', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=423&r=2#p603x605', title: 'gegen HSK-Post SV', text: '2' }]
+    - [{ url: '?staffel=423&r=5#p603x596', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=423&r=4#p603x604', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=423&r=3#p603x612', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=423&r=1#p603x597', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - 9
+    - '15'
+    - ''
+-
+    - '2.'
+    - { text: 'HSK-Post SV', url: '?mannschaft=605', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=423&r=2#p605x603', title: 'gegen SV Bückeburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=423&r=4#p605x596', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=423&r=1#p605x604', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=423&r=5#p605x612', title: 'gegen SK Anderten', text: 1½ }]
+    - [{ url: '?staffel=423&r=3#p605x597', title: 'gegen SK Lehrte 2', text: '3' }]
+    - 7
+    - '12'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte', url: '?mannschaft=596', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=423&r=5#p596x603', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=423&r=4#p596x605', title: 'gegen HSK-Post SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=423&r=3#p596x604', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=423&r=1#p596x612', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=423&r=2#p596x597', title: 'gegen SK Lehrte 2', text: '3' }]
+    - 6
+    - 12½
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=604', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=423&r=4#p604x603', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=423&r=1#p604x605', title: 'gegen HSK-Post SV', text: '0' }]
+    - [{ url: '?staffel=423&r=3#p604x596', title: 'gegen SK Lehrte', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=423&r=2#p604x612', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=423&r=5#p604x597', title: 'gegen SK Lehrte 2', text: '3' }]
+    - 4
+    - 7½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Anderten', url: '?mannschaft=612', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=423&r=3#p612x603', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=423&r=5#p612x605', title: 'gegen HSK-Post SV', text: 2½ }]
+    - [{ url: '?staffel=423&r=1#p612x596', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=423&r=2#p612x604', title: 'gegen SD Isernhagen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=423&r=4#p612x597', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 4
+    - 7½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=597', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=423&r=1#p597x603', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=423&r=3#p597x605', title: 'gegen HSK-Post SV', text: '1' }]
+    - [{ url: '?staffel=423&r=2#p597x596', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=423&r=5#p597x604', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=423&r=4#p597x612', title: 'gegen SK Anderten', text: '0' }]
+    - xxx
+    - 0
+    - 4½
+    - ''

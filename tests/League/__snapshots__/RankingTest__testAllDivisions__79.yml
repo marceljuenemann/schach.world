@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV 5', url: '?mannschaft=1048', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=492&r=3#p1048x1074', title: 'gegen SV Hellern 4', text: '3' }]
+    - [{ url: '?staffel=492&r=6#p1048x1041', title: 'gegen IGM Osnabrück 4', text: 3½ }]
+    - [{ url: '?staffel=492&r=4#p1048x1043', title: 'gegen TSV Riemsloh 2', text: '3' }]
+    - [{ url: '?staffel=492&r=1#p1048x1071', title: 'gegen Ankum/Bersenbrü 2', text: '2' }]
+    - [{ url: '?staffel=492&r=5#p1048x1049', title: 'gegen SC Melle 3', text: '2' }]
+    - [{ url: '?staffel=492&r=2#p1048x1053', title: 'gegen SG Oesede-Gmht. 4', text: '6' }]
+    - [{ url: '?staffel=492&r=7#p1048x1061', title: 'gegen SC Fürstenau 3', text: '6' }]
+    - 9
+    - 25½
+    - ''
+-
+    - '2.'
+    - { text: 'SV Hellern 4', url: '?mannschaft=1074', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=492&r=3#p1074x1048', title: 'gegen Hagener SV 5', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=492&r=7#p1074x1041', title: 'gegen IGM Osnabrück 4', text: '2' }]
+    - [{ url: '?staffel=492&r=1#p1074x1043', title: 'gegen TSV Riemsloh 2', text: '5' }]
+    - [{ url: '?staffel=492&r=5#p1074x1071', title: 'gegen Ankum/Bersenbrü 2', text: '5' }]
+    - [{ url: '?staffel=492&r=2#p1074x1049', title: 'gegen SC Melle 3', text: '3' }]
+    - [{ url: '?staffel=492&r=6#p1074x1053', title: 'gegen SG Oesede-Gmht. 4', text: '4' }]
+    - [{ url: '?staffel=492&r=4#p1074x1061', title: 'gegen SC Fürstenau 3', text: '3' }]
+    - 9
+    - '25'
+    - ''
+-
+    - '3.'
+    - { text: 'IGM Osnabrück 4', url: '?mannschaft=1041', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=492&r=6#p1041x1048', title: 'gegen Hagener SV 5', text: 2½ }]
+    - [{ url: '?staffel=492&r=7#p1041x1074', title: 'gegen SV Hellern 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=492&r=2#p1041x1043', title: 'gegen TSV Riemsloh 2', text: '2' }]
+    - [{ url: '?staffel=492&r=3#p1041x1071', title: 'gegen Ankum/Bersenbrü 2', text: '4' }]
+    - [{ url: '?staffel=492&r=4#p1041x1049', title: 'gegen SC Melle 3', text: '2' }]
+    - [{ url: '?staffel=492&r=5#p1041x1053', title: 'gegen SG Oesede-Gmht. 4', text: '5' }]
+    - [{ url: '?staffel=492&r=1#p1041x1061', title: 'gegen SC Fürstenau 3', text: '4' }]
+    - 8
+    - 23½
+    - ''
+-
+    - '4.'
+    - { text: 'TSV Riemsloh 2', url: '?mannschaft=1043', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=492&r=4#p1043x1048', title: 'gegen Hagener SV 5', text: '3' }]
+    - [{ url: '?staffel=492&r=1#p1043x1074', title: 'gegen SV Hellern 4', text: '1' }]
+    - [{ url: '?staffel=492&r=2#p1043x1041', title: 'gegen IGM Osnabrück 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=492&r=6#p1043x1071', title: 'gegen Ankum/Bersenbrü 2', text: '3' }]
+    - [{ url: '?staffel=492&r=3#p1043x1049', title: 'gegen SC Melle 3', text: 3½ }]
+    - [{ url: '?staffel=492&r=7#p1043x1053', title: 'gegen SG Oesede-Gmht. 4', text: '1' }]
+    - [{ url: '?staffel=492&r=5#p1043x1061', title: 'gegen SC Fürstenau 3', text: 5½ }]
+    - 8
+    - '21'
+    - ''
+-
+    - '5.'
+    - { text: 'Ankum/Bersenbrü 2', url: '?mannschaft=1071', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=492&r=1#p1071x1048', title: 'gegen Hagener SV 5', text: '4' }]
+    - [{ url: '?staffel=492&r=5#p1071x1074', title: 'gegen SV Hellern 4', text: '1' }]
+    - [{ url: '?staffel=492&r=3#p1071x1041', title: 'gegen IGM Osnabrück 4', text: '2' }]
+    - [{ url: '?staffel=492&r=6#p1071x1043', title: 'gegen TSV Riemsloh 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=492&r=7#p1071x1049', title: 'gegen SC Melle 3', text: '3' }]
+    - [{ url: '?staffel=492&r=4#p1071x1053', title: 'gegen SG Oesede-Gmht. 4', text: '4' }]
+    - [{ url: '?staffel=492&r=2#p1071x1061', title: 'gegen SC Fürstenau 3', text: '3' }]
+    - 8
+    - '20'
+    - ''
+-
+    - '6.'
+    - { text: 'SC Melle 3', url: '?mannschaft=1049', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=492&r=5#p1049x1048', title: 'gegen Hagener SV 5', text: '2' }]
+    - [{ url: '?staffel=492&r=2#p1049x1074', title: 'gegen SV Hellern 4', text: '3' }]
+    - [{ url: '?staffel=492&r=4#p1049x1041', title: 'gegen IGM Osnabrück 4', text: '4' }]
+    - [{ url: '?staffel=492&r=3#p1049x1043', title: 'gegen TSV Riemsloh 2', text: 2½ }]
+    - [{ url: '?staffel=492&r=7#p1049x1071', title: 'gegen Ankum/Bersenbrü 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=492&r=1#p1049x1053', title: 'gegen SG Oesede-Gmht. 4', text: '0' }]
+    - [{ url: '?staffel=492&r=6#p1049x1061', title: 'gegen SC Fürstenau 3', text: '4' }]
+    - 7
+    - 18½
+    - ''
+-
+    - '7.'
+    - { text: 'SG Oesede-Gmht. 4', url: '?mannschaft=1053', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=492&r=2#p1053x1048', title: 'gegen Hagener SV 5', text: '0' }]
+    - [{ url: '?staffel=492&r=6#p1053x1074', title: 'gegen SV Hellern 4', text: '2' }]
+    - [{ url: '?staffel=492&r=5#p1053x1041', title: 'gegen IGM Osnabrück 4', text: '1' }]
+    - [{ url: '?staffel=492&r=7#p1053x1043', title: 'gegen TSV Riemsloh 2', text: '5' }]
+    - [{ url: '?staffel=492&r=4#p1053x1071', title: 'gegen Ankum/Bersenbrü 2', text: '1' }]
+    - [{ url: '?staffel=492&r=1#p1053x1049', title: 'gegen SC Melle 3', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=492&r=3#p1053x1061', title: 'gegen SC Fürstenau 3', text: '3' }]
+    - 5
+    - '18'
+    - ''
+-
+    - '8.'
+    - { text: 'SC Fürstenau 3', url: '?mannschaft=1061', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=492&r=7#p1061x1048', title: 'gegen Hagener SV 5', text: '0' }]
+    - [{ url: '?staffel=492&r=4#p1061x1074', title: 'gegen SV Hellern 4', text: '3' }]
+    - [{ url: '?staffel=492&r=1#p1061x1041', title: 'gegen IGM Osnabrück 4', text: '2' }]
+    - [{ url: '?staffel=492&r=5#p1061x1043', title: 'gegen TSV Riemsloh 2', text: ½ }]
+    - [{ url: '?staffel=492&r=2#p1061x1071', title: 'gegen Ankum/Bersenbrü 2', text: '2' }]
+    - [{ url: '?staffel=492&r=6#p1061x1049', title: 'gegen SC Melle 3', text: '1' }]
+    - [{ url: '?staffel=492&r=3#p1061x1053', title: 'gegen SG Oesede-Gmht. 4', text: '3' }]
+    - xxx
+    - 2
+    - 11½
+    - ''

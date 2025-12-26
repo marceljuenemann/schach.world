@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC BS Gliesmarode', url: '?mannschaft=6020', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1469&r=1#p6020x6041', title: 'gegen SC Turm Lüneburg', text: 2½ }]
+    - [{ url: '?staffel=1469&r=3#p6020x6027', title: 'gegen SV Gifhorn', text: 1½ }]
+    - [{ url: '?staffel=1469&r=5#p6020x6007', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - [{ url: '?staffel=1469&r=2#p6020x6004', title: 'gegen SV Bad Bevensen', text: 3½ }]
+    - [{ url: '?staffel=1469&r=6#p6020x6008', title: 'gegen Post SV Uelzen 3', text: '3' }]
+    - 7
+    - 12½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=6041', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1469&r=1#p6041x6020', title: 'gegen SC BS Gliesmarode', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1469&r=2#p6041x6027', title: 'gegen SV Gifhorn', text: '3' }]
+    - [{ url: '?staffel=1469&r=3#p6041x6007', title: 'gegen Post SV Uelzen 2', text: 2½ }]
+    - [{ url: '?staffel=1469&r=5#p6041x6004', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - [{ url: '?staffel=1469&r=4#p6041x6008', title: 'gegen Post SV Uelzen 3', text: '2' }]
+    - 7
+    - '12'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Gifhorn', url: '?mannschaft=6027', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1469&r=3#p6027x6020', title: 'gegen SC BS Gliesmarode', text: 2½ }]
+    - [{ url: '?staffel=1469&r=2#p6027x6041', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1469&r=6#p6027x6007', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1469&r=1#p6027x6004', title: 'gegen SV Bad Bevensen', text: 1½ }]
+    - [{ url: '?staffel=1469&r=5#p6027x6008', title: 'gegen Post SV Uelzen 3', text: '2' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=6007', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1469&r=5#p6007x6020', title: 'gegen SC BS Gliesmarode', text: '2' }]
+    - [{ url: '?staffel=1469&r=3#p6007x6041', title: 'gegen SC Turm Lüneburg', text: 1½ }]
+    - [{ url: '?staffel=1469&r=6#p6007x6027', title: 'gegen SV Gifhorn', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1469&r=4#p6007x6004', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=1469&r=1#p6007x6008', title: 'gegen Post SV Uelzen 3', text: '3' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=6004', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1469&r=2#p6004x6020', title: 'gegen SC BS Gliesmarode', text: ½ }]
+    - [{ url: '?staffel=1469&r=5#p6004x6041', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - [{ url: '?staffel=1469&r=1#p6004x6027', title: 'gegen SV Gifhorn', text: 2½ }]
+    - [{ url: '?staffel=1469&r=4#p6004x6007', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1469&r=3#p6004x6008', title: 'gegen Post SV Uelzen 3', text: '2' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '6.'
+    - { text: 'Post SV Uelzen 3', url: '?mannschaft=6008', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1469&r=6#p6008x6020', title: 'gegen SC BS Gliesmarode', text: '1' }]
+    - [{ url: '?staffel=1469&r=4#p6008x6041', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - [{ url: '?staffel=1469&r=5#p6008x6027', title: 'gegen SV Gifhorn', text: '2' }]
+    - [{ url: '?staffel=1469&r=1#p6008x6007', title: 'gegen Post SV Uelzen 2', text: '1' }]
+    - [{ url: '?staffel=1469&r=3#p6008x6004', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - xxx
+    - 3
+    - '8'
+    - ''

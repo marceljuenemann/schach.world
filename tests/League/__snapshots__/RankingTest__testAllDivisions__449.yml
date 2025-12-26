@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Medizin Erfurt', url: '?mannschaft=4200', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=924&r=7#p4200x4197', title: 'gegen SV Mülheim Nord', text: 3½ }]
+    - [{ url: '?staffel=924&r=4#p4200x4198', title: 'gegen Horst-Emscher', text: '5' }]
+    - [{ url: '?staffel=924&r=2#p4200x4196', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=924&r=6#p4200x4202', title: 'gegen SV Wattenscheid', text: '4' }]
+    - [{ url: '?staffel=924&r=3#p4200x4201', title: 'gegen SV Heiden', text: 3½ }]
+    - [{ url: '?staffel=924&r=5#p4200x4199', title: 'gegen SK BS Paderborn', text: '5' }]
+    - [{ url: '?staffel=924&r=1#p4200x4203', title: 'gegen SC Steinfurt', text: '4' }]
+    - 13
+    - '28'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Mülheim Nord', url: '?mannschaft=4197', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=924&r=7#p4197x4200', title: 'gegen SV Medizin Erfurt', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=924&r=1#p4197x4198', title: 'gegen Horst-Emscher', text: '4' }]
+    - [{ url: '?staffel=924&r=3#p4197x4196', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=924&r=5#p4197x4202', title: 'gegen SV Wattenscheid', text: '3' }]
+    - [{ url: '?staffel=924&r=2#p4197x4201', title: 'gegen SV Heiden', text: 3½ }]
+    - [{ url: '?staffel=924&r=6#p4197x4199', title: 'gegen SK BS Paderborn', text: 3½ }]
+    - [{ url: '?staffel=924&r=4#p4197x4203', title: 'gegen SC Steinfurt', text: 4½ }]
+    - 10
+    - '24'
+    - ''
+-
+    - '3.'
+    - { text: Horst-Emscher, url: '?mannschaft=4198', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=924&r=4#p4198x4200', title: 'gegen SV Medizin Erfurt', text: '1' }]
+    - [{ url: '?staffel=924&r=1#p4198x4197', title: 'gegen SV Mülheim Nord', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=924&r=6#p4198x4196', title: 'gegen Delmenhorster SK', text: '4' }]
+    - [{ url: '?staffel=924&r=2#p4198x4202', title: 'gegen SV Wattenscheid', text: 4½ }]
+    - [{ url: '?staffel=924&r=5#p4198x4201', title: 'gegen SV Heiden', text: 3½ }]
+    - [{ url: '?staffel=924&r=3#p4198x4199', title: 'gegen SK BS Paderborn', text: '3' }]
+    - [{ url: '?staffel=924&r=7#p4198x4203', title: 'gegen SC Steinfurt', text: '4' }]
+    - 9
+    - '22'
+    - ''
+-
+    - '4.'
+    - { text: 'Delmenhorster SK', url: '?mannschaft=4196', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=924&r=2#p4196x4200', title: 'gegen SV Medizin Erfurt', text: '3' }]
+    - [{ url: '?staffel=924&r=3#p4196x4197', title: 'gegen SV Mülheim Nord', text: '3' }]
+    - [{ url: '?staffel=924&r=6#p4196x4198', title: 'gegen Horst-Emscher', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=924&r=4#p4196x4202', title: 'gegen SV Wattenscheid', text: '2' }]
+    - [{ url: '?staffel=924&r=7#p4196x4201', title: 'gegen SV Heiden', text: '3' }]
+    - [{ url: '?staffel=924&r=1#p4196x4199', title: 'gegen SK BS Paderborn', text: 4½ }]
+    - [{ url: '?staffel=924&r=5#p4196x4203', title: 'gegen SC Steinfurt', text: 3½ }]
+    - 7
+    - '21'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Wattenscheid', url: '?mannschaft=4202', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=924&r=6#p4202x4200', title: 'gegen SV Medizin Erfurt', text: '2' }]
+    - [{ url: '?staffel=924&r=5#p4202x4197', title: 'gegen SV Mülheim Nord', text: '3' }]
+    - [{ url: '?staffel=924&r=2#p4202x4198', title: 'gegen Horst-Emscher', text: 1½ }]
+    - [{ url: '?staffel=924&r=4#p4202x4196', title: 'gegen Delmenhorster SK', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=924&r=1#p4202x4201', title: 'gegen SV Heiden', text: '3' }]
+    - [{ url: '?staffel=924&r=7#p4202x4199', title: 'gegen SK BS Paderborn', text: 1½ }]
+    - [{ url: '?staffel=924&r=3#p4202x4203', title: 'gegen SC Steinfurt', text: 3½ }]
+    - 6
+    - 18½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Heiden', url: '?mannschaft=4201', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=924&r=3#p4201x4200', title: 'gegen SV Medizin Erfurt', text: 2½ }]
+    - [{ url: '?staffel=924&r=2#p4201x4197', title: 'gegen SV Mülheim Nord', text: 2½ }]
+    - [{ url: '?staffel=924&r=5#p4201x4198', title: 'gegen Horst-Emscher', text: 2½ }]
+    - [{ url: '?staffel=924&r=7#p4201x4196', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=924&r=1#p4201x4202', title: 'gegen SV Wattenscheid', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=924&r=4#p4201x4199', title: 'gegen SK BS Paderborn', text: 3½ }]
+    - [{ url: '?staffel=924&r=6#p4201x4203', title: 'gegen SC Steinfurt', text: '3' }]
+    - 5
+    - '20'
+    - ''
+-
+    - '7.'
+    - { text: 'SK BS Paderborn', url: '?mannschaft=4199', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=924&r=5#p4199x4200', title: 'gegen SV Medizin Erfurt', text: '1' }]
+    - [{ url: '?staffel=924&r=6#p4199x4197', title: 'gegen SV Mülheim Nord', text: 2½ }]
+    - [{ url: '?staffel=924&r=3#p4199x4198', title: 'gegen Horst-Emscher', text: '3' }]
+    - [{ url: '?staffel=924&r=1#p4199x4196', title: 'gegen Delmenhorster SK', text: 1½ }]
+    - [{ url: '?staffel=924&r=7#p4199x4202', title: 'gegen SV Wattenscheid', text: 4½ }]
+    - [{ url: '?staffel=924&r=4#p4199x4201', title: 'gegen SV Heiden', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=924&r=2#p4199x4203', title: 'gegen SC Steinfurt', text: '5' }]
+    - 5
+    - '20'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SC Steinfurt', url: '?mannschaft=4203', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=924&r=1#p4203x4200', title: 'gegen SV Medizin Erfurt', text: '2' }]
+    - [{ url: '?staffel=924&r=4#p4203x4197', title: 'gegen SV Mülheim Nord', text: 1½ }]
+    - [{ url: '?staffel=924&r=7#p4203x4198', title: 'gegen Horst-Emscher', text: '2' }]
+    - [{ url: '?staffel=924&r=5#p4203x4196', title: 'gegen Delmenhorster SK', text: 2½ }]
+    - [{ url: '?staffel=924&r=3#p4203x4202', title: 'gegen SV Wattenscheid', text: 2½ }]
+    - [{ url: '?staffel=924&r=6#p4203x4201', title: 'gegen SV Heiden', text: '3' }]
+    - [{ url: '?staffel=924&r=2#p4203x4199', title: 'gegen SK BS Paderborn', text: '1' }]
+    - xxx
+    - 1
+    - 14½
+    - absteiger

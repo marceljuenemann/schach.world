@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Itzehoer SV 2', url: '?mannschaft=2804', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=700&r=1#p2804x2803', title: 'gegen SV Heide 2', text: '4' }]
+    - [{ url: '?staffel=700&r=4#p2804x2806', title: 'gegen SG Glückstadt 2', text: '5' }]
+    - [{ url: '?staffel=700&r=6#p2804x2801', title: 'gegen SV Hademarschen 2', text: '6' }]
+    - [{ url: '?staffel=700&r=5#p2804x2791', title: 'gegen Uetersener SK 2', text: 5½ }]
+    - [{ url: '?staffel=700&r=7#p2804x2802', title: 'gegen SV Quickborn 3', text: 5½ }]
+    - [{ url: '?staffel=700&r=3#p2804x2805', title: 'gegen SV Brokdorf', text: 6½ }]
+    - {  }
+    - 11
+    - 32½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Heide 2', url: '?mannschaft=2803', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=700&r=1#p2803x2804', title: 'gegen Itzehoer SV 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=700&r=3#p2803x2806', title: 'gegen SG Glückstadt 2', text: '5' }]
+    - [{ url: '?staffel=700&r=5#p2803x2801', title: 'gegen SV Hademarschen 2', text: '6' }]
+    - [{ url: '?staffel=700&r=4#p2803x2791', title: 'gegen Uetersener SK 2', text: '4' }]
+    - [{ url: '?staffel=700&r=6#p2803x2802', title: 'gegen SV Quickborn 3', text: '3' }]
+    - [{ url: '?staffel=700&r=2#p2803x2805', title: 'gegen SV Brokdorf', text: 4½ }]
+    - {  }
+    - 8
+    - 26½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SG Glückstadt 2', url: '?mannschaft=2806', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=700&r=4#p2806x2804', title: 'gegen Itzehoer SV 2', text: '3' }]
+    - [{ url: '?staffel=700&r=3#p2806x2803', title: 'gegen SV Heide 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=700&r=1#p2806x2801', title: 'gegen SV Hademarschen 2', text: '5' }]
+    - [{ url: '?staffel=700&r=7#p2806x2791', title: 'gegen Uetersener SK 2', text: '4' }]
+    - [{ url: '?staffel=700&r=2#p2806x2802', title: 'gegen SV Quickborn 3', text: '6' }]
+    - [{ url: '?staffel=700&r=5#p2806x2805', title: 'gegen SV Brokdorf', text: '4' }]
+    - {  }
+    - 6
+    - '25'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Hademarschen 2', url: '?mannschaft=2801', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=700&r=6#p2801x2804', title: 'gegen Itzehoer SV 2', text: '2' }]
+    - [{ url: '?staffel=700&r=5#p2801x2803', title: 'gegen SV Heide 2', text: '2' }]
+    - [{ url: '?staffel=700&r=1#p2801x2806', title: 'gegen SG Glückstadt 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=700&r=2#p2801x2791', title: 'gegen Uetersener SK 2', text: 4½ }]
+    - [{ url: '?staffel=700&r=4#p2801x2802', title: 'gegen SV Quickborn 3', text: '4' }]
+    - [{ url: '?staffel=700&r=7#p2801x2805', title: 'gegen SV Brokdorf', text: 4½ }]
+    - {  }
+    - 5
+    - '20'
+    - ''
+-
+    - '5.'
+    - { text: 'Uetersener SK 2', url: '?mannschaft=2791', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=700&r=5#p2791x2804', title: 'gegen Itzehoer SV 2', text: 2½ }]
+    - [{ url: '?staffel=700&r=4#p2791x2803', title: 'gegen SV Heide 2', text: '4' }]
+    - [{ url: '?staffel=700&r=7#p2791x2806', title: 'gegen SG Glückstadt 2', text: '4' }]
+    - [{ url: '?staffel=700&r=2#p2791x2801', title: 'gegen SV Hademarschen 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=700&r=3#p2791x2802', title: 'gegen SV Quickborn 3', text: 4½ }]
+    - [{ url: '?staffel=700&r=6#p2791x2805', title: 'gegen SV Brokdorf', text: 3½ }]
+    - {  }
+    - 4
+    - '22'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Quickborn 3', url: '?mannschaft=2802', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=700&r=7#p2802x2804', title: 'gegen Itzehoer SV 2', text: 2½ }]
+    - [{ url: '?staffel=700&r=6#p2802x2803', title: 'gegen SV Heide 2', text: '5' }]
+    - [{ url: '?staffel=700&r=2#p2802x2806', title: 'gegen SG Glückstadt 2', text: '2' }]
+    - [{ url: '?staffel=700&r=4#p2802x2801', title: 'gegen SV Hademarschen 2', text: '4' }]
+    - [{ url: '?staffel=700&r=3#p2802x2791', title: 'gegen Uetersener SK 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=700&r=1#p2802x2805', title: 'gegen SV Brokdorf', text: '4' }]
+    - {  }
+    - 4
+    - '21'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Brokdorf', url: '?mannschaft=2805', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=700&r=3#p2805x2804', title: 'gegen Itzehoer SV 2', text: 1½ }]
+    - [{ url: '?staffel=700&r=2#p2805x2803', title: 'gegen SV Heide 2', text: 3½ }]
+    - [{ url: '?staffel=700&r=5#p2805x2806', title: 'gegen SG Glückstadt 2', text: '4' }]
+    - [{ url: '?staffel=700&r=7#p2805x2801', title: 'gegen SV Hademarschen 2', text: 3½ }]
+    - [{ url: '?staffel=700&r=6#p2805x2791', title: 'gegen Uetersener SK 2', text: 4½ }]
+    - [{ url: '?staffel=700&r=1#p2805x2802', title: 'gegen SV Quickborn 3', text: '4' }]
+    - xxx
+    - {  }
+    - 4
+    - '21'
+    - ''
+-
+    - '8.'
+    - { text: Spielfrei, url: '?mannschaft=2807', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

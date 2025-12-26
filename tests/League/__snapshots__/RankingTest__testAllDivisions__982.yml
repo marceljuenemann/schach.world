@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=8021', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1822&r=3#p8021x8006', title: 'gegen ESV Göttingen', text: 3½ }]
+    - [{ url: '?staffel=1822&r=2#p8021x8008', title: 'gegen Plesse Bovenden', text: '2' }]
+    - [{ url: '?staffel=1822&r=1#p8021x8010', title: 'gegen SG Goslar-Harzburg', text: 2½ }]
+    - [{ url: '?staffel=1822&r=1#p8021x8001', title: 'gegen Hildesheimer SV', text: '3' }]
+    - [{ url: '?staffel=1822&r=3#p8021x8007', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=1822&r=4#p8021x8004', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=1822&r=5#p8021x8002', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1822&r=5#p8021x8003', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - [{ url: '?staffel=1822&r=2#p8021x8009', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - 17
+    - '30'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'ESV Göttingen', url: '?mannschaft=8006', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1822&r=3#p8006x8021', title: 'gegen HSK Lister Turm', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1822&r=5#p8006x8008', title: 'gegen Plesse Bovenden', text: 3½ }]
+    - [{ url: '?staffel=1822&r=2#p8006x8010', title: 'gegen SG Goslar-Harzburg', text: '2' }]
+    - [{ url: '?staffel=1822&r=2#p8006x8001', title: 'gegen Hildesheimer SV', text: 2½ }]
+    - [{ url: '?staffel=1822&r=1#p8006x8007', title: 'gegen ESV Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1822&r=3#p8006x8004', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=1822&r=4#p8006x8002', title: 'gegen Hildesheimer SV 2', text: '2' }]
+    - [{ url: '?staffel=1822&r=4#p8006x8003', title: 'gegen Hildesheimer SV 3', text: 2½ }]
+    - [{ url: '?staffel=1822&r=5#p8006x8009', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - 13
+    - '22'
+    - ''
+-
+    - '3.'
+    - { text: 'Plesse Bovenden', url: '?mannschaft=8008', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1822&r=2#p8008x8021', title: 'gegen HSK Lister Turm', text: '2' }]
+    - [{ url: '?staffel=1822&r=5#p8008x8006', title: 'gegen ESV Göttingen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1822&r=4#p8008x8010', title: 'gegen SG Goslar-Harzburg', text: 1½ }]
+    - [{ url: '?staffel=1822&r=4#p8008x8001', title: 'gegen Hildesheimer SV', text: '1' }]
+    - [{ url: '?staffel=1822&r=5#p8008x8007', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=1822&r=2#p8008x8004', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=1822&r=1#p8008x8002', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - [{ url: '?staffel=1822&r=1#p8008x8003', title: 'gegen Hildesheimer SV 3', text: 2½ }]
+    - [{ url: '?staffel=1822&r=3#p8008x8009', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - 11
+    - 21½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Goslar-Harzburg', url: '?mannschaft=8010', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1822&r=1#p8010x8021', title: 'gegen HSK Lister Turm', text: 1½ }]
+    - [{ url: '?staffel=1822&r=2#p8010x8006', title: 'gegen ESV Göttingen', text: '2' }]
+    - [{ url: '?staffel=1822&r=4#p8010x8008', title: 'gegen Plesse Bovenden', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1822&r=5#p8010x8001', title: 'gegen Hildesheimer SV', text: '1' }]
+    - [{ url: '?staffel=1822&r=2#p8010x8007', title: 'gegen ESV Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1822&r=1#p8010x8004', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=1822&r=3#p8010x8002', title: 'gegen Hildesheimer SV 2', text: '2' }]
+    - [{ url: '?staffel=1822&r=3#p8010x8003', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - [{ url: '?staffel=1822&r=4#p8010x8009', title: 'gegen Plesse Bovenden 2', text: '2' }]
+    - 11
+    - '20'
+    - ''
+-
+    - '5.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=8001', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1822&r=1#p8001x8021', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1822&r=2#p8001x8006', title: 'gegen ESV Göttingen', text: 1½ }]
+    - [{ url: '?staffel=1822&r=4#p8001x8008', title: 'gegen Plesse Bovenden', text: '3' }]
+    - [{ url: '?staffel=1822&r=5#p8001x8010', title: 'gegen SG Goslar-Harzburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1822&r=2#p8001x8007', title: 'gegen ESV Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1822&r=1#p8001x8004', title: 'gegen SV Springe', text: 2½ }]
+    - [{ url: '?staffel=1822&r=3#p8001x8002', title: 'gegen Hildesheimer SV 2', text: ½ }]
+    - [{ url: '?staffel=1822&r=3#p8001x8003', title: 'gegen Hildesheimer SV 3', text: '2' }]
+    - [{ url: '?staffel=1822&r=4#p8001x8009', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - 10
+    - 19½
+    - ''
+-
+    - '6.'
+    - { text: 'ESV Göttingen 2', url: '?mannschaft=8007', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1822&r=3#p8007x8021', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1822&r=1#p8007x8006', title: 'gegen ESV Göttingen', text: '2' }]
+    - [{ url: '?staffel=1822&r=5#p8007x8008', title: 'gegen Plesse Bovenden', text: '0' }]
+    - [{ url: '?staffel=1822&r=2#p8007x8010', title: 'gegen SG Goslar-Harzburg', text: '1' }]
+    - [{ url: '?staffel=1822&r=2#p8007x8001', title: 'gegen Hildesheimer SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1822&r=3#p8007x8004', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=1822&r=4#p8007x8002', title: 'gegen Hildesheimer SV 2', text: 2½ }]
+    - [{ url: '?staffel=1822&r=4#p8007x8003', title: 'gegen Hildesheimer SV 3', text: '2' }]
+    - [{ url: '?staffel=1822&r=5#p8007x8009', title: 'gegen Plesse Bovenden 2', text: 3½ }]
+    - 8
+    - '15'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Springe', url: '?mannschaft=8004', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1822&r=4#p8004x8021', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1822&r=3#p8004x8006', title: 'gegen ESV Göttingen', text: '0' }]
+    - [{ url: '?staffel=1822&r=2#p8004x8008', title: 'gegen Plesse Bovenden', text: '1' }]
+    - [{ url: '?staffel=1822&r=1#p8004x8010', title: 'gegen SG Goslar-Harzburg', text: '1' }]
+    - [{ url: '?staffel=1822&r=1#p8004x8001', title: 'gegen Hildesheimer SV', text: 1½ }]
+    - [{ url: '?staffel=1822&r=3#p8004x8007', title: 'gegen ESV Göttingen 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1822&r=5#p8004x8002', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1822&r=5#p8004x8003', title: 'gegen Hildesheimer SV 3', text: 3½ }]
+    - [{ url: '?staffel=1822&r=2#p8004x8009', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - 7
+    - '17'
+    - ''
+-
+    - '8.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=8002', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1822&r=5#p8002x8021', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1822&r=4#p8002x8006', title: 'gegen ESV Göttingen', text: '2' }]
+    - [{ url: '?staffel=1822&r=1#p8002x8008', title: 'gegen Plesse Bovenden', text: '1' }]
+    - [{ url: '?staffel=1822&r=3#p8002x8010', title: 'gegen SG Goslar-Harzburg', text: '2' }]
+    - [{ url: '?staffel=1822&r=3#p8002x8001', title: 'gegen Hildesheimer SV', text: 3½ }]
+    - [{ url: '?staffel=1822&r=4#p8002x8007', title: 'gegen ESV Göttingen 2', text: 1½ }]
+    - [{ url: '?staffel=1822&r=5#p8002x8004', title: 'gegen SV Springe', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1822&r=2#p8002x8003', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - [{ url: '?staffel=1822&r=1#p8002x8009', title: 'gegen Plesse Bovenden 2', text: '1' }]
+    - 6
+    - '14'
+    - ''
+-
+    - '9.'
+    - { text: 'Hildesheimer SV 3', url: '?mannschaft=8003', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1822&r=5#p8003x8021', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1822&r=4#p8003x8006', title: 'gegen ESV Göttingen', text: 1½ }]
+    - [{ url: '?staffel=1822&r=1#p8003x8008', title: 'gegen Plesse Bovenden', text: 1½ }]
+    - [{ url: '?staffel=1822&r=3#p8003x8010', title: 'gegen SG Goslar-Harzburg', text: '1' }]
+    - [{ url: '?staffel=1822&r=3#p8003x8001', title: 'gegen Hildesheimer SV', text: '2' }]
+    - [{ url: '?staffel=1822&r=4#p8003x8007', title: 'gegen ESV Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1822&r=5#p8003x8004', title: 'gegen SV Springe', text: ½ }]
+    - [{ url: '?staffel=1822&r=2#p8003x8002', title: 'gegen Hildesheimer SV 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1822&r=1#p8003x8009', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - 4
+    - 14½
+    - ''
+-
+    - '10.'
+    - { text: 'Plesse Bovenden 2', url: '?mannschaft=8009', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1822&r=2#p8009x8021', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1822&r=5#p8009x8006', title: 'gegen ESV Göttingen', text: '1' }]
+    - [{ url: '?staffel=1822&r=3#p8009x8008', title: 'gegen Plesse Bovenden', text: '0' }]
+    - [{ url: '?staffel=1822&r=4#p8009x8010', title: 'gegen SG Goslar-Harzburg', text: '2' }]
+    - [{ url: '?staffel=1822&r=4#p8009x8001', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=1822&r=5#p8009x8007', title: 'gegen ESV Göttingen 2', text: ½ }]
+    - [{ url: '?staffel=1822&r=2#p8009x8004', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1822&r=1#p8009x8002', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - [{ url: '?staffel=1822&r=1#p8009x8003', title: 'gegen Hildesheimer SV 3', text: '0' }]
+    - xxx
+    - 3
+    - 6½
+    - ''

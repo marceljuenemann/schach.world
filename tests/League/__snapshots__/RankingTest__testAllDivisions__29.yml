@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Bl.', url: '?mannschaft=613', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=425&r=3#p613x615', title: 'gegen Oesede-Georgsma', text: 3½ }]
+    - [{ url: '?staffel=425&r=2#p613x616', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=425&r=1#p613x617', title: 'gegen SV Bad Essen', text: 3½ }]
+    - [{ url: '?staffel=425&r=4#p613x614', title: 'gegen Ankum/Bersenbrü', text: '4' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '2.'
+    - { text: Oesede-Georgsma, url: '?mannschaft=615', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=425&r=3#p615x613', title: 'gegen SK Nordhorn-Bl.', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=425&r=1#p615x616', title: 'gegen SF Spelle', text: 2½ }]
+    - [{ url: '?staffel=425&r=4#p615x617', title: 'gegen SV Bad Essen', text: '3' }]
+    - [{ url: '?staffel=425&r=5#p615x614', title: 'gegen Ankum/Bersenbrü', text: '4' }]
+    - 6
+    - '10'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Spelle', url: '?mannschaft=616', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=425&r=2#p616x613', title: 'gegen SK Nordhorn-Bl.', text: '2' }]
+    - [{ url: '?staffel=425&r=1#p616x615', title: 'gegen Oesede-Georgsma', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=425&r=5#p616x617', title: 'gegen SV Bad Essen', text: '4' }]
+    - [{ url: '?staffel=425&r=3#p616x614', title: 'gegen Ankum/Bersenbrü', text: '2' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bad Essen', url: '?mannschaft=617', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=425&r=1#p617x613', title: 'gegen SK Nordhorn-Bl.', text: ½ }]
+    - [{ url: '?staffel=425&r=4#p617x615', title: 'gegen Oesede-Georgsma', text: '1' }]
+    - [{ url: '?staffel=425&r=5#p617x616', title: 'gegen SF Spelle', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=425&r=2#p617x614', title: 'gegen Ankum/Bersenbrü', text: 3½ }]
+    - 2
+    - '5'
+    - ''
+-
+    - '5.'
+    - { text: Ankum/Bersenbrü, url: '?mannschaft=614', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=425&r=4#p614x613', title: 'gegen SK Nordhorn-Bl.', text: '0' }]
+    - [{ url: '?staffel=425&r=5#p614x615', title: 'gegen Oesede-Georgsma', text: '0' }]
+    - [{ url: '?staffel=425&r=3#p614x616', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=425&r=2#p614x617', title: 'gegen SV Bad Essen', text: ½ }]
+    - xxx
+    - 1
+    - 2½
+    - ''

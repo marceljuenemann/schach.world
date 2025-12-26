@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Bremer SG 2', url: '?mannschaft=1692', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=547&r=5#p1692x1690', title: 'gegen SF Leherheide', text: 4½ }]
+    - [{ url: '?staffel=547&r=3#p1692x1696', title: 'gegen MTV Tostedt', text: '5' }]
+    - [{ url: '?staffel=547&r=8#p1692x1691', title: 'gegen SG Niederelbe', text: '4' }]
+    - [{ url: '?staffel=547&r=6#p1692x1689', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - [{ url: '?staffel=547&r=4#p1692x1688', title: 'gegen TuS Varrel', text: 4½ }]
+    - [{ url: '?staffel=547&r=1#p1692x1697', title: 'gegen SF Buxtehude', text: 4½ }]
+    - [{ url: '?staffel=547&r=2#p1692x1695', title: 'gegen Post SV Uelzen 2', text: 5½ }]
+    - [{ url: '?staffel=547&r=7#p1692x1693', title: 'gegen Schach Club Vahr', text: 5½ }]
+    - [{ url: '?staffel=547&r=9#p1692x1694', title: 'gegen Findorffer SF', text: 7½ }]
+    - 16
+    - '45'
+    - ''
+-
+    - '2.'
+    - { text: 'SF Leherheide', url: '?mannschaft=1690', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=547&r=5#p1690x1692', title: 'gegen Bremer SG 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=547&r=6#p1690x1696', title: 'gegen MTV Tostedt', text: 3½ }]
+    - [{ url: '?staffel=547&r=2#p1690x1691', title: 'gegen SG Niederelbe', text: '5' }]
+    - [{ url: '?staffel=547&r=9#p1690x1689', title: 'gegen SV Winsen (Luhe)', text: '8' }]
+    - [{ url: '?staffel=547&r=7#p1690x1688', title: 'gegen TuS Varrel', text: '4' }]
+    - [{ url: '?staffel=547&r=4#p1690x1697', title: 'gegen SF Buxtehude', text: 4½ }]
+    - [{ url: '?staffel=547&r=8#p1690x1695', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=547&r=1#p1690x1693', title: 'gegen Schach Club Vahr', text: '5' }]
+    - [{ url: '?staffel=547&r=3#p1690x1694', title: 'gegen Findorffer SF', text: '7' }]
+    - 12
+    - 44½
+    - ''
+-
+    - '3.'
+    - { text: 'MTV Tostedt', url: '?mannschaft=1696', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=547&r=3#p1696x1692', title: 'gegen Bremer SG 2', text: '3' }]
+    - [{ url: '?staffel=547&r=6#p1696x1690', title: 'gegen SF Leherheide', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=547&r=1#p1696x1691', title: 'gegen SG Niederelbe', text: '3' }]
+    - [{ url: '?staffel=547&r=7#p1696x1689', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - [{ url: '?staffel=547&r=9#p1696x1688', title: 'gegen TuS Varrel', text: 3½ }]
+    - [{ url: '?staffel=547&r=2#p1696x1697', title: 'gegen SF Buxtehude', text: 5½ }]
+    - [{ url: '?staffel=547&r=5#p1696x1695', title: 'gegen Post SV Uelzen 2', text: 4½ }]
+    - [{ url: '?staffel=547&r=4#p1696x1693', title: 'gegen Schach Club Vahr', text: '6' }]
+    - [{ url: '?staffel=547&r=8#p1696x1694', title: 'gegen Findorffer SF', text: '4' }]
+    - 10
+    - '38'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Niederelbe', url: '?mannschaft=1691', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=547&r=8#p1691x1692', title: 'gegen Bremer SG 2', text: '4' }]
+    - [{ url: '?staffel=547&r=2#p1691x1690', title: 'gegen SF Leherheide', text: '3' }]
+    - [{ url: '?staffel=547&r=1#p1691x1696', title: 'gegen MTV Tostedt', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=547&r=4#p1691x1689', title: 'gegen SV Winsen (Luhe)', text: '2' }]
+    - [{ url: '?staffel=547&r=3#p1691x1688', title: 'gegen TuS Varrel', text: 3½ }]
+    - [{ url: '?staffel=547&r=9#p1691x1697', title: 'gegen SF Buxtehude', text: '6' }]
+    - [{ url: '?staffel=547&r=6#p1691x1695', title: 'gegen Post SV Uelzen 2', text: 2½ }]
+    - [{ url: '?staffel=547&r=5#p1691x1693', title: 'gegen Schach Club Vahr', text: '5' }]
+    - [{ url: '?staffel=547&r=7#p1691x1694', title: 'gegen Findorffer SF', text: '6' }]
+    - 9
+    - '37'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Winsen (Luhe)', url: '?mannschaft=1689', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=547&r=6#p1689x1692', title: 'gegen Bremer SG 2', text: '4' }]
+    - [{ url: '?staffel=547&r=9#p1689x1690', title: 'gegen SF Leherheide', text: '0' }]
+    - [{ url: '?staffel=547&r=7#p1689x1696', title: 'gegen MTV Tostedt', text: '4' }]
+    - [{ url: '?staffel=547&r=4#p1689x1691', title: 'gegen SG Niederelbe', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=547&r=2#p1689x1688', title: 'gegen TuS Varrel', text: '4' }]
+    - [{ url: '?staffel=547&r=5#p1689x1697', title: 'gegen SF Buxtehude', text: 3½ }]
+    - [{ url: '?staffel=547&r=3#p1689x1695', title: 'gegen Post SV Uelzen 2', text: '5' }]
+    - [{ url: '?staffel=547&r=8#p1689x1693', title: 'gegen Schach Club Vahr', text: 5½ }]
+    - [{ url: '?staffel=547&r=1#p1689x1694', title: 'gegen Findorffer SF', text: 3½ }]
+    - 9
+    - 35½
+    - ''
+-
+    - '6.'
+    - { text: 'TuS Varrel', url: '?mannschaft=1688', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=547&r=4#p1688x1692', title: 'gegen Bremer SG 2', text: 3½ }]
+    - [{ url: '?staffel=547&r=7#p1688x1690', title: 'gegen SF Leherheide', text: '4' }]
+    - [{ url: '?staffel=547&r=9#p1688x1696', title: 'gegen MTV Tostedt', text: 4½ }]
+    - [{ url: '?staffel=547&r=3#p1688x1691', title: 'gegen SG Niederelbe', text: 4½ }]
+    - [{ url: '?staffel=547&r=2#p1688x1689', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=547&r=8#p1688x1697', title: 'gegen SF Buxtehude', text: '3' }]
+    - [{ url: '?staffel=547&r=1#p1688x1695', title: 'gegen Post SV Uelzen 2', text: 3½ }]
+    - [{ url: '?staffel=547&r=6#p1688x1693', title: 'gegen Schach Club Vahr', text: '4' }]
+    - [{ url: '?staffel=547&r=5#p1688x1694', title: 'gegen Findorffer SF', text: 4½ }]
+    - 9
+    - 35½
+    - ''
+-
+    - '7.'
+    - { text: 'SF Buxtehude', url: '?mannschaft=1697', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=547&r=1#p1697x1692', title: 'gegen Bremer SG 2', text: 2½ }]
+    - [{ url: '?staffel=547&r=4#p1697x1690', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=547&r=2#p1697x1696', title: 'gegen MTV Tostedt', text: 2½ }]
+    - [{ url: '?staffel=547&r=9#p1697x1691', title: 'gegen SG Niederelbe', text: '2' }]
+    - [{ url: '?staffel=547&r=5#p1697x1689', title: 'gegen SV Winsen (Luhe)', text: 4½ }]
+    - [{ url: '?staffel=547&r=8#p1697x1688', title: 'gegen TuS Varrel', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=547&r=7#p1697x1695', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=547&r=3#p1697x1693', title: 'gegen Schach Club Vahr', text: 4½ }]
+    - [{ url: '?staffel=547&r=6#p1697x1694', title: 'gegen Findorffer SF', text: 4½ }]
+    - 9
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=1695', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=547&r=2#p1695x1692', title: 'gegen Bremer SG 2', text: 2½ }]
+    - [{ url: '?staffel=547&r=8#p1695x1690', title: 'gegen SF Leherheide', text: '4' }]
+    - [{ url: '?staffel=547&r=5#p1695x1696', title: 'gegen MTV Tostedt', text: 3½ }]
+    - [{ url: '?staffel=547&r=6#p1695x1691', title: 'gegen SG Niederelbe', text: 5½ }]
+    - [{ url: '?staffel=547&r=3#p1695x1689', title: 'gegen SV Winsen (Luhe)', text: '3' }]
+    - [{ url: '?staffel=547&r=1#p1695x1688', title: 'gegen TuS Varrel', text: 4½ }]
+    - [{ url: '?staffel=547&r=7#p1695x1697', title: 'gegen SF Buxtehude', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=547&r=9#p1695x1693', title: 'gegen Schach Club Vahr', text: ½ }]
+    - [{ url: '?staffel=547&r=4#p1695x1694', title: 'gegen Findorffer SF', text: 2½ }]
+    - 6
+    - '30'
+    - ''
+-
+    - '9.'
+    - { text: 'Schach Club Vahr', url: '?mannschaft=1693', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=547&r=7#p1693x1692', title: 'gegen Bremer SG 2', text: 2½ }]
+    - [{ url: '?staffel=547&r=1#p1693x1690', title: 'gegen SF Leherheide', text: '3' }]
+    - [{ url: '?staffel=547&r=4#p1693x1696', title: 'gegen MTV Tostedt', text: '2' }]
+    - [{ url: '?staffel=547&r=5#p1693x1691', title: 'gegen SG Niederelbe', text: '3' }]
+    - [{ url: '?staffel=547&r=8#p1693x1689', title: 'gegen SV Winsen (Luhe)', text: 2½ }]
+    - [{ url: '?staffel=547&r=6#p1693x1688', title: 'gegen TuS Varrel', text: '4' }]
+    - [{ url: '?staffel=547&r=3#p1693x1697', title: 'gegen SF Buxtehude', text: 3½ }]
+    - [{ url: '?staffel=547&r=9#p1693x1695', title: 'gegen Post SV Uelzen 2', text: 7½ }]
+    - xxx
+    - [{ url: '?staffel=547&r=2#p1693x1694', title: 'gegen Findorffer SF', text: 5½ }]
+    - 5
+    - 33½
+    - ''
+-
+    - '10.'
+    - { text: 'Findorffer SF', url: '?mannschaft=1694', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=547&r=9#p1694x1692', title: 'gegen Bremer SG 2', text: ½ }]
+    - [{ url: '?staffel=547&r=3#p1694x1690', title: 'gegen SF Leherheide', text: '1' }]
+    - [{ url: '?staffel=547&r=8#p1694x1696', title: 'gegen MTV Tostedt', text: '4' }]
+    - [{ url: '?staffel=547&r=7#p1694x1691', title: 'gegen SG Niederelbe', text: '2' }]
+    - [{ url: '?staffel=547&r=1#p1694x1689', title: 'gegen SV Winsen (Luhe)', text: 4½ }]
+    - [{ url: '?staffel=547&r=5#p1694x1688', title: 'gegen TuS Varrel', text: 3½ }]
+    - [{ url: '?staffel=547&r=6#p1694x1697', title: 'gegen SF Buxtehude', text: 3½ }]
+    - [{ url: '?staffel=547&r=4#p1694x1695', title: 'gegen Post SV Uelzen 2', text: 5½ }]
+    - [{ url: '?staffel=547&r=2#p1694x1693', title: 'gegen Schach Club Vahr', text: 2½ }]
+    - xxx
+    - 5
+    - '27'
+    - ''

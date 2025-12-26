@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV 3', url: '?mannschaft=7061', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1686&r=5#p7061x7111', title: 'gegen SC Fürstenau 2', text: '3' }, { url: '?staffel=1686&r=10#p7061x7111', title: 'gegen SC Fürstenau 2', text: '4' }]
+    - [{ url: '?staffel=1686&r=2#p7061x7071', title: 'gegen Bersenbrück/Bramsche 2', text: '3' }, { url: '?staffel=1686&r=7#p7061x7071', title: 'gegen Bersenbrück/Bramsche 2', text: '5' }]
+    - [{ url: '?staffel=1686&r=4#p7061x7062', title: 'gegen Hagener SV 4', text: 5½ }, { url: '?staffel=1686&r=9#p7061x7062', title: 'gegen Hagener SV 4', text: 3½ }]
+    - [{ url: '?staffel=1686&r=1#p7061x7109', title: 'gegen TuS Lemförde', text: 4½ }, { url: '?staffel=1686&r=6#p7061x7109', title: 'gegen TuS Lemförde', text: '6' }]
+    - 14
+    - 34½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Fürstenau 2', url: '?mannschaft=7111', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1686&r=5#p7111x7061', title: 'gegen Hagener SV 3', text: '3' }, { url: '?staffel=1686&r=10#p7111x7061', title: 'gegen Hagener SV 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1686&r=4#p7111x7071', title: 'gegen Bersenbrück/Bramsche 2', text: 3½ }, { url: '?staffel=1686&r=9#p7111x7071', title: 'gegen Bersenbrück/Bramsche 2', text: '5' }]
+    - [{ url: '?staffel=1686&r=1#p7111x7062', title: 'gegen Hagener SV 4', text: '2' }, { url: '?staffel=1686&r=6#p7111x7062', title: 'gegen Hagener SV 4', text: '5' }]
+    - [{ url: '?staffel=1686&r=3#p7111x7109', title: 'gegen TuS Lemförde', text: 3½ }, { url: '?staffel=1686&r=8#p7111x7109', title: 'gegen TuS Lemförde', text: 3½ }]
+    - 11
+    - 27½
+    - ''
+-
+    - '3.'
+    - { text: 'Bersenbrück/Bramsche 2', url: '?mannschaft=7071', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1686&r=2#p7071x7061', title: 'gegen Hagener SV 3', text: '3' }, { url: '?staffel=1686&r=7#p7071x7061', title: 'gegen Hagener SV 3', text: '1' }]
+    - [{ url: '?staffel=1686&r=4#p7071x7111', title: 'gegen SC Fürstenau 2', text: 2½ }, { url: '?staffel=1686&r=9#p7071x7111', title: 'gegen SC Fürstenau 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1686&r=3#p7071x7062', title: 'gegen Hagener SV 4', text: 2½ }, { url: '?staffel=1686&r=8#p7071x7062', title: 'gegen Hagener SV 4', text: '4' }]
+    - [{ url: '?staffel=1686&r=5#p7071x7109', title: 'gegen TuS Lemförde', text: '5' }, { url: '?staffel=1686&r=10#p7071x7109', title: 'gegen TuS Lemförde', text: '6' }]
+    - 7
+    - '25'
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=7062', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1686&r=4#p7062x7061', title: 'gegen Hagener SV 3', text: ½ }, { url: '?staffel=1686&r=9#p7062x7061', title: 'gegen Hagener SV 3', text: 2½ }]
+    - [{ url: '?staffel=1686&r=1#p7062x7111', title: 'gegen SC Fürstenau 2', text: '4' }, { url: '?staffel=1686&r=6#p7062x7111', title: 'gegen SC Fürstenau 2', text: '1' }]
+    - [{ url: '?staffel=1686&r=3#p7062x7071', title: 'gegen Bersenbrück/Bramsche 2', text: 3½ }, { url: '?staffel=1686&r=8#p7062x7071', title: 'gegen Bersenbrück/Bramsche 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1686&r=2#p7062x7109', title: 'gegen TuS Lemförde', text: '3' }, { url: '?staffel=1686&r=7#p7062x7109', title: 'gegen TuS Lemförde', text: '4' }]
+    - 7
+    - 20½
+    - ''
+-
+    - '5.'
+    - { text: 'TuS Lemförde', url: '?mannschaft=7109', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1686&r=1#p7109x7061', title: 'gegen Hagener SV 3', text: 1½ }, { url: '?staffel=1686&r=6#p7109x7061', title: 'gegen Hagener SV 3', text: '0' }]
+    - [{ url: '?staffel=1686&r=3#p7109x7111', title: 'gegen SC Fürstenau 2', text: 2½ }, { url: '?staffel=1686&r=8#p7109x7111', title: 'gegen SC Fürstenau 2', text: 2½ }]
+    - [{ url: '?staffel=1686&r=5#p7109x7071', title: 'gegen Bersenbrück/Bramsche 2', text: '1' }, { url: '?staffel=1686&r=10#p7109x7071', title: 'gegen Bersenbrück/Bramsche 2', text: '0' }]
+    - [{ url: '?staffel=1686&r=2#p7109x7062', title: 'gegen Hagener SV 4', text: '3' }, { url: '?staffel=1686&r=7#p7109x7062', title: 'gegen Hagener SV 4', text: '2' }]
+    - xxx
+    - 1
+    - 12½
+    - absteiger

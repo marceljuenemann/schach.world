@@ -1,4 +1,4 @@
-<?
+<?php
 /* Eingabelink-eMail
  *
  * Zum Senden von eMails, die Links zur Ergebniseingabe beinhalten.

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'C. Wolfenbüttel 2', url: '?mannschaft=6110', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1470&r=2#p6110x6075', title: 'gegen SC Langlingen', text: 2½ }]
+    - [{ url: '?staffel=1470&r=4#p6110x6073', title: 'gegen SG Königslutter', text: '3' }]
+    - [{ url: '?staffel=1470&r=7#p6110x6175', title: 'gegen SG Schöningen', text: '4' }]
+    - [{ url: '?staffel=1470&r=6#p6110x6077', title: 'gegen SG Elm/Lappwald 2', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1470&r=1#p6110x6102', title: 'gegen SC BS Gliesmarode 4', text: 4½ }]
+    - [{ url: '?staffel=1470&r=3#p6110x6221', title: 'gegen SC Wolfsburg 3', text: 4½ }]
+    - [{ url: '?staffel=1470&r=5#p6110x6078', title: 'gegen SF Bleckenstedt', text: '6' }]
+    - 11
+    - 28½
+    - ''
+-
+    - '2.'
+    - { text: 'SC Langlingen', url: '?mannschaft=6075', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1470&r=2#p6075x6110', title: 'gegen C. Wolfenbüttel 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1470&r=7#p6075x6073', title: 'gegen SG Königslutter', text: '3' }]
+    - [{ url: '?staffel=1470&r=1#p6075x6175', title: 'gegen SG Schöningen', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1470&r=5#p6075x6063', title: 'gegen SF Fallersleben 2', text: '5' }]
+    - [{ url: '?staffel=1470&r=3#p6075x6076', title: 'gegen SV Gifhorn 2', text: '5' }]
+    - [{ url: '?staffel=1470&r=4#p6075x6102', title: 'gegen SC BS Gliesmarode 4', text: 4½ }]
+    - [{ url: '?staffel=1470&r=6#p6075x6221', title: 'gegen SC Wolfsburg 3', text: '4' }]
+    - {  }
+    - 11
+    - '27'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Königslutter', url: '?mannschaft=6073', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1470&r=4#p6073x6110', title: 'gegen C. Wolfenbüttel 2', text: '3' }]
+    - [{ url: '?staffel=1470&r=7#p6073x6075', title: 'gegen SC Langlingen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1470&r=3#p6073x6175', title: 'gegen SG Schöningen', text: 3½ }]
+    - [{ url: '?staffel=1470&r=2#p6073x6077', title: 'gegen SG Elm/Lappwald 2', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1470&r=5#p6073x6076', title: 'gegen SV Gifhorn 2', text: '3' }]
+    - [{ url: '?staffel=1470&r=6#p6073x6102', title: 'gegen SC BS Gliesmarode 4', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1470&r=1#p6073x6078', title: 'gegen SF Bleckenstedt', text: '6' }]
+    - 11
+    - '27'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Schöningen', url: '?mannschaft=6175', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1470&r=7#p6175x6110', title: 'gegen C. Wolfenbüttel 2', text: '2' }]
+    - [{ url: '?staffel=1470&r=1#p6175x6075', title: 'gegen SC Langlingen', text: '4' }]
+    - [{ url: '?staffel=1470&r=3#p6175x6073', title: 'gegen SG Königslutter', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1470&r=5#p6175x6077', title: 'gegen SG Elm/Lappwald 2', text: '5' }]
+    - [{ url: '?staffel=1470&r=6#p6175x6063', title: 'gegen SF Fallersleben 2', text: '5' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1470&r=2#p6175x6221', title: 'gegen SC Wolfsburg 3', text: 4½ }]
+    - [{ url: '?staffel=1470&r=4#p6175x6078', title: 'gegen SF Bleckenstedt', text: '6' }]
+    - 10
+    - '29'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Elm/Lappwald 2', url: '?mannschaft=6077', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1470&r=6#p6077x6110', title: 'gegen C. Wolfenbüttel 2', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1470&r=2#p6077x6073', title: 'gegen SG Königslutter', text: 2½ }]
+    - [{ url: '?staffel=1470&r=5#p6077x6175', title: 'gegen SG Schöningen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1470&r=4#p6077x6063', title: 'gegen SF Fallersleben 2', text: '5' }]
+    - [{ url: '?staffel=1470&r=7#p6077x6076', title: 'gegen SV Gifhorn 2', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1470&r=1#p6077x6221', title: 'gegen SC Wolfsburg 3', text: 4½ }]
+    - [{ url: '?staffel=1470&r=3#p6077x6078', title: 'gegen SF Bleckenstedt', text: '6' }]
+    - 8
+    - '25'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Fallersleben 2', url: '?mannschaft=6063', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1470&r=5#p6063x6075', title: 'gegen SC Langlingen', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1470&r=6#p6063x6175', title: 'gegen SG Schöningen', text: '1' }]
+    - [{ url: '?staffel=1470&r=4#p6063x6077', title: 'gegen SG Elm/Lappwald 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1470&r=1#p6063x6076', title: 'gegen SV Gifhorn 2', text: '3' }]
+    - [{ url: '?staffel=1470&r=3#p6063x6102', title: 'gegen SC BS Gliesmarode 4', text: 3½ }]
+    - [{ url: '?staffel=1470&r=7#p6063x6221', title: 'gegen SC Wolfsburg 3', text: 3½ }]
+    - [{ url: '?staffel=1470&r=2#p6063x6078', title: 'gegen SF Bleckenstedt', text: '6' }]
+    - 7
+    - '19'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Gifhorn 2', url: '?mannschaft=6076', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1470&r=3#p6076x6075', title: 'gegen SC Langlingen', text: '1' }]
+    - [{ url: '?staffel=1470&r=5#p6076x6073', title: 'gegen SG Königslutter', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1470&r=7#p6076x6077', title: 'gegen SG Elm/Lappwald 2', text: '2' }]
+    - [{ url: '?staffel=1470&r=1#p6076x6063', title: 'gegen SF Fallersleben 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1470&r=2#p6076x6102', title: 'gegen SC BS Gliesmarode 4', text: 1½ }]
+    - [{ url: '?staffel=1470&r=4#p6076x6221', title: 'gegen SC Wolfsburg 3', text: 4½ }]
+    - [{ url: '?staffel=1470&r=6#p6076x6078', title: 'gegen SF Bleckenstedt', text: '6' }]
+    - 6
+    - '21'
+    - ''
+-
+    - '8.'
+    - { text: 'SC BS Gliesmarode 4', url: '?mannschaft=6102', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1470&r=1#p6102x6110', title: 'gegen C. Wolfenbüttel 2', text: 1½ }]
+    - [{ url: '?staffel=1470&r=4#p6102x6075', title: 'gegen SC Langlingen', text: 1½ }]
+    - [{ url: '?staffel=1470&r=6#p6102x6073', title: 'gegen SG Königslutter', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1470&r=3#p6102x6063', title: 'gegen SF Fallersleben 2', text: 2½ }]
+    - [{ url: '?staffel=1470&r=2#p6102x6076', title: 'gegen SV Gifhorn 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1470&r=5#p6102x6221', title: 'gegen SC Wolfsburg 3', text: 1½ }]
+    - [{ url: '?staffel=1470&r=7#p6102x6078', title: 'gegen SF Bleckenstedt', text: '6' }]
+    - 4
+    - 18½
+    - ''
+-
+    - '9.'
+    - { text: 'SC Wolfsburg 3', url: '?mannschaft=6221', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1470&r=3#p6221x6110', title: 'gegen C. Wolfenbüttel 2', text: 1½ }]
+    - [{ url: '?staffel=1470&r=6#p6221x6075', title: 'gegen SC Langlingen', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1470&r=2#p6221x6175', title: 'gegen SG Schöningen', text: 1½ }]
+    - [{ url: '?staffel=1470&r=1#p6221x6077', title: 'gegen SG Elm/Lappwald 2', text: 1½ }]
+    - [{ url: '?staffel=1470&r=7#p6221x6063', title: 'gegen SF Fallersleben 2', text: 2½ }]
+    - [{ url: '?staffel=1470&r=4#p6221x6076', title: 'gegen SV Gifhorn 2', text: 1½ }]
+    - [{ url: '?staffel=1470&r=5#p6221x6102', title: 'gegen SC BS Gliesmarode 4', text: 4½ }]
+    - xxx
+    - {  }
+    - 2
+    - '15'
+    - ''
+-
+    - '10.'
+    - { text: 'SF Bleckenstedt', url: '?mannschaft=6078', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1470&r=5#p6078x6110', title: 'gegen C. Wolfenbüttel 2', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1470&r=1#p6078x6073', title: 'gegen SG Königslutter', text: '0' }]
+    - [{ url: '?staffel=1470&r=4#p6078x6175', title: 'gegen SG Schöningen', text: '0' }]
+    - [{ url: '?staffel=1470&r=3#p6078x6077', title: 'gegen SG Elm/Lappwald 2', text: '0' }]
+    - [{ url: '?staffel=1470&r=2#p6078x6063', title: 'gegen SF Fallersleben 2', text: '0' }]
+    - [{ url: '?staffel=1470&r=6#p6078x6076', title: 'gegen SV Gifhorn 2', text: '0' }]
+    - [{ url: '?staffel=1470&r=7#p6078x6102', title: 'gegen SC BS Gliesmarode 4', text: '0' }]
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

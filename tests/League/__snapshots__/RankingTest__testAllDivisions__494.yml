@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Fürstenau', url: '?mannschaft=4423', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=975&r=1#p4423x4424', title: 'gegen TSV Riemsloh', text: 5½ }]
+    - [{ url: '?staffel=975&r=4#p4423x4421', title: 'gegen SG Oesede-Gmht.', text: '5' }]
+    - [{ url: '?staffel=975&r=3#p4423x4425', title: 'gegen Bersenbrück/Bramsche', text: '3' }]
+    - [{ url: '?staffel=975&r=5#p4423x4422', title: 'gegen SK Meppen', text: '5' }]
+    - [{ url: '?staffel=975&r=8#p4423x4426', title: 'gegen SV Bad Essen 2', text: 4½ }]
+    - [{ url: '?staffel=975&r=6#p4423x4430', title: 'gegen SV Hellern 5', text: 4½ }]
+    - [{ url: '?staffel=975&r=9#p4423x4429', title: 'gegen Nordhorn-Blanke 5', text: '5' }]
+    - [{ url: '?staffel=975&r=2#p4423x4428', title: 'gegen Hagener SV 3', text: '6' }]
+    - [{ url: '?staffel=975&r=7#p4423x4427', title: 'gegen Gaste-Hasbergen', text: '5' }]
+    - 16
+    - 43½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TSV Riemsloh', url: '?mannschaft=4424', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=975&r=1#p4424x4423', title: 'gegen SC Fürstenau', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=975&r=7#p4424x4421', title: 'gegen SG Oesede-Gmht.', text: 4½ }]
+    - [{ url: '?staffel=975&r=9#p4424x4425', title: 'gegen Bersenbrück/Bramsche', text: '4' }]
+    - [{ url: '?staffel=975&r=2#p4424x4422', title: 'gegen SK Meppen', text: 4½ }]
+    - [{ url: '?staffel=975&r=5#p4424x4426', title: 'gegen SV Bad Essen 2', text: '4' }]
+    - [{ url: '?staffel=975&r=3#p4424x4430', title: 'gegen SV Hellern 5', text: 4½ }]
+    - [{ url: '?staffel=975&r=6#p4424x4429', title: 'gegen Nordhorn-Blanke 5', text: 4½ }]
+    - [{ url: '?staffel=975&r=8#p4424x4428', title: 'gegen Hagener SV 3', text: 2½ }]
+    - [{ url: '?staffel=975&r=4#p4424x4427', title: 'gegen Gaste-Hasbergen', text: 5½ }]
+    - 12
+    - 36½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=4421', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=975&r=4#p4421x4423', title: 'gegen SC Fürstenau', text: '3' }]
+    - [{ url: '?staffel=975&r=7#p4421x4424', title: 'gegen TSV Riemsloh', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=975&r=2#p4421x4425', title: 'gegen Bersenbrück/Bramsche', text: 4½ }]
+    - [{ url: '?staffel=975&r=6#p4421x4422', title: 'gegen SK Meppen', text: 4½ }]
+    - [{ url: '?staffel=975&r=3#p4421x4426', title: 'gegen SV Bad Essen 2', text: '3' }]
+    - [{ url: '?staffel=975&r=8#p4421x4430', title: 'gegen SV Hellern 5', text: 4½ }]
+    - [{ url: '?staffel=975&r=5#p4421x4429', title: 'gegen Nordhorn-Blanke 5', text: '4' }]
+    - [{ url: '?staffel=975&r=9#p4421x4428', title: 'gegen Hagener SV 3', text: 5½ }]
+    - [{ url: '?staffel=975&r=1#p4421x4427', title: 'gegen Gaste-Hasbergen', text: 6½ }]
+    - 11
+    - '39'
+    - ''
+-
+    - '4.'
+    - { text: Bersenbrück/Bramsche, url: '?mannschaft=4425', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=975&r=3#p4425x4423', title: 'gegen SC Fürstenau', text: '5' }]
+    - [{ url: '?staffel=975&r=9#p4425x4424', title: 'gegen TSV Riemsloh', text: '4' }]
+    - [{ url: '?staffel=975&r=2#p4425x4421', title: 'gegen SG Oesede-Gmht.', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=975&r=4#p4425x4422', title: 'gegen SK Meppen', text: 3½ }]
+    - [{ url: '?staffel=975&r=7#p4425x4426', title: 'gegen SV Bad Essen 2', text: 4½ }]
+    - [{ url: '?staffel=975&r=5#p4425x4430', title: 'gegen SV Hellern 5', text: '4' }]
+    - [{ url: '?staffel=975&r=8#p4425x4429', title: 'gegen Nordhorn-Blanke 5', text: '4' }]
+    - [{ url: '?staffel=975&r=1#p4425x4428', title: 'gegen Hagener SV 3', text: '5' }]
+    - [{ url: '?staffel=975&r=6#p4425x4427', title: 'gegen Gaste-Hasbergen', text: 5½ }]
+    - 11
+    - '39'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Meppen', url: '?mannschaft=4422', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=975&r=5#p4422x4423', title: 'gegen SC Fürstenau', text: '3' }]
+    - [{ url: '?staffel=975&r=2#p4422x4424', title: 'gegen TSV Riemsloh', text: 3½ }]
+    - [{ url: '?staffel=975&r=6#p4422x4421', title: 'gegen SG Oesede-Gmht.', text: 3½ }]
+    - [{ url: '?staffel=975&r=4#p4422x4425', title: 'gegen Bersenbrück/Bramsche', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=975&r=9#p4422x4426', title: 'gegen SV Bad Essen 2', text: 6½ }]
+    - [{ url: '?staffel=975&r=7#p4422x4430', title: 'gegen SV Hellern 5', text: 3½ }]
+    - [{ url: '?staffel=975&r=1#p4422x4429', title: 'gegen Nordhorn-Blanke 5', text: 5½ }]
+    - [{ url: '?staffel=975&r=3#p4422x4428', title: 'gegen Hagener SV 3', text: '5' }]
+    - [{ url: '?staffel=975&r=8#p4422x4427', title: 'gegen Gaste-Hasbergen', text: '6' }]
+    - 10
+    - '41'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Bad Essen 2', url: '?mannschaft=4426', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=975&r=8#p4426x4423', title: 'gegen SC Fürstenau', text: 3½ }]
+    - [{ url: '?staffel=975&r=5#p4426x4424', title: 'gegen TSV Riemsloh', text: '4' }]
+    - [{ url: '?staffel=975&r=3#p4426x4421', title: 'gegen SG Oesede-Gmht.', text: '5' }]
+    - [{ url: '?staffel=975&r=7#p4426x4425', title: 'gegen Bersenbrück/Bramsche', text: 3½ }]
+    - [{ url: '?staffel=975&r=9#p4426x4422', title: 'gegen SK Meppen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=975&r=1#p4426x4430', title: 'gegen SV Hellern 5', text: 5½ }]
+    - [{ url: '?staffel=975&r=4#p4426x4429', title: 'gegen Nordhorn-Blanke 5', text: 5½ }]
+    - [{ url: '?staffel=975&r=6#p4426x4428', title: 'gegen Hagener SV 3', text: '2' }]
+    - [{ url: '?staffel=975&r=2#p4426x4427', title: 'gegen Gaste-Hasbergen', text: 4½ }]
+    - 9
+    - '35'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Hellern 5', url: '?mannschaft=4430', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=975&r=6#p4430x4423', title: 'gegen SC Fürstenau', text: 3½ }]
+    - [{ url: '?staffel=975&r=3#p4430x4424', title: 'gegen TSV Riemsloh', text: 3½ }]
+    - [{ url: '?staffel=975&r=8#p4430x4421', title: 'gegen SG Oesede-Gmht.', text: 3½ }]
+    - [{ url: '?staffel=975&r=5#p4430x4425', title: 'gegen Bersenbrück/Bramsche', text: '4' }]
+    - [{ url: '?staffel=975&r=7#p4430x4422', title: 'gegen SK Meppen', text: 4½ }]
+    - [{ url: '?staffel=975&r=1#p4430x4426', title: 'gegen SV Bad Essen 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=975&r=2#p4430x4429', title: 'gegen Nordhorn-Blanke 5', text: 4½ }]
+    - [{ url: '?staffel=975&r=4#p4430x4428', title: 'gegen Hagener SV 3', text: 4½ }]
+    - [{ url: '?staffel=975&r=9#p4430x4427', title: 'gegen Gaste-Hasbergen', text: 4½ }]
+    - 9
+    - '35'
+    - ''
+-
+    - '8.'
+    - { text: 'Nordhorn-Blanke 5', url: '?mannschaft=4429', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=975&r=9#p4429x4423', title: 'gegen SC Fürstenau', text: '3' }]
+    - [{ url: '?staffel=975&r=6#p4429x4424', title: 'gegen TSV Riemsloh', text: 3½ }]
+    - [{ url: '?staffel=975&r=5#p4429x4421', title: 'gegen SG Oesede-Gmht.', text: '4' }]
+    - [{ url: '?staffel=975&r=8#p4429x4425', title: 'gegen Bersenbrück/Bramsche', text: '4' }]
+    - [{ url: '?staffel=975&r=1#p4429x4422', title: 'gegen SK Meppen', text: 2½ }]
+    - [{ url: '?staffel=975&r=4#p4429x4426', title: 'gegen SV Bad Essen 2', text: 2½ }]
+    - [{ url: '?staffel=975&r=2#p4429x4430', title: 'gegen SV Hellern 5', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=975&r=7#p4429x4428', title: 'gegen Hagener SV 3', text: 4½ }]
+    - [{ url: '?staffel=975&r=3#p4429x4427', title: 'gegen Gaste-Hasbergen', text: '6' }]
+    - 6
+    - 33½
+    - absteiger
+-
+    - '9.'
+    - { text: 'Hagener SV 3', url: '?mannschaft=4428', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=975&r=2#p4428x4423', title: 'gegen SC Fürstenau', text: '2' }]
+    - [{ url: '?staffel=975&r=8#p4428x4424', title: 'gegen TSV Riemsloh', text: 5½ }]
+    - [{ url: '?staffel=975&r=9#p4428x4421', title: 'gegen SG Oesede-Gmht.', text: 2½ }]
+    - [{ url: '?staffel=975&r=1#p4428x4425', title: 'gegen Bersenbrück/Bramsche', text: '3' }]
+    - [{ url: '?staffel=975&r=3#p4428x4422', title: 'gegen SK Meppen', text: '3' }]
+    - [{ url: '?staffel=975&r=6#p4428x4426', title: 'gegen SV Bad Essen 2', text: '6' }]
+    - [{ url: '?staffel=975&r=4#p4428x4430', title: 'gegen SV Hellern 5', text: 3½ }]
+    - [{ url: '?staffel=975&r=7#p4428x4429', title: 'gegen Nordhorn-Blanke 5', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=975&r=5#p4428x4427', title: 'gegen Gaste-Hasbergen', text: 4½ }]
+    - 6
+    - 33½
+    - absteiger
+-
+    - '10.'
+    - { text: Gaste-Hasbergen, url: '?mannschaft=4427', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=975&r=7#p4427x4423', title: 'gegen SC Fürstenau', text: '3' }]
+    - [{ url: '?staffel=975&r=4#p4427x4424', title: 'gegen TSV Riemsloh', text: 2½ }]
+    - [{ url: '?staffel=975&r=1#p4427x4421', title: 'gegen SG Oesede-Gmht.', text: 1½ }]
+    - [{ url: '?staffel=975&r=6#p4427x4425', title: 'gegen Bersenbrück/Bramsche', text: 2½ }]
+    - [{ url: '?staffel=975&r=8#p4427x4422', title: 'gegen SK Meppen', text: '2' }]
+    - [{ url: '?staffel=975&r=2#p4427x4426', title: 'gegen SV Bad Essen 2', text: 3½ }]
+    - [{ url: '?staffel=975&r=9#p4427x4430', title: 'gegen SV Hellern 5', text: 3½ }]
+    - [{ url: '?staffel=975&r=3#p4427x4429', title: 'gegen Nordhorn-Blanke 5', text: '2' }]
+    - [{ url: '?staffel=975&r=5#p4427x4428', title: 'gegen Hagener SV 3', text: 3½ }]
+    - xxx
+    - 0
+    - '24'
+    - absteiger

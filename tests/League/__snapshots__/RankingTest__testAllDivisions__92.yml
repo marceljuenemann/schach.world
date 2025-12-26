@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=1209', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=505&r=9#p1209x1271', title: 'gegen HSK-Lister Turm 3', text: 4½ }]
+    - [{ url: '?staffel=505&r=5#p1209x1234', title: 'gegen SC Stadthagen', text: 3½ }]
+    - [{ url: '?staffel=505&r=2#p1209x1238', title: 'gegen SK Stolzenau', text: 5½ }]
+    - [{ url: '?staffel=505&r=1#p1209x1258', title: 'gegen Uetze-Hänigsen', text: '5' }]
+    - [{ url: '?staffel=505&r=3#p1209x1266', title: 'gegen SK Rinteln', text: 5½ }]
+    - [{ url: '?staffel=505&r=7#p1209x1217', title: 'gegen SF Hannover 3', text: '5' }]
+    - [{ url: '?staffel=505&r=6#p1209x1225', title: 'gegen SK Neustadt', text: 4½ }]
+    - [{ url: '?staffel=505&r=8#p1209x1220', title: 'gegen SK Anderten', text: '5' }]
+    - [{ url: '?staffel=505&r=4#p1209x1231', title: 'gegen SK Ricklingen 2', text: '5' }]
+    - 16
+    - 43½
+    - ''
+-
+    - '2.'
+    - { text: 'HSK-Lister Turm 3', url: '?mannschaft=1271', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=505&r=9#p1271x1209', title: 'gegen SV Bückeburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=505&r=1#p1271x1234', title: 'gegen SC Stadthagen', text: 5½ }]
+    - [{ url: '?staffel=505&r=7#p1271x1238', title: 'gegen SK Stolzenau', text: '3' }]
+    - [{ url: '?staffel=505&r=6#p1271x1258', title: 'gegen Uetze-Hänigsen', text: '5' }]
+    - [{ url: '?staffel=505&r=8#p1271x1266', title: 'gegen SK Rinteln', text: 5½ }]
+    - [{ url: '?staffel=505&r=3#p1271x1217', title: 'gegen SF Hannover 3', text: '5' }]
+    - [{ url: '?staffel=505&r=2#p1271x1225', title: 'gegen SK Neustadt', text: 6½ }]
+    - [{ url: '?staffel=505&r=4#p1271x1220', title: 'gegen SK Anderten', text: 6½ }]
+    - [{ url: '?staffel=505&r=5#p1271x1231', title: 'gegen SK Ricklingen 2', text: '6' }]
+    - 14
+    - 46½
+    - ''
+-
+    - '3.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=1234', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=505&r=5#p1234x1209', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=505&r=1#p1234x1271', title: 'gegen HSK-Lister Turm 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=505&r=3#p1234x1238', title: 'gegen SK Stolzenau', text: '5' }]
+    - [{ url: '?staffel=505&r=2#p1234x1258', title: 'gegen Uetze-Hänigsen', text: 6½ }]
+    - [{ url: '?staffel=505&r=4#p1234x1266', title: 'gegen SK Rinteln', text: '6' }]
+    - [{ url: '?staffel=505&r=8#p1234x1217', title: 'gegen SF Hannover 3', text: '5' }]
+    - [{ url: '?staffel=505&r=7#p1234x1225', title: 'gegen SK Neustadt', text: 4½ }]
+    - [{ url: '?staffel=505&r=9#p1234x1220', title: 'gegen SK Anderten', text: '6' }]
+    - [{ url: '?staffel=505&r=6#p1234x1231', title: 'gegen SK Ricklingen 2', text: 3½ }]
+    - 14
+    - 43½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=1238', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=505&r=2#p1238x1209', title: 'gegen SV Bückeburg', text: 2½ }]
+    - [{ url: '?staffel=505&r=7#p1238x1271', title: 'gegen HSK-Lister Turm 3', text: '5' }]
+    - [{ url: '?staffel=505&r=3#p1238x1234', title: 'gegen SC Stadthagen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=505&r=8#p1238x1258', title: 'gegen Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=505&r=1#p1238x1266', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=505&r=5#p1238x1217', title: 'gegen SF Hannover 3', text: '5' }]
+    - [{ url: '?staffel=505&r=4#p1238x1225', title: 'gegen SK Neustadt', text: 4½ }]
+    - [{ url: '?staffel=505&r=6#p1238x1220', title: 'gegen SK Anderten', text: '5' }]
+    - [{ url: '?staffel=505&r=9#p1238x1231', title: 'gegen SK Ricklingen 2', text: 4½ }]
+    - 11
+    - '37'
+    - ''
+-
+    - '5.'
+    - { text: Uetze-Hänigsen, url: '?mannschaft=1258', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=505&r=1#p1258x1209', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=505&r=6#p1258x1271', title: 'gegen HSK-Lister Turm 3', text: '3' }]
+    - [{ url: '?staffel=505&r=2#p1258x1234', title: 'gegen SC Stadthagen', text: 1½ }]
+    - [{ url: '?staffel=505&r=8#p1258x1238', title: 'gegen SK Stolzenau', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=505&r=9#p1258x1266', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=505&r=4#p1258x1217', title: 'gegen SF Hannover 3', text: 5½ }]
+    - [{ url: '?staffel=505&r=3#p1258x1225', title: 'gegen SK Neustadt', text: '4' }]
+    - [{ url: '?staffel=505&r=5#p1258x1220', title: 'gegen SK Anderten', text: 6½ }]
+    - [{ url: '?staffel=505&r=7#p1258x1231', title: 'gegen SK Ricklingen 2', text: '7' }]
+    - 10
+    - '39'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Rinteln', url: '?mannschaft=1266', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=505&r=3#p1266x1209', title: 'gegen SV Bückeburg', text: 2½ }]
+    - [{ url: '?staffel=505&r=8#p1266x1271', title: 'gegen HSK-Lister Turm 3', text: 2½ }]
+    - [{ url: '?staffel=505&r=4#p1266x1234', title: 'gegen SC Stadthagen', text: '2' }]
+    - [{ url: '?staffel=505&r=1#p1266x1238', title: 'gegen SK Stolzenau', text: '4' }]
+    - [{ url: '?staffel=505&r=9#p1266x1258', title: 'gegen Uetze-Hänigsen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=505&r=6#p1266x1217', title: 'gegen SF Hannover 3', text: 1½ }]
+    - [{ url: '?staffel=505&r=5#p1266x1225', title: 'gegen SK Neustadt', text: 5½ }]
+    - [{ url: '?staffel=505&r=7#p1266x1220', title: 'gegen SK Anderten', text: '6' }]
+    - [{ url: '?staffel=505&r=2#p1266x1231', title: 'gegen SK Ricklingen 2', text: '6' }]
+    - 8
+    - '34'
+    - ''
+-
+    - '7.'
+    - { text: 'SF Hannover 3', url: '?mannschaft=1217', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=505&r=7#p1217x1209', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=505&r=3#p1217x1271', title: 'gegen HSK-Lister Turm 3', text: '3' }]
+    - [{ url: '?staffel=505&r=8#p1217x1234', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=505&r=5#p1217x1238', title: 'gegen SK Stolzenau', text: '3' }]
+    - [{ url: '?staffel=505&r=4#p1217x1258', title: 'gegen Uetze-Hänigsen', text: 2½ }]
+    - [{ url: '?staffel=505&r=6#p1217x1266', title: 'gegen SK Rinteln', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=505&r=9#p1217x1225', title: 'gegen SK Neustadt', text: '5' }]
+    - [{ url: '?staffel=505&r=2#p1217x1220', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=505&r=1#p1217x1231', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - 5
+    - 33½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Neustadt', url: '?mannschaft=1225', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=505&r=6#p1225x1209', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=505&r=2#p1225x1271', title: 'gegen HSK-Lister Turm 3', text: 1½ }]
+    - [{ url: '?staffel=505&r=7#p1225x1234', title: 'gegen SC Stadthagen', text: 3½ }]
+    - [{ url: '?staffel=505&r=4#p1225x1238', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=505&r=3#p1225x1258', title: 'gegen Uetze-Hänigsen', text: '4' }]
+    - [{ url: '?staffel=505&r=5#p1225x1266', title: 'gegen SK Rinteln', text: 2½ }]
+    - [{ url: '?staffel=505&r=9#p1225x1217', title: 'gegen SF Hannover 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=505&r=1#p1225x1220', title: 'gegen SK Anderten', text: 4½ }]
+    - [{ url: '?staffel=505&r=8#p1225x1231', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - 4
+    - '30'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Anderten', url: '?mannschaft=1220', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=505&r=8#p1220x1209', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=505&r=4#p1220x1271', title: 'gegen HSK-Lister Turm 3', text: 1½ }]
+    - [{ url: '?staffel=505&r=9#p1220x1234', title: 'gegen SC Stadthagen', text: '2' }]
+    - [{ url: '?staffel=505&r=6#p1220x1238', title: 'gegen SK Stolzenau', text: '3' }]
+    - [{ url: '?staffel=505&r=5#p1220x1258', title: 'gegen Uetze-Hänigsen', text: 1½ }]
+    - [{ url: '?staffel=505&r=7#p1220x1266', title: 'gegen SK Rinteln', text: '2' }]
+    - [{ url: '?staffel=505&r=2#p1220x1217', title: 'gegen SF Hannover 3', text: 4½ }]
+    - [{ url: '?staffel=505&r=1#p1220x1225', title: 'gegen SK Neustadt', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=505&r=3#p1220x1231', title: 'gegen SK Ricklingen 2', text: 5½ }]
+    - 4
+    - 26½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=1231', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=505&r=4#p1231x1209', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=505&r=5#p1231x1271', title: 'gegen HSK-Lister Turm 3', text: '2' }]
+    - [{ url: '?staffel=505&r=6#p1231x1234', title: 'gegen SC Stadthagen', text: 4½ }]
+    - [{ url: '?staffel=505&r=9#p1231x1238', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=505&r=7#p1231x1258', title: 'gegen Uetze-Hänigsen', text: '1' }]
+    - [{ url: '?staffel=505&r=2#p1231x1266', title: 'gegen SK Rinteln', text: '2' }]
+    - [{ url: '?staffel=505&r=1#p1231x1217', title: 'gegen SF Hannover 3', text: '4' }]
+    - [{ url: '?staffel=505&r=8#p1231x1225', title: 'gegen SK Neustadt', text: '4' }]
+    - [{ url: '?staffel=505&r=3#p1231x1220', title: 'gegen SK Anderten', text: 2½ }]
+    - xxx
+    - 4
+    - 26½
+    - ''

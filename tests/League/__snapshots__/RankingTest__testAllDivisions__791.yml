@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Osnabrück 5', url: '?mannschaft=6690', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1600&r=4#p6690x6648', title: 'gegen Hagener SV 3', text: '2' }, { url: '?staffel=1600&r=9#p6690x6648', title: 'gegen Hagener SV 3', text: 4½ }]
+    - [{ url: '?staffel=1600&r=3#p6690x6702', title: 'gegen TuS Lemförde', text: 4½ }, { url: '?staffel=1600&r=8#p6690x6702', title: 'gegen TuS Lemförde', text: 4½ }]
+    - [{ url: '?staffel=1600&r=5#p6690x6649', title: 'gegen Hagener SV 4', text: '6' }, { url: '?staffel=1600&r=10#p6690x6649', title: 'gegen Hagener SV 4', text: '6' }]
+    - [{ url: '?staffel=1600&r=1#p6690x6682', title: 'gegen SV Hellern 6', text: '3' }, { url: '?staffel=1600&r=6#p6690x6682', title: 'gegen SV Hellern 6', text: 4½ }]
+    - 13
+    - '35'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hagener SV 3', url: '?mannschaft=6648', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1600&r=4#p6648x6690', title: 'gegen SV Osnabrück 5', text: '4' }, { url: '?staffel=1600&r=9#p6648x6690', title: 'gegen SV Osnabrück 5', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1600&r=5#p6648x6702', title: 'gegen TuS Lemförde', text: '0' }, { url: '?staffel=1600&r=10#p6648x6702', title: 'gegen TuS Lemförde', text: '4' }]
+    - [{ url: '?staffel=1600&r=2#p6648x6649', title: 'gegen Hagener SV 4', text: '4' }, { url: '?staffel=1600&r=7#p6648x6649', title: 'gegen Hagener SV 4', text: 5½ }]
+    - [{ url: '?staffel=1600&r=3#p6648x6682', title: 'gegen SV Hellern 6', text: '2' }, { url: '?staffel=1600&r=8#p6648x6682', title: 'gegen SV Hellern 6', text: '6' }]
+    - 10
+    - '27'
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Lemförde', url: '?mannschaft=6702', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1600&r=3#p6702x6690', title: 'gegen SV Osnabrück 5', text: 1½ }, { url: '?staffel=1600&r=8#p6702x6690', title: 'gegen SV Osnabrück 5', text: 1½ }]
+    - [{ url: '?staffel=1600&r=5#p6702x6648', title: 'gegen Hagener SV 3', text: '6' }, { url: '?staffel=1600&r=10#p6702x6648', title: 'gegen Hagener SV 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1600&r=1#p6702x6649', title: 'gegen Hagener SV 4', text: '2' }, { url: '?staffel=1600&r=6#p6702x6649', title: 'gegen Hagener SV 4', text: '1' }]
+    - [{ url: '?staffel=1600&r=2#p6702x6682', title: 'gegen SV Hellern 6', text: '4' }, { url: '?staffel=1600&r=7#p6702x6682', title: 'gegen SV Hellern 6', text: 3½ }]
+    - 6
+    - 21½
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=6649', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1600&r=5#p6649x6690', title: 'gegen SV Osnabrück 5', text: '0' }, { url: '?staffel=1600&r=10#p6649x6690', title: 'gegen SV Osnabrück 5', text: '0' }]
+    - [{ url: '?staffel=1600&r=2#p6649x6648', title: 'gegen Hagener SV 3', text: '2' }, { url: '?staffel=1600&r=7#p6649x6648', title: 'gegen Hagener SV 3', text: ½ }]
+    - [{ url: '?staffel=1600&r=1#p6649x6702', title: 'gegen TuS Lemförde', text: '4' }, { url: '?staffel=1600&r=6#p6649x6702', title: 'gegen TuS Lemförde', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1600&r=4#p6649x6682', title: 'gegen SV Hellern 6', text: '0' }, { url: '?staffel=1600&r=9#p6649x6682', title: 'gegen SV Hellern 6', text: '4' }]
+    - 6
+    - 15½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Hellern 6', url: '?mannschaft=6682', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1600&r=1#p6682x6690', title: 'gegen SV Osnabrück 5', text: '3' }, { url: '?staffel=1600&r=6#p6682x6690', title: 'gegen SV Osnabrück 5', text: 1½ }]
+    - [{ url: '?staffel=1600&r=3#p6682x6648', title: 'gegen Hagener SV 3', text: '4' }, { url: '?staffel=1600&r=8#p6682x6648', title: 'gegen Hagener SV 3', text: '0' }]
+    - [{ url: '?staffel=1600&r=2#p6682x6702', title: 'gegen TuS Lemförde', text: '2' }, { url: '?staffel=1600&r=7#p6682x6702', title: 'gegen TuS Lemförde', text: 2½ }]
+    - [{ url: '?staffel=1600&r=4#p6682x6649', title: 'gegen Hagener SV 4', text: '6' }, { url: '?staffel=1600&r=9#p6682x6649', title: 'gegen Hagener SV 4', text: '2' }]
+    - xxx
+    - 5
+    - '21'
+    - ''

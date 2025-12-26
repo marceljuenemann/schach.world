@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Fürstenau 2', url: '?mannschaft=5968', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1437&r=2#p5968x5969', title: 'gegen SV Hellern 6', text: 3½ }, { url: '?staffel=1437&r=7#p5968x5969', title: 'gegen SV Hellern 6', text: 3½ }]
+    - [{ url: '?staffel=1437&r=3#p5968x5966', title: 'gegen SV Bad Essen 3', text: '3' }]
+    - [{ url: '?staffel=1437&r=4#p5968x5967', title: 'gegen SV Osnabrück 5', text: 4½ }]
+    - [{ url: '?staffel=1437&r=1#p5968x5971', title: 'gegen TuS Lemförde', text: '5' }, { url: '?staffel=1437&r=6#p5968x5971', title: 'gegen TuS Lemförde', text: '4' }]
+    - [{ url: '?staffel=1437&r=5#p5968x5970', title: 'gegen SV Hellern 7', text: '4' }]
+    - 13
+    - 27½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Hellern 6', url: '?mannschaft=5969', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1437&r=2#p5969x5968', title: 'gegen SC Fürstenau 2', text: 2½ }, { url: '?staffel=1437&r=7#p5969x5968', title: 'gegen SC Fürstenau 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1437&r=4#p5969x5966', title: 'gegen SV Bad Essen 3', text: 4½ }]
+    - [{ url: '?staffel=1437&r=5#p5969x5967', title: 'gegen SV Osnabrück 5', text: 5½ }]
+    - [{ url: '?staffel=1437&r=3#p5969x5971', title: 'gegen TuS Lemförde', text: 4½ }]
+    - [{ url: '?staffel=1437&r=1#p5969x5970', title: 'gegen SV Hellern 7', text: '5' }, { url: '?staffel=1437&r=6#p5969x5970', title: 'gegen SV Hellern 7', text: 4½ }]
+    - 10
+    - '29'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bad Essen 3', url: '?mannschaft=5966', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1437&r=3#p5966x5968', title: 'gegen SC Fürstenau 2', text: '3' }]
+    - [{ url: '?staffel=1437&r=4#p5966x5969', title: 'gegen SV Hellern 6', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1437&r=1#p5966x5967', title: 'gegen SV Osnabrück 5', text: 1½ }, { url: '?staffel=1437&r=6#p5966x5967', title: 'gegen SV Osnabrück 5', text: 4½ }]
+    - [{ url: '?staffel=1437&r=5#p5966x5971', title: 'gegen TuS Lemförde', text: '4' }]
+    - [{ url: '?staffel=1437&r=2#p5966x5970', title: 'gegen SV Hellern 7', text: '4' }, { url: '?staffel=1437&r=7#p5966x5970', title: 'gegen SV Hellern 7', text: '3' }]
+    - 8
+    - 21½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück 5', url: '?mannschaft=5967', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1437&r=4#p5967x5968', title: 'gegen SC Fürstenau 2', text: 1½ }]
+    - [{ url: '?staffel=1437&r=5#p5967x5969', title: 'gegen SV Hellern 6', text: ½ }]
+    - [{ url: '?staffel=1437&r=1#p5967x5966', title: 'gegen SV Bad Essen 3', text: 4½ }, { url: '?staffel=1437&r=6#p5967x5966', title: 'gegen SV Bad Essen 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1437&r=2#p5967x5971', title: 'gegen TuS Lemförde', text: '3' }, { url: '?staffel=1437&r=7#p5967x5971', title: 'gegen TuS Lemförde', text: '2' }]
+    - [{ url: '?staffel=1437&r=3#p5967x5970', title: 'gegen SV Hellern 7', text: '4' }]
+    - 5
+    - '17'
+    - ''
+-
+    - '5.'
+    - { text: 'TuS Lemförde', url: '?mannschaft=5971', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1437&r=1#p5971x5968', title: 'gegen SC Fürstenau 2', text: '1' }, { url: '?staffel=1437&r=6#p5971x5968', title: 'gegen SC Fürstenau 2', text: '2' }]
+    - [{ url: '?staffel=1437&r=3#p5971x5969', title: 'gegen SV Hellern 6', text: 1½ }]
+    - [{ url: '?staffel=1437&r=5#p5971x5966', title: 'gegen SV Bad Essen 3', text: '2' }]
+    - [{ url: '?staffel=1437&r=2#p5971x5967', title: 'gegen SV Osnabrück 5', text: '3' }, { url: '?staffel=1437&r=7#p5971x5967', title: 'gegen SV Osnabrück 5', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1437&r=4#p5971x5970', title: 'gegen SV Hellern 7', text: 2½ }]
+    - 3
+    - '16'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Hellern 7', url: '?mannschaft=5970', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1437&r=5#p5970x5968', title: 'gegen SC Fürstenau 2', text: '2' }]
+    - [{ url: '?staffel=1437&r=1#p5970x5969', title: 'gegen SV Hellern 6', text: '1' }, { url: '?staffel=1437&r=6#p5970x5969', title: 'gegen SV Hellern 6', text: 1½ }]
+    - [{ url: '?staffel=1437&r=2#p5970x5966', title: 'gegen SV Bad Essen 3', text: '2' }, { url: '?staffel=1437&r=7#p5970x5966', title: 'gegen SV Bad Essen 3', text: '3' }]
+    - [{ url: '?staffel=1437&r=3#p5970x5967', title: 'gegen SV Osnabrück 5', text: '2' }]
+    - [{ url: '?staffel=1437&r=4#p5970x5971', title: 'gegen TuS Lemförde', text: 3½ }]
+    - xxx
+    - 3
+    - '15'
+    - ''

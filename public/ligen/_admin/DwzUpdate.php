@@ -1,4 +1,4 @@
-<?
+<?php
 /* DWZ Update
  *
  * Versucht zu Spielern ohne ZPS-Angabe an Hand des Namens solch eine

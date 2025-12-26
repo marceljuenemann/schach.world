@@ -1,4 +1,4 @@
-<?
+<?php
 /* Berechnung der Tabelle
  *
  * Dieses Skript berechnet die Tabelle zu gegebener Staffel und Runde.

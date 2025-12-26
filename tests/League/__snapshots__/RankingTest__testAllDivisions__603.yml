@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Godesberger Sch', url: '?mannschaft=5777', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1345&r=8#p5777x5763', title: 'gegen KissChess e.V.', text: 2½ }]
+    - [{ url: '?staffel=1345&r=4#p5777x5785', title: 'gegen SVG Oberhessen', text: 2½ }]
+    - [{ url: '?staffel=1345&r=7#p5777x5606', title: 'gegen SC Eschborn', text: 2½ }]
+    - [{ url: '?staffel=1345&r=1#p5777x5621', title: 'gegen SK Landau', text: '2' }]
+    - [{ url: '?staffel=1345&r=2#p5777x5747', title: 'gegen VSG Offenbach', text: 2½ }]
+    - 9
+    - '12'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'KissChess e.V.', url: '?mannschaft=5763', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1345&r=8#p5763x5777', title: 'gegen Godesberger Sch', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1345&r=5#p5763x5785', title: 'gegen SVG Oberhessen', text: '4' }]
+    - [{ url: '?staffel=1345&r=4#p5763x5606', title: 'gegen SC Eschborn', text: '4' }]
+    - [{ url: '?staffel=1345&r=2#p5763x5621', title: 'gegen SK Landau', text: 2½ }]
+    - [{ url: '?staffel=1345&r=1#p5763x5747', title: 'gegen VSG Offenbach', text: '3' }]
+    - 8
+    - '15'
+    - ''
+-
+    - '3.'
+    - { text: 'SVG Oberhessen', url: '?mannschaft=5785', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1345&r=4#p5785x5777', title: 'gegen Godesberger Sch', text: 1½ }]
+    - [{ url: '?staffel=1345&r=5#p5785x5763', title: 'gegen KissChess e.V.', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1345&r=2#p5785x5606', title: 'gegen SC Eschborn', text: '3' }]
+    - [{ url: '?staffel=1345&r=8#p5785x5621', title: 'gegen SK Landau', text: '4' }]
+    - [{ url: '?staffel=1345&r=7#p5785x5747', title: 'gegen VSG Offenbach', text: '1' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Eschborn', url: '?mannschaft=5606', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1345&r=7#p5606x5777', title: 'gegen Godesberger Sch', text: 1½ }]
+    - [{ url: '?staffel=1345&r=4#p5606x5763', title: 'gegen KissChess e.V.', text: '0' }]
+    - [{ url: '?staffel=1345&r=2#p5606x5785', title: 'gegen SVG Oberhessen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1345&r=5#p5606x5621', title: 'gegen SK Landau', text: '4' }]
+    - [{ url: '?staffel=1345&r=8#p5606x5747', title: 'gegen VSG Offenbach', text: '3' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Landau', url: '?mannschaft=5621', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1345&r=1#p5621x5777', title: 'gegen Godesberger Sch', text: '2' }]
+    - [{ url: '?staffel=1345&r=2#p5621x5763', title: 'gegen KissChess e.V.', text: 1½ }]
+    - [{ url: '?staffel=1345&r=8#p5621x5785', title: 'gegen SVG Oberhessen', text: '0' }]
+    - [{ url: '?staffel=1345&r=5#p5621x5606', title: 'gegen SC Eschborn', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1345&r=4#p5621x5747', title: 'gegen VSG Offenbach', text: 2½ }]
+    - 3
+    - '6'
+    - absteiger
+-
+    - '6.'
+    - { text: 'VSG Offenbach', url: '?mannschaft=5747', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1345&r=2#p5747x5777', title: 'gegen Godesberger Sch', text: 1½ }]
+    - [{ url: '?staffel=1345&r=1#p5747x5763', title: 'gegen KissChess e.V.', text: '1' }]
+    - [{ url: '?staffel=1345&r=7#p5747x5785', title: 'gegen SVG Oberhessen', text: '3' }]
+    - [{ url: '?staffel=1345&r=8#p5747x5606', title: 'gegen SC Eschborn', text: '1' }]
+    - [{ url: '?staffel=1345&r=4#p5747x5621', title: 'gegen SK Landau', text: 1½ }]
+    - xxx
+    - 2
+    - '8'
+    - absteiger

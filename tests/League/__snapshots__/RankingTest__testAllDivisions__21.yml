@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Melle 03 2', url: '?mannschaft=568', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=417&r=8#p568x573', title: 'gegen SK Meppen 2', text: '5' }]
+    - [{ url: '?staffel=417&r=4#p568x569', title: 'gegen Dissen-Bad Roth', text: '6' }]
+    - [{ url: '?staffel=417&r=6#p568x522', title: 'gegen SF Spelle', text: '5' }]
+    - [{ url: '?staffel=417&r=7#p568x572', title: 'gegen SC Fürstenau', text: '5' }]
+    - [{ url: '?staffel=417&r=5#p568x570', title: 'gegen Gaste-Hasbergen', text: '5' }]
+    - [{ url: '?staffel=417&r=1#p568x575', title: 'gegen SK Nordhorn-Bl. 4', text: '7' }]
+    - [{ url: '?staffel=417&r=3#p568x576', title: 'gegen SF Nordhorn', text: 6½ }]
+    - [{ url: '?staffel=417&r=2#p568x567', title: 'gegen SV Lingen', text: '5' }]
+    - [{ url: '?staffel=417&r=9#p568x574', title: 'gegen IGM Osnabrück 3', text: 7½ }]
+    - 18
+    - '52'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Meppen 2', url: '?mannschaft=573', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=417&r=8#p573x568', title: 'gegen SC Melle 03 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=417&r=9#p573x569', title: 'gegen Dissen-Bad Roth', text: 5½ }]
+    - [{ url: '?staffel=417&r=2#p573x522', title: 'gegen SF Spelle', text: '3' }]
+    - [{ url: '?staffel=417&r=3#p573x572', title: 'gegen SC Fürstenau', text: 4½ }]
+    - [{ url: '?staffel=417&r=1#p573x570', title: 'gegen Gaste-Hasbergen', text: '5' }]
+    - [{ url: '?staffel=417&r=6#p573x575', title: 'gegen SK Nordhorn-Bl. 4', text: '5' }]
+    - [{ url: '?staffel=417&r=4#p573x576', title: 'gegen SF Nordhorn', text: 5½ }]
+    - [{ url: '?staffel=417&r=7#p573x567', title: 'gegen SV Lingen', text: '6' }]
+    - [{ url: '?staffel=417&r=5#p573x574', title: 'gegen IGM Osnabrück 3', text: 6½ }]
+    - 14
+    - '44'
+    - ''
+-
+    - '3.'
+    - { text: 'Dissen-Bad Roth', url: '?mannschaft=569', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=417&r=4#p569x568', title: 'gegen SC Melle 03 2', text: '2' }]
+    - [{ url: '?staffel=417&r=9#p569x573', title: 'gegen SK Meppen 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=417&r=7#p569x522', title: 'gegen SF Spelle', text: 4½ }]
+    - [{ url: '?staffel=417&r=8#p569x572', title: 'gegen SC Fürstenau', text: '4' }]
+    - [{ url: '?staffel=417&r=6#p569x570', title: 'gegen Gaste-Hasbergen', text: 4½ }]
+    - [{ url: '?staffel=417&r=2#p569x575', title: 'gegen SK Nordhorn-Bl. 4', text: '6' }]
+    - [{ url: '?staffel=417&r=5#p569x576', title: 'gegen SF Nordhorn', text: 5½ }]
+    - [{ url: '?staffel=417&r=3#p569x567', title: 'gegen SV Lingen', text: '5' }]
+    - [{ url: '?staffel=417&r=1#p569x574', title: 'gegen IGM Osnabrück 3', text: 6½ }]
+    - 13
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'SF Spelle', url: '?mannschaft=522', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=417&r=6#p522x568', title: 'gegen SC Melle 03 2', text: '3' }]
+    - [{ url: '?staffel=417&r=2#p522x573', title: 'gegen SK Meppen 2', text: '5' }]
+    - [{ url: '?staffel=417&r=7#p522x569', title: 'gegen Dissen-Bad Roth', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=417&r=1#p522x572', title: 'gegen SC Fürstenau', text: '6' }]
+    - [{ url: '?staffel=417&r=8#p522x570', title: 'gegen Gaste-Hasbergen', text: '5' }]
+    - [{ url: '?staffel=417&r=4#p522x575', title: 'gegen SK Nordhorn-Bl. 4', text: '4' }]
+    - [{ url: '?staffel=417&r=9#p522x576', title: 'gegen SF Nordhorn', text: 4½ }]
+    - [{ url: '?staffel=417&r=5#p522x567', title: 'gegen SV Lingen', text: 4½ }]
+    - [{ url: '?staffel=417&r=3#p522x574', title: 'gegen IGM Osnabrück 3', text: 4½ }]
+    - 13
+    - '40'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Fürstenau', url: '?mannschaft=572', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=417&r=7#p572x568', title: 'gegen SC Melle 03 2', text: '3' }]
+    - [{ url: '?staffel=417&r=3#p572x573', title: 'gegen SK Meppen 2', text: 3½ }]
+    - [{ url: '?staffel=417&r=8#p572x569', title: 'gegen Dissen-Bad Roth', text: '4' }]
+    - [{ url: '?staffel=417&r=1#p572x522', title: 'gegen SF Spelle', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=417&r=9#p572x570', title: 'gegen Gaste-Hasbergen', text: '4' }]
+    - [{ url: '?staffel=417&r=5#p572x575', title: 'gegen SK Nordhorn-Bl. 4', text: 4½ }]
+    - [{ url: '?staffel=417&r=2#p572x576', title: 'gegen SF Nordhorn', text: 4½ }]
+    - [{ url: '?staffel=417&r=6#p572x567', title: 'gegen SV Lingen', text: '6' }]
+    - [{ url: '?staffel=417&r=4#p572x574', title: 'gegen IGM Osnabrück 3', text: '5' }]
+    - 10
+    - 36½
+    - ''
+-
+    - '6.'
+    - { text: Gaste-Hasbergen, url: '?mannschaft=570', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=417&r=5#p570x568', title: 'gegen SC Melle 03 2', text: '3' }]
+    - [{ url: '?staffel=417&r=1#p570x573', title: 'gegen SK Meppen 2', text: '3' }]
+    - [{ url: '?staffel=417&r=6#p570x569', title: 'gegen Dissen-Bad Roth', text: 3½ }]
+    - [{ url: '?staffel=417&r=8#p570x522', title: 'gegen SF Spelle', text: '3' }]
+    - [{ url: '?staffel=417&r=9#p570x572', title: 'gegen SC Fürstenau', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=417&r=3#p570x575', title: 'gegen SK Nordhorn-Bl. 4', text: '5' }]
+    - [{ url: '?staffel=417&r=7#p570x576', title: 'gegen SF Nordhorn', text: '5' }]
+    - [{ url: '?staffel=417&r=4#p570x567', title: 'gegen SV Lingen', text: 4½ }]
+    - [{ url: '?staffel=417&r=2#p570x574', title: 'gegen IGM Osnabrück 3', text: '3' }]
+    - 7
+    - '34'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Nordhorn-Bl. 4', url: '?mannschaft=575', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=417&r=1#p575x568', title: 'gegen SC Melle 03 2', text: '1' }]
+    - [{ url: '?staffel=417&r=6#p575x573', title: 'gegen SK Meppen 2', text: '3' }]
+    - [{ url: '?staffel=417&r=2#p575x569', title: 'gegen Dissen-Bad Roth', text: '2' }]
+    - [{ url: '?staffel=417&r=4#p575x522', title: 'gegen SF Spelle', text: '4' }]
+    - [{ url: '?staffel=417&r=5#p575x572', title: 'gegen SC Fürstenau', text: 3½ }]
+    - [{ url: '?staffel=417&r=3#p575x570', title: 'gegen Gaste-Hasbergen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=417&r=8#p575x576', title: 'gegen SF Nordhorn', text: '4' }]
+    - [{ url: '?staffel=417&r=9#p575x567', title: 'gegen SV Lingen', text: 4½ }]
+    - [{ url: '?staffel=417&r=7#p575x574', title: 'gegen IGM Osnabrück 3', text: 6½ }]
+    - 6
+    - 31½
+    - ''
+-
+    - '8.'
+    - { text: 'SF Nordhorn', url: '?mannschaft=576', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=417&r=3#p576x568', title: 'gegen SC Melle 03 2', text: 1½ }]
+    - [{ url: '?staffel=417&r=4#p576x573', title: 'gegen SK Meppen 2', text: 2½ }]
+    - [{ url: '?staffel=417&r=5#p576x569', title: 'gegen Dissen-Bad Roth', text: 2½ }]
+    - [{ url: '?staffel=417&r=9#p576x522', title: 'gegen SF Spelle', text: 3½ }]
+    - [{ url: '?staffel=417&r=2#p576x572', title: 'gegen SC Fürstenau', text: 3½ }]
+    - [{ url: '?staffel=417&r=7#p576x570', title: 'gegen Gaste-Hasbergen', text: '3' }]
+    - [{ url: '?staffel=417&r=8#p576x575', title: 'gegen SK Nordhorn-Bl. 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=417&r=1#p576x567', title: 'gegen SV Lingen', text: '4' }]
+    - [{ url: '?staffel=417&r=6#p576x574', title: 'gegen IGM Osnabrück 3', text: 4½ }]
+    - 4
+    - '29'
+    - ''
+-
+    - '9.'
+    - { text: 'SV Lingen', url: '?mannschaft=567', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=417&r=2#p567x568', title: 'gegen SC Melle 03 2', text: '3' }]
+    - [{ url: '?staffel=417&r=7#p567x573', title: 'gegen SK Meppen 2', text: '2' }]
+    - [{ url: '?staffel=417&r=3#p567x569', title: 'gegen Dissen-Bad Roth', text: '3' }]
+    - [{ url: '?staffel=417&r=5#p567x522', title: 'gegen SF Spelle', text: 3½ }]
+    - [{ url: '?staffel=417&r=6#p567x572', title: 'gegen SC Fürstenau', text: '2' }]
+    - [{ url: '?staffel=417&r=4#p567x570', title: 'gegen Gaste-Hasbergen', text: 3½ }]
+    - [{ url: '?staffel=417&r=9#p567x575', title: 'gegen SK Nordhorn-Bl. 4', text: 3½ }]
+    - [{ url: '?staffel=417&r=1#p567x576', title: 'gegen SF Nordhorn', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=417&r=8#p567x574', title: 'gegen IGM Osnabrück 3', text: '5' }]
+    - 3
+    - 29½
+    - ''
+-
+    - '10.'
+    - { text: 'IGM Osnabrück 3', url: '?mannschaft=574', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=417&r=9#p574x568', title: 'gegen SC Melle 03 2', text: ½ }]
+    - [{ url: '?staffel=417&r=5#p574x573', title: 'gegen SK Meppen 2', text: 1½ }]
+    - [{ url: '?staffel=417&r=1#p574x569', title: 'gegen Dissen-Bad Roth', text: 1½ }]
+    - [{ url: '?staffel=417&r=3#p574x522', title: 'gegen SF Spelle', text: 3½ }]
+    - [{ url: '?staffel=417&r=4#p574x572', title: 'gegen SC Fürstenau', text: '3' }]
+    - [{ url: '?staffel=417&r=2#p574x570', title: 'gegen Gaste-Hasbergen', text: '5' }]
+    - [{ url: '?staffel=417&r=7#p574x575', title: 'gegen SK Nordhorn-Bl. 4', text: 1½ }]
+    - [{ url: '?staffel=417&r=6#p574x576', title: 'gegen SF Nordhorn', text: 3½ }]
+    - [{ url: '?staffel=417&r=8#p574x567', title: 'gegen SV Lingen', text: '3' }]
+    - xxx
+    - 2
+    - '23'
+    - ''

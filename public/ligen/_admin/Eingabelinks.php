@@ -1,4 +1,4 @@
-<?
+<?php
 /* Automatische Versendung von Eingabelink-eMails
  *
  * Versendet die Eingabelinks und sollte täglich per Cronjob aufgerufen
