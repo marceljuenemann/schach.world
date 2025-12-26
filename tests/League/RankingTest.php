@@ -4,7 +4,6 @@ namespace Nsv\League\Application;
 
 use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Division;
-use PHPUnit\Framework\Attributes\DataProvider;
 use SED_Cache;
 use Spatie\Snapshots\MatchesSnapshots;
 use Tests\League\LeagueTestCase;
@@ -56,17 +55,121 @@ class RankingTest extends LeagueTestCase
     $this->assertMatchesSnapshot($ranking);
   }
 
+  public function testDirectComparison_sameRank() {
+    $division = $this->division('nsv-2526', 'landesliga-sued');
+    $ranking = $this->legacyRanking($division, 2);
+    $this->assertEquals("4.", $ranking[4][0]);
+    $this->assertEquals("4.", $ranking[5][0]);
+    $this->assertEquals("2", $ranking[4][12]);
+    $this->assertEquals("2", $ranking[5][12]);
+    $this->assertEquals("7½", $ranking[4][13]);
+    $this->assertEquals("7½", $ranking[5][13]);
+    $this->assertMatchesSnapshot($ranking);
+  }
+
+  public function testDirectComparison_breaksTie() {
+    $division = $this->division('nsv-2425', 'landesliga-nord');
+    $ranking = $this->legacyRanking($division, 5);
+    $this->assertEquals("6.", $ranking[6][0]);
+    $this->assertEquals("7.", $ranking[7][0]);
+    $this->assertEquals("4", $ranking[6][12]);
+    $this->assertEquals("4", $ranking[7][12]);
+    $this->assertEquals("20", $ranking[6][13]);
+    $this->assertEquals("20", $ranking[7][13]);
+    $this->assertEquals("4½", $ranking[6][8][0]["text"]);
+    $this->assertEquals("3½", $ranking[7][7][0]["text"]);
+    $this->assertMatchesSnapshot($ranking);
+  }
+
+  public function testDirectComparison_multipleTeams() {
+    // In this example, three teams have the same score. Two of them have
+    // drawn against each other, so have 1 MP each. The tie between them
+    // is broken by Berlin tie break.
+    $division = $this->division('sjbh-2425', 'bmm-u12');
+    $ranking = $this->legacyRanking($division, 2);
+    $this->assertEquals("10.", $ranking[10][0]);
+    $this->assertEquals("11.", $ranking[11][0]);
+    $this->assertEquals("12.", $ranking[12][0]);
+    $this->assertEquals("1", $ranking[10][18]);
+    $this->assertEquals("1", $ranking[11][18]);
+    $this->assertEquals("1", $ranking[12][18]);
+    $this->assertEquals("4", $ranking[10][19]);
+    $this->assertEquals("4", $ranking[11][19]);
+    $this->assertEquals("4", $ranking[12][19]);
+    $this->assertMatchesSnapshot($ranking);
+  }
+
+  public function testBerlin_breaksTie() {
+    $division = $this->division('nsv-2425', 'landesliga-nord');
+    $ranking = $this->legacyRanking($division, 6);
+    $this->assertEquals("3.", $ranking[3][0]);
+    $this->assertEquals("4.", $ranking[4][0]);
+    $this->assertEquals("8", $ranking[3][12]);
+    $this->assertEquals("8", $ranking[4][12]);
+    $this->assertEquals("28", $ranking[3][13]);
+    $this->assertEquals("28", $ranking[4][13]);
+    $this->assertEquals("4", $ranking[3][5][0]["text"]);
+    $this->assertEquals("4", $ranking[4][4][0]["text"]);
+    $this->assertMatchesSnapshot($ranking);
+  }
+
+  public function testBerlin_sameRank() {
+    // In this example, two teams played against each other, but
+    // their Berlin score is the same, so they remain tied.
+    $division = $this->division('sjbh-2425', 'bmm-u20');
+    $ranking = $this->legacyRanking($division, 1);
+    $this->assertEquals("5.", $ranking[5][0]);
+    $this->assertEquals("5.", $ranking[6][0]);
+    $this->assertEquals("1", $ranking[5][12]);
+    $this->assertEquals("1", $ranking[6][12]);
+    $this->assertEquals("2", $ranking[5][13]);
+    $this->assertEquals("2", $ranking[6][13]);
+    $this->assertEquals("2", $ranking[5][7][0]["text"]);
+    $this->assertEquals("2", $ranking[6][6][0]["text"]);
+    $this->assertMatchesSnapshot($ranking);
+  }
+
+  public function testCovid_rules() {
+    // In the COVID season, rounds were mixed up, so we should always
+    // show the ranking with pairings for all rounds played.
+    // TODO: Should be fine to remove this special case at this point.
+    $division = $this->division('bezirk1-2122', 'bezirksliga');
+    $ranking = $this->legacyRanking($division, 2);
+    $this->assertMatchesSnapshot($ranking);
+  }
+
+  public function testRelegation() {
+    $division = $this->division('bezirk3-1  920', 'kreisliga');
+    $ranking = $this->legacyRanking($division, 11);
+    $this->assertEquals("aufsteigerRelegation", $ranking[3][15]);
+    $this->assertEquals("absteigerRelegation", $ranking[11][15]);
+    $this->assertMatchesSnapshot($ranking);
+  }
+
+  public function testMpCalculation_nsj_morePointsWins() {
+    // Organisation "7j" is configured to give 2 MPs for a 2:1 result (4 boards).
+    $division = $this->division('nsj-2425', 'landesklasse-sued-west');
+    $ranking = $this->legacyRanking($division, 1);
+    $this->assertEquals("2", $ranking[3][7][0]["text"]);
+    $this->assertEquals("1", $ranking[6][4][0]["text"]);
+    $this->assertEquals("2", $ranking[3][10]);
+    $this->assertMatchesSnapshot($ranking);
+  }
+
+  public function testMpCalculation_jbln_moreThanHalfRequired() {
+    // Organisation "ndsj" is configured to give only 1 MP for a 3:2 result (6 boards).
+    $division = $this->division('jbln-1718', 'staffel-ost');
+    $ranking = $this->legacyRanking($division, 5);
+    $this->assertEquals("3", $ranking[3][9][0]["text"]);
+    $this->assertEquals("2", $ranking[8][4][0]["text"]);
+    $this->assertEquals("7", $ranking[3][12]);
+    $this->assertMatchesSnapshot($ranking);
+  }
+
+
   /**
    * Tests
-   * - tie break: win
-   * - tie break: multiple teams
-   * - berliner: equal
-   * - berliner: different
-   * - covid
-   * - MP different (draw and win needed)
-   * - Check for other special cases
    * - Test all divisions (specify division ID?)
-   * - Check for coverage
    */
 
   /*
@@ -96,8 +199,7 @@ class RankingTest extends LeagueTestCase
     SED_Cache::clearAll();
     $ranking = Tabelle($div->id, $round, true);
 
-    Encoding::deep_utf8_encode($ranking);
-    return $ranking;  
+    return Encoding::deep_utf8_encode($ranking);
   }
 
   private function division(string $leaguePath, string $divisionPath): Division {

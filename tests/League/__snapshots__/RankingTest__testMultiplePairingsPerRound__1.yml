@@ -26,7 +26,7 @@
     - { text: 'SZ Bemerode', url: '?mannschaft=8562', title: 'Zur Mannschaftsaufstellung' }
     - xxx
     - {  }
-    - [{ url: '?staffel=1880&r=2#p8562x8514', title: 'gegen Hannover 96', text: !!binary Mr0= }]
+    - [{ url: '?staffel=1880&r=2#p8562x8514', title: 'gegen Hannover 96', text: 2½ }]
     - {  }
     - [{ url: '?staffel=1880&r=4#p8562x8526', title: 'gegen HSK Lister Turm', text: '4' }]
     - [{ url: '?staffel=1880&r=1#p8562x8455', title: 'gegen SV Springe', text: '4' }]
@@ -43,7 +43,7 @@
     - [{ url: '?staffel=1880&r=5#p8562x8525', title: 'gegen HSK Lister Turm 4', text: '4' }]
     - {  }
     - 20
-    - !!binary MzW9
+    - 35½
     - aufsteiger
 -
     - '2.'
@@ -72,7 +72,7 @@
 -
     - '3.'
     - { text: 'Hannover 96', url: '?mannschaft=8514', title: 'Zur Mannschaftsaufstellung' }
-    - [{ url: '?staffel=1880&r=2#p8514x8562', title: 'gegen SZ Bemerode', text: !!binary Mb0= }]
+    - [{ url: '?staffel=1880&r=2#p8514x8562', title: 'gegen SZ Bemerode', text: 1½ }]
     - [{ url: '?staffel=1880&r=2#p8514x8563', title: 'gegen SZ Bemerode 2', text: '1' }]
     - xxx
     - [{ url: '?staffel=1880&r=4#p8514x8376', title: 'gegen SK Lehrte', text: '4' }]
@@ -91,7 +91,7 @@
     - [{ url: '?staffel=1880&r=1#p8514x8525', title: 'gegen HSK Lister Turm 4', text: '4' }]
     - [{ url: '?staffel=1880&r=3#p8514x8564', title: 'gegen Eystruper SK', text: '4' }]
     - 16
-    - !!binary MzK9
+    - 32½
     - ''
 -
     - '4.'
@@ -103,7 +103,7 @@
     - {  }
     - [{ url: '?staffel=1880&r=3#p8376x8455', title: 'gegen SV Springe', text: '2' }]
     - [{ url: '?staffel=1880&r=1#p8376x8377', title: 'gegen SK Lehrte 2', text: '3' }]
-    - [{ url: '?staffel=1880&r=4#p8376x8519', title: 'gegen SD Isernhagen', text: !!binary M70= }]
+    - [{ url: '?staffel=1880&r=4#p8376x8519', title: 'gegen SD Isernhagen', text: 3½ }]
     - {  }
     - [{ url: '?staffel=1880&r=5#p8376x8520', title: 'gegen SK Wennigsen', text: '3' }]
     - [{ url: '?staffel=1880&r=2#p8376x8515', title: 'gegen Hannover 96 2', text: '3' }]
@@ -115,7 +115,7 @@
     - {  }
     - {  }
     - 15
-    - !!binary Mja9
+    - 26½
     - ''
 -
     - '5.'
@@ -195,7 +195,7 @@
     - [{ url: '?staffel=1880&r=2#p8519x8562', title: 'gegen SZ Bemerode', text: '1' }]
     - [{ url: '?staffel=1880&r=2#p8519x8563', title: 'gegen SZ Bemerode 2', text: '2' }]
     - {  }
-    - [{ url: '?staffel=1880&r=4#p8519x8376', title: 'gegen SK Lehrte', text: !!binary vQ== }]
+    - [{ url: '?staffel=1880&r=4#p8519x8376', title: 'gegen SK Lehrte', text: ½ }]
     - {  }
     - {  }
     - [{ url: '?staffel=1880&r=4#p8519x8377', title: 'gegen SK Lehrte 2', text: '1' }]
@@ -211,7 +211,7 @@
     - [{ url: '?staffel=1880&r=1#p8519x8525', title: 'gegen HSK Lister Turm 4', text: '4' }]
     - [{ url: '?staffel=1880&r=3#p8519x8564', title: 'gegen Eystruper SK', text: '4' }]
     - 9
-    - !!binary MTm9
+    - 19½
     - ''
 -
     - '9.'
@@ -256,10 +256,10 @@
     - {  }
     - {  }
     - [{ url: '?staffel=1880&r=4#p8520x8458', title: 'gegen SV Warmsen', text: '3' }]
-    - [{ url: '?staffel=1880&r=2#p8520x8525', title: 'gegen HSK Lister Turm 4', text: !!binary Mr0= }]
+    - [{ url: '?staffel=1880&r=2#p8520x8525', title: 'gegen HSK Lister Turm 4', text: 2½ }]
     - [{ url: '?staffel=1880&r=4#p8520x8564', title: 'gegen Eystruper SK', text: '4' }]
     - 7
-    - !!binary MTa9
+    - 16½
     - ''
 -
     - '11.'
@@ -327,11 +327,11 @@
     - xxx
     - [{ url: '?staffel=1880&r=4#p8456x8516', title: 'gegen Hannover 96 3', text: '2' }]
     - {  }
-    - [{ url: '?staffel=1880&r=2#p8456x8458', title: 'gegen SV Warmsen', text: !!binary Mb0= }]
+    - [{ url: '?staffel=1880&r=2#p8456x8458', title: 'gegen SV Warmsen', text: 1½ }]
     - {  }
     - [{ url: '?staffel=1880&r=2#p8456x8564', title: 'gegen Eystruper SK', text: '3' }]
     - 5
-    - !!binary MTG9
+    - 11½
     - ''
 -
     - '14.'
@@ -376,10 +376,10 @@
     - {  }
     - xxx
     - [{ url: '?staffel=1880&r=4#p8502x8458', title: 'gegen SV Warmsen', text: '2' }]
-    - [{ url: '?staffel=1880&r=2#p8502x8525', title: 'gegen HSK Lister Turm 4', text: !!binary Mb0= }]
+    - [{ url: '?staffel=1880&r=2#p8502x8525', title: 'gegen HSK Lister Turm 4', text: 1½ }]
     - [{ url: '?staffel=1880&r=4#p8502x8564', title: 'gegen Eystruper SK', text: '4' }]
     - 4
-    - !!binary MTK9
+    - 12½
     - ''
 -
     - '16.'
@@ -396,14 +396,14 @@
     - [{ url: '?staffel=1880&r=4#p8458x8520', title: 'gegen SK Wennigsen', text: '1' }]
     - [{ url: '?staffel=1880&r=1#p8458x8515', title: 'gegen Hannover 96 2', text: '1' }]
     - {  }
-    - [{ url: '?staffel=1880&r=2#p8458x8456', title: 'gegen SV Springe 2', text: !!binary Mr0= }]
+    - [{ url: '?staffel=1880&r=2#p8458x8456', title: 'gegen SV Springe 2', text: 2½ }]
     - [{ url: '?staffel=1880&r=1#p8458x8516', title: 'gegen Hannover 96 3', text: '0' }]
     - [{ url: '?staffel=1880&r=4#p8458x8502', title: 'gegen SF Barsinghausen', text: '2' }]
     - xxx
     - {  }
     - {  }
     - 3
-    - !!binary Ob0=
+    - 9½
     - ''
 -
     - '17.'
@@ -417,12 +417,12 @@
     - {  }
     - [{ url: '?staffel=1880&r=1#p8525x8519', title: 'gegen SD Isernhagen', text: '0' }]
     - [{ url: '?staffel=1880&r=3#p8525x8527', title: 'gegen HSK Lister Turm 2', text: '2' }]
-    - [{ url: '?staffel=1880&r=2#p8525x8520', title: 'gegen SK Wennigsen', text: !!binary Mb0= }]
+    - [{ url: '?staffel=1880&r=2#p8525x8520', title: 'gegen SK Wennigsen', text: 1½ }]
     - {  }
     - [{ url: '?staffel=1880&r=4#p8525x8524', title: 'gegen HSK Lister Turm 3', text: '0' }]
     - {  }
     - {  }
-    - [{ url: '?staffel=1880&r=2#p8525x8502', title: 'gegen SF Barsinghausen', text: !!binary Mr0= }]
+    - [{ url: '?staffel=1880&r=2#p8525x8502', title: 'gegen SF Barsinghausen', text: 2½ }]
     - {  }
     - xxx
     - {  }
