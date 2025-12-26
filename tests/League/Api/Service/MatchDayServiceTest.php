@@ -4,8 +4,9 @@ namespace Nsv\League\Api\Service;
 
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
+use Tests\League\LeagueTestCase;
 
-class MatchDayServiceTest extends AbstractApiTest
+class MatchDayServiceTest extends LeagueTestCase
 {
   private MatchDayService $service;
   private League $league;
@@ -43,7 +44,6 @@ class MatchDayServiceTest extends AbstractApiTest
   private function testMatchDay(int $round) {
     $ranking = function() { return ['test' => 'ranking']; };
     $model = $this->service->matchDayCached($this->division, $round, $ranking);
-    $model->lastModified = 'MOCKED';
-    $this->assertModel($model, __FILE__, "Round-$round");
+    $this->assertMatchesSnapshot($model);
   } 
 }

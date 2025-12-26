@@ -1,0 +1,28 @@
+id: 539821
+name: 'Player d609, f30135e'
+lastName: 'Player d609'
+firstName: f30135e
+title: ''
+number: 104
+zps: 70156-582
+dwz: 1892
+elo: 1943
+gender: m
+isGuest: false
+lateRegistrationRound: null
+uri: /ligen/nsj-2526/s/539821/
+dsbUri: 'https://www.schachbund.de/spieler.html?zps=70156-582'
+team:
+    id: 8412
+    name: 'SK Lehrte'
+    zps: '70156'
+    uri: /ligen/nsj-2526/m/8412/
+    apiUri: /ligen/nsj-2526/api/teams/8412/
+games:
+    - { round: 1, board: 3, home: false, white: true, result: '-', opponentResult: +, opponentTeam: { id: 8416, name: !!binary U1YgT3NuYWJy/GNrIHYuIDE5MTk=, zps: '70611', uri: /ligen/nsj-2526/m/8416/, apiUri: /ligen/nsj-2526/api/teams/8416/ }, opponentPlayer: { id: 539986, name: 'Player d674, c7fa2d9', lastName: 'Player d674', firstName: c7fa2d9, title: '', number: 104, zps: 70611-766, dwz: 1771, elo: 1751, gender: m, isGuest: false, lateRegistrationRound: null, uri: /ligen/nsj-2526/s/539986/, dsbUri: 'https://www.schachbund.de/spieler.html?zps=70611-766' }, uri: /ligen/nsj-2526/jugendliga-niedersachsen/1/ }
+    - { round: 3, board: 3, home: true, white: false, result: '1', opponentResult: '0', opponentTeam: { id: 8409, name: 'Peiner SV', zps: '70224', uri: /ligen/nsj-2526/m/8409/, apiUri: /ligen/nsj-2526/api/teams/8409/ }, opponentPlayer: { id: 539788, name: 'Player bf5a, c8eeef0', lastName: 'Player bf5a', firstName: c8eeef0, title: '', number: 103, zps: 70224-234, dwz: 1595, elo: null, gender: m, isGuest: false, lateRegistrationRound: null, uri: /ligen/nsj-2526/s/539788/, dsbUri: 'https://www.schachbund.de/spieler.html?zps=70224-234' }, uri: /ligen/nsj-2526/jugendliga-niedersachsen/3/ }
+dwzCalculation:
+    - 1892
+    - [1595]
+    - 1.0
+    - 1994
