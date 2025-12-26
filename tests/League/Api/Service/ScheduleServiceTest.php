@@ -4,8 +4,9 @@ namespace Nsv\League\Api\Service;
 
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
+use Tests\League\LeagueTestCase;
 
-class ScheduleServiceTest extends AbstractApiTest
+class ScheduleServiceTest extends LeagueTestCase
 {
   private ScheduleService $service;
   private League $league;
@@ -78,12 +79,12 @@ class ScheduleServiceTest extends AbstractApiTest
 
   public function testMatchesByDate() {
     $matchDays = $this->service->matchesByDate($this->league, '2025-01-01');
-    $this->assertModel($matchDays, __FILE__, __FUNCTION__);
+    $this->assertMatchesSnapshot($matchDays);
   }
-
+  
   public function testDivisionSchedule() {
     $matchDays = $this->service->divisionSchedule($this->division);
-    $this->assertModel($matchDays, __FILE__, __FUNCTION__);
+    $this->assertMatchesSnapshot($matchDays);
   }
 
 }

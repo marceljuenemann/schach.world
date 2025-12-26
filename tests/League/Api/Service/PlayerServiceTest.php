@@ -3,17 +3,16 @@
 namespace Nsv\League\Api\Service;
 
 use Nsv\Dwz\IsewaseDwzCalculator;
-use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\League\Entity\Team;
+use Tests\League\LeagueTestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 
-class PlayerServiceTest extends AbstractApiTest
+class PlayerServiceTest extends LeagueTestCase
 {
   private MockObject $dwzService;
   private PlayerService $service;
   private League $league;
-  private Division $division;
   private Team $team;
 
   protected function setUp(): void {
@@ -22,7 +21,6 @@ class PlayerServiceTest extends AbstractApiTest
     $this->container->set(IsewaseDwzCalculator::class, $this->dwzService);
     $this->service = $this->container->get(PlayerService::class);
     $this->league = $this->leagueRepository->findByPathOrPrefix('nsj-2526');
-    $this->division = $this->league->divisionByPath('jugendliga-niedersachsen');
     $this->team = $this->league->teamById(8412);  // SK Lehrte
   }
 
@@ -35,11 +33,11 @@ class PlayerServiceTest extends AbstractApiTest
         }));
 
     $model = $this->service->player($this->league, $player->id);
-    $this->assertModel($model, __FILE__, __FUNCTION__);
+    $this->assertMatchesSnapshot($model);
   }
 
   public function testPlayer2() {
-    $player = $this->team->players[1];
+    $player = $this->team->players[3];
     $this->dwzService->expects(self::once())
         ->method('calculate')
         ->will($this->returnCallback(function() {
@@ -47,13 +45,13 @@ class PlayerServiceTest extends AbstractApiTest
         }));
 
     $model = $this->service->player($this->league, $player->id);
-    $this->assertModel($model, __FILE__, __FUNCTION__);
+    $this->assertMatchesSnapshot($model);
   }
 
   public function testPlayer3_withoutGamesAndRating() {
     $player = $this->team->players[0];
     $this->dwzService->expects(self::never())->method('calculate');
     $model = $this->service->player($this->league, $player->id);
-    $this->assertModel($model, __FILE__, __FUNCTION__);
+    $this->assertMatchesSnapshot($model);
   }
 }
