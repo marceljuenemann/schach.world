@@ -44,6 +44,8 @@ You can run the tests with
 
 You might want to run this from the docker webserver container if you don't have the appropriate PHP version installed on your host.
 
+### Updating test snapshots
+
 Many of the tests run against the actual database docker container and the league manager test cases make extensive
 use of the anonymized production database dump in order to have meaningful tests. In addition, [snapshot tests](https://github.com/spatie/phpunit-snapshot-assertions)
 are used for large test coverage with minimal test setup. If you expect snapshots to change, run tests with 
@@ -51,6 +53,14 @@ are used for large test coverage with minimal test setup. If you expect snapshot
 `./bin/phpunit -d --update-snapshots`
 
 and check that the snapshot changes are expected before opening a pull request.
+
+### Test coverage
+
+You can generate a test coverage report with
+
+`XDEBUG_MODE=coverage ./bin/phpunit --coverage-html var/coverage`
+
+This is also generated as part of the GitHub workflow.
 
 ### Angular Development
 

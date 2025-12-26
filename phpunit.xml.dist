@@ -30,6 +30,7 @@
         </include>
         <exclude>
             <directory>public/ligen/_inc/extern</directory>
+            <directory>public/ligen/_templates/nsv2020</directory>
         </exclude>
     </source>
 </phpunit>
