@@ -70,13 +70,13 @@ class Scores implements TieBreak {
     // If a bpForDraw is set, use that to calculate match points.
     if ($this->bpForDraw !== null) {
       return [
-        $pairing->result1 > $this->bpForDraw ? 2 : ($pairing->result1 == $this->bpForDraw ? 1 : 0),
-        $pairing->result2 > $this->bpForDraw ? 2 : ($pairing->result2 == $this->bpForDraw ? 1 : 0),
+        $pairing->result1 > $this->bpForDraw ? MP_WIN : ($pairing->result1 == $this->bpForDraw ? MP_DRAW : MP_LOSS),
+        $pairing->result2 > $this->bpForDraw ? MP_WIN : ($pairing->result2 == $this->bpForDraw ? MP_DRAW : MP_LOSS),
       ];
     }
     // Otherwise just compare board points.
-    $mp1 = $pairing->result1 > $pairing->result2 ? 2 : ($pairing->result1 < $pairing->result2 ? 0 : 1);
-    $mp2 = 2 - $mp1;
+    $mp1 = $pairing->result1 > $pairing->result2 ? MP_WIN : ($pairing->result1 < $pairing->result2 ? MP_LOSS : MP_DRAW);
+    $mp2 = MP_WIN - $mp1;
     return [$mp1, $mp2];
   }
 

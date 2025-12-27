@@ -30,6 +30,16 @@
         "count": 5
     },
     {
+        "location": "Nsv\\League\\Api\\Service\\MatchDayServiceTest::testMatchDay_round1",
+        "message": "Implicit conversion from float 2.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Api\\Service\\MatchDayServiceTest::testMatchDay_round1",
+        "message": "Implicit conversion from float 5.5 to int loses precision",
+        "count": 3
+    },
+    {
         "location": "Nsv\\League\\Api\\Service\\PlayerServiceTest::setUp",
         "message": "In ORM 3.0, the AttributeDriver will report fields for the classes where they are declared. This may uncover invalid mapping configurations. To opt into the new mode today, set the \"reportFieldsWhereDeclared\" constructor parameter to true. (AttributeDriver.php:77 called by Nsv_WebApp_Core_KernelTestDebugContainer.php:583, https://github.com/doctrine/orm/pull/10455, package doctrine/orm)",
         "count": 3
