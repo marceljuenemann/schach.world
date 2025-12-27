@@ -66,7 +66,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testDirectComparison_sameRank() {
-    $this->markTestSkipped('Not yet implemented.');
     $division = $this->division('nsv-2526', 'landesliga-sued');
     $ranking = $this->legacyRanking($division, 2);
     $this->assertEquals("4.", $ranking[4][0]);
@@ -79,7 +78,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testDirectComparison_breaksTie() {
-    $this->markTestSkipped('Not yet implemented.');
     $division = $this->division('nsv-2425', 'landesliga-nord');
     $ranking = $this->legacyRanking($division, 5);
     $this->assertEquals("6.", $ranking[6][0]);

@@ -6,6 +6,7 @@ use Nsv\League\Api\Model;
 use Nsv\League\Api\Model\Ranking;
 use Nsv\League\Api\Model\RankingTeam;
 use Nsv\League\Api\Model\TeamPairing;
+use Nsv\League\Api\Service\TieBreak\HeadToHead;
 use Nsv\League\Api\Service\TieBreak\Scores;
 use Nsv\League\Api\Service\TieBreak\TieBreaks;
 use Nsv\League\Entity\Division;
@@ -31,7 +32,8 @@ class RankingService {
     // Sort teams using the defined tiebreak criteria.
     // TODO: Make tie breaks more configurable.
     $scores = new Scores($division, $pairings);
-    $tiebreaks = new TieBreaks([$scores]);
+    $headToHead = new HeadToHead($scores);
+    $tiebreaks = new TieBreaks([$scores, $headToHead]);
     $tiebreaks->sort($teams);
 
     // Create the ranking model.
