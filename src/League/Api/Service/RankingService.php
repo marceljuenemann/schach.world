@@ -33,6 +33,8 @@ class RankingService {
       return $pairing->round <= $round &&
         $pairing->result1 !== null && 
         $pairing->result2 !== null &&
+        $pairing->team1 !== null &&
+        $pairing->team2 !== null &&
         $pairing->team1->division == $division &&
         $pairing->team2->division == $division;
     });

@@ -193,5 +193,110 @@
         "location": "Nsv\\League\\Application\\RankingTest::testMpCalculation_jbln_moreThanHalfRequired",
         "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
         "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Version detection logic for MySQL will change in DBAL 4. Please specify the version as the server reports it, e.g. \"5.7.40\" instead of \"5.7\". (AbstractMySQLDriver.php:107 called by VersionAwarePlatformStaticDriver.php:19, https://github.com/doctrine/dbal/pull/5779, package doctrine/orm)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 35.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 5.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 16.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 6.5 to int loses precision",
+        "count": 6
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 18.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 11.5 to int loses precision",
+        "count": 6
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 2.5 to int loses precision",
+        "count": 9
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 8.5 to int loses precision",
+        "count": 9
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 36.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 38.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 46.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 17.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 4.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 1.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 10.5 to int loses precision",
+        "count": 9
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 14.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 26.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 9.5 to int loses precision",
+        "count": 6
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testAllDivisions",
+        "message": "Implicit conversion from float 13.5 to int loses precision",
+        "count": 3
     }
 ]

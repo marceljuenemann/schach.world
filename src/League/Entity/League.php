@@ -30,7 +30,7 @@ class League
    * Note that some organisation-specific rules are hardcoded in Regulation.php
    */
   #[ORM\Column(name: 'organisation', length: 15)]
-  private string $organisation;
+  private string | null $organisation;
 
   #[ORM\Column(name: 'template')]
   private string $theme;
