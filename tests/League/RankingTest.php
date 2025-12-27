@@ -50,7 +50,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testMultiplePairingsPerRound() {
-    $this->markTestSkipped('Not yet implemented.');
     $division = $this->division('sjbh-2526', 'bmm-u12');
     $ranking = $this->legacyRanking($division, 5);
     $this->assertMatchesSnapshot($ranking);
@@ -202,7 +201,6 @@ class RankingTest extends LeagueTestCase
 
   private function legacyRanking(Division $div, int $round): array {
     $ranking = $this->rankingService->ranking($div, $round);
-    print_r($ranking);
     $legacy = $ranking->toLegacyFormat();
     return Encoding::deep_utf8_encode($legacy);
   }

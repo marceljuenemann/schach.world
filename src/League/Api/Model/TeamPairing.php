@@ -15,6 +15,8 @@ class TeamPairing
   public int $round;
   public bool $home;
   public string|null $date;
+  public ?float $score;
+  public ?float $opponentScore;
   public ?string $result;
   public string $uri;
 
@@ -30,16 +32,20 @@ class TeamPairing
       $result->home = true;
       $result->opponent = Team::fromEntity($pairing->team2);
       if ($pairing->result1 !== null) {
-        $result->result = Result::format($pairing->result1).':'.Result::format($pairing->result2);
+        $result->score = $pairing->result1;
+        $result->opponentScore = $pairing->result2;
       }
     } else {
       $result->home = false;
       $result->opponent = Team::fromEntity($pairing->team1);
       if ($pairing->result1 !== null) {
-        $result->result = Result::format($pairing->result2).':'.Result::format($pairing->result1);
+        $result->score = $pairing->result2;
+        $result->opponentScore = $pairing->result1;
       }
     }
-
+    if (isset($result->score)) {
+      $result->result = Result::format($result->score).':'.Result::format($result->opponentScore);
+    }
     return $result;
   }
 }

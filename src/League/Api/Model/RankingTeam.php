@@ -2,6 +2,8 @@
 
 namespace Nsv\League\Api\Model;
 
+use Nsv\League\Core\Result;
+
 /**
  * Represents a team in a ranking.
  */
@@ -13,7 +15,7 @@ class RankingTeam
   public float $bp;
 
   // List of TeamPairings against each opponent in the ranking.
-  public array $pairings;
+  public array $pairings = [];
 
   public function toLegacyFormat(): array {
     $result[] = $this->rank.'.';
@@ -33,7 +35,10 @@ class RankingTeam
 
   static function pairingToLegacyFormat(TeamPairing $pairing): array {
     return [
-      'text' => $pairing->opponent->name
+      // TODO: Generate URL in the legacy format.
+      'url' => $pairing->uri,
+      'title' => 'gegen '.$pairing->opponent->name,
+      'text' => Result::format($pairing->score)
     ];
   }
 }
