@@ -25,6 +25,11 @@
         "count": 1
     },
     {
+        "location": "Nsv\\League\\Application\\RankingTest::testNoTable",
+        "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
+        "count": 1
+    },
+    {
         "location": "Nsv\\League\\Application\\RankingTest::testNoTeams",
         "message": "Version detection logic for MySQL will change in DBAL 4. Please specify the version as the server reports it, e.g. \"5.7.40\" instead of \"5.7\". (AbstractMySQLDriver.php:107 called by VersionAwarePlatformStaticDriver.php:19, https://github.com/doctrine/dbal/pull/5779, package doctrine/orm)",
         "count": 1
@@ -41,6 +46,16 @@
     },
     {
         "location": "Nsv\\League\\Application\\RankingTest::testNoPairings",
+        "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testRoundZero",
+        "message": "Version detection logic for MySQL will change in DBAL 4. Please specify the version as the server reports it, e.g. \"5.7.40\" instead of \"5.7\". (AbstractMySQLDriver.php:107 called by VersionAwarePlatformStaticDriver.php:19, https://github.com/doctrine/dbal/pull/5779, package doctrine/orm)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testRoundZero",
         "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
         "count": 1
     }

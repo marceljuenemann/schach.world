@@ -12,6 +12,10 @@ class RankingService {
   public function __construct() {}
 
   public function ranking(Division $division, int $round): Ranking {
+    if (!$division->config('showRanking')) {
+      return new Ranking();
+    }
+
     $teams = $division->teams();
     $ranking = new Ranking();
     $ranking->teams = array_map(function($team) use ($teams) {

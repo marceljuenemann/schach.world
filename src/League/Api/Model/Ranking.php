@@ -33,8 +33,13 @@ class Ranking
       $result[$i][$i + 1] = 'xxx';
     }
 
-    for ($i = 1; $i <= $this->teamsPromoted && $i < count($this->teams); $i++) {
+    for ($i = 1; $i <= $this->teamsPromoted && $i <= count($this->teams); $i++) {
       $result[$i][count($result[$i]) - 1] = 'aufsteiger';
+    }
+
+    for ($i = 1; $i <= $this->teamsDemoted && $i <= count($this->teams); $i++) {
+      $row = count($result) - $i;
+      $result[$row][count($result[$row]) - 1] = 'absteiger';
     }
 
     return $result;

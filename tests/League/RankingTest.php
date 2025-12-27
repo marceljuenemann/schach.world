@@ -21,7 +21,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testNoTable() {
-    $this->markTestSkipped('This should be checked in MatchDayService.');
     $division = $this->division('pokal-2122', 'pokal-mm');
     $ranking = $this->legacyRanking($division, 3);
     $this->assertFalse($division->config('showRanking'));
@@ -45,7 +44,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testRoundZero() {
-    $this->markTestSkipped('Not yet implemented.');
     $division = $this->division('nsv-2526', 'landesliga-sued');
     $ranking = $this->legacyRanking($division, 0);
     $this->assertMatchesSnapshot($ranking);
