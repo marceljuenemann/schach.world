@@ -24,9 +24,14 @@ class MatchDayService
     private RankingService $rankingService,
   ) {}
 
-  public function matchDay(Entity\Division $division, int $round, callable $legacyRanking) {
+  public function matchDay(Entity\Division $division, int $round) {
     $model = MatchDay::fromRound($division->round($round));
-    $model->legacyRanking = $legacyRanking();
+
+    // TODO: Delete old ranking code (tabelle.inc.php)
+    // TODO: Refine and return new ranking model
+    //$model->legacyRanking = $legacyRanking();
+    $ranking = $this->rankingService->ranking($division, $round);
+    $model->legacyRanking = $ranking->toLegacyFormat($division);
 
     $pairings = $this->pairingRepository->findByRound($division, $round);
     foreach ($pairings as $pairing) {
@@ -62,12 +67,5 @@ class MatchDayService
 
     // $model->generatedAt = date('Y-m-d H:i:s');
     return $model;
-  }
-
-  public function matchDayCached(Entity\Division $division, int $round, callable $legacyRanking) {
-    $callback = function() use ($division, $round, $legacyRanking) {
-      return $this->matchDay($division, $round, $legacyRanking);
-    };
-    return $this->cacheRepository->getOrCompute(CacheEntry::TYPE_MATCH_DAY, $division, $round, $callback);
   }
 }

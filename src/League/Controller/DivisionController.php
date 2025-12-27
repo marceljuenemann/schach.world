@@ -133,12 +133,7 @@ class DivisionController extends AbstractLeagueController {
   }
 
   private function matchday_model(MatchDayService $service, int $round) {
-    return $service->matchDayCached($this->division, $round, function () use ($round) {
-      $this->initializeLegacySystem();
-      $_GET['r'] = $round;
-      require_once('tabelle.inc.php');
-      return Tabelle($this->division->id, $round, true /* TODO: $kreuztabelle = false? */);
-    });
+    return $service->matchDay($this->division, $round);
   }
 
   #[Route('{division}/', name: 'index')]

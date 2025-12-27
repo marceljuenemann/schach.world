@@ -183,7 +183,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testAllDivisions() {
-    // TODO: Probably remove this test altogether after ranking is rewritten.
     $this->markTestSkipped('This is an expensive test.');
     $divisions = $this->em->getRepository(Division::class)->findBy([], ['id' => 'ASC']);
     foreach ($divisions as $division) {

@@ -42,8 +42,7 @@ class MatchDayServiceTest extends LeagueTestCase
   }
 
   private function testMatchDay(int $round) {
-    $ranking = function() { return ['test' => 'ranking']; };
-    $model = $this->service->matchDayCached($this->division, $round, $ranking);
+    $model = $this->service->matchDay($this->division, $round);
     $this->assertMatchesSnapshot($model);
   } 
 }
