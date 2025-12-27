@@ -17,11 +17,15 @@ class RankingTeam
 
   public function toLegacyFormat(): array {
     $result[] = $this->rank.'.';
-    $result[] = ['name' => $this->team->name];
+    $result[] = [
+      'text' => $this->team->name,
+      'url' => '?mannschaft='.$this->team->id,
+      'title' => 'Zur Mannschaftsaufstellung'
+    ];
     foreach ($this->pairings as $pairings) {
       $result[] = array_map([RankingTeam::class, 'pairingToLegacyFormat'], $pairings);
     }
-    $result[] = (string) $this->mp;
+    $result[] = $this->mp;
     $result[] = (string) $this->bp;
     $result[] = "";
     return $result;

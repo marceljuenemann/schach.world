@@ -12,33 +12,25 @@ class RankingService {
   public function __construct() {}
 
   public function ranking(Division $division, int $round): Ranking {
+    $teams = $division->teams();
     $ranking = new Ranking();
-    $ranking->teams = array_map(function($team) {
+    $ranking->teams = array_map(function($team) use ($teams) {
       $rt = new RankingTeam();
       $rt->team = Model\Team::fromEntity($team);
       $rt->rank = 1; // TODO
       $rt->mp = 0; // TODO
       $rt->bp = 0.0; // TODO
-      $rt->pairings = []; // TODO
+
+      // Fill in pairings for eaach team.
+      $rt->pairings = array_map(fn($team) => [], $teams); // TODO
       return $rt;
-    }, $division->teams());
+    }, $teams);
+
+    $ranking->teamsPromoted = $division->config('teamsPromoted') ?? 0;
+    $ranking->teamsDemoted = $division->config('teamsDemoted') ?? 0;
+    $ranking->teamsMaybePromoted = $division->config('teamsMaybePromoted') ?? 0;
+    $ranking->teamsMaybeDemoted = $division->config('teamsMaybeDemoted') ?? 0;
+
     return $ranking;
   }
-
-
-  /**
-   * TODO:
-   * - Sort based on Score
-   * - Return sorted list
-   * - Implement RankingService with rendering
-   * - dV 
-   * - Berlin tie-break
-   * - Org rules
-   * 
-   * - Future ranking improvements:
-   *   - Show reason in frontend
-   *   - Show criteria in frontend
-   *   - Research and implement rules properly
-   *   - Improved API model
-   */
 }
