@@ -50,7 +50,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testMultiplePairingsPerRound() {
-    $this->markTestSkipped('Not yet implemented.');
     $division = $this->division('sjbh-2526', 'bmm-u12');
     $ranking = $this->legacyRanking($division, 5);
     $this->assertMatchesSnapshot($ranking);
@@ -92,7 +91,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testDirectComparison_multipleTeams() {
-    $this->markTestSkipped('Not yet implemented.');
     // In this example, three teams have the same score. Two of them have
     // drawn against each other, so have 1 MP each. The tie between them
     // is broken by Berlin tie break.
@@ -111,7 +109,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testBerlin_breaksTie() {
-    $this->markTestSkipped('Not yet implemented.');
     $division = $this->division('nsv-2425', 'landesliga-nord');
     $ranking = $this->legacyRanking($division, 6);
     $this->assertEquals("3.", $ranking[3][0]);

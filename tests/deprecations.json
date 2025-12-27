@@ -60,6 +60,66 @@
         "count": 1
     },
     {
+        "location": "Nsv\\League\\Application\\RankingTest::testMultiplePairingsPerRound",
+        "message": "Version detection logic for MySQL will change in DBAL 4. Please specify the version as the server reports it, e.g. \"5.7.40\" instead of \"5.7\". (AbstractMySQLDriver.php:107 called by VersionAwarePlatformStaticDriver.php:19, https://github.com/doctrine/dbal/pull/5779, package doctrine/orm)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testMultiplePairingsPerRound",
+        "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testDirectComparison_sameRank",
+        "message": "Version detection logic for MySQL will change in DBAL 4. Please specify the version as the server reports it, e.g. \"5.7.40\" instead of \"5.7\". (AbstractMySQLDriver.php:107 called by VersionAwarePlatformStaticDriver.php:19, https://github.com/doctrine/dbal/pull/5779, package doctrine/orm)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testDirectComparison_sameRank",
+        "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testDirectComparison_sameRank",
+        "message": "Implicit conversion from float 7.5 to int loses precision",
+        "count": 3
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testDirectComparison_sameRank",
+        "message": "Implicit conversion from float 6.5 to int loses precision",
+        "count": 4
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testDirectComparison_breaksTie",
+        "message": "Version detection logic for MySQL will change in DBAL 4. Please specify the version as the server reports it, e.g. \"5.7.40\" instead of \"5.7\". (AbstractMySQLDriver.php:107 called by VersionAwarePlatformStaticDriver.php:19, https://github.com/doctrine/dbal/pull/5779, package doctrine/orm)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testDirectComparison_breaksTie",
+        "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testDirectComparison_multipleTeams",
+        "message": "Version detection logic for MySQL will change in DBAL 4. Please specify the version as the server reports it, e.g. \"5.7.40\" instead of \"5.7\". (AbstractMySQLDriver.php:107 called by VersionAwarePlatformStaticDriver.php:19, https://github.com/doctrine/dbal/pull/5779, package doctrine/orm)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testDirectComparison_multipleTeams",
+        "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testBerlin_breaksTie",
+        "message": "Version detection logic for MySQL will change in DBAL 4. Please specify the version as the server reports it, e.g. \"5.7.40\" instead of \"5.7\". (AbstractMySQLDriver.php:107 called by VersionAwarePlatformStaticDriver.php:19, https://github.com/doctrine/dbal/pull/5779, package doctrine/orm)",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Application\\RankingTest::testBerlin_breaksTie",
+        "message": "Subscribing to postConnect events is deprecated. Implement a middleware instead. (Connection.php:393 called by Connection.php:1692, https://github.com/doctrine/dbal/issues/5784, package doctrine/dbal)",
+        "count": 1
+    },
+    {
         "location": "Nsv\\League\\Application\\RankingTest::testBerlin_sameRank",
         "message": "Version detection logic for MySQL will change in DBAL 4. Please specify the version as the server reports it, e.g. \"5.7.40\" instead of \"5.7\". (AbstractMySQLDriver.php:107 called by VersionAwarePlatformStaticDriver.php:19, https://github.com/doctrine/dbal/pull/5779, package doctrine/orm)",
         "count": 1

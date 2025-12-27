@@ -36,6 +36,7 @@ class Scores implements TieBreak {
   ) {
     // TODO: Configure based on organisation rules.
     $this->bpForDraw = $division->boardCount() / 2;
+    $this->bpForDraw = null;  // Disable for now.
     [$this->mps, $this->bps] = $this->calculateScores($pairings);
   }
  
