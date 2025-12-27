@@ -56,7 +56,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testMultiplePairingsBetweenTeams() {
-    $this->markTestSkipped('Not yet implemented.');
     $division = $this->division('bezirk6-2223', '2-kreisklasse-osnabrueck');
     $ranking = $this->legacyRanking($division, 6);
     $this->assertCount(2, $ranking[1][3]);
@@ -167,7 +166,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testMpCalculation_jbln_moreThanHalfRequired() {
-    $this->markTestSkipped('Not yet implemented.');
     // Organisation "ndsj" is configured to give only 1 MP for a 3:2 result (6 boards).
     $division = $this->division('jbln-1718', 'staffel-ost');
     $ranking = $this->legacyRanking($division, 5);

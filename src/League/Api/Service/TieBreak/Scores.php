@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Api\Service\TieBreak;
 
+use Nsv\League\Core\Regulation;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Team;
@@ -34,9 +35,11 @@ class Scores implements TieBreak {
     public readonly Division $division,
     public readonly array $pairings
   ) {
-    // TODO: Configure based on organisation rules.
-    $this->bpForDraw = $division->boardCount() / 2;
-    $this->bpForDraw = null;  // Disable for now.
+    if (Regulation::hasMatchPointsMinimum($division->league)) {
+      $this->bpForDraw = ceil($division->boardCount() / 2);
+    } else {
+      $this->bpForDraw = null;
+    }
     [$this->mps, $this->bps] = $this->calculateScores($pairings);
   }
  

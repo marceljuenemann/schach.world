@@ -85,6 +85,7 @@ class RankingService {
       $ranking->teams[$index2]->pairings[$index1][] = TeamPairing::forTeam($pairing->team2, $pairing);
     }
 
+    // TODO: Add these flags to RankingTeam directly.
     $ranking->teamsPromoted = $division->config('teamsPromoted') ?? 0;
     $ranking->teamsDemoted = $division->config('teamsDemoted') ?? 0;
     $ranking->teamsMaybePromoted = $division->config('teamsMaybePromoted') ?? 0;
