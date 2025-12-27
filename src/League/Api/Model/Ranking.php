@@ -2,6 +2,8 @@
 
 namespace Nsv\League\Api\Model;
 
+use Nsv\League\Entity\Division;
+
 /**
  * Represents a ranking.
  */
@@ -15,7 +17,7 @@ class Ranking
   public int $teamsMaybePromoted;
   public int $teamsMaybeDemoted;
 
-  public function toLegacyFormat(): array {
+  public function toLegacyFormat(Division $division): array {
     if (empty($this->teams)) {
       return [];
     }
@@ -27,7 +29,7 @@ class Ranking
     );
     $result = array_merge(
       [$header],
-      array_map(fn($team) => $team->toLegacyFormat(), $this->teams)
+      array_map(fn($team) => $team->toLegacyFormat($division->id), $this->teams)
     );
     for ($i = 1; $i < count($result); $i++) {
       $result[$i][$i + 1] = 'xxx';

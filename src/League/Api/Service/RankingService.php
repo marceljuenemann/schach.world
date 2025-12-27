@@ -6,6 +6,8 @@ use Nsv\League\Api\Model;
 use Nsv\League\Api\Model\Ranking;
 use Nsv\League\Api\Model\RankingTeam;
 use Nsv\League\Api\Model\TeamPairing;
+use Nsv\League\Api\Service\TieBreak\Scores;
+use Nsv\League\Api\Service\TieBreak\TieBreaks;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\Pairing;
 
@@ -26,9 +28,27 @@ class RankingService {
         $pairing->result2 !== null;
     });
 
+    // Sort teams using the defined tiebreak criteria.
+    // TODO: Make tie breaks more configurable.
+    $scores = new Scores($division, $pairings);
+    $tiebreaks = new TieBreaks([$scores]);
+    $tiebreaks->sort($teams);
+
+    // Create the ranking model.
+    // TODO: Add details about the tie break.
     $ranking = $this->createModel($division, $teams, $pairings);
+    for ($i = 0; $i < count($ranking->teams); $i++) {
+      $team = $ranking->teams[$i];
+      $team->mp = $scores->matchPoints($team->team->id);
+      $team->bp = $scores->boardPoints($team->team->id);
 
-
+      // Determine rank, taking ties into account.
+      if ($i > 0 && $tiebreaks->compare($teams[$i], $teams[$i - 1]) === 0) {
+        $team->rank = $ranking->teams[$i - 1]->rank;
+      } else {
+        $team->rank = $i + 1;
+      }
+    }
 
     return $ranking;
   }
@@ -36,7 +56,7 @@ class RankingService {
   /**
    * Creates a basic Ranking model from sorted teams and pairings.
    * 
-   * Note that this is partially filled model, some fields still need to be filled.
+   * Note that this is a partially filled model, some fields still need to be filled.
    */
   private function createModel(Division $division, array $sortedTeams, array $pairings): Ranking {
     $ranking = new Ranking();

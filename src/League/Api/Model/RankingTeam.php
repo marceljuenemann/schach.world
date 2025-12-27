@@ -17,7 +17,7 @@ class RankingTeam
   // List of TeamPairings against each opponent in the ranking.
   public array $pairings = [];
 
-  public function toLegacyFormat(): array {
+  public function toLegacyFormat(int $divisionId): array {
     $result[] = $this->rank.'.';
     $result[] = [
       'text' => $this->team->name,
@@ -25,20 +25,17 @@ class RankingTeam
       'title' => 'Zur Mannschaftsaufstellung'
     ];
     foreach ($this->pairings as $pairings) {
-      $result[] = array_map([RankingTeam::class, 'pairingToLegacyFormat'], $pairings);
+      $result[] = array_map(function($pairing) use ($divisionId) {
+        return [
+          'url' => "?staffel=$divisionId&r={$pairing->round}#p{$this->team->id}x{$pairing->opponent->id}",
+          'title' => 'gegen '.$pairing->opponent->name,
+          'text' => Result::format($pairing->score)
+        ];
+      }, $pairings);
     }
     $result[] = $this->mp;
-    $result[] = (string) $this->bp;
+    $result[] = Result::format($this->bp);
     $result[] = "";
     return $result;
-  }
-
-  static function pairingToLegacyFormat(TeamPairing $pairing): array {
-    return [
-      // TODO: Generate URL in the legacy format.
-      'url' => $pairing->uri,
-      'title' => 'gegen '.$pairing->opponent->name,
-      'text' => Result::format($pairing->score)
-    ];
   }
 }
