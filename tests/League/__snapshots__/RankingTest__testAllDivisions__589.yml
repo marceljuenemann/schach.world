@@ -15,8 +15,8 @@
     - xxx
     - [{ url: '?staffel=1326&r=2#p5376x5381', title: 'gegen Lange Norbert', text: ½ }]
     - [{ url: '?staffel=1326&r=1#p5376x5377', title: 'gegen Kienel Norbert', text: '1' }]
-    - [{ url: '?staffel=1326&r=5#p5376x5378', title: 'gegen Tunka Josef', text: '1' }]
     - [{ url: '?staffel=1326&r=4#p5376x5380', title: 'gegen Brinkers Niklas', text: '1' }]
+    - [{ url: '?staffel=1326&r=5#p5376x5378', title: 'gegen Tunka Josef', text: '1' }]
     - [{ url: '?staffel=1326&r=3#p5376x5379', title: 'gegen Schlierf Heiko', text: '1' }]
     - 9
     - 4½
@@ -27,8 +27,8 @@
     - [{ url: '?staffel=1326&r=2#p5381x5376', title: 'gegen Höllmann Ludger', text: ½ }]
     - xxx
     - [{ url: '?staffel=1326&r=3#p5381x5377', title: 'gegen Kienel Norbert', text: '1' }]
-    - [{ url: '?staffel=1326&r=1#p5381x5378', title: 'gegen Tunka Josef', text: '1' }]
     - [{ url: '?staffel=1326&r=5#p5381x5380', title: 'gegen Brinkers Niklas', text: '1' }]
+    - [{ url: '?staffel=1326&r=1#p5381x5378', title: 'gegen Tunka Josef', text: '1' }]
     - [{ url: '?staffel=1326&r=4#p5381x5379', title: 'gegen Schlierf Heiko', text: '1' }]
     - 9
     - 4½
@@ -39,23 +39,11 @@
     - [{ url: '?staffel=1326&r=1#p5377x5376', title: 'gegen Höllmann Ludger', text: '0' }]
     - [{ url: '?staffel=1326&r=3#p5377x5381', title: 'gegen Lange Norbert', text: '0' }]
     - xxx
-    - [{ url: '?staffel=1326&r=4#p5377x5378', title: 'gegen Tunka Josef', text: '1' }]
     - [{ url: '?staffel=1326&r=2#p5377x5380', title: 'gegen Brinkers Niklas', text: '1' }]
+    - [{ url: '?staffel=1326&r=4#p5377x5378', title: 'gegen Tunka Josef', text: '1' }]
     - [{ url: '?staffel=1326&r=5#p5377x5379', title: 'gegen Schlierf Heiko', text: '1' }]
     - 6
     - '3'
-    - ''
--
-    - '4.'
-    - { text: 'Tunka Josef', url: '?mannschaft=5378', title: 'Zur Mannschaftsaufstellung' }
-    - [{ url: '?staffel=1326&r=5#p5378x5376', title: 'gegen Höllmann Ludger', text: '0' }]
-    - [{ url: '?staffel=1326&r=1#p5378x5381', title: 'gegen Lange Norbert', text: '0' }]
-    - [{ url: '?staffel=1326&r=4#p5378x5377', title: 'gegen Kienel Norbert', text: '0' }]
-    - xxx
-    - [{ url: '?staffel=1326&r=3#p5378x5380', title: 'gegen Brinkers Niklas', text: ½ }]
-    - [{ url: '?staffel=1326&r=2#p5378x5379', title: 'gegen Schlierf Heiko', text: '1' }]
-    - 3
-    - 1½
     - ''
 -
     - '4.'
@@ -63,9 +51,21 @@
     - [{ url: '?staffel=1326&r=4#p5380x5376', title: 'gegen Höllmann Ludger', text: '0' }]
     - [{ url: '?staffel=1326&r=5#p5380x5381', title: 'gegen Lange Norbert', text: '0' }]
     - [{ url: '?staffel=1326&r=2#p5380x5377', title: 'gegen Kienel Norbert', text: '0' }]
-    - [{ url: '?staffel=1326&r=3#p5380x5378', title: 'gegen Tunka Josef', text: ½ }]
     - xxx
+    - [{ url: '?staffel=1326&r=3#p5380x5378', title: 'gegen Tunka Josef', text: ½ }]
     - [{ url: '?staffel=1326&r=1#p5380x5379', title: 'gegen Schlierf Heiko', text: '1' }]
+    - 3
+    - 1½
+    - ''
+-
+    - '4.'
+    - { text: 'Tunka Josef', url: '?mannschaft=5378', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1326&r=5#p5378x5376', title: 'gegen Höllmann Ludger', text: '0' }]
+    - [{ url: '?staffel=1326&r=1#p5378x5381', title: 'gegen Lange Norbert', text: '0' }]
+    - [{ url: '?staffel=1326&r=4#p5378x5377', title: 'gegen Kienel Norbert', text: '0' }]
+    - [{ url: '?staffel=1326&r=3#p5378x5380', title: 'gegen Brinkers Niklas', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1326&r=2#p5378x5379', title: 'gegen Schlierf Heiko', text: '1' }]
     - 3
     - 1½
     - ''
@@ -75,8 +75,8 @@
     - [{ url: '?staffel=1326&r=3#p5379x5376', title: 'gegen Höllmann Ludger', text: '0' }]
     - [{ url: '?staffel=1326&r=4#p5379x5381', title: 'gegen Lange Norbert', text: '0' }]
     - [{ url: '?staffel=1326&r=5#p5379x5377', title: 'gegen Kienel Norbert', text: '0' }]
-    - [{ url: '?staffel=1326&r=2#p5379x5378', title: 'gegen Tunka Josef', text: '0' }]
     - [{ url: '?staffel=1326&r=1#p5379x5380', title: 'gegen Brinkers Niklas', text: '0' }]
+    - [{ url: '?staffel=1326&r=2#p5379x5378', title: 'gegen Tunka Josef', text: '0' }]
     - xxx
     - 0
     - '0'

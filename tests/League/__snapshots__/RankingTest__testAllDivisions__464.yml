@@ -19,8 +19,8 @@
     - xxx
     - {  }
     - [{ url: '?staffel=941&r=5#p4299x4309', title: 'gegen Newerla Alfred', text: ½ }]
-    - [{ url: '?staffel=941&r=3#p4299x4300', title: 'gegen Timar-Geng Zoltan', text: '1' }]
     - [{ url: '?staffel=941&r=2#p4299x4311', title: 'gegen Brinkers Niklas', text: '1' }]
+    - [{ url: '?staffel=941&r=3#p4299x4300', title: 'gegen Timar-Geng Zoltan', text: '1' }]
     - [{ url: '?staffel=941&r=4#p4299x4301', title: 'gegen Meijerink Jürgen', text: '1' }]
     - {  }
     - {  }
@@ -35,8 +35,8 @@
     - {  }
     - xxx
     - [{ url: '?staffel=941&r=4#p4303x4309', title: 'gegen Newerla Alfred', text: ½ }]
-    - [{ url: '?staffel=941&r=5#p4303x4300', title: 'gegen Timar-Geng Zoltan', text: '1' }]
     - {  }
+    - [{ url: '?staffel=941&r=5#p4303x4300', title: 'gegen Timar-Geng Zoltan', text: '1' }]
     - [{ url: '?staffel=941&r=3#p4303x4301', title: 'gegen Meijerink Jürgen', text: ½ }]
     - [{ url: '?staffel=941&r=2#p4303x4312', title: 'gegen Kleine Mike', text: '1' }]
     - {  }
@@ -51,8 +51,8 @@
     - [{ url: '?staffel=941&r=5#p4309x4299', title: 'gegen Kewe Stefan', text: ½ }]
     - [{ url: '?staffel=941&r=4#p4309x4303', title: 'gegen Silies Martin', text: ½ }]
     - xxx
-    - {  }
     - [{ url: '?staffel=941&r=3#p4309x4311', title: 'gegen Brinkers Niklas', text: '1' }]
+    - {  }
     - [{ url: '?staffel=941&r=1#p4309x4301', title: 'gegen Meijerink Jürgen', text: ½ }]
     - {  }
     - {  }
@@ -63,33 +63,33 @@
     - ''
 -
     - '4.'
-    - { text: 'Timar-Geng Zoltan', url: '?mannschaft=4300', title: 'Zur Mannschaftsaufstellung' }
-    - [{ url: '?staffel=941&r=3#p4300x4299', title: 'gegen Kewe Stefan', text: '0' }]
-    - [{ url: '?staffel=941&r=5#p4300x4303', title: 'gegen Silies Martin', text: '0' }]
-    - {  }
-    - xxx
-    - [{ url: '?staffel=941&r=1#p4300x4311', title: 'gegen Brinkers Niklas', text: ½ }]
-    - {  }
-    - [{ url: '?staffel=941&r=4#p4300x4312', title: 'gegen Kleine Mike', text: '1' }]
-    - {  }
-    - {  }
-    - [{ url: '?staffel=941&r=2#p4300x4310', title: 'gegen Gesterkamp Rainer', text: '1' }]
-    - 5
-    - 2½
-    - ''
--
-    - '4.'
     - { text: 'Brinkers Niklas', url: '?mannschaft=4311', title: 'Zur Mannschaftsaufstellung' }
     - [{ url: '?staffel=941&r=2#p4311x4299', title: 'gegen Kewe Stefan', text: '0' }]
     - {  }
     - [{ url: '?staffel=941&r=3#p4311x4309', title: 'gegen Newerla Alfred', text: '0' }]
-    - [{ url: '?staffel=941&r=1#p4311x4300', title: 'gegen Timar-Geng Zoltan', text: ½ }]
     - xxx
+    - [{ url: '?staffel=941&r=1#p4311x4300', title: 'gegen Timar-Geng Zoltan', text: ½ }]
     - {  }
     - {  }
     - [{ url: '?staffel=941&r=5#p4311x4313', title: 'gegen Dettmer Niels', text: '1' }]
     - {  }
     - [{ url: '?staffel=941&r=4#p4311x4310', title: 'gegen Gesterkamp Rainer', text: '1' }]
+    - 5
+    - 2½
+    - ''
+-
+    - '4.'
+    - { text: 'Timar-Geng Zoltan', url: '?mannschaft=4300', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=941&r=3#p4300x4299', title: 'gegen Kewe Stefan', text: '0' }]
+    - [{ url: '?staffel=941&r=5#p4300x4303', title: 'gegen Silies Martin', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=941&r=1#p4300x4311', title: 'gegen Brinkers Niklas', text: ½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=941&r=4#p4300x4312', title: 'gegen Kleine Mike', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=941&r=2#p4300x4310', title: 'gegen Gesterkamp Rainer', text: '1' }]
     - 5
     - 2½
     - ''
@@ -115,8 +115,8 @@
     - {  }
     - [{ url: '?staffel=941&r=2#p4312x4303', title: 'gegen Silies Martin', text: '0' }]
     - {  }
-    - [{ url: '?staffel=941&r=4#p4312x4300', title: 'gegen Timar-Geng Zoltan', text: '0' }]
     - {  }
+    - [{ url: '?staffel=941&r=4#p4312x4300', title: 'gegen Timar-Geng Zoltan', text: '0' }]
     - {  }
     - xxx
     - [{ url: '?staffel=941&r=1#p4312x4313', title: 'gegen Dettmer Niels', text: ½ }]
@@ -131,8 +131,8 @@
     - {  }
     - {  }
     - {  }
-    - {  }
     - [{ url: '?staffel=941&r=5#p4313x4311', title: 'gegen Brinkers Niklas', text: '0' }]
+    - {  }
     - [{ url: '?staffel=941&r=2#p4313x4301', title: 'gegen Meijerink Jürgen', text: '0' }]
     - [{ url: '?staffel=941&r=1#p4313x4312', title: 'gegen Kleine Mike', text: ½ }]
     - xxx
@@ -163,8 +163,8 @@
     - [{ url: '?staffel=941&r=1#p4310x4299', title: 'gegen Kewe Stefan', text: ½ }]
     - {  }
     - {  }
-    - [{ url: '?staffel=941&r=2#p4310x4300', title: 'gegen Timar-Geng Zoltan', text: '0' }]
     - [{ url: '?staffel=941&r=4#p4310x4311', title: 'gegen Brinkers Niklas', text: '0' }]
+    - [{ url: '?staffel=941&r=2#p4310x4300', title: 'gegen Timar-Geng Zoltan', text: '0' }]
     - {  }
     - [{ url: '?staffel=941&r=5#p4310x4312', title: 'gegen Kleine Mike', text: ½ }]
     - [{ url: '?staffel=941&r=3#p4310x4313', title: 'gegen Dettmer Niels', text: '0' }]

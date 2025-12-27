@@ -23,8 +23,8 @@
     - [{ url: '?staffel=1534&r=5#p6894x6903', title: 'gegen SK Goslar', text: '5' }]
     - [{ url: '?staffel=1534&r=7#p6894x6908', title: 'gegen SC SW Northeim', text: '8' }]
     - [{ url: '?staffel=1534&r=4#p6894x6909', title: 'gegen PSV Bad Pyrmont', text: 5½ }]
-    - [{ url: '?staffel=1534&r=2#p6894x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=1#p6894x6913', title: 'gegen Osterode-Südharz', text: '8' }]
+    - [{ url: '?staffel=1534&r=2#p6894x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=3#p6894x6914', title: 'gegen SK Bad Harzburg', text: '8' }]
     - 18
     - '58'
@@ -39,8 +39,8 @@
     - [{ url: '?staffel=1534&r=3#p6924x6903', title: 'gegen SK Goslar', text: 3½ }]
     - [{ url: '?staffel=1534&r=6#p6924x6908', title: 'gegen SC SW Northeim', text: 6½ }]
     - [{ url: '?staffel=1534&r=1#p6924x6909', title: 'gegen PSV Bad Pyrmont', text: 5½ }]
-    - [{ url: '?staffel=1534&r=9#p6924x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=2#p6924x6913', title: 'gegen Osterode-Südharz', text: '8' }]
+    - [{ url: '?staffel=1534&r=9#p6924x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=7#p6924x6914', title: 'gegen SK Bad Harzburg', text: '8' }]
     - 13
     - '53'
@@ -55,8 +55,8 @@
     - [{ url: '?staffel=1534&r=9#p6906x6903', title: 'gegen SK Goslar', text: '5' }]
     - [{ url: '?staffel=1534&r=8#p6906x6908', title: 'gegen SC SW Northeim', text: 4½ }]
     - [{ url: '?staffel=1534&r=5#p6906x6909', title: 'gegen PSV Bad Pyrmont', text: '5' }]
-    - [{ url: '?staffel=1534&r=1#p6906x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=7#p6906x6913', title: 'gegen Osterode-Südharz', text: '8' }]
+    - [{ url: '?staffel=1534&r=1#p6906x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=2#p6906x6914', title: 'gegen SK Bad Harzburg', text: '8' }]
     - 13
     - '49'
@@ -71,8 +71,8 @@
     - [{ url: '?staffel=1534&r=7#p6899x6903', title: 'gegen SK Goslar', text: '3' }]
     - [{ url: '?staffel=1534&r=2#p6899x6908', title: 'gegen SC SW Northeim', text: '8' }]
     - [{ url: '?staffel=1534&r=6#p6899x6909', title: 'gegen PSV Bad Pyrmont', text: '6' }]
-    - [{ url: '?staffel=1534&r=4#p6899x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=8#p6899x6913', title: 'gegen Osterode-Südharz', text: '8' }]
+    - [{ url: '?staffel=1534&r=4#p6899x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=1#p6899x6914', title: 'gegen SK Bad Harzburg', text: '8' }]
     - 12
     - 49½
@@ -87,8 +87,8 @@
     - xxx
     - [{ url: '?staffel=1534&r=1#p6903x6908', title: 'gegen SC SW Northeim', text: 3½ }]
     - [{ url: '?staffel=1534&r=2#p6903x6909', title: 'gegen PSV Bad Pyrmont', text: '0' }]
-    - [{ url: '?staffel=1534&r=8#p6903x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=6#p6903x6913', title: 'gegen Osterode-Südharz', text: '8' }]
+    - [{ url: '?staffel=1534&r=8#p6903x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=4#p6903x6914', title: 'gegen SK Bad Harzburg', text: '8' }]
     - 10
     - '43'
@@ -103,8 +103,8 @@
     - [{ url: '?staffel=1534&r=1#p6908x6903', title: 'gegen SK Goslar', text: 4½ }]
     - xxx
     - [{ url: '?staffel=1534&r=3#p6908x6909', title: 'gegen PSV Bad Pyrmont', text: 4½ }]
-    - [{ url: '?staffel=1534&r=5#p6908x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=4#p6908x6913', title: 'gegen Osterode-Südharz', text: '8' }]
+    - [{ url: '?staffel=1534&r=5#p6908x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=9#p6908x6914', title: 'gegen SK Bad Harzburg', text: '8' }]
     - 10
     - '38'
@@ -119,28 +119,12 @@
     - [{ url: '?staffel=1534&r=2#p6909x6903', title: 'gegen SK Goslar', text: '0' }]
     - [{ url: '?staffel=1534&r=3#p6909x6908', title: 'gegen SC SW Northeim', text: 3½ }]
     - xxx
-    - [{ url: '?staffel=1534&r=7#p6909x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=9#p6909x6913', title: 'gegen Osterode-Südharz', text: '8' }]
+    - [{ url: '?staffel=1534&r=7#p6909x6891', title: 'gegen Plesse Bovenden 2', text: '8' }]
     - [{ url: '?staffel=1534&r=8#p6909x6914', title: 'gegen SK Bad Harzburg', text: '8' }]
     - 6
     - 37½
     - absteigerRelegation
--
-    - '8.'
-    - { text: 'Plesse Bovenden 2', url: '?mannschaft=6891', title: 'Zur Mannschaftsaufstellung' }
-    - [{ url: '?staffel=1534&r=2#p6891x6894', title: 'gegen Bad Salzdetfurth', text: '0' }]
-    - [{ url: '?staffel=1534&r=9#p6891x6924', title: 'gegen ESV Göttingen 2', text: '0' }]
-    - [{ url: '?staffel=1534&r=1#p6891x6906', title: 'gegen SG Holzminden', text: '0' }]
-    - [{ url: '?staffel=1534&r=4#p6891x6899', title: 'gegen SK Gronau', text: '0' }]
-    - [{ url: '?staffel=1534&r=8#p6891x6903', title: 'gegen SK Goslar', text: '0' }]
-    - [{ url: '?staffel=1534&r=5#p6891x6908', title: 'gegen SC SW Northeim', text: '0' }]
-    - [{ url: '?staffel=1534&r=7#p6891x6909', title: 'gegen PSV Bad Pyrmont', text: '0' }]
-    - xxx
-    - [{ url: '?staffel=1534&r=3#p6891x6913', title: 'gegen Osterode-Südharz', text: '0' }]
-    - [{ url: '?staffel=1534&r=6#p6891x6914', title: 'gegen SK Bad Harzburg', text: '0' }]
-    - 0
-    - '0'
-    - absteiger
 -
     - '8.'
     - { text: Osterode-Südharz, url: '?mannschaft=6913', title: 'Zur Mannschaftsaufstellung' }
@@ -151,9 +135,25 @@
     - [{ url: '?staffel=1534&r=6#p6913x6903', title: 'gegen SK Goslar', text: '0' }]
     - [{ url: '?staffel=1534&r=4#p6913x6908', title: 'gegen SC SW Northeim', text: '0' }]
     - [{ url: '?staffel=1534&r=9#p6913x6909', title: 'gegen PSV Bad Pyrmont', text: '0' }]
-    - [{ url: '?staffel=1534&r=3#p6913x6891', title: 'gegen Plesse Bovenden 2', text: '0' }]
     - xxx
+    - [{ url: '?staffel=1534&r=3#p6913x6891', title: 'gegen Plesse Bovenden 2', text: '0' }]
     - [{ url: '?staffel=1534&r=5#p6913x6914', title: 'gegen SK Bad Harzburg', text: '0' }]
+    - 0
+    - '0'
+    - absteiger
+-
+    - '8.'
+    - { text: 'Plesse Bovenden 2', url: '?mannschaft=6891', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1534&r=2#p6891x6894', title: 'gegen Bad Salzdetfurth', text: '0' }]
+    - [{ url: '?staffel=1534&r=9#p6891x6924', title: 'gegen ESV Göttingen 2', text: '0' }]
+    - [{ url: '?staffel=1534&r=1#p6891x6906', title: 'gegen SG Holzminden', text: '0' }]
+    - [{ url: '?staffel=1534&r=4#p6891x6899', title: 'gegen SK Gronau', text: '0' }]
+    - [{ url: '?staffel=1534&r=8#p6891x6903', title: 'gegen SK Goslar', text: '0' }]
+    - [{ url: '?staffel=1534&r=5#p6891x6908', title: 'gegen SC SW Northeim', text: '0' }]
+    - [{ url: '?staffel=1534&r=7#p6891x6909', title: 'gegen PSV Bad Pyrmont', text: '0' }]
+    - [{ url: '?staffel=1534&r=3#p6891x6913', title: 'gegen Osterode-Südharz', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1534&r=6#p6891x6914', title: 'gegen SK Bad Harzburg', text: '0' }]
     - 0
     - '0'
     - absteiger
@@ -167,8 +167,8 @@
     - [{ url: '?staffel=1534&r=4#p6914x6903', title: 'gegen SK Goslar', text: '0' }]
     - [{ url: '?staffel=1534&r=9#p6914x6908', title: 'gegen SC SW Northeim', text: '0' }]
     - [{ url: '?staffel=1534&r=8#p6914x6909', title: 'gegen PSV Bad Pyrmont', text: '0' }]
-    - [{ url: '?staffel=1534&r=6#p6914x6891', title: 'gegen Plesse Bovenden 2', text: '0' }]
     - [{ url: '?staffel=1534&r=5#p6914x6913', title: 'gegen Osterode-Südharz', text: '0' }]
+    - [{ url: '?staffel=1534&r=6#p6914x6891', title: 'gegen Plesse Bovenden 2', text: '0' }]
     - xxx
     - 0
     - '0'

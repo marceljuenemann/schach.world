@@ -23,8 +23,8 @@
     - xxx
     - {  }
     - {  }
-    - {  }
     - [{ url: '?staffel=855&r=3#p3805x3808', title: 'gegen Kewe, Stefan', text: '0' }]
+    - {  }
     - [{ url: '?staffel=855&r=4#p3805x3806', title: 'gegen Wielebinski, Paul-', text: '1' }]
     - [{ url: '?staffel=855&r=5#p3805x3807', title: 'gegen Weist, Thorben', text: '1' }]
     - [{ url: '?staffel=855&r=2#p3805x3804', title: 'gegen Paul, Reinhard', text: '1' }]
@@ -43,8 +43,8 @@
     - {  }
     - xxx
     - [{ url: '?staffel=855&r=1#p3809x3802', title: 'gegen Lange, Norbert', text: '1' }]
-    - {  }
     - [{ url: '?staffel=855&r=4#p3809x3808', title: 'gegen Kewe, Stefan', text: '1' }]
+    - {  }
     - [{ url: '?staffel=855&r=2#p3809x3806', title: 'gegen Wielebinski, Paul-', text: ½ }]
     - {  }
     - [{ url: '?staffel=855&r=5#p3809x3804', title: 'gegen Paul, Reinhard', text: ½ }]
@@ -63,8 +63,8 @@
     - {  }
     - [{ url: '?staffel=855&r=1#p3802x3809', title: 'gegen Böhm, Jana', text: '0' }]
     - xxx
-    - [{ url: '?staffel=855&r=2#p3802x3803', title: 'gegen Lewin, Tammo', text: ½ }]
     - [{ url: '?staffel=855&r=5#p3802x3808', title: 'gegen Kewe, Stefan', text: '1' }]
+    - [{ url: '?staffel=855&r=2#p3802x3803', title: 'gegen Lewin, Tammo', text: ½ }]
     - {  }
     - {  }
     - {  }
@@ -79,32 +79,12 @@
     - ''
 -
     - '4.'
-    - { text: 'Lewin, Tammo', url: '?mannschaft=3803', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - [{ url: '?staffel=855&r=2#p3803x3802', title: 'gegen Lange, Norbert', text: ½ }]
-    - xxx
-    - {  }
-    - [{ url: '?staffel=855&r=3#p3803x3806', title: 'gegen Wielebinski, Paul-', text: ½ }]
-    - {  }
-    - {  }
-    - [{ url: '?staffel=855&r=4#p3803x3811', title: 'gegen Greiving, Felix', text: ½ }]
-    - {  }
-    - [{ url: '?staffel=855&r=5#p3803x3814', title: 'gegen Pfeifer, Frank', text: '1' }]
-    - [{ url: '?staffel=855&r=1#p3803x3810', title: 'gegen Schlierf, Heiko', text: ½ }]
-    - {  }
-    - {  }
-    - 6
-    - '3'
-    - ''
--
-    - '4.'
     - { text: 'Kewe, Stefan', url: '?mannschaft=3808', title: 'Zur Mannschaftsaufstellung' }
     - [{ url: '?staffel=855&r=3#p3808x3805', title: 'gegen Wenning, Andreas', text: '1' }]
     - [{ url: '?staffel=855&r=4#p3808x3809', title: 'gegen Böhm, Jana', text: '0' }]
     - [{ url: '?staffel=855&r=5#p3808x3802', title: 'gegen Lange, Norbert', text: '0' }]
-    - {  }
     - xxx
+    - {  }
     - {  }
     - [{ url: '?staffel=855&r=2#p3808x3807', title: 'gegen Weist, Thorben', text: '1' }]
     - {  }
@@ -118,13 +98,33 @@
     - '3'
     - ''
 -
+    - '4.'
+    - { text: 'Lewin, Tammo', url: '?mannschaft=3803', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=855&r=2#p3803x3802', title: 'gegen Lange, Norbert', text: ½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=855&r=3#p3803x3806', title: 'gegen Wielebinski, Paul-', text: ½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=855&r=4#p3803x3811', title: 'gegen Greiving, Felix', text: ½ }]
+    - {  }
+    - [{ url: '?staffel=855&r=5#p3803x3814', title: 'gegen Pfeifer, Frank', text: '1' }]
+    - [{ url: '?staffel=855&r=1#p3803x3810', title: 'gegen Schlierf, Heiko', text: ½ }]
+    - {  }
+    - {  }
+    - 6
+    - '3'
+    - ''
+-
     - '6.'
     - { text: 'Wielebinski, Paul-', url: '?mannschaft=3806', title: 'Zur Mannschaftsaufstellung' }
     - [{ url: '?staffel=855&r=4#p3806x3805', title: 'gegen Wenning, Andreas', text: '0' }]
     - [{ url: '?staffel=855&r=2#p3806x3809', title: 'gegen Böhm, Jana', text: ½ }]
     - {  }
-    - [{ url: '?staffel=855&r=3#p3806x3803', title: 'gegen Lewin, Tammo', text: ½ }]
     - {  }
+    - [{ url: '?staffel=855&r=3#p3806x3803', title: 'gegen Lewin, Tammo', text: ½ }]
     - xxx
     - {  }
     - {  }
@@ -143,8 +143,8 @@
     - [{ url: '?staffel=855&r=5#p3807x3805', title: 'gegen Wenning, Andreas', text: '0' }]
     - {  }
     - {  }
-    - {  }
     - [{ url: '?staffel=855&r=2#p3807x3808', title: 'gegen Kewe, Stefan', text: '0' }]
+    - {  }
     - {  }
     - xxx
     - [{ url: '?staffel=855&r=4#p3807x3804', title: 'gegen Paul, Reinhard', text: '1' }]
@@ -183,8 +183,8 @@
     - {  }
     - [{ url: '?staffel=855&r=3#p3811x3809', title: 'gegen Böhm, Jana', text: ½ }]
     - {  }
-    - [{ url: '?staffel=855&r=4#p3811x3803', title: 'gegen Lewin, Tammo', text: ½ }]
     - {  }
+    - [{ url: '?staffel=855&r=4#p3811x3803', title: 'gegen Lewin, Tammo', text: ½ }]
     - {  }
     - {  }
     - [{ url: '?staffel=855&r=1#p3811x3804', title: 'gegen Paul, Reinhard', text: '0' }]
@@ -223,8 +223,8 @@
     - {  }
     - {  }
     - {  }
-    - [{ url: '?staffel=855&r=5#p3814x3803', title: 'gegen Lewin, Tammo', text: '0' }]
     - {  }
+    - [{ url: '?staffel=855&r=5#p3814x3803', title: 'gegen Lewin, Tammo', text: '0' }]
     - {  }
     - [{ url: '?staffel=855&r=1#p3814x3807', title: 'gegen Weist, Thorben', text: '0' }]
     - {  }
@@ -243,8 +243,8 @@
     - {  }
     - {  }
     - [{ url: '?staffel=855&r=3#p3810x3802', title: 'gegen Lange, Norbert', text: ½ }]
-    - [{ url: '?staffel=855&r=1#p3810x3803', title: 'gegen Lewin, Tammo', text: ½ }]
     - {  }
+    - [{ url: '?staffel=855&r=1#p3810x3803', title: 'gegen Lewin, Tammo', text: ½ }]
     - {  }
     - {  }
     - {  }
@@ -283,8 +283,8 @@
     - {  }
     - {  }
     - [{ url: '?staffel=855&r=4#p3815x3802', title: 'gegen Lange, Norbert', text: '0' }]
-    - {  }
     - [{ url: '?staffel=855&r=1#p3815x3808', title: 'gegen Kewe, Stefan', text: '0' }]
+    - {  }
     - {  }
     - {  }
     - {  }

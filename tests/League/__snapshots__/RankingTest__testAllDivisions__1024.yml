@@ -17,8 +17,8 @@
     - [{ url: '?staffel=1874&r=1#p8544x8481', title: 'gegen SF Barsinghausen 2', text: 3½ }]
     - {  }
     - {  }
-    - [{ url: '?staffel=1874&r=3#p8544x8463', title: 'gegen TuS Wunstorf 2', text: '6' }]
     - [{ url: '?staffel=1874&r=2#p8544x8565', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - [{ url: '?staffel=1874&r=3#p8544x8463', title: 'gegen TuS Wunstorf 2', text: '6' }]
     - {  }
     - 4
     - '14'
@@ -30,8 +30,8 @@
     - xxx
     - [{ url: '?staffel=1874&r=3#p8481x8471', title: 'gegen Eystruper SK', text: 3½ }]
     - {  }
-    - [{ url: '?staffel=1874&r=2#p8481x8463', title: 'gegen TuS Wunstorf 2', text: 5½ }]
     - {  }
+    - [{ url: '?staffel=1874&r=2#p8481x8463', title: 'gegen TuS Wunstorf 2', text: 5½ }]
     - {  }
     - 4
     - 13½
@@ -56,24 +56,11 @@
     - {  }
     - [{ url: '?staffel=1874&r=2#p8566x8471', title: 'gegen Eystruper SK', text: 3½ }]
     - xxx
-    - {  }
     - [{ url: '?staffel=1874&r=1#p8566x8565', title: 'gegen SK Rinteln 2', text: 1½ }]
+    - {  }
     - [{ url: '?staffel=1874&r=3#p8566x8460', title: 'gegen SG Garbsen/Marienw 2', text: 6½ }]
     - 2
     - 11½
-    - ''
--
-    - '5.'
-    - { text: 'TuS Wunstorf 2', url: '?mannschaft=8463', title: 'Zur Mannschaftsaufstellung' }
-    - [{ url: '?staffel=1874&r=3#p8463x8544', title: 'gegen Hannover 96 2', text: '2' }]
-    - [{ url: '?staffel=1874&r=2#p8463x8481', title: 'gegen SF Barsinghausen 2', text: 2½ }]
-    - {  }
-    - {  }
-    - xxx
-    - {  }
-    - [{ url: '?staffel=1874&r=1#p8463x8460', title: 'gegen SG Garbsen/Marienw 2', text: 5½ }]
-    - 2
-    - '10'
     - ''
 -
     - '5.'
@@ -82,9 +69,22 @@
     - {  }
     - {  }
     - [{ url: '?staffel=1874&r=1#p8565x8566', title: 'gegen SK Rinteln 3', text: 6½ }]
-    - {  }
     - xxx
     - {  }
+    - {  }
+    - 2
+    - '10'
+    - ''
+-
+    - '5.'
+    - { text: 'TuS Wunstorf 2', url: '?mannschaft=8463', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1874&r=3#p8463x8544', title: 'gegen Hannover 96 2', text: '2' }]
+    - [{ url: '?staffel=1874&r=2#p8463x8481', title: 'gegen SF Barsinghausen 2', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1874&r=1#p8463x8460', title: 'gegen SG Garbsen/Marienw 2', text: 5½ }]
     - 2
     - '10'
     - ''
@@ -95,8 +95,8 @@
     - {  }
     - {  }
     - [{ url: '?staffel=1874&r=3#p8460x8566', title: 'gegen SK Rinteln 3', text: 1½ }]
-    - [{ url: '?staffel=1874&r=1#p8460x8463', title: 'gegen TuS Wunstorf 2', text: 2½ }]
     - {  }
+    - [{ url: '?staffel=1874&r=1#p8460x8463', title: 'gegen TuS Wunstorf 2', text: 2½ }]
     - xxx
     - 0
     - '4'

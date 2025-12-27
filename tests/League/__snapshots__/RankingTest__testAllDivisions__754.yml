@@ -23,7 +23,7 @@
     - BP
 -
     - '1.'
-    - { text: 'SG Elm/Lappwald', url: '?mannschaft=6465', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'C. Wolfenbüttel', url: '?mannschaft=6475', title: 'Zur Mannschaftsaufstellung' }
     - xxx
     - {  }
     - {  }
@@ -47,7 +47,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SG Elm/Lappwald 2', url: '?mannschaft=6466', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'C. Wolfenbüttel 2', url: '?mannschaft=6513', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - xxx
     - {  }
@@ -71,7 +71,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SC BS Gliesmarode 2', url: '?mannschaft=6451', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'KS Braunschweig', url: '?mannschaft=6463', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - xxx
@@ -95,7 +95,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SC BS Gliesmarode 3', url: '?mannschaft=6452', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'Peiner SV 2', url: '?mannschaft=6457', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
@@ -103,78 +103,6 @@
     - {  }
     - {  }
     - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SV Apelnstedt', url: '?mannschaft=6453', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SF Fallersleben', url: '?mannschaft=6454', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SF Fallersleben 2', url: '?mannschaft=6455', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
     - {  }
     - {  }
     - {  }
@@ -196,6 +124,78 @@
     - {  }
     - {  }
     - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SC BS Gliesmarode 2', url: '?mannschaft=6451', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SC BS Gliesmarode 3', url: '?mannschaft=6452', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SC BS Gliesmarode 4', url: '?mannschaft=6485', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
     - {  }
     - {  }
     - {  }
@@ -215,7 +215,7 @@
     - ''
 -
     - '1.'
-    - { text: 'Peiner SV 2', url: '?mannschaft=6457', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SF Fallersleben', url: '?mannschaft=6454', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
@@ -229,6 +229,102 @@
     - {  }
     - {  }
     - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SF Fallersleben 2', url: '?mannschaft=6455', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SG Elm/Lappwald', url: '?mannschaft=6465', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SG Elm/Lappwald 2', url: '?mannschaft=6466', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SV Apelnstedt', url: '?mannschaft=6453', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
     - {  }
     - {  }
     - {  }
@@ -249,11 +345,11 @@
     - {  }
     - {  }
     - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
     - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
     - {  }
     - {  }
     - {  }
@@ -274,11 +370,11 @@
     - {  }
     - {  }
     - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
     - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
     - {  }
     - {  }
     - {  }
@@ -299,11 +395,11 @@
     - {  }
     - {  }
     - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
     - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
     - {  }
     - {  }
     - 0
@@ -324,102 +420,6 @@
     - {  }
     - {  }
     - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'KS Braunschweig', url: '?mannschaft=6463', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'C. Wolfenbüttel', url: '?mannschaft=6475', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'C. Wolfenbüttel 2', url: '?mannschaft=6513', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SVG Salzgitter 2', url: '?mannschaft=6486', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
     - {  }
     - {  }
     - {  }
@@ -431,7 +431,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SC BS Gliesmarode 4', url: '?mannschaft=6485', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SVG Salzgitter 2', url: '?mannschaft=6486', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }

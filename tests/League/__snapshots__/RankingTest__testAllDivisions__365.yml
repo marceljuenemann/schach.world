@@ -26,8 +26,8 @@
     - {  }
     - {  }
     - {  }
-    - [{ url: '?staffel=807&r=3#p3702x3710', title: 'gegen SK Lehrte 2', text: '3' }]
     - [{ url: '?staffel=807&r=6#p3702x3758', title: 'gegen Schachakademie 2', text: '4' }]
+    - [{ url: '?staffel=807&r=3#p3702x3710', title: 'gegen SK Lehrte 2', text: '3' }]
     - [{ url: '?staffel=807&r=1#p3702x3705', title: 'gegen Freib. Wedemark', text: '2' }]
     - {  }
     - [{ url: '?staffel=807&r=2#p3702x3703', title: 'gegen SV Laatzen 2', text: '3' }]
@@ -46,8 +46,8 @@
     - {  }
     - [{ url: '?staffel=807&r=6#p3709x3700', title: 'gegen Uetze-Hänigsen', text: 3½ }]
     - {  }
-    - [{ url: '?staffel=807&r=2#p3709x3710', title: 'gegen SK Lehrte 2', text: '4' }]
     - [{ url: '?staffel=807&r=3#p3709x3758', title: 'gegen Schachakademie 2', text: '3' }]
+    - [{ url: '?staffel=807&r=2#p3709x3710', title: 'gegen SK Lehrte 2', text: '4' }]
     - [{ url: '?staffel=807&r=5#p3709x3705', title: 'gegen Freib. Wedemark', text: 3½ }]
     - {  }
     - {  }
@@ -86,8 +86,8 @@
     - xxx
     - {  }
     - [{ url: '?staffel=807&r=2#p3711x3757', title: 'gegen Schachakademie', text: '4' }]
-    - [{ url: '?staffel=807&r=6#p3711x3710', title: 'gegen SK Lehrte 2', text: 2½ }]
     - {  }
+    - [{ url: '?staffel=807&r=6#p3711x3710', title: 'gegen SK Lehrte 2', text: 2½ }]
     - [{ url: '?staffel=807&r=3#p3711x3705', title: 'gegen Freib. Wedemark', text: 1½ }]
     - {  }
     - [{ url: '?staffel=807&r=1#p3711x3703', title: 'gegen SV Laatzen 2', text: '2' }]
@@ -106,8 +106,8 @@
     - {  }
     - xxx
     - [{ url: '?staffel=807&r=1#p3700x3757', title: 'gegen Schachakademie', text: '2' }]
-    - {  }
     - [{ url: '?staffel=807&r=5#p3700x3758', title: 'gegen Schachakademie 2', text: '2' }]
+    - {  }
     - [{ url: '?staffel=807&r=2#p3700x3705', title: 'gegen Freib. Wedemark', text: 1½ }]
     - [{ url: '?staffel=807&r=4#p3700x3583', title: 'gegen Hannover 96', text: 2½ }]
     - [{ url: '?staffel=807&r=3#p3700x3703', title: 'gegen SV Laatzen 2', text: '4' }]
@@ -126,8 +126,8 @@
     - [{ url: '?staffel=807&r=2#p3757x3711', title: 'gegen SZ Bemerode', text: '0' }]
     - [{ url: '?staffel=807&r=1#p3757x3700', title: 'gegen Uetze-Hänigsen', text: '2' }]
     - xxx
-    - [{ url: '?staffel=807&r=4#p3757x3710', title: 'gegen SK Lehrte 2', text: '1' }]
     - {  }
+    - [{ url: '?staffel=807&r=4#p3757x3710', title: 'gegen SK Lehrte 2', text: '1' }]
     - {  }
     - [{ url: '?staffel=807&r=3#p3757x3583', title: 'gegen Hannover 96', text: '2' }]
     - {  }
@@ -139,26 +139,6 @@
     - ''
 -
     - '7.'
-    - { text: 'SK Lehrte 2', url: '?mannschaft=3710', title: 'Zur Mannschaftsaufstellung' }
-    - [{ url: '?staffel=807&r=3#p3710x3702', title: 'gegen SV Laatzen', text: '1' }]
-    - [{ url: '?staffel=807&r=2#p3710x3709', title: 'gegen SK Lehrte', text: '0' }]
-    - {  }
-    - [{ url: '?staffel=807&r=6#p3710x3711', title: 'gegen SZ Bemerode', text: 1½ }]
-    - {  }
-    - [{ url: '?staffel=807&r=4#p3710x3757', title: 'gegen Schachakademie', text: '3' }]
-    - xxx
-    - {  }
-    - {  }
-    - [{ url: '?staffel=807&r=5#p3710x3583', title: 'gegen Hannover 96', text: '3' }]
-    - {  }
-    - [{ url: '?staffel=807&r=1#p3710x3601', title: 'gegen HSK Lister Turm', text: '3' }]
-    - {  }
-    - {  }
-    - 6
-    - 11½
-    - ''
--
-    - '7.'
     - { text: 'Schachakademie 2', url: '?mannschaft=3758', title: 'Zur Mannschaftsaufstellung' }
     - [{ url: '?staffel=807&r=6#p3758x3702', title: 'gegen SV Laatzen', text: '0' }]
     - [{ url: '?staffel=807&r=3#p3758x3709', title: 'gegen SK Lehrte', text: '1' }]
@@ -166,13 +146,33 @@
     - {  }
     - [{ url: '?staffel=807&r=5#p3758x3700', title: 'gegen Uetze-Hänigsen', text: '2' }]
     - {  }
-    - {  }
     - xxx
+    - {  }
     - [{ url: '?staffel=807&r=4#p3758x3705', title: 'gegen Freib. Wedemark', text: '2' }]
     - [{ url: '?staffel=807&r=1#p3758x3583', title: 'gegen Hannover 96', text: '3' }]
     - {  }
     - {  }
     - [{ url: '?staffel=807&r=2#p3758x3547', title: 'gegen SG Garbsen/Marienw', text: 3½ }]
+    - {  }
+    - 6
+    - 11½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=3710', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=807&r=3#p3710x3702', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=807&r=2#p3710x3709', title: 'gegen SK Lehrte', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=807&r=6#p3710x3711', title: 'gegen SZ Bemerode', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=807&r=4#p3710x3757', title: 'gegen Schachakademie', text: '3' }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=807&r=5#p3710x3583', title: 'gegen Hannover 96', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=807&r=1#p3710x3601', title: 'gegen HSK Lister Turm', text: '3' }]
+    - {  }
     - {  }
     - 6
     - 11½
@@ -186,8 +186,8 @@
     - [{ url: '?staffel=807&r=3#p3705x3711', title: 'gegen SZ Bemerode', text: 2½ }]
     - [{ url: '?staffel=807&r=2#p3705x3700', title: 'gegen Uetze-Hänigsen', text: 2½ }]
     - {  }
-    - {  }
     - [{ url: '?staffel=807&r=4#p3705x3758', title: 'gegen Schachakademie 2', text: '2' }]
+    - {  }
     - xxx
     - {  }
     - {  }
@@ -206,8 +206,8 @@
     - {  }
     - [{ url: '?staffel=807&r=4#p3583x3700', title: 'gegen Uetze-Hänigsen', text: 1½ }]
     - [{ url: '?staffel=807&r=3#p3583x3757', title: 'gegen Schachakademie', text: '2' }]
-    - [{ url: '?staffel=807&r=5#p3583x3710', title: 'gegen SK Lehrte 2', text: '1' }]
     - [{ url: '?staffel=807&r=1#p3583x3758', title: 'gegen Schachakademie 2', text: '1' }]
+    - [{ url: '?staffel=807&r=5#p3583x3710', title: 'gegen SK Lehrte 2', text: '1' }]
     - {  }
     - xxx
     - {  }
@@ -246,8 +246,8 @@
     - {  }
     - {  }
     - [{ url: '?staffel=807&r=6#p3601x3757', title: 'gegen Schachakademie', text: '1' }]
-    - [{ url: '?staffel=807&r=1#p3601x3710', title: 'gegen SK Lehrte 2', text: '1' }]
     - {  }
+    - [{ url: '?staffel=807&r=1#p3601x3710', title: 'gegen SK Lehrte 2', text: '1' }]
     - {  }
     - [{ url: '?staffel=807&r=2#p3601x3583', title: 'gegen Hannover 96', text: '0' }]
     - [{ url: '?staffel=807&r=5#p3601x3703', title: 'gegen SV Laatzen 2', text: '3' }]
@@ -266,8 +266,8 @@
     - {  }
     - {  }
     - [{ url: '?staffel=807&r=5#p3547x3757', title: 'gegen Schachakademie', text: '0' }]
-    - {  }
     - [{ url: '?staffel=807&r=2#p3547x3758', title: 'gegen Schachakademie 2', text: ½ }]
+    - {  }
     - {  }
     - {  }
     - [{ url: '?staffel=807&r=6#p3547x3703', title: 'gegen SV Laatzen 2', text: '1' }]

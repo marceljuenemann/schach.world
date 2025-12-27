@@ -11,21 +11,9 @@
     - BP
 -
     - '1.'
-    - { text: 'SV FB Wedemark 2', url: '?mannschaft=6433', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SF Mühlenberg', url: '?mannschaft=6472', title: 'Zur Mannschaftsaufstellung' }
     - xxx
     - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SK Wennigsen', url: '?mannschaft=6436', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - xxx
     - {  }
     - {  }
     - {  }
@@ -37,8 +25,8 @@
     - '1.'
     - { text: 'SK Lehrte 4', url: '?mannschaft=6491', title: 'Zur Mannschaftsaufstellung' }
     - {  }
-    - {  }
     - xxx
+    - {  }
     - {  }
     - {  }
     - {  }
@@ -47,11 +35,11 @@
     - ''
 -
     - '1.'
-    - { text: 'SF Mühlenberg', url: '?mannschaft=6472', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
+    - { text: 'SK Wennigsen', url: '?mannschaft=6436', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - xxx
+    - {  }
     - {  }
     - {  }
     - 0
@@ -60,6 +48,18 @@
 -
     - '1.'
     - { text: 'SV Berenbostel', url: '?mannschaft=6501', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SV FB Wedemark 2', url: '?mannschaft=6433', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
