@@ -35,13 +35,18 @@ class Ranking
       $result[$i][$i + 1] = 'xxx';
     }
 
+    $lastCol = count($result[1]) - 1;
     for ($i = 1; $i <= $this->teamsPromoted && $i <= count($this->teams); $i++) {
-      $result[$i][count($result[$i]) - 1] = 'aufsteiger';
+      $result[$i][$lastCol] = 'aufsteiger';
     }
-
+    for ($i = 1; $i <= $this->teamsMaybePromoted && $i + $this->teamsPromoted <= count($this->teams); $i++) {
+      $result[$i + $this->teamsPromoted][$lastCol] = 'aufsteigerRelegation';
+    }
     for ($i = 1; $i <= $this->teamsDemoted && $i <= count($this->teams); $i++) {
-      $row = count($result) - $i;
-      $result[$row][count($result[$row]) - 1] = 'absteiger';
+      $result[count($result) - $i][$lastCol] = 'absteiger';
+    }
+    for ($i = 1; $i <= $this->teamsMaybeDemoted && $i + $this->teamsDemoted <= count($this->teams); $i++) {
+      $result[count($result) - $i - $this->teamsDemoted][$lastCol] = 'absteigerRelegation';
     }
 
     return $result;

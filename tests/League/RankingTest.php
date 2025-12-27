@@ -149,7 +149,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testRelegation() {
-    $this->markTestSkipped('Not yet implemented.');
     $division = $this->division('bezirk3-1920', 'kreisliga');
     $ranking = $this->legacyRanking($division, 11);
     $this->assertEquals("aufsteigerRelegation", $ranking[3][15]);
@@ -158,7 +157,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testMpCalculation_nsj_morePointsWins() {
-    $this->markTestSkipped('Not yet implemented.');
     // Organisation "7j" is configured to give 2 MPs for a 2:1 result (4 boards).
     $division = $this->division('nsj-2425', 'landesklasse-sued-west');
     $ranking = $this->legacyRanking($division, 1);
