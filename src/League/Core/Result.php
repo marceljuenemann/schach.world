@@ -5,6 +5,7 @@ namespace Nsv\League\Core;
 /**
  * Utilities for results and scores.
  */
+// TODO: Move to Chess namespace.
 class Result
 {
   const WIN = '1';

@@ -208,6 +208,10 @@ class Division
     }
   }
 
+  public function boardCount(): int {
+    return $this->config('boardCount');
+  }
+
   public function uri(): string {
     return $this->league->uri() . $this->path() . '/';
   }

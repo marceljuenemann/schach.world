@@ -3,15 +3,22 @@
 namespace Nsv\League\Application;
 
 use Doctrine\ORM\EntityNotFoundException;
+use Nsv\League\Api\Service\RankingService;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Division;
-use SED_Cache;
 use Spatie\Snapshots\MatchesSnapshots;
 use Tests\League\LeagueTestCase;
 
 class RankingTest extends LeagueTestCase
 {
   use MatchesSnapshots;
+
+  private RankingService $rankingService;
+
+  protected function setUp(): void {
+    parent::setUp();
+    $this->rankingService = $this->container->get(RankingService::class);
+  }
 
   public function testNoTable() {
     $division = $this->division('pokal-2122', 'pokal-mm');
@@ -130,6 +137,14 @@ class RankingTest extends LeagueTestCase
     $this->assertMatchesSnapshot($ranking);
   }
 
+  public function testExternalPairings() {
+    // Pairings involving teams not in the division should be ignored.
+    // TODO: In the future we might want to support teams being in multiple divisions.
+    $division = $this->division('bezirk1-2122', 'bezirksliga');
+    $ranking = $this->legacyRanking($division, 1);
+    $this->assertMatchesSnapshot($ranking);
+  }
+
   public function testCovid_rules() {
     // In the COVID season, rounds were mixed up, so we should always
     // show the ranking with pairings for all rounds played.
@@ -168,7 +183,6 @@ class RankingTest extends LeagueTestCase
   }
 
   public function testAllDivisions() {
-    // TODO: Probably remove this test altogether after ranking is rewritten.
     $this->markTestSkipped('This is an expensive test.');
     $divisions = $this->em->getRepository(Division::class)->findBy([], ['id' => 'ASC']);
     foreach ($divisions as $division) {
@@ -182,6 +196,13 @@ class RankingTest extends LeagueTestCase
     }
   }
 
+  private function legacyRanking(Division $div, int $round): array {
+    $ranking = $this->rankingService->ranking($div, $round);
+    $legacy = $ranking->toLegacyFormat($div);
+    return Encoding::deep_utf8_encode($legacy);
+  }
+
+  /*
   private function legacyRanking(Division $div, int $round): array {
     $this->legacySystem->initialize();
     $this->legacySystem->league = $div->league;
@@ -200,6 +221,7 @@ class RankingTest extends LeagueTestCase
 
     return Encoding::deep_utf8_encode($ranking);
   }
+  */
 
   private function division(string $leaguePath, string $divisionPath): Division {
     $league = $this->leagueRepository->findByPathOrPrefix($leaguePath);
