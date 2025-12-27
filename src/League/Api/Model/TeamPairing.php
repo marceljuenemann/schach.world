@@ -23,6 +23,7 @@ class TeamPairing
     $result->id = $pairing->id;
     $result->round = $pairing->round;
     $result->date = $pairing->wasMoved() ? $pairing->moveDate() : $pairing->division->round($pairing->round)->date;
+    // TODO: Add URL fragment to link directly to the pairing.
     $result->uri = $pairing->division->round($pairing->round)->uri();
 
     if ($pairing->team1 == $team) {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nsv\League\Chess\Ranking;
+namespace Nsv\League\Api\Service\TieBreak;
 
 use Nsv\League\Entity\Team;
 

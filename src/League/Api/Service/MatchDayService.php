@@ -5,6 +5,7 @@ namespace Nsv\League\Api\Service;
 use Nsv\League\Api\Model\MatchDay;
 use Nsv\League\Api\Model\Pairing;
 use Nsv\League\Api\Model\Player;
+use Nsv\League\Api\Service\RankingService;
 use Nsv\League\Entity;
 use Nsv\League\Entity\CacheEntry;
 use Nsv\League\Repository\CacheRepository;
@@ -19,7 +20,8 @@ class MatchDayService
   function __construct(
     private PairingRepository $pairingRepository,
     private PlayerRepository $playerRepository,
-    private CacheRepository $cacheRepository
+    private CacheRepository $cacheRepository,
+    private RankingService $rankingService,
   ) {}
 
   public function matchDay(Entity\Division $division, int $round, callable $legacyRanking) {
