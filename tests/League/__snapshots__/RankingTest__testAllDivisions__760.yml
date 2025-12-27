@@ -11,7 +11,7 @@
     - BP
 -
     - '1.'
-    - { text: 'SVg Calenberg', url: '?mannschaft=6416', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SF Barsinghausen 2', url: '?mannschaft=6469', title: 'Zur Mannschaftsaufstellung' }
     - xxx
     - {  }
     - {  }
@@ -23,7 +23,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SK Lehrte 5', url: '?mannschaft=6492', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SF Mühlenberg 2', url: '?mannschaft=6473', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - xxx
     - {  }
@@ -47,24 +47,12 @@
     - ''
 -
     - '1.'
-    - { text: 'SF Barsinghausen 2', url: '?mannschaft=6469', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SK Lehrte 5', url: '?mannschaft=6492', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
     - xxx
     - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SF Mühlenberg 2', url: '?mannschaft=6473', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
     - {  }
     - 0
     - '0'
@@ -72,6 +60,18 @@
 -
     - '1.'
     - { text: 'SV Springe 2', url: '?mannschaft=6506', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SVg Calenberg', url: '?mannschaft=6416', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }

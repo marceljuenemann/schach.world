@@ -23,8 +23,8 @@
     - [{ url: '?staffel=1855&r=1#p8607x8580', title: 'gegen Hamelner SV 4', text: 4½ }]
     - {  }
     - [{ url: '?staffel=1855&r=3#p8607x8509', title: 'gegen ESV Göttingen 5', text: '4' }]
-    - {  }
     - [{ url: '?staffel=1855&r=2#p8607x8609', title: 'gegen PSV Bad Pyrmont', text: '4' }]
+    - {  }
     - {  }
     - 6
     - 12½
@@ -71,8 +71,8 @@
     - {  }
     - {  }
     - {  }
-    - {  }
     - [{ url: '?staffel=1855&r=1#p8603x8609', title: 'gegen PSV Bad Pyrmont', text: 4½ }]
+    - {  }
     - [{ url: '?staffel=1855&r=2#p8603x8494', title: 'gegen Hildesheimer SV 4', text: 4½ }]
     - 4
     - '11'
@@ -87,8 +87,8 @@
     - xxx
     - [{ url: '?staffel=1855&r=2#p8580x8501', title: 'gegen SG U Pl Göttingen 2', text: '4' }]
     - {  }
-    - [{ url: '?staffel=1855&r=3#p8580x8608', title: 'gegen SK Bad Harzburg', text: 4½ }]
     - {  }
+    - [{ url: '?staffel=1855&r=3#p8580x8608', title: 'gegen SK Bad Harzburg', text: 4½ }]
     - {  }
     - 4
     - '10'
@@ -103,8 +103,8 @@
     - [{ url: '?staffel=1855&r=2#p8501x8580', title: 'gegen Hamelner SV 4', text: '2' }]
     - xxx
     - {  }
-    - [{ url: '?staffel=1855&r=1#p8501x8608', title: 'gegen SK Bad Harzburg', text: '3' }]
     - [{ url: '?staffel=1855&r=3#p8501x8609', title: 'gegen PSV Bad Pyrmont', text: '3' }]
+    - [{ url: '?staffel=1855&r=1#p8501x8608', title: 'gegen SK Bad Harzburg', text: '3' }]
     - {  }
     - 2
     - '8'
@@ -119,26 +119,10 @@
     - {  }
     - {  }
     - xxx
+    - {  }
     - [{ url: '?staffel=1855&r=2#p8509x8608', title: 'gegen SK Bad Harzburg', text: '4' }]
     - {  }
-    - {  }
     - 2
-    - 6½
-    - ''
--
-    - '8.'
-    - { text: 'SK Bad Harzburg', url: '?mannschaft=8608', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - [{ url: '?staffel=1855&r=3#p8608x8580', title: 'gegen Hamelner SV 4', text: 1½ }]
-    - [{ url: '?staffel=1855&r=1#p8608x8501', title: 'gegen SG U Pl Göttingen 2', text: '3' }]
-    - [{ url: '?staffel=1855&r=2#p8608x8509', title: 'gegen ESV Göttingen 5', text: '2' }]
-    - xxx
-    - {  }
-    - {  }
-    - 1
     - 6½
     - ''
 -
@@ -151,6 +135,22 @@
     - {  }
     - [{ url: '?staffel=1855&r=3#p8609x8501', title: 'gegen SG U Pl Göttingen 2', text: '3' }]
     - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 1
+    - 6½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Bad Harzburg', url: '?mannschaft=8608', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1855&r=3#p8608x8580', title: 'gegen Hamelner SV 4', text: 1½ }]
+    - [{ url: '?staffel=1855&r=1#p8608x8501', title: 'gegen SG U Pl Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1855&r=2#p8608x8509', title: 'gegen ESV Göttingen 5', text: '2' }]
     - {  }
     - xxx
     - {  }

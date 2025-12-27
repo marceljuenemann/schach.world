@@ -41,11 +41,25 @@
     - ''
 -
     - '1.'
-    - { text: 'SK Lehrte', url: '?mannschaft=6520', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SD Isernhagen', url: '?mannschaft=6538', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - xxx
     - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=6520', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
     - {  }
     - {  }
     - {  }
@@ -59,37 +73,9 @@
     - {  }
     - {  }
     - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SZ Bemerode', url: '?mannschaft=6526', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
     - {  }
     - xxx
     - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SZ Bemerode 2', url: '?mannschaft=6527', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
     - {  }
     - {  }
     - 0
@@ -103,6 +89,20 @@
     - {  }
     - {  }
     - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=6526', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
     - {  }
     - xxx
     - {  }
@@ -111,7 +111,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SD Isernhagen', url: '?mannschaft=6538', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=6527', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }

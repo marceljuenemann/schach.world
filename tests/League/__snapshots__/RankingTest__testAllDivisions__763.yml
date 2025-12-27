@@ -21,54 +21,10 @@
     - BP
 -
     - '1.'
-    - { text: 'Stader SV', url: '?mannschaft=6516', title: 'Zur Mannschaftsaufstellung' }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SK Bremen-Nord', url: '?mannschaft=6517', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
     - { text: 'SF Leherheide', url: '?mannschaft=6518', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
     - xxx
+    - {  }
+    - {  }
     - {  }
     - {  }
     - {  }
@@ -89,6 +45,50 @@
     - '1.'
     - { text: 'SG Ammerland 2', url: '?mannschaft=6519', title: 'Zur Mannschaftsaufstellung' }
     - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SG Ammerland 1', url: '?mannschaft=6558', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SK Bremen-Nord', url: '?mannschaft=6517', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
     - {  }
     - {  }
     - xxx
@@ -109,7 +109,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SV Osnabrück', url: '?mannschaft=6549', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SK Lehrte 3', url: '?mannschaft=6554', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
@@ -131,7 +131,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SK Union Oldenburg', url: '?mannschaft=6550', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SK Nordhorn-Blanke 2', url: '?mannschaft=6557', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
@@ -139,6 +139,28 @@
     - {  }
     - xxx
     - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Blanke 1', url: '?mannschaft=6556', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
     - {  }
     - {  }
     - {  }
@@ -160,28 +182,6 @@
     - {  }
     - {  }
     - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SV Werder Bremen 3', url: '?mannschaft=6552', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
     - {  }
     - xxx
     - {  }
@@ -197,7 +197,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SV Werder Bremen 4', url: '?mannschaft=6553', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SK Union Oldenburg', url: '?mannschaft=6550', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
@@ -219,7 +219,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SK Lehrte 3', url: '?mannschaft=6554', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'Stader SV', url: '?mannschaft=6516', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
@@ -263,7 +263,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SK Nordhorn-Blanke 1', url: '?mannschaft=6556', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SV Hellern', url: '?mannschaft=6560', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
@@ -278,50 +278,6 @@
     - xxx
     - {  }
     - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SK Nordhorn-Blanke 2', url: '?mannschaft=6557', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SG Ammerland 1', url: '?mannschaft=6558', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
     - {  }
     - {  }
     - 0
@@ -342,6 +298,50 @@
     - {  }
     - {  }
     - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SV Osnabrück', url: '?mannschaft=6549', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SV Werder Bremen 3', url: '?mannschaft=6552', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
     - {  }
     - {  }
     - xxx
@@ -351,7 +351,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SV Hellern', url: '?mannschaft=6560', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SV Werder Bremen 4', url: '?mannschaft=6553', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }

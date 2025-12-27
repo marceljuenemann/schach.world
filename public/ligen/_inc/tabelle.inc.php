@@ -117,7 +117,7 @@ class SED_Tabelle {
 
         // Mannschaften holen
         $rows = SED_Query(
-          "SELECT m.id FROM mannschaften AS m WHERE m.staffel = ?",
+          "SELECT m.id FROM mannschaften AS m WHERE m.staffel = ? ORDER BY m.name, m.mnr",
           [$staffel]
         )->fetchAllAssociative();
         foreach ($rows as $team) {

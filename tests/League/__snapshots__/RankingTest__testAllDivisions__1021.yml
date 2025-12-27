@@ -15,25 +15,9 @@
     - BP
 -
     - '1.'
-    - { text: 'SK Anderten', url: '?mannschaft=8470', title: 'Zur Mannschaftsaufstellung' }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - [{ url: '?staffel=1871&r=3#p8470x8196', title: 'gegen SG WB Eilenriede 3', text: '5' }]
-    - {  }
-    - {  }
-    - {  }
-    - [{ url: '?staffel=1871&r=2#p8470x8549', title: 'gegen SK Neustadt', text: '5' }]
-    - [{ url: '?staffel=1871&r=1#p8470x8537', title: 'gegen SK Lehrte 6', text: '6' }]
-    - 6
-    - '16'
-    - aufsteiger
--
-    - '1.'
     - { text: 'HSK Lister Turm 6', url: '?mannschaft=8552', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
     - xxx
+    - {  }
     - {  }
     - [{ url: '?staffel=1871&r=1#p8552x8553', title: 'gegen HSK Lister Turm 7', text: 4½ }]
     - {  }
@@ -42,6 +26,22 @@
     - {  }
     - {  }
     - [{ url: '?staffel=1871&r=3#p8552x8537', title: 'gegen SK Lehrte 6', text: '6' }]
+    - 6
+    - '16'
+    - aufsteiger
+-
+    - '1.'
+    - { text: 'SK Anderten', url: '?mannschaft=8470', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1871&r=3#p8470x8196', title: 'gegen SG WB Eilenriede 3', text: '5' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1871&r=2#p8470x8549', title: 'gegen SK Neustadt', text: '5' }]
+    - [{ url: '?staffel=1871&r=1#p8470x8537', title: 'gegen SK Lehrte 6', text: '6' }]
     - 6
     - '16'
     - aufsteiger
@@ -64,8 +64,8 @@
 -
     - '4.'
     - { text: 'HSK Lister Turm 7', url: '?mannschaft=8553', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
     - [{ url: '?staffel=1871&r=1#p8553x8552', title: 'gegen HSK Lister Turm 6', text: 3½ }]
+    - {  }
     - {  }
     - xxx
     - {  }
@@ -80,8 +80,8 @@
 -
     - '5.'
     - { text: 'SG WB Eilenriede 3', url: '?mannschaft=8196', title: 'Zur Mannschaftsaufstellung' }
-    - [{ url: '?staffel=1871&r=3#p8196x8470', title: 'gegen SK Anderten', text: '2' }]
     - {  }
+    - [{ url: '?staffel=1871&r=3#p8196x8470', title: 'gegen SK Anderten', text: '2' }]
     - {  }
     - {  }
     - xxx
@@ -96,8 +96,8 @@
 -
     - '6.'
     - { text: 'SV Gretenberg', url: '?mannschaft=8467', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
     - [{ url: '?staffel=1871&r=2#p8467x8552', title: 'gegen HSK Lister Turm 6', text: 2½ }]
+    - {  }
     - [{ url: '?staffel=1871&r=1#p8467x8531', title: 'gegen SK Lehrte 5', text: 4½ }]
     - [{ url: '?staffel=1871&r=3#p8467x8553', title: 'gegen HSK Lister Turm 7', text: '4' }]
     - {  }
@@ -144,8 +144,8 @@
 -
     - '9.'
     - { text: 'SK Neustadt', url: '?mannschaft=8549', title: 'Zur Mannschaftsaufstellung' }
-    - [{ url: '?staffel=1871&r=2#p8549x8470', title: 'gegen SK Anderten', text: '3' }]
     - {  }
+    - [{ url: '?staffel=1871&r=2#p8549x8470', title: 'gegen SK Anderten', text: '3' }]
     - [{ url: '?staffel=1871&r=3#p8549x8531', title: 'gegen SK Lehrte 5', text: 3½ }]
     - {  }
     - {  }
@@ -160,8 +160,8 @@
 -
     - '10.'
     - { text: 'SK Lehrte 6', url: '?mannschaft=8537', title: 'Zur Mannschaftsaufstellung' }
-    - [{ url: '?staffel=1871&r=1#p8537x8470', title: 'gegen SK Anderten', text: '2' }]
     - [{ url: '?staffel=1871&r=3#p8537x8552', title: 'gegen HSK Lister Turm 6', text: '2' }]
+    - [{ url: '?staffel=1871&r=1#p8537x8470', title: 'gegen SK Anderten', text: '2' }]
     - [{ url: '?staffel=1871&r=2#p8537x8531', title: 'gegen SK Lehrte 5', text: '1' }]
     - {  }
     - {  }

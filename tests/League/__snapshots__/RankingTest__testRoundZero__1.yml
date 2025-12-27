@@ -15,7 +15,7 @@
     - BP
 -
     - '1.'
-    - { text: 'SG Gifhorn-Wolfsburg', url: '?mannschaft=8338', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'ESV Göttingen', url: '?mannschaft=8367', title: 'Zur Mannschaftsaufstellung' }
     - xxx
     - {  }
     - {  }
@@ -31,26 +31,10 @@
     - aufsteiger
 -
     - '1.'
-    - { text: 'SG WB Eilenriede', url: '?mannschaft=8312', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
     - { text: 'Hamelner SV', url: '?mannschaft=8354', title: 'Zur Mannschaftsaufstellung' }
     - {  }
-    - {  }
     - xxx
+    - {  }
     - {  }
     - {  }
     - {  }
@@ -66,9 +50,41 @@
     - { text: 'Hildesheimer SV', url: '?mannschaft=8330', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'HSK Lister Turm 3', url: '?mannschaft=8370', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
     - {  }
     - xxx
     - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SG Gifhorn-Wolfsburg', url: '?mannschaft=8338', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
     - {  }
     - {  }
     - {  }
@@ -84,22 +100,6 @@
     - {  }
     - {  }
     - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SK Rinteln', url: '?mannschaft=8363', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
     - {  }
     - xxx
     - {  }
@@ -111,7 +111,7 @@
     - ''
 -
     - '1.'
-    - { text: 'Tempo Göttingen', url: '?mannschaft=8364', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SG WB Eilenriede', url: '?mannschaft=8312', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
@@ -120,22 +120,6 @@
     - {  }
     - xxx
     - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'ESV Göttingen', url: '?mannschaft=8367', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
     - {  }
     - {  }
     - 0
@@ -151,6 +135,22 @@
     - {  }
     - {  }
     - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SK Rinteln', url: '?mannschaft=8363', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
     - {  }
     - xxx
     - {  }
@@ -159,7 +159,7 @@
     - absteiger
 -
     - '1.'
-    - { text: 'HSK Lister Turm 3', url: '?mannschaft=8370', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'Tempo Göttingen', url: '?mannschaft=8364', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }

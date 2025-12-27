@@ -11,21 +11,9 @@
     - BP
 -
     - '1.'
-    - { text: 'SK Anderten 2', url: '?mannschaft=6447', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'Hannover 96 2', url: '?mannschaft=6500', title: 'Zur Mannschaftsaufstellung' }
     - xxx
     - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SK Rinteln 4', url: '?mannschaft=6504', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - xxx
     - {  }
     - {  }
     - {  }
@@ -36,6 +24,18 @@
 -
     - '1.'
     - { text: 'SF Barsinghausen 3', url: '?mannschaft=6470', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=6447', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - xxx
@@ -71,7 +71,7 @@
     - ''
 -
     - '1.'
-    - { text: 'Hannover 96 2', url: '?mannschaft=6500', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SK Rinteln 4', url: '?mannschaft=6504', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
