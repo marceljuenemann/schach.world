@@ -22,12 +22,19 @@ class RankingService {
       return new Ranking();
     }
 
+    // COVID Hack: Always show full ranking as rounds were mixed up.
+    // TODO: Remove this special case as it doesn't affect the final standing.
+    if ($division->league->year == 2021) {
+      $round = 99;
+    }
+
     $teams = $division->teams();
-    $pairings = array_filter(iterator_to_array($division->pairings), function (Pairing $pairing) use ($round) {
-      // TODO: Filter pairings involving teams not in the division.
+    $pairings = array_filter(iterator_to_array($division->pairings), function (Pairing $pairing) use ($division, $round) {
       return $pairing->round <= $round &&
         $pairing->result1 !== null && 
-        $pairing->result2 !== null;
+        $pairing->result2 !== null &&
+        $pairing->team1->division == $division &&
+        $pairing->team2->division == $division;
     });
 
     // Sort teams using the defined tiebreak criteria.

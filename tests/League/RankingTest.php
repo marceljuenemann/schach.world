@@ -137,8 +137,15 @@ class RankingTest extends LeagueTestCase
     $this->assertMatchesSnapshot($ranking);
   }
 
+  public function testExternalPairings() {
+    // Pairings involving teams not in the division should be ignored.
+    // TODO: In the future we might want to support teams being in multiple divisions.
+    $division = $this->division('bezirk1-2122', 'bezirksliga');
+    $ranking = $this->legacyRanking($division, 1);
+    $this->assertMatchesSnapshot($ranking);
+  }
+
   public function testCovid_rules() {
-    $this->markTestSkipped('Not yet implemented.');
     // In the COVID season, rounds were mixed up, so we should always
     // show the ranking with pairings for all rounds played.
     // TODO: Should be fine to remove this special case at this point.
