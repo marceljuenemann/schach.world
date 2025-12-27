@@ -27,7 +27,7 @@
     - aufsteiger
 -
     - '1.'
-    - { text: 'SF Nickenich 3', url: '?mannschaft=1482', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SC Cochem 2', url: '?mannschaft=1487', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - xxx
     - {  }
@@ -41,7 +41,7 @@
     - aufsteiger
 -
     - '1.'
-    - { text: 'SC Cochem 2', url: '?mannschaft=1487', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SC Weibern', url: '?mannschaft=1505', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - xxx
@@ -55,26 +55,12 @@
     - ''
 -
     - '1.'
-    - { text: 'TC Grafschaft 2', url: '?mannschaft=1489', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SF Nickenich 3', url: '?mannschaft=1482', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }
     - xxx
     - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'TC Grafschaft 3', url: '?mannschaft=1490', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
     - {  }
     - {  }
     - {  }
@@ -88,23 +74,9 @@
     - {  }
     - {  }
     - {  }
-    - {  }
     - xxx
     - {  }
     - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SC Weibern', url: '?mannschaft=1505', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
     - {  }
     - 0
     - '0'
@@ -112,6 +84,34 @@
 -
     - '1.'
     - { text: 'SV Urmitz', url: '?mannschaft=1507', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'TC Grafschaft 2', url: '?mannschaft=1489', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'TC Grafschaft 3', url: '?mannschaft=1490', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }

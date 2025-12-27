@@ -13,23 +13,9 @@
     - BP
 -
     - '1.'
-    - { text: 'SV FB Wedemark 2', url: '?mannschaft=8365', title: 'Zur Mannschaftsaufstellung' }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - [{ url: '?staffel=1875&r=1#p8365x8197', title: 'gegen SG WB Eilenriede 4', text: 4½ }]
-    - [{ url: '?staffel=1875&r=2#p8365x8554', title: 'gegen HSK Lister Turm 8', text: '5' }]
-    - {  }
-    - {  }
-    - 4
-    - 9½
-    - aufsteiger
--
-    - '1.'
     - { text: 'Hannover 96 3', url: '?mannschaft=8545', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
     - xxx
+    - {  }
     - [{ url: '?staffel=1875&r=1#p8545x8539', title: 'gegen SK Lehrte 8', text: 4½ }]
     - {  }
     - {  }
@@ -38,12 +24,26 @@
     - {  }
     - 4
     - 9½
+    - aufsteiger
+-
+    - '1.'
+    - { text: 'SV FB Wedemark 2', url: '?mannschaft=8365', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1875&r=2#p8365x8554', title: 'gegen HSK Lister Turm 8', text: '5' }]
+    - [{ url: '?staffel=1875&r=1#p8365x8197', title: 'gegen SG WB Eilenriede 4', text: 4½ }]
+    - {  }
+    - {  }
+    - 4
+    - 9½
     - ''
 -
     - '3.'
     - { text: 'SK Lehrte 8', url: '?mannschaft=8539', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
     - [{ url: '?staffel=1875&r=1#p8539x8545', title: 'gegen Hannover 96 3', text: 3½ }]
+    - {  }
     - xxx
     - {  }
     - {  }
@@ -60,8 +60,8 @@
     - {  }
     - {  }
     - xxx
-    - [{ url: '?staffel=1875&r=2#p8557x8197', title: 'gegen SG WB Eilenriede 4', text: '3' }]
     - {  }
+    - [{ url: '?staffel=1875&r=2#p8557x8197', title: 'gegen SG WB Eilenriede 4', text: '3' }]
     - [{ url: '?staffel=1875&r=1#p8557x8499', title: 'gegen SD Isernhagen 4', text: '6' }]
     - {  }
     - 2
@@ -69,37 +69,37 @@
     - ''
 -
     - '5.'
-    - { text: 'SG WB Eilenriede 4', url: '?mannschaft=8197', title: 'Zur Mannschaftsaufstellung' }
-    - [{ url: '?staffel=1875&r=1#p8197x8365', title: 'gegen SV FB Wedemark 2', text: 3½ }]
-    - {  }
-    - {  }
-    - [{ url: '?staffel=1875&r=2#p8197x8557', title: 'gegen SZ Bemerode 2', text: '5' }]
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - 2
-    - 8½
-    - ''
--
-    - '5.'
     - { text: 'HSK Lister Turm 8', url: '?mannschaft=8554', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
     - [{ url: '?staffel=1875&r=2#p8554x8365', title: 'gegen SV FB Wedemark 2', text: '3' }]
     - {  }
     - {  }
-    - {  }
-    - {  }
     - xxx
+    - {  }
     - {  }
     - [{ url: '?staffel=1875&r=1#p8554x8540', title: 'gegen SK Lehrte 9', text: 5½ }]
     - 2
     - 8½
     - ''
 -
+    - '5.'
+    - { text: 'SG WB Eilenriede 4', url: '?mannschaft=8197', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1875&r=1#p8197x8365', title: 'gegen SV FB Wedemark 2', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1875&r=2#p8197x8557', title: 'gegen SZ Bemerode 2', text: '5' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - 8½
+    - ''
+-
     - '7.'
     - { text: 'SD Isernhagen 4', url: '?mannschaft=8499', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
     - [{ url: '?staffel=1875&r=2#p8499x8545', title: 'gegen Hannover 96 3', text: '3' }]
+    - {  }
     - {  }
     - [{ url: '?staffel=1875&r=1#p8499x8557', title: 'gegen SZ Bemerode 2', text: '2' }]
     - {  }
@@ -116,8 +116,8 @@
     - {  }
     - [{ url: '?staffel=1875&r=2#p8540x8539', title: 'gegen SK Lehrte 8', text: '2' }]
     - {  }
-    - {  }
     - [{ url: '?staffel=1875&r=1#p8540x8554', title: 'gegen HSK Lister Turm 8', text: 2½ }]
+    - {  }
     - {  }
     - xxx
     - 0

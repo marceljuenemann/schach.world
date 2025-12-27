@@ -11,34 +11,22 @@
     - BP
 -
     - '1.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=6508', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
     - { text: 'SG WB Eilenriede 2', url: '?mannschaft=6443', title: 'Zur Mannschaftsaufstellung' }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SV FB Wedemark 3', url: '?mannschaft=6435', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - xxx
     - {  }
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SZ Bemerode', url: '?mannschaft=6489', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - xxx
     - {  }
     - {  }
     - {  }
@@ -50,8 +38,8 @@
     - { text: 'SK Lehrte 6', url: '?mannschaft=6493', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
-    - {  }
     - xxx
+    - {  }
     - {  }
     - {  }
     - 0
@@ -63,6 +51,18 @@
     - {  }
     - {  }
     - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SV FB Wedemark 3', url: '?mannschaft=6435', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
     - {  }
     - xxx
     - {  }
@@ -71,7 +71,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SD Isernhagen 2', url: '?mannschaft=6508', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SZ Bemerode', url: '?mannschaft=6489', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }

@@ -161,9 +161,9 @@ class RankingTest extends LeagueTestCase
     // Organisation "ndsj" is configured to give only 1 MP for a 3:2 result (6 boards).
     $division = $this->division('jbln-1718', 'staffel-ost');
     $ranking = $this->legacyRanking($division, 5);
-    $this->assertEquals("3", $ranking[3][9][0]["text"]);
-    $this->assertEquals("2", $ranking[8][4][0]["text"]);
-    $this->assertEquals("7", $ranking[3][12]);
+    $this->assertEquals("3", $ranking[2][9][0]["text"]);
+    $this->assertEquals("2", $ranking[8][3][0]["text"]);
+    $this->assertEquals("7", $ranking[2][12]);
     $this->assertMatchesSnapshot($ranking);
   }
 

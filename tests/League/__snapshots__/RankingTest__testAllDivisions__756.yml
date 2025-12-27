@@ -31,10 +31,26 @@
     - aufsteiger
 -
     - '1.'
-    - { text: 'TuS Wunstorf', url: '?mannschaft=6514', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'SD Isernhagen', url: '?mannschaft=6536', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - xxx
     - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=6537', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
     - {  }
     - {  }
     - {  }
@@ -50,9 +66,25 @@
     - { text: 'SF Barsinghausen', url: '?mannschaft=6515', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
+    - {  }
     - xxx
     - {  }
     - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '1.'
+    - { text: 'SG Rinteln/Stadth.', url: '?mannschaft=6532', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
     - {  }
     - {  }
     - {  }
@@ -67,9 +99,9 @@
     - {  }
     - {  }
     - {  }
+    - {  }
+    - {  }
     - xxx
-    - {  }
-    - {  }
     - {  }
     - {  }
     - {  }
@@ -84,9 +116,9 @@
     - {  }
     - {  }
     - {  }
+    - {  }
+    - {  }
     - xxx
-    - {  }
-    - {  }
     - {  }
     - {  }
     - {  }
@@ -101,9 +133,9 @@
     - {  }
     - {  }
     - {  }
+    - {  }
+    - {  }
     - xxx
-    - {  }
-    - {  }
     - {  }
     - {  }
     - 0
@@ -118,38 +150,6 @@
     - {  }
     - {  }
     - {  }
-    - xxx
-    - {  }
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SG Rinteln/Stadth.', url: '?mannschaft=6532', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - xxx
-    - {  }
-    - {  }
-    - 0
-    - '0'
-    - ''
--
-    - '1.'
-    - { text: 'SD Isernhagen', url: '?mannschaft=6536', title: 'Zur Mannschaftsaufstellung' }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - {  }
     - {  }
     - {  }
     - xxx
@@ -159,7 +159,7 @@
     - ''
 -
     - '1.'
-    - { text: 'SD Isernhagen 2', url: '?mannschaft=6537', title: 'Zur Mannschaftsaufstellung' }
+    - { text: 'TuS Wunstorf', url: '?mannschaft=6514', title: 'Zur Mannschaftsaufstellung' }
     - {  }
     - {  }
     - {  }

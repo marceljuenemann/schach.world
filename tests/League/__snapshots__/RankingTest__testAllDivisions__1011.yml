@@ -22,8 +22,8 @@
     - {  }
     - [{ url: '?staffel=1861&r=3#p8201x8337', title: 'gegen SK Jever', text: 4½ }]
     - {  }
-    - [{ url: '?staffel=1861&r=1#p8201x8254', title: 'gegen SV Kaponier Vechta', text: '5' }]
     - [{ url: '?staffel=1861&r=2#p8201x8334', title: 'gegen SK Nordhorn-Blanke 3', text: '5' }]
+    - [{ url: '?staffel=1861&r=1#p8201x8254', title: 'gegen SV Kaponier Vechta', text: '5' }]
     - {  }
     - {  }
     - 6
@@ -38,8 +38,8 @@
     - {  }
     - [{ url: '?staffel=1861&r=2#p8355x8337', title: 'gegen SK Jever', text: '5' }]
     - {  }
-    - {  }
     - [{ url: '?staffel=1861&r=1#p8355x8334', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - {  }
     - [{ url: '?staffel=1861&r=3#p8355x8347', title: 'gegen SF Spelle', text: '5' }]
     - {  }
     - 5
@@ -70,8 +70,8 @@
     - xxx
     - {  }
     - {  }
-    - {  }
     - [{ url: '?staffel=1861&r=3#p8313x8334', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - {  }
     - [{ url: '?staffel=1861&r=2#p8313x8347', title: 'gegen SF Spelle', text: 2½ }]
     - {  }
     - 3
@@ -102,28 +102,12 @@
     - {  }
     - {  }
     - xxx
-    - [{ url: '?staffel=1861&r=2#p8327x8254', title: 'gegen SV Kaponier Vechta', text: 3½ }]
     - {  }
+    - [{ url: '?staffel=1861&r=2#p8327x8254', title: 'gegen SV Kaponier Vechta', text: 3½ }]
     - {  }
     - [{ url: '?staffel=1861&r=1#p8327x8315', title: 'gegen SF Quakenbrück', text: '6' }]
     - 2
     - '12'
-    - ''
--
-    - '7.'
-    - { text: 'SV Kaponier Vechta', url: '?mannschaft=8254', title: 'Zur Mannschaftsaufstellung' }
-    - [{ url: '?staffel=1861&r=1#p8254x8201', title: 'gegen SV Osnabrück v. 1919 2', text: '3' }]
-    - {  }
-    - {  }
-    - {  }
-    - {  }
-    - [{ url: '?staffel=1861&r=2#p8254x8327', title: 'gegen SV Hellern 2', text: 4½ }]
-    - xxx
-    - {  }
-    - {  }
-    - [{ url: '?staffel=1861&r=3#p8254x8315', title: 'gegen SF Quakenbrück', text: 3½ }]
-    - 2
-    - '11'
     - ''
 -
     - '7.'
@@ -134,10 +118,26 @@
     - [{ url: '?staffel=1861&r=3#p8334x8313', title: 'gegen SK Union Oldenburg 2', text: '4' }]
     - {  }
     - {  }
-    - {  }
     - xxx
     - {  }
     - {  }
+    - {  }
+    - 2
+    - '11'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Kaponier Vechta', url: '?mannschaft=8254', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1861&r=1#p8254x8201', title: 'gegen SV Osnabrück v. 1919 2', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1861&r=2#p8254x8327', title: 'gegen SV Hellern 2', text: 4½ }]
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1861&r=3#p8254x8315', title: 'gegen SF Quakenbrück', text: 3½ }]
     - 2
     - '11'
     - ''
@@ -166,8 +166,8 @@
     - {  }
     - {  }
     - [{ url: '?staffel=1861&r=1#p8315x8327', title: 'gegen SV Hellern 2', text: '2' }]
-    - [{ url: '?staffel=1861&r=3#p8315x8254', title: 'gegen SV Kaponier Vechta', text: 4½ }]
     - {  }
+    - [{ url: '?staffel=1861&r=3#p8315x8254', title: 'gegen SV Kaponier Vechta', text: 4½ }]
     - {  }
     - xxx
     - 2
