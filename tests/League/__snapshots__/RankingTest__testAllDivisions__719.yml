@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=6180', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1478&r=6#p6180x6138', title: 'gegen SK Lehrte 7', text: 5½ }]
+    - [{ url: '?staffel=1478&r=4#p6180x6145', title: 'gegen Hannover 96 3', text: 6½ }]
+    - [{ url: '?staffel=1478&r=5#p6180x6207', title: 'gegen SG WB Eilenriede 4', text: 5½ }]
+    - {  }
+    - 6
+    - 17½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte 7', url: '?mannschaft=6138', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1478&r=6#p6138x6180', title: 'gegen SK Anderten 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1478&r=7#p6138x6145', title: 'gegen Hannover 96 3', text: '8' }]
+    - {  }
+    - [{ url: '?staffel=1478&r=4#p6138x6130', title: 'gegen Hannover 96 4', text: '5' }]
+    - 4
+    - 15½
+    - ''
+-
+    - '3.'
+    - { text: 'Hannover 96 3', url: '?mannschaft=6145', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1478&r=4#p6145x6180', title: 'gegen SK Anderten 2', text: 1½ }]
+    - [{ url: '?staffel=1478&r=7#p6145x6138', title: 'gegen SK Lehrte 7', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1478&r=2#p6145x6207', title: 'gegen SG WB Eilenriede 4', text: '5' }]
+    - [{ url: '?staffel=1478&r=6#p6145x6130', title: 'gegen Hannover 96 4', text: 7½ }]
+    - 4
+    - '14'
+    - ''
+-
+    - '4.'
+    - { text: 'SG WB Eilenriede 4', url: '?mannschaft=6207', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1478&r=5#p6207x6180', title: 'gegen SK Anderten 2', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1478&r=2#p6207x6145', title: 'gegen Hannover 96 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1478&r=7#p6207x6130', title: 'gegen Hannover 96 4', text: '8' }]
+    - 2
+    - 13½
+    - ''
+-
+    - '5.'
+    - { text: 'Hannover 96 4', url: '?mannschaft=6130', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1478&r=4#p6130x6138', title: 'gegen SK Lehrte 7', text: '3' }]
+    - [{ url: '?staffel=1478&r=6#p6130x6145', title: 'gegen Hannover 96 3', text: ½ }]
+    - [{ url: '?staffel=1478&r=7#p6130x6207', title: 'gegen SG WB Eilenriede 4', text: '0' }]
+    - xxx
+    - 0
+    - 3½
+    - ''

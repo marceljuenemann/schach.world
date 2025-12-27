@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'HSK Lister Turm 5', url: '?mannschaft=6203', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1421&r=4#p6203x6173', title: 'gegen ST Langenhagen 2', text: 3½ }]
+    - [{ url: '?staffel=1421&r=9#p6203x6121', title: 'gegen SV Laatzen 2', text: '0' }]
+    - [{ url: '?staffel=1421&r=1#p6203x6205', title: 'gegen SG WB Eilenriede 3', text: 4½ }]
+    - [{ url: '?staffel=1421&r=7#p6203x6136', title: 'gegen SK Lehrte 5', text: 6½ }]
+    - [{ url: '?staffel=1421&r=6#p6203x6031', title: 'gegen SC Uetze-Hänigsen 2', text: 7½ }]
+    - {  }
+    - [{ url: '?staffel=1421&r=3#p6203x6055', title: 'gegen SV FB Wedemark 2', text: '5' }]
+    - [{ url: '?staffel=1421&r=2#p6203x6154', title: 'gegen TSV Pattensen', text: 5½ }]
+    - [{ url: '?staffel=1421&r=5#p6203x6126', title: 'gegen Hannover 96 2', text: 5½ }]
+    - 12
+    - '38'
+    - ''
+-
+    - '2.'
+    - { text: 'ST Langenhagen 2', url: '?mannschaft=6173', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1421&r=4#p6173x6203', title: 'gegen HSK Lister Turm 5', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1421&r=3#p6173x6121', title: 'gegen SV Laatzen 2', text: 4½ }]
+    - [{ url: '?staffel=1421&r=7#p6173x6205', title: 'gegen SG WB Eilenriede 3', text: 4½ }]
+    - [{ url: '?staffel=1421&r=1#p6173x6136', title: 'gegen SK Lehrte 5', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1421&r=2#p6173x6151', title: 'gegen SG Döhren-Gleid 2', text: 2½ }]
+    - [{ url: '?staffel=1421&r=6#p6173x6055', title: 'gegen SV FB Wedemark 2', text: 4½ }]
+    - [{ url: '?staffel=1421&r=5#p6173x6154', title: 'gegen TSV Pattensen', text: 5½ }]
+    - {  }
+    - 11
+    - '30'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Laatzen 2', url: '?mannschaft=6121', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1421&r=9#p6121x6203', title: 'gegen HSK Lister Turm 5', text: '0' }]
+    - [{ url: '?staffel=1421&r=3#p6121x6173', title: 'gegen ST Langenhagen 2', text: 3½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1421&r=6#p6121x6136', title: 'gegen SK Lehrte 5', text: 5½ }]
+    - [{ url: '?staffel=1421&r=5#p6121x6031', title: 'gegen SC Uetze-Hänigsen 2', text: 3½ }]
+    - [{ url: '?staffel=1421&r=7#p6121x6151', title: 'gegen SG Döhren-Gleid 2', text: '6' }]
+    - [{ url: '?staffel=1421&r=2#p6121x6055', title: 'gegen SV FB Wedemark 2', text: 6½ }]
+    - [{ url: '?staffel=1421&r=1#p6121x6154', title: 'gegen TSV Pattensen', text: 4½ }]
+    - [{ url: '?staffel=1421&r=4#p6121x6126', title: 'gegen Hannover 96 2', text: '6' }]
+    - 10
+    - 35½
+    - ''
+-
+    - '4.'
+    - { text: 'SG WB Eilenriede 3', url: '?mannschaft=6205', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1421&r=1#p6205x6203', title: 'gegen HSK Lister Turm 5', text: 3½ }]
+    - [{ url: '?staffel=1421&r=7#p6205x6173', title: 'gegen ST Langenhagen 2', text: 3½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1421&r=4#p6205x6136', title: 'gegen SK Lehrte 5', text: '3' }]
+    - [{ url: '?staffel=1421&r=2#p6205x6031', title: 'gegen SC Uetze-Hänigsen 2', text: 4½ }]
+    - [{ url: '?staffel=1421&r=6#p6205x6151', title: 'gegen SG Döhren-Gleid 2', text: '5' }]
+    - [{ url: '?staffel=1421&r=5#p6205x6055', title: 'gegen SV FB Wedemark 2', text: '6' }]
+    - [{ url: '?staffel=1421&r=3#p6205x6154', title: 'gegen TSV Pattensen', text: 5½ }]
+    - {  }
+    - 8
+    - '31'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 5', url: '?mannschaft=6136', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1421&r=7#p6136x6203', title: 'gegen HSK Lister Turm 5', text: 1½ }]
+    - [{ url: '?staffel=1421&r=1#p6136x6173', title: 'gegen ST Langenhagen 2', text: '4' }]
+    - [{ url: '?staffel=1421&r=6#p6136x6121', title: 'gegen SV Laatzen 2', text: 2½ }]
+    - [{ url: '?staffel=1421&r=4#p6136x6205', title: 'gegen SG WB Eilenriede 3', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1421&r=3#p6136x6031', title: 'gegen SC Uetze-Hänigsen 2', text: '4' }]
+    - [{ url: '?staffel=1421&r=5#p6136x6151', title: 'gegen SG Döhren-Gleid 2', text: 5½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1421&r=2#p6136x6126', title: 'gegen Hannover 96 2', text: 5½ }]
+    - 8
+    - '28'
+    - ''
+-
+    - '6.'
+    - { text: 'SC Uetze-Hänigsen 2', url: '?mannschaft=6031', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1421&r=6#p6031x6203', title: 'gegen HSK Lister Turm 5', text: ½ }]
+    - {  }
+    - [{ url: '?staffel=1421&r=5#p6031x6121', title: 'gegen SV Laatzen 2', text: 4½ }]
+    - [{ url: '?staffel=1421&r=2#p6031x6205', title: 'gegen SG WB Eilenriede 3', text: 3½ }]
+    - [{ url: '?staffel=1421&r=3#p6031x6136', title: 'gegen SK Lehrte 5', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1421&r=4#p6031x6151', title: 'gegen SG Döhren-Gleid 2', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1421&r=1#p6031x6126', title: 'gegen Hannover 96 2', text: 5½ }]
+    - 6
+    - '22'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Döhren-Gleid 2', url: '?mannschaft=6151', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1421&r=2#p6151x6173', title: 'gegen ST Langenhagen 2', text: 5½ }]
+    - [{ url: '?staffel=1421&r=7#p6151x6121', title: 'gegen SV Laatzen 2', text: '2' }]
+    - [{ url: '?staffel=1421&r=6#p6151x6205', title: 'gegen SG WB Eilenriede 3', text: '3' }]
+    - [{ url: '?staffel=1421&r=5#p6151x6136', title: 'gegen SK Lehrte 5', text: 2½ }]
+    - [{ url: '?staffel=1421&r=4#p6151x6031', title: 'gegen SC Uetze-Hänigsen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1421&r=1#p6151x6055', title: 'gegen SV FB Wedemark 2', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1421&r=3#p6151x6126', title: 'gegen Hannover 96 2', text: '5' }]
+    - 5
+    - 24½
+    - ''
+-
+    - '8.'
+    - { text: 'SV FB Wedemark 2', url: '?mannschaft=6055', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1421&r=3#p6055x6203', title: 'gegen HSK Lister Turm 5', text: '3' }]
+    - [{ url: '?staffel=1421&r=6#p6055x6173', title: 'gegen ST Langenhagen 2', text: 3½ }]
+    - [{ url: '?staffel=1421&r=2#p6055x6121', title: 'gegen SV Laatzen 2', text: 1½ }]
+    - [{ url: '?staffel=1421&r=5#p6055x6205', title: 'gegen SG WB Eilenriede 3', text: '2' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1421&r=1#p6055x6151', title: 'gegen SG Döhren-Gleid 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1421&r=4#p6055x6154', title: 'gegen TSV Pattensen', text: 3½ }]
+    - [{ url: '?staffel=1421&r=7#p6055x6126', title: 'gegen Hannover 96 2', text: 5½ }]
+    - 4
+    - 24½
+    - ''
+-
+    - '9.'
+    - { text: 'TSV Pattensen', url: '?mannschaft=6154', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1421&r=2#p6154x6203', title: 'gegen HSK Lister Turm 5', text: 2½ }]
+    - [{ url: '?staffel=1421&r=5#p6154x6173', title: 'gegen ST Langenhagen 2', text: 2½ }]
+    - [{ url: '?staffel=1421&r=1#p6154x6121', title: 'gegen SV Laatzen 2', text: 3½ }]
+    - [{ url: '?staffel=1421&r=3#p6154x6205', title: 'gegen SG WB Eilenriede 3', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1421&r=4#p6154x6055', title: 'gegen SV FB Wedemark 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1421&r=6#p6154x6126', title: 'gegen Hannover 96 2', text: '4' }]
+    - 3
+    - 19½
+    - ''
+-
+    - '10.'
+    - { text: 'Hannover 96 2', url: '?mannschaft=6126', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1421&r=5#p6126x6203', title: 'gegen HSK Lister Turm 5', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1421&r=4#p6126x6121', title: 'gegen SV Laatzen 2', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1421&r=2#p6126x6136', title: 'gegen SK Lehrte 5', text: 2½ }]
+    - [{ url: '?staffel=1421&r=1#p6126x6031', title: 'gegen SC Uetze-Hänigsen 2', text: 2½ }]
+    - [{ url: '?staffel=1421&r=3#p6126x6151', title: 'gegen SG Döhren-Gleid 2', text: '3' }]
+    - [{ url: '?staffel=1421&r=7#p6126x6055', title: 'gegen SV FB Wedemark 2', text: 2½ }]
+    - [{ url: '?staffel=1421&r=6#p6126x6154', title: 'gegen TSV Pattensen', text: '4' }]
+    - xxx
+    - 1
+    - '19'
+    - ''

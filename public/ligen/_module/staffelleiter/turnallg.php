@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Turniereinstellungen
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -144,6 +144,6 @@
 ?>
 
   <input type='submit' name='savebutton' class='sed_submit' value='Speichern' />
-  <input type='button' class='sed_submit' value='Abbrechen' onclick="location=<? echo "'?admin=desktop-$admin[userid]-$admin[session]'"; ?>;" />
+  <input type='button' class='sed_submit' value='Abbrechen' onclick="location=<?php echo "'?admin=desktop-$admin[userid]-$admin[session]'"; ?>;" />
 </div></form>
 

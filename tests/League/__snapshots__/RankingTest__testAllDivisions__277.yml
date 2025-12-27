@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Delmenhorster SK 2', url: '?mannschaft=2896', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=711&r=2#p2896x2889', title: 'gegen MTV Tostedt', text: 4½ }]
+    - [{ url: '?staffel=711&r=7#p2896x2923', title: 'gegen SV Werder Bremen 3', text: 4½ }]
+    - [{ url: '?staffel=711&r=4#p2896x2893', title: 'gegen SK Rotenburg', text: '5' }]
+    - [{ url: '?staffel=711&r=1#p2896x2922', title: 'gegen SG Niederelbe', text: 4½ }]
+    - [{ url: '?staffel=711&r=6#p2896x2880', title: 'gegen SF Lilienthal', text: 3½ }]
+    - [{ url: '?staffel=711&r=8#p2896x2866', title: 'gegen Findorffer SF', text: 4½ }]
+    - [{ url: '?staffel=711&r=5#p2896x2924', title: 'gegen SK Hermannsburg', text: '4' }]
+    - [{ url: '?staffel=711&r=3#p2896x2877', title: 'gegen TuS Syke', text: 4½ }]
+    - [{ url: '?staffel=711&r=9#p2896x2860', title: 'gegen SF Buxtehude', text: '6' }]
+    - 15
+    - '41'
+    - ''
+-
+    - '2.'
+    - { text: 'MTV Tostedt', url: '?mannschaft=2889', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=711&r=2#p2889x2896', title: 'gegen Delmenhorster SK 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=711&r=8#p2889x2923', title: 'gegen SV Werder Bremen 3', text: '4' }]
+    - [{ url: '?staffel=711&r=7#p2889x2893', title: 'gegen SK Rotenburg', text: 4½ }]
+    - [{ url: '?staffel=711&r=3#p2889x2922', title: 'gegen SG Niederelbe', text: 4½ }]
+    - [{ url: '?staffel=711&r=1#p2889x2880', title: 'gegen SF Lilienthal', text: 4½ }]
+    - [{ url: '?staffel=711&r=5#p2889x2866', title: 'gegen Findorffer SF', text: '5' }]
+    - [{ url: '?staffel=711&r=4#p2889x2924', title: 'gegen SK Hermannsburg', text: 5½ }]
+    - [{ url: '?staffel=711&r=9#p2889x2877', title: 'gegen TuS Syke', text: '3' }]
+    - [{ url: '?staffel=711&r=6#p2889x2860', title: 'gegen SF Buxtehude', text: 4½ }]
+    - 13
+    - '39'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Werder Bremen 3', url: '?mannschaft=2923', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=711&r=7#p2923x2896', title: 'gegen Delmenhorster SK 2', text: 3½ }]
+    - [{ url: '?staffel=711&r=8#p2923x2889', title: 'gegen MTV Tostedt', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=711&r=2#p2923x2893', title: 'gegen SK Rotenburg', text: 4½ }]
+    - [{ url: '?staffel=711&r=9#p2923x2922', title: 'gegen SG Niederelbe', text: 2½ }]
+    - [{ url: '?staffel=711&r=4#p2923x2880', title: 'gegen SF Lilienthal', text: 3½ }]
+    - [{ url: '?staffel=711&r=6#p2923x2866', title: 'gegen Findorffer SF', text: 4½ }]
+    - [{ url: '?staffel=711&r=3#p2923x2924', title: 'gegen SK Hermannsburg', text: '5' }]
+    - [{ url: '?staffel=711&r=5#p2923x2877', title: 'gegen TuS Syke', text: 4½ }]
+    - [{ url: '?staffel=711&r=1#p2923x2860', title: 'gegen SF Buxtehude', text: 5½ }]
+    - 11
+    - 37½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Rotenburg', url: '?mannschaft=2893', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=711&r=4#p2893x2896', title: 'gegen Delmenhorster SK 2', text: '3' }]
+    - [{ url: '?staffel=711&r=7#p2893x2889', title: 'gegen MTV Tostedt', text: 3½ }]
+    - [{ url: '?staffel=711&r=2#p2893x2923', title: 'gegen SV Werder Bremen 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=711&r=6#p2893x2922', title: 'gegen SG Niederelbe', text: '4' }]
+    - [{ url: '?staffel=711&r=5#p2893x2880', title: 'gegen SF Lilienthal', text: '5' }]
+    - [{ url: '?staffel=711&r=3#p2893x2866', title: 'gegen Findorffer SF', text: 3½ }]
+    - [{ url: '?staffel=711&r=9#p2893x2924', title: 'gegen SK Hermannsburg', text: '5' }]
+    - [{ url: '?staffel=711&r=1#p2893x2877', title: 'gegen TuS Syke', text: '5' }]
+    - [{ url: '?staffel=711&r=8#p2893x2860', title: 'gegen SF Buxtehude', text: 5½ }]
+    - 9
+    - '38'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Niederelbe', url: '?mannschaft=2922', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=711&r=1#p2922x2896', title: 'gegen Delmenhorster SK 2', text: 3½ }]
+    - [{ url: '?staffel=711&r=3#p2922x2889', title: 'gegen MTV Tostedt', text: 3½ }]
+    - [{ url: '?staffel=711&r=9#p2922x2923', title: 'gegen SV Werder Bremen 3', text: 5½ }]
+    - [{ url: '?staffel=711&r=6#p2922x2893', title: 'gegen SK Rotenburg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=711&r=7#p2922x2880', title: 'gegen SF Lilienthal', text: 4½ }]
+    - [{ url: '?staffel=711&r=4#p2922x2866', title: 'gegen Findorffer SF', text: 4½ }]
+    - [{ url: '?staffel=711&r=2#p2922x2924', title: 'gegen SK Hermannsburg', text: 3½ }]
+    - [{ url: '?staffel=711&r=8#p2922x2877', title: 'gegen TuS Syke', text: '3' }]
+    - [{ url: '?staffel=711&r=5#p2922x2860', title: 'gegen SF Buxtehude', text: 4½ }]
+    - 9
+    - 36½
+    - ''
+-
+    - '6.'
+    - { text: 'SF Lilienthal', url: '?mannschaft=2880', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=711&r=6#p2880x2896', title: 'gegen Delmenhorster SK 2', text: 4½ }]
+    - [{ url: '?staffel=711&r=1#p2880x2889', title: 'gegen MTV Tostedt', text: 3½ }]
+    - [{ url: '?staffel=711&r=4#p2880x2923', title: 'gegen SV Werder Bremen 3', text: 4½ }]
+    - [{ url: '?staffel=711&r=5#p2880x2893', title: 'gegen SK Rotenburg', text: '3' }]
+    - [{ url: '?staffel=711&r=7#p2880x2922', title: 'gegen SG Niederelbe', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=711&r=9#p2880x2866', title: 'gegen Findorffer SF', text: 3½ }]
+    - [{ url: '?staffel=711&r=8#p2880x2924', title: 'gegen SK Hermannsburg', text: 2½ }]
+    - [{ url: '?staffel=711&r=2#p2880x2877', title: 'gegen TuS Syke', text: '7' }]
+    - [{ url: '?staffel=711&r=3#p2880x2860', title: 'gegen SF Buxtehude', text: 5½ }]
+    - 8
+    - 37½
+    - ''
+-
+    - '7.'
+    - { text: 'Findorffer SF', url: '?mannschaft=2866', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=711&r=8#p2866x2896', title: 'gegen Delmenhorster SK 2', text: 3½ }]
+    - [{ url: '?staffel=711&r=5#p2866x2889', title: 'gegen MTV Tostedt', text: '3' }]
+    - [{ url: '?staffel=711&r=6#p2866x2923', title: 'gegen SV Werder Bremen 3', text: 3½ }]
+    - [{ url: '?staffel=711&r=3#p2866x2893', title: 'gegen SK Rotenburg', text: 4½ }]
+    - [{ url: '?staffel=711&r=4#p2866x2922', title: 'gegen SG Niederelbe', text: 3½ }]
+    - [{ url: '?staffel=711&r=9#p2866x2880', title: 'gegen SF Lilienthal', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=711&r=1#p2866x2924', title: 'gegen SK Hermannsburg', text: 5½ }]
+    - [{ url: '?staffel=711&r=7#p2866x2877', title: 'gegen TuS Syke', text: '4' }]
+    - [{ url: '?staffel=711&r=2#p2866x2860', title: 'gegen SF Buxtehude', text: '3' }]
+    - 7
+    - '35'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Hermannsburg', url: '?mannschaft=2924', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=711&r=5#p2924x2896', title: 'gegen Delmenhorster SK 2', text: '4' }]
+    - [{ url: '?staffel=711&r=4#p2924x2889', title: 'gegen MTV Tostedt', text: 2½ }]
+    - [{ url: '?staffel=711&r=3#p2924x2923', title: 'gegen SV Werder Bremen 3', text: '3' }]
+    - [{ url: '?staffel=711&r=9#p2924x2893', title: 'gegen SK Rotenburg', text: '3' }]
+    - [{ url: '?staffel=711&r=2#p2924x2922', title: 'gegen SG Niederelbe', text: 4½ }]
+    - [{ url: '?staffel=711&r=8#p2924x2880', title: 'gegen SF Lilienthal', text: 5½ }]
+    - [{ url: '?staffel=711&r=1#p2924x2866', title: 'gegen Findorffer SF', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=711&r=6#p2924x2877', title: 'gegen TuS Syke', text: '3' }]
+    - [{ url: '?staffel=711&r=7#p2924x2860', title: 'gegen SF Buxtehude', text: '6' }]
+    - 7
+    - '34'
+    - ''
+-
+    - '9.'
+    - { text: 'TuS Syke', url: '?mannschaft=2877', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=711&r=3#p2877x2896', title: 'gegen Delmenhorster SK 2', text: 3½ }]
+    - [{ url: '?staffel=711&r=9#p2877x2889', title: 'gegen MTV Tostedt', text: '5' }]
+    - [{ url: '?staffel=711&r=5#p2877x2923', title: 'gegen SV Werder Bremen 3', text: 3½ }]
+    - [{ url: '?staffel=711&r=1#p2877x2893', title: 'gegen SK Rotenburg', text: '3' }]
+    - [{ url: '?staffel=711&r=8#p2877x2922', title: 'gegen SG Niederelbe', text: '5' }]
+    - [{ url: '?staffel=711&r=2#p2877x2880', title: 'gegen SF Lilienthal', text: '1' }]
+    - [{ url: '?staffel=711&r=7#p2877x2866', title: 'gegen Findorffer SF', text: '4' }]
+    - [{ url: '?staffel=711&r=6#p2877x2924', title: 'gegen SK Hermannsburg', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=711&r=4#p2877x2860', title: 'gegen SF Buxtehude', text: 3½ }]
+    - 7
+    - 33½
+    - ''
+-
+    - '10.'
+    - { text: 'SF Buxtehude', url: '?mannschaft=2860', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=711&r=9#p2860x2896', title: 'gegen Delmenhorster SK 2', text: '2' }]
+    - [{ url: '?staffel=711&r=6#p2860x2889', title: 'gegen MTV Tostedt', text: 3½ }]
+    - [{ url: '?staffel=711&r=1#p2860x2923', title: 'gegen SV Werder Bremen 3', text: 2½ }]
+    - [{ url: '?staffel=711&r=8#p2860x2893', title: 'gegen SK Rotenburg', text: 2½ }]
+    - [{ url: '?staffel=711&r=5#p2860x2922', title: 'gegen SG Niederelbe', text: 3½ }]
+    - [{ url: '?staffel=711&r=3#p2860x2880', title: 'gegen SF Lilienthal', text: 2½ }]
+    - [{ url: '?staffel=711&r=2#p2860x2866', title: 'gegen Findorffer SF', text: '5' }]
+    - [{ url: '?staffel=711&r=7#p2860x2924', title: 'gegen SK Hermannsburg', text: '2' }]
+    - [{ url: '?staffel=711&r=4#p2860x2877', title: 'gegen TuS Syke', text: 4½ }]
+    - xxx
+    - 4
+    - '28'
+    - ''

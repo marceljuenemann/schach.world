@@ -1,4 +1,4 @@
-<?
+<?php
 require_once ( "../../libs/phpmailer/class.phpmailer.php" );
 require_once ( "../../libs/phpmailer/class.smtp.php" );
 require_once ( "spieltag.inc.php" );

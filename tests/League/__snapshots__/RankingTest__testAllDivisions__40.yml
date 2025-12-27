@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'HSK / Post SV', url: '?mannschaft=691', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=439&r=5#p691x695', title: 'gegen SVg Salzgitter', text: 4½ }]
+    - [{ url: '?staffel=439&r=9#p691x697', title: 'gegen Bad Salzdetfurth', text: '6' }]
+    - [{ url: '?staffel=439&r=3#p691x698', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=439&r=4#p691x694', title: 'gegen SV Berenbostel', text: 4½ }]
+    - [{ url: '?staffel=439&r=1#p691x693', title: 'gegen SK Lehrte', text: 6½ }]
+    - [{ url: '?staffel=439&r=2#p691x690', title: 'gegen SK Ricklingen', text: '5' }]
+    - [{ url: '?staffel=439&r=6#p691x696', title: 'gegen SVg Salzgitter 2', text: '5' }]
+    - [{ url: '?staffel=439&r=7#p691x699', title: 'gegen Wolfenbüttel', text: '7' }]
+    - [{ url: '?staffel=439&r=8#p691x692', title: 'gegen ST Langenhagen', text: '7' }]
+    - 18
+    - '50'
+    - ''
+-
+    - '2.'
+    - { text: 'SVg Salzgitter', url: '?mannschaft=695', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=439&r=5#p695x691', title: 'gegen HSK / Post SV', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=439&r=1#p695x697', title: 'gegen Bad Salzdetfurth', text: '5' }]
+    - [{ url: '?staffel=439&r=8#p695x698', title: 'gegen SC Wolfsburg', text: '5' }]
+    - [{ url: '?staffel=439&r=2#p695x694', title: 'gegen SV Berenbostel', text: 6½ }]
+    - [{ url: '?staffel=439&r=7#p695x693', title: 'gegen SK Lehrte', text: 4½ }]
+    - [{ url: '?staffel=439&r=9#p695x690', title: 'gegen SK Ricklingen', text: 4½ }]
+    - [{ url: '?staffel=439&r=3#p695x696', title: 'gegen SVg Salzgitter 2', text: 5½ }]
+    - [{ url: '?staffel=439&r=6#p695x699', title: 'gegen Wolfenbüttel', text: '7' }]
+    - [{ url: '?staffel=439&r=4#p695x692', title: 'gegen ST Langenhagen', text: '7' }]
+    - 16
+    - 48½
+    - ''
+-
+    - '3.'
+    - { text: 'Bad Salzdetfurth', url: '?mannschaft=697', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=439&r=9#p697x691', title: 'gegen HSK / Post SV', text: '2' }]
+    - [{ url: '?staffel=439&r=1#p697x695', title: 'gegen SVg Salzgitter', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=439&r=7#p697x698', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=439&r=8#p697x694', title: 'gegen SV Berenbostel', text: '4' }]
+    - [{ url: '?staffel=439&r=4#p697x693', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=439&r=6#p697x690', title: 'gegen SK Ricklingen', text: '5' }]
+    - [{ url: '?staffel=439&r=5#p697x696', title: 'gegen SVg Salzgitter 2', text: 5½ }]
+    - [{ url: '?staffel=439&r=2#p697x699', title: 'gegen Wolfenbüttel', text: '6' }]
+    - [{ url: '?staffel=439&r=3#p697x692', title: 'gegen ST Langenhagen', text: '7' }]
+    - 12
+    - '41'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Wolfsburg', url: '?mannschaft=698', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=439&r=3#p698x691', title: 'gegen HSK / Post SV', text: 3½ }]
+    - [{ url: '?staffel=439&r=8#p698x695', title: 'gegen SVg Salzgitter', text: '3' }]
+    - [{ url: '?staffel=439&r=7#p698x697', title: 'gegen Bad Salzdetfurth', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=439&r=1#p698x694', title: 'gegen SV Berenbostel', text: 5½ }]
+    - [{ url: '?staffel=439&r=9#p698x693', title: 'gegen SK Lehrte', text: 5½ }]
+    - [{ url: '?staffel=439&r=4#p698x690', title: 'gegen SK Ricklingen', text: 3½ }]
+    - [{ url: '?staffel=439&r=2#p698x696', title: 'gegen SVg Salzgitter 2', text: 4½ }]
+    - [{ url: '?staffel=439&r=5#p698x699', title: 'gegen Wolfenbüttel', text: 4½ }]
+    - [{ url: '?staffel=439&r=6#p698x692', title: 'gegen ST Langenhagen', text: '7' }]
+    - 10
+    - 40½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Berenbostel', url: '?mannschaft=694', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=439&r=4#p694x691', title: 'gegen HSK / Post SV', text: 3½ }]
+    - [{ url: '?staffel=439&r=2#p694x695', title: 'gegen SVg Salzgitter', text: 1½ }]
+    - [{ url: '?staffel=439&r=8#p694x697', title: 'gegen Bad Salzdetfurth', text: '4' }]
+    - [{ url: '?staffel=439&r=1#p694x698', title: 'gegen SC Wolfsburg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=439&r=6#p694x693', title: 'gegen SK Lehrte', text: 4½ }]
+    - [{ url: '?staffel=439&r=3#p694x690', title: 'gegen SK Ricklingen', text: 5½ }]
+    - [{ url: '?staffel=439&r=7#p694x696', title: 'gegen SVg Salzgitter 2', text: '5' }]
+    - [{ url: '?staffel=439&r=9#p694x699', title: 'gegen Wolfenbüttel', text: 3½ }]
+    - [{ url: '?staffel=439&r=5#p694x692', title: 'gegen ST Langenhagen', text: '5' }]
+    - 9
+    - '35'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte', url: '?mannschaft=693', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=439&r=1#p693x691', title: 'gegen HSK / Post SV', text: 1½ }]
+    - [{ url: '?staffel=439&r=7#p693x695', title: 'gegen SVg Salzgitter', text: 3½ }]
+    - [{ url: '?staffel=439&r=4#p693x697', title: 'gegen Bad Salzdetfurth', text: '4' }]
+    - [{ url: '?staffel=439&r=9#p693x698', title: 'gegen SC Wolfsburg', text: 2½ }]
+    - [{ url: '?staffel=439&r=6#p693x694', title: 'gegen SV Berenbostel', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=439&r=5#p693x690', title: 'gegen SK Ricklingen', text: 2½ }]
+    - [{ url: '?staffel=439&r=8#p693x696', title: 'gegen SVg Salzgitter 2', text: 4½ }]
+    - [{ url: '?staffel=439&r=3#p693x699', title: 'gegen Wolfenbüttel', text: 4½ }]
+    - [{ url: '?staffel=439&r=2#p693x692', title: 'gegen ST Langenhagen', text: '6' }]
+    - 7
+    - 32½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=690', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=439&r=2#p690x691', title: 'gegen HSK / Post SV', text: '3' }]
+    - [{ url: '?staffel=439&r=9#p690x695', title: 'gegen SVg Salzgitter', text: 3½ }]
+    - [{ url: '?staffel=439&r=6#p690x697', title: 'gegen Bad Salzdetfurth', text: '3' }]
+    - [{ url: '?staffel=439&r=4#p690x698', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=439&r=3#p690x694', title: 'gegen SV Berenbostel', text: 2½ }]
+    - [{ url: '?staffel=439&r=5#p690x693', title: 'gegen SK Lehrte', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=439&r=1#p690x696', title: 'gegen SVg Salzgitter 2', text: 2½ }]
+    - [{ url: '?staffel=439&r=8#p690x699', title: 'gegen Wolfenbüttel', text: 3½ }]
+    - [{ url: '?staffel=439&r=7#p690x692', title: 'gegen ST Langenhagen', text: 4½ }]
+    - 6
+    - 32½
+    - ''
+-
+    - '8.'
+    - { text: 'SVg Salzgitter 2', url: '?mannschaft=696', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=439&r=6#p696x691', title: 'gegen HSK / Post SV', text: '3' }]
+    - [{ url: '?staffel=439&r=3#p696x695', title: 'gegen SVg Salzgitter', text: 2½ }]
+    - [{ url: '?staffel=439&r=5#p696x697', title: 'gegen Bad Salzdetfurth', text: 2½ }]
+    - [{ url: '?staffel=439&r=2#p696x698', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - [{ url: '?staffel=439&r=7#p696x694', title: 'gegen SV Berenbostel', text: '3' }]
+    - [{ url: '?staffel=439&r=8#p696x693', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=439&r=1#p696x690', title: 'gegen SK Ricklingen', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=439&r=4#p696x699', title: 'gegen Wolfenbüttel', text: 4½ }]
+    - [{ url: '?staffel=439&r=9#p696x692', title: 'gegen ST Langenhagen', text: 3½ }]
+    - 4
+    - 31½
+    - ''
+-
+    - '9.'
+    - { text: Wolfenbüttel, url: '?mannschaft=699', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=439&r=7#p699x691', title: 'gegen HSK / Post SV', text: '1' }]
+    - [{ url: '?staffel=439&r=6#p699x695', title: 'gegen SVg Salzgitter', text: '1' }]
+    - [{ url: '?staffel=439&r=2#p699x697', title: 'gegen Bad Salzdetfurth', text: '2' }]
+    - [{ url: '?staffel=439&r=5#p699x698', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - [{ url: '?staffel=439&r=9#p699x694', title: 'gegen SV Berenbostel', text: 4½ }]
+    - [{ url: '?staffel=439&r=3#p699x693', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=439&r=8#p699x690', title: 'gegen SK Ricklingen', text: 4½ }]
+    - [{ url: '?staffel=439&r=4#p699x696', title: 'gegen SVg Salzgitter 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=439&r=1#p699x692', title: 'gegen ST Langenhagen', text: '3' }]
+    - 4
+    - 26½
+    - ''
+-
+    - '10.'
+    - { text: 'ST Langenhagen', url: '?mannschaft=692', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=439&r=8#p692x691', title: 'gegen HSK / Post SV', text: '1' }]
+    - [{ url: '?staffel=439&r=4#p692x695', title: 'gegen SVg Salzgitter', text: '1' }]
+    - [{ url: '?staffel=439&r=3#p692x697', title: 'gegen Bad Salzdetfurth', text: '1' }]
+    - [{ url: '?staffel=439&r=6#p692x698', title: 'gegen SC Wolfsburg', text: '1' }]
+    - [{ url: '?staffel=439&r=5#p692x694', title: 'gegen SV Berenbostel', text: '3' }]
+    - [{ url: '?staffel=439&r=2#p692x693', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=439&r=7#p692x690', title: 'gegen SK Ricklingen', text: 3½ }]
+    - [{ url: '?staffel=439&r=9#p692x696', title: 'gegen SVg Salzgitter 2', text: 4½ }]
+    - [{ url: '?staffel=439&r=1#p692x699', title: 'gegen Wolfenbüttel', text: '5' }]
+    - xxx
+    - 4
+    - '22'
+    - ''

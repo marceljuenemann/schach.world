@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'ESV Göttingen 3', url: '?mannschaft=3354', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=829&r=1#p3354x3415', title: 'gegen SK Gronau 2', text: 2½ }]
+    - [{ url: '?staffel=829&r=3#p3354x3380', title: 'gegen SG Holzminden 3', text: '4' }]
+    - [{ url: '?staffel=829&r=5#p3354x3687', title: 'gegen KSV Rochade GÖ 2', text: '3' }]
+    - [{ url: '?staffel=829&r=4#p3354x3689', title: 'gegen Hildesheimer SV 4', text: '4' }]
+    - [{ url: '?staffel=829&r=2#p3354x3688', title: 'gegen KSV Rochade GÖ 4', text: '4' }]
+    - 10
+    - 17½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SK Gronau 2', url: '?mannschaft=3415', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=829&r=1#p3415x3354', title: 'gegen ESV Göttingen 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=829&r=2#p3415x3380', title: 'gegen SG Holzminden 3', text: '2' }]
+    - [{ url: '?staffel=829&r=3#p3415x3687', title: 'gegen KSV Rochade GÖ 2', text: 2½ }]
+    - [{ url: '?staffel=829&r=5#p3415x3689', title: 'gegen Hildesheimer SV 4', text: 2½ }]
+    - [{ url: '?staffel=829&r=4#p3415x3688', title: 'gegen KSV Rochade GÖ 4', text: '4' }]
+    - 7
+    - 12½
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SG Holzminden 3', url: '?mannschaft=3380', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=829&r=3#p3380x3354', title: 'gegen ESV Göttingen 3', text: '0' }]
+    - [{ url: '?staffel=829&r=2#p3380x3415', title: 'gegen SK Gronau 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=829&r=4#p3380x3687', title: 'gegen KSV Rochade GÖ 2', text: '3' }]
+    - [{ url: '?staffel=829&r=1#p3380x3689', title: 'gegen Hildesheimer SV 4', text: '2' }]
+    - [{ url: '?staffel=829&r=5#p3380x3688', title: 'gegen KSV Rochade GÖ 4', text: '3' }]
+    - 6
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'KSV Rochade GÖ 2', url: '?mannschaft=3687', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=829&r=5#p3687x3354', title: 'gegen ESV Göttingen 3', text: '1' }]
+    - [{ url: '?staffel=829&r=3#p3687x3415', title: 'gegen SK Gronau 2', text: 1½ }]
+    - [{ url: '?staffel=829&r=4#p3687x3380', title: 'gegen SG Holzminden 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=829&r=2#p3687x3689', title: 'gegen Hildesheimer SV 4', text: '4' }]
+    - [{ url: '?staffel=829&r=1#p3687x3688', title: 'gegen KSV Rochade GÖ 4', text: '3' }]
+    - 4
+    - 10½
+    - ''
+-
+    - '5.'
+    - { text: 'Hildesheimer SV 4', url: '?mannschaft=3689', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=829&r=4#p3689x3354', title: 'gegen ESV Göttingen 3', text: '0' }]
+    - [{ url: '?staffel=829&r=5#p3689x3415', title: 'gegen SK Gronau 2', text: 1½ }]
+    - [{ url: '?staffel=829&r=1#p3689x3380', title: 'gegen SG Holzminden 3', text: '2' }]
+    - [{ url: '?staffel=829&r=2#p3689x3687', title: 'gegen KSV Rochade GÖ 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=829&r=3#p3689x3688', title: 'gegen KSV Rochade GÖ 4', text: '3' }]
+    - 3
+    - 6½
+    - ''
+-
+    - '6.'
+    - { text: 'KSV Rochade GÖ 4', url: '?mannschaft=3688', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=829&r=2#p3688x3354', title: 'gegen ESV Göttingen 3', text: '0' }]
+    - [{ url: '?staffel=829&r=4#p3688x3415', title: 'gegen SK Gronau 2', text: '0' }]
+    - [{ url: '?staffel=829&r=5#p3688x3380', title: 'gegen SG Holzminden 3', text: '1' }]
+    - [{ url: '?staffel=829&r=1#p3688x3687', title: 'gegen KSV Rochade GÖ 2', text: '1' }]
+    - [{ url: '?staffel=829&r=3#p3688x3689', title: 'gegen Hildesheimer SV 4', text: '1' }]
+    - xxx
+    - 0
+    - '3'
+    - ''

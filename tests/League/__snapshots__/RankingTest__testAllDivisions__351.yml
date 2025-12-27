@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Porz', url: '?mannschaft=3490', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=792&r=2#p3490x3403', title: 'gegen Walsum SC 72', text: '3' }]
+    - [{ url: '?staffel=792&r=1#p3490x3604', title: 'gegen Turm Hersfeld', text: 3½ }]
+    - [{ url: '?staffel=792&r=4#p3490x3578', title: 'gegen Turm Krefeld', text: 2½ }]
+    - [{ url: '?staffel=792&r=3#p3490x3479', title: 'gegen Aachener SV', text: 3½ }]
+    - [{ url: '?staffel=792&r=5#p3490x3451', title: 'gegen DSV  1854', text: 2½ }]
+    - 10
+    - '15'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Walsum SC 72', url: '?mannschaft=3403', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=792&r=2#p3403x3490', title: 'gegen SG Porz', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=792&r=4#p3403x3604', title: 'gegen Turm Hersfeld', text: '3' }]
+    - [{ url: '?staffel=792&r=3#p3403x3578', title: 'gegen Turm Krefeld', text: 1½ }]
+    - [{ url: '?staffel=792&r=5#p3403x3479', title: 'gegen Aachener SV', text: '4' }]
+    - [{ url: '?staffel=792&r=1#p3403x3451', title: 'gegen DSV  1854', text: '3' }]
+    - 6
+    - 12½
+    - ''
+-
+    - '3.'
+    - { text: 'Turm Hersfeld', url: '?mannschaft=3604', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=792&r=1#p3604x3490', title: 'gegen SG Porz', text: ½ }]
+    - [{ url: '?staffel=792&r=4#p3604x3403', title: 'gegen Walsum SC 72', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=792&r=5#p3604x3578', title: 'gegen Turm Krefeld', text: '4' }]
+    - [{ url: '?staffel=792&r=2#p3604x3479', title: 'gegen Aachener SV', text: 1½ }]
+    - [{ url: '?staffel=792&r=3#p3604x3451', title: 'gegen DSV  1854', text: '4' }]
+    - 4
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'Turm Krefeld', url: '?mannschaft=3578', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=792&r=4#p3578x3490', title: 'gegen SG Porz', text: 1½ }]
+    - [{ url: '?staffel=792&r=3#p3578x3403', title: 'gegen Walsum SC 72', text: 2½ }]
+    - [{ url: '?staffel=792&r=5#p3578x3604', title: 'gegen Turm Hersfeld', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=792&r=1#p3578x3479', title: 'gegen Aachener SV', text: 2½ }]
+    - [{ url: '?staffel=792&r=2#p3578x3451', title: 'gegen DSV  1854', text: 1½ }]
+    - 4
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'Aachener SV', url: '?mannschaft=3479', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=792&r=3#p3479x3490', title: 'gegen SG Porz', text: ½ }]
+    - [{ url: '?staffel=792&r=5#p3479x3403', title: 'gegen Walsum SC 72', text: '0' }]
+    - [{ url: '?staffel=792&r=2#p3479x3604', title: 'gegen Turm Hersfeld', text: 2½ }]
+    - [{ url: '?staffel=792&r=1#p3479x3578', title: 'gegen Turm Krefeld', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=792&r=4#p3479x3451', title: 'gegen DSV  1854', text: 2½ }]
+    - 4
+    - '7'
+    - absteiger
+-
+    - '6.'
+    - { text: 'DSV  1854', url: '?mannschaft=3451', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=792&r=5#p3451x3490', title: 'gegen SG Porz', text: 1½ }]
+    - [{ url: '?staffel=792&r=1#p3451x3403', title: 'gegen Walsum SC 72', text: '1' }]
+    - [{ url: '?staffel=792&r=3#p3451x3604', title: 'gegen Turm Hersfeld', text: '0' }]
+    - [{ url: '?staffel=792&r=2#p3451x3578', title: 'gegen Turm Krefeld', text: 2½ }]
+    - [{ url: '?staffel=792&r=4#p3451x3479', title: 'gegen Aachener SV', text: 1½ }]
+    - xxx
+    - 2
+    - 6½
+    - absteiger

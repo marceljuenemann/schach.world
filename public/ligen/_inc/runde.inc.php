@@ -1,4 +1,4 @@
-<?
+<?php
 /* Berechnung der aktuellen Runde
  *
  * Stellt sicher, dass $_GET[r] auf eine gültige Runde gesetzt ist.

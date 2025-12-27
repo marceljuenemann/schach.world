@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Goslar (Oker) 3', url: '?mannschaft=7350', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1655&r=2#p7350x7362', title: 'gegen SG Holzminden 2', text: '3' }, { url: '?staffel=1655&r=7#p7350x7362', title: 'gegen SG Holzminden 2', text: 2½ }]
+    - [{ url: '?staffel=1655&r=5#p7350x7356', title: 'gegen SK Duderstadt 2', text: '3' }, { url: '?staffel=1655&r=10#p7350x7356', title: 'gegen SK Duderstadt 2', text: 2½ }]
+    - [{ url: '?staffel=1655&r=1#p7350x7351', title: 'gegen SK Goslar 4', text: '3' }, { url: '?staffel=1655&r=6#p7350x7351', title: 'gegen SK Goslar 4', text: '4' }]
+    - [{ url: '?staffel=1655&r=3#p7350x7353', title: 'gegen SK Gronau 2', text: '0' }, { url: '?staffel=1655&r=8#p7350x7353', title: 'gegen SK Gronau 2', text: '4' }]
+    - 14
+    - '22'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Holzminden 2', url: '?mannschaft=7362', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1655&r=2#p7362x7350', title: 'gegen SK Goslar (Oker) 3', text: '1' }, { url: '?staffel=1655&r=7#p7362x7350', title: 'gegen SK Goslar (Oker) 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1655&r=4#p7362x7356', title: 'gegen SK Duderstadt 2', text: '3' }, { url: '?staffel=1655&r=9#p7362x7356', title: 'gegen SK Duderstadt 2', text: 2½ }]
+    - [{ url: '?staffel=1655&r=5#p7362x7351', title: 'gegen SK Goslar 4', text: '2' }, { url: '?staffel=1655&r=10#p7362x7351', title: 'gegen SK Goslar 4', text: '4' }]
+    - [{ url: '?staffel=1655&r=1#p7362x7353', title: 'gegen SK Gronau 2', text: 3½ }, { url: '?staffel=1655&r=6#p7362x7353', title: 'gegen SK Gronau 2', text: 3½ }]
+    - 11
+    - '21'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SK Duderstadt 2', url: '?mannschaft=7356', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1655&r=5#p7356x7350', title: 'gegen SK Goslar (Oker) 3', text: '1' }, { url: '?staffel=1655&r=10#p7356x7350', title: 'gegen SK Goslar (Oker) 3', text: 1½ }]
+    - [{ url: '?staffel=1655&r=4#p7356x7362', title: 'gegen SG Holzminden 2', text: '1' }, { url: '?staffel=1655&r=9#p7356x7362', title: 'gegen SG Holzminden 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1655&r=3#p7356x7351', title: 'gegen SK Goslar 4', text: '3' }, { url: '?staffel=1655&r=8#p7356x7351', title: 'gegen SK Goslar 4', text: '3' }]
+    - [{ url: '?staffel=1655&r=2#p7356x7353', title: 'gegen SK Gronau 2', text: '3' }, { url: '?staffel=1655&r=7#p7356x7353', title: 'gegen SK Gronau 2', text: '3' }]
+    - 8
+    - '17'
+    - aufsteiger
+-
+    - '4.'
+    - { text: 'SK Goslar 4', url: '?mannschaft=7351', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1655&r=1#p7351x7350', title: 'gegen SK Goslar (Oker) 3', text: '1' }, { url: '?staffel=1655&r=6#p7351x7350', title: 'gegen SK Goslar (Oker) 3', text: '0' }]
+    - [{ url: '?staffel=1655&r=5#p7351x7362', title: 'gegen SG Holzminden 2', text: '2' }, { url: '?staffel=1655&r=10#p7351x7362', title: 'gegen SG Holzminden 2', text: '0' }]
+    - [{ url: '?staffel=1655&r=3#p7351x7356', title: 'gegen SK Duderstadt 2', text: '1' }, { url: '?staffel=1655&r=8#p7351x7356', title: 'gegen SK Duderstadt 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1655&r=4#p7351x7353', title: 'gegen SK Gronau 2', text: '3' }, { url: '?staffel=1655&r=9#p7351x7353', title: 'gegen SK Gronau 2', text: 3½ }]
+    - 5
+    - 11½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Gronau 2', url: '?mannschaft=7353', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1655&r=3#p7353x7350', title: 'gegen SK Goslar (Oker) 3', text: '4' }, { url: '?staffel=1655&r=8#p7353x7350', title: 'gegen SK Goslar (Oker) 3', text: '0' }]
+    - [{ url: '?staffel=1655&r=1#p7353x7362', title: 'gegen SG Holzminden 2', text: ½ }, { url: '?staffel=1655&r=6#p7353x7362', title: 'gegen SG Holzminden 2', text: ½ }]
+    - [{ url: '?staffel=1655&r=2#p7353x7356', title: 'gegen SK Duderstadt 2', text: '1' }, { url: '?staffel=1655&r=7#p7353x7356', title: 'gegen SK Duderstadt 2', text: '1' }]
+    - [{ url: '?staffel=1655&r=4#p7353x7351', title: 'gegen SK Goslar 4', text: '1' }, { url: '?staffel=1655&r=9#p7353x7351', title: 'gegen SK Goslar 4', text: ½ }]
+    - xxx
+    - 2
+    - 8½
+    - ''

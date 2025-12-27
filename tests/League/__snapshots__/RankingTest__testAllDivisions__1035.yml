@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=8210', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1885&r=4#p8210x8212', title: 'gegen SG Osnabrück 3', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1885&r=1#p8210x8208', title: 'gegen Hagener SV 3', text: 4½ }]
+    - [{ url: '?staffel=1885&r=3#p8210x8207', title: 'gegen TuS Aschendorf', text: 3½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1885&r=2#p8210x8211', title: 'gegen Veldhausen/Uel. 2', text: 3½ }]
+    - 8
+    - '15'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=8205', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1885&r=1#p8205x8209', title: 'gegen SK Nordhorn-Blanke 5', text: 4½ }]
+    - [{ url: '?staffel=1885&r=3#p8205x8208', title: 'gegen Hagener SV 3', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1885&r=4#p8205x8204', title: 'gegen Rochade Hollage', text: '4' }]
+    - [{ url: '?staffel=1885&r=2#p8205x8206', title: 'gegen SC Fürstenau', text: 5½ }]
+    - {  }
+    - 6
+    - '16'
+    - ''
+-
+    - '3.'
+    - { text: Bramsche/Bersenbrück, url: '?mannschaft=8203', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1885&r=3#p8203x8212', title: 'gegen SG Osnabrück 3', text: '3' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1885&r=2#p8203x8207', title: 'gegen TuS Aschendorf', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1885&r=4#p8203x8206', title: 'gegen SC Fürstenau', text: '4' }]
+    - [{ url: '?staffel=1885&r=1#p8203x8211', title: 'gegen Veldhausen/Uel. 2', text: '4' }]
+    - 5
+    - 13½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Osnabrück 3', url: '?mannschaft=8212', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1885&r=4#p8212x8210', title: 'gegen SF Spelle 2', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1885&r=3#p8212x8203', title: 'gegen Bramsche/Bersenbrück', text: '3' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1885&r=2#p8212x8204', title: 'gegen Rochade Hollage', text: 3½ }]
+    - [{ url: '?staffel=1885&r=1#p8212x8206', title: 'gegen SC Fürstenau', text: 4½ }]
+    - {  }
+    - 5
+    - 13½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Nordhorn-Blanke 5', url: '?mannschaft=8209', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1885&r=1#p8209x8205', title: 'gegen SV Lingen 2', text: 1½ }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1885&r=2#p8209x8208', title: 'gegen Hagener SV 3', text: '4' }]
+    - [{ url: '?staffel=1885&r=4#p8209x8207', title: 'gegen TuS Aschendorf', text: '3' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1885&r=3#p8209x8211', title: 'gegen Veldhausen/Uel. 2', text: 3½ }]
+    - 5
+    - '12'
+    - ''
+-
+    - '6.'
+    - { text: 'Hagener SV 3', url: '?mannschaft=8208', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1885&r=1#p8208x8210', title: 'gegen SF Spelle 2', text: 1½ }]
+    - [{ url: '?staffel=1885&r=3#p8208x8205', title: 'gegen SV Lingen 2', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1885&r=2#p8208x8209', title: 'gegen SK Nordhorn-Blanke 5', text: '2' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1885&r=4#p8208x8211', title: 'gegen Veldhausen/Uel. 2', text: 4½ }]
+    - 4
+    - '12'
+    - ''
+-
+    - '7.'
+    - { text: 'TuS Aschendorf', url: '?mannschaft=8207', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1885&r=3#p8207x8210', title: 'gegen SF Spelle 2', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1885&r=2#p8207x8203', title: 'gegen Bramsche/Bersenbrück', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1885&r=4#p8207x8209', title: 'gegen SK Nordhorn-Blanke 5', text: '3' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1885&r=1#p8207x8204', title: 'gegen Rochade Hollage', text: 2½ }]
+    - {  }
+    - {  }
+    - 3
+    - 11½
+    - ''
+-
+    - '8.'
+    - { text: 'Rochade Hollage', url: '?mannschaft=8204', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1885&r=4#p8204x8205', title: 'gegen SV Lingen 2', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1885&r=2#p8204x8212', title: 'gegen SG Osnabrück 3', text: 2½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1885&r=1#p8204x8207', title: 'gegen TuS Aschendorf', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1885&r=3#p8204x8206', title: 'gegen SC Fürstenau', text: '3' }]
+    - {  }
+    - 3
+    - '11'
+    - ''
+-
+    - '9.'
+    - { text: 'SC Fürstenau', url: '?mannschaft=8206', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1885&r=2#p8206x8205', title: 'gegen SV Lingen 2', text: ½ }]
+    - [{ url: '?staffel=1885&r=4#p8206x8203', title: 'gegen Bramsche/Bersenbrück', text: '2' }]
+    - [{ url: '?staffel=1885&r=1#p8206x8212', title: 'gegen SG Osnabrück 3', text: 1½ }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1885&r=3#p8206x8204', title: 'gegen Rochade Hollage', text: '3' }]
+    - xxx
+    - {  }
+    - 1
+    - '7'
+    - absteiger
+-
+    - '10.'
+    - { text: 'Veldhausen/Uel. 2', url: '?mannschaft=8211', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1885&r=2#p8211x8210', title: 'gegen SF Spelle 2', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1885&r=1#p8211x8203', title: 'gegen Bramsche/Bersenbrück', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1885&r=3#p8211x8209', title: 'gegen SK Nordhorn-Blanke 5', text: 2½ }]
+    - [{ url: '?staffel=1885&r=4#p8211x8208', title: 'gegen Hagener SV 3', text: 1½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - 8½
+    - absteiger

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=4180', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=925&r=6#p4180x4182', title: 'gegen Allianz Leipzig', text: 3½ }]
+    - [{ url: '?staffel=925&r=3#p4180x4179', title: 'gegen Rotation Pankow', text: '3' }]
+    - [{ url: '?staffel=925&r=7#p4180x4183', title: 'gegen SG Leipzig', text: '4' }]
+    - [{ url: '?staffel=925&r=1#p4180x4181', title: 'gegen Leipzig-Lindenau', text: '4' }]
+    - [{ url: '?staffel=925&r=2#p4180x4185', title: 'gegen SG Löberitz', text: 4½ }]
+    - [{ url: '?staffel=925&r=5#p4180x4186', title: 'gegen Hamburger SK 2', text: 4½ }]
+    - [{ url: '?staffel=925&r=4#p4180x4187', title: 'gegen USV Potsdam', text: '4' }]
+    - 13
+    - 27½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Allianz Leipzig', url: '?mannschaft=4182', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=925&r=6#p4182x4180', title: 'gegen TuRa Harksheide', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=925&r=1#p4182x4179', title: 'gegen Rotation Pankow', text: 1½ }]
+    - [{ url: '?staffel=925&r=5#p4182x4183', title: 'gegen SG Leipzig', text: '5' }]
+    - [{ url: '?staffel=925&r=3#p4182x4181', title: 'gegen Leipzig-Lindenau', text: '5' }]
+    - [{ url: '?staffel=925&r=4#p4182x4185', title: 'gegen SG Löberitz', text: '6' }]
+    - [{ url: '?staffel=925&r=7#p4182x4186', title: 'gegen Hamburger SK 2', text: '4' }]
+    - [{ url: '?staffel=925&r=2#p4182x4187', title: 'gegen USV Potsdam', text: '5' }]
+    - 10
+    - '29'
+    - ''
+-
+    - '3.'
+    - { text: 'Rotation Pankow', url: '?mannschaft=4179', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=925&r=3#p4179x4180', title: 'gegen TuRa Harksheide', text: '3' }]
+    - [{ url: '?staffel=925&r=1#p4179x4182', title: 'gegen Allianz Leipzig', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=925&r=2#p4179x4183', title: 'gegen SG Leipzig', text: '2' }]
+    - [{ url: '?staffel=925&r=6#p4179x4181', title: 'gegen Leipzig-Lindenau', text: 3½ }]
+    - [{ url: '?staffel=925&r=7#p4179x4185', title: 'gegen SG Löberitz', text: 2½ }]
+    - [{ url: '?staffel=925&r=4#p4179x4186', title: 'gegen Hamburger SK 2', text: 5½ }]
+    - [{ url: '?staffel=925&r=5#p4179x4187', title: 'gegen USV Potsdam', text: 4½ }]
+    - 9
+    - 25½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Leipzig', url: '?mannschaft=4183', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=925&r=7#p4183x4180', title: 'gegen TuRa Harksheide', text: '2' }]
+    - [{ url: '?staffel=925&r=5#p4183x4182', title: 'gegen Allianz Leipzig', text: '1' }]
+    - [{ url: '?staffel=925&r=2#p4183x4179', title: 'gegen Rotation Pankow', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=925&r=4#p4183x4181', title: 'gegen Leipzig-Lindenau', text: 3½ }]
+    - [{ url: '?staffel=925&r=3#p4183x4185', title: 'gegen SG Löberitz', text: '6' }]
+    - [{ url: '?staffel=925&r=6#p4183x4186', title: 'gegen Hamburger SK 2', text: '2' }]
+    - [{ url: '?staffel=925&r=1#p4183x4187', title: 'gegen USV Potsdam', text: 5½ }]
+    - 8
+    - '24'
+    - ''
+-
+    - '5.'
+    - { text: Leipzig-Lindenau, url: '?mannschaft=4181', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=925&r=1#p4181x4180', title: 'gegen TuRa Harksheide', text: '2' }]
+    - [{ url: '?staffel=925&r=3#p4181x4182', title: 'gegen Allianz Leipzig', text: '1' }]
+    - [{ url: '?staffel=925&r=6#p4181x4179', title: 'gegen Rotation Pankow', text: 2½ }]
+    - [{ url: '?staffel=925&r=4#p4181x4183', title: 'gegen SG Leipzig', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=925&r=5#p4181x4185', title: 'gegen SG Löberitz', text: '4' }]
+    - [{ url: '?staffel=925&r=2#p4181x4186', title: 'gegen Hamburger SK 2', text: 4½ }]
+    - [{ url: '?staffel=925&r=7#p4181x4187', title: 'gegen USV Potsdam', text: 3½ }]
+    - 6
+    - '20'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Löberitz', url: '?mannschaft=4185', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=925&r=2#p4185x4180', title: 'gegen TuRa Harksheide', text: 1½ }]
+    - [{ url: '?staffel=925&r=4#p4185x4182', title: 'gegen Allianz Leipzig', text: '0' }]
+    - [{ url: '?staffel=925&r=7#p4185x4179', title: 'gegen Rotation Pankow', text: 3½ }]
+    - [{ url: '?staffel=925&r=3#p4185x4183', title: 'gegen SG Leipzig', text: '0' }]
+    - [{ url: '?staffel=925&r=5#p4185x4181', title: 'gegen Leipzig-Lindenau', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=925&r=1#p4185x4186', title: 'gegen Hamburger SK 2', text: '4' }]
+    - [{ url: '?staffel=925&r=6#p4185x4187', title: 'gegen USV Potsdam', text: 4½ }]
+    - 6
+    - 15½
+    - ''
+-
+    - '7.'
+    - { text: 'Hamburger SK 2', url: '?mannschaft=4186', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=925&r=5#p4186x4180', title: 'gegen TuRa Harksheide', text: 1½ }]
+    - [{ url: '?staffel=925&r=7#p4186x4182', title: 'gegen Allianz Leipzig', text: '2' }]
+    - [{ url: '?staffel=925&r=4#p4186x4179', title: 'gegen Rotation Pankow', text: ½ }]
+    - [{ url: '?staffel=925&r=6#p4186x4183', title: 'gegen SG Leipzig', text: '4' }]
+    - [{ url: '?staffel=925&r=2#p4186x4181', title: 'gegen Leipzig-Lindenau', text: 1½ }]
+    - [{ url: '?staffel=925&r=1#p4186x4185', title: 'gegen SG Löberitz', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=925&r=3#p4186x4187', title: 'gegen USV Potsdam', text: '2' }]
+    - 2
+    - 13½
+    - absteiger
+-
+    - '8.'
+    - { text: 'USV Potsdam', url: '?mannschaft=4187', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=925&r=4#p4187x4180', title: 'gegen TuRa Harksheide', text: '2' }]
+    - [{ url: '?staffel=925&r=2#p4187x4182', title: 'gegen Allianz Leipzig', text: '1' }]
+    - [{ url: '?staffel=925&r=5#p4187x4179', title: 'gegen Rotation Pankow', text: 1½ }]
+    - [{ url: '?staffel=925&r=1#p4187x4183', title: 'gegen SG Leipzig', text: ½ }]
+    - [{ url: '?staffel=925&r=7#p4187x4181', title: 'gegen Leipzig-Lindenau', text: 2½ }]
+    - [{ url: '?staffel=925&r=6#p4187x4185', title: 'gegen SG Löberitz', text: 1½ }]
+    - [{ url: '?staffel=925&r=3#p4187x4186', title: 'gegen Hamburger SK 2', text: '4' }]
+    - xxx
+    - 2
+    - '13'
+    - absteiger

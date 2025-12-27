@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Lewin Tammo', url: '?mannschaft=4865', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1009&r=5#p4865x4856', title: 'gegen Wenning Andreas', text: '1' }]
+    - [{ url: '?staffel=1009&r=3#p4865x4862', title: 'gegen Brinkers Niklas', text: ½ }]
+    - [{ url: '?staffel=1009&r=1#p4865x4859', title: 'gegen Dettmer Niels', text: ½ }]
+    - [{ url: '?staffel=1009&r=4#p4865x4861', title: 'gegen Scheffner Jarno', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1009&r=2#p4865x4864', title: 'gegen Schrader Hans-Joac', text: ½ }]
+    - {  }
+    - {  }
+    - {  }
+    - 7
+    - 3½
+    - ''
+-
+    - '2.'
+    - { text: 'Wenning Andreas', url: '?mannschaft=4856', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1009&r=5#p4856x4865', title: 'gegen Lewin Tammo', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1009&r=2#p4856x4862', title: 'gegen Brinkers Niklas', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1009&r=1#p4856x4861', title: 'gegen Scheffner Jarno', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1009&r=4#p4856x4864', title: 'gegen Schrader Hans-Joac', text: ½ }]
+    - [{ url: '?staffel=1009&r=3#p4856x4863', title: 'gegen Lange Norbert', text: '1' }]
+    - {  }
+    - {  }
+    - 7
+    - 3½
+    - ''
+-
+    - '3.'
+    - { text: 'Brinkers Niklas', url: '?mannschaft=4862', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1009&r=3#p4862x4865', title: 'gegen Lewin Tammo', text: ½ }]
+    - [{ url: '?staffel=1009&r=2#p4862x4856', title: 'gegen Wenning Andreas', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1009&r=4#p4862x4859', title: 'gegen Dettmer Niels', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1009&r=5#p4862x4864', title: 'gegen Schrader Hans-Joac', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1009&r=1#p4862x4866', title: 'gegen Kleine Mike', text: '1' }]
+    - 7
+    - 3½
+    - ''
+-
+    - '4.'
+    - { text: 'Dettmer Niels', url: '?mannschaft=4859', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1009&r=1#p4859x4865', title: 'gegen Lewin Tammo', text: ½ }]
+    - {  }
+    - [{ url: '?staffel=1009&r=4#p4859x4862', title: 'gegen Brinkers Niklas', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1009&r=2#p4859x4861', title: 'gegen Scheffner Jarno', text: ½ }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1009&r=5#p4859x4857', title: 'gegen Tunka Josef', text: '1' }]
+    - [{ url: '?staffel=1009&r=3#p4859x4866', title: 'gegen Kleine Mike', text: ½ }]
+    - 5
+    - 2½
+    - ''
+-
+    - '4.'
+    - { text: 'Scheffner Jarno', url: '?mannschaft=4861', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1009&r=4#p4861x4865', title: 'gegen Lewin Tammo', text: '0' }]
+    - [{ url: '?staffel=1009&r=1#p4861x4856', title: 'gegen Wenning Andreas', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1009&r=2#p4861x4859', title: 'gegen Dettmer Niels', text: ½ }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1009&r=3#p4861x4857', title: 'gegen Tunka Josef', text: '1' }]
+    - [{ url: '?staffel=1009&r=5#p4861x4866', title: 'gegen Kleine Mike', text: '1' }]
+    - 5
+    - 2½
+    - ''
+-
+    - '6.'
+    - { text: 'Schlierf Heiko', url: '?mannschaft=4858', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1009&r=3#p4858x4864', title: 'gegen Schrader Hans-Joac', text: ½ }]
+    - [{ url: '?staffel=1009&r=1#p4858x4863', title: 'gegen Lange Norbert', text: ½ }]
+    - {  }
+    - [{ url: '?staffel=1009&r=2#p4858x4866', title: 'gegen Kleine Mike', text: '1' }]
+    - 4
+    - '2'
+    - ''
+-
+    - '6.'
+    - { text: 'Schrader Hans-Joac', url: '?mannschaft=4864', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1009&r=2#p4864x4865', title: 'gegen Lewin Tammo', text: ½ }]
+    - [{ url: '?staffel=1009&r=4#p4864x4856', title: 'gegen Wenning Andreas', text: ½ }]
+    - [{ url: '?staffel=1009&r=5#p4864x4862', title: 'gegen Brinkers Niklas', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1009&r=3#p4864x4858', title: 'gegen Schlierf Heiko', text: ½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1009&r=1#p4864x4857', title: 'gegen Tunka Josef', text: ½ }]
+    - {  }
+    - 4
+    - '2'
+    - ''
+-
+    - '8.'
+    - { text: 'Lange Norbert', url: '?mannschaft=4863', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1009&r=3#p4863x4856', title: 'gegen Wenning Andreas', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1009&r=1#p4863x4858', title: 'gegen Schlierf Heiko', text: ½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1009&r=2#p4863x4857', title: 'gegen Tunka Josef', text: '1' }]
+    - {  }
+    - 3
+    - 1½
+    - ''
+-
+    - '9.'
+    - { text: 'Tunka Josef', url: '?mannschaft=4857', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1009&r=5#p4857x4859', title: 'gegen Dettmer Niels', text: '0' }]
+    - [{ url: '?staffel=1009&r=3#p4857x4861', title: 'gegen Scheffner Jarno', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1009&r=1#p4857x4864', title: 'gegen Schrader Hans-Joac', text: ½ }]
+    - [{ url: '?staffel=1009&r=2#p4857x4863', title: 'gegen Lange Norbert', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1009&r=4#p4857x4866', title: 'gegen Kleine Mike', text: '1' }]
+    - 3
+    - 1½
+    - ''
+-
+    - '10.'
+    - { text: 'Kleine Mike', url: '?mannschaft=4866', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1009&r=1#p4866x4862', title: 'gegen Brinkers Niklas', text: '0' }]
+    - [{ url: '?staffel=1009&r=3#p4866x4859', title: 'gegen Dettmer Niels', text: ½ }]
+    - [{ url: '?staffel=1009&r=5#p4866x4861', title: 'gegen Scheffner Jarno', text: '0' }]
+    - [{ url: '?staffel=1009&r=2#p4866x4858', title: 'gegen Schlierf Heiko', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1009&r=4#p4866x4857', title: 'gegen Tunka Josef', text: '0' }]
+    - xxx
+    - 1
+    - ½
+    - ''

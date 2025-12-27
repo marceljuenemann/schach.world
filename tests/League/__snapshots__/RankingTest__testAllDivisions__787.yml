@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Blanke 4', url: '?mannschaft=6670', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1596&r=8#p6670x6658', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=1596&r=1#p6670x6703', title: 'gegen SV Hellern 3', text: 3½ }]
+    - [{ url: '?staffel=1596&r=7#p6670x6656', title: 'gegen Rochade Hollage', text: '8' }]
+    - [{ url: '?staffel=1596&r=4#p6670x6693', title: 'gegen Veldhausen/Uel.', text: '6' }]
+    - [{ url: '?staffel=1596&r=9#p6670x6664', title: 'gegen SG Osnabrück 2', text: '8' }]
+    - [{ url: '?staffel=1596&r=6#p6670x6647', title: 'gegen Hagener SV 2', text: '8' }]
+    - [{ url: '?staffel=1596&r=3#p6670x6713', title: 'gegen SV Lingen 2', text: '2' }]
+    - [{ url: '?staffel=1596&r=5#p6670x6687', title: 'gegen SV Osnabrück 2', text: 4½ }]
+    - 10
+    - '42'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Spelle', url: '?mannschaft=6658', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1596&r=8#p6658x6670', title: 'gegen SK Nordhorn-Blanke 4', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1596&r=7#p6658x6703', title: 'gegen SV Hellern 3', text: '4' }]
+    - [{ url: '?staffel=1596&r=4#p6658x6656', title: 'gegen Rochade Hollage', text: '3' }]
+    - [{ url: '?staffel=1596&r=1#p6658x6693', title: 'gegen Veldhausen/Uel.', text: 7½ }]
+    - [{ url: '?staffel=1596&r=6#p6658x6664', title: 'gegen SG Osnabrück 2', text: '8' }]
+    - [{ url: '?staffel=1596&r=3#p6658x6647', title: 'gegen Hagener SV 2', text: '3' }]
+    - [{ url: '?staffel=1596&r=9#p6658x6713', title: 'gegen SV Lingen 2', text: '4' }]
+    - [{ url: '?staffel=1596&r=2#p6658x6687', title: 'gegen SV Osnabrück 2', text: '5' }]
+    - 10
+    - 40½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Hellern 3', url: '?mannschaft=6703', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1596&r=1#p6703x6670', title: 'gegen SK Nordhorn-Blanke 4', text: 4½ }]
+    - [{ url: '?staffel=1596&r=7#p6703x6658', title: 'gegen SF Spelle', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1596&r=6#p6703x6656', title: 'gegen Rochade Hollage', text: 1½ }]
+    - [{ url: '?staffel=1596&r=3#p6703x6693', title: 'gegen Veldhausen/Uel.', text: '6' }]
+    - [{ url: '?staffel=1596&r=8#p6703x6664', title: 'gegen SG Osnabrück 2', text: 4½ }]
+    - [{ url: '?staffel=1596&r=5#p6703x6647', title: 'gegen Hagener SV 2', text: '8' }]
+    - [{ url: '?staffel=1596&r=2#p6703x6713', title: 'gegen SV Lingen 2', text: '4' }]
+    - [{ url: '?staffel=1596&r=4#p6703x6687', title: 'gegen SV Osnabrück 2', text: 2½ }]
+    - 10
+    - '35'
+    - ''
+-
+    - '4.'
+    - { text: 'Rochade Hollage', url: '?mannschaft=6656', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1596&r=7#p6656x6670', title: 'gegen SK Nordhorn-Blanke 4', text: '0' }]
+    - [{ url: '?staffel=1596&r=4#p6656x6658', title: 'gegen SF Spelle', text: '5' }]
+    - [{ url: '?staffel=1596&r=6#p6656x6703', title: 'gegen SV Hellern 3', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=1596&r=9#p6656x6693', title: 'gegen Veldhausen/Uel.', text: '0' }]
+    - [{ url: '?staffel=1596&r=5#p6656x6664', title: 'gegen SG Osnabrück 2', text: 2½ }]
+    - [{ url: '?staffel=1596&r=2#p6656x6647', title: 'gegen Hagener SV 2', text: '4' }]
+    - [{ url: '?staffel=1596&r=8#p6656x6713', title: 'gegen SV Lingen 2', text: 4½ }]
+    - [{ url: '?staffel=1596&r=1#p6656x6687', title: 'gegen SV Osnabrück 2', text: 4½ }]
+    - 9
+    - '27'
+    - ''
+-
+    - '5.'
+    - { text: Veldhausen/Uel., url: '?mannschaft=6693', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1596&r=4#p6693x6670', title: 'gegen SK Nordhorn-Blanke 4', text: '2' }]
+    - [{ url: '?staffel=1596&r=1#p6693x6658', title: 'gegen SF Spelle', text: ½ }]
+    - [{ url: '?staffel=1596&r=3#p6693x6703', title: 'gegen SV Hellern 3', text: '2' }]
+    - [{ url: '?staffel=1596&r=9#p6693x6656', title: 'gegen Rochade Hollage', text: '8' }]
+    - xxx
+    - [{ url: '?staffel=1596&r=2#p6693x6664', title: 'gegen SG Osnabrück 2', text: '3' }]
+    - [{ url: '?staffel=1596&r=8#p6693x6647', title: 'gegen Hagener SV 2', text: 5½ }]
+    - [{ url: '?staffel=1596&r=5#p6693x6713', title: 'gegen SV Lingen 2', text: '5' }]
+    - [{ url: '?staffel=1596&r=7#p6693x6687', title: 'gegen SV Osnabrück 2', text: '6' }]
+    - 8
+    - '32'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Osnabrück 2', url: '?mannschaft=6664', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1596&r=9#p6664x6670', title: 'gegen SK Nordhorn-Blanke 4', text: '0' }]
+    - [{ url: '?staffel=1596&r=6#p6664x6658', title: 'gegen SF Spelle', text: '0' }]
+    - [{ url: '?staffel=1596&r=8#p6664x6703', title: 'gegen SV Hellern 3', text: 3½ }]
+    - [{ url: '?staffel=1596&r=5#p6664x6656', title: 'gegen Rochade Hollage', text: 5½ }]
+    - [{ url: '?staffel=1596&r=2#p6664x6693', title: 'gegen Veldhausen/Uel.', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1596&r=4#p6664x6647', title: 'gegen Hagener SV 2', text: '3' }]
+    - [{ url: '?staffel=1596&r=1#p6664x6713', title: 'gegen SV Lingen 2', text: 6½ }]
+    - [{ url: '?staffel=1596&r=3#p6664x6687', title: 'gegen SV Osnabrück 2', text: 4½ }]
+    - 8
+    - '28'
+    - ''
+-
+    - '7.'
+    - { text: 'Hagener SV 2', url: '?mannschaft=6647', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1596&r=6#p6647x6670', title: 'gegen SK Nordhorn-Blanke 4', text: '0' }]
+    - [{ url: '?staffel=1596&r=3#p6647x6658', title: 'gegen SF Spelle', text: '5' }]
+    - [{ url: '?staffel=1596&r=5#p6647x6703', title: 'gegen SV Hellern 3', text: '0' }]
+    - [{ url: '?staffel=1596&r=2#p6647x6656', title: 'gegen Rochade Hollage', text: '4' }]
+    - [{ url: '?staffel=1596&r=8#p6647x6693', title: 'gegen Veldhausen/Uel.', text: 2½ }]
+    - [{ url: '?staffel=1596&r=4#p6647x6664', title: 'gegen SG Osnabrück 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1596&r=7#p6647x6713', title: 'gegen SV Lingen 2', text: '5' }]
+    - [{ url: '?staffel=1596&r=9#p6647x6687', title: 'gegen SV Osnabrück 2', text: '4' }]
+    - 8
+    - 24½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=6713', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1596&r=3#p6713x6670', title: 'gegen SK Nordhorn-Blanke 4', text: '6' }]
+    - [{ url: '?staffel=1596&r=9#p6713x6658', title: 'gegen SF Spelle', text: '4' }]
+    - [{ url: '?staffel=1596&r=2#p6713x6703', title: 'gegen SV Hellern 3', text: '4' }]
+    - [{ url: '?staffel=1596&r=8#p6713x6656', title: 'gegen Rochade Hollage', text: 3½ }]
+    - [{ url: '?staffel=1596&r=5#p6713x6693', title: 'gegen Veldhausen/Uel.', text: '3' }]
+    - [{ url: '?staffel=1596&r=1#p6713x6664', title: 'gegen SG Osnabrück 2', text: 1½ }]
+    - [{ url: '?staffel=1596&r=7#p6713x6647', title: 'gegen Hagener SV 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1596&r=6#p6713x6687', title: 'gegen SV Osnabrück 2', text: '4' }]
+    - 5
+    - '29'
+    - ''
+-
+    - '9.'
+    - { text: 'SV Osnabrück 2', url: '?mannschaft=6687', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1596&r=5#p6687x6670', title: 'gegen SK Nordhorn-Blanke 4', text: 3½ }]
+    - [{ url: '?staffel=1596&r=2#p6687x6658', title: 'gegen SF Spelle', text: '3' }]
+    - [{ url: '?staffel=1596&r=4#p6687x6703', title: 'gegen SV Hellern 3', text: 5½ }]
+    - [{ url: '?staffel=1596&r=1#p6687x6656', title: 'gegen Rochade Hollage', text: 3½ }]
+    - [{ url: '?staffel=1596&r=7#p6687x6693', title: 'gegen Veldhausen/Uel.', text: '2' }]
+    - [{ url: '?staffel=1596&r=3#p6687x6664', title: 'gegen SG Osnabrück 2', text: 3½ }]
+    - [{ url: '?staffel=1596&r=9#p6687x6647', title: 'gegen Hagener SV 2', text: '4' }]
+    - [{ url: '?staffel=1596&r=6#p6687x6713', title: 'gegen SV Lingen 2', text: '4' }]
+    - xxx
+    - 4
+    - '29'
+    - absteiger

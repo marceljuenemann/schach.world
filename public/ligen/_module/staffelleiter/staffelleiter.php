@@ -1,4 +1,4 @@
-<?
+<?php
 /* Staffelleiter-Bereich-Modul
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann

@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - main
-      - php-ci
   pull_request:
     branches:
       - main
-      - php-ci
 
 jobs:
   phpunit:
@@ -26,12 +24,17 @@ jobs:
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up env file
-        run: cp .github/workflows/phpunit.env .env.test.local
+        run: |
+          cp .github/workflows/phpunit.env .env.test.local &&
+          cp public/ligen/config-sample.inc.php public/ligen/config.inc.php
+
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.4'
+
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-interaction --no-progress --no-scripts
 
@@ -42,10 +45,13 @@ jobs:
               mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-main < "$sqlfile"
             fi
           done
-      - name: Prepare snapshot tests
-        run: |
-          mkdir -p tests/League/Api/Service/actual
 
       - name: Run tests
         run: |
-          ./bin/phpunit
+          XDEBUG_MODE=coverage ./bin/phpunit --coverage-html var/coverage
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: phpunit-coverage-report
+          path: var/coverage/

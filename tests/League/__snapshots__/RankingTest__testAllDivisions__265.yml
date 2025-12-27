@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Itzehoer SV 3', url: '?mannschaft=2717', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=697&r=3#p2717x2721', title: 'gegen SC Lunden', text: 3½ }, { url: '?staffel=697&r=8#p2717x2721', title: 'gegen SC Lunden', text: '3' }]
+    - [{ url: '?staffel=697&r=5#p2717x2719', title: 'gegen SK Kollmar 2', text: '2' }, { url: '?staffel=697&r=10#p2717x2719', title: 'gegen SK Kollmar 2', text: '1' }]
+    - [{ url: '?staffel=697&r=2#p2717x2716', title: 'gegen SV Büsum 2', text: '4' }, { url: '?staffel=697&r=7#p2717x2716', title: 'gegen SV Büsum 2', text: 3½ }]
+    - [{ url: '?staffel=697&r=1#p2717x2720', title: 'gegen SK Brunsbüttel 2', text: 2½ }, { url: '?staffel=697&r=6#p2717x2720', title: 'gegen SK Brunsbüttel 2', text: '3' }]
+    - [{ url: '?staffel=697&r=4#p2717x2718', title: 'gegen SC Wrist-K. 3', text: '3' }, { url: '?staffel=697&r=9#p2717x2718', title: 'gegen SC Wrist-K. 3', text: 2½ }]
+    - 17
+    - '28'
+    - ''
+-
+    - '2.'
+    - { text: 'SC Lunden', url: '?mannschaft=2721', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=697&r=3#p2721x2717', title: 'gegen Itzehoer SV 3', text: ½ }, { url: '?staffel=697&r=8#p2721x2717', title: 'gegen Itzehoer SV 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=697&r=2#p2721x2719', title: 'gegen SK Kollmar 2', text: 2½ }, { url: '?staffel=697&r=7#p2721x2719', title: 'gegen SK Kollmar 2', text: 1½ }]
+    - [{ url: '?staffel=697&r=1#p2721x2716', title: 'gegen SV Büsum 2', text: 2½ }, { url: '?staffel=697&r=6#p2721x2716', title: 'gegen SV Büsum 2', text: '3' }]
+    - [{ url: '?staffel=697&r=4#p2721x2720', title: 'gegen SK Brunsbüttel 2', text: '3' }, { url: '?staffel=697&r=9#p2721x2720', title: 'gegen SK Brunsbüttel 2', text: 2½ }]
+    - [{ url: '?staffel=697&r=5#p2721x2718', title: 'gegen SC Wrist-K. 3', text: '3' }, { url: '?staffel=697&r=10#p2721x2718', title: 'gegen SC Wrist-K. 3', text: '3' }]
+    - 14
+    - 22½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Kollmar 2', url: '?mannschaft=2719', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=697&r=5#p2719x2717', title: 'gegen Itzehoer SV 3', text: '2' }, { url: '?staffel=697&r=10#p2719x2717', title: 'gegen Itzehoer SV 3', text: '3' }]
+    - [{ url: '?staffel=697&r=2#p2719x2721', title: 'gegen SC Lunden', text: 1½ }, { url: '?staffel=697&r=7#p2719x2721', title: 'gegen SC Lunden', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=697&r=4#p2719x2716', title: 'gegen SV Büsum 2', text: 1½ }, { url: '?staffel=697&r=9#p2719x2716', title: 'gegen SV Büsum 2', text: 1½ }]
+    - [{ url: '?staffel=697&r=3#p2719x2720', title: 'gegen SK Brunsbüttel 2', text: '2' }, { url: '?staffel=697&r=8#p2719x2720', title: 'gegen SK Brunsbüttel 2', text: '3' }]
+    - [{ url: '?staffel=697&r=1#p2719x2718', title: 'gegen SC Wrist-K. 3', text: 1½ }, { url: '?staffel=697&r=6#p2719x2718', title: 'gegen SC Wrist-K. 3', text: '2' }]
+    - 9
+    - 20½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Büsum 2', url: '?mannschaft=2716', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=697&r=2#p2716x2717', title: 'gegen Itzehoer SV 3', text: '0' }, { url: '?staffel=697&r=7#p2716x2717', title: 'gegen Itzehoer SV 3', text: ½ }]
+    - [{ url: '?staffel=697&r=1#p2716x2721', title: 'gegen SC Lunden', text: 1½ }, { url: '?staffel=697&r=6#p2716x2721', title: 'gegen SC Lunden', text: '1' }]
+    - [{ url: '?staffel=697&r=4#p2716x2719', title: 'gegen SK Kollmar 2', text: 2½ }, { url: '?staffel=697&r=9#p2716x2719', title: 'gegen SK Kollmar 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=697&r=5#p2716x2720', title: 'gegen SK Brunsbüttel 2', text: 1½ }, { url: '?staffel=697&r=10#p2716x2720', title: 'gegen SK Brunsbüttel 2', text: '3' }]
+    - [{ url: '?staffel=697&r=3#p2716x2718', title: 'gegen SC Wrist-K. 3', text: '2' }, { url: '?staffel=697&r=8#p2716x2718', title: 'gegen SC Wrist-K. 3', text: 2½ }]
+    - 9
+    - '17'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Brunsbüttel 2', url: '?mannschaft=2720', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=697&r=1#p2720x2717', title: 'gegen Itzehoer SV 3', text: 1½ }, { url: '?staffel=697&r=6#p2720x2717', title: 'gegen Itzehoer SV 3', text: '1' }]
+    - [{ url: '?staffel=697&r=4#p2720x2721', title: 'gegen SC Lunden', text: '1' }, { url: '?staffel=697&r=9#p2720x2721', title: 'gegen SC Lunden', text: 1½ }]
+    - [{ url: '?staffel=697&r=3#p2720x2719', title: 'gegen SK Kollmar 2', text: '2' }, { url: '?staffel=697&r=8#p2720x2719', title: 'gegen SK Kollmar 2', text: '1' }]
+    - [{ url: '?staffel=697&r=5#p2720x2716', title: 'gegen SV Büsum 2', text: 2½ }, { url: '?staffel=697&r=10#p2720x2716', title: 'gegen SV Büsum 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=697&r=2#p2720x2718', title: 'gegen SC Wrist-K. 3', text: '3' }, { url: '?staffel=697&r=7#p2720x2718', title: 'gegen SC Wrist-K. 3', text: 2½ }]
+    - 7
+    - '17'
+    - ''
+-
+    - '6.'
+    - { text: 'SC Wrist-K. 3', url: '?mannschaft=2718', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=697&r=4#p2718x2717', title: 'gegen Itzehoer SV 3', text: '1' }, { url: '?staffel=697&r=9#p2718x2717', title: 'gegen Itzehoer SV 3', text: 1½ }]
+    - [{ url: '?staffel=697&r=5#p2718x2721', title: 'gegen SC Lunden', text: '1' }, { url: '?staffel=697&r=10#p2718x2721', title: 'gegen SC Lunden', text: '1' }]
+    - [{ url: '?staffel=697&r=1#p2718x2719', title: 'gegen SK Kollmar 2', text: 2½ }, { url: '?staffel=697&r=6#p2718x2719', title: 'gegen SK Kollmar 2', text: '2' }]
+    - [{ url: '?staffel=697&r=3#p2718x2716', title: 'gegen SV Büsum 2', text: '2' }, { url: '?staffel=697&r=8#p2718x2716', title: 'gegen SV Büsum 2', text: 1½ }]
+    - [{ url: '?staffel=697&r=2#p2718x2720', title: 'gegen SK Brunsbüttel 2', text: '1' }, { url: '?staffel=697&r=7#p2718x2720', title: 'gegen SK Brunsbüttel 2', text: 1½ }]
+    - xxx
+    - 4
+    - '15'
+    - ''

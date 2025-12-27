@@ -1,4 +1,4 @@
-<?
+<?php
 /* Klasse Spieler
  *
  * In dieser Datei wird die Klasse SED_Spieler zur Verfügung

@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Uetze-Hänigsen', url: '?mannschaft=5400', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1032&r=2#p5400x5399', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1032&r=1#p5400x5398', title: 'gegen SG WB Eilenriede', text: 2½ }]
+    - {  }
+    - 2
+    - 3½
+    - ''
+-
+    - '2.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=5399', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1032&r=2#p5399x5400', title: 'gegen SC Uetze-Hänigsen', text: '3' }]
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - '3'
+    - ''
+-
+    - '3.'
+    - { text: 'SG WB Eilenriede', url: '?mannschaft=5398', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1032&r=1#p5398x5400', title: 'gegen SC Uetze-Hänigsen', text: 1½ }]
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - 1½
+    - ''
+-
+    - '4.'
+    - { text: Barsinghausen, url: '?mannschaft=5396', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Hellern 4', url: '?mannschaft=7525', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1750&r=5#p7525x7487', title: 'gegen SV Lingen 2', text: '4' }]
+    - [{ url: '?staffel=1750&r=1#p7525x7485', title: 'gegen SC Fürstenau', text: 2½ }]
+    - [{ url: '?staffel=1750&r=6#p7525x7513', title: 'gegen SV Osnabrück v. 1919 3', text: 3½ }]
+    - [{ url: '?staffel=1750&r=7#p7525x7491', title: 'gegen Bersenbrück/Bramsche', text: 5½ }]
+    - [{ url: '?staffel=1750&r=3#p7525x7495', title: 'gegen SK Nordhorn-Blanke 5', text: 3½ }]
+    - [{ url: '?staffel=1750&r=9#p7525x7523', title: 'gegen Rochade Hollage 2', text: '6' }]
+    - [{ url: '?staffel=1750&r=2#p7525x7479', title: 'gegen TuS Aschendorf', text: '6' }]
+    - [{ url: '?staffel=1750&r=8#p7525x7529', title: 'gegen Gaste-Hasbergen', text: '5' }]
+    - [{ url: '?staffel=1750&r=4#p7525x7506', title: 'gegen Veldhausen/Uel. 2', text: '4' }]
+    - 16
+    - '40'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=7487', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1750&r=5#p7487x7525', title: 'gegen SV Hellern 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1750&r=2#p7487x7485', title: 'gegen SC Fürstenau', text: '4' }]
+    - [{ url: '?staffel=1750&r=7#p7487x7513', title: 'gegen SV Osnabrück v. 1919 3', text: 4½ }]
+    - [{ url: '?staffel=1750&r=8#p7487x7491', title: 'gegen Bersenbrück/Bramsche', text: '4' }]
+    - [{ url: '?staffel=1750&r=4#p7487x7495', title: 'gegen SK Nordhorn-Blanke 5', text: 2½ }]
+    - [{ url: '?staffel=1750&r=1#p7487x7523', title: 'gegen Rochade Hollage 2', text: 3½ }]
+    - [{ url: '?staffel=1750&r=3#p7487x7479', title: 'gegen TuS Aschendorf', text: '3' }]
+    - [{ url: '?staffel=1750&r=9#p7487x7529', title: 'gegen Gaste-Hasbergen', text: 4½ }]
+    - [{ url: '?staffel=1750&r=6#p7487x7506', title: 'gegen Veldhausen/Uel. 2', text: 3½ }]
+    - 13
+    - 31½
+    - ''
+-
+    - '3.'
+    - { text: 'SC Fürstenau', url: '?mannschaft=7485', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1750&r=1#p7485x7525', title: 'gegen SV Hellern 4', text: 3½ }]
+    - [{ url: '?staffel=1750&r=2#p7485x7487', title: 'gegen SV Lingen 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1750&r=3#p7485x7513', title: 'gegen SV Osnabrück v. 1919 3', text: '3' }]
+    - [{ url: '?staffel=1750&r=4#p7485x7491', title: 'gegen Bersenbrück/Bramsche', text: 4½ }]
+    - [{ url: '?staffel=1750&r=9#p7485x7495', title: 'gegen SK Nordhorn-Blanke 5', text: '2' }]
+    - [{ url: '?staffel=1750&r=6#p7485x7523', title: 'gegen Rochade Hollage 2', text: '3' }]
+    - [{ url: '?staffel=1750&r=8#p7485x7479', title: 'gegen TuS Aschendorf', text: '5' }]
+    - [{ url: '?staffel=1750&r=5#p7485x7529', title: 'gegen Gaste-Hasbergen', text: '5' }]
+    - [{ url: '?staffel=1750&r=7#p7485x7506', title: 'gegen Veldhausen/Uel. 2', text: 4½ }]
+    - 12
+    - 32½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück v. 1919 3', url: '?mannschaft=7513', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1750&r=6#p7513x7525', title: 'gegen SV Hellern 4', text: 2½ }]
+    - [{ url: '?staffel=1750&r=7#p7513x7487', title: 'gegen SV Lingen 2', text: 1½ }]
+    - [{ url: '?staffel=1750&r=3#p7513x7485', title: 'gegen SC Fürstenau', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1750&r=9#p7513x7491', title: 'gegen Bersenbrück/Bramsche', text: '4' }]
+    - [{ url: '?staffel=1750&r=5#p7513x7495', title: 'gegen SK Nordhorn-Blanke 5', text: '3' }]
+    - [{ url: '?staffel=1750&r=2#p7513x7523', title: 'gegen Rochade Hollage 2', text: '3' }]
+    - [{ url: '?staffel=1750&r=4#p7513x7479', title: 'gegen TuS Aschendorf', text: '6' }]
+    - [{ url: '?staffel=1750&r=1#p7513x7529', title: 'gegen Gaste-Hasbergen', text: 3½ }]
+    - [{ url: '?staffel=1750&r=8#p7513x7506', title: 'gegen Veldhausen/Uel. 2', text: 3½ }]
+    - 11
+    - '30'
+    - ''
+-
+    - '5.'
+    - { text: Bersenbrück/Bramsche, url: '?mannschaft=7491', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1750&r=7#p7491x7525', title: 'gegen SV Hellern 4', text: ½ }]
+    - [{ url: '?staffel=1750&r=8#p7491x7487', title: 'gegen SV Lingen 2', text: '2' }]
+    - [{ url: '?staffel=1750&r=4#p7491x7485', title: 'gegen SC Fürstenau', text: 1½ }]
+    - [{ url: '?staffel=1750&r=9#p7491x7513', title: 'gegen SV Osnabrück v. 1919 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1750&r=6#p7491x7495', title: 'gegen SK Nordhorn-Blanke 5', text: 4½ }]
+    - [{ url: '?staffel=1750&r=3#p7491x7523', title: 'gegen Rochade Hollage 2', text: '5' }]
+    - [{ url: '?staffel=1750&r=5#p7491x7479', title: 'gegen TuS Aschendorf', text: 4½ }]
+    - [{ url: '?staffel=1750&r=2#p7491x7529', title: 'gegen Gaste-Hasbergen', text: '5' }]
+    - [{ url: '?staffel=1750&r=1#p7491x7506', title: 'gegen Veldhausen/Uel. 2', text: '4' }]
+    - 10
+    - '29'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Nordhorn-Blanke 5', url: '?mannschaft=7495', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1750&r=3#p7495x7525', title: 'gegen SV Hellern 4', text: 2½ }]
+    - [{ url: '?staffel=1750&r=4#p7495x7487', title: 'gegen SV Lingen 2', text: 3½ }]
+    - [{ url: '?staffel=1750&r=9#p7495x7485', title: 'gegen SC Fürstenau', text: '4' }]
+    - [{ url: '?staffel=1750&r=5#p7495x7513', title: 'gegen SV Osnabrück v. 1919 3', text: '3' }]
+    - [{ url: '?staffel=1750&r=6#p7495x7491', title: 'gegen Bersenbrück/Bramsche', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1750&r=8#p7495x7523', title: 'gegen Rochade Hollage 2', text: 1½ }]
+    - [{ url: '?staffel=1750&r=1#p7495x7479', title: 'gegen TuS Aschendorf', text: '4' }]
+    - [{ url: '?staffel=1750&r=7#p7495x7529', title: 'gegen Gaste-Hasbergen', text: 4½ }]
+    - [{ url: '?staffel=1750&r=2#p7495x7506', title: 'gegen Veldhausen/Uel. 2', text: '3' }]
+    - 10
+    - 27½
+    - ''
+-
+    - '7.'
+    - { text: 'Rochade Hollage 2', url: '?mannschaft=7523', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1750&r=9#p7523x7525', title: 'gegen SV Hellern 4', text: '0' }]
+    - [{ url: '?staffel=1750&r=1#p7523x7487', title: 'gegen SV Lingen 2', text: 2½ }]
+    - [{ url: '?staffel=1750&r=6#p7523x7485', title: 'gegen SC Fürstenau', text: '3' }]
+    - [{ url: '?staffel=1750&r=2#p7523x7513', title: 'gegen SV Osnabrück v. 1919 3', text: '3' }]
+    - [{ url: '?staffel=1750&r=3#p7523x7491', title: 'gegen Bersenbrück/Bramsche', text: '1' }]
+    - [{ url: '?staffel=1750&r=8#p7523x7495', title: 'gegen SK Nordhorn-Blanke 5', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1750&r=7#p7523x7479', title: 'gegen TuS Aschendorf', text: '4' }]
+    - [{ url: '?staffel=1750&r=4#p7523x7529', title: 'gegen Gaste-Hasbergen', text: '2' }]
+    - [{ url: '?staffel=1750&r=5#p7523x7506', title: 'gegen Veldhausen/Uel. 2', text: 3½ }]
+    - 8
+    - 23½
+    - ''
+-
+    - '8.'
+    - { text: 'TuS Aschendorf', url: '?mannschaft=7479', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1750&r=2#p7479x7525', title: 'gegen SV Hellern 4', text: '0' }]
+    - [{ url: '?staffel=1750&r=3#p7479x7487', title: 'gegen SV Lingen 2', text: '3' }]
+    - [{ url: '?staffel=1750&r=8#p7479x7485', title: 'gegen SC Fürstenau', text: '1' }]
+    - [{ url: '?staffel=1750&r=4#p7479x7513', title: 'gegen SV Osnabrück v. 1919 3', text: '0' }]
+    - [{ url: '?staffel=1750&r=5#p7479x7491', title: 'gegen Bersenbrück/Bramsche', text: 1½ }]
+    - [{ url: '?staffel=1750&r=1#p7479x7495', title: 'gegen SK Nordhorn-Blanke 5', text: '2' }]
+    - [{ url: '?staffel=1750&r=7#p7479x7523', title: 'gegen Rochade Hollage 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1750&r=6#p7479x7529', title: 'gegen Gaste-Hasbergen', text: 3½ }]
+    - [{ url: '?staffel=1750&r=9#p7479x7506', title: 'gegen Veldhausen/Uel. 2', text: 4½ }]
+    - 5
+    - 17½
+    - ''
+-
+    - '9.'
+    - { text: Gaste-Hasbergen, url: '?mannschaft=7529', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1750&r=8#p7529x7525', title: 'gegen SV Hellern 4', text: '1' }]
+    - [{ url: '?staffel=1750&r=9#p7529x7487', title: 'gegen SV Lingen 2', text: 1½ }]
+    - [{ url: '?staffel=1750&r=5#p7529x7485', title: 'gegen SC Fürstenau', text: '1' }]
+    - [{ url: '?staffel=1750&r=1#p7529x7513', title: 'gegen SV Osnabrück v. 1919 3', text: 2½ }]
+    - [{ url: '?staffel=1750&r=2#p7529x7491', title: 'gegen Bersenbrück/Bramsche', text: '1' }]
+    - [{ url: '?staffel=1750&r=7#p7529x7495', title: 'gegen SK Nordhorn-Blanke 5', text: 1½ }]
+    - [{ url: '?staffel=1750&r=4#p7529x7523', title: 'gegen Rochade Hollage 2', text: '4' }]
+    - [{ url: '?staffel=1750&r=6#p7529x7479', title: 'gegen TuS Aschendorf', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1750&r=3#p7529x7506', title: 'gegen Veldhausen/Uel. 2', text: '5' }]
+    - 4
+    - '20'
+    - absteiger
+-
+    - '10.'
+    - { text: 'Veldhausen/Uel. 2', url: '?mannschaft=7506', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1750&r=4#p7506x7525', title: 'gegen SV Hellern 4', text: '2' }]
+    - [{ url: '?staffel=1750&r=6#p7506x7487', title: 'gegen SV Lingen 2', text: 2½ }]
+    - [{ url: '?staffel=1750&r=7#p7506x7485', title: 'gegen SC Fürstenau', text: 1½ }]
+    - [{ url: '?staffel=1750&r=8#p7506x7513', title: 'gegen SV Osnabrück v. 1919 3', text: 2½ }]
+    - [{ url: '?staffel=1750&r=1#p7506x7491', title: 'gegen Bersenbrück/Bramsche', text: '2' }]
+    - [{ url: '?staffel=1750&r=2#p7506x7495', title: 'gegen SK Nordhorn-Blanke 5', text: '3' }]
+    - [{ url: '?staffel=1750&r=5#p7506x7523', title: 'gegen Rochade Hollage 2', text: 2½ }]
+    - [{ url: '?staffel=1750&r=9#p7506x7479', title: 'gegen TuS Aschendorf', text: 1½ }]
+    - [{ url: '?staffel=1750&r=3#p7506x7529', title: 'gegen Gaste-Hasbergen', text: '1' }]
+    - xxx
+    - 1
+    - 18½
+    - absteiger

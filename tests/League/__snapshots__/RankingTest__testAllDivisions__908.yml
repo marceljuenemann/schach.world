@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Lgh / Berenbostel 99', url: '?mannschaft=7580', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1740&r=1#p7580x7587', title: 'gegen SK Rinteln 99', text: '2' }, { url: '?staffel=1740&r=6#p7580x7587', title: 'gegen SK Rinteln 99', text: 2½ }]
+    - [{ url: '?staffel=1740&r=3#p7580x7689', title: 'gegen SG Döhren-Gleidingen 99', text: '2' }, { url: '?staffel=1740&r=8#p7580x7689', title: 'gegen SG Döhren-Gleidingen 99', text: 3½ }]
+    - [{ url: '?staffel=1740&r=4#p7580x7564', title: 'gegen Eystruper SK 99', text: '2' }, { url: '?staffel=1740&r=9#p7580x7564', title: 'gegen Eystruper SK 99', text: '4' }]
+    - [{ url: '?staffel=1740&r=2#p7580x7540', title: 'gegen SG Garbsen/Marienw 99', text: '3' }, { url: '?staffel=1740&r=7#p7580x7540', title: 'gegen SG Garbsen/Marienw 99', text: '4' }]
+    - 13
+    - '23'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Rinteln 99', url: '?mannschaft=7587', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1740&r=1#p7587x7580', title: 'gegen SG Lgh / Berenbostel 99', text: '2' }, { url: '?staffel=1740&r=6#p7587x7580', title: 'gegen SG Lgh / Berenbostel 99', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1740&r=4#p7587x7689', title: 'gegen SG Döhren-Gleidingen 99', text: '1' }, { url: '?staffel=1740&r=9#p7587x7689', title: 'gegen SG Döhren-Gleidingen 99', text: '1' }]
+    - [{ url: '?staffel=1740&r=5#p7587x7564', title: 'gegen Eystruper SK 99', text: '3' }, { url: '?staffel=1740&r=10#p7587x7564', title: 'gegen Eystruper SK 99', text: '3' }]
+    - [{ url: '?staffel=1740&r=3#p7587x7540', title: 'gegen SG Garbsen/Marienw 99', text: '2' }, { url: '?staffel=1740&r=8#p7587x7540', title: 'gegen SG Garbsen/Marienw 99', text: '3' }]
+    - 8
+    - 16½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Döhren-Gleidingen 99', url: '?mannschaft=7689', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1740&r=3#p7689x7580', title: 'gegen SG Lgh / Berenbostel 99', text: '2' }, { url: '?staffel=1740&r=8#p7689x7580', title: 'gegen SG Lgh / Berenbostel 99', text: ½ }]
+    - [{ url: '?staffel=1740&r=4#p7689x7587', title: 'gegen SK Rinteln 99', text: '3' }, { url: '?staffel=1740&r=9#p7689x7587', title: 'gegen SK Rinteln 99', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1740&r=2#p7689x7564', title: 'gegen Eystruper SK 99', text: '2' }, { url: '?staffel=1740&r=7#p7689x7564', title: 'gegen Eystruper SK 99', text: '1' }]
+    - [{ url: '?staffel=1740&r=5#p7689x7540', title: 'gegen SG Garbsen/Marienw 99', text: '3' }, { url: '?staffel=1740&r=10#p7689x7540', title: 'gegen SG Garbsen/Marienw 99', text: '1' }]
+    - 8
+    - 15½
+    - ''
+-
+    - '4.'
+    - { text: 'Eystruper SK 99', url: '?mannschaft=7564', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1740&r=4#p7564x7580', title: 'gegen SG Lgh / Berenbostel 99', text: '2' }, { url: '?staffel=1740&r=9#p7564x7580', title: 'gegen SG Lgh / Berenbostel 99', text: '0' }]
+    - [{ url: '?staffel=1740&r=5#p7564x7587', title: 'gegen SK Rinteln 99', text: '1' }, { url: '?staffel=1740&r=10#p7564x7587', title: 'gegen SK Rinteln 99', text: '1' }]
+    - [{ url: '?staffel=1740&r=2#p7564x7689', title: 'gegen SG Döhren-Gleidingen 99', text: '2' }, { url: '?staffel=1740&r=7#p7564x7689', title: 'gegen SG Döhren-Gleidingen 99', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1740&r=1#p7564x7540', title: 'gegen SG Garbsen/Marienw 99', text: 2½ }, { url: '?staffel=1740&r=6#p7564x7540', title: 'gegen SG Garbsen/Marienw 99', text: '3' }]
+    - 8
+    - 14½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Garbsen/Marienw 99', url: '?mannschaft=7540', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1740&r=2#p7540x7580', title: 'gegen SG Lgh / Berenbostel 99', text: '1' }, { url: '?staffel=1740&r=7#p7540x7580', title: 'gegen SG Lgh / Berenbostel 99', text: '0' }]
+    - [{ url: '?staffel=1740&r=3#p7540x7587', title: 'gegen SK Rinteln 99', text: '2' }, { url: '?staffel=1740&r=8#p7540x7587', title: 'gegen SK Rinteln 99', text: '1' }]
+    - [{ url: '?staffel=1740&r=5#p7540x7689', title: 'gegen SG Döhren-Gleidingen 99', text: '1' }, { url: '?staffel=1740&r=10#p7540x7689', title: 'gegen SG Döhren-Gleidingen 99', text: '3' }]
+    - [{ url: '?staffel=1740&r=1#p7540x7564', title: 'gegen Eystruper SK 99', text: 1½ }, { url: '?staffel=1740&r=6#p7540x7564', title: 'gegen Eystruper SK 99', text: '1' }]
+    - xxx
+    - 3
+    - 10½
+    - ''

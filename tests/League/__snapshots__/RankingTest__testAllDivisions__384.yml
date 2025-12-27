@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'VfL Oker', url: '?mannschaft=3832', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=830&r=9#p3832x3829', title: 'gegen Hildesheimer SVU10', text: 1½ }]
+    - [{ url: '?staffel=830&r=7#p3832x3827', title: 'gegen Hildesheimer SVU18', text: '2' }]
+    - [{ url: '?staffel=830&r=5#p3832x3828', title: 'gegen Hildesheimer SVU12', text: '3' }]
+    - [{ url: '?staffel=830&r=1#p3832x3831', title: 'gegen SK Goslar', text: '3' }]
+    - [{ url: '?staffel=830&r=8#p3832x3830', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - [{ url: '?staffel=830&r=4#p3832x3834', title: 'gegen Grundsch. Bündheim', text: 3½ }]
+    - [{ url: '?staffel=830&r=2#p3832x3836', title: 'gegen Grunds. Vienenburg', text: '4' }]
+    - [{ url: '?staffel=830&r=6#p3832x3835', title: 'gegen Grundsch. Bündheim 2', text: '4' }]
+    - [{ url: '?staffel=830&r=3#p3832x3833', title: 'gegen WvS-Gym Bad Harzb.', text: '4' }]
+    - 15
+    - '29'
+    - ''
+-
+    - '2.'
+    - { text: 'Hildesheimer SVU10', url: '?mannschaft=3829', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=830&r=9#p3829x3832', title: 'gegen VfL Oker', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=830&r=3#p3829x3827', title: 'gegen Hildesheimer SVU18', text: '2' }]
+    - [{ url: '?staffel=830&r=4#p3829x3828', title: 'gegen Hildesheimer SVU12', text: '2' }]
+    - [{ url: '?staffel=830&r=5#p3829x3831', title: 'gegen SK Goslar', text: '2' }]
+    - [{ url: '?staffel=830&r=7#p3829x3830', title: 'gegen SK Bad Harzburg', text: '2' }]
+    - [{ url: '?staffel=830&r=1#p3829x3834', title: 'gegen Grundsch. Bündheim', text: '4' }]
+    - [{ url: '?staffel=830&r=6#p3829x3836', title: 'gegen Grunds. Vienenburg', text: '4' }]
+    - [{ url: '?staffel=830&r=2#p3829x3835', title: 'gegen Grundsch. Bündheim 2', text: '4' }]
+    - [{ url: '?staffel=830&r=8#p3829x3833', title: 'gegen WvS-Gym Bad Harzb.', text: '4' }]
+    - 14
+    - 26½
+    - ''
+-
+    - '3.'
+    - { text: 'Hildesheimer SVU18', url: '?mannschaft=3827', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=830&r=7#p3827x3832', title: 'gegen VfL Oker', text: '2' }]
+    - [{ url: '?staffel=830&r=3#p3827x3829', title: 'gegen Hildesheimer SVU10', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=830&r=2#p3827x3828', title: 'gegen Hildesheimer SVU12', text: '2' }]
+    - [{ url: '?staffel=830&r=6#p3827x3831', title: 'gegen SK Goslar', text: 3½ }]
+    - [{ url: '?staffel=830&r=4#p3827x3830', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - [{ url: '?staffel=830&r=9#p3827x3834', title: 'gegen Grundsch. Bündheim', text: '3' }]
+    - [{ url: '?staffel=830&r=1#p3827x3836', title: 'gegen Grunds. Vienenburg', text: '2' }]
+    - [{ url: '?staffel=830&r=8#p3827x3835', title: 'gegen Grundsch. Bündheim 2', text: '3' }]
+    - [{ url: '?staffel=830&r=5#p3827x3833', title: 'gegen WvS-Gym Bad Harzb.', text: '3' }]
+    - 14
+    - 24½
+    - ''
+-
+    - '4.'
+    - { text: 'Hildesheimer SVU12', url: '?mannschaft=3828', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=830&r=5#p3828x3832', title: 'gegen VfL Oker', text: '1' }]
+    - [{ url: '?staffel=830&r=4#p3828x3829', title: 'gegen Hildesheimer SVU10', text: '2' }]
+    - [{ url: '?staffel=830&r=2#p3828x3827', title: 'gegen Hildesheimer SVU18', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=830&r=7#p3828x3831', title: 'gegen SK Goslar', text: '3' }]
+    - [{ url: '?staffel=830&r=6#p3828x3830', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - [{ url: '?staffel=830&r=8#p3828x3834', title: 'gegen Grundsch. Bündheim', text: '2' }]
+    - [{ url: '?staffel=830&r=3#p3828x3836', title: 'gegen Grunds. Vienenburg', text: '3' }]
+    - [{ url: '?staffel=830&r=1#p3828x3835', title: 'gegen Grundsch. Bündheim 2', text: '4' }]
+    - [{ url: '?staffel=830&r=9#p3828x3833', title: 'gegen WvS-Gym Bad Harzb.', text: '3' }]
+    - 13
+    - '24'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Goslar', url: '?mannschaft=3831', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=830&r=1#p3831x3832', title: 'gegen VfL Oker', text: '1' }]
+    - [{ url: '?staffel=830&r=5#p3831x3829', title: 'gegen Hildesheimer SVU10', text: '2' }]
+    - [{ url: '?staffel=830&r=6#p3831x3827', title: 'gegen Hildesheimer SVU18', text: ½ }]
+    - [{ url: '?staffel=830&r=7#p3831x3828', title: 'gegen Hildesheimer SVU12', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=830&r=9#p3831x3830', title: 'gegen SK Bad Harzburg', text: '3' }]
+    - [{ url: '?staffel=830&r=3#p3831x3834', title: 'gegen Grundsch. Bündheim', text: '3' }]
+    - [{ url: '?staffel=830&r=8#p3831x3836', title: 'gegen Grunds. Vienenburg', text: '4' }]
+    - [{ url: '?staffel=830&r=4#p3831x3835', title: 'gegen Grundsch. Bündheim 2', text: '4' }]
+    - [{ url: '?staffel=830&r=2#p3831x3833', title: 'gegen WvS-Gym Bad Harzb.', text: '4' }]
+    - 11
+    - 22½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Bad Harzburg', url: '?mannschaft=3830', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=830&r=8#p3830x3832', title: 'gegen VfL Oker', text: '0' }]
+    - [{ url: '?staffel=830&r=7#p3830x3829', title: 'gegen Hildesheimer SVU10', text: '2' }]
+    - [{ url: '?staffel=830&r=4#p3830x3827', title: 'gegen Hildesheimer SVU18', text: '0' }]
+    - [{ url: '?staffel=830&r=6#p3830x3828', title: 'gegen Hildesheimer SVU12', text: '0' }]
+    - [{ url: '?staffel=830&r=9#p3830x3831', title: 'gegen SK Goslar', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=830&r=2#p3830x3834', title: 'gegen Grundsch. Bündheim', text: '3' }]
+    - [{ url: '?staffel=830&r=5#p3830x3836', title: 'gegen Grunds. Vienenburg', text: 3½ }]
+    - [{ url: '?staffel=830&r=3#p3830x3835', title: 'gegen Grundsch. Bündheim 2', text: '4' }]
+    - [{ url: '?staffel=830&r=1#p3830x3833', title: 'gegen WvS-Gym Bad Harzb.', text: '4' }]
+    - 9
+    - 17½
+    - ''
+-
+    - '7.'
+    - { text: 'Grundsch. Bündheim', url: '?mannschaft=3834', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=830&r=4#p3834x3832', title: 'gegen VfL Oker', text: ½ }]
+    - [{ url: '?staffel=830&r=1#p3834x3829', title: 'gegen Hildesheimer SVU10', text: '0' }]
+    - [{ url: '?staffel=830&r=9#p3834x3827', title: 'gegen Hildesheimer SVU18', text: '1' }]
+    - [{ url: '?staffel=830&r=8#p3834x3828', title: 'gegen Hildesheimer SVU12', text: '1' }]
+    - [{ url: '?staffel=830&r=3#p3834x3831', title: 'gegen SK Goslar', text: '1' }]
+    - [{ url: '?staffel=830&r=2#p3834x3830', title: 'gegen SK Bad Harzburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=830&r=7#p3834x3836', title: 'gegen Grunds. Vienenburg', text: '2' }]
+    - [{ url: '?staffel=830&r=5#p3834x3835', title: 'gegen Grundsch. Bündheim 2', text: 2½ }]
+    - [{ url: '?staffel=830&r=6#p3834x3833', title: 'gegen WvS-Gym Bad Harzb.', text: '3' }]
+    - 5
+    - '12'
+    - ''
+-
+    - '8.'
+    - { text: 'Grunds. Vienenburg', url: '?mannschaft=3836', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=830&r=2#p3836x3832', title: 'gegen VfL Oker', text: '0' }]
+    - [{ url: '?staffel=830&r=6#p3836x3829', title: 'gegen Hildesheimer SVU10', text: '0' }]
+    - [{ url: '?staffel=830&r=1#p3836x3827', title: 'gegen Hildesheimer SVU18', text: '2' }]
+    - [{ url: '?staffel=830&r=3#p3836x3828', title: 'gegen Hildesheimer SVU12', text: '1' }]
+    - [{ url: '?staffel=830&r=8#p3836x3831', title: 'gegen SK Goslar', text: '0' }]
+    - [{ url: '?staffel=830&r=5#p3836x3830', title: 'gegen SK Bad Harzburg', text: ½ }]
+    - [{ url: '?staffel=830&r=7#p3836x3834', title: 'gegen Grundsch. Bündheim', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=830&r=9#p3836x3835', title: 'gegen Grundsch. Bündheim 2', text: '2' }]
+    - [{ url: '?staffel=830&r=4#p3836x3833', title: 'gegen WvS-Gym Bad Harzb.', text: '2' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '9.'
+    - { text: 'Grundsch. Bündheim 2', url: '?mannschaft=3835', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=830&r=6#p3835x3832', title: 'gegen VfL Oker', text: '0' }]
+    - [{ url: '?staffel=830&r=2#p3835x3829', title: 'gegen Hildesheimer SVU10', text: '0' }]
+    - [{ url: '?staffel=830&r=8#p3835x3827', title: 'gegen Hildesheimer SVU18', text: '1' }]
+    - [{ url: '?staffel=830&r=1#p3835x3828', title: 'gegen Hildesheimer SVU12', text: '0' }]
+    - [{ url: '?staffel=830&r=4#p3835x3831', title: 'gegen SK Goslar', text: '0' }]
+    - [{ url: '?staffel=830&r=3#p3835x3830', title: 'gegen SK Bad Harzburg', text: '0' }]
+    - [{ url: '?staffel=830&r=5#p3835x3834', title: 'gegen Grundsch. Bündheim', text: 1½ }]
+    - [{ url: '?staffel=830&r=9#p3835x3836', title: 'gegen Grunds. Vienenburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=830&r=7#p3835x3833', title: 'gegen WvS-Gym Bad Harzb.', text: '2' }]
+    - 2
+    - 6½
+    - ''
+-
+    - '10.'
+    - { text: 'WvS-Gym Bad Harzb.', url: '?mannschaft=3833', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=830&r=3#p3833x3832', title: 'gegen VfL Oker', text: '0' }]
+    - [{ url: '?staffel=830&r=8#p3833x3829', title: 'gegen Hildesheimer SVU10', text: '0' }]
+    - [{ url: '?staffel=830&r=5#p3833x3827', title: 'gegen Hildesheimer SVU18', text: '1' }]
+    - [{ url: '?staffel=830&r=9#p3833x3828', title: 'gegen Hildesheimer SVU12', text: '0' }]
+    - [{ url: '?staffel=830&r=2#p3833x3831', title: 'gegen SK Goslar', text: '0' }]
+    - [{ url: '?staffel=830&r=1#p3833x3830', title: 'gegen SK Bad Harzburg', text: '0' }]
+    - [{ url: '?staffel=830&r=6#p3833x3834', title: 'gegen Grundsch. Bündheim', text: '1' }]
+    - [{ url: '?staffel=830&r=4#p3833x3836', title: 'gegen Grunds. Vienenburg', text: '2' }]
+    - [{ url: '?staffel=830&r=7#p3833x3835', title: 'gegen Grundsch. Bündheim 2', text: '2' }]
+    - xxx
+    - 2
+    - '6'
+    - ''

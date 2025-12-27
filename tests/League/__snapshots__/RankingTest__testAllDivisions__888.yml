@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'ESV Göttingen 2', url: '?mannschaft=7751', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1720&r=6#p7751x7765', title: 'gegen SG Südharz', text: '4' }]
+    - [{ url: '?staffel=1720&r=4#p7751x7726', title: 'gegen Plesse Bovenden', text: '3' }]
+    - [{ url: '?staffel=1720&r=2#p7751x7742', title: 'gegen SG Holzminden', text: 5½ }]
+    - [{ url: '?staffel=1720&r=5#p7751x7746', title: 'gegen SK Goslar', text: 4½ }]
+    - [{ url: '?staffel=1720&r=8#p7751x7755', title: 'gegen Hildesheimer SV 3', text: '6' }]
+    - [{ url: '?staffel=1720&r=1#p7751x7752', title: 'gegen ESV Göttingen 3', text: '5' }]
+    - [{ url: '?staffel=1720&r=3#p7751x7760', title: 'gegen SK Gronau', text: '6' }]
+    - [{ url: '?staffel=1720&r=7#p7751x7739', title: 'gegen SK Bad Harzburg', text: '8' }]
+    - 13
+    - '42'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Südharz', url: '?mannschaft=7765', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1720&r=6#p7765x7751', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1720&r=3#p7765x7726', title: 'gegen Plesse Bovenden', text: '8' }]
+    - [{ url: '?staffel=1720&r=7#p7765x7742', title: 'gegen SG Holzminden', text: '3' }]
+    - [{ url: '?staffel=1720&r=8#p7765x7746', title: 'gegen SK Goslar', text: '5' }]
+    - [{ url: '?staffel=1720&r=9#p7765x7755', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=1720&r=4#p7765x7752', title: 'gegen ESV Göttingen 3', text: '4' }]
+    - [{ url: '?staffel=1720&r=2#p7765x7760', title: 'gegen SK Gronau', text: '5' }]
+    - [{ url: '?staffel=1720&r=5#p7765x7739', title: 'gegen SK Bad Harzburg', text: 6½ }]
+    - 11
+    - 39½
+    - ''
+-
+    - '3.'
+    - { text: 'Plesse Bovenden', url: '?mannschaft=7726', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1720&r=4#p7726x7751', title: 'gegen ESV Göttingen 2', text: '5' }]
+    - [{ url: '?staffel=1720&r=3#p7726x7765', title: 'gegen SG Südharz', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1720&r=5#p7726x7742', title: 'gegen SG Holzminden', text: 4½ }]
+    - [{ url: '?staffel=1720&r=2#p7726x7746', title: 'gegen SK Goslar', text: 3½ }]
+    - [{ url: '?staffel=1720&r=7#p7726x7755', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=1720&r=6#p7726x7752', title: 'gegen ESV Göttingen 3', text: '4' }]
+    - [{ url: '?staffel=1720&r=9#p7726x7760', title: 'gegen SK Gronau', text: 4½ }]
+    - [{ url: '?staffel=1720&r=1#p7726x7739', title: 'gegen SK Bad Harzburg', text: 4½ }]
+    - 10
+    - '30'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Holzminden', url: '?mannschaft=7742', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1720&r=2#p7742x7751', title: 'gegen ESV Göttingen 2', text: 2½ }]
+    - [{ url: '?staffel=1720&r=7#p7742x7765', title: 'gegen SG Südharz', text: '5' }]
+    - [{ url: '?staffel=1720&r=5#p7742x7726', title: 'gegen Plesse Bovenden', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1720&r=9#p7742x7746', title: 'gegen SK Goslar', text: '4' }]
+    - [{ url: '?staffel=1720&r=1#p7742x7755', title: 'gegen Hildesheimer SV 3', text: '6' }]
+    - [{ url: '?staffel=1720&r=8#p7742x7752', title: 'gegen ESV Göttingen 3', text: 4½ }]
+    - [{ url: '?staffel=1720&r=6#p7742x7760', title: 'gegen SK Gronau', text: 3½ }]
+    - [{ url: '?staffel=1720&r=3#p7742x7739', title: 'gegen SK Bad Harzburg', text: '6' }]
+    - 9
+    - '35'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Goslar', url: '?mannschaft=7746', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1720&r=5#p7746x7751', title: 'gegen ESV Göttingen 2', text: 3½ }]
+    - [{ url: '?staffel=1720&r=8#p7746x7765', title: 'gegen SG Südharz', text: '3' }]
+    - [{ url: '?staffel=1720&r=2#p7746x7726', title: 'gegen Plesse Bovenden', text: 4½ }]
+    - [{ url: '?staffel=1720&r=9#p7746x7742', title: 'gegen SG Holzminden', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1720&r=3#p7746x7755', title: 'gegen Hildesheimer SV 3', text: '0' }]
+    - [{ url: '?staffel=1720&r=7#p7746x7752', title: 'gegen ESV Göttingen 3', text: 6½ }]
+    - [{ url: '?staffel=1720&r=1#p7746x7760', title: 'gegen SK Gronau', text: 4½ }]
+    - [{ url: '?staffel=1720&r=4#p7746x7739', title: 'gegen SK Bad Harzburg', text: 4½ }]
+    - 9
+    - 30½
+    - ''
+-
+    - '6.'
+    - { text: 'Hildesheimer SV 3', url: '?mannschaft=7755', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1720&r=8#p7755x7751', title: 'gegen ESV Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1720&r=9#p7755x7765', title: 'gegen SG Südharz', text: '4' }]
+    - [{ url: '?staffel=1720&r=7#p7755x7726', title: 'gegen Plesse Bovenden', text: '4' }]
+    - [{ url: '?staffel=1720&r=1#p7755x7742', title: 'gegen SG Holzminden', text: '2' }]
+    - [{ url: '?staffel=1720&r=3#p7755x7746', title: 'gegen SK Goslar', text: '8' }]
+    - xxx
+    - [{ url: '?staffel=1720&r=2#p7755x7752', title: 'gegen ESV Göttingen 3', text: '4' }]
+    - [{ url: '?staffel=1720&r=4#p7755x7760', title: 'gegen SK Gronau', text: '4' }]
+    - [{ url: '?staffel=1720&r=6#p7755x7739', title: 'gegen SK Bad Harzburg', text: 5½ }]
+    - 8
+    - 33½
+    - ''
+-
+    - '7.'
+    - { text: 'ESV Göttingen 3', url: '?mannschaft=7752', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1720&r=1#p7752x7751', title: 'gegen ESV Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1720&r=4#p7752x7765', title: 'gegen SG Südharz', text: '4' }]
+    - [{ url: '?staffel=1720&r=6#p7752x7726', title: 'gegen Plesse Bovenden', text: '4' }]
+    - [{ url: '?staffel=1720&r=8#p7752x7742', title: 'gegen SG Holzminden', text: 3½ }]
+    - [{ url: '?staffel=1720&r=7#p7752x7746', title: 'gegen SK Goslar', text: 1½ }]
+    - [{ url: '?staffel=1720&r=2#p7752x7755', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1720&r=5#p7752x7760', title: 'gegen SK Gronau', text: 4½ }]
+    - [{ url: '?staffel=1720&r=9#p7752x7739', title: 'gegen SK Bad Harzburg', text: '7' }]
+    - 7
+    - 31½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Gronau', url: '?mannschaft=7760', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1720&r=3#p7760x7751', title: 'gegen ESV Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1720&r=2#p7760x7765', title: 'gegen SG Südharz', text: '3' }]
+    - [{ url: '?staffel=1720&r=9#p7760x7726', title: 'gegen Plesse Bovenden', text: 3½ }]
+    - [{ url: '?staffel=1720&r=6#p7760x7742', title: 'gegen SG Holzminden', text: 4½ }]
+    - [{ url: '?staffel=1720&r=1#p7760x7746', title: 'gegen SK Goslar', text: 3½ }]
+    - [{ url: '?staffel=1720&r=4#p7760x7755', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=1720&r=5#p7760x7752', title: 'gegen ESV Göttingen 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1720&r=8#p7760x7739', title: 'gegen SK Bad Harzburg', text: '7' }]
+    - 5
+    - '31'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Bad Harzburg', url: '?mannschaft=7739', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1720&r=7#p7739x7751', title: 'gegen ESV Göttingen 2', text: '0' }]
+    - [{ url: '?staffel=1720&r=5#p7739x7765', title: 'gegen SG Südharz', text: 1½ }]
+    - [{ url: '?staffel=1720&r=1#p7739x7726', title: 'gegen Plesse Bovenden', text: 3½ }]
+    - [{ url: '?staffel=1720&r=3#p7739x7742', title: 'gegen SG Holzminden', text: '2' }]
+    - [{ url: '?staffel=1720&r=4#p7739x7746', title: 'gegen SK Goslar', text: 3½ }]
+    - [{ url: '?staffel=1720&r=6#p7739x7755', title: 'gegen Hildesheimer SV 3', text: 2½ }]
+    - [{ url: '?staffel=1720&r=9#p7739x7752', title: 'gegen ESV Göttingen 3', text: '1' }]
+    - [{ url: '?staffel=1720&r=8#p7739x7760', title: 'gegen SK Gronau', text: '1' }]
+    - xxx
+    - 0
+    - '15'
+    - absteiger

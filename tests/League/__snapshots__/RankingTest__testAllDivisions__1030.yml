@@ -1,0 +1,455 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=8563', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1880&r=6#p8563x8562', title: 'gegen SZ Bemerode', text: 2½ }]
+    - [{ url: '?staffel=1880&r=2#p8563x8514', title: 'gegen Hannover 96', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8563x8526', title: 'gegen HSK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=1880&r=1#p8563x8455', title: 'gegen SV Springe', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8563x8519', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1880&r=4#p8563x8527', title: 'gegen HSK Lister Turm 2', text: '3' }]
+    - [{ url: '?staffel=1880&r=3#p8563x8520', title: 'gegen SK Wennigsen', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8563x8524', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=1880&r=1#p8563x8456', title: 'gegen SV Springe 2', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8563x8502', title: 'gegen SF Barsinghausen', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8563x8525', title: 'gegen HSK Lister Turm 4', text: '4' }]
+    - {  }
+    - 21
+    - 36½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=8562', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1880&r=6#p8562x8563', title: 'gegen SZ Bemerode 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1880&r=2#p8562x8514', title: 'gegen Hannover 96', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8562x8526', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=1880&r=1#p8562x8455', title: 'gegen SV Springe', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8562x8519', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=1880&r=4#p8562x8527', title: 'gegen HSK Lister Turm 2', text: '4' }]
+    - [{ url: '?staffel=1880&r=3#p8562x8520', title: 'gegen SK Wennigsen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8562x8524', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=1880&r=1#p8562x8456', title: 'gegen SV Springe 2', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8562x8502', title: 'gegen SF Barsinghausen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8562x8525', title: 'gegen HSK Lister Turm 4', text: '4' }]
+    - {  }
+    - 20
+    - '37'
+    - ''
+-
+    - '3.'
+    - { text: 'Hannover 96', url: '?mannschaft=8514', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1880&r=2#p8514x8563', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1880&r=2#p8514x8562', title: 'gegen SZ Bemerode', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1880&r=4#p8514x8376', title: 'gegen SK Lehrte', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8514x8377', title: 'gegen SK Lehrte 2', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8514x8515', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=1880&r=1#p8514x8524', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8514x8516', title: 'gegen Hannover 96 3', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8514x8458', title: 'gegen SV Warmsen', text: '4' }]
+    - [{ url: '?staffel=1880&r=1#p8514x8525', title: 'gegen HSK Lister Turm 4', text: '4' }]
+    - [{ url: '?staffel=1880&r=3#p8514x8564', title: 'gegen Eystruper SK', text: '4' }]
+    - 16
+    - 32½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte', url: '?mannschaft=8376', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8376x8514', title: 'gegen Hannover 96', text: '0' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8376x8455', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=1880&r=1#p8376x8377', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=1880&r=4#p8376x8519', title: 'gegen SD Isernhagen', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8376x8520', title: 'gegen SK Wennigsen', text: '3' }]
+    - [{ url: '?staffel=1880&r=2#p8376x8515', title: 'gegen Hannover 96 2', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8376x8456', title: 'gegen SV Springe 2', text: '4' }]
+    - [{ url: '?staffel=1880&r=2#p8376x8516', title: 'gegen Hannover 96 3', text: '4' }]
+    - [{ url: '?staffel=1880&r=5#p8376x8502', title: 'gegen SF Barsinghausen', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - 15
+    - 26½
+    - ''
+-
+    - '5.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=8526', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1880&r=4#p8526x8563', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1880&r=4#p8526x8562', title: 'gegen SZ Bemerode', text: '0' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8526x8527', title: 'gegen HSK Lister Turm 2', text: '3' }]
+    - [{ url: '?staffel=1880&r=1#p8526x8520', title: 'gegen SK Wennigsen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8526x8524', title: 'gegen HSK Lister Turm 3', text: '3' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=1#p8526x8502', title: 'gegen SF Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=1880&r=5#p8526x8458', title: 'gegen SV Warmsen', text: '4' }]
+    - [{ url: '?staffel=1880&r=3#p8526x8525', title: 'gegen HSK Lister Turm 4', text: '4' }]
+    - [{ url: '?staffel=1880&r=5#p8526x8564', title: 'gegen Eystruper SK', text: '4' }]
+    - 14
+    - '25'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Springe', url: '?mannschaft=8455', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1880&r=1#p8455x8563', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1880&r=1#p8455x8562', title: 'gegen SZ Bemerode', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8455x8376', title: 'gegen SK Lehrte', text: '2' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1880&r=3#p8455x8377', title: 'gegen SK Lehrte 2', text: '2' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8455x8515', title: 'gegen Hannover 96 2', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8455x8456', title: 'gegen SV Springe 2', text: '4' }]
+    - [{ url: '?staffel=1880&r=4#p8455x8516', title: 'gegen Hannover 96 3', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8455x8458', title: 'gegen SV Warmsen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8455x8564', title: 'gegen Eystruper SK', text: '4' }]
+    - 12
+    - '23'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=8377', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8377x8514', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=1880&r=1#p8377x8376', title: 'gegen SK Lehrte', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8377x8455', title: 'gegen SV Springe', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1880&r=4#p8377x8519', title: 'gegen SD Isernhagen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8377x8520', title: 'gegen SK Wennigsen', text: '2' }]
+    - [{ url: '?staffel=1880&r=2#p8377x8515', title: 'gegen Hannover 96 2', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8377x8456', title: 'gegen SV Springe 2', text: '2' }]
+    - [{ url: '?staffel=1880&r=2#p8377x8516', title: 'gegen Hannover 96 3', text: '4' }]
+    - [{ url: '?staffel=1880&r=5#p8377x8502', title: 'gegen SF Barsinghausen', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - 11
+    - '21'
+    - ''
+-
+    - '8.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=8519', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1880&r=2#p8519x8563', title: 'gegen SZ Bemerode 2', text: '2' }]
+    - [{ url: '?staffel=1880&r=2#p8519x8562', title: 'gegen SZ Bemerode', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8519x8376', title: 'gegen SK Lehrte', text: ½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8519x8377', title: 'gegen SK Lehrte 2', text: '1' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=1#p8519x8524', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8519x8458', title: 'gegen SV Warmsen', text: '3' }]
+    - [{ url: '?staffel=1880&r=1#p8519x8525', title: 'gegen HSK Lister Turm 4', text: '4' }]
+    - [{ url: '?staffel=1880&r=3#p8519x8564', title: 'gegen Eystruper SK', text: '4' }]
+    - 9
+    - 19½
+    - ''
+-
+    - '9.'
+    - { text: 'HSK Lister Turm 2', url: '?mannschaft=8527', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1880&r=4#p8527x8563', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1880&r=4#p8527x8562', title: 'gegen SZ Bemerode', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8527x8526', title: 'gegen HSK Lister Turm', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1880&r=1#p8527x8520', title: 'gegen SK Wennigsen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8527x8524', title: 'gegen HSK Lister Turm 3', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=1#p8527x8502', title: 'gegen SF Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=1880&r=5#p8527x8458', title: 'gegen SV Warmsen', text: '3' }]
+    - [{ url: '?staffel=1880&r=3#p8527x8525', title: 'gegen HSK Lister Turm 4', text: '2' }]
+    - [{ url: '?staffel=1880&r=5#p8527x8564', title: 'gegen Eystruper SK', text: '4' }]
+    - 9
+    - '18'
+    - ''
+-
+    - '10.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=8520', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1880&r=3#p8520x8563', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1880&r=3#p8520x8562', title: 'gegen SZ Bemerode', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8520x8376', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1880&r=1#p8520x8526', title: 'gegen HSK Lister Turm', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8520x8377', title: 'gegen SK Lehrte 2', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=1#p8520x8527', title: 'gegen HSK Lister Turm 2', text: '1' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8520x8524', title: 'gegen HSK Lister Turm 3', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8520x8458', title: 'gegen SV Warmsen', text: '3' }]
+    - [{ url: '?staffel=1880&r=2#p8520x8525', title: 'gegen HSK Lister Turm 4', text: 2½ }]
+    - [{ url: '?staffel=1880&r=4#p8520x8564', title: 'gegen Eystruper SK', text: '4' }]
+    - 7
+    - 16½
+    - ''
+-
+    - '11.'
+    - { text: 'Hannover 96 2', url: '?mannschaft=8515', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8515x8514', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=1880&r=2#p8515x8376', title: 'gegen SK Lehrte', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8515x8455', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1880&r=2#p8515x8377', title: 'gegen SK Lehrte 2', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8515x8456', title: 'gegen SV Springe 2', text: '2' }]
+    - [{ url: '?staffel=1880&r=3#p8515x8516', title: 'gegen Hannover 96 3', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=1#p8515x8458', title: 'gegen SV Warmsen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=1#p8515x8564', title: 'gegen Eystruper SK', text: '4' }]
+    - 7
+    - '16'
+    - ''
+-
+    - '12.'
+    - { text: 'HSK Lister Turm 3', url: '?mannschaft=8524', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1880&r=5#p8524x8563', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1880&r=5#p8524x8562', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1880&r=1#p8524x8514', title: 'gegen Hannover 96', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8524x8526', title: 'gegen HSK Lister Turm', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=1#p8524x8519', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1880&r=3#p8524x8527', title: 'gegen HSK Lister Turm 2', text: '2' }]
+    - [{ url: '?staffel=1880&r=2#p8524x8520', title: 'gegen SK Wennigsen', text: '2' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8524x8502', title: 'gegen SF Barsinghausen', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8524x8525', title: 'gegen HSK Lister Turm 4', text: '4' }]
+    - {  }
+    - 7
+    - '11'
+    - ''
+-
+    - '13.'
+    - { text: 'SV Springe 2', url: '?mannschaft=8456', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1880&r=1#p8456x8563', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1880&r=1#p8456x8562', title: 'gegen SZ Bemerode', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8456x8376', title: 'gegen SK Lehrte', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8456x8455', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1880&r=3#p8456x8377', title: 'gegen SK Lehrte 2', text: '2' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8456x8515', title: 'gegen Hannover 96 2', text: '2' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1880&r=4#p8456x8516', title: 'gegen Hannover 96 3', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8456x8458', title: 'gegen SV Warmsen', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8456x8564', title: 'gegen Eystruper SK', text: '3' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '14.'
+    - { text: 'Hannover 96 3', url: '?mannschaft=8516', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8516x8514', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=1880&r=2#p8516x8376', title: 'gegen SK Lehrte', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8516x8455', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1880&r=2#p8516x8377', title: 'gegen SK Lehrte 2', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8516x8515', title: 'gegen Hannover 96 2', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8516x8456', title: 'gegen SV Springe 2', text: '2' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1880&r=1#p8516x8458', title: 'gegen SV Warmsen', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=1#p8516x8564', title: 'gegen Eystruper SK', text: '4' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '15.'
+    - { text: 'SF Barsinghausen', url: '?mannschaft=8502', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1880&r=3#p8502x8563', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1880&r=3#p8502x8562', title: 'gegen SZ Bemerode', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8502x8376', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1880&r=1#p8502x8526', title: 'gegen HSK Lister Turm', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8502x8377', title: 'gegen SK Lehrte 2', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=1#p8502x8527', title: 'gegen HSK Lister Turm 2', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8502x8524', title: 'gegen HSK Lister Turm 3', text: '2' }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1880&r=4#p8502x8458', title: 'gegen SV Warmsen', text: '2' }]
+    - [{ url: '?staffel=1880&r=2#p8502x8525', title: 'gegen HSK Lister Turm 4', text: 1½ }]
+    - [{ url: '?staffel=1880&r=4#p8502x8564', title: 'gegen Eystruper SK', text: '4' }]
+    - 4
+    - 12½
+    - ''
+-
+    - '16.'
+    - { text: 'SV Warmsen', url: '?mannschaft=8458', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8458x8514', title: 'gegen Hannover 96', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8458x8526', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1880&r=2#p8458x8455', title: 'gegen SV Springe', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8458x8519', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1880&r=5#p8458x8527', title: 'gegen HSK Lister Turm 2', text: '1' }]
+    - [{ url: '?staffel=1880&r=4#p8458x8520', title: 'gegen SK Wennigsen', text: '1' }]
+    - [{ url: '?staffel=1880&r=1#p8458x8515', title: 'gegen Hannover 96 2', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8458x8456', title: 'gegen SV Springe 2', text: 2½ }]
+    - [{ url: '?staffel=1880&r=1#p8458x8516', title: 'gegen Hannover 96 3', text: '0' }]
+    - [{ url: '?staffel=1880&r=4#p8458x8502', title: 'gegen SF Barsinghausen', text: '2' }]
+    - xxx
+    - {  }
+    - {  }
+    - 3
+    - 9½
+    - ''
+-
+    - '17.'
+    - { text: 'HSK Lister Turm 4', url: '?mannschaft=8525', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1880&r=5#p8525x8563', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1880&r=5#p8525x8562', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1880&r=1#p8525x8514', title: 'gegen Hannover 96', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8525x8526', title: 'gegen HSK Lister Turm', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=1#p8525x8519', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1880&r=3#p8525x8527', title: 'gegen HSK Lister Turm 2', text: '2' }]
+    - [{ url: '?staffel=1880&r=2#p8525x8520', title: 'gegen SK Wennigsen', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1880&r=4#p8525x8524', title: 'gegen HSK Lister Turm 3', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8525x8502', title: 'gegen SF Barsinghausen', text: 2½ }]
+    - {  }
+    - xxx
+    - {  }
+    - 3
+    - '6'
+    - ''
+-
+    - '18.'
+    - { text: 'Eystruper SK', url: '?mannschaft=8564', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8564x8514', title: 'gegen Hannover 96', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=5#p8564x8526', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1880&r=2#p8564x8455', title: 'gegen SV Springe', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=3#p8564x8519', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1880&r=5#p8564x8527', title: 'gegen HSK Lister Turm 2', text: '0' }]
+    - [{ url: '?staffel=1880&r=4#p8564x8520', title: 'gegen SK Wennigsen', text: '0' }]
+    - [{ url: '?staffel=1880&r=1#p8564x8515', title: 'gegen Hannover 96 2', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1880&r=2#p8564x8456', title: 'gegen SV Springe 2', text: '1' }]
+    - [{ url: '?staffel=1880&r=1#p8564x8516', title: 'gegen Hannover 96 3', text: '0' }]
+    - [{ url: '?staffel=1880&r=4#p8564x8502', title: 'gegen SF Barsinghausen', text: '0' }]
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '1'
+    - ''

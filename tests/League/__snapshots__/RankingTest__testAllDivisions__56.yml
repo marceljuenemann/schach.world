@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=752', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=455&r=9#p752x748', title: 'gegen SK Neustadt', text: 3½ }]
+    - [{ url: '?staffel=455&r=3#p752x775', title: 'gegen SV Berenbostel 2', text: 4½ }]
+    - [{ url: '?staffel=455&r=4#p752x783', title: 'gegen SVg Calenberg', text: 2½ }]
+    - [{ url: '?staffel=455&r=2#p752x913', title: 'gegen SVg Steinhude', text: '6' }]
+    - [{ url: '?staffel=455&r=8#p752x786', title: 'gegen Eldagsen/Bad Mü', text: 4½ }]
+    - [{ url: '?staffel=455&r=6#p752x772', title: 'gegen Barsinghausen 2', text: '6' }]
+    - [{ url: '?staffel=455&r=1#p752x756', title: 'gegen SK Wennigsen', text: 6½ }]
+    - [{ url: '?staffel=455&r=7#p752x920', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=455&r=5#p752x919', title: 'gegen Marienw/Gar/See 2', text: 5½ }]
+    - 14
+    - 44½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Neustadt', url: '?mannschaft=748', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=455&r=9#p748x752', title: 'gegen SK Stolzenau', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=455&r=1#p748x775', title: 'gegen SV Berenbostel 2', text: '5' }]
+    - [{ url: '?staffel=455&r=2#p748x783', title: 'gegen SVg Calenberg', text: 2½ }]
+    - [{ url: '?staffel=455&r=7#p748x913', title: 'gegen SVg Steinhude', text: 5½ }]
+    - [{ url: '?staffel=455&r=6#p748x786', title: 'gegen Eldagsen/Bad Mü', text: '5' }]
+    - [{ url: '?staffel=455&r=4#p748x772', title: 'gegen Barsinghausen 2', text: '4' }]
+    - [{ url: '?staffel=455&r=8#p748x756', title: 'gegen SK Wennigsen', text: '4' }]
+    - [{ url: '?staffel=455&r=5#p748x920', title: 'gegen Eystruper SK', text: '6' }]
+    - [{ url: '?staffel=455&r=3#p748x919', title: 'gegen Marienw/Gar/See 2', text: '5' }]
+    - 14
+    - 41½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Berenbostel 2', url: '?mannschaft=775', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=455&r=3#p775x752', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=455&r=1#p775x748', title: 'gegen SK Neustadt', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=455&r=5#p775x783', title: 'gegen SVg Calenberg', text: '7' }]
+    - [{ url: '?staffel=455&r=4#p775x913', title: 'gegen SVg Steinhude', text: 4½ }]
+    - [{ url: '?staffel=455&r=9#p775x786', title: 'gegen Eldagsen/Bad Mü', text: 6½ }]
+    - [{ url: '?staffel=455&r=7#p775x772', title: 'gegen Barsinghausen 2', text: 4½ }]
+    - [{ url: '?staffel=455&r=2#p775x756', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=455&r=8#p775x920', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=455&r=6#p775x919', title: 'gegen Marienw/Gar/See 2', text: '7' }]
+    - 13
+    - 44½
+    - ''
+-
+    - '4.'
+    - { text: 'SVg Calenberg', url: '?mannschaft=783', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=455&r=4#p783x752', title: 'gegen SK Stolzenau', text: 5½ }]
+    - [{ url: '?staffel=455&r=2#p783x748', title: 'gegen SK Neustadt', text: 5½ }]
+    - [{ url: '?staffel=455&r=5#p783x775', title: 'gegen SV Berenbostel 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=455&r=6#p783x913', title: 'gegen SVg Steinhude', text: '3' }]
+    - [{ url: '?staffel=455&r=1#p783x786', title: 'gegen Eldagsen/Bad Mü', text: 4½ }]
+    - [{ url: '?staffel=455&r=8#p783x772', title: 'gegen Barsinghausen 2', text: '2' }]
+    - [{ url: '?staffel=455&r=3#p783x756', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=455&r=9#p783x920', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=455&r=7#p783x919', title: 'gegen Marienw/Gar/See 2', text: '4' }]
+    - 11
+    - '35'
+    - ''
+-
+    - '5.'
+    - { text: 'SVg Steinhude', url: '?mannschaft=913', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=455&r=2#p913x752', title: 'gegen SK Stolzenau', text: '2' }]
+    - [{ url: '?staffel=455&r=7#p913x748', title: 'gegen SK Neustadt', text: 2½ }]
+    - [{ url: '?staffel=455&r=4#p913x775', title: 'gegen SV Berenbostel 2', text: 3½ }]
+    - [{ url: '?staffel=455&r=6#p913x783', title: 'gegen SVg Calenberg', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=455&r=5#p913x786', title: 'gegen Eldagsen/Bad Mü', text: '5' }]
+    - [{ url: '?staffel=455&r=1#p913x772', title: 'gegen Barsinghausen 2', text: 5½ }]
+    - [{ url: '?staffel=455&r=9#p913x756', title: 'gegen SK Wennigsen', text: 2½ }]
+    - [{ url: '?staffel=455&r=3#p913x920', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=455&r=8#p913x919', title: 'gegen Marienw/Gar/See 2', text: '7' }]
+    - 10
+    - 38½
+    - ''
+-
+    - '6.'
+    - { text: 'Eldagsen/Bad Mü', url: '?mannschaft=786', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=455&r=8#p786x752', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=455&r=6#p786x748', title: 'gegen SK Neustadt', text: '3' }]
+    - [{ url: '?staffel=455&r=9#p786x775', title: 'gegen SV Berenbostel 2', text: 1½ }]
+    - [{ url: '?staffel=455&r=1#p786x783', title: 'gegen SVg Calenberg', text: 3½ }]
+    - [{ url: '?staffel=455&r=5#p786x913', title: 'gegen SVg Steinhude', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=455&r=3#p786x772', title: 'gegen Barsinghausen 2', text: 6½ }]
+    - [{ url: '?staffel=455&r=7#p786x756', title: 'gegen SK Wennigsen', text: '5' }]
+    - [{ url: '?staffel=455&r=4#p786x920', title: 'gegen Eystruper SK', text: 4½ }]
+    - [{ url: '?staffel=455&r=2#p786x919', title: 'gegen Marienw/Gar/See 2', text: '5' }]
+    - 8
+    - 35½
+    - ''
+-
+    - '7.'
+    - { text: 'Barsinghausen 2', url: '?mannschaft=772', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=455&r=6#p772x752', title: 'gegen SK Stolzenau', text: '2' }]
+    - [{ url: '?staffel=455&r=4#p772x748', title: 'gegen SK Neustadt', text: '4' }]
+    - [{ url: '?staffel=455&r=7#p772x775', title: 'gegen SV Berenbostel 2', text: 3½ }]
+    - [{ url: '?staffel=455&r=8#p772x783', title: 'gegen SVg Calenberg', text: '6' }]
+    - [{ url: '?staffel=455&r=1#p772x913', title: 'gegen SVg Steinhude', text: 2½ }]
+    - [{ url: '?staffel=455&r=3#p772x786', title: 'gegen Eldagsen/Bad Mü', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=455&r=5#p772x756', title: 'gegen SK Wennigsen', text: '4' }]
+    - [{ url: '?staffel=455&r=2#p772x920', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=455&r=9#p772x919', title: 'gegen Marienw/Gar/See 2', text: 4½ }]
+    - 7
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=756', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=455&r=1#p756x752', title: 'gegen SK Stolzenau', text: 1½ }]
+    - [{ url: '?staffel=455&r=8#p756x748', title: 'gegen SK Neustadt', text: '4' }]
+    - [{ url: '?staffel=455&r=2#p756x775', title: 'gegen SV Berenbostel 2', text: 3½ }]
+    - [{ url: '?staffel=455&r=3#p756x783', title: 'gegen SVg Calenberg', text: 3½ }]
+    - [{ url: '?staffel=455&r=9#p756x913', title: 'gegen SVg Steinhude', text: 5½ }]
+    - [{ url: '?staffel=455&r=7#p756x786', title: 'gegen Eldagsen/Bad Mü', text: '3' }]
+    - [{ url: '?staffel=455&r=5#p756x772', title: 'gegen Barsinghausen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=455&r=6#p756x920', title: 'gegen Eystruper SK', text: 4½ }]
+    - [{ url: '?staffel=455&r=4#p756x919', title: 'gegen Marienw/Gar/See 2', text: 3½ }]
+    - 6
+    - '33'
+    - ''
+-
+    - '9.'
+    - { text: 'Eystruper SK', url: '?mannschaft=920', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=455&r=7#p920x752', title: 'gegen SK Stolzenau', text: 2½ }]
+    - [{ url: '?staffel=455&r=5#p920x748', title: 'gegen SK Neustadt', text: '2' }]
+    - [{ url: '?staffel=455&r=8#p920x775', title: 'gegen SV Berenbostel 2', text: '4' }]
+    - [{ url: '?staffel=455&r=9#p920x783', title: 'gegen SVg Calenberg', text: '3' }]
+    - [{ url: '?staffel=455&r=3#p920x913', title: 'gegen SVg Steinhude', text: 2½ }]
+    - [{ url: '?staffel=455&r=4#p920x786', title: 'gegen Eldagsen/Bad Mü', text: 3½ }]
+    - [{ url: '?staffel=455&r=2#p920x772', title: 'gegen Barsinghausen 2', text: '4' }]
+    - [{ url: '?staffel=455&r=6#p920x756', title: 'gegen SK Wennigsen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=455&r=1#p920x919', title: 'gegen Marienw/Gar/See 2', text: 4½ }]
+    - 4
+    - 29½
+    - ''
+-
+    - '10.'
+    - { text: 'Marienw/Gar/See 2', url: '?mannschaft=919', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=455&r=5#p919x752', title: 'gegen SK Stolzenau', text: 2½ }]
+    - [{ url: '?staffel=455&r=3#p919x748', title: 'gegen SK Neustadt', text: '3' }]
+    - [{ url: '?staffel=455&r=6#p919x775', title: 'gegen SV Berenbostel 2', text: '1' }]
+    - [{ url: '?staffel=455&r=7#p919x783', title: 'gegen SVg Calenberg', text: '4' }]
+    - [{ url: '?staffel=455&r=8#p919x913', title: 'gegen SVg Steinhude', text: '1' }]
+    - [{ url: '?staffel=455&r=2#p919x786', title: 'gegen Eldagsen/Bad Mü', text: '3' }]
+    - [{ url: '?staffel=455&r=9#p919x772', title: 'gegen Barsinghausen 2', text: 3½ }]
+    - [{ url: '?staffel=455&r=4#p919x756', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=455&r=1#p919x920', title: 'gegen Eystruper SK', text: 3½ }]
+    - xxx
+    - 3
+    - '26'
+    - ''

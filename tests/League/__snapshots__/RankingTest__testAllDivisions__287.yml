@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Hannover 3', url: '?mannschaft=3140', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=721&r=5#p3140x3182', title: 'gegen Turm Hannover', text: '4' }]
+    - [{ url: '?staffel=721&r=2#p3140x3126', title: 'gegen SV Gretenberg', text: '5' }]
+    - [{ url: '?staffel=721&r=8#p3140x3086', title: 'gegen SG Döhren-Gleid', text: 5½ }]
+    - [{ url: '?staffel=721&r=9#p3140x3153', title: 'gegen SK Anderten', text: 5½ }]
+    - [{ url: '?staffel=721&r=6#p3140x3034', title: 'gegen SF Mühlenberg', text: '4' }]
+    - [{ url: '?staffel=721&r=3#p3140x3210', title: 'gegen TuS Wunstorf', text: '6' }]
+    - [{ url: '?staffel=721&r=7#p3140x3002', title: 'gegen SK Wennigsen', text: 6½ }]
+    - [{ url: '?staffel=721&r=4#p3140x3145', title: 'gegen SC Stadthagen', text: 5½ }]
+    - [{ url: '?staffel=721&r=1#p3140x3170', title: 'gegen TSV Pattensen', text: '5' }]
+    - 16
+    - '47'
+    - ''
+-
+    - '2.'
+    - { text: 'Turm Hannover', url: '?mannschaft=3182', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=721&r=5#p3182x3140', title: 'gegen SF Hannover 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=721&r=8#p3182x3126', title: 'gegen SV Gretenberg', text: 3½ }]
+    - [{ url: '?staffel=721&r=2#p3182x3086', title: 'gegen SG Döhren-Gleid', text: '5' }]
+    - [{ url: '?staffel=721&r=4#p3182x3153', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=721&r=7#p3182x3034', title: 'gegen SF Mühlenberg', text: '5' }]
+    - [{ url: '?staffel=721&r=1#p3182x3210', title: 'gegen TuS Wunstorf', text: '5' }]
+    - [{ url: '?staffel=721&r=9#p3182x3002', title: 'gegen SK Wennigsen', text: 5½ }]
+    - [{ url: '?staffel=721&r=3#p3182x3145', title: 'gegen SC Stadthagen', text: '8' }]
+    - [{ url: '?staffel=721&r=6#p3182x3170', title: 'gegen TSV Pattensen', text: 5½ }]
+    - 13
+    - '45'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Gretenberg', url: '?mannschaft=3126', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=721&r=2#p3126x3140', title: 'gegen SF Hannover 3', text: '3' }]
+    - [{ url: '?staffel=721&r=8#p3126x3182', title: 'gegen Turm Hannover', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=721&r=5#p3126x3086', title: 'gegen SG Döhren-Gleid', text: '4' }]
+    - [{ url: '?staffel=721&r=6#p3126x3153', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=721&r=3#p3126x3034', title: 'gegen SF Mühlenberg', text: 4½ }]
+    - [{ url: '?staffel=721&r=9#p3126x3210', title: 'gegen TuS Wunstorf', text: '5' }]
+    - [{ url: '?staffel=721&r=4#p3126x3002', title: 'gegen SK Wennigsen', text: '4' }]
+    - [{ url: '?staffel=721&r=1#p3126x3145', title: 'gegen SC Stadthagen', text: '6' }]
+    - [{ url: '?staffel=721&r=7#p3126x3170', title: 'gegen TSV Pattensen', text: 5½ }]
+    - 13
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Döhren-Gleid', url: '?mannschaft=3086', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=721&r=8#p3086x3140', title: 'gegen SF Hannover 3', text: 2½ }]
+    - [{ url: '?staffel=721&r=2#p3086x3182', title: 'gegen Turm Hannover', text: '3' }]
+    - [{ url: '?staffel=721&r=5#p3086x3126', title: 'gegen SV Gretenberg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=721&r=3#p3086x3153', title: 'gegen SK Anderten', text: 4½ }]
+    - [{ url: '?staffel=721&r=9#p3086x3034', title: 'gegen SF Mühlenberg', text: '3' }]
+    - [{ url: '?staffel=721&r=6#p3086x3210', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=721&r=1#p3086x3002', title: 'gegen SK Wennigsen', text: 5½ }]
+    - [{ url: '?staffel=721&r=7#p3086x3145', title: 'gegen SC Stadthagen', text: '6' }]
+    - [{ url: '?staffel=721&r=4#p3086x3170', title: 'gegen TSV Pattensen', text: 6½ }]
+    - 10
+    - '39'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Anderten', url: '?mannschaft=3153', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=721&r=9#p3153x3140', title: 'gegen SF Hannover 3', text: 2½ }]
+    - [{ url: '?staffel=721&r=4#p3153x3182', title: 'gegen Turm Hannover', text: 4½ }]
+    - [{ url: '?staffel=721&r=6#p3153x3126', title: 'gegen SV Gretenberg', text: '4' }]
+    - [{ url: '?staffel=721&r=3#p3153x3086', title: 'gegen SG Döhren-Gleid', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=721&r=1#p3153x3034', title: 'gegen SF Mühlenberg', text: 3½ }]
+    - [{ url: '?staffel=721&r=7#p3153x3210', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=721&r=2#p3153x3002', title: 'gegen SK Wennigsen', text: '6' }]
+    - [{ url: '?staffel=721&r=8#p3153x3145', title: 'gegen SC Stadthagen', text: 6½ }]
+    - [{ url: '?staffel=721&r=5#p3153x3170', title: 'gegen TSV Pattensen', text: '5' }]
+    - 9
+    - '38'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Mühlenberg', url: '?mannschaft=3034', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=721&r=6#p3034x3140', title: 'gegen SF Hannover 3', text: '4' }]
+    - [{ url: '?staffel=721&r=7#p3034x3182', title: 'gegen Turm Hannover', text: '3' }]
+    - [{ url: '?staffel=721&r=3#p3034x3126', title: 'gegen SV Gretenberg', text: 3½ }]
+    - [{ url: '?staffel=721&r=9#p3034x3086', title: 'gegen SG Döhren-Gleid', text: '5' }]
+    - [{ url: '?staffel=721&r=1#p3034x3153', title: 'gegen SK Anderten', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=721&r=4#p3034x3210', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=721&r=8#p3034x3002', title: 'gegen SK Wennigsen', text: '3' }]
+    - [{ url: '?staffel=721&r=5#p3034x3145', title: 'gegen SC Stadthagen', text: 3½ }]
+    - [{ url: '?staffel=721&r=2#p3034x3170', title: 'gegen TSV Pattensen', text: 4½ }]
+    - 9
+    - 35½
+    - ''
+-
+    - '7.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=3210', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=721&r=3#p3210x3140', title: 'gegen SF Hannover 3', text: '2' }]
+    - [{ url: '?staffel=721&r=1#p3210x3182', title: 'gegen Turm Hannover', text: '3' }]
+    - [{ url: '?staffel=721&r=9#p3210x3126', title: 'gegen SV Gretenberg', text: '3' }]
+    - [{ url: '?staffel=721&r=6#p3210x3086', title: 'gegen SG Döhren-Gleid', text: '4' }]
+    - [{ url: '?staffel=721&r=7#p3210x3153', title: 'gegen SK Anderten', text: 5½ }]
+    - [{ url: '?staffel=721&r=4#p3210x3034', title: 'gegen SF Mühlenberg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=721&r=5#p3210x3002', title: 'gegen SK Wennigsen', text: '6' }]
+    - [{ url: '?staffel=721&r=2#p3210x3145', title: 'gegen SC Stadthagen', text: '2' }]
+    - [{ url: '?staffel=721&r=8#p3210x3170', title: 'gegen TSV Pattensen', text: 5½ }]
+    - 7
+    - 34½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=3002', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=721&r=7#p3002x3140', title: 'gegen SF Hannover 3', text: 1½ }]
+    - [{ url: '?staffel=721&r=9#p3002x3182', title: 'gegen Turm Hannover', text: 2½ }]
+    - [{ url: '?staffel=721&r=4#p3002x3126', title: 'gegen SV Gretenberg', text: '4' }]
+    - [{ url: '?staffel=721&r=1#p3002x3086', title: 'gegen SG Döhren-Gleid', text: 2½ }]
+    - [{ url: '?staffel=721&r=2#p3002x3153', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=721&r=8#p3002x3034', title: 'gegen SF Mühlenberg', text: '5' }]
+    - [{ url: '?staffel=721&r=5#p3002x3210', title: 'gegen TuS Wunstorf', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=721&r=6#p3002x3145', title: 'gegen SC Stadthagen', text: 5½ }]
+    - [{ url: '?staffel=721&r=3#p3002x3170', title: 'gegen TSV Pattensen', text: '5' }]
+    - 7
+    - '30'
+    - ''
+-
+    - '9.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=3145', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=721&r=4#p3145x3140', title: 'gegen SF Hannover 3', text: 2½ }]
+    - [{ url: '?staffel=721&r=3#p3145x3182', title: 'gegen Turm Hannover', text: '0' }]
+    - [{ url: '?staffel=721&r=1#p3145x3126', title: 'gegen SV Gretenberg', text: '2' }]
+    - [{ url: '?staffel=721&r=7#p3145x3086', title: 'gegen SG Döhren-Gleid', text: '2' }]
+    - [{ url: '?staffel=721&r=8#p3145x3153', title: 'gegen SK Anderten', text: 1½ }]
+    - [{ url: '?staffel=721&r=5#p3145x3034', title: 'gegen SF Mühlenberg', text: 4½ }]
+    - [{ url: '?staffel=721&r=2#p3145x3210', title: 'gegen TuS Wunstorf', text: '6' }]
+    - [{ url: '?staffel=721&r=6#p3145x3002', title: 'gegen SK Wennigsen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=721&r=9#p3145x3170', title: 'gegen TSV Pattensen', text: '4' }]
+    - 5
+    - '25'
+    - ''
+-
+    - '10.'
+    - { text: 'TSV Pattensen', url: '?mannschaft=3170', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=721&r=1#p3170x3140', title: 'gegen SF Hannover 3', text: '3' }]
+    - [{ url: '?staffel=721&r=6#p3170x3182', title: 'gegen Turm Hannover', text: 2½ }]
+    - [{ url: '?staffel=721&r=7#p3170x3126', title: 'gegen SV Gretenberg', text: 2½ }]
+    - [{ url: '?staffel=721&r=4#p3170x3086', title: 'gegen SG Döhren-Gleid', text: 1½ }]
+    - [{ url: '?staffel=721&r=5#p3170x3153', title: 'gegen SK Anderten', text: '3' }]
+    - [{ url: '?staffel=721&r=2#p3170x3034', title: 'gegen SF Mühlenberg', text: 3½ }]
+    - [{ url: '?staffel=721&r=8#p3170x3210', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=721&r=3#p3170x3002', title: 'gegen SK Wennigsen', text: '3' }]
+    - [{ url: '?staffel=721&r=9#p3170x3145', title: 'gegen SC Stadthagen', text: '4' }]
+    - xxx
+    - 1
+    - 25½
+    - ''

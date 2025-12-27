@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Eldagsen/BM', url: '?mannschaft=1111', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=504&r=7#p1111x1107', title: 'gegen SK Anderten', text: '5' }]
+    - [{ url: '?staffel=504&r=8#p1111x1018', title: 'gegen Barsinghausen', text: '5' }]
+    - [{ url: '?staffel=504&r=1#p1111x1109', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=504&r=9#p1111x1112', title: 'gegen TuS Wunstorf', text: '6' }]
+    - [{ url: '?staffel=504&r=4#p1111x1114', title: 'gegen SG Garbsen/Bb', text: 4½ }]
+    - [{ url: '?staffel=504&r=3#p1111x1113', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=504&r=6#p1111x1110', title: 'gegen HSK-Lister Turm', text: '5' }]
+    - [{ url: '?staffel=504&r=2#p1111x1019', title: 'gegen Barsinghausen 2', text: '5' }]
+    - 16
+    - '38'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Anderten', url: '?mannschaft=1107', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=504&r=7#p1107x1111', title: 'gegen SG Eldagsen/BM', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=504&r=1#p1107x1018', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=504&r=3#p1107x1109', title: 'gegen SK Ricklingen 2', text: '5' }]
+    - [{ url: '?staffel=504&r=2#p1107x1112', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=504&r=6#p1107x1114', title: 'gegen SG Garbsen/Bb', text: '4' }]
+    - [{ url: '?staffel=504&r=5#p1107x1113', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=504&r=8#p1107x1110', title: 'gegen HSK-Lister Turm', text: '4' }]
+    - [{ url: '?staffel=504&r=4#p1107x1019', title: 'gegen Barsinghausen 2', text: '5' }]
+    - 13
+    - '30'
+    - ''
+-
+    - '3.'
+    - { text: Barsinghausen, url: '?mannschaft=1018', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=504&r=8#p1018x1111', title: 'gegen SG Eldagsen/BM', text: '1' }]
+    - [{ url: '?staffel=504&r=1#p1018x1107', title: 'gegen SK Anderten', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=504&r=4#p1018x1109', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=504&r=3#p1018x1112', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=504&r=7#p1018x1114', title: 'gegen SG Garbsen/Bb', text: '3' }]
+    - [{ url: '?staffel=504&r=6#p1018x1113', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=504&r=9#p1018x1110', title: 'gegen HSK-Lister Turm', text: 5½ }]
+    - [{ url: '?staffel=504&r=5#p1018x1019', title: 'gegen Barsinghausen 2', text: '5' }]
+    - 12
+    - 29½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=1109', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=504&r=1#p1109x1111', title: 'gegen SG Eldagsen/BM', text: '2' }]
+    - [{ url: '?staffel=504&r=3#p1109x1107', title: 'gegen SK Anderten', text: '1' }]
+    - [{ url: '?staffel=504&r=4#p1109x1018', title: 'gegen Barsinghausen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=504&r=5#p1109x1112', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=504&r=9#p1109x1114', title: 'gegen SG Garbsen/Bb', text: '4' }]
+    - [{ url: '?staffel=504&r=8#p1109x1113', title: 'gegen SK Rinteln', text: '6' }]
+    - [{ url: '?staffel=504&r=2#p1109x1110', title: 'gegen HSK-Lister Turm', text: '4' }]
+    - [{ url: '?staffel=504&r=7#p1109x1019', title: 'gegen Barsinghausen 2', text: '5' }]
+    - 10
+    - 28½
+    - ''
+-
+    - '5.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=1112', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=504&r=9#p1112x1111', title: 'gegen SG Eldagsen/BM', text: '0' }]
+    - [{ url: '?staffel=504&r=2#p1112x1107', title: 'gegen SK Anderten', text: 1½ }]
+    - [{ url: '?staffel=504&r=3#p1112x1018', title: 'gegen Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=504&r=5#p1112x1109', title: 'gegen SK Ricklingen 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=504&r=8#p1112x1114', title: 'gegen SG Garbsen/Bb', text: '5' }]
+    - [{ url: '?staffel=504&r=7#p1112x1113', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=504&r=1#p1112x1110', title: 'gegen HSK-Lister Turm', text: 3½ }]
+    - [{ url: '?staffel=504&r=6#p1112x1019', title: 'gegen Barsinghausen 2', text: '6' }]
+    - 8
+    - '23'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Garbsen/Bb', url: '?mannschaft=1114', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=504&r=4#p1114x1111', title: 'gegen SG Eldagsen/BM', text: 1½ }]
+    - [{ url: '?staffel=504&r=6#p1114x1107', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=504&r=7#p1114x1018', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=504&r=9#p1114x1109', title: 'gegen SK Ricklingen 2', text: '2' }]
+    - [{ url: '?staffel=504&r=8#p1114x1112', title: 'gegen TuS Wunstorf', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=504&r=2#p1114x1113', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=504&r=5#p1114x1110', title: 'gegen HSK-Lister Turm', text: 4½ }]
+    - [{ url: '?staffel=504&r=1#p1114x1019', title: 'gegen Barsinghausen 2', text: '3' }]
+    - 5
+    - '20'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Rinteln', url: '?mannschaft=1113', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=504&r=3#p1113x1111', title: 'gegen SG Eldagsen/BM', text: 1½ }]
+    - [{ url: '?staffel=504&r=5#p1113x1107', title: 'gegen SK Anderten', text: 2½ }]
+    - [{ url: '?staffel=504&r=6#p1113x1018', title: 'gegen Barsinghausen', text: '1' }]
+    - [{ url: '?staffel=504&r=8#p1113x1109', title: 'gegen SK Ricklingen 2', text: '0' }]
+    - [{ url: '?staffel=504&r=7#p1113x1112', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=504&r=2#p1113x1114', title: 'gegen SG Garbsen/Bb', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=504&r=4#p1113x1110', title: 'gegen HSK-Lister Turm', text: 3½ }]
+    - [{ url: '?staffel=504&r=9#p1113x1019', title: 'gegen Barsinghausen 2', text: 3½ }]
+    - 5
+    - 17½
+    - ''
+-
+    - '8.'
+    - { text: 'HSK-Lister Turm', url: '?mannschaft=1110', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=504&r=6#p1110x1111', title: 'gegen SG Eldagsen/BM', text: '1' }]
+    - [{ url: '?staffel=504&r=8#p1110x1107', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=504&r=9#p1110x1018', title: 'gegen Barsinghausen', text: ½ }]
+    - [{ url: '?staffel=504&r=2#p1110x1109', title: 'gegen SK Ricklingen 2', text: '2' }]
+    - [{ url: '?staffel=504&r=1#p1110x1112', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=504&r=5#p1110x1114', title: 'gegen SG Garbsen/Bb', text: 1½ }]
+    - [{ url: '?staffel=504&r=4#p1110x1113', title: 'gegen SK Rinteln', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=504&r=3#p1110x1019', title: 'gegen Barsinghausen 2', text: 3½ }]
+    - 2
+    - 14½
+    - ''
+-
+    - '9.'
+    - { text: 'Barsinghausen 2', url: '?mannschaft=1019', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=504&r=2#p1019x1111', title: 'gegen SG Eldagsen/BM', text: '1' }]
+    - [{ url: '?staffel=504&r=4#p1019x1107', title: 'gegen SK Anderten', text: '1' }]
+    - [{ url: '?staffel=504&r=5#p1019x1018', title: 'gegen Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=504&r=7#p1019x1109', title: 'gegen SK Ricklingen 2', text: '1' }]
+    - [{ url: '?staffel=504&r=6#p1019x1112', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=504&r=1#p1019x1114', title: 'gegen SG Garbsen/Bb', text: '3' }]
+    - [{ url: '?staffel=504&r=9#p1019x1113', title: 'gegen SK Rinteln', text: 2½ }]
+    - [{ url: '?staffel=504&r=3#p1019x1110', title: 'gegen HSK-Lister Turm', text: 2½ }]
+    - xxx
+    - 1
+    - '11'
+    - ''

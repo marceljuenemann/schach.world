@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamburger SK 2', url: '?mannschaft=3624', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=789&r=4#p3624x3625', title: 'gegen SV Gryps', text: '2' }]
+    - [{ url: '?staffel=789&r=5#p3624x3581', title: 'gegen SK Joh. Eppendorf', text: '4' }]
+    - [{ url: '?staffel=789&r=2#p3624x3552', title: 'gegen Delmenhorster SK 2', text: '4' }]
+    - [{ url: '?staffel=789&r=1#p3624x3471', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - 7
+    - 12½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Gryps', url: '?mannschaft=3625', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=789&r=4#p3625x3624', title: 'gegen Hamburger SK 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=789&r=3#p3625x3581', title: 'gegen SK Joh. Eppendorf', text: '2' }]
+    - [{ url: '?staffel=789&r=5#p3625x3552', title: 'gegen Delmenhorster SK 2', text: '3' }]
+    - [{ url: '?staffel=789&r=2#p3625x3471', title: 'gegen SK Lehrte 2', text: '1' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Joh. Eppendorf', url: '?mannschaft=3581', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=789&r=5#p3581x3624', title: 'gegen Hamburger SK 2', text: '0' }]
+    - [{ url: '?staffel=789&r=3#p3581x3625', title: 'gegen SV Gryps', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=789&r=1#p3581x3552', title: 'gegen Delmenhorster SK 2', text: '2' }]
+    - [{ url: '?staffel=789&r=4#p3581x3471', title: 'gegen SK Lehrte 2', text: '3' }]
+    - 4
+    - '7'
+    - ''
+-
+    - '4.'
+    - { text: 'Delmenhorster SK 2', url: '?mannschaft=3552', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=789&r=2#p3552x3624', title: 'gegen Hamburger SK 2', text: '0' }]
+    - [{ url: '?staffel=789&r=5#p3552x3625', title: 'gegen SV Gryps', text: '1' }]
+    - [{ url: '?staffel=789&r=1#p3552x3581', title: 'gegen SK Joh. Eppendorf', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=789&r=3#p3552x3471', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 3
+    - '7'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=3471', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=789&r=1#p3471x3624', title: 'gegen Hamburger SK 2', text: 1½ }]
+    - [{ url: '?staffel=789&r=2#p3471x3625', title: 'gegen SV Gryps', text: '3' }]
+    - [{ url: '?staffel=789&r=4#p3471x3581', title: 'gegen SK Joh. Eppendorf', text: '1' }]
+    - [{ url: '?staffel=789&r=3#p3471x3552', title: 'gegen Delmenhorster SK 2', text: '0' }]
+    - xxx
+    - 2
+    - 5½
+    - absteiger

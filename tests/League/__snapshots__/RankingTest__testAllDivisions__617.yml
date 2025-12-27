@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=5806', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1361&r=4#p5806x5780', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1361&r=2#p5806x5802', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=1361&r=1#p5806x5792', title: 'gegen SG Rinteln/Stadthage', text: '4' }]
+    - [{ url: '?staffel=1361&r=5#p5806x5798', title: 'gegen Freibauer Wedemark', text: '4' }]
+    - [{ url: '?staffel=1361&r=3#p5806x5702', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 9
+    - '18'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=5780', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1361&r=4#p5780x5806', title: 'gegen SZ Bemerode', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1361&r=5#p5780x5802', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=1361&r=3#p5780x5792', title: 'gegen SG Rinteln/Stadthage', text: '3' }]
+    - [{ url: '?staffel=1361&r=1#p5780x5798', title: 'gegen Freibauer Wedemark', text: '3' }]
+    - [{ url: '?staffel=1361&r=2#p5780x5702', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 9
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte', url: '?mannschaft=5802', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1361&r=2#p5802x5806', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1361&r=5#p5802x5780', title: 'gegen SD Isernhagen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1361&r=4#p5802x5792', title: 'gegen SG Rinteln/Stadthage', text: '3' }]
+    - [{ url: '?staffel=1361&r=3#p5802x5798', title: 'gegen Freibauer Wedemark', text: 2½ }]
+    - [{ url: '?staffel=1361&r=1#p5802x5702', title: 'gegen SG Garbsen/Marienw', text: '4' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Rinteln/Stadthage', url: '?mannschaft=5792', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1361&r=1#p5792x5806', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1361&r=3#p5792x5780', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1361&r=4#p5792x5802', title: 'gegen SK Lehrte', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1361&r=2#p5792x5798', title: 'gegen Freibauer Wedemark', text: 3½ }]
+    - [{ url: '?staffel=1361&r=5#p5792x5702', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'Freibauer Wedemark', url: '?mannschaft=5798', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1361&r=5#p5798x5806', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1361&r=1#p5798x5780', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1361&r=3#p5798x5802', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=1361&r=2#p5798x5792', title: 'gegen SG Rinteln/Stadthage', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1361&r=4#p5798x5702', title: 'gegen SG Garbsen/Marienw', text: '2' }]
+    - 1
+    - '5'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Garbsen/Marienw', url: '?mannschaft=5702', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1361&r=3#p5702x5806', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1361&r=2#p5702x5780', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1361&r=1#p5702x5802', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1361&r=5#p5702x5792', title: 'gegen SG Rinteln/Stadthage', text: '1' }]
+    - [{ url: '?staffel=1361&r=4#p5702x5798', title: 'gegen Freibauer Wedemark', text: '2' }]
+    - xxx
+    - 1
+    - '3'
+    - ''

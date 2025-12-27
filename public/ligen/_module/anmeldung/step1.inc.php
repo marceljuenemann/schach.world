@@ -1,4 +1,4 @@
-<?
+<?php
 /* Mannschaftsmeldung: 1. Verein und Mannschaftsname
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -32,7 +32,7 @@
     am Ende der Liste.<br />
     <select name='zps' id='Verein' onchange='OnVereinChange();'>
     <option value=''>- Verein w&auml;hlen -</option>
-    <?
+    <?php
         // Vereinsliste ausgeben
         foreach ($vereine as $verein)
             echo "<option value='$verein[ZPS]'>$verein[Vereinname]</option>";
@@ -45,7 +45,7 @@
     Ansonsten lassen Sie das Feld unver&auml;ndert.<br />
     <select name='spielgemeinschaft' id='Spielgemeinschaft' onchange='OnVereinChange();'>
     <option value=''>- Keine Spielgemeinschaft -</option>
-    <?
+    <?php
         // Vereinsliste ausgeben
         foreach ($vereine as $verein)
             echo "<option value='$verein[ZPS]'>$verein[Vereinname]</option>";
@@ -83,7 +83,7 @@
             
             // Guten Mannschaftsnamen abfragen, wenn es nicht 'Anderer...' ist
             if ( zps != "" )
-            <?
+            <?php
                 $ajax = new SED_AjaxRequest ( "getMannschaftsname" );
                 $ajax->setOption ( "zps", "zps" );
                 $ajax->onResult ( "document.getElementsByName ( 'name' ) [0].value = @RESULT@;" );
@@ -92,5 +92,5 @@
         }
 
     --></script>
-    <?
+    <?php
 ?>

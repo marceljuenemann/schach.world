@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=8413', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1890&r=2#p8413x8415', title: 'gegen Hamelner SV', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1890&r=1#p8413x8410', title: 'gegen HSK Lister Turm', text: '6' }]
+    - [{ url: '?staffel=1890&r=3#p8413x8414', title: 'gegen SV Gifhorn', text: 3½ }]
+    - 5
+    - 12½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte', url: '?mannschaft=8412', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1890&r=3#p8412x8409', title: 'gegen Peiner SV', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1890&r=1#p8412x8416', title: 'gegen SV Osnabrück v. 1919', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1890&r=2#p8412x8414', title: 'gegen SV Gifhorn', text: 4½ }]
+    - 4
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'Peiner SV', url: '?mannschaft=8409', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1890&r=3#p8409x8412', title: 'gegen SK Lehrte', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1890&r=1#p8409x8411', title: 'gegen SK Nordhorn-Blanke', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1890&r=2#p8409x8416', title: 'gegen SV Osnabrück v. 1919', text: '4' }]
+    - {  }
+    - {  }
+    - 3
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Blanke', url: '?mannschaft=8411', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1890&r=1#p8411x8409', title: 'gegen Peiner SV', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1890&r=3#p8411x8415', title: 'gegen Hamelner SV', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1890&r=2#p8411x8410', title: 'gegen HSK Lister Turm', text: '2' }]
+    - {  }
+    - 3
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'Hamelner SV', url: '?mannschaft=8415', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1890&r=2#p8415x8413', title: 'gegen Post SV Uelzen', text: '3' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1890&r=3#p8415x8411', title: 'gegen SK Nordhorn-Blanke', text: 2½ }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1890&r=1#p8415x8414', title: 'gegen SV Gifhorn', text: '3' }]
+    - 2
+    - 8½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Osnabrück v. 1919', url: '?mannschaft=8416', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1890&r=1#p8416x8412', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=1890&r=2#p8416x8409', title: 'gegen Peiner SV', text: '2' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - '6'
+    - absteigerRelegation
+-
+    - '7.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=8410', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1890&r=1#p8410x8413', title: 'gegen Post SV Uelzen', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1890&r=2#p8410x8411', title: 'gegen SK Nordhorn-Blanke', text: '4' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 2
+    - '4'
+    - absteigerRelegation
+-
+    - '8.'
+    - { text: 'SV Gifhorn', url: '?mannschaft=8414', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1890&r=3#p8414x8413', title: 'gegen Post SV Uelzen', text: 2½ }]
+    - [{ url: '?staffel=1890&r=2#p8414x8412', title: 'gegen SK Lehrte', text: 1½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1890&r=1#p8414x8415', title: 'gegen Hamelner SV', text: '3' }]
+    - {  }
+    - {  }
+    - xxx
+    - 1
+    - '7'
+    - absteiger

@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=4653', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=964&r=3#p4653x4490', title: 'gegen Barsinghausen 4', text: 1½ }, { url: '?staffel=964&r=6#p4653x4490', title: 'gegen Barsinghausen 4', text: '3' }]
+    - [{ url: '?staffel=964&r=1#p4653x4655', title: 'gegen SF Hannover 3', text: '2' }, { url: '?staffel=964&r=9#p4653x4655', title: 'gegen SF Hannover 3', text: '2' }]
+    - [{ url: '?staffel=964&r=2#p4653x4638', title: 'gegen SK Ricklingen 3', text: '3' }, { url: '?staffel=964&r=10#p4653x4638', title: 'gegen SK Ricklingen 3', text: '4' }]
+    - 9
+    - 15½
+    - ''
+-
+    - '2.'
+    - { text: 'Barsinghausen 4', url: '?mannschaft=4490', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=964&r=3#p4490x4653', title: 'gegen SV Bückeburg 2', text: 2½ }, { url: '?staffel=964&r=6#p4490x4653', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=964&r=5#p4490x4655', title: 'gegen SF Hannover 3', text: 1½ }, { url: '?staffel=964&r=8#p4490x4655', title: 'gegen SF Hannover 3', text: '3' }]
+    - [{ url: '?staffel=964&r=4#p4490x4638', title: 'gegen SK Ricklingen 3', text: '2' }, { url: '?staffel=964&r=7#p4490x4638', title: 'gegen SK Ricklingen 3', text: '4' }]
+    - 8
+    - '14'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Hannover 3', url: '?mannschaft=4655', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=964&r=1#p4655x4653', title: 'gegen SV Bückeburg 2', text: '2' }, { url: '?staffel=964&r=9#p4655x4653', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - [{ url: '?staffel=964&r=5#p4655x4490', title: 'gegen Barsinghausen 4', text: 2½ }, { url: '?staffel=964&r=8#p4655x4490', title: 'gegen Barsinghausen 4', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=964&r=3#p4655x4638', title: 'gegen SK Ricklingen 3', text: 1½ }, { url: '?staffel=964&r=6#p4655x4638', title: 'gegen SK Ricklingen 3', text: 3½ }]
+    - 5
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Ricklingen 3', url: '?mannschaft=4638', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=964&r=2#p4638x4653', title: 'gegen SV Bückeburg 2', text: '1' }, { url: '?staffel=964&r=10#p4638x4653', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - [{ url: '?staffel=964&r=4#p4638x4490', title: 'gegen Barsinghausen 4', text: '1' }, { url: '?staffel=964&r=7#p4638x4490', title: 'gegen Barsinghausen 4', text: '0' }]
+    - [{ url: '?staffel=964&r=3#p4638x4655', title: 'gegen SF Hannover 3', text: 2½ }, { url: '?staffel=964&r=6#p4638x4655', title: 'gegen SF Hannover 3', text: ½ }]
+    - xxx
+    - 2
+    - '5'
+    - ''

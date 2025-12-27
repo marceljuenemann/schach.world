@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Spieltagsbemerkungen
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -92,7 +92,7 @@
         }
         
         function showOne ( spieltag ){
-            for ( r = 1; r <= <? echo $rundenzahl; ?>; ++r )
+            for ( r = 1; r <= <?php echo $rundenzahl; ?>; ++r )
                 show ( r, "none" );
             show ( spieltag, "block" );
         }
@@ -100,5 +100,5 @@
         // Anfangseinstellung
         showOne ( <?=$_GET['r']?> );
         
-    --></script><?    
+    --></script><?php    
 ?>

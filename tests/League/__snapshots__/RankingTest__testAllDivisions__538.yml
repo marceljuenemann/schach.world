@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'FR-Zähringen 1887', url: '?mannschaft=5007', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1021&r=1#p5007x5128', title: 'gegen SVG Oberhessen', text: '4' }]
+    - [{ url: '?staffel=1021&r=6#p5007x4884', title: 'gegen SV Riegelsberg', text: 3½ }]
+    - [{ url: '?staffel=1021&r=5#p5007x5270', title: 'gegen SF Birkenfeld', text: '4' }]
+    - [{ url: '?staffel=1021&r=3#p5007x5064', title: 'gegen SK Gernsheim 2', text: 1½ }]
+    - [{ url: '?staffel=1021&r=2#p5007x4876', title: 'gegen SC Eschborn', text: '3' }]
+    - 8
+    - '16'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SVG Oberhessen', url: '?mannschaft=5128', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1021&r=1#p5128x5007', title: 'gegen FR-Zähringen 1887', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1021&r=2#p5128x4884', title: 'gegen SV Riegelsberg', text: 2½ }]
+    - [{ url: '?staffel=1021&r=6#p5128x5270', title: 'gegen SF Birkenfeld', text: 2½ }]
+    - [{ url: '?staffel=1021&r=4#p5128x5064', title: 'gegen SK Gernsheim 2', text: '4' }]
+    - [{ url: '?staffel=1021&r=5#p5128x4876', title: 'gegen SC Eschborn', text: 1½ }]
+    - 6
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Riegelsberg', url: '?mannschaft=4884', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1021&r=6#p4884x5007', title: 'gegen FR-Zähringen 1887', text: ½ }]
+    - [{ url: '?staffel=1021&r=2#p4884x5128', title: 'gegen SVG Oberhessen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1021&r=4#p4884x5270', title: 'gegen SF Birkenfeld', text: '3' }]
+    - [{ url: '?staffel=1021&r=5#p4884x5064', title: 'gegen SK Gernsheim 2', text: '3' }]
+    - [{ url: '?staffel=1021&r=1#p4884x4876', title: 'gegen SC Eschborn', text: '2' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Birkenfeld', url: '?mannschaft=5270', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1021&r=5#p5270x5007', title: 'gegen FR-Zähringen 1887', text: '0' }]
+    - [{ url: '?staffel=1021&r=6#p5270x5128', title: 'gegen SVG Oberhessen', text: 1½ }]
+    - [{ url: '?staffel=1021&r=4#p5270x4884', title: 'gegen SV Riegelsberg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1021&r=2#p5270x5064', title: 'gegen SK Gernsheim 2', text: 2½ }]
+    - [{ url: '?staffel=1021&r=3#p5270x4876', title: 'gegen SC Eschborn', text: '3' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Gernsheim 2', url: '?mannschaft=5064', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1021&r=3#p5064x5007', title: 'gegen FR-Zähringen 1887', text: 2½ }]
+    - [{ url: '?staffel=1021&r=4#p5064x5128', title: 'gegen SVG Oberhessen', text: '0' }]
+    - [{ url: '?staffel=1021&r=5#p5064x4884', title: 'gegen SV Riegelsberg', text: '1' }]
+    - [{ url: '?staffel=1021&r=2#p5064x5270', title: 'gegen SF Birkenfeld', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1021&r=6#p5064x4876', title: 'gegen SC Eschborn', text: 2½ }]
+    - 4
+    - 7½
+    - absteiger
+-
+    - '6.'
+    - { text: 'SC Eschborn', url: '?mannschaft=4876', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1021&r=2#p4876x5007', title: 'gegen FR-Zähringen 1887', text: '1' }]
+    - [{ url: '?staffel=1021&r=5#p4876x5128', title: 'gegen SVG Oberhessen', text: 2½ }]
+    - [{ url: '?staffel=1021&r=1#p4876x4884', title: 'gegen SV Riegelsberg', text: '2' }]
+    - [{ url: '?staffel=1021&r=3#p4876x5270', title: 'gegen SF Birkenfeld', text: '1' }]
+    - [{ url: '?staffel=1021&r=6#p4876x5064', title: 'gegen SK Gernsheim 2', text: 1½ }]
+    - xxx
+    - 3
+    - '8'
+    - absteiger

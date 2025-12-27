@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TSV Riemsloh', url: '?mannschaft=5928', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1434&r=7#p5928x5936', title: 'gegen SC Fürstenau', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1434&r=3#p5928x5927', title: 'gegen SV Bad Essen 2', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1434&r=6#p5928x5935', title: 'gegen SV Lingen 4', text: 3½ }]
+    - [{ url: '?staffel=1434&r=5#p5928x5926', title: 'gegen SV Hellern 5', text: '5' }]
+    - [{ url: '?staffel=1434&r=1#p5928x5925', title: 'gegen Bramsche/Bersenbrück', text: 5½ }]
+    - [{ url: '?staffel=1434&r=4#p5928x5932', title: 'gegen SV Osnabrück 3', text: 5½ }]
+    - [{ url: '?staffel=1434&r=2#p5928x5937', title: 'gegen Veldhausen/Uel. 2', text: '7' }]
+    - 10
+    - '35'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Fürstenau', url: '?mannschaft=5936', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1434&r=7#p5936x5928', title: 'gegen TSV Riemsloh', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1434&r=3#p5936x5929', title: 'gegen TuS Aschendorf', text: '4' }]
+    - [{ url: '?staffel=1434&r=6#p5936x5927', title: 'gegen SV Bad Essen 2', text: '4' }]
+    - [{ url: '?staffel=1434&r=2#p5936x5931', title: 'gegen SK Meppen', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1434&r=4#p5936x5925', title: 'gegen Bramsche/Bersenbrück', text: '5' }]
+    - [{ url: '?staffel=1434&r=1#p5936x5932', title: 'gegen SV Osnabrück 3', text: '7' }]
+    - [{ url: '?staffel=1434&r=5#p5936x5937', title: 'gegen Veldhausen/Uel. 2', text: '4' }]
+    - 10
+    - 32½
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Aschendorf', url: '?mannschaft=5929', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1434&r=3#p5929x5936', title: 'gegen SC Fürstenau', text: '4' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1434&r=4#p5929x5931', title: 'gegen SK Meppen', text: '5' }]
+    - [{ url: '?staffel=1434&r=2#p5929x5935', title: 'gegen SV Lingen 4', text: '4' }]
+    - [{ url: '?staffel=1434&r=1#p5929x5926', title: 'gegen SV Hellern 5', text: '4' }]
+    - [{ url: '?staffel=1434&r=6#p5929x5925', title: 'gegen Bramsche/Bersenbrück', text: 4½ }]
+    - [{ url: '?staffel=1434&r=5#p5929x5932', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=1434&r=7#p5929x5937', title: 'gegen Veldhausen/Uel. 2', text: '6' }]
+    - 9
+    - 30½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bad Essen 2', url: '?mannschaft=5927', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1434&r=3#p5927x5928', title: 'gegen TSV Riemsloh', text: '3' }]
+    - [{ url: '?staffel=1434&r=6#p5927x5936', title: 'gegen SC Fürstenau', text: '4' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1434&r=7#p5927x5931', title: 'gegen SK Meppen', text: '4' }]
+    - [{ url: '?staffel=1434&r=5#p5927x5935', title: 'gegen SV Lingen 4', text: 5½ }]
+    - [{ url: '?staffel=1434&r=4#p5927x5926', title: 'gegen SV Hellern 5', text: '6' }]
+    - {  }
+    - [{ url: '?staffel=1434&r=2#p5927x5932', title: 'gegen SV Osnabrück 3', text: 6½ }]
+    - [{ url: '?staffel=1434&r=1#p5927x5937', title: 'gegen Veldhausen/Uel. 2', text: '3' }]
+    - 8
+    - '32'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Meppen', url: '?mannschaft=5931', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1434&r=2#p5931x5936', title: 'gegen SC Fürstenau', text: '4' }]
+    - [{ url: '?staffel=1434&r=4#p5931x5929', title: 'gegen TuS Aschendorf', text: '3' }]
+    - [{ url: '?staffel=1434&r=7#p5931x5927', title: 'gegen SV Bad Essen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1434&r=1#p5931x5935', title: 'gegen SV Lingen 4', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1434&r=5#p5931x5925', title: 'gegen Bramsche/Bersenbrück', text: '4' }]
+    - [{ url: '?staffel=1434&r=3#p5931x5932', title: 'gegen SV Osnabrück 3', text: '4' }]
+    - [{ url: '?staffel=1434&r=6#p5931x5937', title: 'gegen Veldhausen/Uel. 2', text: '5' }]
+    - 8
+    - '29'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Lingen 4', url: '?mannschaft=5935', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1434&r=6#p5935x5928', title: 'gegen TSV Riemsloh', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1434&r=2#p5935x5929', title: 'gegen TuS Aschendorf', text: '4' }]
+    - [{ url: '?staffel=1434&r=5#p5935x5927', title: 'gegen SV Bad Essen 2', text: 2½ }]
+    - [{ url: '?staffel=1434&r=1#p5935x5931', title: 'gegen SK Meppen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1434&r=7#p5935x5926', title: 'gegen SV Hellern 5', text: '4' }]
+    - [{ url: '?staffel=1434&r=3#p5935x5925', title: 'gegen Bramsche/Bersenbrück', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1434&r=4#p5935x5937', title: 'gegen Veldhausen/Uel. 2', text: 4½ }]
+    - 8
+    - 27½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Hellern 5', url: '?mannschaft=5926', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1434&r=5#p5926x5928', title: 'gegen TSV Riemsloh', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1434&r=1#p5926x5929', title: 'gegen TuS Aschendorf', text: '4' }]
+    - [{ url: '?staffel=1434&r=4#p5926x5927', title: 'gegen SV Bad Essen 2', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1434&r=7#p5926x5935', title: 'gegen SV Lingen 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1434&r=2#p5926x5925', title: 'gegen Bramsche/Bersenbrück', text: 3½ }]
+    - [{ url: '?staffel=1434&r=6#p5926x5932', title: 'gegen SV Osnabrück 3', text: '5' }]
+    - [{ url: '?staffel=1434&r=3#p5926x5937', title: 'gegen Veldhausen/Uel. 2', text: 7½ }]
+    - 6
+    - '29'
+    - ''
+-
+    - '8.'
+    - { text: Bramsche/Bersenbrück, url: '?mannschaft=5925', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1434&r=1#p5925x5928', title: 'gegen TSV Riemsloh', text: 2½ }]
+    - [{ url: '?staffel=1434&r=4#p5925x5936', title: 'gegen SC Fürstenau', text: '3' }]
+    - [{ url: '?staffel=1434&r=6#p5925x5929', title: 'gegen TuS Aschendorf', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1434&r=5#p5925x5931', title: 'gegen SK Meppen', text: '4' }]
+    - [{ url: '?staffel=1434&r=3#p5925x5935', title: 'gegen SV Lingen 4', text: '3' }]
+    - [{ url: '?staffel=1434&r=2#p5925x5926', title: 'gegen SV Hellern 5', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1434&r=7#p5925x5932', title: 'gegen SV Osnabrück 3', text: '4' }]
+    - {  }
+    - 4
+    - 24½
+    - ''
+-
+    - '9.'
+    - { text: 'SV Osnabrück 3', url: '?mannschaft=5932', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1434&r=4#p5932x5928', title: 'gegen TSV Riemsloh', text: 2½ }]
+    - [{ url: '?staffel=1434&r=1#p5932x5936', title: 'gegen SC Fürstenau', text: '1' }]
+    - [{ url: '?staffel=1434&r=5#p5932x5929', title: 'gegen TuS Aschendorf', text: '5' }]
+    - [{ url: '?staffel=1434&r=2#p5932x5927', title: 'gegen SV Bad Essen 2', text: 1½ }]
+    - [{ url: '?staffel=1434&r=3#p5932x5931', title: 'gegen SK Meppen', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1434&r=6#p5932x5926', title: 'gegen SV Hellern 5', text: '3' }]
+    - [{ url: '?staffel=1434&r=7#p5932x5925', title: 'gegen Bramsche/Bersenbrück', text: '4' }]
+    - xxx
+    - {  }
+    - 4
+    - '21'
+    - absteiger
+-
+    - '10.'
+    - { text: 'Veldhausen/Uel. 2', url: '?mannschaft=5937', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1434&r=2#p5937x5928', title: 'gegen TSV Riemsloh', text: '1' }]
+    - [{ url: '?staffel=1434&r=5#p5937x5936', title: 'gegen SC Fürstenau', text: '4' }]
+    - [{ url: '?staffel=1434&r=7#p5937x5929', title: 'gegen TuS Aschendorf', text: '2' }]
+    - [{ url: '?staffel=1434&r=1#p5937x5927', title: 'gegen SV Bad Essen 2', text: '5' }]
+    - [{ url: '?staffel=1434&r=6#p5937x5931', title: 'gegen SK Meppen', text: '3' }]
+    - [{ url: '?staffel=1434&r=4#p5937x5935', title: 'gegen SV Lingen 4', text: 3½ }]
+    - [{ url: '?staffel=1434&r=3#p5937x5926', title: 'gegen SV Hellern 5', text: ½ }]
+    - {  }
+    - {  }
+    - xxx
+    - 3
+    - '19'
+    - absteiger

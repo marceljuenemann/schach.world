@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Gaste-Hasbergen 2', url: '?mannschaft=4000', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=891&r=3#p4000x4003', title: 'gegen Rochade Hollage 2', text: '4' }, { url: '?staffel=891&r=4#p4000x4003', title: 'gegen Rochade Hollage 2', text: 3½ }]
+    - [{ url: '?staffel=891&r=2#p4000x4002', title: 'gegen TSV Osnabrück 2', text: 1½ }, { url: '?staffel=891&r=6#p4000x4002', title: 'gegen TSV Osnabrück 2', text: 3½ }]
+    - [{ url: '?staffel=891&r=1#p4000x4001', title: 'gegen Bersenbrück/Bramsche 4', text: '2' }, { url: '?staffel=891&r=5#p4000x4001', title: 'gegen Bersenbrück/Bramsche 4', text: '3' }]
+    - 9
+    - 17½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Rochade Hollage 2', url: '?mannschaft=4003', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=891&r=3#p4003x4000', title: 'gegen Gaste-Hasbergen 2', text: '0' }, { url: '?staffel=891&r=4#p4003x4000', title: 'gegen Gaste-Hasbergen 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=891&r=1#p4003x4002', title: 'gegen TSV Osnabrück 2', text: '3' }, { url: '?staffel=891&r=5#p4003x4002', title: 'gegen TSV Osnabrück 2', text: 1½ }]
+    - [{ url: '?staffel=891&r=2#p4003x4001', title: 'gegen Bersenbrück/Bramsche 4', text: 2½ }, { url: '?staffel=891&r=6#p4003x4001', title: 'gegen Bersenbrück/Bramsche 4', text: 3½ }]
+    - 7
+    - '11'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'TSV Osnabrück 2', url: '?mannschaft=4002', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=891&r=2#p4002x4000', title: 'gegen Gaste-Hasbergen 2', text: 2½ }, { url: '?staffel=891&r=6#p4002x4000', title: 'gegen Gaste-Hasbergen 2', text: ½ }]
+    - [{ url: '?staffel=891&r=1#p4002x4003', title: 'gegen Rochade Hollage 2', text: '1' }, { url: '?staffel=891&r=5#p4002x4003', title: 'gegen Rochade Hollage 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=891&r=3#p4002x4001', title: 'gegen Bersenbrück/Bramsche 4', text: '2' }, { url: '?staffel=891&r=4#p4002x4001', title: 'gegen Bersenbrück/Bramsche 4', text: 2½ }]
+    - 6
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'Bersenbrück/Bramsche 4', url: '?mannschaft=4001', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=891&r=1#p4001x4000', title: 'gegen Gaste-Hasbergen 2', text: '2' }, { url: '?staffel=891&r=5#p4001x4000', title: 'gegen Gaste-Hasbergen 2', text: '1' }]
+    - [{ url: '?staffel=891&r=2#p4001x4003', title: 'gegen Rochade Hollage 2', text: 1½ }, { url: '?staffel=891&r=6#p4001x4003', title: 'gegen Rochade Hollage 2', text: ½ }]
+    - [{ url: '?staffel=891&r=3#p4001x4002', title: 'gegen TSV Osnabrück 2', text: '2' }, { url: '?staffel=891&r=4#p4001x4002', title: 'gegen TSV Osnabrück 2', text: 1½ }]
+    - xxx
+    - 2
+    - 8½
+    - ''

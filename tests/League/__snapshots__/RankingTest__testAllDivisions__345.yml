@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Werder Bremen 3', url: '?mannschaft=3461', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=786&r=9#p3461x3550', title: 'gegen Bremer SG 2', text: '5' }]
+    - [{ url: '?staffel=786&r=5#p3461x3407', title: 'gegen Findorffer SF', text: '7' }]
+    - [{ url: '?staffel=786&r=6#p3461x3476', title: 'gegen MTV Tostedt', text: 5½ }]
+    - [{ url: '?staffel=786&r=8#p3461x3546', title: 'gegen SG Niederelbe', text: 6½ }]
+    - [{ url: '?staffel=786&r=1#p3461x3460', title: 'gegen SF Lilienthal', text: '4' }]
+    - [{ url: '?staffel=786&r=4#p3461x3492', title: 'gegen SK Rotenburg', text: 7½ }]
+    - [{ url: '?staffel=786&r=3#p3461x3459', title: 'gegen MTV Dannenberg', text: '5' }]
+    - [{ url: '?staffel=786&r=7#p3461x3395', title: 'gegen SK Hermannsburg', text: 4½ }]
+    - [{ url: '?staffel=786&r=2#p3461x3489', title: 'gegen SK Bremen-Nord 2', text: '6' }]
+    - 17
+    - '51'
+    - ''
+-
+    - '2.'
+    - { text: 'Bremer SG 2', url: '?mannschaft=3550', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=786&r=9#p3550x3461', title: 'gegen Werder Bremen 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=786&r=4#p3550x3407', title: 'gegen Findorffer SF', text: '5' }]
+    - [{ url: '?staffel=786&r=8#p3550x3476', title: 'gegen MTV Tostedt', text: 4½ }]
+    - [{ url: '?staffel=786&r=2#p3550x3546', title: 'gegen SG Niederelbe', text: '5' }]
+    - [{ url: '?staffel=786&r=3#p3550x3460', title: 'gegen SF Lilienthal', text: '5' }]
+    - [{ url: '?staffel=786&r=7#p3550x3492', title: 'gegen SK Rotenburg', text: 5½ }]
+    - [{ url: '?staffel=786&r=5#p3550x3459', title: 'gegen MTV Dannenberg', text: '5' }]
+    - [{ url: '?staffel=786&r=1#p3550x3395', title: 'gegen SK Hermannsburg', text: '5' }]
+    - [{ url: '?staffel=786&r=6#p3550x3489', title: 'gegen SK Bremen-Nord 2', text: 3½ }]
+    - 14
+    - 41½
+    - ''
+-
+    - '3.'
+    - { text: 'Findorffer SF', url: '?mannschaft=3407', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=786&r=5#p3407x3461', title: 'gegen Werder Bremen 3', text: '1' }]
+    - [{ url: '?staffel=786&r=4#p3407x3550', title: 'gegen Bremer SG 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=786&r=7#p3407x3476', title: 'gegen MTV Tostedt', text: '4' }]
+    - [{ url: '?staffel=786&r=9#p3407x3546', title: 'gegen SG Niederelbe', text: 4½ }]
+    - [{ url: '?staffel=786&r=6#p3407x3460', title: 'gegen SF Lilienthal', text: '4' }]
+    - [{ url: '?staffel=786&r=2#p3407x3492', title: 'gegen SK Rotenburg', text: 5½ }]
+    - [{ url: '?staffel=786&r=1#p3407x3459', title: 'gegen MTV Dannenberg', text: 4½ }]
+    - [{ url: '?staffel=786&r=8#p3407x3395', title: 'gegen SK Hermannsburg', text: 4½ }]
+    - [{ url: '?staffel=786&r=3#p3407x3489', title: 'gegen SK Bremen-Nord 2', text: 6½ }]
+    - 12
+    - 37½
+    - ''
+-
+    - '4.'
+    - { text: 'MTV Tostedt', url: '?mannschaft=3476', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=786&r=6#p3476x3461', title: 'gegen Werder Bremen 3', text: 2½ }]
+    - [{ url: '?staffel=786&r=8#p3476x3550', title: 'gegen Bremer SG 2', text: 3½ }]
+    - [{ url: '?staffel=786&r=7#p3476x3407', title: 'gegen Findorffer SF', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=786&r=1#p3476x3546', title: 'gegen SG Niederelbe', text: '5' }]
+    - [{ url: '?staffel=786&r=4#p3476x3460', title: 'gegen SF Lilienthal', text: 3½ }]
+    - [{ url: '?staffel=786&r=3#p3476x3492', title: 'gegen SK Rotenburg', text: 5½ }]
+    - [{ url: '?staffel=786&r=2#p3476x3459', title: 'gegen MTV Dannenberg', text: '5' }]
+    - [{ url: '?staffel=786&r=9#p3476x3395', title: 'gegen SK Hermannsburg', text: 5½ }]
+    - [{ url: '?staffel=786&r=5#p3476x3489', title: 'gegen SK Bremen-Nord 2', text: '6' }]
+    - 11
+    - 40½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Niederelbe', url: '?mannschaft=3546', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=786&r=8#p3546x3461', title: 'gegen Werder Bremen 3', text: 1½ }]
+    - [{ url: '?staffel=786&r=2#p3546x3550', title: 'gegen Bremer SG 2', text: '3' }]
+    - [{ url: '?staffel=786&r=9#p3546x3407', title: 'gegen Findorffer SF', text: 2½ }]
+    - [{ url: '?staffel=786&r=1#p3546x3476', title: 'gegen MTV Tostedt', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=786&r=5#p3546x3460', title: 'gegen SF Lilienthal', text: '5' }]
+    - [{ url: '?staffel=786&r=6#p3546x3492', title: 'gegen SK Rotenburg', text: 5½ }]
+    - [{ url: '?staffel=786&r=4#p3546x3459', title: 'gegen MTV Dannenberg', text: '5' }]
+    - [{ url: '?staffel=786&r=3#p3546x3395', title: 'gegen SK Hermannsburg', text: '6' }]
+    - [{ url: '?staffel=786&r=7#p3546x3489', title: 'gegen SK Bremen-Nord 2', text: 5½ }]
+    - 10
+    - '37'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Lilienthal', url: '?mannschaft=3460', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=786&r=1#p3460x3461', title: 'gegen Werder Bremen 3', text: '4' }]
+    - [{ url: '?staffel=786&r=3#p3460x3550', title: 'gegen Bremer SG 2', text: '3' }]
+    - [{ url: '?staffel=786&r=6#p3460x3407', title: 'gegen Findorffer SF', text: '4' }]
+    - [{ url: '?staffel=786&r=4#p3460x3476', title: 'gegen MTV Tostedt', text: 4½ }]
+    - [{ url: '?staffel=786&r=5#p3460x3546', title: 'gegen SG Niederelbe', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=786&r=8#p3460x3492', title: 'gegen SK Rotenburg', text: 2½ }]
+    - [{ url: '?staffel=786&r=7#p3460x3459', title: 'gegen MTV Dannenberg', text: '4' }]
+    - [{ url: '?staffel=786&r=2#p3460x3395', title: 'gegen SK Hermannsburg', text: '5' }]
+    - [{ url: '?staffel=786&r=9#p3460x3489', title: 'gegen SK Bremen-Nord 2', text: '5' }]
+    - 9
+    - '35'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Rotenburg', url: '?mannschaft=3492', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=786&r=4#p3492x3461', title: 'gegen Werder Bremen 3', text: ½ }]
+    - [{ url: '?staffel=786&r=7#p3492x3550', title: 'gegen Bremer SG 2', text: 2½ }]
+    - [{ url: '?staffel=786&r=2#p3492x3407', title: 'gegen Findorffer SF', text: 2½ }]
+    - [{ url: '?staffel=786&r=3#p3492x3476', title: 'gegen MTV Tostedt', text: 2½ }]
+    - [{ url: '?staffel=786&r=6#p3492x3546', title: 'gegen SG Niederelbe', text: 2½ }]
+    - [{ url: '?staffel=786&r=8#p3492x3460', title: 'gegen SF Lilienthal', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=786&r=9#p3492x3459', title: 'gegen MTV Dannenberg', text: '5' }]
+    - [{ url: '?staffel=786&r=5#p3492x3395', title: 'gegen SK Hermannsburg', text: 4½ }]
+    - [{ url: '?staffel=786&r=1#p3492x3489', title: 'gegen SK Bremen-Nord 2', text: '5' }]
+    - 8
+    - 30½
+    - ''
+-
+    - '8.'
+    - { text: 'MTV Dannenberg', url: '?mannschaft=3459', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=786&r=3#p3459x3461', title: 'gegen Werder Bremen 3', text: '3' }]
+    - [{ url: '?staffel=786&r=5#p3459x3550', title: 'gegen Bremer SG 2', text: '3' }]
+    - [{ url: '?staffel=786&r=1#p3459x3407', title: 'gegen Findorffer SF', text: 3½ }]
+    - [{ url: '?staffel=786&r=2#p3459x3476', title: 'gegen MTV Tostedt', text: '3' }]
+    - [{ url: '?staffel=786&r=4#p3459x3546', title: 'gegen SG Niederelbe', text: '3' }]
+    - [{ url: '?staffel=786&r=7#p3459x3460', title: 'gegen SF Lilienthal', text: '4' }]
+    - [{ url: '?staffel=786&r=9#p3459x3492', title: 'gegen SK Rotenburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=786&r=6#p3459x3395', title: 'gegen SK Hermannsburg', text: '4' }]
+    - [{ url: '?staffel=786&r=8#p3459x3489', title: 'gegen SK Bremen-Nord 2', text: '6' }]
+    - 4
+    - 32½
+    - ''
+-
+    - '9.'
+    - { text: 'SK Hermannsburg', url: '?mannschaft=3395', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=786&r=7#p3395x3461', title: 'gegen Werder Bremen 3', text: 3½ }]
+    - [{ url: '?staffel=786&r=1#p3395x3550', title: 'gegen Bremer SG 2', text: '3' }]
+    - [{ url: '?staffel=786&r=8#p3395x3407', title: 'gegen Findorffer SF', text: 3½ }]
+    - [{ url: '?staffel=786&r=9#p3395x3476', title: 'gegen MTV Tostedt', text: 2½ }]
+    - [{ url: '?staffel=786&r=3#p3395x3546', title: 'gegen SG Niederelbe', text: '2' }]
+    - [{ url: '?staffel=786&r=2#p3395x3460', title: 'gegen SF Lilienthal', text: '3' }]
+    - [{ url: '?staffel=786&r=5#p3395x3492', title: 'gegen SK Rotenburg', text: 3½ }]
+    - [{ url: '?staffel=786&r=6#p3395x3459', title: 'gegen MTV Dannenberg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=786&r=4#p3395x3489', title: 'gegen SK Bremen-Nord 2', text: '5' }]
+    - 3
+    - '30'
+    - ''
+-
+    - '10.'
+    - { text: 'SK Bremen-Nord 2', url: '?mannschaft=3489', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=786&r=2#p3489x3461', title: 'gegen Werder Bremen 3', text: '2' }]
+    - [{ url: '?staffel=786&r=6#p3489x3550', title: 'gegen Bremer SG 2', text: 4½ }]
+    - [{ url: '?staffel=786&r=3#p3489x3407', title: 'gegen Findorffer SF', text: 1½ }]
+    - [{ url: '?staffel=786&r=5#p3489x3476', title: 'gegen MTV Tostedt', text: '2' }]
+    - [{ url: '?staffel=786&r=7#p3489x3546', title: 'gegen SG Niederelbe', text: 2½ }]
+    - [{ url: '?staffel=786&r=9#p3489x3460', title: 'gegen SF Lilienthal', text: '3' }]
+    - [{ url: '?staffel=786&r=1#p3489x3492', title: 'gegen SK Rotenburg', text: '3' }]
+    - [{ url: '?staffel=786&r=8#p3489x3459', title: 'gegen MTV Dannenberg', text: '2' }]
+    - [{ url: '?staffel=786&r=4#p3489x3395', title: 'gegen SK Hermannsburg', text: '3' }]
+    - xxx
+    - 2
+    - 23½
+    - ''

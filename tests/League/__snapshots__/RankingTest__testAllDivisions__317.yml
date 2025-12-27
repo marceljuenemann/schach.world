@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC SW Northeim 2', url: '?mannschaft=3066', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=755&r=4#p3066x3074', title: 'gegen Hamelner SV 5', text: '3' }]
+    - [{ url: '?staffel=755&r=6#p3066x3081', title: 'gegen Bad Gandersheim', text: '4' }]
+    - [{ url: '?staffel=755&r=3#p3066x2935', title: 'gegen PSV Bad Pyrmont 2', text: '4' }]
+    - [{ url: '?staffel=755&r=2#p3066x2995', title: 'gegen Turm Vienenburg', text: 4½ }]
+    - [{ url: '?staffel=755&r=1#p3066x3068', title: 'gegen SK Bad Harzburg 2', text: 3½ }]
+    - [{ url: '?staffel=755&r=7#p3066x3079', title: 'gegen Plesse Bovenden 2', text: 2½ }]
+    - [{ url: '?staffel=755&r=8#p3066x3101', title: 'gegen Bad Salzdetfurth 3', text: 2½ }]
+    - [{ url: '?staffel=755&r=9#p3066x2988', title: 'gegen SC Langelsheim', text: 5½ }]
+    - [{ url: '?staffel=755&r=5#p3066x3077', title: 'gegen ESV Göttingen 3', text: '6' }]
+    - 13
+    - 35½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamelner SV 5', url: '?mannschaft=3074', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=755&r=4#p3074x3066', title: 'gegen SC SW Northeim 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=755&r=3#p3074x3081', title: 'gegen Bad Gandersheim', text: '3' }]
+    - [{ url: '?staffel=755&r=6#p3074x2935', title: 'gegen PSV Bad Pyrmont 2', text: '5' }]
+    - [{ url: '?staffel=755&r=7#p3074x2995', title: 'gegen Turm Vienenburg', text: 4½ }]
+    - [{ url: '?staffel=755&r=9#p3074x3068', title: 'gegen SK Bad Harzburg 2', text: '2' }]
+    - [{ url: '?staffel=755&r=2#p3074x3079', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - [{ url: '?staffel=755&r=5#p3074x3101', title: 'gegen Bad Salzdetfurth 3', text: 2½ }]
+    - [{ url: '?staffel=755&r=1#p3074x2988', title: 'gegen SC Langelsheim', text: 4½ }]
+    - [{ url: '?staffel=755&r=8#p3074x3077', title: 'gegen ESV Göttingen 3', text: '5' }]
+    - 12
+    - 33½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Bad Gandersheim', url: '?mannschaft=3081', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=755&r=6#p3081x3066', title: 'gegen SC SW Northeim 2', text: '2' }]
+    - [{ url: '?staffel=755&r=3#p3081x3074', title: 'gegen Hamelner SV 5', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=755&r=4#p3081x2935', title: 'gegen PSV Bad Pyrmont 2', text: 3½ }]
+    - [{ url: '?staffel=755&r=1#p3081x2995', title: 'gegen Turm Vienenburg', text: '3' }]
+    - [{ url: '?staffel=755&r=8#p3081x3068', title: 'gegen SK Bad Harzburg 2', text: 3½ }]
+    - [{ url: '?staffel=755&r=5#p3081x3079', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - [{ url: '?staffel=755&r=7#p3081x3101', title: 'gegen Bad Salzdetfurth 3', text: '6' }]
+    - [{ url: '?staffel=755&r=2#p3081x2988', title: 'gegen SC Langelsheim', text: '3' }]
+    - [{ url: '?staffel=755&r=9#p3081x3077', title: 'gegen ESV Göttingen 3', text: 4½ }]
+    - 12
+    - 31½
+    - ''
+-
+    - '4.'
+    - { text: 'PSV Bad Pyrmont 2', url: '?mannschaft=2935', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=755&r=3#p2935x3066', title: 'gegen SC SW Northeim 2', text: '2' }]
+    - [{ url: '?staffel=755&r=6#p2935x3074', title: 'gegen Hamelner SV 5', text: '1' }]
+    - [{ url: '?staffel=755&r=4#p2935x3081', title: 'gegen Bad Gandersheim', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=755&r=5#p2935x2995', title: 'gegen Turm Vienenburg', text: '4' }]
+    - [{ url: '?staffel=755&r=7#p2935x3068', title: 'gegen SK Bad Harzburg 2', text: 3½ }]
+    - [{ url: '?staffel=755&r=9#p2935x3079', title: 'gegen Plesse Bovenden 2', text: 3½ }]
+    - [{ url: '?staffel=755&r=2#p2935x3101', title: 'gegen Bad Salzdetfurth 3', text: 2½ }]
+    - [{ url: '?staffel=755&r=8#p2935x2988', title: 'gegen SC Langelsheim', text: '4' }]
+    - [{ url: '?staffel=755&r=1#p2935x3077', title: 'gegen ESV Göttingen 3', text: 4½ }]
+    - 10
+    - 27½
+    - ''
+-
+    - '5.'
+    - { text: 'Turm Vienenburg', url: '?mannschaft=2995', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=755&r=2#p2995x3066', title: 'gegen SC SW Northeim 2', text: 1½ }]
+    - [{ url: '?staffel=755&r=7#p2995x3074', title: 'gegen Hamelner SV 5', text: 1½ }]
+    - [{ url: '?staffel=755&r=1#p2995x3081', title: 'gegen Bad Gandersheim', text: '3' }]
+    - [{ url: '?staffel=755&r=5#p2995x2935', title: 'gegen PSV Bad Pyrmont 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=755&r=6#p2995x3068', title: 'gegen SK Bad Harzburg 2', text: '3' }]
+    - [{ url: '?staffel=755&r=8#p2995x3079', title: 'gegen Plesse Bovenden 2', text: 3½ }]
+    - [{ url: '?staffel=755&r=9#p2995x3101', title: 'gegen Bad Salzdetfurth 3', text: 5½ }]
+    - [{ url: '?staffel=755&r=4#p2995x2988', title: 'gegen SC Langelsheim', text: 3½ }]
+    - [{ url: '?staffel=755&r=3#p2995x3077', title: 'gegen ESV Göttingen 3', text: '4' }]
+    - 10
+    - 27½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Bad Harzburg 2', url: '?mannschaft=3068', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=755&r=1#p3068x3066', title: 'gegen SC SW Northeim 2', text: 2½ }]
+    - [{ url: '?staffel=755&r=9#p3068x3074', title: 'gegen Hamelner SV 5', text: '4' }]
+    - [{ url: '?staffel=755&r=8#p3068x3081', title: 'gegen Bad Gandersheim', text: 2½ }]
+    - [{ url: '?staffel=755&r=7#p3068x2935', title: 'gegen PSV Bad Pyrmont 2', text: 2½ }]
+    - [{ url: '?staffel=755&r=6#p3068x2995', title: 'gegen Turm Vienenburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=755&r=4#p3068x3079', title: 'gegen Plesse Bovenden 2', text: '2' }]
+    - [{ url: '?staffel=755&r=3#p3068x3101', title: 'gegen Bad Salzdetfurth 3', text: 3½ }]
+    - [{ url: '?staffel=755&r=5#p3068x2988', title: 'gegen SC Langelsheim', text: '4' }]
+    - [{ url: '?staffel=755&r=2#p3068x3077', title: 'gegen ESV Göttingen 3', text: 5½ }]
+    - 9
+    - 29½
+    - ''
+-
+    - '7.'
+    - { text: 'Plesse Bovenden 2', url: '?mannschaft=3079', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=755&r=7#p3079x3066', title: 'gegen SC SW Northeim 2', text: 3½ }]
+    - [{ url: '?staffel=755&r=2#p3079x3074', title: 'gegen Hamelner SV 5', text: '2' }]
+    - [{ url: '?staffel=755&r=5#p3079x3081', title: 'gegen Bad Gandersheim', text: '3' }]
+    - [{ url: '?staffel=755&r=9#p3079x2935', title: 'gegen PSV Bad Pyrmont 2', text: 2½ }]
+    - [{ url: '?staffel=755&r=8#p3079x2995', title: 'gegen Turm Vienenburg', text: 2½ }]
+    - [{ url: '?staffel=755&r=4#p3079x3068', title: 'gegen SK Bad Harzburg 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=755&r=1#p3079x3101', title: 'gegen Bad Salzdetfurth 3', text: 2½ }]
+    - [{ url: '?staffel=755&r=3#p3079x2988', title: 'gegen SC Langelsheim', text: '3' }]
+    - [{ url: '?staffel=755&r=6#p3079x3077', title: 'gegen ESV Göttingen 3', text: '6' }]
+    - 8
+    - '29'
+    - ''
+-
+    - '8.'
+    - { text: 'Bad Salzdetfurth 3', url: '?mannschaft=3101', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=755&r=8#p3101x3066', title: 'gegen SC SW Northeim 2', text: 3½ }]
+    - [{ url: '?staffel=755&r=5#p3101x3074', title: 'gegen Hamelner SV 5', text: 3½ }]
+    - [{ url: '?staffel=755&r=7#p3101x3081', title: 'gegen Bad Gandersheim', text: '0' }]
+    - [{ url: '?staffel=755&r=2#p3101x2935', title: 'gegen PSV Bad Pyrmont 2', text: 3½ }]
+    - [{ url: '?staffel=755&r=9#p3101x2995', title: 'gegen Turm Vienenburg', text: ½ }]
+    - [{ url: '?staffel=755&r=3#p3101x3068', title: 'gegen SK Bad Harzburg 2', text: 2½ }]
+    - [{ url: '?staffel=755&r=1#p3101x3079', title: 'gegen Plesse Bovenden 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=755&r=6#p3101x2988', title: 'gegen SC Langelsheim', text: 1½ }]
+    - [{ url: '?staffel=755&r=4#p3101x3077', title: 'gegen ESV Göttingen 3', text: 2½ }]
+    - 8
+    - '21'
+    - ''
+-
+    - '9.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=2988', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=755&r=9#p2988x3066', title: 'gegen SC SW Northeim 2', text: ½ }]
+    - [{ url: '?staffel=755&r=1#p2988x3074', title: 'gegen Hamelner SV 5', text: 1½ }]
+    - [{ url: '?staffel=755&r=2#p2988x3081', title: 'gegen Bad Gandersheim', text: '3' }]
+    - [{ url: '?staffel=755&r=8#p2988x2935', title: 'gegen PSV Bad Pyrmont 2', text: '2' }]
+    - [{ url: '?staffel=755&r=4#p2988x2995', title: 'gegen Turm Vienenburg', text: 2½ }]
+    - [{ url: '?staffel=755&r=5#p2988x3068', title: 'gegen SK Bad Harzburg 2', text: '2' }]
+    - [{ url: '?staffel=755&r=3#p2988x3079', title: 'gegen Plesse Bovenden 2', text: '3' }]
+    - [{ url: '?staffel=755&r=6#p2988x3101', title: 'gegen Bad Salzdetfurth 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=755&r=7#p2988x3077', title: 'gegen ESV Göttingen 3', text: 3½ }]
+    - 6
+    - 22½
+    - absteiger
+-
+    - '10.'
+    - { text: 'ESV Göttingen 3', url: '?mannschaft=3077', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=755&r=5#p3077x3066', title: 'gegen SC SW Northeim 2', text: '0' }]
+    - [{ url: '?staffel=755&r=8#p3077x3074', title: 'gegen Hamelner SV 5', text: '1' }]
+    - [{ url: '?staffel=755&r=9#p3077x3081', title: 'gegen Bad Gandersheim', text: 1½ }]
+    - [{ url: '?staffel=755&r=1#p3077x2935', title: 'gegen PSV Bad Pyrmont 2', text: 1½ }]
+    - [{ url: '?staffel=755&r=3#p3077x2995', title: 'gegen Turm Vienenburg', text: '2' }]
+    - [{ url: '?staffel=755&r=2#p3077x3068', title: 'gegen SK Bad Harzburg 2', text: ½ }]
+    - [{ url: '?staffel=755&r=6#p3077x3079', title: 'gegen Plesse Bovenden 2', text: '0' }]
+    - [{ url: '?staffel=755&r=4#p3077x3101', title: 'gegen Bad Salzdetfurth 3', text: 3½ }]
+    - [{ url: '?staffel=755&r=7#p3077x2988', title: 'gegen SC Langelsheim', text: 2½ }]
+    - xxx
+    - 2
+    - 12½
+    - absteiger

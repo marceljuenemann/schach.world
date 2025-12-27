@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=1262', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=509&r=9#p1262x1249', title: 'gegen TSV Pattensen', text: '4' }]
+    - [{ url: '?staffel=509&r=4#p1262x1259', title: 'gegen Uetze-Hänigsen 2', text: '4' }]
+    - [{ url: '?staffel=509&r=5#p1262x1200', title: 'gegen TSV Burgdorf', text: '4' }]
+    - [{ url: '?staffel=509&r=2#p1262x1251', title: 'gegen SV Gretenberg 2', text: '6' }]
+    - [{ url: '?staffel=509&r=7#p1262x1203', title: 'gegen WB Eilenriede 4', text: '5' }]
+    - [{ url: '?staffel=509&r=6#p1262x1248', title: 'gegen ST Langenhagen 2', text: '7' }]
+    - [{ url: '?staffel=509&r=1#p1262x1221', title: 'gegen SK Anderten 2', text: 6½ }]
+    - [{ url: '?staffel=509&r=3#p1262x1273', title: 'gegen HSK-Lister Turm 5', text: '5' }]
+    - {  }
+    - 13
+    - 41½
+    - ''
+-
+    - '2.'
+    - { text: 'TSV Pattensen', url: '?mannschaft=1249', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=509&r=9#p1249x1262', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=509&r=8#p1249x1259', title: 'gegen Uetze-Hänigsen 2', text: '6' }]
+    - [{ url: '?staffel=509&r=1#p1249x1200', title: 'gegen TSV Burgdorf', text: 6½ }]
+    - [{ url: '?staffel=509&r=4#p1249x1251', title: 'gegen SV Gretenberg 2', text: '6' }]
+    - [{ url: '?staffel=509&r=5#p1249x1203', title: 'gegen WB Eilenriede 4', text: '3' }]
+    - [{ url: '?staffel=509&r=3#p1249x1248', title: 'gegen ST Langenhagen 2', text: 4½ }]
+    - [{ url: '?staffel=509&r=2#p1249x1221', title: 'gegen SK Anderten 2', text: '4' }]
+    - [{ url: '?staffel=509&r=6#p1249x1273', title: 'gegen HSK-Lister Turm 5', text: '6' }]
+    - {  }
+    - 12
+    - '40'
+    - ''
+-
+    - '3.'
+    - { text: 'Uetze-Hänigsen 2', url: '?mannschaft=1259', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=509&r=4#p1259x1262', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - [{ url: '?staffel=509&r=8#p1259x1249', title: 'gegen TSV Pattensen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=509&r=9#p1259x1200', title: 'gegen TSV Burgdorf', text: 4½ }]
+    - [{ url: '?staffel=509&r=6#p1259x1251', title: 'gegen SV Gretenberg 2', text: '5' }]
+    - [{ url: '?staffel=509&r=2#p1259x1203', title: 'gegen WB Eilenriede 4', text: '4' }]
+    - [{ url: '?staffel=509&r=1#p1259x1248', title: 'gegen ST Langenhagen 2', text: 4½ }]
+    - [{ url: '?staffel=509&r=5#p1259x1221', title: 'gegen SK Anderten 2', text: '5' }]
+    - [{ url: '?staffel=509&r=7#p1259x1273', title: 'gegen HSK-Lister Turm 5', text: 4½ }]
+    - {  }
+    - 12
+    - 33½
+    - ''
+-
+    - '4.'
+    - { text: 'TSV Burgdorf', url: '?mannschaft=1200', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=509&r=5#p1200x1262', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - [{ url: '?staffel=509&r=1#p1200x1249', title: 'gegen TSV Pattensen', text: 1½ }]
+    - [{ url: '?staffel=509&r=9#p1200x1259', title: 'gegen Uetze-Hänigsen 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=509&r=7#p1200x1251', title: 'gegen SV Gretenberg 2', text: 4½ }]
+    - [{ url: '?staffel=509&r=3#p1200x1203', title: 'gegen WB Eilenriede 4', text: '3' }]
+    - [{ url: '?staffel=509&r=2#p1200x1248', title: 'gegen ST Langenhagen 2', text: 4½ }]
+    - [{ url: '?staffel=509&r=6#p1200x1221', title: 'gegen SK Anderten 2', text: 5½ }]
+    - [{ url: '?staffel=509&r=8#p1200x1273', title: 'gegen HSK-Lister Turm 5', text: 6½ }]
+    - {  }
+    - 9
+    - '33'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Gretenberg 2', url: '?mannschaft=1251', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=509&r=2#p1251x1262', title: 'gegen SD Isernhagen 2', text: '2' }]
+    - [{ url: '?staffel=509&r=4#p1251x1249', title: 'gegen TSV Pattensen', text: '2' }]
+    - [{ url: '?staffel=509&r=6#p1251x1259', title: 'gegen Uetze-Hänigsen 2', text: '3' }]
+    - [{ url: '?staffel=509&r=7#p1251x1200', title: 'gegen TSV Burgdorf', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=509&r=9#p1251x1203', title: 'gegen WB Eilenriede 4', text: '5' }]
+    - [{ url: '?staffel=509&r=8#p1251x1248', title: 'gegen ST Langenhagen 2', text: '4' }]
+    - [{ url: '?staffel=509&r=3#p1251x1221', title: 'gegen SK Anderten 2', text: '5' }]
+    - [{ url: '?staffel=509&r=5#p1251x1273', title: 'gegen HSK-Lister Turm 5', text: 6½ }]
+    - {  }
+    - 7
+    - '31'
+    - ''
+-
+    - '6.'
+    - { text: 'WB Eilenriede 4', url: '?mannschaft=1203', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=509&r=7#p1203x1262', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - [{ url: '?staffel=509&r=5#p1203x1249', title: 'gegen TSV Pattensen', text: '5' }]
+    - [{ url: '?staffel=509&r=2#p1203x1259', title: 'gegen Uetze-Hänigsen 2', text: '4' }]
+    - [{ url: '?staffel=509&r=3#p1203x1200', title: 'gegen TSV Burgdorf', text: '5' }]
+    - [{ url: '?staffel=509&r=9#p1203x1251', title: 'gegen SV Gretenberg 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=509&r=4#p1203x1248', title: 'gegen ST Langenhagen 2', text: 1½ }]
+    - [{ url: '?staffel=509&r=8#p1203x1221', title: 'gegen SK Anderten 2', text: '2' }]
+    - [{ url: '?staffel=509&r=1#p1203x1273', title: 'gegen HSK-Lister Turm 5', text: 5½ }]
+    - {  }
+    - 7
+    - '29'
+    - ''
+-
+    - '7.'
+    - { text: 'ST Langenhagen 2', url: '?mannschaft=1248', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=509&r=6#p1248x1262', title: 'gegen SD Isernhagen 2', text: '1' }]
+    - [{ url: '?staffel=509&r=3#p1248x1249', title: 'gegen TSV Pattensen', text: 3½ }]
+    - [{ url: '?staffel=509&r=1#p1248x1259', title: 'gegen Uetze-Hänigsen 2', text: 3½ }]
+    - [{ url: '?staffel=509&r=2#p1248x1200', title: 'gegen TSV Burgdorf', text: 3½ }]
+    - [{ url: '?staffel=509&r=8#p1248x1251', title: 'gegen SV Gretenberg 2', text: '4' }]
+    - [{ url: '?staffel=509&r=4#p1248x1203', title: 'gegen WB Eilenriede 4', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=509&r=7#p1248x1221', title: 'gegen SK Anderten 2', text: '3' }]
+    - [{ url: '?staffel=509&r=9#p1248x1273', title: 'gegen HSK-Lister Turm 5', text: 4½ }]
+    - {  }
+    - 5
+    - 29½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=1221', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=509&r=1#p1221x1262', title: 'gegen SD Isernhagen 2', text: 1½ }]
+    - [{ url: '?staffel=509&r=2#p1221x1249', title: 'gegen TSV Pattensen', text: '4' }]
+    - [{ url: '?staffel=509&r=5#p1221x1259', title: 'gegen Uetze-Hänigsen 2', text: '3' }]
+    - [{ url: '?staffel=509&r=6#p1221x1200', title: 'gegen TSV Burgdorf', text: 2½ }]
+    - [{ url: '?staffel=509&r=3#p1221x1251', title: 'gegen SV Gretenberg 2', text: '3' }]
+    - [{ url: '?staffel=509&r=8#p1221x1203', title: 'gegen WB Eilenriede 4', text: '5' }]
+    - [{ url: '?staffel=509&r=7#p1221x1248', title: 'gegen ST Langenhagen 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=509&r=4#p1221x1273', title: 'gegen HSK-Lister Turm 5', text: 2½ }]
+    - {  }
+    - 5
+    - 26½
+    - ''
+-
+    - '9.'
+    - { text: 'HSK-Lister Turm 5', url: '?mannschaft=1273', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=509&r=3#p1273x1262', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - [{ url: '?staffel=509&r=6#p1273x1249', title: 'gegen TSV Pattensen', text: '2' }]
+    - [{ url: '?staffel=509&r=7#p1273x1259', title: 'gegen Uetze-Hänigsen 2', text: 3½ }]
+    - [{ url: '?staffel=509&r=8#p1273x1200', title: 'gegen TSV Burgdorf', text: 1½ }]
+    - [{ url: '?staffel=509&r=5#p1273x1251', title: 'gegen SV Gretenberg 2', text: 1½ }]
+    - [{ url: '?staffel=509&r=1#p1273x1203', title: 'gegen WB Eilenriede 4', text: 2½ }]
+    - [{ url: '?staffel=509&r=9#p1273x1248', title: 'gegen ST Langenhagen 2', text: 3½ }]
+    - [{ url: '?staffel=509&r=4#p1273x1221', title: 'gegen SK Anderten 2', text: 5½ }]
+    - xxx
+    - {  }
+    - 2
+    - '23'
+    - ''
+-
+    - '10.'
+    - { text: 'PSC Hannover 4', url: '?mannschaft=1228', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

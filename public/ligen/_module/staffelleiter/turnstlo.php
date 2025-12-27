@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Staffel löschen
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann

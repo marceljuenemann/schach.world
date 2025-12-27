@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=1101', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=494&r=3#p1101x1178', title: 'gegen SK Ricklingen', text: 5½ }]
+    - [{ url: '?staffel=494&r=5#p1101x1092', title: 'gegen Hamelner SV', text: '4' }]
+    - [{ url: '?staffel=494&r=6#p1101x1097', title: 'gegen PSC Hannover 2', text: 4½ }]
+    - [{ url: '?staffel=494&r=4#p1101x1091', title: 'gegen Roch. Göttingen', text: '3' }]
+    - [{ url: '?staffel=494&r=7#p1101x1175', title: 'gegen Wolfenbüttel', text: '6' }]
+    - [{ url: '?staffel=494&r=2#p1101x1093', title: 'gegen BadSalzdetfurth', text: 4½ }]
+    - 11
+    - 27½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=1178', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=494&r=3#p1178x1101', title: 'gegen SD Isernhagen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=494&r=6#p1178x1092', title: 'gegen Hamelner SV', text: 3½ }]
+    - [{ url: '?staffel=494&r=2#p1178x1097', title: 'gegen PSC Hannover 2', text: '6' }]
+    - [{ url: '?staffel=494&r=1#p1178x1091', title: 'gegen Roch. Göttingen', text: 3½ }]
+    - [{ url: '?staffel=494&r=5#p1178x1175', title: 'gegen Wolfenbüttel', text: 5½ }]
+    - [{ url: '?staffel=494&r=7#p1178x1093', title: 'gegen BadSalzdetfurth', text: '5' }]
+    - 10
+    - '24'
+    - ''
+-
+    - '3.'
+    - { text: 'Hamelner SV', url: '?mannschaft=1092', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=494&r=5#p1092x1101', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=494&r=6#p1092x1178', title: 'gegen SK Ricklingen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=494&r=3#p1092x1097', title: 'gegen PSC Hannover 2', text: '6' }]
+    - [{ url: '?staffel=494&r=2#p1092x1091', title: 'gegen Roch. Göttingen', text: '4' }]
+    - [{ url: '?staffel=494&r=1#p1092x1175', title: 'gegen Wolfenbüttel', text: 3½ }]
+    - [{ url: '?staffel=494&r=4#p1092x1093', title: 'gegen BadSalzdetfurth', text: '5' }]
+    - 8
+    - '23'
+    - ''
+-
+    - '4.'
+    - { text: 'PSC Hannover 2', url: '?mannschaft=1097', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=494&r=6#p1097x1101', title: 'gegen SD Isernhagen', text: 1½ }]
+    - [{ url: '?staffel=494&r=2#p1097x1178', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=494&r=3#p1097x1092', title: 'gegen Hamelner SV', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=494&r=7#p1097x1091', title: 'gegen Roch. Göttingen', text: '3' }]
+    - [{ url: '?staffel=494&r=4#p1097x1175', title: 'gegen Wolfenbüttel', text: '4' }]
+    - [{ url: '?staffel=494&r=1#p1097x1093', title: 'gegen BadSalzdetfurth', text: 4½ }]
+    - 5
+    - '13'
+    - ''
+-
+    - '5.'
+    - { text: 'Roch. Göttingen', url: '?mannschaft=1091', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=494&r=4#p1091x1101', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=494&r=1#p1091x1178', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=494&r=2#p1091x1092', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=494&r=7#p1091x1097', title: 'gegen PSC Hannover 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=494&r=6#p1091x1175', title: 'gegen Wolfenbüttel', text: '1' }]
+    - [{ url: '?staffel=494&r=5#p1091x1093', title: 'gegen BadSalzdetfurth', text: '5' }]
+    - 4
+    - 15½
+    - ''
+-
+    - '6.'
+    - { text: Wolfenbüttel, url: '?mannschaft=1175', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=494&r=7#p1175x1101', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=494&r=5#p1175x1178', title: 'gegen SK Ricklingen', text: ½ }]
+    - [{ url: '?staffel=494&r=1#p1175x1092', title: 'gegen Hamelner SV', text: 2½ }]
+    - [{ url: '?staffel=494&r=4#p1175x1097', title: 'gegen PSC Hannover 2', text: '2' }]
+    - [{ url: '?staffel=494&r=6#p1175x1091', title: 'gegen Roch. Göttingen', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=494&r=3#p1175x1093', title: 'gegen BadSalzdetfurth', text: '4' }]
+    - 4
+    - '14'
+    - ''
+-
+    - '7.'
+    - { text: BadSalzdetfurth, url: '?mannschaft=1093', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=494&r=2#p1093x1101', title: 'gegen SD Isernhagen', text: ½ }]
+    - [{ url: '?staffel=494&r=7#p1093x1178', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=494&r=4#p1093x1092', title: 'gegen Hamelner SV', text: '1' }]
+    - [{ url: '?staffel=494&r=1#p1093x1097', title: 'gegen PSC Hannover 2', text: 1½ }]
+    - [{ url: '?staffel=494&r=5#p1093x1091', title: 'gegen Roch. Göttingen', text: '1' }]
+    - [{ url: '?staffel=494&r=3#p1093x1175', title: 'gegen Wolfenbüttel', text: '2' }]
+    - xxx
+    - 0
+    - '7'
+    - ''

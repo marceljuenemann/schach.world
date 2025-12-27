@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Sfr Bremer Osten', url: '?mannschaft=8149', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1791&r=7#p8149x7890', title: 'gegen SK Kirchweyhe 3', text: 4½ }]
+    - [{ url: '?staffel=1791&r=3#p8149x7807', title: 'gegen Post SV Uelzen 2', text: '5' }]
+    - [{ url: '?staffel=1791&r=5#p8149x7798', title: 'gegen SF Buxtehude', text: 4½ }]
+    - [{ url: '?staffel=1791&r=2#p8149x7954', title: 'gegen SF Leherheide', text: 6½ }]
+    - [{ url: '?staffel=1791&r=9#p8149x7873', title: 'gegen SG Niederelbe', text: 5½ }]
+    - [{ url: '?staffel=1791&r=8#p8149x7791', title: 'gegen SG FinWest', text: 6½ }]
+    - [{ url: '?staffel=1791&r=4#p8149x7812', title: 'gegen SK Verden', text: 4½ }]
+    - [{ url: '?staffel=1791&r=6#p8149x7900', title: 'gegen SV Bad Bevensen', text: 4½ }]
+    - [{ url: '?staffel=1791&r=1#p8149x7810', title: 'gegen MTV Dannenberg', text: 5½ }]
+    - 18
+    - '47'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Kirchweyhe 3', url: '?mannschaft=7890', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1791&r=7#p7890x8149', title: 'gegen Sfr Bremer Osten', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1791&r=9#p7890x7807', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=1791&r=1#p7890x7798', title: 'gegen SF Buxtehude', text: '7' }]
+    - [{ url: '?staffel=1791&r=8#p7890x7954', title: 'gegen SF Leherheide', text: '4' }]
+    - [{ url: '?staffel=1791&r=5#p7890x7873', title: 'gegen SG Niederelbe', text: 4½ }]
+    - [{ url: '?staffel=1791&r=3#p7890x7791', title: 'gegen SG FinWest', text: '6' }]
+    - [{ url: '?staffel=1791&r=2#p7890x7812', title: 'gegen SK Verden', text: '6' }]
+    - [{ url: '?staffel=1791&r=4#p7890x7900', title: 'gegen SV Bad Bevensen', text: '6' }]
+    - [{ url: '?staffel=1791&r=6#p7890x7810', title: 'gegen MTV Dannenberg', text: '8' }]
+    - 14
+    - '49'
+    - ''
+-
+    - '3.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=7807', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1791&r=3#p7807x8149', title: 'gegen Sfr Bremer Osten', text: '3' }]
+    - [{ url: '?staffel=1791&r=9#p7807x7890', title: 'gegen SK Kirchweyhe 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1791&r=2#p7807x7798', title: 'gegen SF Buxtehude', text: '5' }]
+    - [{ url: '?staffel=1791&r=1#p7807x7954', title: 'gegen SF Leherheide', text: 6½ }]
+    - [{ url: '?staffel=1791&r=8#p7807x7873', title: 'gegen SG Niederelbe', text: '6' }]
+    - [{ url: '?staffel=1791&r=6#p7807x7791', title: 'gegen SG FinWest', text: 5½ }]
+    - [{ url: '?staffel=1791&r=5#p7807x7812', title: 'gegen SK Verden', text: 4½ }]
+    - [{ url: '?staffel=1791&r=7#p7807x7900', title: 'gegen SV Bad Bevensen', text: '4' }]
+    - [{ url: '?staffel=1791&r=4#p7807x7810', title: 'gegen MTV Dannenberg', text: '5' }]
+    - 14
+    - 43½
+    - ''
+-
+    - '4.'
+    - { text: 'SF Buxtehude', url: '?mannschaft=7798', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1791&r=5#p7798x8149', title: 'gegen Sfr Bremer Osten', text: 3½ }]
+    - [{ url: '?staffel=1791&r=1#p7798x7890', title: 'gegen SK Kirchweyhe 3', text: '1' }]
+    - [{ url: '?staffel=1791&r=2#p7798x7807', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1791&r=7#p7798x7954', title: 'gegen SF Leherheide', text: '4' }]
+    - [{ url: '?staffel=1791&r=4#p7798x7873', title: 'gegen SG Niederelbe', text: '5' }]
+    - [{ url: '?staffel=1791&r=9#p7798x7791', title: 'gegen SG FinWest', text: '8' }]
+    - [{ url: '?staffel=1791&r=6#p7798x7812', title: 'gegen SK Verden', text: '5' }]
+    - [{ url: '?staffel=1791&r=8#p7798x7900', title: 'gegen SV Bad Bevensen', text: 4½ }]
+    - [{ url: '?staffel=1791&r=3#p7798x7810', title: 'gegen MTV Dannenberg', text: '5' }]
+    - 11
+    - '39'
+    - ''
+-
+    - '5.'
+    - { text: 'SF Leherheide', url: '?mannschaft=7954', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1791&r=2#p7954x8149', title: 'gegen Sfr Bremer Osten', text: 1½ }]
+    - [{ url: '?staffel=1791&r=8#p7954x7890', title: 'gegen SK Kirchweyhe 3', text: '4' }]
+    - [{ url: '?staffel=1791&r=1#p7954x7807', title: 'gegen Post SV Uelzen 2', text: 1½ }]
+    - [{ url: '?staffel=1791&r=7#p7954x7798', title: 'gegen SF Buxtehude', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1791&r=6#p7954x7873', title: 'gegen SG Niederelbe', text: '5' }]
+    - [{ url: '?staffel=1791&r=4#p7954x7791', title: 'gegen SG FinWest', text: '3' }]
+    - [{ url: '?staffel=1791&r=3#p7954x7812', title: 'gegen SK Verden', text: 5½ }]
+    - [{ url: '?staffel=1791&r=5#p7954x7900', title: 'gegen SV Bad Bevensen', text: 4½ }]
+    - [{ url: '?staffel=1791&r=9#p7954x7810', title: 'gegen MTV Dannenberg', text: '4' }]
+    - 9
+    - '33'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Niederelbe', url: '?mannschaft=7873', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1791&r=9#p7873x8149', title: 'gegen Sfr Bremer Osten', text: 2½ }]
+    - [{ url: '?staffel=1791&r=5#p7873x7890', title: 'gegen SK Kirchweyhe 3', text: 3½ }]
+    - [{ url: '?staffel=1791&r=8#p7873x7807', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - [{ url: '?staffel=1791&r=4#p7873x7798', title: 'gegen SF Buxtehude', text: '3' }]
+    - [{ url: '?staffel=1791&r=6#p7873x7954', title: 'gegen SF Leherheide', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1791&r=2#p7873x7791', title: 'gegen SG FinWest', text: 4½ }]
+    - [{ url: '?staffel=1791&r=1#p7873x7812', title: 'gegen SK Verden', text: '4' }]
+    - [{ url: '?staffel=1791&r=3#p7873x7900', title: 'gegen SV Bad Bevensen', text: '5' }]
+    - [{ url: '?staffel=1791&r=7#p7873x7810', title: 'gegen MTV Dannenberg', text: 4½ }]
+    - 7
+    - '32'
+    - ''
+-
+    - '7.'
+    - { text: 'SG FinWest', url: '?mannschaft=7791', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1791&r=8#p7791x8149', title: 'gegen Sfr Bremer Osten', text: 1½ }]
+    - [{ url: '?staffel=1791&r=3#p7791x7890', title: 'gegen SK Kirchweyhe 3', text: '2' }]
+    - [{ url: '?staffel=1791&r=6#p7791x7807', title: 'gegen Post SV Uelzen 2', text: 2½ }]
+    - [{ url: '?staffel=1791&r=9#p7791x7798', title: 'gegen SF Buxtehude', text: '0' }]
+    - [{ url: '?staffel=1791&r=4#p7791x7954', title: 'gegen SF Leherheide', text: '5' }]
+    - [{ url: '?staffel=1791&r=2#p7791x7873', title: 'gegen SG Niederelbe', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1791&r=7#p7791x7812', title: 'gegen SK Verden', text: 4½ }]
+    - [{ url: '?staffel=1791&r=1#p7791x7900', title: 'gegen SV Bad Bevensen', text: 4½ }]
+    - [{ url: '?staffel=1791&r=5#p7791x7810', title: 'gegen MTV Dannenberg', text: 3½ }]
+    - 6
+    - '27'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Verden', url: '?mannschaft=7812', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1791&r=4#p7812x8149', title: 'gegen Sfr Bremer Osten', text: 3½ }]
+    - [{ url: '?staffel=1791&r=2#p7812x7890', title: 'gegen SK Kirchweyhe 3', text: '2' }]
+    - [{ url: '?staffel=1791&r=5#p7812x7807', title: 'gegen Post SV Uelzen 2', text: 3½ }]
+    - [{ url: '?staffel=1791&r=6#p7812x7798', title: 'gegen SF Buxtehude', text: '3' }]
+    - [{ url: '?staffel=1791&r=3#p7812x7954', title: 'gegen SF Leherheide', text: 2½ }]
+    - [{ url: '?staffel=1791&r=1#p7812x7873', title: 'gegen SG Niederelbe', text: '4' }]
+    - [{ url: '?staffel=1791&r=7#p7812x7791', title: 'gegen SG FinWest', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1791&r=9#p7812x7900', title: 'gegen SV Bad Bevensen', text: 4½ }]
+    - [{ url: '?staffel=1791&r=8#p7812x7810', title: 'gegen MTV Dannenberg', text: 6½ }]
+    - 5
+    - '33'
+    - ''
+-
+    - '9.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=7900', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1791&r=6#p7900x8149', title: 'gegen Sfr Bremer Osten', text: 3½ }]
+    - [{ url: '?staffel=1791&r=4#p7900x7890', title: 'gegen SK Kirchweyhe 3', text: '2' }]
+    - [{ url: '?staffel=1791&r=7#p7900x7807', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=1791&r=8#p7900x7798', title: 'gegen SF Buxtehude', text: 3½ }]
+    - [{ url: '?staffel=1791&r=5#p7900x7954', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=1791&r=3#p7900x7873', title: 'gegen SG Niederelbe', text: '3' }]
+    - [{ url: '?staffel=1791&r=1#p7900x7791', title: 'gegen SG FinWest', text: 3½ }]
+    - [{ url: '?staffel=1791&r=9#p7900x7812', title: 'gegen SK Verden', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1791&r=2#p7900x7810', title: 'gegen MTV Dannenberg', text: '5' }]
+    - 3
+    - 31½
+    - absteiger
+-
+    - '10.'
+    - { text: 'MTV Dannenberg', url: '?mannschaft=7810', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1791&r=1#p7810x8149', title: 'gegen Sfr Bremer Osten', text: 2½ }]
+    - [{ url: '?staffel=1791&r=6#p7810x7890', title: 'gegen SK Kirchweyhe 3', text: '0' }]
+    - [{ url: '?staffel=1791&r=4#p7810x7807', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1791&r=3#p7810x7798', title: 'gegen SF Buxtehude', text: '3' }]
+    - [{ url: '?staffel=1791&r=9#p7810x7954', title: 'gegen SF Leherheide', text: '4' }]
+    - [{ url: '?staffel=1791&r=7#p7810x7873', title: 'gegen SG Niederelbe', text: 3½ }]
+    - [{ url: '?staffel=1791&r=5#p7810x7791', title: 'gegen SG FinWest', text: 4½ }]
+    - [{ url: '?staffel=1791&r=8#p7810x7812', title: 'gegen SK Verden', text: 1½ }]
+    - [{ url: '?staffel=1791&r=2#p7810x7900', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - xxx
+    - 3
+    - '25'
+    - absteiger

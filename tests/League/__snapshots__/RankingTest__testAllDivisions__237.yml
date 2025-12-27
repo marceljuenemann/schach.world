@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=2653', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=668&r=4#p2653x2609', title: 'gegen H96 Schach', text: '3' }]
+    - [{ url: '?staffel=668&r=5#p2653x2643', title: 'gegen Freib. Wedemark', text: '4' }]
+    - [{ url: '?staffel=668&r=1#p2653x2657', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=668&r=3#p2653x2660', title: 'gegen SF Hannover', text: '4' }]
+    - [{ url: '?staffel=668&r=2#p2653x2639', title: 'gegen SD Isernhagen', text: '4' }]
+    - 10
+    - '19'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'H96 Schach', url: '?mannschaft=2609', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=668&r=4#p2609x2653', title: 'gegen SK Lehrte', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=668&r=2#p2609x2643', title: 'gegen Freib. Wedemark', text: 3½ }]
+    - [{ url: '?staffel=668&r=3#p2609x2657', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=668&r=5#p2609x2660', title: 'gegen SF Hannover', text: '3' }]
+    - [{ url: '?staffel=668&r=1#p2609x2639', title: 'gegen SD Isernhagen', text: '3' }]
+    - 8
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'Freib. Wedemark', url: '?mannschaft=2643', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=668&r=5#p2643x2653', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=668&r=2#p2643x2609', title: 'gegen H96 Schach', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=668&r=4#p2643x2657', title: 'gegen Eystruper SK', text: 2½ }]
+    - [{ url: '?staffel=668&r=1#p2643x2660', title: 'gegen SF Hannover', text: '4' }]
+    - [{ url: '?staffel=668&r=3#p2643x2639', title: 'gegen SD Isernhagen', text: '2' }]
+    - 5
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'Eystruper SK', url: '?mannschaft=2657', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=668&r=1#p2657x2653', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=668&r=3#p2657x2609', title: 'gegen H96 Schach', text: '0' }]
+    - [{ url: '?staffel=668&r=4#p2657x2643', title: 'gegen Freib. Wedemark', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=668&r=2#p2657x2660', title: 'gegen SF Hannover', text: '3' }]
+    - [{ url: '?staffel=668&r=5#p2657x2639', title: 'gegen SD Isernhagen', text: 2½ }]
+    - 4
+    - '7'
+    - ''
+-
+    - '5.'
+    - { text: 'SF Hannover', url: '?mannschaft=2660', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=668&r=3#p2660x2653', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=668&r=5#p2660x2609', title: 'gegen H96 Schach', text: '1' }]
+    - [{ url: '?staffel=668&r=1#p2660x2643', title: 'gegen Freib. Wedemark', text: '0' }]
+    - [{ url: '?staffel=668&r=2#p2660x2657', title: 'gegen Eystruper SK', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=668&r=4#p2660x2639', title: 'gegen SD Isernhagen', text: '3' }]
+    - 2
+    - '5'
+    - ''
+-
+    - '6.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=2639', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=668&r=2#p2639x2653', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=668&r=1#p2639x2609', title: 'gegen H96 Schach', text: '1' }]
+    - [{ url: '?staffel=668&r=3#p2639x2643', title: 'gegen Freib. Wedemark', text: '2' }]
+    - [{ url: '?staffel=668&r=5#p2639x2657', title: 'gegen Eystruper SK', text: 1½ }]
+    - [{ url: '?staffel=668&r=4#p2639x2660', title: 'gegen SF Hannover', text: '1' }]
+    - xxx
+    - 1
+    - 5½
+    - ''

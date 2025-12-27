@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=5808', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1362&r=7#p5808x5782', title: 'gegen SK Lehrte 4', text: 3½ }]
+    - [{ url: '?staffel=1362&r=5#p5808x5665', title: 'gegen HSK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=1362&r=3#p5808x5779', title: 'gegen SD Isernhagen 2', text: '2' }]
+    - [{ url: '?staffel=1362&r=6#p5808x5545', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=1362&r=1#p5808x5639', title: 'gegen SV Gretenberg', text: '4' }]
+    - [{ url: '?staffel=1362&r=4#p5808x5812', title: 'gegen SK Girls Club', text: '2' }]
+    - 11
+    - '17'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=5782', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1362&r=7#p5782x5808', title: 'gegen SZ Bemerode 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1362&r=3#p5782x5665', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=1362&r=1#p5782x5779', title: 'gegen SD Isernhagen 2', text: 2½ }]
+    - [{ url: '?staffel=1362&r=4#p5782x5545', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=1362&r=6#p5782x5639', title: 'gegen SV Gretenberg', text: '3' }]
+    - [{ url: '?staffel=1362&r=2#p5782x5812', title: 'gegen SK Girls Club', text: '2' }]
+    - 9
+    - '15'
+    - ''
+-
+    - '3.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=5665', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1362&r=5#p5665x5808', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1362&r=3#p5665x5782', title: 'gegen SK Lehrte 4', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1362&r=6#p5665x5779', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - [{ url: '?staffel=1362&r=2#p5665x5545', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=1362&r=4#p5665x5639', title: 'gegen SV Gretenberg', text: '4' }]
+    - [{ url: '?staffel=1362&r=7#p5665x5812', title: 'gegen SK Girls Club', text: '4' }]
+    - 8
+    - '15'
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=5779', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1362&r=3#p5779x5808', title: 'gegen SZ Bemerode 2', text: '2' }]
+    - [{ url: '?staffel=1362&r=1#p5779x5782', title: 'gegen SK Lehrte 4', text: 1½ }]
+    - [{ url: '?staffel=1362&r=6#p5779x5665', title: 'gegen HSK Lister Turm', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1362&r=7#p5779x5545', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=1362&r=2#p5779x5639', title: 'gegen SV Gretenberg', text: 2½ }]
+    - [{ url: '?staffel=1362&r=5#p5779x5812', title: 'gegen SK Girls Club', text: '3' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Laatzen', url: '?mannschaft=5545', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1362&r=6#p5545x5808', title: 'gegen SZ Bemerode 2', text: 1½ }]
+    - [{ url: '?staffel=1362&r=4#p5545x5782', title: 'gegen SK Lehrte 4', text: '1' }]
+    - [{ url: '?staffel=1362&r=2#p5545x5665', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1362&r=7#p5545x5779', title: 'gegen SD Isernhagen 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1362&r=5#p5545x5639', title: 'gegen SV Gretenberg', text: 2½ }]
+    - [{ url: '?staffel=1362&r=1#p5545x5812', title: 'gegen SK Girls Club', text: '4' }]
+    - 4
+    - '11'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Gretenberg', url: '?mannschaft=5639', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1362&r=1#p5639x5808', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1362&r=6#p5639x5782', title: 'gegen SK Lehrte 4', text: '1' }]
+    - [{ url: '?staffel=1362&r=4#p5639x5665', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1362&r=2#p5639x5779', title: 'gegen SD Isernhagen 2', text: 1½ }]
+    - [{ url: '?staffel=1362&r=5#p5639x5545', title: 'gegen SV Laatzen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1362&r=3#p5639x5812', title: 'gegen SK Girls Club', text: '3' }]
+    - 2
+    - '7'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Girls Club', url: '?mannschaft=5812', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1362&r=4#p5812x5808', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1362&r=2#p5812x5782', title: 'gegen SK Lehrte 4', text: '2' }]
+    - [{ url: '?staffel=1362&r=7#p5812x5665', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1362&r=5#p5812x5779', title: 'gegen SD Isernhagen 2', text: '1' }]
+    - [{ url: '?staffel=1362&r=1#p5812x5545', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=1362&r=3#p5812x5639', title: 'gegen SV Gretenberg', text: '1' }]
+    - xxx
+    - 1
+    - '5'
+    - ''

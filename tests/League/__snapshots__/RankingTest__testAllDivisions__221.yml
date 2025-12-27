@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Schwäb. Hall', url: '?mannschaft=2362', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=648&r=2#p2362x2487', title: 'gegen Germering', text: '4' }]
+    - [{ url: '?staffel=648&r=1#p2362x2499', title: 'gegen OSG Baden-Baden 2', text: '4' }]
+    - [{ url: '?staffel=648&r=5#p2362x2336', title: 'gegen SC Uttenreuth', text: '4' }]
+    - [{ url: '?staffel=648&r=3#p2362x2534', title: 'gegen Bad Königshofen 2', text: '4' }]
+    - 8
+    - '16'
+    - aufsteiger
+-
+    - '2.'
+    - { text: Germering, url: '?mannschaft=2487', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=648&r=2#p2487x2362', title: 'gegen SK Schwäb. Hall', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=648&r=5#p2487x2499', title: 'gegen OSG Baden-Baden 2', text: '4' }]
+    - [{ url: '?staffel=648&r=3#p2487x2336', title: 'gegen SC Uttenreuth', text: '3' }]
+    - [{ url: '?staffel=648&r=4#p2487x2534', title: 'gegen Bad Königshofen 2', text: '4' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'OSG Baden-Baden 2', url: '?mannschaft=2499', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=648&r=1#p2499x2362', title: 'gegen SK Schwäb. Hall', text: '0' }]
+    - [{ url: '?staffel=648&r=5#p2499x2487', title: 'gegen Germering', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=648&r=4#p2499x2336', title: 'gegen SC Uttenreuth', text: '4' }]
+    - [{ url: '?staffel=648&r=2#p2499x2534', title: 'gegen Bad Königshofen 2', text: '4' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Uttenreuth', url: '?mannschaft=2336', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=648&r=5#p2336x2362', title: 'gegen SK Schwäb. Hall', text: '0' }]
+    - [{ url: '?staffel=648&r=3#p2336x2487', title: 'gegen Germering', text: '1' }]
+    - [{ url: '?staffel=648&r=4#p2336x2499', title: 'gegen OSG Baden-Baden 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=648&r=1#p2336x2534', title: 'gegen Bad Königshofen 2', text: '4' }]
+    - 2
+    - '5'
+    - ''
+-
+    - '5.'
+    - { text: 'Bad Königshofen 2', url: '?mannschaft=2534', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=648&r=3#p2534x2362', title: 'gegen SK Schwäb. Hall', text: '0' }]
+    - [{ url: '?staffel=648&r=4#p2534x2487', title: 'gegen Germering', text: '0' }]
+    - [{ url: '?staffel=648&r=2#p2534x2499', title: 'gegen OSG Baden-Baden 2', text: '0' }]
+    - [{ url: '?staffel=648&r=1#p2534x2336', title: 'gegen SC Uttenreuth', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Bl. 5', url: '?mannschaft=3508', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=811&r=3#p3508x3507', title: 'gegen SV Lingen 3', text: 3½ }, { url: '?staffel=811&r=8#p3508x3507', title: 'gegen SV Lingen 3', text: '5' }]
+    - [{ url: '?staffel=811&r=5#p3508x3506', title: 'gegen Veldhausen/Uel. 2', text: 5½ }, { url: '?staffel=811&r=10#p3508x3506', title: 'gegen Veldhausen/Uel. 2', text: '6' }]
+    - [{ url: '?staffel=811&r=2#p3508x3509', title: 'gegen TuS Aschendorf', text: '6' }, { url: '?staffel=811&r=7#p3508x3509', title: 'gegen TuS Aschendorf', text: '4' }]
+    - [{ url: '?staffel=811&r=4#p3508x3510', title: 'gegen SV Lingen 4', text: 5½ }, { url: '?staffel=811&r=9#p3508x3510', title: 'gegen SV Lingen 4', text: '4' }]
+    - [{ url: '?staffel=811&r=1#p3508x3511', title: 'gegen SF Spelle 3', text: '7' }, { url: '?staffel=811&r=6#p3508x3511', title: 'gegen SF Spelle 3', text: '7' }]
+    - 16
+    - 53½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Lingen 3', url: '?mannschaft=3507', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=811&r=3#p3507x3508', title: 'gegen SK Nordhorn-Bl. 5', text: 4½ }, { url: '?staffel=811&r=8#p3507x3508', title: 'gegen SK Nordhorn-Bl. 5', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=811&r=4#p3507x3506', title: 'gegen Veldhausen/Uel. 2', text: '4' }, { url: '?staffel=811&r=9#p3507x3506', title: 'gegen Veldhausen/Uel. 2', text: 2½ }]
+    - [{ url: '?staffel=811&r=1#p3507x3509', title: 'gegen TuS Aschendorf', text: '5' }, { url: '?staffel=811&r=6#p3507x3509', title: 'gegen TuS Aschendorf', text: '2' }]
+    - [{ url: '?staffel=811&r=2#p3507x3510', title: 'gegen SV Lingen 4', text: 5½ }, { url: '?staffel=811&r=7#p3507x3510', title: 'gegen SV Lingen 4', text: 4½ }]
+    - [{ url: '?staffel=811&r=5#p3507x3511', title: 'gegen SF Spelle 3', text: '8' }, { url: '?staffel=811&r=10#p3507x3511', title: 'gegen SF Spelle 3', text: 4½ }]
+    - 13
+    - 43½
+    - ''
+-
+    - '3.'
+    - { text: 'Veldhausen/Uel. 2', url: '?mannschaft=3506', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=811&r=5#p3506x3508', title: 'gegen SK Nordhorn-Bl. 5', text: 2½ }, { url: '?staffel=811&r=10#p3506x3508', title: 'gegen SK Nordhorn-Bl. 5', text: '2' }]
+    - [{ url: '?staffel=811&r=4#p3506x3507', title: 'gegen SV Lingen 3', text: '4' }, { url: '?staffel=811&r=9#p3506x3507', title: 'gegen SV Lingen 3', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=811&r=3#p3506x3509', title: 'gegen TuS Aschendorf', text: 4½ }, { url: '?staffel=811&r=8#p3506x3509', title: 'gegen TuS Aschendorf', text: '6' }]
+    - [{ url: '?staffel=811&r=1#p3506x3510', title: 'gegen SV Lingen 4', text: '5' }, { url: '?staffel=811&r=6#p3506x3510', title: 'gegen SV Lingen 4', text: 2½ }]
+    - [{ url: '?staffel=811&r=2#p3506x3511', title: 'gegen SF Spelle 3', text: '5' }, { url: '?staffel=811&r=7#p3506x3511', title: 'gegen SF Spelle 3', text: '6' }]
+    - 13
+    - '43'
+    - ''
+-
+    - '4.'
+    - { text: 'TuS Aschendorf', url: '?mannschaft=3509', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=811&r=2#p3509x3508', title: 'gegen SK Nordhorn-Bl. 5', text: '2' }, { url: '?staffel=811&r=7#p3509x3508', title: 'gegen SK Nordhorn-Bl. 5', text: '4' }]
+    - [{ url: '?staffel=811&r=1#p3509x3507', title: 'gegen SV Lingen 3', text: '3' }, { url: '?staffel=811&r=6#p3509x3507', title: 'gegen SV Lingen 3', text: '6' }]
+    - [{ url: '?staffel=811&r=3#p3509x3506', title: 'gegen Veldhausen/Uel. 2', text: 3½ }, { url: '?staffel=811&r=8#p3509x3506', title: 'gegen Veldhausen/Uel. 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=811&r=5#p3509x3510', title: 'gegen SV Lingen 4', text: '5' }, { url: '?staffel=811&r=10#p3509x3510', title: 'gegen SV Lingen 4', text: 5½ }]
+    - [{ url: '?staffel=811&r=4#p3509x3511', title: 'gegen SF Spelle 3', text: '5' }, { url: '?staffel=811&r=9#p3509x3511', title: 'gegen SF Spelle 3', text: '6' }]
+    - 11
+    - '42'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Lingen 4', url: '?mannschaft=3510', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=811&r=4#p3510x3508', title: 'gegen SK Nordhorn-Bl. 5', text: 2½ }, { url: '?staffel=811&r=9#p3510x3508', title: 'gegen SK Nordhorn-Bl. 5', text: '4' }]
+    - [{ url: '?staffel=811&r=2#p3510x3507', title: 'gegen SV Lingen 3', text: 2½ }, { url: '?staffel=811&r=7#p3510x3507', title: 'gegen SV Lingen 3', text: 1½ }]
+    - [{ url: '?staffel=811&r=1#p3510x3506', title: 'gegen Veldhausen/Uel. 2', text: '3' }, { url: '?staffel=811&r=6#p3510x3506', title: 'gegen Veldhausen/Uel. 2', text: 5½ }]
+    - [{ url: '?staffel=811&r=5#p3510x3509', title: 'gegen TuS Aschendorf', text: '3' }, { url: '?staffel=811&r=10#p3510x3509', title: 'gegen TuS Aschendorf', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=811&r=3#p3510x3511', title: 'gegen SF Spelle 3', text: '6' }, { url: '?staffel=811&r=8#p3510x3511', title: 'gegen SF Spelle 3', text: '8' }]
+    - 7
+    - 38½
+    - ''
+-
+    - '6.'
+    - { text: 'SF Spelle 3', url: '?mannschaft=3511', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=811&r=1#p3511x3508', title: 'gegen SK Nordhorn-Bl. 5', text: '1' }, { url: '?staffel=811&r=6#p3511x3508', title: 'gegen SK Nordhorn-Bl. 5', text: '1' }]
+    - [{ url: '?staffel=811&r=5#p3511x3507', title: 'gegen SV Lingen 3', text: '0' }, { url: '?staffel=811&r=10#p3511x3507', title: 'gegen SV Lingen 3', text: 3½ }]
+    - [{ url: '?staffel=811&r=2#p3511x3506', title: 'gegen Veldhausen/Uel. 2', text: '3' }, { url: '?staffel=811&r=7#p3511x3506', title: 'gegen Veldhausen/Uel. 2', text: '2' }]
+    - [{ url: '?staffel=811&r=4#p3511x3509', title: 'gegen TuS Aschendorf', text: '3' }, { url: '?staffel=811&r=9#p3511x3509', title: 'gegen TuS Aschendorf', text: '2' }]
+    - [{ url: '?staffel=811&r=3#p3511x3510', title: 'gegen SV Lingen 4', text: '2' }, { url: '?staffel=811&r=8#p3511x3510', title: 'gegen SV Lingen 4', text: '0' }]
+    - xxx
+    - 0
+    - 17½
+    - ''

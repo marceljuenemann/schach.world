@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=2002', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=600&r=5#p2002x1997', title: 'gegen SG Osnabrück 5', text: 3½ }]
+    - [{ url: '?staffel=600&r=6#p2002x2001', title: 'gegen SV Hellern 4', text: '3' }]
+    - [{ url: '?staffel=600&r=1#p2002x1992', title: 'gegen Hagener SV 5', text: '5' }]
+    - [{ url: '?staffel=600&r=2#p2002x1999', title: 'gegen TSV Riemsloh 2', text: 5½ }]
+    - [{ url: '?staffel=600&r=7#p2002x1998', title: 'gegen Rochade Hollage 2', text: '3' }]
+    - [{ url: '?staffel=600&r=4#p2002x2000', title: 'gegen TSV Osnabrück 2', text: 5½ }]
+    - [{ url: '?staffel=600&r=3#p2002x1993', title: 'gegen SV Osnabrück 5', text: '5' }]
+    - 13
+    - 30½
+    - ''
+-
+    - '2.'
+    - { text: 'SG Osnabrück 5', url: '?mannschaft=1997', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=600&r=5#p1997x2002', title: 'gegen Hagener SV 4', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=600&r=2#p1997x2001', title: 'gegen SV Hellern 4', text: '4' }]
+    - [{ url: '?staffel=600&r=3#p1997x1992', title: 'gegen Hagener SV 5', text: 4½ }]
+    - [{ url: '?staffel=600&r=7#p1997x1999', title: 'gegen TSV Riemsloh 2', text: '3' }]
+    - [{ url: '?staffel=600&r=6#p1997x1998', title: 'gegen Rochade Hollage 2', text: 1½ }]
+    - [{ url: '?staffel=600&r=1#p1997x2000', title: 'gegen TSV Osnabrück 2', text: '5' }]
+    - [{ url: '?staffel=600&r=4#p1997x1993', title: 'gegen SV Osnabrück 5', text: '5' }]
+    - 9
+    - 25½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Hellern 4', url: '?mannschaft=2001', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=600&r=6#p2001x2002', title: 'gegen Hagener SV 4', text: '3' }]
+    - [{ url: '?staffel=600&r=2#p2001x1997', title: 'gegen SG Osnabrück 5', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=600&r=7#p2001x1992', title: 'gegen Hagener SV 5', text: '3' }]
+    - [{ url: '?staffel=600&r=4#p2001x1999', title: 'gegen TSV Riemsloh 2', text: '3' }]
+    - [{ url: '?staffel=600&r=3#p2001x1998', title: 'gegen Rochade Hollage 2', text: '4' }]
+    - [{ url: '?staffel=600&r=5#p2001x2000', title: 'gegen TSV Osnabrück 2', text: '5' }]
+    - [{ url: '?staffel=600&r=1#p2001x1993', title: 'gegen SV Osnabrück 5', text: '5' }]
+    - 9
+    - '25'
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV 5', url: '?mannschaft=1992', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=600&r=1#p1992x2002', title: 'gegen Hagener SV 4', text: '1' }]
+    - [{ url: '?staffel=600&r=3#p1992x1997', title: 'gegen SG Osnabrück 5', text: 1½ }]
+    - [{ url: '?staffel=600&r=7#p1992x2001', title: 'gegen SV Hellern 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=600&r=5#p1992x1999', title: 'gegen TSV Riemsloh 2', text: '4' }]
+    - [{ url: '?staffel=600&r=4#p1992x1998', title: 'gegen Rochade Hollage 2', text: '3' }]
+    - [{ url: '?staffel=600&r=6#p1992x2000', title: 'gegen TSV Osnabrück 2', text: '6' }]
+    - [{ url: '?staffel=600&r=2#p1992x1993', title: 'gegen SV Osnabrück 5', text: '4' }]
+    - 8
+    - 22½
+    - ''
+-
+    - '5.'
+    - { text: 'TSV Riemsloh 2', url: '?mannschaft=1999', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=600&r=2#p1999x2002', title: 'gegen Hagener SV 4', text: ½ }]
+    - [{ url: '?staffel=600&r=7#p1999x1997', title: 'gegen SG Osnabrück 5', text: '3' }]
+    - [{ url: '?staffel=600&r=4#p1999x2001', title: 'gegen SV Hellern 4', text: '3' }]
+    - [{ url: '?staffel=600&r=5#p1999x1992', title: 'gegen Hagener SV 5', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=600&r=1#p1999x1998', title: 'gegen Rochade Hollage 2', text: 3½ }]
+    - [{ url: '?staffel=600&r=3#p1999x2000', title: 'gegen TSV Osnabrück 2', text: '5' }]
+    - [{ url: '?staffel=600&r=6#p1999x1993', title: 'gegen SV Osnabrück 5', text: 2½ }]
+    - 6
+    - 19½
+    - ''
+-
+    - '6.'
+    - { text: 'Rochade Hollage 2', url: '?mannschaft=1998', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=600&r=7#p1998x2002', title: 'gegen Hagener SV 4', text: '1' }]
+    - [{ url: '?staffel=600&r=6#p1998x1997', title: 'gegen SG Osnabrück 5', text: 4½ }]
+    - [{ url: '?staffel=600&r=3#p1998x2001', title: 'gegen SV Hellern 4', text: '2' }]
+    - [{ url: '?staffel=600&r=4#p1998x1992', title: 'gegen Hagener SV 5', text: '3' }]
+    - [{ url: '?staffel=600&r=1#p1998x1999', title: 'gegen TSV Riemsloh 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=600&r=2#p1998x2000', title: 'gegen TSV Osnabrück 2', text: '2' }]
+    - [{ url: '?staffel=600&r=5#p1998x1993', title: 'gegen SV Osnabrück 5', text: '3' }]
+    - 4
+    - '18'
+    - ''
+-
+    - '7.'
+    - { text: 'TSV Osnabrück 2', url: '?mannschaft=2000', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=600&r=4#p2000x2002', title: 'gegen Hagener SV 4', text: ½ }]
+    - [{ url: '?staffel=600&r=1#p2000x1997', title: 'gegen SG Osnabrück 5', text: '1' }]
+    - [{ url: '?staffel=600&r=5#p2000x2001', title: 'gegen SV Hellern 4', text: '1' }]
+    - [{ url: '?staffel=600&r=6#p2000x1992', title: 'gegen Hagener SV 5', text: '0' }]
+    - [{ url: '?staffel=600&r=3#p2000x1999', title: 'gegen TSV Riemsloh 2', text: '1' }]
+    - [{ url: '?staffel=600&r=2#p2000x1998', title: 'gegen Rochade Hollage 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=600&r=7#p2000x1993', title: 'gegen SV Osnabrück 5', text: 3½ }]
+    - 4
+    - '11'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Osnabrück 5', url: '?mannschaft=1993', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=600&r=3#p1993x2002', title: 'gegen Hagener SV 4', text: '1' }]
+    - [{ url: '?staffel=600&r=4#p1993x1997', title: 'gegen SG Osnabrück 5', text: '1' }]
+    - [{ url: '?staffel=600&r=1#p1993x2001', title: 'gegen SV Hellern 4', text: '1' }]
+    - [{ url: '?staffel=600&r=2#p1993x1992', title: 'gegen Hagener SV 5', text: '2' }]
+    - [{ url: '?staffel=600&r=6#p1993x1999', title: 'gegen TSV Riemsloh 2', text: 3½ }]
+    - [{ url: '?staffel=600&r=5#p1993x1998', title: 'gegen Rochade Hollage 2', text: '3' }]
+    - [{ url: '?staffel=600&r=7#p1993x2000', title: 'gegen TSV Osnabrück 2', text: 2½ }]
+    - xxx
+    - 3
+    - '14'
+    - ''

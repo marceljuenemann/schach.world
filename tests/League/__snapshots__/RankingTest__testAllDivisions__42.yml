@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Wilhelmshav. SF', url: '?mannschaft=716', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=441&r=2#p716x713', title: 'gegen Nordhorn-Blanke 2', text: '4' }]
+    - [{ url: '?staffel=441&r=9#p716x718', title: 'gegen SK Rastede', text: '5' }]
+    - [{ url: '?staffel=441&r=3#p716x714', title: 'gegen SV Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=441&r=5#p716x712', title: 'gegen SK Meppen', text: '5' }]
+    - [{ url: '?staffel=441&r=4#p716x710', title: 'gegen IGM Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=441&r=7#p716x715', title: 'gegen SG Oesede Gmht.', text: '4' }]
+    - [{ url: '?staffel=441&r=6#p716x719', title: 'gegen Bad Zwischenahn', text: 4½ }]
+    - [{ url: '?staffel=441&r=1#p716x717', title: 'gegen SK Varel', text: 5½ }]
+    - [{ url: '?staffel=441&r=8#p716x711', title: 'gegen SV Bad Essen', text: '5' }]
+    - 16
+    - '42'
+    - ''
+-
+    - '2.'
+    - { text: 'Nordhorn-Blanke 2', url: '?mannschaft=713', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=441&r=2#p713x716', title: 'gegen Wilhelmshav. SF', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=441&r=6#p713x718', title: 'gegen SK Rastede', text: '5' }]
+    - [{ url: '?staffel=441&r=9#p713x714', title: 'gegen SV Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=441&r=8#p713x712', title: 'gegen SK Meppen', text: 5½ }]
+    - [{ url: '?staffel=441&r=1#p713x710', title: 'gegen IGM Osnabrück', text: '5' }]
+    - [{ url: '?staffel=441&r=3#p713x715', title: 'gegen SG Oesede Gmht.', text: '3' }]
+    - [{ url: '?staffel=441&r=4#p713x719', title: 'gegen Bad Zwischenahn', text: 5½ }]
+    - [{ url: '?staffel=441&r=7#p713x717', title: 'gegen SK Varel', text: '7' }]
+    - [{ url: '?staffel=441&r=5#p713x711', title: 'gegen SV Bad Essen', text: 7½ }]
+    - 13
+    - '46'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Rastede', url: '?mannschaft=718', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=441&r=9#p718x716', title: 'gegen Wilhelmshav. SF', text: '3' }]
+    - [{ url: '?staffel=441&r=6#p718x713', title: 'gegen Nordhorn-Blanke 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=441&r=2#p718x714', title: 'gegen SV Osnabrück', text: '5' }]
+    - [{ url: '?staffel=441&r=3#p718x712', title: 'gegen SK Meppen', text: 4½ }]
+    - [{ url: '?staffel=441&r=5#p718x710', title: 'gegen IGM Osnabrück', text: '4' }]
+    - [{ url: '?staffel=441&r=8#p718x715', title: 'gegen SG Oesede Gmht.', text: '4' }]
+    - [{ url: '?staffel=441&r=7#p718x719', title: 'gegen Bad Zwischenahn', text: '4' }]
+    - [{ url: '?staffel=441&r=4#p718x717', title: 'gegen SK Varel', text: 6½ }]
+    - [{ url: '?staffel=441&r=1#p718x711', title: 'gegen SV Bad Essen', text: 5½ }]
+    - 11
+    - 39½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück', url: '?mannschaft=714', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=441&r=3#p714x716', title: 'gegen Wilhelmshav. SF', text: 3½ }]
+    - [{ url: '?staffel=441&r=9#p714x713', title: 'gegen Nordhorn-Blanke 2', text: 4½ }]
+    - [{ url: '?staffel=441&r=2#p714x718', title: 'gegen SK Rastede', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=441&r=7#p714x712', title: 'gegen SK Meppen', text: 3½ }]
+    - [{ url: '?staffel=441&r=6#p714x710', title: 'gegen IGM Osnabrück', text: '3' }]
+    - [{ url: '?staffel=441&r=1#p714x715', title: 'gegen SG Oesede Gmht.', text: 4½ }]
+    - [{ url: '?staffel=441&r=8#p714x719', title: 'gegen Bad Zwischenahn', text: '5' }]
+    - [{ url: '?staffel=441&r=5#p714x717', title: 'gegen SK Varel', text: '6' }]
+    - [{ url: '?staffel=441&r=4#p714x711', title: 'gegen SV Bad Essen', text: '7' }]
+    - 10
+    - '40'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Meppen', url: '?mannschaft=712', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=441&r=5#p712x716', title: 'gegen Wilhelmshav. SF', text: '3' }]
+    - [{ url: '?staffel=441&r=8#p712x713', title: 'gegen Nordhorn-Blanke 2', text: 2½ }]
+    - [{ url: '?staffel=441&r=3#p712x718', title: 'gegen SK Rastede', text: 3½ }]
+    - [{ url: '?staffel=441&r=7#p712x714', title: 'gegen SV Osnabrück', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=441&r=9#p712x710', title: 'gegen IGM Osnabrück', text: 5½ }]
+    - [{ url: '?staffel=441&r=4#p712x715', title: 'gegen SG Oesede Gmht.', text: 5½ }]
+    - [{ url: '?staffel=441&r=1#p712x719', title: 'gegen Bad Zwischenahn', text: '5' }]
+    - [{ url: '?staffel=441&r=6#p712x717', title: 'gegen SK Varel', text: 4½ }]
+    - [{ url: '?staffel=441&r=2#p712x711', title: 'gegen SV Bad Essen', text: 3½ }]
+    - 10
+    - 37½
+    - ''
+-
+    - '6.'
+    - { text: 'IGM Osnabrück', url: '?mannschaft=710', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=441&r=4#p710x716', title: 'gegen Wilhelmshav. SF', text: 3½ }]
+    - [{ url: '?staffel=441&r=1#p710x713', title: 'gegen Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=441&r=5#p710x718', title: 'gegen SK Rastede', text: '4' }]
+    - [{ url: '?staffel=441&r=6#p710x714', title: 'gegen SV Osnabrück', text: '5' }]
+    - [{ url: '?staffel=441&r=9#p710x712', title: 'gegen SK Meppen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=441&r=2#p710x715', title: 'gegen SG Oesede Gmht.', text: 5½ }]
+    - [{ url: '?staffel=441&r=3#p710x719', title: 'gegen Bad Zwischenahn', text: 1½ }]
+    - [{ url: '?staffel=441&r=8#p710x717', title: 'gegen SK Varel', text: 6½ }]
+    - [{ url: '?staffel=441&r=7#p710x711', title: 'gegen SV Bad Essen', text: 6½ }]
+    - 9
+    - '38'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Oesede Gmht.', url: '?mannschaft=715', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=441&r=7#p715x716', title: 'gegen Wilhelmshav. SF', text: '4' }]
+    - [{ url: '?staffel=441&r=3#p715x713', title: 'gegen Nordhorn-Blanke 2', text: '5' }]
+    - [{ url: '?staffel=441&r=8#p715x718', title: 'gegen SK Rastede', text: '4' }]
+    - [{ url: '?staffel=441&r=1#p715x714', title: 'gegen SV Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=441&r=4#p715x712', title: 'gegen SK Meppen', text: 2½ }]
+    - [{ url: '?staffel=441&r=2#p715x710', title: 'gegen IGM Osnabrück', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=441&r=5#p715x719', title: 'gegen Bad Zwischenahn', text: '6' }]
+    - [{ url: '?staffel=441&r=9#p715x717', title: 'gegen SK Varel', text: '4' }]
+    - [{ url: '?staffel=441&r=6#p715x711', title: 'gegen SV Bad Essen', text: 5½ }]
+    - 9
+    - '37'
+    - ''
+-
+    - '8.'
+    - { text: 'Bad Zwischenahn', url: '?mannschaft=719', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=441&r=6#p719x716', title: 'gegen Wilhelmshav. SF', text: 3½ }]
+    - [{ url: '?staffel=441&r=4#p719x713', title: 'gegen Nordhorn-Blanke 2', text: 2½ }]
+    - [{ url: '?staffel=441&r=7#p719x718', title: 'gegen SK Rastede', text: '4' }]
+    - [{ url: '?staffel=441&r=8#p719x714', title: 'gegen SV Osnabrück', text: '3' }]
+    - [{ url: '?staffel=441&r=1#p719x712', title: 'gegen SK Meppen', text: '3' }]
+    - [{ url: '?staffel=441&r=3#p719x710', title: 'gegen IGM Osnabrück', text: 6½ }]
+    - [{ url: '?staffel=441&r=5#p719x715', title: 'gegen SG Oesede Gmht.', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=441&r=2#p719x717', title: 'gegen SK Varel', text: 3½ }]
+    - [{ url: '?staffel=441&r=9#p719x711', title: 'gegen SV Bad Essen', text: 5½ }]
+    - 5
+    - 33½
+    - ''
+-
+    - '9.'
+    - { text: 'SK Varel', url: '?mannschaft=717', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=441&r=1#p717x716', title: 'gegen Wilhelmshav. SF', text: 2½ }]
+    - [{ url: '?staffel=441&r=7#p717x713', title: 'gegen Nordhorn-Blanke 2', text: '1' }]
+    - [{ url: '?staffel=441&r=4#p717x718', title: 'gegen SK Rastede', text: 1½ }]
+    - [{ url: '?staffel=441&r=5#p717x714', title: 'gegen SV Osnabrück', text: '2' }]
+    - [{ url: '?staffel=441&r=6#p717x712', title: 'gegen SK Meppen', text: 3½ }]
+    - [{ url: '?staffel=441&r=8#p717x710', title: 'gegen IGM Osnabrück', text: 1½ }]
+    - [{ url: '?staffel=441&r=9#p717x715', title: 'gegen SG Oesede Gmht.', text: '4' }]
+    - [{ url: '?staffel=441&r=2#p717x719', title: 'gegen Bad Zwischenahn', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=441&r=3#p717x711', title: 'gegen SV Bad Essen', text: '4' }]
+    - 4
+    - 24½
+    - ''
+-
+    - '10.'
+    - { text: 'SV Bad Essen', url: '?mannschaft=711', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=441&r=8#p711x716', title: 'gegen Wilhelmshav. SF', text: '3' }]
+    - [{ url: '?staffel=441&r=5#p711x713', title: 'gegen Nordhorn-Blanke 2', text: ½ }]
+    - [{ url: '?staffel=441&r=1#p711x718', title: 'gegen SK Rastede', text: 2½ }]
+    - [{ url: '?staffel=441&r=4#p711x714', title: 'gegen SV Osnabrück', text: '1' }]
+    - [{ url: '?staffel=441&r=2#p711x712', title: 'gegen SK Meppen', text: 4½ }]
+    - [{ url: '?staffel=441&r=7#p711x710', title: 'gegen IGM Osnabrück', text: 1½ }]
+    - [{ url: '?staffel=441&r=6#p711x715', title: 'gegen SG Oesede Gmht.', text: 2½ }]
+    - [{ url: '?staffel=441&r=9#p711x719', title: 'gegen Bad Zwischenahn', text: 2½ }]
+    - [{ url: '?staffel=441&r=3#p711x717', title: 'gegen SK Varel', text: '4' }]
+    - xxx
+    - 3
+    - '22'
+    - ''

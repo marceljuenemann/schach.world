@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'MTV 1876 Saalfe', url: '?mannschaft=5034', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1023&r=6#p5034x5082', title: 'gegen SV Merseburg', text: 2½ }]
+    - [{ url: '?staffel=1023&r=5#p5034x5072', title: 'gegen USV Halle', text: 2½ }]
+    - [{ url: '?staffel=1023&r=2#p5034x5175', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1023&r=1#p5034x5101', title: 'gegen SG Leipzig 2', text: 3½ }]
+    - [{ url: '?staffel=1023&r=3#p5034x4877', title: 'gegen Meuselwitzer SV', text: '4' }]
+    - 9
+    - 14½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Merseburg', url: '?mannschaft=5082', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1023&r=6#p5082x5034', title: 'gegen MTV 1876 Saalfe', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1023&r=2#p5082x5072', title: 'gegen USV Halle', text: '3' }]
+    - [{ url: '?staffel=1023&r=3#p5082x5175', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1023&r=4#p5082x5101', title: 'gegen SG Leipzig 2', text: '3' }]
+    - [{ url: '?staffel=1023&r=5#p5082x4877', title: 'gegen Meuselwitzer SV', text: 3½ }]
+    - 7
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: 'USV Halle', url: '?mannschaft=5072', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1023&r=5#p5072x5034', title: 'gegen MTV 1876 Saalfe', text: 1½ }]
+    - [{ url: '?staffel=1023&r=2#p5072x5082', title: 'gegen SV Merseburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1023&r=6#p5072x5175', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=1023&r=3#p5072x5101', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - [{ url: '?staffel=1023&r=4#p5072x4877', title: 'gegen Meuselwitzer SV', text: '4' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=5175', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1023&r=2#p5175x5034', title: 'gegen MTV 1876 Saalfe', text: '2' }]
+    - [{ url: '?staffel=1023&r=3#p5175x5082', title: 'gegen SV Merseburg', text: '2' }]
+    - [{ url: '?staffel=1023&r=6#p5175x5072', title: 'gegen USV Halle', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1023&r=5#p5175x5101', title: 'gegen SG Leipzig 2', text: '0' }]
+    - [{ url: '?staffel=1023&r=1#p5175x4877', title: 'gegen Meuselwitzer SV', text: 2½ }]
+    - 4
+    - 7½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Leipzig 2', url: '?mannschaft=5101', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1023&r=1#p5101x5034', title: 'gegen MTV 1876 Saalfe', text: ½ }]
+    - [{ url: '?staffel=1023&r=4#p5101x5082', title: 'gegen SV Merseburg', text: '1' }]
+    - [{ url: '?staffel=1023&r=3#p5101x5072', title: 'gegen USV Halle', text: 1½ }]
+    - [{ url: '?staffel=1023&r=5#p5101x5175', title: 'gegen SK Lehrte 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1023&r=2#p5101x4877', title: 'gegen Meuselwitzer SV', text: ½ }]
+    - 2
+    - 7½
+    - absteiger
+-
+    - '6.'
+    - { text: 'Meuselwitzer SV', url: '?mannschaft=4877', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1023&r=3#p4877x5034', title: 'gegen MTV 1876 Saalfe', text: '0' }]
+    - [{ url: '?staffel=1023&r=5#p4877x5082', title: 'gegen SV Merseburg', text: ½ }]
+    - [{ url: '?staffel=1023&r=4#p4877x5072', title: 'gegen USV Halle', text: '0' }]
+    - [{ url: '?staffel=1023&r=1#p4877x5175', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=1023&r=2#p4877x5101', title: 'gegen SG Leipzig 2', text: 3½ }]
+    - xxx
+    - 2
+    - 5½
+    - absteiger

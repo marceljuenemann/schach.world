@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Hemer', url: '?mannschaft=5799', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1344&r=8#p5799x5751', title: 'gegen SG Solingen', text: '4' }]
+    - [{ url: '?staffel=1344&r=4#p5799x5774', title: 'gegen Düsseldorfer SK', text: 2½ }]
+    - [{ url: '?staffel=1344&r=7#p5799x5602', title: 'gegen SG Porz', text: 3½ }]
+    - [{ url: '?staffel=1344&r=2#p5799x5604', title: 'gegen SK Münster 32', text: 3½ }]
+    - [{ url: '?staffel=1344&r=5#p5799x5750', title: 'gegen SV Heiden 62 e.V.', text: '4' }]
+    - 10
+    - 17½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Solingen', url: '?mannschaft=5751', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1344&r=8#p5751x5799', title: 'gegen SV Hemer', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1344&r=7#p5751x5774', title: 'gegen Düsseldorfer SK', text: '2' }]
+    - [{ url: '?staffel=1344&r=5#p5751x5602', title: 'gegen SG Porz', text: '3' }]
+    - [{ url: '?staffel=1344&r=4#p5751x5604', title: 'gegen SK Münster 32', text: '3' }]
+    - [{ url: '?staffel=1344&r=2#p5751x5750', title: 'gegen SV Heiden 62 e.V.', text: 3½ }]
+    - 7
+    - 11½
+    - ''
+-
+    - '3.'
+    - { text: 'Düsseldorfer SK', url: '?mannschaft=5774', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1344&r=4#p5774x5799', title: 'gegen SV Hemer', text: 1½ }]
+    - [{ url: '?staffel=1344&r=7#p5774x5751', title: 'gegen SG Solingen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1344&r=2#p5774x5602', title: 'gegen SG Porz', text: '2' }]
+    - [{ url: '?staffel=1344&r=5#p5774x5604', title: 'gegen SK Münster 32', text: 1½ }]
+    - [{ url: '?staffel=1344&r=8#p5774x5750', title: 'gegen SV Heiden 62 e.V.', text: 2½ }]
+    - 4
+    - 9½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Porz', url: '?mannschaft=5602', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1344&r=7#p5602x5799', title: 'gegen SV Hemer', text: ½ }]
+    - [{ url: '?staffel=1344&r=5#p5602x5751', title: 'gegen SG Solingen', text: '1' }]
+    - [{ url: '?staffel=1344&r=2#p5602x5774', title: 'gegen Düsseldorfer SK', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1344&r=8#p5602x5604', title: 'gegen SK Münster 32', text: '2' }]
+    - [{ url: '?staffel=1344&r=4#p5602x5750', title: 'gegen SV Heiden 62 e.V.', text: 2½ }]
+    - 4
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Münster 32', url: '?mannschaft=5604', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1344&r=2#p5604x5799', title: 'gegen SV Hemer', text: ½ }]
+    - [{ url: '?staffel=1344&r=4#p5604x5751', title: 'gegen SG Solingen', text: '1' }]
+    - [{ url: '?staffel=1344&r=5#p5604x5774', title: 'gegen Düsseldorfer SK', text: 2½ }]
+    - [{ url: '?staffel=1344&r=8#p5604x5602', title: 'gegen SG Porz', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1344&r=7#p5604x5750', title: 'gegen SV Heiden 62 e.V.', text: '2' }]
+    - 4
+    - '8'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SV Heiden 62 e.V.', url: '?mannschaft=5750', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1344&r=5#p5750x5799', title: 'gegen SV Hemer', text: '0' }]
+    - [{ url: '?staffel=1344&r=2#p5750x5751', title: 'gegen SG Solingen', text: ½ }]
+    - [{ url: '?staffel=1344&r=8#p5750x5774', title: 'gegen Düsseldorfer SK', text: 1½ }]
+    - [{ url: '?staffel=1344&r=4#p5750x5602', title: 'gegen SG Porz', text: 1½ }]
+    - [{ url: '?staffel=1344&r=7#p5750x5604', title: 'gegen SK Münster 32', text: '2' }]
+    - xxx
+    - 1
+    - 5½
+    - absteiger

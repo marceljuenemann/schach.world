@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Gretenberg 2', url: '?mannschaft=762', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=461&r=6#p762x927', title: 'gegen MTV Ilten', text: 5½ }]
+    - [{ url: '?staffel=461&r=3#p762x930', title: 'gegen TSV Burgdorf', text: '5' }]
+    - [{ url: '?staffel=461&r=7#p762x770', title: 'gegen SD Isernhagen 3', text: 4½ }]
+    - [{ url: '?staffel=461&r=4#p762x764', title: 'gegen SC Hämelerwald 2', text: 5½ }]
+    - [{ url: '?staffel=461&r=5#p762x747', title: 'gegen SV Laatzen 3', text: '5' }]
+    - [{ url: '?staffel=461&r=1#p762x926', title: 'gegen Freib. Wedemark 2', text: '7' }]
+    - [{ url: '?staffel=461&r=2#p762x906', title: 'gegen SK Anderten 3', text: '7' }]
+    - 14
+    - 39½
+    - ''
+-
+    - '2.'
+    - { text: 'MTV Ilten', url: '?mannschaft=927', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=461&r=6#p927x762', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=461&r=7#p927x930', title: 'gegen TSV Burgdorf', text: 1½ }]
+    - [{ url: '?staffel=461&r=4#p927x770', title: 'gegen SD Isernhagen 3', text: 6½ }]
+    - [{ url: '?staffel=461&r=1#p927x764', title: 'gegen SC Hämelerwald 2', text: '6' }]
+    - [{ url: '?staffel=461&r=2#p927x747', title: 'gegen SV Laatzen 3', text: '5' }]
+    - [{ url: '?staffel=461&r=5#p927x926', title: 'gegen Freib. Wedemark 2', text: 5½ }]
+    - [{ url: '?staffel=461&r=3#p927x906', title: 'gegen SK Anderten 3', text: 7½ }]
+    - 10
+    - 34½
+    - ''
+-
+    - '3.'
+    - { text: 'TSV Burgdorf', url: '?mannschaft=930', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=461&r=3#p930x762', title: 'gegen SV Gretenberg 2', text: '3' }]
+    - [{ url: '?staffel=461&r=7#p930x927', title: 'gegen MTV Ilten', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=461&r=1#p930x770', title: 'gegen SD Isernhagen 3', text: '4' }]
+    - [{ url: '?staffel=461&r=5#p930x764', title: 'gegen SC Hämelerwald 2', text: 5½ }]
+    - [{ url: '?staffel=461&r=6#p930x747', title: 'gegen SV Laatzen 3', text: '2' }]
+    - [{ url: '?staffel=461&r=2#p930x926', title: 'gegen Freib. Wedemark 2', text: '5' }]
+    - [{ url: '?staffel=461&r=4#p930x906', title: 'gegen SK Anderten 3', text: '6' }]
+    - 9
+    - '32'
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=770', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=461&r=7#p770x762', title: 'gegen SV Gretenberg 2', text: 3½ }]
+    - [{ url: '?staffel=461&r=4#p770x927', title: 'gegen MTV Ilten', text: 1½ }]
+    - [{ url: '?staffel=461&r=1#p770x930', title: 'gegen TSV Burgdorf', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=461&r=2#p770x764', title: 'gegen SC Hämelerwald 2', text: '5' }]
+    - [{ url: '?staffel=461&r=3#p770x747', title: 'gegen SV Laatzen 3', text: 4½ }]
+    - [{ url: '?staffel=461&r=6#p770x926', title: 'gegen Freib. Wedemark 2', text: 4½ }]
+    - [{ url: '?staffel=461&r=5#p770x906', title: 'gegen SK Anderten 3', text: 6½ }]
+    - 9
+    - 29½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Hämelerwald 2', url: '?mannschaft=764', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=461&r=4#p764x762', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - [{ url: '?staffel=461&r=1#p764x927', title: 'gegen MTV Ilten', text: '2' }]
+    - [{ url: '?staffel=461&r=5#p764x930', title: 'gegen TSV Burgdorf', text: 2½ }]
+    - [{ url: '?staffel=461&r=2#p764x770', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=461&r=7#p764x747', title: 'gegen SV Laatzen 3', text: '8' }]
+    - [{ url: '?staffel=461&r=3#p764x926', title: 'gegen Freib. Wedemark 2', text: '4' }]
+    - [{ url: '?staffel=461&r=6#p764x906', title: 'gegen SK Anderten 3', text: 6½ }]
+    - 5
+    - 28½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Laatzen 3', url: '?mannschaft=747', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=461&r=5#p747x762', title: 'gegen SV Gretenberg 2', text: '2' }]
+    - [{ url: '?staffel=461&r=2#p747x927', title: 'gegen MTV Ilten', text: '3' }]
+    - [{ url: '?staffel=461&r=6#p747x930', title: 'gegen TSV Burgdorf', text: '6' }]
+    - [{ url: '?staffel=461&r=3#p747x770', title: 'gegen SD Isernhagen 3', text: 3½ }]
+    - [{ url: '?staffel=461&r=7#p747x764', title: 'gegen SC Hämelerwald 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=461&r=4#p747x926', title: 'gegen Freib. Wedemark 2', text: 1½ }]
+    - [{ url: '?staffel=461&r=1#p747x906', title: 'gegen SK Anderten 3', text: 5½ }]
+    - 4
+    - 21½
+    - ''
+-
+    - '7.'
+    - { text: 'Freib. Wedemark 2', url: '?mannschaft=926', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=461&r=1#p926x762', title: 'gegen SV Gretenberg 2', text: '1' }]
+    - [{ url: '?staffel=461&r=5#p926x927', title: 'gegen MTV Ilten', text: 2½ }]
+    - [{ url: '?staffel=461&r=2#p926x930', title: 'gegen TSV Burgdorf', text: '3' }]
+    - [{ url: '?staffel=461&r=6#p926x770', title: 'gegen SD Isernhagen 3', text: 3½ }]
+    - [{ url: '?staffel=461&r=3#p926x764', title: 'gegen SC Hämelerwald 2', text: '4' }]
+    - [{ url: '?staffel=461&r=4#p926x747', title: 'gegen SV Laatzen 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=461&r=7#p926x906', title: 'gegen SK Anderten 3', text: 3½ }]
+    - 3
+    - '21'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Anderten 3', url: '?mannschaft=906', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=461&r=2#p906x762', title: 'gegen SV Gretenberg 2', text: '1' }]
+    - [{ url: '?staffel=461&r=3#p906x927', title: 'gegen MTV Ilten', text: ½ }]
+    - [{ url: '?staffel=461&r=4#p906x930', title: 'gegen TSV Burgdorf', text: '2' }]
+    - [{ url: '?staffel=461&r=5#p906x770', title: 'gegen SD Isernhagen 3', text: 1½ }]
+    - [{ url: '?staffel=461&r=6#p906x764', title: 'gegen SC Hämelerwald 2', text: 1½ }]
+    - [{ url: '?staffel=461&r=1#p906x747', title: 'gegen SV Laatzen 3', text: 2½ }]
+    - [{ url: '?staffel=461&r=7#p906x926', title: 'gegen Freib. Wedemark 2', text: 4½ }]
+    - xxx
+    - 2
+    - 13½
+    - ''

@@ -1,0 +1,233 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Papenburg', url: '?mannschaft=8405', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8405x8407', title: 'gegen SC Papenburg 3', text: 3½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=1#p8405x8406', title: 'gegen SC Papenburg 2', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8405x8408', title: 'gegen SC Papenburg 4', text: '4' }]
+    - 6
+    - 11½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SV Lingen', url: '?mannschaft=8401', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8401x8438', title: 'gegen SK Nordhorn-Blanke 2', text: 3½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8401x8439', title: 'gegen SK Nordhorn-Blanke 3', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1894&r=1#p8401x8402', title: 'gegen SV Lingen 2', text: '3' }]
+    - {  }
+    - 6
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Meppen', url: '?mannschaft=8399', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8399x8403', title: 'gegen Fortuna Logabirum', text: 2½ }]
+    - [{ url: '?staffel=1894&r=1#p8399x8400', title: 'gegen SK Meppen 2', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8399x8404', title: 'gegen TuS Aschendorf', text: '3' }]
+    - {  }
+    - {  }
+    - 6
+    - 9½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Blanke 2', url: '?mannschaft=8438', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8438x8401', title: 'gegen SV Lingen', text: ½ }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=1#p8438x8439', title: 'gegen SK Nordhorn-Blanke 3', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8438x8402', title: 'gegen SV Lingen 2', text: '4' }]
+    - {  }
+    - 4
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Papenburg 3', url: '?mannschaft=8407', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1894&r=2#p8407x8405', title: 'gegen SC Papenburg', text: ½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8407x8406', title: 'gegen SC Papenburg 2', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=1#p8407x8408', title: 'gegen SC Papenburg 4', text: '3' }]
+    - 4
+    - 6½
+    - ''
+-
+    - '6.'
+    - { text: 'Fortuna Logabirum', url: '?mannschaft=8403', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8403x8399', title: 'gegen SK Meppen', text: 1½ }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1894&r=2#p8403x8400', title: 'gegen SK Meppen 2', text: '2' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=1#p8403x8404', title: 'gegen TuS Aschendorf', text: '3' }]
+    - {  }
+    - {  }
+    - 3
+    - 6½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Meppen 2', url: '?mannschaft=8400', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=1#p8400x8399', title: 'gegen SK Meppen', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8400x8403', title: 'gegen Fortuna Logabirum', text: '2' }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8400x8404', title: 'gegen TuS Aschendorf', text: '3' }]
+    - {  }
+    - {  }
+    - 3
+    - '5'
+    - ''
+-
+    - '8.'
+    - { text: 'SC Papenburg 2', url: '?mannschaft=8406', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1894&r=1#p8406x8405', title: 'gegen SC Papenburg', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8406x8407', title: 'gegen SC Papenburg 3', text: '1' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8406x8408', title: 'gegen SC Papenburg 4', text: '4' }]
+    - 2
+    - '5'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Nordhorn-Blanke 3', url: '?mannschaft=8439', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8439x8401', title: 'gegen SV Lingen', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1894&r=1#p8439x8438', title: 'gegen SK Nordhorn-Blanke 2', text: ½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8439x8402', title: 'gegen SV Lingen 2', text: 3½ }]
+    - {  }
+    - 2
+    - '4'
+    - ''
+-
+    - '10.'
+    - { text: 'TuS Aschendorf', url: '?mannschaft=8404', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8404x8399', title: 'gegen SK Meppen', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=1#p8404x8403', title: 'gegen Fortuna Logabirum', text: '1' }]
+    - [{ url: '?staffel=1894&r=2#p8404x8400', title: 'gegen SK Meppen 2', text: '1' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '3'
+    - ''
+-
+    - '11.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=8402', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1894&r=1#p8402x8401', title: 'gegen SV Lingen', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8402x8438', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8402x8439', title: 'gegen SK Nordhorn-Blanke 3', text: ½ }]
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - 1½
+    - ''
+-
+    - '12.'
+    - { text: 'SC Papenburg 4', url: '?mannschaft=8408', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1894&r=2#p8408x8405', title: 'gegen SC Papenburg', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=1#p8408x8407', title: 'gegen SC Papenburg 3', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1894&r=2#p8408x8406', title: 'gegen SC Papenburg 2', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '1'
+    - ''

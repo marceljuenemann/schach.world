@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamburger SK 3', url: '?mannschaft=6228', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1412&r=3#p6228x6225', title: 'gegen VT Ludwigslust', text: '3' }]
+    - [{ url: '?staffel=1412&r=1#p6228x6229', title: 'gegen SV Quickborn', text: '3' }]
+    - [{ url: '?staffel=1412&r=5#p6228x6231', title: 'gegen TuRa Harksheide', text: 3½ }]
+    - [{ url: '?staffel=1412&r=2#p6228x6230', title: 'gegen Elmshorner SC', text: '4' }]
+    - [{ url: '?staffel=1412&r=4#p6228x6226', title: 'gegen Segeberger SF', text: 3½ }]
+    - 10
+    - '17'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'VT Ludwigslust', url: '?mannschaft=6225', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1412&r=3#p6225x6228', title: 'gegen Hamburger SK 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1412&r=4#p6225x6229', title: 'gegen SV Quickborn', text: 2½ }]
+    - [{ url: '?staffel=1412&r=1#p6225x6231', title: 'gegen TuRa Harksheide', text: '4' }]
+    - [{ url: '?staffel=1412&r=5#p6225x6230', title: 'gegen Elmshorner SC', text: '3' }]
+    - [{ url: '?staffel=1412&r=2#p6225x6226', title: 'gegen Segeberger SF', text: '4' }]
+    - 8
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Quickborn', url: '?mannschaft=6229', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1412&r=1#p6229x6228', title: 'gegen Hamburger SK 3', text: '1' }]
+    - [{ url: '?staffel=1412&r=4#p6229x6225', title: 'gegen VT Ludwigslust', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1412&r=2#p6229x6231', title: 'gegen TuRa Harksheide', text: '2' }]
+    - [{ url: '?staffel=1412&r=3#p6229x6230', title: 'gegen Elmshorner SC', text: '3' }]
+    - [{ url: '?staffel=1412&r=5#p6229x6226', title: 'gegen Segeberger SF', text: '4' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=6231', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1412&r=5#p6231x6228', title: 'gegen Hamburger SK 3', text: ½ }]
+    - [{ url: '?staffel=1412&r=1#p6231x6225', title: 'gegen VT Ludwigslust', text: '0' }]
+    - [{ url: '?staffel=1412&r=2#p6231x6229', title: 'gegen SV Quickborn', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1412&r=4#p6231x6230', title: 'gegen Elmshorner SC', text: '3' }]
+    - [{ url: '?staffel=1412&r=3#p6231x6226', title: 'gegen Segeberger SF', text: '4' }]
+    - 5
+    - 9½
+    - ''
+-
+    - '5.'
+    - { text: 'Elmshorner SC', url: '?mannschaft=6230', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1412&r=2#p6230x6228', title: 'gegen Hamburger SK 3', text: '0' }]
+    - [{ url: '?staffel=1412&r=5#p6230x6225', title: 'gegen VT Ludwigslust', text: '1' }]
+    - [{ url: '?staffel=1412&r=3#p6230x6229', title: 'gegen SV Quickborn', text: '1' }]
+    - [{ url: '?staffel=1412&r=4#p6230x6231', title: 'gegen TuRa Harksheide', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1412&r=1#p6230x6226', title: 'gegen Segeberger SF', text: '2' }]
+    - 1
+    - '5'
+    - absteiger
+-
+    - '6.'
+    - { text: 'Segeberger SF', url: '?mannschaft=6226', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1412&r=4#p6226x6228', title: 'gegen Hamburger SK 3', text: ½ }]
+    - [{ url: '?staffel=1412&r=2#p6226x6225', title: 'gegen VT Ludwigslust', text: '0' }]
+    - [{ url: '?staffel=1412&r=5#p6226x6229', title: 'gegen SV Quickborn', text: '0' }]
+    - [{ url: '?staffel=1412&r=3#p6226x6231', title: 'gegen TuRa Harksheide', text: '0' }]
+    - [{ url: '?staffel=1412&r=1#p6226x6230', title: 'gegen Elmshorner SC', text: '2' }]
+    - xxx
+    - 1
+    - 2½
+    - absteiger

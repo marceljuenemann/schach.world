@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'PSC Hannover 2', url: '?mannschaft=820', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=444&r=1#p820x731', title: 'gegen SK Ricklingen 2', text: 4½ }]
+    - [{ url: '?staffel=444&r=5#p820x794', title: 'gegen Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=444&r=8#p820x732', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=444&r=4#p820x734', title: 'gegen SK Rinteln', text: '6' }]
+    - [{ url: '?staffel=444&r=6#p820x735', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=444&r=2#p820x795', title: 'gegen Barsinghausen 2', text: 3½ }]
+    - [{ url: '?staffel=444&r=9#p820x841', title: 'gegen SK Lister Turm', text: '6' }]
+    - [{ url: '?staffel=444&r=3#p820x733', title: 'gegen SK Neustadt', text: '6' }]
+    - 15
+    - 36½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=731', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=444&r=1#p731x820', title: 'gegen PSC Hannover 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=444&r=4#p731x794', title: 'gegen Barsinghausen', text: '5' }]
+    - [{ url: '?staffel=444&r=7#p731x732', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=444&r=2#p731x734', title: 'gegen SK Rinteln', text: '5' }]
+    - [{ url: '?staffel=444&r=5#p731x735', title: 'gegen TuS Wunstorf', text: '6' }]
+    - [{ url: '?staffel=444&r=6#p731x795', title: 'gegen Barsinghausen 2', text: '4' }]
+    - [{ url: '?staffel=444&r=8#p731x841', title: 'gegen SK Lister Turm', text: '5' }]
+    - [{ url: '?staffel=444&r=9#p731x733', title: 'gegen SK Neustadt', text: '6' }]
+    - 13
+    - 35½
+    - ''
+-
+    - '3.'
+    - { text: Barsinghausen, url: '?mannschaft=794', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=444&r=5#p794x820', title: 'gegen PSC Hannover 2', text: 2½ }]
+    - [{ url: '?staffel=444&r=4#p794x731', title: 'gegen SK Ricklingen 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=444&r=3#p794x732', title: 'gegen SK Lehrte 3', text: '6' }]
+    - [{ url: '?staffel=444&r=9#p794x734', title: 'gegen SK Rinteln', text: 5½ }]
+    - [{ url: '?staffel=444&r=8#p794x735', title: 'gegen TuS Wunstorf', text: 5½ }]
+    - [{ url: '?staffel=444&r=1#p794x795', title: 'gegen Barsinghausen 2', text: '6' }]
+    - [{ url: '?staffel=444&r=7#p794x841', title: 'gegen SK Lister Turm', text: 4½ }]
+    - [{ url: '?staffel=444&r=2#p794x733', title: 'gegen SK Neustadt', text: '5' }]
+    - 12
+    - '36'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=732', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=444&r=8#p732x820', title: 'gegen PSC Hannover 2', text: 2½ }]
+    - [{ url: '?staffel=444&r=7#p732x731', title: 'gegen SK Ricklingen 2', text: '3' }]
+    - [{ url: '?staffel=444&r=3#p732x794', title: 'gegen Barsinghausen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=444&r=1#p732x734', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=444&r=4#p732x735', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=444&r=9#p732x795', title: 'gegen Barsinghausen 2', text: 4½ }]
+    - [{ url: '?staffel=444&r=5#p732x841', title: 'gegen SK Lister Turm', text: '6' }]
+    - [{ url: '?staffel=444&r=6#p732x733', title: 'gegen SK Neustadt', text: '6' }]
+    - 11
+    - 29½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Rinteln', url: '?mannschaft=734', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=444&r=4#p734x820', title: 'gegen PSC Hannover 2', text: '0' }]
+    - [{ url: '?staffel=444&r=2#p734x731', title: 'gegen SK Ricklingen 2', text: '1' }]
+    - [{ url: '?staffel=444&r=9#p734x794', title: 'gegen Barsinghausen', text: ½ }]
+    - [{ url: '?staffel=444&r=1#p734x732', title: 'gegen SK Lehrte 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=444&r=3#p734x735', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=444&r=8#p734x795', title: 'gegen Barsinghausen 2', text: '3' }]
+    - [{ url: '?staffel=444&r=6#p734x841', title: 'gegen SK Lister Turm', text: 2½ }]
+    - [{ url: '?staffel=444&r=7#p734x733', title: 'gegen SK Neustadt', text: '5' }]
+    - 6
+    - 19½
+    - ''
+-
+    - '6.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=735', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=444&r=6#p735x820', title: 'gegen PSC Hannover 2', text: ½ }]
+    - [{ url: '?staffel=444&r=5#p735x731', title: 'gegen SK Ricklingen 2', text: '0' }]
+    - [{ url: '?staffel=444&r=8#p735x794', title: 'gegen Barsinghausen', text: ½ }]
+    - [{ url: '?staffel=444&r=4#p735x732', title: 'gegen SK Lehrte 3', text: 1½ }]
+    - [{ url: '?staffel=444&r=3#p735x734', title: 'gegen SK Rinteln', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=444&r=7#p735x795', title: 'gegen Barsinghausen 2', text: '4' }]
+    - [{ url: '?staffel=444&r=2#p735x841', title: 'gegen SK Lister Turm', text: 5½ }]
+    - [{ url: '?staffel=444&r=1#p735x733', title: 'gegen SK Neustadt', text: '6' }]
+    - 6
+    - 19½
+    - ''
+-
+    - '7.'
+    - { text: 'Barsinghausen 2', url: '?mannschaft=795', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=444&r=2#p795x820', title: 'gegen PSC Hannover 2', text: 2½ }]
+    - [{ url: '?staffel=444&r=6#p795x731', title: 'gegen SK Ricklingen 2', text: '2' }]
+    - [{ url: '?staffel=444&r=1#p795x794', title: 'gegen Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=444&r=9#p795x732', title: 'gegen SK Lehrte 3', text: 1½ }]
+    - [{ url: '?staffel=444&r=8#p795x734', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=444&r=7#p795x735', title: 'gegen TuS Wunstorf', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=444&r=3#p795x841', title: 'gegen SK Lister Turm', text: 4½ }]
+    - [{ url: '?staffel=444&r=5#p795x733', title: 'gegen SK Neustadt', text: '6' }]
+    - 5
+    - 21½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Lister Turm', url: '?mannschaft=841', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=444&r=9#p841x820', title: 'gegen PSC Hannover 2', text: '0' }]
+    - [{ url: '?staffel=444&r=8#p841x731', title: 'gegen SK Ricklingen 2', text: '1' }]
+    - [{ url: '?staffel=444&r=7#p841x794', title: 'gegen Barsinghausen', text: 1½ }]
+    - [{ url: '?staffel=444&r=5#p841x732', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=444&r=6#p841x734', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=444&r=2#p841x735', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=444&r=3#p841x795', title: 'gegen Barsinghausen 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=444&r=4#p841x733', title: 'gegen SK Neustadt', text: '3' }]
+    - 4
+    - 10½
+    - ''
+-
+    - '9.'
+    - { text: 'SK Neustadt', url: '?mannschaft=733', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=444&r=3#p733x820', title: 'gegen PSC Hannover 2', text: '0' }]
+    - [{ url: '?staffel=444&r=9#p733x731', title: 'gegen SK Ricklingen 2', text: '0' }]
+    - [{ url: '?staffel=444&r=2#p733x794', title: 'gegen Barsinghausen', text: '1' }]
+    - [{ url: '?staffel=444&r=6#p733x732', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=444&r=7#p733x734', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=444&r=1#p733x735', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=444&r=5#p733x795', title: 'gegen Barsinghausen 2', text: '0' }]
+    - [{ url: '?staffel=444&r=4#p733x841', title: 'gegen SK Lister Turm', text: '1' }]
+    - xxx
+    - 0
+    - '2'
+    - ''

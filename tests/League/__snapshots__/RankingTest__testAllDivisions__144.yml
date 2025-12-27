@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=1636', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=558&r=3#p1636x1630', title: 'gegen Garbsen/Marienw', text: 4½ }]
+    - [{ url: '?staffel=558&r=2#p1636x1627', title: 'gegen Uetze-Hänigsen', text: '5' }]
+    - [{ url: '?staffel=558&r=4#p1636x1657', title: 'gegen HSK-Lister Turm 3', text: 4½ }]
+    - [{ url: '?staffel=558&r=7#p1636x1642', title: 'gegen SK Rinteln', text: '5' }]
+    - [{ url: '?staffel=558&r=6#p1636x1546', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=558&r=1#p1636x1656', title: 'gegen TuS Wunstorf', text: '5' }]
+    - [{ url: '?staffel=558&r=8#p1636x1617', title: 'gegen SVg Steinhude', text: 5½ }]
+    - [{ url: '?staffel=558&r=9#p1636x1579', title: 'gegen SV Gretenberg', text: 4½ }]
+    - [{ url: '?staffel=558&r=5#p1636x1572', title: 'gegen SK Stolzenau', text: 6½ }]
+    - 18
+    - '45'
+    - ''
+-
+    - '2.'
+    - { text: Garbsen/Marienw, url: '?mannschaft=1630', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=558&r=3#p1630x1636', title: 'gegen SD Isernhagen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=558&r=9#p1630x1627', title: 'gegen Uetze-Hänigsen', text: 2½ }]
+    - [{ url: '?staffel=558&r=2#p1630x1657', title: 'gegen HSK-Lister Turm 3', text: 6½ }]
+    - [{ url: '?staffel=558&r=5#p1630x1642', title: 'gegen SK Rinteln', text: 4½ }]
+    - [{ url: '?staffel=558&r=4#p1630x1546', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=558&r=8#p1630x1656', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=558&r=6#p1630x1617', title: 'gegen SVg Steinhude', text: '5' }]
+    - [{ url: '?staffel=558&r=7#p1630x1579', title: 'gegen SV Gretenberg', text: '5' }]
+    - [{ url: '?staffel=558&r=1#p1630x1572', title: 'gegen SK Stolzenau', text: 5½ }]
+    - 13
+    - '41'
+    - ''
+-
+    - '3.'
+    - { text: Uetze-Hänigsen, url: '?mannschaft=1627', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=558&r=2#p1627x1636', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=558&r=9#p1627x1630', title: 'gegen Garbsen/Marienw', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=558&r=1#p1627x1657', title: 'gegen HSK-Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=558&r=4#p1627x1642', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=558&r=3#p1627x1546', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=558&r=7#p1627x1656', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=558&r=5#p1627x1617', title: 'gegen SVg Steinhude', text: '6' }]
+    - [{ url: '?staffel=558&r=6#p1627x1579', title: 'gegen SV Gretenberg', text: '5' }]
+    - [{ url: '?staffel=558&r=8#p1627x1572', title: 'gegen SK Stolzenau', text: 5½ }]
+    - 12
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'HSK-Lister Turm 3', url: '?mannschaft=1657', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=558&r=4#p1657x1636', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=558&r=2#p1657x1630', title: 'gegen Garbsen/Marienw', text: 1½ }]
+    - [{ url: '?staffel=558&r=1#p1657x1627', title: 'gegen Uetze-Hänigsen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=558&r=6#p1657x1642', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=558&r=5#p1657x1546', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=558&r=9#p1657x1656', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=558&r=7#p1657x1617', title: 'gegen SVg Steinhude', text: '4' }]
+    - [{ url: '?staffel=558&r=8#p1657x1579', title: 'gegen SV Gretenberg', text: '5' }]
+    - [{ url: '?staffel=558&r=3#p1657x1572', title: 'gegen SK Stolzenau', text: '4' }]
+    - 9
+    - 34½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Rinteln', url: '?mannschaft=1642', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=558&r=7#p1642x1636', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=558&r=5#p1642x1630', title: 'gegen Garbsen/Marienw', text: 3½ }]
+    - [{ url: '?staffel=558&r=4#p1642x1627', title: 'gegen Uetze-Hänigsen', text: '4' }]
+    - [{ url: '?staffel=558&r=6#p1642x1657', title: 'gegen HSK-Lister Turm 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=558&r=8#p1642x1546', title: 'gegen SK Lehrte 2', text: '6' }]
+    - [{ url: '?staffel=558&r=3#p1642x1656', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=558&r=1#p1642x1617', title: 'gegen SVg Steinhude', text: 3½ }]
+    - [{ url: '?staffel=558&r=2#p1642x1579', title: 'gegen SV Gretenberg', text: '4' }]
+    - [{ url: '?staffel=558&r=9#p1642x1572', title: 'gegen SK Stolzenau', text: 4½ }]
+    - 8
+    - 36½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=1546', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=558&r=6#p1546x1636', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=558&r=4#p1546x1630', title: 'gegen Garbsen/Marienw', text: 3½ }]
+    - [{ url: '?staffel=558&r=3#p1546x1627', title: 'gegen Uetze-Hänigsen', text: '5' }]
+    - [{ url: '?staffel=558&r=5#p1546x1657', title: 'gegen HSK-Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=558&r=8#p1546x1642', title: 'gegen SK Rinteln', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=558&r=2#p1546x1656', title: 'gegen TuS Wunstorf', text: '2' }]
+    - [{ url: '?staffel=558&r=9#p1546x1617', title: 'gegen SVg Steinhude', text: '5' }]
+    - [{ url: '?staffel=558&r=1#p1546x1579', title: 'gegen SV Gretenberg', text: '4' }]
+    - [{ url: '?staffel=558&r=7#p1546x1572', title: 'gegen SK Stolzenau', text: 5½ }]
+    - 8
+    - 34½
+    - ''
+-
+    - '7.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=1656', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=558&r=1#p1656x1636', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=558&r=8#p1656x1630', title: 'gegen Garbsen/Marienw', text: '4' }]
+    - [{ url: '?staffel=558&r=7#p1656x1627', title: 'gegen Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=558&r=9#p1656x1657', title: 'gegen HSK-Lister Turm 3', text: 3½ }]
+    - [{ url: '?staffel=558&r=3#p1656x1642', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=558&r=2#p1656x1546', title: 'gegen SK Lehrte 2', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=558&r=4#p1656x1617', title: 'gegen SVg Steinhude', text: '6' }]
+    - [{ url: '?staffel=558&r=5#p1656x1579', title: 'gegen SV Gretenberg', text: '4' }]
+    - [{ url: '?staffel=558&r=6#p1656x1572', title: 'gegen SK Stolzenau', text: 3½ }]
+    - 7
+    - 37½
+    - ''
+-
+    - '8.'
+    - { text: 'SVg Steinhude', url: '?mannschaft=1617', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=558&r=8#p1617x1636', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=558&r=6#p1617x1630', title: 'gegen Garbsen/Marienw', text: '3' }]
+    - [{ url: '?staffel=558&r=5#p1617x1627', title: 'gegen Uetze-Hänigsen', text: '2' }]
+    - [{ url: '?staffel=558&r=7#p1617x1657', title: 'gegen HSK-Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=558&r=1#p1617x1642', title: 'gegen SK Rinteln', text: 4½ }]
+    - [{ url: '?staffel=558&r=9#p1617x1546', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=558&r=4#p1617x1656', title: 'gegen TuS Wunstorf', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=558&r=3#p1617x1579', title: 'gegen SV Gretenberg', text: 5½ }]
+    - [{ url: '?staffel=558&r=2#p1617x1572', title: 'gegen SK Stolzenau', text: 4½ }]
+    - 7
+    - '31'
+    - ''
+-
+    - '9.'
+    - { text: 'SV Gretenberg', url: '?mannschaft=1579', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=558&r=9#p1579x1636', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=558&r=7#p1579x1630', title: 'gegen Garbsen/Marienw', text: '3' }]
+    - [{ url: '?staffel=558&r=6#p1579x1627', title: 'gegen Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=558&r=8#p1579x1657', title: 'gegen HSK-Lister Turm 3', text: '3' }]
+    - [{ url: '?staffel=558&r=2#p1579x1642', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=558&r=1#p1579x1546', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=558&r=5#p1579x1656', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=558&r=3#p1579x1617', title: 'gegen SVg Steinhude', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=558&r=4#p1579x1572', title: 'gegen SK Stolzenau', text: '5' }]
+    - 5
+    - '32'
+    - ''
+-
+    - '10.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=1572', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=558&r=5#p1572x1636', title: 'gegen SD Isernhagen', text: 1½ }]
+    - [{ url: '?staffel=558&r=1#p1572x1630', title: 'gegen Garbsen/Marienw', text: 2½ }]
+    - [{ url: '?staffel=558&r=8#p1572x1627', title: 'gegen Uetze-Hänigsen', text: 2½ }]
+    - [{ url: '?staffel=558&r=3#p1572x1657', title: 'gegen HSK-Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=558&r=9#p1572x1642', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=558&r=7#p1572x1546', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - [{ url: '?staffel=558&r=6#p1572x1656', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=558&r=2#p1572x1617', title: 'gegen SVg Steinhude', text: 3½ }]
+    - [{ url: '?staffel=558&r=4#p1572x1579', title: 'gegen SV Gretenberg', text: '3' }]
+    - xxx
+    - 3
+    - 27½
+    - ''

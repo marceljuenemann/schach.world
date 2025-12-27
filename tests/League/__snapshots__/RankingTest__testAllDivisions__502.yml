@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=4701', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=984&r=4#p4701x4689', title: 'gegen Peiner SV', text: 2½ }]
+    - [{ url: '?staffel=984&r=6#p4701x4700', title: 'gegen Freibauer Wedemark', text: '2' }]
+    - [{ url: '?staffel=984&r=5#p4701x4699', title: 'gegen SZ Bemerode', text: '2' }]
+    - [{ url: '?staffel=984&r=9#p4701x4691', title: 'gegen Hildesheimer SV', text: 3½ }]
+    - [{ url: '?staffel=984&r=1#p4701x4702', title: 'gegen SK Lehrte 3', text: 3½ }]
+    - [{ url: '?staffel=984&r=8#p4701x4693', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=984&r=10#p4701x4692', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=984&r=11#p4701x4688', title: 'gegen Hamelner SV', text: '4' }]
+    - 14
+    - 25½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'Peiner SV', url: '?mannschaft=4689', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=984&r=4#p4689x4701', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=984&r=2#p4689x4700', title: 'gegen Freibauer Wedemark', text: 2½ }]
+    - [{ url: '?staffel=984&r=3#p4689x4699', title: 'gegen SZ Bemerode', text: '3' }]
+    - [{ url: '?staffel=984&r=11#p4689x4691', title: 'gegen Hildesheimer SV', text: 2½ }]
+    - [{ url: '?staffel=984&r=5#p4689x4702', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=984&r=10#p4689x4693', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - [{ url: '?staffel=984&r=6#p4689x4692', title: 'gegen Hildesheimer SV 3', text: 2½ }]
+    - [{ url: '?staffel=984&r=7#p4689x4688', title: 'gegen Hamelner SV', text: '4' }]
+    - 14
+    - '23'
+    - ''
+-
+    - '3.'
+    - { text: 'Freibauer Wedemark', url: '?mannschaft=4700', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=984&r=6#p4700x4701', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=984&r=2#p4700x4689', title: 'gegen Peiner SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=984&r=1#p4700x4699', title: 'gegen SZ Bemerode', text: '3' }]
+    - [{ url: '?staffel=984&r=10#p4700x4691', title: 'gegen Hildesheimer SV', text: 1½ }]
+    - [{ url: '?staffel=984&r=7#p4700x4702', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=984&r=11#p4700x4693', title: 'gegen Hildesheimer SV 2', text: '2' }]
+    - [{ url: '?staffel=984&r=8#p4700x4692', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=984&r=9#p4700x4688', title: 'gegen Hamelner SV', text: '4' }]
+    - 10
+    - '22'
+    - ''
+-
+    - '4.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=4699', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=984&r=5#p4699x4701', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=984&r=3#p4699x4689', title: 'gegen Peiner SV', text: '1' }]
+    - [{ url: '?staffel=984&r=1#p4699x4700', title: 'gegen Freibauer Wedemark', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=984&r=7#p4699x4691', title: 'gegen Hildesheimer SV', text: '2' }]
+    - [{ url: '?staffel=984&r=4#p4699x4702', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=984&r=6#p4699x4693', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=984&r=9#p4699x4692', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=984&r=8#p4699x4688', title: 'gegen Hamelner SV', text: '4' }]
+    - 10
+    - 20½
+    - ''
+-
+    - '5.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=4691', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=984&r=9#p4691x4701', title: 'gegen SK Lehrte 2', text: ½ }]
+    - [{ url: '?staffel=984&r=11#p4691x4689', title: 'gegen Peiner SV', text: 1½ }]
+    - [{ url: '?staffel=984&r=10#p4691x4700', title: 'gegen Freibauer Wedemark', text: 2½ }]
+    - [{ url: '?staffel=984&r=7#p4691x4699', title: 'gegen SZ Bemerode', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=984&r=8#p4691x4702', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=984&r=1#p4691x4693', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - [{ url: '?staffel=984&r=5#p4691x4692', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - [{ url: '?staffel=984&r=4#p4691x4688', title: 'gegen Hamelner SV', text: '4' }]
+    - 10
+    - 18½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=4702', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=984&r=1#p4702x4701', title: 'gegen SK Lehrte 2', text: ½ }]
+    - [{ url: '?staffel=984&r=5#p4702x4689', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=984&r=7#p4702x4700', title: 'gegen Freibauer Wedemark', text: '0' }]
+    - [{ url: '?staffel=984&r=4#p4702x4699', title: 'gegen SZ Bemerode', text: 1½ }]
+    - [{ url: '?staffel=984&r=8#p4702x4691', title: 'gegen Hildesheimer SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=984&r=9#p4702x4693', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=984&r=11#p4702x4692', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - [{ url: '?staffel=984&r=10#p4702x4688', title: 'gegen Hamelner SV', text: '4' }]
+    - 7
+    - '15'
+    - ''
+-
+    - '7.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=4693', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=984&r=8#p4693x4701', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=984&r=10#p4693x4689', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=984&r=11#p4693x4700', title: 'gegen Freibauer Wedemark', text: '2' }]
+    - [{ url: '?staffel=984&r=6#p4693x4699', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=984&r=1#p4693x4691', title: 'gegen Hildesheimer SV', text: '1' }]
+    - [{ url: '?staffel=984&r=9#p4693x4702', title: 'gegen SK Lehrte 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=984&r=4#p4693x4692', title: 'gegen Hildesheimer SV 3', text: '2' }]
+    - [{ url: '?staffel=984&r=5#p4693x4688', title: 'gegen Hamelner SV', text: '4' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '8.'
+    - { text: 'Hildesheimer SV 3', url: '?mannschaft=4692', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=984&r=10#p4692x4701', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=984&r=6#p4692x4689', title: 'gegen Peiner SV', text: 1½ }]
+    - [{ url: '?staffel=984&r=8#p4692x4700', title: 'gegen Freibauer Wedemark', text: '0' }]
+    - [{ url: '?staffel=984&r=9#p4692x4699', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=984&r=5#p4692x4691', title: 'gegen Hildesheimer SV', text: '1' }]
+    - [{ url: '?staffel=984&r=11#p4692x4702', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=984&r=4#p4692x4693', title: 'gegen Hildesheimer SV 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=984&r=1#p4692x4688', title: 'gegen Hamelner SV', text: '3' }]
+    - 3
+    - 8½
+    - ''
+-
+    - '9.'
+    - { text: 'Hamelner SV', url: '?mannschaft=4688', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=984&r=11#p4688x4701', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=984&r=7#p4688x4689', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=984&r=9#p4688x4700', title: 'gegen Freibauer Wedemark', text: '0' }]
+    - [{ url: '?staffel=984&r=8#p4688x4699', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=984&r=4#p4688x4691', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=984&r=10#p4688x4702', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=984&r=5#p4688x4693', title: 'gegen Hildesheimer SV 2', text: '0' }]
+    - [{ url: '?staffel=984&r=1#p4688x4692', title: 'gegen Hildesheimer SV 3', text: '1' }]
+    - xxx
+    - 0
+    - '1'
+    - ''

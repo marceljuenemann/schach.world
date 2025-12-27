@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=7294', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1693&r=2#p7294x7291', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=1693&r=5#p7294x7293', title: 'gegen SK Verden', text: '4' }]
+    - [{ url: '?staffel=1693&r=4#p7294x7287', title: 'gegen Peiner SV 1', text: '3' }]
+    - [{ url: '?staffel=1693&r=6#p7294x7289', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=1693&r=3#p7294x7288', title: 'gegen Peiner SV 2', text: '3' }]
+    - [{ url: '?staffel=1693&r=7#p7294x7290', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=1693&r=1#p7294x7292', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - 14
+    - 24½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'Hannover 96', url: '?mannschaft=7291', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1693&r=2#p7291x7294', title: 'gegen SD Isernhagen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1693&r=1#p7291x7293', title: 'gegen SK Verden', text: '2' }]
+    - [{ url: '?staffel=1693&r=6#p7291x7287', title: 'gegen Peiner SV 1', text: '2' }]
+    - [{ url: '?staffel=1693&r=3#p7291x7289', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=1693&r=7#p7291x7288', title: 'gegen Peiner SV 2', text: '2' }]
+    - [{ url: '?staffel=1693&r=4#p7291x7290', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=1693&r=5#p7291x7292', title: 'gegen SC BS Gliesmarode', text: '3' }]
+    - 9
+    - '17'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Verden', url: '?mannschaft=7293', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1693&r=5#p7293x7294', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1693&r=1#p7293x7291', title: 'gegen Hannover 96', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1693&r=3#p7293x7287', title: 'gegen Peiner SV 1', text: 1½ }]
+    - [{ url: '?staffel=1693&r=7#p7293x7289', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=1693&r=4#p7293x7288', title: 'gegen Peiner SV 2', text: 1½ }]
+    - [{ url: '?staffel=1693&r=6#p7293x7290', title: 'gegen HSK Lister Turm', text: 2½ }]
+    - [{ url: '?staffel=1693&r=2#p7293x7292', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - 9
+    - 14½
+    - ''
+-
+    - '4.'
+    - { text: 'Peiner SV 1', url: '?mannschaft=7287', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1693&r=4#p7287x7294', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1693&r=6#p7287x7291', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=1693&r=3#p7287x7293', title: 'gegen SK Verden', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1693&r=1#p7287x7289', title: 'gegen SV Springe', text: '1' }]
+    - [{ url: '?staffel=1693&r=5#p7287x7288', title: 'gegen Peiner SV 2', text: '3' }]
+    - [{ url: '?staffel=1693&r=2#p7287x7290', title: 'gegen HSK Lister Turm', text: '2' }]
+    - [{ url: '?staffel=1693&r=7#p7287x7292', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - 8
+    - 13½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Springe', url: '?mannschaft=7289', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1693&r=6#p7289x7294', title: 'gegen SD Isernhagen', text: ½ }]
+    - [{ url: '?staffel=1693&r=3#p7289x7291', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=1693&r=7#p7289x7293', title: 'gegen SK Verden', text: '1' }]
+    - [{ url: '?staffel=1693&r=1#p7289x7287', title: 'gegen Peiner SV 1', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1693&r=2#p7289x7288', title: 'gegen Peiner SV 2', text: '3' }]
+    - [{ url: '?staffel=1693&r=5#p7289x7290', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1693&r=4#p7289x7292', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - 6
+    - 13½
+    - ''
+-
+    - '6.'
+    - { text: 'Peiner SV 2', url: '?mannschaft=7288', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1693&r=3#p7288x7294', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1693&r=7#p7288x7291', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=1693&r=4#p7288x7293', title: 'gegen SK Verden', text: 1½ }]
+    - [{ url: '?staffel=1693&r=5#p7288x7287', title: 'gegen Peiner SV 1', text: '1' }]
+    - [{ url: '?staffel=1693&r=2#p7288x7289', title: 'gegen SV Springe', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1693&r=1#p7288x7290', title: 'gegen HSK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=1693&r=6#p7288x7292', title: 'gegen SC BS Gliesmarode', text: '2' }]
+    - 5
+    - 10½
+    - ''
+-
+    - '7.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=7290', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1693&r=7#p7290x7294', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1693&r=4#p7290x7291', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=1693&r=6#p7290x7293', title: 'gegen SK Verden', text: 1½ }]
+    - [{ url: '?staffel=1693&r=2#p7290x7287', title: 'gegen Peiner SV 1', text: '1' }]
+    - [{ url: '?staffel=1693&r=5#p7290x7289', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=1693&r=1#p7290x7288', title: 'gegen Peiner SV 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1693&r=3#p7290x7292', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - 4
+    - 10½
+    - ''
+-
+    - '8.'
+    - { text: 'SC BS Gliesmarode', url: '?mannschaft=7292', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1693&r=1#p7292x7294', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1693&r=5#p7292x7291', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=1693&r=2#p7292x7293', title: 'gegen SK Verden', text: '0' }]
+    - [{ url: '?staffel=1693&r=7#p7292x7287', title: 'gegen Peiner SV 1', text: '0' }]
+    - [{ url: '?staffel=1693&r=4#p7292x7289', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1693&r=6#p7292x7288', title: 'gegen Peiner SV 2', text: '2' }]
+    - [{ url: '?staffel=1693&r=3#p7292x7290', title: 'gegen HSK Lister Turm', text: '0' }]
+    - xxx
+    - 1
+    - '3'
+    - ''

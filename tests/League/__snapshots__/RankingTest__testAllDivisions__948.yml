@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=8111', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1787&r=6#p8111x8140', title: 'gegen ESV Göttingen 5', text: 3½ }]
+    - [{ url: '?staffel=1787&r=3#p8111x8061', title: 'gegen SC Bad Salzdetfurth 2', text: '4' }]
+    - [{ url: '?staffel=1787&r=5#p8111x8122', title: 'gegen Hamelner SV 5', text: '4' }]
+    - [{ url: '?staffel=1787&r=1#p8111x8131', title: 'gegen SG Holzminden 2', text: '5' }]
+    - [{ url: '?staffel=1787&r=2#p8111x8141', title: 'gegen ESV Göttingen 6', text: '5' }]
+    - [{ url: '?staffel=1787&r=7#p8111x8071', title: 'gegen SG Südharz 2', text: '6' }]
+    - [{ url: '?staffel=1787&r=4#p8111x8136', title: 'gegen WSV Clausthal', text: 4½ }]
+    - 14
+    - '32'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'ESV Göttingen 5', url: '?mannschaft=8140', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1787&r=6#p8140x8111', title: 'gegen SC Langelsheim', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1787&r=2#p8140x8061', title: 'gegen SC Bad Salzdetfurth 2', text: '2' }]
+    - [{ url: '?staffel=1787&r=4#p8140x8122', title: 'gegen Hamelner SV 5', text: 4½ }]
+    - [{ url: '?staffel=1787&r=7#p8140x8131', title: 'gegen SG Holzminden 2', text: 4½ }]
+    - [{ url: '?staffel=1787&r=1#p8140x8141', title: 'gegen ESV Göttingen 6', text: '3' }]
+    - [{ url: '?staffel=1787&r=5#p8140x8071', title: 'gegen SG Südharz 2', text: 5½ }]
+    - [{ url: '?staffel=1787&r=3#p8140x8136', title: 'gegen WSV Clausthal', text: 3½ }]
+    - 9
+    - 25½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SC Bad Salzdetfurth 2', url: '?mannschaft=8061', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1787&r=3#p8061x8111', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=1787&r=2#p8061x8140', title: 'gegen ESV Göttingen 5', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1787&r=7#p8061x8122', title: 'gegen Hamelner SV 5', text: '3' }]
+    - [{ url: '?staffel=1787&r=4#p8061x8131', title: 'gegen SG Holzminden 2', text: '4' }]
+    - [{ url: '?staffel=1787&r=5#p8061x8141', title: 'gegen ESV Göttingen 6', text: '2' }]
+    - [{ url: '?staffel=1787&r=1#p8061x8071', title: 'gegen SG Südharz 2', text: 4½ }]
+    - [{ url: '?staffel=1787&r=6#p8061x8136', title: 'gegen WSV Clausthal', text: 3½ }]
+    - 9
+    - '23'
+    - ''
+-
+    - '4.'
+    - { text: 'Hamelner SV 5', url: '?mannschaft=8122', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1787&r=5#p8122x8111', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=1787&r=4#p8122x8140', title: 'gegen ESV Göttingen 5', text: 1½ }]
+    - [{ url: '?staffel=1787&r=7#p8122x8061', title: 'gegen SC Bad Salzdetfurth 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1787&r=2#p8122x8131', title: 'gegen SG Holzminden 2', text: 2½ }]
+    - [{ url: '?staffel=1787&r=3#p8122x8141', title: 'gegen ESV Göttingen 6', text: '5' }]
+    - [{ url: '?staffel=1787&r=6#p8122x8071', title: 'gegen SG Südharz 2', text: 3½ }]
+    - [{ url: '?staffel=1787&r=1#p8122x8136', title: 'gegen WSV Clausthal', text: 5½ }]
+    - 7
+    - '23'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Holzminden 2', url: '?mannschaft=8131', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1787&r=1#p8131x8111', title: 'gegen SC Langelsheim', text: '1' }]
+    - [{ url: '?staffel=1787&r=7#p8131x8140', title: 'gegen ESV Göttingen 5', text: 1½ }]
+    - [{ url: '?staffel=1787&r=4#p8131x8061', title: 'gegen SC Bad Salzdetfurth 2', text: '2' }]
+    - [{ url: '?staffel=1787&r=2#p8131x8122', title: 'gegen Hamelner SV 5', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1787&r=6#p8131x8141', title: 'gegen ESV Göttingen 6', text: 2½ }]
+    - [{ url: '?staffel=1787&r=3#p8131x8071', title: 'gegen SG Südharz 2', text: 3½ }]
+    - [{ url: '?staffel=1787&r=5#p8131x8136', title: 'gegen WSV Clausthal', text: 3½ }]
+    - 6
+    - 17½
+    - ''
+-
+    - '6.'
+    - { text: 'ESV Göttingen 6', url: '?mannschaft=8141', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1787&r=2#p8141x8111', title: 'gegen SC Langelsheim', text: '1' }]
+    - [{ url: '?staffel=1787&r=1#p8141x8140', title: 'gegen ESV Göttingen 5', text: '3' }]
+    - [{ url: '?staffel=1787&r=5#p8141x8061', title: 'gegen SC Bad Salzdetfurth 2', text: '4' }]
+    - [{ url: '?staffel=1787&r=3#p8141x8122', title: 'gegen Hamelner SV 5', text: '1' }]
+    - [{ url: '?staffel=1787&r=6#p8141x8131', title: 'gegen SG Holzminden 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1787&r=4#p8141x8071', title: 'gegen SG Südharz 2', text: '1' }]
+    - [{ url: '?staffel=1787&r=7#p8141x8136', title: 'gegen WSV Clausthal', text: '3' }]
+    - 6
+    - 16½
+    - ''
+-
+    - '7.'
+    - { text: 'SG Südharz 2', url: '?mannschaft=8071', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1787&r=7#p8071x8111', title: 'gegen SC Langelsheim', text: '0' }]
+    - [{ url: '?staffel=1787&r=5#p8071x8140', title: 'gegen ESV Göttingen 5', text: ½ }]
+    - [{ url: '?staffel=1787&r=1#p8071x8061', title: 'gegen SC Bad Salzdetfurth 2', text: ½ }]
+    - [{ url: '?staffel=1787&r=6#p8071x8122', title: 'gegen Hamelner SV 5', text: 2½ }]
+    - [{ url: '?staffel=1787&r=3#p8071x8131', title: 'gegen SG Holzminden 2', text: 2½ }]
+    - [{ url: '?staffel=1787&r=4#p8071x8141', title: 'gegen ESV Göttingen 6', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1787&r=2#p8071x8136', title: 'gegen WSV Clausthal', text: '3' }]
+    - 3
+    - '14'
+    - ''
+-
+    - '8.'
+    - { text: 'WSV Clausthal', url: '?mannschaft=8136', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1787&r=4#p8136x8111', title: 'gegen SC Langelsheim', text: 1½ }]
+    - [{ url: '?staffel=1787&r=3#p8136x8140', title: 'gegen ESV Göttingen 5', text: 2½ }]
+    - [{ url: '?staffel=1787&r=6#p8136x8061', title: 'gegen SC Bad Salzdetfurth 2', text: 2½ }]
+    - [{ url: '?staffel=1787&r=1#p8136x8122', title: 'gegen Hamelner SV 5', text: ½ }]
+    - [{ url: '?staffel=1787&r=5#p8136x8131', title: 'gegen SG Holzminden 2', text: 2½ }]
+    - [{ url: '?staffel=1787&r=7#p8136x8141', title: 'gegen ESV Göttingen 6', text: '3' }]
+    - [{ url: '?staffel=1787&r=2#p8136x8071', title: 'gegen SG Südharz 2', text: '3' }]
+    - xxx
+    - 2
+    - 15½
+    - ''

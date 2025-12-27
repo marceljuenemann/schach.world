@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Lingen', url: '?mannschaft=1937', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=592&r=8#p1937x1940', title: 'gegen Rochade Hollage', text: '5' }]
+    - [{ url: '?staffel=592&r=5#p1937x1946', title: 'gegen Veldhausen/Uel.', text: '6' }]
+    - [{ url: '?staffel=592&r=7#p1937x1939', title: 'gegen Hagener SV 2', text: '6' }]
+    - [{ url: '?staffel=592&r=3#p1937x1935', title: 'gegen Nordhorn-Blanke 4', text: '4' }]
+    - [{ url: '?staffel=592&r=4#p1937x1936', title: 'gegen SV Bad Essen', text: '7' }]
+    - [{ url: '?staffel=592&r=1#p1937x1943', title: 'gegen Bentheim/Nordho', text: 5½ }]
+    - [{ url: '?staffel=592&r=2#p1937x1945', title: 'gegen SF Spelle', text: '6' }]
+    - [{ url: '?staffel=592&r=9#p1937x1942', title: 'gegen SV Osnabrück 2', text: '7' }]
+    - [{ url: '?staffel=592&r=6#p1937x1938', title: 'gegen SG Oesede-Gmht. 2', text: 6½ }]
+    - 17
+    - '53'
+    - ''
+-
+    - '2.'
+    - { text: 'Rochade Hollage', url: '?mannschaft=1940', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=592&r=8#p1940x1937', title: 'gegen SV Lingen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=592&r=2#p1940x1946', title: 'gegen Veldhausen/Uel.', text: 5½ }]
+    - [{ url: '?staffel=592&r=1#p1940x1939', title: 'gegen Hagener SV 2', text: 3½ }]
+    - [{ url: '?staffel=592&r=6#p1940x1935', title: 'gegen Nordhorn-Blanke 4', text: '4' }]
+    - [{ url: '?staffel=592&r=7#p1940x1936', title: 'gegen SV Bad Essen', text: 6½ }]
+    - [{ url: '?staffel=592&r=4#p1940x1943', title: 'gegen Bentheim/Nordho', text: '6' }]
+    - [{ url: '?staffel=592&r=5#p1940x1945', title: 'gegen SF Spelle', text: '7' }]
+    - [{ url: '?staffel=592&r=3#p1940x1942', title: 'gegen SV Osnabrück 2', text: '6' }]
+    - [{ url: '?staffel=592&r=9#p1940x1938', title: 'gegen SG Oesede-Gmht. 2', text: '6' }]
+    - 13
+    - 47½
+    - ''
+-
+    - '3.'
+    - { text: Veldhausen/Uel., url: '?mannschaft=1946', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=592&r=5#p1946x1937', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=592&r=2#p1946x1940', title: 'gegen Rochade Hollage', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=592&r=9#p1946x1939', title: 'gegen Hagener SV 2', text: '7' }]
+    - [{ url: '?staffel=592&r=1#p1946x1935', title: 'gegen Nordhorn-Blanke 4', text: '5' }]
+    - [{ url: '?staffel=592&r=3#p1946x1936', title: 'gegen SV Bad Essen', text: '5' }]
+    - [{ url: '?staffel=592&r=6#p1946x1943', title: 'gegen Bentheim/Nordho', text: '4' }]
+    - [{ url: '?staffel=592&r=8#p1946x1945', title: 'gegen SF Spelle', text: 3½ }]
+    - [{ url: '?staffel=592&r=4#p1946x1942', title: 'gegen SV Osnabrück 2', text: '5' }]
+    - [{ url: '?staffel=592&r=7#p1946x1938', title: 'gegen SG Oesede-Gmht. 2', text: '5' }]
+    - 11
+    - '39'
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV 2', url: '?mannschaft=1939', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=592&r=7#p1939x1937', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=592&r=1#p1939x1940', title: 'gegen Rochade Hollage', text: 4½ }]
+    - [{ url: '?staffel=592&r=9#p1939x1946', title: 'gegen Veldhausen/Uel.', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=592&r=5#p1939x1935', title: 'gegen Nordhorn-Blanke 4', text: '4' }]
+    - [{ url: '?staffel=592&r=6#p1939x1936', title: 'gegen SV Bad Essen', text: '4' }]
+    - [{ url: '?staffel=592&r=3#p1939x1943', title: 'gegen Bentheim/Nordho', text: '6' }]
+    - [{ url: '?staffel=592&r=4#p1939x1945', title: 'gegen SF Spelle', text: '7' }]
+    - [{ url: '?staffel=592&r=2#p1939x1942', title: 'gegen SV Osnabrück 2', text: '7' }]
+    - [{ url: '?staffel=592&r=8#p1939x1938', title: 'gegen SG Oesede-Gmht. 2', text: '2' }]
+    - 10
+    - 37½
+    - ''
+-
+    - '5.'
+    - { text: 'Nordhorn-Blanke 4', url: '?mannschaft=1935', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=592&r=3#p1935x1937', title: 'gegen SV Lingen', text: '4' }]
+    - [{ url: '?staffel=592&r=6#p1935x1940', title: 'gegen Rochade Hollage', text: '4' }]
+    - [{ url: '?staffel=592&r=1#p1935x1946', title: 'gegen Veldhausen/Uel.', text: '3' }]
+    - [{ url: '?staffel=592&r=5#p1935x1939', title: 'gegen Hagener SV 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=592&r=2#p1935x1936', title: 'gegen SV Bad Essen', text: 5½ }]
+    - [{ url: '?staffel=592&r=8#p1935x1943', title: 'gegen Bentheim/Nordho', text: 5½ }]
+    - [{ url: '?staffel=592&r=9#p1935x1945', title: 'gegen SF Spelle', text: 2½ }]
+    - [{ url: '?staffel=592&r=7#p1935x1942', title: 'gegen SV Osnabrück 2', text: 3½ }]
+    - [{ url: '?staffel=592&r=4#p1935x1938', title: 'gegen SG Oesede-Gmht. 2', text: '6' }]
+    - 9
+    - '38'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Bad Essen', url: '?mannschaft=1936', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=592&r=4#p1936x1937', title: 'gegen SV Lingen', text: '1' }]
+    - [{ url: '?staffel=592&r=7#p1936x1940', title: 'gegen Rochade Hollage', text: 1½ }]
+    - [{ url: '?staffel=592&r=3#p1936x1946', title: 'gegen Veldhausen/Uel.', text: '3' }]
+    - [{ url: '?staffel=592&r=6#p1936x1939', title: 'gegen Hagener SV 2', text: '4' }]
+    - [{ url: '?staffel=592&r=2#p1936x1935', title: 'gegen Nordhorn-Blanke 4', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=592&r=9#p1936x1943', title: 'gegen Bentheim/Nordho', text: '5' }]
+    - [{ url: '?staffel=592&r=1#p1936x1945', title: 'gegen SF Spelle', text: '6' }]
+    - [{ url: '?staffel=592&r=8#p1936x1942', title: 'gegen SV Osnabrück 2', text: 4½ }]
+    - [{ url: '?staffel=592&r=5#p1936x1938', title: 'gegen SG Oesede-Gmht. 2', text: 6½ }]
+    - 9
+    - '34'
+    - ''
+-
+    - '7.'
+    - { text: Bentheim/Nordho, url: '?mannschaft=1943', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=592&r=1#p1943x1937', title: 'gegen SV Lingen', text: 2½ }]
+    - [{ url: '?staffel=592&r=4#p1943x1940', title: 'gegen Rochade Hollage', text: '2' }]
+    - [{ url: '?staffel=592&r=6#p1943x1946', title: 'gegen Veldhausen/Uel.', text: '4' }]
+    - [{ url: '?staffel=592&r=3#p1943x1939', title: 'gegen Hagener SV 2', text: '2' }]
+    - [{ url: '?staffel=592&r=8#p1943x1935', title: 'gegen Nordhorn-Blanke 4', text: 2½ }]
+    - [{ url: '?staffel=592&r=9#p1943x1936', title: 'gegen SV Bad Essen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=592&r=7#p1943x1945', title: 'gegen SF Spelle', text: '5' }]
+    - [{ url: '?staffel=592&r=5#p1943x1942', title: 'gegen SV Osnabrück 2', text: 6½ }]
+    - [{ url: '?staffel=592&r=2#p1943x1938', title: 'gegen SG Oesede-Gmht. 2', text: 7½ }]
+    - 7
+    - '35'
+    - ''
+-
+    - '8.'
+    - { text: 'SF Spelle', url: '?mannschaft=1945', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=592&r=2#p1945x1937', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=592&r=5#p1945x1940', title: 'gegen Rochade Hollage', text: '1' }]
+    - [{ url: '?staffel=592&r=8#p1945x1946', title: 'gegen Veldhausen/Uel.', text: 4½ }]
+    - [{ url: '?staffel=592&r=4#p1945x1939', title: 'gegen Hagener SV 2', text: '1' }]
+    - [{ url: '?staffel=592&r=9#p1945x1935', title: 'gegen Nordhorn-Blanke 4', text: 5½ }]
+    - [{ url: '?staffel=592&r=1#p1945x1936', title: 'gegen SV Bad Essen', text: '2' }]
+    - [{ url: '?staffel=592&r=7#p1945x1943', title: 'gegen Bentheim/Nordho', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=592&r=6#p1945x1942', title: 'gegen SV Osnabrück 2', text: 3½ }]
+    - [{ url: '?staffel=592&r=3#p1945x1938', title: 'gegen SG Oesede-Gmht. 2', text: '7' }]
+    - 6
+    - 29½
+    - ''
+-
+    - '9.'
+    - { text: 'SV Osnabrück 2', url: '?mannschaft=1942', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=592&r=9#p1942x1937', title: 'gegen SV Lingen', text: '1' }]
+    - [{ url: '?staffel=592&r=3#p1942x1940', title: 'gegen Rochade Hollage', text: '2' }]
+    - [{ url: '?staffel=592&r=4#p1942x1946', title: 'gegen Veldhausen/Uel.', text: '3' }]
+    - [{ url: '?staffel=592&r=2#p1942x1939', title: 'gegen Hagener SV 2', text: '1' }]
+    - [{ url: '?staffel=592&r=7#p1942x1935', title: 'gegen Nordhorn-Blanke 4', text: 4½ }]
+    - [{ url: '?staffel=592&r=8#p1942x1936', title: 'gegen SV Bad Essen', text: 3½ }]
+    - [{ url: '?staffel=592&r=5#p1942x1943', title: 'gegen Bentheim/Nordho', text: 1½ }]
+    - [{ url: '?staffel=592&r=6#p1942x1945', title: 'gegen SF Spelle', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=592&r=1#p1942x1938', title: 'gegen SG Oesede-Gmht. 2', text: 5½ }]
+    - 6
+    - 26½
+    - ''
+-
+    - '10.'
+    - { text: 'SG Oesede-Gmht. 2', url: '?mannschaft=1938', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=592&r=6#p1938x1937', title: 'gegen SV Lingen', text: 1½ }]
+    - [{ url: '?staffel=592&r=9#p1938x1940', title: 'gegen Rochade Hollage', text: '2' }]
+    - [{ url: '?staffel=592&r=7#p1938x1946', title: 'gegen Veldhausen/Uel.', text: '3' }]
+    - [{ url: '?staffel=592&r=8#p1938x1939', title: 'gegen Hagener SV 2', text: '6' }]
+    - [{ url: '?staffel=592&r=4#p1938x1935', title: 'gegen Nordhorn-Blanke 4', text: '2' }]
+    - [{ url: '?staffel=592&r=5#p1938x1936', title: 'gegen SV Bad Essen', text: 1½ }]
+    - [{ url: '?staffel=592&r=2#p1938x1943', title: 'gegen Bentheim/Nordho', text: ½ }]
+    - [{ url: '?staffel=592&r=3#p1938x1945', title: 'gegen SF Spelle', text: '1' }]
+    - [{ url: '?staffel=592&r=1#p1938x1942', title: 'gegen SV Osnabrück 2', text: 2½ }]
+    - xxx
+    - 2
+    - '20'
+    - ''

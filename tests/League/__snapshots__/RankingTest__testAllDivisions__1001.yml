@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Goslar U12', url: '?mannschaft=8173', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1851&r=2#p8173x8172', title: 'gegen SK Goslar U10', text: '3' }, { url: '?staffel=1851&r=5#p8173x8172', title: 'gegen SK Goslar U10', text: '2' }]
+    - [{ url: '?staffel=1851&r=1#p8173x8174', title: 'gegen Plesse Bovenden U12', text: '3' }, { url: '?staffel=1851&r=4#p8173x8174', title: 'gegen Plesse Bovenden U12', text: '3' }]
+    - 7
+    - '11'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Goslar U10', url: '?mannschaft=8172', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1851&r=2#p8172x8173', title: 'gegen SK Goslar U12', text: '1' }, { url: '?staffel=1851&r=5#p8172x8173', title: 'gegen SK Goslar U12', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1851&r=3#p8172x8174', title: 'gegen Plesse Bovenden U12', text: 2½ }, { url: '?staffel=1851&r=6#p8172x8174', title: 'gegen Plesse Bovenden U12', text: '3' }]
+    - 5
+    - 8½
+    - ''
+-
+    - '3.'
+    - { text: 'Plesse Bovenden U12', url: '?mannschaft=8174', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1851&r=1#p8174x8173', title: 'gegen SK Goslar U12', text: '1' }, { url: '?staffel=1851&r=4#p8174x8173', title: 'gegen SK Goslar U12', text: '1' }]
+    - [{ url: '?staffel=1851&r=3#p8174x8172', title: 'gegen SK Goslar U10', text: 1½ }, { url: '?staffel=1851&r=6#p8174x8172', title: 'gegen SK Goslar U10', text: '1' }]
+    - xxx
+    - 0
+    - 4½
+    - ''

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hannover 96 3', url: '?mannschaft=7208', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1677&r=1#p7208x7195', title: 'gegen SK Anderten 2', text: 3½ }]
+    - [{ url: '?staffel=1677&r=7#p7208x7229', title: 'gegen SZ Bemerode 2', text: '7' }]
+    - [{ url: '?staffel=1677&r=5#p7208x7216', title: 'gegen SD Isernhagen 3', text: 5½ }]
+    - [{ url: '?staffel=1677&r=2#p7208x7223', title: 'gegen SK Lehrte 8', text: '6' }]
+    - [{ url: '?staffel=1677&r=6#p7208x7057', title: 'gegen SV Gretenberg 2', text: 5½ }]
+    - [{ url: '?staffel=1677&r=3#p7208x7222', title: 'gegen SK Lehrte 7', text: 6½ }]
+    - [{ url: '?staffel=1677&r=4#p7208x7236', title: 'gegen SK Rinteln 3', text: '5' }]
+    - 12
+    - '39'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=7195', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1677&r=1#p7195x7208', title: 'gegen Hannover 96 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1677&r=5#p7195x7229', title: 'gegen SZ Bemerode 2', text: 5½ }]
+    - [{ url: '?staffel=1677&r=3#p7195x7216', title: 'gegen SD Isernhagen 3', text: '4' }]
+    - [{ url: '?staffel=1677&r=7#p7195x7223', title: 'gegen SK Lehrte 8', text: 3½ }]
+    - [{ url: '?staffel=1677&r=4#p7195x7057', title: 'gegen SV Gretenberg 2', text: 4½ }]
+    - [{ url: '?staffel=1677&r=6#p7195x7222', title: 'gegen SK Lehrte 7', text: '6' }]
+    - [{ url: '?staffel=1677&r=2#p7195x7236', title: 'gegen SK Rinteln 3', text: '5' }]
+    - 11
+    - '33'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=7229', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1677&r=7#p7229x7208', title: 'gegen Hannover 96 3', text: '1' }]
+    - [{ url: '?staffel=1677&r=5#p7229x7195', title: 'gegen SK Anderten 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1677&r=2#p7229x7216', title: 'gegen SD Isernhagen 3', text: '5' }]
+    - [{ url: '?staffel=1677&r=6#p7229x7223', title: 'gegen SK Lehrte 8', text: 7½ }]
+    - [{ url: '?staffel=1677&r=3#p7229x7057', title: 'gegen SV Gretenberg 2', text: '5' }]
+    - [{ url: '?staffel=1677&r=4#p7229x7222', title: 'gegen SK Lehrte 7', text: '4' }]
+    - [{ url: '?staffel=1677&r=1#p7229x7236', title: 'gegen SK Rinteln 3', text: '8' }]
+    - 9
+    - '33'
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=7216', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1677&r=5#p7216x7208', title: 'gegen Hannover 96 3', text: 2½ }]
+    - [{ url: '?staffel=1677&r=3#p7216x7195', title: 'gegen SK Anderten 2', text: '4' }]
+    - [{ url: '?staffel=1677&r=2#p7216x7229', title: 'gegen SZ Bemerode 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1677&r=4#p7216x7223', title: 'gegen SK Lehrte 8', text: '5' }]
+    - [{ url: '?staffel=1677&r=1#p7216x7057', title: 'gegen SV Gretenberg 2', text: '4' }]
+    - [{ url: '?staffel=1677&r=7#p7216x7222', title: 'gegen SK Lehrte 7', text: 5½ }]
+    - [{ url: '?staffel=1677&r=6#p7216x7236', title: 'gegen SK Rinteln 3', text: '8' }]
+    - 8
+    - '32'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 8', url: '?mannschaft=7223', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1677&r=2#p7223x7208', title: 'gegen Hannover 96 3', text: '2' }]
+    - [{ url: '?staffel=1677&r=7#p7223x7195', title: 'gegen SK Anderten 2', text: 4½ }]
+    - [{ url: '?staffel=1677&r=6#p7223x7229', title: 'gegen SZ Bemerode 2', text: ½ }]
+    - [{ url: '?staffel=1677&r=4#p7223x7216', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1677&r=5#p7223x7057', title: 'gegen SV Gretenberg 2', text: '4' }]
+    - [{ url: '?staffel=1677&r=1#p7223x7222', title: 'gegen SK Lehrte 7', text: '7' }]
+    - [{ url: '?staffel=1677&r=3#p7223x7236', title: 'gegen SK Rinteln 3', text: 6½ }]
+    - 7
+    - 27½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Gretenberg 2', url: '?mannschaft=7057', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1677&r=6#p7057x7208', title: 'gegen Hannover 96 3', text: 2½ }]
+    - [{ url: '?staffel=1677&r=4#p7057x7195', title: 'gegen SK Anderten 2', text: 3½ }]
+    - [{ url: '?staffel=1677&r=3#p7057x7229', title: 'gegen SZ Bemerode 2', text: '3' }]
+    - [{ url: '?staffel=1677&r=1#p7057x7216', title: 'gegen SD Isernhagen 3', text: '4' }]
+    - [{ url: '?staffel=1677&r=5#p7057x7223', title: 'gegen SK Lehrte 8', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1677&r=2#p7057x7222', title: 'gegen SK Lehrte 7', text: 4½ }]
+    - [{ url: '?staffel=1677&r=7#p7057x7236', title: 'gegen SK Rinteln 3', text: '0' }]
+    - 4
+    - 21½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Lehrte 7', url: '?mannschaft=7222', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1677&r=3#p7222x7208', title: 'gegen Hannover 96 3', text: 1½ }]
+    - [{ url: '?staffel=1677&r=6#p7222x7195', title: 'gegen SK Anderten 2', text: '2' }]
+    - [{ url: '?staffel=1677&r=4#p7222x7229', title: 'gegen SZ Bemerode 2', text: '4' }]
+    - [{ url: '?staffel=1677&r=7#p7222x7216', title: 'gegen SD Isernhagen 3', text: 2½ }]
+    - [{ url: '?staffel=1677&r=1#p7222x7223', title: 'gegen SK Lehrte 8', text: '1' }]
+    - [{ url: '?staffel=1677&r=2#p7222x7057', title: 'gegen SV Gretenberg 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1677&r=5#p7222x7236', title: 'gegen SK Rinteln 3', text: '6' }]
+    - 3
+    - 20½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Rinteln 3', url: '?mannschaft=7236', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1677&r=4#p7236x7208', title: 'gegen Hannover 96 3', text: '3' }]
+    - [{ url: '?staffel=1677&r=2#p7236x7195', title: 'gegen SK Anderten 2', text: '2' }]
+    - [{ url: '?staffel=1677&r=1#p7236x7229', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1677&r=6#p7236x7216', title: 'gegen SD Isernhagen 3', text: '0' }]
+    - [{ url: '?staffel=1677&r=3#p7236x7223', title: 'gegen SK Lehrte 8', text: 1½ }]
+    - [{ url: '?staffel=1677&r=7#p7236x7057', title: 'gegen SV Gretenberg 2', text: '8' }]
+    - [{ url: '?staffel=1677&r=5#p7236x7222', title: 'gegen SK Lehrte 7', text: '2' }]
+    - xxx
+    - 2
+    - 16½
+    - ''

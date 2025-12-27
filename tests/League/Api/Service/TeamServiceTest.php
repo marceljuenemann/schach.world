@@ -7,8 +7,9 @@ use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\League\Entity\Team;
 use Nsv\League\Entity\TeamRecipient;
+use Tests\League\LeagueTestCase;
 
-class TeamServiceTest extends AbstractApiTest
+class TeamServiceTest extends LeagueTestCase
 {
   private TeamService $service;
   private League $league;
@@ -24,20 +25,20 @@ class TeamServiceTest extends AbstractApiTest
   public function testTeam1() {
     $team = $this->division->teams()[0];
     $model = $this->service->team($team);
-    $this->assertModel($model, __FILE__, __FUNCTION__);
+    $this->assertMatchesSnapshot($model);
   }
 
   public function testTeam1_withSubstitute() {
     $this->league->configSubstituteTeams = 1;
     $team = $this->division->teams()[0];
     $model = $this->service->team($team);
-    $this->assertModel($model, __FILE__, __FUNCTION__);
+    $this->assertMatchesSnapshot($model);
   }
 
   public function testTeam2() {
     $team = $this->division->teams()[1];
     $model = $this->service->team($team);
-    $this->assertModel($model, __FILE__, __FUNCTION__);
+    $this->assertMatchesSnapshot($model);
   }
 
   public function testUpdateRecipients() {

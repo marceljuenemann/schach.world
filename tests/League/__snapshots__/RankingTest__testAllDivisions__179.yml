@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TSV Riemsloh 3', url: '?mannschaft=2006', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=601&r=6#p2006x2005', title: 'gegen TuS Bramsche 2', text: '3' }]
+    - [{ url: '?staffel=601&r=2#p2006x2008', title: 'gegen Gaste-Hasbergen 2', text: '4' }]
+    - [{ url: '?staffel=601&r=3#p2006x2009', title: 'gegen SV Bad Essen 3', text: '2' }]
+    - [{ url: '?staffel=601&r=1#p2006x2007', title: 'gegen Ankum/Bersenbrü 2', text: '4' }]
+    - [{ url: '?staffel=601&r=4#p2006x2003', title: 'gegen SG Oesede-Gmht. 4', text: 5½ }]
+    - [{ url: '?staffel=601&r=5#p2006x2004', title: 'gegen TSV Osnabrück 3', text: '6' }]
+    - 9
+    - 24½
+    - ''
+-
+    - '2.'
+    - { text: 'TuS Bramsche 2', url: '?mannschaft=2005', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=601&r=6#p2005x2006', title: 'gegen TSV Riemsloh 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=601&r=1#p2005x2008', title: 'gegen Gaste-Hasbergen 2', text: 2½ }]
+    - [{ url: '?staffel=601&r=2#p2005x2009', title: 'gegen SV Bad Essen 3', text: 5½ }]
+    - [{ url: '?staffel=601&r=7#p2005x2007', title: 'gegen Ankum/Bersenbrü 2', text: 4½ }]
+    - [{ url: '?staffel=601&r=3#p2005x2003', title: 'gegen SG Oesede-Gmht. 4', text: '4' }]
+    - [{ url: '?staffel=601&r=4#p2005x2004', title: 'gegen TSV Osnabrück 3', text: 4½ }]
+    - 9
+    - '24'
+    - ''
+-
+    - '3.'
+    - { text: 'Gaste-Hasbergen 2', url: '?mannschaft=2008', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=601&r=2#p2008x2006', title: 'gegen TSV Riemsloh 3', text: '2' }]
+    - [{ url: '?staffel=601&r=1#p2008x2005', title: 'gegen TuS Bramsche 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=601&r=5#p2008x2009', title: 'gegen SV Bad Essen 3', text: 3½ }]
+    - [{ url: '?staffel=601&r=3#p2008x2007', title: 'gegen Ankum/Bersenbrü 2', text: '3' }]
+    - [{ url: '?staffel=601&r=6#p2008x2003', title: 'gegen SG Oesede-Gmht. 4', text: 3½ }]
+    - [{ url: '?staffel=601&r=7#p2008x2004', title: 'gegen TSV Osnabrück 3', text: '6' }]
+    - 9
+    - 21½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bad Essen 3', url: '?mannschaft=2009', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=601&r=3#p2009x2006', title: 'gegen TSV Riemsloh 3', text: '4' }]
+    - [{ url: '?staffel=601&r=2#p2009x2005', title: 'gegen TuS Bramsche 2', text: ½ }]
+    - [{ url: '?staffel=601&r=5#p2009x2008', title: 'gegen Gaste-Hasbergen 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=601&r=4#p2009x2007', title: 'gegen Ankum/Bersenbrü 2', text: '3' }]
+    - [{ url: '?staffel=601&r=7#p2009x2003', title: 'gegen SG Oesede-Gmht. 4', text: '5' }]
+    - [{ url: '?staffel=601&r=1#p2009x2004', title: 'gegen TSV Osnabrück 3', text: '4' }]
+    - 7
+    - '19'
+    - ''
+-
+    - '5.'
+    - { text: 'Ankum/Bersenbrü 2', url: '?mannschaft=2007', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=601&r=1#p2007x2006', title: 'gegen TSV Riemsloh 3', text: '2' }]
+    - [{ url: '?staffel=601&r=7#p2007x2005', title: 'gegen TuS Bramsche 2', text: 1½ }]
+    - [{ url: '?staffel=601&r=3#p2007x2008', title: 'gegen Gaste-Hasbergen 2', text: '3' }]
+    - [{ url: '?staffel=601&r=4#p2007x2009', title: 'gegen SV Bad Essen 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=601&r=5#p2007x2003', title: 'gegen SG Oesede-Gmht. 4', text: '6' }]
+    - [{ url: '?staffel=601&r=6#p2007x2004', title: 'gegen TSV Osnabrück 3', text: '4' }]
+    - 6
+    - 19½
+    - ''
+-
+    - '6.'
+    - { text: 'SG Oesede-Gmht. 4', url: '?mannschaft=2003', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=601&r=4#p2003x2006', title: 'gegen TSV Riemsloh 3', text: ½ }]
+    - [{ url: '?staffel=601&r=3#p2003x2005', title: 'gegen TuS Bramsche 2', text: '2' }]
+    - [{ url: '?staffel=601&r=6#p2003x2008', title: 'gegen Gaste-Hasbergen 2', text: 2½ }]
+    - [{ url: '?staffel=601&r=7#p2003x2009', title: 'gegen SV Bad Essen 3', text: '1' }]
+    - [{ url: '?staffel=601&r=5#p2003x2007', title: 'gegen Ankum/Bersenbrü 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=601&r=2#p2003x2004', title: 'gegen TSV Osnabrück 3', text: '5' }]
+    - 2
+    - '11'
+    - ''
+-
+    - '7.'
+    - { text: 'TSV Osnabrück 3', url: '?mannschaft=2004', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=601&r=5#p2004x2006', title: 'gegen TSV Riemsloh 3', text: '0' }]
+    - [{ url: '?staffel=601&r=4#p2004x2005', title: 'gegen TuS Bramsche 2', text: 1½ }]
+    - [{ url: '?staffel=601&r=7#p2004x2008', title: 'gegen Gaste-Hasbergen 2', text: '0' }]
+    - [{ url: '?staffel=601&r=1#p2004x2009', title: 'gegen SV Bad Essen 3', text: '2' }]
+    - [{ url: '?staffel=601&r=6#p2004x2007', title: 'gegen Ankum/Bersenbrü 2', text: '1' }]
+    - [{ url: '?staffel=601&r=2#p2004x2003', title: 'gegen SG Oesede-Gmht. 4', text: '1' }]
+    - xxx
+    - 0
+    - 5½
+    - ''

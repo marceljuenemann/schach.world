@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Freib. Wedemark', url: '?mannschaft=3071', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=724&r=5#p3071x3033', title: 'gegen SV Laatzen 2', text: '3' }]
+    - [{ url: '?staffel=724&r=2#p3071x3107', title: 'gegen SK Lehrte 3', text: 5½ }]
+    - [{ url: '?staffel=724&r=3#p3071x3176', title: 'gegen SD Isernhagen 2', text: '6' }]
+    - [{ url: '?staffel=724&r=9#p3071x3172', title: 'gegen HSK Lister Turm 4', text: '5' }]
+    - [{ url: '?staffel=724&r=7#p3071x3090', title: 'gegen Uetze-Hänigsen 2', text: '6' }]
+    - [{ url: '?staffel=724&r=6#p3071x3030', title: 'gegen WB Eilenriede 3', text: '6' }]
+    - [{ url: '?staffel=724&r=4#p3071x3161', title: 'gegen Hannover 96 3', text: 7½ }]
+    - [{ url: '?staffel=724&r=8#p3071x3109', title: 'gegen SK Lehrte 5', text: 7½ }]
+    - [{ url: '?staffel=724&r=1#p3071x3183', title: 'gegen SK Ricklingen 2', text: 6½ }]
+    - 16
+    - '53'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Laatzen 2', url: '?mannschaft=3033', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=724&r=5#p3033x3071', title: 'gegen Freib. Wedemark', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=724&r=9#p3033x3107', title: 'gegen SK Lehrte 3', text: 4½ }]
+    - [{ url: '?staffel=724&r=1#p3033x3176', title: 'gegen SD Isernhagen 2', text: '1' }]
+    - [{ url: '?staffel=724&r=7#p3033x3172', title: 'gegen HSK Lister Turm 4', text: 4½ }]
+    - [{ url: '?staffel=724&r=3#p3033x3090', title: 'gegen Uetze-Hänigsen 2', text: '6' }]
+    - [{ url: '?staffel=724&r=4#p3033x3030', title: 'gegen WB Eilenriede 3', text: 4½ }]
+    - [{ url: '?staffel=724&r=2#p3033x3161', title: 'gegen Hannover 96 3', text: 7½ }]
+    - [{ url: '?staffel=724&r=6#p3033x3109', title: 'gegen SK Lehrte 5', text: '6' }]
+    - [{ url: '?staffel=724&r=8#p3033x3183', title: 'gegen SK Ricklingen 2', text: 5½ }]
+    - 16
+    - 44½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=3107', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=724&r=2#p3107x3071', title: 'gegen Freib. Wedemark', text: 2½ }]
+    - [{ url: '?staffel=724&r=9#p3107x3033', title: 'gegen SV Laatzen 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=724&r=7#p3107x3176', title: 'gegen SD Isernhagen 2', text: '5' }]
+    - [{ url: '?staffel=724&r=4#p3107x3172', title: 'gegen HSK Lister Turm 4', text: '5' }]
+    - [{ url: '?staffel=724&r=6#p3107x3090', title: 'gegen Uetze-Hänigsen 2', text: 5½ }]
+    - [{ url: '?staffel=724&r=1#p3107x3030', title: 'gegen WB Eilenriede 3', text: 4½ }]
+    - [{ url: '?staffel=724&r=8#p3107x3161', title: 'gegen Hannover 96 3', text: 5½ }]
+    - [{ url: '?staffel=724&r=3#p3107x3109', title: 'gegen SK Lehrte 5', text: 4½ }]
+    - [{ url: '?staffel=724&r=5#p3107x3183', title: 'gegen SK Ricklingen 2', text: '6' }]
+    - 14
+    - '42'
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=3176', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=724&r=3#p3176x3071', title: 'gegen Freib. Wedemark', text: '2' }]
+    - [{ url: '?staffel=724&r=1#p3176x3033', title: 'gegen SV Laatzen 2', text: '7' }]
+    - [{ url: '?staffel=724&r=7#p3176x3107', title: 'gegen SK Lehrte 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=724&r=5#p3176x3172', title: 'gegen HSK Lister Turm 4', text: 2½ }]
+    - [{ url: '?staffel=724&r=8#p3176x3090', title: 'gegen Uetze-Hänigsen 2', text: '5' }]
+    - [{ url: '?staffel=724&r=2#p3176x3030', title: 'gegen WB Eilenriede 3', text: 6½ }]
+    - [{ url: '?staffel=724&r=9#p3176x3161', title: 'gegen Hannover 96 3', text: 4½ }]
+    - [{ url: '?staffel=724&r=4#p3176x3109', title: 'gegen SK Lehrte 5', text: 4½ }]
+    - [{ url: '?staffel=724&r=6#p3176x3183', title: 'gegen SK Ricklingen 2', text: 5½ }]
+    - 12
+    - 40½
+    - ''
+-
+    - '5.'
+    - { text: 'HSK Lister Turm 4', url: '?mannschaft=3172', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=724&r=9#p3172x3071', title: 'gegen Freib. Wedemark', text: '3' }]
+    - [{ url: '?staffel=724&r=7#p3172x3033', title: 'gegen SV Laatzen 2', text: 3½ }]
+    - [{ url: '?staffel=724&r=4#p3172x3107', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=724&r=5#p3172x3176', title: 'gegen SD Isernhagen 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=724&r=2#p3172x3090', title: 'gegen Uetze-Hänigsen 2', text: '4' }]
+    - [{ url: '?staffel=724&r=8#p3172x3030', title: 'gegen WB Eilenriede 3', text: '4' }]
+    - [{ url: '?staffel=724&r=6#p3172x3161', title: 'gegen Hannover 96 3', text: '5' }]
+    - [{ url: '?staffel=724&r=1#p3172x3109', title: 'gegen SK Lehrte 5', text: 5½ }]
+    - [{ url: '?staffel=724&r=3#p3172x3183', title: 'gegen SK Ricklingen 2', text: '6' }]
+    - 10
+    - 39½
+    - ''
+-
+    - '6.'
+    - { text: 'Uetze-Hänigsen 2', url: '?mannschaft=3090', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=724&r=7#p3090x3071', title: 'gegen Freib. Wedemark', text: '2' }]
+    - [{ url: '?staffel=724&r=3#p3090x3033', title: 'gegen SV Laatzen 2', text: '2' }]
+    - [{ url: '?staffel=724&r=6#p3090x3107', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=724&r=8#p3090x3176', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - [{ url: '?staffel=724&r=2#p3090x3172', title: 'gegen HSK Lister Turm 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=724&r=5#p3090x3030', title: 'gegen WB Eilenriede 3', text: '4' }]
+    - [{ url: '?staffel=724&r=1#p3090x3161', title: 'gegen Hannover 96 3', text: 5½ }]
+    - [{ url: '?staffel=724&r=9#p3090x3109', title: 'gegen SK Lehrte 5', text: '4' }]
+    - [{ url: '?staffel=724&r=4#p3090x3183', title: 'gegen SK Ricklingen 2', text: 4½ }]
+    - 7
+    - 31½
+    - ''
+-
+    - '7.'
+    - { text: 'WB Eilenriede 3', url: '?mannschaft=3030', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=724&r=6#p3030x3071', title: 'gegen Freib. Wedemark', text: '2' }]
+    - [{ url: '?staffel=724&r=4#p3030x3033', title: 'gegen SV Laatzen 2', text: 3½ }]
+    - [{ url: '?staffel=724&r=1#p3030x3107', title: 'gegen SK Lehrte 3', text: 3½ }]
+    - [{ url: '?staffel=724&r=2#p3030x3176', title: 'gegen SD Isernhagen 2', text: 1½ }]
+    - [{ url: '?staffel=724&r=8#p3030x3172', title: 'gegen HSK Lister Turm 4', text: '4' }]
+    - [{ url: '?staffel=724&r=5#p3030x3090', title: 'gegen Uetze-Hänigsen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=724&r=3#p3030x3161', title: 'gegen Hannover 96 3', text: 4½ }]
+    - [{ url: '?staffel=724&r=7#p3030x3109', title: 'gegen SK Lehrte 5', text: 2½ }]
+    - [{ url: '?staffel=724&r=9#p3030x3183', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - 5
+    - 29½
+    - ''
+-
+    - '8.'
+    - { text: 'Hannover 96 3', url: '?mannschaft=3161', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=724&r=4#p3161x3071', title: 'gegen Freib. Wedemark', text: ½ }]
+    - [{ url: '?staffel=724&r=2#p3161x3033', title: 'gegen SV Laatzen 2', text: ½ }]
+    - [{ url: '?staffel=724&r=8#p3161x3107', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=724&r=9#p3161x3176', title: 'gegen SD Isernhagen 2', text: 3½ }]
+    - [{ url: '?staffel=724&r=6#p3161x3172', title: 'gegen HSK Lister Turm 4', text: '3' }]
+    - [{ url: '?staffel=724&r=1#p3161x3090', title: 'gegen Uetze-Hänigsen 2', text: 2½ }]
+    - [{ url: '?staffel=724&r=3#p3161x3030', title: 'gegen WB Eilenriede 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=724&r=5#p3161x3109', title: 'gegen SK Lehrte 5', text: '5' }]
+    - [{ url: '?staffel=724&r=7#p3161x3183', title: 'gegen SK Ricklingen 2', text: '6' }]
+    - 4
+    - '27'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Lehrte 5', url: '?mannschaft=3109', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=724&r=8#p3109x3071', title: 'gegen Freib. Wedemark', text: ½ }]
+    - [{ url: '?staffel=724&r=6#p3109x3033', title: 'gegen SV Laatzen 2', text: '2' }]
+    - [{ url: '?staffel=724&r=3#p3109x3107', title: 'gegen SK Lehrte 3', text: 3½ }]
+    - [{ url: '?staffel=724&r=4#p3109x3176', title: 'gegen SD Isernhagen 2', text: 3½ }]
+    - [{ url: '?staffel=724&r=1#p3109x3172', title: 'gegen HSK Lister Turm 4', text: 2½ }]
+    - [{ url: '?staffel=724&r=9#p3109x3090', title: 'gegen Uetze-Hänigsen 2', text: '4' }]
+    - [{ url: '?staffel=724&r=7#p3109x3030', title: 'gegen WB Eilenriede 3', text: 5½ }]
+    - [{ url: '?staffel=724&r=5#p3109x3161', title: 'gegen Hannover 96 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=724&r=2#p3109x3183', title: 'gegen SK Ricklingen 2', text: 3½ }]
+    - 3
+    - '28'
+    - ''
+-
+    - '10.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=3183', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=724&r=1#p3183x3071', title: 'gegen Freib. Wedemark', text: 1½ }]
+    - [{ url: '?staffel=724&r=8#p3183x3033', title: 'gegen SV Laatzen 2', text: 2½ }]
+    - [{ url: '?staffel=724&r=5#p3183x3107', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=724&r=6#p3183x3176', title: 'gegen SD Isernhagen 2', text: 2½ }]
+    - [{ url: '?staffel=724&r=3#p3183x3172', title: 'gegen HSK Lister Turm 4', text: '2' }]
+    - [{ url: '?staffel=724&r=4#p3183x3090', title: 'gegen Uetze-Hänigsen 2', text: 3½ }]
+    - [{ url: '?staffel=724&r=9#p3183x3030', title: 'gegen WB Eilenriede 3', text: '4' }]
+    - [{ url: '?staffel=724&r=7#p3183x3161', title: 'gegen Hannover 96 3', text: '2' }]
+    - [{ url: '?staffel=724&r=2#p3183x3109', title: 'gegen SK Lehrte 5', text: 4½ }]
+    - xxx
+    - 3
+    - 24½
+    - ''

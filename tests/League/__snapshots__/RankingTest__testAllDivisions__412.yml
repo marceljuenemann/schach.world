@@ -1,0 +1,203 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=4085', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=872&r=10#p4085x3856', title: 'gegen WB Eilenriede', text: '5' }]
+    - [{ url: '?staffel=872&r=9#p4085x4060', title: 'gegen SVg Steinhude', text: '4' }]
+    - [{ url: '?staffel=872&r=5#p4085x3929', title: 'gegen SV Springe', text: 6½ }]
+    - [{ url: '?staffel=872&r=1#p4085x3937', title: 'gegen SK Stolzenau', text: 5½ }]
+    - [{ url: '?staffel=872&r=11#p4085x4092', title: 'gegen HSK Lister Turm 3', text: 4½ }]
+    - [{ url: '?staffel=872&r=8#p4085x4027', title: 'gegen SG Garbsen/Marienw', text: 5½ }]
+    - [{ url: '?staffel=872&r=2#p4085x3942', title: 'gegen Turm Hannover', text: '6' }]
+    - [{ url: '?staffel=872&r=3#p4085x4074', title: 'gegen SF Sulingen', text: '7' }]
+    - [{ url: '?staffel=872&r=4#p4085x3925', title: 'gegen SVg Calenberg', text: '8' }]
+    - [{ url: '?staffel=872&r=6#p4085x4016', title: 'gegen SF Hannover 3', text: 5½ }]
+    - 19
+    - 57½
+    - ''
+-
+    - '2.'
+    - { text: 'WB Eilenriede', url: '?mannschaft=3856', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=872&r=10#p3856x4085', title: 'gegen SK Ricklingen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=872&r=11#p3856x4060', title: 'gegen SVg Steinhude', text: 6½ }]
+    - [{ url: '?staffel=872&r=4#p3856x3929', title: 'gegen SV Springe', text: '5' }]
+    - [{ url: '?staffel=872&r=2#p3856x3937', title: 'gegen SK Stolzenau', text: '6' }]
+    - [{ url: '?staffel=872&r=6#p3856x4092', title: 'gegen HSK Lister Turm 3', text: 6½ }]
+    - [{ url: '?staffel=872&r=9#p3856x4027', title: 'gegen SG Garbsen/Marienw', text: '6' }]
+    - [{ url: '?staffel=872&r=7#p3856x3942', title: 'gegen Turm Hannover', text: '6' }]
+    - [{ url: '?staffel=872&r=1#p3856x4074', title: 'gegen SF Sulingen', text: 5½ }]
+    - [{ url: '?staffel=872&r=3#p3856x3925', title: 'gegen SVg Calenberg', text: '6' }]
+    - [{ url: '?staffel=872&r=5#p3856x4016', title: 'gegen SF Hannover 3', text: '5' }]
+    - 18
+    - 55½
+    - ''
+-
+    - '3.'
+    - { text: 'SVg Steinhude', url: '?mannschaft=4060', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=872&r=9#p4060x4085', title: 'gegen SK Ricklingen', text: '4' }]
+    - [{ url: '?staffel=872&r=11#p4060x3856', title: 'gegen WB Eilenriede', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=872&r=2#p4060x3929', title: 'gegen SV Springe', text: 4½ }]
+    - [{ url: '?staffel=872&r=6#p4060x3937', title: 'gegen SK Stolzenau', text: '1' }]
+    - [{ url: '?staffel=872&r=5#p4060x4092', title: 'gegen HSK Lister Turm 3', text: 5½ }]
+    - [{ url: '?staffel=872&r=7#p4060x4027', title: 'gegen SG Garbsen/Marienw', text: 4½ }]
+    - [{ url: '?staffel=872&r=4#p4060x3942', title: 'gegen Turm Hannover', text: 6½ }]
+    - [{ url: '?staffel=872&r=10#p4060x4074', title: 'gegen SF Sulingen', text: '5' }]
+    - [{ url: '?staffel=872&r=8#p4060x3925', title: 'gegen SVg Calenberg', text: '5' }]
+    - [{ url: '?staffel=872&r=3#p4060x4016', title: 'gegen SF Hannover 3', text: '6' }]
+    - 15
+    - 43½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Springe', url: '?mannschaft=3929', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=872&r=5#p3929x4085', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=872&r=4#p3929x3856', title: 'gegen WB Eilenriede', text: '3' }]
+    - [{ url: '?staffel=872&r=2#p3929x4060', title: 'gegen SVg Steinhude', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=872&r=9#p3929x3937', title: 'gegen SK Stolzenau', text: '6' }]
+    - [{ url: '?staffel=872&r=3#p3929x4092', title: 'gegen HSK Lister Turm 3', text: 4½ }]
+    - [{ url: '?staffel=872&r=6#p3929x4027', title: 'gegen SG Garbsen/Marienw', text: '6' }]
+    - [{ url: '?staffel=872&r=10#p3929x3942', title: 'gegen Turm Hannover', text: '2' }]
+    - [{ url: '?staffel=872&r=8#p3929x4074', title: 'gegen SF Sulingen', text: '6' }]
+    - [{ url: '?staffel=872&r=7#p3929x3925', title: 'gegen SVg Calenberg', text: '5' }]
+    - [{ url: '?staffel=872&r=1#p3929x4016', title: 'gegen SF Hannover 3', text: '5' }]
+    - 12
+    - 42½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=3937', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=872&r=1#p3937x4085', title: 'gegen SK Ricklingen', text: 2½ }]
+    - [{ url: '?staffel=872&r=2#p3937x3856', title: 'gegen WB Eilenriede', text: '2' }]
+    - [{ url: '?staffel=872&r=6#p3937x4060', title: 'gegen SVg Steinhude', text: '7' }]
+    - [{ url: '?staffel=872&r=9#p3937x3929', title: 'gegen SV Springe', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=872&r=7#p3937x4092', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=872&r=3#p3937x4027', title: 'gegen SG Garbsen/Marienw', text: 3½ }]
+    - [{ url: '?staffel=872&r=5#p3937x3942', title: 'gegen Turm Hannover', text: 4½ }]
+    - [{ url: '?staffel=872&r=11#p3937x4074', title: 'gegen SF Sulingen', text: '7' }]
+    - [{ url: '?staffel=872&r=10#p3937x3925', title: 'gegen SVg Calenberg', text: '6' }]
+    - [{ url: '?staffel=872&r=8#p3937x4016', title: 'gegen SF Hannover 3', text: '8' }]
+    - 11
+    - 46½
+    - ''
+-
+    - '6.'
+    - { text: 'HSK Lister Turm 3', url: '?mannschaft=4092', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=872&r=11#p4092x4085', title: 'gegen SK Ricklingen', text: 3½ }]
+    - [{ url: '?staffel=872&r=6#p4092x3856', title: 'gegen WB Eilenriede', text: 1½ }]
+    - [{ url: '?staffel=872&r=5#p4092x4060', title: 'gegen SVg Steinhude', text: 2½ }]
+    - [{ url: '?staffel=872&r=3#p4092x3929', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=872&r=7#p4092x3937', title: 'gegen SK Stolzenau', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=872&r=10#p4092x4027', title: 'gegen SG Garbsen/Marienw', text: 5½ }]
+    - [{ url: '?staffel=872&r=8#p4092x3942', title: 'gegen Turm Hannover', text: '4' }]
+    - [{ url: '?staffel=872&r=2#p4092x4074', title: 'gegen SF Sulingen', text: '5' }]
+    - [{ url: '?staffel=872&r=1#p4092x3925', title: 'gegen SVg Calenberg', text: '5' }]
+    - [{ url: '?staffel=872&r=4#p4092x4016', title: 'gegen SF Hannover 3', text: 6½ }]
+    - 10
+    - '41'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Garbsen/Marienw', url: '?mannschaft=4027', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=872&r=8#p4027x4085', title: 'gegen SK Ricklingen', text: 2½ }]
+    - [{ url: '?staffel=872&r=9#p4027x3856', title: 'gegen WB Eilenriede', text: '2' }]
+    - [{ url: '?staffel=872&r=7#p4027x4060', title: 'gegen SVg Steinhude', text: 3½ }]
+    - [{ url: '?staffel=872&r=6#p4027x3929', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=872&r=3#p4027x3937', title: 'gegen SK Stolzenau', text: 4½ }]
+    - [{ url: '?staffel=872&r=10#p4027x4092', title: 'gegen HSK Lister Turm 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=872&r=1#p4027x3942', title: 'gegen Turm Hannover', text: 4½ }]
+    - [{ url: '?staffel=872&r=4#p4027x4074', title: 'gegen SF Sulingen', text: '5' }]
+    - [{ url: '?staffel=872&r=5#p4027x3925', title: 'gegen SVg Calenberg', text: 4½ }]
+    - [{ url: '?staffel=872&r=11#p4027x4016', title: 'gegen SF Hannover 3', text: 6½ }]
+    - 10
+    - 37½
+    - ''
+-
+    - '8.'
+    - { text: 'Turm Hannover', url: '?mannschaft=3942', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=872&r=2#p3942x4085', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=872&r=7#p3942x3856', title: 'gegen WB Eilenriede', text: '2' }]
+    - [{ url: '?staffel=872&r=4#p3942x4060', title: 'gegen SVg Steinhude', text: 1½ }]
+    - [{ url: '?staffel=872&r=10#p3942x3929', title: 'gegen SV Springe', text: '6' }]
+    - [{ url: '?staffel=872&r=5#p3942x3937', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=872&r=8#p3942x4092', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - [{ url: '?staffel=872&r=1#p3942x4027', title: 'gegen SG Garbsen/Marienw', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=872&r=6#p3942x4074', title: 'gegen SF Sulingen', text: 3½ }]
+    - [{ url: '?staffel=872&r=11#p3942x3925', title: 'gegen SVg Calenberg', text: '5' }]
+    - [{ url: '?staffel=872&r=9#p3942x4016', title: 'gegen SF Hannover 3', text: '6' }]
+    - 7
+    - '37'
+    - ''
+-
+    - '9.'
+    - { text: 'SF Sulingen', url: '?mannschaft=4074', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=872&r=3#p4074x4085', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=872&r=1#p4074x3856', title: 'gegen WB Eilenriede', text: 2½ }]
+    - [{ url: '?staffel=872&r=10#p4074x4060', title: 'gegen SVg Steinhude', text: '3' }]
+    - [{ url: '?staffel=872&r=8#p4074x3929', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=872&r=11#p4074x3937', title: 'gegen SK Stolzenau', text: '1' }]
+    - [{ url: '?staffel=872&r=2#p4074x4092', title: 'gegen HSK Lister Turm 3', text: '3' }]
+    - [{ url: '?staffel=872&r=4#p4074x4027', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - [{ url: '?staffel=872&r=6#p4074x3942', title: 'gegen Turm Hannover', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=872&r=9#p4074x3925', title: 'gegen SVg Calenberg', text: 4½ }]
+    - [{ url: '?staffel=872&r=7#p4074x4016', title: 'gegen SF Hannover 3', text: '8' }]
+    - 6
+    - 32½
+    - ''
+-
+    - '10.'
+    - { text: 'SVg Calenberg', url: '?mannschaft=3925', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=872&r=4#p3925x4085', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=872&r=3#p3925x3856', title: 'gegen WB Eilenriede', text: '2' }]
+    - [{ url: '?staffel=872&r=8#p3925x4060', title: 'gegen SVg Steinhude', text: '3' }]
+    - [{ url: '?staffel=872&r=7#p3925x3929', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=872&r=10#p3925x3937', title: 'gegen SK Stolzenau', text: '2' }]
+    - [{ url: '?staffel=872&r=1#p3925x4092', title: 'gegen HSK Lister Turm 3', text: '3' }]
+    - [{ url: '?staffel=872&r=5#p3925x4027', title: 'gegen SG Garbsen/Marienw', text: 3½ }]
+    - [{ url: '?staffel=872&r=11#p3925x3942', title: 'gegen Turm Hannover', text: '3' }]
+    - [{ url: '?staffel=872&r=9#p3925x4074', title: 'gegen SF Sulingen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=872&r=2#p3925x4016', title: 'gegen SF Hannover 3', text: 4½ }]
+    - 2
+    - 27½
+    - ''
+-
+    - '11.'
+    - { text: 'SF Hannover 3', url: '?mannschaft=4016', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=872&r=6#p4016x4085', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=872&r=5#p4016x3856', title: 'gegen WB Eilenriede', text: '3' }]
+    - [{ url: '?staffel=872&r=3#p4016x4060', title: 'gegen SVg Steinhude', text: '2' }]
+    - [{ url: '?staffel=872&r=1#p4016x3929', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=872&r=8#p4016x3937', title: 'gegen SK Stolzenau', text: '0' }]
+    - [{ url: '?staffel=872&r=4#p4016x4092', title: 'gegen HSK Lister Turm 3', text: 1½ }]
+    - [{ url: '?staffel=872&r=11#p4016x4027', title: 'gegen SG Garbsen/Marienw', text: 1½ }]
+    - [{ url: '?staffel=872&r=9#p4016x3942', title: 'gegen Turm Hannover', text: '2' }]
+    - [{ url: '?staffel=872&r=7#p4016x4074', title: 'gegen SF Sulingen', text: '0' }]
+    - [{ url: '?staffel=872&r=2#p4016x3925', title: 'gegen SVg Calenberg', text: 3½ }]
+    - xxx
+    - 0
+    - '17'
+    - ''

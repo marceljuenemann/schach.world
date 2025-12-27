@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'AE Magdeburg', url: '?mannschaft=5825', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1378&r=2#p5825x5826', title: 'gegen Reideburger SV', text: 5½ }]
+    - [{ url: '?staffel=1378&r=1#p5825x5829', title: 'gegen Mattnetz Berlin', text: '6' }]
+    - [{ url: '?staffel=1378&r=6#p5825x5830', title: 'gegen USV Halle', text: '4' }]
+    - [{ url: '?staffel=1378&r=5#p5825x5824', title: 'gegen Borus. Lichtenberg', text: '4' }]
+    - [{ url: '?staffel=1378&r=9#p5825x5827', title: 'gegen SV Empor Berlin', text: 2½ }]
+    - [{ url: '?staffel=1378&r=4#p5825x5822', title: 'gegen SAV Torgelow', text: '6' }]
+    - [{ url: '?staffel=1378&r=7#p5825x5828', title: 'gegen SC Weisse Dame', text: 4½ }]
+    - [{ url: '?staffel=1378&r=3#p5825x5823', title: 'gegen Caissa Falkensee', text: 4½ }]
+    - [{ url: '?staffel=1378&r=8#p5825x5821', title: 'gegen 1. SC Anhalt', text: '5' }]
+    - 16
+    - '42'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Reideburger SV', url: '?mannschaft=5826', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1378&r=2#p5826x5825', title: 'gegen AE Magdeburg', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1378&r=8#p5826x5829', title: 'gegen Mattnetz Berlin', text: '4' }]
+    - [{ url: '?staffel=1378&r=4#p5826x5830', title: 'gegen USV Halle', text: '4' }]
+    - [{ url: '?staffel=1378&r=3#p5826x5824', title: 'gegen Borus. Lichtenberg', text: '3' }]
+    - [{ url: '?staffel=1378&r=7#p5826x5827', title: 'gegen SV Empor Berlin', text: 3½ }]
+    - [{ url: '?staffel=1378&r=9#p5826x5822', title: 'gegen SAV Torgelow', text: 5½ }]
+    - [{ url: '?staffel=1378&r=5#p5826x5828', title: 'gegen SC Weisse Dame', text: '4' }]
+    - [{ url: '?staffel=1378&r=1#p5826x5823', title: 'gegen Caissa Falkensee', text: 5½ }]
+    - [{ url: '?staffel=1378&r=6#p5826x5821', title: 'gegen 1. SC Anhalt', text: 4½ }]
+    - 15
+    - 34½
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'Mattnetz Berlin', url: '?mannschaft=5829', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1378&r=1#p5829x5825', title: 'gegen AE Magdeburg', text: '0' }]
+    - [{ url: '?staffel=1378&r=8#p5829x5826', title: 'gegen Reideburger SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1378&r=3#p5829x5830', title: 'gegen USV Halle', text: '4' }]
+    - [{ url: '?staffel=1378&r=2#p5829x5824', title: 'gegen Borus. Lichtenberg', text: 3½ }]
+    - [{ url: '?staffel=1378&r=6#p5829x5827', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=1378&r=7#p5829x5822', title: 'gegen SAV Torgelow', text: 4½ }]
+    - [{ url: '?staffel=1378&r=4#p5829x5828', title: 'gegen SC Weisse Dame', text: '5' }]
+    - [{ url: '?staffel=1378&r=9#p5829x5823', title: 'gegen Caissa Falkensee', text: 5½ }]
+    - [{ url: '?staffel=1378&r=5#p5829x5821', title: 'gegen 1. SC Anhalt', text: '6' }]
+    - 13
+    - 33½
+    - ''
+-
+    - '4.'
+    - { text: 'USV Halle', url: '?mannschaft=5830', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1378&r=6#p5830x5825', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=1378&r=4#p5830x5826', title: 'gegen Reideburger SV', text: '2' }]
+    - [{ url: '?staffel=1378&r=3#p5830x5829', title: 'gegen Mattnetz Berlin', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1378&r=7#p5830x5824', title: 'gegen Borus. Lichtenberg', text: 3½ }]
+    - [{ url: '?staffel=1378&r=2#p5830x5827', title: 'gegen SV Empor Berlin', text: 3½ }]
+    - [{ url: '?staffel=1378&r=8#p5830x5822', title: 'gegen SAV Torgelow', text: 4½ }]
+    - [{ url: '?staffel=1378&r=9#p5830x5828', title: 'gegen SC Weisse Dame', text: '6' }]
+    - [{ url: '?staffel=1378&r=5#p5830x5823', title: 'gegen Caissa Falkensee', text: '6' }]
+    - [{ url: '?staffel=1378&r=1#p5830x5821', title: 'gegen 1. SC Anhalt', text: '5' }]
+    - 12
+    - 34½
+    - ''
+-
+    - '5.'
+    - { text: 'Borus. Lichtenberg', url: '?mannschaft=5824', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1378&r=5#p5824x5825', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=1378&r=3#p5824x5826', title: 'gegen Reideburger SV', text: '3' }]
+    - [{ url: '?staffel=1378&r=2#p5824x5829', title: 'gegen Mattnetz Berlin', text: 2½ }]
+    - [{ url: '?staffel=1378&r=7#p5824x5830', title: 'gegen USV Halle', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1378&r=1#p5824x5827', title: 'gegen SV Empor Berlin', text: 3½ }]
+    - [{ url: '?staffel=1378&r=6#p5824x5822', title: 'gegen SAV Torgelow', text: 2½ }]
+    - [{ url: '?staffel=1378&r=8#p5824x5828', title: 'gegen SC Weisse Dame', text: '6' }]
+    - [{ url: '?staffel=1378&r=4#p5824x5823', title: 'gegen Caissa Falkensee', text: '5' }]
+    - [{ url: '?staffel=1378&r=9#p5824x5821', title: 'gegen 1. SC Anhalt', text: 5½ }]
+    - 9
+    - 32½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=5827', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1378&r=9#p5827x5825', title: 'gegen AE Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=1378&r=7#p5827x5826', title: 'gegen Reideburger SV', text: 2½ }]
+    - [{ url: '?staffel=1378&r=6#p5827x5829', title: 'gegen Mattnetz Berlin', text: '3' }]
+    - [{ url: '?staffel=1378&r=2#p5827x5830', title: 'gegen USV Halle', text: 2½ }]
+    - [{ url: '?staffel=1378&r=1#p5827x5824', title: 'gegen Borus. Lichtenberg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1378&r=5#p5827x5822', title: 'gegen SAV Torgelow', text: 2½ }]
+    - [{ url: '?staffel=1378&r=3#p5827x5828', title: 'gegen SC Weisse Dame', text: 5½ }]
+    - [{ url: '?staffel=1378&r=8#p5827x5823', title: 'gegen Caissa Falkensee', text: '4' }]
+    - [{ url: '?staffel=1378&r=4#p5827x5821', title: 'gegen 1. SC Anhalt', text: '5' }]
+    - 9
+    - '31'
+    - ''
+-
+    - '7.'
+    - { text: 'SAV Torgelow', url: '?mannschaft=5822', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1378&r=4#p5822x5825', title: 'gegen AE Magdeburg', text: '0' }]
+    - [{ url: '?staffel=1378&r=9#p5822x5826', title: 'gegen Reideburger SV', text: ½ }]
+    - [{ url: '?staffel=1378&r=7#p5822x5829', title: 'gegen Mattnetz Berlin', text: 1½ }]
+    - [{ url: '?staffel=1378&r=8#p5822x5830', title: 'gegen USV Halle', text: 1½ }]
+    - [{ url: '?staffel=1378&r=6#p5822x5824', title: 'gegen Borus. Lichtenberg', text: 3½ }]
+    - [{ url: '?staffel=1378&r=5#p5822x5827', title: 'gegen SV Empor Berlin', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1378&r=1#p5822x5828', title: 'gegen SC Weisse Dame', text: 2½ }]
+    - [{ url: '?staffel=1378&r=2#p5822x5823', title: 'gegen Caissa Falkensee', text: '4' }]
+    - [{ url: '?staffel=1378&r=3#p5822x5821', title: 'gegen 1. SC Anhalt', text: 4½ }]
+    - 8
+    - 21½
+    - absteiger
+-
+    - '8.'
+    - { text: 'SC Weisse Dame', url: '?mannschaft=5828', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1378&r=7#p5828x5825', title: 'gegen AE Magdeburg', text: 1½ }]
+    - [{ url: '?staffel=1378&r=5#p5828x5826', title: 'gegen Reideburger SV', text: '2' }]
+    - [{ url: '?staffel=1378&r=4#p5828x5829', title: 'gegen Mattnetz Berlin', text: '1' }]
+    - [{ url: '?staffel=1378&r=9#p5828x5830', title: 'gegen USV Halle', text: '0' }]
+    - [{ url: '?staffel=1378&r=8#p5828x5824', title: 'gegen Borus. Lichtenberg', text: '0' }]
+    - [{ url: '?staffel=1378&r=3#p5828x5827', title: 'gegen SV Empor Berlin', text: ½ }]
+    - [{ url: '?staffel=1378&r=1#p5828x5822', title: 'gegen SAV Torgelow', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1378&r=6#p5828x5823', title: 'gegen Caissa Falkensee', text: '6' }]
+    - [{ url: '?staffel=1378&r=2#p5828x5821', title: 'gegen 1. SC Anhalt', text: '4' }]
+    - 6
+    - 18½
+    - absteiger
+-
+    - '9.'
+    - { text: 'Caissa Falkensee', url: '?mannschaft=5823', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1378&r=3#p5823x5825', title: 'gegen AE Magdeburg', text: 1½ }]
+    - [{ url: '?staffel=1378&r=1#p5823x5826', title: 'gegen Reideburger SV', text: ½ }]
+    - [{ url: '?staffel=1378&r=9#p5823x5829', title: 'gegen Mattnetz Berlin', text: ½ }]
+    - [{ url: '?staffel=1378&r=5#p5823x5830', title: 'gegen USV Halle', text: '0' }]
+    - [{ url: '?staffel=1378&r=4#p5823x5824', title: 'gegen Borus. Lichtenberg', text: '1' }]
+    - [{ url: '?staffel=1378&r=8#p5823x5827', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=1378&r=2#p5823x5822', title: 'gegen SAV Torgelow', text: '2' }]
+    - [{ url: '?staffel=1378&r=6#p5823x5828', title: 'gegen SC Weisse Dame', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1378&r=7#p5823x5821', title: 'gegen 1. SC Anhalt', text: 3½ }]
+    - 2
+    - '11'
+    - absteiger
+-
+    - '10.'
+    - { text: '1. SC Anhalt', url: '?mannschaft=5821', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1378&r=8#p5821x5825', title: 'gegen AE Magdeburg', text: '1' }]
+    - [{ url: '?staffel=1378&r=6#p5821x5826', title: 'gegen Reideburger SV', text: 1½ }]
+    - [{ url: '?staffel=1378&r=5#p5821x5829', title: 'gegen Mattnetz Berlin', text: '0' }]
+    - [{ url: '?staffel=1378&r=1#p5821x5830', title: 'gegen USV Halle', text: '1' }]
+    - [{ url: '?staffel=1378&r=9#p5821x5824', title: 'gegen Borus. Lichtenberg', text: ½ }]
+    - [{ url: '?staffel=1378&r=4#p5821x5827', title: 'gegen SV Empor Berlin', text: '1' }]
+    - [{ url: '?staffel=1378&r=3#p5821x5822', title: 'gegen SAV Torgelow', text: 1½ }]
+    - [{ url: '?staffel=1378&r=2#p5821x5828', title: 'gegen SC Weisse Dame', text: '2' }]
+    - [{ url: '?staffel=1378&r=7#p5821x5823', title: 'gegen Caissa Falkensee', text: 2½ }]
+    - xxx
+    - 0
+    - '11'
+    - absteiger

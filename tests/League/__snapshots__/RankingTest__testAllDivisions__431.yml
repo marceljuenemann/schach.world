@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=4129', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=894&r=6#p4129x3945', title: 'gegen SV Hellern', text: 3½ }]
+    - [{ url: '?staffel=894&r=1#p4129x4017', title: 'gegen Post SV Uelzen', text: '3' }]
+    - [{ url: '?staffel=894&r=3#p4129x4103', title: 'gegen Rochade Göttingen', text: 5½ }]
+    - [{ url: '?staffel=894&r=4#p4129x4133', title: 'gegen SC Aurich', text: '4' }]
+    - [{ url: '?staffel=894&r=7#p4129x4126', title: 'gegen SK Nordhorn-Bl.', text: '4' }]
+    - [{ url: '?staffel=894&r=2#p4129x4130', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=894&r=5#p4129x4104', title: 'gegen Stader SV 2', text: '6' }]
+    - 13
+    - '30'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Hellern', url: '?mannschaft=3945', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=894&r=6#p3945x4129', title: 'gegen SK Lehrte', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=894&r=7#p3945x4017', title: 'gegen Post SV Uelzen', text: '5' }]
+    - [{ url: '?staffel=894&r=4#p3945x4103', title: 'gegen Rochade Göttingen', text: 5½ }]
+    - [{ url: '?staffel=894&r=3#p3945x4133', title: 'gegen SC Aurich', text: 3½ }]
+    - [{ url: '?staffel=894&r=2#p3945x4126', title: 'gegen SK Nordhorn-Bl.', text: '3' }]
+    - [{ url: '?staffel=894&r=5#p3945x4130', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=894&r=1#p3945x4104', title: 'gegen Stader SV 2', text: '6' }]
+    - 11
+    - '30'
+    - ''
+-
+    - '3.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=4017', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=894&r=1#p4017x4129', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=894&r=7#p4017x3945', title: 'gegen SV Hellern', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=894&r=2#p4017x4103', title: 'gegen Rochade Göttingen', text: '6' }]
+    - [{ url: '?staffel=894&r=5#p4017x4133', title: 'gegen SC Aurich', text: '3' }]
+    - [{ url: '?staffel=894&r=6#p4017x4126', title: 'gegen SK Nordhorn-Bl.', text: 1½ }]
+    - [{ url: '?staffel=894&r=3#p4017x4130', title: 'gegen SK Lehrte 2', text: '5' }]
+    - [{ url: '?staffel=894&r=4#p4017x4104', title: 'gegen Stader SV 2', text: '6' }]
+    - 8
+    - 25½
+    - ''
+-
+    - '4.'
+    - { text: 'Rochade Göttingen', url: '?mannschaft=4103', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=894&r=3#p4103x4129', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=894&r=4#p4103x3945', title: 'gegen SV Hellern', text: ½ }]
+    - [{ url: '?staffel=894&r=2#p4103x4017', title: 'gegen Post SV Uelzen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=894&r=6#p4103x4133', title: 'gegen SC Aurich', text: 4½ }]
+    - [{ url: '?staffel=894&r=5#p4103x4126', title: 'gegen SK Nordhorn-Bl.', text: '4' }]
+    - [{ url: '?staffel=894&r=1#p4103x4130', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - [{ url: '?staffel=894&r=7#p4103x4104', title: 'gegen Stader SV 2', text: '6' }]
+    - 8
+    - '19'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Aurich', url: '?mannschaft=4133', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=894&r=4#p4133x4129', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=894&r=3#p4133x3945', title: 'gegen SV Hellern', text: 2½ }]
+    - [{ url: '?staffel=894&r=5#p4133x4017', title: 'gegen Post SV Uelzen', text: '3' }]
+    - [{ url: '?staffel=894&r=6#p4133x4103', title: 'gegen Rochade Göttingen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=894&r=1#p4133x4126', title: 'gegen SK Nordhorn-Bl.', text: '4' }]
+    - [{ url: '?staffel=894&r=7#p4133x4130', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=894&r=2#p4133x4104', title: 'gegen Stader SV 2', text: '6' }]
+    - 7
+    - '23'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Nordhorn-Bl.', url: '?mannschaft=4126', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=894&r=7#p4126x4129', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=894&r=2#p4126x3945', title: 'gegen SV Hellern', text: '3' }]
+    - [{ url: '?staffel=894&r=6#p4126x4017', title: 'gegen Post SV Uelzen', text: 4½ }]
+    - [{ url: '?staffel=894&r=5#p4126x4103', title: 'gegen Rochade Göttingen', text: '2' }]
+    - [{ url: '?staffel=894&r=1#p4126x4133', title: 'gegen SC Aurich', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=894&r=4#p4126x4130', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=894&r=3#p4126x4104', title: 'gegen Stader SV 2', text: '6' }]
+    - 5
+    - 21½
+    - absteiger
+-
+    - '7.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=4130', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=894&r=2#p4130x4129', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=894&r=5#p4130x3945', title: 'gegen SV Hellern', text: 1½ }]
+    - [{ url: '?staffel=894&r=3#p4130x4017', title: 'gegen Post SV Uelzen', text: '1' }]
+    - [{ url: '?staffel=894&r=1#p4130x4103', title: 'gegen Rochade Göttingen', text: 2½ }]
+    - [{ url: '?staffel=894&r=7#p4130x4133', title: 'gegen SC Aurich', text: '2' }]
+    - [{ url: '?staffel=894&r=4#p4130x4126', title: 'gegen SK Nordhorn-Bl.', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=894&r=6#p4130x4104', title: 'gegen Stader SV 2', text: '6' }]
+    - 4
+    - '19'
+    - absteiger
+-
+    - '8.'
+    - { text: 'Stader SV 2', url: '?mannschaft=4104', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=894&r=5#p4104x4129', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=894&r=1#p4104x3945', title: 'gegen SV Hellern', text: '0' }]
+    - [{ url: '?staffel=894&r=4#p4104x4017', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=894&r=7#p4104x4103', title: 'gegen Rochade Göttingen', text: '0' }]
+    - [{ url: '?staffel=894&r=2#p4104x4133', title: 'gegen SC Aurich', text: '0' }]
+    - [{ url: '?staffel=894&r=3#p4104x4126', title: 'gegen SK Nordhorn-Bl.', text: '0' }]
+    - [{ url: '?staffel=894&r=6#p4104x4130', title: 'gegen SK Lehrte 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

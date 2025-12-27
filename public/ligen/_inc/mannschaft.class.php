@@ -1,4 +1,4 @@
-<?
+<?php
 /* Abfrage von Mannschaftsdaten
  *
  * In dieser Datei wird die Klasse SED_Mannschaft zur Verfügung

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=8482', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1872&r=1#p8482x8542', title: 'gegen SF Ricklingen 3', text: '7' }]
+    - [{ url: '?staffel=1872&r=3#p8482x8529', title: 'gegen SV Springe 2', text: 5½ }]
+    - [{ url: '?staffel=1872&r=2#p8482x8479', title: 'gegen SVg Calenberg 2', text: 6½ }]
+    - {  }
+    - 6
+    - '19'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Sulingen', url: '?mannschaft=8546', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1872&r=3#p8546x8507', title: 'gegen SG STL/Berenbostel 3', text: 4½ }]
+    - [{ url: '?staffel=1872&r=1#p8546x8496', title: 'gegen SK Wennigsen', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1872&r=2#p8546x8495', title: 'gegen SD Isernhagen 3', text: 6½ }]
+    - 5
+    - '15'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SG STL/Berenbostel 3', url: '?mannschaft=8507', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1872&r=3#p8507x8546', title: 'gegen SF Sulingen', text: 3½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1872&r=2#p8507x8542', title: 'gegen SF Ricklingen 3', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1872&r=1#p8507x8495', title: 'gegen SD Isernhagen 3', text: '7' }]
+    - 3
+    - 14½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=8496', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1872&r=1#p8496x8546', title: 'gegen SF Sulingen', text: '4' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1872&r=3#p8496x8542', title: 'gegen SF Ricklingen 3', text: '3' }]
+    - [{ url: '?staffel=1872&r=2#p8496x8529', title: 'gegen SV Springe 2', text: '5' }]
+    - {  }
+    - {  }
+    - 3
+    - '12'
+    - absteigerRelegation
+-
+    - '5.'
+    - { text: 'SF Ricklingen 3', url: '?mannschaft=8542', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1872&r=1#p8542x8482', title: 'gegen SV Bückeburg', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1872&r=2#p8542x8507', title: 'gegen SG STL/Berenbostel 3', text: '4' }]
+    - [{ url: '?staffel=1872&r=3#p8542x8496', title: 'gegen SK Wennigsen', text: '5' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - 3
+    - '10'
+    - absteigerRelegation
+-
+    - '6.'
+    - { text: 'SV Springe 2', url: '?mannschaft=8529', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1872&r=3#p8529x8482', title: 'gegen SV Bückeburg', text: 2½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1872&r=2#p8529x8496', title: 'gegen SK Wennigsen', text: '3' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1872&r=1#p8529x8479', title: 'gegen SVg Calenberg 2', text: 4½ }]
+    - {  }
+    - 2
+    - '10'
+    - absteiger
+-
+    - '7.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=8479', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1872&r=2#p8479x8482', title: 'gegen SV Bückeburg', text: 1½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1872&r=1#p8479x8529', title: 'gegen SV Springe 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1872&r=3#p8479x8495', title: 'gegen SD Isernhagen 3', text: 4½ }]
+    - 2
+    - 9½
+    - absteiger
+-
+    - '8.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=8495', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1872&r=2#p8495x8546', title: 'gegen SF Sulingen', text: 1½ }]
+    - [{ url: '?staffel=1872&r=1#p8495x8507', title: 'gegen SG STL/Berenbostel 3', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1872&r=3#p8495x8479', title: 'gegen SVg Calenberg 2', text: 3½ }]
+    - xxx
+    - 0
+    - '6'
+    - absteiger

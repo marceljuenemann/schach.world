@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=7738', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1748&r=1#p7738x7707', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=1748&r=3#p7738x7674', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=1748&r=2#p7738x7702', title: 'gegen SD Isernhagen', text: '3' }]
+    - 6
+    - '11'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hannover 96', url: '?mannschaft=7707', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1748&r=1#p7707x7738', title: 'gegen SZ Bemerode', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1748&r=2#p7707x7674', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=1748&r=3#p7707x7702', title: 'gegen SD Isernhagen', text: '2' }]
+    - 3
+    - 5½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte', url: '?mannschaft=7674', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1748&r=3#p7674x7738', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1748&r=2#p7674x7707', title: 'gegen Hannover 96', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1748&r=1#p7674x7702', title: 'gegen SD Isernhagen', text: '3' }]
+    - 2
+    - 3½
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=7702', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1748&r=2#p7702x7738', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1748&r=3#p7702x7707', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=1748&r=1#p7702x7674', title: 'gegen SK Lehrte', text: '1' }]
+    - xxx
+    - 1
+    - '4'
+    - ''

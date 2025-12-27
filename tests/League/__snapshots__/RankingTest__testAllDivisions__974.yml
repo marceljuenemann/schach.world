@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=8162', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1813&r=2#p8162x7945', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=1813&r=1#p8162x8156', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=1813&r=1#p8162x8143', title: 'gegen SC Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=1813&r=3#p8162x8035', title: 'gegen HSK Lister Turm', text: 3½ }]
+    - [{ url: '?staffel=1813&r=2#p8162x7946', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 10
+    - '17'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte', url: '?mannschaft=7945', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1813&r=2#p7945x8162', title: 'gegen SZ Bemerode', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1813&r=3#p7945x8156', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=1813&r=3#p7945x8143', title: 'gegen SC Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=1813&r=2#p7945x8035', title: 'gegen HSK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=1813&r=1#p7945x7946', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - 8
+    - 12½
+    - ''
+-
+    - '3.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=8156', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1813&r=1#p8156x8162', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1813&r=3#p8156x7945', title: 'gegen SK Lehrte', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1813&r=2#p8156x8143', title: 'gegen SC Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=1813&r=1#p8156x8035', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=1813&r=3#p8156x7946', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 6
+    - '14'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Uetze-Hänigsen', url: '?mannschaft=8143', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1813&r=1#p8143x8162', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1813&r=3#p8143x7945', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1813&r=2#p8143x8156', title: 'gegen SD Isernhagen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1813&r=1#p8143x8035', title: 'gegen HSK Lister Turm', text: '2' }]
+    - [{ url: '?staffel=1813&r=3#p8143x7946', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 3
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=8035', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1813&r=3#p8035x8162', title: 'gegen SZ Bemerode', text: ½ }]
+    - [{ url: '?staffel=1813&r=2#p8035x7945', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1813&r=1#p8035x8156', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1813&r=1#p8035x8143', title: 'gegen SC Uetze-Hänigsen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1813&r=2#p8035x7946', title: 'gegen SK Lehrte 2', text: '3' }]
+    - 3
+    - 6½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=7946', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1813&r=2#p7946x8162', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1813&r=1#p7946x7945', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=1813&r=3#p7946x8156', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1813&r=3#p7946x8143', title: 'gegen SC Uetze-Hänigsen', text: '0' }]
+    - [{ url: '?staffel=1813&r=2#p7946x8035', title: 'gegen HSK Lister Turm', text: '1' }]
+    - xxx
+    - 0
+    - 1½
+    - ''

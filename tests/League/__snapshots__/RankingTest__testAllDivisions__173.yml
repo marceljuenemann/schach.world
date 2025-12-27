@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'KSV Rochade GÖ', url: '?mannschaft=1953', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=593&r=1#p1953x1964', title: 'gegen BadSalzdetfurth 3', text: 3½ }]
+    - [{ url: '?staffel=593&r=3#p1953x1951', title: 'gegen Bad Lauterberg', text: '4' }]
+    - [{ url: '?staffel=593&r=9#p1953x1960', title: 'gegen Hildesheimer SV 3', text: 2½ }]
+    - [{ url: '?staffel=593&r=5#p1953x1962', title: 'gegen SC SW Northeim 2', text: 4½ }]
+    - [{ url: '?staffel=593&r=4#p1953x1963', title: 'gegen Bad Gandersheim', text: '6' }]
+    - [{ url: '?staffel=593&r=8#p1953x1965', title: 'gegen PSV Bad Pyrmont 2', text: '3' }]
+    - [{ url: '?staffel=593&r=6#p1953x1948', title: 'gegen ESV RW Göttingen 3', text: '4' }]
+    - [{ url: '?staffel=593&r=7#p1953x1961', title: 'gegen SC Langelsheim', text: '6' }]
+    - [{ url: '?staffel=593&r=2#p1953x2128', title: 'gegen SK Bad Harzburg 3', text: '4' }]
+    - 15
+    - 37½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'BadSalzdetfurth 3', url: '?mannschaft=1964', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=593&r=1#p1964x1953', title: 'gegen KSV Rochade GÖ', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=593&r=9#p1964x1951', title: 'gegen Bad Lauterberg', text: '4' }]
+    - [{ url: '?staffel=593&r=5#p1964x1960', title: 'gegen Hildesheimer SV 3', text: 3½ }]
+    - [{ url: '?staffel=593&r=2#p1964x1962', title: 'gegen SC SW Northeim 2', text: '2' }]
+    - [{ url: '?staffel=593&r=7#p1964x1963', title: 'gegen Bad Gandersheim', text: '3' }]
+    - [{ url: '?staffel=593&r=6#p1964x1965', title: 'gegen PSV Bad Pyrmont 2', text: '4' }]
+    - [{ url: '?staffel=593&r=3#p1964x1948', title: 'gegen ESV RW Göttingen 3', text: 3½ }]
+    - [{ url: '?staffel=593&r=4#p1964x1961', title: 'gegen SC Langelsheim', text: '4' }]
+    - [{ url: '?staffel=593&r=8#p1964x2128', title: 'gegen SK Bad Harzburg 3', text: '4' }]
+    - 13
+    - 30½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Bad Lauterberg', url: '?mannschaft=1951', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=593&r=3#p1951x1953', title: 'gegen KSV Rochade GÖ', text: '2' }]
+    - [{ url: '?staffel=593&r=9#p1951x1964', title: 'gegen BadSalzdetfurth 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=593&r=8#p1951x1960', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=593&r=6#p1951x1962', title: 'gegen SC SW Northeim 2', text: 2½ }]
+    - [{ url: '?staffel=593&r=2#p1951x1963', title: 'gegen Bad Gandersheim', text: 3½ }]
+    - [{ url: '?staffel=593&r=1#p1951x1965', title: 'gegen PSV Bad Pyrmont 2', text: '5' }]
+    - [{ url: '?staffel=593&r=7#p1951x1948', title: 'gegen ESV RW Göttingen 3', text: 3½ }]
+    - [{ url: '?staffel=593&r=5#p1951x1961', title: 'gegen SC Langelsheim', text: 4½ }]
+    - [{ url: '?staffel=593&r=4#p1951x2128', title: 'gegen SK Bad Harzburg 3', text: 5½ }]
+    - 12
+    - 32½
+    - ''
+-
+    - '4.'
+    - { text: 'Hildesheimer SV 3', url: '?mannschaft=1960', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=593&r=9#p1960x1953', title: 'gegen KSV Rochade GÖ', text: 3½ }]
+    - [{ url: '?staffel=593&r=5#p1960x1964', title: 'gegen BadSalzdetfurth 3', text: 2½ }]
+    - [{ url: '?staffel=593&r=8#p1960x1951', title: 'gegen Bad Lauterberg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=593&r=4#p1960x1962', title: 'gegen SC SW Northeim 2', text: '2' }]
+    - [{ url: '?staffel=593&r=1#p1960x1963', title: 'gegen Bad Gandersheim', text: '5' }]
+    - [{ url: '?staffel=593&r=7#p1960x1965', title: 'gegen PSV Bad Pyrmont 2', text: 4½ }]
+    - [{ url: '?staffel=593&r=2#p1960x1948', title: 'gegen ESV RW Göttingen 3', text: '2' }]
+    - [{ url: '?staffel=593&r=3#p1960x1961', title: 'gegen SC Langelsheim', text: 3½ }]
+    - [{ url: '?staffel=593&r=6#p1960x2128', title: 'gegen SK Bad Harzburg 3', text: 4½ }]
+    - 10
+    - 29½
+    - ''
+-
+    - '5.'
+    - { text: 'SC SW Northeim 2', url: '?mannschaft=1962', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=593&r=5#p1962x1953', title: 'gegen KSV Rochade GÖ', text: 1½ }]
+    - [{ url: '?staffel=593&r=2#p1962x1964', title: 'gegen BadSalzdetfurth 3', text: '4' }]
+    - [{ url: '?staffel=593&r=6#p1962x1951', title: 'gegen Bad Lauterberg', text: 3½ }]
+    - [{ url: '?staffel=593&r=4#p1962x1960', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=593&r=3#p1962x1963', title: 'gegen Bad Gandersheim', text: ½ }]
+    - [{ url: '?staffel=593&r=9#p1962x1965', title: 'gegen PSV Bad Pyrmont 2', text: '2' }]
+    - [{ url: '?staffel=593&r=1#p1962x1948', title: 'gegen ESV RW Göttingen 3', text: ½ }]
+    - [{ url: '?staffel=593&r=8#p1962x1961', title: 'gegen SC Langelsheim', text: 3½ }]
+    - [{ url: '?staffel=593&r=7#p1962x2128', title: 'gegen SK Bad Harzburg 3', text: '5' }]
+    - 10
+    - 24½
+    - ''
+-
+    - '6.'
+    - { text: 'Bad Gandersheim', url: '?mannschaft=1963', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=593&r=4#p1963x1953', title: 'gegen KSV Rochade GÖ', text: '0' }]
+    - [{ url: '?staffel=593&r=7#p1963x1964', title: 'gegen BadSalzdetfurth 3', text: '3' }]
+    - [{ url: '?staffel=593&r=2#p1963x1951', title: 'gegen Bad Lauterberg', text: 2½ }]
+    - [{ url: '?staffel=593&r=1#p1963x1960', title: 'gegen Hildesheimer SV 3', text: '1' }]
+    - [{ url: '?staffel=593&r=3#p1963x1962', title: 'gegen SC SW Northeim 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=593&r=5#p1963x1965', title: 'gegen PSV Bad Pyrmont 2', text: '4' }]
+    - [{ url: '?staffel=593&r=8#p1963x1948', title: 'gegen ESV RW Göttingen 3', text: 4½ }]
+    - [{ url: '?staffel=593&r=6#p1963x1961', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=593&r=9#p1963x2128', title: 'gegen SK Bad Harzburg 3', text: 3½ }]
+    - 9
+    - '26'
+    - ''
+-
+    - '7.'
+    - { text: 'PSV Bad Pyrmont 2', url: '?mannschaft=1965', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=593&r=8#p1965x1953', title: 'gegen KSV Rochade GÖ', text: '3' }]
+    - [{ url: '?staffel=593&r=6#p1965x1964', title: 'gegen BadSalzdetfurth 3', text: '2' }]
+    - [{ url: '?staffel=593&r=1#p1965x1951', title: 'gegen Bad Lauterberg', text: '1' }]
+    - [{ url: '?staffel=593&r=7#p1965x1960', title: 'gegen Hildesheimer SV 3', text: 1½ }]
+    - [{ url: '?staffel=593&r=9#p1965x1962', title: 'gegen SC SW Northeim 2', text: '4' }]
+    - [{ url: '?staffel=593&r=5#p1965x1963', title: 'gegen Bad Gandersheim', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=593&r=4#p1965x1948', title: 'gegen ESV RW Göttingen 3', text: 3½ }]
+    - [{ url: '?staffel=593&r=2#p1965x1961', title: 'gegen SC Langelsheim', text: '3' }]
+    - [{ url: '?staffel=593&r=3#p1965x2128', title: 'gegen SK Bad Harzburg 3', text: 5½ }]
+    - 8
+    - 25½
+    - ''
+-
+    - '8.'
+    - { text: 'ESV RW Göttingen 3', url: '?mannschaft=1948', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=593&r=6#p1948x1953', title: 'gegen KSV Rochade GÖ', text: '2' }]
+    - [{ url: '?staffel=593&r=3#p1948x1964', title: 'gegen BadSalzdetfurth 3', text: 2½ }]
+    - [{ url: '?staffel=593&r=7#p1948x1951', title: 'gegen Bad Lauterberg', text: 2½ }]
+    - [{ url: '?staffel=593&r=2#p1948x1960', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=593&r=1#p1948x1962', title: 'gegen SC SW Northeim 2', text: 5½ }]
+    - [{ url: '?staffel=593&r=8#p1948x1963', title: 'gegen Bad Gandersheim', text: 1½ }]
+    - [{ url: '?staffel=593&r=4#p1948x1965', title: 'gegen PSV Bad Pyrmont 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=593&r=9#p1948x1961', title: 'gegen SC Langelsheim', text: '5' }]
+    - [{ url: '?staffel=593&r=5#p1948x2128', title: 'gegen SK Bad Harzburg 3', text: 1½ }]
+    - 6
+    - '27'
+    - ''
+-
+    - '9.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=1961', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=593&r=7#p1961x1953', title: 'gegen KSV Rochade GÖ', text: '0' }]
+    - [{ url: '?staffel=593&r=4#p1961x1964', title: 'gegen BadSalzdetfurth 3', text: '2' }]
+    - [{ url: '?staffel=593&r=5#p1961x1951', title: 'gegen Bad Lauterberg', text: 1½ }]
+    - [{ url: '?staffel=593&r=3#p1961x1960', title: 'gegen Hildesheimer SV 3', text: 2½ }]
+    - [{ url: '?staffel=593&r=8#p1961x1962', title: 'gegen SC SW Northeim 2', text: 2½ }]
+    - [{ url: '?staffel=593&r=6#p1961x1963', title: 'gegen Bad Gandersheim', text: '4' }]
+    - [{ url: '?staffel=593&r=2#p1961x1965', title: 'gegen PSV Bad Pyrmont 2', text: '3' }]
+    - [{ url: '?staffel=593&r=9#p1961x1948', title: 'gegen ESV RW Göttingen 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=593&r=1#p1961x2128', title: 'gegen SK Bad Harzburg 3', text: '3' }]
+    - 4
+    - 19½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SK Bad Harzburg 3', url: '?mannschaft=2128', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=593&r=2#p2128x1953', title: 'gegen KSV Rochade GÖ', text: '2' }]
+    - [{ url: '?staffel=593&r=8#p2128x1964', title: 'gegen BadSalzdetfurth 3', text: '2' }]
+    - [{ url: '?staffel=593&r=4#p2128x1951', title: 'gegen Bad Lauterberg', text: ½ }]
+    - [{ url: '?staffel=593&r=6#p2128x1960', title: 'gegen Hildesheimer SV 3', text: 1½ }]
+    - [{ url: '?staffel=593&r=7#p2128x1962', title: 'gegen SC SW Northeim 2', text: '1' }]
+    - [{ url: '?staffel=593&r=9#p2128x1963', title: 'gegen Bad Gandersheim', text: 2½ }]
+    - [{ url: '?staffel=593&r=3#p2128x1965', title: 'gegen PSV Bad Pyrmont 2', text: ½ }]
+    - [{ url: '?staffel=593&r=5#p2128x1948', title: 'gegen ESV RW Göttingen 3', text: 4½ }]
+    - [{ url: '?staffel=593&r=1#p2128x1961', title: 'gegen SC Langelsheim', text: '3' }]
+    - xxx
+    - 3
+    - 17½
+    - absteiger

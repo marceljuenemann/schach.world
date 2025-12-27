@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Kirchweyhe 2', url: '?mannschaft=6823', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1575&r=1#p6823x6792', title: 'gegen Stader SV', text: '7' }]
+    - [{ url: '?staffel=1575&r=8#p6823x6787', title: 'gegen SK Verden', text: '7' }]
+    - [{ url: '?staffel=1575&r=7#p6823x6795', title: 'gegen SC Turm Lüneburg', text: '7' }]
+    - [{ url: '?staffel=1575&r=2#p6823x6794', title: 'gegen SF Leherheide', text: '6' }]
+    - [{ url: '?staffel=1575&r=6#p6823x6871', title: 'gegen Post SV Uelzen 2', text: '7' }]
+    - [{ url: '?staffel=1575&r=5#p6823x6790', title: 'gegen SG FinWest', text: '4' }]
+    - [{ url: '?staffel=1575&r=3#p6823x6751', title: 'gegen NiederelbeCuxhaven', text: '8' }]
+    - [{ url: '?staffel=1575&r=9#p6823x6808', title: 'gegen SK Rotenburg', text: 4½ }]
+    - 15
+    - 50½
+    - ''
+-
+    - '2.'
+    - { text: 'Stader SV', url: '?mannschaft=6792', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1575&r=1#p6792x6823', title: 'gegen SK Kirchweyhe 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1575&r=9#p6792x6787', title: 'gegen SK Verden', text: '5' }]
+    - [{ url: '?staffel=1575&r=4#p6792x6795', title: 'gegen SC Turm Lüneburg', text: 5½ }]
+    - [{ url: '?staffel=1575&r=5#p6792x6794', title: 'gegen SF Leherheide', text: '0' }]
+    - [{ url: '?staffel=1575&r=3#p6792x6871', title: 'gegen Post SV Uelzen 2', text: '6' }]
+    - [{ url: '?staffel=1575&r=6#p6792x6790', title: 'gegen SG FinWest', text: 4½ }]
+    - [{ url: '?staffel=1575&r=2#p6792x6751', title: 'gegen NiederelbeCuxhaven', text: 4½ }]
+    - [{ url: '?staffel=1575&r=8#p6792x6808', title: 'gegen SK Rotenburg', text: 6½ }]
+    - 12
+    - '33'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Verden', url: '?mannschaft=6787', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1575&r=8#p6787x6823', title: 'gegen SK Kirchweyhe 2', text: '1' }]
+    - [{ url: '?staffel=1575&r=9#p6787x6792', title: 'gegen Stader SV', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1575&r=5#p6787x6795', title: 'gegen SC Turm Lüneburg', text: '8' }]
+    - [{ url: '?staffel=1575&r=3#p6787x6794', title: 'gegen SF Leherheide', text: '5' }]
+    - [{ url: '?staffel=1575&r=2#p6787x6871', title: 'gegen Post SV Uelzen 2', text: '5' }]
+    - [{ url: '?staffel=1575&r=4#p6787x6790', title: 'gegen SG FinWest', text: '4' }]
+    - [{ url: '?staffel=1575&r=1#p6787x6751', title: 'gegen NiederelbeCuxhaven', text: 4½ }]
+    - [{ url: '?staffel=1575&r=7#p6787x6808', title: 'gegen SK Rotenburg', text: 5½ }]
+    - 11
+    - '36'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=6795', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1575&r=7#p6795x6823', title: 'gegen SK Kirchweyhe 2', text: '1' }]
+    - [{ url: '?staffel=1575&r=4#p6795x6792', title: 'gegen Stader SV', text: 2½ }]
+    - [{ url: '?staffel=1575&r=5#p6795x6787', title: 'gegen SK Verden', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1575&r=6#p6795x6794', title: 'gegen SF Leherheide', text: 4½ }]
+    - [{ url: '?staffel=1575&r=9#p6795x6871', title: 'gegen Post SV Uelzen 2', text: '5' }]
+    - [{ url: '?staffel=1575&r=1#p6795x6790', title: 'gegen SG FinWest', text: '5' }]
+    - [{ url: '?staffel=1575&r=8#p6795x6751', title: 'gegen NiederelbeCuxhaven', text: '6' }]
+    - [{ url: '?staffel=1575&r=2#p6795x6808', title: 'gegen SK Rotenburg', text: 6½ }]
+    - 10
+    - 30½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Leherheide', url: '?mannschaft=6794', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1575&r=2#p6794x6823', title: 'gegen SK Kirchweyhe 2', text: '2' }]
+    - [{ url: '?staffel=1575&r=5#p6794x6792', title: 'gegen Stader SV', text: '8' }]
+    - [{ url: '?staffel=1575&r=3#p6794x6787', title: 'gegen SK Verden', text: '3' }]
+    - [{ url: '?staffel=1575&r=6#p6794x6795', title: 'gegen SC Turm Lüneburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1575&r=7#p6794x6871', title: 'gegen Post SV Uelzen 2', text: '8' }]
+    - [{ url: '?staffel=1575&r=9#p6794x6790', title: 'gegen SG FinWest', text: '4' }]
+    - [{ url: '?staffel=1575&r=4#p6794x6751', title: 'gegen NiederelbeCuxhaven', text: 4½ }]
+    - [{ url: '?staffel=1575&r=1#p6794x6808', title: 'gegen SK Rotenburg', text: '6' }]
+    - 9
+    - '39'
+    - ''
+-
+    - '6.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=6871', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1575&r=6#p6871x6823', title: 'gegen SK Kirchweyhe 2', text: '1' }]
+    - [{ url: '?staffel=1575&r=3#p6871x6792', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=1575&r=2#p6871x6787', title: 'gegen SK Verden', text: '3' }]
+    - [{ url: '?staffel=1575&r=9#p6871x6795', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=1575&r=7#p6871x6794', title: 'gegen SF Leherheide', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1575&r=8#p6871x6790', title: 'gegen SG FinWest', text: 4½ }]
+    - [{ url: '?staffel=1575&r=5#p6871x6751', title: 'gegen NiederelbeCuxhaven', text: '5' }]
+    - [{ url: '?staffel=1575&r=4#p6871x6808', title: 'gegen SK Rotenburg', text: 6½ }]
+    - 6
+    - '25'
+    - ''
+-
+    - '7.'
+    - { text: 'SG FinWest', url: '?mannschaft=6790', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1575&r=5#p6790x6823', title: 'gegen SK Kirchweyhe 2', text: '4' }]
+    - [{ url: '?staffel=1575&r=6#p6790x6792', title: 'gegen Stader SV', text: 3½ }]
+    - [{ url: '?staffel=1575&r=4#p6790x6787', title: 'gegen SK Verden', text: '4' }]
+    - [{ url: '?staffel=1575&r=1#p6790x6795', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=1575&r=9#p6790x6794', title: 'gegen SF Leherheide', text: '4' }]
+    - [{ url: '?staffel=1575&r=8#p6790x6871', title: 'gegen Post SV Uelzen 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1575&r=7#p6790x6751', title: 'gegen NiederelbeCuxhaven', text: 3½ }]
+    - [{ url: '?staffel=1575&r=3#p6790x6808', title: 'gegen SK Rotenburg', text: 5½ }]
+    - 5
+    - '31'
+    - ''
+-
+    - '8.'
+    - { text: NiederelbeCuxhaven, url: '?mannschaft=6751', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1575&r=3#p6751x6823', title: 'gegen SK Kirchweyhe 2', text: '0' }]
+    - [{ url: '?staffel=1575&r=2#p6751x6792', title: 'gegen Stader SV', text: 3½ }]
+    - [{ url: '?staffel=1575&r=1#p6751x6787', title: 'gegen SK Verden', text: 3½ }]
+    - [{ url: '?staffel=1575&r=8#p6751x6795', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - [{ url: '?staffel=1575&r=4#p6751x6794', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=1575&r=5#p6751x6871', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1575&r=7#p6751x6790', title: 'gegen SG FinWest', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1575&r=6#p6751x6808', title: 'gegen SK Rotenburg', text: 5½ }]
+    - 4
+    - 25½
+    - ''
+-
+    - '9.'
+    - { text: 'SK Rotenburg', url: '?mannschaft=6808', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1575&r=9#p6808x6823', title: 'gegen SK Kirchweyhe 2', text: 3½ }]
+    - [{ url: '?staffel=1575&r=8#p6808x6792', title: 'gegen Stader SV', text: 1½ }]
+    - [{ url: '?staffel=1575&r=7#p6808x6787', title: 'gegen SK Verden', text: 2½ }]
+    - [{ url: '?staffel=1575&r=2#p6808x6795', title: 'gegen SC Turm Lüneburg', text: 1½ }]
+    - [{ url: '?staffel=1575&r=1#p6808x6794', title: 'gegen SF Leherheide', text: '2' }]
+    - [{ url: '?staffel=1575&r=4#p6808x6871', title: 'gegen Post SV Uelzen 2', text: 1½ }]
+    - [{ url: '?staffel=1575&r=3#p6808x6790', title: 'gegen SG FinWest', text: 2½ }]
+    - [{ url: '?staffel=1575&r=6#p6808x6751', title: 'gegen NiederelbeCuxhaven', text: 2½ }]
+    - xxx
+    - 0
+    - 17½
+    - ''

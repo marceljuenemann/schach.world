@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'KSV Rochade Bra', url: '?mannschaft=6880', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1643&r=7#p6880x6847', title: 'gegen Peiner SV 3', text: '4' }]
+    - [{ url: '?staffel=1643&r=2#p6880x6851', title: 'gegen SC BS Gliesmarode 5', text: '4' }]
+    - [{ url: '?staffel=1643&r=3#p6880x6853', title: 'gegen SC BS Gliesmarode 7', text: '4' }]
+    - [{ url: '?staffel=1643&r=1#p6880x6857', title: 'gegen Rochade Göttingen', text: 2½ }]
+    - [{ url: '?staffel=1643&r=5#p6880x6849', title: 'gegen SV Apelnstedt 2', text: '4' }]
+    - [{ url: '?staffel=1643&r=6#p6880x6855', title: 'gegen SG Elm/Lappwald 3', text: '4' }]
+    - 12
+    - 22½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Peiner SV 3', url: '?mannschaft=6847', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1643&r=7#p6847x6880', title: 'gegen KSV Rochade Bra', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1643&r=5#p6847x6851', title: 'gegen SC BS Gliesmarode 5', text: 2½ }]
+    - [{ url: '?staffel=1643&r=6#p6847x6853', title: 'gegen SC BS Gliesmarode 7', text: '4' }]
+    - [{ url: '?staffel=1643&r=4#p6847x6857', title: 'gegen Rochade Göttingen', text: '2' }]
+    - [{ url: '?staffel=1643&r=1#p6847x6849', title: 'gegen SV Apelnstedt 2', text: '4' }]
+    - [{ url: '?staffel=1643&r=2#p6847x6855', title: 'gegen SG Elm/Lappwald 3', text: '4' }]
+    - 9
+    - 16½
+    - ''
+-
+    - '3.'
+    - { text: 'SC BS Gliesmarode 5', url: '?mannschaft=6851', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1643&r=2#p6851x6880', title: 'gegen KSV Rochade Bra', text: '0' }]
+    - [{ url: '?staffel=1643&r=5#p6851x6847', title: 'gegen Peiner SV 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1643&r=1#p6851x6853', title: 'gegen SC BS Gliesmarode 7', text: '4' }]
+    - [{ url: '?staffel=1643&r=6#p6851x6857', title: 'gegen Rochade Göttingen', text: '4' }]
+    - [{ url: '?staffel=1643&r=3#p6851x6849', title: 'gegen SV Apelnstedt 2', text: 1½ }]
+    - [{ url: '?staffel=1643&r=4#p6851x6855', title: 'gegen SG Elm/Lappwald 3', text: '4' }]
+    - 6
+    - '15'
+    - ''
+-
+    - '4.'
+    - { text: 'SC BS Gliesmarode 7', url: '?mannschaft=6853', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1643&r=3#p6853x6880', title: 'gegen KSV Rochade Bra', text: '0' }]
+    - [{ url: '?staffel=1643&r=6#p6853x6847', title: 'gegen Peiner SV 3', text: '0' }]
+    - [{ url: '?staffel=1643&r=1#p6853x6851', title: 'gegen SC BS Gliesmarode 5', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1643&r=7#p6853x6857', title: 'gegen Rochade Göttingen', text: '4' }]
+    - [{ url: '?staffel=1643&r=4#p6853x6849', title: 'gegen SV Apelnstedt 2', text: '4' }]
+    - [{ url: '?staffel=1643&r=5#p6853x6855', title: 'gegen SG Elm/Lappwald 3', text: '4' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '5.'
+    - { text: 'Rochade Göttingen', url: '?mannschaft=6857', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1643&r=1#p6857x6880', title: 'gegen KSV Rochade Bra', text: 1½ }]
+    - [{ url: '?staffel=1643&r=4#p6857x6847', title: 'gegen Peiner SV 3', text: '2' }]
+    - [{ url: '?staffel=1643&r=6#p6857x6851', title: 'gegen SC BS Gliesmarode 5', text: '0' }]
+    - [{ url: '?staffel=1643&r=7#p6857x6853', title: 'gegen SC BS Gliesmarode 7', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1643&r=2#p6857x6849', title: 'gegen SV Apelnstedt 2', text: 2½ }]
+    - [{ url: '?staffel=1643&r=3#p6857x6855', title: 'gegen SG Elm/Lappwald 3', text: '4' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Apelnstedt 2', url: '?mannschaft=6849', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1643&r=5#p6849x6880', title: 'gegen KSV Rochade Bra', text: '0' }]
+    - [{ url: '?staffel=1643&r=1#p6849x6847', title: 'gegen Peiner SV 3', text: '0' }]
+    - [{ url: '?staffel=1643&r=3#p6849x6851', title: 'gegen SC BS Gliesmarode 5', text: 2½ }]
+    - [{ url: '?staffel=1643&r=4#p6849x6853', title: 'gegen SC BS Gliesmarode 7', text: '0' }]
+    - [{ url: '?staffel=1643&r=2#p6849x6857', title: 'gegen Rochade Göttingen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1643&r=7#p6849x6855', title: 'gegen SG Elm/Lappwald 3', text: '4' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Elm/Lappwald 3', url: '?mannschaft=6855', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1643&r=6#p6855x6880', title: 'gegen KSV Rochade Bra', text: '0' }]
+    - [{ url: '?staffel=1643&r=2#p6855x6847', title: 'gegen Peiner SV 3', text: '0' }]
+    - [{ url: '?staffel=1643&r=4#p6855x6851', title: 'gegen SC BS Gliesmarode 5', text: '0' }]
+    - [{ url: '?staffel=1643&r=5#p6855x6853', title: 'gegen SC BS Gliesmarode 7', text: '0' }]
+    - [{ url: '?staffel=1643&r=3#p6855x6857', title: 'gegen Rochade Göttingen', text: '0' }]
+    - [{ url: '?staffel=1643&r=7#p6855x6849', title: 'gegen SV Apelnstedt 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

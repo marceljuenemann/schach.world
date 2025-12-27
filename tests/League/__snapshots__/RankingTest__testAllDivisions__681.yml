@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=6333', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1431&r=4#p6333x6329', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=1431&r=2#p6333x6354', title: 'gegen SZ Bemerode', text: '4' }]
+    - [{ url: '?staffel=1431&r=3#p6333x6193', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=1431&r=1#p6333x6325', title: 'gegen SG Rinteln/Stadth.', text: '4' }]
+    - [{ url: '?staffel=1431&r=5#p6333x6331', title: 'gegen SV Berenbostel', text: '4' }]
+    - 10
+    - '19'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=6329', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1431&r=4#p6329x6333', title: 'gegen SK Lehrte', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1431&r=5#p6329x6354', title: 'gegen SZ Bemerode', text: 2½ }]
+    - [{ url: '?staffel=1431&r=2#p6329x6193', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=1431&r=3#p6329x6325', title: 'gegen SG Rinteln/Stadth.', text: '2' }]
+    - [{ url: '?staffel=1431&r=1#p6329x6331', title: 'gegen SV Berenbostel', text: '3' }]
+    - 7
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=6354', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1431&r=2#p6354x6333', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1431&r=5#p6354x6329', title: 'gegen SD Isernhagen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1431&r=1#p6354x6193', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=1431&r=4#p6354x6325', title: 'gegen SG Rinteln/Stadth.', text: 3½ }]
+    - [{ url: '?staffel=1431&r=3#p6354x6331', title: 'gegen SV Berenbostel', text: '3' }]
+    - 6
+    - 10½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Laatzen', url: '?mannschaft=6193', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1431&r=3#p6193x6333', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1431&r=2#p6193x6329', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1431&r=1#p6193x6354', title: 'gegen SZ Bemerode', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1431&r=5#p6193x6325', title: 'gegen SG Rinteln/Stadth.', text: '3' }]
+    - [{ url: '?staffel=1431&r=4#p6193x6331', title: 'gegen SV Berenbostel', text: '2' }]
+    - 3
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Rinteln/Stadth.', url: '?mannschaft=6325', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1431&r=1#p6325x6333', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1431&r=3#p6325x6329', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1431&r=4#p6325x6354', title: 'gegen SZ Bemerode', text: ½ }]
+    - [{ url: '?staffel=1431&r=5#p6325x6193', title: 'gegen SV Laatzen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1431&r=2#p6325x6331', title: 'gegen SV Berenbostel', text: '4' }]
+    - 3
+    - 7½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Berenbostel', url: '?mannschaft=6331', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1431&r=5#p6331x6333', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1431&r=1#p6331x6329', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1431&r=3#p6331x6354', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1431&r=4#p6331x6193', title: 'gegen SV Laatzen', text: '2' }]
+    - [{ url: '?staffel=1431&r=2#p6331x6325', title: 'gegen SG Rinteln/Stadth.', text: '0' }]
+    - xxx
+    - 1
+    - '4'
+    - ''

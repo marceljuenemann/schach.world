@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Saisonheft
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann

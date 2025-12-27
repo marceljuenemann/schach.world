@@ -1,4 +1,4 @@
-<?
+<?php
 /* Bibliothek für kurze URLs
  *
  * Funktionen, um kürzere URLs (vor allem in eMails) zu ermöglichen.

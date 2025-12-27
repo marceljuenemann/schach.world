@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'VfR Heisfelde', url: '?mannschaft=4684', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=985&r=3#p4684x4695', title: 'gegen SK Nordhorn-Blanke 2', text: 1½ }, { url: '?staffel=985&r=4#p4684x4695', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=985&r=5#p4684x4696', title: 'gegen SK Nordhorn-Blanke 3', text: '3' }, { url: '?staffel=985&r=6#p4684x4696', title: 'gegen SK Nordhorn-Blanke 3', text: '2' }]
+    - [{ url: '?staffel=985&r=1#p4684x4690', title: 'gegen SV Osnabrück', text: '4' }, { url: '?staffel=985&r=2#p4684x4690', title: 'gegen SV Osnabrück', text: '4' }]
+    - 9
+    - 17½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SK Nordhorn-Blanke 2', url: '?mannschaft=4695', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=985&r=3#p4695x4684', title: 'gegen VfR Heisfelde', text: 2½ }, { url: '?staffel=985&r=4#p4695x4684', title: 'gegen VfR Heisfelde', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=985&r=1#p4695x4696', title: 'gegen SK Nordhorn-Blanke 3', text: '3' }, { url: '?staffel=985&r=2#p4695x4696', title: 'gegen SK Nordhorn-Blanke 3', text: '2' }]
+    - [{ url: '?staffel=985&r=5#p4695x4690', title: 'gegen SV Osnabrück', text: '4' }, { url: '?staffel=985&r=6#p4695x4690', title: 'gegen SV Osnabrück', text: '4' }]
+    - 9
+    - 16½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Nordhorn-Blanke 3', url: '?mannschaft=4696', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=985&r=5#p4696x4684', title: 'gegen VfR Heisfelde', text: '1' }, { url: '?staffel=985&r=6#p4696x4684', title: 'gegen VfR Heisfelde', text: '2' }]
+    - [{ url: '?staffel=985&r=1#p4696x4695', title: 'gegen SK Nordhorn-Blanke 2', text: '1' }, { url: '?staffel=985&r=2#p4696x4695', title: 'gegen SK Nordhorn-Blanke 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=985&r=3#p4696x4690', title: 'gegen SV Osnabrück', text: '4' }, { url: '?staffel=985&r=4#p4696x4690', title: 'gegen SV Osnabrück', text: '4' }]
+    - 6
+    - '14'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück', url: '?mannschaft=4690', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=985&r=1#p4690x4684', title: 'gegen VfR Heisfelde', text: '0' }, { url: '?staffel=985&r=2#p4690x4684', title: 'gegen VfR Heisfelde', text: '0' }]
+    - [{ url: '?staffel=985&r=5#p4690x4695', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }, { url: '?staffel=985&r=6#p4690x4695', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=985&r=3#p4690x4696', title: 'gegen SK Nordhorn-Blanke 3', text: '0' }, { url: '?staffel=985&r=4#p4690x4696', title: 'gegen SK Nordhorn-Blanke 3', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

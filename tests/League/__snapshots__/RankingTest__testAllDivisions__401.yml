@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TuS Aschendorf 2', url: '?mannschaft=3523', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=854&r=1#p3523x3521', title: 'gegen SF Spelle 4', text: '4' }, { url: '?staffel=854&r=4#p3523x3521', title: 'gegen SF Spelle 4', text: '2' }]
+    - [{ url: '?staffel=854&r=2#p3523x3592', title: 'gegen SK Nordhorn-Bl. 9', text: '4' }, { url: '?staffel=854&r=5#p3523x3592', title: 'gegen SK Nordhorn-Bl. 9', text: '1' }]
+    - [{ url: '?staffel=854&r=3#p3523x3522', title: 'gegen Veldhausen/Uel. 4', text: '0' }]
+    - 5
+    - '11'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Spelle 4', url: '?mannschaft=3521', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=854&r=1#p3521x3523', title: 'gegen TuS Aschendorf 2', text: '0' }, { url: '?staffel=854&r=4#p3521x3523', title: 'gegen TuS Aschendorf 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=854&r=3#p3521x3592', title: 'gegen SK Nordhorn-Bl. 9', text: '3' }, { url: '?staffel=854&r=6#p3521x3592', title: 'gegen SK Nordhorn-Bl. 9', text: '4' }]
+    - [{ url: '?staffel=854&r=2#p3521x3522', title: 'gegen Veldhausen/Uel. 4', text: '0' }, { url: '?staffel=854&r=5#p3521x3522', title: 'gegen Veldhausen/Uel. 4', text: '0' }]
+    - 5
+    - '9'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SK Nordhorn-Bl. 9', url: '?mannschaft=3592', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=854&r=2#p3592x3523', title: 'gegen TuS Aschendorf 2', text: '0' }, { url: '?staffel=854&r=5#p3592x3523', title: 'gegen TuS Aschendorf 2', text: '3' }]
+    - [{ url: '?staffel=854&r=3#p3592x3521', title: 'gegen SF Spelle 4', text: '1' }, { url: '?staffel=854&r=6#p3592x3521', title: 'gegen SF Spelle 4', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=854&r=1#p3592x3522', title: 'gegen Veldhausen/Uel. 4', text: '0' }, { url: '?staffel=854&r=4#p3592x3522', title: 'gegen Veldhausen/Uel. 4', text: '0' }]
+    - 2
+    - '4'
+    - ''
+-
+    - '4.'
+    - { text: 'Veldhausen/Uel. 4', url: '?mannschaft=3522', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=854&r=3#p3522x3523', title: 'gegen TuS Aschendorf 2', text: '0' }]
+    - [{ url: '?staffel=854&r=2#p3522x3521', title: 'gegen SF Spelle 4', text: '0' }, { url: '?staffel=854&r=5#p3522x3521', title: 'gegen SF Spelle 4', text: '0' }]
+    - [{ url: '?staffel=854&r=1#p3522x3592', title: 'gegen SK Nordhorn-Bl. 9', text: '0' }, { url: '?staffel=854&r=4#p3522x3592', title: 'gegen SK Nordhorn-Bl. 9', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=3103', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=727&r=2#p3103x3152', title: 'gegen SK Rinteln 3', text: '4' }, { url: '?staffel=727&r=6#p3103x3152', title: 'gegen SK Rinteln 3', text: 2½ }]
+    - [{ url: '?staffel=727&r=3#p3103x3123', title: 'gegen Garbsen/Marienw 3', text: '3' }, { url: '?staffel=727&r=4#p3103x3123', title: 'gegen Garbsen/Marienw 3', text: '2' }]
+    - 7
+    - 11½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Rinteln 3', url: '?mannschaft=3152', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=727&r=2#p3152x3103', title: 'gegen SV Bückeburg 2', text: '0' }, { url: '?staffel=727&r=6#p3152x3103', title: 'gegen SV Bückeburg 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=727&r=1#p3152x3123', title: 'gegen Garbsen/Marienw 3', text: '3' }, { url: '?staffel=727&r=5#p3152x3123', title: 'gegen Garbsen/Marienw 3', text: '2' }]
+    - 3
+    - 6½
+    - ''
+-
+    - '3.'
+    - { text: 'Garbsen/Marienw 3', url: '?mannschaft=3123', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=727&r=3#p3123x3103', title: 'gegen SV Bückeburg 2', text: '1' }, { url: '?staffel=727&r=4#p3123x3103', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - [{ url: '?staffel=727&r=1#p3123x3152', title: 'gegen SK Rinteln 3', text: '1' }, { url: '?staffel=727&r=5#p3123x3152', title: 'gegen SK Rinteln 3', text: '2' }]
+    - xxx
+    - 2
+    - '6'
+    - ''

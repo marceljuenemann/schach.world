@@ -1,4 +1,4 @@
-<?
+<?php
 /* Cache Bibliothek
  * 
  * In dieser Datei wird die Klasse SED_Cache zur Verfügung

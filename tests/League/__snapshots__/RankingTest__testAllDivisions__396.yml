@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'GW Niederwiesa', url: '?mannschaft=3654', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=847&r=6#p3654x3656', title: 'gegen SV Medizin Erfurt', text: '3' }]
+    - [{ url: '?staffel=847&r=4#p3654x3660', title: 'gegen Leipzig-Lindenau', text: '4' }]
+    - [{ url: '?staffel=847&r=5#p3654x3661', title: 'gegen SC Zeulenroda', text: '3' }]
+    - [{ url: '?staffel=847&r=2#p3654x3658', title: 'gegen Rotation Pankow', text: '4' }]
+    - [{ url: '?staffel=847&r=3#p3654x3655', title: 'gegen SG Löberitz', text: '5' }]
+    - [{ url: '?staffel=847&r=1#p3654x3657', title: 'gegen SV Empor Berlin', text: 2½ }]
+    - [{ url: '?staffel=847&r=7#p3654x3659', title: 'gegen SF Friedberg 2', text: '4' }]
+    - 10
+    - 25½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Medizin Erfurt', url: '?mannschaft=3656', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=847&r=6#p3656x3654', title: 'gegen GW Niederwiesa', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=847&r=2#p3656x3660', title: 'gegen Leipzig-Lindenau', text: 2½ }]
+    - [{ url: '?staffel=847&r=7#p3656x3661', title: 'gegen SC Zeulenroda', text: 5½ }]
+    - [{ url: '?staffel=847&r=4#p3656x3658', title: 'gegen Rotation Pankow', text: 3½ }]
+    - [{ url: '?staffel=847&r=1#p3656x3655', title: 'gegen SG Löberitz', text: 2½ }]
+    - [{ url: '?staffel=847&r=3#p3656x3657', title: 'gegen SV Empor Berlin', text: 5½ }]
+    - [{ url: '?staffel=847&r=5#p3656x3659', title: 'gegen SF Friedberg 2', text: 4½ }]
+    - 9
+    - '27'
+    - ''
+-
+    - '3.'
+    - { text: Leipzig-Lindenau, url: '?mannschaft=3660', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=847&r=4#p3660x3654', title: 'gegen GW Niederwiesa', text: '2' }]
+    - [{ url: '?staffel=847&r=2#p3660x3656', title: 'gegen SV Medizin Erfurt', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=847&r=3#p3660x3661', title: 'gegen SC Zeulenroda', text: 2½ }]
+    - [{ url: '?staffel=847&r=6#p3660x3658', title: 'gegen Rotation Pankow', text: 3½ }]
+    - [{ url: '?staffel=847&r=5#p3660x3655', title: 'gegen SG Löberitz', text: '5' }]
+    - [{ url: '?staffel=847&r=7#p3660x3657', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=847&r=1#p3660x3659', title: 'gegen SF Friedberg 2', text: '6' }]
+    - 9
+    - 25½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Zeulenroda', url: '?mannschaft=3661', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=847&r=5#p3661x3654', title: 'gegen GW Niederwiesa', text: '3' }]
+    - [{ url: '?staffel=847&r=7#p3661x3656', title: 'gegen SV Medizin Erfurt', text: ½ }]
+    - [{ url: '?staffel=847&r=3#p3661x3660', title: 'gegen Leipzig-Lindenau', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=847&r=1#p3661x3658', title: 'gegen Rotation Pankow', text: 2½ }]
+    - [{ url: '?staffel=847&r=4#p3661x3655', title: 'gegen SG Löberitz', text: 4½ }]
+    - [{ url: '?staffel=847&r=2#p3661x3657', title: 'gegen SV Empor Berlin', text: '4' }]
+    - [{ url: '?staffel=847&r=6#p3661x3659', title: 'gegen SF Friedberg 2', text: 3½ }]
+    - 9
+    - 21½
+    - ''
+-
+    - '5.'
+    - { text: 'Rotation Pankow', url: '?mannschaft=3658', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=847&r=2#p3658x3654', title: 'gegen GW Niederwiesa', text: '2' }]
+    - [{ url: '?staffel=847&r=4#p3658x3656', title: 'gegen SV Medizin Erfurt', text: 2½ }]
+    - [{ url: '?staffel=847&r=6#p3658x3660', title: 'gegen Leipzig-Lindenau', text: 2½ }]
+    - [{ url: '?staffel=847&r=1#p3658x3661', title: 'gegen SC Zeulenroda', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=847&r=7#p3658x3655', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=847&r=5#p3658x3657', title: 'gegen SV Empor Berlin', text: '5' }]
+    - [{ url: '?staffel=847&r=3#p3658x3659', title: 'gegen SF Friedberg 2', text: '5' }]
+    - 7
+    - 23½
+    - ''
+-
+    - '6.'
+    - { text: 'SG Löberitz', url: '?mannschaft=3655', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=847&r=3#p3655x3654', title: 'gegen GW Niederwiesa', text: '1' }]
+    - [{ url: '?staffel=847&r=1#p3655x3656', title: 'gegen SV Medizin Erfurt', text: 3½ }]
+    - [{ url: '?staffel=847&r=5#p3655x3660', title: 'gegen Leipzig-Lindenau', text: '1' }]
+    - [{ url: '?staffel=847&r=4#p3655x3661', title: 'gegen SC Zeulenroda', text: 1½ }]
+    - [{ url: '?staffel=847&r=7#p3655x3658', title: 'gegen Rotation Pankow', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=847&r=6#p3655x3657', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=847&r=2#p3655x3659', title: 'gegen SF Friedberg 2', text: '6' }]
+    - 6
+    - '19'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=3657', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=847&r=1#p3657x3654', title: 'gegen GW Niederwiesa', text: 3½ }]
+    - [{ url: '?staffel=847&r=3#p3657x3656', title: 'gegen SV Medizin Erfurt', text: ½ }]
+    - [{ url: '?staffel=847&r=7#p3657x3660', title: 'gegen Leipzig-Lindenau', text: '3' }]
+    - [{ url: '?staffel=847&r=2#p3657x3661', title: 'gegen SC Zeulenroda', text: '2' }]
+    - [{ url: '?staffel=847&r=5#p3657x3658', title: 'gegen Rotation Pankow', text: '1' }]
+    - [{ url: '?staffel=847&r=6#p3657x3655', title: 'gegen SG Löberitz', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=847&r=4#p3657x3659', title: 'gegen SF Friedberg 2', text: '2' }]
+    - 4
+    - '15'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SF Friedberg 2', url: '?mannschaft=3659', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=847&r=7#p3659x3654', title: 'gegen GW Niederwiesa', text: '2' }]
+    - [{ url: '?staffel=847&r=5#p3659x3656', title: 'gegen SV Medizin Erfurt', text: 1½ }]
+    - [{ url: '?staffel=847&r=1#p3659x3660', title: 'gegen Leipzig-Lindenau', text: '0' }]
+    - [{ url: '?staffel=847&r=6#p3659x3661', title: 'gegen SC Zeulenroda', text: 2½ }]
+    - [{ url: '?staffel=847&r=3#p3659x3658', title: 'gegen Rotation Pankow', text: '1' }]
+    - [{ url: '?staffel=847&r=2#p3659x3655', title: 'gegen SG Löberitz', text: '0' }]
+    - [{ url: '?staffel=847&r=4#p3659x3657', title: 'gegen SV Empor Berlin', text: '4' }]
+    - xxx
+    - 2
+    - '11'
+    - absteiger

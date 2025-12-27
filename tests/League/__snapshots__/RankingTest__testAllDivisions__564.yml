@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=5217', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1050&r=5#p5217x5209', title: 'gegen Bovenden-Parensen', text: '3' }]
+    - [{ url: '?staffel=1050&r=7#p5217x5194', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=1050&r=10#p5217x5190', title: 'gegen Hildesheimer SV', text: '3' }]
+    - [{ url: '?staffel=1050&r=4#p5217x5213', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=1050&r=3#p5217x5214', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=1050&r=1#p5217x5192', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1050&r=8#p5217x5204', title: 'gegen SK Ricklingen', text: '4' }]
+    - [{ url: '?staffel=1050&r=6#p5217x5206', title: 'gegen Rochade Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=1050&r=9#p5217x5191', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - 17
+    - '30'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: Bovenden-Parensen, url: '?mannschaft=5209', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1050&r=5#p5209x5217', title: 'gegen SZ Bemerode', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1050&r=4#p5209x5194', title: 'gegen SK Rinteln', text: '2' }]
+    - [{ url: '?staffel=1050&r=2#p5209x5190', title: 'gegen Hildesheimer SV', text: '3' }]
+    - [{ url: '?staffel=1050&r=9#p5209x5213', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=1050&r=10#p5209x5214', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=1050&r=6#p5209x5192', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1050&r=3#p5209x5204', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=1050&r=7#p5209x5206', title: 'gegen Rochade Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1050&r=1#p5209x5191', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - 14
+    - 23½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Rinteln', url: '?mannschaft=5194', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1050&r=7#p5194x5217', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1050&r=4#p5194x5209', title: 'gegen Bovenden-Parensen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1050&r=6#p5194x5190', title: 'gegen Hildesheimer SV', text: 3½ }]
+    - [{ url: '?staffel=1050&r=1#p5194x5213', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=1050&r=2#p5194x5214', title: 'gegen SK Lehrte 4', text: '4' }]
+    - [{ url: '?staffel=1050&r=8#p5194x5192', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1050&r=9#p5194x5204', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=1050&r=3#p5194x5206', title: 'gegen Rochade Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1050&r=5#p5194x5191', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - 13
+    - 24½
+    - ''
+-
+    - '4.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=5190', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1050&r=10#p5190x5217', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1050&r=2#p5190x5209', title: 'gegen Bovenden-Parensen', text: '1' }]
+    - [{ url: '?staffel=1050&r=6#p5190x5194', title: 'gegen SK Rinteln', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1050&r=7#p5190x5213', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=1050&r=8#p5190x5214', title: 'gegen SK Lehrte 4', text: 3½ }]
+    - [{ url: '?staffel=1050&r=9#p5190x5192', title: 'gegen SD Isernhagen', text: 1½ }]
+    - [{ url: '?staffel=1050&r=5#p5190x5204', title: 'gegen SK Ricklingen', text: '4' }]
+    - [{ url: '?staffel=1050&r=1#p5190x5206', title: 'gegen Rochade Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1050&r=3#p5190x5191', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - 10
+    - '21'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=5213', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1050&r=4#p5213x5217', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1050&r=9#p5213x5209', title: 'gegen Bovenden-Parensen', text: '1' }]
+    - [{ url: '?staffel=1050&r=1#p5213x5194', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=1050&r=7#p5213x5190', title: 'gegen Hildesheimer SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1050&r=5#p5213x5214', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=1050&r=3#p5213x5192', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=1050&r=2#p5213x5204', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=1050&r=10#p5213x5206', title: 'gegen Rochade Göttingen 2', text: 2½ }]
+    - [{ url: '?staffel=1050&r=8#p5213x5191', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - 8
+    - '18'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=5214', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1050&r=3#p5214x5217', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1050&r=10#p5214x5209', title: 'gegen Bovenden-Parensen', text: '1' }]
+    - [{ url: '?staffel=1050&r=2#p5214x5194', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=1050&r=8#p5214x5190', title: 'gegen Hildesheimer SV', text: ½ }]
+    - [{ url: '?staffel=1050&r=5#p5214x5213', title: 'gegen SK Lehrte 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1050&r=4#p5214x5192', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=1050&r=1#p5214x5204', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=1050&r=9#p5214x5206', title: 'gegen Rochade Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1050&r=7#p5214x5191', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - 7
+    - '15'
+    - ''
+-
+    - '7.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=5192', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1050&r=1#p5192x5217', title: 'gegen SZ Bemerode', text: '2' }]
+    - [{ url: '?staffel=1050&r=6#p5192x5209', title: 'gegen Bovenden-Parensen', text: '2' }]
+    - [{ url: '?staffel=1050&r=8#p5192x5194', title: 'gegen SK Rinteln', text: '2' }]
+    - [{ url: '?staffel=1050&r=9#p5192x5190', title: 'gegen Hildesheimer SV', text: 2½ }]
+    - [{ url: '?staffel=1050&r=3#p5192x5213', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1050&r=4#p5192x5214', title: 'gegen SK Lehrte 4', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1050&r=7#p5192x5204', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=1050&r=5#p5192x5206', title: 'gegen Rochade Göttingen 2', text: '0' }]
+    - [{ url: '?staffel=1050&r=10#p5192x5191', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - 7
+    - 14½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=5204', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1050&r=8#p5204x5217', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1050&r=3#p5204x5209', title: 'gegen Bovenden-Parensen', text: '1' }]
+    - [{ url: '?staffel=1050&r=9#p5204x5194', title: 'gegen SK Rinteln', text: '2' }]
+    - [{ url: '?staffel=1050&r=5#p5204x5190', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=1050&r=2#p5204x5213', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=1050&r=1#p5204x5214', title: 'gegen SK Lehrte 4', text: '1' }]
+    - [{ url: '?staffel=1050&r=7#p5204x5192', title: 'gegen SD Isernhagen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1050&r=4#p5204x5206', title: 'gegen Rochade Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1050&r=6#p5204x5191', title: 'gegen Hildesheimer SV 2', text: '0' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '9.'
+    - { text: 'Rochade Göttingen 2', url: '?mannschaft=5206', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1050&r=6#p5206x5217', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1050&r=7#p5206x5209', title: 'gegen Bovenden-Parensen', text: '1' }]
+    - [{ url: '?staffel=1050&r=3#p5206x5194', title: 'gegen SK Rinteln', text: '1' }]
+    - [{ url: '?staffel=1050&r=1#p5206x5190', title: 'gegen Hildesheimer SV', text: '1' }]
+    - [{ url: '?staffel=1050&r=10#p5206x5213', title: 'gegen SK Lehrte 3', text: 1½ }]
+    - [{ url: '?staffel=1050&r=9#p5206x5214', title: 'gegen SK Lehrte 4', text: '2' }]
+    - [{ url: '?staffel=1050&r=5#p5206x5192', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=1050&r=4#p5206x5204', title: 'gegen SK Ricklingen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1050&r=2#p5206x5191', title: 'gegen Hildesheimer SV 2', text: 2½ }]
+    - 5
+    - '14'
+    - ''
+-
+    - '10.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=5191', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1050&r=9#p5191x5217', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1050&r=1#p5191x5209', title: 'gegen Bovenden-Parensen', text: ½ }]
+    - [{ url: '?staffel=1050&r=5#p5191x5194', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=1050&r=3#p5191x5190', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=1050&r=8#p5191x5213', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1050&r=7#p5191x5214', title: 'gegen SK Lehrte 4', text: ½ }]
+    - [{ url: '?staffel=1050&r=10#p5191x5192', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1050&r=6#p5191x5204', title: 'gegen SK Ricklingen', text: '4' }]
+    - [{ url: '?staffel=1050&r=2#p5191x5206', title: 'gegen Rochade Göttingen 2', text: 1½ }]
+    - xxx
+    - 2
+    - 6½
+    - ''

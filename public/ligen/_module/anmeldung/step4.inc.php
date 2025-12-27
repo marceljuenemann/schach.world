@@ -1,4 +1,4 @@
-<?
+<?php
 /* Mannschaftsmeldung: 4. Spieler auswählen
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -24,7 +24,7 @@
     Spieler, die hier nicht aufgelistet sind, k&ouml;nnen Sie im Formular weiter unten auf dieser Seite
     eintragen.
     <br /><br />
-    <?
+    <?php
 
     // Ausgabe der DWZ-Liste
     echo "<table cellspacing='0' cellpadding='3'>";
@@ -57,7 +57,7 @@
     Reihenfolge der Mannschaftsaufstellung entsprechen.<br /><br />
     <table cellspacing='0' cellpadding='3'>
     <tr><th>Name</th><th>Vorname</th><th>Gebjahr</th></tr>
-    <?
+    <?php
 
     // Zeilen ausgeben
     $vs_count = count ( $players ) < 3 ? max ( array ( "10", 3 * $prefs ['brettzahl'] ) ) : 8;
@@ -116,7 +116,7 @@
                 // Ist die aktuelle Eingabe lang genug f&uuml;r eine Anfrage?
                 if ( nachname.length > 1 )
                 {
-                    <?
+                    <?php
                         $ajax = new SED_AjaxRequest ( "getSpieler" );
                         $ajax->setOption ( "name", "nachname" );
                         $ajax->setOption ( "verband", "'$prefs[anmVerband]'" );
@@ -144,7 +144,7 @@
             id = lastVSchange;
             
             // Felder setzen
-            <?
+            <?php
                 foreach ( array ( "nachname", "vorname", "geburt", "zps" ) as $feld ){
                     echo "document.getElementsByName ( 'vs_$feld'+'_'+id ) [0].value = json.$feld;";
                 }
@@ -164,5 +164,5 @@
         }
 
     --></script>
-    <?	  
+    <?php	  
 ?>

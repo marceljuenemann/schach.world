@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Aurich 3', url: '?mannschaft=7401', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1329&r=1#p7401x7407', title: 'gegen Jever-Lohne 2', text: 1½ }]
+    - [{ url: '?staffel=1329&r=2#p7401x5388', title: 'gegen Test B', text: '4' }]
+    - {  }
+    - 2
+    - 5½
+    - ''
+-
+    - '2.'
+    - { text: 'Jever-Lohne 2', url: '?mannschaft=7407', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1329&r=1#p7407x7401', title: 'gegen SC Aurich 3', text: 4½ }]
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - 4½
+    - ''
+-
+    - '3.'
+    - { text: 'Test B', url: '?mannschaft=5388', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1329&r=2#p5388x7401', title: 'gegen SC Aurich 3', text: '2' }]
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - '2'
+    - ''
+-
+    - '4.'
+    - { text: 'Test Ä', url: '?mannschaft=5387', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

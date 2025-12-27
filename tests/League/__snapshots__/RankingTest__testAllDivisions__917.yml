@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV 3', url: '?mannschaft=7518', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1752&r=8#p7518x7526', title: 'gegen SV Hellern 5', text: 3½ }]
+    - [{ url: '?staffel=1752&r=2#p7518x7521', title: 'gegen Dissen-Bad Roth', text: '4' }]
+    - [{ url: '?staffel=1752&r=4#p7518x7486', title: 'gegen SC Fürstenau 2', text: '4' }]
+    - [{ url: '?staffel=1752&r=9#p7518x7514', title: 'gegen SV Osnabrück v. 1919 4', text: 1½ }]
+    - [{ url: '?staffel=1752&r=7#p7518x7493', title: 'gegen SV Bad Essen 2', text: 1½ }]
+    - [{ url: '?staffel=1752&r=5#p7518x7500', title: 'gegen SG Osnabrück 3', text: 3½ }]
+    - [{ url: '?staffel=1752&r=6#p7518x7508', title: 'gegen SK Rulle', text: 5½ }]
+    - [{ url: '?staffel=1752&r=3#p7518x7484', title: 'gegen TSV Riemsloh 2', text: 4½ }]
+    - [{ url: '?staffel=1752&r=1#p7518x7515', title: 'gegen SV Osnabrück v. 1919 5', text: 3½ }]
+    - 14
+    - 31½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Hellern 5', url: '?mannschaft=7526', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1752&r=8#p7526x7518', title: 'gegen Hagener SV 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1752&r=7#p7526x7521', title: 'gegen Dissen-Bad Roth', text: '4' }]
+    - [{ url: '?staffel=1752&r=9#p7526x7486', title: 'gegen SC Fürstenau 2', text: '1' }]
+    - [{ url: '?staffel=1752&r=5#p7526x7514', title: 'gegen SV Osnabrück v. 1919 4', text: 3½ }]
+    - [{ url: '?staffel=1752&r=3#p7526x7493', title: 'gegen SV Bad Essen 2', text: '4' }]
+    - [{ url: '?staffel=1752&r=1#p7526x7500', title: 'gegen SG Osnabrück 3', text: 3½ }]
+    - [{ url: '?staffel=1752&r=2#p7526x7508', title: 'gegen SK Rulle', text: 2½ }]
+    - [{ url: '?staffel=1752&r=4#p7526x7484', title: 'gegen TSV Riemsloh 2', text: 3½ }]
+    - [{ url: '?staffel=1752&r=6#p7526x7515', title: 'gegen SV Osnabrück v. 1919 5', text: 4½ }]
+    - 12
+    - '29'
+    - ''
+-
+    - '3.'
+    - { text: 'Dissen-Bad Roth', url: '?mannschaft=7521', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1752&r=2#p7521x7518', title: 'gegen Hagener SV 3', text: '2' }]
+    - [{ url: '?staffel=1752&r=7#p7521x7526', title: 'gegen SV Hellern 5', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1752&r=3#p7521x7486', title: 'gegen SC Fürstenau 2', text: '3' }]
+    - [{ url: '?staffel=1752&r=8#p7521x7514', title: 'gegen SV Osnabrück v. 1919 4', text: '3' }]
+    - [{ url: '?staffel=1752&r=6#p7521x7493', title: 'gegen SV Bad Essen 2', text: 4½ }]
+    - [{ url: '?staffel=1752&r=4#p7521x7500', title: 'gegen SG Osnabrück 3', text: 4½ }]
+    - [{ url: '?staffel=1752&r=5#p7521x7508', title: 'gegen SK Rulle', text: '5' }]
+    - [{ url: '?staffel=1752&r=1#p7521x7484', title: 'gegen TSV Riemsloh 2', text: '6' }]
+    - [{ url: '?staffel=1752&r=9#p7521x7515', title: 'gegen SV Osnabrück v. 1919 5', text: '3' }]
+    - 11
+    - '33'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Fürstenau 2', url: '?mannschaft=7486', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1752&r=4#p7486x7518', title: 'gegen Hagener SV 3', text: '2' }]
+    - [{ url: '?staffel=1752&r=9#p7486x7526', title: 'gegen SV Hellern 5', text: '5' }]
+    - [{ url: '?staffel=1752&r=3#p7486x7521', title: 'gegen Dissen-Bad Roth', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1752&r=1#p7486x7514', title: 'gegen SV Osnabrück v. 1919 4', text: 3½ }]
+    - [{ url: '?staffel=1752&r=8#p7486x7493', title: 'gegen SV Bad Essen 2', text: 3½ }]
+    - [{ url: '?staffel=1752&r=6#p7486x7500', title: 'gegen SG Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=1752&r=7#p7486x7508', title: 'gegen SK Rulle', text: '3' }]
+    - [{ url: '?staffel=1752&r=5#p7486x7484', title: 'gegen TSV Riemsloh 2', text: '2' }]
+    - [{ url: '?staffel=1752&r=2#p7486x7515', title: 'gegen SV Osnabrück v. 1919 5', text: 5½ }]
+    - 11
+    - 30½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Osnabrück v. 1919 4', url: '?mannschaft=7514', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1752&r=9#p7514x7518', title: 'gegen Hagener SV 3', text: 4½ }]
+    - [{ url: '?staffel=1752&r=5#p7514x7526', title: 'gegen SV Hellern 5', text: 2½ }]
+    - [{ url: '?staffel=1752&r=8#p7514x7521', title: 'gegen Dissen-Bad Roth', text: '3' }]
+    - [{ url: '?staffel=1752&r=1#p7514x7486', title: 'gegen SC Fürstenau 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1752&r=4#p7514x7493', title: 'gegen SV Bad Essen 2', text: 2½ }]
+    - [{ url: '?staffel=1752&r=2#p7514x7500', title: 'gegen SG Osnabrück 3', text: '4' }]
+    - [{ url: '?staffel=1752&r=3#p7514x7508', title: 'gegen SK Rulle', text: '4' }]
+    - [{ url: '?staffel=1752&r=6#p7514x7484', title: 'gegen TSV Riemsloh 2', text: '3' }]
+    - [{ url: '?staffel=1752&r=7#p7514x7515', title: 'gegen SV Osnabrück v. 1919 5', text: 3½ }]
+    - 10
+    - 29½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Bad Essen 2', url: '?mannschaft=7493', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1752&r=7#p7493x7518', title: 'gegen Hagener SV 3', text: 4½ }]
+    - [{ url: '?staffel=1752&r=3#p7493x7526', title: 'gegen SV Hellern 5', text: '2' }]
+    - [{ url: '?staffel=1752&r=6#p7493x7521', title: 'gegen Dissen-Bad Roth', text: 1½ }]
+    - [{ url: '?staffel=1752&r=8#p7493x7486', title: 'gegen SC Fürstenau 2', text: 2½ }]
+    - [{ url: '?staffel=1752&r=4#p7493x7514', title: 'gegen SV Osnabrück v. 1919 4', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1752&r=9#p7493x7500', title: 'gegen SG Osnabrück 3', text: '2' }]
+    - [{ url: '?staffel=1752&r=1#p7493x7508', title: 'gegen SK Rulle', text: 4½ }]
+    - [{ url: '?staffel=1752&r=2#p7493x7484', title: 'gegen TSV Riemsloh 2', text: '4' }]
+    - [{ url: '?staffel=1752&r=5#p7493x7515', title: 'gegen SV Osnabrück v. 1919 5', text: '2' }]
+    - 8
+    - 26½
+    - ''
+-
+    - '7.'
+    - { text: 'SG Osnabrück 3', url: '?mannschaft=7500', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1752&r=5#p7500x7518', title: 'gegen Hagener SV 3', text: 2½ }]
+    - [{ url: '?staffel=1752&r=1#p7500x7526', title: 'gegen SV Hellern 5', text: 2½ }]
+    - [{ url: '?staffel=1752&r=4#p7500x7521', title: 'gegen Dissen-Bad Roth', text: 1½ }]
+    - [{ url: '?staffel=1752&r=6#p7500x7486', title: 'gegen SC Fürstenau 2', text: '3' }]
+    - [{ url: '?staffel=1752&r=2#p7500x7514', title: 'gegen SV Osnabrück v. 1919 4', text: '2' }]
+    - [{ url: '?staffel=1752&r=9#p7500x7493', title: 'gegen SV Bad Essen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1752&r=8#p7500x7508', title: 'gegen SK Rulle', text: '3' }]
+    - [{ url: '?staffel=1752&r=7#p7500x7484', title: 'gegen TSV Riemsloh 2', text: '4' }]
+    - [{ url: '?staffel=1752&r=3#p7500x7515', title: 'gegen SV Osnabrück v. 1919 5', text: 3½ }]
+    - 8
+    - '26'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Rulle', url: '?mannschaft=7508', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1752&r=6#p7508x7518', title: 'gegen Hagener SV 3', text: ½ }]
+    - [{ url: '?staffel=1752&r=2#p7508x7526', title: 'gegen SV Hellern 5', text: 3½ }]
+    - [{ url: '?staffel=1752&r=5#p7508x7521', title: 'gegen Dissen-Bad Roth', text: '1' }]
+    - [{ url: '?staffel=1752&r=7#p7508x7486', title: 'gegen SC Fürstenau 2', text: '3' }]
+    - [{ url: '?staffel=1752&r=3#p7508x7514', title: 'gegen SV Osnabrück v. 1919 4', text: '2' }]
+    - [{ url: '?staffel=1752&r=1#p7508x7493', title: 'gegen SV Bad Essen 2', text: 1½ }]
+    - [{ url: '?staffel=1752&r=8#p7508x7500', title: 'gegen SG Osnabrück 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1752&r=9#p7508x7484', title: 'gegen TSV Riemsloh 2', text: '4' }]
+    - [{ url: '?staffel=1752&r=4#p7508x7515', title: 'gegen SV Osnabrück v. 1919 5', text: '3' }]
+    - 7
+    - 21½
+    - ''
+-
+    - '9.'
+    - { text: 'TSV Riemsloh 2', url: '?mannschaft=7484', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1752&r=3#p7484x7518', title: 'gegen Hagener SV 3', text: 1½ }]
+    - [{ url: '?staffel=1752&r=4#p7484x7526', title: 'gegen SV Hellern 5', text: 2½ }]
+    - [{ url: '?staffel=1752&r=1#p7484x7521', title: 'gegen Dissen-Bad Roth', text: '0' }]
+    - [{ url: '?staffel=1752&r=5#p7484x7486', title: 'gegen SC Fürstenau 2', text: '4' }]
+    - [{ url: '?staffel=1752&r=6#p7484x7514', title: 'gegen SV Osnabrück v. 1919 4', text: '3' }]
+    - [{ url: '?staffel=1752&r=2#p7484x7493', title: 'gegen SV Bad Essen 2', text: '2' }]
+    - [{ url: '?staffel=1752&r=7#p7484x7500', title: 'gegen SG Osnabrück 3', text: '2' }]
+    - [{ url: '?staffel=1752&r=9#p7484x7508', title: 'gegen SK Rulle', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1752&r=8#p7484x7515', title: 'gegen SV Osnabrück v. 1919 5', text: 4½ }]
+    - 5
+    - 21½
+    - ''
+-
+    - '10.'
+    - { text: 'SV Osnabrück v. 1919 5', url: '?mannschaft=7515', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1752&r=1#p7515x7518', title: 'gegen Hagener SV 3', text: 2½ }]
+    - [{ url: '?staffel=1752&r=6#p7515x7526', title: 'gegen SV Hellern 5', text: 1½ }]
+    - [{ url: '?staffel=1752&r=9#p7515x7521', title: 'gegen Dissen-Bad Roth', text: '3' }]
+    - [{ url: '?staffel=1752&r=2#p7515x7486', title: 'gegen SC Fürstenau 2', text: ½ }]
+    - [{ url: '?staffel=1752&r=7#p7515x7514', title: 'gegen SV Osnabrück v. 1919 4', text: 2½ }]
+    - [{ url: '?staffel=1752&r=5#p7515x7493', title: 'gegen SV Bad Essen 2', text: '4' }]
+    - [{ url: '?staffel=1752&r=3#p7515x7500', title: 'gegen SG Osnabrück 3', text: 2½ }]
+    - [{ url: '?staffel=1752&r=4#p7515x7508', title: 'gegen SK Rulle', text: '3' }]
+    - [{ url: '?staffel=1752&r=8#p7515x7484', title: 'gegen TSV Riemsloh 2', text: 1½ }]
+    - xxx
+    - 4
+    - '21'
+    - absteiger

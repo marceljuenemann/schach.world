@@ -1,0 +1,23 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'HSK Lister Turm 2', url: '?mannschaft=2840', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=661&r=2#p2840x2839', title: 'gegen WB Eilenriede', text: '2' }]
+    - 1
+    - '2'
+    - ''
+-
+    - '2.'
+    - { text: 'WB Eilenriede', url: '?mannschaft=2839', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=661&r=2#p2839x2840', title: 'gegen HSK Lister Turm 2', text: '2' }]
+    - xxx
+    - 1
+    - '2'
+    - ''

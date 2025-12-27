@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Holzminden 2', url: '?mannschaft=3340', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=773&r=3#p3340x3345', title: 'gegen SK Bad Harzburg 3', text: '2' }]
+    - [{ url: '?staffel=773&r=2#p3340x3344', title: 'gegen SC SW Northeim 3', text: 3½ }]
+    - [{ url: '?staffel=773&r=1#p3340x3341', title: 'gegen SV GW Parensen 2', text: '2' }]
+    - 4
+    - 7½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Bad Harzburg 3', url: '?mannschaft=3345', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=773&r=3#p3345x3340', title: 'gegen SG Holzminden 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=773&r=1#p3345x3344', title: 'gegen SC SW Northeim 3', text: '2' }]
+    - [{ url: '?staffel=773&r=2#p3345x3341', title: 'gegen SV GW Parensen 2', text: '2' }]
+    - 3
+    - '6'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SC SW Northeim 3', url: '?mannschaft=3344', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=773&r=2#p3344x3340', title: 'gegen SG Holzminden 2', text: ½ }]
+    - [{ url: '?staffel=773&r=1#p3344x3345', title: 'gegen SK Bad Harzburg 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=773&r=3#p3344x3341', title: 'gegen SV GW Parensen 2', text: '3' }]
+    - 3
+    - 5½
+    - ''
+-
+    - '4.'
+    - { text: 'SV GW Parensen 2', url: '?mannschaft=3341', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=773&r=1#p3341x3340', title: 'gegen SG Holzminden 2', text: '2' }]
+    - [{ url: '?staffel=773&r=2#p3341x3345', title: 'gegen SK Bad Harzburg 3', text: '2' }]
+    - [{ url: '?staffel=773&r=3#p3341x3344', title: 'gegen SC SW Northeim 3', text: '1' }]
+    - xxx
+    - 2
+    - '5'
+    - ''

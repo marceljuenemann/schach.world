@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=599', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=424&r=3#p599x598', title: 'gegen Eldagsen/Bad Mü', text: '2' }]
+    - [{ url: '?staffel=424&r=4#p599x609', title: 'gegen SK Ricklingen', text: 2½ }]
+    - [{ url: '?staffel=424&r=1#p599x594', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=424&r=3#p599x611', title: 'gegen SK Anderten', text: 2½ }]
+    - [{ url: '?staffel=424&r=2#p599x600', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=424&r=4#p599x610', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=424&r=1#p599x595', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 13
+    - 22½
+    - ''
+-
+    - '2.'
+    - { text: 'Eldagsen/Bad Mü', url: '?mannschaft=598', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=424&r=3#p598x599', title: 'gegen SV Bückeburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=424&r=1#p598x609', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=424&r=4#p598x594', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=424&r=2#p598x611', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=424&r=3#p598x600', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=424&r=1#p598x610', title: 'gegen SK Ricklingen 2', text: 2½ }]
+    - [{ url: '?staffel=424&r=4#p598x595', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 12
+    - '21'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=609', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=424&r=4#p609x599', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=424&r=1#p609x598', title: 'gegen Eldagsen/Bad Mü', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=424&r=3#p609x594', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=424&r=1#p609x611', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=424&r=4#p609x600', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=424&r=2#p609x610', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=424&r=3#p609x595', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 11
+    - 22½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte', url: '?mannschaft=594', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=424&r=1#p594x599', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=424&r=4#p594x598', title: 'gegen Eldagsen/Bad Mü', text: 1½ }]
+    - [{ url: '?staffel=424&r=3#p594x609', title: 'gegen SK Ricklingen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=424&r=4#p594x611', title: 'gegen SK Anderten', text: '3' }]
+    - [{ url: '?staffel=424&r=1#p594x600', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=424&r=3#p594x610', title: 'gegen SK Ricklingen 2', text: '3' }]
+    - [{ url: '?staffel=424&r=2#p594x595', title: 'gegen SK Lehrte 2', text: '3' }]
+    - 8
+    - '15'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Anderten', url: '?mannschaft=611', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=424&r=3#p611x599', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=424&r=2#p611x598', title: 'gegen Eldagsen/Bad Mü', text: '0' }]
+    - [{ url: '?staffel=424&r=1#p611x609', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=424&r=4#p611x594', title: 'gegen SK Lehrte', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=424&r=3#p611x600', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=424&r=1#p611x610', title: 'gegen SK Ricklingen 2', text: '2' }]
+    - [{ url: '?staffel=424&r=4#p611x595', title: 'gegen SK Lehrte 2', text: '2' }]
+    - 4
+    - 10½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=600', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=424&r=2#p600x599', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=424&r=3#p600x598', title: 'gegen Eldagsen/Bad Mü', text: '0' }]
+    - [{ url: '?staffel=424&r=4#p600x609', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=424&r=1#p600x594', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=424&r=3#p600x611', title: 'gegen SK Anderten', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=424&r=4#p600x610', title: 'gegen SK Ricklingen 2', text: '3' }]
+    - [{ url: '?staffel=424&r=1#p600x595', title: 'gegen SK Lehrte 2', text: '2' }]
+    - 4
+    - '6'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=610', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=424&r=4#p610x599', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=424&r=1#p610x598', title: 'gegen Eldagsen/Bad Mü', text: 1½ }]
+    - [{ url: '?staffel=424&r=2#p610x609', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=424&r=3#p610x594', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=424&r=1#p610x611', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=424&r=4#p610x600', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=424&r=3#p610x595', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - 3
+    - '8'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=595', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=424&r=1#p595x599', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=424&r=4#p595x598', title: 'gegen Eldagsen/Bad Mü', text: '0' }]
+    - [{ url: '?staffel=424&r=3#p595x609', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=424&r=2#p595x594', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=424&r=4#p595x611', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=424&r=1#p595x600', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - [{ url: '?staffel=424&r=3#p595x610', title: 'gegen SK Ricklingen 2', text: 1½ }]
+    - xxx
+    - 1
+    - 4½
+    - ''

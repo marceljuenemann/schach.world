@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Rochade Göttingen', url: '?mannschaft=7310', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1715&r=5#p7310x7302', title: 'gegen SC BS Gliesmarode 7', text: 3½ }, { url: '?staffel=1715&r=10#p7310x7302', title: 'gegen SC BS Gliesmarode 7', text: '0' }]
+    - [{ url: '?staffel=1715&r=4#p7310x7305', title: 'gegen SVG Salzgitter 3', text: '0' }, { url: '?staffel=1715&r=9#p7310x7305', title: 'gegen SVG Salzgitter 3', text: 3½ }]
+    - [{ url: '?staffel=1715&r=2#p7310x7299', title: 'gegen Peiner SV 3', text: '4' }, { url: '?staffel=1715&r=7#p7310x7299', title: 'gegen Peiner SV 3', text: '4' }]
+    - [{ url: '?staffel=1715&r=1#p7310x7304', title: 'gegen SV Hankensbüttel 2', text: '4' }, { url: '?staffel=1715&r=6#p7310x7304', title: 'gegen SV Hankensbüttel 2', text: '2' }]
+    - [{ url: '?staffel=1715&r=3#p7310x7311', title: 'gegen C. Wolfenbüttel 4', text: '4' }, { url: '?staffel=1715&r=8#p7310x7311', title: 'gegen C. Wolfenbüttel 4', text: '4' }]
+    - 15
+    - '29'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC BS Gliesmarode 7', url: '?mannschaft=7302', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1715&r=5#p7302x7310', title: 'gegen Rochade Göttingen', text: ½ }, { url: '?staffel=1715&r=10#p7302x7310', title: 'gegen Rochade Göttingen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1715&r=3#p7302x7305', title: 'gegen SVG Salzgitter 3', text: '2' }, { url: '?staffel=1715&r=8#p7302x7305', title: 'gegen SVG Salzgitter 3', text: '3' }]
+    - [{ url: '?staffel=1715&r=1#p7302x7299', title: 'gegen Peiner SV 3', text: 2½ }, { url: '?staffel=1715&r=6#p7302x7299', title: 'gegen Peiner SV 3', text: 1½ }]
+    - [{ url: '?staffel=1715&r=4#p7302x7304', title: 'gegen SV Hankensbüttel 2', text: 3½ }, { url: '?staffel=1715&r=9#p7302x7304', title: 'gegen SV Hankensbüttel 2', text: '4' }]
+    - [{ url: '?staffel=1715&r=2#p7302x7311', title: 'gegen C. Wolfenbüttel 4', text: 2½ }, { url: '?staffel=1715&r=7#p7302x7311', title: 'gegen C. Wolfenbüttel 4', text: '4' }]
+    - 15
+    - 27½
+    - ''
+-
+    - '3.'
+    - { text: 'SVG Salzgitter 3', url: '?mannschaft=7305', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1715&r=4#p7305x7310', title: 'gegen Rochade Göttingen', text: '4' }, { url: '?staffel=1715&r=9#p7305x7310', title: 'gegen Rochade Göttingen', text: ½ }]
+    - [{ url: '?staffel=1715&r=3#p7305x7302', title: 'gegen SC BS Gliesmarode 7', text: '2' }, { url: '?staffel=1715&r=8#p7305x7302', title: 'gegen SC BS Gliesmarode 7', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1715&r=5#p7305x7299', title: 'gegen Peiner SV 3', text: '2' }, { url: '?staffel=1715&r=10#p7305x7299', title: 'gegen Peiner SV 3', text: '4' }]
+    - [{ url: '?staffel=1715&r=2#p7305x7304', title: 'gegen SV Hankensbüttel 2', text: 2½ }, { url: '?staffel=1715&r=7#p7305x7304', title: 'gegen SV Hankensbüttel 2', text: 2½ }]
+    - [{ url: '?staffel=1715&r=1#p7305x7311', title: 'gegen C. Wolfenbüttel 4', text: '4' }, { url: '?staffel=1715&r=6#p7305x7311', title: 'gegen C. Wolfenbüttel 4', text: 3½ }]
+    - 14
+    - '26'
+    - ''
+-
+    - '4.'
+    - { text: 'Peiner SV 3', url: '?mannschaft=7299', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1715&r=2#p7299x7310', title: 'gegen Rochade Göttingen', text: '0' }, { url: '?staffel=1715&r=7#p7299x7310', title: 'gegen Rochade Göttingen', text: '0' }]
+    - [{ url: '?staffel=1715&r=1#p7299x7302', title: 'gegen SC BS Gliesmarode 7', text: 1½ }, { url: '?staffel=1715&r=6#p7299x7302', title: 'gegen SC BS Gliesmarode 7', text: 2½ }]
+    - [{ url: '?staffel=1715&r=5#p7299x7305', title: 'gegen SVG Salzgitter 3', text: '2' }, { url: '?staffel=1715&r=10#p7299x7305', title: 'gegen SVG Salzgitter 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1715&r=3#p7299x7304', title: 'gegen SV Hankensbüttel 2', text: '2' }, { url: '?staffel=1715&r=8#p7299x7304', title: 'gegen SV Hankensbüttel 2', text: '0' }]
+    - [{ url: '?staffel=1715&r=4#p7299x7311', title: 'gegen C. Wolfenbüttel 4', text: '3' }, { url: '?staffel=1715&r=9#p7299x7311', title: 'gegen C. Wolfenbüttel 4', text: '4' }]
+    - 9
+    - '15'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Hankensbüttel 2', url: '?mannschaft=7304', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1715&r=1#p7304x7310', title: 'gegen Rochade Göttingen', text: '0' }, { url: '?staffel=1715&r=6#p7304x7310', title: 'gegen Rochade Göttingen', text: '2' }]
+    - [{ url: '?staffel=1715&r=4#p7304x7302', title: 'gegen SC BS Gliesmarode 7', text: ½ }, { url: '?staffel=1715&r=9#p7304x7302', title: 'gegen SC BS Gliesmarode 7', text: '0' }]
+    - [{ url: '?staffel=1715&r=2#p7304x7305', title: 'gegen SVG Salzgitter 3', text: 1½ }, { url: '?staffel=1715&r=7#p7304x7305', title: 'gegen SVG Salzgitter 3', text: 1½ }]
+    - [{ url: '?staffel=1715&r=3#p7304x7299', title: 'gegen Peiner SV 3', text: '1' }, { url: '?staffel=1715&r=8#p7304x7299', title: 'gegen Peiner SV 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1715&r=5#p7304x7311', title: 'gegen C. Wolfenbüttel 4', text: ½ }, { url: '?staffel=1715&r=10#p7304x7311', title: 'gegen C. Wolfenbüttel 4', text: '4' }]
+    - 5
+    - '15'
+    - ''
+-
+    - '6.'
+    - { text: 'C. Wolfenbüttel 4', url: '?mannschaft=7311', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1715&r=3#p7311x7310', title: 'gegen Rochade Göttingen', text: '0' }, { url: '?staffel=1715&r=8#p7311x7310', title: 'gegen Rochade Göttingen', text: '0' }]
+    - [{ url: '?staffel=1715&r=2#p7311x7302', title: 'gegen SC BS Gliesmarode 7', text: 1½ }, { url: '?staffel=1715&r=7#p7311x7302', title: 'gegen SC BS Gliesmarode 7', text: '0' }]
+    - [{ url: '?staffel=1715&r=1#p7311x7305', title: 'gegen SVG Salzgitter 3', text: '0' }, { url: '?staffel=1715&r=6#p7311x7305', title: 'gegen SVG Salzgitter 3', text: ½ }]
+    - [{ url: '?staffel=1715&r=4#p7311x7299', title: 'gegen Peiner SV 3', text: '1' }, { url: '?staffel=1715&r=9#p7311x7299', title: 'gegen Peiner SV 3', text: '0' }]
+    - [{ url: '?staffel=1715&r=5#p7311x7304', title: 'gegen SV Hankensbüttel 2', text: 3½ }, { url: '?staffel=1715&r=10#p7311x7304', title: 'gegen SV Hankensbüttel 2', text: '0' }]
+    - xxx
+    - 2
+    - 6½
+    - ''

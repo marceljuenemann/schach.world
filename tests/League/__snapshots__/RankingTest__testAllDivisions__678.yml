@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=6352', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1428&r=3#p6352x6272', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=1428&r=4#p6352x6270', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=1428&r=2#p6352x6351', title: 'gegen SZ Bemerode', text: '3' }]
+    - [{ url: '?staffel=1428&r=1#p6352x6335', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1428&r=3#p6352x6273', title: 'gegen SK Rinteln 2', text: 3½ }]
+    - [{ url: '?staffel=1428&r=1#p6352x6336', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - [{ url: '?staffel=1428&r=4#p6352x6360', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=1428&r=5#p6352x6330', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=1428&r=5#p6352x6319', title: 'gegen SK Wennigsen', text: 3½ }]
+    - 17
+    - '28'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Rinteln', url: '?mannschaft=6272', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1428&r=3#p6272x6352', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1428&r=5#p6272x6270', title: 'gegen Hannover 96', text: 3½ }]
+    - [{ url: '?staffel=1428&r=3#p6272x6351', title: 'gegen SZ Bemerode', text: '2' }]
+    - [{ url: '?staffel=1428&r=2#p6272x6335', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1428&r=4#p6272x6273', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1428&r=2#p6272x6336', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1428&r=5#p6272x6360', title: 'gegen Hannover 96 2', text: '4' }]
+    - [{ url: '?staffel=1428&r=1#p6272x6330', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=1428&r=1#p6272x6319', title: 'gegen SK Wennigsen', text: '4' }]
+    - 15
+    - 27½
+    - ''
+-
+    - '3.'
+    - { text: 'Hannover 96', url: '?mannschaft=6270', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1428&r=4#p6270x6352', title: 'gegen SZ Bemerode 2', text: '2' }]
+    - [{ url: '?staffel=1428&r=5#p6270x6272', title: 'gegen SK Rinteln', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1428&r=4#p6270x6351', title: 'gegen SZ Bemerode', text: '3' }]
+    - [{ url: '?staffel=1428&r=3#p6270x6335', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1428&r=5#p6270x6273', title: 'gegen SK Rinteln 2', text: '2' }]
+    - [{ url: '?staffel=1428&r=3#p6270x6336', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1428&r=1#p6270x6360', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=1428&r=2#p6270x6330', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=1428&r=2#p6270x6319', title: 'gegen SK Wennigsen', text: '4' }]
+    - 13
+    - 22½
+    - ''
+-
+    - '4.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=6351', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1428&r=2#p6351x6352', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1428&r=3#p6351x6272', title: 'gegen SK Rinteln', text: '2' }]
+    - [{ url: '?staffel=1428&r=4#p6351x6270', title: 'gegen Hannover 96', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1428&r=1#p6351x6335', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1428&r=3#p6351x6273', title: 'gegen SK Rinteln 2', text: 2½ }]
+    - [{ url: '?staffel=1428&r=1#p6351x6336', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=1428&r=4#p6351x6360', title: 'gegen Hannover 96 2', text: '2' }]
+    - [{ url: '?staffel=1428&r=5#p6351x6330', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=1428&r=5#p6351x6319', title: 'gegen SK Wennigsen', text: '3' }]
+    - 12
+    - 21½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte', url: '?mannschaft=6335', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1428&r=1#p6335x6352', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1428&r=2#p6335x6272', title: 'gegen SK Rinteln', text: '1' }]
+    - [{ url: '?staffel=1428&r=3#p6335x6270', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=1428&r=1#p6335x6351', title: 'gegen SZ Bemerode', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1428&r=2#p6335x6273', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=1428&r=5#p6335x6336', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1428&r=3#p6335x6360', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=1428&r=4#p6335x6330', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=1428&r=4#p6335x6319', title: 'gegen SK Wennigsen', text: 3½ }]
+    - 10
+    - 20½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=6273', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1428&r=3#p6273x6352', title: 'gegen SZ Bemerode 2', text: ½ }]
+    - [{ url: '?staffel=1428&r=4#p6273x6272', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=1428&r=5#p6273x6270', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=1428&r=3#p6273x6351', title: 'gegen SZ Bemerode', text: 1½ }]
+    - [{ url: '?staffel=1428&r=2#p6273x6335', title: 'gegen SK Lehrte', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1428&r=2#p6273x6336', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1428&r=5#p6273x6360', title: 'gegen Hannover 96 2', text: '4' }]
+    - [{ url: '?staffel=1428&r=1#p6273x6330', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=1428&r=1#p6273x6319', title: 'gegen SK Wennigsen', text: '3' }]
+    - 9
+    - '20'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=6336', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1428&r=1#p6336x6352', title: 'gegen SZ Bemerode 2', text: ½ }]
+    - [{ url: '?staffel=1428&r=2#p6336x6272', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=1428&r=3#p6336x6270', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=1428&r=1#p6336x6351', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1428&r=5#p6336x6335', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1428&r=2#p6336x6273', title: 'gegen SK Rinteln 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1428&r=3#p6336x6360', title: 'gegen Hannover 96 2', text: '2' }]
+    - [{ url: '?staffel=1428&r=4#p6336x6330', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=1428&r=4#p6336x6319', title: 'gegen SK Wennigsen', text: 2½ }]
+    - 6
+    - 10½
+    - ''
+-
+    - '8.'
+    - { text: 'Hannover 96 2', url: '?mannschaft=6360', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1428&r=4#p6360x6352', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=1428&r=5#p6360x6272', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=1428&r=1#p6360x6270', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=1428&r=4#p6360x6351', title: 'gegen SZ Bemerode', text: '2' }]
+    - [{ url: '?staffel=1428&r=3#p6360x6335', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1428&r=5#p6360x6273', title: 'gegen SK Rinteln 2', text: '0' }]
+    - [{ url: '?staffel=1428&r=3#p6360x6336', title: 'gegen SK Lehrte 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1428&r=2#p6360x6330', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1428&r=2#p6360x6319', title: 'gegen SK Wennigsen', text: '4' }]
+    - 5
+    - '13'
+    - ''
+-
+    - '9.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=6330', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1428&r=5#p6330x6352', title: 'gegen SZ Bemerode 2', text: 1½ }]
+    - [{ url: '?staffel=1428&r=1#p6330x6272', title: 'gegen SK Rinteln', text: '1' }]
+    - [{ url: '?staffel=1428&r=2#p6330x6270', title: 'gegen Hannover 96', text: '1' }]
+    - [{ url: '?staffel=1428&r=5#p6330x6351', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1428&r=4#p6330x6335', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1428&r=1#p6330x6273', title: 'gegen SK Rinteln 2', text: '0' }]
+    - [{ url: '?staffel=1428&r=4#p6330x6336', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=1428&r=2#p6330x6360', title: 'gegen Hannover 96 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1428&r=3#p6330x6319', title: 'gegen SK Wennigsen', text: '3' }]
+    - 3
+    - '11'
+    - ''
+-
+    - '10.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=6319', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1428&r=5#p6319x6352', title: 'gegen SZ Bemerode 2', text: ½ }]
+    - [{ url: '?staffel=1428&r=1#p6319x6272', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=1428&r=2#p6319x6270', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=1428&r=5#p6319x6351', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1428&r=4#p6319x6335', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=1428&r=1#p6319x6273', title: 'gegen SK Rinteln 2', text: '1' }]
+    - [{ url: '?staffel=1428&r=4#p6319x6336', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=1428&r=2#p6319x6360', title: 'gegen Hannover 96 2', text: '0' }]
+    - [{ url: '?staffel=1428&r=3#p6319x6330', title: 'gegen SD Isernhagen', text: '1' }]
+    - xxx
+    - 0
+    - 5½
+    - ''
