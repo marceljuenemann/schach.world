@@ -2,13 +2,16 @@
 
 namespace Nsv\Util\Pdf;
 
-use Fpdf\Fpdf;
+// TODO: Switch back to composer version.
+require_once("../ligen/_inc/extern/fpdf.php");
+
+//use Fpdf\Fpdf;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Simple wrapper around FPDF to gernerate simple PDFs.
  */
-class Pdf extends Fpdf {
+class Pdf extends \FPDF /*Fpdf*/ {
 
   // TODO: set title and other metadata.
 
@@ -38,32 +41,44 @@ class Pdf extends Fpdf {
   }
 
   /**
-   * Executes the callback with a different font size. Also adjusts the
-   * line height proportionally.
+   * Executes the callback with the given font family and style.
+   * 
+   * Any null values indicate that the current value should be kept.
    */
-  public function withFontSize(int $fontSize, callable $callback): mixed {
+  public function withFont(string | null $family, string | null $style, int | null $size, callable $callback): mixed {
+    $prevFamily = $this->FontFamily;
+    $prevStyle = $this->FontStyle;
     $prevSize = $this->FontSizePt;
     $prevLineHeight = $this->lineHeight;
-    $this->SetFontSize($fontSize);
-    $this->lineHeight *= $fontSize / $prevSize;
 
+    $this->SetFont($family ?: $prevFamily, $style ?: $prevStyle, $size ?: $prevSize);
+    $this->lineHeight *= ((float) $size) / $prevSize;
     $result = $callback();
-    $this->SetFontSize($prevSize);
+
+    $this->SetFont($prevFamily, $prevStyle, $prevSize);
     $this->lineHeight = $prevLineHeight;
     return $result;
   }
 
+  /**
+   * Executes the callback with a different font size. Also adjusts the
+   * line height proportionally.
+   */
+  public function withFontSize(int $fontSize, callable $callback): mixed {
+    return $this->withFont(null, null, $fontSize, $callback);
+  }
+
   public function render(Element $element) {
-    // TODO: width
-    //$width = $this->w - $this->lMargin - $this->rMargin;
     $element->render($this);
   }
   
   public function asResponse(string $filename, bool $isUtf8 = true): Response {
-    $body = $this->Output('S', $filename, $isUtf8);
+    //$body = $this->Output('S', $filename, $isUtf8);
+    $body = $this->Output($filename, 'S');
     return new Response($body, 200, [
       'Content-Type' => 'application/pdf',
-      'Content-Disposition' => 'inline; '.$this->_httpencode('filename', $filename, $isUtf8)
+//      'Content-Disposition' => 'inline; '.$this->_httpencode('filename', $filename, $isUtf8)
+//      'Content-Disposition' => 'inline; '.$this->_httpencode('filename', $filename, $isUtf8)
     ]);
   }
 }

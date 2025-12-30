@@ -5,34 +5,20 @@ namespace Nsv\Util\Pdf;
 /**
  * Cells are the basic building blocks for PDFs.
  */
-class Cell implements Element {
+class CellOld extends Element {
+
+  public function __construct(Pdf $pdf) {
+    parent::__construct($pdf);
+  }
 
   public string $text = '';
   public string $link = '';
-
-  /**
-   * Font size in pt if different from the parent font size.
-   */
-  public ?int $fontSize = null;
-
-  /**
-   * Font style. B for bold, I for italic, U for underlined.
-   */
-  public string $fontStyle = '';
 
   /**
    * The height of the cell. If null, the lineHeight of Pdf will be used. 
    */
   // TODO: relative?
   public ?float $height = null;
-
-  /**
-   * The width of the cell. If null, the cell is expanded all the way to the right margin.
-   */
-  // TODO: Support null
-  // TODO: Support dynamic?
-  // TODO: Maybe different Cell subclasses?
-  public ?float $width = null;
 
   /**
    * Which border to draw, e.g. "LR" for left and right or 1 for all borders.
@@ -49,13 +35,21 @@ class Cell implements Element {
    */
   public bool $fill = false;  // TODO: optional color
 
-  public function render(Pdf $pdf) {
-    $pdf->withFont(null, $this->fontStyle, $this->fontSize, function () use ($pdf) {
+  public function layout(): array {
+    $width = $this->withStyles(function() {
+      return $this->pdf->GetStringWidth($this->text);
+    });
+    return ['minWidth' => $width];
+  }
+
+  public function render() {
+    $this->withStyles(function () {
+      $width = 0;  // always stretch until rMargin.
       $ln = 0;     // always use Ln() for line breaks.
-      $lh = $this->height ?: $pdf->lineHeight;
-      $pdf->Cell($this->width, $lh, $this->text, $this->border,
+      $lh = $this->height ?: $this->pdf->lineHeight;
+      $this->pdf->Cell($width, $lh, $this->text, $this->border,
         $ln, $this->align, $this->fill, $this->link);
-      $pdf->Ln();
+      $this->pdf->Ln();
     });
   }
 }

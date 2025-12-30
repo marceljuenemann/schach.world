@@ -24,12 +24,14 @@ use Nsv\Util\Pdf\TableCell;
  * TODO: pass nr based on setting
  * TODO: resize columns if needed
  */
-class PairingList extends Element {
+class PairingList implements Element {
 
+  public function __construct(private MatchDay $matchDay) {}
+
+  /*
   private Table $table;
 
   public function __construct(Pdf $pdf, private MatchDay $matchDay) {
-    parent::__construct($pdf);
     $this->table = new Table($pdf);
     foreach ($matchDay->pairings as $pairing) {
       $this->addPairing($pairing);
@@ -45,11 +47,20 @@ class PairingList extends Element {
     }
     $this->table->addRow($this->emptyRow());
   }
+    */
 
-  private function pairingHeader(Pairing $pairing): array {
+  public function render(Pdf $pdf) {
+    foreach ($this->matchDay->pairings as $pairing) {
+      $this->renderHeader($pdf, $pairing);
+    }
+  }
+
+  private function renderHeader(Pdf $pdf, Pairing $pairing) {
+    // TODO: Render as a Row.
     // TODO: Handle comments
 
-    $cell = new Cell($this->pdf);
+    /*
+    $cell = new Cell();
     $cell->text = $pairing->team1->name;
     $cell->border = 'LTB';
     // TODO: URI
@@ -68,9 +79,12 @@ class PairingList extends Element {
     $cell->align = 'R';
     // TODO: URI
     $row[] = new TableCell($cell, 2);
+    */
 
-    return $row;
+    //return $row;
   }
+
+    /*
 
   private function gameRow(Game $game): array {
     // Player number.
@@ -147,4 +161,5 @@ class PairingList extends Element {
       $this->table->render();
     });
   }
+  */
 }
