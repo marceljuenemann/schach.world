@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Quickborn', url: '?mannschaft=4120', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=866&r=5#p4120x4055', title: 'gegen Hamburger SK 3', text: '3' }]
+    - [{ url: '?staffel=866&r=3#p4120x4064', title: 'gegen VT Ludwigslust', text: 2½ }]
+    - [{ url: '?staffel=866&r=1#p4120x4141', title: 'gegen SV Gryps', text: 3½ }]
+    - [{ url: '?staffel=866&r=2#p4120x3949', title: 'gegen TuRa Harksheide 2', text: '4' }]
+    - [{ url: '?staffel=866&r=4#p4120x4089', title: 'gegen SK Joh. Eppendorf', text: '2' }]
+    - 9
+    - '15'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamburger SK 3', url: '?mannschaft=4055', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=866&r=5#p4055x4120', title: 'gegen SV Quickborn', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=866&r=4#p4055x4064', title: 'gegen VT Ludwigslust', text: '4' }]
+    - [{ url: '?staffel=866&r=2#p4055x4141', title: 'gegen SV Gryps', text: '3' }]
+    - [{ url: '?staffel=866&r=3#p4055x3949', title: 'gegen TuRa Harksheide 2', text: '4' }]
+    - [{ url: '?staffel=866&r=1#p4055x4089', title: 'gegen SK Joh. Eppendorf', text: 3½ }]
+    - 8
+    - 15½
+    - ''
+-
+    - '3.'
+    - { text: 'VT Ludwigslust', url: '?mannschaft=4064', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=866&r=3#p4064x4120', title: 'gegen SV Quickborn', text: 1½ }]
+    - [{ url: '?staffel=866&r=4#p4064x4055', title: 'gegen Hamburger SK 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=866&r=5#p4064x4141', title: 'gegen SV Gryps', text: 2½ }]
+    - [{ url: '?staffel=866&r=1#p4064x3949', title: 'gegen TuRa Harksheide 2', text: '2' }]
+    - [{ url: '?staffel=866&r=2#p4064x4089', title: 'gegen SK Joh. Eppendorf', text: 3½ }]
+    - 5
+    - 9½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Gryps', url: '?mannschaft=4141', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=866&r=1#p4141x4120', title: 'gegen SV Quickborn', text: ½ }]
+    - [{ url: '?staffel=866&r=2#p4141x4055', title: 'gegen Hamburger SK 3', text: '1' }]
+    - [{ url: '?staffel=866&r=5#p4141x4064', title: 'gegen VT Ludwigslust', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=866&r=4#p4141x3949', title: 'gegen TuRa Harksheide 2', text: '2' }]
+    - [{ url: '?staffel=866&r=3#p4141x4089', title: 'gegen SK Joh. Eppendorf', text: '4' }]
+    - 3
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'TuRa Harksheide 2', url: '?mannschaft=3949', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=866&r=2#p3949x4120', title: 'gegen SV Quickborn', text: '0' }]
+    - [{ url: '?staffel=866&r=3#p3949x4055', title: 'gegen Hamburger SK 3', text: '0' }]
+    - [{ url: '?staffel=866&r=1#p3949x4064', title: 'gegen VT Ludwigslust', text: '2' }]
+    - [{ url: '?staffel=866&r=4#p3949x4141', title: 'gegen SV Gryps', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=866&r=5#p3949x4089', title: 'gegen SK Joh. Eppendorf', text: '2' }]
+    - 3
+    - '6'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SK Joh. Eppendorf', url: '?mannschaft=4089', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=866&r=4#p4089x4120', title: 'gegen SV Quickborn', text: '2' }]
+    - [{ url: '?staffel=866&r=1#p4089x4055', title: 'gegen Hamburger SK 3', text: ½ }]
+    - [{ url: '?staffel=866&r=2#p4089x4064', title: 'gegen VT Ludwigslust', text: ½ }]
+    - [{ url: '?staffel=866&r=3#p4089x4141', title: 'gegen SV Gryps', text: '0' }]
+    - [{ url: '?staffel=866&r=5#p4089x3949', title: 'gegen TuRa Harksheide 2', text: '2' }]
+    - xxx
+    - 2
+    - '5'
+    - absteiger

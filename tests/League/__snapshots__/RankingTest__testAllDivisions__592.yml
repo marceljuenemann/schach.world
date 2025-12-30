@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamelner SV 6', url: '?mannschaft=5389', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1331&r=2#p5389x5394', title: 'gegen ESV Göttingen 4', text: 2½ }]
+    - [{ url: '?staffel=1331&r=3#p5389x5393', title: 'gegen ESV Göttingen 3', text: '2' }]
+    - [{ url: '?staffel=1331&r=1#p5389x5395', title: 'gegen Hamelner SV 7', text: '2' }]
+    - 4
+    - 6½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'ESV Göttingen 4', url: '?mannschaft=5394', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1331&r=2#p5394x5389', title: 'gegen Hamelner SV 6', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1331&r=1#p5394x5393', title: 'gegen ESV Göttingen 3', text: '2' }]
+    - [{ url: '?staffel=1331&r=3#p5394x5395', title: 'gegen Hamelner SV 7', text: 3½ }]
+    - 3
+    - '7'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'ESV Göttingen 3', url: '?mannschaft=5393', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1331&r=3#p5393x5389', title: 'gegen Hamelner SV 6', text: '2' }]
+    - [{ url: '?staffel=1331&r=1#p5393x5394', title: 'gegen ESV Göttingen 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1331&r=2#p5393x5395', title: 'gegen Hamelner SV 7', text: '2' }]
+    - 3
+    - '6'
+    - ''
+-
+    - '4.'
+    - { text: 'Hamelner SV 7', url: '?mannschaft=5395', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1331&r=1#p5395x5389', title: 'gegen Hamelner SV 6', text: '2' }]
+    - [{ url: '?staffel=1331&r=3#p5395x5394', title: 'gegen ESV Göttingen 4', text: ½ }]
+    - [{ url: '?staffel=1331&r=2#p5395x5393', title: 'gegen ESV Göttingen 3', text: '2' }]
+    - xxx
+    - 2
+    - 4½
+    - ''

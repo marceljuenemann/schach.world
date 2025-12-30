@@ -1,4 +1,4 @@
-<?
+<?php
 /* Cache Bibliothek
  * 
  * In dieser Datei wird die Klasse SED_Cache zur Verfügung
@@ -32,59 +32,42 @@ class SED_Cache {
         if ( !$turnier ) $turnier = $globals ["tid"];
  
         // In den Cache speichern
-        mysql_query ( $x= "REPLACE INTO cache SET turnier='$turnier', staffel='$staffel', runde='$runde', typ='$typ', inhalt='". str_replace ( "'", "\\'", serialize ( $data ) ) ."'", $globals ['db'] );
+        SED_Query ( 'REPLACE INTO cache SET turnier=?, staffel=?, runde=?, typ=?, inhalt=?', [$turnier, $staffel, $runde, $typ, serialize ( $data )]);
     }
 
     // Lädt etwas aus dem Cache
     static function load ( $typ, $runde = 0, $staffel = 0 ){
-        global $globals;
-        
         // Aus dem Cache laden 
-        $rsrc = mysql_query ( "SELECT inhalt FROM cache WHERE typ='$typ' AND staffel='$staffel' AND runde='$runde' LIMIT 1", $globals ['db'] );
-        if ( $rsrc && mysql_num_rows ( $rsrc ) && !isset ( $_GET ['nocache'] ) ){
-            $row = mysql_fetch_array ( $rsrc, MYSQL_NUM );
-            return unserialize ( reset ( $row ) );
-        }	
+        if (!isset($_GET['nocache'])) {
+          $result = SED_Query(
+              "SELECT inhalt FROM cache WHERE typ = ? AND staffel = ? AND runde = ? LIMIT 1",
+              [$typ, $staffel, $runde]
+          )->fetchOne();
+          if ($result !== false) {
+            return unserialize($result);
+          }
+        }
         return false;
-    }
-        
-    // Löscht etwas aus dem Cache
-    static function clear ( $options = "1" ){
-        global $globals;
-        return mysql_query ( "DELETE FROM cache WHERE $options", $globals ['db'] );
     }
 
     // Löscht eine Mannschaft
-    static function clearTeam ( $mid, $type ){
-        global $globals;
-        $sql = "turnier='$globals[tid]' AND typ='$type'";
-        $sql .= $mid ? " AND runde='$mid'" : "";
-        return SED_Cache::clear ( $sql );
+    static function clearTeam($mid, $type) {
+      return self::clearAll();
     }
 
     // Löscht die Tabellen
-    static function clearTables ( $staffel = 0 ){
-        global $globals;
-        $sql = "turnier='$globals[tid]' AND (typ='Tabelle' OR typ='Kreuztabelle')";
-        $sql .= $staffel ? " AND staffel='$staffel'" : "";
-        return SED_Cache::clear ( $sql );
+    static function clearTables($staffel = 0) {
+      return self::clearAll();
     }
-    
+
     // Löscht eine Spieltag-Ansicht
-    static function clearSpieltag ( $staffel = 0, $runde = 0 ){
-        global $globals;
-        $sql = "turnier='$globals[tid]' AND (typ='Spieltag' OR typ='MatchDay')";
-        $sql .= $staffel ? " AND staffel='$staffel'" : "";
-        $sql .= $runde ? " AND runde='$runde'" : "";
-        return SED_Cache::clear ( $sql );
+    static function clearSpieltag($staffel = 0, $runde = 0) {
+      return self::clearAll();
     }
 
     // Löscht alles
-    static function clearAll ( $staffel = 0 ){
-        global $globals;
-        $sql = "turnier='$globals[tid]'";
-        $sql .= $staffel ? " AND staffel='$staffel'" : "";
-        return SED_Cache::clear ( $sql );
+    static function clearAll($staffel = 0) {
+      global $globals;
+      return SED_Query('DELETE FROM cache WHERE turnier = ?', [$globals['tid']]);
     }
 }
-?>

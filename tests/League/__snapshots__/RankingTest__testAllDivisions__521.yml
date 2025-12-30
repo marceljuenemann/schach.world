@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Doppelbauer Kiel', url: '?mannschaft=4465', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1003&r=2#p4465x4469', title: 'gegen SV Heiden', text: 5½ }]
+    - [{ url: '?staffel=1003&r=3#p4465x4464', title: 'gegen SV Wattenscheid', text: '5' }]
+    - [{ url: '?staffel=1003&r=1#p4465x4462', title: 'gegen SV Horst-Emscher', text: '3' }]
+    - [{ url: '?staffel=1003&r=6#p4465x4463', title: 'gegen Delmenhorster SK', text: '4' }]
+    - [{ url: '?staffel=1003&r=7#p4465x4468', title: 'gegen SK Münster', text: 5½ }]
+    - [{ url: '?staffel=1003&r=4#p4465x4467', title: 'gegen SV Mülheim-Nord', text: 4½ }]
+    - [{ url: '?staffel=1003&r=5#p4465x4466', title: 'gegen SV Holst Quickborn', text: 5½ }]
+    - 13
+    - '33'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Heiden', url: '?mannschaft=4469', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1003&r=2#p4469x4465', title: 'gegen Doppelbauer Kiel', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1003&r=7#p4469x4464', title: 'gegen SV Wattenscheid', text: 3½ }]
+    - [{ url: '?staffel=1003&r=5#p4469x4462', title: 'gegen SV Horst-Emscher', text: 1½ }]
+    - [{ url: '?staffel=1003&r=4#p4469x4463', title: 'gegen Delmenhorster SK', text: 3½ }]
+    - [{ url: '?staffel=1003&r=3#p4469x4468', title: 'gegen SK Münster', text: 4½ }]
+    - [{ url: '?staffel=1003&r=6#p4469x4467', title: 'gegen SV Mülheim-Nord', text: '3' }]
+    - [{ url: '?staffel=1003&r=1#p4469x4466', title: 'gegen SV Holst Quickborn', text: '6' }]
+    - 9
+    - 22½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Wattenscheid', url: '?mannschaft=4464', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1003&r=3#p4464x4465', title: 'gegen Doppelbauer Kiel', text: '1' }]
+    - [{ url: '?staffel=1003&r=7#p4464x4469', title: 'gegen SV Heiden', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1003&r=6#p4464x4462', title: 'gegen SV Horst-Emscher', text: 3½ }]
+    - [{ url: '?staffel=1003&r=1#p4464x4463', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=1003&r=2#p4464x4468', title: 'gegen SK Münster', text: '4' }]
+    - [{ url: '?staffel=1003&r=5#p4464x4467', title: 'gegen SV Mülheim-Nord', text: 3½ }]
+    - [{ url: '?staffel=1003&r=4#p4464x4466', title: 'gegen SV Holst Quickborn', text: '4' }]
+    - 9
+    - 21½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Horst-Emscher', url: '?mannschaft=4462', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1003&r=1#p4462x4465', title: 'gegen Doppelbauer Kiel', text: '3' }]
+    - [{ url: '?staffel=1003&r=5#p4462x4469', title: 'gegen SV Heiden', text: 4½ }]
+    - [{ url: '?staffel=1003&r=6#p4462x4464', title: 'gegen SV Wattenscheid', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1003&r=3#p4462x4463', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=1003&r=4#p4462x4468', title: 'gegen SK Münster', text: 2½ }]
+    - [{ url: '?staffel=1003&r=7#p4462x4467', title: 'gegen SV Mülheim-Nord', text: 3½ }]
+    - [{ url: '?staffel=1003&r=2#p4462x4466', title: 'gegen SV Holst Quickborn', text: '5' }]
+    - 8
+    - '24'
+    - ''
+-
+    - '5.'
+    - { text: 'Delmenhorster SK', url: '?mannschaft=4463', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1003&r=6#p4463x4465', title: 'gegen Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=1003&r=4#p4463x4469', title: 'gegen SV Heiden', text: 2½ }]
+    - [{ url: '?staffel=1003&r=1#p4463x4464', title: 'gegen SV Wattenscheid', text: '3' }]
+    - [{ url: '?staffel=1003&r=3#p4463x4462', title: 'gegen SV Horst-Emscher', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1003&r=5#p4463x4468', title: 'gegen SK Münster', text: 4½ }]
+    - [{ url: '?staffel=1003&r=2#p4463x4467', title: 'gegen SV Mülheim-Nord', text: '4' }]
+    - [{ url: '?staffel=1003&r=7#p4463x4466', title: 'gegen SV Holst Quickborn', text: '4' }]
+    - 8
+    - '23'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Münster', url: '?mannschaft=4468', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1003&r=7#p4468x4465', title: 'gegen Doppelbauer Kiel', text: ½ }]
+    - [{ url: '?staffel=1003&r=3#p4468x4469', title: 'gegen SV Heiden', text: 1½ }]
+    - [{ url: '?staffel=1003&r=2#p4468x4464', title: 'gegen SV Wattenscheid', text: '2' }]
+    - [{ url: '?staffel=1003&r=4#p4468x4462', title: 'gegen SV Horst-Emscher', text: 3½ }]
+    - [{ url: '?staffel=1003&r=5#p4468x4463', title: 'gegen Delmenhorster SK', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1003&r=1#p4468x4467', title: 'gegen SV Mülheim-Nord', text: '4' }]
+    - [{ url: '?staffel=1003&r=6#p4468x4466', title: 'gegen SV Holst Quickborn', text: 3½ }]
+    - 6
+    - 16½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Mülheim-Nord', url: '?mannschaft=4467', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1003&r=4#p4467x4465', title: 'gegen Doppelbauer Kiel', text: 1½ }]
+    - [{ url: '?staffel=1003&r=6#p4467x4469', title: 'gegen SV Heiden', text: '3' }]
+    - [{ url: '?staffel=1003&r=5#p4467x4464', title: 'gegen SV Wattenscheid', text: 2½ }]
+    - [{ url: '?staffel=1003&r=7#p4467x4462', title: 'gegen SV Horst-Emscher', text: 2½ }]
+    - [{ url: '?staffel=1003&r=2#p4467x4463', title: 'gegen Delmenhorster SK', text: '2' }]
+    - [{ url: '?staffel=1003&r=1#p4467x4468', title: 'gegen SK Münster', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1003&r=3#p4467x4466', title: 'gegen SV Holst Quickborn', text: 4½ }]
+    - 3
+    - '18'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SV Holst Quickborn', url: '?mannschaft=4466', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1003&r=5#p4466x4465', title: 'gegen Doppelbauer Kiel', text: ½ }]
+    - [{ url: '?staffel=1003&r=1#p4466x4469', title: 'gegen SV Heiden', text: '0' }]
+    - [{ url: '?staffel=1003&r=4#p4466x4464', title: 'gegen SV Wattenscheid', text: '2' }]
+    - [{ url: '?staffel=1003&r=2#p4466x4462', title: 'gegen SV Horst-Emscher', text: '1' }]
+    - [{ url: '?staffel=1003&r=7#p4466x4463', title: 'gegen Delmenhorster SK', text: '2' }]
+    - [{ url: '?staffel=1003&r=6#p4466x4468', title: 'gegen SK Münster', text: 2½ }]
+    - [{ url: '?staffel=1003&r=3#p4466x4467', title: 'gegen SV Mülheim-Nord', text: 1½ }]
+    - xxx
+    - 0
+    - 9½
+    - absteiger

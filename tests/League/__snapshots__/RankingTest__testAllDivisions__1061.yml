@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Blanke 8', url: '?mannschaft=8249', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1912&r=3#p8249x8250', title: 'gegen SK Nordhorn-Blanke 9', text: 2½ }]
+    - [{ url: '?staffel=1912&r=4#p8249x8253', title: 'gegen SF Spelle 5', text: '3' }]
+    - [{ url: '?staffel=1912&r=1#p8249x8252', title: 'gegen SK Meppen 5', text: '4' }]
+    - 6
+    - 9½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Meppen 4', url: '?mannschaft=8251', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1912&r=1#p8251x8250', title: 'gegen SK Nordhorn-Blanke 9', text: '3' }]
+    - [{ url: '?staffel=1912&r=2#p8251x8253', title: 'gegen SF Spelle 5', text: '3' }]
+    - [{ url: '?staffel=1912&r=4#p8251x8252', title: 'gegen SK Meppen 5', text: '3' }]
+    - 6
+    - '9'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Nordhorn-Blanke 9', url: '?mannschaft=8250', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1912&r=3#p8250x8249', title: 'gegen SK Nordhorn-Blanke 8', text: 1½ }]
+    - [{ url: '?staffel=1912&r=1#p8250x8251', title: 'gegen SK Meppen 4', text: '1' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1912&r=2#p8250x8252', title: 'gegen SK Meppen 5', text: '3' }]
+    - 2
+    - 5½
+    - ''
+-
+    - '4.'
+    - { text: 'SF Spelle 5', url: '?mannschaft=8253', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1912&r=4#p8253x8249', title: 'gegen SK Nordhorn-Blanke 8', text: '1' }]
+    - [{ url: '?staffel=1912&r=2#p8253x8251', title: 'gegen SK Meppen 4', text: '1' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1912&r=3#p8253x8252', title: 'gegen SK Meppen 5', text: '3' }]
+    - 2
+    - '5'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Meppen 5', url: '?mannschaft=8252', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1912&r=1#p8252x8249', title: 'gegen SK Nordhorn-Blanke 8', text: '0' }]
+    - [{ url: '?staffel=1912&r=4#p8252x8251', title: 'gegen SK Meppen 4', text: '1' }]
+    - [{ url: '?staffel=1912&r=2#p8252x8250', title: 'gegen SK Nordhorn-Blanke 9', text: '1' }]
+    - [{ url: '?staffel=1912&r=3#p8252x8253', title: 'gegen SF Spelle 5', text: '1' }]
+    - xxx
+    - 0
+    - '3'
+    - ''

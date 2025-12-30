@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamburger SK', url: '?mannschaft=6562', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1569&r=5#p6562x6561', title: 'gegen Lübecker SV', text: '4' }]
+    - [{ url: '?staffel=1569&r=2#p6562x6541', title: 'gegen Makkabi Rostock', text: 4½ }]
+    - [{ url: '?staffel=1569&r=3#p6562x6568', title: 'gegen Johanneum Eppendorf', text: '6' }]
+    - [{ url: '?staffel=1569&r=1#p6562x6565', title: 'gegen Weiße Dame HH', text: '6' }]
+    - 8
+    - 20½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Lübecker SV', url: '?mannschaft=6561', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1569&r=5#p6561x6562', title: 'gegen Hamburger SK', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1569&r=3#p6561x6541', title: 'gegen Makkabi Rostock', text: 4½ }]
+    - [{ url: '?staffel=1569&r=4#p6561x6568', title: 'gegen Johanneum Eppendorf', text: '4' }]
+    - [{ url: '?staffel=1569&r=2#p6561x6565', title: 'gegen Weiße Dame HH', text: '5' }]
+    - 6
+    - 15½
+    - ''
+-
+    - '3.'
+    - { text: 'Makkabi Rostock', url: '?mannschaft=6541', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1569&r=2#p6541x6562', title: 'gegen Hamburger SK', text: 1½ }]
+    - [{ url: '?staffel=1569&r=3#p6541x6561', title: 'gegen Lübecker SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1569&r=1#p6541x6568', title: 'gegen Johanneum Eppendorf', text: 3½ }]
+    - [{ url: '?staffel=1569&r=4#p6541x6565', title: 'gegen Weiße Dame HH', text: 2½ }]
+    - 2
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'Johanneum Eppendorf', url: '?mannschaft=6568', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1569&r=3#p6568x6562', title: 'gegen Hamburger SK', text: '0' }]
+    - [{ url: '?staffel=1569&r=4#p6568x6561', title: 'gegen Lübecker SV', text: '2' }]
+    - [{ url: '?staffel=1569&r=1#p6568x6541', title: 'gegen Makkabi Rostock', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1569&r=5#p6568x6565', title: 'gegen Weiße Dame HH', text: 3½ }]
+    - 2
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'Weiße Dame HH', url: '?mannschaft=6565', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1569&r=1#p6565x6562', title: 'gegen Hamburger SK', text: '0' }]
+    - [{ url: '?staffel=1569&r=2#p6565x6561', title: 'gegen Lübecker SV', text: '1' }]
+    - [{ url: '?staffel=1569&r=4#p6565x6541', title: 'gegen Makkabi Rostock', text: 3½ }]
+    - [{ url: '?staffel=1569&r=5#p6565x6568', title: 'gegen Johanneum Eppendorf', text: 2½ }]
+    - xxx
+    - 2
+    - '7'
+    - ''

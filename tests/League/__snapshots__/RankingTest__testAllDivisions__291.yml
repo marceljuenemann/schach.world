@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: Schach.Bemerode, url: '?mannschaft=3146', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=726&r=2#p3146x3097', title: 'gegen ST Langenhagen 2', text: '2' }]
+    - [{ url: '?staffel=726&r=8#p3146x3080', title: 'gegen SV Laatzen 3', text: 5½ }]
+    - [{ url: '?staffel=726&r=5#p3146x3143', title: 'gegen SF Hannover 4', text: 4½ }]
+    - [{ url: '?staffel=726&r=6#p3146x3128', title: 'gegen SV Gretenberg 2', text: '6' }]
+    - [{ url: '?staffel=726&r=9#p3146x3154', title: 'gegen SK Anderten 2', text: 6½ }]
+    - [{ url: '?staffel=726&r=1#p3146x3162', title: 'gegen SD Isernhagen 3', text: 6½ }]
+    - [{ url: '?staffel=726&r=7#p3146x3110', title: 'gegen SK Lehrte 6', text: '8' }]
+    - [{ url: '?staffel=726&r=3#p3146x3185', title: 'gegen TSV Burgdorf', text: 7½ }]
+    - 14
+    - 46½
+    - ''
+-
+    - '2.'
+    - { text: 'ST Langenhagen 2', url: '?mannschaft=3097', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=726&r=2#p3097x3146', title: 'gegen Schach.Bemerode', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=726&r=6#p3097x3080', title: 'gegen SV Laatzen 3', text: '5' }]
+    - [{ url: '?staffel=726&r=3#p3097x3143', title: 'gegen SF Hannover 4', text: '4' }]
+    - [{ url: '?staffel=726&r=4#p3097x3128', title: 'gegen SV Gretenberg 2', text: '4' }]
+    - [{ url: '?staffel=726&r=7#p3097x3154', title: 'gegen SK Anderten 2', text: 4½ }]
+    - [{ url: '?staffel=726&r=8#p3097x3162', title: 'gegen SD Isernhagen 3', text: '7' }]
+    - [{ url: '?staffel=726&r=5#p3097x3110', title: 'gegen SK Lehrte 6', text: 6½ }]
+    - [{ url: '?staffel=726&r=1#p3097x3185', title: 'gegen TSV Burgdorf', text: '7' }]
+    - 14
+    - '44'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Laatzen 3', url: '?mannschaft=3080', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=726&r=8#p3080x3146', title: 'gegen Schach.Bemerode', text: 2½ }]
+    - [{ url: '?staffel=726&r=6#p3080x3097', title: 'gegen ST Langenhagen 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=726&r=9#p3080x3143', title: 'gegen SF Hannover 4', text: '4' }]
+    - [{ url: '?staffel=726&r=1#p3080x3128', title: 'gegen SV Gretenberg 2', text: 3½ }]
+    - [{ url: '?staffel=726&r=4#p3080x3154', title: 'gegen SK Anderten 2', text: '5' }]
+    - [{ url: '?staffel=726&r=5#p3080x3162', title: 'gegen SD Isernhagen 3', text: 5½ }]
+    - [{ url: '?staffel=726&r=2#p3080x3110', title: 'gegen SK Lehrte 6', text: '6' }]
+    - [{ url: '?staffel=726&r=7#p3080x3185', title: 'gegen TSV Burgdorf', text: 6½ }]
+    - 10
+    - '36'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Hannover 4', url: '?mannschaft=3143', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=726&r=5#p3143x3146', title: 'gegen Schach.Bemerode', text: 3½ }]
+    - [{ url: '?staffel=726&r=3#p3143x3097', title: 'gegen ST Langenhagen 2', text: '4' }]
+    - [{ url: '?staffel=726&r=9#p3143x3080', title: 'gegen SV Laatzen 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=726&r=7#p3143x3128', title: 'gegen SV Gretenberg 2', text: '5' }]
+    - [{ url: '?staffel=726&r=1#p3143x3154', title: 'gegen SK Anderten 2', text: 4½ }]
+    - [{ url: '?staffel=726&r=2#p3143x3162', title: 'gegen SD Isernhagen 3', text: 4½ }]
+    - [{ url: '?staffel=726&r=8#p3143x3110', title: 'gegen SK Lehrte 6', text: '5' }]
+    - [{ url: '?staffel=726&r=4#p3143x3185', title: 'gegen TSV Burgdorf', text: 3½ }]
+    - 9
+    - '33'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Gretenberg 2', url: '?mannschaft=3128', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=726&r=6#p3128x3146', title: 'gegen Schach.Bemerode', text: '2' }]
+    - [{ url: '?staffel=726&r=4#p3128x3097', title: 'gegen ST Langenhagen 2', text: '4' }]
+    - [{ url: '?staffel=726&r=1#p3128x3080', title: 'gegen SV Laatzen 3', text: 4½ }]
+    - [{ url: '?staffel=726&r=7#p3128x3143', title: 'gegen SF Hannover 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=726&r=2#p3128x3154', title: 'gegen SK Anderten 2', text: 3½ }]
+    - [{ url: '?staffel=726&r=3#p3128x3162', title: 'gegen SD Isernhagen 3', text: 3½ }]
+    - [{ url: '?staffel=726&r=9#p3128x3110', title: 'gegen SK Lehrte 6', text: '5' }]
+    - [{ url: '?staffel=726&r=5#p3128x3185', title: 'gegen TSV Burgdorf', text: 5½ }]
+    - 7
+    - '31'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=3154', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=726&r=9#p3154x3146', title: 'gegen Schach.Bemerode', text: 1½ }]
+    - [{ url: '?staffel=726&r=7#p3154x3097', title: 'gegen ST Langenhagen 2', text: 2½ }]
+    - [{ url: '?staffel=726&r=4#p3154x3080', title: 'gegen SV Laatzen 3', text: '3' }]
+    - [{ url: '?staffel=726&r=1#p3154x3143', title: 'gegen SF Hannover 4', text: 3½ }]
+    - [{ url: '?staffel=726&r=2#p3154x3128', title: 'gegen SV Gretenberg 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=726&r=6#p3154x3162', title: 'gegen SD Isernhagen 3', text: '5' }]
+    - [{ url: '?staffel=726&r=3#p3154x3110', title: 'gegen SK Lehrte 6', text: 2½ }]
+    - [{ url: '?staffel=726&r=8#p3154x3185', title: 'gegen TSV Burgdorf', text: 7½ }]
+    - 6
+    - '30'
+    - ''
+-
+    - '7.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=3162', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=726&r=1#p3162x3146', title: 'gegen Schach.Bemerode', text: 1½ }]
+    - [{ url: '?staffel=726&r=8#p3162x3097', title: 'gegen ST Langenhagen 2', text: '1' }]
+    - [{ url: '?staffel=726&r=5#p3162x3080', title: 'gegen SV Laatzen 3', text: 2½ }]
+    - [{ url: '?staffel=726&r=2#p3162x3143', title: 'gegen SF Hannover 4', text: 3½ }]
+    - [{ url: '?staffel=726&r=3#p3162x3128', title: 'gegen SV Gretenberg 2', text: 4½ }]
+    - [{ url: '?staffel=726&r=6#p3162x3154', title: 'gegen SK Anderten 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=726&r=4#p3162x3110', title: 'gegen SK Lehrte 6', text: 3½ }]
+    - [{ url: '?staffel=726&r=9#p3162x3185', title: 'gegen TSV Burgdorf', text: '8' }]
+    - 4
+    - 27½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Lehrte 6', url: '?mannschaft=3110', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=726&r=7#p3110x3146', title: 'gegen Schach.Bemerode', text: '0' }]
+    - [{ url: '?staffel=726&r=5#p3110x3097', title: 'gegen ST Langenhagen 2', text: 1½ }]
+    - [{ url: '?staffel=726&r=2#p3110x3080', title: 'gegen SV Laatzen 3', text: '2' }]
+    - [{ url: '?staffel=726&r=8#p3110x3143', title: 'gegen SF Hannover 4', text: '3' }]
+    - [{ url: '?staffel=726&r=9#p3110x3128', title: 'gegen SV Gretenberg 2', text: '3' }]
+    - [{ url: '?staffel=726&r=3#p3110x3154', title: 'gegen SK Anderten 2', text: 5½ }]
+    - [{ url: '?staffel=726&r=4#p3110x3162', title: 'gegen SD Isernhagen 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=726&r=6#p3110x3185', title: 'gegen TSV Burgdorf', text: '3' }]
+    - 4
+    - 22½
+    - ''
+-
+    - '9.'
+    - { text: 'TSV Burgdorf', url: '?mannschaft=3185', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=726&r=3#p3185x3146', title: 'gegen Schach.Bemerode', text: ½ }]
+    - [{ url: '?staffel=726&r=1#p3185x3097', title: 'gegen ST Langenhagen 2', text: '1' }]
+    - [{ url: '?staffel=726&r=7#p3185x3080', title: 'gegen SV Laatzen 3', text: 1½ }]
+    - [{ url: '?staffel=726&r=4#p3185x3143', title: 'gegen SF Hannover 4', text: 4½ }]
+    - [{ url: '?staffel=726&r=5#p3185x3128', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - [{ url: '?staffel=726&r=8#p3185x3154', title: 'gegen SK Anderten 2', text: ½ }]
+    - [{ url: '?staffel=726&r=9#p3185x3162', title: 'gegen SD Isernhagen 3', text: '0' }]
+    - [{ url: '?staffel=726&r=6#p3185x3110', title: 'gegen SK Lehrte 6', text: '5' }]
+    - xxx
+    - 4
+    - 15½
+    - ''

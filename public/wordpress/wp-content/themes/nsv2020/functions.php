@@ -1,11 +1,10 @@
 <?php
 define('NSV2020_PATH', ABSPATH . '../core/nsv2020');
 
-// Include some parts of the legacy NSV system for functions like NsvDb().
-// TODO: Stop doing that once the widgets no longer require this. 
+// Include some parts of the legacy NSV system for functions like NsvPdo().
+// TODO: Migrate to nsv-v3 once legacy system no longer in use.
 $nsv['basedir'] = ABSPATH . '..';
 $nsv['utf8'] = true;
-require_once(ABSPATH . '../libs/mysql-shim.php');
 require_once(ABSPATH . '../core/config.inc.php');
 require_once(ABSPATH . '../core/functions.inc.php');
 
@@ -21,7 +20,7 @@ add_action( 'widgets_init', function() {
   register_sidebar([
     'name'          => 'Startseiten Sidebar',
     'id'            => 'frontpage_sidebar',
-    'before_widget' => "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>",
+    'before_widget' => "<div class='card shadow nsv-card nsv-sidebar-card' data-widget-title='%2\$s'><div class='card-body'>",
     'after_widget'  => "</div></div>",
     'before_title'  => "<h5 class='card-title'>",
     'after_title'   => '</h5>',

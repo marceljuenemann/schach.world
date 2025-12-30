@@ -1,6 +1,8 @@
 <?php
 namespace NSV\Turniere\Ergebnisse;
 
+use NSV\Core\Auth;
+
 // TODO: Rename to BasePage
 abstract class Base extends \NSV\Core\Page {
   protected $tournament;
@@ -106,6 +108,10 @@ abstract class Base extends \NSV\Core\Page {
       echo "<li class='nav-item'><a class='nav-link' href='$url'>$label</a></li>";
     }
     
+    if (Auth::isAdmin()) {
+      echo "<li class='nav-item'><a class='nav-link' href='{$base_url}admin/'>Admin</a></li>";
+    }
+
     echo '</ul>';
   }
 

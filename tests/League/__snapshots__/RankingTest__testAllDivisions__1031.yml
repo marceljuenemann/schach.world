@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=8560', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1881&r=1#p8560x8469', title: 'gegen SK Anderten', text: '3' }]
+    - [{ url: '?staffel=1881&r=1#p8560x8550', title: 'gegen SC Uetze-Hänigsen', text: '4' }]
+    - {  }
+    - 4
+    - '7'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hannover 96', url: '?mannschaft=8517', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1881&r=1#p8517x8469', title: 'gegen SK Anderten', text: 1½ }]
+    - [{ url: '?staffel=1881&r=1#p8517x8550', title: 'gegen SC Uetze-Hänigsen', text: '4' }]
+    - {  }
+    - 2
+    - 5½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte', url: '?mannschaft=8374', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1881&r=1#p8374x8375', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 2
+    - '4'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Anderten', url: '?mannschaft=8469', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1881&r=1#p8469x8560', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1881&r=1#p8469x8517', title: 'gegen Hannover 96', text: 2½ }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - 3½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Uetze-Hänigsen', url: '?mannschaft=8550', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1881&r=1#p8550x8560', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1881&r=1#p8550x8517', title: 'gegen Hannover 96', text: '0' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=8375', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1881&r=1#p8375x8374', title: 'gegen SK Lehrte', text: '0' }]
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

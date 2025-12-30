@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=5308', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1039&r=2#p5308x5304', title: 'gegen SK Rinteln', text: 2½ }]
+    - [{ url: '?staffel=1039&r=3#p5308x5323', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=1039&r=4#p5308x5295', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=1039&r=1#p5308x5272', title: 'gegen HSK Lister Turm', text: '4' }]
+    - 8
+    - 12½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Rinteln', url: '?mannschaft=5304', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1039&r=2#p5304x5308', title: 'gegen SZ Bemerode', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1039&r=5#p5304x5323', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1039&r=1#p5304x5295', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=1039&r=3#p5304x5272', title: 'gegen HSK Lister Turm', text: '3' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte', url: '?mannschaft=5323', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1039&r=3#p5323x5308', title: 'gegen SZ Bemerode', text: 1½ }]
+    - [{ url: '?staffel=1039&r=5#p5323x5304', title: 'gegen SK Rinteln', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1039&r=2#p5323x5295', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=1039&r=4#p5323x5272', title: 'gegen HSK Lister Turm', text: '4' }]
+    - 4
+    - 10½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Springe', url: '?mannschaft=5295', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1039&r=4#p5295x5308', title: 'gegen SZ Bemerode', text: ½ }]
+    - [{ url: '?staffel=1039&r=1#p5295x5304', title: 'gegen SK Rinteln', text: ½ }]
+    - [{ url: '?staffel=1039&r=2#p5295x5323', title: 'gegen SK Lehrte', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1039&r=5#p5295x5272', title: 'gegen HSK Lister Turm', text: '3' }]
+    - 2
+    - '4'
+    - ''
+-
+    - '5.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=5272', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1039&r=1#p5272x5308', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1039&r=3#p5272x5304', title: 'gegen SK Rinteln', text: '1' }]
+    - [{ url: '?staffel=1039&r=4#p5272x5323', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1039&r=5#p5272x5295', title: 'gegen SV Springe', text: '1' }]
+    - xxx
+    - 0
+    - '2'
+    - ''

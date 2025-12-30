@@ -1,4 +1,4 @@
-<?
+<?php
 /* Paarungstafel Bibliothek
  * 
  * Berechnet die Paarungstafel zu einer gegebenen Anzahl von

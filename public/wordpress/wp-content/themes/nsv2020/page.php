@@ -10,5 +10,5 @@
   }
 
   echo '</div><div class="col-12 col-lg-3" id="nsv-sidebar">';
-  get_template_part('sidebar/navigation-sidebar');
+  dynamic_sidebar('frontpage_sidebar');
   get_footer(); 

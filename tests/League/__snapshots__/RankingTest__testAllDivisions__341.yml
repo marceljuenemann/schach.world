@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Goslar', url: '?mannschaft=3337', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=782&r=3#p3337x3338', title: 'gegen Osterode-Südharz', text: '2' }]
+    - [{ url: '?staffel=782&r=2#p3337x3336', title: 'gegen Bad Salzdetfurth', text: 2½ }]
+    - [{ url: '?staffel=782&r=4#p3337x3339', title: 'gegen Scharnhorst Hi', text: '3' }]
+    - [{ url: '?staffel=782&r=5#p3337x3335', title: 'gegen Hildesheimer SV', text: 2½ }]
+    - 7
+    - '10'
+    - ''
+-
+    - '2.'
+    - { text: Osterode-Südharz, url: '?mannschaft=3338', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=782&r=3#p3338x3337', title: 'gegen SK Goslar', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=782&r=1#p3338x3336', title: 'gegen Bad Salzdetfurth', text: '3' }]
+    - [{ url: '?staffel=782&r=2#p3338x3339', title: 'gegen Scharnhorst Hi', text: '2' }]
+    - [{ url: '?staffel=782&r=4#p3338x3335', title: 'gegen Hildesheimer SV', text: '3' }]
+    - 6
+    - '10'
+    - ''
+-
+    - '3.'
+    - { text: 'Bad Salzdetfurth', url: '?mannschaft=3336', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=782&r=2#p3336x3337', title: 'gegen SK Goslar', text: 1½ }]
+    - [{ url: '?staffel=782&r=1#p3336x3338', title: 'gegen Osterode-Südharz', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=782&r=5#p3336x3339', title: 'gegen Scharnhorst Hi', text: '4' }]
+    - [{ url: '?staffel=782&r=3#p3336x3335', title: 'gegen Hildesheimer SV', text: 3½ }]
+    - 4
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'Scharnhorst Hi', url: '?mannschaft=3339', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=782&r=4#p3339x3337', title: 'gegen SK Goslar', text: '1' }]
+    - [{ url: '?staffel=782&r=2#p3339x3338', title: 'gegen Osterode-Südharz', text: '2' }]
+    - [{ url: '?staffel=782&r=5#p3339x3336', title: 'gegen Bad Salzdetfurth', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=782&r=1#p3339x3335', title: 'gegen Hildesheimer SV', text: '3' }]
+    - 3
+    - '6'
+    - ''
+-
+    - '5.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=3335', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=782&r=5#p3335x3337', title: 'gegen SK Goslar', text: 1½ }]
+    - [{ url: '?staffel=782&r=4#p3335x3338', title: 'gegen Osterode-Südharz', text: '1' }]
+    - [{ url: '?staffel=782&r=3#p3335x3336', title: 'gegen Bad Salzdetfurth', text: ½ }]
+    - [{ url: '?staffel=782&r=1#p3335x3339', title: 'gegen Scharnhorst Hi', text: '1' }]
+    - xxx
+    - 0
+    - '4'
+    - ''

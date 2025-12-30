@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SVG Salzgitter e. V.', url: '?mannschaft=8422', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1891&r=1#p8422x8434', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=1891&r=1#p8422x8452', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=1891&r=3#p8422x8430', title: 'gegen ESV Göttingen', text: '4' }]
+    - [{ url: '?staffel=1891&r=2#p8422x8436', title: 'gegen Plesse Bovenden', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1891&r=3#p8422x8431', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=1891&r=2#p8422x8437', title: 'gegen Plesse Bovenden 2', text: '4' }]
+    - [{ url: '?staffel=1891&r=4#p8422x8433', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1891&r=4#p8422x8432', title: 'gegen Hildesheimer SV', text: '4' }]
+    - 15
+    - '30'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SV Springe', url: '?mannschaft=8434', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1891&r=1#p8434x8422', title: 'gegen SVG Salzgitter e. V.', text: '2' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1891&r=2#p8434x8430', title: 'gegen ESV Göttingen', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1891&r=1#p8434x8435', title: 'gegen SG Goslar-Harzburg', text: '4' }]
+    - [{ url: '?staffel=1891&r=2#p8434x8431', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1891&r=3#p8434x8433', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1891&r=3#p8434x8432', title: 'gegen Hildesheimer SV', text: '4' }]
+    - 11
+    - 20½
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=8452', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1891&r=1#p8452x8422', title: 'gegen SVG Salzgitter e. V.', text: '0' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1891&r=2#p8452x8430', title: 'gegen ESV Göttingen', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1891&r=1#p8452x8435', title: 'gegen SG Goslar-Harzburg', text: '4' }]
+    - [{ url: '?staffel=1891&r=2#p8452x8431', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1891&r=3#p8452x8433', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1891&r=3#p8452x8432', title: 'gegen Hildesheimer SV', text: '4' }]
+    - 10
+    - 18½
+    - ''
+-
+    - '4.'
+    - { text: 'ESV Göttingen', url: '?mannschaft=8430', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1891&r=3#p8430x8422', title: 'gegen SVG Salzgitter e. V.', text: '0' }]
+    - [{ url: '?staffel=1891&r=2#p8430x8434', title: 'gegen SV Springe', text: 1½ }]
+    - [{ url: '?staffel=1891&r=2#p8430x8452', title: 'gegen TuS Wunstorf', text: 1½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1891&r=3#p8430x8435', title: 'gegen SG Goslar-Harzburg', text: '3' }]
+    - [{ url: '?staffel=1891&r=1#p8430x8431', title: 'gegen ESV Göttingen 2', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1891&r=5#p8430x8433', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1891&r=5#p8430x8432', title: 'gegen Hildesheimer SV', text: '4' }]
+    - 8
+    - '17'
+    - ''
+-
+    - '5.'
+    - { text: 'Plesse Bovenden', url: '?mannschaft=8436', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1891&r=2#p8436x8422', title: 'gegen SVG Salzgitter e. V.', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1891&r=2#p8436x8435', title: 'gegen SG Goslar-Harzburg', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1891&r=3#p8436x8437', title: 'gegen Plesse Bovenden 2', text: 3½ }]
+    - [{ url: '?staffel=1891&r=1#p8436x8433', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1891&r=1#p8436x8432', title: 'gegen Hildesheimer SV', text: '4' }]
+    - 8
+    - 14½
+    - ''
+-
+    - '6.'
+    - { text: 'SG Goslar-Harzburg', url: '?mannschaft=8435', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1891&r=1#p8435x8434', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1891&r=1#p8435x8452', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=1891&r=3#p8435x8430', title: 'gegen ESV Göttingen', text: '1' }]
+    - [{ url: '?staffel=1891&r=2#p8435x8436', title: 'gegen Plesse Bovenden', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1891&r=3#p8435x8431', title: 'gegen ESV Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1891&r=2#p8435x8437', title: 'gegen Plesse Bovenden 2', text: 2½ }]
+    - [{ url: '?staffel=1891&r=4#p8435x8433', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1891&r=4#p8435x8432', title: 'gegen Hildesheimer SV', text: '4' }]
+    - 7
+    - 14½
+    - ''
+-
+    - '7.'
+    - { text: 'ESV Göttingen 2', url: '?mannschaft=8431', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1891&r=3#p8431x8422', title: 'gegen SVG Salzgitter e. V.', text: '0' }]
+    - [{ url: '?staffel=1891&r=2#p8431x8434', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1891&r=2#p8431x8452', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=1891&r=1#p8431x8430', title: 'gegen ESV Göttingen', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1891&r=3#p8431x8435', title: 'gegen SG Goslar-Harzburg', text: '2' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1891&r=5#p8431x8433', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1891&r=5#p8431x8432', title: 'gegen Hildesheimer SV', text: '4' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '8.'
+    - { text: 'Plesse Bovenden 2', url: '?mannschaft=8437', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1891&r=2#p8437x8422', title: 'gegen SVG Salzgitter e. V.', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1891&r=3#p8437x8436', title: 'gegen Plesse Bovenden', text: ½ }]
+    - [{ url: '?staffel=1891&r=2#p8437x8435', title: 'gegen SG Goslar-Harzburg', text: ½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1891&r=1#p8437x8433', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1891&r=1#p8437x8432', title: 'gegen Hildesheimer SV', text: '4' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '9.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=8433', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1891&r=4#p8433x8422', title: 'gegen SVG Salzgitter e. V.', text: '0' }]
+    - [{ url: '?staffel=1891&r=3#p8433x8434', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1891&r=3#p8433x8452', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=1891&r=5#p8433x8430', title: 'gegen ESV Göttingen', text: '0' }]
+    - [{ url: '?staffel=1891&r=1#p8433x8436', title: 'gegen Plesse Bovenden', text: '0' }]
+    - [{ url: '?staffel=1891&r=4#p8433x8435', title: 'gegen SG Goslar-Harzburg', text: '0' }]
+    - [{ url: '?staffel=1891&r=5#p8433x8431', title: 'gegen ESV Göttingen 2', text: '0' }]
+    - [{ url: '?staffel=1891&r=1#p8433x8437', title: 'gegen Plesse Bovenden 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1891&r=2#p8433x8432', title: 'gegen Hildesheimer SV', text: '0' }]
+    - 0
+    - '0'
+    - ''
+-
+    - '10.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=8432', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1891&r=4#p8432x8422', title: 'gegen SVG Salzgitter e. V.', text: '0' }]
+    - [{ url: '?staffel=1891&r=3#p8432x8434', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1891&r=3#p8432x8452', title: 'gegen TuS Wunstorf', text: '0' }]
+    - [{ url: '?staffel=1891&r=5#p8432x8430', title: 'gegen ESV Göttingen', text: '0' }]
+    - [{ url: '?staffel=1891&r=1#p8432x8436', title: 'gegen Plesse Bovenden', text: '0' }]
+    - [{ url: '?staffel=1891&r=4#p8432x8435', title: 'gegen SG Goslar-Harzburg', text: '0' }]
+    - [{ url: '?staffel=1891&r=5#p8432x8431', title: 'gegen ESV Göttingen 2', text: '0' }]
+    - [{ url: '?staffel=1891&r=1#p8432x8437', title: 'gegen Plesse Bovenden 2', text: '0' }]
+    - [{ url: '?staffel=1891&r=2#p8432x8433', title: 'gegen Hildesheimer SV 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

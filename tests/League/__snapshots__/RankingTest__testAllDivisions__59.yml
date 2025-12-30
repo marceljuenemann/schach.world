@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Ricklingen 3', url: '?mannschaft=910', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=458&r=4#p910x751', title: 'gegen SV Springe 2', text: 5½ }]
+    - [{ url: '?staffel=458&r=7#p910x782', title: 'gegen SV Bückeburg 2', text: 5½ }]
+    - [{ url: '?staffel=458&r=6#p910x917', title: 'gegen SF Mühlenberg', text: 4½ }]
+    - [{ url: '?staffel=458&r=3#p910x787', title: 'gegen Eldagsen/Bad Mü 2', text: '5' }]
+    - [{ url: '?staffel=458&r=5#p910x791', title: 'gegen SF Hannover 4', text: 6½ }]
+    - [{ url: '?staffel=458&r=2#p910x758', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - [{ url: '?staffel=458&r=1#p910x773', title: 'gegen Barsinghausen 3', text: 7½ }]
+    - 14
+    - '39'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Springe 2', url: '?mannschaft=751', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=458&r=4#p751x910', title: 'gegen SK Ricklingen 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=458&r=3#p751x782', title: 'gegen SV Bückeburg 2', text: '5' }]
+    - [{ url: '?staffel=458&r=2#p751x917', title: 'gegen SF Mühlenberg', text: '5' }]
+    - [{ url: '?staffel=458&r=6#p751x787', title: 'gegen Eldagsen/Bad Mü 2', text: '6' }]
+    - [{ url: '?staffel=458&r=1#p751x791', title: 'gegen SF Hannover 4', text: '4' }]
+    - [{ url: '?staffel=458&r=5#p751x758', title: 'gegen SK Rinteln 2', text: '6' }]
+    - [{ url: '?staffel=458&r=7#p751x773', title: 'gegen Barsinghausen 3', text: '8' }]
+    - 11
+    - 36½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=782', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=458&r=7#p782x910', title: 'gegen SK Ricklingen 3', text: 2½ }]
+    - [{ url: '?staffel=458&r=3#p782x751', title: 'gegen SV Springe 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=458&r=5#p782x917', title: 'gegen SF Mühlenberg', text: 4½ }]
+    - [{ url: '?staffel=458&r=2#p782x787', title: 'gegen Eldagsen/Bad Mü 2', text: 6½ }]
+    - [{ url: '?staffel=458&r=4#p782x791', title: 'gegen SF Hannover 4', text: 4½ }]
+    - [{ url: '?staffel=458&r=1#p782x758', title: 'gegen SK Rinteln 2', text: 6½ }]
+    - [{ url: '?staffel=458&r=6#p782x773', title: 'gegen Barsinghausen 3', text: 6½ }]
+    - 10
+    - '34'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Mühlenberg', url: '?mannschaft=917', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=458&r=6#p917x910', title: 'gegen SK Ricklingen 3', text: 3½ }]
+    - [{ url: '?staffel=458&r=2#p917x751', title: 'gegen SV Springe 2', text: '3' }]
+    - [{ url: '?staffel=458&r=5#p917x782', title: 'gegen SV Bückeburg 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=458&r=1#p917x787', title: 'gegen Eldagsen/Bad Mü 2', text: '6' }]
+    - [{ url: '?staffel=458&r=3#p917x791', title: 'gegen SF Hannover 4', text: '5' }]
+    - [{ url: '?staffel=458&r=7#p917x758', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - [{ url: '?staffel=458&r=4#p917x773', title: 'gegen Barsinghausen 3', text: 6½ }]
+    - 8
+    - '32'
+    - ''
+-
+    - '5.'
+    - { text: 'Eldagsen/Bad Mü 2', url: '?mannschaft=787', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=458&r=3#p787x910', title: 'gegen SK Ricklingen 3', text: '3' }]
+    - [{ url: '?staffel=458&r=6#p787x751', title: 'gegen SV Springe 2', text: '2' }]
+    - [{ url: '?staffel=458&r=2#p787x782', title: 'gegen SV Bückeburg 2', text: 1½ }]
+    - [{ url: '?staffel=458&r=1#p787x917', title: 'gegen SF Mühlenberg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=458&r=7#p787x791', title: 'gegen SF Hannover 4', text: 5½ }]
+    - [{ url: '?staffel=458&r=4#p787x758', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - [{ url: '?staffel=458&r=5#p787x773', title: 'gegen Barsinghausen 3', text: '7' }]
+    - 6
+    - 25½
+    - ''
+-
+    - '6.'
+    - { text: 'SF Hannover 4', url: '?mannschaft=791', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=458&r=5#p791x910', title: 'gegen SK Ricklingen 3', text: 1½ }]
+    - [{ url: '?staffel=458&r=1#p791x751', title: 'gegen SV Springe 2', text: '4' }]
+    - [{ url: '?staffel=458&r=4#p791x782', title: 'gegen SV Bückeburg 2', text: 3½ }]
+    - [{ url: '?staffel=458&r=3#p791x917', title: 'gegen SF Mühlenberg', text: '3' }]
+    - [{ url: '?staffel=458&r=7#p791x787', title: 'gegen Eldagsen/Bad Mü 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=458&r=6#p791x758', title: 'gegen SK Rinteln 2', text: '5' }]
+    - [{ url: '?staffel=458&r=2#p791x773', title: 'gegen Barsinghausen 3', text: 4½ }]
+    - 5
+    - '24'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=758', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=458&r=2#p758x910', title: 'gegen SK Ricklingen 3', text: 3½ }]
+    - [{ url: '?staffel=458&r=5#p758x751', title: 'gegen SV Springe 2', text: '2' }]
+    - [{ url: '?staffel=458&r=1#p758x782', title: 'gegen SV Bückeburg 2', text: 1½ }]
+    - [{ url: '?staffel=458&r=7#p758x917', title: 'gegen SF Mühlenberg', text: 3½ }]
+    - [{ url: '?staffel=458&r=4#p758x787', title: 'gegen Eldagsen/Bad Mü 2', text: 3½ }]
+    - [{ url: '?staffel=458&r=6#p758x791', title: 'gegen SF Hannover 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=458&r=3#p758x773', title: 'gegen Barsinghausen 3', text: 4½ }]
+    - 2
+    - 21½
+    - ''
+-
+    - '8.'
+    - { text: 'Barsinghausen 3', url: '?mannschaft=773', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=458&r=1#p773x910', title: 'gegen SK Ricklingen 3', text: ½ }]
+    - [{ url: '?staffel=458&r=7#p773x751', title: 'gegen SV Springe 2', text: '0' }]
+    - [{ url: '?staffel=458&r=6#p773x782', title: 'gegen SV Bückeburg 2', text: 1½ }]
+    - [{ url: '?staffel=458&r=4#p773x917', title: 'gegen SF Mühlenberg', text: 1½ }]
+    - [{ url: '?staffel=458&r=5#p773x787', title: 'gegen Eldagsen/Bad Mü 2', text: '1' }]
+    - [{ url: '?staffel=458&r=2#p773x791', title: 'gegen SF Hannover 4', text: 3½ }]
+    - [{ url: '?staffel=458&r=3#p773x758', title: 'gegen SK Rinteln 2', text: 3½ }]
+    - xxx
+    - 0
+    - 11½
+    - ''

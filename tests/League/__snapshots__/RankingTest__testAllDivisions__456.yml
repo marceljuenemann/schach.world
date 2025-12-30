@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV 1919 Grimma', url: '?mannschaft=3884', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=932&r=3#p3884x3853', title: 'gegen Turm Hersfeld', text: '3' }]
+    - [{ url: '?staffel=932&r=4#p3884x3886', title: 'gegen USC Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=932&r=1#p3884x3952', title: 'gegen SV Merseburg', text: '3' }]
+    - [{ url: '?staffel=932&r=5#p3884x4134', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - [{ url: '?staffel=932&r=2#p3884x4084', title: 'gegen CAISSA Kassel', text: '4' }]
+    - 10
+    - '16'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Turm Hersfeld', url: '?mannschaft=3853', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=932&r=3#p3853x3884', title: 'gegen SV 1919 Grimma', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=932&r=1#p3853x3886', title: 'gegen USC Magdeburg', text: 2½ }]
+    - [{ url: '?staffel=932&r=2#p3853x3952', title: 'gegen SV Merseburg', text: '2' }]
+    - [{ url: '?staffel=932&r=4#p3853x4134', title: 'gegen SG Leipzig 2', text: '2' }]
+    - [{ url: '?staffel=932&r=5#p3853x4084', title: 'gegen CAISSA Kassel', text: '4' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '3.'
+    - { text: 'USC Magdeburg', url: '?mannschaft=3886', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=932&r=4#p3886x3884', title: 'gegen SV 1919 Grimma', text: ½ }]
+    - [{ url: '?staffel=932&r=1#p3886x3853', title: 'gegen Turm Hersfeld', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=932&r=5#p3886x3952', title: 'gegen SV Merseburg', text: 2½ }]
+    - [{ url: '?staffel=932&r=2#p3886x4134', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - [{ url: '?staffel=932&r=3#p3886x4084', title: 'gegen CAISSA Kassel', text: '4' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Merseburg', url: '?mannschaft=3952', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=932&r=1#p3952x3884', title: 'gegen SV 1919 Grimma', text: '1' }]
+    - [{ url: '?staffel=932&r=2#p3952x3853', title: 'gegen Turm Hersfeld', text: '2' }]
+    - [{ url: '?staffel=932&r=5#p3952x3886', title: 'gegen USC Magdeburg', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=932&r=3#p3952x4134', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - [{ url: '?staffel=932&r=4#p3952x4084', title: 'gegen CAISSA Kassel', text: '4' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Leipzig 2', url: '?mannschaft=4134', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=932&r=5#p4134x3884', title: 'gegen SV 1919 Grimma', text: 1½ }]
+    - [{ url: '?staffel=932&r=4#p4134x3853', title: 'gegen Turm Hersfeld', text: '2' }]
+    - [{ url: '?staffel=932&r=2#p4134x3886', title: 'gegen USC Magdeburg', text: 1½ }]
+    - [{ url: '?staffel=932&r=3#p4134x3952', title: 'gegen SV Merseburg', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=932&r=1#p4134x4084', title: 'gegen CAISSA Kassel', text: '4' }]
+    - 3
+    - 10½
+    - absteiger
+-
+    - '6.'
+    - { text: 'CAISSA Kassel', url: '?mannschaft=4084', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=932&r=2#p4084x3884', title: 'gegen SV 1919 Grimma', text: '0' }]
+    - [{ url: '?staffel=932&r=5#p4084x3853', title: 'gegen Turm Hersfeld', text: '0' }]
+    - [{ url: '?staffel=932&r=3#p4084x3886', title: 'gegen USC Magdeburg', text: '0' }]
+    - [{ url: '?staffel=932&r=4#p4084x3952', title: 'gegen SV Merseburg', text: '0' }]
+    - [{ url: '?staffel=932&r=1#p4084x4134', title: 'gegen SG Leipzig 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

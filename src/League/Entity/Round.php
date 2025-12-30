@@ -42,7 +42,11 @@ class Round
   }
 
   public function pdfUri(): string {
-    return $this->division->league->uri() . "?staffel={$this->division->id}&r={$this->round}&ausgabe=pdf";
+    return $this->uri() . 'pdf/';
+  }
+
+  public function pgnUri(): string {
+    return $this->uri() . 'pgn/';
   }
 
   public function apiUri(): string {

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'USV Potsdam', url: '?mannschaft=839', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=446&r=8#p839x834', title: 'gegen AE Magdeburg', text: '3' }]
+    - [{ url: '?staffel=446&r=6#p839x836', title: 'gegen SSC Rostock 07', text: '5' }]
+    - [{ url: '?staffel=446&r=5#p839x837', title: 'gegen SC Kreuzberg', text: '5' }]
+    - [{ url: '?staffel=446&r=9#p839x835', title: 'gegen SV Empor Berlin', text: 3½ }]
+    - [{ url: '?staffel=446&r=7#p839x838', title: 'gegen SV Gryps', text: 3½ }]
+    - [{ url: '?staffel=446&r=1#p839x840', title: 'gegen SG Löberitz', text: '5' }]
+    - [{ url: '?staffel=446&r=4#p839x831', title: 'gegen SC Zit. Spandau', text: 5½ }]
+    - [{ url: '?staffel=446&r=2#p839x833', title: 'gegen SV Eberswalde', text: 5½ }]
+    - [{ url: '?staffel=446&r=3#p839x832', title: 'gegen 1. SC Anhalt', text: 5½ }]
+    - 17
+    - 41½
+    - ''
+-
+    - '2.'
+    - { text: 'AE Magdeburg', url: '?mannschaft=834', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=446&r=8#p834x839', title: 'gegen USV Potsdam', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=446&r=4#p834x836', title: 'gegen SSC Rostock 07', text: '5' }]
+    - [{ url: '?staffel=446&r=2#p834x837', title: 'gegen SC Kreuzberg', text: '4' }]
+    - [{ url: '?staffel=446&r=1#p834x835', title: 'gegen SV Empor Berlin', text: '4' }]
+    - [{ url: '?staffel=446&r=6#p834x838', title: 'gegen SV Gryps', text: '4' }]
+    - [{ url: '?staffel=446&r=3#p834x840', title: 'gegen SG Löberitz', text: '5' }]
+    - [{ url: '?staffel=446&r=9#p834x831', title: 'gegen SC Zit. Spandau', text: '5' }]
+    - [{ url: '?staffel=446&r=5#p834x833', title: 'gegen SV Eberswalde', text: '4' }]
+    - [{ url: '?staffel=446&r=7#p834x832', title: 'gegen 1. SC Anhalt', text: '5' }]
+    - 17
+    - '39'
+    - ''
+-
+    - '3.'
+    - { text: 'SSC Rostock 07', url: '?mannschaft=836', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=446&r=6#p836x839', title: 'gegen USV Potsdam', text: '1' }]
+    - [{ url: '?staffel=446&r=4#p836x834', title: 'gegen AE Magdeburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=446&r=3#p836x837', title: 'gegen SC Kreuzberg', text: '4' }]
+    - [{ url: '?staffel=446&r=7#p836x835', title: 'gegen SV Empor Berlin', text: '5' }]
+    - [{ url: '?staffel=446&r=5#p836x838', title: 'gegen SV Gryps', text: 3½ }]
+    - [{ url: '?staffel=446&r=8#p836x840', title: 'gegen SG Löberitz', text: 3½ }]
+    - [{ url: '?staffel=446&r=2#p836x831', title: 'gegen SC Zit. Spandau', text: '4' }]
+    - [{ url: '?staffel=446&r=9#p836x833', title: 'gegen SV Eberswalde', text: '6' }]
+    - [{ url: '?staffel=446&r=1#p836x832', title: 'gegen 1. SC Anhalt', text: 5½ }]
+    - 14
+    - 33½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Kreuzberg', url: '?mannschaft=837', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=446&r=5#p837x839', title: 'gegen USV Potsdam', text: '1' }]
+    - [{ url: '?staffel=446&r=2#p837x834', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=446&r=3#p837x836', title: 'gegen SSC Rostock 07', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=446&r=6#p837x835', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=446&r=4#p837x838', title: 'gegen SV Gryps', text: 3½ }]
+    - [{ url: '?staffel=446&r=7#p837x840', title: 'gegen SG Löberitz', text: '5' }]
+    - [{ url: '?staffel=446&r=1#p837x831', title: 'gegen SC Zit. Spandau', text: '4' }]
+    - [{ url: '?staffel=446&r=8#p837x833', title: 'gegen SV Eberswalde', text: 4½ }]
+    - [{ url: '?staffel=446&r=9#p837x832', title: 'gegen 1. SC Anhalt', text: 3½ }]
+    - 11
+    - 28½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=835', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=446&r=9#p835x839', title: 'gegen USV Potsdam', text: 2½ }]
+    - [{ url: '?staffel=446&r=1#p835x834', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=446&r=7#p835x836', title: 'gegen SSC Rostock 07', text: '1' }]
+    - [{ url: '?staffel=446&r=6#p835x837', title: 'gegen SC Kreuzberg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=446&r=8#p835x838', title: 'gegen SV Gryps', text: 4½ }]
+    - [{ url: '?staffel=446&r=2#p835x840', title: 'gegen SG Löberitz', text: '5' }]
+    - [{ url: '?staffel=446&r=5#p835x831', title: 'gegen SC Zit. Spandau', text: '3' }]
+    - [{ url: '?staffel=446&r=3#p835x833', title: 'gegen SV Eberswalde', text: '5' }]
+    - [{ url: '?staffel=446&r=4#p835x832', title: 'gegen 1. SC Anhalt', text: '5' }]
+    - 10
+    - '31'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Gryps', url: '?mannschaft=838', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=446&r=7#p838x839', title: 'gegen USV Potsdam', text: 2½ }]
+    - [{ url: '?staffel=446&r=6#p838x834', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=446&r=5#p838x836', title: 'gegen SSC Rostock 07', text: 2½ }]
+    - [{ url: '?staffel=446&r=4#p838x837', title: 'gegen SC Kreuzberg', text: 2½ }]
+    - [{ url: '?staffel=446&r=8#p838x835', title: 'gegen SV Empor Berlin', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=446&r=9#p838x840', title: 'gegen SG Löberitz', text: '5' }]
+    - [{ url: '?staffel=446&r=3#p838x831', title: 'gegen SC Zit. Spandau', text: 3½ }]
+    - [{ url: '?staffel=446&r=1#p838x833', title: 'gegen SV Eberswalde', text: 3½ }]
+    - [{ url: '?staffel=446&r=2#p838x832', title: 'gegen 1. SC Anhalt', text: '6' }]
+    - 8
+    - '29'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Löberitz', url: '?mannschaft=840', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=446&r=1#p840x839', title: 'gegen USV Potsdam', text: '1' }]
+    - [{ url: '?staffel=446&r=3#p840x834', title: 'gegen AE Magdeburg', text: '1' }]
+    - [{ url: '?staffel=446&r=8#p840x836', title: 'gegen SSC Rostock 07', text: 2½ }]
+    - [{ url: '?staffel=446&r=7#p840x837', title: 'gegen SC Kreuzberg', text: '1' }]
+    - [{ url: '?staffel=446&r=2#p840x835', title: 'gegen SV Empor Berlin', text: '1' }]
+    - [{ url: '?staffel=446&r=9#p840x838', title: 'gegen SV Gryps', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=446&r=6#p840x831', title: 'gegen SC Zit. Spandau', text: 3½ }]
+    - [{ url: '?staffel=446&r=4#p840x833', title: 'gegen SV Eberswalde', text: '4' }]
+    - [{ url: '?staffel=446&r=5#p840x832', title: 'gegen 1. SC Anhalt', text: '5' }]
+    - 6
+    - '20'
+    - ''
+-
+    - '8.'
+    - { text: 'SC Zit. Spandau', url: '?mannschaft=831', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=446&r=4#p831x839', title: 'gegen USV Potsdam', text: ½ }]
+    - [{ url: '?staffel=446&r=9#p831x834', title: 'gegen AE Magdeburg', text: '1' }]
+    - [{ url: '?staffel=446&r=2#p831x836', title: 'gegen SSC Rostock 07', text: '2' }]
+    - [{ url: '?staffel=446&r=1#p831x837', title: 'gegen SC Kreuzberg', text: '2' }]
+    - [{ url: '?staffel=446&r=5#p831x835', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=446&r=3#p831x838', title: 'gegen SV Gryps', text: 2½ }]
+    - [{ url: '?staffel=446&r=6#p831x840', title: 'gegen SG Löberitz', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=446&r=7#p831x833', title: 'gegen SV Eberswalde', text: 4½ }]
+    - [{ url: '?staffel=446&r=8#p831x832', title: 'gegen 1. SC Anhalt', text: '6' }]
+    - 5
+    - '24'
+    - ''
+-
+    - '9.'
+    - { text: 'SV Eberswalde', url: '?mannschaft=833', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=446&r=2#p833x839', title: 'gegen USV Potsdam', text: ½ }]
+    - [{ url: '?staffel=446&r=5#p833x834', title: 'gegen AE Magdeburg', text: '1' }]
+    - [{ url: '?staffel=446&r=9#p833x836', title: 'gegen SSC Rostock 07', text: '0' }]
+    - [{ url: '?staffel=446&r=8#p833x837', title: 'gegen SC Kreuzberg', text: 1½ }]
+    - [{ url: '?staffel=446&r=3#p833x835', title: 'gegen SV Empor Berlin', text: '1' }]
+    - [{ url: '?staffel=446&r=1#p833x838', title: 'gegen SV Gryps', text: 2½ }]
+    - [{ url: '?staffel=446&r=4#p833x840', title: 'gegen SG Löberitz', text: '2' }]
+    - [{ url: '?staffel=446&r=7#p833x831', title: 'gegen SC Zit. Spandau', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=446&r=6#p833x832', title: 'gegen 1. SC Anhalt', text: '4' }]
+    - 2
+    - '14'
+    - ''
+-
+    - '10.'
+    - { text: '1. SC Anhalt', url: '?mannschaft=832', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=446&r=3#p832x839', title: 'gegen USV Potsdam', text: ½ }]
+    - [{ url: '?staffel=446&r=7#p832x834', title: 'gegen AE Magdeburg', text: '1' }]
+    - [{ url: '?staffel=446&r=1#p832x836', title: 'gegen SSC Rostock 07', text: ½ }]
+    - [{ url: '?staffel=446&r=9#p832x837', title: 'gegen SC Kreuzberg', text: 2½ }]
+    - [{ url: '?staffel=446&r=4#p832x835', title: 'gegen SV Empor Berlin', text: '1' }]
+    - [{ url: '?staffel=446&r=2#p832x838', title: 'gegen SV Gryps', text: '0' }]
+    - [{ url: '?staffel=446&r=5#p832x840', title: 'gegen SG Löberitz', text: '1' }]
+    - [{ url: '?staffel=446&r=8#p832x831', title: 'gegen SC Zit. Spandau', text: '0' }]
+    - [{ url: '?staffel=446&r=6#p832x833', title: 'gegen SV Eberswalde', text: '2' }]
+    - xxx
+    - 0
+    - 8½
+    - ''

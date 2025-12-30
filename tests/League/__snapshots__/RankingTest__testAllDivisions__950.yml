@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Blanke 2', url: '?mannschaft=7895', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1789&r=7#p7895x7813', title: 'gegen SV Osnabrück v. 1919', text: '2' }]
+    - [{ url: '?staffel=1789&r=6#p7895x7809', title: 'gegen Stader SV', text: 5½ }]
+    - [{ url: '?staffel=1789&r=5#p7895x7811', title: 'gegen SC Turm Lüneburg', text: '5' }]
+    - [{ url: '?staffel=1789&r=2#p7895x7897', title: 'gegen Fortuna Logabirum', text: '4' }]
+    - [{ url: '?staffel=1789&r=3#p7895x7879', title: 'gegen SK Bremen-Nord', text: '5' }]
+    - [{ url: '?staffel=1789&r=9#p7895x7819', title: 'gegen SG Ammerland', text: '5' }]
+    - [{ url: '?staffel=1789&r=1#p7895x7902', title: 'gegen SV Werder Bremen 4', text: '5' }]
+    - [{ url: '?staffel=1789&r=8#p7895x7882', title: 'gegen Bremer SG', text: '5' }]
+    - [{ url: '?staffel=1789&r=4#p7895x7889', title: 'gegen SF Spelle', text: '7' }]
+    - 15
+    - 43½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Osnabrück v. 1919', url: '?mannschaft=7813', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1789&r=7#p7813x7895', title: 'gegen SK Nordhorn-Blanke 2', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1789&r=9#p7813x7809', title: 'gegen Stader SV', text: 4½ }]
+    - [{ url: '?staffel=1789&r=6#p7813x7811', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=1789&r=4#p7813x7897', title: 'gegen Fortuna Logabirum', text: '4' }]
+    - [{ url: '?staffel=1789&r=8#p7813x7879', title: 'gegen SK Bremen-Nord', text: '4' }]
+    - [{ url: '?staffel=1789&r=3#p7813x7819', title: 'gegen SG Ammerland', text: '5' }]
+    - [{ url: '?staffel=1789&r=5#p7813x7902', title: 'gegen SV Werder Bremen 4', text: '4' }]
+    - [{ url: '?staffel=1789&r=2#p7813x7882', title: 'gegen Bremer SG', text: '6' }]
+    - [{ url: '?staffel=1789&r=1#p7813x7889', title: 'gegen SF Spelle', text: '6' }]
+    - 13
+    - 42½
+    - ''
+-
+    - '3.'
+    - { text: 'Stader SV', url: '?mannschaft=7809', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1789&r=6#p7809x7895', title: 'gegen SK Nordhorn-Blanke 2', text: 2½ }]
+    - [{ url: '?staffel=1789&r=9#p7809x7813', title: 'gegen SV Osnabrück v. 1919', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1789&r=7#p7809x7811', title: 'gegen SC Turm Lüneburg', text: '4' }]
+    - [{ url: '?staffel=1789&r=5#p7809x7897', title: 'gegen Fortuna Logabirum', text: '5' }]
+    - [{ url: '?staffel=1789&r=4#p7809x7879', title: 'gegen SK Bremen-Nord', text: 5½ }]
+    - [{ url: '?staffel=1789&r=1#p7809x7819', title: 'gegen SG Ammerland', text: 4½ }]
+    - [{ url: '?staffel=1789&r=2#p7809x7902', title: 'gegen SV Werder Bremen 4', text: '4' }]
+    - [{ url: '?staffel=1789&r=3#p7809x7882', title: 'gegen Bremer SG', text: 5½ }]
+    - [{ url: '?staffel=1789&r=8#p7809x7889', title: 'gegen SF Spelle', text: '6' }]
+    - 12
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=7811', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1789&r=5#p7811x7895', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=1789&r=6#p7811x7813', title: 'gegen SV Osnabrück v. 1919', text: '5' }]
+    - [{ url: '?staffel=1789&r=7#p7811x7809', title: 'gegen Stader SV', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1789&r=3#p7811x7897', title: 'gegen Fortuna Logabirum', text: 4½ }]
+    - [{ url: '?staffel=1789&r=2#p7811x7879', title: 'gegen SK Bremen-Nord', text: 3½ }]
+    - [{ url: '?staffel=1789&r=8#p7811x7819', title: 'gegen SG Ammerland', text: 4½ }]
+    - [{ url: '?staffel=1789&r=4#p7811x7902', title: 'gegen SV Werder Bremen 4', text: 3½ }]
+    - [{ url: '?staffel=1789&r=1#p7811x7882', title: 'gegen Bremer SG', text: 5½ }]
+    - [{ url: '?staffel=1789&r=9#p7811x7889', title: 'gegen SF Spelle', text: 4½ }]
+    - 11
+    - '38'
+    - ''
+-
+    - '5.'
+    - { text: 'Fortuna Logabirum', url: '?mannschaft=7897', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1789&r=2#p7897x7895', title: 'gegen SK Nordhorn-Blanke 2', text: '4' }]
+    - [{ url: '?staffel=1789&r=4#p7897x7813', title: 'gegen SV Osnabrück v. 1919', text: '4' }]
+    - [{ url: '?staffel=1789&r=5#p7897x7809', title: 'gegen Stader SV', text: '3' }]
+    - [{ url: '?staffel=1789&r=3#p7897x7811', title: 'gegen SC Turm Lüneburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1789&r=1#p7897x7879', title: 'gegen SK Bremen-Nord', text: 5½ }]
+    - [{ url: '?staffel=1789&r=7#p7897x7819', title: 'gegen SG Ammerland', text: '3' }]
+    - [{ url: '?staffel=1789&r=8#p7897x7902', title: 'gegen SV Werder Bremen 4', text: 5½ }]
+    - [{ url: '?staffel=1789&r=9#p7897x7882', title: 'gegen Bremer SG', text: '6' }]
+    - [{ url: '?staffel=1789&r=6#p7897x7889', title: 'gegen SF Spelle', text: 5½ }]
+    - 10
+    - '40'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Bremen-Nord', url: '?mannschaft=7879', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1789&r=3#p7879x7895', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=1789&r=8#p7879x7813', title: 'gegen SV Osnabrück v. 1919', text: '4' }]
+    - [{ url: '?staffel=1789&r=4#p7879x7809', title: 'gegen Stader SV', text: 2½ }]
+    - [{ url: '?staffel=1789&r=2#p7879x7811', title: 'gegen SC Turm Lüneburg', text: 4½ }]
+    - [{ url: '?staffel=1789&r=1#p7879x7897', title: 'gegen Fortuna Logabirum', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1789&r=5#p7879x7819', title: 'gegen SG Ammerland', text: '2' }]
+    - [{ url: '?staffel=1789&r=9#p7879x7902', title: 'gegen SV Werder Bremen 4', text: 5½ }]
+    - [{ url: '?staffel=1789&r=6#p7879x7882', title: 'gegen Bremer SG', text: 4½ }]
+    - [{ url: '?staffel=1789&r=7#p7879x7889', title: 'gegen SF Spelle', text: 5½ }]
+    - 9
+    - '34'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Ammerland', url: '?mannschaft=7819', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1789&r=9#p7819x7895', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=1789&r=3#p7819x7813', title: 'gegen SV Osnabrück v. 1919', text: '3' }]
+    - [{ url: '?staffel=1789&r=1#p7819x7809', title: 'gegen Stader SV', text: 3½ }]
+    - [{ url: '?staffel=1789&r=8#p7819x7811', title: 'gegen SC Turm Lüneburg', text: 3½ }]
+    - [{ url: '?staffel=1789&r=7#p7819x7897', title: 'gegen Fortuna Logabirum', text: '5' }]
+    - [{ url: '?staffel=1789&r=5#p7819x7879', title: 'gegen SK Bremen-Nord', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1789&r=6#p7819x7902', title: 'gegen SV Werder Bremen 4', text: 1½ }]
+    - [{ url: '?staffel=1789&r=4#p7819x7882', title: 'gegen Bremer SG', text: '7' }]
+    - [{ url: '?staffel=1789&r=2#p7819x7889', title: 'gegen SF Spelle', text: '6' }]
+    - 8
+    - 38½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Werder Bremen 4', url: '?mannschaft=7902', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1789&r=1#p7902x7895', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=1789&r=5#p7902x7813', title: 'gegen SV Osnabrück v. 1919', text: '4' }]
+    - [{ url: '?staffel=1789&r=2#p7902x7809', title: 'gegen Stader SV', text: '4' }]
+    - [{ url: '?staffel=1789&r=4#p7902x7811', title: 'gegen SC Turm Lüneburg', text: 4½ }]
+    - [{ url: '?staffel=1789&r=8#p7902x7897', title: 'gegen Fortuna Logabirum', text: 2½ }]
+    - [{ url: '?staffel=1789&r=9#p7902x7879', title: 'gegen SK Bremen-Nord', text: 2½ }]
+    - [{ url: '?staffel=1789&r=6#p7902x7819', title: 'gegen SG Ammerland', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=1789&r=7#p7902x7882', title: 'gegen Bremer SG', text: '3' }]
+    - [{ url: '?staffel=1789&r=3#p7902x7889', title: 'gegen SF Spelle', text: '6' }]
+    - 8
+    - '36'
+    - ''
+-
+    - '9.'
+    - { text: 'Bremer SG', url: '?mannschaft=7882', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1789&r=8#p7882x7895', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=1789&r=2#p7882x7813', title: 'gegen SV Osnabrück v. 1919', text: '2' }]
+    - [{ url: '?staffel=1789&r=3#p7882x7809', title: 'gegen Stader SV', text: 2½ }]
+    - [{ url: '?staffel=1789&r=1#p7882x7811', title: 'gegen SC Turm Lüneburg', text: 2½ }]
+    - [{ url: '?staffel=1789&r=9#p7882x7897', title: 'gegen Fortuna Logabirum', text: '2' }]
+    - [{ url: '?staffel=1789&r=6#p7882x7879', title: 'gegen SK Bremen-Nord', text: 3½ }]
+    - [{ url: '?staffel=1789&r=4#p7882x7819', title: 'gegen SG Ammerland', text: '1' }]
+    - [{ url: '?staffel=1789&r=7#p7882x7902', title: 'gegen SV Werder Bremen 4', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1789&r=5#p7882x7889', title: 'gegen SF Spelle', text: 5½ }]
+    - 4
+    - '27'
+    - absteiger
+-
+    - '10.'
+    - { text: 'SF Spelle', url: '?mannschaft=7889', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1789&r=4#p7889x7895', title: 'gegen SK Nordhorn-Blanke 2', text: '1' }]
+    - [{ url: '?staffel=1789&r=1#p7889x7813', title: 'gegen SV Osnabrück v. 1919', text: '2' }]
+    - [{ url: '?staffel=1789&r=8#p7889x7809', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=1789&r=9#p7889x7811', title: 'gegen SC Turm Lüneburg', text: 3½ }]
+    - [{ url: '?staffel=1789&r=6#p7889x7897', title: 'gegen Fortuna Logabirum', text: 2½ }]
+    - [{ url: '?staffel=1789&r=7#p7889x7879', title: 'gegen SK Bremen-Nord', text: 2½ }]
+    - [{ url: '?staffel=1789&r=2#p7889x7819', title: 'gegen SG Ammerland', text: '2' }]
+    - [{ url: '?staffel=1789&r=3#p7889x7902', title: 'gegen SV Werder Bremen 4', text: '2' }]
+    - [{ url: '?staffel=1789&r=5#p7889x7882', title: 'gegen Bremer SG', text: 2½ }]
+    - xxx
+    - 0
+    - '20'
+    - absteiger

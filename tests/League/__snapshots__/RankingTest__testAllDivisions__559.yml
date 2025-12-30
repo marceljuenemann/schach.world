@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Osnabrück 4', url: '?mannschaft=4924', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1044&r=1#p4924x4925', title: 'gegen SV Osnabrück 5', text: '3' }, { url: '?staffel=1044&r=6#p4924x4925', title: 'gegen SV Osnabrück 5', text: '4' }]
+    - [{ url: '?staffel=1044&r=2#p4924x4926', title: 'gegen Bersenbrück/Bramsche 3', text: '6' }, { url: '?staffel=1044&r=7#p4924x4926', title: 'gegen Bersenbrück/Bramsche 3', text: 2½ }]
+    - [{ url: '?staffel=1044&r=3#p4924x4927', title: 'gegen Gaste-Hasbergen 2', text: 4½ }, { url: '?staffel=1044&r=8#p4924x4927', title: 'gegen Gaste-Hasbergen 2', text: 4½ }]
+    - [{ url: '?staffel=1044&r=5#p4924x4928', title: 'gegen Hagener SV 5', text: '4' }, { url: '?staffel=1044&r=10#p4924x4928', title: 'gegen Hagener SV 5', text: '4' }]
+    - 13
+    - 32½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Osnabrück 5', url: '?mannschaft=4925', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1044&r=1#p4925x4924', title: 'gegen SV Osnabrück 4', text: '3' }, { url: '?staffel=1044&r=6#p4925x4924', title: 'gegen SV Osnabrück 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1044&r=4#p4925x4926', title: 'gegen Bersenbrück/Bramsche 3', text: '4' }, { url: '?staffel=1044&r=9#p4925x4926', title: 'gegen Bersenbrück/Bramsche 3', text: '4' }]
+    - [{ url: '?staffel=1044&r=5#p4925x4927', title: 'gegen Gaste-Hasbergen 2', text: '4' }, { url: '?staffel=1044&r=10#p4925x4927', title: 'gegen Gaste-Hasbergen 2', text: '5' }]
+    - [{ url: '?staffel=1044&r=2#p4925x4928', title: 'gegen Hagener SV 5', text: '2' }, { url: '?staffel=1044&r=7#p4925x4928', title: 'gegen Hagener SV 5', text: '5' }]
+    - 11
+    - '29'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Bersenbrück/Bramsche 3', url: '?mannschaft=4926', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1044&r=2#p4926x4924', title: 'gegen SV Osnabrück 4', text: '0' }, { url: '?staffel=1044&r=7#p4926x4924', title: 'gegen SV Osnabrück 4', text: 3½ }]
+    - [{ url: '?staffel=1044&r=4#p4926x4925', title: 'gegen SV Osnabrück 5', text: '2' }, { url: '?staffel=1044&r=9#p4926x4925', title: 'gegen SV Osnabrück 5', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1044&r=1#p4926x4927', title: 'gegen Gaste-Hasbergen 2', text: 2½ }, { url: '?staffel=1044&r=6#p4926x4927', title: 'gegen Gaste-Hasbergen 2', text: 2½ }]
+    - [{ url: '?staffel=1044&r=3#p4926x4928', title: 'gegen Hagener SV 5', text: '5' }, { url: '?staffel=1044&r=8#p4926x4928', title: 'gegen Hagener SV 5', text: 5½ }]
+    - 7
+    - '23'
+    - ''
+-
+    - '4.'
+    - { text: 'Gaste-Hasbergen 2', url: '?mannschaft=4927', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1044&r=3#p4927x4924', title: 'gegen SV Osnabrück 4', text: 1½ }, { url: '?staffel=1044&r=8#p4927x4924', title: 'gegen SV Osnabrück 4', text: 1½ }]
+    - [{ url: '?staffel=1044&r=5#p4927x4925', title: 'gegen SV Osnabrück 5', text: '2' }, { url: '?staffel=1044&r=10#p4927x4925', title: 'gegen SV Osnabrück 5', text: '1' }]
+    - [{ url: '?staffel=1044&r=1#p4927x4926', title: 'gegen Bersenbrück/Bramsche 3', text: 3½ }, { url: '?staffel=1044&r=6#p4927x4926', title: 'gegen Bersenbrück/Bramsche 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1044&r=4#p4927x4928', title: 'gegen Hagener SV 5', text: '6' }, { url: '?staffel=1044&r=9#p4927x4928', title: 'gegen Hagener SV 5', text: '4' }]
+    - 7
+    - '22'
+    - ''
+-
+    - '5.'
+    - { text: 'Hagener SV 5', url: '?mannschaft=4928', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1044&r=5#p4928x4924', title: 'gegen SV Osnabrück 4', text: '2' }, { url: '?staffel=1044&r=10#p4928x4924', title: 'gegen SV Osnabrück 4', text: '2' }]
+    - [{ url: '?staffel=1044&r=2#p4928x4925', title: 'gegen SV Osnabrück 5', text: '4' }, { url: '?staffel=1044&r=7#p4928x4925', title: 'gegen SV Osnabrück 5', text: '1' }]
+    - [{ url: '?staffel=1044&r=3#p4928x4926', title: 'gegen Bersenbrück/Bramsche 3', text: '1' }, { url: '?staffel=1044&r=8#p4928x4926', title: 'gegen Bersenbrück/Bramsche 3', text: ½ }]
+    - [{ url: '?staffel=1044&r=4#p4928x4927', title: 'gegen Gaste-Hasbergen 2', text: '0' }, { url: '?staffel=1044&r=9#p4928x4927', title: 'gegen Gaste-Hasbergen 2', text: '2' }]
+    - xxx
+    - 2
+    - 12½
+    - absteigerRelegation

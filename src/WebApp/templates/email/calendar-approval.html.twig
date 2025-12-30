@@ -1,0 +1,32 @@
+{# TODO: Make use of new email/layout.html.twig and dd macro #}
+{% import "email/bootstrap.html.twig" as bs %}
+{{ bs.body }}
+
+  {{ bs.card }}
+
+    <h1 {{ bs.h1_attrs }}>Neuer Termin</h1>
+    {{ bs.hr }}
+ 
+    {{ bs.row }}
+      {{ bs.col(3) }}<strong>Datum:</strong>{{ bs.endcol }}
+      {{ bs.col(9) }}{{ event.date|format_date(pattern='ccc, dd. MMMM yyyy') }}{{ bs.endcol }}
+    {{ bs.endrow }}
+    {{ bs.spacer(2) }}
+    {{ bs.row }}
+      {{ bs.col(3) }}<strong>Name:</strong>{{ bs.endcol }}
+      {{ bs.col(9) }}{{ event.name }}{{ bs.endcol }}
+    {{ bs.endrow }}
+    {{ bs.spacer(2) }}
+    {{ bs.row }}
+      {{ bs.col(3) }}<strong>URL:</strong>{{ bs.endcol }}
+      {{ bs.col(9) }}<span class="text-primary" style="color: #0d6efd;"><a href="{{ event.url }}">{{ event.url }}</a></span>{{ bs.endcol }}
+    {{ bs.endrow }}
+
+    {{ bs.hr }}
+    {{ bs.button(approvalUrl, 'Veröffentlichen') }}
+
+  {{ bs.endcard }}
+
+  {{ bs.spacer }} {# TODO: replace with footer #}
+
+{{ bs.endbody }}

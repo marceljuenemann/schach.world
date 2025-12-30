@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Dissen-Bad Roth', url: '?mannschaft=3533', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=814&r=6#p3533x3532', title: 'gegen SK Rulle', text: '2' }]
+    - [{ url: '?staffel=814&r=8#p3533x3537', title: 'gegen TSV Riemsloh 2', text: '4' }]
+    - [{ url: '?staffel=814&r=2#p3533x3538', title: 'gegen SV Osnabrück 4', text: 4½ }]
+    - [{ url: '?staffel=814&r=5#p3533x3540', title: 'gegen SV Hellern 5', text: '4' }]
+    - [{ url: '?staffel=814&r=7#p3533x3539', title: 'gegen Bersenbrück/Bramsche 3', text: '6' }]
+    - [{ url: '?staffel=814&r=3#p3533x3536', title: 'gegen SV Osnabrück 5', text: '4' }]
+    - [{ url: '?staffel=814&r=9#p3533x3534', title: 'gegen Hagener SV 5', text: '5' }]
+    - [{ url: '?staffel=814&r=1#p3533x3535', title: 'gegen SG Osnabrück 5', text: '6' }]
+    - 14
+    - 35½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Rulle', url: '?mannschaft=3532', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=814&r=6#p3532x3533', title: 'gegen Dissen-Bad Roth', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=814&r=1#p3532x3537', title: 'gegen TSV Riemsloh 2', text: '3' }]
+    - [{ url: '?staffel=814&r=4#p3532x3538', title: 'gegen SV Osnabrück 4', text: '3' }]
+    - [{ url: '?staffel=814&r=7#p3532x3540', title: 'gegen SV Hellern 5', text: '4' }]
+    - [{ url: '?staffel=814&r=9#p3532x3539', title: 'gegen Bersenbrück/Bramsche 3', text: '4' }]
+    - [{ url: '?staffel=814&r=5#p3532x3536', title: 'gegen SV Osnabrück 5', text: 3½ }]
+    - [{ url: '?staffel=814&r=2#p3532x3534', title: 'gegen Hagener SV 5', text: 5½ }]
+    - [{ url: '?staffel=814&r=3#p3532x3535', title: 'gegen SG Osnabrück 5', text: '6' }]
+    - 14
+    - '33'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'TSV Riemsloh 2', url: '?mannschaft=3537', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=814&r=8#p3537x3533', title: 'gegen Dissen-Bad Roth', text: '2' }]
+    - [{ url: '?staffel=814&r=1#p3537x3532', title: 'gegen SK Rulle', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=814&r=6#p3537x3538', title: 'gegen SV Osnabrück 4', text: 3½ }]
+    - [{ url: '?staffel=814&r=9#p3537x3540', title: 'gegen SV Hellern 5', text: 3½ }]
+    - [{ url: '?staffel=814&r=2#p3537x3539', title: 'gegen Bersenbrück/Bramsche 3', text: '2' }]
+    - [{ url: '?staffel=814&r=7#p3537x3536', title: 'gegen SV Osnabrück 5', text: '3' }]
+    - [{ url: '?staffel=814&r=4#p3537x3534', title: 'gegen Hagener SV 5', text: '6' }]
+    - [{ url: '?staffel=814&r=5#p3537x3535', title: 'gegen SG Osnabrück 5', text: '6' }]
+    - 10
+    - '29'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück 4', url: '?mannschaft=3538', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=814&r=2#p3538x3533', title: 'gegen Dissen-Bad Roth', text: 1½ }]
+    - [{ url: '?staffel=814&r=4#p3538x3532', title: 'gegen SK Rulle', text: '3' }]
+    - [{ url: '?staffel=814&r=6#p3538x3537', title: 'gegen TSV Riemsloh 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=814&r=3#p3538x3540', title: 'gegen SV Hellern 5', text: '3' }]
+    - [{ url: '?staffel=814&r=5#p3538x3539', title: 'gegen Bersenbrück/Bramsche 3', text: '3' }]
+    - [{ url: '?staffel=814&r=1#p3538x3536', title: 'gegen SV Osnabrück 5', text: '5' }]
+    - [{ url: '?staffel=814&r=7#p3538x3534', title: 'gegen Hagener SV 5', text: '4' }]
+    - [{ url: '?staffel=814&r=8#p3538x3535', title: 'gegen SG Osnabrück 5', text: '6' }]
+    - 9
+    - '28'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Hellern 5', url: '?mannschaft=3540', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=814&r=5#p3540x3533', title: 'gegen Dissen-Bad Roth', text: '2' }]
+    - [{ url: '?staffel=814&r=7#p3540x3532', title: 'gegen SK Rulle', text: '2' }]
+    - [{ url: '?staffel=814&r=9#p3540x3537', title: 'gegen TSV Riemsloh 2', text: 2½ }]
+    - [{ url: '?staffel=814&r=3#p3540x3538', title: 'gegen SV Osnabrück 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=814&r=8#p3540x3539', title: 'gegen Bersenbrück/Bramsche 3', text: '4' }]
+    - [{ url: '?staffel=814&r=4#p3540x3536', title: 'gegen SV Osnabrück 5', text: 3½ }]
+    - [{ url: '?staffel=814&r=1#p3540x3534', title: 'gegen Hagener SV 5', text: '4' }]
+    - [{ url: '?staffel=814&r=2#p3540x3535', title: 'gegen SG Osnabrück 5', text: '6' }]
+    - 9
+    - '27'
+    - ''
+-
+    - '6.'
+    - { text: 'Bersenbrück/Bramsche 3', url: '?mannschaft=3539', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=814&r=7#p3539x3533', title: 'gegen Dissen-Bad Roth', text: '0' }]
+    - [{ url: '?staffel=814&r=9#p3539x3532', title: 'gegen SK Rulle', text: '2' }]
+    - [{ url: '?staffel=814&r=2#p3539x3537', title: 'gegen TSV Riemsloh 2', text: '4' }]
+    - [{ url: '?staffel=814&r=5#p3539x3538', title: 'gegen SV Osnabrück 4', text: '3' }]
+    - [{ url: '?staffel=814&r=8#p3539x3540', title: 'gegen SV Hellern 5', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=814&r=6#p3539x3536', title: 'gegen SV Osnabrück 5', text: '3' }]
+    - [{ url: '?staffel=814&r=3#p3539x3534', title: 'gegen Hagener SV 5', text: '4' }]
+    - [{ url: '?staffel=814&r=4#p3539x3535', title: 'gegen SG Osnabrück 5', text: '6' }]
+    - 8
+    - '24'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Osnabrück 5', url: '?mannschaft=3536', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=814&r=3#p3536x3533', title: 'gegen Dissen-Bad Roth', text: '2' }]
+    - [{ url: '?staffel=814&r=5#p3536x3532', title: 'gegen SK Rulle', text: 2½ }]
+    - [{ url: '?staffel=814&r=7#p3536x3537', title: 'gegen TSV Riemsloh 2', text: '3' }]
+    - [{ url: '?staffel=814&r=1#p3536x3538', title: 'gegen SV Osnabrück 4', text: '1' }]
+    - [{ url: '?staffel=814&r=4#p3536x3540', title: 'gegen SV Hellern 5', text: 2½ }]
+    - [{ url: '?staffel=814&r=6#p3536x3539', title: 'gegen Bersenbrück/Bramsche 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=814&r=8#p3536x3534', title: 'gegen Hagener SV 5', text: '5' }]
+    - [{ url: '?staffel=814&r=9#p3536x3535', title: 'gegen SG Osnabrück 5', text: '6' }]
+    - 6
+    - '25'
+    - ''
+-
+    - '8.'
+    - { text: 'Hagener SV 5', url: '?mannschaft=3534', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=814&r=9#p3534x3533', title: 'gegen Dissen-Bad Roth', text: '1' }]
+    - [{ url: '?staffel=814&r=2#p3534x3532', title: 'gegen SK Rulle', text: ½ }]
+    - [{ url: '?staffel=814&r=4#p3534x3537', title: 'gegen TSV Riemsloh 2', text: '0' }]
+    - [{ url: '?staffel=814&r=7#p3534x3538', title: 'gegen SV Osnabrück 4', text: '2' }]
+    - [{ url: '?staffel=814&r=1#p3534x3540', title: 'gegen SV Hellern 5', text: '2' }]
+    - [{ url: '?staffel=814&r=3#p3534x3539', title: 'gegen Bersenbrück/Bramsche 3', text: '2' }]
+    - [{ url: '?staffel=814&r=8#p3534x3536', title: 'gegen SV Osnabrück 5', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=814&r=6#p3534x3535', title: 'gegen SG Osnabrück 5', text: '6' }]
+    - 2
+    - 14½
+    - ''
+-
+    - '9.'
+    - { text: 'SG Osnabrück 5', url: '?mannschaft=3535', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=814&r=1#p3535x3533', title: 'gegen Dissen-Bad Roth', text: '0' }]
+    - [{ url: '?staffel=814&r=3#p3535x3532', title: 'gegen SK Rulle', text: '0' }]
+    - [{ url: '?staffel=814&r=5#p3535x3537', title: 'gegen TSV Riemsloh 2', text: '0' }]
+    - [{ url: '?staffel=814&r=8#p3535x3538', title: 'gegen SV Osnabrück 4', text: '0' }]
+    - [{ url: '?staffel=814&r=2#p3535x3540', title: 'gegen SV Hellern 5', text: '0' }]
+    - [{ url: '?staffel=814&r=4#p3535x3539', title: 'gegen Bersenbrück/Bramsche 3', text: '0' }]
+    - [{ url: '?staffel=814&r=9#p3535x3536', title: 'gegen SV Osnabrück 5', text: '0' }]
+    - [{ url: '?staffel=814&r=6#p3535x3534', title: 'gegen Hagener SV 5', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteigerRelegation

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=705', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=440&r=5#p705x745', title: 'gegen Bremer SG 2', text: '5' }]
+    - [{ url: '?staffel=440&r=6#p705x706', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - [{ url: '?staffel=440&r=2#p705x702', title: 'gegen SF Leherheide', text: '6' }]
+    - [{ url: '?staffel=440&r=8#p705x700', title: 'gegen Delmenhorst 2', text: 4½ }]
+    - [{ url: '?staffel=440&r=7#p705x708', title: 'gegen Findorffer SF', text: 6½ }]
+    - [{ url: '?staffel=440&r=1#p705x701', title: 'gegen TuS Varrel', text: 6½ }]
+    - [{ url: '?staffel=440&r=9#p705x703', title: 'gegen SF Buxtehude', text: '5' }]
+    - [{ url: '?staffel=440&r=4#p705x707', title: 'gegen SC Vahr', text: '5' }]
+    - [{ url: '?staffel=440&r=3#p705x704', title: 'gegen Werder Bremen 4', text: 5½ }]
+    - 17
+    - '48'
+    - ''
+-
+    - '2.'
+    - { text: 'Bremer SG 2', url: '?mannschaft=745', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=440&r=5#p745x705', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=440&r=2#p745x706', title: 'gegen SV Winsen (Luhe)', text: 4½ }]
+    - [{ url: '?staffel=440&r=8#p745x702', title: 'gegen SF Leherheide', text: '5' }]
+    - [{ url: '?staffel=440&r=4#p745x700', title: 'gegen Delmenhorst 2', text: '5' }]
+    - [{ url: '?staffel=440&r=1#p745x708', title: 'gegen Findorffer SF', text: 4½ }]
+    - [{ url: '?staffel=440&r=6#p745x701', title: 'gegen TuS Varrel', text: 4½ }]
+    - [{ url: '?staffel=440&r=3#p745x703', title: 'gegen SF Buxtehude', text: 4½ }]
+    - [{ url: '?staffel=440&r=9#p745x707', title: 'gegen SC Vahr', text: '6' }]
+    - [{ url: '?staffel=440&r=7#p745x704', title: 'gegen Werder Bremen 4', text: '6' }]
+    - 16
+    - '43'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Winsen (Luhe)', url: '?mannschaft=706', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=440&r=6#p706x705', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=440&r=2#p706x745', title: 'gegen Bremer SG 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=440&r=4#p706x702', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=440&r=9#p706x700', title: 'gegen Delmenhorst 2', text: '5' }]
+    - [{ url: '?staffel=440&r=5#p706x708', title: 'gegen Findorffer SF', text: '6' }]
+    - [{ url: '?staffel=440&r=8#p706x701', title: 'gegen TuS Varrel', text: 5½ }]
+    - [{ url: '?staffel=440&r=7#p706x703', title: 'gegen SF Buxtehude', text: 5½ }]
+    - [{ url: '?staffel=440&r=3#p706x707', title: 'gegen SC Vahr', text: '6' }]
+    - [{ url: '?staffel=440&r=1#p706x704', title: 'gegen Werder Bremen 4', text: 5½ }]
+    - 13
+    - 44½
+    - ''
+-
+    - '4.'
+    - { text: 'SF Leherheide', url: '?mannschaft=702', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=440&r=2#p702x705', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - [{ url: '?staffel=440&r=8#p702x745', title: 'gegen Bremer SG 2', text: '3' }]
+    - [{ url: '?staffel=440&r=4#p702x706', title: 'gegen SV Winsen (Luhe)', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=440&r=7#p702x700', title: 'gegen Delmenhorst 2', text: '5' }]
+    - [{ url: '?staffel=440&r=3#p702x708', title: 'gegen Findorffer SF', text: 4½ }]
+    - [{ url: '?staffel=440&r=9#p702x701', title: 'gegen TuS Varrel', text: 5½ }]
+    - [{ url: '?staffel=440&r=5#p702x703', title: 'gegen SF Buxtehude', text: 4½ }]
+    - [{ url: '?staffel=440&r=1#p702x707', title: 'gegen SC Vahr', text: '4' }]
+    - [{ url: '?staffel=440&r=6#p702x704', title: 'gegen Werder Bremen 4', text: 5½ }]
+    - 13
+    - 38½
+    - ''
+-
+    - '5.'
+    - { text: 'Delmenhorst 2', url: '?mannschaft=700', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=440&r=8#p700x705', title: 'gegen Post SV Uelzen 2', text: 3½ }]
+    - [{ url: '?staffel=440&r=4#p700x745', title: 'gegen Bremer SG 2', text: '3' }]
+    - [{ url: '?staffel=440&r=9#p700x706', title: 'gegen SV Winsen (Luhe)', text: '3' }]
+    - [{ url: '?staffel=440&r=7#p700x702', title: 'gegen SF Leherheide', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=440&r=6#p700x708', title: 'gegen Findorffer SF', text: '5' }]
+    - [{ url: '?staffel=440&r=3#p700x701', title: 'gegen TuS Varrel', text: 4½ }]
+    - [{ url: '?staffel=440&r=1#p700x703', title: 'gegen SF Buxtehude', text: '6' }]
+    - [{ url: '?staffel=440&r=5#p700x707', title: 'gegen SC Vahr', text: '6' }]
+    - [{ url: '?staffel=440&r=2#p700x704', title: 'gegen Werder Bremen 4', text: 5½ }]
+    - 10
+    - 39½
+    - ''
+-
+    - '6.'
+    - { text: 'Findorffer SF', url: '?mannschaft=708', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=440&r=7#p708x705', title: 'gegen Post SV Uelzen 2', text: 1½ }]
+    - [{ url: '?staffel=440&r=1#p708x745', title: 'gegen Bremer SG 2', text: 3½ }]
+    - [{ url: '?staffel=440&r=5#p708x706', title: 'gegen SV Winsen (Luhe)', text: '2' }]
+    - [{ url: '?staffel=440&r=3#p708x702', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=440&r=6#p708x700', title: 'gegen Delmenhorst 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=440&r=4#p708x701', title: 'gegen TuS Varrel', text: 4½ }]
+    - [{ url: '?staffel=440&r=8#p708x703', title: 'gegen SF Buxtehude', text: 4½ }]
+    - [{ url: '?staffel=440&r=2#p708x707', title: 'gegen SC Vahr', text: '5' }]
+    - [{ url: '?staffel=440&r=9#p708x704', title: 'gegen Werder Bremen 4', text: '5' }]
+    - 8
+    - 32½
+    - ''
+-
+    - '7.'
+    - { text: 'TuS Varrel', url: '?mannschaft=701', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=440&r=1#p701x705', title: 'gegen Post SV Uelzen 2', text: 1½ }]
+    - [{ url: '?staffel=440&r=6#p701x745', title: 'gegen Bremer SG 2', text: 3½ }]
+    - [{ url: '?staffel=440&r=8#p701x706', title: 'gegen SV Winsen (Luhe)', text: 2½ }]
+    - [{ url: '?staffel=440&r=9#p701x702', title: 'gegen SF Leherheide', text: 2½ }]
+    - [{ url: '?staffel=440&r=3#p701x700', title: 'gegen Delmenhorst 2', text: 3½ }]
+    - [{ url: '?staffel=440&r=4#p701x708', title: 'gegen Findorffer SF', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=440&r=2#p701x703', title: 'gegen SF Buxtehude', text: 5½ }]
+    - [{ url: '?staffel=440&r=7#p701x707', title: 'gegen SC Vahr', text: 5½ }]
+    - [{ url: '?staffel=440&r=5#p701x704', title: 'gegen Werder Bremen 4', text: 4½ }]
+    - 6
+    - 32½
+    - ''
+-
+    - '8.'
+    - { text: 'SF Buxtehude', url: '?mannschaft=703', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=440&r=9#p703x705', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=440&r=3#p703x745', title: 'gegen Bremer SG 2', text: 3½ }]
+    - [{ url: '?staffel=440&r=7#p703x706', title: 'gegen SV Winsen (Luhe)', text: 2½ }]
+    - [{ url: '?staffel=440&r=5#p703x702', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=440&r=1#p703x700', title: 'gegen Delmenhorst 2', text: '2' }]
+    - [{ url: '?staffel=440&r=8#p703x708', title: 'gegen Findorffer SF', text: 3½ }]
+    - [{ url: '?staffel=440&r=2#p703x701', title: 'gegen TuS Varrel', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=440&r=6#p703x707', title: 'gegen SC Vahr', text: 4½ }]
+    - [{ url: '?staffel=440&r=4#p703x704', title: 'gegen Werder Bremen 4', text: 7½ }]
+    - 4
+    - 32½
+    - ''
+-
+    - '9.'
+    - { text: 'SC Vahr', url: '?mannschaft=707', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=440&r=4#p707x705', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=440&r=9#p707x745', title: 'gegen Bremer SG 2', text: '2' }]
+    - [{ url: '?staffel=440&r=3#p707x706', title: 'gegen SV Winsen (Luhe)', text: '2' }]
+    - [{ url: '?staffel=440&r=1#p707x702', title: 'gegen SF Leherheide', text: '4' }]
+    - [{ url: '?staffel=440&r=5#p707x700', title: 'gegen Delmenhorst 2', text: '2' }]
+    - [{ url: '?staffel=440&r=2#p707x708', title: 'gegen Findorffer SF', text: '3' }]
+    - [{ url: '?staffel=440&r=7#p707x701', title: 'gegen TuS Varrel', text: 2½ }]
+    - [{ url: '?staffel=440&r=6#p707x703', title: 'gegen SF Buxtehude', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=440&r=8#p707x704', title: 'gegen Werder Bremen 4', text: 4½ }]
+    - 3
+    - 26½
+    - ''
+-
+    - '10.'
+    - { text: 'Werder Bremen 4', url: '?mannschaft=704', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=440&r=3#p704x705', title: 'gegen Post SV Uelzen 2', text: 2½ }]
+    - [{ url: '?staffel=440&r=7#p704x745', title: 'gegen Bremer SG 2', text: '2' }]
+    - [{ url: '?staffel=440&r=1#p704x706', title: 'gegen SV Winsen (Luhe)', text: 2½ }]
+    - [{ url: '?staffel=440&r=6#p704x702', title: 'gegen SF Leherheide', text: 2½ }]
+    - [{ url: '?staffel=440&r=2#p704x700', title: 'gegen Delmenhorst 2', text: 2½ }]
+    - [{ url: '?staffel=440&r=9#p704x708', title: 'gegen Findorffer SF', text: '3' }]
+    - [{ url: '?staffel=440&r=5#p704x701', title: 'gegen TuS Varrel', text: 3½ }]
+    - [{ url: '?staffel=440&r=4#p704x703', title: 'gegen SF Buxtehude', text: ½ }]
+    - [{ url: '?staffel=440&r=8#p704x707', title: 'gegen SC Vahr', text: 3½ }]
+    - xxx
+    - 0
+    - 22½
+    - ''

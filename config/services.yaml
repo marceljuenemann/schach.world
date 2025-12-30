@@ -10,9 +10,13 @@ services:
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+        bind:
+            string $projectDir: '%kernel.project_dir%'
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
+    Nsv\WebApp\Command\:
+        resource: '../src/WebApp/Command/'
     Nsv\WebApp\Controller\:
         resource: '../src/WebApp/Controller/'
     Nsv\WebApp\Core\:
@@ -24,7 +28,9 @@ services:
 
     # League Manager services
     Nsv\League\Api\Service\:
-        resource: '../src/League/Api/Service/'
+        resource: '../src/League/Api/Service/**/*Service.php'
+    Nsv\League\Command\:
+        resource: '../src/League/Command/'
     Nsv\League\Controller\:
         resource: '../src/League/Controller/'
     Nsv\League\Core\:
@@ -38,9 +44,17 @@ services:
     Nsv\League\Core\LeagueAuthState:
         factory: ['@Nsv\League\Core\LeagueAuthProvider', 'authState']
 
-    # Misc services
+    # Registration services
+    Nsv\Registration\Controller\:
+        resource: '../src/Registration/Controller/'
+    Nsv\Registration\Repository\:
+        resource: '../src/Registration/Repository/'
+
+    # Rating & player database services
     Nsv\Dwz\:
         resource: '../src/Dwz/'
+    Nsv\Dwz\Controller\:
+        resource: '../src/Dwz/Controller/'
 
 when@test:
     services:

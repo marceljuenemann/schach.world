@@ -4,12 +4,17 @@ namespace Nsv\League\Controller;
 
 use Nsv\League\Api\Service\MatchDayService;
 use Nsv\League\Api\Service\ScheduleService;
+use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LeagueAuthState;
+use Nsv\League\Core\LegacySystem;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\League\Export\Pdf\MatchDayPdf;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Nsv\League\Api\Service\StatisticsService;
+use Doctrine\ORM\EntityManagerInterface;
+use Nsv\League\Api\Service\PgnService;
 
 /**
  * Controller for division specific routes.
@@ -18,11 +23,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class DivisionController extends AbstractLeagueController {
 
   function __construct(
-    League $league,
-    LeagueAuthState $auth,
-    Division $division
-  ) {
-    parent::__construct($league, $auth);
+    League                         $league,
+    LeagueAuthState                $auth,
+    LegacySystem                   $legacySystem,
+    Division                       $division) {
+    parent::__construct($league, $auth, $legacySystem);
     $this->division = $division;
   }
 
@@ -41,6 +46,87 @@ class DivisionController extends AbstractLeagueController {
     return $this->debugResponse($matchDays);
   }
 
+  #[Route('{division}/statistik', name: 'statistik')]
+  public function statistics(StatisticsService $service): Response {
+    $division_name = $this->division->name;
+
+    $teams_with_active_players = $service->teams_with_active_players($this->division);
+    $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players, $this->division);
+
+    // Check if any games have been played. Some leagues have been
+    // created, but no games were ever played and entered into the system.
+    if (!empty($service->all_games_division($this->division))
+      && !empty($service->create_topscorer_table($this->division))
+      && !empty($active_teams_with_players)) {
+
+      $dwz_data = $service->create_dwz_statistics_table($this->division);
+      $dwz_table = $dwz_data['table'];
+
+      $topscorer_data = $service->create_topscorer_table($this->division);
+      $topscorer_table = $topscorer_data['table'];
+
+      $team_game_score_data = $service->create_team_game_score_table($this->division);
+      $team_game_score_table = $team_game_score_data['table'];
+
+      $intro_text_values = array_merge($dwz_data['text_values'], $topscorer_data['text_values'], $team_game_score_data['text_values']);
+
+      return $this->renderWithLegacySystem('division/statistics.html.twig',
+        [
+          'division_name' => $division_name,
+          'intro_text_values' => $intro_text_values,
+          'dwz_table' => $dwz_table,
+          'topscorer_table' => $topscorer_table,
+          'team_game_score_table' => $team_game_score_table,
+          'tabs' => $this->divisionTabs('stats')
+        ]);
+    } else {
+      // If no games have been played, just return the Division title.
+      // This relies on "strict_variables: false" in twig.yaml. Else
+      // the template would create errors due to missing content variables.
+      return $this->renderWithLegacySystem('division/statistics.html.twig',
+        [
+          'division_name' => $division_name,
+        ]);
+    }
+  }
+
+  #[Route('{division}/{round}/pdf/', name: 'pdf')]
+  public function pdf(int $round): Response {
+    $this->initializeLegacySystem();
+    $_GET['r'] = $round;
+    $_GET['ausgabe'] = 'pdf';
+
+    ob_start();
+    require('../_module/spieltag/spieltag.php');
+    $body = ob_get_clean();
+    $response = new Response($body);
+    $response->setCharset(Encoding::CHARSET);
+    return $response;
+  }
+
+  #[Route('{division}/{round}/pdf-ng/', name: 'matchday_pdf')]
+  public function matchday_pdf(int $round, MatchDayService $service): Response {
+    $matchDay = $this->matchday_model($service, $round);
+    $pdf = new MatchDayPdf($this->division, $matchDay);
+    $pdf->render();
+    return $pdf->getResponse();
+  }
+
+  #[Route('{division}/{round}/pgn/', name: 'pgn')]
+  public function pgn(PgnService $pgnService, int $round): Response {
+    $response = new Response($pgnService->renderPgn($this->division, $this->division->round($round)));
+    $filename = $this->division->path() . '-R' . $round . '.pgn';
+    $response->headers->set('Content-Disposition', 'attachment; filename="' . $filename . '"');
+    $response->headers->set('Content-Type', 'application/x-chess-pgn; charset=' . Encoding::CHARSET_UTF8);
+    return $response;
+  }
+
+  #[Route('api/divisions/{division}/rounds/current/', name: 'api_current_matchday')]
+  public function current_matchday_api(ScheduleService $scheduleService, MatchDayService $service): Response {
+    $round = $scheduleService->closestRound($this->division, date('Y-m-d'));
+    return $this->apiResponse($this->matchday_model($service, $round ? $round->round : 1));
+  }
+
   #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]
   public function matchday_api(int $round, MatchDayService $service): Response {
     return $this->apiResponse($this->matchday_model($service, $round));
@@ -54,22 +140,10 @@ class DivisionController extends AbstractLeagueController {
       'tabs' => $this->divisionTabs()
     ]);
   }
-
-  #[Route('{division}/{round}/pdf/', name: 'matchday_pdf')]
-  public function matchday_pdf(int $round, MatchDayService $service): Response {
-    $matchDay = $this->matchday_model($service, $round);
-    $pdf = new MatchDayPdf($this->division, $matchDay);
-    $pdf->render();
-    return $pdf->getResponse();
-  }
   
+  // TODO: Delete.
   private function matchday_model(MatchDayService $service, int $round) {
-    return $service->matchDayCached($this->division, $round, function() use ($round) {
-      $this->initializeLegacySystem();
-      $_GET['r'] = $round;
-      require_once('tabelle.inc.php');
-      return Tabelle($this->division->id, $round, true /* TODO: $kreuztabelle = false? */);
-    });
+    return $service->matchDay($this->division, $round);
   }
 
   #[Route('{division}/', name: 'index')]
@@ -82,7 +156,7 @@ class DivisionController extends AbstractLeagueController {
    * Returns the tab navigation configuration for division pages.
    */
   // TODO: Might no longer need this?
-  private function divisionTabs(string $active = null): array {
+  private function divisionTabs(string | null $active = null): array {
     $tabs [] = [
       'label' => 'Spieltage',
       'uri' => $this->league->uri() . $this->division->path() . '/',  // TODO: use uri()

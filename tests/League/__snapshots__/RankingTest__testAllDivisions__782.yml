@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'USV Halle', url: '?mannschaft=6993', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1584&r=5#p6993x6992', title: 'gegen Rodewischer SM 2 2', text: '3' }]
+    - [{ url: '?staffel=1584&r=4#p6993x6991', title: 'gegen Schachzwerge Ma', text: '4' }]
+    - [{ url: '?staffel=1584&r=6#p6993x6996', title: 'gegen SG Leipzig 2', text: '3' }]
+    - [{ url: '?staffel=1584&r=2#p6993x6995', title: 'gegen Meuselwitzer SV', text: 2½ }]
+    - [{ url: '?staffel=1584&r=1#p6993x6994', title: 'gegen Leipzig-Lindenau 2', text: '4' }]
+    - 10
+    - 16½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Rodewischer SM 2 2', url: '?mannschaft=6992', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1584&r=5#p6992x6993', title: 'gegen USV Halle', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1584&r=2#p6992x6991', title: 'gegen Schachzwerge Ma', text: '0' }]
+    - [{ url: '?staffel=1584&r=4#p6992x6996', title: 'gegen SG Leipzig 2', text: '4' }]
+    - [{ url: '?staffel=1584&r=1#p6992x6995', title: 'gegen Meuselwitzer SV', text: 3½ }]
+    - [{ url: '?staffel=1584&r=6#p6992x6994', title: 'gegen Leipzig-Lindenau 2', text: 3½ }]
+    - 6
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'Schachzwerge Ma', url: '?mannschaft=6991', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1584&r=4#p6991x6993', title: 'gegen USV Halle', text: '0' }]
+    - [{ url: '?staffel=1584&r=2#p6991x6992', title: 'gegen Rodewischer SM 2 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1584&r=1#p6991x6996', title: 'gegen SG Leipzig 2', text: ½ }]
+    - [{ url: '?staffel=1584&r=6#p6991x6995', title: 'gegen Meuselwitzer SV', text: 2½ }]
+    - [{ url: '?staffel=1584&r=5#p6991x6994', title: 'gegen Leipzig-Lindenau 2', text: '3' }]
+    - 6
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Leipzig 2', url: '?mannschaft=6996', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1584&r=6#p6996x6993', title: 'gegen USV Halle', text: '0' }]
+    - [{ url: '?staffel=1584&r=4#p6996x6992', title: 'gegen Rodewischer SM 2 2', text: '0' }]
+    - [{ url: '?staffel=1584&r=1#p6996x6991', title: 'gegen Schachzwerge Ma', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1584&r=5#p6996x6995', title: 'gegen Meuselwitzer SV', text: 1½ }]
+    - [{ url: '?staffel=1584&r=2#p6996x6994', title: 'gegen Leipzig-Lindenau 2', text: '3' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'Meuselwitzer SV', url: '?mannschaft=6995', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1584&r=2#p6995x6993', title: 'gegen USV Halle', text: 1½ }]
+    - [{ url: '?staffel=1584&r=1#p6995x6992', title: 'gegen Rodewischer SM 2 2', text: ½ }]
+    - [{ url: '?staffel=1584&r=6#p6995x6991', title: 'gegen Schachzwerge Ma', text: 1½ }]
+    - [{ url: '?staffel=1584&r=5#p6995x6996', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1584&r=4#p6995x6994', title: 'gegen Leipzig-Lindenau 2', text: '2' }]
+    - 3
+    - '8'
+    - ''
+-
+    - '6.'
+    - { text: 'Leipzig-Lindenau 2', url: '?mannschaft=6994', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1584&r=1#p6994x6993', title: 'gegen USV Halle', text: '0' }]
+    - [{ url: '?staffel=1584&r=6#p6994x6992', title: 'gegen Rodewischer SM 2 2', text: ½ }]
+    - [{ url: '?staffel=1584&r=5#p6994x6991', title: 'gegen Schachzwerge Ma', text: '1' }]
+    - [{ url: '?staffel=1584&r=2#p6994x6996', title: 'gegen SG Leipzig 2', text: '1' }]
+    - [{ url: '?staffel=1584&r=4#p6994x6995', title: 'gegen Meuselwitzer SV', text: '2' }]
+    - xxx
+    - 1
+    - 4½
+    - absteiger

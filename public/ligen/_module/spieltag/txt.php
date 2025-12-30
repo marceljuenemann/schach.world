@@ -1,4 +1,4 @@
-<?
+<?php
 /* Spieltag als Text-Datei
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -77,9 +77,10 @@
   }
 
   // Tabellen wirklich ausgeben
-  if ( reset ( mysql_fetch_array ( mysql_query ( "SELECT showTabelle FROM viewStaffeln WHERE id=$_GET[staffel]", $globals ['db'] ), MYSQL_ASSOC ) ) )
+  $showTabelle = SED_Value('SELECT showTabelle FROM viewStaffeln WHERE id=?', [$_GET['staffel']]);
+  if ( $showTabelle ) {
     __TabAusgeben ( false );
-
+  }
 
   /////////////////////////////////
   // Infos

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Burg', url: '?mannschaft=2796', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=699&r=7#p2796x2792', title: 'gegen Elmshorner SC 3', text: '4' }]
+    - [{ url: '?staffel=699&r=6#p2796x2790', title: 'gegen Uetersener SK', text: 4½ }]
+    - [{ url: '?staffel=699&r=4#p2796x2798', title: 'gegen SV Quickborn 2', text: 5½ }]
+    - [{ url: '?staffel=699&r=5#p2796x2799', title: 'gegen SK Kollmar', text: 3½ }]
+    - [{ url: '?staffel=699&r=3#p2796x2797', title: 'gegen SK Brunsbüttel', text: 4½ }]
+    - [{ url: '?staffel=699&r=2#p2796x2800', title: 'gegen Barmstedter MTV', text: '5' }]
+    - [{ url: '?staffel=699&r=9#p2796x2794', title: 'gegen SV Büsum', text: 6½ }]
+    - [{ url: '?staffel=699&r=1#p2796x2795', title: 'gegen SC Wrist-K. 2', text: 4½ }]
+    - [{ url: '?staffel=699&r=8#p2796x2793', title: 'gegen SC Marne', text: '6' }]
+    - 15
+    - '44'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Elmshorner SC 3', url: '?mannschaft=2792', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=699&r=7#p2792x2796', title: 'gegen SF Burg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=699&r=2#p2792x2790', title: 'gegen Uetersener SK', text: '1' }]
+    - [{ url: '?staffel=699&r=9#p2792x2798', title: 'gegen SV Quickborn 2', text: 4½ }]
+    - [{ url: '?staffel=699&r=1#p2792x2799', title: 'gegen SK Kollmar', text: '4' }]
+    - [{ url: '?staffel=699&r=8#p2792x2797', title: 'gegen SK Brunsbüttel', text: '5' }]
+    - [{ url: '?staffel=699&r=3#p2792x2800', title: 'gegen Barmstedter MTV', text: '7' }]
+    - [{ url: '?staffel=699&r=5#p2792x2794', title: 'gegen SV Büsum', text: 5½ }]
+    - [{ url: '?staffel=699&r=6#p2792x2795', title: 'gegen SC Wrist-K. 2', text: 4½ }]
+    - [{ url: '?staffel=699&r=4#p2792x2793', title: 'gegen SC Marne', text: 6½ }]
+    - 14
+    - '42'
+    - ''
+-
+    - '3.'
+    - { text: 'Uetersener SK', url: '?mannschaft=2790', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=699&r=6#p2790x2796', title: 'gegen SF Burg', text: 3½ }]
+    - [{ url: '?staffel=699&r=2#p2790x2792', title: 'gegen Elmshorner SC 3', text: '7' }]
+    - xxx
+    - [{ url: '?staffel=699&r=8#p2790x2798', title: 'gegen SV Quickborn 2', text: '5' }]
+    - [{ url: '?staffel=699&r=9#p2790x2799', title: 'gegen SK Kollmar', text: 5½ }]
+    - [{ url: '?staffel=699&r=7#p2790x2797', title: 'gegen SK Brunsbüttel', text: '3' }]
+    - [{ url: '?staffel=699&r=1#p2790x2800', title: 'gegen Barmstedter MTV', text: '5' }]
+    - [{ url: '?staffel=699&r=4#p2790x2794', title: 'gegen SV Büsum', text: 4½ }]
+    - [{ url: '?staffel=699&r=5#p2790x2795', title: 'gegen SC Wrist-K. 2', text: '4' }]
+    - [{ url: '?staffel=699&r=3#p2790x2793', title: 'gegen SC Marne', text: '4' }]
+    - 12
+    - 41½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Quickborn 2', url: '?mannschaft=2798', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=699&r=4#p2798x2796', title: 'gegen SF Burg', text: 2½ }]
+    - [{ url: '?staffel=699&r=9#p2798x2792', title: 'gegen Elmshorner SC 3', text: 3½ }]
+    - [{ url: '?staffel=699&r=8#p2798x2790', title: 'gegen Uetersener SK', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=699&r=7#p2798x2799', title: 'gegen SK Kollmar', text: 5½ }]
+    - [{ url: '?staffel=699&r=5#p2798x2797', title: 'gegen SK Brunsbüttel', text: '5' }]
+    - [{ url: '?staffel=699&r=6#p2798x2800', title: 'gegen Barmstedter MTV', text: '6' }]
+    - [{ url: '?staffel=699&r=2#p2798x2794', title: 'gegen SV Büsum', text: '5' }]
+    - [{ url: '?staffel=699&r=3#p2798x2795', title: 'gegen SC Wrist-K. 2', text: 5½ }]
+    - [{ url: '?staffel=699&r=1#p2798x2793', title: 'gegen SC Marne', text: 4½ }]
+    - 12
+    - 40½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Kollmar', url: '?mannschaft=2799', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=699&r=5#p2799x2796', title: 'gegen SF Burg', text: 4½ }]
+    - [{ url: '?staffel=699&r=1#p2799x2792', title: 'gegen Elmshorner SC 3', text: '4' }]
+    - [{ url: '?staffel=699&r=9#p2799x2790', title: 'gegen Uetersener SK', text: 2½ }]
+    - [{ url: '?staffel=699&r=7#p2799x2798', title: 'gegen SV Quickborn 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=699&r=6#p2799x2797', title: 'gegen SK Brunsbüttel', text: '5' }]
+    - [{ url: '?staffel=699&r=8#p2799x2800', title: 'gegen Barmstedter MTV', text: '4' }]
+    - [{ url: '?staffel=699&r=3#p2799x2794', title: 'gegen SV Büsum', text: '4' }]
+    - [{ url: '?staffel=699&r=4#p2799x2795', title: 'gegen SC Wrist-K. 2', text: 5½ }]
+    - [{ url: '?staffel=699&r=2#p2799x2793', title: 'gegen SC Marne', text: 5½ }]
+    - 11
+    - 37½
+    - absteigerRelegation
+-
+    - '6.'
+    - { text: 'SK Brunsbüttel', url: '?mannschaft=2797', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=699&r=3#p2797x2796', title: 'gegen SF Burg', text: 3½ }]
+    - [{ url: '?staffel=699&r=8#p2797x2792', title: 'gegen Elmshorner SC 3', text: '3' }]
+    - [{ url: '?staffel=699&r=7#p2797x2790', title: 'gegen Uetersener SK', text: '5' }]
+    - [{ url: '?staffel=699&r=5#p2797x2798', title: 'gegen SV Quickborn 2', text: '3' }]
+    - [{ url: '?staffel=699&r=6#p2797x2799', title: 'gegen SK Kollmar', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=699&r=4#p2797x2800', title: 'gegen Barmstedter MTV', text: '5' }]
+    - [{ url: '?staffel=699&r=1#p2797x2794', title: 'gegen SV Büsum', text: 5½ }]
+    - [{ url: '?staffel=699&r=2#p2797x2795', title: 'gegen SC Wrist-K. 2', text: 5½ }]
+    - [{ url: '?staffel=699&r=9#p2797x2793', title: 'gegen SC Marne', text: '6' }]
+    - 10
+    - 39½
+    - absteigerRelegation
+-
+    - '7.'
+    - { text: 'Barmstedter MTV', url: '?mannschaft=2800', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=699&r=2#p2800x2796', title: 'gegen SF Burg', text: '3' }]
+    - [{ url: '?staffel=699&r=3#p2800x2792', title: 'gegen Elmshorner SC 3', text: '1' }]
+    - [{ url: '?staffel=699&r=1#p2800x2790', title: 'gegen Uetersener SK', text: '3' }]
+    - [{ url: '?staffel=699&r=6#p2800x2798', title: 'gegen SV Quickborn 2', text: '2' }]
+    - [{ url: '?staffel=699&r=8#p2800x2799', title: 'gegen SK Kollmar', text: '4' }]
+    - [{ url: '?staffel=699&r=4#p2800x2797', title: 'gegen SK Brunsbüttel', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=699&r=7#p2800x2794', title: 'gegen SV Büsum', text: 5½ }]
+    - [{ url: '?staffel=699&r=9#p2800x2795', title: 'gegen SC Wrist-K. 2', text: 5½ }]
+    - [{ url: '?staffel=699&r=5#p2800x2793', title: 'gegen SC Marne', text: 5½ }]
+    - 7
+    - 32½
+    - absteigerRelegation
+-
+    - '8.'
+    - { text: 'SV Büsum', url: '?mannschaft=2794', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=699&r=9#p2794x2796', title: 'gegen SF Burg', text: 1½ }]
+    - [{ url: '?staffel=699&r=5#p2794x2792', title: 'gegen Elmshorner SC 3', text: 2½ }]
+    - [{ url: '?staffel=699&r=4#p2794x2790', title: 'gegen Uetersener SK', text: 3½ }]
+    - [{ url: '?staffel=699&r=2#p2794x2798', title: 'gegen SV Quickborn 2', text: '3' }]
+    - [{ url: '?staffel=699&r=3#p2794x2799', title: 'gegen SK Kollmar', text: '4' }]
+    - [{ url: '?staffel=699&r=1#p2794x2797', title: 'gegen SK Brunsbüttel', text: 2½ }]
+    - [{ url: '?staffel=699&r=7#p2794x2800', title: 'gegen Barmstedter MTV', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=699&r=8#p2794x2795', title: 'gegen SC Wrist-K. 2', text: '5' }]
+    - [{ url: '?staffel=699&r=6#p2794x2793', title: 'gegen SC Marne', text: '4' }]
+    - 4
+    - 28½
+    - absteigerRelegation
+-
+    - '9.'
+    - { text: 'SC Wrist-K. 2', url: '?mannschaft=2795', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=699&r=1#p2795x2796', title: 'gegen SF Burg', text: 3½ }]
+    - [{ url: '?staffel=699&r=6#p2795x2792', title: 'gegen Elmshorner SC 3', text: 3½ }]
+    - [{ url: '?staffel=699&r=5#p2795x2790', title: 'gegen Uetersener SK', text: '4' }]
+    - [{ url: '?staffel=699&r=3#p2795x2798', title: 'gegen SV Quickborn 2', text: 2½ }]
+    - [{ url: '?staffel=699&r=4#p2795x2799', title: 'gegen SK Kollmar', text: 2½ }]
+    - [{ url: '?staffel=699&r=2#p2795x2797', title: 'gegen SK Brunsbüttel', text: 2½ }]
+    - [{ url: '?staffel=699&r=9#p2795x2800', title: 'gegen Barmstedter MTV', text: 2½ }]
+    - [{ url: '?staffel=699&r=8#p2795x2794', title: 'gegen SV Büsum', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=699&r=7#p2795x2793', title: 'gegen SC Marne', text: 4½ }]
+    - 3
+    - 28½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SC Marne', url: '?mannschaft=2793', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=699&r=8#p2793x2796', title: 'gegen SF Burg', text: '2' }]
+    - [{ url: '?staffel=699&r=4#p2793x2792', title: 'gegen Elmshorner SC 3', text: 1½ }]
+    - [{ url: '?staffel=699&r=3#p2793x2790', title: 'gegen Uetersener SK', text: '4' }]
+    - [{ url: '?staffel=699&r=1#p2793x2798', title: 'gegen SV Quickborn 2', text: 3½ }]
+    - [{ url: '?staffel=699&r=2#p2793x2799', title: 'gegen SK Kollmar', text: 2½ }]
+    - [{ url: '?staffel=699&r=9#p2793x2797', title: 'gegen SK Brunsbüttel', text: '2' }]
+    - [{ url: '?staffel=699&r=5#p2793x2800', title: 'gegen Barmstedter MTV', text: 2½ }]
+    - [{ url: '?staffel=699&r=6#p2793x2794', title: 'gegen SV Büsum', text: '4' }]
+    - [{ url: '?staffel=699&r=7#p2793x2795', title: 'gegen SC Wrist-K. 2', text: 3½ }]
+    - xxx
+    - 2
+    - 25½
+    - absteiger

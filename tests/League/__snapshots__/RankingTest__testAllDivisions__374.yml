@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Aurich', url: '?mannschaft=3720', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=820&r=2#p3720x3717', title: 'gegen SV Osnabrück', text: '2' }]
+    - [{ url: '?staffel=820&r=7#p3720x3714', title: 'gegen SV Lingen 2', text: '4' }]
+    - [{ url: '?staffel=820&r=4#p3720x3718', title: 'gegen SK Nordhorn-Bl. 2', text: '4' }]
+    - [{ url: '?staffel=820&r=1#p3720x3716', title: 'gegen SV Veldhausen', text: 2½ }]
+    - [{ url: '?staffel=820&r=3#p3720x3721', title: 'gegen Wilhelmshavener SC', text: 3½ }]
+    - [{ url: '?staffel=820&r=5#p3720x3719', title: 'gegen SK Nordhorn-Bl. 3', text: '4' }]
+    - [{ url: '?staffel=820&r=6#p3720x3715', title: 'gegen SV Lingen 3', text: '4' }]
+    - 13
+    - '24'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SV Osnabrück', url: '?mannschaft=3717', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=820&r=2#p3717x3720', title: 'gegen SC Aurich', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=820&r=5#p3717x3714', title: 'gegen SV Lingen 2', text: '2' }]
+    - [{ url: '?staffel=820&r=6#p3717x3718', title: 'gegen SK Nordhorn-Bl. 2', text: 3½ }]
+    - [{ url: '?staffel=820&r=3#p3717x3716', title: 'gegen SV Veldhausen', text: '2' }]
+    - [{ url: '?staffel=820&r=1#p3717x3721', title: 'gegen Wilhelmshavener SC', text: '3' }]
+    - [{ url: '?staffel=820&r=7#p3717x3719', title: 'gegen SK Nordhorn-Bl. 3', text: 2½ }]
+    - [{ url: '?staffel=820&r=4#p3717x3715', title: 'gegen SV Lingen 3', text: '4' }]
+    - 11
+    - '19'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=3714', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=820&r=7#p3714x3720', title: 'gegen SC Aurich', text: '0' }]
+    - [{ url: '?staffel=820&r=5#p3714x3717', title: 'gegen SV Osnabrück', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=820&r=2#p3714x3718', title: 'gegen SK Nordhorn-Bl. 2', text: '3' }]
+    - [{ url: '?staffel=820&r=4#p3714x3716', title: 'gegen SV Veldhausen', text: '3' }]
+    - [{ url: '?staffel=820&r=6#p3714x3721', title: 'gegen Wilhelmshavener SC', text: '0' }]
+    - [{ url: '?staffel=820&r=1#p3714x3719', title: 'gegen SK Nordhorn-Bl. 3', text: '3' }]
+    - [{ url: '?staffel=820&r=3#p3714x3715', title: 'gegen SV Lingen 3', text: '4' }]
+    - 9
+    - '15'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Bl. 2', url: '?mannschaft=3718', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=820&r=4#p3718x3720', title: 'gegen SC Aurich', text: '0' }]
+    - [{ url: '?staffel=820&r=6#p3718x3717', title: 'gegen SV Osnabrück', text: ½ }]
+    - [{ url: '?staffel=820&r=2#p3718x3714', title: 'gegen SV Lingen 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=820&r=7#p3718x3716', title: 'gegen SV Veldhausen', text: 2½ }]
+    - [{ url: '?staffel=820&r=5#p3718x3721', title: 'gegen Wilhelmshavener SC', text: '3' }]
+    - [{ url: '?staffel=820&r=3#p3718x3719', title: 'gegen SK Nordhorn-Bl. 3', text: '3' }]
+    - [{ url: '?staffel=820&r=1#p3718x3715', title: 'gegen SV Lingen 3', text: '4' }]
+    - 8
+    - '14'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Veldhausen', url: '?mannschaft=3716', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=820&r=1#p3716x3720', title: 'gegen SC Aurich', text: 1½ }]
+    - [{ url: '?staffel=820&r=3#p3716x3717', title: 'gegen SV Osnabrück', text: '2' }]
+    - [{ url: '?staffel=820&r=4#p3716x3714', title: 'gegen SV Lingen 2', text: '1' }]
+    - [{ url: '?staffel=820&r=7#p3716x3718', title: 'gegen SK Nordhorn-Bl. 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=820&r=2#p3716x3721', title: 'gegen Wilhelmshavener SC', text: 3½ }]
+    - [{ url: '?staffel=820&r=6#p3716x3719', title: 'gegen SK Nordhorn-Bl. 3', text: '4' }]
+    - [{ url: '?staffel=820&r=5#p3716x3715', title: 'gegen SV Lingen 3', text: '3' }]
+    - 7
+    - 16½
+    - ''
+-
+    - '6.'
+    - { text: 'Wilhelmshavener SC', url: '?mannschaft=3721', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=820&r=3#p3721x3720', title: 'gegen SC Aurich', text: ½ }]
+    - [{ url: '?staffel=820&r=1#p3721x3717', title: 'gegen SV Osnabrück', text: '1' }]
+    - [{ url: '?staffel=820&r=6#p3721x3714', title: 'gegen SV Lingen 2', text: '4' }]
+    - [{ url: '?staffel=820&r=5#p3721x3718', title: 'gegen SK Nordhorn-Bl. 2', text: '1' }]
+    - [{ url: '?staffel=820&r=2#p3721x3716', title: 'gegen SV Veldhausen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=820&r=4#p3721x3719', title: 'gegen SK Nordhorn-Bl. 3', text: '3' }]
+    - [{ url: '?staffel=820&r=7#p3721x3715', title: 'gegen SV Lingen 3', text: '4' }]
+    - 6
+    - '14'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Nordhorn-Bl. 3', url: '?mannschaft=3719', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=820&r=5#p3719x3720', title: 'gegen SC Aurich', text: '0' }]
+    - [{ url: '?staffel=820&r=7#p3719x3717', title: 'gegen SV Osnabrück', text: 1½ }]
+    - [{ url: '?staffel=820&r=1#p3719x3714', title: 'gegen SV Lingen 2', text: '1' }]
+    - [{ url: '?staffel=820&r=3#p3719x3718', title: 'gegen SK Nordhorn-Bl. 2', text: '1' }]
+    - [{ url: '?staffel=820&r=6#p3719x3716', title: 'gegen SV Veldhausen', text: '0' }]
+    - [{ url: '?staffel=820&r=4#p3719x3721', title: 'gegen Wilhelmshavener SC', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=820&r=2#p3719x3715', title: 'gegen SV Lingen 3', text: '4' }]
+    - 2
+    - 8½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Lingen 3', url: '?mannschaft=3715', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=820&r=6#p3715x3720', title: 'gegen SC Aurich', text: '0' }]
+    - [{ url: '?staffel=820&r=4#p3715x3717', title: 'gegen SV Osnabrück', text: '0' }]
+    - [{ url: '?staffel=820&r=3#p3715x3714', title: 'gegen SV Lingen 2', text: '0' }]
+    - [{ url: '?staffel=820&r=1#p3715x3718', title: 'gegen SK Nordhorn-Bl. 2', text: '0' }]
+    - [{ url: '?staffel=820&r=5#p3715x3716', title: 'gegen SV Veldhausen', text: '1' }]
+    - [{ url: '?staffel=820&r=7#p3715x3721', title: 'gegen Wilhelmshavener SC', text: '0' }]
+    - [{ url: '?staffel=820&r=2#p3715x3719', title: 'gegen SK Nordhorn-Bl. 3', text: '0' }]
+    - xxx
+    - 0
+    - '1'
+    - ''

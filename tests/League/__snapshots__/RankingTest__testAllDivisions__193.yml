@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Gretenberg', url: '?mannschaft=2048', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=616&r=9#p2048x1839', title: 'gegen Freib. Wedemark', text: '4' }]
+    - [{ url: '?staffel=616&r=2#p2048x2041', title: 'gegen SK Anderten', text: '5' }]
+    - [{ url: '?staffel=616&r=6#p2048x1941', title: 'gegen SG Döhren-Gleid', text: 6½ }]
+    - [{ url: '?staffel=616&r=4#p2048x2039', title: 'gegen SV Laatzen 2', text: 4½ }]
+    - [{ url: '?staffel=616&r=8#p2048x2021', title: 'gegen Turm Hannover', text: 5½ }]
+    - [{ url: '?staffel=616&r=3#p2048x2054', title: 'gegen SF Hannover 3', text: '5' }]
+    - [{ url: '?staffel=616&r=1#p2048x2080', title: 'gegen SK Lehrte 3', text: 5½ }]
+    - [{ url: '?staffel=616&r=5#p2048x2019', title: 'gegen WB Eilenriede 3', text: '4' }]
+    - [{ url: '?staffel=616&r=7#p2048x2053', title: 'gegen TSV Pattensen', text: 6½ }]
+    - 16
+    - 46½
+    - ''
+-
+    - '2.'
+    - { text: 'Freib. Wedemark', url: '?mannschaft=1839', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=616&r=9#p1839x2048', title: 'gegen SV Gretenberg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=616&r=3#p1839x2041', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=616&r=7#p1839x1941', title: 'gegen SG Döhren-Gleid', text: 6½ }]
+    - [{ url: '?staffel=616&r=5#p1839x2039', title: 'gegen SV Laatzen 2', text: 3½ }]
+    - [{ url: '?staffel=616&r=1#p1839x2021', title: 'gegen Turm Hannover', text: '5' }]
+    - [{ url: '?staffel=616&r=4#p1839x2054', title: 'gegen SF Hannover 3', text: 4½ }]
+    - [{ url: '?staffel=616&r=2#p1839x2080', title: 'gegen SK Lehrte 3', text: '6' }]
+    - [{ url: '?staffel=616&r=6#p1839x2019', title: 'gegen WB Eilenriede 3', text: '7' }]
+    - [{ url: '?staffel=616&r=8#p1839x2053', title: 'gegen TSV Pattensen', text: '5' }]
+    - 13
+    - '45'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Anderten', url: '?mannschaft=2041', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=616&r=2#p2041x2048', title: 'gegen SV Gretenberg', text: '3' }]
+    - [{ url: '?staffel=616&r=3#p2041x1839', title: 'gegen Freib. Wedemark', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=616&r=9#p2041x1941', title: 'gegen SG Döhren-Gleid', text: 4½ }]
+    - [{ url: '?staffel=616&r=7#p2041x2039', title: 'gegen SV Laatzen 2', text: '4' }]
+    - [{ url: '?staffel=616&r=5#p2041x2021', title: 'gegen Turm Hannover', text: '4' }]
+    - [{ url: '?staffel=616&r=6#p2041x2054', title: 'gegen SF Hannover 3', text: '6' }]
+    - [{ url: '?staffel=616&r=4#p2041x2080', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=616&r=8#p2041x2019', title: 'gegen WB Eilenriede 3', text: 5½ }]
+    - [{ url: '?staffel=616&r=1#p2041x2053', title: 'gegen TSV Pattensen', text: '6' }]
+    - 13
+    - 41½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Döhren-Gleid', url: '?mannschaft=1941', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=616&r=6#p1941x2048', title: 'gegen SV Gretenberg', text: 1½ }]
+    - [{ url: '?staffel=616&r=7#p1941x1839', title: 'gegen Freib. Wedemark', text: 1½ }]
+    - [{ url: '?staffel=616&r=9#p1941x2041', title: 'gegen SK Anderten', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=616&r=2#p1941x2039', title: 'gegen SV Laatzen 2', text: 5½ }]
+    - [{ url: '?staffel=616&r=4#p1941x2021', title: 'gegen Turm Hannover', text: '5' }]
+    - [{ url: '?staffel=616&r=1#p1941x2054', title: 'gegen SF Hannover 3', text: 4½ }]
+    - [{ url: '?staffel=616&r=8#p1941x2080', title: 'gegen SK Lehrte 3', text: 4½ }]
+    - [{ url: '?staffel=616&r=3#p1941x2019', title: 'gegen WB Eilenriede 3', text: 6½ }]
+    - [{ url: '?staffel=616&r=5#p1941x2053', title: 'gegen TSV Pattensen', text: '3' }]
+    - 10
+    - 35½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Laatzen 2', url: '?mannschaft=2039', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=616&r=4#p2039x2048', title: 'gegen SV Gretenberg', text: 3½ }]
+    - [{ url: '?staffel=616&r=5#p2039x1839', title: 'gegen Freib. Wedemark', text: 4½ }]
+    - [{ url: '?staffel=616&r=7#p2039x2041', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=616&r=2#p2039x1941', title: 'gegen SG Döhren-Gleid', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=616&r=9#p2039x2021', title: 'gegen Turm Hannover', text: '7' }]
+    - [{ url: '?staffel=616&r=8#p2039x2054', title: 'gegen SF Hannover 3', text: '4' }]
+    - [{ url: '?staffel=616&r=6#p2039x2080', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=616&r=1#p2039x2019', title: 'gegen WB Eilenriede 3', text: '8' }]
+    - [{ url: '?staffel=616&r=3#p2039x2053', title: 'gegen TSV Pattensen', text: '3' }]
+    - 9
+    - 40½
+    - ''
+-
+    - '6.'
+    - { text: 'Turm Hannover', url: '?mannschaft=2021', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=616&r=8#p2021x2048', title: 'gegen SV Gretenberg', text: 2½ }]
+    - [{ url: '?staffel=616&r=1#p2021x1839', title: 'gegen Freib. Wedemark', text: '3' }]
+    - [{ url: '?staffel=616&r=5#p2021x2041', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=616&r=4#p2021x1941', title: 'gegen SG Döhren-Gleid', text: '3' }]
+    - [{ url: '?staffel=616&r=9#p2021x2039', title: 'gegen SV Laatzen 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=616&r=7#p2021x2054', title: 'gegen SF Hannover 3', text: 5½ }]
+    - [{ url: '?staffel=616&r=3#p2021x2080', title: 'gegen SK Lehrte 3', text: 4½ }]
+    - [{ url: '?staffel=616&r=2#p2021x2019', title: 'gegen WB Eilenriede 3', text: '4' }]
+    - [{ url: '?staffel=616&r=6#p2021x2053', title: 'gegen TSV Pattensen', text: '6' }]
+    - 8
+    - 33½
+    - ''
+-
+    - '7.'
+    - { text: 'SF Hannover 3', url: '?mannschaft=2054', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=616&r=3#p2054x2048', title: 'gegen SV Gretenberg', text: '3' }]
+    - [{ url: '?staffel=616&r=4#p2054x1839', title: 'gegen Freib. Wedemark', text: 3½ }]
+    - [{ url: '?staffel=616&r=6#p2054x2041', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=616&r=1#p2054x1941', title: 'gegen SG Döhren-Gleid', text: 3½ }]
+    - [{ url: '?staffel=616&r=8#p2054x2039', title: 'gegen SV Laatzen 2', text: '4' }]
+    - [{ url: '?staffel=616&r=7#p2054x2021', title: 'gegen Turm Hannover', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=616&r=5#p2054x2080', title: 'gegen SK Lehrte 3', text: '5' }]
+    - [{ url: '?staffel=616&r=9#p2054x2019', title: 'gegen WB Eilenriede 3', text: '5' }]
+    - [{ url: '?staffel=616&r=2#p2054x2053', title: 'gegen TSV Pattensen', text: 6½ }]
+    - 7
+    - '35'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=2080', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=616&r=1#p2080x2048', title: 'gegen SV Gretenberg', text: 2½ }]
+    - [{ url: '?staffel=616&r=2#p2080x1839', title: 'gegen Freib. Wedemark', text: '2' }]
+    - [{ url: '?staffel=616&r=4#p2080x2041', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=616&r=8#p2080x1941', title: 'gegen SG Döhren-Gleid', text: 3½ }]
+    - [{ url: '?staffel=616&r=6#p2080x2039', title: 'gegen SV Laatzen 2', text: '4' }]
+    - [{ url: '?staffel=616&r=3#p2080x2021', title: 'gegen Turm Hannover', text: 3½ }]
+    - [{ url: '?staffel=616&r=5#p2080x2054', title: 'gegen SF Hannover 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=616&r=7#p2080x2019', title: 'gegen WB Eilenriede 3', text: '6' }]
+    - [{ url: '?staffel=616&r=9#p2080x2053', title: 'gegen TSV Pattensen', text: '6' }]
+    - 6
+    - 34½
+    - ''
+-
+    - '9.'
+    - { text: 'WB Eilenriede 3', url: '?mannschaft=2019', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=616&r=5#p2019x2048', title: 'gegen SV Gretenberg', text: '4' }]
+    - [{ url: '?staffel=616&r=6#p2019x1839', title: 'gegen Freib. Wedemark', text: '1' }]
+    - [{ url: '?staffel=616&r=8#p2019x2041', title: 'gegen SK Anderten', text: 2½ }]
+    - [{ url: '?staffel=616&r=3#p2019x1941', title: 'gegen SG Döhren-Gleid', text: 1½ }]
+    - [{ url: '?staffel=616&r=1#p2019x2039', title: 'gegen SV Laatzen 2', text: '0' }]
+    - [{ url: '?staffel=616&r=2#p2019x2021', title: 'gegen Turm Hannover', text: '4' }]
+    - [{ url: '?staffel=616&r=9#p2019x2054', title: 'gegen SF Hannover 3', text: '3' }]
+    - [{ url: '?staffel=616&r=7#p2019x2080', title: 'gegen SK Lehrte 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=616&r=4#p2019x2053', title: 'gegen TSV Pattensen', text: 6½ }]
+    - 4
+    - 24½
+    - ''
+-
+    - '10.'
+    - { text: 'TSV Pattensen', url: '?mannschaft=2053', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=616&r=7#p2053x2048', title: 'gegen SV Gretenberg', text: 1½ }]
+    - [{ url: '?staffel=616&r=8#p2053x1839', title: 'gegen Freib. Wedemark', text: '3' }]
+    - [{ url: '?staffel=616&r=1#p2053x2041', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=616&r=5#p2053x1941', title: 'gegen SG Döhren-Gleid', text: '5' }]
+    - [{ url: '?staffel=616&r=3#p2053x2039', title: 'gegen SV Laatzen 2', text: '5' }]
+    - [{ url: '?staffel=616&r=6#p2053x2021', title: 'gegen Turm Hannover', text: '2' }]
+    - [{ url: '?staffel=616&r=2#p2053x2054', title: 'gegen SF Hannover 3', text: 1½ }]
+    - [{ url: '?staffel=616&r=9#p2053x2080', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=616&r=4#p2053x2019', title: 'gegen WB Eilenriede 3', text: 1½ }]
+    - xxx
+    - 4
+    - 23½
+    - ''

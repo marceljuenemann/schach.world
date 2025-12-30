@@ -1,0 +1,233 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Schwäbisch Hall', url: '?mannschaft=4442', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1002&r=3#p4442x4441', title: 'gegen OSG Baden-Baden', text: '3' }]
+    - [{ url: '?staffel=1002&r=8#p4442x4435', title: 'gegen SC Bad Königshofen', text: 3½ }]
+    - [{ url: '?staffel=1002&r=9#p4442x4437', title: 'gegen SF Deizisau', text: 3½ }]
+    - [{ url: '?staffel=1002&r=2#p4442x4439', title: 'gegen Hamburger SK', text: 3½ }]
+    - [{ url: '?staffel=1002&r=7#p4442x4444', title: 'gegen Rodewischer SM', text: '4' }]
+    - [{ url: '?staffel=1002&r=4#p4442x4438', title: 'gegen Karlsruher SF', text: 4½ }]
+    - [{ url: '?staffel=1002&r=6#p4442x4434', title: 'gegen SK Lehrte', text: '6' }]
+    - [{ url: '?staffel=1002&r=5#p4442x4445', title: 'gegen SV Medizin Erfurt', text: '6' }]
+    - [{ url: '?staffel=1002&r=1#p4442x4440', title: 'gegen TuRa Harksheide', text: '6' }]
+    - [{ url: '?staffel=1002&r=10#p4442x4443', title: 'gegen SG Augsburg', text: '5' }]
+    - [{ url: '?staffel=1002&r=11#p4442x4436', title: 'gegen FC Bayern München', text: '6' }]
+    - 21
+    - '51'
+    - ''
+-
+    - '2.'
+    - { text: 'OSG Baden-Baden', url: '?mannschaft=4441', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1002&r=3#p4441x4442', title: 'gegen SK Schwäbisch Hall', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1002&r=11#p4441x4435', title: 'gegen SC Bad Königshofen', text: '5' }]
+    - [{ url: '?staffel=1002&r=4#p4441x4437', title: 'gegen SF Deizisau', text: '5' }]
+    - [{ url: '?staffel=1002&r=6#p4441x4439', title: 'gegen Hamburger SK', text: '3' }]
+    - [{ url: '?staffel=1002&r=10#p4441x4444', title: 'gegen Rodewischer SM', text: 5½ }]
+    - [{ url: '?staffel=1002&r=9#p4441x4438', title: 'gegen Karlsruher SF', text: '4' }]
+    - [{ url: '?staffel=1002&r=8#p4441x4434', title: 'gegen SK Lehrte', text: '5' }]
+    - [{ url: '?staffel=1002&r=7#p4441x4445', title: 'gegen SV Medizin Erfurt', text: 4½ }]
+    - [{ url: '?staffel=1002&r=5#p4441x4440', title: 'gegen TuRa Harksheide', text: '6' }]
+    - [{ url: '?staffel=1002&r=1#p4441x4443', title: 'gegen SG Augsburg', text: 5½ }]
+    - [{ url: '?staffel=1002&r=2#p4441x4436', title: 'gegen FC Bayern München', text: '5' }]
+    - 20
+    - 51½
+    - ''
+-
+    - '3.'
+    - { text: 'SC Bad Königshofen', url: '?mannschaft=4435', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1002&r=8#p4435x4442', title: 'gegen SK Schwäbisch Hall', text: 2½ }]
+    - [{ url: '?staffel=1002&r=11#p4435x4441', title: 'gegen OSG Baden-Baden', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1002&r=7#p4435x4437', title: 'gegen SF Deizisau', text: '4' }]
+    - [{ url: '?staffel=1002&r=3#p4435x4439', title: 'gegen Hamburger SK', text: '4' }]
+    - [{ url: '?staffel=1002&r=9#p4435x4444', title: 'gegen Rodewischer SM', text: '3' }]
+    - [{ url: '?staffel=1002&r=10#p4435x4438', title: 'gegen Karlsruher SF', text: '4' }]
+    - [{ url: '?staffel=1002&r=1#p4435x4434', title: 'gegen SK Lehrte', text: '5' }]
+    - [{ url: '?staffel=1002&r=2#p4435x4445', title: 'gegen SV Medizin Erfurt', text: 4½ }]
+    - [{ url: '?staffel=1002&r=4#p4435x4440', title: 'gegen TuRa Harksheide', text: '0' }]
+    - [{ url: '?staffel=1002&r=6#p4435x4443', title: 'gegen SG Augsburg', text: 5½ }]
+    - [{ url: '?staffel=1002&r=5#p4435x4436', title: 'gegen FC Bayern München', text: 4½ }]
+    - 15
+    - '38'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Deizisau', url: '?mannschaft=4437', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1002&r=9#p4437x4442', title: 'gegen SK Schwäbisch Hall', text: 2½ }]
+    - [{ url: '?staffel=1002&r=4#p4437x4441', title: 'gegen OSG Baden-Baden', text: '1' }]
+    - [{ url: '?staffel=1002&r=7#p4437x4435', title: 'gegen SC Bad Königshofen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1002&r=1#p4437x4439', title: 'gegen Hamburger SK', text: 2½ }]
+    - [{ url: '?staffel=1002&r=8#p4437x4444', title: 'gegen Rodewischer SM', text: '4' }]
+    - [{ url: '?staffel=1002&r=3#p4437x4438', title: 'gegen Karlsruher SF', text: 4½ }]
+    - [{ url: '?staffel=1002&r=5#p4437x4434', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=1002&r=6#p4437x4445', title: 'gegen SV Medizin Erfurt', text: '6' }]
+    - [{ url: '?staffel=1002&r=2#p4437x4440', title: 'gegen TuRa Harksheide', text: 4½ }]
+    - [{ url: '?staffel=1002&r=11#p4437x4443', title: 'gegen SG Augsburg', text: '5' }]
+    - [{ url: '?staffel=1002&r=10#p4437x4436', title: 'gegen FC Bayern München', text: 4½ }]
+    - 14
+    - '40'
+    - ''
+-
+    - '5.'
+    - { text: 'Hamburger SK', url: '?mannschaft=4439', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1002&r=2#p4439x4442', title: 'gegen SK Schwäbisch Hall', text: 2½ }]
+    - [{ url: '?staffel=1002&r=6#p4439x4441', title: 'gegen OSG Baden-Baden', text: '3' }]
+    - [{ url: '?staffel=1002&r=3#p4439x4435', title: 'gegen SC Bad Königshofen', text: '2' }]
+    - [{ url: '?staffel=1002&r=1#p4439x4437', title: 'gegen SF Deizisau', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1002&r=4#p4439x4444', title: 'gegen Rodewischer SM', text: '3' }]
+    - [{ url: '?staffel=1002&r=5#p4439x4438', title: 'gegen Karlsruher SF', text: 3½ }]
+    - [{ url: '?staffel=1002&r=10#p4439x4434', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=1002&r=11#p4439x4445', title: 'gegen SV Medizin Erfurt', text: '4' }]
+    - [{ url: '?staffel=1002&r=9#p4439x4440', title: 'gegen TuRa Harksheide', text: 5½ }]
+    - [{ url: '?staffel=1002&r=8#p4439x4443', title: 'gegen SG Augsburg', text: '4' }]
+    - [{ url: '?staffel=1002&r=7#p4439x4436', title: 'gegen FC Bayern München', text: '5' }]
+    - 14
+    - 38½
+    - ''
+-
+    - '6.'
+    - { text: 'Rodewischer SM', url: '?mannschaft=4444', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1002&r=7#p4444x4442', title: 'gegen SK Schwäbisch Hall', text: '2' }]
+    - [{ url: '?staffel=1002&r=10#p4444x4441', title: 'gegen OSG Baden-Baden', text: ½ }]
+    - [{ url: '?staffel=1002&r=9#p4444x4435', title: 'gegen SC Bad Königshofen', text: '3' }]
+    - [{ url: '?staffel=1002&r=8#p4444x4437', title: 'gegen SF Deizisau', text: '2' }]
+    - [{ url: '?staffel=1002&r=4#p4444x4439', title: 'gegen Hamburger SK', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1002&r=11#p4444x4438', title: 'gegen Karlsruher SF', text: 2½ }]
+    - [{ url: '?staffel=1002&r=2#p4444x4434', title: 'gegen SK Lehrte', text: '5' }]
+    - [{ url: '?staffel=1002&r=1#p4444x4445', title: 'gegen SV Medizin Erfurt', text: '5' }]
+    - [{ url: '?staffel=1002&r=3#p4444x4440', title: 'gegen TuRa Harksheide', text: 5½ }]
+    - [{ url: '?staffel=1002&r=5#p4444x4443', title: 'gegen SG Augsburg', text: 5½ }]
+    - [{ url: '?staffel=1002&r=6#p4444x4436', title: 'gegen FC Bayern München', text: '5' }]
+    - 12
+    - '39'
+    - ''
+-
+    - '7.'
+    - { text: 'Karlsruher SF', url: '?mannschaft=4438', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1002&r=4#p4438x4442', title: 'gegen SK Schwäbisch Hall', text: 1½ }]
+    - [{ url: '?staffel=1002&r=9#p4438x4441', title: 'gegen OSG Baden-Baden', text: '2' }]
+    - [{ url: '?staffel=1002&r=10#p4438x4435', title: 'gegen SC Bad Königshofen', text: '2' }]
+    - [{ url: '?staffel=1002&r=3#p4438x4437', title: 'gegen SF Deizisau', text: 1½ }]
+    - [{ url: '?staffel=1002&r=5#p4438x4439', title: 'gegen Hamburger SK', text: 2½ }]
+    - [{ url: '?staffel=1002&r=11#p4438x4444', title: 'gegen Rodewischer SM', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1002&r=7#p4438x4434', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=1002&r=8#p4438x4445', title: 'gegen SV Medizin Erfurt', text: 2½ }]
+    - [{ url: '?staffel=1002&r=6#p4438x4440', title: 'gegen TuRa Harksheide', text: 3½ }]
+    - [{ url: '?staffel=1002&r=2#p4438x4443', title: 'gegen SG Augsburg', text: '4' }]
+    - [{ url: '?staffel=1002&r=1#p4438x4436', title: 'gegen FC Bayern München', text: '4' }]
+    - 10
+    - 30½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Lehrte', url: '?mannschaft=4434', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1002&r=6#p4434x4442', title: 'gegen SK Schwäbisch Hall', text: '0' }]
+    - [{ url: '?staffel=1002&r=8#p4434x4441', title: 'gegen OSG Baden-Baden', text: '1' }]
+    - [{ url: '?staffel=1002&r=1#p4434x4435', title: 'gegen SC Bad Königshofen', text: '1' }]
+    - [{ url: '?staffel=1002&r=5#p4434x4437', title: 'gegen SF Deizisau', text: 2½ }]
+    - [{ url: '?staffel=1002&r=10#p4434x4439', title: 'gegen Hamburger SK', text: 3½ }]
+    - [{ url: '?staffel=1002&r=2#p4434x4444', title: 'gegen Rodewischer SM', text: '1' }]
+    - [{ url: '?staffel=1002&r=7#p4434x4438', title: 'gegen Karlsruher SF', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1002&r=9#p4434x4445', title: 'gegen SV Medizin Erfurt', text: '4' }]
+    - [{ url: '?staffel=1002&r=11#p4434x4440', title: 'gegen TuRa Harksheide', text: '5' }]
+    - [{ url: '?staffel=1002&r=4#p4434x4443', title: 'gegen SG Augsburg', text: 4½ }]
+    - [{ url: '?staffel=1002&r=3#p4434x4436', title: 'gegen FC Bayern München', text: '5' }]
+    - 10
+    - '30'
+    - ''
+-
+    - '9.'
+    - { text: 'SV Medizin Erfurt', url: '?mannschaft=4445', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1002&r=5#p4445x4442', title: 'gegen SK Schwäbisch Hall', text: '0' }]
+    - [{ url: '?staffel=1002&r=7#p4445x4441', title: 'gegen OSG Baden-Baden', text: 1½ }]
+    - [{ url: '?staffel=1002&r=2#p4445x4435', title: 'gegen SC Bad Königshofen', text: 1½ }]
+    - [{ url: '?staffel=1002&r=6#p4445x4437', title: 'gegen SF Deizisau', text: '0' }]
+    - [{ url: '?staffel=1002&r=11#p4445x4439', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=1002&r=1#p4445x4444', title: 'gegen Rodewischer SM', text: '1' }]
+    - [{ url: '?staffel=1002&r=8#p4445x4438', title: 'gegen Karlsruher SF', text: 3½ }]
+    - [{ url: '?staffel=1002&r=9#p4445x4434', title: 'gegen SK Lehrte', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1002&r=10#p4445x4440', title: 'gegen TuRa Harksheide', text: ½ }]
+    - [{ url: '?staffel=1002&r=3#p4445x4443', title: 'gegen SG Augsburg', text: 3½ }]
+    - [{ url: '?staffel=1002&r=4#p4445x4436', title: 'gegen FC Bayern München', text: 5½ }]
+    - 6
+    - '21'
+    - ''
+-
+    - '10.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=4440', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1002&r=1#p4440x4442', title: 'gegen SK Schwäbisch Hall', text: '0' }]
+    - [{ url: '?staffel=1002&r=5#p4440x4441', title: 'gegen OSG Baden-Baden', text: '0' }]
+    - [{ url: '?staffel=1002&r=4#p4440x4435', title: 'gegen SC Bad Königshofen', text: '6' }]
+    - [{ url: '?staffel=1002&r=2#p4440x4437', title: 'gegen SF Deizisau', text: 1½ }]
+    - [{ url: '?staffel=1002&r=9#p4440x4439', title: 'gegen Hamburger SK', text: ½ }]
+    - [{ url: '?staffel=1002&r=3#p4440x4444', title: 'gegen Rodewischer SM', text: ½ }]
+    - [{ url: '?staffel=1002&r=6#p4440x4438', title: 'gegen Karlsruher SF', text: 2½ }]
+    - [{ url: '?staffel=1002&r=11#p4440x4434', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1002&r=10#p4440x4445', title: 'gegen SV Medizin Erfurt', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1002&r=7#p4440x4443', title: 'gegen SG Augsburg', text: '2' }]
+    - [{ url: '?staffel=1002&r=8#p4440x4436', title: 'gegen FC Bayern München', text: 1½ }]
+    - 4
+    - '21'
+    - absteiger
+-
+    - '11.'
+    - { text: 'SG Augsburg', url: '?mannschaft=4443', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1002&r=10#p4443x4442', title: 'gegen SK Schwäbisch Hall', text: '1' }]
+    - [{ url: '?staffel=1002&r=1#p4443x4441', title: 'gegen OSG Baden-Baden', text: ½ }]
+    - [{ url: '?staffel=1002&r=6#p4443x4435', title: 'gegen SC Bad Königshofen', text: ½ }]
+    - [{ url: '?staffel=1002&r=11#p4443x4437', title: 'gegen SF Deizisau', text: '1' }]
+    - [{ url: '?staffel=1002&r=8#p4443x4439', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=1002&r=5#p4443x4444', title: 'gegen Rodewischer SM', text: ½ }]
+    - [{ url: '?staffel=1002&r=2#p4443x4438', title: 'gegen Karlsruher SF', text: '2' }]
+    - [{ url: '?staffel=1002&r=4#p4443x4434', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=1002&r=3#p4443x4445', title: 'gegen SV Medizin Erfurt', text: 2½ }]
+    - [{ url: '?staffel=1002&r=7#p4443x4440', title: 'gegen TuRa Harksheide', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1002&r=9#p4443x4436', title: 'gegen FC Bayern München', text: 3½ }]
+    - 4
+    - '19'
+    - absteiger
+-
+    - '12.'
+    - { text: 'FC Bayern München', url: '?mannschaft=4436', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1002&r=11#p4436x4442', title: 'gegen SK Schwäbisch Hall', text: '0' }]
+    - [{ url: '?staffel=1002&r=2#p4436x4441', title: 'gegen OSG Baden-Baden', text: '1' }]
+    - [{ url: '?staffel=1002&r=5#p4436x4435', title: 'gegen SC Bad Königshofen', text: 1½ }]
+    - [{ url: '?staffel=1002&r=10#p4436x4437', title: 'gegen SF Deizisau', text: 1½ }]
+    - [{ url: '?staffel=1002&r=7#p4436x4439', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=1002&r=6#p4436x4444', title: 'gegen Rodewischer SM', text: '1' }]
+    - [{ url: '?staffel=1002&r=1#p4436x4438', title: 'gegen Karlsruher SF', text: '2' }]
+    - [{ url: '?staffel=1002&r=3#p4436x4434', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1002&r=4#p4436x4445', title: 'gegen SV Medizin Erfurt', text: ½ }]
+    - [{ url: '?staffel=1002&r=8#p4436x4440', title: 'gegen TuRa Harksheide', text: 4½ }]
+    - [{ url: '?staffel=1002&r=9#p4436x4443', title: 'gegen SG Augsburg', text: 2½ }]
+    - xxx
+    - 2
+    - 16½
+    - absteiger

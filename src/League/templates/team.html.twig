@@ -13,10 +13,27 @@
 {% endmacro %}
 
 {% macro editButton() %}
-  <button class="btn btn-success btn-sm rounded-pill align-bottom ms-2 d-print-none" {{ nsv.tooltip('Bearbeiten') }}>
+  <button class="btn btn-success btn-sm rounded-pill align-text-bottom ms-2 d-print-none" {{ nsv.tooltip('Bearbeiten') }}>
     {{ nsv.icon('edit') }}
   </button>
 {% endmacro %}
+
+{% macro editIcon() %}
+  <span class="print-none" style="cursor: pointer" {{ nsv.tooltip('Bearbeiten') }}>
+    {{ nsv.icon('edit') }}
+  </span>
+{% endmacro %}
+
+{% block headline %}
+  <h2>
+    {{ title }}
+    {% if allowPlayerEdit %}
+      <nsv-dialog-launcher dialog="teamName" params="{{ updateNameDialogParams }}" on-save="reload">
+        {{ _self.editButton() }}
+      </nsv-dialog-launcher>
+    {% endif %}
+  </h2>
+{% endblock %}
 
 {% block content %}
 <div class="row">
@@ -59,7 +76,7 @@
     {# Venue #}
     <h4 class="mt-4">
       Spiellokal
-      {% if auth.isDivisionManager(teamEntity.division) %}
+      {% if allowEdit %}
         <a data-nsv-dialog="UpdateTeamVenue" data-nsv-on-save="reload" data-team-id="{{ team.id }}">{{ _self.editButton() }}</a>
       {% endif %}
     </h4>
@@ -75,8 +92,8 @@
     {# Captain #}
     <h4 class="mt-4">
       Mannschaftsf&uuml;hrer:in
-      {% if auth.isDivisionManager(teamEntity.division) %}
-        <a href="{{ league.uri }}?admin=manndata--&amp;mid={{ team.id }}">{{ _self.editButton() }}</a>
+      {% if allowEdit %}
+        <a data-nsv-dialog="UpdateTeamCaptain" data-nsv-on-save="reload" data-team-id="{{ team.id }}">{{ _self.editButton() }}</a>
       {% endif %}
     </h4>
     {{ team.captain.name }}<br>
@@ -84,6 +101,21 @@
       {% if team.captain.phone %} Tel. {{ team.captain.phone }}<br> {% endif %}
       {% if team.captain.phone2 %} Tel. {{ team.captain.phone2 }}<br> {% endif %}
       {% if team.captain.mail %} {{ nsv.email(team.captain.mail) }}<br> {% endif %}
+    {% endif %}
+
+    {# Additional recipients #}
+    {% if allowEdit %}
+      <h4 class="mt-4">
+        Zus&auml;tzliche E-Mail Empf&auml;nger
+        <a data-nsv-dialog="UpdateTeamRecipients" data-nsv-on-save="reload" data-team-id="{{ team.id }}">{{ _self.editButton() }}</a>
+      </h4>
+      {% if team.additionalRecipients|length %}
+        {% for recipient in team.additionalRecipients %}
+          <span class="badge bg-secondary">{{ recipient }}</span>          
+        {% endfor %}
+      {% else %}
+        Keine
+      {% endif %}
     {% endif %}
     
   </div>

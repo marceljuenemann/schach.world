@@ -1,4 +1,4 @@
-<?
+<?php
 /* Mannschaftsmeldung: 3. Mannschaftsführer und zusätzliche Daten
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -49,7 +49,7 @@
         if ( obj.value.length < 5 ) return;
         if ( mf_changed ) return; // Wurden die Daten schon gesetzt?
 
-        <?
+        <?php
             $ajax = new SED_AjaxRequest ( "getMF" );
             $ajax->setOption ( "name", "obj.value" );
             $ajax->onResult ( '
@@ -66,7 +66,7 @@
     }
 
     --></script>
-    <?
+    <?php
 
     // Zusatzfelder
     $default = $anmeldung->getZusatzFelderDefault ();
@@ -92,5 +92,5 @@
     ?>
     <b>Zus&auml;tzliche Mailempf&auml;nger</b><br />Tragen Sie in das folgende Textfeld alle Mailadressen ein, die die an den Mannschaftsf&uuml;hrer gesendeten Infos, wie Rundmails oder Eingabelinks, ebenfalls erhalten sollen. Nutzen Sie dabei pro Mailadresse nur eine Zeile.<br />
     <textarea name='zusatzempfaenger' cols='40' rows='3'></textarea><br /><br />
-    <?
+    <?php
 ?>

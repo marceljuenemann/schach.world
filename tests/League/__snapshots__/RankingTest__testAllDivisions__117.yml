@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: Uetze-Hänigsen, url: '?mannschaft=1639', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=530&r=2#p1639x1576', title: 'gegen SK Ricklingen 2', text: '4' }, { url: '?staffel=530&r=6#p1639x1576', title: 'gegen SK Ricklingen 2', text: '1' }]
+    - [{ url: '?staffel=530&r=1#p1639x1649', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=530&r=4#p1639x1648', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=530&r=5#p1639x1761', title: 'gegen SG Garbsen/Bb', text: '4' }]
+    - 8
+    - 15½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=1576', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=530&r=2#p1576x1639', title: 'gegen Uetze-Hänigsen', text: '0' }, { url: '?staffel=530&r=6#p1576x1639', title: 'gegen Uetze-Hänigsen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=530&r=5#p1576x1649', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=530&r=3#p1576x1648', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=530&r=4#p1576x1761', title: 'gegen SG Garbsen/Bb', text: 3½ }]
+    - 8
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Springe', url: '?mannschaft=1649', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=530&r=1#p1649x1639', title: 'gegen Uetze-Hänigsen', text: '1' }]
+    - [{ url: '?staffel=530&r=5#p1649x1576', title: 'gegen SK Ricklingen 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=530&r=2#p1649x1648', title: 'gegen SK Rinteln', text: '3' }, { url: '?staffel=530&r=6#p1649x1648', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=530&r=3#p1649x1761', title: 'gegen SG Garbsen/Bb', text: '1' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Rinteln', url: '?mannschaft=1648', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=530&r=4#p1648x1639', title: 'gegen Uetze-Hänigsen', text: ½ }]
+    - [{ url: '?staffel=530&r=3#p1648x1576', title: 'gegen SK Ricklingen 2', text: ½ }]
+    - [{ url: '?staffel=530&r=2#p1648x1649', title: 'gegen SV Springe', text: '1' }, { url: '?staffel=530&r=6#p1648x1649', title: 'gegen SV Springe', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=530&r=1#p1648x1761', title: 'gegen SG Garbsen/Bb', text: '4' }]
+    - 2
+    - 6½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Garbsen/Bb', url: '?mannschaft=1761', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=530&r=5#p1761x1639', title: 'gegen Uetze-Hänigsen', text: '0' }]
+    - [{ url: '?staffel=530&r=4#p1761x1576', title: 'gegen SK Ricklingen 2', text: ½ }]
+    - [{ url: '?staffel=530&r=3#p1761x1649', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=530&r=1#p1761x1648', title: 'gegen SK Rinteln', text: '0' }]
+    - xxx
+    - 2
+    - 3½
+    - ''

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=2894', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=709&r=5#p2894x2898', title: 'gegen SVG Salzgitter', text: '4' }]
+    - [{ url: '?staffel=709&r=6#p2894x2875', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=709&r=7#p2894x2921', title: 'gegen SV Berenbostel', text: 4½ }]
+    - [{ url: '?staffel=709&r=3#p2894x2888', title: 'gegen SC Wolfsburg', text: 5½ }]
+    - [{ url: '?staffel=709&r=1#p2894x2905', title: 'gegen HSK Lister Turm 2', text: '6' }]
+    - [{ url: '?staffel=709&r=4#p2894x2917', title: 'gegen SF Hannover 2', text: 3½ }]
+    - [{ url: '?staffel=709&r=9#p2894x2876', title: 'gegen ESV Göttingen', text: 6½ }]
+    - [{ url: '?staffel=709&r=2#p2894x2869', title: 'gegen Bad Salzdetfurth', text: '5' }]
+    - [{ url: '?staffel=709&r=8#p2894x2913', title: 'gegen Tempo Göttingen 2', text: '5' }]
+    - 14
+    - '44'
+    - ''
+-
+    - '2.'
+    - { text: 'SVG Salzgitter', url: '?mannschaft=2898', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=709&r=5#p2898x2894', title: 'gegen Hildesheimer SV', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=709&r=9#p2898x2875', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=709&r=6#p2898x2921', title: 'gegen SV Berenbostel', text: '3' }]
+    - [{ url: '?staffel=709&r=2#p2898x2888', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=709&r=8#p2898x2905', title: 'gegen HSK Lister Turm 2', text: '5' }]
+    - [{ url: '?staffel=709&r=7#p2898x2917', title: 'gegen SF Hannover 2', text: 4½ }]
+    - [{ url: '?staffel=709&r=1#p2898x2876', title: 'gegen ESV Göttingen', text: 5½ }]
+    - [{ url: '?staffel=709&r=3#p2898x2869', title: 'gegen Bad Salzdetfurth', text: 4½ }]
+    - [{ url: '?staffel=709&r=4#p2898x2913', title: 'gegen Tempo Göttingen 2', text: 4½ }]
+    - 14
+    - 39½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Laatzen', url: '?mannschaft=2875', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=709&r=6#p2875x2894', title: 'gegen Hildesheimer SV', text: '4' }]
+    - [{ url: '?staffel=709&r=9#p2875x2898', title: 'gegen SVG Salzgitter', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=709&r=8#p2875x2921', title: 'gegen SV Berenbostel', text: 3½ }]
+    - [{ url: '?staffel=709&r=4#p2875x2888', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=709&r=5#p2875x2905', title: 'gegen HSK Lister Turm 2', text: '5' }]
+    - [{ url: '?staffel=709&r=2#p2875x2917', title: 'gegen SF Hannover 2', text: '5' }]
+    - [{ url: '?staffel=709&r=3#p2875x2876', title: 'gegen ESV Göttingen', text: 4½ }]
+    - [{ url: '?staffel=709&r=1#p2875x2869', title: 'gegen Bad Salzdetfurth', text: '6' }]
+    - [{ url: '?staffel=709&r=7#p2875x2913', title: 'gegen Tempo Göttingen 2', text: 4½ }]
+    - 13
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Berenbostel', url: '?mannschaft=2921', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=709&r=7#p2921x2894', title: 'gegen Hildesheimer SV', text: 3½ }]
+    - [{ url: '?staffel=709&r=6#p2921x2898', title: 'gegen SVG Salzgitter', text: '5' }]
+    - [{ url: '?staffel=709&r=8#p2921x2875', title: 'gegen SV Laatzen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=709&r=5#p2921x2888', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - [{ url: '?staffel=709&r=9#p2921x2905', title: 'gegen HSK Lister Turm 2', text: '3' }]
+    - [{ url: '?staffel=709&r=1#p2921x2917', title: 'gegen SF Hannover 2', text: '6' }]
+    - [{ url: '?staffel=709&r=2#p2921x2876', title: 'gegen ESV Göttingen', text: '6' }]
+    - [{ url: '?staffel=709&r=4#p2921x2869', title: 'gegen Bad Salzdetfurth', text: 3½ }]
+    - [{ url: '?staffel=709&r=3#p2921x2913', title: 'gegen Tempo Göttingen 2', text: 4½ }]
+    - 10
+    - 39½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Wolfsburg', url: '?mannschaft=2888', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=709&r=3#p2888x2894', title: 'gegen Hildesheimer SV', text: 2½ }]
+    - [{ url: '?staffel=709&r=2#p2888x2898', title: 'gegen SVG Salzgitter', text: 3½ }]
+    - [{ url: '?staffel=709&r=4#p2888x2875', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=709&r=5#p2888x2921', title: 'gegen SV Berenbostel', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=709&r=6#p2888x2905', title: 'gegen HSK Lister Turm 2', text: 3½ }]
+    - [{ url: '?staffel=709&r=9#p2888x2917', title: 'gegen SF Hannover 2', text: '5' }]
+    - [{ url: '?staffel=709&r=7#p2888x2876', title: 'gegen ESV Göttingen', text: 5½ }]
+    - [{ url: '?staffel=709&r=8#p2888x2869', title: 'gegen Bad Salzdetfurth', text: 5½ }]
+    - [{ url: '?staffel=709&r=1#p2888x2913', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - 10
+    - '38'
+    - ''
+-
+    - '6.'
+    - { text: 'HSK Lister Turm 2', url: '?mannschaft=2905', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=709&r=1#p2905x2894', title: 'gegen Hildesheimer SV', text: '2' }]
+    - [{ url: '?staffel=709&r=8#p2905x2898', title: 'gegen SVG Salzgitter', text: '3' }]
+    - [{ url: '?staffel=709&r=5#p2905x2875', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=709&r=9#p2905x2921', title: 'gegen SV Berenbostel', text: '5' }]
+    - [{ url: '?staffel=709&r=6#p2905x2888', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=709&r=3#p2905x2917', title: 'gegen SF Hannover 2', text: 4½ }]
+    - [{ url: '?staffel=709&r=4#p2905x2876', title: 'gegen ESV Göttingen', text: 2½ }]
+    - [{ url: '?staffel=709&r=7#p2905x2869', title: 'gegen Bad Salzdetfurth', text: 4½ }]
+    - [{ url: '?staffel=709&r=2#p2905x2913', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - 9
+    - '33'
+    - ''
+-
+    - '7.'
+    - { text: 'SF Hannover 2', url: '?mannschaft=2917', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=709&r=4#p2917x2894', title: 'gegen Hildesheimer SV', text: 4½ }]
+    - [{ url: '?staffel=709&r=7#p2917x2898', title: 'gegen SVG Salzgitter', text: 3½ }]
+    - [{ url: '?staffel=709&r=2#p2917x2875', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=709&r=1#p2917x2921', title: 'gegen SV Berenbostel', text: '2' }]
+    - [{ url: '?staffel=709&r=9#p2917x2888', title: 'gegen SC Wolfsburg', text: '3' }]
+    - [{ url: '?staffel=709&r=3#p2917x2905', title: 'gegen HSK Lister Turm 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=709&r=8#p2917x2876', title: 'gegen ESV Göttingen', text: '5' }]
+    - [{ url: '?staffel=709&r=6#p2917x2869', title: 'gegen Bad Salzdetfurth', text: 5½ }]
+    - [{ url: '?staffel=709&r=5#p2917x2913', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - 7
+    - '34'
+    - ''
+-
+    - '8.'
+    - { text: 'ESV Göttingen', url: '?mannschaft=2876', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=709&r=9#p2876x2894', title: 'gegen Hildesheimer SV', text: 1½ }]
+    - [{ url: '?staffel=709&r=1#p2876x2898', title: 'gegen SVG Salzgitter', text: 2½ }]
+    - [{ url: '?staffel=709&r=3#p2876x2875', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=709&r=2#p2876x2921', title: 'gegen SV Berenbostel', text: '2' }]
+    - [{ url: '?staffel=709&r=7#p2876x2888', title: 'gegen SC Wolfsburg', text: 2½ }]
+    - [{ url: '?staffel=709&r=4#p2876x2905', title: 'gegen HSK Lister Turm 2', text: 5½ }]
+    - [{ url: '?staffel=709&r=8#p2876x2917', title: 'gegen SF Hannover 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=709&r=5#p2876x2869', title: 'gegen Bad Salzdetfurth', text: 4½ }]
+    - [{ url: '?staffel=709&r=6#p2876x2913', title: 'gegen Tempo Göttingen 2', text: 4½ }]
+    - 6
+    - 29½
+    - ''
+-
+    - '9.'
+    - { text: 'Bad Salzdetfurth', url: '?mannschaft=2869', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=709&r=2#p2869x2894', title: 'gegen Hildesheimer SV', text: '3' }]
+    - [{ url: '?staffel=709&r=3#p2869x2898', title: 'gegen SVG Salzgitter', text: 3½ }]
+    - [{ url: '?staffel=709&r=1#p2869x2875', title: 'gegen SV Laatzen', text: '2' }]
+    - [{ url: '?staffel=709&r=4#p2869x2921', title: 'gegen SV Berenbostel', text: 4½ }]
+    - [{ url: '?staffel=709&r=8#p2869x2888', title: 'gegen SC Wolfsburg', text: 2½ }]
+    - [{ url: '?staffel=709&r=7#p2869x2905', title: 'gegen HSK Lister Turm 2', text: 3½ }]
+    - [{ url: '?staffel=709&r=6#p2869x2917', title: 'gegen SF Hannover 2', text: 2½ }]
+    - [{ url: '?staffel=709&r=5#p2869x2876', title: 'gegen ESV Göttingen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=709&r=9#p2869x2913', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - 4
+    - '29'
+    - ''
+-
+    - '10.'
+    - { text: 'Tempo Göttingen 2', url: '?mannschaft=2913', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=709&r=8#p2913x2894', title: 'gegen Hildesheimer SV', text: '3' }]
+    - [{ url: '?staffel=709&r=4#p2913x2898', title: 'gegen SVG Salzgitter', text: 3½ }]
+    - [{ url: '?staffel=709&r=7#p2913x2875', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=709&r=3#p2913x2921', title: 'gegen SV Berenbostel', text: 3½ }]
+    - [{ url: '?staffel=709&r=1#p2913x2888', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=709&r=2#p2913x2905', title: 'gegen HSK Lister Turm 2', text: '4' }]
+    - [{ url: '?staffel=709&r=5#p2913x2917', title: 'gegen SF Hannover 2', text: '4' }]
+    - [{ url: '?staffel=709&r=6#p2913x2876', title: 'gegen ESV Göttingen', text: 3½ }]
+    - [{ url: '?staffel=709&r=9#p2913x2869', title: 'gegen Bad Salzdetfurth', text: '3' }]
+    - xxx
+    - 3
+    - '32'
+    - ''

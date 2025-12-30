@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV', url: '?mannschaft=996', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=466&r=3#p996x995', title: 'gegen Nordhorn-Blanke', text: '2' }, { url: '?staffel=466&r=6#p996x995', title: 'gegen Nordhorn-Blanke', text: 2½ }]
+    - [{ url: '?staffel=466&r=1#p996x997', title: 'gegen SF Spelle', text: '3' }, { url: '?staffel=466&r=4#p996x997', title: 'gegen SF Spelle', text: 2½ }]
+    - 7
+    - '10'
+    - ''
+-
+    - '2.'
+    - { text: Nordhorn-Blanke, url: '?mannschaft=995', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=466&r=3#p995x996', title: 'gegen Hagener SV', text: '2' }, { url: '?staffel=466&r=6#p995x996', title: 'gegen Hagener SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=466&r=2#p995x997', title: 'gegen SF Spelle', text: 3½ }, { url: '?staffel=466&r=5#p995x997', title: 'gegen SF Spelle', text: 2½ }]
+    - 5
+    - 9½
+    - ''
+-
+    - '3.'
+    - { text: 'SF Spelle', url: '?mannschaft=997', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=466&r=1#p997x996', title: 'gegen Hagener SV', text: '1' }, { url: '?staffel=466&r=4#p997x996', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=466&r=2#p997x995', title: 'gegen Nordhorn-Blanke', text: ½ }, { url: '?staffel=466&r=5#p997x995', title: 'gegen Nordhorn-Blanke', text: 1½ }]
+    - xxx
+    - 0
+    - 4½
+    - ''

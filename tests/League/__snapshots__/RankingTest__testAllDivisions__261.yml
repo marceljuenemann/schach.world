@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SVg Steinhude', url: '?mannschaft=2565', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=692&r=9#p2565x2555', title: 'gegen SV Hellern', text: '3' }, { url: '?staffel=692&r=10#p2565x2555', title: 'gegen SV Hellern', text: '2' }]
+    - [{ url: '?staffel=692&r=3#p2565x2560', title: 'gegen SK Nordhorn-Bl. 2', text: '0' }, { url: '?staffel=692&r=4#p2565x2560', title: 'gegen SK Nordhorn-Bl. 2', text: 2½ }]
+    - [{ url: '?staffel=692&r=7#p2565x2552', title: 'gegen SG Barnstorf', text: 3½ }, { url: '?staffel=692&r=8#p2565x2552', title: 'gegen SG Barnstorf', text: '3' }]
+    - [{ url: '?staffel=692&r=1#p2565x2571', title: 'gegen SG Oesede-Gmht. 2', text: '3' }, { url: '?staffel=692&r=2#p2565x2571', title: 'gegen SG Oesede-Gmht. 2', text: '2' }]
+    - [{ url: '?staffel=692&r=5#p2565x2556', title: 'gegen SV Hellern 2', text: '4' }, { url: '?staffel=692&r=6#p2565x2556', title: 'gegen SV Hellern 2', text: '4' }]
+    - 16
+    - '27'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SV Hellern', url: '?mannschaft=2555', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=692&r=9#p2555x2565', title: 'gegen SVg Steinhude', text: '1' }, { url: '?staffel=692&r=10#p2555x2565', title: 'gegen SVg Steinhude', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=692&r=5#p2555x2560', title: 'gegen SK Nordhorn-Bl. 2', text: 2½ }, { url: '?staffel=692&r=6#p2555x2560', title: 'gegen SK Nordhorn-Bl. 2', text: '1' }]
+    - [{ url: '?staffel=692&r=3#p2555x2552', title: 'gegen SG Barnstorf', text: 3½ }, { url: '?staffel=692&r=4#p2555x2552', title: 'gegen SG Barnstorf', text: '4' }]
+    - [{ url: '?staffel=692&r=7#p2555x2571', title: 'gegen SG Oesede-Gmht. 2', text: 3½ }, { url: '?staffel=692&r=8#p2555x2571', title: 'gegen SG Oesede-Gmht. 2', text: '2' }]
+    - [{ url: '?staffel=692&r=1#p2555x2556', title: 'gegen SV Hellern 2', text: '4' }, { url: '?staffel=692&r=2#p2555x2556', title: 'gegen SV Hellern 2', text: '4' }]
+    - 14
+    - 27½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Nordhorn-Bl. 2', url: '?mannschaft=2560', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=692&r=3#p2560x2565', title: 'gegen SVg Steinhude', text: '4' }, { url: '?staffel=692&r=4#p2560x2565', title: 'gegen SVg Steinhude', text: 1½ }]
+    - [{ url: '?staffel=692&r=5#p2560x2555', title: 'gegen SV Hellern', text: 1½ }, { url: '?staffel=692&r=6#p2560x2555', title: 'gegen SV Hellern', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=692&r=1#p2560x2552', title: 'gegen SG Barnstorf', text: '2' }, { url: '?staffel=692&r=2#p2560x2552', title: 'gegen SG Barnstorf', text: '2' }]
+    - [{ url: '?staffel=692&r=9#p2560x2571', title: 'gegen SG Oesede-Gmht. 2', text: '1' }, { url: '?staffel=692&r=10#p2560x2571', title: 'gegen SG Oesede-Gmht. 2', text: 1½ }]
+    - [{ url: '?staffel=692&r=7#p2560x2556', title: 'gegen SV Hellern 2', text: '4' }, { url: '?staffel=692&r=8#p2560x2556', title: 'gegen SV Hellern 2', text: '4' }]
+    - 10
+    - 24½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Barnstorf', url: '?mannschaft=2552', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=692&r=7#p2552x2565', title: 'gegen SVg Steinhude', text: ½ }, { url: '?staffel=692&r=8#p2552x2565', title: 'gegen SVg Steinhude', text: '1' }]
+    - [{ url: '?staffel=692&r=3#p2552x2555', title: 'gegen SV Hellern', text: ½ }, { url: '?staffel=692&r=4#p2552x2555', title: 'gegen SV Hellern', text: '0' }]
+    - [{ url: '?staffel=692&r=1#p2552x2560', title: 'gegen SK Nordhorn-Bl. 2', text: '2' }, { url: '?staffel=692&r=2#p2552x2560', title: 'gegen SK Nordhorn-Bl. 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=692&r=5#p2552x2571', title: 'gegen SG Oesede-Gmht. 2', text: '3' }, { url: '?staffel=692&r=6#p2552x2571', title: 'gegen SG Oesede-Gmht. 2', text: '4' }]
+    - [{ url: '?staffel=692&r=9#p2552x2556', title: 'gegen SV Hellern 2', text: '4' }, { url: '?staffel=692&r=10#p2552x2556', title: 'gegen SV Hellern 2', text: '4' }]
+    - 10
+    - '21'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Oesede-Gmht. 2', url: '?mannschaft=2571', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=692&r=1#p2571x2565', title: 'gegen SVg Steinhude', text: '1' }, { url: '?staffel=692&r=2#p2571x2565', title: 'gegen SVg Steinhude', text: '2' }]
+    - [{ url: '?staffel=692&r=7#p2571x2555', title: 'gegen SV Hellern', text: ½ }, { url: '?staffel=692&r=8#p2571x2555', title: 'gegen SV Hellern', text: '2' }]
+    - [{ url: '?staffel=692&r=9#p2571x2560', title: 'gegen SK Nordhorn-Bl. 2', text: '3' }, { url: '?staffel=692&r=10#p2571x2560', title: 'gegen SK Nordhorn-Bl. 2', text: 2½ }]
+    - [{ url: '?staffel=692&r=5#p2571x2552', title: 'gegen SG Barnstorf', text: '1' }, { url: '?staffel=692&r=6#p2571x2552', title: 'gegen SG Barnstorf', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=692&r=3#p2571x2556', title: 'gegen SV Hellern 2', text: '4' }, { url: '?staffel=692&r=4#p2571x2556', title: 'gegen SV Hellern 2', text: '4' }]
+    - 10
+    - '20'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Hellern 2', url: '?mannschaft=2556', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=692&r=5#p2556x2565', title: 'gegen SVg Steinhude', text: '0' }, { url: '?staffel=692&r=6#p2556x2565', title: 'gegen SVg Steinhude', text: '0' }]
+    - [{ url: '?staffel=692&r=1#p2556x2555', title: 'gegen SV Hellern', text: '0' }, { url: '?staffel=692&r=2#p2556x2555', title: 'gegen SV Hellern', text: '0' }]
+    - [{ url: '?staffel=692&r=7#p2556x2560', title: 'gegen SK Nordhorn-Bl. 2', text: '0' }, { url: '?staffel=692&r=8#p2556x2560', title: 'gegen SK Nordhorn-Bl. 2', text: '0' }]
+    - [{ url: '?staffel=692&r=9#p2556x2552', title: 'gegen SG Barnstorf', text: '0' }, { url: '?staffel=692&r=10#p2556x2552', title: 'gegen SG Barnstorf', text: '0' }]
+    - [{ url: '?staffel=692&r=3#p2556x2571', title: 'gegen SG Oesede-Gmht. 2', text: '0' }, { url: '?staffel=692&r=4#p2556x2571', title: 'gegen SG Oesede-Gmht. 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

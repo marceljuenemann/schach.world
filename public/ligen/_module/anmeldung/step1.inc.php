@@ -1,4 +1,4 @@
-<?
+<?php
 /* Mannschaftsmeldung: 1. Verein und Mannschaftsname
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -12,14 +12,14 @@
     require_once ( "ajax.inc.php" );
 
     // Vereinsliste abfragen
-    $vereine = mysql_query ( "SELECT * FROM dwz_vereine WHERE ZPS LIKE '$prefs[anmVerband]%' AND ZPS NOT LIKE '%00' ORDER BY Vereinname", $globals ['db'] );
+    $vereine = SED_Query('SELECT * FROM dwz_vereine WHERE ZPS LIKE ? AND ZPS NOT LIKE \'%00\' ORDER BY Vereinname', [$prefs['anmVerband'].'%'])->fetchAllAssociative();
 
     // Mannschaften ohne Spieler vorschlagen
     $playerless = SED_Anmeldung::getPlayerlessTeams ();
-    if ( $playerless && mysql_num_rows ( $playerless ) )
+    if ( $playerless && count ( $playerless ) )
     {
         echo "<b>M&ouml;chten Sie eine der folgenden Mannschaften anmelden?</b><ul>";
-        while ( $team = mysql_fetch_array ( $playerless ) )
+        foreach ( $playerless as $team )
             echo "<li><a href='".SED_GenerateFormAction()."&changeteam=$team[id]'>$team[name] $team[mnr]</a></li>";
         echo "</ul><b>Wenn die Mannschaft nicht dabei war, k&ouml;nnen Sie die Daten im folgenden selbst&auml;ndig eingeben:</b><br /><br />";
     } 
@@ -32,9 +32,9 @@
     am Ende der Liste.<br />
     <select name='zps' id='Verein' onchange='OnVereinChange();'>
     <option value=''>- Verein w&auml;hlen -</option>
-    <?
+    <?php
         // Vereinsliste ausgeben
-        while ( $verein = mysql_fetch_array ( $vereine, MYSQL_ASSOC ) )
+        foreach ($vereine as $verein)
             echo "<option value='$verein[ZPS]'>$verein[Vereinname]</option>";
         echo "<option value=''>- Anderer... -</option></select><br /><br />";
     
@@ -45,10 +45,9 @@
     Ansonsten lassen Sie das Feld unver&auml;ndert.<br />
     <select name='spielgemeinschaft' id='Spielgemeinschaft' onchange='OnVereinChange();'>
     <option value=''>- Keine Spielgemeinschaft -</option>
-    <?
+    <?php
         // Vereinsliste ausgeben
-        mysql_data_seek ( $vereine, 0 );
-        while ( $verein = mysql_fetch_array ( $vereine, MYSQL_ASSOC ) )
+        foreach ($vereine as $verein)
             echo "<option value='$verein[ZPS]'>$verein[Vereinname]</option>";
         echo "<option value=''>- Anderer... -</option></select><br /><br />";
     
@@ -84,7 +83,7 @@
             
             // Guten Mannschaftsnamen abfragen, wenn es nicht 'Anderer...' ist
             if ( zps != "" )
-            <?
+            <?php
                 $ajax = new SED_AjaxRequest ( "getMannschaftsname" );
                 $ajax->setOption ( "zps", "zps" );
                 $ajax->onResult ( "document.getElementsByName ( 'name' ) [0].value = @RESULT@;" );
@@ -93,5 +92,5 @@
         }
 
     --></script>
-    <?
+    <?php
 ?>

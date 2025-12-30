@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bad Essen', url: '?mannschaft=8443', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1895&r=1#p8443x8445', title: 'gegen SV Kaponier Vechta', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1895&r=2#p8443x8447', title: 'gegen SV Hellern', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1895&r=1#p8443x8446', title: 'gegen SV Kaponier Vechta 2', text: '4' }]
+    - {  }
+    - {  }
+    - 6
+    - 11½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SV Bad Essen 2', url: '?mannschaft=8444', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1895&r=1#p8444x8445', title: 'gegen SV Kaponier Vechta', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1895&r=2#p8444x8447', title: 'gegen SV Hellern', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1895&r=1#p8444x8446', title: 'gegen SV Kaponier Vechta 2', text: '4' }]
+    - {  }
+    - {  }
+    - 6
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Kaponier Vechta', url: '?mannschaft=8445', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1895&r=1#p8445x8443', title: 'gegen SV Bad Essen', text: ½ }]
+    - [{ url: '?staffel=1895&r=1#p8445x8444', title: 'gegen SV Bad Essen 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1895&r=2#p8445x8448', title: 'gegen SF Spelle', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1895&r=2#p8445x8449', title: 'gegen SF Spelle 2', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - 4
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Spelle', url: '?mannschaft=8448', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1895&r=2#p8448x8445', title: 'gegen SV Kaponier Vechta', text: '1' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1895&r=1#p8448x8449', title: 'gegen SF Spelle 2', text: '2' }]
+    - [{ url: '?staffel=1895&r=2#p8448x8446', title: 'gegen SV Kaponier Vechta 2', text: '3' }]
+    - {  }
+    - {  }
+    - 4
+    - '6'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Hellern', url: '?mannschaft=8447', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1895&r=2#p8447x8443', title: 'gegen SV Bad Essen', text: '0' }]
+    - [{ url: '?staffel=1895&r=2#p8447x8444', title: 'gegen SV Bad Essen 2', text: '0' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1895&r=1#p8447x8441', title: 'gegen SV Osnabrück v. 1919 2', text: 2½ }]
+    - [{ url: '?staffel=1895&r=1#p8447x8442', title: 'gegen SV Osnabrück v. 1919 3', text: '3' }]
+    - 4
+    - 5½
+    - ''
+-
+    - '6.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=8449', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1895&r=2#p8449x8445', title: 'gegen SV Kaponier Vechta', text: '0' }]
+    - [{ url: '?staffel=1895&r=1#p8449x8448', title: 'gegen SF Spelle', text: '1' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1895&r=2#p8449x8446', title: 'gegen SV Kaponier Vechta 2', text: 2½ }]
+    - {  }
+    - {  }
+    - 2
+    - 3½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Kaponier Vechta 2', url: '?mannschaft=8446', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1895&r=1#p8446x8443', title: 'gegen SV Bad Essen', text: '0' }]
+    - [{ url: '?staffel=1895&r=1#p8446x8444', title: 'gegen SV Bad Essen 2', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1895&r=2#p8446x8448', title: 'gegen SF Spelle', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1895&r=2#p8446x8449', title: 'gegen SF Spelle 2', text: 1½ }]
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - 2½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Osnabrück v. 1919 2', url: '?mannschaft=8441', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1895&r=1#p8441x8447', title: 'gegen SV Hellern', text: 1½ }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - 1½
+    - ''
+-
+    - '9.'
+    - { text: 'SV Osnabrück v. 1919 3', url: '?mannschaft=8442', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1895&r=1#p8442x8447', title: 'gegen SV Hellern', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '1'
+    - ''

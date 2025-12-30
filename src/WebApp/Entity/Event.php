@@ -21,13 +21,16 @@ class Event
 
     #[ORM\Column(length: 200)]
     #[Assert\Length(min: 10, max: 200)]
-    private string $url;
+    private ?string $url = null;
 
     #[ORM\Column(type: 'date')]
     private \DateTimeInterface $date;
 
+    #[ORM\Column('is_nsv')]
+    private bool $isNsv = false;
+
     #[ORM\Column]
-    private bool $isApproved;
+    private bool $isApproved = false;
 
     public function __call($property, $args) {
       return $this->$property;

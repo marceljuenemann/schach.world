@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=8607', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1855&r=1#p8607x8580', title: 'gegen Hamelner SV 4', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1855&r=3#p8607x8509', title: 'gegen ESV Göttingen 5', text: '4' }]
+    - [{ url: '?staffel=1855&r=2#p8607x8609', title: 'gegen PSV Bad Pyrmont', text: '4' }]
+    - {  }
+    - {  }
+    - 6
+    - 12½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Bad Salzdetfurth 2', url: '?mannschaft=8599', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1855&r=2#p8599x8510', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - [{ url: '?staffel=1855&r=3#p8599x8603', title: 'gegen SK Duderstadt', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1855&r=1#p8599x8494', title: 'gegen Hildesheimer SV 4', text: '5' }]
+    - 5
+    - '12'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'ESV Göttingen 4', url: '?mannschaft=8510', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1855&r=2#p8510x8599', title: 'gegen SC Bad Salzdetfurth 2', text: '3' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1855&r=1#p8510x8509', title: 'gegen ESV Göttingen 5', text: 5½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1855&r=3#p8510x8494', title: 'gegen Hildesheimer SV 4', text: '3' }]
+    - 4
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Duderstadt', url: '?mannschaft=8603', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1855&r=3#p8603x8599', title: 'gegen SC Bad Salzdetfurth 2', text: '2' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1855&r=1#p8603x8609', title: 'gegen PSV Bad Pyrmont', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1855&r=2#p8603x8494', title: 'gegen Hildesheimer SV 4', text: 4½ }]
+    - 4
+    - '11'
+    - ''
+-
+    - '5.'
+    - { text: 'Hamelner SV 4', url: '?mannschaft=8580', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1855&r=1#p8580x8607', title: 'gegen SC Langelsheim', text: 1½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1855&r=2#p8580x8501', title: 'gegen SG U Pl Göttingen 2', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1855&r=3#p8580x8608', title: 'gegen SK Bad Harzburg', text: 4½ }]
+    - {  }
+    - 4
+    - '10'
+    - ''
+-
+    - '6.'
+    - { text: 'SG U Pl Göttingen 2', url: '?mannschaft=8501', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1855&r=2#p8501x8580', title: 'gegen Hamelner SV 4', text: '2' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1855&r=3#p8501x8609', title: 'gegen PSV Bad Pyrmont', text: '3' }]
+    - [{ url: '?staffel=1855&r=1#p8501x8608', title: 'gegen SK Bad Harzburg', text: '3' }]
+    - {  }
+    - 2
+    - '8'
+    - ''
+-
+    - '7.'
+    - { text: 'ESV Göttingen 5', url: '?mannschaft=8509', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1855&r=3#p8509x8607', title: 'gegen SC Langelsheim', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1855&r=1#p8509x8510', title: 'gegen ESV Göttingen 4', text: ½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1855&r=2#p8509x8608', title: 'gegen SK Bad Harzburg', text: '4' }]
+    - {  }
+    - 2
+    - 6½
+    - ''
+-
+    - '8.'
+    - { text: 'PSV Bad Pyrmont', url: '?mannschaft=8609', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1855&r=2#p8609x8607', title: 'gegen SC Langelsheim', text: '2' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1855&r=1#p8609x8603', title: 'gegen SK Duderstadt', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1855&r=3#p8609x8501', title: 'gegen SG U Pl Göttingen 2', text: '3' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 1
+    - 6½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Bad Harzburg', url: '?mannschaft=8608', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1855&r=3#p8608x8580', title: 'gegen Hamelner SV 4', text: 1½ }]
+    - [{ url: '?staffel=1855&r=1#p8608x8501', title: 'gegen SG U Pl Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1855&r=2#p8608x8509', title: 'gegen ESV Göttingen 5', text: '2' }]
+    - {  }
+    - xxx
+    - {  }
+    - 1
+    - 6½
+    - absteiger
+-
+    - '10.'
+    - { text: 'Hildesheimer SV 4', url: '?mannschaft=8494', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1855&r=1#p8494x8599', title: 'gegen SC Bad Salzdetfurth 2', text: '1' }]
+    - [{ url: '?staffel=1855&r=3#p8494x8510', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - [{ url: '?staffel=1855&r=2#p8494x8603', title: 'gegen SK Duderstadt', text: 1½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 1
+    - 5½
+    - absteiger

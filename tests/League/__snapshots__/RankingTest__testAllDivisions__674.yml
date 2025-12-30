@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Döhren-Gleid 99', url: '?mannschaft=6185', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1424&r=1#p6185x6258', title: 'gegen SC Hämelerwald 99', text: 2½ }]
+    - [{ url: '?staffel=1424&r=3#p6185x6214', title: 'gegen SK Rinteln 99', text: '3' }, { url: '?staffel=1424&r=5#p6185x6214', title: 'gegen SK Rinteln 99', text: '3' }]
+    - [{ url: '?staffel=1424&r=2#p6185x6260', title: 'gegen SG Garbsen/Marienw 99', text: '3' }, { url: '?staffel=1424&r=4#p6185x6260', title: 'gegen SG Garbsen/Marienw 99', text: '4' }]
+    - 10
+    - 15½
+    - ''
+-
+    - '2.'
+    - { text: 'SC Hämelerwald 99', url: '?mannschaft=6258', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1424&r=1#p6258x6185', title: 'gegen SG Döhren-Gleid 99', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1424&r=2#p6258x6214', title: 'gegen SK Rinteln 99', text: 3½ }, { url: '?staffel=1424&r=4#p6258x6214', title: 'gegen SK Rinteln 99', text: '3' }]
+    - [{ url: '?staffel=1424&r=3#p6258x6260', title: 'gegen SG Garbsen/Marienw 99', text: '4' }, { url: '?staffel=1424&r=5#p6258x6260', title: 'gegen SG Garbsen/Marienw 99', text: 2½ }]
+    - 8
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Rinteln 99', url: '?mannschaft=6214', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1424&r=3#p6214x6185', title: 'gegen SG Döhren-Gleid 99', text: '1' }, { url: '?staffel=1424&r=5#p6214x6185', title: 'gegen SG Döhren-Gleid 99', text: '1' }]
+    - [{ url: '?staffel=1424&r=2#p6214x6258', title: 'gegen SC Hämelerwald 99', text: ½ }, { url: '?staffel=1424&r=4#p6214x6258', title: 'gegen SC Hämelerwald 99', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1424&r=1#p6214x6260', title: 'gegen SG Garbsen/Marienw 99', text: '4' }]
+    - 2
+    - 7½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Garbsen/Marienw 99', url: '?mannschaft=6260', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1424&r=2#p6260x6185', title: 'gegen SG Döhren-Gleid 99', text: '1' }, { url: '?staffel=1424&r=4#p6260x6185', title: 'gegen SG Döhren-Gleid 99', text: '0' }]
+    - [{ url: '?staffel=1424&r=3#p6260x6258', title: 'gegen SC Hämelerwald 99', text: '0' }, { url: '?staffel=1424&r=5#p6260x6258', title: 'gegen SC Hämelerwald 99', text: 1½ }]
+    - [{ url: '?staffel=1424&r=1#p6260x6214', title: 'gegen SK Rinteln 99', text: '0' }]
+    - xxx
+    - 0
+    - 2½
+    - ''

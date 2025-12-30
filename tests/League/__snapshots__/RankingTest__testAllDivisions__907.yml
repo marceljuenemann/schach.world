@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TuS Wunstorf 1', url: '?mannschaft=7548', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1739&r=2#p7548x7546', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=1739&r=6#p7548x7590', title: 'gegen HSK Lister Turm 7', text: 6½ }]
+    - [{ url: '?staffel=1739&r=1#p7548x7585', title: 'gegen SK Rinteln 2', text: 5½ }]
+    - [{ url: '?staffel=1739&r=3#p7548x7583', title: 'gegen SV Springe 2', text: '8' }]
+    - [{ url: '?staffel=1739&r=7#p7548x7461', title: 'gegen SV FB Wedemark 2', text: '5' }]
+    - [{ url: '?staffel=1739&r=4#p7548x7565', title: 'gegen SF Barsinghausen 2', text: '8' }]
+    - [{ url: '?staffel=1739&r=5#p7548x7578', title: 'gegen SVg Calenberg 2', text: '8' }]
+    - 14
+    - '46'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Eystruper SK', url: '?mannschaft=7546', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1739&r=2#p7546x7548', title: 'gegen TuS Wunstorf 1', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1739&r=1#p7546x7590', title: 'gegen HSK Lister Turm 7', text: '4' }]
+    - [{ url: '?staffel=1739&r=4#p7546x7585', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1739&r=6#p7546x7583', title: 'gegen SV Springe 2', text: '5' }]
+    - [{ url: '?staffel=1739&r=5#p7546x7461', title: 'gegen SV FB Wedemark 2', text: 6½ }]
+    - [{ url: '?staffel=1739&r=7#p7546x7565', title: 'gegen SF Barsinghausen 2', text: '5' }]
+    - [{ url: '?staffel=1739&r=3#p7546x7578', title: 'gegen SVg Calenberg 2', text: '5' }]
+    - 10
+    - 32½
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'HSK Lister Turm 7', url: '?mannschaft=7590', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1739&r=6#p7590x7548', title: 'gegen TuS Wunstorf 1', text: 1½ }]
+    - [{ url: '?staffel=1739&r=1#p7590x7546', title: 'gegen Eystruper SK', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1739&r=7#p7590x7585', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1739&r=5#p7590x7583', title: 'gegen SV Springe 2', text: 4½ }]
+    - [{ url: '?staffel=1739&r=2#p7590x7461', title: 'gegen SV FB Wedemark 2', text: '6' }]
+    - [{ url: '?staffel=1739&r=3#p7590x7565', title: 'gegen SF Barsinghausen 2', text: 5½ }]
+    - [{ url: '?staffel=1739&r=4#p7590x7578', title: 'gegen SVg Calenberg 2', text: 6½ }]
+    - 10
+    - '32'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=7585', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1739&r=1#p7585x7548', title: 'gegen TuS Wunstorf 1', text: 2½ }]
+    - [{ url: '?staffel=1739&r=4#p7585x7546', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=1739&r=7#p7585x7590', title: 'gegen HSK Lister Turm 7', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1739&r=2#p7585x7583', title: 'gegen SV Springe 2', text: '1' }]
+    - [{ url: '?staffel=1739&r=3#p7585x7461', title: 'gegen SV FB Wedemark 2', text: '5' }]
+    - [{ url: '?staffel=1739&r=5#p7585x7565', title: 'gegen SF Barsinghausen 2', text: '4' }]
+    - [{ url: '?staffel=1739&r=6#p7585x7578', title: 'gegen SVg Calenberg 2', text: 5½ }]
+    - 7
+    - '26'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Springe 2', url: '?mannschaft=7583', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1739&r=3#p7583x7548', title: 'gegen TuS Wunstorf 1', text: '0' }]
+    - [{ url: '?staffel=1739&r=6#p7583x7546', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=1739&r=5#p7583x7590', title: 'gegen HSK Lister Turm 7', text: 3½ }]
+    - [{ url: '?staffel=1739&r=2#p7583x7585', title: 'gegen SK Rinteln 2', text: '7' }]
+    - xxx
+    - [{ url: '?staffel=1739&r=4#p7583x7461', title: 'gegen SV FB Wedemark 2', text: 3½ }]
+    - [{ url: '?staffel=1739&r=1#p7583x7565', title: 'gegen SF Barsinghausen 2', text: 4½ }]
+    - [{ url: '?staffel=1739&r=7#p7583x7578', title: 'gegen SVg Calenberg 2', text: 6½ }]
+    - 6
+    - '28'
+    - ''
+-
+    - '6.'
+    - { text: 'SV FB Wedemark 2', url: '?mannschaft=7461', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1739&r=7#p7461x7548', title: 'gegen TuS Wunstorf 1', text: '3' }]
+    - [{ url: '?staffel=1739&r=5#p7461x7546', title: 'gegen Eystruper SK', text: 1½ }]
+    - [{ url: '?staffel=1739&r=2#p7461x7590', title: 'gegen HSK Lister Turm 7', text: '2' }]
+    - [{ url: '?staffel=1739&r=3#p7461x7585', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=1739&r=4#p7461x7583', title: 'gegen SV Springe 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1739&r=6#p7461x7565', title: 'gegen SF Barsinghausen 2', text: '5' }]
+    - [{ url: '?staffel=1739&r=1#p7461x7578', title: 'gegen SVg Calenberg 2', text: 4½ }]
+    - 6
+    - 23½
+    - ''
+-
+    - '7.'
+    - { text: 'SF Barsinghausen 2', url: '?mannschaft=7565', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1739&r=4#p7565x7548', title: 'gegen TuS Wunstorf 1', text: '0' }]
+    - [{ url: '?staffel=1739&r=7#p7565x7546', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=1739&r=3#p7565x7590', title: 'gegen HSK Lister Turm 7', text: 2½ }]
+    - [{ url: '?staffel=1739&r=5#p7565x7585', title: 'gegen SK Rinteln 2', text: '4' }]
+    - [{ url: '?staffel=1739&r=1#p7565x7583', title: 'gegen SV Springe 2', text: 3½ }]
+    - [{ url: '?staffel=1739&r=6#p7565x7461', title: 'gegen SV FB Wedemark 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1739&r=2#p7565x7578', title: 'gegen SVg Calenberg 2', text: '6' }]
+    - 3
+    - '22'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=7578', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1739&r=5#p7578x7548', title: 'gegen TuS Wunstorf 1', text: '0' }]
+    - [{ url: '?staffel=1739&r=3#p7578x7546', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=1739&r=4#p7578x7590', title: 'gegen HSK Lister Turm 7', text: 1½ }]
+    - [{ url: '?staffel=1739&r=6#p7578x7585', title: 'gegen SK Rinteln 2', text: 2½ }]
+    - [{ url: '?staffel=1739&r=7#p7578x7583', title: 'gegen SV Springe 2', text: 1½ }]
+    - [{ url: '?staffel=1739&r=1#p7578x7461', title: 'gegen SV FB Wedemark 2', text: 3½ }]
+    - [{ url: '?staffel=1739&r=2#p7578x7565', title: 'gegen SF Barsinghausen 2', text: '2' }]
+    - xxx
+    - 0
+    - '14'
+    - absteiger

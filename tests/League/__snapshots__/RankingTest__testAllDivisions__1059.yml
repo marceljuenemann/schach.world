@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Roch. Braunschweig 3', url: '?mannschaft=8284', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1910&r=1#p8284x8303', title: 'gegen SV Cai. Wolfenbüttel 3', text: '3' }]
+    - [{ url: '?staffel=1910&r=3#p8284x8278', title: 'gegen SG Elmrochade 3', text: 2½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1910&r=2#p8284x8292', title: 'gegen SC BS Gliesmarode 8', text: '3' }]
+    - 6
+    - 8½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Cai. Wolfenbüttel 3', url: '?mannschaft=8303', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1910&r=1#p8303x8284', title: 'gegen Roch. Braunschweig 3', text: '1' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1910&r=2#p8303x8306', title: 'gegen SV Hankensbüttel 2', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1910&r=3#p8303x8292', title: 'gegen SC BS Gliesmarode 8', text: 2½ }]
+    - 4
+    - 6½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Elmrochade 3', url: '?mannschaft=8278', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1910&r=3#p8278x8284', title: 'gegen Roch. Braunschweig 3', text: 1½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1910&r=1#p8278x8306', title: 'gegen SV Hankensbüttel 2', text: '2' }]
+    - [{ url: '?staffel=1910&r=2#p8278x8296', title: 'gegen SG Gifhorn-Wolfsburg 5', text: '3' }]
+    - {  }
+    - 3
+    - 6½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Hankensbüttel 2', url: '?mannschaft=8306', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1910&r=2#p8306x8303', title: 'gegen SV Cai. Wolfenbüttel 3', text: '1' }]
+    - [{ url: '?staffel=1910&r=1#p8306x8278', title: 'gegen SG Elmrochade 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1910&r=3#p8306x8296', title: 'gegen SG Gifhorn-Wolfsburg 5', text: 2½ }]
+    - {  }
+    - 3
+    - 5½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Gifhorn-Wolfsburg 5', url: '?mannschaft=8296', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1910&r=2#p8296x8278', title: 'gegen SG Elmrochade 3', text: '1' }]
+    - [{ url: '?staffel=1910&r=3#p8296x8306', title: 'gegen SV Hankensbüttel 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1910&r=1#p8296x8292', title: 'gegen SC BS Gliesmarode 8', text: 3½ }]
+    - 2
+    - '6'
+    - ''
+-
+    - '6.'
+    - { text: 'SC BS Gliesmarode 8', url: '?mannschaft=8292', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1910&r=2#p8292x8284', title: 'gegen Roch. Braunschweig 3', text: '1' }]
+    - [{ url: '?staffel=1910&r=3#p8292x8303', title: 'gegen SV Cai. Wolfenbüttel 3', text: 1½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1910&r=1#p8292x8296', title: 'gegen SG Gifhorn-Wolfsburg 5', text: ½ }]
+    - xxx
+    - 0
+    - '3'
+    - ''

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Papenburg', url: '?mannschaft=4096', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=897&r=4#p4096x3944', title: 'gegen SG Neubh-Barnstorf', text: '1' }]
+    - [{ url: '?staffel=897&r=3#p4096x3921', title: 'gegen SV Osnabrück', text: '3' }]
+    - [{ url: '?staffel=897&r=5#p4096x4127', title: 'gegen SK Nordhorn-Bl. 2', text: '4' }]
+    - [{ url: '?staffel=897&r=1#p4096x4097', title: 'gegen SC Papenburg 2', text: '4' }]
+    - [{ url: '?staffel=897&r=6#p4096x4128', title: 'gegen SK Nordhorn-Bl. 3', text: '4' }]
+    - 8
+    - '16'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SG Neubh-Barnstorf', url: '?mannschaft=3944', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=897&r=4#p3944x4096', title: 'gegen SC Papenburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=897&r=6#p3944x3921', title: 'gegen SV Osnabrück', text: 1½ }]
+    - [{ url: '?staffel=897&r=1#p3944x4127', title: 'gegen SK Nordhorn-Bl. 2', text: 3½ }]
+    - [{ url: '?staffel=897&r=3#p3944x4097', title: 'gegen SC Papenburg 2', text: '3' }]
+    - [{ url: '?staffel=897&r=2#p3944x4128', title: 'gegen SK Nordhorn-Bl. 3', text: 2½ }]
+    - 8
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Osnabrück', url: '?mannschaft=3921', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=897&r=3#p3921x4096', title: 'gegen SC Papenburg', text: '1' }]
+    - [{ url: '?staffel=897&r=6#p3921x3944', title: 'gegen SG Neubh-Barnstorf', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=897&r=2#p3921x4127', title: 'gegen SK Nordhorn-Bl. 2', text: '1' }]
+    - [{ url: '?staffel=897&r=4#p3921x4097', title: 'gegen SC Papenburg 2', text: '3' }]
+    - [{ url: '?staffel=897&r=1#p3921x4128', title: 'gegen SK Nordhorn-Bl. 3', text: '4' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Bl. 2', url: '?mannschaft=4127', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=897&r=5#p4127x4096', title: 'gegen SC Papenburg', text: '0' }]
+    - [{ url: '?staffel=897&r=1#p4127x3944', title: 'gegen SG Neubh-Barnstorf', text: ½ }]
+    - [{ url: '?staffel=897&r=2#p4127x3921', title: 'gegen SV Osnabrück', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=897&r=6#p4127x4097', title: 'gegen SC Papenburg 2', text: '2' }]
+    - [{ url: '?staffel=897&r=3#p4127x4128', title: 'gegen SK Nordhorn-Bl. 3', text: '3' }]
+    - 5
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Papenburg 2', url: '?mannschaft=4097', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=897&r=1#p4097x4096', title: 'gegen SC Papenburg', text: '0' }]
+    - [{ url: '?staffel=897&r=3#p4097x3944', title: 'gegen SG Neubh-Barnstorf', text: '1' }]
+    - [{ url: '?staffel=897&r=4#p4097x3921', title: 'gegen SV Osnabrück', text: '1' }]
+    - [{ url: '?staffel=897&r=6#p4097x4127', title: 'gegen SK Nordhorn-Bl. 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=897&r=5#p4097x4128', title: 'gegen SK Nordhorn-Bl. 3', text: '2' }]
+    - 2
+    - '6'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Nordhorn-Bl. 3', url: '?mannschaft=4128', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=897&r=6#p4128x4096', title: 'gegen SC Papenburg', text: '0' }]
+    - [{ url: '?staffel=897&r=2#p4128x3944', title: 'gegen SG Neubh-Barnstorf', text: 1½ }]
+    - [{ url: '?staffel=897&r=1#p4128x3921', title: 'gegen SV Osnabrück', text: '0' }]
+    - [{ url: '?staffel=897&r=3#p4128x4127', title: 'gegen SK Nordhorn-Bl. 2', text: '1' }]
+    - [{ url: '?staffel=897&r=5#p4128x4097', title: 'gegen SC Papenburg 2', text: '2' }]
+    - xxx
+    - 1
+    - 4½
+    - ''

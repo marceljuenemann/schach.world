@@ -1,0 +1,233 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'OSG Baden-Baden', url: '?mannschaft=4174', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=923&r=3#p4174x4175', title: 'gegen SK Schwäbisch Hall', text: 2½ }]
+    - [{ url: '?staffel=923&r=2#p4174x4169', title: 'gegen Hamburger SK', text: '3' }]
+    - [{ url: '?staffel=923&r=11#p4174x4168', title: 'gegen Bad Königshofen', text: 4½ }]
+    - [{ url: '?staffel=923&r=7#p4174x4172', title: 'gegen Schachmiezen', text: 4½ }]
+    - [{ url: '?staffel=923&r=4#p4174x4170', title: 'gegen SF Deizisau', text: 3½ }]
+    - [{ url: '?staffel=923&r=10#p4174x4177', title: 'gegen SF 1891 Friedberg', text: '4' }]
+    - [{ url: '?staffel=923&r=9#p4174x4167', title: 'gegen SK Großlehna', text: '4' }]
+    - [{ url: '?staffel=923&r=5#p4174x4171', title: 'gegen Karlsruher SF', text: 5½ }]
+    - [{ url: '?staffel=923&r=8#p4174x4178', title: 'gegen SK Lehrte 1919 eV', text: '6' }]
+    - [{ url: '?staffel=923&r=1#p4174x4176', title: 'gegen Doppelbauer Kiel', text: '6' }]
+    - [{ url: '?staffel=923&r=6#p4174x4173', title: 'gegen GW Niederwiesa', text: '4' }]
+    - 19
+    - 47½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Schwäbisch Hall', url: '?mannschaft=4175', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=923&r=3#p4175x4174', title: 'gegen OSG Baden-Baden', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=923&r=11#p4175x4169', title: 'gegen Hamburger SK', text: '4' }]
+    - [{ url: '?staffel=923&r=9#p4175x4168', title: 'gegen Bad Königshofen', text: 3½ }]
+    - [{ url: '?staffel=923&r=2#p4175x4172', title: 'gegen Schachmiezen', text: '1' }]
+    - [{ url: '?staffel=923&r=5#p4175x4170', title: 'gegen SF Deizisau', text: '4' }]
+    - [{ url: '?staffel=923&r=8#p4175x4177', title: 'gegen SF 1891 Friedberg', text: '3' }]
+    - [{ url: '?staffel=923&r=7#p4175x4167', title: 'gegen SK Großlehna', text: '5' }]
+    - [{ url: '?staffel=923&r=4#p4175x4171', title: 'gegen Karlsruher SF', text: 5½ }]
+    - [{ url: '?staffel=923&r=6#p4175x4178', title: 'gegen SK Lehrte 1919 eV', text: 5½ }]
+    - [{ url: '?staffel=923&r=10#p4175x4176', title: 'gegen Doppelbauer Kiel', text: '6' }]
+    - [{ url: '?staffel=923&r=1#p4175x4173', title: 'gegen GW Niederwiesa', text: '5' }]
+    - 19
+    - '46'
+    - ''
+-
+    - '3.'
+    - { text: 'Hamburger SK', url: '?mannschaft=4169', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=923&r=2#p4169x4174', title: 'gegen OSG Baden-Baden', text: '3' }]
+    - [{ url: '?staffel=923&r=11#p4169x4175', title: 'gegen SK Schwäbisch Hall', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=923&r=6#p4169x4168', title: 'gegen Bad Königshofen', text: '4' }]
+    - [{ url: '?staffel=923&r=8#p4169x4172', title: 'gegen Schachmiezen', text: 3½ }]
+    - [{ url: '?staffel=923&r=10#p4169x4170', title: 'gegen SF Deizisau', text: '4' }]
+    - [{ url: '?staffel=923&r=7#p4169x4177', title: 'gegen SF 1891 Friedberg', text: '3' }]
+    - [{ url: '?staffel=923&r=3#p4169x4167', title: 'gegen SK Großlehna', text: '3' }]
+    - [{ url: '?staffel=923&r=1#p4169x4171', title: 'gegen Karlsruher SF', text: 4½ }]
+    - [{ url: '?staffel=923&r=4#p4169x4178', title: 'gegen SK Lehrte 1919 eV', text: 3½ }]
+    - [{ url: '?staffel=923&r=5#p4169x4176', title: 'gegen Doppelbauer Kiel', text: '6' }]
+    - [{ url: '?staffel=923&r=9#p4169x4173', title: 'gegen GW Niederwiesa', text: '6' }]
+    - 17
+    - 42½
+    - ''
+-
+    - '4.'
+    - { text: 'Bad Königshofen', url: '?mannschaft=4168', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=923&r=11#p4168x4174', title: 'gegen OSG Baden-Baden', text: 1½ }]
+    - [{ url: '?staffel=923&r=9#p4168x4175', title: 'gegen SK Schwäbisch Hall', text: 2½ }]
+    - [{ url: '?staffel=923&r=6#p4168x4169', title: 'gegen Hamburger SK', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=923&r=3#p4168x4172', title: 'gegen Schachmiezen', text: '5' }]
+    - [{ url: '?staffel=923&r=8#p4168x4170', title: 'gegen SF Deizisau', text: 3½ }]
+    - [{ url: '?staffel=923&r=5#p4168x4177', title: 'gegen SF 1891 Friedberg', text: '4' }]
+    - [{ url: '?staffel=923&r=1#p4168x4167', title: 'gegen SK Großlehna', text: 5½ }]
+    - [{ url: '?staffel=923&r=10#p4168x4171', title: 'gegen Karlsruher SF', text: '6' }]
+    - [{ url: '?staffel=923&r=2#p4168x4178', title: 'gegen SK Lehrte 1919 eV', text: '5' }]
+    - [{ url: '?staffel=923&r=7#p4168x4176', title: 'gegen Doppelbauer Kiel', text: '6' }]
+    - [{ url: '?staffel=923&r=4#p4168x4173', title: 'gegen GW Niederwiesa', text: 5½ }]
+    - 16
+    - 46½
+    - ''
+-
+    - '5.'
+    - { text: Schachmiezen, url: '?mannschaft=4172', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=923&r=7#p4172x4174', title: 'gegen OSG Baden-Baden', text: 1½ }]
+    - [{ url: '?staffel=923&r=2#p4172x4175', title: 'gegen SK Schwäbisch Hall', text: '5' }]
+    - [{ url: '?staffel=923&r=8#p4172x4169', title: 'gegen Hamburger SK', text: 2½ }]
+    - [{ url: '?staffel=923&r=3#p4172x4168', title: 'gegen Bad Königshofen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=923&r=1#p4172x4170', title: 'gegen SF Deizisau', text: 3½ }]
+    - [{ url: '?staffel=923&r=4#p4172x4177', title: 'gegen SF 1891 Friedberg', text: 4½ }]
+    - [{ url: '?staffel=923&r=10#p4172x4167', title: 'gegen SK Großlehna', text: 4½ }]
+    - [{ url: '?staffel=923&r=6#p4172x4171', title: 'gegen Karlsruher SF', text: '4' }]
+    - [{ url: '?staffel=923&r=11#p4172x4178', title: 'gegen SK Lehrte 1919 eV', text: '4' }]
+    - [{ url: '?staffel=923&r=9#p4172x4176', title: 'gegen Doppelbauer Kiel', text: 5½ }]
+    - [{ url: '?staffel=923&r=5#p4172x4173', title: 'gegen GW Niederwiesa', text: '4' }]
+    - 16
+    - '40'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Deizisau', url: '?mannschaft=4170', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=923&r=4#p4170x4174', title: 'gegen OSG Baden-Baden', text: 2½ }]
+    - [{ url: '?staffel=923&r=5#p4170x4175', title: 'gegen SK Schwäbisch Hall', text: '2' }]
+    - [{ url: '?staffel=923&r=10#p4170x4169', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=923&r=8#p4170x4168', title: 'gegen Bad Königshofen', text: 2½ }]
+    - [{ url: '?staffel=923&r=1#p4170x4172', title: 'gegen Schachmiezen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=923&r=9#p4170x4177', title: 'gegen SF 1891 Friedberg', text: 3½ }]
+    - [{ url: '?staffel=923&r=6#p4170x4167', title: 'gegen SK Großlehna', text: 3½ }]
+    - [{ url: '?staffel=923&r=3#p4170x4171', title: 'gegen Karlsruher SF', text: 3½ }]
+    - [{ url: '?staffel=923&r=7#p4170x4178', title: 'gegen SK Lehrte 1919 eV', text: 5½ }]
+    - [{ url: '?staffel=923&r=11#p4170x4176', title: 'gegen Doppelbauer Kiel', text: '6' }]
+    - [{ url: '?staffel=923&r=2#p4170x4173', title: 'gegen GW Niederwiesa', text: '6' }]
+    - 12
+    - 39½
+    - ''
+-
+    - '7.'
+    - { text: 'SF 1891 Friedberg', url: '?mannschaft=4177', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=923&r=10#p4177x4174', title: 'gegen OSG Baden-Baden', text: '2' }]
+    - [{ url: '?staffel=923&r=8#p4177x4175', title: 'gegen SK Schwäbisch Hall', text: '3' }]
+    - [{ url: '?staffel=923&r=7#p4177x4169', title: 'gegen Hamburger SK', text: '3' }]
+    - [{ url: '?staffel=923&r=5#p4177x4168', title: 'gegen Bad Königshofen', text: '2' }]
+    - [{ url: '?staffel=923&r=4#p4177x4172', title: 'gegen Schachmiezen', text: 1½ }]
+    - [{ url: '?staffel=923&r=9#p4177x4170', title: 'gegen SF Deizisau', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=923&r=2#p4177x4167', title: 'gegen SK Großlehna', text: 3½ }]
+    - [{ url: '?staffel=923&r=11#p4177x4171', title: 'gegen Karlsruher SF', text: '4' }]
+    - [{ url: '?staffel=923&r=1#p4177x4178', title: 'gegen SK Lehrte 1919 eV', text: 5½ }]
+    - [{ url: '?staffel=923&r=6#p4177x4176', title: 'gegen Doppelbauer Kiel', text: '4' }]
+    - [{ url: '?staffel=923&r=3#p4177x4173', title: 'gegen GW Niederwiesa', text: '5' }]
+    - 12
+    - '36'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Großlehna', url: '?mannschaft=4167', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=923&r=9#p4167x4174', title: 'gegen OSG Baden-Baden', text: '2' }]
+    - [{ url: '?staffel=923&r=7#p4167x4175', title: 'gegen SK Schwäbisch Hall', text: '1' }]
+    - [{ url: '?staffel=923&r=3#p4167x4169', title: 'gegen Hamburger SK', text: '3' }]
+    - [{ url: '?staffel=923&r=1#p4167x4168', title: 'gegen Bad Königshofen', text: ½ }]
+    - [{ url: '?staffel=923&r=10#p4167x4172', title: 'gegen Schachmiezen', text: 1½ }]
+    - [{ url: '?staffel=923&r=6#p4167x4170', title: 'gegen SF Deizisau', text: 2½ }]
+    - [{ url: '?staffel=923&r=2#p4167x4177', title: 'gegen SF 1891 Friedberg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=923&r=8#p4167x4171', title: 'gegen Karlsruher SF', text: '3' }]
+    - [{ url: '?staffel=923&r=5#p4167x4178', title: 'gegen SK Lehrte 1919 eV', text: 5½ }]
+    - [{ url: '?staffel=923&r=4#p4167x4176', title: 'gegen Doppelbauer Kiel', text: '5' }]
+    - [{ url: '?staffel=923&r=11#p4167x4173', title: 'gegen GW Niederwiesa', text: 4½ }]
+    - 8
+    - '31'
+    - ''
+-
+    - '9.'
+    - { text: 'Karlsruher SF', url: '?mannschaft=4171', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=923&r=5#p4171x4174', title: 'gegen OSG Baden-Baden', text: ½ }]
+    - [{ url: '?staffel=923&r=4#p4171x4175', title: 'gegen SK Schwäbisch Hall', text: ½ }]
+    - [{ url: '?staffel=923&r=1#p4171x4169', title: 'gegen Hamburger SK', text: 1½ }]
+    - [{ url: '?staffel=923&r=10#p4171x4168', title: 'gegen Bad Königshofen', text: '0' }]
+    - [{ url: '?staffel=923&r=6#p4171x4172', title: 'gegen Schachmiezen', text: '2' }]
+    - [{ url: '?staffel=923&r=3#p4171x4170', title: 'gegen SF Deizisau', text: 2½ }]
+    - [{ url: '?staffel=923&r=11#p4171x4177', title: 'gegen SF 1891 Friedberg', text: '2' }]
+    - [{ url: '?staffel=923&r=8#p4171x4167', title: 'gegen SK Großlehna', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=923&r=9#p4171x4178', title: 'gegen SK Lehrte 1919 eV', text: '5' }]
+    - [{ url: '?staffel=923&r=2#p4171x4176', title: 'gegen Doppelbauer Kiel', text: 4½ }]
+    - [{ url: '?staffel=923&r=7#p4171x4173', title: 'gegen GW Niederwiesa', text: '4' }]
+    - 7
+    - 25½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Lehrte 1919 eV', url: '?mannschaft=4178', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=923&r=8#p4178x4174', title: 'gegen OSG Baden-Baden', text: '0' }]
+    - [{ url: '?staffel=923&r=6#p4178x4175', title: 'gegen SK Schwäbisch Hall', text: ½ }]
+    - [{ url: '?staffel=923&r=4#p4178x4169', title: 'gegen Hamburger SK', text: 2½ }]
+    - [{ url: '?staffel=923&r=2#p4178x4168', title: 'gegen Bad Königshofen', text: '1' }]
+    - [{ url: '?staffel=923&r=11#p4178x4172', title: 'gegen Schachmiezen', text: '2' }]
+    - [{ url: '?staffel=923&r=7#p4178x4170', title: 'gegen SF Deizisau', text: ½ }]
+    - [{ url: '?staffel=923&r=1#p4178x4177', title: 'gegen SF 1891 Friedberg', text: ½ }]
+    - [{ url: '?staffel=923&r=5#p4178x4167', title: 'gegen SK Großlehna', text: ½ }]
+    - [{ url: '?staffel=923&r=9#p4178x4171', title: 'gegen Karlsruher SF', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=923&r=3#p4178x4176', title: 'gegen Doppelbauer Kiel', text: 3½ }]
+    - [{ url: '?staffel=923&r=10#p4178x4173', title: 'gegen GW Niederwiesa', text: 4½ }]
+    - 4
+    - 16½
+    - absteiger
+-
+    - '11.'
+    - { text: 'Doppelbauer Kiel', url: '?mannschaft=4176', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=923&r=1#p4176x4174', title: 'gegen OSG Baden-Baden', text: '0' }]
+    - [{ url: '?staffel=923&r=10#p4176x4175', title: 'gegen SK Schwäbisch Hall', text: '0' }]
+    - [{ url: '?staffel=923&r=5#p4176x4169', title: 'gegen Hamburger SK', text: '0' }]
+    - [{ url: '?staffel=923&r=7#p4176x4168', title: 'gegen Bad Königshofen', text: '0' }]
+    - [{ url: '?staffel=923&r=9#p4176x4172', title: 'gegen Schachmiezen', text: ½ }]
+    - [{ url: '?staffel=923&r=11#p4176x4170', title: 'gegen SF Deizisau', text: '0' }]
+    - [{ url: '?staffel=923&r=6#p4176x4177', title: 'gegen SF 1891 Friedberg', text: '2' }]
+    - [{ url: '?staffel=923&r=4#p4176x4167', title: 'gegen SK Großlehna', text: '1' }]
+    - [{ url: '?staffel=923&r=2#p4176x4171', title: 'gegen Karlsruher SF', text: 1½ }]
+    - [{ url: '?staffel=923&r=3#p4176x4178', title: 'gegen SK Lehrte 1919 eV', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=923&r=8#p4176x4173', title: 'gegen GW Niederwiesa', text: 3½ }]
+    - 2
+    - '11'
+    - absteiger
+-
+    - '12.'
+    - { text: 'GW Niederwiesa', url: '?mannschaft=4173', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=923&r=6#p4173x4174', title: 'gegen OSG Baden-Baden', text: '2' }]
+    - [{ url: '?staffel=923&r=1#p4173x4175', title: 'gegen SK Schwäbisch Hall', text: '1' }]
+    - [{ url: '?staffel=923&r=9#p4173x4169', title: 'gegen Hamburger SK', text: '0' }]
+    - [{ url: '?staffel=923&r=4#p4173x4168', title: 'gegen Bad Königshofen', text: ½ }]
+    - [{ url: '?staffel=923&r=5#p4173x4172', title: 'gegen Schachmiezen', text: '2' }]
+    - [{ url: '?staffel=923&r=2#p4173x4170', title: 'gegen SF Deizisau', text: '0' }]
+    - [{ url: '?staffel=923&r=3#p4173x4177', title: 'gegen SF 1891 Friedberg', text: '1' }]
+    - [{ url: '?staffel=923&r=11#p4173x4167', title: 'gegen SK Großlehna', text: 1½ }]
+    - [{ url: '?staffel=923&r=7#p4173x4171', title: 'gegen Karlsruher SF', text: '2' }]
+    - [{ url: '?staffel=923&r=10#p4173x4178', title: 'gegen SK Lehrte 1919 eV', text: 1½ }]
+    - [{ url: '?staffel=923&r=8#p4173x4176', title: 'gegen Doppelbauer Kiel', text: 2½ }]
+    - xxx
+    - 0
+    - '14'
+    - absteiger

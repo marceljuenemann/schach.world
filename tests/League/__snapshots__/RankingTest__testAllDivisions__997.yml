@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SVG Salzgitter e. V. 2', url: '?mannschaft=8100', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1840&r=6#p8100x8092', title: 'gegen SF Fallersleben 2', text: 3½ }]
+    - [{ url: '?staffel=1840&r=4#p8100x8099', title: 'gegen SV Hankensbüttel 2', text: 2½ }]
+    - [{ url: '?staffel=1840&r=7#p8100x8097', title: 'gegen SV Cai. Wolfenbüttel 4', text: 3½ }]
+    - [{ url: '?staffel=1840&r=3#p8100x8090', title: 'gegen SC Langlingen', text: '4' }]
+    - [{ url: '?staffel=1840&r=1#p8100x8080', title: 'gegen SG Gifhorn-Wolfsburg 5', text: 3½ }]
+    - [{ url: '?staffel=1840&r=5#p8100x8087', title: 'gegen SC BS Gliesmarode 8', text: 2½ }]
+    - [{ url: '?staffel=1840&r=2#p8100x8107', title: 'gegen SG Elmrochade 4', text: '4' }]
+    - 14
+    - 23½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Fallersleben 2', url: '?mannschaft=8092', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1840&r=6#p8092x8100', title: 'gegen SVG Salzgitter e. V. 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1840&r=2#p8092x8099', title: 'gegen SV Hankensbüttel 2', text: '3' }]
+    - [{ url: '?staffel=1840&r=5#p8092x8097', title: 'gegen SV Cai. Wolfenbüttel 4', text: 2½ }]
+    - [{ url: '?staffel=1840&r=1#p8092x8090', title: 'gegen SC Langlingen', text: 2½ }]
+    - [{ url: '?staffel=1840&r=4#p8092x8080', title: 'gegen SG Gifhorn-Wolfsburg 5', text: 3½ }]
+    - [{ url: '?staffel=1840&r=3#p8092x8087', title: 'gegen SC BS Gliesmarode 8', text: 3½ }]
+    - [{ url: '?staffel=1840&r=7#p8092x8107', title: 'gegen SG Elmrochade 4', text: '4' }]
+    - 12
+    - 19½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Hankensbüttel 2', url: '?mannschaft=8099', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1840&r=4#p8099x8100', title: 'gegen SVG Salzgitter e. V. 2', text: 1½ }]
+    - [{ url: '?staffel=1840&r=2#p8099x8092', title: 'gegen SF Fallersleben 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1840&r=3#p8099x8097', title: 'gegen SV Cai. Wolfenbüttel 4', text: '3' }]
+    - [{ url: '?staffel=1840&r=6#p8099x8090', title: 'gegen SC Langlingen', text: '2' }]
+    - [{ url: '?staffel=1840&r=7#p8099x8080', title: 'gegen SG Gifhorn-Wolfsburg 5', text: 2½ }]
+    - [{ url: '?staffel=1840&r=1#p8099x8087', title: 'gegen SC BS Gliesmarode 8', text: 3½ }]
+    - [{ url: '?staffel=1840&r=5#p8099x8107', title: 'gegen SG Elmrochade 4', text: '3' }]
+    - 9
+    - 16½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Cai. Wolfenbüttel 4', url: '?mannschaft=8097', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1840&r=7#p8097x8100', title: 'gegen SVG Salzgitter e. V. 2', text: ½ }]
+    - [{ url: '?staffel=1840&r=5#p8097x8092', title: 'gegen SF Fallersleben 2', text: 1½ }]
+    - [{ url: '?staffel=1840&r=3#p8097x8099', title: 'gegen SV Hankensbüttel 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1840&r=2#p8097x8090', title: 'gegen SC Langlingen', text: 2½ }]
+    - [{ url: '?staffel=1840&r=6#p8097x8080', title: 'gegen SG Gifhorn-Wolfsburg 5', text: '2' }]
+    - [{ url: '?staffel=1840&r=4#p8097x8087', title: 'gegen SC BS Gliesmarode 8', text: '4' }]
+    - [{ url: '?staffel=1840&r=1#p8097x8107', title: 'gegen SG Elmrochade 4', text: '4' }]
+    - 7
+    - 15½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Langlingen', url: '?mannschaft=8090', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1840&r=3#p8090x8100', title: 'gegen SVG Salzgitter e. V. 2', text: '0' }]
+    - [{ url: '?staffel=1840&r=1#p8090x8092', title: 'gegen SF Fallersleben 2', text: 1½ }]
+    - [{ url: '?staffel=1840&r=6#p8090x8099', title: 'gegen SV Hankensbüttel 2', text: '2' }]
+    - [{ url: '?staffel=1840&r=2#p8090x8097', title: 'gegen SV Cai. Wolfenbüttel 4', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1840&r=5#p8090x8080', title: 'gegen SG Gifhorn-Wolfsburg 5', text: '3' }]
+    - [{ url: '?staffel=1840&r=7#p8090x8087', title: 'gegen SC BS Gliesmarode 8', text: '3' }]
+    - [{ url: '?staffel=1840&r=4#p8090x8107', title: 'gegen SG Elmrochade 4', text: '3' }]
+    - 7
+    - '14'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Gifhorn-Wolfsburg 5', url: '?mannschaft=8080', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1840&r=1#p8080x8100', title: 'gegen SVG Salzgitter e. V. 2', text: ½ }]
+    - [{ url: '?staffel=1840&r=4#p8080x8092', title: 'gegen SF Fallersleben 2', text: ½ }]
+    - [{ url: '?staffel=1840&r=7#p8080x8099', title: 'gegen SV Hankensbüttel 2', text: 1½ }]
+    - [{ url: '?staffel=1840&r=6#p8080x8097', title: 'gegen SV Cai. Wolfenbüttel 4', text: '2' }]
+    - [{ url: '?staffel=1840&r=5#p8080x8090', title: 'gegen SC Langlingen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1840&r=2#p8080x8087', title: 'gegen SC BS Gliesmarode 8', text: '3' }]
+    - [{ url: '?staffel=1840&r=3#p8080x8107', title: 'gegen SG Elmrochade 4', text: '1' }]
+    - 3
+    - 9½
+    - ''
+-
+    - '7.'
+    - { text: 'SC BS Gliesmarode 8', url: '?mannschaft=8087', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1840&r=5#p8087x8100', title: 'gegen SVG Salzgitter e. V. 2', text: 1½ }]
+    - [{ url: '?staffel=1840&r=3#p8087x8092', title: 'gegen SF Fallersleben 2', text: ½ }]
+    - [{ url: '?staffel=1840&r=1#p8087x8099', title: 'gegen SV Hankensbüttel 2', text: ½ }]
+    - [{ url: '?staffel=1840&r=4#p8087x8097', title: 'gegen SV Cai. Wolfenbüttel 4', text: '0' }]
+    - [{ url: '?staffel=1840&r=7#p8087x8090', title: 'gegen SC Langlingen', text: '1' }]
+    - [{ url: '?staffel=1840&r=2#p8087x8080', title: 'gegen SG Gifhorn-Wolfsburg 5', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1840&r=6#p8087x8107', title: 'gegen SG Elmrochade 4', text: '3' }]
+    - 2
+    - 7½
+    - ''
+-
+    - '8.'
+    - { text: 'SG Elmrochade 4', url: '?mannschaft=8107', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1840&r=2#p8107x8100', title: 'gegen SVG Salzgitter e. V. 2', text: '0' }]
+    - [{ url: '?staffel=1840&r=7#p8107x8092', title: 'gegen SF Fallersleben 2', text: '0' }]
+    - [{ url: '?staffel=1840&r=5#p8107x8099', title: 'gegen SV Hankensbüttel 2', text: '1' }]
+    - [{ url: '?staffel=1840&r=1#p8107x8097', title: 'gegen SV Cai. Wolfenbüttel 4', text: '0' }]
+    - [{ url: '?staffel=1840&r=4#p8107x8090', title: 'gegen SC Langlingen', text: '1' }]
+    - [{ url: '?staffel=1840&r=3#p8107x8080', title: 'gegen SG Gifhorn-Wolfsburg 5', text: '3' }]
+    - [{ url: '?staffel=1840&r=6#p8107x8087', title: 'gegen SC BS Gliesmarode 8', text: '1' }]
+    - xxx
+    - 2
+    - '6'
+    - ''

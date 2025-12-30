@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 1919 eV', url: '?mannschaft=4285', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=938&r=2#p4285x3934', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=938&r=3#p4285x4268', title: 'gegen SZ Bemerode 2', text: '3' }]
+    - [{ url: '?staffel=938&r=1#p4285x4142', title: 'gegen SK Ricklingen', text: 2½ }]
+    - [{ url: '?staffel=938&r=5#p4285x4135', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=938&r=4#p4285x4068', title: 'gegen HSK Lister Turm', text: '4' }]
+    - 10
+    - '16'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Laatzen', url: '?mannschaft=3934', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=938&r=2#p3934x4285', title: 'gegen SK Lehrte 1919 eV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=938&r=1#p3934x4268', title: 'gegen SZ Bemerode 2', text: 3½ }]
+    - [{ url: '?staffel=938&r=5#p3934x4142', title: 'gegen SK Ricklingen', text: '4' }]
+    - [{ url: '?staffel=938&r=4#p3934x4135', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=938&r=3#p3934x4068', title: 'gegen HSK Lister Turm', text: '4' }]
+    - 8
+    - '17'
+    - ''
+-
+    - '3.'
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=4268', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=938&r=3#p4268x4285', title: 'gegen SK Lehrte 1919 eV', text: '1' }]
+    - [{ url: '?staffel=938&r=1#p4268x3934', title: 'gegen SV Laatzen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=938&r=4#p4268x4142', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=938&r=2#p4268x4135', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=938&r=5#p4268x4068', title: 'gegen HSK Lister Turm', text: '4' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=4142', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=938&r=1#p4142x4285', title: 'gegen SK Lehrte 1919 eV', text: 1½ }]
+    - [{ url: '?staffel=938&r=5#p4142x3934', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=938&r=4#p4142x4268', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=938&r=3#p4142x4135', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=938&r=2#p4142x4068', title: 'gegen HSK Lister Turm', text: 2½ }]
+    - 4
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'Hannover 96', url: '?mannschaft=4135', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=938&r=5#p4135x4285', title: 'gegen SK Lehrte 1919 eV', text: '0' }]
+    - [{ url: '?staffel=938&r=4#p4135x3934', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=938&r=2#p4135x4268', title: 'gegen SZ Bemerode 2', text: '1' }]
+    - [{ url: '?staffel=938&r=3#p4135x4142', title: 'gegen SK Ricklingen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=938&r=1#p4135x4068', title: 'gegen HSK Lister Turm', text: '4' }]
+    - 2
+    - '5'
+    - ''
+-
+    - '6.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=4068', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=938&r=4#p4068x4285', title: 'gegen SK Lehrte 1919 eV', text: '0' }]
+    - [{ url: '?staffel=938&r=3#p4068x3934', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=938&r=5#p4068x4268', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=938&r=2#p4068x4142', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=938&r=1#p4068x4135', title: 'gegen Hannover 96', text: '0' }]
+    - xxx
+    - 0
+    - 1½
+    - ''

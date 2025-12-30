@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV 2', url: '?mannschaft=1045', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=490&r=8#p1045x1070', title: 'gegen Ankum/Bersenbrü', text: 4½ }]
+    - [{ url: '?staffel=490&r=4#p1045x1062', title: 'gegen TuS Bramsche', text: 4½ }]
+    - [{ url: '?staffel=490&r=1#p1045x1040', title: 'gegen IGM Osnabrück 3', text: '5' }]
+    - [{ url: '?staffel=490&r=7#p1045x1056', title: 'gegen TSV Osnabrück', text: 5½ }]
+    - [{ url: '?staffel=490&r=3#p1045x1036', title: 'gegen SV Osnabrück 3', text: 4½ }]
+    - [{ url: '?staffel=490&r=5#p1045x1042', title: 'gegen TSV Riemsloh', text: '4' }]
+    - [{ url: '?staffel=490&r=9#p1045x1060', title: 'gegen SC Fürstenau 2', text: 5½ }]
+    - [{ url: '?staffel=490&r=2#p1045x1076', title: 'gegen Rochade Hollage 2', text: '5' }]
+    - [{ url: '?staffel=490&r=6#p1045x1079', title: 'gegen SK Rulle', text: '6' }]
+    - 17
+    - 44½
+    - ''
+-
+    - '2.'
+    - { text: Ankum/Bersenbrü, url: '?mannschaft=1070', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=490&r=8#p1070x1045', title: 'gegen Hagener SV 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=490&r=6#p1070x1062', title: 'gegen TuS Bramsche', text: '3' }]
+    - [{ url: '?staffel=490&r=9#p1070x1040', title: 'gegen IGM Osnabrück 3', text: 2½ }]
+    - [{ url: '?staffel=490&r=3#p1070x1056', title: 'gegen TSV Osnabrück', text: '5' }]
+    - [{ url: '?staffel=490&r=1#p1070x1036', title: 'gegen SV Osnabrück 3', text: 4½ }]
+    - [{ url: '?staffel=490&r=2#p1070x1042', title: 'gegen TSV Riemsloh', text: 5½ }]
+    - [{ url: '?staffel=490&r=4#p1070x1060', title: 'gegen SC Fürstenau 2', text: 6½ }]
+    - [{ url: '?staffel=490&r=5#p1070x1076', title: 'gegen Rochade Hollage 2', text: '5' }]
+    - [{ url: '?staffel=490&r=7#p1070x1079', title: 'gegen SK Rulle', text: '7' }]
+    - 12
+    - 42½
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Bramsche', url: '?mannschaft=1062', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=490&r=4#p1062x1045', title: 'gegen Hagener SV 2', text: 3½ }]
+    - [{ url: '?staffel=490&r=6#p1062x1070', title: 'gegen Ankum/Bersenbrü', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=490&r=7#p1062x1040', title: 'gegen IGM Osnabrück 3', text: 4½ }]
+    - [{ url: '?staffel=490&r=1#p1062x1056', title: 'gegen TSV Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=490&r=8#p1062x1036', title: 'gegen SV Osnabrück 3', text: '4' }]
+    - [{ url: '?staffel=490&r=9#p1062x1042', title: 'gegen TSV Riemsloh', text: '5' }]
+    - [{ url: '?staffel=490&r=2#p1062x1060', title: 'gegen SC Fürstenau 2', text: 5½ }]
+    - [{ url: '?staffel=490&r=3#p1062x1076', title: 'gegen Rochade Hollage 2', text: 2½ }]
+    - [{ url: '?staffel=490&r=5#p1062x1079', title: 'gegen SK Rulle', text: '8' }]
+    - 11
+    - 41½
+    - ''
+-
+    - '4.'
+    - { text: 'IGM Osnabrück 3', url: '?mannschaft=1040', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=490&r=1#p1040x1045', title: 'gegen Hagener SV 2', text: '3' }]
+    - [{ url: '?staffel=490&r=9#p1040x1070', title: 'gegen Ankum/Bersenbrü', text: 5½ }]
+    - [{ url: '?staffel=490&r=7#p1040x1062', title: 'gegen TuS Bramsche', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=490&r=4#p1040x1056', title: 'gegen TSV Osnabrück', text: '4' }]
+    - [{ url: '?staffel=490&r=2#p1040x1036', title: 'gegen SV Osnabrück 3', text: 4½ }]
+    - [{ url: '?staffel=490&r=3#p1040x1042', title: 'gegen TSV Riemsloh', text: '3' }]
+    - [{ url: '?staffel=490&r=5#p1040x1060', title: 'gegen SC Fürstenau 2', text: 4½ }]
+    - [{ url: '?staffel=490&r=6#p1040x1076', title: 'gegen Rochade Hollage 2', text: 6½ }]
+    - [{ url: '?staffel=490&r=8#p1040x1079', title: 'gegen SK Rulle', text: '5' }]
+    - 11
+    - 39½
+    - ''
+-
+    - '5.'
+    - { text: 'TSV Osnabrück', url: '?mannschaft=1056', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=490&r=7#p1056x1045', title: 'gegen Hagener SV 2', text: 2½ }]
+    - [{ url: '?staffel=490&r=3#p1056x1070', title: 'gegen Ankum/Bersenbrü', text: '3' }]
+    - [{ url: '?staffel=490&r=1#p1056x1062', title: 'gegen TuS Bramsche', text: 4½ }]
+    - [{ url: '?staffel=490&r=4#p1056x1040', title: 'gegen IGM Osnabrück 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=490&r=5#p1056x1036', title: 'gegen SV Osnabrück 3', text: 4½ }]
+    - [{ url: '?staffel=490&r=6#p1056x1042', title: 'gegen TSV Riemsloh', text: '4' }]
+    - [{ url: '?staffel=490&r=8#p1056x1060', title: 'gegen SC Fürstenau 2', text: 2½ }]
+    - [{ url: '?staffel=490&r=9#p1056x1076', title: 'gegen Rochade Hollage 2', text: '8' }]
+    - [{ url: '?staffel=490&r=2#p1056x1079', title: 'gegen SK Rulle', text: '6' }]
+    - 10
+    - '39'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Osnabrück 3', url: '?mannschaft=1036', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=490&r=3#p1036x1045', title: 'gegen Hagener SV 2', text: 3½ }]
+    - [{ url: '?staffel=490&r=1#p1036x1070', title: 'gegen Ankum/Bersenbrü', text: 3½ }]
+    - [{ url: '?staffel=490&r=8#p1036x1062', title: 'gegen TuS Bramsche', text: '4' }]
+    - [{ url: '?staffel=490&r=2#p1036x1040', title: 'gegen IGM Osnabrück 3', text: 3½ }]
+    - [{ url: '?staffel=490&r=5#p1036x1056', title: 'gegen TSV Osnabrück', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=490&r=4#p1036x1042', title: 'gegen TSV Riemsloh', text: '5' }]
+    - [{ url: '?staffel=490&r=6#p1036x1060', title: 'gegen SC Fürstenau 2', text: '5' }]
+    - [{ url: '?staffel=490&r=7#p1036x1076', title: 'gegen Rochade Hollage 2', text: '5' }]
+    - [{ url: '?staffel=490&r=9#p1036x1079', title: 'gegen SK Rulle', text: '6' }]
+    - 9
+    - '39'
+    - ''
+-
+    - '7.'
+    - { text: 'TSV Riemsloh', url: '?mannschaft=1042', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=490&r=5#p1042x1045', title: 'gegen Hagener SV 2', text: '4' }]
+    - [{ url: '?staffel=490&r=2#p1042x1070', title: 'gegen Ankum/Bersenbrü', text: 2½ }]
+    - [{ url: '?staffel=490&r=9#p1042x1062', title: 'gegen TuS Bramsche', text: '3' }]
+    - [{ url: '?staffel=490&r=3#p1042x1040', title: 'gegen IGM Osnabrück 3', text: '5' }]
+    - [{ url: '?staffel=490&r=6#p1042x1056', title: 'gegen TSV Osnabrück', text: '4' }]
+    - [{ url: '?staffel=490&r=4#p1042x1036', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=490&r=7#p1042x1060', title: 'gegen SC Fürstenau 2', text: 3½ }]
+    - [{ url: '?staffel=490&r=8#p1042x1076', title: 'gegen Rochade Hollage 2', text: '6' }]
+    - [{ url: '?staffel=490&r=1#p1042x1079', title: 'gegen SK Rulle', text: 6½ }]
+    - 8
+    - 37½
+    - ''
+-
+    - '8.'
+    - { text: 'SC Fürstenau 2', url: '?mannschaft=1060', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=490&r=9#p1060x1045', title: 'gegen Hagener SV 2', text: 2½ }]
+    - [{ url: '?staffel=490&r=4#p1060x1070', title: 'gegen Ankum/Bersenbrü', text: 1½ }]
+    - [{ url: '?staffel=490&r=2#p1060x1062', title: 'gegen TuS Bramsche', text: 2½ }]
+    - [{ url: '?staffel=490&r=5#p1060x1040', title: 'gegen IGM Osnabrück 3', text: 3½ }]
+    - [{ url: '?staffel=490&r=8#p1060x1056', title: 'gegen TSV Osnabrück', text: 5½ }]
+    - [{ url: '?staffel=490&r=6#p1060x1036', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=490&r=7#p1060x1042', title: 'gegen TSV Riemsloh', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=490&r=1#p1060x1076', title: 'gegen Rochade Hollage 2', text: '6' }]
+    - [{ url: '?staffel=490&r=3#p1060x1079', title: 'gegen SK Rulle', text: 5½ }]
+    - 8
+    - 34½
+    - ''
+-
+    - '9.'
+    - { text: 'Rochade Hollage 2', url: '?mannschaft=1076', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=490&r=2#p1076x1045', title: 'gegen Hagener SV 2', text: '3' }]
+    - [{ url: '?staffel=490&r=5#p1076x1070', title: 'gegen Ankum/Bersenbrü', text: '3' }]
+    - [{ url: '?staffel=490&r=3#p1076x1062', title: 'gegen TuS Bramsche', text: 5½ }]
+    - [{ url: '?staffel=490&r=6#p1076x1040', title: 'gegen IGM Osnabrück 3', text: 1½ }]
+    - [{ url: '?staffel=490&r=9#p1076x1056', title: 'gegen TSV Osnabrück', text: '0' }]
+    - [{ url: '?staffel=490&r=7#p1076x1036', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=490&r=8#p1076x1042', title: 'gegen TSV Riemsloh', text: '2' }]
+    - [{ url: '?staffel=490&r=1#p1076x1060', title: 'gegen SC Fürstenau 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=490&r=4#p1076x1079', title: 'gegen SK Rulle', text: 6½ }]
+    - 4
+    - 26½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Rulle', url: '?mannschaft=1079', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=490&r=6#p1079x1045', title: 'gegen Hagener SV 2', text: '2' }]
+    - [{ url: '?staffel=490&r=7#p1079x1070', title: 'gegen Ankum/Bersenbrü', text: '1' }]
+    - [{ url: '?staffel=490&r=5#p1079x1062', title: 'gegen TuS Bramsche', text: '0' }]
+    - [{ url: '?staffel=490&r=8#p1079x1040', title: 'gegen IGM Osnabrück 3', text: '2' }]
+    - [{ url: '?staffel=490&r=2#p1079x1056', title: 'gegen TSV Osnabrück', text: '2' }]
+    - [{ url: '?staffel=490&r=9#p1079x1036', title: 'gegen SV Osnabrück 3', text: '2' }]
+    - [{ url: '?staffel=490&r=1#p1079x1042', title: 'gegen TSV Riemsloh', text: 1½ }]
+    - [{ url: '?staffel=490&r=3#p1079x1060', title: 'gegen SC Fürstenau 2', text: 2½ }]
+    - [{ url: '?staffel=490&r=4#p1079x1076', title: 'gegen Rochade Hollage 2', text: 1½ }]
+    - xxx
+    - 0
+    - 14½
+    - ''

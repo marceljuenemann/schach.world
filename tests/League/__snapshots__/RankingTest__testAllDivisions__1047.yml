@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'AE Magdeburg', url: '?mannschaft=8585', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1898&r=2#p8585x8588', title: 'gegen KSV Rochade Göt', text: '4' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1898&r=3#p8585x8589', title: 'gegen Roch. Braunschweig', text: '6' }]
+    - [{ url: '?staffel=1898&r=1#p8585x8592', title: 'gegen SV Motor Zeitz', text: '4' }]
+    - {  }
+    - 6
+    - '14'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hagener SV', url: '?mannschaft=8586', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1898&r=3#p8586x8588', title: 'gegen KSV Rochade Göt', text: 2½ }]
+    - [{ url: '?staffel=1898&r=2#p8586x8587', title: 'gegen SV Werder Bremen', text: 3½ }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1898&r=1#p8586x8591', title: 'gegen 1. SC Anhalt', text: '6' }]
+    - 4
+    - '12'
+    - ''
+-
+    - '3.'
+    - { text: 'KSV Rochade Göt', url: '?mannschaft=8588', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1898&r=2#p8588x8585', title: 'gegen AE Magdeburg', text: '2' }]
+    - [{ url: '?staffel=1898&r=3#p8588x8586', title: 'gegen Hagener SV', text: 3½ }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1898&r=1#p8588x8589', title: 'gegen Roch. Braunschweig', text: '5' }]
+    - {  }
+    - {  }
+    - 4
+    - 10½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Werder Bremen', url: '?mannschaft=8587', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1898&r=2#p8587x8586', title: 'gegen Hagener SV', text: 2½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1898&r=1#p8587x8590', title: 'gegen USC Magdeburg', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1898&r=3#p8587x8592', title: 'gegen SV Motor Zeitz', text: 3½ }]
+    - {  }
+    - 4
+    - 9½
+    - ''
+-
+    - '5.'
+    - { text: 'USC Magdeburg', url: '?mannschaft=8590', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1898&r=1#p8590x8587', title: 'gegen SV Werder Bremen', text: 2½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1898&r=2#p8590x8592', title: 'gegen SV Motor Zeitz', text: '3' }]
+    - [{ url: '?staffel=1898&r=3#p8590x8591', title: 'gegen 1. SC Anhalt', text: '5' }]
+    - 3
+    - 10½
+    - ''
+-
+    - '6.'
+    - { text: 'Roch. Braunschweig', url: '?mannschaft=8589', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1898&r=3#p8589x8585', title: 'gegen AE Magdeburg', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1898&r=1#p8589x8588', title: 'gegen KSV Rochade Göt', text: '1' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1898&r=2#p8589x8591', title: 'gegen 1. SC Anhalt', text: 5½ }]
+    - 2
+    - 6½
+    - absteigerRelegation
+-
+    - '7.'
+    - { text: 'SV Motor Zeitz', url: '?mannschaft=8592', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1898&r=1#p8592x8585', title: 'gegen AE Magdeburg', text: '2' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1898&r=3#p8592x8587', title: 'gegen SV Werder Bremen', text: 2½ }]
+    - [{ url: '?staffel=1898&r=2#p8592x8590', title: 'gegen USC Magdeburg', text: '3' }]
+    - {  }
+    - xxx
+    - {  }
+    - 1
+    - 7½
+    - absteiger
+-
+    - '8.'
+    - { text: '1. SC Anhalt', url: '?mannschaft=8591', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1898&r=1#p8591x8586', title: 'gegen Hagener SV', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1898&r=3#p8591x8590', title: 'gegen USC Magdeburg', text: '1' }]
+    - [{ url: '?staffel=1898&r=2#p8591x8589', title: 'gegen Roch. Braunschweig', text: ½ }]
+    - {  }
+    - xxx
+    - 0
+    - 1½
+    - absteiger

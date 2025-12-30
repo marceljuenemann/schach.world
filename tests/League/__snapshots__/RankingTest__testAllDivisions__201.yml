@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV', url: '?mannschaft=2272', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=627&r=1#p2272x2256', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=627&r=3#p2272x2254', title: 'gegen SK Nordhorn-Bl.', text: 3½ }]
+    - [{ url: '?staffel=627&r=2#p2272x2273', title: 'gegen SF Spelle', text: '4' }]
+    - 6
+    - 10½
+    - ''
+-
+    - '2.'
+    - { text: 'SV Lingen', url: '?mannschaft=2256', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=627&r=1#p2256x2272', title: 'gegen Hagener SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=627&r=2#p2256x2254', title: 'gegen SK Nordhorn-Bl.', text: '3' }]
+    - [{ url: '?staffel=627&r=3#p2256x2273', title: 'gegen SF Spelle', text: 2½ }]
+    - 4
+    - 6½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Nordhorn-Bl.', url: '?mannschaft=2254', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=627&r=3#p2254x2272', title: 'gegen Hagener SV', text: ½ }]
+    - [{ url: '?staffel=627&r=2#p2254x2256', title: 'gegen SV Lingen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=627&r=1#p2254x2273', title: 'gegen SF Spelle', text: 3½ }]
+    - 2
+    - '5'
+    - ''
+-
+    - '4.'
+    - { text: 'SF Spelle', url: '?mannschaft=2273', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=627&r=2#p2273x2272', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=627&r=3#p2273x2256', title: 'gegen SV Lingen', text: 1½ }]
+    - [{ url: '?staffel=627&r=1#p2273x2254', title: 'gegen SK Nordhorn-Bl.', text: ½ }]
+    - xxx
+    - 0
+    - '2'
+    - ''

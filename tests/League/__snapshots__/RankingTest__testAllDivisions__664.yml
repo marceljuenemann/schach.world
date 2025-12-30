@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Godesberger SK', url: '?mannschaft=6238', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1414&r=1#p6238x6241', title: 'gegen TSV Schott Mainz', text: '3' }]
+    - [{ url: '?staffel=1414&r=3#p6238x6242', title: 'gegen VSG Offenbach', text: '3' }]
+    - [{ url: '?staffel=1414&r=2#p6238x6237', title: 'gegen SVG Oberhessen', text: 3½ }]
+    - [{ url: '?staffel=1414&r=5#p6238x6240', title: 'gegen SC Eschborn', text: '4' }]
+    - {  }
+    - 8
+    - 13½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TSV Schott Mainz', url: '?mannschaft=6241', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1414&r=1#p6241x6238', title: 'gegen Godesberger SK', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1414&r=4#p6241x6242', title: 'gegen VSG Offenbach', text: '3' }]
+    - [{ url: '?staffel=1414&r=5#p6241x6237', title: 'gegen SVG Oberhessen', text: '4' }]
+    - [{ url: '?staffel=1414&r=3#p6241x6240', title: 'gegen SC Eschborn', text: 2½ }]
+    - {  }
+    - 6
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'VSG Offenbach', url: '?mannschaft=6242', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1414&r=3#p6242x6238', title: 'gegen Godesberger SK', text: '1' }]
+    - [{ url: '?staffel=1414&r=4#p6242x6241', title: 'gegen TSV Schott Mainz', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1414&r=1#p6242x6237', title: 'gegen SVG Oberhessen', text: '2' }]
+    - [{ url: '?staffel=1414&r=2#p6242x6240', title: 'gegen SC Eschborn', text: 2½ }]
+    - {  }
+    - 3
+    - 6½
+    - ''
+-
+    - '4.'
+    - { text: 'SVG Oberhessen', url: '?mannschaft=6237', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1414&r=2#p6237x6238', title: 'gegen Godesberger SK', text: ½ }]
+    - [{ url: '?staffel=1414&r=5#p6237x6241', title: 'gegen TSV Schott Mainz', text: '0' }]
+    - [{ url: '?staffel=1414&r=1#p6237x6242', title: 'gegen VSG Offenbach', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1414&r=4#p6237x6240', title: 'gegen SC Eschborn', text: '3' }]
+    - {  }
+    - 3
+    - 5½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Eschborn', url: '?mannschaft=6240', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1414&r=5#p6240x6238', title: 'gegen Godesberger SK', text: '0' }]
+    - [{ url: '?staffel=1414&r=3#p6240x6241', title: 'gegen TSV Schott Mainz', text: 1½ }]
+    - [{ url: '?staffel=1414&r=2#p6240x6242', title: 'gegen VSG Offenbach', text: 1½ }]
+    - [{ url: '?staffel=1414&r=4#p6240x6237', title: 'gegen SVG Oberhessen', text: '1' }]
+    - xxx
+    - {  }
+    - 0
+    - '4'
+    - absteiger
+-
+    - '6.'
+    - { text: '', url: '?mannschaft=6239', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - absteiger

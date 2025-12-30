@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Gifhorn', url: '?mannschaft=6956', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1608&r=1#p6956x6955', title: 'gegen SC BS Gliesmarode', text: '2' }]
+    - [{ url: '?staffel=1608&r=3#p6956x6954', title: 'gegen SZ Bemerode', text: ½ }]
+    - [{ url: '?staffel=1608&r=6#p6956x6953', title: 'gegen SV Bad Bevensen', text: '4' }]
+    - [{ url: '?staffel=1608&r=4#p6956x6958', title: 'gegen Peiner SV', text: '4' }]
+    - {  }
+    - 5
+    - 10½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC BS Gliesmarode', url: '?mannschaft=6955', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1608&r=1#p6955x6956', title: 'gegen SV Gifhorn', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1608&r=4#p6955x6954', title: 'gegen SZ Bemerode', text: 2½ }]
+    - [{ url: '?staffel=1608&r=5#p6955x6953', title: 'gegen SV Bad Bevensen', text: '4' }]
+    - [{ url: '?staffel=1608&r=3#p6955x6958', title: 'gegen Peiner SV', text: '0' }]
+    - {  }
+    - 5
+    - 8½
+    - ''
+-
+    - '3.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=6954', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1608&r=3#p6954x6956', title: 'gegen SV Gifhorn', text: 3½ }]
+    - [{ url: '?staffel=1608&r=4#p6954x6955', title: 'gegen SC BS Gliesmarode', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1608&r=2#p6954x6953', title: 'gegen SV Bad Bevensen', text: ½ }]
+    - [{ url: '?staffel=1608&r=5#p6954x6958', title: 'gegen Peiner SV', text: '4' }]
+    - {  }
+    - 4
+    - 9½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=6953', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1608&r=6#p6953x6956', title: 'gegen SV Gifhorn', text: '0' }]
+    - [{ url: '?staffel=1608&r=5#p6953x6955', title: 'gegen SC BS Gliesmarode', text: '0' }]
+    - [{ url: '?staffel=1608&r=2#p6953x6954', title: 'gegen SZ Bemerode', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1608&r=1#p6953x6958', title: 'gegen Peiner SV', text: '3' }]
+    - {  }
+    - 4
+    - 6½
+    - ''
+-
+    - '5.'
+    - { text: 'Peiner SV', url: '?mannschaft=6958', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1608&r=4#p6958x6956', title: 'gegen SV Gifhorn', text: '0' }]
+    - [{ url: '?staffel=1608&r=3#p6958x6955', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - [{ url: '?staffel=1608&r=5#p6958x6954', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1608&r=1#p6958x6953', title: 'gegen SV Bad Bevensen', text: '1' }]
+    - xxx
+    - {  }
+    - 2
+    - '5'
+    - ''
+-
+    - '6.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=6959', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

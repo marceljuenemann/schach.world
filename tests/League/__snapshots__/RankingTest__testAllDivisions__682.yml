@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Barsinghausen', url: '?mannschaft=6174', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1432&r=6#p6174x6326', title: 'gegen SG Rinteln/Stadth.', text: 2½ }]
+    - [{ url: '?staffel=1432&r=2#p6174x6327', title: 'gegen SG Rinteln/Stadth. 2', text: '3' }]
+    - [{ url: '?staffel=1432&r=4#p6174x6323', title: 'gegen SV Springe 2', text: '4' }]
+    - [{ url: '?staffel=1432&r=5#p6174x6274', title: 'gegen TuS Wunstorf 2', text: '4' }]
+    - [{ url: '?staffel=1432&r=1#p6174x6271', title: 'gegen SF Barsinghausen 2', text: '4' }]
+    - {  }
+    - 10
+    - 17½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Rinteln/Stadth.', url: '?mannschaft=6326', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1432&r=6#p6326x6174', title: 'gegen SF Barsinghausen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1432&r=1#p6326x6327', title: 'gegen SG Rinteln/Stadth. 2', text: '2' }]
+    - [{ url: '?staffel=1432&r=3#p6326x6323', title: 'gegen SV Springe 2', text: 3½ }]
+    - [{ url: '?staffel=1432&r=4#p6326x6274', title: 'gegen TuS Wunstorf 2', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1432&r=2#p6326x6321', title: 'gegen Eystrup/Stolzenau', text: 3½ }]
+    - 7
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Rinteln/Stadth. 2', url: '?mannschaft=6327', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1432&r=2#p6327x6174', title: 'gegen SF Barsinghausen', text: '1' }]
+    - [{ url: '?staffel=1432&r=1#p6327x6326', title: 'gegen SG Rinteln/Stadth.', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1432&r=6#p6327x6323', title: 'gegen SV Springe 2', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1432&r=3#p6327x6271', title: 'gegen SF Barsinghausen 2', text: '4' }]
+    - [{ url: '?staffel=1432&r=5#p6327x6321', title: 'gegen Eystrup/Stolzenau', text: '3' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Springe 2', url: '?mannschaft=6323', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1432&r=4#p6323x6174', title: 'gegen SF Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=1432&r=3#p6323x6326', title: 'gegen SG Rinteln/Stadth.', text: ½ }]
+    - [{ url: '?staffel=1432&r=6#p6323x6327', title: 'gegen SG Rinteln/Stadth. 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1432&r=2#p6323x6274', title: 'gegen TuS Wunstorf 2', text: '2' }]
+    - [{ url: '?staffel=1432&r=5#p6323x6271', title: 'gegen SF Barsinghausen 2', text: '4' }]
+    - {  }
+    - 4
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'TuS Wunstorf 2', url: '?mannschaft=6274', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1432&r=5#p6274x6174', title: 'gegen SF Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=1432&r=4#p6274x6326', title: 'gegen SG Rinteln/Stadth.', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1432&r=2#p6274x6323', title: 'gegen SV Springe 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1432&r=6#p6274x6271', title: 'gegen SF Barsinghausen 2', text: '4' }]
+    - [{ url: '?staffel=1432&r=1#p6274x6321', title: 'gegen Eystrup/Stolzenau', text: '2' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Barsinghausen 2', url: '?mannschaft=6271', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1432&r=1#p6271x6174', title: 'gegen SF Barsinghausen', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1432&r=3#p6271x6327', title: 'gegen SG Rinteln/Stadth. 2', text: '0' }]
+    - [{ url: '?staffel=1432&r=5#p6271x6323', title: 'gegen SV Springe 2', text: '0' }]
+    - [{ url: '?staffel=1432&r=6#p6271x6274', title: 'gegen TuS Wunstorf 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1432&r=4#p6271x6321', title: 'gegen Eystrup/Stolzenau', text: '3' }]
+    - 2
+    - '3'
+    - ''
+-
+    - '7.'
+    - { text: Eystrup/Stolzenau, url: '?mannschaft=6321', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1432&r=2#p6321x6326', title: 'gegen SG Rinteln/Stadth.', text: ½ }]
+    - [{ url: '?staffel=1432&r=5#p6321x6327', title: 'gegen SG Rinteln/Stadth. 2', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1432&r=1#p6321x6274', title: 'gegen TuS Wunstorf 2', text: '2' }]
+    - [{ url: '?staffel=1432&r=4#p6321x6271', title: 'gegen SF Barsinghausen 2', text: '1' }]
+    - xxx
+    - 1
+    - 4½
+    - ''

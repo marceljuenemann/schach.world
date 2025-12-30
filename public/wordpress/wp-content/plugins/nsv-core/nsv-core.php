@@ -23,8 +23,6 @@ $router = NSV\Core\Router::getInstance();
 $router->setup();
 
 add_action('nsv_router_init', function($router) {
-  $router->addRoute('^api/dwz/spieler/?$', 'NSV\\Core\\Dwz\\PlayerSearch');
-  $router->addRoute('^api/dwz/vereine/?$', 'NSV\\Core\\Dwz\\ClubSearch');
   $router->addRoute('^sandbox/?$', 'NSV\\Core\\TestPage');
   $router->addRoute('^sandbox2/?$', 'NSV\\Core\\TestPage');
   // CAUTION: When changing routes, go to Admin > Settings > Permalinks > Save Changes to rebuild the route cache!

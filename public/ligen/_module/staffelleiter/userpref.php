@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Turnierleiter/Staffelleiter bearbeiten
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -18,7 +18,7 @@
 
     // Der Turnierleiter bearbeitet den Staffelleiter?
     $up_userid = ( isset ( $_GET ['staffel'] ) && $admin ['usertype'] == "t" ) 
-        ? SED_MYSQL_Value ( "SELECT leiter FROM staffeln WHERE id=$_GET[staffel] AND turnier=$globals[tid]", true ) 
+        ? SED_Value ( 'SELECT leiter FROM staffeln WHERE id=? AND turnier=?', [$_GET['staffel'], $globals['tid']] ) 
         : $admin ['userid'];
 
     // Benutzername
@@ -41,7 +41,7 @@
             SED_Error ( "Bitte geben Sie ein neues Passwort an!" );
         else
         {
-            if ( !mysql_query ( "UPDATE benutzer SET passwort=MD5('$_POST[pw_new1]') WHERE id=$up_userid LIMIT 1", $globals ['db'] ) )
+            if ( !SED_TryQuery ( 'UPDATE benutzer SET passwort=MD5(?) WHERE id=?', [$_POST['pw_new1'], $up_userid] ) )
                 SED_Error ( "Fehler beim Setzen des neuen Passworts!" );
             else
             {
@@ -54,15 +54,15 @@
     /////////////////////////////
     // Neues Passwort setzen
     ?>
-    <form action="<? echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
+    <form action="<?php echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
         <legend>Passwort bearbeiten</legend>
         <table cellspacing="0" cellpadding="2">
         <tr><td>Neues Passwort: </td><td><input type="password" name="pw_new1" /></td></tr>
         <tr><td>Passwort wiederholen: </td><td><input type="password" name="pw_new2" /></td></tr>
-        <tr><td></td><td><input type="submit" class="sed_submit" name="pw_change" value="&Auml;ndern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
+        <tr><td></td><td><input type="submit" class="sed_submit" name="pw_change" value="&Auml;ndern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<?php echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
         </table>
         </fieldset></form><br />
-    <?
+    <?php
 
     /////////////////////////////
     // Neues Kontaktdaten setzen
@@ -79,7 +79,7 @@
         // Daten ändern
         else
         {
-            if ( !mysql_query ( "UPDATE benutzer SET name='$_POST[name]', email='$_POST[email]', telefon='$_POST[telefon]', telefon2='$_POST[telefon2]' WHERE id=$up_userid LIMIT 1", $globals ['db'] ) )
+            if ( !SED_TryQuery ( 'UPDATE benutzer SET name=?, email=?, telefon=?, telefon2=? WHERE id=? LIMIT 1', [$_POST['name'], $_POST['email'], $_POST['telefon'], $_POST['telefon2'], $up_userid] ) )
                 SED_Error ( "Fehler beim Setzen der neuen Daten!" );
             else
             {
@@ -98,15 +98,15 @@
     
     /////////////////////////////
     // Kontaktdaten bearbeiten
-    $daten = mysql_fetch_array ( mysql_query ( "SELECT name, telefon, telefon2, email FROM benutzer WHERE id=$up_userid", $globals ['db'] ), MYSQL_ASSOC );
+    $daten = SED_Row ( 'SELECT name, telefon, telefon2, email FROM benutzer WHERE id=?', [$up_userid]);
     ?>
-        <form action="<? echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
+        <form action="<?php echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;"><fieldset>
         <legend>Kontaktdaten</legend>
         <table cellspacing="0" cellpadding="2">
-        <tr><td>Name: </td><td><input value="<? echo $daten ['name']; ?>" type="text" name="name" /></td></tr>
-        <tr><td>Email: </td><td><input value="<? echo $daten ['email']; ?>" type="text" name="email" /></td></tr>
-        <tr><td>Telefon: </td><td><input value="<? echo $daten ['telefon']; ?>" type="text" name="telefon" /></td></tr>
-        <tr><td>Telefon 2: </td><td><input value="<? echo $daten ['telefon2']; ?>" type="text" name="telefon2" /></td></tr>
-        <tr><td></td><td><input type="submit" class="sed_submit" name="kontakt_change" value="&Auml;ndern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
+        <tr><td>Name: </td><td><input value="<?php echo $daten ['name']; ?>" type="text" name="name" /></td></tr>
+        <tr><td>Email: </td><td><input value="<?php echo $daten ['email']; ?>" type="text" name="email" /></td></tr>
+        <tr><td>Telefon: </td><td><input value="<?php echo $daten ['telefon']; ?>" type="text" name="telefon" /></td></tr>
+        <tr><td>Telefon 2: </td><td><input value="<?php echo $daten ['telefon2']; ?>" type="text" name="telefon2" /></td></tr>
+        <tr><td></td><td><input type="submit" class="sed_submit" name="kontakt_change" value="&Auml;ndern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<?php echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
         </table>
         </fieldset></form><br />

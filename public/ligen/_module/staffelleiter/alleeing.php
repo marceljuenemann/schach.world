@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Ergebniseingabe
  *
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -22,8 +22,8 @@
     // Spiel verlegen
     if ( isset ( $_POST ['extra_verlegung'] ) )
     {
-        $value = "null";
-        if ( $_POST ['extra_verlegung_aktiv'] == "1" )
+        $value = null;
+        if ( isset( $_POST ['extra_verlegung_aktiv']) && $_POST ['extra_verlegung_aktiv'] == "1" )
         {
             if ( $_POST ['extra_verlegung_unbekannt'] == "1" )
                 $value = "20201224";
@@ -36,7 +36,7 @@
                     SED_Error ( "Das Datum muss das Format TT.MM.JJJJ haben!" );
             }
         }
-        if ( mysql_query ( $tmp = "UPDATE paarungen SET termin=$value WHERE id=$_GET[pid] LIMIT 1", $globals ['db'] ) )
+        if ( SED_TryQuery('UPDATE paarungen SET termin=? WHERE id=? LIMIT 1', [$value, $_GET['pid']]) )
         {
             // Erfolgsmeldung
             SED_Cache::clearSpieltag ( $g_paarung ["staffel"], $g_paarung ["runde"] );
@@ -46,15 +46,15 @@
             exit;
         }
         else
-            SED_Error ( "Fehler bei $tmp", true );
+            SED_Error ( "Fehler beim Aktualisieren der Paarung", true );
     }
 
     // Nur Bemerkung ändern
     if ( isset ( $_POST ['extra_nurbem'] ) )
     {
       // Daten ändern
-      mysql_query ( "UPDATE paarungen SET bemerkung='" . htmlspecialchars ( $_POST ['extra_nurbem_input'], ENT_COMPAT | ENT_HTML401 , 'ISO-8859-1' ) . "' WHERE id=$_GET[pid] LIMIT 1", $globals ['db'] );
-      SED_Cache::clearSpieltag ( $g_paarung ["staffel"], $g_paarung ["runde"] );
+      SED_TryQuery('UPDATE paarungen SET bemerkung=? WHERE id=? LIMIT 1', [htmlspecialchars($_POST['extra_nurbem_input'], ENT_COMPAT | ENT_HTML401, 'ISO-8859-1'), $_GET['pid']]);
+      SED_Cache::clearSpieltag($g_paarung["staffel"], $g_paarung["runde"]);
 
       // Erfolgsmeldung
       echo "<br /><br /><b>Die Daten wurden erfolgreich gespeichert!</b>";
@@ -66,9 +66,9 @@
     if ( isset ( $_POST ['extra_delete'] ) )
     {
       // Daten ändern
-      mysql_query ( "DELETE FROM spielerpaarungen WHERE paarung=$_GET[pid]", $globals ['db'] );
-      mysql_query ( "UPDATE paarungen SET erg1=NULL, erg2=NULL, bemerkung=NULL WHERE id=$_GET[pid] LIMIT 1", $globals ['db'] );
-      SED_Cache::clearAll ();
+      SED_TryQuery('DELETE FROM spielerpaarungen WHERE paarung=?', [$_GET['pid']]);
+      SED_TryQuery('UPDATE paarungen SET erg1=NULL, erg2=NULL, bemerkung=NULL WHERE id=? LIMIT 1', [$_GET['pid']]);
+      SED_Cache::clearAll();
 
       // Erfolgsmeldung
       echo "<br /><br /><b>Die Daten wurden erfolgreich gespeichert!</b>";
@@ -80,9 +80,7 @@
     if ( isset ( $_POST ['extra_ausrichter'] ) )
     {
       // Daten ändern - Hinweis: Hier absichtlich keine Fehlerprüfung für value=0
-      if ( !is_numeric ( $_POST ['extra_ausrichter_select'] ) )
-        $_POST ['extra_ausrichter_select'] = "null";
-      mysql_query ( "UPDATE paarungen SET ausrichter=$_POST[extra_ausrichter_select] WHERE id=$_GET[pid] LIMIT 1", $globals ['db'] );
+      SED_TryQuery('UPDATE paarungen SET ausrichter=? WHERE id=? LIMIT 1', [is_numeric($_POST['extra_ausrichter_select']) ? $_POST['extra_ausrichter_select'] : null, $_GET['pid']]);
       SED_Cache::clearSpieltag ( $g_paarung ['staffel'], $g_paarung ['runde'] );
       SED_Cache::clearTeam ( 0, SED_Cache::TEAM_SPIELPLAN );
 
@@ -119,17 +117,17 @@
       <br /><br /><hr class='sed_hr' /><br /><a name='zusatz'></a><span class='sed_hl2'>Zusatzfunktionen</span><br /><br />
       <b>Spiel verlegen</b><br />
       Nutzen Sie diese Funktion, wenn das Spiel nicht am gleichen Tag stattfindet, wie die restlichen Spiele der Staffel.<br />
-      <input type="checkbox" name="extra_verlegung_aktiv" id='e_v_a' value="1" <? echo $verlegung_aktiv_checked; ?>> <label for='e_v_a'>Spielverlegung aktivieren</label><br />
+      <input type="checkbox" name="extra_verlegung_aktiv" id='e_v_a' value="1" <?php echo $verlegung_aktiv_checked; ?>> <label for='e_v_a'>Spielverlegung aktivieren</label><br />
       <div style='margin-left: 30px'>
-        <input type="radio" name="extra_verlegung_unbekannt" id='e_v_u1' value="1" onchange="document.getElementById('e_v_a').checked='checked'" <? echo $verlegung_unbekannt_checked; ?>> <label for='e_v_u1'>Auf unbekannten Termin verlegen</label><br />
-        <input type="radio" name="extra_verlegung_unbekannt" id='e_v_u2' value="0" onchange="document.getElementById('e_v_a').checked='checked'" <? echo $verlegung_bekannt_checked; ?>> <label for='e_v_u2'>Auf folgenden Termin verlegen:</label>
-        <input type='text' id='extra_verlegung_datum' name='extra_verlegung_datum' size='10' value="<? echo $verlegung_datum; ?>" maxlength='10' onchange='document.getElementById("e_v_a").checked="checked";' />
+        <input type="radio" name="extra_verlegung_unbekannt" id='e_v_u1' value="1" onchange="document.getElementById('e_v_a').checked='checked'" <?php echo $verlegung_unbekannt_checked; ?>> <label for='e_v_u1'>Auf unbekannten Termin verlegen</label><br />
+        <input type="radio" name="extra_verlegung_unbekannt" id='e_v_u2' value="0" onchange="document.getElementById('e_v_a').checked='checked'" <?php echo $verlegung_bekannt_checked; ?>> <label for='e_v_u2'>Auf folgenden Termin verlegen:</label>
+        <input type='text' id='extra_verlegung_datum' name='extra_verlegung_datum' size='10' value="<?php echo $verlegung_datum; ?>" maxlength='10' onchange='document.getElementById("e_v_a").checked="checked";' />
         <input type='button' class='sed_submit' id='extra_verlegung_auswahl' value='...' /><br />
       </div>
       <input type="submit" class="sed_submit" name="extra_verlegung" value="Speichern" /><br /><br /><br />
 
         <script type="text/javascript"><!--
-        <?
+        <?php
           echo "Calendar.setup ( {
                   inputField: 'extra_verlegung_datum',
                   button: 'extra_verlegung_auswahl',
@@ -142,7 +140,7 @@
 
       <b>Nur Bemerkung setzen</b><br />
       Benutzen Sie diese Funktion, um nur die Bemerkung zu einer Paarung zu setzen, ohne Einzelergebnisse einzugeben.<br /><br />
-      <input type='text' name='extra_nurbem_input' value='<? echo $g_paarung['bemerkung']; ?>' size='35' />
+      <input type='text' name='extra_nurbem_input' value='<?php echo $g_paarung['bemerkung']; ?>' size='35' />
       <input type="submit" class="sed_submit" name="extra_nurbem" value="Speichern" /><br /><br /><br />
 
       <b>Ergebnisse l&ouml;schen</b><br />
@@ -151,9 +149,9 @@
 
       <b>Ausrichter</b><br />
       Hier k&ouml;nnen Sie festlegen, wer die Paarung ausrichtet. Keine Angabe bedeutet, dass die erstgenannte Mannschaft der Ausrichter ist.<br /><br />
-      <select name='extra_ausrichter_select'><option value='null'></option><? echo $xwai; ?></select>
+      <select name='extra_ausrichter_select'><option value='null'></option><?php echo $xwai; ?></select>
       <input type="submit" class="sed_submit" name="extra_ausrichter" value="Speichern" /><br /><br /><br />
-    <?
+    <?php
 
     // Formular-Ende
     echo "</div></form>";

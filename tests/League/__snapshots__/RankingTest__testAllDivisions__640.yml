@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Turm Vienenburg', url: '?mannschaft=5820', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1387&r=3#p5820x5838', title: 'gegen VfL Oker', text: 2½ }]
+    - [{ url: '?staffel=1387&r=4#p5820x5840', title: 'gegen SK Goslar 2', text: 2½ }]
+    - [{ url: '?staffel=1387&r=6#p5820x5845', title: 'gegen SK Gronau 2', text: '4' }]
+    - [{ url: '?staffel=1387&r=7#p5820x5868', title: 'gegen Hildesheimer SV 6', text: '3' }]
+    - [{ url: '?staffel=1387&r=5#p5820x5854', title: 'gegen Bad Lauterberg 2', text: '3' }]
+    - [{ url: '?staffel=1387&r=1#p5820x5841', title: 'gegen SK Goslar 3', text: '3' }]
+    - [{ url: '?staffel=1387&r=2#p5820x5847', title: 'gegen SV GW Parensen 2', text: '4' }]
+    - 14
+    - '22'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'VfL Oker', url: '?mannschaft=5838', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1387&r=3#p5838x5820', title: 'gegen Turm Vienenburg', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1387&r=7#p5838x5840', title: 'gegen SK Goslar 2', text: '3' }]
+    - [{ url: '?staffel=1387&r=1#p5838x5845', title: 'gegen SK Gronau 2', text: 3½ }]
+    - [{ url: '?staffel=1387&r=6#p5838x5868', title: 'gegen Hildesheimer SV 6', text: '3' }]
+    - [{ url: '?staffel=1387&r=2#p5838x5854', title: 'gegen Bad Lauterberg 2', text: '3' }]
+    - [{ url: '?staffel=1387&r=4#p5838x5841', title: 'gegen SK Goslar 3', text: '4' }]
+    - [{ url: '?staffel=1387&r=5#p5838x5847', title: 'gegen SV GW Parensen 2', text: '4' }]
+    - 12
+    - '22'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=5840', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1387&r=4#p5840x5820', title: 'gegen Turm Vienenburg', text: 1½ }]
+    - [{ url: '?staffel=1387&r=7#p5840x5838', title: 'gegen VfL Oker', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1387&r=3#p5840x5845', title: 'gegen SK Gronau 2', text: 3½ }]
+    - [{ url: '?staffel=1387&r=5#p5840x5868', title: 'gegen Hildesheimer SV 6', text: 3½ }]
+    - [{ url: '?staffel=1387&r=6#p5840x5854', title: 'gegen Bad Lauterberg 2', text: 3½ }]
+    - [{ url: '?staffel=1387&r=2#p5840x5841', title: 'gegen SK Goslar 3', text: '4' }]
+    - [{ url: '?staffel=1387&r=1#p5840x5847', title: 'gegen SV GW Parensen 2', text: '4' }]
+    - 10
+    - '21'
+    - aufsteiger
+-
+    - '4.'
+    - { text: 'SK Gronau 2', url: '?mannschaft=5845', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1387&r=6#p5845x5820', title: 'gegen Turm Vienenburg', text: '0' }]
+    - [{ url: '?staffel=1387&r=1#p5845x5838', title: 'gegen VfL Oker', text: ½ }]
+    - [{ url: '?staffel=1387&r=3#p5845x5840', title: 'gegen SK Goslar 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1387&r=2#p5845x5868', title: 'gegen Hildesheimer SV 6', text: '2' }]
+    - [{ url: '?staffel=1387&r=4#p5845x5854', title: 'gegen Bad Lauterberg 2', text: '3' }]
+    - [{ url: '?staffel=1387&r=5#p5845x5841', title: 'gegen SK Goslar 3', text: '3' }]
+    - [{ url: '?staffel=1387&r=7#p5845x5847', title: 'gegen SV GW Parensen 2', text: '4' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '5.'
+    - { text: 'Hildesheimer SV 6', url: '?mannschaft=5868', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1387&r=7#p5868x5820', title: 'gegen Turm Vienenburg', text: '1' }]
+    - [{ url: '?staffel=1387&r=6#p5868x5838', title: 'gegen VfL Oker', text: '1' }]
+    - [{ url: '?staffel=1387&r=5#p5868x5840', title: 'gegen SK Goslar 2', text: ½ }]
+    - [{ url: '?staffel=1387&r=2#p5868x5845', title: 'gegen SK Gronau 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1387&r=1#p5868x5854', title: 'gegen Bad Lauterberg 2', text: ½ }]
+    - [{ url: '?staffel=1387&r=3#p5868x5841', title: 'gegen SK Goslar 3', text: 2½ }]
+    - [{ url: '?staffel=1387&r=4#p5868x5847', title: 'gegen SV GW Parensen 2', text: '4' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '6.'
+    - { text: 'Bad Lauterberg 2', url: '?mannschaft=5854', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1387&r=5#p5854x5820', title: 'gegen Turm Vienenburg', text: '1' }]
+    - [{ url: '?staffel=1387&r=2#p5854x5838', title: 'gegen VfL Oker', text: '1' }]
+    - [{ url: '?staffel=1387&r=6#p5854x5840', title: 'gegen SK Goslar 2', text: ½ }]
+    - [{ url: '?staffel=1387&r=4#p5854x5845', title: 'gegen SK Gronau 2', text: '1' }]
+    - [{ url: '?staffel=1387&r=1#p5854x5868', title: 'gegen Hildesheimer SV 6', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1387&r=7#p5854x5841', title: 'gegen SK Goslar 3', text: '1' }]
+    - [{ url: '?staffel=1387&r=3#p5854x5847', title: 'gegen SV GW Parensen 2', text: '4' }]
+    - 4
+    - '12'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Goslar 3', url: '?mannschaft=5841', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1387&r=1#p5841x5820', title: 'gegen Turm Vienenburg', text: '1' }]
+    - [{ url: '?staffel=1387&r=4#p5841x5838', title: 'gegen VfL Oker', text: '0' }]
+    - [{ url: '?staffel=1387&r=2#p5841x5840', title: 'gegen SK Goslar 2', text: '0' }]
+    - [{ url: '?staffel=1387&r=5#p5841x5845', title: 'gegen SK Gronau 2', text: '1' }]
+    - [{ url: '?staffel=1387&r=3#p5841x5868', title: 'gegen Hildesheimer SV 6', text: 1½ }]
+    - [{ url: '?staffel=1387&r=7#p5841x5854', title: 'gegen Bad Lauterberg 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1387&r=6#p5841x5847', title: 'gegen SV GW Parensen 2', text: '4' }]
+    - 4
+    - 10½
+    - ''
+-
+    - '8.'
+    - { text: 'SV GW Parensen 2', url: '?mannschaft=5847', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1387&r=2#p5847x5820', title: 'gegen Turm Vienenburg', text: '0' }]
+    - [{ url: '?staffel=1387&r=5#p5847x5838', title: 'gegen VfL Oker', text: '0' }]
+    - [{ url: '?staffel=1387&r=1#p5847x5840', title: 'gegen SK Goslar 2', text: '0' }]
+    - [{ url: '?staffel=1387&r=7#p5847x5845', title: 'gegen SK Gronau 2', text: '0' }]
+    - [{ url: '?staffel=1387&r=4#p5847x5868', title: 'gegen Hildesheimer SV 6', text: '0' }]
+    - [{ url: '?staffel=1387&r=3#p5847x5854', title: 'gegen Bad Lauterberg 2', text: '0' }]
+    - [{ url: '?staffel=1387&r=6#p5847x5841', title: 'gegen SK Goslar 3', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

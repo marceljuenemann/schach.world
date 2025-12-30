@@ -7,6 +7,7 @@ use Twig\TwigFunction;
 
 class TwigExtension extends AbstractExtension {
 
+  // TODO: Prefix all with wp_
   function getFunctions(): array {
     return [
       $this->allowFunction('get_header'),
@@ -18,6 +19,10 @@ class TwigExtension extends AbstractExtension {
           $data['title'] = $title;
           return $data;
         });
+      }),
+
+      new TwigFunction('is_admin', function() {
+        return Auth::isAdmin();
       })
     ];
   }

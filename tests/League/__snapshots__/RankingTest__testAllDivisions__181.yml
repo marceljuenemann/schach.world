@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Stader SV', url: '?mannschaft=2110', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=603&r=4#p2110x2111', title: 'gegen SK Wildeshausen', text: '5' }]
+    - [{ url: '?staffel=603&r=7#p2110x2105', title: 'gegen SG Oesede-Gmht.', text: 3½ }]
+    - [{ url: '?staffel=603&r=6#p2110x2109', title: 'gegen SK Ricklingen', text: 4½ }]
+    - [{ url: '?staffel=603&r=2#p2110x2112', title: 'gegen SK Lehrte', text: 4½ }]
+    - [{ url: '?staffel=603&r=3#p2110x2107', title: 'gegen Roch. Göttingen', text: '4' }]
+    - [{ url: '?staffel=603&r=1#p2110x2106', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=603&r=5#p2110x2108', title: 'gegen PSC Hannover', text: 5½ }]
+    - 14
+    - '31'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Wildeshausen', url: '?mannschaft=2111', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=603&r=4#p2111x2110', title: 'gegen Stader SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=603&r=6#p2111x2105', title: 'gegen SG Oesede-Gmht.', text: 2½ }]
+    - [{ url: '?staffel=603&r=2#p2111x2109', title: 'gegen SK Ricklingen', text: '6' }]
+    - [{ url: '?staffel=603&r=5#p2111x2112', title: 'gegen SK Lehrte', text: '6' }]
+    - [{ url: '?staffel=603&r=1#p2111x2107', title: 'gegen Roch. Göttingen', text: 4½ }]
+    - [{ url: '?staffel=603&r=3#p2111x2106', title: 'gegen SV Bückeburg', text: '5' }]
+    - [{ url: '?staffel=603&r=7#p2111x2108', title: 'gegen PSC Hannover', text: '6' }]
+    - 10
+    - '31'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=2105', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=603&r=7#p2105x2110', title: 'gegen Stader SV', text: 2½ }]
+    - [{ url: '?staffel=603&r=6#p2105x2111', title: 'gegen SK Wildeshausen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=603&r=1#p2105x2109', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=603&r=4#p2105x2112', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=603&r=2#p2105x2107', title: 'gegen Roch. Göttingen', text: '5' }]
+    - [{ url: '?staffel=603&r=5#p2105x2106', title: 'gegen SV Bückeburg', text: '6' }]
+    - [{ url: '?staffel=603&r=3#p2105x2108', title: 'gegen PSC Hannover', text: 5½ }]
+    - 10
+    - 28½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=2109', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=603&r=6#p2109x2110', title: 'gegen Stader SV', text: 1½ }]
+    - [{ url: '?staffel=603&r=2#p2109x2111', title: 'gegen SK Wildeshausen', text: '0' }]
+    - [{ url: '?staffel=603&r=1#p2109x2105', title: 'gegen SG Oesede-Gmht.', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=603&r=3#p2109x2112', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=603&r=5#p2109x2107', title: 'gegen Roch. Göttingen', text: 4½ }]
+    - [{ url: '?staffel=603&r=7#p2109x2106', title: 'gegen SV Bückeburg', text: '6' }]
+    - [{ url: '?staffel=603&r=4#p2109x2108', title: 'gegen PSC Hannover', text: '5' }]
+    - 9
+    - 23½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte', url: '?mannschaft=2112', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=603&r=2#p2112x2110', title: 'gegen Stader SV', text: 1½ }]
+    - [{ url: '?staffel=603&r=5#p2112x2111', title: 'gegen SK Wildeshausen', text: '0' }]
+    - [{ url: '?staffel=603&r=4#p2112x2105', title: 'gegen SG Oesede-Gmht.', text: '3' }]
+    - [{ url: '?staffel=603&r=3#p2112x2109', title: 'gegen SK Ricklingen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=603&r=7#p2112x2107', title: 'gegen Roch. Göttingen', text: 5½ }]
+    - [{ url: '?staffel=603&r=6#p2112x2106', title: 'gegen SV Bückeburg', text: '6' }]
+    - [{ url: '?staffel=603&r=1#p2112x2108', title: 'gegen PSC Hannover', text: '3' }]
+    - 6
+    - 21½
+    - ''
+-
+    - '6.'
+    - { text: 'Roch. Göttingen', url: '?mannschaft=2107', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=603&r=3#p2107x2110', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=603&r=1#p2107x2111', title: 'gegen SK Wildeshausen', text: 1½ }]
+    - [{ url: '?staffel=603&r=2#p2107x2105', title: 'gegen SG Oesede-Gmht.', text: '1' }]
+    - [{ url: '?staffel=603&r=5#p2107x2109', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=603&r=7#p2107x2112', title: 'gegen SK Lehrte', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=603&r=4#p2107x2106', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=603&r=6#p2107x2108', title: 'gegen PSC Hannover', text: '4' }]
+    - 4
+    - '15'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=2106', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=603&r=1#p2106x2110', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=603&r=3#p2106x2111', title: 'gegen SK Wildeshausen', text: '1' }]
+    - [{ url: '?staffel=603&r=5#p2106x2105', title: 'gegen SG Oesede-Gmht.', text: '0' }]
+    - [{ url: '?staffel=603&r=7#p2106x2109', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=603&r=6#p2106x2112', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=603&r=4#p2106x2107', title: 'gegen Roch. Göttingen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=603&r=2#p2106x2108', title: 'gegen PSC Hannover', text: 3½ }]
+    - 2
+    - '8'
+    - ''
+-
+    - '8.'
+    - { text: 'PSC Hannover', url: '?mannschaft=2108', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=603&r=5#p2108x2110', title: 'gegen Stader SV', text: ½ }]
+    - [{ url: '?staffel=603&r=7#p2108x2111', title: 'gegen SK Wildeshausen', text: '0' }]
+    - [{ url: '?staffel=603&r=3#p2108x2105', title: 'gegen SG Oesede-Gmht.', text: ½ }]
+    - [{ url: '?staffel=603&r=4#p2108x2109', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=603&r=1#p2108x2112', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=603&r=6#p2108x2107', title: 'gegen Roch. Göttingen', text: '2' }]
+    - [{ url: '?staffel=603&r=2#p2108x2106', title: 'gegen SV Bückeburg', text: 2½ }]
+    - xxx
+    - 1
+    - 9½
+    - absteiger

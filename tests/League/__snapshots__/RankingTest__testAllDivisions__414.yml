@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=3872', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=874&r=4#p3872x3893', title: 'gegen Freib. Wedemark', text: '5' }]
+    - [{ url: '?staffel=874&r=3#p3872x4075', title: 'gegen SK Rinteln 2', text: 5½ }]
+    - [{ url: '?staffel=874&r=6#p3872x4052', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=874&r=2#p3872x4033', title: 'gegen SV Warmsen', text: 6½ }]
+    - [{ url: '?staffel=874&r=1#p3872x3857', title: 'gegen WB Eilenriede 2', text: 4½ }]
+    - [{ url: '?staffel=874&r=7#p3872x4031', title: 'gegen SK Neustadt 2', text: '6' }]
+    - [{ url: '?staffel=874&r=5#p3872x4116', title: 'gegen SG Eldagsen/BM', text: '6' }]
+    - [{ url: '?staffel=874&r=9#p3872x3870', title: 'gegen Barsinghausen 2', text: '5' }]
+    - [{ url: '?staffel=874&r=8#p3872x4125', title: 'gegen SC Stadthagen', text: 4½ }]
+    - 16
+    - '46'
+    - ''
+-
+    - '2.'
+    - { text: 'Freib. Wedemark', url: '?mannschaft=3893', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=874&r=4#p3893x3872', title: 'gegen SV Bückeburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=874&r=2#p3893x4075', title: 'gegen SK Rinteln 2', text: '5' }]
+    - [{ url: '?staffel=874&r=5#p3893x4052', title: 'gegen TuS Wunstorf', text: 5½ }]
+    - [{ url: '?staffel=874&r=1#p3893x4033', title: 'gegen SV Warmsen', text: '7' }]
+    - [{ url: '?staffel=874&r=9#p3893x3857', title: 'gegen WB Eilenriede 2', text: 6½ }]
+    - [{ url: '?staffel=874&r=6#p3893x4031', title: 'gegen SK Neustadt 2', text: 7½ }]
+    - [{ url: '?staffel=874&r=3#p3893x4116', title: 'gegen SG Eldagsen/BM', text: '7' }]
+    - [{ url: '?staffel=874&r=8#p3893x3870', title: 'gegen Barsinghausen 2', text: '5' }]
+    - [{ url: '?staffel=874&r=7#p3893x4125', title: 'gegen SC Stadthagen', text: '3' }]
+    - 14
+    - 49½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=4075', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=874&r=3#p4075x3872', title: 'gegen SV Bückeburg', text: 2½ }]
+    - [{ url: '?staffel=874&r=2#p4075x3893', title: 'gegen Freib. Wedemark', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=874&r=4#p4075x4052', title: 'gegen TuS Wunstorf', text: 3½ }]
+    - [{ url: '?staffel=874&r=9#p4075x4033', title: 'gegen SV Warmsen', text: '6' }]
+    - [{ url: '?staffel=874&r=8#p4075x3857', title: 'gegen WB Eilenriede 2', text: 6½ }]
+    - [{ url: '?staffel=874&r=5#p4075x4031', title: 'gegen SK Neustadt 2', text: '8' }]
+    - [{ url: '?staffel=874&r=1#p4075x4116', title: 'gegen SG Eldagsen/BM', text: '8' }]
+    - [{ url: '?staffel=874&r=7#p4075x3870', title: 'gegen Barsinghausen 2', text: '5' }]
+    - [{ url: '?staffel=874&r=6#p4075x4125', title: 'gegen SC Stadthagen', text: 4½ }]
+    - 12
+    - '47'
+    - ''
+-
+    - '4.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=4052', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=874&r=6#p4052x3872', title: 'gegen SV Bückeburg', text: '5' }]
+    - [{ url: '?staffel=874&r=5#p4052x3893', title: 'gegen Freib. Wedemark', text: 2½ }]
+    - [{ url: '?staffel=874&r=4#p4052x4075', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=874&r=3#p4052x4033', title: 'gegen SV Warmsen', text: 3½ }]
+    - [{ url: '?staffel=874&r=2#p4052x3857', title: 'gegen WB Eilenriede 2', text: '3' }]
+    - [{ url: '?staffel=874&r=8#p4052x4031', title: 'gegen SK Neustadt 2', text: '5' }]
+    - [{ url: '?staffel=874&r=7#p4052x4116', title: 'gegen SG Eldagsen/BM', text: 1½ }]
+    - [{ url: '?staffel=874&r=1#p4052x3870', title: 'gegen Barsinghausen 2', text: '6' }]
+    - [{ url: '?staffel=874&r=9#p4052x4125', title: 'gegen SC Stadthagen', text: 4½ }]
+    - 10
+    - 35½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Warmsen', url: '?mannschaft=4033', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=874&r=2#p4033x3872', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=874&r=1#p4033x3893', title: 'gegen Freib. Wedemark', text: '1' }]
+    - [{ url: '?staffel=874&r=9#p4033x4075', title: 'gegen SK Rinteln 2', text: '2' }]
+    - [{ url: '?staffel=874&r=3#p4033x4052', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=874&r=7#p4033x3857', title: 'gegen WB Eilenriede 2', text: 2½ }]
+    - [{ url: '?staffel=874&r=4#p4033x4031', title: 'gegen SK Neustadt 2', text: '4' }]
+    - [{ url: '?staffel=874&r=8#p4033x4116', title: 'gegen SG Eldagsen/BM', text: 5½ }]
+    - [{ url: '?staffel=874&r=6#p4033x3870', title: 'gegen Barsinghausen 2', text: 4½ }]
+    - [{ url: '?staffel=874&r=5#p4033x4125', title: 'gegen SC Stadthagen', text: 5½ }]
+    - 9
+    - '31'
+    - ''
+-
+    - '6.'
+    - { text: 'WB Eilenriede 2', url: '?mannschaft=3857', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=874&r=1#p3857x3872', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=874&r=9#p3857x3893', title: 'gegen Freib. Wedemark', text: 1½ }]
+    - [{ url: '?staffel=874&r=8#p3857x4075', title: 'gegen SK Rinteln 2', text: 1½ }]
+    - [{ url: '?staffel=874&r=2#p3857x4052', title: 'gegen TuS Wunstorf', text: '5' }]
+    - [{ url: '?staffel=874&r=7#p3857x4033', title: 'gegen SV Warmsen', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=874&r=3#p3857x4031', title: 'gegen SK Neustadt 2', text: 3½ }]
+    - [{ url: '?staffel=874&r=6#p3857x4116', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=874&r=5#p3857x3870', title: 'gegen Barsinghausen 2', text: '5' }]
+    - [{ url: '?staffel=874&r=4#p3857x4125', title: 'gegen SC Stadthagen', text: 3½ }]
+    - 7
+    - '33'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Neustadt 2', url: '?mannschaft=4031', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=874&r=7#p4031x3872', title: 'gegen SV Bückeburg', text: '2' }]
+    - [{ url: '?staffel=874&r=6#p4031x3893', title: 'gegen Freib. Wedemark', text: ½ }]
+    - [{ url: '?staffel=874&r=5#p4031x4075', title: 'gegen SK Rinteln 2', text: '0' }]
+    - [{ url: '?staffel=874&r=8#p4031x4052', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=874&r=4#p4031x4033', title: 'gegen SV Warmsen', text: '4' }]
+    - [{ url: '?staffel=874&r=3#p4031x3857', title: 'gegen WB Eilenriede 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=874&r=9#p4031x4116', title: 'gegen SG Eldagsen/BM', text: '5' }]
+    - [{ url: '?staffel=874&r=2#p4031x3870', title: 'gegen Barsinghausen 2', text: '3' }]
+    - [{ url: '?staffel=874&r=1#p4031x4125', title: 'gegen SC Stadthagen', text: 6½ }]
+    - 7
+    - 28½
+    - ''
+-
+    - '8.'
+    - { text: 'SG Eldagsen/BM', url: '?mannschaft=4116', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=874&r=5#p4116x3872', title: 'gegen SV Bückeburg', text: '2' }]
+    - [{ url: '?staffel=874&r=3#p4116x3893', title: 'gegen Freib. Wedemark', text: '1' }]
+    - [{ url: '?staffel=874&r=1#p4116x4075', title: 'gegen SK Rinteln 2', text: '0' }]
+    - [{ url: '?staffel=874&r=7#p4116x4052', title: 'gegen TuS Wunstorf', text: 6½ }]
+    - [{ url: '?staffel=874&r=8#p4116x4033', title: 'gegen SV Warmsen', text: 2½ }]
+    - [{ url: '?staffel=874&r=6#p4116x3857', title: 'gegen WB Eilenriede 2', text: '4' }]
+    - [{ url: '?staffel=874&r=9#p4116x4031', title: 'gegen SK Neustadt 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=874&r=4#p4116x3870', title: 'gegen Barsinghausen 2', text: 4½ }]
+    - [{ url: '?staffel=874&r=2#p4116x4125', title: 'gegen SC Stadthagen', text: 4½ }]
+    - 7
+    - '27'
+    - ''
+-
+    - '9.'
+    - { text: 'Barsinghausen 2', url: '?mannschaft=3870', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=874&r=9#p3870x3872', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=874&r=8#p3870x3893', title: 'gegen Freib. Wedemark', text: '3' }]
+    - [{ url: '?staffel=874&r=7#p3870x4075', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=874&r=1#p3870x4052', title: 'gegen TuS Wunstorf', text: '2' }]
+    - [{ url: '?staffel=874&r=6#p3870x4033', title: 'gegen SV Warmsen', text: 3½ }]
+    - [{ url: '?staffel=874&r=5#p3870x3857', title: 'gegen WB Eilenriede 2', text: '3' }]
+    - [{ url: '?staffel=874&r=2#p3870x4031', title: 'gegen SK Neustadt 2', text: '5' }]
+    - [{ url: '?staffel=874&r=4#p3870x4116', title: 'gegen SG Eldagsen/BM', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=874&r=3#p3870x4125', title: 'gegen SC Stadthagen', text: '5' }]
+    - 4
+    - '31'
+    - ''
+-
+    - '10.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=4125', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=874&r=8#p4125x3872', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=874&r=7#p4125x3893', title: 'gegen Freib. Wedemark', text: '5' }]
+    - [{ url: '?staffel=874&r=6#p4125x4075', title: 'gegen SK Rinteln 2', text: 3½ }]
+    - [{ url: '?staffel=874&r=9#p4125x4052', title: 'gegen TuS Wunstorf', text: 3½ }]
+    - [{ url: '?staffel=874&r=5#p4125x4033', title: 'gegen SV Warmsen', text: 2½ }]
+    - [{ url: '?staffel=874&r=4#p4125x3857', title: 'gegen WB Eilenriede 2', text: 4½ }]
+    - [{ url: '?staffel=874&r=1#p4125x4031', title: 'gegen SK Neustadt 2', text: 1½ }]
+    - [{ url: '?staffel=874&r=2#p4125x4116', title: 'gegen SG Eldagsen/BM', text: 2½ }]
+    - [{ url: '?staffel=874&r=3#p4125x3870', title: 'gegen Barsinghausen 2', text: '3' }]
+    - xxx
+    - 4
+    - 29½
+    - ''

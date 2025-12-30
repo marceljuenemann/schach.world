@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Leipzig-Gohl 2', url: '?mannschaft=1530', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=539&r=5#p1530x1518', title: 'gegen SG GW Dresden', text: 2½ }]
+    - [{ url: '?staffel=539&r=2#p1530x1524', title: 'gegen SV Empor Berlin', text: 2½ }]
+    - [{ url: '?staffel=539&r=3#p1530x1512', title: 'gegen SV Merseburg', text: '3' }]
+    - [{ url: '?staffel=539&r=4#p1530x1443', title: 'gegen TuS Coswig 1920', text: '1' }]
+    - [{ url: '?staffel=539&r=1#p1530x1528', title: 'gegen USV TU Dresden', text: 3½ }]
+    - 8
+    - 12½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG GW Dresden', url: '?mannschaft=1518', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=539&r=5#p1518x1530', title: 'gegen SC Leipzig-Gohl 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=539&r=4#p1518x1524', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=539&r=1#p1518x1512', title: 'gegen SV Merseburg', text: 2½ }]
+    - [{ url: '?staffel=539&r=3#p1518x1443', title: 'gegen TuS Coswig 1920', text: 2½ }]
+    - [{ url: '?staffel=539&r=2#p1518x1528', title: 'gegen USV TU Dresden', text: 2½ }]
+    - 7
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=1524', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=539&r=2#p1524x1530', title: 'gegen SC Leipzig-Gohl 2', text: 1½ }]
+    - [{ url: '?staffel=539&r=4#p1524x1518', title: 'gegen SG GW Dresden', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=539&r=5#p1524x1512', title: 'gegen SV Merseburg', text: '2' }]
+    - [{ url: '?staffel=539&r=1#p1524x1443', title: 'gegen TuS Coswig 1920', text: '3' }]
+    - [{ url: '?staffel=539&r=3#p1524x1528', title: 'gegen USV TU Dresden', text: '3' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Merseburg', url: '?mannschaft=1512', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=539&r=3#p1512x1530', title: 'gegen SC Leipzig-Gohl 2', text: '1' }]
+    - [{ url: '?staffel=539&r=1#p1512x1518', title: 'gegen SG GW Dresden', text: 1½ }]
+    - [{ url: '?staffel=539&r=5#p1512x1524', title: 'gegen SV Empor Berlin', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=539&r=2#p1512x1443', title: 'gegen TuS Coswig 1920', text: 2½ }]
+    - [{ url: '?staffel=539&r=4#p1512x1528', title: 'gegen USV TU Dresden', text: '2' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'TuS Coswig 1920', url: '?mannschaft=1443', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=539&r=4#p1443x1530', title: 'gegen SC Leipzig-Gohl 2', text: '3' }]
+    - [{ url: '?staffel=539&r=3#p1443x1518', title: 'gegen SG GW Dresden', text: 1½ }]
+    - [{ url: '?staffel=539&r=1#p1443x1524', title: 'gegen SV Empor Berlin', text: '1' }]
+    - [{ url: '?staffel=539&r=2#p1443x1512', title: 'gegen SV Merseburg', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=539&r=5#p1443x1528', title: 'gegen USV TU Dresden', text: '2' }]
+    - 3
+    - '9'
+    - absteiger
+-
+    - '6.'
+    - { text: 'USV TU Dresden', url: '?mannschaft=1528', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=539&r=1#p1528x1530', title: 'gegen SC Leipzig-Gohl 2', text: ½ }]
+    - [{ url: '?staffel=539&r=2#p1528x1518', title: 'gegen SG GW Dresden', text: 1½ }]
+    - [{ url: '?staffel=539&r=3#p1528x1524', title: 'gegen SV Empor Berlin', text: '1' }]
+    - [{ url: '?staffel=539&r=4#p1528x1512', title: 'gegen SV Merseburg', text: '2' }]
+    - [{ url: '?staffel=539&r=5#p1528x1443', title: 'gegen TuS Coswig 1920', text: '2' }]
+    - xxx
+    - 2
+    - '7'
+    - absteiger

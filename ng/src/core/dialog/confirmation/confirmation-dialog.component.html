@@ -1,0 +1,8 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">{{ params.title }}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+</div>
+<div class="modal-body">
+  <p>{{ params.message }}</p>
+</div>
+<nsv-dialog-footer [dialog]="this" [saveButtonLabel]="params.confirmText"></nsv-dialog-footer>

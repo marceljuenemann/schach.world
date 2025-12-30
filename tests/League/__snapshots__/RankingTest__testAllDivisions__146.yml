@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=1664', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=560&r=7#p1664x1555', title: 'gegen SK Neustadt', text: 4½ }]
+    - [{ url: '?staffel=560&r=6#p1664x1545', title: 'gegen SF Sulingen', text: '3' }]
+    - [{ url: '?staffel=560&r=4#p1664x1641', title: 'gegen SV Berenbostel 2', text: 4½ }]
+    - [{ url: '?staffel=560&r=1#p1664x1574', title: 'gegen SG Eldagsen/BM', text: '5' }]
+    - [{ url: '?staffel=560&r=8#p1664x1654', title: 'gegen SK Ricklingen 2', text: 5½ }]
+    - [{ url: '?staffel=560&r=2#p1664x1631', title: 'gegen Garbsen/Marienw 2', text: '5' }]
+    - [{ url: '?staffel=560&r=9#p1664x1652', title: 'gegen SF Hannover 3', text: '5' }]
+    - [{ url: '?staffel=560&r=3#p1664x1588', title: 'gegen SVg Calenberg', text: '6' }]
+    - [{ url: '?staffel=560&r=5#p1664x1590', title: 'gegen SV Springe 2', text: '6' }]
+    - 16
+    - 44½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Neustadt', url: '?mannschaft=1555', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=560&r=7#p1555x1664', title: 'gegen SV Bückeburg 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=560&r=1#p1555x1545', title: 'gegen SF Sulingen', text: '4' }]
+    - [{ url: '?staffel=560&r=8#p1555x1641', title: 'gegen SV Berenbostel 2', text: 6½ }]
+    - [{ url: '?staffel=560&r=5#p1555x1574', title: 'gegen SG Eldagsen/BM', text: '5' }]
+    - [{ url: '?staffel=560&r=3#p1555x1654', title: 'gegen SK Ricklingen 2', text: 5½ }]
+    - [{ url: '?staffel=560&r=6#p1555x1631', title: 'gegen Garbsen/Marienw 2', text: 4½ }]
+    - [{ url: '?staffel=560&r=4#p1555x1652', title: 'gegen SF Hannover 3', text: 4½ }]
+    - [{ url: '?staffel=560&r=2#p1555x1588', title: 'gegen SVg Calenberg', text: '6' }]
+    - [{ url: '?staffel=560&r=9#p1555x1590', title: 'gegen SV Springe 2', text: 7½ }]
+    - 15
+    - '47'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Sulingen', url: '?mannschaft=1545', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=560&r=6#p1545x1664', title: 'gegen SV Bückeburg 2', text: '5' }]
+    - [{ url: '?staffel=560&r=1#p1545x1555', title: 'gegen SK Neustadt', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=560&r=7#p1545x1641', title: 'gegen SV Berenbostel 2', text: '3' }]
+    - [{ url: '?staffel=560&r=4#p1545x1574', title: 'gegen SG Eldagsen/BM', text: 4½ }]
+    - [{ url: '?staffel=560&r=2#p1545x1654', title: 'gegen SK Ricklingen 2', text: 4½ }]
+    - [{ url: '?staffel=560&r=5#p1545x1631', title: 'gegen Garbsen/Marienw 2', text: 6½ }]
+    - [{ url: '?staffel=560&r=3#p1545x1652', title: 'gegen SF Hannover 3', text: '5' }]
+    - [{ url: '?staffel=560&r=9#p1545x1588', title: 'gegen SVg Calenberg', text: 2½ }]
+    - [{ url: '?staffel=560&r=8#p1545x1590', title: 'gegen SV Springe 2', text: '5' }]
+    - 13
+    - '40'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Berenbostel 2', url: '?mannschaft=1641', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=560&r=4#p1641x1664', title: 'gegen SV Bückeburg 2', text: 3½ }]
+    - [{ url: '?staffel=560&r=8#p1641x1555', title: 'gegen SK Neustadt', text: 1½ }]
+    - [{ url: '?staffel=560&r=7#p1641x1545', title: 'gegen SF Sulingen', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=560&r=2#p1641x1574', title: 'gegen SG Eldagsen/BM', text: 5½ }]
+    - [{ url: '?staffel=560&r=9#p1641x1654', title: 'gegen SK Ricklingen 2', text: '1' }]
+    - [{ url: '?staffel=560&r=3#p1641x1631', title: 'gegen Garbsen/Marienw 2', text: '4' }]
+    - [{ url: '?staffel=560&r=1#p1641x1652', title: 'gegen SF Hannover 3', text: 5½ }]
+    - [{ url: '?staffel=560&r=5#p1641x1588', title: 'gegen SVg Calenberg', text: '5' }]
+    - [{ url: '?staffel=560&r=6#p1641x1590', title: 'gegen SV Springe 2', text: '8' }]
+    - 11
+    - '39'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Eldagsen/BM', url: '?mannschaft=1574', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=560&r=1#p1574x1664', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=560&r=5#p1574x1555', title: 'gegen SK Neustadt', text: '3' }]
+    - [{ url: '?staffel=560&r=4#p1574x1545', title: 'gegen SF Sulingen', text: 3½ }]
+    - [{ url: '?staffel=560&r=2#p1574x1641', title: 'gegen SV Berenbostel 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=560&r=6#p1574x1654', title: 'gegen SK Ricklingen 2', text: 5½ }]
+    - [{ url: '?staffel=560&r=9#p1574x1631', title: 'gegen Garbsen/Marienw 2', text: '4' }]
+    - [{ url: '?staffel=560&r=7#p1574x1652', title: 'gegen SF Hannover 3', text: '4' }]
+    - [{ url: '?staffel=560&r=8#p1574x1588', title: 'gegen SVg Calenberg', text: '6' }]
+    - [{ url: '?staffel=560&r=3#p1574x1590', title: 'gegen SV Springe 2', text: 6½ }]
+    - 8
+    - '38'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=1654', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=560&r=8#p1654x1664', title: 'gegen SV Bückeburg 2', text: 2½ }]
+    - [{ url: '?staffel=560&r=3#p1654x1555', title: 'gegen SK Neustadt', text: 2½ }]
+    - [{ url: '?staffel=560&r=2#p1654x1545', title: 'gegen SF Sulingen', text: 3½ }]
+    - [{ url: '?staffel=560&r=9#p1654x1641', title: 'gegen SV Berenbostel 2', text: '7' }]
+    - [{ url: '?staffel=560&r=6#p1654x1574', title: 'gegen SG Eldagsen/BM', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=560&r=7#p1654x1631', title: 'gegen Garbsen/Marienw 2', text: 2½ }]
+    - [{ url: '?staffel=560&r=5#p1654x1652', title: 'gegen SF Hannover 3', text: 5½ }]
+    - [{ url: '?staffel=560&r=4#p1654x1588', title: 'gegen SVg Calenberg', text: 4½ }]
+    - [{ url: '?staffel=560&r=1#p1654x1590', title: 'gegen SV Springe 2', text: 4½ }]
+    - 8
+    - '35'
+    - ''
+-
+    - '7.'
+    - { text: 'Garbsen/Marienw 2', url: '?mannschaft=1631', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=560&r=2#p1631x1664', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=560&r=6#p1631x1555', title: 'gegen SK Neustadt', text: 3½ }]
+    - [{ url: '?staffel=560&r=5#p1631x1545', title: 'gegen SF Sulingen', text: 1½ }]
+    - [{ url: '?staffel=560&r=3#p1631x1641', title: 'gegen SV Berenbostel 2', text: '4' }]
+    - [{ url: '?staffel=560&r=9#p1631x1574', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=560&r=7#p1631x1654', title: 'gegen SK Ricklingen 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=560&r=8#p1631x1652', title: 'gegen SF Hannover 3', text: 5½ }]
+    - [{ url: '?staffel=560&r=1#p1631x1588', title: 'gegen SVg Calenberg', text: '2' }]
+    - [{ url: '?staffel=560&r=4#p1631x1590', title: 'gegen SV Springe 2', text: '4' }]
+    - 7
+    - '33'
+    - ''
+-
+    - '8.'
+    - { text: 'SF Hannover 3', url: '?mannschaft=1652', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=560&r=9#p1652x1664', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=560&r=4#p1652x1555', title: 'gegen SK Neustadt', text: 3½ }]
+    - [{ url: '?staffel=560&r=3#p1652x1545', title: 'gegen SF Sulingen', text: '3' }]
+    - [{ url: '?staffel=560&r=1#p1652x1641', title: 'gegen SV Berenbostel 2', text: 2½ }]
+    - [{ url: '?staffel=560&r=7#p1652x1574', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=560&r=5#p1652x1654', title: 'gegen SK Ricklingen 2', text: 2½ }]
+    - [{ url: '?staffel=560&r=8#p1652x1631', title: 'gegen Garbsen/Marienw 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=560&r=6#p1652x1588', title: 'gegen SVg Calenberg', text: 5½ }]
+    - [{ url: '?staffel=560&r=2#p1652x1590', title: 'gegen SV Springe 2', text: '4' }]
+    - 4
+    - 30½
+    - ''
+-
+    - '9.'
+    - { text: 'SVg Calenberg', url: '?mannschaft=1588', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=560&r=3#p1588x1664', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - [{ url: '?staffel=560&r=2#p1588x1555', title: 'gegen SK Neustadt', text: '2' }]
+    - [{ url: '?staffel=560&r=9#p1588x1545', title: 'gegen SF Sulingen', text: 5½ }]
+    - [{ url: '?staffel=560&r=5#p1588x1641', title: 'gegen SV Berenbostel 2', text: '3' }]
+    - [{ url: '?staffel=560&r=8#p1588x1574', title: 'gegen SG Eldagsen/BM', text: '2' }]
+    - [{ url: '?staffel=560&r=4#p1588x1654', title: 'gegen SK Ricklingen 2', text: 3½ }]
+    - [{ url: '?staffel=560&r=1#p1588x1631', title: 'gegen Garbsen/Marienw 2', text: '6' }]
+    - [{ url: '?staffel=560&r=6#p1588x1652', title: 'gegen SF Hannover 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=560&r=7#p1588x1590', title: 'gegen SV Springe 2', text: 3½ }]
+    - 4
+    - '30'
+    - ''
+-
+    - '10.'
+    - { text: 'SV Springe 2', url: '?mannschaft=1590', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=560&r=5#p1590x1664', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - [{ url: '?staffel=560&r=9#p1590x1555', title: 'gegen SK Neustadt', text: ½ }]
+    - [{ url: '?staffel=560&r=8#p1590x1545', title: 'gegen SF Sulingen', text: '3' }]
+    - [{ url: '?staffel=560&r=6#p1590x1641', title: 'gegen SV Berenbostel 2', text: '0' }]
+    - [{ url: '?staffel=560&r=3#p1590x1574', title: 'gegen SG Eldagsen/BM', text: 1½ }]
+    - [{ url: '?staffel=560&r=1#p1590x1654', title: 'gegen SK Ricklingen 2', text: 3½ }]
+    - [{ url: '?staffel=560&r=4#p1590x1631', title: 'gegen Garbsen/Marienw 2', text: '4' }]
+    - [{ url: '?staffel=560&r=2#p1590x1652', title: 'gegen SF Hannover 3', text: '4' }]
+    - [{ url: '?staffel=560&r=7#p1590x1588', title: 'gegen SVg Calenberg', text: 4½ }]
+    - xxx
+    - 4
+    - '23'
+    - ''

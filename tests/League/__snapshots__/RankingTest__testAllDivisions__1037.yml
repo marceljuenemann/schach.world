@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Meppen 2', url: '?mannschaft=8224', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1887&r=4#p8224x8225', title: 'gegen SK Nordhorn-Blanke 6', text: '5' }]
+    - [{ url: '?staffel=1887&r=1#p8224x8227', title: 'gegen SV Lingen 3', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1887&r=2#p8224x8226', title: 'gegen SF Spelle 3', text: 4½ }]
+    - 6
+    - 14½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Nordhorn-Blanke 6', url: '?mannschaft=8225', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1887&r=4#p8225x8224', title: 'gegen SK Meppen 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1887&r=2#p8225x8227', title: 'gegen SV Lingen 3', text: 2½ }]
+    - [{ url: '?staffel=1887&r=1#p8225x8223', title: 'gegen SV Bad Bentheim', text: '5' }]
+    - [{ url: '?staffel=1887&r=3#p8225x8226', title: 'gegen SF Spelle 3', text: 3½ }]
+    - 4
+    - '12'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Lingen 3', url: '?mannschaft=8227', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1887&r=1#p8227x8224', title: 'gegen SK Meppen 2', text: '1' }]
+    - [{ url: '?staffel=1887&r=2#p8227x8225', title: 'gegen SK Nordhorn-Blanke 6', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1887&r=3#p8227x8223', title: 'gegen SV Bad Bentheim', text: '4' }]
+    - {  }
+    - 4
+    - 8½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bad Bentheim', url: '?mannschaft=8223', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1887&r=1#p8223x8225', title: 'gegen SK Nordhorn-Blanke 6', text: '1' }]
+    - [{ url: '?staffel=1887&r=3#p8223x8227', title: 'gegen SV Lingen 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1887&r=4#p8223x8226', title: 'gegen SF Spelle 3', text: '5' }]
+    - 2
+    - '7'
+    - ''
+-
+    - '5.'
+    - { text: 'SF Spelle 3', url: '?mannschaft=8226', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1887&r=2#p8226x8224', title: 'gegen SK Meppen 2', text: 1½ }]
+    - [{ url: '?staffel=1887&r=3#p8226x8225', title: 'gegen SK Nordhorn-Blanke 6', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1887&r=4#p8226x8223', title: 'gegen SV Bad Bentheim', text: '1' }]
+    - xxx
+    - 0
+    - '5'
+    - absteiger

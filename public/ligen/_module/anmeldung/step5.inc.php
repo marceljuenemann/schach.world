@@ -1,4 +1,4 @@
-<?
+<?php
 /* Mannschaftsmeldung: 5. Reihenfolge festlegen
  *
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -13,7 +13,7 @@
     Bringen Sie in diesem Schritt alle angemeldeten Spieler in die richtige
     Reihenfolge. Durch Klicken auf einen der Pfeile, k&ouml;nnen Sie einen
     Spieler nach oben oder unten verschieben.<br /><br />
-    <?
+    <?php
 
     // Platz für alle Spieler ( timestamp => spieler )
     $spieler = array ();

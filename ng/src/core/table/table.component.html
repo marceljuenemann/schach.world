@@ -1,0 +1,110 @@
+@if (this.showSearch || options().showColumnSelection || options().csvFileName) {
+  <div class="d-flex justify-content-between mb-2">
+    <div>
+      @if (this.showSearch) {
+        <div class="input-group input-group-sm">
+          <input type="text" class="form-control" placeholder="Suchen..." aria-label="Suchen"
+            [formControl]="search">
+          <button class="btn btn-outline-secondary" type="button">
+            <span class="dashicons dashicons-search"></span>
+          </button>
+        </div>
+      }
+    </div>
+    <div>
+      @if (options().csvFileName) {
+        <button type="button" class="btn btn-primary btn-sm d-inline-block" style="margin-right: 8px" (click)="exportCsv()">
+          <span class="dashicons dashicons-download" style="vertical-align: bottom"></span>
+          CSV
+        </button>
+      }
+
+      @if (options().showColumnSelection) {
+        <div ngbDropdown autoClose="outside" class="d-inline-block">
+          <button ngbDropdownToggle type="button" class="btn btn-primary btn-sm">
+            <span class="dashicons dashicons-admin-settings" style="vertical-align: bottom"></span>
+            Spalten
+          </button>
+          <div ngbDropdownMenu>
+            @for (column of options().columns; track column.id) {
+              @if (column.visibility !== 'always' && column.visibility !== 'never') {
+                <button ngbDropdownItem (click)="toggleColumnVisibility(column)">
+                  <span style="min-width: 16px; display: inline-block">
+                    @if (isColumnVisible(column)) {
+                      ✓
+                    }
+                  </span>
+                  {{ column.label }}
+                </button>
+              }
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+}
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      @for (column of visibleColumns(); track column.id) {
+        <th [class.sortable]="column.sortable !== false"
+            [class.d-none]="column.responsiveBelow"
+            [class.d-md-table-cell]="column.responsiveBelow"
+            (click)="onHeaderClick(column)">
+          {{ column.label }}
+          @if (sortColumn() == column.id) {
+            <span class="sort-indicator">
+              @if (sortDirection() == 'asc') {
+                ▼
+              } @else {
+                ▲
+              }
+            </span>
+          }
+        </th>
+      }
+    </tr>
+  </thead>
+  <tbody>
+    @for (row of sortedData(); track options().idFn(row)) {
+      <tr>
+        @for (column of visibleColumns(); track column.id) {
+          <td [class.d-none]="column.responsiveBelow"
+              [class.d-md-table-cell]="column.responsiveBelow"
+          >
+            @if (column.templateRef) {
+              <ng-container [ngTemplateOutlet]="column.templateRef()" [ngTemplateOutletContext]="{ row: row }"></ng-container>
+            } @else {
+              {{ getValue(row, column) }}
+            }
+
+            <!-- Possibly show other columns below on small devices -->
+            @for (colocatedColumn of colocatedColumns(column.id); track colocatedColumn.id) {
+              <div class="d-md-none mt-1">
+                @if (colocatedColumn.templateRef) {
+                  <ng-container [ngTemplateOutlet]="colocatedColumn.templateRef()" [ngTemplateOutletContext]="{ row: row }"></ng-container>
+                } @else {
+                  <i>{{ getValue(row, colocatedColumn) }}</i>&nbsp;
+                }
+              </div>
+            }
+          </td>
+        }
+      </tr>
+    }
+  </tbody>
+</table>
+
+@if (this.options().showRowCount) {
+  <div class="mt-3 text-muted fst-italic">
+    {{ this.sortedData().length }}
+    {{ this.sortedData().length != 1 ? 'Einträge' : 'Eintrag' }}
+  </div>
+} @else if (this.filteredData().length == 0) {
+  <div class="alert alert-secondary">
+    Keine Einträge
+  </div>
+}
+

@@ -1,0 +1,33 @@
+{% extends 'layout.html.twig' %}
+
+{% set title = "Fehler " ~ status_code ~ ": " ~ status_text %}
+{% set hide_sidebar = true %}
+
+{% block content %}
+
+<div class="alert alert-danger" role="alert">
+  Um den Fehler zu melden, verwenden Sie das
+  <a href="/kontakt">Kontaktformular</a> und beschreiben sie die Schritte, um den
+  Fehler zu reproduzieren.
+</div>
+
+{% if is_admin() %}
+  <h4 class="mt-4">Exception details (Only shown for admins)</h4>
+
+  <strong>Message: </strong>
+  {{ exception.message }}
+  <br>
+
+  <strong>File: </strong>
+  {{ exception.trace[0].file }}
+  <br>
+
+  <strong>Line: </strong>
+  {{ exception.trace[0].line }}
+  <br>
+  
+  {{ stacktrace(exception) }}
+
+{% endif %}
+
+{% endblock %}

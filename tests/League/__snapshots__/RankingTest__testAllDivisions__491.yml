@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=4670', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=971&r=9#p4670x4764', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=971&r=2#p4670x4755', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=971&r=8#p4670x4780', title: 'gegen SK Lehrte 4', text: '2' }]
+    - [{ url: '?staffel=971&r=5#p4670x4639', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=971&r=3#p4670x4751', title: 'gegen SK Neustadt', text: '3' }]
+    - [{ url: '?staffel=971&r=6#p4670x4679', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=971&r=1#p4670x4756', title: 'gegen SV Springe 2', text: '4' }]
+    - [{ url: '?staffel=971&r=4#p4670x4754', title: 'gegen Eystruper SK', text: '3' }]
+    - 14
+    - '23'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Rinteln', url: '?mannschaft=4764', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=971&r=9#p4764x4670', title: 'gegen SD Isernhagen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=971&r=4#p4764x4755', title: 'gegen SV Springe', text: 2½ }]
+    - [{ url: '?staffel=971&r=1#p4764x4780', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=971&r=7#p4764x4639', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=971&r=5#p4764x4751', title: 'gegen SK Neustadt', text: 2½ }]
+    - [{ url: '?staffel=971&r=8#p4764x4679', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=971&r=3#p4764x4756', title: 'gegen SV Springe 2', text: 3½ }]
+    - [{ url: '?staffel=971&r=6#p4764x4754', title: 'gegen Eystruper SK', text: 3½ }]
+    - 12
+    - '20'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Springe', url: '?mannschaft=4755', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=971&r=2#p4755x4670', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=971&r=4#p4755x4764', title: 'gegen SK Rinteln', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=971&r=3#p4755x4780', title: 'gegen SK Lehrte 4', text: '0' }]
+    - [{ url: '?staffel=971&r=9#p4755x4639', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=971&r=7#p4755x4751', title: 'gegen SK Neustadt', text: '2' }]
+    - [{ url: '?staffel=971&r=1#p4755x4679', title: 'gegen TuS Wunstorf', text: 3½ }]
+    - [{ url: '?staffel=971&r=5#p4755x4756', title: 'gegen SV Springe 2', text: '3' }]
+    - [{ url: '?staffel=971&r=8#p4755x4754', title: 'gegen Eystruper SK', text: '3' }]
+    - 10
+    - '17'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=4780', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=971&r=8#p4780x4670', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=971&r=1#p4780x4764', title: 'gegen SK Rinteln', text: '1' }]
+    - [{ url: '?staffel=971&r=3#p4780x4755', title: 'gegen SV Springe', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=971&r=6#p4780x4639', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=971&r=4#p4780x4751', title: 'gegen SK Neustadt', text: '0' }]
+    - [{ url: '?staffel=971&r=7#p4780x4679', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=971&r=2#p4780x4756', title: 'gegen SV Springe 2', text: 3½ }]
+    - [{ url: '?staffel=971&r=5#p4780x4754', title: 'gegen Eystruper SK', text: '4' }]
+    - 9
+    - 17½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=4639', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=971&r=5#p4639x4670', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=971&r=7#p4639x4764', title: 'gegen SK Rinteln', text: 2½ }]
+    - [{ url: '?staffel=971&r=9#p4639x4755', title: 'gegen SV Springe', text: '1' }]
+    - [{ url: '?staffel=971&r=6#p4639x4780', title: 'gegen SK Lehrte 4', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=971&r=1#p4639x4751', title: 'gegen SK Neustadt', text: '2' }]
+    - [{ url: '?staffel=971&r=4#p4639x4679', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=971&r=8#p4639x4756', title: 'gegen SV Springe 2', text: '2' }]
+    - [{ url: '?staffel=971&r=2#p4639x4754', title: 'gegen Eystruper SK', text: 2½ }]
+    - 9
+    - '16'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Neustadt', url: '?mannschaft=4751', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=971&r=3#p4751x4670', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=971&r=5#p4751x4764', title: 'gegen SK Rinteln', text: 1½ }]
+    - [{ url: '?staffel=971&r=7#p4751x4755', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=971&r=4#p4751x4780', title: 'gegen SK Lehrte 4', text: '0' }]
+    - [{ url: '?staffel=971&r=1#p4751x4639', title: 'gegen SK Ricklingen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=971&r=2#p4751x4679', title: 'gegen TuS Wunstorf', text: 1½ }]
+    - [{ url: '?staffel=971&r=6#p4751x4756', title: 'gegen SV Springe 2', text: '2' }]
+    - [{ url: '?staffel=971&r=9#p4751x4754', title: 'gegen Eystruper SK', text: 2½ }]
+    - 5
+    - 12½
+    - ''
+-
+    - '7.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=4679', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=971&r=6#p4679x4670', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=971&r=8#p4679x4764', title: 'gegen SK Rinteln', text: 1½ }]
+    - [{ url: '?staffel=971&r=1#p4679x4755', title: 'gegen SV Springe', text: ½ }]
+    - [{ url: '?staffel=971&r=7#p4679x4780', title: 'gegen SK Lehrte 4', text: '0' }]
+    - [{ url: '?staffel=971&r=4#p4679x4639', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=971&r=2#p4679x4751', title: 'gegen SK Neustadt', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=971&r=9#p4679x4756', title: 'gegen SV Springe 2', text: 1½ }]
+    - [{ url: '?staffel=971&r=3#p4679x4754', title: 'gegen Eystruper SK', text: '3' }]
+    - 4
+    - '10'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Springe 2', url: '?mannschaft=4756', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=971&r=1#p4756x4670', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=971&r=3#p4756x4764', title: 'gegen SK Rinteln', text: ½ }]
+    - [{ url: '?staffel=971&r=5#p4756x4755', title: 'gegen SV Springe', text: '1' }]
+    - [{ url: '?staffel=971&r=2#p4756x4780', title: 'gegen SK Lehrte 4', text: ½ }]
+    - [{ url: '?staffel=971&r=8#p4756x4639', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=971&r=6#p4756x4751', title: 'gegen SK Neustadt', text: '2' }]
+    - [{ url: '?staffel=971&r=9#p4756x4679', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=971&r=7#p4756x4754', title: 'gegen Eystruper SK', text: '2' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '9.'
+    - { text: 'Eystruper SK', url: '?mannschaft=4754', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=971&r=4#p4754x4670', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=971&r=6#p4754x4764', title: 'gegen SK Rinteln', text: ½ }]
+    - [{ url: '?staffel=971&r=8#p4754x4755', title: 'gegen SV Springe', text: '1' }]
+    - [{ url: '?staffel=971&r=5#p4754x4780', title: 'gegen SK Lehrte 4', text: '0' }]
+    - [{ url: '?staffel=971&r=2#p4754x4639', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=971&r=9#p4754x4751', title: 'gegen SK Neustadt', text: ½ }]
+    - [{ url: '?staffel=971&r=3#p4754x4679', title: 'gegen TuS Wunstorf', text: '1' }]
+    - [{ url: '?staffel=971&r=7#p4754x4756', title: 'gegen SV Springe 2', text: '2' }]
+    - xxx
+    - 1
+    - 7½
+    - ''

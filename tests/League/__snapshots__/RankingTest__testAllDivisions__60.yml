@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lister Turm 3', url: '?mannschaft=779', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=459&r=3#p779x777', title: 'gegen Turm Hannover 2', text: 6½ }]
+    - [{ url: '?staffel=459&r=5#p779x908', title: 'gegen PSC Hannover 4', text: 4½ }]
+    - [{ url: '?staffel=459&r=4#p779x905', title: 'gegen SK Anderten 2', text: '7' }]
+    - [{ url: '?staffel=459&r=7#p779x769', title: 'gegen SD Isernhagen 2', text: '5' }]
+    - [{ url: '?staffel=459&r=6#p779x924', title: 'gegen Uetze-Hänigsen 2', text: 5½ }]
+    - [{ url: '?staffel=459&r=2#p779x785', title: 'gegen SK Döhren', text: 2½ }]
+    - [{ url: '?staffel=459&r=1#p779x767', title: 'gegen SK Lehrte 5', text: 4½ }]
+    - 12
+    - 35½
+    - ''
+-
+    - '2.'
+    - { text: 'Turm Hannover 2', url: '?mannschaft=777', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=459&r=3#p777x779', title: 'gegen SK Lister Turm 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=459&r=7#p777x908', title: 'gegen PSC Hannover 4', text: '4' }]
+    - [{ url: '?staffel=459&r=5#p777x905', title: 'gegen SK Anderten 2', text: '5' }]
+    - [{ url: '?staffel=459&r=4#p777x769', title: 'gegen SD Isernhagen 2', text: 4½ }]
+    - [{ url: '?staffel=459&r=2#p777x924', title: 'gegen Uetze-Hänigsen 2', text: 4½ }]
+    - [{ url: '?staffel=459&r=1#p777x785', title: 'gegen SK Döhren', text: '4' }]
+    - [{ url: '?staffel=459&r=6#p777x767', title: 'gegen SK Lehrte 5', text: '7' }]
+    - 10
+    - 30½
+    - ''
+-
+    - '3.'
+    - { text: 'PSC Hannover 4', url: '?mannschaft=908', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=459&r=5#p908x779', title: 'gegen SK Lister Turm 3', text: 3½ }]
+    - [{ url: '?staffel=459&r=7#p908x777', title: 'gegen Turm Hannover 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=459&r=6#p908x905', title: 'gegen SK Anderten 2', text: 3½ }]
+    - [{ url: '?staffel=459&r=2#p908x769', title: 'gegen SD Isernhagen 2', text: 4½ }]
+    - [{ url: '?staffel=459&r=1#p908x924', title: 'gegen Uetze-Hänigsen 2', text: '5' }]
+    - [{ url: '?staffel=459&r=4#p908x785', title: 'gegen SK Döhren', text: '5' }]
+    - [{ url: '?staffel=459&r=3#p908x767', title: 'gegen SK Lehrte 5', text: 5½ }]
+    - 9
+    - '31'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=905', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=459&r=4#p905x779', title: 'gegen SK Lister Turm 3', text: '1' }]
+    - [{ url: '?staffel=459&r=5#p905x777', title: 'gegen Turm Hannover 2', text: '2' }]
+    - [{ url: '?staffel=459&r=6#p905x908', title: 'gegen PSC Hannover 4', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=459&r=1#p905x769', title: 'gegen SD Isernhagen 2', text: 4½ }]
+    - [{ url: '?staffel=459&r=7#p905x924', title: 'gegen Uetze-Hänigsen 2', text: '3' }]
+    - [{ url: '?staffel=459&r=3#p905x785', title: 'gegen SK Döhren', text: '5' }]
+    - [{ url: '?staffel=459&r=2#p905x767', title: 'gegen SK Lehrte 5', text: '5' }]
+    - 8
+    - '25'
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=769', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=459&r=7#p769x779', title: 'gegen SK Lister Turm 3', text: '3' }]
+    - [{ url: '?staffel=459&r=4#p769x777', title: 'gegen Turm Hannover 2', text: 3½ }]
+    - [{ url: '?staffel=459&r=2#p769x908', title: 'gegen PSC Hannover 4', text: 3½ }]
+    - [{ url: '?staffel=459&r=1#p769x905', title: 'gegen SK Anderten 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=459&r=3#p769x924', title: 'gegen Uetze-Hänigsen 2', text: '5' }]
+    - [{ url: '?staffel=459&r=6#p769x785', title: 'gegen SK Döhren', text: '6' }]
+    - [{ url: '?staffel=459&r=5#p769x767', title: 'gegen SK Lehrte 5', text: '6' }]
+    - 6
+    - 30½
+    - ''
+-
+    - '6.'
+    - { text: 'Uetze-Hänigsen 2', url: '?mannschaft=924', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=459&r=6#p924x779', title: 'gegen SK Lister Turm 3', text: 2½ }]
+    - [{ url: '?staffel=459&r=2#p924x777', title: 'gegen Turm Hannover 2', text: 3½ }]
+    - [{ url: '?staffel=459&r=1#p924x908', title: 'gegen PSC Hannover 4', text: '3' }]
+    - [{ url: '?staffel=459&r=7#p924x905', title: 'gegen SK Anderten 2', text: '5' }]
+    - [{ url: '?staffel=459&r=3#p924x769', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=459&r=5#p924x785', title: 'gegen SK Döhren', text: 4½ }]
+    - [{ url: '?staffel=459&r=4#p924x767', title: 'gegen SK Lehrte 5', text: '5' }]
+    - 6
+    - 26½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Döhren', url: '?mannschaft=785', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=459&r=2#p785x779', title: 'gegen SK Lister Turm 3', text: 5½ }]
+    - [{ url: '?staffel=459&r=1#p785x777', title: 'gegen Turm Hannover 2', text: '4' }]
+    - [{ url: '?staffel=459&r=4#p785x908', title: 'gegen PSC Hannover 4', text: '3' }]
+    - [{ url: '?staffel=459&r=3#p785x905', title: 'gegen SK Anderten 2', text: '2' }]
+    - [{ url: '?staffel=459&r=6#p785x769', title: 'gegen SD Isernhagen 2', text: '2' }]
+    - [{ url: '?staffel=459&r=5#p785x924', title: 'gegen Uetze-Hänigsen 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=459&r=7#p785x767', title: 'gegen SK Lehrte 5', text: 4½ }]
+    - 5
+    - 24½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Lehrte 5', url: '?mannschaft=767', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=459&r=1#p767x779', title: 'gegen SK Lister Turm 3', text: 2½ }]
+    - [{ url: '?staffel=459&r=6#p767x777', title: 'gegen Turm Hannover 2', text: '1' }]
+    - [{ url: '?staffel=459&r=3#p767x908', title: 'gegen PSC Hannover 4', text: 2½ }]
+    - [{ url: '?staffel=459&r=2#p767x905', title: 'gegen SK Anderten 2', text: '3' }]
+    - [{ url: '?staffel=459&r=5#p767x769', title: 'gegen SD Isernhagen 2', text: '2' }]
+    - [{ url: '?staffel=459&r=4#p767x924', title: 'gegen Uetze-Hänigsen 2', text: '3' }]
+    - [{ url: '?staffel=459&r=7#p767x785', title: 'gegen SK Döhren', text: 3½ }]
+    - xxx
+    - 0
+    - 17½
+    - ''

@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Rinteln 3', url: '?mannschaft=2604', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=658&r=2#p2604x2642', title: 'gegen SV Berenbostel 3', text: '3' }, { url: '?staffel=658&r=6#p2604x2642', title: 'gegen SV Berenbostel 3', text: 3½ }]
+    - [{ url: '?staffel=658&r=1#p2604x2374', title: 'gegen Barsinghausen 4', text: '1' }, { url: '?staffel=658&r=4#p2604x2374', title: 'gegen Barsinghausen 4', text: 3½ }]
+    - [{ url: '?staffel=658&r=3#p2604x2651', title: 'gegen SK Ricklingen 3', text: '4' }, { url: '?staffel=658&r=5#p2604x2651', title: 'gegen SK Ricklingen 3', text: '1' }]
+    - 8
+    - '16'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Berenbostel 3', url: '?mannschaft=2642', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=658&r=2#p2642x2604', title: 'gegen SK Rinteln 3', text: '1' }, { url: '?staffel=658&r=6#p2642x2604', title: 'gegen SK Rinteln 3', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=658&r=3#p2642x2374', title: 'gegen Barsinghausen 4', text: '3' }, { url: '?staffel=658&r=5#p2642x2374', title: 'gegen Barsinghausen 4', text: '3' }]
+    - [{ url: '?staffel=658&r=1#p2642x2651', title: 'gegen SK Ricklingen 3', text: '2' }, { url: '?staffel=658&r=4#p2642x2651', title: 'gegen SK Ricklingen 3', text: '4' }]
+    - 7
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'Barsinghausen 4', url: '?mannschaft=2374', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=658&r=1#p2374x2604', title: 'gegen SK Rinteln 3', text: '3' }, { url: '?staffel=658&r=4#p2374x2604', title: 'gegen SK Rinteln 3', text: ½ }]
+    - [{ url: '?staffel=658&r=3#p2374x2642', title: 'gegen SV Berenbostel 3', text: '1' }, { url: '?staffel=658&r=5#p2374x2642', title: 'gegen SV Berenbostel 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=658&r=2#p2374x2651', title: 'gegen SK Ricklingen 3', text: '4' }, { url: '?staffel=658&r=6#p2374x2651', title: 'gegen SK Ricklingen 3', text: '4' }]
+    - 6
+    - 13½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Ricklingen 3', url: '?mannschaft=2651', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=658&r=3#p2651x2604', title: 'gegen SK Rinteln 3', text: '0' }, { url: '?staffel=658&r=5#p2651x2604', title: 'gegen SK Rinteln 3', text: '3' }]
+    - [{ url: '?staffel=658&r=1#p2651x2642', title: 'gegen SV Berenbostel 3', text: '2' }, { url: '?staffel=658&r=4#p2651x2642', title: 'gegen SV Berenbostel 3', text: '0' }]
+    - [{ url: '?staffel=658&r=2#p2651x2374', title: 'gegen Barsinghausen 4', text: '0' }, { url: '?staffel=658&r=6#p2651x2374', title: 'gegen Barsinghausen 4', text: '0' }]
+    - xxx
+    - 3
+    - '5'
+    - ''

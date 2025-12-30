@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=3483', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=795&r=8#p3483x3584', title: 'gegen SV Berenbostel 2', text: 5½ }]
+    - [{ url: '?staffel=795&r=6#p3483x3560', title: 'gegen SK Stolzenau', text: '2' }]
+    - [{ url: '?staffel=795&r=4#p3483x3453', title: 'gegen SG Garbsen/Marienw', text: 3½ }]
+    - [{ url: '?staffel=795&r=1#p3483x3475', title: 'gegen Turm Hannover', text: 7½ }]
+    - [{ url: '?staffel=795&r=5#p3483x3590', title: 'gegen SK Ricklingen', text: '6' }]
+    - [{ url: '?staffel=795&r=9#p3483x3565', title: 'gegen SF Hannover 3', text: '7' }]
+    - [{ url: '?staffel=795&r=7#p3483x3367', title: 'gegen SVg Steinhude', text: '4' }]
+    - [{ url: '?staffel=795&r=3#p3483x3410', title: 'gegen SK Neustadt', text: '6' }]
+    - [{ url: '?staffel=795&r=2#p3483x3359', title: 'gegen SC Hämelerwald', text: '6' }]
+    - 13
+    - 47½
+    - ''
+-
+    - '2.'
+    - { text: 'SV Berenbostel 2', url: '?mannschaft=3584', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=795&r=8#p3584x3483', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=795&r=4#p3584x3560', title: 'gegen SK Stolzenau', text: 4½ }]
+    - [{ url: '?staffel=795&r=2#p3584x3453', title: 'gegen SG Garbsen/Marienw', text: 4½ }]
+    - [{ url: '?staffel=795&r=6#p3584x3475', title: 'gegen Turm Hannover', text: '5' }]
+    - [{ url: '?staffel=795&r=3#p3584x3590', title: 'gegen SK Ricklingen', text: '4' }]
+    - [{ url: '?staffel=795&r=7#p3584x3565', title: 'gegen SF Hannover 3', text: '4' }]
+    - [{ url: '?staffel=795&r=5#p3584x3367', title: 'gegen SVg Steinhude', text: 4½ }]
+    - [{ url: '?staffel=795&r=1#p3584x3410', title: 'gegen SK Neustadt', text: '4' }]
+    - [{ url: '?staffel=795&r=9#p3584x3359', title: 'gegen SC Hämelerwald', text: 4½ }]
+    - 13
+    - 37½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=3560', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=795&r=6#p3560x3483', title: 'gegen SK Lehrte 2', text: '6' }]
+    - [{ url: '?staffel=795&r=4#p3560x3584', title: 'gegen SV Berenbostel 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=795&r=9#p3560x3453', title: 'gegen SG Garbsen/Marienw', text: 4½ }]
+    - [{ url: '?staffel=795&r=2#p3560x3475', title: 'gegen Turm Hannover', text: 3½ }]
+    - [{ url: '?staffel=795&r=1#p3560x3590', title: 'gegen SK Ricklingen', text: 5½ }]
+    - [{ url: '?staffel=795&r=5#p3560x3565', title: 'gegen SF Hannover 3', text: '4' }]
+    - [{ url: '?staffel=795&r=3#p3560x3367', title: 'gegen SVg Steinhude', text: '5' }]
+    - [{ url: '?staffel=795&r=8#p3560x3410', title: 'gegen SK Neustadt', text: '4' }]
+    - [{ url: '?staffel=795&r=7#p3560x3359', title: 'gegen SC Hämelerwald', text: '6' }]
+    - 12
+    - '42'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Garbsen/Marienw', url: '?mannschaft=3453', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=795&r=4#p3453x3483', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - [{ url: '?staffel=795&r=2#p3453x3584', title: 'gegen SV Berenbostel 2', text: 3½ }]
+    - [{ url: '?staffel=795&r=9#p3453x3560', title: 'gegen SK Stolzenau', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=795&r=7#p3453x3475', title: 'gegen Turm Hannover', text: '5' }]
+    - [{ url: '?staffel=795&r=8#p3453x3590', title: 'gegen SK Ricklingen', text: 2½ }]
+    - [{ url: '?staffel=795&r=3#p3453x3565', title: 'gegen SF Hannover 3', text: '6' }]
+    - [{ url: '?staffel=795&r=1#p3453x3367', title: 'gegen SVg Steinhude', text: '2' }]
+    - [{ url: '?staffel=795&r=6#p3453x3410', title: 'gegen SK Neustadt', text: '6' }]
+    - [{ url: '?staffel=795&r=5#p3453x3359', title: 'gegen SC Hämelerwald', text: 4½ }]
+    - 10
+    - 37½
+    - ''
+-
+    - '5.'
+    - { text: 'Turm Hannover', url: '?mannschaft=3475', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=795&r=1#p3475x3483', title: 'gegen SK Lehrte 2', text: ½ }]
+    - [{ url: '?staffel=795&r=6#p3475x3584', title: 'gegen SV Berenbostel 2', text: '3' }]
+    - [{ url: '?staffel=795&r=2#p3475x3560', title: 'gegen SK Stolzenau', text: 4½ }]
+    - [{ url: '?staffel=795&r=7#p3475x3453', title: 'gegen SG Garbsen/Marienw', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=795&r=9#p3475x3590', title: 'gegen SK Ricklingen', text: '4' }]
+    - [{ url: '?staffel=795&r=8#p3475x3565', title: 'gegen SF Hannover 3', text: 4½ }]
+    - [{ url: '?staffel=795&r=4#p3475x3367', title: 'gegen SVg Steinhude', text: '4' }]
+    - [{ url: '?staffel=795&r=5#p3475x3410', title: 'gegen SK Neustadt', text: '6' }]
+    - [{ url: '?staffel=795&r=3#p3475x3359', title: 'gegen SC Hämelerwald', text: 5½ }]
+    - 10
+    - '35'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=3590', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=795&r=5#p3590x3483', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=795&r=3#p3590x3584', title: 'gegen SV Berenbostel 2', text: '4' }]
+    - [{ url: '?staffel=795&r=1#p3590x3560', title: 'gegen SK Stolzenau', text: 2½ }]
+    - [{ url: '?staffel=795&r=8#p3590x3453', title: 'gegen SG Garbsen/Marienw', text: 5½ }]
+    - [{ url: '?staffel=795&r=9#p3590x3475', title: 'gegen Turm Hannover', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=795&r=4#p3590x3565', title: 'gegen SF Hannover 3', text: '4' }]
+    - [{ url: '?staffel=795&r=2#p3590x3367', title: 'gegen SVg Steinhude', text: 6½ }]
+    - [{ url: '?staffel=795&r=7#p3590x3410', title: 'gegen SK Neustadt', text: 3½ }]
+    - [{ url: '?staffel=795&r=6#p3590x3359', title: 'gegen SC Hämelerwald', text: '8' }]
+    - 9
+    - '40'
+    - ''
+-
+    - '7.'
+    - { text: 'SF Hannover 3', url: '?mannschaft=3565', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=795&r=9#p3565x3483', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=795&r=7#p3565x3584', title: 'gegen SV Berenbostel 2', text: '4' }]
+    - [{ url: '?staffel=795&r=5#p3565x3560', title: 'gegen SK Stolzenau', text: '4' }]
+    - [{ url: '?staffel=795&r=3#p3565x3453', title: 'gegen SG Garbsen/Marienw', text: '2' }]
+    - [{ url: '?staffel=795&r=8#p3565x3475', title: 'gegen Turm Hannover', text: 3½ }]
+    - [{ url: '?staffel=795&r=4#p3565x3590', title: 'gegen SK Ricklingen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=795&r=6#p3565x3367', title: 'gegen SVg Steinhude', text: 5½ }]
+    - [{ url: '?staffel=795&r=2#p3565x3410', title: 'gegen SK Neustadt', text: '5' }]
+    - [{ url: '?staffel=795&r=1#p3565x3359', title: 'gegen SC Hämelerwald', text: 6½ }]
+    - 9
+    - 35½
+    - ''
+-
+    - '8.'
+    - { text: 'SVg Steinhude', url: '?mannschaft=3367', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=795&r=7#p3367x3483', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=795&r=5#p3367x3584', title: 'gegen SV Berenbostel 2', text: 3½ }]
+    - [{ url: '?staffel=795&r=3#p3367x3560', title: 'gegen SK Stolzenau', text: '3' }]
+    - [{ url: '?staffel=795&r=1#p3367x3453', title: 'gegen SG Garbsen/Marienw', text: '6' }]
+    - [{ url: '?staffel=795&r=4#p3367x3475', title: 'gegen Turm Hannover', text: '4' }]
+    - [{ url: '?staffel=795&r=2#p3367x3590', title: 'gegen SK Ricklingen', text: 1½ }]
+    - [{ url: '?staffel=795&r=6#p3367x3565', title: 'gegen SF Hannover 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=795&r=9#p3367x3410', title: 'gegen SK Neustadt', text: '5' }]
+    - [{ url: '?staffel=795&r=8#p3367x3359', title: 'gegen SC Hämelerwald', text: 4½ }]
+    - 8
+    - '34'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Neustadt', url: '?mannschaft=3410', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=795&r=3#p3410x3483', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=795&r=1#p3410x3584', title: 'gegen SV Berenbostel 2', text: '4' }]
+    - [{ url: '?staffel=795&r=8#p3410x3560', title: 'gegen SK Stolzenau', text: '4' }]
+    - [{ url: '?staffel=795&r=6#p3410x3453', title: 'gegen SG Garbsen/Marienw', text: '2' }]
+    - [{ url: '?staffel=795&r=5#p3410x3475', title: 'gegen Turm Hannover', text: '2' }]
+    - [{ url: '?staffel=795&r=7#p3410x3590', title: 'gegen SK Ricklingen', text: 4½ }]
+    - [{ url: '?staffel=795&r=2#p3410x3565', title: 'gegen SF Hannover 3', text: '3' }]
+    - [{ url: '?staffel=795&r=9#p3410x3367', title: 'gegen SVg Steinhude', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=795&r=4#p3410x3359', title: 'gegen SC Hämelerwald', text: '5' }]
+    - 6
+    - 29½
+    - ''
+-
+    - '10.'
+    - { text: 'SC Hämelerwald', url: '?mannschaft=3359', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=795&r=2#p3359x3483', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=795&r=9#p3359x3584', title: 'gegen SV Berenbostel 2', text: 3½ }]
+    - [{ url: '?staffel=795&r=7#p3359x3560', title: 'gegen SK Stolzenau', text: '2' }]
+    - [{ url: '?staffel=795&r=5#p3359x3453', title: 'gegen SG Garbsen/Marienw', text: 3½ }]
+    - [{ url: '?staffel=795&r=3#p3359x3475', title: 'gegen Turm Hannover', text: 2½ }]
+    - [{ url: '?staffel=795&r=6#p3359x3590', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=795&r=1#p3359x3565', title: 'gegen SF Hannover 3', text: 1½ }]
+    - [{ url: '?staffel=795&r=8#p3359x3367', title: 'gegen SVg Steinhude', text: 3½ }]
+    - [{ url: '?staffel=795&r=4#p3359x3410', title: 'gegen SK Neustadt', text: '3' }]
+    - xxx
+    - 0
+    - 21½
+    - ''

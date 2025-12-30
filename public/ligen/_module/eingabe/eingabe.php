@@ -1,4 +1,4 @@
-<?
+<?php
 /* Ergebniseingabe
  *
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -43,8 +43,8 @@
 
   // Daten über Paarung und Staffelleiter abfragen
   global $g_paarung, $g_leiter, $g_m1, $g_m2, $g_edit;
-  $g_paarung = mysql_fetch_array ( mysql_query ( "SELECT *, erg1 IS NOT NULL as isset FROM paarungen WHERE id=$_GET[pid]", $globals ['db'] ), MYSQL_ASSOC );
-  $g_leiter = mysql_fetch_array ( mysql_query ( "SELECT b.id, b.name, b.telefon, b.email FROM staffeln INNER JOIN benutzer as b ON b.id=staffeln.leiter WHERE staffeln.id=$g_paarung[staffel] AND staffeln.turnier=$globals[tid]", $globals ['db'] ), MYSQL_ASSOC );
+  $g_paarung = SED_Row('SELECT *, erg1 IS NOT NULL as isset FROM paarungen WHERE id=?', [$_GET['pid']]);
+  $g_leiter = SED_Row('SELECT b.id, b.name, b.telefon, b.email FROM staffeln INNER JOIN benutzer as b ON b.id=staffeln.leiter WHERE staffeln.id=? AND staffeln.turnier=?', [$g_paarung['staffel'], $globals['tid']]);
 
   // Daten über die Mannschaften abfragen
   $g_m1 = new SED_Mannschaft ( $g_paarung ['mannschaft1'] );
@@ -61,9 +61,10 @@
   $g_edit = array ();
   if ( $g_paarung ['isset'] )
   {
-    $result = mysql_query ( "SELECT brett, ergebnis1, ergebnis2, spieler1, spieler2 FROM spielerpaarungen WHERE paarung=$_GET[pid] ORDER BY brett", $globals ['db'] );
-    while ( $temp = mysql_fetch_array ( $result, MYSQL_ASSOC ) )
-      $g_edit [$temp ['brett']] = $temp;
+    $games = SED_Query('SELECT brett, ergebnis1, ergebnis2, spieler1, spieler2 FROM spielerpaarungen WHERE paarung=? ORDER BY brett', [$_GET['pid']])->fetchAllAssociative();
+    foreach ($games as $game) {
+      $g_edit[$game['brett']] = $game;
+    }
   }
 
 
@@ -103,20 +104,17 @@
       // ALTE SPIELERPAARUNGEN LÖSCHEN
       ////////////////////////////////////////////////////////////////
 
-      if ( $g_paarung ['isset'] )
-        if ( !mysql_query ( "DELETE FROM spielerpaarungen WHERE paarung=$_GET[pid]", $globals ['db'] ) )
-          SED_Error ( "Fehler beim L&ouml;schen der alten Spielerpaarungen.", true );
-
+      if ( $g_paarung ['isset'] ) {
+        SED_Query('DELETE FROM spielerpaarungen WHERE paarung=?', [$_GET['pid']]);
+      }
 
       ////////////////////////////////////////////////////////////////
       // BEMERKUNGEN & GESAMTERGEBNIS
       ////////////////////////////////////////////////////////////////
 
       $bemerkung = htmlspecialchars ( $_POST ['bemerkungen'], ENT_COMPAT | ENT_HTML401 , 'ISO-8859-1');
-      $bemerkung = ( $bemerkung == "" ? "NULL" : "'$bemerkung'" );
-      if ( !mysql_query ( "UPDATE paarungen SET erg1='$_POST[gesheim]', erg2='$_POST[gesgast]', bemerkung=$bemerkung, timestamp=NOW() WHERE id=$_GET[pid]", $globals ['db'] ) )
-        SED_Error ( "Fehler beim Speichern der Bemerkung und des Gesamtergebnisses!", true );
-
+      $bemerkung = ( $bemerkung == "" ? null : $bemerkung );
+      SED_Query('UPDATE paarungen SET erg1=?, erg2=?, bemerkung=?, timestamp=NOW() WHERE id=?', [$_POST['gesheim'], $_POST['gesgast'], $bemerkung, $_GET['pid']]);
 
       ////////////////////////////////////////////////////////////////
       // NACHMELDUNGEN UND ERGEBNISSE SPEICHERN
@@ -156,9 +154,9 @@
         }
 
         // Spielerpaarung speichern
-        $s1 = ( $_POST ["spiheim$i"][0] == "x" ? "NULL" : substr ( $_POST ["spiheim$i"], 1 ) );
-        $s2 = ( $_POST ["spigast$i"][0] == "x" ? "NULL" : substr ( $_POST ["spigast$i"], 1 ) );
-        mysql_query ( "INSERT INTO spielerpaarungen (paarung,brett,spieler1,spieler2,ergebnis1,ergebnis2) VALUES ($_GET[pid], $i, $s1, $s2, '".$_POST ["ergheim$i"]."', '".$_POST ["erggast$i"]."' )", $globals ['db'] );
+        $s1 = ( $_POST ["spiheim$i"][0] == "x" ? null : substr ( $_POST ["spiheim$i"], 1 ) );
+        $s2 = ( $_POST ["spigast$i"][0] == "x" ? null : substr ( $_POST ["spigast$i"], 1 ) );
+        SED_Query('INSERT INTO spielerpaarungen (paarung,brett,spieler1,spieler2,ergebnis1,ergebnis2) VALUES (?, ?, ?, ?, ?, ?)', [$_GET['pid'], $i, $s1, $s2, $_POST ["ergheim$i"], $_POST ["erggast$i"]]);
       }
       SED_Cache::clearAll ( $g_paarung ["staffel"] );
       SED_Cache::clearTeam ( 0, SED_Cache::TEAM_SPIELPLAN );

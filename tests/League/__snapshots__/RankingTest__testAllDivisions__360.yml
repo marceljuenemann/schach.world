@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Springe 2', url: '?mannschaft=3503', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=801&r=1#p3503x3594', title: 'gegen SK Rinteln 3', text: '3' }, { url: '?staffel=801&r=6#p3503x3594', title: 'gegen SK Rinteln 3', text: '2' }]
+    - [{ url: '?staffel=801&r=3#p3503x3473', title: 'gegen SF Sulingen 2', text: 2½ }, { url: '?staffel=801&r=5#p3503x3473', title: 'gegen SF Sulingen 2', text: '3' }]
+    - 7
+    - 10½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Rinteln 3', url: '?mannschaft=3594', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=801&r=1#p3594x3503', title: 'gegen SV Springe 2', text: '1' }, { url: '?staffel=801&r=6#p3594x3503', title: 'gegen SV Springe 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=801&r=2#p3594x3473', title: 'gegen SF Sulingen 2', text: '3' }, { url: '?staffel=801&r=4#p3594x3473', title: 'gegen SF Sulingen 2', text: 1½ }]
+    - 3
+    - 7½
+    - ''
+-
+    - '3.'
+    - { text: 'SF Sulingen 2', url: '?mannschaft=3473', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=801&r=3#p3473x3503', title: 'gegen SV Springe 2', text: 1½ }, { url: '?staffel=801&r=5#p3473x3503', title: 'gegen SV Springe 2', text: '1' }]
+    - [{ url: '?staffel=801&r=2#p3473x3594', title: 'gegen SK Rinteln 3', text: '1' }, { url: '?staffel=801&r=4#p3473x3594', title: 'gegen SK Rinteln 3', text: 2½ }]
+    - xxx
+    - 2
+    - '6'
+    - ''

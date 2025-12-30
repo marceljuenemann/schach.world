@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Spelle 4', url: '?mannschaft=3082', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=772&r=1#p3082x3084', title: 'gegen SV Lingen 5', text: '2' }, { url: '?staffel=772&r=4#p3082x3084', title: 'gegen SV Lingen 5', text: '3' }]
+    - [{ url: '?staffel=772&r=2#p3082x3083', title: 'gegen Veldhausen/Uel. 4', text: '4' }, { url: '?staffel=772&r=5#p3082x3083', title: 'gegen Veldhausen/Uel. 4', text: '1' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Lingen 5', url: '?mannschaft=3084', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=772&r=1#p3084x3082', title: 'gegen SF Spelle 4', text: '2' }, { url: '?staffel=772&r=4#p3084x3082', title: 'gegen SF Spelle 4', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=772&r=3#p3084x3083', title: 'gegen Veldhausen/Uel. 4', text: '3' }, { url: '?staffel=772&r=6#p3084x3083', title: 'gegen Veldhausen/Uel. 4', text: '2' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '3.'
+    - { text: 'Veldhausen/Uel. 4', url: '?mannschaft=3083', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=772&r=2#p3083x3082', title: 'gegen SF Spelle 4', text: '0' }, { url: '?staffel=772&r=5#p3083x3082', title: 'gegen SF Spelle 4', text: '3' }]
+    - [{ url: '?staffel=772&r=3#p3083x3084', title: 'gegen SV Lingen 5', text: '1' }, { url: '?staffel=772&r=6#p3083x3084', title: 'gegen SV Lingen 5', text: '2' }]
+    - xxx
+    - 3
+    - '6'
+    - ''

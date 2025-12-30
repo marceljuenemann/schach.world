@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Delmenhorster SK', url: '?mannschaft=2371', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=645&r=3#p2371x2507', title: 'gegen Hamburger SK 2', text: 3½ }]
+    - [{ url: '?staffel=645&r=5#p2371x2418', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=645&r=2#p2371x2441', title: 'gegen SK Nordhorn-Bl.', text: '4' }]
+    - [{ url: '?staffel=645&r=4#p2371x2417', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=645&r=1#p2371x2351', title: 'gegen Barsinghausen', text: '4' }]
+    - 10
+    - '18'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamburger SK 2', url: '?mannschaft=2507', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=645&r=3#p2507x2371', title: 'gegen Delmenhorster SK', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=645&r=4#p2507x2418', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=645&r=5#p2507x2441', title: 'gegen SK Nordhorn-Bl.', text: '0' }]
+    - [{ url: '?staffel=645&r=1#p2507x2417', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - [{ url: '?staffel=645&r=2#p2507x2351', title: 'gegen Barsinghausen', text: '4' }]
+    - 6
+    - '10'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=2418', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=645&r=5#p2418x2371', title: 'gegen Delmenhorster SK', text: 1½ }]
+    - [{ url: '?staffel=645&r=4#p2418x2507', title: 'gegen Hamburger SK 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=645&r=1#p2418x2441', title: 'gegen SK Nordhorn-Bl.', text: '4' }]
+    - [{ url: '?staffel=645&r=2#p2418x2417', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=645&r=3#p2418x2351', title: 'gegen Barsinghausen', text: '3' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Bl.', url: '?mannschaft=2441', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=645&r=2#p2441x2371', title: 'gegen Delmenhorster SK', text: '0' }]
+    - [{ url: '?staffel=645&r=5#p2441x2507', title: 'gegen Hamburger SK 2', text: '4' }]
+    - [{ url: '?staffel=645&r=1#p2441x2418', title: 'gegen SK Lehrte 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=645&r=3#p2441x2417', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=645&r=4#p2441x2351', title: 'gegen Barsinghausen', text: '2' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=2417', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=645&r=4#p2417x2371', title: 'gegen Delmenhorster SK', text: '0' }]
+    - [{ url: '?staffel=645&r=1#p2417x2507', title: 'gegen Hamburger SK 2', text: 1½ }]
+    - [{ url: '?staffel=645&r=2#p2417x2418', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=645&r=3#p2417x2441', title: 'gegen SK Nordhorn-Bl.', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=645&r=5#p2417x2351', title: 'gegen Barsinghausen', text: '4' }]
+    - 3
+    - 7½
+    - absteiger
+-
+    - '6.'
+    - { text: Barsinghausen, url: '?mannschaft=2351', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=645&r=1#p2351x2371', title: 'gegen Delmenhorster SK', text: '0' }]
+    - [{ url: '?staffel=645&r=2#p2351x2507', title: 'gegen Hamburger SK 2', text: '0' }]
+    - [{ url: '?staffel=645&r=3#p2351x2418', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=645&r=4#p2351x2441', title: 'gegen SK Nordhorn-Bl.', text: '2' }]
+    - [{ url: '?staffel=645&r=5#p2351x2417', title: 'gegen SK Lehrte 2', text: '0' }]
+    - xxx
+    - 1
+    - '3'
+    - absteiger

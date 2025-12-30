@@ -6,6 +6,7 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Entity\CacheEntry;
 use Nsv\League\Entity\Division;
+use Nsv\League\Entity\League;
 
 /**
  * @extends ServiceEntityRepository<CacheEntry>
@@ -21,6 +22,9 @@ class CacheRepository extends ServiceEntityRepository
    * by invoking the callback function and then stored in the cache.
    */
   public function getOrCompute(string $type, Division $division, int $round, callable $callback): mixed {
+    // Experimenting without a cache.
+    return $callback();
+    /*
     $val = $this->get($type, $division, $round);
     if ($val) return $val;
     $val = $callback();
@@ -31,10 +35,12 @@ class CacheRepository extends ServiceEntityRepository
     $entry->round = $round;
     $entry->type = $type;
     $entry->value = serialize($val);
-    $this->getEntityManager()->persist($entry);
-    $this->getEntityManager()->flush();
-
+    if (strlen($entry->value) < 65000) {  // Fix for too large cache entries.
+      $this->getEntityManager()->persist($entry);
+      $this->getEntityManager()->flush();
+    }
     return $val;
+    */
   }
 
   public function get(string $type, Division $division, int $round): mixed {
@@ -45,5 +51,15 @@ class CacheRepository extends ServiceEntityRepository
     ]);
     if (!count($entries)) return null;
     return unserialize($entries[0]->value);
+  }
+
+  // TODO: Delete once ranking is moved to the new system.
+  public function clearCache(League $league) {
+    $this->createQueryBuilder('c')
+      ->delete()
+      ->where('c.league = :league')
+      ->setParameter('league', $league)
+      ->getQuery()
+      ->execute();
   }
 }

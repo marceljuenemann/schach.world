@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=7367', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1654&r=7#p7367x7345', title: 'gegen ESV Göttingen 4', text: '5' }]
+    - [{ url: '?staffel=1654&r=2#p7367x7349', title: 'gegen SK Goslar 2', text: 3½ }]
+    - [{ url: '?staffel=1654&r=5#p7367x7339', title: 'gegen Hamelner SV 5', text: '4' }]
+    - [{ url: '?staffel=1654&r=3#p7367x7369', title: 'gegen WSV Clausthal', text: 2½ }]
+    - [{ url: '?staffel=1654&r=1#p7367x7370', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=1654&r=6#p7367x7347', title: 'gegen Hildesheimer SV 4', text: '5' }]
+    - [{ url: '?staffel=1654&r=4#p7367x7359', title: 'gegen Plesse Bovenden 3', text: '5' }]
+    - 12
+    - '29'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'ESV Göttingen 4', url: '?mannschaft=7345', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1654&r=7#p7345x7367', title: 'gegen SC Langelsheim', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1654&r=6#p7345x7349', title: 'gegen SK Goslar 2', text: 3½ }]
+    - [{ url: '?staffel=1654&r=1#p7345x7339', title: 'gegen Hamelner SV 5', text: '4' }]
+    - [{ url: '?staffel=1654&r=2#p7345x7369', title: 'gegen WSV Clausthal', text: '4' }]
+    - [{ url: '?staffel=1654&r=5#p7345x7370', title: 'gegen Tempo Göttingen 2', text: 3½ }]
+    - [{ url: '?staffel=1654&r=4#p7345x7347', title: 'gegen Hildesheimer SV 4', text: 2½ }]
+    - [{ url: '?staffel=1654&r=3#p7345x7359', title: 'gegen Plesse Bovenden 3', text: '3' }]
+    - 9
+    - 21½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=7349', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1654&r=2#p7349x7367', title: 'gegen SC Langelsheim', text: 2½ }]
+    - [{ url: '?staffel=1654&r=6#p7349x7345', title: 'gegen ESV Göttingen 4', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1654&r=7#p7349x7339', title: 'gegen Hamelner SV 5', text: '6' }]
+    - [{ url: '?staffel=1654&r=4#p7349x7369', title: 'gegen WSV Clausthal', text: '4' }]
+    - [{ url: '?staffel=1654&r=3#p7349x7370', title: 'gegen Tempo Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1654&r=5#p7349x7347', title: 'gegen Hildesheimer SV 4', text: '4' }]
+    - [{ url: '?staffel=1654&r=1#p7349x7359', title: 'gegen Plesse Bovenden 3', text: 5½ }]
+    - 8
+    - 26½
+    - aufsteiger
+-
+    - '4.'
+    - { text: 'Hamelner SV 5', url: '?mannschaft=7339', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1654&r=5#p7339x7367', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=1654&r=1#p7339x7345', title: 'gegen ESV Göttingen 4', text: '2' }]
+    - [{ url: '?staffel=1654&r=7#p7339x7349', title: 'gegen SK Goslar 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1654&r=6#p7339x7369', title: 'gegen WSV Clausthal', text: '3' }]
+    - [{ url: '?staffel=1654&r=4#p7339x7370', title: 'gegen Tempo Göttingen 2', text: 3½ }]
+    - [{ url: '?staffel=1654&r=3#p7339x7347', title: 'gegen Hildesheimer SV 4', text: 3½ }]
+    - [{ url: '?staffel=1654&r=2#p7339x7359', title: 'gegen Plesse Bovenden 3', text: '5' }]
+    - 7
+    - '19'
+    - ''
+-
+    - '5.'
+    - { text: 'WSV Clausthal', url: '?mannschaft=7369', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1654&r=3#p7369x7367', title: 'gegen SC Langelsheim', text: 3½ }]
+    - [{ url: '?staffel=1654&r=2#p7369x7345', title: 'gegen ESV Göttingen 4', text: '2' }]
+    - [{ url: '?staffel=1654&r=4#p7369x7349', title: 'gegen SK Goslar 2', text: '2' }]
+    - [{ url: '?staffel=1654&r=6#p7369x7339', title: 'gegen Hamelner SV 5', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1654&r=7#p7369x7370', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=1654&r=1#p7369x7347', title: 'gegen Hildesheimer SV 4', text: '0' }]
+    - [{ url: '?staffel=1654&r=5#p7369x7359', title: 'gegen Plesse Bovenden 3', text: '4' }]
+    - 7
+    - 18½
+    - ''
+-
+    - '6.'
+    - { text: 'Tempo Göttingen 2', url: '?mannschaft=7370', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1654&r=1#p7370x7367', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=1654&r=5#p7370x7345', title: 'gegen ESV Göttingen 4', text: 2½ }]
+    - [{ url: '?staffel=1654&r=3#p7370x7349', title: 'gegen SK Goslar 2', text: '4' }]
+    - [{ url: '?staffel=1654&r=4#p7370x7339', title: 'gegen Hamelner SV 5', text: 2½ }]
+    - [{ url: '?staffel=1654&r=7#p7370x7369', title: 'gegen WSV Clausthal', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1654&r=2#p7370x7347', title: 'gegen Hildesheimer SV 4', text: 5½ }]
+    - [{ url: '?staffel=1654&r=6#p7370x7359', title: 'gegen Plesse Bovenden 3', text: '3' }]
+    - 5
+    - 21½
+    - ''
+-
+    - '7.'
+    - { text: 'Hildesheimer SV 4', url: '?mannschaft=7347', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1654&r=6#p7347x7367', title: 'gegen SC Langelsheim', text: '1' }]
+    - [{ url: '?staffel=1654&r=4#p7347x7345', title: 'gegen ESV Göttingen 4', text: 3½ }]
+    - [{ url: '?staffel=1654&r=5#p7347x7349', title: 'gegen SK Goslar 2', text: '2' }]
+    - [{ url: '?staffel=1654&r=3#p7347x7339', title: 'gegen Hamelner SV 5', text: 2½ }]
+    - [{ url: '?staffel=1654&r=1#p7347x7369', title: 'gegen WSV Clausthal', text: '5' }]
+    - [{ url: '?staffel=1654&r=2#p7347x7370', title: 'gegen Tempo Göttingen 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1654&r=7#p7347x7359', title: 'gegen Plesse Bovenden 3', text: '2' }]
+    - 4
+    - 16½
+    - ''
+-
+    - '8.'
+    - { text: 'Plesse Bovenden 3', url: '?mannschaft=7359', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1654&r=4#p7359x7367', title: 'gegen SC Langelsheim', text: '1' }]
+    - [{ url: '?staffel=1654&r=3#p7359x7345', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - [{ url: '?staffel=1654&r=1#p7359x7349', title: 'gegen SK Goslar 2', text: ½ }]
+    - [{ url: '?staffel=1654&r=2#p7359x7339', title: 'gegen Hamelner SV 5', text: '1' }]
+    - [{ url: '?staffel=1654&r=5#p7359x7369', title: 'gegen WSV Clausthal', text: '2' }]
+    - [{ url: '?staffel=1654&r=6#p7359x7370', title: 'gegen Tempo Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1654&r=7#p7359x7347', title: 'gegen Hildesheimer SV 4', text: '4' }]
+    - xxx
+    - 4
+    - 14½
+    - ''

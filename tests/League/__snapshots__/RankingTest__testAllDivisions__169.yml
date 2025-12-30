@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'USV Potsdam', url: '?mannschaft=1865', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=589&r=2#p1865x1849', title: 'gegen SV Merseburg', text: 1½ }]
+    - [{ url: '?staffel=589&r=5#p1865x1892', title: 'gegen SG Leipzig 2', text: 3½ }]
+    - [{ url: '?staffel=589&r=6#p1865x1836', title: 'gegen SG Löberitz', text: 3½ }]
+    - [{ url: '?staffel=589&r=1#p1865x1901', title: 'gegen SK Lehrte 3', text: 3½ }]
+    - 6
+    - '12'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Merseburg', url: '?mannschaft=1849', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=589&r=2#p1849x1865', title: 'gegen USV Potsdam', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=589&r=1#p1849x1892', title: 'gegen SG Leipzig 2', text: '1' }]
+    - [{ url: '?staffel=589&r=5#p1849x1836', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=589&r=4#p1849x1901', title: 'gegen SK Lehrte 3', text: '4' }]
+    - 6
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Leipzig 2', url: '?mannschaft=1892', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=589&r=5#p1892x1865', title: 'gegen USV Potsdam', text: ½ }]
+    - [{ url: '?staffel=589&r=1#p1892x1849', title: 'gegen SV Merseburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=589&r=4#p1892x1836', title: 'gegen SG Löberitz', text: 1½ }]
+    - [{ url: '?staffel=589&r=6#p1892x1901', title: 'gegen SK Lehrte 3', text: '4' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Löberitz', url: '?mannschaft=1836', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=589&r=6#p1836x1865', title: 'gegen USV Potsdam', text: ½ }]
+    - [{ url: '?staffel=589&r=5#p1836x1849', title: 'gegen SV Merseburg', text: '1' }]
+    - [{ url: '?staffel=589&r=4#p1836x1892', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=589&r=2#p1836x1901', title: 'gegen SK Lehrte 3', text: '3' }]
+    - 4
+    - '7'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=1901', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=589&r=1#p1901x1865', title: 'gegen USV Potsdam', text: ½ }]
+    - [{ url: '?staffel=589&r=4#p1901x1849', title: 'gegen SV Merseburg', text: '0' }]
+    - [{ url: '?staffel=589&r=6#p1901x1892', title: 'gegen SG Leipzig 2', text: '0' }]
+    - [{ url: '?staffel=589&r=2#p1901x1836', title: 'gegen SG Löberitz', text: '1' }]
+    - xxx
+    - 0
+    - 1½
+    - absteiger

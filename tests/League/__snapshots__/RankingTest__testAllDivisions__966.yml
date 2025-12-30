@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=8020', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1805&r=5#p8020x8049', title: 'gegen SK Lehrte 7', text: '4' }, { url: '?staffel=1805&r=6#p8020x8049', title: 'gegen SK Lehrte 7', text: 4½ }]
+    - [{ url: '?staffel=1805&r=3#p8020x8025', title: 'gegen SF Barsinghausen 2', text: 4½ }, { url: '?staffel=1805&r=9#p8020x8025', title: 'gegen SF Barsinghausen 2', text: 4½ }]
+    - [{ url: '?staffel=1805&r=2#p8020x8024', title: 'gegen TuS Wunstorf 2', text: 4½ }, { url: '?staffel=1805&r=7#p8020x8024', title: 'gegen TuS Wunstorf 2', text: '4' }]
+    - [{ url: '?staffel=1805&r=1#p8020x8057', title: 'gegen SK Rinteln 3', text: '6' }, { url: '?staffel=1805&r=8#p8020x8057', title: 'gegen SK Rinteln 3', text: '6' }]
+    - 14
+    - '38'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte 7', url: '?mannschaft=8049', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1805&r=5#p8049x8020', title: 'gegen SVg Calenberg 2', text: '4' }, { url: '?staffel=1805&r=6#p8049x8020', title: 'gegen SVg Calenberg 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1805&r=4#p8049x8025', title: 'gegen SF Barsinghausen 2', text: '5' }, { url: '?staffel=1805&r=10#p8049x8025', title: 'gegen SF Barsinghausen 2', text: 4½ }]
+    - [{ url: '?staffel=1805&r=1#p8049x8024', title: 'gegen TuS Wunstorf 2', text: '5' }, { url: '?staffel=1805&r=8#p8049x8024', title: 'gegen TuS Wunstorf 2', text: '6' }]
+    - [{ url: '?staffel=1805&r=3#p8049x8057', title: 'gegen SK Rinteln 3', text: '6' }, { url: '?staffel=1805&r=9#p8049x8057', title: 'gegen SK Rinteln 3', text: 7½ }]
+    - 13
+    - 41½
+    - ''
+-
+    - '3.'
+    - { text: 'SF Barsinghausen 2', url: '?mannschaft=8025', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1805&r=3#p8025x8020', title: 'gegen SVg Calenberg 2', text: 3½ }, { url: '?staffel=1805&r=9#p8025x8020', title: 'gegen SVg Calenberg 2', text: 3½ }]
+    - [{ url: '?staffel=1805&r=4#p8025x8049', title: 'gegen SK Lehrte 7', text: '3' }, { url: '?staffel=1805&r=10#p8025x8049', title: 'gegen SK Lehrte 7', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1805&r=5#p8025x8024', title: 'gegen TuS Wunstorf 2', text: '4' }, { url: '?staffel=1805&r=6#p8025x8024', title: 'gegen TuS Wunstorf 2', text: '5' }]
+    - [{ url: '?staffel=1805&r=2#p8025x8057', title: 'gegen SK Rinteln 3', text: '8' }, { url: '?staffel=1805&r=7#p8025x8057', title: 'gegen SK Rinteln 3', text: 6½ }]
+    - 7
+    - '37'
+    - ''
+-
+    - '4.'
+    - { text: 'TuS Wunstorf 2', url: '?mannschaft=8024', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1805&r=2#p8024x8020', title: 'gegen SVg Calenberg 2', text: 3½ }, { url: '?staffel=1805&r=7#p8024x8020', title: 'gegen SVg Calenberg 2', text: '4' }]
+    - [{ url: '?staffel=1805&r=1#p8024x8049', title: 'gegen SK Lehrte 7', text: '3' }, { url: '?staffel=1805&r=8#p8024x8049', title: 'gegen SK Lehrte 7', text: '2' }]
+    - [{ url: '?staffel=1805&r=5#p8024x8025', title: 'gegen SF Barsinghausen 2', text: '4' }, { url: '?staffel=1805&r=6#p8024x8025', title: 'gegen SF Barsinghausen 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1805&r=4#p8024x8057', title: 'gegen SK Rinteln 3', text: '6' }, { url: '?staffel=1805&r=10#p8024x8057', title: 'gegen SK Rinteln 3', text: '5' }]
+    - 6
+    - 30½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Rinteln 3', url: '?mannschaft=8057', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1805&r=1#p8057x8020', title: 'gegen SVg Calenberg 2', text: '2' }, { url: '?staffel=1805&r=8#p8057x8020', title: 'gegen SVg Calenberg 2', text: '2' }]
+    - [{ url: '?staffel=1805&r=3#p8057x8049', title: 'gegen SK Lehrte 7', text: '2' }, { url: '?staffel=1805&r=9#p8057x8049', title: 'gegen SK Lehrte 7', text: ½ }]
+    - [{ url: '?staffel=1805&r=2#p8057x8025', title: 'gegen SF Barsinghausen 2', text: '0' }, { url: '?staffel=1805&r=7#p8057x8025', title: 'gegen SF Barsinghausen 2', text: 1½ }]
+    - [{ url: '?staffel=1805&r=4#p8057x8024', title: 'gegen TuS Wunstorf 2', text: '2' }, { url: '?staffel=1805&r=10#p8057x8024', title: 'gegen TuS Wunstorf 2', text: '2' }]
+    - xxx
+    - 0
+    - '12'
+    - ''

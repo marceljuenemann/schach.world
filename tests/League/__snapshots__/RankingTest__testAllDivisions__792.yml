@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Blanke 6', url: '?mannschaft=6672', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1601&r=5#p6672x6660', title: 'gegen SF Spelle 3', text: '5' }, { url: '?staffel=1601&r=7#p6672x6660', title: 'gegen SF Spelle 3', text: '0' }]
+    - [{ url: '?staffel=1601&r=1#p6672x6673', title: 'gegen SK Nordhorn-Blanke 7', text: '4' }, { url: '?staffel=1601&r=4#p6672x6673', title: 'gegen SK Nordhorn-Blanke 7', text: '5' }]
+    - [{ url: '?staffel=1601&r=2#p6672x6685', title: 'gegen SV Lingen 4', text: 5½ }, { url: '?staffel=1601&r=6#p6672x6685', title: 'gegen SV Lingen 4', text: '6' }]
+    - [{ url: '?staffel=1601&r=3#p6672x6667', title: 'gegen SK Meppen 2', text: '6' }]
+    - {  }
+    - 12
+    - 31½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Spelle 3', url: '?mannschaft=6660', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1601&r=5#p6660x6672', title: 'gegen SK Nordhorn-Blanke 6', text: '1' }, { url: '?staffel=1601&r=7#p6660x6672', title: 'gegen SK Nordhorn-Blanke 6', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1601&r=3#p6660x6673', title: 'gegen SK Nordhorn-Blanke 7', text: 4½ }, { url: '?staffel=1601&r=6#p6660x6673', title: 'gegen SK Nordhorn-Blanke 7', text: '5' }]
+    - [{ url: '?staffel=1601&r=1#p6660x6685', title: 'gegen SV Lingen 4', text: '3' }, { url: '?staffel=1601&r=4#p6660x6685', title: 'gegen SV Lingen 4', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1601&r=2#p6660x6655', title: 'gegen SC HT Herzlake', text: '6' }]
+    - 11
+    - 30½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Nordhorn-Blanke 7', url: '?mannschaft=6673', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1601&r=1#p6673x6672', title: 'gegen SK Nordhorn-Blanke 6', text: '2' }, { url: '?staffel=1601&r=4#p6673x6672', title: 'gegen SK Nordhorn-Blanke 6', text: '1' }]
+    - [{ url: '?staffel=1601&r=3#p6673x6660', title: 'gegen SF Spelle 3', text: 1½ }, { url: '?staffel=1601&r=6#p6673x6660', title: 'gegen SF Spelle 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1601&r=5#p6673x6685', title: 'gegen SV Lingen 4', text: '3' }, { url: '?staffel=1601&r=7#p6673x6685', title: 'gegen SV Lingen 4', text: '6' }]
+    - [{ url: '?staffel=1601&r=2#p6673x6667', title: 'gegen SK Meppen 2', text: '6' }]
+    - {  }
+    - 5
+    - 20½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Lingen 4', url: '?mannschaft=6685', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1601&r=2#p6685x6672', title: 'gegen SK Nordhorn-Blanke 6', text: ½ }, { url: '?staffel=1601&r=6#p6685x6672', title: 'gegen SK Nordhorn-Blanke 6', text: '0' }]
+    - [{ url: '?staffel=1601&r=1#p6685x6660', title: 'gegen SF Spelle 3', text: '3' }, { url: '?staffel=1601&r=4#p6685x6660', title: 'gegen SF Spelle 3', text: '1' }]
+    - [{ url: '?staffel=1601&r=5#p6685x6673', title: 'gegen SK Nordhorn-Blanke 7', text: '3' }, { url: '?staffel=1601&r=7#p6685x6673', title: 'gegen SK Nordhorn-Blanke 7', text: '0' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1601&r=3#p6685x6655', title: 'gegen SC HT Herzlake', text: '6' }]
+    - 4
+    - 13½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Meppen 2', url: '?mannschaft=6667', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1601&r=3#p6667x6672', title: 'gegen SK Nordhorn-Blanke 6', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1601&r=2#p6667x6673', title: 'gegen SK Nordhorn-Blanke 7', text: '0' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1601&r=1#p6667x6655', title: 'gegen SC HT Herzlake', text: '0' }]
+    - 0
+    - '0'
+    - ''
+-
+    - '6.'
+    - { text: 'SC HT Herzlake', url: '?mannschaft=6655', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1601&r=2#p6655x6660', title: 'gegen SF Spelle 3', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1601&r=3#p6655x6685', title: 'gegen SV Lingen 4', text: '0' }]
+    - [{ url: '?staffel=1601&r=1#p6655x6667', title: 'gegen SK Meppen 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=5647', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1374&r=4#p5647x5642', title: 'gegen ESV Göttingen', text: '2' }]
+    - [{ url: '?staffel=1374&r=9#p5647x5758', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=1374&r=10#p5647x5651', title: 'gegen Rochade Göttingen 2', text: 2½ }]
+    - [{ url: '?staffel=1374&r=1#p5647x5644', title: 'gegen SK Rinteln', text: 2½ }]
+    - [{ url: '?staffel=1374&r=2#p5647x5679', title: 'gegen SV Springe', text: 2½ }]
+    - [{ url: '?staffel=1374&r=11#p5647x5643', title: 'gegen ESV Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1374&r=8#p5647x5677', title: 'gegen SC BS Gliesmarode', text: '3' }]
+    - [{ url: '?staffel=1374&r=5#p5647x5648', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - 14
+    - 21½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'ESV Göttingen', url: '?mannschaft=5642', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1374&r=4#p5642x5647', title: 'gegen Hildesheimer SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1374&r=1#p5642x5758', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1374&r=5#p5642x5651', title: 'gegen Rochade Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1374&r=8#p5642x5644', title: 'gegen SK Rinteln', text: 2½ }]
+    - [{ url: '?staffel=1374&r=9#p5642x5679', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=1374&r=7#p5642x5643', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=1374&r=2#p5642x5677', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - [{ url: '?staffel=1374&r=3#p5642x5648', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - 13
+    - 23½
+    - ''
+-
+    - '3.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=5758', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1374&r=9#p5758x5647', title: 'gegen Hildesheimer SV', text: '1' }]
+    - [{ url: '?staffel=1374&r=1#p5758x5642', title: 'gegen ESV Göttingen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1374&r=2#p5758x5651', title: 'gegen Rochade Göttingen 2', text: 1½ }]
+    - [{ url: '?staffel=1374&r=11#p5758x5644', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=1374&r=10#p5758x5679', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=1374&r=4#p5758x5643', title: 'gegen ESV Göttingen 2', text: 3½ }]
+    - [{ url: '?staffel=1374&r=5#p5758x5677', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - [{ url: '?staffel=1374&r=8#p5758x5648', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - 11
+    - '22'
+    - ''
+-
+    - '4.'
+    - { text: 'Rochade Göttingen 2', url: '?mannschaft=5651', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1374&r=10#p5651x5647', title: 'gegen Hildesheimer SV', text: 1½ }]
+    - [{ url: '?staffel=1374&r=5#p5651x5642', title: 'gegen ESV Göttingen', text: '2' }]
+    - [{ url: '?staffel=1374&r=2#p5651x5758', title: 'gegen SD Isernhagen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1374&r=4#p5651x5644', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=1374&r=3#p5651x5679', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=1374&r=6#p5651x5643', title: 'gegen ESV Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1374&r=1#p5651x5677', title: 'gegen SC BS Gliesmarode', text: 3½ }]
+    - [{ url: '?staffel=1374&r=11#p5651x5648', title: 'gegen Hildesheimer SV 2', text: '3' }]
+    - 11
+    - '20'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Rinteln', url: '?mannschaft=5644', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1374&r=1#p5644x5647', title: 'gegen Hildesheimer SV', text: 1½ }]
+    - [{ url: '?staffel=1374&r=8#p5644x5642', title: 'gegen ESV Göttingen', text: 1½ }]
+    - [{ url: '?staffel=1374&r=11#p5644x5758', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1374&r=4#p5644x5651', title: 'gegen Rochade Göttingen 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1374&r=5#p5644x5679', title: 'gegen SV Springe', text: 2½ }]
+    - [{ url: '?staffel=1374&r=9#p5644x5643', title: 'gegen ESV Göttingen 2', text: 2½ }]
+    - [{ url: '?staffel=1374&r=10#p5644x5677', title: 'gegen SC BS Gliesmarode', text: 1½ }]
+    - [{ url: '?staffel=1374&r=2#p5644x5648', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - 6
+    - '15'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Springe', url: '?mannschaft=5679', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1374&r=2#p5679x5647', title: 'gegen Hildesheimer SV', text: 1½ }]
+    - [{ url: '?staffel=1374&r=9#p5679x5642', title: 'gegen ESV Göttingen', text: '1' }]
+    - [{ url: '?staffel=1374&r=10#p5679x5758', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1374&r=3#p5679x5651', title: 'gegen Rochade Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1374&r=5#p5679x5644', title: 'gegen SK Rinteln', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1374&r=8#p5679x5643', title: 'gegen ESV Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1374&r=11#p5679x5677', title: 'gegen SC BS Gliesmarode', text: '1' }]
+    - [{ url: '?staffel=1374&r=1#p5679x5648', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - 5
+    - '14'
+    - ''
+-
+    - '7.'
+    - { text: 'ESV Göttingen 2', url: '?mannschaft=5643', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1374&r=11#p5643x5647', title: 'gegen Hildesheimer SV', text: '2' }]
+    - [{ url: '?staffel=1374&r=7#p5643x5642', title: 'gegen ESV Göttingen', text: '0' }]
+    - [{ url: '?staffel=1374&r=4#p5643x5758', title: 'gegen SD Isernhagen', text: ½ }]
+    - [{ url: '?staffel=1374&r=6#p5643x5651', title: 'gegen Rochade Göttingen 2', text: '2' }]
+    - [{ url: '?staffel=1374&r=9#p5643x5644', title: 'gegen SK Rinteln', text: 1½ }]
+    - [{ url: '?staffel=1374&r=8#p5643x5679', title: 'gegen SV Springe', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1374&r=3#p5643x5677', title: 'gegen SC BS Gliesmarode', text: '2' }]
+    - [{ url: '?staffel=1374&r=10#p5643x5648', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - 5
+    - '13'
+    - ''
+-
+    - '8.'
+    - { text: 'SC BS Gliesmarode', url: '?mannschaft=5677', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1374&r=8#p5677x5647', title: 'gegen Hildesheimer SV', text: '1' }]
+    - [{ url: '?staffel=1374&r=2#p5677x5642', title: 'gegen ESV Göttingen', text: '0' }]
+    - [{ url: '?staffel=1374&r=5#p5677x5758', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1374&r=1#p5677x5651', title: 'gegen Rochade Göttingen 2', text: ½ }]
+    - [{ url: '?staffel=1374&r=10#p5677x5644', title: 'gegen SK Rinteln', text: 2½ }]
+    - [{ url: '?staffel=1374&r=11#p5677x5679', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=1374&r=3#p5677x5643', title: 'gegen ESV Göttingen 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1374&r=9#p5677x5648', title: 'gegen Hildesheimer SV 2', text: '0' }]
+    - 5
+    - '9'
+    - ''
+-
+    - '9.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=5648', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1374&r=5#p5648x5647', title: 'gegen Hildesheimer SV', text: '0' }]
+    - [{ url: '?staffel=1374&r=3#p5648x5642', title: 'gegen ESV Göttingen', text: '0' }]
+    - [{ url: '?staffel=1374&r=8#p5648x5758', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1374&r=11#p5648x5651', title: 'gegen Rochade Göttingen 2', text: '1' }]
+    - [{ url: '?staffel=1374&r=2#p5648x5644', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=1374&r=1#p5648x5679', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1374&r=10#p5648x5643', title: 'gegen ESV Göttingen 2', text: '0' }]
+    - [{ url: '?staffel=1374&r=9#p5648x5677', title: 'gegen SC BS Gliesmarode', text: '4' }]
+    - xxx
+    - 2
+    - '6'
+    - ''

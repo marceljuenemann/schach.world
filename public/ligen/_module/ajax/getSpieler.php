@@ -1,4 +1,4 @@
-<?
+<?php
 /* AJAX: Spielerdaten nach Namen
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bad Essen 4', url: '?mannschaft=5972', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1439&r=3#p5972x5977', title: 'gegen Hagener SV 5', text: '2' }]
+    - [{ url: '?staffel=1439&r=1#p5972x5974', title: 'gegen Gaste-Hasbergen 2', text: '2' }, { url: '?staffel=1439&r=6#p5972x5974', title: 'gegen Gaste-Hasbergen 2', text: '3' }]
+    - [{ url: '?staffel=1439&r=4#p5972x5975', title: 'gegen SV Osnabrück 6', text: 2½ }]
+    - [{ url: '?staffel=1439&r=2#p5972x5976', title: 'gegen Hagener SV 4', text: '2' }, { url: '?staffel=1439&r=7#p5972x5976', title: 'gegen Hagener SV 4', text: 3½ }]
+    - [{ url: '?staffel=1439&r=5#p5972x5973', title: 'gegen Bersenbrück/Bramsche 3', text: '4' }]
+    - 11
+    - '19'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hagener SV 5', url: '?mannschaft=5977', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1439&r=3#p5977x5972', title: 'gegen SV Bad Essen 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1439&r=5#p5977x5974', title: 'gegen Gaste-Hasbergen 2', text: 2½ }]
+    - [{ url: '?staffel=1439&r=2#p5977x5975', title: 'gegen SV Osnabrück 6', text: '2' }, { url: '?staffel=1439&r=7#p5977x5975', title: 'gegen SV Osnabrück 6', text: '2' }]
+    - [{ url: '?staffel=1439&r=1#p5977x5976', title: 'gegen Hagener SV 4', text: '0' }, { url: '?staffel=1439&r=6#p5977x5976', title: 'gegen Hagener SV 4', text: '4' }]
+    - [{ url: '?staffel=1439&r=4#p5977x5973', title: 'gegen Bersenbrück/Bramsche 3', text: '4' }]
+    - 10
+    - 16½
+    - ''
+-
+    - '3.'
+    - { text: 'Gaste-Hasbergen 2', url: '?mannschaft=5974', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1439&r=1#p5974x5972', title: 'gegen SV Bad Essen 4', text: '2' }, { url: '?staffel=1439&r=6#p5974x5972', title: 'gegen SV Bad Essen 4', text: '1' }]
+    - [{ url: '?staffel=1439&r=5#p5974x5977', title: 'gegen Hagener SV 5', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1439&r=3#p5974x5975', title: 'gegen SV Osnabrück 6', text: 2½ }]
+    - [{ url: '?staffel=1439&r=4#p5974x5976', title: 'gegen Hagener SV 4', text: 2½ }]
+    - [{ url: '?staffel=1439&r=2#p5974x5973', title: 'gegen Bersenbrück/Bramsche 3', text: '4' }, { url: '?staffel=1439&r=7#p5974x5973', title: 'gegen Bersenbrück/Bramsche 3', text: '4' }]
+    - 9
+    - 17½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück 6', url: '?mannschaft=5975', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1439&r=4#p5975x5972', title: 'gegen SV Bad Essen 4', text: 1½ }]
+    - [{ url: '?staffel=1439&r=2#p5975x5977', title: 'gegen Hagener SV 5', text: '1' }, { url: '?staffel=1439&r=7#p5975x5977', title: 'gegen Hagener SV 5', text: '2' }]
+    - [{ url: '?staffel=1439&r=3#p5975x5974', title: 'gegen Gaste-Hasbergen 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1439&r=5#p5975x5976', title: 'gegen Hagener SV 4', text: '3' }]
+    - [{ url: '?staffel=1439&r=1#p5975x5973', title: 'gegen Bersenbrück/Bramsche 3', text: '4' }, { url: '?staffel=1439&r=6#p5975x5973', title: 'gegen Bersenbrück/Bramsche 3', text: '4' }]
+    - 7
+    - '17'
+    - ''
+-
+    - '5.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=5976', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1439&r=2#p5976x5972', title: 'gegen SV Bad Essen 4', text: '2' }, { url: '?staffel=1439&r=7#p5976x5972', title: 'gegen SV Bad Essen 4', text: ½ }]
+    - [{ url: '?staffel=1439&r=1#p5976x5977', title: 'gegen Hagener SV 5', text: '4' }, { url: '?staffel=1439&r=6#p5976x5977', title: 'gegen Hagener SV 5', text: '0' }]
+    - [{ url: '?staffel=1439&r=4#p5976x5974', title: 'gegen Gaste-Hasbergen 2', text: 1½ }]
+    - [{ url: '?staffel=1439&r=5#p5976x5975', title: 'gegen SV Osnabrück 6', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1439&r=3#p5976x5973', title: 'gegen Bersenbrück/Bramsche 3', text: '4' }]
+    - 5
+    - '13'
+    - ''
+-
+    - '6.'
+    - { text: 'Bersenbrück/Bramsche 3', url: '?mannschaft=5973', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1439&r=5#p5973x5972', title: 'gegen SV Bad Essen 4', text: '0' }]
+    - [{ url: '?staffel=1439&r=4#p5973x5977', title: 'gegen Hagener SV 5', text: '0' }]
+    - [{ url: '?staffel=1439&r=2#p5973x5974', title: 'gegen Gaste-Hasbergen 2', text: '0' }, { url: '?staffel=1439&r=7#p5973x5974', title: 'gegen Gaste-Hasbergen 2', text: '0' }]
+    - [{ url: '?staffel=1439&r=1#p5973x5975', title: 'gegen SV Osnabrück 6', text: '0' }, { url: '?staffel=1439&r=6#p5973x5975', title: 'gegen SV Osnabrück 6', text: '0' }]
+    - [{ url: '?staffel=1439&r=3#p5973x5976', title: 'gegen Hagener SV 4', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

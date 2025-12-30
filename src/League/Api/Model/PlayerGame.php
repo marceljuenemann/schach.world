@@ -21,19 +21,21 @@ class PlayerGame
   public string $uri;
 
   public static function forPlayer(int $playerId, Entity\Game $game) {
-    if ($game->player1->id != $playerId && $game->player2->id != $playerId) {
+    $home = $game->player1 && $game->player1->id === $playerId;
+    $guest = $game->player2 && $game->player2->id === $playerId;
+    if (!$home && !$guest) {
       throw new \Exception("Player did not participate in this game");
     }
 
     $result = new PlayerGame();
     $result->round = $game->pairing->round;
     $result->board = $game->board;
-    $result->home = $game->player1->id == $playerId;
-    $result->white = Regulation::isWhiteGame($result->home, $game->board, $game->pairing->division->league);
-    $result->result = $result->home ? $game->result1 : $game->result2;
-    $result->opponentResult = !$result->home ? $game->result1 : $game->result2;
-    $result->opponentTeam = Team::fromEntity($result->home ? $game->pairing->team2 : $game->pairing->team1);
-    $opponentPlayer = $result->home ? $game->player2 : $game->player1;
+    $result->home = $home;
+    $result->white = Regulation::isWhiteGame($home, $game->board, $game->pairing->division->league);
+    $result->result = $home ? $game->result1 : $game->result2;
+    $result->opponentResult = !$home ? $game->result1 : $game->result2;
+    $result->opponentTeam = Team::fromEntity($home ? $game->pairing->team2 : $game->pairing->team1);
+    $opponentPlayer = $home ? $game->player2 : $game->player1;
     $result->opponentPlayer = $opponentPlayer ? Player::fromEntity($opponentPlayer) : null;
     $result->uri = $game->pairing->division->round($result->round)->uri();
     return $result;

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamelner SV 5', url: '?mannschaft=2514', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=685&r=1#p2514x2515', title: 'gegen Hamelner SV 6', text: '2' }, { url: '?staffel=685&r=2#p2514x2515', title: 'gegen Hamelner SV 6', text: '3' }]
+    - [{ url: '?staffel=685&r=4#p2514x2483', title: 'gegen SG Holzminden 3', text: '3' }, { url: '?staffel=685&r=9#p2514x2483', title: 'gegen SG Holzminden 3', text: 3½ }]
+    - [{ url: '?staffel=685&r=3#p2514x2322', title: 'gegen KSV Rochade GÖ 3', text: '1' }, { url: '?staffel=685&r=5#p2514x2322', title: 'gegen KSV Rochade GÖ 3', text: 2½ }]
+    - [{ url: '?staffel=685&r=7#p2514x2469', title: 'gegen SK Gronau 2', text: '4' }, { url: '?staffel=685&r=10#p2514x2469', title: 'gegen SK Gronau 2', text: '2' }]
+    - [{ url: '?staffel=685&r=6#p2514x2321', title: 'gegen KSV Rochade GÖ 2', text: '4' }, { url: '?staffel=685&r=8#p2514x2321', title: 'gegen KSV Rochade GÖ 2', text: '2' }]
+    - 15
+    - '27'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamelner SV 6', url: '?mannschaft=2515', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=685&r=1#p2515x2514', title: 'gegen Hamelner SV 5', text: '2' }, { url: '?staffel=685&r=2#p2515x2514', title: 'gegen Hamelner SV 5', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=685&r=3#p2515x2483', title: 'gegen SG Holzminden 3', text: '3' }, { url: '?staffel=685&r=8#p2515x2483', title: 'gegen SG Holzminden 3', text: 2½ }]
+    - [{ url: '?staffel=685&r=9#p2515x2322', title: 'gegen KSV Rochade GÖ 3', text: '2' }, { url: '?staffel=685&r=10#p2515x2322', title: 'gegen KSV Rochade GÖ 3', text: '2' }]
+    - [{ url: '?staffel=685&r=5#p2515x2469', title: 'gegen SK Gronau 2', text: 2½ }, { url: '?staffel=685&r=6#p2515x2469', title: 'gegen SK Gronau 2', text: 1½ }]
+    - [{ url: '?staffel=685&r=4#p2515x2321', title: 'gegen KSV Rochade GÖ 2', text: '4' }, { url: '?staffel=685&r=7#p2515x2321', title: 'gegen KSV Rochade GÖ 2', text: 2½ }]
+    - 13
+    - '23'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Holzminden 3', url: '?mannschaft=2483', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=685&r=4#p2483x2514', title: 'gegen Hamelner SV 5', text: '1' }, { url: '?staffel=685&r=9#p2483x2514', title: 'gegen Hamelner SV 5', text: ½ }]
+    - [{ url: '?staffel=685&r=3#p2483x2515', title: 'gegen Hamelner SV 6', text: '1' }, { url: '?staffel=685&r=8#p2483x2515', title: 'gegen Hamelner SV 6', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=685&r=6#p2483x2322', title: 'gegen KSV Rochade GÖ 3', text: 2½ }, { url: '?staffel=685&r=7#p2483x2322', title: 'gegen KSV Rochade GÖ 3', text: '4' }]
+    - [{ url: '?staffel=685&r=1#p2483x2469', title: 'gegen SK Gronau 2', text: 2½ }, { url: '?staffel=685&r=2#p2483x2469', title: 'gegen SK Gronau 2', text: 2½ }]
+    - [{ url: '?staffel=685&r=5#p2483x2321', title: 'gegen KSV Rochade GÖ 2', text: 3½ }, { url: '?staffel=685&r=10#p2483x2321', title: 'gegen KSV Rochade GÖ 2', text: '2' }]
+    - 11
+    - '21'
+    - ''
+-
+    - '4.'
+    - { text: 'KSV Rochade GÖ 3', url: '?mannschaft=2322', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=685&r=3#p2322x2514', title: 'gegen Hamelner SV 5', text: '3' }, { url: '?staffel=685&r=5#p2322x2514', title: 'gegen Hamelner SV 5', text: 1½ }]
+    - [{ url: '?staffel=685&r=9#p2322x2515', title: 'gegen Hamelner SV 6', text: '2' }, { url: '?staffel=685&r=10#p2322x2515', title: 'gegen Hamelner SV 6', text: '2' }]
+    - [{ url: '?staffel=685&r=6#p2322x2483', title: 'gegen SG Holzminden 3', text: 1½ }, { url: '?staffel=685&r=7#p2322x2483', title: 'gegen SG Holzminden 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=685&r=4#p2322x2469', title: 'gegen SK Gronau 2', text: '0' }, { url: '?staffel=685&r=8#p2322x2469', title: 'gegen SK Gronau 2', text: 1½ }]
+    - [{ url: '?staffel=685&r=1#p2322x2321', title: 'gegen KSV Rochade GÖ 2', text: '4' }, { url: '?staffel=685&r=2#p2322x2321', title: 'gegen KSV Rochade GÖ 2', text: '4' }]
+    - 8
+    - 19½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Gronau 2', url: '?mannschaft=2469', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=685&r=7#p2469x2514', title: 'gegen Hamelner SV 5', text: '0' }, { url: '?staffel=685&r=10#p2469x2514', title: 'gegen Hamelner SV 5', text: '2' }]
+    - [{ url: '?staffel=685&r=5#p2469x2515', title: 'gegen Hamelner SV 6', text: 1½ }, { url: '?staffel=685&r=6#p2469x2515', title: 'gegen Hamelner SV 6', text: 2½ }]
+    - [{ url: '?staffel=685&r=1#p2469x2483', title: 'gegen SG Holzminden 3', text: 1½ }, { url: '?staffel=685&r=2#p2469x2483', title: 'gegen SG Holzminden 3', text: 1½ }]
+    - [{ url: '?staffel=685&r=4#p2469x2322', title: 'gegen KSV Rochade GÖ 3', text: '4' }, { url: '?staffel=685&r=8#p2469x2322', title: 'gegen KSV Rochade GÖ 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=685&r=3#p2469x2321', title: 'gegen KSV Rochade GÖ 2', text: 1½ }, { url: '?staffel=685&r=9#p2469x2321', title: 'gegen KSV Rochade GÖ 2', text: '1' }]
+    - 7
+    - '18'
+    - ''
+-
+    - '6.'
+    - { text: 'KSV Rochade GÖ 2', url: '?mannschaft=2321', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=685&r=6#p2321x2514', title: 'gegen Hamelner SV 5', text: '0' }, { url: '?staffel=685&r=8#p2321x2514', title: 'gegen Hamelner SV 5', text: '2' }]
+    - [{ url: '?staffel=685&r=4#p2321x2515', title: 'gegen Hamelner SV 6', text: '0' }, { url: '?staffel=685&r=7#p2321x2515', title: 'gegen Hamelner SV 6', text: 1½ }]
+    - [{ url: '?staffel=685&r=5#p2321x2483', title: 'gegen SG Holzminden 3', text: ½ }, { url: '?staffel=685&r=10#p2321x2483', title: 'gegen SG Holzminden 3', text: '2' }]
+    - [{ url: '?staffel=685&r=1#p2321x2322', title: 'gegen KSV Rochade GÖ 3', text: '0' }, { url: '?staffel=685&r=2#p2321x2322', title: 'gegen KSV Rochade GÖ 3', text: '0' }]
+    - [{ url: '?staffel=685&r=3#p2321x2469', title: 'gegen SK Gronau 2', text: 2½ }, { url: '?staffel=685&r=9#p2321x2469', title: 'gegen SK Gronau 2', text: '3' }]
+    - xxx
+    - 6
+    - 11½
+    - ''

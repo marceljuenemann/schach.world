@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC 81 Schneverdingen', url: '?mannschaft=8398', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1892&r=2#p8398x8397', title: 'gegen BW Buchholz', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1892&r=3#p8398x8440', title: 'gegen Stader SV', text: 3½ }]
+    - [{ url: '?staffel=1892&r=3#p8398x8392', title: 'gegen SF Buxtehude', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1892&r=2#p8398x8394', title: 'gegen MTV Tostedt', text: '4' }]
+    - [{ url: '?staffel=1892&r=1#p8398x8395', title: 'gegen Läuferpaar Verden', text: '3' }]
+    - 8
+    - '14'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'BW Buchholz', url: '?mannschaft=8397', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1892&r=2#p8397x8398', title: 'gegen SC 81 Schneverdingen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1892&r=3#p8397x8393', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1892&r=3#p8397x8396', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - [{ url: '?staffel=1892&r=1#p8397x8394', title: 'gegen MTV Tostedt', text: 3½ }]
+    - [{ url: '?staffel=1892&r=2#p8397x8395', title: 'gegen Läuferpaar Verden', text: '3' }]
+    - 8
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=8393', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1892&r=3#p8393x8397', title: 'gegen BW Buchholz', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1892&r=2#p8393x8440', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=1892&r=2#p8393x8392', title: 'gegen SF Buxtehude', text: 2½ }]
+    - [{ url: '?staffel=1892&r=1#p8393x8396', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=1892&r=3#p8393x8394', title: 'gegen MTV Tostedt', text: '3' }]
+    - {  }
+    - 8
+    - 12½
+    - ''
+-
+    - '4.'
+    - { text: 'Stader SV', url: '?mannschaft=8440', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1892&r=3#p8440x8398', title: 'gegen SC 81 Schneverdingen', text: ½ }]
+    - {  }
+    - [{ url: '?staffel=1892&r=2#p8440x8393', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1892&r=1#p8440x8392', title: 'gegen SF Buxtehude', text: '2' }]
+    - [{ url: '?staffel=1892&r=2#p8440x8396', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1892&r=3#p8440x8395', title: 'gegen Läuferpaar Verden', text: '3' }]
+    - 6
+    - 10½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Buxtehude', url: '?mannschaft=8392', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1892&r=3#p8392x8398', title: 'gegen SC 81 Schneverdingen', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1892&r=2#p8392x8393', title: 'gegen SC Turm Lüneburg', text: 1½ }]
+    - [{ url: '?staffel=1892&r=1#p8392x8440', title: 'gegen Stader SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1892&r=2#p8392x8396', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1892&r=3#p8392x8395', title: 'gegen Läuferpaar Verden', text: '4' }]
+    - 5
+    - '12'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=8396', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1892&r=3#p8396x8397', title: 'gegen BW Buchholz', text: '1' }]
+    - [{ url: '?staffel=1892&r=1#p8396x8393', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - [{ url: '?staffel=1892&r=2#p8396x8440', title: 'gegen Stader SV', text: '1' }]
+    - [{ url: '?staffel=1892&r=2#p8396x8392', title: 'gegen SF Buxtehude', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1892&r=3#p8396x8394', title: 'gegen MTV Tostedt', text: '2' }]
+    - {  }
+    - 2
+    - '7'
+    - ''
+-
+    - '7.'
+    - { text: 'MTV Tostedt', url: '?mannschaft=8394', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1892&r=2#p8394x8398', title: 'gegen SC 81 Schneverdingen', text: '0' }]
+    - [{ url: '?staffel=1892&r=1#p8394x8397', title: 'gegen BW Buchholz', text: ½ }]
+    - [{ url: '?staffel=1892&r=3#p8394x8393', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1892&r=3#p8394x8396', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1892&r=2#p8394x8395', title: 'gegen Läuferpaar Verden', text: '2' }]
+    - 2
+    - 5½
+    - ''
+-
+    - '8.'
+    - { text: 'Läuferpaar Verden', url: '?mannschaft=8395', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1892&r=1#p8395x8398', title: 'gegen SC 81 Schneverdingen', text: '1' }]
+    - [{ url: '?staffel=1892&r=2#p8395x8397', title: 'gegen BW Buchholz', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1892&r=3#p8395x8440', title: 'gegen Stader SV', text: '1' }]
+    - [{ url: '?staffel=1892&r=3#p8395x8392', title: 'gegen SF Buxtehude', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1892&r=2#p8395x8394', title: 'gegen MTV Tostedt', text: '2' }]
+    - xxx
+    - 1
+    - '5'
+    - ''

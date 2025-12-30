@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Werder Bremen 3', url: '?mannschaft=2182', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=609&r=6#p2182x2178', title: 'gegen SG Niederelbe', text: 5½ }]
+    - [{ url: '?staffel=609&r=2#p2182x2176', title: 'gegen SF Leherheide', text: '4' }]
+    - [{ url: '?staffel=609&r=8#p2182x2174', title: 'gegen Stader SV 2', text: '5' }]
+    - [{ url: '?staffel=609&r=5#p2182x2183', title: 'gegen SF Lilienthal', text: '6' }]
+    - [{ url: '?staffel=609&r=7#p2182x2177', title: 'gegen TuS Varrel', text: 4½ }]
+    - [{ url: '?staffel=609&r=4#p2182x2179', title: 'gegen SF Buxtehude', text: 4½ }]
+    - [{ url: '?staffel=609&r=9#p2182x2180', title: 'gegen SK Hermannsburg', text: '5' }]
+    - [{ url: '?staffel=609&r=1#p2182x2173', title: 'gegen MTV Tostedt', text: 5½ }]
+    - [{ url: '?staffel=609&r=3#p2182x2175', title: 'gegen SK Verden', text: 6½ }]
+    - 17
+    - 46½
+    - ''
+-
+    - '2.'
+    - { text: 'SG Niederelbe', url: '?mannschaft=2178', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=609&r=6#p2178x2182', title: 'gegen SV Werder Bremen 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=609&r=3#p2178x2176', title: 'gegen SF Leherheide', text: '3' }]
+    - [{ url: '?staffel=609&r=4#p2178x2174', title: 'gegen Stader SV 2', text: 4½ }]
+    - [{ url: '?staffel=609&r=8#p2178x2183', title: 'gegen SF Lilienthal', text: '6' }]
+    - [{ url: '?staffel=609&r=5#p2178x2177', title: 'gegen TuS Varrel', text: 5½ }]
+    - [{ url: '?staffel=609&r=2#p2178x2179', title: 'gegen SF Buxtehude', text: '5' }]
+    - [{ url: '?staffel=609&r=7#p2178x2180', title: 'gegen SK Hermannsburg', text: '4' }]
+    - [{ url: '?staffel=609&r=9#p2178x2173', title: 'gegen MTV Tostedt', text: 4½ }]
+    - [{ url: '?staffel=609&r=1#p2178x2175', title: 'gegen SK Verden', text: '4' }]
+    - 12
+    - '39'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Leherheide', url: '?mannschaft=2176', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=609&r=2#p2176x2182', title: 'gegen SV Werder Bremen 3', text: '4' }]
+    - [{ url: '?staffel=609&r=3#p2176x2178', title: 'gegen SG Niederelbe', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=609&r=6#p2176x2174', title: 'gegen Stader SV 2', text: 3½ }]
+    - [{ url: '?staffel=609&r=9#p2176x2183', title: 'gegen SF Lilienthal', text: '3' }]
+    - [{ url: '?staffel=609&r=4#p2176x2177', title: 'gegen TuS Varrel', text: '6' }]
+    - [{ url: '?staffel=609&r=5#p2176x2179', title: 'gegen SF Buxtehude', text: 7½ }]
+    - [{ url: '?staffel=609&r=1#p2176x2180', title: 'gegen SK Hermannsburg', text: 6½ }]
+    - [{ url: '?staffel=609&r=7#p2176x2173', title: 'gegen MTV Tostedt', text: 4½ }]
+    - [{ url: '?staffel=609&r=8#p2176x2175', title: 'gegen SK Verden', text: 3½ }]
+    - 11
+    - 43½
+    - ''
+-
+    - '4.'
+    - { text: 'Stader SV 2', url: '?mannschaft=2174', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=609&r=8#p2174x2182', title: 'gegen SV Werder Bremen 3', text: '3' }]
+    - [{ url: '?staffel=609&r=4#p2174x2178', title: 'gegen SG Niederelbe', text: 3½ }]
+    - [{ url: '?staffel=609&r=6#p2174x2176', title: 'gegen SF Leherheide', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=609&r=1#p2174x2183', title: 'gegen SF Lilienthal', text: 4½ }]
+    - [{ url: '?staffel=609&r=9#p2174x2177', title: 'gegen TuS Varrel', text: '5' }]
+    - [{ url: '?staffel=609&r=3#p2174x2179', title: 'gegen SF Buxtehude', text: '3' }]
+    - [{ url: '?staffel=609&r=5#p2174x2180', title: 'gegen SK Hermannsburg', text: '4' }]
+    - [{ url: '?staffel=609&r=2#p2174x2173', title: 'gegen MTV Tostedt', text: '5' }]
+    - [{ url: '?staffel=609&r=7#p2174x2175', title: 'gegen SK Verden', text: 5½ }]
+    - 11
+    - '38'
+    - ''
+-
+    - '5.'
+    - { text: 'SF Lilienthal', url: '?mannschaft=2183', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=609&r=5#p2183x2182', title: 'gegen SV Werder Bremen 3', text: '2' }]
+    - [{ url: '?staffel=609&r=8#p2183x2178', title: 'gegen SG Niederelbe', text: '2' }]
+    - [{ url: '?staffel=609&r=9#p2183x2176', title: 'gegen SF Leherheide', text: '5' }]
+    - [{ url: '?staffel=609&r=1#p2183x2174', title: 'gegen Stader SV 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=609&r=2#p2183x2177', title: 'gegen TuS Varrel', text: 3½ }]
+    - [{ url: '?staffel=609&r=7#p2183x2179', title: 'gegen SF Buxtehude', text: 5½ }]
+    - [{ url: '?staffel=609&r=3#p2183x2180', title: 'gegen SK Hermannsburg', text: 4½ }]
+    - [{ url: '?staffel=609&r=6#p2183x2173', title: 'gegen MTV Tostedt', text: '5' }]
+    - [{ url: '?staffel=609&r=4#p2183x2175', title: 'gegen SK Verden', text: 4½ }]
+    - 10
+    - 35½
+    - ''
+-
+    - '6.'
+    - { text: 'TuS Varrel', url: '?mannschaft=2177', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=609&r=7#p2177x2182', title: 'gegen SV Werder Bremen 3', text: 3½ }]
+    - [{ url: '?staffel=609&r=5#p2177x2178', title: 'gegen SG Niederelbe', text: 2½ }]
+    - [{ url: '?staffel=609&r=4#p2177x2176', title: 'gegen SF Leherheide', text: '2' }]
+    - [{ url: '?staffel=609&r=9#p2177x2174', title: 'gegen Stader SV 2', text: '3' }]
+    - [{ url: '?staffel=609&r=2#p2177x2183', title: 'gegen SF Lilienthal', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=609&r=1#p2177x2179', title: 'gegen SF Buxtehude', text: '4' }]
+    - [{ url: '?staffel=609&r=8#p2177x2180', title: 'gegen SK Hermannsburg', text: 4½ }]
+    - [{ url: '?staffel=609&r=3#p2177x2173', title: 'gegen MTV Tostedt', text: '4' }]
+    - [{ url: '?staffel=609&r=6#p2177x2175', title: 'gegen SK Verden', text: '5' }]
+    - 8
+    - '33'
+    - ''
+-
+    - '7.'
+    - { text: 'SF Buxtehude', url: '?mannschaft=2179', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=609&r=4#p2179x2182', title: 'gegen SV Werder Bremen 3', text: 3½ }]
+    - [{ url: '?staffel=609&r=2#p2179x2178', title: 'gegen SG Niederelbe', text: '3' }]
+    - [{ url: '?staffel=609&r=5#p2179x2176', title: 'gegen SF Leherheide', text: ½ }]
+    - [{ url: '?staffel=609&r=3#p2179x2174', title: 'gegen Stader SV 2', text: '5' }]
+    - [{ url: '?staffel=609&r=7#p2179x2183', title: 'gegen SF Lilienthal', text: 2½ }]
+    - [{ url: '?staffel=609&r=1#p2179x2177', title: 'gegen TuS Varrel', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=609&r=6#p2179x2180', title: 'gegen SK Hermannsburg', text: 3½ }]
+    - [{ url: '?staffel=609&r=8#p2179x2173', title: 'gegen MTV Tostedt', text: 4½ }]
+    - [{ url: '?staffel=609&r=9#p2179x2175', title: 'gegen SK Verden', text: 4½ }]
+    - 7
+    - '31'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Hermannsburg', url: '?mannschaft=2180', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=609&r=9#p2180x2182', title: 'gegen SV Werder Bremen 3', text: '3' }]
+    - [{ url: '?staffel=609&r=7#p2180x2178', title: 'gegen SG Niederelbe', text: '4' }]
+    - [{ url: '?staffel=609&r=1#p2180x2176', title: 'gegen SF Leherheide', text: 1½ }]
+    - [{ url: '?staffel=609&r=5#p2180x2174', title: 'gegen Stader SV 2', text: '4' }]
+    - [{ url: '?staffel=609&r=3#p2180x2183', title: 'gegen SF Lilienthal', text: 3½ }]
+    - [{ url: '?staffel=609&r=8#p2180x2177', title: 'gegen TuS Varrel', text: 3½ }]
+    - [{ url: '?staffel=609&r=6#p2180x2179', title: 'gegen SF Buxtehude', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=609&r=4#p2180x2173', title: 'gegen MTV Tostedt', text: 3½ }]
+    - [{ url: '?staffel=609&r=2#p2180x2175', title: 'gegen SK Verden', text: 4½ }]
+    - 6
+    - '32'
+    - ''
+-
+    - '9.'
+    - { text: 'MTV Tostedt', url: '?mannschaft=2173', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=609&r=1#p2173x2182', title: 'gegen SV Werder Bremen 3', text: 2½ }]
+    - [{ url: '?staffel=609&r=9#p2173x2178', title: 'gegen SG Niederelbe', text: 3½ }]
+    - [{ url: '?staffel=609&r=7#p2173x2176', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=609&r=2#p2173x2174', title: 'gegen Stader SV 2', text: '3' }]
+    - [{ url: '?staffel=609&r=6#p2173x2183', title: 'gegen SF Lilienthal', text: '3' }]
+    - [{ url: '?staffel=609&r=3#p2173x2177', title: 'gegen TuS Varrel', text: '4' }]
+    - [{ url: '?staffel=609&r=8#p2173x2179', title: 'gegen SF Buxtehude', text: 3½ }]
+    - [{ url: '?staffel=609&r=4#p2173x2180', title: 'gegen SK Hermannsburg', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=609&r=5#p2173x2175', title: 'gegen SK Verden', text: '5' }]
+    - 5
+    - 32½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Verden', url: '?mannschaft=2175', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=609&r=3#p2175x2182', title: 'gegen SV Werder Bremen 3', text: 1½ }]
+    - [{ url: '?staffel=609&r=1#p2175x2178', title: 'gegen SG Niederelbe', text: '4' }]
+    - [{ url: '?staffel=609&r=8#p2175x2176', title: 'gegen SF Leherheide', text: 4½ }]
+    - [{ url: '?staffel=609&r=7#p2175x2174', title: 'gegen Stader SV 2', text: 2½ }]
+    - [{ url: '?staffel=609&r=4#p2175x2183', title: 'gegen SF Lilienthal', text: 3½ }]
+    - [{ url: '?staffel=609&r=6#p2175x2177', title: 'gegen TuS Varrel', text: '3' }]
+    - [{ url: '?staffel=609&r=9#p2175x2179', title: 'gegen SF Buxtehude', text: 3½ }]
+    - [{ url: '?staffel=609&r=2#p2175x2180', title: 'gegen SK Hermannsburg', text: 3½ }]
+    - [{ url: '?staffel=609&r=5#p2175x2173', title: 'gegen MTV Tostedt', text: '3' }]
+    - xxx
+    - 3
+    - '29'
+    - ''

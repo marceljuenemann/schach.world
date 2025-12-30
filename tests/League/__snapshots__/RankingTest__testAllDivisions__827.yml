@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Empor Potsdam', url: '?mannschaft=7015', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1647&r=2#p7015x7016', title: 'gegen SC Weisse Dame', text: '6' }]
+    - [{ url: '?staffel=1647&r=1#p7015x7014', title: 'gegen Mattnetz Berlin', text: '6' }]
+    - 4
+    - '12'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Weisse Dame', url: '?mannschaft=7016', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1647&r=2#p7016x7015', title: 'gegen Empor Potsdam', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1647&r=3#p7016x7014', title: 'gegen Mattnetz Berlin', text: '6' }]
+    - 2
+    - '6'
+    - absteigerRelegation
+-
+    - '3.'
+    - { text: 'Mattnetz Berlin', url: '?mannschaft=7014', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1647&r=1#p7014x7015', title: 'gegen Empor Potsdam', text: '0' }]
+    - [{ url: '?staffel=1647&r=3#p7014x7016', title: 'gegen SC Weisse Dame', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - absteiger

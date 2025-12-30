@@ -1,58 +1,44 @@
 # Exclude the WordPress installation, except for custom NSV themes and plugins
 public/wordpress/*
+!public/wordpress/wp-config-sample-nsv.php
 !public/wordpress/wp-content
 public/wordpress/wp-content/*
 !public/wordpress/wp-content/themes
 public/wordpress/wp-content/themes/*
+!public/wordpress/wp-content/themes/bezirk2020
 !public/wordpress/wp-content/themes/nsv2020
 !public/wordpress/wp-content/themes/nsv2020-local
 !public/wordpress/wp-content/plugins
 public/wordpress/wp-content/plugins/*
+!public/wordpress/wp-content/plugins/bezirk-v3
 !public/wordpress/wp-content/plugins/nsv-core
-!public/wordpress/wp-content/plugins/nsv-turniere
 !public/wordpress/wp-content/plugins/nsv-misc
+!public/wordpress/wp-content/plugins/nsv-turniere
 !public/wordpress/wp-content/plugins/nsv-v3
-# TODO: Add plugins/nsv-archive after moving spreadsheet links to config file
-
-# Add some config files for nsv-turniere plugin (just as an example really) 
-!public/wordpress/wp-content/uploads
-public/wordpress/wp-content/uploads/*
-!public/wordpress/wp-content/uploads/turniere
-public/wordpress/wp-content/uploads/turniere/*
-!public/wordpress/wp-content/uploads/turniere/*.json
-!public/wordpress/wp-content/uploads/turniere/lem
-public/wordpress/wp-content/uploads/turniere/lem/*
-!public/wordpress/wp-content/uploads/turniere/lem/*.json
 
 # TODO: The following files are legacy code and should be rewritten rather than added to the repo
 public/anmeldung/
-public/bezirke/
 public/core/apps/
-public/core/modules/
 public/core/templates/
 public/core/*.php
-public/grandprix/
-public/termine/
-public/turniere/
-public/verband/
 
 # Files that should actually be excluded
+data/
+!data/registration/test.php
 public/cache/
 public/downloads/
+public/grandprix/
 public/images/
 public/ligen/config.inc.php
 public/ligen/_test/swi/*.swi
 public/schachzeitung/
-public/z-*
-
+public/verband/
 public/.user.ini
-public/cronjob_*
-public/goto.php
 
 tests/League/Api/Service/actual/
 
-# Don't want to share VS Code settings as I disable git when mounting with sshfs :)
-.vscode
+#Ignore PHPstorm settings directory
+.idea
 
 
 ###> symfony/framework-bundle ###
@@ -74,3 +60,9 @@ tests/League/Api/Service/actual/
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+
+###> Ignore stuff used by Thomas for Development purposes only <###
+/src/League/Controller/UtilityController.php
+/src/League/templates/utility
+/public/utility
+###> Ignore stuff used by Thomas for Development purposes only <###

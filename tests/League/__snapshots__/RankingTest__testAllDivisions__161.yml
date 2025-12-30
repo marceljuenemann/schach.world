@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Mülheim Nord 2', url: '?mannschaft=1847', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=580&r=1#p1847x1848', title: 'gegen DSV  1854', text: '2' }]
+    - [{ url: '?staffel=580&r=5#p1847x1870', title: 'gegen Nordhorn-Blanke', text: 2½ }]
+    - [{ url: '?staffel=580&r=6#p1847x1852', title: 'gegen Walsum SC 72', text: '4' }]
+    - [{ url: '?staffel=580&r=2#p1847x1863', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=580&r=4#p1847x1864', title: 'gegen SV Erftstadt', text: 3½ }]
+    - 9
+    - '15'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'DSV  1854', url: '?mannschaft=1848', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=580&r=1#p1848x1847', title: 'gegen Mülheim Nord 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=580&r=2#p1848x1870', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=580&r=4#p1848x1852', title: 'gegen Walsum SC 72', text: '3' }]
+    - [{ url: '?staffel=580&r=6#p1848x1863', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=580&r=5#p1848x1864', title: 'gegen SV Erftstadt', text: 2½ }]
+    - 9
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: Nordhorn-Blanke, url: '?mannschaft=1870', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=580&r=5#p1870x1847', title: 'gegen Mülheim Nord 2', text: 1½ }]
+    - [{ url: '?staffel=580&r=2#p1870x1848', title: 'gegen DSV  1854', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=580&r=1#p1870x1852', title: 'gegen Walsum SC 72', text: '2' }]
+    - [{ url: '?staffel=580&r=4#p1870x1863', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=580&r=6#p1870x1864', title: 'gegen SV Erftstadt', text: '4' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'Walsum SC 72', url: '?mannschaft=1852', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=580&r=6#p1852x1847', title: 'gegen Mülheim Nord 2', text: '0' }]
+    - [{ url: '?staffel=580&r=4#p1852x1848', title: 'gegen DSV  1854', text: '1' }]
+    - [{ url: '?staffel=580&r=1#p1852x1870', title: 'gegen Nordhorn-Blanke', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=580&r=5#p1852x1863', title: 'gegen Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=580&r=2#p1852x1864', title: 'gegen SV Erftstadt', text: 3½ }]
+    - 4
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: Barsinghausen, url: '?mannschaft=1863', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=580&r=2#p1863x1847', title: 'gegen Mülheim Nord 2', text: '1' }]
+    - [{ url: '?staffel=580&r=6#p1863x1848', title: 'gegen DSV  1854', text: '1' }]
+    - [{ url: '?staffel=580&r=4#p1863x1870', title: 'gegen Nordhorn-Blanke', text: '1' }]
+    - [{ url: '?staffel=580&r=5#p1863x1852', title: 'gegen Walsum SC 72', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=580&r=1#p1863x1864', title: 'gegen SV Erftstadt', text: '2' }]
+    - 2
+    - '7'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SV Erftstadt', url: '?mannschaft=1864', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=580&r=4#p1864x1847', title: 'gegen Mülheim Nord 2', text: ½ }]
+    - [{ url: '?staffel=580&r=5#p1864x1848', title: 'gegen DSV  1854', text: 1½ }]
+    - [{ url: '?staffel=580&r=6#p1864x1870', title: 'gegen Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=580&r=2#p1864x1852', title: 'gegen Walsum SC 72', text: ½ }]
+    - [{ url: '?staffel=580&r=1#p1864x1863', title: 'gegen Barsinghausen', text: '2' }]
+    - xxx
+    - 1
+    - 4½
+    - absteiger

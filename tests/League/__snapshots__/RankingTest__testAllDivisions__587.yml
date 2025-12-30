@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Königssprin. BS 2', url: '?mannschaft=5281', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1073&r=9#p5281x5278', title: 'gegen SV Apelnstedt', text: 3½ }]
+    - [{ url: '?staffel=1073&r=5#p5281x5276', title: 'gegen Peiner SV 2', text: 6½ }]
+    - [{ url: '?staffel=1073&r=2#p5281x5330', title: 'gegen SF Bleckenstedt', text: '4' }]
+    - [{ url: '?staffel=1073&r=4#p5281x5296', title: 'gegen SG Schöningen', text: '6' }]
+    - [{ url: '?staffel=1073&r=8#p5281x5286', title: 'gegen SC Wolfsburg 3', text: 7½ }]
+    - [{ url: '?staffel=1073&r=3#p5281x5283', title: 'gegen SG Elm/Lappwald 2', text: 5½ }]
+    - [{ url: '?staffel=1073&r=6#p5281x5285', title: 'gegen SK Salzgitter-Bad', text: 4½ }]
+    - [{ url: '?staffel=1073&r=1#p5281x5280', title: 'gegen Königssprin. BS 3', text: 3½ }]
+    - 13
+    - '41'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Apelnstedt', url: '?mannschaft=5278', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1073&r=9#p5278x5281', title: 'gegen Königssprin. BS 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1073&r=7#p5278x5276', title: 'gegen Peiner SV 2', text: '3' }]
+    - [{ url: '?staffel=1073&r=4#p5278x5330', title: 'gegen SF Bleckenstedt', text: '4' }]
+    - [{ url: '?staffel=1073&r=6#p5278x5296', title: 'gegen SG Schöningen', text: '4' }]
+    - [{ url: '?staffel=1073&r=1#p5278x5286', title: 'gegen SC Wolfsburg 3', text: 5½ }]
+    - [{ url: '?staffel=1073&r=5#p5278x5283', title: 'gegen SG Elm/Lappwald 2', text: 5½ }]
+    - [{ url: '?staffel=1073&r=8#p5278x5285', title: 'gegen SK Salzgitter-Bad', text: '6' }]
+    - [{ url: '?staffel=1073&r=3#p5278x5280', title: 'gegen Königssprin. BS 3', text: 6½ }]
+    - 12
+    - '39'
+    - ''
+-
+    - '3.'
+    - { text: 'Peiner SV 2', url: '?mannschaft=5276', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1073&r=5#p5276x5281', title: 'gegen Königssprin. BS 2', text: 1½ }]
+    - [{ url: '?staffel=1073&r=7#p5276x5278', title: 'gegen SV Apelnstedt', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1073&r=9#p5276x5330', title: 'gegen SF Bleckenstedt', text: '4' }]
+    - [{ url: '?staffel=1073&r=2#p5276x5296', title: 'gegen SG Schöningen', text: '3' }]
+    - [{ url: '?staffel=1073&r=6#p5276x5286', title: 'gegen SC Wolfsburg 3', text: '6' }]
+    - [{ url: '?staffel=1073&r=1#p5276x5283', title: 'gegen SG Elm/Lappwald 2', text: 5½ }]
+    - [{ url: '?staffel=1073&r=4#p5276x5285', title: 'gegen SK Salzgitter-Bad', text: 6½ }]
+    - [{ url: '?staffel=1073&r=8#p5276x5280', title: 'gegen Königssprin. BS 3', text: '8' }]
+    - 11
+    - 39½
+    - ''
+-
+    - '4.'
+    - { text: 'SF Bleckenstedt', url: '?mannschaft=5330', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1073&r=2#p5330x5281', title: 'gegen Königssprin. BS 2', text: '4' }]
+    - [{ url: '?staffel=1073&r=4#p5330x5278', title: 'gegen SV Apelnstedt', text: '4' }]
+    - [{ url: '?staffel=1073&r=9#p5330x5276', title: 'gegen Peiner SV 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1073&r=8#p5330x5296', title: 'gegen SG Schöningen', text: '4' }]
+    - [{ url: '?staffel=1073&r=3#p5330x5286', title: 'gegen SC Wolfsburg 3', text: 4½ }]
+    - [{ url: '?staffel=1073&r=7#p5330x5283', title: 'gegen SG Elm/Lappwald 2', text: '4' }]
+    - [{ url: '?staffel=1073&r=1#p5330x5285', title: 'gegen SK Salzgitter-Bad', text: 5½ }]
+    - [{ url: '?staffel=1073&r=5#p5330x5280', title: 'gegen Königssprin. BS 3', text: 5½ }]
+    - 11
+    - 35½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Schöningen', url: '?mannschaft=5296', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1073&r=4#p5296x5281', title: 'gegen Königssprin. BS 2', text: '2' }]
+    - [{ url: '?staffel=1073&r=6#p5296x5278', title: 'gegen SV Apelnstedt', text: '4' }]
+    - [{ url: '?staffel=1073&r=2#p5296x5276', title: 'gegen Peiner SV 2', text: '5' }]
+    - [{ url: '?staffel=1073&r=8#p5296x5330', title: 'gegen SF Bleckenstedt', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1073&r=5#p5296x5286', title: 'gegen SC Wolfsburg 3', text: '3' }]
+    - [{ url: '?staffel=1073&r=9#p5296x5283', title: 'gegen SG Elm/Lappwald 2', text: '4' }]
+    - [{ url: '?staffel=1073&r=3#p5296x5285', title: 'gegen SK Salzgitter-Bad', text: '6' }]
+    - [{ url: '?staffel=1073&r=7#p5296x5280', title: 'gegen Königssprin. BS 3', text: '6' }]
+    - 9
+    - '34'
+    - ''
+-
+    - '6.'
+    - { text: 'SC Wolfsburg 3', url: '?mannschaft=5286', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1073&r=8#p5286x5281', title: 'gegen Königssprin. BS 2', text: ½ }]
+    - [{ url: '?staffel=1073&r=1#p5286x5278', title: 'gegen SV Apelnstedt', text: 2½ }]
+    - [{ url: '?staffel=1073&r=6#p5286x5276', title: 'gegen Peiner SV 2', text: '2' }]
+    - [{ url: '?staffel=1073&r=3#p5286x5330', title: 'gegen SF Bleckenstedt', text: 3½ }]
+    - [{ url: '?staffel=1073&r=5#p5286x5296', title: 'gegen SG Schöningen', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1073&r=4#p5286x5283', title: 'gegen SG Elm/Lappwald 2', text: '5' }]
+    - [{ url: '?staffel=1073&r=7#p5286x5285', title: 'gegen SK Salzgitter-Bad', text: 4½ }]
+    - [{ url: '?staffel=1073&r=2#p5286x5280', title: 'gegen Königssprin. BS 3', text: '5' }]
+    - 8
+    - '28'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Elm/Lappwald 2', url: '?mannschaft=5283', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1073&r=3#p5283x5281', title: 'gegen Königssprin. BS 2', text: 2½ }]
+    - [{ url: '?staffel=1073&r=5#p5283x5278', title: 'gegen SV Apelnstedt', text: 2½ }]
+    - [{ url: '?staffel=1073&r=1#p5283x5276', title: 'gegen Peiner SV 2', text: 2½ }]
+    - [{ url: '?staffel=1073&r=7#p5283x5330', title: 'gegen SF Bleckenstedt', text: '4' }]
+    - [{ url: '?staffel=1073&r=9#p5283x5296', title: 'gegen SG Schöningen', text: '4' }]
+    - [{ url: '?staffel=1073&r=4#p5283x5286', title: 'gegen SC Wolfsburg 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1073&r=2#p5283x5285', title: 'gegen SK Salzgitter-Bad', text: 2½ }]
+    - [{ url: '?staffel=1073&r=6#p5283x5280', title: 'gegen Königssprin. BS 3', text: 4½ }]
+    - 4
+    - 25½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Salzgitter-Bad', url: '?mannschaft=5285', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1073&r=6#p5285x5281', title: 'gegen Königssprin. BS 2', text: 3½ }]
+    - [{ url: '?staffel=1073&r=8#p5285x5278', title: 'gegen SV Apelnstedt', text: '2' }]
+    - [{ url: '?staffel=1073&r=4#p5285x5276', title: 'gegen Peiner SV 2', text: 1½ }]
+    - [{ url: '?staffel=1073&r=1#p5285x5330', title: 'gegen SF Bleckenstedt', text: 2½ }]
+    - [{ url: '?staffel=1073&r=3#p5285x5296', title: 'gegen SG Schöningen', text: '2' }]
+    - [{ url: '?staffel=1073&r=7#p5285x5286', title: 'gegen SC Wolfsburg 3', text: 3½ }]
+    - [{ url: '?staffel=1073&r=2#p5285x5283', title: 'gegen SG Elm/Lappwald 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1073&r=9#p5285x5280', title: 'gegen Königssprin. BS 3', text: 4½ }]
+    - 4
+    - '25'
+    - ''
+-
+    - '9.'
+    - { text: 'Königssprin. BS 3', url: '?mannschaft=5280', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1073&r=1#p5280x5281', title: 'gegen Königssprin. BS 2', text: 2½ }]
+    - [{ url: '?staffel=1073&r=3#p5280x5278', title: 'gegen SV Apelnstedt', text: 1½ }]
+    - [{ url: '?staffel=1073&r=8#p5280x5276', title: 'gegen Peiner SV 2', text: '0' }]
+    - [{ url: '?staffel=1073&r=5#p5280x5330', title: 'gegen SF Bleckenstedt', text: 2½ }]
+    - [{ url: '?staffel=1073&r=7#p5280x5296', title: 'gegen SG Schöningen', text: '2' }]
+    - [{ url: '?staffel=1073&r=2#p5280x5286', title: 'gegen SC Wolfsburg 3', text: '3' }]
+    - [{ url: '?staffel=1073&r=6#p5280x5283', title: 'gegen SG Elm/Lappwald 2', text: 3½ }]
+    - [{ url: '?staffel=1073&r=9#p5280x5285', title: 'gegen SK Salzgitter-Bad', text: 3½ }]
+    - xxx
+    - 0
+    - 18½
+    - ''

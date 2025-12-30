@@ -2,7 +2,6 @@
 
 namespace Nsv\League\Api\Model;
 
-use Nsv\League\Entity\Division;
 use Nsv\League\Entity\Round;
 
 /**
@@ -14,6 +13,7 @@ class MatchDay
   public ?string $date;
   public string $uri;
   public string $uriPdf;
+  public string $uriPgn;
   public string $uriApi;
 
   public array $pairings = array();
@@ -22,7 +22,8 @@ class MatchDay
   public ?array $lateRegisteredPlayers;
   public ?array $allRounds;
   public ?string $lastModified;
-  public ?string $generatedAt;
+  // TODO: Remove if we are sure that we don't need a cache anymore.
+  // public ?string $generatedAt;
 
   public static function fromRound(Round $round): MatchDay {
     $result = new MatchDay();
@@ -30,6 +31,7 @@ class MatchDay
     $result->date = $round->date;
     $result->uri = $round->uri();
     $result->uriPdf = $round->pdfUri();
+    $result->uriPgn = $round->pgnUri();
     $result->uriApi = $round->apiUri();
     return $result;
   }

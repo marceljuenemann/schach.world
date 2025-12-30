@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Gretenberg 99', url: '?mannschaft=6734', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1638&r=1#p6734x6965', title: 'gegen SF Barsinghausen 99', text: '3' }, { url: '?staffel=1638&r=8#p6734x6965', title: 'gegen SF Barsinghausen 99', text: '3' }]
+    - [{ url: '?staffel=1638&r=3#p6734x6800', title: 'gegen Hannover 96 99', text: '2' }, { url: '?staffel=1638&r=10#p6734x6800', title: 'gegen Hannover 96 99', text: '4' }]
+    - [{ url: '?staffel=1638&r=4#p6734x6748', title: 'gegen SG Garbsen/Marienw 99', text: '4' }, { url: '?staffel=1638&r=5#p6734x6748', title: 'gegen SG Garbsen/Marienw 99', text: '4' }]
+    - 11
+    - '20'
+    - ''
+-
+    - '2.'
+    - { text: 'SF Barsinghausen 99', url: '?mannschaft=6965', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1638&r=1#p6965x6734', title: 'gegen SV Gretenberg 99', text: '1' }, { url: '?staffel=1638&r=8#p6965x6734', title: 'gegen SV Gretenberg 99', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1638&r=2#p6965x6800', title: 'gegen Hannover 96 99', text: '3' }, { url: '?staffel=1638&r=6#p6965x6800', title: 'gegen Hannover 96 99', text: '3' }]
+    - [{ url: '?staffel=1638&r=3#p6965x6748', title: 'gegen SG Garbsen/Marienw 99', text: '4' }, { url: '?staffel=1638&r=9#p6965x6748', title: 'gegen SG Garbsen/Marienw 99', text: '4' }]
+    - 8
+    - '16'
+    - ''
+-
+    - '3.'
+    - { text: 'Hannover 96 99', url: '?mannschaft=6800', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1638&r=3#p6800x6734', title: 'gegen SV Gretenberg 99', text: '2' }, { url: '?staffel=1638&r=10#p6800x6734', title: 'gegen SV Gretenberg 99', text: '0' }]
+    - [{ url: '?staffel=1638&r=2#p6800x6965', title: 'gegen SF Barsinghausen 99', text: '1' }, { url: '?staffel=1638&r=6#p6800x6965', title: 'gegen SF Barsinghausen 99', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1638&r=1#p6800x6748', title: 'gegen SG Garbsen/Marienw 99', text: '4' }, { url: '?staffel=1638&r=7#p6800x6748', title: 'gegen SG Garbsen/Marienw 99', text: '2' }]
+    - 4
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Garbsen/Marienw 99', url: '?mannschaft=6748', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1638&r=4#p6748x6734', title: 'gegen SV Gretenberg 99', text: '0' }, { url: '?staffel=1638&r=5#p6748x6734', title: 'gegen SV Gretenberg 99', text: '0' }]
+    - [{ url: '?staffel=1638&r=3#p6748x6965', title: 'gegen SF Barsinghausen 99', text: '0' }, { url: '?staffel=1638&r=9#p6748x6965', title: 'gegen SF Barsinghausen 99', text: '0' }]
+    - [{ url: '?staffel=1638&r=1#p6748x6800', title: 'gegen Hannover 96 99', text: '0' }, { url: '?staffel=1638&r=7#p6748x6800', title: 'gegen Hannover 96 99', text: '2' }]
+    - xxx
+    - 1
+    - '2'
+    - ''

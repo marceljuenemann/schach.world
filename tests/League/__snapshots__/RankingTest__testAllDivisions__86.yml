@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamelner SV', url: '?mannschaft=1170', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=499&r=3#p1170x1168', title: 'gegen SVG Salzgitter', text: '3' }]
+    - [{ url: '?staffel=499&r=6#p1170x1171', title: 'gegen SF Hannover', text: 4½ }]
+    - [{ url: '?staffel=499&r=4#p1170x1166', title: 'gegen SK Lehrte', text: '5' }]
+    - [{ url: '?staffel=499&r=5#p1170x1172', title: 'gegen BadSalzdetfurth', text: '7' }]
+    - [{ url: '?staffel=499&r=9#p1170x1174', title: 'gegen SC Wolfsburg', text: '6' }]
+    - [{ url: '?staffel=499&r=1#p1170x1173', title: 'gegen Tempo Göttingen 2', text: '5' }]
+    - [{ url: '?staffel=499&r=8#p1170x1167', title: 'gegen SV Berenbostel', text: '6' }]
+    - [{ url: '?staffel=499&r=7#p1170x1169', title: 'gegen SVG Salzgitter 2', text: '7' }]
+    - [{ url: '?staffel=499&r=2#p1170x1165', title: 'gegen SK Ricklingen', text: '7' }]
+    - 16
+    - 50½
+    - ''
+-
+    - '2.'
+    - { text: 'SVG Salzgitter', url: '?mannschaft=1168', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=499&r=3#p1168x1170', title: 'gegen Hamelner SV', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=499&r=8#p1168x1171', title: 'gegen SF Hannover', text: '6' }]
+    - [{ url: '?staffel=499&r=9#p1168x1166', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=499&r=2#p1168x1172', title: 'gegen BadSalzdetfurth', text: '7' }]
+    - [{ url: '?staffel=499&r=7#p1168x1174', title: 'gegen SC Wolfsburg', text: 4½ }]
+    - [{ url: '?staffel=499&r=4#p1168x1173', title: 'gegen Tempo Göttingen 2', text: '7' }]
+    - [{ url: '?staffel=499&r=5#p1168x1167', title: 'gegen SV Berenbostel', text: '5' }]
+    - [{ url: '?staffel=499&r=1#p1168x1169', title: 'gegen SVG Salzgitter 2', text: '5' }]
+    - [{ url: '?staffel=499&r=6#p1168x1165', title: 'gegen SK Ricklingen', text: 5½ }]
+    - 16
+    - '48'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Hannover', url: '?mannschaft=1171', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=499&r=6#p1171x1170', title: 'gegen Hamelner SV', text: 3½ }]
+    - [{ url: '?staffel=499&r=8#p1171x1168', title: 'gegen SVG Salzgitter', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=499&r=5#p1171x1166', title: 'gegen SK Lehrte', text: 4½ }]
+    - [{ url: '?staffel=499&r=3#p1171x1172', title: 'gegen BadSalzdetfurth', text: '5' }]
+    - [{ url: '?staffel=499&r=1#p1171x1174', title: 'gegen SC Wolfsburg', text: '5' }]
+    - [{ url: '?staffel=499&r=7#p1171x1173', title: 'gegen Tempo Göttingen 2', text: '6' }]
+    - [{ url: '?staffel=499&r=4#p1171x1167', title: 'gegen SV Berenbostel', text: '4' }]
+    - [{ url: '?staffel=499&r=2#p1171x1169', title: 'gegen SVG Salzgitter 2', text: '4' }]
+    - [{ url: '?staffel=499&r=9#p1171x1165', title: 'gegen SK Ricklingen', text: '5' }]
+    - 12
+    - '39'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte', url: '?mannschaft=1166', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=499&r=4#p1166x1170', title: 'gegen Hamelner SV', text: '3' }]
+    - [{ url: '?staffel=499&r=9#p1166x1168', title: 'gegen SVG Salzgitter', text: '5' }]
+    - [{ url: '?staffel=499&r=5#p1166x1171', title: 'gegen SF Hannover', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=499&r=6#p1166x1172', title: 'gegen BadSalzdetfurth', text: 4½ }]
+    - [{ url: '?staffel=499&r=2#p1166x1174', title: 'gegen SC Wolfsburg', text: 5½ }]
+    - [{ url: '?staffel=499&r=8#p1166x1173', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=499&r=1#p1166x1167', title: 'gegen SV Berenbostel', text: '4' }]
+    - [{ url: '?staffel=499&r=3#p1166x1169', title: 'gegen SVG Salzgitter 2', text: 3½ }]
+    - [{ url: '?staffel=499&r=7#p1166x1165', title: 'gegen SK Ricklingen', text: 5½ }]
+    - 10
+    - 38½
+    - ''
+-
+    - '5.'
+    - { text: BadSalzdetfurth, url: '?mannschaft=1172', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=499&r=5#p1172x1170', title: 'gegen Hamelner SV', text: '1' }]
+    - [{ url: '?staffel=499&r=2#p1172x1168', title: 'gegen SVG Salzgitter', text: '1' }]
+    - [{ url: '?staffel=499&r=3#p1172x1171', title: 'gegen SF Hannover', text: '3' }]
+    - [{ url: '?staffel=499&r=6#p1172x1166', title: 'gegen SK Lehrte', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=499&r=4#p1172x1174', title: 'gegen SC Wolfsburg', text: '4' }]
+    - [{ url: '?staffel=499&r=9#p1172x1173', title: 'gegen Tempo Göttingen 2', text: '5' }]
+    - [{ url: '?staffel=499&r=7#p1172x1167', title: 'gegen SV Berenbostel', text: '5' }]
+    - [{ url: '?staffel=499&r=8#p1172x1169', title: 'gegen SVG Salzgitter 2', text: '5' }]
+    - [{ url: '?staffel=499&r=1#p1172x1165', title: 'gegen SK Ricklingen', text: 6½ }]
+    - 9
+    - '34'
+    - ''
+-
+    - '6.'
+    - { text: 'SC Wolfsburg', url: '?mannschaft=1174', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=499&r=9#p1174x1170', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=499&r=7#p1174x1168', title: 'gegen SVG Salzgitter', text: 3½ }]
+    - [{ url: '?staffel=499&r=1#p1174x1171', title: 'gegen SF Hannover', text: '3' }]
+    - [{ url: '?staffel=499&r=2#p1174x1166', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=499&r=4#p1174x1172', title: 'gegen BadSalzdetfurth', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=499&r=3#p1174x1173', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=499&r=6#p1174x1167', title: 'gegen SV Berenbostel', text: 6½ }]
+    - [{ url: '?staffel=499&r=5#p1174x1169', title: 'gegen SVG Salzgitter 2', text: '6' }]
+    - [{ url: '?staffel=499&r=8#p1174x1165', title: 'gegen SK Ricklingen', text: 5½ }]
+    - 8
+    - '37'
+    - ''
+-
+    - '7.'
+    - { text: 'Tempo Göttingen 2', url: '?mannschaft=1173', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=499&r=1#p1173x1170', title: 'gegen Hamelner SV', text: '3' }]
+    - [{ url: '?staffel=499&r=4#p1173x1168', title: 'gegen SVG Salzgitter', text: '1' }]
+    - [{ url: '?staffel=499&r=7#p1173x1171', title: 'gegen SF Hannover', text: '2' }]
+    - [{ url: '?staffel=499&r=8#p1173x1166', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=499&r=9#p1173x1172', title: 'gegen BadSalzdetfurth', text: '3' }]
+    - [{ url: '?staffel=499&r=3#p1173x1174', title: 'gegen SC Wolfsburg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=499&r=2#p1173x1167', title: 'gegen SV Berenbostel', text: 5½ }]
+    - [{ url: '?staffel=499&r=6#p1173x1169', title: 'gegen SVG Salzgitter 2', text: '4' }]
+    - [{ url: '?staffel=499&r=5#p1173x1165', title: 'gegen SK Ricklingen', text: 5½ }]
+    - 7
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Berenbostel', url: '?mannschaft=1167', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=499&r=8#p1167x1170', title: 'gegen Hamelner SV', text: '2' }]
+    - [{ url: '?staffel=499&r=5#p1167x1168', title: 'gegen SVG Salzgitter', text: '3' }]
+    - [{ url: '?staffel=499&r=4#p1167x1171', title: 'gegen SF Hannover', text: '4' }]
+    - [{ url: '?staffel=499&r=1#p1167x1166', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=499&r=7#p1167x1172', title: 'gegen BadSalzdetfurth', text: '3' }]
+    - [{ url: '?staffel=499&r=6#p1167x1174', title: 'gegen SC Wolfsburg', text: 1½ }]
+    - [{ url: '?staffel=499&r=2#p1167x1173', title: 'gegen Tempo Göttingen 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=499&r=9#p1167x1169', title: 'gegen SVG Salzgitter 2', text: 4½ }]
+    - [{ url: '?staffel=499&r=3#p1167x1165', title: 'gegen SK Ricklingen', text: 6½ }]
+    - 6
+    - '31'
+    - ''
+-
+    - '9.'
+    - { text: 'SVG Salzgitter 2', url: '?mannschaft=1169', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=499&r=7#p1169x1170', title: 'gegen Hamelner SV', text: '1' }]
+    - [{ url: '?staffel=499&r=1#p1169x1168', title: 'gegen SVG Salzgitter', text: '3' }]
+    - [{ url: '?staffel=499&r=2#p1169x1171', title: 'gegen SF Hannover', text: '4' }]
+    - [{ url: '?staffel=499&r=3#p1169x1166', title: 'gegen SK Lehrte', text: 4½ }]
+    - [{ url: '?staffel=499&r=8#p1169x1172', title: 'gegen BadSalzdetfurth', text: '3' }]
+    - [{ url: '?staffel=499&r=5#p1169x1174', title: 'gegen SC Wolfsburg', text: '2' }]
+    - [{ url: '?staffel=499&r=6#p1169x1173', title: 'gegen Tempo Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=499&r=9#p1169x1167', title: 'gegen SV Berenbostel', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=499&r=4#p1169x1165', title: 'gegen SK Ricklingen', text: 3½ }]
+    - 4
+    - 28½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=1165', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=499&r=2#p1165x1170', title: 'gegen Hamelner SV', text: '1' }]
+    - [{ url: '?staffel=499&r=6#p1165x1168', title: 'gegen SVG Salzgitter', text: 2½ }]
+    - [{ url: '?staffel=499&r=9#p1165x1171', title: 'gegen SF Hannover', text: '3' }]
+    - [{ url: '?staffel=499&r=7#p1165x1166', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=499&r=1#p1165x1172', title: 'gegen BadSalzdetfurth', text: 1½ }]
+    - [{ url: '?staffel=499&r=8#p1165x1174', title: 'gegen SC Wolfsburg', text: 2½ }]
+    - [{ url: '?staffel=499&r=5#p1165x1173', title: 'gegen Tempo Göttingen 2', text: 2½ }]
+    - [{ url: '?staffel=499&r=3#p1165x1167', title: 'gegen SV Berenbostel', text: 1½ }]
+    - [{ url: '?staffel=499&r=4#p1165x1169', title: 'gegen SVG Salzgitter 2', text: 4½ }]
+    - xxx
+    - 2
+    - 21½
+    - ''

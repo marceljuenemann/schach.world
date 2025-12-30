@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'USV VB Halle', url: '?mannschaft=4274', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=899&r=6#p4274x4281', title: 'gegen Mattnetz Berlin', text: 2½ }]
+    - [{ url: '?staffel=899&r=5#p4274x4277', title: 'gegen SV Empor Berlin', text: 5½ }]
+    - [{ url: '?staffel=899&r=2#p4274x4278', title: 'gegen Chem. Weißensee', text: 3½ }]
+    - [{ url: '?staffel=899&r=1#p4274x4282', title: 'gegen AE Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=899&r=4#p4274x4276', title: 'gegen USV Potsdam', text: 4½ }]
+    - [{ url: '?staffel=899&r=8#p4274x4275', title: 'gegen SAV Torgelow', text: '5' }]
+    - [{ url: '?staffel=899&r=7#p4274x4273', title: 'gegen USC Magdeburg', text: '5' }]
+    - [{ url: '?staffel=899&r=9#p4274x4280', title: 'gegen Zitad. Spandau', text: '5' }]
+    - [{ url: '?staffel=899&r=3#p4274x4279', title: 'gegen Empor Potsdam', text: 5½ }]
+    - 16
+    - '40'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Mattnetz Berlin', url: '?mannschaft=4281', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=899&r=6#p4281x4274', title: 'gegen USV VB Halle', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=899&r=2#p4281x4277', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=899&r=8#p4281x4278', title: 'gegen Chem. Weißensee', text: '3' }]
+    - [{ url: '?staffel=899&r=7#p4281x4282', title: 'gegen AE Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=899&r=1#p4281x4276', title: 'gegen USV Potsdam', text: '4' }]
+    - [{ url: '?staffel=899&r=5#p4281x4275', title: 'gegen SAV Torgelow', text: '3' }]
+    - [{ url: '?staffel=899&r=4#p4281x4273', title: 'gegen USC Magdeburg', text: '5' }]
+    - [{ url: '?staffel=899&r=3#p4281x4280', title: 'gegen Zitad. Spandau', text: '5' }]
+    - [{ url: '?staffel=899&r=9#p4281x4279', title: 'gegen Empor Potsdam', text: '6' }]
+    - 15
+    - '36'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=4277', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=899&r=5#p4277x4274', title: 'gegen USV VB Halle', text: ½ }]
+    - [{ url: '?staffel=899&r=2#p4277x4281', title: 'gegen Mattnetz Berlin', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=899&r=7#p4277x4278', title: 'gegen Chem. Weißensee', text: '4' }]
+    - [{ url: '?staffel=899&r=6#p4277x4282', title: 'gegen AE Magdeburg', text: '4' }]
+    - [{ url: '?staffel=899&r=9#p4277x4276', title: 'gegen USV Potsdam', text: '2' }]
+    - [{ url: '?staffel=899&r=4#p4277x4275', title: 'gegen SAV Torgelow', text: '4' }]
+    - [{ url: '?staffel=899&r=3#p4277x4273', title: 'gegen USC Magdeburg', text: '3' }]
+    - [{ url: '?staffel=899&r=1#p4277x4280', title: 'gegen Zitad. Spandau', text: 5½ }]
+    - [{ url: '?staffel=899&r=8#p4277x4279', title: 'gegen Empor Potsdam', text: '3' }]
+    - 11
+    - '29'
+    - ''
+-
+    - '4.'
+    - { text: 'Chem. Weißensee', url: '?mannschaft=4278', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=899&r=2#p4278x4274', title: 'gegen USV VB Halle', text: 2½ }]
+    - [{ url: '?staffel=899&r=8#p4278x4281', title: 'gegen Mattnetz Berlin', text: '3' }]
+    - [{ url: '?staffel=899&r=7#p4278x4277', title: 'gegen SV Empor Berlin', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=899&r=3#p4278x4282', title: 'gegen AE Magdeburg', text: '1' }]
+    - [{ url: '?staffel=899&r=6#p4278x4276', title: 'gegen USV Potsdam', text: '4' }]
+    - [{ url: '?staffel=899&r=1#p4278x4275', title: 'gegen SAV Torgelow', text: '3' }]
+    - [{ url: '?staffel=899&r=9#p4278x4273', title: 'gegen USC Magdeburg', text: 4½ }]
+    - [{ url: '?staffel=899&r=4#p4278x4280', title: 'gegen Zitad. Spandau', text: 4½ }]
+    - [{ url: '?staffel=899&r=5#p4278x4279', title: 'gegen Empor Potsdam', text: '6' }]
+    - 10
+    - 30½
+    - ''
+-
+    - '5.'
+    - { text: 'AE Magdeburg', url: '?mannschaft=4282', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=899&r=1#p4282x4274', title: 'gegen USV VB Halle', text: 2½ }]
+    - [{ url: '?staffel=899&r=7#p4282x4281', title: 'gegen Mattnetz Berlin', text: 2½ }]
+    - [{ url: '?staffel=899&r=6#p4282x4277', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=899&r=3#p4282x4278', title: 'gegen Chem. Weißensee', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=899&r=5#p4282x4276', title: 'gegen USV Potsdam', text: '2' }]
+    - [{ url: '?staffel=899&r=9#p4282x4275', title: 'gegen SAV Torgelow', text: '3' }]
+    - [{ url: '?staffel=899&r=8#p4282x4273', title: 'gegen USC Magdeburg', text: '6' }]
+    - [{ url: '?staffel=899&r=2#p4282x4280', title: 'gegen Zitad. Spandau', text: 3½ }]
+    - [{ url: '?staffel=899&r=4#p4282x4279', title: 'gegen Empor Potsdam', text: 5½ }]
+    - 9
+    - '32'
+    - ''
+-
+    - '6.'
+    - { text: 'USV Potsdam', url: '?mannschaft=4276', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=899&r=4#p4276x4274', title: 'gegen USV VB Halle', text: 1½ }]
+    - [{ url: '?staffel=899&r=1#p4276x4281', title: 'gegen Mattnetz Berlin', text: '2' }]
+    - [{ url: '?staffel=899&r=9#p4276x4277', title: 'gegen SV Empor Berlin', text: '4' }]
+    - [{ url: '?staffel=899&r=6#p4276x4278', title: 'gegen Chem. Weißensee', text: '2' }]
+    - [{ url: '?staffel=899&r=5#p4276x4282', title: 'gegen AE Magdeburg', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=899&r=3#p4276x4275', title: 'gegen SAV Torgelow', text: '2' }]
+    - [{ url: '?staffel=899&r=2#p4276x4273', title: 'gegen USC Magdeburg', text: '3' }]
+    - [{ url: '?staffel=899&r=8#p4276x4280', title: 'gegen Zitad. Spandau', text: 4½ }]
+    - [{ url: '?staffel=899&r=7#p4276x4279', title: 'gegen Empor Potsdam', text: 5½ }]
+    - 9
+    - 28½
+    - ''
+-
+    - '7.'
+    - { text: 'SAV Torgelow', url: '?mannschaft=4275', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=899&r=8#p4275x4274', title: 'gegen USV VB Halle', text: '1' }]
+    - [{ url: '?staffel=899&r=5#p4275x4281', title: 'gegen Mattnetz Berlin', text: '3' }]
+    - [{ url: '?staffel=899&r=4#p4275x4277', title: 'gegen SV Empor Berlin', text: '2' }]
+    - [{ url: '?staffel=899&r=1#p4275x4278', title: 'gegen Chem. Weißensee', text: '3' }]
+    - [{ url: '?staffel=899&r=9#p4275x4282', title: 'gegen AE Magdeburg', text: '3' }]
+    - [{ url: '?staffel=899&r=3#p4275x4276', title: 'gegen USV Potsdam', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=899&r=6#p4275x4273', title: 'gegen USC Magdeburg', text: 3½ }]
+    - [{ url: '?staffel=899&r=7#p4275x4280', title: 'gegen Zitad. Spandau', text: 1½ }]
+    - [{ url: '?staffel=899&r=2#p4275x4279', title: 'gegen Empor Potsdam', text: '4' }]
+    - 9
+    - '25'
+    - absteiger
+-
+    - '8.'
+    - { text: 'USC Magdeburg', url: '?mannschaft=4273', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=899&r=7#p4273x4274', title: 'gegen USV VB Halle', text: '1' }]
+    - [{ url: '?staffel=899&r=4#p4273x4281', title: 'gegen Mattnetz Berlin', text: '1' }]
+    - [{ url: '?staffel=899&r=3#p4273x4277', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=899&r=9#p4273x4278', title: 'gegen Chem. Weißensee', text: 1½ }]
+    - [{ url: '?staffel=899&r=8#p4273x4282', title: 'gegen AE Magdeburg', text: '0' }]
+    - [{ url: '?staffel=899&r=2#p4273x4276', title: 'gegen USV Potsdam', text: '3' }]
+    - [{ url: '?staffel=899&r=6#p4273x4275', title: 'gegen SAV Torgelow', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=899&r=5#p4273x4280', title: 'gegen Zitad. Spandau', text: '5' }]
+    - [{ url: '?staffel=899&r=1#p4273x4279', title: 'gegen Empor Potsdam', text: 4½ }]
+    - 6
+    - 21½
+    - absteiger
+-
+    - '9.'
+    - { text: 'Zitad. Spandau', url: '?mannschaft=4280', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=899&r=9#p4280x4274', title: 'gegen USV VB Halle', text: '1' }]
+    - [{ url: '?staffel=899&r=3#p4280x4281', title: 'gegen Mattnetz Berlin', text: '1' }]
+    - [{ url: '?staffel=899&r=1#p4280x4277', title: 'gegen SV Empor Berlin', text: ½ }]
+    - [{ url: '?staffel=899&r=4#p4280x4278', title: 'gegen Chem. Weißensee', text: 1½ }]
+    - [{ url: '?staffel=899&r=2#p4280x4282', title: 'gegen AE Magdeburg', text: 2½ }]
+    - [{ url: '?staffel=899&r=8#p4280x4276', title: 'gegen USV Potsdam', text: 1½ }]
+    - [{ url: '?staffel=899&r=7#p4280x4275', title: 'gegen SAV Torgelow', text: 4½ }]
+    - [{ url: '?staffel=899&r=5#p4280x4273', title: 'gegen USC Magdeburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=899&r=6#p4280x4279', title: 'gegen Empor Potsdam', text: 5½ }]
+    - 4
+    - '19'
+    - absteiger
+-
+    - '10.'
+    - { text: 'Empor Potsdam', url: '?mannschaft=4279', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=899&r=3#p4279x4274', title: 'gegen USV VB Halle', text: ½ }]
+    - [{ url: '?staffel=899&r=9#p4279x4281', title: 'gegen Mattnetz Berlin', text: '0' }]
+    - [{ url: '?staffel=899&r=8#p4279x4277', title: 'gegen SV Empor Berlin', text: '3' }]
+    - [{ url: '?staffel=899&r=5#p4279x4278', title: 'gegen Chem. Weißensee', text: '0' }]
+    - [{ url: '?staffel=899&r=4#p4279x4282', title: 'gegen AE Magdeburg', text: ½ }]
+    - [{ url: '?staffel=899&r=7#p4279x4276', title: 'gegen USV Potsdam', text: ½ }]
+    - [{ url: '?staffel=899&r=2#p4279x4275', title: 'gegen SAV Torgelow', text: '2' }]
+    - [{ url: '?staffel=899&r=1#p4279x4273', title: 'gegen USC Magdeburg', text: 1½ }]
+    - [{ url: '?staffel=899&r=6#p4279x4280', title: 'gegen Zitad. Spandau', text: ½ }]
+    - xxx
+    - 1
+    - 8½
+    - absteiger

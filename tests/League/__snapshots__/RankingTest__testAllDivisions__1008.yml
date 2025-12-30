@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Blanke 2', url: '?mannschaft=8333', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1858&r=3#p8333x8371', title: 'gegen SV Werder Bremen 4', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1858&r=2#p8333x8320', title: 'gegen SG Ammerland', text: '5' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1858&r=1#p8333x8261', title: 'gegen SK Bremen-Nord', text: 5½ }]
+    - {  }
+    - {  }
+    - 6
+    - 15½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=8266', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1858&r=2#p8266x8371', title: 'gegen SV Werder Bremen 4', text: 3½ }]
+    - [{ url: '?staffel=1858&r=1#p8266x8366', title: 'gegen Hagener SV', text: 4½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1858&r=3#p8266x8324', title: 'gegen Fortuna Logabirum', text: '6' }]
+    - 4
+    - '14'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Werder Bremen 4', url: '?mannschaft=8371', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1858&r=3#p8371x8333', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=1858&r=2#p8371x8266', title: 'gegen SC Turm Lüneburg', text: 4½ }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1858&r=1#p8371x8324', title: 'gegen Fortuna Logabirum', text: 5½ }]
+    - 4
+    - '13'
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV', url: '?mannschaft=8366', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1858&r=1#p8366x8266', title: 'gegen SC Turm Lüneburg', text: 3½ }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1858&r=3#p8366x8323', title: 'gegen SG Osnabrück', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1858&r=2#p8366x8269', title: 'gegen Sfr Bremer Osten', text: '6' }]
+    - {  }
+    - 3
+    - 13½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Ammerland', url: '?mannschaft=8320', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1858&r=2#p8320x8333', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1858&r=3#p8320x8274', title: 'gegen Stader SV', text: '4' }]
+    - [{ url: '?staffel=1858&r=1#p8320x8323', title: 'gegen SG Osnabrück', text: '5' }]
+    - {  }
+    - {  }
+    - {  }
+    - 3
+    - '12'
+    - ''
+-
+    - '6.'
+    - { text: 'Stader SV', url: '?mannschaft=8274', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1858&r=3#p8274x8320', title: 'gegen SG Ammerland', text: '4' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1858&r=2#p8274x8261', title: 'gegen SK Bremen-Nord', text: '4' }]
+    - [{ url: '?staffel=1858&r=1#p8274x8269', title: 'gegen Sfr Bremer Osten', text: '4' }]
+    - {  }
+    - 3
+    - '12'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Osnabrück', url: '?mannschaft=8323', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1858&r=3#p8323x8366', title: 'gegen Hagener SV', text: '4' }]
+    - [{ url: '?staffel=1858&r=1#p8323x8320', title: 'gegen SG Ammerland', text: '3' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1858&r=2#p8323x8324', title: 'gegen Fortuna Logabirum', text: '5' }]
+    - 3
+    - '12'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Bremen-Nord', url: '?mannschaft=8261', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1858&r=1#p8261x8333', title: 'gegen SK Nordhorn-Blanke 2', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1858&r=2#p8261x8274', title: 'gegen Stader SV', text: '4' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1858&r=3#p8261x8269', title: 'gegen Sfr Bremer Osten', text: '5' }]
+    - {  }
+    - 3
+    - 11½
+    - ''
+-
+    - '9.'
+    - { text: 'Sfr Bremer Osten', url: '?mannschaft=8269', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1858&r=2#p8269x8366', title: 'gegen Hagener SV', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1858&r=1#p8269x8274', title: 'gegen Stader SV', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1858&r=3#p8269x8261', title: 'gegen SK Bremen-Nord', text: '3' }]
+    - xxx
+    - {  }
+    - 1
+    - '9'
+    - absteiger
+-
+    - '10.'
+    - { text: 'Fortuna Logabirum', url: '?mannschaft=8324', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1858&r=3#p8324x8266', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - [{ url: '?staffel=1858&r=1#p8324x8371', title: 'gegen SV Werder Bremen 4', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1858&r=2#p8324x8323', title: 'gegen SG Osnabrück', text: '3' }]
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - 7½
+    - absteiger

@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Fallersleben', url: '?mannschaft=5282', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1072&r=8#p5282x5284', title: 'gegen SG Elm/Lappwald', text: '5' }]
+    - [{ url: '?staffel=1072&r=7#p5282x5287', title: 'gegen SC Wolfsburg 2', text: 4½ }]
+    - [{ url: '?staffel=1072&r=9#p5282x5301', title: 'gegen SV Hankensbüttel', text: 5½ }]
+    - [{ url: '?staffel=1072&r=3#p5282x5289', title: 'gegen SVG Salzgitter 2', text: '5' }]
+    - [{ url: '?staffel=1072&r=5#p5282x5297', title: 'gegen SG Königslutter', text: 6½ }]
+    - [{ url: '?staffel=1072&r=1#p5282x5326', title: 'gegen BS Gliesmarode 3', text: 3½ }]
+    - [{ url: '?staffel=1072&r=2#p5282x5298', title: 'gegen SC Langlingen', text: '5' }]
+    - [{ url: '?staffel=1072&r=4#p5282x5299', title: 'gegen SV Gifhorn 2', text: '7' }]
+    - [{ url: '?staffel=1072&r=6#p5282x5274', title: 'gegen C. Wolfenbüttel 3', text: '6' }]
+    - 16
+    - '48'
+    - ''
+-
+    - '2.'
+    - { text: 'SG Elm/Lappwald', url: '?mannschaft=5284', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1072&r=8#p5284x5282', title: 'gegen SF Fallersleben', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1072&r=9#p5284x5287', title: 'gegen SC Wolfsburg 2', text: '4' }]
+    - [{ url: '?staffel=1072&r=1#p5284x5301', title: 'gegen SV Hankensbüttel', text: '8' }]
+    - [{ url: '?staffel=1072&r=4#p5284x5289', title: 'gegen SVG Salzgitter 2', text: '7' }]
+    - [{ url: '?staffel=1072&r=6#p5284x5297', title: 'gegen SG Königslutter', text: '6' }]
+    - [{ url: '?staffel=1072&r=2#p5284x5326', title: 'gegen BS Gliesmarode 3', text: 4½ }]
+    - [{ url: '?staffel=1072&r=3#p5284x5298', title: 'gegen SC Langlingen', text: '5' }]
+    - [{ url: '?staffel=1072&r=5#p5284x5299', title: 'gegen SV Gifhorn 2', text: 4½ }]
+    - [{ url: '?staffel=1072&r=7#p5284x5274', title: 'gegen C. Wolfenbüttel 3', text: 6½ }]
+    - 15
+    - 48½
+    - ''
+-
+    - '3.'
+    - { text: 'SC Wolfsburg 2', url: '?mannschaft=5287', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1072&r=7#p5287x5282', title: 'gegen SF Fallersleben', text: 3½ }]
+    - [{ url: '?staffel=1072&r=9#p5287x5284', title: 'gegen SG Elm/Lappwald', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1072&r=2#p5287x5301', title: 'gegen SV Hankensbüttel', text: 2½ }]
+    - [{ url: '?staffel=1072&r=8#p5287x5289', title: 'gegen SVG Salzgitter 2', text: '4' }]
+    - [{ url: '?staffel=1072&r=3#p5287x5297', title: 'gegen SG Königslutter', text: 4½ }]
+    - [{ url: '?staffel=1072&r=4#p5287x5326', title: 'gegen BS Gliesmarode 3', text: '5' }]
+    - [{ url: '?staffel=1072&r=6#p5287x5298', title: 'gegen SC Langlingen', text: 6½ }]
+    - [{ url: '?staffel=1072&r=1#p5287x5299', title: 'gegen SV Gifhorn 2', text: 5½ }]
+    - [{ url: '?staffel=1072&r=5#p5287x5274', title: 'gegen C. Wolfenbüttel 3', text: '5' }]
+    - 12
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Hankensbüttel', url: '?mannschaft=5301', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1072&r=9#p5301x5282', title: 'gegen SF Fallersleben', text: 2½ }]
+    - [{ url: '?staffel=1072&r=1#p5301x5284', title: 'gegen SG Elm/Lappwald', text: '0' }]
+    - [{ url: '?staffel=1072&r=2#p5301x5287', title: 'gegen SC Wolfsburg 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1072&r=5#p5301x5289', title: 'gegen SVG Salzgitter 2', text: 2½ }]
+    - [{ url: '?staffel=1072&r=7#p5301x5297', title: 'gegen SG Königslutter', text: '5' }]
+    - [{ url: '?staffel=1072&r=3#p5301x5326', title: 'gegen BS Gliesmarode 3', text: 3½ }]
+    - [{ url: '?staffel=1072&r=4#p5301x5298', title: 'gegen SC Langlingen', text: 4½ }]
+    - [{ url: '?staffel=1072&r=6#p5301x5299', title: 'gegen SV Gifhorn 2', text: '6' }]
+    - [{ url: '?staffel=1072&r=8#p5301x5274', title: 'gegen C. Wolfenbüttel 3', text: '7' }]
+    - 10
+    - 36½
+    - ''
+-
+    - '5.'
+    - { text: 'SVG Salzgitter 2', url: '?mannschaft=5289', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1072&r=3#p5289x5282', title: 'gegen SF Fallersleben', text: '3' }]
+    - [{ url: '?staffel=1072&r=4#p5289x5284', title: 'gegen SG Elm/Lappwald', text: '1' }]
+    - [{ url: '?staffel=1072&r=8#p5289x5287', title: 'gegen SC Wolfsburg 2', text: '4' }]
+    - [{ url: '?staffel=1072&r=5#p5289x5301', title: 'gegen SV Hankensbüttel', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1072&r=1#p5289x5297', title: 'gegen SG Königslutter', text: 3½ }]
+    - [{ url: '?staffel=1072&r=6#p5289x5326', title: 'gegen BS Gliesmarode 3', text: 7½ }]
+    - [{ url: '?staffel=1072&r=7#p5289x5298', title: 'gegen SC Langlingen', text: '6' }]
+    - [{ url: '?staffel=1072&r=9#p5289x5299', title: 'gegen SV Gifhorn 2', text: '3' }]
+    - [{ url: '?staffel=1072&r=2#p5289x5274', title: 'gegen C. Wolfenbüttel 3', text: 4½ }]
+    - 9
+    - '38'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Königslutter', url: '?mannschaft=5297', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1072&r=5#p5297x5282', title: 'gegen SF Fallersleben', text: 1½ }]
+    - [{ url: '?staffel=1072&r=6#p5297x5284', title: 'gegen SG Elm/Lappwald', text: '2' }]
+    - [{ url: '?staffel=1072&r=3#p5297x5287', title: 'gegen SC Wolfsburg 2', text: 3½ }]
+    - [{ url: '?staffel=1072&r=7#p5297x5301', title: 'gegen SV Hankensbüttel', text: '3' }]
+    - [{ url: '?staffel=1072&r=1#p5297x5289', title: 'gegen SVG Salzgitter 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1072&r=8#p5297x5326', title: 'gegen BS Gliesmarode 3', text: 4½ }]
+    - [{ url: '?staffel=1072&r=9#p5297x5298', title: 'gegen SC Langlingen', text: 3½ }]
+    - [{ url: '?staffel=1072&r=2#p5297x5299', title: 'gegen SV Gifhorn 2', text: '4' }]
+    - [{ url: '?staffel=1072&r=4#p5297x5274', title: 'gegen C. Wolfenbüttel 3', text: '5' }]
+    - 7
+    - 31½
+    - ''
+-
+    - '7.'
+    - { text: 'BS Gliesmarode 3', url: '?mannschaft=5326', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1072&r=1#p5326x5282', title: 'gegen SF Fallersleben', text: 4½ }]
+    - [{ url: '?staffel=1072&r=2#p5326x5284', title: 'gegen SG Elm/Lappwald', text: 3½ }]
+    - [{ url: '?staffel=1072&r=4#p5326x5287', title: 'gegen SC Wolfsburg 2', text: '3' }]
+    - [{ url: '?staffel=1072&r=3#p5326x5301', title: 'gegen SV Hankensbüttel', text: 4½ }]
+    - [{ url: '?staffel=1072&r=6#p5326x5289', title: 'gegen SVG Salzgitter 2', text: ½ }]
+    - [{ url: '?staffel=1072&r=8#p5326x5297', title: 'gegen SG Königslutter', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1072&r=5#p5326x5298', title: 'gegen SC Langlingen', text: '5' }]
+    - [{ url: '?staffel=1072&r=7#p5326x5299', title: 'gegen SV Gifhorn 2', text: '4' }]
+    - [{ url: '?staffel=1072&r=9#p5326x5274', title: 'gegen C. Wolfenbüttel 3', text: '3' }]
+    - 7
+    - 31½
+    - ''
+-
+    - '8.'
+    - { text: 'SC Langlingen', url: '?mannschaft=5298', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1072&r=2#p5298x5282', title: 'gegen SF Fallersleben', text: '3' }]
+    - [{ url: '?staffel=1072&r=3#p5298x5284', title: 'gegen SG Elm/Lappwald', text: '3' }]
+    - [{ url: '?staffel=1072&r=6#p5298x5287', title: 'gegen SC Wolfsburg 2', text: 1½ }]
+    - [{ url: '?staffel=1072&r=4#p5298x5301', title: 'gegen SV Hankensbüttel', text: 3½ }]
+    - [{ url: '?staffel=1072&r=7#p5298x5289', title: 'gegen SVG Salzgitter 2', text: '2' }]
+    - [{ url: '?staffel=1072&r=9#p5298x5297', title: 'gegen SG Königslutter', text: 4½ }]
+    - [{ url: '?staffel=1072&r=5#p5298x5326', title: 'gegen BS Gliesmarode 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1072&r=8#p5298x5299', title: 'gegen SV Gifhorn 2', text: '4' }]
+    - [{ url: '?staffel=1072&r=1#p5298x5274', title: 'gegen C. Wolfenbüttel 3', text: 6½ }]
+    - 5
+    - '31'
+    - ''
+-
+    - '9.'
+    - { text: 'SV Gifhorn 2', url: '?mannschaft=5299', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1072&r=4#p5299x5282', title: 'gegen SF Fallersleben', text: '1' }]
+    - [{ url: '?staffel=1072&r=5#p5299x5284', title: 'gegen SG Elm/Lappwald', text: 3½ }]
+    - [{ url: '?staffel=1072&r=1#p5299x5287', title: 'gegen SC Wolfsburg 2', text: 2½ }]
+    - [{ url: '?staffel=1072&r=6#p5299x5301', title: 'gegen SV Hankensbüttel', text: '2' }]
+    - [{ url: '?staffel=1072&r=9#p5299x5289', title: 'gegen SVG Salzgitter 2', text: '5' }]
+    - [{ url: '?staffel=1072&r=2#p5299x5297', title: 'gegen SG Königslutter', text: '4' }]
+    - [{ url: '?staffel=1072&r=7#p5299x5326', title: 'gegen BS Gliesmarode 3', text: '4' }]
+    - [{ url: '?staffel=1072&r=8#p5299x5298', title: 'gegen SC Langlingen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1072&r=3#p5299x5274', title: 'gegen C. Wolfenbüttel 3', text: 1½ }]
+    - 5
+    - 27½
+    - ''
+-
+    - '10.'
+    - { text: 'C. Wolfenbüttel 3', url: '?mannschaft=5274', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1072&r=6#p5274x5282', title: 'gegen SF Fallersleben', text: '2' }]
+    - [{ url: '?staffel=1072&r=7#p5274x5284', title: 'gegen SG Elm/Lappwald', text: 1½ }]
+    - [{ url: '?staffel=1072&r=5#p5274x5287', title: 'gegen SC Wolfsburg 2', text: '3' }]
+    - [{ url: '?staffel=1072&r=8#p5274x5301', title: 'gegen SV Hankensbüttel', text: '1' }]
+    - [{ url: '?staffel=1072&r=2#p5274x5289', title: 'gegen SVG Salzgitter 2', text: 3½ }]
+    - [{ url: '?staffel=1072&r=4#p5274x5297', title: 'gegen SG Königslutter', text: '3' }]
+    - [{ url: '?staffel=1072&r=9#p5274x5326', title: 'gegen BS Gliesmarode 3', text: '5' }]
+    - [{ url: '?staffel=1072&r=1#p5274x5298', title: 'gegen SC Langlingen', text: 1½ }]
+    - [{ url: '?staffel=1072&r=3#p5274x5299', title: 'gegen SV Gifhorn 2', text: 6½ }]
+    - xxx
+    - 4
+    - '27'
+    - ''

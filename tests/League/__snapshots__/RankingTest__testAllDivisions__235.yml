@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'H96 Schach', url: '?mannschaft=2693', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=666&r=4#p2693x2538', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=666&r=3#p2693x2751', title: 'gegen Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=666&r=5#p2693x2580', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=666&r=1#p2693x2549', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=666&r=2#p2693x2581', title: 'gegen SK Ricklingen', text: 3½ }]
+    - 10
+    - 18½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Laatzen', url: '?mannschaft=2538', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=666&r=4#p2538x2693', title: 'gegen H96 Schach', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=666&r=1#p2538x2751', title: 'gegen Uetze-Hänigsen', text: 4½ }]
+    - [{ url: '?staffel=666&r=2#p2538x2580', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=666&r=5#p2538x2549', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=666&r=3#p2538x2581', title: 'gegen SK Ricklingen', text: 3½ }]
+    - 7
+    - 16½
+    - ''
+-
+    - '3.'
+    - { text: Uetze-Hänigsen, url: '?mannschaft=2751', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=666&r=3#p2751x2693', title: 'gegen H96 Schach', text: 2½ }]
+    - [{ url: '?staffel=666&r=1#p2751x2538', title: 'gegen SV Laatzen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=666&r=4#p2751x2580', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=666&r=2#p2751x2549', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=666&r=5#p2751x2581', title: 'gegen SK Ricklingen', text: 3½ }]
+    - 5
+    - 14½
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=2580', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=666&r=5#p2580x2693', title: 'gegen H96 Schach', text: 2½ }]
+    - [{ url: '?staffel=666&r=2#p2580x2538', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=666&r=4#p2580x2751', title: 'gegen Uetze-Hänigsen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=666&r=3#p2580x2549', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=666&r=1#p2580x2581', title: 'gegen SK Ricklingen', text: '5' }]
+    - 4
+    - '15'
+    - ''
+-
+    - '5.'
+    - { text: Barsinghausen, url: '?mannschaft=2549', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=666&r=1#p2549x2693', title: 'gegen H96 Schach', text: '2' }]
+    - [{ url: '?staffel=666&r=5#p2549x2538', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=666&r=2#p2549x2751', title: 'gegen Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=666&r=3#p2549x2580', title: 'gegen SD Isernhagen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=666&r=4#p2549x2581', title: 'gegen SK Ricklingen', text: 2½ }]
+    - 3
+    - 11½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=2581', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=666&r=2#p2581x2693', title: 'gegen H96 Schach', text: 2½ }]
+    - [{ url: '?staffel=666&r=3#p2581x2538', title: 'gegen SV Laatzen', text: 2½ }]
+    - [{ url: '?staffel=666&r=5#p2581x2751', title: 'gegen Uetze-Hänigsen', text: 2½ }]
+    - [{ url: '?staffel=666&r=1#p2581x2580', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=666&r=4#p2581x2549', title: 'gegen Barsinghausen', text: 2½ }]
+    - xxx
+    - 1
+    - '11'
+    - ''

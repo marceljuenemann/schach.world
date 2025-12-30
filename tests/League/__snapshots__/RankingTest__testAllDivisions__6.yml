@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=411', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=402&r=2#p411x401', title: 'gegen HSK / Post SV', text: '2' }]
+    - [{ url: '?staffel=402&r=3#p411x404', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=402&r=5#p411x402', title: 'gegen HSK / Post SV 2', text: '3' }]
+    - [{ url: '?staffel=402&r=4#p411x405', title: 'gegen SK Lehrte 3', text: '4' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '2.'
+    - { text: 'HSK / Post SV', url: '?mannschaft=401', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=402&r=2#p401x411', title: 'gegen SD Isernhagen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=402&r=4#p401x404', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=402&r=3#p401x402', title: 'gegen HSK / Post SV 2', text: '4' }]
+    - [{ url: '?staffel=402&r=1#p401x405', title: 'gegen SK Lehrte 3', text: '2' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=404', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=402&r=3#p404x411', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=402&r=4#p404x401', title: 'gegen HSK / Post SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=402&r=1#p404x402', title: 'gegen HSK / Post SV 2', text: 3½ }]
+    - [{ url: '?staffel=402&r=5#p404x405', title: 'gegen SK Lehrte 3', text: '4' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '4.'
+    - { text: 'HSK / Post SV 2', url: '?mannschaft=402', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=402&r=5#p402x411', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=402&r=3#p402x401', title: 'gegen HSK / Post SV', text: '0' }]
+    - [{ url: '?staffel=402&r=1#p402x404', title: 'gegen SK Lehrte 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=402&r=2#p402x405', title: 'gegen SK Lehrte 3', text: '3' }]
+    - 2
+    - 4½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=405', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=402&r=4#p405x411', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=402&r=1#p405x401', title: 'gegen HSK / Post SV', text: '2' }]
+    - [{ url: '?staffel=402&r=5#p405x404', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=402&r=2#p405x402', title: 'gegen HSK / Post SV 2', text: '1' }]
+    - xxx
+    - 1
+    - '3'
+    - ''

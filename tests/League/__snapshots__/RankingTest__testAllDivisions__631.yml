@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'MTV Tostedt', url: '?mannschaft=5654', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1376&r=7#p5654x5759', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=1376&r=6#p5654x5678', title: 'gegen SV Bad Bevensen', text: 3½ }]
+    - [{ url: '?staffel=1376&r=5#p5654x5649', title: 'gegen SK Verden', text: '3' }]
+    - [{ url: '?staffel=1376&r=2#p5654x5645', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=1376&r=4#p5654x5658', title: 'gegen Peiner SV 2', text: '3' }]
+    - [{ url: '?staffel=1376&r=3#p5654x5690', title: 'gegen SV Gifhorn', text: '4' }]
+    - [{ url: '?staffel=1376&r=1#p5654x5646', title: 'gegen Post SV Uelzen 3', text: '4' }]
+    - 14
+    - 24½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=5759', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1376&r=7#p5759x5654', title: 'gegen MTV Tostedt', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1376&r=5#p5759x5678', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=1376&r=6#p5759x5649', title: 'gegen SK Verden', text: 2½ }]
+    - [{ url: '?staffel=1376&r=4#p5759x5645', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=1376&r=1#p5759x5658', title: 'gegen Peiner SV 2', text: '3' }]
+    - [{ url: '?staffel=1376&r=2#p5759x5690', title: 'gegen SV Gifhorn', text: '4' }]
+    - [{ url: '?staffel=1376&r=3#p5759x5646', title: 'gegen Post SV Uelzen 3', text: '4' }]
+    - 11
+    - 20½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=5678', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1376&r=6#p5678x5654', title: 'gegen MTV Tostedt', text: ½ }]
+    - [{ url: '?staffel=1376&r=5#p5678x5759', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1376&r=7#p5678x5649', title: 'gegen SK Verden', text: '2' }]
+    - [{ url: '?staffel=1376&r=3#p5678x5645', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=1376&r=2#p5678x5658', title: 'gegen Peiner SV 2', text: '2' }]
+    - [{ url: '?staffel=1376&r=1#p5678x5690', title: 'gegen SV Gifhorn', text: '2' }]
+    - [{ url: '?staffel=1376&r=4#p5678x5646', title: 'gegen Post SV Uelzen 3', text: '4' }]
+    - 8
+    - 16½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Verden', url: '?mannschaft=5649', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1376&r=5#p5649x5654', title: 'gegen MTV Tostedt', text: '1' }]
+    - [{ url: '?staffel=1376&r=6#p5649x5759', title: 'gegen SC Turm Lüneburg', text: 1½ }]
+    - [{ url: '?staffel=1376&r=7#p5649x5678', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1376&r=1#p5649x5645', title: 'gegen Post SV Uelzen 2', text: '1' }]
+    - [{ url: '?staffel=1376&r=3#p5649x5658', title: 'gegen Peiner SV 2', text: 2½ }]
+    - [{ url: '?staffel=1376&r=4#p5649x5690', title: 'gegen SV Gifhorn', text: '3' }]
+    - [{ url: '?staffel=1376&r=2#p5649x5646', title: 'gegen Post SV Uelzen 3', text: '4' }]
+    - 7
+    - '15'
+    - ''
+-
+    - '5.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=5645', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1376&r=2#p5645x5654', title: 'gegen MTV Tostedt', text: '0' }]
+    - [{ url: '?staffel=1376&r=4#p5645x5759', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=1376&r=3#p5645x5678', title: 'gegen SV Bad Bevensen', text: '0' }]
+    - [{ url: '?staffel=1376&r=1#p5645x5649', title: 'gegen SK Verden', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1376&r=7#p5645x5658', title: 'gegen Peiner SV 2', text: '4' }]
+    - [{ url: '?staffel=1376&r=6#p5645x5690', title: 'gegen SV Gifhorn', text: '3' }]
+    - [{ url: '?staffel=1376&r=5#p5645x5646', title: 'gegen Post SV Uelzen 3', text: '2' }]
+    - 7
+    - '12'
+    - ''
+-
+    - '6.'
+    - { text: 'Peiner SV 2', url: '?mannschaft=5658', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1376&r=4#p5658x5654', title: 'gegen MTV Tostedt', text: '1' }]
+    - [{ url: '?staffel=1376&r=1#p5658x5759', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - [{ url: '?staffel=1376&r=2#p5658x5678', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=1376&r=3#p5658x5649', title: 'gegen SK Verden', text: 1½ }]
+    - [{ url: '?staffel=1376&r=7#p5658x5645', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1376&r=5#p5658x5690', title: 'gegen SV Gifhorn', text: '2' }]
+    - [{ url: '?staffel=1376&r=6#p5658x5646', title: 'gegen Post SV Uelzen 3', text: 2½ }]
+    - 4
+    - '10'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Gifhorn', url: '?mannschaft=5690', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1376&r=3#p5690x5654', title: 'gegen MTV Tostedt', text: '0' }]
+    - [{ url: '?staffel=1376&r=2#p5690x5759', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=1376&r=1#p5690x5678', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=1376&r=4#p5690x5649', title: 'gegen SK Verden', text: '1' }]
+    - [{ url: '?staffel=1376&r=6#p5690x5645', title: 'gegen Post SV Uelzen 2', text: '1' }]
+    - [{ url: '?staffel=1376&r=5#p5690x5658', title: 'gegen Peiner SV 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1376&r=7#p5690x5646', title: 'gegen Post SV Uelzen 3', text: '2' }]
+    - 3
+    - '8'
+    - ''
+-
+    - '8.'
+    - { text: 'Post SV Uelzen 3', url: '?mannschaft=5646', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1376&r=1#p5646x5654', title: 'gegen MTV Tostedt', text: '0' }]
+    - [{ url: '?staffel=1376&r=3#p5646x5759', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=1376&r=4#p5646x5678', title: 'gegen SV Bad Bevensen', text: '0' }]
+    - [{ url: '?staffel=1376&r=2#p5646x5649', title: 'gegen SK Verden', text: '0' }]
+    - [{ url: '?staffel=1376&r=5#p5646x5645', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - [{ url: '?staffel=1376&r=6#p5646x5658', title: 'gegen Peiner SV 2', text: 1½ }]
+    - [{ url: '?staffel=1376&r=7#p5646x5690', title: 'gegen SV Gifhorn', text: '2' }]
+    - xxx
+    - 2
+    - 5½
+    - ''

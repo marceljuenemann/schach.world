@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamelner SV 5', url: '?mannschaft=6298', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1452&r=2#p6298x6303', title: 'gegen ESV Göttingen 2', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1452&r=5#p6298x6317', title: 'gegen Bad Lauterberg', text: 4½ }]
+    - [{ url: '?staffel=1452&r=1#p6298x6297', title: 'gegen Hamelner SV 4', text: '5' }]
+    - [{ url: '?staffel=1452&r=3#p6298x6284', title: 'gegen Bad Salzdetfurth 2', text: '6' }]
+    - 8
+    - '20'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Duderstadt', url: '?mannschaft=6311', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1452&r=4#p6311x6303', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=1452&r=5#p6311x6294', title: 'gegen Osterode-Südharz', text: 4½ }]
+    - [{ url: '?staffel=1452&r=3#p6311x6317', title: 'gegen Bad Lauterberg', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1452&r=1#p6311x6284', title: 'gegen Bad Salzdetfurth 2', text: '6' }]
+    - 7
+    - 19½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'ESV Göttingen 2', url: '?mannschaft=6303', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1452&r=2#p6303x6298', title: 'gegen Hamelner SV 5', text: 3½ }]
+    - [{ url: '?staffel=1452&r=4#p6303x6311', title: 'gegen SK Duderstadt', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1452&r=1#p6303x6294', title: 'gegen Osterode-Südharz', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1452&r=3#p6303x6297', title: 'gegen Hamelner SV 4', text: '8' }]
+    - [{ url: '?staffel=1452&r=5#p6303x6284', title: 'gegen Bad Salzdetfurth 2', text: 6½ }]
+    - 6
+    - '26'
+    - ''
+-
+    - '4.'
+    - { text: Osterode-Südharz, url: '?mannschaft=6294', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1452&r=5#p6294x6311', title: 'gegen SK Duderstadt', text: 3½ }]
+    - [{ url: '?staffel=1452&r=1#p6294x6303', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1452&r=4#p6294x6317', title: 'gegen Bad Lauterberg', text: 5½ }]
+    - [{ url: '?staffel=1452&r=2#p6294x6297', title: 'gegen Hamelner SV 4', text: 4½ }]
+    - {  }
+    - 5
+    - 17½
+    - ''
+-
+    - '5.'
+    - { text: 'Bad Lauterberg', url: '?mannschaft=6317', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1452&r=5#p6317x6298', title: 'gegen Hamelner SV 5', text: 3½ }]
+    - [{ url: '?staffel=1452&r=3#p6317x6311', title: 'gegen SK Duderstadt', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1452&r=4#p6317x6294', title: 'gegen Osterode-Südharz', text: 2½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1452&r=2#p6317x6284', title: 'gegen Bad Salzdetfurth 2', text: '8' }]
+    - 2
+    - '17'
+    - ''
+-
+    - '6.'
+    - { text: 'Hamelner SV 4', url: '?mannschaft=6297', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1452&r=1#p6297x6298', title: 'gegen Hamelner SV 5', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1452&r=3#p6297x6303', title: 'gegen ESV Göttingen 2', text: '0' }]
+    - [{ url: '?staffel=1452&r=2#p6297x6294', title: 'gegen Osterode-Südharz', text: 3½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1452&r=4#p6297x6284', title: 'gegen Bad Salzdetfurth 2', text: 4½ }]
+    - 2
+    - '11'
+    - ''
+-
+    - '7.'
+    - { text: 'Bad Salzdetfurth 2', url: '?mannschaft=6284', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1452&r=3#p6284x6298', title: 'gegen Hamelner SV 5', text: '2' }]
+    - [{ url: '?staffel=1452&r=1#p6284x6311', title: 'gegen SK Duderstadt', text: '2' }]
+    - [{ url: '?staffel=1452&r=5#p6284x6303', title: 'gegen ESV Göttingen 2', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1452&r=2#p6284x6317', title: 'gegen Bad Lauterberg', text: '0' }]
+    - [{ url: '?staffel=1452&r=4#p6284x6297', title: 'gegen Hamelner SV 4', text: 3½ }]
+    - xxx
+    - 0
+    - '9'
+    - ''

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: Ankum/Bersenbrü, url: '?mannschaft=540', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=419&r=3#p540x541', title: 'gegen SV Osnabrück 3', text: '4' }]
+    - [{ url: '?staffel=419&r=4#p540x542', title: 'gegen Rochade Hollage 2', text: '6' }]
+    - [{ url: '?staffel=419&r=1#p540x539', title: 'gegen Oesede-Georgsma 3', text: '5' }]
+    - [{ url: '?staffel=419&r=6#p540x537', title: 'gegen SG Schinkel 2', text: '3' }]
+    - [{ url: '?staffel=419&r=7#p540x538', title: 'gegen TuS Bramsche 2', text: 7½ }]
+    - [{ url: '?staffel=419&r=5#p540x536', title: 'gegen Hagener SV 4', text: 5½ }]
+    - [{ url: '?staffel=419&r=2#p540x543', title: 'gegen Hagener SV 5', text: '7' }]
+    - 11
+    - '38'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Osnabrück 3', url: '?mannschaft=541', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=419&r=3#p541x540', title: 'gegen Ankum/Bersenbrü', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=419&r=5#p541x542', title: 'gegen Rochade Hollage 2', text: '3' }]
+    - [{ url: '?staffel=419&r=2#p541x539', title: 'gegen Oesede-Georgsma 3', text: '5' }]
+    - [{ url: '?staffel=419&r=7#p541x537', title: 'gegen SG Schinkel 2', text: 4½ }]
+    - [{ url: '?staffel=419&r=1#p541x538', title: 'gegen TuS Bramsche 2', text: '5' }]
+    - [{ url: '?staffel=419&r=6#p541x536', title: 'gegen Hagener SV 4', text: '7' }]
+    - [{ url: '?staffel=419&r=4#p541x543', title: 'gegen Hagener SV 5', text: '7' }]
+    - 11
+    - 35½
+    - ''
+-
+    - '3.'
+    - { text: 'Rochade Hollage 2', url: '?mannschaft=542', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=419&r=4#p542x540', title: 'gegen Ankum/Bersenbrü', text: '2' }]
+    - [{ url: '?staffel=419&r=5#p542x541', title: 'gegen SV Osnabrück 3', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=419&r=3#p542x539', title: 'gegen Oesede-Georgsma 3', text: '3' }]
+    - [{ url: '?staffel=419&r=1#p542x537', title: 'gegen SG Schinkel 2', text: 5½ }]
+    - [{ url: '?staffel=419&r=2#p542x538', title: 'gegen TuS Bramsche 2', text: 4½ }]
+    - [{ url: '?staffel=419&r=7#p542x536', title: 'gegen Hagener SV 4', text: '8' }]
+    - [{ url: '?staffel=419&r=6#p542x543', title: 'gegen Hagener SV 5', text: '7' }]
+    - 10
+    - '35'
+    - ''
+-
+    - '4.'
+    - { text: 'Oesede-Georgsma 3', url: '?mannschaft=539', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=419&r=1#p539x540', title: 'gegen Ankum/Bersenbrü', text: '3' }]
+    - [{ url: '?staffel=419&r=2#p539x541', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=419&r=3#p539x542', title: 'gegen Rochade Hollage 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=419&r=5#p539x537', title: 'gegen SG Schinkel 2', text: 5½ }]
+    - [{ url: '?staffel=419&r=6#p539x538', title: 'gegen TuS Bramsche 2', text: 2½ }]
+    - [{ url: '?staffel=419&r=4#p539x536', title: 'gegen Hagener SV 4', text: '7' }]
+    - [{ url: '?staffel=419&r=7#p539x543', title: 'gegen Hagener SV 5', text: '8' }]
+    - 8
+    - '34'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Schinkel 2', url: '?mannschaft=537', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=419&r=6#p537x540', title: 'gegen Ankum/Bersenbrü', text: '5' }]
+    - [{ url: '?staffel=419&r=7#p537x541', title: 'gegen SV Osnabrück 3', text: 3½ }]
+    - [{ url: '?staffel=419&r=1#p537x542', title: 'gegen Rochade Hollage 2', text: 2½ }]
+    - [{ url: '?staffel=419&r=5#p537x539', title: 'gegen Oesede-Georgsma 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=419&r=4#p537x538', title: 'gegen TuS Bramsche 2', text: '5' }]
+    - [{ url: '?staffel=419&r=2#p537x536', title: 'gegen Hagener SV 4', text: '5' }]
+    - [{ url: '?staffel=419&r=3#p537x543', title: 'gegen Hagener SV 5', text: '8' }]
+    - 8
+    - 31½
+    - ''
+-
+    - '6.'
+    - { text: 'TuS Bramsche 2', url: '?mannschaft=538', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=419&r=7#p538x540', title: 'gegen Ankum/Bersenbrü', text: ½ }]
+    - [{ url: '?staffel=419&r=1#p538x541', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=419&r=2#p538x542', title: 'gegen Rochade Hollage 2', text: 3½ }]
+    - [{ url: '?staffel=419&r=6#p538x539', title: 'gegen Oesede-Georgsma 3', text: 5½ }]
+    - [{ url: '?staffel=419&r=4#p538x537', title: 'gegen SG Schinkel 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=419&r=3#p538x536', title: 'gegen Hagener SV 4', text: '7' }]
+    - [{ url: '?staffel=419&r=5#p538x543', title: 'gegen Hagener SV 5', text: '7' }]
+    - 6
+    - 29½
+    - ''
+-
+    - '7.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=536', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=419&r=5#p536x540', title: 'gegen Ankum/Bersenbrü', text: 2½ }]
+    - [{ url: '?staffel=419&r=6#p536x541', title: 'gegen SV Osnabrück 3', text: '1' }]
+    - [{ url: '?staffel=419&r=7#p536x542', title: 'gegen Rochade Hollage 2', text: '0' }]
+    - [{ url: '?staffel=419&r=4#p536x539', title: 'gegen Oesede-Georgsma 3', text: '1' }]
+    - [{ url: '?staffel=419&r=2#p536x537', title: 'gegen SG Schinkel 2', text: '3' }]
+    - [{ url: '?staffel=419&r=3#p536x538', title: 'gegen TuS Bramsche 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=419&r=1#p536x543', title: 'gegen Hagener SV 5', text: 5½ }]
+    - 2
+    - '14'
+    - ''
+-
+    - '8.'
+    - { text: 'Hagener SV 5', url: '?mannschaft=543', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=419&r=2#p543x540', title: 'gegen Ankum/Bersenbrü', text: '1' }]
+    - [{ url: '?staffel=419&r=4#p543x541', title: 'gegen SV Osnabrück 3', text: '1' }]
+    - [{ url: '?staffel=419&r=6#p543x542', title: 'gegen Rochade Hollage 2', text: '1' }]
+    - [{ url: '?staffel=419&r=7#p543x539', title: 'gegen Oesede-Georgsma 3', text: '0' }]
+    - [{ url: '?staffel=419&r=3#p543x537', title: 'gegen SG Schinkel 2', text: '0' }]
+    - [{ url: '?staffel=419&r=5#p543x538', title: 'gegen TuS Bramsche 2', text: '1' }]
+    - [{ url: '?staffel=419&r=1#p543x536', title: 'gegen Hagener SV 4', text: 2½ }]
+    - xxx
+    - 0
+    - 6½
+    - ''

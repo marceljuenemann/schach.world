@@ -19,11 +19,7 @@
   $inline_sidebar = $wp_query->post_count >= INLINE_SIDEBAR_MIN_POSTS;
 
   function printSidebar() {
-    if (isset($_GET['widgets'])) {
-      dynamic_sidebar('frontpage_sidebar');
-    } else {
-      get_template_part('sidebar/frontpage-sidebar');
-    }
+    dynamic_sidebar('frontpage_sidebar');
   }
 
   get_header();

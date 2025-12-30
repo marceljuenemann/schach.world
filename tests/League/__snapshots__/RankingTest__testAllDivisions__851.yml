@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Anderten 99', url: '?mannschaft=7206', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1674&r=2#p7206x7237', title: 'gegen SK Rinteln 99', text: '2' }, { url: '?staffel=1674&r=5#p7206x7237', title: 'gegen SK Rinteln 99', text: 3½ }]
+    - [{ url: '?staffel=1674&r=3#p7206x7224', title: 'gegen Hannover 96 99', text: '2' }, { url: '?staffel=1674&r=6#p7206x7224', title: 'gegen Hannover 96 99', text: '2' }]
+    - [{ url: '?staffel=1674&r=1#p7206x7228', title: 'gegen SG Garbsen/Marienw 99', text: '4' }, { url: '?staffel=1674&r=4#p7206x7228', title: 'gegen SG Garbsen/Marienw 99', text: 2½ }]
+    - 9
+    - '16'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Rinteln 99', url: '?mannschaft=7237', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1674&r=2#p7237x7206', title: 'gegen SK Anderten 99', text: '2' }, { url: '?staffel=1674&r=5#p7237x7206', title: 'gegen SK Anderten 99', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1674&r=1#p7237x7224', title: 'gegen Hannover 96 99', text: '4' }, { url: '?staffel=1674&r=4#p7237x7224', title: 'gegen Hannover 96 99', text: '4' }]
+    - [{ url: '?staffel=1674&r=3#p7237x7228', title: 'gegen SG Garbsen/Marienw 99', text: 1½ }, { url: '?staffel=1674&r=6#p7237x7228', title: 'gegen SG Garbsen/Marienw 99', text: '3' }]
+    - 7
+    - '15'
+    - ''
+-
+    - '3.'
+    - { text: 'Hannover 96 99', url: '?mannschaft=7224', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1674&r=3#p7224x7206', title: 'gegen SK Anderten 99', text: '2' }, { url: '?staffel=1674&r=6#p7224x7206', title: 'gegen SK Anderten 99', text: '2' }]
+    - [{ url: '?staffel=1674&r=1#p7224x7237', title: 'gegen SK Rinteln 99', text: '0' }, { url: '?staffel=1674&r=4#p7224x7237', title: 'gegen SK Rinteln 99', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1674&r=2#p7224x7228', title: 'gegen SG Garbsen/Marienw 99', text: '4' }, { url: '?staffel=1674&r=5#p7224x7228', title: 'gegen SG Garbsen/Marienw 99', text: '3' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Garbsen/Marienw 99', url: '?mannschaft=7228', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1674&r=1#p7228x7206', title: 'gegen SK Anderten 99', text: '0' }, { url: '?staffel=1674&r=4#p7228x7206', title: 'gegen SK Anderten 99', text: 1½ }]
+    - [{ url: '?staffel=1674&r=3#p7228x7237', title: 'gegen SK Rinteln 99', text: 2½ }, { url: '?staffel=1674&r=6#p7228x7237', title: 'gegen SK Rinteln 99', text: '1' }]
+    - [{ url: '?staffel=1674&r=2#p7228x7224', title: 'gegen Hannover 96 99', text: '0' }, { url: '?staffel=1674&r=5#p7228x7224', title: 'gegen Hannover 96 99', text: '1' }]
+    - xxx
+    - 2
+    - '6'
+    - ''

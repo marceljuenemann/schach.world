@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Hannover 3', url: '?mannschaft=790', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=456&r=7#p790x761', title: 'gegen SV Gretenberg', text: 4½ }]
+    - [{ url: '?staffel=456&r=5#p790x768', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=456&r=9#p790x763', title: 'gegen SC Hämelerwald', text: '5' }]
+    - [{ url: '?staffel=456&r=6#p790x746', title: 'gegen SV Laatzen 2', text: '4' }]
+    - [{ url: '?staffel=456&r=4#p790x765', title: 'gegen SK Lehrte 3', text: 4½ }]
+    - [{ url: '?staffel=456&r=8#p790x916', title: 'gegen SG WB Eilenriede 3', text: 4½ }]
+    - [{ url: '?staffel=456&r=2#p790x925', title: 'gegen Freib. Wedemark', text: 5½ }]
+    - [{ url: '?staffel=456&r=3#p790x760', title: 'gegen ST Langenhagen 2', text: '6' }]
+    - [{ url: '?staffel=456&r=1#p790x922', title: 'gegen TSV Pattensen', text: 6½ }]
+    - 15
+    - '44'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Gretenberg', url: '?mannschaft=761', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=456&r=7#p761x790', title: 'gegen SF Hannover 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=456&r=8#p761x768', title: 'gegen SD Isernhagen', text: 5½ }]
+    - [{ url: '?staffel=456&r=3#p761x763', title: 'gegen SC Hämelerwald', text: 4½ }]
+    - [{ url: '?staffel=456&r=9#p761x746', title: 'gegen SV Laatzen 2', text: '6' }]
+    - [{ url: '?staffel=456&r=1#p761x765', title: 'gegen SK Lehrte 3', text: '6' }]
+    - [{ url: '?staffel=456&r=2#p761x916', title: 'gegen SG WB Eilenriede 3', text: '5' }]
+    - [{ url: '?staffel=456&r=5#p761x925', title: 'gegen Freib. Wedemark', text: '3' }]
+    - [{ url: '?staffel=456&r=6#p761x760', title: 'gegen ST Langenhagen 2', text: 5½ }]
+    - [{ url: '?staffel=456&r=4#p761x922', title: 'gegen TSV Pattensen', text: '7' }]
+    - 14
+    - '46'
+    - ''
+-
+    - '3.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=768', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=456&r=5#p768x790', title: 'gegen SF Hannover 3', text: 4½ }]
+    - [{ url: '?staffel=456&r=8#p768x761', title: 'gegen SV Gretenberg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=456&r=1#p768x763', title: 'gegen SC Hämelerwald', text: 3½ }]
+    - [{ url: '?staffel=456&r=7#p768x746', title: 'gegen SV Laatzen 2', text: '5' }]
+    - [{ url: '?staffel=456&r=6#p768x765', title: 'gegen SK Lehrte 3', text: 5½ }]
+    - [{ url: '?staffel=456&r=9#p768x916', title: 'gegen SG WB Eilenriede 3', text: 5½ }]
+    - [{ url: '?staffel=456&r=3#p768x925', title: 'gegen Freib. Wedemark', text: 4½ }]
+    - [{ url: '?staffel=456&r=4#p768x760', title: 'gegen ST Langenhagen 2', text: 6½ }]
+    - [{ url: '?staffel=456&r=2#p768x922', title: 'gegen TSV Pattensen', text: 7½ }]
+    - 14
+    - '45'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Hämelerwald', url: '?mannschaft=763', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=456&r=9#p763x790', title: 'gegen SF Hannover 3', text: '3' }]
+    - [{ url: '?staffel=456&r=3#p763x761', title: 'gegen SV Gretenberg', text: 3½ }]
+    - [{ url: '?staffel=456&r=1#p763x768', title: 'gegen SD Isernhagen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=456&r=2#p763x746', title: 'gegen SV Laatzen 2', text: '4' }]
+    - [{ url: '?staffel=456&r=5#p763x765', title: 'gegen SK Lehrte 3', text: 4½ }]
+    - [{ url: '?staffel=456&r=4#p763x916', title: 'gegen SG WB Eilenriede 3', text: '4' }]
+    - [{ url: '?staffel=456&r=7#p763x925', title: 'gegen Freib. Wedemark', text: '5' }]
+    - [{ url: '?staffel=456&r=8#p763x760', title: 'gegen ST Langenhagen 2', text: 5½ }]
+    - [{ url: '?staffel=456&r=6#p763x922', title: 'gegen TSV Pattensen', text: '5' }]
+    - 12
+    - '39'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Laatzen 2', url: '?mannschaft=746', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=456&r=6#p746x790', title: 'gegen SF Hannover 3', text: '4' }]
+    - [{ url: '?staffel=456&r=9#p746x761', title: 'gegen SV Gretenberg', text: '2' }]
+    - [{ url: '?staffel=456&r=7#p746x768', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=456&r=2#p746x763', title: 'gegen SC Hämelerwald', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=456&r=8#p746x765', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=456&r=1#p746x916', title: 'gegen SG WB Eilenriede 3', text: '6' }]
+    - [{ url: '?staffel=456&r=4#p746x925', title: 'gegen Freib. Wedemark', text: '4' }]
+    - [{ url: '?staffel=456&r=5#p746x760', title: 'gegen ST Langenhagen 2', text: '5' }]
+    - [{ url: '?staffel=456&r=3#p746x922', title: 'gegen TSV Pattensen', text: '5' }]
+    - 9
+    - 35½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=765', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=456&r=4#p765x790', title: 'gegen SF Hannover 3', text: 3½ }]
+    - [{ url: '?staffel=456&r=1#p765x761', title: 'gegen SV Gretenberg', text: '2' }]
+    - [{ url: '?staffel=456&r=6#p765x768', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=456&r=5#p765x763', title: 'gegen SC Hämelerwald', text: 3½ }]
+    - [{ url: '?staffel=456&r=8#p765x746', title: 'gegen SV Laatzen 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=456&r=3#p765x916', title: 'gegen SG WB Eilenriede 3', text: '6' }]
+    - [{ url: '?staffel=456&r=9#p765x925', title: 'gegen Freib. Wedemark', text: '4' }]
+    - [{ url: '?staffel=456&r=2#p765x760', title: 'gegen ST Langenhagen 2', text: '4' }]
+    - [{ url: '?staffel=456&r=7#p765x922', title: 'gegen TSV Pattensen', text: '5' }]
+    - 8
+    - '36'
+    - ''
+-
+    - '7.'
+    - { text: 'SG WB Eilenriede 3', url: '?mannschaft=916', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=456&r=8#p916x790', title: 'gegen SF Hannover 3', text: 3½ }]
+    - [{ url: '?staffel=456&r=2#p916x761', title: 'gegen SV Gretenberg', text: '3' }]
+    - [{ url: '?staffel=456&r=9#p916x768', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=456&r=4#p916x763', title: 'gegen SC Hämelerwald', text: '4' }]
+    - [{ url: '?staffel=456&r=1#p916x746', title: 'gegen SV Laatzen 2', text: '2' }]
+    - [{ url: '?staffel=456&r=3#p916x765', title: 'gegen SK Lehrte 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=456&r=6#p916x925', title: 'gegen Freib. Wedemark', text: 4½ }]
+    - [{ url: '?staffel=456&r=7#p916x760', title: 'gegen ST Langenhagen 2', text: 7½ }]
+    - [{ url: '?staffel=456&r=5#p916x922', title: 'gegen TSV Pattensen', text: 4½ }]
+    - 7
+    - 33½
+    - ''
+-
+    - '8.'
+    - { text: 'Freib. Wedemark', url: '?mannschaft=925', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=456&r=2#p925x790', title: 'gegen SF Hannover 3', text: 2½ }]
+    - [{ url: '?staffel=456&r=5#p925x761', title: 'gegen SV Gretenberg', text: '5' }]
+    - [{ url: '?staffel=456&r=3#p925x768', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=456&r=7#p925x763', title: 'gegen SC Hämelerwald', text: '3' }]
+    - [{ url: '?staffel=456&r=4#p925x746', title: 'gegen SV Laatzen 2', text: '4' }]
+    - [{ url: '?staffel=456&r=9#p925x765', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=456&r=6#p925x916', title: 'gegen SG WB Eilenriede 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=456&r=1#p925x760', title: 'gegen ST Langenhagen 2', text: '2' }]
+    - [{ url: '?staffel=456&r=8#p925x922', title: 'gegen TSV Pattensen', text: '6' }]
+    - 6
+    - 33½
+    - ''
+-
+    - '9.'
+    - { text: 'ST Langenhagen 2', url: '?mannschaft=760', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=456&r=3#p760x790', title: 'gegen SF Hannover 3', text: '2' }]
+    - [{ url: '?staffel=456&r=6#p760x761', title: 'gegen SV Gretenberg', text: 2½ }]
+    - [{ url: '?staffel=456&r=4#p760x768', title: 'gegen SD Isernhagen', text: 1½ }]
+    - [{ url: '?staffel=456&r=8#p760x763', title: 'gegen SC Hämelerwald', text: 2½ }]
+    - [{ url: '?staffel=456&r=5#p760x746', title: 'gegen SV Laatzen 2', text: '3' }]
+    - [{ url: '?staffel=456&r=2#p760x765', title: 'gegen SK Lehrte 3', text: '4' }]
+    - [{ url: '?staffel=456&r=7#p760x916', title: 'gegen SG WB Eilenriede 3', text: ½ }]
+    - [{ url: '?staffel=456&r=1#p760x925', title: 'gegen Freib. Wedemark', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=456&r=9#p760x922', title: 'gegen TSV Pattensen', text: '6' }]
+    - 5
+    - '28'
+    - ''
+-
+    - '10.'
+    - { text: 'TSV Pattensen', url: '?mannschaft=922', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=456&r=1#p922x790', title: 'gegen SF Hannover 3', text: ½ }]
+    - [{ url: '?staffel=456&r=4#p922x761', title: 'gegen SV Gretenberg', text: '1' }]
+    - [{ url: '?staffel=456&r=2#p922x768', title: 'gegen SD Isernhagen', text: ½ }]
+    - [{ url: '?staffel=456&r=6#p922x763', title: 'gegen SC Hämelerwald', text: '3' }]
+    - [{ url: '?staffel=456&r=3#p922x746', title: 'gegen SV Laatzen 2', text: '3' }]
+    - [{ url: '?staffel=456&r=7#p922x765', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=456&r=5#p922x916', title: 'gegen SG WB Eilenriede 3', text: 3½ }]
+    - [{ url: '?staffel=456&r=8#p922x925', title: 'gegen Freib. Wedemark', text: '2' }]
+    - [{ url: '?staffel=456&r=9#p922x760', title: 'gegen ST Langenhagen 2', text: '2' }]
+    - xxx
+    - 0
+    - 18½
+    - ''

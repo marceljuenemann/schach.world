@@ -3,9 +3,11 @@
 global $nsv2020theme;
 $nsv2020theme = isset($args['nsv2020theme']) ? $args['nsv2020theme'] : 'nsv';
 
-function nsv2020_theme() {
-  global $nsv2020theme;
-  return $nsv2020theme;
+if (!function_exists('nsv2020_theme')) {
+  function nsv2020_theme() {
+    global $nsv2020theme;
+    return $nsv2020theme;
+  }
 }
 
 function nsv2020_url() {

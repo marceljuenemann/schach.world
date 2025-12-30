@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=3400', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=799&r=8#p3400x3598', title: 'gegen SV Warmsen', text: '5' }]
+    - [{ url: '?staffel=799&r=2#p3400x3561', title: 'gegen SK Stolzenau 2', text: 3½ }]
+    - [{ url: '?staffel=799&r=3#p3400x3585', title: 'gegen SV Berenbostel 3', text: 4½ }]
+    - [{ url: '?staffel=799&r=9#p3400x3566', title: 'gegen SF Hannover 4', text: '8' }]
+    - [{ url: '?staffel=799&r=6#p3400x3457', title: 'gegen Freib. Wedemark 2', text: '5' }]
+    - [{ url: '?staffel=799&r=1#p3400x3500', title: 'gegen SVg Calenberg 2', text: 6½ }]
+    - [{ url: '?staffel=799&r=5#p3400x3377', title: 'gegen Eystruper SK 2', text: 5½ }]
+    - [{ url: '?staffel=799&r=4#p3400x3580', title: 'gegen Hannover 96 4', text: '4' }]
+    - [{ url: '?staffel=799&r=7#p3400x3348', title: 'gegen Barsinghausen 3', text: 7½ }]
+    - 15
+    - 49½
+    - ''
+-
+    - '2.'
+    - { text: 'SV Warmsen', url: '?mannschaft=3598', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=799&r=8#p3598x3400', title: 'gegen SV Bückeburg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=799&r=9#p3598x3561', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - [{ url: '?staffel=799&r=1#p3598x3585', title: 'gegen SV Berenbostel 3', text: '5' }]
+    - [{ url: '?staffel=799&r=7#p3598x3566', title: 'gegen SF Hannover 4', text: '6' }]
+    - [{ url: '?staffel=799&r=4#p3598x3457', title: 'gegen Freib. Wedemark 2', text: '3' }]
+    - [{ url: '?staffel=799&r=6#p3598x3500', title: 'gegen SVg Calenberg 2', text: 5½ }]
+    - [{ url: '?staffel=799&r=3#p3598x3377', title: 'gegen Eystruper SK 2', text: 5½ }]
+    - [{ url: '?staffel=799&r=2#p3598x3580', title: 'gegen Hannover 96 4', text: '5' }]
+    - [{ url: '?staffel=799&r=5#p3598x3348', title: 'gegen Barsinghausen 3', text: 6½ }]
+    - 14
+    - 44½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Stolzenau 2', url: '?mannschaft=3561', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=799&r=2#p3561x3400', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=799&r=9#p3561x3598', title: 'gegen SV Warmsen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=799&r=4#p3561x3585', title: 'gegen SV Berenbostel 3', text: 3½ }]
+    - [{ url: '?staffel=799&r=1#p3561x3566', title: 'gegen SF Hannover 4', text: '8' }]
+    - [{ url: '?staffel=799&r=7#p3561x3457', title: 'gegen Freib. Wedemark 2', text: '6' }]
+    - [{ url: '?staffel=799&r=3#p3561x3500', title: 'gegen SVg Calenberg 2', text: '3' }]
+    - [{ url: '?staffel=799&r=6#p3561x3377', title: 'gegen Eystruper SK 2', text: '5' }]
+    - [{ url: '?staffel=799&r=5#p3561x3580', title: 'gegen Hannover 96 4', text: '7' }]
+    - [{ url: '?staffel=799&r=8#p3561x3348', title: 'gegen Barsinghausen 3', text: 7½ }]
+    - 12
+    - 47½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Berenbostel 3', url: '?mannschaft=3585', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=799&r=3#p3585x3400', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=799&r=1#p3585x3598', title: 'gegen SV Warmsen', text: '3' }]
+    - [{ url: '?staffel=799&r=4#p3585x3561', title: 'gegen SK Stolzenau 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=799&r=2#p3585x3566', title: 'gegen SF Hannover 4', text: 2½ }]
+    - [{ url: '?staffel=799&r=8#p3585x3457', title: 'gegen Freib. Wedemark 2', text: 4½ }]
+    - [{ url: '?staffel=799&r=5#p3585x3500', title: 'gegen SVg Calenberg 2', text: '7' }]
+    - [{ url: '?staffel=799&r=7#p3585x3377', title: 'gegen Eystruper SK 2', text: 4½ }]
+    - [{ url: '?staffel=799&r=6#p3585x3580', title: 'gegen Hannover 96 4', text: 5½ }]
+    - [{ url: '?staffel=799&r=9#p3585x3348', title: 'gegen Barsinghausen 3', text: 3½ }]
+    - 10
+    - 38½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Hannover 4', url: '?mannschaft=3566', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=799&r=9#p3566x3400', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=799&r=7#p3566x3598', title: 'gegen SV Warmsen', text: '2' }]
+    - [{ url: '?staffel=799&r=1#p3566x3561', title: 'gegen SK Stolzenau 2', text: '0' }]
+    - [{ url: '?staffel=799&r=2#p3566x3585', title: 'gegen SV Berenbostel 3', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=799&r=5#p3566x3457', title: 'gegen Freib. Wedemark 2', text: '5' }]
+    - [{ url: '?staffel=799&r=8#p3566x3500', title: 'gegen SVg Calenberg 2', text: 5½ }]
+    - [{ url: '?staffel=799&r=4#p3566x3377', title: 'gegen Eystruper SK 2', text: 5½ }]
+    - [{ url: '?staffel=799&r=3#p3566x3580', title: 'gegen Hannover 96 4', text: 3½ }]
+    - [{ url: '?staffel=799&r=6#p3566x3348', title: 'gegen Barsinghausen 3', text: '5' }]
+    - 10
+    - '32'
+    - ''
+-
+    - '6.'
+    - { text: 'Freib. Wedemark 2', url: '?mannschaft=3457', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=799&r=6#p3457x3400', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=799&r=4#p3457x3598', title: 'gegen SV Warmsen', text: '5' }]
+    - [{ url: '?staffel=799&r=7#p3457x3561', title: 'gegen SK Stolzenau 2', text: '2' }]
+    - [{ url: '?staffel=799&r=8#p3457x3585', title: 'gegen SV Berenbostel 3', text: 3½ }]
+    - [{ url: '?staffel=799&r=5#p3457x3566', title: 'gegen SF Hannover 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=799&r=2#p3457x3500', title: 'gegen SVg Calenberg 2', text: 2½ }]
+    - [{ url: '?staffel=799&r=1#p3457x3377', title: 'gegen Eystruper SK 2', text: '5' }]
+    - [{ url: '?staffel=799&r=9#p3457x3580', title: 'gegen Hannover 96 4', text: 5½ }]
+    - [{ url: '?staffel=799&r=3#p3457x3348', title: 'gegen Barsinghausen 3', text: 5½ }]
+    - 8
+    - '35'
+    - ''
+-
+    - '7.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=3500', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=799&r=1#p3500x3400', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=799&r=6#p3500x3598', title: 'gegen SV Warmsen', text: 2½ }]
+    - [{ url: '?staffel=799&r=3#p3500x3561', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - [{ url: '?staffel=799&r=5#p3500x3585', title: 'gegen SV Berenbostel 3', text: '1' }]
+    - [{ url: '?staffel=799&r=8#p3500x3566', title: 'gegen SF Hannover 4', text: 2½ }]
+    - [{ url: '?staffel=799&r=2#p3500x3457', title: 'gegen Freib. Wedemark 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=799&r=9#p3500x3377', title: 'gegen Eystruper SK 2', text: '0' }]
+    - [{ url: '?staffel=799&r=7#p3500x3580', title: 'gegen Hannover 96 4', text: '6' }]
+    - [{ url: '?staffel=799&r=4#p3500x3348', title: 'gegen Barsinghausen 3', text: '4' }]
+    - 7
+    - '27'
+    - ''
+-
+    - '8.'
+    - { text: 'Eystruper SK 2', url: '?mannschaft=3377', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=799&r=5#p3377x3400', title: 'gegen SV Bückeburg', text: 2½ }]
+    - [{ url: '?staffel=799&r=3#p3377x3598', title: 'gegen SV Warmsen', text: 2½ }]
+    - [{ url: '?staffel=799&r=6#p3377x3561', title: 'gegen SK Stolzenau 2', text: '3' }]
+    - [{ url: '?staffel=799&r=7#p3377x3585', title: 'gegen SV Berenbostel 3', text: 3½ }]
+    - [{ url: '?staffel=799&r=4#p3377x3566', title: 'gegen SF Hannover 4', text: 2½ }]
+    - [{ url: '?staffel=799&r=1#p3377x3457', title: 'gegen Freib. Wedemark 2', text: '3' }]
+    - [{ url: '?staffel=799&r=9#p3377x3500', title: 'gegen SVg Calenberg 2', text: '8' }]
+    - xxx
+    - [{ url: '?staffel=799&r=8#p3377x3580', title: 'gegen Hannover 96 4', text: 4½ }]
+    - [{ url: '?staffel=799&r=2#p3377x3348', title: 'gegen Barsinghausen 3', text: 4½ }]
+    - 6
+    - '34'
+    - ''
+-
+    - '9.'
+    - { text: 'Hannover 96 4', url: '?mannschaft=3580', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=799&r=4#p3580x3400', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=799&r=2#p3580x3598', title: 'gegen SV Warmsen', text: '3' }]
+    - [{ url: '?staffel=799&r=5#p3580x3561', title: 'gegen SK Stolzenau 2', text: '1' }]
+    - [{ url: '?staffel=799&r=6#p3580x3585', title: 'gegen SV Berenbostel 3', text: 2½ }]
+    - [{ url: '?staffel=799&r=3#p3580x3566', title: 'gegen SF Hannover 4', text: 4½ }]
+    - [{ url: '?staffel=799&r=9#p3580x3457', title: 'gegen Freib. Wedemark 2', text: 2½ }]
+    - [{ url: '?staffel=799&r=7#p3580x3500', title: 'gegen SVg Calenberg 2', text: '2' }]
+    - [{ url: '?staffel=799&r=8#p3580x3377', title: 'gegen Eystruper SK 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=799&r=1#p3580x3348', title: 'gegen Barsinghausen 3', text: 4½ }]
+    - 5
+    - 27½
+    - ''
+-
+    - '10.'
+    - { text: 'Barsinghausen 3', url: '?mannschaft=3348', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=799&r=7#p3348x3400', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=799&r=5#p3348x3598', title: 'gegen SV Warmsen', text: 1½ }]
+    - [{ url: '?staffel=799&r=8#p3348x3561', title: 'gegen SK Stolzenau 2', text: ½ }]
+    - [{ url: '?staffel=799&r=9#p3348x3585', title: 'gegen SV Berenbostel 3', text: 4½ }]
+    - [{ url: '?staffel=799&r=6#p3348x3566', title: 'gegen SF Hannover 4', text: '3' }]
+    - [{ url: '?staffel=799&r=3#p3348x3457', title: 'gegen Freib. Wedemark 2', text: 2½ }]
+    - [{ url: '?staffel=799&r=4#p3348x3500', title: 'gegen SVg Calenberg 2', text: '4' }]
+    - [{ url: '?staffel=799&r=2#p3348x3377', title: 'gegen Eystruper SK 2', text: 3½ }]
+    - [{ url: '?staffel=799&r=1#p3348x3580', title: 'gegen Hannover 96 4', text: 3½ }]
+    - xxx
+    - 3
+    - 23½
+    - ''

@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV', url: '?mannschaft=1806', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=569&r=4#p1806x1805', title: 'gegen SG Oesede-Gmht.', text: '2' }]
+    - [{ url: '?staffel=569&r=1#p1806x1803', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=569&r=3#p1806x1807', title: 'gegen Veldhausen/Uel.', text: '4' }]
+    - [{ url: '?staffel=569&r=2#p1806x1804', title: 'gegen SF Spelle', text: 3½ }]
+    - 7
+    - 12½
+    - ''
+-
+    - '2.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=1805', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=569&r=4#p1805x1806', title: 'gegen Hagener SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=569&r=3#p1805x1803', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=569&r=2#p1805x1807', title: 'gegen Veldhausen/Uel.', text: '3' }]
+    - [{ url: '?staffel=569&r=5#p1805x1804', title: 'gegen SF Spelle', text: '3' }]
+    - 7
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: Nordhorn-Blanke, url: '?mannschaft=1803', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=569&r=1#p1803x1806', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=569&r=3#p1803x1805', title: 'gegen SG Oesede-Gmht.', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=569&r=5#p1803x1807', title: 'gegen Veldhausen/Uel.', text: '3' }]
+    - [{ url: '?staffel=569&r=4#p1803x1804', title: 'gegen SF Spelle', text: 2½ }]
+    - 4
+    - 7½
+    - ''
+-
+    - '4.'
+    - { text: Veldhausen/Uel., url: '?mannschaft=1807', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=569&r=3#p1807x1806', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=569&r=2#p1807x1805', title: 'gegen SG Oesede-Gmht.', text: '1' }]
+    - [{ url: '?staffel=569&r=5#p1807x1803', title: 'gegen Nordhorn-Blanke', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=569&r=1#p1807x1804', title: 'gegen SF Spelle', text: 2½ }]
+    - 2
+    - 4½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Spelle', url: '?mannschaft=1804', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=569&r=2#p1804x1806', title: 'gegen Hagener SV', text: ½ }]
+    - [{ url: '?staffel=569&r=5#p1804x1805', title: 'gegen SG Oesede-Gmht.', text: '1' }]
+    - [{ url: '?staffel=569&r=4#p1804x1803', title: 'gegen Nordhorn-Blanke', text: 1½ }]
+    - [{ url: '?staffel=569&r=1#p1804x1807', title: 'gegen Veldhausen/Uel.', text: 1½ }]
+    - xxx
+    - 0
+    - 4½
+    - ''

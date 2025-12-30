@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Peiner SV 3', url: '?mannschaft=5275', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1074&r=3#p5275x5277', title: 'gegen SV Apelnstedt 2', text: '5' }]
+    - [{ url: '?staffel=1074&r=6#p5275x5300', title: 'gegen SV Hankensbüttel 2', text: '5' }]
+    - [{ url: '?staffel=1074&r=7#p5275x5325', title: 'gegen BS Gliesmarode 4', text: '3' }]
+    - [{ url: '?staffel=1074&r=1#p5275x5273', title: 'gegen C. Wolfenbüttel 4', text: '3' }]
+    - [{ url: '?staffel=1074&r=2#p5275x5288', title: 'gegen SVG Salzgitter 3', text: 4½ }]
+    - [{ url: '?staffel=1074&r=5#p5275x5324', title: 'gegen BS Gliesmarode 5', text: 5½ }]
+    - 11
+    - '26'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Apelnstedt 2', url: '?mannschaft=5277', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1074&r=3#p5277x5275', title: 'gegen Peiner SV 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1074&r=5#p5277x5300', title: 'gegen SV Hankensbüttel 2', text: 5½ }]
+    - [{ url: '?staffel=1074&r=6#p5277x5325', title: 'gegen BS Gliesmarode 4', text: 3½ }]
+    - [{ url: '?staffel=1074&r=7#p5277x5273', title: 'gegen C. Wolfenbüttel 4', text: '5' }]
+    - [{ url: '?staffel=1074&r=1#p5277x5288', title: 'gegen SVG Salzgitter 3', text: '4' }]
+    - [{ url: '?staffel=1074&r=4#p5277x5324', title: 'gegen BS Gliesmarode 5', text: 2½ }]
+    - 8
+    - 21½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Hankensbüttel 2', url: '?mannschaft=5300', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1074&r=6#p5300x5275', title: 'gegen Peiner SV 3', text: '1' }]
+    - [{ url: '?staffel=1074&r=5#p5300x5277', title: 'gegen SV Apelnstedt 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1074&r=2#p5300x5325', title: 'gegen BS Gliesmarode 4', text: '4' }]
+    - [{ url: '?staffel=1074&r=3#p5300x5273', title: 'gegen C. Wolfenbüttel 4', text: '3' }]
+    - [{ url: '?staffel=1074&r=4#p5300x5288', title: 'gegen SVG Salzgitter 3', text: '6' }]
+    - [{ url: '?staffel=1074&r=7#p5300x5324', title: 'gegen BS Gliesmarode 5', text: 3½ }]
+    - 7
+    - '18'
+    - ''
+-
+    - '4.'
+    - { text: 'BS Gliesmarode 4', url: '?mannschaft=5325', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1074&r=7#p5325x5275', title: 'gegen Peiner SV 3', text: '2' }]
+    - [{ url: '?staffel=1074&r=6#p5325x5277', title: 'gegen SV Apelnstedt 2', text: 2½ }]
+    - [{ url: '?staffel=1074&r=2#p5325x5300', title: 'gegen SV Hankensbüttel 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1074&r=4#p5325x5273', title: 'gegen C. Wolfenbüttel 4', text: '5' }]
+    - [{ url: '?staffel=1074&r=5#p5325x5288', title: 'gegen SVG Salzgitter 3', text: 4½ }]
+    - [{ url: '?staffel=1074&r=1#p5325x5324', title: 'gegen BS Gliesmarode 5', text: 4½ }]
+    - 6
+    - 20½
+    - ''
+-
+    - '5.'
+    - { text: 'C. Wolfenbüttel 4', url: '?mannschaft=5273', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1074&r=1#p5273x5275', title: 'gegen Peiner SV 3', text: '3' }]
+    - [{ url: '?staffel=1074&r=7#p5273x5277', title: 'gegen SV Apelnstedt 2', text: '1' }]
+    - [{ url: '?staffel=1074&r=3#p5273x5300', title: 'gegen SV Hankensbüttel 2', text: '3' }]
+    - [{ url: '?staffel=1074&r=4#p5273x5325', title: 'gegen BS Gliesmarode 4', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1074&r=6#p5273x5288', title: 'gegen SVG Salzgitter 3', text: 2½ }]
+    - [{ url: '?staffel=1074&r=2#p5273x5324', title: 'gegen BS Gliesmarode 5', text: 4½ }]
+    - 5
+    - '15'
+    - ''
+-
+    - '6.'
+    - { text: 'SVG Salzgitter 3', url: '?mannschaft=5288', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1074&r=2#p5288x5275', title: 'gegen Peiner SV 3', text: 1½ }]
+    - [{ url: '?staffel=1074&r=1#p5288x5277', title: 'gegen SV Apelnstedt 2', text: '2' }]
+    - [{ url: '?staffel=1074&r=4#p5288x5300', title: 'gegen SV Hankensbüttel 2', text: '0' }]
+    - [{ url: '?staffel=1074&r=5#p5288x5325', title: 'gegen BS Gliesmarode 4', text: ½ }]
+    - [{ url: '?staffel=1074&r=6#p5288x5273', title: 'gegen C. Wolfenbüttel 4', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1074&r=3#p5288x5324', title: 'gegen BS Gliesmarode 5', text: '6' }]
+    - 3
+    - 12½
+    - ''
+-
+    - '7.'
+    - { text: 'BS Gliesmarode 5', url: '?mannschaft=5324', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1074&r=5#p5324x5275', title: 'gegen Peiner SV 3', text: ½ }]
+    - [{ url: '?staffel=1074&r=4#p5324x5277', title: 'gegen SV Apelnstedt 2', text: 3½ }]
+    - [{ url: '?staffel=1074&r=7#p5324x5300', title: 'gegen SV Hankensbüttel 2', text: 1½ }]
+    - [{ url: '?staffel=1074&r=1#p5324x5325', title: 'gegen BS Gliesmarode 4', text: 1½ }]
+    - [{ url: '?staffel=1074&r=2#p5324x5273', title: 'gegen C. Wolfenbüttel 4', text: 1½ }]
+    - [{ url: '?staffel=1074&r=3#p5324x5288', title: 'gegen SVG Salzgitter 3', text: '0' }]
+    - xxx
+    - 2
+    - 8½
+    - ''

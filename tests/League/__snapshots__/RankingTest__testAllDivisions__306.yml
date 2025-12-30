@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TSV Riemsloh 3', url: '?mannschaft=3037', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=744&r=4#p3037x3042', title: 'gegen Hagener SV 6', text: 5½ }]
+    - [{ url: '?staffel=744&r=2#p3037x3039', title: 'gegen SV Osnabrück 6', text: '4' }]
+    - [{ url: '?staffel=744&r=7#p3037x3038', title: 'gegen Bersenbr./Brams 4', text: '5' }]
+    - [{ url: '?staffel=744&r=5#p3037x3040', title: 'gegen Hagener SV 7', text: '6' }]
+    - [{ url: '?staffel=744&r=3#p3037x3035', title: 'gegen Hagener SV 8', text: '6' }]
+    - [{ url: '?staffel=744&r=1#p3037x3036', title: 'gegen TSV Osnabrück 2', text: '6' }]
+    - 12
+    - 32½
+    - ''
+-
+    - '2.'
+    - { text: 'Hagener SV 6', url: '?mannschaft=3042', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=744&r=4#p3042x3037', title: 'gegen TSV Riemsloh 3', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=744&r=7#p3042x3039', title: 'gegen SV Osnabrück 6', text: '3' }]
+    - [{ url: '?staffel=744&r=5#p3042x3038', title: 'gegen Bersenbr./Brams 4', text: '3' }]
+    - [{ url: '?staffel=744&r=3#p3042x3040', title: 'gegen Hagener SV 7', text: 4½ }]
+    - [{ url: '?staffel=744&r=1#p3042x3035', title: 'gegen Hagener SV 8', text: 3½ }]
+    - [{ url: '?staffel=744&r=6#p3042x3036', title: 'gegen TSV Osnabrück 2', text: '6' }]
+    - 9
+    - 20½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Osnabrück 6', url: '?mannschaft=3039', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=744&r=2#p3039x3037', title: 'gegen TSV Riemsloh 3', text: '2' }]
+    - [{ url: '?staffel=744&r=7#p3039x3042', title: 'gegen Hagener SV 6', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=744&r=3#p3039x3038', title: 'gegen Bersenbr./Brams 4', text: 4½ }]
+    - [{ url: '?staffel=744&r=1#p3039x3040', title: 'gegen Hagener SV 7', text: '2' }]
+    - [{ url: '?staffel=744&r=6#p3039x3035', title: 'gegen Hagener SV 8', text: '3' }]
+    - [{ url: '?staffel=744&r=4#p3039x3036', title: 'gegen TSV Osnabrück 2', text: '6' }]
+    - 6
+    - 20½
+    - ''
+-
+    - '4.'
+    - { text: 'Bersenbr./Brams 4', url: '?mannschaft=3038', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=744&r=7#p3038x3037', title: 'gegen TSV Riemsloh 3', text: '1' }]
+    - [{ url: '?staffel=744&r=5#p3038x3042', title: 'gegen Hagener SV 6', text: '2' }]
+    - [{ url: '?staffel=744&r=3#p3038x3039', title: 'gegen SV Osnabrück 6', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=744&r=6#p3038x3040', title: 'gegen Hagener SV 7', text: '4' }]
+    - [{ url: '?staffel=744&r=4#p3038x3035', title: 'gegen Hagener SV 8', text: '4' }]
+    - [{ url: '?staffel=744&r=2#p3038x3036', title: 'gegen TSV Osnabrück 2', text: '6' }]
+    - 6
+    - 18½
+    - ''
+-
+    - '5.'
+    - { text: 'Hagener SV 7', url: '?mannschaft=3040', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=744&r=5#p3040x3037', title: 'gegen TSV Riemsloh 3', text: '0' }]
+    - [{ url: '?staffel=744&r=3#p3040x3042', title: 'gegen Hagener SV 6', text: ½ }]
+    - [{ url: '?staffel=744&r=1#p3040x3039', title: 'gegen SV Osnabrück 6', text: '4' }]
+    - [{ url: '?staffel=744&r=6#p3040x3038', title: 'gegen Bersenbr./Brams 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=744&r=2#p3040x3035', title: 'gegen Hagener SV 8', text: '4' }]
+    - [{ url: '?staffel=744&r=7#p3040x3036', title: 'gegen TSV Osnabrück 2', text: '6' }]
+    - 6
+    - 16½
+    - ''
+-
+    - '6.'
+    - { text: 'Hagener SV 8', url: '?mannschaft=3035', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=744&r=3#p3035x3037', title: 'gegen TSV Riemsloh 3', text: '0' }]
+    - [{ url: '?staffel=744&r=1#p3035x3042', title: 'gegen Hagener SV 6', text: 2½ }]
+    - [{ url: '?staffel=744&r=6#p3035x3039', title: 'gegen SV Osnabrück 6', text: '3' }]
+    - [{ url: '?staffel=744&r=4#p3035x3038', title: 'gegen Bersenbr./Brams 4', text: '2' }]
+    - [{ url: '?staffel=744&r=2#p3035x3040', title: 'gegen Hagener SV 7', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=744&r=5#p3035x3036', title: 'gegen TSV Osnabrück 2', text: '6' }]
+    - 3
+    - 15½
+    - ''
+-
+    - '7.'
+    - { text: 'TSV Osnabrück 2', url: '?mannschaft=3036', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=744&r=1#p3036x3037', title: 'gegen TSV Riemsloh 3', text: '0' }]
+    - [{ url: '?staffel=744&r=6#p3036x3042', title: 'gegen Hagener SV 6', text: '0' }]
+    - [{ url: '?staffel=744&r=4#p3036x3039', title: 'gegen SV Osnabrück 6', text: '0' }]
+    - [{ url: '?staffel=744&r=2#p3036x3038', title: 'gegen Bersenbr./Brams 4', text: '0' }]
+    - [{ url: '?staffel=744&r=7#p3036x3040', title: 'gegen Hagener SV 7', text: '0' }]
+    - [{ url: '?staffel=744&r=5#p3036x3035', title: 'gegen Hagener SV 8', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

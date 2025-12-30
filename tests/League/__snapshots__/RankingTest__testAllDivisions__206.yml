@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Warmsen', url: '?mannschaft=2071', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=632&r=6#p2071x2070', title: 'gegen SD Isernhagen 3', text: '4' }]
+    - [{ url: '?staffel=632&r=2#p2071x2034', title: 'gegen SG Bbg-Sth 4', text: '5' }]
+    - [{ url: '?staffel=632&r=7#p2071x2082', title: 'gegen SK Lehrte 5', text: '5' }]
+    - [{ url: '?staffel=632&r=8#p2071x2066', title: 'gegen PSC Hannover 4', text: '8' }]
+    - [{ url: '?staffel=632&r=3#p2071x2046', title: 'gegen SVg Calenberg 2', text: '6' }]
+    - 9
+    - '28'
+    - ''
+-
+    - '2.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=2070', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=632&r=6#p2070x2071', title: 'gegen SV Warmsen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=632&r=8#p2070x2034', title: 'gegen SG Bbg-Sth 4', text: '0' }]
+    - [{ url: '?staffel=632&r=2#p2070x2082', title: 'gegen SK Lehrte 5', text: '6' }]
+    - [{ url: '?staffel=632&r=5#p2070x2066', title: 'gegen PSC Hannover 4', text: '5' }]
+    - [{ url: '?staffel=632&r=7#p2070x2046', title: 'gegen SVg Calenberg 2', text: 4½ }]
+    - 7
+    - 19½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Bbg-Sth 4', url: '?mannschaft=2034', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=632&r=2#p2034x2071', title: 'gegen SV Warmsen', text: '3' }]
+    - [{ url: '?staffel=632&r=8#p2034x2070', title: 'gegen SD Isernhagen 3', text: '8' }]
+    - xxx
+    - [{ url: '?staffel=632&r=6#p2034x2082', title: 'gegen SK Lehrte 5', text: 1½ }]
+    - [{ url: '?staffel=632&r=7#p2034x2066', title: 'gegen PSC Hannover 4', text: '8' }]
+    - [{ url: '?staffel=632&r=5#p2034x2046', title: 'gegen SVg Calenberg 2', text: 4½ }]
+    - 6
+    - '25'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 5', url: '?mannschaft=2082', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=632&r=7#p2082x2071', title: 'gegen SV Warmsen', text: '3' }]
+    - [{ url: '?staffel=632&r=2#p2082x2070', title: 'gegen SD Isernhagen 3', text: '2' }]
+    - [{ url: '?staffel=632&r=6#p2082x2034', title: 'gegen SG Bbg-Sth 4', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=632&r=1#p2082x2066', title: 'gegen PSC Hannover 4', text: '5' }]
+    - [{ url: '?staffel=632&r=8#p2082x2046', title: 'gegen SVg Calenberg 2', text: 6½ }]
+    - 6
+    - '23'
+    - ''
+-
+    - '5.'
+    - { text: 'PSC Hannover 4', url: '?mannschaft=2066', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=632&r=8#p2066x2071', title: 'gegen SV Warmsen', text: '0' }]
+    - [{ url: '?staffel=632&r=5#p2066x2070', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - [{ url: '?staffel=632&r=7#p2066x2034', title: 'gegen SG Bbg-Sth 4', text: '0' }]
+    - [{ url: '?staffel=632&r=1#p2066x2082', title: 'gegen SK Lehrte 5', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=632&r=6#p2066x2046', title: 'gegen SVg Calenberg 2', text: '5' }]
+    - 2
+    - '10'
+    - ''
+-
+    - '6.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=2046', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=632&r=3#p2046x2071', title: 'gegen SV Warmsen', text: '2' }]
+    - [{ url: '?staffel=632&r=7#p2046x2070', title: 'gegen SD Isernhagen 3', text: 2½ }]
+    - [{ url: '?staffel=632&r=5#p2046x2034', title: 'gegen SG Bbg-Sth 4', text: 3½ }]
+    - [{ url: '?staffel=632&r=8#p2046x2082', title: 'gegen SK Lehrte 5', text: 1½ }]
+    - [{ url: '?staffel=632&r=6#p2046x2066', title: 'gegen PSC Hannover 4', text: '3' }]
+    - xxx
+    - 0
+    - 12½
+    - ''

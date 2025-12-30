@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Dissen-Bad Roth', url: '?mannschaft=4432', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=977&r=6#p4432x4522', title: 'gegen TSV Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=977&r=7#p4432x4486', title: 'gegen TSV Riemsloh 2', text: '4' }]
+    - [{ url: '?staffel=977&r=1#p4432x4607', title: 'gegen SG Osnabrück 4', text: '3' }]
+    - [{ url: '?staffel=977&r=4#p4432x4591', title: 'gegen SV Osnabrück 3', text: 4½ }]
+    - [{ url: '?staffel=977&r=5#p4432x4567', title: 'gegen SK Rulle', text: '3' }]
+    - [{ url: '?staffel=977&r=3#p4432x4598', title: 'gegen Bersenbrück/Bramsche 2', text: '5' }]
+    - [{ url: '?staffel=977&r=2#p4432x4551', title: 'gegen SV Bad Essen 3', text: 1½ }]
+    - 10
+    - 24½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TSV Osnabrück', url: '?mannschaft=4522', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=977&r=6#p4522x4432', title: 'gegen Dissen-Bad Roth', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=977&r=1#p4522x4486', title: 'gegen TSV Riemsloh 2', text: '3' }]
+    - [{ url: '?staffel=977&r=2#p4522x4607', title: 'gegen SG Osnabrück 4', text: 3½ }]
+    - [{ url: '?staffel=977&r=5#p4522x4591', title: 'gegen SV Osnabrück 3', text: 3½ }]
+    - [{ url: '?staffel=977&r=7#p4522x4567', title: 'gegen SK Rulle', text: '3' }]
+    - [{ url: '?staffel=977&r=4#p4522x4598', title: 'gegen Bersenbrück/Bramsche 2', text: '5' }]
+    - [{ url: '?staffel=977&r=3#p4522x4551', title: 'gegen SV Bad Essen 3', text: 3½ }]
+    - 10
+    - '24'
+    - ''
+-
+    - '3.'
+    - { text: 'TSV Riemsloh 2', url: '?mannschaft=4486', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=977&r=7#p4486x4432', title: 'gegen Dissen-Bad Roth', text: '2' }]
+    - [{ url: '?staffel=977&r=1#p4486x4522', title: 'gegen TSV Osnabrück', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=977&r=3#p4486x4607', title: 'gegen SG Osnabrück 4', text: '5' }]
+    - [{ url: '?staffel=977&r=6#p4486x4591', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=977&r=2#p4486x4567', title: 'gegen SK Rulle', text: 2½ }]
+    - [{ url: '?staffel=977&r=5#p4486x4598', title: 'gegen Bersenbrück/Bramsche 2', text: '6' }]
+    - [{ url: '?staffel=977&r=4#p4486x4551', title: 'gegen SV Bad Essen 3', text: 3½ }]
+    - 8
+    - '25'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Osnabrück 4', url: '?mannschaft=4607', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=977&r=1#p4607x4432', title: 'gegen Dissen-Bad Roth', text: '3' }]
+    - [{ url: '?staffel=977&r=2#p4607x4522', title: 'gegen TSV Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=977&r=3#p4607x4486', title: 'gegen TSV Riemsloh 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=977&r=7#p4607x4591', title: 'gegen SV Osnabrück 3', text: '6' }]
+    - [{ url: '?staffel=977&r=4#p4607x4567', title: 'gegen SK Rulle', text: '4' }]
+    - [{ url: '?staffel=977&r=6#p4607x4598', title: 'gegen Bersenbrück/Bramsche 2', text: 1½ }]
+    - [{ url: '?staffel=977&r=5#p4607x4551', title: 'gegen SV Bad Essen 3', text: 4½ }]
+    - 7
+    - 22½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Osnabrück 3', url: '?mannschaft=4591', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=977&r=4#p4591x4432', title: 'gegen Dissen-Bad Roth', text: 1½ }]
+    - [{ url: '?staffel=977&r=5#p4591x4522', title: 'gegen TSV Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=977&r=6#p4591x4486', title: 'gegen TSV Riemsloh 2', text: '3' }]
+    - [{ url: '?staffel=977&r=7#p4591x4607', title: 'gegen SG Osnabrück 4', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=977&r=3#p4591x4567', title: 'gegen SK Rulle', text: 4½ }]
+    - [{ url: '?staffel=977&r=2#p4591x4598', title: 'gegen Bersenbrück/Bramsche 2', text: 5½ }]
+    - [{ url: '?staffel=977&r=1#p4591x4551', title: 'gegen SV Bad Essen 3', text: 5½ }]
+    - 7
+    - 22½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Rulle', url: '?mannschaft=4567', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=977&r=5#p4567x4432', title: 'gegen Dissen-Bad Roth', text: '3' }]
+    - [{ url: '?staffel=977&r=7#p4567x4522', title: 'gegen TSV Osnabrück', text: '3' }]
+    - [{ url: '?staffel=977&r=2#p4567x4486', title: 'gegen TSV Riemsloh 2', text: 3½ }]
+    - [{ url: '?staffel=977&r=4#p4567x4607', title: 'gegen SG Osnabrück 4', text: '2' }]
+    - [{ url: '?staffel=977&r=3#p4567x4591', title: 'gegen SV Osnabrück 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=977&r=1#p4567x4598', title: 'gegen Bersenbrück/Bramsche 2', text: 2½ }]
+    - [{ url: '?staffel=977&r=6#p4567x4551', title: 'gegen SV Bad Essen 3', text: '3' }]
+    - 6
+    - 18½
+    - ''
+-
+    - '7.'
+    - { text: 'Bersenbrück/Bramsche 2', url: '?mannschaft=4598', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=977&r=3#p4598x4432', title: 'gegen Dissen-Bad Roth', text: '1' }]
+    - [{ url: '?staffel=977&r=4#p4598x4522', title: 'gegen TSV Osnabrück', text: '1' }]
+    - [{ url: '?staffel=977&r=5#p4598x4486', title: 'gegen TSV Riemsloh 2', text: '0' }]
+    - [{ url: '?staffel=977&r=6#p4598x4607', title: 'gegen SG Osnabrück 4', text: 4½ }]
+    - [{ url: '?staffel=977&r=2#p4598x4591', title: 'gegen SV Osnabrück 3', text: ½ }]
+    - [{ url: '?staffel=977&r=1#p4598x4567', title: 'gegen SK Rulle', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=977&r=7#p4598x4551', title: 'gegen SV Bad Essen 3', text: 3½ }]
+    - 6
+    - '14'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Bad Essen 3', url: '?mannschaft=4551', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=977&r=2#p4551x4432', title: 'gegen Dissen-Bad Roth', text: 4½ }]
+    - [{ url: '?staffel=977&r=3#p4551x4522', title: 'gegen TSV Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=977&r=4#p4551x4486', title: 'gegen TSV Riemsloh 2', text: 2½ }]
+    - [{ url: '?staffel=977&r=5#p4551x4607', title: 'gegen SG Osnabrück 4', text: 1½ }]
+    - [{ url: '?staffel=977&r=1#p4551x4591', title: 'gegen SV Osnabrück 3', text: ½ }]
+    - [{ url: '?staffel=977&r=6#p4551x4567', title: 'gegen SK Rulle', text: '2' }]
+    - [{ url: '?staffel=977&r=7#p4551x4598', title: 'gegen Bersenbrück/Bramsche 2', text: 2½ }]
+    - xxx
+    - 2
+    - '16'
+    - ''

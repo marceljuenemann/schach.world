@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TSV Riemsloh', url: '?mannschaft=2975', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=742&r=8#p2975x2971', title: 'gegen SV Hellern 4', text: 4½ }]
+    - [{ url: '?staffel=742&r=9#p2975x2969', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=742&r=1#p2975x2972', title: 'gegen Gaste-Hasbergen', text: '6' }]
+    - [{ url: '?staffel=742&r=3#p2975x2973', title: 'gegen SG Osnabrück 4', text: '4' }]
+    - [{ url: '?staffel=742&r=4#p2975x2967', title: 'gegen Hagener SV 4', text: 4½ }]
+    - [{ url: '?staffel=742&r=7#p2975x2970', title: 'gegen TSV Osnabrück', text: 6½ }]
+    - [{ url: '?staffel=742&r=2#p2975x2968', title: 'gegen SK Rulle', text: 6½ }]
+    - [{ url: '?staffel=742&r=5#p2975x2974', title: 'gegen SC Fürstenau 2', text: '8' }]
+    - 13
+    - '43'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Hellern 4', url: '?mannschaft=2971', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=742&r=8#p2971x2975', title: 'gegen TSV Riemsloh', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=742&r=4#p2971x2969', title: 'gegen SV Osnabrück 3', text: 5½ }]
+    - [{ url: '?staffel=742&r=9#p2971x2972', title: 'gegen Gaste-Hasbergen', text: 4½ }]
+    - [{ url: '?staffel=742&r=1#p2971x2973', title: 'gegen SG Osnabrück 4', text: '3' }]
+    - [{ url: '?staffel=742&r=6#p2971x2967', title: 'gegen Hagener SV 4', text: '6' }]
+    - [{ url: '?staffel=742&r=3#p2971x2970', title: 'gegen TSV Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=742&r=5#p2971x2968', title: 'gegen SK Rulle', text: 7½ }]
+    - [{ url: '?staffel=742&r=2#p2971x2974', title: 'gegen SC Fürstenau 2', text: '8' }]
+    - 12
+    - 42½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Osnabrück 3', url: '?mannschaft=2969', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=742&r=9#p2969x2975', title: 'gegen TSV Riemsloh', text: '5' }]
+    - [{ url: '?staffel=742&r=4#p2969x2971', title: 'gegen SV Hellern 4', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=742&r=5#p2969x2972', title: 'gegen Gaste-Hasbergen', text: 3½ }]
+    - [{ url: '?staffel=742&r=6#p2969x2973', title: 'gegen SG Osnabrück 4', text: '5' }]
+    - [{ url: '?staffel=742&r=2#p2969x2967', title: 'gegen Hagener SV 4', text: 4½ }]
+    - [{ url: '?staffel=742&r=8#p2969x2970', title: 'gegen TSV Osnabrück', text: 5½ }]
+    - [{ url: '?staffel=742&r=1#p2969x2968', title: 'gegen SK Rulle', text: '4' }]
+    - [{ url: '?staffel=742&r=7#p2969x2974', title: 'gegen SC Fürstenau 2', text: '8' }]
+    - 11
+    - '38'
+    - ''
+-
+    - '4.'
+    - { text: Gaste-Hasbergen, url: '?mannschaft=2972', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=742&r=1#p2972x2975', title: 'gegen TSV Riemsloh', text: '2' }]
+    - [{ url: '?staffel=742&r=9#p2972x2971', title: 'gegen SV Hellern 4', text: 3½ }]
+    - [{ url: '?staffel=742&r=5#p2972x2969', title: 'gegen SV Osnabrück 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=742&r=2#p2972x2973', title: 'gegen SG Osnabrück 4', text: 3½ }]
+    - [{ url: '?staffel=742&r=7#p2972x2967', title: 'gegen Hagener SV 4', text: 5½ }]
+    - [{ url: '?staffel=742&r=4#p2972x2970', title: 'gegen TSV Osnabrück', text: '5' }]
+    - [{ url: '?staffel=742&r=6#p2972x2968', title: 'gegen SK Rulle', text: '7' }]
+    - [{ url: '?staffel=742&r=3#p2972x2974', title: 'gegen SC Fürstenau 2', text: '8' }]
+    - 10
+    - '39'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Osnabrück 4', url: '?mannschaft=2973', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=742&r=3#p2973x2975', title: 'gegen TSV Riemsloh', text: '4' }]
+    - [{ url: '?staffel=742&r=1#p2973x2971', title: 'gegen SV Hellern 4', text: '5' }]
+    - [{ url: '?staffel=742&r=6#p2973x2969', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=742&r=2#p2973x2972', title: 'gegen Gaste-Hasbergen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=742&r=8#p2973x2967', title: 'gegen Hagener SV 4', text: 2½ }]
+    - [{ url: '?staffel=742&r=5#p2973x2970', title: 'gegen TSV Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=742&r=7#p2973x2968', title: 'gegen SK Rulle', text: '0' }]
+    - [{ url: '?staffel=742&r=4#p2973x2974', title: 'gegen SC Fürstenau 2', text: '8' }]
+    - 9
+    - 31½
+    - ''
+-
+    - '6.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=2967', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=742&r=4#p2967x2975', title: 'gegen TSV Riemsloh', text: 3½ }]
+    - [{ url: '?staffel=742&r=6#p2967x2971', title: 'gegen SV Hellern 4', text: '2' }]
+    - [{ url: '?staffel=742&r=2#p2967x2969', title: 'gegen SV Osnabrück 3', text: 3½ }]
+    - [{ url: '?staffel=742&r=7#p2967x2972', title: 'gegen Gaste-Hasbergen', text: 2½ }]
+    - [{ url: '?staffel=742&r=8#p2967x2973', title: 'gegen SG Osnabrück 4', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=742&r=1#p2967x2970', title: 'gegen TSV Osnabrück', text: '3' }]
+    - [{ url: '?staffel=742&r=3#p2967x2968', title: 'gegen SK Rulle', text: '5' }]
+    - [{ url: '?staffel=742&r=9#p2967x2974', title: 'gegen SC Fürstenau 2', text: '8' }]
+    - 6
+    - '33'
+    - ''
+-
+    - '7.'
+    - { text: 'TSV Osnabrück', url: '?mannschaft=2970', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=742&r=7#p2970x2975', title: 'gegen TSV Riemsloh', text: 1½ }]
+    - [{ url: '?staffel=742&r=3#p2970x2971', title: 'gegen SV Hellern 4', text: 3½ }]
+    - [{ url: '?staffel=742&r=8#p2970x2969', title: 'gegen SV Osnabrück 3', text: 2½ }]
+    - [{ url: '?staffel=742&r=4#p2970x2972', title: 'gegen Gaste-Hasbergen', text: '3' }]
+    - [{ url: '?staffel=742&r=5#p2970x2973', title: 'gegen SG Osnabrück 4', text: 3½ }]
+    - [{ url: '?staffel=742&r=1#p2970x2967', title: 'gegen Hagener SV 4', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=742&r=9#p2970x2968', title: 'gegen SK Rulle', text: 4½ }]
+    - [{ url: '?staffel=742&r=6#p2970x2974', title: 'gegen SC Fürstenau 2', text: '8' }]
+    - 6
+    - 31½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Rulle', url: '?mannschaft=2968', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=742&r=2#p2968x2975', title: 'gegen TSV Riemsloh', text: 1½ }]
+    - [{ url: '?staffel=742&r=5#p2968x2971', title: 'gegen SV Hellern 4', text: ½ }]
+    - [{ url: '?staffel=742&r=1#p2968x2969', title: 'gegen SV Osnabrück 3', text: '4' }]
+    - [{ url: '?staffel=742&r=6#p2968x2972', title: 'gegen Gaste-Hasbergen', text: '1' }]
+    - [{ url: '?staffel=742&r=7#p2968x2973', title: 'gegen SG Osnabrück 4', text: '8' }]
+    - [{ url: '?staffel=742&r=3#p2968x2967', title: 'gegen Hagener SV 4', text: '3' }]
+    - [{ url: '?staffel=742&r=9#p2968x2970', title: 'gegen TSV Osnabrück', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=742&r=8#p2968x2974', title: 'gegen SC Fürstenau 2', text: '8' }]
+    - 5
+    - 28½
+    - ''
+-
+    - '9.'
+    - { text: 'SC Fürstenau 2', url: '?mannschaft=2974', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=742&r=5#p2974x2975', title: 'gegen TSV Riemsloh', text: '0' }]
+    - [{ url: '?staffel=742&r=2#p2974x2971', title: 'gegen SV Hellern 4', text: '0' }]
+    - [{ url: '?staffel=742&r=7#p2974x2969', title: 'gegen SV Osnabrück 3', text: '0' }]
+    - [{ url: '?staffel=742&r=3#p2974x2972', title: 'gegen Gaste-Hasbergen', text: '0' }]
+    - [{ url: '?staffel=742&r=4#p2974x2973', title: 'gegen SG Osnabrück 4', text: '0' }]
+    - [{ url: '?staffel=742&r=9#p2974x2967', title: 'gegen Hagener SV 4', text: '0' }]
+    - [{ url: '?staffel=742&r=6#p2974x2970', title: 'gegen TSV Osnabrück', text: '0' }]
+    - [{ url: '?staffel=742&r=8#p2974x2968', title: 'gegen SK Rulle', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

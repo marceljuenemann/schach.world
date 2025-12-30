@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Lilienthal', url: '?mannschaft=4495', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=949&r=9#p4495x4405', title: 'gegen SK Bremen-Nord', text: 6½ }]
+    - [{ url: '?staffel=949&r=1#p4495x4399', title: 'gegen SF Leherheide', text: 4½ }]
+    - [{ url: '?staffel=949&r=4#p4495x4576', title: 'gegen Delmenhorster SK 2', text: 6½ }]
+    - [{ url: '?staffel=949&r=7#p4495x4589', title: 'gegen Bremer SG 2', text: 6½ }]
+    - [{ url: '?staffel=949&r=8#p4495x4491', title: 'gegen SK Verden', text: '7' }]
+    - [{ url: '?staffel=949&r=5#p4495x4565', title: 'gegen Findorffer SF', text: '6' }]
+    - [{ url: '?staffel=949&r=3#p4495x4392', title: 'gegen Breloher SC', text: '6' }]
+    - [{ url: '?staffel=949&r=2#p4495x4538', title: 'gegen SG Niederelbe', text: 7½ }]
+    - [{ url: '?staffel=949&r=6#p4495x4406', title: 'gegen SK Bremen-Nord 2', text: '6' }]
+    - 18
+    - 56½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Bremen-Nord', url: '?mannschaft=4405', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=949&r=9#p4405x4495', title: 'gegen SF Lilienthal', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=949&r=6#p4405x4399', title: 'gegen SF Leherheide', text: 5½ }]
+    - [{ url: '?staffel=949&r=1#p4405x4576', title: 'gegen Delmenhorster SK 2', text: 4½ }]
+    - [{ url: '?staffel=949&r=5#p4405x4589', title: 'gegen Bremer SG 2', text: '4' }]
+    - [{ url: '?staffel=949&r=4#p4405x4491', title: 'gegen SK Verden', text: 4½ }]
+    - [{ url: '?staffel=949&r=2#p4405x4565', title: 'gegen Findorffer SF', text: '5' }]
+    - [{ url: '?staffel=949&r=8#p4405x4392', title: 'gegen Breloher SC', text: '6' }]
+    - [{ url: '?staffel=949&r=7#p4405x4538', title: 'gegen SG Niederelbe', text: '7' }]
+    - [{ url: '?staffel=949&r=3#p4405x4406', title: 'gegen SK Bremen-Nord 2', text: '5' }]
+    - 15
+    - '43'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Leherheide', url: '?mannschaft=4399', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=949&r=1#p4399x4495', title: 'gegen SF Lilienthal', text: 3½ }]
+    - [{ url: '?staffel=949&r=6#p4399x4405', title: 'gegen SK Bremen-Nord', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=949&r=3#p4399x4576', title: 'gegen Delmenhorster SK 2', text: 4½ }]
+    - [{ url: '?staffel=949&r=8#p4399x4589', title: 'gegen Bremer SG 2', text: '4' }]
+    - [{ url: '?staffel=949&r=9#p4399x4491', title: 'gegen SK Verden', text: '6' }]
+    - [{ url: '?staffel=949&r=7#p4399x4565', title: 'gegen Findorffer SF', text: 4½ }]
+    - [{ url: '?staffel=949&r=2#p4399x4392', title: 'gegen Breloher SC', text: 5½ }]
+    - [{ url: '?staffel=949&r=4#p4399x4538', title: 'gegen SG Niederelbe', text: 5½ }]
+    - [{ url: '?staffel=949&r=5#p4399x4406', title: 'gegen SK Bremen-Nord 2', text: '5' }]
+    - 13
+    - '41'
+    - ''
+-
+    - '4.'
+    - { text: 'Delmenhorster SK 2', url: '?mannschaft=4576', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=949&r=4#p4576x4495', title: 'gegen SF Lilienthal', text: 1½ }]
+    - [{ url: '?staffel=949&r=1#p4576x4405', title: 'gegen SK Bremen-Nord', text: 3½ }]
+    - [{ url: '?staffel=949&r=3#p4576x4399', title: 'gegen SF Leherheide', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=949&r=2#p4576x4589', title: 'gegen Bremer SG 2', text: '3' }]
+    - [{ url: '?staffel=949&r=5#p4576x4491', title: 'gegen SK Verden', text: 5½ }]
+    - [{ url: '?staffel=949&r=9#p4576x4565', title: 'gegen Findorffer SF', text: '3' }]
+    - [{ url: '?staffel=949&r=6#p4576x4392', title: 'gegen Breloher SC', text: 6½ }]
+    - [{ url: '?staffel=949&r=8#p4576x4538', title: 'gegen SG Niederelbe', text: '6' }]
+    - [{ url: '?staffel=949&r=7#p4576x4406', title: 'gegen SK Bremen-Nord 2', text: 5½ }]
+    - 8
+    - '38'
+    - ''
+-
+    - '5.'
+    - { text: 'Bremer SG 2', url: '?mannschaft=4589', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=949&r=7#p4589x4495', title: 'gegen SF Lilienthal', text: 1½ }]
+    - [{ url: '?staffel=949&r=5#p4589x4405', title: 'gegen SK Bremen-Nord', text: '4' }]
+    - [{ url: '?staffel=949&r=8#p4589x4399', title: 'gegen SF Leherheide', text: '4' }]
+    - [{ url: '?staffel=949&r=2#p4589x4576', title: 'gegen Delmenhorster SK 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=949&r=6#p4589x4491', title: 'gegen SK Verden', text: 3½ }]
+    - [{ url: '?staffel=949&r=3#p4589x4565', title: 'gegen Findorffer SF', text: 3½ }]
+    - [{ url: '?staffel=949&r=9#p4589x4392', title: 'gegen Breloher SC', text: '5' }]
+    - [{ url: '?staffel=949&r=1#p4589x4538', title: 'gegen SG Niederelbe', text: '5' }]
+    - [{ url: '?staffel=949&r=4#p4589x4406', title: 'gegen SK Bremen-Nord 2', text: 3½ }]
+    - 8
+    - '35'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Verden', url: '?mannschaft=4491', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=949&r=8#p4491x4495', title: 'gegen SF Lilienthal', text: '1' }]
+    - [{ url: '?staffel=949&r=4#p4491x4405', title: 'gegen SK Bremen-Nord', text: 3½ }]
+    - [{ url: '?staffel=949&r=9#p4491x4399', title: 'gegen SF Leherheide', text: '2' }]
+    - [{ url: '?staffel=949&r=5#p4491x4576', title: 'gegen Delmenhorster SK 2', text: 2½ }]
+    - [{ url: '?staffel=949&r=6#p4491x4589', title: 'gegen Bremer SG 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=949&r=1#p4491x4565', title: 'gegen Findorffer SF', text: 4½ }]
+    - [{ url: '?staffel=949&r=7#p4491x4392', title: 'gegen Breloher SC', text: '4' }]
+    - [{ url: '?staffel=949&r=3#p4491x4538', title: 'gegen SG Niederelbe', text: 3½ }]
+    - [{ url: '?staffel=949&r=2#p4491x4406', title: 'gegen SK Bremen-Nord 2', text: 5½ }]
+    - 7
+    - '31'
+    - ''
+-
+    - '7.'
+    - { text: 'Findorffer SF', url: '?mannschaft=4565', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=949&r=5#p4565x4495', title: 'gegen SF Lilienthal', text: '2' }]
+    - [{ url: '?staffel=949&r=2#p4565x4405', title: 'gegen SK Bremen-Nord', text: '3' }]
+    - [{ url: '?staffel=949&r=7#p4565x4399', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=949&r=9#p4565x4576', title: 'gegen Delmenhorster SK 2', text: '5' }]
+    - [{ url: '?staffel=949&r=3#p4565x4589', title: 'gegen Bremer SG 2', text: 4½ }]
+    - [{ url: '?staffel=949&r=1#p4565x4491', title: 'gegen SK Verden', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=949&r=4#p4565x4392', title: 'gegen Breloher SC', text: 3½ }]
+    - [{ url: '?staffel=949&r=6#p4565x4538', title: 'gegen SG Niederelbe', text: '6' }]
+    - [{ url: '?staffel=949&r=8#p4565x4406', title: 'gegen SK Bremen-Nord 2', text: 2½ }]
+    - 6
+    - 33½
+    - ''
+-
+    - '8.'
+    - { text: 'Breloher SC', url: '?mannschaft=4392', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=949&r=3#p4392x4495', title: 'gegen SF Lilienthal', text: '2' }]
+    - [{ url: '?staffel=949&r=8#p4392x4405', title: 'gegen SK Bremen-Nord', text: '2' }]
+    - [{ url: '?staffel=949&r=2#p4392x4399', title: 'gegen SF Leherheide', text: 2½ }]
+    - [{ url: '?staffel=949&r=6#p4392x4576', title: 'gegen Delmenhorster SK 2', text: 1½ }]
+    - [{ url: '?staffel=949&r=9#p4392x4589', title: 'gegen Bremer SG 2', text: '3' }]
+    - [{ url: '?staffel=949&r=7#p4392x4491', title: 'gegen SK Verden', text: '4' }]
+    - [{ url: '?staffel=949&r=4#p4392x4565', title: 'gegen Findorffer SF', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=949&r=5#p4392x4538', title: 'gegen SG Niederelbe', text: '4' }]
+    - [{ url: '?staffel=949&r=1#p4392x4406', title: 'gegen SK Bremen-Nord 2', text: 5½ }]
+    - 6
+    - '29'
+    - ''
+-
+    - '9.'
+    - { text: 'SG Niederelbe', url: '?mannschaft=4538', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=949&r=2#p4538x4495', title: 'gegen SF Lilienthal', text: ½ }]
+    - [{ url: '?staffel=949&r=7#p4538x4405', title: 'gegen SK Bremen-Nord', text: '1' }]
+    - [{ url: '?staffel=949&r=4#p4538x4399', title: 'gegen SF Leherheide', text: 2½ }]
+    - [{ url: '?staffel=949&r=8#p4538x4576', title: 'gegen Delmenhorster SK 2', text: '2' }]
+    - [{ url: '?staffel=949&r=1#p4538x4589', title: 'gegen Bremer SG 2', text: '3' }]
+    - [{ url: '?staffel=949&r=3#p4538x4491', title: 'gegen SK Verden', text: 4½ }]
+    - [{ url: '?staffel=949&r=6#p4538x4565', title: 'gegen Findorffer SF', text: '2' }]
+    - [{ url: '?staffel=949&r=5#p4538x4392', title: 'gegen Breloher SC', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=949&r=9#p4538x4406', title: 'gegen SK Bremen-Nord 2', text: 5½ }]
+    - 5
+    - '25'
+    - ''
+-
+    - '10.'
+    - { text: 'SK Bremen-Nord 2', url: '?mannschaft=4406', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=949&r=6#p4406x4495', title: 'gegen SF Lilienthal', text: '2' }]
+    - [{ url: '?staffel=949&r=3#p4406x4405', title: 'gegen SK Bremen-Nord', text: '3' }]
+    - [{ url: '?staffel=949&r=5#p4406x4399', title: 'gegen SF Leherheide', text: '3' }]
+    - [{ url: '?staffel=949&r=7#p4406x4576', title: 'gegen Delmenhorster SK 2', text: 2½ }]
+    - [{ url: '?staffel=949&r=4#p4406x4589', title: 'gegen Bremer SG 2', text: 4½ }]
+    - [{ url: '?staffel=949&r=2#p4406x4491', title: 'gegen SK Verden', text: 2½ }]
+    - [{ url: '?staffel=949&r=8#p4406x4565', title: 'gegen Findorffer SF', text: 5½ }]
+    - [{ url: '?staffel=949&r=1#p4406x4392', title: 'gegen Breloher SC', text: 2½ }]
+    - [{ url: '?staffel=949&r=9#p4406x4538', title: 'gegen SG Niederelbe', text: 2½ }]
+    - xxx
+    - 4
+    - '28'
+    - ''

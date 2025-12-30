@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Rinteln 99', url: '?mannschaft=8567', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1876&r=1#p8567x8461', title: 'gegen SK Döhren 99', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1876&r=2#p8567x8489', title: 'gegen SV Bückeburg 99', text: '4' }]
+    - [{ url: '?staffel=1876&r=3#p8567x8498', title: 'gegen Hannover 96 99', text: '4' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '2.'
+    - { text: 'SC Hämelerwald 99', url: '?mannschaft=8466', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1876&r=2#p8466x8551', title: 'gegen HSK Lister Turm 99', text: '1' }]
+    - [{ url: '?staffel=1876&r=3#p8466x8461', title: 'gegen SK Döhren 99', text: '3' }]
+    - [{ url: '?staffel=1876&r=1#p8466x8497', title: 'gegen SK Wennigsen 99', text: '4' }]
+    - {  }
+    - {  }
+    - 4
+    - '8'
+    - ''
+-
+    - '2.'
+    - { text: 'SZ Bemerode 99', url: '?mannschaft=8559', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1876&r=3#p8559x8551', title: 'gegen HSK Lister Turm 99', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1876&r=2#p8559x8497', title: 'gegen SK Wennigsen 99', text: 1½ }]
+    - [{ url: '?staffel=1876&r=1#p8559x8489', title: 'gegen SV Bückeburg 99', text: 2½ }]
+    - {  }
+    - 4
+    - '8'
+    - ''
+-
+    - '4.'
+    - { text: 'HSK Lister Turm 99', url: '?mannschaft=8551', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1876&r=2#p8551x8466', title: 'gegen SC Hämelerwald 99', text: '3' }]
+    - [{ url: '?staffel=1876&r=3#p8551x8559', title: 'gegen SZ Bemerode 99', text: '0' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1876&r=1#p8551x8498', title: 'gegen Hannover 96 99', text: '4' }]
+    - 4
+    - '7'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Döhren 99', url: '?mannschaft=8461', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1876&r=1#p8461x8567', title: 'gegen SK Rinteln 99', text: 2½ }]
+    - [{ url: '?staffel=1876&r=3#p8461x8466', title: 'gegen SC Hämelerwald 99', text: '1' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1876&r=2#p8461x8498', title: 'gegen Hannover 96 99', text: '2' }]
+    - 3
+    - 5½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Wennigsen 99', url: '?mannschaft=8497', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1876&r=1#p8497x8466', title: 'gegen SC Hämelerwald 99', text: '0' }]
+    - [{ url: '?staffel=1876&r=2#p8497x8559', title: 'gegen SZ Bemerode 99', text: 2½ }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1876&r=3#p8497x8489', title: 'gegen SV Bückeburg 99', text: '2' }]
+    - {  }
+    - 3
+    - 4½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Bückeburg 99', url: '?mannschaft=8489', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1876&r=2#p8489x8567', title: 'gegen SK Rinteln 99', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1876&r=1#p8489x8559', title: 'gegen SZ Bemerode 99', text: 1½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1876&r=3#p8489x8497', title: 'gegen SK Wennigsen 99', text: '2' }]
+    - xxx
+    - {  }
+    - 1
+    - 3½
+    - ''
+-
+    - '8.'
+    - { text: 'Hannover 96 99', url: '?mannschaft=8498', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1876&r=3#p8498x8567', title: 'gegen SK Rinteln 99', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1876&r=1#p8498x8551', title: 'gegen HSK Lister Turm 99', text: '0' }]
+    - [{ url: '?staffel=1876&r=2#p8498x8461', title: 'gegen SK Döhren 99', text: '2' }]
+    - {  }
+    - {  }
+    - xxx
+    - 1
+    - '2'
+    - ''

@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Veldhausen/Uel. 3', url: '?mannschaft=7101', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1689&r=3#p7101x7093', title: 'gegen SV Lingen 4', text: '3' }]
+    - [{ url: '?staffel=1689&r=2#p7101x7081', title: 'gegen SK Nordhorn-Blanke 7', text: '4' }]
+    - [{ url: '?staffel=1689&r=7#p7101x7069', title: 'gegen SF Spelle 4', text: '3' }]
+    - [{ url: '?staffel=1689&r=1#p7101x7076', title: 'gegen SK Meppen 3', text: '4' }]
+    - [{ url: '?staffel=1689&r=5#p7101x7108', title: 'gegen TuS Aschendorf 3', text: '4' }]
+    - [{ url: '?staffel=1689&r=4#p7101x7077', title: 'gegen SK Meppen 4', text: '4' }]
+    - 12
+    - '22'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Lingen 4', url: '?mannschaft=7093', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1689&r=3#p7093x7101', title: 'gegen Veldhausen/Uel. 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1689&r=6#p7093x7081', title: 'gegen SK Nordhorn-Blanke 7', text: '2' }]
+    - [{ url: '?staffel=1689&r=4#p7093x7069', title: 'gegen SF Spelle 4', text: '3' }]
+    - [{ url: '?staffel=1689&r=5#p7093x7076', title: 'gegen SK Meppen 3', text: '3' }]
+    - [{ url: '?staffel=1689&r=2#p7093x7108', title: 'gegen TuS Aschendorf 3', text: '4' }]
+    - [{ url: '?staffel=1689&r=1#p7093x7077', title: 'gegen SK Meppen 4', text: '4' }]
+    - 9
+    - '17'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Nordhorn-Blanke 7', url: '?mannschaft=7081', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1689&r=2#p7081x7101', title: 'gegen Veldhausen/Uel. 3', text: '0' }]
+    - [{ url: '?staffel=1689&r=6#p7081x7093', title: 'gegen SV Lingen 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1689&r=3#p7081x7069', title: 'gegen SF Spelle 4', text: '2' }]
+    - [{ url: '?staffel=1689&r=4#p7081x7076', title: 'gegen SK Meppen 3', text: '3' }]
+    - [{ url: '?staffel=1689&r=1#p7081x7108', title: 'gegen TuS Aschendorf 3', text: '3' }]
+    - [{ url: '?staffel=1689&r=7#p7081x7077', title: 'gegen SK Meppen 4', text: 2½ }]
+    - 8
+    - 12½
+    - ''
+-
+    - '4.'
+    - { text: 'SF Spelle 4', url: '?mannschaft=7069', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1689&r=7#p7069x7101', title: 'gegen Veldhausen/Uel. 3', text: '1' }]
+    - [{ url: '?staffel=1689&r=4#p7069x7093', title: 'gegen SV Lingen 4', text: '1' }]
+    - [{ url: '?staffel=1689&r=3#p7069x7081', title: 'gegen SK Nordhorn-Blanke 7', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1689&r=2#p7069x7076', title: 'gegen SK Meppen 3', text: '1' }]
+    - [{ url: '?staffel=1689&r=6#p7069x7108', title: 'gegen TuS Aschendorf 3', text: '2' }]
+    - [{ url: '?staffel=1689&r=5#p7069x7077', title: 'gegen SK Meppen 4', text: '4' }]
+    - 4
+    - '11'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Meppen 3', url: '?mannschaft=7076', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1689&r=1#p7076x7101', title: 'gegen Veldhausen/Uel. 3', text: '0' }]
+    - [{ url: '?staffel=1689&r=5#p7076x7093', title: 'gegen SV Lingen 4', text: '1' }]
+    - [{ url: '?staffel=1689&r=4#p7076x7081', title: 'gegen SK Nordhorn-Blanke 7', text: '1' }]
+    - [{ url: '?staffel=1689&r=2#p7076x7069', title: 'gegen SF Spelle 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1689&r=7#p7076x7108', title: 'gegen TuS Aschendorf 3', text: 1½ }]
+    - [{ url: '?staffel=1689&r=6#p7076x7077', title: 'gegen SK Meppen 4', text: '3' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '6.'
+    - { text: 'TuS Aschendorf 3', url: '?mannschaft=7108', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1689&r=5#p7108x7101', title: 'gegen Veldhausen/Uel. 3', text: '0' }]
+    - [{ url: '?staffel=1689&r=2#p7108x7093', title: 'gegen SV Lingen 4', text: '0' }]
+    - [{ url: '?staffel=1689&r=1#p7108x7081', title: 'gegen SK Nordhorn-Blanke 7', text: '1' }]
+    - [{ url: '?staffel=1689&r=6#p7108x7069', title: 'gegen SF Spelle 4', text: '2' }]
+    - [{ url: '?staffel=1689&r=7#p7108x7076', title: 'gegen SK Meppen 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1689&r=3#p7108x7077', title: 'gegen SK Meppen 4', text: 1½ }]
+    - 3
+    - '7'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Meppen 4', url: '?mannschaft=7077', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1689&r=4#p7077x7101', title: 'gegen Veldhausen/Uel. 3', text: '0' }]
+    - [{ url: '?staffel=1689&r=1#p7077x7093', title: 'gegen SV Lingen 4', text: '0' }]
+    - [{ url: '?staffel=1689&r=7#p7077x7081', title: 'gegen SK Nordhorn-Blanke 7', text: 1½ }]
+    - [{ url: '?staffel=1689&r=5#p7077x7069', title: 'gegen SF Spelle 4', text: '0' }]
+    - [{ url: '?staffel=1689&r=6#p7077x7076', title: 'gegen SK Meppen 3', text: '1' }]
+    - [{ url: '?staffel=1689&r=3#p7077x7108', title: 'gegen TuS Aschendorf 3', text: 2½ }]
+    - xxx
+    - 2
+    - '5'
+    - ''

@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: Uetze-Hänigsen, url: '?mannschaft=2101', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=586&r=5#p2101x2102', title: 'gegen SF Hannover', text: '4' }]
+    - [{ url: '?staffel=586&r=6#p2101x2061', title: 'gegen SK Lehrte 3', text: 1½ }]
+    - [{ url: '?staffel=586&r=3#p2101x2059', title: 'gegen Hildesheim SHG', text: '3' }]
+    - [{ url: '?staffel=586&r=1#p2101x2037', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=586&r=4#p2101x2078', title: 'gegen Garbsen/Marienw', text: '4' }]
+    - [{ url: '?staffel=586&r=2#p2101x2104', title: 'gegen TuS Wunstorf', text: 3½ }]
+    - 10
+    - '19'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Hannover', url: '?mannschaft=2102', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=586&r=5#p2102x2101', title: 'gegen Uetze-Hänigsen', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=586&r=4#p2102x2061', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=586&r=1#p2102x2059', title: 'gegen Hildesheim SHG', text: 2½ }]
+    - [{ url: '?staffel=586&r=6#p2102x2037', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=586&r=2#p2102x2078', title: 'gegen Garbsen/Marienw', text: '3' }]
+    - [{ url: '?staffel=586&r=7#p2102x2104', title: 'gegen TuS Wunstorf', text: '4' }]
+    - 9
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=2061', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=586&r=6#p2061x2101', title: 'gegen Uetze-Hänigsen', text: 2½ }]
+    - [{ url: '?staffel=586&r=4#p2061x2102', title: 'gegen SF Hannover', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=586&r=2#p2061x2059', title: 'gegen Hildesheim SHG', text: '0' }]
+    - [{ url: '?staffel=586&r=7#p2061x2037', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=586&r=3#p2061x2078', title: 'gegen Garbsen/Marienw', text: 3½ }]
+    - [{ url: '?staffel=586&r=1#p2061x2104', title: 'gegen TuS Wunstorf', text: '3' }]
+    - 8
+    - '14'
+    - ''
+-
+    - '4.'
+    - { text: 'Hildesheim SHG', url: '?mannschaft=2059', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=586&r=3#p2059x2101', title: 'gegen Uetze-Hänigsen', text: '1' }]
+    - [{ url: '?staffel=586&r=1#p2059x2102', title: 'gegen SF Hannover', text: 1½ }]
+    - [{ url: '?staffel=586&r=2#p2059x2061', title: 'gegen SK Lehrte 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=586&r=4#p2059x2037', title: 'gegen SV Springe', text: 1½ }]
+    - [{ url: '?staffel=586&r=7#p2059x2078', title: 'gegen Garbsen/Marienw', text: '3' }]
+    - [{ url: '?staffel=586&r=5#p2059x2104', title: 'gegen TuS Wunstorf', text: '4' }]
+    - 6
+    - '15'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Springe', url: '?mannschaft=2037', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=586&r=1#p2037x2101', title: 'gegen Uetze-Hänigsen', text: '1' }]
+    - [{ url: '?staffel=586&r=6#p2037x2102', title: 'gegen SF Hannover', text: '2' }]
+    - [{ url: '?staffel=586&r=7#p2037x2061', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=586&r=4#p2037x2059', title: 'gegen Hildesheim SHG', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=586&r=5#p2037x2078', title: 'gegen Garbsen/Marienw', text: '3' }]
+    - [{ url: '?staffel=586&r=3#p2037x2104', title: 'gegen TuS Wunstorf', text: '1' }]
+    - 5
+    - 9½
+    - ''
+-
+    - '6.'
+    - { text: Garbsen/Marienw, url: '?mannschaft=2078', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=586&r=4#p2078x2101', title: 'gegen Uetze-Hänigsen', text: '0' }]
+    - [{ url: '?staffel=586&r=2#p2078x2102', title: 'gegen SF Hannover', text: '1' }]
+    - [{ url: '?staffel=586&r=3#p2078x2061', title: 'gegen SK Lehrte 3', text: ½ }]
+    - [{ url: '?staffel=586&r=7#p2078x2059', title: 'gegen Hildesheim SHG', text: '1' }]
+    - [{ url: '?staffel=586&r=5#p2078x2037', title: 'gegen SV Springe', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=586&r=6#p2078x2104', title: 'gegen TuS Wunstorf', text: '3' }]
+    - 2
+    - 6½
+    - ''
+-
+    - '7.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=2104', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=586&r=2#p2104x2101', title: 'gegen Uetze-Hänigsen', text: ½ }]
+    - [{ url: '?staffel=586&r=7#p2104x2102', title: 'gegen SF Hannover', text: '0' }]
+    - [{ url: '?staffel=586&r=1#p2104x2061', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=586&r=5#p2104x2059', title: 'gegen Hildesheim SHG', text: '0' }]
+    - [{ url: '?staffel=586&r=3#p2104x2037', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=586&r=6#p2104x2078', title: 'gegen Garbsen/Marienw', text: '1' }]
+    - xxx
+    - 2
+    - 5½
+    - ''

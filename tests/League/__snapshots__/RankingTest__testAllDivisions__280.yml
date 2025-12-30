@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Quickborn', url: '?mannschaft=2864', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=714&r=1#p2864x3212', title: 'gegen SV Gryps', text: '4' }]
+    - [{ url: '?staffel=714&r=4#p2864x2926', title: 'gegen Hamburger SK 2', text: '3' }]
+    - [{ url: '?staffel=714&r=2#p2864x3111', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=714&r=5#p2864x3112', title: 'gegen SK Lehrte 3', text: 3½ }]
+    - [{ url: '?staffel=714&r=3#p2864x3061', title: 'gegen TuRa Harksheide 2', text: '4' }]
+    - 10
+    - 18½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Gryps', url: '?mannschaft=3212', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=714&r=1#p3212x2864', title: 'gegen SV Quickborn', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=714&r=2#p3212x2926', title: 'gegen Hamburger SK 2', text: '4' }]
+    - [{ url: '?staffel=714&r=3#p3212x3111', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=714&r=4#p3212x3112', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=714&r=5#p3212x3061', title: 'gegen TuRa Harksheide 2', text: '4' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: 'Hamburger SK 2', url: '?mannschaft=2926', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=714&r=4#p2926x2864', title: 'gegen SV Quickborn', text: '1' }]
+    - [{ url: '?staffel=714&r=2#p2926x3212', title: 'gegen SV Gryps', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=714&r=5#p2926x3111', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=714&r=3#p2926x3112', title: 'gegen SK Lehrte 3', text: '2' }]
+    - [{ url: '?staffel=714&r=1#p2926x3061', title: 'gegen TuRa Harksheide 2', text: 2½ }]
+    - 5
+    - 8½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=3111', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=714&r=2#p3111x2864', title: 'gegen SV Quickborn', text: '0' }]
+    - [{ url: '?staffel=714&r=3#p3111x3212', title: 'gegen SV Gryps', text: '0' }]
+    - [{ url: '?staffel=714&r=5#p3111x2926', title: 'gegen Hamburger SK 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=714&r=1#p3111x3112', title: 'gegen SK Lehrte 3', text: '3' }]
+    - [{ url: '?staffel=714&r=4#p3111x3061', title: 'gegen TuRa Harksheide 2', text: '4' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=3112', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=714&r=5#p3112x2864', title: 'gegen SV Quickborn', text: ½ }]
+    - [{ url: '?staffel=714&r=4#p3112x3212', title: 'gegen SV Gryps', text: '1' }]
+    - [{ url: '?staffel=714&r=3#p3112x2926', title: 'gegen Hamburger SK 2', text: '2' }]
+    - [{ url: '?staffel=714&r=1#p3112x3111', title: 'gegen SK Lehrte 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=714&r=2#p3112x3061', title: 'gegen TuRa Harksheide 2', text: '3' }]
+    - 3
+    - 7½
+    - absteiger
+-
+    - '6.'
+    - { text: 'TuRa Harksheide 2', url: '?mannschaft=3061', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=714&r=3#p3061x2864', title: 'gegen SV Quickborn', text: '0' }]
+    - [{ url: '?staffel=714&r=5#p3061x3212', title: 'gegen SV Gryps', text: '0' }]
+    - [{ url: '?staffel=714&r=1#p3061x2926', title: 'gegen Hamburger SK 2', text: 1½ }]
+    - [{ url: '?staffel=714&r=4#p3061x3111', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=714&r=2#p3061x3112', title: 'gegen SK Lehrte 3', text: '1' }]
+    - xxx
+    - 0
+    - 2½
+    - absteiger

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'MTV Celle 1', url: '?mannschaft=7273', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1692&r=1#p7273x7275', title: 'gegen Stader SV', text: 2½ }]
+    - [{ url: '?staffel=1692&r=4#p7273x7280', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - [{ url: '?staffel=1692&r=5#p7273x7274', title: 'gegen MTV Celle 2', text: '3' }]
+    - [{ url: '?staffel=1692&r=2#p7273x7276', title: 'gegen BW Buchholz', text: '3' }]
+    - [{ url: '?staffel=1692&r=3#p7273x7279', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1692&r=6#p7273x7277', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - [{ url: '?staffel=1692&r=7#p7273x7278', title: 'gegen FG Wohlde', text: '4' }]
+    - 14
+    - 22½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'Stader SV', url: '?mannschaft=7275', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1692&r=1#p7275x7273', title: 'gegen MTV Celle 1', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1692&r=6#p7275x7280', title: 'gegen SV Bad Bevensen', text: '4' }]
+    - [{ url: '?staffel=1692&r=2#p7275x7274', title: 'gegen MTV Celle 2', text: '4' }]
+    - [{ url: '?staffel=1692&r=5#p7275x7276', title: 'gegen BW Buchholz', text: '4' }]
+    - [{ url: '?staffel=1692&r=7#p7275x7279', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=1692&r=3#p7275x7277', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - [{ url: '?staffel=1692&r=4#p7275x7278', title: 'gegen FG Wohlde', text: '4' }]
+    - 12
+    - 25½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=7280', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1692&r=4#p7280x7273', title: 'gegen MTV Celle 1', text: '1' }]
+    - [{ url: '?staffel=1692&r=6#p7280x7275', title: 'gegen Stader SV', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1692&r=3#p7280x7274', title: 'gegen MTV Celle 2', text: '2' }]
+    - [{ url: '?staffel=1692&r=7#p7280x7276', title: 'gegen BW Buchholz', text: '2' }]
+    - [{ url: '?staffel=1692&r=5#p7280x7279', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1692&r=2#p7280x7277', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - [{ url: '?staffel=1692&r=1#p7280x7278', title: 'gegen FG Wohlde', text: '4' }]
+    - 8
+    - '16'
+    - ''
+-
+    - '4.'
+    - { text: 'MTV Celle 2', url: '?mannschaft=7274', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1692&r=5#p7274x7273', title: 'gegen MTV Celle 1', text: '1' }]
+    - [{ url: '?staffel=1692&r=2#p7274x7275', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=1692&r=3#p7274x7280', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1692&r=1#p7274x7276', title: 'gegen BW Buchholz', text: 2½ }]
+    - [{ url: '?staffel=1692&r=4#p7274x7279', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1692&r=7#p7274x7277', title: 'gegen SV Winsen (Luhe)', text: '2' }]
+    - [{ url: '?staffel=1692&r=6#p7274x7278', title: 'gegen FG Wohlde', text: '3' }]
+    - 8
+    - 13½
+    - ''
+-
+    - '5.'
+    - { text: 'BW Buchholz', url: '?mannschaft=7276', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1692&r=2#p7276x7273', title: 'gegen MTV Celle 1', text: '1' }]
+    - [{ url: '?staffel=1692&r=5#p7276x7275', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=1692&r=7#p7276x7280', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=1692&r=1#p7276x7274', title: 'gegen MTV Celle 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1692&r=6#p7276x7279', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1692&r=4#p7276x7277', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - [{ url: '?staffel=1692&r=3#p7276x7278', title: 'gegen FG Wohlde', text: '4' }]
+    - 7
+    - 14½
+    - ''
+-
+    - '6.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=7279', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1692&r=3#p7279x7273', title: 'gegen MTV Celle 1', text: '0' }]
+    - [{ url: '?staffel=1692&r=7#p7279x7275', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=1692&r=5#p7279x7280', title: 'gegen SV Bad Bevensen', text: '1' }]
+    - [{ url: '?staffel=1692&r=4#p7279x7274', title: 'gegen MTV Celle 2', text: '1' }]
+    - [{ url: '?staffel=1692&r=6#p7279x7276', title: 'gegen BW Buchholz', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1692&r=1#p7279x7277', title: 'gegen SV Winsen (Luhe)', text: 3½ }]
+    - [{ url: '?staffel=1692&r=2#p7279x7278', title: 'gegen FG Wohlde', text: '4' }]
+    - 4
+    - 10½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Winsen (Luhe)', url: '?mannschaft=7277', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1692&r=6#p7277x7273', title: 'gegen MTV Celle 1', text: '0' }]
+    - [{ url: '?staffel=1692&r=3#p7277x7275', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=1692&r=2#p7277x7280', title: 'gegen SV Bad Bevensen', text: '0' }]
+    - [{ url: '?staffel=1692&r=7#p7277x7274', title: 'gegen MTV Celle 2', text: '2' }]
+    - [{ url: '?staffel=1692&r=4#p7277x7276', title: 'gegen BW Buchholz', text: '0' }]
+    - [{ url: '?staffel=1692&r=1#p7277x7279', title: 'gegen Post SV Uelzen 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1692&r=5#p7277x7278', title: 'gegen FG Wohlde', text: '2' }]
+    - 2
+    - 4½
+    - ''
+-
+    - '8.'
+    - { text: 'FG Wohlde', url: '?mannschaft=7278', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1692&r=7#p7278x7273', title: 'gegen MTV Celle 1', text: '0' }]
+    - [{ url: '?staffel=1692&r=4#p7278x7275', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=1692&r=1#p7278x7280', title: 'gegen SV Bad Bevensen', text: '0' }]
+    - [{ url: '?staffel=1692&r=6#p7278x7274', title: 'gegen MTV Celle 2', text: '1' }]
+    - [{ url: '?staffel=1692&r=3#p7278x7276', title: 'gegen BW Buchholz', text: '0' }]
+    - [{ url: '?staffel=1692&r=2#p7278x7279', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - [{ url: '?staffel=1692&r=5#p7278x7277', title: 'gegen SV Winsen (Luhe)', text: '2' }]
+    - xxx
+    - 1
+    - '3'
+    - ''

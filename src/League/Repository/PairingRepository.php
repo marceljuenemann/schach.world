@@ -9,6 +9,7 @@ use Doctrine\Persistence\ManagerRegistry;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\Pairing;
 use Nsv\League\Entity\Team;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
  * @extends ServiceEntityRepository<Pairing>
@@ -17,6 +18,15 @@ class PairingRepository extends ServiceEntityRepository
 {
   public function __construct(ManagerRegistry $registry) {
     parent::__construct($registry, Pairing::class);
+  }
+
+  // TODO: move into our own abstract repository? 
+  public function find($id, $lockMode = null, $lockVersion = null): Pairing {
+    $entity = parent::find((int) $id, $lockMode, $lockVersion);
+    if (!$entity) {
+      throw new NotFoundHttpException("Pairing not found");
+    }
+    return $entity;
   }
 
   /**
@@ -31,7 +41,7 @@ class PairingRepository extends ServiceEntityRepository
       // leftJoin to allow NULL players.
       ->leftJoin('g.player1', 's1')
       ->leftJoin('g.player2', 's2')
-      ->where('p.team1 = :team OR p.team2 = :team')
+      ->where('(p.team1 = :team OR p.team2 = :team) AND p.division > 0')
       ->addOrderBy('p.round', 'ASC')
       ->addOrderBy('p.host', 'ASC')
       ->addOrderBy('p.id', 'ASC')
@@ -52,7 +62,7 @@ class PairingRepository extends ServiceEntityRepository
       // leftJoin to allow NULL players.
       ->leftJoin('g.player1', 's1')
       ->leftJoin('g.player2', 's2')
-      ->where('p.division = :division AND p.round = :round')
+      ->andWhere('p.division = :division AND p.division > 0 AND p.round = :round')
       ->addOrderBy('p.host', 'ASC')
       ->addOrderBy('p.id', 'ASC')
       ->setParameter('division', $division)
@@ -78,5 +88,24 @@ class PairingRepository extends ServiceEntityRepository
       $criteria->orderBy(Pairing::ORDERING);
     }
     return $this->matching($criteria);
+  }
+
+  /**
+   * Finds all games for a division and a tournament with
+   * player data dwz and birth date
+   */
+  public function findAllPairingsDivision($division) {
+    return $this->createQueryBuilder('pairings')
+      ->select('pairings, games, player1, player2, team1, team2')
+      ->leftJoin('pairings.games', 'games')
+      ->leftJoin('pairings.division', 'p_division')
+      ->leftJoin('games.player1', 'player1')
+      ->leftJoin('games.player2', 'player2')
+      ->innerJoin('pairings.team1', 'team1')
+      ->innerJoin('pairings.team2', 'team2')
+      ->andWhere('p_division.id = :division')
+      ->setParameter('division', $division->id)
+      ->getQuery()
+      ->getResult();
   }
 }

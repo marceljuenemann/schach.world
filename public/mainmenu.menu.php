@@ -38,15 +38,9 @@ $nsvMainmenu = array (
 	(bool) strstr ( $_SERVER ['REQUEST_URI'], "/vorstand/" )
 ),
 
-"Bezirke" => array (
-	"bezirke/bezirk.php?kurzname=",
-	(bool) strstr ( $_SERVER ['PHP_SELF'], "/bezirke/" ),
-	"Hannover" => "bezirke/Hannover",
-	"Braunschweig" => "bezirke/Braunschweig",
-	"S&uuml;dniedersachsen" => "bezirke/Sued",
-	"L&uuml;neburg" => "bezirke/Lueneburg",
-	"Oldenburg-Ostfriesland" => "bezirke/Oldenburg",
-	"Osnabr&uuml;ck-Emsland" => "bezirke/Osnabrueck"
+"Vereine" => array (
+	"vereine/",
+	(bool) strstr ( $_SERVER ['REQUEST_URI'], "/vereine/" )
 ),
 
 "Termine" => array (
@@ -54,25 +48,36 @@ $nsvMainmenu = array (
 	(bool) strstr ( $_SERVER ['PHP_SELF'], "/termine/" )
 ),
 
-"Ausbildung" => array (
-	"kategorie/ausbildung/",
-	false
+"Turniere" => array (
+	"nsv-grandprix/",
+	(bool) strstr ( $_SERVER ['PHP_SELF'], "/nsv-grandprix/" ),
+	"Turnieranmeldungen" => "/turnieranmeldung/",
+	"NSV-Grandprix" => "/nsv-grandprix/",
+	"NSV-Rapid Rumble" => "/nsv-rapid-rumble/",
+	"LEM 2026" => "2025/09/lem-2026-ausschreibung-und-anmeldungen/",
+	"Blitzeinzel 2025" => "2025/09/landesblitzeinzelmeisterschaft-2025-ausschreibung/",
+	"Blitzmannschaft 2025" => "2025/10/landesblitzmannschaftsmeisterschaft-2025-ausschreibung/",
+	"Schnellschacheinzelm. 2025" => "2025/05/gedon-hartge-triumphiert-beim-anderter-open-fm-knuedel-neuer-landesmeister/",
+	"Pokalmannschaftsm. 2024/25" => "2025/06/nsv-pokal-sk-nordhorn-blanke-mannschaftspokalmeister/",
+	"Frauenmeisterschaften 2025" => "2025/02/frauenschachpower-pur/",
+	"Frauenblitzschach 2025" => "2025/04/frauenblitzmeisterschaft-2025-bericht/",
+	"Frauenschnellschach 2025" => "2025/05/offene-niedersaechsische-frauenschnellschachmeisterschaft-2025-bericht/",
+	"Probleml&ouml;semeisterschaft 2025" => "2025/01/loesemeisterschaft-2025-bericht/",
 ),
 
-"Frauen" => array (
-	"kategorie/frauenschach/",
-	false
+"Referate" => array (
+	"vorstand/",
+	(bool) strstr ( $_SERVER ['PHP_SELF'], "/vorstand/" ),
+	"Spielgeschehen" => "kategorie/spielgeschehen/",
+	"Ausbildung" => "kategorie/ausbildung/",
+	"Leistungssport" => "kategorie/leistungssport/",
+	"Frauen" => "kategorie/frauenschach/",
+	"Problemschach" => "kategorie/problemschach/",
+	"Jugend" => "goto/jugend",
+	"Senioren" => "goto/Senioren",
 ),
 
-"Jugend" => array (
-	"goto/jugend",
-	false
-),
 
-"Senioren" => array (
-	"goto/Senioren",
-	false
-)
 );
 ?>
 

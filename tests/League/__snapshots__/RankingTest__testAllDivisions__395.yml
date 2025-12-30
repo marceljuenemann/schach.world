@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Doppelbauer Kiel', url: '?mannschaft=3664', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=846&r=2#p3664x3668', title: 'gegen TuRa Harksheide', text: '5' }]
+    - [{ url: '?staffel=846&r=3#p3664x3670', title: 'gegen SV Mülheim Nord', text: '4' }]
+    - [{ url: '?staffel=846&r=6#p3664x3662', title: 'gegen SV Heiden', text: '4' }]
+    - [{ url: '?staffel=846&r=1#p3664x3663', title: 'gegen Delmenhorster SK', text: '4' }]
+    - [{ url: '?staffel=846&r=4#p3664x3671', title: 'gegen SV Wattenscheid', text: '4' }]
+    - [{ url: '?staffel=846&r=7#p3664x3669', title: 'gegen Horst-Emscher', text: '3' }]
+    - [{ url: '?staffel=846&r=5#p3664x3667', title: 'gegen SV Quickborn', text: '5' }]
+    - 13
+    - '29'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TuRa Harksheide', url: '?mannschaft=3668', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=846&r=2#p3668x3664', title: 'gegen Doppelbauer Kiel', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=846&r=7#p3668x3670', title: 'gegen SV Mülheim Nord', text: 3½ }]
+    - [{ url: '?staffel=846&r=4#p3668x3662', title: 'gegen SV Heiden', text: '5' }]
+    - [{ url: '?staffel=846&r=5#p3668x3663', title: 'gegen Delmenhorster SK', text: 2½ }]
+    - [{ url: '?staffel=846&r=6#p3668x3671', title: 'gegen SV Wattenscheid', text: 3½ }]
+    - [{ url: '?staffel=846&r=3#p3668x3669', title: 'gegen Horst-Emscher', text: '3' }]
+    - [{ url: '?staffel=846&r=1#p3668x3667', title: 'gegen SV Quickborn', text: '3' }]
+    - 8
+    - 21½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Mülheim Nord', url: '?mannschaft=3670', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=846&r=3#p3670x3664', title: 'gegen Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=846&r=7#p3670x3668', title: 'gegen TuRa Harksheide', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=846&r=1#p3670x3662', title: 'gegen SV Heiden', text: '5' }]
+    - [{ url: '?staffel=846&r=6#p3670x3663', title: 'gegen Delmenhorster SK', text: '4' }]
+    - [{ url: '?staffel=846&r=5#p3670x3671', title: 'gegen SV Wattenscheid', text: '3' }]
+    - [{ url: '?staffel=846&r=2#p3670x3669', title: 'gegen Horst-Emscher', text: '2' }]
+    - [{ url: '?staffel=846&r=4#p3670x3667', title: 'gegen SV Quickborn', text: '4' }]
+    - 7
+    - 22½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Heiden', url: '?mannschaft=3662', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=846&r=6#p3662x3664', title: 'gegen Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=846&r=4#p3662x3668', title: 'gegen TuRa Harksheide', text: '1' }]
+    - [{ url: '?staffel=846&r=1#p3662x3670', title: 'gegen SV Mülheim Nord', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=846&r=3#p3662x3663', title: 'gegen Delmenhorster SK', text: '4' }]
+    - [{ url: '?staffel=846&r=2#p3662x3671', title: 'gegen SV Wattenscheid', text: '4' }]
+    - [{ url: '?staffel=846&r=5#p3662x3669', title: 'gegen Horst-Emscher', text: '4' }]
+    - [{ url: '?staffel=846&r=7#p3662x3667', title: 'gegen SV Quickborn', text: '3' }]
+    - 7
+    - '19'
+    - ''
+-
+    - '5.'
+    - { text: 'Delmenhorster SK', url: '?mannschaft=3663', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=846&r=1#p3663x3664', title: 'gegen Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=846&r=5#p3663x3668', title: 'gegen TuRa Harksheide', text: 3½ }]
+    - [{ url: '?staffel=846&r=6#p3663x3670', title: 'gegen SV Mülheim Nord', text: '2' }]
+    - [{ url: '?staffel=846&r=3#p3663x3662', title: 'gegen SV Heiden', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=846&r=7#p3663x3671', title: 'gegen SV Wattenscheid', text: '4' }]
+    - [{ url: '?staffel=846&r=4#p3663x3669', title: 'gegen Horst-Emscher', text: '3' }]
+    - [{ url: '?staffel=846&r=2#p3663x3667', title: 'gegen SV Quickborn', text: '3' }]
+    - 6
+    - 19½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Wattenscheid', url: '?mannschaft=3671', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=846&r=4#p3671x3664', title: 'gegen Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=846&r=6#p3671x3668', title: 'gegen TuRa Harksheide', text: 2½ }]
+    - [{ url: '?staffel=846&r=5#p3671x3670', title: 'gegen SV Mülheim Nord', text: '3' }]
+    - [{ url: '?staffel=846&r=2#p3671x3662', title: 'gegen SV Heiden', text: '2' }]
+    - [{ url: '?staffel=846&r=7#p3671x3663', title: 'gegen Delmenhorster SK', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=846&r=1#p3671x3669', title: 'gegen Horst-Emscher', text: '4' }]
+    - [{ url: '?staffel=846&r=3#p3671x3667', title: 'gegen SV Quickborn', text: 4½ }]
+    - 5
+    - '20'
+    - ''
+-
+    - '7.'
+    - { text: Horst-Emscher, url: '?mannschaft=3669', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=846&r=7#p3669x3664', title: 'gegen Doppelbauer Kiel', text: '3' }]
+    - [{ url: '?staffel=846&r=3#p3669x3668', title: 'gegen TuRa Harksheide', text: '3' }]
+    - [{ url: '?staffel=846&r=2#p3669x3670', title: 'gegen SV Mülheim Nord', text: '4' }]
+    - [{ url: '?staffel=846&r=5#p3669x3662', title: 'gegen SV Heiden', text: '2' }]
+    - [{ url: '?staffel=846&r=4#p3669x3663', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=846&r=1#p3669x3671', title: 'gegen SV Wattenscheid', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=846&r=6#p3669x3667', title: 'gegen SV Quickborn', text: '2' }]
+    - 5
+    - '19'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SV Quickborn', url: '?mannschaft=3667', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=846&r=5#p3667x3664', title: 'gegen Doppelbauer Kiel', text: '1' }]
+    - [{ url: '?staffel=846&r=1#p3667x3668', title: 'gegen TuRa Harksheide', text: '3' }]
+    - [{ url: '?staffel=846&r=4#p3667x3670', title: 'gegen SV Mülheim Nord', text: '2' }]
+    - [{ url: '?staffel=846&r=7#p3667x3662', title: 'gegen SV Heiden', text: '3' }]
+    - [{ url: '?staffel=846&r=2#p3667x3663', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=846&r=3#p3667x3671', title: 'gegen SV Wattenscheid', text: 1½ }]
+    - [{ url: '?staffel=846&r=6#p3667x3669', title: 'gegen Horst-Emscher', text: '4' }]
+    - xxx
+    - 5
+    - 17½
+    - absteiger

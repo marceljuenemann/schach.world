@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Berenbostel', url: '?mannschaft=473', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=415&r=6#p473x480', title: 'gegen ST Langenhagen', text: 4½ }]
+    - [{ url: '?staffel=415&r=5#p473x478', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=415&r=9#p473x479', title: 'gegen SK Lister Turm', text: 4½ }]
+    - [{ url: '?staffel=415&r=3#p473x475', title: 'gegen TuS Wunstorf', text: '6' }]
+    - [{ url: '?staffel=415&r=2#p473x476', title: 'gegen PSC Hannover 2', text: '8' }]
+    - [{ url: '?staffel=415&r=7#p473x471', title: 'gegen SK Rinteln', text: 4½ }]
+    - [{ url: '?staffel=415&r=4#p473x477', title: 'gegen Barsinghausen', text: 5½ }]
+    - [{ url: '?staffel=415&r=1#p473x474', title: 'gegen SC Stadthagen', text: 5½ }]
+    - [{ url: '?staffel=415&r=8#p473x472', title: 'gegen SK Anderten', text: '6' }]
+    - 16
+    - 47½
+    - ''
+-
+    - '2.'
+    - { text: 'ST Langenhagen', url: '?mannschaft=480', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=415&r=6#p480x473', title: 'gegen SV Berenbostel', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=415&r=4#p480x478', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=415&r=3#p480x479', title: 'gegen SK Lister Turm', text: 5½ }]
+    - [{ url: '?staffel=415&r=8#p480x475', title: 'gegen TuS Wunstorf', text: '7' }]
+    - [{ url: '?staffel=415&r=9#p480x476', title: 'gegen PSC Hannover 2', text: '5' }]
+    - [{ url: '?staffel=415&r=5#p480x471', title: 'gegen SK Rinteln', text: 7½ }]
+    - [{ url: '?staffel=415&r=1#p480x477', title: 'gegen Barsinghausen', text: '6' }]
+    - [{ url: '?staffel=415&r=2#p480x474', title: 'gegen SC Stadthagen', text: '5' }]
+    - [{ url: '?staffel=415&r=7#p480x472', title: 'gegen SK Anderten', text: 5½ }]
+    - 15
+    - '49'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Laatzen', url: '?mannschaft=478', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=415&r=5#p478x473', title: 'gegen SV Berenbostel', text: '5' }]
+    - [{ url: '?staffel=415&r=4#p478x480', title: 'gegen ST Langenhagen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=415&r=1#p478x479', title: 'gegen SK Lister Turm', text: 2½ }]
+    - [{ url: '?staffel=415&r=9#p478x475', title: 'gegen TuS Wunstorf', text: 7½ }]
+    - [{ url: '?staffel=415&r=6#p478x476', title: 'gegen PSC Hannover 2', text: 4½ }]
+    - [{ url: '?staffel=415&r=3#p478x471', title: 'gegen SK Rinteln', text: '6' }]
+    - [{ url: '?staffel=415&r=8#p478x477', title: 'gegen Barsinghausen', text: 4½ }]
+    - [{ url: '?staffel=415&r=7#p478x474', title: 'gegen SC Stadthagen', text: 4½ }]
+    - [{ url: '?staffel=415&r=2#p478x472', title: 'gegen SK Anderten', text: 4½ }]
+    - 15
+    - '43'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lister Turm', url: '?mannschaft=479', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=415&r=9#p479x473', title: 'gegen SV Berenbostel', text: 3½ }]
+    - [{ url: '?staffel=415&r=3#p479x480', title: 'gegen ST Langenhagen', text: 2½ }]
+    - [{ url: '?staffel=415&r=1#p479x478', title: 'gegen SV Laatzen', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=415&r=7#p479x475', title: 'gegen TuS Wunstorf', text: '7' }]
+    - [{ url: '?staffel=415&r=8#p479x476', title: 'gegen PSC Hannover 2', text: 4½ }]
+    - [{ url: '?staffel=415&r=4#p479x471', title: 'gegen SK Rinteln', text: '5' }]
+    - [{ url: '?staffel=415&r=2#p479x477', title: 'gegen Barsinghausen', text: 6½ }]
+    - [{ url: '?staffel=415&r=6#p479x474', title: 'gegen SC Stadthagen', text: 7½ }]
+    - [{ url: '?staffel=415&r=5#p479x472', title: 'gegen SK Anderten', text: '6' }]
+    - 14
+    - '48'
+    - ''
+-
+    - '5.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=475', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=415&r=3#p475x473', title: 'gegen SV Berenbostel', text: '2' }]
+    - [{ url: '?staffel=415&r=8#p475x480', title: 'gegen ST Langenhagen', text: '1' }]
+    - [{ url: '?staffel=415&r=9#p475x478', title: 'gegen SV Laatzen', text: ½ }]
+    - [{ url: '?staffel=415&r=7#p475x479', title: 'gegen SK Lister Turm', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=415&r=5#p475x476', title: 'gegen PSC Hannover 2', text: '4' }]
+    - [{ url: '?staffel=415&r=2#p475x471', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=415&r=6#p475x477', title: 'gegen Barsinghausen', text: '5' }]
+    - [{ url: '?staffel=415&r=4#p475x474', title: 'gegen SC Stadthagen', text: '6' }]
+    - [{ url: '?staffel=415&r=1#p475x472', title: 'gegen SK Anderten', text: '5' }]
+    - 7
+    - '28'
+    - ''
+-
+    - '6.'
+    - { text: 'PSC Hannover 2', url: '?mannschaft=476', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=415&r=2#p476x473', title: 'gegen SV Berenbostel', text: '0' }]
+    - [{ url: '?staffel=415&r=9#p476x480', title: 'gegen ST Langenhagen', text: '3' }]
+    - [{ url: '?staffel=415&r=6#p476x478', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=415&r=8#p476x479', title: 'gegen SK Lister Turm', text: 3½ }]
+    - [{ url: '?staffel=415&r=5#p476x475', title: 'gegen TuS Wunstorf', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=415&r=1#p476x471', title: 'gegen SK Rinteln', text: '5' }]
+    - [{ url: '?staffel=415&r=7#p476x477', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=415&r=3#p476x474', title: 'gegen SC Stadthagen', text: 3½ }]
+    - [{ url: '?staffel=415&r=4#p476x472', title: 'gegen SK Anderten', text: 6½ }]
+    - 6
+    - '33'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Rinteln', url: '?mannschaft=471', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=415&r=7#p471x473', title: 'gegen SV Berenbostel', text: 3½ }]
+    - [{ url: '?staffel=415&r=5#p471x480', title: 'gegen ST Langenhagen', text: ½ }]
+    - [{ url: '?staffel=415&r=3#p471x478', title: 'gegen SV Laatzen', text: '2' }]
+    - [{ url: '?staffel=415&r=4#p471x479', title: 'gegen SK Lister Turm', text: '3' }]
+    - [{ url: '?staffel=415&r=2#p471x475', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=415&r=1#p471x476', title: 'gegen PSC Hannover 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=415&r=9#p471x477', title: 'gegen Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=415&r=8#p471x474', title: 'gegen SC Stadthagen', text: '5' }]
+    - [{ url: '?staffel=415&r=6#p471x472', title: 'gegen SK Anderten', text: 4½ }]
+    - 6
+    - 29½
+    - ''
+-
+    - '8.'
+    - { text: Barsinghausen, url: '?mannschaft=477', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=415&r=4#p477x473', title: 'gegen SV Berenbostel', text: 2½ }]
+    - [{ url: '?staffel=415&r=1#p477x480', title: 'gegen ST Langenhagen', text: '2' }]
+    - [{ url: '?staffel=415&r=8#p477x478', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=415&r=2#p477x479', title: 'gegen SK Lister Turm', text: 1½ }]
+    - [{ url: '?staffel=415&r=6#p477x475', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=415&r=7#p477x476', title: 'gegen PSC Hannover 2', text: '4' }]
+    - [{ url: '?staffel=415&r=9#p477x471', title: 'gegen SK Rinteln', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=415&r=5#p477x474', title: 'gegen SC Stadthagen', text: '6' }]
+    - [{ url: '?staffel=415&r=3#p477x472', title: 'gegen SK Anderten', text: 3½ }]
+    - 5
+    - 30½
+    - ''
+-
+    - '9.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=474', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=415&r=1#p474x473', title: 'gegen SV Berenbostel', text: 2½ }]
+    - [{ url: '?staffel=415&r=2#p474x480', title: 'gegen ST Langenhagen', text: '3' }]
+    - [{ url: '?staffel=415&r=7#p474x478', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=415&r=6#p474x479', title: 'gegen SK Lister Turm', text: ½ }]
+    - [{ url: '?staffel=415&r=4#p474x475', title: 'gegen TuS Wunstorf', text: '2' }]
+    - [{ url: '?staffel=415&r=3#p474x476', title: 'gegen PSC Hannover 2', text: 4½ }]
+    - [{ url: '?staffel=415&r=8#p474x471', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=415&r=5#p474x477', title: 'gegen Barsinghausen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=415&r=9#p474x472', title: 'gegen SK Anderten', text: '5' }]
+    - 4
+    - '26'
+    - ''
+-
+    - '10.'
+    - { text: 'SK Anderten', url: '?mannschaft=472', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=415&r=8#p472x473', title: 'gegen SV Berenbostel', text: '2' }]
+    - [{ url: '?staffel=415&r=7#p472x480', title: 'gegen ST Langenhagen', text: 2½ }]
+    - [{ url: '?staffel=415&r=2#p472x478', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=415&r=5#p472x479', title: 'gegen SK Lister Turm', text: '2' }]
+    - [{ url: '?staffel=415&r=1#p472x475', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=415&r=4#p472x476', title: 'gegen PSC Hannover 2', text: 1½ }]
+    - [{ url: '?staffel=415&r=6#p472x471', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=415&r=3#p472x477', title: 'gegen Barsinghausen', text: 4½ }]
+    - [{ url: '?staffel=415&r=9#p472x474', title: 'gegen SC Stadthagen', text: '3' }]
+    - xxx
+    - 2
+    - 25½
+    - ''

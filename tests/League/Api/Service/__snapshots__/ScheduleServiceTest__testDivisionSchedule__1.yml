@@ -1,0 +1,88 @@
+-
+    round: 1
+    date: '2018-09-23'
+    uri: /ligen/nsj-1819/landesklasse-sued/1/
+    uriPdf: /ligen/nsj-1819/landesklasse-sued/1/pdf/
+    uriPgn: /ligen/nsj-1819/landesklasse-sued/1/pgn/
+    uriApi: /ligen/nsj-1819/api/divisions/landesklasse-sued/rounds/1/
+    pairings: [{ id: 26917, round: 1, team1: { id: 5644, name: 'SK Rinteln', zps: '70144', uri: /ligen/nsj-1819/m/5644/, apiUri: /ligen/nsj-1819/api/teams/5644/ }, team2: { id: 5647, name: 'Hildesheimer SV', zps: '70306', uri: /ligen/nsj-1819/m/5647/, apiUri: /ligen/nsj-1819/api/teams/5647/ }, host: null, result: !!binary Mb0gOiAyvQ==, result1: 1.5, result2: 2.5, comment: null, wasMoved: false, moveDate: null }, { id: 26918, round: 1, team1: { id: 5679, name: 'SV Springe', zps: '70128', uri: /ligen/nsj-1819/m/5679/, apiUri: /ligen/nsj-1819/api/teams/5679/ }, team2: { id: 5648, name: 'Hildesheimer SV 2', zps: '70306', uri: /ligen/nsj-1819/m/5648/, apiUri: /ligen/nsj-1819/api/teams/5648/ }, host: null, result: '4 : 0', result1: 4.0, result2: 0.0, comment: null, wasMoved: false, moveDate: null }, { id: 26919, round: 1, team1: { id: 5758, name: 'SD Isernhagen', zps: '70161', uri: /ligen/nsj-1819/m/5758/, apiUri: /ligen/nsj-1819/api/teams/5758/ }, team2: { id: 5642, name: !!binary RVNWIEf2dHRpbmdlbg==, zps: '70345', uri: /ligen/nsj-1819/m/5642/, apiUri: /ligen/nsj-1819/api/teams/5642/ }, host: null, result: '2 : 2', result1: 2.0, result2: 2.0, comment: null, wasMoved: false, moveDate: null }, { id: 26920, round: 1, team1: { id: 5677, name: 'SC BS Gliesmarode', zps: '70246', uri: /ligen/nsj-1819/m/5677/, apiUri: /ligen/nsj-1819/api/teams/5677/ }, team2: { id: 5651, name: !!binary Um9jaGFkZSBH9nR0aW5nZW4gMg==, zps: '70250', uri: /ligen/nsj-1819/m/5651/, apiUri: /ligen/nsj-1819/api/teams/5651/ }, host: null, result: !!binary vSA6IDO9, result1: 0.5, result2: 3.5, comment: null, wasMoved: false, moveDate: null }]
+-
+    round: 2
+    date: '2018-09-23'
+    uri: /ligen/nsj-1819/landesklasse-sued/2/
+    uriPdf: /ligen/nsj-1819/landesklasse-sued/2/pdf/
+    uriPgn: /ligen/nsj-1819/landesklasse-sued/2/pgn/
+    uriApi: /ligen/nsj-1819/api/divisions/landesklasse-sued/rounds/2/
+    pairings: [{ id: 26921, round: 2, team1: { id: 5647, name: 'Hildesheimer SV', zps: '70306', uri: /ligen/nsj-1819/m/5647/, apiUri: /ligen/nsj-1819/api/teams/5647/ }, team2: { id: 5679, name: 'SV Springe', zps: '70128', uri: /ligen/nsj-1819/m/5679/, apiUri: /ligen/nsj-1819/api/teams/5679/ }, host: null, result: !!binary Mr0gOiAxvQ==, result1: 2.5, result2: 1.5, comment: 'This is an example remark for the match.', wasMoved: false, moveDate: null }, { id: 26922, round: 2, team1: { id: 5648, name: 'Hildesheimer SV 2', zps: '70306', uri: /ligen/nsj-1819/m/5648/, apiUri: /ligen/nsj-1819/api/teams/5648/ }, team2: { id: 5644, name: 'SK Rinteln', zps: '70144', uri: /ligen/nsj-1819/m/5644/, apiUri: /ligen/nsj-1819/api/teams/5644/ }, host: null, result: '0 : 4', result1: 0.0, result2: 4.0, comment: null, wasMoved: false, moveDate: null }, { id: 26923, round: 2, team1: { id: 5642, name: !!binary RVNWIEf2dHRpbmdlbg==, zps: '70345', uri: /ligen/nsj-1819/m/5642/, apiUri: /ligen/nsj-1819/api/teams/5642/ }, team2: { id: 5677, name: 'SC BS Gliesmarode', zps: '70246', uri: /ligen/nsj-1819/m/5677/, apiUri: /ligen/nsj-1819/api/teams/5677/ }, host: null, result: '4 : 0', result1: 4.0, result2: 0.0, comment: null, wasMoved: false, moveDate: null }, { id: 26924, round: 2, team1: { id: 5651, name: !!binary Um9jaGFkZSBH9nR0aW5nZW4gMg==, zps: '70250', uri: /ligen/nsj-1819/m/5651/, apiUri: /ligen/nsj-1819/api/teams/5651/ }, team2: { id: 5758, name: 'SD Isernhagen', zps: '70161', uri: /ligen/nsj-1819/m/5758/, apiUri: /ligen/nsj-1819/api/teams/5758/ }, host: null, result: !!binary Mr0gOiAxvQ==, result1: 2.5, result2: 1.5, comment: null, wasMoved: false, moveDate: null }]
+-
+    round: 3
+    date: '2018-11-04'
+    uri: /ligen/nsj-1819/landesklasse-sued/3/
+    uriPdf: /ligen/nsj-1819/landesklasse-sued/3/pdf/
+    uriPgn: /ligen/nsj-1819/landesklasse-sued/3/pgn/
+    uriApi: /ligen/nsj-1819/api/divisions/landesklasse-sued/rounds/3/
+    pairings: [{ id: 26925, round: 3, team1: { id: 5679, name: 'SV Springe', zps: '70128', uri: /ligen/nsj-1819/m/5679/, apiUri: /ligen/nsj-1819/api/teams/5679/ }, team2: { id: 5651, name: !!binary Um9jaGFkZSBH9nR0aW5nZW4gMg==, zps: '70250', uri: /ligen/nsj-1819/m/5651/, apiUri: /ligen/nsj-1819/api/teams/5651/ }, host: null, result: '2 : 2', result1: 2.0, result2: 2.0, comment: null, wasMoved: false, moveDate: null }, { id: 26926, round: 3, team1: { id: 5677, name: 'SC BS Gliesmarode', zps: '70246', uri: /ligen/nsj-1819/m/5677/, apiUri: /ligen/nsj-1819/api/teams/5677/ }, team2: { id: 5643, name: !!binary RVNWIEf2dHRpbmdlbiAy, zps: '70345', uri: /ligen/nsj-1819/m/5643/, apiUri: /ligen/nsj-1819/api/teams/5643/ }, host: null, result: '2 : 2', result1: 2.0, result2: 2.0, comment: null, wasMoved: false, moveDate: null }, { id: 26927, round: 3, team1: { id: 5648, name: 'Hildesheimer SV 2', zps: '70306', uri: /ligen/nsj-1819/m/5648/, apiUri: /ligen/nsj-1819/api/teams/5648/ }, team2: { id: 5642, name: !!binary RVNWIEf2dHRpbmdlbg==, zps: '70345', uri: /ligen/nsj-1819/m/5642/, apiUri: /ligen/nsj-1819/api/teams/5642/ }, host: null, result: '0 : 4', result1: 0.0, result2: 4.0, comment: null, wasMoved: false, moveDate: null }]
+-
+    round: 4
+    date: '2018-11-04'
+    uri: /ligen/nsj-1819/landesklasse-sued/4/
+    uriPdf: /ligen/nsj-1819/landesklasse-sued/4/pdf/
+    uriPgn: /ligen/nsj-1819/landesklasse-sued/4/pgn/
+    uriApi: /ligen/nsj-1819/api/divisions/landesklasse-sued/rounds/4/
+    pairings: [{ id: 26928, round: 4, team1: { id: 5651, name: !!binary Um9jaGFkZSBH9nR0aW5nZW4gMg==, zps: '70250', uri: /ligen/nsj-1819/m/5651/, apiUri: /ligen/nsj-1819/api/teams/5651/ }, team2: { id: 5644, name: 'SK Rinteln', zps: '70144', uri: /ligen/nsj-1819/m/5644/, apiUri: /ligen/nsj-1819/api/teams/5644/ }, host: null, result: !!binary M70gOiC9, result1: 3.5, result2: 0.5, comment: null, wasMoved: false, moveDate: null }, { id: 26929, round: 4, team1: { id: 5643, name: !!binary RVNWIEf2dHRpbmdlbiAy, zps: '70345', uri: /ligen/nsj-1819/m/5643/, apiUri: /ligen/nsj-1819/api/teams/5643/ }, team2: { id: 5758, name: 'SD Isernhagen', zps: '70161', uri: /ligen/nsj-1819/m/5758/, apiUri: /ligen/nsj-1819/api/teams/5758/ }, host: null, result: !!binary vSA6IDO9, result1: 0.5, result2: 3.5, comment: null, wasMoved: false, moveDate: null }, { id: 26930, round: 4, team1: { id: 5642, name: !!binary RVNWIEf2dHRpbmdlbg==, zps: '70345', uri: /ligen/nsj-1819/m/5642/, apiUri: /ligen/nsj-1819/api/teams/5642/ }, team2: { id: 5647, name: 'Hildesheimer SV', zps: '70306', uri: /ligen/nsj-1819/m/5647/, apiUri: /ligen/nsj-1819/api/teams/5647/ }, host: null, result: '2 : 2', result1: 2.0, result2: 2.0, comment: null, wasMoved: false, moveDate: null }]
+-
+    round: 5
+    date: '2018-12-02'
+    uri: /ligen/nsj-1819/landesklasse-sued/5/
+    uriPdf: /ligen/nsj-1819/landesklasse-sued/5/pdf/
+    uriPgn: /ligen/nsj-1819/landesklasse-sued/5/pgn/
+    uriApi: /ligen/nsj-1819/api/divisions/landesklasse-sued/rounds/5/
+    pairings: [{ id: 26931, round: 5, team1: { id: 5647, name: 'Hildesheimer SV', zps: '70306', uri: /ligen/nsj-1819/m/5647/, apiUri: /ligen/nsj-1819/api/teams/5647/ }, team2: { id: 5648, name: 'Hildesheimer SV 2', zps: '70306', uri: /ligen/nsj-1819/m/5648/, apiUri: /ligen/nsj-1819/api/teams/5648/ }, host: null, result: '4 : 0', result1: 4.0, result2: 0.0, comment: null, wasMoved: false, moveDate: null }, { id: 26932, round: 5, team1: { id: 5758, name: 'SD Isernhagen', zps: '70161', uri: /ligen/nsj-1819/m/5758/, apiUri: /ligen/nsj-1819/api/teams/5758/ }, team2: { id: 5677, name: 'SC BS Gliesmarode', zps: '70246', uri: /ligen/nsj-1819/m/5677/, apiUri: /ligen/nsj-1819/api/teams/5677/ }, host: null, result: '4 : 0', result1: 4.0, result2: 0.0, comment: null, wasMoved: true, moveDate: '2018-11-04' }, { id: 26933, round: 5, team1: { id: 5644, name: 'SK Rinteln', zps: '70144', uri: /ligen/nsj-1819/m/5644/, apiUri: /ligen/nsj-1819/api/teams/5644/ }, team2: { id: 5679, name: 'SV Springe', zps: '70128', uri: /ligen/nsj-1819/m/5679/, apiUri: /ligen/nsj-1819/api/teams/5679/ }, host: null, result: !!binary Mr0gOiAxvQ==, result1: 2.5, result2: 1.5, comment: null, wasMoved: false, moveDate: null }, { id: 26934, round: 5, team1: { id: 5642, name: !!binary RVNWIEf2dHRpbmdlbg==, zps: '70345', uri: /ligen/nsj-1819/m/5642/, apiUri: /ligen/nsj-1819/api/teams/5642/ }, team2: { id: 5651, name: !!binary Um9jaGFkZSBH9nR0aW5nZW4gMg==, zps: '70250', uri: /ligen/nsj-1819/m/5651/, apiUri: /ligen/nsj-1819/api/teams/5651/ }, host: null, result: '2 : 2', result1: 2.0, result2: 2.0, comment: null, wasMoved: false, moveDate: null }]
+-
+    round: 6
+    date: '2018-12-02'
+    uri: /ligen/nsj-1819/landesklasse-sued/6/
+    uriPdf: /ligen/nsj-1819/landesklasse-sued/6/pdf/
+    uriPgn: /ligen/nsj-1819/landesklasse-sued/6/pgn/
+    uriApi: /ligen/nsj-1819/api/divisions/landesklasse-sued/rounds/6/
+    pairings: [{ id: 26935, round: 6, team1: { id: 5651, name: !!binary Um9jaGFkZSBH9nR0aW5nZW4gMg==, zps: '70250', uri: /ligen/nsj-1819/m/5651/, apiUri: /ligen/nsj-1819/api/teams/5651/ }, team2: { id: 5643, name: !!binary RVNWIEf2dHRpbmdlbiAy, zps: '70345', uri: /ligen/nsj-1819/m/5643/, apiUri: /ligen/nsj-1819/api/teams/5643/ }, host: null, result: '2 : 2', result1: 2.0, result2: 2.0, comment: null, wasMoved: false, moveDate: null }]
+-
+    round: 7
+    date: '2018-12-02'
+    uri: /ligen/nsj-1819/landesklasse-sued/7/
+    uriPdf: /ligen/nsj-1819/landesklasse-sued/7/pdf/
+    uriPgn: /ligen/nsj-1819/landesklasse-sued/7/pgn/
+    uriApi: /ligen/nsj-1819/api/divisions/landesklasse-sued/rounds/7/
+    pairings: [{ id: 26936, round: 7, team1: { id: 5643, name: !!binary RVNWIEf2dHRpbmdlbiAy, zps: '70345', uri: /ligen/nsj-1819/m/5643/, apiUri: /ligen/nsj-1819/api/teams/5643/ }, team2: { id: 5642, name: !!binary RVNWIEf2dHRpbmdlbg==, zps: '70345', uri: /ligen/nsj-1819/m/5642/, apiUri: /ligen/nsj-1819/api/teams/5642/ }, host: null, result: '0 : 4', result1: 0.0, result2: 4.0, comment: null, wasMoved: true, moveDate: '2018-11-22' }]
+-
+    round: 8
+    date: '2019-02-17'
+    uri: /ligen/nsj-1819/landesklasse-sued/8/
+    uriPdf: /ligen/nsj-1819/landesklasse-sued/8/pdf/
+    uriPgn: /ligen/nsj-1819/landesklasse-sued/8/pgn/
+    uriApi: /ligen/nsj-1819/api/divisions/landesklasse-sued/rounds/8/
+    pairings: [{ id: 26937, round: 8, team1: { id: 5648, name: 'Hildesheimer SV 2', zps: '70306', uri: /ligen/nsj-1819/m/5648/, apiUri: /ligen/nsj-1819/api/teams/5648/ }, team2: { id: 5758, name: 'SD Isernhagen', zps: '70161', uri: /ligen/nsj-1819/m/5758/, apiUri: /ligen/nsj-1819/api/teams/5758/ }, host: null, result: '1 : 3', result1: 1.0, result2: 3.0, comment: null, wasMoved: false, moveDate: null }, { id: 26938, round: 8, team1: { id: 5647, name: 'Hildesheimer SV', zps: '70306', uri: /ligen/nsj-1819/m/5647/, apiUri: /ligen/nsj-1819/api/teams/5647/ }, team2: { id: 5677, name: 'SC BS Gliesmarode', zps: '70246', uri: /ligen/nsj-1819/m/5677/, apiUri: /ligen/nsj-1819/api/teams/5677/ }, host: null, result: '3 : 1', result1: 3.0, result2: 1.0, comment: null, wasMoved: false, moveDate: null }, { id: 26939, round: 8, team1: { id: 5679, name: 'SV Springe', zps: '70128', uri: /ligen/nsj-1819/m/5679/, apiUri: /ligen/nsj-1819/api/teams/5679/ }, team2: { id: 5643, name: !!binary RVNWIEf2dHRpbmdlbiAy, zps: '70345', uri: /ligen/nsj-1819/m/5643/, apiUri: /ligen/nsj-1819/api/teams/5643/ }, host: null, result: '3 : 1', result1: 3.0, result2: 1.0, comment: null, wasMoved: false, moveDate: null }, { id: 26940, round: 8, team1: { id: 5644, name: 'SK Rinteln', zps: '70144', uri: /ligen/nsj-1819/m/5644/, apiUri: /ligen/nsj-1819/api/teams/5644/ }, team2: { id: 5642, name: !!binary RVNWIEf2dHRpbmdlbg==, zps: '70345', uri: /ligen/nsj-1819/m/5642/, apiUri: /ligen/nsj-1819/api/teams/5642/ }, host: null, result: !!binary Mb0gOiAyvQ==, result1: 1.5, result2: 2.5, comment: 'This is an example remark for the match.', wasMoved: false, moveDate: null }]
+-
+    round: 9
+    date: '2019-02-17'
+    uri: /ligen/nsj-1819/landesklasse-sued/9/
+    uriPdf: /ligen/nsj-1819/landesklasse-sued/9/pdf/
+    uriPgn: /ligen/nsj-1819/landesklasse-sued/9/pgn/
+    uriApi: /ligen/nsj-1819/api/divisions/landesklasse-sued/rounds/9/
+    pairings: [{ id: 26941, round: 9, team1: { id: 5758, name: 'SD Isernhagen', zps: '70161', uri: /ligen/nsj-1819/m/5758/, apiUri: /ligen/nsj-1819/api/teams/5758/ }, team2: { id: 5647, name: 'Hildesheimer SV', zps: '70306', uri: /ligen/nsj-1819/m/5647/, apiUri: /ligen/nsj-1819/api/teams/5647/ }, host: null, result: '1 : 3', result1: 1.0, result2: 3.0, comment: null, wasMoved: false, moveDate: null }, { id: 26942, round: 9, team1: { id: 5677, name: 'SC BS Gliesmarode', zps: '70246', uri: /ligen/nsj-1819/m/5677/, apiUri: /ligen/nsj-1819/api/teams/5677/ }, team2: { id: 5648, name: 'Hildesheimer SV 2', zps: '70306', uri: /ligen/nsj-1819/m/5648/, apiUri: /ligen/nsj-1819/api/teams/5648/ }, host: null, result: '0 : 4', result1: 0.0, result2: 4.0, comment: null, wasMoved: false, moveDate: null }, { id: 26943, round: 9, team1: { id: 5643, name: !!binary RVNWIEf2dHRpbmdlbiAy, zps: '70345', uri: /ligen/nsj-1819/m/5643/, apiUri: /ligen/nsj-1819/api/teams/5643/ }, team2: { id: 5644, name: 'SK Rinteln', zps: '70144', uri: /ligen/nsj-1819/m/5644/, apiUri: /ligen/nsj-1819/api/teams/5644/ }, host: null, result: !!binary Mb0gOiAyvQ==, result1: 1.5, result2: 2.5, comment: null, wasMoved: false, moveDate: null }, { id: 26944, round: 9, team1: { id: 5642, name: !!binary RVNWIEf2dHRpbmdlbg==, zps: '70345', uri: /ligen/nsj-1819/m/5642/, apiUri: /ligen/nsj-1819/api/teams/5642/ }, team2: { id: 5679, name: 'SV Springe', zps: '70128', uri: /ligen/nsj-1819/m/5679/, apiUri: /ligen/nsj-1819/api/teams/5679/ }, host: null, result: '3 : 1', result1: 3.0, result2: 1.0, comment: null, wasMoved: false, moveDate: null }]
+-
+    round: 10
+    date: '2019-03-10'
+    uri: /ligen/nsj-1819/landesklasse-sued/10/
+    uriPdf: /ligen/nsj-1819/landesklasse-sued/10/pdf/
+    uriPgn: /ligen/nsj-1819/landesklasse-sued/10/pgn/
+    uriApi: /ligen/nsj-1819/api/divisions/landesklasse-sued/rounds/10/
+    pairings: [{ id: 26945, round: 10, team1: { id: 5677, name: 'SC BS Gliesmarode', zps: '70246', uri: /ligen/nsj-1819/m/5677/, apiUri: /ligen/nsj-1819/api/teams/5677/ }, team2: { id: 5644, name: 'SK Rinteln', zps: '70144', uri: /ligen/nsj-1819/m/5644/, apiUri: /ligen/nsj-1819/api/teams/5644/ }, host: null, result: !!binary Mr0gOiAxvQ==, result1: 2.5, result2: 1.5, comment: null, wasMoved: false, moveDate: null }, { id: 26946, round: 10, team1: { id: 5758, name: 'SD Isernhagen', zps: '70161', uri: /ligen/nsj-1819/m/5758/, apiUri: /ligen/nsj-1819/api/teams/5758/ }, team2: { id: 5679, name: 'SV Springe', zps: '70128', uri: /ligen/nsj-1819/m/5679/, apiUri: /ligen/nsj-1819/api/teams/5679/ }, host: null, result: '4 : 0', result1: 4.0, result2: 0.0, comment: null, wasMoved: false, moveDate: null }, { id: 26947, round: 10, team1: { id: 5651, name: !!binary Um9jaGFkZSBH9nR0aW5nZW4gMg==, zps: '70250', uri: /ligen/nsj-1819/m/5651/, apiUri: /ligen/nsj-1819/api/teams/5651/ }, team2: { id: 5647, name: 'Hildesheimer SV', zps: '70306', uri: /ligen/nsj-1819/m/5647/, apiUri: /ligen/nsj-1819/api/teams/5647/ }, host: null, result: !!binary Mb0gOiAyvQ==, result1: 1.5, result2: 2.5, comment: null, wasMoved: false, moveDate: null }, { id: 26948, round: 10, team1: { id: 5643, name: !!binary RVNWIEf2dHRpbmdlbiAy, zps: '70345', uri: /ligen/nsj-1819/m/5643/, apiUri: /ligen/nsj-1819/api/teams/5643/ }, team2: { id: 5648, name: 'Hildesheimer SV 2', zps: '70306', uri: /ligen/nsj-1819/m/5648/, apiUri: /ligen/nsj-1819/api/teams/5648/ }, host: null, result: '4 : 0', result1: 4.0, result2: 0.0, comment: null, wasMoved: false, moveDate: null }]
+-
+    round: 11
+    date: '2019-03-10'
+    uri: /ligen/nsj-1819/landesklasse-sued/11/
+    uriPdf: /ligen/nsj-1819/landesklasse-sued/11/pdf/
+    uriPgn: /ligen/nsj-1819/landesklasse-sued/11/pgn/
+    uriApi: /ligen/nsj-1819/api/divisions/landesklasse-sued/rounds/11/
+    pairings: [{ id: 26949, round: 11, team1: { id: 5644, name: 'SK Rinteln', zps: '70144', uri: /ligen/nsj-1819/m/5644/, apiUri: /ligen/nsj-1819/api/teams/5644/ }, team2: { id: 5758, name: 'SD Isernhagen', zps: '70161', uri: /ligen/nsj-1819/m/5758/, apiUri: /ligen/nsj-1819/api/teams/5758/ }, host: null, result: '1 : 3', result1: 1.0, result2: 3.0, comment: null, wasMoved: false, moveDate: null }, { id: 26950, round: 11, team1: { id: 5679, name: 'SV Springe', zps: '70128', uri: /ligen/nsj-1819/m/5679/, apiUri: /ligen/nsj-1819/api/teams/5679/ }, team2: { id: 5677, name: 'SC BS Gliesmarode', zps: '70246', uri: /ligen/nsj-1819/m/5677/, apiUri: /ligen/nsj-1819/api/teams/5677/ }, host: null, result: '1 : 3', result1: 1.0, result2: 3.0, comment: null, wasMoved: false, moveDate: null }, { id: 26951, round: 11, team1: { id: 5647, name: 'Hildesheimer SV', zps: '70306', uri: /ligen/nsj-1819/m/5647/, apiUri: /ligen/nsj-1819/api/teams/5647/ }, team2: { id: 5643, name: !!binary RVNWIEf2dHRpbmdlbiAy, zps: '70345', uri: /ligen/nsj-1819/m/5643/, apiUri: /ligen/nsj-1819/api/teams/5643/ }, host: null, result: '2 : 2', result1: 2.0, result2: 2.0, comment: null, wasMoved: false, moveDate: null }, { id: 26952, round: 11, team1: { id: 5648, name: 'Hildesheimer SV 2', zps: '70306', uri: /ligen/nsj-1819/m/5648/, apiUri: /ligen/nsj-1819/api/teams/5648/ }, team2: { id: 5651, name: !!binary Um9jaGFkZSBH9nR0aW5nZW4gMg==, zps: '70250', uri: /ligen/nsj-1819/m/5651/, apiUri: /ligen/nsj-1819/api/teams/5651/ }, host: null, result: '1 : 3', result1: 1.0, result2: 3.0, comment: null, wasMoved: false, moveDate: null }]

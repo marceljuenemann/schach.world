@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=1968', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=595&r=9#p1968x1972', title: 'gegen SF Spelle 2', text: '6' }]
+    - [{ url: '?staffel=595&r=3#p1968x1966', title: 'gegen Veldhausen/Uel. 3', text: 5½ }]
+    - [{ url: '?staffel=595&r=7#p1968x1970', title: 'gegen Nordhorn-Blanke 6', text: 6½ }]
+    - [{ url: '?staffel=595&r=1#p1968x1973', title: 'gegen SV Lingen 3', text: 6½ }]
+    - [{ url: '?staffel=595&r=6#p1968x1969', title: 'gegen Cervisia Nordho', text: '6' }]
+    - [{ url: '?staffel=595&r=4#p1968x1967', title: 'gegen SC HT Herzlake', text: '6' }]
+    - [{ url: '?staffel=595&r=5#p1968x1975', title: 'gegen Veldhausen/Uel. 2', text: '8' }]
+    - [{ url: '?staffel=595&r=8#p1968x1971', title: 'gegen Bentheim/Nordho 3', text: 4½ }]
+    - [{ url: '?staffel=595&r=2#p1968x1974', title: 'gegen TuS Aschendorf', text: 5½ }]
+    - 18
+    - 54½
+    - ''
+-
+    - '2.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=1972', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=595&r=9#p1972x1968', title: 'gegen SV Lingen 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=595&r=7#p1972x1966', title: 'gegen Veldhausen/Uel. 3', text: 4½ }]
+    - [{ url: '?staffel=595&r=2#p1972x1970', title: 'gegen Nordhorn-Blanke 6', text: '4' }]
+    - [{ url: '?staffel=595&r=5#p1972x1973', title: 'gegen SV Lingen 3', text: 5½ }]
+    - [{ url: '?staffel=595&r=1#p1972x1969', title: 'gegen Cervisia Nordho', text: '4' }]
+    - [{ url: '?staffel=595&r=8#p1972x1967', title: 'gegen SC HT Herzlake', text: 5½ }]
+    - [{ url: '?staffel=595&r=4#p1972x1975', title: 'gegen Veldhausen/Uel. 2', text: 7½ }]
+    - [{ url: '?staffel=595&r=3#p1972x1971', title: 'gegen Bentheim/Nordho 3', text: 4½ }]
+    - [{ url: '?staffel=595&r=6#p1972x1974', title: 'gegen TuS Aschendorf', text: '5' }]
+    - 14
+    - 42½
+    - ''
+-
+    - '3.'
+    - { text: 'Veldhausen/Uel. 3', url: '?mannschaft=1966', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=595&r=3#p1966x1968', title: 'gegen SV Lingen 2', text: 2½ }]
+    - [{ url: '?staffel=595&r=7#p1966x1972', title: 'gegen SF Spelle 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=595&r=5#p1966x1970', title: 'gegen Nordhorn-Blanke 6', text: '4' }]
+    - [{ url: '?staffel=595&r=8#p1966x1973', title: 'gegen SV Lingen 3', text: 2½ }]
+    - [{ url: '?staffel=595&r=4#p1966x1969', title: 'gegen Cervisia Nordho', text: '6' }]
+    - [{ url: '?staffel=595&r=2#p1966x1967', title: 'gegen SC HT Herzlake', text: '4' }]
+    - [{ url: '?staffel=595&r=1#p1966x1975', title: 'gegen Veldhausen/Uel. 2', text: '7' }]
+    - [{ url: '?staffel=595&r=6#p1966x1971', title: 'gegen Bentheim/Nordho 3', text: '5' }]
+    - [{ url: '?staffel=595&r=9#p1966x1974', title: 'gegen TuS Aschendorf', text: 4½ }]
+    - 10
+    - '39'
+    - ''
+-
+    - '4.'
+    - { text: 'Nordhorn-Blanke 6', url: '?mannschaft=1970', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=595&r=7#p1970x1968', title: 'gegen SV Lingen 2', text: 1½ }]
+    - [{ url: '?staffel=595&r=2#p1970x1972', title: 'gegen SF Spelle 2', text: '4' }]
+    - [{ url: '?staffel=595&r=5#p1970x1966', title: 'gegen Veldhausen/Uel. 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=595&r=3#p1970x1973', title: 'gegen SV Lingen 3', text: '5' }]
+    - [{ url: '?staffel=595&r=8#p1970x1969', title: 'gegen Cervisia Nordho', text: 2½ }]
+    - [{ url: '?staffel=595&r=6#p1970x1967', title: 'gegen SC HT Herzlake', text: 4½ }]
+    - [{ url: '?staffel=595&r=9#p1970x1975', title: 'gegen Veldhausen/Uel. 2', text: '2' }]
+    - [{ url: '?staffel=595&r=1#p1970x1971', title: 'gegen Bentheim/Nordho 3', text: '5' }]
+    - [{ url: '?staffel=595&r=4#p1970x1974', title: 'gegen TuS Aschendorf', text: '6' }]
+    - 10
+    - 34½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Lingen 3', url: '?mannschaft=1973', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=595&r=1#p1973x1968', title: 'gegen SV Lingen 2', text: 1½ }]
+    - [{ url: '?staffel=595&r=5#p1973x1972', title: 'gegen SF Spelle 2', text: 2½ }]
+    - [{ url: '?staffel=595&r=8#p1973x1966', title: 'gegen Veldhausen/Uel. 3', text: 5½ }]
+    - [{ url: '?staffel=595&r=3#p1973x1970', title: 'gegen Nordhorn-Blanke 6', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=595&r=2#p1973x1969', title: 'gegen Cervisia Nordho', text: 3½ }]
+    - [{ url: '?staffel=595&r=9#p1973x1967', title: 'gegen SC HT Herzlake', text: '4' }]
+    - [{ url: '?staffel=595&r=6#p1973x1975', title: 'gegen Veldhausen/Uel. 2', text: 6½ }]
+    - [{ url: '?staffel=595&r=4#p1973x1971', title: 'gegen Bentheim/Nordho 3', text: 5½ }]
+    - [{ url: '?staffel=595&r=7#p1973x1974', title: 'gegen TuS Aschendorf', text: 5½ }]
+    - 9
+    - 37½
+    - ''
+-
+    - '6.'
+    - { text: 'Cervisia Nordho', url: '?mannschaft=1969', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=595&r=6#p1969x1968', title: 'gegen SV Lingen 2', text: '2' }]
+    - [{ url: '?staffel=595&r=1#p1969x1972', title: 'gegen SF Spelle 2', text: '4' }]
+    - [{ url: '?staffel=595&r=4#p1969x1966', title: 'gegen Veldhausen/Uel. 3', text: '2' }]
+    - [{ url: '?staffel=595&r=8#p1969x1970', title: 'gegen Nordhorn-Blanke 6', text: 5½ }]
+    - [{ url: '?staffel=595&r=2#p1969x1973', title: 'gegen SV Lingen 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=595&r=5#p1969x1967', title: 'gegen SC HT Herzlake', text: 3½ }]
+    - [{ url: '?staffel=595&r=7#p1969x1975', title: 'gegen Veldhausen/Uel. 2', text: 6½ }]
+    - [{ url: '?staffel=595&r=9#p1969x1971', title: 'gegen Bentheim/Nordho 3', text: 1½ }]
+    - [{ url: '?staffel=595&r=3#p1969x1974', title: 'gegen TuS Aschendorf', text: 4½ }]
+    - 9
+    - '34'
+    - ''
+-
+    - '7.'
+    - { text: 'SC HT Herzlake', url: '?mannschaft=1967', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=595&r=4#p1967x1968', title: 'gegen SV Lingen 2', text: '2' }]
+    - [{ url: '?staffel=595&r=8#p1967x1972', title: 'gegen SF Spelle 2', text: 2½ }]
+    - [{ url: '?staffel=595&r=2#p1967x1966', title: 'gegen Veldhausen/Uel. 3', text: '4' }]
+    - [{ url: '?staffel=595&r=6#p1967x1970', title: 'gegen Nordhorn-Blanke 6', text: 2½ }]
+    - [{ url: '?staffel=595&r=9#p1967x1973', title: 'gegen SV Lingen 3', text: '4' }]
+    - [{ url: '?staffel=595&r=5#p1967x1969', title: 'gegen Cervisia Nordho', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=595&r=3#p1967x1975', title: 'gegen Veldhausen/Uel. 2', text: '5' }]
+    - [{ url: '?staffel=595&r=7#p1967x1971', title: 'gegen Bentheim/Nordho 3', text: '3' }]
+    - [{ url: '?staffel=595&r=1#p1967x1974', title: 'gegen TuS Aschendorf', text: '4' }]
+    - 7
+    - 31½
+    - ''
+-
+    - '8.'
+    - { text: 'Veldhausen/Uel. 2', url: '?mannschaft=1975', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=595&r=5#p1975x1968', title: 'gegen SV Lingen 2', text: '0' }]
+    - [{ url: '?staffel=595&r=4#p1975x1972', title: 'gegen SF Spelle 2', text: ½ }]
+    - [{ url: '?staffel=595&r=1#p1975x1966', title: 'gegen Veldhausen/Uel. 3', text: '1' }]
+    - [{ url: '?staffel=595&r=9#p1975x1970', title: 'gegen Nordhorn-Blanke 6', text: '6' }]
+    - [{ url: '?staffel=595&r=6#p1975x1973', title: 'gegen SV Lingen 3', text: 1½ }]
+    - [{ url: '?staffel=595&r=7#p1975x1969', title: 'gegen Cervisia Nordho', text: 1½ }]
+    - [{ url: '?staffel=595&r=3#p1975x1967', title: 'gegen SC HT Herzlake', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=595&r=2#p1975x1971', title: 'gegen Bentheim/Nordho 3', text: 5½ }]
+    - [{ url: '?staffel=595&r=8#p1975x1974', title: 'gegen TuS Aschendorf', text: 4½ }]
+    - 6
+    - 23½
+    - ''
+-
+    - '9.'
+    - { text: 'Bentheim/Nordho 3', url: '?mannschaft=1971', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=595&r=8#p1971x1968', title: 'gegen SV Lingen 2', text: 3½ }]
+    - [{ url: '?staffel=595&r=3#p1971x1972', title: 'gegen SF Spelle 2', text: 3½ }]
+    - [{ url: '?staffel=595&r=6#p1971x1966', title: 'gegen Veldhausen/Uel. 3', text: '3' }]
+    - [{ url: '?staffel=595&r=1#p1971x1970', title: 'gegen Nordhorn-Blanke 6', text: '3' }]
+    - [{ url: '?staffel=595&r=4#p1971x1973', title: 'gegen SV Lingen 3', text: 2½ }]
+    - [{ url: '?staffel=595&r=9#p1971x1969', title: 'gegen Cervisia Nordho', text: 5½ }]
+    - [{ url: '?staffel=595&r=7#p1971x1967', title: 'gegen SC HT Herzlake', text: '5' }]
+    - [{ url: '?staffel=595&r=2#p1971x1975', title: 'gegen Veldhausen/Uel. 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=595&r=5#p1971x1974', title: 'gegen TuS Aschendorf', text: '3' }]
+    - 4
+    - 30½
+    - ''
+-
+    - '10.'
+    - { text: 'TuS Aschendorf', url: '?mannschaft=1974', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=595&r=2#p1974x1968', title: 'gegen SV Lingen 2', text: 2½ }]
+    - [{ url: '?staffel=595&r=6#p1974x1972', title: 'gegen SF Spelle 2', text: '3' }]
+    - [{ url: '?staffel=595&r=9#p1974x1966', title: 'gegen Veldhausen/Uel. 3', text: 3½ }]
+    - [{ url: '?staffel=595&r=4#p1974x1970', title: 'gegen Nordhorn-Blanke 6', text: '2' }]
+    - [{ url: '?staffel=595&r=7#p1974x1973', title: 'gegen SV Lingen 3', text: 2½ }]
+    - [{ url: '?staffel=595&r=3#p1974x1969', title: 'gegen Cervisia Nordho', text: 3½ }]
+    - [{ url: '?staffel=595&r=1#p1974x1967', title: 'gegen SC HT Herzlake', text: '4' }]
+    - [{ url: '?staffel=595&r=8#p1974x1975', title: 'gegen Veldhausen/Uel. 2', text: 3½ }]
+    - [{ url: '?staffel=595&r=5#p1974x1971', title: 'gegen Bentheim/Nordho 3', text: '5' }]
+    - xxx
+    - 3
+    - 29½
+    - ''

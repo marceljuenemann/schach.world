@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'ESV Göttingen 3', url: '?mannschaft=5859', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1384&r=5#p5859x5849', title: 'gegen SG Holzminden 2', text: '5' }]
+    - [{ url: '?staffel=1384&r=4#p5859x5837', title: 'gegen Alfelder SV', text: '3' }]
+    - [{ url: '?staffel=1384&r=6#p5859x5855', title: 'gegen SC Langelsheim', text: 1½ }]
+    - [{ url: '?staffel=1384&r=7#p5859x5835', title: 'gegen SC SW Northeim 2', text: 4½ }]
+    - [{ url: '?staffel=1384&r=9#p5859x5814', title: 'gegen WSV Clausthal-Zfd', text: '4' }]
+    - [{ url: '?staffel=1384&r=3#p5859x5865', title: 'gegen Hamelner SV 6', text: '3' }]
+    - [{ url: '?staffel=1384&r=2#p5859x5860', title: 'gegen ESV Göttingen 4', text: '4' }]
+    - [{ url: '?staffel=1384&r=8#p5859x5867', title: 'gegen Hildesheimer SV 5', text: '5' }]
+    - [{ url: '?staffel=1384&r=1#p5859x5851', title: 'gegen PSV Bad Pyrmont 2', text: 3½ }]
+    - 14
+    - 33½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Holzminden 2', url: '?mannschaft=5849', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1384&r=5#p5849x5859', title: 'gegen ESV Göttingen 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1384&r=6#p5849x5837', title: 'gegen Alfelder SV', text: 4½ }]
+    - [{ url: '?staffel=1384&r=9#p5849x5855', title: 'gegen SC Langelsheim', text: '3' }]
+    - [{ url: '?staffel=1384&r=3#p5849x5835', title: 'gegen SC SW Northeim 2', text: '3' }]
+    - [{ url: '?staffel=1384&r=1#p5849x5814', title: 'gegen WSV Clausthal-Zfd', text: '4' }]
+    - [{ url: '?staffel=1384&r=4#p5849x5865', title: 'gegen Hamelner SV 6', text: '4' }]
+    - [{ url: '?staffel=1384&r=8#p5849x5860', title: 'gegen ESV Göttingen 4', text: '6' }]
+    - [{ url: '?staffel=1384&r=2#p5849x5867', title: 'gegen Hildesheimer SV 5', text: '2' }]
+    - [{ url: '?staffel=1384&r=7#p5849x5851', title: 'gegen PSV Bad Pyrmont 2', text: '4' }]
+    - 12
+    - 31½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Alfelder SV', url: '?mannschaft=5837', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1384&r=4#p5837x5859', title: 'gegen ESV Göttingen 3', text: '3' }]
+    - [{ url: '?staffel=1384&r=6#p5837x5849', title: 'gegen SG Holzminden 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1384&r=1#p5837x5855', title: 'gegen SC Langelsheim', text: '4' }]
+    - [{ url: '?staffel=1384&r=2#p5837x5835', title: 'gegen SC SW Northeim 2', text: '3' }]
+    - [{ url: '?staffel=1384&r=5#p5837x5814', title: 'gegen WSV Clausthal-Zfd', text: '4' }]
+    - [{ url: '?staffel=1384&r=8#p5837x5865', title: 'gegen Hamelner SV 6', text: '5' }]
+    - [{ url: '?staffel=1384&r=7#p5837x5860', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - [{ url: '?staffel=1384&r=9#p5837x5867', title: 'gegen Hildesheimer SV 5', text: '3' }]
+    - [{ url: '?staffel=1384&r=3#p5837x5851', title: 'gegen PSV Bad Pyrmont 2', text: '5' }]
+    - 12
+    - 31½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=5855', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1384&r=6#p5855x5859', title: 'gegen ESV Göttingen 3', text: 4½ }]
+    - [{ url: '?staffel=1384&r=9#p5855x5849', title: 'gegen SG Holzminden 2', text: '3' }]
+    - [{ url: '?staffel=1384&r=1#p5855x5837', title: 'gegen Alfelder SV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1384&r=8#p5855x5835', title: 'gegen SC SW Northeim 2', text: '3' }]
+    - [{ url: '?staffel=1384&r=7#p5855x5814', title: 'gegen WSV Clausthal-Zfd', text: '3' }]
+    - [{ url: '?staffel=1384&r=5#p5855x5865', title: 'gegen Hamelner SV 6', text: 3½ }]
+    - [{ url: '?staffel=1384&r=4#p5855x5860', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - [{ url: '?staffel=1384&r=3#p5855x5867', title: 'gegen Hildesheimer SV 5', text: 3½ }]
+    - [{ url: '?staffel=1384&r=2#p5855x5851', title: 'gegen PSV Bad Pyrmont 2', text: 3½ }]
+    - 12
+    - '29'
+    - ''
+-
+    - '5.'
+    - { text: 'SC SW Northeim 2', url: '?mannschaft=5835', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1384&r=7#p5835x5859', title: 'gegen ESV Göttingen 3', text: 1½ }]
+    - [{ url: '?staffel=1384&r=3#p5835x5849', title: 'gegen SG Holzminden 2', text: '3' }]
+    - [{ url: '?staffel=1384&r=2#p5835x5837', title: 'gegen Alfelder SV', text: '3' }]
+    - [{ url: '?staffel=1384&r=8#p5835x5855', title: 'gegen SC Langelsheim', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1384&r=6#p5835x5814', title: 'gegen WSV Clausthal-Zfd', text: '2' }]
+    - [{ url: '?staffel=1384&r=9#p5835x5865', title: 'gegen Hamelner SV 6', text: '3' }]
+    - [{ url: '?staffel=1384&r=5#p5835x5860', title: 'gegen ESV Göttingen 4', text: '3' }]
+    - [{ url: '?staffel=1384&r=1#p5835x5867', title: 'gegen Hildesheimer SV 5', text: 5½ }]
+    - [{ url: '?staffel=1384&r=4#p5835x5851', title: 'gegen PSV Bad Pyrmont 2', text: 4½ }]
+    - 9
+    - 28½
+    - ''
+-
+    - '6.'
+    - { text: 'WSV Clausthal-Zfd', url: '?mannschaft=5814', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1384&r=9#p5814x5859', title: 'gegen ESV Göttingen 3', text: '2' }]
+    - [{ url: '?staffel=1384&r=1#p5814x5849', title: 'gegen SG Holzminden 2', text: '2' }]
+    - [{ url: '?staffel=1384&r=5#p5814x5837', title: 'gegen Alfelder SV', text: '1' }]
+    - [{ url: '?staffel=1384&r=7#p5814x5855', title: 'gegen SC Langelsheim', text: '3' }]
+    - [{ url: '?staffel=1384&r=6#p5814x5835', title: 'gegen SC SW Northeim 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1384&r=2#p5814x5865', title: 'gegen Hamelner SV 6', text: '0' }]
+    - [{ url: '?staffel=1384&r=3#p5814x5860', title: 'gegen ESV Göttingen 4', text: '4' }]
+    - [{ url: '?staffel=1384&r=4#p5814x5867', title: 'gegen Hildesheimer SV 5', text: 5½ }]
+    - [{ url: '?staffel=1384&r=8#p5814x5851', title: 'gegen PSV Bad Pyrmont 2', text: '5' }]
+    - 9
+    - 26½
+    - ''
+-
+    - '7.'
+    - { text: 'Hamelner SV 6', url: '?mannschaft=5865', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1384&r=3#p5865x5859', title: 'gegen ESV Göttingen 3', text: '3' }]
+    - [{ url: '?staffel=1384&r=4#p5865x5849', title: 'gegen SG Holzminden 2', text: '2' }]
+    - [{ url: '?staffel=1384&r=8#p5865x5837', title: 'gegen Alfelder SV', text: '1' }]
+    - [{ url: '?staffel=1384&r=5#p5865x5855', title: 'gegen SC Langelsheim', text: 2½ }]
+    - [{ url: '?staffel=1384&r=9#p5865x5835', title: 'gegen SC SW Northeim 2', text: '2' }]
+    - [{ url: '?staffel=1384&r=2#p5865x5814', title: 'gegen WSV Clausthal-Zfd', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1384&r=1#p5865x5860', title: 'gegen ESV Göttingen 4', text: '5' }]
+    - [{ url: '?staffel=1384&r=7#p5865x5867', title: 'gegen Hildesheimer SV 5', text: '4' }]
+    - [{ url: '?staffel=1384&r=6#p5865x5851', title: 'gegen PSV Bad Pyrmont 2', text: '2' }]
+    - 7
+    - 27½
+    - ''
+-
+    - '8.'
+    - { text: 'ESV Göttingen 4', url: '?mannschaft=5860', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1384&r=2#p5860x5859', title: 'gegen ESV Göttingen 3', text: '2' }]
+    - [{ url: '?staffel=1384&r=8#p5860x5849', title: 'gegen SG Holzminden 2', text: '0' }]
+    - [{ url: '?staffel=1384&r=7#p5860x5837', title: 'gegen Alfelder SV', text: '3' }]
+    - [{ url: '?staffel=1384&r=4#p5860x5855', title: 'gegen SC Langelsheim', text: '3' }]
+    - [{ url: '?staffel=1384&r=5#p5860x5835', title: 'gegen SC SW Northeim 2', text: '3' }]
+    - [{ url: '?staffel=1384&r=3#p5860x5814', title: 'gegen WSV Clausthal-Zfd', text: '2' }]
+    - [{ url: '?staffel=1384&r=1#p5860x5865', title: 'gegen Hamelner SV 6', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1384&r=6#p5860x5867', title: 'gegen Hildesheimer SV 5', text: '2' }]
+    - [{ url: '?staffel=1384&r=9#p5860x5851', title: 'gegen PSV Bad Pyrmont 2', text: 4½ }]
+    - 5
+    - 20½
+    - ''
+-
+    - '9.'
+    - { text: 'Hildesheimer SV 5', url: '?mannschaft=5867', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1384&r=8#p5867x5859', title: 'gegen ESV Göttingen 3', text: '1' }]
+    - [{ url: '?staffel=1384&r=2#p5867x5849', title: 'gegen SG Holzminden 2', text: '4' }]
+    - [{ url: '?staffel=1384&r=9#p5867x5837', title: 'gegen Alfelder SV', text: '3' }]
+    - [{ url: '?staffel=1384&r=3#p5867x5855', title: 'gegen SC Langelsheim', text: 2½ }]
+    - [{ url: '?staffel=1384&r=1#p5867x5835', title: 'gegen SC SW Northeim 2', text: ½ }]
+    - [{ url: '?staffel=1384&r=4#p5867x5814', title: 'gegen WSV Clausthal-Zfd', text: ½ }]
+    - [{ url: '?staffel=1384&r=7#p5867x5865', title: 'gegen Hamelner SV 6', text: '2' }]
+    - [{ url: '?staffel=1384&r=6#p5867x5860', title: 'gegen ESV Göttingen 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1384&r=5#p5867x5851', title: 'gegen PSV Bad Pyrmont 2', text: '2' }]
+    - 5
+    - 19½
+    - absteiger
+-
+    - '10.'
+    - { text: 'PSV Bad Pyrmont 2', url: '?mannschaft=5851', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1384&r=1#p5851x5859', title: 'gegen ESV Göttingen 3', text: 2½ }]
+    - [{ url: '?staffel=1384&r=7#p5851x5849', title: 'gegen SG Holzminden 2', text: '2' }]
+    - [{ url: '?staffel=1384&r=3#p5851x5837', title: 'gegen Alfelder SV', text: '1' }]
+    - [{ url: '?staffel=1384&r=2#p5851x5855', title: 'gegen SC Langelsheim', text: 2½ }]
+    - [{ url: '?staffel=1384&r=4#p5851x5835', title: 'gegen SC SW Northeim 2', text: 1½ }]
+    - [{ url: '?staffel=1384&r=8#p5851x5814', title: 'gegen WSV Clausthal-Zfd', text: '1' }]
+    - [{ url: '?staffel=1384&r=6#p5851x5865', title: 'gegen Hamelner SV 6', text: '4' }]
+    - [{ url: '?staffel=1384&r=9#p5851x5860', title: 'gegen ESV Göttingen 4', text: 1½ }]
+    - [{ url: '?staffel=1384&r=5#p5851x5867', title: 'gegen Hildesheimer SV 5', text: '4' }]
+    - xxx
+    - 4
+    - '20'
+    - absteiger

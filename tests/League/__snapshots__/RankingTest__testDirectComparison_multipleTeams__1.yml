@@ -1,0 +1,373 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=8160', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8160x7949', title: 'gegen SK Lehrte', text: '4' }]
+    - [{ url: '?staffel=1811&r=2#p8160x8144', title: 'gegen SV Springe', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8160x7950', title: 'gegen SK Lehrte 2', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p8160x8155', title: 'gegen SD Isernhagen', text: 3½ }]
+    - {  }
+    - {  }
+    - {  }
+    - 8
+    - 15½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=8159', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8159x7949', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1811&r=2#p8159x8144', title: 'gegen SV Springe', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8159x7950', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p8159x8155', title: 'gegen SD Isernhagen', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - 8
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=8031', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p8031x8145', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=1811&r=2#p8031x8146', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=1811&r=1#p8031x8034', title: 'gegen HSK Lister Turm 4', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8031x8033', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - {  }
+    - {  }
+    - 8
+    - '13'
+    - ''
+-
+    - '4.'
+    - { text: 'HSK Lister Turm 2', url: '?mannschaft=8032', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p8032x8145', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=1811&r=2#p8032x8146', title: 'gegen Hannover 96 2', text: '3' }]
+    - [{ url: '?staffel=1811&r=1#p8032x8034', title: 'gegen HSK Lister Turm 4', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8032x8033', title: 'gegen HSK Lister Turm 3', text: 2½ }]
+    - {  }
+    - {  }
+    - 8
+    - 11½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte', url: '?mannschaft=7949', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1811&r=1#p7949x8160', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1811&r=1#p7949x8159', title: 'gegen SZ Bemerode', text: '1' }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p7949x8034', title: 'gegen HSK Lister Turm 4', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p7949x8033', title: 'gegen HSK Lister Turm 3', text: '4' }]
+    - {  }
+    - {  }
+    - 4
+    - '9'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Springe', url: '?mannschaft=8144', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1811&r=2#p8144x8160', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1811&r=2#p8144x8159', title: 'gegen SZ Bemerode', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1811&r=1#p8144x8142', title: 'gegen SV Bückeburg', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8144x8151', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 4
+    - '8'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=8142', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8142x8144', title: 'gegen SV Springe', text: '0' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p8142x8151', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8142x8155', title: 'gegen SD Isernhagen', text: '3' }]
+    - {  }
+    - {  }
+    - {  }
+    - 4
+    - '7'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=7950', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1811&r=1#p7950x8160', title: 'gegen SZ Bemerode 2', text: '0' }]
+    - [{ url: '?staffel=1811&r=1#p7950x8159', title: 'gegen SZ Bemerode', text: 1½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p7950x8034', title: 'gegen HSK Lister Turm 4', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p7950x8033', title: 'gegen HSK Lister Turm 3', text: 3½ }]
+    - {  }
+    - {  }
+    - 3
+    - '7'
+    - ''
+-
+    - '9.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=8151', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8151x8144', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1811&r=2#p8151x8142', title: 'gegen SV Bückeburg', text: '0' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8151x8155', title: 'gegen SD Isernhagen', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - 2
+    - 2½
+    - ''
+-
+    - '10.'
+    - { text: 'Hannover 96', url: '?mannschaft=8145', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p8145x8031', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1811&r=2#p8145x8032', title: 'gegen HSK Lister Turm 2', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1811&r=1#p8145x8146', title: 'gegen Hannover 96 2', text: '2' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 1
+    - '4'
+    - ''
+-
+    - '11.'
+    - { text: 'Hannover 96 2', url: '?mannschaft=8146', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p8146x8031', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1811&r=2#p8146x8032', title: 'gegen HSK Lister Turm 2', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8146x8145', title: 'gegen Hannover 96', text: '2' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 1
+    - '4'
+    - ''
+-
+    - '12.'
+    - { text: 'HSK Lister Turm 4', url: '?mannschaft=8034', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8034x8031', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1811&r=1#p8034x8032', title: 'gegen HSK Lister Turm 2', text: '1' }]
+    - [{ url: '?staffel=1811&r=2#p8034x7949', title: 'gegen SK Lehrte', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p8034x7950', title: 'gegen SK Lehrte 2', text: '2' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - 1
+    - '4'
+    - ''
+-
+    - '13.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=8155', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1811&r=2#p8155x8160', title: 'gegen SZ Bemerode 2', text: ½ }]
+    - [{ url: '?staffel=1811&r=2#p8155x8159', title: 'gegen SZ Bemerode', text: '0' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8155x8142', title: 'gegen SV Bückeburg', text: '1' }]
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8155x8151', title: 'gegen SV Bückeburg 2', text: 1½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - 0
+    - '3'
+    - ''
+-
+    - '14.'
+    - { text: 'HSK Lister Turm 3', url: '?mannschaft=8033', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=1#p8033x8031', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1811&r=1#p8033x8032', title: 'gegen HSK Lister Turm 2', text: 1½ }]
+    - [{ url: '?staffel=1811&r=2#p8033x7949', title: 'gegen SK Lehrte', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1811&r=2#p8033x7950', title: 'gegen SK Lehrte 2', text: ½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '2'
+    - ''
+-
+    - '15.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=8521', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '15.'
+    - { text: 'HSK Lister Turm 2', url: '?mannschaft=8522', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

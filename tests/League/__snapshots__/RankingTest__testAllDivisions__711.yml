@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=5909', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1468&r=2#p5909x5908', title: 'gegen MTV Tostedt', text: 2½ }]
+    - [{ url: '?staffel=1468&r=3#p5909x5907', title: 'gegen Hildesheimer SV', text: 3½ }]
+    - 4
+    - '6'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'MTV Tostedt', url: '?mannschaft=5908', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1468&r=2#p5908x5909', title: 'gegen SV Lingen 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1468&r=1#p5908x5907', title: 'gegen Hildesheimer SV', text: '3' }]
+    - 2
+    - 4½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=5907', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1468&r=3#p5907x5909', title: 'gegen SV Lingen 2', text: ½ }]
+    - [{ url: '?staffel=1468&r=1#p5907x5908', title: 'gegen MTV Tostedt', text: '1' }]
+    - xxx
+    - 0
+    - 1½
+    - ''

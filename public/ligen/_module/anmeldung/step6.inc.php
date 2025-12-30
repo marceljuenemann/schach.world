@@ -1,4 +1,4 @@
-<?
+<?php
 /* Mannschaftsmeldung: 6. In Datenbank speichern
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -27,7 +27,7 @@
 <b>Vielen Dank f&uuml;r Ihre Anmeldung.</b><br />
 <br />
 
-<?
+<?php
     // Grundsätzliches
     $confirm = "";
     $confirm .= "Mannschaft: ".$anmeldung->get("name")." ".$anmeldung->get("mnr")."\n";
@@ -62,6 +62,6 @@
         
 } // endif saveToDB
 else {
-    return SED_Error ( "Da ist etwas schief gegangen. Wir k&uuml;mmern uns drum. <!-- ".mysql_error()." -->", false, false, true );
+    return SED_Error ( "Da ist etwas schief gegangen. Wir k&uuml;mmern uns drum.", false, false, true );
 }
 ?>

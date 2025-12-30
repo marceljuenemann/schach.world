@@ -1,4 +1,4 @@
-<?
+<?php
 /* Authentifizierungs Bibliothek
  * 
  * Diese Bilbliothek stellt vor allem Funktionen zur Verfügung, die

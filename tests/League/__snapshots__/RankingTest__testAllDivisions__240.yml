@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=2458', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=671&r=8#p2458x2403', title: 'gegen TuS Aschendorf', text: '4' }]
+    - [{ url: '?staffel=671&r=7#p2458x2422', title: 'gegen Bentheim/Nordho 3', text: '5' }]
+    - [{ url: '?staffel=671&r=2#p2458x2387', title: 'gegen SK Nordhorn-Bl. 5', text: 5½ }]
+    - [{ url: '?staffel=671&r=4#p2458x2405', title: 'gegen SV Lingen 3', text: '3' }]
+    - [{ url: '?staffel=671&r=3#p2458x2388', title: 'gegen SK Nordhorn-Bl. 6', text: 6½ }]
+    - [{ url: '?staffel=671&r=9#p2458x2476', title: 'gegen Cervisia Nordho', text: '4' }]
+    - [{ url: '?staffel=671&r=6#p2458x2478', title: 'gegen Veldhausen/Uel. 2', text: '5' }]
+    - [{ url: '?staffel=671&r=1#p2458x2396', title: 'gegen SC HT Herzlake', text: '6' }]
+    - [{ url: '?staffel=671&r=5#p2458x2428', title: 'gegen SK Meppen 2', text: '0' }]
+    - 13
+    - '39'
+    - ''
+-
+    - '2.'
+    - { text: 'TuS Aschendorf', url: '?mannschaft=2403', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=671&r=8#p2403x2458', title: 'gegen SF Spelle 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=671&r=3#p2403x2422', title: 'gegen Bentheim/Nordho 3', text: '3' }]
+    - [{ url: '?staffel=671&r=7#p2403x2387', title: 'gegen SK Nordhorn-Bl. 5', text: 4½ }]
+    - [{ url: '?staffel=671&r=9#p2403x2405', title: 'gegen SV Lingen 3', text: 4½ }]
+    - [{ url: '?staffel=671&r=4#p2403x2388', title: 'gegen SK Nordhorn-Bl. 6', text: 4½ }]
+    - [{ url: '?staffel=671&r=5#p2403x2476', title: 'gegen Cervisia Nordho', text: 4½ }]
+    - [{ url: '?staffel=671&r=2#p2403x2478', title: 'gegen Veldhausen/Uel. 2', text: 4½ }]
+    - [{ url: '?staffel=671&r=6#p2403x2396', title: 'gegen SC HT Herzlake', text: 5½ }]
+    - [{ url: '?staffel=671&r=1#p2403x2428', title: 'gegen SK Meppen 2', text: '0' }]
+    - 12
+    - '34'
+    - ''
+-
+    - '3.'
+    - { text: 'Bentheim/Nordho 3', url: '?mannschaft=2422', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=671&r=7#p2422x2458', title: 'gegen SF Spelle 2', text: '3' }]
+    - [{ url: '?staffel=671&r=3#p2422x2403', title: 'gegen TuS Aschendorf', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=671&r=6#p2422x2387', title: 'gegen SK Nordhorn-Bl. 5', text: 4½ }]
+    - [{ url: '?staffel=671&r=8#p2422x2405', title: 'gegen SV Lingen 3', text: '4' }]
+    - [{ url: '?staffel=671&r=2#p2422x2388', title: 'gegen SK Nordhorn-Bl. 6', text: 5½ }]
+    - [{ url: '?staffel=671&r=4#p2422x2476', title: 'gegen Cervisia Nordho', text: '3' }]
+    - [{ url: '?staffel=671&r=1#p2422x2478', title: 'gegen Veldhausen/Uel. 2', text: 4½ }]
+    - [{ url: '?staffel=671&r=5#p2422x2396', title: 'gegen SC HT Herzlake', text: 6½ }]
+    - [{ url: '?staffel=671&r=9#p2422x2428', title: 'gegen SK Meppen 2', text: '0' }]
+    - 11
+    - '36'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Bl. 5', url: '?mannschaft=2387', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=671&r=2#p2387x2458', title: 'gegen SF Spelle 2', text: 2½ }]
+    - [{ url: '?staffel=671&r=7#p2387x2403', title: 'gegen TuS Aschendorf', text: 3½ }]
+    - [{ url: '?staffel=671&r=6#p2387x2422', title: 'gegen Bentheim/Nordho 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=671&r=3#p2387x2405', title: 'gegen SV Lingen 3', text: 4½ }]
+    - [{ url: '?staffel=671&r=1#p2387x2388', title: 'gegen SK Nordhorn-Bl. 6', text: '6' }]
+    - [{ url: '?staffel=671&r=8#p2387x2476', title: 'gegen Cervisia Nordho', text: 7½ }]
+    - [{ url: '?staffel=671&r=5#p2387x2478', title: 'gegen Veldhausen/Uel. 2', text: 5½ }]
+    - [{ url: '?staffel=671&r=9#p2387x2396', title: 'gegen SC HT Herzlake', text: 4½ }]
+    - [{ url: '?staffel=671&r=4#p2387x2428', title: 'gegen SK Meppen 2', text: '0' }]
+    - 10
+    - 37½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Lingen 3', url: '?mannschaft=2405', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=671&r=4#p2405x2458', title: 'gegen SF Spelle 2', text: '5' }]
+    - [{ url: '?staffel=671&r=9#p2405x2403', title: 'gegen TuS Aschendorf', text: 3½ }]
+    - [{ url: '?staffel=671&r=8#p2405x2422', title: 'gegen Bentheim/Nordho 3', text: '4' }]
+    - [{ url: '?staffel=671&r=3#p2405x2387', title: 'gegen SK Nordhorn-Bl. 5', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=671&r=5#p2405x2388', title: 'gegen SK Nordhorn-Bl. 6', text: '7' }]
+    - [{ url: '?staffel=671&r=1#p2405x2476', title: 'gegen Cervisia Nordho', text: 5½ }]
+    - [{ url: '?staffel=671&r=7#p2405x2478', title: 'gegen Veldhausen/Uel. 2', text: '5' }]
+    - [{ url: '?staffel=671&r=2#p2405x2396', title: 'gegen SC HT Herzlake', text: '4' }]
+    - [{ url: '?staffel=671&r=6#p2405x2428', title: 'gegen SK Meppen 2', text: '0' }]
+    - 10
+    - 37½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Nordhorn-Bl. 6', url: '?mannschaft=2388', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=671&r=3#p2388x2458', title: 'gegen SF Spelle 2', text: 1½ }]
+    - [{ url: '?staffel=671&r=4#p2388x2403', title: 'gegen TuS Aschendorf', text: 3½ }]
+    - [{ url: '?staffel=671&r=2#p2388x2422', title: 'gegen Bentheim/Nordho 3', text: 2½ }]
+    - [{ url: '?staffel=671&r=1#p2388x2387', title: 'gegen SK Nordhorn-Bl. 5', text: '2' }]
+    - [{ url: '?staffel=671&r=5#p2388x2405', title: 'gegen SV Lingen 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=671&r=6#p2388x2476', title: 'gegen Cervisia Nordho', text: '5' }]
+    - [{ url: '?staffel=671&r=9#p2388x2478', title: 'gegen Veldhausen/Uel. 2', text: 4½ }]
+    - [{ url: '?staffel=671&r=8#p2388x2396', title: 'gegen SC HT Herzlake', text: '6' }]
+    - [{ url: '?staffel=671&r=7#p2388x2428', title: 'gegen SK Meppen 2', text: '0' }]
+    - 6
+    - '26'
+    - ''
+-
+    - '7.'
+    - { text: 'Cervisia Nordho', url: '?mannschaft=2476', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=671&r=9#p2476x2458', title: 'gegen SF Spelle 2', text: '4' }]
+    - [{ url: '?staffel=671&r=5#p2476x2403', title: 'gegen TuS Aschendorf', text: 3½ }]
+    - [{ url: '?staffel=671&r=4#p2476x2422', title: 'gegen Bentheim/Nordho 3', text: '5' }]
+    - [{ url: '?staffel=671&r=8#p2476x2387', title: 'gegen SK Nordhorn-Bl. 5', text: ½ }]
+    - [{ url: '?staffel=671&r=1#p2476x2405', title: 'gegen SV Lingen 3', text: 2½ }]
+    - [{ url: '?staffel=671&r=6#p2476x2388', title: 'gegen SK Nordhorn-Bl. 6', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=671&r=3#p2476x2478', title: 'gegen Veldhausen/Uel. 2', text: 2½ }]
+    - [{ url: '?staffel=671&r=7#p2476x2396', title: 'gegen SC HT Herzlake', text: 6½ }]
+    - [{ url: '?staffel=671&r=2#p2476x2428', title: 'gegen SK Meppen 2', text: '0' }]
+    - 5
+    - 27½
+    - ''
+-
+    - '8.'
+    - { text: 'Veldhausen/Uel. 2', url: '?mannschaft=2478', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=671&r=6#p2478x2458', title: 'gegen SF Spelle 2', text: '3' }]
+    - [{ url: '?staffel=671&r=2#p2478x2403', title: 'gegen TuS Aschendorf', text: 3½ }]
+    - [{ url: '?staffel=671&r=1#p2478x2422', title: 'gegen Bentheim/Nordho 3', text: 3½ }]
+    - [{ url: '?staffel=671&r=5#p2478x2387', title: 'gegen SK Nordhorn-Bl. 5', text: 2½ }]
+    - [{ url: '?staffel=671&r=7#p2478x2405', title: 'gegen SV Lingen 3', text: '3' }]
+    - [{ url: '?staffel=671&r=9#p2478x2388', title: 'gegen SK Nordhorn-Bl. 6', text: 3½ }]
+    - [{ url: '?staffel=671&r=3#p2478x2476', title: 'gegen Cervisia Nordho', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=671&r=4#p2478x2396', title: 'gegen SC HT Herzlake', text: 6½ }]
+    - [{ url: '?staffel=671&r=8#p2478x2428', title: 'gegen SK Meppen 2', text: '0' }]
+    - 4
+    - '31'
+    - ''
+-
+    - '9.'
+    - { text: 'SC HT Herzlake', url: '?mannschaft=2396', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=671&r=1#p2396x2458', title: 'gegen SF Spelle 2', text: '2' }]
+    - [{ url: '?staffel=671&r=6#p2396x2403', title: 'gegen TuS Aschendorf', text: 2½ }]
+    - [{ url: '?staffel=671&r=5#p2396x2422', title: 'gegen Bentheim/Nordho 3', text: 1½ }]
+    - [{ url: '?staffel=671&r=9#p2396x2387', title: 'gegen SK Nordhorn-Bl. 5', text: 3½ }]
+    - [{ url: '?staffel=671&r=2#p2396x2405', title: 'gegen SV Lingen 3', text: '4' }]
+    - [{ url: '?staffel=671&r=8#p2396x2388', title: 'gegen SK Nordhorn-Bl. 6', text: '2' }]
+    - [{ url: '?staffel=671&r=7#p2396x2476', title: 'gegen Cervisia Nordho', text: 1½ }]
+    - [{ url: '?staffel=671&r=4#p2396x2478', title: 'gegen Veldhausen/Uel. 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=671&r=3#p2396x2428', title: 'gegen SK Meppen 2', text: '0' }]
+    - 1
+    - 18½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Meppen 2', url: '?mannschaft=2428', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=671&r=5#p2428x2458', title: 'gegen SF Spelle 2', text: '0' }]
+    - [{ url: '?staffel=671&r=1#p2428x2403', title: 'gegen TuS Aschendorf', text: '0' }]
+    - [{ url: '?staffel=671&r=9#p2428x2422', title: 'gegen Bentheim/Nordho 3', text: '0' }]
+    - [{ url: '?staffel=671&r=4#p2428x2387', title: 'gegen SK Nordhorn-Bl. 5', text: '0' }]
+    - [{ url: '?staffel=671&r=6#p2428x2405', title: 'gegen SV Lingen 3', text: '0' }]
+    - [{ url: '?staffel=671&r=7#p2428x2388', title: 'gegen SK Nordhorn-Bl. 6', text: '0' }]
+    - [{ url: '?staffel=671&r=2#p2428x2476', title: 'gegen Cervisia Nordho', text: '0' }]
+    - [{ url: '?staffel=671&r=8#p2428x2478', title: 'gegen Veldhausen/Uel. 2', text: '0' }]
+    - [{ url: '?staffel=671&r=3#p2428x2396', title: 'gegen SC HT Herzlake', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

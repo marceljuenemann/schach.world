@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: Osterode-Südharz, url: '?mannschaft=3085', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=754&r=7#p3085x3064', title: 'gegen Bad Lauterberg', text: 4½ }]
+    - [{ url: '?staffel=754&r=3#p3085x2934', title: 'gegen PSV Bad Pyrmont', text: '4' }]
+    - [{ url: '?staffel=754&r=6#p3085x2938', title: 'gegen SK Goslar', text: 3½ }]
+    - [{ url: '?staffel=754&r=8#p3085x3073', title: 'gegen Hamelner SV 4', text: 5½ }]
+    - [{ url: '?staffel=754&r=5#p3085x2943', title: 'gegen SK Duderstadt', text: '4' }]
+    - [{ url: '?staffel=754&r=9#p3085x2942', title: 'gegen Alfelder SV', text: 7½ }]
+    - [{ url: '?staffel=754&r=1#p3085x2993', title: 'gegen Hildesheimer SV 3', text: '5' }]
+    - [{ url: '?staffel=754&r=2#p3085x3076', title: 'gegen ESV Göttingen 2', text: '5' }]
+    - [{ url: '?staffel=754&r=4#p3085x2996', title: 'gegen WSV Clausthal-Z', text: '4' }]
+    - 13
+    - '43'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Bad Lauterberg', url: '?mannschaft=3064', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=754&r=7#p3064x3085', title: 'gegen Osterode-Südharz', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=754&r=4#p3064x2934', title: 'gegen PSV Bad Pyrmont', text: 3½ }]
+    - [{ url: '?staffel=754&r=9#p3064x2938', title: 'gegen SK Goslar', text: '5' }]
+    - [{ url: '?staffel=754&r=2#p3064x3073', title: 'gegen Hamelner SV 4', text: 4½ }]
+    - [{ url: '?staffel=754&r=6#p3064x2943', title: 'gegen SK Duderstadt', text: '4' }]
+    - [{ url: '?staffel=754&r=3#p3064x2942', title: 'gegen Alfelder SV', text: '5' }]
+    - [{ url: '?staffel=754&r=8#p3064x2993', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=754&r=5#p3064x3076', title: 'gegen ESV Göttingen 2', text: 4½ }]
+    - [{ url: '?staffel=754&r=1#p3064x2996', title: 'gegen WSV Clausthal-Z', text: 5½ }]
+    - 12
+    - 39½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'PSV Bad Pyrmont', url: '?mannschaft=2934', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=754&r=3#p2934x3085', title: 'gegen Osterode-Südharz', text: '4' }]
+    - [{ url: '?staffel=754&r=4#p2934x3064', title: 'gegen Bad Lauterberg', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=754&r=2#p2934x2938', title: 'gegen SK Goslar', text: 4½ }]
+    - [{ url: '?staffel=754&r=7#p2934x3073', title: 'gegen Hamelner SV 4', text: 3½ }]
+    - [{ url: '?staffel=754&r=1#p2934x2943', title: 'gegen SK Duderstadt', text: '5' }]
+    - [{ url: '?staffel=754&r=5#p2934x2942', title: 'gegen Alfelder SV', text: '4' }]
+    - [{ url: '?staffel=754&r=6#p2934x2993', title: 'gegen Hildesheimer SV 3', text: 4½ }]
+    - [{ url: '?staffel=754&r=8#p2934x3076', title: 'gegen ESV Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=754&r=9#p2934x2996', title: 'gegen WSV Clausthal-Z', text: 5½ }]
+    - 12
+    - 38½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Goslar', url: '?mannschaft=2938', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=754&r=6#p2938x3085', title: 'gegen Osterode-Südharz', text: 4½ }]
+    - [{ url: '?staffel=754&r=9#p2938x3064', title: 'gegen Bad Lauterberg', text: '3' }]
+    - [{ url: '?staffel=754&r=2#p2938x2934', title: 'gegen PSV Bad Pyrmont', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=754&r=4#p2938x3073', title: 'gegen Hamelner SV 4', text: 3½ }]
+    - [{ url: '?staffel=754&r=8#p2938x2943', title: 'gegen SK Duderstadt', text: '5' }]
+    - [{ url: '?staffel=754&r=1#p2938x2942', title: 'gegen Alfelder SV', text: 2½ }]
+    - [{ url: '?staffel=754&r=7#p2938x2993', title: 'gegen Hildesheimer SV 3', text: '5' }]
+    - [{ url: '?staffel=754&r=3#p2938x3076', title: 'gegen ESV Göttingen 2', text: 5½ }]
+    - [{ url: '?staffel=754&r=5#p2938x2996', title: 'gegen WSV Clausthal-Z', text: '6' }]
+    - 10
+    - 38½
+    - ''
+-
+    - '5.'
+    - { text: 'Hamelner SV 4', url: '?mannschaft=3073', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=754&r=8#p3073x3085', title: 'gegen Osterode-Südharz', text: 2½ }]
+    - [{ url: '?staffel=754&r=2#p3073x3064', title: 'gegen Bad Lauterberg', text: 3½ }]
+    - [{ url: '?staffel=754&r=7#p3073x2934', title: 'gegen PSV Bad Pyrmont', text: 4½ }]
+    - [{ url: '?staffel=754&r=4#p3073x2938', title: 'gegen SK Goslar', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=754&r=9#p3073x2943', title: 'gegen SK Duderstadt', text: 3½ }]
+    - [{ url: '?staffel=754&r=6#p3073x2942', title: 'gegen Alfelder SV', text: 4½ }]
+    - [{ url: '?staffel=754&r=5#p3073x2993', title: 'gegen Hildesheimer SV 3', text: 5½ }]
+    - [{ url: '?staffel=754&r=1#p3073x3076', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=754&r=3#p3073x2996', title: 'gegen WSV Clausthal-Z', text: '4' }]
+    - 10
+    - 36½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Duderstadt', url: '?mannschaft=2943', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=754&r=5#p2943x3085', title: 'gegen Osterode-Südharz', text: '4' }]
+    - [{ url: '?staffel=754&r=6#p2943x3064', title: 'gegen Bad Lauterberg', text: '4' }]
+    - [{ url: '?staffel=754&r=1#p2943x2934', title: 'gegen PSV Bad Pyrmont', text: '3' }]
+    - [{ url: '?staffel=754&r=8#p2943x2938', title: 'gegen SK Goslar', text: '3' }]
+    - [{ url: '?staffel=754&r=9#p2943x3073', title: 'gegen Hamelner SV 4', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=754&r=2#p2943x2942', title: 'gegen Alfelder SV', text: '5' }]
+    - [{ url: '?staffel=754&r=3#p2943x2993', title: 'gegen Hildesheimer SV 3', text: '4' }]
+    - [{ url: '?staffel=754&r=4#p2943x3076', title: 'gegen ESV Göttingen 2', text: 4½ }]
+    - [{ url: '?staffel=754&r=7#p2943x2996', title: 'gegen WSV Clausthal-Z', text: 3½ }]
+    - 9
+    - 35½
+    - ''
+-
+    - '7.'
+    - { text: 'Alfelder SV', url: '?mannschaft=2942', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=754&r=9#p2942x3085', title: 'gegen Osterode-Südharz', text: ½ }]
+    - [{ url: '?staffel=754&r=3#p2942x3064', title: 'gegen Bad Lauterberg', text: '3' }]
+    - [{ url: '?staffel=754&r=5#p2942x2934', title: 'gegen PSV Bad Pyrmont', text: '4' }]
+    - [{ url: '?staffel=754&r=1#p2942x2938', title: 'gegen SK Goslar', text: 5½ }]
+    - [{ url: '?staffel=754&r=6#p2942x3073', title: 'gegen Hamelner SV 4', text: 3½ }]
+    - [{ url: '?staffel=754&r=2#p2942x2943', title: 'gegen SK Duderstadt', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=754&r=4#p2942x2993', title: 'gegen Hildesheimer SV 3', text: 4½ }]
+    - [{ url: '?staffel=754&r=7#p2942x3076', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - [{ url: '?staffel=754&r=8#p2942x2996', title: 'gegen WSV Clausthal-Z', text: 5½ }]
+    - 8
+    - 33½
+    - ''
+-
+    - '8.'
+    - { text: 'Hildesheimer SV 3', url: '?mannschaft=2993', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=754&r=1#p2993x3085', title: 'gegen Osterode-Südharz', text: '3' }]
+    - [{ url: '?staffel=754&r=8#p2993x3064', title: 'gegen Bad Lauterberg', text: '4' }]
+    - [{ url: '?staffel=754&r=6#p2993x2934', title: 'gegen PSV Bad Pyrmont', text: 3½ }]
+    - [{ url: '?staffel=754&r=7#p2993x2938', title: 'gegen SK Goslar', text: '3' }]
+    - [{ url: '?staffel=754&r=5#p2993x3073', title: 'gegen Hamelner SV 4', text: 2½ }]
+    - [{ url: '?staffel=754&r=3#p2993x2943', title: 'gegen SK Duderstadt', text: '4' }]
+    - [{ url: '?staffel=754&r=4#p2993x2942', title: 'gegen Alfelder SV', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=754&r=9#p2993x3076', title: 'gegen ESV Göttingen 2', text: '5' }]
+    - [{ url: '?staffel=754&r=2#p2993x2996', title: 'gegen WSV Clausthal-Z', text: '5' }]
+    - 6
+    - 33½
+    - ''
+-
+    - '9.'
+    - { text: 'ESV Göttingen 2', url: '?mannschaft=3076', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=754&r=2#p3076x3085', title: 'gegen Osterode-Südharz', text: '3' }]
+    - [{ url: '?staffel=754&r=5#p3076x3064', title: 'gegen Bad Lauterberg', text: 3½ }]
+    - [{ url: '?staffel=754&r=8#p3076x2934', title: 'gegen PSV Bad Pyrmont', text: '5' }]
+    - [{ url: '?staffel=754&r=3#p3076x2938', title: 'gegen SK Goslar', text: 2½ }]
+    - [{ url: '?staffel=754&r=1#p3076x3073', title: 'gegen Hamelner SV 4', text: '4' }]
+    - [{ url: '?staffel=754&r=4#p3076x2943', title: 'gegen SK Duderstadt', text: 3½ }]
+    - [{ url: '?staffel=754&r=7#p3076x2942', title: 'gegen Alfelder SV', text: '4' }]
+    - [{ url: '?staffel=754&r=9#p3076x2993', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=754&r=6#p3076x2996', title: 'gegen WSV Clausthal-Z', text: '4' }]
+    - 5
+    - 32½
+    - absteiger
+-
+    - '10.'
+    - { text: 'WSV Clausthal-Z', url: '?mannschaft=2996', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=754&r=4#p2996x3085', title: 'gegen Osterode-Südharz', text: '4' }]
+    - [{ url: '?staffel=754&r=1#p2996x3064', title: 'gegen Bad Lauterberg', text: 2½ }]
+    - [{ url: '?staffel=754&r=9#p2996x2934', title: 'gegen PSV Bad Pyrmont', text: 2½ }]
+    - [{ url: '?staffel=754&r=5#p2996x2938', title: 'gegen SK Goslar', text: '2' }]
+    - [{ url: '?staffel=754&r=3#p2996x3073', title: 'gegen Hamelner SV 4', text: '4' }]
+    - [{ url: '?staffel=754&r=7#p2996x2943', title: 'gegen SK Duderstadt', text: 4½ }]
+    - [{ url: '?staffel=754&r=8#p2996x2942', title: 'gegen Alfelder SV', text: 2½ }]
+    - [{ url: '?staffel=754&r=2#p2996x2993', title: 'gegen Hildesheimer SV 3', text: '3' }]
+    - [{ url: '?staffel=754&r=6#p2996x3076', title: 'gegen ESV Göttingen 2', text: '4' }]
+    - xxx
+    - 5
+    - '29'
+    - absteiger

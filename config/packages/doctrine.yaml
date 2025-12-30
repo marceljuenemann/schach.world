@@ -1,27 +1,23 @@
 doctrine:
     dbal:
         connections:
-            webapp:
-                url: '%env(resolve:WEBAPP_DATABASE_URL)%'
             league:
                 url: '%env(resolve:LEAGUE_DATABASE_URL)%'
                 # Force the connection to be in latin1 charset.
                 charset: latin1
                 options:
                     1002: "SET NAMES 'latin1'"
-        default_connection: webapp    
+            # Future plan is to use the league database as main
+            # database, but with UTF-8 rather than latin1. In the
+            # meantime, use a separate connection to the same
+            # database with UTF-8.
+            main:
+                url: '%env(resolve:MAIN_DATABASE_URL)%'
+        # TODO: Move to main.
+        default_connection: main
     orm:
-        default_entity_manager: webapp
+        default_entity_manager: main
         entity_managers:
-            webapp:
-                connection: webapp
-                naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
-                mappings:
-                    WebApp:
-                        is_bundle: false
-                        dir: '%kernel.project_dir%/src/WebApp/Entity'
-                        prefix: 'Nsv\WebApp\Entity'
-                        alias: WebApp
             league:
                 connection: league
                 naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
@@ -31,6 +27,25 @@ doctrine:
                         dir: '%kernel.project_dir%/src/League/Entity'
                         prefix: 'Nsv\League\Entity'
                         alias: League
+            main:
+                connection: main
+                naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+                mappings:
+                    Dwz:
+                        is_bundle: false
+                        dir: '%kernel.project_dir%/src/Dwz/Entity'
+                        prefix: 'Nsv\Dwz\Entity'
+                        alias: Dwz
+                    Registration:
+                        is_bundle: false
+                        dir: '%kernel.project_dir%/src/Registration/Entity'
+                        prefix: 'Nsv\Registration\Entity'
+                        alias: Registration
+                    WebApp:
+                        is_bundle: false
+                        dir: '%kernel.project_dir%/src/WebApp/Entity'
+                        prefix: 'Nsv\WebApp\Entity'
+                        alias: WebApp
 
 when@test:
     doctrine:

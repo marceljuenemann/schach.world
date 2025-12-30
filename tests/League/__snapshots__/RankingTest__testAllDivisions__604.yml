@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Gernsheim', url: '?mannschaft=5752', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1346&r=6#p5752x5817', title: 'gegen TSV Forstenried', text: '2' }]
+    - [{ url: '?staffel=1346&r=2#p5752x5697', title: 'gegen FC Bayern München 2', text: 3½ }]
+    - [{ url: '?staffel=1346&r=7#p5752x5815', title: 'gegen SK Neuperlach', text: 2½ }]
+    - [{ url: '?staffel=1346&r=1#p5752x5698', title: 'gegen FC Bayern München 3', text: '3' }]
+    - [{ url: '?staffel=1346&r=5#p5752x5753', title: 'gegen SK Gernsheim 2', text: 2½ }]
+    - 9
+    - 13½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TSV Forstenried', url: '?mannschaft=5817', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1346&r=6#p5817x5752', title: 'gegen SK Gernsheim', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1346&r=8#p5817x5697', title: 'gegen FC Bayern München 2', text: '1' }]
+    - [{ url: '?staffel=1346&r=5#p5817x5815', title: 'gegen SK Neuperlach', text: '2' }]
+    - [{ url: '?staffel=1346&r=4#p5817x5698', title: 'gegen FC Bayern München 3', text: '3' }]
+    - [{ url: '?staffel=1346&r=7#p5817x5753', title: 'gegen SK Gernsheim 2', text: 2½ }]
+    - 6
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'FC Bayern München 2', url: '?mannschaft=5697', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1346&r=2#p5697x5752', title: 'gegen SK Gernsheim', text: ½ }]
+    - [{ url: '?staffel=1346&r=8#p5697x5817', title: 'gegen TSV Forstenried', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1346&r=4#p5697x5815', title: 'gegen SK Neuperlach', text: '1' }]
+    - [{ url: '?staffel=1346&r=5#p5697x5698', title: 'gegen FC Bayern München 3', text: '4' }]
+    - [{ url: '?staffel=1346&r=1#p5697x5753', title: 'gegen SK Gernsheim 2', text: '4' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Neuperlach', url: '?mannschaft=5815', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1346&r=7#p5815x5752', title: 'gegen SK Gernsheim', text: 1½ }]
+    - [{ url: '?staffel=1346&r=5#p5815x5817', title: 'gegen TSV Forstenried', text: '2' }]
+    - [{ url: '?staffel=1346&r=4#p5815x5697', title: 'gegen FC Bayern München 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1346&r=8#p5815x5698', title: 'gegen FC Bayern München 3', text: '2' }]
+    - [{ url: '?staffel=1346&r=6#p5815x5753', title: 'gegen SK Gernsheim 2', text: '0' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'FC Bayern München 3', url: '?mannschaft=5698', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1346&r=1#p5698x5752', title: 'gegen SK Gernsheim', text: '1' }]
+    - [{ url: '?staffel=1346&r=4#p5698x5817', title: 'gegen TSV Forstenried', text: '1' }]
+    - [{ url: '?staffel=1346&r=5#p5698x5697', title: 'gegen FC Bayern München 2', text: '0' }]
+    - [{ url: '?staffel=1346&r=8#p5698x5815', title: 'gegen SK Neuperlach', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1346&r=2#p5698x5753', title: 'gegen SK Gernsheim 2', text: '3' }]
+    - 3
+    - '7'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SK Gernsheim 2', url: '?mannschaft=5753', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1346&r=5#p5753x5752', title: 'gegen SK Gernsheim', text: 1½ }]
+    - [{ url: '?staffel=1346&r=7#p5753x5817', title: 'gegen TSV Forstenried', text: 1½ }]
+    - [{ url: '?staffel=1346&r=1#p5753x5697', title: 'gegen FC Bayern München 2', text: '0' }]
+    - [{ url: '?staffel=1346&r=6#p5753x5815', title: 'gegen SK Neuperlach', text: '4' }]
+    - [{ url: '?staffel=1346&r=2#p5753x5698', title: 'gegen FC Bayern München 3', text: '1' }]
+    - xxx
+    - 2
+    - '8'
+    - absteiger

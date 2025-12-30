@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Lübecker SV 9', url: '?mannschaft=2823', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=702&r=7#p2823x2819', title: 'gegen SVBad Schwartau 2', text: '3' }, { url: '?staffel=702&r=8#p2823x2819', title: 'gegen SVBad Schwartau 2', text: '3' }]
+    - [{ url: '?staffel=702&r=13#p2823x2822', title: 'gegen Ratzeburger SC', text: '2' }, { url: '?staffel=702&r=14#p2823x2822', title: 'gegen Ratzeburger SC', text: '3' }]
+    - [{ url: '?staffel=702&r=11#p2823x2821', title: 'gegen SC Barsbüttel', text: '3' }, { url: '?staffel=702&r=12#p2823x2821', title: 'gegen SC Barsbüttel', text: 2½ }]
+    - [{ url: '?staffel=702&r=1#p2823x2816', title: 'gegen Lübecker SV 10', text: '3' }, { url: '?staffel=702&r=2#p2823x2816', title: 'gegen Lübecker SV 10', text: '1' }]
+    - [{ url: '?staffel=702&r=3#p2823x2817', title: 'gegen Ahrensburg TSV', text: '3' }, { url: '?staffel=702&r=4#p2823x2817', title: 'gegen Ahrensburg TSV', text: 2½ }]
+    - [{ url: '?staffel=702&r=5#p2823x2818', title: 'gegen TSV Trittau 2', text: '3' }, { url: '?staffel=702&r=6#p2823x2818', title: 'gegen TSV Trittau 2', text: '4' }]
+    - [{ url: '?staffel=702&r=17#p2823x2815', title: 'gegen Möllner SV 2', text: '4' }, { url: '?staffel=702&r=18#p2823x2815', title: 'gegen Möllner SV 2', text: '4' }]
+    - [{ url: '?staffel=702&r=9#p2823x2820', title: 'gegen SVBad Schwartau 3', text: '4' }, { url: '?staffel=702&r=10#p2823x2820', title: 'gegen SVBad Schwartau 3', text: '4' }]
+    - [{ url: '?staffel=702&r=15#p2823x2824', title: 'gegen SK Norderstedt', text: '3' }, { url: '?staffel=702&r=16#p2823x2824', title: 'gegen SK Norderstedt', text: 3½ }]
+    - 33
+    - 55½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SVBad Schwartau 2', url: '?mannschaft=2819', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=702&r=7#p2819x2823', title: 'gegen Lübecker SV 9', text: '1' }, { url: '?staffel=702&r=8#p2819x2823', title: 'gegen Lübecker SV 9', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=702&r=5#p2819x2822', title: 'gegen Ratzeburger SC', text: '2' }, { url: '?staffel=702&r=6#p2819x2822', title: 'gegen Ratzeburger SC', text: 2½ }]
+    - [{ url: '?staffel=702&r=3#p2819x2821', title: 'gegen SC Barsbüttel', text: 3½ }, { url: '?staffel=702&r=4#p2819x2821', title: 'gegen SC Barsbüttel', text: '3' }]
+    - [{ url: '?staffel=702&r=11#p2819x2816', title: 'gegen Lübecker SV 10', text: '1' }, { url: '?staffel=702&r=12#p2819x2816', title: 'gegen Lübecker SV 10', text: '1' }]
+    - [{ url: '?staffel=702&r=13#p2819x2817', title: 'gegen Ahrensburg TSV', text: '3' }, { url: '?staffel=702&r=14#p2819x2817', title: 'gegen Ahrensburg TSV', text: '1' }]
+    - [{ url: '?staffel=702&r=15#p2819x2818', title: 'gegen TSV Trittau 2', text: '4' }, { url: '?staffel=702&r=16#p2819x2818', title: 'gegen TSV Trittau 2', text: '4' }]
+    - [{ url: '?staffel=702&r=9#p2819x2815', title: 'gegen Möllner SV 2', text: '3' }, { url: '?staffel=702&r=10#p2819x2815', title: 'gegen Möllner SV 2', text: '2' }]
+    - [{ url: '?staffel=702&r=1#p2819x2820', title: 'gegen SVBad Schwartau 3', text: 3½ }, { url: '?staffel=702&r=2#p2819x2820', title: 'gegen SVBad Schwartau 3', text: '3' }]
+    - [{ url: '?staffel=702&r=17#p2819x2824', title: 'gegen SK Norderstedt', text: '4' }, { url: '?staffel=702&r=18#p2819x2824', title: 'gegen SK Norderstedt', text: '4' }]
+    - 24
+    - 46½
+    - ''
+-
+    - '3.'
+    - { text: 'Ratzeburger SC', url: '?mannschaft=2822', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=702&r=13#p2822x2823', title: 'gegen Lübecker SV 9', text: '2' }, { url: '?staffel=702&r=14#p2822x2823', title: 'gegen Lübecker SV 9', text: '1' }]
+    - [{ url: '?staffel=702&r=5#p2822x2819', title: 'gegen SVBad Schwartau 2', text: '2' }, { url: '?staffel=702&r=6#p2822x2819', title: 'gegen SVBad Schwartau 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=702&r=9#p2822x2821', title: 'gegen SC Barsbüttel', text: ½ }, { url: '?staffel=702&r=10#p2822x2821', title: 'gegen SC Barsbüttel', text: '3' }]
+    - [{ url: '?staffel=702&r=17#p2822x2816', title: 'gegen Lübecker SV 10', text: '2' }, { url: '?staffel=702&r=18#p2822x2816', title: 'gegen Lübecker SV 10', text: '2' }]
+    - [{ url: '?staffel=702&r=1#p2822x2817', title: 'gegen Ahrensburg TSV', text: '3' }, { url: '?staffel=702&r=2#p2822x2817', title: 'gegen Ahrensburg TSV', text: '3' }]
+    - [{ url: '?staffel=702&r=3#p2822x2818', title: 'gegen TSV Trittau 2', text: '3' }, { url: '?staffel=702&r=4#p2822x2818', title: 'gegen TSV Trittau 2', text: 2½ }]
+    - [{ url: '?staffel=702&r=15#p2822x2815', title: 'gegen Möllner SV 2', text: ½ }, { url: '?staffel=702&r=16#p2822x2815', title: 'gegen Möllner SV 2', text: '2' }]
+    - [{ url: '?staffel=702&r=7#p2822x2820', title: 'gegen SVBad Schwartau 3', text: '4' }, { url: '?staffel=702&r=8#p2822x2820', title: 'gegen SVBad Schwartau 3', text: 2½ }]
+    - [{ url: '?staffel=702&r=11#p2822x2824', title: 'gegen SK Norderstedt', text: '4' }, { url: '?staffel=702&r=12#p2822x2824', title: 'gegen SK Norderstedt', text: '3' }]
+    - 23
+    - 41½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Barsbüttel', url: '?mannschaft=2821', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=702&r=11#p2821x2823', title: 'gegen Lübecker SV 9', text: '1' }, { url: '?staffel=702&r=12#p2821x2823', title: 'gegen Lübecker SV 9', text: 1½ }]
+    - [{ url: '?staffel=702&r=3#p2821x2819', title: 'gegen SVBad Schwartau 2', text: ½ }, { url: '?staffel=702&r=4#p2821x2819', title: 'gegen SVBad Schwartau 2', text: '1' }]
+    - [{ url: '?staffel=702&r=9#p2821x2822', title: 'gegen Ratzeburger SC', text: 3½ }, { url: '?staffel=702&r=10#p2821x2822', title: 'gegen Ratzeburger SC', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=702&r=15#p2821x2816', title: 'gegen Lübecker SV 10', text: 2½ }, { url: '?staffel=702&r=16#p2821x2816', title: 'gegen Lübecker SV 10', text: 2½ }]
+    - [{ url: '?staffel=702&r=17#p2821x2817', title: 'gegen Ahrensburg TSV', text: 3½ }, { url: '?staffel=702&r=18#p2821x2817', title: 'gegen Ahrensburg TSV', text: 2½ }]
+    - [{ url: '?staffel=702&r=1#p2821x2818', title: 'gegen TSV Trittau 2', text: '2' }, { url: '?staffel=702&r=2#p2821x2818', title: 'gegen TSV Trittau 2', text: 2½ }]
+    - [{ url: '?staffel=702&r=13#p2821x2815', title: 'gegen Möllner SV 2', text: '1' }, { url: '?staffel=702&r=14#p2821x2815', title: 'gegen Möllner SV 2', text: '3' }]
+    - [{ url: '?staffel=702&r=5#p2821x2820', title: 'gegen SVBad Schwartau 3', text: '2' }, { url: '?staffel=702&r=6#p2821x2820', title: 'gegen SVBad Schwartau 3', text: '4' }]
+    - [{ url: '?staffel=702&r=7#p2821x2824', title: 'gegen SK Norderstedt', text: '4' }, { url: '?staffel=702&r=8#p2821x2824', title: 'gegen SK Norderstedt', text: '2' }]
+    - 21
+    - '40'
+    - ''
+-
+    - '5.'
+    - { text: 'Lübecker SV 10', url: '?mannschaft=2816', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=702&r=1#p2816x2823', title: 'gegen Lübecker SV 9', text: '1' }, { url: '?staffel=702&r=2#p2816x2823', title: 'gegen Lübecker SV 9', text: '3' }]
+    - [{ url: '?staffel=702&r=11#p2816x2819', title: 'gegen SVBad Schwartau 2', text: '3' }, { url: '?staffel=702&r=12#p2816x2819', title: 'gegen SVBad Schwartau 2', text: '3' }]
+    - [{ url: '?staffel=702&r=17#p2816x2822', title: 'gegen Ratzeburger SC', text: '2' }, { url: '?staffel=702&r=18#p2816x2822', title: 'gegen Ratzeburger SC', text: '2' }]
+    - [{ url: '?staffel=702&r=15#p2816x2821', title: 'gegen SC Barsbüttel', text: 1½ }, { url: '?staffel=702&r=16#p2816x2821', title: 'gegen SC Barsbüttel', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=702&r=7#p2816x2817', title: 'gegen Ahrensburg TSV', text: 2½ }, { url: '?staffel=702&r=8#p2816x2817', title: 'gegen Ahrensburg TSV', text: '3' }]
+    - [{ url: '?staffel=702&r=9#p2816x2818', title: 'gegen TSV Trittau 2', text: '0' }, { url: '?staffel=702&r=10#p2816x2818', title: 'gegen TSV Trittau 2', text: '0' }]
+    - [{ url: '?staffel=702&r=3#p2816x2815', title: 'gegen Möllner SV 2', text: '4' }, { url: '?staffel=702&r=4#p2816x2815', title: 'gegen Möllner SV 2', text: '3' }]
+    - [{ url: '?staffel=702&r=13#p2816x2820', title: 'gegen SVBad Schwartau 3', text: '1' }, { url: '?staffel=702&r=14#p2816x2820', title: 'gegen SVBad Schwartau 3', text: '1' }]
+    - [{ url: '?staffel=702&r=5#p2816x2824', title: 'gegen SK Norderstedt', text: '4' }, { url: '?staffel=702&r=6#p2816x2824', title: 'gegen SK Norderstedt', text: '4' }]
+    - 20
+    - 39½
+    - ''
+-
+    - '6.'
+    - { text: 'Ahrensburg TSV', url: '?mannschaft=2817', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=702&r=3#p2817x2823', title: 'gegen Lübecker SV 9', text: '1' }, { url: '?staffel=702&r=4#p2817x2823', title: 'gegen Lübecker SV 9', text: 1½ }]
+    - [{ url: '?staffel=702&r=13#p2817x2819', title: 'gegen SVBad Schwartau 2', text: '1' }, { url: '?staffel=702&r=14#p2817x2819', title: 'gegen SVBad Schwartau 2', text: '3' }]
+    - [{ url: '?staffel=702&r=1#p2817x2822', title: 'gegen Ratzeburger SC', text: '1' }, { url: '?staffel=702&r=2#p2817x2822', title: 'gegen Ratzeburger SC', text: '1' }]
+    - [{ url: '?staffel=702&r=17#p2817x2821', title: 'gegen SC Barsbüttel', text: ½ }, { url: '?staffel=702&r=18#p2817x2821', title: 'gegen SC Barsbüttel', text: 1½ }]
+    - [{ url: '?staffel=702&r=7#p2817x2816', title: 'gegen Lübecker SV 10', text: 1½ }, { url: '?staffel=702&r=8#p2817x2816', title: 'gegen Lübecker SV 10', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=702&r=11#p2817x2818', title: 'gegen TSV Trittau 2', text: '2' }, { url: '?staffel=702&r=12#p2817x2818', title: 'gegen TSV Trittau 2', text: '2' }]
+    - [{ url: '?staffel=702&r=5#p2817x2815', title: 'gegen Möllner SV 2', text: '4' }, { url: '?staffel=702&r=6#p2817x2815', title: 'gegen Möllner SV 2', text: 2½ }]
+    - [{ url: '?staffel=702&r=15#p2817x2820', title: 'gegen SVBad Schwartau 3', text: '4' }, { url: '?staffel=702&r=16#p2817x2820', title: 'gegen SVBad Schwartau 3', text: '4' }]
+    - [{ url: '?staffel=702&r=9#p2817x2824', title: 'gegen SK Norderstedt', text: '3' }, { url: '?staffel=702&r=10#p2817x2824', title: 'gegen SK Norderstedt', text: '3' }]
+    - 16
+    - 37½
+    - ''
+-
+    - '7.'
+    - { text: 'TSV Trittau 2', url: '?mannschaft=2818', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=702&r=5#p2818x2823', title: 'gegen Lübecker SV 9', text: '1' }, { url: '?staffel=702&r=6#p2818x2823', title: 'gegen Lübecker SV 9', text: '0' }]
+    - [{ url: '?staffel=702&r=15#p2818x2819', title: 'gegen SVBad Schwartau 2', text: '0' }, { url: '?staffel=702&r=16#p2818x2819', title: 'gegen SVBad Schwartau 2', text: '0' }]
+    - [{ url: '?staffel=702&r=3#p2818x2822', title: 'gegen Ratzeburger SC', text: '1' }, { url: '?staffel=702&r=4#p2818x2822', title: 'gegen Ratzeburger SC', text: 1½ }]
+    - [{ url: '?staffel=702&r=1#p2818x2821', title: 'gegen SC Barsbüttel', text: '2' }, { url: '?staffel=702&r=2#p2818x2821', title: 'gegen SC Barsbüttel', text: 1½ }]
+    - [{ url: '?staffel=702&r=9#p2818x2816', title: 'gegen Lübecker SV 10', text: '4' }, { url: '?staffel=702&r=10#p2818x2816', title: 'gegen Lübecker SV 10', text: '4' }]
+    - [{ url: '?staffel=702&r=11#p2818x2817', title: 'gegen Ahrensburg TSV', text: '2' }, { url: '?staffel=702&r=12#p2818x2817', title: 'gegen Ahrensburg TSV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=702&r=7#p2818x2815', title: 'gegen Möllner SV 2', text: 3½ }, { url: '?staffel=702&r=8#p2818x2815', title: 'gegen Möllner SV 2', text: '2' }]
+    - [{ url: '?staffel=702&r=17#p2818x2820', title: 'gegen SVBad Schwartau 3', text: 2½ }, { url: '?staffel=702&r=18#p2818x2820', title: 'gegen SVBad Schwartau 3', text: 1½ }]
+    - [{ url: '?staffel=702&r=13#p2818x2824', title: 'gegen SK Norderstedt', text: 2½ }, { url: '?staffel=702&r=14#p2818x2824', title: 'gegen SK Norderstedt', text: '2' }]
+    - 15
+    - '33'
+    - ''
+-
+    - '8.'
+    - { text: 'Möllner SV 2', url: '?mannschaft=2815', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=702&r=17#p2815x2823', title: 'gegen Lübecker SV 9', text: '0' }, { url: '?staffel=702&r=18#p2815x2823', title: 'gegen Lübecker SV 9', text: '0' }]
+    - [{ url: '?staffel=702&r=9#p2815x2819', title: 'gegen SVBad Schwartau 2', text: '1' }, { url: '?staffel=702&r=10#p2815x2819', title: 'gegen SVBad Schwartau 2', text: '2' }]
+    - [{ url: '?staffel=702&r=15#p2815x2822', title: 'gegen Ratzeburger SC', text: 3½ }, { url: '?staffel=702&r=16#p2815x2822', title: 'gegen Ratzeburger SC', text: '2' }]
+    - [{ url: '?staffel=702&r=13#p2815x2821', title: 'gegen SC Barsbüttel', text: '3' }, { url: '?staffel=702&r=14#p2815x2821', title: 'gegen SC Barsbüttel', text: '1' }]
+    - [{ url: '?staffel=702&r=3#p2815x2816', title: 'gegen Lübecker SV 10', text: '0' }, { url: '?staffel=702&r=4#p2815x2816', title: 'gegen Lübecker SV 10', text: '1' }]
+    - [{ url: '?staffel=702&r=5#p2815x2817', title: 'gegen Ahrensburg TSV', text: '0' }, { url: '?staffel=702&r=6#p2815x2817', title: 'gegen Ahrensburg TSV', text: 1½ }]
+    - [{ url: '?staffel=702&r=7#p2815x2818', title: 'gegen TSV Trittau 2', text: ½ }, { url: '?staffel=702&r=8#p2815x2818', title: 'gegen TSV Trittau 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=702&r=11#p2815x2820', title: 'gegen SVBad Schwartau 3', text: '2' }, { url: '?staffel=702&r=12#p2815x2820', title: 'gegen SVBad Schwartau 3', text: 2½ }]
+    - [{ url: '?staffel=702&r=1#p2815x2824', title: 'gegen SK Norderstedt', text: 2½ }, { url: '?staffel=702&r=2#p2815x2824', title: 'gegen SK Norderstedt', text: '4' }]
+    - 14
+    - 28½
+    - ''
+-
+    - '9.'
+    - { text: 'SVBad Schwartau 3', url: '?mannschaft=2820', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=702&r=9#p2820x2823', title: 'gegen Lübecker SV 9', text: '0' }, { url: '?staffel=702&r=10#p2820x2823', title: 'gegen Lübecker SV 9', text: '0' }]
+    - [{ url: '?staffel=702&r=1#p2820x2819', title: 'gegen SVBad Schwartau 2', text: ½ }, { url: '?staffel=702&r=2#p2820x2819', title: 'gegen SVBad Schwartau 2', text: '1' }]
+    - [{ url: '?staffel=702&r=7#p2820x2822', title: 'gegen Ratzeburger SC', text: '0' }, { url: '?staffel=702&r=8#p2820x2822', title: 'gegen Ratzeburger SC', text: 1½ }]
+    - [{ url: '?staffel=702&r=5#p2820x2821', title: 'gegen SC Barsbüttel', text: '2' }, { url: '?staffel=702&r=6#p2820x2821', title: 'gegen SC Barsbüttel', text: '0' }]
+    - [{ url: '?staffel=702&r=13#p2820x2816', title: 'gegen Lübecker SV 10', text: '3' }, { url: '?staffel=702&r=14#p2820x2816', title: 'gegen Lübecker SV 10', text: '3' }]
+    - [{ url: '?staffel=702&r=15#p2820x2817', title: 'gegen Ahrensburg TSV', text: '0' }, { url: '?staffel=702&r=16#p2820x2817', title: 'gegen Ahrensburg TSV', text: '0' }]
+    - [{ url: '?staffel=702&r=17#p2820x2818', title: 'gegen TSV Trittau 2', text: 1½ }, { url: '?staffel=702&r=18#p2820x2818', title: 'gegen TSV Trittau 2', text: 2½ }]
+    - [{ url: '?staffel=702&r=11#p2820x2815', title: 'gegen Möllner SV 2', text: '2' }, { url: '?staffel=702&r=12#p2820x2815', title: 'gegen Möllner SV 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=702&r=3#p2820x2824', title: 'gegen SK Norderstedt', text: '4' }, { url: '?staffel=702&r=4#p2820x2824', title: 'gegen SK Norderstedt', text: '4' }]
+    - 12
+    - 26½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Norderstedt', url: '?mannschaft=2824', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=702&r=15#p2824x2823', title: 'gegen Lübecker SV 9', text: '1' }, { url: '?staffel=702&r=16#p2824x2823', title: 'gegen Lübecker SV 9', text: ½ }]
+    - [{ url: '?staffel=702&r=17#p2824x2819', title: 'gegen SVBad Schwartau 2', text: '0' }, { url: '?staffel=702&r=18#p2824x2819', title: 'gegen SVBad Schwartau 2', text: '0' }]
+    - [{ url: '?staffel=702&r=11#p2824x2822', title: 'gegen Ratzeburger SC', text: '0' }, { url: '?staffel=702&r=12#p2824x2822', title: 'gegen Ratzeburger SC', text: '1' }]
+    - [{ url: '?staffel=702&r=7#p2824x2821', title: 'gegen SC Barsbüttel', text: '0' }, { url: '?staffel=702&r=8#p2824x2821', title: 'gegen SC Barsbüttel', text: '2' }]
+    - [{ url: '?staffel=702&r=5#p2824x2816', title: 'gegen Lübecker SV 10', text: '0' }, { url: '?staffel=702&r=6#p2824x2816', title: 'gegen Lübecker SV 10', text: '0' }]
+    - [{ url: '?staffel=702&r=9#p2824x2817', title: 'gegen Ahrensburg TSV', text: '1' }, { url: '?staffel=702&r=10#p2824x2817', title: 'gegen Ahrensburg TSV', text: '0' }]
+    - [{ url: '?staffel=702&r=13#p2824x2818', title: 'gegen TSV Trittau 2', text: ½ }, { url: '?staffel=702&r=14#p2824x2818', title: 'gegen TSV Trittau 2', text: '1' }]
+    - [{ url: '?staffel=702&r=1#p2824x2815', title: 'gegen Möllner SV 2', text: 1½ }, { url: '?staffel=702&r=2#p2824x2815', title: 'gegen Möllner SV 2', text: '0' }]
+    - [{ url: '?staffel=702&r=3#p2824x2820', title: 'gegen SVBad Schwartau 3', text: '0' }, { url: '?staffel=702&r=4#p2824x2820', title: 'gegen SVBad Schwartau 3', text: '0' }]
+    - xxx
+    - 1
+    - 8½
+    - ''

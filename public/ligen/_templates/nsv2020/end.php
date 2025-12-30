@@ -48,13 +48,13 @@ echo "<h5 class='card-title'>Aufstellungen</h5>";
   <form method="get" action="<?= $globals['basepath'] ?>/">
     <select name="mannschaft" onchange="this.form.submit()" class="form-select">
       <option value="" selected="selected">--- Mannschaft ---</option>
-      <?
+      <?php
         foreach ( $globals ['teams'] as $id=>$name )
           echo "<option value='$id'>$name</option>";
       ?>
     </select>
   </form>
-<?
+<?php
 echo "</div></div>";
 
 // LINKS
@@ -62,7 +62,7 @@ if ( $menu = SED_GetMenue () ) {
   echo "<div class='card shadow nsv-card nsv-sidebar-card'><div class='card-body'>";
   echo "<h5 class='card-title'>Links</h5>";
   echo '<ul class="nav flex-column">';
-  while ( $entry = mysql_fetch_array ( $menu, MYSQL_ASSOC ) ) {
+  foreach ( $menu as $entry ) {
     echo "<li class='nav-item'><a class='nav-link' href='$entry[url]' ". ( "$entry[neuesfenster]" ? "target='_blank'" : "" ) . ">$entry[titel]</a></li>";
   }
   echo "</ul></div></div>";
@@ -97,7 +97,7 @@ else:
   ?>
   <form action="<?=$globals['basepath']?>/?admin=login" method="post"><div>
     <div class="form-group"><select class="form-select" name="benutzer">
-      <?
+      <?php
         $benutzer = isset ( $_GET ['staffel'] ) ? $_GET ['staffel'] : ""; // nur über tinyurl möglich
         echo "<option value='t-$globals[tid]'>Turnierleiter:in</option>";
         foreach ( $globals ['staffeln'] as $id=>$name ){

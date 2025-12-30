@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamburger SK', url: '?mannschaft=2122', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=604&r=1#p2122x2123', title: 'gegen Königsspr. HH', text: 3½ }]
+    - [{ url: '?staffel=604&r=5#p2122x2118', title: 'gegen SV Bargteheide', text: 5½ }]
+    - [{ url: '?staffel=604&r=7#p2122x2117', title: 'gegen Hagener SV', text: '4' }]
+    - [{ url: '?staffel=604&r=2#p2122x2125', title: 'gegen Nordhorn-Blanke', text: '5' }]
+    - [{ url: '?staffel=604&r=9#p2122x2124', title: 'gegen Joha. Eppendorf', text: 4½ }]
+    - [{ url: '?staffel=604&r=4#p2122x2115', title: 'gegen SK Marmstorf GW', text: '5' }]
+    - [{ url: '?staffel=604&r=8#p2122x2120', title: 'gegen SV Werder Bremen', text: '4' }]
+    - [{ url: '?staffel=604&r=3#p2122x2113', title: 'gegen SF Burg von 196', text: 5½ }]
+    - [{ url: '?staffel=604&r=6#p2122x2121', title: 'gegen SF Bremer Osten', text: 5½ }]
+    - 18
+    - 42½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Königsspr. HH', url: '?mannschaft=2123', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=604&r=1#p2123x2122', title: 'gegen Hamburger SK', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=604&r=6#p2123x2118', title: 'gegen SV Bargteheide', text: 3½ }]
+    - [{ url: '?staffel=604&r=3#p2123x2117', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=604&r=7#p2123x2125', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=604&r=5#p2123x2124', title: 'gegen Joha. Eppendorf', text: '5' }]
+    - [{ url: '?staffel=604&r=9#p2123x2115', title: 'gegen SK Marmstorf GW', text: 5½ }]
+    - [{ url: '?staffel=604&r=4#p2123x2120', title: 'gegen SV Werder Bremen', text: '5' }]
+    - [{ url: '?staffel=604&r=8#p2123x2113', title: 'gegen SF Burg von 196', text: 5½ }]
+    - [{ url: '?staffel=604&r=2#p2123x2121', title: 'gegen SF Bremer Osten', text: '6' }]
+    - 15
+    - 39½
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SV Bargteheide', url: '?mannschaft=2118', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=604&r=5#p2118x2122', title: 'gegen Hamburger SK', text: ½ }]
+    - [{ url: '?staffel=604&r=6#p2118x2123', title: 'gegen Königsspr. HH', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=604&r=9#p2118x2117', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=604&r=8#p2118x2125', title: 'gegen Nordhorn-Blanke', text: 4½ }]
+    - [{ url: '?staffel=604&r=4#p2118x2124', title: 'gegen Joha. Eppendorf', text: '6' }]
+    - [{ url: '?staffel=604&r=3#p2118x2115', title: 'gegen SK Marmstorf GW', text: '4' }]
+    - [{ url: '?staffel=604&r=2#p2118x2120', title: 'gegen SV Werder Bremen', text: '5' }]
+    - [{ url: '?staffel=604&r=1#p2118x2113', title: 'gegen SF Burg von 196', text: '5' }]
+    - [{ url: '?staffel=604&r=7#p2118x2121', title: 'gegen SF Bremer Osten', text: '5' }]
+    - 14
+    - '36'
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV', url: '?mannschaft=2117', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=604&r=7#p2117x2122', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=604&r=3#p2117x2123', title: 'gegen Königsspr. HH', text: 2½ }]
+    - [{ url: '?staffel=604&r=9#p2117x2118', title: 'gegen SV Bargteheide', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=604&r=4#p2117x2125', title: 'gegen Nordhorn-Blanke', text: 4½ }]
+    - [{ url: '?staffel=604&r=2#p2117x2124', title: 'gegen Joha. Eppendorf', text: '5' }]
+    - [{ url: '?staffel=604&r=6#p2117x2115', title: 'gegen SK Marmstorf GW', text: 3½ }]
+    - [{ url: '?staffel=604&r=1#p2117x2120', title: 'gegen SV Werder Bremen', text: '6' }]
+    - [{ url: '?staffel=604&r=5#p2117x2113', title: 'gegen SF Burg von 196', text: '5' }]
+    - [{ url: '?staffel=604&r=8#p2117x2121', title: 'gegen SF Bremer Osten', text: '6' }]
+    - 12
+    - '37'
+    - ''
+-
+    - '5.'
+    - { text: Nordhorn-Blanke, url: '?mannschaft=2125', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=604&r=2#p2125x2122', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=604&r=7#p2125x2123', title: 'gegen Königsspr. HH', text: '3' }]
+    - [{ url: '?staffel=604&r=8#p2125x2118', title: 'gegen SV Bargteheide', text: 1½ }]
+    - [{ url: '?staffel=604&r=4#p2125x2117', title: 'gegen Hagener SV', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=604&r=6#p2125x2124', title: 'gegen Joha. Eppendorf', text: '4' }]
+    - [{ url: '?staffel=604&r=1#p2125x2115', title: 'gegen SK Marmstorf GW', text: 1½ }]
+    - [{ url: '?staffel=604&r=5#p2125x2120', title: 'gegen SV Werder Bremen', text: 4½ }]
+    - [{ url: '?staffel=604&r=9#p2125x2113', title: 'gegen SF Burg von 196', text: '4' }]
+    - [{ url: '?staffel=604&r=3#p2125x2121', title: 'gegen SF Bremer Osten', text: '5' }]
+    - 9
+    - '26'
+    - ''
+-
+    - '6.'
+    - { text: 'Joha. Eppendorf', url: '?mannschaft=2124', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=604&r=9#p2124x2122', title: 'gegen Hamburger SK', text: 1½ }]
+    - [{ url: '?staffel=604&r=5#p2124x2123', title: 'gegen Königsspr. HH', text: '1' }]
+    - [{ url: '?staffel=604&r=4#p2124x2118', title: 'gegen SV Bargteheide', text: '0' }]
+    - [{ url: '?staffel=604&r=2#p2124x2117', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=604&r=6#p2124x2125', title: 'gegen Nordhorn-Blanke', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=604&r=8#p2124x2115', title: 'gegen SK Marmstorf GW', text: '4' }]
+    - [{ url: '?staffel=604&r=3#p2124x2120', title: 'gegen SV Werder Bremen', text: '3' }]
+    - [{ url: '?staffel=604&r=7#p2124x2113', title: 'gegen SF Burg von 196', text: 3½ }]
+    - [{ url: '?staffel=604&r=1#p2124x2121', title: 'gegen SF Bremer Osten', text: 4½ }]
+    - 7
+    - 20½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Marmstorf GW', url: '?mannschaft=2115', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=604&r=4#p2115x2122', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=604&r=9#p2115x2123', title: 'gegen Königsspr. HH', text: ½ }]
+    - [{ url: '?staffel=604&r=3#p2115x2118', title: 'gegen SV Bargteheide', text: '2' }]
+    - [{ url: '?staffel=604&r=6#p2115x2117', title: 'gegen Hagener SV', text: 2½ }]
+    - [{ url: '?staffel=604&r=1#p2115x2125', title: 'gegen Nordhorn-Blanke', text: 4½ }]
+    - [{ url: '?staffel=604&r=8#p2115x2124', title: 'gegen Joha. Eppendorf', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=604&r=7#p2115x2120', title: 'gegen SV Werder Bremen', text: 4½ }]
+    - [{ url: '?staffel=604&r=2#p2115x2113', title: 'gegen SF Burg von 196', text: 2½ }]
+    - [{ url: '?staffel=604&r=5#p2115x2121', title: 'gegen SF Bremer Osten', text: 3½ }]
+    - 6
+    - '23'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SV Werder Bremen', url: '?mannschaft=2120', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=604&r=8#p2120x2122', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=604&r=4#p2120x2123', title: 'gegen Königsspr. HH', text: '1' }]
+    - [{ url: '?staffel=604&r=2#p2120x2118', title: 'gegen SV Bargteheide', text: '1' }]
+    - [{ url: '?staffel=604&r=1#p2120x2117', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=604&r=5#p2120x2125', title: 'gegen Nordhorn-Blanke', text: 1½ }]
+    - [{ url: '?staffel=604&r=3#p2120x2124', title: 'gegen Joha. Eppendorf', text: '3' }]
+    - [{ url: '?staffel=604&r=7#p2120x2115', title: 'gegen SK Marmstorf GW', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=604&r=6#p2120x2113', title: 'gegen SF Burg von 196', text: 3½ }]
+    - [{ url: '?staffel=604&r=9#p2120x2121', title: 'gegen SF Bremer Osten', text: 4½ }]
+    - 5
+    - '18'
+    - absteiger
+-
+    - '9.'
+    - { text: 'SF Burg von 196', url: '?mannschaft=2113', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=604&r=3#p2113x2122', title: 'gegen Hamburger SK', text: ½ }]
+    - [{ url: '?staffel=604&r=8#p2113x2123', title: 'gegen Königsspr. HH', text: ½ }]
+    - [{ url: '?staffel=604&r=1#p2113x2118', title: 'gegen SV Bargteheide', text: '1' }]
+    - [{ url: '?staffel=604&r=5#p2113x2117', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=604&r=9#p2113x2125', title: 'gegen Nordhorn-Blanke', text: '2' }]
+    - [{ url: '?staffel=604&r=7#p2113x2124', title: 'gegen Joha. Eppendorf', text: 2½ }]
+    - [{ url: '?staffel=604&r=2#p2113x2115', title: 'gegen SK Marmstorf GW', text: 3½ }]
+    - [{ url: '?staffel=604&r=6#p2113x2120', title: 'gegen SV Werder Bremen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=604&r=4#p2113x2121', title: 'gegen SF Bremer Osten', text: '4' }]
+    - 4
+    - 17½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SF Bremer Osten', url: '?mannschaft=2121', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=604&r=6#p2121x2122', title: 'gegen Hamburger SK', text: ½ }]
+    - [{ url: '?staffel=604&r=2#p2121x2123', title: 'gegen Königsspr. HH', text: '0' }]
+    - [{ url: '?staffel=604&r=7#p2121x2118', title: 'gegen SV Bargteheide', text: '1' }]
+    - [{ url: '?staffel=604&r=8#p2121x2117', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=604&r=3#p2121x2125', title: 'gegen Nordhorn-Blanke', text: '1' }]
+    - [{ url: '?staffel=604&r=1#p2121x2124', title: 'gegen Joha. Eppendorf', text: 1½ }]
+    - [{ url: '?staffel=604&r=5#p2121x2115', title: 'gegen SK Marmstorf GW', text: 2½ }]
+    - [{ url: '?staffel=604&r=9#p2121x2120', title: 'gegen SV Werder Bremen', text: 1½ }]
+    - [{ url: '?staffel=604&r=4#p2121x2113', title: 'gegen SF Burg von 196', text: '2' }]
+    - xxx
+    - 0
+    - '10'
+    - absteiger

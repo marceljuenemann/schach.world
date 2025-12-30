@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SVG Salzgitter e. V. 3', url: '?mannschaft=8101', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1839&r=7#p8101x8103', title: 'gegen KS Braunschweig 2', text: '2' }]
+    - [{ url: '?staffel=1839&r=2#p8101x8086', title: 'gegen SC BS Gliesmarode 7', text: '3' }]
+    - [{ url: '?staffel=1839&r=4#p8101x8077', title: 'gegen Roch. Braunschweig 2', text: 2½ }]
+    - [{ url: '?staffel=1839&r=1#p8101x8106', title: 'gegen SG Elmrochade 3', text: 2½ }]
+    - [{ url: '?staffel=1839&r=5#p8101x8081', title: 'gegen SG Gifhorn-Wolfsburg 6', text: '4' }]
+    - [{ url: '?staffel=1839&r=3#p8101x8096', title: 'gegen SV Cai. Wolfenbüttel 3', text: '4' }]
+    - [{ url: '?staffel=1839&r=6#p8101x8075', title: 'gegen Braunschw. SF 2', text: '4' }]
+    - 13
+    - '22'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'KS Braunschweig 2', url: '?mannschaft=8103', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1839&r=7#p8103x8101', title: 'gegen SVG Salzgitter e. V. 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1839&r=1#p8103x8086', title: 'gegen SC BS Gliesmarode 7', text: 2½ }]
+    - [{ url: '?staffel=1839&r=3#p8103x8077', title: 'gegen Roch. Braunschweig 2', text: '2' }]
+    - [{ url: '?staffel=1839&r=6#p8103x8106', title: 'gegen SG Elmrochade 3', text: '1' }]
+    - [{ url: '?staffel=1839&r=4#p8103x8081', title: 'gegen SG Gifhorn-Wolfsburg 6', text: '3' }]
+    - [{ url: '?staffel=1839&r=2#p8103x8096', title: 'gegen SV Cai. Wolfenbüttel 3', text: '4' }]
+    - [{ url: '?staffel=1839&r=5#p8103x8075', title: 'gegen Braunschw. SF 2', text: '4' }]
+    - 10
+    - 18½
+    - ''
+-
+    - '3.'
+    - { text: 'SC BS Gliesmarode 7', url: '?mannschaft=8086', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1839&r=2#p8086x8101', title: 'gegen SVG Salzgitter e. V. 3', text: '1' }]
+    - [{ url: '?staffel=1839&r=1#p8086x8103', title: 'gegen KS Braunschweig 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1839&r=5#p8086x8077', title: 'gegen Roch. Braunschweig 2', text: '2' }]
+    - [{ url: '?staffel=1839&r=3#p8086x8106', title: 'gegen SG Elmrochade 3', text: '3' }]
+    - [{ url: '?staffel=1839&r=6#p8086x8081', title: 'gegen SG Gifhorn-Wolfsburg 6', text: '3' }]
+    - [{ url: '?staffel=1839&r=4#p8086x8096', title: 'gegen SV Cai. Wolfenbüttel 3', text: '4' }]
+    - [{ url: '?staffel=1839&r=7#p8086x8075', title: 'gegen Braunschw. SF 2', text: '4' }]
+    - 9
+    - 18½
+    - ''
+-
+    - '4.'
+    - { text: 'Roch. Braunschweig 2', url: '?mannschaft=8077', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1839&r=4#p8077x8101', title: 'gegen SVG Salzgitter e. V. 3', text: 1½ }]
+    - [{ url: '?staffel=1839&r=3#p8077x8103', title: 'gegen KS Braunschweig 2', text: '2' }]
+    - [{ url: '?staffel=1839&r=5#p8077x8086', title: 'gegen SC BS Gliesmarode 7', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1839&r=7#p8077x8106', title: 'gegen SG Elmrochade 3', text: '2' }]
+    - [{ url: '?staffel=1839&r=1#p8077x8081', title: 'gegen SG Gifhorn-Wolfsburg 6', text: '3' }]
+    - [{ url: '?staffel=1839&r=6#p8077x8096', title: 'gegen SV Cai. Wolfenbüttel 3', text: '4' }]
+    - [{ url: '?staffel=1839&r=2#p8077x8075', title: 'gegen Braunschw. SF 2', text: '4' }]
+    - 9
+    - 18½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Elmrochade 3', url: '?mannschaft=8106', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1839&r=1#p8106x8101', title: 'gegen SVG Salzgitter e. V. 3', text: 1½ }]
+    - [{ url: '?staffel=1839&r=6#p8106x8103', title: 'gegen KS Braunschweig 2', text: '3' }]
+    - [{ url: '?staffel=1839&r=3#p8106x8086', title: 'gegen SC BS Gliesmarode 7', text: '1' }]
+    - [{ url: '?staffel=1839&r=7#p8106x8077', title: 'gegen Roch. Braunschweig 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1839&r=2#p8106x8081', title: 'gegen SG Gifhorn-Wolfsburg 6', text: '3' }]
+    - [{ url: '?staffel=1839&r=5#p8106x8096', title: 'gegen SV Cai. Wolfenbüttel 3', text: '4' }]
+    - [{ url: '?staffel=1839&r=4#p8106x8075', title: 'gegen Braunschw. SF 2', text: '4' }]
+    - 9
+    - 18½
+    - ''
+-
+    - '6.'
+    - { text: 'SG Gifhorn-Wolfsburg 6', url: '?mannschaft=8081', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1839&r=5#p8081x8101', title: 'gegen SVG Salzgitter e. V. 3', text: '0' }]
+    - [{ url: '?staffel=1839&r=4#p8081x8103', title: 'gegen KS Braunschweig 2', text: '1' }]
+    - [{ url: '?staffel=1839&r=6#p8081x8086', title: 'gegen SC BS Gliesmarode 7', text: '1' }]
+    - [{ url: '?staffel=1839&r=1#p8081x8077', title: 'gegen Roch. Braunschweig 2', text: '1' }]
+    - [{ url: '?staffel=1839&r=2#p8081x8106', title: 'gegen SG Elmrochade 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1839&r=7#p8081x8096', title: 'gegen SV Cai. Wolfenbüttel 3', text: '4' }]
+    - [{ url: '?staffel=1839&r=3#p8081x8075', title: 'gegen Braunschw. SF 2', text: '4' }]
+    - 4
+    - '12'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Cai. Wolfenbüttel 3', url: '?mannschaft=8096', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1839&r=3#p8096x8101', title: 'gegen SVG Salzgitter e. V. 3', text: '0' }]
+    - [{ url: '?staffel=1839&r=2#p8096x8103', title: 'gegen KS Braunschweig 2', text: '0' }]
+    - [{ url: '?staffel=1839&r=4#p8096x8086', title: 'gegen SC BS Gliesmarode 7', text: '0' }]
+    - [{ url: '?staffel=1839&r=6#p8096x8077', title: 'gegen Roch. Braunschweig 2', text: '0' }]
+    - [{ url: '?staffel=1839&r=5#p8096x8106', title: 'gegen SG Elmrochade 3', text: '0' }]
+    - [{ url: '?staffel=1839&r=7#p8096x8081', title: 'gegen SG Gifhorn-Wolfsburg 6', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1839&r=1#p8096x8075', title: 'gegen Braunschw. SF 2', text: '0' }]
+    - 0
+    - '0'
+    - ''
+-
+    - '8.'
+    - { text: 'Braunschw. SF 2', url: '?mannschaft=8075', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1839&r=6#p8075x8101', title: 'gegen SVG Salzgitter e. V. 3', text: '0' }]
+    - [{ url: '?staffel=1839&r=5#p8075x8103', title: 'gegen KS Braunschweig 2', text: '0' }]
+    - [{ url: '?staffel=1839&r=7#p8075x8086', title: 'gegen SC BS Gliesmarode 7', text: '0' }]
+    - [{ url: '?staffel=1839&r=2#p8075x8077', title: 'gegen Roch. Braunschweig 2', text: '0' }]
+    - [{ url: '?staffel=1839&r=4#p8075x8106', title: 'gegen SG Elmrochade 3', text: '0' }]
+    - [{ url: '?staffel=1839&r=3#p8075x8081', title: 'gegen SG Gifhorn-Wolfsburg 6', text: '0' }]
+    - [{ url: '?staffel=1839&r=1#p8075x8096', title: 'gegen SV Cai. Wolfenbüttel 3', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''
