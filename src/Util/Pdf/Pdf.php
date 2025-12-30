@@ -22,6 +22,7 @@ class Pdf extends \FPDF /*Fpdf*/ {
     $this->AddPage();
     $this->SetFont('helvetica', '', 10);
     $this->lineHeight = 4.5;
+    $this->SetFillColor(222, 222, 222);  // Gray default fill colour.
 
     /*
     $pdf->SetAutoPageBreak(true, 15);
@@ -52,7 +53,7 @@ class Pdf extends \FPDF /*Fpdf*/ {
     $prevLineHeight = $this->lineHeight;
 
     $this->SetFont($family ?: $prevFamily, $style ?: $prevStyle, $size ?: $prevSize);
-    $this->lineHeight *= ((float) $size) / $prevSize;
+    $this->lineHeight *= ((float) $size ?: $prevSize) / $prevSize;
     $result = $callback();
 
     $this->SetFont($prevFamily, $prevStyle, $prevSize);
@@ -71,7 +72,11 @@ class Pdf extends \FPDF /*Fpdf*/ {
   public function render(Element $element) {
     $element->render($this);
   }
-  
+
+  public function Ln($height = null) {
+    parent::Ln($height ?: $this->lineHeight);
+  }
+ 
   public function asResponse(string $filename, bool $isUtf8 = true): Response {
     //$body = $this->Output('S', $filename, $isUtf8);
     $body = $this->Output($filename, 'S');
@@ -101,7 +106,7 @@ class Pdf extends \FPDF /*Fpdf*/ {
 
     // Logik, damit alles auf eine Seite passt
     // tmp = (fontsize,lineheight,kreuztabelle)
-    $linecount = count ( $data ['paarungen'] ) * ( SED_GetBrettzahl ( $_GET ['staffel'] ) + 2 );
+    $linecount = count ( [] $data ['paarungen'] ) * ( SED_GetBrettzahl ( $_GET ['staffel'] ) + 2 );
         if ( $linecount <= 32 )      $tmp = array ( 10,5,1 );
         elseif ( $linecount <= 40 )  $tmp = array ( 10,4.5,1 );
         elseif ( $linecount <= 50 )  $tmp = array ( 10,4,1 );

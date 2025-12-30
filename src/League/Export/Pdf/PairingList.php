@@ -8,6 +8,7 @@ use Nsv\League\Api\Model\Pairing;
 use Nsv\Util\Pdf\Cell;
 use Nsv\Util\Pdf\Element;
 use Nsv\Util\Pdf\Pdf;
+use Nsv\Util\Pdf\Row;
 use Nsv\Util\Pdf\Table;
 use Nsv\Util\Pdf\TableCell;
 
@@ -56,32 +57,39 @@ class PairingList implements Element {
   }
 
   private function renderHeader(Pdf $pdf, Pairing $pairing) {
-    // TODO: Render as a Row.
     // TODO: Handle comments
 
-    /*
+    $row = new Row();
+
     $cell = new Cell();
     $cell->text = $pairing->team1->name;
     $cell->border = 'LTB';
+    $cell->fontStyle = 'B';
+    $cell->fill = 1;
     // TODO: URI
-    $row[] = new TableCell($cell, 2);
-
-    $cell = new Cell($this->pdf);
+    $row->addCell($cell);
+    
+    $cell = new Cell();
     $cell->text = $pairing->result ?: ':';
     $cell->border = 'TB';
     $cell->align = 'C';
+    $cell->fontStyle = 'B';
+ //   $cell->fill = 1;
     // TODO: URI
-    $row[] = new TableCell($cell, 3);
+    $row->addCell($cell);
  
-    $cell = new Cell($this->pdf);
+    $cell = new Cell();
     $cell->text = $pairing->team2->name;
     $cell->border = 'TBR';
     $cell->align = 'R';
+    $cell->fontStyle = 'B';
+//    $cell->fill = 1;
     // TODO: URI
-    $row[] = new TableCell($cell, 2);
-    */
+    $row->addCell($cell);
 
-    //return $row;
+    $row->layout($pdf);
+    $pdf->render($row);
+    $pdf->Ln();
   }
 
     /*

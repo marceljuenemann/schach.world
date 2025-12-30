@@ -27,12 +27,11 @@ class Cell implements Element {
   public ?float $height = null;
 
   /**
-   * The width of the cell. If null, the cell is expanded all the way to the right margin.
+   * The width of the cell. If set to zero, all available horizontal space will be used.
    */
-  // TODO: Support null
   // TODO: Support dynamic?
   // TODO: Maybe different Cell subclasses?
-  public ?float $width = null;
+  public float $width = 0;
 
   /**
    * Which border to draw, e.g. "LR" for left and right or 1 for all borders.
@@ -51,11 +50,9 @@ class Cell implements Element {
 
   public function render(Pdf $pdf) {
     $pdf->withFont(null, $this->fontStyle, $this->fontSize, function () use ($pdf) {
-      $ln = 0;     // always use Ln() for line breaks.
       $lh = $this->height ?: $pdf->lineHeight;
       $pdf->Cell($this->width, $lh, $this->text, $this->border,
-        $ln, $this->align, $this->fill, $this->link);
-      $pdf->Ln();
+        $lh, $this->align, $this->fill, $this->link);
     });
   }
 }
