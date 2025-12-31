@@ -50,8 +50,6 @@ class PairingList implements Element {
     $cell = new Cell();
     $cell->text = $pairing->team1->name;
     $cell->border = 'LTB';
-    $cell->fontStyle = 'B';
-    $cell->fill = true;
     // TODO: URI
     $row->addCell($cell);
     
@@ -59,8 +57,6 @@ class PairingList implements Element {
     $cell->text = $pairing->result ?: ':';
     $cell->border = 'TB';
     $cell->align = 'C';
-    $cell->fontStyle = 'B';
-    $cell->fill = true;
     $cell->width = self::WIDTH_RESULT * 2;  // Headline may take up some more space.
     // TODO: URI
     $row->addCell($cell);
@@ -69,12 +65,12 @@ class PairingList implements Element {
     $cell->text = $pairing->team2->name;
     $cell->border = 'TBR';
     $cell->align = 'R';
-    $cell->fontStyle = 'B';
-    $cell->fill = true;
     // TODO: URI
     $row->addCell($cell);
 
     $row->setHeight($pdf->lineHeight * 1.1);
+    $row->setFill(true);
+    $row->setStyle('B');
     $row->layout($pdf);
     $pdf->render($row);
   }

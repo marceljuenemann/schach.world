@@ -22,7 +22,6 @@ class Pdf extends \FPDF /*Fpdf*/ {
     $this->AddPage();
     $this->SetFont('helvetica', '', 9);
     $this->lineHeight = 4;
-    $this->SetFillColor(222, 222, 222);  // Gray default fill colour.
 
     /*
     $pdf->SetAutoPageBreak(true, 15);

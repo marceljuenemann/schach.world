@@ -2,6 +2,8 @@
 
 namespace Nsv\Util\Pdf;
 
+const DEFAULT_FILL_COLOR = [222, 222, 222];
+
 /**
  * Outputs a single cell, the basic building block of PDFs.
  * 
@@ -42,6 +44,11 @@ class Cell implements Element {
   public string|int $border = 0;
 
   /**
+   * Margin to the right of the cell.
+   */
+  public float $marginRight = 0;
+
+  /**
    * Text alignment. Set to 'C' or 'R' to align the text in the center or to the right. 
    */
   public string $align = '';
@@ -56,9 +63,16 @@ class Cell implements Element {
 
   public function render(Pdf $pdf) {
     $pdf->withFont(null, $this->fontStyle, $this->fontSize, function () use ($pdf) {
+      if ($this->fill === true) {
+        $this->fill = DEFAULT_FILL_COLOR;
+      }
+      if (is_array($this->fill)) {
+        [$r, $g, $b] = $this->fill;
+        $pdf->SetFillColor($r, $g, $b);
+      }
       $lh = $this->height ?: $pdf->lineHeight;
       $pdf->Cell($this->width, $lh, $this->text, $this->border,
-        $lh, $this->align, $this->fill, $this->link);
+        $lh, $this->align, (bool) $this->fill, $this->link);
     });
   }
 }

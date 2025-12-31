@@ -13,14 +13,17 @@ use Nsv\Util\Pdf\TableRow;
 /**
  * Ranking pdf element.
  * 
- * TODO: fill color
- * TODO: bold headings
  * TODO: equal column widths for results
- * TODO: thick border
- * TODO: decide whether to render full table dynamically
  */
 class Ranking implements Element {
+  private const FILL_COLOURS = [
+    "aufsteiger" => [197, 255, 161],
+    "absteiger" => [255, 209, 207],
+    "aufsteigerRelegation" => [255, 248, 171],
+    "absteigerRelegation" => [255, 233, 184]
+  ];
 
+  private Row $header;
   private Table $table;
 
   public function __construct(array $legacyRanking) {
@@ -29,32 +32,53 @@ class Ranking implements Element {
 
   private static function createTable(array $legacyRanking) {
     $table = new Table();
-    foreach ($legacyRanking as $row) {
-      $table->addRow(Ranking::createTableRow($row));
+    $first = true;
+    foreach ($legacyRanking as $rowData) {
+      if ($first) {
+        $row = Ranking::createTableRow($rowData);
+        $row->setFill(true);
+        $row->setStyle('B');
+        $row->marginBottom = .2;  // Slightly thicker border below header.
+        $row->cell(1)->align = 'C';  // Team name left aligned.
+        $table->addRow($row);
+        $first = false;
+      } else {
+        $row = Ranking::createTableRow(array_slice($rowData, 0, -1));
+        $colour = $rowData[count($rowData) - 1];
+        if (isset(Ranking::FILL_COLOURS[$colour])) {
+          $row->cell(0)->fill = Ranking::FILL_COLOURS[$colour];
+        }
+        $table->addRow($row);
+      }
     }
+    // Add slightly thicker border.
+    $table->setColumnSpacing(1, .2);
+    $table->setColumnSpacing($table->columnCount() - 3, .2);
     return $table;
   }
 
   private static function createTableRow(array $cells): Row {
     $row = new Row();
     foreach ($cells as $cellData) {
+      $cell = new Cell();
       if (is_array($cellData)) {
         if (isset($cellData['text'])) {
-          $text = str_replace('xxx', '', $cellData['text']);
+          $cell->text = $cellData['text'];
         } else {
-          $text = implode(', ', array_map(function ($data) {
+          $cell->text = implode(', ', array_map(function ($data) {
             return $data['text'];
           }, $cellData));
         }
+      } else if ($cellData === 'xxx') {
+        $cell->fill = true;
       } else {
-        $text = str_replace('xxx', '', $cellData);
+        $cell->text = $cellData;
       }
-      $cell = new Cell();
-      $cell->text = $text;
       $cell->border = 1;
       $cell->align = 'C';
       $row->addCell($cell);
     }
+    $row->cell(1)->align = 'L';  // Team name left aligned.
     return $row;
   }
 
@@ -62,6 +86,10 @@ class Ranking implements Element {
    * Calculates widths for all cells.
    */
   public function layout(Pdf $pdf) {
+    $this->header = $this->table->row(0);
+    $this->header->setHeight($pdf->lineHeight * 1.1);
+
+    $this->table->cellPadding = 3;
     $this->table->layout($pdf);
     /*
     $teamCount = $this->table->rowCount() - 1;

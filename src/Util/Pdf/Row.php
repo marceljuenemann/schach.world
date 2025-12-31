@@ -10,8 +10,18 @@ class Row implements Element, \IteratorAggregate {
 
   private $cells = [];
 
+  public float $marginBottom = 0;
+
   public function addCell(Cell $cell) {
     $this->cells[] = $cell;
+  }
+
+  public function cell(int $index): Cell {
+    return $this->cells[$index];
+  }
+
+  public function length(): int {
+    return count($this->cells);
   }
 
   public function getIterator(): \Traversable {
@@ -24,6 +34,24 @@ class Row implements Element, \IteratorAggregate {
   public function setHeight(float $height) {
     foreach ($this->cells as $cell) {
       $cell->height = $height;
+    }
+  }
+
+  /**
+   * Sets the fill property of all cells in the row.
+   */
+  public function setFill(bool | array $fill) {
+    foreach ($this->cells as $cell) {
+      $cell->fill = $fill;
+    }
+  }
+
+  /**
+   * Sets the font style of all cells in the row.
+   */
+  public function setStyle(string $fontStyle) {
+    foreach ($this->cells as $cell) {
+      $cell->fontStyle = $fontStyle;
     }
   }
 
@@ -66,9 +94,9 @@ class Row implements Element, \IteratorAggregate {
       } else {
         $maxY = max($pdf->y, $maxY);
       }
-      $pdf->x += $cell->width;
+      $pdf->x += $cell->width + $cell->marginRight;
       $pdf->y = $y;
     }
-    $pdf->SetXY($pdf->lMargin, $maxY);
+    $pdf->SetXY($pdf->lMargin, $maxY + $this->marginBottom);
   }
 }
