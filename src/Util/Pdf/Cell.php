@@ -3,7 +3,10 @@
 namespace Nsv\Util\Pdf;
 
 /**
- * Cells are the basic building blocks for PDFs.
+ * Outputs a single cell, the basic building block of PDFs.
+ * 
+ * The "cursor" will be set to the next row, i.e. $pdf->x will remain the same
+ * after rendering, with $pdf->y being increased by the height of the cell. 
  */
 class Cell implements Element {
 
@@ -45,8 +48,11 @@ class Cell implements Element {
 
   /**
    * Whether to fill the background of the cell.
+   * 
+   * If set to true, the default fill color will be used. If set to an array,
+   * it should contain RGB values.
    */
-  public bool $fill = false;  // TODO: optional color
+  public bool | array $fill = false;  // TODO: support RGB
 
   public function render(Pdf $pdf) {
     $pdf->withFont(null, $this->fontStyle, $this->fontSize, function () use ($pdf) {

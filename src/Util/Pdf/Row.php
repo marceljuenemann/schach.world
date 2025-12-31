@@ -15,11 +15,20 @@ class Row implements Element {
   }
 
   /**
+   * Sets the height of all cells in the row.
+   */
+  public function setHeight(float $height) {
+    foreach ($this->cells as $cell) {
+      $cell->height = $height;
+    }
+  }
+
+  /**
    * Cells with no width set will be assigned a width such that
    * all available horizontal space is distributed equally to the cells.
    */
   public function layout(Pdf $pdf) {
-    $availableWidth = $pdf->rMargin - $pdf->x;
+    $availableWidth = $pdf->w - $pdf->rMargin - $pdf->x;
     $cellsToGrow = [];
     foreach ($this->cells as $cell) {
       if ($cell->width) {
@@ -29,9 +38,11 @@ class Row implements Element {
       }
     }
 
-    $width = (float) $availableWidth / count($cellsToGrow);
-    foreach ($cellsToGrow as $cell) {
-      $cell->width = $width;
+    if (count($cellsToGrow)) {
+      $width = (float) $availableWidth / count($cellsToGrow);
+      foreach ($cellsToGrow as $cell) {
+        $cell->width = $width;
+      }
     }
   }
 
@@ -39,9 +50,10 @@ class Row implements Element {
     $y = $pdf->y;
     $maxY = $y;
     foreach ($this->cells as $cell) {
-      $pdf->y = $y;
       $cell->render($pdf);
       $maxY = max($pdf->y, $maxY);
+      $pdf->x += $cell->width;
+      $pdf->y = $y;
     }
     $pdf->SetXY($pdf->lMargin, $maxY);
   }

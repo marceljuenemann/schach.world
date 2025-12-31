@@ -16,48 +16,34 @@ use Nsv\Util\Pdf\TableCell;
  * PDF element displaying pairings.
  * 
  * TODO: Link
- * TODO: Background
- * TODO: Bold
- * TODO: Expand
  * TODO: kampflos
  * TODO: verlegt
- * TODO: pass nr
  * TODO: pass nr based on setting
  * TODO: resize columns if needed
  */
 class PairingList implements Element {
 
+  const WIDTH_PLAYER_NUMBER = 10;
+  const WIDTH_PLAYER_RATING = 15;
+  const WIDTH_RESULT = 15;
+
   public function __construct(private MatchDay $matchDay) {}
-
-  /*
-  private Table $table;
-
-  public function __construct(Pdf $pdf, private MatchDay $matchDay) {
-    $this->table = new Table($pdf);
-    foreach ($matchDay->pairings as $pairing) {
-      $this->addPairing($pairing);
-    }
-  }
-
-  private function addPairing(Pairing $pairing) {
-    $this->table->addRow($this->pairingHeader($pairing));
-    if (isset($pairing->games)) {
-      foreach ($pairing->games as $game) {
-        $this->table->addRow($this->gameRow($game));
-      }
-    }
-    $this->table->addRow($this->emptyRow());
-  }
-    */
 
   public function render(Pdf $pdf) {
     foreach ($this->matchDay->pairings as $pairing) {
       $this->renderHeader($pdf, $pairing);
+      if (isset($pairing->games)) {
+        foreach ($pairing->games as $game) {
+          $this->renderGame($pdf, $game);
+        }
+      }
+      $pdf->Ln();
     }
   }
 
   private function renderHeader(Pdf $pdf, Pairing $pairing) {
     // TODO: Handle comments
+    // TODO: Maybe slightly larger line height
 
     $row = new Row();
 
@@ -65,7 +51,7 @@ class PairingList implements Element {
     $cell->text = $pairing->team1->name;
     $cell->border = 'LTB';
     $cell->fontStyle = 'B';
-    $cell->fill = 1;
+    $cell->fill = true;
     // TODO: URI
     $row->addCell($cell);
     
@@ -74,7 +60,8 @@ class PairingList implements Element {
     $cell->border = 'TB';
     $cell->align = 'C';
     $cell->fontStyle = 'B';
- //   $cell->fill = 1;
+    $cell->fill = true;
+    $cell->width = self::WIDTH_RESULT * 2;  // Headline may take up some more space.
     // TODO: URI
     $row->addCell($cell);
  
@@ -83,91 +70,79 @@ class PairingList implements Element {
     $cell->border = 'TBR';
     $cell->align = 'R';
     $cell->fontStyle = 'B';
-//    $cell->fill = 1;
+    $cell->fill = true;
     // TODO: URI
     $row->addCell($cell);
 
+    $row->setHeight($pdf->lineHeight * 1.1);
     $row->layout($pdf);
     $pdf->render($row);
-    $pdf->Ln();
   }
 
-    /*
+  private function renderGame(Pdf $pdf, Game $game) {
+    $row = new Row();
 
-  private function gameRow(Game $game): array {
     // Player number.
-    $cell = new Cell($this->pdf);
+    $cell = new Cell();
     $cell->text = $game->player1 ? $game->player1->number : '';
     $cell->border = 1;
     $cell->align = 'C';
-    $row[] = new TableCell($cell);
+    $cell->width = self::WIDTH_PLAYER_NUMBER;
+    $row->addCell($cell);
 
     // Player name.
-    $cell = new Cell($this->pdf);
+    $cell = new Cell();
     $cell->text = $game->player1 ? $game->player1->name : '';
     $cell->border = 'LTB';
     // TODO: URI
-    $row[] = new TableCell($cell);
+    $row->addCell($cell);
 
     // Player rating.
-    $cell = new Cell($this->pdf);
+    $cell = new Cell();
     $cell->text = $game->player1 && $game->player1->dwz ? "({$game->player1->dwz})" : '';
     $cell->border = 'TBR';
     $cell->align = 'R';
     $cell->fontSize = 8;
-    // TODO: Don't automatically scale with font
-    $cell->height = $this->pdf->lineHeight;
-    $row[] = new TableCell($cell);
+    $cell->fontStyle = 'I';
+    $cell->width = self::WIDTH_PLAYER_RATING;
+    $row->addCell($cell);
 
     // Result.
-    $cell = new Cell($this->pdf);
+    $cell = new Cell();
     $cell->text = $game->result1 . ' : ' . $game->result2;
     $cell->border = 'LTBR';
     $cell->align = 'C';
-    $row[] = new TableCell($cell);
+    $cell->width = self::WIDTH_RESULT;
+    $row->addCell($cell);
 
     // Player rating.
-    $cell = new Cell($this->pdf);
+    $cell = new Cell();
     $cell->text = $game->player2 && $game->player2->dwz ? "({$game->player2->dwz})" : '';
     $cell->border = 'LTB';
     $cell->align = 'L';
     $cell->fontSize = 8;
-    // TODO: Don't automatically scale with font
-    $cell->height = $this->pdf->lineHeight;
-    $row[] = new TableCell($cell);
+    $cell->fontStyle = 'I';
+    $cell->width = self::WIDTH_PLAYER_RATING;
+    $row->addCell($cell);
     
     // Player name.
-    $cell = new Cell($this->pdf);
+    $cell = new Cell();
     $cell->text = $game->player2 ? $game->player2->name : '';
     $cell->border = 'TBR';
     $cell->align = 'R';
     // TODO: URI
-    $row[] = new TableCell($cell);
+    $row->addCell($cell);
 
     // Player number.
-    $cell = new Cell($this->pdf);
+    $cell = new Cell();
     $cell->text = $game->player2 ? $game->player2->number : '';
     $cell->border = 1;
     $cell->align = 'C';
-    $row[] = new TableCell($cell);
+    $cell->width = self::WIDTH_PLAYER_NUMBER;
+    $row->addCell($cell);
     
-    return $row;
+    $row->setHeight($pdf->lineHeight);
+    $row->layout($pdf);
+    $pdf->render($row);
   }
-
-
-  private function emptyRow(): array {
-    return [new TableCell(new Cell($this->pdf))];
-  }
-
-  public function layout(): array {
-    $this->table->layout();
-    return [];
-  }
-
-  public function render() {
-    $this->withStyles(function() {
-      $this->table->render();
-    });
-  }
-  */
 }
