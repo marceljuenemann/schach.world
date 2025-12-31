@@ -2,48 +2,35 @@
 
 namespace Nsv\Util\Pdf;
 
-use TypeError;
-
 /**
- * Table that calculates column widths based on content width.
- * 
- * TODO: bold
- * TODO: thicker border
+ * Table is a collection of Row elements in which all columns are
+ * set to the same width.
  */
-class Table extends Element {
-
-  /**
-   * Widths of columns by column index. These are calculated
-   * by layout() based on the content and may be modified
-   * before calling render().
-   */
-  public array $columnWidths;
-
-  /**
-   * Cell padding left and right of the content.
-   */
-  public float $padding = 3.0;
+class Table implements Element {
 
   private array $rows = [];
 
-  // TODO: verify TableCell
-  public function addRow(array $cells) {
-    foreach ($cells as $cell) {
-      if (!$cell instanceof TableCell) {
-        throw new TypeError('TableCell expected');
-      }
-    }
-    $this->rows[] = $cells;
+  public function addRow(Row $row) {
+    // TODO: assert same number of columns
+    $this->rows[] = $row;
   }
 
-  public function rowCount() {
-    return count($this->rows);
-  }
-  
-  public function layout(): array {
+  /**
+   * Calculates and sets the width of all columns. All cells that don't have a
+   * width set will be treated to have the width that is required to fit its
+   * text. 
+   */
+  public function layout(Pdf $pdf) {
     foreach ($this->rows as $row) {
       $column = 0;
       foreach ($row as $cell) {
+        if (!$cell->width) {
+          // TODO: This does not take font size changes into account.
+          $minWidth = $pdf->GetStringWidth($cell->text);
+          $cell->width = $minWidth;
+        }
+      
+        /*
         $layout = $cell->content->layout();
         if ($cell->colspan == 1 && isset($layout['minWidth'])) {
           $w = $layout['minWidth'] + $this->padding;
@@ -52,50 +39,14 @@ class Table extends Element {
           }
         }
         $column += $cell->colspan;
+        */
       }
     }
-    // TODO: Return minWidth
-    return [];
   }
 
-  public function render() {
-    $this->withStyles(function() {
-      foreach ($this->rows as $row) {
-        $this->renderRow($row);
-      }
-    });
-  }
-
-  private function renderRow(array $row) {
-    $prevL = $this->pdf->GetLeftMargin();
-    $prevR = $this->pdf->GetRightMargin();
-    $prevY = $this->pdf->GetY();
-
-    $maxY = $prevY;  // Keep track of the heighest column.
-    $column = 0;  
-
-    foreach ($row as $cell) {
-      // Calculate width while respecting colspan.
-      $width = 0;
-      for ($i = 0; $i < $cell->colspan; $i++) {
-        $width += $this->columnWidths[$column + $i] ?: 0;
-      } 
-      if (!$width) continue;
-
-      // Use margins to restrict rendering to desired width.
-      $this->pdf->SetLeftMargin($this->pdf->GetX());
-      $this->pdf->SetRightMargin($this->pdf->pageWidth() - ($this->pdf->GetX() + $width));
-      $cell->content->render();
-
-      // Update $maxY to get correct table height.
-      if ($this->pdf->GetY() > $maxY) $maxY = $this->pdf->GetY();
-      $this->pdf->SetXY($this->pdf->GetLeftMargin() + $width, $prevY);
-      $column += $cell->colspan;
+  public function render(Pdf $pdf) {
+    foreach ($this->rows as $row) {
+      $row->render($pdf);
     }
-
-    // Reset for next row.
-    $this->pdf->SetLeftMargin($prevL);
-    $this->pdf->SetRightMargin($prevR);
-    $this->pdf->SetXY($prevL, $maxY /* TODO: border + .2 */ );
   }
 }

@@ -6,11 +6,7 @@ use Nsv\League\Api\Model\MatchDay;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Division;
 use Nsv\Util\Pdf\Cell;
-use Nsv\Util\Pdf\LineBreak;
 use Nsv\Util\Pdf\Pdf;
-use Nsv\Util\Pdf\Table;
-use Nsv\Util\Pdf\TableRow;
-use Nsv\Util\Pdf\Text;
 
 /**
  * TODO:
@@ -31,19 +27,15 @@ class MatchDayPdf {
   public function __construct(private Division $division, private MatchDay $matchDay) {
     $this->pdf = new Pdf();
     $this->pairingList = new PairingList($matchDay);
-//    $this->ranking = new Ranking($this->pdf, $matchDay->legacyRanking);
+    $this->ranking = new Ranking($matchDay->legacyRanking);
   }
 
   public function render() {
     $this->renderHeader();
-
-    /*
-    $this->pairingList->layout();
-    $this->ranking->layout();
-    */
-
     $this->pdf->render($this->pairingList);
-    //$this->ranking->render();
+
+    $this->ranking->layout($this->pdf);
+    $this->pdf->render($this->ranking);
   }
   
   private function renderHeader() {

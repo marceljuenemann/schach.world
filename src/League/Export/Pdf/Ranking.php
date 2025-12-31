@@ -5,6 +5,7 @@ namespace Nsv\League\Export\Pdf;
 use Nsv\Util\Pdf\Cell;
 use Nsv\Util\Pdf\Element;
 use Nsv\Util\Pdf\Pdf;
+use Nsv\Util\Pdf\Row;
 use Nsv\Util\Pdf\Table;
 use Nsv\Util\Pdf\TableCell;
 use Nsv\Util\Pdf\TableRow;
@@ -18,16 +19,50 @@ use Nsv\Util\Pdf\TableRow;
  * TODO: thick border
  * TODO: decide whether to render full table dynamically
  */
-class Ranking extends Element {
+class Ranking implements Element {
 
   private Table $table;
 
-  public function __construct(Pdf $pdf, array $legacyRanking) {
-    parent::__construct($pdf);
-    $this->table = Ranking::createTable($pdf, $legacyRanking);
+  public function __construct(array $legacyRanking) {
+    $this->table = Ranking::createTable($legacyRanking);
   }
-  
-  public function layout(): array {
+
+  private static function createTable(array $legacyRanking) {
+    $table = new Table();
+    foreach ($legacyRanking as $row) {
+      $table->addRow(Ranking::createTableRow($row));
+    }
+    return $table;
+  }
+
+  private static function createTableRow(array $cells): Row {
+    $row = new Row();
+    foreach ($cells as $cellData) {
+      if (is_array($cellData)) {
+        if (isset($cellData['text'])) {
+          $text = str_replace('xxx', '', $cellData['text']);
+        } else {
+          $text = implode(', ', array_map(function ($data) {
+            return $data['text'];
+          }, $cellData));
+        }
+      } else {
+        $text = str_replace('xxx', '', $cellData);
+      }
+      $cell = new Cell();
+      $cell->text = $text;
+      $cell->border = 1;
+      $cell->align = 'C';
+      $row->addCell($cell);
+    }
+    return $row;
+  }
+
+  /**
+   * Calculates widths for all cells.
+   */
+  public function layout(Pdf $pdf) {
+    $this->table->layout($pdf);
     /*
     $teamCount = $this->table->rowCount() - 1;
 
@@ -55,43 +90,11 @@ class Ranking extends Element {
 
     $this->columnWidths = $widths;  // TODO: move to Table.
     return [];
-    */
     $this->table->layout();
-    return [];
+    */
   }
 
-  public function render() {
-    $this->withStyles(function() {
-      $this->table->render();
-    });
-  }
-
-  private static function createTable(Pdf $pdf, array $legacyRanking) {
-    $table = new Table($pdf);
-    foreach ($legacyRanking as $row) {
-      $table->addRow(Ranking::createTableRow($pdf, $row));
-    }
-    return $table;
-  }
-
-  private static function createTableRow(Pdf $pdf, array $row): array {
-    return array_map(function ($data) use ($pdf) {
-      if (is_array($data)) {
-        if (isset($data['text'])) {
-          $text = str_replace('xxx', '', $data['text']);
-        } else {
-          $text = implode(', ', array_map(function ($data) {
-            return $data['text'];
-          }, $data));
-        }
-      } else {
-        $text = str_replace('xxx', '', $data);
-      }
-      $cell = new Cell($pdf);
-      $cell->text = $text;
-      $cell->border = 1;
-      $cell->align = 'C';
-      return new TableCell($cell);
-    }, $row);
+  public function render(Pdf $pdf) {
+    $pdf->render($this->table);
   }
 }

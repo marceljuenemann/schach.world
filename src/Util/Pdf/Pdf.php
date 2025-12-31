@@ -20,8 +20,8 @@ class Pdf extends \FPDF /*Fpdf*/ {
   public function __construct() {
     parent::__construct();
     $this->AddPage();
-    $this->SetFont('helvetica', '', 10);
-    $this->lineHeight = 4.5;
+    $this->SetFont('helvetica', '', 9);
+    $this->lineHeight = 4;
     $this->SetFillColor(222, 222, 222);  // Gray default fill colour.
 
     /*

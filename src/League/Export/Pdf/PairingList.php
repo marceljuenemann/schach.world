@@ -25,7 +25,7 @@ class PairingList implements Element {
 
   const WIDTH_PLAYER_NUMBER = 10;
   const WIDTH_PLAYER_RATING = 15;
-  const WIDTH_RESULT = 15;
+  const WIDTH_RESULT = 13;
 
   public function __construct(private MatchDay $matchDay) {}
 

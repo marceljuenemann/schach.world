@@ -6,12 +6,16 @@ namespace Nsv\Util\Pdf;
  * A row of Cells. The Y position will automatically be set to the next row / line
  * after rendering.
  */
-class Row implements Element {
+class Row implements Element, \IteratorAggregate {
 
   private $cells = [];
 
   public function addCell(Cell $cell) {
     $this->cells[] = $cell;
+  }
+
+  public function getIterator(): \Traversable {
+    return new \ArrayIterator($this->cells);
   }
 
   /**
@@ -47,11 +51,21 @@ class Row implements Element {
   }
 
   public function render(Pdf $pdf) {
+    // Remember that each Cell element will set the cursor to the next line,
+    // without changing the X position.
+    $page = $pdf->page;
     $y = $pdf->y;
     $maxY = $y;
     foreach ($this->cells as $cell) {
       $cell->render($pdf);
-      $maxY = max($pdf->y, $maxY);
+      if ($pdf->page > $page) {
+        // Row is rendered on the next page, adjust Y position.
+        $y = $pdf->tMargin;
+        $maxY = $pdf->y;
+        $page = $pdf->page;
+      } else {
+        $maxY = max($pdf->y, $maxY);
+      }
       $pdf->x += $cell->width;
       $pdf->y = $y;
     }
