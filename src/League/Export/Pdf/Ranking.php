@@ -40,11 +40,13 @@ class Ranking implements Element {
         $row->setStyle('B');
         $row->marginBottom = .2;  // Slightly thicker border below header.
         $row->cell(1)->align = 'C';  // Team name left aligned.
+        $row->setCellHeight(1.1);
         $table->addRow($row);
         $first = false;
       } else {
         $row = Ranking::createTableRow(array_slice($rowData, 0, -1));
         $colour = $rowData[count($rowData) - 1];
+        $row->cell(0)->align = 'R';
         if (isset(Ranking::FILL_COLOURS[$colour])) {
           $row->cell(0)->fill = Ranking::FILL_COLOURS[$colour];
         }
@@ -86,39 +88,18 @@ class Ranking implements Element {
    * Calculates widths for all cells.
    */
   public function layout(Pdf $pdf) {
-    $this->header = $this->table->row(0);
-    $this->header->setHeight($pdf->lineHeight * 1.1);
-
     $this->table->cellPadding = 3;
     $this->table->layout($pdf);
     /*
-    $teamCount = $this->table->rowCount() - 1;
+    // TODO: Use same width for all result columns.
 
-    // Calculate column widths.
-    $padding = $this->pdf->GetStringWidth('      ');
-    $place = $this->pdf->GetStringWidth($this->table->rowCount());
-    $team = $this->table->desiredColumnWidth($this->pdf, 1);
-    $points = $this->table->desiredColumnWidth($this->pdf, $teamCount + 3);
 
-    // Use same width for all result columns.
     $resultWdith = $place;
     for ($i = 1; $i < $this->table->rowCount(); $i++) {
       $colWidth = $this->table->desiredColumnWidth($this->pdf, 1 + $i);
       if ($colWidth > $resultWdith) $resultWdith = $colWidth;
     }
     $resultWdiths = array_fill(0, $this->table->rowCount() - 1, $resultWdith + $padding);
-
-
-    $widths = array_merge([
-      $place + $padding,
-      $team + $padding
-    ], $resultWdiths, [
-      $points + $padding,
-      $points + $padding, 0]);
-
-    $this->columnWidths = $widths;  // TODO: move to Table.
-    return [];
-    $this->table->layout();
     */
   }
 

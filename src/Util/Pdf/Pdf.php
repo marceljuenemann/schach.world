@@ -45,18 +45,16 @@ class Pdf extends \FPDF /*Fpdf*/ {
    * 
    * Any null values indicate that the current value should be kept.
    */
+  // TODO: Add a withLineHeight method?
   public function withFont(string | null $family, string | null $style, int | null $size, callable $callback): mixed {
     $prevFamily = $this->FontFamily;
     $prevStyle = $this->FontStyle;
     $prevSize = $this->FontSizePt;
-    $prevLineHeight = $this->lineHeight;
 
     $this->SetFont($family ?: $prevFamily, $style ?: $prevStyle, $size ?: $prevSize);
-    $this->lineHeight *= ((float) $size ?: $prevSize) / $prevSize;
     $result = $callback();
-
     $this->SetFont($prevFamily, $prevStyle, $prevSize);
-    $this->lineHeight = $prevLineHeight;
+
     return $result;
   }
 
@@ -66,6 +64,23 @@ class Pdf extends \FPDF /*Fpdf*/ {
    */
   public function withFontSize(int $fontSize, callable $callback): mixed {
     return $this->withFont(null, null, $fontSize, $callback);
+  }
+
+  /**
+   * Executes the callback on the given page.
+   */
+  public function onPage(int $page, callable $callback): mixed {
+    if ($page == $this->page) {
+      return $callback();
+    }
+    assert($page >= 1 && $page <= $this->page, "Page out of range");
+    $prevPage = $this->page;
+    $this->page = $page;
+    // Ensure that the correct font is active on the page.
+    $this->SetFont($this->FontFamily, $this->FontStyle, $this->FontSizePt);
+    $result = $callback();
+    $this->page = max($prevPage, $this->page);
+    return $result;
   }
 
   public function render(Element $element) {

@@ -29,9 +29,17 @@ class Row implements Element, \IteratorAggregate {
   }
 
   /**
+   * Returns the height of the row, which is defined as the 
+   * maximum cell height in the row.
+   */
+  public function height(): float {
+    return max(array_map(fn($cell) => $cell->height, $this->cells));
+  }
+  
+  /**
    * Sets the height of all cells in the row.
    */
-  public function setHeight(float $height) {
+  public function setCellHeight(float $height) {
     foreach ($this->cells as $cell) {
       $cell->height = $height;
     }
@@ -79,6 +87,7 @@ class Row implements Element, \IteratorAggregate {
   }
 
   public function render(Pdf $pdf) {
+    // TODO: Just use height() instead of keeping track of maxY?
     // Remember that each Cell element will set the cursor to the next line,
     // without changing the X position.
     $page = $pdf->page;

@@ -38,6 +38,7 @@ class PairingList implements Element {
   }
 
   public function render(Pdf $pdf) {
+    // TODO: Move to next page if not all games fit on this page.
     foreach ($this->matchDay->pairings as $pairing) {
       $this->renderHeader($pdf, $pairing);
       if (isset($pairing->games)) {
@@ -82,7 +83,7 @@ class PairingList implements Element {
     // TODO: URI
     $row->addCell($cell);
 
-    $row->setHeight($pdf->lineHeight * 1.1);
+    $row->setCellHeight(1.1);
     $row->setFill(true);
     $row->setStyle('B');
     $row->layout($pdf);
@@ -151,7 +152,6 @@ class PairingList implements Element {
     $cell->width = self::WIDTH_PLAYER_NUMBER;
     $row->addCell($cell);
     
-    $row->setHeight($pdf->lineHeight);
     $row->layout($pdf);
     $pdf->render($row);
   }

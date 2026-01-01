@@ -11,10 +11,11 @@ use Nsv\Util\Pdf\Text;
 
 /**
  * TODO:
- * - Main layout
- * - Comments:  ¹ ²	³ *
+ * - Main layout finished
  * - URIs
  * - Adjust header and footer margins
+ * - Adjust font size for long names
+ * - Fine tune player number width
  * - Render a footer
  * - Move into Service directory
  * - Move Service directory out of Api/
@@ -29,6 +30,8 @@ use Nsv\Util\Pdf\Text;
  *      - Comments with HTML (ignore)
  */
 class MatchDayPdf {
+  private const DEFAULT_SIDEBAR_WIDTH = 52;
+  private const SIDEBAR_PADDING = 3;
 
   private Pdf $pdf;
   private PairingList $pairingList;
@@ -43,28 +46,62 @@ class MatchDayPdf {
   }
 
   public function render() {
-    $this->renderHeader();
-    $this->pdf->render($this->pairingList);
+    // Calculate height
+    // Pairings + table fit on one page?
+    // 1) Render table below pairings
+    //    - Use a constant sidebar width
+    //    - If table is wider than the sidebar, don't show cross table
+    // 2) Render table next to pairings
+    //    - Render table first on first page
+    //    - Render infos below.
+    // => Infos always in the sidebar
 
+
+    // 1. Determine sidebar width.
+    // TODO: Use fixed width.
+    $sidebarWidth = self::DEFAULT_SIDEBAR_WIDTH;
+
+    // 2. Render header and pairing list.
+    $this->renderHeader();
+    $yPairingList = $this->pdf->y;
+    $this->pdf->rMargin += $sidebarWidth + self::SIDEBAR_PADDING;
+    $this->pairingList->render($this->pdf);
+
+//    echo "lMargin: {$this->pdf->lMargin}, rMargin: {$this->pdf->rMargin}, w: {$this->pdf->w}, x: {$this->pdf->x}, y: {$this->pdf->y}<br>";
+
+
+    // 3. Render ranking below if it fits.
+    // TODO: Check height
+    // TODO: Check minWidth() (adjust name column as needed)
     if ($this->ranking) {
       $this->ranking->layout($this->pdf);
       $this->ranking->render($this->pdf);
     }
+//    $this->pdf->Ln();
 
-    $this->pdf->Ln();
-    $this->renderInfos();
+    // 3. Render sidebar.
+    $this->pdf->rMargin -= $sidebarWidth + self::SIDEBAR_PADDING;
+    $this->pdf->lMargin = $this->pdf->w - $this->pdf->rMargin - $sidebarWidth;
+    $this->pdf->x = $this->pdf->lMargin;
+    $this->pdf->y = $yPairingList;
+    $this->pdf->onPage(1, function () {
+      // TODO: Render ranking
+      $this->renderInfos();
+    }); 
   }
   
   private function renderHeader() {
     $cell = new Cell();
     $cell->text = $this->division->league->name;
     $cell->fontSize = 12;
+    $cell->height = (float) $cell->fontSize / $this->pdf->FontSizePt;
     $cell->align = 'C';
     $this->pdf->render($cell);
 
     $cell = new Cell();
     $cell->text = $this->division->name;
     $cell->fontSize = 16;
+    $cell->height = (float) $cell->fontSize / $this->pdf->FontSizePt;
     $cell->align = 'C';
     $cell->fontStyle = 'B';
     $this->pdf->render($cell);
@@ -77,6 +114,7 @@ class MatchDayPdf {
     $cell = new Cell();
     $cell->text = $text;
     $cell->fontSize = 12;
+    $cell->height = (float) $cell->fontSize / $this->pdf->FontSizePt;
     $cell->align = 'C';
     $this->pdf->render($cell);
 
@@ -84,9 +122,6 @@ class MatchDayPdf {
   }
 
   private function renderInfos() {
-    $this->pdf->x = $this->pdf->w - 70;
-    $this->pdf->lMargin = $this->pdf->x; // TODO: Just a test. Reset.
-
     $this->renderComments();
     $this->renderLateRegistrations();
     $this->renderNextMatchDayPreview();

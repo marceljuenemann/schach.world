@@ -26,16 +26,13 @@ class Cell implements Element {
   public string $fontStyle = '';
 
   /**
-   * The height of the cell. If null, the lineHeight of Pdf will be used. 
+   * The height of the cell relative to the line height.
    */
-  // TODO: relative?
-  public ?float $height = null;
+  public float $height = 1.0;
 
   /**
    * The width of the cell. If set to zero, all available horizontal space will be used.
    */
-  // TODO: Support dynamic?
-  // TODO: Maybe different Cell subclasses?
   public float $width = 0;
 
   /**
@@ -75,9 +72,9 @@ class Cell implements Element {
         [$r, $g, $b] = $this->fill;
         $pdf->SetFillColor($r, $g, $b);
       }
-      $lh = $this->height ?: $pdf->lineHeight;
-      $pdf->Cell($this->width, $lh, $this->text, $this->border,
-        $lh, $this->align, (bool) $this->fill, $this->link);
+      $height = $this->height * $pdf->lineHeight;
+      $pdf->Cell($this->width, $height, $this->text, $this->border,
+        $height, $this->align, (bool) $this->fill, $this->link);
     });
   }
 }
