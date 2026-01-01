@@ -9,8 +9,7 @@ use Nsv\Util\Pdf\Cell;
 use Nsv\Util\Pdf\Element;
 use Nsv\Util\Pdf\Pdf;
 use Nsv\Util\Pdf\Row;
-use Nsv\Util\Pdf\Table;
-use Nsv\Util\Pdf\TableCell;
+use Nsv\Util\Pdf\Text;
 
 /**
  * PDF element displaying pairings.
@@ -27,7 +26,16 @@ class PairingList implements Element {
   const WIDTH_PLAYER_RATING = 15;
   const WIDTH_RESULT = 13;
 
-  public function __construct(private MatchDay $matchDay) {}
+  private $remarkSymbols;
+  private $remarks = [];
+
+  public function __construct(private MatchDay $matchDay) {
+    $this->remarkSymbols = array ( 0, chr(0xB9), chr(0xB2), chr(0xB3), '*' );
+  }
+
+  public function remarks(): array {
+    return $this->remarks;
+  }
 
   public function render(Pdf $pdf) {
     foreach ($this->matchDay->pairings as $pairing) {
@@ -60,7 +68,13 @@ class PairingList implements Element {
     $cell->width = self::WIDTH_RESULT * 2;  // Headline may take up some more space.
     // TODO: URI
     $row->addCell($cell);
- 
+
+    if (isset($pairing->comment) && $pairing->comment) {
+      $symbol = next($this->remarkSymbols) ?: end($this->remarkSymbols);
+      $cell->text .= ' ' . $symbol;
+      $this->remarks[] = new Text($symbol . ' ' . $pairing->comment);
+    }
+
     $cell = new Cell();
     $cell->text = $pairing->team2->name;
     $cell->border = 'TBR';

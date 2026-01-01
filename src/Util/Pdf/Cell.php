@@ -59,7 +59,12 @@ class Cell implements Element {
    * If set to true, the default fill color will be used. If set to an array,
    * it should contain RGB values.
    */
-  public bool | array $fill = false;  // TODO: support RGB
+  public bool | array $fill = false;
+
+  public function __construct(string $text = '', string $style = '' ) {
+    $this->text = $text;
+    $this->fontStyle = $style;
+  }
 
   public function render(Pdf $pdf) {
     $pdf->withFont(null, $this->fontStyle, $this->fontSize, function () use ($pdf) {

@@ -5,11 +5,12 @@ namespace Nsv\Util\Pdf;
 /**
  * Floating text that automatically wraps when the margin is reached.
  */
-class Text extends Element {
+class Text implements Element {
 
-  function __construct(private $text) {}
+  function __construct(public readonly string $text) {}
 
-  protected function renderWithStyles(Pdf $pdf) {
+  public function render(Pdf $pdf) {
     $pdf->write($pdf->lineHeight, $this->text);
+    $pdf->Ln();
   }
 }
