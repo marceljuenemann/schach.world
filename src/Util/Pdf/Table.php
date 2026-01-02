@@ -29,6 +29,13 @@ class Table implements Element {
   }
 
   /**
+   * Returns the height of the table relative to the line height.
+   */
+  public function height(): float {
+    return array_sum(array_map(fn($row) => $row->height(), $this->rows));
+  }
+
+  /**
    * Adds a margin to the right of the given column.
    */
   public function setColumnSpacing(int $column, float $spacing) {

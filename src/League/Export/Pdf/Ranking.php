@@ -23,7 +23,6 @@ class Ranking implements Element {
     "absteigerRelegation" => [255, 233, 184]
   ];
 
-  private Row $header;
   private Table $table;
 
   public function __construct(array $legacyRanking) {
@@ -101,6 +100,10 @@ class Ranking implements Element {
     }
     $resultWdiths = array_fill(0, $this->table->rowCount() - 1, $resultWdith + $padding);
     */
+  }
+
+  public function height(): float {
+    return $this->table->height();
   }
 
   public function render(Pdf $pdf) {

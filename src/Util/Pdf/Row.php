@@ -30,7 +30,7 @@ class Row implements Element, \IteratorAggregate {
 
   /**
    * Returns the height of the row, which is defined as the 
-   * maximum cell height in the row.
+   * maximum cell height in the row. The unit is in lines (line heights).
    */
   public function height(): float {
     return max(array_map(fn($cell) => $cell->height, $this->cells));

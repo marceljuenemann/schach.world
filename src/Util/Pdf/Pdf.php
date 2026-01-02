@@ -41,6 +41,20 @@ class Pdf extends \FPDF /*Fpdf*/ {
   }
 
   /**
+   * Return the available height on the current page in user units.
+   */
+  public function availableHeight(): float {
+    return $this->h - $this->bMargin - $this->y;
+  }
+
+  /**
+   * Return the available height on the current page relative to the line height.
+   */
+  public function availableLines(): float {
+    return $this->availableHeight() / $this->lineHeight;
+  }
+
+  /**
    * Executes the callback with the given font family and style.
    * 
    * Any null values indicate that the current value should be kept.

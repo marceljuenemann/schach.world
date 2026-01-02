@@ -26,11 +26,14 @@ use Nsv\Util\Pdf\Text;
  *   - Multi page
  *   - Edge cases (comments)
  *      - Lots of comments https://localhost:6464/ligen/pokal-1516/pokal-mm/1/
+ *      - Not enough Y space for table https://localhost:6464/ligen/sjbh-1718/bmm-u12/5/pdf-ng/
+ *      - Table not on page 2 https://localhost:6464/ligen/sjbh-2526/bmm-u12/3/pdf-ng/
+ *      - Table too wide
  *      - Comments with new line
  *      - Comments with HTML (ignore)
  */
 class MatchDayPdf {
-  private const DEFAULT_SIDEBAR_WIDTH = 52;
+  private const SIDEBAR_WIDTH = 55;
   private const SIDEBAR_PADDING = 3;
 
   private Pdf $pdf;
@@ -57,35 +60,38 @@ class MatchDayPdf {
     // => Infos always in the sidebar
 
 
-    // 1. Determine sidebar width.
-    // TODO: Use fixed width.
-    $sidebarWidth = self::DEFAULT_SIDEBAR_WIDTH;
-
-    // 2. Render header and pairing list.
+    // 1. Render header.
     $this->renderHeader();
+
+    // 2. Render pairing list.
     $yPairingList = $this->pdf->y;
-    $this->pdf->rMargin += $sidebarWidth + self::SIDEBAR_PADDING;
+    $this->pdf->rMargin += self::SIDEBAR_WIDTH + self::SIDEBAR_PADDING;
     $this->pairingList->render($this->pdf);
 
-//    echo "lMargin: {$this->pdf->lMargin}, rMargin: {$this->pdf->rMargin}, w: {$this->pdf->w}, x: {$this->pdf->x}, y: {$this->pdf->y}<br>";
-
-
     // 3. Render ranking below if it fits.
-    // TODO: Check height
-    // TODO: Check minWidth() (adjust name column as needed)
+    $rankingInSidebar = false;
     if ($this->ranking) {
       $this->ranking->layout($this->pdf);
-      $this->ranking->render($this->pdf);
+      if ($this->pdf->page > 1 || $this->ranking->height() > $this->pdf->availableLines()) {
+        // A. Not enough vertical space on the first page.
+        $rankingInSidebar = true;
+      // TODO: Check minWidth() (adjust name column as needed)
+      } else {
+        // C. Enough space, render below pairing list.
+        $this->ranking->render($this->pdf);
+      }
     }
-//    $this->pdf->Ln();
 
-    // 3. Render sidebar.
-    $this->pdf->rMargin -= $sidebarWidth + self::SIDEBAR_PADDING;
-    $this->pdf->lMargin = $this->pdf->w - $this->pdf->rMargin - $sidebarWidth;
+    // 4. Render sidebar.
+    $this->pdf->rMargin -= self::SIDEBAR_WIDTH + self::SIDEBAR_PADDING;
+    $this->pdf->lMargin = $this->pdf->w - $this->pdf->rMargin - self::SIDEBAR_WIDTH;
     $this->pdf->x = $this->pdf->lMargin;
     $this->pdf->y = $yPairingList;
-    $this->pdf->onPage(1, function () {
-      // TODO: Render ranking
+    $this->pdf->onPage(1, function () use ($rankingInSidebar) {
+      if ($rankingInSidebar) {
+        $this->ranking->render($this->pdf);
+        $this->pdf->Ln();
+      }
       $this->renderInfos();
     }); 
   }
