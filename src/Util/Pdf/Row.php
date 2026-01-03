@@ -31,7 +31,7 @@ class Row implements Element, \IteratorAggregate {
   public function width(): float {
     return array_sum(array_map(fn($cell) => $cell->width + $cell->marginRight, $this->cells));
   }
-  
+
   /**
    * Returns the height of the row, which is defined as the 
    * maximum cell height in the row. The unit is in lines (line heights).
@@ -72,7 +72,7 @@ class Row implements Element, \IteratorAggregate {
    * all available horizontal space is distributed equally to the cells.
    */
   public function layout(Pdf $pdf) {
-    $availableWidth = $pdf->w - $pdf->rMargin - $pdf->x;
+    $availableWidth = $pdf->GetPageWidth() - $pdf->GetRightMargin() - $pdf->GetX();
     $cellsToGrow = [];
     foreach ($this->cells as $cell) {
       if ($cell->width) {
@@ -94,22 +94,21 @@ class Row implements Element, \IteratorAggregate {
     // TODO: Just use height() instead of keeping track of maxY?
     // Remember that each Cell element will set the cursor to the next line,
     // without changing the X position.
-    $page = $pdf->page;
-    $y = $pdf->y;
+    $page = $pdf->PageNo();
+    $y = $pdf->GetY();
     $maxY = $y;
     foreach ($this->cells as $cell) {
       $cell->render($pdf);
-      if ($pdf->page > $page) {
+      if ($pdf->PageNo() > $page) {
         // Row is rendered on the next page, adjust Y position.
-        $y = $pdf->tMargin;
-        $maxY = $pdf->y;
-        $page = $pdf->page;
+        $y = $pdf->GetTopMargin();
+        $maxY = $pdf->GetY();
+        $page = $pdf->PageNo();
       } else {
-        $maxY = max($pdf->y, $maxY);
+        $maxY = max($pdf->GetY(), $maxY);
       }
-      $pdf->x += $cell->width + $cell->marginRight;
-      $pdf->y = $y;
+      $pdf->SetXY($pdf->GetX() + $cell->width + $cell->marginRight, $y);
     }
-    $pdf->SetXY($pdf->lMargin, $maxY + $this->marginBottom);
+    $pdf->SetXY($pdf->GetLeftMargin(), $maxY + $this->marginBottom);
   }
 }

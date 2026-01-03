@@ -54,9 +54,9 @@ class MatchDayPdf {
     $this->renderHeader();
 
     // 2. Render pairing list.
-    $yPairingList = $this->pdf->y;
+    $yPairingList = $this->pdf->GetY();
     $this->pdf->with(
-      ['rMargin' => $this->pdf->rMargin + self::SIDEBAR_WIDTH + self::SIDEBAR_PADDING],
+      ['rMargin' => $this->pdf->GetRightMargin() + self::SIDEBAR_WIDTH + self::SIDEBAR_PADDING],
       fn() => $this->pdf->render($this->pairingList)
     );
 
@@ -64,11 +64,11 @@ class MatchDayPdf {
     $rankingInSidebar = false;
     if ($this->ranking) {
       $this->ranking->layout($this->pdf);
-      $rankingInSidebar = $this->ranking->height() > $this->pdf->availableLines() || $this->pdf->page > 1;
+      $rankingInSidebar = $this->ranking->height() > $this->pdf->availableLines() || $this->pdf->PageNo() > 1;
     }
 
     // 4. Render sidebar.
-    $lMargin = $this->pdf->w - $this->pdf->rMargin - self::SIDEBAR_WIDTH;
+    $lMargin = $this->pdf->GetPageWidth() - $this->pdf->GetRightMargin() - self::SIDEBAR_WIDTH;
     [$sidebarPage, $sidebarY] = $this->pdf->with(
       [
         'lMargin' => $lMargin,
@@ -83,7 +83,7 @@ class MatchDayPdf {
           $this->pdf->Ln();
         }
         $this->renderInfos();
-        return [$this->pdf->page, $this->pdf->y];
+        return [$this->pdf->PageNo(), $this->pdf->GetY()];
       }
     );
 
@@ -91,7 +91,7 @@ class MatchDayPdf {
     if ($this->ranking && !$rankingInSidebar) {
       // Make sure ranking doesn't overlap with sidebar.
       $wideRanking = $this->ranking->width() > $this->pdf->availableWidth() - self::SIDEBAR_WIDTH;
-      if ($wideRanking && [$sidebarPage, $sidebarY] > [$this->pdf->page, $this->pdf->y]) {
+      if ($wideRanking && [$sidebarPage, $sidebarY] > [$this->pdf->PageNo(), $this->pdf->GetY()]) {
         $this->ranking->deleteResultColumns();
       }
       $this->ranking->render($this->pdf);
@@ -102,14 +102,14 @@ class MatchDayPdf {
     $cell = new Cell();
     $cell->text = $this->division->league->name;
     $cell->fontSize = 12;
-    $cell->height = (float) $cell->fontSize / $this->pdf->FontSizePt;
+    $cell->height = (float) $cell->fontSize / Pdf::DEFAULT_FONT_SIZE;
     $cell->align = 'C';
     $this->pdf->render($cell);
 
     $cell = new Cell();
     $cell->text = $this->division->name;
     $cell->fontSize = 16;
-    $cell->height = (float) $cell->fontSize / $this->pdf->FontSizePt;
+    $cell->height = (float) $cell->fontSize / Pdf::DEFAULT_FONT_SIZE;
     $cell->align = 'C';
     $cell->fontStyle = 'B';
     $this->pdf->render($cell);
@@ -122,7 +122,7 @@ class MatchDayPdf {
     $cell = new Cell();
     $cell->text = $text;
     $cell->fontSize = 12;
-    $cell->height = (float) $cell->fontSize / $this->pdf->FontSizePt;
+    $cell->height = (float) $cell->fontSize / Pdf::DEFAULT_FONT_SIZE;
     $cell->align = 'C';
     $this->pdf->render($cell);
 
