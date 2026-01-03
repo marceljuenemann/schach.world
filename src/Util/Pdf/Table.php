@@ -6,7 +6,7 @@ namespace Nsv\Util\Pdf;
  * Table is a collection of Row elements in which all columns are
  * set to the same width.
  */
-class Table implements Element {
+class Table implements Element, \IteratorAggregate {
 
   private array $rows = [];
 
@@ -23,6 +23,10 @@ class Table implements Element {
     return $this->rows[$index];
   }
 
+  public function getIterator(): \Traversable {
+    return new \ArrayIterator($this->rows);
+  }
+
   public function columnCount(): int {
     assert(!empty($this->rows), 'Table has no rows.');
     return $this->rows[0]->length();
@@ -33,6 +37,23 @@ class Table implements Element {
    */
   public function height(): float {
     return array_sum(array_map(fn($row) => $row->height(), $this->rows));
+  }
+
+  public function width(): float {
+    assert(!empty($this->rows), 'Table has no rows.');
+    return $this->rows[0]->width();
+  }
+
+  public function columnWidth(int $column): float {
+    // Assumes that layout() has been called and all rows have the same width.
+    assert(!empty($this->rows), 'Table has no rows.');
+    return $this->rows[0]->cell($column)->width;
+  }
+
+  public function setColumnWidth(int $column, float $width) {
+    foreach ($this->rows as $row) {
+      $row->cell($column)->width = $width;
+    }
   }
 
   /**

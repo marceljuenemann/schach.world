@@ -19,13 +19,11 @@ class Pdf extends \FPDF /*Fpdf*/ {
 
   public function __construct() {
     parent::__construct();
+    $this->tMargin = 8;
+    $this->bMargin = 8;
     $this->AddPage();
     $this->SetFont('helvetica', '', 9);
     $this->lineHeight = 4;
-
-    /*
-    $pdf->SetAutoPageBreak(true, 15);
-    */
   }
 
   public function GetLeftMargin() {
@@ -38,6 +36,13 @@ class Pdf extends \FPDF /*Fpdf*/ {
 
   public function pageWidth(): float {
     return $this->w;
+  }
+
+  /**
+   * Return the available width until the right margin in user units.
+   */
+  public function availableWidth(): float {
+    return $this->w - $this->rMargin - $this->x;
   }
 
   /**
@@ -118,42 +123,12 @@ class Pdf extends \FPDF /*Fpdf*/ {
 
 /*
 
-    // Logik, damit alles auf eine Seite passt
-    // tmp = (fontsize,lineheight,kreuztabelle)
-    $linecount = count ( [] $data ['paarungen'] ) * ( SED_GetBrettzahl ( $_GET ['staffel'] ) + 2 );
-        if ( $linecount <= 32 )      $tmp = array ( 10,5,1 );
-        elseif ( $linecount <= 40 )  $tmp = array ( 10,4.5,1 );
-        elseif ( $linecount <= 50 )  $tmp = array ( 10,4,1 );
-        elseif ( $linecount <= 54 )  $tmp = array ( 10,4.5,0 );
-        elseif ( $linecount <= 60 )  $tmp = array ( 10,4,0 );
-        elseif ( $linecount <= 70 )  $tmp = array ( 9,3.5,0 );
-        elseif ( $linecount <= 75 )  $tmp = array ( 9,3.5,0 );
-        else                         $tmp = array ( 10,4,1 );
-    $fontsize = $tmp [0];
-    $cellheight = $tmp [1];
-    $isBigTable = count ( $table ) > 13 ? 0 : $tmp [2];
-
     
-    $pageWidth = 210;
-    $pdf->AddPage ();
-    $pdf->SetLeftMargin ( 10 );
-    $pdf->SetRightMargin ( 7 );
-    $pdf->SetAutoPageBreak(true, 15);
-
-    // Berechnung der Breite der rechten Spalte
-    $infowidth = $pdf->GetStringWidth ( "SG Oesede-Gmth. 3 - SG Oesede-Gmth. 3" );
-    $columnwidth = ( $isBigTable || !$options ['showTabelle'] )
-                 ? $infowidth : max ( $infowidth, $tablewidth );
-
-
     $widthOfGames = $pageWidth - 2*10 - $columnwidth - 3;
     {
         $width[0] = $options ['showPassNr']
                   ? ( $prefs['spielDreistelligeNr'] ? $pdf->GetStringWidth ( "616" ) : $pdf->GetStringWidth ( "24" ) ) + 3
                   : 0;
-
-        $width[1] = $pdf->GetStringWidth ( "SG Oesede-Gmth. 3" ) + 3;             // Bemerkungs-Sternchen
-
             // Links
             $links = array (
                 $urlbase . "?mannschaft=" . $data ['paarungen'][$i]['mid1'],
@@ -177,19 +152,6 @@ class Pdf extends \FPDF /*Fpdf*/ {
                 $pdf->Cell ( $widthOfGames, $cellheight, "(kampflos)", 1, 1, "C", 0 );
             }
 
-    // evtl. Spaltenwechsel
-    if ( !$isBigTable )
-    {
-        $pdf->SetLeftMargin ( $pageWidth - 10 - $columnwidth );
-        $pdf->SetY ( $columnY );
-    }
-
-    // evtl. Spaltenwechsel, aber nicht wenn unter der Tabelle Platz ist
-    if ( $isBigTable && $pdf->GetY () > 150 )
-    {
-        $pdf->SetLeftMargin ( 10 + $widthOfGames + 3 );
-        $pdf->SetY ( $columnY );
-    }
 
     ///////////////////////////////////
     // Fußzeile

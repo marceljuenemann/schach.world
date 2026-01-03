@@ -33,7 +33,7 @@ use Nsv\Util\Pdf\Text;
  *      - Comments with HTML (ignore)
  */
 class MatchDayPdf {
-  private const SIDEBAR_WIDTH = 55;
+  private const SIDEBAR_WIDTH = 60;
   private const SIDEBAR_PADDING = 3;
 
   private Pdf $pdf;
@@ -49,18 +49,8 @@ class MatchDayPdf {
   }
 
   public function render() {
-    // Calculate height
-    // Pairings + table fit on one page?
-    // 1) Render table below pairings
-    //    - Use a constant sidebar width
-    //    - If table is wider than the sidebar, don't show cross table
-    // 2) Render table next to pairings
-    //    - Render table first on first page
-    //    - Render infos below.
-    // => Infos always in the sidebar
-
-
     // 1. Render header.
+    // TODO: Footer
     $this->renderHeader();
 
     // 2. Render pairing list.
@@ -68,32 +58,44 @@ class MatchDayPdf {
     $this->pdf->rMargin += self::SIDEBAR_WIDTH + self::SIDEBAR_PADDING;
     $this->pairingList->render($this->pdf);
 
-    // 3. Render ranking below if it fits.
-    $rankingInSidebar = false;
+    // 3. Layout the ranking table.
     if ($this->ranking) {
       $this->ranking->layout($this->pdf);
-      if ($this->pdf->page > 1 || $this->ranking->height() > $this->pdf->availableLines()) {
-        // A. Not enough vertical space on the first page.
-        $rankingInSidebar = true;
-      // TODO: Check minWidth() (adjust name column as needed)
-      } else {
-        // C. Enough space, render below pairing list.
-        $this->ranking->render($this->pdf);
-      }
+      $rankingInSidebar = $this->ranking->height() > $this->pdf->availableLines() || $this->pdf->page > 1;
+      $wideRanking = $this->ranking->width() > $this->pdf->availableWidth();
+      $rankingPage = $this->pdf->page;
+      $rankingY = $this->pdf->y;
     }
 
     // 4. Render sidebar.
+    $prevMargin = $this->pdf->lMargin;
     $this->pdf->rMargin -= self::SIDEBAR_WIDTH + self::SIDEBAR_PADDING;
     $this->pdf->lMargin = $this->pdf->w - $this->pdf->rMargin - self::SIDEBAR_WIDTH;
     $this->pdf->x = $this->pdf->lMargin;
     $this->pdf->y = $yPairingList;
-    $this->pdf->onPage(1, function () use ($rankingInSidebar) {
+    [$sidebarPage, $sidebarY] = $this->pdf->onPage(1, function () use ($rankingInSidebar) {
       if ($rankingInSidebar) {
-        $this->ranking->render($this->pdf);
+        $this->ranking->deleteResultColumns();
+        $this->ranking->renderFitting($this->pdf);
         $this->pdf->Ln();
       }
       $this->renderInfos();
-    }); 
+      return [$this->pdf->page, $this->pdf->y];
+    });
+
+    // 5. Render ranking below both pairing list if not yet rendered.
+    if ($this->ranking && !$rankingInSidebar) {
+      $this->pdf->lMargin = $prevMargin;
+      $this->pdf->x = $this->pdf->lMargin;
+      // Make sure ranking doesn't overlap with sidebar.
+      if ($wideRanking && ($sidebarPage > $rankingPage || ($sidebarPage == $rankingPage && $sidebarY > $rankingY))) {
+        $this->ranking->deleteResultColumns();
+      }
+      $this->pdf->y = $rankingY;
+      $this->pdf->onPage($rankingPage, function () {
+        $this->ranking->render($this->pdf);
+      });
+    }
   }
   
   private function renderHeader() {

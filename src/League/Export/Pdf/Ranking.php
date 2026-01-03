@@ -7,14 +7,7 @@ use Nsv\Util\Pdf\Element;
 use Nsv\Util\Pdf\Pdf;
 use Nsv\Util\Pdf\Row;
 use Nsv\Util\Pdf\Table;
-use Nsv\Util\Pdf\TableCell;
-use Nsv\Util\Pdf\TableRow;
 
-/**
- * Ranking pdf element.
- * 
- * TODO: equal column widths for results
- */
 class Ranking implements Element {
   private const FILL_COLOURS = [
     "aufsteiger" => [197, 255, 161],
@@ -84,29 +77,55 @@ class Ranking implements Element {
   }
 
   /**
-   * Calculates widths for all cells.
+   * Sets the widths for all cells.
    */
   public function layout(Pdf $pdf) {
     $this->table->cellPadding = 3;
     $this->table->layout($pdf);
-    /*
-    // TODO: Use same width for all result columns.
 
-
-    $resultWdith = $place;
-    for ($i = 1; $i < $this->table->rowCount(); $i++) {
-      $colWidth = $this->table->desiredColumnWidth($this->pdf, 1 + $i);
-      if ($colWidth > $resultWdith) $resultWdith = $colWidth;
+    // Set all result columns to same width.
+    $maxWidth = 0;
+    for ($col = 2; $col < $this->table->columnCount() - 2; $col++) {
+      $maxWidth = max($maxWidth, $this->table->columnWidth($col));
     }
-    $resultWdiths = array_fill(0, $this->table->rowCount() - 1, $resultWdith + $padding);
-    */
+    for ($col = 2; $col < $this->table->columnCount() - 2; $col++) {
+      $this->table->setColumnWidth($col, $maxWidth);
+    }
+  }
+
+  public function width(): float {
+    return $this->table->width();
   }
 
   public function height(): float {
     return $this->table->height();
   }
 
+  public function deleteResultColumns() {
+    $table = new Table();
+    foreach ($this->table as $row) {
+      $newRow = new Row();
+      $newRow->addCell($row->cell(0));
+      $newRow->addCell($row->cell(1));
+      $newRow->addCell($row->cell($row->length() - 2));
+      $newRow->addCell($row->cell($row->length() - 1));
+      $newRow->marginBottom = $row->marginBottom;
+      $table->addRow($newRow);
+    }
+    $table->setColumnSpacing(1, 0);
+    $this->table = $table;
+  }
+
   public function render(Pdf $pdf) {
     $pdf->render($this->table);
+  }
+
+  /**
+   * Renders the ranking to fit the available width.
+   */
+  public function renderFitting(Pdf $pdf) {
+    $widthChange = $pdf->availableWidth() - $this->width();
+    $this->table->setColumnWidth(1, $this->table->columnWidth(1) + $widthChange);
+    $this->render($pdf);
   }
 }

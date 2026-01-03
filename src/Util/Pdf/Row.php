@@ -28,6 +28,10 @@ class Row implements Element, \IteratorAggregate {
     return new \ArrayIterator($this->cells);
   }
 
+  public function width(): float {
+    return array_sum(array_map(fn($cell) => $cell->width + $cell->marginRight, $this->cells));
+  }
+  
   /**
    * Returns the height of the row, which is defined as the 
    * maximum cell height in the row. The unit is in lines (line heights).
