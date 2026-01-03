@@ -55,46 +55,46 @@ class MatchDayPdf {
 
     // 2. Render pairing list.
     $yPairingList = $this->pdf->y;
-    $this->pdf->rMargin += self::SIDEBAR_WIDTH + self::SIDEBAR_PADDING;
-    $this->pairingList->render($this->pdf);
+    $this->pdf->with(
+      ['rMargin' => $this->pdf->rMargin + self::SIDEBAR_WIDTH + self::SIDEBAR_PADDING],
+      fn() => $this->pdf->render($this->pairingList)
+    );
 
     // 3. Layout the ranking table.
+    $rankingInSidebar = false;
     if ($this->ranking) {
       $this->ranking->layout($this->pdf);
       $rankingInSidebar = $this->ranking->height() > $this->pdf->availableLines() || $this->pdf->page > 1;
-      $wideRanking = $this->ranking->width() > $this->pdf->availableWidth();
-      $rankingPage = $this->pdf->page;
-      $rankingY = $this->pdf->y;
     }
 
     // 4. Render sidebar.
-    $prevMargin = $this->pdf->lMargin;
-    $this->pdf->rMargin -= self::SIDEBAR_WIDTH + self::SIDEBAR_PADDING;
-    $this->pdf->lMargin = $this->pdf->w - $this->pdf->rMargin - self::SIDEBAR_WIDTH;
-    $this->pdf->x = $this->pdf->lMargin;
-    $this->pdf->y = $yPairingList;
-    [$sidebarPage, $sidebarY] = $this->pdf->onPage(1, function () use ($rankingInSidebar) {
-      if ($rankingInSidebar) {
-        $this->ranking->deleteResultColumns();
-        $this->ranking->renderFitting($this->pdf);
-        $this->pdf->Ln();
+    $lMargin = $this->pdf->w - $this->pdf->rMargin - self::SIDEBAR_WIDTH;
+    [$sidebarPage, $sidebarY] = $this->pdf->with(
+      [
+        'lMargin' => $lMargin,
+        'x' => $lMargin,
+        'y' => $yPairingList,
+        'page' => 1,
+      ],
+      function () use ($rankingInSidebar) {
+        if ($rankingInSidebar) {
+          $this->ranking->deleteResultColumns();
+          $this->ranking->renderFitting($this->pdf);
+          $this->pdf->Ln();
+        }
+        $this->renderInfos();
+        return [$this->pdf->page, $this->pdf->y];
       }
-      $this->renderInfos();
-      return [$this->pdf->page, $this->pdf->y];
-    });
+    );
 
     // 5. Render ranking below both pairing list if not yet rendered.
     if ($this->ranking && !$rankingInSidebar) {
-      $this->pdf->lMargin = $prevMargin;
-      $this->pdf->x = $this->pdf->lMargin;
       // Make sure ranking doesn't overlap with sidebar.
-      if ($wideRanking && ($sidebarPage > $rankingPage || ($sidebarPage == $rankingPage && $sidebarY > $rankingY))) {
+      $wideRanking = $this->ranking->width() > $this->pdf->availableWidth() - self::SIDEBAR_WIDTH;
+      if ($wideRanking && [$sidebarPage, $sidebarY] > [$this->pdf->page, $this->pdf->y]) {
         $this->ranking->deleteResultColumns();
       }
-      $this->pdf->y = $rankingY;
-      $this->pdf->onPage($rankingPage, function () {
-        $this->ranking->render($this->pdf);
-      });
+      $this->ranking->render($this->pdf);
     }
   }
   
@@ -186,60 +186,6 @@ class MatchDayPdf {
       $this->pdf->Ln();
     }
   }
-
-  /*
-
-          // Schrift kleiner
-        $pdf->SetFont ( "", "", 9 );
-
-        // Bemerkungen
-        $content = "<B>Bemerkungen</B><BR>";
-        foreach ( $bemerkungen as $bemerkung )
-            $content .= "$bemerkung[0]$bemerkung[1]<BR><BR>";
-        if ( isset ( $data ['bemerkung'] ) && $data ['bemerkung'] )
-            $content .= str_replace ( "\r\n", "<BR>", str_replace ( "\n", "<BR>", $data ['bemerkung'] ) )."<BR>";
-
-        // Nachmeldungen
-        if ( count ( $data ['nachmeldungen'] ) && $options ['showNachmeldungen'] )
-        {
-            $lastteam = "";
-            foreach ( $data ['nachmeldungen'] as $nachmeldung )
-                if ( $nachmeldung ['berechtigtAb'] == $_GET ['r'] || $nachmeldung ['berechtigtAb'] == $_GET ['r'] + 1 )
-                {
-                    // Für jede Mannschaft eine Überschrift ausgeben
-                    if ( $nachmeldung ['mannschaft'] != $lastteam )
-                    {
-                        $lastteam = $nachmeldung ['mannschaft'];
-                        $content .= "<BR><B>Nachmeldung $lastteam</B><BR>";
-                    }
-
-                    // Nun den Spieler ausgeben
-                    if ( $options ['showPassNr'] )
-                        $content .= "$nachmeldung[passnr] ";
-                    $content .= "<A HREF='$urlbase?spieler=$nachmeldung[id]'>$nachmeldung[fullname]</A>";
-
-                    if ($nachmeldung ['berechtigtAb'] != $_GET ['r'])
-                        $content .= " (ab $nachmeldung[berechtigtAb]. Spieltag)<BR>";
-                    else
-                        $content .= "<BR>";
-                }
-        }
-
-        // Spieltag Vorschau
-        if ( $data ['vorschau'] && $options ['showSpieltagvorschau'] )
-        {
-            $content .= utf8_decode("<BR><B>Nächster Spieltag (".$data ['vorschautermin'].")</B><BR>");
-            $xtra = "";
-            foreach ( $data ['vorschau'] as $paarung )
-            {
-                $content .= "$xtra$paarung[mannschaft1] - $paarung[mannschaft2]";
-                $content .= $paarung['verlegung'] ? " ($paarung[verlegung])" : '';
-                $xtra = "<BR>";
-            }
-        }
-*/
-
-
 
   public function getResponse() {
     return $this->pdf->asResponse('Hello.pdf', Encoding::UNICODE_ENABLED);

@@ -16,6 +16,7 @@ class Pdf extends \FPDF /*Fpdf*/ {
   // TODO: set title and other metadata.
 
   public float $lineHeight;
+  public int $lastPage = 1;
 
   public function __construct() {
     parent::__construct();
@@ -86,24 +87,40 @@ class Pdf extends \FPDF /*Fpdf*/ {
   }
 
   /**
-   * Executes the callback on the given page.
+   * Executes the callback with the given properties set on the PDF.
+   * The given properties will be restored after the callback.
    */
-  public function onPage(int $page, callable $callback): mixed {
-    if ($page == $this->page) {
-      return $callback();
+  public function with(array $properties, callable $callback): mixed {
+    $prevValues = [];
+    foreach ($properties as $property => $value) {
+      $prevValues[$property] = $this->$property;
+      if ($property == 'page') {
+        $this->changePage($value);
+      } else {
+        $this->$property = $value;
+      }
     }
-    assert($page >= 1 && $page <= $this->page, "Page out of range");
-    $prevPage = $this->page;
-    $this->page = $page;
-    // Ensure that the correct font is active on the page.
-    $this->SetFont($this->FontFamily, $this->FontStyle, $this->FontSizePt);
     $result = $callback();
-    $this->page = max($prevPage, $this->page);
+    foreach ($prevValues as $property => $value) {
+      $this->$property = $value;
+    }
+    $this->lastPage = max($this->lastPage, $this->page);
     return $result;
+  }
+
+  public function changePage(int $page) {
+    if ($page != $this->page) {
+      assert($page <= $this->lastPage, "Tried to change to non-existing page $page.");
+      $this->page = $page;
+      // Work around a FPDF issue where the font is not correctly set
+      //$this->pdf->SetFont($this->pdf->FontFamily, 'B', $this->pdf->FontSizePt);
+     // $this->pdf->SetFont($this->pdf->FontFamily, '', $this->pdf->FontSizePt);
+    }
   }
 
   public function render(Element $element) {
     $element->render($this);
+    $this->lastPage = max($this->lastPage, $this->page);
   }
 
   public function Ln($height = null) {
@@ -112,6 +129,7 @@ class Pdf extends \FPDF /*Fpdf*/ {
  
   public function asResponse(string $filename, bool $isUtf8 = true): Response {
     //$body = $this->Output('S', $filename, $isUtf8);
+    $this->page = $this->lastPage;
     $body = $this->Output($filename, 'S');
     return new Response($body, 200, [
       'Content-Type' => 'application/pdf',
