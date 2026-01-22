@@ -1,0 +1,15 @@
+{% extends '@league/legacy-layout.html.twig' %}
+{% block content %}
+  <table>
+    <th>Team Name</th>
+  {% for team in dwzData %}
+    <tr>
+      <td>
+{{ team.team.name }}
+      </td>
+    </tr>
+  {% endfor %}
+  </table>
+
+
+{% endblock %}

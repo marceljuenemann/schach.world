@@ -89,6 +89,37 @@ class DivisionController extends AbstractLeagueController {
     }
   }
 
+  #[Route('{division}/statistik-kuerzer', 'statistik-kuerzer')]
+  public function statisticsShortened(StatisticsService $service): Response {
+
+    $division_name = $this->division->name;
+
+    $teams_with_active_players = $service->teams_with_active_players($this->division);
+    $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players, $this->division);
+    $dwzData = [];
+
+    // Check if any games have been played. Some leagues have been
+    // created, but no games were ever played and entered into the system.
+    if (!empty($service->all_games_division($this->division))
+      && !empty($service->create_topscorer_table($this->division))
+      && !empty($active_teams_with_players)) {
+      $dwzData = $service->teams_dwz_calculation($active_teams_with_players, $this->division);
+      $uppu = 'appa';
+      return $this->renderWithLegacySystem('division/statistics-shorter.html.twig', ['dwzData' => $dwzData]);
+    }
+
+
+  else {
+      // If no games have been played, just return the Division title.
+      // This relies on "strict_variables: false" in twig.yaml. Else
+      // the template would create errors due to missing content variables.
+      return $this->renderWithLegacySystem('statistics-shorter.html.twig',
+        [
+          'division_name' => $division_name,
+        ]);
+    }
+  }
+
   #[Route('{division}/{round}/pdf/', name: 'pdf')]
   public function pdf(int $round): Response {
     $this->initializeLegacySystem();
