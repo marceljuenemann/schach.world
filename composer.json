@@ -42,7 +42,8 @@
         "symfony/css-selector": "6.4.*",
         "symfony/maker-bundle": "^1.49",
         "symfony/phpunit-bridge": "^6.3",
-        "symfony/stopwatch": "6.4.*"
+        "symfony/stopwatch": "6.4.*",
+        "vimeo/psalm": "^6.14"
     },
     "config": {
         "allow-plugins": {

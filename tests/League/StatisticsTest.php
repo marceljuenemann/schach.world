@@ -12,6 +12,7 @@ use Nsv\League\Api\Service\StatisticsService;
 
 class StatisticsTest extends LeagueTestCase {
   use MatchesSnapshots;
+
   private StatisticsService $statisticsService;
 
   protected function setUp(): void {
@@ -22,6 +23,11 @@ class StatisticsTest extends LeagueTestCase {
   public function testRegularStatistics(): void {
     $division = $this->division('bezirk1-1718', 'kreisliga-ost');
     $uppi = 3;
+  }
+
+  private function dwzCalculationProvider(): \Generator {
+    yield 'Bezirk Hannover Kreisliga Ost 17/18' => ['bezirk1-1718', 'kreisliga-ost'];
+    yield 'Bezirk Hannover Bezirksliga 18/19' => ['bezirk1-1718', 'kreisliga-ost'];
   }
 
   private function division(string $leaguePath, string $divisionPath): Division {
