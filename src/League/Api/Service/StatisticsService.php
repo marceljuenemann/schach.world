@@ -802,6 +802,14 @@ class StatisticsService {
   }
 
   /**
+   * Calculate topscorer data. Extract the calculation from create_topscorer_table
+   * without the HTML table generation.
+   */
+  public function calculate_topscorer($division): array {
+
+  }
+
+  /**
    * Create the table array for topscorers that
    * is sent to the template in the controller.
    */
