@@ -25,10 +25,10 @@ class StatisticsTest extends LeagueTestCase {
    * @return void
    */
   #[DataProvider('dwzCalculationProvider')]
-  public function testRegulardwzCalculation($league, $division): void {
+  public function testSnapshotRegulardwzCalculation($league, $division): void {
     $division = $this->division($league, $division);
-    $teams_with_active_players = $this->statisticsService->teams_with_active_players($this->division);
-    $active_teams_with_players = $this->statisticsService->active_teams_with_players($teams_with_active_players, $this->division);
+    $teams_with_active_players = $this->statisticsService->teams_with_active_players($division);
+    $active_teams_with_players = $this->statisticsService->active_teams_with_players($teams_with_active_players, $division);
     $dwzCalculationData = $this->statisticsService->teams_dwz_calculation($active_teams_with_players, $division);
     $this->assertMatchesSnapshot($dwzCalculationData);
   }
