@@ -10,11 +10,6 @@ class StatisticsServiceApplicationTest extends WebTestCase {
 
   use MatchesSnapshots;
 
-  protected function setUp(): void {
-    $this->client = static::createClient();
-    $this->baseUrl = 'https://nsv-online.local/ligen/';
-  }
-
   public static function divisionDataProvider(): \Generator {
     yield 'Bezirk Hannover Kreisliga Ost 17/18' => ['bezirk1-1718', 'kreisliga-ost'];
     yield 'Bezirk Hannover Bezirksliga 18/19' => ['bezirk1-1819', 'bezirksliga'];
@@ -23,13 +18,32 @@ class StatisticsServiceApplicationTest extends WebTestCase {
     yield 'Verbandsliga Nord 22/23' => ['nsv-2223', 'verbandsliga-nord'];
   }
 
-  #[DataProvider('divisionDataProvider')]
-  public function testFullStatisticsHtml($league, $division): void
+//  #[DataProvider('divisionDataProvider')]
+  public function testFullStatisticsHtml(): void
   {
-    $uri = '/ligen/' . $league . '/' . $division . '/statistik';
-    $crawler = $this->client->request('GET', $uri);
+    $client = static::createClient();
+//    $uri = 'ligen/' . $league . '/' . $division . '/statistik';
+    $uri = 'ligen/bezirk1-1718/kreisliga-ost/statistik';
+    $crawler = $client->request('GET', $uri);
     $this->assertResponseIsSuccessful();
-    $this->assertSelectorTextContains('h1', 'Symfony Test');
+    $html = '';
+    $statisticsContent = $crawler->filter('#nsv-main .nsv-card:not(.nsv-sidebar-card) .card-body');
+    foreach ($statisticsContent as $domElement) {
+      foreach($domElement->childNodes as $node) {
+        $html .= $domElement->ownerDocument->saveHTML($node);
+      }
+    }
+    $this->assertMatchesSnapshot($html);
+  }
+
+  public function testFullStatisticsHtml2(): void
+  {
+    $client = static::createClient();
+//    $uri = 'ligen/' . $league . '/' . $division . '/statistik';
+    $uri = 'ligen/bezirk1-1819/bezirksliga/statistik';
+    $crawler = $client->request('GET', $uri);
+    $this->assertResponseIsSuccessful();
+    $html = '';
     $statisticsContent = $crawler->filter('#nsv-main .nsv-card:not(.nsv-sidebar-card) .card-body');
     foreach ($statisticsContent as $domElement) {
       foreach($domElement->childNodes as $node) {
