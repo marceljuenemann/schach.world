@@ -9,11 +9,12 @@
         <tr>
             {% for cell in table_data.header %}
                 {# Set the title attribute for the th @TODO: find a more elegant way #}
-                {% if cell.title %}
-                    {% set cell_title = cell.title%}
-                {% else %}
-                    {% set cell_title = '' %}
-                {% endif %}
+              {% set cell_title = '' %}
+{#                {% if cell.title %}#}
+{#                    {% set cell_title = cell.title%}#}
+{#                {% else %}#}
+{#                    {% set cell_title = '' %}#}
+{#                {% endif %}#}
 
                 {# TODO: Remove usage of raw #}
                 <th class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>{{ cell.text|raw}}</th>
@@ -23,19 +24,20 @@
             <tr>
                 {% for cell in row %}
                     {# Set the title attribute for the td. @TODO: find a more elegant way #}
-                    {% if cell.title %}
-                        {% set cell_title = cell.title%}
-                    {% else %}
-                        {% set cell_title = '' %}
-                    {% endif %}
+                  {% set cell_title = '' %}
+{#                    {% if cell.title %}#}
+{#                        {% set cell_title = cell.title%}#}
+{#                    {% else %}#}
+{#                        {% set cell_title = '' %}#}
+{#                    {% endif %}#}
 
-                    {% if cell.link %}
-                        <td class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>
-                            {{ _self.table_link(cell.link, cell.text) }}
-                        </td>
-                    {% else %}
+{#                    {% if cell.link %}#}
+{#                        <td class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>#}
+{#                            {{ _self.table_link(cell.link, cell.text) }}#}
+{#                        </td>#}
+{#                    {% else %}#}
                         <td class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>{{ cell.text }}</td>
-                    {% endif %}
+{#                    {% endif %}#}
                 {% endfor %}
             </tr>
         {% endfor %}

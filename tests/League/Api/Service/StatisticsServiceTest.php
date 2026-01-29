@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\League\Api\Service;
+namespace League\Api\Service;
 
 use Nsv\League\Api\Service\StatisticsService;
 use Nsv\League\Entity\Division;

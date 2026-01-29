@@ -104,7 +104,6 @@ class DivisionController extends AbstractLeagueController {
       && !empty($service->create_topscorer_table($this->division))
       && !empty($active_teams_with_players)) {
       $dwzData = $service->teams_dwz_calculation($active_teams_with_players, $this->division);
-      $uppu = 'appa';
       return $this->renderWithLegacySystem('division/statistics-shorter.html.twig', ['dwzData' => $dwzData]);
     }
 
