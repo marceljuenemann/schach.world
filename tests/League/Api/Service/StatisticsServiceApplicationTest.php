@@ -18,12 +18,11 @@ class StatisticsServiceApplicationTest extends WebTestCase {
     yield 'Verbandsliga Nord 22/23' => ['nsv-2223', 'verbandsliga-nord'];
   }
 
-//  #[DataProvider('divisionDataProvider')]
-  public function testFullStatisticsHtml(): void
+  #[DataProvider('divisionDataProvider')]
+  public function testFullStatisticsHtml($league, $division): void
   {
     $client = static::createClient();
-//    $uri = 'ligen/' . $league . '/' . $division . '/statistik';
-    $uri = 'ligen/bezirk1-1718/kreisliga-ost/statistik';
+    $uri = 'ligen/' . $league . '/' . $division . '/statistik';
     $crawler = $client->request('GET', $uri);
     $this->assertResponseIsSuccessful();
     $html = '';
@@ -36,20 +35,8 @@ class StatisticsServiceApplicationTest extends WebTestCase {
     $this->assertMatchesSnapshot($html);
   }
 
-  public function testFullStatisticsHtml2(): void
+  public function tearDown(): void
   {
-    $client = static::createClient();
-//    $uri = 'ligen/' . $league . '/' . $division . '/statistik';
-    $uri = 'ligen/bezirk1-1819/bezirksliga/statistik';
-    $crawler = $client->request('GET', $uri);
-    $this->assertResponseIsSuccessful();
-    $html = '';
-    $statisticsContent = $crawler->filter('#nsv-main .nsv-card:not(.nsv-sidebar-card) .card-body');
-    foreach ($statisticsContent as $domElement) {
-      foreach($domElement->childNodes as $node) {
-        $html .= $domElement->ownerDocument->saveHTML($node);
-      }
-    }
-    $this->assertMatchesSnapshot($html);
+    parent::tearDown();
   }
 }
