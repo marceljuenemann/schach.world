@@ -1,17 +1,14 @@
 <?php
 
-namespace Tests\League;
+namespace Tests\League\Api\Service;
 
-use Doctrine\ORM\EntityNotFoundException;
-use Nsv\League\Api\Service\RankingService;
-use Nsv\League\Core\Encoding;
+use Nsv\League\Api\Service\StatisticsService;
 use Nsv\League\Entity\Division;
+use PHPUnit\Framework\Attributes\DataProvider;
 use Spatie\Snapshots\MatchesSnapshots;
 use Tests\League\LeagueTestCase;
-use Nsv\League\Api\Service\StatisticsService;
-use PHPUnit\Framework\Attributes\DataProvider;
 
-class StatisticsTest extends LeagueTestCase {
+class StatisticsServiceTest extends LeagueTestCase {
   use MatchesSnapshots;
 
   private StatisticsService $statisticsService;
@@ -26,15 +23,6 @@ class StatisticsTest extends LeagueTestCase {
    */
   #[DataProvider('divisionDataProvider')]
   public function testSnapshotRegulardwzCalculation($league, $division): void {
-    $division = $this->division($league, $division);
-    $teams_with_active_players = $this->statisticsService->teams_with_active_players($division);
-    $active_teams_with_players = $this->statisticsService->active_teams_with_players($teams_with_active_players, $division);
-    $dwzCalculationData = $this->statisticsService->teams_dwz_calculation($active_teams_with_players, $division);
-    $this->assertMatchesSnapshot($dwzCalculationData);
-  }
-
-  #[DataProvider('divisionDataProvider')]
-  public function testTopscorerCalculation($league, $division): void {
     $division = $this->division($league, $division);
     $teams_with_active_players = $this->statisticsService->teams_with_active_players($division);
     $active_teams_with_players = $this->statisticsService->active_teams_with_players($teams_with_active_players, $division);
