@@ -12,12 +12,14 @@
               {% set cell_title = '' %}
                 {% if cell.title %}
                     {% set cell_title = cell.title%}
+                  <th class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>{{ cell.text|raw}}</th>
                 {% else %}
                     {% set cell_title = '' %}
+                  <th class="{{ cell.class }}">{{ cell.text|raw}}</th>
                 {% endif %}
 
                 {# TODO: Remove usage of raw #}
-                <th class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>{{ cell.text|raw}}</th>
+
             {% endfor %}
         </tr>
         {% for row in table_data.body %}
