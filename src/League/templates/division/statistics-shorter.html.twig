@@ -21,16 +21,34 @@
     </th>
     {% for team in dwzData %}
       {# Set additional class values depending on if a team is leading in
-      a particular statistic #}
+      a particular statistic. This could be written shorter with ternary operators.
+      I was too lazy for the moment to figure it out on combination with set #}
+      {% set dwz_rank = '' %}
+      {% set top_dwz_rank = '' %}
+      {% set all_dwz_rank = '' %}
+      {% set age_rank = '' %}
+      {% if team.dwz_rank == 'top' %}
+        {% set dwz_rank = 'fw-bold' %}
+      {% endif %}
+      {% if team.top_dwz_rank == 'top' %}
+        {% set top_dwz_rank = 'fw-bold' %}
+      {% endif %}
+      {% if team.all_dwz_rank == 'top' %}
+        {% set all_dwz_rank = 'fw-bold' %}
+      {% endif %}
+      {% if team.age_rank == 'top' %}
+        {% set age_rank = 'fw-bold' %}
+      {% endif %}
+
       <tr>
         <td class="team"><a href="{{ team.team.uri }}">
             {{ team.team.name }}
           </a>
         </td>
-        <td class="active-dwz">{{ team.active_dwz_average }}</td>
-        <td class="top-dwz">{{ team.top_x_dwz_average }}</td>
-        <td class="all-dwz">{{ team.all_dwz_average }}</td>
-        <td class="age">{{ team.active_age_average }}</td>
+        <td class="active-dwz {{ dwz_rank }}">{{ team.active_dwz_average }}</td>
+        <td class="top-dwz {{ top_dwz_rank }}">{{ team.top_x_dwz_average }}</td>
+        <td class="all-dwz {{ all_dwz_rank }}">{{ team.all_dwz_average }}</td>
+        <td class="age {{ age_rank }}">{{ team.active_age_average }}</td>
       </tr>
     {% endfor %}
   </table>
