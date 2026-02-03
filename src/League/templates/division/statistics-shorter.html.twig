@@ -51,6 +51,13 @@
         <td class="age {{ age_rank }}">{{ team.active_age_average }}</td>
       </tr>
     {% endfor %}
+    <tr>
+      <td class="average-active fw-bold">Durchschnitt:</td>
+      <td class="average-active fw-bold">{{ dwzAdditionalData.averageValues.dwzActive }}</td>
+      <td class="average-top fw-bold">{{ dwzAdditionalData.averageValues.dwzTop }}</td>
+      <td class="average-all fw-bold">{{ dwzAdditionalData.averageValues.dwzAll }}</td>
+      <td class="average-age fw-bold">{{ dwzAdditionalData.averageValues.age }}</td>
+    </tr>
   </table>
 
 

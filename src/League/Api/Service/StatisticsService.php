@@ -644,9 +644,34 @@ class StatisticsService {
     $dwzData = $this->teams_dwz_calculation($active_teams_with_players, $division);
     $boardCount = $division->config('boardCount');
     $dwzAdditionalData['boardCount'] = $boardCount;
+    // Calculate averages for the last row of the table.
 
-    // @TODO: The last row of the DWZ table shows an average for all teams.
-    // @TODO: This needs to be calculated.
+    $average_sums = [
+      'dwz_active' => (int) 0,
+      'dwz_top' => (int) 0,
+      'dwz_all' => (int) 0,
+      'age' => (int) 0,
+    ];
+
+    $team_count = count($dwzData);
+
+    foreach ($dwzData as $team) {
+      $average_sums['dwz_active'] += $team['active_dwz_average'];
+      $average_sums['dwz_top'] += $team['top_x_dwz_average'];
+      $average_sums['dwz_all'] += $team['all_dwz_average'];
+      $average_sums['age'] += $team['active_age_average'];
+    }
+
+
+
+    $average_values = [
+      'dwzActive' => round($average_sums['dwz_active'] / $team_count),
+      'dwzTop' => round($average_sums['dwz_top'] / $team_count),
+      'dwzAll' => round($average_sums['dwz_all'] / $team_count),
+      'age' => round($average_sums['age'] / $team_count),
+    ];
+
+    $dwzAdditionalData['averageValues'] = $average_values;
 
     return $dwzAdditionalData;
   }

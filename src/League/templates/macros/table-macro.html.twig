@@ -25,6 +25,17 @@
         {% for row in table_data.body %}
             <tr>
                 {% for cell in row %}
+                  {# The old implementation output some broken HTML because it did not cater for the fact that the title was not set. In combination with the link that has more
+                  cases we need to cover
+                    {% if cell.title and cell.link %}
+                        {% set cell_title = cell.title%}
+                    {% elseif cell.title and not cell.link %}
+                        {% set cell_title = '' %}
+                    {% elseif cell.link and not cell.title %}
+                      {# Neither link nor title are set #}
+                  {#
+                  {% else %}
+                  #}
                     {# Set the title attribute for the td. @TODO: find a more elegant way #}
                     {% if cell.title %}
                         {% set cell_title = cell.title%}
