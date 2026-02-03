@@ -634,6 +634,23 @@ class StatisticsService {
     return $players;
   }
 
+  /**
+   * Extract all calculations that are made in create_dwz_statistics_table(),
+   * since ultimately we want to delete that method.
+   * We don't do that inside teams_dwz_calculation() since we want to touch
+   * the original code as little as possible.
+   */
+  public function dwz_statistics_additional_data($active_teams_with_players, $division): array {
+    $dwzData = $this->teams_dwz_calculation($active_teams_with_players, $division);
+    $boardCount = $division->config('boardCount');
+    $dwzAdditionalData['boardCount'] = $boardCount;
+
+    // @TODO: The last row of the DWZ table shows an average for all teams.
+    // @TODO: This needs to be calculated.
+
+    return $dwzAdditionalData;
+  }
+
 
   /**
    * Create the table array for DWZ statistics that
