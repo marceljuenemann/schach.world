@@ -91,11 +91,11 @@ class StatisticsService {
     $teams_already_added_ids = [];
     $teams_by_division = [];
     foreach ($all_pairings_division as $pairing) {
-      if(!in_array($pairing->team1->id, $teams_already_added_ids)) {
+      if (!in_array($pairing->team1->id, $teams_already_added_ids)) {
         $teams_by_division[] = $pairing->team1;
         $teams_already_added_ids[] = $pairing->team1->id;
       }
-      if(!in_array($pairing->team2->id, $teams_already_added_ids)) {
+      if (!in_array($pairing->team2->id, $teams_already_added_ids)) {
         $teams_by_division[] = $pairing->team2;
         $teams_already_added_ids[] = $pairing->team2->id;
       }
@@ -104,14 +104,12 @@ class StatisticsService {
     // add the pairings to the teams
     foreach ($teams_by_division as &$team) {
       $teams_with_active_players[$team->id]['team'] = $team;
-      foreach($all_pairings_division as $pairing) {
-        if($pairing->team1->id == $team->id || $pairing->team2->id == $team->id) {
+      foreach ($all_pairings_division as $pairing) {
+        if ($pairing->team1->id == $team->id || $pairing->team2->id == $team->id) {
           $teams_with_active_players[$team->id]['pairings'][] = $pairing;
         }
       }
     }
-
-
 
 
     // Now extract the players from the pairings and add to each player the games he has played.
@@ -152,7 +150,7 @@ class StatisticsService {
             }
           }
         }
-    }
+      }
       // Remove teams that have not played any game
       if (empty($team['active_players'])) {
         unset($teams_with_active_players[$key]);
@@ -213,7 +211,7 @@ class StatisticsService {
             // the player's games.
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
-              if(Result::wasPlayed($game->result1) && Result::wasPlayed($game->result2)) {
+              if (Result::wasPlayed($game->result1) && Result::wasPlayed($game->result2)) {
                 $player['games'][] = $game;
               }
               if (!empty($game->board && !in_array($game->board, $boards_played))) {
@@ -232,7 +230,7 @@ class StatisticsService {
           if (is_object($game->player2) && $game->player2->id == $player['player']->id) {
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
-              if(Result::wasPlayed($game->result1) && Result::wasPlayed($game->result2)) {
+              if (Result::wasPlayed($game->result1) && Result::wasPlayed($game->result2)) {
                 $player['games'][] = $game;
               }
               if (!empty($game->board && !in_array($game->board, $boards_played))) {
@@ -349,13 +347,11 @@ class StatisticsService {
 
         $league_playing_year = $division->league->year;
 
-        if(empty($league_playing_year)) {
+        if (empty($league_playing_year)) {
           // Use the current year as a fallback if no starting year
           // is set in the league.
           $league_playing_year = $current_year;
         }
-
-
 
 
         $games_played = count($player['games_played']);
@@ -663,7 +659,6 @@ class StatisticsService {
     }
 
 
-
     $average_values = [
       'dwzActive' => round($average_sums['dwz_active'] / $team_count),
       'dwzTop' => round($average_sums['dwz_top'] / $team_count),
@@ -853,7 +848,73 @@ class StatisticsService {
    * without the HTML table generation.
    */
   public function calculate_topscorer($division): array {
+    $all_games = $this->all_games_division($division);
+    $active_players = $this->active_players_division($all_games);
+    $active_players_with_games = $this->active_players_with_games($active_players, $all_games);
+    $players_with_games_by_points_and_games = $this->players_sorted_by_points_and_games($active_players_with_games);
+    $players_with_games_by_draws = $this->players_sorted_by_draws($active_players_with_games);
+    $top_ten_drawers = array_slice($players_with_games_by_draws, 0, 10, TRUE);
+    $top_ten_scorers = array_slice($players_with_games_by_points_and_games, 0, 10, TRUE);
 
+    $topscorerData = [];
+
+    // find the topscorer(s) and the draw king(s)
+    $first_player = reset($top_ten_scorers);
+    $highest_points_score = $first_player['points'];
+    // The lowest game score of the players with the most points
+    $lowest_game_score = count($first_player['games']);
+    $top_scorers = [];
+
+
+    foreach ($top_ten_scorers as $key => $player) {
+      $player_name = $player['player']->name();
+      $player_uri = $player['player']->uri();
+      $dwz = $player['player']->dwz ? $player['player']->dwz:'';
+      $team = $player['player']->team->nameWithNumber();
+      $team_uri = $player['player']->team->uri();
+      $board = $player['boards_played'] ?? '';
+      $games_count = count($player['games']);
+      $points = $player['points'];
+
+      // Collect the top scorers
+      if ($player['points'] == $highest_points_score && $games_count == $lowest_game_score) {
+        $top_scorers[] = $player;
+      }
+    }
+
+    $text_top_scorers = [];
+    foreach ($top_scorers as $key => $scorer) {
+      $text_top_scorers[$key]['player_name'] = $scorer['player']->name();
+      $text_top_scorers[$key]['player_uri'] = $scorer['player']->uri();
+      $text_top_scorers[$key]['team_name'] = $scorer['player']->team->nameWithNumber();
+      $text_top_scorers[$key]['team_uri'] = $scorer['player']->team->uri();
+    }
+
+    // Collect the draw kings
+    $first_drawer = reset($top_ten_drawers);
+    $highest_draw_score = $first_drawer['draws'];
+    $draw_kings = [];
+
+    foreach ($top_ten_drawers as $drawer) {
+      if ($drawer['draws'] == $highest_draw_score) {
+        $draw_kings[] = $drawer;
+      }
+    }
+    $text_draw_kings = [];
+    foreach ($draw_kings as $key => $drawer) {
+      $text_draw_kings[$key]['player_name'] = $drawer['player']->name();
+      $text_draw_kings[$key]['player_uri'] = $drawer['player']->uri();
+      $text_draw_kings[$key]['team_name'] = $drawer['player']->team->nameWithNumber();
+      $text_draw_kings[$key]['team_uri'] = $drawer['player']->team->uri();
+    }
+
+    $topscorerData['text_values']['text_top_scorers'] = $text_top_scorers;
+    $topscorerData['text_values']['text_draw_kings'] = $text_draw_kings;
+    $topscorerData['text_values']['highest_point_score'] = $highest_points_score;
+    $topscorerData['text_values']['lowest_game_score'] = $lowest_game_score;
+    $topscorerData['text_values']['highest_draw_score'] = $highest_draw_score;
+
+    return $topscorerData;
   }
 
   /**
@@ -894,7 +955,7 @@ class StatisticsService {
       foreach ($top_ten_scorers as $key => $player) {
         $player_name = $player['player']->name();
         $player_uri = $player['player']->uri();
-        $dwz = $player['player']->dwz ? $player['player']->dwz : '';
+        $dwz = $player['player']->dwz ? $player['player']->dwz:'';
         $team = $player['player']->team->nameWithNumber();
         $team_uri = $player['player']->team->uri();
         $board = $player['boards_played'] ?? '';
