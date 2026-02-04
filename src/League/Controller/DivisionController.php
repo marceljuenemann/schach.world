@@ -106,8 +106,17 @@ class DivisionController extends AbstractLeagueController {
       $dwzData = $service->teams_dwz_calculation($active_teams_with_players, $this->division);
       $dwzAdditionalData = $service->dwz_statistics_additional_data($active_teams_with_players, $this->division);
 
+      $introTextValues['dwzTextValues'] = $dwzAdditionalData['dwzTextValues'];
 
-      return $this->renderWithLegacySystem('division/statistics-shorter.html.twig', ['dwzData' => $dwzData, 'dwzAdditionalData' => $dwzAdditionalData]);
+
+      return $this->renderWithLegacySystem('division/statistics-shorter.html.twig',
+        [
+          'division_name' => $division_name,
+          /*'introTextValues' => $introTextValues,*/
+          'dwzData' => $dwzData,
+          'dwzAdditionalData' => $dwzAdditionalData,
+          'tabs' => $this->divisionTabs('stats')
+        ]);
     }
 
 
@@ -118,6 +127,7 @@ class DivisionController extends AbstractLeagueController {
       return $this->renderWithLegacySystem('statistics-shorter.html.twig',
         [
           'division_name' => $division_name,
+          'tabs' => $this->divisionTabs('stats')
         ]);
     }
   }

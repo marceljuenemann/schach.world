@@ -673,6 +673,11 @@ class StatisticsService {
 
     $dwzAdditionalData['averageValues'] = $average_values;
 
+    $dwzAdditionalData['dwzTextValues'] = [
+      'dwzActiveAverage' => $average_values['dwzActive'],
+      'ageAverage' => $average_values['age'],
+    ];
+
     return $dwzAdditionalData;
   }
 

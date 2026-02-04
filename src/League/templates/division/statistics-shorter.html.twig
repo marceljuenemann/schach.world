@@ -1,7 +1,40 @@
 {% extends '@league/legacy-layout.html.twig' %}
+{% import "@league/macros/players-clubs-macro.html.twig" as players_clubs_macro %}
 {% import "macros.html.twig" as nsv %}
-{% set tooltip_age_average = ISO-8859-1 %}
+{% set title = division_name %}
 {% block content %}
+  {{ nsv.tabNavigation(tabs) }}
+
+  {% if introTextValues %}
+    <div class="statistics-container">
+      <p>Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine <strong>DWZ
+          von {{ introTextValues.dwzTextValues.dwzActiveAverage }}</strong> und ist
+        <strong>{{ introTextValues.dwzTextValues.ageAverage }}</strong> Jahre alt.</p>
+
+      <p>{% if introTextValues.text_top_scorers|length == 1 %}Der Top-Scorer mit {{ introTextValues.highest_point_score }} Punkten aus {{ introTextValues.lowest_game_score }} Partien ist:
+        {% else %}
+          Die Top-Scorer mit {{ introTextValues.highest_point_score }} Punkten aus {{ introTextValues.lowest_game_score }} Partien sind:
+        {% endif %}
+        {{ players_clubs_macro.players_clubs(introTextValues.text_top_scorers) }}.<br>
+
+        {% if introTextValues.highest_draw_score > 0 %}
+          {% if introTextValues.text_draw_kings|length == 1 %}Der Remisk&ouml;nig mit {{ introTextValues.highest_draw_score }} Remis ist
+          {% else %}
+            Die Remisk&ouml;nige mit {{ introTextValues.highest_draw_score }} Remis sind
+          {% endif %}
+          {{ players_clubs_macro.players_clubs(introTextValues.text_draw_kings) }}.
+        {% endif %}
+      </p>
+
+      <p>{{ introTextValues.sum_forfeit_losses }} Spiele wurden kampflos verloren gegeben, das sind
+        <strong>{{ introTextValues.forfeit_percentage }}%</strong>. Von
+        den {{ introTextValues.sum_game_count_played }} wirklich gespielten Partien sind
+        <strong>{{ introTextValues.average_draws }}%</strong> Remis ausgegangen. Die Wei&szlig;spieler haben
+        einen Score von <strong>{{ introTextValues.average_white_score }}%</strong>, der Score von Schwarz ist
+        <strong>{{ introTextValues.average_black_score }}%</strong>.</p>
+
+
+
   <h4 class="mt-4">DWZ-Statistik</h4>
   <table class="nsv-table borders-bold text-center text-nowrap statistics-dwz">
     <th class="team">Team Name</th>
@@ -21,24 +54,11 @@
     </th>
     {% for team in dwzData %}
       {# Set additional class values depending on if a team is leading in
-      a particular statistic. This could be written shorter with ternary operators.
-      I was too lazy for the moment to figure it out on combination with set #}
-      {% set dwz_rank = '' %}
-      {% set top_dwz_rank = '' %}
-      {% set all_dwz_rank = '' %}
-      {% set age_rank = '' %}
-      {% if team.dwz_rank == 'top' %}
-        {% set dwz_rank = 'fw-bold' %}
-      {% endif %}
-      {% if team.top_dwz_rank == 'top' %}
-        {% set top_dwz_rank = 'fw-bold' %}
-      {% endif %}
-      {% if team.all_dwz_rank == 'top' %}
-        {% set all_dwz_rank = 'fw-bold' %}
-      {% endif %}
-      {% if team.age_rank == 'top' %}
-        {% set age_rank = 'fw-bold' %}
-      {% endif %}
+      a particular statistic. Leading values are displayed as bold. #}
+      {% set dwz_rank = team.dwz_rank == 'top' ? 'fw-bold' : '' %}
+      {% set top_dwz_rank = team.top_dwz_rank == 'top' ? 'fw-bold' : '' %}
+      {% set all_dwz_rank = team.all_dwz_rank == 'top' ? 'fw-bold' : '' %}
+      {% set age_rank = team.age_rank == 'top' ? 'fw-bold' : '' %}
 
       <tr>
         <td class="team"><a href="{{ team.team.uri }}">
@@ -59,6 +79,16 @@
       <td class="average-age fw-bold">{{ dwzAdditionalData.averageValues.age }}</td>
     </tr>
   </table>
+      <h4 class="mt-4">Topscorer</h4>
+
+
+      <h4 class="mt-4">Spiel-Statistik</h4>
+
+
+    </div>
+  {% else %}
+    <p>Es wurden nicht genug Partien ausgetragen, um sinnvolle Statistik-Daten anzuzeigen.</p>
+  {% endif %}
 
 
 {% endblock %}
