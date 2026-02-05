@@ -866,22 +866,18 @@ class StatisticsService {
     $top_scorers = [];
 
 
-    foreach ($top_ten_scorers as $key => $player) {
-      $player_name = $player['player']->name();
-      $player_uri = $player['player']->uri();
-      $dwz = $player['player']->dwz ? $player['player']->dwz:'';
-      $team = $player['player']->team->nameWithNumber();
-      $team_uri = $player['player']->team->uri();
-      $board = $player['boards_played'] ?? '';
+    foreach ($top_ten_scorers as $key => &$player) {
       $games_count = count($player['games']);
-      $points = $player['points'];
-
+      $player['games_count'] = $games_count;
       // Collect the top scorers
       if ($player['points'] == $highest_points_score && $games_count == $lowest_game_score) {
         $top_scorers[] = $player;
       }
     }
 
+    $topscorerData['topTenScorers'] = $top_ten_scorers;
+
+    // Create the text values for the top scorers
     $text_top_scorers = [];
     foreach ($top_scorers as $key => $scorer) {
       $text_top_scorers[$key]['player_name'] = $scorer['player']->name();
@@ -900,6 +896,7 @@ class StatisticsService {
         $draw_kings[] = $drawer;
       }
     }
+    // Create the text values for the top drawers
     $text_draw_kings = [];
     foreach ($draw_kings as $key => $drawer) {
       $text_draw_kings[$key]['player_name'] = $drawer['player']->name();

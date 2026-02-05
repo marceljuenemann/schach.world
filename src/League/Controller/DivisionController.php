@@ -117,6 +117,7 @@ class DivisionController extends AbstractLeagueController {
           'introTextValues' => $introTextValues,
           'dwzData' => $dwzData,
           'dwzAdditionalData' => $dwzAdditionalData,
+          'topScorerData' => $topScorerData,
           'tabs' => $this->divisionTabs('stats')
         ]);
     }

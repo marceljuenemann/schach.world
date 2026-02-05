@@ -11,18 +11,18 @@
           von {{ introTextValues.dwzTextValues.dwzActiveAverage }}</strong> und ist
         <strong>{{ introTextValues.dwzTextValues.ageAverage }}</strong> Jahre alt.</p>
 
-      <p>{% if introTextValues.text_top_scorers|length == 1 %}Der Top-Scorer mit {{ introTextValues.highest_point_score }} Punkten aus {{ introTextValues.lowest_game_score }} Partien ist:
+      <p>{% if topScorerData.text_values.text_top_scorers|length == 1 %}Der Top-Scorer mit {{ topScorerData.text_values.highest_point_score }} Punkten aus {{ topScorerData.text_values.lowest_game_score }} Partien ist:
         {% else %}
-          Die Top-Scorer mit {{ introTextValues.highest_point_score }} Punkten aus {{ introTextValues.lowest_game_score }} Partien sind:
+          Die Top-Scorer mit {{ topScorerData.text_values.highest_point_score }} Punkten aus {{ topScorerData.text_values.lowest_game_score }} Partien sind:
         {% endif %}
-        {{ players_clubs_macro.players_clubs(introTextValues.text_top_scorers) }}.<br>
+        {{ players_clubs_macro.players_clubs(topScorerData.text_values.text_top_scorers) }}.<br>
 
-        {% if introTextValues.highest_draw_score > 0 %}
-          {% if introTextValues.text_draw_kings|length == 1 %}Der Remisk&ouml;nig mit {{ introTextValues.highest_draw_score }} Remis ist
+        {% if topScorerData.text_values.highest_draw_score > 0 %}
+          {% if topScorerData.text_values.text_draw_kings|length == 1 %}Der Remisk&ouml;nig mit {{ topScorerData.text_values.highest_draw_score }} Remis ist
           {% else %}
-            Die Remisk&ouml;nige mit {{ introTextValues.highest_draw_score }} Remis sind
+            Die Remisk&ouml;nige mit {{ topScorerData.text_values.highest_draw_score }} Remis sind
           {% endif %}
-          {{ players_clubs_macro.players_clubs(introTextValues.text_draw_kings) }}.
+          {{ players_clubs_macro.players_clubs(topScorerData.text_values.text_draw_kings) }}.
         {% endif %}
       </p>
 
@@ -34,52 +34,73 @@
         <strong>{{ introTextValues.average_black_score }}%</strong>.</p>
 
 
-
-  <h4 class="mt-4">DWZ-Statistik</h4>
-  <table class="nsv-table borders-bold text-center text-nowrap statistics-dwz">
-    <th class="team">Team Name</th>
-    <th
-      class="active" {{ nsv.tooltip_top('DWZ Durchschnitt der Spieler, die tats&auml;chlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
-      Eingesetzte
-    </th>
-    <th
-      class="top" {{ nsv.tooltip_top('Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
-      Top {{ dwzAdditionalData.boardCount }}</th>
-    <th
-      class="all" {{ nsv.tooltip_top('Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
-      Alle Spieler
-    </th>
-    <th class="age" {{ nsv.tooltip_top('Durchschnittliches Alter der Spieler, die tats&auml;chlich gespielt haben.') }}>
-      Alter &#8709;
-    </th>
-    {% for team in dwzData %}
-      {# Set additional class values depending on if a team is leading in
+      <h4 class="mt-4">DWZ-Statistik</h4>
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-dwz">
+        <th class="team">Team Name</th>
+        <th
+          class="active" {{ nsv.tooltip_top('DWZ Durchschnitt der Spieler, die tats&auml;chlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
+          Eingesetzte
+        </th>
+        <th
+          class="top" {{ nsv.tooltip_top('Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
+          Top {{ dwzAdditionalData.boardCount }}</th>
+        <th
+          class="all" {{ nsv.tooltip_top('Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
+          Alle Spieler
+        </th>
+        <th
+          class="age" {{ nsv.tooltip_top('Durchschnittliches Alter der Spieler, die tats&auml;chlich gespielt haben.') }}>
+          Alter &#8709;
+        </th>
+        {% for team in dwzData %}
+          {# Set additional class values depending on if a team is leading in
       a particular statistic. Leading values are displayed as bold. #}
-      {% set dwz_rank = team.dwz_rank == 'top' ? 'fw-bold' : '' %}
-      {% set top_dwz_rank = team.top_dwz_rank == 'top' ? 'fw-bold' : '' %}
-      {% set all_dwz_rank = team.all_dwz_rank == 'top' ? 'fw-bold' : '' %}
-      {% set age_rank = team.age_rank == 'top' ? 'fw-bold' : '' %}
+          {% set dwz_rank = team.dwz_rank == 'top' ? 'fw-bold' : '' %}
+          {% set top_dwz_rank = team.top_dwz_rank == 'top' ? 'fw-bold' : '' %}
+          {% set all_dwz_rank = team.all_dwz_rank == 'top' ? 'fw-bold' : '' %}
+          {% set age_rank = team.age_rank == 'top' ? 'fw-bold' : '' %}
 
-      <tr>
-        <td class="team"><a href="{{ team.team.uri }}">
-            {{ team.team.name }}
-          </a>
-        </td>
-        <td class="active-dwz {{ dwz_rank }}">{{ team.active_dwz_average }}</td>
-        <td class="top-dwz {{ top_dwz_rank }}">{{ team.top_x_dwz_average }}</td>
-        <td class="all-dwz {{ all_dwz_rank }}">{{ team.all_dwz_average }}</td>
-        <td class="age {{ age_rank }}">{{ team.active_age_average }}</td>
-      </tr>
-    {% endfor %}
-    <tr>
-      <td class="average-active fw-bold">Durchschnitt:</td>
-      <td class="average-active fw-bold">{{ dwzAdditionalData.averageValues.dwzActive }}</td>
-      <td class="average-top fw-bold">{{ dwzAdditionalData.averageValues.dwzTop }}</td>
-      <td class="average-all fw-bold">{{ dwzAdditionalData.averageValues.dwzAll }}</td>
-      <td class="average-age fw-bold">{{ dwzAdditionalData.averageValues.age }}</td>
-    </tr>
-  </table>
+          <tr>
+            <td class="team"><a href="{{ team.team.uri }}">
+                {{ team.team.name }}
+              </a>
+            </td>
+            <td class="active-dwz {{ dwz_rank }}">{{ team.active_dwz_average }}</td>
+            <td class="top-dwz {{ top_dwz_rank }}">{{ team.top_x_dwz_average }}</td>
+            <td class="all-dwz {{ all_dwz_rank }}">{{ team.all_dwz_average }}</td>
+            <td class="age {{ age_rank }}">{{ team.active_age_average }}</td>
+          </tr>
+        {% endfor %}
+        <tr>
+          <td class="average-active fw-bold">Durchschnitt:</td>
+          <td class="average-active fw-bold">{{ dwzAdditionalData.averageValues.dwzActive }}</td>
+          <td class="average-top fw-bold">{{ dwzAdditionalData.averageValues.dwzTop }}</td>
+          <td class="average-all fw-bold">{{ dwzAdditionalData.averageValues.dwzAll }}</td>
+          <td class="average-age fw-bold">{{ dwzAdditionalData.averageValues.age }}</td>
+        </tr>
+      </table>
       <h4 class="mt-4">Topscorer</h4>
+
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-topscorer">
+        <tr>
+          <th>Name</th>
+          <th>DWZ</th>
+          <th>Mannschaft</th>
+          <th>Brett</th>
+          <th>Partien</th>
+          <th>Punkte</th>
+        </tr>
+        {% for player in topScorerData.topTenScorers %}
+          <tr>
+            <td class="name"><a href="{{ player.player.uri }}">{{ player.player.name }}</a></td>
+            <td class="dwz">{{ player.player.dwz }}</td>
+            <td class="team">{{ player.player.team.nameWithNumber }}</td>
+            <td class="board">{{ player.boards_played }}</td>
+            <td class="games-count">{{ player.games_count }}</td>
+            <td class="points fw-bold">{{ player.points }}</td>
+          </tr>
+        {% endfor %}
+      </table>
 
 
       <h4 class="mt-4">Spiel-Statistik</h4>
