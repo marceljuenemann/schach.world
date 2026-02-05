@@ -96,6 +96,7 @@ class DivisionController extends AbstractLeagueController {
 
     $teams_with_active_players = $service->teams_with_active_players($this->division);
     $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players, $this->division);
+    $active_teams_with_parings = $service->active_teams_with_parings($this->division);
     $dwzData = [];
 
     // Check if any games have been played. Some leagues have been
@@ -108,6 +109,9 @@ class DivisionController extends AbstractLeagueController {
 
       $topScorerData = $service->calculate_topscorer($this->division);
 
+      $teamGameScoreData = $service->team_game_score_data($active_teams_with_parings);
+      $teamGameScoreAdditionalData = $service->team_game_score_additional_data($this->division);
+
       $introTextValues['dwzTextValues'] = $dwzAdditionalData['dwzTextValues'];
 
 
@@ -118,6 +122,8 @@ class DivisionController extends AbstractLeagueController {
           'dwzData' => $dwzData,
           'dwzAdditionalData' => $dwzAdditionalData,
           'topScorerData' => $topScorerData,
+          'teamGameScoreData' => $teamGameScoreData,
+          'teamGameScoreAdditionalData' => $teamGameScoreAdditionalData,
           'tabs' => $this->divisionTabs('stats')
         ]);
     }

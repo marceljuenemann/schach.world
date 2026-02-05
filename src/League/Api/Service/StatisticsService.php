@@ -1036,6 +1036,80 @@ class StatisticsService {
     }
   }
 
+  public function team_game_score_additional_data($division): array {
+    $active_teams_with_parings = $this->active_teams_with_parings($division);
+    $team_game_score_data = $this->team_game_score_data($active_teams_with_parings);
+    $team_game_score_additional_data = [];
+
+    // Set initial values for the last table row that displays the average scores
+    $sum_game_count = 0;
+    $sum_game_count_played = 0;
+    $sum_forfeit_wins = 0;
+    $sum_forfeit_losses = 0;
+    $sum_wins = 0;
+    $sum_draws = 0;
+    $sum_losses = 0;
+    $sum_white_score = 0;
+    $sum_black_score = 0;
+
+    foreach ($team_game_score_data as $team_score) {
+      $sum_game_count += $team_score['game_count'];
+      $sum_game_count_played += $team_score['game_count_played'];
+      $sum_forfeit_wins += $team_score['forfeit_wins'];
+      $sum_forfeit_losses += $team_score['forfeit_losses'];
+      $sum_wins += $team_score['wins'];
+      $sum_draws += $team_score['draws'];
+      $sum_losses += $team_score['losses'];
+      $sum_white_score += $team_score['white_score'];
+      $sum_black_score += $team_score['black_score'];
+    }
+    //The total sum of games must be halved, since always two players
+    // of different teams are playing in one game.
+    // Sum with forfeits
+    $sum_game_count = $sum_game_count / 2;
+
+    // Sum of actually played games
+    $sum_game_count_played = $sum_game_count_played / 2;
+
+    // Calculate the average values
+    $team_count = count($active_teams_with_parings);
+    $average_wins = $sum_wins / $team_count;
+    $average_draws = $sum_draws / $team_count;
+    $average_losses = $sum_losses / $team_count;
+    $average_white_score = $sum_white_score / $team_count;
+    $average_black_score = $sum_black_score / $team_count;
+
+    $team_game_score_additional_data['average_scores']['sum_game_count'] = $sum_game_count;
+    $team_game_score_additional_data['average_scores']['sum_forfeit_wins'] = $sum_forfeit_wins;
+    $team_game_score_additional_data['average_scores']['sum_forfeit_losses'] = $sum_forfeit_losses;
+    $team_game_score_additional_data['average_scores']['average_wins'] = round($average_wins);
+    $team_game_score_additional_data['average_scores']['average_draws'] = round($average_draws);
+    $team_game_score_additional_data['average_scores']['average_losses'] = round($average_losses);
+    $team_game_score_additional_data['average_scores']['average_white_score'] = round($average_white_score);
+    $team_game_score_additional_data['average_scores']['average_black_score'] = round($average_black_score);
+
+    if ($sum_game_count == 0) {
+      $forfeit_percentage = 0;
+    } else {
+      $forfeit_percentage = 100 * ($sum_forfeit_losses / $sum_game_count);
+    }
+
+    $team_game_score_text_values = [
+      'sum_forfeit_losses' => $sum_forfeit_losses,
+      'forfeit_percentage' => round($forfeit_percentage),
+      'sum_game_count_played' => $sum_game_count_played,
+      'average_draws' => round($average_draws),
+      'average_white_score' => round($average_white_score),
+      'average_black_score' => round($average_black_score),
+    ];
+
+    $team_game_score_additional_data['text_values'] = $team_game_score_text_values;
+
+    return $team_game_score_additional_data;
+  }
+
+
+
   /**
    * Create the table array for the team game score that
    * is sent to the template in the controller.
