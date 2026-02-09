@@ -1,4 +1,4 @@
-<?
+<?php
 /* AJAX: Mannschaftsname nach Verein
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -12,7 +12,7 @@
 
     function getMannschaftsname ( $zps ){
         // Nun den letzten Namen abfragen, den eine Mannschaft mit der gleichen ZPS hatte
-        $name = SED_Query("SELECT name FROM mannschaften WHERE zps=? ORDER BY id DESC", [$zps])->fetchOne();
+        $name = SED_Query('SELECT name FROM mannschaften WHERE zps=? ORDER BY id DESC', [$zps])->fetchOne();
         if (!$name) return false;
 
         // Sonst Ausgabe
@@ -26,8 +26,8 @@
     // Bei Spielgemeinschaften nur die erste ZPS
     if ( getMannschaftsname ( substr ( $_GET ['zps'], 0, 5 ) ) ) exit;
 
-	// Ansonsten einfach den Vereinsnamen nehmen und abschneiden
-    $name = SED_Value("SELECT Vereinname FROM dwz_vereine WHERE ZPS=?", [substr($_GET['zps'],0,5)]);
+  	// Ansonsten einfach den Vereinsnamen nehmen und abschneiden
+    $name = SED_Value('SELECT Vereinname FROM dwz_vereine WHERE ZPS=?', [substr($_GET['zps'],0,5)]);
     echo utf8_encode ( substr($name, 0, 15) );
 	exit;
 ?>

@@ -1,4 +1,4 @@
-<?
+<?php
 /* Cache Bibliothek
  * 
  * In dieser Datei wird die Klasse SED_Cache zur Verfügung
@@ -32,7 +32,7 @@ class SED_Cache {
         if ( !$turnier ) $turnier = $globals ["tid"];
  
         // In den Cache speichern
-        SED_Query ( "REPLACE INTO cache SET turnier=?, staffel=?, runde=?, typ=?, inhalt=?", [$turnier, $staffel, $runde, $typ, serialize ( $data )]);
+        SED_Query ( 'REPLACE INTO cache SET turnier=?, staffel=?, runde=?, typ=?, inhalt=?', [$turnier, $staffel, $runde, $typ, serialize ( $data )]);
     }
 
     // Lädt etwas aus dem Cache
@@ -68,6 +68,6 @@ class SED_Cache {
     // Löscht alles
     static function clearAll($staffel = 0) {
       global $globals;
-      return SED_Query("DELETE FROM cache WHERE turnier = ?", [$globals['tid']]);
+      return SED_Query('DELETE FROM cache WHERE turnier = ?', [$globals['tid']]);
     }
 }

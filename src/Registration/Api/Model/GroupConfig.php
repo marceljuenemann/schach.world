@@ -18,6 +18,11 @@ class GroupConfig {
   public string $name;
 
   /**
+   * Minimum DWZ constraint for this group.
+   */
+  public ?int $minDwz = null;
+
+  /**
    * Maximum DWZ constraint for this group.
    */
   public ?int $maxDwz = null;
@@ -28,7 +33,17 @@ class GroupConfig {
   public ?int $minYearOfBirth = null;
 
   /**
+   * Whether a FIDE ID is required to register.
+   */
+  public ?bool $requireFideId = false;
+
+  /**
    * Maximum number of players that may register for this group.
    */
   public ?int $maxPlayers = null;
+
+  /**
+   * Hidden groups are not shown in the overview.
+   */
+  public ?bool $hidden = false;
 }

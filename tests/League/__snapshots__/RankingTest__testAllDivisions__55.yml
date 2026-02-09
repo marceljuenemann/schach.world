@@ -1,0 +1,233 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Springe', url: '?mannschaft=750', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=454&r=10#p750x771', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=454&r=6#p750x912', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=454&r=1#p750x923', title: 'gegen Uetze-Hänigsen', text: '4' }]
+    - [{ url: '?staffel=454&r=7#p750x781', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=454&r=9#p750x778', title: 'gegen SK Lister Turm 2', text: '5' }]
+    - [{ url: '?staffel=454&r=8#p750x757', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=454&r=3#p750x793', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=454&r=4#p750x918', title: 'gegen Marienw/Gar/See', text: 4½ }]
+    - [{ url: '?staffel=454&r=11#p750x776', title: 'gegen Turm Hannover', text: '6' }]
+    - [{ url: '?staffel=454&r=5#p750x755', title: 'gegen SF Sulingen', text: 5½ }]
+    - [{ url: '?staffel=454&r=2#p750x914', title: 'gegen SG WB Eilenriede 2', text: '5' }]
+    - 16
+    - 49½
+    - ''
+-
+    - '2.'
+    - { text: Barsinghausen, url: '?mannschaft=771', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=454&r=10#p771x750', title: 'gegen SV Springe', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=454&r=5#p771x912', title: 'gegen SC Stadthagen', text: 4½ }]
+    - [{ url: '?staffel=454&r=11#p771x923', title: 'gegen Uetze-Hänigsen', text: 5½ }]
+    - [{ url: '?staffel=454&r=6#p771x781', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=454&r=8#p771x778', title: 'gegen SK Lister Turm 2', text: '4' }]
+    - [{ url: '?staffel=454&r=7#p771x757', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=454&r=2#p771x793', title: 'gegen SK Anderten', text: '7' }]
+    - [{ url: '?staffel=454&r=3#p771x918', title: 'gegen Marienw/Gar/See', text: 3½ }]
+    - [{ url: '?staffel=454&r=9#p771x776', title: 'gegen Turm Hannover', text: '4' }]
+    - [{ url: '?staffel=454&r=4#p771x755', title: 'gegen SF Sulingen', text: 4½ }]
+    - [{ url: '?staffel=454&r=1#p771x914', title: 'gegen SG WB Eilenriede 2', text: '6' }]
+    - 14
+    - '50'
+    - ''
+-
+    - '3.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=912', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=454&r=6#p912x750', title: 'gegen SV Springe', text: '5' }]
+    - [{ url: '?staffel=454&r=5#p912x771', title: 'gegen Barsinghausen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=454&r=7#p912x923', title: 'gegen Uetze-Hänigsen', text: 4½ }]
+    - [{ url: '?staffel=454&r=2#p912x781', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=454&r=4#p912x778', title: 'gegen SK Lister Turm 2', text: '5' }]
+    - [{ url: '?staffel=454&r=3#p912x757', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=454&r=9#p912x793', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=454&r=10#p912x918', title: 'gegen Marienw/Gar/See', text: 4½ }]
+    - [{ url: '?staffel=454&r=1#p912x776', title: 'gegen Turm Hannover', text: '4' }]
+    - [{ url: '?staffel=454&r=11#p912x755', title: 'gegen SF Sulingen', text: '5' }]
+    - [{ url: '?staffel=454&r=8#p912x914', title: 'gegen SG WB Eilenriede 2', text: '6' }]
+    - 14
+    - '46'
+    - ''
+-
+    - '4.'
+    - { text: Uetze-Hänigsen, url: '?mannschaft=923', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=454&r=1#p923x750', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=454&r=11#p923x771', title: 'gegen Barsinghausen', text: 2½ }]
+    - [{ url: '?staffel=454&r=7#p923x912', title: 'gegen SC Stadthagen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=454&r=8#p923x781', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=454&r=10#p923x778', title: 'gegen SK Lister Turm 2', text: 3½ }]
+    - [{ url: '?staffel=454&r=9#p923x757', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=454&r=4#p923x793', title: 'gegen SK Anderten', text: 4½ }]
+    - [{ url: '?staffel=454&r=5#p923x918', title: 'gegen Marienw/Gar/See', text: 4½ }]
+    - [{ url: '?staffel=454&r=2#p923x776', title: 'gegen Turm Hannover', text: 6½ }]
+    - [{ url: '?staffel=454&r=6#p923x755', title: 'gegen SF Sulingen', text: 4½ }]
+    - [{ url: '?staffel=454&r=3#p923x914', title: 'gegen SG WB Eilenriede 2', text: 6½ }]
+    - 13
+    - '48'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=781', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=454&r=7#p781x750', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=454&r=6#p781x771', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=454&r=2#p781x912', title: 'gegen SC Stadthagen', text: '7' }]
+    - [{ url: '?staffel=454&r=8#p781x923', title: 'gegen Uetze-Hänigsen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=454&r=5#p781x778', title: 'gegen SK Lister Turm 2', text: '2' }]
+    - [{ url: '?staffel=454&r=4#p781x757', title: 'gegen SK Rinteln', text: 6½ }]
+    - [{ url: '?staffel=454&r=10#p781x793', title: 'gegen SK Anderten', text: 4½ }]
+    - [{ url: '?staffel=454&r=11#p781x918', title: 'gegen Marienw/Gar/See', text: 4½ }]
+    - [{ url: '?staffel=454&r=3#p781x776', title: 'gegen Turm Hannover', text: 3½ }]
+    - [{ url: '?staffel=454&r=1#p781x755', title: 'gegen SF Sulingen', text: 2½ }]
+    - [{ url: '?staffel=454&r=9#p781x914', title: 'gegen SG WB Eilenriede 2', text: 6½ }]
+    - 12
+    - 48½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lister Turm 2', url: '?mannschaft=778', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=454&r=9#p778x750', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=454&r=8#p778x771', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=454&r=4#p778x912', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=454&r=10#p778x923', title: 'gegen Uetze-Hänigsen', text: 4½ }]
+    - [{ url: '?staffel=454&r=5#p778x781', title: 'gegen SV Bückeburg', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=454&r=6#p778x757', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=454&r=1#p778x793', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=454&r=2#p778x918', title: 'gegen Marienw/Gar/See', text: 3½ }]
+    - [{ url: '?staffel=454&r=7#p778x776', title: 'gegen Turm Hannover', text: 4½ }]
+    - [{ url: '?staffel=454&r=3#p778x755', title: 'gegen SF Sulingen', text: '6' }]
+    - [{ url: '?staffel=454&r=11#p778x914', title: 'gegen SG WB Eilenriede 2', text: '3' }]
+    - 11
+    - 45½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Rinteln', url: '?mannschaft=757', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=454&r=8#p757x750', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=454&r=7#p757x771', title: 'gegen Barsinghausen', text: '5' }]
+    - [{ url: '?staffel=454&r=3#p757x912', title: 'gegen SC Stadthagen', text: 4½ }]
+    - [{ url: '?staffel=454&r=9#p757x923', title: 'gegen Uetze-Hänigsen', text: '4' }]
+    - [{ url: '?staffel=454&r=4#p757x781', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=454&r=6#p757x778', title: 'gegen SK Lister Turm 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=454&r=11#p757x793', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=454&r=1#p757x918', title: 'gegen Marienw/Gar/See', text: 4½ }]
+    - [{ url: '?staffel=454&r=5#p757x776', title: 'gegen Turm Hannover', text: '3' }]
+    - [{ url: '?staffel=454&r=2#p757x755', title: 'gegen SF Sulingen', text: 3½ }]
+    - [{ url: '?staffel=454&r=10#p757x914', title: 'gegen SG WB Eilenriede 2', text: 4½ }]
+    - 11
+    - '42'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Anderten', url: '?mannschaft=793', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=454&r=3#p793x750', title: 'gegen SV Springe', text: '4' }]
+    - [{ url: '?staffel=454&r=2#p793x771', title: 'gegen Barsinghausen', text: '1' }]
+    - [{ url: '?staffel=454&r=9#p793x912', title: 'gegen SC Stadthagen', text: '4' }]
+    - [{ url: '?staffel=454&r=4#p793x923', title: 'gegen Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=454&r=10#p793x781', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=454&r=1#p793x778', title: 'gegen SK Lister Turm 2', text: '4' }]
+    - [{ url: '?staffel=454&r=11#p793x757', title: 'gegen SK Rinteln', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=454&r=7#p793x918', title: 'gegen Marienw/Gar/See', text: '3' }]
+    - [{ url: '?staffel=454&r=6#p793x776', title: 'gegen Turm Hannover', text: 4½ }]
+    - [{ url: '?staffel=454&r=8#p793x755', title: 'gegen SF Sulingen', text: '5' }]
+    - [{ url: '?staffel=454&r=5#p793x914', title: 'gegen SG WB Eilenriede 2', text: 4½ }]
+    - 11
+    - 41½
+    - ''
+-
+    - '9.'
+    - { text: Marienw/Gar/See, url: '?mannschaft=918', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=454&r=4#p918x750', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=454&r=3#p918x771', title: 'gegen Barsinghausen', text: 4½ }]
+    - [{ url: '?staffel=454&r=10#p918x912', title: 'gegen SC Stadthagen', text: 3½ }]
+    - [{ url: '?staffel=454&r=5#p918x923', title: 'gegen Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=454&r=11#p918x781', title: 'gegen SV Bückeburg', text: 3½ }]
+    - [{ url: '?staffel=454&r=2#p918x778', title: 'gegen SK Lister Turm 2', text: 4½ }]
+    - [{ url: '?staffel=454&r=1#p918x757', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=454&r=7#p918x793', title: 'gegen SK Anderten', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=454&r=8#p918x776', title: 'gegen Turm Hannover', text: '5' }]
+    - [{ url: '?staffel=454&r=9#p918x755', title: 'gegen SF Sulingen', text: 3½ }]
+    - [{ url: '?staffel=454&r=6#p918x914', title: 'gegen SG WB Eilenriede 2', text: 4½ }]
+    - 10
+    - 44½
+    - ''
+-
+    - '10.'
+    - { text: 'Turm Hannover', url: '?mannschaft=776', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=454&r=11#p776x750', title: 'gegen SV Springe', text: '2' }]
+    - [{ url: '?staffel=454&r=9#p776x771', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=454&r=1#p776x912', title: 'gegen SC Stadthagen', text: '4' }]
+    - [{ url: '?staffel=454&r=2#p776x923', title: 'gegen Uetze-Hänigsen', text: 1½ }]
+    - [{ url: '?staffel=454&r=3#p776x781', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=454&r=7#p776x778', title: 'gegen SK Lister Turm 2', text: 3½ }]
+    - [{ url: '?staffel=454&r=5#p776x757', title: 'gegen SK Rinteln', text: '5' }]
+    - [{ url: '?staffel=454&r=6#p776x793', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=454&r=8#p776x918', title: 'gegen Marienw/Gar/See', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=454&r=10#p776x755', title: 'gegen SF Sulingen', text: 5½ }]
+    - [{ url: '?staffel=454&r=4#p776x914', title: 'gegen SG WB Eilenriede 2', text: '5' }]
+    - 10
+    - 41½
+    - ''
+-
+    - '11.'
+    - { text: 'SF Sulingen', url: '?mannschaft=755', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=454&r=5#p755x750', title: 'gegen SV Springe', text: 2½ }]
+    - [{ url: '?staffel=454&r=4#p755x771', title: 'gegen Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=454&r=11#p755x912', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=454&r=6#p755x923', title: 'gegen Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=454&r=1#p755x781', title: 'gegen SV Bückeburg', text: 5½ }]
+    - [{ url: '?staffel=454&r=3#p755x778', title: 'gegen SK Lister Turm 2', text: '2' }]
+    - [{ url: '?staffel=454&r=2#p755x757', title: 'gegen SK Rinteln', text: 4½ }]
+    - [{ url: '?staffel=454&r=8#p755x793', title: 'gegen SK Anderten', text: '3' }]
+    - [{ url: '?staffel=454&r=9#p755x918', title: 'gegen Marienw/Gar/See', text: 4½ }]
+    - [{ url: '?staffel=454&r=10#p755x776', title: 'gegen Turm Hannover', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=454&r=7#p755x914', title: 'gegen SG WB Eilenriede 2', text: '4' }]
+    - 7
+    - 38½
+    - ''
+-
+    - '12.'
+    - { text: 'SG WB Eilenriede 2', url: '?mannschaft=914', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=454&r=2#p914x750', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=454&r=1#p914x771', title: 'gegen Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=454&r=8#p914x912', title: 'gegen SC Stadthagen', text: '2' }]
+    - [{ url: '?staffel=454&r=3#p914x923', title: 'gegen Uetze-Hänigsen', text: 1½ }]
+    - [{ url: '?staffel=454&r=9#p914x781', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=454&r=11#p914x778', title: 'gegen SK Lister Turm 2', text: '5' }]
+    - [{ url: '?staffel=454&r=10#p914x757', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=454&r=5#p914x793', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=454&r=6#p914x918', title: 'gegen Marienw/Gar/See', text: 3½ }]
+    - [{ url: '?staffel=454&r=4#p914x776', title: 'gegen Turm Hannover', text: '3' }]
+    - [{ url: '?staffel=454&r=7#p914x755', title: 'gegen SF Sulingen', text: '4' }]
+    - xxx
+    - 3
+    - 32½
+    - ''

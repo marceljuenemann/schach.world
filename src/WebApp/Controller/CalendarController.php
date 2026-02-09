@@ -54,6 +54,7 @@ class CalendarController extends AbstractController {
         ->add('name', TextType::class)
         ->add('url', UrlType::class, [
           'label' => 'Link',
+          'required' => !$isAuthor,
           'constraints' => [new Url()],
         ]);
     if ($isAuthor) {

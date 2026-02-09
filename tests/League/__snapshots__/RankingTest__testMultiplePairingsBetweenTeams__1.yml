@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Osnabrück 6', url: '?mannschaft=7098', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1688&r=1#p7098x7110', title: 'gegen TuS Lemförde 2', text: 3½ }, { url: '?staffel=1688&r=4#p7098x7110', title: 'gegen TuS Lemförde 2', text: '3' }]
+    - [{ url: '?staffel=1688&r=2#p7098x7103', title: 'gegen Gaste-Hasbergen 2', text: '4' }, { url: '?staffel=1688&r=5#p7098x7103', title: 'gegen Gaste-Hasbergen 2', text: '4' }]
+    - 8
+    - 14½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'TuS Lemförde 2', url: '?mannschaft=7110', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1688&r=1#p7110x7098', title: 'gegen SV Osnabrück 6', text: ½ }, { url: '?staffel=1688&r=4#p7110x7098', title: 'gegen SV Osnabrück 6', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1688&r=3#p7110x7103', title: 'gegen Gaste-Hasbergen 2', text: '4' }, { url: '?staffel=1688&r=6#p7110x7103', title: 'gegen Gaste-Hasbergen 2', text: '4' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '3.'
+    - { text: 'Gaste-Hasbergen 2', url: '?mannschaft=7103', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1688&r=2#p7103x7098', title: 'gegen SV Osnabrück 6', text: '0' }, { url: '?staffel=1688&r=5#p7103x7098', title: 'gegen SV Osnabrück 6', text: '0' }]
+    - [{ url: '?staffel=1688&r=3#p7103x7110', title: 'gegen TuS Lemförde 2', text: '0' }, { url: '?staffel=1688&r=6#p7103x7110', title: 'gegen TuS Lemförde 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

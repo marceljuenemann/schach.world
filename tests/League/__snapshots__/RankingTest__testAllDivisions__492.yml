@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=4760', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=972&r=4#p4760x4777', title: 'gegen SZ Bemerode', text: 2½ }]
+    - [{ url: '?staffel=972&r=2#p4760x4526', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=972&r=5#p4760x4757', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=972&r=1#p4760x4678', title: 'gegen Barsinghausen', text: 3½ }]
+    - 8
+    - '13'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=4777', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=972&r=4#p4777x4760', title: 'gegen SK Lehrte', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=972&r=3#p4777x4526', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=972&r=1#p4777x4757', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=972&r=2#p4777x4678', title: 'gegen Barsinghausen', text: '4' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Laatzen', url: '?mannschaft=4526', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=972&r=2#p4526x4760', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=972&r=3#p4526x4777', title: 'gegen SZ Bemerode', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=972&r=4#p4526x4757', title: 'gegen SV Springe', text: '3' }]
+    - [{ url: '?staffel=972&r=5#p4526x4678', title: 'gegen Barsinghausen', text: '4' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Springe', url: '?mannschaft=4757', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=972&r=5#p4757x4760', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=972&r=1#p4757x4777', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=972&r=4#p4757x4526', title: 'gegen SV Laatzen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=972&r=3#p4757x4678', title: 'gegen Barsinghausen', text: '2' }]
+    - 1
+    - 4½
+    - ''
+-
+    - '5.'
+    - { text: Barsinghausen, url: '?mannschaft=4678', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=972&r=1#p4678x4760', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=972&r=2#p4678x4777', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=972&r=5#p4678x4526', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=972&r=3#p4678x4757', title: 'gegen SV Springe', text: '2' }]
+    - xxx
+    - 1
+    - 2½
+    - ''

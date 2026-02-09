@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Hildesh.-Göttg.', url: '?mannschaft=6936', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1604&r=5#p6936x6935', title: 'gegen SK Lehrte 2', text: '4' }]
+    - [{ url: '?staffel=1604&r=1#p6936x6940', title: 'gegen Roch. Braunschweig', text: '3' }]
+    - [{ url: '?staffel=1604&r=2#p6936x6939', title: 'gegen SV Osnabrück', text: '6' }]
+    - [{ url: '?staffel=1604&r=7#p6936x6938', title: 'gegen Post SV Uelzen', text: '3' }]
+    - [{ url: '?staffel=1604&r=4#p6936x6937', title: 'gegen Rochade Göttingen 2', text: 5½ }]
+    - [{ url: '?staffel=1604&r=6#p6936x6934', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=1604&r=3#p6936x6933', title: 'gegen SV Lingen', text: '5' }]
+    - 12
+    - 30½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=6935', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1604&r=5#p6935x6936', title: 'gegen SG Hildesh.-Göttg.', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1604&r=6#p6935x6940', title: 'gegen Roch. Braunschweig', text: '5' }]
+    - [{ url: '?staffel=1604&r=7#p6935x6939', title: 'gegen SV Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=1604&r=1#p6935x6938', title: 'gegen Post SV Uelzen', text: '4' }]
+    - [{ url: '?staffel=1604&r=2#p6935x6937', title: 'gegen Rochade Göttingen 2', text: '6' }]
+    - [{ url: '?staffel=1604&r=3#p6935x6934', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=1604&r=4#p6935x6933', title: 'gegen SV Lingen', text: '0' }]
+    - 10
+    - 25½
+    - ''
+-
+    - '3.'
+    - { text: 'Roch. Braunschweig', url: '?mannschaft=6940', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1604&r=1#p6940x6936', title: 'gegen SG Hildesh.-Göttg.', text: '3' }]
+    - [{ url: '?staffel=1604&r=6#p6940x6935', title: 'gegen SK Lehrte 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1604&r=3#p6940x6939', title: 'gegen SV Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=1604&r=4#p6940x6938', title: 'gegen Post SV Uelzen', text: 4½ }]
+    - [{ url: '?staffel=1604&r=5#p6940x6937', title: 'gegen Rochade Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1604&r=7#p6940x6934', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=1604&r=2#p6940x6933', title: 'gegen SV Lingen', text: '3' }]
+    - 9
+    - '21'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück', url: '?mannschaft=6939', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1604&r=2#p6939x6936', title: 'gegen SG Hildesh.-Göttg.', text: '0' }]
+    - [{ url: '?staffel=1604&r=7#p6939x6935', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=1604&r=3#p6939x6940', title: 'gegen Roch. Braunschweig', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1604&r=5#p6939x6938', title: 'gegen Post SV Uelzen', text: '5' }]
+    - [{ url: '?staffel=1604&r=6#p6939x6937', title: 'gegen Rochade Göttingen 2', text: '6' }]
+    - [{ url: '?staffel=1604&r=4#p6939x6934', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=1604&r=1#p6939x6933', title: 'gegen SV Lingen', text: '3' }]
+    - 8
+    - '22'
+    - ''
+-
+    - '5.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=6938', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1604&r=7#p6938x6936', title: 'gegen SG Hildesh.-Göttg.', text: '3' }]
+    - [{ url: '?staffel=1604&r=1#p6938x6935', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1604&r=4#p6938x6940', title: 'gegen Roch. Braunschweig', text: 1½ }]
+    - [{ url: '?staffel=1604&r=5#p6938x6939', title: 'gegen SV Osnabrück', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1604&r=3#p6938x6937', title: 'gegen Rochade Göttingen 2', text: ½ }]
+    - [{ url: '?staffel=1604&r=2#p6938x6934', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=1604&r=6#p6938x6933', title: 'gegen SV Lingen', text: '6' }]
+    - 5
+    - '18'
+    - ''
+-
+    - '6.'
+    - { text: 'Rochade Göttingen 2', url: '?mannschaft=6937', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1604&r=4#p6937x6936', title: 'gegen SG Hildesh.-Göttg.', text: ½ }]
+    - [{ url: '?staffel=1604&r=2#p6937x6935', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=1604&r=5#p6937x6940', title: 'gegen Roch. Braunschweig', text: '3' }]
+    - [{ url: '?staffel=1604&r=6#p6937x6939', title: 'gegen SV Osnabrück', text: '0' }]
+    - [{ url: '?staffel=1604&r=3#p6937x6938', title: 'gegen Post SV Uelzen', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1604&r=1#p6937x6934', title: 'gegen SV Hellern', text: 1½ }]
+    - [{ url: '?staffel=1604&r=7#p6937x6933', title: 'gegen SV Lingen', text: '6' }]
+    - 5
+    - 16½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Hellern', url: '?mannschaft=6934', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1604&r=6#p6934x6936', title: 'gegen SG Hildesh.-Göttg.', text: '2' }]
+    - [{ url: '?staffel=1604&r=3#p6934x6935', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=1604&r=7#p6934x6940', title: 'gegen Roch. Braunschweig', text: '2' }]
+    - [{ url: '?staffel=1604&r=4#p6934x6939', title: 'gegen SV Osnabrück', text: '2' }]
+    - [{ url: '?staffel=1604&r=2#p6934x6938', title: 'gegen Post SV Uelzen', text: '2' }]
+    - [{ url: '?staffel=1604&r=1#p6934x6937', title: 'gegen Rochade Göttingen 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1604&r=5#p6934x6933', title: 'gegen SV Lingen', text: '5' }]
+    - 4
+    - 19½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Lingen', url: '?mannschaft=6933', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1604&r=3#p6933x6936', title: 'gegen SG Hildesh.-Göttg.', text: '1' }]
+    - [{ url: '?staffel=1604&r=4#p6933x6935', title: 'gegen SK Lehrte 2', text: '6' }]
+    - [{ url: '?staffel=1604&r=2#p6933x6940', title: 'gegen Roch. Braunschweig', text: '2' }]
+    - [{ url: '?staffel=1604&r=1#p6933x6939', title: 'gegen SV Osnabrück', text: '3' }]
+    - [{ url: '?staffel=1604&r=6#p6933x6938', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=1604&r=7#p6933x6937', title: 'gegen Rochade Göttingen 2', text: '0' }]
+    - [{ url: '?staffel=1604&r=5#p6933x6934', title: 'gegen SV Hellern', text: '1' }]
+    - xxx
+    - 3
+    - '13'
+    - absteiger

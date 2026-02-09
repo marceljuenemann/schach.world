@@ -1,0 +1,35 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Papenburg', url: '?mannschaft=5869', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1404&r=1#p5869x5870', title: 'gegen SC Papenburg 2', text: '4' }]
+    - [{ url: '?staffel=1404&r=2#p5869x5871', title: 'gegen SK Lehrte 3', text: '2' }]
+    - 3
+    - '6'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Papenburg 2', url: '?mannschaft=5870', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1404&r=1#p5870x5869', title: 'gegen SC Papenburg', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1404&r=3#p5870x5871', title: 'gegen SK Lehrte 3', text: '4' }]
+    - 2
+    - '4'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=5871', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1404&r=2#p5871x5869', title: 'gegen SC Papenburg', text: '2' }]
+    - [{ url: '?staffel=1404&r=3#p5871x5870', title: 'gegen SC Papenburg 2', text: '0' }]
+    - xxx
+    - 1
+    - '2'
+    - ''

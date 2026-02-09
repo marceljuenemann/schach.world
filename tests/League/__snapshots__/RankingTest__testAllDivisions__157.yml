@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Lingen', url: '?mannschaft=1810', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=571&r=3#p1810x1808', title: 'gegen Nordhorn-Blanke', text: '2' }]
+    - [{ url: '?staffel=571&r=5#p1810x1813', title: 'gegen SF Spelle', text: '4' }]
+    - [{ url: '?staffel=571&r=4#p1810x1809', title: 'gegen Veldhausen/Uel.', text: '4' }]
+    - [{ url: '?staffel=571&r=1#p1810x1811', title: 'gegen SV Lingen 2', text: '4' }]
+    - [{ url: '?staffel=571&r=2#p1810x1812', title: 'gegen SF Spelle 2', text: '4' }]
+    - 9
+    - '18'
+    - ''
+-
+    - '2.'
+    - { text: Nordhorn-Blanke, url: '?mannschaft=1808', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=571&r=3#p1808x1810', title: 'gegen SV Lingen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=571&r=4#p1808x1813', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=571&r=1#p1808x1809', title: 'gegen Veldhausen/Uel.', text: '2' }]
+    - [{ url: '?staffel=571&r=2#p1808x1811', title: 'gegen SV Lingen 2', text: '3' }]
+    - [{ url: '?staffel=571&r=5#p1808x1812', title: 'gegen SF Spelle 2', text: '4' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Spelle', url: '?mannschaft=1813', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=571&r=5#p1813x1810', title: 'gegen SV Lingen', text: '0' }]
+    - [{ url: '?staffel=571&r=4#p1813x1808', title: 'gegen Nordhorn-Blanke', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=571&r=2#p1813x1809', title: 'gegen Veldhausen/Uel.', text: '4' }]
+    - [{ url: '?staffel=571&r=3#p1813x1811', title: 'gegen SV Lingen 2', text: '3' }]
+    - [{ url: '?staffel=571&r=1#p1813x1812', title: 'gegen SF Spelle 2', text: '2' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '4.'
+    - { text: Veldhausen/Uel., url: '?mannschaft=1809', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=571&r=4#p1809x1810', title: 'gegen SV Lingen', text: '0' }]
+    - [{ url: '?staffel=571&r=1#p1809x1808', title: 'gegen Nordhorn-Blanke', text: '2' }]
+    - [{ url: '?staffel=571&r=2#p1809x1813', title: 'gegen SF Spelle', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=571&r=5#p1809x1811', title: 'gegen SV Lingen 2', text: '3' }]
+    - [{ url: '?staffel=571&r=3#p1809x1812', title: 'gegen SF Spelle 2', text: 2½ }]
+    - 5
+    - 7½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Lingen 2', url: '?mannschaft=1811', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=571&r=1#p1811x1810', title: 'gegen SV Lingen', text: '0' }]
+    - [{ url: '?staffel=571&r=2#p1811x1808', title: 'gegen Nordhorn-Blanke', text: '1' }]
+    - [{ url: '?staffel=571&r=3#p1811x1813', title: 'gegen SF Spelle', text: '1' }]
+    - [{ url: '?staffel=571&r=5#p1811x1809', title: 'gegen Veldhausen/Uel.', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=571&r=4#p1811x1812', title: 'gegen SF Spelle 2', text: 2½ }]
+    - 2
+    - 5½
+    - ''
+-
+    - '6.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=1812', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=571&r=2#p1812x1810', title: 'gegen SV Lingen', text: '0' }]
+    - [{ url: '?staffel=571&r=5#p1812x1808', title: 'gegen Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=571&r=1#p1812x1813', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=571&r=3#p1812x1809', title: 'gegen Veldhausen/Uel.', text: 1½ }]
+    - [{ url: '?staffel=571&r=4#p1812x1811', title: 'gegen SV Lingen 2', text: 1½ }]
+    - xxx
+    - 1
+    - '5'
+    - ''

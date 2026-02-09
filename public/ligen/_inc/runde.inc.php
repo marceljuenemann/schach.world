@@ -1,4 +1,4 @@
-<?
+<?php
 /* Berechnung der aktuellen Runde
  *
  * Stellt sicher, dass $_GET[r] auf eine gültige Runde gesetzt ist.
@@ -50,7 +50,7 @@
             require_once ( "turnier.inc.php" );
 
             // Den (staffelunabhängigen) Termin finden, der am nächsten an heute ist
-            $runde = SED_Query ( "SELECT runde FROM termine WHERE turnier=? and staffel is null ORDER BY ABS(UNIX_TIMESTAMP(datum)-UNIX_TIMESTAMP(CURDATE())) LIMIT 1", [$globals['tid']] )->fetchOne();
+            $runde = SED_Query ( 'SELECT runde FROM termine WHERE turnier=? and staffel is null ORDER BY ABS(UNIX_TIMESTAMP(datum)-UNIX_TIMESTAMP(CURDATE())) LIMIT 1', [$globals['tid']] )->fetchOne();
             if ($runde) return $runde;
         }
 

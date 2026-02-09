@@ -2,11 +2,14 @@
 
 use Nsv\Registration\Api\Model\TournamentConfig;
 use Nsv\Registration\Api\Model\GroupConfig;
+use Nsv\Registration\Api\Model\RegistrationConstraint;
+use Nsv\Registration\Api\Model\AdditionalFieldConfig;
+use Nsv\Registration\Api\Model\AdditionalFieldOption;
 
 $config = new TournamentConfig();
 $config->tournamentName = 'Testturnier';
 $config->deadline = '2035-12-27';
-$config->maxPlayers = 38;
+$config->maxPlayers = 100;
 
 $config->managers = ['marcel', 'beni', 'joerg'];
 $config->emailCc = [
@@ -30,12 +33,15 @@ $config->termsAndConditions = "
 $group = new GroupConfig();
 $group->id = 'A';
 $group->name = 'Gruppe A (ab DWZ 1750)';
+$group->minDwz = 1750;
 $group->maxPlayers = 10;
+$group->requireFideId = true;
 $config->groups[] = $group;
 
 $group = new GroupConfig();
 $group->id = 'B';
 $group->name = 'Gruppe B (DWZ 1500-1750)';
+$group->minDwz = 1500;
 $group->maxDwz = 1750;
 $group->maxPlayers = 30;
 $config->groups[] = $group;
@@ -76,5 +82,58 @@ $group->id = 'U10';
 $group->name = 'Altersklasse U10';
 $group->minYearOfBirth = 2015;
 $config->groups[] = $group;
+
+$group = new GroupConfig();
+$group->id = 'Betreuer';
+$group->name = 'Betreuer';
+$group->hidden = true;
+$config->groups[] = $group;
+
+$constraint = new RegistrationConstraint();
+$constraint->groups = ['A', 'B', 'C'];
+$constraint->maxPlayers = 25;
+$config->constraints[] = $constraint;
+
+$constraint = new RegistrationConstraint();
+$constraint->groups = ['U18', 'U16', 'U14', 'U12', 'U10'];
+$constraint->maxPlayers = 15;
+$config->constraints[] = $constraint;
+
+$field = new AdditionalFieldConfig();
+$field->type = 'multiline';
+$field->id = 'customField1';
+$field->label = 'Custom Field 1';
+$field->required = true;
+$config->additionalFields[] = $field;
+
+$field = new AdditionalFieldConfig();
+$field->type = 'int';
+$field->id = 'customField2';
+$field->label = 'Custom Field 2';
+$field->required = false;
+$config->additionalFields[] = $field;
+
+$field = new AdditionalFieldConfig();
+$field->type = 'select';
+$field->id = 'customField3';
+$field->label = 'Custom Field 3';
+$field->required = true;
+$config->additionalFields[] = $field;
+
+$option = new AdditionalFieldOption();
+$option->label = 'Option 1';
+$option->value = 'option1';
+$field->options[] = $option;
+
+$option = new AdditionalFieldOption();
+$option->label = 'Option 2';
+$option->value = 'option2';
+$option->disabled = true;
+$field->options[] = $option;
+
+$option = new AdditionalFieldOption();
+$option->label = 'Option 3';
+$option->value = 'option3';
+$field->options[] = $option;
 
 return $config;

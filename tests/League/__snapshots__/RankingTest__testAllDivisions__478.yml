@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'CSC Aufbau 95', url: '?mannschaft=4485', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=956&r=5#p4485x4615', title: 'gegen Rodewischer SM 2', text: '3' }]
+    - [{ url: '?staffel=956&r=4#p4485x4513', title: 'gegen USG Chemnitz', text: '3' }]
+    - [{ url: '?staffel=956&r=2#p4485x4389', title: 'gegen MTV 1876 Saalfe', text: 2½ }]
+    - [{ url: '?staffel=956&r=3#p4485x4403', title: 'gegen Turm Hersfeld', text: 3½ }]
+    - 8
+    - '12'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Rodewischer SM 2', url: '?mannschaft=4615', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=956&r=5#p4615x4485', title: 'gegen CSC Aufbau 95', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=956&r=3#p4615x4513', title: 'gegen USG Chemnitz', text: 2½ }]
+    - [{ url: '?staffel=956&r=1#p4615x4389', title: 'gegen MTV 1876 Saalfe', text: '2' }]
+    - [{ url: '?staffel=956&r=2#p4615x4403', title: 'gegen Turm Hersfeld', text: '4' }]
+    - 5
+    - 9½
+    - ''
+-
+    - '3.'
+    - { text: 'USG Chemnitz', url: '?mannschaft=4513', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=956&r=4#p4513x4485', title: 'gegen CSC Aufbau 95', text: '1' }]
+    - [{ url: '?staffel=956&r=3#p4513x4615', title: 'gegen Rodewischer SM 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=956&r=5#p4513x4389', title: 'gegen MTV 1876 Saalfe', text: '3' }]
+    - [{ url: '?staffel=956&r=1#p4513x4403', title: 'gegen Turm Hersfeld', text: '3' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '4.'
+    - { text: 'MTV 1876 Saalfe', url: '?mannschaft=4389', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=956&r=2#p4389x4485', title: 'gegen CSC Aufbau 95', text: 1½ }]
+    - [{ url: '?staffel=956&r=1#p4389x4615', title: 'gegen Rodewischer SM 2', text: '2' }]
+    - [{ url: '?staffel=956&r=5#p4389x4513', title: 'gegen USG Chemnitz', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=956&r=4#p4389x4403', title: 'gegen Turm Hersfeld', text: '3' }]
+    - 3
+    - 7½
+    - ''
+-
+    - '5.'
+    - { text: 'Turm Hersfeld', url: '?mannschaft=4403', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=956&r=3#p4403x4485', title: 'gegen CSC Aufbau 95', text: ½ }]
+    - [{ url: '?staffel=956&r=2#p4403x4615', title: 'gegen Rodewischer SM 2', text: '0' }]
+    - [{ url: '?staffel=956&r=1#p4403x4513', title: 'gegen USG Chemnitz', text: '1' }]
+    - [{ url: '?staffel=956&r=4#p4403x4389', title: 'gegen MTV 1876 Saalfe', text: '0' }]
+    - xxx
+    - 0
+    - 1½
+    - absteiger

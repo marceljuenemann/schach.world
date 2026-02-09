@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamelner SV 3', url: '?mannschaft=8578', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1854&r=3#p8578x8594', title: 'gegen SG Südharz', text: '7' }]
+    - [{ url: '?staffel=1854&r=2#p8578x8511', title: 'gegen ESV Göttingen 3', text: 5½ }]
+    - [{ url: '?staffel=1854&r=1#p8578x8600', title: 'gegen SK Goslar', text: 5½ }]
+    - {  }
+    - {  }
+    - {  }
+    - 6
+    - '18'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'ESV Göttingen 2', url: '?mannschaft=8512', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1854&r=1#p8512x8511', title: 'gegen ESV Göttingen 3', text: 5½ }]
+    - {  }
+    - [{ url: '?staffel=1854&r=3#p8512x8492', title: 'gegen Hildesheimer SV 3', text: 5½ }]
+    - [{ url: '?staffel=1854&r=2#p8512x8596', title: 'gegen SK Gronau', text: '6' }]
+    - {  }
+    - 6
+    - '17'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Holzminden', url: '?mannschaft=8601', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1854&r=2#p8601x8583', title: 'gegen Tempo Göttingen 2', text: 4½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1854&r=3#p8601x8600', title: 'gegen SK Goslar', text: 5½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1854&r=1#p8601x8598', title: 'gegen Alfelder SV', text: '6' }]
+    - 6
+    - '16'
+    - ''
+-
+    - '4.'
+    - { text: 'Tempo Göttingen 2', url: '?mannschaft=8583', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1854&r=2#p8583x8601', title: 'gegen SG Holzminden', text: 3½ }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1854&r=1#p8583x8492', title: 'gegen Hildesheimer SV 3', text: '5' }]
+    - [{ url: '?staffel=1854&r=3#p8583x8596', title: 'gegen SK Gronau', text: 4½ }]
+    - {  }
+    - 4
+    - '13'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Südharz', url: '?mannschaft=8594', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1854&r=3#p8594x8578', title: 'gegen Hamelner SV 3', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1854&r=2#p8594x8492', title: 'gegen Hildesheimer SV 3', text: 4½ }]
+    - [{ url: '?staffel=1854&r=1#p8594x8596', title: 'gegen SK Gronau', text: '6' }]
+    - {  }
+    - 4
+    - 11½
+    - ''
+-
+    - '6.'
+    - { text: 'ESV Göttingen 3', url: '?mannschaft=8511', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1854&r=2#p8511x8578', title: 'gegen Hamelner SV 3', text: 2½ }]
+    - [{ url: '?staffel=1854&r=1#p8511x8512', title: 'gegen ESV Göttingen 2', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1854&r=3#p8511x8598', title: 'gegen Alfelder SV', text: 6½ }]
+    - 2
+    - 11½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Goslar', url: '?mannschaft=8600', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1854&r=1#p8600x8578', title: 'gegen Hamelner SV 3', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1854&r=3#p8600x8601', title: 'gegen SG Holzminden', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1854&r=2#p8600x8598', title: 'gegen Alfelder SV', text: '5' }]
+    - 2
+    - '10'
+    - ''
+-
+    - '8.'
+    - { text: 'Hildesheimer SV 3', url: '?mannschaft=8492', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1854&r=3#p8492x8512', title: 'gegen ESV Göttingen 2', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1854&r=1#p8492x8583', title: 'gegen Tempo Göttingen 2', text: '3' }]
+    - [{ url: '?staffel=1854&r=2#p8492x8594', title: 'gegen SG Südharz', text: 3½ }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '9'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Gronau', url: '?mannschaft=8596', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1854&r=2#p8596x8512', title: 'gegen ESV Göttingen 2', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1854&r=3#p8596x8583', title: 'gegen Tempo Göttingen 2', text: 3½ }]
+    - [{ url: '?staffel=1854&r=1#p8596x8594', title: 'gegen SG Südharz', text: '2' }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - 7½
+    - absteiger
+-
+    - '10.'
+    - { text: 'Alfelder SV', url: '?mannschaft=8598', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1854&r=1#p8598x8601', title: 'gegen SG Holzminden', text: '2' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1854&r=3#p8598x8511', title: 'gegen ESV Göttingen 3', text: 1½ }]
+    - [{ url: '?staffel=1854&r=2#p8598x8600', title: 'gegen SK Goslar', text: '3' }]
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - 6½
+    - absteiger

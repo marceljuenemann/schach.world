@@ -7,11 +7,10 @@ import { DIALOG_COMPONENTS } from '../../../entrypoints';
  * by PHP-generated pages.
  */
 @Component({
-  selector: 'nsv-dialog-launcher',
-  standalone: true,
-  imports: [],
-  templateUrl: './launcher.component.html',
-  styleUrl: './launcher.component.css'
+    selector: 'nsv-dialog-launcher',
+    imports: [],
+    templateUrl: './launcher.component.html',
+    styleUrl: './launcher.component.css'
 })
 export class DialogLauncherComponent {
   // Type of the dialog, as defined in DIALOG_COMPONENTS

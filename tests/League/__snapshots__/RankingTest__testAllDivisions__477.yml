@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TSV Forstenried', url: '?mannschaft=4410', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=955&r=3#p4410x4402', title: 'gegen FC Bayern München 2', text: '2' }]
+    - [{ url: '?staffel=955&r=4#p4410x4544', title: 'gegen SK Neuperlach', text: 3½ }]
+    - [{ url: '?staffel=955&r=2#p4410x4411', title: 'gegen TSV Forstenried 2', text: '4' }]
+    - [{ url: '?staffel=955&r=1#p4410x4377', title: 'gegen SF Augsburg', text: 3½ }]
+    - 7
+    - '13'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'FC Bayern München 2', url: '?mannschaft=4402', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=955&r=3#p4402x4410', title: 'gegen TSV Forstenried', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=955&r=5#p4402x4544', title: 'gegen SK Neuperlach', text: '4' }]
+    - [{ url: '?staffel=955&r=4#p4402x4411', title: 'gegen TSV Forstenried 2', text: '3' }]
+    - [{ url: '?staffel=955&r=2#p4402x4377', title: 'gegen SF Augsburg', text: '3' }]
+    - 7
+    - '12'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Neuperlach', url: '?mannschaft=4544', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=955&r=4#p4544x4410', title: 'gegen TSV Forstenried', text: ½ }]
+    - [{ url: '?staffel=955&r=5#p4544x4402', title: 'gegen FC Bayern München 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=955&r=1#p4544x4411', title: 'gegen TSV Forstenried 2', text: 2½ }]
+    - [{ url: '?staffel=955&r=3#p4544x4377', title: 'gegen SF Augsburg', text: '3' }]
+    - 4
+    - '6'
+    - ''
+-
+    - '4.'
+    - { text: 'TSV Forstenried 2', url: '?mannschaft=4411', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=955&r=2#p4411x4410', title: 'gegen TSV Forstenried', text: '0' }]
+    - [{ url: '?staffel=955&r=4#p4411x4402', title: 'gegen FC Bayern München 2', text: '1' }]
+    - [{ url: '?staffel=955&r=1#p4411x4544', title: 'gegen SK Neuperlach', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=955&r=5#p4411x4377', title: 'gegen SF Augsburg', text: '4' }]
+    - 2
+    - 6½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Augsburg', url: '?mannschaft=4377', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=955&r=1#p4377x4410', title: 'gegen TSV Forstenried', text: ½ }]
+    - [{ url: '?staffel=955&r=2#p4377x4402', title: 'gegen FC Bayern München 2', text: '1' }]
+    - [{ url: '?staffel=955&r=3#p4377x4544', title: 'gegen SK Neuperlach', text: '1' }]
+    - [{ url: '?staffel=955&r=5#p4377x4411', title: 'gegen TSV Forstenried 2', text: '0' }]
+    - xxx
+    - 0
+    - 2½
+    - absteiger

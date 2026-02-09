@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Friedberg 2', url: '?mannschaft=2918', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=717&r=1#p2918x2909', title: 'gegen CAISSA Kassel', text: 2½ }]
+    - [{ url: '?staffel=717&r=5#p2918x2908', title: 'gegen SC 1979 Hatters', text: '2' }]
+    - [{ url: '?staffel=717&r=2#p2918x3177', title: 'gegen SVG Oberhessen', text: 1½ }]
+    - [{ url: '?staffel=717&r=3#p2918x2863', title: 'gegen SC Eschborn', text: 2½ }]
+    - [{ url: '?staffel=717&r=4#p2918x2861', title: 'gegen SV 1920 Hofheim 2', text: '4' }]
+    - 7
+    - 12½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'CAISSA Kassel', url: '?mannschaft=2909', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=717&r=1#p2909x2918', title: 'gegen SF Friedberg 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=717&r=2#p2909x2908', title: 'gegen SC 1979 Hatters', text: '0' }]
+    - [{ url: '?staffel=717&r=4#p2909x3177', title: 'gegen SVG Oberhessen', text: '4' }]
+    - [{ url: '?staffel=717&r=5#p2909x2863', title: 'gegen SC Eschborn', text: '4' }]
+    - [{ url: '?staffel=717&r=3#p2909x2861', title: 'gegen SV 1920 Hofheim 2', text: '4' }]
+    - 6
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'SC 1979 Hatters', url: '?mannschaft=2908', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=717&r=5#p2908x2918', title: 'gegen SF Friedberg 2', text: '2' }]
+    - [{ url: '?staffel=717&r=2#p2908x2909', title: 'gegen CAISSA Kassel', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=717&r=3#p2908x3177', title: 'gegen SVG Oberhessen', text: '2' }]
+    - [{ url: '?staffel=717&r=4#p2908x2863', title: 'gegen SC Eschborn', text: '1' }]
+    - [{ url: '?staffel=717&r=1#p2908x2861', title: 'gegen SV 1920 Hofheim 2', text: '4' }]
+    - 6
+    - '13'
+    - ''
+-
+    - '4.'
+    - { text: 'SVG Oberhessen', url: '?mannschaft=3177', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=717&r=2#p3177x2918', title: 'gegen SF Friedberg 2', text: 2½ }]
+    - [{ url: '?staffel=717&r=4#p3177x2909', title: 'gegen CAISSA Kassel', text: '0' }]
+    - [{ url: '?staffel=717&r=3#p3177x2908', title: 'gegen SC 1979 Hatters', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=717&r=1#p3177x2863', title: 'gegen SC Eschborn', text: '3' }]
+    - [{ url: '?staffel=717&r=5#p3177x2861', title: 'gegen SV 1920 Hofheim 2', text: '1' }]
+    - 5
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Eschborn', url: '?mannschaft=2863', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=717&r=3#p2863x2918', title: 'gegen SF Friedberg 2', text: 1½ }]
+    - [{ url: '?staffel=717&r=5#p2863x2909', title: 'gegen CAISSA Kassel', text: '0' }]
+    - [{ url: '?staffel=717&r=4#p2863x2908', title: 'gegen SC 1979 Hatters', text: '3' }]
+    - [{ url: '?staffel=717&r=1#p2863x3177', title: 'gegen SVG Oberhessen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=717&r=2#p2863x2861', title: 'gegen SV 1920 Hofheim 2', text: 3½ }]
+    - 4
+    - '9'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SV 1920 Hofheim 2', url: '?mannschaft=2861', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=717&r=4#p2861x2918', title: 'gegen SF Friedberg 2', text: '0' }]
+    - [{ url: '?staffel=717&r=3#p2861x2909', title: 'gegen CAISSA Kassel', text: '0' }]
+    - [{ url: '?staffel=717&r=1#p2861x2908', title: 'gegen SC 1979 Hatters', text: '0' }]
+    - [{ url: '?staffel=717&r=5#p2861x3177', title: 'gegen SVG Oberhessen', text: '3' }]
+    - [{ url: '?staffel=717&r=2#p2861x2863', title: 'gegen SC Eschborn', text: ½ }]
+    - xxx
+    - 2
+    - 3½
+    - absteiger

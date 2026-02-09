@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Termine
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -23,9 +23,10 @@
         if ( preg_match ( $regexpr, $tmp ) )
         {
             // Alte löschen
-            if ( !mysql_query ( "DELETE FROM termine WHERE turnier=$globals[tid] and staffel is null and runde=$r", $globals ['db'] ) )
+            if ( !SED_TryQuery ( 'DELETE FROM termine WHERE turnier=? and staffel is null and runde=?', [$globals['tid'], $r]) )
                 SED_Error ( "Alte Termine konnten nicht gel&ouml;scht werden!", true );
-            if ( !mysql_query ( "INSERT INTO termine SET turnier=$globals[tid], runde=$r, datum='" . substr ( $tmp, 6 ) . substr ( $tmp, 3, 2 ) . substr ( $tmp, 0, 2 ) . "'", $globals ['db'] ) )
+            $datum = substr ( $tmp, 6 ) . substr ( $tmp, 3, 2 ) . substr ( $tmp, 0, 2 );
+            if ( !SED_TryQuery ( 'INSERT INTO termine SET turnier=?, runde=?, datum=?', [$globals['tid'], $r, $datum]) )
                 SED_Error ( "Termin $r konnte nicht eingef&uuml;gt werden.", true );
         }
         else
@@ -48,22 +49,21 @@
   <br /><br />
 </div>
 
-<form action='<? echo SED_GenerateFormAction(); ?>' method='post'><div>
+<form action='<?php echo SED_GenerateFormAction(); ?>' method='post'><div>
 
-  <?
+  <?php
     // Bisherige Termine abfragen
     $termine = array ();
-    $rsrc = mysql_query ( "SELECT runde, DATE_FORMAT(datum,'%d.%m.%Y') as datum FROM termine WHERE turnier=$globals[tid] and staffel is null ORDER BY runde", $globals ['db'] );
-    if ( $rsrc )
-      while ( $tmp = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) )
-        $termine [$tmp ['runde']] = $tmp ['datum'];
+    $rsrc = SED_Query ( 'SELECT runde, DATE_FORMAT(datum,\'%d.%m.%Y\') as datum FROM termine WHERE turnier=? and staffel is null ORDER BY runde', [$globals['tid']] )->fetchAllAssociative();
+    foreach ( $rsrc as $tmp )
+      $termine [$tmp ['runde']] = $tmp ['datum'];
 
     // Ausgabe
     for ( $r = 1; $r <= $prefs ['runden']; ++$r )
       echo "Spieltag $r:&nbsp;&nbsp;<input type='text' id='termin$r' name='termin$r' size='10' maxlength='10' value='" . ( isset ( $termine [$r] ) ? $termine [$r] : "" ) . "' /> <input type='button' class='sed_submit' id='button$r' value='...' /><br /><br />";
   ?>
 
-  <input type="submit" class="sed_submit" name="buttonsave" value="Speichern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" />
+  <input type="submit" class="sed_submit" name="buttonsave" value="Speichern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<?php echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" />
 
 </div></form>
 
@@ -76,16 +76,16 @@
   wenn diese von den obigen abweichen.
   <br /><br />
 </div>
-<?
+<?php
   // Einen abweichenden Termin hinzufügen
   $regexpr = "/^[0-9]{2}\.[0-9]{2}\.[0-9]{4}$/";
   if ( isset ( $_POST ['abw_addsubmit'] ) )
   {
-    if ( preg_match ( $regexpr, $_POST ['abw_datum'] ) )
-        if ( !mysql_query ( "INSERT INTO termine SET turnier=$globals[tid], staffel=$_POST[abw_staffel], runde=$_POST[abw_runde], datum='" . substr ( $_POST ['abw_datum'], 6 ) . substr ( $_POST ['abw_datum'], 3, 2 ) . substr ( $_POST ['abw_datum'], 0, 2 ) . "'", $globals ['db'] ) )
-            SED_Error ( "Termin konnte nicht eingef&uuml;gt werden.", true );
-        else
-            ;
+    if ( preg_match ( $regexpr, $_POST ['abw_datum'] ) ) {
+      $datum = substr ( $_POST ['abw_datum'], 6 ) . substr ( $_POST ['abw_datum'], 3, 2 ) . substr ( $_POST ['abw_datum'], 0, 2 );
+      if ( !SED_TryQuery ( 'INSERT INTO termine SET turnier=?, staffel=?, runde=?, datum=?', [$globals['tid'], $_POST['abw_staffel'], $_POST['abw_runde'], $datum]) )
+        SED_Error ( "Termin konnte nicht eingef&uuml;gt werden.", true );
+    }
     else
         SED_Error ( "Der Termin muss das Format TT.MM.JJJJ haben!", false );
 
@@ -97,22 +97,21 @@
   // Einen abweichenden Termin entfernen
   if ( isset ( $_GET ['abw_del'] ) )
   {
-    if ( !mysql_query ( "DELETE FROM termine WHERE id=$_GET[abw_del] and turnier=$globals[tid] LIMIT 1", $globals ['db'] ) )
+    if ( !SED_TryQuery ( 'DELETE FROM termine WHERE id=? and turnier=? LIMIT 1', [$_GET['abw_del'], $globals['tid']]) )
       SED_Error ( "Termin konnte nicht gel&ouml;scht werden.", true );
   }
 ?>
-<form action='<? echo SED_GenerateFormAction(); ?>#AbwT' method='post'>
+<form action='<?php echo SED_GenerateFormAction(); ?>#AbwT' method='post'>
 <table class='sed_tabelle'>
   <tr><th>Staffel</th><th>Runde</th><th>Datum</th><th></th></tr>
-  <?
+  <?php
     // Bisherige Termine abfragen
-    $rsrc = mysql_query ( "SELECT id, staffel, runde, DATE_FORMAT(datum,'%d.%m.%Y') as datum FROM termine WHERE turnier=$globals[tid] and staffel IS NOT NULL ORDER BY staffel, runde", $globals ['db'] );
-    if ( $rsrc )
-      while ( $tmp = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) )
-      {
-        echo "<tr><td>" . $globals ['staffeln'][$tmp ['staffel']] . "</td><td>$tmp[runde]</td><td>$tmp[datum]</td>";
-        echo "<td><a href='?admin=turnterm-$admin[userid]-$admin[session]&abw_del=$tmp[id]#AbwT'>L&ouml;schen</a></td></tr>";
-      }
+    $rsrc = SED_Query ( 'SELECT id, staffel, runde, DATE_FORMAT(datum,\'%d.%m.%Y\') as datum FROM termine WHERE turnier=? and staffel IS NOT NULL ORDER BY staffel, runde', [$globals['tid']] )->fetchAllAssociative();
+    foreach ( $rsrc as $tmp )
+    {
+      echo "<tr><td>" . $globals ['staffeln'][$tmp ['staffel']] . "</td><td>$tmp[runde]</td><td>$tmp[datum]</td>";
+      echo "<td><a href='?admin=turnterm-$admin[userid]-$admin[session]&abw_del=$tmp[id]#AbwT'>L&ouml;schen</a></td></tr>";
+    }
       
     // Formular für neuen Termin
     echo '<tr><td><select name="abw_staffel">';
@@ -123,15 +122,15 @@
     }
     ?>
     </select></td>
-    <td><input type="text" name="abw_runde" size="1" value="<? if ( isset ( $_POST ['abw_runde'] ) ) echo $_POST ['abw_runde']+1; ?>" /></td>
-    <td><input type='text' id='abw_datum' name='abw_datum' size='10' value="<? if ( isset ( $_POST ['abw_datum'] ) ) echo $_POST ['abw_datum']; ?>" maxlength='10' /> <input type='button' class='sed_submit' id='abw_cal' value='...' /></td>
+    <td><input type="text" name="abw_runde" size="1" value="<?php if ( isset ( $_POST ['abw_runde'] ) ) echo $_POST ['abw_runde']+1; ?>" /></td>
+    <td><input type='text' id='abw_datum' name='abw_datum' size='10' value="<?php if ( isset ( $_POST ['abw_datum'] ) ) echo $_POST ['abw_datum']; ?>" maxlength='10' /> <input type='button' class='sed_submit' id='abw_cal' value='...' /></td>
     <td><input type="submit" class="sed_submit" name="abw_addsubmit" value="Hinzuf&uuml;gen" /></td></tr>
 </table></form>
 
 
 <script type="text/javascript"><!--
 
-<?
+<?php
   for ( $r = 1; $r <= $prefs ['runden']; ++$r )
     echo "Calendar.setup ( {
             inputField: 'termin$r',

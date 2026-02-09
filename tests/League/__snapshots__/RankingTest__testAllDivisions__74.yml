@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Oesede-Gmht. 2', url: '?mannschaft=1051', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=487&r=8#p1051x1067', title: 'gegen SV Lingen', text: 4½ }]
+    - [{ url: '?staffel=487&r=3#p1051x1024', title: 'gegen Nordhorn-Blanke 4', text: 5½ }]
+    - [{ url: '?staffel=487&r=7#p1051x1032', title: 'gegen SK Meppen 2', text: '6' }]
+    - [{ url: '?staffel=487&r=1#p1051x1058', title: 'gegen Dissen-Bad Roth', text: '5' }]
+    - [{ url: '?staffel=487&r=5#p1051x1073', title: 'gegen SV Hellern 3', text: 3½ }]
+    - [{ url: '?staffel=487&r=9#p1051x1059', title: 'gegen SC Fürstenau', text: '5' }]
+    - [{ url: '?staffel=487&r=2#p1051x1064', title: 'gegen SV Bad Essen 2', text: 6½ }]
+    - [{ url: '?staffel=487&r=4#p1051x1081', title: 'gegen Bentheim/Nordho 2', text: '4' }]
+    - [{ url: '?staffel=487&r=6#p1051x1065', title: 'gegen Gaste-Hasbergen', text: '6' }]
+    - 15
+    - '46'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Lingen', url: '?mannschaft=1067', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=487&r=8#p1067x1051', title: 'gegen SG Oesede-Gmht. 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=487&r=2#p1067x1024', title: 'gegen Nordhorn-Blanke 4', text: 4½ }]
+    - [{ url: '?staffel=487&r=6#p1067x1032', title: 'gegen SK Meppen 2', text: '5' }]
+    - [{ url: '?staffel=487&r=9#p1067x1058', title: 'gegen Dissen-Bad Roth', text: 3½ }]
+    - [{ url: '?staffel=487&r=4#p1067x1073', title: 'gegen SV Hellern 3', text: 4½ }]
+    - [{ url: '?staffel=487&r=7#p1067x1059', title: 'gegen SC Fürstenau', text: '5' }]
+    - [{ url: '?staffel=487&r=1#p1067x1064', title: 'gegen SV Bad Essen 2', text: '5' }]
+    - [{ url: '?staffel=487&r=3#p1067x1081', title: 'gegen Bentheim/Nordho 2', text: '6' }]
+    - [{ url: '?staffel=487&r=5#p1067x1065', title: 'gegen Gaste-Hasbergen', text: '8' }]
+    - 14
+    - '45'
+    - ''
+-
+    - '3.'
+    - { text: 'Nordhorn-Blanke 4', url: '?mannschaft=1024', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=487&r=3#p1024x1051', title: 'gegen SG Oesede-Gmht. 2', text: 2½ }]
+    - [{ url: '?staffel=487&r=2#p1024x1067', title: 'gegen SV Lingen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=487&r=1#p1024x1032', title: 'gegen SK Meppen 2', text: 6½ }]
+    - [{ url: '?staffel=487&r=4#p1024x1058', title: 'gegen Dissen-Bad Roth', text: 6½ }]
+    - [{ url: '?staffel=487&r=8#p1024x1073', title: 'gegen SV Hellern 3', text: '6' }]
+    - [{ url: '?staffel=487&r=6#p1024x1059', title: 'gegen SC Fürstenau', text: 4½ }]
+    - [{ url: '?staffel=487&r=5#p1024x1064', title: 'gegen SV Bad Essen 2', text: '7' }]
+    - [{ url: '?staffel=487&r=7#p1024x1081', title: 'gegen Bentheim/Nordho 2', text: '4' }]
+    - [{ url: '?staffel=487&r=9#p1024x1065', title: 'gegen Gaste-Hasbergen', text: '4' }]
+    - 12
+    - 44½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Meppen 2', url: '?mannschaft=1032', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=487&r=7#p1032x1051', title: 'gegen SG Oesede-Gmht. 2', text: '2' }]
+    - [{ url: '?staffel=487&r=6#p1032x1067', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=487&r=1#p1032x1024', title: 'gegen Nordhorn-Blanke 4', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=487&r=8#p1032x1058', title: 'gegen Dissen-Bad Roth', text: '4' }]
+    - [{ url: '?staffel=487&r=3#p1032x1073', title: 'gegen SV Hellern 3', text: 4½ }]
+    - [{ url: '?staffel=487&r=5#p1032x1059', title: 'gegen SC Fürstenau', text: '5' }]
+    - [{ url: '?staffel=487&r=9#p1032x1064', title: 'gegen SV Bad Essen 2', text: '4' }]
+    - [{ url: '?staffel=487&r=2#p1032x1081', title: 'gegen Bentheim/Nordho 2', text: 7½ }]
+    - [{ url: '?staffel=487&r=4#p1032x1065', title: 'gegen Gaste-Hasbergen', text: '5' }]
+    - 10
+    - 36½
+    - ''
+-
+    - '5.'
+    - { text: 'Dissen-Bad Roth', url: '?mannschaft=1058', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=487&r=1#p1058x1051', title: 'gegen SG Oesede-Gmht. 2', text: '3' }]
+    - [{ url: '?staffel=487&r=9#p1058x1067', title: 'gegen SV Lingen', text: 4½ }]
+    - [{ url: '?staffel=487&r=4#p1058x1024', title: 'gegen Nordhorn-Blanke 4', text: 1½ }]
+    - [{ url: '?staffel=487&r=8#p1058x1032', title: 'gegen SK Meppen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=487&r=6#p1058x1073', title: 'gegen SV Hellern 3', text: '4' }]
+    - [{ url: '?staffel=487&r=2#p1058x1059', title: 'gegen SC Fürstenau', text: '0' }]
+    - [{ url: '?staffel=487&r=3#p1058x1064', title: 'gegen SV Bad Essen 2', text: 4½ }]
+    - [{ url: '?staffel=487&r=5#p1058x1081', title: 'gegen Bentheim/Nordho 2', text: '5' }]
+    - [{ url: '?staffel=487&r=7#p1058x1065', title: 'gegen Gaste-Hasbergen', text: 5½ }]
+    - 10
+    - '32'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Hellern 3', url: '?mannschaft=1073', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=487&r=5#p1073x1051', title: 'gegen SG Oesede-Gmht. 2', text: 4½ }]
+    - [{ url: '?staffel=487&r=4#p1073x1067', title: 'gegen SV Lingen', text: 3½ }]
+    - [{ url: '?staffel=487&r=8#p1073x1024', title: 'gegen Nordhorn-Blanke 4', text: '2' }]
+    - [{ url: '?staffel=487&r=3#p1073x1032', title: 'gegen SK Meppen 2', text: 3½ }]
+    - [{ url: '?staffel=487&r=6#p1073x1058', title: 'gegen Dissen-Bad Roth', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=487&r=1#p1073x1059', title: 'gegen SC Fürstenau', text: 5½ }]
+    - [{ url: '?staffel=487&r=7#p1073x1064', title: 'gegen SV Bad Essen 2', text: 4½ }]
+    - [{ url: '?staffel=487&r=9#p1073x1081', title: 'gegen Bentheim/Nordho 2', text: 3½ }]
+    - [{ url: '?staffel=487&r=2#p1073x1065', title: 'gegen Gaste-Hasbergen', text: '6' }]
+    - 9
+    - '37'
+    - ''
+-
+    - '7.'
+    - { text: 'SC Fürstenau', url: '?mannschaft=1059', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=487&r=9#p1059x1051', title: 'gegen SG Oesede-Gmht. 2', text: '3' }]
+    - [{ url: '?staffel=487&r=7#p1059x1067', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=487&r=6#p1059x1024', title: 'gegen Nordhorn-Blanke 4', text: 3½ }]
+    - [{ url: '?staffel=487&r=5#p1059x1032', title: 'gegen SK Meppen 2', text: '3' }]
+    - [{ url: '?staffel=487&r=2#p1059x1058', title: 'gegen Dissen-Bad Roth', text: '8' }]
+    - [{ url: '?staffel=487&r=1#p1059x1073', title: 'gegen SV Hellern 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=487&r=4#p1059x1064', title: 'gegen SV Bad Essen 2', text: 5½ }]
+    - [{ url: '?staffel=487&r=8#p1059x1081', title: 'gegen Bentheim/Nordho 2', text: '7' }]
+    - [{ url: '?staffel=487&r=3#p1059x1065', title: 'gegen Gaste-Hasbergen', text: '5' }]
+    - 8
+    - 40½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Bad Essen 2', url: '?mannschaft=1064', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=487&r=2#p1064x1051', title: 'gegen SG Oesede-Gmht. 2', text: 1½ }]
+    - [{ url: '?staffel=487&r=1#p1064x1067', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=487&r=5#p1064x1024', title: 'gegen Nordhorn-Blanke 4', text: '1' }]
+    - [{ url: '?staffel=487&r=9#p1064x1032', title: 'gegen SK Meppen 2', text: '4' }]
+    - [{ url: '?staffel=487&r=3#p1064x1058', title: 'gegen Dissen-Bad Roth', text: 3½ }]
+    - [{ url: '?staffel=487&r=7#p1064x1073', title: 'gegen SV Hellern 3', text: 3½ }]
+    - [{ url: '?staffel=487&r=4#p1064x1059', title: 'gegen SC Fürstenau', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=487&r=6#p1064x1081', title: 'gegen Bentheim/Nordho 2', text: 5½ }]
+    - [{ url: '?staffel=487&r=8#p1064x1065', title: 'gegen Gaste-Hasbergen', text: 5½ }]
+    - 5
+    - '30'
+    - ''
+-
+    - '9.'
+    - { text: 'Bentheim/Nordho 2', url: '?mannschaft=1081', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=487&r=4#p1081x1051', title: 'gegen SG Oesede-Gmht. 2', text: '4' }]
+    - [{ url: '?staffel=487&r=3#p1081x1067', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=487&r=7#p1081x1024', title: 'gegen Nordhorn-Blanke 4', text: '4' }]
+    - [{ url: '?staffel=487&r=2#p1081x1032', title: 'gegen SK Meppen 2', text: ½ }]
+    - [{ url: '?staffel=487&r=5#p1081x1058', title: 'gegen Dissen-Bad Roth', text: '3' }]
+    - [{ url: '?staffel=487&r=9#p1081x1073', title: 'gegen SV Hellern 3', text: 4½ }]
+    - [{ url: '?staffel=487&r=8#p1081x1059', title: 'gegen SC Fürstenau', text: '1' }]
+    - [{ url: '?staffel=487&r=6#p1081x1064', title: 'gegen SV Bad Essen 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=487&r=1#p1081x1065', title: 'gegen Gaste-Hasbergen', text: '3' }]
+    - 4
+    - 24½
+    - ''
+-
+    - '10.'
+    - { text: Gaste-Hasbergen, url: '?mannschaft=1065', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=487&r=6#p1065x1051', title: 'gegen SG Oesede-Gmht. 2', text: '2' }]
+    - [{ url: '?staffel=487&r=5#p1065x1067', title: 'gegen SV Lingen', text: '0' }]
+    - [{ url: '?staffel=487&r=9#p1065x1024', title: 'gegen Nordhorn-Blanke 4', text: '4' }]
+    - [{ url: '?staffel=487&r=4#p1065x1032', title: 'gegen SK Meppen 2', text: '3' }]
+    - [{ url: '?staffel=487&r=7#p1065x1058', title: 'gegen Dissen-Bad Roth', text: 2½ }]
+    - [{ url: '?staffel=487&r=2#p1065x1073', title: 'gegen SV Hellern 3', text: '2' }]
+    - [{ url: '?staffel=487&r=3#p1065x1059', title: 'gegen SC Fürstenau', text: '3' }]
+    - [{ url: '?staffel=487&r=8#p1065x1064', title: 'gegen SV Bad Essen 2', text: 2½ }]
+    - [{ url: '?staffel=487&r=1#p1065x1081', title: 'gegen Bentheim/Nordho 2', text: '5' }]
+    - xxx
+    - 3
+    - '24'
+    - ''

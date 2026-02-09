@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Wildeshausen', url: '?mannschaft=1094', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=495&r=7#p1094x1177', title: 'gegen SG Ammerland', text: '5' }]
+    - [{ url: '?staffel=495&r=4#p1094x1098', title: 'gegen SV Lingen', text: 4½ }]
+    - [{ url: '?staffel=495&r=6#p1094x1176', title: 'gegen Nordhorn-Blanke 2', text: 5½ }]
+    - [{ url: '?staffel=495&r=2#p1094x1095', title: 'gegen SC Stadthagen', text: '4' }]
+    - [{ url: '?staffel=495&r=1#p1094x1089', title: 'gegen SK Lehrte 2', text: '5' }]
+    - 10
+    - '24'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Ammerland', url: '?mannschaft=1177', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=495&r=7#p1177x1094', title: 'gegen SK Wildeshausen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=495&r=2#p1177x1098', title: 'gegen SV Lingen', text: '3' }]
+    - [{ url: '?staffel=495&r=4#p1177x1176', title: 'gegen Nordhorn-Blanke 2', text: 4½ }]
+    - [{ url: '?staffel=495&r=3#p1177x1095', title: 'gegen SC Stadthagen', text: '5' }]
+    - [{ url: '?staffel=495&r=6#p1177x1089', title: 'gegen SK Lehrte 2', text: 4½ }]
+    - 7
+    - '18'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Lingen', url: '?mannschaft=1098', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=495&r=4#p1098x1094', title: 'gegen SK Wildeshausen', text: 1½ }]
+    - [{ url: '?staffel=495&r=2#p1098x1177', title: 'gegen SG Ammerland', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=495&r=1#p1098x1176', title: 'gegen Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=495&r=6#p1098x1095', title: 'gegen SC Stadthagen', text: '5' }]
+    - [{ url: '?staffel=495&r=7#p1098x1089', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - 5
+    - '13'
+    - ''
+-
+    - '4.'
+    - { text: 'Nordhorn-Blanke 2', url: '?mannschaft=1176', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=495&r=6#p1176x1094', title: 'gegen SK Wildeshausen', text: ½ }]
+    - [{ url: '?staffel=495&r=4#p1176x1177', title: 'gegen SG Ammerland', text: 1½ }]
+    - [{ url: '?staffel=495&r=1#p1176x1098', title: 'gegen SV Lingen', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=495&r=7#p1176x1095', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=495&r=2#p1176x1089', title: 'gegen SK Lehrte 2', text: '1' }]
+    - 3
+    - '12'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=1095', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=495&r=2#p1095x1094', title: 'gegen SK Wildeshausen', text: '2' }]
+    - [{ url: '?staffel=495&r=3#p1095x1177', title: 'gegen SG Ammerland', text: '1' }]
+    - [{ url: '?staffel=495&r=6#p1095x1098', title: 'gegen SV Lingen', text: '1' }]
+    - [{ url: '?staffel=495&r=7#p1095x1176', title: 'gegen Nordhorn-Blanke 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=495&r=4#p1095x1089', title: 'gegen SK Lehrte 2', text: 3½ }]
+    - 3
+    - 10½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=1089', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=495&r=1#p1089x1094', title: 'gegen SK Wildeshausen', text: '1' }]
+    - [{ url: '?staffel=495&r=6#p1089x1177', title: 'gegen SG Ammerland', text: 1½ }]
+    - [{ url: '?staffel=495&r=7#p1089x1098', title: 'gegen SV Lingen', text: 2½ }]
+    - [{ url: '?staffel=495&r=2#p1089x1176', title: 'gegen Nordhorn-Blanke 2', text: '5' }]
+    - [{ url: '?staffel=495&r=4#p1089x1095', title: 'gegen SC Stadthagen', text: 2½ }]
+    - xxx
+    - 2
+    - 12½
+    - ''

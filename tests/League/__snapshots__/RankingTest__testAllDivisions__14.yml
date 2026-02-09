@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Bremen Nord', url: '?mannschaft=491', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=410&r=2#p491x483', title: 'gegen SV Hellern', text: '3' }]
+    - [{ url: '?staffel=410&r=3#p491x484', title: 'gegen SG Niederelbe', text: '6' }]
+    - [{ url: '?staffel=410&r=4#p491x490', title: 'gegen Werder Bremen 3', text: '6' }]
+    - [{ url: '?staffel=410&r=6#p491x489', title: 'gegen SK Verden', text: '6' }]
+    - [{ url: '?staffel=410&r=7#p491x486', title: 'gegen IGM Osnabrück', text: 5½ }]
+    - [{ url: '?staffel=410&r=9#p491x488', title: 'gegen MTV Tostedt', text: '4' }]
+    - [{ url: '?staffel=410&r=8#p491x487', title: 'gegen Stader SV', text: 6½ }]
+    - [{ url: '?staffel=410&r=5#p491x485', title: 'gegen Union Oldenburg 2', text: 7½ }]
+    - [{ url: '?staffel=410&r=1#p491x482', title: 'gegen Bremer SG 2', text: '5' }]
+    - 15
+    - 49½
+    - ''
+-
+    - '2.'
+    - { text: 'SV Hellern', url: '?mannschaft=483', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=410&r=2#p483x491', title: 'gegen SK Bremen Nord', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=410&r=8#p483x484', title: 'gegen SG Niederelbe', text: 4½ }]
+    - [{ url: '?staffel=410&r=7#p483x490', title: 'gegen Werder Bremen 3', text: '3' }]
+    - [{ url: '?staffel=410&r=9#p483x489', title: 'gegen SK Verden', text: 5½ }]
+    - [{ url: '?staffel=410&r=3#p483x486', title: 'gegen IGM Osnabrück', text: '4' }]
+    - [{ url: '?staffel=410&r=4#p483x488', title: 'gegen MTV Tostedt', text: 4½ }]
+    - [{ url: '?staffel=410&r=5#p483x487', title: 'gegen Stader SV', text: '4' }]
+    - [{ url: '?staffel=410&r=1#p483x485', title: 'gegen Union Oldenburg 2', text: 5½ }]
+    - [{ url: '?staffel=410&r=6#p483x482', title: 'gegen Bremer SG 2', text: '5' }]
+    - 14
+    - '41'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Niederelbe', url: '?mannschaft=484', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=410&r=3#p484x491', title: 'gegen SK Bremen Nord', text: '2' }]
+    - [{ url: '?staffel=410&r=8#p484x483', title: 'gegen SV Hellern', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=410&r=1#p484x490', title: 'gegen Werder Bremen 3', text: '4' }]
+    - [{ url: '?staffel=410&r=4#p484x489', title: 'gegen SK Verden', text: 4½ }]
+    - [{ url: '?staffel=410&r=9#p484x486', title: 'gegen IGM Osnabrück', text: '4' }]
+    - [{ url: '?staffel=410&r=5#p484x488', title: 'gegen MTV Tostedt', text: '5' }]
+    - [{ url: '?staffel=410&r=7#p484x487', title: 'gegen Stader SV', text: 5½ }]
+    - [{ url: '?staffel=410&r=6#p484x485', title: 'gegen Union Oldenburg 2', text: '4' }]
+    - [{ url: '?staffel=410&r=2#p484x482', title: 'gegen Bremer SG 2', text: '5' }]
+    - 11
+    - 37½
+    - ''
+-
+    - '4.'
+    - { text: 'Werder Bremen 3', url: '?mannschaft=490', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=410&r=4#p490x491', title: 'gegen SK Bremen Nord', text: '2' }]
+    - [{ url: '?staffel=410&r=7#p490x483', title: 'gegen SV Hellern', text: '5' }]
+    - [{ url: '?staffel=410&r=1#p490x484', title: 'gegen SG Niederelbe', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=410&r=2#p490x489', title: 'gegen SK Verden', text: 4½ }]
+    - [{ url: '?staffel=410&r=5#p490x486', title: 'gegen IGM Osnabrück', text: '3' }]
+    - [{ url: '?staffel=410&r=6#p490x488', title: 'gegen MTV Tostedt', text: '3' }]
+    - [{ url: '?staffel=410&r=9#p490x487', title: 'gegen Stader SV', text: '4' }]
+    - [{ url: '?staffel=410&r=8#p490x485', title: 'gegen Union Oldenburg 2', text: '6' }]
+    - [{ url: '?staffel=410&r=3#p490x482', title: 'gegen Bremer SG 2', text: '4' }]
+    - 9
+    - 35½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Verden', url: '?mannschaft=489', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=410&r=6#p489x491', title: 'gegen SK Bremen Nord', text: '2' }]
+    - [{ url: '?staffel=410&r=9#p489x483', title: 'gegen SV Hellern', text: 2½ }]
+    - [{ url: '?staffel=410&r=4#p489x484', title: 'gegen SG Niederelbe', text: 3½ }]
+    - [{ url: '?staffel=410&r=2#p489x490', title: 'gegen Werder Bremen 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=410&r=1#p489x486', title: 'gegen IGM Osnabrück', text: 5½ }]
+    - [{ url: '?staffel=410&r=8#p489x488', title: 'gegen MTV Tostedt', text: '4' }]
+    - [{ url: '?staffel=410&r=3#p489x487', title: 'gegen Stader SV', text: 4½ }]
+    - [{ url: '?staffel=410&r=7#p489x485', title: 'gegen Union Oldenburg 2', text: '5' }]
+    - [{ url: '?staffel=410&r=5#p489x482', title: 'gegen Bremer SG 2', text: 4½ }]
+    - 9
+    - '35'
+    - ''
+-
+    - '6.'
+    - { text: 'IGM Osnabrück', url: '?mannschaft=486', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=410&r=7#p486x491', title: 'gegen SK Bremen Nord', text: 2½ }]
+    - [{ url: '?staffel=410&r=3#p486x483', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=410&r=9#p486x484', title: 'gegen SG Niederelbe', text: '4' }]
+    - [{ url: '?staffel=410&r=5#p486x490', title: 'gegen Werder Bremen 3', text: '5' }]
+    - [{ url: '?staffel=410&r=1#p486x489', title: 'gegen SK Verden', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=410&r=2#p486x488', title: 'gegen MTV Tostedt', text: '5' }]
+    - [{ url: '?staffel=410&r=6#p486x487', title: 'gegen Stader SV', text: 6½ }]
+    - [{ url: '?staffel=410&r=4#p486x485', title: 'gegen Union Oldenburg 2', text: '4' }]
+    - [{ url: '?staffel=410&r=8#p486x482', title: 'gegen Bremer SG 2', text: '0' }]
+    - 9
+    - 33½
+    - ''
+-
+    - '7.'
+    - { text: 'MTV Tostedt', url: '?mannschaft=488', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=410&r=9#p488x491', title: 'gegen SK Bremen Nord', text: '4' }]
+    - [{ url: '?staffel=410&r=4#p488x483', title: 'gegen SV Hellern', text: 3½ }]
+    - [{ url: '?staffel=410&r=5#p488x484', title: 'gegen SG Niederelbe', text: '3' }]
+    - [{ url: '?staffel=410&r=6#p488x490', title: 'gegen Werder Bremen 3', text: '5' }]
+    - [{ url: '?staffel=410&r=8#p488x489', title: 'gegen SK Verden', text: '4' }]
+    - [{ url: '?staffel=410&r=2#p488x486', title: 'gegen IGM Osnabrück', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=410&r=1#p488x487', title: 'gegen Stader SV', text: 4½ }]
+    - [{ url: '?staffel=410&r=3#p488x485', title: 'gegen Union Oldenburg 2', text: '2' }]
+    - [{ url: '?staffel=410&r=7#p488x482', title: 'gegen Bremer SG 2', text: '3' }]
+    - 6
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'Stader SV', url: '?mannschaft=487', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=410&r=8#p487x491', title: 'gegen SK Bremen Nord', text: 1½ }]
+    - [{ url: '?staffel=410&r=5#p487x483', title: 'gegen SV Hellern', text: '4' }]
+    - [{ url: '?staffel=410&r=7#p487x484', title: 'gegen SG Niederelbe', text: 2½ }]
+    - [{ url: '?staffel=410&r=9#p487x490', title: 'gegen Werder Bremen 3', text: '4' }]
+    - [{ url: '?staffel=410&r=3#p487x489', title: 'gegen SK Verden', text: 3½ }]
+    - [{ url: '?staffel=410&r=6#p487x486', title: 'gegen IGM Osnabrück', text: 1½ }]
+    - [{ url: '?staffel=410&r=1#p487x488', title: 'gegen MTV Tostedt', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=410&r=2#p487x485', title: 'gegen Union Oldenburg 2', text: 4½ }]
+    - [{ url: '?staffel=410&r=4#p487x482', title: 'gegen Bremer SG 2', text: '5' }]
+    - 6
+    - '30'
+    - ''
+-
+    - '9.'
+    - { text: 'Union Oldenburg 2', url: '?mannschaft=485', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=410&r=5#p485x491', title: 'gegen SK Bremen Nord', text: ½ }]
+    - [{ url: '?staffel=410&r=1#p485x483', title: 'gegen SV Hellern', text: 2½ }]
+    - [{ url: '?staffel=410&r=6#p485x484', title: 'gegen SG Niederelbe', text: '4' }]
+    - [{ url: '?staffel=410&r=8#p485x490', title: 'gegen Werder Bremen 3', text: '2' }]
+    - [{ url: '?staffel=410&r=7#p485x489', title: 'gegen SK Verden', text: '3' }]
+    - [{ url: '?staffel=410&r=4#p485x486', title: 'gegen IGM Osnabrück', text: '4' }]
+    - [{ url: '?staffel=410&r=3#p485x488', title: 'gegen MTV Tostedt', text: '6' }]
+    - [{ url: '?staffel=410&r=2#p485x487', title: 'gegen Stader SV', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=410&r=9#p485x482', title: 'gegen Bremer SG 2', text: 4½ }]
+    - 6
+    - '30'
+    - ''
+-
+    - '10.'
+    - { text: 'Bremer SG 2', url: '?mannschaft=482', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=410&r=1#p482x491', title: 'gegen SK Bremen Nord', text: '3' }]
+    - [{ url: '?staffel=410&r=6#p482x483', title: 'gegen SV Hellern', text: '3' }]
+    - [{ url: '?staffel=410&r=2#p482x484', title: 'gegen SG Niederelbe', text: '3' }]
+    - [{ url: '?staffel=410&r=3#p482x490', title: 'gegen Werder Bremen 3', text: '4' }]
+    - [{ url: '?staffel=410&r=5#p482x489', title: 'gegen SK Verden', text: 3½ }]
+    - [{ url: '?staffel=410&r=8#p482x486', title: 'gegen IGM Osnabrück', text: '8' }]
+    - [{ url: '?staffel=410&r=7#p482x488', title: 'gegen MTV Tostedt', text: '5' }]
+    - [{ url: '?staffel=410&r=4#p482x487', title: 'gegen Stader SV', text: '3' }]
+    - [{ url: '?staffel=410&r=9#p482x485', title: 'gegen Union Oldenburg 2', text: 3½ }]
+    - xxx
+    - 5
+    - '36'
+    - ''

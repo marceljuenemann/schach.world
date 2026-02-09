@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Wolfsburg', url: '?mannschaft=6815', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1577&r=6#p6815x6817', title: 'gegen ESV Göttingen', text: 4½ }]
+    - [{ url: '?staffel=1577&r=9#p6815x6881', title: 'gegen Peiner SV', text: 4½ }]
+    - [{ url: '?staffel=1577&r=4#p6815x6867', title: 'gegen SV Gifhorn', text: '8' }]
+    - [{ url: '?staffel=1577&r=5#p6815x6883', title: 'gegen KS Braunschweig', text: '5' }]
+    - [{ url: '?staffel=1577&r=8#p6815x6861', title: 'gegen C. Wolfenbüttel', text: '8' }]
+    - [{ url: '?staffel=1577&r=1#p6815x6869', title: 'gegen SF Fallersleben', text: 2½ }]
+    - [{ url: '?staffel=1577&r=3#p6815x6813', title: 'gegen Hildesheimer SV 2', text: 4½ }]
+    - [{ url: '?staffel=1577&r=2#p6815x6822', title: 'gegen Hamelner SV 3', text: '6' }]
+    - [{ url: '?staffel=1577&r=7#p6815x6868', title: 'gegen Plesse Bovenden', text: '8' }]
+    - 16
+    - '51'
+    - ''
+-
+    - '2.'
+    - { text: 'ESV Göttingen', url: '?mannschaft=6817', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1577&r=6#p6817x6815', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1577&r=3#p6817x6881', title: 'gegen Peiner SV', text: 6½ }]
+    - [{ url: '?staffel=1577&r=9#p6817x6867', title: 'gegen SV Gifhorn', text: 4½ }]
+    - [{ url: '?staffel=1577&r=7#p6817x6883', title: 'gegen KS Braunschweig', text: '5' }]
+    - [{ url: '?staffel=1577&r=1#p6817x6861', title: 'gegen C. Wolfenbüttel', text: '5' }]
+    - [{ url: '?staffel=1577&r=2#p6817x6869', title: 'gegen SF Fallersleben', text: '5' }]
+    - [{ url: '?staffel=1577&r=4#p6817x6813', title: 'gegen Hildesheimer SV 2', text: 5½ }]
+    - [{ url: '?staffel=1577&r=5#p6817x6822', title: 'gegen Hamelner SV 3', text: 6½ }]
+    - [{ url: '?staffel=1577&r=8#p6817x6868', title: 'gegen Plesse Bovenden', text: '8' }]
+    - 16
+    - 49½
+    - ''
+-
+    - '3.'
+    - { text: 'Peiner SV', url: '?mannschaft=6881', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1577&r=9#p6881x6815', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - [{ url: '?staffel=1577&r=3#p6881x6817', title: 'gegen ESV Göttingen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1577&r=8#p6881x6867', title: 'gegen SV Gifhorn', text: 4½ }]
+    - [{ url: '?staffel=1577&r=4#p6881x6883', title: 'gegen KS Braunschweig', text: '6' }]
+    - [{ url: '?staffel=1577&r=2#p6881x6861', title: 'gegen C. Wolfenbüttel', text: 5½ }]
+    - [{ url: '?staffel=1577&r=5#p6881x6869', title: 'gegen SF Fallersleben', text: 3½ }]
+    - [{ url: '?staffel=1577&r=6#p6881x6813', title: 'gegen Hildesheimer SV 2', text: '5' }]
+    - [{ url: '?staffel=1577&r=7#p6881x6822', title: 'gegen Hamelner SV 3', text: '8' }]
+    - [{ url: '?staffel=1577&r=1#p6881x6868', title: 'gegen Plesse Bovenden', text: '8' }]
+    - 12
+    - 45½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Gifhorn', url: '?mannschaft=6867', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1577&r=4#p6867x6815', title: 'gegen SC Wolfsburg', text: '0' }]
+    - [{ url: '?staffel=1577&r=9#p6867x6817', title: 'gegen ESV Göttingen', text: 3½ }]
+    - [{ url: '?staffel=1577&r=8#p6867x6881', title: 'gegen Peiner SV', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1577&r=2#p6867x6883', title: 'gegen KS Braunschweig', text: '8' }]
+    - [{ url: '?staffel=1577&r=7#p6867x6861', title: 'gegen C. Wolfenbüttel', text: 4½ }]
+    - [{ url: '?staffel=1577&r=6#p6867x6869', title: 'gegen SF Fallersleben', text: '3' }]
+    - [{ url: '?staffel=1577&r=1#p6867x6813', title: 'gegen Hildesheimer SV 2', text: '6' }]
+    - [{ url: '?staffel=1577&r=3#p6867x6822', title: 'gegen Hamelner SV 3', text: '6' }]
+    - [{ url: '?staffel=1577&r=5#p6867x6868', title: 'gegen Plesse Bovenden', text: '8' }]
+    - 10
+    - 42½
+    - ''
+-
+    - '5.'
+    - { text: 'KS Braunschweig', url: '?mannschaft=6883', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1577&r=5#p6883x6815', title: 'gegen SC Wolfsburg', text: '3' }]
+    - [{ url: '?staffel=1577&r=7#p6883x6817', title: 'gegen ESV Göttingen', text: '3' }]
+    - [{ url: '?staffel=1577&r=4#p6883x6881', title: 'gegen Peiner SV', text: '2' }]
+    - [{ url: '?staffel=1577&r=2#p6883x6867', title: 'gegen SV Gifhorn', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1577&r=3#p6883x6861', title: 'gegen C. Wolfenbüttel', text: 4½ }]
+    - [{ url: '?staffel=1577&r=9#p6883x6869', title: 'gegen SF Fallersleben', text: 4½ }]
+    - [{ url: '?staffel=1577&r=8#p6883x6813', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=1577&r=1#p6883x6822', title: 'gegen Hamelner SV 3', text: 4½ }]
+    - [{ url: '?staffel=1577&r=6#p6883x6868', title: 'gegen Plesse Bovenden', text: '8' }]
+    - 9
+    - 33½
+    - ''
+-
+    - '6.'
+    - { text: 'C. Wolfenbüttel', url: '?mannschaft=6861', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1577&r=8#p6861x6815', title: 'gegen SC Wolfsburg', text: '0' }]
+    - [{ url: '?staffel=1577&r=1#p6861x6817', title: 'gegen ESV Göttingen', text: '3' }]
+    - [{ url: '?staffel=1577&r=2#p6861x6881', title: 'gegen Peiner SV', text: 2½ }]
+    - [{ url: '?staffel=1577&r=7#p6861x6867', title: 'gegen SV Gifhorn', text: 3½ }]
+    - [{ url: '?staffel=1577&r=3#p6861x6883', title: 'gegen KS Braunschweig', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1577&r=4#p6861x6869', title: 'gegen SF Fallersleben', text: '8' }]
+    - [{ url: '?staffel=1577&r=5#p6861x6813', title: 'gegen Hildesheimer SV 2', text: '5' }]
+    - [{ url: '?staffel=1577&r=6#p6861x6822', title: 'gegen Hamelner SV 3', text: 5½ }]
+    - [{ url: '?staffel=1577&r=9#p6861x6868', title: 'gegen Plesse Bovenden', text: '8' }]
+    - 8
+    - '39'
+    - ''
+-
+    - '7.'
+    - { text: 'SF Fallersleben', url: '?mannschaft=6869', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1577&r=1#p6869x6815', title: 'gegen SC Wolfsburg', text: 5½ }]
+    - [{ url: '?staffel=1577&r=2#p6869x6817', title: 'gegen ESV Göttingen', text: '3' }]
+    - [{ url: '?staffel=1577&r=5#p6869x6881', title: 'gegen Peiner SV', text: 3½ }]
+    - [{ url: '?staffel=1577&r=6#p6869x6867', title: 'gegen SV Gifhorn', text: '5' }]
+    - [{ url: '?staffel=1577&r=9#p6869x6883', title: 'gegen KS Braunschweig', text: 3½ }]
+    - [{ url: '?staffel=1577&r=4#p6869x6861', title: 'gegen C. Wolfenbüttel', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1577&r=7#p6869x6813', title: 'gegen Hildesheimer SV 2', text: 6½ }]
+    - [{ url: '?staffel=1577&r=8#p6869x6822', title: 'gegen Hamelner SV 3', text: 2½ }]
+    - [{ url: '?staffel=1577&r=3#p6869x6868', title: 'gegen Plesse Bovenden', text: '8' }]
+    - 8
+    - 37½
+    - ''
+-
+    - '8.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=6813', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1577&r=3#p6813x6815', title: 'gegen SC Wolfsburg', text: 3½ }]
+    - [{ url: '?staffel=1577&r=4#p6813x6817', title: 'gegen ESV Göttingen', text: 2½ }]
+    - [{ url: '?staffel=1577&r=6#p6813x6881', title: 'gegen Peiner SV', text: '3' }]
+    - [{ url: '?staffel=1577&r=1#p6813x6867', title: 'gegen SV Gifhorn', text: '2' }]
+    - [{ url: '?staffel=1577&r=8#p6813x6883', title: 'gegen KS Braunschweig', text: '4' }]
+    - [{ url: '?staffel=1577&r=5#p6813x6861', title: 'gegen C. Wolfenbüttel', text: '3' }]
+    - [{ url: '?staffel=1577&r=7#p6813x6869', title: 'gegen SF Fallersleben', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1577&r=9#p6813x6822', title: 'gegen Hamelner SV 3', text: 4½ }]
+    - [{ url: '?staffel=1577&r=2#p6813x6868', title: 'gegen Plesse Bovenden', text: '8' }]
+    - 5
+    - '32'
+    - ''
+-
+    - '9.'
+    - { text: 'Hamelner SV 3', url: '?mannschaft=6822', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1577&r=2#p6822x6815', title: 'gegen SC Wolfsburg', text: '2' }]
+    - [{ url: '?staffel=1577&r=5#p6822x6817', title: 'gegen ESV Göttingen', text: 1½ }]
+    - [{ url: '?staffel=1577&r=7#p6822x6881', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1577&r=3#p6822x6867', title: 'gegen SV Gifhorn', text: '2' }]
+    - [{ url: '?staffel=1577&r=1#p6822x6883', title: 'gegen KS Braunschweig', text: 3½ }]
+    - [{ url: '?staffel=1577&r=6#p6822x6861', title: 'gegen C. Wolfenbüttel', text: 2½ }]
+    - [{ url: '?staffel=1577&r=8#p6822x6869', title: 'gegen SF Fallersleben', text: 5½ }]
+    - [{ url: '?staffel=1577&r=9#p6822x6813', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1577&r=4#p6822x6868', title: 'gegen Plesse Bovenden', text: '8' }]
+    - 4
+    - 28½
+    - ''
+-
+    - '10.'
+    - { text: 'Plesse Bovenden', url: '?mannschaft=6868', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1577&r=7#p6868x6815', title: 'gegen SC Wolfsburg', text: '0' }]
+    - [{ url: '?staffel=1577&r=8#p6868x6817', title: 'gegen ESV Göttingen', text: '0' }]
+    - [{ url: '?staffel=1577&r=1#p6868x6881', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=1577&r=5#p6868x6867', title: 'gegen SV Gifhorn', text: '0' }]
+    - [{ url: '?staffel=1577&r=6#p6868x6883', title: 'gegen KS Braunschweig', text: '0' }]
+    - [{ url: '?staffel=1577&r=9#p6868x6861', title: 'gegen C. Wolfenbüttel', text: '0' }]
+    - [{ url: '?staffel=1577&r=3#p6868x6869', title: 'gegen SF Fallersleben', text: '0' }]
+    - [{ url: '?staffel=1577&r=2#p6868x6813', title: 'gegen Hildesheimer SV 2', text: '0' }]
+    - [{ url: '?staffel=1577&r=4#p6868x6822', title: 'gegen Hamelner SV 3', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

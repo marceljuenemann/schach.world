@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Neustadt 1', url: '?mannschaft=6775', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1632&r=6#p6775x6762', title: 'gegen SF Barsinghausen', text: 1½ }]
+    - [{ url: '?staffel=1632&r=7#p6775x6772', title: 'gegen HSK Lister Turm 4', text: 4½ }]
+    - [{ url: '?staffel=1632&r=8#p6775x6724', title: 'gegen SK Anderten', text: 4½ }]
+    - [{ url: '?staffel=1632&r=2#p6775x6738', title: 'gegen SK Lehrte 4', text: 6½ }]
+    - [{ url: '?staffel=1632&r=5#p6775x6733', title: 'gegen SV Gretenberg', text: 5½ }]
+    - [{ url: '?staffel=1632&r=3#p6775x6719', title: 'gegen SG WB Eilenriede 2', text: '4' }]
+    - [{ url: '?staffel=1632&r=9#p6775x6747', title: 'gegen SG Garbsen/Marienw', text: 5½ }]
+    - [{ url: '?staffel=1632&r=1#p6775x6728', title: 'gegen SVg Calenberg', text: 4½ }]
+    - 13
+    - 36½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Barsinghausen', url: '?mannschaft=6762', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1632&r=6#p6762x6775', title: 'gegen SK Neustadt 1', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=1632&r=8#p6762x6772', title: 'gegen HSK Lister Turm 4', text: 2½ }]
+    - [{ url: '?staffel=1632&r=1#p6762x6724', title: 'gegen SK Anderten', text: 4½ }]
+    - [{ url: '?staffel=1632&r=5#p6762x6738', title: 'gegen SK Lehrte 4', text: '4' }]
+    - [{ url: '?staffel=1632&r=9#p6762x6733', title: 'gegen SV Gretenberg', text: 4½ }]
+    - [{ url: '?staffel=1632&r=7#p6762x6719', title: 'gegen SG WB Eilenriede 2', text: 4½ }]
+    - [{ url: '?staffel=1632&r=4#p6762x6747', title: 'gegen SG Garbsen/Marienw', text: 4½ }]
+    - [{ url: '?staffel=1632&r=3#p6762x6728', title: 'gegen SVg Calenberg', text: '5' }]
+    - 13
+    - '36'
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'HSK Lister Turm 4', url: '?mannschaft=6772', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1632&r=7#p6772x6775', title: 'gegen SK Neustadt 1', text: 3½ }]
+    - [{ url: '?staffel=1632&r=8#p6772x6762', title: 'gegen SF Barsinghausen', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=1632&r=2#p6772x6724', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=1632&r=4#p6772x6738', title: 'gegen SK Lehrte 4', text: 5½ }]
+    - [{ url: '?staffel=1632&r=6#p6772x6733', title: 'gegen SV Gretenberg', text: 2½ }]
+    - [{ url: '?staffel=1632&r=5#p6772x6719', title: 'gegen SG WB Eilenriede 2', text: '6' }]
+    - [{ url: '?staffel=1632&r=1#p6772x6747', title: 'gegen SG Garbsen/Marienw', text: '5' }]
+    - [{ url: '?staffel=1632&r=9#p6772x6728', title: 'gegen SVg Calenberg', text: 4½ }]
+    - 11
+    - 36½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Anderten', url: '?mannschaft=6724', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1632&r=8#p6724x6775', title: 'gegen SK Neustadt 1', text: 3½ }]
+    - [{ url: '?staffel=1632&r=1#p6724x6762', title: 'gegen SF Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=1632&r=2#p6724x6772', title: 'gegen HSK Lister Turm 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1632&r=9#p6724x6738', title: 'gegen SK Lehrte 4', text: '4' }]
+    - [{ url: '?staffel=1632&r=7#p6724x6733', title: 'gegen SV Gretenberg', text: 4½ }]
+    - [{ url: '?staffel=1632&r=6#p6724x6719', title: 'gegen SG WB Eilenriede 2', text: 4½ }]
+    - [{ url: '?staffel=1632&r=3#p6724x6747', title: 'gegen SG Garbsen/Marienw', text: '6' }]
+    - [{ url: '?staffel=1632&r=4#p6724x6728', title: 'gegen SVg Calenberg', text: '7' }]
+    - 10
+    - '37'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=6738', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1632&r=2#p6738x6775', title: 'gegen SK Neustadt 1', text: 1½ }]
+    - [{ url: '?staffel=1632&r=5#p6738x6762', title: 'gegen SF Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=1632&r=4#p6738x6772', title: 'gegen HSK Lister Turm 4', text: 2½ }]
+    - [{ url: '?staffel=1632&r=9#p6738x6724', title: 'gegen SK Anderten', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1632&r=3#p6738x6733', title: 'gegen SV Gretenberg', text: '6' }]
+    - [{ url: '?staffel=1632&r=1#p6738x6719', title: 'gegen SG WB Eilenriede 2', text: 3½ }]
+    - [{ url: '?staffel=1632&r=6#p6738x6747', title: 'gegen SG Garbsen/Marienw', text: 4½ }]
+    - [{ url: '?staffel=1632&r=7#p6738x6728', title: 'gegen SVg Calenberg', text: 5½ }]
+    - 8
+    - 31½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Gretenberg', url: '?mannschaft=6733', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1632&r=5#p6733x6775', title: 'gegen SK Neustadt 1', text: 2½ }]
+    - [{ url: '?staffel=1632&r=9#p6733x6762', title: 'gegen SF Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=1632&r=6#p6733x6772', title: 'gegen HSK Lister Turm 4', text: 5½ }]
+    - [{ url: '?staffel=1632&r=7#p6733x6724', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=1632&r=3#p6733x6738', title: 'gegen SK Lehrte 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1632&r=4#p6733x6719', title: 'gegen SG WB Eilenriede 2', text: 3½ }]
+    - [{ url: '?staffel=1632&r=8#p6733x6747', title: 'gegen SG Garbsen/Marienw', text: 5½ }]
+    - [{ url: '?staffel=1632&r=2#p6733x6728', title: 'gegen SVg Calenberg', text: 4½ }]
+    - 6
+    - 30½
+    - ''
+-
+    - '7.'
+    - { text: 'SG WB Eilenriede 2', url: '?mannschaft=6719', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1632&r=3#p6719x6775', title: 'gegen SK Neustadt 1', text: '4' }]
+    - [{ url: '?staffel=1632&r=7#p6719x6762', title: 'gegen SF Barsinghausen', text: 2½ }]
+    - [{ url: '?staffel=1632&r=5#p6719x6772', title: 'gegen HSK Lister Turm 4', text: '2' }]
+    - [{ url: '?staffel=1632&r=6#p6719x6724', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=1632&r=1#p6719x6738', title: 'gegen SK Lehrte 4', text: 4½ }]
+    - [{ url: '?staffel=1632&r=4#p6719x6733', title: 'gegen SV Gretenberg', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1632&r=2#p6719x6747', title: 'gegen SG Garbsen/Marienw', text: '2' }]
+    - [{ url: '?staffel=1632&r=8#p6719x6728', title: 'gegen SVg Calenberg', text: '3' }]
+    - 5
+    - '26'
+    - ''
+-
+    - '8.'
+    - { text: 'SG Garbsen/Marienw', url: '?mannschaft=6747', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1632&r=9#p6747x6775', title: 'gegen SK Neustadt 1', text: 2½ }]
+    - [{ url: '?staffel=1632&r=4#p6747x6762', title: 'gegen SF Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=1632&r=1#p6747x6772', title: 'gegen HSK Lister Turm 4', text: '3' }]
+    - [{ url: '?staffel=1632&r=3#p6747x6724', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=1632&r=6#p6747x6738', title: 'gegen SK Lehrte 4', text: 3½ }]
+    - [{ url: '?staffel=1632&r=8#p6747x6733', title: 'gegen SV Gretenberg', text: 2½ }]
+    - [{ url: '?staffel=1632&r=2#p6747x6719', title: 'gegen SG WB Eilenriede 2', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=1632&r=5#p6747x6728', title: 'gegen SVg Calenberg', text: '6' }]
+    - 4
+    - '29'
+    - ''
+-
+    - '9.'
+    - { text: 'SVg Calenberg', url: '?mannschaft=6728', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1632&r=1#p6728x6775', title: 'gegen SK Neustadt 1', text: 3½ }]
+    - [{ url: '?staffel=1632&r=3#p6728x6762', title: 'gegen SF Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=1632&r=9#p6728x6772', title: 'gegen HSK Lister Turm 4', text: 3½ }]
+    - [{ url: '?staffel=1632&r=4#p6728x6724', title: 'gegen SK Anderten', text: '1' }]
+    - [{ url: '?staffel=1632&r=7#p6728x6738', title: 'gegen SK Lehrte 4', text: 2½ }]
+    - [{ url: '?staffel=1632&r=2#p6728x6733', title: 'gegen SV Gretenberg', text: 3½ }]
+    - [{ url: '?staffel=1632&r=8#p6728x6719', title: 'gegen SG WB Eilenriede 2', text: '5' }]
+    - [{ url: '?staffel=1632&r=5#p6728x6747', title: 'gegen SG Garbsen/Marienw', text: '2' }]
+    - xxx
+    - 2
+    - '24'
+    - absteiger

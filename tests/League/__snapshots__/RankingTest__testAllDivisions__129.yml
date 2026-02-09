@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Neuperlach', url: '?mannschaft=1445', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=542&r=1#p1445x1539', title: 'gegen GW Niederwiesa', text: '1' }]
+    - [{ url: '?staffel=542&r=2#p1445x1540', title: 'gegen Rodewischer SM 2', text: '4' }]
+    - [{ url: '?staffel=542&r=3#p1445x1478', title: 'gegen Unterpfaffenhofen', text: '3' }]
+    - 4
+    - '8'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'GW Niederwiesa', url: '?mannschaft=1539', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=542&r=1#p1539x1445', title: 'gegen SK Neuperlach', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=542&r=3#p1539x1540', title: 'gegen Rodewischer SM 2', text: '2' }]
+    - [{ url: '?staffel=542&r=2#p1539x1478', title: 'gegen Unterpfaffenhofen', text: '2' }]
+    - 4
+    - '7'
+    - ''
+-
+    - '3.'
+    - { text: 'Rodewischer SM 2', url: '?mannschaft=1540', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=542&r=2#p1540x1445', title: 'gegen SK Neuperlach', text: '0' }]
+    - [{ url: '?staffel=542&r=3#p1540x1539', title: 'gegen GW Niederwiesa', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=542&r=1#p1540x1478', title: 'gegen Unterpfaffenhofen', text: '3' }]
+    - 3
+    - '5'
+    - ''
+-
+    - '4.'
+    - { text: Unterpfaffenhofen, url: '?mannschaft=1478', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=542&r=3#p1478x1445', title: 'gegen SK Neuperlach', text: '1' }]
+    - [{ url: '?staffel=542&r=2#p1478x1539', title: 'gegen GW Niederwiesa', text: '2' }]
+    - [{ url: '?staffel=542&r=1#p1478x1540', title: 'gegen Rodewischer SM 2', text: '1' }]
+    - xxx
+    - 1
+    - '4'
+    - ''

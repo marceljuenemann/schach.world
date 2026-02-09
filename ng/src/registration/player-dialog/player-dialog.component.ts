@@ -6,7 +6,7 @@ import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvFormGroup, TextControl } from '../../core/form/form-group';
 import { NsvDialog } from '../../core/dialog/dialog';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Tournament } from '../tournament';
+import { Group, Tournament } from '../tournament';
 import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer.component';
 
 export interface PlayerDialogParams {
@@ -17,17 +17,18 @@ export interface PlayerDialogParams {
 }
 
 @Component({
-  selector: 'player-dialog',
-  standalone: true,
-  imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent],
-  templateUrl: './player-dialog.component.html',
-  styleUrl: './player-dialog.component.css'
+    selector: 'player-dialog',
+    imports: [PlayerDataComponent, NsvFormComponent, ReactiveFormsModule, NsvDialogFooterComponent],
+    templateUrl: './player-dialog.component.html',
+    styleUrl: './player-dialog.component.css'
 })
 export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player> {
   playerData: PlayerData | null = null
+  isDuplicatePlayer: boolean = false
 
   formData = new FormGroup({
     group: new FormControl<string|null>(null, Validators.required),
+    additionalFields: new NsvFormGroup({}),
     contactDetails: new NsvFormGroup({
       name: new TextControl('Kontaktperson', {required: true}),
       email: new TextControl('E-Mail-Adresse', {required: true})
@@ -39,6 +40,24 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     private registrationService: RegistrationService
   ) {
     super()
+
+    // Create form fields for additional fields.
+    this.additionalFields.addControls((this.params.tournament.config.additionalFields || []).map(field => {
+      // Make sure managers can still select disabled options.
+      if (this.params.isManager && field.options) {
+        // Defensive copy to not modify original config.
+        field = {...field, options: field.options.map(opt => {
+          if (opt.disabled) {
+            return {...opt, disabled: false, label: `${opt.label} [deaktiviert]`}
+          } else {
+            return opt
+          }
+        })}
+      }
+      return field
+    }))
+
+    // Prefill form data.
     if (this.params.player) {
       this.formData.patchValue(this.params.player)
     } else if (this.params.lastPlayer) {
@@ -51,26 +70,60 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
 
   onPlayerDataChange(playerData: PlayerData | null) {
     this.playerData = playerData
-    if (this.editing || !playerData) return
+    this.isDuplicatePlayer = !!playerData && !this.editing && this.params.tournament.hasPlayer(playerData)
+    if (this.editing || !playerData || this.isDuplicatePlayer) return
+
     if (!this.contactDetails.controls.name.value && playerData.name) {
       this.contactDetails.controls.name.setValue(playerData.name)
     }
     // Possibly unselect current group selection and select last valid group.
-    if (!this.selectedGroup || !this.params.tournament.groups.get(this.selectedGroup)?.mayRegister(playerData)) {
+    if (!this.selectedGroup || this.registrationRestriction(this.params.tournament.groups.get(this.selectedGroup)!)) {
       this.formData.controls.group.setValue(null)
       if (playerData.zps) {
         for (let group of Array.from(this.params.tournament.groups.values()).reverse()) {
-          if (group.mayRegister(playerData)) {
+          if (!group.config.hidden && !this.registrationRestriction(group)) {
             this.formData.controls.group.setValue(group.id)
             break
           }
         }
       }
     }
+    // If there's only one group, select it automatically.
+    if (this.params.tournament.singleGroup) {
+      if (this.params.isManager || !this.registrationRestriction(this.params.tournament.singleGroup)) {
+        this.formData.controls.group.setValue(this.params.tournament.singleGroup.id)
+      }
+    }
+  }
+
+  /**
+   * Return the reason why the selected player may not register for the given group, if any.
+   */
+  registrationRestriction(group: Group): string | null {
+    if (!this.playerData) return null
+    if (group.config.minYearOfBirth && (this.playerData.yearOfBirth || 0) < group.config.minYearOfBirth) {
+      return `bis Jahrgang ${group.config.minYearOfBirth}`
+    }
+    if (group.config.minDwz && (this.playerData.dwz || 0) < group.config.minDwz) {
+      return `ab DWZ ${group.config.minDwz}`
+    }
+    if (group.config.maxDwz && (this.playerData.dwz || 0) > group.config.maxDwz) {
+      return `bis DWZ ${group.config.maxDwz}`
+    }
+    if (group.config.requireFideId && !this.playerData.fideId) {
+      return `FIDE-ID erforderlich`
+    }
+    return null
+  }
+
+  isWaitlistGroupSelected(): boolean {
+    if (this.editing || !this.selectedGroup) return false
+    const group = this.params.tournament.groups.get(this.selectedGroup)
+    return group ? !group.availableSlots : false
   }
 
   override get isValid() {
-    return !!this.playerData && this.formData.valid
+    return !!this.playerData && !this.isDuplicatePlayer && this.formData.valid
   }
 
   override async save(): Promise<Player> {
@@ -82,6 +135,9 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     if (this.editing) {
       await this.registrationService.updatePlayer(this.params.tournament.config.id, player)
     } else {
+      if (this.isWaitlistGroupSelected()) {
+        player.waitlist = true
+      }
       await this.registrationService.registerPlayer(this.params.tournament.config.id, player)
     }
     return player
@@ -97,6 +153,10 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
 
   get selectedGroup() {
     return this.groupControl.value
+  }
+
+  get additionalFields() {
+    return this.formData.controls.additionalFields
   }
 
   get contactDetails() {

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Doppelbauer Kiel', url: '?mannschaft=5520', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1395&r=6#p5520x5518', title: 'gegen Hamburger SK 2', text: 2½ }]
+    - [{ url: '?staffel=1395&r=4#p5520x5522', title: 'gegen SC Steinfurt', text: 5½ }]
+    - [{ url: '?staffel=1395&r=2#p5520x5524', title: 'gegen SV Wattenscheid', text: 3½ }]
+    - [{ url: '?staffel=1395&r=3#p5520x5521', title: 'gegen BS Paderborn', text: '4' }]
+    - [{ url: '?staffel=1395&r=1#p5520x5519', title: 'gegen SV Mülheim-Nord', text: '5' }]
+    - [{ url: '?staffel=1395&r=5#p5520x5523', title: 'gegen Lübecker SV', text: 4½ }]
+    - [{ url: '?staffel=1395&r=7#p5520x5525', title: 'gegen Delmenhorster SK', text: 4½ }]
+    - 12
+    - 29½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamburger SK 2', url: '?mannschaft=5518', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1395&r=6#p5518x5520', title: 'gegen Doppelbauer Kiel', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1395&r=2#p5518x5522', title: 'gegen SC Steinfurt', text: 2½ }]
+    - [{ url: '?staffel=1395&r=4#p5518x5524', title: 'gegen SV Wattenscheid', text: 1½ }]
+    - [{ url: '?staffel=1395&r=1#p5518x5521', title: 'gegen BS Paderborn', text: '4' }]
+    - [{ url: '?staffel=1395&r=3#p5518x5519', title: 'gegen SV Mülheim-Nord', text: '4' }]
+    - [{ url: '?staffel=1395&r=7#p5518x5523', title: 'gegen Lübecker SV', text: 3½ }]
+    - [{ url: '?staffel=1395&r=5#p5518x5525', title: 'gegen Delmenhorster SK', text: '3' }]
+    - 9
+    - '22'
+    - ''
+-
+    - '3.'
+    - { text: 'SC Steinfurt', url: '?mannschaft=5522', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1395&r=4#p5522x5520', title: 'gegen Doppelbauer Kiel', text: ½ }]
+    - [{ url: '?staffel=1395&r=2#p5522x5518', title: 'gegen Hamburger SK 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1395&r=6#p5522x5524', title: 'gegen SV Wattenscheid', text: '3' }]
+    - [{ url: '?staffel=1395&r=5#p5522x5521', title: 'gegen BS Paderborn', text: 1½ }]
+    - [{ url: '?staffel=1395&r=7#p5522x5519', title: 'gegen SV Mülheim-Nord', text: 3½ }]
+    - [{ url: '?staffel=1395&r=3#p5522x5523', title: 'gegen Lübecker SV', text: 4½ }]
+    - [{ url: '?staffel=1395&r=1#p5522x5525', title: 'gegen Delmenhorster SK', text: '5' }]
+    - 9
+    - 21½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Wattenscheid', url: '?mannschaft=5524', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1395&r=2#p5524x5520', title: 'gegen Doppelbauer Kiel', text: 2½ }]
+    - [{ url: '?staffel=1395&r=4#p5524x5518', title: 'gegen Hamburger SK 2', text: 4½ }]
+    - [{ url: '?staffel=1395&r=6#p5524x5522', title: 'gegen SC Steinfurt', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1395&r=7#p5524x5521', title: 'gegen BS Paderborn', text: '3' }]
+    - [{ url: '?staffel=1395&r=5#p5524x5519', title: 'gegen SV Mülheim-Nord', text: 1½ }]
+    - [{ url: '?staffel=1395&r=1#p5524x5523', title: 'gegen Lübecker SV', text: '4' }]
+    - [{ url: '?staffel=1395&r=3#p5524x5525', title: 'gegen Delmenhorster SK', text: '5' }]
+    - 8
+    - 23½
+    - ''
+-
+    - '5.'
+    - { text: 'BS Paderborn', url: '?mannschaft=5521', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1395&r=3#p5521x5520', title: 'gegen Doppelbauer Kiel', text: '2' }]
+    - [{ url: '?staffel=1395&r=1#p5521x5518', title: 'gegen Hamburger SK 2', text: '2' }]
+    - [{ url: '?staffel=1395&r=5#p5521x5522', title: 'gegen SC Steinfurt', text: 4½ }]
+    - [{ url: '?staffel=1395&r=7#p5521x5524', title: 'gegen SV Wattenscheid', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1395&r=6#p5521x5519', title: 'gegen SV Mülheim-Nord', text: '2' }]
+    - [{ url: '?staffel=1395&r=4#p5521x5523', title: 'gegen Lübecker SV', text: 3½ }]
+    - [{ url: '?staffel=1395&r=2#p5521x5525', title: 'gegen Delmenhorster SK', text: '4' }]
+    - 7
+    - '21'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Mülheim-Nord', url: '?mannschaft=5519', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1395&r=1#p5519x5520', title: 'gegen Doppelbauer Kiel', text: '1' }]
+    - [{ url: '?staffel=1395&r=3#p5519x5518', title: 'gegen Hamburger SK 2', text: '2' }]
+    - [{ url: '?staffel=1395&r=7#p5519x5522', title: 'gegen SC Steinfurt', text: 2½ }]
+    - [{ url: '?staffel=1395&r=5#p5519x5524', title: 'gegen SV Wattenscheid', text: 4½ }]
+    - [{ url: '?staffel=1395&r=6#p5519x5521', title: 'gegen BS Paderborn', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1395&r=2#p5519x5523', title: 'gegen Lübecker SV', text: 1½ }]
+    - [{ url: '?staffel=1395&r=4#p5519x5525', title: 'gegen Delmenhorster SK', text: '3' }]
+    - 5
+    - 18½
+    - ''
+-
+    - '7.'
+    - { text: 'Lübecker SV', url: '?mannschaft=5523', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1395&r=5#p5523x5520', title: 'gegen Doppelbauer Kiel', text: 1½ }]
+    - [{ url: '?staffel=1395&r=7#p5523x5518', title: 'gegen Hamburger SK 2', text: 2½ }]
+    - [{ url: '?staffel=1395&r=3#p5523x5522', title: 'gegen SC Steinfurt', text: 1½ }]
+    - [{ url: '?staffel=1395&r=1#p5523x5524', title: 'gegen SV Wattenscheid', text: '2' }]
+    - [{ url: '?staffel=1395&r=4#p5523x5521', title: 'gegen BS Paderborn', text: 2½ }]
+    - [{ url: '?staffel=1395&r=2#p5523x5519', title: 'gegen SV Mülheim-Nord', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1395&r=6#p5523x5525', title: 'gegen Delmenhorster SK', text: 3½ }]
+    - 4
+    - '18'
+    - absteiger
+-
+    - '8.'
+    - { text: 'Delmenhorster SK', url: '?mannschaft=5525', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1395&r=7#p5525x5520', title: 'gegen Doppelbauer Kiel', text: 1½ }]
+    - [{ url: '?staffel=1395&r=5#p5525x5518', title: 'gegen Hamburger SK 2', text: '3' }]
+    - [{ url: '?staffel=1395&r=1#p5525x5522', title: 'gegen SC Steinfurt', text: '1' }]
+    - [{ url: '?staffel=1395&r=3#p5525x5524', title: 'gegen SV Wattenscheid', text: '1' }]
+    - [{ url: '?staffel=1395&r=2#p5525x5521', title: 'gegen BS Paderborn', text: '2' }]
+    - [{ url: '?staffel=1395&r=4#p5525x5519', title: 'gegen SV Mülheim-Nord', text: '3' }]
+    - [{ url: '?staffel=1395&r=6#p5525x5523', title: 'gegen Lübecker SV', text: 2½ }]
+    - xxx
+    - 2
+    - '14'
+    - absteiger

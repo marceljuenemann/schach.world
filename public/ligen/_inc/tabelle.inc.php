@@ -1,4 +1,4 @@
-<?
+<?php
 /* Berechnung der Tabelle
  *
  * Dieses Skript berechnet die Tabelle zu gegebener Staffel und Runde.
@@ -117,7 +117,7 @@ class SED_Tabelle {
 
         // Mannschaften holen
         $rows = SED_Query(
-          "SELECT m.id FROM mannschaften AS m WHERE m.staffel = ?",
+          "SELECT m.id FROM mannschaften AS m WHERE m.staffel = ? ORDER BY m.name, m.mnr",
           [$staffel]
         )->fetchAllAssociative();
         foreach ($rows as $team) {
@@ -388,7 +388,7 @@ function Tabelle ( $staffel, $runde, $kreuztabelle, $sortmode = SED_SORT_DEFAULT
     $data = $table->getTable ( $kreuztabelle );
 
     // Infos zur Staffel (wie Aufsteiger-Anzahl)
-    $infos = SED_Query ( "SELECT * FROM viewStaffeln WHERE id=?", [$staffel] )->fetchAssociative();
+    $infos = SED_Query ( 'SELECT * FROM viewStaffeln WHERE id=?', [$staffel] )->fetchAssociative();
     if ( !is_array ( $infos ) || !$infos ['showTabelle'] )
         return array ();
 

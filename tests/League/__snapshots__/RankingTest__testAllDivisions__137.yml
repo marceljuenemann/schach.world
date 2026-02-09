@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Esens/Wittmund', url: '?mannschaft=1706', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=550&r=5#p1706x1698', title: 'gegen SK Wildeshausen', text: '6' }]
+    - [{ url: '?staffel=550&r=9#p1706x1701', title: 'gegen Hagener SV', text: '6' }]
+    - [{ url: '?staffel=550&r=3#p1706x1705', title: 'gegen Weißer Turm Rastede', text: 5½ }]
+    - [{ url: '?staffel=550&r=7#p1706x1704', title: 'gegen SC Bad Zwischenahn', text: 6½ }]
+    - [{ url: '?staffel=550&r=8#p1706x1703', title: 'gegen Nordhorn-Blanke 3', text: '6' }]
+    - [{ url: '?staffel=550&r=6#p1706x1702', title: 'gegen Nordhorn-Blanke 2', text: 3½ }]
+    - [{ url: '?staffel=550&r=1#p1706x1700', title: 'gegen SC IGM Osnabrück', text: '7' }]
+    - [{ url: '?staffel=550&r=2#p1706x1699', title: 'gegen SK Varel von 1896', text: 4½ }]
+    - [{ url: '?staffel=550&r=4#p1706x1707', title: 'gegen SC Melle 03 2', text: '8' }]
+    - 16
+    - '53'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Wildeshausen', url: '?mannschaft=1698', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=550&r=5#p1698x1706', title: 'gegen SG Esens/Wittmund', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=550&r=4#p1698x1701', title: 'gegen Hagener SV', text: '6' }]
+    - [{ url: '?staffel=550&r=9#p1698x1705', title: 'gegen Weißer Turm Rastede', text: '5' }]
+    - [{ url: '?staffel=550&r=3#p1698x1704', title: 'gegen SC Bad Zwischenahn', text: '7' }]
+    - [{ url: '?staffel=550&r=7#p1698x1703', title: 'gegen Nordhorn-Blanke 3', text: '5' }]
+    - [{ url: '?staffel=550&r=2#p1698x1702', title: 'gegen Nordhorn-Blanke 2', text: '6' }]
+    - [{ url: '?staffel=550&r=8#p1698x1700', title: 'gegen SC IGM Osnabrück', text: 6½ }]
+    - [{ url: '?staffel=550&r=6#p1698x1699', title: 'gegen SK Varel von 1896', text: 7½ }]
+    - [{ url: '?staffel=550&r=1#p1698x1707', title: 'gegen SC Melle 03 2', text: '8' }]
+    - 16
+    - '53'
+    - ''
+-
+    - '3.'
+    - { text: 'Hagener SV', url: '?mannschaft=1701', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=550&r=9#p1701x1706', title: 'gegen SG Esens/Wittmund', text: '2' }]
+    - [{ url: '?staffel=550&r=4#p1701x1698', title: 'gegen SK Wildeshausen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=550&r=5#p1701x1705', title: 'gegen Weißer Turm Rastede', text: '4' }]
+    - [{ url: '?staffel=550&r=6#p1701x1704', title: 'gegen SC Bad Zwischenahn', text: '5' }]
+    - [{ url: '?staffel=550&r=2#p1701x1703', title: 'gegen Nordhorn-Blanke 3', text: 6½ }]
+    - [{ url: '?staffel=550&r=1#p1701x1702', title: 'gegen Nordhorn-Blanke 2', text: '5' }]
+    - [{ url: '?staffel=550&r=3#p1701x1700', title: 'gegen SC IGM Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=550&r=7#p1701x1699', title: 'gegen SK Varel von 1896', text: 6½ }]
+    - [{ url: '?staffel=550&r=8#p1701x1707', title: 'gegen SC Melle 03 2', text: '8' }]
+    - 13
+    - 43½
+    - ''
+-
+    - '4.'
+    - { text: 'Weißer Turm Rastede', url: '?mannschaft=1705', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=550&r=3#p1705x1706', title: 'gegen SG Esens/Wittmund', text: 2½ }]
+    - [{ url: '?staffel=550&r=9#p1705x1698', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=550&r=5#p1705x1701', title: 'gegen Hagener SV', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=550&r=4#p1705x1704', title: 'gegen SC Bad Zwischenahn', text: 2½ }]
+    - [{ url: '?staffel=550&r=6#p1705x1703', title: 'gegen Nordhorn-Blanke 3', text: 2½ }]
+    - [{ url: '?staffel=550&r=8#p1705x1702', title: 'gegen Nordhorn-Blanke 2', text: '6' }]
+    - [{ url: '?staffel=550&r=2#p1705x1700', title: 'gegen SC IGM Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=550&r=1#p1705x1699', title: 'gegen SK Varel von 1896', text: 6½ }]
+    - [{ url: '?staffel=550&r=7#p1705x1707', title: 'gegen SC Melle 03 2', text: '8' }]
+    - 9
+    - 39½
+    - ''
+-
+    - '5.'
+    - { text: 'SC Bad Zwischenahn', url: '?mannschaft=1704', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=550&r=7#p1704x1706', title: 'gegen SG Esens/Wittmund', text: 1½ }]
+    - [{ url: '?staffel=550&r=3#p1704x1698', title: 'gegen SK Wildeshausen', text: '1' }]
+    - [{ url: '?staffel=550&r=6#p1704x1701', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=550&r=4#p1704x1705', title: 'gegen Weißer Turm Rastede', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=550&r=1#p1704x1703', title: 'gegen Nordhorn-Blanke 3', text: '4' }]
+    - [{ url: '?staffel=550&r=5#p1704x1702', title: 'gegen Nordhorn-Blanke 2', text: 5½ }]
+    - [{ url: '?staffel=550&r=9#p1704x1700', title: 'gegen SC IGM Osnabrück', text: '5' }]
+    - [{ url: '?staffel=550&r=8#p1704x1699', title: 'gegen SK Varel von 1896', text: 2½ }]
+    - [{ url: '?staffel=550&r=2#p1704x1707', title: 'gegen SC Melle 03 2', text: '8' }]
+    - 9
+    - '36'
+    - ''
+-
+    - '6.'
+    - { text: 'Nordhorn-Blanke 3', url: '?mannschaft=1703', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=550&r=8#p1703x1706', title: 'gegen SG Esens/Wittmund', text: '2' }]
+    - [{ url: '?staffel=550&r=7#p1703x1698', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=550&r=2#p1703x1701', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=550&r=6#p1703x1705', title: 'gegen Weißer Turm Rastede', text: 5½ }]
+    - [{ url: '?staffel=550&r=1#p1703x1704', title: 'gegen SC Bad Zwischenahn', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=550&r=3#p1703x1702', title: 'gegen Nordhorn-Blanke 2', text: '4' }]
+    - [{ url: '?staffel=550&r=4#p1703x1700', title: 'gegen SC IGM Osnabrück', text: '6' }]
+    - [{ url: '?staffel=550&r=9#p1703x1699', title: 'gegen SK Varel von 1896', text: '2' }]
+    - [{ url: '?staffel=550&r=5#p1703x1707', title: 'gegen SC Melle 03 2', text: '8' }]
+    - 8
+    - '36'
+    - ''
+-
+    - '7.'
+    - { text: 'Nordhorn-Blanke 2', url: '?mannschaft=1702', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=550&r=6#p1702x1706', title: 'gegen SG Esens/Wittmund', text: 4½ }]
+    - [{ url: '?staffel=550&r=2#p1702x1698', title: 'gegen SK Wildeshausen', text: '2' }]
+    - [{ url: '?staffel=550&r=1#p1702x1701', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=550&r=8#p1702x1705', title: 'gegen Weißer Turm Rastede', text: '2' }]
+    - [{ url: '?staffel=550&r=5#p1702x1704', title: 'gegen SC Bad Zwischenahn', text: 2½ }]
+    - [{ url: '?staffel=550&r=3#p1702x1703', title: 'gegen Nordhorn-Blanke 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=550&r=7#p1702x1700', title: 'gegen SC IGM Osnabrück', text: 2½ }]
+    - [{ url: '?staffel=550&r=4#p1702x1699', title: 'gegen SK Varel von 1896', text: 5½ }]
+    - [{ url: '?staffel=550&r=9#p1702x1707', title: 'gegen SC Melle 03 2', text: '8' }]
+    - 7
+    - '34'
+    - ''
+-
+    - '8.'
+    - { text: 'SC IGM Osnabrück', url: '?mannschaft=1700', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=550&r=1#p1700x1706', title: 'gegen SG Esens/Wittmund', text: '1' }]
+    - [{ url: '?staffel=550&r=8#p1700x1698', title: 'gegen SK Wildeshausen', text: 1½ }]
+    - [{ url: '?staffel=550&r=3#p1700x1701', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=550&r=2#p1700x1705', title: 'gegen Weißer Turm Rastede', text: 3½ }]
+    - [{ url: '?staffel=550&r=9#p1700x1704', title: 'gegen SC Bad Zwischenahn', text: '3' }]
+    - [{ url: '?staffel=550&r=4#p1700x1703', title: 'gegen Nordhorn-Blanke 3', text: '2' }]
+    - [{ url: '?staffel=550&r=7#p1700x1702', title: 'gegen Nordhorn-Blanke 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=550&r=5#p1700x1699', title: 'gegen SK Varel von 1896', text: 4½ }]
+    - [{ url: '?staffel=550&r=6#p1700x1707', title: 'gegen SC Melle 03 2', text: '8' }]
+    - 6
+    - 32½
+    - ''
+-
+    - '9.'
+    - { text: 'SK Varel von 1896', url: '?mannschaft=1699', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=550&r=2#p1699x1706', title: 'gegen SG Esens/Wittmund', text: 3½ }]
+    - [{ url: '?staffel=550&r=6#p1699x1698', title: 'gegen SK Wildeshausen', text: ½ }]
+    - [{ url: '?staffel=550&r=7#p1699x1701', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=550&r=1#p1699x1705', title: 'gegen Weißer Turm Rastede', text: 1½ }]
+    - [{ url: '?staffel=550&r=8#p1699x1704', title: 'gegen SC Bad Zwischenahn', text: 5½ }]
+    - [{ url: '?staffel=550&r=9#p1699x1703', title: 'gegen Nordhorn-Blanke 3', text: '6' }]
+    - [{ url: '?staffel=550&r=4#p1699x1702', title: 'gegen Nordhorn-Blanke 2', text: 2½ }]
+    - [{ url: '?staffel=550&r=5#p1699x1700', title: 'gegen SC IGM Osnabrück', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=550&r=3#p1699x1707', title: 'gegen SC Melle 03 2', text: '8' }]
+    - 6
+    - 32½
+    - ''
+-
+    - '10.'
+    - { text: 'SC Melle 03 2', url: '?mannschaft=1707', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=550&r=4#p1707x1706', title: 'gegen SG Esens/Wittmund', text: '0' }]
+    - [{ url: '?staffel=550&r=1#p1707x1698', title: 'gegen SK Wildeshausen', text: '0' }]
+    - [{ url: '?staffel=550&r=8#p1707x1701', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=550&r=7#p1707x1705', title: 'gegen Weißer Turm Rastede', text: '0' }]
+    - [{ url: '?staffel=550&r=2#p1707x1704', title: 'gegen SC Bad Zwischenahn', text: '0' }]
+    - [{ url: '?staffel=550&r=5#p1707x1703', title: 'gegen Nordhorn-Blanke 3', text: '0' }]
+    - [{ url: '?staffel=550&r=9#p1707x1702', title: 'gegen Nordhorn-Blanke 2', text: '0' }]
+    - [{ url: '?staffel=550&r=6#p1707x1700', title: 'gegen SC IGM Osnabrück', text: '0' }]
+    - [{ url: '?staffel=550&r=3#p1707x1699', title: 'gegen SK Varel von 1896', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

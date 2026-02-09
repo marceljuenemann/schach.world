@@ -49,6 +49,14 @@ This folder contains configuration for a development environment based on Docker
     - If you use all DSB data, you might have to increase upload_max_filesize and post_max_size in your php.ini. But for testing using the data from a single state is probably sufficient.
     - Spielberechtigung seems to be nullable these days, just change the field to be nullable :)
 
+## Trouble shooting
+
+If you encounter the following error, just try deleting `dev/database/mysql.sock`:
+
+```
+chown: changing ownership of '/var/lib/mysql/mysql.sock': Operation not permitted
+```
+
 ## Credits
 
 The docker setup is heavily inspired by https://github.com/sprintcube/docker-compose-lamp

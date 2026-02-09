@@ -1,0 +1,203 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=4650', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=963&r=6#p4650x4657', title: 'gegen SV Gretenberg 2', text: '4' }]
+    - [{ url: '?staffel=963&r=2#p4650x4613', title: 'gegen Freib. Wedemark 2', text: '6' }]
+    - [{ url: '?staffel=963&r=10#p4650x4632', title: 'gegen SV Laatzen 3', text: 5½ }]
+    - [{ url: '?staffel=963&r=4#p4650x4635', title: 'gegen SD Isernhagen 3', text: '5' }]
+    - [{ url: '?staffel=963&r=3#p4650x4636', title: 'gegen SD Isernhagen 4', text: 5½ }]
+    - [{ url: '?staffel=963&r=7#p4650x4524', title: 'gegen SG Döhren-Gleid 2', text: 5½ }]
+    - [{ url: '?staffel=963&r=8#p4650x4628', title: 'gegen SK Lehrte 1919 eV 6', text: '6' }]
+    - [{ url: '?staffel=963&r=9#p4650x4665', title: 'gegen Hannover 96 4', text: 7½ }]
+    - [{ url: '?staffel=963&r=1#p4650x4669', title: 'gegen HSK Lister Turm 6', text: '6' }]
+    - [{ url: '?staffel=963&r=11#p4650x4384', title: 'gegen SC Hämelerwald 2', text: '3' }]
+    - 17
+    - '54'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Gretenberg 2', url: '?mannschaft=4657', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=963&r=6#p4657x4650', title: 'gegen SK Anderten 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=963&r=3#p4657x4613', title: 'gegen Freib. Wedemark 2', text: 5½ }]
+    - [{ url: '?staffel=963&r=11#p4657x4632', title: 'gegen SV Laatzen 3', text: '5' }]
+    - [{ url: '?staffel=963&r=5#p4657x4635', title: 'gegen SD Isernhagen 3', text: '5' }]
+    - [{ url: '?staffel=963&r=4#p4657x4636', title: 'gegen SD Isernhagen 4', text: 5½ }]
+    - [{ url: '?staffel=963&r=8#p4657x4524', title: 'gegen SG Döhren-Gleid 2', text: '3' }]
+    - [{ url: '?staffel=963&r=10#p4657x4628', title: 'gegen SK Lehrte 1919 eV 6', text: 5½ }]
+    - [{ url: '?staffel=963&r=1#p4657x4665', title: 'gegen Hannover 96 4', text: 5½ }]
+    - [{ url: '?staffel=963&r=2#p4657x4669', title: 'gegen HSK Lister Turm 6', text: 5½ }]
+    - [{ url: '?staffel=963&r=9#p4657x4384', title: 'gegen SC Hämelerwald 2', text: 5½ }]
+    - 17
+    - '50'
+    - ''
+-
+    - '3.'
+    - { text: 'Freib. Wedemark 2', url: '?mannschaft=4613', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=963&r=2#p4613x4650', title: 'gegen SK Anderten 2', text: '2' }]
+    - [{ url: '?staffel=963&r=3#p4613x4657', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=963&r=6#p4613x4632', title: 'gegen SV Laatzen 3', text: 4½ }]
+    - [{ url: '?staffel=963&r=1#p4613x4635', title: 'gegen SD Isernhagen 3', text: '5' }]
+    - [{ url: '?staffel=963&r=9#p4613x4636', title: 'gegen SD Isernhagen 4', text: 3½ }]
+    - [{ url: '?staffel=963&r=4#p4613x4524', title: 'gegen SG Döhren-Gleid 2', text: 6½ }]
+    - [{ url: '?staffel=963&r=5#p4613x4628', title: 'gegen SK Lehrte 1919 eV 6', text: '5' }]
+    - [{ url: '?staffel=963&r=8#p4613x4665', title: 'gegen Hannover 96 4', text: 3½ }]
+    - [{ url: '?staffel=963&r=10#p4613x4669', title: 'gegen HSK Lister Turm 6', text: '5' }]
+    - [{ url: '?staffel=963&r=7#p4613x4384', title: 'gegen SC Hämelerwald 2', text: '8' }]
+    - 13
+    - 45½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Laatzen 3', url: '?mannschaft=4632', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=963&r=10#p4632x4650', title: 'gegen SK Anderten 2', text: 2½ }]
+    - [{ url: '?staffel=963&r=11#p4632x4657', title: 'gegen SV Gretenberg 2', text: '3' }]
+    - [{ url: '?staffel=963&r=6#p4632x4613', title: 'gegen Freib. Wedemark 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=963&r=8#p4632x4635', title: 'gegen SD Isernhagen 3', text: 4½ }]
+    - [{ url: '?staffel=963&r=7#p4632x4636', title: 'gegen SD Isernhagen 4', text: '3' }]
+    - [{ url: '?staffel=963&r=9#p4632x4524', title: 'gegen SG Döhren-Gleid 2', text: 4½ }]
+    - [{ url: '?staffel=963&r=1#p4632x4628', title: 'gegen SK Lehrte 1919 eV 6', text: 5½ }]
+    - [{ url: '?staffel=963&r=4#p4632x4665', title: 'gegen Hannover 96 4', text: '6' }]
+    - [{ url: '?staffel=963&r=5#p4632x4669', title: 'gegen HSK Lister Turm 6', text: '5' }]
+    - [{ url: '?staffel=963&r=3#p4632x4384', title: 'gegen SC Hämelerwald 2', text: '7' }]
+    - 12
+    - 44½
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=4635', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=963&r=4#p4635x4650', title: 'gegen SK Anderten 2', text: '2' }]
+    - [{ url: '?staffel=963&r=5#p4635x4657', title: 'gegen SV Gretenberg 2', text: '3' }]
+    - [{ url: '?staffel=963&r=1#p4635x4613', title: 'gegen Freib. Wedemark 2', text: '3' }]
+    - [{ url: '?staffel=963&r=8#p4635x4632', title: 'gegen SV Laatzen 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=963&r=2#p4635x4636', title: 'gegen SD Isernhagen 4', text: '4' }]
+    - [{ url: '?staffel=963&r=6#p4635x4524', title: 'gegen SG Döhren-Gleid 2', text: '5' }]
+    - [{ url: '?staffel=963&r=7#p4635x4628', title: 'gegen SK Lehrte 1919 eV 6', text: 5½ }]
+    - [{ url: '?staffel=963&r=11#p4635x4665', title: 'gegen Hannover 96 4', text: '4' }]
+    - [{ url: '?staffel=963&r=9#p4635x4669', title: 'gegen HSK Lister Turm 6', text: '7' }]
+    - [{ url: '?staffel=963&r=10#p4635x4384', title: 'gegen SC Hämelerwald 2', text: '3' }]
+    - 10
+    - '40'
+    - ''
+-
+    - '6.'
+    - { text: 'SD Isernhagen 4', url: '?mannschaft=4636', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=963&r=3#p4636x4650', title: 'gegen SK Anderten 2', text: 2½ }]
+    - [{ url: '?staffel=963&r=4#p4636x4657', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - [{ url: '?staffel=963&r=9#p4636x4613', title: 'gegen Freib. Wedemark 2', text: 3½ }]
+    - [{ url: '?staffel=963&r=7#p4636x4632', title: 'gegen SV Laatzen 3', text: '5' }]
+    - [{ url: '?staffel=963&r=2#p4636x4635', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=963&r=5#p4636x4524', title: 'gegen SG Döhren-Gleid 2', text: 4½ }]
+    - [{ url: '?staffel=963&r=6#p4636x4628', title: 'gegen SK Lehrte 1919 eV 6', text: '2' }]
+    - [{ url: '?staffel=963&r=10#p4636x4665', title: 'gegen Hannover 96 4', text: '8' }]
+    - [{ url: '?staffel=963&r=11#p4636x4669', title: 'gegen HSK Lister Turm 6', text: 3½ }]
+    - [{ url: '?staffel=963&r=8#p4636x4384', title: 'gegen SC Hämelerwald 2', text: '6' }]
+    - 9
+    - 40½
+    - ''
+-
+    - '7.'
+    - { text: 'SG Döhren-Gleid 2', url: '?mannschaft=4524', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=963&r=7#p4524x4650', title: 'gegen SK Anderten 2', text: 2½ }]
+    - [{ url: '?staffel=963&r=8#p4524x4657', title: 'gegen SV Gretenberg 2', text: '5' }]
+    - [{ url: '?staffel=963&r=4#p4524x4613', title: 'gegen Freib. Wedemark 2', text: 1½ }]
+    - [{ url: '?staffel=963&r=9#p4524x4632', title: 'gegen SV Laatzen 3', text: 3½ }]
+    - [{ url: '?staffel=963&r=6#p4524x4635', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - [{ url: '?staffel=963&r=5#p4524x4636', title: 'gegen SD Isernhagen 4', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=963&r=11#p4524x4628', title: 'gegen SK Lehrte 1919 eV 6', text: 5½ }]
+    - [{ url: '?staffel=963&r=2#p4524x4665', title: 'gegen Hannover 96 4', text: 4½ }]
+    - [{ url: '?staffel=963&r=3#p4524x4669', title: 'gegen HSK Lister Turm 6', text: '3' }]
+    - [{ url: '?staffel=963&r=1#p4524x4384', title: 'gegen SC Hämelerwald 2', text: '6' }]
+    - 8
+    - '38'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Lehrte 1919 eV 6', url: '?mannschaft=4628', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=963&r=8#p4628x4650', title: 'gegen SK Anderten 2', text: '2' }]
+    - [{ url: '?staffel=963&r=10#p4628x4657', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - [{ url: '?staffel=963&r=5#p4628x4613', title: 'gegen Freib. Wedemark 2', text: '3' }]
+    - [{ url: '?staffel=963&r=1#p4628x4632', title: 'gegen SV Laatzen 3', text: 2½ }]
+    - [{ url: '?staffel=963&r=7#p4628x4635', title: 'gegen SD Isernhagen 3', text: 2½ }]
+    - [{ url: '?staffel=963&r=6#p4628x4636', title: 'gegen SD Isernhagen 4', text: '6' }]
+    - [{ url: '?staffel=963&r=11#p4628x4524', title: 'gegen SG Döhren-Gleid 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=963&r=3#p4628x4665', title: 'gegen Hannover 96 4', text: '4' }]
+    - [{ url: '?staffel=963&r=4#p4628x4669', title: 'gegen HSK Lister Turm 6', text: '6' }]
+    - [{ url: '?staffel=963&r=2#p4628x4384', title: 'gegen SC Hämelerwald 2', text: 4½ }]
+    - 7
+    - 35½
+    - ''
+-
+    - '9.'
+    - { text: 'Hannover 96 4', url: '?mannschaft=4665', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=963&r=9#p4665x4650', title: 'gegen SK Anderten 2', text: ½ }]
+    - [{ url: '?staffel=963&r=1#p4665x4657', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - [{ url: '?staffel=963&r=8#p4665x4613', title: 'gegen Freib. Wedemark 2', text: 4½ }]
+    - [{ url: '?staffel=963&r=4#p4665x4632', title: 'gegen SV Laatzen 3', text: '2' }]
+    - [{ url: '?staffel=963&r=11#p4665x4635', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - [{ url: '?staffel=963&r=10#p4665x4636', title: 'gegen SD Isernhagen 4', text: '0' }]
+    - [{ url: '?staffel=963&r=2#p4665x4524', title: 'gegen SG Döhren-Gleid 2', text: 3½ }]
+    - [{ url: '?staffel=963&r=3#p4665x4628', title: 'gegen SK Lehrte 1919 eV 6', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=963&r=7#p4665x4669', title: 'gegen HSK Lister Turm 6', text: '6' }]
+    - [{ url: '?staffel=963&r=5#p4665x4384', title: 'gegen SC Hämelerwald 2', text: '4' }]
+    - 6
+    - '30'
+    - ''
+-
+    - '10.'
+    - { text: 'HSK Lister Turm 6', url: '?mannschaft=4669', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=963&r=1#p4669x4650', title: 'gegen SK Anderten 2', text: '2' }]
+    - [{ url: '?staffel=963&r=2#p4669x4657', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - [{ url: '?staffel=963&r=10#p4669x4613', title: 'gegen Freib. Wedemark 2', text: '3' }]
+    - [{ url: '?staffel=963&r=5#p4669x4632', title: 'gegen SV Laatzen 3', text: '3' }]
+    - [{ url: '?staffel=963&r=9#p4669x4635', title: 'gegen SD Isernhagen 3', text: '1' }]
+    - [{ url: '?staffel=963&r=11#p4669x4636', title: 'gegen SD Isernhagen 4', text: 4½ }]
+    - [{ url: '?staffel=963&r=3#p4669x4524', title: 'gegen SG Döhren-Gleid 2', text: '5' }]
+    - [{ url: '?staffel=963&r=4#p4669x4628', title: 'gegen SK Lehrte 1919 eV 6', text: '2' }]
+    - [{ url: '?staffel=963&r=7#p4669x4665', title: 'gegen Hannover 96 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=963&r=6#p4669x4384', title: 'gegen SC Hämelerwald 2', text: 4½ }]
+    - 6
+    - 29½
+    - ''
+-
+    - '11.'
+    - { text: 'SC Hämelerwald 2', url: '?mannschaft=4384', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=963&r=11#p4384x4650', title: 'gegen SK Anderten 2', text: '4' }]
+    - [{ url: '?staffel=963&r=9#p4384x4657', title: 'gegen SV Gretenberg 2', text: ½ }]
+    - [{ url: '?staffel=963&r=7#p4384x4613', title: 'gegen Freib. Wedemark 2', text: '0' }]
+    - [{ url: '?staffel=963&r=3#p4384x4632', title: 'gegen SV Laatzen 3', text: '1' }]
+    - [{ url: '?staffel=963&r=10#p4384x4635', title: 'gegen SD Isernhagen 3', text: '5' }]
+    - [{ url: '?staffel=963&r=8#p4384x4636', title: 'gegen SD Isernhagen 4', text: '2' }]
+    - [{ url: '?staffel=963&r=1#p4384x4524', title: 'gegen SG Döhren-Gleid 2', text: '2' }]
+    - [{ url: '?staffel=963&r=2#p4384x4628', title: 'gegen SK Lehrte 1919 eV 6', text: 3½ }]
+    - [{ url: '?staffel=963&r=5#p4384x4665', title: 'gegen Hannover 96 4', text: '4' }]
+    - [{ url: '?staffel=963&r=6#p4384x4669', title: 'gegen HSK Lister Turm 6', text: 3½ }]
+    - xxx
+    - 5
+    - 25½
+    - ''

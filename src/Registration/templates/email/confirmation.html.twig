@@ -7,10 +7,40 @@
 
 {% block content %}
 
+  {% if (player.waitlist) %}
+    {{ bs.alert_danger }}
+      <b>Warteliste:</b> Die Anmeldegrenze für dieses Turnier ist bereits erreicht, daher kann die
+      Teilnahme nicht garantiert werden. Sie sind nun aber auf der Warteliste und werden benachrichtigt,
+      sollte ein Platz frei werden.
+    {{ bs.endalert }}
+  {% elseif (waitlistConfirmation) %}
+    {{ bs.alert_success }}
+      <b>Anmeldung erfolgreich:</b> Ihre Anmeldung wurde von der Warteliste in das Turnier aufgenommen.
+      Falls Sie nicht länger am Turnier teilnehmen können, wenden Sie sich bitte an die Turnierleitung.
+      Sie können dazu auf diese E-Mail antworten.
+    {{ bs.endalert }}
+  {% endif %}
+
   {{ bs.dd('Name') }} {{ player.playerData.name }} {{ bs.end_dd }}
   {{ bs.dd('Verein') }} {{ player.playerData.club }} {{ bs.end_dd }}
   {{ bs.dd('Kontakt') }} {{ player.contactDetails.name }} {{ bs.end_dd }}
   {{ bs.dd('Email') }} {{ player.contactDetails.email }} {{ bs.end_dd }}
+
+  {% if config.additionalFields %}
+    {% for fieldConfig in config.additionalFields %}
+      {{ bs.dd(fieldConfig.label) }}
+        {% if fieldConfig.type == 'select' %}
+          {% for option in fieldConfig.options %}
+            {% if option.value == player.additionalFields[fieldConfig.id] %}
+              {{ option.label }}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {{ player.additionalFields[fieldConfig.id] | default('') | nl2br }}
+        {% endif %}
+      {{ bs.end_dd }}
+    {% endfor %}
+  {% endif %}
 
   {{ bs.hr }}
 

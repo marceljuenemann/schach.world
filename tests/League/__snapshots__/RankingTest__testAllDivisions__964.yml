@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'HSK Lister Turm 7', url: '?mannschaft=8059', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1803&r=7#p8059x8044', title: 'gegen SV Bückeburg', text: '5' }]
+    - [{ url: '?staffel=1803&r=5#p8059x8023', title: 'gegen SG STL/Berenbostel 3', text: '4' }]
+    - [{ url: '?staffel=1803&r=4#p8059x7953', title: 'gegen SD Isernhagen 3', text: '7' }]
+    - [{ url: '?staffel=1803&r=2#p8059x8017', title: 'gegen SF Ricklingen 3', text: '5' }]
+    - [{ url: '?staffel=1803&r=1#p8059x8015', title: 'gegen SV Springe 2', text: 5½ }]
+    - [{ url: '?staffel=1803&r=8#p8059x8139', title: 'gegen Hannover 96 2', text: '5' }]
+    - [{ url: '?staffel=1803&r=6#p8059x8026', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=1803&r=9#p8059x8056', title: 'gegen SK Rinteln 2', text: '8' }]
+    - 15
+    - 44½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=8044', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1803&r=7#p8044x8059', title: 'gegen HSK Lister Turm 7', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1803&r=3#p8044x8023', title: 'gegen SG STL/Berenbostel 3', text: 4½ }]
+    - [{ url: '?staffel=1803&r=5#p8044x7953', title: 'gegen SD Isernhagen 3', text: 5½ }]
+    - [{ url: '?staffel=1803&r=9#p8044x8017', title: 'gegen SF Ricklingen 3', text: '3' }]
+    - [{ url: '?staffel=1803&r=8#p8044x8015', title: 'gegen SV Springe 2', text: '6' }]
+    - [{ url: '?staffel=1803&r=2#p8044x8139', title: 'gegen Hannover 96 2', text: 5½ }]
+    - [{ url: '?staffel=1803&r=1#p8044x8026', title: 'gegen Eystruper SK', text: 7½ }]
+    - [{ url: '?staffel=1803&r=4#p8044x8056', title: 'gegen SK Rinteln 2', text: 6½ }]
+    - 12
+    - 41½
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SG STL/Berenbostel 3', url: '?mannschaft=8023', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1803&r=5#p8023x8059', title: 'gegen HSK Lister Turm 7', text: '4' }]
+    - [{ url: '?staffel=1803&r=3#p8023x8044', title: 'gegen SV Bückeburg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1803&r=9#p8023x7953', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - [{ url: '?staffel=1803&r=8#p8023x8017', title: 'gegen SF Ricklingen 3', text: 5½ }]
+    - [{ url: '?staffel=1803&r=6#p8023x8015', title: 'gegen SV Springe 2', text: 4½ }]
+    - [{ url: '?staffel=1803&r=1#p8023x8139', title: 'gegen Hannover 96 2', text: '5' }]
+    - [{ url: '?staffel=1803&r=7#p8023x8026', title: 'gegen Eystruper SK', text: 6½ }]
+    - [{ url: '?staffel=1803&r=2#p8023x8056', title: 'gegen SK Rinteln 2', text: '6' }]
+    - 11
+    - '38'
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=7953', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1803&r=4#p7953x8059', title: 'gegen HSK Lister Turm 7', text: '1' }]
+    - [{ url: '?staffel=1803&r=5#p7953x8044', title: 'gegen SV Bückeburg', text: 2½ }]
+    - [{ url: '?staffel=1803&r=9#p7953x8023', title: 'gegen SG STL/Berenbostel 3', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1803&r=1#p7953x8017', title: 'gegen SF Ricklingen 3', text: '1' }]
+    - [{ url: '?staffel=1803&r=7#p7953x8015', title: 'gegen SV Springe 2', text: '5' }]
+    - [{ url: '?staffel=1803&r=6#p7953x8139', title: 'gegen Hannover 96 2', text: 4½ }]
+    - [{ url: '?staffel=1803&r=3#p7953x8026', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=1803&r=8#p7953x8056', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - 10
+    - 28½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Ricklingen 3', url: '?mannschaft=8017', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1803&r=2#p8017x8059', title: 'gegen HSK Lister Turm 7', text: '3' }]
+    - [{ url: '?staffel=1803&r=9#p8017x8044', title: 'gegen SV Bückeburg', text: '5' }]
+    - [{ url: '?staffel=1803&r=8#p8017x8023', title: 'gegen SG STL/Berenbostel 3', text: 2½ }]
+    - [{ url: '?staffel=1803&r=1#p8017x7953', title: 'gegen SD Isernhagen 3', text: '7' }]
+    - xxx
+    - [{ url: '?staffel=1803&r=5#p8017x8015', title: 'gegen SV Springe 2', text: 3½ }]
+    - [{ url: '?staffel=1803&r=3#p8017x8139', title: 'gegen Hannover 96 2', text: 3½ }]
+    - [{ url: '?staffel=1803&r=4#p8017x8026', title: 'gegen Eystruper SK', text: 4½ }]
+    - [{ url: '?staffel=1803&r=6#p8017x8056', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - 8
+    - 33½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Springe 2', url: '?mannschaft=8015', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1803&r=1#p8015x8059', title: 'gegen HSK Lister Turm 7', text: 2½ }]
+    - [{ url: '?staffel=1803&r=8#p8015x8044', title: 'gegen SV Bückeburg', text: '2' }]
+    - [{ url: '?staffel=1803&r=6#p8015x8023', title: 'gegen SG STL/Berenbostel 3', text: 3½ }]
+    - [{ url: '?staffel=1803&r=7#p8015x7953', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - [{ url: '?staffel=1803&r=5#p8015x8017', title: 'gegen SF Ricklingen 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1803&r=4#p8015x8139', title: 'gegen Hannover 96 2', text: 6½ }]
+    - [{ url: '?staffel=1803&r=2#p8015x8026', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=1803&r=3#p8015x8056', title: 'gegen SK Rinteln 2', text: '6' }]
+    - 7
+    - '32'
+    - ''
+-
+    - '7.'
+    - { text: 'Hannover 96 2', url: '?mannschaft=8139', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1803&r=8#p8139x8059', title: 'gegen HSK Lister Turm 7', text: '3' }]
+    - [{ url: '?staffel=1803&r=2#p8139x8044', title: 'gegen SV Bückeburg', text: 2½ }]
+    - [{ url: '?staffel=1803&r=1#p8139x8023', title: 'gegen SG STL/Berenbostel 3', text: '3' }]
+    - [{ url: '?staffel=1803&r=6#p8139x7953', title: 'gegen SD Isernhagen 3', text: 3½ }]
+    - [{ url: '?staffel=1803&r=3#p8139x8017', title: 'gegen SF Ricklingen 3', text: 4½ }]
+    - [{ url: '?staffel=1803&r=4#p8139x8015', title: 'gegen SV Springe 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1803&r=9#p8139x8026', title: 'gegen Eystruper SK', text: 3½ }]
+    - [{ url: '?staffel=1803&r=7#p8139x8056', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - 4
+    - '26'
+    - absteiger
+-
+    - '8.'
+    - { text: 'Eystruper SK', url: '?mannschaft=8026', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1803&r=6#p8026x8059', title: 'gegen HSK Lister Turm 7', text: '3' }]
+    - [{ url: '?staffel=1803&r=1#p8026x8044', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=1803&r=7#p8026x8023', title: 'gegen SG STL/Berenbostel 3', text: 1½ }]
+    - [{ url: '?staffel=1803&r=3#p8026x7953', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - [{ url: '?staffel=1803&r=4#p8026x8017', title: 'gegen SF Ricklingen 3', text: 3½ }]
+    - [{ url: '?staffel=1803&r=2#p8026x8015', title: 'gegen SV Springe 2', text: '4' }]
+    - [{ url: '?staffel=1803&r=9#p8026x8139', title: 'gegen Hannover 96 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1803&r=5#p8026x8056', title: 'gegen SK Rinteln 2', text: '3' }]
+    - 3
+    - '23'
+    - absteiger
+-
+    - '9.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=8056', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1803&r=9#p8056x8059', title: 'gegen HSK Lister Turm 7', text: '0' }]
+    - [{ url: '?staffel=1803&r=4#p8056x8044', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=1803&r=2#p8056x8023', title: 'gegen SG STL/Berenbostel 3', text: '2' }]
+    - [{ url: '?staffel=1803&r=8#p8056x7953', title: 'gegen SD Isernhagen 3', text: 3½ }]
+    - [{ url: '?staffel=1803&r=6#p8056x8017', title: 'gegen SF Ricklingen 3', text: 3½ }]
+    - [{ url: '?staffel=1803&r=3#p8056x8015', title: 'gegen SV Springe 2', text: '2' }]
+    - [{ url: '?staffel=1803&r=7#p8056x8139', title: 'gegen Hannover 96 2', text: 3½ }]
+    - [{ url: '?staffel=1803&r=5#p8056x8026', title: 'gegen Eystruper SK', text: '5' }]
+    - xxx
+    - 2
+    - '21'
+    - absteiger

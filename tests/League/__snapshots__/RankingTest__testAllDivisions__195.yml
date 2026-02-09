@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'HSK-Lister Turm 4', url: '?mannschaft=2072', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=618&r=8#p2072x2081', title: 'gegen SK Lehrte 4', text: 3½ }]
+    - [{ url: '?staffel=618&r=4#p2072x2049', title: 'gegen SV Gretenberg 2', text: 6½ }]
+    - [{ url: '?staffel=618&r=9#p2072x2017', title: 'gegen Uetze-Hänigsen 2', text: '5' }]
+    - [{ url: '?staffel=618&r=2#p2072x2068', title: 'gegen SD Isernhagen 2', text: '5' }]
+    - [{ url: '?staffel=618&r=5#p2072x2020', title: 'gegen WB Eilenriede 4', text: 5½ }]
+    - [{ url: '?staffel=618&r=6#p2072x2040', title: 'gegen SV Laatzen 3', text: 6½ }]
+    - [{ url: '?staffel=618&r=7#p2072x1855', title: 'gegen Barsinghausen 2', text: 4½ }]
+    - [{ url: '?staffel=618&r=1#p2072x2087', title: 'gegen TSV Burgdorf', text: '6' }]
+    - [{ url: '?staffel=618&r=3#p2072x2042', title: 'gegen SK Anderten 2', text: 6½ }]
+    - 16
+    - '49'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=2081', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=618&r=8#p2081x2072', title: 'gegen HSK-Lister Turm 4', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=618&r=2#p2081x2049', title: 'gegen SV Gretenberg 2', text: 2½ }]
+    - [{ url: '?staffel=618&r=7#p2081x2017', title: 'gegen Uetze-Hänigsen 2', text: 4½ }]
+    - [{ url: '?staffel=618&r=9#p2081x2068', title: 'gegen SD Isernhagen 2', text: '6' }]
+    - [{ url: '?staffel=618&r=3#p2081x2020', title: 'gegen WB Eilenriede 4', text: '5' }]
+    - [{ url: '?staffel=618&r=4#p2081x2040', title: 'gegen SV Laatzen 3', text: '3' }]
+    - [{ url: '?staffel=618&r=5#p2081x1855', title: 'gegen Barsinghausen 2', text: 6½ }]
+    - [{ url: '?staffel=618&r=6#p2081x2087', title: 'gegen TSV Burgdorf', text: '4' }]
+    - [{ url: '?staffel=618&r=1#p2081x2042', title: 'gegen SK Anderten 2', text: '5' }]
+    - 13
+    - '41'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Gretenberg 2', url: '?mannschaft=2049', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=618&r=4#p2049x2072', title: 'gegen HSK-Lister Turm 4', text: 1½ }]
+    - [{ url: '?staffel=618&r=2#p2049x2081', title: 'gegen SK Lehrte 4', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=618&r=3#p2049x2017', title: 'gegen Uetze-Hänigsen 2', text: 3½ }]
+    - [{ url: '?staffel=618&r=5#p2049x2068', title: 'gegen SD Isernhagen 2', text: '5' }]
+    - [{ url: '?staffel=618&r=8#p2049x2020', title: 'gegen WB Eilenriede 4', text: '7' }]
+    - [{ url: '?staffel=618&r=9#p2049x2040', title: 'gegen SV Laatzen 3', text: '4' }]
+    - [{ url: '?staffel=618&r=1#p2049x1855', title: 'gegen Barsinghausen 2', text: '4' }]
+    - [{ url: '?staffel=618&r=7#p2049x2087', title: 'gegen TSV Burgdorf', text: '4' }]
+    - [{ url: '?staffel=618&r=6#p2049x2042', title: 'gegen SK Anderten 2', text: 6½ }]
+    - 11
+    - '41'
+    - ''
+-
+    - '4.'
+    - { text: 'Uetze-Hänigsen 2', url: '?mannschaft=2017', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=618&r=9#p2017x2072', title: 'gegen HSK-Lister Turm 4', text: '3' }]
+    - [{ url: '?staffel=618&r=7#p2017x2081', title: 'gegen SK Lehrte 4', text: 3½ }]
+    - [{ url: '?staffel=618&r=3#p2017x2049', title: 'gegen SV Gretenberg 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=618&r=1#p2017x2068', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - [{ url: '?staffel=618&r=4#p2017x2020', title: 'gegen WB Eilenriede 4', text: 6½ }]
+    - [{ url: '?staffel=618&r=5#p2017x2040', title: 'gegen SV Laatzen 3', text: '6' }]
+    - [{ url: '?staffel=618&r=6#p2017x1855', title: 'gegen Barsinghausen 2', text: '3' }]
+    - [{ url: '?staffel=618&r=8#p2017x2087', title: 'gegen TSV Burgdorf', text: '5' }]
+    - [{ url: '?staffel=618&r=2#p2017x2042', title: 'gegen SK Anderten 2', text: '6' }]
+    - 10
+    - 40½
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=2068', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=618&r=2#p2068x2072', title: 'gegen HSK-Lister Turm 4', text: '3' }]
+    - [{ url: '?staffel=618&r=9#p2068x2081', title: 'gegen SK Lehrte 4', text: '2' }]
+    - [{ url: '?staffel=618&r=5#p2068x2049', title: 'gegen SV Gretenberg 2', text: '3' }]
+    - [{ url: '?staffel=618&r=1#p2068x2017', title: 'gegen Uetze-Hänigsen 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=618&r=6#p2068x2020', title: 'gegen WB Eilenriede 4', text: '4' }]
+    - [{ url: '?staffel=618&r=7#p2068x2040', title: 'gegen SV Laatzen 3', text: 6½ }]
+    - [{ url: '?staffel=618&r=8#p2068x1855', title: 'gegen Barsinghausen 2', text: '5' }]
+    - [{ url: '?staffel=618&r=3#p2068x2087', title: 'gegen TSV Burgdorf', text: '4' }]
+    - [{ url: '?staffel=618&r=4#p2068x2042', title: 'gegen SK Anderten 2', text: '6' }]
+    - 10
+    - 38½
+    - ''
+-
+    - '6.'
+    - { text: 'WB Eilenriede 4', url: '?mannschaft=2020', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=618&r=5#p2020x2072', title: 'gegen HSK-Lister Turm 4', text: 2½ }]
+    - [{ url: '?staffel=618&r=3#p2020x2081', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=618&r=8#p2020x2049', title: 'gegen SV Gretenberg 2', text: '1' }]
+    - [{ url: '?staffel=618&r=4#p2020x2017', title: 'gegen Uetze-Hänigsen 2', text: 1½ }]
+    - [{ url: '?staffel=618&r=6#p2020x2068', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=618&r=1#p2020x2040', title: 'gegen SV Laatzen 3', text: 5½ }]
+    - [{ url: '?staffel=618&r=2#p2020x1855', title: 'gegen Barsinghausen 2', text: '5' }]
+    - [{ url: '?staffel=618&r=9#p2020x2087', title: 'gegen TSV Burgdorf', text: '7' }]
+    - [{ url: '?staffel=618&r=7#p2020x2042', title: 'gegen SK Anderten 2', text: 7½ }]
+    - 9
+    - '37'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Laatzen 3', url: '?mannschaft=2040', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=618&r=6#p2040x2072', title: 'gegen HSK-Lister Turm 4', text: 1½ }]
+    - [{ url: '?staffel=618&r=4#p2040x2081', title: 'gegen SK Lehrte 4', text: '5' }]
+    - [{ url: '?staffel=618&r=9#p2040x2049', title: 'gegen SV Gretenberg 2', text: '4' }]
+    - [{ url: '?staffel=618&r=5#p2040x2017', title: 'gegen Uetze-Hänigsen 2', text: '2' }]
+    - [{ url: '?staffel=618&r=7#p2040x2068', title: 'gegen SD Isernhagen 2', text: 1½ }]
+    - [{ url: '?staffel=618&r=1#p2040x2020', title: 'gegen WB Eilenriede 4', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=618&r=3#p2040x1855', title: 'gegen Barsinghausen 2', text: 6½ }]
+    - [{ url: '?staffel=618&r=2#p2040x2087', title: 'gegen TSV Burgdorf', text: '4' }]
+    - [{ url: '?staffel=618&r=8#p2040x2042', title: 'gegen SK Anderten 2', text: 5½ }]
+    - 8
+    - 32½
+    - ''
+-
+    - '8.'
+    - { text: 'Barsinghausen 2', url: '?mannschaft=1855', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=618&r=7#p1855x2072', title: 'gegen HSK-Lister Turm 4', text: 3½ }]
+    - [{ url: '?staffel=618&r=5#p1855x2081', title: 'gegen SK Lehrte 4', text: 1½ }]
+    - [{ url: '?staffel=618&r=1#p1855x2049', title: 'gegen SV Gretenberg 2', text: '4' }]
+    - [{ url: '?staffel=618&r=6#p1855x2017', title: 'gegen Uetze-Hänigsen 2', text: '5' }]
+    - [{ url: '?staffel=618&r=8#p1855x2068', title: 'gegen SD Isernhagen 2', text: '3' }]
+    - [{ url: '?staffel=618&r=2#p1855x2020', title: 'gegen WB Eilenriede 4', text: '3' }]
+    - [{ url: '?staffel=618&r=3#p1855x2040', title: 'gegen SV Laatzen 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=618&r=4#p1855x2087', title: 'gegen TSV Burgdorf', text: 5½ }]
+    - [{ url: '?staffel=618&r=9#p1855x2042', title: 'gegen SK Anderten 2', text: '6' }]
+    - 7
+    - '33'
+    - ''
+-
+    - '9.'
+    - { text: 'TSV Burgdorf', url: '?mannschaft=2087', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=618&r=1#p2087x2072', title: 'gegen HSK-Lister Turm 4', text: '2' }]
+    - [{ url: '?staffel=618&r=6#p2087x2081', title: 'gegen SK Lehrte 4', text: '4' }]
+    - [{ url: '?staffel=618&r=7#p2087x2049', title: 'gegen SV Gretenberg 2', text: '4' }]
+    - [{ url: '?staffel=618&r=8#p2087x2017', title: 'gegen Uetze-Hänigsen 2', text: '3' }]
+    - [{ url: '?staffel=618&r=3#p2087x2068', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - [{ url: '?staffel=618&r=9#p2087x2020', title: 'gegen WB Eilenriede 4', text: '1' }]
+    - [{ url: '?staffel=618&r=2#p2087x2040', title: 'gegen SV Laatzen 3', text: '4' }]
+    - [{ url: '?staffel=618&r=4#p2087x1855', title: 'gegen Barsinghausen 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=618&r=5#p2087x2042', title: 'gegen SK Anderten 2', text: '5' }]
+    - 6
+    - 29½
+    - ''
+-
+    - '10.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=2042', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=618&r=3#p2042x2072', title: 'gegen HSK-Lister Turm 4', text: 1½ }]
+    - [{ url: '?staffel=618&r=1#p2042x2081', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=618&r=6#p2042x2049', title: 'gegen SV Gretenberg 2', text: 1½ }]
+    - [{ url: '?staffel=618&r=2#p2042x2017', title: 'gegen Uetze-Hänigsen 2', text: '2' }]
+    - [{ url: '?staffel=618&r=4#p2042x2068', title: 'gegen SD Isernhagen 2', text: '2' }]
+    - [{ url: '?staffel=618&r=7#p2042x2020', title: 'gegen WB Eilenriede 4', text: ½ }]
+    - [{ url: '?staffel=618&r=8#p2042x2040', title: 'gegen SV Laatzen 3', text: 2½ }]
+    - [{ url: '?staffel=618&r=9#p2042x1855', title: 'gegen Barsinghausen 2', text: '2' }]
+    - [{ url: '?staffel=618&r=5#p2042x2087', title: 'gegen TSV Burgdorf', text: '3' }]
+    - xxx
+    - 0
+    - '18'
+    - ''

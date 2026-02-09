@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Barsinghausen 2', url: '?mannschaft=4385', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=962&r=8#p4385x4641', title: 'gegen ST Langenhagen 2', text: '2' }]
+    - [{ url: '?staffel=962&r=4#p4385x4616', title: 'gegen SC Stadthagen', text: 5½ }]
+    - [{ url: '?staffel=962&r=2#p4385x4630', title: 'gegen SV Berenbostel 3', text: 6½ }]
+    - [{ url: '?staffel=962&r=9#p4385x4660', title: 'gegen SK Rinteln 3', text: 6½ }]
+    - [{ url: '?staffel=962&r=5#p4385x4643', title: 'gegen SV Springe 2', text: '5' }]
+    - [{ url: '?staffel=962&r=1#p4385x4633', title: 'gegen SG Garbsen/Marienw 2', text: 4½ }]
+    - [{ url: '?staffel=962&r=3#p4385x4386', title: 'gegen SF Barsinghausen 3', text: 5½ }]
+    - [{ url: '?staffel=962&r=7#p4385x4475', title: 'gegen SF Mühlenberg 2', text: '7' }]
+    - [{ url: '?staffel=962&r=6#p4385x4648', title: 'gegen Eystruper SK 2', text: 6½ }]
+    - 16
+    - '49'
+    - ''
+-
+    - '2.'
+    - { text: 'ST Langenhagen 2', url: '?mannschaft=4641', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=962&r=8#p4641x4385', title: 'gegen SF Barsinghausen 2', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=962&r=9#p4641x4616', title: 'gegen SC Stadthagen', text: 4½ }]
+    - [{ url: '?staffel=962&r=5#p4641x4630', title: 'gegen SV Berenbostel 3', text: 5½ }]
+    - [{ url: '?staffel=962&r=1#p4641x4660', title: 'gegen SK Rinteln 3', text: '3' }]
+    - [{ url: '?staffel=962&r=2#p4641x4643', title: 'gegen SV Springe 2', text: 4½ }]
+    - [{ url: '?staffel=962&r=3#p4641x4633', title: 'gegen SG Garbsen/Marienw 2', text: 5½ }]
+    - [{ url: '?staffel=962&r=7#p4641x4386', title: 'gegen SF Barsinghausen 3', text: 3½ }]
+    - [{ url: '?staffel=962&r=6#p4641x4475', title: 'gegen SF Mühlenberg 2', text: 5½ }]
+    - [{ url: '?staffel=962&r=4#p4641x4648', title: 'gegen Eystruper SK 2', text: 5½ }]
+    - 14
+    - 43½
+    - ''
+-
+    - '3.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=4616', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=962&r=4#p4616x4385', title: 'gegen SF Barsinghausen 2', text: 2½ }]
+    - [{ url: '?staffel=962&r=9#p4616x4641', title: 'gegen ST Langenhagen 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=962&r=7#p4616x4630', title: 'gegen SV Berenbostel 3', text: '5' }]
+    - [{ url: '?staffel=962&r=5#p4616x4660', title: 'gegen SK Rinteln 3', text: '4' }]
+    - [{ url: '?staffel=962&r=1#p4616x4643', title: 'gegen SV Springe 2', text: '5' }]
+    - [{ url: '?staffel=962&r=6#p4616x4633', title: 'gegen SG Garbsen/Marienw 2', text: '5' }]
+    - [{ url: '?staffel=962&r=8#p4616x4386', title: 'gegen SF Barsinghausen 3', text: '5' }]
+    - [{ url: '?staffel=962&r=3#p4616x4475', title: 'gegen SF Mühlenberg 2', text: '4' }]
+    - [{ url: '?staffel=962&r=2#p4616x4648', title: 'gegen Eystruper SK 2', text: '5' }]
+    - 13
+    - '39'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Berenbostel 3', url: '?mannschaft=4630', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=962&r=2#p4630x4385', title: 'gegen SF Barsinghausen 2', text: 1½ }]
+    - [{ url: '?staffel=962&r=5#p4630x4641', title: 'gegen ST Langenhagen 2', text: 2½ }]
+    - [{ url: '?staffel=962&r=7#p4630x4616', title: 'gegen SC Stadthagen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=962&r=3#p4630x4660', title: 'gegen SK Rinteln 3', text: 3½ }]
+    - [{ url: '?staffel=962&r=8#p4630x4643', title: 'gegen SV Springe 2', text: 4½ }]
+    - [{ url: '?staffel=962&r=4#p4630x4633', title: 'gegen SG Garbsen/Marienw 2', text: 5½ }]
+    - [{ url: '?staffel=962&r=6#p4630x4386', title: 'gegen SF Barsinghausen 3', text: '5' }]
+    - [{ url: '?staffel=962&r=1#p4630x4475', title: 'gegen SF Mühlenberg 2', text: '3' }]
+    - [{ url: '?staffel=962&r=9#p4630x4648', title: 'gegen Eystruper SK 2', text: '6' }]
+    - 8
+    - 34½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Rinteln 3', url: '?mannschaft=4660', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=962&r=9#p4660x4385', title: 'gegen SF Barsinghausen 2', text: 1½ }]
+    - [{ url: '?staffel=962&r=1#p4660x4641', title: 'gegen ST Langenhagen 2', text: '5' }]
+    - [{ url: '?staffel=962&r=5#p4660x4616', title: 'gegen SC Stadthagen', text: '4' }]
+    - [{ url: '?staffel=962&r=3#p4660x4630', title: 'gegen SV Berenbostel 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=962&r=6#p4660x4643', title: 'gegen SV Springe 2', text: '2' }]
+    - [{ url: '?staffel=962&r=2#p4660x4633', title: 'gegen SG Garbsen/Marienw 2', text: 1½ }]
+    - [{ url: '?staffel=962&r=4#p4660x4386', title: 'gegen SF Barsinghausen 3', text: '1' }]
+    - [{ url: '?staffel=962&r=8#p4660x4475', title: 'gegen SF Mühlenberg 2', text: '4' }]
+    - [{ url: '?staffel=962&r=7#p4660x4648', title: 'gegen Eystruper SK 2', text: '5' }]
+    - 8
+    - 28½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Springe 2', url: '?mannschaft=4643', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=962&r=5#p4643x4385', title: 'gegen SF Barsinghausen 2', text: '3' }]
+    - [{ url: '?staffel=962&r=2#p4643x4641', title: 'gegen ST Langenhagen 2', text: 2½ }]
+    - [{ url: '?staffel=962&r=1#p4643x4616', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=962&r=8#p4643x4630', title: 'gegen SV Berenbostel 3', text: 3½ }]
+    - [{ url: '?staffel=962&r=6#p4643x4660', title: 'gegen SK Rinteln 3', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=962&r=7#p4643x4633', title: 'gegen SG Garbsen/Marienw 2', text: '2' }]
+    - [{ url: '?staffel=962&r=9#p4643x4386', title: 'gegen SF Barsinghausen 3', text: '4' }]
+    - [{ url: '?staffel=962&r=4#p4643x4475', title: 'gegen SF Mühlenberg 2', text: '7' }]
+    - [{ url: '?staffel=962&r=3#p4643x4648', title: 'gegen Eystruper SK 2', text: 4½ }]
+    - 7
+    - 35½
+    - ''
+-
+    - '7.'
+    - { text: 'SG Garbsen/Marienw 2', url: '?mannschaft=4633', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=962&r=1#p4633x4385', title: 'gegen SF Barsinghausen 2', text: 3½ }]
+    - [{ url: '?staffel=962&r=3#p4633x4641', title: 'gegen ST Langenhagen 2', text: 2½ }]
+    - [{ url: '?staffel=962&r=6#p4633x4616', title: 'gegen SC Stadthagen', text: '1' }]
+    - [{ url: '?staffel=962&r=4#p4633x4630', title: 'gegen SV Berenbostel 3', text: 2½ }]
+    - [{ url: '?staffel=962&r=2#p4633x4660', title: 'gegen SK Rinteln 3', text: 6½ }]
+    - [{ url: '?staffel=962&r=7#p4633x4643', title: 'gegen SV Springe 2', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=962&r=5#p4633x4386', title: 'gegen SF Barsinghausen 3', text: 5½ }]
+    - [{ url: '?staffel=962&r=9#p4633x4475', title: 'gegen SF Mühlenberg 2', text: 3½ }]
+    - [{ url: '?staffel=962&r=8#p4633x4648', title: 'gegen Eystruper SK 2', text: '3' }]
+    - 7
+    - '34'
+    - ''
+-
+    - '8.'
+    - { text: 'SF Barsinghausen 3', url: '?mannschaft=4386', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=962&r=3#p4386x4385', title: 'gegen SF Barsinghausen 2', text: 2½ }]
+    - [{ url: '?staffel=962&r=7#p4386x4641', title: 'gegen ST Langenhagen 2', text: 4½ }]
+    - [{ url: '?staffel=962&r=8#p4386x4616', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=962&r=6#p4386x4630', title: 'gegen SV Berenbostel 3', text: '3' }]
+    - [{ url: '?staffel=962&r=4#p4386x4660', title: 'gegen SK Rinteln 3', text: '7' }]
+    - [{ url: '?staffel=962&r=9#p4386x4643', title: 'gegen SV Springe 2', text: '4' }]
+    - [{ url: '?staffel=962&r=5#p4386x4633', title: 'gegen SG Garbsen/Marienw 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=962&r=2#p4386x4475', title: 'gegen SF Mühlenberg 2', text: 4½ }]
+    - [{ url: '?staffel=962&r=1#p4386x4648', title: 'gegen Eystruper SK 2', text: '2' }]
+    - 7
+    - '33'
+    - ''
+-
+    - '9.'
+    - { text: 'SF Mühlenberg 2', url: '?mannschaft=4475', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=962&r=7#p4475x4385', title: 'gegen SF Barsinghausen 2', text: '1' }]
+    - [{ url: '?staffel=962&r=6#p4475x4641', title: 'gegen ST Langenhagen 2', text: 2½ }]
+    - [{ url: '?staffel=962&r=3#p4475x4616', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=962&r=1#p4475x4630', title: 'gegen SV Berenbostel 3', text: '4' }]
+    - [{ url: '?staffel=962&r=8#p4475x4660', title: 'gegen SK Rinteln 3', text: '4' }]
+    - [{ url: '?staffel=962&r=4#p4475x4643', title: 'gegen SV Springe 2', text: '1' }]
+    - [{ url: '?staffel=962&r=9#p4475x4633', title: 'gegen SG Garbsen/Marienw 2', text: 3½ }]
+    - [{ url: '?staffel=962&r=2#p4475x4386', title: 'gegen SF Barsinghausen 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=962&r=5#p4475x4648', title: 'gegen Eystruper SK 2', text: 5½ }]
+    - 6
+    - '28'
+    - ''
+-
+    - '10.'
+    - { text: 'Eystruper SK 2', url: '?mannschaft=4648', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=962&r=6#p4648x4385', title: 'gegen SF Barsinghausen 2', text: 1½ }]
+    - [{ url: '?staffel=962&r=4#p4648x4641', title: 'gegen ST Langenhagen 2', text: 2½ }]
+    - [{ url: '?staffel=962&r=2#p4648x4616', title: 'gegen SC Stadthagen', text: '3' }]
+    - [{ url: '?staffel=962&r=9#p4648x4630', title: 'gegen SV Berenbostel 3', text: '1' }]
+    - [{ url: '?staffel=962&r=7#p4648x4660', title: 'gegen SK Rinteln 3', text: '3' }]
+    - [{ url: '?staffel=962&r=3#p4648x4643', title: 'gegen SV Springe 2', text: 3½ }]
+    - [{ url: '?staffel=962&r=8#p4648x4633', title: 'gegen SG Garbsen/Marienw 2', text: '5' }]
+    - [{ url: '?staffel=962&r=1#p4648x4386', title: 'gegen SF Barsinghausen 3', text: '6' }]
+    - [{ url: '?staffel=962&r=5#p4648x4475', title: 'gegen SF Mühlenberg 2', text: 2½ }]
+    - xxx
+    - 4
+    - '28'
+    - ''

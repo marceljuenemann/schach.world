@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=1643', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=564&r=2#p1643x1594', title: 'gegen Eystruper SK 2', text: 4½ }]
+    - [{ url: '?staffel=564&r=1#p1643x1435', title: 'gegen Barsinghausen 3', text: 3½ }]
+    - [{ url: '?staffel=564&r=3#p1643x1665', title: 'gegen SV Bückeburg 3', text: '6' }]
+    - [{ url: '?staffel=564&r=5#p1643x1575', title: 'gegen SG Eldagsen/BM 2', text: '5' }]
+    - [{ url: '?staffel=564&r=7#p1643x1577', title: 'gegen SV Warmsen', text: '5' }]
+    - [{ url: '?staffel=564&r=6#p1643x1589', title: 'gegen SVg Calenberg 2', text: 6½ }]
+    - [{ url: '?staffel=564&r=4#p1643x1618', title: 'gegen Schachakademie', text: '5' }]
+    - 12
+    - 35½
+    - ''
+-
+    - '2.'
+    - { text: 'Eystruper SK 2', url: '?mannschaft=1594', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=564&r=2#p1594x1643', title: 'gegen SK Rinteln 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=564&r=3#p1594x1435', title: 'gegen Barsinghausen 3', text: '5' }]
+    - [{ url: '?staffel=564&r=4#p1594x1665', title: 'gegen SV Bückeburg 3', text: 4½ }]
+    - [{ url: '?staffel=564&r=6#p1594x1575', title: 'gegen SG Eldagsen/BM 2', text: '8' }]
+    - [{ url: '?staffel=564&r=1#p1594x1577', title: 'gegen SV Warmsen', text: '5' }]
+    - [{ url: '?staffel=564&r=7#p1594x1589', title: 'gegen SVg Calenberg 2', text: 4½ }]
+    - [{ url: '?staffel=564&r=5#p1594x1618', title: 'gegen Schachakademie', text: '4' }]
+    - 11
+    - 34½
+    - ''
+-
+    - '3.'
+    - { text: 'Barsinghausen 3', url: '?mannschaft=1435', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=564&r=1#p1435x1643', title: 'gegen SK Rinteln 2', text: 4½ }]
+    - [{ url: '?staffel=564&r=3#p1435x1594', title: 'gegen Eystruper SK 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=564&r=5#p1435x1665', title: 'gegen SV Bückeburg 3', text: '3' }]
+    - [{ url: '?staffel=564&r=2#p1435x1575', title: 'gegen SG Eldagsen/BM 2', text: 4½ }]
+    - [{ url: '?staffel=564&r=6#p1435x1577', title: 'gegen SV Warmsen', text: 3½ }]
+    - [{ url: '?staffel=564&r=4#p1435x1589', title: 'gegen SVg Calenberg 2', text: 4½ }]
+    - [{ url: '?staffel=564&r=7#p1435x1618', title: 'gegen Schachakademie', text: '4' }]
+    - 8
+    - '27'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bückeburg 3', url: '?mannschaft=1665', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=564&r=3#p1665x1643', title: 'gegen SK Rinteln 2', text: '2' }]
+    - [{ url: '?staffel=564&r=4#p1665x1594', title: 'gegen Eystruper SK 2', text: 3½ }]
+    - [{ url: '?staffel=564&r=5#p1665x1435', title: 'gegen Barsinghausen 3', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=564&r=7#p1665x1575', title: 'gegen SG Eldagsen/BM 2', text: 3½ }]
+    - [{ url: '?staffel=564&r=2#p1665x1577', title: 'gegen SV Warmsen', text: '4' }]
+    - [{ url: '?staffel=564&r=1#p1665x1589', title: 'gegen SVg Calenberg 2', text: '6' }]
+    - [{ url: '?staffel=564&r=6#p1665x1618', title: 'gegen Schachakademie', text: 5½ }]
+    - 7
+    - 29½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Eldagsen/BM 2', url: '?mannschaft=1575', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=564&r=5#p1575x1643', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=564&r=6#p1575x1594', title: 'gegen Eystruper SK 2', text: '0' }]
+    - [{ url: '?staffel=564&r=2#p1575x1435', title: 'gegen Barsinghausen 3', text: 3½ }]
+    - [{ url: '?staffel=564&r=7#p1575x1665', title: 'gegen SV Bückeburg 3', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=564&r=4#p1575x1577', title: 'gegen SV Warmsen', text: '4' }]
+    - [{ url: '?staffel=564&r=3#p1575x1589', title: 'gegen SVg Calenberg 2', text: 4½ }]
+    - [{ url: '?staffel=564&r=1#p1575x1618', title: 'gegen Schachakademie', text: 6½ }]
+    - 7
+    - '26'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Warmsen', url: '?mannschaft=1577', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=564&r=7#p1577x1643', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=564&r=1#p1577x1594', title: 'gegen Eystruper SK 2', text: '3' }]
+    - [{ url: '?staffel=564&r=6#p1577x1435', title: 'gegen Barsinghausen 3', text: 3½ }]
+    - [{ url: '?staffel=564&r=2#p1577x1665', title: 'gegen SV Bückeburg 3', text: '4' }]
+    - [{ url: '?staffel=564&r=4#p1577x1575', title: 'gegen SG Eldagsen/BM 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=564&r=5#p1577x1589', title: 'gegen SVg Calenberg 2', text: '4' }]
+    - [{ url: '?staffel=564&r=3#p1577x1618', title: 'gegen Schachakademie', text: '8' }]
+    - 6
+    - 29½
+    - ''
+-
+    - '7.'
+    - { text: 'SVg Calenberg 2', url: '?mannschaft=1589', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=564&r=6#p1589x1643', title: 'gegen SK Rinteln 2', text: 1½ }]
+    - [{ url: '?staffel=564&r=7#p1589x1594', title: 'gegen Eystruper SK 2', text: 3½ }]
+    - [{ url: '?staffel=564&r=4#p1589x1435', title: 'gegen Barsinghausen 3', text: 3½ }]
+    - [{ url: '?staffel=564&r=1#p1589x1665', title: 'gegen SV Bückeburg 3', text: '2' }]
+    - [{ url: '?staffel=564&r=3#p1589x1575', title: 'gegen SG Eldagsen/BM 2', text: 3½ }]
+    - [{ url: '?staffel=564&r=5#p1589x1577', title: 'gegen SV Warmsen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=564&r=2#p1589x1618', title: 'gegen Schachakademie', text: 4½ }]
+    - 3
+    - 22½
+    - ''
+-
+    - '8.'
+    - { text: Schachakademie, url: '?mannschaft=1618', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=564&r=4#p1618x1643', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=564&r=5#p1618x1594', title: 'gegen Eystruper SK 2', text: '4' }]
+    - [{ url: '?staffel=564&r=7#p1618x1435', title: 'gegen Barsinghausen 3', text: '4' }]
+    - [{ url: '?staffel=564&r=6#p1618x1665', title: 'gegen SV Bückeburg 3', text: 2½ }]
+    - [{ url: '?staffel=564&r=1#p1618x1575', title: 'gegen SG Eldagsen/BM 2', text: 1½ }]
+    - [{ url: '?staffel=564&r=3#p1618x1577', title: 'gegen SV Warmsen', text: '0' }]
+    - [{ url: '?staffel=564&r=2#p1618x1589', title: 'gegen SVg Calenberg 2', text: 3½ }]
+    - xxx
+    - 2
+    - 18½
+    - ''

@@ -1,0 +1,233 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Stader SV 3', url: '?mannschaft=3019', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=746&r=5#p3019x3018', title: 'gegen Stader SV 2', text: 3½ }]
+    - [{ url: '?staffel=746&r=9#p3019x3096', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=746&r=10#p3019x3021', title: 'gegen Post SV Uelzen', text: '2' }]
+    - [{ url: '?staffel=746&r=1#p3019x3010', title: "gegen SK Celle-W'cel.", text: '3' }]
+    - [{ url: '?staffel=746&r=8#p3019x3009', title: 'gegen SV Bad Bevensen', text: '4' }]
+    - [{ url: '?staffel=746&r=11#p3019x3022', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=746&r=4#p3019x3013', title: 'gegen SK Hermannsburg 2', text: '4' }]
+    - [{ url: '?staffel=746&r=3#p3019x3012', title: 'gegen SK Hermannsburg', text: '4' }]
+    - [{ url: '?staffel=746&r=7#p3019x3094', title: 'gegen FG Wohlde', text: '2' }]
+    - [{ url: '?staffel=746&r=2#p3019x3031', title: 'gegen SV Wesel', text: '3' }]
+    - [{ url: '?staffel=746&r=6#p3019x3095', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 20
+    - 36½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'Stader SV 2', url: '?mannschaft=3018', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=746&r=5#p3018x3019', title: 'gegen Stader SV 3', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=746&r=8#p3018x3096', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - [{ url: '?staffel=746&r=11#p3018x3021', title: 'gegen Post SV Uelzen', text: 2½ }]
+    - [{ url: '?staffel=746&r=2#p3018x3010', title: "gegen SK Celle-W'cel.", text: 3½ }]
+    - [{ url: '?staffel=746&r=9#p3018x3009', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - [{ url: '?staffel=746&r=10#p3018x3022', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=746&r=3#p3018x3013', title: 'gegen SK Hermannsburg 2', text: '4' }]
+    - [{ url: '?staffel=746&r=4#p3018x3012', title: 'gegen SK Hermannsburg', text: '4' }]
+    - [{ url: '?staffel=746&r=6#p3018x3094', title: 'gegen FG Wohlde', text: '4' }]
+    - [{ url: '?staffel=746&r=1#p3018x3031', title: 'gegen SV Wesel', text: '4' }]
+    - [{ url: '?staffel=746&r=7#p3018x3095', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 18
+    - 34½
+    - ''
+-
+    - '3.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=3096', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=746&r=9#p3096x3019', title: 'gegen Stader SV 3', text: '1' }]
+    - [{ url: '?staffel=746&r=8#p3096x3018', title: 'gegen Stader SV 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=746&r=2#p3096x3021', title: 'gegen Post SV Uelzen', text: '2' }]
+    - [{ url: '?staffel=746&r=3#p3096x3010', title: "gegen SK Celle-W'cel.", text: '2' }]
+    - [{ url: '?staffel=746&r=5#p3096x3009', title: 'gegen SV Bad Bevensen', text: 3½ }]
+    - [{ url: '?staffel=746&r=1#p3096x3022', title: 'gegen Post SV Uelzen 2', text: '4' }]
+    - [{ url: '?staffel=746&r=6#p3096x3013', title: 'gegen SK Hermannsburg 2', text: 2½ }]
+    - [{ url: '?staffel=746&r=7#p3096x3012', title: 'gegen SK Hermannsburg', text: '3' }]
+    - [{ url: '?staffel=746&r=10#p3096x3094', title: 'gegen FG Wohlde', text: '4' }]
+    - [{ url: '?staffel=746&r=4#p3096x3031', title: 'gegen SV Wesel', text: '3' }]
+    - [{ url: '?staffel=746&r=11#p3096x3095', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 18
+    - '32'
+    - ''
+-
+    - '4.'
+    - { text: 'Post SV Uelzen', url: '?mannschaft=3021', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=746&r=10#p3021x3019', title: 'gegen Stader SV 3', text: '2' }]
+    - [{ url: '?staffel=746&r=11#p3021x3018', title: 'gegen Stader SV 2', text: 1½ }]
+    - [{ url: '?staffel=746&r=2#p3021x3096', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=746&r=6#p3021x3010', title: "gegen SK Celle-W'cel.", text: 2½ }]
+    - [{ url: '?staffel=746&r=1#p3021x3009', title: 'gegen SV Bad Bevensen', text: '3' }]
+    - [{ url: '?staffel=746&r=5#p3021x3022', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=746&r=9#p3021x3013', title: 'gegen SK Hermannsburg 2', text: '2' }]
+    - [{ url: '?staffel=746&r=8#p3021x3012', title: 'gegen SK Hermannsburg', text: '4' }]
+    - [{ url: '?staffel=746&r=3#p3021x3094', title: 'gegen FG Wohlde', text: '4' }]
+    - [{ url: '?staffel=746&r=7#p3021x3031', title: 'gegen SV Wesel', text: '4' }]
+    - [{ url: '?staffel=746&r=4#p3021x3095', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 17
+    - '32'
+    - ''
+-
+    - '5.'
+    - { text: "SK Celle-W'cel.", url: '?mannschaft=3010', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=746&r=1#p3010x3019', title: 'gegen Stader SV 3', text: '1' }]
+    - [{ url: '?staffel=746&r=2#p3010x3018', title: 'gegen Stader SV 2', text: ½ }]
+    - [{ url: '?staffel=746&r=3#p3010x3096', title: 'gegen SC Turm Lüneburg', text: '2' }]
+    - [{ url: '?staffel=746&r=6#p3010x3021', title: 'gegen Post SV Uelzen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=746&r=4#p3010x3009', title: 'gegen SV Bad Bevensen', text: 2½ }]
+    - [{ url: '?staffel=746&r=7#p3010x3022', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=746&r=11#p3010x3013', title: 'gegen SK Hermannsburg 2', text: '1' }]
+    - [{ url: '?staffel=746&r=10#p3010x3012', title: 'gegen SK Hermannsburg', text: '3' }]
+    - [{ url: '?staffel=746&r=9#p3010x3094', title: 'gegen FG Wohlde', text: '3' }]
+    - [{ url: '?staffel=746&r=5#p3010x3031', title: 'gegen SV Wesel', text: '3' }]
+    - [{ url: '?staffel=746&r=8#p3010x3095', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 13
+    - 24½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Bad Bevensen', url: '?mannschaft=3009', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=746&r=8#p3009x3019', title: 'gegen Stader SV 3', text: '0' }]
+    - [{ url: '?staffel=746&r=9#p3009x3018', title: 'gegen Stader SV 2', text: '1' }]
+    - [{ url: '?staffel=746&r=5#p3009x3096', title: 'gegen SC Turm Lüneburg', text: ½ }]
+    - [{ url: '?staffel=746&r=1#p3009x3021', title: 'gegen Post SV Uelzen', text: '1' }]
+    - [{ url: '?staffel=746&r=4#p3009x3010', title: "gegen SK Celle-W'cel.", text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=746&r=2#p3009x3022', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - [{ url: '?staffel=746&r=7#p3009x3013', title: 'gegen SK Hermannsburg 2', text: '3' }]
+    - [{ url: '?staffel=746&r=6#p3009x3012', title: 'gegen SK Hermannsburg', text: '4' }]
+    - [{ url: '?staffel=746&r=11#p3009x3094', title: 'gegen FG Wohlde', text: '3' }]
+    - [{ url: '?staffel=746&r=3#p3009x3031', title: 'gegen SV Wesel', text: '2' }]
+    - [{ url: '?staffel=746&r=10#p3009x3095', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 10
+    - '22'
+    - ''
+-
+    - '7.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=3022', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=746&r=11#p3022x3019', title: 'gegen Stader SV 3', text: '0' }]
+    - [{ url: '?staffel=746&r=10#p3022x3018', title: 'gegen Stader SV 2', text: '0' }]
+    - [{ url: '?staffel=746&r=1#p3022x3096', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=746&r=5#p3022x3021', title: 'gegen Post SV Uelzen', text: '1' }]
+    - [{ url: '?staffel=746&r=7#p3022x3010', title: "gegen SK Celle-W'cel.", text: '1' }]
+    - [{ url: '?staffel=746&r=2#p3022x3009', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=746&r=8#p3022x3013', title: 'gegen SK Hermannsburg 2', text: '3' }]
+    - [{ url: '?staffel=746&r=9#p3022x3012', title: 'gegen SK Hermannsburg', text: '2' }]
+    - [{ url: '?staffel=746&r=4#p3022x3094', title: 'gegen FG Wohlde', text: '3' }]
+    - [{ url: '?staffel=746&r=6#p3022x3031', title: 'gegen SV Wesel', text: '4' }]
+    - [{ url: '?staffel=746&r=3#p3022x3095', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 10
+    - '20'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Hermannsburg 2', url: '?mannschaft=3013', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=746&r=4#p3013x3019', title: 'gegen Stader SV 3', text: '0' }]
+    - [{ url: '?staffel=746&r=3#p3013x3018', title: 'gegen Stader SV 2', text: '0' }]
+    - [{ url: '?staffel=746&r=6#p3013x3096', title: 'gegen SC Turm Lüneburg', text: 1½ }]
+    - [{ url: '?staffel=746&r=9#p3013x3021', title: 'gegen Post SV Uelzen', text: '2' }]
+    - [{ url: '?staffel=746&r=11#p3013x3010', title: "gegen SK Celle-W'cel.", text: '3' }]
+    - [{ url: '?staffel=746&r=7#p3013x3009', title: 'gegen SV Bad Bevensen', text: '1' }]
+    - [{ url: '?staffel=746&r=8#p3013x3022', title: 'gegen Post SV Uelzen 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=746&r=5#p3013x3012', title: 'gegen SK Hermannsburg', text: 1½ }]
+    - [{ url: '?staffel=746&r=1#p3013x3094', title: 'gegen FG Wohlde', text: '4' }]
+    - [{ url: '?staffel=746&r=10#p3013x3031', title: 'gegen SV Wesel', text: '3' }]
+    - [{ url: '?staffel=746&r=2#p3013x3095', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 9
+    - '21'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Hermannsburg', url: '?mannschaft=3012', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=746&r=3#p3012x3019', title: 'gegen Stader SV 3', text: '0' }]
+    - [{ url: '?staffel=746&r=4#p3012x3018', title: 'gegen Stader SV 2', text: '0' }]
+    - [{ url: '?staffel=746&r=7#p3012x3096', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - [{ url: '?staffel=746&r=8#p3012x3021', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=746&r=10#p3012x3010', title: "gegen SK Celle-W'cel.", text: '1' }]
+    - [{ url: '?staffel=746&r=6#p3012x3009', title: 'gegen SV Bad Bevensen', text: '0' }]
+    - [{ url: '?staffel=746&r=9#p3012x3022', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - [{ url: '?staffel=746&r=5#p3012x3013', title: 'gegen SK Hermannsburg 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=746&r=2#p3012x3094', title: 'gegen FG Wohlde', text: '2' }]
+    - [{ url: '?staffel=746&r=11#p3012x3031', title: 'gegen SV Wesel', text: '3' }]
+    - [{ url: '?staffel=746&r=1#p3012x3095', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 8
+    - 15½
+    - ''
+-
+    - '10.'
+    - { text: 'FG Wohlde', url: '?mannschaft=3094', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=746&r=7#p3094x3019', title: 'gegen Stader SV 3', text: '2' }]
+    - [{ url: '?staffel=746&r=6#p3094x3018', title: 'gegen Stader SV 2', text: '0' }]
+    - [{ url: '?staffel=746&r=10#p3094x3096', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=746&r=3#p3094x3021', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=746&r=9#p3094x3010', title: "gegen SK Celle-W'cel.", text: '1' }]
+    - [{ url: '?staffel=746&r=11#p3094x3009', title: 'gegen SV Bad Bevensen', text: '1' }]
+    - [{ url: '?staffel=746&r=4#p3094x3022', title: 'gegen Post SV Uelzen 2', text: '1' }]
+    - [{ url: '?staffel=746&r=1#p3094x3013', title: 'gegen SK Hermannsburg 2', text: '0' }]
+    - [{ url: '?staffel=746&r=2#p3094x3012', title: 'gegen SK Hermannsburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=746&r=8#p3094x3031', title: 'gegen SV Wesel', text: '2' }]
+    - [{ url: '?staffel=746&r=5#p3094x3095', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 5
+    - '13'
+    - ''
+-
+    - '11.'
+    - { text: 'SV Wesel', url: '?mannschaft=3031', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=746&r=2#p3031x3019', title: 'gegen Stader SV 3', text: '1' }]
+    - [{ url: '?staffel=746&r=1#p3031x3018', title: 'gegen Stader SV 2', text: '0' }]
+    - [{ url: '?staffel=746&r=4#p3031x3096', title: 'gegen SC Turm Lüneburg', text: '1' }]
+    - [{ url: '?staffel=746&r=7#p3031x3021', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=746&r=5#p3031x3010', title: "gegen SK Celle-W'cel.", text: '1' }]
+    - [{ url: '?staffel=746&r=3#p3031x3009', title: 'gegen SV Bad Bevensen', text: '2' }]
+    - [{ url: '?staffel=746&r=6#p3031x3022', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - [{ url: '?staffel=746&r=10#p3031x3013', title: 'gegen SK Hermannsburg 2', text: '1' }]
+    - [{ url: '?staffel=746&r=11#p3031x3012', title: 'gegen SK Hermannsburg', text: '1' }]
+    - [{ url: '?staffel=746&r=8#p3031x3094', title: 'gegen FG Wohlde', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=746&r=9#p3031x3095', title: 'gegen FG Wohlde 2', text: '4' }]
+    - 4
+    - '13'
+    - ''
+-
+    - '12.'
+    - { text: 'FG Wohlde 2', url: '?mannschaft=3095', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=746&r=6#p3095x3019', title: 'gegen Stader SV 3', text: '0' }]
+    - [{ url: '?staffel=746&r=7#p3095x3018', title: 'gegen Stader SV 2', text: '0' }]
+    - [{ url: '?staffel=746&r=11#p3095x3096', title: 'gegen SC Turm Lüneburg', text: '0' }]
+    - [{ url: '?staffel=746&r=4#p3095x3021', title: 'gegen Post SV Uelzen', text: '0' }]
+    - [{ url: '?staffel=746&r=8#p3095x3010', title: "gegen SK Celle-W'cel.", text: '0' }]
+    - [{ url: '?staffel=746&r=10#p3095x3009', title: 'gegen SV Bad Bevensen', text: '0' }]
+    - [{ url: '?staffel=746&r=3#p3095x3022', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - [{ url: '?staffel=746&r=2#p3095x3013', title: 'gegen SK Hermannsburg 2', text: '0' }]
+    - [{ url: '?staffel=746&r=1#p3095x3012', title: 'gegen SK Hermannsburg', text: '0' }]
+    - [{ url: '?staffel=746&r=5#p3095x3094', title: 'gegen FG Wohlde', text: '0' }]
+    - [{ url: '?staffel=746&r=9#p3095x3031', title: 'gegen SV Wesel', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

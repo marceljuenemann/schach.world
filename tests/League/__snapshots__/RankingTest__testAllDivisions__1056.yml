@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'KS Braunschweig', url: '?mannschaft=8275', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1907&r=2#p8275x8276', title: 'gegen SG Elmrochade', text: '5' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1907&r=1#p8275x8298', title: 'gegen SF Fallersleben', text: 5½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1907&r=3#p8275x8300', title: 'gegen SK Salzgitter-Bad', text: 6½ }]
+    - {  }
+    - {  }
+    - 6
+    - '17'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Elmrochade', url: '?mannschaft=8276', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1907&r=2#p8276x8275', title: 'gegen KS Braunschweig', text: '3' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1907&r=1#p8276x8301', title: 'gegen SV Apelnstedt', text: 5½ }]
+    - {  }
+    - [{ url: '?staffel=1907&r=3#p8276x8294', title: 'gegen SG Gifhorn-Wolfsburg 3', text: '7' }]
+    - {  }
+    - 4
+    - 15½
+    - ''
+-
+    - '3.'
+    - { text: 'SC BS Gliesmarode 4', url: '?mannschaft=8288', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1907&r=3#p8288x8287', title: 'gegen SC BS Gliesmarode 3', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=1907&r=1#p8288x8300', title: 'gegen SK Salzgitter-Bad', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=1907&r=2#p8288x8285', title: 'gegen Peiner SV 2', text: 4½ }]
+    - 4
+    - '13'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Cai. Wolfenbüttel 2', url: '?mannschaft=8302', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1907&r=2#p8302x8287', title: 'gegen SC BS Gliesmarode 3', text: '5' }]
+    - [{ url: '?staffel=1907&r=3#p8302x8301', title: 'gegen SV Apelnstedt', text: 2½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1907&r=1#p8302x8285', title: 'gegen Peiner SV 2', text: 4½ }]
+    - 4
+    - '12'
+    - ''
+-
+    - '5.'
+    - { text: 'SF Fallersleben', url: '?mannschaft=8298', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1907&r=1#p8298x8275', title: 'gegen KS Braunschweig', text: 2½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1907&r=2#p8298x8300', title: 'gegen SK Salzgitter-Bad', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1907&r=3#p8298x8285', title: 'gegen Peiner SV 2', text: 4½ }]
+    - 4
+    - 11½
+    - ''
+-
+    - '6.'
+    - { text: 'SC BS Gliesmarode 3', url: '?mannschaft=8287', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1907&r=3#p8287x8288', title: 'gegen SC BS Gliesmarode 4', text: '3' }]
+    - [{ url: '?staffel=1907&r=2#p8287x8302', title: 'gegen SV Cai. Wolfenbüttel 2', text: '3' }]
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1907&r=1#p8287x8294', title: 'gegen SG Gifhorn-Wolfsburg 3', text: '6' }]
+    - {  }
+    - 2
+    - '12'
+    - ''
+-
+    - '7.'
+    - { text: 'SV Apelnstedt', url: '?mannschaft=8301', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1907&r=1#p8301x8276', title: 'gegen SG Elmrochade', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1907&r=3#p8301x8302', title: 'gegen SV Cai. Wolfenbüttel 2', text: 5½ }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1907&r=2#p8301x8294', title: 'gegen SG Gifhorn-Wolfsburg 3', text: 2½ }]
+    - {  }
+    - 2
+    - 10½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Salzgitter-Bad', url: '?mannschaft=8300', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1907&r=3#p8300x8275', title: 'gegen KS Braunschweig', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=1907&r=1#p8300x8288', title: 'gegen SC BS Gliesmarode 4', text: 4½ }]
+    - {  }
+    - [{ url: '?staffel=1907&r=2#p8300x8298', title: 'gegen SF Fallersleben', text: 3½ }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 2
+    - 9½
+    - ''
+-
+    - '9.'
+    - { text: 'SG Gifhorn-Wolfsburg 3', url: '?mannschaft=8294', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1907&r=3#p8294x8276', title: 'gegen SG Elmrochade', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1907&r=1#p8294x8287', title: 'gegen SC BS Gliesmarode 3', text: '2' }]
+    - [{ url: '?staffel=1907&r=2#p8294x8301', title: 'gegen SV Apelnstedt', text: 5½ }]
+    - {  }
+    - xxx
+    - {  }
+    - 2
+    - 8½
+    - absteiger
+-
+    - '10.'
+    - { text: 'Peiner SV 2', url: '?mannschaft=8285', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1907&r=2#p8285x8288', title: 'gegen SC BS Gliesmarode 4', text: 3½ }]
+    - [{ url: '?staffel=1907&r=1#p8285x8302', title: 'gegen SV Cai. Wolfenbüttel 2', text: 3½ }]
+    - [{ url: '?staffel=1907&r=3#p8285x8298', title: 'gegen SF Fallersleben', text: 3½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - 10½
+    - absteiger

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=456', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=409&r=2#p456x457', title: 'gegen SK Lehrte 3', text: 4½ }]
+    - [{ url: '?staffel=409&r=6#p456x458', title: 'gegen Marienw/Gar/See', text: 4½ }]
+    - [{ url: '?staffel=409&r=3#p456x428', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=409&r=5#p456x438', title: 'gegen PSC Hannover', text: 4½ }]
+    - [{ url: '?staffel=409&r=7#p456x427', title: 'gegen TuS Wunstorf', text: 5½ }]
+    - [{ url: '?staffel=409&r=1#p456x447', title: 'gegen SV Bückeburg 3', text: '6' }]
+    - [{ url: '?staffel=409&r=4#p456x429', title: 'gegen Barsinghausen 2', text: '6' }]
+    - 14
+    - '35'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=457', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=409&r=2#p457x456', title: 'gegen SD Isernhagen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=409&r=5#p457x458', title: 'gegen Marienw/Gar/See', text: '6' }]
+    - [{ url: '?staffel=409&r=6#p457x428', title: 'gegen Barsinghausen', text: '5' }]
+    - [{ url: '?staffel=409&r=1#p457x438', title: 'gegen PSC Hannover', text: 3½ }]
+    - [{ url: '?staffel=409&r=3#p457x427', title: 'gegen TuS Wunstorf', text: '6' }]
+    - [{ url: '?staffel=409&r=4#p457x447', title: 'gegen SV Bückeburg 3', text: '5' }]
+    - [{ url: '?staffel=409&r=7#p457x429', title: 'gegen Barsinghausen 2', text: 5½ }]
+    - 12
+    - 32½
+    - ''
+-
+    - '3.'
+    - { text: Marienw/Gar/See, url: '?mannschaft=458', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=409&r=6#p458x456', title: 'gegen SD Isernhagen', text: 1½ }]
+    - [{ url: '?staffel=409&r=5#p458x457', title: 'gegen SK Lehrte 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=409&r=7#p458x428', title: 'gegen Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=409&r=4#p458x438', title: 'gegen PSC Hannover', text: '3' }]
+    - [{ url: '?staffel=409&r=1#p458x427', title: 'gegen TuS Wunstorf', text: 3½ }]
+    - [{ url: '?staffel=409&r=3#p458x447', title: 'gegen SV Bückeburg 3', text: 5½ }]
+    - [{ url: '?staffel=409&r=2#p458x429', title: 'gegen Barsinghausen 2', text: 5½ }]
+    - 9
+    - 22½
+    - ''
+-
+    - '4.'
+    - { text: Barsinghausen, url: '?mannschaft=428', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=409&r=3#p428x456', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=409&r=6#p428x457', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=409&r=7#p428x458', title: 'gegen Marienw/Gar/See', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=409&r=2#p428x438', title: 'gegen PSC Hannover', text: 2½ }]
+    - [{ url: '?staffel=409&r=4#p428x427', title: 'gegen TuS Wunstorf', text: 4½ }]
+    - [{ url: '?staffel=409&r=5#p428x447', title: 'gegen SV Bückeburg 3', text: 3½ }]
+    - [{ url: '?staffel=409&r=1#p428x429', title: 'gegen Barsinghausen 2', text: '6' }]
+    - 6
+    - '22'
+    - ''
+-
+    - '5.'
+    - { text: 'PSC Hannover', url: '?mannschaft=438', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=409&r=5#p438x456', title: 'gegen SD Isernhagen', text: ½ }]
+    - [{ url: '?staffel=409&r=1#p438x457', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=409&r=4#p438x458', title: 'gegen Marienw/Gar/See', text: '3' }]
+    - [{ url: '?staffel=409&r=2#p438x428', title: 'gegen Barsinghausen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=409&r=6#p438x427', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=409&r=7#p438x447', title: 'gegen SV Bückeburg 3', text: 3½ }]
+    - [{ url: '?staffel=409&r=3#p438x429', title: 'gegen Barsinghausen 2', text: '0' }]
+    - 6
+    - '16'
+    - ''
+-
+    - '6.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=427', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=409&r=7#p427x456', title: 'gegen SD Isernhagen', text: ½ }]
+    - [{ url: '?staffel=409&r=3#p427x457', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=409&r=1#p427x458', title: 'gegen Marienw/Gar/See', text: 1½ }]
+    - [{ url: '?staffel=409&r=4#p427x428', title: 'gegen Barsinghausen', text: 1½ }]
+    - [{ url: '?staffel=409&r=6#p427x438', title: 'gegen PSC Hannover', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=409&r=2#p427x447', title: 'gegen SV Bückeburg 3', text: 4½ }]
+    - [{ url: '?staffel=409&r=5#p427x429', title: 'gegen Barsinghausen 2', text: 5½ }]
+    - 5
+    - 16½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Bückeburg 3', url: '?mannschaft=447', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=409&r=1#p447x456', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=409&r=4#p447x457', title: 'gegen SK Lehrte 3', text: '1' }]
+    - [{ url: '?staffel=409&r=3#p447x458', title: 'gegen Marienw/Gar/See', text: ½ }]
+    - [{ url: '?staffel=409&r=5#p447x428', title: 'gegen Barsinghausen', text: 2½ }]
+    - [{ url: '?staffel=409&r=7#p447x438', title: 'gegen PSC Hannover', text: 2½ }]
+    - [{ url: '?staffel=409&r=2#p447x427', title: 'gegen TuS Wunstorf', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=409&r=6#p447x429', title: 'gegen Barsinghausen 2', text: '4' }]
+    - 2
+    - '12'
+    - ''
+-
+    - '8.'
+    - { text: 'Barsinghausen 2', url: '?mannschaft=429', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=409&r=4#p429x456', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=409&r=7#p429x457', title: 'gegen SK Lehrte 3', text: ½ }]
+    - [{ url: '?staffel=409&r=2#p429x458', title: 'gegen Marienw/Gar/See', text: ½ }]
+    - [{ url: '?staffel=409&r=1#p429x428', title: 'gegen Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=409&r=3#p429x438', title: 'gegen PSC Hannover', text: '6' }]
+    - [{ url: '?staffel=409&r=5#p429x427', title: 'gegen TuS Wunstorf', text: ½ }]
+    - [{ url: '?staffel=409&r=6#p429x447', title: 'gegen SV Bückeburg 3', text: '2' }]
+    - xxx
+    - 2
+    - 9½
+    - ''

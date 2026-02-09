@@ -1,4 +1,21 @@
-import { FormControl, FormGroup, Validators } from "@angular/forms"
+import { FormControl, FormControlOptions, FormGroup, ValidatorFn, Validators } from "@angular/forms"
+
+type NsvFormType = 'text' | 'int' | 'multiline' | 'select';
+
+/**
+ * Configuration options for a form control.
+ */
+export interface NsvFormConfig {
+  type: NsvFormType
+  id: string
+  label: string
+  required: boolean
+  options?: {
+    label: string
+    value: string
+    disabled?: boolean
+  }[]
+}
 
 /**
  * Extension of FormGroup that also helps with things like
@@ -20,10 +37,37 @@ export class NsvFormGroup<T extends {[K in keyof T]: NsvFormControl<any>} = any>
       })
     )
   }
+
+  /**
+   * Dynamically adds a control generated from the configuration passed.
+   */
+  addControls(config: NsvFormConfig[]) {
+    for (const cfg of config) {
+      switch (cfg.type) {
+        case 'text':
+          this.addControl(cfg.id, new TextControl(cfg.label, {required: cfg.required}))
+          break
+        case 'multiline':
+          this.addControl(cfg.id, new TextareaControl(cfg.label, {required: cfg.required}))
+          break
+        case 'int':
+          this.addControl(cfg.id, new IntControl(cfg.label, {required: cfg.required}))
+          break
+        case 'select':
+          this.addControl(cfg.id, new SelectControl(cfg.label, cfg.options, {required: cfg.required}))
+          break
+        default:
+          console.warn(`Unsupported control type ${cfg.type}`)
+          continue
+      }
+    }
+  }
 }
 
 export abstract class NsvFormControl<T = any> extends FormControl {
-  public abstract readonly label: string
+  constructor(public readonly type: NsvFormType, public readonly label: string, opts: FormControlOptions | ValidatorFn | ValidatorFn[] = {}) {
+    super('', opts);
+  }
 
   get transformedValue() {
     return this.value
@@ -31,8 +75,18 @@ export abstract class NsvFormControl<T = any> extends FormControl {
 }
 
 export class TextControl extends NsvFormControl<string> {
-  constructor(public readonly label: string, opts: {required?: boolean} = {}) {
-    super('', opts.required ? Validators.required : undefined);
+  constructor(label: string, opts: {required?: boolean} = {}) {
+    super('text', label, opts.required ? Validators.required : undefined)
+  }
+
+  override get transformedValue() {
+    return this.value?.trim()
+  }
+}
+
+export class TextareaControl extends NsvFormControl<string> {
+  constructor(label: string, opts: {required?: boolean} = {}) {
+    super('multiline', label, opts.required ? Validators.required : undefined);
   }
 
   override get transformedValue() {
@@ -41,15 +95,25 @@ export class TextControl extends NsvFormControl<string> {
 }
 
 export class IntControl extends NsvFormControl<number> {
-  constructor(public readonly label: string, opts: {required?: boolean} = {}) {
+  constructor(label: string, opts: {required?: boolean} = {}) {
     const validators = [Validators.pattern("^[0-9]*$")]
     if (opts.required) {
       validators.push(Validators.required)
     }
-    super('', validators);
+    super('int', label, validators);
   }
 
   override get transformedValue() {
     return parseInt(super.transformedValue) || null
+  }
+}
+
+export class SelectControl extends NsvFormControl<string> {
+  constructor(label: string, public readonly options: NsvFormConfig['options'], opts: {required?: boolean} = {}) {
+    super('select', label, opts.required ? Validators.required : undefined)
+  }
+
+  override get transformedValue() {
+    return this.value?.trim()
   }
 }

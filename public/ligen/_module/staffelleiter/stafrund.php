@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Rundmail
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -25,7 +25,7 @@
     {
         // Spielfestsetzung
         if ($_POST['runde']) {
-            SED_TryQuery("UPDATE paarungen SET festgelegt=1 WHERE staffel=? AND runde=? AND erg1 IS NOT NULL", 
+            SED_TryQuery('UPDATE paarungen SET festgelegt=1 WHERE staffel=? AND runde=? AND erg1 IS NOT NULL', 
                 [$staffel, $_POST['runde']]);
         }
 

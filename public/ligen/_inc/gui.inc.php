@@ -1,4 +1,4 @@
-<?
+<?php
 /* Graphische Oberfläche
  *
  * Dieses Skript berechnet, welches Template benutzt werden soll und
@@ -35,7 +35,7 @@
   function SED_GetMenue ()
   {
     global $globals;
-    return SED_Query("SELECT titel, url, neuesfenster, topnavigation FROM turniermenue WHERE turnier=? ORDER BY sortid", [$globals['tid']])->fetchAllAssociative();
+    return SED_Query('SELECT titel, url, neuesfenster, topnavigation FROM turniermenue WHERE turnier=? ORDER BY sortid', [$globals['tid']])->fetchAllAssociative();
   }
 
   // Wählt eine Option bei Selectstrings aus

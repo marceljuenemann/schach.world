@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Eystruper SK', url: '?mannschaft=1593', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=562&r=1#p1593x1543', title: 'gegen SK Wennigsen', text: 6½ }]
+    - [{ url: '?staffel=562&r=3#p1593x1434', title: 'gegen Barsinghausen 2', text: '5' }]
+    - [{ url: '?staffel=562&r=6#p1593x1608', title: 'gegen WB Eilenriede 4', text: 5½ }]
+    - [{ url: '?staffel=562&r=4#p1593x1556', title: 'gegen SK Neustadt 2', text: 5½ }]
+    - [{ url: '?staffel=562&r=2#p1593x1651', title: 'gegen SF Mühlenberg', text: '5' }]
+    - [{ url: '?staffel=562&r=5#p1593x1660', title: 'gegen SF Hannover 4', text: '5' }]
+    - [{ url: '?staffel=562&r=7#p1593x1573', title: 'gegen SK Stolzenau 2', text: 6½ }]
+    - 14
+    - '39'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=1543', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=562&r=1#p1543x1593', title: 'gegen Eystruper SK', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=562&r=7#p1543x1434', title: 'gegen Barsinghausen 2', text: 5½ }]
+    - [{ url: '?staffel=562&r=3#p1543x1608', title: 'gegen WB Eilenriede 4', text: '5' }]
+    - [{ url: '?staffel=562&r=5#p1543x1556', title: 'gegen SK Neustadt 2', text: 5½ }]
+    - [{ url: '?staffel=562&r=6#p1543x1651', title: 'gegen SF Mühlenberg', text: '4' }]
+    - [{ url: '?staffel=562&r=2#p1543x1660', title: 'gegen SF Hannover 4', text: '6' }]
+    - [{ url: '?staffel=562&r=4#p1543x1573', title: 'gegen SK Stolzenau 2', text: '6' }]
+    - 11
+    - 33½
+    - ''
+-
+    - '3.'
+    - { text: 'Barsinghausen 2', url: '?mannschaft=1434', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=562&r=3#p1434x1593', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=562&r=7#p1434x1543', title: 'gegen SK Wennigsen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=562&r=5#p1434x1608', title: 'gegen WB Eilenriede 4', text: '4' }]
+    - [{ url: '?staffel=562&r=2#p1434x1556', title: 'gegen SK Neustadt 2', text: '5' }]
+    - [{ url: '?staffel=562&r=1#p1434x1651', title: 'gegen SF Mühlenberg', text: '5' }]
+    - [{ url: '?staffel=562&r=4#p1434x1660', title: 'gegen SF Hannover 4', text: '7' }]
+    - [{ url: '?staffel=562&r=6#p1434x1573', title: 'gegen SK Stolzenau 2', text: 5½ }]
+    - 9
+    - '32'
+    - ''
+-
+    - '4.'
+    - { text: 'WB Eilenriede 4', url: '?mannschaft=1608', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=562&r=6#p1608x1593', title: 'gegen Eystruper SK', text: 2½ }]
+    - [{ url: '?staffel=562&r=3#p1608x1543', title: 'gegen SK Wennigsen', text: '3' }]
+    - [{ url: '?staffel=562&r=5#p1608x1434', title: 'gegen Barsinghausen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=562&r=1#p1608x1556', title: 'gegen SK Neustadt 2', text: '3' }]
+    - [{ url: '?staffel=562&r=4#p1608x1651', title: 'gegen SF Mühlenberg', text: 4½ }]
+    - [{ url: '?staffel=562&r=7#p1608x1660', title: 'gegen SF Hannover 4', text: '5' }]
+    - [{ url: '?staffel=562&r=2#p1608x1573', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - 7
+    - '27'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Neustadt 2', url: '?mannschaft=1556', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=562&r=4#p1556x1593', title: 'gegen Eystruper SK', text: 2½ }]
+    - [{ url: '?staffel=562&r=5#p1556x1543', title: 'gegen SK Wennigsen', text: 2½ }]
+    - [{ url: '?staffel=562&r=2#p1556x1434', title: 'gegen Barsinghausen 2', text: '3' }]
+    - [{ url: '?staffel=562&r=1#p1556x1608', title: 'gegen WB Eilenriede 4', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=562&r=7#p1556x1651', title: 'gegen SF Mühlenberg', text: 4½ }]
+    - [{ url: '?staffel=562&r=6#p1556x1660', title: 'gegen SF Hannover 4', text: 3½ }]
+    - [{ url: '?staffel=562&r=3#p1556x1573', title: 'gegen SK Stolzenau 2', text: 4½ }]
+    - 6
+    - 25½
+    - ''
+-
+    - '6.'
+    - { text: 'SF Mühlenberg', url: '?mannschaft=1651', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=562&r=2#p1651x1593', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=562&r=6#p1651x1543', title: 'gegen SK Wennigsen', text: '4' }]
+    - [{ url: '?staffel=562&r=1#p1651x1434', title: 'gegen Barsinghausen 2', text: '3' }]
+    - [{ url: '?staffel=562&r=4#p1651x1608', title: 'gegen WB Eilenriede 4', text: 3½ }]
+    - [{ url: '?staffel=562&r=7#p1651x1556', title: 'gegen SK Neustadt 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=562&r=3#p1651x1660', title: 'gegen SF Hannover 4', text: '5' }]
+    - [{ url: '?staffel=562&r=5#p1651x1573', title: 'gegen SK Stolzenau 2', text: 5½ }]
+    - 5
+    - 27½
+    - ''
+-
+    - '7.'
+    - { text: 'SF Hannover 4', url: '?mannschaft=1660', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=562&r=5#p1660x1593', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=562&r=2#p1660x1543', title: 'gegen SK Wennigsen', text: '2' }]
+    - [{ url: '?staffel=562&r=4#p1660x1434', title: 'gegen Barsinghausen 2', text: '1' }]
+    - [{ url: '?staffel=562&r=7#p1660x1608', title: 'gegen WB Eilenriede 4', text: '3' }]
+    - [{ url: '?staffel=562&r=6#p1660x1556', title: 'gegen SK Neustadt 2', text: 4½ }]
+    - [{ url: '?staffel=562&r=3#p1660x1651', title: 'gegen SF Mühlenberg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=562&r=1#p1660x1573', title: 'gegen SK Stolzenau 2', text: '5' }]
+    - 4
+    - 21½
+    - ''
+-
+    - '8.'
+    - { text: 'SK Stolzenau 2', url: '?mannschaft=1573', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=562&r=7#p1573x1593', title: 'gegen Eystruper SK', text: 1½ }]
+    - [{ url: '?staffel=562&r=4#p1573x1543', title: 'gegen SK Wennigsen', text: '2' }]
+    - [{ url: '?staffel=562&r=6#p1573x1434', title: 'gegen Barsinghausen 2', text: 2½ }]
+    - [{ url: '?staffel=562&r=2#p1573x1608', title: 'gegen WB Eilenriede 4', text: '3' }]
+    - [{ url: '?staffel=562&r=3#p1573x1556', title: 'gegen SK Neustadt 2', text: 3½ }]
+    - [{ url: '?staffel=562&r=5#p1573x1651', title: 'gegen SF Mühlenberg', text: 2½ }]
+    - [{ url: '?staffel=562&r=1#p1573x1660', title: 'gegen SF Hannover 4', text: '3' }]
+    - xxx
+    - 0
+    - '18'
+    - ''

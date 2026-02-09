@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte U16', url: '?mannschaft=6970', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1594&r=5#p6970x6966', title: 'gegen Hannover 96 U16', text: '2' }]
+    - [{ url: '?staffel=1594&r=1#p6970x6969', title: 'gegen SK Lehrte U14', text: '3' }]
+    - [{ url: '?staffel=1594&r=2#p6970x6975', title: 'gegen SZ Bemerode U14', text: '4' }]
+    - [{ url: '?staffel=1594&r=3#p6970x6932', title: 'gegen SV Laatzen U14', text: '4' }]
+    - 7
+    - '13'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hannover 96 U16', url: '?mannschaft=6966', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1594&r=5#p6966x6970', title: 'gegen SK Lehrte U16', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1594&r=2#p6966x6969', title: 'gegen SK Lehrte U14', text: '3' }]
+    - [{ url: '?staffel=1594&r=3#p6966x6975', title: 'gegen SZ Bemerode U14', text: '2' }]
+    - [{ url: '?staffel=1594&r=4#p6966x6932', title: 'gegen SV Laatzen U14', text: '4' }]
+    - 6
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Lehrte U14', url: '?mannschaft=6969', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1594&r=1#p6969x6970', title: 'gegen SK Lehrte U16', text: '1' }]
+    - [{ url: '?staffel=1594&r=2#p6969x6966', title: 'gegen Hannover 96 U16', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1594&r=4#p6969x6975', title: 'gegen SZ Bemerode U14', text: '4' }]
+    - [{ url: '?staffel=1594&r=5#p6969x6932', title: 'gegen SV Laatzen U14', text: '2' }]
+    - 3
+    - '8'
+    - ''
+-
+    - '4.'
+    - { text: 'SZ Bemerode U14', url: '?mannschaft=6975', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1594&r=2#p6975x6970', title: 'gegen SK Lehrte U16', text: '0' }]
+    - [{ url: '?staffel=1594&r=3#p6975x6966', title: 'gegen Hannover 96 U16', text: '2' }]
+    - [{ url: '?staffel=1594&r=4#p6975x6969', title: 'gegen SK Lehrte U14', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1594&r=1#p6975x6932', title: 'gegen SV Laatzen U14', text: '3' }]
+    - 3
+    - '5'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Laatzen U14', url: '?mannschaft=6932', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1594&r=3#p6932x6970', title: 'gegen SK Lehrte U16', text: '0' }]
+    - [{ url: '?staffel=1594&r=4#p6932x6966', title: 'gegen Hannover 96 U16', text: '0' }]
+    - [{ url: '?staffel=1594&r=5#p6932x6969', title: 'gegen SK Lehrte U14', text: '2' }]
+    - [{ url: '?staffel=1594&r=1#p6932x6975', title: 'gegen SZ Bemerode U14', text: '1' }]
+    - xxx
+    - 1
+    - '3'
+    - ''

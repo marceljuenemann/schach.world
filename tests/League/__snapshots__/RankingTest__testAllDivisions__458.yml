@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=3847', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=934&r=8#p3847x3874', title: 'gegen SV GW Parensen 2', text: '2' }]
+    - [{ url: '?staffel=934&r=7#p3847x3844', title: 'gegen SK Goslar 2', text: 1½ }]
+    - [{ url: '?staffel=934&r=5#p3847x3905', title: 'gegen Osterode-Südharz 2', text: '3' }]
+    - [{ url: '?staffel=934&r=1#p3847x3901', title: 'gegen Bad Lauterberg 2', text: '3' }]
+    - [{ url: '?staffel=934&r=2#p3847x3845', title: 'gegen SK Goslar 3', text: 2½ }]
+    - [{ url: '?staffel=934&r=3#p3847x3903', title: 'gegen SK Bad Harzburg 3', text: '4' }]
+    - [{ url: '?staffel=934&r=4#p3847x3882', title: 'gegen Hildesheimer SV 5', text: '3' }]
+    - [{ url: '?staffel=934&r=9#p3847x3842', title: 'gegen KSV Rochade GÖ 3', text: '4' }]
+    - [{ url: '?staffel=934&r=6#p3847x3883', title: 'gegen Hildesheimer SV 6', text: 2½ }]
+    - 15
+    - 25½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV GW Parensen 2', url: '?mannschaft=3874', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=934&r=8#p3874x3847', title: 'gegen SC Langelsheim', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=934&r=9#p3874x3844', title: 'gegen SK Goslar 2', text: '3' }]
+    - [{ url: '?staffel=934&r=2#p3874x3905', title: 'gegen Osterode-Südharz 2', text: 1½ }]
+    - [{ url: '?staffel=934&r=5#p3874x3901', title: 'gegen Bad Lauterberg 2', text: '2' }]
+    - [{ url: '?staffel=934&r=3#p3874x3845', title: 'gegen SK Goslar 3', text: '4' }]
+    - [{ url: '?staffel=934&r=1#p3874x3903', title: 'gegen SK Bad Harzburg 3', text: '4' }]
+    - [{ url: '?staffel=934&r=7#p3874x3882', title: 'gegen Hildesheimer SV 5', text: '2' }]
+    - [{ url: '?staffel=934&r=6#p3874x3842', title: 'gegen KSV Rochade GÖ 3', text: '3' }]
+    - [{ url: '?staffel=934&r=4#p3874x3883', title: 'gegen Hildesheimer SV 6', text: '3' }]
+    - 13
+    - 24½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=3844', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=934&r=7#p3844x3847', title: 'gegen SC Langelsheim', text: 2½ }]
+    - [{ url: '?staffel=934&r=9#p3844x3874', title: 'gegen SV GW Parensen 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=934&r=3#p3844x3905', title: 'gegen Osterode-Südharz 2', text: '1' }]
+    - [{ url: '?staffel=934&r=8#p3844x3901', title: 'gegen Bad Lauterberg 2', text: '2' }]
+    - [{ url: '?staffel=934&r=1#p3844x3845', title: 'gegen SK Goslar 3', text: '4' }]
+    - [{ url: '?staffel=934&r=6#p3844x3903', title: 'gegen SK Bad Harzburg 3', text: '4' }]
+    - [{ url: '?staffel=934&r=5#p3844x3882', title: 'gegen Hildesheimer SV 5', text: 3½ }]
+    - [{ url: '?staffel=934&r=4#p3844x3842', title: 'gegen KSV Rochade GÖ 3', text: '3' }]
+    - [{ url: '?staffel=934&r=2#p3844x3883', title: 'gegen Hildesheimer SV 6', text: 2½ }]
+    - 13
+    - 23½
+    - ''
+-
+    - '4.'
+    - { text: 'Osterode-Südharz 2', url: '?mannschaft=3905', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=934&r=5#p3905x3847', title: 'gegen SC Langelsheim', text: '1' }]
+    - [{ url: '?staffel=934&r=2#p3905x3874', title: 'gegen SV GW Parensen 2', text: 2½ }]
+    - [{ url: '?staffel=934&r=3#p3905x3844', title: 'gegen SK Goslar 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=934&r=6#p3905x3901', title: 'gegen Bad Lauterberg 2', text: '2' }]
+    - [{ url: '?staffel=934&r=4#p3905x3845', title: 'gegen SK Goslar 3', text: '2' }]
+    - [{ url: '?staffel=934&r=7#p3905x3903', title: 'gegen SK Bad Harzburg 3', text: '2' }]
+    - [{ url: '?staffel=934&r=9#p3905x3882', title: 'gegen Hildesheimer SV 5', text: 3½ }]
+    - [{ url: '?staffel=934&r=1#p3905x3842', title: 'gegen KSV Rochade GÖ 3', text: '3' }]
+    - [{ url: '?staffel=934&r=8#p3905x3883', title: 'gegen Hildesheimer SV 6', text: '4' }]
+    - 13
+    - '23'
+    - ''
+-
+    - '5.'
+    - { text: 'Bad Lauterberg 2', url: '?mannschaft=3901', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=934&r=1#p3901x3847', title: 'gegen SC Langelsheim', text: '1' }]
+    - [{ url: '?staffel=934&r=5#p3901x3874', title: 'gegen SV GW Parensen 2', text: '2' }]
+    - [{ url: '?staffel=934&r=8#p3901x3844', title: 'gegen SK Goslar 2', text: '2' }]
+    - [{ url: '?staffel=934&r=6#p3901x3905', title: 'gegen Osterode-Südharz 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=934&r=9#p3901x3845', title: 'gegen SK Goslar 3', text: 2½ }]
+    - [{ url: '?staffel=934&r=4#p3901x3903', title: 'gegen SK Bad Harzburg 3', text: '0' }]
+    - [{ url: '?staffel=934&r=2#p3901x3882', title: 'gegen Hildesheimer SV 5', text: 3½ }]
+    - [{ url: '?staffel=934&r=7#p3901x3842', title: 'gegen KSV Rochade GÖ 3', text: '3' }]
+    - [{ url: '?staffel=934&r=3#p3901x3883', title: 'gegen Hildesheimer SV 6', text: '3' }]
+    - 11
+    - '19'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Goslar 3', url: '?mannschaft=3845', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=934&r=2#p3845x3847', title: 'gegen SC Langelsheim', text: 1½ }]
+    - [{ url: '?staffel=934&r=3#p3845x3874', title: 'gegen SV GW Parensen 2', text: '0' }]
+    - [{ url: '?staffel=934&r=1#p3845x3844', title: 'gegen SK Goslar 2', text: '0' }]
+    - [{ url: '?staffel=934&r=4#p3845x3905', title: 'gegen Osterode-Südharz 2', text: '2' }]
+    - [{ url: '?staffel=934&r=9#p3845x3901', title: 'gegen Bad Lauterberg 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=934&r=5#p3845x3903', title: 'gegen SK Bad Harzburg 3', text: '4' }]
+    - [{ url: '?staffel=934&r=6#p3845x3882', title: 'gegen Hildesheimer SV 5', text: 2½ }]
+    - [{ url: '?staffel=934&r=8#p3845x3842', title: 'gegen KSV Rochade GÖ 3', text: '2' }]
+    - [{ url: '?staffel=934&r=7#p3845x3883', title: 'gegen Hildesheimer SV 6', text: '3' }]
+    - 8
+    - 16½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Bad Harzburg 3', url: '?mannschaft=3903', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=934&r=3#p3903x3847', title: 'gegen SC Langelsheim', text: '0' }]
+    - [{ url: '?staffel=934&r=1#p3903x3874', title: 'gegen SV GW Parensen 2', text: '0' }]
+    - [{ url: '?staffel=934&r=6#p3903x3844', title: 'gegen SK Goslar 2', text: '0' }]
+    - [{ url: '?staffel=934&r=7#p3903x3905', title: 'gegen Osterode-Südharz 2', text: '2' }]
+    - [{ url: '?staffel=934&r=4#p3903x3901', title: 'gegen Bad Lauterberg 2', text: '4' }]
+    - [{ url: '?staffel=934&r=5#p3903x3845', title: 'gegen SK Goslar 3', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=934&r=8#p3903x3882', title: 'gegen Hildesheimer SV 5', text: '2' }]
+    - [{ url: '?staffel=934&r=2#p3903x3842', title: 'gegen KSV Rochade GÖ 3', text: '3' }]
+    - [{ url: '?staffel=934&r=9#p3903x3883', title: 'gegen Hildesheimer SV 6', text: '4' }]
+    - 8
+    - '15'
+    - ''
+-
+    - '8.'
+    - { text: 'Hildesheimer SV 5', url: '?mannschaft=3882', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=934&r=4#p3882x3847', title: 'gegen SC Langelsheim', text: '1' }]
+    - [{ url: '?staffel=934&r=7#p3882x3874', title: 'gegen SV GW Parensen 2', text: '2' }]
+    - [{ url: '?staffel=934&r=5#p3882x3844', title: 'gegen SK Goslar 2', text: ½ }]
+    - [{ url: '?staffel=934&r=9#p3882x3905', title: 'gegen Osterode-Südharz 2', text: ½ }]
+    - [{ url: '?staffel=934&r=2#p3882x3901', title: 'gegen Bad Lauterberg 2', text: ½ }]
+    - [{ url: '?staffel=934&r=6#p3882x3845', title: 'gegen SK Goslar 3', text: 1½ }]
+    - [{ url: '?staffel=934&r=8#p3882x3903', title: 'gegen SK Bad Harzburg 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=934&r=3#p3882x3842', title: 'gegen KSV Rochade GÖ 3', text: '2' }]
+    - [{ url: '?staffel=934&r=1#p3882x3883', title: 'gegen Hildesheimer SV 6', text: '3' }]
+    - 5
+    - '13'
+    - ''
+-
+    - '9.'
+    - { text: 'KSV Rochade GÖ 3', url: '?mannschaft=3842', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=934&r=9#p3842x3847', title: 'gegen SC Langelsheim', text: '0' }]
+    - [{ url: '?staffel=934&r=6#p3842x3874', title: 'gegen SV GW Parensen 2', text: '1' }]
+    - [{ url: '?staffel=934&r=4#p3842x3844', title: 'gegen SK Goslar 2', text: '1' }]
+    - [{ url: '?staffel=934&r=1#p3842x3905', title: 'gegen Osterode-Südharz 2', text: '1' }]
+    - [{ url: '?staffel=934&r=7#p3842x3901', title: 'gegen Bad Lauterberg 2', text: '1' }]
+    - [{ url: '?staffel=934&r=8#p3842x3845', title: 'gegen SK Goslar 3', text: '2' }]
+    - [{ url: '?staffel=934&r=2#p3842x3903', title: 'gegen SK Bad Harzburg 3', text: '1' }]
+    - [{ url: '?staffel=934&r=3#p3842x3882', title: 'gegen Hildesheimer SV 5', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=934&r=5#p3842x3883', title: 'gegen Hildesheimer SV 6', text: '3' }]
+    - 4
+    - '12'
+    - ''
+-
+    - '10.'
+    - { text: 'Hildesheimer SV 6', url: '?mannschaft=3883', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=934&r=6#p3883x3847', title: 'gegen SC Langelsheim', text: 1½ }]
+    - [{ url: '?staffel=934&r=4#p3883x3874', title: 'gegen SV GW Parensen 2', text: '1' }]
+    - [{ url: '?staffel=934&r=2#p3883x3844', title: 'gegen SK Goslar 2', text: 1½ }]
+    - [{ url: '?staffel=934&r=8#p3883x3905', title: 'gegen Osterode-Südharz 2', text: '0' }]
+    - [{ url: '?staffel=934&r=3#p3883x3901', title: 'gegen Bad Lauterberg 2', text: '1' }]
+    - [{ url: '?staffel=934&r=7#p3883x3845', title: 'gegen SK Goslar 3', text: '1' }]
+    - [{ url: '?staffel=934&r=9#p3883x3903', title: 'gegen SK Bad Harzburg 3', text: '0' }]
+    - [{ url: '?staffel=934&r=1#p3883x3882', title: 'gegen Hildesheimer SV 5', text: '1' }]
+    - [{ url: '?staffel=934&r=5#p3883x3842', title: 'gegen KSV Rochade GÖ 3', text: '1' }]
+    - xxx
+    - 0
+    - '8'
+    - ''

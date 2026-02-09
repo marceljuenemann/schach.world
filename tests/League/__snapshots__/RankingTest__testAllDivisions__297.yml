@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF Hannover', url: '?mannschaft=3132', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=735&r=3#p3132x3227', title: 'gegen TuS Wunstorf', text: 1½ }]
+    - [{ url: '?staffel=735&r=5#p3132x3181', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=735&r=2#p3132x3228', title: 'gegen SK Lehrte 4', text: '4' }]
+    - [{ url: '?staffel=735&r=1#p3132x3226', title: 'gegen SF Hannover 2', text: '4' }]
+    - [{ url: '?staffel=735&r=4#p3132x3233', title: 'gegen Garbsen/Marienw', text: '3' }]
+    - 8
+    - '16'
+    - ''
+-
+    - '2.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=3227', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=735&r=3#p3227x3132', title: 'gegen SF Hannover', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=735&r=4#p3227x3181', title: 'gegen SK Rinteln', text: 1½ }]
+    - [{ url: '?staffel=735&r=1#p3227x3228', title: 'gegen SK Lehrte 4', text: 2½ }]
+    - [{ url: '?staffel=735&r=5#p3227x3226', title: 'gegen SF Hannover 2', text: '3' }]
+    - [{ url: '?staffel=735&r=2#p3227x3233', title: 'gegen Garbsen/Marienw', text: 3½ }]
+    - 8
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Rinteln', url: '?mannschaft=3181', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=735&r=5#p3181x3132', title: 'gegen SF Hannover', text: ½ }]
+    - [{ url: '?staffel=735&r=4#p3181x3227', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=735&r=3#p3181x3228', title: 'gegen SK Lehrte 4', text: '1' }]
+    - [{ url: '?staffel=735&r=2#p3181x3226', title: 'gegen SF Hannover 2', text: '4' }]
+    - [{ url: '?staffel=735&r=1#p3181x3233', title: 'gegen Garbsen/Marienw', text: '4' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=3228', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=735&r=2#p3228x3132', title: 'gegen SF Hannover', text: '0' }]
+    - [{ url: '?staffel=735&r=1#p3228x3227', title: 'gegen TuS Wunstorf', text: 1½ }]
+    - [{ url: '?staffel=735&r=3#p3228x3181', title: 'gegen SK Rinteln', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=735&r=4#p3228x3226', title: 'gegen SF Hannover 2', text: '1' }]
+    - [{ url: '?staffel=735&r=5#p3228x3233', title: 'gegen Garbsen/Marienw', text: 3½ }]
+    - 4
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'SF Hannover 2', url: '?mannschaft=3226', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=735&r=1#p3226x3132', title: 'gegen SF Hannover', text: '0' }]
+    - [{ url: '?staffel=735&r=5#p3226x3227', title: 'gegen TuS Wunstorf', text: '1' }]
+    - [{ url: '?staffel=735&r=2#p3226x3181', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=735&r=4#p3226x3228', title: 'gegen SK Lehrte 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=735&r=3#p3226x3233', title: 'gegen Garbsen/Marienw', text: '2' }]
+    - 3
+    - '6'
+    - ''
+-
+    - '6.'
+    - { text: Garbsen/Marienw, url: '?mannschaft=3233', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=735&r=4#p3233x3132', title: 'gegen SF Hannover', text: '1' }]
+    - [{ url: '?staffel=735&r=2#p3233x3227', title: 'gegen TuS Wunstorf', text: ½ }]
+    - [{ url: '?staffel=735&r=1#p3233x3181', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=735&r=5#p3233x3228', title: 'gegen SK Lehrte 4', text: ½ }]
+    - [{ url: '?staffel=735&r=3#p3233x3226', title: 'gegen SF Hannover 2', text: '2' }]
+    - xxx
+    - 1
+    - '4'
+    - ''

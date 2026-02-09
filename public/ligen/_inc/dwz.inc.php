@@ -1,4 +1,4 @@
-<?
+<?php
 /* DWZ Bibliothek
  * 
  * Diese Biblithek stellt Funktionen zur DWZ-Berechnung zur Verfügung.

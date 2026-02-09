@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=1285', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=513&r=3#p1285x1280', title: 'gegen PSC Hannover', text: 1½ }]
+    - [{ url: '?staffel=513&r=1#p1285x1276', title: 'gegen SV Bückeburg', text: '3' }]
+    - [{ url: '?staffel=513&r=2#p1285x1275', title: 'gegen Laatzen Gleidin', text: '4' }]
+    - [{ url: '?staffel=513&r=4#p1285x1278', title: 'gegen Uetze-Hänigsen', text: 2½ }]
+    - [{ url: '?staffel=513&r=5#p1285x1277', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=513&r=1#p1285x1286', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=513&r=4#p1285x1284', title: 'gegen Freib. Wedemark', text: '4' }]
+    - [{ url: '?staffel=513&r=2#p1285x1279', title: 'gegen SG Eldagsen/BM', text: '3' }]
+    - [{ url: '?staffel=513&r=3#p1285x1281', title: 'gegen PSC Hannover 2', text: '4' }]
+    - 16
+    - '29'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'PSC Hannover', url: '?mannschaft=1280', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=513&r=3#p1280x1285', title: 'gegen SK Lehrte', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=513&r=4#p1280x1276', title: 'gegen SV Bückeburg', text: 2½ }]
+    - [{ url: '?staffel=513&r=5#p1280x1275', title: 'gegen Laatzen Gleidin', text: 3½ }]
+    - [{ url: '?staffel=513&r=2#p1280x1278', title: 'gegen Uetze-Hänigsen', text: 1½ }]
+    - [{ url: '?staffel=513&r=3#p1280x1277', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=513&r=4#p1280x1286', title: 'gegen SV Bückeburg 2', text: '4' }]
+    - [{ url: '?staffel=513&r=2#p1280x1284', title: 'gegen Freib. Wedemark', text: '3' }]
+    - [{ url: '?staffel=513&r=5#p1280x1279', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=513&r=1#p1280x1281', title: 'gegen PSC Hannover 2', text: '3' }]
+    - 16
+    - '27'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=1276', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=513&r=1#p1276x1285', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=513&r=4#p1276x1280', title: 'gegen PSC Hannover', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=513&r=3#p1276x1275', title: 'gegen Laatzen Gleidin', text: '3' }]
+    - [{ url: '?staffel=513&r=5#p1276x1278', title: 'gegen Uetze-Hänigsen', text: '4' }]
+    - [{ url: '?staffel=513&r=1#p1276x1277', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=513&r=2#p1276x1286', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=513&r=5#p1276x1284', title: 'gegen Freib. Wedemark', text: '4' }]
+    - [{ url: '?staffel=513&r=3#p1276x1279', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=513&r=4#p1276x1281', title: 'gegen PSC Hannover 2', text: '3' }]
+    - 13
+    - 25½
+    - ''
+-
+    - '4.'
+    - { text: 'Laatzen Gleidin', url: '?mannschaft=1275', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=513&r=2#p1275x1285', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=513&r=5#p1275x1280', title: 'gegen PSC Hannover', text: ½ }]
+    - [{ url: '?staffel=513&r=3#p1275x1276', title: 'gegen SV Bückeburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=513&r=1#p1275x1278', title: 'gegen Uetze-Hänigsen', text: 2½ }]
+    - [{ url: '?staffel=513&r=2#p1275x1277', title: 'gegen SK Ricklingen', text: 2½ }]
+    - [{ url: '?staffel=513&r=3#p1275x1286', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=513&r=1#p1275x1284', title: 'gegen Freib. Wedemark', text: '4' }]
+    - [{ url: '?staffel=513&r=4#p1275x1279', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=513&r=5#p1275x1281', title: 'gegen PSC Hannover 2', text: '4' }]
+    - 12
+    - 21½
+    - ''
+-
+    - '5.'
+    - { text: Uetze-Hänigsen, url: '?mannschaft=1278', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=513&r=4#p1278x1285', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=513&r=2#p1278x1280', title: 'gegen PSC Hannover', text: 2½ }]
+    - [{ url: '?staffel=513&r=5#p1278x1276', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=513&r=1#p1278x1275', title: 'gegen Laatzen Gleidin', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=513&r=4#p1278x1277', title: 'gegen SK Ricklingen', text: '2' }]
+    - [{ url: '?staffel=513&r=5#p1278x1286', title: 'gegen SV Bückeburg 2', text: '0' }]
+    - [{ url: '?staffel=513&r=3#p1278x1284', title: 'gegen Freib. Wedemark', text: 3½ }]
+    - [{ url: '?staffel=513&r=1#p1278x1279', title: 'gegen SG Eldagsen/BM', text: '3' }]
+    - [{ url: '?staffel=513&r=2#p1278x1281', title: 'gegen PSC Hannover 2', text: '4' }]
+    - 9
+    - '18'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=1277', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=513&r=5#p1277x1285', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=513&r=3#p1277x1280', title: 'gegen PSC Hannover', text: '1' }]
+    - [{ url: '?staffel=513&r=1#p1277x1276', title: 'gegen SV Bückeburg', text: '2' }]
+    - [{ url: '?staffel=513&r=2#p1277x1275', title: 'gegen Laatzen Gleidin', text: 1½ }]
+    - [{ url: '?staffel=513&r=4#p1277x1278', title: 'gegen Uetze-Hänigsen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=513&r=1#p1277x1286', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=513&r=4#p1277x1284', title: 'gegen Freib. Wedemark', text: '4' }]
+    - [{ url: '?staffel=513&r=2#p1277x1279', title: 'gegen SG Eldagsen/BM', text: 1½ }]
+    - [{ url: '?staffel=513&r=3#p1277x1281', title: 'gegen PSC Hannover 2', text: 3½ }]
+    - 8
+    - 19½
+    - ''
+-
+    - '7.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=1286', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=513&r=1#p1286x1285', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=513&r=4#p1286x1280', title: 'gegen PSC Hannover', text: '0' }]
+    - [{ url: '?staffel=513&r=2#p1286x1276', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=513&r=3#p1286x1275', title: 'gegen Laatzen Gleidin', text: '1' }]
+    - [{ url: '?staffel=513&r=5#p1286x1278', title: 'gegen Uetze-Hänigsen', text: '4' }]
+    - [{ url: '?staffel=513&r=1#p1286x1277', title: 'gegen SK Ricklingen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=513&r=5#p1286x1284', title: 'gegen Freib. Wedemark', text: '3' }]
+    - [{ url: '?staffel=513&r=3#p1286x1279', title: 'gegen SG Eldagsen/BM', text: 2½ }]
+    - [{ url: '?staffel=513&r=4#p1286x1281', title: 'gegen PSC Hannover 2', text: '0' }]
+    - 6
+    - 12½
+    - ''
+-
+    - '8.'
+    - { text: 'Freib. Wedemark', url: '?mannschaft=1284', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=513&r=4#p1284x1285', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=513&r=2#p1284x1280', title: 'gegen PSC Hannover', text: '1' }]
+    - [{ url: '?staffel=513&r=5#p1284x1276', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=513&r=1#p1284x1275', title: 'gegen Laatzen Gleidin', text: '0' }]
+    - [{ url: '?staffel=513&r=3#p1284x1278', title: 'gegen Uetze-Hänigsen', text: ½ }]
+    - [{ url: '?staffel=513&r=4#p1284x1277', title: 'gegen SK Ricklingen', text: '0' }]
+    - [{ url: '?staffel=513&r=5#p1284x1286', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=513&r=1#p1284x1279', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=513&r=2#p1284x1281', title: 'gegen PSC Hannover 2', text: '4' }]
+    - 4
+    - 10½
+    - ''
+-
+    - '9.'
+    - { text: 'SG Eldagsen/BM', url: '?mannschaft=1279', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=513&r=2#p1279x1285', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=513&r=5#p1279x1280', title: 'gegen PSC Hannover', text: '0' }]
+    - [{ url: '?staffel=513&r=3#p1279x1276', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=513&r=4#p1279x1275', title: 'gegen Laatzen Gleidin', text: '0' }]
+    - [{ url: '?staffel=513&r=1#p1279x1278', title: 'gegen Uetze-Hänigsen', text: '1' }]
+    - [{ url: '?staffel=513&r=2#p1279x1277', title: 'gegen SK Ricklingen', text: 2½ }]
+    - [{ url: '?staffel=513&r=3#p1279x1286', title: 'gegen SV Bückeburg 2', text: 1½ }]
+    - [{ url: '?staffel=513&r=1#p1279x1284', title: 'gegen Freib. Wedemark', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=513&r=5#p1279x1281', title: 'gegen PSC Hannover 2', text: '2' }]
+    - 3
+    - '8'
+    - ''
+-
+    - '10.'
+    - { text: 'PSC Hannover 2', url: '?mannschaft=1281', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=513&r=3#p1281x1285', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=513&r=1#p1281x1280', title: 'gegen PSC Hannover', text: '0' }]
+    - [{ url: '?staffel=513&r=4#p1281x1276', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=513&r=5#p1281x1275', title: 'gegen Laatzen Gleidin', text: '0' }]
+    - [{ url: '?staffel=513&r=2#p1281x1278', title: 'gegen Uetze-Hänigsen', text: '0' }]
+    - [{ url: '?staffel=513&r=3#p1281x1277', title: 'gegen SK Ricklingen', text: ½ }]
+    - [{ url: '?staffel=513&r=4#p1281x1286', title: 'gegen SV Bückeburg 2', text: '3' }]
+    - [{ url: '?staffel=513&r=2#p1281x1284', title: 'gegen Freib. Wedemark', text: '0' }]
+    - [{ url: '?staffel=513&r=5#p1281x1279', title: 'gegen SG Eldagsen/BM', text: '2' }]
+    - xxx
+    - 3
+    - 5½
+    - ''

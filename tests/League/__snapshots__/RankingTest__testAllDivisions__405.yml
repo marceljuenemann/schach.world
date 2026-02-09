@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Rinteln', url: '?mannschaft=4070', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=860&r=8#p4070x4088', title: 'gegen HSK Lister Turm 2', text: 4½ }]
+    - [{ url: '?staffel=860&r=3#p4070x3932', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=860&r=1#p4070x3869', title: 'gegen Barsinghausen', text: 3½ }]
+    - [{ url: '?staffel=860&r=5#p4070x4042', title: 'gegen ST Langenhagen', text: '5' }]
+    - [{ url: '?staffel=860&r=6#p4070x4072', title: 'gegen SF Hannover 2', text: '8' }]
+    - [{ url: '?staffel=860&r=9#p4070x3919', title: 'gegen Uetze-Hänigsen', text: 4½ }]
+    - [{ url: '?staffel=860&r=4#p4070x4018', title: 'gegen SD Isernhagen', text: 4½ }]
+    - [{ url: '?staffel=860&r=2#p4070x4022', title: 'gegen SK Lehrte 1919 eV 2', text: 4½ }]
+    - [{ url: '?staffel=860&r=7#p4070x3896', title: 'gegen SV Berenbostel 2', text: 6½ }]
+    - 15
+    - '45'
+    - ''
+-
+    - '2.'
+    - { text: 'HSK Lister Turm 2', url: '?mannschaft=4088', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=860&r=8#p4088x4070', title: 'gegen SK Rinteln', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=860&r=1#p4088x3932', title: 'gegen SV Laatzen', text: '5' }]
+    - [{ url: '?staffel=860&r=6#p4088x3869', title: 'gegen Barsinghausen', text: '6' }]
+    - [{ url: '?staffel=860&r=3#p4088x4042', title: 'gegen ST Langenhagen', text: '4' }]
+    - [{ url: '?staffel=860&r=4#p4088x4072', title: 'gegen SF Hannover 2', text: '4' }]
+    - [{ url: '?staffel=860&r=7#p4088x3919', title: 'gegen Uetze-Hänigsen', text: '6' }]
+    - [{ url: '?staffel=860&r=2#p4088x4018', title: 'gegen SD Isernhagen', text: 4½ }]
+    - [{ url: '?staffel=860&r=9#p4088x4022', title: 'gegen SK Lehrte 1919 eV 2', text: 7½ }]
+    - [{ url: '?staffel=860&r=5#p4088x3896', title: 'gegen SV Berenbostel 2', text: '5' }]
+    - 14
+    - 45½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Laatzen', url: '?mannschaft=3932', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=860&r=3#p3932x4070', title: 'gegen SK Rinteln', text: '4' }]
+    - [{ url: '?staffel=860&r=1#p3932x4088', title: 'gegen HSK Lister Turm 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=860&r=5#p3932x3869', title: 'gegen Barsinghausen', text: '7' }]
+    - [{ url: '?staffel=860&r=7#p3932x4042', title: 'gegen ST Langenhagen', text: 4½ }]
+    - [{ url: '?staffel=860&r=8#p3932x4072', title: 'gegen SF Hannover 2', text: '5' }]
+    - [{ url: '?staffel=860&r=2#p3932x3919', title: 'gegen Uetze-Hänigsen', text: '5' }]
+    - [{ url: '?staffel=860&r=6#p3932x4018', title: 'gegen SD Isernhagen', text: 4½ }]
+    - [{ url: '?staffel=860&r=4#p3932x4022', title: 'gegen SK Lehrte 1919 eV 2', text: 3½ }]
+    - [{ url: '?staffel=860&r=9#p3932x3896', title: 'gegen SV Berenbostel 2', text: '7' }]
+    - 13
+    - 43½
+    - ''
+-
+    - '4.'
+    - { text: Barsinghausen, url: '?mannschaft=3869', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=860&r=1#p3869x4070', title: 'gegen SK Rinteln', text: 4½ }]
+    - [{ url: '?staffel=860&r=6#p3869x4088', title: 'gegen HSK Lister Turm 2', text: '2' }]
+    - [{ url: '?staffel=860&r=5#p3869x3932', title: 'gegen SV Laatzen', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=860&r=9#p3869x4042', title: 'gegen ST Langenhagen', text: 5½ }]
+    - [{ url: '?staffel=860&r=2#p3869x4072', title: 'gegen SF Hannover 2', text: '3' }]
+    - [{ url: '?staffel=860&r=8#p3869x3919', title: 'gegen Uetze-Hänigsen', text: '4' }]
+    - [{ url: '?staffel=860&r=7#p3869x4018', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=860&r=3#p3869x4022', title: 'gegen SK Lehrte 1919 eV 2', text: '5' }]
+    - [{ url: '?staffel=860&r=4#p3869x3896', title: 'gegen SV Berenbostel 2', text: 6½ }]
+    - 10
+    - 35½
+    - ''
+-
+    - '5.'
+    - { text: 'ST Langenhagen', url: '?mannschaft=4042', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=860&r=5#p4042x4070', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=860&r=3#p4042x4088', title: 'gegen HSK Lister Turm 2', text: '4' }]
+    - [{ url: '?staffel=860&r=7#p4042x3932', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=860&r=9#p4042x3869', title: 'gegen Barsinghausen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=860&r=1#p4042x4072', title: 'gegen SF Hannover 2', text: 4½ }]
+    - [{ url: '?staffel=860&r=4#p4042x3919', title: 'gegen Uetze-Hänigsen', text: '6' }]
+    - [{ url: '?staffel=860&r=8#p4042x4018', title: 'gegen SD Isernhagen', text: 1½ }]
+    - [{ url: '?staffel=860&r=6#p4042x4022', title: 'gegen SK Lehrte 1919 eV 2', text: '4' }]
+    - [{ url: '?staffel=860&r=2#p4042x3896', title: 'gegen SV Berenbostel 2', text: 6½ }]
+    - 8
+    - 35½
+    - ''
+-
+    - '6.'
+    - { text: 'SF Hannover 2', url: '?mannschaft=4072', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=860&r=6#p4072x4070', title: 'gegen SK Rinteln', text: '0' }]
+    - [{ url: '?staffel=860&r=4#p4072x4088', title: 'gegen HSK Lister Turm 2', text: '4' }]
+    - [{ url: '?staffel=860&r=8#p4072x3932', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=860&r=2#p4072x3869', title: 'gegen Barsinghausen', text: '5' }]
+    - [{ url: '?staffel=860&r=1#p4072x4042', title: 'gegen ST Langenhagen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=860&r=5#p4072x3919', title: 'gegen Uetze-Hänigsen', text: 2½ }]
+    - [{ url: '?staffel=860&r=9#p4072x4018', title: 'gegen SD Isernhagen', text: 4½ }]
+    - [{ url: '?staffel=860&r=7#p4072x4022', title: 'gegen SK Lehrte 1919 eV 2', text: '4' }]
+    - [{ url: '?staffel=860&r=3#p4072x3896', title: 'gegen SV Berenbostel 2', text: 5½ }]
+    - 8
+    - '32'
+    - ''
+-
+    - '7.'
+    - { text: Uetze-Hänigsen, url: '?mannschaft=3919', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=860&r=9#p3919x4070', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=860&r=7#p3919x4088', title: 'gegen HSK Lister Turm 2', text: '2' }]
+    - [{ url: '?staffel=860&r=2#p3919x3932', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=860&r=8#p3919x3869', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=860&r=4#p3919x4042', title: 'gegen ST Langenhagen', text: '2' }]
+    - [{ url: '?staffel=860&r=5#p3919x4072', title: 'gegen SF Hannover 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=860&r=3#p3919x4018', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=860&r=1#p3919x4022', title: 'gegen SK Lehrte 1919 eV 2', text: 4½ }]
+    - [{ url: '?staffel=860&r=6#p3919x3896', title: 'gegen SV Berenbostel 2', text: '5' }]
+    - 7
+    - 32½
+    - ''
+-
+    - '8.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=4018', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=860&r=4#p4018x4070', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=860&r=2#p4018x4088', title: 'gegen HSK Lister Turm 2', text: 3½ }]
+    - [{ url: '?staffel=860&r=6#p4018x3932', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=860&r=7#p4018x3869', title: 'gegen Barsinghausen', text: '4' }]
+    - [{ url: '?staffel=860&r=8#p4018x4042', title: 'gegen ST Langenhagen', text: 6½ }]
+    - [{ url: '?staffel=860&r=9#p4018x4072', title: 'gegen SF Hannover 2', text: 3½ }]
+    - [{ url: '?staffel=860&r=3#p4018x3919', title: 'gegen Uetze-Hänigsen', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=860&r=5#p4018x4022', title: 'gegen SK Lehrte 1919 eV 2', text: 3½ }]
+    - [{ url: '?staffel=860&r=1#p4018x3896', title: 'gegen SV Berenbostel 2', text: '4' }]
+    - 6
+    - '37'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Lehrte 1919 eV 2', url: '?mannschaft=4022', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=860&r=2#p4022x4070', title: 'gegen SK Rinteln', text: 3½ }]
+    - [{ url: '?staffel=860&r=9#p4022x4088', title: 'gegen HSK Lister Turm 2', text: ½ }]
+    - [{ url: '?staffel=860&r=4#p4022x3932', title: 'gegen SV Laatzen', text: 4½ }]
+    - [{ url: '?staffel=860&r=3#p4022x3869', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=860&r=6#p4022x4042', title: 'gegen ST Langenhagen', text: '4' }]
+    - [{ url: '?staffel=860&r=7#p4022x4072', title: 'gegen SF Hannover 2', text: '4' }]
+    - [{ url: '?staffel=860&r=1#p4022x3919', title: 'gegen Uetze-Hänigsen', text: 3½ }]
+    - [{ url: '?staffel=860&r=5#p4022x4018', title: 'gegen SD Isernhagen', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=860&r=8#p4022x3896', title: 'gegen SV Berenbostel 2', text: 3½ }]
+    - 6
+    - '31'
+    - ''
+-
+    - '10.'
+    - { text: 'SV Berenbostel 2', url: '?mannschaft=3896', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=860&r=7#p3896x4070', title: 'gegen SK Rinteln', text: 1½ }]
+    - [{ url: '?staffel=860&r=5#p3896x4088', title: 'gegen HSK Lister Turm 2', text: '3' }]
+    - [{ url: '?staffel=860&r=9#p3896x3932', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=860&r=4#p3896x3869', title: 'gegen Barsinghausen', text: 1½ }]
+    - [{ url: '?staffel=860&r=2#p3896x4042', title: 'gegen ST Langenhagen', text: 1½ }]
+    - [{ url: '?staffel=860&r=3#p3896x4072', title: 'gegen SF Hannover 2', text: 2½ }]
+    - [{ url: '?staffel=860&r=6#p3896x3919', title: 'gegen Uetze-Hänigsen', text: '3' }]
+    - [{ url: '?staffel=860&r=1#p3896x4018', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=860&r=8#p3896x4022', title: 'gegen SK Lehrte 1919 eV 2', text: 4½ }]
+    - xxx
+    - 3
+    - 22½
+    - ''

@@ -1,4 +1,4 @@
-<?
+<?php
 /* DWZ Update
  *
  * Versucht zu Spielern ohne ZPS-Angabe an Hand des Namens solch eine
@@ -27,7 +27,7 @@
     echo "Aktuelle Saison ist: $saison<br />";
 
     // Alle betroffenen Mannschaften finden, die noch ein Spiel ohne Ergebnis haben.
-    $teams = SED_Query("
+    $teams = SED_Query('
         SELECT DISTINCT m.id, m.zps
         FROM mannschaften m
         INNER JOIN turniere t ON t.id=m.turnier
@@ -35,7 +35,7 @@
             SELECT 1
             FROM paarungen p
             WHERE p.erg1 IS NULL AND p.erg2 IS NULL
-             AND (p.mannschaft1=m.id OR p.mannschaft2=m.id))",
+             AND (p.mannschaft1=m.id OR p.mannschaft2=m.id))',
         [$saison]
     )->fetchAllAssociative();
     echo "Anzahl betroffener Mannschaften: ".count($teams)."<br />";
@@ -43,7 +43,7 @@
     // Spielern ohne ZPS eine ZPS geben
     foreach($teams as $team){
         // Spieler ohne ZPS suchen
-        $spieler = SED_Query("SELECT * FROM spieler s WHERE s.mannschaft=? AND (LENGTH(s.zps)<7 OR s.zps IS NULL)", [$team['id']])->fetchAllAssociative();
+        $spieler = SED_Query('SELECT * FROM spieler s WHERE s.mannschaft=? AND (LENGTH(s.zps)<7 OR s.zps IS NULL)', [$team['id']])->fetchAllAssociative();
 
         // Anzahl der Spieler ausgeben
         if ( $count = count($spieler) ){

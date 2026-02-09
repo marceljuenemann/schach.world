@@ -1,4 +1,4 @@
-<?
+<?php
 /* Backend zur Spieltag-Anzeige
  * 
  * Dieses Skript berechnet alle Daten, die bei der Spieltag-Ansicht
@@ -105,7 +105,7 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
     else
     {
         // Informationen und Einstellungen über die Staffel abfragen
-        $infos = SED_Row("SELECT * FROM viewStaffeln WHERE id=?", [$staffel]);
+        $infos = SED_Row('SELECT * FROM viewStaffeln WHERE id=?', [$staffel]);
         if ( !is_array ( $infos ) ) return false;
 
         // Die ersten Daten setzen
@@ -121,7 +121,7 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
         // Spieltag-Bemerkung abfragen
         $result ['bemerkung'] = "";
         $result ['timestamp'] = 0;
-        $temp = SED_TryQuery("SELECT text, UNIX_TIMESTAMP(timestamp) ts FROM bemerkungen WHERE staffel=? AND runde=? LIMIT 1", [$staffel, $runde]);
+        $temp = SED_TryQuery('SELECT text, UNIX_TIMESTAMP(timestamp) ts FROM bemerkungen WHERE staffel=? AND runde=? LIMIT 1', [$staffel, $runde]);
         if ($temp && $tmp = $temp->fetchAssociative()) {
             $result ['bemerkung'] = $tmp ['text'];
             $result ['timestamp'] = $tmp ['ts'];
@@ -129,7 +129,7 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
 
         // Paarungen
         $i = 0;
-        $temp = SED_TryQuery("SELECT p.id, p.mannschaft1 as mid1, p.mannschaft2 as mid2, p.erg1, p.erg2, p.bemerkung, DATE_FORMAT(vt.termin,'%d.%m.%Y') as datum, UNIX_TIMESTAMP(p.timestamp) timestamp, vt.ausrichter as ausrichterId FROM paarungen as p INNER JOIN viewTermine vt ON p.id=vt.paarung WHERE p.staffel=? AND p.runde=?", [$staffel, $runde]);
+        $temp = SED_TryQuery('SELECT p.id, p.mannschaft1 as mid1, p.mannschaft2 as mid2, p.erg1, p.erg2, p.bemerkung, DATE_FORMAT(vt.termin,\'%d.%m.%Y\') as datum, UNIX_TIMESTAMP(p.timestamp) timestamp, vt.ausrichter as ausrichterId FROM paarungen as p INNER JOIN viewTermine vt ON p.id=vt.paarung WHERE p.staffel=? AND p.runde=?', [$staffel, $runde]);
         while ( $result ['paarungen'][$i] = $temp->fetchAssociative() )
         {
             // Mannschaft und Ergebnisse
@@ -150,7 +150,7 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
             // Spielerpaarungen
             $j = 0;
             $kampflos = 1;
-            $temp2 = SED_TryQuery("SELECT s1.nachname as s1nachname, s1.vorname as s1vorname, TRIM(s1.titel) as s1titel, s1.brettnr as s1pass, s2.nachname as s2nachname, s2.vorname as s2vorname, s2.titel as s2titel, s2.brettnr as s2pass, sp.spieler1 as sid1, sp.spieler2 as sid2, IF(s1.dwz=0,'',s1.dwz) as dwz1, IF(s2.dwz=0,'',s2.dwz) as dwz2, sp.ergebnis1 as erg1, sp.ergebnis2 as erg2 FROM spielerpaarungen as sp LEFT JOIN spieler as s1 ON s1.id=sp.spieler1 LEFT JOIN spieler as s2 ON s2.id=sp.spieler2 WHERE paarung=? ORDER BY brett", [$result ['paarungen'][$i]['id']]);
+                  $temp2 = SED_TryQuery('SELECT s1.nachname as s1nachname, s1.vorname as s1vorname, TRIM(s1.titel) as s1titel, s1.brettnr as s1pass, s2.nachname as s2nachname, s2.vorname as s2vorname, s2.titel as s2titel, s2.brettnr as s2pass, sp.spieler1 as sid1, sp.spieler2 as sid2, IF(s1.dwz=0,\'\',s1.dwz) as dwz1, IF(s2.dwz=0,\'\',s2.dwz) as dwz2, sp.ergebnis1 as erg1, sp.ergebnis2 as erg2 FROM spielerpaarungen as sp LEFT JOIN spieler as s1 ON s1.id=sp.spieler1 LEFT JOIN spieler as s2 ON s2.id=sp.spieler2 WHERE paarung=? ORDER BY brett', [$result ['paarungen'][$i]['id']]);
             while ( $result ['paarungen'][$i]['paarungen'][$j] = $temp2->fetchAssociative() )
             {
                 // Vollständige Namen zusammensetzen
@@ -174,10 +174,10 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
             $result['nachmeldungen'] = array();
             $i = 0;
             $temp = SED_Query(
-                "SELECT id, nachname, vorname, titel, mannschaft as mid, geburt, dwz, brettnr as passnr, nmR as berechtigtAb 
+                'SELECT id, nachname, vorname, titel, mannschaft as mid, geburt, dwz, brettnr as passnr, nmR as berechtigtAb 
                 FROM spieler 
                 WHERE nmSid = ? AND (nmR = ? OR nmR = ? + 1) 
-                ORDER BY mid, brettnr, id",
+                ORDER BY mid, brettnr, id',
                 [$staffel, $runde, $runde]
             );
 
@@ -194,9 +194,9 @@ function Spieltag ( $turnier, $staffel, $runde, &$result, $dummy1 = 0, $dummy2 =
         // Spieltag Vorschau
         $result['vorschautermin'] = SED_GetTermin($runde + 1, $staffel);
         $rsrc = SED_Query(
-            "SELECT mannschaft1 as mid1, mannschaft2 as mid2, DATE_FORMAT(termin,'%d.%m.%Y') verlegung 
+            'SELECT mannschaft1 as mid1, mannschaft2 as mid2, DATE_FORMAT(termin,\'%d.%m.%Y\') verlegung 
              FROM paarungen 
-             WHERE staffel = ? AND runde = ?",
+             WHERE staffel = ? AND runde = ?',
             [$staffel, $runde + 1]
         );
         

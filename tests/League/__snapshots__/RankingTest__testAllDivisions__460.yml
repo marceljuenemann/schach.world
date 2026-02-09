@@ -1,0 +1,203 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Langlingen', url: '?mannschaft=4360', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=936&r=6#p4360x4362', title: 'gegen C. Wolfenbüttel 3', text: 4½ }]
+    - [{ url: '?staffel=936&r=8#p4360x4356', title: 'gegen SVG Salzgitter 3', text: '6' }]
+    - [{ url: '?staffel=936&r=1#p4360x4357', title: 'gegen SF Bleckenstedt', text: 5½ }]
+    - [{ url: '?staffel=936&r=7#p4360x4363', title: 'gegen SK Salzgitter-Bad', text: 6½ }]
+    - [{ url: '?staffel=936&r=2#p4360x4358', title: 'gegen SG Königslutter', text: '4' }]
+    - [{ url: '?staffel=936&r=3#p4360x4359', title: 'gegen Peiner SV 3', text: 4½ }]
+    - [{ url: '?staffel=936&r=5#p4360x4361', title: 'gegen Königssprin. BS 3', text: 4½ }]
+    - [{ url: '?staffel=936&r=9#p4360x4340', title: 'gegen SG Elm/Lappwald 3', text: 7½ }]
+    - 15
+    - '43'
+    - ''
+-
+    - '2.'
+    - { text: 'SV Gifhorn 2', url: '?mannschaft=4341', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=936&r=6#p4341x4344', title: 'gegen Braunschw. SF', text: '4' }]
+    - [{ url: '?staffel=936&r=1#p4341x4362', title: 'gegen C. Wolfenbüttel 3', text: 5½ }]
+    - [{ url: '?staffel=936&r=3#p4341x4356', title: 'gegen SVG Salzgitter 3', text: '5' }]
+    - [{ url: '?staffel=936&r=7#p4341x4357', title: 'gegen SF Bleckenstedt', text: 6½ }]
+    - [{ url: '?staffel=936&r=2#p4341x4363', title: 'gegen SK Salzgitter-Bad', text: '4' }]
+    - [{ url: '?staffel=936&r=8#p4341x4358', title: 'gegen SG Königslutter', text: 5½ }]
+    - [{ url: '?staffel=936&r=9#p4341x4359', title: 'gegen Peiner SV 3', text: 5½ }]
+    - {  }
+    - [{ url: '?staffel=936&r=4#p4341x4340', title: 'gegen SG Elm/Lappwald 3', text: '7' }]
+    - 14
+    - '43'
+    - ''
+-
+    - '3.'
+    - { text: 'Braunschw. SF', url: '?mannschaft=4344', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=936&r=6#p4344x4341', title: 'gegen SV Gifhorn 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=936&r=2#p4344x4362', title: 'gegen C. Wolfenbüttel 3', text: '4' }]
+    - [{ url: '?staffel=936&r=4#p4344x4356', title: 'gegen SVG Salzgitter 3', text: '4' }]
+    - [{ url: '?staffel=936&r=8#p4344x4357', title: 'gegen SF Bleckenstedt', text: '3' }]
+    - [{ url: '?staffel=936&r=3#p4344x4363', title: 'gegen SK Salzgitter-Bad', text: '5' }]
+    - [{ url: '?staffel=936&r=9#p4344x4358', title: 'gegen SG Königslutter', text: '5' }]
+    - {  }
+    - [{ url: '?staffel=936&r=1#p4344x4361', title: 'gegen Königssprin. BS 3', text: '7' }]
+    - [{ url: '?staffel=936&r=5#p4344x4340', title: 'gegen SG Elm/Lappwald 3', text: 6½ }]
+    - 11
+    - 38½
+    - ''
+-
+    - '4.'
+    - { text: 'C. Wolfenbüttel 3', url: '?mannschaft=4362', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=936&r=6#p4362x4360', title: 'gegen SC Langlingen', text: 3½ }]
+    - [{ url: '?staffel=936&r=1#p4362x4341', title: 'gegen SV Gifhorn 2', text: 2½ }]
+    - [{ url: '?staffel=936&r=2#p4362x4344', title: 'gegen Braunschw. SF', text: '4' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=936&r=3#p4362x4357', title: 'gegen SF Bleckenstedt', text: 4½ }]
+    - [{ url: '?staffel=936&r=9#p4362x4363', title: 'gegen SK Salzgitter-Bad', text: 4½ }]
+    - [{ url: '?staffel=936&r=4#p4362x4358', title: 'gegen SG Königslutter', text: 4½ }]
+    - [{ url: '?staffel=936&r=5#p4362x4359', title: 'gegen Peiner SV 3', text: 4½ }]
+    - [{ url: '?staffel=936&r=7#p4362x4361', title: 'gegen Königssprin. BS 3', text: '6' }]
+    - {  }
+    - 11
+    - '34'
+    - ''
+-
+    - '5.'
+    - { text: 'SVG Salzgitter 3', url: '?mannschaft=4356', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=936&r=8#p4356x4360', title: 'gegen SC Langlingen', text: '2' }]
+    - [{ url: '?staffel=936&r=3#p4356x4341', title: 'gegen SV Gifhorn 2', text: '3' }]
+    - [{ url: '?staffel=936&r=4#p4356x4344', title: 'gegen Braunschw. SF', text: '4' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=936&r=5#p4356x4357', title: 'gegen SF Bleckenstedt', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=936&r=6#p4356x4358', title: 'gegen SG Königslutter', text: 7½ }]
+    - [{ url: '?staffel=936&r=7#p4356x4359', title: 'gegen Peiner SV 3', text: '4' }]
+    - [{ url: '?staffel=936&r=9#p4356x4361', title: 'gegen Königssprin. BS 3', text: 6½ }]
+    - [{ url: '?staffel=936&r=2#p4356x4340', title: 'gegen SG Elm/Lappwald 3', text: '8' }]
+    - 9
+    - '39'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Bleckenstedt', url: '?mannschaft=4357', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=936&r=1#p4357x4360', title: 'gegen SC Langlingen', text: 2½ }]
+    - [{ url: '?staffel=936&r=7#p4357x4341', title: 'gegen SV Gifhorn 2', text: 1½ }]
+    - [{ url: '?staffel=936&r=8#p4357x4344', title: 'gegen Braunschw. SF', text: '5' }]
+    - [{ url: '?staffel=936&r=3#p4357x4362', title: 'gegen C. Wolfenbüttel 3', text: 3½ }]
+    - [{ url: '?staffel=936&r=5#p4357x4356', title: 'gegen SVG Salzgitter 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=936&r=4#p4357x4363', title: 'gegen SK Salzgitter-Bad', text: 6½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=936&r=2#p4357x4361', title: 'gegen Königssprin. BS 3', text: '6' }]
+    - [{ url: '?staffel=936&r=6#p4357x4340', title: 'gegen SG Elm/Lappwald 3', text: '6' }]
+    - 9
+    - '35'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Salzgitter-Bad', url: '?mannschaft=4363', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=936&r=7#p4363x4360', title: 'gegen SC Langlingen', text: 1½ }]
+    - [{ url: '?staffel=936&r=2#p4363x4341', title: 'gegen SV Gifhorn 2', text: '4' }]
+    - [{ url: '?staffel=936&r=3#p4363x4344', title: 'gegen Braunschw. SF', text: '3' }]
+    - [{ url: '?staffel=936&r=9#p4363x4362', title: 'gegen C. Wolfenbüttel 3', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=936&r=4#p4363x4357', title: 'gegen SF Bleckenstedt', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=936&r=5#p4363x4358', title: 'gegen SG Königslutter', text: 3½ }]
+    - [{ url: '?staffel=936&r=6#p4363x4359', title: 'gegen Peiner SV 3', text: 4½ }]
+    - [{ url: '?staffel=936&r=8#p4363x4361', title: 'gegen Königssprin. BS 3', text: 5½ }]
+    - [{ url: '?staffel=936&r=1#p4363x4340', title: 'gegen SG Elm/Lappwald 3', text: '5' }]
+    - 7
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'SG Königslutter', url: '?mannschaft=4358', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=936&r=2#p4358x4360', title: 'gegen SC Langlingen', text: '4' }]
+    - [{ url: '?staffel=936&r=8#p4358x4341', title: 'gegen SV Gifhorn 2', text: 2½ }]
+    - [{ url: '?staffel=936&r=9#p4358x4344', title: 'gegen Braunschw. SF', text: '3' }]
+    - [{ url: '?staffel=936&r=4#p4358x4362', title: 'gegen C. Wolfenbüttel 3', text: 3½ }]
+    - [{ url: '?staffel=936&r=6#p4358x4356', title: 'gegen SVG Salzgitter 3', text: ½ }]
+    - {  }
+    - [{ url: '?staffel=936&r=5#p4358x4363', title: 'gegen SK Salzgitter-Bad', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=936&r=1#p4358x4359', title: 'gegen Peiner SV 3', text: '3' }]
+    - [{ url: '?staffel=936&r=3#p4358x4361', title: 'gegen Königssprin. BS 3', text: 4½ }]
+    - [{ url: '?staffel=936&r=7#p4358x4340', title: 'gegen SG Elm/Lappwald 3', text: '6' }]
+    - 7
+    - 31½
+    - ''
+-
+    - '9.'
+    - { text: 'Peiner SV 3', url: '?mannschaft=4359', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=936&r=3#p4359x4360', title: 'gegen SC Langlingen', text: 3½ }]
+    - [{ url: '?staffel=936&r=9#p4359x4341', title: 'gegen SV Gifhorn 2', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=936&r=5#p4359x4362', title: 'gegen C. Wolfenbüttel 3', text: 3½ }]
+    - [{ url: '?staffel=936&r=7#p4359x4356', title: 'gegen SVG Salzgitter 3', text: '4' }]
+    - {  }
+    - [{ url: '?staffel=936&r=6#p4359x4363', title: 'gegen SK Salzgitter-Bad', text: 3½ }]
+    - [{ url: '?staffel=936&r=1#p4359x4358', title: 'gegen SG Königslutter', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=936&r=4#p4359x4361', title: 'gegen Königssprin. BS 3', text: 3½ }]
+    - [{ url: '?staffel=936&r=8#p4359x4340', title: 'gegen SG Elm/Lappwald 3', text: 4½ }]
+    - 5
+    - '30'
+    - ''
+-
+    - '10.'
+    - { text: 'Königssprin. BS 3', url: '?mannschaft=4361', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=936&r=5#p4361x4360', title: 'gegen SC Langlingen', text: 3½ }]
+    - {  }
+    - [{ url: '?staffel=936&r=1#p4361x4344', title: 'gegen Braunschw. SF', text: '1' }]
+    - [{ url: '?staffel=936&r=7#p4361x4362', title: 'gegen C. Wolfenbüttel 3', text: '2' }]
+    - [{ url: '?staffel=936&r=9#p4361x4356', title: 'gegen SVG Salzgitter 3', text: 1½ }]
+    - [{ url: '?staffel=936&r=2#p4361x4357', title: 'gegen SF Bleckenstedt', text: '2' }]
+    - [{ url: '?staffel=936&r=8#p4361x4363', title: 'gegen SK Salzgitter-Bad', text: 2½ }]
+    - [{ url: '?staffel=936&r=3#p4361x4358', title: 'gegen SG Königslutter', text: 3½ }]
+    - [{ url: '?staffel=936&r=4#p4361x4359', title: 'gegen Peiner SV 3', text: 4½ }]
+    - xxx
+    - {  }
+    - 2
+    - 20½
+    - ''
+-
+    - '11.'
+    - { text: 'SG Elm/Lappwald 3', url: '?mannschaft=4340', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=936&r=9#p4340x4360', title: 'gegen SC Langlingen', text: ½ }]
+    - [{ url: '?staffel=936&r=4#p4340x4341', title: 'gegen SV Gifhorn 2', text: '1' }]
+    - [{ url: '?staffel=936&r=5#p4340x4344', title: 'gegen Braunschw. SF', text: 1½ }]
+    - {  }
+    - [{ url: '?staffel=936&r=2#p4340x4356', title: 'gegen SVG Salzgitter 3', text: '0' }]
+    - [{ url: '?staffel=936&r=6#p4340x4357', title: 'gegen SF Bleckenstedt', text: '2' }]
+    - [{ url: '?staffel=936&r=1#p4340x4363', title: 'gegen SK Salzgitter-Bad', text: '3' }]
+    - [{ url: '?staffel=936&r=7#p4340x4358', title: 'gegen SG Königslutter', text: '2' }]
+    - [{ url: '?staffel=936&r=8#p4340x4359', title: 'gegen Peiner SV 3', text: 3½ }]
+    - {  }
+    - xxx
+    - 0
+    - 13½
+    - ''

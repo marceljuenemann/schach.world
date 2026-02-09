@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Osnabrück 4', url: '?mannschaft=3528', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=813&r=4#p3528x3527', title: 'gegen Gaste-Hasbergen', text: '4' }]
+    - [{ url: '?staffel=813&r=5#p3528x3526', title: 'gegen SV Osnabrück 3', text: 4½ }]
+    - [{ url: '?staffel=813&r=7#p3528x3531', title: 'gegen SV Bad Essen 3', text: 6½ }]
+    - [{ url: '?staffel=813&r=3#p3528x3529', title: 'gegen Hagener SV 4', text: 5½ }]
+    - [{ url: '?staffel=813&r=1#p3528x3524', title: 'gegen SG Oesede-Gmht. 2', text: 6½ }]
+    - [{ url: '?staffel=813&r=2#p3528x3525', title: 'gegen Bersenbrück/Bramsche 2', text: '6' }]
+    - [{ url: '?staffel=813&r=6#p3528x3530', title: 'gegen TSV Osnabrück', text: '6' }]
+    - 13
+    - '39'
+    - aufsteiger
+-
+    - '2.'
+    - { text: Gaste-Hasbergen, url: '?mannschaft=3527', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=813&r=4#p3527x3528', title: 'gegen SG Osnabrück 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=813&r=6#p3527x3526', title: 'gegen SV Osnabrück 3', text: '4' }]
+    - [{ url: '?staffel=813&r=3#p3527x3531', title: 'gegen SV Bad Essen 3', text: 4½ }]
+    - [{ url: '?staffel=813&r=2#p3527x3529', title: 'gegen Hagener SV 4', text: '7' }]
+    - [{ url: '?staffel=813&r=5#p3527x3524', title: 'gegen SG Oesede-Gmht. 2', text: '6' }]
+    - [{ url: '?staffel=813&r=7#p3527x3525', title: 'gegen Bersenbrück/Bramsche 2', text: '6' }]
+    - [{ url: '?staffel=813&r=1#p3527x3530', title: 'gegen TSV Osnabrück', text: '5' }]
+    - 12
+    - 36½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Osnabrück 3', url: '?mannschaft=3526', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=813&r=5#p3526x3528', title: 'gegen SG Osnabrück 4', text: 3½ }]
+    - [{ url: '?staffel=813&r=6#p3526x3527', title: 'gegen Gaste-Hasbergen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=813&r=1#p3526x3531', title: 'gegen SV Bad Essen 3', text: '1' }]
+    - [{ url: '?staffel=813&r=4#p3526x3529', title: 'gegen Hagener SV 4', text: '5' }]
+    - [{ url: '?staffel=813&r=2#p3526x3524', title: 'gegen SG Oesede-Gmht. 2', text: 6½ }]
+    - [{ url: '?staffel=813&r=3#p3526x3525', title: 'gegen Bersenbrück/Bramsche 2', text: '5' }]
+    - [{ url: '?staffel=813&r=7#p3526x3530', title: 'gegen TSV Osnabrück', text: 6½ }]
+    - 9
+    - 31½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Bad Essen 3', url: '?mannschaft=3531', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=813&r=7#p3531x3528', title: 'gegen SG Osnabrück 4', text: 1½ }]
+    - [{ url: '?staffel=813&r=3#p3531x3527', title: 'gegen Gaste-Hasbergen', text: 3½ }]
+    - [{ url: '?staffel=813&r=1#p3531x3526', title: 'gegen SV Osnabrück 3', text: '7' }]
+    - xxx
+    - [{ url: '?staffel=813&r=6#p3531x3529', title: 'gegen Hagener SV 4', text: '2' }]
+    - [{ url: '?staffel=813&r=4#p3531x3524', title: 'gegen SG Oesede-Gmht. 2', text: 5½ }]
+    - [{ url: '?staffel=813&r=5#p3531x3525', title: 'gegen Bersenbrück/Bramsche 2', text: 3½ }]
+    - [{ url: '?staffel=813&r=2#p3531x3530', title: 'gegen TSV Osnabrück', text: 4½ }]
+    - 6
+    - 27½
+    - ''
+-
+    - '5.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=3529', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=813&r=3#p3529x3528', title: 'gegen SG Osnabrück 4', text: 2½ }]
+    - [{ url: '?staffel=813&r=2#p3529x3527', title: 'gegen Gaste-Hasbergen', text: '1' }]
+    - [{ url: '?staffel=813&r=4#p3529x3526', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=813&r=6#p3529x3531', title: 'gegen SV Bad Essen 3', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=813&r=7#p3529x3524', title: 'gegen SG Oesede-Gmht. 2', text: '4' }]
+    - [{ url: '?staffel=813&r=1#p3529x3525', title: 'gegen Bersenbrück/Bramsche 2', text: 5½ }]
+    - [{ url: '?staffel=813&r=5#p3529x3530', title: 'gegen TSV Osnabrück', text: '4' }]
+    - 6
+    - '26'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Oesede-Gmht. 2', url: '?mannschaft=3524', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=813&r=1#p3524x3528', title: 'gegen SG Osnabrück 4', text: 1½ }]
+    - [{ url: '?staffel=813&r=5#p3524x3527', title: 'gegen Gaste-Hasbergen', text: '2' }]
+    - [{ url: '?staffel=813&r=2#p3524x3526', title: 'gegen SV Osnabrück 3', text: 1½ }]
+    - [{ url: '?staffel=813&r=4#p3524x3531', title: 'gegen SV Bad Essen 3', text: 2½ }]
+    - [{ url: '?staffel=813&r=7#p3524x3529', title: 'gegen Hagener SV 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=813&r=6#p3524x3525', title: 'gegen Bersenbrück/Bramsche 2', text: '6' }]
+    - [{ url: '?staffel=813&r=3#p3524x3530', title: 'gegen TSV Osnabrück', text: '5' }]
+    - 5
+    - 22½
+    - ''
+-
+    - '7.'
+    - { text: 'Bersenbrück/Bramsche 2', url: '?mannschaft=3525', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=813&r=2#p3525x3528', title: 'gegen SG Osnabrück 4', text: '2' }]
+    - [{ url: '?staffel=813&r=7#p3525x3527', title: 'gegen Gaste-Hasbergen', text: '2' }]
+    - [{ url: '?staffel=813&r=3#p3525x3526', title: 'gegen SV Osnabrück 3', text: '3' }]
+    - [{ url: '?staffel=813&r=5#p3525x3531', title: 'gegen SV Bad Essen 3', text: 4½ }]
+    - [{ url: '?staffel=813&r=1#p3525x3529', title: 'gegen Hagener SV 4', text: 2½ }]
+    - [{ url: '?staffel=813&r=6#p3525x3524', title: 'gegen SG Oesede-Gmht. 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=813&r=4#p3525x3530', title: 'gegen TSV Osnabrück', text: '4' }]
+    - 3
+    - '20'
+    - ''
+-
+    - '8.'
+    - { text: 'TSV Osnabrück', url: '?mannschaft=3530', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=813&r=6#p3530x3528', title: 'gegen SG Osnabrück 4', text: '2' }]
+    - [{ url: '?staffel=813&r=1#p3530x3527', title: 'gegen Gaste-Hasbergen', text: '3' }]
+    - [{ url: '?staffel=813&r=7#p3530x3526', title: 'gegen SV Osnabrück 3', text: 1½ }]
+    - [{ url: '?staffel=813&r=2#p3530x3531', title: 'gegen SV Bad Essen 3', text: 3½ }]
+    - [{ url: '?staffel=813&r=5#p3530x3529', title: 'gegen Hagener SV 4', text: '4' }]
+    - [{ url: '?staffel=813&r=3#p3530x3524', title: 'gegen SG Oesede-Gmht. 2', text: '3' }]
+    - [{ url: '?staffel=813&r=4#p3530x3525', title: 'gegen Bersenbrück/Bramsche 2', text: '4' }]
+    - xxx
+    - 2
+    - '21'
+    - ''

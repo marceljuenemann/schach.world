@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg 99', url: '?mannschaft=8053', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1807&r=1#p8053x8043', title: 'gegen SZ Bemerode 99', text: 3½ }, { url: '?staffel=1807&r=6#p8053x8043', title: 'gegen SZ Bemerode 99', text: '2' }]
+    - [{ url: '?staffel=1807&r=4#p8053x7951', title: 'gegen SG Döhren-Gleidingen 99', text: 2½ }, { url: '?staffel=1807&r=9#p8053x7951', title: 'gegen SG Döhren-Gleidingen 99', text: '3' }]
+    - [{ url: '?staffel=1807&r=3#p8053x8037', title: 'gegen SG Garbsen/Marienw 99', text: '2' }, { url: '?staffel=1807&r=8#p8053x8037', title: 'gegen SG Garbsen/Marienw 99', text: '2' }]
+    - [{ url: '?staffel=1807&r=5#p8053x8029', title: 'gegen Hannover 96 99', text: '4' }, { url: '?staffel=1807&r=10#p8053x8029', title: 'gegen Hannover 96 99', text: '4' }]
+    - 13
+    - '23'
+    - ''
+-
+    - '2.'
+    - { text: 'SZ Bemerode 99', url: '?mannschaft=8043', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1807&r=1#p8043x8053', title: 'gegen SV Bückeburg 99', text: ½ }, { url: '?staffel=1807&r=6#p8043x8053', title: 'gegen SV Bückeburg 99', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1807&r=3#p8043x7951', title: 'gegen SG Döhren-Gleidingen 99', text: 2½ }, { url: '?staffel=1807&r=8#p8043x7951', title: 'gegen SG Döhren-Gleidingen 99', text: ½ }]
+    - [{ url: '?staffel=1807&r=2#p8043x8037', title: 'gegen SG Garbsen/Marienw 99', text: '2' }, { url: '?staffel=1807&r=7#p8043x8037', title: 'gegen SG Garbsen/Marienw 99', text: '3' }]
+    - [{ url: '?staffel=1807&r=4#p8043x8029', title: 'gegen Hannover 96 99', text: '2' }, { url: '?staffel=1807&r=9#p8043x8029', title: 'gegen Hannover 96 99', text: '3' }]
+    - 9
+    - 15½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Döhren-Gleidingen 99', url: '?mannschaft=7951', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1807&r=4#p7951x8053', title: 'gegen SV Bückeburg 99', text: 1½ }, { url: '?staffel=1807&r=9#p7951x8053', title: 'gegen SV Bückeburg 99', text: '1' }]
+    - [{ url: '?staffel=1807&r=3#p7951x8043', title: 'gegen SZ Bemerode 99', text: 1½ }, { url: '?staffel=1807&r=8#p7951x8043', title: 'gegen SZ Bemerode 99', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1807&r=5#p7951x8037', title: 'gegen SG Garbsen/Marienw 99', text: 3½ }, { url: '?staffel=1807&r=10#p7951x8037', title: 'gegen SG Garbsen/Marienw 99', text: '4' }]
+    - [{ url: '?staffel=1807&r=2#p7951x8029', title: 'gegen Hannover 96 99', text: '2' }, { url: '?staffel=1807&r=7#p7951x8029', title: 'gegen Hannover 96 99', text: 1½ }]
+    - 7
+    - 18½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Garbsen/Marienw 99', url: '?mannschaft=8037', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1807&r=3#p8037x8053', title: 'gegen SV Bückeburg 99', text: '2' }, { url: '?staffel=1807&r=8#p8037x8053', title: 'gegen SV Bückeburg 99', text: '2' }]
+    - [{ url: '?staffel=1807&r=2#p8037x8043', title: 'gegen SZ Bemerode 99', text: '2' }, { url: '?staffel=1807&r=7#p8037x8043', title: 'gegen SZ Bemerode 99', text: '1' }]
+    - [{ url: '?staffel=1807&r=5#p8037x7951', title: 'gegen SG Döhren-Gleidingen 99', text: ½ }, { url: '?staffel=1807&r=10#p8037x7951', title: 'gegen SG Döhren-Gleidingen 99', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1807&r=1#p8037x8029', title: 'gegen Hannover 96 99', text: '4' }, { url: '?staffel=1807&r=6#p8037x8029', title: 'gegen Hannover 96 99', text: 3½ }]
+    - 7
+    - '15'
+    - ''
+-
+    - '5.'
+    - { text: 'Hannover 96 99', url: '?mannschaft=8029', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1807&r=5#p8029x8053', title: 'gegen SV Bückeburg 99', text: '0' }, { url: '?staffel=1807&r=10#p8029x8053', title: 'gegen SV Bückeburg 99', text: '0' }]
+    - [{ url: '?staffel=1807&r=4#p8029x8043', title: 'gegen SZ Bemerode 99', text: '2' }, { url: '?staffel=1807&r=9#p8029x8043', title: 'gegen SZ Bemerode 99', text: '1' }]
+    - [{ url: '?staffel=1807&r=2#p8029x7951', title: 'gegen SG Döhren-Gleidingen 99', text: '2' }, { url: '?staffel=1807&r=7#p8029x7951', title: 'gegen SG Döhren-Gleidingen 99', text: 2½ }]
+    - [{ url: '?staffel=1807&r=1#p8029x8037', title: 'gegen SG Garbsen/Marienw 99', text: '0' }, { url: '?staffel=1807&r=6#p8029x8037', title: 'gegen SG Garbsen/Marienw 99', text: ½ }]
+    - xxx
+    - 4
+    - '8'
+    - ''

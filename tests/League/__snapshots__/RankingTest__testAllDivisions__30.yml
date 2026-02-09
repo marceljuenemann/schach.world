@@ -1,0 +1,23 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Bl.', url: '?mannschaft=618', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=426&r=1#p618x619', title: 'gegen SF Spelle', text: '3' }, { url: '?staffel=426&r=2#p618x619', title: 'gegen SF Spelle', text: '3' }]
+    - 4
+    - '6'
+    - ''
+-
+    - '2.'
+    - { text: 'SF Spelle', url: '?mannschaft=619', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=426&r=1#p619x618', title: 'gegen SK Nordhorn-Bl.', text: '1' }, { url: '?staffel=426&r=2#p619x618', title: 'gegen SK Nordhorn-Bl.', text: '1' }]
+    - xxx
+    - 0
+    - '2'
+    - ''

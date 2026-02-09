@@ -1,0 +1,23 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=7262', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1717&r=1#p7262x7211', title: 'gegen Hannover 96', text: '3' }, { url: '?staffel=1717&r=2#p7262x7211', title: 'gegen Hannover 96', text: '3' }]
+    - 4
+    - '6'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hannover 96', url: '?mannschaft=7211', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1717&r=1#p7211x7262', title: 'gegen SK Lehrte', text: '1' }, { url: '?staffel=1717&r=2#p7211x7262', title: 'gegen SK Lehrte', text: '1' }]
+    - xxx
+    - 0
+    - '2'
+    - ''

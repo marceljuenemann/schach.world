@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Nordhorn-Blanke 3', url: '?mannschaft=5227', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1051&r=1#p5227x5226', title: 'gegen SK Nordhorn-Blanke 2', text: 2½ }, { url: '?staffel=1051&r=2#p5227x5226', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=1051&r=3#p5227x5225', title: 'gegen SV Hellern', text: '2' }, { url: '?staffel=1051&r=4#p5227x5225', title: 'gegen SV Hellern', text: '1' }]
+    - [{ url: '?staffel=1051&r=5#p5227x5224', title: 'gegen SC Papenburg 2', text: '4' }, { url: '?staffel=1051&r=6#p5227x5224', title: 'gegen SC Papenburg 2', text: '4' }]
+    - 9
+    - 16½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SK Nordhorn-Blanke 2', url: '?mannschaft=5226', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1051&r=1#p5226x5227', title: 'gegen SK Nordhorn-Blanke 3', text: 1½ }, { url: '?staffel=1051&r=2#p5226x5227', title: 'gegen SK Nordhorn-Blanke 3', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1051&r=5#p5226x5225', title: 'gegen SV Hellern', text: 2½ }, { url: '?staffel=1051&r=6#p5226x5225', title: 'gegen SV Hellern', text: 3½ }]
+    - [{ url: '?staffel=1051&r=3#p5226x5224', title: 'gegen SC Papenburg 2', text: '4' }, { url: '?staffel=1051&r=4#p5226x5224', title: 'gegen SC Papenburg 2', text: 2½ }]
+    - 8
+    - '15'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Hellern', url: '?mannschaft=5225', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1051&r=3#p5225x5227', title: 'gegen SK Nordhorn-Blanke 3', text: '2' }, { url: '?staffel=1051&r=4#p5225x5227', title: 'gegen SK Nordhorn-Blanke 3', text: '3' }]
+    - [{ url: '?staffel=1051&r=5#p5225x5226', title: 'gegen SK Nordhorn-Blanke 2', text: 1½ }, { url: '?staffel=1051&r=6#p5225x5226', title: 'gegen SK Nordhorn-Blanke 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1051&r=1#p5225x5224', title: 'gegen SC Papenburg 2', text: 3½ }, { url: '?staffel=1051&r=2#p5225x5224', title: 'gegen SC Papenburg 2', text: '3' }]
+    - 7
+    - 13½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Papenburg 2', url: '?mannschaft=5224', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1051&r=5#p5224x5227', title: 'gegen SK Nordhorn-Blanke 3', text: '0' }, { url: '?staffel=1051&r=6#p5224x5227', title: 'gegen SK Nordhorn-Blanke 3', text: '0' }]
+    - [{ url: '?staffel=1051&r=3#p5224x5226', title: 'gegen SK Nordhorn-Blanke 2', text: '0' }, { url: '?staffel=1051&r=4#p5224x5226', title: 'gegen SK Nordhorn-Blanke 2', text: 1½ }]
+    - [{ url: '?staffel=1051&r=1#p5224x5225', title: 'gegen SV Hellern', text: ½ }, { url: '?staffel=1051&r=2#p5224x5225', title: 'gegen SV Hellern', text: '1' }]
+    - xxx
+    - 0
+    - '3'
+    - ''

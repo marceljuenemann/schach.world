@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV', url: '?mannschaft=1294', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=515&r=2#p1294x1296', title: 'gegen Nordhorn-Blanke', text: '3' }]
+    - [{ url: '?staffel=515&r=1#p1294x1297', title: 'gegen SF Spelle', text: '2' }]
+    - [{ url: '?staffel=515&r=3#p1294x1295', title: 'gegen SG Oesede-Gmht.', text: '3' }]
+    - 5
+    - '8'
+    - ''
+-
+    - '2.'
+    - { text: Nordhorn-Blanke, url: '?mannschaft=1296', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=515&r=2#p1296x1294', title: 'gegen Hagener SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=515&r=3#p1296x1297', title: 'gegen SF Spelle', text: '4' }]
+    - [{ url: '?staffel=515&r=1#p1296x1295', title: 'gegen SG Oesede-Gmht.', text: '4' }]
+    - 4
+    - '9'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Spelle', url: '?mannschaft=1297', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=515&r=1#p1297x1294', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=515&r=3#p1297x1296', title: 'gegen Nordhorn-Blanke', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=515&r=2#p1297x1295', title: 'gegen SG Oesede-Gmht.', text: 2½ }]
+    - 3
+    - 4½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=1295', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=515&r=3#p1295x1294', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=515&r=1#p1295x1296', title: 'gegen Nordhorn-Blanke', text: '0' }]
+    - [{ url: '?staffel=515&r=2#p1295x1297', title: 'gegen SF Spelle', text: 1½ }]
+    - xxx
+    - 0
+    - 2½
+    - ''

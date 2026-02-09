@@ -12,36 +12,30 @@ public/wordpress/wp-content/themes/*
 public/wordpress/wp-content/plugins/*
 !public/wordpress/wp-content/plugins/bezirk-v3
 !public/wordpress/wp-content/plugins/nsv-core
-!public/wordpress/wp-content/plugins/nsv-turniere
 !public/wordpress/wp-content/plugins/nsv-misc
+!public/wordpress/wp-content/plugins/nsv-turniere
 !public/wordpress/wp-content/plugins/nsv-v3
-# TODO: Add plugins/nsv-archive after moving spreadsheet links to config file
 
 # TODO: The following files are legacy code and should be rewritten rather than added to the repo
 public/anmeldung/
 public/core/apps/
-public/core/modules/
 public/core/templates/
 public/core/*.php
-public/grandprix/
-public/verband/
 
 # Files that should actually be excluded
 data/
 !data/registration/test.php
 public/cache/
 public/downloads/
+public/grandprix/
 public/images/
 public/ligen/config.inc.php
 public/ligen/_test/swi/*.swi
 public/schachzeitung/
-public/z-*
+public/verband/
 public/.user.ini
 
 tests/League/Api/Service/actual/
-
-# Don't want to share VS Code settings as I disable git when mounting with sshfs :)
-.vscode
 
 #Ignore PHPstorm settings directory
 .idea
@@ -72,4 +66,3 @@ tests/League/Api/Service/actual/
 /src/League/templates/utility
 /public/utility
 ###> Ignore stuff used by Thomas for Development purposes only <###
-

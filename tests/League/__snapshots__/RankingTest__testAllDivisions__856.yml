@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=7271', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1680&r=3#p7271x7250', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1680&r=1#p7271x7173', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=1680&r=4#p7271x7266', title: 'gegen Hannover 96', text: '3' }]
+    - [{ url: '?staffel=1680&r=5#p7271x7261', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1680&r=2#p7271x7248', title: 'gegen SK Anderten', text: '4' }]
+    - 10
+    - 17½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=7250', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1680&r=3#p7250x7271', title: 'gegen SZ Bemerode', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=1680&r=2#p7250x7173', title: 'gegen HSK Lister Turm', text: '2' }]
+    - [{ url: '?staffel=1680&r=1#p7250x7266', title: 'gegen Hannover 96', text: '4' }]
+    - [{ url: '?staffel=1680&r=4#p7250x7261', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1680&r=5#p7250x7248', title: 'gegen SK Anderten', text: '4' }]
+    - 7
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=7173', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1680&r=1#p7173x7271', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1680&r=2#p7173x7250', title: 'gegen SD Isernhagen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1680&r=5#p7173x7266', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=1680&r=3#p7173x7261', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=1680&r=4#p7173x7248', title: 'gegen SK Anderten', text: '4' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'Hannover 96', url: '?mannschaft=7266', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1680&r=4#p7266x7271', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1680&r=1#p7266x7250', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1680&r=5#p7266x7173', title: 'gegen HSK Lister Turm', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1680&r=2#p7266x7261', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=1680&r=3#p7266x7248', title: 'gegen SK Anderten', text: '2' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte', url: '?mannschaft=7261', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1680&r=5#p7261x7271', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1680&r=4#p7261x7250', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1680&r=3#p7261x7173', title: 'gegen HSK Lister Turm', text: '2' }]
+    - [{ url: '?staffel=1680&r=2#p7261x7266', title: 'gegen Hannover 96', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1680&r=1#p7261x7248', title: 'gegen SK Anderten', text: '3' }]
+    - 3
+    - '8'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Anderten', url: '?mannschaft=7248', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1680&r=2#p7248x7271', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1680&r=5#p7248x7250', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=1680&r=4#p7248x7173', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1680&r=3#p7248x7266', title: 'gegen Hannover 96', text: '2' }]
+    - [{ url: '?staffel=1680&r=1#p7248x7261', title: 'gegen SK Lehrte', text: '1' }]
+    - xxx
+    - 1
+    - '3'
+    - ''

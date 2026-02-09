@@ -13,6 +13,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Nsv\League\Api\Service\StatisticsService;
 use Doctrine\ORM\EntityManagerInterface;
+use Nsv\League\Api\Service\PgnService;
 
 /**
  * Controller for division specific routes.
@@ -20,17 +21,13 @@ use Doctrine\ORM\EntityManagerInterface;
 #[Route('/ligen/{league}/', name: 'league_division_', priority: -100)]
 class DivisionController extends AbstractLeagueController {
 
-  private $entityManager;
-
   function __construct(
     League                         $league,
     LeagueAuthState                $auth,
     LegacySystem                   $legacySystem,
-    Division                       $division,
-    private EntityManagerInterface $leagueEntityManager) {
+    Division                       $division) {
     parent::__construct($league, $auth, $legacySystem);
     $this->division = $division;
-    $this->entityManager = $this->leagueEntityManager;
   }
 
   #[Route('{division}/spielplan/', name: 'schedule')]
@@ -46,25 +43,6 @@ class DivisionController extends AbstractLeagueController {
   public function schedule_debug(ScheduleService $service): Response {
     $matchDays = $service->divisionSchedule($this->division);
     return $this->debugResponse($matchDays);
-  }
-
-  #[Route('{division}/{round}/pdf/', name: 'pdf')]
-  public function pdf(int $round): Response {
-    $this->initializeLegacySystem();
-    $_GET['r'] = $round;
-    $_GET['ausgabe'] = 'pdf';
-
-    ob_start();
-    require('../_module/spieltag/spieltag.php');
-    $body = ob_get_clean();
-    $response = new Response($body);
-    $response->setCharset(Encoding::CHARSET);
-    return $response;
-  }
-
-  #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]
-  public function matchday_api(int $round, MatchDayService $service): Response {
-    return $this->apiResponse($this->matchday_model($service, $round));
   }
 
   #[Route('{division}/statistik', name: 'statistik')]
@@ -111,6 +89,40 @@ class DivisionController extends AbstractLeagueController {
     }
   }
 
+  #[Route('{division}/{round}/pdf/', name: 'pdf')]
+  public function pdf(int $round): Response {
+    $this->initializeLegacySystem();
+    $_GET['r'] = $round;
+    $_GET['ausgabe'] = 'pdf';
+
+    ob_start();
+    require('../_module/spieltag/spieltag.php');
+    $body = ob_get_clean();
+    $response = new Response($body);
+    $response->setCharset(Encoding::CHARSET);
+    return $response;
+  }
+
+  #[Route('{division}/{round}/pgn/', name: 'pgn')]
+  public function pgn(PgnService $pgnService, int $round): Response {
+    $response = new Response($pgnService->renderPgn($this->division, $this->division->round($round)));
+    $filename = $this->division->path() . '-R' . $round . '.pgn';
+    $response->headers->set('Content-Disposition', 'attachment; filename="' . $filename . '"');
+    $response->headers->set('Content-Type', 'application/x-chess-pgn; charset=' . Encoding::CHARSET_UTF8);
+    return $response;
+  }
+
+  #[Route('api/divisions/{division}/rounds/current/', name: 'api_current_matchday')]
+  public function current_matchday_api(ScheduleService $scheduleService, MatchDayService $service): Response {
+    $round = $scheduleService->closestRound($this->division, date('Y-m-d'));
+    return $this->apiResponse($this->matchday_model($service, $round ? $round->round : 1));
+  }
+
+  #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]
+  public function matchday_api(int $round, MatchDayService $service): Response {
+    return $this->apiResponse($this->matchday_model($service, $round));
+  }
+
   #[Route('{division}/{round}/', name: 'matchday')]
   public function matchday(int $round, MatchDayService $service): Response {
     $matchDay = $this->matchday_model($service, $round);
@@ -121,12 +133,7 @@ class DivisionController extends AbstractLeagueController {
   }
 
   private function matchday_model(MatchDayService $service, int $round) {
-    return $service->matchDayCached($this->division, $round, function () use ($round) {
-      $this->initializeLegacySystem();
-      $_GET['r'] = $round;
-      require_once('tabelle.inc.php');
-      return Tabelle($this->division->id, $round, true /* TODO: $kreuztabelle = false? */);
-    });
+    return $service->matchDay($this->division, $round);
   }
 
   #[Route('{division}/', name: 'index')]
@@ -139,7 +146,7 @@ class DivisionController extends AbstractLeagueController {
    * Returns the tab navigation configuration for division pages.
    */
   // TODO: Might no longer need this?
-  private function divisionTabs(string $active = null): array {
+  private function divisionTabs(string | null $active = null): array {
     $tabs [] = [
       'label' => 'Spieltage',
       'uri' => $this->league->uri() . $this->division->path() . '/',  // TODO: use uri()

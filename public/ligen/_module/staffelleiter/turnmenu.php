@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Turniermenü
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -16,7 +16,7 @@
   if ( isset ( $_POST ['menue_save'] ) )
   {
     // Alte Links löschen
-    mysql_query ( "DELETE FROM turniermenue WHERE turnier=$globals[tid] LIMIT 100", $globals ['db'] );
+    SED_TryQuery ( 'DELETE FROM turniermenue WHERE turnier=? LIMIT 100', [$globals['tid']] );
 
     // Neue Links einfügen
     for ( $i = 1; isset ( $_POST ["linkTitel$i"] ); ++$i )
@@ -24,7 +24,7 @@
       if ( $_POST ["linkTitel$i"] )
       {
         $neuesfenster = (int) ( isset ( $_POST ["linkNeu$i"] ) && $_POST ["linkNeu$i"] );
-        mysql_query ( "INSERT INTO turniermenue SET turnier=$globals[tid], sortid=$i, titel='".$_POST["linkTitel$i"]."', url='".$_POST["linkUrl$i"]."', neuesfenster=$neuesfenster", $globals ['db'] );
+        SED_TryQuery ( 'INSERT INTO turniermenue SET turnier=?, sortid=?, titel=?, url=?, neuesfenster=?', [$globals['tid'], $i, $_POST["linkTitel$i"], $_POST["linkUrl$i"], $neuesfenster] );
       }
     }
 
@@ -101,43 +101,40 @@
 
     --></script>
 
-  <form action="<? echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;">
+  <form action="<?php echo SED_GenerateFormAction(); ?>" method="post" style="text-align: left;">
     <table cellspacing="0" cellpadding="2">
       <tr><th>Beschriftung</th><th>URL</th><th></th></tr>
 
-        <?
+        <?php
           // Bisherige Links abfragen
-          $rsrc = mysql_query ( "SELECT * FROM turniermenue WHERE turnier=$globals[tid] ORDER BY sortid", $globals ['db'] );
+          $rsrc = SED_Query ( 'SELECT * FROM turniermenue WHERE turnier=? ORDER BY sortid', [$globals['tid']] )->fetchAllAssociative();
 
           // Bisherige Links ausgeben
-          if ( mysql_num_rows ( $rsrc ) )
-            while ( $tmp = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) )
-              __AddForm ( "$tmp[titel]", "$tmp[url]", "$tmp[neuesfenster]" );
+          foreach ($rsrc as $tmp)
+            __AddForm ( "$tmp[titel]", "$tmp[url]", "$tmp[neuesfenster]" );
 
           // Weitere Felder ausgeben
           for ( $i = 0; $i < 5; ++$i )
             __AddForm ( "", "", 0 );
         ?>
 
-      <tr><td colspan='3'><input type="submit" class="sed_submit" name="menue_save" value="Speichern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
+      <tr><td colspan='3'><input type="submit" class="sed_submit" name="menue_save" value="Speichern" /> <input type='button' class='sed_submit' value='Abbrechen' onclick="<?php echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" /></td></tr>
     </table>
   </form><br />
 
-<?
-    $rsrc = mysql_query ( "SELECT name, directory, id FROM turniere t WHERE t.organisation='$prefs[organisation]' AND (t.startjahr='$prefs[startjahr]' OR t.startjahr='$prefs[startjahr]'-1) AND t.id<>$globals[tid] ORDER BY t.startjahr DESC", $globals ['db'] );
-    if ( $rsrc && mysql_num_rows ( $rsrc ) ){
+<?php
+    $rsrc = SED_Query ( 'SELECT name, directory, id FROM turniere t WHERE t.organisation=? AND (t.startjahr=? OR t.startjahr=?-1) AND t.id<>? ORDER BY t.startjahr DESC', [$prefs['organisation'], $prefs['startjahr'], $prefs['startjahr'], $globals['tid']] )->fetchAllAssociative();
+    if ( $rsrc && count($rsrc) ){
         echo "<span class='sed_hl2'>Vorschl&auml;ge:</span><br /><br />";
-        while ( $turnier = mysql_fetch_array ( $rsrc, MYSQL_ASSOC ) ){
-            // Link zu dem Turnier
-			echo "<a href='javascript:add(\"$turnier[name]\",\"$globals[httppath]$turnier[directory]/?esw=1\")'>$turnier[name]</a><br />";
+        foreach ( $rsrc as $turnier ){
+          // Link zu dem Turnier
+          echo "<a href='javascript:add(\"$turnier[name]\",\"$globals[httppath]$turnier[directory]/?esw=1\")'>$turnier[name]</a><br />";
 			
-			// Turniermenüeinträge der letzten Saison
-			$lastMenu = mysql_query ( "SELECT * FROM turniermenue WHERE turnier=$turnier[id] ORDER BY sortid", $globals ['db'] );
-			if ( mysql_num_rows ( $lastMenu ) ){
-				while ( $tmp = mysql_fetch_array ( $lastMenu, MYSQL_ASSOC ) ){
-					echo "<a href='javascript:add(\"$tmp[titel]\",\"$tmp[url]\")'>$tmp[titel]</a><br />";
-				}
-			}
+          // Turniermenüeinträge der letzten Saison
+          $lastMenu = SED_Query ( 'SELECT * FROM turniermenue WHERE turnier=? ORDER BY sortid', [$turnier['id']] )->fetchAllAssociative();
+          foreach ( $lastMenu as $tmp ){
+            echo "<a href='javascript:add(\"$tmp[titel]\",\"$tmp[url]\")'>$tmp[titel]</a><br />";
+          }
         }
     }
 ?>

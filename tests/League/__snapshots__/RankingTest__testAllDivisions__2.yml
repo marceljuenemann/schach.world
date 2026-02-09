@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=209', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=202&r=3#p209x207', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=202&r=4#p209x205', title: 'gegen SK Ricklingen 3', text: '3' }]
+    - [{ url: '?staffel=202&r=1#p209x210', title: 'gegen SK Anderten', text: 4½ }]
+    - [{ url: '?staffel=202&r=5#p209x202', title: 'gegen Barsinghausen', text: 5½ }]
+    - [{ url: '?staffel=202&r=2#p209x204', title: 'gegen SK Lehrte 3', text: '5' }]
+    - 9
+    - 23½
+    - ''
+-
+    - '2.'
+    - { text: 'Eystruper SK', url: '?mannschaft=207', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=202&r=3#p207x209', title: 'gegen SD Isernhagen', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=202&r=2#p207x205', title: 'gegen SK Ricklingen 3', text: 3½ }]
+    - [{ url: '?staffel=202&r=5#p207x210', title: 'gegen SK Anderten', text: '6' }]
+    - [{ url: '?staffel=202&r=4#p207x202', title: 'gegen Barsinghausen', text: '6' }]
+    - [{ url: '?staffel=202&r=1#p207x204', title: 'gegen SK Lehrte 3', text: '4' }]
+    - 8
+    - '20'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Ricklingen 3', url: '?mannschaft=205', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=202&r=4#p205x209', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=202&r=2#p205x207', title: 'gegen Eystruper SK', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=202&r=3#p205x210', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=202&r=1#p205x202', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=202&r=5#p205x204', title: 'gegen SK Lehrte 3', text: '4' }]
+    - 4
+    - 14½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Anderten', url: '?mannschaft=210', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=202&r=1#p210x209', title: 'gegen SD Isernhagen', text: 1½ }]
+    - [{ url: '?staffel=202&r=5#p210x207', title: 'gegen Eystruper SK', text: '0' }]
+    - [{ url: '?staffel=202&r=3#p210x205', title: 'gegen SK Ricklingen 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=202&r=2#p210x202', title: 'gegen Barsinghausen', text: 2½ }]
+    - [{ url: '?staffel=202&r=4#p210x204', title: 'gegen SK Lehrte 3', text: '5' }]
+    - 4
+    - '13'
+    - ''
+-
+    - '5.'
+    - { text: Barsinghausen, url: '?mannschaft=202', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=202&r=5#p202x209', title: 'gegen SD Isernhagen', text: ½ }]
+    - [{ url: '?staffel=202&r=4#p202x207', title: 'gegen Eystruper SK', text: '0' }]
+    - [{ url: '?staffel=202&r=1#p202x205', title: 'gegen SK Ricklingen 3', text: '3' }]
+    - [{ url: '?staffel=202&r=2#p202x210', title: 'gegen SK Anderten', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=202&r=3#p202x204', title: 'gegen SK Lehrte 3', text: '2' }]
+    - 3
+    - '9'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=204', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=202&r=2#p204x209', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=202&r=1#p204x207', title: 'gegen Eystruper SK', text: '2' }]
+    - [{ url: '?staffel=202&r=5#p204x205', title: 'gegen SK Ricklingen 3', text: '2' }]
+    - [{ url: '?staffel=202&r=4#p204x210', title: 'gegen SK Anderten', text: '1' }]
+    - [{ url: '?staffel=202&r=3#p204x202', title: 'gegen Barsinghausen', text: '4' }]
+    - xxx
+    - 2
+    - '10'
+    - ''

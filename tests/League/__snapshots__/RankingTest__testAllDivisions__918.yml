@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Osnabrück v. 1919 6', url: '?mannschaft=7516', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1753&r=3#p7516x7527', title: 'gegen SV Hellern 6', text: 3½ }, { url: '?staffel=1753&r=8#p7516x7527', title: 'gegen SV Hellern 6', text: '3' }]
+    - [{ url: '?staffel=1753&r=2#p7516x7490', title: 'gegen TuS Lemförde 2', text: '3' }, { url: '?staffel=1753&r=7#p7516x7490', title: 'gegen TuS Lemförde 2', text: 3½ }]
+    - [{ url: '?staffel=1753&r=1#p7516x7489', title: 'gegen TuS Lemförde', text: '3' }, { url: '?staffel=1753&r=6#p7516x7489', title: 'gegen TuS Lemförde', text: '3' }]
+    - [{ url: '?staffel=1753&r=4#p7516x7492', title: 'gegen Bersenbrück/Bramsche 2', text: '2' }, { url: '?staffel=1753&r=9#p7516x7492', title: 'gegen Bersenbrück/Bramsche 2', text: '4' }]
+    - [{ url: '?staffel=1753&r=5#p7516x7520', title: 'gegen Hagener SV 4', text: '4' }, { url: '?staffel=1753&r=10#p7516x7520', title: 'gegen Hagener SV 4', text: '4' }]
+    - 19
+    - '33'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Hellern 6', url: '?mannschaft=7527', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1753&r=3#p7527x7516', title: 'gegen SV Osnabrück v. 1919 6', text: ½ }, { url: '?staffel=1753&r=8#p7527x7516', title: 'gegen SV Osnabrück v. 1919 6', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1753&r=4#p7527x7490', title: 'gegen TuS Lemförde 2', text: 1½ }, { url: '?staffel=1753&r=9#p7527x7490', title: 'gegen TuS Lemförde 2', text: '3' }]
+    - [{ url: '?staffel=1753&r=2#p7527x7489', title: 'gegen TuS Lemförde', text: 2½ }, { url: '?staffel=1753&r=7#p7527x7489', title: 'gegen TuS Lemförde', text: 2½ }]
+    - [{ url: '?staffel=1753&r=5#p7527x7492', title: 'gegen Bersenbrück/Bramsche 2', text: '2' }, { url: '?staffel=1753&r=10#p7527x7492', title: 'gegen Bersenbrück/Bramsche 2', text: 2½ }]
+    - [{ url: '?staffel=1753&r=1#p7527x7520', title: 'gegen Hagener SV 4', text: '4' }, { url: '?staffel=1753&r=6#p7527x7520', title: 'gegen Hagener SV 4', text: '4' }]
+    - 13
+    - 23½
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Lemförde 2', url: '?mannschaft=7490', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1753&r=2#p7490x7516', title: 'gegen SV Osnabrück v. 1919 6', text: '1' }, { url: '?staffel=1753&r=7#p7490x7516', title: 'gegen SV Osnabrück v. 1919 6', text: ½ }]
+    - [{ url: '?staffel=1753&r=4#p7490x7527', title: 'gegen SV Hellern 6', text: 2½ }, { url: '?staffel=1753&r=9#p7490x7527', title: 'gegen SV Hellern 6', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1753&r=5#p7490x7489', title: 'gegen TuS Lemförde', text: '2' }, { url: '?staffel=1753&r=10#p7490x7489', title: 'gegen TuS Lemförde', text: 1½ }]
+    - [{ url: '?staffel=1753&r=1#p7490x7492', title: 'gegen Bersenbrück/Bramsche 2', text: '2' }, { url: '?staffel=1753&r=6#p7490x7492', title: 'gegen Bersenbrück/Bramsche 2', text: 2½ }]
+    - [{ url: '?staffel=1753&r=3#p7490x7520', title: 'gegen Hagener SV 4', text: '4' }, { url: '?staffel=1753&r=8#p7490x7520', title: 'gegen Hagener SV 4', text: '4' }]
+    - 10
+    - '21'
+    - ''
+-
+    - '4.'
+    - { text: 'TuS Lemförde', url: '?mannschaft=7489', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1753&r=1#p7489x7516', title: 'gegen SV Osnabrück v. 1919 6', text: '1' }, { url: '?staffel=1753&r=6#p7489x7516', title: 'gegen SV Osnabrück v. 1919 6', text: '1' }]
+    - [{ url: '?staffel=1753&r=2#p7489x7527', title: 'gegen SV Hellern 6', text: 1½ }, { url: '?staffel=1753&r=7#p7489x7527', title: 'gegen SV Hellern 6', text: 1½ }]
+    - [{ url: '?staffel=1753&r=5#p7489x7490', title: 'gegen TuS Lemförde 2', text: '2' }, { url: '?staffel=1753&r=10#p7489x7490', title: 'gegen TuS Lemförde 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1753&r=3#p7489x7492', title: 'gegen Bersenbrück/Bramsche 2', text: 1½ }, { url: '?staffel=1753&r=8#p7489x7492', title: 'gegen Bersenbrück/Bramsche 2', text: '3' }]
+    - [{ url: '?staffel=1753&r=4#p7489x7520', title: 'gegen Hagener SV 4', text: '4' }, { url: '?staffel=1753&r=9#p7489x7520', title: 'gegen Hagener SV 4', text: '4' }]
+    - 9
+    - '22'
+    - ''
+-
+    - '5.'
+    - { text: 'Bersenbrück/Bramsche 2', url: '?mannschaft=7492', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1753&r=4#p7492x7516', title: 'gegen SV Osnabrück v. 1919 6', text: '2' }, { url: '?staffel=1753&r=9#p7492x7516', title: 'gegen SV Osnabrück v. 1919 6', text: '0' }]
+    - [{ url: '?staffel=1753&r=5#p7492x7527', title: 'gegen SV Hellern 6', text: '2' }, { url: '?staffel=1753&r=10#p7492x7527', title: 'gegen SV Hellern 6', text: 1½ }]
+    - [{ url: '?staffel=1753&r=1#p7492x7490', title: 'gegen TuS Lemförde 2', text: '2' }, { url: '?staffel=1753&r=6#p7492x7490', title: 'gegen TuS Lemförde 2', text: 1½ }]
+    - [{ url: '?staffel=1753&r=3#p7492x7489', title: 'gegen TuS Lemförde', text: 2½ }, { url: '?staffel=1753&r=8#p7492x7489', title: 'gegen TuS Lemförde', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1753&r=2#p7492x7520', title: 'gegen Hagener SV 4', text: '4' }, { url: '?staffel=1753&r=7#p7492x7520', title: 'gegen Hagener SV 4', text: '4' }]
+    - 9
+    - 20½
+    - ''
+-
+    - '6.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=7520', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1753&r=5#p7520x7516', title: 'gegen SV Osnabrück v. 1919 6', text: '0' }, { url: '?staffel=1753&r=10#p7520x7516', title: 'gegen SV Osnabrück v. 1919 6', text: '0' }]
+    - [{ url: '?staffel=1753&r=1#p7520x7527', title: 'gegen SV Hellern 6', text: '0' }, { url: '?staffel=1753&r=6#p7520x7527', title: 'gegen SV Hellern 6', text: '0' }]
+    - [{ url: '?staffel=1753&r=3#p7520x7490', title: 'gegen TuS Lemförde 2', text: '0' }, { url: '?staffel=1753&r=8#p7520x7490', title: 'gegen TuS Lemförde 2', text: '0' }]
+    - [{ url: '?staffel=1753&r=4#p7520x7489', title: 'gegen TuS Lemförde', text: '0' }, { url: '?staffel=1753&r=9#p7520x7489', title: 'gegen TuS Lemförde', text: '0' }]
+    - [{ url: '?staffel=1753&r=2#p7520x7492', title: 'gegen Bersenbrück/Bramsche 2', text: '0' }, { url: '?staffel=1753&r=7#p7520x7492', title: 'gegen Bersenbrück/Bramsche 2', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

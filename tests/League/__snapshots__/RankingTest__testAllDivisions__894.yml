@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Osnabrück', url: '?mannschaft=7449', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1726&r=1#p7449x7417', title: 'gegen SK Bremen-Nord', text: '4' }]
+    - [{ url: '?staffel=1726&r=8#p7449x7396', title: 'gegen SV Osnabrück v. 1919', text: 4½ }]
+    - [{ url: '?staffel=1726&r=3#p7449x7409', title: 'gegen SK Nordhorn-Blanke 2', text: 4½ }]
+    - [{ url: '?staffel=1726&r=4#p7449x7447', title: 'gegen SF LHW', text: 4½ }]
+    - [{ url: '?staffel=1726&r=6#p7449x7438', title: 'gegen SG Ammerland', text: 4½ }]
+    - [{ url: '?staffel=1726&r=7#p7449x7431', title: 'gegen Fortuna Logabirum', text: 3½ }]
+    - [{ url: '?staffel=1726&r=9#p7449x7436', title: 'gegen SV Werder Bremen 4', text: '5' }]
+    - [{ url: '?staffel=1726&r=2#p7449x7457', title: 'gegen Bremer SG', text: '6' }]
+    - [{ url: '?staffel=1726&r=5#p7449x7421', title: 'gegen SV Lingen', text: 4½ }]
+    - 15
+    - '41'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Bremen-Nord', url: '?mannschaft=7417', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1726&r=1#p7417x7449', title: 'gegen SG Osnabrück', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1726&r=6#p7417x7396', title: 'gegen SV Osnabrück v. 1919', text: '5' }]
+    - [{ url: '?staffel=1726&r=8#p7417x7409', title: 'gegen SK Nordhorn-Blanke 2', text: 4½ }]
+    - [{ url: '?staffel=1726&r=5#p7417x7447', title: 'gegen SF LHW', text: 4½ }]
+    - [{ url: '?staffel=1726&r=7#p7417x7438', title: 'gegen SG Ammerland', text: '3' }]
+    - [{ url: '?staffel=1726&r=2#p7417x7431', title: 'gegen Fortuna Logabirum', text: '7' }]
+    - [{ url: '?staffel=1726&r=3#p7417x7436', title: 'gegen SV Werder Bremen 4', text: 2½ }]
+    - [{ url: '?staffel=1726&r=9#p7417x7457', title: 'gegen Bremer SG', text: '4' }]
+    - [{ url: '?staffel=1726&r=4#p7417x7421', title: 'gegen SV Lingen', text: '7' }]
+    - 12
+    - 41½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Osnabrück v. 1919', url: '?mannschaft=7396', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1726&r=8#p7396x7449', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=1726&r=6#p7396x7417', title: 'gegen SK Bremen-Nord', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1726&r=9#p7396x7409', title: 'gegen SK Nordhorn-Blanke 2', text: '4' }]
+    - [{ url: '?staffel=1726&r=2#p7396x7447', title: 'gegen SF LHW', text: '8' }]
+    - [{ url: '?staffel=1726&r=5#p7396x7438', title: 'gegen SG Ammerland', text: '5' }]
+    - [{ url: '?staffel=1726&r=3#p7396x7431', title: 'gegen Fortuna Logabirum', text: '4' }]
+    - [{ url: '?staffel=1726&r=4#p7396x7436', title: 'gegen SV Werder Bremen 4', text: 4½ }]
+    - [{ url: '?staffel=1726&r=7#p7396x7457', title: 'gegen Bremer SG', text: '4' }]
+    - [{ url: '?staffel=1726&r=1#p7396x7421', title: 'gegen SV Lingen', text: 4½ }]
+    - 11
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Nordhorn-Blanke 2', url: '?mannschaft=7409', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1726&r=3#p7409x7449', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=1726&r=8#p7409x7417', title: 'gegen SK Bremen-Nord', text: 3½ }]
+    - [{ url: '?staffel=1726&r=9#p7409x7396', title: 'gegen SV Osnabrück v. 1919', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1726&r=7#p7409x7447', title: 'gegen SF LHW', text: 3½ }]
+    - [{ url: '?staffel=1726&r=4#p7409x7438', title: 'gegen SG Ammerland', text: '5' }]
+    - [{ url: '?staffel=1726&r=5#p7409x7431', title: 'gegen Fortuna Logabirum', text: 4½ }]
+    - [{ url: '?staffel=1726&r=6#p7409x7436', title: 'gegen SV Werder Bremen 4', text: '4' }]
+    - [{ url: '?staffel=1726&r=1#p7409x7457', title: 'gegen Bremer SG', text: 6½ }]
+    - [{ url: '?staffel=1726&r=2#p7409x7421', title: 'gegen SV Lingen', text: 5½ }]
+    - 10
+    - '40'
+    - ''
+-
+    - '5.'
+    - { text: 'SF LHW', url: '?mannschaft=7447', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1726&r=4#p7447x7449', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=1726&r=5#p7447x7417', title: 'gegen SK Bremen-Nord', text: 3½ }]
+    - [{ url: '?staffel=1726&r=2#p7447x7396', title: 'gegen SV Osnabrück v. 1919', text: '0' }]
+    - [{ url: '?staffel=1726&r=7#p7447x7409', title: 'gegen SK Nordhorn-Blanke 2', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1726&r=3#p7447x7438', title: 'gegen SG Ammerland', text: '4' }]
+    - [{ url: '?staffel=1726&r=9#p7447x7431', title: 'gegen Fortuna Logabirum', text: '5' }]
+    - [{ url: '?staffel=1726&r=1#p7447x7436', title: 'gegen SV Werder Bremen 4', text: '4' }]
+    - [{ url: '?staffel=1726&r=6#p7447x7457', title: 'gegen Bremer SG', text: 4½ }]
+    - [{ url: '?staffel=1726&r=8#p7447x7421', title: 'gegen SV Lingen', text: 5½ }]
+    - 10
+    - 34½
+    - ''
+-
+    - '6.'
+    - { text: 'SG Ammerland', url: '?mannschaft=7438', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1726&r=6#p7438x7449', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=1726&r=7#p7438x7417', title: 'gegen SK Bremen-Nord', text: '5' }]
+    - [{ url: '?staffel=1726&r=5#p7438x7396', title: 'gegen SV Osnabrück v. 1919', text: '3' }]
+    - [{ url: '?staffel=1726&r=4#p7438x7409', title: 'gegen SK Nordhorn-Blanke 2', text: '3' }]
+    - [{ url: '?staffel=1726&r=3#p7438x7447', title: 'gegen SF LHW', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1726&r=1#p7438x7431', title: 'gegen Fortuna Logabirum', text: 5½ }]
+    - [{ url: '?staffel=1726&r=2#p7438x7436', title: 'gegen SV Werder Bremen 4', text: 3½ }]
+    - [{ url: '?staffel=1726&r=8#p7438x7457', title: 'gegen Bremer SG', text: '6' }]
+    - [{ url: '?staffel=1726&r=9#p7438x7421', title: 'gegen SV Lingen', text: 5½ }]
+    - 9
+    - '39'
+    - ''
+-
+    - '7.'
+    - { text: 'Fortuna Logabirum', url: '?mannschaft=7431', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1726&r=7#p7431x7449', title: 'gegen SG Osnabrück', text: 4½ }]
+    - [{ url: '?staffel=1726&r=2#p7431x7417', title: 'gegen SK Bremen-Nord', text: '1' }]
+    - [{ url: '?staffel=1726&r=3#p7431x7396', title: 'gegen SV Osnabrück v. 1919', text: '4' }]
+    - [{ url: '?staffel=1726&r=5#p7431x7409', title: 'gegen SK Nordhorn-Blanke 2', text: 3½ }]
+    - [{ url: '?staffel=1726&r=9#p7431x7447', title: 'gegen SF LHW', text: '3' }]
+    - [{ url: '?staffel=1726&r=1#p7431x7438', title: 'gegen SG Ammerland', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1726&r=8#p7431x7436', title: 'gegen SV Werder Bremen 4', text: '8' }]
+    - [{ url: '?staffel=1726&r=4#p7431x7457', title: 'gegen Bremer SG', text: '8' }]
+    - [{ url: '?staffel=1726&r=6#p7431x7421', title: 'gegen SV Lingen', text: 4½ }]
+    - 9
+    - '39'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Werder Bremen 4', url: '?mannschaft=7436', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1726&r=9#p7436x7449', title: 'gegen SG Osnabrück', text: '3' }]
+    - [{ url: '?staffel=1726&r=3#p7436x7417', title: 'gegen SK Bremen-Nord', text: 5½ }]
+    - [{ url: '?staffel=1726&r=4#p7436x7396', title: 'gegen SV Osnabrück v. 1919', text: 3½ }]
+    - [{ url: '?staffel=1726&r=6#p7436x7409', title: 'gegen SK Nordhorn-Blanke 2', text: '4' }]
+    - [{ url: '?staffel=1726&r=1#p7436x7447', title: 'gegen SF LHW', text: '4' }]
+    - [{ url: '?staffel=1726&r=2#p7436x7438', title: 'gegen SG Ammerland', text: 4½ }]
+    - [{ url: '?staffel=1726&r=8#p7436x7431', title: 'gegen Fortuna Logabirum', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1726&r=5#p7436x7457', title: 'gegen Bremer SG', text: '4' }]
+    - [{ url: '?staffel=1726&r=7#p7436x7421', title: 'gegen SV Lingen', text: '7' }]
+    - 9
+    - 35½
+    - ''
+-
+    - '9.'
+    - { text: 'Bremer SG', url: '?mannschaft=7457', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1726&r=2#p7457x7449', title: 'gegen SG Osnabrück', text: '2' }]
+    - [{ url: '?staffel=1726&r=9#p7457x7417', title: 'gegen SK Bremen-Nord', text: '4' }]
+    - [{ url: '?staffel=1726&r=7#p7457x7396', title: 'gegen SV Osnabrück v. 1919', text: '4' }]
+    - [{ url: '?staffel=1726&r=1#p7457x7409', title: 'gegen SK Nordhorn-Blanke 2', text: 1½ }]
+    - [{ url: '?staffel=1726&r=6#p7457x7447', title: 'gegen SF LHW', text: 3½ }]
+    - [{ url: '?staffel=1726&r=8#p7457x7438', title: 'gegen SG Ammerland', text: '2' }]
+    - [{ url: '?staffel=1726&r=4#p7457x7431', title: 'gegen Fortuna Logabirum', text: '0' }]
+    - [{ url: '?staffel=1726&r=5#p7457x7436', title: 'gegen SV Werder Bremen 4', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1726&r=3#p7457x7421', title: 'gegen SV Lingen', text: 4½ }]
+    - 5
+    - 25½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SV Lingen', url: '?mannschaft=7421', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1726&r=5#p7421x7449', title: 'gegen SG Osnabrück', text: 3½ }]
+    - [{ url: '?staffel=1726&r=4#p7421x7417', title: 'gegen SK Bremen-Nord', text: '1' }]
+    - [{ url: '?staffel=1726&r=1#p7421x7396', title: 'gegen SV Osnabrück v. 1919', text: 3½ }]
+    - [{ url: '?staffel=1726&r=2#p7421x7409', title: 'gegen SK Nordhorn-Blanke 2', text: 2½ }]
+    - [{ url: '?staffel=1726&r=8#p7421x7447', title: 'gegen SF LHW', text: 2½ }]
+    - [{ url: '?staffel=1726&r=9#p7421x7438', title: 'gegen SG Ammerland', text: 2½ }]
+    - [{ url: '?staffel=1726&r=6#p7421x7431', title: 'gegen Fortuna Logabirum', text: 3½ }]
+    - [{ url: '?staffel=1726&r=7#p7421x7436', title: 'gegen SV Werder Bremen 4', text: '1' }]
+    - [{ url: '?staffel=1726&r=3#p7421x7457', title: 'gegen Bremer SG', text: 3½ }]
+    - xxx
+    - 0
+    - 23½
+    - absteiger

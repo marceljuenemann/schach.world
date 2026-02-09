@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 9', url: '?mannschaft=5219', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1031&r=3#p5219x5183', title: 'gegen SK Rinteln 9', text: '3' }, { url: '?staffel=1031&r=6#p5219x5183', title: 'gegen SK Rinteln 9', text: '2' }]
+    - [{ url: '?staffel=1031&r=2#p5219x5163', title: 'gegen SK Ricklingen 9', text: '4' }, { url: '?staffel=1031&r=5#p5219x5163', title: 'gegen SK Ricklingen 9', text: '4' }]
+    - [{ url: '?staffel=1031&r=1#p5219x5043', title: 'gegen Hannover 96 9', text: 2½ }, { url: '?staffel=1031&r=4#p5219x5043', title: 'gegen Hannover 96 9', text: 3½ }]
+    - 11
+    - '19'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Rinteln 9', url: '?mannschaft=5183', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1031&r=3#p5183x5219', title: 'gegen SK Lehrte 9', text: '1' }, { url: '?staffel=1031&r=6#p5183x5219', title: 'gegen SK Lehrte 9', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1031&r=1#p5183x5163', title: 'gegen SK Ricklingen 9', text: '2' }, { url: '?staffel=1031&r=4#p5183x5163', title: 'gegen SK Ricklingen 9', text: '0' }]
+    - [{ url: '?staffel=1031&r=2#p5183x5043', title: 'gegen Hannover 96 9', text: 2½ }, { url: '?staffel=1031&r=5#p5183x5043', title: 'gegen Hannover 96 9', text: '3' }]
+    - 6
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Ricklingen 9', url: '?mannschaft=5163', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1031&r=2#p5163x5219', title: 'gegen SK Lehrte 9', text: '0' }, { url: '?staffel=1031&r=5#p5163x5219', title: 'gegen SK Lehrte 9', text: '0' }]
+    - [{ url: '?staffel=1031&r=1#p5163x5183', title: 'gegen SK Rinteln 9', text: '2' }, { url: '?staffel=1031&r=4#p5163x5183', title: 'gegen SK Rinteln 9', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1031&r=3#p5163x5043', title: 'gegen Hannover 96 9', text: '2' }, { url: '?staffel=1031&r=6#p5163x5043', title: 'gegen Hannover 96 9', text: '0' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '4.'
+    - { text: 'Hannover 96 9', url: '?mannschaft=5043', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1031&r=1#p5043x5219', title: 'gegen SK Lehrte 9', text: 1½ }, { url: '?staffel=1031&r=4#p5043x5219', title: 'gegen SK Lehrte 9', text: ½ }]
+    - [{ url: '?staffel=1031&r=2#p5043x5183', title: 'gegen SK Rinteln 9', text: 1½ }, { url: '?staffel=1031&r=5#p5043x5183', title: 'gegen SK Rinteln 9', text: '1' }]
+    - [{ url: '?staffel=1031&r=3#p5043x5163', title: 'gegen SK Ricklingen 9', text: '2' }, { url: '?staffel=1031&r=6#p5043x5163', title: 'gegen SK Ricklingen 9', text: '4' }]
+    - xxx
+    - 3
+    - 10½
+    - ''

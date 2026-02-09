@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'TuS Bramsche', url: '?mannschaft=894', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=452&r=2#p894x893', title: 'gegen SK Rulle', text: '4' }]
+    - [{ url: '?staffel=452&r=4#p894x895', title: 'gegen SV Osnabrück 4', text: 4½ }]
+    - [{ url: '?staffel=452&r=7#p894x890', title: 'gegen SC Melle 3', text: '8' }]
+    - [{ url: '?staffel=452&r=1#p894x892', title: 'gegen SG Oesede-Gmht. 3', text: 5½ }]
+    - [{ url: '?staffel=452&r=6#p894x891', title: 'gegen Hagener SV 4', text: 7½ }]
+    - [{ url: '?staffel=452&r=5#p894x889', title: 'gegen SG Schinkel 2', text: 7½ }]
+    - 11
+    - '37'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Rulle', url: '?mannschaft=893', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=452&r=2#p893x894', title: 'gegen TuS Bramsche', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=452&r=3#p893x895', title: 'gegen SV Osnabrück 4', text: '3' }]
+    - [{ url: '?staffel=452&r=5#p893x890', title: 'gegen SC Melle 3', text: 3½ }]
+    - [{ url: '?staffel=452&r=6#p893x892', title: 'gegen SG Oesede-Gmht. 3', text: 5½ }]
+    - [{ url: '?staffel=452&r=7#p893x891', title: 'gegen Hagener SV 4', text: '5' }]
+    - [{ url: '?staffel=452&r=4#p893x889', title: 'gegen SG Schinkel 2', text: '5' }]
+    - 7
+    - '26'
+    - ''
+-
+    - '3.'
+    - { text: 'SV Osnabrück 4', url: '?mannschaft=895', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=452&r=4#p895x894', title: 'gegen TuS Bramsche', text: 3½ }]
+    - [{ url: '?staffel=452&r=3#p895x893', title: 'gegen SK Rulle', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=452&r=6#p895x890', title: 'gegen SC Melle 3', text: 1½ }]
+    - [{ url: '?staffel=452&r=2#p895x892', title: 'gegen SG Oesede-Gmht. 3', text: '4' }]
+    - [{ url: '?staffel=452&r=1#p895x891', title: 'gegen Hagener SV 4', text: '4' }]
+    - [{ url: '?staffel=452&r=7#p895x889', title: 'gegen SG Schinkel 2', text: 6½ }]
+    - 6
+    - 23½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Melle 3', url: '?mannschaft=890', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=452&r=7#p890x894', title: 'gegen TuS Bramsche', text: '0' }]
+    - [{ url: '?staffel=452&r=5#p890x893', title: 'gegen SK Rulle', text: 4½ }]
+    - [{ url: '?staffel=452&r=6#p890x895', title: 'gegen SV Osnabrück 4', text: 6½ }]
+    - xxx
+    - [{ url: '?staffel=452&r=4#p890x892', title: 'gegen SG Oesede-Gmht. 3', text: 4½ }]
+    - [{ url: '?staffel=452&r=3#p890x891', title: 'gegen Hagener SV 4', text: 3½ }]
+    - [{ url: '?staffel=452&r=1#p890x889', title: 'gegen SG Schinkel 2', text: '2' }]
+    - 6
+    - '21'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Oesede-Gmht. 3', url: '?mannschaft=892', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=452&r=1#p892x894', title: 'gegen TuS Bramsche', text: 2½ }]
+    - [{ url: '?staffel=452&r=6#p892x893', title: 'gegen SK Rulle', text: 1½ }]
+    - [{ url: '?staffel=452&r=2#p892x895', title: 'gegen SV Osnabrück 4', text: '4' }]
+    - [{ url: '?staffel=452&r=4#p892x890', title: 'gegen SC Melle 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=452&r=5#p892x891', title: 'gegen Hagener SV 4', text: '6' }]
+    - [{ url: '?staffel=452&r=3#p892x889', title: 'gegen SG Schinkel 2', text: '5' }]
+    - 5
+    - 22½
+    - ''
+-
+    - '6.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=891', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=452&r=6#p891x894', title: 'gegen TuS Bramsche', text: ½ }]
+    - [{ url: '?staffel=452&r=7#p891x893', title: 'gegen SK Rulle', text: '3' }]
+    - [{ url: '?staffel=452&r=1#p891x895', title: 'gegen SV Osnabrück 4', text: '4' }]
+    - [{ url: '?staffel=452&r=3#p891x890', title: 'gegen SC Melle 3', text: 4½ }]
+    - [{ url: '?staffel=452&r=5#p891x892', title: 'gegen SG Oesede-Gmht. 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=452&r=2#p891x889', title: 'gegen SG Schinkel 2', text: '5' }]
+    - 5
+    - '19'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Schinkel 2', url: '?mannschaft=889', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=452&r=5#p889x894', title: 'gegen TuS Bramsche', text: ½ }]
+    - [{ url: '?staffel=452&r=4#p889x893', title: 'gegen SK Rulle', text: '2' }]
+    - [{ url: '?staffel=452&r=7#p889x895', title: 'gegen SV Osnabrück 4', text: 1½ }]
+    - [{ url: '?staffel=452&r=1#p889x890', title: 'gegen SC Melle 3', text: '6' }]
+    - [{ url: '?staffel=452&r=3#p889x892', title: 'gegen SG Oesede-Gmht. 3', text: '3' }]
+    - [{ url: '?staffel=452&r=2#p889x891', title: 'gegen Hagener SV 4', text: '3' }]
+    - xxx
+    - 2
+    - '16'
+    - ''

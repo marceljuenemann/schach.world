@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'ESV Göttingen 4', url: '?mannschaft=5359', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1062&r=1#p5359x5358', title: 'gegen ESV Göttingen 3', text: '2' }]
+    - [{ url: '?staffel=1062&r=4#p5359x5375', title: 'gegen SV GW Parensen 3', text: '2' }]
+    - [{ url: '?staffel=1062&r=2#p5359x5354', title: 'gegen Turm Vienenburg', text: '4' }]
+    - [{ url: '?staffel=1062&r=7#p5359x5334', title: 'gegen Bad Lauterberg 2', text: 3½ }]
+    - [{ url: '?staffel=1062&r=6#p5359x5361', title: 'gegen SK Goslar 3', text: '4' }]
+    - [{ url: '?staffel=1062&r=5#p5359x5373', title: 'gegen SC SW Northeim 3', text: 2½ }]
+    - 10
+    - '18'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'ESV Göttingen 3', url: '?mannschaft=5358', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1062&r=1#p5358x5359', title: 'gegen ESV Göttingen 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1062&r=5#p5358x5375', title: 'gegen SV GW Parensen 3', text: '2' }]
+    - [{ url: '?staffel=1062&r=3#p5358x5354', title: 'gegen Turm Vienenburg', text: 2½ }]
+    - [{ url: '?staffel=1062&r=6#p5358x5334', title: 'gegen Bad Lauterberg 2', text: 3½ }]
+    - [{ url: '?staffel=1062&r=7#p5358x5361', title: 'gegen SK Goslar 3', text: '4' }]
+    - [{ url: '?staffel=1062&r=4#p5358x5373', title: 'gegen SC SW Northeim 3', text: '2' }]
+    - 9
+    - '16'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SV GW Parensen 3', url: '?mannschaft=5375', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1062&r=4#p5375x5359', title: 'gegen ESV Göttingen 4', text: '2' }]
+    - [{ url: '?staffel=1062&r=5#p5375x5358', title: 'gegen ESV Göttingen 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1062&r=6#p5375x5354', title: 'gegen Turm Vienenburg', text: '2' }]
+    - [{ url: '?staffel=1062&r=3#p5375x5334', title: 'gegen Bad Lauterberg 2', text: '2' }]
+    - [{ url: '?staffel=1062&r=2#p5375x5361', title: 'gegen SK Goslar 3', text: 2½ }]
+    - [{ url: '?staffel=1062&r=7#p5375x5373', title: 'gegen SC SW Northeim 3', text: '4' }]
+    - 8
+    - 14½
+    - ''
+-
+    - '4.'
+    - { text: 'Turm Vienenburg', url: '?mannschaft=5354', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1062&r=2#p5354x5359', title: 'gegen ESV Göttingen 4', text: '0' }]
+    - [{ url: '?staffel=1062&r=3#p5354x5358', title: 'gegen ESV Göttingen 3', text: 1½ }]
+    - [{ url: '?staffel=1062&r=6#p5354x5375', title: 'gegen SV GW Parensen 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1062&r=4#p5354x5334', title: 'gegen Bad Lauterberg 2', text: '3' }]
+    - [{ url: '?staffel=1062&r=5#p5354x5361', title: 'gegen SK Goslar 3', text: 3½ }]
+    - [{ url: '?staffel=1062&r=1#p5354x5373', title: 'gegen SC SW Northeim 3', text: '4' }]
+    - 7
+    - '14'
+    - ''
+-
+    - '5.'
+    - { text: 'Bad Lauterberg 2', url: '?mannschaft=5334', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1062&r=7#p5334x5359', title: 'gegen ESV Göttingen 4', text: ½ }]
+    - [{ url: '?staffel=1062&r=6#p5334x5358', title: 'gegen ESV Göttingen 3', text: ½ }]
+    - [{ url: '?staffel=1062&r=3#p5334x5375', title: 'gegen SV GW Parensen 3', text: '2' }]
+    - [{ url: '?staffel=1062&r=4#p5334x5354', title: 'gegen Turm Vienenburg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1062&r=1#p5334x5361', title: 'gegen SK Goslar 3', text: '3' }]
+    - [{ url: '?staffel=1062&r=2#p5334x5373', title: 'gegen SC SW Northeim 3', text: 2½ }]
+    - 5
+    - 9½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Goslar 3', url: '?mannschaft=5361', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1062&r=6#p5361x5359', title: 'gegen ESV Göttingen 4', text: '0' }]
+    - [{ url: '?staffel=1062&r=7#p5361x5358', title: 'gegen ESV Göttingen 3', text: '0' }]
+    - [{ url: '?staffel=1062&r=2#p5361x5375', title: 'gegen SV GW Parensen 3', text: 1½ }]
+    - [{ url: '?staffel=1062&r=5#p5361x5354', title: 'gegen Turm Vienenburg', text: ½ }]
+    - [{ url: '?staffel=1062&r=1#p5361x5334', title: 'gegen Bad Lauterberg 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1062&r=3#p5361x5373', title: 'gegen SC SW Northeim 3', text: '3' }]
+    - 2
+    - '6'
+    - ''
+-
+    - '7.'
+    - { text: 'SC SW Northeim 3', url: '?mannschaft=5373', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1062&r=5#p5373x5359', title: 'gegen ESV Göttingen 4', text: 1½ }]
+    - [{ url: '?staffel=1062&r=4#p5373x5358', title: 'gegen ESV Göttingen 3', text: '2' }]
+    - [{ url: '?staffel=1062&r=7#p5373x5375', title: 'gegen SV GW Parensen 3', text: '0' }]
+    - [{ url: '?staffel=1062&r=1#p5373x5354', title: 'gegen Turm Vienenburg', text: '0' }]
+    - [{ url: '?staffel=1062&r=2#p5373x5334', title: 'gegen Bad Lauterberg 2', text: 1½ }]
+    - [{ url: '?staffel=1062&r=3#p5373x5361', title: 'gegen SK Goslar 3', text: '1' }]
+    - xxx
+    - 1
+    - '6'
+    - ''

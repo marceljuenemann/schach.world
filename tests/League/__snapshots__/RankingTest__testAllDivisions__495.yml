@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Lingen 3', url: '?mannschaft=4553', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=976&r=2#p4553x4534', title: 'gegen SF Spelle 2', text: 4½ }]
+    - [{ url: '?staffel=976&r=5#p4553x4548', title: 'gegen TuS Aschendorf', text: '3' }]
+    - [{ url: '?staffel=976&r=4#p4553x4580', title: 'gegen Veldhausen/Uel. 2', text: '4' }]
+    - [{ url: '?staffel=976&r=3#p4553x4554', title: 'gegen SV Lingen 4', text: 3½ }]
+    - [{ url: '?staffel=976&r=6#p4553x4562', title: 'gegen Bentheim/Nordho 2', text: '6' }]
+    - [{ url: '?staffel=976&r=1#p4553x4582', title: 'gegen Nordhorn-Blanke 6', text: '4' }]
+    - [{ url: '?staffel=976&r=7#p4553x4608', title: 'gegen Cervisia Nordho', text: '5' }]
+    - 13
+    - '30'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SF Spelle 2', url: '?mannschaft=4534', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=976&r=2#p4534x4553', title: 'gegen SV Lingen 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=976&r=3#p4534x4548', title: 'gegen TuS Aschendorf', text: '4' }]
+    - [{ url: '?staffel=976&r=7#p4534x4580', title: 'gegen Veldhausen/Uel. 2', text: '4' }]
+    - [{ url: '?staffel=976&r=1#p4534x4554', title: 'gegen SV Lingen 4', text: 3½ }]
+    - [{ url: '?staffel=976&r=4#p4534x4562', title: 'gegen Bentheim/Nordho 2', text: '3' }]
+    - [{ url: '?staffel=976&r=6#p4534x4582', title: 'gegen Nordhorn-Blanke 6', text: '3' }]
+    - [{ url: '?staffel=976&r=5#p4534x4608', title: 'gegen Cervisia Nordho', text: 5½ }]
+    - 10
+    - 24½
+    - ''
+-
+    - '3.'
+    - { text: 'TuS Aschendorf', url: '?mannschaft=4548', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=976&r=5#p4548x4553', title: 'gegen SV Lingen 3', text: '3' }]
+    - [{ url: '?staffel=976&r=3#p4548x4534', title: 'gegen SF Spelle 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=976&r=6#p4548x4580', title: 'gegen Veldhausen/Uel. 2', text: 1½ }]
+    - [{ url: '?staffel=976&r=4#p4548x4554', title: 'gegen SV Lingen 4', text: 5½ }]
+    - [{ url: '?staffel=976&r=7#p4548x4562', title: 'gegen Bentheim/Nordho 2', text: '6' }]
+    - [{ url: '?staffel=976&r=2#p4548x4582', title: 'gegen Nordhorn-Blanke 6', text: '4' }]
+    - [{ url: '?staffel=976&r=1#p4548x4608', title: 'gegen Cervisia Nordho', text: '4' }]
+    - 9
+    - '26'
+    - ''
+-
+    - '4.'
+    - { text: 'Veldhausen/Uel. 2', url: '?mannschaft=4580', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=976&r=4#p4580x4553', title: 'gegen SV Lingen 3', text: '2' }]
+    - [{ url: '?staffel=976&r=7#p4580x4534', title: 'gegen SF Spelle 2', text: '2' }]
+    - [{ url: '?staffel=976&r=6#p4580x4548', title: 'gegen TuS Aschendorf', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=976&r=2#p4580x4554', title: 'gegen SV Lingen 4', text: '3' }]
+    - [{ url: '?staffel=976&r=1#p4580x4562', title: 'gegen Bentheim/Nordho 2', text: 3½ }]
+    - [{ url: '?staffel=976&r=5#p4580x4582', title: 'gegen Nordhorn-Blanke 6', text: 5½ }]
+    - [{ url: '?staffel=976&r=3#p4580x4608', title: 'gegen Cervisia Nordho', text: '4' }]
+    - 9
+    - 24½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Lingen 4', url: '?mannschaft=4554', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=976&r=3#p4554x4553', title: 'gegen SV Lingen 3', text: 2½ }]
+    - [{ url: '?staffel=976&r=1#p4554x4534', title: 'gegen SF Spelle 2', text: 2½ }]
+    - [{ url: '?staffel=976&r=4#p4554x4548', title: 'gegen TuS Aschendorf', text: ½ }]
+    - [{ url: '?staffel=976&r=2#p4554x4580', title: 'gegen Veldhausen/Uel. 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=976&r=5#p4554x4562', title: 'gegen Bentheim/Nordho 2', text: '3' }]
+    - [{ url: '?staffel=976&r=7#p4554x4582', title: 'gegen Nordhorn-Blanke 6', text: '4' }]
+    - [{ url: '?staffel=976&r=6#p4554x4608', title: 'gegen Cervisia Nordho', text: 3½ }]
+    - 6
+    - '19'
+    - ''
+-
+    - '6.'
+    - { text: 'Bentheim/Nordho 2', url: '?mannschaft=4562', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=976&r=6#p4562x4553', title: 'gegen SV Lingen 3', text: '0' }]
+    - [{ url: '?staffel=976&r=4#p4562x4534', title: 'gegen SF Spelle 2', text: '3' }]
+    - [{ url: '?staffel=976&r=7#p4562x4548', title: 'gegen TuS Aschendorf', text: '0' }]
+    - [{ url: '?staffel=976&r=1#p4562x4580', title: 'gegen Veldhausen/Uel. 2', text: 2½ }]
+    - [{ url: '?staffel=976&r=5#p4562x4554', title: 'gegen SV Lingen 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=976&r=3#p4562x4582', title: 'gegen Nordhorn-Blanke 6', text: 5½ }]
+    - [{ url: '?staffel=976&r=2#p4562x4608', title: 'gegen Cervisia Nordho', text: '3' }]
+    - 6
+    - '17'
+    - ''
+-
+    - '7.'
+    - { text: 'Nordhorn-Blanke 6', url: '?mannschaft=4582', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=976&r=1#p4582x4553', title: 'gegen SV Lingen 3', text: '2' }]
+    - [{ url: '?staffel=976&r=6#p4582x4534', title: 'gegen SF Spelle 2', text: '3' }]
+    - [{ url: '?staffel=976&r=2#p4582x4548', title: 'gegen TuS Aschendorf', text: '2' }]
+    - [{ url: '?staffel=976&r=5#p4582x4580', title: 'gegen Veldhausen/Uel. 2', text: ½ }]
+    - [{ url: '?staffel=976&r=7#p4582x4554', title: 'gegen SV Lingen 4', text: '2' }]
+    - [{ url: '?staffel=976&r=3#p4582x4562', title: 'gegen Bentheim/Nordho 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=976&r=4#p4582x4608', title: 'gegen Cervisia Nordho', text: '6' }]
+    - 3
+    - '16'
+    - ''
+-
+    - '8.'
+    - { text: 'Cervisia Nordho', url: '?mannschaft=4608', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=976&r=7#p4608x4553', title: 'gegen SV Lingen 3', text: '1' }]
+    - [{ url: '?staffel=976&r=5#p4608x4534', title: 'gegen SF Spelle 2', text: ½ }]
+    - [{ url: '?staffel=976&r=1#p4608x4548', title: 'gegen TuS Aschendorf', text: '2' }]
+    - [{ url: '?staffel=976&r=3#p4608x4580', title: 'gegen Veldhausen/Uel. 2', text: '2' }]
+    - [{ url: '?staffel=976&r=6#p4608x4554', title: 'gegen SV Lingen 4', text: 2½ }]
+    - [{ url: '?staffel=976&r=2#p4608x4562', title: 'gegen Bentheim/Nordho 2', text: '2' }]
+    - [{ url: '?staffel=976&r=4#p4608x4582', title: 'gegen Nordhorn-Blanke 6', text: '0' }]
+    - xxx
+    - 0
+    - '10'
+    - ''

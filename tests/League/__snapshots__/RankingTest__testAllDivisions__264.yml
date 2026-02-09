@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Flensburger SK', url: '?mannschaft=2729', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=696&r=2#p2729x2725', title: 'gegen MTV Leck von 18', text: '2' }]
+    - [{ url: '?staffel=696&r=7#p2729x2723', title: 'gegen Schleswiger SV', text: 2½ }]
+    - [{ url: '?staffel=696&r=3#p2729x2726', title: 'gegen Itzehoer SV', text: 3½ }]
+    - [{ url: '?staffel=696&r=4#p2729x2727', title: 'gegen Phönix Gettorf', text: '4' }]
+    - [{ url: '?staffel=696&r=5#p2729x2728', title: 'gegen SC Agon Neum.', text: '4' }]
+    - [{ url: '?staffel=696&r=1#p2729x2724', title: 'gegen SC Uetersen 2', text: '4' }]
+    - [{ url: '?staffel=696&r=6#p2729x2730', title: 'gegen SC Marne', text: '3' }]
+    - 13
+    - '23'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'MTV Leck von 18', url: '?mannschaft=2725', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=696&r=2#p2725x2729', title: 'gegen Flensburger SK', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=696&r=3#p2725x2723', title: 'gegen Schleswiger SV', text: '3' }]
+    - [{ url: '?staffel=696&r=6#p2725x2726', title: 'gegen Itzehoer SV', text: 1½ }]
+    - [{ url: '?staffel=696&r=7#p2725x2727', title: 'gegen Phönix Gettorf', text: '4' }]
+    - [{ url: '?staffel=696&r=1#p2725x2728', title: 'gegen SC Agon Neum.', text: '4' }]
+    - [{ url: '?staffel=696&r=4#p2725x2724', title: 'gegen SC Uetersen 2', text: '4' }]
+    - [{ url: '?staffel=696&r=5#p2725x2730', title: 'gegen SC Marne', text: '4' }]
+    - 11
+    - 22½
+    - ''
+-
+    - '3.'
+    - { text: 'Schleswiger SV', url: '?mannschaft=2723', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=696&r=7#p2723x2729', title: 'gegen Flensburger SK', text: 1½ }]
+    - [{ url: '?staffel=696&r=3#p2723x2725', title: 'gegen MTV Leck von 18', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=696&r=4#p2723x2726', title: 'gegen Itzehoer SV', text: '3' }]
+    - [{ url: '?staffel=696&r=5#p2723x2727', title: 'gegen Phönix Gettorf', text: 2½ }]
+    - [{ url: '?staffel=696&r=6#p2723x2728', title: 'gegen SC Agon Neum.', text: 2½ }]
+    - [{ url: '?staffel=696&r=2#p2723x2724', title: 'gegen SC Uetersen 2', text: '4' }]
+    - [{ url: '?staffel=696&r=1#p2723x2730', title: 'gegen SC Marne', text: '3' }]
+    - 10
+    - 17½
+    - ''
+-
+    - '4.'
+    - { text: 'Itzehoer SV', url: '?mannschaft=2726', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=696&r=3#p2726x2729', title: 'gegen Flensburger SK', text: ½ }]
+    - [{ url: '?staffel=696&r=6#p2726x2725', title: 'gegen MTV Leck von 18', text: 2½ }]
+    - [{ url: '?staffel=696&r=4#p2726x2723', title: 'gegen Schleswiger SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=696&r=1#p2726x2727', title: 'gegen Phönix Gettorf', text: '1' }]
+    - [{ url: '?staffel=696&r=2#p2726x2728', title: 'gegen SC Agon Neum.', text: '2' }]
+    - [{ url: '?staffel=696&r=5#p2726x2724', title: 'gegen SC Uetersen 2', text: '3' }]
+    - [{ url: '?staffel=696&r=7#p2726x2730', title: 'gegen SC Marne', text: '2' }]
+    - 6
+    - '12'
+    - ''
+-
+    - '5.'
+    - { text: 'Phönix Gettorf', url: '?mannschaft=2727', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=696&r=4#p2727x2729', title: 'gegen Flensburger SK', text: '0' }]
+    - [{ url: '?staffel=696&r=7#p2727x2725', title: 'gegen MTV Leck von 18', text: '0' }]
+    - [{ url: '?staffel=696&r=5#p2727x2723', title: 'gegen Schleswiger SV', text: 1½ }]
+    - [{ url: '?staffel=696&r=1#p2727x2726', title: 'gegen Itzehoer SV', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=696&r=3#p2727x2728', title: 'gegen SC Agon Neum.', text: '1' }]
+    - [{ url: '?staffel=696&r=6#p2727x2724', title: 'gegen SC Uetersen 2', text: 2½ }]
+    - [{ url: '?staffel=696&r=2#p2727x2730', title: 'gegen SC Marne', text: '2' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '6.'
+    - { text: 'SC Agon Neum.', url: '?mannschaft=2728', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=696&r=5#p2728x2729', title: 'gegen Flensburger SK', text: '0' }]
+    - [{ url: '?staffel=696&r=1#p2728x2725', title: 'gegen MTV Leck von 18', text: '0' }]
+    - [{ url: '?staffel=696&r=6#p2728x2723', title: 'gegen Schleswiger SV', text: 1½ }]
+    - [{ url: '?staffel=696&r=2#p2728x2726', title: 'gegen Itzehoer SV', text: '2' }]
+    - [{ url: '?staffel=696&r=3#p2728x2727', title: 'gegen Phönix Gettorf', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=696&r=7#p2728x2724', title: 'gegen SC Uetersen 2', text: '1' }]
+    - [{ url: '?staffel=696&r=4#p2728x2730', title: 'gegen SC Marne', text: '2' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '7.'
+    - { text: 'SC Uetersen 2', url: '?mannschaft=2724', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=696&r=1#p2724x2729', title: 'gegen Flensburger SK', text: '0' }]
+    - [{ url: '?staffel=696&r=4#p2724x2725', title: 'gegen MTV Leck von 18', text: '0' }]
+    - [{ url: '?staffel=696&r=2#p2724x2723', title: 'gegen Schleswiger SV', text: '0' }]
+    - [{ url: '?staffel=696&r=5#p2724x2726', title: 'gegen Itzehoer SV', text: '1' }]
+    - [{ url: '?staffel=696&r=6#p2724x2727', title: 'gegen Phönix Gettorf', text: 1½ }]
+    - [{ url: '?staffel=696&r=7#p2724x2728', title: 'gegen SC Agon Neum.', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=696&r=3#p2724x2730', title: 'gegen SC Marne', text: '3' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '8.'
+    - { text: 'SC Marne', url: '?mannschaft=2730', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=696&r=6#p2730x2729', title: 'gegen Flensburger SK', text: '1' }]
+    - [{ url: '?staffel=696&r=5#p2730x2725', title: 'gegen MTV Leck von 18', text: '0' }]
+    - [{ url: '?staffel=696&r=1#p2730x2723', title: 'gegen Schleswiger SV', text: '1' }]
+    - [{ url: '?staffel=696&r=7#p2730x2726', title: 'gegen Itzehoer SV', text: '2' }]
+    - [{ url: '?staffel=696&r=2#p2730x2727', title: 'gegen Phönix Gettorf', text: '2' }]
+    - [{ url: '?staffel=696&r=4#p2730x2728', title: 'gegen SC Agon Neum.', text: '2' }]
+    - [{ url: '?staffel=696&r=3#p2730x2724', title: 'gegen SC Uetersen 2', text: '1' }]
+    - xxx
+    - 3
+    - '9'
+    - absteiger

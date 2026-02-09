@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=5322', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1037&r=5#p5322x5307', title: 'gegen SZ Bemerode', text: '3' }]
+    - [{ url: '?staffel=1037&r=3#p5322x5318', title: 'gegen SK Rinteln', text: '2' }]
+    - [{ url: '?staffel=1037&r=4#p5322x5029', title: 'gegen SD Isernhagen', text: '3' }]
+    - [{ url: '?staffel=1037&r=2#p5322x5198', title: 'gegen SV Laatzen', text: '3' }]
+    - 7
+    - '11'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=5307', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1037&r=5#p5307x5322', title: 'gegen SK Lehrte', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1037&r=2#p5307x5318', title: 'gegen SK Rinteln', text: '3' }]
+    - [{ url: '?staffel=1037&r=3#p5307x5029', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1037&r=1#p5307x5198', title: 'gegen SV Laatzen', text: 3½ }]
+    - 6
+    - '11'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Rinteln', url: '?mannschaft=5318', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1037&r=3#p5318x5322', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=1037&r=2#p5318x5307', title: 'gegen SZ Bemerode', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1037&r=1#p5318x5029', title: 'gegen SD Isernhagen', text: 1½ }]
+    - [{ url: '?staffel=1037&r=4#p5318x5198', title: 'gegen SV Laatzen', text: 2½ }]
+    - 3
+    - '7'
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=5029', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1037&r=4#p5029x5322', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1037&r=3#p5029x5307', title: 'gegen SZ Bemerode', text: ½ }]
+    - [{ url: '?staffel=1037&r=1#p5029x5318', title: 'gegen SK Rinteln', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1037&r=5#p5029x5198', title: 'gegen SV Laatzen', text: '2' }]
+    - 3
+    - '6'
+    - ''
+-
+    - '5.'
+    - { text: 'SV Laatzen', url: '?mannschaft=5198', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1037&r=2#p5198x5322', title: 'gegen SK Lehrte', text: '1' }]
+    - [{ url: '?staffel=1037&r=1#p5198x5307', title: 'gegen SZ Bemerode', text: ½ }]
+    - [{ url: '?staffel=1037&r=4#p5198x5318', title: 'gegen SK Rinteln', text: 1½ }]
+    - [{ url: '?staffel=1037&r=5#p5198x5029', title: 'gegen SD Isernhagen', text: '2' }]
+    - xxx
+    - 1
+    - '5'
+    - ''

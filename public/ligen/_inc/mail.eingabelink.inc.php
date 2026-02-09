@@ -1,4 +1,4 @@
-<?
+<?php
 /* Eingabelink-eMail
  *
  * Zum Senden von eMails, die Links zur Ergebniseingabe beinhalten.
@@ -60,7 +60,7 @@ Bei Fragen wenden Sie sich bitte an Ihren Staffelleitung (@STAFFELLEITER@)." );
   $vars["STAFFELLEITER"] = $slmail;
 
   // Empfänger-Liste erzeugen
-  $to = SED_Query( "SELECT email FROM zusatzempfaenger WHERE mannschaft=? and eingabelink=1", [$ausrichter] )->fetchFirstColumn();
+  $to = SED_Query( 'SELECT email FROM zusatzempfaenger WHERE mannschaft=? and eingabelink=1', [$ausrichter] )->fetchFirstColumn();
   $to[] = $paarungen [0]["mf_email"]; // Ausrichter-Email
 
   // Reply-To

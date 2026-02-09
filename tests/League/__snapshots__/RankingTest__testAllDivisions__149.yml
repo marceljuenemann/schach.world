@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Laatzen 3', url: '?mannschaft=1551', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=563&r=7#p1551x1585', title: 'gegen SK Anderten 2', text: 4½ }]
+    - [{ url: '?staffel=563&r=5#p1551x1659', title: 'gegen HSK-Lister Turm 5', text: '4' }]
+    - [{ url: '?staffel=563&r=2#p1551x1624', title: 'gegen PSC Hannover 5', text: 5½ }]
+    - [{ url: '?staffel=563&r=3#p1551x1638', title: 'gegen SD Isernhagen 3', text: '5' }]
+    - [{ url: '?staffel=563&r=6#p1551x1549', title: 'gegen SK Lehrte 5', text: 7½ }]
+    - [{ url: '?staffel=563&r=1#p1551x1616', title: 'gegen SC Hämelerwald 2', text: '8' }]
+    - [{ url: '?staffel=563&r=4#p1551x1581', title: 'gegen SV Gretenberg 3', text: '4' }]
+    - {  }
+    - 12
+    - 38½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=1585', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=563&r=7#p1585x1551', title: 'gegen SV Laatzen 3', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=563&r=6#p1585x1659', title: 'gegen HSK-Lister Turm 5', text: '4' }]
+    - [{ url: '?staffel=563&r=1#p1585x1624', title: 'gegen PSC Hannover 5', text: 6½ }]
+    - [{ url: '?staffel=563&r=5#p1585x1638', title: 'gegen SD Isernhagen 3', text: '5' }]
+    - [{ url: '?staffel=563&r=3#p1585x1549', title: 'gegen SK Lehrte 5', text: 4½ }]
+    - [{ url: '?staffel=563&r=4#p1585x1616', title: 'gegen SC Hämelerwald 2', text: '6' }]
+    - [{ url: '?staffel=563&r=2#p1585x1581', title: 'gegen SV Gretenberg 3', text: '7' }]
+    - {  }
+    - 11
+    - 36½
+    - ''
+-
+    - '3.'
+    - { text: 'HSK-Lister Turm 5', url: '?mannschaft=1659', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=563&r=5#p1659x1551', title: 'gegen SV Laatzen 3', text: '4' }]
+    - [{ url: '?staffel=563&r=6#p1659x1585', title: 'gegen SK Anderten 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=563&r=7#p1659x1624', title: 'gegen PSC Hannover 5', text: '2' }]
+    - [{ url: '?staffel=563&r=4#p1659x1638', title: 'gegen SD Isernhagen 3', text: '5' }]
+    - [{ url: '?staffel=563&r=2#p1659x1549', title: 'gegen SK Lehrte 5', text: '5' }]
+    - [{ url: '?staffel=563&r=3#p1659x1616', title: 'gegen SC Hämelerwald 2', text: 7½ }]
+    - [{ url: '?staffel=563&r=1#p1659x1581', title: 'gegen SV Gretenberg 3', text: 4½ }]
+    - {  }
+    - 10
+    - '32'
+    - ''
+-
+    - '4.'
+    - { text: 'PSC Hannover 5', url: '?mannschaft=1624', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=563&r=2#p1624x1551', title: 'gegen SV Laatzen 3', text: 2½ }]
+    - [{ url: '?staffel=563&r=1#p1624x1585', title: 'gegen SK Anderten 2', text: 1½ }]
+    - [{ url: '?staffel=563&r=7#p1624x1659', title: 'gegen HSK-Lister Turm 5', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=563&r=6#p1624x1638', title: 'gegen SD Isernhagen 3', text: 4½ }]
+    - [{ url: '?staffel=563&r=4#p1624x1549', title: 'gegen SK Lehrte 5', text: 2½ }]
+    - [{ url: '?staffel=563&r=5#p1624x1616', title: 'gegen SC Hämelerwald 2', text: 5½ }]
+    - [{ url: '?staffel=563&r=3#p1624x1581', title: 'gegen SV Gretenberg 3', text: '4' }]
+    - {  }
+    - 8
+    - 26½
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen 3', url: '?mannschaft=1638', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=563&r=3#p1638x1551', title: 'gegen SV Laatzen 3', text: '3' }]
+    - [{ url: '?staffel=563&r=5#p1638x1585', title: 'gegen SK Anderten 2', text: '3' }]
+    - [{ url: '?staffel=563&r=4#p1638x1659', title: 'gegen HSK-Lister Turm 5', text: '3' }]
+    - [{ url: '?staffel=563&r=6#p1638x1624', title: 'gegen PSC Hannover 5', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=563&r=1#p1638x1549', title: 'gegen SK Lehrte 5', text: '5' }]
+    - [{ url: '?staffel=563&r=2#p1638x1616', title: 'gegen SC Hämelerwald 2', text: 5½ }]
+    - [{ url: '?staffel=563&r=7#p1638x1581', title: 'gegen SV Gretenberg 3', text: 5½ }]
+    - {  }
+    - 6
+    - 28½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 5', url: '?mannschaft=1549', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=563&r=6#p1549x1551', title: 'gegen SV Laatzen 3', text: ½ }]
+    - [{ url: '?staffel=563&r=3#p1549x1585', title: 'gegen SK Anderten 2', text: 3½ }]
+    - [{ url: '?staffel=563&r=2#p1549x1659', title: 'gegen HSK-Lister Turm 5', text: '3' }]
+    - [{ url: '?staffel=563&r=4#p1549x1624', title: 'gegen PSC Hannover 5', text: 5½ }]
+    - [{ url: '?staffel=563&r=1#p1549x1638', title: 'gegen SD Isernhagen 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=563&r=7#p1549x1616', title: 'gegen SC Hämelerwald 2', text: 2½ }]
+    - [{ url: '?staffel=563&r=5#p1549x1581', title: 'gegen SV Gretenberg 3', text: '8' }]
+    - {  }
+    - 4
+    - '26'
+    - ''
+-
+    - '7.'
+    - { text: 'SC Hämelerwald 2', url: '?mannschaft=1616', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=563&r=1#p1616x1551', title: 'gegen SV Laatzen 3', text: '0' }]
+    - [{ url: '?staffel=563&r=4#p1616x1585', title: 'gegen SK Anderten 2', text: '2' }]
+    - [{ url: '?staffel=563&r=3#p1616x1659', title: 'gegen HSK-Lister Turm 5', text: ½ }]
+    - [{ url: '?staffel=563&r=5#p1616x1624', title: 'gegen PSC Hannover 5', text: 2½ }]
+    - [{ url: '?staffel=563&r=2#p1616x1638', title: 'gegen SD Isernhagen 3', text: 2½ }]
+    - [{ url: '?staffel=563&r=7#p1616x1549', title: 'gegen SK Lehrte 5', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=563&r=6#p1616x1581', title: 'gegen SV Gretenberg 3', text: '6' }]
+    - {  }
+    - 4
+    - '19'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Gretenberg 3', url: '?mannschaft=1581', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=563&r=4#p1581x1551', title: 'gegen SV Laatzen 3', text: '4' }]
+    - [{ url: '?staffel=563&r=2#p1581x1585', title: 'gegen SK Anderten 2', text: '1' }]
+    - [{ url: '?staffel=563&r=1#p1581x1659', title: 'gegen HSK-Lister Turm 5', text: 3½ }]
+    - [{ url: '?staffel=563&r=3#p1581x1624', title: 'gegen PSC Hannover 5', text: '3' }]
+    - [{ url: '?staffel=563&r=7#p1581x1638', title: 'gegen SD Isernhagen 3', text: 2½ }]
+    - [{ url: '?staffel=563&r=5#p1581x1549', title: 'gegen SK Lehrte 5', text: '0' }]
+    - [{ url: '?staffel=563&r=6#p1581x1616', title: 'gegen SC Hämelerwald 2', text: '2' }]
+    - xxx
+    - {  }
+    - 1
+    - '16'
+    - ''
+-
+    - '9.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=2623', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

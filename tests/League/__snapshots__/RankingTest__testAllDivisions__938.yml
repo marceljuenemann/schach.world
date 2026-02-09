@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC BS Gliesmarode', url: '?mannschaft=7779', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1776&r=4#p7779x7780', title: 'gegen Hamelner SV', text: '3' }]
+    - [{ url: '?staffel=1776&r=2#p7779x7777', title: 'gegen HSK Lister Turm', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1776&r=3#p7779x7771', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - [{ url: '?staffel=1776&r=5#p7779x7772', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1776&r=1#p7779x7776', title: 'gegen MTV Dannenberg', text: 3½ }]
+    - {  }
+    - {  }
+    - 8
+    - 13½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamelner SV', url: '?mannschaft=7780', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1776&r=4#p7780x7779', title: 'gegen SC BS Gliesmarode', text: '1' }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1776&r=2#p7780x7781', title: 'gegen Delmenhorster SK 2', text: '3' }]
+    - [{ url: '?staffel=1776&r=5#p7780x7771', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=1776&r=3#p7780x7772', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=1776&r=1#p7780x7778', title: 'gegen Hannover 96', text: '4' }]
+    - {  }
+    - {  }
+    - {  }
+    - 8
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=7777', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1776&r=2#p7777x7779', title: 'gegen SC BS Gliesmarode', text: '1' }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1776&r=3#p7777x7781', title: 'gegen Delmenhorster SK 2', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1776&r=4#p7777x7772', title: 'gegen SK Lehrte 3', text: '2' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1776&r=5#p7777x7775', title: 'gegen SZ Bemerode', text: '4' }]
+    - [{ url: '?staffel=1776&r=1#p7777x7773', title: 'gegen SC Papenburg 2', text: '3' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '4.'
+    - { text: 'Delmenhorster SK 2', url: '?mannschaft=7781', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1776&r=2#p7781x7780', title: 'gegen Hamelner SV', text: '1' }]
+    - [{ url: '?staffel=1776&r=3#p7781x7777', title: 'gegen HSK Lister Turm', text: '1' }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1776&r=5#p7781x7778', title: 'gegen Hannover 96', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1776&r=1#p7781x7775', title: 'gegen SZ Bemerode', text: '4' }]
+    - [{ url: '?staffel=1776&r=4#p7781x7773', title: 'gegen SC Papenburg 2', text: '4' }]
+    - 6
+    - '13'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=7771', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1776&r=3#p7771x7779', title: 'gegen SC BS Gliesmarode', text: 2½ }]
+    - [{ url: '?staffel=1776&r=5#p7771x7780', title: 'gegen Hamelner SV', text: '1' }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1776&r=1#p7771x7772', title: 'gegen SK Lehrte 3', text: 1½ }]
+    - [{ url: '?staffel=1776&r=4#p7771x7778', title: 'gegen Hannover 96', text: 2½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1776&r=2#p7771x7773', title: 'gegen SC Papenburg 2', text: '4' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=7772', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1776&r=5#p7772x7779', title: 'gegen SC BS Gliesmarode', text: 1½ }]
+    - [{ url: '?staffel=1776&r=3#p7772x7780', title: 'gegen Hamelner SV', text: 1½ }]
+    - [{ url: '?staffel=1776&r=4#p7772x7777', title: 'gegen HSK Lister Turm', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1776&r=1#p7772x7771', title: 'gegen SK Lehrte 2', text: 2½ }]
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1776&r=2#p7772x7776', title: 'gegen MTV Dannenberg', text: 2½ }]
+    - {  }
+    - {  }
+    - 5
+    - '10'
+    - ''
+-
+    - '7.'
+    - { text: 'Hannover 96', url: '?mannschaft=7778', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1776&r=1#p7778x7780', title: 'gegen Hamelner SV', text: '0' }]
+    - {  }
+    - [{ url: '?staffel=1776&r=5#p7778x7781', title: 'gegen Delmenhorster SK 2', text: '1' }]
+    - [{ url: '?staffel=1776&r=4#p7778x7771', title: 'gegen SK Lehrte 2', text: 1½ }]
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1776&r=3#p7778x7776', title: 'gegen MTV Dannenberg', text: '3' }]
+    - [{ url: '?staffel=1776&r=2#p7778x7775', title: 'gegen SZ Bemerode', text: '4' }]
+    - {  }
+    - 4
+    - 9½
+    - ''
+-
+    - '8.'
+    - { text: 'MTV Dannenberg', url: '?mannschaft=7776', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1776&r=1#p7776x7779', title: 'gegen SC BS Gliesmarode', text: ½ }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1776&r=2#p7776x7772', title: 'gegen SK Lehrte 3', text: 1½ }]
+    - [{ url: '?staffel=1776&r=3#p7776x7778', title: 'gegen Hannover 96', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1776&r=4#p7776x7775', title: 'gegen SZ Bemerode', text: '3' }]
+    - [{ url: '?staffel=1776&r=5#p7776x7773', title: 'gegen SC Papenburg 2', text: 3½ }]
+    - 4
+    - 9½
+    - ''
+-
+    - '9.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=7775', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1776&r=5#p7775x7777', title: 'gegen HSK Lister Turm', text: '0' }]
+    - [{ url: '?staffel=1776&r=1#p7775x7781', title: 'gegen Delmenhorster SK 2', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1776&r=2#p7775x7778', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=1776&r=4#p7775x7776', title: 'gegen MTV Dannenberg', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1776&r=3#p7775x7773', title: 'gegen SC Papenburg 2', text: '4' }]
+    - 2
+    - '5'
+    - ''
+-
+    - '10.'
+    - { text: 'SC Papenburg 2', url: '?mannschaft=7773', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1776&r=1#p7773x7777', title: 'gegen HSK Lister Turm', text: '1' }]
+    - [{ url: '?staffel=1776&r=4#p7773x7781', title: 'gegen Delmenhorster SK 2', text: '0' }]
+    - [{ url: '?staffel=1776&r=2#p7773x7771', title: 'gegen SK Lehrte 2', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1776&r=5#p7773x7776', title: 'gegen MTV Dannenberg', text: ½ }]
+    - [{ url: '?staffel=1776&r=3#p7773x7775', title: 'gegen SZ Bemerode', text: '0' }]
+    - xxx
+    - 0
+    - 1½
+    - ''

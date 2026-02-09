@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SHG Hildesheim', url: '?mannschaft=4872', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=995&r=2#p4872x4870', title: 'gegen SK Goslar 2', text: '1' }]
+    - [{ url: '?staffel=995&r=1#p4872x4871', title: 'gegen Hildesheimer SV', text: '3' }]
+    - [{ url: '?staffel=995&r=3#p4872x4869', title: 'gegen SK Goslar', text: 2½ }]
+    - 4
+    - 6½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=4870', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=995&r=2#p4870x4872', title: 'gegen SHG Hildesheim', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=995&r=3#p4870x4871', title: 'gegen Hildesheimer SV', text: '2' }]
+    - [{ url: '?staffel=995&r=1#p4870x4869', title: 'gegen SK Goslar', text: 1½ }]
+    - 3
+    - 6½
+    - ''
+-
+    - '3.'
+    - { text: 'Hildesheimer SV', url: '?mannschaft=4871', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=995&r=1#p4871x4872', title: 'gegen SHG Hildesheim', text: '1' }]
+    - [{ url: '?staffel=995&r=3#p4871x4870', title: 'gegen SK Goslar 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=995&r=2#p4871x4869', title: 'gegen SK Goslar', text: 2½ }]
+    - 3
+    - 5½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Goslar', url: '?mannschaft=4869', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=995&r=3#p4869x4872', title: 'gegen SHG Hildesheim', text: 1½ }]
+    - [{ url: '?staffel=995&r=1#p4869x4870', title: 'gegen SK Goslar 2', text: 2½ }]
+    - [{ url: '?staffel=995&r=2#p4869x4871', title: 'gegen Hildesheimer SV', text: 1½ }]
+    - xxx
+    - 2
+    - 5½
+    - ''

@@ -1,4 +1,4 @@
-<?
+<?php
 /* Automatische Versendung von Eingabelink-eMails
  *
  * Versendet die Eingabelinks und sollte täglich per Cronjob aufgerufen
@@ -22,7 +22,7 @@
     require_once ( "mail.eingabelink.inc.php" );
 
     // Paarungen sammeln
-    $paar = SED_Query ( "
+    $paar = SED_Query ( '
         SELECT p.mannschaft1 as mid, p.mannschaft2 mid2, ausr.id ausrichter, ausr.mf_email, p.id as paarung, p.staffel, p.runde, vs.turnier, vs.staffelleiter slname, vs.email slmail
         FROM paarungen as p
         INNER JOIN viewTermine vt ON vt.paarung=p.id
@@ -30,7 +30,7 @@
         INNER JOIN viewStaffeln vs ON vs.id=p.staffel
         WHERE vs.sysEingabelinks=1 AND p.linkGesendet=0 AND p.erg1 IS NULL
             AND vt.termin=DATE_ADD(CURDATE(),INTERVAL 3 DAY)
-        ORDER BY ausr.id")->fetchAllAssociative();
+        ORDER BY ausr.id')->fetchAllAssociative();
     echo count($paar) . " Paarungen gefunden\n";
 
     // eMails vorbereiten
@@ -45,7 +45,7 @@
         @SED_Eingabelinkmail ( $ausrichter, $paarungen );
         foreach ( $paarungen as $spiel ) {
             // Damit die Mail nicht nochmal versendet wird...
-            SED_Query( "UPDATE paarungen SET linkGesendet=1 WHERE id=? LIMIT 1", [$spiel['paarung']] );
+            SED_Query( 'UPDATE paarungen SET linkGesendet=1 WHERE id=? LIMIT 1', [$spiel['paarung']] );
         }
     }
 ?>

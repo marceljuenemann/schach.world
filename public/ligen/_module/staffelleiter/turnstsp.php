@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Spielplan
  *
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -20,7 +20,7 @@
   if ( isset ( $_POST ['hidden_paarungen'] ) )
   {
     // Alte löschen
-    if ( !mysql_query ( "DELETE FROM paarungen WHERE staffel=$admin[staffel] AND erg1 IS NULL AND erg2 IS NULL", $globals ['db'] ) )
+    if ( !SED_TryQuery ( 'DELETE FROM paarungen WHERE staffel=? AND erg1 IS NULL AND erg2 IS NULL', [$admin['staffel']] ) )
       SED_Error ( "Konnte alten Spielplan nicht l&ouml;schen!", true );
 
     // Einfügen
@@ -29,7 +29,7 @@
     {
       $tmp = explode ( "~", $paarung );
       if ( count ( $tmp ) == 4 )
-        mysql_query ( "INSERT INTO paarungen SET staffel=$admin[staffel], runde=$tmp[0], mannschaft1=$tmp[1], mannschaft2=$tmp[2]", $globals ['db'] );
+        SED_Query ( 'INSERT INTO paarungen SET staffel=?, runde=?, mannschaft1=?, mannschaft2=?', [$admin['staffel'], $tmp[0], $tmp[1], $tmp[2]] );
     }
 
     // Cache leeren
@@ -49,20 +49,20 @@
   /////////////////////////////////////////////
 
   // Abfragen
-  $rsrcTeamsAlle = mysql_query ( "SELECT m.id, g.lat, g.lon, m.staffel FROM mannschaften as m LEFT JOIN geodb as g ON g.plz=m.so_plz WHERE m.turnier=$globals[tid] ORDER BY m.name, m.mnr", $globals ['db'] );
-  $rsrcTeamsStaffel = mysql_query ( "SELECT m.id, g.lat, g.lon FROM mannschaften as m LEFT JOIN geodb as g ON g.plz=m.so_plz WHERE m.staffel=$admin[staffel] ORDER BY m.name, m.mnr", $globals ['db'] );
-  $rsrcPaarungen = mysql_query ( "SELECT runde, mannschaft1, mannschaft2 FROM paarungen WHERE staffel=$admin[staffel] AND erg1 IS NULL AND erg2 IS NULL", $globals ['db'] );
-  $isRunning = SED_Value("SELECT COUNT(*) FROM paarungen WHERE staffel=? LIMIT 1", [$admin['staffel']]);
+  $rsrcTeamsAlle = SED_Query ( 'SELECT m.id, g.lat, g.lon, m.staffel FROM mannschaften as m LEFT JOIN geodb as g ON g.plz=m.so_plz WHERE m.turnier=? ORDER BY m.name, m.mnr', [$globals['tid']] )->fetchAllAssociative();
+  $rsrcTeamsStaffel = SED_Query ( 'SELECT m.id, g.lat, g.lon FROM mannschaften as m LEFT JOIN geodb as g ON g.plz=m.so_plz WHERE m.staffel=? ORDER BY m.name, m.mnr', [$admin['staffel']] )->fetchAllAssociative();
+  $rsrcPaarungen = SED_Query ( 'SELECT runde, mannschaft1, mannschaft2 FROM paarungen WHERE staffel=? AND erg1 IS NULL AND erg2 IS NULL', [$admin['staffel']] )->fetchAllNumeric();
+  $isRunning = SED_Value('SELECT COUNT(*) FROM paarungen WHERE staffel=? LIMIT 1', [$admin['staffel']]);
 
   // Überprüfung
-  if ( !$rsrcTeamsStaffel || !mysql_num_rows ( $rsrcTeamsStaffel ) )
+  if ( count ( $rsrcTeamsStaffel ) == 0 )
     SED_Error ( "Sie haben dieser Staffel noch keine Mannschaften zugeordnet! Dies geht &uuml;ber die Funktion Bearbeiten.", false );
 
   // Überlegen, was gemacht wird
   $showInfopage = !$isRunning && !isset ( $_GET ['modus'] );
   $showInfobox = $isRunning;
-  $showTabelle = !$isRunning && !$showInfopage && mysql_num_rows ( $rsrcTeamsStaffel ) < 15;
   $showSchnelleingabe = !$isRunning && isset ( $_GET ['modus'] ) && $_GET ['modus'] == "schnell";
+  $showTabelle = !$isRunning && !$showInfopage && (count ( $rsrcTeamsStaffel ) < 15 || $showSchnelleingabe);
   $showPaarungen = !$showInfopage;
   $showKM = $showTabelle;
   $showButtons = !$showInfopage;
@@ -89,7 +89,7 @@
     // Über bereits eingegeben Paarungen informieren
     if ( $showInfobox )
     {
-        echo "<div class='sed_infomeldung'>Paarungen, deren Ergebnisse bereits eingegeben wurden, werden in dieser Ansicht nicht angezeigt! Um jene Paarungen zu bearbeiten, müssen Sie die Ergebnisse zun&auml;chst &uuml;ber die Paarungseinstellungen l&ouml;schen.</div>";
+        echo "<div class='sed_infomeldung'>Paarungen, deren Ergebnisse bereits eingegeben wurden, werden in dieser Ansicht nicht angezeigt! Um jene Paarungen zu bearbeiten, m&uuml;ssen Sie die Ergebnisse zun&auml;chst &uuml;ber die Paarungseinstellungen l&ouml;schen.</div>";
     }
 
 
@@ -102,28 +102,30 @@
     {
         // Paarungen mit Standart-Paarungstafel erzeugen
         require_once ( "paarungstafel.inc.php" );
-        $strPaarungen = Paarungstafel ( mysql_num_rows ( $rsrcTeamsStaffel ) );
+        $strPaarungen = Paarungstafel ( count ( $rsrcTeamsStaffel ) );
 
         // Die Standart-Bezeichnungen durch die Mannschaftsid ersetzen
-        mysql_data_seek ( $rsrcTeamsStaffel, 0 );
-        for ( $i = 1; $team = mysql_fetch_assoc ( $rsrcTeamsStaffel ); ++$i )
-            $strPaarungen = str_replace ( "m$i~", "$team[id]~", $strPaarungen );
+        $i = 1;
+        foreach ( $rsrcTeamsStaffel as $team ) {
+          $strPaarungen = str_replace ( "m$i~", "$team[id]~", $strPaarungen );
+          $i++;
+        }
     }
     else
     {
         // Vorhandene Paarungen in lesbares Format wandeln
-        while ( $tmp = mysql_fetch_array ( $rsrcPaarungen, MYSQL_NUM ) )
+        foreach ( $rsrcPaarungen as $tmp )
             $strPaarungen .= "$tmp[0]~$tmp[1]~$tmp[2]~;";
     }
 
     // Mannschaften und Zuordnungen generieren
-    mysql_data_seek ( $rsrcTeamsAlle, 0 );
-    mysql_data_seek ( $rsrcTeamsStaffel, 0 );
-    while ( $team = mysql_fetch_array ( $rsrcTeamsAlle, MYSQL_ASSOC ) )
+    foreach ( $rsrcTeamsAlle as $team )
         $strMannschaften .= "$team[id]~" . $globals ['teams'][$team ['id']] . "~$team[lat]~$team[lon];";
-    for ( $i = 1; $team = mysql_fetch_array ( $rsrcTeamsStaffel, MYSQL_ASSOC ); ++$i )
+    $i = 1;
+    foreach ( $rsrcTeamsStaffel as $team ) {
         $strZuordnungen .= "$team[id]~$i;";
-
+        $i++;
+    }
     // In Javascript und nach dem Absenden verfügbar machen
     echo "<input type='hidden' name='hidden_mannschaften' value='$strMannschaften' />";
     echo "<input type='hidden' name='hidden_zuordnungen' value='$strZuordnungen' />";
@@ -160,12 +162,10 @@
 
     // Mannschaftsauswahl
     $options = "";
-    mysql_data_seek ( $rsrcTeamsStaffel, 0 );
-    mysql_data_seek ( $rsrcTeamsAlle, 0 );
-    while ( $team = mysql_fetch_array ( $rsrcTeamsStaffel, MYSQL_ASSOC ) )
+    foreach ( $rsrcTeamsStaffel as $team )
       $options .= "<option value='$team[id]'>" . $globals ['teams'][$team ['id']] . "</option>";
     $options .= "<option value='0'>----------------</option>";
-    while ( $team = mysql_fetch_array ( $rsrcTeamsAlle, MYSQL_ASSOC ) )
+    foreach ( $rsrcTeamsAlle as $team )
       $options .= "<option value='$team[id]'>" . $globals ['teams'][$team ['id']] . "</option>";
 
     // Buttons
@@ -186,19 +186,19 @@
 
     // Kreuztabelle - Erste Zeile
     echo "<table class='sed_tabelle' cellspacing='0' cellpadding='3'><tr><th></th><th>Name</th>";
-    for ( $i = 1; $i <= mysql_num_rows ( $rsrcTeamsStaffel ); ++$i )
+    for ( $i = 1; $i <= count($rsrcTeamsStaffel); ++$i )
       echo "<th>$i</th>";
     echo "<th>Heim.</th><th></th></tr>";
 
     // Kreuztabelle - Inhalt
-    mysql_data_seek ( $rsrcTeamsStaffel, 0 );
-    for ( $i = 1; $team = mysql_fetch_assoc ( $rsrcTeamsStaffel ); ++$i )
+    $i = 1;
+    foreach( $rsrcTeamsStaffel as $team )
     {
       // Nummer und Mannschaft ausgeben
       echo "<tr><td>$i.</td><td id='KT-$i-N' class='l'><a href='javascript:var dummy=1;' onclick='QuickAdd($team[id]);'>" . $globals ['teams'][$team ['id']] . "</a>&nbsp;&nbsp;</td>";
 
       // Zelle ausgeben. Wird von Javascript gefüllt
-      for ( $j = 1; $j <= mysql_num_rows ( $rsrcTeamsStaffel ); ++$j )
+      for ( $j = 1; $j <= count($rsrcTeamsStaffel); ++$j )
       {
         $content = $i == $j ? "xxx" : "";
         echo "<td id='KT-$i-$j'>$content</td>";
@@ -208,6 +208,8 @@
       echo "<td id='KT-$i-H'>0</td>";
       echo "<td><a href='javascript:var dummy=1;' onclick='OnSwitch(".($i-1).",$i);'><img src='$globals[systemicons]up.gif' alt='Hoch' class='sed_admin_icon' /></a>";
       echo "<a href='javascript:var dummy=1;' onclick='OnSwitch($i,".($i+1).");'><img src='$globals[systemicons]down.gif' alt='Runter' class='sed_admin_icon' /></a></td></tr>";
+
+      $i++;
     }
     echo "</table><br /><br />";
   }
@@ -223,15 +225,17 @@
     echo "<span class='sed_hl2'>Entfernungs-Ausgleich</span><br /><br />";
     echo "<table><tr><td><table id='KM' style='display: none' class='sed_tabelle' cellspacing='0' cellpadding='3'>";
     echo "<tr><th>Name</th><th>km</th><th>Diff.</th></tr>";
-    mysql_data_seek ( $rsrcTeamsStaffel, 0 );
-    for ( $i = 1; $team = mysql_fetch_array ( $rsrcTeamsStaffel, MYSQL_ASSOC ); ++$i )
+    $i = 1;
+    foreach ( $rsrcTeamsStaffel as $team )
+    {
       echo "<tr><td id='KM-$i-N' class='l'>" . $globals ['teams'][$team ['id']] . "&nbsp;&nbsp;</td><td id='KM-$i-1'></td><td id='KM-$i-2'></td></tr>";
+      $i++;
+    }
     echo "</table><br /><br /></td>";
 
     // Deutschlandkarte
     $maplink = "";
-    mysql_data_seek ( $rsrcTeamsStaffel, 0 );
-    while ( $team = mysql_fetch_array ( $rsrcTeamsStaffel, MYSQL_ASSOC ) )
+    foreach ( $rsrcTeamsStaffel as $team )
       $maplink .= "$team[lat]-$team[lon]-;";
     echo "<td>&nbsp;&nbsp;&nbsp;<img src='$globals[basedir]/_inc/extern/MelliMap.php?locations=$maplink' alt='' style='height: 242px' /></td></tr></table>";
   }
@@ -248,8 +252,8 @@
     <span class='sed_hl2'>Spielplan speichern</span><br /><br />
     Sind Sie sicher, dass Sie den alten Spielplan unwideruflich mit den neuen Daten &uuml;berschreiben m&ouml;chten?<br /><br />
     <input type='submit' class='sed_submit' value='Speichern' />
-    <input type='button' class='sed_submit' value='Abbrechen' onclick="<? echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" />
-    <?
+    <input type='button' class='sed_submit' value='Abbrechen' onclick="<?php echo "location='?admin=desktop-$admin[userid]-$admin[session]';"; ?>" />
+    <?php
   }
   echo "</div></form>";
 ?>
@@ -333,7 +337,7 @@ function Optimize ()
 	}
 	$bestValue = OptBacktrack ($teams, 1, 999999999);
 
-	var max = <? echo mysql_num_rows ( $rsrcTeamsStaffel ); ?>;
+	var max = <?php echo count($rsrcTeamsStaffel); ?>;
 	for (var i = 1; i <= max; ++i){
 		for (var team in $optBestSolution){
 			if ($optBestSolution[team] === i){
@@ -346,7 +350,7 @@ function Optimize ()
 
 function OptBacktrack ( $teams, $pos, $bestValue )
 {
-	var max = <? echo mysql_num_rows ( $rsrcTeamsStaffel ); ?>;
+	var max = <?php echo count($rsrcTeamsStaffel); ?>;
 	if ($pos >= max){
 		if ($optCurrentValue < $bestValue){
 			$bestValue = $optCurrentValue;
@@ -381,7 +385,7 @@ function OptBacktrack ( $teams, $pos, $bestValue )
 
 function OptMove ( $team, $pos )
 {
-	var max = <? echo mysql_num_rows ( $rsrcTeamsStaffel ); ?>;
+	var max = <?php echo count($rsrcTeamsStaffel); ?>;
 	for (var i = $pos; i <= max; i += 1){
 		for (var j = i; j > $pos; j -= 1){
 			OnSwitch(j-1, j);
@@ -470,7 +474,7 @@ function KmCalc ()
   }
 
   // Abweichungungen berechnen
-  var $average = $average_sum / <? echo mysql_num_rows ( $rsrcTeamsStaffel ); ?>;
+  var $average = $average_sum / <?php echo count($rsrcTeamsStaffel); ?>;
   for ( $i = 1; $obj = document.getElementById ( "KM-" + $i + "-1" ); ++$i )
   {
     $temp = parseInt ( $obj.innerHTML );
@@ -603,7 +607,7 @@ function PvAdd ( $runde, $teamA, $teamB )
   $objTD1.style.textAlign = "left";
 
   // Zelle 2 (Bild mit Link)
-  $objIMG.setAttribute ( "src", "<? echo "$globals[systemicons]desk_loeschen.png"; ?>" );
+  $objIMG.setAttribute ( "src", "<?php echo "$globals[systemicons]desk_loeschen.png"; ?>" );
   $objIMG.setAttribute ( "alt", "Paarung l&ouml;schen" );
   $objIMG.style.border = "none";
   $objA.setAttribute ( "href", "javascript:OnDelPaar("+$runde+", "+$teamA+", "+$teamB+");" );

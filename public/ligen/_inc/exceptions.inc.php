@@ -1,4 +1,4 @@
-<?
+<?php
 class UnknownIDException extends Exception
 {
     // Die Exceptionmitteilung neu definieren, damit diese nicht optional ist

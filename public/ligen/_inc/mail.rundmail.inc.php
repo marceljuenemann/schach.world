@@ -1,4 +1,4 @@
-<?
+<?php
 /* Rundmail
  *
  * Zum Versenden von Rundmails innerhalb der Staffel.
@@ -26,8 +26,8 @@ class SED_Rundmail {
         $this->infos = SED_Row('SELECT s.name as staffel, b.name, b.email, b.telefon FROM staffeln as s INNER JOIN benutzer as b ON s.leiter=b.id WHERE s.id=? LIMIT 1', [$staffel]);
 
         // MySQL-Abfragen: Mannschaftsführer, Zusatzempfänger
-        $this->mannschaften = SED_Query ( "SELECT id, mf_name name, mf_email email FROM mannschaften as m WHERE m.staffel=? ORDER BY m.name", [$staffel] )->fetchAllAssociative();
-        $this->zusatzempfaenger = SED_Query ( "SELECT z.mannschaft, z.email FROM mannschaften m INNER JOIN zusatzempfaenger z ON z.mannschaft=m.id WHERE m.staffel=? and z.rundmail=1", [$staffel])->fetchAllAssociative();
+        $this->mannschaften = SED_Query ( 'SELECT id, mf_name name, mf_email email FROM mannschaften as m WHERE m.staffel=? ORDER BY m.name', [$staffel] )->fetchAllAssociative();
+        $this->zusatzempfaenger = SED_Query ( 'SELECT z.mannschaft, z.email FROM mannschaften m INNER JOIN zusatzempfaenger z ON z.mannschaft=m.id WHERE m.staffel=? and z.rundmail=1', [$staffel])->fetchAllAssociative();
 
         // Rundenzahl
         $this->rundenzahl = SED_GetRundenzahl ( $staffel );

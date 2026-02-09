@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Niederwiesa', url: '?mannschaft=4888', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1024&r=5#p4888x5228', title: 'gegen Rodewischer SM', text: '2' }]
+    - [{ url: '?staffel=1024&r=2#p4888x4954', title: 'gegen Seeblick', text: '4' }]
+    - [{ url: '?staffel=1024&r=6#p4888x5048', title: 'gegen SG GW Dresden', text: '3' }]
+    - [{ url: '?staffel=1024&r=4#p4888x5083', title: 'gegen USG Chemnitz', text: '3' }]
+    - [{ url: '?staffel=1024&r=3#p4888x5030', title: 'gegen SF Friedrichshagen', text: 3½ }]
+    - {  }
+    - 9
+    - 15½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Rodewischer SM', url: '?mannschaft=5228', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1024&r=5#p5228x4888', title: 'gegen SV Niederwiesa', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1024&r=4#p5228x4954', title: 'gegen Seeblick', text: '2' }]
+    - [{ url: '?staffel=1024&r=2#p5228x5048', title: 'gegen SG GW Dresden', text: '4' }]
+    - [{ url: '?staffel=1024&r=3#p5228x5083', title: 'gegen USG Chemnitz', text: 1½ }]
+    - [{ url: '?staffel=1024&r=1#p5228x5030', title: 'gegen SF Friedrichshagen', text: '4' }]
+    - {  }
+    - 6
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: Seeblick, url: '?mannschaft=4954', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1024&r=2#p4954x4888', title: 'gegen SV Niederwiesa', text: '0' }]
+    - [{ url: '?staffel=1024&r=4#p4954x5228', title: 'gegen Rodewischer SM', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1024&r=3#p4954x5048', title: 'gegen SG GW Dresden', text: '2' }]
+    - [{ url: '?staffel=1024&r=5#p4954x5083', title: 'gegen USG Chemnitz', text: 3½ }]
+    - [{ url: '?staffel=1024&r=6#p4954x5030', title: 'gegen SF Friedrichshagen', text: '4' }]
+    - {  }
+    - 6
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SG GW Dresden', url: '?mannschaft=5048', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1024&r=6#p5048x4888', title: 'gegen SV Niederwiesa', text: '1' }]
+    - [{ url: '?staffel=1024&r=2#p5048x5228', title: 'gegen Rodewischer SM', text: '0' }]
+    - [{ url: '?staffel=1024&r=3#p5048x4954', title: 'gegen Seeblick', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1024&r=1#p5048x5083', title: 'gegen USG Chemnitz', text: 2½ }]
+    - [{ url: '?staffel=1024&r=5#p5048x5030', title: 'gegen SF Friedrichshagen', text: 3½ }]
+    - {  }
+    - 5
+    - '9'
+    - ''
+-
+    - '5.'
+    - { text: 'USG Chemnitz', url: '?mannschaft=5083', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1024&r=4#p5083x4888', title: 'gegen SV Niederwiesa', text: '1' }]
+    - [{ url: '?staffel=1024&r=3#p5083x5228', title: 'gegen Rodewischer SM', text: 2½ }]
+    - [{ url: '?staffel=1024&r=5#p5083x4954', title: 'gegen Seeblick', text: ½ }]
+    - [{ url: '?staffel=1024&r=1#p5083x5048', title: 'gegen SG GW Dresden', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1024&r=2#p5083x5030', title: 'gegen SF Friedrichshagen', text: 2½ }]
+    - {  }
+    - 4
+    - '8'
+    - ''
+-
+    - '6.'
+    - { text: 'SF Friedrichshagen', url: '?mannschaft=5030', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1024&r=3#p5030x4888', title: 'gegen SV Niederwiesa', text: ½ }]
+    - [{ url: '?staffel=1024&r=1#p5030x5228', title: 'gegen Rodewischer SM', text: '0' }]
+    - [{ url: '?staffel=1024&r=6#p5030x4954', title: 'gegen Seeblick', text: '0' }]
+    - [{ url: '?staffel=1024&r=5#p5030x5048', title: 'gegen SG GW Dresden', text: ½ }]
+    - [{ url: '?staffel=1024&r=2#p5030x5083', title: 'gegen USG Chemnitz', text: 1½ }]
+    - xxx
+    - {  }
+    - 0
+    - 2½
+    - absteiger
+-
+    - '7.'
+    - { text: 'CSC Aufbau 95', url: '?mannschaft=5675', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - absteiger

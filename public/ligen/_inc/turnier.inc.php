@@ -1,4 +1,4 @@
-<?
+<?php
 /* Turnierdaten laden
  *
  * Findet die ID des gewählten Turniers heraus und lädt einige grund-
@@ -14,50 +14,18 @@
  * @subpackage main
  */
 
-  $bridge = SED_Bridge();
-  $league = $bridge->league;
-
-  // Felder aus Turnier-Tabelle in $prefs speichern
-  global $globals;
-  global $prefs;
-  $globals['tid'] = $league->id;
-  $prefs = SED_Query("SELECT t.* FROM turniere as t WHERE t.id=?", [$globals['tid']])->fetchAssociative();
-
-  // Fehler?
-  if ( !is_array ( $prefs ) )
-    SED_Error ( "Das Turnier scheint nicht zu existieren!", true );
-
-  // Template berechnen
-  $globals ['templatedir'] = "$globals[basedir]/_templates/nsv2020";
-
-  // Neu: basepath bei allen Links mit ausgeben.
-  $globals ['basepath'] = "/ligen/$prefs[directory]";
-
-  // Staffeln
-  $globals ['staffeln'] = array ();
-  foreach ($league->divisions as $division) {
-    $globals['staffeln'][$division->id] = $division->name;
-  }
-  if ($bridge->division) {
-    $_GET['staffel'] = $bridge->division->id;
-  }
-  
-  // Mannschaften
-  $globals ['teams'] = array ();
-  foreach ($league->teams as $team) {
-    $globals['teams'][$team->id] = $team->nameWithNumber();
-  }
+  require('turnier-bootstrap.inc.php');
 
   // Liefert zu einem Spieltag den Timestamp
   function SED_GetTermin ( $runde, $staffel, $datumsformat = '%d.%m.%Y' )
   {
     global $globals;
     // Eigentlich gibt es mittlerweile ja viewStaffeltermine, allerdings funktioniert das hier auch, wenn keine Turniertermine festgelegt wurden, sondern nur Staffeltermine
-    return SED_Query("
-      SELECT DATE_FORMAT(te.datum,'$datumsformat') as datum
+    return SED_Query('
+      SELECT DATE_FORMAT(te.datum,\''.$datumsformat.'\') as datum
       FROM termine as te
       WHERE te.turnier=? and te.runde=? and (te.staffel is null or te.staffel=?)
-      ORDER BY staffel DESC LIMIT 1",
+      ORDER BY staffel DESC LIMIT 1',
       [
         $globals['tid'],
         $runde,
@@ -80,8 +48,8 @@
             return $prefs [$feld];
 
     // Abfragen, ob die Anzahl vom Turnier-Standart abweicht
-    return SED_Value("
-      SELECT IF($feld IS NULL,".$prefs[$feld].",$feld) FROM staffeln WHERE id=?",
+    return SED_Value('
+      SELECT IF('.$feld.' IS NULL,'.$prefs[$feld].','.$feld.') FROM staffeln WHERE id=?',
       [$staffel]
     );
   }
@@ -89,7 +57,7 @@
   // Liefert die letzte Runde in der eine Paarung gesetzt ist
   function SED_GetLetzteRunde ( $staffel )
   {
-    return SED_Query("SELECT MAX( runde )  FROM paarungen WHERE staffel=?", [$staffel])->fetchOne();
+    return SED_Query('SELECT MAX( runde )  FROM paarungen WHERE staffel=?', [$staffel])->fetchOne();
   }
 
   // Liefert die Anzahl der Bretter einer Staffel

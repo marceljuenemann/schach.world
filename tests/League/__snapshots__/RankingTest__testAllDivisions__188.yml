@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Wildeshausen', url: '?mannschaft=2194', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=610&r=9#p2194x2203', title: 'gegen Hagener SV', text: 5½ }]
+    - [{ url: '?staffel=610&r=6#p2194x2198', title: 'gegen Nordhorn-Blanke 2', text: '7' }]
+    - [{ url: '?staffel=610&r=5#p2194x2199', title: 'gegen SC Bad Zwischenahn', text: '6' }]
+    - [{ url: '?staffel=610&r=3#p2194x2202', title: 'gegen KS Emden', text: '5' }]
+    - [{ url: '?staffel=610&r=2#p2194x2201', title: 'gegen Weißer Turm Rastede', text: 5½ }]
+    - [{ url: '?staffel=610&r=7#p2194x2196', title: 'gegen SG Osnabrück 2', text: '5' }]
+    - [{ url: '?staffel=610&r=8#p2194x2197', title: 'gegen Nordhorn-Blanke 3', text: 6½ }]
+    - [{ url: '?staffel=610&r=1#p2194x2200', title: 'gegen Wilhelmshavener SC', text: '7' }]
+    - [{ url: '?staffel=610&r=4#p2194x2195', title: 'gegen SV Hellern 2', text: '5' }]
+    - 18
+    - 52½
+    - ''
+-
+    - '2.'
+    - { text: 'Hagener SV', url: '?mannschaft=2203', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=610&r=9#p2203x2194', title: 'gegen SK Wildeshausen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=610&r=4#p2203x2198', title: 'gegen Nordhorn-Blanke 2', text: 3½ }]
+    - [{ url: '?staffel=610&r=2#p2203x2199', title: 'gegen SC Bad Zwischenahn', text: '6' }]
+    - [{ url: '?staffel=610&r=6#p2203x2202', title: 'gegen KS Emden', text: '6' }]
+    - [{ url: '?staffel=610&r=7#p2203x2201', title: 'gegen Weißer Turm Rastede', text: '6' }]
+    - [{ url: '?staffel=610&r=8#p2203x2196', title: 'gegen SG Osnabrück 2', text: 4½ }]
+    - [{ url: '?staffel=610&r=5#p2203x2197', title: 'gegen Nordhorn-Blanke 3', text: '6' }]
+    - [{ url: '?staffel=610&r=3#p2203x2200', title: 'gegen Wilhelmshavener SC', text: 6½ }]
+    - [{ url: '?staffel=610&r=1#p2203x2195', title: 'gegen SV Hellern 2', text: '6' }]
+    - 14
+    - '47'
+    - ''
+-
+    - '3.'
+    - { text: 'Nordhorn-Blanke 2', url: '?mannschaft=2198', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=610&r=6#p2198x2194', title: 'gegen SK Wildeshausen', text: '1' }]
+    - [{ url: '?staffel=610&r=4#p2198x2203', title: 'gegen Hagener SV', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=610&r=3#p2198x2199', title: 'gegen SC Bad Zwischenahn', text: '4' }]
+    - [{ url: '?staffel=610&r=8#p2198x2202', title: 'gegen KS Emden', text: 4½ }]
+    - [{ url: '?staffel=610&r=9#p2198x2201', title: 'gegen Weißer Turm Rastede', text: 5½ }]
+    - [{ url: '?staffel=610&r=5#p2198x2196', title: 'gegen SG Osnabrück 2', text: 4½ }]
+    - [{ url: '?staffel=610&r=1#p2198x2197', title: 'gegen Nordhorn-Blanke 3', text: 4½ }]
+    - [{ url: '?staffel=610&r=2#p2198x2200', title: 'gegen Wilhelmshavener SC', text: '4' }]
+    - [{ url: '?staffel=610&r=7#p2198x2195', title: 'gegen SV Hellern 2', text: 5½ }]
+    - 14
+    - '38'
+    - ''
+-
+    - '4.'
+    - { text: 'SC Bad Zwischenahn', url: '?mannschaft=2199', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=610&r=5#p2199x2194', title: 'gegen SK Wildeshausen', text: '2' }]
+    - [{ url: '?staffel=610&r=2#p2199x2203', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=610&r=3#p2199x2198', title: 'gegen Nordhorn-Blanke 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=610&r=7#p2199x2202', title: 'gegen KS Emden', text: '5' }]
+    - [{ url: '?staffel=610&r=1#p2199x2201', title: 'gegen Weißer Turm Rastede', text: '5' }]
+    - [{ url: '?staffel=610&r=4#p2199x2196', title: 'gegen SG Osnabrück 2', text: 4½ }]
+    - [{ url: '?staffel=610&r=9#p2199x2197', title: 'gegen Nordhorn-Blanke 3', text: '2' }]
+    - [{ url: '?staffel=610&r=8#p2199x2200', title: 'gegen Wilhelmshavener SC', text: '5' }]
+    - [{ url: '?staffel=610&r=6#p2199x2195', title: 'gegen SV Hellern 2', text: 6½ }]
+    - 11
+    - '36'
+    - ''
+-
+    - '5.'
+    - { text: 'KS Emden', url: '?mannschaft=2202', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=610&r=3#p2202x2194', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=610&r=6#p2202x2203', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=610&r=8#p2202x2198', title: 'gegen Nordhorn-Blanke 2', text: 3½ }]
+    - [{ url: '?staffel=610&r=7#p2202x2199', title: 'gegen SC Bad Zwischenahn', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=610&r=5#p2202x2201', title: 'gegen Weißer Turm Rastede', text: '5' }]
+    - [{ url: '?staffel=610&r=1#p2202x2196', title: 'gegen SG Osnabrück 2', text: '5' }]
+    - [{ url: '?staffel=610&r=2#p2202x2197', title: 'gegen Nordhorn-Blanke 3', text: '5' }]
+    - [{ url: '?staffel=610&r=4#p2202x2200', title: 'gegen Wilhelmshavener SC', text: '6' }]
+    - [{ url: '?staffel=610&r=9#p2202x2195', title: 'gegen SV Hellern 2', text: 3½ }]
+    - 8
+    - '36'
+    - ''
+-
+    - '6.'
+    - { text: 'Weißer Turm Rastede', url: '?mannschaft=2201', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=610&r=2#p2201x2194', title: 'gegen SK Wildeshausen', text: 2½ }]
+    - [{ url: '?staffel=610&r=7#p2201x2203', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=610&r=9#p2201x2198', title: 'gegen Nordhorn-Blanke 2', text: 2½ }]
+    - [{ url: '?staffel=610&r=1#p2201x2199', title: 'gegen SC Bad Zwischenahn', text: '3' }]
+    - [{ url: '?staffel=610&r=5#p2201x2202', title: 'gegen KS Emden', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=610&r=3#p2201x2196', title: 'gegen SG Osnabrück 2', text: '4' }]
+    - [{ url: '?staffel=610&r=4#p2201x2197', title: 'gegen Nordhorn-Blanke 3', text: 5½ }]
+    - [{ url: '?staffel=610&r=6#p2201x2200', title: 'gegen Wilhelmshavener SC', text: '7' }]
+    - [{ url: '?staffel=610&r=8#p2201x2195', title: 'gegen SV Hellern 2', text: 4½ }]
+    - 7
+    - '34'
+    - ''
+-
+    - '7.'
+    - { text: 'SG Osnabrück 2', url: '?mannschaft=2196', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=610&r=7#p2196x2194', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=610&r=8#p2196x2203', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=610&r=5#p2196x2198', title: 'gegen Nordhorn-Blanke 2', text: 3½ }]
+    - [{ url: '?staffel=610&r=4#p2196x2199', title: 'gegen SC Bad Zwischenahn', text: 3½ }]
+    - [{ url: '?staffel=610&r=1#p2196x2202', title: 'gegen KS Emden', text: '3' }]
+    - [{ url: '?staffel=610&r=3#p2196x2201', title: 'gegen Weißer Turm Rastede', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=610&r=6#p2196x2197', title: 'gegen Nordhorn-Blanke 3', text: '5' }]
+    - [{ url: '?staffel=610&r=9#p2196x2200', title: 'gegen Wilhelmshavener SC', text: 1½ }]
+    - [{ url: '?staffel=610&r=2#p2196x2195', title: 'gegen SV Hellern 2', text: '5' }]
+    - 5
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'Nordhorn-Blanke 3', url: '?mannschaft=2197', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=610&r=8#p2197x2194', title: 'gegen SK Wildeshausen', text: 1½ }]
+    - [{ url: '?staffel=610&r=5#p2197x2203', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=610&r=1#p2197x2198', title: 'gegen Nordhorn-Blanke 2', text: 3½ }]
+    - [{ url: '?staffel=610&r=9#p2197x2199', title: 'gegen SC Bad Zwischenahn', text: '6' }]
+    - [{ url: '?staffel=610&r=2#p2197x2202', title: 'gegen KS Emden', text: '3' }]
+    - [{ url: '?staffel=610&r=4#p2197x2201', title: 'gegen Weißer Turm Rastede', text: 2½ }]
+    - [{ url: '?staffel=610&r=6#p2197x2196', title: 'gegen SG Osnabrück 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=610&r=7#p2197x2200', title: 'gegen Wilhelmshavener SC', text: '4' }]
+    - [{ url: '?staffel=610&r=3#p2197x2195', title: 'gegen SV Hellern 2', text: 4½ }]
+    - 5
+    - '30'
+    - ''
+-
+    - '9.'
+    - { text: 'Wilhelmshavener SC', url: '?mannschaft=2200', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=610&r=1#p2200x2194', title: 'gegen SK Wildeshausen', text: '1' }]
+    - [{ url: '?staffel=610&r=3#p2200x2203', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=610&r=2#p2200x2198', title: 'gegen Nordhorn-Blanke 2', text: '4' }]
+    - [{ url: '?staffel=610&r=8#p2200x2199', title: 'gegen SC Bad Zwischenahn', text: '3' }]
+    - [{ url: '?staffel=610&r=4#p2200x2202', title: 'gegen KS Emden', text: '2' }]
+    - [{ url: '?staffel=610&r=6#p2200x2201', title: 'gegen Weißer Turm Rastede', text: '1' }]
+    - [{ url: '?staffel=610&r=9#p2200x2196', title: 'gegen SG Osnabrück 2', text: 5½ }]
+    - [{ url: '?staffel=610&r=7#p2200x2197', title: 'gegen Nordhorn-Blanke 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=610&r=5#p2200x2195', title: 'gegen SV Hellern 2', text: '4' }]
+    - 5
+    - '26'
+    - ''
+-
+    - '10.'
+    - { text: 'SV Hellern 2', url: '?mannschaft=2195', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=610&r=4#p2195x2194', title: 'gegen SK Wildeshausen', text: '3' }]
+    - [{ url: '?staffel=610&r=1#p2195x2203', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=610&r=7#p2195x2198', title: 'gegen Nordhorn-Blanke 2', text: 2½ }]
+    - [{ url: '?staffel=610&r=6#p2195x2199', title: 'gegen SC Bad Zwischenahn', text: 1½ }]
+    - [{ url: '?staffel=610&r=9#p2195x2202', title: 'gegen KS Emden', text: 4½ }]
+    - [{ url: '?staffel=610&r=8#p2195x2201', title: 'gegen Weißer Turm Rastede', text: 3½ }]
+    - [{ url: '?staffel=610&r=2#p2195x2196', title: 'gegen SG Osnabrück 2', text: '3' }]
+    - [{ url: '?staffel=610&r=3#p2195x2197', title: 'gegen Nordhorn-Blanke 3', text: 3½ }]
+    - [{ url: '?staffel=610&r=5#p2195x2200', title: 'gegen Wilhelmshavener SC', text: '4' }]
+    - xxx
+    - 3
+    - 27½
+    - ''

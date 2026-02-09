@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bad Essen', url: '?mannschaft=2393', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=669&r=6#p2393x2385', title: 'gegen SK Nordhorn-Bl. 3', text: '4' }]
+    - [{ url: '?staffel=669&r=3#p2393x2407', title: 'gegen SV Hellern 2', text: '8' }]
+    - [{ url: '?staffel=669&r=2#p2393x2436', title: 'gegen Hagener SV 2', text: 4½ }]
+    - [{ url: '?staffel=669&r=8#p2393x2477', title: 'gegen Veldhausen/Uel.', text: 6½ }]
+    - [{ url: '?staffel=669&r=4#p2393x2445', title: 'gegen Rochade Hollage', text: 5½ }]
+    - [{ url: '?staffel=669&r=1#p2393x2420', title: 'gegen Bentheim/Nordho', text: '6' }]
+    - [{ url: '?staffel=669&r=5#p2393x2408', title: 'gegen SV Hellern 3', text: '6' }]
+    - [{ url: '?staffel=669&r=7#p2393x2450', title: 'gegen SC Fürstenau', text: 6½ }]
+    - [{ url: '?staffel=669&r=9#p2393x2427', title: 'gegen SK Meppen', text: '6' }]
+    - 17
+    - '53'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Nordhorn-Bl. 3', url: '?mannschaft=2385', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=669&r=6#p2385x2393', title: 'gegen SV Bad Essen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=669&r=4#p2385x2407', title: 'gegen SV Hellern 2', text: 6½ }]
+    - [{ url: '?staffel=669&r=3#p2385x2436', title: 'gegen Hagener SV 2', text: '5' }]
+    - [{ url: '?staffel=669&r=9#p2385x2477', title: 'gegen Veldhausen/Uel.', text: '5' }]
+    - [{ url: '?staffel=669&r=5#p2385x2445', title: 'gegen Rochade Hollage', text: '5' }]
+    - [{ url: '?staffel=669&r=2#p2385x2420', title: 'gegen Bentheim/Nordho', text: '4' }]
+    - [{ url: '?staffel=669&r=7#p2385x2408', title: 'gegen SV Hellern 3', text: '6' }]
+    - [{ url: '?staffel=669&r=8#p2385x2450', title: 'gegen SC Fürstenau', text: '6' }]
+    - [{ url: '?staffel=669&r=1#p2385x2427', title: 'gegen SK Meppen', text: '6' }]
+    - 16
+    - 47½
+    - ''
+-
+    - '3.'
+    - { text: 'SV Hellern 2', url: '?mannschaft=2407', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=669&r=3#p2407x2393', title: 'gegen SV Bad Essen', text: '0' }]
+    - [{ url: '?staffel=669&r=4#p2407x2385', title: 'gegen SK Nordhorn-Bl. 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=669&r=9#p2407x2436', title: 'gegen Hagener SV 2', text: '4' }]
+    - [{ url: '?staffel=669&r=6#p2407x2477', title: 'gegen Veldhausen/Uel.', text: 4½ }]
+    - [{ url: '?staffel=669&r=2#p2407x2445', title: 'gegen Rochade Hollage', text: 5½ }]
+    - [{ url: '?staffel=669&r=8#p2407x2420', title: 'gegen Bentheim/Nordho', text: '5' }]
+    - [{ url: '?staffel=669&r=1#p2407x2408', title: 'gegen SV Hellern 3', text: '4' }]
+    - [{ url: '?staffel=669&r=5#p2407x2450', title: 'gegen SC Fürstenau', text: 6½ }]
+    - [{ url: '?staffel=669&r=7#p2407x2427', title: 'gegen SK Meppen', text: 6½ }]
+    - 12
+    - 37½
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV 2', url: '?mannschaft=2436', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=669&r=2#p2436x2393', title: 'gegen SV Bad Essen', text: 3½ }]
+    - [{ url: '?staffel=669&r=3#p2436x2385', title: 'gegen SK Nordhorn-Bl. 3', text: '3' }]
+    - [{ url: '?staffel=669&r=9#p2436x2407', title: 'gegen SV Hellern 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=669&r=5#p2436x2477', title: 'gegen Veldhausen/Uel.', text: 5½ }]
+    - [{ url: '?staffel=669&r=1#p2436x2445', title: 'gegen Rochade Hollage', text: 5½ }]
+    - [{ url: '?staffel=669&r=7#p2436x2420', title: 'gegen Bentheim/Nordho', text: 6½ }]
+    - [{ url: '?staffel=669&r=8#p2436x2408', title: 'gegen SV Hellern 3', text: '4' }]
+    - [{ url: '?staffel=669&r=4#p2436x2450', title: 'gegen SC Fürstenau', text: 3½ }]
+    - [{ url: '?staffel=669&r=6#p2436x2427', title: 'gegen SK Meppen', text: '7' }]
+    - 10
+    - 42½
+    - ''
+-
+    - '5.'
+    - { text: Veldhausen/Uel., url: '?mannschaft=2477', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=669&r=8#p2477x2393', title: 'gegen SV Bad Essen', text: 1½ }]
+    - [{ url: '?staffel=669&r=9#p2477x2385', title: 'gegen SK Nordhorn-Bl. 3', text: '3' }]
+    - [{ url: '?staffel=669&r=6#p2477x2407', title: 'gegen SV Hellern 2', text: 3½ }]
+    - [{ url: '?staffel=669&r=5#p2477x2436', title: 'gegen Hagener SV 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=669&r=7#p2477x2445', title: 'gegen Rochade Hollage', text: '6' }]
+    - [{ url: '?staffel=669&r=4#p2477x2420', title: 'gegen Bentheim/Nordho', text: 4½ }]
+    - [{ url: '?staffel=669&r=2#p2477x2408', title: 'gegen SV Hellern 3', text: 4½ }]
+    - [{ url: '?staffel=669&r=1#p2477x2450', title: 'gegen SC Fürstenau', text: 4½ }]
+    - [{ url: '?staffel=669&r=3#p2477x2427', title: 'gegen SK Meppen', text: 4½ }]
+    - 10
+    - 34½
+    - ''
+-
+    - '6.'
+    - { text: 'Rochade Hollage', url: '?mannschaft=2445', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=669&r=4#p2445x2393', title: 'gegen SV Bad Essen', text: 2½ }]
+    - [{ url: '?staffel=669&r=5#p2445x2385', title: 'gegen SK Nordhorn-Bl. 3', text: '3' }]
+    - [{ url: '?staffel=669&r=2#p2445x2407', title: 'gegen SV Hellern 2', text: 2½ }]
+    - [{ url: '?staffel=669&r=1#p2445x2436', title: 'gegen Hagener SV 2', text: 2½ }]
+    - [{ url: '?staffel=669&r=7#p2445x2477', title: 'gegen Veldhausen/Uel.', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=669&r=9#p2445x2420', title: 'gegen Bentheim/Nordho', text: '6' }]
+    - [{ url: '?staffel=669&r=3#p2445x2408', title: 'gegen SV Hellern 3', text: '5' }]
+    - [{ url: '?staffel=669&r=6#p2445x2450', title: 'gegen SC Fürstenau', text: 5½ }]
+    - [{ url: '?staffel=669&r=8#p2445x2427', title: 'gegen SK Meppen', text: '6' }]
+    - 8
+    - '35'
+    - ''
+-
+    - '7.'
+    - { text: Bentheim/Nordho, url: '?mannschaft=2420', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=669&r=1#p2420x2393', title: 'gegen SV Bad Essen', text: '2' }]
+    - [{ url: '?staffel=669&r=2#p2420x2385', title: 'gegen SK Nordhorn-Bl. 3', text: '4' }]
+    - [{ url: '?staffel=669&r=8#p2420x2407', title: 'gegen SV Hellern 2', text: '3' }]
+    - [{ url: '?staffel=669&r=7#p2420x2436', title: 'gegen Hagener SV 2', text: 1½ }]
+    - [{ url: '?staffel=669&r=4#p2420x2477', title: 'gegen Veldhausen/Uel.', text: 3½ }]
+    - [{ url: '?staffel=669&r=9#p2420x2445', title: 'gegen Rochade Hollage', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=669&r=6#p2420x2408', title: 'gegen SV Hellern 3', text: '6' }]
+    - [{ url: '?staffel=669&r=3#p2420x2450', title: 'gegen SC Fürstenau', text: '5' }]
+    - [{ url: '?staffel=669&r=5#p2420x2427', title: 'gegen SK Meppen', text: 5½ }]
+    - 7
+    - 32½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Hellern 3', url: '?mannschaft=2408', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=669&r=5#p2408x2393', title: 'gegen SV Bad Essen', text: '2' }]
+    - [{ url: '?staffel=669&r=7#p2408x2385', title: 'gegen SK Nordhorn-Bl. 3', text: '2' }]
+    - [{ url: '?staffel=669&r=1#p2408x2407', title: 'gegen SV Hellern 2', text: '4' }]
+    - [{ url: '?staffel=669&r=8#p2408x2436', title: 'gegen Hagener SV 2', text: '4' }]
+    - [{ url: '?staffel=669&r=2#p2408x2477', title: 'gegen Veldhausen/Uel.', text: 3½ }]
+    - [{ url: '?staffel=669&r=3#p2408x2445', title: 'gegen Rochade Hollage', text: '3' }]
+    - [{ url: '?staffel=669&r=6#p2408x2420', title: 'gegen Bentheim/Nordho', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=669&r=9#p2408x2450', title: 'gegen SC Fürstenau', text: 5½ }]
+    - [{ url: '?staffel=669&r=4#p2408x2427', title: 'gegen SK Meppen', text: 2½ }]
+    - 4
+    - 28½
+    - ''
+-
+    - '9.'
+    - { text: 'SC Fürstenau', url: '?mannschaft=2450', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=669&r=7#p2450x2393', title: 'gegen SV Bad Essen', text: 1½ }]
+    - [{ url: '?staffel=669&r=8#p2450x2385', title: 'gegen SK Nordhorn-Bl. 3', text: '2' }]
+    - [{ url: '?staffel=669&r=5#p2450x2407', title: 'gegen SV Hellern 2', text: 1½ }]
+    - [{ url: '?staffel=669&r=4#p2450x2436', title: 'gegen Hagener SV 2', text: 4½ }]
+    - [{ url: '?staffel=669&r=1#p2450x2477', title: 'gegen Veldhausen/Uel.', text: 3½ }]
+    - [{ url: '?staffel=669&r=6#p2450x2445', title: 'gegen Rochade Hollage', text: 2½ }]
+    - [{ url: '?staffel=669&r=3#p2450x2420', title: 'gegen Bentheim/Nordho', text: '3' }]
+    - [{ url: '?staffel=669&r=9#p2450x2408', title: 'gegen SV Hellern 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=669&r=2#p2450x2427', title: 'gegen SK Meppen', text: '5' }]
+    - 4
+    - '26'
+    - ''
+-
+    - '10.'
+    - { text: 'SK Meppen', url: '?mannschaft=2427', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=669&r=9#p2427x2393', title: 'gegen SV Bad Essen', text: '2' }]
+    - [{ url: '?staffel=669&r=1#p2427x2385', title: 'gegen SK Nordhorn-Bl. 3', text: '2' }]
+    - [{ url: '?staffel=669&r=7#p2427x2407', title: 'gegen SV Hellern 2', text: 1½ }]
+    - [{ url: '?staffel=669&r=6#p2427x2436', title: 'gegen Hagener SV 2', text: '1' }]
+    - [{ url: '?staffel=669&r=3#p2427x2477', title: 'gegen Veldhausen/Uel.', text: 3½ }]
+    - [{ url: '?staffel=669&r=8#p2427x2445', title: 'gegen Rochade Hollage', text: '2' }]
+    - [{ url: '?staffel=669&r=5#p2427x2420', title: 'gegen Bentheim/Nordho', text: 2½ }]
+    - [{ url: '?staffel=669&r=4#p2427x2408', title: 'gegen SV Hellern 3', text: 5½ }]
+    - [{ url: '?staffel=669&r=2#p2427x2450', title: 'gegen SC Fürstenau', text: '3' }]
+    - xxx
+    - 2
+    - '23'
+    - ''

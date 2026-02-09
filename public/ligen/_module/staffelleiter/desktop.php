@@ -1,4 +1,4 @@
-<?
+<?php
 /* SL-Bereich: Desktop
  *
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -103,12 +103,12 @@
   if ( $admin ['usertype'] == "s" )
   {
     // Mannschaften abfragen
-    $res = mysql_query ( "SELECT id FROM mannschaften WHERE staffel=$admin[staffel] ORDER BY name, mnr, id", $globals ['db'] );
-    if ( $res && mysql_num_rows ( $res ) )
+    $res = SED_Query ( 'SELECT id FROM mannschaften WHERE staffel=? ORDER BY name, mnr, id', [$admin['staffel']] )->fetchAllAssociative();
+    if ( count( $res ) > 0 )
     {
         // Ausgabe
         echo "<fieldset class='sed_admin_desk'><legend>Mannschaftsverwaltung</legend><table cellspacing='0' cellpadding='3'>";
-          while ( $team = mysql_fetch_array ( $res, MYSQL_ASSOC ) )
+          foreach ( $res as $team )
           {
             echo "<tr><td>".$globals['teams'][$team['id']]."&nbsp;&nbsp;</td><td>
                     <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]&edit=0'><img src='$globals[systemicons]desk_nachmeldung.png' alt='Nachmeldungen' class='sed_admin_icon' />Nachmeldung</a>
@@ -124,14 +124,14 @@
   if ( $admin ['usertype'] == "t" )
   {
     // Mannschaften abfragen
-    $res = mysql_query ( "SELECT id FROM mannschaften WHERE staffel=0 AND turnier=$globals[tid] ORDER BY name, mnr, id", $globals ['db'] );
-    if ( $res && mysql_num_rows ( $res ) )
+    $res = SED_Query ( 'SELECT id FROM mannschaften WHERE staffel=0 AND turnier=? ORDER BY name, mnr, id', [$globals['tid']] )->fetchAllAssociative();
+    if ( count ( $res ) > 0 )
     {
         // Ausgabe
         echo "<fieldset class='sed_admin_desk'><legend>Mannschaften ohne Staffel</legend>Im folgenden sind alle Mannschaften aufgelistet, denen noch keine Staffel zugeordnet wurde:<br /><br /><table cellspacing='0' cellpadding='3'>";
 
         // Mannschaften auflisten
-          while ( $team = mysql_fetch_array ( $res, MYSQL_ASSOC ) )
+          foreach ( $res as $team )
           {
             echo "<tr><td>".$globals['teams'][$team['id']]."&nbsp;&nbsp;</td><td>
                     <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spieler.png' alt='Spieler' class='sed_admin_icon' />Spieler</a>

@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Walsum SC 72', url: '?mannschaft=2328', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=646&r=3#p2328x2383', title: 'gegen SK 1858 Gießen', text: '1' }]
+    - [{ url: '?staffel=646&r=2#p2328x2425', title: 'gegen Dortmund 1875', text: 2½ }]
+    - [{ url: '?staffel=646&r=1#p2328x2424', title: 'gegen DSV  1854', text: '3' }]
+    - [{ url: '?staffel=646&r=5#p2328x2330', title: 'gegen SV HorstEmscher', text: 2½ }]
+    - [{ url: '?staffel=646&r=4#p2328x2528', title: 'gegen SVG Oberhessen', text: 2½ }]
+    - 8
+    - 11½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK 1858 Gießen', url: '?mannschaft=2383', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=646&r=3#p2383x2328', title: 'gegen Walsum SC 72', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=646&r=4#p2383x2425', title: 'gegen Dortmund 1875', text: '0' }]
+    - [{ url: '?staffel=646&r=5#p2383x2424', title: 'gegen DSV  1854', text: '2' }]
+    - [{ url: '?staffel=646&r=2#p2383x2330', title: 'gegen SV HorstEmscher', text: '2' }]
+    - [{ url: '?staffel=646&r=1#p2383x2528', title: 'gegen SVG Oberhessen', text: 3½ }]
+    - 6
+    - 10½
+    - ''
+-
+    - '3.'
+    - { text: 'Dortmund 1875', url: '?mannschaft=2425', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=646&r=2#p2425x2328', title: 'gegen Walsum SC 72', text: 1½ }]
+    - [{ url: '?staffel=646&r=4#p2425x2383', title: 'gegen SK 1858 Gießen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=646&r=3#p2425x2424', title: 'gegen DSV  1854', text: 1½ }]
+    - [{ url: '?staffel=646&r=1#p2425x2330', title: 'gegen SV HorstEmscher', text: '2' }]
+    - [{ url: '?staffel=646&r=5#p2425x2528', title: 'gegen SVG Oberhessen', text: 3½ }]
+    - 5
+    - 12½
+    - ''
+-
+    - '4.'
+    - { text: 'DSV  1854', url: '?mannschaft=2424', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=646&r=1#p2424x2328', title: 'gegen Walsum SC 72', text: '1' }]
+    - [{ url: '?staffel=646&r=5#p2424x2383', title: 'gegen SK 1858 Gießen', text: '2' }]
+    - [{ url: '?staffel=646&r=3#p2424x2425', title: 'gegen Dortmund 1875', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=646&r=4#p2424x2330', title: 'gegen SV HorstEmscher', text: 1½ }]
+    - [{ url: '?staffel=646&r=2#p2424x2528', title: 'gegen SVG Oberhessen', text: '4' }]
+    - 5
+    - '11'
+    - ''
+-
+    - '5.'
+    - { text: 'SV HorstEmscher', url: '?mannschaft=2330', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=646&r=5#p2330x2328', title: 'gegen Walsum SC 72', text: 1½ }]
+    - [{ url: '?staffel=646&r=2#p2330x2383', title: 'gegen SK 1858 Gießen', text: '2' }]
+    - [{ url: '?staffel=646&r=1#p2330x2425', title: 'gegen Dortmund 1875', text: '2' }]
+    - [{ url: '?staffel=646&r=4#p2330x2424', title: 'gegen DSV  1854', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=646&r=3#p2330x2528', title: 'gegen SVG Oberhessen', text: '2' }]
+    - 5
+    - '10'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SVG Oberhessen', url: '?mannschaft=2528', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=646&r=4#p2528x2328', title: 'gegen Walsum SC 72', text: 1½ }]
+    - [{ url: '?staffel=646&r=1#p2528x2383', title: 'gegen SK 1858 Gießen', text: ½ }]
+    - [{ url: '?staffel=646&r=5#p2528x2425', title: 'gegen Dortmund 1875', text: ½ }]
+    - [{ url: '?staffel=646&r=2#p2528x2424', title: 'gegen DSV  1854', text: '0' }]
+    - [{ url: '?staffel=646&r=3#p2528x2330', title: 'gegen SV HorstEmscher', text: '2' }]
+    - xxx
+    - 1
+    - 4½
+    - absteiger

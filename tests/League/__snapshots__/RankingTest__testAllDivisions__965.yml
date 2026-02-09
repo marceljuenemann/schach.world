@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte 6', url: '?mannschaft=8048', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1804&r=3#p8048x7875', title: 'gegen SG WB Eilenriede 3', text: 6½ }]
+    - [{ url: '?staffel=1804&r=6#p8048x7926', title: 'gegen SG Döhren-Gleidingen', text: '5' }]
+    - [{ url: '?staffel=1804&r=9#p8048x8028', title: 'gegen SC Hämelerwald', text: 5½ }]
+    - [{ url: '?staffel=1804&r=1#p8048x8055', title: 'gegen SK Anderten 2', text: '3' }]
+    - [{ url: '?staffel=1804&r=5#p8048x7956', title: 'gegen SV Laatzen 3', text: 6½ }]
+    - [{ url: '?staffel=1804&r=2#p8048x7923', title: 'gegen SV FB Wedemark 2', text: '8' }]
+    - [{ url: '?staffel=1804&r=7#p8048x8040', title: 'gegen SZ Bemerode 2', text: '6' }]
+    - [{ url: '?staffel=1804&r=8#p8048x8042', title: 'gegen Hannover 96 3', text: '8' }]
+    - 14
+    - 48½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG WB Eilenriede 3', url: '?mannschaft=7875', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1804&r=3#p7875x8048', title: 'gegen SK Lehrte 6', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1804&r=5#p7875x7926', title: 'gegen SG Döhren-Gleidingen', text: '4' }]
+    - [{ url: '?staffel=1804&r=2#p7875x8028', title: 'gegen SC Hämelerwald', text: 6½ }]
+    - [{ url: '?staffel=1804&r=9#p7875x8055', title: 'gegen SK Anderten 2', text: 6½ }]
+    - [{ url: '?staffel=1804&r=1#p7875x7956', title: 'gegen SV Laatzen 3', text: '5' }]
+    - [{ url: '?staffel=1804&r=4#p7875x7923', title: 'gegen SV FB Wedemark 2', text: '6' }]
+    - [{ url: '?staffel=1804&r=6#p7875x8040', title: 'gegen SZ Bemerode 2', text: '7' }]
+    - [{ url: '?staffel=1804&r=7#p7875x8042', title: 'gegen Hannover 96 3', text: '7' }]
+    - 13
+    - 43½
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SG Döhren-Gleidingen', url: '?mannschaft=7926', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1804&r=6#p7926x8048', title: 'gegen SK Lehrte 6', text: '3' }]
+    - [{ url: '?staffel=1804&r=5#p7926x7875', title: 'gegen SG WB Eilenriede 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1804&r=8#p7926x8028', title: 'gegen SC Hämelerwald', text: 4½ }]
+    - [{ url: '?staffel=1804&r=3#p7926x8055', title: 'gegen SK Anderten 2', text: 7½ }]
+    - [{ url: '?staffel=1804&r=4#p7926x7956', title: 'gegen SV Laatzen 3', text: 6½ }]
+    - [{ url: '?staffel=1804&r=7#p7926x7923', title: 'gegen SV FB Wedemark 2', text: 4½ }]
+    - [{ url: '?staffel=1804&r=9#p7926x8040', title: 'gegen SZ Bemerode 2', text: '6' }]
+    - [{ url: '?staffel=1804&r=1#p7926x8042', title: 'gegen Hannover 96 3', text: 6½ }]
+    - 13
+    - 42½
+    - ''
+-
+    - '4.'
+    - { text: 'SC Hämelerwald', url: '?mannschaft=8028', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1804&r=9#p8028x8048', title: 'gegen SK Lehrte 6', text: 2½ }]
+    - [{ url: '?staffel=1804&r=2#p8028x7875', title: 'gegen SG WB Eilenriede 3', text: 1½ }]
+    - [{ url: '?staffel=1804&r=8#p8028x7926', title: 'gegen SG Döhren-Gleidingen', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1804&r=6#p8028x8055', title: 'gegen SK Anderten 2', text: 6½ }]
+    - [{ url: '?staffel=1804&r=7#p8028x7956', title: 'gegen SV Laatzen 3', text: 5½ }]
+    - [{ url: '?staffel=1804&r=1#p8028x7923', title: 'gegen SV FB Wedemark 2', text: 6½ }]
+    - [{ url: '?staffel=1804&r=3#p8028x8040', title: 'gegen SZ Bemerode 2', text: '7' }]
+    - [{ url: '?staffel=1804&r=4#p8028x8042', title: 'gegen Hannover 96 3', text: '7' }]
+    - 10
+    - '40'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Anderten 2', url: '?mannschaft=8055', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1804&r=1#p8055x8048', title: 'gegen SK Lehrte 6', text: '5' }]
+    - [{ url: '?staffel=1804&r=9#p8055x7875', title: 'gegen SG WB Eilenriede 3', text: 1½ }]
+    - [{ url: '?staffel=1804&r=3#p8055x7926', title: 'gegen SG Döhren-Gleidingen', text: ½ }]
+    - [{ url: '?staffel=1804&r=6#p8055x8028', title: 'gegen SC Hämelerwald', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1804&r=8#p8055x7956', title: 'gegen SV Laatzen 3', text: 4½ }]
+    - [{ url: '?staffel=1804&r=5#p8055x7923', title: 'gegen SV FB Wedemark 2', text: '3' }]
+    - [{ url: '?staffel=1804&r=4#p8055x8040', title: 'gegen SZ Bemerode 2', text: '5' }]
+    - [{ url: '?staffel=1804&r=2#p8055x8042', title: 'gegen Hannover 96 3', text: '5' }]
+    - 8
+    - '26'
+    - ''
+-
+    - '6.'
+    - { text: 'SV Laatzen 3', url: '?mannschaft=7956', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1804&r=5#p7956x8048', title: 'gegen SK Lehrte 6', text: 1½ }]
+    - [{ url: '?staffel=1804&r=1#p7956x7875', title: 'gegen SG WB Eilenriede 3', text: '3' }]
+    - [{ url: '?staffel=1804&r=4#p7956x7926', title: 'gegen SG Döhren-Gleidingen', text: 1½ }]
+    - [{ url: '?staffel=1804&r=7#p7956x8028', title: 'gegen SC Hämelerwald', text: 2½ }]
+    - [{ url: '?staffel=1804&r=8#p7956x8055', title: 'gegen SK Anderten 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1804&r=6#p7956x7923', title: 'gegen SV FB Wedemark 2', text: '5' }]
+    - [{ url: '?staffel=1804&r=2#p7956x8040', title: 'gegen SZ Bemerode 2', text: '5' }]
+    - [{ url: '?staffel=1804&r=9#p7956x8042', title: 'gegen Hannover 96 3', text: '5' }]
+    - 6
+    - '27'
+    - ''
+-
+    - '7.'
+    - { text: 'SV FB Wedemark 2', url: '?mannschaft=7923', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1804&r=2#p7923x8048', title: 'gegen SK Lehrte 6', text: '0' }]
+    - [{ url: '?staffel=1804&r=4#p7923x7875', title: 'gegen SG WB Eilenriede 3', text: '2' }]
+    - [{ url: '?staffel=1804&r=7#p7923x7926', title: 'gegen SG Döhren-Gleidingen', text: 3½ }]
+    - [{ url: '?staffel=1804&r=1#p7923x8028', title: 'gegen SC Hämelerwald', text: 1½ }]
+    - [{ url: '?staffel=1804&r=5#p7923x8055', title: 'gegen SK Anderten 2', text: '5' }]
+    - [{ url: '?staffel=1804&r=6#p7923x7956', title: 'gegen SV Laatzen 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1804&r=8#p7923x8040', title: 'gegen SZ Bemerode 2', text: '5' }]
+    - [{ url: '?staffel=1804&r=3#p7923x8042', title: 'gegen Hannover 96 3', text: '6' }]
+    - 6
+    - '26'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SZ Bemerode 2', url: '?mannschaft=8040', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1804&r=7#p8040x8048', title: 'gegen SK Lehrte 6', text: '2' }]
+    - [{ url: '?staffel=1804&r=6#p8040x7875', title: 'gegen SG WB Eilenriede 3', text: '1' }]
+    - [{ url: '?staffel=1804&r=9#p8040x7926', title: 'gegen SG Döhren-Gleidingen', text: '2' }]
+    - [{ url: '?staffel=1804&r=3#p8040x8028', title: 'gegen SC Hämelerwald', text: '1' }]
+    - [{ url: '?staffel=1804&r=4#p8040x8055', title: 'gegen SK Anderten 2', text: '3' }]
+    - [{ url: '?staffel=1804&r=2#p8040x7956', title: 'gegen SV Laatzen 3', text: '3' }]
+    - [{ url: '?staffel=1804&r=8#p8040x7923', title: 'gegen SV FB Wedemark 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1804&r=5#p8040x8042', title: 'gegen Hannover 96 3', text: '5' }]
+    - 2
+    - '20'
+    - absteiger
+-
+    - '9.'
+    - { text: 'Hannover 96 3', url: '?mannschaft=8042', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1804&r=8#p8042x8048', title: 'gegen SK Lehrte 6', text: '0' }]
+    - [{ url: '?staffel=1804&r=7#p8042x7875', title: 'gegen SG WB Eilenriede 3', text: '1' }]
+    - [{ url: '?staffel=1804&r=1#p8042x7926', title: 'gegen SG Döhren-Gleidingen', text: 1½ }]
+    - [{ url: '?staffel=1804&r=4#p8042x8028', title: 'gegen SC Hämelerwald', text: '1' }]
+    - [{ url: '?staffel=1804&r=2#p8042x8055', title: 'gegen SK Anderten 2', text: '3' }]
+    - [{ url: '?staffel=1804&r=9#p8042x7956', title: 'gegen SV Laatzen 3', text: '3' }]
+    - [{ url: '?staffel=1804&r=3#p8042x7923', title: 'gegen SV FB Wedemark 2', text: '2' }]
+    - [{ url: '?staffel=1804&r=5#p8042x8040', title: 'gegen SZ Bemerode 2', text: '3' }]
+    - xxx
+    - 0
+    - 14½
+    - absteiger

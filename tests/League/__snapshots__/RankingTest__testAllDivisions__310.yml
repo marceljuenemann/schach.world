@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: "Oldenb.-W'hause", url: '?mannschaft=3017', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=748&r=1#p3017x3015', title: 'gegen SK Nordhorn-Bl. 2', text: '4' }, { url: '?staffel=748&r=2#p3017x3015', title: 'gegen SK Nordhorn-Bl. 2', text: 2½ }]
+    - [{ url: '?staffel=748&r=3#p3017x3032', title: 'gegen SG Barnstorf', text: 2½ }, { url: '?staffel=748&r=4#p3017x3032', title: 'gegen SG Barnstorf', text: 3½ }]
+    - [{ url: '?staffel=748&r=5#p3017x3027', title: 'gegen SG Oesede-Gmht. 2', text: '3' }, { url: '?staffel=748&r=6#p3017x3027', title: 'gegen SG Oesede-Gmht. 2', text: '3' }]
+    - 12
+    - 18½
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SK Nordhorn-Bl. 2', url: '?mannschaft=3015', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=748&r=1#p3015x3017', title: "gegen Oldenb.-W'hause", text: '0' }, { url: '?staffel=748&r=2#p3015x3017', title: "gegen Oldenb.-W'hause", text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=748&r=5#p3015x3032', title: 'gegen SG Barnstorf', text: '4' }, { url: '?staffel=748&r=6#p3015x3032', title: 'gegen SG Barnstorf', text: '4' }]
+    - [{ url: '?staffel=748&r=3#p3015x3027', title: 'gegen SG Oesede-Gmht. 2', text: '3' }, { url: '?staffel=748&r=4#p3015x3027', title: 'gegen SG Oesede-Gmht. 2', text: 1½ }]
+    - 6
+    - '14'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Barnstorf', url: '?mannschaft=3032', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=748&r=3#p3032x3017', title: "gegen Oldenb.-W'hause", text: 1½ }, { url: '?staffel=748&r=4#p3032x3017', title: "gegen Oldenb.-W'hause", text: ½ }]
+    - [{ url: '?staffel=748&r=5#p3032x3015', title: 'gegen SK Nordhorn-Bl. 2', text: '0' }, { url: '?staffel=748&r=6#p3032x3015', title: 'gegen SK Nordhorn-Bl. 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=748&r=1#p3032x3027', title: 'gegen SG Oesede-Gmht. 2', text: '4' }, { url: '?staffel=748&r=2#p3032x3027', title: 'gegen SG Oesede-Gmht. 2', text: '4' }]
+    - 4
+    - '10'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Oesede-Gmht. 2', url: '?mannschaft=3027', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=748&r=5#p3027x3017', title: "gegen Oldenb.-W'hause", text: '0' }, { url: '?staffel=748&r=6#p3027x3017', title: "gegen Oldenb.-W'hause", text: '0' }]
+    - [{ url: '?staffel=748&r=3#p3027x3015', title: 'gegen SK Nordhorn-Bl. 2', text: '1' }, { url: '?staffel=748&r=4#p3027x3015', title: 'gegen SK Nordhorn-Bl. 2', text: 2½ }]
+    - [{ url: '?staffel=748&r=1#p3027x3032', title: 'gegen SG Barnstorf', text: '0' }, { url: '?staffel=748&r=2#p3027x3032', title: 'gegen SG Barnstorf', text: '0' }]
+    - xxx
+    - 2
+    - 3½
+    - ''

@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hildesheimer SV 5', url: '?mannschaft=3686', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=828&r=5#p3686x3350', title: 'gegen VfL Oker', text: '4' }]
+    - [{ url: '?staffel=828&r=3#p3686x3366', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=828&r=1#p3686x3449', title: 'gegen WSV Clausthal-Z 2', text: '3' }]
+    - [{ url: '?staffel=828&r=2#p3686x3352', title: 'gegen SK Goslar 2', text: 2½ }]
+    - [{ url: '?staffel=828&r=6#p3686x3685', title: 'gegen KSV Rochade GÖ 3', text: '1' }]
+    - [{ url: '?staffel=828&r=4#p3686x3374', title: 'gegen SK Bad Harzburg 4', text: 2½ }]
+    - 9
+    - '15'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'VfL Oker', url: '?mannschaft=3350', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=828&r=5#p3350x3686', title: 'gegen Hildesheimer SV 5', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=828&r=4#p3350x3366', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=828&r=6#p3350x3449', title: 'gegen WSV Clausthal-Z 2', text: 2½ }]
+    - [{ url: '?staffel=828&r=1#p3350x3352', title: 'gegen SK Goslar 2', text: 2½ }]
+    - [{ url: '?staffel=828&r=7#p3350x3685', title: 'gegen KSV Rochade GÖ 3', text: '4' }]
+    - [{ url: '?staffel=828&r=3#p3350x3374', title: 'gegen SK Bad Harzburg 4', text: '3' }]
+    - 9
+    - '14'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'SC Langelsheim', url: '?mannschaft=3366', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=828&r=3#p3366x3686', title: 'gegen Hildesheimer SV 5', text: '2' }]
+    - [{ url: '?staffel=828&r=4#p3366x3350', title: 'gegen VfL Oker', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=828&r=7#p3366x3449', title: 'gegen WSV Clausthal-Z 2', text: '2' }]
+    - [{ url: '?staffel=828&r=6#p3366x3352', title: 'gegen SK Goslar 2', text: '2' }]
+    - [{ url: '?staffel=828&r=2#p3366x3685', title: 'gegen KSV Rochade GÖ 3', text: 2½ }]
+    - [{ url: '?staffel=828&r=5#p3366x3374', title: 'gegen SK Bad Harzburg 4', text: '4' }]
+    - 8
+    - 14½
+    - ''
+-
+    - '4.'
+    - { text: 'WSV Clausthal-Z 2', url: '?mannschaft=3449', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=828&r=1#p3449x3686', title: 'gegen Hildesheimer SV 5', text: '1' }]
+    - [{ url: '?staffel=828&r=6#p3449x3350', title: 'gegen VfL Oker', text: 1½ }]
+    - [{ url: '?staffel=828&r=7#p3449x3366', title: 'gegen SC Langelsheim', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=828&r=5#p3449x3352', title: 'gegen SK Goslar 2', text: 3½ }]
+    - [{ url: '?staffel=828&r=3#p3449x3685', title: 'gegen KSV Rochade GÖ 3', text: '3' }]
+    - [{ url: '?staffel=828&r=2#p3449x3374', title: 'gegen SK Bad Harzburg 4', text: '2' }]
+    - 6
+    - '13'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Goslar 2', url: '?mannschaft=3352', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=828&r=2#p3352x3686', title: 'gegen Hildesheimer SV 5', text: 1½ }]
+    - [{ url: '?staffel=828&r=1#p3352x3350', title: 'gegen VfL Oker', text: 1½ }]
+    - [{ url: '?staffel=828&r=6#p3352x3366', title: 'gegen SC Langelsheim', text: '2' }]
+    - [{ url: '?staffel=828&r=5#p3352x3449', title: 'gegen WSV Clausthal-Z 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=828&r=4#p3352x3685', title: 'gegen KSV Rochade GÖ 3', text: '3' }]
+    - [{ url: '?staffel=828&r=7#p3352x3374', title: 'gegen SK Bad Harzburg 4', text: '4' }]
+    - 5
+    - 12½
+    - ''
+-
+    - '6.'
+    - { text: 'KSV Rochade GÖ 3', url: '?mannschaft=3685', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=828&r=6#p3685x3686', title: 'gegen Hildesheimer SV 5', text: '3' }]
+    - [{ url: '?staffel=828&r=7#p3685x3350', title: 'gegen VfL Oker', text: '0' }]
+    - [{ url: '?staffel=828&r=2#p3685x3366', title: 'gegen SC Langelsheim', text: 1½ }]
+    - [{ url: '?staffel=828&r=3#p3685x3449', title: 'gegen WSV Clausthal-Z 2', text: '1' }]
+    - [{ url: '?staffel=828&r=4#p3685x3352', title: 'gegen SK Goslar 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=828&r=1#p3685x3374', title: 'gegen SK Bad Harzburg 4', text: '3' }]
+    - 4
+    - 9½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Bad Harzburg 4', url: '?mannschaft=3374', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=828&r=4#p3374x3686', title: 'gegen Hildesheimer SV 5', text: 1½ }]
+    - [{ url: '?staffel=828&r=3#p3374x3350', title: 'gegen VfL Oker', text: '1' }]
+    - [{ url: '?staffel=828&r=5#p3374x3366', title: 'gegen SC Langelsheim', text: '0' }]
+    - [{ url: '?staffel=828&r=2#p3374x3449', title: 'gegen WSV Clausthal-Z 2', text: '2' }]
+    - [{ url: '?staffel=828&r=7#p3374x3352', title: 'gegen SK Goslar 2', text: '0' }]
+    - [{ url: '?staffel=828&r=1#p3374x3685', title: 'gegen KSV Rochade GÖ 3', text: '1' }]
+    - xxx
+    - 1
+    - 5½
+    - ''

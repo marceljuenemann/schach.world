@@ -1,4 +1,4 @@
-<?
+<?php
 /* Abfrage von Mannschaftsdaten
  *
  * In dieser Datei wird die Klasse SED_Mannschaft zur Verfügung
@@ -69,7 +69,7 @@ class SED_Mannschaft {
 
     // Allgemeine Daten aus der Tabelle mannschaften laden
     private function loadInfos (){
-        $this->infos = SED_Row("SELECT * FROM mannschaften as m WHERE m.id=?", [$this->infos["id"]]);
+        $this->infos = SED_Row('SELECT * FROM mannschaften as m WHERE m.id=?', [$this->infos["id"]]);
     }
 
     // Liefert die Aufstellung

@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Turm Hannover 2', url: '?mannschaft=1270', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=512&r=2#p1270x1204', title: 'gegen WB Eilenriede 5', text: '4' }]
+    - 2
+    - '4'
+    - ''
+-
+    - '2.'
+    - { text: 'HSK-Lister Turm 6', url: '?mannschaft=1282', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - {  }
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '2.'
+    - { text: 'SK Rinteln 3', url: '?mannschaft=1268', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - 0
+    - '0'
+    - ''
+-
+    - '2.'
+    - { text: 'WB Eilenriede 5', url: '?mannschaft=1204', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=512&r=2#p1204x1270', title: 'gegen Turm Hannover 2', text: '0' }]
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '0'
+    - ''

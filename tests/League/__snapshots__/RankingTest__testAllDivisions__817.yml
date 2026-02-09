@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Laatzen 2', url: '?mannschaft=6730', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1633&r=9#p6730x6715', title: 'gegen SK Wennigsen', text: '7' }]
+    - [{ url: '?staffel=1633&r=6#p6730x6736', title: 'gegen SC Stadthagen', text: 5½ }]
+    - [{ url: '?staffel=1633&r=2#p6730x6773', title: 'gegen HSK Lister Turm 5', text: 4½ }]
+    - [{ url: '?staffel=1633&r=4#p6730x6744', title: 'gegen SD Isernhagen 2', text: '7' }]
+    - [{ url: '?staffel=1633&r=5#p6730x6722', title: 'gegen SC Hämelerwald', text: '5' }]
+    - [{ url: '?staffel=1633&r=8#p6730x6757', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=1633&r=1#p6730x6737', title: 'gegen ST Langenhagen 2', text: 5½ }]
+    - 14
+    - '40'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=6715', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1633&r=9#p6715x6730', title: 'gegen SV Laatzen 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1633&r=2#p6715x6736', title: 'gegen SC Stadthagen', text: 6½ }]
+    - [{ url: '?staffel=1633&r=7#p6715x6773', title: 'gegen HSK Lister Turm 5', text: '3' }]
+    - [{ url: '?staffel=1633&r=5#p6715x6744', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - [{ url: '?staffel=1633&r=1#p6715x6722', title: 'gegen SC Hämelerwald', text: '6' }]
+    - [{ url: '?staffel=1633&r=4#p6715x6757', title: 'gegen Eystruper SK', text: 4½ }]
+    - [{ url: '?staffel=1633&r=6#p6715x6737', title: 'gegen ST Langenhagen 2', text: 4½ }]
+    - 9
+    - 29½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'SC Stadthagen', url: '?mannschaft=6736', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1633&r=6#p6736x6730', title: 'gegen SV Laatzen 2', text: 2½ }]
+    - [{ url: '?staffel=1633&r=2#p6736x6715', title: 'gegen SK Wennigsen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1633&r=4#p6736x6773', title: 'gegen HSK Lister Turm 5', text: '6' }]
+    - [{ url: '?staffel=1633&r=8#p6736x6744', title: 'gegen SD Isernhagen 2', text: 2½ }]
+    - [{ url: '?staffel=1633&r=7#p6736x6722', title: 'gegen SC Hämelerwald', text: '8' }]
+    - [{ url: '?staffel=1633&r=1#p6736x6757', title: 'gegen Eystruper SK', text: 5½ }]
+    - [{ url: '?staffel=1633&r=3#p6736x6737', title: 'gegen ST Langenhagen 2', text: 4½ }]
+    - 8
+    - 30½
+    - ''
+-
+    - '4.'
+    - { text: 'HSK Lister Turm 5', url: '?mannschaft=6773', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1633&r=2#p6773x6730', title: 'gegen SV Laatzen 2', text: 3½ }]
+    - [{ url: '?staffel=1633&r=7#p6773x6715', title: 'gegen SK Wennigsen', text: '5' }]
+    - [{ url: '?staffel=1633&r=4#p6773x6736', title: 'gegen SC Stadthagen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1633&r=9#p6773x6744', title: 'gegen SD Isernhagen 2', text: '5' }]
+    - [{ url: '?staffel=1633&r=3#p6773x6722', title: 'gegen SC Hämelerwald', text: '3' }]
+    - [{ url: '?staffel=1633&r=6#p6773x6757', title: 'gegen Eystruper SK', text: 3½ }]
+    - [{ url: '?staffel=1633&r=8#p6773x6737', title: 'gegen ST Langenhagen 2', text: '8' }]
+    - 6
+    - '30'
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen 2', url: '?mannschaft=6744', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1633&r=4#p6744x6730', title: 'gegen SV Laatzen 2', text: '1' }]
+    - [{ url: '?staffel=1633&r=5#p6744x6715', title: 'gegen SK Wennigsen', text: '4' }]
+    - [{ url: '?staffel=1633&r=8#p6744x6736', title: 'gegen SC Stadthagen', text: 5½ }]
+    - [{ url: '?staffel=1633&r=9#p6744x6773', title: 'gegen HSK Lister Turm 5', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1633&r=6#p6744x6722', title: 'gegen SC Hämelerwald', text: '4' }]
+    - [{ url: '?staffel=1633&r=3#p6744x6757', title: 'gegen Eystruper SK', text: 4½ }]
+    - [{ url: '?staffel=1633&r=7#p6744x6737', title: 'gegen ST Langenhagen 2', text: 3½ }]
+    - 6
+    - 25½
+    - ''
+-
+    - '6.'
+    - { text: 'SC Hämelerwald', url: '?mannschaft=6722', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1633&r=5#p6722x6730', title: 'gegen SV Laatzen 2', text: '3' }]
+    - [{ url: '?staffel=1633&r=1#p6722x6715', title: 'gegen SK Wennigsen', text: '2' }]
+    - [{ url: '?staffel=1633&r=7#p6722x6736', title: 'gegen SC Stadthagen', text: '0' }]
+    - [{ url: '?staffel=1633&r=3#p6722x6773', title: 'gegen HSK Lister Turm 5', text: '5' }]
+    - [{ url: '?staffel=1633&r=6#p6722x6744', title: 'gegen SD Isernhagen 2', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=1633&r=9#p6722x6757', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=1633&r=2#p6722x6737', title: 'gegen ST Langenhagen 2', text: 1½ }]
+    - 5
+    - 20½
+    - ''
+-
+    - '7.'
+    - { text: 'Eystruper SK', url: '?mannschaft=6757', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1633&r=8#p6757x6730', title: 'gegen SV Laatzen 2', text: 2½ }]
+    - [{ url: '?staffel=1633&r=4#p6757x6715', title: 'gegen SK Wennigsen', text: 3½ }]
+    - [{ url: '?staffel=1633&r=1#p6757x6736', title: 'gegen SC Stadthagen', text: 2½ }]
+    - [{ url: '?staffel=1633&r=6#p6757x6773', title: 'gegen HSK Lister Turm 5', text: 4½ }]
+    - [{ url: '?staffel=1633&r=3#p6757x6744', title: 'gegen SD Isernhagen 2', text: 3½ }]
+    - [{ url: '?staffel=1633&r=9#p6757x6722', title: 'gegen SC Hämelerwald', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1633&r=5#p6757x6737', title: 'gegen ST Langenhagen 2', text: 4½ }]
+    - 4
+    - '24'
+    - ''
+-
+    - '8.'
+    - { text: 'ST Langenhagen 2', url: '?mannschaft=6737', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1633&r=1#p6737x6730', title: 'gegen SV Laatzen 2', text: 2½ }]
+    - [{ url: '?staffel=1633&r=6#p6737x6715', title: 'gegen SK Wennigsen', text: 3½ }]
+    - [{ url: '?staffel=1633&r=3#p6737x6736', title: 'gegen SC Stadthagen', text: 2½ }]
+    - [{ url: '?staffel=1633&r=8#p6737x6773', title: 'gegen HSK Lister Turm 5', text: '0' }]
+    - [{ url: '?staffel=1633&r=7#p6737x6744', title: 'gegen SD Isernhagen 2', text: 4½ }]
+    - [{ url: '?staffel=1633&r=2#p6737x6722', title: 'gegen SC Hämelerwald', text: 6½ }]
+    - [{ url: '?staffel=1633&r=5#p6737x6757', title: 'gegen Eystruper SK', text: 3½ }]
+    - xxx
+    - 4
+    - '23'
+    - absteiger

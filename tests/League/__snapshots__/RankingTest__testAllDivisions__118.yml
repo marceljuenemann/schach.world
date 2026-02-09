@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=1569', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=531&r=6#p1569x1570', title: 'gegen SV Bückeburg 2', text: '2' }]
+    - [{ url: '?staffel=531&r=7#p1569x1587', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=531&r=2#p1569x1645', title: 'gegen SK Lehrte', text: 3½ }]
+    - [{ url: '?staffel=531&r=4#p1569x1533', title: 'gegen SF Hannover', text: 2½ }]
+    - [{ url: '?staffel=531&r=1#p1569x1558', title: 'gegen SV Laatzen', text: '4' }]
+    - [{ url: '?staffel=531&r=3#p1569x1611', title: 'gegen Freib. Wedemark', text: '3' }]
+    - 11
+    - '18'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SV Bückeburg 2', url: '?mannschaft=1570', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=531&r=6#p1570x1569', title: 'gegen SV Bückeburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=531&r=1#p1570x1587', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=531&r=3#p1570x1645', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=531&r=5#p1570x1533', title: 'gegen SF Hannover', text: 3½ }]
+    - [{ url: '?staffel=531&r=2#p1570x1558', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=531&r=4#p1570x1611', title: 'gegen Freib. Wedemark', text: 2½ }]
+    - 11
+    - '17'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Ricklingen', url: '?mannschaft=1587', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=531&r=7#p1587x1569', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=531&r=1#p1587x1570', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=531&r=4#p1587x1645', title: 'gegen SK Lehrte', text: 2½ }]
+    - [{ url: '?staffel=531&r=6#p1587x1533', title: 'gegen SF Hannover', text: '3' }]
+    - [{ url: '?staffel=531&r=3#p1587x1558', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=531&r=5#p1587x1611', title: 'gegen Freib. Wedemark', text: '3' }]
+    - 6
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte', url: '?mannschaft=1645', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=531&r=2#p1645x1569', title: 'gegen SV Bückeburg', text: ½ }]
+    - [{ url: '?staffel=531&r=3#p1645x1570', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - [{ url: '?staffel=531&r=4#p1645x1587', title: 'gegen SK Ricklingen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=531&r=1#p1645x1533', title: 'gegen SF Hannover', text: '2' }]
+    - [{ url: '?staffel=531&r=5#p1645x1558', title: 'gegen SV Laatzen', text: 3½ }]
+    - [{ url: '?staffel=531&r=7#p1645x1611', title: 'gegen Freib. Wedemark', text: '4' }]
+    - 5
+    - 12½
+    - ''
+-
+    - '5.'
+    - { text: 'SF Hannover', url: '?mannschaft=1533', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=531&r=4#p1533x1569', title: 'gegen SV Bückeburg', text: 1½ }]
+    - [{ url: '?staffel=531&r=5#p1533x1570', title: 'gegen SV Bückeburg 2', text: ½ }]
+    - [{ url: '?staffel=531&r=6#p1533x1587', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=531&r=1#p1533x1645', title: 'gegen SK Lehrte', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=531&r=7#p1533x1558', title: 'gegen SV Laatzen', text: '3' }]
+    - [{ url: '?staffel=531&r=2#p1533x1611', title: 'gegen Freib. Wedemark', text: 3½ }]
+    - 5
+    - 11½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Laatzen', url: '?mannschaft=1558', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=531&r=1#p1558x1569', title: 'gegen SV Bückeburg', text: '0' }]
+    - [{ url: '?staffel=531&r=2#p1558x1570', title: 'gegen SV Bückeburg 2', text: '1' }]
+    - [{ url: '?staffel=531&r=3#p1558x1587', title: 'gegen SK Ricklingen', text: '3' }]
+    - [{ url: '?staffel=531&r=5#p1558x1645', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=531&r=7#p1558x1533', title: 'gegen SF Hannover', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=531&r=6#p1558x1611', title: 'gegen Freib. Wedemark', text: 2½ }]
+    - 4
+    - '8'
+    - ''
+-
+    - '7.'
+    - { text: 'Freib. Wedemark', url: '?mannschaft=1611', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=531&r=3#p1611x1569', title: 'gegen SV Bückeburg', text: '1' }]
+    - [{ url: '?staffel=531&r=4#p1611x1570', title: 'gegen SV Bückeburg 2', text: 1½ }]
+    - [{ url: '?staffel=531&r=5#p1611x1587', title: 'gegen SK Ricklingen', text: '1' }]
+    - [{ url: '?staffel=531&r=7#p1611x1645', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=531&r=2#p1611x1533', title: 'gegen SF Hannover', text: ½ }]
+    - [{ url: '?staffel=531&r=6#p1611x1558', title: 'gegen SV Laatzen', text: 1½ }]
+    - xxx
+    - 0
+    - 5½
+    - ''

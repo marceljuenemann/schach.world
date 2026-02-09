@@ -11,11 +11,10 @@ import { ValidationErrors } from '../api';
  * look and feel. The intention is to also make creation of forms very simple.
  */
 @Component({
-  selector: 'nsv-form',
-  standalone: true,
-  imports: [ReactiveFormsModule],
-  templateUrl: './form.component.html',
-  styleUrl: './form.component.css'
+    selector: 'nsv-form',
+    imports: [ReactiveFormsModule],
+    templateUrl: './form.component.html',
+    styleUrl: './form.component.css'
 })
 export class NsvFormComponent {
   // The NsvFormGroup used for managing state.

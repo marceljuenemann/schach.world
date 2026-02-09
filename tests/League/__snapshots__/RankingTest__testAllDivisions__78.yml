@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV 3', url: '?mannschaft=1046', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=491&r=4#p1046x1037', title: 'gegen SV Osnabrück 4', text: '4' }]
+    - [{ url: '?staffel=491&r=2#p1046x1052', title: 'gegen SG Oesede-Gmht. 3', text: 5½ }]
+    - [{ url: '?staffel=491&r=3#p1046x1047', title: 'gegen Hagener SV 4', text: '6' }]
+    - [{ url: '?staffel=491&r=7#p1046x1030', title: 'gegen SG Schinkel 2', text: '5' }]
+    - [{ url: '?staffel=491&r=5#p1046x1066', title: 'gegen Gaste-Hasbergen 2', text: '7' }]
+    - [{ url: '?staffel=491&r=6#p1046x1057', title: 'gegen TSV Osnabrück 2', text: 5½ }]
+    - [{ url: '?staffel=491&r=1#p1046x1038', title: 'gegen SV Osnabrück 5', text: 5½ }]
+    - 13
+    - 38½
+    - ''
+-
+    - '2.'
+    - { text: 'SV Osnabrück 4', url: '?mannschaft=1037', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=491&r=4#p1037x1046', title: 'gegen Hagener SV 3', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=491&r=3#p1037x1052', title: 'gegen SG Oesede-Gmht. 3', text: '7' }]
+    - [{ url: '?staffel=491&r=5#p1037x1047', title: 'gegen Hagener SV 4', text: '6' }]
+    - [{ url: '?staffel=491&r=1#p1037x1030', title: 'gegen SG Schinkel 2', text: 4½ }]
+    - [{ url: '?staffel=491&r=6#p1037x1066', title: 'gegen Gaste-Hasbergen 2', text: '4' }]
+    - [{ url: '?staffel=491&r=7#p1037x1057', title: 'gegen TSV Osnabrück 2', text: 6½ }]
+    - [{ url: '?staffel=491&r=2#p1037x1038', title: 'gegen SV Osnabrück 5', text: '6' }]
+    - 13
+    - '38'
+    - ''
+-
+    - '3.'
+    - { text: 'SG Oesede-Gmht. 3', url: '?mannschaft=1052', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=491&r=2#p1052x1046', title: 'gegen Hagener SV 3', text: 2½ }]
+    - [{ url: '?staffel=491&r=3#p1052x1037', title: 'gegen SV Osnabrück 4', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=491&r=1#p1052x1047', title: 'gegen Hagener SV 4', text: '6' }]
+    - [{ url: '?staffel=491&r=6#p1052x1030', title: 'gegen SG Schinkel 2', text: 5½ }]
+    - [{ url: '?staffel=491&r=4#p1052x1066', title: 'gegen Gaste-Hasbergen 2', text: '6' }]
+    - [{ url: '?staffel=491&r=5#p1052x1057', title: 'gegen TSV Osnabrück 2', text: 5½ }]
+    - [{ url: '?staffel=491&r=7#p1052x1038', title: 'gegen SV Osnabrück 5', text: '6' }]
+    - 10
+    - 32½
+    - ''
+-
+    - '4.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=1047', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=491&r=3#p1047x1046', title: 'gegen Hagener SV 3', text: '2' }]
+    - [{ url: '?staffel=491&r=5#p1047x1037', title: 'gegen SV Osnabrück 4', text: '2' }]
+    - [{ url: '?staffel=491&r=1#p1047x1052', title: 'gegen SG Oesede-Gmht. 3', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=491&r=4#p1047x1030', title: 'gegen SG Schinkel 2', text: 4½ }]
+    - [{ url: '?staffel=491&r=7#p1047x1066', title: 'gegen Gaste-Hasbergen 2', text: '5' }]
+    - [{ url: '?staffel=491&r=2#p1047x1057', title: 'gegen TSV Osnabrück 2', text: '6' }]
+    - [{ url: '?staffel=491&r=6#p1047x1038', title: 'gegen SV Osnabrück 5', text: '4' }]
+    - 7
+    - 25½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Schinkel 2', url: '?mannschaft=1030', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=491&r=7#p1030x1046', title: 'gegen Hagener SV 3', text: '3' }]
+    - [{ url: '?staffel=491&r=1#p1030x1037', title: 'gegen SV Osnabrück 4', text: 3½ }]
+    - [{ url: '?staffel=491&r=6#p1030x1052', title: 'gegen SG Oesede-Gmht. 3', text: 2½ }]
+    - [{ url: '?staffel=491&r=4#p1030x1047', title: 'gegen Hagener SV 4', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=491&r=2#p1030x1066', title: 'gegen Gaste-Hasbergen 2', text: 5½ }]
+    - [{ url: '?staffel=491&r=3#p1030x1057', title: 'gegen TSV Osnabrück 2', text: '4' }]
+    - [{ url: '?staffel=491&r=5#p1030x1038', title: 'gegen SV Osnabrück 5', text: '4' }]
+    - 4
+    - '26'
+    - ''
+-
+    - '6.'
+    - { text: 'Gaste-Hasbergen 2', url: '?mannschaft=1066', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=491&r=5#p1066x1046', title: 'gegen Hagener SV 3', text: '1' }]
+    - [{ url: '?staffel=491&r=6#p1066x1037', title: 'gegen SV Osnabrück 4', text: '3' }]
+    - [{ url: '?staffel=491&r=4#p1066x1052', title: 'gegen SG Oesede-Gmht. 3', text: '2' }]
+    - [{ url: '?staffel=491&r=7#p1066x1047', title: 'gegen Hagener SV 4', text: '3' }]
+    - [{ url: '?staffel=491&r=2#p1066x1030', title: 'gegen SG Schinkel 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=491&r=1#p1066x1057', title: 'gegen TSV Osnabrück 2', text: 5½ }]
+    - [{ url: '?staffel=491&r=3#p1066x1038', title: 'gegen SV Osnabrück 5', text: '6' }]
+    - 4
+    - '23'
+    - ''
+-
+    - '7.'
+    - { text: 'TSV Osnabrück 2', url: '?mannschaft=1057', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=491&r=6#p1057x1046', title: 'gegen Hagener SV 3', text: 2½ }]
+    - [{ url: '?staffel=491&r=7#p1057x1037', title: 'gegen SV Osnabrück 4', text: 1½ }]
+    - [{ url: '?staffel=491&r=5#p1057x1052', title: 'gegen SG Oesede-Gmht. 3', text: 2½ }]
+    - [{ url: '?staffel=491&r=2#p1057x1047', title: 'gegen Hagener SV 4', text: '2' }]
+    - [{ url: '?staffel=491&r=3#p1057x1030', title: 'gegen SG Schinkel 2', text: '4' }]
+    - [{ url: '?staffel=491&r=1#p1057x1066', title: 'gegen Gaste-Hasbergen 2', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=491&r=4#p1057x1038', title: 'gegen SV Osnabrück 5', text: '5' }]
+    - 3
+    - '20'
+    - ''
+-
+    - '8.'
+    - { text: 'SV Osnabrück 5', url: '?mannschaft=1038', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=491&r=1#p1038x1046', title: 'gegen Hagener SV 3', text: 2½ }]
+    - [{ url: '?staffel=491&r=2#p1038x1037', title: 'gegen SV Osnabrück 4', text: '2' }]
+    - [{ url: '?staffel=491&r=7#p1038x1052', title: 'gegen SG Oesede-Gmht. 3', text: '2' }]
+    - [{ url: '?staffel=491&r=6#p1038x1047', title: 'gegen Hagener SV 4', text: '4' }]
+    - [{ url: '?staffel=491&r=5#p1038x1030', title: 'gegen SG Schinkel 2', text: '4' }]
+    - [{ url: '?staffel=491&r=3#p1038x1066', title: 'gegen Gaste-Hasbergen 2', text: '2' }]
+    - [{ url: '?staffel=491&r=4#p1038x1057', title: 'gegen TSV Osnabrück 2', text: '3' }]
+    - xxx
+    - 2
+    - 19½
+    - ''

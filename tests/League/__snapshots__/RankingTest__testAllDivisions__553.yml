@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Springe', url: '?mannschaft=5292', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1038&r=3#p5292x5136', title: 'gegen Barsinghausen', text: '3' }]
+    - [{ url: '?staffel=1038&r=6#p5292x5291', title: 'gegen Eystrup/Stolzenau', text: '4' }]
+    - [{ url: '?staffel=1038&r=7#p5292x5303', title: 'gegen SK Rinteln 2', text: ½ }]
+    - [{ url: '?staffel=1038&r=2#p5292x5268', title: 'gegen SK Girls Club', text: '3' }]
+    - [{ url: '?staffel=1038&r=4#p5292x5271', title: 'gegen HSK Lister Turm', text: 2½ }]
+    - [{ url: '?staffel=1038&r=5#p5292x5197', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=1038&r=1#p5292x5294', title: 'gegen SV Springe 2', text: '3' }]
+    - 12
+    - '19'
+    - ''
+-
+    - '2.'
+    - { text: Barsinghausen, url: '?mannschaft=5136', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1038&r=3#p5136x5292', title: 'gegen SV Springe', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1038&r=7#p5136x5291', title: 'gegen Eystrup/Stolzenau', text: '2' }]
+    - [{ url: '?staffel=1038&r=1#p5136x5303', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=1038&r=4#p5136x5268', title: 'gegen SK Girls Club', text: '3' }]
+    - [{ url: '?staffel=1038&r=5#p5136x5271', title: 'gegen HSK Lister Turm', text: '4' }]
+    - [{ url: '?staffel=1038&r=6#p5136x5197', title: 'gegen TuS Wunstorf', text: '4' }]
+    - [{ url: '?staffel=1038&r=2#p5136x5294', title: 'gegen SV Springe 2', text: '2' }]
+    - 10
+    - '19'
+    - ''
+-
+    - '3.'
+    - { text: Eystrup/Stolzenau, url: '?mannschaft=5291', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1038&r=6#p5291x5292', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1038&r=7#p5291x5136', title: 'gegen Barsinghausen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1038&r=4#p5291x5303', title: 'gegen SK Rinteln 2', text: '3' }]
+    - [{ url: '?staffel=1038&r=3#p5291x5268', title: 'gegen SK Girls Club', text: '3' }]
+    - [{ url: '?staffel=1038&r=1#p5291x5271', title: 'gegen HSK Lister Turm', text: '2' }]
+    - [{ url: '?staffel=1038&r=2#p5291x5197', title: 'gegen TuS Wunstorf', text: '2' }]
+    - [{ url: '?staffel=1038&r=5#p5291x5294', title: 'gegen SV Springe 2', text: '3' }]
+    - 9
+    - '15'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Rinteln 2', url: '?mannschaft=5303', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1038&r=7#p5303x5292', title: 'gegen SV Springe', text: 3½ }]
+    - [{ url: '?staffel=1038&r=1#p5303x5136', title: 'gegen Barsinghausen', text: '1' }]
+    - [{ url: '?staffel=1038&r=4#p5303x5291', title: 'gegen Eystrup/Stolzenau', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1038&r=5#p5303x5268', title: 'gegen SK Girls Club', text: '1' }]
+    - [{ url: '?staffel=1038&r=2#p5303x5271', title: 'gegen HSK Lister Turm', text: 2½ }]
+    - [{ url: '?staffel=1038&r=3#p5303x5197', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=1038&r=6#p5303x5294', title: 'gegen SV Springe 2', text: '3' }]
+    - 8
+    - '15'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Girls Club', url: '?mannschaft=5268', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1038&r=2#p5268x5292', title: 'gegen SV Springe', text: '1' }]
+    - [{ url: '?staffel=1038&r=4#p5268x5136', title: 'gegen Barsinghausen', text: '1' }]
+    - [{ url: '?staffel=1038&r=3#p5268x5291', title: 'gegen Eystrup/Stolzenau', text: '1' }]
+    - [{ url: '?staffel=1038&r=5#p5268x5303', title: 'gegen SK Rinteln 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1038&r=6#p5268x5271', title: 'gegen HSK Lister Turm', text: '2' }]
+    - [{ url: '?staffel=1038&r=1#p5268x5197', title: 'gegen TuS Wunstorf', text: '3' }]
+    - [{ url: '?staffel=1038&r=7#p5268x5294', title: 'gegen SV Springe 2', text: 3½ }]
+    - 7
+    - 14½
+    - ''
+-
+    - '6.'
+    - { text: 'HSK Lister Turm', url: '?mannschaft=5271', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1038&r=4#p5271x5292', title: 'gegen SV Springe', text: 1½ }]
+    - [{ url: '?staffel=1038&r=5#p5271x5136', title: 'gegen Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=1038&r=1#p5271x5291', title: 'gegen Eystrup/Stolzenau', text: '2' }]
+    - [{ url: '?staffel=1038&r=2#p5271x5303', title: 'gegen SK Rinteln 2', text: 1½ }]
+    - [{ url: '?staffel=1038&r=6#p5271x5268', title: 'gegen SK Girls Club', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1038&r=7#p5271x5197', title: 'gegen TuS Wunstorf', text: 2½ }]
+    - [{ url: '?staffel=1038&r=3#p5271x5294', title: 'gegen SV Springe 2', text: 3½ }]
+    - 6
+    - '13'
+    - ''
+-
+    - '7.'
+    - { text: 'TuS Wunstorf', url: '?mannschaft=5197', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1038&r=5#p5197x5292', title: 'gegen SV Springe', text: '1' }]
+    - [{ url: '?staffel=1038&r=6#p5197x5136', title: 'gegen Barsinghausen', text: '0' }]
+    - [{ url: '?staffel=1038&r=2#p5197x5291', title: 'gegen Eystrup/Stolzenau', text: '2' }]
+    - [{ url: '?staffel=1038&r=3#p5197x5303', title: 'gegen SK Rinteln 2', text: '1' }]
+    - [{ url: '?staffel=1038&r=1#p5197x5268', title: 'gegen SK Girls Club', text: '1' }]
+    - [{ url: '?staffel=1038&r=7#p5197x5271', title: 'gegen HSK Lister Turm', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1038&r=4#p5197x5294', title: 'gegen SV Springe 2', text: '3' }]
+    - 3
+    - 9½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Springe 2', url: '?mannschaft=5294', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1038&r=1#p5294x5292', title: 'gegen SV Springe', text: '0' }]
+    - [{ url: '?staffel=1038&r=2#p5294x5136', title: 'gegen Barsinghausen', text: '2' }]
+    - [{ url: '?staffel=1038&r=5#p5294x5291', title: 'gegen Eystrup/Stolzenau', text: '1' }]
+    - [{ url: '?staffel=1038&r=6#p5294x5303', title: 'gegen SK Rinteln 2', text: '1' }]
+    - [{ url: '?staffel=1038&r=7#p5294x5268', title: 'gegen SK Girls Club', text: ½ }]
+    - [{ url: '?staffel=1038&r=3#p5294x5271', title: 'gegen HSK Lister Turm', text: ½ }]
+    - [{ url: '?staffel=1038&r=4#p5294x5197', title: 'gegen TuS Wunstorf', text: '1' }]
+    - xxx
+    - 1
+    - '6'
+    - ''

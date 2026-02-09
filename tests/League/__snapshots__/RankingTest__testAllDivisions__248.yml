@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamburger SK', url: '?mannschaft=2668', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=679&r=6#p2668x2669', title: 'gegen Stader SV', text: '3' }]
+    - [{ url: '?staffel=679&r=5#p2668x2672', title: 'gegen Hagener SV', text: '3' }]
+    - [{ url: '?staffel=679&r=1#p2668x2676', title: 'gegen SK Doppelbauer', text: 4½ }]
+    - [{ url: '?staffel=679&r=9#p2668x2671', title: 'gegen SV Bargteheide', text: '5' }]
+    - [{ url: '?staffel=679&r=8#p2668x2675', title: 'gegen Königsspr. HH', text: '4' }]
+    - [{ url: '?staffel=679&r=3#p2668x2674', title: 'gegen Delmenhorster SK', text: '5' }]
+    - [{ url: '?staffel=679&r=2#p2668x2670', title: 'gegen SC Diogenes eV', text: 5½ }]
+    - [{ url: '?staffel=679&r=7#p2668x2667', title: 'gegen Joha. Eppendorf', text: 5½ }]
+    - [{ url: '?staffel=679&r=4#p2668x2673', title: 'gegen SK Nordhorn-Bl.', text: '6' }]
+    - 16
+    - 41½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Stader SV', url: '?mannschaft=2669', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=679&r=6#p2669x2668', title: 'gegen Hamburger SK', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=679&r=4#p2669x2672', title: 'gegen Hagener SV', text: 3½ }]
+    - [{ url: '?staffel=679&r=5#p2669x2676', title: 'gegen SK Doppelbauer', text: 3½ }]
+    - [{ url: '?staffel=679&r=3#p2669x2671', title: 'gegen SV Bargteheide', text: '5' }]
+    - [{ url: '?staffel=679&r=1#p2669x2675', title: 'gegen Königsspr. HH', text: '4' }]
+    - [{ url: '?staffel=679&r=9#p2669x2674', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=679&r=7#p2669x2670', title: 'gegen SC Diogenes eV', text: '6' }]
+    - [{ url: '?staffel=679&r=8#p2669x2667', title: 'gegen Joha. Eppendorf', text: '4' }]
+    - [{ url: '?staffel=679&r=2#p2669x2673', title: 'gegen SK Nordhorn-Bl.', text: '5' }]
+    - 16
+    - '37'
+    - aufsteigerRelegation
+-
+    - '3.'
+    - { text: 'Hagener SV', url: '?mannschaft=2672', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=679&r=5#p2672x2668', title: 'gegen Hamburger SK', text: '3' }]
+    - [{ url: '?staffel=679&r=4#p2672x2669', title: 'gegen Stader SV', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=679&r=9#p2672x2676', title: 'gegen SK Doppelbauer', text: '1' }]
+    - [{ url: '?staffel=679&r=8#p2672x2671', title: 'gegen SV Bargteheide', text: '6' }]
+    - [{ url: '?staffel=679&r=7#p2672x2675', title: 'gegen Königsspr. HH', text: '6' }]
+    - [{ url: '?staffel=679&r=2#p2672x2674', title: 'gegen Delmenhorster SK', text: 4½ }]
+    - [{ url: '?staffel=679&r=1#p2672x2670', title: 'gegen SC Diogenes eV', text: '5' }]
+    - [{ url: '?staffel=679&r=6#p2672x2667', title: 'gegen Joha. Eppendorf', text: '5' }]
+    - [{ url: '?staffel=679&r=3#p2672x2673', title: 'gegen SK Nordhorn-Bl.', text: 4½ }]
+    - 13
+    - 37½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Doppelbauer', url: '?mannschaft=2676', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=679&r=1#p2676x2668', title: 'gegen Hamburger SK', text: 1½ }]
+    - [{ url: '?staffel=679&r=5#p2676x2669', title: 'gegen Stader SV', text: 2½ }]
+    - [{ url: '?staffel=679&r=9#p2676x2672', title: 'gegen Hagener SV', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=679&r=4#p2676x2671', title: 'gegen SV Bargteheide', text: 2½ }]
+    - [{ url: '?staffel=679&r=3#p2676x2675', title: 'gegen Königsspr. HH', text: '3' }]
+    - [{ url: '?staffel=679&r=7#p2676x2674', title: 'gegen Delmenhorster SK', text: 3½ }]
+    - [{ url: '?staffel=679&r=6#p2676x2670', title: 'gegen SC Diogenes eV', text: 3½ }]
+    - [{ url: '?staffel=679&r=2#p2676x2667', title: 'gegen Joha. Eppendorf', text: 4½ }]
+    - [{ url: '?staffel=679&r=8#p2676x2673', title: 'gegen SK Nordhorn-Bl.', text: 5½ }]
+    - 11
+    - 31½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Bargteheide', url: '?mannschaft=2671', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=679&r=9#p2671x2668', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=679&r=3#p2671x2669', title: 'gegen Stader SV', text: '1' }]
+    - [{ url: '?staffel=679&r=8#p2671x2672', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=679&r=4#p2671x2676', title: 'gegen SK Doppelbauer', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=679&r=2#p2671x2675', title: 'gegen Königsspr. HH', text: '3' }]
+    - [{ url: '?staffel=679&r=6#p2671x2674', title: 'gegen Delmenhorster SK', text: '4' }]
+    - [{ url: '?staffel=679&r=5#p2671x2670', title: 'gegen SC Diogenes eV', text: 5½ }]
+    - [{ url: '?staffel=679&r=1#p2671x2667', title: 'gegen Joha. Eppendorf', text: '6' }]
+    - [{ url: '?staffel=679&r=7#p2671x2673', title: 'gegen SK Nordhorn-Bl.', text: 5½ }]
+    - 11
+    - 29½
+    - ''
+-
+    - '6.'
+    - { text: 'Königsspr. HH', url: '?mannschaft=2675', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=679&r=8#p2675x2668', title: 'gegen Hamburger SK', text: '2' }]
+    - [{ url: '?staffel=679&r=1#p2675x2669', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=679&r=7#p2675x2672', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=679&r=3#p2675x2676', title: 'gegen SK Doppelbauer', text: '3' }]
+    - [{ url: '?staffel=679&r=2#p2675x2671', title: 'gegen SV Bargteheide', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=679&r=5#p2675x2674', title: 'gegen Delmenhorster SK', text: '3' }]
+    - [{ url: '?staffel=679&r=4#p2675x2670', title: 'gegen SC Diogenes eV', text: 4½ }]
+    - [{ url: '?staffel=679&r=9#p2675x2667', title: 'gegen Joha. Eppendorf', text: '6' }]
+    - [{ url: '?staffel=679&r=6#p2675x2673', title: 'gegen SK Nordhorn-Bl.', text: 4½ }]
+    - 9
+    - '28'
+    - ''
+-
+    - '7.'
+    - { text: 'Delmenhorster SK', url: '?mannschaft=2674', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=679&r=3#p2674x2668', title: 'gegen Hamburger SK', text: '1' }]
+    - [{ url: '?staffel=679&r=9#p2674x2669', title: 'gegen Stader SV', text: '3' }]
+    - [{ url: '?staffel=679&r=2#p2674x2672', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=679&r=7#p2674x2676', title: 'gegen SK Doppelbauer', text: 2½ }]
+    - [{ url: '?staffel=679&r=6#p2674x2671', title: 'gegen SV Bargteheide', text: '2' }]
+    - [{ url: '?staffel=679&r=5#p2674x2675', title: 'gegen Königsspr. HH', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=679&r=8#p2674x2670', title: 'gegen SC Diogenes eV', text: '3' }]
+    - [{ url: '?staffel=679&r=4#p2674x2667', title: 'gegen Joha. Eppendorf', text: 4½ }]
+    - [{ url: '?staffel=679&r=1#p2674x2673', title: 'gegen SK Nordhorn-Bl.', text: '5' }]
+    - 7
+    - 25½
+    - absteiger
+-
+    - '8.'
+    - { text: 'SC Diogenes eV', url: '?mannschaft=2670', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=679&r=2#p2670x2668', title: 'gegen Hamburger SK', text: ½ }]
+    - [{ url: '?staffel=679&r=7#p2670x2669', title: 'gegen Stader SV', text: '0' }]
+    - [{ url: '?staffel=679&r=1#p2670x2672', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=679&r=6#p2670x2676', title: 'gegen SK Doppelbauer', text: 2½ }]
+    - [{ url: '?staffel=679&r=5#p2670x2671', title: 'gegen SV Bargteheide', text: ½ }]
+    - [{ url: '?staffel=679&r=4#p2670x2675', title: 'gegen Königsspr. HH', text: 1½ }]
+    - [{ url: '?staffel=679&r=8#p2670x2674', title: 'gegen Delmenhorster SK', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=679&r=3#p2670x2667', title: 'gegen Joha. Eppendorf', text: '4' }]
+    - [{ url: '?staffel=679&r=9#p2670x2673', title: 'gegen SK Nordhorn-Bl.', text: 4½ }]
+    - 5
+    - 17½
+    - absteiger
+-
+    - '9.'
+    - { text: 'Joha. Eppendorf', url: '?mannschaft=2667', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=679&r=7#p2667x2668', title: 'gegen Hamburger SK', text: ½ }]
+    - [{ url: '?staffel=679&r=8#p2667x2669', title: 'gegen Stader SV', text: '2' }]
+    - [{ url: '?staffel=679&r=6#p2667x2672', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=679&r=2#p2667x2676', title: 'gegen SK Doppelbauer', text: 1½ }]
+    - [{ url: '?staffel=679&r=1#p2667x2671', title: 'gegen SV Bargteheide', text: '0' }]
+    - [{ url: '?staffel=679&r=9#p2667x2675', title: 'gegen Königsspr. HH', text: '0' }]
+    - [{ url: '?staffel=679&r=4#p2667x2674', title: 'gegen Delmenhorster SK', text: 1½ }]
+    - [{ url: '?staffel=679&r=3#p2667x2670', title: 'gegen SC Diogenes eV', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=679&r=5#p2667x2673', title: 'gegen SK Nordhorn-Bl.', text: 3½ }]
+    - 2
+    - '12'
+    - absteiger
+-
+    - '10.'
+    - { text: 'SK Nordhorn-Bl.', url: '?mannschaft=2673', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=679&r=4#p2673x2668', title: 'gegen Hamburger SK', text: '0' }]
+    - [{ url: '?staffel=679&r=2#p2673x2669', title: 'gegen Stader SV', text: '1' }]
+    - [{ url: '?staffel=679&r=3#p2673x2672', title: 'gegen Hagener SV', text: 1½ }]
+    - [{ url: '?staffel=679&r=8#p2673x2676', title: 'gegen SK Doppelbauer', text: ½ }]
+    - [{ url: '?staffel=679&r=7#p2673x2671', title: 'gegen SV Bargteheide', text: ½ }]
+    - [{ url: '?staffel=679&r=6#p2673x2675', title: 'gegen Königsspr. HH', text: 1½ }]
+    - [{ url: '?staffel=679&r=1#p2673x2674', title: 'gegen Delmenhorster SK', text: '1' }]
+    - [{ url: '?staffel=679&r=9#p2673x2670', title: 'gegen SC Diogenes eV', text: 1½ }]
+    - [{ url: '?staffel=679&r=5#p2673x2667', title: 'gegen Joha. Eppendorf', text: 2½ }]
+    - xxx
+    - 0
+    - '10'
+    - absteiger

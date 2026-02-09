@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Roch. Braunschweig 2', url: '?mannschaft=8283', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1909&r=3#p8283x8293', title: 'gegen SC Langlingen', text: '3' }]
+    - {  }
+    - [{ url: '?staffel=1909&r=2#p8283x8297', title: 'gegen SG Gifhorn-Wolfsburg 6', text: '3' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1909&r=1#p8283x8291', title: 'gegen SC BS Gliesmarode 7', text: '3' }]
+    - {  }
+    - 6
+    - '9'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Langlingen', url: '?mannschaft=8293', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1909&r=3#p8293x8283', title: 'gegen Roch. Braunschweig 2', text: '1' }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1909&r=2#p8293x8286', title: 'gegen Peiner SV 3', text: 3½ }]
+    - [{ url: '?staffel=1909&r=1#p8293x8279', title: 'gegen SG Elmrochade 4', text: '4' }]
+    - {  }
+    - {  }
+    - 4
+    - 8½
+    - ''
+-
+    - '3.'
+    - { text: 'SVG Salzgitter e. V. 3', url: '?mannschaft=8308', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1909&r=3#p8308x8286', title: 'gegen Peiner SV 3', text: 1½ }]
+    - [{ url: '?staffel=1909&r=2#p8308x8279', title: 'gegen SG Elmrochade 4', text: 2½ }]
+    - {  }
+    - [{ url: '?staffel=1909&r=1#p8308x8462', title: 'gegen Spielfrei', text: '4' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '4.'
+    - { text: 'SG Gifhorn-Wolfsburg 6', url: '?mannschaft=8297', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1909&r=2#p8297x8283', title: 'gegen Roch. Braunschweig 2', text: '1' }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1909&r=1#p8297x8286', title: 'gegen Peiner SV 3', text: '2' }]
+    - {  }
+    - [{ url: '?staffel=1909&r=3#p8297x8291', title: 'gegen SC BS Gliesmarode 7', text: '4' }]
+    - {  }
+    - 3
+    - '7'
+    - ''
+-
+    - '5.'
+    - { text: 'Peiner SV 3', url: '?mannschaft=8286', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1909&r=2#p8286x8293', title: 'gegen SC Langlingen', text: ½ }]
+    - [{ url: '?staffel=1909&r=3#p8286x8308', title: 'gegen SVG Salzgitter e. V. 3', text: 2½ }]
+    - [{ url: '?staffel=1909&r=1#p8286x8297', title: 'gegen SG Gifhorn-Wolfsburg 6', text: '2' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - 3
+    - '5'
+    - ''
+-
+    - '6.'
+    - { text: 'SG Elmrochade 4', url: '?mannschaft=8279', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1909&r=1#p8279x8293', title: 'gegen SC Langlingen', text: '0' }]
+    - [{ url: '?staffel=1909&r=2#p8279x8308', title: 'gegen SVG Salzgitter e. V. 3', text: 1½ }]
+    - {  }
+    - {  }
+    - xxx
+    - {  }
+    - [{ url: '?staffel=1909&r=3#p8279x8462', title: 'gegen Spielfrei', text: '4' }]
+    - 2
+    - 5½
+    - ''
+-
+    - '7.'
+    - { text: 'SC BS Gliesmarode 7', url: '?mannschaft=8291', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1909&r=1#p8291x8283', title: 'gegen Roch. Braunschweig 2', text: '1' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1909&r=3#p8291x8297', title: 'gegen SG Gifhorn-Wolfsburg 6', text: '0' }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1909&r=2#p8291x8462', title: 'gegen Spielfrei', text: '4' }]
+    - 2
+    - '5'
+    - ''
+-
+    - '8.'
+    - { text: Spielfrei, url: '?mannschaft=8462', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1909&r=1#p8462x8308', title: 'gegen SVG Salzgitter e. V. 3', text: '0' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1909&r=3#p8462x8279', title: 'gegen SG Elmrochade 4', text: '0' }]
+    - [{ url: '?staffel=1909&r=2#p8462x8291', title: 'gegen SC BS Gliesmarode 7', text: '0' }]
+    - xxx
+    - 0
+    - '0'
+    - ''

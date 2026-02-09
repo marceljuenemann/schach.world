@@ -1,4 +1,4 @@
-<?
+<?php
 /* Spieltag als Text-Datei
  * 
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann

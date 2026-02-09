@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Lehrte', url: '?mannschaft=7947', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1812&r=3#p7947x8161', title: 'gegen SZ Bemerode', text: 2½ }]
+    - [{ url: '?staffel=1812&r=3#p7947x8147', title: 'gegen Hannover 96', text: 2½ }]
+    - [{ url: '?staffel=1812&r=2#p7947x8163', title: 'gegen SK Mädchen Bezirk 1', text: 3½ }]
+    - [{ url: '?staffel=1812&r=2#p7947x8128', title: 'gegen SK Anderten', text: '4' }]
+    - [{ url: '?staffel=1812&r=1#p7947x7948', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 10
+    - 16½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SZ Bemerode', url: '?mannschaft=8161', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1812&r=3#p8161x7947', title: 'gegen SK Lehrte', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1812&r=2#p8161x8147', title: 'gegen Hannover 96', text: 2½ }]
+    - [{ url: '?staffel=1812&r=1#p8161x8163', title: 'gegen SK Mädchen Bezirk 1', text: '3' }]
+    - [{ url: '?staffel=1812&r=1#p8161x8128', title: 'gegen SK Anderten', text: '2' }]
+    - [{ url: '?staffel=1812&r=3#p8161x7948', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 7
+    - '13'
+    - ''
+-
+    - '3.'
+    - { text: 'Hannover 96', url: '?mannschaft=8147', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1812&r=3#p8147x7947', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=1812&r=2#p8147x8161', title: 'gegen SZ Bemerode', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1812&r=1#p8147x8163', title: 'gegen SK Mädchen Bezirk 1', text: '4' }]
+    - [{ url: '?staffel=1812&r=1#p8147x8128', title: 'gegen SK Anderten', text: 3½ }]
+    - [{ url: '?staffel=1812&r=3#p8147x7948', title: 'gegen SK Lehrte 2', text: '4' }]
+    - 6
+    - 14½
+    - ''
+-
+    - '4.'
+    - { text: 'SK Mädchen Bezirk 1', url: '?mannschaft=8163', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1812&r=2#p8163x7947', title: 'gegen SK Lehrte', text: ½ }]
+    - [{ url: '?staffel=1812&r=1#p8163x8161', title: 'gegen SZ Bemerode', text: '1' }]
+    - [{ url: '?staffel=1812&r=1#p8163x8147', title: 'gegen Hannover 96', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1812&r=3#p8163x8128', title: 'gegen SK Anderten', text: '3' }]
+    - [{ url: '?staffel=1812&r=2#p8163x7948', title: 'gegen SK Lehrte 2', text: '2' }]
+    - 3
+    - 6½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Anderten', url: '?mannschaft=8128', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1812&r=2#p8128x7947', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1812&r=1#p8128x8161', title: 'gegen SZ Bemerode', text: '2' }]
+    - [{ url: '?staffel=1812&r=1#p8128x8147', title: 'gegen Hannover 96', text: ½ }]
+    - [{ url: '?staffel=1812&r=3#p8128x8163', title: 'gegen SK Mädchen Bezirk 1', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1812&r=2#p8128x7948', title: 'gegen SK Lehrte 2', text: '2' }]
+    - 2
+    - 5½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=7948', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1812&r=1#p7948x7947', title: 'gegen SK Lehrte', text: '0' }]
+    - [{ url: '?staffel=1812&r=3#p7948x8161', title: 'gegen SZ Bemerode', text: '0' }]
+    - [{ url: '?staffel=1812&r=3#p7948x8147', title: 'gegen Hannover 96', text: '0' }]
+    - [{ url: '?staffel=1812&r=2#p7948x8163', title: 'gegen SK Mädchen Bezirk 1', text: '2' }]
+    - [{ url: '?staffel=1812&r=2#p7948x8128', title: 'gegen SK Anderten', text: '2' }]
+    - xxx
+    - 2
+    - '4'
+    - ''

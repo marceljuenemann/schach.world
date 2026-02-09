@@ -1,4 +1,4 @@
-<?
+<?php
 /* Spieltag-Anzeige
  *
  * Zeigt Paarungen und Tabelle eines bestimmten Spieltages einer

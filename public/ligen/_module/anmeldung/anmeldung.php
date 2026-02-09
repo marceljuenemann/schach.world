@@ -1,4 +1,4 @@
-<?
+<?php
 /* Mannschaftsmeldung: Frontend
  *
  * @copyright Copyright (c) 2006-2010, Marcel Jünemann
@@ -110,5 +110,5 @@
     document.getElementById ( 'AnmeldungInhalt' ).style.display = "block";
 
   --></script>
-  <?
+  <?php
 ?>

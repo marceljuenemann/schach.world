@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Peiner SV', url: '?mannschaft=2561', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=678&r=6#p2561x2559', title: 'gegen SK Lehrte 2', text: '3' }]
+    - [{ url: '?staffel=678&r=1#p2561x2562', title: 'gegen Peiner SV 2', text: '4' }]
+    - [{ url: '?staffel=678&r=4#p2561x2554', title: "gegen SK Celle-W'cel.", text: '4' }]
+    - [{ url: '?staffel=678&r=3#p2561x2557', title: 'gegen SK Hermannsburg', text: '4' }]
+    - [{ url: '?staffel=678&r=5#p2561x2602', title: 'gegen FG Wohlde', text: '4' }]
+    - [{ url: '?staffel=678&r=7#p2561x2574', title: 'gegen SVG Salzgitter', text: '4' }]
+    - [{ url: '?staffel=678&r=2#p2561x2558', title: 'gegen SK Hermannsburg 2', text: '4' }]
+    - 14
+    - '27'
+    - aufsteigerRelegation
+-
+    - '2.'
+    - { text: 'SK Lehrte 2', url: '?mannschaft=2559', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=678&r=6#p2559x2561', title: 'gegen Peiner SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=678&r=7#p2559x2562', title: 'gegen Peiner SV 2', text: 3½ }]
+    - [{ url: '?staffel=678&r=3#p2559x2554', title: "gegen SK Celle-W'cel.", text: '3' }]
+    - [{ url: '?staffel=678&r=5#p2559x2557', title: 'gegen SK Hermannsburg', text: '3' }]
+    - [{ url: '?staffel=678&r=2#p2559x2602', title: 'gegen FG Wohlde', text: '2' }]
+    - [{ url: '?staffel=678&r=1#p2559x2574', title: 'gegen SVG Salzgitter', text: '4' }]
+    - [{ url: '?staffel=678&r=4#p2559x2558', title: 'gegen SK Hermannsburg 2', text: 3½ }]
+    - 11
+    - '20'
+    - ''
+-
+    - '3.'
+    - { text: 'Peiner SV 2', url: '?mannschaft=2562', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=678&r=1#p2562x2561', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=678&r=7#p2562x2559', title: 'gegen SK Lehrte 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=678&r=5#p2562x2554', title: "gegen SK Celle-W'cel.", text: '3' }]
+    - [{ url: '?staffel=678&r=2#p2562x2557', title: 'gegen SK Hermannsburg', text: '1' }]
+    - [{ url: '?staffel=678&r=4#p2562x2602', title: 'gegen FG Wohlde', text: '4' }]
+    - [{ url: '?staffel=678&r=6#p2562x2574', title: 'gegen SVG Salzgitter', text: '4' }]
+    - [{ url: '?staffel=678&r=3#p2562x2558', title: 'gegen SK Hermannsburg 2', text: '4' }]
+    - 8
+    - 16½
+    - ''
+-
+    - '4.'
+    - { text: "SK Celle-W'cel.", url: '?mannschaft=2554', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=678&r=4#p2554x2561', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=678&r=3#p2554x2559', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=678&r=5#p2554x2562', title: 'gegen Peiner SV 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=678&r=6#p2554x2557', title: 'gegen SK Hermannsburg', text: '4' }]
+    - [{ url: '?staffel=678&r=1#p2554x2602', title: 'gegen FG Wohlde', text: '3' }]
+    - [{ url: '?staffel=678&r=2#p2554x2574', title: 'gegen SVG Salzgitter', text: 1½ }]
+    - [{ url: '?staffel=678&r=7#p2554x2558', title: 'gegen SK Hermannsburg 2', text: '4' }]
+    - 6
+    - 14½
+    - ''
+-
+    - '5.'
+    - { text: 'SK Hermannsburg', url: '?mannschaft=2557', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=678&r=3#p2557x2561', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=678&r=5#p2557x2559', title: 'gegen SK Lehrte 2', text: '1' }]
+    - [{ url: '?staffel=678&r=2#p2557x2562', title: 'gegen Peiner SV 2', text: '3' }]
+    - [{ url: '?staffel=678&r=6#p2557x2554', title: "gegen SK Celle-W'cel.", text: '0' }]
+    - xxx
+    - [{ url: '?staffel=678&r=7#p2557x2602', title: 'gegen FG Wohlde', text: '2' }]
+    - [{ url: '?staffel=678&r=4#p2557x2574', title: 'gegen SVG Salzgitter', text: 1½ }]
+    - [{ url: '?staffel=678&r=1#p2557x2558', title: 'gegen SK Hermannsburg 2', text: '4' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '6.'
+    - { text: 'FG Wohlde', url: '?mannschaft=2602', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=678&r=5#p2602x2561', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=678&r=2#p2602x2559', title: 'gegen SK Lehrte 2', text: '2' }]
+    - [{ url: '?staffel=678&r=4#p2602x2562', title: 'gegen Peiner SV 2', text: '0' }]
+    - [{ url: '?staffel=678&r=1#p2602x2554', title: "gegen SK Celle-W'cel.", text: '1' }]
+    - [{ url: '?staffel=678&r=7#p2602x2557', title: 'gegen SK Hermannsburg', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=678&r=3#p2602x2574', title: 'gegen SVG Salzgitter', text: '3' }]
+    - [{ url: '?staffel=678&r=6#p2602x2558', title: 'gegen SK Hermannsburg 2', text: '2' }]
+    - 5
+    - '10'
+    - ''
+-
+    - '7.'
+    - { text: 'SVG Salzgitter', url: '?mannschaft=2574', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=678&r=7#p2574x2561', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=678&r=1#p2574x2559', title: 'gegen SK Lehrte 2', text: '0' }]
+    - [{ url: '?staffel=678&r=6#p2574x2562', title: 'gegen Peiner SV 2', text: '0' }]
+    - [{ url: '?staffel=678&r=2#p2574x2554', title: "gegen SK Celle-W'cel.", text: 2½ }]
+    - [{ url: '?staffel=678&r=4#p2574x2557', title: 'gegen SK Hermannsburg', text: 2½ }]
+    - [{ url: '?staffel=678&r=3#p2574x2602', title: 'gegen FG Wohlde', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=678&r=5#p2574x2558', title: 'gegen SK Hermannsburg 2', text: '2' }]
+    - 5
+    - '8'
+    - ''
+-
+    - '8.'
+    - { text: 'SK Hermannsburg 2', url: '?mannschaft=2558', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=678&r=2#p2558x2561', title: 'gegen Peiner SV', text: '0' }]
+    - [{ url: '?staffel=678&r=4#p2558x2559', title: 'gegen SK Lehrte 2', text: ½ }]
+    - [{ url: '?staffel=678&r=3#p2558x2562', title: 'gegen Peiner SV 2', text: '0' }]
+    - [{ url: '?staffel=678&r=7#p2558x2554', title: "gegen SK Celle-W'cel.", text: '0' }]
+    - [{ url: '?staffel=678&r=1#p2558x2557', title: 'gegen SK Hermannsburg', text: '0' }]
+    - [{ url: '?staffel=678&r=6#p2558x2602', title: 'gegen FG Wohlde', text: '2' }]
+    - [{ url: '?staffel=678&r=5#p2558x2574', title: 'gegen SVG Salzgitter', text: '2' }]
+    - xxx
+    - 2
+    - 4½
+    - ''

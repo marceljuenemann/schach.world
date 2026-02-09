@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Allianz Leipzig', url: '?mannschaft=4449', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1004&r=6#p4449x4447', title: 'gegen SC Rotation Pankow', text: '3' }]
+    - [{ url: '?staffel=1004&r=4#p4449x4451', title: 'gegen SG Löberitz', text: '4' }]
+    - [{ url: '?staffel=1004&r=3#p4449x4448', title: 'gegen BS Paderborn', text: '5' }]
+    - [{ url: '?staffel=1004&r=7#p4449x4452', title: 'gegen USV Potsdam', text: '4' }]
+    - [{ url: '?staffel=1004&r=5#p4449x4450', title: 'gegen Leipzig-Lindenau', text: 5½ }]
+    - [{ url: '?staffel=1004&r=1#p4449x4446', title: 'gegen TuS Coswig', text: '6' }]
+    - [{ url: '?staffel=1004&r=2#p4449x4453', title: 'gegen SG GW Dresden', text: '4' }]
+    - 13
+    - 31½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Rotation Pankow', url: '?mannschaft=4447', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1004&r=6#p4447x4449', title: 'gegen SV Allianz Leipzig', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1004&r=2#p4447x4451', title: 'gegen SG Löberitz', text: '5' }]
+    - [{ url: '?staffel=1004&r=1#p4447x4448', title: 'gegen BS Paderborn', text: '3' }]
+    - [{ url: '?staffel=1004&r=5#p4447x4452', title: 'gegen USV Potsdam', text: '5' }]
+    - [{ url: '?staffel=1004&r=7#p4447x4450', title: 'gegen Leipzig-Lindenau', text: 4½ }]
+    - [{ url: '?staffel=1004&r=3#p4447x4446', title: 'gegen TuS Coswig', text: '4' }]
+    - [{ url: '?staffel=1004&r=4#p4447x4453', title: 'gegen SG GW Dresden', text: '4' }]
+    - 12
+    - 28½
+    - ''
+-
+    - '3.'
+    - { text: 'SG Löberitz', url: '?mannschaft=4451', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1004&r=4#p4451x4449', title: 'gegen SV Allianz Leipzig', text: '2' }]
+    - [{ url: '?staffel=1004&r=2#p4451x4447', title: 'gegen SC Rotation Pankow', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1004&r=5#p4451x4448', title: 'gegen BS Paderborn', text: 4½ }]
+    - [{ url: '?staffel=1004&r=1#p4451x4452', title: 'gegen USV Potsdam', text: '4' }]
+    - [{ url: '?staffel=1004&r=3#p4451x4450', title: 'gegen Leipzig-Lindenau', text: 4½ }]
+    - [{ url: '?staffel=1004&r=7#p4451x4446', title: 'gegen TuS Coswig', text: '4' }]
+    - [{ url: '?staffel=1004&r=6#p4451x4453', title: 'gegen SG GW Dresden', text: 5½ }]
+    - 10
+    - 25½
+    - ''
+-
+    - '4.'
+    - { text: 'BS Paderborn', url: '?mannschaft=4448', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1004&r=3#p4448x4449', title: 'gegen SV Allianz Leipzig', text: '1' }]
+    - [{ url: '?staffel=1004&r=1#p4448x4447', title: 'gegen SC Rotation Pankow', text: '3' }]
+    - [{ url: '?staffel=1004&r=5#p4448x4451', title: 'gegen SG Löberitz', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1004&r=2#p4448x4452', title: 'gegen USV Potsdam', text: '5' }]
+    - [{ url: '?staffel=1004&r=4#p4448x4450', title: 'gegen Leipzig-Lindenau', text: 1½ }]
+    - [{ url: '?staffel=1004&r=6#p4448x4446', title: 'gegen TuS Coswig', text: '6' }]
+    - [{ url: '?staffel=1004&r=7#p4448x4453', title: 'gegen SG GW Dresden', text: '3' }]
+    - 6
+    - '21'
+    - ''
+-
+    - '5.'
+    - { text: 'USV Potsdam', url: '?mannschaft=4452', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1004&r=7#p4452x4449', title: 'gegen SV Allianz Leipzig', text: '2' }]
+    - [{ url: '?staffel=1004&r=5#p4452x4447', title: 'gegen SC Rotation Pankow', text: '1' }]
+    - [{ url: '?staffel=1004&r=1#p4452x4451', title: 'gegen SG Löberitz', text: '2' }]
+    - [{ url: '?staffel=1004&r=2#p4452x4448', title: 'gegen BS Paderborn', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1004&r=6#p4452x4450', title: 'gegen Leipzig-Lindenau', text: '5' }]
+    - [{ url: '?staffel=1004&r=4#p4452x4446', title: 'gegen TuS Coswig', text: 4½ }]
+    - [{ url: '?staffel=1004&r=3#p4452x4453', title: 'gegen SG GW Dresden', text: '4' }]
+    - 6
+    - 19½
+    - ''
+-
+    - '6.'
+    - { text: Leipzig-Lindenau, url: '?mannschaft=4450', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1004&r=5#p4450x4449', title: 'gegen SV Allianz Leipzig', text: ½ }]
+    - [{ url: '?staffel=1004&r=7#p4450x4447', title: 'gegen SC Rotation Pankow', text: 1½ }]
+    - [{ url: '?staffel=1004&r=3#p4450x4451', title: 'gegen SG Löberitz', text: 1½ }]
+    - [{ url: '?staffel=1004&r=4#p4450x4448', title: 'gegen BS Paderborn', text: 4½ }]
+    - [{ url: '?staffel=1004&r=6#p4450x4452', title: 'gegen USV Potsdam', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1004&r=2#p4450x4446', title: 'gegen TuS Coswig', text: 2½ }]
+    - [{ url: '?staffel=1004&r=1#p4450x4453', title: 'gegen SG GW Dresden', text: 3½ }]
+    - 4
+    - '15'
+    - ''
+-
+    - '7.'
+    - { text: 'TuS Coswig', url: '?mannschaft=4446', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1004&r=1#p4446x4449', title: 'gegen SV Allianz Leipzig', text: '0' }]
+    - [{ url: '?staffel=1004&r=3#p4446x4447', title: 'gegen SC Rotation Pankow', text: '2' }]
+    - [{ url: '?staffel=1004&r=7#p4446x4451', title: 'gegen SG Löberitz', text: '2' }]
+    - [{ url: '?staffel=1004&r=6#p4446x4448', title: 'gegen BS Paderborn', text: '0' }]
+    - [{ url: '?staffel=1004&r=4#p4446x4452', title: 'gegen USV Potsdam', text: 1½ }]
+    - [{ url: '?staffel=1004&r=2#p4446x4450', title: 'gegen Leipzig-Lindenau', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1004&r=5#p4446x4453', title: 'gegen SG GW Dresden', text: 4½ }]
+    - 4
+    - 13½
+    - absteiger
+-
+    - '8.'
+    - { text: 'SG GW Dresden', url: '?mannschaft=4453', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1004&r=2#p4453x4449', title: 'gegen SV Allianz Leipzig', text: '2' }]
+    - [{ url: '?staffel=1004&r=4#p4453x4447', title: 'gegen SC Rotation Pankow', text: '2' }]
+    - [{ url: '?staffel=1004&r=6#p4453x4451', title: 'gegen SG Löberitz', text: ½ }]
+    - [{ url: '?staffel=1004&r=7#p4453x4448', title: 'gegen BS Paderborn', text: '3' }]
+    - [{ url: '?staffel=1004&r=3#p4453x4452', title: 'gegen USV Potsdam', text: '2' }]
+    - [{ url: '?staffel=1004&r=1#p4453x4450', title: 'gegen Leipzig-Lindenau', text: 2½ }]
+    - [{ url: '?staffel=1004&r=5#p4453x4446', title: 'gegen TuS Coswig', text: 1½ }]
+    - xxx
+    - 1
+    - 13½
+    - absteiger

@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SG Leipzig 2', url: '?mannschaft=3556', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=794&r=2#p3556x3684', title: 'gegen CSC Aufbau 95', text: '3' }]
+    - [{ url: '?staffel=794&r=4#p3556x3603', title: 'gegen Rodewischer SM 2', text: 1½ }]
+    - [{ url: '?staffel=794&r=1#p3556x3397', title: 'gegen SV Merseburg', text: '3' }]
+    - [{ url: '?staffel=794&r=5#p3556x3600', title: 'gegen USG Chemnitz', text: '3' }]
+    - 6
+    - 10½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'CSC Aufbau 95', url: '?mannschaft=3684', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=794&r=2#p3684x3556', title: 'gegen SG Leipzig 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=794&r=5#p3684x3603', title: 'gegen Rodewischer SM 2', text: 2½ }]
+    - [{ url: '?staffel=794&r=4#p3684x3397', title: 'gegen SV Merseburg', text: '2' }]
+    - [{ url: '?staffel=794&r=3#p3684x3600', title: 'gegen USG Chemnitz', text: '3' }]
+    - 5
+    - 8½
+    - ''
+-
+    - '3.'
+    - { text: 'Rodewischer SM 2', url: '?mannschaft=3603', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=794&r=4#p3603x3556', title: 'gegen SG Leipzig 2', text: 2½ }]
+    - [{ url: '?staffel=794&r=5#p3603x3684', title: 'gegen CSC Aufbau 95', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=794&r=3#p3603x3397', title: 'gegen SV Merseburg', text: '2' }]
+    - [{ url: '?staffel=794&r=1#p3603x3600', title: 'gegen USG Chemnitz', text: '2' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '4.'
+    - { text: 'SV Merseburg', url: '?mannschaft=3397', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=794&r=1#p3397x3556', title: 'gegen SG Leipzig 2', text: '1' }]
+    - [{ url: '?staffel=794&r=4#p3397x3684', title: 'gegen CSC Aufbau 95', text: '2' }]
+    - [{ url: '?staffel=794&r=3#p3397x3603', title: 'gegen Rodewischer SM 2', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=794&r=2#p3397x3600', title: 'gegen USG Chemnitz', text: '3' }]
+    - 4
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'USG Chemnitz', url: '?mannschaft=3600', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=794&r=5#p3600x3556', title: 'gegen SG Leipzig 2', text: '1' }]
+    - [{ url: '?staffel=794&r=3#p3600x3684', title: 'gegen CSC Aufbau 95', text: '1' }]
+    - [{ url: '?staffel=794&r=1#p3600x3603', title: 'gegen Rodewischer SM 2', text: '2' }]
+    - [{ url: '?staffel=794&r=2#p3600x3397', title: 'gegen SV Merseburg', text: '1' }]
+    - xxx
+    - 1
+    - '5'
+    - absteiger

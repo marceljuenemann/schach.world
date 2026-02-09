@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hagener SV', url: '?mannschaft=1756', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=535&r=5#p1756x1757', title: 'gegen SG Oesede-Gmht.', text: 3½ }]
+    - [{ url: '?staffel=535&r=6#p1756x1752', title: 'gegen SK Wildeshausen', text: '5' }]
+    - [{ url: '?staffel=535&r=7#p1756x1755', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=535&r=3#p1756x1754', title: 'gegen SK Lehrte', text: '6' }]
+    - [{ url: '?staffel=535&r=2#p1756x1759', title: 'gegen SV Lingen', text: '6' }]
+    - [{ url: '?staffel=535&r=4#p1756x1751', title: 'gegen SV Bückeburg', text: 5½ }]
+    - [{ url: '?staffel=535&r=1#p1756x1753', title: 'gegen SVg Steinhude', text: '5' }]
+    - 14
+    - '35'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SG Oesede-Gmht.', url: '?mannschaft=1757', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=535&r=5#p1757x1756', title: 'gegen Hagener SV', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=535&r=3#p1757x1752', title: 'gegen SK Wildeshausen', text: 4½ }]
+    - [{ url: '?staffel=535&r=2#p1757x1755', title: 'gegen SD Isernhagen', text: 2½ }]
+    - [{ url: '?staffel=535&r=7#p1757x1754', title: 'gegen SK Lehrte', text: '5' }]
+    - [{ url: '?staffel=535&r=4#p1757x1759', title: 'gegen SV Lingen', text: 2½ }]
+    - [{ url: '?staffel=535&r=1#p1757x1751', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=535&r=6#p1757x1753', title: 'gegen SVg Steinhude', text: '6' }]
+    - 8
+    - 27½
+    - ''
+-
+    - '3.'
+    - { text: 'SK Wildeshausen', url: '?mannschaft=1752', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=535&r=6#p1752x1756', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=535&r=3#p1752x1757', title: 'gegen SG Oesede-Gmht.', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=535&r=5#p1752x1755', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=535&r=4#p1752x1754', title: 'gegen SK Lehrte', text: '5' }]
+    - [{ url: '?staffel=535&r=1#p1752x1759', title: 'gegen SV Lingen', text: 5½ }]
+    - [{ url: '?staffel=535&r=7#p1752x1751', title: 'gegen SV Bückeburg', text: 2½ }]
+    - [{ url: '?staffel=535&r=2#p1752x1753', title: 'gegen SVg Steinhude', text: '5' }]
+    - 8
+    - '24'
+    - ''
+-
+    - '4.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=1755', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=535&r=7#p1755x1756', title: 'gegen Hagener SV', text: '2' }]
+    - [{ url: '?staffel=535&r=2#p1755x1757', title: 'gegen SG Oesede-Gmht.', text: 3½ }]
+    - [{ url: '?staffel=535&r=5#p1755x1752', title: 'gegen SK Wildeshausen', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=535&r=1#p1755x1754', title: 'gegen SK Lehrte', text: '3' }]
+    - [{ url: '?staffel=535&r=3#p1755x1759', title: 'gegen SV Lingen', text: '5' }]
+    - [{ url: '?staffel=535&r=6#p1755x1751', title: 'gegen SV Bückeburg', text: '6' }]
+    - [{ url: '?staffel=535&r=4#p1755x1753', title: 'gegen SVg Steinhude', text: '2' }]
+    - 7
+    - '24'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Lehrte', url: '?mannschaft=1754', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=535&r=3#p1754x1756', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=535&r=7#p1754x1757', title: 'gegen SG Oesede-Gmht.', text: '1' }]
+    - [{ url: '?staffel=535&r=4#p1754x1752', title: 'gegen SK Wildeshausen', text: '1' }]
+    - [{ url: '?staffel=535&r=1#p1754x1755', title: 'gegen SD Isernhagen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=535&r=6#p1754x1759', title: 'gegen SV Lingen', text: '4' }]
+    - [{ url: '?staffel=535&r=2#p1754x1751', title: 'gegen SV Bückeburg', text: 4½ }]
+    - [{ url: '?staffel=535&r=5#p1754x1753', title: 'gegen SVg Steinhude', text: '4' }]
+    - 7
+    - 17½
+    - ''
+-
+    - '6.'
+    - { text: 'SV Lingen', url: '?mannschaft=1759', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=535&r=2#p1759x1756', title: 'gegen Hagener SV', text: '0' }]
+    - [{ url: '?staffel=535&r=4#p1759x1757', title: 'gegen SG Oesede-Gmht.', text: 3½ }]
+    - [{ url: '?staffel=535&r=1#p1759x1752', title: 'gegen SK Wildeshausen', text: ½ }]
+    - [{ url: '?staffel=535&r=3#p1759x1755', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=535&r=6#p1759x1754', title: 'gegen SK Lehrte', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=535&r=5#p1759x1751', title: 'gegen SV Bückeburg', text: '4' }]
+    - [{ url: '?staffel=535&r=7#p1759x1753', title: 'gegen SVg Steinhude', text: '4' }]
+    - 6
+    - '15'
+    - absteigerRelegation
+-
+    - '7.'
+    - { text: 'SV Bückeburg', url: '?mannschaft=1751', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=535&r=4#p1751x1756', title: 'gegen Hagener SV', text: ½ }]
+    - [{ url: '?staffel=535&r=1#p1751x1757', title: 'gegen SG Oesede-Gmht.', text: 1½ }]
+    - [{ url: '?staffel=535&r=7#p1751x1752', title: 'gegen SK Wildeshausen', text: 3½ }]
+    - [{ url: '?staffel=535&r=6#p1751x1755', title: 'gegen SD Isernhagen', text: '0' }]
+    - [{ url: '?staffel=535&r=2#p1751x1754', title: 'gegen SK Lehrte', text: 1½ }]
+    - [{ url: '?staffel=535&r=5#p1751x1759', title: 'gegen SV Lingen', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=535&r=3#p1751x1753', title: 'gegen SVg Steinhude', text: '5' }]
+    - 4
+    - '14'
+    - absteiger
+-
+    - '8.'
+    - { text: 'SVg Steinhude', url: '?mannschaft=1753', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=535&r=1#p1753x1756', title: 'gegen Hagener SV', text: '1' }]
+    - [{ url: '?staffel=535&r=6#p1753x1757', title: 'gegen SG Oesede-Gmht.', text: '0' }]
+    - [{ url: '?staffel=535&r=2#p1753x1752', title: 'gegen SK Wildeshausen', text: '1' }]
+    - [{ url: '?staffel=535&r=4#p1753x1755', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=535&r=5#p1753x1754', title: 'gegen SK Lehrte', text: '2' }]
+    - [{ url: '?staffel=535&r=7#p1753x1759', title: 'gegen SV Lingen', text: '2' }]
+    - [{ url: '?staffel=535&r=3#p1753x1751', title: 'gegen SV Bückeburg', text: '1' }]
+    - xxx
+    - 2
+    - '11'
+    - absteiger

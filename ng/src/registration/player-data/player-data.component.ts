@@ -16,11 +16,10 @@ export type PlayerData = Omit<DwzPlayer, 'status' | 'gender' | 'yearOfBirth' | '
 type PlayerOption = {name: string, data?: DwzPlayer}
 
 @Component({
-  selector: 'player-data',
-  standalone: true,
-  imports: [ReactiveFormsModule, NgbTypeaheadModule, NsvFormComponent],
-  templateUrl: './player-data.component.html',
-  styleUrl: './player-data.component.css'
+    selector: 'player-data',
+    imports: [ReactiveFormsModule, NgbTypeaheadModule, NsvFormComponent],
+    templateUrl: './player-data.component.html',
+    styleUrl: './player-data.component.css'
 })
 export class PlayerDataComponent {
   private subscription

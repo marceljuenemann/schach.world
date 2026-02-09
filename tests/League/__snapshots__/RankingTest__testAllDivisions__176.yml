@@ -1,0 +1,65 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Nordhorn-Blanke 7', url: '?mannschaft=1978', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=598&r=3#p1978x1976', title: 'gegen Bentheim/Nordho 4', text: '3' }, { url: '?staffel=598&r=7#p1978x1976', title: 'gegen Bentheim/Nordho 4', text: '4' }]
+    - [{ url: '?staffel=598&r=4#p1978x1977', title: 'gegen SF Spelle 3', text: '5' }, { url: '?staffel=598&r=9#p1978x1977', title: 'gegen SF Spelle 3', text: '2' }]
+    - [{ url: '?staffel=598&r=1#p1978x1981', title: 'gegen SK Meppen 2', text: '6' }, { url: '?staffel=598&r=6#p1978x1981', title: 'gegen SK Meppen 2', text: '6' }]
+    - [{ url: '?staffel=598&r=2#p1978x1980', title: 'gegen SC HT Herzlake 2', text: '6' }, { url: '?staffel=598&r=8#p1978x1980', title: 'gegen SC HT Herzlake 2', text: '4' }]
+    - 13
+    - '36'
+    - ''
+-
+    - '2.'
+    - { text: 'Bentheim/Nordho 4', url: '?mannschaft=1976', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=598&r=3#p1976x1978', title: 'gegen Nordhorn-Blanke 7', text: '3' }, { url: '?staffel=598&r=7#p1976x1978', title: 'gegen Nordhorn-Blanke 7', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=598&r=2#p1976x1977', title: 'gegen SF Spelle 3', text: 1½ }, { url: '?staffel=598&r=8#p1976x1977', title: 'gegen SF Spelle 3', text: 4½ }]
+    - [{ url: '?staffel=598&r=4#p1976x1981', title: 'gegen SK Meppen 2', text: 4½ }, { url: '?staffel=598&r=9#p1976x1981', title: 'gegen SK Meppen 2', text: '4' }]
+    - [{ url: '?staffel=598&r=5#p1976x1980', title: 'gegen SC HT Herzlake 2', text: 5½ }, { url: '?staffel=598&r=10#p1976x1980', title: 'gegen SC HT Herzlake 2', text: '6' }]
+    - 11
+    - '31'
+    - ''
+-
+    - '3.'
+    - { text: 'SF Spelle 3', url: '?mannschaft=1977', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=598&r=4#p1977x1978', title: 'gegen Nordhorn-Blanke 7', text: '1' }, { url: '?staffel=598&r=9#p1977x1978', title: 'gegen Nordhorn-Blanke 7', text: '4' }]
+    - [{ url: '?staffel=598&r=2#p1977x1976', title: 'gegen Bentheim/Nordho 4', text: 4½ }, { url: '?staffel=598&r=8#p1977x1976', title: 'gegen Bentheim/Nordho 4', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=598&r=5#p1977x1981', title: 'gegen SK Meppen 2', text: 4½ }, { url: '?staffel=598&r=10#p1977x1981', title: 'gegen SK Meppen 2', text: '2' }]
+    - [{ url: '?staffel=598&r=1#p1977x1980', title: 'gegen SC HT Herzlake 2', text: 5½ }, { url: '?staffel=598&r=6#p1977x1980', title: 'gegen SC HT Herzlake 2', text: '4' }]
+    - 10
+    - '27'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Meppen 2', url: '?mannschaft=1981', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=598&r=1#p1981x1978', title: 'gegen Nordhorn-Blanke 7', text: '0' }, { url: '?staffel=598&r=6#p1981x1978', title: 'gegen Nordhorn-Blanke 7', text: '0' }]
+    - [{ url: '?staffel=598&r=4#p1981x1976', title: 'gegen Bentheim/Nordho 4', text: 1½ }, { url: '?staffel=598&r=9#p1981x1976', title: 'gegen Bentheim/Nordho 4', text: '1' }]
+    - [{ url: '?staffel=598&r=5#p1981x1977', title: 'gegen SF Spelle 3', text: 1½ }, { url: '?staffel=598&r=10#p1981x1977', title: 'gegen SF Spelle 3', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=598&r=3#p1981x1980', title: 'gegen SC HT Herzlake 2', text: '4' }, { url: '?staffel=598&r=7#p1981x1980', title: 'gegen SC HT Herzlake 2', text: '3' }]
+    - 5
+    - '14'
+    - ''
+-
+    - '5.'
+    - { text: 'SC HT Herzlake 2', url: '?mannschaft=1980', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=598&r=2#p1980x1978', title: 'gegen Nordhorn-Blanke 7', text: '0' }, { url: '?staffel=598&r=8#p1980x1978', title: 'gegen Nordhorn-Blanke 7', text: '2' }]
+    - [{ url: '?staffel=598&r=5#p1980x1976', title: 'gegen Bentheim/Nordho 4', text: ½ }, { url: '?staffel=598&r=10#p1980x1976', title: 'gegen Bentheim/Nordho 4', text: '0' }]
+    - [{ url: '?staffel=598&r=1#p1980x1977', title: 'gegen SF Spelle 3', text: ½ }, { url: '?staffel=598&r=6#p1980x1977', title: 'gegen SF Spelle 3', text: '2' }]
+    - [{ url: '?staffel=598&r=3#p1980x1981', title: 'gegen SK Meppen 2', text: '2' }, { url: '?staffel=598&r=7#p1980x1981', title: 'gegen SK Meppen 2', text: '3' }]
+    - xxx
+    - 1
+    - '10'
+    - ''

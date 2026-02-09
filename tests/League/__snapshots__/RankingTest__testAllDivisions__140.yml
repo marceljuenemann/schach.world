@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'ESV RW Göttingen', url: '?mannschaft=1721', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=553&r=2#p1721x1728', title: 'gegen Hildesheimer SV 2', text: '5' }]
+    - [{ url: '?staffel=553&r=3#p1721x1722', title: 'gegen BadSalzdetfurth 2', text: '6' }]
+    - [{ url: '?staffel=553&r=6#p1721x1726', title: 'gegen SG Holzminden', text: '7' }]
+    - [{ url: '?staffel=553&r=5#p1721x1723', title: 'gegen SV GW Parensen', text: '7' }]
+    - [{ url: '?staffel=553&r=8#p1721x1729', title: 'gegen SK Gronau', text: '5' }]
+    - [{ url: '?staffel=553&r=4#p1721x1727', title: 'gegen SK Duderstadt', text: '7' }]
+    - [{ url: '?staffel=553&r=7#p1721x1725', title: 'gegen Plesse Bovenden', text: 4½ }]
+    - [{ url: '?staffel=553&r=9#p1721x1724', title: 'gegen Hamelner SV 3', text: '5' }]
+    - [{ url: '?staffel=553&r=1#p1721x1730', title: 'gegen ESV RW Göttingen 2', text: '7' }]
+    - 18
+    - 53½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hildesheimer SV 2', url: '?mannschaft=1728', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=553&r=2#p1728x1721', title: 'gegen ESV RW Göttingen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=553&r=6#p1728x1722', title: 'gegen BadSalzdetfurth 2', text: 4½ }]
+    - [{ url: '?staffel=553&r=4#p1728x1726', title: 'gegen SG Holzminden', text: 5½ }]
+    - [{ url: '?staffel=553&r=8#p1728x1723', title: 'gegen SV GW Parensen', text: 3½ }]
+    - [{ url: '?staffel=553&r=7#p1728x1729', title: 'gegen SK Gronau', text: '4' }]
+    - [{ url: '?staffel=553&r=5#p1728x1727', title: 'gegen SK Duderstadt', text: 5½ }]
+    - [{ url: '?staffel=553&r=9#p1728x1725', title: 'gegen Plesse Bovenden', text: 4½ }]
+    - [{ url: '?staffel=553&r=1#p1728x1724', title: 'gegen Hamelner SV 3', text: 4½ }]
+    - [{ url: '?staffel=553&r=3#p1728x1730', title: 'gegen ESV RW Göttingen 2', text: 6½ }]
+    - 13
+    - 41½
+    - ''
+-
+    - '3.'
+    - { text: 'BadSalzdetfurth 2', url: '?mannschaft=1722', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=553&r=3#p1722x1721', title: 'gegen ESV RW Göttingen', text: '2' }]
+    - [{ url: '?staffel=553&r=6#p1722x1728', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=553&r=8#p1722x1726', title: 'gegen SG Holzminden', text: 4½ }]
+    - [{ url: '?staffel=553&r=9#p1722x1723', title: 'gegen SV GW Parensen', text: 4½ }]
+    - [{ url: '?staffel=553&r=5#p1722x1729', title: 'gegen SK Gronau', text: '6' }]
+    - [{ url: '?staffel=553&r=1#p1722x1727', title: 'gegen SK Duderstadt', text: 2½ }]
+    - [{ url: '?staffel=553&r=4#p1722x1725', title: 'gegen Plesse Bovenden', text: 5½ }]
+    - [{ url: '?staffel=553&r=7#p1722x1724', title: 'gegen Hamelner SV 3', text: '7' }]
+    - [{ url: '?staffel=553&r=2#p1722x1730', title: 'gegen ESV RW Göttingen 2', text: '5' }]
+    - 12
+    - 40½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Holzminden', url: '?mannschaft=1726', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=553&r=6#p1726x1721', title: 'gegen ESV RW Göttingen', text: '1' }]
+    - [{ url: '?staffel=553&r=4#p1726x1728', title: 'gegen Hildesheimer SV 2', text: 2½ }]
+    - [{ url: '?staffel=553&r=8#p1726x1722', title: 'gegen BadSalzdetfurth 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=553&r=3#p1726x1723', title: 'gegen SV GW Parensen', text: '5' }]
+    - [{ url: '?staffel=553&r=1#p1726x1729', title: 'gegen SK Gronau', text: 4½ }]
+    - [{ url: '?staffel=553&r=9#p1726x1727', title: 'gegen SK Duderstadt', text: '7' }]
+    - [{ url: '?staffel=553&r=2#p1726x1725', title: 'gegen Plesse Bovenden', text: 5½ }]
+    - [{ url: '?staffel=553&r=5#p1726x1724', title: 'gegen Hamelner SV 3', text: '4' }]
+    - [{ url: '?staffel=553&r=7#p1726x1730', title: 'gegen ESV RW Göttingen 2', text: '5' }]
+    - 11
+    - '38'
+    - ''
+-
+    - '5.'
+    - { text: 'SV GW Parensen', url: '?mannschaft=1723', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=553&r=5#p1723x1721', title: 'gegen ESV RW Göttingen', text: '1' }]
+    - [{ url: '?staffel=553&r=8#p1723x1728', title: 'gegen Hildesheimer SV 2', text: 4½ }]
+    - [{ url: '?staffel=553&r=9#p1723x1722', title: 'gegen BadSalzdetfurth 2', text: 2½ }]
+    - [{ url: '?staffel=553&r=3#p1723x1726', title: 'gegen SG Holzminden', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=553&r=4#p1723x1729', title: 'gegen SK Gronau', text: '4' }]
+    - [{ url: '?staffel=553&r=7#p1723x1727', title: 'gegen SK Duderstadt', text: '4' }]
+    - [{ url: '?staffel=553&r=1#p1723x1725', title: 'gegen Plesse Bovenden', text: '4' }]
+    - [{ url: '?staffel=553&r=2#p1723x1724', title: 'gegen Hamelner SV 3', text: '5' }]
+    - [{ url: '?staffel=553&r=6#p1723x1730', title: 'gegen ESV RW Göttingen 2', text: 5½ }]
+    - 9
+    - 33½
+    - ''
+-
+    - '6.'
+    - { text: 'SK Gronau', url: '?mannschaft=1729', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=553&r=8#p1729x1721', title: 'gegen ESV RW Göttingen', text: '3' }]
+    - [{ url: '?staffel=553&r=7#p1729x1728', title: 'gegen Hildesheimer SV 2', text: '4' }]
+    - [{ url: '?staffel=553&r=5#p1729x1722', title: 'gegen BadSalzdetfurth 2', text: '2' }]
+    - [{ url: '?staffel=553&r=1#p1729x1726', title: 'gegen SG Holzminden', text: 3½ }]
+    - [{ url: '?staffel=553&r=4#p1729x1723', title: 'gegen SV GW Parensen', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=553&r=2#p1729x1727', title: 'gegen SK Duderstadt', text: '5' }]
+    - [{ url: '?staffel=553&r=3#p1729x1725', title: 'gegen Plesse Bovenden', text: 3½ }]
+    - [{ url: '?staffel=553&r=6#p1729x1724', title: 'gegen Hamelner SV 3', text: '5' }]
+    - [{ url: '?staffel=553&r=9#p1729x1730', title: 'gegen ESV RW Göttingen 2', text: 5½ }]
+    - 8
+    - 35½
+    - ''
+-
+    - '7.'
+    - { text: 'SK Duderstadt', url: '?mannschaft=1727', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=553&r=4#p1727x1721', title: 'gegen ESV RW Göttingen', text: '1' }]
+    - [{ url: '?staffel=553&r=5#p1727x1728', title: 'gegen Hildesheimer SV 2', text: 2½ }]
+    - [{ url: '?staffel=553&r=1#p1727x1722', title: 'gegen BadSalzdetfurth 2', text: 5½ }]
+    - [{ url: '?staffel=553&r=9#p1727x1726', title: 'gegen SG Holzminden', text: '1' }]
+    - [{ url: '?staffel=553&r=7#p1727x1723', title: 'gegen SV GW Parensen', text: '4' }]
+    - [{ url: '?staffel=553&r=2#p1727x1729', title: 'gegen SK Gronau', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=553&r=6#p1727x1725', title: 'gegen Plesse Bovenden', text: '4' }]
+    - [{ url: '?staffel=553&r=3#p1727x1724', title: 'gegen Hamelner SV 3', text: '6' }]
+    - [{ url: '?staffel=553&r=8#p1727x1730', title: 'gegen ESV RW Göttingen 2', text: '5' }]
+    - 8
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'Plesse Bovenden', url: '?mannschaft=1725', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=553&r=7#p1725x1721', title: 'gegen ESV RW Göttingen', text: 3½ }]
+    - [{ url: '?staffel=553&r=9#p1725x1728', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - [{ url: '?staffel=553&r=4#p1725x1722', title: 'gegen BadSalzdetfurth 2', text: 2½ }]
+    - [{ url: '?staffel=553&r=2#p1725x1726', title: 'gegen SG Holzminden', text: 2½ }]
+    - [{ url: '?staffel=553&r=1#p1725x1723', title: 'gegen SV GW Parensen', text: '4' }]
+    - [{ url: '?staffel=553&r=3#p1725x1729', title: 'gegen SK Gronau', text: 4½ }]
+    - [{ url: '?staffel=553&r=6#p1725x1727', title: 'gegen SK Duderstadt', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=553&r=8#p1725x1724', title: 'gegen Hamelner SV 3', text: '2' }]
+    - [{ url: '?staffel=553&r=5#p1725x1730', title: 'gegen ESV RW Göttingen 2', text: '6' }]
+    - 6
+    - 32½
+    - ''
+-
+    - '9.'
+    - { text: 'Hamelner SV 3', url: '?mannschaft=1724', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=553&r=9#p1724x1721', title: 'gegen ESV RW Göttingen', text: '3' }]
+    - [{ url: '?staffel=553&r=1#p1724x1728', title: 'gegen Hildesheimer SV 2', text: 3½ }]
+    - [{ url: '?staffel=553&r=7#p1724x1722', title: 'gegen BadSalzdetfurth 2', text: '1' }]
+    - [{ url: '?staffel=553&r=5#p1724x1726', title: 'gegen SG Holzminden', text: '4' }]
+    - [{ url: '?staffel=553&r=2#p1724x1723', title: 'gegen SV GW Parensen', text: '3' }]
+    - [{ url: '?staffel=553&r=6#p1724x1729', title: 'gegen SK Gronau', text: '3' }]
+    - [{ url: '?staffel=553&r=3#p1724x1727', title: 'gegen SK Duderstadt', text: '2' }]
+    - [{ url: '?staffel=553&r=8#p1724x1725', title: 'gegen Plesse Bovenden', text: '6' }]
+    - xxx
+    - [{ url: '?staffel=553&r=4#p1724x1730', title: 'gegen ESV RW Göttingen 2', text: '3' }]
+    - 3
+    - 28½
+    - absteiger
+-
+    - '10.'
+    - { text: 'ESV RW Göttingen 2', url: '?mannschaft=1730', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=553&r=1#p1730x1721', title: 'gegen ESV RW Göttingen', text: '1' }]
+    - [{ url: '?staffel=553&r=3#p1730x1728', title: 'gegen Hildesheimer SV 2', text: 1½ }]
+    - [{ url: '?staffel=553&r=2#p1730x1722', title: 'gegen BadSalzdetfurth 2', text: '3' }]
+    - [{ url: '?staffel=553&r=7#p1730x1726', title: 'gegen SG Holzminden', text: '3' }]
+    - [{ url: '?staffel=553&r=6#p1730x1723', title: 'gegen SV GW Parensen', text: 2½ }]
+    - [{ url: '?staffel=553&r=9#p1730x1729', title: 'gegen SK Gronau', text: 2½ }]
+    - [{ url: '?staffel=553&r=8#p1730x1727', title: 'gegen SK Duderstadt', text: '3' }]
+    - [{ url: '?staffel=553&r=5#p1730x1725', title: 'gegen Plesse Bovenden', text: '2' }]
+    - [{ url: '?staffel=553&r=4#p1730x1724', title: 'gegen Hamelner SV 3', text: '5' }]
+    - xxx
+    - 2
+    - 23½
+    - absteiger

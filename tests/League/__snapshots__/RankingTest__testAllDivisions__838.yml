@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SF LHW', url: '?mannschaft=7218', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1659&r=5#p7218x7130', title: 'gegen Stader SV', text: '5' }]
+    - [{ url: '?staffel=1659&r=3#p7218x7197', title: 'gegen Post SV Uelzen 2', text: '6' }]
+    - [{ url: '?staffel=1659&r=4#p7218x7136', title: 'gegen MTV Dannenberg', text: 4½ }]
+    - [{ url: '?staffel=1659&r=2#p7218x7174', title: 'gegen SC Turm Lüneburg', text: 5½ }]
+    - [{ url: '?staffel=1659&r=6#p7218x7113', title: 'gegen SG FinWest', text: 6½ }]
+    - [{ url: '?staffel=1659&r=8#p7218x7122', title: 'gegen SK Verden', text: 4½ }]
+    - [{ url: '?staffel=1659&r=7#p7218x7116', title: 'gegen SG Niederelbe', text: 5½ }]
+    - [{ url: '?staffel=1659&r=1#p7218x7148', title: 'gegen SF Leherheide', text: 4½ }]
+    - [{ url: '?staffel=1659&r=9#p7218x7176', title: 'gegen SV Winsen (Luhe)', text: '6' }]
+    - 18
+    - '48'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Stader SV', url: '?mannschaft=7130', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1659&r=5#p7130x7218', title: 'gegen SF LHW', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1659&r=2#p7130x7197', title: 'gegen Post SV Uelzen 2', text: '0' }]
+    - [{ url: '?staffel=1659&r=8#p7130x7136', title: 'gegen MTV Dannenberg', text: '5' }]
+    - [{ url: '?staffel=1659&r=3#p7130x7174', title: 'gegen SC Turm Lüneburg', text: 4½ }]
+    - [{ url: '?staffel=1659&r=7#p7130x7113', title: 'gegen SG FinWest', text: 4½ }]
+    - [{ url: '?staffel=1659&r=9#p7130x7122', title: 'gegen SK Verden', text: 6½ }]
+    - [{ url: '?staffel=1659&r=6#p7130x7116', title: 'gegen SG Niederelbe', text: 6½ }]
+    - [{ url: '?staffel=1659&r=4#p7130x7148', title: 'gegen SF Leherheide', text: 6½ }]
+    - [{ url: '?staffel=1659&r=1#p7130x7176', title: 'gegen SV Winsen (Luhe)', text: '5' }]
+    - 14
+    - 41½
+    - ''
+-
+    - '3.'
+    - { text: 'Post SV Uelzen 2', url: '?mannschaft=7197', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1659&r=3#p7197x7218', title: 'gegen SF LHW', text: '2' }]
+    - [{ url: '?staffel=1659&r=2#p7197x7130', title: 'gegen Stader SV', text: '8' }]
+    - xxx
+    - [{ url: '?staffel=1659&r=6#p7197x7136', title: 'gegen MTV Dannenberg', text: '3' }]
+    - [{ url: '?staffel=1659&r=1#p7197x7174', title: 'gegen SC Turm Lüneburg', text: '6' }]
+    - [{ url: '?staffel=1659&r=9#p7197x7113', title: 'gegen SG FinWest', text: 6½ }]
+    - [{ url: '?staffel=1659&r=5#p7197x7122', title: 'gegen SK Verden', text: 4½ }]
+    - [{ url: '?staffel=1659&r=4#p7197x7116', title: 'gegen SG Niederelbe', text: 5½ }]
+    - [{ url: '?staffel=1659&r=8#p7197x7148', title: 'gegen SF Leherheide', text: '5' }]
+    - [{ url: '?staffel=1659&r=7#p7197x7176', title: 'gegen SV Winsen (Luhe)', text: 3½ }]
+    - 12
+    - '44'
+    - ''
+-
+    - '4.'
+    - { text: 'MTV Dannenberg', url: '?mannschaft=7136', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1659&r=4#p7136x7218', title: 'gegen SF LHW', text: 3½ }]
+    - [{ url: '?staffel=1659&r=8#p7136x7130', title: 'gegen Stader SV', text: '3' }]
+    - [{ url: '?staffel=1659&r=6#p7136x7197', title: 'gegen Post SV Uelzen 2', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=1659&r=7#p7136x7174', title: 'gegen SC Turm Lüneburg', text: 4½ }]
+    - [{ url: '?staffel=1659&r=1#p7136x7113', title: 'gegen SG FinWest', text: 4½ }]
+    - [{ url: '?staffel=1659&r=3#p7136x7122', title: 'gegen SK Verden', text: 3½ }]
+    - [{ url: '?staffel=1659&r=9#p7136x7116', title: 'gegen SG Niederelbe', text: '2' }]
+    - [{ url: '?staffel=1659&r=2#p7136x7148', title: 'gegen SF Leherheide', text: '6' }]
+    - [{ url: '?staffel=1659&r=5#p7136x7176', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - 9
+    - '36'
+    - ''
+-
+    - '5.'
+    - { text: 'SC Turm Lüneburg', url: '?mannschaft=7174', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1659&r=2#p7174x7218', title: 'gegen SF LHW', text: 2½ }]
+    - [{ url: '?staffel=1659&r=3#p7174x7130', title: 'gegen Stader SV', text: 3½ }]
+    - [{ url: '?staffel=1659&r=1#p7174x7197', title: 'gegen Post SV Uelzen 2', text: '2' }]
+    - [{ url: '?staffel=1659&r=7#p7174x7136', title: 'gegen MTV Dannenberg', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1659&r=8#p7174x7113', title: 'gegen SG FinWest', text: 5½ }]
+    - [{ url: '?staffel=1659&r=6#p7174x7122', title: 'gegen SK Verden', text: 4½ }]
+    - [{ url: '?staffel=1659&r=5#p7174x7116', title: 'gegen SG Niederelbe', text: '2' }]
+    - [{ url: '?staffel=1659&r=9#p7174x7148', title: 'gegen SF Leherheide', text: '5' }]
+    - [{ url: '?staffel=1659&r=4#p7174x7176', title: 'gegen SV Winsen (Luhe)', text: '5' }]
+    - 8
+    - 33½
+    - ''
+-
+    - '6.'
+    - { text: 'SG FinWest', url: '?mannschaft=7113', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1659&r=6#p7113x7218', title: 'gegen SF LHW', text: 1½ }]
+    - [{ url: '?staffel=1659&r=7#p7113x7130', title: 'gegen Stader SV', text: 3½ }]
+    - [{ url: '?staffel=1659&r=9#p7113x7197', title: 'gegen Post SV Uelzen 2', text: 1½ }]
+    - [{ url: '?staffel=1659&r=1#p7113x7136', title: 'gegen MTV Dannenberg', text: 3½ }]
+    - [{ url: '?staffel=1659&r=8#p7113x7174', title: 'gegen SC Turm Lüneburg', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1659&r=4#p7113x7122', title: 'gegen SK Verden', text: 4½ }]
+    - [{ url: '?staffel=1659&r=2#p7113x7116', title: 'gegen SG Niederelbe', text: 4½ }]
+    - [{ url: '?staffel=1659&r=5#p7113x7148', title: 'gegen SF Leherheide', text: 4½ }]
+    - [{ url: '?staffel=1659&r=3#p7113x7176', title: 'gegen SV Winsen (Luhe)', text: '5' }]
+    - 8
+    - '31'
+    - ''
+-
+    - '7.'
+    - { text: 'SK Verden', url: '?mannschaft=7122', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1659&r=8#p7122x7218', title: 'gegen SF LHW', text: 3½ }]
+    - [{ url: '?staffel=1659&r=9#p7122x7130', title: 'gegen Stader SV', text: 1½ }]
+    - [{ url: '?staffel=1659&r=5#p7122x7197', title: 'gegen Post SV Uelzen 2', text: 3½ }]
+    - [{ url: '?staffel=1659&r=3#p7122x7136', title: 'gegen MTV Dannenberg', text: 4½ }]
+    - [{ url: '?staffel=1659&r=6#p7122x7174', title: 'gegen SC Turm Lüneburg', text: 3½ }]
+    - [{ url: '?staffel=1659&r=4#p7122x7113', title: 'gegen SG FinWest', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1659&r=1#p7122x7116', title: 'gegen SG Niederelbe', text: 5½ }]
+    - [{ url: '?staffel=1659&r=7#p7122x7148', title: 'gegen SF Leherheide', text: 4½ }]
+    - [{ url: '?staffel=1659&r=2#p7122x7176', title: 'gegen SV Winsen (Luhe)', text: '4' }]
+    - 7
+    - '34'
+    - ''
+-
+    - '8.'
+    - { text: 'SG Niederelbe', url: '?mannschaft=7116', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1659&r=7#p7116x7218', title: 'gegen SF LHW', text: 2½ }]
+    - [{ url: '?staffel=1659&r=6#p7116x7130', title: 'gegen Stader SV', text: 1½ }]
+    - [{ url: '?staffel=1659&r=4#p7116x7197', title: 'gegen Post SV Uelzen 2', text: 2½ }]
+    - [{ url: '?staffel=1659&r=9#p7116x7136', title: 'gegen MTV Dannenberg', text: '6' }]
+    - [{ url: '?staffel=1659&r=5#p7116x7174', title: 'gegen SC Turm Lüneburg', text: '6' }]
+    - [{ url: '?staffel=1659&r=2#p7116x7113', title: 'gegen SG FinWest', text: 3½ }]
+    - [{ url: '?staffel=1659&r=1#p7116x7122', title: 'gegen SK Verden', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1659&r=3#p7116x7148', title: 'gegen SF Leherheide', text: 3½ }]
+    - [{ url: '?staffel=1659&r=8#p7116x7176', title: 'gegen SV Winsen (Luhe)', text: '5' }]
+    - 6
+    - '33'
+    - ''
+-
+    - '9.'
+    - { text: 'SF Leherheide', url: '?mannschaft=7148', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1659&r=1#p7148x7218', title: 'gegen SF LHW', text: 3½ }]
+    - [{ url: '?staffel=1659&r=4#p7148x7130', title: 'gegen Stader SV', text: 1½ }]
+    - [{ url: '?staffel=1659&r=8#p7148x7197', title: 'gegen Post SV Uelzen 2', text: '3' }]
+    - [{ url: '?staffel=1659&r=2#p7148x7136', title: 'gegen MTV Dannenberg', text: '2' }]
+    - [{ url: '?staffel=1659&r=9#p7148x7174', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=1659&r=5#p7148x7113', title: 'gegen SG FinWest', text: 3½ }]
+    - [{ url: '?staffel=1659&r=7#p7148x7122', title: 'gegen SK Verden', text: 3½ }]
+    - [{ url: '?staffel=1659&r=3#p7148x7116', title: 'gegen SG Niederelbe', text: 4½ }]
+    - xxx
+    - [{ url: '?staffel=1659&r=6#p7148x7176', title: 'gegen SV Winsen (Luhe)', text: '5' }]
+    - 4
+    - 29½
+    - absteiger
+-
+    - '10.'
+    - { text: 'SV Winsen (Luhe)', url: '?mannschaft=7176', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1659&r=9#p7176x7218', title: 'gegen SF LHW', text: '2' }]
+    - [{ url: '?staffel=1659&r=1#p7176x7130', title: 'gegen Stader SV', text: '3' }]
+    - [{ url: '?staffel=1659&r=7#p7176x7197', title: 'gegen Post SV Uelzen 2', text: 4½ }]
+    - [{ url: '?staffel=1659&r=5#p7176x7136', title: 'gegen MTV Dannenberg', text: '4' }]
+    - [{ url: '?staffel=1659&r=4#p7176x7174', title: 'gegen SC Turm Lüneburg', text: '3' }]
+    - [{ url: '?staffel=1659&r=3#p7176x7113', title: 'gegen SG FinWest', text: '3' }]
+    - [{ url: '?staffel=1659&r=2#p7176x7122', title: 'gegen SK Verden', text: '4' }]
+    - [{ url: '?staffel=1659&r=8#p7176x7116', title: 'gegen SG Niederelbe', text: '3' }]
+    - [{ url: '?staffel=1659&r=6#p7176x7148', title: 'gegen SF Leherheide', text: '3' }]
+    - xxx
+    - 4
+    - 29½
+    - absteiger

@@ -64,7 +64,7 @@ class PlayerData
     $data->elo = $player->elo;
     $data->fideTitle = $player->fideTitle;
     if ($data->fideTitle && $data->fideTitle[0] == 'W') {
-      $data->fideTitle += 'M';
+      $data->fideTitle = $data->fideTitle . 'M';
     }
     $data->fideId = $player->fideId;
     $data->fideCountry = $player->fideCountry;

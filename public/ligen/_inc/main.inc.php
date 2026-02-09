@@ -1,4 +1,4 @@
-<?
+<?php
 /* Verschiedene Funktionen
  * 
  * Ein paar bunt gemischte Funktionen, die immer verfügbar sind.
@@ -17,8 +17,6 @@ use Doctrine\DBAL\Result as DBALResult;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LegacySystem;
 use Nsv\League\Core\Result;
-
-  require_once ( "../../libs/mysql-shim.php" );
 
   define('SED_REMIS', Result::DRAW());
 

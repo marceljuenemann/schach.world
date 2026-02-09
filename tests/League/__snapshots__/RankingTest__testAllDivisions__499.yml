@@ -1,0 +1,149 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Fürstenau 2', url: '?mannschaft=4590', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=980&r=3#p4590x4564', title: 'gegen Gaste-Hasbergen 2', text: 3½ }]
+    - [{ url: '?staffel=980&r=7#p4590x4620', title: 'gegen Hagener SV 6', text: 2½ }]
+    - [{ url: '?staffel=980&r=8#p4590x4606', title: 'gegen Rochade Hollage 2', text: '4' }]
+    - [{ url: '?staffel=980&r=1#p4590x4594', title: 'gegen SV Osnabrück 6', text: '3' }]
+    - [{ url: '?staffel=980&r=9#p4590x4619', title: 'gegen Hagener SV 5', text: '4' }]
+    - [{ url: '?staffel=980&r=2#p4590x4523', title: 'gegen TSV Osnabrück 2', text: 2½ }]
+    - [{ url: '?staffel=980&r=6#p4590x4552', title: 'gegen SV Bad Essen 4', text: 3½ }]
+    - [{ url: '?staffel=980&r=5#p4590x4600', title: 'gegen Bersenbrück/Bramsche 4', text: 3½ }]
+    - 16
+    - 26½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Gaste-Hasbergen 2', url: '?mannschaft=4564', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=980&r=3#p4564x4590', title: 'gegen SC Fürstenau 2', text: ½ }]
+    - xxx
+    - [{ url: '?staffel=980&r=6#p4564x4620', title: 'gegen Hagener SV 6', text: '2' }]
+    - [{ url: '?staffel=980&r=7#p4564x4606', title: 'gegen Rochade Hollage 2', text: 3½ }]
+    - [{ url: '?staffel=980&r=9#p4564x4594', title: 'gegen SV Osnabrück 6', text: 3½ }]
+    - [{ url: '?staffel=980&r=8#p4564x4619', title: 'gegen Hagener SV 5', text: '4' }]
+    - [{ url: '?staffel=980&r=1#p4564x4523', title: 'gegen TSV Osnabrück 2', text: '4' }]
+    - [{ url: '?staffel=980&r=5#p4564x4552', title: 'gegen SV Bad Essen 4', text: 1½ }]
+    - [{ url: '?staffel=980&r=4#p4564x4600', title: 'gegen Bersenbrück/Bramsche 4', text: 3½ }]
+    - 12
+    - 22½
+    - aufsteiger
+-
+    - '3.'
+    - { text: 'Hagener SV 6', url: '?mannschaft=4620', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=980&r=7#p4620x4590', title: 'gegen SC Fürstenau 2', text: 1½ }]
+    - [{ url: '?staffel=980&r=6#p4620x4564', title: 'gegen Gaste-Hasbergen 2', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=980&r=2#p4620x4606', title: 'gegen Rochade Hollage 2', text: '3' }]
+    - [{ url: '?staffel=980&r=4#p4620x4594', title: 'gegen SV Osnabrück 6', text: '2' }]
+    - [{ url: '?staffel=980&r=3#p4620x4619', title: 'gegen Hagener SV 5', text: '3' }]
+    - [{ url: '?staffel=980&r=5#p4620x4523', title: 'gegen TSV Osnabrück 2', text: '4' }]
+    - [{ url: '?staffel=980&r=9#p4620x4552', title: 'gegen SV Bad Essen 4', text: 3½ }]
+    - [{ url: '?staffel=980&r=8#p4620x4600', title: 'gegen Bersenbrück/Bramsche 4', text: 3½ }]
+    - 11
+    - 21½
+    - ''
+-
+    - '4.'
+    - { text: 'Rochade Hollage 2', url: '?mannschaft=4606', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=980&r=8#p4606x4590', title: 'gegen SC Fürstenau 2', text: '0' }]
+    - [{ url: '?staffel=980&r=7#p4606x4564', title: 'gegen Gaste-Hasbergen 2', text: ½ }]
+    - [{ url: '?staffel=980&r=2#p4606x4620', title: 'gegen Hagener SV 6', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=980&r=5#p4606x4594', title: 'gegen SV Osnabrück 6', text: '4' }]
+    - [{ url: '?staffel=980&r=4#p4606x4619', title: 'gegen Hagener SV 5', text: 2½ }]
+    - [{ url: '?staffel=980&r=6#p4606x4523', title: 'gegen TSV Osnabrück 2', text: '2' }]
+    - [{ url: '?staffel=980&r=1#p4606x4552', title: 'gegen SV Bad Essen 4', text: 3½ }]
+    - [{ url: '?staffel=980&r=9#p4606x4600', title: 'gegen Bersenbrück/Bramsche 4', text: '3' }]
+    - 10
+    - 16½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Osnabrück 6', url: '?mannschaft=4594', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=980&r=1#p4594x4590', title: 'gegen SC Fürstenau 2', text: '1' }]
+    - [{ url: '?staffel=980&r=9#p4594x4564', title: 'gegen Gaste-Hasbergen 2', text: ½ }]
+    - [{ url: '?staffel=980&r=4#p4594x4620', title: 'gegen Hagener SV 6', text: '2' }]
+    - [{ url: '?staffel=980&r=5#p4594x4606', title: 'gegen Rochade Hollage 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=980&r=6#p4594x4619', title: 'gegen Hagener SV 5', text: '3' }]
+    - [{ url: '?staffel=980&r=8#p4594x4523', title: 'gegen TSV Osnabrück 2', text: '3' }]
+    - [{ url: '?staffel=980&r=3#p4594x4552', title: 'gegen SV Bad Essen 4', text: 2½ }]
+    - [{ url: '?staffel=980&r=2#p4594x4600', title: 'gegen Bersenbrück/Bramsche 4', text: 2½ }]
+    - 9
+    - 14½
+    - ''
+-
+    - '6.'
+    - { text: 'Hagener SV 5', url: '?mannschaft=4619', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=980&r=9#p4619x4590', title: 'gegen SC Fürstenau 2', text: '0' }]
+    - [{ url: '?staffel=980&r=8#p4619x4564', title: 'gegen Gaste-Hasbergen 2', text: '0' }]
+    - [{ url: '?staffel=980&r=3#p4619x4620', title: 'gegen Hagener SV 6', text: '1' }]
+    - [{ url: '?staffel=980&r=4#p4619x4606', title: 'gegen Rochade Hollage 2', text: 1½ }]
+    - [{ url: '?staffel=980&r=6#p4619x4594', title: 'gegen SV Osnabrück 6', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=980&r=7#p4619x4523', title: 'gegen TSV Osnabrück 2', text: '4' }]
+    - [{ url: '?staffel=980&r=2#p4619x4552', title: 'gegen SV Bad Essen 4', text: '3' }]
+    - [{ url: '?staffel=980&r=1#p4619x4600', title: 'gegen Bersenbrück/Bramsche 4', text: '4' }]
+    - 6
+    - 14½
+    - ''
+-
+    - '7.'
+    - { text: 'TSV Osnabrück 2', url: '?mannschaft=4523', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=980&r=2#p4523x4590', title: 'gegen SC Fürstenau 2', text: 1½ }]
+    - [{ url: '?staffel=980&r=1#p4523x4564', title: 'gegen Gaste-Hasbergen 2', text: '0' }]
+    - [{ url: '?staffel=980&r=5#p4523x4620', title: 'gegen Hagener SV 6', text: '0' }]
+    - [{ url: '?staffel=980&r=6#p4523x4606', title: 'gegen Rochade Hollage 2', text: '1' }]
+    - [{ url: '?staffel=980&r=8#p4523x4594', title: 'gegen SV Osnabrück 6', text: '1' }]
+    - [{ url: '?staffel=980&r=7#p4523x4619', title: 'gegen Hagener SV 5', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=980&r=4#p4523x4552', title: 'gegen SV Bad Essen 4', text: 2½ }]
+    - [{ url: '?staffel=980&r=3#p4523x4600', title: 'gegen Bersenbrück/Bramsche 4', text: 2½ }]
+    - 4
+    - 8½
+    - ''
+-
+    - '8.'
+    - { text: 'SV Bad Essen 4', url: '?mannschaft=4552', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=980&r=6#p4552x4590', title: 'gegen SC Fürstenau 2', text: ½ }]
+    - [{ url: '?staffel=980&r=5#p4552x4564', title: 'gegen Gaste-Hasbergen 2', text: 2½ }]
+    - [{ url: '?staffel=980&r=9#p4552x4620', title: 'gegen Hagener SV 6', text: ½ }]
+    - [{ url: '?staffel=980&r=1#p4552x4606', title: 'gegen Rochade Hollage 2', text: ½ }]
+    - [{ url: '?staffel=980&r=3#p4552x4594', title: 'gegen SV Osnabrück 6', text: 1½ }]
+    - [{ url: '?staffel=980&r=2#p4552x4619', title: 'gegen Hagener SV 5', text: '1' }]
+    - [{ url: '?staffel=980&r=4#p4552x4523', title: 'gegen TSV Osnabrück 2', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=980&r=7#p4552x4600', title: 'gegen Bersenbrück/Bramsche 4', text: 1½ }]
+    - 3
+    - 9½
+    - ''
+-
+    - '9.'
+    - { text: 'Bersenbrück/Bramsche 4', url: '?mannschaft=4600', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=980&r=5#p4600x4590', title: 'gegen SC Fürstenau 2', text: ½ }]
+    - [{ url: '?staffel=980&r=4#p4600x4564', title: 'gegen Gaste-Hasbergen 2', text: ½ }]
+    - [{ url: '?staffel=980&r=8#p4600x4620', title: 'gegen Hagener SV 6', text: ½ }]
+    - [{ url: '?staffel=980&r=9#p4600x4606', title: 'gegen Rochade Hollage 2', text: '1' }]
+    - [{ url: '?staffel=980&r=2#p4600x4594', title: 'gegen SV Osnabrück 6', text: 1½ }]
+    - [{ url: '?staffel=980&r=1#p4600x4619', title: 'gegen Hagener SV 5', text: '0' }]
+    - [{ url: '?staffel=980&r=3#p4600x4523', title: 'gegen TSV Osnabrück 2', text: 1½ }]
+    - [{ url: '?staffel=980&r=7#p4600x4552', title: 'gegen SV Bad Essen 4', text: 1½ }]
+    - xxx
+    - 1
+    - '7'
+    - ''

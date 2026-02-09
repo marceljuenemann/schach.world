@@ -1,0 +1,103 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SK Rulle', url: '?mannschaft=1419', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=527&r=4#p1419x1418', title: 'gegen SG Schinkel 2', text: ½ }]
+    - [{ url: '?staffel=527&r=1#p1419x1422', title: 'gegen Hagener SV 4', text: '5' }]
+    - [{ url: '?staffel=527&r=2#p1419x1433', title: 'gegen SV Osnabrück 4', text: '4' }]
+    - [{ url: '?staffel=527&r=7#p1419x1421', title: 'gegen SG Oesede-Gmht. 3', text: '7' }]
+    - [{ url: '?staffel=527&r=3#p1419x1417', title: 'gegen Rochade Hollage 2', text: '7' }]
+    - [{ url: '?staffel=527&r=6#p1419x1420', title: 'gegen TSV Osnabrück 2', text: 6½ }]
+    - 9
+    - '30'
+    - ''
+-
+    - '2.'
+    - { text: 'SG Schinkel 2', url: '?mannschaft=1418', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=527&r=4#p1418x1419', title: 'gegen SK Rulle', text: 7½ }]
+    - xxx
+    - [{ url: '?staffel=527&r=7#p1418x1422', title: 'gegen Hagener SV 4', text: 2½ }]
+    - [{ url: '?staffel=527&r=1#p1418x1433', title: 'gegen SV Osnabrück 4', text: '5' }]
+    - [{ url: '?staffel=527&r=6#p1418x1421', title: 'gegen SG Oesede-Gmht. 3', text: '3' }]
+    - [{ url: '?staffel=527&r=2#p1418x1417', title: 'gegen Rochade Hollage 2', text: 7½ }]
+    - [{ url: '?staffel=527&r=5#p1418x1420', title: 'gegen TSV Osnabrück 2', text: '7' }]
+    - 8
+    - 32½
+    - ''
+-
+    - '3.'
+    - { text: 'Hagener SV 4', url: '?mannschaft=1422', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=527&r=1#p1422x1419', title: 'gegen SK Rulle', text: '3' }]
+    - [{ url: '?staffel=527&r=7#p1422x1418', title: 'gegen SG Schinkel 2', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=527&r=5#p1422x1433', title: 'gegen SV Osnabrück 4', text: '6' }]
+    - [{ url: '?staffel=527&r=3#p1422x1421', title: 'gegen SG Oesede-Gmht. 3', text: '4' }]
+    - [{ url: '?staffel=527&r=6#p1422x1417', title: 'gegen Rochade Hollage 2', text: '4' }]
+    - [{ url: '?staffel=527&r=2#p1422x1420', title: 'gegen TSV Osnabrück 2', text: '8' }]
+    - 8
+    - 30½
+    - ''
+-
+    - '4.'
+    - { text: 'SV Osnabrück 4', url: '?mannschaft=1433', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=527&r=2#p1433x1419', title: 'gegen SK Rulle', text: '4' }]
+    - [{ url: '?staffel=527&r=1#p1433x1418', title: 'gegen SG Schinkel 2', text: '3' }]
+    - [{ url: '?staffel=527&r=5#p1433x1422', title: 'gegen Hagener SV 4', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=527&r=4#p1433x1421', title: 'gegen SG Oesede-Gmht. 3', text: 4½ }]
+    - [{ url: '?staffel=527&r=7#p1433x1417', title: 'gegen Rochade Hollage 2', text: '8' }]
+    - [{ url: '?staffel=527&r=3#p1433x1420', title: 'gegen TSV Osnabrück 2', text: 5½ }]
+    - 7
+    - '27'
+    - ''
+-
+    - '5.'
+    - { text: 'SG Oesede-Gmht. 3', url: '?mannschaft=1421', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=527&r=7#p1421x1419', title: 'gegen SK Rulle', text: '1' }]
+    - [{ url: '?staffel=527&r=6#p1421x1418', title: 'gegen SG Schinkel 2', text: '4' }]
+    - [{ url: '?staffel=527&r=3#p1421x1422', title: 'gegen Hagener SV 4', text: '4' }]
+    - [{ url: '?staffel=527&r=4#p1421x1433', title: 'gegen SV Osnabrück 4', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=527&r=5#p1421x1417', title: 'gegen Rochade Hollage 2', text: 2½ }]
+    - [{ url: '?staffel=527&r=1#p1421x1420', title: 'gegen TSV Osnabrück 2', text: 7½ }]
+    - 5
+    - 22½
+    - ''
+-
+    - '6.'
+    - { text: 'Rochade Hollage 2', url: '?mannschaft=1417', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=527&r=3#p1417x1419', title: 'gegen SK Rulle', text: '1' }]
+    - [{ url: '?staffel=527&r=2#p1417x1418', title: 'gegen SG Schinkel 2', text: ½ }]
+    - [{ url: '?staffel=527&r=6#p1417x1422', title: 'gegen Hagener SV 4', text: '4' }]
+    - [{ url: '?staffel=527&r=7#p1417x1433', title: 'gegen SV Osnabrück 4', text: '0' }]
+    - [{ url: '?staffel=527&r=5#p1417x1421', title: 'gegen SG Oesede-Gmht. 3', text: 5½ }]
+    - xxx
+    - [{ url: '?staffel=527&r=4#p1417x1420', title: 'gegen TSV Osnabrück 2', text: '6' }]
+    - 5
+    - '17'
+    - ''
+-
+    - '7.'
+    - { text: 'TSV Osnabrück 2', url: '?mannschaft=1420', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=527&r=6#p1420x1419', title: 'gegen SK Rulle', text: 1½ }]
+    - [{ url: '?staffel=527&r=5#p1420x1418', title: 'gegen SG Schinkel 2', text: '1' }]
+    - [{ url: '?staffel=527&r=2#p1420x1422', title: 'gegen Hagener SV 4', text: '0' }]
+    - [{ url: '?staffel=527&r=3#p1420x1433', title: 'gegen SV Osnabrück 4', text: 2½ }]
+    - [{ url: '?staffel=527&r=1#p1420x1421', title: 'gegen SG Oesede-Gmht. 3', text: ½ }]
+    - [{ url: '?staffel=527&r=4#p1420x1417', title: 'gegen Rochade Hollage 2', text: '2' }]
+    - xxx
+    - 0
+    - 7½
+    - ''

@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Rotation Pankow', url: '?mannschaft=4972', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1070&r=1#p4972x4973', title: 'gegen SC Zeulenroda', text: '5' }]
+    - [{ url: '?staffel=1070&r=6#p4972x4974', title: 'gegen USV TU Dresden', text: 4½ }]
+    - [{ url: '?staffel=1070&r=3#p4972x4969', title: 'gegen SG Löberitz', text: '5' }]
+    - [{ url: '?staffel=1070&r=4#p4972x4971', title: 'gegen SG Leipzig', text: 3½ }]
+    - [{ url: '?staffel=1070&r=2#p4972x4968', title: 'gegen CSC Aufbau 95', text: '4' }]
+    - [{ url: '?staffel=1070&r=5#p4972x4970', title: 'gegen Leipzig-Lindenau', text: '5' }]
+    - [{ url: '?staffel=1070&r=7#p4972x4967', title: 'gegen TuS Coswig', text: '4' }]
+    - 14
+    - '31'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Zeulenroda', url: '?mannschaft=4973', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1070&r=1#p4973x4972', title: 'gegen SC Rotation Pankow', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=1070&r=4#p4973x4974', title: 'gegen USV TU Dresden', text: 2½ }]
+    - [{ url: '?staffel=1070&r=2#p4973x4969', title: 'gegen SG Löberitz', text: '4' }]
+    - [{ url: '?staffel=1070&r=6#p4973x4971', title: 'gegen SG Leipzig', text: '3' }]
+    - [{ url: '?staffel=1070&r=3#p4973x4968', title: 'gegen CSC Aufbau 95', text: '4' }]
+    - [{ url: '?staffel=1070&r=7#p4973x4970', title: 'gegen Leipzig-Lindenau', text: 3½ }]
+    - [{ url: '?staffel=1070&r=5#p4973x4967', title: 'gegen TuS Coswig', text: '5' }]
+    - 9
+    - '23'
+    - ''
+-
+    - '3.'
+    - { text: 'USV TU Dresden', url: '?mannschaft=4974', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1070&r=6#p4974x4972', title: 'gegen SC Rotation Pankow', text: 1½ }]
+    - [{ url: '?staffel=1070&r=4#p4974x4973', title: 'gegen SC Zeulenroda', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1070&r=7#p4974x4969', title: 'gegen SG Löberitz', text: 2½ }]
+    - [{ url: '?staffel=1070&r=1#p4974x4971', title: 'gegen SG Leipzig', text: 3½ }]
+    - [{ url: '?staffel=1070&r=5#p4974x4968', title: 'gegen CSC Aufbau 95', text: '3' }]
+    - [{ url: '?staffel=1070&r=2#p4974x4970', title: 'gegen Leipzig-Lindenau', text: '4' }]
+    - [{ url: '?staffel=1070&r=3#p4974x4967', title: 'gegen TuS Coswig', text: 2½ }]
+    - 7
+    - 20½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Löberitz', url: '?mannschaft=4969', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1070&r=3#p4969x4972', title: 'gegen SC Rotation Pankow', text: '1' }]
+    - [{ url: '?staffel=1070&r=2#p4969x4973', title: 'gegen SC Zeulenroda', text: '2' }]
+    - [{ url: '?staffel=1070&r=7#p4969x4974', title: 'gegen USV TU Dresden', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1070&r=5#p4969x4971', title: 'gegen SG Leipzig', text: 3½ }]
+    - [{ url: '?staffel=1070&r=1#p4969x4968', title: 'gegen CSC Aufbau 95', text: 3½ }]
+    - [{ url: '?staffel=1070&r=4#p4969x4970', title: 'gegen Leipzig-Lindenau', text: '3' }]
+    - [{ url: '?staffel=1070&r=6#p4969x4967', title: 'gegen TuS Coswig', text: '4' }]
+    - 7
+    - 19½
+    - ''
+-
+    - '5.'
+    - { text: 'SG Leipzig', url: '?mannschaft=4971', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1070&r=4#p4971x4972', title: 'gegen SC Rotation Pankow', text: 2½ }]
+    - [{ url: '?staffel=1070&r=6#p4971x4973', title: 'gegen SC Zeulenroda', text: '3' }]
+    - [{ url: '?staffel=1070&r=1#p4971x4974', title: 'gegen USV TU Dresden', text: 2½ }]
+    - [{ url: '?staffel=1070&r=5#p4971x4969', title: 'gegen SG Löberitz', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1070&r=7#p4971x4968', title: 'gegen CSC Aufbau 95', text: 2½ }]
+    - [{ url: '?staffel=1070&r=3#p4971x4970', title: 'gegen Leipzig-Lindenau', text: '4' }]
+    - [{ url: '?staffel=1070&r=2#p4971x4967', title: 'gegen TuS Coswig', text: 4½ }]
+    - 5
+    - 21½
+    - ''
+-
+    - '6.'
+    - { text: 'CSC Aufbau 95', url: '?mannschaft=4968', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1070&r=2#p4968x4972', title: 'gegen SC Rotation Pankow', text: '2' }]
+    - [{ url: '?staffel=1070&r=3#p4968x4973', title: 'gegen SC Zeulenroda', text: '2' }]
+    - [{ url: '?staffel=1070&r=5#p4968x4974', title: 'gegen USV TU Dresden', text: '3' }]
+    - [{ url: '?staffel=1070&r=1#p4968x4969', title: 'gegen SG Löberitz', text: 2½ }]
+    - [{ url: '?staffel=1070&r=7#p4968x4971', title: 'gegen SG Leipzig', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=1070&r=6#p4968x4970', title: 'gegen Leipzig-Lindenau', text: '3' }]
+    - [{ url: '?staffel=1070&r=4#p4968x4967', title: 'gegen TuS Coswig', text: 1½ }]
+    - 4
+    - 17½
+    - ''
+-
+    - '7.'
+    - { text: Leipzig-Lindenau, url: '?mannschaft=4970', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1070&r=5#p4970x4972', title: 'gegen SC Rotation Pankow', text: '1' }]
+    - [{ url: '?staffel=1070&r=7#p4970x4973', title: 'gegen SC Zeulenroda', text: 2½ }]
+    - [{ url: '?staffel=1070&r=2#p4970x4974', title: 'gegen USV TU Dresden', text: '2' }]
+    - [{ url: '?staffel=1070&r=4#p4970x4969', title: 'gegen SG Löberitz', text: '3' }]
+    - [{ url: '?staffel=1070&r=3#p4970x4971', title: 'gegen SG Leipzig', text: '2' }]
+    - [{ url: '?staffel=1070&r=6#p4970x4968', title: 'gegen CSC Aufbau 95', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1070&r=1#p4970x4967', title: 'gegen TuS Coswig', text: '4' }]
+    - 4
+    - 17½
+    - absteiger
+-
+    - '8.'
+    - { text: 'TuS Coswig', url: '?mannschaft=4967', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1070&r=7#p4967x4972', title: 'gegen SC Rotation Pankow', text: '2' }]
+    - [{ url: '?staffel=1070&r=5#p4967x4973', title: 'gegen SC Zeulenroda', text: '1' }]
+    - [{ url: '?staffel=1070&r=3#p4967x4974', title: 'gegen USV TU Dresden', text: 3½ }]
+    - [{ url: '?staffel=1070&r=6#p4967x4969', title: 'gegen SG Löberitz', text: '2' }]
+    - [{ url: '?staffel=1070&r=2#p4967x4971', title: 'gegen SG Leipzig', text: 1½ }]
+    - [{ url: '?staffel=1070&r=4#p4967x4968', title: 'gegen CSC Aufbau 95', text: 4½ }]
+    - [{ url: '?staffel=1070&r=1#p4967x4970', title: 'gegen Leipzig-Lindenau', text: '2' }]
+    - xxx
+    - 4
+    - 16½
+    - absteiger

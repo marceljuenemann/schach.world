@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Laatzen', url: '?mannschaft=6931', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1595&r=5#p6931x6971', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - [{ url: '?staffel=1595&r=1#p6931x6960', title: 'gegen Eystrup/Stolzenau', text: '4' }]
+    - [{ url: '?staffel=1595&r=2#p6931x6972', title: 'gegen SK Lehrte 4', text: '3' }]
+    - [{ url: '?staffel=1595&r=4#p6931x6978', title: 'gegen SD Isernhagen', text: '4' }]
+    - [{ url: '?staffel=1595&r=3#p6931x6976', title: 'gegen SG Rinteln/Stadth.', text: '4' }]
+    - 10
+    - 17½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SK Lehrte 3', url: '?mannschaft=6971', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1595&r=5#p6971x6931', title: 'gegen SV Laatzen', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=1595&r=3#p6971x6960', title: 'gegen Eystrup/Stolzenau', text: ½ }]
+    - [{ url: '?staffel=1595&r=1#p6971x6972', title: 'gegen SK Lehrte 4', text: '4' }]
+    - [{ url: '?staffel=1595&r=2#p6971x6978', title: 'gegen SD Isernhagen', text: 3½ }]
+    - [{ url: '?staffel=1595&r=4#p6971x6976', title: 'gegen SG Rinteln/Stadth.', text: '4' }]
+    - 6
+    - 13½
+    - ''
+-
+    - '3.'
+    - { text: Eystrup/Stolzenau, url: '?mannschaft=6960', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1595&r=1#p6960x6931', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=1595&r=3#p6960x6971', title: 'gegen SK Lehrte 3', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=1595&r=4#p6960x6972', title: 'gegen SK Lehrte 4', text: '2' }]
+    - [{ url: '?staffel=1595&r=5#p6960x6978', title: 'gegen SD Isernhagen', text: '2' }]
+    - [{ url: '?staffel=1595&r=2#p6960x6976', title: 'gegen SG Rinteln/Stadth.', text: 2½ }]
+    - 6
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'SK Lehrte 4', url: '?mannschaft=6972', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1595&r=2#p6972x6931', title: 'gegen SV Laatzen', text: '1' }]
+    - [{ url: '?staffel=1595&r=1#p6972x6971', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1595&r=4#p6972x6960', title: 'gegen Eystrup/Stolzenau', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1595&r=3#p6972x6978', title: 'gegen SD Isernhagen', text: '1' }]
+    - [{ url: '?staffel=1595&r=5#p6972x6976', title: 'gegen SG Rinteln/Stadth.', text: '4' }]
+    - 3
+    - '8'
+    - ''
+-
+    - '5.'
+    - { text: 'SD Isernhagen', url: '?mannschaft=6978', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1595&r=4#p6978x6931', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=1595&r=2#p6978x6971', title: 'gegen SK Lehrte 3', text: ½ }]
+    - [{ url: '?staffel=1595&r=5#p6978x6960', title: 'gegen Eystrup/Stolzenau', text: '2' }]
+    - [{ url: '?staffel=1595&r=3#p6978x6972', title: 'gegen SK Lehrte 4', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=1595&r=1#p6978x6976', title: 'gegen SG Rinteln/Stadth.', text: '1' }]
+    - 3
+    - 6½
+    - ''
+-
+    - '6.'
+    - { text: 'SG Rinteln/Stadth.', url: '?mannschaft=6976', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1595&r=3#p6976x6931', title: 'gegen SV Laatzen', text: '0' }]
+    - [{ url: '?staffel=1595&r=4#p6976x6971', title: 'gegen SK Lehrte 3', text: '0' }]
+    - [{ url: '?staffel=1595&r=2#p6976x6960', title: 'gegen Eystrup/Stolzenau', text: 1½ }]
+    - [{ url: '?staffel=1595&r=5#p6976x6972', title: 'gegen SK Lehrte 4', text: '0' }]
+    - [{ url: '?staffel=1595&r=1#p6976x6978', title: 'gegen SD Isernhagen', text: '3' }]
+    - xxx
+    - 2
+    - 4½
+    - ''

@@ -1,0 +1,49 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SC Hämelerwald 9', url: '?mannschaft=5539', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=1355&r=2#p5539x5795', title: 'gegen SK Rinteln 9', text: ½ }, { url: '?staffel=1355&r=6#p5539x5795', title: 'gegen SK Rinteln 9', text: '4' }]
+    - [{ url: '?staffel=1355&r=3#p5539x5904', title: 'gegen Hannover 96 9', text: 1½ }, { url: '?staffel=1355&r=4#p5539x5904', title: 'gegen Hannover 96 9', text: 3½ }]
+    - [{ url: '?staffel=1355&r=1#p5539x5741', title: 'gegen SG Garbsen/Marienw 9', text: 3½ }, { url: '?staffel=1355&r=7#p5539x5741', title: 'gegen SG Garbsen/Marienw 9', text: 3½ }]
+    - 8
+    - 16½
+    - ''
+-
+    - '2.'
+    - { text: 'SK Rinteln 9', url: '?mannschaft=5795', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1355&r=2#p5795x5539', title: 'gegen SC Hämelerwald 9', text: 3½ }, { url: '?staffel=1355&r=6#p5795x5539', title: 'gegen SC Hämelerwald 9', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=1355&r=1#p5795x5904', title: 'gegen Hannover 96 9', text: '3' }, { url: '?staffel=1355&r=5#p5795x5904', title: 'gegen Hannover 96 9', text: '2' }]
+    - [{ url: '?staffel=1355&r=3#p5795x5741', title: 'gegen SG Garbsen/Marienw 9', text: '4' }, { url: '?staffel=1355&r=8#p5795x5741', title: 'gegen SG Garbsen/Marienw 9', text: '2' }]
+    - 8
+    - 14½
+    - ''
+-
+    - '3.'
+    - { text: 'Hannover 96 9', url: '?mannschaft=5904', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1355&r=3#p5904x5539', title: 'gegen SC Hämelerwald 9', text: 2½ }, { url: '?staffel=1355&r=4#p5904x5539', title: 'gegen SC Hämelerwald 9', text: ½ }]
+    - [{ url: '?staffel=1355&r=1#p5904x5795', title: 'gegen SK Rinteln 9', text: '1' }, { url: '?staffel=1355&r=5#p5904x5795', title: 'gegen SK Rinteln 9', text: '2' }]
+    - xxx
+    - [{ url: '?staffel=1355&r=2#p5904x5741', title: 'gegen SG Garbsen/Marienw 9', text: 1½ }, { url: '?staffel=1355&r=6#p5904x5741', title: 'gegen SG Garbsen/Marienw 9', text: '4' }]
+    - 5
+    - 11½
+    - ''
+-
+    - '4.'
+    - { text: 'SG Garbsen/Marienw 9', url: '?mannschaft=5741', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1355&r=1#p5741x5539', title: 'gegen SC Hämelerwald 9', text: ½ }, { url: '?staffel=1355&r=7#p5741x5539', title: 'gegen SC Hämelerwald 9', text: ½ }]
+    - [{ url: '?staffel=1355&r=3#p5741x5795', title: 'gegen SK Rinteln 9', text: '0' }, { url: '?staffel=1355&r=8#p5741x5795', title: 'gegen SK Rinteln 9', text: '2' }]
+    - [{ url: '?staffel=1355&r=2#p5741x5904', title: 'gegen Hannover 96 9', text: 2½ }, { url: '?staffel=1355&r=6#p5741x5904', title: 'gegen Hannover 96 9', text: '0' }]
+    - xxx
+    - 3
+    - 5½
+    - ''

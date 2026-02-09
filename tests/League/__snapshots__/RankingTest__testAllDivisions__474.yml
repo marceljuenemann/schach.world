@@ -1,0 +1,83 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Hamburger SK 3', url: '?mannschaft=4511', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=952&r=2#p4511x4496', title: 'gegen Hamburger SK 2', text: 2½ }]
+    - [{ url: '?staffel=952&r=1#p4511x4473', title: 'gegen VT Ludwigslust', text: 2½ }]
+    - [{ url: '?staffel=952&r=4#p4511x4521', title: 'gegen Lübecker SV', text: 3½ }]
+    - [{ url: '?staffel=952&r=3#p4511x4480', title: 'gegen SV Holst Quickborn', text: 3½ }]
+    - [{ url: '?staffel=952&r=5#p4511x4483', title: 'gegen SV Gryps', text: '4' }]
+    - 10
+    - '16'
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'Hamburger SK 2', url: '?mannschaft=4496', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=952&r=2#p4496x4511', title: 'gegen Hamburger SK 3', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=952&r=4#p4496x4473', title: 'gegen VT Ludwigslust', text: '4' }]
+    - [{ url: '?staffel=952&r=5#p4496x4521', title: 'gegen Lübecker SV', text: 3½ }]
+    - [{ url: '?staffel=952&r=1#p4496x4480', title: 'gegen SV Holst Quickborn', text: '4' }]
+    - [{ url: '?staffel=952&r=3#p4496x4483', title: 'gegen SV Gryps', text: 3½ }]
+    - 8
+    - 16½
+    - ''
+-
+    - '3.'
+    - { text: 'VT Ludwigslust', url: '?mannschaft=4473', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=952&r=1#p4473x4511', title: 'gegen Hamburger SK 3', text: 1½ }]
+    - [{ url: '?staffel=952&r=4#p4473x4496', title: 'gegen Hamburger SK 2', text: '0' }]
+    - xxx
+    - [{ url: '?staffel=952&r=3#p4473x4521', title: 'gegen Lübecker SV', text: 2½ }]
+    - [{ url: '?staffel=952&r=5#p4473x4480', title: 'gegen SV Holst Quickborn', text: 2½ }]
+    - [{ url: '?staffel=952&r=2#p4473x4483', title: 'gegen SV Gryps', text: 2½ }]
+    - 6
+    - '9'
+    - ''
+-
+    - '4.'
+    - { text: 'Lübecker SV', url: '?mannschaft=4521', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=952&r=4#p4521x4511', title: 'gegen Hamburger SK 3', text: ½ }]
+    - [{ url: '?staffel=952&r=5#p4521x4496', title: 'gegen Hamburger SK 2', text: ½ }]
+    - [{ url: '?staffel=952&r=3#p4521x4473', title: 'gegen VT Ludwigslust', text: 1½ }]
+    - xxx
+    - [{ url: '?staffel=952&r=2#p4521x4480', title: 'gegen SV Holst Quickborn', text: '3' }]
+    - [{ url: '?staffel=952&r=1#p4521x4483', title: 'gegen SV Gryps', text: '3' }]
+    - 4
+    - 8½
+    - ''
+-
+    - '5.'
+    - { text: 'SV Holst Quickborn', url: '?mannschaft=4480', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=952&r=3#p4480x4511', title: 'gegen Hamburger SK 3', text: ½ }]
+    - [{ url: '?staffel=952&r=1#p4480x4496', title: 'gegen Hamburger SK 2', text: '0' }]
+    - [{ url: '?staffel=952&r=5#p4480x4473', title: 'gegen VT Ludwigslust', text: 1½ }]
+    - [{ url: '?staffel=952&r=2#p4480x4521', title: 'gegen Lübecker SV', text: '1' }]
+    - xxx
+    - [{ url: '?staffel=952&r=4#p4480x4483', title: 'gegen SV Gryps', text: '3' }]
+    - 2
+    - '6'
+    - absteiger
+-
+    - '6.'
+    - { text: 'SV Gryps', url: '?mannschaft=4483', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=952&r=5#p4483x4511', title: 'gegen Hamburger SK 3', text: '0' }]
+    - [{ url: '?staffel=952&r=3#p4483x4496', title: 'gegen Hamburger SK 2', text: ½ }]
+    - [{ url: '?staffel=952&r=2#p4483x4473', title: 'gegen VT Ludwigslust', text: 1½ }]
+    - [{ url: '?staffel=952&r=1#p4483x4521', title: 'gegen Lübecker SV', text: '1' }]
+    - [{ url: '?staffel=952&r=4#p4483x4480', title: 'gegen SV Holst Quickborn', text: '0' }]
+    - xxx
+    - 0
+    - '3'
+    - absteiger

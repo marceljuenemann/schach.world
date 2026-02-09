@@ -1,0 +1,175 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'SV Berenbostel 2', url: '?mannschaft=2060', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - [{ url: '?staffel=615&r=2#p2060x2026', title: 'gegen SF Sulingen', text: '5' }]
+    - [{ url: '?staffel=615&r=9#p2060x2056', title: 'gegen SK Stolzenau', text: 5½ }]
+    - [{ url: '?staffel=615&r=6#p2060x2045', title: 'gegen SVg Calenberg', text: 3½ }]
+    - [{ url: '?staffel=615&r=8#p2060x2092', title: 'gegen SK Ricklingen 2', text: '5' }]
+    - [{ url: '?staffel=615&r=5#p2060x1877', title: 'gegen SK Wennigsen', text: 5½ }]
+    - [{ url: '?staffel=615&r=1#p2060x2035', title: 'gegen Eystruper SK', text: 4½ }]
+    - [{ url: '?staffel=615&r=7#p2060x2018', title: 'gegen WB Eilenriede 2', text: '5' }]
+    - [{ url: '?staffel=615&r=3#p2060x2075', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=615&r=4#p2060x2074', title: 'gegen Garbsen/Marienw 2', text: '6' }]
+    - 15
+    - '44'
+    - ''
+-
+    - '2.'
+    - { text: 'SF Sulingen', url: '?mannschaft=2026', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=615&r=2#p2026x2060', title: 'gegen SV Berenbostel 2', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=615&r=7#p2026x2056', title: 'gegen SK Stolzenau', text: '3' }]
+    - [{ url: '?staffel=615&r=4#p2026x2045', title: 'gegen SVg Calenberg', text: '5' }]
+    - [{ url: '?staffel=615&r=6#p2026x2092', title: 'gegen SK Ricklingen 2', text: '5' }]
+    - [{ url: '?staffel=615&r=3#p2026x1877', title: 'gegen SK Wennigsen', text: '6' }]
+    - [{ url: '?staffel=615&r=8#p2026x2035', title: 'gegen Eystruper SK', text: '6' }]
+    - [{ url: '?staffel=615&r=5#p2026x2018', title: 'gegen WB Eilenriede 2', text: '6' }]
+    - [{ url: '?staffel=615&r=1#p2026x2075', title: 'gegen SG Eldagsen/BM', text: 5½ }]
+    - [{ url: '?staffel=615&r=9#p2026x2074', title: 'gegen Garbsen/Marienw 2', text: 5½ }]
+    - 14
+    - '45'
+    - ''
+-
+    - '3.'
+    - { text: 'SK Stolzenau', url: '?mannschaft=2056', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=615&r=9#p2056x2060', title: 'gegen SV Berenbostel 2', text: 2½ }]
+    - [{ url: '?staffel=615&r=7#p2056x2026', title: 'gegen SF Sulingen', text: '5' }]
+    - xxx
+    - [{ url: '?staffel=615&r=2#p2056x2045', title: 'gegen SVg Calenberg', text: 5½ }]
+    - [{ url: '?staffel=615&r=4#p2056x2092', title: 'gegen SK Ricklingen 2', text: '3' }]
+    - [{ url: '?staffel=615&r=1#p2056x1877', title: 'gegen SK Wennigsen', text: '6' }]
+    - [{ url: '?staffel=615&r=6#p2056x2035', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=615&r=3#p2056x2018', title: 'gegen WB Eilenriede 2', text: 4½ }]
+    - [{ url: '?staffel=615&r=8#p2056x2075', title: 'gegen SG Eldagsen/BM', text: 6½ }]
+    - [{ url: '?staffel=615&r=5#p2056x2074', title: 'gegen Garbsen/Marienw 2', text: 4½ }]
+    - 14
+    - 42½
+    - ''
+-
+    - '4.'
+    - { text: 'SVg Calenberg', url: '?mannschaft=2045', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=615&r=6#p2045x2060', title: 'gegen SV Berenbostel 2', text: 4½ }]
+    - [{ url: '?staffel=615&r=4#p2045x2026', title: 'gegen SF Sulingen', text: '3' }]
+    - [{ url: '?staffel=615&r=2#p2045x2056', title: 'gegen SK Stolzenau', text: 2½ }]
+    - xxx
+    - [{ url: '?staffel=615&r=1#p2045x2092', title: 'gegen SK Ricklingen 2', text: '5' }]
+    - [{ url: '?staffel=615&r=7#p2045x1877', title: 'gegen SK Wennigsen', text: '6' }]
+    - [{ url: '?staffel=615&r=3#p2045x2035', title: 'gegen Eystruper SK', text: 4½ }]
+    - [{ url: '?staffel=615&r=9#p2045x2018', title: 'gegen WB Eilenriede 2', text: '6' }]
+    - [{ url: '?staffel=615&r=5#p2045x2075', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=615&r=8#p2045x2074', title: 'gegen Garbsen/Marienw 2', text: 4½ }]
+    - 13
+    - '40'
+    - ''
+-
+    - '5.'
+    - { text: 'SK Ricklingen 2', url: '?mannschaft=2092', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=615&r=8#p2092x2060', title: 'gegen SV Berenbostel 2', text: '3' }]
+    - [{ url: '?staffel=615&r=6#p2092x2026', title: 'gegen SF Sulingen', text: '3' }]
+    - [{ url: '?staffel=615&r=4#p2092x2056', title: 'gegen SK Stolzenau', text: '5' }]
+    - [{ url: '?staffel=615&r=1#p2092x2045', title: 'gegen SVg Calenberg', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=615&r=9#p2092x1877', title: 'gegen SK Wennigsen', text: 4½ }]
+    - [{ url: '?staffel=615&r=5#p2092x2035', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=615&r=2#p2092x2018', title: 'gegen WB Eilenriede 2', text: 4½ }]
+    - [{ url: '?staffel=615&r=7#p2092x2075', title: 'gegen SG Eldagsen/BM', text: '5' }]
+    - [{ url: '?staffel=615&r=3#p2092x2074', title: 'gegen Garbsen/Marienw 2', text: '5' }]
+    - 11
+    - '37'
+    - ''
+-
+    - '6.'
+    - { text: 'SK Wennigsen', url: '?mannschaft=1877', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=615&r=5#p1877x2060', title: 'gegen SV Berenbostel 2', text: 2½ }]
+    - [{ url: '?staffel=615&r=3#p1877x2026', title: 'gegen SF Sulingen', text: '2' }]
+    - [{ url: '?staffel=615&r=1#p1877x2056', title: 'gegen SK Stolzenau', text: '2' }]
+    - [{ url: '?staffel=615&r=7#p1877x2045', title: 'gegen SVg Calenberg', text: '2' }]
+    - [{ url: '?staffel=615&r=9#p1877x2092', title: 'gegen SK Ricklingen 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=615&r=2#p1877x2035', title: 'gegen Eystruper SK', text: '5' }]
+    - [{ url: '?staffel=615&r=8#p1877x2018', title: 'gegen WB Eilenriede 2', text: '6' }]
+    - [{ url: '?staffel=615&r=4#p1877x2075', title: 'gegen SG Eldagsen/BM', text: 5½ }]
+    - [{ url: '?staffel=615&r=6#p1877x2074', title: 'gegen Garbsen/Marienw 2', text: 4½ }]
+    - 8
+    - '33'
+    - ''
+-
+    - '7.'
+    - { text: 'Eystruper SK', url: '?mannschaft=2035', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=615&r=1#p2035x2060', title: 'gegen SV Berenbostel 2', text: 3½ }]
+    - [{ url: '?staffel=615&r=8#p2035x2026', title: 'gegen SF Sulingen', text: '2' }]
+    - [{ url: '?staffel=615&r=6#p2035x2056', title: 'gegen SK Stolzenau', text: '3' }]
+    - [{ url: '?staffel=615&r=3#p2035x2045', title: 'gegen SVg Calenberg', text: 3½ }]
+    - [{ url: '?staffel=615&r=5#p2035x2092', title: 'gegen SK Ricklingen 2', text: '4' }]
+    - [{ url: '?staffel=615&r=2#p2035x1877', title: 'gegen SK Wennigsen', text: '3' }]
+    - xxx
+    - [{ url: '?staffel=615&r=4#p2035x2018', title: 'gegen WB Eilenriede 2', text: '4' }]
+    - [{ url: '?staffel=615&r=9#p2035x2075', title: 'gegen SG Eldagsen/BM', text: '4' }]
+    - [{ url: '?staffel=615&r=7#p2035x2074', title: 'gegen Garbsen/Marienw 2', text: '5' }]
+    - 5
+    - '32'
+    - ''
+-
+    - '8.'
+    - { text: 'WB Eilenriede 2', url: '?mannschaft=2018', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=615&r=7#p2018x2060', title: 'gegen SV Berenbostel 2', text: '3' }]
+    - [{ url: '?staffel=615&r=5#p2018x2026', title: 'gegen SF Sulingen', text: '2' }]
+    - [{ url: '?staffel=615&r=3#p2018x2056', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=615&r=9#p2018x2045', title: 'gegen SVg Calenberg', text: '2' }]
+    - [{ url: '?staffel=615&r=2#p2018x2092', title: 'gegen SK Ricklingen 2', text: 3½ }]
+    - [{ url: '?staffel=615&r=8#p2018x1877', title: 'gegen SK Wennigsen', text: '2' }]
+    - [{ url: '?staffel=615&r=4#p2018x2035', title: 'gegen Eystruper SK', text: '4' }]
+    - xxx
+    - [{ url: '?staffel=615&r=6#p2018x2075', title: 'gegen SG Eldagsen/BM', text: 4½ }]
+    - [{ url: '?staffel=615&r=1#p2018x2074', title: 'gegen Garbsen/Marienw 2', text: 4½ }]
+    - 5
+    - '29'
+    - ''
+-
+    - '9.'
+    - { text: 'SG Eldagsen/BM', url: '?mannschaft=2075', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=615&r=3#p2075x2060', title: 'gegen SV Berenbostel 2', text: '4' }]
+    - [{ url: '?staffel=615&r=1#p2075x2026', title: 'gegen SF Sulingen', text: 2½ }]
+    - [{ url: '?staffel=615&r=8#p2075x2056', title: 'gegen SK Stolzenau', text: 1½ }]
+    - [{ url: '?staffel=615&r=5#p2075x2045', title: 'gegen SVg Calenberg', text: '4' }]
+    - [{ url: '?staffel=615&r=7#p2075x2092', title: 'gegen SK Ricklingen 2', text: '3' }]
+    - [{ url: '?staffel=615&r=4#p2075x1877', title: 'gegen SK Wennigsen', text: 2½ }]
+    - [{ url: '?staffel=615&r=9#p2075x2035', title: 'gegen Eystruper SK', text: '4' }]
+    - [{ url: '?staffel=615&r=6#p2075x2018', title: 'gegen WB Eilenriede 2', text: 3½ }]
+    - xxx
+    - [{ url: '?staffel=615&r=2#p2075x2074', title: 'gegen Garbsen/Marienw 2', text: 3½ }]
+    - 3
+    - 28½
+    - ''
+-
+    - '10.'
+    - { text: 'Garbsen/Marienw 2', url: '?mannschaft=2074', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=615&r=4#p2074x2060', title: 'gegen SV Berenbostel 2', text: '2' }]
+    - [{ url: '?staffel=615&r=9#p2074x2026', title: 'gegen SF Sulingen', text: 2½ }]
+    - [{ url: '?staffel=615&r=5#p2074x2056', title: 'gegen SK Stolzenau', text: 3½ }]
+    - [{ url: '?staffel=615&r=8#p2074x2045', title: 'gegen SVg Calenberg', text: 3½ }]
+    - [{ url: '?staffel=615&r=3#p2074x2092', title: 'gegen SK Ricklingen 2', text: '3' }]
+    - [{ url: '?staffel=615&r=6#p2074x1877', title: 'gegen SK Wennigsen', text: 3½ }]
+    - [{ url: '?staffel=615&r=7#p2074x2035', title: 'gegen Eystruper SK', text: '3' }]
+    - [{ url: '?staffel=615&r=1#p2074x2018', title: 'gegen WB Eilenriede 2', text: 3½ }]
+    - [{ url: '?staffel=615&r=2#p2074x2075', title: 'gegen SG Eldagsen/BM', text: 4½ }]
+    - xxx
+    - 2
+    - '29'
+    - ''

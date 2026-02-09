@@ -1,0 +1,125 @@
+-
+    - ''
+    - Mannschaft
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - MP
+    - BP
+-
+    - '1.'
+    - { text: 'Barnimer SF', url: '?mannschaft=8575', title: 'Zur Mannschaftsaufstellung' }
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1899&r=2#p8575x8569', title: 'gegen TSG Oberschöneweide', text: 3½ }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1899&r=1#p8575x8571', title: 'gegen SV Empor Berlin', text: '5' }]
+    - {  }
+    - 4
+    - 8½
+    - aufsteiger
+-
+    - '2.'
+    - { text: 'SC Kreuzberg', url: '?mannschaft=8573', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1899&r=2#p8573x8572', title: 'gegen Königsjäger Süd-West', text: '3' }]
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1899&r=1#p8573x8574', title: 'gegen SAV Torgelow', text: 5½ }]
+    - {  }
+    - {  }
+    - 3
+    - 8½
+    - ''
+-
+    - '3.'
+    - { text: 'Königsjäger Süd-West', url: '?mannschaft=8572', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1899&r=2#p8572x8573', title: 'gegen SC Kreuzberg', text: '3' }]
+    - xxx
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1899&r=1#p8572x8570', title: 'gegen SV Hellas Nauen', text: 5½ }]
+    - 3
+    - 8½
+    - ''
+-
+    - '4.'
+    - { text: 'TSG Oberschöneweide', url: '?mannschaft=8569', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1899&r=2#p8569x8575', title: 'gegen Barnimer SF', text: 2½ }]
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1899&r=1#p8569x8577', title: 'gegen Think Rochade - HRO', text: 4½ }]
+    - {  }
+    - {  }
+    - {  }
+    - 2
+    - '7'
+    - ''
+-
+    - '5.'
+    - { text: 'Think Rochade - HRO', url: '?mannschaft=8577', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1899&r=1#p8577x8569', title: 'gegen TSG Oberschöneweide', text: 1½ }]
+    - xxx
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1899&r=2#p8577x8570', title: 'gegen SV Hellas Nauen', text: 4½ }]
+    - 2
+    - '6'
+    - ''
+-
+    - '6.'
+    - { text: 'SAV Torgelow', url: '?mannschaft=8574', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - [{ url: '?staffel=1899&r=1#p8574x8573', title: 'gegen SC Kreuzberg', text: ½ }]
+    - {  }
+    - {  }
+    - {  }
+    - xxx
+    - [{ url: '?staffel=1899&r=2#p8574x8571', title: 'gegen SV Empor Berlin', text: 4½ }]
+    - {  }
+    - 2
+    - '5'
+    - absteigerRelegation
+-
+    - '7.'
+    - { text: 'SV Empor Berlin', url: '?mannschaft=8571', title: 'Zur Mannschaftsaufstellung' }
+    - [{ url: '?staffel=1899&r=1#p8571x8575', title: 'gegen Barnimer SF', text: '1' }]
+    - {  }
+    - {  }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1899&r=2#p8571x8574', title: 'gegen SAV Torgelow', text: 1½ }]
+    - xxx
+    - {  }
+    - 0
+    - 2½
+    - absteigerRelegation
+-
+    - '8.'
+    - { text: 'SV Hellas Nauen', url: '?mannschaft=8570', title: 'Zur Mannschaftsaufstellung' }
+    - {  }
+    - {  }
+    - [{ url: '?staffel=1899&r=1#p8570x8572', title: 'gegen Königsjäger Süd-West', text: ½ }]
+    - {  }
+    - [{ url: '?staffel=1899&r=2#p8570x8577', title: 'gegen Think Rochade - HRO', text: 1½ }]
+    - {  }
+    - {  }
+    - xxx
+    - 0
+    - '2'
+    - absteiger
