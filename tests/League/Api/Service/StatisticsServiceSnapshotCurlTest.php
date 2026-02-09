@@ -59,12 +59,4 @@ class StatisticsServiceSnapshotCurlTest extends TestCase {
     }
   }
 
-  private function isCurlInstalled(): bool {
-    if (in_array('curl', get_loaded_extensions())) {
-      return TRUE;
-    } else {
-      return FALSE;
-    }
-  }
-
 }
