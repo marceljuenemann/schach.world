@@ -36,7 +36,7 @@
 
       <h4 class="mt-4">DWZ-Statistik</h4>
       <table class="nsv-table borders-bold text-center text-nowrap statistics-dwz">
-        <th class="team">Team Name</th>
+        <th class="team">Mannschaft</th>
         <th
           class="active" {{ nsv.tooltip_top('DWZ Durchschnitt der Spieler, die tats&auml;chlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
           Eingesetzte
@@ -62,7 +62,7 @@
 
           <tr>
             <td class="team"><a href="{{ team.team.uri }}">
-                {{ team.team.name }}
+                {{ team.team.nameWithNumber }}
               </a>
             </td>
             <td class="active-dwz {{ dwz_rank }}">{{ team.active_dwz_average }}</td>
@@ -94,7 +94,7 @@
           <tr>
             <td class="name"><a href="{{ player.player.uri }}">{{ player.player.name }}</a></td>
             <td class="dwz">{{ player.player.dwz }}</td>
-            <td class="team">{{ player.player.team.nameWithNumber }}</td>
+            <td class="team"><a href="{{ player.player.team.uri }}">{{ player.player.team.nameWithNumber }}</a></td>
             <td class="board">{{ player.boards_played }}</td>
             <td class="games-count">{{ player.games_count }}</td>
             <td class="points fw-bold">{{ player.points }}</td>
