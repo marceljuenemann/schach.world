@@ -1,58 +1,39 @@
 {% macro table_link(uri, text) %}
-    <a href="{{ uri }}">{{ text }}</a>
+  <a href="{{ uri }}">{{ text }}</a>
 {% endmacro %}
 
 {# TODO: This macro is breaking MVC separation IMO by moving to much view logic into the controller/service. #}
 {% macro table(table_data, classes) %}
-    {% import "macros.html.twig" as nsv %}
-    <table class="nsv-table borders-bold text-center text-nowrap {{ classes }}">
-        <tr>
-            {% for cell in table_data.header %}
-                {# Set the title attribute for the th @TODO: find a more elegant way #}
-              {% set cell_title = '' %}
-                {% if cell.title %}
-                    {% set cell_title = cell.title%}
-                  <th class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>{{ cell.text|raw}}</th>
-                {% else %}
-                    {% set cell_title = '' %}
-                  <th class="{{ cell.class }}">{{ cell.text|raw}}</th>
-                {% endif %}
+  {% import "macros.html.twig" as nsv %}
+  <table class="nsv-table borders-bold text-center text-nowrap {{ classes }}">
+    <tr>
+      {% for cell in table_data.header %}
+        {# Set the title attribute for the th @TODO: find a more elegant way #}
+        {% set cell_title = '' %}
+        {% if cell.title %}
+          {% set cell_title = cell.title%}
+          <th class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>{{ cell.text|raw}}</th>
+        {% else %}
+          {% set cell_title = '' %}
+          <th class="{{ cell.class }}">{{ cell.text|raw}}</th>
+        {% endif %}
 
-                {# TODO: Remove usage of raw #}
+        {# TODO: Remove usage of raw #}
 
-            {% endfor %}
-        </tr>
-        {% for row in table_data.body %}
-            <tr>
-                {% for cell in row %}
-                  {# The old implementation output some broken HTML because it did not cater for the fact that the title was not set. In combination with the link that has more
-                  cases we need to cover
-                    {% if cell.title and cell.link %}
-                        {% set cell_title = cell.title%}
-                    {% elseif cell.title and not cell.link %}
-                        {% set cell_title = '' %}
-                    {% elseif cell.link and not cell.title %}
-                      {# Neither link nor title are set #}
-                  {#
-                  {% else %}
-                  #}
-                    {# Set the title attribute for the td. @TODO: find a more elegant way #}
-                    {% if cell.title %}
-                        {% set cell_title = cell.title%}
-                    {% else %}
-                        {% set cell_title = '' %}
-                    {% endif %}
-
-                    {% if cell.link %}
-                        <td class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>
-                            {{ _self.table_link(cell.link, cell.text) }}
-                        </td>
-                    {% else %}
-                        <td class="{{ cell.class }}" {{ nsv.tooltip_top(cell_title) }}>{{ cell.text }}</td>
-                    {% endif %}
-                {% endfor %}
-            </tr>
+      {% endfor %}
+    </tr>
+    {% for row in table_data.body %}
+      <tr>
+        {% for cell in row %}
+          {% if cell.link %}
+            <td class="{{ cell.class }}">
+              {{ _self.table_link(cell.link, cell.text) }}
+            </td>
+          {% else %}
+            <td class="{{ cell.class }}">{{ cell.text }}</td>
+          {% endif %}
         {% endfor %}
-    </table>
+      </tr>
+    {% endfor %}
+  </table>
 {% endmacro %}
-
