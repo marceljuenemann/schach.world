@@ -26,12 +26,15 @@
         {% endif %}
       </p>
 
-      <p>{{ introTextValues.sum_forfeit_losses }} Spiele wurden kampflos verloren gegeben, das sind
-        <strong>{{ introTextValues.forfeit_percentage }}%</strong>. Von
-        den {{ introTextValues.sum_game_count_played }} wirklich gespielten Partien sind
-        <strong>{{ introTextValues.average_draws }}%</strong> Remis ausgegangen. Die Wei&szlig;spieler haben
-        einen Score von <strong>{{ introTextValues.average_white_score }}%</strong>, der Score von Schwarz ist
-        <strong>{{ introTextValues.average_black_score }}%</strong>.</p>
+      <p>{{ teamGameScoreAdditionalData.text_values.sum_forfeit_losses }} Spiele wurden kampflos verloren gegeben, das
+        sind
+        <strong>{{ teamGameScoreAdditionalData.text_values.forfeit_percentage }}%</strong>. Von
+        den {{ teamGameScoreAdditionalData.text_values.sum_game_count_played }} wirklich gespielten Partien sind
+        <strong>{{ teamGameScoreAdditionalData.text_values.average_draws }}%</strong> Remis ausgegangen. Die Wei&szlig;spieler
+        haben
+        einen Score von <strong>{{ teamGameScoreAdditionalData.text_values.average_white_score }}%</strong>, der Score
+        von Schwarz ist
+        <strong>{{ teamGameScoreAdditionalData.text_values.average_black_score }}%</strong>.</p>
 
 
       <h4 class="mt-4">DWZ-Statistik</h4>
@@ -104,6 +107,69 @@
 
 
       <h4 class="mt-4">Spiel-Statistik</h4>
+
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-games">
+        <tr>
+          <th class="team">Mannschaft</th>
+          <th
+            class="game-all-count border-left-bold" {{ nsv.tooltip_top('Wie viele Partien hat die Mannschaft bislang gespielt?') }}>
+            &sum;
+          </th>
+          <th
+            class="forfeit-wins" {{ nsv.tooltip_top('Kampflose Siege') }}>
+            +</th>
+          <th
+            class="forfeit-losses border-right-bold" {{ nsv.tooltip_top('Kampflose Niederlagen') }}>
+            -
+          </th>
+          <th
+            class="wins" {{ nsv.tooltip_top('Siege aus den wirklich gespielten Partien') }}>
+            1
+          </th>
+          <th
+            class="draws" {{ nsv.tooltip_top('Remis') }}>
+            &frac12;
+          </th>
+          <th
+            class="losses border-right-bold" {{ nsv.tooltip_top('Niederlagen') }}>
+            0
+          </th>
+          <th
+            class="white-score" {{ nsv.tooltip_top('Score mit Wei&szlig;') }}>
+            W
+          </th>
+          <th
+            class="black-score" {{ nsv.tooltip_top('Score mit Schwarz') }}>
+            S
+          </th>
+        </tr>
+
+        {% for team in teamGameScoreData %}
+          <tr>
+            <td class="name"><a href="{{ team.uri }}">{{ team.name }}</a></td>
+            <td class="game-all-count border-left-bold">{{ team.game_count_played }}</td>
+            <td class="forfeit-wins">{{ team.forfeit_wins }}</td>
+            <td class="forfeit-losses border-right-bold">{{ team.forfeit_losses }}</td>
+            <td class="wins">{{ team.wins|round }}%</td>
+            <td class="draws">{{ team.draws|round }}%</td>
+            <td class="losses border-right-bold">{{ team.losses|round }}%</td>
+            <td class="white-score">{{ team.white_score }}%</td>
+            <td class="black-score">{{ team.black_score }}%</td>
+          </tr>
+        {% endfor %}
+        <tr>
+          <td class="name fw-bold">Summe:</td>
+          <td class="game-all-count border-left-bold fw-bold">{{ teamGameScoreAdditionalData.average_scores.sum_game_count }}</td>
+          <td class="forfeit-wins fw-bold">{{ teamGameScoreAdditionalData.average_scores.sum_forfeit_wins }}</td>
+          <td class="forfeit-losses border-right-bold fw-bold">{{ teamGameScoreAdditionalData.average_scores.sum_forfeit_losses }}</td>
+          <td class="wins fw-bold">{{ teamGameScoreAdditionalData.average_scores.average_wins }}%</td>
+          <td class="draws fw-bold">{{ teamGameScoreAdditionalData.average_scores.average_draws }}%</td>
+          <td class="losses border-right-bold fw-bold">{{ teamGameScoreAdditionalData.average_scores.average_losses }}%</td>
+          <td class="white-score fw-bold">{{ teamGameScoreAdditionalData.average_scores.average_white_score }}%</td>
+          <td class="black-score fw-bold">{{ teamGameScoreAdditionalData.average_scores.average_black_score }}%</td>
+        </tr>
+
+      </table>
 
 
     </div>
