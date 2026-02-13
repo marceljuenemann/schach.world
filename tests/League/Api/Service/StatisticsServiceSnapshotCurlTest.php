@@ -60,6 +60,10 @@ class StatisticsServiceSnapshotCurlTest extends TestCase {
     }
   }
 
+  /**
+   * Functions to minify the HTML.
+   * Taken from https://gist.github.com/Rodrigo54/93169db48194d470188f
+   */
   private function minify_html($input) {
     if(trim($input) === "") return $input;
     // Remove extra white-space(s) between HTML attribute(s)
