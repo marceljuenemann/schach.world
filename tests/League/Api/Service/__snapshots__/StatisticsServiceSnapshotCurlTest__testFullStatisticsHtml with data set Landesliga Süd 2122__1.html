@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="/core/nsv2020/vendor/bootstrap-5.2.3/bootstrap.min.css">
+<link rel="stylesheet" href="/wp-includes/css/dashicons.min.css">
+<link rel="stylesheet" href="/core/nsv2020/nsv.css">
+<script src="/core/nsv2020/vendor/jquery-3.3.1.slim.min.js"></script><link rel="Stylesheet" href="/ligen/_templates/nsv2020/ergebnisdienst.css">
+<script src="/ligen/_templates/nsv2020/ergebnisdienst.js"></script><title>Landes- und Verbandsligen 2021/22</title>
+<script src="/core/nsv2020/vendor/bootstrap-5.2.3/bootstrap.bundle.min.js"></script><link rel="icon" href="https://nsv-online.de/wp-content/uploads/2019/05/favicon-1.gif" sizes="32x32">
+</head>
+<body>
+<div id="nsv-header" class="d-none d-lg-block d-print-none"><div class="container d-flex">
+<div><a href="/"><img src="/core/nsv2020/images/nsv.png"></a></div>
+<div id="nsv-header-brand" class="align-self-center flex-fill">Nieders&auml;chsischer<br>Schachverband</div>
+<div>
+<div style="color:black;margin-bottom:5px;margin-top:20px">Gef&ouml;rdert durch:</div>
+<div>
+<a href="https://www.lotto-sport-stiftung.de/"><img src="/core/nsv2020/images/lotto.svg" style="height:60px;margin-right:20px"></a><a href="http://chessbase.de"><img src="/core/nsv2020/images/chessbase.svg" style="height:60px"></a>
+</div>
+</div>
+</div></div>
+<nav id="nsv-navbar" class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg d-print-none"><div class="container">
+<a class="navbar-brand d-lg-none d-flex" href="/"><div class="align-self-center">Nieders&auml;chsischer Schachverband</div></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNavDropdown"><ul class="navbar-nav">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/nsv/" id="navbarDropdownMenuLink0">NSV</a><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink0">
+<a class="dropdown-item" href="/">Neuigkeiten</a><a class="dropdown-item" href="/vorstand/">Vorstand</a><a class="dropdown-item" href="/kongress/">Kongress</a><a class="dropdown-item" href="/ordnungen/">Satzung und Ordnungen</a><a class="dropdown-item" href="/mitgliederverwaltung/">Mitgliederverwaltung</a><a class="dropdown-item" href="/ruhmeshalle/">Ruhmeshalle</a><a class="dropdown-item" href="/ehrentafel/">Ehrentafel</a><a class="dropdown-item" href="/vorstandschronik/">Vorstandschronik</a><a class="dropdown-item" href="/verbandsnachrichten/">Verbandsnachrichten</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/goto/nsvligen" id="navbarDropdownMenuLink1">Ligen</a><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+<a class="dropdown-item" href="/alle-ligen/">&Uuml;bersicht</a><a class="dropdown-item" href="/goto/lln">Landesliga Nord</a><a class="dropdown-item" href="/goto/lls">Landesliga S&uuml;d</a><a class="dropdown-item" href="/goto/vln">Verbandsliga Nord</a><a class="dropdown-item" href="/goto/vlw">Verbandsliga West</a><a class="dropdown-item" href="/goto/vlo">Verbandsliga Ost</a><a class="dropdown-item" href="/goto/vls">Verbandsliga S&uuml;d</a><a class="dropdown-item" href="/ligen/pokal/">Pokal-Meisterschaft</a><a class="dropdown-item" href="/ligen/fll/">Frauen Landesliga</a><a class="dropdown-item" href="/ligen/nsj/">Jugendligen</a>
+</div>
+</li>
+<li class="nav-item"><a class="nav-link" href="/vorstand/" id="navbarDropdownMenuLink2">Vorstand</a></li>
+<li class="nav-item"><a class="nav-link" href="/vereine/" id="navbarDropdownMenuLink3">Vereine</a></li>
+<li class="nav-item"><a class="nav-link" href="/termine/" id="navbarDropdownMenuLink4">Termine</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/nsv-grandprix/" id="navbarDropdownMenuLink5">Turniere</a><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
+<a class="dropdown-item" href="/turnieranmeldung/">Turnieranmeldungen</a><a class="dropdown-item" href="/nsv-grandprix/">NSV-Grandprix</a><a class="dropdown-item" href="/nsv-rapid-rumble/">NSV-Rapid Rumble</a><a class="dropdown-item" href="/2025/09/lem-2026-ausschreibung-und-anmeldungen/">LEM 2026</a><a class="dropdown-item" href="/2025/09/landesblitzeinzelmeisterschaft-2025-ausschreibung/">Blitzeinzel 2025</a><a class="dropdown-item" href="/2025/10/landesblitzmannschaftsmeisterschaft-2025-ausschreibung/">Blitzmannschaft 2025</a><a class="dropdown-item" href="/2025/05/gedon-hartge-triumphiert-beim-anderter-open-fm-knuedel-neuer-landesmeister/">Schnellschacheinzelm. 2025</a><a class="dropdown-item" href="/2025/06/nsv-pokal-sk-nordhorn-blanke-mannschaftspokalmeister/">Pokalmannschaftsm. 2024/25</a><a class="dropdown-item" href="/2025/02/frauenschachpower-pur/">Frauenmeisterschaften 2025</a><a class="dropdown-item" href="/2025/04/frauenblitzmeisterschaft-2025-bericht/">Frauenblitzschach 2025</a><a class="dropdown-item" href="/2025/05/offene-niedersaechsische-frauenschnellschachmeisterschaft-2025-bericht/">Frauenschnellschach 2025</a><a class="dropdown-item" href="/2025/01/loesemeisterschaft-2025-bericht/">Probleml&ouml;semeisterschaft 2025</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/vorstand/" id="navbarDropdownMenuLink6">Referate</a><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6">
+<a class="dropdown-item" href="/kategorie/spielgeschehen/">Spielgeschehen</a><a class="dropdown-item" href="/kategorie/ausbildung/">Ausbildung</a><a class="dropdown-item" href="/kategorie/leistungssport/">Leistungssport</a><a class="dropdown-item" href="/kategorie/frauenschach/">Frauen</a><a class="dropdown-item" href="/kategorie/problemschach/">Problemschach</a><a class="dropdown-item" href="/goto/jugend">Jugend</a><a class="dropdown-item" href="/goto/Senioren">Senioren</a>
+</div>
+</li>
+<li class="nav-item nsv-navbar-search"><a class="nav-link" href="/suche"><span class="dashicons dashicons-search"></span></a></li>
+</ul></div>
+</div></nav><div id="nsv-main" class="container"><div class="row">
+<div class="col-12 col-lg-9 order-lg-2"><div class="card shadow nsv-card"><div class="card-body">
+<script src="/core/js-build/static/js/main.f5ace24b.js" defer></script><link rel="stylesheet" href="/core/ng-build/browser/styles-5INURTSO.css">
+<script defer src="/core/ng-build/browser/polyfills-VFH4IOMS.js" type="module"></script><script defer src="/core/ng-build/browser/main-2YWRGGO2.js" type="module"></script><h2>Landesliga S&uuml;d</h2>
+<ul class="nav nav-tabs mt-4 mb-4 d-print-none">
+<li class="nav-item"><a class="nav-link  " href="/ligen/nsv-2122/landesliga-sued/"> Spieltage</a></li>
+<li class="nav-item"><a class="nav-link  " href="/ligen/nsv-2122/landesliga-sued/spielplan/"> Spielplan</a></li>
+<li class="nav-item"><a class="nav-link active " href="/ligen/nsv-2122/landesliga-sued/statistik/"> Statistik</a></li>
+</ul>
+<div class="statistics-container">
+<p>Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine <strong>DWZ
+          von 1920</strong> und ist
+        <strong>44</strong> Jahre alt.</p>
+<p>Der Top-Scorer mit 7 Punkten aus 9 Partien ist:
+                                <a href="/ligen/nsv-2122/s/511988/">Player 5885, 367642a</a> (<a href="/ligen/nsv-2122/m/6791/">SV Laatzen</a>).<br>Die Remisk&ouml;nige mit 5 Remis sind
+                                    <a href="/ligen/nsv-2122/s/512614/">Player 3d20, 427c7ec</a> (<a href="/ligen/nsv-2122/m/6825/">SK Rinteln</a>),         <a href="/ligen/nsv-2122/s/512752/">Player cab0, 288c0c5</a> (<a href="/ligen/nsv-2122/m/6866/">Hamelner SV 2</a>),         <a href="/ligen/nsv-2122/s/512754/">Player 37ae, 3a40edb</a> (<a href="/ligen/nsv-2122/m/6866/">Hamelner SV 2</a>),         <a href="/ligen/nsv-2122/s/511990/">Player 53b0, 5af9f27</a> (<a href="/ligen/nsv-2122/m/6791/">SV Laatzen</a>),         <a href="/ligen/nsv-2122/s/512757/">Player 98bb, 650540d</a> (<a href="/ligen/nsv-2122/m/6866/">Hamelner SV 2</a>) und         <a href="/ligen/nsv-2122/s/512023/">Player e13f, 55b64bc</a> (<a href="/ligen/nsv-2122/m/6793/">SD Isernhagen</a>).</p>
+<p>39 Spiele wurden kampflos verloren gegeben, das sind
+        <strong>11%</strong>. Von
+        den 321 wirklich gespielten Partien sind
+        <strong>34%</strong> Remis ausgegangen. Die Wei&szlig;spieler haben
+        einen Score von <strong>55%</strong>, der Score von Schwarz ist
+        <strong>46%</strong>.</p>
+<h4 class="mt-4">DWZ-Statistik</h4>
+<table class="nsv-table borders-bold text-center text-nowrap statistics-dwz">
+<tr>
+<th class="team">Mannschaft</th>
+<th class="active" data-bs-toggle="tooltip" data-bs-placement="top" title="DWZ Durchschnitt der Spieler, die tats&auml;chlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.">Eingesetzte</th>
+<th class="top" data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet.">Top 8</th>
+<th class="all" data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.">Alle Spieler</th>
+<th class="age" data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliches Alter der Spieler, die tats&auml;chlich gespielt haben.">Alter &Oslash;</th>
+</tr>
+<tr>
+<td class="team"><a href="/ligen/nsv-2122/m/6863/">HSK Lister Turm 2</a></td>
+<td class="active-dwz fw-bold ">2150</td>
+<td class="top-dwz fw-bold">2234</td>
+<td class="all-dwz fw-bold">2105</td>
+<td class="age">46</td>
+</tr>
+<tr>
+<td class="team"><a href="/ligen/nsv-2122/m/6779/">Hildesheimer SV</a></td>
+<td class="active-dwz">1979</td>
+<td class="top-dwz">2008</td>
+<td class="all-dwz">1886</td>
+<td class="age">40</td>
+</tr>
+<tr>
+<td class="team"><a href="/ligen/nsv-2122/m/6816/">SC BS Gliesmarode</a></td>
+<td class="active-dwz">1942</td>
+<td class="top-dwz">2032</td>
+<td class="all-dwz">1933</td>
+<td class="age">46</td>
+</tr>
+<tr>
+<td class="team"><a href="/ligen/nsv-2122/m/6866/">Hamelner SV 2</a></td>
+<td class="active-dwz">1926</td>
+<td class="top-dwz">1960</td>
+<td class="all-dwz">1896</td>
+<td class="age fw-bold">56</td>
+</tr>
+<tr>
+<td class="team"><a href="/ligen/nsv-2122/m/6791/">SV Laatzen</a></td>
+<td class="active-dwz">1926</td>
+<td class="top-dwz">2008</td>
+<td class="all-dwz">1879</td>
+<td class="age">34</td>
+</tr>
+<tr>
+<td class="team"><a href="/ligen/nsv-2122/m/6825/">SK Rinteln</a></td>
+<td class="active-dwz">1924</td>
+<td class="top-dwz">2075</td>
+<td class="all-dwz">1785</td>
+<td class="age">34</td>
+</tr>
+<tr>
+<td class="team"><a href="/ligen/nsv-2122/m/6864/">ST Langenhagen</a></td>
+<td class="active-dwz">1914</td>
+<td class="top-dwz">1996</td>
+<td class="all-dwz">1815</td>
+<td class="age">46</td>
+</tr>
+<tr>
+<td class="team"><a href="/ligen/nsv-2122/m/6793/">SD Isernhagen</a></td>
+<td class="active-dwz">1861</td>
+<td class="top-dwz">1937</td>
+<td class="all-dwz">1710</td>
+<td class="age">39</td>
+</tr>
+<tr>
+<td class="team"><a href="/ligen/nsv-2122/m/6884/">Tempo G&ouml;ttingen</a></td>
+<td class="active-dwz">1820</td>
+<td class="top-dwz">1890</td>
+<td class="all-dwz">1832</td>
+<td class="age">51</td>
+</tr>
+<tr>
+<td class="team"><a href="/ligen/nsv-2122/m/6788/">Hannover 96</a></td>
+<td class="active-dwz">1757</td>
+<td class="top-dwz">2043</td>
+<td class="all-dwz">1732</td>
+<td class="age">51</td>
+</tr>
+<tr>
+<td class="average-active fw-bold">Durchschnitt:</td>
+<td class="average-active fw-bold">1920</td>
+<td class="average-top fw-bold">2018</td>
+<td class="average-all fw-bold">1857</td>
+<td class="average-age fw-bold">44</td>
+</tr>
+</table>
+<h4 class="mt-4">Topscorer</h4>
+<table class="nsv-table borders-bold text-center text-nowrap statistics-topscorer">
+<tr>
+<th class="name">Name</th>
+<th class="rating-national">DWZ</th>
+<th class="team">Mannschaft</th>
+<th class="board">Brett</th>
+<th class="games">Partien</th>
+<th class="points">Punkte</th>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/s/511988/">Player 5885, 367642a</a></td>
+<td class="dwz">2031</td>
+<td class="team"><a href="/ligen/nsv-2122/m/6791/">SV Laatzen</a></td>
+<td class="board">2-3</td>
+<td class="games-count">9</td>
+<td class="points fw-bold">7</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/s/511967/">Player 1f7f, 0527b92</a></td>
+<td class="dwz">1775</td>
+<td class="team"><a href="/ligen/nsv-2122/m/6788/">Hannover 96</a></td>
+<td class="board">4-7</td>
+<td class="games-count">9</td>
+<td class="points fw-bold">6.5</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/s/512710/">FM Player 2cf0, 74225e5</a></td>
+<td class="dwz">2191</td>
+<td class="team"><a href="/ligen/nsv-2122/m/6863/">HSK Lister Turm 2</a></td>
+<td class="board">4-7</td>
+<td class="games-count">6</td>
+<td class="points fw-bold">6</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/s/512609/">IM Player af9f, dcf4b4c</a></td>
+<td class="dwz">2385</td>
+<td class="team"><a href="/ligen/nsv-2122/m/6825/">SK Rinteln</a></td>
+<td class="board">1</td>
+<td class="games-count">6</td>
+<td class="points fw-bold">5.5</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/s/512613/">Player c51c, a20fd83</a></td>
+<td class="dwz">2117</td>
+<td class="team"><a href="/ligen/nsv-2122/m/6825/">SK Rinteln</a></td>
+<td class="board">2-3</td>
+<td class="games-count">7</td>
+<td class="points fw-bold">5.5</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/s/512412/">Player d71d, b980a9c</a></td>
+<td class="dwz">1786</td>
+<td class="team"><a href="/ligen/nsv-2122/m/6816/">SC BS Gliesmarode</a></td>
+<td class="board">7-8</td>
+<td class="games-count">8</td>
+<td class="points fw-bold">5.5</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/s/512753/">Player bcca, 260e9ed</a></td>
+<td class="dwz">2015</td>
+<td class="team"><a href="/ligen/nsv-2122/m/6866/">Hamelner SV 2</a></td>
+<td class="board">2-4</td>
+<td class="games-count">9</td>
+<td class="points fw-bold">5.5</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/s/511970/">Player c6d3, a1111c1</a></td>
+<td class="dwz"></td>
+<td class="team"><a href="/ligen/nsv-2122/m/6788/">Hannover 96</a></td>
+<td class="board">6-8</td>
+<td class="games-count">5</td>
+<td class="points fw-bold">5</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/s/512713/">Player 3007, 13dfbea</a></td>
+<td class="dwz">2128</td>
+<td class="team"><a href="/ligen/nsv-2122/m/6863/">HSK Lister Turm 2</a></td>
+<td class="board">6-7</td>
+<td class="games-count">6</td>
+<td class="points fw-bold">5</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/s/512025/">Player ec8b, 0de4652</a></td>
+<td class="dwz">1959</td>
+<td class="team"><a href="/ligen/nsv-2122/m/6793/">SD Isernhagen</a></td>
+<td class="board">3</td>
+<td class="games-count">6</td>
+<td class="points fw-bold">5</td>
+</tr>
+</table>
+<h4 class="mt-4">Spiel-Statistik</h4>
+<table class="nsv-table borders-bold text-center text-nowrap statistics-games">
+<tr>
+<th class="team">Mannschaft</th>
+<th class="game-all-count border-left-bold" data-bs-toggle="tooltip" data-bs-placement="top" title="Wie viele Partien hat die Mannschaft bislang gespielt?">&sum;</th>
+<th class="forfeit-wins" data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Siege">+</th>
+<th class="forfeit-losses border-right-bold" data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Niederlagen">-</th>
+<th class="wins" data-bs-toggle="tooltip" data-bs-placement="top" title="Siege aus den wirklich gespielten Partien">1</th>
+<th class="draws" data-bs-toggle="tooltip" data-bs-placement="top" title="Remis">&frac12;</th>
+<th class="losses border-right-bold" data-bs-toggle="tooltip" data-bs-placement="top" title="Niederlagen">0</th>
+<th class="white-score" data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Wei&szlig;">W</th>
+<th class="black-score" data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Schwarz">S</th>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/m/6863/">HSK Lister Turm 2</a></td>
+<td class="game-all-count border-left-bold">59</td>
+<td class="forfeit-wins">10</td>
+<td class="forfeit-losses border-right-bold">3</td>
+<td class="wins">66%</td>
+<td class="draws">22%</td>
+<td class="losses border-right-bold">12%</td>
+<td class="white-score">85%</td>
+<td class="black-score">69%</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/m/6779/">Hildesheimer SV</a></td>
+<td class="game-all-count border-left-bold">58</td>
+<td class="forfeit-wins">13</td>
+<td class="forfeit-losses border-right-bold">1</td>
+<td class="wins">36%</td>
+<td class="draws">38%</td>
+<td class="losses border-right-bold">26%</td>
+<td class="white-score">70%</td>
+<td class="black-score">42%</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/m/6788/">Hannover 96</a></td>
+<td class="game-all-count border-left-bold">65</td>
+<td class="forfeit-wins">2</td>
+<td class="forfeit-losses border-right-bold">5</td>
+<td class="wins">38%</td>
+<td class="draws">34%</td>
+<td class="losses border-right-bold">28%</td>
+<td class="white-score">60%</td>
+<td class="black-score">51%</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/m/6791/">SV Laatzen</a></td>
+<td class="game-all-count border-left-bold">70</td>
+<td class="forfeit-wins">0</td>
+<td class="forfeit-losses border-right-bold">2</td>
+<td class="wins">36%</td>
+<td class="draws">33%</td>
+<td class="losses border-right-bold">31%</td>
+<td class="white-score">53%</td>
+<td class="black-score">51%</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/m/6825/">SK Rinteln</a></td>
+<td class="game-all-count border-left-bold">68</td>
+<td class="forfeit-wins">3</td>
+<td class="forfeit-losses border-right-bold">1</td>
+<td class="wins">32%</td>
+<td class="draws">37%</td>
+<td class="losses border-right-bold">31%</td>
+<td class="white-score">51%</td>
+<td class="black-score">50%</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/m/6866/">Hamelner SV 2</a></td>
+<td class="game-all-count border-left-bold">70</td>
+<td class="forfeit-wins">1</td>
+<td class="forfeit-losses border-right-bold">1</td>
+<td class="wins">23%</td>
+<td class="draws">44%</td>
+<td class="losses border-right-bold">33%</td>
+<td class="white-score">53%</td>
+<td class="black-score">38%</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/m/6793/">SD Isernhagen</a></td>
+<td class="game-all-count border-left-bold">68</td>
+<td class="forfeit-wins">2</td>
+<td class="forfeit-losses border-right-bold">2</td>
+<td class="wins">29%</td>
+<td class="draws">31%</td>
+<td class="losses border-right-bold">40%</td>
+<td class="white-score">49%</td>
+<td class="black-score">41%</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/m/6864/">ST Langenhagen</a></td>
+<td class="game-all-count border-left-bold">61</td>
+<td class="forfeit-wins">2</td>
+<td class="forfeit-losses border-right-bold">9</td>
+<td class="wins">30%</td>
+<td class="draws">30%</td>
+<td class="losses border-right-bold">41%</td>
+<td class="white-score">50%</td>
+<td class="black-score">39%</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/m/6816/">SC BS Gliesmarode</a></td>
+<td class="game-all-count border-left-bold">67</td>
+<td class="forfeit-wins">3</td>
+<td class="forfeit-losses border-right-bold">2</td>
+<td class="wins">22%</td>
+<td class="draws">36%</td>
+<td class="losses border-right-bold">42%</td>
+<td class="white-score">45%</td>
+<td class="black-score">35%</td>
+</tr>
+<tr>
+<td class="name"><a href="/ligen/nsv-2122/m/6884/">Tempo G&ouml;ttingen</a></td>
+<td class="game-all-count border-left-bold">56</td>
+<td class="forfeit-wins">3</td>
+<td class="forfeit-losses border-right-bold">13</td>
+<td class="wins">20%</td>
+<td class="draws">34%</td>
+<td class="losses border-right-bold">46%</td>
+<td class="white-score">32%</td>
+<td class="black-score">42%</td>
+</tr>
+<tr>
+<td class="name fw-bold">Summe:</td>
+<td class="game-all-count border-left-bold fw-bold">360</td>
+<td class="forfeit-wins fw-bold">39</td>
+<td class="forfeit-losses border-right-bold fw-bold">39</td>
+<td class="wins fw-bold">33%</td>
+<td class="draws fw-bold">34%</td>
+<td class="losses border-right-bold fw-bold">33%</td>
+<td class="white-score fw-bold">55%</td>
+<td class="black-score fw-bold">46%</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript">$(function(){$('[data-bs-toggle="tooltip"]').tooltip()})</script>
+</div></div></div>
+<div class="col-12 col-lg-3" id="nsv-sidebar">
+<div class="card shadow nsv-card nsv-sidebar-card"><div class="card-body overflow-visible">
+<h5 class="card-title" style="cursor:pointer"><span class="dropdown"><span class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Saison 2021/22</span><ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/ligen/nsv-2526/">Saison 2025/26</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-2425/">Saison 2024/25</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-2324/">Saison 2023/24</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-2223/">Saison 2022/23</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-2122/">Saison 2021/22</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-2021/">Saison 2020/21</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-1920/">Saison 2019/20</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-1819/">Saison 2018/19</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-1718/">Saison 2017/18</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-1617/">Saison 2016/17</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-1516/">Saison 2015/16</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-1415/">Saison 2014/15</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-1314/">Saison 2013/14</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-1213/">Saison 2012/13</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-1112/">Saison 2011/12</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-1011/">Saison 2010/11</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-0910/">Saison 2009/10</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-0809/">Saison 2008/09</a></li>
+<li><a class="dropdown-item" href="/ligen/nsv-0708/">Saison 2007/08</a></li>
+</ul></span></h5>
+<ul class="nav flex-column">
+<li class="nav-item"><a class="nav-link " href="/ligen/nsv-2122">&Uuml;bersicht</a></li>
+<li class="nav-item"><a class="nav-link " href="/ligen/nsv-2122/?staffel=1574&amp;r=">Landesliga Nord</a></li>
+<li class="nav-item"><a class="nav-link active" href="/ligen/nsv-2122/?staffel=1573&amp;r=">Landesliga S&uuml;d</a></li>
+<li class="nav-item"><a class="nav-link " href="/ligen/nsv-2122/?staffel=1575&amp;r=">Verbandsliga Nord</a></li>
+<li class="nav-item"><a class="nav-link " href="/ligen/nsv-2122/?staffel=1576&amp;r=">Verbandsliga West</a></li>
+<li class="nav-item"><a class="nav-link " href="/ligen/nsv-2122/?staffel=1577&amp;r=">Verbandsliga Ost</a></li>
+<li class="nav-item"><a class="nav-link " href="/ligen/nsv-2122/?staffel=1572&amp;r=">Verbandsliga S&uuml;d</a></li>
+<li class="nav-item"><a class="nav-link " href="/ligen/nsv-2122/?staffel=1578&amp;r=">&Uuml;berbr&uuml;ckungsliga Nord-West</a></li>
+<li class="nav-item"><a class="nav-link " href="/ligen/nsv-2122/?staffel=1579&amp;r=">&Uuml;berbr&uuml;ckungsliga S&uuml;d-Ost</a></li>
+</ul>
+</div></div>
+<div class="card shadow nsv-card nsv-sidebar-card"><div class="card-body">
+<h5 class="card-title">Aufstellungen</h5>
+<form method="get" action="/ligen/nsv-2122/"><select name="mannschaft" onchange="this.form.submit()" class="form-select"><option value="" selected>--- Mannschaft ---</option>
+<option value="6875">Bremer SG</option>
+<option value="6861">C. Wolfenb&uuml;ttel</option>
+<option value="6817">ESV G&ouml;ttingen</option>
+<option value="6806">Hagener SV</option>
+<option value="6866">Hamelner SV 2</option>
+<option value="6822">Hamelner SV 3</option>
+<option value="6788">Hannover 96</option>
+<option value="6779">Hildesheimer SV</option>
+<option value="6813">Hildesheimer SV 2</option>
+<option value="6863">HSK Lister Turm 2</option>
+<option value="6865">HSK Lister Turm 3</option>
+<option value="6883">KS Braunschweig</option>
+<option value="6805">KS Emden</option>
+<option value="6807">MTV Tostedt</option>
+<option value="6751">NiederelbeCuxhaven</option>
+<option value="6881">Peiner SV</option>
+<option value="6868">Plesse Bovenden</option>
+<option value="6798">Post SV Uelzen</option>
+<option value="6871">Post SV Uelzen 2</option>
+<option value="6816">SC BS Gliesmarode</option>
+<option value="6795">SC Turm L&uuml;neburg</option>
+<option value="6717">SC Uetze-H&auml;nigsen</option>
+<option value="6815">SC Wolfsburg</option>
+<option value="6793">SD Isernhagen</option>
+<option value="6869">SF Fallersleben</option>
+<option value="6794">SF Leherheide</option>
+<option value="6876">Sfr Bremer Osten</option>
+<option value="6874">SG Ammerland 2</option>
+<option value="6801">SG Ammerland 1</option>
+<option value="6790">SG FinWest</option>
+<option value="6873">SG Osnabr&uuml;ck</option>
+<option value="6784">SG SF Ricklingen 2</option>
+<option value="6718">SG WB Eilenriede</option>
+<option value="6804">SK Bremen-Nord</option>
+<option value="6823">SK Kirchweyhe 2</option>
+<option value="6758">SK Lehrte 2</option>
+<option value="6759">SK Lehrte 3</option>
+<option value="6812">SK Nordhorn-Blanke 2</option>
+<option value="6814">SK Nordhorn-Blanke 3</option>
+<option value="6825">SK Rinteln</option>
+<option value="6808">SK Rotenburg</option>
+<option value="6768">SK Stolzenau</option>
+<option value="6803">SK Union Oldenburg 2</option>
+<option value="6787">SK Verden</option>
+<option value="6864">ST Langenhagen</option>
+<option value="6792">Stader SV</option>
+<option value="6810">SV Bad Essen</option>
+<option value="6769">SV Berenbostel</option>
+<option value="6872">SV Esens</option>
+<option value="6745">SV FB Wedemark</option>
+<option value="6867">SV Gifhorn</option>
+<option value="6809">SV Hellern 2</option>
+<option value="6791">SV Laatzen</option>
+<option value="6811">SV Osnabr&uuml;ck</option>
+<option value="6824">SV Springe</option>
+<option value="6802">SV Werder Bremen 4</option>
+<option value="6884">Tempo G&ouml;ttingen</option></select></form>
+</div></div>
+<div class="card shadow nsv-card nsv-sidebar-card"><div class="card-body">
+<h5 class="card-title">Turnierleitung</h5>
+<form action="/ligen/nsv-2122/?admin=login" method="post"><div>
+<div class="form-group"><select class="form-select" name="benutzer"><option value="t-233">Turnierleiter:in</option>
+<option value="s-1574">Landesliga Nord</option>
+<option value="s-1573" selected>Landesliga S&uuml;d</option>
+<option value="s-1575">Verbandsliga Nord</option>
+<option value="s-1576">Verbandsliga West</option>
+<option value="s-1577">Verbandsliga Ost</option>
+<option value="s-1572">Verbandsliga S&uuml;d</option>
+<option value="s-1578">&Uuml;berbr&uuml;ckungsliga Nord-West</option>
+<option value="s-1579">&Uuml;berbr&uuml;ckungsliga S&uuml;d-Ost</option></select></div>
+<div class="form-group"><input type="password" name="passwort" placeholder="Passwort" class="form-control"></div>
+<input type="submit" value="Einloggen" class="btn btn-sm btn-primary">
+</div></form>
+</div></div>
+</div>
+</div></div>
+<footer id="nsv-footer" class="d-print-none"><div class="container"><div class="row">
+<ul class="col-12 col-sm-6">
+<li><a href="/kontakt/">Kontakt</a></li>
+<li><a href="/impressum">Impressum</a></li>
+<li><a href="/impressum">Datenschutz</a></li>
+<li><a href="http://nds-schachsenioren.de">Nieders&auml;chsische Schachsenioren</a></li>
+<li><a href="https://nsj-online.de">Nieders&auml;chsische Schachjugend (NSJ)</a></li>
+<li><a href="https://deutsche-schachjugend.de/">Deutsche Schachjugend (DSJ)</a></li>
+<li><a href="https://schachbund.de">Deutscher Schachbund (DSB)</a></li>
+</ul>
+<ul class="col-12 col-sm-6">
+<li><a href="https://schachbezirk-hannover.de">Bezirk Hannover</a></li>
+<li>
+<li><a href="https://schachbezirk-braunschweig.de">Bezirk Braunschweig</a></li>
+<li>
+<li><a href="https://schachbezirk3.de">Bezirk S&uuml;dniedersachsen</a></li>
+<li>
+<li><a href="http://schachbezirk4.de">Bezirk L&uuml;neburg</a></li>
+<li>
+<li><a href="https://sboo.de/">Bezirk Oldenburg-Ostfriesland</a></li>
+<li>
+<li><a href="http://schachbezirk-osnabrueck-emsland.de">Bezirk Osnabr&uuml;ck-Emsland</a></li>
+<li>
+<li><a href="/vereine">Vereine</a></li>
+</ul>
+</div></div></footer>
+</body>
+</html>
