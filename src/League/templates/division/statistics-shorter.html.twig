@@ -58,18 +58,18 @@
         {% for team in dwzData %}
           {# Set additional class values depending on if a team is leading in
       a particular statistic. Leading values are displayed as bold. #}
-          {% set dwz_rank = team.dwz_rank == 'top' ? 'fw-bold' : '' %}
-          {% set top_dwz_rank = team.top_dwz_rank == 'top' ? 'fw-bold' : '' %}
-          {% set all_dwz_rank = team.all_dwz_rank == 'top' ? 'fw-bold' : '' %}
-          {% set age_rank = team.age_rank == 'top' ? 'fw-bold' : '' %}
+          {% set dwz_rank = team.dwz_rank == 'top' ? ' fw-bold' : '' %}
+          {% set top_dwz_rank = team.top_dwz_rank == 'top' ? ' fw-bold' : '' %}
+          {% set all_dwz_rank = team.all_dwz_rank == 'top' ? ' fw-bold' : '' %}
+          {% set age_rank = team.age_rank == 'top' ? ' fw-bold' : '' %}
 
           <tr>
             <td class="team"><a href="{{ team.team.uri }}">{{ team.team.nameWithNumber }}</a>
             </td>
-            <td class="active-dwz {{ dwz_rank }} ">{{ team.active_dwz_average }}</td>
-            <td class="top-dwz {{ top_dwz_rank }}">{{ team.top_x_dwz_average }}</td>
-            <td class="all-dwz {{ all_dwz_rank }}">{{ team.all_dwz_average }}</td>
-            <td class="age {{ age_rank }}">{{ team.active_age_average }}</td>
+            <td class="active-dwz{{ dwz_rank }}">{{ team.active_dwz_average }}</td>
+            <td class="top-dwz{{ top_dwz_rank }}">{{ team.top_x_dwz_average }}</td>
+            <td class="all-dwz{{ all_dwz_rank }}">{{ team.all_dwz_average }}</td>
+            <td class="age{{ age_rank }}">{{ team.active_age_average }}</td>
           </tr>
         {% endfor %}
         <tr>
@@ -115,7 +115,8 @@
           </th>
           <th
             class="forfeit-wins" {{ nsv.tooltip_top('Kampflose Siege') }}>
-            +</th>
+            +
+          </th>
           <th
             class="forfeit-losses border-right-bold" {{ nsv.tooltip_top('Kampflose Niederlagen') }}>
             -
@@ -157,12 +158,16 @@
         {% endfor %}
         <tr>
           <td class="name fw-bold">Summe:</td>
-          <td class="game-all-count border-left-bold fw-bold">{{ teamGameScoreAdditionalData.average_scores.sum_game_count }}</td>
+          <td
+            class="game-all-count border-left-bold fw-bold">{{ teamGameScoreAdditionalData.average_scores.sum_game_count }}</td>
           <td class="forfeit-wins fw-bold">{{ teamGameScoreAdditionalData.average_scores.sum_forfeit_wins }}</td>
-          <td class="forfeit-losses border-right-bold fw-bold">{{ teamGameScoreAdditionalData.average_scores.sum_forfeit_losses }}</td>
+          <td
+            class="forfeit-losses border-right-bold fw-bold">{{ teamGameScoreAdditionalData.average_scores.sum_forfeit_losses }}</td>
           <td class="wins fw-bold">{{ teamGameScoreAdditionalData.average_scores.average_wins }}%</td>
           <td class="draws fw-bold">{{ teamGameScoreAdditionalData.average_scores.average_draws }}%</td>
-          <td class="losses border-right-bold fw-bold">{{ teamGameScoreAdditionalData.average_scores.average_losses }}%</td>
+          <td class="losses border-right-bold fw-bold">{{ teamGameScoreAdditionalData.average_scores.average_losses }}
+            %
+          </td>
           <td class="white-score fw-bold">{{ teamGameScoreAdditionalData.average_scores.average_white_score }}%</td>
           <td class="black-score fw-bold">{{ teamGameScoreAdditionalData.average_scores.average_black_score }}%</td>
         </tr>
