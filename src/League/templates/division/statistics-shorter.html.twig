@@ -64,11 +64,9 @@
           {% set age_rank = team.age_rank == 'top' ? 'fw-bold' : '' %}
 
           <tr>
-            <td class="team"><a href="{{ team.team.uri }}">
-                {{ team.team.nameWithNumber }}
-              </a>
+            <td class="team"><a href="{{ team.team.uri }}">{{ team.team.nameWithNumber }}</a>
             </td>
-            <td class="active-dwz {{ dwz_rank }}">{{ team.active_dwz_average }}</td>
+            <td class="active-dwz {{ dwz_rank }} ">{{ team.active_dwz_average }}</td>
             <td class="top-dwz {{ top_dwz_rank }}">{{ team.top_x_dwz_average }}</td>
             <td class="all-dwz {{ all_dwz_rank }}">{{ team.all_dwz_average }}</td>
             <td class="age {{ age_rank }}">{{ team.active_age_average }}</td>
@@ -86,12 +84,12 @@
 
       <table class="nsv-table borders-bold text-center text-nowrap statistics-topscorer">
         <tr>
-          <th>Name</th>
-          <th>DWZ</th>
-          <th>Mannschaft</th>
-          <th>Brett</th>
-          <th>Partien</th>
-          <th>Punkte</th>
+          <th class="name">Name</th>
+          <th class="rating-national">DWZ</th>
+          <th class="team">Mannschaft</th>
+          <th class="board">Brett</th>
+          <th class="games-count">Partien</th>
+          <th class="points fw-bold">Punkte</th>
         </tr>
         {% for player in topScorerData.topTenScorers %}
           <tr>
