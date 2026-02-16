@@ -39,22 +39,24 @@
 
       <h4 class="mt-4">DWZ-Statistik</h4>
       <table class="nsv-table borders-bold text-center text-nowrap statistics-dwz">
-        <th class="team">Mannschaft</th>
-        <th
-          class="active" {{ nsv.tooltip_top('DWZ Durchschnitt der Spieler, die tats&auml;chlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
-          Eingesetzte
-        </th>
-        <th
-          class="top" {{ nsv.tooltip_top('Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
-          Top {{ dwzAdditionalData.boardCount }}</th>
-        <th
-          class="all" {{ nsv.tooltip_top('Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
-          Alle Spieler
-        </th>
-        <th
-          class="age" {{ nsv.tooltip_top('Durchschnittliches Alter der Spieler, die tats&auml;chlich gespielt haben.') }}>
-          Alter &#8709;
-        </th>
+        <tr>
+          <th class="team">Mannschaft</th>
+          <th
+            class="active" {{ nsv.tooltip_top('DWZ Durchschnitt der Spieler, die tats&auml;chlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
+            Eingesetzte
+          </th>
+          <th
+            class="top" {{ nsv.tooltip_top('Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
+            Top {{ dwzAdditionalData.boardCount }}</th>
+          <th
+            class="all" {{ nsv.tooltip_top('Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.') }}>
+            Alle Spieler
+          </th>
+          <th
+            class="age" {{ nsv.tooltip_top('Durchschnittliches Alter der Spieler, die tats&auml;chlich gespielt haben.') }}>
+            Alter &#8709;
+          </th>
+        </tr>
         {% for team in dwzData %}
           {# Set additional class values depending on if a team is leading in
       a particular statistic. Leading values are displayed as bold. #}
@@ -88,8 +90,8 @@
           <th class="rating-national">DWZ</th>
           <th class="team">Mannschaft</th>
           <th class="board">Brett</th>
-          <th class="games-count">Partien</th>
-          <th class="points fw-bold">Punkte</th>
+          <th class="games">Partien</th>
+          <th class="points">Punkte</th>
         </tr>
         {% for player in topScorerData.topTenScorers %}
           <tr>
