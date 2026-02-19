@@ -1,8 +1,12 @@
 
 
 
-<script src="/core/js-build/static/js/main.f5ace24b.js" defer></script>
-<link rel="stylesheet" href="/core/ng-build/browser/styles-5INURTSO.css"></head><script defer src="/core/ng-build/browser/polyfills-VFH4IOMS.js" type="module"></script><script defer src="/core/ng-build/browser/main-2YWRGGO2.js" type="module"></script>
+<script src="http://localhost:6460/static/js/bundle.js" defer></script>
+  <link rel="stylesheet" href="http://localhost:4200/styles.css">
+  <script src="http://localhost:4200/polyfills.js" type="module"></script>
+  <script src="http://localhost:4200/main.js" type="module"></script>
+  <!-- For auto-reload -->
+  <script type="module" src="http://localhost:4200/@vite/client"></script>
 
   <h2>Verbandsliga Ost</h2>
 
