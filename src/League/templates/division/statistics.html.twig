@@ -35,7 +35,6 @@
                 einen Score von <strong>{{ intro_text_values.average_white_score }}%</strong>, der Score von Schwarz ist
                 <strong>{{ intro_text_values.average_black_score }}%</strong>.</p>
 
-
             <h4 class="mt-4">DWZ-Statistik</h4>
             {{ table_macro.table(dwz_table, 'statistics-dwz') }}
 
@@ -49,4 +48,5 @@
         {% else %}
         <p>Es wurden nicht genug Partien ausgetragen, um sinnvolle Statistik-Daten anzuzeigen.</p>
     {% endif %}
+
 {% endblock %}
