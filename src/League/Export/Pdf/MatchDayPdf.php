@@ -11,14 +11,11 @@ use Nsv\Util\Pdf\Text;
 
 /**
  * TODO:
- * - Main layout finished
- * - URIs
- * - Adjust header and footer margins
- * - Adjust font size for long names
- * - Fine tune player number width
+ * - Adjust font size for long names (pairings and ranking)
  * - Render a footer
- * - Move into Service directory
- * - Move Service directory out of Api/
+ * - Test in production (pdf-ng)
+ * - URIs
+ * - Fine tune player number width
  * - Add tests
  *   - NSV (5 x 8)
  *   - U12 (6 x 2 x 4)
@@ -31,6 +28,8 @@ use Nsv\Util\Pdf\Text;
  *      - Table too wide
  *      - Comments with new line
  *      - Comments with HTML (ignore)
+ * - Move into Service directory
+ * - Move Service directory out of Api/
  */
 class MatchDayPdf {
   private const SIDEBAR_WIDTH = 60;
