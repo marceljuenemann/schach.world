@@ -609,7 +609,7 @@ class StatisticsService {
     }
     // Sort the teams by their combined score
     uasort($teams_game_scores, function($a, $b) {
-      return [$b['combined_score']] <=> [$a['combined_score']];
+      return [$b['combined_score'], $b['name']] <=> [$a['combined_score'], $a['name']];
     });
 
     return $teams_game_scores;
@@ -1121,7 +1121,8 @@ class StatisticsService {
    */
   public function players_sorted_by_points_and_games($active_players_with_games) {
     uasort($active_players_with_games, function($a, $b) {
-      return [$b['points'], count($a['games'])] <=> [$a['points'], count($b['games'])];
+      return [$b['points'], count($a['games']), $a['boards_played']]
+         <=> [$a['points'], count($b['games']), $b['boards_played']];
     });
     return $active_players_with_games;
   }
