@@ -58,7 +58,7 @@ class DivisionController extends AbstractLeagueController {
     // Check if any games have been played. Some leagues have been
     // created, but no games were ever played and entered into the system.
     if (!empty($service->all_games_division($this->division))
-      && !empty($service->create_topscorer_table($this->division))
+      && !empty($service->calculate_topscorer($this->division))
       && !empty($active_teams_with_players)) {
       $dwzData = $service->teams_dwz_calculation($active_teams_with_players, $this->division);
       $dwzAdditionalData = $service->dwz_statistics_additional_data($active_teams_with_players, $this->division);
