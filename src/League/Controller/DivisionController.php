@@ -45,51 +45,7 @@ class DivisionController extends AbstractLeagueController {
     return $this->debugResponse($matchDays);
   }
 
-  #[Route('{division}/statistik', name: 'statistik')]
-  public function statistics(StatisticsService $service): Response {
-    $division_name = $this->division->name;
-
-    $teams_with_active_players = $service->teams_with_active_players($this->division);
-    $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players, $this->division);
-
-    // Check if any games have been played. Some leagues have been
-    // created, but no games were ever played and entered into the system.
-    if (!empty($service->all_games_division($this->division))
-      && !empty($service->create_topscorer_table($this->division))
-      && !empty($active_teams_with_players)) {
-
-      $dwz_data = $service->create_dwz_statistics_table($this->division);
-      $dwz_table = $dwz_data['table'];
-
-      $topscorer_data = $service->create_topscorer_table($this->division);
-      $topscorer_table = $topscorer_data['table'];
-
-      $team_game_score_data = $service->create_team_game_score_table($this->division);
-      $team_game_score_table = $team_game_score_data['table'];
-
-      $intro_text_values = array_merge($dwz_data['text_values'], $topscorer_data['text_values'], $team_game_score_data['text_values']);
-
-      return $this->renderWithLegacySystem('division/statistics.html.twig',
-        [
-          'division_name' => $division_name,
-          'intro_text_values' => $intro_text_values,
-          'dwz_table' => $dwz_table,
-          'topscorer_table' => $topscorer_table,
-          'team_game_score_table' => $team_game_score_table,
-          'tabs' => $this->divisionTabs('stats')
-        ]);
-    } else {
-      // If no games have been played, just return the Division title.
-      // This relies on "strict_variables: false" in twig.yaml. Else
-      // the template would create errors due to missing content variables.
-      return $this->renderWithLegacySystem('division/statistics.html.twig',
-        [
-          'division_name' => $division_name,
-        ]);
-    }
-  }
-
-  #[Route('{division}/statistik-kuerzer', 'statistik-kuerzer')]
+  #[Route('{division}/statistik', 'statistik')]
   public function statisticsShortened(StatisticsService $service): Response {
 
     $division_name = $this->division->name;
@@ -115,7 +71,7 @@ class DivisionController extends AbstractLeagueController {
       $introTextValues['dwzTextValues'] = $dwzAdditionalData['dwzTextValues'];
 
 
-      return $this->renderWithLegacySystem('division/statistics-shorter.html.twig',
+      return $this->renderWithLegacySystem('division/statistics.html.twig',
         [
           'division_name' => $division_name,
           'introTextValues' => $introTextValues,
