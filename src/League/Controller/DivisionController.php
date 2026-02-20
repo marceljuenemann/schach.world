@@ -89,7 +89,7 @@ class DivisionController extends AbstractLeagueController {
       // If no games have been played, just return the Division title.
       // This relies on "strict_variables: false" in twig.yaml. Else
       // the template would create errors due to missing content variables.
-      return $this->renderWithLegacySystem('statistics-shorter.html.twig',
+      return $this->renderWithLegacySystem('division/statistics.html.twig',
         [
           'division_name' => $division_name,
           'tabs' => $this->divisionTabs('stats')
