@@ -46,7 +46,7 @@ class DivisionController extends AbstractLeagueController {
   }
 
   #[Route('{division}/statistik', 'statistik')]
-  public function statisticsShortened(StatisticsService $service): Response {
+  public function statistics(StatisticsService $service): Response {
 
     $division_name = $this->division->name;
 

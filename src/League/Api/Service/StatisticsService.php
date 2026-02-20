@@ -631,10 +631,7 @@ class StatisticsService {
   }
 
   /**
-   * Extract all calculations that are made in create_dwz_statistics_table(),
-   * since ultimately we want to delete that method.
-   * We don't do that inside teams_dwz_calculation() since we want to touch
-   * the original code as little as possible.
+   * Additional data for the dwz table
    */
   public function dwz_statistics_additional_data($active_teams_with_players, $division): array {
     $dwzData = $this->teams_dwz_calculation($active_teams_with_players, $division);
@@ -746,6 +743,10 @@ class StatisticsService {
 
     return $topscorerData;
   }
+
+  /*
+   * Additional data for the team game score
+   */
 
   public function team_game_score_additional_data($division): array {
     $active_teams_with_parings = $this->active_teams_with_parings($division);

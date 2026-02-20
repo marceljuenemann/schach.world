@@ -34,7 +34,6 @@
         "twig/intl-extra": "^3.7"
     },
     "require-dev": {
-        "ext-curl": "*",
         "dama/doctrine-test-bundle": "^7.2",
         "doctrine/doctrine-fixtures-bundle": "^3.4",
         "phpunit/phpunit": "^12.5",
