@@ -70,7 +70,7 @@
   function SED_TeamLink ( $id )
   {
     global $globals;
-    return "<a href='?mannschaft=$id'>" . $globals ['teams'][$id] . "</a>";
+    return "<a href='?mannschaft=$id'>" . SED_escape($globals ['teams'][$id]) . "</a>";
   }
 
   // Liefert Links zu anderen Saisons

@@ -50,7 +50,7 @@ echo "<h5 class='card-title'>Aufstellungen</h5>";
       <option value="" selected="selected">--- Mannschaft ---</option>
       <?php
         foreach ( $globals ['teams'] as $id=>$name )
-          echo "<option value='$id'>$name</option>";
+          echo "<option value='$id'>" . SED_escape($name) . "</option>";
       ?>
     </select>
   </form>
