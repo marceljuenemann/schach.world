@@ -186,7 +186,7 @@
   //////////////////////////////////////////////////////////////////
 
   // Überschrift und Formularanfang
-  echo "<span class='sed_hl2'>".$g_m1->get("mannschaftsname")." - ".$g_m2->get("mannschaftsname")."</span><br /><br />";
+  echo "<span class='sed_hl2'>".SED_escape($g_m1->get("mannschaftsname"))." - ".SED_escape($g_m2->get("mannschaftsname"))."</span><br /><br />";
   echo "<form action='".SED_GenerateFormAction()."' method='post' name='eingabeform' style='text-align: left'><div>";
 
   // Ergebniseingabe

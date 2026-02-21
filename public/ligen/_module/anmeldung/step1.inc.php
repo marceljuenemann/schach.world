@@ -20,7 +20,7 @@
     {
         echo "<b>M&ouml;chten Sie eine der folgenden Mannschaften anmelden?</b><ul>";
         foreach ( $playerless as $team )
-            echo "<li><a href='".SED_GenerateFormAction()."&changeteam=$team[id]'>$team[name] $team[mnr]</a></li>";
+            echo "<li><a href='".SED_GenerateFormAction()."&changeteam=$team[id]'>".SED_escape($team['name'])." $team[mnr]</a></li>";
         echo "</ul><b>Wenn die Mannschaft nicht dabei war, k&ouml;nnen Sie die Daten im folgenden selbst&auml;ndig eingeben:</b><br /><br />";
     } 
 

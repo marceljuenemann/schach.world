@@ -133,7 +133,7 @@
         // Mannschaften auflisten
           foreach ( $res as $team )
           {
-            echo "<tr><td>".$globals['teams'][$team['id']]."&nbsp;&nbsp;</td><td>
+            echo "<tr><td>".SED_escape($globals['teams'][$team['id']])."&nbsp;&nbsp;</td><td>
                     <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spieler.png' alt='Spieler' class='sed_admin_icon' />Spieler</a>
                     <a style='text-decoration: none' href='m/$team[id]/'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Bearbeiten' class='sed_admin_icon' />Bearbeiten</a>
                     <a style='text-decoration: none' href='?admin=turnmalo-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_loeschen.png' alt='' class='sed_admin_icon' />L&ouml;schen</a>
