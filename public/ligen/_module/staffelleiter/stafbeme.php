@@ -74,9 +74,9 @@
             echo "<br /><br /><span class='sed_hl2'>Bemerkungen zu einzelnen Spielen:</span><br /><br />";
             foreach ( $spiele [$r] as $spiel ){
                 echo "<b>";
-                echo $globals ['teams'][$spiel['mannschaft1']];
+                echo SED_escape($globals ['teams'][$spiel['mannschaft1']]);
                 echo " - ";
-                echo $globals ['teams'][$spiel['mannschaft2']];
+                echo SED_escape($globals ['teams'][$spiel['mannschaft2']]);
                 echo "</b> <a style='text-decoration:none' href='?admin=alleeing-$admin[userid]-$admin[session]&pid=$spiel[id]#zusatz'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Bemerkung bearbeiten' class='sed_admin_icon' />Bearbeiten</a><br />";
                 if ( $spiel ['bemerkung'] )
                     echo "<i>$spiel[bemerkung]</i><br /><br />";
