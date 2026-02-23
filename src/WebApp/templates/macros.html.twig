@@ -49,7 +49,7 @@
 
 {% macro tooltip_top(title) %}
   {# Using the raw filter to convert Umlauts is only temporary for the refactoring of statistics #}
-  data-bs-toggle="tooltip" data-bs-placement="top" title="{{ title|raw }}"
+  data-bs-toggle="tooltip" data-bs-placement="top" title="{{ title|utf8_to_iso }}"
 {% endmacro %}
 
 {# Initializes tooltips. Should only be called from template footers. #}
