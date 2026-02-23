@@ -64,7 +64,7 @@
         <tr>
           <th class="team">Mannschaft</th>
           <th
-            class="active"     data-bs-toggle="tooltip" data-bs-placement="top" title="DWZ Durchschnitt der Spieler, die tats&auml;chlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet."
+            class="active"     data-bs-toggle="tooltip" data-bs-placement="top" title="DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet."
 >
             Eingesetzte
           </th>
@@ -78,7 +78,7 @@
             Alle Spieler
           </th>
           <th
-            class="age"     data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliches Alter der Spieler, die tats&auml;chlich gespielt haben."
+            class="age"     data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben."
 >
             Alter &#8709;
           </th>
@@ -311,7 +311,7 @@
             0
           </th>
           <th
-            class="white-score"     data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Wei&szlig;"
+            class="white-score"     data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Wei&amp;szlig;"
 >
             W
           </th>
