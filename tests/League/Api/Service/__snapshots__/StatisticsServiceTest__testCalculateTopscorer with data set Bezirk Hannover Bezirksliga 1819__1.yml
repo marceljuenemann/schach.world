@@ -1,0 +1,17 @@
+topTenScorers:
+    489039: { player: { guest: false }, points: 7.0, draws: 2, boards_played: 1, games: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }], games_count: 8 }
+    491792: { player: { guest: false }, points: 7.0, draws: 2, boards_played: 6-8, games: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }], games_count: 9 }
+    491304: { player: { guest: false }, points: 6.5, draws: 5, boards_played: 1-2, games: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }], games_count: 9 }
+    492796: { player: { guest: false }, points: 6.5, draws: 5, boards_played: 5-7, games: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }], games_count: 9 }
+    491790: { player: { guest: false }, points: 6.0, draws: 2, boards_played: 5-6, games: [{  }, {  }, {  }, {  }, {  }, {  }, {  }], games_count: 7 }
+    491321: { player: { guest: false }, points: 6.0, draws: 4, boards_played: 2-4, games: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }], games_count: 8 }
+    492470: { player: { guest: false }, points: 6.0, draws: 4, boards_played: 2-4, games: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }], games_count: 9 }
+    493441: { player: { guest: false }, points: 5.5, draws: 3, boards_played: 3-5, games: [{  }, {  }, {  }, {  }, {  }, {  }, {  }], games_count: 7 }
+    492794: { player: { guest: false }, points: 5.5, draws: 1, boards_played: 4-5, games: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }], games_count: 8 }
+    492792: { player: { guest: false }, points: 5.5, draws: 7, boards_played: 2-3, games: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }], games_count: 9 }
+text_values:
+    text_top_scorers: [{ player_name: 'Player 1eb7, 3731af5', player_uri: /ligen/bezirk1-1819/s/489039/, team_name: 'SVg Steinhude', team_uri: /ligen/bezirk1-1819/m/5544/ }]
+    text_draw_kings: [{ player_name: 'Player f245, ef98f54', player_uri: /ligen/bezirk1-1819/s/491788/, team_name: 'SV FB Wedemark', team_uri: /ligen/bezirk1-1819/m/5671/ }]
+    highest_point_score: 7.0
+    lowest_game_score: 8
+    highest_draw_score: 8
