@@ -1,0 +1,505 @@
+
+
+
+<script src="http://localhost:6460/static/js/bundle.js" defer></script>
+  <link rel="stylesheet" href="http://localhost:4200/styles.css">
+  <script src="http://localhost:4200/polyfills.js" type="module"></script>
+  <script src="http://localhost:4200/main.js" type="module"></script>
+  <!-- For auto-reload -->
+  <script type="module" src="http://localhost:4200/@vite/client"></script>
+
+  <h2>BMM U12</h2>
+
+
+    <ul class="nav nav-tabs mt-4 mb-4 d-print-none">
+          <li class='nav-item'>
+        <a class='nav-link  '
+                    href='/ligen/sjbh-2324/bmm-u12/'
+        >
+          Spieltage
+        </a>
+              </li>
+          <li class='nav-item'>
+        <a class='nav-link  '
+                    href='/ligen/sjbh-2324/bmm-u12/spielplan/'
+        >
+          Spielplan
+        </a>
+              </li>
+          <li class='nav-item'>
+        <a class='nav-link active '
+                    href='/ligen/sjbh-2324/bmm-u12/statistik/'
+        >
+          Statistik
+        </a>
+              </li>
+      </ul>
+
+
+      <div class="statistics-container">
+      <p>Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine <strong>DWZ
+          von 866</strong> und ist
+        <strong>43</strong> Jahre alt.</p>
+
+      <p>Der Top-Scorer mit 8.5 Punkten aus 9 Partien ist:
+                                <a href="/ligen/sjbh-2324/s/527961/">Player 45e9, a4900e2</a> (<a href="/ligen/sjbh-2324/m/7709/">SK Lehrte 2</a>).<br>
+
+                  Der Remisk&ouml;nig mit 2 Remis ist
+                                    <a href="/ligen/sjbh-2324/s/525351/">Player 0e47, a606bfe</a> (<a href="/ligen/sjbh-2324/m/7552/">SK Lehrte</a>).
+              </p>
+
+      <p>34 Spiele wurden kampflos verloren gegeben, das
+        sind
+        <strong>13%</strong>. Von
+        den 230 wirklich gespielten Partien sind
+        <strong>3%</strong> Remis ausgegangen. Die Wei&szlig;spieler
+        haben
+        einen Score von <strong>51%</strong>, der Score
+        von Schwarz ist
+        <strong>49%</strong>.</p>
+
+
+      <h4 class="mt-4">DWZ-Statistik</h4>
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-dwz">
+        <tr>
+          <th class="team">Mannschaft</th>
+          <th
+            class="active"     data-bs-toggle="tooltip" data-bs-placement="top" title="DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet."
+>
+            Eingesetzte
+          </th>
+          <th
+            class="top"     data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet."
+>
+            Top 4</th>
+          <th
+            class="all"     data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet."
+>
+            Alle Spieler
+          </th>
+          <th
+            class="age"     data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben."
+>
+            Alter &#8709;
+          </th>
+        </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7708/">Hannover 96</a>
+            </td>
+            <td class="active-dwz fw-bold">1035</td>
+            <td class="top-dwz fw-bold">1282</td>
+            <td class="all-dwz fw-bold">1139</td>
+            <td class="age">47</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7735/">SZ Bemerode</a>
+            </td>
+            <td class="active-dwz">1030</td>
+            <td class="top-dwz">1191</td>
+            <td class="all-dwz">1133</td>
+            <td class="age">45</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7736/">SZ Bemerode 2</a>
+            </td>
+            <td class="active-dwz">1025</td>
+            <td class="top-dwz">1274</td>
+            <td class="all-dwz">913</td>
+            <td class="age">36</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7552/">SK Lehrte</a>
+            </td>
+            <td class="active-dwz">1004</td>
+            <td class="top-dwz">1092</td>
+            <td class="all-dwz">1092</td>
+            <td class="age">44</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7704/">SD Isernhagen</a>
+            </td>
+            <td class="active-dwz">934</td>
+            <td class="top-dwz">1054</td>
+            <td class="all-dwz">1054</td>
+            <td class="age">25</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7541/">HSK Lister Turm</a>
+            </td>
+            <td class="active-dwz">875</td>
+            <td class="top-dwz">956</td>
+            <td class="all-dwz">956</td>
+            <td class="age">49</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7709/">SK Lehrte 2</a>
+            </td>
+            <td class="active-dwz">833</td>
+            <td class="top-dwz">898</td>
+            <td class="all-dwz">793</td>
+            <td class="age">50</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7550/">HSK Lister Turm 2</a>
+            </td>
+            <td class="active-dwz">763</td>
+            <td class="top-dwz">804</td>
+            <td class="all-dwz">740</td>
+            <td class="age">33</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7705/">SD Isernhagen 2</a>
+            </td>
+            <td class="active-dwz">743</td>
+            <td class="top-dwz">736</td>
+            <td class="all-dwz">734</td>
+            <td class="age">46</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7720/">Hannover 96 2</a>
+            </td>
+            <td class="active-dwz">723</td>
+            <td class="top-dwz">865</td>
+            <td class="all-dwz">751</td>
+            <td class="age">40</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7724/">SV Bückeburg 2</a>
+            </td>
+            <td class="active-dwz">718</td>
+            <td class="top-dwz">724</td>
+            <td class="all-dwz">706</td>
+            <td class="age">48</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7723/">SV Bückeburg</a>
+            </td>
+            <td class="active-dwz">714</td>
+            <td class="top-dwz">715</td>
+            <td class="all-dwz">715</td>
+            <td class="age fw-bold">52</td>
+          </tr>
+                <tr>
+          <td class="average-active fw-bold">Durchschnitt:</td>
+          <td class="average-active fw-bold">866</td>
+          <td class="average-top fw-bold">966</td>
+          <td class="average-all fw-bold">894</td>
+          <td class="average-age fw-bold">43</td>
+        </tr>
+      </table>
+      <h4 class="mt-4">Topscorer</h4>
+
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-topscorer">
+        <tr>
+          <th class="name">Name</th>
+          <th class="rating-national">DWZ</th>
+          <th class="team">Mannschaft</th>
+          <th class="board">Brett</th>
+          <th class="games">Partien</th>
+          <th class="points">Punkte</th>
+        </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/s/527961/">Player 45e9, a4900e2</a></td>
+            <td class="dwz">856</td>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7709/">SK Lehrte 2</a></td>
+            <td class="board">2-4</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">8.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/s/528382/">Player 42cd, fd9020f</a></td>
+            <td class="dwz">1109</td>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7735/">SZ Bemerode</a></td>
+            <td class="board">1-2</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">8</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/s/528387/">Player ac99, 9079f53</a></td>
+            <td class="dwz">1029</td>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7736/">SZ Bemerode 2</a></td>
+            <td class="board">1-3</td>
+            <td class="games-count">8</td>
+            <td class="points fw-bold">7.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/s/527764/">Player 4e8a, 86d1f77</a></td>
+            <td class="dwz">1107</td>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7704/">SD Isernhagen</a></td>
+            <td class="board">1-2</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">7.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/s/528388/">Player 8a9a, 11ff9b0</a></td>
+            <td class="dwz">943</td>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7736/">SZ Bemerode 2</a></td>
+            <td class="board">2-4</td>
+            <td class="games-count">8</td>
+            <td class="points fw-bold">7</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/s/528136/">Player 8ad0, 98f6a67</a></td>
+            <td class="dwz">1095</td>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7720/">Hannover 96 2</a></td>
+            <td class="board">2-3</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">7</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/s/529471/">Player ea64, f4ff5ac</a></td>
+            <td class="dwz">773</td>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7550/">HSK Lister Turm 2</a></td>
+            <td class="board">3-4</td>
+            <td class="games-count">8</td>
+            <td class="points fw-bold">6.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/s/528391/">Player 6287, 4bf4319</a></td>
+            <td class="dwz">0</td>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7736/">SZ Bemerode 2</a></td>
+            <td class="board">3-4</td>
+            <td class="games-count">7</td>
+            <td class="points fw-bold">6</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/s/525351/">Player 0e47, a606bfe</a></td>
+            <td class="dwz">978</td>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7552/">SK Lehrte</a></td>
+            <td class="board">2-3</td>
+            <td class="games-count">8</td>
+            <td class="points fw-bold">6</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/s/527960/">Player 6109, 952fd8d</a></td>
+            <td class="dwz">966</td>
+            <td class="team"><a href="/ligen/sjbh-2324/m/7709/">SK Lehrte 2</a></td>
+            <td class="board">1-3</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">6</td>
+          </tr>
+              </table>
+
+
+      <h4 class="mt-4">Spiel-Statistik</h4>
+
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-games">
+        <tr>
+          <th class="team">Mannschaft</th>
+          <th
+            class="game-all-count border-left-bold"     data-bs-toggle="tooltip" data-bs-placement="top" title="Wie viele Partien hat die Mannschaft bislang gespielt?"
+>
+            &sum;
+          </th>
+          <th
+            class="forfeit-wins"     data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Siege"
+>
+            +
+          </th>
+          <th
+            class="forfeit-losses border-right-bold"     data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Niederlagen"
+>
+            -
+          </th>
+          <th
+            class="wins"     data-bs-toggle="tooltip" data-bs-placement="top" title="Siege aus den wirklich gespielten Partien"
+>
+            1
+          </th>
+          <th
+            class="draws"     data-bs-toggle="tooltip" data-bs-placement="top" title="Remis"
+>
+            &frac12;
+          </th>
+          <th
+            class="losses border-right-bold"     data-bs-toggle="tooltip" data-bs-placement="top" title="Niederlagen"
+>
+            0
+          </th>
+          <th
+            class="white-score"     data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Weiß"
+>
+            W
+          </th>
+          <th
+            class="black-score"     data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Schwarz"
+>
+            S
+          </th>
+        </tr>
+
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7735/">SZ Bemerode</a></td>
+            <td class="game-all-count border-left-bold">39</td>
+            <td class="forfeit-wins">5</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">87%</td>
+            <td class="draws">3%</td>
+            <td class="losses border-right-bold">10%</td>
+            <td class="white-score">93%</td>
+            <td class="black-score">84%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7736/">SZ Bemerode 2</a></td>
+            <td class="game-all-count border-left-bold">39</td>
+            <td class="forfeit-wins">5</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">72%</td>
+            <td class="draws">8%</td>
+            <td class="losses border-right-bold">21%</td>
+            <td class="white-score">87%</td>
+            <td class="black-score">65%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7708/">Hannover 96</a></td>
+            <td class="game-all-count border-left-bold">36</td>
+            <td class="forfeit-wins">0</td>
+            <td class="forfeit-losses border-right-bold">8</td>
+            <td class="wins">67%</td>
+            <td class="draws">3%</td>
+            <td class="losses border-right-bold">31%</td>
+            <td class="white-score">69%</td>
+            <td class="black-score">67%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7552/">SK Lehrte</a></td>
+            <td class="game-all-count border-left-bold">42</td>
+            <td class="forfeit-wins">2</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">60%</td>
+            <td class="draws">10%</td>
+            <td class="losses border-right-bold">31%</td>
+            <td class="white-score">60%</td>
+            <td class="black-score">68%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7704/">SD Isernhagen</a></td>
+            <td class="game-all-count border-left-bold">35</td>
+            <td class="forfeit-wins">1</td>
+            <td class="forfeit-losses border-right-bold">8</td>
+            <td class="wins">51%</td>
+            <td class="draws">3%</td>
+            <td class="losses border-right-bold">46%</td>
+            <td class="white-score">61%</td>
+            <td class="black-score">44%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7709/">SK Lehrte 2</a></td>
+            <td class="game-all-count border-left-bold">42</td>
+            <td class="forfeit-wins">1</td>
+            <td class="forfeit-losses border-right-bold">1</td>
+            <td class="wins">52%</td>
+            <td class="draws">0%</td>
+            <td class="losses border-right-bold">48%</td>
+            <td class="white-score">64%</td>
+            <td class="black-score">40%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7723/">SV Bückeburg</a></td>
+            <td class="game-all-count border-left-bold">35</td>
+            <td class="forfeit-wins">9</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">43%</td>
+            <td class="draws">3%</td>
+            <td class="losses border-right-bold">54%</td>
+            <td class="white-score">42%</td>
+            <td class="black-score">47%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7541/">HSK Lister Turm</a></td>
+            <td class="game-all-count border-left-bold">43</td>
+            <td class="forfeit-wins">1</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">37%</td>
+            <td class="draws">7%</td>
+            <td class="losses border-right-bold">56%</td>
+            <td class="white-score">43%</td>
+            <td class="black-score">39%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7724/">SV Bückeburg 2</a></td>
+            <td class="game-all-count border-left-bold">35</td>
+            <td class="forfeit-wins">9</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">31%</td>
+            <td class="draws">0%</td>
+            <td class="losses border-right-bold">69%</td>
+            <td class="white-score">24%</td>
+            <td class="black-score">39%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7550/">HSK Lister Turm 2</a></td>
+            <td class="game-all-count border-left-bold">43</td>
+            <td class="forfeit-wins">1</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">26%</td>
+            <td class="draws">2%</td>
+            <td class="losses border-right-bold">72%</td>
+            <td class="white-score">23%</td>
+            <td class="black-score">31%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7720/">Hannover 96 2</a></td>
+            <td class="game-all-count border-left-bold">36</td>
+            <td class="forfeit-wins">0</td>
+            <td class="forfeit-losses border-right-bold">8</td>
+            <td class="wins">25%</td>
+            <td class="draws">3%</td>
+            <td class="losses border-right-bold">72%</td>
+            <td class="white-score">28%</td>
+            <td class="black-score">25%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/sjbh-2324/m/7705/">SD Isernhagen 2</a></td>
+            <td class="game-all-count border-left-bold">35</td>
+            <td class="forfeit-wins">0</td>
+            <td class="forfeit-losses border-right-bold">9</td>
+            <td class="wins">26%</td>
+            <td class="draws">0%</td>
+            <td class="losses border-right-bold">74%</td>
+            <td class="white-score">12%</td>
+            <td class="black-score">39%</td>
+          </tr>
+                <tr>
+          <td class="name fw-bold">Summe:</td>
+          <td
+            class="game-all-count border-left-bold fw-bold">264</td>
+          <td class="forfeit-wins fw-bold">34</td>
+          <td
+            class="forfeit-losses border-right-bold fw-bold">34</td>
+          <td class="wins fw-bold">48%</td>
+          <td class="draws fw-bold">3%</td>
+          <td class="losses border-right-bold fw-bold">49
+            %
+          </td>
+          <td class="white-score fw-bold">51%</td>
+          <td class="black-score fw-bold">49%</td>
+        </tr>
+
+      </table>
+
+
+    </div>
+  
+
+
+  <script type="text/javascript">
+    $(function () {
+      $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+
+
