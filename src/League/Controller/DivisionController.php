@@ -50,20 +50,20 @@ class DivisionController extends AbstractLeagueController {
 
     $division_name = $this->division->name;
 
+    $all_games_division = $service->all_games_division($this->division);
     $teams_with_active_players = $service->teams_with_active_players($this->division);
     $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players, $this->division);
     $active_teams_with_parings = $service->active_teams_with_parings($this->division);
+    $topscorer_data = $service->calculate_topscorer($this->division);
     $dwzData = [];
 
     // Check if any games have been played. Some leagues have been
     // created, but no games were ever played and entered into the system.
-    if (!empty($service->all_games_division($this->division))
-      && !empty($service->calculate_topscorer($this->division))
+    if (!empty($all_games_division)
+      && !empty($topscorer_data)
       && !empty($active_teams_with_players)) {
       $dwzData = $service->teams_dwz_calculation($active_teams_with_players, $this->division);
       $dwzAdditionalData = $service->dwz_statistics_additional_data($active_teams_with_players, $this->division);
-
-      $topScorerData = $service->calculate_topscorer($this->division);
 
       $teamGameScoreData = $service->team_game_score_data($active_teams_with_parings);
       $teamGameScoreAdditionalData = $service->team_game_score_additional_data($this->division);
@@ -77,7 +77,7 @@ class DivisionController extends AbstractLeagueController {
           'introTextValues' => $introTextValues,
           'dwzData' => $dwzData,
           'dwzAdditionalData' => $dwzAdditionalData,
-          'topScorerData' => $topScorerData,
+          'topScorerData' => $topscorer_data,
           'teamGameScoreData' => $teamGameScoreData,
           'teamGameScoreAdditionalData' => $teamGameScoreAdditionalData,
           'tabs' => $this->divisionTabs('stats')
