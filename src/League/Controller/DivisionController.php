@@ -53,13 +53,12 @@ class DivisionController extends AbstractLeagueController {
     $teams_with_active_players = $service->teams_with_active_players($this->division);
     $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players, $this->division);
     $active_teams_with_parings = $service->active_teams_with_parings($this->division);
-    $calculate_topscorer = $service->calculate_topscorer($this->division);
     $dwzData = [];
 
     // Check if any games have been played. Some leagues have been
     // created, but no games were ever played and entered into the system.
     if (!empty($service->all_games_division($this->division))
-      && !empty($calculate_topscorer)
+      && !empty($service->calculate_topscorer($this->division))
       && !empty($active_teams_with_players)) {
       $dwzData = $service->teams_dwz_calculation($active_teams_with_players, $this->division);
       $dwzAdditionalData = $service->dwz_statistics_additional_data($active_teams_with_players, $this->division);
@@ -76,7 +75,7 @@ class DivisionController extends AbstractLeagueController {
           'introTextValues' => $introTextValues,
           'dwzData' => $dwzData,
           'dwzAdditionalData' => $dwzAdditionalData,
-          'topScorerData' => $calculate_topscorer,
+          'topScorerData' => $service->calculate_topscorer($this->division),
           'teamGameScoreData' => $teamGameScoreData,
           'teamGameScoreAdditionalData' => $teamGameScoreAdditionalData,
           'tabs' => $this->divisionTabs('stats')
