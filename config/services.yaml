@@ -44,7 +44,7 @@ services:
     Nsv\League\Core\LeagueAuthState:
         factory: ['@Nsv\League\Core\LeagueAuthProvider', 'authState']
     Nsv\League\Twig\:
-      resource: '../src/League/Twig/'
+        resource: '../src/League/Twig/'
 
     # Registration services
     Nsv\Registration\Controller\:
