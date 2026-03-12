@@ -688,58 +688,61 @@ class StatisticsService {
 
     $topscorerData = [];
 
-    // find the topscorer(s) and the draw king(s)
-    $first_player = reset($top_ten_scorers);
-    $highest_points_score = $first_player['points'];
-    // The lowest game score of the players with the most points
-    $lowest_game_score = count($first_player['games']);
-    $top_scorers = [];
+    // Only do calculations if matches/games have been played.
+    if(!empty($active_players_with_games)) {
+      // find the topscorer(s) and the draw king(s)
+      $first_player = reset($top_ten_scorers);
+      $highest_points_score = $first_player['points'];
+      // The lowest game score of the players with the most points
+      $lowest_game_score = count($first_player['games']);
+      $top_scorers = [];
 
 
-    foreach ($top_ten_scorers as $key => &$player) {
-      $games_count = count($player['games']);
-      $player['games_count'] = $games_count;
-      // Collect the top scorers
-      if ($player['points'] == $highest_points_score && $games_count == $lowest_game_score) {
-        $top_scorers[] = $player;
+      foreach ($top_ten_scorers as $key => &$player) {
+        $games_count = count($player['games']);
+        $player['games_count'] = $games_count;
+        // Collect the top scorers
+        if ($player['points'] == $highest_points_score && $games_count == $lowest_game_score) {
+          $top_scorers[] = $player;
+        }
       }
-    }
 
-    $topscorerData['topTenScorers'] = $top_ten_scorers;
+      $topscorerData['topTenScorers'] = $top_ten_scorers;
 
-    // Create the text values for the top scorers
-    $text_top_scorers = [];
-    foreach ($top_scorers as $key => $scorer) {
-      $text_top_scorers[$key]['player_name'] = $scorer['player']->name();
-      $text_top_scorers[$key]['player_uri'] = $scorer['player']->uri();
-      $text_top_scorers[$key]['team_name'] = $scorer['player']->team->nameWithNumber();
-      $text_top_scorers[$key]['team_uri'] = $scorer['player']->team->uri();
-    }
-
-    // Collect the draw kings
-    $first_drawer = reset($top_ten_drawers);
-    $highest_draw_score = $first_drawer['draws'];
-    $draw_kings = [];
-
-    foreach ($top_ten_drawers as $drawer) {
-      if ($drawer['draws'] == $highest_draw_score) {
-        $draw_kings[] = $drawer;
+      // Create the text values for the top scorers
+      $text_top_scorers = [];
+      foreach ($top_scorers as $key => $scorer) {
+        $text_top_scorers[$key]['player_name'] = $scorer['player']->name();
+        $text_top_scorers[$key]['player_uri'] = $scorer['player']->uri();
+        $text_top_scorers[$key]['team_name'] = $scorer['player']->team->nameWithNumber();
+        $text_top_scorers[$key]['team_uri'] = $scorer['player']->team->uri();
       }
-    }
-    // Create the text values for the top drawers
-    $text_draw_kings = [];
-    foreach ($draw_kings as $key => $drawer) {
-      $text_draw_kings[$key]['player_name'] = $drawer['player']->name();
-      $text_draw_kings[$key]['player_uri'] = $drawer['player']->uri();
-      $text_draw_kings[$key]['team_name'] = $drawer['player']->team->nameWithNumber();
-      $text_draw_kings[$key]['team_uri'] = $drawer['player']->team->uri();
-    }
 
-    $topscorerData['text_values']['text_top_scorers'] = $text_top_scorers;
-    $topscorerData['text_values']['text_draw_kings'] = $text_draw_kings;
-    $topscorerData['text_values']['highest_point_score'] = $highest_points_score;
-    $topscorerData['text_values']['lowest_game_score'] = $lowest_game_score;
-    $topscorerData['text_values']['highest_draw_score'] = $highest_draw_score;
+      // Collect the draw kings
+      $first_drawer = reset($top_ten_drawers);
+      $highest_draw_score = $first_drawer['draws'];
+      $draw_kings = [];
+
+      foreach ($top_ten_drawers as $drawer) {
+        if ($drawer['draws'] == $highest_draw_score) {
+          $draw_kings[] = $drawer;
+        }
+      }
+      // Create the text values for the top drawers
+      $text_draw_kings = [];
+      foreach ($draw_kings as $key => $drawer) {
+        $text_draw_kings[$key]['player_name'] = $drawer['player']->name();
+        $text_draw_kings[$key]['player_uri'] = $drawer['player']->uri();
+        $text_draw_kings[$key]['team_name'] = $drawer['player']->team->nameWithNumber();
+        $text_draw_kings[$key]['team_uri'] = $drawer['player']->team->uri();
+      }
+
+      $topscorerData['text_values']['text_top_scorers'] = $text_top_scorers;
+      $topscorerData['text_values']['text_draw_kings'] = $text_draw_kings;
+      $topscorerData['text_values']['highest_point_score'] = $highest_points_score;
+      $topscorerData['text_values']['lowest_game_score'] = $lowest_game_score;
+      $topscorerData['text_values']['highest_draw_score'] = $highest_draw_score;
+    }
 
     return $topscorerData;
   }
