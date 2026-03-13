@@ -18,6 +18,14 @@ class StatisticsServiceTest extends LeagueTestCase {
     $this->statisticsService = $this->container->get(StatisticsService::class);
   }
 
+  public static function divisionDataProvider(): \Generator {
+    yield 'Bezirk Hannover Kreisliga Ost 17/18' => ['bezirk1-1718', 'kreisliga-ost'];
+    yield 'Bezirk Hannover Bezirksliga 18/19' => ['bezirk1-1819', 'bezirksliga'];
+    yield 'Bezirk 3 Bezirksklasse 21/22' => ['bezirk3-2122', 'bezirksklasse'];
+    yield 'Landesliga Süd 21/22' => ['nsv-2122', 'landesliga-sued'];
+    yield 'Verbandsliga Nord 22/23' => ['nsv-2223', 'verbandsliga-nord'];
+  }
+
   /**
    * Snapshot-Test for first data method for the 'DWZ-Statistik' table.
    * Testing regular divisions with no special cases.
@@ -78,12 +86,42 @@ class StatisticsServiceTest extends LeagueTestCase {
     $this->assertMatchesSnapshot($teamGameScoreAdditionalData);
   }
 
-  public static function divisionDataProvider(): \Generator {
-    yield 'Bezirk Hannover Kreisliga Ost 17/18' => ['bezirk1-1718', 'kreisliga-ost'];
-    yield 'Bezirk Hannover Bezirksliga 18/19' => ['bezirk1-1819', 'bezirksliga'];
-    yield 'Bezirk 3 Bezirksklasse 21/22' => ['bezirk3-2122', 'bezirksklasse'];
-    yield 'Landesliga Süd 21/22' => ['nsv-2122', 'landesliga-sued'];
-    yield 'Verbandsliga Nord 22/23' => ['nsv-2223', 'verbandsliga-nord'];
+  /**
+   * No matches have been played.
+   * calculate_topscorer() should return an empty array.
+   */
+  public function testNoMatches(): void {
+    $division = $this->division('sjbh-2021', 'bmm-u14');
+    self::assertEquals([], $this->statisticsService->calculate_topscorer($division));
+  }
+
+  /**
+   * There is only one Topscorer
+   * /ligen/bezirk1-1718/kreisliga-ost/statistik
+   */
+  public function testOneTopScorer(): void {
+
+  }
+
+  /**
+   * /ligen/nsv-2223/landesliga-nord/statistik
+   */
+  public function testMultipleTopScorers(): void {
+
+  }
+
+  /**
+   * /ligen/bezirk3-2122/bezirksklasse/statistik
+   */
+  public function testOneDrawKing(): void {
+
+  }
+
+  /**
+   * /ligen/nsv-2122/landesliga-sued/statistik
+   */
+  public function testMultipleDrawKings(): void {
+
   }
 
   private function division(string $leaguePath, string $divisionPath): Division {
