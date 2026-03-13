@@ -97,30 +97,47 @@ class StatisticsServiceTest extends LeagueTestCase {
 
   /**
    * There is only one Topscorer
-   * /ligen/bezirk1-1718/kreisliga-ost/statistik
    */
   public function testOneTopScorer(): void {
+    $division = $this->division('bezirk1-1718', 'kreisliga-ost');
+    $topscorerData = $this->statisticsService->calculate_topscorer($division);
+    $countTopScorers = count($topscorerData['text_values']['text_top_scorers']);
 
+    self::assertEquals(1, $countTopScorers);
   }
 
   /**
-   * /ligen/nsv-2223/landesliga-nord/statistik
+   * There are multiple Topscorers
    */
   public function testMultipleTopScorers(): void {
+    $division = $this->division('nsv-2223', 'landesliga-nord');
+    $topscorerData = $this->statisticsService->calculate_topscorer($division);
+    $countTopScorers = count($topscorerData['text_values']['text_top_scorers']);
 
+    self::assertGreaterThan(1, $countTopScorers);
   }
 
   /**
-   * /ligen/bezirk3-2122/bezirksklasse/statistik
+   * There is only one Draw King
    */
   public function testOneDrawKing(): void {
+    $division = $this->division('bezirk3-2122', 'bezirksklasse');
+    $topscorerData = $this->statisticsService->calculate_topscorer($division);
+    $countDrawKings = count($topscorerData['text_values']['text_draw_kings']);
+
+    self::assertEquals(1, $countDrawKings);
 
   }
 
   /**
-   * /ligen/nsv-2122/landesliga-sued/statistik
+   * There are multiple Draw Kings
    */
   public function testMultipleDrawKings(): void {
+    $division = $this->division('nsv-2122', 'landesliga-sued');
+    $topscorerData = $this->statisticsService->calculate_topscorer($division);
+    $countDrawKings = count($topscorerData['text_values']['text_draw_kings']);
+
+    self::assertGreaterThan(1, $countDrawKings);
 
   }
 
