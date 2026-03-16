@@ -138,7 +138,85 @@ class StatisticsServiceTest extends LeagueTestCase {
     $countDrawKings = count($topscorerData['text_values']['text_draw_kings']);
 
     self::assertGreaterThan(1, $countDrawKings);
+  }
 
+  /**
+   * A team has had many forfeit games.
+   */
+  public function testTeamManyForfeitWins(): void {
+    $division = $this->division('nsv-2223', 'verbandsliga-nord');
+    $topscorerData = $this->statisticsService->team_game_score_data($this->statisticsService->active_teams_with_parings($division));
+    $forfeitWinsCount = $topscorerData['7197']['forfeit_wins'];
+    self::assertEquals(12, $forfeitWinsCount);
+    $ulli = 'hulu';
+    //https://nsv-online.local/ligen/nsv-2223/verbandsliga-nord/statistik
+    // Post SV Uelzen 2 12mal kampflos
+  }
+
+  /**
+   * A team has had many forfeit games.
+   */
+  public function testTeamManyForfeitLosses(): void {
+    $division = $this->division('nsv-2223', 'verbandsliga-nord');
+    $topscorerData = $this->statisticsService->team_game_score_data($this->statisticsService->active_teams_with_parings($division));
+    $forfeitLossesCount = $topscorerData['7116']['forfeit_losses'];
+    self::assertEquals(10, $forfeitLossesCount);
+    $ulli = 'hulu';
+    //https://nsv-online.local/ligen/nsv-2223/verbandsliga-nord/statistik
+    // Post SV Uelzen 2 12mal kampflos
+  }
+
+  /**
+   * A player has had multiple forfeit games.
+   */
+  public function testPlayerMultipleforfeitGames(): void {
+    $division = $this->division('nsv-2223', 'verbandsliga-nord');
+    // https://nsv-online.local/ligen/nsv-2223/s/518285/
+    // https://nsv-online.local/ligen/nsv-2223/verbandsliga-nord/
+    // Player Player 9a9a, 81d5fb5 2mal kampflos gewonnen
+  }
+
+  /**
+   * A team has a low average age.
+   */
+  public function testTeamLowAverageAge(): void {
+    $division = $this->division('nsv-2223', 'landesliga-nord');
+    // https://nsv-online.local/ligen/nsv-2223/m/7177/
+    // https://nsv-online.local/ligen/nsv-2223/landesliga-nord/statistik
+    // SK Kirchweyhe 2 niedriges Durchschnittsalter 35 Jahre
+
+  }
+
+  /**
+   * A team has a high average age.
+   */
+  public function testTeamHighAverageAge(): void {
+    $division = $this->division('bezirk1-2324', 'kreisliga-ost');
+    //https://nsv-online.local/ligen/bezirk1-2324/m/7534/
+    // https://nsv-online.local/ligen/bezirk1-2324/kreisliga-ost/statistik
+    // SK Anderten 2 hohes Durchschnitsalter 55 Jahre
+  }
+
+  /**
+   * A team has a high win percentage.
+   */
+  public function testTeamHighWinPercentage(): void {
+    $division = $this->division('bezirk1-2223', 'kreisliga-ost');
+    //https://nsv-online.local/ligen/bezirk1-2223/m/7198/
+    //https://nsv-online.local/ligen/bezirk1-2223/kreisliga-ost/statistik
+    // SZ Bemerode hohe Siegquote mit Weiß 79%, mit Schwarz 74%
+
+  }
+
+  /**
+   * A team has a low win percentage.
+   */
+  public function testTeamLowWinPercentage(): void {
+    $division = $this->division('bezirk1-2223', 'kreisliga-ost');
+    //https://nsv-online.local/ligen/bezirk1-2223/m/7163/
+    // https://nsv-online.local/ligen/bezirk1-2223/kreisliga-ost/statistik
+
+    // SV FB Wedemark 2 niedrige Siegquote Weiß 41%, Schwarz 31%
   }
 
   private function division(string $leaguePath, string $divisionPath): Division {
