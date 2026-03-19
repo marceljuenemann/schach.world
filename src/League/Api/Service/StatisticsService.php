@@ -91,11 +91,11 @@ class StatisticsService {
     $teams_already_added_ids = [];
     $teams_by_division = [];
     foreach ($all_pairings_division as $pairing) {
-      if(!in_array($pairing->team1->id, $teams_already_added_ids)) {
+      if (!in_array($pairing->team1->id, $teams_already_added_ids)) {
         $teams_by_division[] = $pairing->team1;
         $teams_already_added_ids[] = $pairing->team1->id;
       }
-      if(!in_array($pairing->team2->id, $teams_already_added_ids)) {
+      if (!in_array($pairing->team2->id, $teams_already_added_ids)) {
         $teams_by_division[] = $pairing->team2;
         $teams_already_added_ids[] = $pairing->team2->id;
       }
@@ -104,14 +104,12 @@ class StatisticsService {
     // add the pairings to the teams
     foreach ($teams_by_division as &$team) {
       $teams_with_active_players[$team->id]['team'] = $team;
-      foreach($all_pairings_division as $pairing) {
-        if($pairing->team1->id == $team->id || $pairing->team2->id == $team->id) {
+      foreach ($all_pairings_division as $pairing) {
+        if ($pairing->team1->id == $team->id || $pairing->team2->id == $team->id) {
           $teams_with_active_players[$team->id]['pairings'][] = $pairing;
         }
       }
     }
-
-
 
 
     // Now extract the players from the pairings and add to each player the games he has played.
@@ -152,7 +150,7 @@ class StatisticsService {
             }
           }
         }
-    }
+      }
       // Remove teams that have not played any game
       if (empty($team['active_players'])) {
         unset($teams_with_active_players[$key]);
@@ -213,7 +211,9 @@ class StatisticsService {
             // the player's games.
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
-              $player['games'][] = $game;
+              if (Result::wasPlayed($game->result1) && Result::wasPlayed($game->result2)) {
+                $player['games'][] = $game;
+              }
               if (!empty($game->board && !in_array($game->board, $boards_played))) {
                 $boards_played[] = $game->board;
               }
@@ -230,7 +230,9 @@ class StatisticsService {
           if (is_object($game->player2) && $game->player2->id == $player['player']->id) {
             if (!in_array($game->id, $player_games_ids)) {
               $player_games_ids[] = $game->id;
-              $player['games'][] = $game;
+              if (Result::wasPlayed($game->result1) && Result::wasPlayed($game->result2)) {
+                $player['games'][] = $game;
+              }
               if (!empty($game->board && !in_array($game->board, $boards_played))) {
                 $boards_played[] = $game->board;
               }
@@ -255,6 +257,10 @@ class StatisticsService {
           }
 
         }
+      }
+      // If the player has played no real games, remove him from $active_players.
+      if (!isset($player['games'])) {
+        unset($active_players[$key]);
       }
     }
 
@@ -341,13 +347,11 @@ class StatisticsService {
 
         $league_playing_year = $division->league->year;
 
-        if(empty($league_playing_year)) {
+        if (empty($league_playing_year)) {
           // Use the current year as a fallback if no starting year
           // is set in the league.
           $league_playing_year = $current_year;
         }
-
-
 
 
         $games_played = count($player['games_played']);
@@ -626,178 +630,54 @@ class StatisticsService {
     return $players;
   }
 
-
   /**
-   * Create the table array for DWZ statistics that
-   * is sent to the template in the controller.
+   * Additional data for the dwz table
    */
-  public function create_dwz_statistics_table($division) {
-    $all_games = $this->all_games_division($division);
-    $active_players = $this->active_players_division($all_games);
-    // Sorry for the very similar naming of the methods teams_with_active_players and active_teams_with_players
-    // but I had no better idea.
-    $teams_with_active_players = $this->teams_with_active_players($division);
-    $active_teams_with_players = $this->active_teams_with_players($teams_with_active_players, $division);
-    $dwz_calculation = $this->teams_dwz_calculation($active_teams_with_players, $division);
-    if (!empty($active_teams_with_players)) {
-      // Get the board counts
-      $board_count = $division->config('boardCount');
+  public function dwz_statistics_additional_data($active_teams_with_players, $division): array {
+    $dwzData = $this->teams_dwz_calculation($active_teams_with_players, $division);
+    $boardCount = $division->config('boardCount');
+    $dwzAdditionalData['boardCount'] = $boardCount;
+    // Calculate averages for the last row of the table.
 
-      // We also return part of statistics text, so the dwz_table is only part of the returned data
+    $average_sums = [
+      'dwz_active' => (int) 0,
+      'dwz_top' => (int) 0,
+      'dwz_all' => (int) 0,
+      'age' => (int) 0,
+    ];
 
-      $dwz_data = [];
+    $team_count = count($dwzData);
 
-      $dwz_table = [];
-      $dwz_text = '';
-
-      $dwz_table['header'] = [
-        [
-          'text' => 'Mannschaft',
-          'class' => 'team',
-        ],
-        [
-          'text' => 'Eingesetzte',
-          'class' => 'active',
-          'title' => $this->encoding->utf8_decode('DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet.'),
-        ],
-        [
-          'text' => 'Top ' . $board_count,
-          'class' => 'top',
-          'title' => $this->encoding->utf8_decode('Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet.'),
-        ],
-        [
-          'text' => 'Alle Spieler',
-          'class' => 'all',
-          'title' => $this->encoding->utf8_decode('Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet.'),
-        ],
-        [
-          'text' => $this->encoding->utf8_decode('Alter Ø'),
-          'class' => 'age',
-          'title' => $this->encoding->utf8_decode('Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben.'),
-        ],
-      ];
-
-      $average_sums = [
-        'dwz_active' => (int) 0,
-        'dwz_top' => (int) 0,
-        'dwz_all' => (int) 0,
-        'age' => (int) 0,
-      ];
-
-      // Create the table body
-      foreach ($dwz_calculation as $key => $team) {
-        $team_name = $team['team']->nameWithNumber();
-        $team_uri = $team['team']->uri();
-        $dwz_active = $team['active_dwz_average'];
-        $dwz_top = $team['top_x_dwz_average'];
-        $dwz_all = $team['all_dwz_average'];
-        $age = $team['active_age_average'];
-        if ($team['dwz_rank'] == 'top') {
-          $active_dwz_classes = 'active-dwz fw-bold ';
-        } else {
-          $active_dwz_classes = 'active-dwz';
-        }
-        if ($team['top_dwz_rank'] == 'top') {
-          $top_dwz_classes = 'top-dwz fw-bold';
-        } else {
-          $top_dwz_classes = 'top-dwz';
-        }
-        if ($team['all_dwz_rank'] == 'top') {
-          $all_dwz_classes = 'all-dwz fw-bold';
-        } else {
-          $all_dwz_classes = 'all-dwz';
-        }
-        if ($team['age_rank'] == 'top') {
-          $age_classes = 'age fw-bold';
-        } else {
-          $age_classes = 'age';
-        }
-
-        // Add each team's value to the sum so we can
-        // calculate the average for the last row.
-        $average_sums['dwz_active'] += $dwz_active;
-        $average_sums['dwz_top'] += $dwz_top;
-        $average_sums['dwz_all'] += $dwz_all;
-        $average_sums['age'] += $age;
-
-        $dwz_table['body'][] = [
-          [
-            'text' => $team_name,
-            'link' => $team_uri,
-            'class' => 'team',
-          ],
-          [
-            'text' => $dwz_active,
-            'class' => $active_dwz_classes,
-          ],
-          [
-            'text' => $dwz_top,
-            'class' => $top_dwz_classes,
-          ],
-          [
-            'text' => $dwz_all,
-            'class' => $all_dwz_classes,
-          ],
-          [
-            'text' => $age,
-            'class' => $age_classes,
-          ],
-        ];
-      }
-
-      $team_count = count($dwz_calculation);
-      $average_values = [
-        'dwz_active' => round($average_sums['dwz_active'] / $team_count),
-        'dwz_top' => round($average_sums['dwz_top'] / $team_count),
-        'dwz_all' => round($average_sums['dwz_all'] / $team_count),
-        'age' => round($average_sums['age'] / $team_count),
-      ];
-
-      $dwz_text_values = [
-        'dwz_active_average' => $average_values['dwz_active'],
-        'age_average' => $average_values['age'],
-      ];
-
-      // Add an extra row to the table with the average values for all teams.
-      $dwz_table['body'][] = [
-        [
-          'text' => 'Durchschnitt:',
-          'class' => 'average-active fw-bold',
-        ],
-        [
-          'text' => $average_values['dwz_active'],
-          'class' => 'average-active fw-bold',
-        ],
-        [
-          'text' => $average_values['dwz_top'],
-          'class' => 'average-top fw-bold',
-        ],
-        [
-          'text' => $average_values['dwz_all'],
-          'class' => 'average-all fw-bold',
-        ],
-        [
-          'text' => $average_values['age'],
-          'class' => 'average-age fw-bold',
-        ],
-      ];
-
-      $dwz_data['table'] = $dwz_table;
-      $dwz_data['text_values'] = $dwz_text_values;
-
-      return $dwz_data;
-    } else {
-      return '';
+    foreach ($dwzData as $team) {
+      $average_sums['dwz_active'] += $team['active_dwz_average'];
+      $average_sums['dwz_top'] += $team['top_x_dwz_average'];
+      $average_sums['dwz_all'] += $team['all_dwz_average'];
+      $average_sums['age'] += $team['active_age_average'];
     }
 
 
+    $average_values = [
+      'dwzActive' => round($average_sums['dwz_active'] / $team_count),
+      'dwzTop' => round($average_sums['dwz_top'] / $team_count),
+      'dwzAll' => round($average_sums['dwz_all'] / $team_count),
+      'age' => round($average_sums['age'] / $team_count),
+    ];
+
+    $dwzAdditionalData['averageValues'] = $average_values;
+
+    $dwzAdditionalData['dwzTextValues'] = [
+      'dwzActiveAverage' => $average_values['dwzActive'],
+      'ageAverage' => $average_values['age'],
+    ];
+
+    return $dwzAdditionalData;
   }
 
   /**
-   * Create the table array for topscorers that
-   * is sent to the template in the controller.
+   * Calculate topscorer data. Extract the calculation from create_topscorer_table
+   * without the HTML table generation.
    */
-  public function create_topscorer_table($division) {
+  public function calculate_topscorer($division): array {
     $all_games = $this->all_games_division($division);
     $active_players = $this->active_players_division($all_games);
     $active_players_with_games = $this->active_players_with_games($active_players, $all_games);
@@ -806,20 +686,10 @@ class StatisticsService {
     $top_ten_drawers = array_slice($players_with_games_by_draws, 0, 10, TRUE);
     $top_ten_scorers = array_slice($players_with_games_by_points_and_games, 0, 10, TRUE);
 
-    $topscorer_data = [];
-    $topscorer_table = [];
-    $topscorer_text = '';
+    $topscorerData = [];
 
-    if (!empty($top_ten_scorers)) {
-      $topscorer_table['header'] = [
-        ['text' => 'Name', 'class' => 'name'],
-        ['text' => 'DWZ', 'class' => 'rating-national'],
-        ['text' => 'Mannschaft', 'class' => 'team'],
-        ['text' => 'Brett', 'class' => 'board'],
-        ['text' => 'Partien', 'class' => 'games'],
-        ['text' => 'Punkte', 'class' => 'points'],
-      ];
-
+    // Only do calculations if matches/games have been played.
+    if(!empty($active_players_with_games)) {
       // find the topscorer(s) and the draw king(s)
       $first_player = reset($top_ten_scorers);
       $highest_points_score = $first_player['points'];
@@ -828,52 +698,18 @@ class StatisticsService {
       $top_scorers = [];
 
 
-      foreach ($top_ten_scorers as $key => $player) {
-        $player_name = $player['player']->name();
-        $player_uri = $player['player']->uri();
-        $dwz = $player['player']->dwz ? $player['player']->dwz : '';
-        $team = $player['player']->team->nameWithNumber();
-        $team_uri = $player['player']->team->uri();
-        $board = $player['boards_played'] ?? '';
+      foreach ($top_ten_scorers as $key => &$player) {
         $games_count = count($player['games']);
-        $points = $player['points'];
-
+        $player['games_count'] = $games_count;
         // Collect the top scorers
         if ($player['points'] == $highest_points_score && $games_count == $lowest_game_score) {
           $top_scorers[] = $player;
         }
-
-        $topscorer_table['body'][] = [
-          [
-            'text' => $player_name,
-            'link' => $player_uri,
-            'class' => 'name',
-          ],
-          [
-            'text' => $dwz,
-            'class' => 'dwz',
-          ],
-          [
-            'text' => $team,
-            'link' => $team_uri,
-            'class' => 'team',
-          ],
-          [
-            'text' => $board,
-            'class' => 'board',
-          ],
-          [
-            'text' => $games_count,
-            'class' => 'games-count',
-          ],
-          [
-            'text' => $points,
-            'class' => 'points fw-bold',
-          ],
-        ];
       }
 
+      $topscorerData['topTenScorers'] = $top_ten_scorers;
 
+      // Create the text values for the top scorers
       $text_top_scorers = [];
       foreach ($top_scorers as $key => $scorer) {
         $text_top_scorers[$key]['player_name'] = $scorer['player']->name();
@@ -892,6 +728,7 @@ class StatisticsService {
           $draw_kings[] = $drawer;
         }
       }
+      // Create the text values for the top drawers
       $text_draw_kings = [];
       foreach ($draw_kings as $key => $drawer) {
         $text_draw_kings[$key]['player_name'] = $drawer['player']->name();
@@ -900,77 +737,24 @@ class StatisticsService {
         $text_draw_kings[$key]['team_uri'] = $drawer['player']->team->uri();
       }
 
-      $topscorer_data['text_values']['text_top_scorers'] = $text_top_scorers;
-      $topscorer_data['text_values']['text_draw_kings'] = $text_draw_kings;
-      $topscorer_data['text_values']['highest_point_score'] = $highest_points_score;
-      $topscorer_data['text_values']['lowest_game_score'] = $lowest_game_score;
-      $topscorer_data['text_values']['highest_draw_score'] = $highest_draw_score;
-
-
-      $topscorer_data['table'] = $topscorer_table;
-
-      return $topscorer_data;
-    } else {
-      return '';
+      $topscorerData['text_values']['text_top_scorers'] = $text_top_scorers;
+      $topscorerData['text_values']['text_draw_kings'] = $text_draw_kings;
+      $topscorerData['text_values']['highest_point_score'] = $highest_points_score;
+      $topscorerData['text_values']['lowest_game_score'] = $lowest_game_score;
+      $topscorerData['text_values']['highest_draw_score'] = $highest_draw_score;
     }
+
+    return $topscorerData;
   }
 
-  /**
-   * Create the table array for the team game score that
-   * is sent to the template in the controller.
+  /*
+   * Additional data for the team game score
    */
-  public function create_team_game_score_table($division) {
+
+  public function team_game_score_additional_data($division): array {
     $active_teams_with_parings = $this->active_teams_with_parings($division);
     $team_game_score_data = $this->team_game_score_data($active_teams_with_parings);
-
-    $team_game_score_table = [];
-
-    $team_game_score_table['header'] = [
-      [
-        'text' => 'Mannschaft',
-        'class' => 'team',
-      ],
-      [
-        'text' => '&sum;',
-        'class' => 'game-all-count border-left-bold',
-        'title' => $this->encoding->utf8_decode('Wie viele Partien hat die Mannschaft bislang gespielt?'),
-      ],
-      [
-        'text' => '+',
-        'class' => 'forfeit-wins',
-        'title' => $this->encoding->utf8_decode('Kampflose Siege'),
-      ],
-      [
-        'text' => '-',
-        'class' => 'forfeit-losses border-right-bold',
-        'title' => $this->encoding->utf8_decode('Kampflose Niederlagen'),
-      ],
-      [
-        'text' => '1',
-        'class' => 'wins',
-        'title' => $this->encoding->utf8_decode('Siege aus den wirklich gespielten Partien'),
-      ],
-      [
-        'text' => $this->encoding->utf8_decode(Result::UNICODE_DRAW),
-        'class' => 'draws',
-        'title' => $this->encoding->utf8_decode('Remis'),
-      ],
-      [
-        'text' => '0',
-        'class' => 'losses border-right-bold',
-        'title' => $this->encoding->utf8_decode('Niederlagen'),
-      ],
-      [
-        'text' => 'W',
-        'class' => 'white-score',
-        'title' => $this->encoding->utf8_decode('Score mit Weiß'),
-      ],
-      [
-        'text' => 'S',
-        'class' => 'black-score',
-        'title' => $this->encoding->utf8_decode('Score mit Schwarz'),
-      ],
-    ];
+    $team_game_score_additional_data = [];
 
     // Set initial values for the last table row that displays the average scores
     $sum_game_count = 0;
@@ -983,59 +767,17 @@ class StatisticsService {
     $sum_white_score = 0;
     $sum_black_score = 0;
 
-    foreach ($team_game_score_data as $key => $team) {
-      $team_game_score_table['body'][] = [
-        [
-          'text' => $team['name'],
-          'link' => $team['uri'],
-          'class' => 'name',
-        ],
-        [
-          'text' => $team['game_count_played'],
-          'class' => 'game-all-count border-left-bold',
-        ],
-        [
-          'text' => $team['forfeit_wins'],
-          'class' => 'forfeit-wins',
-        ],
-        [
-          'text' => $team['forfeit_losses'],
-          'class' => 'forfeit-losses border-right-bold',
-        ],
-        [
-          'text' => round($team['wins']) . '%',
-          'class' => 'wins',
-        ],
-        [
-          'text' => round($team['draws']) . '%',
-          'class' => 'draws',
-        ],
-        [
-          'text' => round($team['losses']) . '%',
-          'class' => 'losses border-right-bold',
-        ],
-        [
-          'text' => round($team['white_score']) . '%',
-          'class' => 'white-score',
-        ],
-        [
-          'text' => round($team['black_score']) . '%',
-          'class' => 'black-score',
-        ],
-      ];
-
-      $sum_game_count += $team['game_count'];
-      $sum_game_count_played += $team['game_count_played'];
-      $sum_forfeit_wins += $team['forfeit_wins'];
-      $sum_forfeit_losses += $team['forfeit_losses'];
-      $sum_wins += $team['wins'];
-      $sum_draws += $team['draws'];
-      $sum_losses += $team['losses'];
-      $sum_white_score += $team['white_score'];
-      $sum_black_score += $team['black_score'];
-
+    foreach ($team_game_score_data as $team_score) {
+      $sum_game_count += $team_score['game_count'];
+      $sum_game_count_played += $team_score['game_count_played'];
+      $sum_forfeit_wins += $team_score['forfeit_wins'];
+      $sum_forfeit_losses += $team_score['forfeit_losses'];
+      $sum_wins += $team_score['wins'];
+      $sum_draws += $team_score['draws'];
+      $sum_losses += $team_score['losses'];
+      $sum_white_score += $team_score['white_score'];
+      $sum_black_score += $team_score['black_score'];
     }
-
     //The total sum of games must be halved, since always two players
     // of different teams are playing in one game.
     // Sum with forfeits
@@ -1043,7 +785,6 @@ class StatisticsService {
 
     // Sum of actually played games
     $sum_game_count_played = $sum_game_count_played / 2;
-
 
     // Calculate the average values
     $team_count = count($active_teams_with_parings);
@@ -1053,47 +794,14 @@ class StatisticsService {
     $average_white_score = $sum_white_score / $team_count;
     $average_black_score = $sum_black_score / $team_count;
 
-    // Add the average values to the table
-
-    $team_game_score_table['body'][] = [
-      [
-        'text' => 'Summe:',
-        'class' => 'name fw-bold',
-      ],
-      [
-        'text' => $sum_game_count,
-        'class' => 'game-all-count border-left-bold fw-bold',
-        'title' => $this->encoding->utf8_decode('All games including forfeits. The sum is only half of the above, since always two players of different teams play one game.'),
-      ],
-      [
-        'text' => $sum_forfeit_wins,
-        'class' => 'forfeit-wins fw-bold',
-      ],
-      [
-        'text' => $sum_forfeit_losses,
-        'class' => 'forfeit-losses border-right-bold fw-bold',
-      ],
-      [
-        'text' => round($average_wins) . '%',
-        'class' => 'wins fw-bold',
-      ],
-      [
-        'text' => round($average_draws) . '%',
-        'class' => 'draws fw-bold',
-      ],
-      [
-        'text' => round($average_losses) . '%',
-        'class' => 'losses border-right-bold fw-bold',
-      ],
-      [
-        'text' => round($average_white_score) . '%',
-        'class' => 'white-score fw-bold',
-      ],
-      [
-        'text' => round($average_black_score) . '%',
-        'class' => 'black-score fw-bold',
-      ],
-    ];
+    $team_game_score_additional_data['average_scores']['sum_game_count'] = $sum_game_count;
+    $team_game_score_additional_data['average_scores']['sum_forfeit_wins'] = $sum_forfeit_wins;
+    $team_game_score_additional_data['average_scores']['sum_forfeit_losses'] = $sum_forfeit_losses;
+    $team_game_score_additional_data['average_scores']['average_wins'] = round($average_wins);
+    $team_game_score_additional_data['average_scores']['average_draws'] = round($average_draws);
+    $team_game_score_additional_data['average_scores']['average_losses'] = round($average_losses);
+    $team_game_score_additional_data['average_scores']['average_white_score'] = round($average_white_score);
+    $team_game_score_additional_data['average_scores']['average_black_score'] = round($average_black_score);
 
     if ($sum_game_count == 0) {
       $forfeit_percentage = 0;
@@ -1101,7 +809,7 @@ class StatisticsService {
       $forfeit_percentage = 100 * ($sum_forfeit_losses / $sum_game_count);
     }
 
-    $team_game_score_values = [
+    $team_game_score_text_values = [
       'sum_forfeit_losses' => $sum_forfeit_losses,
       'forfeit_percentage' => round($forfeit_percentage),
       'sum_game_count_played' => $sum_game_count_played,
@@ -1110,9 +818,9 @@ class StatisticsService {
       'average_black_score' => round($average_black_score),
     ];
 
-    $team_game_score_data['table'] = $team_game_score_table;
-    $team_game_score_data['text_values'] = $team_game_score_values;
-    return $team_game_score_data;
+    $team_game_score_additional_data['text_values'] = $team_game_score_text_values;
+
+    return $team_game_score_additional_data;
   }
 
   /**

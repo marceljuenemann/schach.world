@@ -11,7 +11,7 @@
   <h2>Verbandsliga Ost</h2>
 
 
-      <ul class="nav nav-tabs mt-4 mb-4 d-print-none">
+    <ul class="nav nav-tabs mt-4 mb-4 d-print-none">
           <li class='nav-item'>
         <a class='nav-link  '
                     href='/ligen/nsv-2425/verbandsliga-ost/'
@@ -36,934 +36,424 @@
       </ul>
 
 
-            <div class="statistics-container">
-            <p>Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine <strong>DWZ
-                    von 1834</strong> und ist
-                <strong>42</strong> Jahre alt.</p>
+      <div class="statistics-container">
+      <p>Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine <strong>DWZ
+          von 1834</strong> und ist
+        <strong>42</strong> Jahre alt.</p>
 
-            <p>Der Top-Scorer mit 7 Punkten aus 9 Partien ist:
-                                                <a href="/ligen/nsv-2425/s/531789/">Player 058f, 6f9527a</a> (<a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a>).<br>
+      <p>Der Top-Scorer mit 7 Punkten aus 9 Partien ist:
+                                <a href="/ligen/nsv-2425/s/531789/">Player 058f, 6f9527a</a> (<a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a>).<br>
 
-                                  Der Remisk&ouml;nig mit 7 Remis ist
-                                                    <a href="/ligen/nsv-2425/s/531055/">Player 29e8, 51d03a2</a> (<a href="/ligen/nsv-2425/m/7887/">ESV Göttingen 2</a>).
-                              </p>
+                  Der Remisk&ouml;nig mit 7 Remis ist
+                                    <a href="/ligen/nsv-2425/s/531055/">Player 29e8, 51d03a2</a> (<a href="/ligen/nsv-2425/m/7887/">ESV Göttingen 2</a>).
+              </p>
 
-            <p>26 Spiele wurden kampflos verloren gegeben, das sind
-                <strong>7%</strong>. Von
-                den 334 wirklich gespielten Partien sind
-                <strong>34%</strong> Remis ausgegangen. Die Wei&szlig;spieler haben
-                einen Score von <strong>55%</strong>, der Score von Schwarz ist
-                <strong>45%</strong>.</p>
+      <p>26 Spiele wurden kampflos verloren gegeben, das
+        sind
+        <strong>7%</strong>. Von
+        den 334 wirklich gespielten Partien sind
+        <strong>34%</strong> Remis ausgegangen. Die Wei&szlig;spieler
+        haben
+        einen Score von <strong>55%</strong>, der Score
+        von Schwarz ist
+        <strong>45%</strong>.</p>
 
-            <h4 class="mt-4">DWZ-Statistik</h4>
-                    <table class="nsv-table borders-bold text-center text-nowrap statistics-dwz">
+
+      <h4 class="mt-4">DWZ-Statistik</h4>
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-dwz">
         <tr>
-                                                                                
-                                <th class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Mannschaft</th>
-                                                                                
-                                <th class="active"   data-bs-toggle="tooltip" data-bs-placement="top" title="DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet."
->Eingesetzte</th>
-                                                                                
-                                <th class="top"   data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet."
->Top 8</th>
-                                                                                
-                                <th class="all"   data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet."
->Alle Spieler</th>
-                                                                                
-                                <th class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben."
->Alter Ø</th>
-                    </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+          <th class="team">Mannschaft</th>
+          <th
+            class="active"     data-bs-toggle="tooltip" data-bs-placement="top" title="DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet."
 >
-                                <a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz fw-bold "   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1934</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1949</td>
-                                                                                                                        
-                                            <td class="all-dwz fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1875</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->41</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            Eingesetzte
+          </th>
+          <th
+            class="top"     data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet."
 >
-                                <a href="/ligen/nsv-2425/m/7899/">Hamelner SV 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1898</td>
-                                                                                                                        
-                                            <td class="top-dwz fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1986</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1858</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->40</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            Top 8</th>
+          <th
+            class="all"     data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet."
 >
-                                <a href="/ligen/nsv-2425/m/7912/">SVG Salzgitter e. V.</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1876</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1927</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1757</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->35</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            Alle Spieler
+          </th>
+          <th
+            class="age"     data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben."
 >
-                                <a href="/ligen/nsv-2425/m/7908/">Peiner SV</a>
+            Alter &#8709;
+          </th>
+        </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a>
+            </td>
+            <td class="active-dwz fw-bold">1934</td>
+            <td class="top-dwz">1949</td>
+            <td class="all-dwz fw-bold">1875</td>
+            <td class="age">41</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/nsv-2425/m/7899/">Hamelner SV 2</a>
+            </td>
+            <td class="active-dwz">1898</td>
+            <td class="top-dwz fw-bold">1986</td>
+            <td class="all-dwz">1858</td>
+            <td class="age">40</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/nsv-2425/m/7912/">SVG Salzgitter e. V.</a>
+            </td>
+            <td class="active-dwz">1876</td>
+            <td class="top-dwz">1927</td>
+            <td class="all-dwz">1757</td>
+            <td class="age">35</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/nsv-2425/m/7908/">Peiner SV</a>
+            </td>
+            <td class="active-dwz">1853</td>
+            <td class="top-dwz">1935</td>
+            <td class="all-dwz">1819</td>
+            <td class="age">49</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/nsv-2425/m/7920/">SC BS Gliesmarode 2</a>
+            </td>
+            <td class="active-dwz">1835</td>
+            <td class="top-dwz">1888</td>
+            <td class="all-dwz">1815</td>
+            <td class="age">36</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/nsv-2425/m/7911/">SC Bad Salzdetfurth</a>
+            </td>
+            <td class="active-dwz">1828</td>
+            <td class="top-dwz">1916</td>
+            <td class="all-dwz">1766</td>
+            <td class="age">41</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/nsv-2425/m/7903/">Hildesheimer SV 2</a>
+            </td>
+            <td class="active-dwz">1826</td>
+            <td class="top-dwz">1891</td>
+            <td class="all-dwz">1819</td>
+            <td class="age">47</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/nsv-2425/m/7918/">Tempo Göttingen</a>
+            </td>
+            <td class="active-dwz">1818</td>
+            <td class="top-dwz">1984</td>
+            <td class="all-dwz">1711</td>
+            <td class="age">38</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/nsv-2425/m/7910/">SG Gifhorn-Wolfsburg 2</a>
+            </td>
+            <td class="active-dwz">1779</td>
+            <td class="top-dwz">1883</td>
+            <td class="all-dwz">1788</td>
+            <td class="age fw-bold">56</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/nsv-2425/m/7887/">ESV Göttingen 2</a>
+            </td>
+            <td class="active-dwz">1692</td>
+            <td class="top-dwz">1897</td>
+            <td class="all-dwz">1716</td>
+            <td class="age">41</td>
+          </tr>
+                <tr>
+          <td class="average-active fw-bold">Durchschnitt:</td>
+          <td class="average-active fw-bold">1834</td>
+          <td class="average-top fw-bold">1926</td>
+          <td class="average-all fw-bold">1792</td>
+          <td class="average-age fw-bold">42</td>
+        </tr>
+      </table>
+      <h4 class="mt-4">Topscorer</h4>
 
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1853</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1935</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1819</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->49</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7920/">SC BS Gliesmarode 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1835</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1888</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1815</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->36</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7911/">SC Bad Salzdetfurth</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1828</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1916</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1766</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->41</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7903/">Hildesheimer SV 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1826</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1891</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1819</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->47</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7918/">Tempo Göttingen</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1818</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1984</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1711</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->38</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7910/">SG Gifhorn-Wolfsburg 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1779</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1883</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1788</td>
-                                                                                                                        
-                                            <td class="age fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->56</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7887/">ESV Göttingen 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1692</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1897</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1716</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->41</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="average-active fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Durchschnitt:</td>
-                                                                                                                        
-                                            <td class="average-active fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1834</td>
-                                                                                                                        
-                                            <td class="average-top fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1926</td>
-                                                                                                                        
-                                            <td class="average-all fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1792</td>
-                                                                                                                        
-                                            <td class="average-age fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->42</td>
-                                                </tr>
-            </table>
-
-
-            <h4 class="mt-4">Topscorer</h4>
-                    <table class="nsv-table borders-bold text-center text-nowrap statistics-topscorer">
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-topscorer">
         <tr>
-                                                                                
-                                <th class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Name</th>
-                                                                                
-                                <th class="rating-national"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->DWZ</th>
-                                                                                
-                                <th class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Mannschaft</th>
-                                                                                
-                                <th class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Brett</th>
-                                                                                
-                                <th class="games"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Partien</th>
-                                                                                
-                                <th class="points"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Punkte</th>
-                    </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/s/531789/">Player 058f, 6f9527a</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1942</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->5-6</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->9</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->7</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/s/531770/">Player bf46, 00a5c50</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1899</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7908/">Peiner SV</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2-5</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->8</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6.5</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/s/531772/">Player ff7f, 02c133b</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1910</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7908/">Peiner SV</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->4-6</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->9</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6.5</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/s/531786/">Player 5161, d5618de</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2002</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->3</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->8</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/s/531790/">Player b6f5, f6a33b1</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1952</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6-7</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->8</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->5.5</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/s/531811/">Player e35a, 153b078</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1693</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7910/">SG Gifhorn-Wolfsburg 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6-8</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->8</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->5.5</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/s/531921/">FM Player 26aa, 2d46946</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2307</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7918/">Tempo Göttingen</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->9</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->5.5</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/s/531834/">Player 10e9, e2d68ec</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1932</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7912/">SVG Salzgitter e. V.</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2-3</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->9</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->5.5</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/s/531993/">Player 96d5, 26fe232</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1822</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7920/">SC BS Gliesmarode 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->3-6</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->9</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->5.5</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/s/531578/">Player 6040, a9fc6b3</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1924</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7899/">Hamelner SV 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1-5</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->5</td>
-                                                </tr>
-            </table>
+          <th class="name">Name</th>
+          <th class="rating-national">DWZ</th>
+          <th class="team">Mannschaft</th>
+          <th class="board">Brett</th>
+          <th class="games">Partien</th>
+          <th class="points">Punkte</th>
+        </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/s/531789/">Player 058f, 6f9527a</a></td>
+            <td class="dwz">1942</td>
+            <td class="team"><a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a></td>
+            <td class="board">5-6</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">7</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/s/531770/">Player bf46, 00a5c50</a></td>
+            <td class="dwz">1899</td>
+            <td class="team"><a href="/ligen/nsv-2425/m/7908/">Peiner SV</a></td>
+            <td class="board">2-5</td>
+            <td class="games-count">7</td>
+            <td class="points fw-bold">6.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/s/531772/">Player ff7f, 02c133b</a></td>
+            <td class="dwz">1910</td>
+            <td class="team"><a href="/ligen/nsv-2425/m/7908/">Peiner SV</a></td>
+            <td class="board">4-6</td>
+            <td class="games-count">8</td>
+            <td class="points fw-bold">6.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/s/531786/">Player 5161, d5618de</a></td>
+            <td class="dwz">2002</td>
+            <td class="team"><a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a></td>
+            <td class="board">3</td>
+            <td class="games-count">7</td>
+            <td class="points fw-bold">6</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/s/531921/">FM Player 26aa, 2d46946</a></td>
+            <td class="dwz">2307</td>
+            <td class="team"><a href="/ligen/nsv-2425/m/7918/">Tempo Göttingen</a></td>
+            <td class="board">1</td>
+            <td class="games-count">6</td>
+            <td class="points fw-bold">5.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/s/531790/">Player b6f5, f6a33b1</a></td>
+            <td class="dwz">1952</td>
+            <td class="team"><a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a></td>
+            <td class="board">6-7</td>
+            <td class="games-count">7</td>
+            <td class="points fw-bold">5.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/s/531811/">Player e35a, 153b078</a></td>
+            <td class="dwz">1693</td>
+            <td class="team"><a href="/ligen/nsv-2425/m/7910/">SG Gifhorn-Wolfsburg 2</a></td>
+            <td class="board">6-8</td>
+            <td class="games-count">8</td>
+            <td class="points fw-bold">5.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/s/531834/">Player 10e9, e2d68ec</a></td>
+            <td class="dwz">1932</td>
+            <td class="team"><a href="/ligen/nsv-2425/m/7912/">SVG Salzgitter e. V.</a></td>
+            <td class="board">2-3</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">5.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/s/531993/">Player 96d5, 26fe232</a></td>
+            <td class="dwz">1822</td>
+            <td class="team"><a href="/ligen/nsv-2425/m/7920/">SC BS Gliesmarode 2</a></td>
+            <td class="board">3-6</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">5.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/s/531578/">Player 6040, a9fc6b3</a></td>
+            <td class="dwz">1924</td>
+            <td class="team"><a href="/ligen/nsv-2425/m/7899/">Hamelner SV 2</a></td>
+            <td class="board">1-5</td>
+            <td class="games-count">5</td>
+            <td class="points fw-bold">5</td>
+          </tr>
+              </table>
 
 
-            <h4 class="mt-4">Spiel-Statistik</h4>
-                    <table class="nsv-table borders-bold text-center text-nowrap statistics-games">
+      <h4 class="mt-4">Spiel-Statistik</h4>
+
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-games">
         <tr>
-                                                                                
-                                <th class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Mannschaft</th>
-                                                                                
-                                <th class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title="Wie viele Partien hat die Mannschaft bislang gespielt?"
->&sum;</th>
-                                                                                
-                                <th class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Siege"
->+</th>
-                                                                                
-                                <th class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Niederlagen"
->-</th>
-                                                                                
-                                <th class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title="Siege aus den wirklich gespielten Partien"
->1</th>
-                                                                                
-                                <th class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title="Remis"
->½</th>
-                                                                                
-                                <th class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title="Niederlagen"
->0</th>
-                                                                                
-                                <th class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Weiß"
->W</th>
-                                                                                
-                                <th class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Schwarz"
->S</th>
-                    </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+          <th class="team">Mannschaft</th>
+          <th
+            class="game-all-count border-left-bold"     data-bs-toggle="tooltip" data-bs-placement="top" title="Wie viele Partien hat die Mannschaft bislang gespielt?"
 >
-                                <a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->66</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->5</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->38%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->47%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->15%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->62%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->61%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            &sum;
+          </th>
+          <th
+            class="forfeit-wins"     data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Siege"
 >
-                                <a href="/ligen/nsv-2425/m/7918/">Tempo Göttingen</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->69</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->3</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->46%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->29%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->25%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->67%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->54%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            +
+          </th>
+          <th
+            class="forfeit-losses border-right-bold"     data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Niederlagen"
 >
-                                <a href="/ligen/nsv-2425/m/7908/">Peiner SV</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->63</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->8</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->41%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->32%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->27%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->74%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->41%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            -
+          </th>
+          <th
+            class="wins"     data-bs-toggle="tooltip" data-bs-placement="top" title="Siege aus den wirklich gespielten Partien"
 >
-                                <a href="/ligen/nsv-2425/m/7920/">SC BS Gliesmarode 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->66</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->5</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->35%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->38%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->27%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->66%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->43%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            1
+          </th>
+          <th
+            class="draws"     data-bs-toggle="tooltip" data-bs-placement="top" title="Remis"
 >
-                                <a href="/ligen/nsv-2425/m/7899/">Hamelner SV 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->57</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->3</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->12</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->37%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->30%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->33%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->57%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->46%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            &frac12;
+          </th>
+          <th
+            class="losses border-right-bold"     data-bs-toggle="tooltip" data-bs-placement="top" title="Niederlagen"
 >
-                                <a href="/ligen/nsv-2425/m/7911/">SC Bad Salzdetfurth</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->71</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->31%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->35%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->34%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->54%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->43%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            0
+          </th>
+          <th
+            class="white-score"     data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Weiß"
 >
-                                <a href="/ligen/nsv-2425/m/7912/">SVG Salzgitter e. V.</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->71</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->28%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->35%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->37%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->49%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->43%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            W
+          </th>
+          <th
+            class="black-score"     data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Schwarz"
 >
-                                <a href="/ligen/nsv-2425/m/7903/">Hildesheimer SV 2</a>
+            S
+          </th>
+        </tr>
 
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->68</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->29%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->31%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->40%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->41%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->49%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7910/">SG Gifhorn-Wolfsburg 2</a>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/m/7909/">SV Cai. Wolfenbüttel</a></td>
+            <td class="game-all-count border-left-bold">66</td>
+            <td class="forfeit-wins">5</td>
+            <td class="forfeit-losses border-right-bold">1</td>
+            <td class="wins">38%</td>
+            <td class="draws">47%</td>
+            <td class="losses border-right-bold">15%</td>
+            <td class="white-score">62%</td>
+            <td class="black-score">61%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/m/7918/">Tempo Göttingen</a></td>
+            <td class="game-all-count border-left-bold">69</td>
+            <td class="forfeit-wins">3</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">46%</td>
+            <td class="draws">29%</td>
+            <td class="losses border-right-bold">25%</td>
+            <td class="white-score">67%</td>
+            <td class="black-score">54%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/m/7908/">Peiner SV</a></td>
+            <td class="game-all-count border-left-bold">63</td>
+            <td class="forfeit-wins">8</td>
+            <td class="forfeit-losses border-right-bold">1</td>
+            <td class="wins">41%</td>
+            <td class="draws">32%</td>
+            <td class="losses border-right-bold">27%</td>
+            <td class="white-score">74%</td>
+            <td class="black-score">41%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/m/7920/">SC BS Gliesmarode 2</a></td>
+            <td class="game-all-count border-left-bold">66</td>
+            <td class="forfeit-wins">1</td>
+            <td class="forfeit-losses border-right-bold">5</td>
+            <td class="wins">35%</td>
+            <td class="draws">38%</td>
+            <td class="losses border-right-bold">27%</td>
+            <td class="white-score">66%</td>
+            <td class="black-score">43%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/m/7899/">Hamelner SV 2</a></td>
+            <td class="game-all-count border-left-bold">57</td>
+            <td class="forfeit-wins">3</td>
+            <td class="forfeit-losses border-right-bold">12</td>
+            <td class="wins">37%</td>
+            <td class="draws">30%</td>
+            <td class="losses border-right-bold">33%</td>
+            <td class="white-score">57%</td>
+            <td class="black-score">46%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/m/7911/">SC Bad Salzdetfurth</a></td>
+            <td class="game-all-count border-left-bold">71</td>
+            <td class="forfeit-wins">1</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">31%</td>
+            <td class="draws">35%</td>
+            <td class="losses border-right-bold">34%</td>
+            <td class="white-score">54%</td>
+            <td class="black-score">43%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/m/7912/">SVG Salzgitter e. V.</a></td>
+            <td class="game-all-count border-left-bold">71</td>
+            <td class="forfeit-wins">0</td>
+            <td class="forfeit-losses border-right-bold">1</td>
+            <td class="wins">28%</td>
+            <td class="draws">35%</td>
+            <td class="losses border-right-bold">37%</td>
+            <td class="white-score">49%</td>
+            <td class="black-score">43%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/m/7903/">Hildesheimer SV 2</a></td>
+            <td class="game-all-count border-left-bold">68</td>
+            <td class="forfeit-wins">2</td>
+            <td class="forfeit-losses border-right-bold">2</td>
+            <td class="wins">29%</td>
+            <td class="draws">31%</td>
+            <td class="losses border-right-bold">40%</td>
+            <td class="white-score">41%</td>
+            <td class="black-score">49%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/m/7910/">SG Gifhorn-Wolfsburg 2</a></td>
+            <td class="game-all-count border-left-bold">69</td>
+            <td class="forfeit-wins">1</td>
+            <td class="forfeit-losses border-right-bold">2</td>
+            <td class="wins">29%</td>
+            <td class="draws">29%</td>
+            <td class="losses border-right-bold">42%</td>
+            <td class="white-score">49%</td>
+            <td class="black-score">39%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/nsv-2425/m/7887/">ESV Göttingen 2</a></td>
+            <td class="game-all-count border-left-bold">68</td>
+            <td class="forfeit-wins">2</td>
+            <td class="forfeit-losses border-right-bold">2</td>
+            <td class="wins">16%</td>
+            <td class="draws">35%</td>
+            <td class="losses border-right-bold">49%</td>
+            <td class="white-score">32%</td>
+            <td class="black-score">35%</td>
+          </tr>
+                <tr>
+          <td class="name fw-bold">Summe:</td>
+          <td
+            class="game-all-count border-left-bold fw-bold">360</td>
+          <td class="forfeit-wins fw-bold">26</td>
+          <td
+            class="forfeit-losses border-right-bold fw-bold">26</td>
+          <td class="wins fw-bold">33%</td>
+          <td class="draws fw-bold">34%</td>
+          <td class="losses border-right-bold fw-bold">33
+            %
+          </td>
+          <td class="white-score fw-bold">55%</td>
+          <td class="black-score fw-bold">45%</td>
+        </tr>
 
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->69</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->29%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->29%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->42%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->49%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->39%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/nsv-2425/m/7887/">ESV Göttingen 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->68</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->16%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->35%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->49%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->32%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->35%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Summe:</td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title="All games including forfeits. The sum is only half of the above, since always two players of different teams play one game."
->360</td>
-                                                                                                                        
-                                            <td class="forfeit-wins fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->26</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->26</td>
-                                                                                                                        
-                                            <td class="wins fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->33%</td>
-                                                                                                                        
-                                            <td class="draws fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->34%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->33%</td>
-                                                                                                                        
-                                            <td class="white-score fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->55%</td>
-                                                                                                                        
-                                            <td class="black-score fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->45%</td>
-                                                </tr>
-            </table>
+      </table>
 
 
-        </div>
-        
+    </div>
+  
+
 
   <script type="text/javascript">
     $(function () {

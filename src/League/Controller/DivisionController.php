@@ -45,46 +45,54 @@ class DivisionController extends AbstractLeagueController {
     return $this->debugResponse($matchDays);
   }
 
-  #[Route('{division}/statistik', name: 'statistik')]
+  #[Route('{division}/statistik', 'statistik')]
   public function statistics(StatisticsService $service): Response {
+
     $division_name = $this->division->name;
 
+    $all_games_division = $service->all_games_division($this->division);
     $teams_with_active_players = $service->teams_with_active_players($this->division);
     $active_teams_with_players = $service->active_teams_with_players($teams_with_active_players, $this->division);
+    $active_teams_with_parings = $service->active_teams_with_parings($this->division);
+    $topscorer_data = $service->calculate_topscorer($this->division);
+    $dwzData = [];
 
     // Check if any games have been played. Some leagues have been
     // created, but no games were ever played and entered into the system.
-    if (!empty($service->all_games_division($this->division))
-      && !empty($service->create_topscorer_table($this->division))
+    if (!empty($all_games_division)
+      && !empty($topscorer_data)
       && !empty($active_teams_with_players)) {
+      $dwzData = $service->teams_dwz_calculation($active_teams_with_players, $this->division);
+      $dwzAdditionalData = $service->dwz_statistics_additional_data($active_teams_with_players, $this->division);
 
-      $dwz_data = $service->create_dwz_statistics_table($this->division);
-      $dwz_table = $dwz_data['table'];
+      $teamGameScoreData = $service->team_game_score_data($active_teams_with_parings);
+      $teamGameScoreAdditionalData = $service->team_game_score_additional_data($this->division);
 
-      $topscorer_data = $service->create_topscorer_table($this->division);
-      $topscorer_table = $topscorer_data['table'];
+      $introTextValues['dwzTextValues'] = $dwzAdditionalData['dwzTextValues'];
 
-      $team_game_score_data = $service->create_team_game_score_table($this->division);
-      $team_game_score_table = $team_game_score_data['table'];
-
-      $intro_text_values = array_merge($dwz_data['text_values'], $topscorer_data['text_values'], $team_game_score_data['text_values']);
 
       return $this->renderWithLegacySystem('division/statistics.html.twig',
         [
           'division_name' => $division_name,
-          'intro_text_values' => $intro_text_values,
-          'dwz_table' => $dwz_table,
-          'topscorer_table' => $topscorer_table,
-          'team_game_score_table' => $team_game_score_table,
+          'introTextValues' => $introTextValues,
+          'dwzData' => $dwzData,
+          'dwzAdditionalData' => $dwzAdditionalData,
+          'topScorerData' => $topscorer_data,
+          'teamGameScoreData' => $teamGameScoreData,
+          'teamGameScoreAdditionalData' => $teamGameScoreAdditionalData,
           'tabs' => $this->divisionTabs('stats')
         ]);
-    } else {
+    }
+
+
+  else {
       // If no games have been played, just return the Division title.
       // This relies on "strict_variables: false" in twig.yaml. Else
       // the template would create errors due to missing content variables.
       return $this->renderWithLegacySystem('division/statistics.html.twig',
         [
           'division_name' => $division_name,
+          'tabs' => $this->divisionTabs('stats')
         ]);
     }
   }

@@ -56,7 +56,7 @@
   <h2>Kreisliga Ost</h2>
 
 
-      <ul class="nav nav-tabs mt-4 mb-4 d-print-none">
+    <ul class="nav nav-tabs mt-4 mb-4 d-print-none">
           <li class='nav-item'>
         <a class='nav-link  '
                     href='/ligen/bezirk1-1718/kreisliga-ost/'
@@ -81,934 +81,424 @@
       </ul>
 
 
-            <div class="statistics-container">
-            <p>Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine <strong>DWZ
-                    von 1479</strong> und ist
-                <strong>40</strong> Jahre alt.</p>
+      <div class="statistics-container">
+      <p>Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine <strong>DWZ
+          von 1479</strong> und ist
+        <strong>40</strong> Jahre alt.</p>
 
-            <p>Der Top-Scorer mit 7.5 Punkten aus 9 Partien ist:
-                                                <a href="/ligen/bezirk1-1718/s/482844/">Player 8721, 42110ee</a> (<a href="/ligen/bezirk1-1718/m/5153/">TSV Pattensen</a>).<br>
+      <p>Der Top-Scorer mit 7.5 Punkten aus 9 Partien ist:
+                                <a href="/ligen/bezirk1-1718/s/482844/">Player 8721, 42110ee</a> (<a href="/ligen/bezirk1-1718/m/5153/">TSV Pattensen</a>).<br>
 
-                                  Der Remisk&ouml;nig mit 7 Remis ist
-                                                    <a href="/ligen/bezirk1-1718/s/482868/">Player 8f15, 3155402</a> (<a href="/ligen/bezirk1-1718/m/5155/">SV Gretenberg 2</a>).
-                              </p>
+                  Der Remisk&ouml;nig mit 7 Remis ist
+                                    <a href="/ligen/bezirk1-1718/s/482868/">Player 8f15, 3155402</a> (<a href="/ligen/bezirk1-1718/m/5155/">SV Gretenberg 2</a>).
+              </p>
 
-            <p>22 Spiele wurden kampflos verloren gegeben, das sind
-                <strong>6%</strong>. Von
-                den 338 wirklich gespielten Partien sind
-                <strong>29%</strong> Remis ausgegangen. Die Wei&szlig;spieler haben
-                einen Score von <strong>48%</strong>, der Score von Schwarz ist
-                <strong>52%</strong>.</p>
+      <p>22 Spiele wurden kampflos verloren gegeben, das
+        sind
+        <strong>6%</strong>. Von
+        den 338 wirklich gespielten Partien sind
+        <strong>29%</strong> Remis ausgegangen. Die Wei&szlig;spieler
+        haben
+        einen Score von <strong>48%</strong>, der Score
+        von Schwarz ist
+        <strong>52%</strong>.</p>
 
-            <h4 class="mt-4">DWZ-Statistik</h4>
-                    <table class="nsv-table borders-bold text-center text-nowrap statistics-dwz">
+
+      <h4 class="mt-4">DWZ-Statistik</h4>
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-dwz">
         <tr>
-                                                                                
-                                <th class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Mannschaft</th>
-                                                                                
-                                <th class="active"   data-bs-toggle="tooltip" data-bs-placement="top" title="DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet."
->Eingesetzte</th>
-                                                                                
-                                <th class="top"   data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet."
->Top 8</th>
-                                                                                
-                                <th class="all"   data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet."
->Alle Spieler</th>
-                                                                                
-                                <th class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben."
->Alter Ø</th>
-                    </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+          <th class="team">Mannschaft</th>
+          <th
+            class="active"     data-bs-toggle="tooltip" data-bs-placement="top" title="DWZ Durchschnitt der Spieler, die tatsächlich gespielt haben. Spieler ohne DWZ werden als DWZ 700 gewertet."
 >
-                                <a href="/ligen/bezirk1-1718/m/5014/">SC Hämelerwald</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz fw-bold "   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1653</td>
-                                                                                                                        
-                                            <td class="top-dwz fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1698</td>
-                                                                                                                        
-                                            <td class="all-dwz fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1698</td>
-                                                                                                                        
-                                            <td class="age fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->46</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            Eingesetzte
+          </th>
+          <th
+            class="top"     data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ der Stammspieler. Spieler ohne DWZ werden als DWZ 700 gewertet."
 >
-                                <a href="/ligen/bezirk1-1718/m/5148/">SG Döhren-Gleid</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1595</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1661</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1661</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->42</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            Top 8</th>
+          <th
+            class="all"     data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliche DWZ von allen gemeldeten Spielern. Spieler ohne DWZ werden als DWZ 700 gewertet."
 >
-                                <a href="/ligen/bezirk1-1718/m/5068/">SK Lehrte 4</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1563</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1661</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1609</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->41</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            Alle Spieler
+          </th>
+          <th
+            class="age"     data-bs-toggle="tooltip" data-bs-placement="top" title="Durchschnittliches Alter der Spieler, die tatsächlich gespielt haben."
 >
-                                <a href="/ligen/bezirk1-1718/m/5153/">TSV Pattensen</a>
+            Alter &#8709;
+          </th>
+        </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5014/">SC Hämelerwald</a>
+            </td>
+            <td class="active-dwz fw-bold">1653</td>
+            <td class="top-dwz fw-bold">1698</td>
+            <td class="all-dwz fw-bold">1698</td>
+            <td class="age fw-bold">46</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5148/">SG Döhren-Gleid</a>
+            </td>
+            <td class="active-dwz">1595</td>
+            <td class="top-dwz">1661</td>
+            <td class="all-dwz">1661</td>
+            <td class="age">42</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5068/">SK Lehrte 4</a>
+            </td>
+            <td class="active-dwz">1563</td>
+            <td class="top-dwz">1661</td>
+            <td class="all-dwz">1609</td>
+            <td class="age">41</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5153/">TSV Pattensen</a>
+            </td>
+            <td class="active-dwz">1524</td>
+            <td class="top-dwz">1550</td>
+            <td class="all-dwz">1417</td>
+            <td class="age">41</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5169/">SZ Bemerode</a>
+            </td>
+            <td class="active-dwz">1473</td>
+            <td class="top-dwz">1598</td>
+            <td class="all-dwz">1362</td>
+            <td class="age">39</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5135/">SG WB Eilenriede 3</a>
+            </td>
+            <td class="active-dwz">1446</td>
+            <td class="top-dwz">1529</td>
+            <td class="all-dwz">1395</td>
+            <td class="age">43</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5155/">SV Gretenberg 2</a>
+            </td>
+            <td class="active-dwz">1442</td>
+            <td class="top-dwz">1476</td>
+            <td class="all-dwz">1183</td>
+            <td class="age">37</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5181/">HSK Lister Turm 5</a>
+            </td>
+            <td class="active-dwz">1423</td>
+            <td class="top-dwz">1441</td>
+            <td class="all-dwz">1353</td>
+            <td class="age">42</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5069/">SK Lehrte 5</a>
+            </td>
+            <td class="active-dwz">1387</td>
+            <td class="top-dwz">1558</td>
+            <td class="all-dwz">1485</td>
+            <td class="age">29</td>
+          </tr>
+                                                          
+          <tr>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5165/">SK Anderten 2</a>
+            </td>
+            <td class="active-dwz">1287</td>
+            <td class="top-dwz">1499</td>
+            <td class="all-dwz">1282</td>
+            <td class="age">36</td>
+          </tr>
+                <tr>
+          <td class="average-active fw-bold">Durchschnitt:</td>
+          <td class="average-active fw-bold">1479</td>
+          <td class="average-top fw-bold">1567</td>
+          <td class="average-all fw-bold">1445</td>
+          <td class="average-age fw-bold">40</td>
+        </tr>
+      </table>
+      <h4 class="mt-4">Topscorer</h4>
 
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1524</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1550</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1417</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->41</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5169/">SZ Bemerode</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1473</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1598</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1362</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->39</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5135/">SG WB Eilenriede 3</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1446</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1529</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1395</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->43</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5155/">SV Gretenberg 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1442</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1476</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1183</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->37</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5181/">HSK Lister Turm 5</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1423</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1441</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1353</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->42</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5069/">SK Lehrte 5</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1387</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1558</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1485</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->29</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5165/">SK Anderten 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="active-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1287</td>
-                                                                                                                        
-                                            <td class="top-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1499</td>
-                                                                                                                        
-                                            <td class="all-dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1282</td>
-                                                                                                                        
-                                            <td class="age"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->36</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="average-active fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Durchschnitt:</td>
-                                                                                                                        
-                                            <td class="average-active fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1479</td>
-                                                                                                                        
-                                            <td class="average-top fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1567</td>
-                                                                                                                        
-                                            <td class="average-all fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1445</td>
-                                                                                                                        
-                                            <td class="average-age fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->40</td>
-                                                </tr>
-            </table>
-
-
-            <h4 class="mt-4">Topscorer</h4>
-                    <table class="nsv-table borders-bold text-center text-nowrap statistics-topscorer">
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-topscorer">
         <tr>
-                                                                                
-                                <th class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Name</th>
-                                                                                
-                                <th class="rating-national"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->DWZ</th>
-                                                                                
-                                <th class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Mannschaft</th>
-                                                                                
-                                <th class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Brett</th>
-                                                                                
-                                <th class="games"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Partien</th>
-                                                                                
-                                <th class="points"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Punkte</th>
-                    </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/s/482844/">Player 8721, 42110ee</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1987</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5153/">TSV Pattensen</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->9</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->7.5</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/s/482845/">Player b77c, 3c6105f</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1697</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5153/">TSV Pattensen</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->8</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->7</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/s/480079/">Player b095, cba6be1</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1779</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5014/">SC Hämelerwald</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2-3</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->8</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->7</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/s/480082/">Player f46f, 3ca5cd6</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1694</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5014/">SC Hämelerwald</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->4-6</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->8</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->7</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/s/482774/">Player c6e0, 600c596</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1665</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5148/">SG Döhren-Gleid</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->3-4</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->9</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->7</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/s/483923/">Player b8dd, 86e2a8b</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1490</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5181/">HSK Lister Turm 5</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6-8</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->9</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->7</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/s/482776/">Player e557, 51ac9d5</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1554</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5148/">SG Döhren-Gleid</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->5-6</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->9</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6.5</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/s/480880/">Player 513d, 531101e</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1551</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5068/">SK Lehrte 4</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->5-6</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/s/480077/">Player 4673, abd6773</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1912</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5014/">SC Hämelerwald</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->8</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/s/482771/">Player 5dd9, ce3cb47</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="dwz"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1792</td>
-                                                                                                                        
-                                            <td class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5148/">SG Döhren-Gleid</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="board"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="games-count"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->9</td>
-                                                                                                                        
-                                            <td class="points fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->6</td>
-                                                </tr>
-            </table>
+          <th class="name">Name</th>
+          <th class="rating-national">DWZ</th>
+          <th class="team">Mannschaft</th>
+          <th class="board">Brett</th>
+          <th class="games">Partien</th>
+          <th class="points">Punkte</th>
+        </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/s/482844/">Player 8721, 42110ee</a></td>
+            <td class="dwz">1987</td>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5153/">TSV Pattensen</a></td>
+            <td class="board">1</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">7.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/s/482845/">Player b77c, 3c6105f</a></td>
+            <td class="dwz">1697</td>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5153/">TSV Pattensen</a></td>
+            <td class="board">2</td>
+            <td class="games-count">8</td>
+            <td class="points fw-bold">7</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/s/480079/">Player b095, cba6be1</a></td>
+            <td class="dwz">1779</td>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5014/">SC Hämelerwald</a></td>
+            <td class="board">2-3</td>
+            <td class="games-count">8</td>
+            <td class="points fw-bold">7</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/s/480082/">Player f46f, 3ca5cd6</a></td>
+            <td class="dwz">1694</td>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5014/">SC Hämelerwald</a></td>
+            <td class="board">4-6</td>
+            <td class="games-count">8</td>
+            <td class="points fw-bold">7</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/s/482774/">Player c6e0, 600c596</a></td>
+            <td class="dwz">1665</td>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5148/">SG Döhren-Gleid</a></td>
+            <td class="board">3-4</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">7</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/s/483923/">Player b8dd, 86e2a8b</a></td>
+            <td class="dwz">1490</td>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5181/">HSK Lister Turm 5</a></td>
+            <td class="board">6-8</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">7</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/s/482776/">Player e557, 51ac9d5</a></td>
+            <td class="dwz">1554</td>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5148/">SG Döhren-Gleid</a></td>
+            <td class="board">5-6</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">6.5</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/s/480880/">Player 513d, 531101e</a></td>
+            <td class="dwz">1551</td>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5068/">SK Lehrte 4</a></td>
+            <td class="board">5-6</td>
+            <td class="games-count">6</td>
+            <td class="points fw-bold">6</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/s/480077/">Player 4673, abd6773</a></td>
+            <td class="dwz">1912</td>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5014/">SC Hämelerwald</a></td>
+            <td class="board">1</td>
+            <td class="games-count">8</td>
+            <td class="points fw-bold">6</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/s/482771/">Player 5dd9, ce3cb47</a></td>
+            <td class="dwz">1792</td>
+            <td class="team"><a href="/ligen/bezirk1-1718/m/5148/">SG Döhren-Gleid</a></td>
+            <td class="board">1</td>
+            <td class="games-count">9</td>
+            <td class="points fw-bold">6</td>
+          </tr>
+              </table>
 
 
-            <h4 class="mt-4">Spiel-Statistik</h4>
-                    <table class="nsv-table borders-bold text-center text-nowrap statistics-games">
+      <h4 class="mt-4">Spiel-Statistik</h4>
+
+      <table class="nsv-table borders-bold text-center text-nowrap statistics-games">
         <tr>
-                                                                                
-                                <th class="team"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Mannschaft</th>
-                                                                                
-                                <th class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title="Wie viele Partien hat die Mannschaft bislang gespielt?"
->&sum;</th>
-                                                                                
-                                <th class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Siege"
->+</th>
-                                                                                
-                                <th class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Niederlagen"
->-</th>
-                                                                                
-                                <th class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title="Siege aus den wirklich gespielten Partien"
->1</th>
-                                                                                
-                                <th class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title="Remis"
->½</th>
-                                                                                
-                                <th class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title="Niederlagen"
->0</th>
-                                                                                
-                                <th class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Weiß"
->W</th>
-                                                                                
-                                <th class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Schwarz"
->S</th>
-                    </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+          <th class="team">Mannschaft</th>
+          <th
+            class="game-all-count border-left-bold"     data-bs-toggle="tooltip" data-bs-placement="top" title="Wie viele Partien hat die Mannschaft bislang gespielt?"
 >
-                                <a href="/ligen/bezirk1-1718/m/5014/">SC Hämelerwald</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->59</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->11</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->53%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->37%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->10%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->73%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->69%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            &sum;
+          </th>
+          <th
+            class="forfeit-wins"     data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Siege"
 >
-                                <a href="/ligen/bezirk1-1718/m/5148/">SG Döhren-Gleid</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->70</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->50%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->36%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->14%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->68%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->68%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            +
+          </th>
+          <th
+            class="forfeit-losses border-right-bold"     data-bs-toggle="tooltip" data-bs-placement="top" title="Kampflose Niederlagen"
 >
-                                <a href="/ligen/bezirk1-1718/m/5169/">SZ Bemerode</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->65</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->7</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->45%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->20%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->35%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->52%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->58%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            -
+          </th>
+          <th
+            class="wins"     data-bs-toggle="tooltip" data-bs-placement="top" title="Siege aus den wirklich gespielten Partien"
 >
-                                <a href="/ligen/bezirk1-1718/m/5135/">SG WB Eilenriede 3</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->69</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->3</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->42%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->26%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->32%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->53%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->57%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            1
+          </th>
+          <th
+            class="draws"     data-bs-toggle="tooltip" data-bs-placement="top" title="Remis"
 >
-                                <a href="/ligen/bezirk1-1718/m/5068/">SK Lehrte 4</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->70</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->2</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->44%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->20%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->36%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->53%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->56%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            &frac12;
+          </th>
+          <th
+            class="losses border-right-bold"     data-bs-toggle="tooltip" data-bs-placement="top" title="Niederlagen"
 >
-                                <a href="/ligen/bezirk1-1718/m/5153/">TSV Pattensen</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->72</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->36%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->33%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->31%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->51%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->54%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            0
+          </th>
+          <th
+            class="white-score"     data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Weiß"
 >
-                                <a href="/ligen/bezirk1-1718/m/5155/">SV Gretenberg 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->71</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->18%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->42%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->39%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->39%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->40%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
+            W
+          </th>
+          <th
+            class="black-score"     data-bs-toggle="tooltip" data-bs-placement="top" title="Score mit Schwarz"
 >
-                                <a href="/ligen/bezirk1-1718/m/5069/">SK Lehrte 5</a>
+            S
+          </th>
+        </tr>
 
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->71</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->24%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->31%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->45%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->31%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->47%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5181/">HSK Lister Turm 5</a>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/m/5014/">SC Hämelerwald</a></td>
+            <td class="game-all-count border-left-bold">59</td>
+            <td class="forfeit-wins">11</td>
+            <td class="forfeit-losses border-right-bold">2</td>
+            <td class="wins">53%</td>
+            <td class="draws">37%</td>
+            <td class="losses border-right-bold">10%</td>
+            <td class="white-score">73%</td>
+            <td class="black-score">69%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/m/5148/">SG Döhren-Gleid</a></td>
+            <td class="game-all-count border-left-bold">70</td>
+            <td class="forfeit-wins">2</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">50%</td>
+            <td class="draws">36%</td>
+            <td class="losses border-right-bold">14%</td>
+            <td class="white-score">68%</td>
+            <td class="black-score">68%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/m/5169/">SZ Bemerode</a></td>
+            <td class="game-all-count border-left-bold">65</td>
+            <td class="forfeit-wins">7</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">45%</td>
+            <td class="draws">20%</td>
+            <td class="losses border-right-bold">35%</td>
+            <td class="white-score">52%</td>
+            <td class="black-score">58%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/m/5135/">SG WB Eilenriede 3</a></td>
+            <td class="game-all-count border-left-bold">69</td>
+            <td class="forfeit-wins">0</td>
+            <td class="forfeit-losses border-right-bold">3</td>
+            <td class="wins">42%</td>
+            <td class="draws">26%</td>
+            <td class="losses border-right-bold">32%</td>
+            <td class="white-score">53%</td>
+            <td class="black-score">57%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/m/5068/">SK Lehrte 4</a></td>
+            <td class="game-all-count border-left-bold">70</td>
+            <td class="forfeit-wins">0</td>
+            <td class="forfeit-losses border-right-bold">2</td>
+            <td class="wins">44%</td>
+            <td class="draws">20%</td>
+            <td class="losses border-right-bold">36%</td>
+            <td class="white-score">53%</td>
+            <td class="black-score">56%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/m/5153/">TSV Pattensen</a></td>
+            <td class="game-all-count border-left-bold">72</td>
+            <td class="forfeit-wins">0</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">36%</td>
+            <td class="draws">33%</td>
+            <td class="losses border-right-bold">31%</td>
+            <td class="white-score">51%</td>
+            <td class="black-score">54%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/m/5155/">SV Gretenberg 2</a></td>
+            <td class="game-all-count border-left-bold">71</td>
+            <td class="forfeit-wins">0</td>
+            <td class="forfeit-losses border-right-bold">1</td>
+            <td class="wins">18%</td>
+            <td class="draws">42%</td>
+            <td class="losses border-right-bold">39%</td>
+            <td class="white-score">39%</td>
+            <td class="black-score">40%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/m/5069/">SK Lehrte 5</a></td>
+            <td class="game-all-count border-left-bold">71</td>
+            <td class="forfeit-wins">1</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">24%</td>
+            <td class="draws">31%</td>
+            <td class="losses border-right-bold">45%</td>
+            <td class="white-score">31%</td>
+            <td class="black-score">47%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/m/5181/">HSK Lister Turm 5</a></td>
+            <td class="game-all-count border-left-bold">72</td>
+            <td class="forfeit-wins">0</td>
+            <td class="forfeit-losses border-right-bold">0</td>
+            <td class="wins">24%</td>
+            <td class="draws">28%</td>
+            <td class="losses border-right-bold">49%</td>
+            <td class="white-score">39%</td>
+            <td class="black-score">36%</td>
+          </tr>
+                  <tr>
+            <td class="name"><a href="/ligen/bezirk1-1718/m/5165/">SK Anderten 2</a></td>
+            <td class="game-all-count border-left-bold">57</td>
+            <td class="forfeit-wins">1</td>
+            <td class="forfeit-losses border-right-bold">14</td>
+            <td class="wins">18%</td>
+            <td class="draws">21%</td>
+            <td class="losses border-right-bold">61%</td>
+            <td class="white-score">24%</td>
+            <td class="black-score">32%</td>
+          </tr>
+                <tr>
+          <td class="name fw-bold">Summe:</td>
+          <td
+            class="game-all-count border-left-bold fw-bold">360</td>
+          <td class="forfeit-wins fw-bold">22</td>
+          <td
+            class="forfeit-losses border-right-bold fw-bold">22</td>
+          <td class="wins fw-bold">35%</td>
+          <td class="draws fw-bold">29%</td>
+          <td class="losses border-right-bold fw-bold">35
+            %
+          </td>
+          <td class="white-score fw-bold">48%</td>
+          <td class="black-score fw-bold">52%</td>
+        </tr>
 
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->72</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->0</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->24%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->28%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->49%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->39%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->36%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->
-                                <a href="/ligen/bezirk1-1718/m/5165/">SK Anderten 2</a>
-
-                        </td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->57</td>
-                                                                                                                        
-                                            <td class="forfeit-wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->1</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->14</td>
-                                                                                                                        
-                                            <td class="wins"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->18%</td>
-                                                                                                                        
-                                            <td class="draws"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->21%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->61%</td>
-                                                                                                                        
-                                            <td class="white-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->24%</td>
-                                                                                                                        
-                                            <td class="black-score"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->32%</td>
-                                                </tr>
-                    <tr>
-                                                                                                    
-                                            <td class="name fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->Summe:</td>
-                                                                                                                        
-                                            <td class="game-all-count border-left-bold fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title="All games including forfeits. The sum is only half of the above, since always two players of different teams play one game."
->360</td>
-                                                                                                                        
-                                            <td class="forfeit-wins fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->22</td>
-                                                                                                                        
-                                            <td class="forfeit-losses border-right-bold fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->22</td>
-                                                                                                                        
-                                            <td class="wins fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->35%</td>
-                                                                                                                        
-                                            <td class="draws fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->29%</td>
-                                                                                                                        
-                                            <td class="losses border-right-bold fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->35%</td>
-                                                                                                                        
-                                            <td class="white-score fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->48%</td>
-                                                                                                                        
-                                            <td class="black-score fw-bold"   data-bs-toggle="tooltip" data-bs-placement="top" title=""
->52%</td>
-                                                </tr>
-            </table>
+      </table>
 
 
-        </div>
-        
+    </div>
+  
+
 
   <script type="text/javascript">
     $(function () {

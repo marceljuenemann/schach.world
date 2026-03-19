@@ -11,12 +11,34 @@
   <h2>BMM U12</h2>
 
 
-      <ul class="nav nav-tabs mt-4 mb-4 d-print-none">
+    <ul class="nav nav-tabs mt-4 mb-4 d-print-none">
+          <li class='nav-item'>
+        <a class='nav-link  '
+                    href='/ligen/sjbh-2021/bmm-u12/'
+        >
+          Spieltage
+        </a>
+              </li>
+          <li class='nav-item'>
+        <a class='nav-link  '
+                    href='/ligen/sjbh-2021/bmm-u12/spielplan/'
+        >
+          Spielplan
+        </a>
+              </li>
+          <li class='nav-item'>
+        <a class='nav-link active '
+                    href='/ligen/sjbh-2021/bmm-u12/statistik/'
+        >
+          Statistik
+        </a>
+              </li>
       </ul>
 
 
-            <p>Es wurden nicht genug Partien ausgetragen, um sinnvolle Statistik-Daten anzuzeigen.</p>
-    
+      <p>Es wurden nicht genug Partien ausgetragen, um sinnvolle Statistik-Daten anzuzeigen.</p>
+  
+
 
   <script type="text/javascript">
     $(function () {
