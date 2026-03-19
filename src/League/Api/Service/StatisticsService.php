@@ -707,6 +707,7 @@ class StatisticsService {
         $games_count = count($player['games']);
         $player['games_count'] = $games_count;
         // Collect the top scorers
+        unset($player['games']);
         if ($player['points'] == $highest_points_score && $games_count == $lowest_game_score) {
           $top_scorers[] = $player;
         }
