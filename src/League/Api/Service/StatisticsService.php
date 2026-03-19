@@ -369,6 +369,11 @@ class StatisticsService {
       } else {
         $team['active_age_average'] = intval(0);
       }
+      // We don't need the players and pairings anymore
+      unset($team['pairings']);
+      unset($team['active_players']);
+      unset($team['all_players']);
+      unset($team['top_x_players']);
     }
     // Sort by age to find the team with the highest age average
     uasort($active_teams_with_dwz, function($a, $b) {
