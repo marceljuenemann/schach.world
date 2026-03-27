@@ -479,6 +479,8 @@ class StatisticsService {
 
   /**
    * Calculate the data for the team game score "Spiel-Statistik"
+   * @TODO: Check ranking in tables and maybe introduce a tiebreak
+   * if multiple teams have the same values.
    */
   public function team_game_score_data($active_teams_with_parings) {
     $teams_game_scores = [];
@@ -849,6 +851,9 @@ class StatisticsService {
   /**
    * Sort the players by points first and by played games after that.
    * Who has played less games will be sorted further up.
+   * @TODO: Rankings could still need a tiebreak after this. Sort players
+   * after the other sorging maybe by DWZ and after that by ZPS number to be
+   * really unambiguous.
    */
   public function players_sorted_by_points_and_games($active_players_with_games) {
     uasort($active_players_with_games, function($a, $b) {
