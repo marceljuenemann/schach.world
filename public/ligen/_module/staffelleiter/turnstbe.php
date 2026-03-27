@@ -36,7 +36,7 @@
     // Mannschaften auflisten
     foreach ($teams as $team)
     {
-        echo "<tr><td>".$globals ['teams'][$team ['id']]."&nbsp;&nbsp;</td><td>
+        echo "<tr><td>".SED_escape($globals ['teams'][$team ['id']])."&nbsp;&nbsp;</td><td>
                 <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]&edit=0'><img src='$globals[systemicons]desk_nachmeldung.png' alt='Nachmeldungen' class='sed_admin_icon' />Nachmeldung</a>
                 <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spieler.png' alt='Spieler' class='sed_admin_icon' />Spieler</a>
                 <a style='text-decoration: none' href='m/$team[id]/'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Bearbeiten' class='sed_admin_icon' />Bearbeiten</a>
@@ -48,7 +48,7 @@
     $availableTeams = SED_Query('SELECT id FROM mannschaften WHERE turnier=? AND staffel=0 ORDER BY name, mnr, id', [$globals['tid']])->fetchAllAssociative();
     echo "<tr><td colspan='2'><input type='hidden' name='admin' value='turnstbe-$admin[userid]-$admin[session]' /><input type='hidden' name='staffel' value='$admin[staffel]' /><select name='addmann'>";
     foreach ($availableTeams as $team)
-      echo "<option value='".$team['id']."'>" . $globals['teams'][$team['id']] . "</option>";
+      echo "<option value='".$team['id']."'>" . SED_escape($globals['teams'][$team['id']]) . "</option>";
     echo "</select> <input type='submit' class='sed_submit' value='Hinzuf&uuml;gen' /></td></tr>";
 
     // Form End
