@@ -712,6 +712,7 @@ class StatisticsService {
           $top_scorers[] = $player;
         }
       }
+      $top_scorers = $this->sortTopDrawersScorers($top_scorers);
 
       $topscorerData['topTenScorers'] = $top_ten_scorers;
 
@@ -734,6 +735,7 @@ class StatisticsService {
           $draw_kings[] = $drawer;
         }
       }
+      $draw_kings = $this->sortTopDrawersScorers($draw_kings);
       // Create the text values for the top drawers
       $text_draw_kings = [];
       foreach ($draw_kings as $key => $drawer) {
@@ -751,6 +753,16 @@ class StatisticsService {
     }
 
     return $topscorerData;
+  }
+
+  /**
+   * Sort Top Drawers and Top Scorers by ZPS number
+   */
+  private function sortTopDrawersScorers($players): array {
+    uasort($players, function($a, $b) {
+      return [$b['player']->zps()] <=> [$a['player']->zps()];
+    });
+    return $players;
   }
 
   /*
