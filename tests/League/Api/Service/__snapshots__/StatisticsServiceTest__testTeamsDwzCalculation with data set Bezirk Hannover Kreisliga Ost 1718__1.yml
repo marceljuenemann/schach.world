@@ -1,9 +1,5 @@
 5014:
     team: { venueAccessible: false, accessibleToilet: false, __initializer__: null, __cloner__: null, __isInitialized__: true }
-    pairings: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }]
-    active_players: { 480077: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480078: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 480079: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480080: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480082: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480083: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480092: { player: { guest: false }, games_played: [{  }] }, 480084: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }] }, 480085: { player: { guest: false }, games_played: [{  }] }, 480089: { player: { guest: false }, games_played: [{  }, {  }] }, 480081: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }] }, 480088: { player: { guest: false }, games_played: [{  }] }, 480094: { player: { guest: false }, games_played: [{  }, {  }, {  }] } }
-    all_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
-    top_x_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
     active_dwz_average: 1653.0
     all_dwz_average: 1698.0
     top_x_dwz_average: 1698.0
@@ -14,10 +10,6 @@
     dwz_rank: top
 5148:
     team: { venueAccessible: false, accessibleToilet: false, __initializer__: null, __cloner__: null, __isInitialized__: true }
-    pairings: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }]
-    active_players: { 482771: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482772: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482774: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482775: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482776: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482777: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 482778: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482783: { player: { guest: false }, games_played: [{  }, {  }, {  }] }, 482773: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 488449: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }] } }
-    all_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
-    top_x_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
     active_dwz_average: 1595.0
     all_dwz_average: 1661.0
     top_x_dwz_average: 1661.0
@@ -28,10 +20,6 @@
     dwz_rank: normal
 5068:
     team: { venueAccessible: false, accessibleToilet: false, __initializer__: null, __cloner__: null, __isInitialized__: true }
-    pairings: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }]
-    active_players: { 480873: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480874: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480876: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 480877: { player: { guest: false }, games_played: [{  }, {  }, {  }] }, 480878: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }] }, 480879: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480882: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480895: { player: { guest: false }, games_played: [{  }, {  }] }, 480880: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 480881: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 480883: { player: { guest: false }, games_played: [{  }, {  }, {  }] }, 480875: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }] }, 480891: { player: { guest: false }, games_played: [{  }] }, 480886: { player: { guest: false }, games_played: [{  }] }, 480892: { player: { guest: false }, games_played: [{  }] }, 480890: { player: { guest: false }, games_played: [{  }] }, 480894: { player: { guest: false }, games_played: [{  }] } }
-    all_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
-    top_x_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
     active_dwz_average: 1563.0
     all_dwz_average: 1609.0
     top_x_dwz_average: 1661.0
@@ -42,10 +30,6 @@
     dwz_rank: normal
 5153:
     team: { venueAccessible: false, accessibleToilet: false, __initializer__: null, __cloner__: null, __isInitialized__: true }
-    pairings: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }]
-    active_players: { 482844: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482845: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482847: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482848: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 482849: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482851: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482852: { player: { guest: false }, games_played: [{  }, {  }] }, 482855: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 482853: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482846: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 482854: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }] }, 482850: { player: { guest: false }, games_played: [{  }] } }
-    all_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
-    top_x_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
     active_dwz_average: 1524.0
     all_dwz_average: 1417.0
     top_x_dwz_average: 1550.0
@@ -56,10 +40,6 @@
     dwz_rank: normal
 5169:
     team: { venueAccessible: false, accessibleToilet: false, __initializer__: null, __cloner__: null, __isInitialized__: true }
-    pairings: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }]
-    active_players: { 483055: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483056: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483057: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }] }, 483058: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 483061: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483063: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483067: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483062: { player: { guest: false }, games_played: [{  }] }, 483068: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 483070: { player: { guest: false }, games_played: [{  }, {  }] }, 483060: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }] }, 483064: { player: { guest: false }, games_played: [{  }, {  }, {  }] }, 488397: { player: { guest: false }, games_played: [{  }, {  }, {  }] }, 483072: { player: { guest: false }, games_played: [{  }] } }
-    all_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
-    top_x_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
     active_dwz_average: 1473.0
     all_dwz_average: 1362.0
     top_x_dwz_average: 1598.0
@@ -70,10 +50,6 @@
     dwz_rank: normal
 5135:
     team: { venueAccessible: false, accessibleToilet: false, __initializer__: null, __cloner__: null, __isInitialized__: true }
-    pairings: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }]
-    active_players: { 482108: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 482109: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482112: { player: { guest: false }, games_played: [{  }, {  }] }, 482113: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 482117: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482118: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482119: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482120: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 482110: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 482115: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 482116: { player: { guest: false }, games_played: [{  }, {  }] }, 482121: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }] }, 482114: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] } }
-    all_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
-    top_x_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
     active_dwz_average: 1446.0
     all_dwz_average: 1395.0
     top_x_dwz_average: 1529.0
@@ -84,10 +60,6 @@
     dwz_rank: normal
 5155:
     team: { venueAccessible: false, accessibleToilet: false, __initializer__: null, __cloner__: null, __isInitialized__: true }
-    pairings: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }]
-    active_players: { 482867: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482868: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482869: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482871: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482872: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482873: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482874: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482875: { player: { guest: false }, games_played: [{  }, {  }] }, 482866: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 482870: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 482876: { player: { guest: false }, games_played: [{  }] } }
-    all_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
-    top_x_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
     active_dwz_average: 1442.0
     all_dwz_average: 1183.0
     top_x_dwz_average: 1476.0
@@ -98,10 +70,6 @@
     dwz_rank: normal
 5181:
     team: { venueAccessible: false, accessibleToilet: false, __initializer__: null, __cloner__: null, __isInitialized__: true }
-    pairings: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }]
-    active_players: { 483241: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483242: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 483245: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483248: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483249: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 483250: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 483251: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 483923: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483243: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483244: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483124: { player: { guest: false }, games_played: [{  }] }, 483129: { player: { guest: false }, games_played: [{  }] }, 488261: { player: { guest: false }, games_played: [{  }] } }
-    all_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
-    top_x_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
     active_dwz_average: 1423.0
     all_dwz_average: 1353.0
     top_x_dwz_average: 1441.0
@@ -112,10 +80,6 @@
     dwz_rank: normal
 5069:
     team: { venueAccessible: false, accessibleToilet: false, __initializer__: null, __cloner__: null, __isInitialized__: true }
-    pairings: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }]
-    active_players: { 480885: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480886: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480889: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480890: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 480891: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 480911: { player: { guest: false }, games_played: [{  }] }, 480916: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 480917: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 480884: { player: { guest: false }, games_played: [{  }] }, 480894: { player: { guest: false }, games_played: [{  }, {  }, {  }] }, 480895: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 480892: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 480897: { player: { guest: false }, games_played: [{  }, {  }] }, 480900: { player: { guest: false }, games_played: [{  }] }, 480906: { player: { guest: false }, games_played: [{  }, {  }, {  }] }, 480898: { player: { guest: false }, games_played: [{  }] }, 480899: { player: { guest: false }, games_played: [{  }] }, 480905: { player: { guest: false }, games_played: [{  }] }, 480888: { player: { guest: false }, games_played: [{  }] } }
-    all_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
-    top_x_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
     active_dwz_average: 1387.0
     all_dwz_average: 1485.0
     top_x_dwz_average: 1558.0
@@ -126,10 +90,6 @@
     dwz_rank: normal
 5165:
     team: { venueAccessible: false, accessibleToilet: false, __initializer__: null, __cloner__: null, __isInitialized__: true }
-    pairings: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }]
-    active_players: { 482997: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }] }, 482998: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483000: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 483001: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }] }, 483002: { player: { guest: false }, games_played: [{  }, {  }, {  }] }, 483006: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }] }, 483007: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483008: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }, {  }] }, 483004: { player: { guest: false }, games_played: [{  }] }, 483009: { player: { guest: false }, games_played: [{  }, {  }, {  }] }, 483003: { player: { guest: false }, games_played: [{  }, {  }, {  }, {  }, {  }, {  }] }, 482999: { player: { guest: false }, games_played: [{  }, {  }] } }
-    all_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
-    top_x_players: [{ guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }, { guest: false }]
     active_dwz_average: 1287.0
     all_dwz_average: 1282.0
     top_x_dwz_average: 1499.0
