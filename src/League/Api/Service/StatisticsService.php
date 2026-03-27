@@ -759,7 +759,7 @@ class StatisticsService {
    * Sort Top Drawers and Top Scorers by ZPS number
    */
   private function sortTopDrawersScorers($players): array {
-    uasort($players, function($a, $b) {
+    usort($players, function($a, $b) {
       return [$b['player']->zps()] <=> [$a['player']->zps()];
     });
     return $players;
