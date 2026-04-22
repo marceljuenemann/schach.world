@@ -852,7 +852,7 @@ class StatisticsService {
    * Sort the players by points first and by played games after that.
    * Who has played less games will be sorted further up.
    * @TODO: Rankings could still need a tiebreak after this. Sort players
-   * after the other sorging maybe by DWZ and after that by ZPS number to be
+   * after the other sorting maybe by DWZ and after that by ZPS number to be
    * really unambiguous.
    */
   public function players_sorted_by_points_and_games($active_players_with_games) {

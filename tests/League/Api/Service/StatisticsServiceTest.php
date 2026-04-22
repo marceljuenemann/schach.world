@@ -1,16 +1,13 @@
 <?php
 
-namespace League\Api\Service;
+namespace Nsv\League\Api\Service;
 
 use Nsv\League\Api\Service\StatisticsService;
 use Nsv\League\Entity\Division;
 use PHPUnit\Framework\Attributes\DataProvider;
-use Spatie\Snapshots\MatchesSnapshots;
 use Tests\League\LeagueTestCase;
 
 class StatisticsServiceTest extends LeagueTestCase {
-  use MatchesSnapshots;
-
   private StatisticsService $statisticsService;
 
   protected function setUp(): void {
