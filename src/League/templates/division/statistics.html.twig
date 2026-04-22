@@ -5,11 +5,11 @@
 {% block content %}
   {{ nsv.tabNavigation(tabs) }}
 
-  {% if introTextValues %}
+  {% if topScorerData %}
     <div class="statistics-container">
       <p>Ein in dieser Staffel eingesetzter Spieler hat durchschnittlich eine <strong>DWZ
-          von {{ introTextValues.dwzTextValues.dwzActiveAverage }}</strong> und ist
-        <strong>{{ introTextValues.dwzTextValues.ageAverage }}</strong> Jahre alt.</p>
+          von {{ dwzAdditionalData.dwzTextValues.dwzActiveAverage }}</strong> und ist
+        <strong>{{ dwzAdditionalData.dwzTextValues.ageAverage }}</strong> Jahre alt.</p>
 
       <p>{% if topScorerData.text_values.text_top_scorers|length == 1 %}Der Top-Scorer mit {{ topScorerData.text_values.highest_point_score }} Punkten aus {{ topScorerData.text_values.lowest_game_score }} Partien ist:
         {% else %}

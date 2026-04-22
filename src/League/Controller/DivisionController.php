@@ -68,13 +68,9 @@ class DivisionController extends AbstractLeagueController {
       $teamGameScoreData = $service->team_game_score_data($active_teams_with_parings);
       $teamGameScoreAdditionalData = $service->team_game_score_additional_data($this->division);
 
-      $introTextValues['dwzTextValues'] = $dwzAdditionalData['dwzTextValues'];
-
-
       return $this->renderWithLegacySystem('division/statistics.html.twig',
         [
           'division_name' => $division_name,
-          'introTextValues' => $introTextValues,
           'dwzData' => $dwzData,
           'dwzAdditionalData' => $dwzAdditionalData,
           'topScorerData' => $topscorer_data,

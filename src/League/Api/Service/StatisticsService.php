@@ -369,15 +369,22 @@ class StatisticsService {
       } else {
         $team['active_age_average'] = intval(0);
       }
+      // We don't need the players and pairings anymore
+      unset($team['pairings']);
+      unset($team['active_players']);
+      unset($team['all_players']);
+      unset($team['top_x_players']);
     }
     // Sort by age to find the team with the highest age average
     uasort($active_teams_with_dwz, function($a, $b) {
       return [$b['active_age_average']] <=> [$a['active_age_average']];
     });
 
-
+    // Mark the teams with the highest age average
+    // so we can format that bold in the table
     foreach ($active_teams_with_dwz as &$team) {
-      if ($team['team']->id == reset($active_teams_with_dwz)['team']->id) {
+      $highestAgeAverage = reset($active_teams_with_dwz)['active_age_average'];
+      if ($team['active_age_average'] == $highestAgeAverage) {
         $team['age_rank'] = 'top';
       } else {
         $team['age_rank'] = 'normal';
@@ -388,10 +395,11 @@ class StatisticsService {
       return [$b['top_x_dwz_average']] <=> [$a['top_x_dwz_average']];
     });
 
-    // Mark the team with the highest all players DWZ average
+    // Mark the teams with the highest topX DWZ average
     // so we can format that bold in the table
     foreach ($active_teams_with_dwz as &$team) {
-      if ($team['team']->id == reset($active_teams_with_dwz)['team']->id) {
+      $highestTopxDwzAverage = reset($active_teams_with_dwz)['top_x_dwz_average'];
+      if ($team['top_x_dwz_average'] == $highestTopxDwzAverage) {
         $team['top_dwz_rank'] = 'top';
       } else {
         $team['top_dwz_rank'] = 'normal';
@@ -403,27 +411,29 @@ class StatisticsService {
       return [$b['all_dwz_average']] <=> [$a['all_dwz_average']];
     });
 
-    // Mark the team with the highest all players DWZ average
+    // Mark the teams with the highest all players DWZ average
     // so we can format that bold in the table
     foreach ($active_teams_with_dwz as &$team) {
-      if ($team['team']->id == reset($active_teams_with_dwz)['team']->id) {
+      $highestAllDwzAverage = reset($active_teams_with_dwz)['all_dwz_average'];
+      if ($team['all_dwz_average'] == $highestAllDwzAverage) {
         $team['all_dwz_rank'] = 'top';
       } else {
         $team['all_dwz_rank'] = 'normal';
       }
     }
 
-    // Sort the teams by the highest DWZ average
+    // Sort the teams by the highest active DWZ average
     uasort($active_teams_with_dwz, function($a, $b) {
       return [$b['active_dwz_average']] <=> [$a['active_dwz_average']];
     });
 
-    // Mark the team with the highest DWZ average
+    // Mark the teams with the highest active DWZ average
     // so we can format that bold in the table
     // We sort by this number last because this is the way
     // we display the table.
     foreach ($active_teams_with_dwz as &$team) {
-      if ($team['team']->id == reset($active_teams_with_dwz)['team']->id) {
+      $highestActiveDwzAverage = reset($active_teams_with_dwz)['active_dwz_average'];
+      if ($team['active_dwz_average'] == $highestActiveDwzAverage) {
         $team['dwz_rank'] = 'top';
       } else {
         $team['dwz_rank'] = 'normal';
@@ -469,6 +479,8 @@ class StatisticsService {
 
   /**
    * Calculate the data for the team game score "Spiel-Statistik"
+   * @TODO: Check ranking in tables and maybe introduce a tiebreak
+   * if multiple teams have the same values.
    */
   public function team_game_score_data($active_teams_with_parings) {
     $teams_game_scores = [];
@@ -689,7 +701,7 @@ class StatisticsService {
     $topscorerData = [];
 
     // Only do calculations if matches/games have been played.
-    if(!empty($active_players_with_games)) {
+    if (!empty($active_players_with_games)) {
       // find the topscorer(s) and the draw king(s)
       $first_player = reset($top_ten_scorers);
       $highest_points_score = $first_player['points'];
@@ -702,10 +714,12 @@ class StatisticsService {
         $games_count = count($player['games']);
         $player['games_count'] = $games_count;
         // Collect the top scorers
+        unset($player['games']);
         if ($player['points'] == $highest_points_score && $games_count == $lowest_game_score) {
           $top_scorers[] = $player;
         }
       }
+      $top_scorers = $this->sortTopDrawersScorers($top_scorers);
 
       $topscorerData['topTenScorers'] = $top_ten_scorers;
 
@@ -728,6 +742,7 @@ class StatisticsService {
           $draw_kings[] = $drawer;
         }
       }
+      $draw_kings = $this->sortTopDrawersScorers($draw_kings);
       // Create the text values for the top drawers
       $text_draw_kings = [];
       foreach ($draw_kings as $key => $drawer) {
@@ -745,6 +760,16 @@ class StatisticsService {
     }
 
     return $topscorerData;
+  }
+
+  /**
+   * Sort Top Drawers and Top Scorers by ZPS number
+   */
+  private function sortTopDrawersScorers($players): array {
+    usort($players, function($a, $b) {
+      return [$b['player']->zps()] <=> [$a['player']->zps()];
+    });
+    return $players;
   }
 
   /*
@@ -826,11 +851,14 @@ class StatisticsService {
   /**
    * Sort the players by points first and by played games after that.
    * Who has played less games will be sorted further up.
+   * @TODO: Rankings could still need a tiebreak after this. Sort players
+   * after the other sorting maybe by DWZ and after that by ZPS number to be
+   * really unambiguous.
    */
   public function players_sorted_by_points_and_games($active_players_with_games) {
     uasort($active_players_with_games, function($a, $b) {
       return [$b['points'], count($a['games']), $a['boards_played']]
-         <=> [$a['points'], count($b['games']), $b['boards_played']];
+        <=> [$a['points'], count($b['games']), $b['boards_played']];
     });
     return $active_players_with_games;
   }
