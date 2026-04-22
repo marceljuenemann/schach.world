@@ -11,7 +11,7 @@ $config->tournamentName = 'Testturnier';
 $config->deadline = '2035-12-27';
 $config->maxPlayers = 100;
 
-$config->managers = ['marcel', 'beni', 'joerg'];
+$config->managers = ['marcel', 'beni', 'joerg', 'geschaeftsfuehrer@nsv-online.de'];
 $config->emailCc = [
   'test-cc1@marcel.world',
   'test-cc2@marcel.world',
@@ -24,7 +24,7 @@ $config->links = [
 ];
 $config->termsAndConditions = "
   Ich stimme der Verarbeitung meiner personenbezogenen Daten zum Zwecke
-  der Turnierdurchführung sowie der Veröffentlichung von 
+  der Turnierdurchführung sowie der Veröffentlichung von
   Turnierergebnissen, Fotos und Partien zu.
   Ich erlaube die Weiterleitung meiner Daten an den Deutschen Schachbund
   und die FIDE zur DWZ- und ELO-Auswertung.
