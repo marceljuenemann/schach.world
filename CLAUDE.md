@@ -79,6 +79,18 @@ PHP tests use **snapshot assertions** (Spatie) extensively — HTML/JSON respons
 ### Database
 MySQL 5.7. Symfony manages two databases: `nsv-main` (league/app data) and optionally a DWZ mirror. WordPress uses its own separate database outside of Symfony. Doctrine migrations live in `/migrations/` and target entity manager `main`.
 
+### Registration system
+
+**Tournament config files** live outside `src/` at `/data/registration/{tournament}.php`. Each returns a `TournamentConfig` instance defining groups, constraints, additional fields, managers, deadline, and email settings. The tournament ID comes from the URL and is used to load the config dynamically.
+
+**DWZ null-coalescing pattern**: `PlayerRegistration` stores `null` for any field that matches the player's current DWZ data. At read time, `fromEntity()` falls back to the DWZ database value. This means: only store a value when it *differs* from DWZ. When writing code that reads registration data, always go through `fromEntity()` — never read entity fields directly for display.
+
+**Waiting list confirmation** is not a separate endpoint — it's a regular `PUT` update that sets `waitlist: false`. The controller detects the `waitlist→active` transition and sends a different confirmation email.
+
+**Manager access** is determined by WordPress auth (`Auth::isAdmin()` or matching `TournamentConfig->managers`). Managers see sensitive fields (contact details, year of birth, additional fields) and can bypass deadline and validation constraints.
+
+**Cross-group constraints** (`RegistrationConstraint`) cap combined registrations across multiple groups. Available slots for a group = minimum of (group limit, tournament limit, all applicable constraint limits). This logic lives in `Tournament` / `Group` Angular models, not on the server — the server only enforces group-level capacity.
+
 ## Git workflow
 Commit every meaningful piece of work automatically after completing it. When a request involves multiple distinct changes, commit each one separately with a descriptive message.
 
