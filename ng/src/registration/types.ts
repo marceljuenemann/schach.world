@@ -4,6 +4,7 @@ import { PlayerData } from "./player-data/player-data.component"
 export interface Config {
   id: string
   tournamentName: string
+  registrationStart?: string | null
   deadline: string
   maxPlayers?: number | null
   groups: GroupConfig[]

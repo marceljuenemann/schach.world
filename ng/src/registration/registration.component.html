@@ -9,12 +9,16 @@
 
 <div>
   <!-- Tooltip on a span as disabled buttons don't support tooltips. -->
-  <span [ngbTooltip]="this.mayOpenRegistration ? null : 'Anmeldeschluss verstrichen'" placement="bottom">
+  <span [ngbTooltip]="!tournament.registrationStarted ? 'Anmeldung ab ' + formatDate(tournament.config.registrationStart!) : (mayOpenRegistration ? null : 'Anmeldeschluss verstrichen')" placement="bottom">
     <button (click)="openRegistration()" [disabled]="!mayOpenRegistration" type="button" class="btn btn-primary">
       <span class="dashicons dashicons-plus" style="vertical-align: bottom"></span>
       Anmelden
     </button>
   </span>
+</div>
+
+<div class="text-muted mt-1" style="font-style: italic">
+  Anmeldeschluss: {{ formatDate(tournament.config.deadline) }}
 </div>
 
 @for (player of registeredPlayers; track $index) {
@@ -33,7 +37,12 @@
           <h4>Anmeldungen</h4>
           <div class="text-muted mt-1 mb-2" style="font-style: italic">
             @if (group.availableSlots != this.INFINITY) {
-              {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}, {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+              {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }},
+          @if (group.availableSlots == 0) {
+            Warteliste aktiv
+          } @else {
+            {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+          }
             } @else {
               {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
             }
@@ -55,7 +64,12 @@
                       <div><b>{{ group.name }}</b></div>
                       <div class="text-muted mt-1" style="font-style: italic">
                         @if (group.availableSlots != this.INFINITY) {
-                          {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}, {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+                          {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }},
+          @if (group.availableSlots == 0) {
+            Warteliste aktiv
+          } @else {
+            {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+          }
                         } @else {
                           {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
                         }

@@ -8,6 +8,7 @@ use Nsv\Registration\Api\Model\AdditionalFieldOption;
 
 $config = new TournamentConfig();
 $config->tournamentName = 'Testturnier';
+$config->registrationStart = '2024-01-18';
 $config->deadline = '2035-12-27';
 $config->maxPlayers = 100;
 

@@ -60,6 +60,37 @@ describe('Tournament', () => {
   })
 })
 
+describe('Tournament', () => {
+  describe('registrationStarted', () => {
+    it('should return true when no start date is configured', () => {
+      const tournament = new TournamentBuilder().config({registrationStart: null}).build()
+      expect(tournament.registrationStarted).toBe(true)
+    })
+
+    it('should return true when start date is in the past', () => {
+      const tournament = new TournamentBuilder().config({registrationStart: '2000-01-01'}).build()
+      expect(tournament.registrationStarted).toBe(true)
+    })
+
+    it('should return false when start date is in the future', () => {
+      const tournament = new TournamentBuilder().config({registrationStart: '2099-12-31'}).build()
+      expect(tournament.registrationStarted).toBe(false)
+    })
+  })
+
+  describe('deadlinePassed', () => {
+    it('should return false for a future deadline', () => {
+      const tournament = new TournamentBuilder().config({deadline: '2099-12-31'}).build()
+      expect(tournament.deadlinePassed).toBe(false)
+    })
+
+    it('should return true for a past deadline', () => {
+      const tournament = new TournamentBuilder().config({deadline: '2000-01-01'}).build()
+      expect(tournament.deadlinePassed).toBe(true)
+    })
+  })
+})
+
 describe('Group', () => {
   describe('availableSlots', () => {
     it('should return maxPlayers with no players', () => {

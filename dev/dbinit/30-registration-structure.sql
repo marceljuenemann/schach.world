@@ -28,6 +28,7 @@ CREATE TABLE `registration_players` (
   `id` int(11) NOT NULL,
   `tournament` varchar(20) NOT NULL,
   `tournament_group` varchar(20) NOT NULL,
+  `waitlist` tinyint(1) NOT NULL DEFAULT '0',
   `name` varchar(60) NOT NULL,
   `club` varchar(60) DEFAULT NULL,
   `zps` varchar(5) DEFAULT NULL,
