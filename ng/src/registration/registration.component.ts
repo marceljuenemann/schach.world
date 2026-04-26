@@ -160,6 +160,10 @@ export class RegistrationComponent implements OnInit {
     })
   }
 
+  formatDate(dateStr: string): string {
+    return new Intl.DateTimeFormat('de-DE', {day: 'numeric', month: 'long'}).format(new Date(dateStr))
+  }
+
   private async reloadPlayerList() {
     const players = await this.registrationService.players(this.tournament!.config.id)
     this.tournament = new Tournament(this.tournament!.config, players)
