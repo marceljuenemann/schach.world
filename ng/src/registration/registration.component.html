@@ -9,7 +9,7 @@
 
 <div>
   <!-- Tooltip on a span as disabled buttons don't support tooltips. -->
-  <span [ngbTooltip]="this.mayOpenRegistration ? null : 'Anmeldeschluss verstrichen'" placement="bottom">
+  <span [ngbTooltip]="!tournament.registrationStarted ? 'Anmeldung noch nicht geöffnet' : (mayOpenRegistration ? null : 'Anmeldeschluss verstrichen')" placement="bottom">
     <button (click)="openRegistration()" [disabled]="!mayOpenRegistration" type="button" class="btn btn-primary">
       <span class="dashicons dashicons-plus" style="vertical-align: bottom"></span>
       Anmelden
