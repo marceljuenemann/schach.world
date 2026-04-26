@@ -60,6 +60,20 @@ describe('Tournament', () => {
   })
 })
 
+describe('Tournament', () => {
+  describe('deadlinePassed', () => {
+    it('should return false for a future deadline', () => {
+      const tournament = new TournamentBuilder().config({deadline: '2099-12-31'}).build()
+      expect(tournament.deadlinePassed).toBe(false)
+    })
+
+    it('should return true for a past deadline', () => {
+      const tournament = new TournamentBuilder().config({deadline: '2000-01-01'}).build()
+      expect(tournament.deadlinePassed).toBe(true)
+    })
+  })
+})
+
 describe('Group', () => {
   describe('availableSlots', () => {
     it('should return maxPlayers with no players', () => {
