@@ -17,6 +17,13 @@
   </span>
 </div>
 
+<div class="text-muted mt-1" style="font-style: italic">
+  @if (tournament.config.registrationStart) {
+    Anmeldebeginn: {{ tournament.config.registrationStart | date: 'dd.MM.yyyy' }} &ndash;
+  }
+  Anmeldeschluss: {{ tournament.config.deadline | date: 'dd.MM.yyyy' }}
+</div>
+
 @for (player of registeredPlayers; track $index) {
   <div class="alert alert-success mt-3">
     {{player.playerData.name}} wurde angemeldet
@@ -33,7 +40,12 @@
           <h4>Anmeldungen</h4>
           <div class="text-muted mt-1 mb-2" style="font-style: italic">
             @if (group.availableSlots != this.INFINITY) {
-              {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}, {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+              {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }},
+          @if (group.availableSlots == 0) {
+            Warteliste aktiv
+          } @else {
+            {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+          }
             } @else {
               {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
             }
@@ -55,7 +67,12 @@
                       <div><b>{{ group.name }}</b></div>
                       <div class="text-muted mt-1" style="font-style: italic">
                         @if (group.availableSlots != this.INFINITY) {
-                          {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}, {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+                          {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }},
+          @if (group.availableSlots == 0) {
+            Warteliste aktiv
+          } @else {
+            {{ group.availableSlots }} {{ group.availableSlots != 1 ? 'freie Plätze' : 'freier Platz' }}
+          }
                         } @else {
                           {{ group.players.length }} {{ group.players.length != 1 ? 'Anmeldungen' : 'Anmeldung' }}
                         }
