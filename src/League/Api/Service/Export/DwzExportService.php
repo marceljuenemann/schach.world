@@ -4,6 +4,7 @@ namespace Nsv\League\Api\Service\Export;
 
 use DOMDocument;
 use DOMElement;
+use Nsv\League\Core\Encoding;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
@@ -83,7 +84,26 @@ class DwzExportService
         $root->appendChild($this->buildPlayers($dom, $players));
         $root->appendChild($this->buildGames($dom, $games, $playerNumbers));
 
-        return $dom->saveXML();
+        $xml = $dom->saveXML();
+        $this->validateXml($xml);
+        return $xml;
+    }
+
+    private function validateXml(string $xml): void
+    {
+        $dom = new DOMDocument();
+        $dom->loadXML($xml);
+
+        libxml_use_internal_errors(true);
+        $valid = $dom->schemaValidate(__DIR__ . '/DSB_DWZ_Tounament_2_5_1.xsd');
+        $errors = libxml_get_errors();
+        libxml_clear_errors();
+        libxml_use_internal_errors(false);
+
+        if (!$valid) {
+            $messages = array_map(fn(\LibXMLError $e) => trim($e->message) . " (line {$e->line})", $errors);
+            throw new \RuntimeException("Generated XML failed XSD validation:\n" . implode("\n", $messages));
+        }
     }
 
     /** @param Division[] $divisions */
@@ -119,7 +139,7 @@ class DwzExportService
     {
         $header = $dom->createElement('header');
         $this->el($dom, $header, 'creationDate', (new \DateTimeImmutable())->format(\DateTimeInterface::ATOM));
-        $this->el($dom, $header, 'sender', 'Norddeutscher Schachverband');  // TODO
+        $this->el($dom, $header, 'sender', 'Norddeutscher Schachverband');  // TODO: configurable
         $this->el($dom, $header, 'system', 'schach.world');
         $this->el($dom, $header, 'fileUUID', $this->randomUuid());
         return $header;
@@ -133,15 +153,16 @@ class DwzExportService
         string $endDate,
     ): DOMElement {
         $t = $dom->createElement('tournament');
-        $this->el($dom, $t, 'tournamentUUID', $this->stableUuid("nsv-league-{$league->id}"));  // TODO: Fix
-        $this->el($dom, $t, 'label', $league->name);  // TODO: ?
-        $this->el($dom, $t, 'tournamentType', 'TR');    // TODO: derive from league
-        $this->el($dom, $t, 'timecontrol', 'unbekannt'); // TODO: add to league/division config
+        $this->el($dom, $t, 'tournamentUUID', $this->stableUuid("nsv-league-{$league->id}"));  // TODO: Generate based on division IDs
+        $this->el($dom, $t, 'label', $league->name);  // TODO: configurable
+        $this->el($dom, $t, 'tournamentType', 'TR');  // Team Tournament, Round Robin.
+        $this->el($dom, $t, 'timecontrol', '90min für 40 Züge + 30min für Rest der Partie, 30s Aufschlag'); // TODO: configurable
         $this->el($dom, $t, 'rounds', (string) $rounds);
         $this->el($dom, $t, 'startDate', $startDate);
         $this->el($dom, $t, 'endDate', $endDate);
-        $this->el($dom, $t, 'location', 'Norddeutscher Schachverband'); // TODO: add to league config
-        // TODO: Add Altersklasse
+        $this->el($dom, $t, 'location', 'Norddeutscher Schachverband'); // TODO: configurable
+        $this->el($dom, $t, 'url', $league->uriWithHostAndScheme());
+        $this->el($dom, $t, 'ageClass', 'U20'); // TODO: configurable
         return $t;
     }
 
@@ -175,6 +196,7 @@ class DwzExportService
                 $this->el($dom, $el, 'numberClubMember', (string) $memberNrInt);
             }
         }
+        $this->el($dom, $el, 'club', Encoding::utf8_encode($player->team->nameWithNumber()));
 
         if ($player->elo !== null && $player->elo >= 1 && $player->elo <= 5000) {
             $this->el($dom, $el, 'fideRating', (string) $player->elo);
