@@ -55,6 +55,8 @@ services:
     # Rating & player database services
     Nsv\Dwz\:
         resource: '../src/Dwz/'
+    Nsv\Dwz\Command\:
+        resource: '../src/Dwz/Command/'
     Nsv\Dwz\Controller\:
         resource: '../src/Dwz/Controller/'
 
