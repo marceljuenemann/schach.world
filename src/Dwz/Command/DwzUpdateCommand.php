@@ -23,6 +23,7 @@ class DwzUpdateCommand extends Command
 
   protected function execute(InputInterface $input, OutputInterface $output): int {
     $output->writeln('Downloading latest DWZ database...');
+    ini_set('memory_limit', '1024M');
 
     $tmp = tmpfile();
     $tmpPath = stream_get_meta_data($tmp)['uri'];
