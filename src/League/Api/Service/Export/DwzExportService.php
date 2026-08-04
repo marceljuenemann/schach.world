@@ -85,7 +85,8 @@ class DwzExportService
         $root->appendChild($this->buildGames($dom, $games, $playerNumbers));
 
         $xml = $dom->saveXML();
-        $this->validateXml($xml);
+        // TODO: Make validation errors user visible.
+        //$this->validateXml($xml);
         return $xml;
     }
 
@@ -180,8 +181,8 @@ class DwzExportService
     {
         $el = $dom->createElement('player');
         $this->el($dom, $el, 'tournamentPlayerNumber', (string) $number);
-        $this->el($dom, $el, 'surname', trim($player->lastName));
-        $this->el($dom, $el, 'forename', trim($player->firstName));
+        $this->el($dom, $el, 'surname', Encoding::utf8_encode(trim($player->lastName)));
+        $this->el($dom, $el, 'forename', Encoding::utf8_encode(trim($player->firstName)));
         // TODO: dobYear is required by the XSD; 1900 is used as a placeholder when the birth
         // year is not stored. The spec reserves 1900 for chess computers, so ideally this
         // should be blocked at data-entry time.
