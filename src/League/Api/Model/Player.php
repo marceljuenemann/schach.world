@@ -54,7 +54,7 @@ class Player
     $result->isGuest = $player->isGuest();
     $result->lateRegistrationRound = $player->lateRegistrationRound ?: null;
     $result->uri = $player->uri();
-    $result->dsbUri = $result->zps ? DsbDatabase::playerRecordUri($result->zps) : null;
+    $result->dsbUri = DsbDatabase::playerSearchUri($result->lastName . ',' . $result->firstName);
     return $result;
   }
 }
