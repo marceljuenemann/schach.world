@@ -132,7 +132,7 @@ class DwzUpdateCommand extends Command
       $player->gender = $row[$index['Geschlecht']] ?: null;
       $player->yearOfBirth = (int) $row[$index['Geburtsjahr']];
       $player->dwz = $row[$index['DWZ']] !== '' ? (int) $row[$index['DWZ']] : null;
-      $player->elo = $row[$index['FIDE-Elozahl']] !== '' ? (int) $row[$index['FIDE-Elozahl']] : null;
+      $player->elo = $row[$index['FIDE-Elozahl']] ? (int) $row[$index['FIDE-Elozahl']] : null;
       // TODO: Previously the database cut WIM to WI. We should update any code that relies on that.
       $player->fideTitle = $row[$index['FIDE-Titel']] ? substr($row[$index['FIDE-Titel']], 0, 2) : null;
       $player->fideId = $row[$index['FIDE-ID']] !== '' ? (int) $row[$index['FIDE-ID']] : null;
