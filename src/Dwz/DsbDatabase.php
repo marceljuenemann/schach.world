@@ -15,6 +15,8 @@ class DsbDatabase
 
   /**
    * Returns link to the player search on the DSB website.
+   * 
+   * @param string $name Player name in the format "Last, First". MUST be UTF-8 encoded.
    */
   public static function playerSearchUri($name) {
     return self::PLAYER_SEARCH_URI . urlencode($name);
