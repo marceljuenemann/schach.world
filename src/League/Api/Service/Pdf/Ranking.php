@@ -63,6 +63,9 @@ class Ranking implements Element {
             return $data['text'];
           }, $cellData));
         }
+        if (isset($cellData['url'])) {
+          $cell->link = $cellData['url'];
+        }
       } else if ($cellData === 'xxx') {
         $cell->fill = true;
       } else {

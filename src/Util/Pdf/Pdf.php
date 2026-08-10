@@ -77,8 +77,7 @@ class Pdf extends Fpdf {
   }
 
   /**
-   * Executes the callback with a different font size. Also adjusts the
-   * line height proportionally.
+   * Executes the callback with a different font size.
    */
   public function withFontSize(int $fontSize, callable $callback): mixed {
     return $this->withFont(null, null, $fontSize, $callback);

@@ -72,6 +72,9 @@ class Cell implements Element {
         [$r, $g, $b] = $this->fill;
         $pdf->SetFillColor($r, $g, $b);
       }
+      if (str_starts_with($this->link, '/')) {
+        $this->link = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $this->link;
+      }
       $height = $this->height * $pdf->lineHeight;
       $pdf->Cell($this->width, $height, $this->text, $this->border,
         $height, $this->align, (bool) $this->fill, $this->link);

@@ -11,12 +11,8 @@ use Nsv\Util\Pdf\Text;
 
 /**
  * TODO:
- * - Adjust font size for long names (pairings and ranking)
- * - Render a footer
- * - Test in production (pdf-ng)
- * - URIs
- * - Fine tune player number width
  * - Add tests
+ *   - Get passing
  *   - NSV (5 x 8)
  *   - U12 (6 x 2 x 4)
  *   - Two matches
@@ -28,6 +24,12 @@ use Nsv\Util\Pdf\Text;
  *      - Table too wide
  *      - Comments with new line
  *      - Comments with HTML (ignore)
+ * - Adjust font size for long names (pairings and ranking)
+ * - Render a footer
+ * - Check TODOs
+ * - Test in production (pdf-ng)
+ * - Launch
+ * - Later: Delete old ranking code
  */
 class MatchDayPdf {
   private const SIDEBAR_WIDTH = 60;
@@ -39,7 +41,7 @@ class MatchDayPdf {
 
   public function __construct(private Division $division, private MatchDay $matchDay) {
     $this->pdf = new Pdf();
-    $this->pairingList = new PairingList($matchDay);
+    $this->pairingList = new PairingList($matchDay, $division->league->configPlayerNumbersWithTeamNumber);
     if (!empty($matchDay->legacyRanking)) {
       $this->ranking = new Ranking($matchDay->legacyRanking);
     }
@@ -185,6 +187,7 @@ class MatchDayPdf {
   }
 
   public function getResponse() {
+    // TODO: Use a better filename.
     return $this->pdf->asResponse('Hello.pdf', Encoding::UNICODE_ENABLED);
   }
 }
