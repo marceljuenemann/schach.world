@@ -1,6 +1,6 @@
 <?php
 
-namespace Nsv\League\Export\Pdf;
+namespace Nsv\League\Api\Service\Pdf;
 
 use Nsv\League\Api\Model\Game;
 use Nsv\League\Api\Model\MatchDay;

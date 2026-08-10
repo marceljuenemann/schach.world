@@ -3,13 +3,13 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Api\Service\MatchDayService;
+use Nsv\League\Api\Service\Pdf\MatchDayPdf;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Core\LegacySystem;
 use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
-use Nsv\League\Export\Pdf\MatchDayPdf;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Nsv\League\Api\Service\StatisticsService;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nsv\League\Export\Pdf;
+namespace Nsv\League\Api\Service\Pdf;
 
 use Nsv\League\Api\Model\MatchDay;
 use Nsv\League\Core\Encoding;
@@ -28,8 +28,6 @@ use Nsv\Util\Pdf\Text;
  *      - Table too wide
  *      - Comments with new line
  *      - Comments with HTML (ignore)
- * - Move into Service directory
- * - Move Service directory out of Api/
  */
 class MatchDayPdf {
   private const SIDEBAR_WIDTH = 60;
