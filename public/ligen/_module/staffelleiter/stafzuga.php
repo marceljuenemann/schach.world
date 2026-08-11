@@ -31,8 +31,8 @@
     $link = SED_TINYURL_Paarung ( $paarung ['id'] );
 		
 		// Ausgeben
-		echo $globals['teams'][$paarung ['mannschaft1']]." - ";
-    echo $globals['teams'][$paarung ['mannschaft2']].": ";
+		echo SED_escape($globals['teams'][$paarung ['mannschaft1']])." - ";
+    echo SED_escape($globals['teams'][$paarung ['mannschaft2']]).": ";
     echo "<a href='$link'>$link</a><br />";
 	}	  
 	echo "<br />";

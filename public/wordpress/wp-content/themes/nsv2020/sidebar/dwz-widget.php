@@ -23,8 +23,8 @@
   </form>
 
   <!-- Links -->
-  <a href="http://www.schachbund.de/verband/70000.html?toplist=100&sex=&age_from=0&age_to=140">Top 100</a> |
-  <a href="http://www.schachbund.de/verband/70000.html?toplist=100&sex=f&age_from=0&age_to=140">Top Frauen</a><br />
+  <a href="https://www.schachbund.de/dwz-verbaende/700.html?toplist=100&sex=">Top 100</a> |
+  <a href="https://www.schachbund.de/dwz-verbaende/700.html?toplist=100&sex=f">Top Frauen</a><br />
   <a href="http://www.schachbund.de/turnier.html?search=1&keyword=&zps=700&last_months=6">Neue Auswertungen</a><br />
   <a href="http://isewase.de">DWZ Berechnung</a>
 

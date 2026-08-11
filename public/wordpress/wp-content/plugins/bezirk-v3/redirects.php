@@ -25,8 +25,8 @@ $fixed = array (
     "/kreisklasse-west/" => "http://nsv-online.de/ligen/bezirk1/kreisklasse-west/",
     "/kreisklasse-ost/" => "http://nsv-online.de/ligen/bezirk1/kreisklasse-ost/",
     "/omm/" => "http://nsv-online.de/ligen/bezirk1/omm/",
-    "/hohlfeld/" => "https://nsv-online.de/ligen/bezirk1-2324/hohlfeld-pokal/",
-    "/pinnel-willeke/" => "https://nsv-online.de/ligen/bezirk1-2324/pinnel-willeke-pokal/",
+    "/hohlfeld/" => "https://nsv-online.de/ligen/bezirk1/hohlfeld-pokal/",
+    "/pinnel-willeke/" => "https://nsv-online.de/ligen/bezirk1/pinnel-willeke-pokal/",
   
     "/u12/" => "http://nsv-online.de/ligen/sjbh/bmm-u12/",
     "/u14/" => "http://nsv-online.de/ligen/sjbh/bmm-u14/",

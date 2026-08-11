@@ -2,6 +2,8 @@
 
 namespace Nsv\League\Controller;
 
+use Nsv\League\Api\Service\Export\DwzExportService;
+use Nsv\League\Entity\Division;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
@@ -13,6 +15,19 @@ use ZipArchive;
  */
 #[Route('/ligen/{league}/', name: 'league_export_')]
 class ExportController extends AbstractLeagueController {
+
+  /**
+   * XML Export for Nu DWZ calculation.
+   */
+  // TODO: Support multiple divisions, add configurations etc, make a REST endpoint.
+  #[Route('{divisionPath}/unstable/dwz-export/', name: 'dwz')]
+  public function dwzExport(string $divisionPath): Response {
+    $this->division = $this->league->divisionByPath($divisionPath);
+    $this->auth->requireDivisionManager();
+    $service = new DwzExportService();
+    $xml = $service->generateXml($this->league, [$this->division]);
+    return new Response($xml, 200, ['Content-Type' => 'application/xml']);
+  }
 
   /**
    * SWI Export for DWZ calculation.

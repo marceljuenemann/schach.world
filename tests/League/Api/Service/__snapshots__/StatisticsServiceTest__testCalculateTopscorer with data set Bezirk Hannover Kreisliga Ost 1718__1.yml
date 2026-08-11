@@ -1,0 +1,17 @@
+topTenScorers:
+    482844: { player: { guest: false }, points: 7.5, draws: 3, boards_played: 1, games_count: 9 }
+    482845: { player: { guest: false }, points: 7.0, draws: 2, boards_played: 2, games_count: 8 }
+    480079: { player: { guest: false }, points: 7.0, draws: 2, boards_played: 2-3, games_count: 8 }
+    480082: { player: { guest: false }, points: 7.0, draws: 2, boards_played: 4-6, games_count: 8 }
+    482774: { player: { guest: false }, points: 7.0, draws: 0, boards_played: 3-4, games_count: 9 }
+    483923: { player: { guest: false }, points: 7.0, draws: 2, boards_played: 6-8, games_count: 9 }
+    482776: { player: { guest: false }, points: 6.5, draws: 5, boards_played: 5-6, games_count: 9 }
+    480880: { player: { guest: false }, points: 6.0, draws: 0, boards_played: 5-6, games_count: 6 }
+    480077: { player: { guest: false }, points: 6.0, draws: 4, boards_played: 1, games_count: 8 }
+    482771: { player: { guest: false }, points: 6.0, draws: 2, boards_played: 1, games_count: 9 }
+text_values:
+    text_top_scorers: [{ player_name: 'Player 8721, 42110ee', player_uri: /ligen/bezirk1-1718/s/482844/, team_name: 'TSV Pattensen', team_uri: /ligen/bezirk1-1718/m/5153/ }]
+    text_draw_kings: [{ player_name: 'Player 8f15, 3155402', player_uri: /ligen/bezirk1-1718/s/482868/, team_name: 'SV Gretenberg 2', team_uri: /ligen/bezirk1-1718/m/5155/ }]
+    highest_point_score: 7.5
+    lowest_game_score: 9
+    highest_draw_score: 7

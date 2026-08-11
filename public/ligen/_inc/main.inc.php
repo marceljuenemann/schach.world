@@ -164,3 +164,10 @@ use Nsv\League\Core\Result;
   function SED_utf8_decode($str) {
     return Encoding::utf8_decode($str);
   }
+
+  /** 
+   * Escapes a string for output in HTML.
+   */
+  function SED_escape($str) {
+    return htmlspecialchars($str, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML5, Encoding::CHARSET);
+  }

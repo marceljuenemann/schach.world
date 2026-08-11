@@ -186,7 +186,7 @@
   //////////////////////////////////////////////////////////////////
 
   // Überschrift und Formularanfang
-  echo "<span class='sed_hl2'>".$g_m1->get("mannschaftsname")." - ".$g_m2->get("mannschaftsname")."</span><br /><br />";
+  echo "<span class='sed_hl2'>".SED_escape($g_m1->get("mannschaftsname"))." - ".SED_escape($g_m2->get("mannschaftsname"))."</span><br /><br />";
   echo "<form action='".SED_GenerateFormAction()."' method='post' name='eingabeform' style='text-align: left'><div>";
 
   // Ergebniseingabe
@@ -207,7 +207,7 @@
     // Stringerstellung: Spieler-Auswahl
     $heimspi = "";
     foreach ( $g_m1->getAufstellung () as $spieler )
-        $heimspi .= "<option value='s$spieler[id]'>$spieler[brettnr] ".SED_Spielername($spieler)."</option>";
+        $heimspi .= "<option value='s$spieler[id]'>$spieler[brettnr] ".SED_escape(SED_Spielername($spieler))."</option>";
     $heimspi .= "<option value='x'></option>";
     if ( $prefs ['spielNachmeldungen'] || isset ( $admin ) )
         $heimspi .= "<option value='n'>Nachmeldung...</option>";
@@ -215,7 +215,7 @@
     // Stringerstellung: Spieler-Auswahl
     $gastspi = "";
     foreach ( $g_m2->getAufstellung () as $spieler )
-        $gastspi .= "<option value='s$spieler[id]'>$spieler[brettnr] ".SED_Spielername($spieler)."</option>";
+        $gastspi .= "<option value='s$spieler[id]'>$spieler[brettnr] ".SED_escape(SED_Spielername($spieler))."</option>";
     $gastspi .= "<option value='x'></option>";
     if ( $prefs ['spielNachmeldungen'] || isset ( $admin ) )
         $gastspi .= "<option value='n'>Nachmeldung...</option>";

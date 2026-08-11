@@ -3,6 +3,7 @@
 namespace Nsv\League\Api\Model;
 
 use Nsv\Dwz\DsbDatabase;
+use Nsv\League\Core\Encoding;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity;
 
@@ -54,7 +55,7 @@ class Player
     $result->isGuest = $player->isGuest();
     $result->lateRegistrationRound = $player->lateRegistrationRound ?: null;
     $result->uri = $player->uri();
-    $result->dsbUri = $result->zps ? DsbDatabase::playerRecordUri($result->zps) : null;
+    $result->dsbUri = DsbDatabase::playerSearchUri(Encoding::utf8_encode($result->lastName . ',' . $result->firstName));
     return $result;
   }
 }

@@ -18,7 +18,7 @@
 
     // Vorbereitungen
     $team = new SED_Mannschaft ( $_GET ['mid'] );
-    echo "<span class='sed_hl2'>".$globals['teams'][$_GET['mid']]."</span><br /><br />";
+    echo "<span class='sed_hl2'>".SED_escape($globals['teams'][$_GET['mid']])."</span><br /><br />";
 
     // Berechtigung
     if ( $admin ["staffel"] && $team->get("staffel") && $admin ["staffel"]!=$team->get("staffel") )
@@ -52,7 +52,7 @@
         for ( $r = 1; $r <= $prefs ['runden']; ++$r )
             $nmR .= "<option value='$r'>Nachmeldung $r. Spieltag</option>";
 
-        // Formular Eigentschaften
+        // Formular Eigenschaften
         $form = array (
             // feld, Titel, size/options
             array ( "nachname", "Nachname", 20 ),
@@ -281,7 +281,7 @@
         echo "<td class='l'>";
         echo "<a href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$spieler[mannschaft]&edit=$spieler[id]'>";
         echo "<img src='$globals[systemicons]desk_bearbeiten.png' alt='Bearbeiten' class='sed_admin_icon' />";
-        echo SED_Spielername($spieler)."</a></td>";
+        echo SED_escape(SED_Spielername($spieler))."</a></td>";
 
         // DWZ
         echo "<td>$spieler[dwz]</td>";

@@ -61,8 +61,13 @@ tests/League/Api/Service/actual/
 .phpunit.result.cache
 ###< phpunit/phpunit ###
 
+###> psalm ###
+psalm.xml
+###> psalm ###
+
 ###> Ignore stuff used by Thomas for Development purposes only <###
 /src/League/Controller/UtilityController.php
 /src/League/templates/utility
 /public/utility
+/psalm.xml
 ###> Ignore stuff used by Thomas for Development purposes only <###

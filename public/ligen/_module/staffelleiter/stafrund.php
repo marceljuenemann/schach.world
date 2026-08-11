@@ -64,8 +64,8 @@
     echo "<span class='sed_hl2'>Liste der Empf&auml;nger</span><br /><br />";
     
     foreach ( $tos as $team => $empfaenger ){
-      echo "<b>".$globals['teams'][$team].":</b> ";
-      echo implode ( ", ", $empfaenger );
+      echo "<b>".SED_escape($globals['teams'][$team]).":</b> ";
+      echo implode ( ", ", array_map('SED_escape', $empfaenger) );
       echo "<br />";
     }
 ?>

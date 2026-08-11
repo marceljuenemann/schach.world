@@ -26,7 +26,7 @@ Bei folgenden Spielern konnte das System nicht feststellen, ob eine g&uuml;ltige
   <?php
     $result = SED_Query ( 'SELECT s.mannschaft, s.vorname, s.nachname, s.geburt, s.geschlecht FROM spieler as s INNER JOIN mannschaften as m ON s.mannschaft=m.id WHERE (s.zps is null OR s.zps=0) AND m.turnier=? ORDER BY m.name, s.nachname', [$globals['tid']])->fetchAllAssociative();
     foreach ( $result as $row )
-      echo "<td class='l'>$row[nachname], $row[vorname]</td><td>" .SED_TeamLink ( $row ['mannschaft'] ). "</td><td>$row[geburt]</td><td>$row[geschlecht]</td></tr>";
+      echo "<td class='l'>".SED_escape($row['nachname']).", ".SED_escape($row['vorname'])."</td><td>" .SED_TeamLink ( $row ['mannschaft'] ). "</td><td>$row[geburt]</td><td>$row[geschlecht]</td></tr>";
   ?>
 </table>
 </fieldset></div></form>

@@ -36,6 +36,11 @@ export class Tournament {
     return Math.max(this.config.maxPlayers - this.players.length, 0)
   }
 
+  get registrationStarted() {
+    if (!this.config.registrationStart) return true
+    return new Date() >= new Date(this.config.registrationStart)
+  }
+
   get deadlinePassed() {
     let deadline = new Date(this.config.deadline)
     deadline.setDate(deadline.getDate() + 1)

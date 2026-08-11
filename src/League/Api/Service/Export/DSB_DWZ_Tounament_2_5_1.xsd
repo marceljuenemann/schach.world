@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   xmlns="http://www.schachbund.de/XMLSchema"
+		   targetNamespace="http://www.schachbund.de/XMLSchema"
+		   elementFormDefault="qualified" version="2.5">
+	<xs:annotation>
+		<xs:documentation>
+			Organisation: Deutscher Schachbund e. V.
+			Author: Andreas Filmann
+
+			Version: 2.5.1
+			Date: 2026-05-30
+		</xs:documentation>
+		<xs:documentation>
+			Änderungen
+			==========
+			
+			2026-05-28: Finale Version bzgl. der Struktur
+			2026-05-30:	Ergänzungen Dokumentation
+			
+		</xs:documentation>
+		<xs:documentation xml:lang="en" >
+			The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
+			NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
+			"OPTIONAL" in this document are to be interpreted as described in
+			RFC 2119.
+		</xs:documentation>
+
+		<xs:documentation  xml:lang="de" >
+			Anforderungen als Ausdruck normativer Festlegungen werden durch die in Großbuchstaben geschriebenen
+			deutschen Schlüsselworte MUSS / MÜSSEN, DARF NICHT / DÜRFEN NICHT, VERPFLICHTEND, SOLLTE /
+			SOLLTEN, EMPFOHLEN, SOLLTE NICHT / SOLLTEN NICHT, KANN / KÖNNEN / DARF / DÜRFEN, und
+			OPTIONAL gekennzeichnet. Die verwendeten Schlüsselworte sind auf Basis der folgenden
+			Übersetzungstabelle gemäß [RFC-2119] zu interpretieren:
+
+			Deutsch							Englisch
+			MUSS / MÜSSEN					MUST
+			DARF NICHT / DÜRFEN NICHT		MUST NOT
+			VERPFLICHTEND					REQUIRED
+			SOLLTE / SOLLTEN				SHOULD
+			SOLLTE NICHT / SOLLTEN NICHT	SHOULD NOT
+			EMPFOHLEN						RECOMMENDED
+			OPTIONAL						OPTIONAL
+		</xs:documentation>
+		<xs:documentation xml:lang="de">
+			Anmerkungen
+			===========
+			
+			Spiegelt den Stand 2. HJ 2026 der Wertungsordnung des DSB wieder.
+			
+			Ziel der Datei: Daten für eine DWZ-Auswertung bereitzustellen. 
+			
+			Alle anderen denkbaren möglichen Anwendungsfälle von Turnierdateien stehen nicht im Fokus von diesem Format,
+			also z. B.: Darstellung von Mannschaftskämpfen, Kontrolle von Paarungen nach dem CH-System usw.
+
+			Basiert auf dem XML-Format für DeWiS.
+
+			Entfallen:
+			==========
+			* Mannschaftssektion
+			* Rundensektion, die Spieltermine nun direkt bei den einzelnen Partien
+
+			Änderungen
+			==========
+			* Zum Teil neue Elementnamen
+			* Partieergebnisse werden geändert dargestellt.
+			* Klarer geregelt, wie Ergebnisse ohne Gegner dargestellt werden (z. B. bei einem Spielfrei oder wenn kein Gegener beim Mannschaftskampf benannt worden ist)
+			* Keine leeres Element für Fide-ID bzw. 0 mehr möglich.
+			* Keine leeren Elemente Analog der Fide-ID auch bei anderen Elementen
+			* Optional ein Spieldatum bei der Partie
+
+			Neu
+			===
+			* Headersektion
+			* UUID für das Turnier - PFLICHTFELD
+			* Startdatum vom Turnier - PFLICHTFELD
+			* Spielort - PFLICHTFELD
+			* Altersklasse vom Turnier
+			* URL vom Turnier
+			* NU-Liga ID bei der Person
+			* optionale Header-Sektion
+			* Dokumentation innerhalb des XSD-Schemas
+			* Prüfungen auf key/keyref
+			* explizite Angabe, wenn kein Gegner benannt worden ist.
+		</xs:documentation>
+	</xs:annotation>
+	
+	<!-- -->
+	<xs:simpleType name="UUID">
+		<xs:annotation>
+			<xs:documentation>Ein „Universally Unique IDentifier (UUID)“ entsprechend rfc4122.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:normalizedString">
+			<xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- -->
+	
+	<!-- -->
+	<!-- Defines a integer with minimum 1 and maximum 999999 -->
+	<xs:simpleType name="IntegerMin1Max999999_Type">
+		<xs:annotation>
+			<xs:documentation>Defines a integer with minimum 1 and maximum 999999 </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- -->
+
+
+	<!-- -->
+	<xs:simpleType name="Vkz_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Die Vereinskennziffer vom Verein des Spielers.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="5"/>
+			<xs:pattern value="[A-Za-z0-9]{5}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- -->
+	<!-- Defines a integer with minimum 1 and maximum 99999 -->
+	<xs:simpleType name="MitgliedsNummer_Type">
+		<xs:annotation>
+			<xs:documentation>Defines a integer with minimum 1 and maximum 99999</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="99999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- -->
+	<!-- Defines a integer with minimum 1 and maximum 999 -->
+	<xs:simpleType name="RoundNumber_Type">
+		<xs:annotation>
+			<xs:documentation>Defines a integer with minimum 1 and maximum 999</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TournamentPlayerNumber_Type">
+		<xs:annotation>
+			<xs:documentation>Defines a integer with minimum 1 and maximum 999999 </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="FideNumber_Type">
+		<xs:annotation>
+			<xs:documentation>Defines a integer with minimum 1 and maximum 99999999999999 </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:long">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="99999999999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- -->
+	<!-- Defines a integer with minimum 1 and maximum 5000 -->
+	<xs:simpleType name="EloRating_Type">
+		<xs:annotation>
+			<xs:documentation>Defines a integer with minimum 1 and maximum 5000.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="5000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Sex_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">
+				Das Geschlecht im Spielbetrieb.
+				m: männlich
+				w: weiblich
+			</xs:documentation>
+			<xs:documentation xml:lang="en">
+				m: male
+				w: female
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="m"/>
+			<xs:enumeration value="w"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Score_Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">
+				0, 0.5 oder 1
+				============
+				Regulär erspielte Punkte. Diese werden für die DWZ-Auswertung verwendet!
+				AUSNAHME: Wenn ein noneBlackPlayer oder noneWhitePlayer angegeben ist, dann
+				erfolgt auch keine Auswertung.
+
+				+ oder -
+				========
+				Kampflose Wertungen => Wichtig: Es erfolgt keine DWZ-Änderung für die Person, bei der das Ergebnis so angegeben ist!
+				Mögliche Fälle: Die Partie wurde nicht gespielt, es wurde weniger als 1 Zug gemacht, Spielfrei, Schiedsrichterentscheidung
+			</xs:documentation>
+			<xs:documentation xml:lang="en">Regularly played game scores.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<!-- 0 => Loss -->
+			<xs:enumeration value="0"/>
+			<!-- 0.5 => Draw -->
+			<xs:enumeration value="0.5"/>
+			<!-- 1 => Win -->
+			<xs:enumeration value="1"/>
+			<!-- + => not played win -->
+			<xs:enumeration value="+" />
+			<!-- - => not played loss -->
+			<xs:enumeration value="-"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	
+	<!-- Mögliche Turnierarten -->
+	<xs:simpleType name="TurnierType_EnumType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">
+				Art des Turnieres.
+				Bei der Einreichung von hybriden Turnieren sind die besonderen Anforderungen zu beachten.
+				Siehe auch Punkt "4.2.4.6 Hybridturniere" in der Wertungsordnung.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="SR">
+				<xs:annotation>
+					<xs:documentation>Einzelturnier; jeder gegen jeden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SW">
+				<xs:annotation>
+					<xs:documentation>Einzelturnier; Schweizer System</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SC">
+				<xs:annotation>
+					<xs:documentation>Einzelturnier; K.O. System (Pokal)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TR">
+				<xs:annotation>
+					<xs:documentation>Mannschaftsturnier:; jeder gegen jeden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TW">
+				<xs:annotation>
+					<xs:documentation>Mannschaftsturnier:; Schweizer System</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TC">
+				<xs:annotation>
+					<xs:documentation>Mannschaftsturnier:; K.O. System (Pokal)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<!-- Hybride Turniere -->
+			<xs:enumeration value="SR-H">
+				<xs:annotation>
+					<xs:documentation>Hybrides Turnier; Einzelturnier; jeder gegen jeden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SW-H">
+				<xs:annotation>
+					<xs:documentation>Hybrides Turnier; Einzelturnier; Schweizer System</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SC-H">
+				<xs:annotation>
+					<xs:documentation>Hybrides Turnier; Einzelturnier; K.O. System (Pokal)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TR-H">
+				<xs:annotation>
+					<xs:documentation>Hybrides Turnier; Mannschaftsturnier:; jeder gegen jeden</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TW-H">
+				<xs:annotation>
+					<xs:documentation>Hybrides Turnier; Mannschaftsturnier:; Schweizer System</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TC-H">
+				<xs:annotation>
+					<xs:documentation>Hybrides Turnier; Mannschaftsturnier:; K.O. System (Pokal)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="header">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="creationDate" type="xs:dateTime">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Der Erstellungszeitpunkt der Datei.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="sender"  type="xs:string">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Die absendende Stelle. Dies kann eine Person oder eine Organisation sein.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="system" type="xs:string">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Das erzeugende Softwaresystem, welches die Datei erzeugt hat.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="fileUUID" type="UUID">
+					<xs:annotation>
+						<xs:documentation>
+							Dieses Element enthält den „Universally Unique IDentifier (UUID)“ der Datei, der das primäre Identifikationsmerkmal einer Datei darstellt.
+							Der UUID der Datei wird entsprechend rfc4122 gebildet und ermöglicht Datei hersteller- und anwendungsübergreifend weltweit eindeutig zu identifizieren.
+							Für jede Datei MUSS ein neuer UUID erzeugt werden, um eine eindeutige Identifikation der Datei sicherzustellen.
+							Insbesondere ist es nicht zulässig, in einer korrigierten Datei den UUID der ursprünglichen Datei wiederzuverwenden.
+							Sofern eine einmal erzeugte Datei ein weiteres Mal gesendet werden soll (bspw. aufgrund von Problemen beim Dateientransport), DARF NICHT der UUID angepasst werden.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="player">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tournamentPlayerNumber" type="TournamentPlayerNumber_Type">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Dieses Element enthält die Teilnehmernummer in dem Turnier und wird als Referenz bei den
+							Partien für die Person mit den weißen Steinen und für die Person mit den schwarzen Steinen
+							verwendet.
+							Jede Nummer DARF NICHT pro Datei mehrfach vergeben werden.
+							Es wird EMPFOHLEN, dass mit der 1 begonnen wird und die Nummern lückenlos sind.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="dsbId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="surname" type="xs:string">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Der Nachname der Person.
+							Grundsätzlich SOLLT bei DSB-Mitgliedern der Nachname so eingetragen werden, wie es in der Mitgliederverwaltung des DSB hinterlegt ist.
+							Wenn es nur einen Vornamen oder nur einen Nachnamen gibt, dann SOLLTE jeweils in `surname` und `forename` der Name eingetragen werden.
+							
+							Bei Verwendung von Schachcomputern oder -programmen usw. MUSS hier ###COMPUTER### eingetragen werden. Auch MUSS die Partie in dem Fall mit "-:-" gewertet werden.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="forename" type="xs:string">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Der Vorname der Person.
+							Wenn eine Person mehrere Vornamen hat, SOLLTEN diese alle in dem Feld eingetragen werden.
+							Grundsätzlich SOLLTE bei DSB-Mitgliedern der Vorname so eingetragen werden, wie es in der Mitgliederverwaltung des DSB hinterlegt ist.
+							Wenn es nur einen Vornamen oder nur einen Nachnamen gibt, dann SOLLTE jeweils in `surname` und `forename` der Name eingetragen werden.
+							
+							Bei Verwendung von Schachcomputern oder -programmen usw. MUSS hier ###COMPUTER### eingetragen werden. Auch MUSS die Partie in dem Fall mit "-:-" gewertet werden.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="dobYear" type="xs:gYear" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Das Geburtsjahr. Dieses wird für die DWZ-Auswertung herangezogen.
+							Es MUSS der gregorianische Kalender zu verwendet werden.
+							ES MUSS das korrekte Geburtsjahr eingetragen werden, Schätzungen DÜRFEN NICHT verwendet werden.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="dobDate" type="xs:date" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Dieses Element enthält das exakte Geburtsdatum.
+							Es ist der gregorianische Kalender zu verwenden.
+							Bei Nichtmitgliedern SOLLTE der Wert, wenn die Informationen vorliegen, eingetragen werden.
+							Dieses Feld wird zur Identifikation von Personen herangezogen.
+							Relevant für die DWZ-Auswertung ist das Element `dobYear`.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="vkz" type="Vkz_Type" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Bei DSB-Mitgliedern SOLLTE der Verein angegeben werden
+							Bei Nicht-Mitgliedern wird - sofern vorhanden und bekannt - EMPFHOLEN, die ehemalige Vkz anzugeben.
+							Bei Personen, die in mehreren Vereinen Mitglied sind, ist zu achten, daß die `numberClubMember` und die
+							`vkz` zugehörig sind.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="numberClubMember" type="MitgliedsNummer_Type" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Bei DSB-Mitgliedern SOLLTE die Mitgliedsnummer angegeben werden.
+							Bei Nicht-Mitgliedern wird - sofern vorhanden und bekannt - EMPFHOLEN, den ehemalige Mitgliedsnummer anzugeben..
+							Bei Personen, die in mehreren Vereinen Mitglied sind, ist zu achten, daß die `numberClubMember` und die
+							`vkz` zugehörig sind.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="club" type="xs:string" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Bei DSB-Mitgliedern ist der Vereinname anzugeben.
+							Bei Personen, die in mehreren Vereinen Mitglied sind, ist zu achten, daß die `club` und die
+							`vkz` zugehörig sind.
+							Bei Nicht-Mitgliedern wird - sofern vorhanden und bekannt - EMPFHOLEN, den ehemalige Vereinsname anzugeben.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="fideId" type="FideNumber_Type" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Es ist hier nur die Fide-ID anzugeben. Wenn es keine gibt oder sie nicht bekannt ist,
+							dann ist das Element nicht anzugeben. 0 DARF NICHT verwendet werden.
+							Auch DÜRFEN NICHT andere nationale Kennungen hier verwendet werden.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="fideRating" type="EloRating_Type" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Es ist die Fide-Elo einzutragen.
+							Es MUSS die jeweils zum Turnierende gültige Fide-ELO Zahl der Person hier eingetragen werden.
+							Wenn es keine gibt oder sie nicht bekannt ist, dann ist das Element nicht anzugeben. 0 DARF NICHT verwendet werden.
+							Auch DÜRFEN NICHT anderen nationalen Wertungszahlen in diesem Feld verwendet werde.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="sex" type="Sex_Type" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Bei Nichtmitgliedern SOLLTE das Geschlecht im Spielbetrieb eingetragen werden.
+							Dieses Element hat keinen Einfluß auf die DWZ-Auswertung.
+							Es dient zur Identifikation der Person.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="game">
+		<xs:annotation>
+			<xs:documentation>
+				Wenn bei einer Person "+" oder "-" angegeben ist, wird für diesen eine Person diese Partie nicht gewertet.
+				Die Summe der Punkte von Weiß und Schwarz darf nicht höher als 1 sein.
+				Aber ½:0 oder 0:½ sind erlaubt.
+				Ebenso ist erlaubt 0:- oder -:0.
+				Bei 0:- würde die Partie für Weiß DWZ gewertet werden (mit Niederlade), für Schwarz nicht.
+
+				Wenn es ein `noneWhitePlayer` oder `noneBlackPlayer` anstelle eines Spielers gibt, erfolgt für diese Partie
+				- unabhängig von den eingetragenen Punkten - keine DWZ-Auswertung.
+
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="round" type="RoundNumber_Type">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Die Rundennummer. Sie darf nicht höher sein, als die in "tournament/rounds" angegegbenen Rundenzahl.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="date" type="xs:date" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Es kann optional das Spieldatum angegeben werden.
+							Es ist das tatsächliche Datum anzugeben, nicht das angesetzte Datum (z. B. bei Spielverlegungen
+							von Mannschaftskämpfen).
+							Es ist erlaubt, daß es innerhalb einer Runde für verschiedene Partien unterschiedliche Spieltermine gibt.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="tournamentPlayerNumberWhite" type="TournamentPlayerNumber_Type">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">
+								Es ist hier die tournamentPlayerNumber des Spielers mit Weiß anzugeben.
+								Bei Mannschaftskämpfen kann OPTIONAL auch hier jeweils der Spieler der erstgenannten Mannschaft übergeben werden. Dies SOLLTE dann aber innerhalb einer Turnierdatei einheitlich gehandhabt werden.
+								Wenn es keinen Spieler mit den weißen Figuren gab, dann DARF NICHT eine 0 geliefert werden. In diesem Fall MUSS das Element "noneBlackPlayer" verwendet werden.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="noneWhitePlayer" type="xs:boolean" fixed="true">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">
+								Diese Element ist MUSS verwendet werden, wenn für die weißen Steine kein Gegener bennant worden ist oder ohne Gegner ausgelost worden ist.
+								Z. B. für Spielfrei oder wenn z. B. bei einem Mannschaftskampf kein Gegner benannt worden ist.
+								Wenn dies der Fall ist, wird für Schwarz die Partie NICHT gewertet. Auch wenn bei Schwarz z. B. eine 1 oder 0.5 usw. eingetragen ist.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+				<xs:choice>
+					<xs:element name="tournamentPlayerNumberBlack" type="TournamentPlayerNumber_Type">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">
+								Es ist hier die tournamentPlayerNumber des Spielers mit Schwarz anzugeben.
+								Bei Mannschaftskämpfen kann OPTIONAL auch hier jeweils der Spieler der zweitgenannten Mannschaft übergeben werden. Dies SOLLTE dann aber innerhalb einer Turnierdatei einheitlich gehandhabt werden.
+								Wenn es keinen Spieler mit den schwarzen Figuren gab, dann DARF NICHT eine 0 geliefert werden. In diesem Fall MUSS das Element "noneBlackPlayer" verwendet werden.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="noneBlackPlayer" type="xs:boolean" fixed="true">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">
+								Diese Element ist MUSS verwendet werden, wenn für die schwarzen Steine kein Gegener bennant worden ist oder ohne Gegner ausgelost worden ist.
+								Z. B. für Spielfrei oder wenn z. B. bei einem Mannschaftskampf kein Gegner benannt worden ist.
+								Wenn dies der Fall ist, wird für Weiß die Partie NICHT gewertet. Auch wenn bei Weiß z. B. eine 1 oder 0.5 usw. eingetragen ist.
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:choice>
+				<xs:element name="pointWhite" type="Score_Type">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Wenn diese Partie von einem Schachcomputer oder -programm gespielt worden ist, MUSS jeweils
+							"-" bei `pointWhite` und `pointBlack` angegeben werden - unabhängig von dem tatsächlichen Ergebnis.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="pointBlack" type="Score_Type"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DSB_DWZ_TournamentReport">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="header" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="tournament">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="tournamentUUID" type="UUID">
+								<xs:annotation>
+									<xs:documentation>
+										Dieses Element enthält den „Universally Unique IDentifier (UUID)“ des Turniers, der das primäre Identifikationsmerkmal eines Turniers darstellt.
+										Der UUID des Turniers wird entsprechend rfc4122 gebildet und ermöglicht ein Turnier hersteller- und anwendungsübergreifend weltweit eindeutig zu identifizieren.
+										Für jedes Turnier MUSS ein neuer UUID erzeugt werden, um eine eindeutige Identifikation des Turniers sicherzustellen.
+										Bei einer korrigierten Datei MUSS die ursprüngliche UUID wieder verwendet werden. Ebenso, wenn eine Datei (z. B. aufgrund von Transportproblemen)
+										erneut versendet werden soll.
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="label" type="xs:string">
+								<xs:annotation>
+									<xs:documentation xml:lang="de">Dieses Element enthält den Turniernamen. Er SOLLTE sprechend sein.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="tournamentType" type="TurnierType_EnumType">
+								<xs:annotation>
+									<xs:documentation xml:lang="de">Der Turniermodus.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="timecontrol" type="xs:string">
+								<xs:annotation>
+									<xs:documentation xml:lang="de">Die Bedenkzeitregelung.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="rounds" type="RoundNumber_Type">
+								<xs:annotation>
+									<xs:documentation xml:lang="de">
+										Die Gesamtanzahl der Runden.
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="startDate" type="xs:date">
+								<xs:annotation>
+									<xs:documentation xml:lang="de">
+										Es ist MUSS das tatsächliche Datum der ersten gespielten Partie eingetragen werden.
+										Insbesondere bei Verlegungen des Rundestermines DARF NICHT der ursprüngliche Termin verwendet,
+										sondern es MUSS tatsächliche Spielzeitpunkt angeben werden.
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="endDate" type="xs:date">
+								<xs:annotation>
+									<xs:documentation xml:lang="de">
+										Dieses Element enthält das Endedatum vom Turnier.
+										Es MUSS das tatsächliche Datum der letzten gespielten Partie eingetragen werden.
+										Insbesondere bei Verlegungen des Rundestermines DARF NICHT der ursprüngliche Termin verwendet,
+										sondern es MUSS tatsächliche Spielzeitpunkt angeben werden.
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="location" type="xs:string">
+								<xs:annotation>
+									<xs:documentation xml:lang="de">
+										Der Veranstaltungsort oder -region.
+										Bei einem Liga-Betrieb wird EMPFOHLEN die Region anzugeben, z. B. "Hessen" oder "Main-Vogelsberg-Schachverband".
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation xml:lang="de">Link zur Turnierwebseite.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="notes" type="xs:string" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation xml:lang="de">Anmerkungen</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="ageClass" type="xs:string" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation xml:lang="de">
+										Die Altersklasse, wichtig u. a. für die Validierung der Bedenkzeit.
+										Siehe "4.2.2 Bedenkzeiten" in der Wertungsordnung.
+									</xs:documentation>
+									<xs:documentation xml:lang="en">Age group</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="players">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Die Liste der Personen aus dem Turnier.
+							Eine Person sollte nur einmal aufgeführt sein.
+							Zurücktretende DÜRFEN NICHT gestrichen werden.
+							Personen, die fälschlicherweise in der Turniersoftware erfasst und ausgelost worden sind,
+							aber keine Partie gespielt haben, können OPTIONAL entfallen. In der Folge DARF NICHT dann aber auch diese
+							ausgeloste, aber nicht gespielte Partie, unter `games` aufgeführt werden.
+
+						</xs:documentation>		
+					</xs:annotation>						
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="player" minOccurs="2" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="games">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">
+							Die Partien, die zur DWZ-Auswertung eingereicht werden.
+							Zurücktretende DÜRFEN NICHT gestrichen werden.
+
+							Partien, die nicht gewertet werden dürfen, weil sie kampflos waren, spielfrei waren oder gegen
+							einen Schachcomputer gespielt sind, können OTIONAL auch komplett entfallen. Anderfalls MÜSSEN diese mit "+" oder "-" bei dem Ergebnis für Weiß oder Schwarz gekennzeichet werden.
+							OPTIONAL kann auch ein `noneBlackPlayer` bzw. `noneWhitePlayer` Element angegeben werden.
+							
+							Die Summe der erspielten erziehlen Punkte (also 0, 0.5 oder 1) von Weiß und Schwarz MUSS größer-gleich 0 und kleiner-gleich 1 sein.
+						</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="game" minOccurs="1" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:string">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Dateiformat-Version. Es ist "2.5" anzugeben.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+		<!-- Alle Turnier-Spieler-Nummer-Werte müssen eindeutig sein -->
+		<xs:key name="playerKey">
+			<xs:selector xpath="players/player"/>
+			<xs:field xpath="tournamentPlayerNumber"/>
+		</xs:key>
+		<!-- tournamentPlayerNumberWhite muss auf vorhandenen tournamentPlayerNumber zeigen -->
+		<xs:keyref name="whitePlayerRef" refer="playerKey">
+			<xs:selector xpath="games/game"/>
+			<xs:field xpath="tournamentPlayerNumberWhite"/>
+		</xs:keyref>
+		<!-- tournamentNumberPlayerBlack muss ebenfalls auf vorhandenen tournamentPlayerNumber zeigen -->
+		<xs:keyref name="blackPlayerRef" refer="playerKey">
+			<xs:selector xpath="games/game"/>
+			<xs:field xpath="tournamentPlayerNumberBlack"/>
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

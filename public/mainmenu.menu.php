@@ -53,16 +53,8 @@ $nsvMainmenu = array (
 	(bool) strstr ( $_SERVER ['PHP_SELF'], "/nsv-grandprix/" ),
 	"Turnieranmeldungen" => "/turnieranmeldung/",
 	"NSV-Grandprix" => "/nsv-grandprix/",
-	"NSV-Rapid Rumble" => "/nsv-rapid-rumble/",
-	"LEM 2026" => "2025/09/lem-2026-ausschreibung-und-anmeldungen/",
-	"Blitzeinzel 2025" => "2025/09/landesblitzeinzelmeisterschaft-2025-ausschreibung/",
-	"Blitzmannschaft 2025" => "2025/10/landesblitzmannschaftsmeisterschaft-2025-ausschreibung/",
-	"Schnellschacheinzelm. 2025" => "2025/05/gedon-hartge-triumphiert-beim-anderter-open-fm-knuedel-neuer-landesmeister/",
-	"Pokalmannschaftsm. 2024/25" => "2025/06/nsv-pokal-sk-nordhorn-blanke-mannschaftspokalmeister/",
-	"Frauenmeisterschaften 2025" => "2025/02/frauenschachpower-pur/",
-	"Frauenblitzschach 2025" => "2025/04/frauenblitzmeisterschaft-2025-bericht/",
-	"Frauenschnellschach 2025" => "2025/05/offene-niedersaechsische-frauenschnellschachmeisterschaft-2025-bericht/",
-	"Probleml&ouml;semeisterschaft 2025" => "2025/01/loesemeisterschaft-2025-bericht/",
+	"NSV Rapid Rumble" => "/nsv-rapid-rumble/",
+	"LEM 2026" => "2026/01/lem-2026-in-verden-neuer-landesmeister-ist-fm-felix-hampel/",
 ),
 
 "Referate" => array (

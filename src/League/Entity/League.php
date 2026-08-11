@@ -182,6 +182,10 @@ class League
     return "/ligen/{$this->path}/";
   }
 
+  public function uriWithHostAndScheme() {
+    return "https://" . $_SERVER['HTTP_HOST'] . $this->uri();
+  }
+
   /**
    * @throws NotFoundHttpException
    */

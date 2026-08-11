@@ -19,6 +19,12 @@ class TournamentConfig {
   public string $tournamentName;
 
   /**
+   * Date from which registration is open. If not set, registration is open immediately.
+   */
+  #[Assert\Date]
+  public ?string $registrationStart = null;
+
+  /**
    * Date until which registration is open.
    */
   #[Assert\Date]

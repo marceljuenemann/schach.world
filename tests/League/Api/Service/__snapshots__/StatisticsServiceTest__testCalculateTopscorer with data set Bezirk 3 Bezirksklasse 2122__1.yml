@@ -1,0 +1,17 @@
+topTenScorers:
+    514078: { player: { guest: false }, points: 5.5, draws: 1, boards_played: 3-6, games_count: 6 }
+    513891: { player: { guest: false }, points: 4.5, draws: 3, boards_played: 3-4, games_count: 6 }
+    513581: { player: { guest: false }, points: 4.0, draws: 2, boards_played: 3-4, games_count: 5 }
+    513888: { player: { guest: false }, points: 4.0, draws: 2, boards_played: 1, games_count: 6 }
+    513762: { player: { guest: false }, points: 3.5, draws: 1, boards_played: 3-5, games_count: 4 }
+    514076: { player: { guest: false }, points: 3.5, draws: 1, boards_played: 1-4, games_count: 5 }
+    513584: { player: { guest: false }, points: 3.5, draws: 1, boards_played: 5-6, games_count: 5 }
+    513729: { player: { guest: false }, points: 3.0, draws: 2, boards_played: 1-4, games_count: 4 }
+    517108: { player: { guest: false }, points: 3.0, draws: 0, boards_played: 5, games_count: 4 }
+    514234: { player: { guest: false }, points: 3.0, draws: 0, boards_played: 3-4, games_count: 5 }
+text_values:
+    text_top_scorers: [{ player_name: 'Player d309, c73e36c', player_uri: /ligen/bezirk3-2122/s/514078/, team_name: 'SK Duderstadt', team_uri: /ligen/bezirk3-2122/m/6911/ }]
+    text_draw_kings: [{ player_name: 'Player a953, 0385784', player_uri: /ligen/bezirk3-2122/s/513892/, team_name: 'Bad Lauterberg', team_uri: /ligen/bezirk3-2122/m/6902/ }]
+    highest_point_score: 5.5
+    lowest_game_score: 6
+    highest_draw_score: 4

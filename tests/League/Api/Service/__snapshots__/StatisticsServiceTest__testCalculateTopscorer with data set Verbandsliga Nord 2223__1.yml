@@ -1,0 +1,17 @@
+topTenScorers:
+    519612: { player: { guest: false }, points: 7.5, draws: 1, boards_played: 2-4, games_count: 9 }
+    519609: { player: { guest: false }, points: 6.0, draws: 2, boards_played: 1-2, games_count: 7 }
+    518284: { player: { guest: false }, points: 5.5, draws: 1, boards_played: 3-5, games_count: 6 }
+    518954: { player: { guest: false }, points: 5.5, draws: 1, boards_played: 4-7, games_count: 8 }
+    518009: { player: { guest: false }, points: 5.5, draws: 1, boards_played: 4-6, games_count: 9 }
+    518403: { player: { guest: false }, points: 5.5, draws: 1, boards_played: 4-7, games_count: 9 }
+    519617: { player: { guest: false }, points: 5.5, draws: 3, boards_played: 5-8, games_count: 9 }
+    518285: { player: { guest: false }, points: 5.0, draws: 0, boards_played: 4-6, games_count: 6 }
+    518555: { player: { guest: false }, points: 5.0, draws: 4, boards_played: 1, games_count: 8 }
+    518008: { player: { guest: false }, points: 5.0, draws: 2, boards_played: 3-5, games_count: 8 }
+text_values:
+    text_top_scorers: [{ player_name: 'FM Player 42fa, 2738000', player_uri: /ligen/nsv-2223/s/519612/, team_name: 'SF LHW', team_uri: /ligen/nsv-2223/m/7218/ }]
+    text_draw_kings: [{ player_name: 'Player fe20, f78ed50', player_uri: /ligen/nsv-2223/s/518142/, team_name: 'SK Verden', team_uri: /ligen/nsv-2223/m/7122/ }]
+    highest_point_score: 7.5
+    lowest_game_score: 9
+    highest_draw_score: 7

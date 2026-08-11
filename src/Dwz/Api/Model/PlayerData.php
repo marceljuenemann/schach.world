@@ -68,7 +68,7 @@ class PlayerData
     }
     $data->fideId = $player->fideId;
     $data->fideCountry = $player->fideCountry;
-    $data->uri = DsbDatabase::playerRecordUri($player->fullZps());
+    $data->uri = DsbDatabase::playerSearchUri($player->name);
     return $data;
   }
 }

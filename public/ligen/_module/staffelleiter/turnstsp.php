@@ -163,10 +163,10 @@
     // Mannschaftsauswahl
     $options = "";
     foreach ( $rsrcTeamsStaffel as $team )
-      $options .= "<option value='$team[id]'>" . $globals ['teams'][$team ['id']] . "</option>";
+      $options .= "<option value='$team[id]'>" . SED_escape($globals ['teams'][$team ['id']]) . "</option>";
     $options .= "<option value='0'>----------------</option>";
     foreach ( $rsrcTeamsAlle as $team )
-      $options .= "<option value='$team[id]'>" . $globals ['teams'][$team ['id']] . "</option>";
+      $options .= "<option value='$team[id]'>" . SED_escape($globals ['teams'][$team ['id']]) . "</option>";
 
     // Buttons
     echo "<tr id='PV-3'><td colspan='2' style='background: #eeeeee;'><select id='PV-3-A'>$options</select> gegen <select id='PV-3-B'>$options</select> <input type='button' value='Hinzuf&uuml;gen' onclick='OnAddPaar();' class='sed_submit' /></td></tr>";
@@ -195,7 +195,7 @@
     foreach( $rsrcTeamsStaffel as $team )
     {
       // Nummer und Mannschaft ausgeben
-      echo "<tr><td>$i.</td><td id='KT-$i-N' class='l'><a href='javascript:var dummy=1;' onclick='QuickAdd($team[id]);'>" . $globals ['teams'][$team ['id']] . "</a>&nbsp;&nbsp;</td>";
+      echo "<tr><td>$i.</td><td id='KT-$i-N' class='l'><a href='javascript:var dummy=1;' onclick='QuickAdd($team[id]);'>" . SED_escape($globals ['teams'][$team ['id']]) . "</a>&nbsp;&nbsp;</td>";
 
       // Zelle ausgeben. Wird von Javascript gefüllt
       for ( $j = 1; $j <= count($rsrcTeamsStaffel); ++$j )
@@ -228,7 +228,7 @@
     $i = 1;
     foreach ( $rsrcTeamsStaffel as $team )
     {
-      echo "<tr><td id='KM-$i-N' class='l'>" . $globals ['teams'][$team ['id']] . "&nbsp;&nbsp;</td><td id='KM-$i-1'></td><td id='KM-$i-2'></td></tr>";
+      echo "<tr><td id='KM-$i-N' class='l'>" . SED_escape($globals ['teams'][$team ['id']]) . "&nbsp;&nbsp;</td><td id='KM-$i-1'></td><td id='KM-$i-2'></td></tr>";
       $i++;
     }
     echo "</table><br /><br /></td>";

@@ -137,7 +137,7 @@
                 <?php
                     $zusatzfelder = SED_Query('SELECT * FROM anmeldungZusatzfelder a INNER JOIN mannschaften m ON m.id=a.mannschaft WHERE m.turnier=? AND inhalt<>\'\' ORDER BY m.name, a.feldname', [$globals['tid']])->fetchAllAssociative();
                     foreach ($zusatzfelder as $tmp)
-                        echo "<tr><td>".$globals['teams'][$tmp['mannschaft']]."</td><td>".$tmp['feldname']."</td><td>".nl2br($tmp['inhalt'])."</td></tr>";
+                        echo "<tr><td>".SED_escape($globals['teams'][$tmp['mannschaft']])."</td><td>".SED_escape($tmp['feldname'])."</td><td>".nl2br(SED_escape($tmp['inhalt']))."</td></tr>";
                 ?>
             </table>
     <?php

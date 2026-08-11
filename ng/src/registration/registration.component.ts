@@ -106,7 +106,7 @@ export class RegistrationComponent implements OnInit {
       JSON.parse(this.configString),
       JSON.parse(this.playersString)
     )
-    this.mayOpenRegistration = !this.tournament.deadlinePassed || this.isManager
+    this.mayOpenRegistration = this.tournament.registrationStarted && (!this.tournament.deadlinePassed || this.isManager)
     for (const field of this.tournament.config.additionalFields || []) {
       this.tableOptions.columns.splice(this.tableOptions.columns.length - 2, 0, {
         id: `additionalField-${field.id}`,
@@ -158,6 +158,10 @@ export class RegistrationComponent implements OnInit {
         this.reloadPlayerList()
       }
     })
+  }
+
+  formatDate(dateStr: string): string {
+    return new Intl.DateTimeFormat('de-DE', {day: 'numeric', month: 'long'}).format(new Date(dateStr))
   }
 
   private async reloadPlayerList() {

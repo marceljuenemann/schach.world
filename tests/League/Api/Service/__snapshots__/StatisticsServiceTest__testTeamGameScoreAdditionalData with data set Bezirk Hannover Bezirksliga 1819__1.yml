@@ -1,0 +1,16 @@
+average_scores:
+    sum_game_count: 360
+    sum_forfeit_wins: 30
+    sum_forfeit_losses: 30
+    average_wins: 25.0
+    average_draws: 49.0
+    average_losses: 25.0
+    average_white_score: 53.0
+    average_black_score: 47.0
+text_values:
+    sum_forfeit_losses: 30
+    forfeit_percentage: 8.0
+    sum_game_count_played: 330
+    average_draws: 49.0
+    average_white_score: 53.0
+    average_black_score: 47.0

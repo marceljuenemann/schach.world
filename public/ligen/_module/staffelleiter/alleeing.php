@@ -109,7 +109,7 @@
     // Vorbereitungen für Ausrichter
     $xwai = "";
     foreach ( $globals ['teams'] as $id=>$name )
-      $xwai .= "<option value='$id'>$name</option>";
+      $xwai .= "<option value='$id'>".SED_escape($name)."</option>";
     $xwai = SED_SelectOption ( $xwai, $g_paarung ['ausrichter'] );
 
     echo "<form action='".SED_GenerateFormAction()."' method='post' name='zusatzform' style='text-align: left'><div>";
