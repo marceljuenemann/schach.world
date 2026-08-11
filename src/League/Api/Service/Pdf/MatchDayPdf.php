@@ -11,8 +11,6 @@ use Nsv\Util\Pdf\Text;
 
 /**
  * TODO:
- * - Adjust font size for long names (pairings and ranking)
- * - Check TODOs
  * - Test in production (pdf-ng vs. pdf)
  * - Launch
  *   - Implement redirect
@@ -191,6 +189,7 @@ class MatchDayPdf {
   }
 
   public function getResponse() {
+    $this->pdf->SetTitle($this->division->name . ' - ' . $this->matchDay->round . '. Spieltag');
     $filename = $this->division->path() . '-R' . $this->matchDay->round . '.pdf';
     return $this->pdf->asResponse($filename, Encoding::UNICODE_ENABLED);
   }

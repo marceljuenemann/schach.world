@@ -11,8 +11,6 @@ use Symfony\Component\HttpFoundation\Response;
 class Pdf extends Fpdf {
   const DEFAULT_FONT_SIZE = 9;
 
-  // TODO: set title and other metadata.
-
   public float $lineHeight;
   public int $lastPage = 1;
 
@@ -61,13 +59,12 @@ class Pdf extends Fpdf {
   public function fontSize(): float {
     return $this->FontSizePt;
   }
-  
+
   /**
    * Executes the callback with the given font family and style.
    * 
    * Any null values indicate that the current value should be kept.
    */
-  // TODO: Add a withLineHeight method?
   public function withFont(string | null $family, string | null $style, int | null $size, callable $callback): mixed {
     $prevFamily = $this->FontFamily;
     $prevStyle = $this->FontStyle;
