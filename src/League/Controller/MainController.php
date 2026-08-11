@@ -66,8 +66,6 @@ class MainController extends AbstractLeagueController {
     $playerDialogParams = null;
     $editPlayerDialogParams = [];
     if ($allowPlayerEdit) {
-      $roundCount = $teamEntity->division->config('rounds');
-
       // A team's ZPS can contain multiple club numbers concatenated if it's a union of clubs.
       // Just use the first club for DWZ search suggestions.
       $preferredZps = $teamEntity->zps ? substr($teamEntity->zps, 0, DsbDatabase::ZPS_CLUB_LENGTH) : null;
@@ -75,6 +73,7 @@ class MainController extends AbstractLeagueController {
       // Preselect the current round for late registration, unless the season hasn't started yet.
       $closestRound = $scheduleService->closestRound($teamEntity->division, date('Y-m-d'));
       $currentRound = ($closestRound && $closestRound->round > 1) ? $closestRound->round : null;
+      $roundCount = $teamEntity->division->config('rounds');
 
       $playerDialogParams = json_encode(Encoding::deep_utf8_encode([
         'teamId' => $teamId,
