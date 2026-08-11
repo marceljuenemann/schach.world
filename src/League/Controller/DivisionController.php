@@ -3,6 +3,7 @@
 namespace Nsv\League\Controller;
 
 use Nsv\League\Api\Service\MatchDayService;
+use Nsv\League\Api\Service\Pdf\MatchDayPdf;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Core\LeagueAuthState;
@@ -107,6 +108,14 @@ class DivisionController extends AbstractLeagueController {
     return $response;
   }
 
+  #[Route('{division}/{round}/pdf-ng/', name: 'matchday_pdf')]
+  public function matchday_pdf(int $round, MatchDayService $service): Response {
+    $matchDay = $this->matchday_model($service, $round);
+    $pdf = new MatchDayPdf($this->division, $matchDay, $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST']);
+    $pdf->render();
+    return $pdf->getResponse();
+  }
+
   #[Route('{division}/{round}/pgn/', name: 'pgn')]
   public function pgn(PgnService $pgnService, int $round): Response {
     $response = new Response($pgnService->renderPgn($this->division, $this->division->round($round)));
@@ -135,7 +144,8 @@ class DivisionController extends AbstractLeagueController {
       'tabs' => $this->divisionTabs()
     ]);
   }
-
+  
+  // TODO: Delete.
   private function matchday_model(MatchDayService $service, int $round) {
     return $service->matchDay($this->division, $round);
   }

@@ -21,7 +21,7 @@ class Division
 
   #[ORM\ManyToOne(targetEntity: League::class, inversedBy: 'divisions')]
   #[ORM\JoinColumn(name: "turnier", referencedColumnName: "id")]
-  private $league;
+  private League $league;
 
   #[ORM\Column(length: 30)]
   private string $name;

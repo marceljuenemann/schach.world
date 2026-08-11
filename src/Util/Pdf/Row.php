@@ -1,0 +1,114 @@
+<?php
+
+namespace Nsv\Util\Pdf;
+
+/**
+ * A row of Cells. The Y position will automatically be set to the next row / line
+ * after rendering.
+ */
+class Row implements Element, \IteratorAggregate {
+
+  private $cells = [];
+
+  public float $marginBottom = 0;
+
+  public function addCell(Cell $cell) {
+    $this->cells[] = $cell;
+  }
+
+  public function cell(int $index): Cell {
+    return $this->cells[$index];
+  }
+
+  public function length(): int {
+    return count($this->cells);
+  }
+
+  public function getIterator(): \Traversable {
+    return new \ArrayIterator($this->cells);
+  }
+
+  public function width(): float {
+    return array_sum(array_map(fn($cell) => $cell->width + $cell->marginRight, $this->cells));
+  }
+
+  /**
+   * Returns the height of the row, which is defined as the 
+   * maximum cell height in the row. The unit is in lines (line heights).
+   */
+  public function height(): float {
+    return max(array_map(fn($cell) => $cell->height, $this->cells));
+  }
+  
+  /**
+   * Sets the height of all cells in the row.
+   */
+  public function setCellHeight(float $height) {
+    foreach ($this->cells as $cell) {
+      $cell->height = $height;
+    }
+  }
+
+  /**
+   * Sets the fill property of all cells in the row.
+   */
+  public function setFill(bool | array $fill) {
+    foreach ($this->cells as $cell) {
+      $cell->fill = $fill;
+    }
+  }
+
+  /**
+   * Sets the font style of all cells in the row.
+   */
+  public function setStyle(string $fontStyle) {
+    foreach ($this->cells as $cell) {
+      $cell->fontStyle = $fontStyle;
+    }
+  }
+
+  /**
+   * Cells with no width set will be assigned a width such that
+   * all available horizontal space is distributed equally to the cells.
+   */
+  public function layout(Pdf $pdf) {
+    $availableWidth = $pdf->GetPageWidth() - $pdf->GetRightMargin() - $pdf->GetX();
+    $cellsToGrow = [];
+    foreach ($this->cells as $cell) {
+      if ($cell->width) {
+        $availableWidth -= $cell->width;
+      } else {
+        $cellsToGrow[] = $cell;
+      }
+    }
+
+    if (count($cellsToGrow)) {
+      $width = (float) $availableWidth / count($cellsToGrow);
+      foreach ($cellsToGrow as $cell) {
+        $cell->width = $width;
+      }
+    }
+  }
+
+  public function render(Pdf $pdf) {
+    // TODO: Just use height() instead of keeping track of maxY?
+    // Remember that each Cell element will set the cursor to the next line,
+    // without changing the X position.
+    $page = $pdf->PageNo();
+    $y = $pdf->GetY();
+    $maxY = $y;
+    foreach ($this->cells as $cell) {
+      $cell->render($pdf);
+      if ($pdf->PageNo() > $page) {
+        // Row is rendered on the next page, adjust Y position.
+        $y = $pdf->GetTopMargin();
+        $maxY = $pdf->GetY();
+        $page = $pdf->PageNo();
+      } else {
+        $maxY = max($pdf->GetY(), $maxY);
+      }
+      $pdf->SetXY($pdf->GetX() + $cell->width + $cell->marginRight, $y);
+    }
+    $pdf->SetXY($pdf->GetLeftMargin(), $maxY + $this->marginBottom);
+  }
+}
