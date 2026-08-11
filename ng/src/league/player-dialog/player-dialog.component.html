@@ -22,9 +22,12 @@
       [editable]="false"
     />
     <label for="typeahead-player-name">Nachname, Vorname</label>
+    @for (error of (errors?.validationErrors?.['lastName'] || errors?.validationErrors?.['firstName']); track error.message) {
+      <div class="small text-danger">{{ error.message }}</div>
+    }
   </div>
 
-  <nsv-form [form]="form" [columns]="2" (keyup.enter)="saveDialog()"></nsv-form>
-  <nsv-form [form]="registrationForm" (keyup.enter)="saveDialog()"></nsv-form>
+  <nsv-form [form]="form" [columns]="2" [validationErrors]="errors?.validationErrors" (keyup.enter)="saveDialog()"></nsv-form>
+  <nsv-form [form]="registrationForm" [validationErrors]="errors?.validationErrors" (keyup.enter)="saveDialog()"></nsv-form>
 </div>
 <nsv-dialog-footer [dialog]="this"></nsv-dialog-footer>

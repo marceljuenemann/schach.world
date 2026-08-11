@@ -12,6 +12,7 @@ class Player
   // Note: Unfortunately, the DSB database only contains male or female :(
   const GENDER_MALE = 'm';
   const GENDER_FEMALE = 'w';
+  const GENDER_DIVERSE = 'd';
 
   #[ORM\Id]
   #[ORM\GeneratedValue]

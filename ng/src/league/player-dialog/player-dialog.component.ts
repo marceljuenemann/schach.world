@@ -7,6 +7,7 @@ import { IntControl, NsvFormGroup, SelectControl, TextControl } from '../../core
 import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvDialog } from '../../core/dialog/dialog';
 import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer.component';
+import { CreateOrUpdatePlayerData, LeagueService } from '../league.service';
 
 export interface PlayerDialogParams {
   teamId: number
@@ -48,7 +49,7 @@ export class PlayerDialog extends NsvDialog<PlayerDialogParams> {
   })
 
   registrationForm = new NsvFormGroup({
-    round: new SelectControl('Nachmeldung', [
+    lateRegistrationRound: new SelectControl('Nachmeldung', [
       {label: 'Regulärer Spieler', value: ''},
       ...Array.from({length: this.params.roundCount}, (_, i) => ({
         label: `Nachmeldung ${i + 1}. Spieltag`,
@@ -57,7 +58,7 @@ export class PlayerDialog extends NsvDialog<PlayerDialogParams> {
     ]),
   })
 
-  constructor(private dwz: DwzService) {
+  constructor(private dwz: DwzService, private leagueService: LeagueService) {
     super()
     this.selectedPlayer.valueChanges.subscribe(player => {
       if (player?.data) {
@@ -76,9 +77,9 @@ export class PlayerDialog extends NsvDialog<PlayerDialogParams> {
       const player = this.params.player
       this.selectedPlayer.setValue({name: `${player.lastName}, ${player.firstName}`})
       this.form.patchValue(player)
-      this.registrationForm.patchValue({round: player.lateRegistrationRound ? String(player.lateRegistrationRound) : ''})
+      this.registrationForm.patchValue({lateRegistrationRound: player.lateRegistrationRound ? String(player.lateRegistrationRound) : ''})
     } else if (this.params.currentRound) {
-      this.registrationForm.patchValue({round: String(this.params.currentRound)})
+      this.registrationForm.patchValue({lateRegistrationRound: String(this.params.currentRound)})
     }
   }
 
@@ -107,13 +108,33 @@ export class PlayerDialog extends NsvDialog<PlayerDialogParams> {
   }
   formatter = (player: PlayerOption) => player.name
 
-  // Saving isn't implemented yet — keep the Save button disabled until the
-  // next step wires this up to a real save().
   override get isValid() {
-    return false
+    return !!this.selectedPlayer.value && this.form.valid && this.registrationForm.valid
   }
 
   override save(): Promise<void> {
-    return Promise.resolve()
+    const name = this.selectedPlayer.value?.name || ''
+    const commaIndex = name.indexOf(',')
+    const lastName = (commaIndex >= 0 ? name.slice(0, commaIndex) : name).trim()
+    const firstName = (commaIndex >= 0 ? name.slice(commaIndex + 1) : '').trim()
+
+    const round = this.registrationForm.controls.lateRegistrationRound.value
+    const formValue = this.form.transformedValue
+
+    const data: CreateOrUpdatePlayerData = {
+      firstName,
+      lastName,
+      title: formValue['title'],
+      zps: formValue['zps'],
+      dwz: formValue['dwz'],
+      elo: formValue['elo'],
+      yearOfBirth: formValue['yearOfBirth'],
+      gender: (formValue['gender'] || '').toLowerCase(),
+      lateRegistrationRound: round ? parseInt(round) : null,
+    }
+
+    return this.editing
+      ? this.leagueService.updatePlayer(this.params.teamId, this.params.player!.id, data)
+      : this.leagueService.createPlayer(this.params.teamId, data)
   }
 }

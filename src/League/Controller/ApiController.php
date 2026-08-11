@@ -5,12 +5,14 @@ namespace Nsv\League\Controller;
 use Doctrine\ORM\EntityManagerInterface;
 use Nsv\League\Api\Model\Division;
 use Nsv\League\Api\Request\CreateDivisionRequest;
+use Nsv\League\Api\Request\CreateOrUpdatePlayerRequest;
 use Nsv\League\Api\Request\DivisionOrderRequest;
 use Nsv\League\Api\Request\UpdateTeamCaptainRequest;
 use Nsv\League\Api\Request\UpdateTeamNameAndNumberRequest;
 use Nsv\League\Api\Request\UpdateTeamRecipientsRequest;
 use Nsv\League\Api\Request\UpdateTeamVenueRequest;
 use Nsv\League\Api\Service\DivisionService;
+use Nsv\League\Api\Service\PlayerService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Api\Service\TeamService;
 use Nsv\League\Core\Encoding;
@@ -18,10 +20,13 @@ use Nsv\League\Core\LeagueAuthState;
 use Nsv\League\Core\LegacySystem;
 use Nsv\League\Core\TokenAuth;
 use Nsv\League\Entity\League;
+use Nsv\League\Entity\Player;
 use Nsv\League\Entity\Team;
 use Nsv\League\Repository\CacheRepository;
+use Symfony\Bridge\Doctrine\Attribute\MapEntity;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/ligen/{league}/api/', name: 'league_api_')]
@@ -111,6 +116,25 @@ class ApiController extends AbstractLeagueController {
     $auth->requireTeamManager($team);
     Encoding::deep_utf8_decode($request);
     $service->updateRecipients($team, $request);
+    return $this->apiResponse();
+  }
+
+  #[Route('teams/{id}/players/', methods: ['POST'], name: 'team_player_create')]
+  public function createPlayer(Team $team, #[MapRequestPayload] CreateOrUpdatePlayerRequest $request, PlayerService $service): Response {
+    $this->auth->requireDivisionManager($team->division);
+    Encoding::deep_utf8_decode($request);
+    $service->createPlayer($team, $request);
+    return $this->apiResponse();
+  }
+
+  #[Route('teams/{id}/players/{playerId}/', methods: ['PUT'], name: 'team_player_update')]
+  public function updatePlayer(Team $team, #[MapEntity(id: 'playerId')] Player $player, #[MapRequestPayload] CreateOrUpdatePlayerRequest $request, PlayerService $service): Response {
+    if ($player->team->id !== $team->id) {
+      throw new NotFoundHttpException('Player not found on this team');
+    }
+    $this->auth->requireDivisionManager($team->division);
+    Encoding::deep_utf8_decode($request);
+    $service->updatePlayer($player, $request);
     return $this->apiResponse();
   }
 }

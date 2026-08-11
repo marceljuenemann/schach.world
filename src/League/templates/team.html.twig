@@ -141,17 +141,13 @@
       <th class="border-left-bold">Pkt</th>
       <th>Sp.</th>
       <th>%</th>
+      <th class="nsv-table-no-border"></th>
     </tr>
     {% for teamNumber, players in team.playersByTeamNumber %}
       {% for player in players %}
         <tr>
           <td class="text-end">{{ player.number }}</td>
           <td class="text-start">
-            {% if editPlayerDialogParams[player.id] is defined %}
-              <nsv-dialog-launcher dialog="playerDialog" params="{{ editPlayerDialogParams[player.id] }}" on-save="reload">
-                {{ _self.editIcon() }}
-              </nsv-dialog-launcher>
-            {% endif %}
             {{ nsv.link(player) }}
             {% if player.isGuest %}
               <span {{ nsv.tooltip('Gastspieler:in') }} class="badge bg-secondary rounded-circle ms-1">G</span>
@@ -178,6 +174,14 @@
           <td class="border-left-bold">{% if player.gameCount %}{{ player.pointsFormatted() }}{% endif %}</td>
           <td>{% if player.gameCount %}{{ player.gameCount }}{% endif %}</td>
           <td>{% if player.gameCount %}{{ (100 * player.points / player.gameCount)|round }}{% endif %}</td>
+
+          <td class="nsv-table-no-border">
+            {% if editPlayerDialogParams[player.id] is defined %}
+              <nsv-dialog-launcher dialog="playerDialog" params="{{ editPlayerDialogParams[player.id] }}" on-save="reload">
+                {{ _self.editIcon() }}
+              </nsv-dialog-launcher>
+            {% endif %}
+          </td>
         </tr>
       {% endfor %}
     {% endfor %}
