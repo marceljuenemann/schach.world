@@ -19,28 +19,31 @@ class MatchDayPdfTest extends LeagueTestCase {
   }
 
   public static function dataProvider(): \Generator {
-    /*
-    * TODO
-    * - No matches
-    * - Table too wide
-    * - Comments with new line
-    * - Comments with HTML (ignore)
-    */
+
     yield 'Common Case: 10 teams with 8 players' => ['nsv-2425', 'landesliga-sued', 5];
     yield 'Ranking in sidebar' => ['sjbh-1718', 'bmm-u12', 5];
     yield 'Multiple Pages' => ['sjbh-2425', 'bmm-u12', 5];
     yield 'Many comments' => ['pokal-1516', 'pokal-mm', 1];
+    yield 'Long comment' => ['sjbh-2526', 'bmm-u12', 6, true];  // TODO: Fix
+    // TODO: Ausrichter
+    // TODO: Verlegt
+    // TODO: Long player name, long team name
+
   }
 
   /**
    * Snapshot-Test for generated PDF.
    */
   #[DataProvider('dataProvider')]
-  public function testPdfGeneration($leaguePath, $divisionPath, $round): void {
+  public function testPdfGeneration($leaguePath, $divisionPath, $round, $longComment = false): void {
     $league = $this->leagueRepository->findByPathOrPrefix($leaguePath);
     $division = $league->divisionByPath($divisionPath);
-    
     $matchDay = $this->matchDayService->matchDay($division, $round);
+
+    if ($longComment) {
+      $matchDay->comment = str_repeat("Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n", 7);
+    }
+
     $pdf = new MatchDayPdf($division, $matchDay, 'https://localhost:6464');
     $pdf->render();
     $response = $pdf->getResponse();

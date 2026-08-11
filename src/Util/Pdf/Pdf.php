@@ -135,37 +135,3 @@ class Pdf extends Fpdf {
     ]);
   }
 }
-
-/*
-
-    
-    $widthOfGames = $pageWidth - 2*10 - $columnwidth - 3;
-    {
-        $width[0] = $options ['showPassNr']
-                  ? ( $prefs['spielDreistelligeNr'] ? $pdf->GetStringWidth ( "616" ) : $pdf->GetStringWidth ( "24" ) ) + 3
-                  : 0;
-            // Links
-            $links = array (
-                $urlbase . "?mannschaft=" . $data ['paarungen'][$i]['mid1'],
-                "", "", "", "", "", "", "",
-                $urlbase . "?mannschaft=" . $data ['paarungen'][$i]['mid2']
-            );
-
-            // Verlegung & Ausrichter
-            if ( count ( $data ['paarungen'][$i]['paarungen'] ) == 0 )
-            {
-                $pdf->SetFont ( "", "", $fontsize );
-                if ( $data ['paarungen'][$i]['datum'] != $data ['datum'] )
-                    $pdf->Cell ( $widthOfGames, $cellheight, "Findet statt am ".$data ['paarungen'][$i]['datum'], 1, 1, "C", 0 );
-                if ( $data ['paarungen'][$i]['ausrichterId'] != $data ['paarungen'][$i]['mid1'] )
-                    $pdf->Cell ( $widthOfGames, $cellheight, "Ausgerichtet von: ".$data ['paarungen'][$i]['ausrichter'], 1, 1, "C", 0 );
-            }
-
-            // kampflos gewonnen?
-            elseif ( $data ['paarungen'][$i]['kampflos'] ){
-                $pdf->SetFont ( "", "", $fontsize );
-                $pdf->Cell ( $widthOfGames, $cellheight, "(kampflos)", 1, 1, "C", 0 );
-            }
-
-
-*/

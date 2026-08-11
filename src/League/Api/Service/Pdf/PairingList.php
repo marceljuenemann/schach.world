@@ -13,10 +13,6 @@ use Nsv\Util\Pdf\Text;
 
 /**
  * PDF element displaying pairings.
- * 
- * TODO: Link
- * TODO: kampflos
- * TODO: verlegt
  */
 class PairingList implements Element {
 
@@ -42,9 +38,22 @@ class PairingList implements Element {
     // TODO: Move to next page if not all games fit on this page.
     foreach ($this->matchDay->pairings as $pairing) {
       $this->renderHeader($pdf, $pairing);
-      if (isset($pairing->games)) {
+      if ($pairing->wasBye()) {
+        $this->renderRemark($pdf, '(kampflos)');
+      } else if (isset($pairing->games)) {
         foreach ($pairing->games as $game) {
           $this->renderGame($pdf, $game);
+        }
+      } else {
+        if ($pairing->host) {
+          $this->renderRemark($pdf, 'Ausrichter: ' . $pairing->host->name);
+        }
+        if ($pairing->wasMoved) {
+          if ($pairing->moveDate) {
+            $this->renderRemark($pdf, 'Verlegt auf den ' . date('d.m.Y', strtotime($pairing->moveDate)));
+          } else {
+            $this->renderRemark($pdf, 'Verlegt auf unbestimmtes Datum');
+          }
         }
       }
       $pdf->Ln();
@@ -52,8 +61,6 @@ class PairingList implements Element {
   }
 
   private function renderHeader(Pdf $pdf, Pairing $pairing) {
-    // TODO: Handle comments
-
     $row = new Row();
 
     $cell = new Cell();
@@ -154,4 +161,12 @@ class PairingList implements Element {
     $row->layout($pdf);
     $pdf->render($row);
   }
+
+  private function renderRemark(Pdf $pdf, string $remark) {
+    $cell = new Cell();
+    $cell->text = $remark;
+    $cell->border = 'LBR';
+    $cell->align = 'C';      
+    $pdf->render($cell);
+  } 
 }

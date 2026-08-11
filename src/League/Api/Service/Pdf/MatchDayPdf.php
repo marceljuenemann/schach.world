@@ -11,7 +11,6 @@ use Nsv\Util\Pdf\Text;
 
 /**
  * TODO:
- * - Add tests
  * - Adjust font size for long names (pairings and ranking)
  * - Check TODOs
  * - Test in production (pdf-ng vs. pdf)
@@ -39,7 +38,6 @@ class MatchDayPdf {
 
   public function render() {
     // 1. Render header.
-    // TODO: Footer
     $this->renderHeader();
 
     // 2. Render pairing list.
