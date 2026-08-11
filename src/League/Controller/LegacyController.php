@@ -142,6 +142,11 @@ class LegacyController extends AbstractLeagueController {
               'division' => $division->path(),
               'league' => $division->league->path
             ]);
+          } else if ($this->league->year >= 2026) {
+            // TODO: Disable old export altogether after a grace period.
+            http_response_code(404);
+            echo "Dieses Ausgabeformat wird nicht länger unterstützt. Bitte verwenden Sie die neue JSON API, z.B. https://nsv-online.de/ligen/nsv-2627/api/divisions/verbandsliga-nord/rounds/1/. Bei Fragen wenden Sie sich bitte an webmaster@nsv-online.de";
+            exit;
           }
           return null;
 
