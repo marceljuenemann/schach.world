@@ -3,6 +3,7 @@
 namespace Nsv\League\Controller;
 
 use Nsv\Dwz\DsbDatabase;
+use Nsv\League\Api\Model\Player;
 use Nsv\League\Api\Service\PlayerService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Api\Service\TeamService;
@@ -82,19 +83,11 @@ class MainController extends AbstractLeagueController {
         'currentRound' => $currentRound
       ]));
 
-      // Only the main team's players can be edited here - to edit players of a substitute
-      // team, go to that team's own page.
-      foreach (reset($team->playersByTeamNumber) ?: [] as $player) {
-        // dsbUri is already UTF-8 encoded (unlike the rest of this DTO), and games/team/
-        // dwzCalculation aren't needed here - all would get corrupted or bloat the payload
-        // if run through deep_utf8_encode() below, so strip them from a clone.
-        $dialogPlayer = clone $player;
-        $dialogPlayer->dsbUri = null;
-        $dialogPlayer->games = null;
-        $dialogPlayer->team = null;
-        $dialogPlayer->dwzCalculation = null;
-
-        $editPlayerDialogParams[$player->id] = json_encode(Encoding::deep_utf8_encode([
+      // Recreating the dialog params for each player with YOB and correct encoding.
+      foreach ($teamEntity->players as $playerEntity) {
+        $dialogPlayer = Player::fromEntity($playerEntity);
+        $dialogPlayer->yearOfBirth = $playerEntity->yearOfBirth();
+        $editPlayerDialogParams[$playerEntity->id] = json_encode(Encoding::deep_utf8_encode([
           'teamId' => $teamId,
           'roundCount' => $roundCount,
           'preferredZps' => $preferredZps,

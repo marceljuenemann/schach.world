@@ -42,7 +42,7 @@ export class PlayerDialog extends NsvDialog<PlayerDialogParams> {
     title: new TextControl('Titel'),
     zps: new TextControl('ZPS'),
     yearOfBirth: new IntControl('Geburtsjahr'),
-    gender: new TextControl('Geschlecht (M/W/D)'),
+    gender: new TextControl('Geschlecht (m/w/d)'),
     dwz: new IntControl('DWZ'),
     elo: new IntControl('ELO'),
   })
