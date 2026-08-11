@@ -1,6 +1,11 @@
 [
     {
         "location": "Nsv\\League\\Api\\Service\\Pdf\\MatchDayPdfTest::setUp",
+        "message": "Nsv\\League\\Controller\\AbstractLeagueController::render(): Implicitly marking parameter $response as nullable is deprecated, the explicit nullable type must be used instead",
+        "count": 1
+    },
+    {
+        "location": "Nsv\\League\\Api\\Service\\Pdf\\MatchDayPdfTest::setUp",
         "message": "DAMA\\DoctrineTestBundle\\Doctrine\\DBAL\\StaticConnectionFactory::createConnection(): Implicitly marking parameter $config as nullable is deprecated, the explicit nullable type must be used instead",
         "count": 1
     },

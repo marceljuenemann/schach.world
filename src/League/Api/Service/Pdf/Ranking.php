@@ -18,16 +18,16 @@ class Ranking implements Element {
 
   private Table $table;
 
-  public function __construct(array $legacyRanking) {
-    $this->table = Ranking::createTable($legacyRanking);
+  public function __construct(array $legacyRanking, string $baseUrl) {
+    $this->table = Ranking::createTable($legacyRanking, $baseUrl);
   }
 
-  private static function createTable(array $legacyRanking) {
+  private static function createTable(array $legacyRanking, string $baseUrl) {
     $table = new Table();
     $first = true;
     foreach ($legacyRanking as $rowData) {
       if ($first) {
-        $row = Ranking::createTableRow($rowData);
+        $row = Ranking::createTableRow($rowData, $baseUrl);
         $row->setFill(true);
         $row->setStyle('B');
         $row->marginBottom = .2;  // Slightly thicker border below header.
@@ -36,7 +36,7 @@ class Ranking implements Element {
         $table->addRow($row);
         $first = false;
       } else {
-        $row = Ranking::createTableRow(array_slice($rowData, 0, -1));
+        $row = Ranking::createTableRow(array_slice($rowData, 0, -1), $baseUrl);
         $colour = $rowData[count($rowData) - 1];
         $row->cell(0)->align = 'R';
         if (isset(Ranking::FILL_COLOURS[$colour])) {
@@ -51,7 +51,7 @@ class Ranking implements Element {
     return $table;
   }
 
-  private static function createTableRow(array $cells): Row {
+  private static function createTableRow(array $cells, string $baseUrl): Row {
     $row = new Row();
     foreach ($cells as $cellData) {
       $cell = new Cell();
@@ -64,7 +64,7 @@ class Ranking implements Element {
           }, $cellData));
         }
         if (isset($cellData['url'])) {
-          $cell->link = $cellData['url'];
+          $cell->link = $baseUrl . $cellData['url'];
         }
       } else if ($cellData === 'xxx') {
         $cell->fill = true;

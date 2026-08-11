@@ -168,21 +168,4 @@ class Pdf extends Fpdf {
             }
 
 
-    ///////////////////////////////////
-    // Fußzeile
-    {
-        $pdf->SetFont ( "", "", 10 );
-        $pdf->SetAutoPageBreak ( false );
-        $pdf->SetLeftMargin ( 10 );
-        $pdf->SetY ( -15 );
-
-        // Internetadresse ausgeben
-        $text = "Internet: " . $urlbase;
-        $pdf->Cell ( 0, 4.5, $text, 0, 1, "C", false, $urlbase );
-
-        // Staffelleiter ausgeben
-        $text = sprintf ( "Staffelleiter: %s - Tel.: %s - Email: %s", $data ['sl_name'], $data ['sl_telefon'], $data ['sl_email'] );
-        $pdf->Cell ( 0, 4.5, $text, 0, 1, "C" );
-    }
-
 */

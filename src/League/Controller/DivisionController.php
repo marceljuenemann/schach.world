@@ -111,7 +111,7 @@ class DivisionController extends AbstractLeagueController {
   #[Route('{division}/{round}/pdf-ng/', name: 'matchday_pdf')]
   public function matchday_pdf(int $round, MatchDayService $service): Response {
     $matchDay = $this->matchday_model($service, $round);
-    $pdf = new MatchDayPdf($this->division, $matchDay);
+    $pdf = new MatchDayPdf($this->division, $matchDay, $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST']);
     $pdf->render();
     return $pdf->getResponse();
   }

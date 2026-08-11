@@ -16,8 +16,6 @@ class MatchDayPdfTest extends LeagueTestCase {
   protected function setUp(): void {
     parent::setUp();
     $this->matchDayService = $this->container->get(MatchDayService::class);
-    $_SERVER['REQUEST_SCHEME'] = 'https';
-    $_SERVER['HTTP_HOST'] = 'localhost:6464';
   }
 
   public static function dataProvider(): \Generator {
@@ -43,7 +41,7 @@ class MatchDayPdfTest extends LeagueTestCase {
     $division = $league->divisionByPath($divisionPath);
     
     $matchDay = $this->matchDayService->matchDay($division, $round);
-    $pdf = new MatchDayPdf($division, $matchDay);
+    $pdf = new MatchDayPdf($division, $matchDay, 'https://localhost:6464');
     $pdf->render();
     $response = $pdf->getResponse();
 

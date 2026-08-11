@@ -13,8 +13,6 @@ use Nsv\Util\Pdf\Text;
  * TODO:
  * - Add tests
  * - Adjust font size for long names (pairings and ranking)
- * - Render a footer
- * - Filename (Hello.pdf)
  * - Check TODOs
  * - Test in production (pdf-ng vs. pdf)
  * - Launch
@@ -25,16 +23,17 @@ use Nsv\Util\Pdf\Text;
 class MatchDayPdf {
   private const SIDEBAR_WIDTH = 60;
   private const SIDEBAR_PADDING = 3;
+  private const FOOTER_HEIGHT = 15;
 
   private Pdf $pdf;
   private PairingList $pairingList;
   private Ranking | null $ranking = null;
 
-  public function __construct(private Division $division, private MatchDay $matchDay) {
+  public function __construct(private Division $division, private MatchDay $matchDay, private string $baseUrl) {
     $this->pdf = new Pdf();
     $this->pairingList = new PairingList($matchDay, $division->league->configPlayerNumbersWithTeamNumber);
     if (!empty($matchDay->legacyRanking)) {
-      $this->ranking = new Ranking($matchDay->legacyRanking);
+      $this->ranking = new Ranking($matchDay->legacyRanking, $baseUrl . $division->league->uri());
     }
   }
 
@@ -86,6 +85,11 @@ class MatchDayPdf {
       }
       $this->ranking->render($this->pdf);
     }
+
+    // 6. Render footer.
+    $this->pdf->SetAutoPageBreak(false);
+    $this->pdf->SetY(-self::FOOTER_HEIGHT);
+    $this->renderFooter();
   }
   
   private function renderHeader() {
@@ -177,8 +181,19 @@ class MatchDayPdf {
     }
   }
 
+  private function renderFooter() {
+    $footer = new Cell();
+    $footer->align = 'C';
+    $footer->text = 'Internet: ' . $this->baseUrl . $this->division->uri() . "\n";
+    $this->pdf->render($footer);
+
+    $manager = $this->division->manager;
+    $footer->text = 'Staffelleitung: ' . $manager->name . ' - Tel.: ' . $manager->phone . ' - ' . $manager->mail;
+    $this->pdf->render($footer);
+  }
+
   public function getResponse() {
-    // TODO: Use a better filename.
-    return $this->pdf->asResponse('Hello.pdf', Encoding::UNICODE_ENABLED);
+    $filename = $this->division->path() . '-R' . $this->matchDay->round . '.pdf';
+    return $this->pdf->asResponse($filename, Encoding::UNICODE_ENABLED);
   }
 }
