@@ -95,22 +95,8 @@ class DivisionController extends AbstractLeagueController {
   }
 
   #[Route('{division}/{round}/pdf/', name: 'pdf')]
-  public function pdf(int $round): Response {
-    $this->initializeLegacySystem();
-    $_GET['r'] = $round;
-    $_GET['ausgabe'] = 'pdf';
-
-    ob_start();
-    require('../_module/spieltag/spieltag.php');
-    $body = ob_get_clean();
-    $response = new Response($body);
-    $response->setCharset(Encoding::CHARSET);
-    return $response;
-  }
-
-  #[Route('{division}/{round}/pdf-ng/', name: 'matchday_pdf')]
   public function matchday_pdf(int $round, MatchDayService $service): Response {
-    $matchDay = $this->matchday_model($service, $round);
+    $matchDay = $service->matchDay($this->division, $round);
     $pdf = new MatchDayPdf($this->division, $matchDay, $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST']);
     $pdf->render();
     return $pdf->getResponse();
@@ -128,26 +114,21 @@ class DivisionController extends AbstractLeagueController {
   #[Route('api/divisions/{division}/rounds/current/', name: 'api_current_matchday')]
   public function current_matchday_api(ScheduleService $scheduleService, MatchDayService $service): Response {
     $round = $scheduleService->closestRound($this->division, date('Y-m-d'));
-    return $this->apiResponse($this->matchday_model($service, $round ? $round->round : 1));
+    return $this->apiResponse($service->matchDay($this->division, $round ? $round->round : 1));
   }
 
   #[Route('api/divisions/{division}/rounds/{round}/', name: 'api_matchday')]
   public function matchday_api(int $round, MatchDayService $service): Response {
-    return $this->apiResponse($this->matchday_model($service, $round));
+    return $this->apiResponse($service->matchDay($this->division, $round));
   }
 
   #[Route('{division}/{round}/', name: 'matchday')]
   public function matchday(int $round, MatchDayService $service): Response {
-    $matchDay = $this->matchday_model($service, $round);
+    $matchDay = $service->matchDay($this->division, $round);
     return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
       'matchDay' => $matchDay,
       'tabs' => $this->divisionTabs()
     ]);
-  }
-  
-  // TODO: Delete.
-  private function matchday_model(MatchDayService $service, int $round) {
-    return $service->matchDay($this->division, $round);
   }
 
   #[Route('{division}/', name: 'index')]

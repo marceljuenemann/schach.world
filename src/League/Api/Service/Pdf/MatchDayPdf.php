@@ -10,12 +10,7 @@ use Nsv\Util\Pdf\Pdf;
 use Nsv\Util\Pdf\Text;
 
 /**
- * TODO:
- * - Test in production (pdf-ng vs. pdf)
- * - Launch
- *   - Implement redirect
- *   - Test rundmail attachment
- * - Later: Delete old ranking code
+ * Generates a PDF with match day results and ranking.
  */
 class MatchDayPdf {
   private const SIDEBAR_WIDTH = 60;
