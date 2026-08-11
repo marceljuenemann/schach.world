@@ -1,1 +1,1 @@
-docker exec nsv-webserver ./bin/phpunit -d --update-snapshots
+docker exec nsv-webserver composer update-snapshots

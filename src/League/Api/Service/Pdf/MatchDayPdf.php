@@ -12,23 +12,14 @@ use Nsv\Util\Pdf\Text;
 /**
  * TODO:
  * - Add tests
- *   - Get passing
- *   - NSV (5 x 8)
- *   - U12 (6 x 2 x 4)
- *   - Two matches
- *   - Multi page
- *   - Edge cases (comments)
- *      - Lots of comments https://localhost:6464/ligen/pokal-1516/pokal-mm/1/
- *      - Not enough Y space for table https://localhost:6464/ligen/sjbh-1718/bmm-u12/5/pdf-ng/
- *      - Table not on page 2 https://localhost:6464/ligen/sjbh-2526/bmm-u12/3/pdf-ng/
- *      - Table too wide
- *      - Comments with new line
- *      - Comments with HTML (ignore)
  * - Adjust font size for long names (pairings and ranking)
  * - Render a footer
+ * - Filename (Hello.pdf)
  * - Check TODOs
- * - Test in production (pdf-ng)
+ * - Test in production (pdf-ng vs. pdf)
  * - Launch
+ *   - Implement redirect
+ *   - Test rundmail attachment
  * - Later: Delete old ranking code
  */
 class MatchDayPdf {

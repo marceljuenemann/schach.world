@@ -89,7 +89,7 @@
     all_dwz_rank: normal
     dwz_rank: normal
 5165:
-    team: { venueAccessible: false, accessibleToilet: false, __initializer__: null, __cloner__: null, __isInitialized__: true }
+    team: { venueAccessible: false, accessibleToilet: false }
     active_dwz_average: 1287.0
     all_dwz_average: 1282.0
     top_x_dwz_average: 1499.0

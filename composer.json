@@ -85,7 +85,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "update-snapshots": "UPDATE_SNAPSHOTS=true bin/phpunit"
     },
     "conflict": {
         "symfony/symfony": "*"
