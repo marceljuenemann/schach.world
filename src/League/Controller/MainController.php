@@ -70,6 +70,10 @@ class MainController extends AbstractLeagueController {
         'id' => $teamId,
         'name' => $teamEntity->name,
         'number' => $teamEntity->number
+      ])),
+      'playerDialogParams' => json_encode(Encoding::deep_utf8_encode([
+        'teamId' => $teamId,
+        'roundCount' => $teamEntity->division->config('rounds')
       ]))
     ]);
   }

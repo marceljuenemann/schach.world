@@ -1,0 +1,29 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Spieler nachmelden</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+</div>
+<div class="modal-body mb-3">
+  <ng-template #rt let-player="result" let-t="term">
+    <ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
+    @if (player.data) {
+      <i>&nbsp;({{player.data.club}})</i>
+    }
+  </ng-template>
+  <div class="form-floating">
+    <input
+      ngbAutofocus
+      id="typeahead-player-name"
+      type="text"
+      class="form-control"
+      [formControl]="selectedPlayer"
+      [ngbTypeahead]="search"
+      [resultTemplate]="rt"
+      [inputFormatter]="formatter"
+      [editable]="false"
+    />
+    <label for="typeahead-player-name">Nachname, Vorname</label>
+  </div>
+
+  <nsv-form [form]="form" (keyup.enter)="saveDialog()"></nsv-form>
+</div>
+<nsv-dialog-footer [dialog]="this"></nsv-dialog-footer>

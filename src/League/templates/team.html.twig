@@ -180,6 +180,12 @@
   </table>
 </div>
 
+{% if allowPlayerEdit %}
+  <nsv-dialog-launcher dialog="playerDialog" params="{{ playerDialogParams }}" on-save="reload">
+    <button class="btn btn-success btn-sm d-print-none">{{ nsv.icon('plus') }} Nachmeldung</button>
+  </nsv-dialog-launcher>
+{% endif %}
+
 <div class="d-none d-lg-block text-end">
   <a href="{{ team.apiUri }}"><span class="badge bg-secondary">API</span></a>
 </div>
