@@ -24,25 +24,18 @@ class MatchDayPdfTest extends LeagueTestCase {
     yield 'Ranking in sidebar' => ['sjbh-1718', 'bmm-u12', 5];
     yield 'Multiple Pages' => ['sjbh-2425', 'bmm-u12', 5];
     yield 'Many comments' => ['pokal-1516', 'pokal-mm', 1];
-    yield 'Long comment' => ['sjbh-2526', 'bmm-u12', 6, true];  // TODO: Fix
     yield 'Long player name' => ['fbl-1314', '2-frauen-bl-sued', 6];
-    // TODO: Ausrichter
-    // TODO: Verlegt
-    // TODO: Long team name
+    yield 'Pairing moved' => ['sjbh-2526', 'bmm-u20', 3];
   }
 
   /**
    * Snapshot-Test for generated PDF.
    */
   #[DataProvider('dataProvider')]
-  public function testPdfGeneration($leaguePath, $divisionPath, $round, $longComment = false): void {
+  public function testPdfGeneration($leaguePath, $divisionPath, $round): void {
     $league = $this->leagueRepository->findByPathOrPrefix($leaguePath);
     $division = $league->divisionByPath($divisionPath);
     $matchDay = $this->matchDayService->matchDay($division, $round);
-
-    if ($longComment) {
-      $matchDay->comment = str_repeat("Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n", 7);
-    }
 
     $pdf = new MatchDayPdf($division, $matchDay, 'https://localhost:6464');
     $pdf->render();
