@@ -58,6 +58,10 @@ class Pdf extends Fpdf {
     return $this->availableHeight() / $this->lineHeight;
   }
 
+  public function fontSize(): float {
+    return $this->FontSizePt;
+  }
+  
   /**
    * Executes the callback with the given font family and style.
    * 

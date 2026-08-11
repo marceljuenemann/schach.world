@@ -18,7 +18,7 @@ class PairingList implements Element {
 
   const WIDTH_PLAYER_NUMBER = 10;
   const WIDTH_PLAYER_NUMBER_SHORT = 7;
-  const WIDTH_PLAYER_RATING = 15;
+  const WIDTH_PLAYER_RATING = 11;
   const WIDTH_RESULT = 13;
 
   private array $remarkSymbols;
@@ -110,6 +110,7 @@ class PairingList implements Element {
     // Player name.
     $cell = new Cell();
     $cell->text = $game->player1 ? $game->player1->name : '';
+    $cell->fitText = true;
     $cell->border = 'LTB';
     $cell->link = $game->player1 ? $game->player1->uri : '';
     $row->addCell($cell);
@@ -145,6 +146,7 @@ class PairingList implements Element {
     // Player name.
     $cell = new Cell();
     $cell->text = $game->player2 ? $game->player2->name : '';
+    $cell->fitText = true;
     $cell->border = 'TBR';
     $cell->align = 'R';
     $cell->link = $game->player2 ? $game->player2->uri : '';

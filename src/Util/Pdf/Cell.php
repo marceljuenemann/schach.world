@@ -3,6 +3,7 @@
 namespace Nsv\Util\Pdf;
 
 const DEFAULT_FILL_COLOR = [222, 222, 222];
+const MIN_FONT_SIZE = 6;
 
 /**
  * Outputs a single cell, the basic building block of PDFs.
@@ -36,6 +37,11 @@ class Cell implements Element {
   public float $width = 0;
 
   /**
+   * Whether to shrink the font size until the text fits into the cell.
+   */
+  public bool $fitText = false;
+
+  /**
    * Which border to draw, e.g. "LR" for left and right or 1 for all borders.
    */
   public string|int $border = 0;
@@ -64,17 +70,26 @@ class Cell implements Element {
   }
 
   public function render(Pdf $pdf) {
-    $pdf->withFont(null, $this->fontStyle, $this->fontSize, function () use ($pdf) {
-      if ($this->fill === true) {
-        $this->fill = DEFAULT_FILL_COLOR;
+    for ($fontSize = $this->fontSize ?? $pdf->fontSize(); $fontSize >= MIN_FONT_SIZE; $fontSize--) {
+      $skipIfTooLarge = $this->fitText && $fontSize > MIN_FONT_SIZE;
+      if ($pdf->withFont(null, $this->fontStyle, $fontSize, function () use ($pdf, $skipIfTooLarge) {
+        if ($skipIfTooLarge && $pdf->GetStringWidth($this->text) > $this->width) {
+          return false;
+        }
+        if ($this->fill === true) {
+          $this->fill = DEFAULT_FILL_COLOR;
+        }
+        if (is_array($this->fill)) {
+          [$r, $g, $b] = $this->fill;
+          $pdf->SetFillColor($r, $g, $b);
+        }
+        $height = $this->height * $pdf->lineHeight;
+        $pdf->Cell($this->width, $height, $this->text, $this->border,
+          $height, $this->align, (bool) $this->fill, $this->link);
+        return true;
+      })) {
+        break;
       }
-      if (is_array($this->fill)) {
-        [$r, $g, $b] = $this->fill;
-        $pdf->SetFillColor($r, $g, $b);
-      }
-      $height = $this->height * $pdf->lineHeight;
-      $pdf->Cell($this->width, $height, $this->text, $this->border,
-        $height, $this->align, (bool) $this->fill, $this->link);
-    });
+    }
   }
 }

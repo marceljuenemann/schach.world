@@ -25,10 +25,10 @@ class MatchDayPdfTest extends LeagueTestCase {
     yield 'Multiple Pages' => ['sjbh-2425', 'bmm-u12', 5];
     yield 'Many comments' => ['pokal-1516', 'pokal-mm', 1];
     yield 'Long comment' => ['sjbh-2526', 'bmm-u12', 6, true];  // TODO: Fix
+    yield 'Long player name' => ['fbl-1314', '2-frauen-bl-sued', 6];
     // TODO: Ausrichter
     // TODO: Verlegt
-    // TODO: Long player name, long team name
-
+    // TODO: Long team name
   }
 
   /**
