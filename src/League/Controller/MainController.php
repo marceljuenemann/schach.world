@@ -2,6 +2,7 @@
 
 namespace Nsv\League\Controller;
 
+use Nsv\Dwz\DsbDatabase;
 use Nsv\League\Api\Service\PlayerService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Api\Service\TeamService;
@@ -55,11 +56,54 @@ class MainController extends AbstractLeagueController {
   }
 
   #[Route('m/{teamId}/', name: 'team')]
-  public function team(TeamService $service, int $teamId, TokenAuth $tokenAuth): Response {
+  public function team(TeamService $service, ScheduleService $scheduleService, int $teamId, TokenAuth $tokenAuth): Response {
     $teamEntity = $this->league->teamById($teamId);
     $allowEdit = $tokenAuth->mayEditTeam($teamEntity);
     $allowPlayerEdit = $this->auth->isDivisionManager($teamEntity->division);
     $team = $service->team($teamEntity, $allowEdit);
+
+    $playerDialogParams = null;
+    $editPlayerDialogParams = [];
+    if ($allowPlayerEdit) {
+      $roundCount = $teamEntity->division->config('rounds');
+
+      // A team's ZPS can contain multiple club numbers concatenated if it's a union of clubs.
+      // Just use the first club for DWZ search suggestions.
+      $preferredZps = $teamEntity->zps ? substr($teamEntity->zps, 0, DsbDatabase::ZPS_CLUB_LENGTH) : null;
+
+      // Preselect the current round for late registration, unless the season hasn't started yet.
+      $closestRound = $scheduleService->closestRound($teamEntity->division, date('Y-m-d'));
+      $currentRound = ($closestRound && $closestRound->round > 1) ? $closestRound->round : null;
+
+      $playerDialogParams = json_encode(Encoding::deep_utf8_encode([
+        'teamId' => $teamId,
+        'roundCount' => $roundCount,
+        'preferredZps' => $preferredZps,
+        'currentRound' => $currentRound
+      ]));
+
+      // Only the main team's players can be edited here - to edit players of a substitute
+      // team, go to that team's own page.
+      foreach (reset($team->playersByTeamNumber) ?: [] as $player) {
+        // dsbUri is already UTF-8 encoded (unlike the rest of this DTO), and games/team/
+        // dwzCalculation aren't needed here - all would get corrupted or bloat the payload
+        // if run through deep_utf8_encode() below, so strip them from a clone.
+        $dialogPlayer = clone $player;
+        $dialogPlayer->dsbUri = null;
+        $dialogPlayer->games = null;
+        $dialogPlayer->team = null;
+        $dialogPlayer->dwzCalculation = null;
+
+        $editPlayerDialogParams[$player->id] = json_encode(Encoding::deep_utf8_encode([
+          'teamId' => $teamId,
+          'roundCount' => $roundCount,
+          'preferredZps' => $preferredZps,
+          'currentRound' => null,
+          'player' => $dialogPlayer
+        ]));
+      }
+    }
+
     return $this->renderWithLegacySystem('team.html.twig', [
       'team' => $team,
       'teamEntity' => $teamEntity,
@@ -71,10 +115,8 @@ class MainController extends AbstractLeagueController {
         'name' => $teamEntity->name,
         'number' => $teamEntity->number
       ])),
-      'playerDialogParams' => json_encode(Encoding::deep_utf8_encode([
-        'teamId' => $teamId,
-        'roundCount' => $teamEntity->division->config('rounds')
-      ]))
+      'playerDialogParams' => $playerDialogParams,
+      'editPlayerDialogParams' => $editPlayerDialogParams
     ]);
   }
 

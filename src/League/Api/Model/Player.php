@@ -18,6 +18,8 @@ class Player
   public ?string $zps;
   public ?int $dwz;
   public ?int $elo;
+  // TODO: Only populate for managers.
+  public ?int $yearOfBirth = null;
   public string $gender;
   public bool $isGuest;
   public ?int $lateRegistrationRound;
@@ -51,6 +53,7 @@ class Player
     $result->zps = $player->zps ?: null;
     $result->dwz = $player->dwz ?: null;
     $result->elo = $player->elo ?: null;
+    $result->yearOfBirth = $player->yearOfBirth();
     $result->gender = $player->gender;
     $result->isGuest = $player->isGuest();
     $result->lateRegistrationRound = $player->lateRegistrationRound ?: null;

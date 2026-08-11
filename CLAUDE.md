@@ -104,4 +104,4 @@ MySQL 5.7. Symfony manages two databases: `nsv-main` (league/app data) and optio
 - Before modifying `public/ligen/`, confirm with the user what is safe to delete — it's not always obvious what's still in use vs. dead code.
 - Before adding a new `Nsv\*` module, check whether the feature fits an existing one; the module boundaries aren't always obvious.
 - The DWZ integration calls an external API; use `Nsv\Dwz\DwzController` / `SchachInClient` for any player rating lookups.
-- Angular build artifacts are committed to `public/core/ng-build/` — CI generates them automatically, no need to run `ng build` manually.
+- Angular build artifacts are committed to `public/core/ng-build/` — CI generates them automatically, so there's no need to run `ng build` manually. If you do run it locally (e.g. to verify a change), it's fine to commit the regenerated output rather than reverting it.

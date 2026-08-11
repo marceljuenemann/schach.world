@@ -1,5 +1,5 @@
 <div class="modal-header">
-  <h4 class="modal-title" id="modal-basic-title">Spieler nachmelden</h4>
+  <h4 class="modal-title" id="modal-basic-title">{{ editing ? 'Spielerdaten ändern' : 'Spieler nachmelden' }}</h4>
   <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
 </div>
 <div class="modal-body mb-3">
@@ -24,6 +24,7 @@
     <label for="typeahead-player-name">Nachname, Vorname</label>
   </div>
 
-  <nsv-form [form]="form" (keyup.enter)="saveDialog()"></nsv-form>
+  <nsv-form [form]="form" [columns]="2" (keyup.enter)="saveDialog()"></nsv-form>
+  <nsv-form [form]="registrationForm" (keyup.enter)="saveDialog()"></nsv-form>
 </div>
 <nsv-dialog-footer [dialog]="this"></nsv-dialog-footer>

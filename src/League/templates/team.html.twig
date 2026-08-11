@@ -147,7 +147,11 @@
         <tr>
           <td class="text-end">{{ player.number }}</td>
           <td class="text-start">
-            {# <span class="dashicons dashicons-edit"></span> #}
+            {% if editPlayerDialogParams[player.id] is defined %}
+              <nsv-dialog-launcher dialog="playerDialog" params="{{ editPlayerDialogParams[player.id] }}" on-save="reload">
+                {{ _self.editIcon() }}
+              </nsv-dialog-launcher>
+            {% endif %}
             {{ nsv.link(player) }}
             {% if player.isGuest %}
               <span {{ nsv.tooltip('Gastspieler:in') }} class="badge bg-secondary rounded-circle ms-1">G</span>
@@ -182,7 +186,7 @@
 
 {% if allowPlayerEdit %}
   <nsv-dialog-launcher dialog="playerDialog" params="{{ playerDialogParams }}" on-save="reload">
-    <button class="btn btn-success btn-sm d-print-none">{{ nsv.icon('plus') }} Nachmeldung</button>
+    <button class="btn btn-success btn-sm mt-2 d-print-none">{{ nsv.icon('plus') }} Nachmeldung</button>
   </nsv-dialog-launcher>
 {% endif %}
 
