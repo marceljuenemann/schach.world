@@ -19,7 +19,7 @@
           {# Rank and name #}
           <td class="text-end sed_{{ row[row|length - 1] }}">{{ row[0] }}</td>
           <td class="text-start border-right-bold">
-            <a href='{{ row[1].url }}'>{{ row[1].text }}</a>
+            <a href='{{ league.uri }}{{ row[1].url }}'>{{ row[1].text }}</a>
           </td>
 
           {# Results #}
