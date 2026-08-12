@@ -137,4 +137,14 @@ class ApiController extends AbstractLeagueController {
     $service->updatePlayer($player, $request);
     return $this->apiResponse();
   }
+
+  #[Route('teams/{id}/players/{playerId}/', methods: ['DELETE'], name: 'team_player_delete')]
+  public function deletePlayer(Team $team, #[MapEntity(id: 'playerId')] Player $player, PlayerService $service): Response {
+    if ($player->team->id !== $team->id) {
+      throw new NotFoundHttpException('Player not found on this team');
+    }
+    $this->auth->requireDivisionManager($team->division);
+    $service->deletePlayer($player);
+    return $this->apiResponse();
+  }
 }

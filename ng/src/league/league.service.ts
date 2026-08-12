@@ -33,6 +33,10 @@ export class LeagueService {
     return this.put(`/teams/${teamId}/players/${playerId}/`, data)
   }
 
+  deletePlayer(teamId: number, playerId: number): Promise<void> {
+    return this.delete(`/teams/${teamId}/players/${playerId}/`)
+  }
+
   /**
    * Returns the base URL for the current league.
    */
@@ -47,5 +51,9 @@ export class LeagueService {
 
   private post<T>(url: string, data: any): Promise<T> {
     return lastValueFrom(this.http.post<any>(this.baseUrl() + url, data))
+  }
+
+  private delete<T>(url: string): Promise<T> {
+    return lastValueFrom(this.http.delete<any>(this.baseUrl() + url))
   }
 }

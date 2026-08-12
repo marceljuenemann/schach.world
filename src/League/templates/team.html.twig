@@ -24,6 +24,12 @@
   </span>
 {% endmacro %}
 
+{% macro deleteIcon() %}
+  <span class="print-none" style="cursor: pointer" {{ nsv.tooltip('Löschen' | utf8_decode) }}>
+    {{ nsv.icon('trash') }}
+  </span>
+{% endmacro %}
+
 {% block headline %}
   <h2>
     {{ title }}
@@ -175,10 +181,15 @@
           <td>{% if player.gameCount %}{{ player.gameCount }}{% endif %}</td>
           <td>{% if player.gameCount %}{{ (100 * player.points / player.gameCount)|round }}{% endif %}</td>
 
-          <td class="nsv-table-no-border">
+          <td class="nsv-table-no-border text-start text-nowrap">
             {% if editPlayerDialogParams[player.id] is defined %}
               <nsv-dialog-launcher dialog="playerDialog" params="{{ editPlayerDialogParams[player.id] }}" on-save="reload">
                 {{ _self.editIcon() }}
+              </nsv-dialog-launcher>
+            {% endif %}
+            {% if deletePlayerDialogParams[player.id] is defined %}
+              <nsv-dialog-launcher dialog="deletePlayer" params="{{ deletePlayerDialogParams[player.id] }}" on-save="reload">
+                {{ _self.deleteIcon() }}
               </nsv-dialog-launcher>
             {% endif %}
           </td>

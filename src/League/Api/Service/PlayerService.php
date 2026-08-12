@@ -11,6 +11,7 @@ use Nsv\League\Core\Result;
 use Nsv\League\Entity;
 use Nsv\League\Repository\GameRepository;
 use Nsv\League\Repository\PlayerRepository;
+use Symfony\Component\HttpKernel\Exception\ConflictHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class PlayerService
@@ -91,6 +92,25 @@ class PlayerService
     } else {
       $player->lateRegistrationDivision = $existingLateRegistrationDivision ?? $player->team->division;
     }
+  }
+
+  public function deletePlayer(Entity\Player $player): void {
+    if (count($this->gameRepository->findByPlayer($player)) > 0) {
+      throw new ConflictHttpException('Player has already played games and cannot be deleted.');
+    }
+
+    $team = $player->team;
+    $number = $player->number;
+    $this->leagueEntityManager->remove($player);
+    $this->leagueEntityManager->flush();
+
+    // Shift down board numbers of remaining players, mirroring legacy stafspie.php's
+    // "UPDATE spieler SET brettnr=brettnr-1 WHERE mannschaft=? AND brettnr>?".
+    $this->leagueEntityManager->createQuery(
+      'UPDATE Nsv\League\Entity\Player p SET p.number = p.number - 1 WHERE p.team = :team AND p.number > :number'
+    )->setParameter('team', $team)
+     ->setParameter('number', $number)
+     ->execute();
   }
 
   // Mirrors legacy SED_Spieler::getNextBrettNr(): max existing board number + 1,

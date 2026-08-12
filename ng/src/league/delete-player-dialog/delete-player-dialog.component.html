@@ -1,0 +1,8 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Spieler:in löschen</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+</div>
+<div class="modal-body">
+  <p>{{ params.playerName }} wirklich löschen?</p>
+</div>
+<nsv-dialog-footer [dialog]="this" saveButtonLabel="Löschen"></nsv-dialog-footer>

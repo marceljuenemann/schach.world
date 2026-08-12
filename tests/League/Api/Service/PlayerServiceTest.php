@@ -6,7 +6,9 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Nsv\Dwz\IsewaseDwzCalculator;
 use Nsv\League\Api\Request\CreateOrUpdatePlayerRequest;
 use Nsv\League\Entity\League;
+use Nsv\League\Entity\Player;
 use Nsv\League\Entity\Team;
+use Symfony\Component\HttpKernel\Exception\ConflictHttpException;
 use Tests\League\LeagueTestCase;
 use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -179,5 +181,31 @@ class PlayerServiceTest extends LeagueTestCase
     $this->assertEquals(4, $updated->lateRegistrationRound);
     $this->assertNotNull($updated->lateRegistrationDivision);
     $this->assertEquals($this->team->division->id, $updated->lateRegistrationDivision->id);
+  }
+
+  public function testDeletePlayer_removesPlayerAndShiftsBoardNumbers() {
+    $p1 = $this->service->createPlayer($this->team, $this->request(['lastName' => 'Eins']));
+    $p2 = $this->service->createPlayer($this->team, $this->request(['lastName' => 'Zwei']));
+    $p3 = $this->service->createPlayer($this->team, $this->request(['lastName' => 'Drei']));
+    $p1Number = $p1->number;
+    $p2Number = $p2->number;
+    $p2Id = $p2->id;
+
+    $this->service->deletePlayer($p2);
+
+    // The bulk DQL update doesn't touch Doctrine's identity map, so refresh explicitly.
+    $this->em->refresh($p1);
+    $this->em->refresh($p3);
+
+    $this->assertNull($this->em->find(Player::class, $p2Id));
+    $this->assertEquals($p1Number, $p1->number);
+    $this->assertEquals($p2Number, $p3->number);
+  }
+
+  public function testDeletePlayer_throwsWhenPlayerHasGames() {
+    $player = $this->team->players[2];
+    
+    $this->expectException(ConflictHttpException::class);
+    $this->service->deletePlayer($player);
   }
 }

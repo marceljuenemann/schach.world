@@ -65,6 +65,7 @@ class MainController extends AbstractLeagueController {
 
     $playerDialogParams = null;
     $editPlayerDialogParams = [];
+    $deletePlayerDialogParams = [];
     if ($allowPlayerEdit) {
       // A team's ZPS can contain multiple club numbers concatenated if it's a union of clubs.
       // Just use the first club for DWZ search suggestions.
@@ -82,6 +83,13 @@ class MainController extends AbstractLeagueController {
         'currentRound' => $currentRound
       ]));
 
+      // Lookup for the games already computed by TeamService::team() above, keyed by player id,
+      // so we don't need to re-query games per player just for the delete-eligibility check.
+      $ownPlayerModelsById = [];
+      foreach ($team->playersByTeamNumber[$teamEntity->number] ?? [] as $playerModel) {
+        $ownPlayerModelsById[$playerModel->id] = $playerModel;
+      }
+
       // Recreating the dialog params for each player with YOB and correct encoding.
       foreach ($teamEntity->players as $playerEntity) {
         $dialogPlayer = Player::fromEntity($playerEntity);
@@ -93,6 +101,17 @@ class MainController extends AbstractLeagueController {
           'currentRound' => null,
           'player' => $dialogPlayer
         ]));
+
+        $isLateRegistered = $playerEntity->lateRegistrationRound !== null;
+        $hasGames = !empty($ownPlayerModelsById[$playerEntity->id]->games);
+        $canDelete = ($isLateRegistered || $currentRound === null) && !$hasGames;
+        if ($canDelete) {
+          $deletePlayerDialogParams[$playerEntity->id] = json_encode(Encoding::deep_utf8_encode([
+            'teamId' => $teamId,
+            'playerId' => $playerEntity->id,
+            'playerName' => $playerEntity->name(),
+          ]));
+        }
       }
     }
 
@@ -108,7 +127,8 @@ class MainController extends AbstractLeagueController {
         'number' => $teamEntity->number
       ])),
       'playerDialogParams' => $playerDialogParams,
-      'editPlayerDialogParams' => $editPlayerDialogParams
+      'editPlayerDialogParams' => $editPlayerDialogParams,
+      'deletePlayerDialogParams' => $deletePlayerDialogParams
     ]);
   }
 
