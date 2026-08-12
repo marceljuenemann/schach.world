@@ -191,9 +191,10 @@ export class PairingEditor {
     return Object.values(team.playersByTeamNumber ?? {}).flat()
   }
 
-  // Options for the overall-result selects: 0, 0.5, 1, ... up to boardCount.
+  // Options for the overall-result selects: boardCount, ..., 0.5, 0 (descending).
   get overallResultOptions(): number[] {
-    return Array.from({length: this.boardRows.length * 2 + 1}, (_, i) => i / 2)
+    const count = this.boardRows.length * 2 + 1
+    return Array.from({length: count}, (_, i) => (count - 1 - i) / 2)
   }
 
   private guessOverallResult() {

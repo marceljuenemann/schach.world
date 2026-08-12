@@ -25,7 +25,7 @@ export class PairingDialog extends NsvDialog<PairingDialogParams> {
   loading = true
   editor: PairingEditor
   comment = new FormControl('')
-  sendConfirmation = new FormControl(false)
+  sendConfirmation = new FormControl(true)
   resultOptions = RESULT_OPTIONS
 
   constructor(private leagueService: LeagueService) {

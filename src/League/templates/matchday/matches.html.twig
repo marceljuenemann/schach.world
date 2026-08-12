@@ -60,6 +60,10 @@
           {% endif %}
         {% endif %}
 
+        {% if pairing.comment %}
+          <div class="fst-italic mt-2">{{ pairing.comment }}</div>
+        {% endif %}
+
         {% if allowManage %}
           {% set legacyUri = league.uri() ~ '?admin=alleeing---&pid=' ~ pairing.id %}
           <div class="text-end">
@@ -76,10 +80,6 @@
               </ul>
             </div>
           </div>
-        {% endif %}
-
-        {% if pairing.comment %}
-          <p class="fst-italic mt-2">{{ pairing.comment }}</p>
         {% endif %}
       {% endfor %}
     </div>

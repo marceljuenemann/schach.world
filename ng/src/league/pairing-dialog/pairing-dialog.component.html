@@ -11,7 +11,7 @@
     <div class="text-center py-4"><span class="spinner-border"></span></div>
   } @else {
     @for (row of editor.boardRows; track row.board) {
-      <div class="row g-2 align-items-start mb-2">
+      <div class="row g-2 align-items-start mb-4 mb-sm-2">
         <div class="col-1 pt-1 text-center fw-bold">{{ row.board }}</div>
         <div class="col-8 col-sm">
           <select class="form-select form-select-sm w-100" [formControl]="row.player1" (change)="editor.onPlayerSelected(row, row.player1)" [class.is-manual]="row.player1.isManual">
@@ -61,13 +61,13 @@
       <div class="d-none d-sm-block col"></div>
     </div>
 
-    <div class="mt-3">
-      <label class="form-label">Bemerkung</label>
-      <input class="form-control" [formControl]="comment">
+    <div class="form-floating mt-3">
+      <input type="text" class="form-control" id="comment" [formControl]="comment">
+      <label for="comment">Bemerkung</label>
     </div>
     <div class="form-check form-switch mt-3">
       <input class="form-check-input" type="checkbox" role="switch" id="sendConfirmation" [formControl]="sendConfirmation">
-      <label class="form-check-label" for="sendConfirmation">Best&auml;tigung an Mannschaftsf&uuml;hrer senden</label>
+      <label class="form-check-label" for="sendConfirmation">Best&auml;tigung versenden</label>
     </div>
   }
 </div>
