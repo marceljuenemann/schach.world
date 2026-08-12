@@ -1,0 +1,4 @@
+.is-manual {
+  border-color: var(--bs-success);
+  background-color: #d1e5d0;
+}

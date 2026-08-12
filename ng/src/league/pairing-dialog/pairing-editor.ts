@@ -91,6 +91,7 @@ export class PairingEditor {
 
   onOverallResultChanged(control: GuessableControl<number>) {
     control.isManual = true
+    this.guessOverallResult()
   }
 
   // Fills in non-manual player slots for one side, in roster order. A manual pick
@@ -101,11 +102,23 @@ export class PairingEditor {
   private guessPlayers(side: 1 | 2) {
     const roster = side === 1 ? this.roster1 : this.roster2
     let rosterIndex = 0
+    // A manual "no player" pick means the lineup ends there - later non-manual boards
+    // guess null too, rather than skipping the gap and continuing with the next roster player.
+    let forceNull = false
     for (const row of this.boardRows) {
       const control = side === 1 ? row.player1 : row.player2
       if (control.isManual) {
-        const idx = roster.findIndex(p => p.id === control.value)
-        rosterIndex = idx >= 0 ? idx + 1 : rosterIndex
+        if (control.value === null) {
+          forceNull = true
+        } else {
+          const idx = roster.findIndex(p => p.id === control.value)
+          rosterIndex = idx >= 0 ? idx + 1 : rosterIndex
+          forceNull = false
+        }
+        continue
+      }
+      if (forceNull) {
+        control.setValue(null)
         continue
       }
       const next = roster[rosterIndex] ?? null
@@ -184,8 +197,17 @@ export class PairingEditor {
   }
 
   private guessOverallResult() {
-    if (!this.overallResult1.isManual) this.overallResult1.setValue(this.computedTotal(1))
-    if (!this.overallResult2.isManual) this.overallResult2.setValue(this.computedTotal(2))
+    // A manually-set side takes priority: the other side is derived from it (total points
+    // across both sides always equals the board count), not from the board tally - matches
+    // how a manual per-board result mirrors onto its other side.
+    if (this.overallResult1.isManual && !this.overallResult2.isManual) {
+      this.overallResult2.setValue(this.boardRows.length - this.overallResult1.value)
+    } else if (this.overallResult2.isManual && !this.overallResult1.isManual) {
+      this.overallResult1.setValue(this.boardRows.length - this.overallResult2.value)
+    } else {
+      if (!this.overallResult1.isManual) this.overallResult1.setValue(this.computedTotal(1))
+      if (!this.overallResult2.isManual) this.overallResult2.setValue(this.computedTotal(2))
+    }
   }
 
   private computedTotal(side: 1 | 2): number {

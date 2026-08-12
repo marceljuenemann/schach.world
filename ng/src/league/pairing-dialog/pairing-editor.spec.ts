@@ -99,6 +99,27 @@ describe('PairingEditor', () => {
     expect(editor.boardRows[1].player1.value).toBe(4)  // continues from just after roster index of player 3
   })
 
+  it('guesses null for later boards after a manual "no player" pick', () => {
+    const team1 = makeTeam(10, [
+      {id: 1, dwz: 1800, number: 1},
+      {id: 2, dwz: 1800, number: 2},
+      {id: 3, dwz: 1800, number: 3},
+    ])
+    const team2 = makeTeam(20, [{id: 4, dwz: 1800, number: 1}])
+    const editor = new PairingEditor(makePairing(), 3, team1, team2)
+
+    // Default: board 1 -> roster[0], board 2 -> roster[1], board 3 -> roster[2].
+    expect(editor.boardRows[1].player1.value).toBe(2)
+
+    const row1 = editor.boardRows[0]
+    row1.player1.setValue(null)
+    editor.onPlayerSelected(row1, row1.player1)
+
+    expect(editor.boardRows[0].player1.value).toBeNull()  // manual, unchanged
+    expect(editor.boardRows[1].player1.value).toBeNull()  // cascades to null, not roster[1]
+    expect(editor.boardRows[2].player1.value).toBeNull()
+  })
+
   it('does not change the other side when a player is manually picked', () => {
     const team1 = makeTeam(10, [{id: 1, dwz: 1800, number: 1}, {id: 2, dwz: 1800, number: 2}])
     const team2 = makeTeam(20, [{id: 3, dwz: 1800, number: 1}, {id: 4, dwz: 1800, number: 2}])
@@ -189,5 +210,24 @@ describe('PairingEditor', () => {
     row.result1.setValue('½')
     editor.onResultSelected(row, row.result1)
     expect(editor.overallResult1.value).toBe(1.5)
+  })
+
+  it('derives the other overall result from the board count when one side is set manually', () => {
+    const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}, {id: 2, dwz: 1900, number: 2}])
+    const team2 = makeTeam(20, [{id: 3, dwz: 1700, number: 1}, {id: 4, dwz: 1700, number: 2}])
+    const editor = new PairingEditor(makePairing(), 2, team1, team2)
+
+    editor.overallResult1.setValue(1.5)
+    editor.onOverallResultChanged(editor.overallResult1)
+
+    // 2 boards total -> the other side fills in the remainder, not the board tally (0).
+    expect(editor.overallResult2.value).toBe(0.5)
+    expect(editor.overallResult2.isManual).toBeFalse()
+
+    // Manually setting the other side too freezes both - neither is derived anymore.
+    editor.overallResult2.setValue(1)
+    editor.onOverallResultChanged(editor.overallResult2)
+    expect(editor.overallResult1.value).toBe(1.5)
+    expect(editor.overallResult2.value).toBe(1)
   })
 })
