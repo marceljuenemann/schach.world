@@ -2,6 +2,8 @@
 
 namespace Nsv\League\Controller;
 
+use Nsv\League\Api\Model\Division as DivisionModel;
+use Nsv\League\Api\Model\Team as TeamModel;
 use Nsv\League\Api\Service\MatchDayService;
 use Nsv\League\Api\Service\Pdf\MatchDayPdf;
 use Nsv\League\Api\Service\ScheduleService;
@@ -125,9 +127,32 @@ class DivisionController extends AbstractLeagueController {
   #[Route('{division}/{round}/', name: 'matchday')]
   public function matchday(int $round, MatchDayService $service): Response {
     $matchDay = $service->matchDay($this->division, $round);
+    $allowManage = $this->auth->isDivisionManager($this->division);
+
+    // Only build the component payload (divisions/teams lookups, encoding, JSON) when it's
+    // actually needed - skip the work entirely for the common case of a non-manager visitor.
+    $matchDayComponentParams = null;
+    if ($allowManage) {
+      $allDivisions = [];
+      foreach ($this->league->divisions as $division) {
+        $allDivisions[] = DivisionModel::fromEntity($division);
+      }
+      $allTeams = [];
+      foreach ($this->league->teams as $team) {
+        $allTeams[] = TeamModel::fromEntity($team);
+      }
+      $matchDayComponentParams = json_encode(Encoding::deep_utf8_encode([
+        'matchDay' => unserialize(serialize($matchDay)),  // Deep copy.
+        'divisions' => $allDivisions,
+        'teams' => $allTeams,
+      ]));
+    }
+
     return $this->renderWithLegacySystem('matchday/matchday.html.twig', [
       'matchDay' => $matchDay,
-      'tabs' => $this->divisionTabs()
+      'tabs' => $this->divisionTabs(),
+      'allowManage' => $allowManage,
+      'matchDayComponentParams' => $matchDayComponentParams,
     ]);
   }
 

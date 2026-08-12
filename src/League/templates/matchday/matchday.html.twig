@@ -5,6 +5,8 @@
 
 {% block content %}
 
+<league-match-day params="{{ matchDayComponentParams }}">
+
   {{ nsv.tabNavigation(tabs) }}
 
   {% if matchDay.allRounds|default(false) %}
@@ -94,5 +96,7 @@
       Letzte &Auml;nderung: {{ matchDay.lastModified|date('d.m.Y H:i') }}
     </div>
   {% endif %}
+
+</league-match-day>
 
 {% endblock %}
