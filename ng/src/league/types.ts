@@ -27,6 +27,8 @@ export interface Pairing {
   team1: Team
   team2: Team
   comment: string | null
+  result1: number | null
+  result2: number | null
   games: Game[] | null
 }
 

@@ -17,6 +17,8 @@ function makePairing(overrides: Partial<Pairing> = {}): Pairing {
     team1: {id: 10, name: 'Team A'},
     team2: {id: 20, name: 'Team B'},
     comment: null,
+    result1: null,
+    result2: null,
     games: null,
     ...overrides,
   }
@@ -191,6 +193,25 @@ describe('PairingEditor', () => {
     expect(row.result2.value).toBe('1')
     expect(row.result1.isManual).toBeTrue()
     expect(row.player1.isManual).toBeTrue()
+    // result2 is the usual opposite of result1, so it's left guessable - editing result1
+    // later should be enough to flip both sides without having to touch result2 too.
+    expect(row.result2.isManual).toBeFalse()
+  })
+
+  it('marks a saved result2 as manual too when it is not the usual opposite of result1', () => {
+    const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}])
+    const team2 = makeTeam(20, [{id: 2, dwz: 1700, number: 1}])
+    const pairing = makePairing({
+      // Not a normal win/loss pair - a special result that must be preserved as-is.
+      games: [{board: 1, player1: {id: 1, name: 'Player 1', number: 1, dwz: 1900}, player2: null, result1: '+', result2: '+'}],
+    })
+    const editor = new PairingEditor(pairing, 1, team1, team2)
+    const row = editor.boardRows[0]
+
+    expect(row.result1.value).toBe('+')
+    expect(row.result2.value).toBe('+')
+    expect(row.result1.isManual).toBeTrue()
+    expect(row.result2.isManual).toBeTrue()
   })
 
   it('computes the overall result from board scores until manually overridden', () => {
@@ -229,5 +250,78 @@ describe('PairingEditor', () => {
     editor.onOverallResultChanged(editor.overallResult2)
     expect(editor.overallResult1.value).toBe(1.5)
     expect(editor.overallResult2.value).toBe(1)
+  })
+
+  it('keeps deriving the other overall result from the board count even as board results change, ignoring the tally', () => {
+    const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}, {id: 2, dwz: 1900, number: 2}])
+    const team2 = makeTeam(20, [{id: 3, dwz: 1700, number: 1}, {id: 4, dwz: 1700, number: 2}])
+    const editor = new PairingEditor(makePairing(), 2, team1, team2)
+
+    // A lopsided manual override (e.g. an 8:0-style walkover) that ignores the boards entirely.
+    editor.overallResult1.setValue(2)
+    editor.onOverallResultChanged(editor.overallResult1)
+    expect(editor.overallResult2.value).toBe(0)
+
+    // Board changes must not pull the non-manual side back to the (now irrelevant) tally.
+    const row = editor.boardRows[0]
+    row.result1.setValue('0')
+    editor.onResultSelected(row, row.result1)
+    expect(editor.overallResult1.value).toBe(2)
+    expect(editor.overallResult2.value).toBe(0)
+  })
+
+  it('leaves a saved overall result guessable when it matches the computed board tally, so later board edits keep updating it', () => {
+    const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}, {id: 2, dwz: 1900, number: 2}])
+    const team2 = makeTeam(20, [{id: 3, dwz: 1700, number: 1}, {id: 4, dwz: 1700, number: 2}])
+    // Both boards guess a win for team1 -> computed tally is 2:0, matching the saved result.
+    const pairing = makePairing({result1: 2, result2: 0})
+    const editor = new PairingEditor(pairing, 2, team1, team2)
+
+    expect(editor.overallResult1.value).toBe(2)
+    expect(editor.overallResult1.isManual).toBeFalse()
+    expect(editor.overallResult2.value).toBe(0)
+    expect(editor.overallResult2.isManual).toBeFalse()
+
+    // Since it wasn't frozen as manual, changing a board result updates it live.
+    const row = editor.boardRows[0]
+    row.result1.setValue('½')
+    editor.onResultSelected(row, row.result1)
+    expect(editor.overallResult1.value).toBe(1.5)
+    expect(editor.overallResult2.value).toBe(0.5)
+  })
+
+  it('also freezes the other side as manual when it would not survive the board-count derivation', () => {
+    const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}, {id: 2, dwz: 1900, number: 2}])
+    const team2 = makeTeam(20, [{id: 3, dwz: 1700, number: 1}, {id: 4, dwz: 1700, number: 2}])
+    // Computed tally is 2:0. result1 was adjusted (e.g. a walkover penalty) so it's
+    // manual. result2 (0) matches its own tally, but since 1.5 implies 0.5 (board count -
+    // result1), 0 wouldn't survive that derivation - so it must be frozen as manual too,
+    // preserving the saved 1.5:0 instead of silently becoming 1.5:0.5 on open.
+    const pairing = makePairing({result1: 1.5, result2: 0})
+    const editor = new PairingEditor(pairing, 2, team1, team2)
+
+    expect(editor.overallResult1.value).toBe(1.5)
+    expect(editor.overallResult1.isManual).toBeTrue()
+    expect(editor.overallResult2.value).toBe(0)
+    expect(editor.overallResult2.isManual).toBeTrue()
+  })
+
+  it('leaves the other side guessable when it already matches the board-count derivation', () => {
+    // Only 1 player per side for 2 boards: board 2 is a double-blank forfeit, which
+    // contributes 0 to both tallies rather than 1 - so the tally sum (1) falls short of
+    // the board count (2), letting "matches own tally" and "matches board-count minus the
+    // other side" actually differ (with fully resolved boards they'd always agree).
+    const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}])
+    const team2 = makeTeam(20, [{id: 2, dwz: 1700, number: 1}])
+    // Tally is 1:0. result1=2 doesn't match that, so it's manual. result2=0 does match
+    // its own tally (0), and ALSO matches board count - result1 (2 - 2 = 0), so it can
+    // safely stay guessable/derived from result1.
+    const pairing = makePairing({result1: 2, result2: 0})
+    const editor = new PairingEditor(pairing, 2, team1, team2)
+
+    expect(editor.overallResult1.value).toBe(2)
+    expect(editor.overallResult1.isManual).toBeTrue()
+    expect(editor.overallResult2.value).toBe(0)
+    expect(editor.overallResult2.isManual).toBeFalse()
   })
 })

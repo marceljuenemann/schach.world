@@ -49,6 +49,7 @@ export class PairingEditor {
     this.guessPlayers(1)
     this.guessPlayers(2)
     for (const row of this.boardRows) this.guessBoard(row)
+    this.initOverallResult()
     this.guessOverallResult()
   }
 
@@ -63,14 +64,47 @@ export class PairingEditor {
     }
     // Pre-existing saved data counts as already decided - matches legacy's edit-mode
     // behavior (bearbeitung.js marks everything "touched" on load), so we don't
-    // silently overwrite a real saved result with a fresh guess.
-    if (game && game.result1 !== '?') {
+    // silently overwrite a real saved result. But only result1 needs to be manual to
+    // pin it down: result2 stays guessable (mirroring result1 via guessBoard) unless it
+    // doesn't actually match the usual opposite - e.g. some special/asymmetric result -
+    // in which case it must be preserved as-is too. This keeps editing a saved result
+    // easy (change one side, the other follows) without silently flipping an unusual one.
+    if (game) {
       row.result1.isManual = true
-      row.result2.isManual = true
+      row.result2.isManual = game.result2 !== this.opposite(game.result1)
     }
     if (game?.player1) row.player1.isManual = true
     if (game?.player2) row.player2.isManual = true
     return row
+  }
+
+  // Each side is first judged independently against its own board tally (computedTotal):
+  // a saved value that already matches what the boards say stays guessable, so later
+  // board edits keep updating it live. A value that doesn't match - e.g. a manually
+  // adjusted walkover penalty - gets frozen as manual. But guessOverallResult() gives a
+  // manual side priority over the *other* side too (deriving it as boardCount - manual),
+  // so if that other side wouldn't survive that derivation unchanged, it must be frozen
+  // as manual as well - otherwise it'd silently get overwritten the moment the dialog opens.
+  private initOverallResult() {
+    const result1 = this.pairing.result1
+    const result2 = this.pairing.result2
+    if (result1 !== null) {
+      this.overallResult1.setValue(result1)
+      this.overallResult1.isManual = result1 !== this.computedTotal(1)
+    }
+    if (result2 !== null) {
+      this.overallResult2.setValue(result2)
+      this.overallResult2.isManual = result2 !== this.computedTotal(2)
+    }
+    if (result1 !== null && result2 !== null) {
+      if (this.overallResult1.isManual && !this.overallResult2.isManual
+        && result2 !== this.boardRows.length - result1) {
+        this.overallResult2.isManual = true
+      } else if (this.overallResult2.isManual && !this.overallResult1.isManual
+        && result1 !== this.boardRows.length - result2) {
+        this.overallResult1.isManual = true
+      }
+    }
   }
 
   onPlayerSelected(row: BoardRow, control: GuessableControl<number | null>) {
@@ -198,9 +232,10 @@ export class PairingEditor {
   }
 
   private guessOverallResult() {
-    // A manually-set side takes priority: the other side is derived from it (total points
-    // across both sides always equals the board count), not from the board tally - matches
-    // how a manual per-board result mirrors onto its other side.
+    // A manually-set side always takes priority over the board tally: the other side is
+    // derived from it (total points across both sides always equals the board count) -
+    // e.g. setting 8:0 for a lopsided walkover shouldn't have to fight the per-board
+    // guesses. Only once neither side is manual does the board tally take over.
     if (this.overallResult1.isManual && !this.overallResult2.isManual) {
       this.overallResult2.setValue(this.boardRows.length - this.overallResult1.value)
     } else if (this.overallResult2.isManual && !this.overallResult1.isManual) {
