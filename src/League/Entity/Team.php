@@ -90,6 +90,14 @@ class Team
   #[ORM\OneToMany(targetEntity: TeamDetail::class, mappedBy: 'team')]   
   private $details;
 
+  /**
+   * The board number of this team's first player, e.g. 201 for the second team
+   * if the league prefixes numbers with the team number, or 1 otherwise.
+   */
+  public function firstPlayerNumber(): int {
+    return $this->league->configPlayerNumbersWithTeamNumber ? $this->number * 100 + 1 : 1;
+  }
+
   public function nameWithNumber() {
     return trim(trim($this->name) . ' ' . ($this->number > 1 ? $this->number : ''));
   }

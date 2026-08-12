@@ -203,6 +203,11 @@
   <nsv-dialog-launcher dialog="playerDialog" params="{{ playerDialogParams }}" on-save="reload">
     <button class="btn btn-success btn-sm mt-2 d-print-none">{{ nsv.icon('plus') }} Nachmeldung</button>
   </nsv-dialog-launcher>
+  {% if teamEntity.players|length > 1 %}
+    <nsv-dialog-launcher dialog="reorderPlayers" params="{{ reorderPlayersDialogParams }}" on-save="reload">
+      <button class="btn btn-success btn-sm mt-2 ms-2 d-print-none">{{ nsv.icon('sort') }} Umsortieren</button>
+    </nsv-dialog-launcher>
+  {% endif %}
 {% endif %}
 
 <div class="d-none d-lg-block text-end">

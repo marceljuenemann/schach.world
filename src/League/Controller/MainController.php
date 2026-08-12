@@ -66,6 +66,7 @@ class MainController extends AbstractLeagueController {
     $playerDialogParams = null;
     $editPlayerDialogParams = [];
     $deletePlayerDialogParams = [];
+    $reorderPlayersDialogParams = null;
     if ($allowPlayerEdit) {
       // A team's ZPS can contain multiple club numbers concatenated if it's a union of clubs.
       // Just use the first club for DWZ search suggestions.
@@ -113,6 +114,13 @@ class MainController extends AbstractLeagueController {
           ]));
         }
       }
+
+      $reorderPlayersDialogParams = json_encode(Encoding::deep_utf8_encode([
+        'teamNumber' => $teamEntity->number,
+        'firstPlayerNumber' => $teamEntity->firstPlayerNumber(),
+        // TODO: Remove deep copy once everything is in UTF8.
+        'team' => unserialize(serialize($team)),
+      ]));
     }
 
     return $this->renderWithLegacySystem('team.html.twig', [
@@ -128,7 +136,8 @@ class MainController extends AbstractLeagueController {
       ])),
       'playerDialogParams' => $playerDialogParams,
       'editPlayerDialogParams' => $editPlayerDialogParams,
-      'deletePlayerDialogParams' => $deletePlayerDialogParams
+      'deletePlayerDialogParams' => $deletePlayerDialogParams,
+      'reorderPlayersDialogParams' => $reorderPlayersDialogParams
     ]);
   }
 

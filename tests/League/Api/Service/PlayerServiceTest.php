@@ -89,14 +89,14 @@ class PlayerServiceTest extends LeagueTestCase
   }
 
   public function testCreatePlayer_assignsNextBoardNumber() {
-    $existingMax = 0;
-    foreach ($this->team->players as $existing) {
-      $existingMax = max($existingMax, $existing->number);
-    }
+    $this->league->configPlayerNumbersWithTeamNumber = false;
+    $team = $this->newEmptyTeam(5);
+    $existing = $this->service->createPlayer($team, $this->request(['lastName' => 'Eins']));
+    $team->players->add($existing);
 
-    $player = $this->service->createPlayer($this->team, $this->request(['firstName' => 'Max']));
+    $player = $this->service->createPlayer($team, $this->request(['firstName' => 'Max']));
 
-    $this->assertEquals($existingMax + 1, $player->number);
+    $this->assertEquals($existing->number + 1, $player->number);
   }
 
   public function testCreatePlayer_emptyTeamStartsAtOne() {
@@ -204,8 +204,49 @@ class PlayerServiceTest extends LeagueTestCase
 
   public function testDeletePlayer_throwsWhenPlayerHasGames() {
     $player = $this->team->players[2];
-    
+
     $this->expectException(ConflictHttpException::class);
     $this->service->deletePlayer($player);
+  }
+
+  public function testReorderPlayers_assignsSequentialNumbers() {
+    $this->league->configPlayerNumbersWithTeamNumber = false;
+    $team = $this->newEmptyTeam(3);
+    $p1 = $this->service->createPlayer($team, $this->request(['lastName' => 'Eins']));
+    $team->players->add($p1);
+    $p2 = $this->service->createPlayer($team, $this->request(['lastName' => 'Zwei']));
+    $team->players->add($p2);
+    $p3 = $this->service->createPlayer($team, $this->request(['lastName' => 'Drei']));
+    $team->players->add($p3);
+
+    $this->service->reorderPlayers($team, [$p3->id, $p1->id, $p2->id]);
+
+    $this->em->refresh($p1);
+    $this->em->refresh($p2);
+    $this->em->refresh($p3);
+    $this->assertEquals(1, $p3->number);
+    $this->assertEquals(2, $p1->number);
+    $this->assertEquals(3, $p2->number);
+  }
+
+  public function testReorderPlayers_appliesThreeDigitNumbering() {
+    $this->league->configPlayerNumbersWithTeamNumber = true;
+    $team = $this->newEmptyTeam(4);
+    $p1 = $this->service->createPlayer($team, $this->request(['lastName' => 'Eins']));
+    $team->players->add($p1);
+    $p2 = $this->service->createPlayer($team, $this->request(['lastName' => 'Zwei']));
+    $team->players->add($p2);
+
+    $this->service->reorderPlayers($team, [$p2->id, $p1->id]);
+
+    $this->em->refresh($p1);
+    $this->em->refresh($p2);
+    $this->assertEquals(401, $p2->number);
+    $this->assertEquals(402, $p1->number);
+  }
+
+  public function testReorderPlayers_throwsOnMismatchedPlayerSet() {
+    $this->expectException(ConflictHttpException::class);
+    $this->service->reorderPlayers($this->team, [999999]);
   }
 }

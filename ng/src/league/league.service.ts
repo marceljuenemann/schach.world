@@ -37,6 +37,10 @@ export class LeagueService {
     return this.delete(`/teams/${teamId}/players/${playerId}/`)
   }
 
+  reorderPlayers(teamId: number, playerIds: number[]): Promise<void> {
+    return this.put(`/teams/${teamId}/players/reorder/`, {playerIds})
+  }
+
   /**
    * Returns the base URL for the current league.
    */

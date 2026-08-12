@@ -7,6 +7,7 @@ use Nsv\League\Api\Model\Division;
 use Nsv\League\Api\Request\CreateDivisionRequest;
 use Nsv\League\Api\Request\CreateOrUpdatePlayerRequest;
 use Nsv\League\Api\Request\DivisionOrderRequest;
+use Nsv\League\Api\Request\ReorderPlayersRequest;
 use Nsv\League\Api\Request\UpdateTeamCaptainRequest;
 use Nsv\League\Api\Request\UpdateTeamNameAndNumberRequest;
 use Nsv\League\Api\Request\UpdateTeamRecipientsRequest;
@@ -127,7 +128,7 @@ class ApiController extends AbstractLeagueController {
     return $this->apiResponse();
   }
 
-  #[Route('teams/{id}/players/{playerId}/', methods: ['PUT'], name: 'team_player_update')]
+  #[Route('teams/{id}/players/{playerId}/', methods: ['PUT'], name: 'team_player_update', requirements: ['playerId' => '\d+'])]
   public function updatePlayer(Team $team, #[MapEntity(id: 'playerId')] Player $player, #[MapRequestPayload] CreateOrUpdatePlayerRequest $request, PlayerService $service): Response {
     if ($player->team->id !== $team->id) {
       throw new NotFoundHttpException('Player not found on this team');
@@ -138,13 +139,20 @@ class ApiController extends AbstractLeagueController {
     return $this->apiResponse();
   }
 
-  #[Route('teams/{id}/players/{playerId}/', methods: ['DELETE'], name: 'team_player_delete')]
+  #[Route('teams/{id}/players/{playerId}/', methods: ['DELETE'], name: 'team_player_delete', requirements: ['playerId' => '\d+'])]
   public function deletePlayer(Team $team, #[MapEntity(id: 'playerId')] Player $player, PlayerService $service): Response {
     if ($player->team->id !== $team->id) {
       throw new NotFoundHttpException('Player not found on this team');
     }
     $this->auth->requireDivisionManager($team->division);
     $service->deletePlayer($player);
+    return $this->apiResponse();
+  }
+
+  #[Route('teams/{id}/players/reorder/', methods: ['PUT'], name: 'team_player_reorder')]
+  public function reorderPlayers(Team $team, #[MapRequestPayload] ReorderPlayersRequest $request, PlayerService $service): Response {
+    $this->auth->requireDivisionManager($team->division);
+    $service->reorderPlayers($team, $request->playerIds);
     return $this->apiResponse();
   }
 }

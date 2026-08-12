@@ -113,16 +113,32 @@ class PlayerService
      ->execute();
   }
 
-  // Mirrors legacy SED_Spieler::getNextBrettNr(): max existing board number + 1,
-  // or 1 for an empty team - unless the league is configured for three-digit
-  // numbers (League::$configPlayerNumbersWithTeamNumber, column spielDreistelligeNr),
-  // in which case an empty team's first player starts at team-number * 100 + 1.
   private function nextBoardNumber(Entity\Team $team): int {
-    $max = 0;
-    foreach ($team->players as $existing) {
-      $max = max($max, $existing->number);
+    return $team->firstPlayerNumber() + count($team->players);
+  }
+
+  public function reorderPlayers(Entity\Team $team, array $playerIds): void {
+    $existingIds = [];
+    $playersById = [];
+    foreach ($team->players as $player) {
+      $existingIds[] = $player->id;
+      $playersById[$player->id] = $player;
     }
-    if ($max > 0) return $max + 1;
-    return $team->league->configPlayerNumbersWithTeamNumber ? $team->number * 100 + 1 : 1;
+
+    // Compare as sorted copies - $playerIds itself must stay in the caller's given
+    // order below, sort() would mutate it in place if applied directly.
+    $sortedExisting = $existingIds;
+    $sortedGiven = $playerIds;
+    sort($sortedExisting);
+    sort($sortedGiven);
+    if ($sortedExisting !== $sortedGiven) {
+      throw new ConflictHttpException('Player list does not match the team\'s current players.');
+    }
+
+    foreach ($playerIds as $index => $id) {
+      $playersById[$id]->number = $team->firstPlayerNumber() + $index;
+      $this->leagueEntityManager->persist($playersById[$id]);
+    }
+    $this->leagueEntityManager->flush();
   }
 }

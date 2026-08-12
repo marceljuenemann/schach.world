@@ -1,0 +1,16 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Spieler umsortieren</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+</div>
+<div class="modal-body">
+  <div cdkDropList class="list-group" (cdkDropListDropped)="drop($event)">
+    @for (player of orderedPlayers; track player.id; let i = $index) {
+      <div cdkDrag class="list-group-item d-flex align-items-center gap-2">
+        <span class="dashicons dashicons-menu-alt" aria-hidden="true"></span>
+        <span class="text-muted">{{ params.firstPlayerNumber + i }}</span>
+        <span>{{ player.name }}</span>
+      </div>
+    }
+  </div>
+</div>
+<nsv-dialog-footer [dialog]="this" saveButtonLabel="Speichern"></nsv-dialog-footer>
