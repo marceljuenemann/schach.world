@@ -11,39 +11,54 @@
     <div class="text-center py-4"><span class="spinner-border"></span></div>
   } @else {
     @for (row of editor.boardRows; track row.board) {
-      <div class="d-flex align-items-center gap-2 mb-1">
-        <span><strong>{{ row.board }}</strong></span>
-        <select class="form-select form-select-sm" [formControl]="row.player1" (change)="editor.onPlayerSelected(row, row.player1)" [class.is-manual]="row.player1.isManual">
-          @for (p of editor.roster1; track p.id) {
-            <option [ngValue]="p.id">{{ p.number }} {{ p.name }}</option>
-          }
-          <option [ngValue]="null"></option>
-        </select>
-        <select class="form-select form-select-sm" style="width: auto" [formControl]="row.result1" (change)="editor.onResultSelected(row, row.result1)" [class.is-manual]="row.result1.isManual">
-          @for (r of resultOptions; track r) { <option [value]="r">{{ r }}</option> }
-        </select>
-        <span>:</span>
-        <select class="form-select form-select-sm" style="width: auto" [formControl]="row.result2" (change)="editor.onResultSelected(row, row.result2)" [class.is-manual]="row.result2.isManual">
-          @for (r of resultOptions; track r) { <option [value]="r">{{ r }}</option> }
-        </select>
-        <select class="form-select form-select-sm" [formControl]="row.player2" (change)="editor.onPlayerSelected(row, row.player2)" [class.is-manual]="row.player2.isManual">
-          @for (p of editor.roster2; track p.id) {
-            <option [ngValue]="p.id">{{ p.number }} {{ p.name }}</option>
-          }
-          <option [ngValue]="null"></option>
-        </select>
+      <div class="row g-2 align-items-start mb-2">
+        <div class="col-1 pt-1 text-center fw-bold">{{ row.board }}</div>
+        <div class="col-8 col-sm">
+          <select class="form-select form-select-sm w-100" [formControl]="row.player1" (change)="editor.onPlayerSelected(row, row.player1)" [class.is-manual]="row.player1.isManual">
+            @for (p of editor.roster1; track p.id) {
+              <option [ngValue]="p.id">{{ p.number }} {{ p.name }}</option>
+            }
+            <option [ngValue]="null"></option>
+          </select>
+        </div>
+        <div class="col-3 col-sm-auto">
+          <select class="form-select form-select-sm w-100" [formControl]="row.result1" (change)="editor.onResultSelected(row, row.result1)" [class.is-manual]="row.result1.isManual">
+            @for (r of resultOptions; track r) { <option [value]="r">{{ r }}</option> }
+          </select>
+        </div>
+        <div class="d-none d-sm-block col-sm-auto p-0 pt-1">:</div>
+        <div class="col-1 d-sm-none"></div>
+        <div class="col-8 col-sm order-sm-1">
+          <select class="form-select form-select-sm w-100" [formControl]="row.player2" (change)="editor.onPlayerSelected(row, row.player2)" [class.is-manual]="row.player2.isManual">
+            @for (p of editor.roster2; track p.id) {
+              <option [ngValue]="p.id">{{ p.number }} {{ p.name }}</option>
+            }
+            <option [ngValue]="null"></option>
+          </select>
+        </div>
+        <div class="col-3 col-sm-auto">
+          <select class="form-select form-select-sm w-100" [formControl]="row.result2" (change)="editor.onResultSelected(row, row.result2)" [class.is-manual]="row.result2.isManual">
+            @for (r of resultOptions; track r) { <option [value]="r">{{ r }}</option> }
+          </select>
+        </div>
       </div>
     }
 
-    <div class="d-flex align-items-center gap-2 mt-2">
-      <span class="fw-bold">Gesamt</span>
-      <select class="form-select form-select-sm" style="width: auto" [formControl]="editor.overallResult1" (change)="editor.onOverallResultChanged(editor.overallResult1)" [class.is-manual]="editor.overallResult1.isManual">
-        @for (v of editor.overallResultOptions; track v) { <option [ngValue]="v">{{ v }}</option> }
-      </select>
-      <span>:</span>
-      <select class="form-select form-select-sm" style="width: auto" [formControl]="editor.overallResult2" (change)="editor.onOverallResultChanged(editor.overallResult2)" [class.is-manual]="editor.overallResult2.isManual">
-        @for (v of editor.overallResultOptions; track v) { <option [ngValue]="v">{{ v }}</option> }
-      </select>
+    <div class="row g-2 align-items-center mt-2">
+      <div class="col fw-bold">Gesamtergebnis</div>
+      <div class="col-1"></div>
+      <div class="col-auto">
+        <select class="form-select form-select-sm w-100" [formControl]="editor.overallResult1" (change)="editor.onOverallResultChanged(editor.overallResult1)" [class.is-manual]="editor.overallResult1.isManual">
+          @for (v of editor.overallResultOptions; track v) { <option [ngValue]="v">{{ v }}</option> }
+        </select>
+      </div>
+      <div class="col-auto p-0">:</div>
+      <div class="col-auto">
+        <select class="form-select form-select-sm w-100" [formControl]="editor.overallResult2" (change)="editor.onOverallResultChanged(editor.overallResult2)" [class.is-manual]="editor.overallResult2.isManual">
+          @for (v of editor.overallResultOptions; track v) { <option [ngValue]="v">{{ v }}</option> }
+        </select>
+      </div>
+      <div class="d-none d-sm-block col"></div>
     </div>
 
     <div class="mt-3">

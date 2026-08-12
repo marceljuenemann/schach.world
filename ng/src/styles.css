@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Custom NgbModal width, set via `modalDialogClass` since bootstrap's own size tiers
+   (lg=800px / xl=1140px) don't fit the pairing dialog's board grid well. */
+.pairing-dialog-modal {
+  max-width: 750px;
+}
