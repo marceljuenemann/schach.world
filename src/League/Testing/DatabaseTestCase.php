@@ -13,6 +13,7 @@ use Symfony\Component\DependencyInjection\Container;
  * Abstract test case that runs against an actual database and helps with
  * creating test data on-the-fly. This test does not make use of the LeagueFixtures.
  */
+// TODO: Merge into LeagueTestCase.
 abstract class DatabaseTestCase extends KernelTestCase
 {
   protected Container $container;

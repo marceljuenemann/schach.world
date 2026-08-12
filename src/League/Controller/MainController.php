@@ -73,9 +73,11 @@ class MainController extends AbstractLeagueController {
       $preferredZps = $teamEntity->zps ? substr($teamEntity->zps, 0, DsbDatabase::ZPS_CLUB_LENGTH) : null;
 
       // Preselect the current round for late registration, unless the season hasn't started yet.
-      $closestRound = $scheduleService->closestRound($teamEntity->division, date('Y-m-d'));
+      // A team may not have a division assigned (yet) - closestRound() requires one, and
+      // config('rounds') falls back to the league-wide setting when there's no division.
+      $closestRound = $teamEntity->division ? $scheduleService->closestRound($teamEntity->division, date('Y-m-d')) : null;
       $currentRound = ($closestRound && $closestRound->round > 1) ? $closestRound->round : null;
-      $roundCount = $teamEntity->division->config('rounds');
+      $roundCount = $teamEntity->division ? $teamEntity->division->config('rounds') : $this->league->configRounds;
 
       $playerDialogParams = json_encode(Encoding::deep_utf8_encode([
         'teamId' => $teamId,

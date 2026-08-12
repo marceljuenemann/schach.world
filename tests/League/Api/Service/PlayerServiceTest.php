@@ -21,6 +21,12 @@ class PlayerServiceTest extends LeagueTestCase
   private League $league;
   private Team $team;
 
+  // The `league` entity manager's tables are MyISAM and are NOT protected by Dama's
+  // per-test rollback (see CLAUDE.md) - anything created here writes permanently to the
+  // real, shared dev database unless we delete it ourselves. Track and clean it up below.
+  private array $createdPlayerIds = [];
+  private array $createdTeamIds = [];
+
   protected function setUp(): void {
     parent::setUp();
     $this->dwzService = $this->createMock(IsewaseDwzCalculator::class);
@@ -28,6 +34,26 @@ class PlayerServiceTest extends LeagueTestCase
     $this->service = $this->container->get(PlayerService::class);
     $this->league = $this->leagueRepository->findByPathOrPrefix('nsj-2526');
     $this->team = $this->league->teamById(8412);  // SK Lehrte
+  }
+
+  protected function tearDown(): void {
+    foreach ($this->createdPlayerIds as $id) {
+      $player = $this->em->find(Player::class, $id);
+      if ($player) {
+        $this->em->remove($player);
+      }
+    }
+    $this->em->flush();
+
+    foreach ($this->createdTeamIds as $id) {
+      $team = $this->em->find(Team::class, $id);
+      if ($team) {
+        $this->em->remove($team);
+      }
+    }
+    $this->em->flush();
+
+    parent::tearDown();
   }
 
   public function testPlayer1() {
@@ -70,10 +96,13 @@ class PlayerServiceTest extends LeagueTestCase
     return $request;
   }
 
+  // TODO: Move helpers into LeagueTestCase and start with a clean league probably.
   private function newEmptyTeam(int $number): Team {
     $team = new Team();
     $team->league = $this->league;
-    $team->division = $this->team->division;
+    // Team::__set() for 'division' also creates a stray dynamic 'division' property that
+    // shadows the magic getter forever after - assign divisionId directly to avoid that.
+    $team->divisionId = $this->team->divisionId;
     $team->name = 'Test Team';
     $team->number = $number;
     $team->zps = null;
@@ -85,16 +114,26 @@ class PlayerServiceTest extends LeagueTestCase
     $team->players = new ArrayCollection();
     $this->em->persist($team);
     $this->em->flush();
+    $this->createdTeamIds[] = $team->id;
     return $team;
+  }
+
+  // Wraps PlayerService::createPlayer() and tracks the result for cleanup in tearDown() -
+  // use this instead of calling the service directly whenever the player is expected to
+  // actually be created (i.e. not in tests that expect an exception before creation).
+  private function createTrackedPlayer(Team $team, array $overrides = []): Player {
+    $player = $this->service->createPlayer($team, $this->request($overrides));
+    $this->createdPlayerIds[] = $player->id;
+    return $player;
   }
 
   public function testCreatePlayer_assignsNextBoardNumber() {
     $this->league->configPlayerNumbersWithTeamNumber = false;
     $team = $this->newEmptyTeam(5);
-    $existing = $this->service->createPlayer($team, $this->request(['lastName' => 'Eins']));
+    $existing = $this->createTrackedPlayer($team, ['lastName' => 'Eins']);
     $team->players->add($existing);
 
-    $player = $this->service->createPlayer($team, $this->request(['firstName' => 'Max']));
+    $player = $this->createTrackedPlayer($team, ['firstName' => 'Max']);
 
     $this->assertEquals($existing->number + 1, $player->number);
   }
@@ -103,7 +142,7 @@ class PlayerServiceTest extends LeagueTestCase
     $this->league->configPlayerNumbersWithTeamNumber = false;
     $team = $this->newEmptyTeam(50);
 
-    $player = $this->service->createPlayer($team, $this->request());
+    $player = $this->createTrackedPlayer($team);
 
     $this->assertEquals(1, $player->number);
   }
@@ -112,13 +151,13 @@ class PlayerServiceTest extends LeagueTestCase
     $this->league->configPlayerNumbersWithTeamNumber = true;
     $team = $this->newEmptyTeam(2);
 
-    $player = $this->service->createPlayer($team, $this->request());
+    $player = $this->createTrackedPlayer($team);
 
     $this->assertEquals(201, $player->number);
   }
 
   public function testCreatePlayer_appliesFields() {
-    $player = $this->service->createPlayer($this->team, $this->request([
+    $player = $this->createTrackedPlayer($this->team, [
       'firstName' => 'Max',
       'lastName' => 'Mustermann',
       'title' => 'GM',
@@ -127,7 +166,7 @@ class PlayerServiceTest extends LeagueTestCase
       'elo' => 1750,
       'yearOfBirth' => 1990,
       'gender' => 'M',
-    ]));
+    ]);
 
     $this->assertEquals('Max', $player->firstName);
     $this->assertEquals('Mustermann', $player->lastName);
@@ -143,15 +182,39 @@ class PlayerServiceTest extends LeagueTestCase
   }
 
   public function testCreatePlayer_lateRegistrationDefaultsToTeamDivision() {
-    $player = $this->service->createPlayer($this->team, $this->request(['lateRegistrationRound' => 3]));
+    $player = $this->createTrackedPlayer($this->team, ['lateRegistrationRound' => 3]);
 
     $this->assertEquals(3, $player->lateRegistrationRound);
     $this->assertNotNull($player->lateRegistrationDivision);
     $this->assertEquals($this->team->division->id, $player->lateRegistrationDivision->id);
   }
 
+  public function testCreatePlayer_throwsWhenSettingLateRegistrationRoundWithoutDivision() {
+    $team = $this->newEmptyTeam(6);
+    $team->divisionId = 0;
+
+    $this->expectException(ConflictHttpException::class);
+    $this->service->createPlayer($team, $this->request(['lateRegistrationRound' => 1]));
+  }
+
+  public function testUpdatePlayer_allowsExistingLateRegistrationWhenTeamHasNoDivision() {
+    // Uses an isolated team rather than $this->team - mutating divisionId on the shared
+    // fixture team would leak into other tests via Doctrine's identity map.
+    $team = $this->newEmptyTeam(7);
+    $player = $this->createTrackedPlayer($team, ['lateRegistrationRound' => 2]);
+    $originalDivisionId = $player->lateRegistrationDivision->id;
+
+    // Simulate the team's division having been removed after the fact.
+    $team->divisionId = 0;
+
+    $updated = $this->service->updatePlayer($player, $this->request(['lateRegistrationRound' => 3]));
+
+    $this->assertEquals(3, $updated->lateRegistrationRound);
+    $this->assertEquals($originalDivisionId, $updated->lateRegistrationDivision->id);
+  }
+
   public function testUpdatePlayer_clearsDivisionWhenRoundCleared() {
-    $player = $this->service->createPlayer($this->team, $this->request(['lateRegistrationRound' => 2]));
+    $player = $this->createTrackedPlayer($this->team, ['lateRegistrationRound' => 2]);
     $this->assertNotNull($player->lateRegistrationDivision);
 
     $updated = $this->service->updatePlayer($player, $this->request(['lateRegistrationRound' => null]));
@@ -161,7 +224,7 @@ class PlayerServiceTest extends LeagueTestCase
   }
 
   public function testUpdatePlayer_preservesExistingDivisionWhenRoundKept() {
-    $player = $this->service->createPlayer($this->team, $this->request(['lateRegistrationRound' => 2]));
+    $player = $this->createTrackedPlayer($this->team, ['lateRegistrationRound' => 2]);
     $originalDivisionId = $player->lateRegistrationDivision->id;
 
     // Changing the round while keeping it set should NOT recompute the division
@@ -173,7 +236,7 @@ class PlayerServiceTest extends LeagueTestCase
   }
 
   public function testUpdatePlayer_defaultsDivisionWhenRoundNewlySet() {
-    $player = $this->service->createPlayer($this->team, $this->request());
+    $player = $this->createTrackedPlayer($this->team);
     $this->assertNull($player->lateRegistrationDivision);
 
     $updated = $this->service->updatePlayer($player, $this->request(['lateRegistrationRound' => 4]));
@@ -184,9 +247,9 @@ class PlayerServiceTest extends LeagueTestCase
   }
 
   public function testDeletePlayer_removesPlayerAndShiftsBoardNumbers() {
-    $p1 = $this->service->createPlayer($this->team, $this->request(['lastName' => 'Eins']));
-    $p2 = $this->service->createPlayer($this->team, $this->request(['lastName' => 'Zwei']));
-    $p3 = $this->service->createPlayer($this->team, $this->request(['lastName' => 'Drei']));
+    $p1 = $this->createTrackedPlayer($this->team, ['lastName' => 'Eins']);
+    $p2 = $this->createTrackedPlayer($this->team, ['lastName' => 'Zwei']);
+    $p3 = $this->createTrackedPlayer($this->team, ['lastName' => 'Drei']);
     $p1Number = $p1->number;
     $p2Number = $p2->number;
     $p2Id = $p2->id;
@@ -212,11 +275,11 @@ class PlayerServiceTest extends LeagueTestCase
   public function testReorderPlayers_assignsSequentialNumbers() {
     $this->league->configPlayerNumbersWithTeamNumber = false;
     $team = $this->newEmptyTeam(3);
-    $p1 = $this->service->createPlayer($team, $this->request(['lastName' => 'Eins']));
+    $p1 = $this->createTrackedPlayer($team, ['lastName' => 'Eins']);
     $team->players->add($p1);
-    $p2 = $this->service->createPlayer($team, $this->request(['lastName' => 'Zwei']));
+    $p2 = $this->createTrackedPlayer($team, ['lastName' => 'Zwei']);
     $team->players->add($p2);
-    $p3 = $this->service->createPlayer($team, $this->request(['lastName' => 'Drei']));
+    $p3 = $this->createTrackedPlayer($team, ['lastName' => 'Drei']);
     $team->players->add($p3);
 
     $this->service->reorderPlayers($team, [$p3->id, $p1->id, $p2->id]);
@@ -232,9 +295,9 @@ class PlayerServiceTest extends LeagueTestCase
   public function testReorderPlayers_appliesThreeDigitNumbering() {
     $this->league->configPlayerNumbersWithTeamNumber = true;
     $team = $this->newEmptyTeam(4);
-    $p1 = $this->service->createPlayer($team, $this->request(['lastName' => 'Eins']));
+    $p1 = $this->createTrackedPlayer($team, ['lastName' => 'Eins']);
     $team->players->add($p1);
-    $p2 = $this->service->createPlayer($team, $this->request(['lastName' => 'Zwei']));
+    $p2 = $this->createTrackedPlayer($team, ['lastName' => 'Zwei']);
     $team->players->add($p2);
 
     $this->service->reorderPlayers($team, [$p2->id, $p1->id]);

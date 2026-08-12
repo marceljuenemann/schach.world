@@ -90,7 +90,13 @@ class PlayerService
     if ($request->lateRegistrationRound === null) {
       $player->lateRegistrationDivision = null;
     } else {
-      $player->lateRegistrationDivision = $existingLateRegistrationDivision ?? $player->team->division;
+      // Only allow setting a late registration round without the team having a division if
+      // the player already had one - e.g. the team's division was removed after the fact.
+      $division = $existingLateRegistrationDivision ?? $player->team->division;
+      if (!$division) {
+        throw new ConflictHttpException('Cannot set a late registration round for a team without a division.');
+      }
+      $player->lateRegistrationDivision = $division;
     }
   }
 
