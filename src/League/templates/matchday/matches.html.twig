@@ -61,10 +61,20 @@
         {% endif %}
 
         {% if allowManage %}
+          {% set legacyUri = league.uri() ~ '?admin=alleeing---&pid=' ~ pairing.id %}
           <div class="text-end">
-            <button class="btn btn-success btn-sm mt-1 d-print-none" data-nsv-pairing-edit data-pairing-id="{{ pairing.id }}">
-              {{ nsv.icon('edit') }} Ergebnismeldung
-            </button>
+            <div class="btn-group mt-1 d-print-none">
+              <button class="btn btn-success btn-sm" data-nsv-pairing-edit data-pairing-id="{{ pairing.id }}">
+                {{ nsv.icon('edit') }} {{ pairing.result ? 'Bearbeiten' : 'Ergebnismeldung' }}
+              </button>
+              <button type="button" class="btn btn-success btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Weitere Optionen</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="{{ legacyUri }}#zusatz">Optionen</a></li>
+                <li><a class="dropdown-item" href="{{ legacyUri }}">Alte Eingabemaske</a></li>
+              </ul>
+            </div>
           </div>
         {% endif %}
 
