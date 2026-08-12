@@ -1,11 +1,13 @@
 import { AfterViewInit, Component, ElementRef, Input, inject } from '@angular/core';
 import { DialogService } from '../../core/dialog/dialog.service';
 import { PairingDialog } from '../pairing-dialog/pairing-dialog.component';
+import { MatchDay } from '../types';
 
 export interface MatchDayComponentParams {
-  matchDay: unknown
+  matchDay: MatchDay
   divisions: unknown[]
   teams: unknown[]
+  boardCount: number
 }
 
 @Component({

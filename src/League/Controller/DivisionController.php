@@ -145,6 +145,7 @@ class DivisionController extends AbstractLeagueController {
         'matchDay' => unserialize(serialize($matchDay)),  // Deep copy.
         'divisions' => $allDivisions,
         'teams' => $allTeams,
+        'boardCount' => $this->division->boardCount(),
       ]));
     }
 

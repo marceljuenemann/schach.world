@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { lastValueFrom } from 'rxjs';
+import { Team } from './types';
 
 export interface CreateOrUpdatePlayerData {
   firstName: string
@@ -41,6 +42,10 @@ export class LeagueService {
     return this.put(`/teams/${teamId}/players/reorder/`, {playerIds})
   }
 
+  getTeam(teamId: number): Promise<Team> {
+    return this.get(`/teams/${teamId}/`)
+  }
+
   /**
    * Returns the base URL for the current league.
    */
@@ -59,5 +64,9 @@ export class LeagueService {
 
   private delete<T>(url: string): Promise<T> {
     return lastValueFrom(this.http.delete<any>(this.baseUrl() + url))
+  }
+
+  private get<T>(url: string): Promise<T> {
+    return lastValueFrom(this.http.get<any>(this.baseUrl() + url))
   }
 }

@@ -1,8 +1,59 @@
 <div class="modal-header">
-  <h4 class="modal-title" id="modal-basic-title">Ergebnis eintragen</h4>
+  <h4 class="modal-title" id="modal-basic-title">{{ pairing.team1.name }} &ndash; {{ pairing.team2.name }}</h4>
   <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
 </div>
 <div class="modal-body">
-  Paarung #{{ params.pairingId }}
+  <div class="alert alert-info">
+    Feedback zur neuen Ergebniseingabe gerne an <a href="mailto:webmaster@nsv-online.de">webmaster@nsv-online.de</a>
+  </div>
+
+  @if (loading) {
+    <div class="text-center py-4"><span class="spinner-border"></span></div>
+  } @else {
+    @for (row of editor.boardRows; track row.board) {
+      <div class="d-flex align-items-center gap-2 mb-1">
+        <span>{{ row.board }}</span>
+        <select class="form-select form-select-sm" [formControl]="row.player1" (change)="editor.onPlayerSelected(row, row.player1)" [class.bg-warning-subtle]="row.player1.isManual">
+          <option [ngValue]="null"></option>
+          @for (p of editor.roster1; track p.id) {
+            <option [ngValue]="p.id">{{ p.number }} {{ p.name }}</option>
+          }
+        </select>
+        <select class="form-select form-select-sm" style="width: auto" [formControl]="row.result1" (change)="editor.onResultSelected(row, row.result1)" [class.bg-warning-subtle]="row.result1.isManual">
+          @for (r of resultOptions; track r) { <option [value]="r">{{ r }}</option> }
+        </select>
+        <span>:</span>
+        <select class="form-select form-select-sm" style="width: auto" [formControl]="row.result2" (change)="editor.onResultSelected(row, row.result2)" [class.bg-warning-subtle]="row.result2.isManual">
+          @for (r of resultOptions; track r) { <option [value]="r">{{ r }}</option> }
+        </select>
+        <select class="form-select form-select-sm" [formControl]="row.player2" (change)="editor.onPlayerSelected(row, row.player2)" [class.bg-warning-subtle]="row.player2.isManual">
+          <option [ngValue]="null"></option>
+          @for (p of editor.roster2; track p.id) {
+            <option [ngValue]="p.id">{{ p.number }} {{ p.name }}</option>
+          }
+        </select>
+      </div>
+    }
+
+    <div class="d-flex align-items-center gap-2 mt-2">
+      <span class="fw-bold">Gesamt</span>
+      <select class="form-select form-select-sm" style="width: auto" [formControl]="editor.overallResult1" (change)="editor.onOverallResultChanged(editor.overallResult1)" [class.bg-warning-subtle]="editor.overallResult1.isManual">
+        @for (v of editor.overallResultOptions; track v) { <option [ngValue]="v">{{ v }}</option> }
+      </select>
+      <span>:</span>
+      <select class="form-select form-select-sm" style="width: auto" [formControl]="editor.overallResult2" (change)="editor.onOverallResultChanged(editor.overallResult2)" [class.bg-warning-subtle]="editor.overallResult2.isManual">
+        @for (v of editor.overallResultOptions; track v) { <option [ngValue]="v">{{ v }}</option> }
+      </select>
+    </div>
+
+    <div class="mt-3">
+      <label class="form-label">Bemerkung</label>
+      <input class="form-control" [formControl]="comment">
+    </div>
+    <div class="form-check form-switch mt-3">
+      <input class="form-check-input" type="checkbox" role="switch" id="sendConfirmation" [formControl]="sendConfirmation">
+      <label class="form-check-label" for="sendConfirmation">Best&auml;tigung an Mannschaftsf&uuml;hrer senden</label>
+    </div>
+  }
 </div>
 <nsv-dialog-footer [dialog]="this"></nsv-dialog-footer>
