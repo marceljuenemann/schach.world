@@ -2,9 +2,11 @@
 
 namespace Nsv\League\Api\Service;
 
+use Doctrine\ORM\EntityManagerInterface;
 use Nsv\Dwz\IsewaseDwzCalculator;
 use Nsv\League\Api\Model\Player;
 use Nsv\League\Api\Model\Team;
+use Nsv\League\Api\Request\CreateOrUpdatePlayerRequest;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity;
 use Nsv\League\Repository\GameRepository;
@@ -16,7 +18,8 @@ class PlayerService
   function __construct(
     private PlayerRepository $playerRepository,
     private GameRepository $gameRepository,
-    private IsewaseDwzCalculator $dwzCalculator
+    private IsewaseDwzCalculator $dwzCalculator,
+    private EntityManagerInterface $leagueEntityManager
   ) {}
 
   // TODO: cache, especially for the DWZ calculation.
@@ -53,5 +56,53 @@ class PlayerService
       // Swallow timeouts and server errors.
       return null;
     }
+  }
+
+  public function createPlayer(Entity\Team $team, CreateOrUpdatePlayerRequest $request): Entity\Player {
+    $player = new Entity\Player();
+    $player->team = $team;
+    $player->number = $this->nextBoardNumber($team);
+    $this->applyRequest($player, $request, null);
+    $this->leagueEntityManager->persist($player);
+    $this->leagueEntityManager->flush();
+    return $player;
+  }
+
+  public function updatePlayer(Entity\Player $player, CreateOrUpdatePlayerRequest $request): Entity\Player {
+    $this->applyRequest($player, $request, $player->lateRegistrationDivision);
+    $this->leagueEntityManager->persist($player);
+    $this->leagueEntityManager->flush();
+    return $player;
+  }
+
+  private function applyRequest(Entity\Player $player, CreateOrUpdatePlayerRequest $request, ?Entity\Division $existingLateRegistrationDivision): void {
+    $player->firstName = $request->firstName ?? '';
+    $player->lastName = $request->lastName;
+    $player->title = $request->title ?? '';
+    $player->zps = $request->zps ?? '';
+    $player->dwz = $request->dwz;
+    $player->elo = $request->elo;
+    $player->birth = $request->yearOfBirth ? (string) $request->yearOfBirth : '';
+    $player->gender = $request->gender ? strtolower($request->gender) : '';
+    $player->lateRegistrationRound = $request->lateRegistrationRound;
+
+    if ($request->lateRegistrationRound === null) {
+      $player->lateRegistrationDivision = null;
+    } else {
+      $player->lateRegistrationDivision = $existingLateRegistrationDivision ?? $player->team->division;
+    }
+  }
+
+  // Mirrors legacy SED_Spieler::getNextBrettNr(): max existing board number + 1,
+  // or 1 for an empty team - unless the league is configured for three-digit
+  // numbers (League::$configPlayerNumbersWithTeamNumber, column spielDreistelligeNr),
+  // in which case an empty team's first player starts at team-number * 100 + 1.
+  private function nextBoardNumber(Entity\Team $team): int {
+    $max = 0;
+    foreach ($team->players as $existing) {
+      $max = max($max, $existing->number);
+    }
+    if ($max > 0) return $max + 1;
+    return $team->league->configPlayerNumbersWithTeamNumber ? $team->number * 100 + 1 : 1;
   }
 }

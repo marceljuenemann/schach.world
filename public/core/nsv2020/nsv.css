@@ -333,6 +333,12 @@ table.nsv-table {
   border-right-width: 2px;
 }
 
+.nsv-table td.nsv-table-no-border,
+.nsv-table th.nsv-table-no-border {
+  border: none;
+  background: none;
+}
+
 .nsv-table-footer {
   margin-top: -1rem !important;
 }

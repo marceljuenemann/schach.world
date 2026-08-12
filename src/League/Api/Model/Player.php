@@ -18,6 +18,7 @@ class Player
   public ?string $zps;
   public ?int $dwz;
   public ?int $elo;
+  public ?int $yearOfBirth = null;
   public string $gender;
   public bool $isGuest;
   public ?int $lateRegistrationRound;

@@ -2,12 +2,16 @@
 
 namespace Nsv\League\Api\Service;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Nsv\Dwz\IsewaseDwzCalculator;
+use Nsv\League\Api\Request\CreateOrUpdatePlayerRequest;
 use Nsv\League\Entity\League;
 use Nsv\League\Entity\Team;
 use Tests\League\LeagueTestCase;
+use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 use PHPUnit\Framework\MockObject\MockObject;
 
+#[AllowMockObjectsWithoutExpectations]
 class PlayerServiceTest extends LeagueTestCase
 {
   private MockObject $dwzService;
@@ -53,5 +57,127 @@ class PlayerServiceTest extends LeagueTestCase
     $this->dwzService->expects(self::never())->method('calculate');
     $model = $this->service->player($this->league, $player->id);
     $this->assertMatchesSnapshot($model);
+  }
+
+  private function request(array $overrides = []): CreateOrUpdatePlayerRequest {
+    $request = new CreateOrUpdatePlayerRequest();
+    $request->lastName = 'Mustermann';
+    foreach ($overrides as $key => $value) {
+      $request->$key = $value;
+    }
+    return $request;
+  }
+
+  private function newEmptyTeam(int $number): Team {
+    $team = new Team();
+    $team->league = $this->league;
+    $team->division = $this->team->division;
+    $team->name = 'Test Team';
+    $team->number = $number;
+    $team->zps = null;
+    $team->venueName = null;
+    $team->venueStreet = null;
+    $team->venuePostCode = null;
+    $team->venueCity = null;
+    $team->venuePhone = null;
+    $team->players = new ArrayCollection();
+    $this->em->persist($team);
+    $this->em->flush();
+    return $team;
+  }
+
+  public function testCreatePlayer_assignsNextBoardNumber() {
+    $existingMax = 0;
+    foreach ($this->team->players as $existing) {
+      $existingMax = max($existingMax, $existing->number);
+    }
+
+    $player = $this->service->createPlayer($this->team, $this->request(['firstName' => 'Max']));
+
+    $this->assertEquals($existingMax + 1, $player->number);
+  }
+
+  public function testCreatePlayer_emptyTeamStartsAtOne() {
+    $this->league->configPlayerNumbersWithTeamNumber = false;
+    $team = $this->newEmptyTeam(50);
+
+    $player = $this->service->createPlayer($team, $this->request());
+
+    $this->assertEquals(1, $player->number);
+  }
+
+  public function testCreatePlayer_emptyTeamWithThreeDigitNumbers() {
+    $this->league->configPlayerNumbersWithTeamNumber = true;
+    $team = $this->newEmptyTeam(2);
+
+    $player = $this->service->createPlayer($team, $this->request());
+
+    $this->assertEquals(201, $player->number);
+  }
+
+  public function testCreatePlayer_appliesFields() {
+    $player = $this->service->createPlayer($this->team, $this->request([
+      'firstName' => 'Max',
+      'lastName' => 'Mustermann',
+      'title' => 'GM',
+      'zps' => '70506-999',
+      'dwz' => 1800,
+      'elo' => 1750,
+      'yearOfBirth' => 1990,
+      'gender' => 'M',
+    ]));
+
+    $this->assertEquals('Max', $player->firstName);
+    $this->assertEquals('Mustermann', $player->lastName);
+    $this->assertEquals('GM', $player->title);
+    $this->assertEquals('70506-999', $player->zps);
+    $this->assertEquals(1800, $player->dwz);
+    $this->assertEquals(1750, $player->elo);
+    $this->assertEquals('1990', $player->birth);
+    // applyRequest() normalizes gender to lowercase to match the entity's constants.
+    $this->assertEquals('m', $player->gender);
+    $this->assertNull($player->lateRegistrationRound);
+    $this->assertNull($player->lateRegistrationDivision);
+  }
+
+  public function testCreatePlayer_lateRegistrationDefaultsToTeamDivision() {
+    $player = $this->service->createPlayer($this->team, $this->request(['lateRegistrationRound' => 3]));
+
+    $this->assertEquals(3, $player->lateRegistrationRound);
+    $this->assertNotNull($player->lateRegistrationDivision);
+    $this->assertEquals($this->team->division->id, $player->lateRegistrationDivision->id);
+  }
+
+  public function testUpdatePlayer_clearsDivisionWhenRoundCleared() {
+    $player = $this->service->createPlayer($this->team, $this->request(['lateRegistrationRound' => 2]));
+    $this->assertNotNull($player->lateRegistrationDivision);
+
+    $updated = $this->service->updatePlayer($player, $this->request(['lateRegistrationRound' => null]));
+
+    $this->assertNull($updated->lateRegistrationRound);
+    $this->assertNull($updated->lateRegistrationDivision);
+  }
+
+  public function testUpdatePlayer_preservesExistingDivisionWhenRoundKept() {
+    $player = $this->service->createPlayer($this->team, $this->request(['lateRegistrationRound' => 2]));
+    $originalDivisionId = $player->lateRegistrationDivision->id;
+
+    // Changing the round while keeping it set should NOT recompute the division
+    // from the team's (possibly since-changed) current division.
+    $updated = $this->service->updatePlayer($player, $this->request(['lateRegistrationRound' => 5]));
+
+    $this->assertEquals(5, $updated->lateRegistrationRound);
+    $this->assertEquals($originalDivisionId, $updated->lateRegistrationDivision->id);
+  }
+
+  public function testUpdatePlayer_defaultsDivisionWhenRoundNewlySet() {
+    $player = $this->service->createPlayer($this->team, $this->request());
+    $this->assertNull($player->lateRegistrationDivision);
+
+    $updated = $this->service->updatePlayer($player, $this->request(['lateRegistrationRound' => 4]));
+
+    $this->assertEquals(4, $updated->lateRegistrationRound);
+    $this->assertNotNull($updated->lateRegistrationDivision);
+    $this->assertEquals($this->team->division->id, $updated->lateRegistrationDivision->id);
   }
 }

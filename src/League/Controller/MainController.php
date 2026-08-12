@@ -2,6 +2,8 @@
 
 namespace Nsv\League\Controller;
 
+use Nsv\Dwz\DsbDatabase;
+use Nsv\League\Api\Model\Player;
 use Nsv\League\Api\Service\PlayerService;
 use Nsv\League\Api\Service\ScheduleService;
 use Nsv\League\Api\Service\TeamService;
@@ -55,11 +57,45 @@ class MainController extends AbstractLeagueController {
   }
 
   #[Route('m/{teamId}/', name: 'team')]
-  public function team(TeamService $service, int $teamId, TokenAuth $tokenAuth): Response {
+  public function team(TeamService $service, ScheduleService $scheduleService, int $teamId, TokenAuth $tokenAuth): Response {
     $teamEntity = $this->league->teamById($teamId);
     $allowEdit = $tokenAuth->mayEditTeam($teamEntity);
     $allowPlayerEdit = $this->auth->isDivisionManager($teamEntity->division);
     $team = $service->team($teamEntity, $allowEdit);
+
+    $playerDialogParams = null;
+    $editPlayerDialogParams = [];
+    if ($allowPlayerEdit) {
+      // A team's ZPS can contain multiple club numbers concatenated if it's a union of clubs.
+      // Just use the first club for DWZ search suggestions.
+      $preferredZps = $teamEntity->zps ? substr($teamEntity->zps, 0, DsbDatabase::ZPS_CLUB_LENGTH) : null;
+
+      // Preselect the current round for late registration, unless the season hasn't started yet.
+      $closestRound = $scheduleService->closestRound($teamEntity->division, date('Y-m-d'));
+      $currentRound = ($closestRound && $closestRound->round > 1) ? $closestRound->round : null;
+      $roundCount = $teamEntity->division->config('rounds');
+
+      $playerDialogParams = json_encode(Encoding::deep_utf8_encode([
+        'teamId' => $teamId,
+        'roundCount' => $roundCount,
+        'preferredZps' => $preferredZps,
+        'currentRound' => $currentRound
+      ]));
+
+      // Recreating the dialog params for each player with YOB and correct encoding.
+      foreach ($teamEntity->players as $playerEntity) {
+        $dialogPlayer = Player::fromEntity($playerEntity);
+        $dialogPlayer->yearOfBirth = $playerEntity->yearOfBirth();
+        $editPlayerDialogParams[$playerEntity->id] = json_encode(Encoding::deep_utf8_encode([
+          'teamId' => $teamId,
+          'roundCount' => $roundCount,
+          'preferredZps' => $preferredZps,
+          'currentRound' => null,
+          'player' => $dialogPlayer
+        ]));
+      }
+    }
+
     return $this->renderWithLegacySystem('team.html.twig', [
       'team' => $team,
       'teamEntity' => $teamEntity,
@@ -70,7 +106,9 @@ class MainController extends AbstractLeagueController {
         'id' => $teamId,
         'name' => $teamEntity->name,
         'number' => $teamEntity->number
-      ]))
+      ])),
+      'playerDialogParams' => $playerDialogParams,
+      'editPlayerDialogParams' => $editPlayerDialogParams
     ]);
   }
 
