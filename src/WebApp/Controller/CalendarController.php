@@ -31,7 +31,8 @@ class CalendarController extends AbstractController {
   function __construct(
     private EventRepository $eventRepository,
     private EntityManagerInterface $em,
-    private MailerInterface $mailer
+    private MailerInterface $mailer,
+    private Auth $auth
   ) {}
 
   #[Route('', name: 'index')]
@@ -42,7 +43,7 @@ class CalendarController extends AbstractController {
 
   #[Route('eintragen/', name: 'add')]
   public function addEntry(Request $request): Response {
-    $isAuthor = Auth::isAuthor();
+    $isAuthor = $this->auth->isAuthor();
     $event = new Event();
     $builder = $this->createFormBuilder($event)
         ->add('date', DateType::class, [
@@ -100,10 +101,10 @@ class CalendarController extends AbstractController {
   public function approveEntry(Request $request, int $id): Response {
     $event = $this->eventRepository->findOneById($id);
     if (!$event) throw new NotFoundHttpException();
-    if (!Auth::isLoggedIn()) {
-      return new RedirectResponse(Auth::loginRedirect($request->getUri()));
+    if (!$this->auth->isLoggedIn()) {
+      return new RedirectResponse($this->auth->loginRedirect($request->getUri()));
     }
-    if (Auth::isAuthor()) {
+    if ($this->auth->isAuthor()) {
       $event->isApproved = true;
       $this->em->persist($event);
       $this->em->flush();
