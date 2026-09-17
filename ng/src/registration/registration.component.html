@@ -121,6 +121,18 @@
       <swiss-chess-export [tournament]="tournament"></swiss-chess-export>
     </ng-template>
   </li>
+	<li [ngbNavItem]="5">
+		<button ngbNavLink>Abmeldungen</button>
+		<ng-template ngbNavContent>
+      @if (tournament.unregistered.length) {
+        <nsv-table [options]="cancelledTableOptions" [data]="tournament.unregistered"></nsv-table>
+      } @else {
+        <div class="alert alert-success mt-3">
+          Keine Abmeldungen
+        </div>
+      }
+		</ng-template>
+	</li>
 </ul>
 
 <div [ngbNavOutlet]="tabs" class="mt-3"></div>

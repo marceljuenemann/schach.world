@@ -47,6 +47,7 @@ export class RegistrationComponent implements OnInit {
       { id: 'created', label: 'Datum', visibility: 'hide' },
       { id: 'group', label: 'Turnier', valueFn: (player: Player) => player.group },
       { id: 'waitlist', label: 'Warteliste', valueFn: (player: Player) => player.waitlist ? 'Ja' : 'Nein' },
+      { id: 'unregisteredAt', label: 'Abgemeldet am', valueFn: (player: Player) => player.unregisteredAt ?? '', visibility: 'hide' },
       { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always', templateRef: this.playerNameTemplate },
       { id: 'club', label: 'Verein', responsiveBelow: 'name', valueFn: (player: Player) => player.playerData.club },
       { id: 'gender', label: 'Geschlecht', valueFn: (player: Player) => player.playerData.gender, visibility: 'hide' },
@@ -79,6 +80,18 @@ export class RegistrationComponent implements OnInit {
     }),
     idFn: this.tableOptions.idFn,
     defaultSorting: [{ columnId: 'created', direction: 'asc' }],
+    searchColumns: ['name', 'club'],
+    showColumnSelection: true,
+    showRowCount: true
+  }
+  cancelledTableOptions: TableOptions<Player> = {
+    columns: this.tableOptions.columns.map(col => {
+      if (col.id == 'unregisteredAt') return { ...col, visibility: 'show' }
+      if (col.id == 'actions') return { ...col, visibility: 'never' }
+      return col
+    }),
+    idFn: this.tableOptions.idFn,
+    defaultSorting: [{ columnId: 'unregisteredAt', direction: 'desc' }],
     searchColumns: ['name', 'club'],
     showColumnSelection: true,
     showRowCount: true
@@ -150,9 +163,9 @@ export class RegistrationComponent implements OnInit {
 
   async deletePlayer(player: Player) {
     this.dialogService.confirm({
-      title: "Anmeldung löschen",
-      message: `${player.playerData.name} wirklich löschen?`,
-      confirmText: "Löschen",
+      title: "Anmeldung abmelden",
+      message: `${player.playerData.name} wirklich abmelden?`,
+      confirmText: "Abmelden",
       onConfirm: async () => {
         await this.registrationService.deletePlayer(this.tournament!.config.id, player.id)
         this.reloadPlayerList()

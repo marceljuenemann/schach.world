@@ -72,4 +72,7 @@ class PlayerRegistration
 
   #[ORM\Column(type: "datetime_immutable")]
   public \DateTimeImmutable $created;
+
+  #[ORM\Column(name: "unregistered_at", type: "datetime_immutable", nullable: true)]
+  public ?\DateTimeImmutable $unregisteredAt = null;
 }

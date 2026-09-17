@@ -44,5 +44,6 @@ export interface Player {
   playerData: PlayerData,
   additionalFields?: Record<string, string>,
   contactDetails: ContactDetails,
-  created?: string
+  created?: string,
+  unregisteredAt?: string
 }
