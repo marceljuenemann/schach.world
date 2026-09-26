@@ -8,6 +8,7 @@ export class Tournament {
   public readonly groups: Map<string, Group> = new Map()
   public readonly constraints: { groups: string[], availableSlots: number }[]
   public readonly waitlist: Player[]
+  public readonly registered: Player[]
   public readonly players: Player[]
   public readonly unregistered: Player[]
 
@@ -31,6 +32,7 @@ export class Tournament {
         availableSlots: constraint.maxPlayers ? Math.max(0, constraint.maxPlayers - playerCount) : Infinity
       }
     })
+    this.registered = this.players.filter(p => !p.waitlist)
     // Generate waitlist.
     this.waitlist = this.players
       .filter(p => p.waitlist)

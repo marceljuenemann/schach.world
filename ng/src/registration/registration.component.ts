@@ -6,7 +6,7 @@ import { Tournament } from './tournament';
 import { RegistrationService } from './registration.service';
 import { CommonModule } from '@angular/common';
 import { NgbAccordionBody, NgbAccordionButton, NgbAccordionCollapse, NgbAccordionDirective, NgbAccordionHeader, NgbAccordionItem, NgbAccordionToggle, NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
-import { NsvTableComponent, TableOptions } from '../core/table/table.component';
+import { NsvTableComponent, TableColumn, TableOptions } from '../core/table/table.component';
 import { SwissChessComponent } from './swiss-chess/swiss-chess.component';
 
 @Component({
@@ -42,59 +42,9 @@ export class RegistrationComponent implements OnInit {
 
   playerNameTemplate = viewChild.required<TemplateRef<Player>>('playerName');
   playerActionsTemplate = viewChild.required<TemplateRef<Player>>('playerActions');
-  tableOptions: TableOptions<Player> = {
-    columns: [
-      { id: 'created', label: 'Angemeldet am', visibility: 'hide' },
-      { id: 'unregisteredAt', label: 'Abgemeldet am', valueFn: (player: Player) => player.unregisteredAt ?? '', visibility: 'hide' },
-      { id: 'group', label: 'Turnier', valueFn: (player: Player) => player.group },
-      { id: 'waitlist', label: 'Warteliste', valueFn: (player: Player) => player.waitlist ? 'Ja' : 'Nein' },
-      { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always', templateRef: this.playerNameTemplate },
-      { id: 'club', label: 'Verein', responsiveBelow: 'name', valueFn: (player: Player) => player.playerData.club },
-      { id: 'gender', label: 'Geschlecht', valueFn: (player: Player) => player.playerData.gender, visibility: 'hide' },
-      { id: 'yearOfBirth', label: 'Geburtsjahr', valueFn: (player: Player) => player.playerData.yearOfBirth, defaultSortDirection: 'desc', visibility: 'hide' },
-      { id: 'dwz', label: 'DWZ', valueFn: (player: Player) => player.playerData.dwz, defaultSortDirection: 'desc' },
-      { id: 'elo', label: 'ELO', valueFn: (player: Player) => player.playerData.elo, defaultSortDirection: 'desc' },
-      { id: 'zps', label: 'ZPS', valueFn: (player: Player) => player.playerData.zps ? `${player.playerData.zps}-${player.playerData.memberId}` : '', visibility: 'hide' },
-      { id: 'fideId', label: 'FIDE-ID', valueFn: (player: Player) => player.playerData.fideId, visibility: 'hide' },
-      { id: 'contactName', label: 'Kontaktname', valueFn: (player: Player) => player.contactDetails.name, visibility: 'hide' },
-      { id: 'contactMail', label: 'E-Mail', valueFn: (player: Player) => player.contactDetails.email, visibility: 'hide' },
-      { id: 'id', label: 'Anmeldungs-ID', visibility: 'hide' },
-      { id: 'actions', label: '', sortable: false, templateRef: this.playerActionsTemplate, visibility: 'always', skipExport: true }
-    ],
-    idFn: (player: Player) => player.id,
-    defaultSorting: [
-      { columnId: 'group', direction: 'asc' },
-      { columnId: 'waitlist', direction: 'asc' },
-      { columnId: 'name', direction: 'asc' }
-    ],
-    searchColumns: ['name', 'club'],
-    showColumnSelection: true,
-    showRowCount: true,
-    csvFileName: () => `${this.tournament?.config.id}-${new Date().toISOString().substring(0, 10)}.csv`
-  }
-  waitlistTableOptions: TableOptions<Player> = {
-    columns: this.tableOptions.columns.map(col => {
-      if (col.id == 'created') return { ...col, visibility: 'show' }
-      if (col.id == 'waitlist') return { ...col, visibility: 'never' }
-      return col
-    }),
-    idFn: this.tableOptions.idFn,
-    defaultSorting: [{ columnId: 'created', direction: 'asc' }],
-    searchColumns: ['name', 'club'],
-    showColumnSelection: true,
-    showRowCount: true
-  }
-  cancelledTableOptions: TableOptions<Player> = {
-    columns: this.tableOptions.columns.map(col => {
-      if (col.id == 'unregisteredAt') return { ...col, visibility: 'show' }
-      return col
-    }),
-    idFn: this.tableOptions.idFn,
-    defaultSorting: [{ columnId: 'unregisteredAt', direction: 'desc' }],
-    searchColumns: ['name', 'club'],
-    showColumnSelection: true,
-    showRowCount: true
-  }
+  tableOptions: TableOptions<Player>
+  waitlistTableOptions: TableOptions<Player>
+  cancelledTableOptions: TableOptions<Player>
   overviewTableOptions: TableOptions<Player> = {
     columns: [
       { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always', templateRef: this.playerNameTemplate },
@@ -119,13 +69,69 @@ export class RegistrationComponent implements OnInit {
       JSON.parse(this.playersString)
     )
     this.mayOpenRegistration = this.tournament.registrationStarted && (!this.tournament.deadlinePassed || this.isManager)
-    for (const field of this.tournament.config.additionalFields || []) {
-      this.tableOptions.columns.splice(this.tableOptions.columns.length - 2, 0, {
-        id: `additionalField-${field.id}`,
-        label: field.label,
-        valueFn: (player: Player) => player.additionalFields ? (player.additionalFields[field.id] || '') : '',
-        visibility: 'hide'
-      })
+
+    this.tableOptions = this.createTableOptions('anmeldungen', {
+      visibility: { unregisteredAt: 'never' },
+      defaultSorting: [
+        { columnId: 'group', direction: 'asc' },
+        { columnId: 'name', direction: 'asc' }
+      ]
+    })
+    this.waitlistTableOptions = this.createTableOptions('warteliste', {
+      visibility: { created: 'show', unregisteredAt: 'never' },
+      defaultSorting: [{ columnId: 'created', direction: 'asc' }]
+    })
+    this.cancelledTableOptions = this.createTableOptions('abmeldungen', {
+      visibility: { unregisteredAt: 'show' },
+      defaultSorting: [{ columnId: 'unregisteredAt', direction: 'desc' }]
+    })
+  }
+
+  /**
+   * Creates table options containing all player columns, including the additional
+   * fields of the tournament config. Column visibility can be overridden by column id,
+   * e.g. 'never' to remove a column completely.
+   */
+  private createTableOptions(csvSuffix: string, options: {
+    visibility?: Record<string, TableColumn<Player, any>['visibility']>,
+    defaultSorting?: TableOptions<Player>['defaultSorting']
+  }): TableOptions<Player> {
+    const additionalFieldColumns: TableColumn<Player, any>[] = (this.tournament.config.additionalFields || []).map(field => ({
+      id: `additionalField-${field.id}`,
+      label: field.label,
+      valueFn: (player: Player) => player.additionalFields ? (player.additionalFields[field.id] || '') : '',
+      visibility: 'hide'
+    }))
+    const columns: TableColumn<Player, any>[] = [
+      { id: 'created', label: 'Angemeldet am', visibility: 'hide' },
+      { id: 'unregisteredAt', label: 'Abgemeldet am', valueFn: (player: Player) => player.unregisteredAt ?? '', visibility: 'hide' },
+      { id: 'group', label: 'Turnier', valueFn: (player: Player) => player.group },
+      { id: 'waitlist', label: 'Warteliste', valueFn: (player: Player) => player.waitlist ? 'Ja' : 'Nein', visibility: 'hide' },
+      { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always', templateRef: this.playerNameTemplate },
+      { id: 'club', label: 'Verein', responsiveBelow: 'name', valueFn: (player: Player) => player.playerData.club },
+      { id: 'gender', label: 'Geschlecht', valueFn: (player: Player) => player.playerData.gender, visibility: 'hide' },
+      { id: 'yearOfBirth', label: 'Geburtsjahr', valueFn: (player: Player) => player.playerData.yearOfBirth, defaultSortDirection: 'desc', visibility: 'hide' },
+      { id: 'dwz', label: 'DWZ', valueFn: (player: Player) => player.playerData.dwz, defaultSortDirection: 'desc' },
+      { id: 'elo', label: 'ELO', valueFn: (player: Player) => player.playerData.elo, defaultSortDirection: 'desc' },
+      { id: 'zps', label: 'ZPS', valueFn: (player: Player) => player.playerData.zps ? `${player.playerData.zps}-${player.playerData.memberId}` : '', visibility: 'hide' },
+      { id: 'fideId', label: 'FIDE-ID', valueFn: (player: Player) => player.playerData.fideId, visibility: 'hide' },
+      { id: 'contactName', label: 'Kontaktname', valueFn: (player: Player) => player.contactDetails.name, visibility: 'hide' },
+      { id: 'contactMail', label: 'E-Mail', valueFn: (player: Player) => player.contactDetails.email, visibility: 'hide' },
+      ...additionalFieldColumns,
+      { id: 'id', label: 'Anmeldungs-ID', visibility: 'hide' },
+      { id: 'actions', label: '', sortable: false, templateRef: this.playerActionsTemplate, visibility: 'always', skipExport: true }
+    ]
+    return {
+      columns: columns.map(col => {
+        const visibility = options.visibility?.[col.id]
+        return visibility ? { ...col, visibility } : col
+      }),
+      idFn: (player: Player) => player.id,
+      defaultSorting: options.defaultSorting,
+      searchColumns: ['name', 'club'],
+      showColumnSelection: true,
+      showRowCount: true,
+      csvFileName: () => `${this.tournament?.config.id}-${csvSuffix}-${new Date().toISOString().substring(0, 10)}.csv`
     }
   }
 

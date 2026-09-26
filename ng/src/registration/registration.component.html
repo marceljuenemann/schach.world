@@ -92,7 +92,7 @@
           }
         </div>
         <div class="mt-3 text-muted">
-          Anmeldungen insgesamt: {{ tournament.players.length - tournament.waitlist.length }}
+          Anmeldungen insgesamt: {{ tournament.registered.length }}
         </div>
       }
 		</ng-template>
@@ -100,7 +100,7 @@
 	<li [ngbNavItem]="2">
 		<button ngbNavLink>Anmeldungen</button>
 		<ng-template ngbNavContent>
-      <nsv-table [options]="tableOptions" [data]="tournament.players"></nsv-table>
+      <nsv-table [options]="tableOptions" [data]="tournament.registered"></nsv-table>
     </ng-template>
   </li>
   <li [ngbNavItem]="3">
