@@ -16,6 +16,8 @@ class PlayerRegistration
 
   public bool $waitlist = false;
 
+  public bool $confirmed = false;
+
   #[Assert\NotBlank]
   #[Assert\Valid]
   public PlayerData $playerData;
@@ -36,6 +38,7 @@ class PlayerRegistration
     $reg->id = $player->id;
     $reg->group = $player->group;
     $reg->waitlist = $player->waitlist;
+    $reg->confirmed = $player->confirmed;
     $reg->unregisteredAt = $player->unregisteredAt?->format('Y-m-d H:i');
 
     $reg->playerData = $p = new PlayerData();

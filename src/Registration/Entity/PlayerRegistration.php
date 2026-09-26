@@ -23,6 +23,9 @@ class PlayerRegistration
   #[ORM\Column(name: "waitlist")] 
   public bool $waitlist = false;
 
+  #[ORM\Column(name: "confirmed")]
+  public bool $confirmed = false;
+
   #[ORM\Column(length: 60)]
   public string $name;
 

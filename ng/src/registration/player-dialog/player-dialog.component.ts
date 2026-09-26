@@ -33,7 +33,8 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
       name: new TextControl('Kontaktperson', {required: true}),
       email: new TextControl('E-Mail-Adresse', {required: true})
     }),
-    termsAndConditions: new FormControl(false, Validators.requiredTrue)
+    termsAndConditions: new FormControl(false, Validators.requiredTrue),
+    confirmed: new FormControl(false)
   })
 
   constructor(

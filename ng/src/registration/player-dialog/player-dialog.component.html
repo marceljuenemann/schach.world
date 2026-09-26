@@ -79,6 +79,15 @@
       </div>
     </form>
   }
+
+  @if (params.isManager) {
+    <form [formGroup]="formData" class="mt-3">
+      <div class="form-check form-switch nsv-check-switch">
+        <input formControlName="confirmed" class="form-check-input" type="checkbox" role="switch" id="confirmed">
+        <label class="form-check-label" for="confirmed">Teilnahme als bestätigt markieren</label>
+      </div>
+    </form>
+  }
 </div>
 
 <nsv-dialog-footer [dialog]="this"></nsv-dialog-footer>

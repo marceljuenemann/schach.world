@@ -46,6 +46,7 @@ export interface Player {
   id: number,
   group: string,
   waitlist?: boolean,
+  confirmed?: boolean,
   playerData: PlayerData,
   additionalFields?: Record<string, string>,
   contactDetails: ContactDetails,

@@ -140,16 +140,27 @@
 <ng-template #playerName let-player="row">
   <b>{{ player.playerData.fideTitle }}</b>
   {{ player.playerData.name }}
+  @if (player.confirmed) {
+    <span class="dashicons dashicons-yes text-success" ngbTooltip="Bestätigt durch Turnierleitung" placement="bottom" tooltipClass="nsv-tooltip-nowrap"></span>
+  }
+</ng-template>
+
+<ng-template #confirmedToggle let-player="row">
+  <div class="form-check form-switch nsv-check-switch">
+    <input class="form-check-input" type="checkbox" role="switch" [ngbTooltip]="player.confirmed ? 'Bestätigung aufheben' : 'Teilnahme bestätigen'" placement="bottom" tooltipClass="nsv-tooltip-nowrap" triggers="hover" [checked]="player.confirmed" (change)="toggleConfirmed(player)">
+  </div>
 </ng-template>
 
 <ng-template #playerActions let-player="row">
   @if (isManager) {
-    @if (activeTab == 3) {
-      <span (click)="confirmWaitlistPlayer(player)" class="dashicons dashicons-yes-alt" role="button"></span>
-    }
-    <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
-    @if (!player.unregisteredAt) {
-      <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
-    }
+    <span class="text-nowrap">
+      @if (activeTab == 3) {
+        <span (click)="confirmWaitlistPlayer(player)" class="dashicons dashicons-yes-alt" role="button"></span>
+      }
+      <span (click)="editPlayer(player)" class="dashicons dashicons-edit" role="button"></span>
+      @if (!player.unregisteredAt) {
+        <span (click)="deletePlayer(player)" class="dashicons dashicons-trash" role="button"></span>
+      }
+    </span>
   }
 </ng-template>

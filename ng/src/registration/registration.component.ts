@@ -42,6 +42,7 @@ export class RegistrationComponent implements OnInit {
 
   playerNameTemplate = viewChild.required<TemplateRef<Player>>('playerName');
   playerActionsTemplate = viewChild.required<TemplateRef<Player>>('playerActions');
+  confirmedToggleTemplate = viewChild.required<TemplateRef<Player>>('confirmedToggle');
   tableOptions: TableOptions<Player>
   waitlistTableOptions: TableOptions<Player>
   cancelledTableOptions: TableOptions<Player>
@@ -71,7 +72,7 @@ export class RegistrationComponent implements OnInit {
     this.mayOpenRegistration = this.tournament.registrationStarted && (!this.tournament.deadlinePassed || this.isManager)
 
     this.tableOptions = this.createTableOptions('anmeldungen', {
-      visibility: { unregisteredAt: 'never' },
+      visibility: { unregisteredAt: 'never', confirmed: 'show' },
       defaultSorting: [
         { columnId: 'group', direction: 'asc' },
         { columnId: 'name', direction: 'asc' }
@@ -107,6 +108,7 @@ export class RegistrationComponent implements OnInit {
       { id: 'unregisteredAt', label: 'Abgemeldet am', valueFn: (player: Player) => player.unregisteredAt ?? '', visibility: 'hide' },
       { id: 'group', label: 'Turnier', valueFn: (player: Player) => player.group },
       { id: 'waitlist', label: 'Warteliste', valueFn: (player: Player) => player.waitlist ? 'Ja' : 'Nein', visibility: 'hide' },
+      { id: 'confirmed', label: 'Bestätigt', valueFn: (player: Player) => player.confirmed ? 'Ja' : 'Nein', templateRef: this.confirmedToggleTemplate, visibility: 'hide' },
       { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always', templateRef: this.playerNameTemplate },
       { id: 'club', label: 'Verein', responsiveBelow: 'name', valueFn: (player: Player) => player.playerData.club },
       { id: 'gender', label: 'Geschlecht', valueFn: (player: Player) => player.playerData.gender, visibility: 'hide' },
@@ -164,6 +166,11 @@ export class RegistrationComponent implements OnInit {
         this.reloadPlayerList()
       }
     })
+  }
+
+  async toggleConfirmed(player: Player) {
+    await this.registrationService.updatePlayer(this.tournament!.config.id, {...player, confirmed: !player.confirmed})
+    this.reloadPlayerList()
   }
 
   async deletePlayer(player: Player) {

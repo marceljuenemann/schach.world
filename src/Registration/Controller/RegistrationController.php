@@ -65,7 +65,7 @@ class RegistrationController extends AbstractController {
 
     $player = new Entity\PlayerRegistration();
     $player->tournament = $config->id;
-    $this->populateEntity($request, $player);
+    $this->populateEntity($request, $player, $this->isManager($config));
  
     $this->mainEntityManager->persist($player);
     $this->mainEntityManager->flush();
@@ -82,7 +82,7 @@ class RegistrationController extends AbstractController {
     }
     $waitlistConfirmed = !$request->waitlist && $registration->waitlist;
 
-    $this->populateEntity($request, $registration);
+    $this->populateEntity($request, $registration, true);
     $this->mainEntityManager->persist($registration);
     $this->mainEntityManager->flush();
 
@@ -92,9 +92,12 @@ class RegistrationController extends AbstractController {
     return new ApiResponse();
   }
 
-  private function populateEntity(PlayerRegistration $request, Entity\PlayerRegistration $player): void {
+  private function populateEntity(PlayerRegistration $request, Entity\PlayerRegistration $player, bool $isManager): void {
     $player->group = $request->group;
     $player->waitlist = $request->waitlist ?? false;
+    if ($isManager) {
+      $player->confirmed = $request->confirmed;
+    }
     $player->name = $request->playerData->name;
     $player->gender = $request->playerData->gender;
     $player->yearOfBirth = $request->playerData->yearOfBirth;

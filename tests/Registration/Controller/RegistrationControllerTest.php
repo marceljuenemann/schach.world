@@ -145,6 +145,42 @@ class RegistrationControllerTest extends KernelTestCase
     $this->assertSame('intern', $this->findStoredRegistration()->additionalFields['internalNotes']);
   }
 
+  public function testRegisterPlayer_ignoresConfirmedForNonManagers() {
+    $this->auth->method('isAdmin')->willReturn(false);
+    $this->auth->method('userName')->willReturn('someone-else');
+    $request = $this->registrationRequest([]);
+    $request->confirmed = true;
+
+    $this->controller->registerPlayer('test', $request);
+
+    $this->assertFalse($this->findStoredRegistration()->confirmed);
+  }
+
+  public function testRegisterPlayer_managerCanSetConfirmed() {
+    $this->auth->method('isAdmin')->willReturn(true);
+    $request = $this->registrationRequest([]);
+    $request->confirmed = true;
+
+    $this->controller->registerPlayer('test', $request);
+
+    $this->assertTrue($this->findStoredRegistration()->confirmed);
+  }
+
+  public function testUpdatePlayer_managerCanToggleConfirmed() {
+    $this->auth->method('isAdmin')->willReturn(true);
+    $this->controller->registerPlayer('test', $this->registrationRequest([]));
+    $registration = $this->findStoredRegistration();
+
+    $request = $this->registrationRequest([]);
+    $request->confirmed = true;
+    $this->controller->updatePlayer('test', $registration, $request);
+    $this->assertTrue($this->findStoredRegistration()->confirmed);
+
+    $request->confirmed = false;
+    $this->controller->updatePlayer('test', $this->findStoredRegistration(), $request);
+    $this->assertFalse($this->findStoredRegistration()->confirmed);
+  }
+
   private function registrationRequest(array $additionalFields): ApiPlayerRegistration {
     $request = new ApiPlayerRegistration();
     $request->group = 'C';
