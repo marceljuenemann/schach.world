@@ -9,6 +9,12 @@
     </div>
   }
 
+  @if (editing && params.player?.unregisteredAt) {
+    <div class="alert alert-danger">
+      Diese Anmeldung wurde am {{ params.player?.unregisteredAt }} abgemeldet.
+    </div>
+  }
+
   <player-data class="mb-4"
     (onPlayerDataChange)="onPlayerDataChange($event)"
     [initialPlayerData]="params.player?.playerData"

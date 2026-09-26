@@ -44,10 +44,10 @@ export class RegistrationComponent implements OnInit {
   playerActionsTemplate = viewChild.required<TemplateRef<Player>>('playerActions');
   tableOptions: TableOptions<Player> = {
     columns: [
-      { id: 'created', label: 'Datum', visibility: 'hide' },
+      { id: 'created', label: 'Angemeldet am', visibility: 'hide' },
+      { id: 'unregisteredAt', label: 'Abgemeldet am', valueFn: (player: Player) => player.unregisteredAt ?? '', visibility: 'hide' },
       { id: 'group', label: 'Turnier', valueFn: (player: Player) => player.group },
       { id: 'waitlist', label: 'Warteliste', valueFn: (player: Player) => player.waitlist ? 'Ja' : 'Nein' },
-      { id: 'unregisteredAt', label: 'Abgemeldet am', valueFn: (player: Player) => player.unregisteredAt ?? '', visibility: 'hide' },
       { id: 'name', label: 'Name', valueFn: (player: Player) => player.playerData.name, visibility: 'always', templateRef: this.playerNameTemplate },
       { id: 'club', label: 'Verein', responsiveBelow: 'name', valueFn: (player: Player) => player.playerData.club },
       { id: 'gender', label: 'Geschlecht', valueFn: (player: Player) => player.playerData.gender, visibility: 'hide' },
@@ -87,7 +87,6 @@ export class RegistrationComponent implements OnInit {
   cancelledTableOptions: TableOptions<Player> = {
     columns: this.tableOptions.columns.map(col => {
       if (col.id == 'unregisteredAt') return { ...col, visibility: 'show' }
-      if (col.id == 'actions') return { ...col, visibility: 'never' }
       return col
     }),
     idFn: this.tableOptions.idFn,
