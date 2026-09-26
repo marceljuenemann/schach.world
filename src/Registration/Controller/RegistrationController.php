@@ -55,6 +55,14 @@ class RegistrationController extends AbstractController {
   public function registerPlayer(string $tournament, #[MapRequestPayload] PlayerRegistration $request): Response {
     $config = $this->getConfig($tournament);
 
+    if (!$this->isManager($config) && isset($request->additionalFields)) {
+      foreach ($config->additionalFields as $field) {
+        if ($field->hidden) {
+          unset($request->additionalFields[$field->id]);
+        }
+      }
+    }
+
     $player = new Entity\PlayerRegistration();
     $player->tournament = $config->id;
     $this->populateEntity($request, $player);

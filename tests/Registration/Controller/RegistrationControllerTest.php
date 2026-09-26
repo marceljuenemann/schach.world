@@ -3,6 +3,9 @@
 namespace Tests\Registration\Controller;
 
 use Doctrine\ORM\EntityManagerInterface;
+use Nsv\Dwz\Api\Model\PlayerData;
+use Nsv\Registration\Api\Model\ContactDetails;
+use Nsv\Registration\Api\Model\PlayerRegistration as ApiPlayerRegistration;
 use Nsv\Registration\Controller\RegistrationController;
 use Nsv\Registration\Entity\PlayerRegistration;
 use Nsv\WebApp\Core\WordPress\Auth;
@@ -10,11 +13,9 @@ use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Symfony\Component\Mailer\MailerInterface;
 
-// `registration_players` is InnoDB (unlike League's MyISAM tables), so Dama's per-test
-// transaction rollback is presumed to apply here - but no other test in this repo exercises
-// an InnoDB table under the `main` entity manager, so that's unverified. Clean up explicitly
-// (like League tests do) rather than relying on it, until it's proven to work reliably.
+// Tests are not rolled back (see CLAUDE.md), so every created registration must be cleaned up.
 #[AllowMockObjectsWithoutExpectations]
 class RegistrationControllerTest extends KernelTestCase
 {
@@ -23,15 +24,22 @@ class RegistrationControllerTest extends KernelTestCase
   private RegistrationController $controller;
   private array $createdIds = [];
 
+  private const REGISTERED_NAME = 'Hiddenfield, Test';
+
   protected function setUp(): void {
     $container = static::getContainer();
     $this->auth = $this->createMock(Auth::class);
     $container->set(Auth::class, $this->auth);
+    $container->set(MailerInterface::class, $this->createMock(MailerInterface::class));
     $this->controller = $container->get(RegistrationController::class);
     $this->em = $container->get(EntityManagerInterface::class);
   }
 
   protected function tearDown(): void {
+    // Also catch registrations created via registerPlayer() that failed before being tracked.
+    foreach ($this->em->getRepository(PlayerRegistration::class)->findBy(['name' => self::REGISTERED_NAME]) as $registration) {
+      $this->createdIds[] = $registration->id;
+    }
     foreach ($this->createdIds as $id) {
       $registration = $this->em->find(PlayerRegistration::class, $id);
       if ($registration) {
@@ -111,6 +119,56 @@ class RegistrationControllerTest extends KernelTestCase
 
     $this->assertContains('Aktiv, Anna', $names);
     $this->assertContains('Storniert, Sina', $names);
+  }
+
+  public function testRegisterPlayer_dropsHiddenFieldsForNonManagers() {
+    $this->auth->method('isAdmin')->willReturn(false);
+    $this->auth->method('userName')->willReturn('someone-else');
+
+    $this->controller->registerPlayer('test', $this->registrationRequest([
+      'customField1' => 'sichtbar',
+      'internalNotes' => 'eingeschleust',
+    ]));
+
+    $stored = $this->findStoredRegistration();
+    $this->assertSame('sichtbar', $stored->additionalFields['customField1']);
+    $this->assertArrayNotHasKey('internalNotes', $stored->additionalFields);
+  }
+
+  public function testRegisterPlayer_keepsHiddenFieldsForManagers() {
+    $this->auth->method('isAdmin')->willReturn(true);
+
+    $this->controller->registerPlayer('test', $this->registrationRequest([
+      'internalNotes' => 'intern',
+    ]));
+
+    $this->assertSame('intern', $this->findStoredRegistration()->additionalFields['internalNotes']);
+  }
+
+  private function registrationRequest(array $additionalFields): ApiPlayerRegistration {
+    $request = new ApiPlayerRegistration();
+    $request->group = 'C';
+    $request->playerData = new PlayerData();
+    $request->playerData->name = self::REGISTERED_NAME;
+    $request->playerData->club = 'Testverein';
+    $request->playerData->gender = 'm';
+    $request->playerData->yearOfBirth = 2000;
+    $request->playerData->dwz = 1200;
+    $request->playerData->elo = null;
+    $request->playerData->fideTitle = null;
+    $request->playerData->fideId = null;
+    $request->playerData->zps = null;
+    $request->playerData->memberId = null;
+    $request->contactDetails = new ContactDetails();
+    $request->contactDetails->name = 'Test';
+    $request->contactDetails->email = 'test@example.com';
+    $request->additionalFields = $additionalFields;
+    return $request;
+  }
+
+  private function findStoredRegistration(): PlayerRegistration {
+    $this->em->clear();
+    return $this->em->getRepository(PlayerRegistration::class)->findOneBy(['tournament' => 'test', 'name' => self::REGISTERED_NAME]);
   }
 
   private function playerNames(string $jsonContent): array {

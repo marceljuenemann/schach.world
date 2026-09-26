@@ -42,7 +42,12 @@ export class PlayerDialogComponent extends NsvDialog<PlayerDialogParams, Player>
     super()
 
     // Create form fields for additional fields.
-    this.additionalFields.addControls((this.params.tournament.config.additionalFields || []).map(field => {
+    const visibleFields = (this.params.tournament.config.additionalFields || [])
+      .filter(field => this.params.isManager || !field.hidden)
+    this.additionalFields.addControls(visibleFields.map(field => {
+      if (field.hidden) {
+        field = {...field, label: `${field.label} [intern]`}
+      }
       // Make sure managers can still select disabled options.
       if (this.params.isManager && field.options) {
         // Defensive copy to not modify original config.

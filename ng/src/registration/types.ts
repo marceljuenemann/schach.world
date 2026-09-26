@@ -11,7 +11,12 @@ export interface Config {
   constraints?: RegistrationConstraint[]
   links: Record<string, string>
   termsAndConditions: string
-  additionalFields?: NsvFormConfig[]
+  additionalFields?: AdditionalFieldConfig[]
+}
+
+export interface AdditionalFieldConfig extends NsvFormConfig {
+  // Hidden fields are only shown to managers.
+  hidden?: boolean
 }
 
 export interface GroupConfig {

@@ -27,7 +27,7 @@
   {{ bs.dd('Email') }} {{ player.contactDetails.email }} {{ bs.end_dd }}
 
   {% if config.additionalFields %}
-    {% for fieldConfig in config.additionalFields %}
+    {% for fieldConfig in config.additionalFields|filter(f => not f.hidden) %}
       {{ bs.dd(fieldConfig.label) }}
         {% if fieldConfig.type == 'select' %}
           {% for option in fieldConfig.options %}
