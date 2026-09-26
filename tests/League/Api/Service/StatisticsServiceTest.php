@@ -3,6 +3,7 @@
 namespace Nsv\League\Api\Service;
 
 use Nsv\League\Api\Service\StatisticsService;
+use Nsv\League\Core\Encoding;
 use Nsv\League\Entity\Division;
 use PHPUnit\Framework\Attributes\DataProvider;
 use Tests\League\LeagueTestCase;
@@ -33,6 +34,12 @@ class StatisticsServiceTest extends LeagueTestCase {
     $teams_with_active_players = $this->statisticsService->teams_with_active_players($division);
     $active_teams_with_players = $this->statisticsService->active_teams_with_players($teams_with_active_players, $division);
     $dwzTeamsCalculationData = $this->statisticsService->teams_dwz_calculation($active_teams_with_players, $division);
+    // Snapshot the team name rather than the entity, whose serialization depends on whether
+    // Doctrine happened to load it as a lazy proxy.
+    $dwzTeamsCalculationData = array_map(
+      fn($row) => ['team' => Encoding::utf8_encode($row['team']->nameWithNumber())] + $row,
+      $dwzTeamsCalculationData
+    );
     $this->assertMatchesSnapshot($dwzTeamsCalculationData);
   }
 

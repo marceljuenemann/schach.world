@@ -13,36 +13,36 @@ class Auth {
    * that can be implemented for different environments. That way we can easily
    * integreate with a CMS other than WordPress as well in the future.
    */
-  static function isWordPress() {
+  function isWordPress() {
     return defined('ABSPATH');
   }
 
-  static function isLoggedIn() {
-    return Auth::isWordPress() && is_user_logged_in();
+  function isLoggedIn() {
+    return $this->isWordPress() && is_user_logged_in();
   }
 
-  static function isAdmin() {
-    return Auth::isWordPress() && current_user_can('manage_options');
+  function isAdmin() {
+    return $this->isWordPress() && current_user_can('manage_options');
   }
 
-  static function isAuthor() {
-    return Auth::isWordPress() && current_user_can('publish_posts');
+  function isAuthor() {
+    return $this->isWordPress() && current_user_can('publish_posts');
   }
 
-  static function userName() {
-    return Auth::isLoggedIn() ? wp_get_current_user()->user_login : null;
+  function userName() {
+    return $this->isLoggedIn() ? wp_get_current_user()->user_login : null;
   }
 
   /**
    * Return the URI that redirects the user to the login page.
-   * 
+   *
    * @param redirectTo the URL to redirect to after login
    */
-  static function loginRedirect(string $redirectTo) {
+  function loginRedirect(string $redirectTo) {
     return '/wp-login.php?redirect_to=' . urlencode($redirectTo);
   }
 
-  static function logoutRedirect(string $redirectTo) {
-    return Auth::loginRedirect($redirectTo) . '&action=logout';
+  function logoutRedirect(string $redirectTo) {
+    return $this->loginRedirect($redirectTo) . '&action=logout';
   }
 }

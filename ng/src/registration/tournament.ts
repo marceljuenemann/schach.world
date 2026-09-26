@@ -8,11 +8,18 @@ export class Tournament {
   public readonly groups: Map<string, Group> = new Map()
   public readonly constraints: { groups: string[], availableSlots: number }[]
   public readonly waitlist: Player[]
+  public readonly registered: Player[]
+  public readonly players: Player[]
+  public readonly unregistered: Player[]
 
   constructor(
     public readonly config: Config,
-    public readonly players: Player[]
+    allPlayers: Player[]
   ) {
+    this.players = allPlayers.filter(p => !p.unregisteredAt)
+    this.unregistered = allPlayers
+      .filter(p => !!p.unregisteredAt)
+      .sort((a, b) => (a.unregisteredAt || "") < (b.unregisteredAt || "") ? 1 : -1)
     for (const groupConfig of config.groups) {
       this.groups.set(groupConfig.id, new Group(this, groupConfig))
     }
@@ -25,8 +32,9 @@ export class Tournament {
         availableSlots: constraint.maxPlayers ? Math.max(0, constraint.maxPlayers - playerCount) : Infinity
       }
     })
+    this.registered = this.players.filter(p => !p.waitlist)
     // Generate waitlist.
-    this.waitlist = players
+    this.waitlist = this.players
       .filter(p => p.waitlist)
       .sort((a, b) => (a.created || "") < (b.created || "") ? -1 : 1)
   }

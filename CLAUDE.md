@@ -74,15 +74,16 @@ Symfony 6.4 with Doctrine ORM. Autowiring is on; services are in `config/service
 All UI-facing text must be in **German**. Code (variables, functions, comments) is written in **English**.
 
 ### Testing approach
-PHP tests use **snapshot assertions** (Spatie) extensively — HTML/JSON responses are compared to fixtures stored in `tests/**/__snapshots__/`. Tests run in transactions that roll back (Dama DoctrineTestBundle) **for the `main` entity manager only**. When a test output legitimately changes, run with `UPDATE_SNAPSHOTS=1` to regenerate.
+PHP tests use **snapshot assertions** (Spatie) extensively — HTML/JSON responses are compared to fixtures stored in `tests/**/__snapshots__/`. When a test output legitimately changes, run with `UPDATE_SNAPSHOTS=1` to regenerate.
 
-**⚠️ The `league` entity manager is NOT rolled back.** Its tables (`spieler`, `mannschaften`, `staffeln`, `turniere`, etc.) are **MyISAM**, which has no transaction support at all. Any test that persists/flushes `Nsv\League\Entity\*` entities (Team, Player, Division, ...) writes **permanently** to the real, shared dev database. Consequences:
-- Any test creating League entities **must delete everything it created** (players, teams, etc.) at the end of the test.
-- Never call destructive League operations (delete, bulk renumber) against a real/shared fixture entity (e.g. `$this->team` in `PlayerServiceTest`) — only against entities the test itself created and will clean up.
-- If you notice unexplained extra rows or altered data in League tables, suspect a prior test run rather than fixture corruption.
+**⚠️ Tests are NOT rolled back.** DAMA DoctrineTestBundle is installed and configured, but its PHPUnit extension is not registered in `phpunit.xml.dist`, so no test runs inside a transaction — regardless of entity manager or storage engine. (Most League tables are MyISAM anyway, which couldn't roll back even if it were enabled.) Any test that persists/flushes entities writes **permanently** to the shared test database. Consequences:
+- Any test creating entities **must delete everything it created** at the end of the test (see `PlayerServiceTest` / `RegistrationControllerTest` for the tracking + `tearDown()` pattern). If creation can fail halfway, make sure the row still gets tracked for cleanup.
+- Never call destructive operations (delete, bulk renumber) against a real/shared fixture entity (e.g. `$this->team` in `PlayerServiceTest`) — only against entities the test itself created and will clean up.
+- If you notice unexplained extra rows or altered data, suspect a prior test run rather than fixture corruption.
+- Mock `MailerInterface` in tests that trigger emails — the test environment otherwise tries to send via a real SMTP transport.
 
 ### Database
-MySQL 5.7. Symfony manages two databases: `nsv-main` (league/app data) and optionally a DWZ mirror. WordPress uses its own separate database outside of Symfony. Doctrine migrations live in `/migrations/` and target entity manager `main`. The League schema's tables are MyISAM (legacy, no transactions) — see the testing caveat above.
+MySQL 5.7. `main` and `league` are **two separate Doctrine connections to the same physical database** (`nsv-main`) — `league` forces a latin1 charset session, `main` doesn't; they are not two different databases. WordPress uses its own separate database outside of Symfony. Doctrine migrations live in `/migrations/` and target entity manager `main`. Table storage engine (MyISAM vs InnoDB) varies per table within both entity managers.
 
 ### Registration system
 

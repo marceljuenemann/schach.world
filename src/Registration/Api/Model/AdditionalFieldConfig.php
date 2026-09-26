@@ -31,6 +31,11 @@ class AdditionalFieldConfig {
   public bool $required = false;
 
   /**
+   * Hidden fields are only visible to managers, e.g. for internal admin notes.
+   */
+  public bool $hidden = false;
+
+  /**
    * Options for select fields.
    */
   #[Assert\All(['constraints' => [new Assert\Type(FieldOptionConfig::class)]])]

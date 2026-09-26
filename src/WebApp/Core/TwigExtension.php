@@ -8,7 +8,7 @@ use Twig\TwigFunction;
 
 class TwigExtension extends AbstractExtension {
 
-  function __construct(private NsvJs $nsvJs) {}
+  function __construct(private NsvJs $nsvJs, private Auth $auth) {}
 
   function getFunctions(): array {
     return [
@@ -17,19 +17,19 @@ class TwigExtension extends AbstractExtension {
       }, ['is_safe' => array('html')]),
 
       new TwigFunction('nsv_is_logged_in', function() {
-        return Auth::isLoggedIn();
+        return $this->auth->isLoggedIn();
       }),
 
       new TwigFunction('nsv_login_redirect', function($uri) {
-        return Auth::loginRedirect($uri);
+        return $this->auth->loginRedirect($uri);
       }),
 
       new TwigFunction('nsv_logout_redirect', function($uri) {
-        return Auth::logoutRedirect($uri);
+        return $this->auth->logoutRedirect($uri);
       }),
 
       new TwigFunction('nsv_username', function() {
-        return Auth::userName();
+        return $this->auth->userName();
       }),
 
       new TwigFunction('nsv_js_src', function() {

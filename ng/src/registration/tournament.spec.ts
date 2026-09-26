@@ -33,6 +33,39 @@ describe('Tournament', () => {
     });
   })
 
+  describe('unregistered players', () => {
+    it('should be excluded from players', () => {
+      const tournament = new TournamentBuilder()
+        .addPlayer({id: 1})
+        .addPlayer({id: 2, unregisteredAt: '2026-01-05 10:00'})
+        .build();
+      expect(tournament.players.map(p => p.id)).toEqual([1]);
+    });
+
+    it('should be listed in unregistered, sorted most recent first', () => {
+      const tournament = new TournamentBuilder()
+        .addPlayer({id: 1, unregisteredAt: '2026-01-01 10:00'})
+        .addPlayer({id: 2, unregisteredAt: '2026-01-10 10:00'})
+        .build();
+      expect(tournament.unregistered.map(p => p.id)).toEqual([2, 1]);
+    });
+
+    it('should not count against availableSlots', () => {
+      const tournament = new TournamentBuilder()
+        .config({maxPlayers: 5})
+        .addPlayer({id: 1, unregisteredAt: '2026-01-01 10:00'})
+        .build();
+      expect(tournament.availableSlots).toEqual(5);
+    });
+
+    it('should not be found by hasPlayer', () => {
+      const tournament = new TournamentBuilder()
+        .addPlayer({unregisteredAt: '2026-01-01 10:00'})
+        .build();
+      expect(tournament.hasPlayer({name: TEST_PLAYER.playerData.name, zps: TEST_PLAYER.playerData.zps, memberId: TEST_PLAYER.playerData.memberId})).toBe(false);
+    });
+  })
+
   describe('hasPlayer', () => {
     let tournament: Tournament
 

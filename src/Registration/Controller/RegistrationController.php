@@ -30,7 +30,8 @@ class RegistrationController extends AbstractController {
     private EntityManagerInterface $mainEntityManager,
     private PlayerRegistrationRepository $repository,
     private PlayerRepository $dwzRepository,
-    private MailerInterface $mailer
+    private MailerInterface $mailer,
+    private Auth $auth
   ) {}
 
   #[Route('{tournament}/', name: 'overview')]
@@ -54,9 +55,17 @@ class RegistrationController extends AbstractController {
   public function registerPlayer(string $tournament, #[MapRequestPayload] PlayerRegistration $request): Response {
     $config = $this->getConfig($tournament);
 
+    if (!$this->isManager($config) && isset($request->additionalFields)) {
+      foreach ($config->additionalFields as $field) {
+        if ($field->hidden) {
+          unset($request->additionalFields[$field->id]);
+        }
+      }
+    }
+
     $player = new Entity\PlayerRegistration();
     $player->tournament = $config->id;
-    $this->populateEntity($request, $player);
+    $this->populateEntity($request, $player, $this->isManager($config));
  
     $this->mainEntityManager->persist($player);
     $this->mainEntityManager->flush();
@@ -73,7 +82,7 @@ class RegistrationController extends AbstractController {
     }
     $waitlistConfirmed = !$request->waitlist && $registration->waitlist;
 
-    $this->populateEntity($request, $registration);
+    $this->populateEntity($request, $registration, true);
     $this->mainEntityManager->persist($registration);
     $this->mainEntityManager->flush();
 
@@ -83,9 +92,12 @@ class RegistrationController extends AbstractController {
     return new ApiResponse();
   }
 
-  private function populateEntity(PlayerRegistration $request, Entity\PlayerRegistration $player): void {
+  private function populateEntity(PlayerRegistration $request, Entity\PlayerRegistration $player, bool $isManager): void {
     $player->group = $request->group;
     $player->waitlist = $request->waitlist ?? false;
+    if ($isManager) {
+      $player->confirmed = $request->confirmed;
+    }
     $player->name = $request->playerData->name;
     $player->gender = $request->playerData->gender;
     $player->yearOfBirth = $request->playerData->yearOfBirth;
@@ -130,7 +142,8 @@ class RegistrationController extends AbstractController {
     if (!$this->isManager($config) || $registration->tournament !== $config->id) {
       throw new AccessDeniedHttpException();
     }
-    $this->mainEntityManager->remove($registration);
+    $registration->unregisteredAt = new \DateTimeImmutable();
+    $this->mainEntityManager->persist($registration);
     $this->mainEntityManager->flush();
     return new JsonResponse();
   }
@@ -139,14 +152,14 @@ class RegistrationController extends AbstractController {
     $includeSensitive = $this->isManager($config);
     $players = $this->repository->findByTournament($config->id);
     if (!$includeSensitive) {
-      $players = array_filter($players, fn(Entity\PlayerRegistration $p) => !$p->waitlist);
+      $players = array_filter($players, fn(Entity\PlayerRegistration $p) => !$p->waitlist && $p->unregisteredAt === null);
       $players = array_values($players);  // Re-index the array to fix JSON encoding.
     }
     return array_map(fn($p) => PlayerRegistration::fromEntity($p, $includeSensitive), $players);
   }
 
   private function isManager($config): bool {
-    return Auth::isAdmin() || in_array(Auth::userName(), $config->managers);
+    return $this->auth->isAdmin() || in_array($this->auth->userName(), $config->managers);
   }
 
   private function getConfig(string $tournament): TournamentConfig {
