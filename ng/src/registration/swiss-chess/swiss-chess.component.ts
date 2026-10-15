@@ -39,6 +39,12 @@ export class SwissChessComponent {
         "info_play_2": "",
         "info_play_3": "",
         "info_play_4": "",
+        "start": "",
+        "rank": "",
+        "board": "",
+        "teamno": "",
+        "inaktiv": "",
+        "game_results": ""
       }
     })
     return { player: players }
