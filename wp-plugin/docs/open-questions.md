@@ -15,6 +15,10 @@
   `turnierverwaltung/` page).
 - **User accounts for club users (later):** open WordPress registration, invitations
   by an admin or tournament manager, or another flow.
+- **License on WordPress.org:** the plugin is AGPL-3.0-or-later. The directory
+  requires GPL-compatible licenses and recommends "GPLv2 or later". AGPLv3 is
+  combinable with GPLv3, but confirm with plugins@wordpress.org before the
+  first submission.
 - **Minimum PHP version:** `8.2` proposed.
 - **Language and i18n:**
   - German-only at first, or English source strings with German translations

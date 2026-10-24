@@ -22,6 +22,9 @@ Everything is prefixed with the plugin name, in the form each context allows:
 | REST namespace | `schach-world/v1` |
 | Plugin slug / text domain | `schach-world` |
 
+The code repository and npm package are named `schach-world-wp`, to distinguish
+them from the existing schach.world repository. Users never see this name.
+
 Internal CSS tokens use a short private form (`--_accent`), since they are not
 part of the public API.
 

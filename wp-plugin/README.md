@@ -5,11 +5,26 @@ schach.world / NSV system. It is intended for distribution via the WordPress.org
 plugin directory and for hosted use on schach.world.
 
 > This directory lives inside the `nsv` repository for now and is planned to
-> become its own repository.
+> become its own repository, `schach-world-wp`.
 
 ## Status
 
-Planning. No code yet.
+Early development: a minimal plugin runs in the local environment.
+
+## Development
+
+Requires Node.js and Docker.
+
+```bash
+npm install
+npm run env:start    # WordPress at http://localhost:8888 (admin / password)
+```
+
+See [AGENTS.md](AGENTS.md) for commands and conventions.
+
+## License
+
+AGPL-3.0-or-later, see [LICENSE](LICENSE).
 
 ## Scope
 
@@ -24,14 +39,15 @@ The league manager is out of scope and stays in the Symfony application.
 
 ### Milestone 1: Registration running on the NSV site
 
-- [ ] **Repository structure and minimal plugin**
-  - `frontend/`, `plugin/`, `e2e/`, root `package.json`, `.wp-env.json`
+- [x] **Repository structure and minimal plugin**
+  - `plugin/`, root `package.json`, `.wp-env.json`, `AGENTS.md`
   - Plugin main file with header and `readme.txt`; plugin activates in `wp-env`
 - [ ] **Tournament pages and routing** (see
   [0006](docs/decisions/0006-tournament-management-in-frontend.md))
   - Base page created on activation; rewrite rules for `turniere/[slug]/[year]/`
   - `schach_world_admin` capability; wp-admin redirect for non-admins
 - [ ] **Frontend working**
+  - `frontend/` with root `angular.json`
   - Angular app (zoneless, Shadow DOM root) loaded by the plugin
   - Loaded from `ng serve` in development and from `plugin/build/` in production
 - [ ] **First database table and REST API**

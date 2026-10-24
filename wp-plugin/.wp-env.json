@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/wp-env.json",
+	"core": null,
+	"phpVersion": "8.2",
+	"testsEnvironment": false,
+	"mappings": {
+		"wp-content/plugins/schach-world": "./plugin"
+	},
+	"lifecycleScripts": {
+		"afterStart": "wp-env run cli wp plugin activate schach-world && wp-env run cli wp rewrite structure /%postname%/ --hard"
+	}
+}
