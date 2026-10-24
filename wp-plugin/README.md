@@ -65,8 +65,12 @@ The league manager is out of scope and stays in the Symfony application.
 
 ### Later
 
-- [ ] Result upload via Swiss Chess files (port of `nsv-turniere`)
+- [ ] Move to the standalone repository `schach-world-wp`
+  - Delete `CLAUDE.md`: it only exists because the `nsv` root `CLAUDE.md`
+    stops Claude Code from reading `AGENTS.md` in subdirectories
 - [ ] Submission to the WordPress.org plugin directory
+  - Add `Contributors:` (WordPress.org usernames) to `plugin/readme.txt`
+- [ ] Result upload via Swiss Chess files (port of `nsv-turniere`)
 - [ ] Own pairing engine
 
 ## Decisions

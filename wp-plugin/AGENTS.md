@@ -72,8 +72,6 @@ and enables pretty permalinks.
 
 ## Git workflow
 
-- **Small changes:** make them and leave them uncommitted.
-- **Larger changes:** work on a feature branch, commit, push and open a pull
-  request. If the change needs manual verification (UI, WordPress behavior),
-  say so.
-- **If unsure** whether a change is small or large, ask.
+- **Never commit automatically.** Leave all changes uncommitted; the user
+  commits. Only commit or push when explicitly asked.
+- If a change needs manual verification (UI, WordPress behavior), say so.
