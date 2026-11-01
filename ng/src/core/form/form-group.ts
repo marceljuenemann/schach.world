@@ -64,6 +64,10 @@ export class NsvFormGroup<T extends {[K in keyof T]: NsvFormControl<any>} = any>
   }
 }
 
+/**
+ * Validators can return an error with a `message` key to show that message
+ * below the input in NsvFormComponent.
+ */
 export abstract class NsvFormControl<T = any> extends FormControl {
   constructor(public readonly type: NsvFormType, public readonly label: string, opts: FormControlOptions | ValidatorFn | ValidatorFn[] = {}) {
     super('', opts);

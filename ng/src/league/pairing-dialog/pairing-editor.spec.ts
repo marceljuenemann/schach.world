@@ -1,12 +1,13 @@
-import { PairingEditor } from './pairing-editor';
+import { GuessableControl, isLateRegistration, lateRegistrationName, PairingEditor } from './pairing-editor';
 import { Pairing, Player, Team } from '../types';
 
-function makeTeam(id: number, players: {id: number, dwz: number | null, number: number}[]): Team {
+function makeTeam(id: number, players: {id: number, dwz: number | null, number: number}[], teamNumber = 1): Team {
   return {
     id,
     name: `Team ${id}`,
+    zps: null,
     playersByTeamNumber: {
-      1: players.map((p): Player => ({id: p.id, name: `Player ${p.id}`, number: p.number, dwz: p.dwz})),
+      [teamNumber]: players.map((p): Player => ({id: p.id, name: `Player ${p.id}`, number: p.number, dwz: p.dwz})),
     },
   }
 }
@@ -14,8 +15,8 @@ function makeTeam(id: number, players: {id: number, dwz: number | null, number: 
 function makePairing(overrides: Partial<Pairing> = {}): Pairing {
   return {
     id: 1,
-    team1: {id: 10, name: 'Team A'},
-    team2: {id: 20, name: 'Team B'},
+    team1: {id: 10, name: 'Team A', zps: null},
+    team2: {id: 20, name: 'Team B', zps: null},
     comment: null,
     result1: null,
     result2: null,
@@ -323,5 +324,105 @@ describe('PairingEditor', () => {
     expect(editor.overallResult1.isManual).toBeTrue()
     expect(editor.overallResult2.value).toBe(0)
     expect(editor.overallResult2.isManual).toBeFalse()
+  })
+
+  it('groups the roster by team number, including the team\'s own group', () => {
+    const team1: Team = {
+      id: 10, name: 'Team A', zps: null,
+      playersByTeamNumber: {
+        1: [{id: 1, name: 'Player 1', number: 1, dwz: 1900}],
+        2: [{id: 2, name: 'Player 2', number: 1, dwz: 1800}],
+      },
+    }
+    const team2 = makeTeam(20, [{id: 3, dwz: 1700, number: 1}])
+    const editor = new PairingEditor(makePairing(), 1, team1, team2)
+
+    expect(editor.rosterGroups1.map(g => g.teamNumber)).toEqual([1, 2])
+    expect(editor.rosterGroups1[0].players.map(p => p.id)).toEqual([1])
+    expect(editor.rosterGroups1[1].players.map(p => p.id)).toEqual([2])
+  })
+
+  it('lets a board be set to a late registration and cascades later boards to null', () => {
+    const team1 = makeTeam(10, [
+      {id: 1, dwz: 1900, number: 1},
+      {id: 2, dwz: 1900, number: 2},
+    ])
+    const team2 = makeTeam(20, [{id: 3, dwz: 1700, number: 1}])
+    const editor = new PairingEditor(makePairing(), 2, team1, team2)
+
+    const row1 = editor.boardRows[0]
+    editor.addLateRegistration(row1, row1.player1, {teamNumber: 1, player: {lastName: 'Guest'}})
+
+    expect(isLateRegistration(row1.player1.value)).toBeTrue()
+    // Later boards on that side guess null, not the next roster player (id 2).
+    expect(editor.boardRows[1].player1.value).toBeNull()
+  })
+
+  it('uses the late registered player\'s own DWZ for guessing, defaulting to 0 when unset', () => {
+    const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}])
+    const team2 = makeTeam(20, [{id: 2, dwz: 1700, number: 1}])
+    const editor = new PairingEditor(makePairing(), 1, team1, team2)
+    const row = editor.boardRows[0]
+
+    // Late registration with a high DWZ should win against team2's 1700.
+    row.player1.setValue({teamNumber: 1, player: {lastName: 'Guest', dwz: 2000}})
+    editor.onPlayerSelected(row, row.player1)
+    expect(row.result1.value).toBe('1')
+    expect(row.result2.value).toBe('0')
+
+    // Late registration with no DWZ defaults to 0, so team2 (1700) wins.
+    row.player1.setValue({teamNumber: 1, player: {lastName: 'Guest'}})
+    editor.onPlayerSelected(row, row.player1)
+    expect(row.result1.value).toBe('0')
+    expect(row.result2.value).toBe('1')
+  })
+
+  it('offers a late registration on all boards of its side only', () => {
+    const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}])
+    const team2 = makeTeam(20, [{id: 2, dwz: 1700, number: 1}])
+    const editor = new PairingEditor(makePairing(), 2, team1, team2)
+    const lateRegistration = {teamNumber: 1, player: {lastName: 'Guest'}}
+
+    editor.addLateRegistration(editor.boardRows[0], editor.boardRows[0].player2, lateRegistration)
+
+    expect(editor.boardRows[0].player2.value).toBe(lateRegistration)
+    expect(editor.lateRegistrations2).toEqual([lateRegistration])
+    expect(editor.lateRegistrations1).toEqual([])
+  })
+
+  it('lists a late registration in the group of its team', () => {
+    const team1: Team = {id: 10, name: 'Team 10', zps: null, playersByTeamNumber: {
+      1: [{id: 1, name: 'Player 1', number: 1, dwz: 1900}],
+      2: [{id: 2, name: 'Player 2', number: 2, dwz: 1800}],
+    }}
+    const editor = new PairingEditor(makePairing(), 1, team1, makeTeam(20, []))
+    const row = editor.boardRows[0]
+    const lateRegistration = {teamNumber: 1, player: {lastName: 'Guest'}}
+
+    editor.addLateRegistration(row, row.player1, lateRegistration)
+
+    expect(editor.rosterGroups1[0].lateRegistrations).toEqual([lateRegistration])
+    expect(editor.rosterGroups1[1].lateRegistrations).toEqual([])
+  })
+
+  it('adds a group for a late registration in a team without a roster', () => {
+    const editor = new PairingEditor(makePairing(), 1, makeTeam(10, [], 2), makeTeam(20, []))
+    const row = editor.boardRows[0]
+
+    editor.addLateRegistration(row, row.player1, {teamNumber: 1, player: {lastName: 'Guest'}})
+
+    expect(editor.rosterGroups1.map(g => g.teamNumber)).toEqual([1, 2])
+    expect(editor.rosterGroups1[0].players).toEqual([])
+  })
+
+  it('formats the name of a late registration', () => {
+    expect(lateRegistrationName({teamNumber: 1, player: {lastName: 'Neumann', firstName: 'Nora'}})).toBe('Neumann, Nora')
+    expect(lateRegistrationName({teamNumber: 1, player: {lastName: 'Neumann'}})).toBe('Neumann')
+  })
+
+  it('remembers the previous value of a control', () => {
+    const control = new GuessableControl<number | null>(1)
+    control.setValue(2)
+    expect(control.previousValue).toBe(1)
   })
 })

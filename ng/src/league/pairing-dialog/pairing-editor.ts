@@ -1,7 +1,27 @@
 import { FormControl } from '@angular/forms';
-import { Pairing, Player, Team } from '../types';
+import { LateRegistration, Pairing, Player, Team } from '../types';
 
 export const RESULT_OPTIONS = ['1', '½', '0', '+', '-', '?'] as const
+
+// What a board's player select holds: a player ID, a late registration or nobody.
+export type PlayerSelection = number | LateRegistration | null
+
+export function isLateRegistration(value: PlayerSelection): value is LateRegistration {
+  return typeof value === 'object' && value !== null
+}
+
+// The value of the "Nachmeldung..." option. Only selected until the dialog is closed.
+export const LATE_REGISTRATION_OPTION = -1
+
+export function lateRegistrationName({player}: LateRegistration): string {
+  return player.firstName ? `${player.lastName}, ${player.firstName}` : player.lastName
+}
+
+export interface RosterGroup {
+  teamNumber: number
+  players: Player[]
+  lateRegistrations: LateRegistration[]
+}
 
 const SCORE: Record<string, number> = {'1': 1, '½': 0.5, '+': 1}
 const OPPOSITE: Record<string, string> = {'1': '0', '0': '1', '+': '-', '-': '+'}  // '½'/'?' mirror themselves
@@ -13,27 +33,35 @@ const OPPOSITE: Record<string, string> = {'1': '0', '0': '1', '+': '-', '-': '+'
 // same trick this codebase's own NsvFormControl already uses.
 export class GuessableControl<T> extends FormControl {
   isManual = false
+  previousValue: T
   declare value: T
 
   constructor(value: T) {
     super(value)
+    this.previousValue = value
   }
 
   override setValue(value: T, options?: {onlySelf?: boolean, emitEvent?: boolean}): void {
+    this.previousValue = this.value
     super.setValue(value, options)
   }
 }
 
+export type PlayerControl = GuessableControl<PlayerSelection>
+
 export interface BoardRow {
   board: number
-  player1: GuessableControl<number | null>
-  player2: GuessableControl<number | null>
+  player1: PlayerControl
+  player2: PlayerControl
   result1: GuessableControl<string>
   result2: GuessableControl<string>
 }
 
 export class PairingEditor {
   boardRows: BoardRow[] = []
+  // Late registrations entered so far, selectable on any board of that side.
+  lateRegistrations1: LateRegistration[] = []
+  lateRegistrations2: LateRegistration[] = []
   overallResult1 = new GuessableControl<number>(0)
   overallResult2 = new GuessableControl<number>(0)
 
@@ -57,8 +85,8 @@ export class PairingEditor {
     const game = this.pairing.games?.find(g => g.board === board) ?? null
     const row: BoardRow = {
       board,
-      player1: new GuessableControl<number | null>(game?.player1?.id ?? null),
-      player2: new GuessableControl<number | null>(game?.player2?.id ?? null),
+      player1: new GuessableControl<PlayerSelection>(game?.player1?.id ?? null),
+      player2: new GuessableControl<PlayerSelection>(game?.player2?.id ?? null),
       result1: new GuessableControl<string>(game?.result1 ?? '?'),
       result2: new GuessableControl<string>(game?.result2 ?? '?'),
     }
@@ -107,7 +135,14 @@ export class PairingEditor {
     }
   }
 
-  onPlayerSelected(row: BoardRow, control: GuessableControl<number | null>) {
+  addLateRegistration(row: BoardRow, control: PlayerControl, lateRegistration: LateRegistration) {
+    const lateRegistrations = control === row.player1 ? this.lateRegistrations1 : this.lateRegistrations2
+    lateRegistrations.push(lateRegistration)
+    control.setValue(lateRegistration)
+    this.onPlayerSelected(row, control)
+  }
+
+  onPlayerSelected(row: BoardRow, control: PlayerControl) {
     control.isManual = true
     const side: 1 | 2 = control === row.player1 ? 1 : 2
     this.guessPlayers(side)
@@ -142,7 +177,7 @@ export class PairingEditor {
     for (const row of this.boardRows) {
       const control = side === 1 ? row.player1 : row.player2
       if (control.isManual) {
-        if (control.value === null) {
+        if (control.value === null || isLateRegistration(control.value)) {
           forceNull = true
         } else {
           const idx = roster.findIndex(p => p.id === control.value)
@@ -189,8 +224,8 @@ export class PairingEditor {
     if (p1 === null) { row.result1.setValue('-'); row.result2.setValue('+'); return }
     if (p2 === null) { row.result1.setValue('+'); row.result2.setValue('-'); return }
 
-    const dwz1 = this.dwzFor(this.team1, p1) ?? 0
-    const dwz2 = this.dwzFor(this.team2, p2) ?? 0
+    const dwz1 = this.effectiveDwz(this.team1, p1)
+    const dwz2 = this.effectiveDwz(this.team2, p2)
     if (dwz1 > dwz2 + 100) { row.result1.setValue('1'); row.result2.setValue('0') }
     else if (dwz2 > dwz1 + 100) { row.result1.setValue('0'); row.result2.setValue('1') }
     else { row.result1.setValue('½'); row.result2.setValue('½') }
@@ -217,6 +252,25 @@ export class PairingEditor {
       if (player) return player.dwz
     }
     return null
+  }
+
+  // A late registered player carries their own DWZ if one was found via the database
+  // lookup; missing/not-found DWZ is treated as 0, matching the legacy guessing rule.
+  private effectiveDwz(team: Team, player: PlayerSelection): number {
+    if (isLateRegistration(player)) return player.player.dwz ?? 0
+    return this.dwzFor(team, player!) ?? 0
+  }
+
+  get rosterGroups1(): RosterGroup[] { return this.rosterGroups(this.team1, this.lateRegistrations1) }
+  get rosterGroups2(): RosterGroup[] { return this.rosterGroups(this.team2, this.lateRegistrations2) }
+  private rosterGroups(team: Team, lateRegistrations: LateRegistration[]): RosterGroup[] {
+    const rosters = team.playersByTeamNumber ?? {}
+    const teamNumbers = new Set([...Object.keys(rosters).map(Number), ...lateRegistrations.map(l => l.teamNumber)])
+    return [...teamNumbers].sort((a, b) => a - b).map(teamNumber => ({
+      teamNumber,
+      players: rosters[teamNumber] ?? [],
+      lateRegistrations: lateRegistrations.filter(l => l.teamNumber === teamNumber),
+    }))
   }
 
   get roster1(): Player[] { return this.flattenRoster(this.team1) }

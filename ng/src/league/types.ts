@@ -4,6 +4,7 @@
 export interface Team {
   id: number
   name: string
+  zps: string | null
   playersByTeamNumber?: Record<number, Player[]>
 }
 
@@ -12,6 +13,28 @@ export interface Player {
   name: string
   number: number
   dwz: number | null
+}
+
+// Mirrors Nsv\League\Api\Request\CreateOrUpdatePlayerRequest.php - the shape a
+// not-yet-existing late registered player is captured as, so a future save() can
+// submit it through the same request shape the team page already uses.
+export interface PlayerRequest {
+  firstName?: string
+  lastName: string
+  title?: string
+  zps?: string
+  dwz?: number
+  elo?: number
+  yearOfBirth?: number
+  gender?: '' | 'm' | 'w' | 'd'
+}
+
+// A board filled by a not-yet-registered player: which team-number group
+// (playersByTeamNumber key - the team's own is one of these too) they're being
+// registered onto, plus the player data itself.
+export interface LateRegistration {
+  teamNumber: number
+  player: PlayerRequest
 }
 
 export interface Game {
