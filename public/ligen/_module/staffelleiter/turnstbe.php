@@ -30,15 +30,15 @@
     }
 
     // Mannschaftsverwaltung
-    echo "<fieldset class='sed_admin_desk'><legend>Mannschaftsverwaltung</legend><table cellspacing='0' cellpadding='3'>";
+    echo "<fieldset class='sed_admin_desk'><legend>Mannschaftsverwaltung</legend>";
+    SED_EchoSpielerverwaltungHinweis ();
+    echo "<table cellspacing='0' cellpadding='3'>";
     $teams = SED_Query('SELECT id FROM mannschaften WHERE staffel=? ORDER BY name, mnr, id', [$admin['staffel']])->fetchAllAssociative();
 
     // Mannschaften auflisten
     foreach ($teams as $team)
     {
         echo "<tr><td>".SED_escape($globals ['teams'][$team ['id']])."&nbsp;&nbsp;</td><td>
-                <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]&edit=0'><img src='$globals[systemicons]desk_nachmeldung.png' alt='Nachmeldungen' class='sed_admin_icon' />Nachmeldung</a>
-                <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spieler.png' alt='Spieler' class='sed_admin_icon' />Spieler</a>
                 <a style='text-decoration: none' href='m/$team[id]/'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Bearbeiten' class='sed_admin_icon' />Bearbeiten</a>
                 <a style='text-decoration: none' href='?admin=turnstbe-$admin[userid]-$admin[session]&staffel=$admin[staffel]&delmann=$team[id]'><img src='$globals[systemicons]desk_entfernen.png' alt='Aus Staffel entfernen' class='sed_admin_icon' /></a>
               </td></tr>";

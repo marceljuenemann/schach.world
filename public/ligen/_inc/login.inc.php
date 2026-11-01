@@ -43,7 +43,6 @@
     $admin ['pagelib'] = array (
       array ( "desktop", -1, "st", false, "Desktop", "Desktop", "Die Übersicht über alle Funktionen des Ergebnisdienstes" ),
       array ( "turnmalo", -1, "t", false, "Mannschaft löschen", "Mannschaft löschen", "Hier können Sie eine Mannschaft endgültig aus dem Turnier entfernen" ),
-      array ( "stafspie", -1, "st", false, "Spieler", "Spieler bearbeiten", "Über diese Funktion können Sie alle Daten der Spieler bearbeiten" ),
       array ( "alleeing", -1, "st", false, "Ergebnisse eingeben", "Ergebnisse eingeben", "" ),
       array ( "logout", -1, "st", false, "Logout", "Logout", "" ),
 

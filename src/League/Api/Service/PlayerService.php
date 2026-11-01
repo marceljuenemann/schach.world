@@ -110,8 +110,7 @@ class PlayerService
     $this->leagueEntityManager->remove($player);
     $this->leagueEntityManager->flush();
 
-    // Shift down board numbers of remaining players, mirroring legacy stafspie.php's
-    // "UPDATE spieler SET brettnr=brettnr-1 WHERE mannschaft=? AND brettnr>?".
+    // Shift down board numbers of remaining players.
     $this->leagueEntityManager->createQuery(
       'UPDATE Nsv\League\Entity\Player p SET p.number = p.number - 1 WHERE p.team = :team AND p.number > :number'
     )->setParameter('team', $team)
