@@ -199,6 +199,56 @@ describe('PairingEditor', () => {
     expect(row.result2.isManual).toBeFalse()
   })
 
+  it('keeps a saved empty player slot instead of filling it in from the roster', () => {
+    const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}, {id: 2, dwz: 1800, number: 2}])
+    const team2 = makeTeam(20, [{id: 11, dwz: 1900, number: 1}, {id: 12, dwz: 1800, number: 2}])
+    const pairing = makePairing({
+      result1: 2,
+      result2: 0,
+      games: [
+        {board: 1, player1: {id: 1, name: 'Player 1', number: 1, dwz: 1900}, player2: {id: 11, name: 'Player 11', number: 1, dwz: 1900}, result1: '1', result2: '0'},
+        {board: 2, player1: {id: 2, name: 'Player 2', number: 2, dwz: 1800}, player2: null, result1: '+', result2: '-'},
+      ],
+    })
+    const editor = new PairingEditor(pairing, 2, team1, team2)
+
+    expect(editor.boardRows[1].player2.value).toBeNull()
+    expect(editor.toRequest('', false).games[1].player2).toBeNull()
+  })
+
+  it('keeps all empty player slots of a saved walkover', () => {
+    const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}, {id: 2, dwz: 1800, number: 2}])
+    const team2 = makeTeam(20, [{id: 11, dwz: 1900, number: 1}, {id: 12, dwz: 1800, number: 2}])
+    const pairing = makePairing({
+      result1: 2,
+      result2: 0,
+      games: [1, 2].map(board => ({board, player1: null, player2: null, result1: '+', result2: '-'})),
+    })
+    const editor = new PairingEditor(pairing, 2, team1, team2)
+
+    for (const row of editor.boardRows) {
+      expect(row.player1.value).toBeNull()
+      expect(row.player2.value).toBeNull()
+      expect(row.result1.value).toBe('+')
+      expect(row.result2.value).toBe('-')
+    }
+  })
+
+  it('still lets a saved empty player slot be filled in by hand', () => {
+    const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}])
+    const team2 = makeTeam(20, [{id: 11, dwz: 1900, number: 1}])
+    const pairing = makePairing({
+      games: [{board: 1, player1: {id: 1, name: 'Player 1', number: 1, dwz: 1900}, player2: null, result1: '+', result2: '-'}],
+    })
+    const editor = new PairingEditor(pairing, 1, team1, team2)
+    const row = editor.boardRows[0]
+
+    row.player2.setValue(11)
+    editor.onPlayerSelected(row, row.player2)
+
+    expect(editor.toRequest('', false).games[0].player2).toBe(11)
+  })
+
   it('marks a saved result2 as manual too when it is not the usual opposite of result1', () => {
     const team1 = makeTeam(10, [{id: 1, dwz: 1900, number: 1}])
     const team2 = makeTeam(20, [{id: 2, dwz: 1700, number: 1}])

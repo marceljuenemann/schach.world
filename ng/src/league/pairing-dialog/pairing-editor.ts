@@ -97,12 +97,14 @@ export class PairingEditor {
     // doesn't actually match the usual opposite - e.g. some special/asymmetric result -
     // in which case it must be preserved as-is too. This keeps editing a saved result
     // easy (change one side, the other follows) without silently flipping an unusual one.
+    // An empty player slot is a decision too: nobody played that side of the board, e.g.
+    // because of a forfeit, so it must not get filled in from the roster.
     if (game) {
       row.result1.isManual = true
       row.result2.isManual = game.result2 !== this.opposite(game.result1)
+      row.player1.isManual = true
+      row.player2.isManual = true
     }
-    if (game?.player1) row.player1.isManual = true
-    if (game?.player2) row.player2.isManual = true
     return row
   }
 
