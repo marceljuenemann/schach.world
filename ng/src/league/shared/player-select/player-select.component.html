@@ -1,7 +1,14 @@
 <ng-template #rt let-player="result" let-t="term">
-  <ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
-  @if (player.data) {
+  @if (player === formatHintOption) {
+    <div class="format-hint small">Nicht in der Mitgliederdatenbank? Bitte vollständig als <i>Nachname, Vorname</i> eingeben.</div>
+  } @else if (player.data) {
+    <ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
     <i>&nbsp;({{player.data.club}})</i>
+  } @else {
+    <div class="manual-option">
+      <div class="fw-semibold">{{player.name}}</div>
+      <div class="manual-option-note small">Nicht in der Mitgliederdatenbank</div>
+    </div>
   }
 </ng-template>
 <div class="form-floating">
@@ -10,11 +17,34 @@
     [id]="inputId"
     type="text"
     class="form-control"
+    [class.is-valid]="status === 'database'"
+    [class.is-invalid]="status === 'unselected'"
+    [class.border-warning]="status === 'manual'"
     [formControl]="control"
     [ngbTypeahead]="search"
     [resultTemplate]="rt"
     [inputFormatter]="formatter"
     [editable]="false"
+    (selectItem)="onSelectItem($event)"
+    (focus)="focused = true"
+    (blur)="focused = false"
   />
   <label [for]="inputId">Nachname, Vorname</label>
 </div>
+@switch (status) {
+  @case ('unselected') {
+    <div class="player-select-status small text-danger">
+      Bitte wählen Sie einen Eintrag aus der Liste aus
+    </div>
+  }
+  @case ('database') {
+    <div class="player-select-status small text-success">
+      Aus der Mitgliederdatenbank: {{control.value?.data?.club}}
+    </div>
+  }
+  @case ('manual') {
+    <div class="player-select-status small text-warning-emphasis">
+      Nicht in der Mitgliederdatenbank. Bitte Schreibweise prüfen und Daten von Hand ergänzen.
+    </div>
+  }
+}

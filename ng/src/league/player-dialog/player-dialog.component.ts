@@ -54,6 +54,9 @@ export class PlayerDialog extends NsvDialog<PlayerDialogParams> {
     ]),
   })
 
+  // Form values from the dialog params.
+  private initialValues: Record<string, any>
+
   constructor(private leagueService: LeagueService) {
     super()
     this.selectedPlayer.valueChanges.subscribe(player => {
@@ -66,6 +69,8 @@ export class PlayerDialog extends NsvDialog<PlayerDialogParams> {
           dwz: player.data.dwz,
           elo: player.data.elo,
         })
+      } else if (player) {
+        this.clearChangedFields()
       }
     })
 
@@ -76,6 +81,18 @@ export class PlayerDialog extends NsvDialog<PlayerDialogParams> {
       this.registrationForm.patchValue({lateRegistrationRound: player.lateRegistrationRound ? String(player.lateRegistrationRound) : ''})
     } else if (this.params.currentRound) {
       this.registrationForm.patchValue({lateRegistrationRound: String(this.params.currentRound)})
+    }
+    this.initialValues = this.form.getRawValue()
+  }
+
+  /**
+   * Clears all fields except the ones that still match the dialog params.
+   */
+  private clearChangedFields() {
+    for (const [key, control] of Object.entries(this.form.controls)) {
+      if (control.value !== this.initialValues[key]) {
+        control.setValue('')
+      }
     }
   }
 
