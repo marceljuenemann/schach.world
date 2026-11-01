@@ -98,9 +98,9 @@ MySQL 5.7. `main` and `league` are **two separate Doctrine connections to the sa
 **Cross-group constraints** (`RegistrationConstraint`) cap combined registrations across multiple groups. Available slots for a group = minimum of (group limit, tournament limit, all applicable constraint limits). This logic lives in `Tournament` / `Group` Angular models, not on the server — the server only enforces group-level capacity.
 
 ## Git workflow
-- **Small changes**: Make the changes and leave them uncommitted. Let the user handle the commit.
-- **Larger changes**: Ensure we are on a feature branch (not `main`) before starting. If we're on `main`, ask the user to create a feature branch first. Commit and push automatically, then open a pull request and ask the user to review it. If the changes involve UI or anything that needs local verification, say so explicitly and ask the user to test before reviewing the PR.
-- **If unsure** whether a change qualifies as small or large, ask before committing.
+- **Never commit automatically**: Leave all changes uncommitted, whatever their size. Only commit, push or open a pull request when the user explicitly asks for it.
+- **Larger changes**: Ensure we are on a feature branch (not `main`) before starting. If we're on `main`, ask the user to create a feature branch first.
+- **Local verification**: If the changes involve UI or anything else that needs local verification, say so explicitly and ask the user to test them.
 
 ## Key conventions
 - PHP 8.4+ — use modern PHP features (readonly properties, named args, enums where appropriate)
