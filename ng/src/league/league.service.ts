@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { lastValueFrom } from 'rxjs';
-import { Team } from './types';
+import { Team, UpdatePairingRequest } from './types';
 
 export interface CreateOrUpdatePlayerData {
   firstName: string
@@ -44,6 +44,10 @@ export class LeagueService {
 
   getTeam(teamId: number): Promise<Team> {
     return this.get(`/teams/${teamId}/`)
+  }
+
+  updatePairing(pairingId: number, data: UpdatePairingRequest): Promise<void> {
+    return this.put(`/pairings/${pairingId}/`, data)
   }
 
   /**

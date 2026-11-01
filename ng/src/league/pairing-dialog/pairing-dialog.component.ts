@@ -48,8 +48,18 @@ export class PairingDialog extends NsvDialog<PairingDialogParams> {
     this.loading = false
   }
 
+  override get isValid() {
+    return !this.loading
+  }
+
   override save(): Promise<void> {
-    return Promise.resolve()  // still no persistence - logic/UI only for this step
+    const request = this.editor.toRequest(this.comment.value ?? '', this.sendConfirmation.value ?? false)
+    return this.leagueService.updatePairing(this.pairing.id, request)
+  }
+
+  // The dialog has no form fields that could show the server's validation errors.
+  get validationMessages(): string[] {
+    return Object.values(this.errors?.validationErrors ?? {}).flat().map(error => error.message)
   }
 
   onPlayerChange(row: BoardRow, control: PlayerControl) {

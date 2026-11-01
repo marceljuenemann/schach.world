@@ -32,7 +32,8 @@ class TeamService
     }
 
     // Fetch players.
-    $model->playersByTeamNumber = [];
+    // Always list the team itself, so that the first player can be registered for it.
+    $model->playersByTeamNumber = [$team->number => []];
     $players = [];
     foreach ([$team, ...$team->substituteTeams()] as $t) {
       foreach ($t->players as $player) {

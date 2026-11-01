@@ -76,13 +76,16 @@
     </div>
 
     <div class="form-floating mt-3">
-      <input type="text" class="form-control" id="comment" [formControl]="comment">
+      <input type="text" class="form-control" id="comment" maxlength="200" [formControl]="comment">
       <label for="comment">Bemerkung (&ouml;ffentlich)</label>
     </div>
     <div class="form-check form-switch mt-3">
       <input class="form-check-input" type="checkbox" role="switch" id="sendConfirmation" [formControl]="sendConfirmation">
       <label class="form-check-label" for="sendConfirmation">Best&auml;tigung versenden</label>
     </div>
+    @for (message of validationMessages; track $index) {
+      <div class="alert alert-danger mt-3 mb-0" role="alert">{{ message }}</div>
+    }
   }
 </div>
 <nsv-dialog-footer [dialog]="this"></nsv-dialog-footer>

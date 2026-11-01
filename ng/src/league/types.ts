@@ -16,8 +16,7 @@ export interface Player {
 }
 
 // Mirrors Nsv\League\Api\Request\CreateOrUpdatePlayerRequest.php - the shape a
-// not-yet-existing late registered player is captured as, so a future save() can
-// submit it through the same request shape the team page already uses.
+// not-yet-existing late registered player is captured as.
 export interface PlayerRequest {
   firstName?: string
   lastName: string
@@ -35,6 +34,26 @@ export interface PlayerRequest {
 export interface LateRegistration {
   teamNumber: number
   player: PlayerRequest
+}
+
+// Mirrors Nsv\League\Api\Request\UpdatePairingGameRequest.php
+export interface UpdatePairingGameRequest {
+  board: number
+  player1: number | null
+  lateRegistration1: LateRegistration | null
+  player2: number | null
+  lateRegistration2: LateRegistration | null
+  result1: string
+  result2: string
+}
+
+// Mirrors Nsv\League\Api\Request\UpdatePairingRequest.php
+export interface UpdatePairingRequest {
+  result1: number
+  result2: number
+  comment: string
+  sendConfirmation: boolean
+  games: UpdatePairingGameRequest[]
 }
 
 export interface Game {

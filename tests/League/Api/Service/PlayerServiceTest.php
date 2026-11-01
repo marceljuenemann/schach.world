@@ -131,7 +131,6 @@ class PlayerServiceTest extends LeagueTestCase
     $this->league->configPlayerNumbersWithTeamNumber = false;
     $team = $this->newEmptyTeam(5);
     $existing = $this->createTrackedPlayer($team, ['lastName' => 'Eins']);
-    $team->players->add($existing);
 
     $player = $this->createTrackedPlayer($team, ['firstName' => 'Max']);
 
@@ -276,11 +275,8 @@ class PlayerServiceTest extends LeagueTestCase
     $this->league->configPlayerNumbersWithTeamNumber = false;
     $team = $this->newEmptyTeam(3);
     $p1 = $this->createTrackedPlayer($team, ['lastName' => 'Eins']);
-    $team->players->add($p1);
     $p2 = $this->createTrackedPlayer($team, ['lastName' => 'Zwei']);
-    $team->players->add($p2);
     $p3 = $this->createTrackedPlayer($team, ['lastName' => 'Drei']);
-    $team->players->add($p3);
 
     $this->service->reorderPlayers($team, [$p3->id, $p1->id, $p2->id]);
 
@@ -296,9 +292,7 @@ class PlayerServiceTest extends LeagueTestCase
     $this->league->configPlayerNumbersWithTeamNumber = true;
     $team = $this->newEmptyTeam(4);
     $p1 = $this->createTrackedPlayer($team, ['lastName' => 'Eins']);
-    $team->players->add($p1);
     $p2 = $this->createTrackedPlayer($team, ['lastName' => 'Zwei']);
-    $team->players->add($p2);
 
     $this->service->reorderPlayers($team, [$p2->id, $p1->id]);
 

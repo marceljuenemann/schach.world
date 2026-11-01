@@ -79,7 +79,7 @@
                 echo SED_escape($globals ['teams'][$spiel['mannschaft2']]);
                 echo "</b> <a style='text-decoration:none' href='?admin=alleeing-$admin[userid]-$admin[session]&pid=$spiel[id]#zusatz'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Bemerkung bearbeiten' class='sed_admin_icon' />Bearbeiten</a><br />";
                 if ( $spiel ['bemerkung'] )
-                    echo "<i>$spiel[bemerkung]</i><br /><br />";
+                    echo "<i>".SED_escape($spiel['bemerkung'])."</i><br /><br />";
             }
         }
         echo "<br /><br /></div>";

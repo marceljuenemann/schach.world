@@ -1,5 +1,5 @@
 import { FormControl } from '@angular/forms';
-import { LateRegistration, Pairing, Player, Team } from '../types';
+import { LateRegistration, Pairing, Player, Team, UpdatePairingGameRequest, UpdatePairingRequest } from '../types';
 
 export const RESULT_OPTIONS = ['1', '½', '0', '+', '-', '?'] as const
 
@@ -132,6 +132,29 @@ export class PairingEditor {
         && result1 !== this.boardRows.length - result2) {
         this.overallResult1.isManual = true
       }
+    }
+  }
+
+  toRequest(comment: string, sendConfirmation: boolean): UpdatePairingRequest {
+    return {
+      result1: this.overallResult1.value,
+      result2: this.overallResult2.value,
+      comment,
+      sendConfirmation,
+      games: this.boardRows.map(row => this.gameRequest(row)),
+    }
+  }
+
+  private gameRequest(row: BoardRow): UpdatePairingGameRequest {
+    const [player1, player2] = [row.player1.value, row.player2.value]
+    return {
+      board: row.board,
+      player1: isLateRegistration(player1) ? null : player1,
+      lateRegistration1: isLateRegistration(player1) ? player1 : null,
+      player2: isLateRegistration(player2) ? null : player2,
+      lateRegistration2: isLateRegistration(player2) ? player2 : null,
+      result1: row.result1.value,
+      result2: row.result2.value,
     }
   }
 

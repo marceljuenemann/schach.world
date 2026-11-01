@@ -31,6 +31,9 @@ export class MatchDayComponent implements AfterViewInit {
 
   private openPairingDialog(button: HTMLElement) {
     const pairingId = parseInt(button.dataset['pairingId']!)
-    this.dialogService.open(PairingDialog, { pairingId, ...this.data }, { modalDialogClass: 'pairing-dialog-modal' })
+    this.dialogService.open(PairingDialog, { pairingId, ...this.data }, { modalDialogClass: 'pairing-dialog-modal' }).result.then(
+      () => window.location.reload(),  // The results and ranking are rendered by the server.
+      () => {},
+    )
   }
 }

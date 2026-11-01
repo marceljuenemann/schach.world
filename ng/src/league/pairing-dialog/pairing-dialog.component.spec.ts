@@ -1,3 +1,4 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -23,9 +24,10 @@ describe('PairingDialog', () => {
   let fixture: ComponentFixture<PairingDialog>;
   let dialog: PairingDialog;
   let dialogService: jasmine.SpyObj<DialogService>;
+  let leagueService: jasmine.SpyObj<LeagueService>;
 
   beforeEach(async () => {
-    const leagueService = jasmine.createSpyObj('LeagueService', ['getTeam']);
+    leagueService = jasmine.createSpyObj('LeagueService', ['getTeam', 'updatePairing']);
     leagueService.getTeam.and.callFake((id: number) => Promise.resolve(id === 10 ? team(10, 'Heim 2', '70156', 1) : team(20, 'Gast 2', '70157', 11)));
     dialogService = jasmine.createSpyObj('DialogService', ['open']);
 
@@ -114,5 +116,56 @@ describe('PairingDialog', () => {
     const secondBoard = dialog.editor.boardRows[1].player1.value;
     choose(playerSelect(0), 'Nachmeldung...');
     expect(dialog.editor.boardRows[1].player1.value).toBe(secondBoard);
+  });
+
+  it('should save the pairing and close the dialog', async () => {
+    leagueService.updatePairing.and.resolveTo();
+    dialog.comment.setValue('Bemerkung');
+    dialog.sendConfirmation.setValue(false);
+    await chooseLateRegistration(playerSelect(1), Promise.resolve(LATE_REGISTRATION));
+
+    dialog.saveDialog();
+    await fixture.whenStable();
+
+    expect(leagueService.updatePairing).toHaveBeenCalledOnceWith(1, jasmine.objectContaining({
+      comment: 'Bemerkung',
+      sendConfirmation: false,
+      games: [
+        jasmine.objectContaining({board: 1, player1: 1, lateRegistration1: null, player2: null, lateRegistration2: LATE_REGISTRATION}),
+        jasmine.objectContaining({board: 2, player1: 2, lateRegistration1: null}),
+      ],
+    }));
+    expect(dialog.modal.close).toHaveBeenCalled();
+  });
+
+  it('should show validation errors from the server', async () => {
+    leagueService.updatePairing.and.rejectWith(new HttpErrorResponse({status: 422, error: {
+      errorType: 'nsv', errorMessages: [], validationErrors: {comment: [{message: 'Zu lang'}]},
+    }}));
+
+    dialog.saveDialog();
+    await fixture.whenStable();
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.querySelector('.modal-body .alert-danger').textContent).toContain('Zu lang');
+    expect(dialog.modal.close).not.toHaveBeenCalled();
+  });
+});
+
+describe('PairingDialog while loading', () => {
+  it('should not be possible to save', () => {
+    const leagueService = jasmine.createSpyObj('LeagueService', ['getTeam']);
+    leagueService.getTeam.and.returnValue(new Promise(() => {}));
+    TestBed.configureTestingModule({
+      providers: [
+        { provide: LeagueService, useValue: leagueService },
+        { provide: DialogService, useValue: jasmine.createSpyObj('DialogService', ['open']) },
+        { provide: NgbActiveModal, useValue: jasmine.createSpyObj('NgbActiveModal', ['close', 'dismiss']) },
+        { provide: DIALOG_PARAMS, useValue: {pairingId: 1, matchDay: {pairings: [PAIRING]}, divisions: [], teams: [], boardCount: 2} },
+      ],
+      imports: [PairingDialog],
+    });
+
+    expect(TestBed.createComponent(PairingDialog).componentInstance.isValid).toBeFalse();
   });
 });
