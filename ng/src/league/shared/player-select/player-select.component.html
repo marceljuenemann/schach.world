@@ -1,0 +1,20 @@
+<ng-template #rt let-player="result" let-t="term">
+  <ngb-highlight [result]="player.name" [term]="t"></ngb-highlight>
+  @if (player.data) {
+    <i>&nbsp;({{player.data.club}})</i>
+  }
+</ng-template>
+<div class="form-floating">
+  <input
+    ngbAutofocus
+    [id]="inputId"
+    type="text"
+    class="form-control"
+    [formControl]="control"
+    [ngbTypeahead]="search"
+    [resultTemplate]="rt"
+    [inputFormatter]="formatter"
+    [editable]="false"
+  />
+  <label [for]="inputId">Nachname, Vorname</label>
+</div>
