@@ -7,8 +7,6 @@ use Nsv\League\Api\Model\Pairing;
 use Nsv\League\Api\Model\Player;
 use Nsv\League\Api\Service\RankingService;
 use Nsv\League\Entity;
-use Nsv\League\Entity\CacheEntry;
-use Nsv\League\Repository\CacheRepository;
 use Nsv\League\Repository\PairingRepository;
 use Nsv\League\Repository\PlayerRepository;
 
@@ -20,7 +18,6 @@ class MatchDayService
   function __construct(
     private PairingRepository $pairingRepository,
     private PlayerRepository $playerRepository,
-    private CacheRepository $cacheRepository,
     private RankingService $rankingService,
   ) {}
 

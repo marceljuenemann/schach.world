@@ -46,6 +46,9 @@ jobs:
             fi
           done
 
+      - name: Apply migrations
+        run: ./bin/console doctrine:migrations:migrate --em main --env=test --no-interaction
+
       - name: Run tests
         run: |
           XDEBUG_MODE=coverage ./bin/phpunit --coverage-html var/coverage

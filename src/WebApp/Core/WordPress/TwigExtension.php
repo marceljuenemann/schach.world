@@ -7,6 +7,8 @@ use Twig\TwigFunction;
 
 class TwigExtension extends AbstractExtension {
 
+  function __construct(private Auth $auth) {}
+
   // TODO: Prefix all with wp_
   function getFunctions(): array {
     return [
@@ -22,7 +24,7 @@ class TwigExtension extends AbstractExtension {
       }),
 
       new TwigFunction('is_admin', function() {
-        return Auth::isAdmin();
+        return $this->auth->isAdmin();
       })
     ];
   }

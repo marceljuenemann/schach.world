@@ -24,7 +24,6 @@ class NsvJs {
     // Use local angular development server.
     if ($_ENV['NSV_NG_DEV'] === 'true') {
       return <<<'ENDHTML'
-        <link rel="stylesheet" href="http://localhost:4200/styles.css">
         <script src="http://localhost:4200/polyfills.js" type="module"></script>
         <script src="http://localhost:4200/main.js" type="module"></script>
         <!-- For auto-reload -->
@@ -42,8 +41,7 @@ class NsvJs {
       }
     };
 
-    $html = '<link rel="stylesheet" href="'.$findPath('styles-').'"></head>';
-    $html .= '<script defer src="'.$findPath('polyfills-').'" type="module"></script>';
+    $html = '<script defer src="'.$findPath('polyfills-').'" type="module"></script>';
     $html .= '<script defer src="'.$findPath('main-').'" type="module"></script>';
     return $html;
   }

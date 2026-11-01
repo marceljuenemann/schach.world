@@ -16,6 +16,8 @@ class PlayerRegistration
 
   public bool $waitlist = false;
 
+  public bool $confirmed = false;
+
   #[Assert\NotBlank]
   #[Assert\Valid]
   public PlayerData $playerData;
@@ -29,11 +31,15 @@ class PlayerRegistration
 
   public ?string $created;
 
+  public ?string $unregisteredAt = null;
+
   static function fromEntity(Entity\PlayerRegistration $player, bool $includeSensitive): PlayerRegistration {
     $reg = new PlayerRegistration();
     $reg->id = $player->id;
     $reg->group = $player->group;
     $reg->waitlist = $player->waitlist;
+    $reg->confirmed = $player->confirmed;
+    $reg->unregisteredAt = $player->unregisteredAt?->format('Y-m-d H:i');
 
     $reg->playerData = $p = new PlayerData();
     $p->name = $player->name;

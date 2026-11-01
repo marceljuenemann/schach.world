@@ -67,6 +67,7 @@ $nsvMainmenu = array (
 	"Problemschach" => "kategorie/problemschach/",
 	"Jugend" => "goto/jugend",
 	"Senioren" => "goto/Senioren",
+
 ),
 
 

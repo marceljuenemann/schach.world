@@ -137,4 +137,11 @@ $option->label = 'Option 3';
 $option->value = 'option3';
 $field->options[] = $option;
 
+$field = new AdditionalFieldConfig();
+$field->type = 'text';
+$field->id = 'internalNotes';
+$field->label = 'Interne Notizen';
+$field->hidden = true;
+$config->additionalFields[] = $field;
+
 return $config;

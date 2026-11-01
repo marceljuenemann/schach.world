@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
 git pull
 php84 /usr/bin/composer update
+echo "To apply migrations, run ./bin/console doctrine:migrations:migrate --em main"
+

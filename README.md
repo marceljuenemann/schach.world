@@ -106,8 +106,6 @@ The most recent DB changes should be applied using Doctrine migrations with the 
 
 `./bin/console doctrine:migrations:migrate --em main`
 
-TODO: Add to CI.
-
 # License
 
 Copyright (C) 2006-2026  Marcel Juenemann

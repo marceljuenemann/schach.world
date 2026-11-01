@@ -1,4 +1,4 @@
-import { genericCompare } from './util'
+import { downloadJson, genericCompare } from './util'
 
 describe('genericCompare', () => {
   it('compares numbers ascending', () => {
@@ -27,5 +27,38 @@ describe('genericCompare', () => {
   it('puts nulls first when nullsFirst is true', () => {
     expect(genericCompare(null, 1, 'asc', true)).toBeLessThan(0)
     expect(genericCompare(1, null, 'asc', true)).toBeGreaterThan(0)
+  })
+})
+
+describe('downloadJson', () => {
+  let blob: Blob
+  let link: HTMLAnchorElement
+
+  beforeEach(() => {
+    spyOn(URL, 'createObjectURL').and.callFake((b: Blob | MediaSource) => {
+      blob = b as Blob
+      return 'blob:test'
+    })
+    spyOn(HTMLAnchorElement.prototype, 'click').and.callFake(function (this: HTMLAnchorElement) {
+      link = this
+    })
+  })
+
+  it('escapes non-ASCII characters', async () => {
+    const data = { name: 'Müller', city: 'Köln', emoji: '😀' }
+    downloadJson(data, 'test.json')
+
+    const content = await blob.text()
+    expect(content).toContain('"M\\u00fcller"')
+    expect(content).toContain('"K\\u00f6ln"')
+    expect(content).toContain('"\\ud83d\\ude00"')
+    expect(content).toMatch(/^[\x00-\x7F]*$/)
+    expect(JSON.parse(content)).toEqual(data)
+  })
+
+  it('triggers a download with the given filename', () => {
+    downloadJson({}, 'test.json')
+    expect(link.getAttribute('download')).toBe('test.json')
+    expect(blob.type).toContain('application/json')
   })
 })

@@ -1,8 +1,11 @@
 /**
  * Downloads the given data as a JSON file.
+ * Non-ASCII characters are written as \uXXXX escapes, so the file is pure ASCII. This is
+ * needed for Swiss Chess to not crash.
  */
 export function downloadJson(data: any, filename: string) {
-  const jsonContent = JSON.stringify(data, null, 2);
+  const jsonContent = JSON.stringify(data, null, 2)
+    .replace(/[^\x00-\x7F]/g, c => '\\u' + c.charCodeAt(0).toString(16).padStart(4, '0'));
   downloadFile(jsonContent, filename, 'application/json;charset=utf-8;');
 }
 

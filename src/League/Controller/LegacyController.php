@@ -31,6 +31,7 @@ class LegacyController extends AbstractLeagueController {
     private TeamRepository $teamRepository,
     private NsvJs $nsvJs,
     private LoggerInterface $leagueLogger,
+    private WordPressAuth $wordPressAuth,
     League $league,
     LeagueAuthState $auth,
     LegacySystem $legacySystem
@@ -78,7 +79,7 @@ class LegacyController extends AbstractLeagueController {
       // The legacy script often outputs HTML before fully processing the request.
       if (function_exists('SED_GUIclose')) {
         SED_Error('Leider ist ein Fehler aufgetreten :(');
-        if (WordPressAuth::isAdmin()) {
+        if ($this->wordPressAuth->isAdmin()) {
           echo "<pre style='text-wrap: wrap'>$e</pre>";
         }
       } else {
