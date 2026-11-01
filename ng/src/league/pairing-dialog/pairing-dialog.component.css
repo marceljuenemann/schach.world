@@ -2,3 +2,21 @@
   border-color: var(--bs-success);
   background-color: #d1e5d0;
 }
+
+/* nsv.css sets a fixed 10px padding on all columns, which overrides Bootstrap's gutters. */
+.board-row {
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+}
+
+.board-row > [class*="col"] {
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  padding-right: calc(var(--bs-gutter-x) * .5);
+}
+
+@media (min-width: 576px) {
+  /* Just wide enough for two digits. Also used as a spacer in the total row to keep it aligned. */
+  .board-number {
+    width: 1.75rem;
+  }
+}
