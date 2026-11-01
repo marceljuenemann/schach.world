@@ -471,3 +471,16 @@ Utilities for print layout.
     display: none;
   }
 }
+
+/****************************************
+          COMPONENT: pairing-dialog-modal
+
+Custom NgbModal width, set via
+`modalDialogClass` since bootstrap's own
+size tiers (lg=800px / xl=1140px) don't
+fit the pairing dialog's board grid well.
+*****************************************/
+
+.pairing-dialog-modal {
+  max-width: 600px;
+}

@@ -1,0 +1,91 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">{{ pairing.team1.name }} &ndash; {{ pairing.team2.name }}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+</div>
+<div class="modal-body">
+  <div class="alert alert-info">
+    Feedback zur neuen Ergebniseingabe gerne an <a href="mailto:webmaster@nsv-online.de">webmaster@nsv-online.de</a>
+  </div>
+
+  @if (loading) {
+    <div class="text-center py-4"><span class="spinner-border"></span></div>
+  } @else {
+    @for (row of editor.boardRows; track row.board) {
+      <div class="row board-row g-2 align-items-start mb-4 mb-sm-2">
+        <div class="col-1 board-number pt-1 text-center fw-bold">{{ row.board }}</div>
+        <div class="col-8 col-sm">
+          <select class="form-select form-select-sm w-100" [formControl]="row.player1" (change)="onPlayerChange(row, row.player1)" [class.is-manual]="row.player1.isManual">
+            @for (group of editor.rosterGroups1; track group.teamNumber) {
+              @for (p of group.players; track p.id) {
+                <option [ngValue]="p.id">{{ p.number }} {{ p.name }}</option>
+              }
+              @for (lateRegistration of group.lateRegistrations; track lateRegistration) {
+                <option [ngValue]="lateRegistration">{{ lateRegistrationName(lateRegistration) }}</option>
+              }
+            }
+            <option [ngValue]="null"></option>
+            <option [ngValue]="lateRegistrationOption">Nachmeldung...</option>
+            <!-- TODO: In the future we might hide this option for team managers -->
+          </select>
+        </div>
+        <div class="col-3 col-sm-auto">
+          <select class="form-select form-select-sm w-100" [formControl]="row.result1" (change)="editor.onResultSelected(row, row.result1)" [class.is-manual]="row.result1.isManual">
+            @for (r of resultOptions; track r) { <option [value]="r">{{ r }}</option> }
+          </select>
+        </div>
+        <div class="d-none d-sm-block col-sm-auto p-0 pt-1">:</div>
+        <div class="col-1 d-sm-none"></div>
+        <div class="col-8 col-sm order-sm-1">
+          <select class="form-select form-select-sm w-100" [formControl]="row.player2" (change)="onPlayerChange(row, row.player2)" [class.is-manual]="row.player2.isManual">
+            @for (group of editor.rosterGroups2; track group.teamNumber) {
+              @for (p of group.players; track p.id) {
+                <option [ngValue]="p.id">{{ p.number }} {{ p.name }}</option>
+              }
+              @for (lateRegistration of group.lateRegistrations; track lateRegistration) {
+                <option [ngValue]="lateRegistration">{{ lateRegistrationName(lateRegistration) }}</option>
+              }
+            }
+            <option [ngValue]="null"></option>
+            <option [ngValue]="lateRegistrationOption">Nachmeldung...</option>
+            <!-- TODO: In the future we might hide this option for team managers -->
+          </select>
+        </div>
+        <div class="col-3 col-sm-auto">
+          <select class="form-select form-select-sm w-100" [formControl]="row.result2" (change)="editor.onResultSelected(row, row.result2)" [class.is-manual]="row.result2.isManual">
+            @for (r of resultOptions; track r) { <option [value]="r">{{ r }}</option> }
+          </select>
+        </div>
+      </div>
+    }
+
+    <div class="row board-row g-2 align-items-center mt-2">
+      <div class="col fw-bold">Gesamtergebnis</div>
+      <div class="col-1 board-number"></div>
+      <div class="col-auto">
+        <select class="form-select form-select-sm w-100" [formControl]="editor.overallResult1" (change)="editor.onOverallResultChanged(editor.overallResult1)" [class.is-manual]="editor.overallResult1.isManual">
+          @for (v of editor.overallResultOptions; track v) { <option [ngValue]="v">{{ v }}</option> }
+        </select>
+      </div>
+      <div class="col-auto p-0">:</div>
+      <div class="col-auto">
+        <select class="form-select form-select-sm w-100" [formControl]="editor.overallResult2" (change)="editor.onOverallResultChanged(editor.overallResult2)" [class.is-manual]="editor.overallResult2.isManual">
+          @for (v of editor.overallResultOptions; track v) { <option [ngValue]="v">{{ v }}</option> }
+        </select>
+      </div>
+      <div class="d-none d-sm-block col"></div>
+    </div>
+
+    <div class="form-floating mt-3">
+      <input type="text" class="form-control" id="comment" maxlength="200" [formControl]="comment">
+      <label for="comment">Bemerkung (&ouml;ffentlich)</label>
+    </div>
+    <div class="form-check form-switch mt-3">
+      <input class="form-check-input" type="checkbox" role="switch" id="sendConfirmation" [formControl]="sendConfirmation">
+      <label class="form-check-label" for="sendConfirmation">Best&auml;tigung versenden</label>
+    </div>
+    @for (message of validationMessages; track $index) {
+      <div class="alert alert-danger mt-3 mb-0" role="alert">{{ message }}</div>
+    }
+  }
+</div>
+<nsv-dialog-footer [dialog]="this"></nsv-dialog-footer>

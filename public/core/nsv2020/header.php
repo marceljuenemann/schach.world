@@ -26,7 +26,7 @@ $url = nsv2020_url();
     <link rel="stylesheet" href="<?= nsv2020_url() ?>/vendor/bootstrap-5.2.3/bootstrap.min.css">
     <link rel="stylesheet" href="/wp-includes/css/dashicons.min.css">
 
-    <link rel="stylesheet" href="<?= nsv2020_url() ?>/nsv.css">
+    <link rel="stylesheet" href="<?= nsv2020_url() ?>/nsv.css?v=<?= filemtime(__DIR__ . '/nsv.css') ?>">
     <?php if (nsv2020_theme() != 'nsv'): ?>
       <link rel="stylesheet" href="<?= nsv2020_url() ?>/nsv-blue.css">
     <?php endif; ?>

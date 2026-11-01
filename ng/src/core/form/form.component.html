@@ -33,6 +33,9 @@
             @if (control.hasError('required')) {
               <div class="invalid-feedback">{{control.label}} darf nicht leer sein</div>
             }
+            @if (control.errors?.['message']; as message) {
+              <div class="invalid-feedback">{{message}}</div>
+            }
             @if (error) {
               <div class="invalid-feedback">{{error}}</div>
             }

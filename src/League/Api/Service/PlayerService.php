@@ -59,13 +59,18 @@ class PlayerService
     }
   }
 
-  public function createPlayer(Entity\Team $team, CreateOrUpdatePlayerRequest $request): Entity\Player {
+  /**
+   * Creates a player. For a late registration, the division defaults to the one of the
+   * team, but a substitute player can be registered for the division they played in.
+   */
+  public function createPlayer(Entity\Team $team, CreateOrUpdatePlayerRequest $request, ?Entity\Division $lateRegistrationDivision = null): Entity\Player {
     $player = new Entity\Player();
     $player->team = $team;
     $player->number = $this->nextBoardNumber($team);
-    $this->applyRequest($player, $request, null);
+    $this->applyRequest($player, $request, $lateRegistrationDivision);
     $this->leagueEntityManager->persist($player);
     $this->leagueEntityManager->flush();
+    $team->players->add($player);
     return $player;
   }
 
@@ -76,7 +81,7 @@ class PlayerService
     return $player;
   }
 
-  private function applyRequest(Entity\Player $player, CreateOrUpdatePlayerRequest $request, ?Entity\Division $existingLateRegistrationDivision): void {
+  private function applyRequest(Entity\Player $player, CreateOrUpdatePlayerRequest $request, ?Entity\Division $lateRegistrationDivision): void {
     $player->firstName = $request->firstName ?? '';
     $player->lastName = $request->lastName;
     $player->title = $request->title ?? '';
@@ -91,8 +96,8 @@ class PlayerService
       $player->lateRegistrationDivision = null;
     } else {
       // Only allow setting a late registration round without the team having a division if
-      // the player already had one - e.g. the team's division was removed after the fact.
-      $division = $existingLateRegistrationDivision ?? $player->team->division;
+      // the player already has one - e.g. the team's division was removed after the fact.
+      $division = $lateRegistrationDivision ?? $player->team->division;
       if (!$division) {
         throw new ConflictHttpException('Cannot set a late registration round for a team without a division.');
       }
