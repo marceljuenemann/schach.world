@@ -107,13 +107,13 @@
     if ( count( $res ) > 0 )
     {
         // Ausgabe
-        echo "<fieldset class='sed_admin_desk'><legend>Mannschaftsverwaltung</legend><table cellspacing='0' cellpadding='3'>";
+        echo "<fieldset class='sed_admin_desk'><legend>Mannschaftsverwaltung</legend>";
+        SED_EchoSpielerverwaltungHinweis ();
+        echo "<table cellspacing='0' cellpadding='3'>";
           foreach ( $res as $team )
           {
             echo "<tr><td>".SED_escape($globals['teams'][$team['id']])."&nbsp;&nbsp;</td><td>
-                    <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]&edit=0'><img src='$globals[systemicons]desk_nachmeldung.png' alt='Nachmeldungen' class='sed_admin_icon' />Nachmeldung</a>
-                    <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spieler.png' alt='Spieler' class='sed_admin_icon' />Spieler</a>
-                    <a style='text-decoration: none' href='m/$team[id]/'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Mannschaftsf&uuml;hrer' class='sed_admin_icon' />Bearbeiten</a>
+                    <a style='text-decoration: none' href='m/$team[id]/'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Bearbeiten' class='sed_admin_icon' />Bearbeiten</a>
                   </td></tr>";
           }
         echo "</table></fieldset><br /><br />";
@@ -134,7 +134,6 @@
           foreach ( $res as $team )
           {
             echo "<tr><td>".SED_escape($globals['teams'][$team['id']])."&nbsp;&nbsp;</td><td>
-                    <a style='text-decoration: none' href='?admin=stafspie-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_spieler.png' alt='Spieler' class='sed_admin_icon' />Spieler</a>
                     <a style='text-decoration: none' href='m/$team[id]/'><img src='$globals[systemicons]desk_bearbeiten.png' alt='Bearbeiten' class='sed_admin_icon' />Bearbeiten</a>
                     <a style='text-decoration: none' href='?admin=turnmalo-$admin[userid]-$admin[session]&mid=$team[id]'><img src='$globals[systemicons]desk_loeschen.png' alt='' class='sed_admin_icon' />L&ouml;schen</a>
                   </td></tr>";

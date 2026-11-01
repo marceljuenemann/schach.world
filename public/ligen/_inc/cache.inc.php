@@ -24,50 +24,12 @@ class SED_Cache {
     const KREUZTABELLE = "Kreuztabelle";
     const SPIELTAG = "Spieltag";
 
-    // Speichert etwas im Cache
-    static function cache ( $data, $typ, $runde = 0, $staffel = 0, $turnier = 0 ){ 
-        global $globals;
-
-        // Turnier selber berechnen
-        if ( !$turnier ) $turnier = $globals ["tid"];
- 
-        // In den Cache speichern
-        SED_Query ( 'REPLACE INTO cache SET turnier=?, staffel=?, runde=?, typ=?, inhalt=?', [$turnier, $staffel, $runde, $typ, serialize ( $data )]);
-    }
-
-    // Lädt etwas aus dem Cache
-    static function load ( $typ, $runde = 0, $staffel = 0 ){
-        // Aus dem Cache laden 
-        if (!isset($_GET['nocache'])) {
-          $result = SED_Query(
-              "SELECT inhalt FROM cache WHERE typ = ? AND staffel = ? AND runde = ? LIMIT 1",
-              [$typ, $staffel, $runde]
-          )->fetchOne();
-          if ($result !== false) {
-            return unserialize($result);
-          }
-        }
-        return false;
-    }
-
-    // Löscht eine Mannschaft
-    static function clearTeam($mid, $type) {
-      return self::clearAll();
-    }
-
-    // Löscht die Tabellen
-    static function clearTables($staffel = 0) {
-      return self::clearAll();
-    }
-
-    // Löscht eine Spieltag-Ansicht
-    static function clearSpieltag($staffel = 0, $runde = 0) {
-      return self::clearAll();
-    }
-
-    // Löscht alles
-    static function clearAll($staffel = 0) {
-      global $globals;
-      return SED_Query('DELETE FROM cache WHERE turnier = ?', [$globals['tid']]);
-    }
+    // Der Cache ist deaktiviert, alle Funktionen sind wirkungslos.
+    static function cache ( $data, $typ, $runde = 0, $staffel = 0, $turnier = 0 ){}
+    static function load ( $typ, $runde = 0, $staffel = 0 ){ return false; }
+    static function clearTeam($mid, $type) {}
+    static function clearTables($staffel = 0) {}
+    static function clearSpieltag($staffel = 0, $runde = 0) {}
+    static function clearAll($staffel = 0) {}
 }
+?>

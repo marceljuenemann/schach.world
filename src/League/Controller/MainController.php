@@ -107,7 +107,7 @@ class MainController extends AbstractLeagueController {
 
         $isLateRegistered = $playerEntity->lateRegistrationRound !== null;
         $hasGames = !empty($ownPlayerModelsById[$playerEntity->id]->games);
-        $canDelete = ($isLateRegistered || $currentRound === null) && !$hasGames;
+        $canDelete = ($isLateRegistered || $currentRound === null || $this->auth->isLeagueManager()) && !$hasGames;
         if ($canDelete) {
           $deletePlayerDialogParams[$playerEntity->id] = json_encode(Encoding::deep_utf8_encode([
             'teamId' => $teamId,

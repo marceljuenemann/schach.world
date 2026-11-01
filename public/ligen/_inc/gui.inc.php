@@ -24,6 +24,15 @@
 
 
     // Gibt den Rest der Seite aus
+    // Hinweis auf die Spielerverwaltung auf der Mannschaftsseite
+    function SED_EchoSpielerverwaltungHinweis ()
+    {
+        echo "<div class='alert alert-info' role='alert'>
+                <span class='dashicons dashicons-info' aria-hidden='true'></span> <b>Neu:</b> Mannschafts- und Spielerdaten k&ouml;nnen nun direkt auf der Mannschaftsseite verwaltet werden.
+                <a href='/kontakt'>Feedback senden</a>.
+              </div>";
+    }
+
     function SED_GUIclose ()
     {
         global $globals;

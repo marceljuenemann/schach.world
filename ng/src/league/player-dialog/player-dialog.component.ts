@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { catchError, map, Observable, of, switchMap } from 'rxjs';
-import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
-import { DwzPlayer, DwzService } from '../../dwz/dwz.service';
+import { FormControl } from '@angular/forms';
 import { IntControl, NsvFormGroup, SelectControl, TextControl } from '../../core/form/form-group';
 import { NsvFormComponent } from '../../core/form/form.component';
 import { NsvDialog } from '../../core/dialog/dialog';
 import { NsvDialogFooterComponent } from '../../core/dialog/footer/dialog-footer.component';
 import { CreateOrUpdatePlayerData, LeagueService } from '../league.service';
+import { PlayerOption, PlayerSelectComponent } from '../shared/player-select/player-select.component';
 
 export interface PlayerDialogParams {
   teamId: number
@@ -28,11 +26,9 @@ export interface PlayerDialogParams {
   }
 }
 
-type PlayerOption = {name: string, data?: DwzPlayer}
-
 @Component({
     selector: 'league-player-dialog',
-    imports: [ReactiveFormsModule, NgbTypeaheadModule, NsvFormComponent, NsvDialogFooterComponent],
+    imports: [PlayerSelectComponent, NsvFormComponent, NsvDialogFooterComponent],
     templateUrl: './player-dialog.component.html',
     styleUrl: './player-dialog.component.css'
 })
@@ -58,7 +54,10 @@ export class PlayerDialog extends NsvDialog<PlayerDialogParams> {
     ]),
   })
 
-  constructor(private dwz: DwzService, private leagueService: LeagueService) {
+  // Form values from the dialog params.
+  private initialValues: Record<string, any>
+
+  constructor(private leagueService: LeagueService) {
     super()
     this.selectedPlayer.valueChanges.subscribe(player => {
       if (player?.data) {
@@ -70,6 +69,8 @@ export class PlayerDialog extends NsvDialog<PlayerDialogParams> {
           dwz: player.data.dwz,
           elo: player.data.elo,
         })
+      } else if (player) {
+        this.clearChangedFields()
       }
     })
 
@@ -81,32 +82,23 @@ export class PlayerDialog extends NsvDialog<PlayerDialogParams> {
     } else if (this.params.currentRound) {
       this.registrationForm.patchValue({lateRegistrationRound: String(this.params.currentRound)})
     }
+    this.initialValues = this.form.getRawValue()
+  }
+
+  /**
+   * Clears all fields except the ones that still match the dialog params.
+   */
+  private clearChangedFields() {
+    for (const [key, control] of Object.entries(this.form.controls)) {
+      if (control.value !== this.initialValues[key]) {
+        control.setValue('')
+      }
+    }
   }
 
   get editing() {
     return !!this.params.player
   }
-
-  search = (text$: Observable<string>) => {
-    return text$.pipe(
-      switchMap((term: string) => {
-        const options = term === '' ? of([]) : this.dwz.findPlayer(term, this.params.preferredZps || undefined)
-        return options.pipe(map((players: DwzPlayer[]) => {
-          const options: PlayerOption[] = players.map(p => ({name: p.name, data: p}))
-          // Allow registering a player that isn't in the DWZ database.
-          if (term.match(/.+, .+/g)) {
-            options.push({name: term})
-          }
-          return options
-        }))
-      }),
-      catchError(err => {
-        console.error('Error generating autocomplete options:', err)
-        return of([])
-      })
-    )
-  }
-  formatter = (player: PlayerOption) => player.name
 
   override get isValid() {
     return !!this.selectedPlayer.value && this.form.valid && this.registrationForm.valid

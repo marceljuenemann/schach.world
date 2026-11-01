@@ -23,7 +23,6 @@ use Nsv\League\Core\TokenAuth;
 use Nsv\League\Entity\League;
 use Nsv\League\Entity\Player;
 use Nsv\League\Entity\Team;
-use Nsv\League\Repository\CacheRepository;
 use Symfony\Bridge\Doctrine\Attribute\MapEntity;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
@@ -37,8 +36,7 @@ class ApiController extends AbstractLeagueController {
     League                         $league,
     LeagueAuthState                $auth,
     LegacySystem                   $legacySystem,
-    private EntityManagerInterface $leagueEntityManager,
-    private CacheRepository        $cacheRepository
+    private EntityManagerInterface $leagueEntityManager
   ) {
     parent::__construct($league, $auth, $legacySystem);
   }
@@ -91,7 +89,6 @@ class ApiController extends AbstractLeagueController {
 
     $this->leagueEntityManager->persist($team);
     $this->leagueEntityManager->flush();
-    $this->cacheRepository->clearCache($this->league);
 
     return $this->apiResponse();
   }  
