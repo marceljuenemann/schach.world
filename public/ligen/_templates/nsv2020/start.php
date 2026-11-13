@@ -26,7 +26,7 @@ function nsv2020_is_utf8() {
 function nsv2020_navbar() {
   global $globals, $prefs;
   if ($prefs['template'] == 'nsv') {
-    require_once("$globals[basedir]/../mainmenu.menu.php");
+    require("$globals[basedir]/../mainmenu.menu.php");
     return $nsvMainmenu;
   }
   if ($prefs['template'] == 'bezirk1') {
