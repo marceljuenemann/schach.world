@@ -3,20 +3,16 @@
 namespace Nsv\League\Api\Service;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Nsv\Dwz\IsewaseDwzCalculator;
+use Nsv\Dwz\Calculation\DwzUnavailableReason;
 use Nsv\League\Api\Request\CreateOrUpdatePlayerRequest;
 use Nsv\League\Entity\League;
 use Nsv\League\Entity\Player;
 use Nsv\League\Entity\Team;
 use Symfony\Component\HttpKernel\Exception\ConflictHttpException;
 use Tests\League\LeagueTestCase;
-use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
-use PHPUnit\Framework\MockObject\MockObject;
 
-#[AllowMockObjectsWithoutExpectations]
 class PlayerServiceTest extends LeagueTestCase
 {
-  private MockObject $dwzService;
   private PlayerService $service;
   private League $league;
   private Team $team;
@@ -29,8 +25,6 @@ class PlayerServiceTest extends LeagueTestCase
 
   protected function setUp(): void {
     parent::setUp();
-    $this->dwzService = $this->createMock(IsewaseDwzCalculator::class);
-    $this->container->set(IsewaseDwzCalculator::class, $this->dwzService);
     $this->service = $this->container->get(PlayerService::class);
     $this->league = $this->leagueRepository->findByPathOrPrefix('nsj-2526');
     $this->team = $this->league->teamById(8412);  // SK Lehrte
@@ -56,33 +50,50 @@ class PlayerServiceTest extends LeagueTestCase
     parent::tearDown();
   }
 
+  // The DWZ calculation itself is tested in DwzCalculatorTest.
   public function testPlayer1() {
     $player = $this->team->players[2];
-    $this->dwzService->expects(self::once())
-        ->method('calculate')
-        ->willReturnCallback(function() {
-          return func_get_args();
-        });
-
-    $model = $this->service->player($this->league, $player->id);
+    $model = $this->inSeason2026(fn() => $this->service->player($this->league, $player->id));
     $this->assertMatchesSnapshot($model);
   }
 
   public function testPlayer2() {
     $player = $this->team->players[3];
-    $this->dwzService->expects(self::once())
-        ->method('calculate')
-        ->willReturnCallback(function() {
-          return func_get_args();
-        });
-
-    $model = $this->service->player($this->league, $player->id);
+    $model = $this->inSeason2026(fn() => $this->service->player($this->league, $player->id));
     $this->assertMatchesSnapshot($model);
+  }
+
+  public function testPlayer_noDwzCalculationBefore2026() {
+    $player = $this->team->players[2];
+    $model = $this->service->player($this->league, $player->id);
+    $this->assertNotEmpty($model->games);
+    $this->assertFalse(isset($model->dwzCalculation));
+  }
+
+  public function testPlayer_dwzCalculationUnavailableWithoutGames() {
+    $player = $this->team->players[0];
+    $model = $this->inSeason2026(fn() => $this->service->player($this->league, $player->id));
+    $this->assertFalse(isset($model->games));
+    $this->assertNull($model->dwzCalculation->newDwz);
+    $this->assertSame(DwzUnavailableReason::NoRatedGames, $model->dwzCalculation->unavailableReason);
+  }
+
+  /**
+   * The test database only contains seasons up to 2025/26, so pretend the league is from 2026/27.
+   * The change is never flushed and gets reverted, as tearDown() flushes the entity manager.
+   */
+  private function inSeason2026(callable $callback): mixed {
+    $year = $this->league->year;
+    $this->league->year = 2026;
+    try {
+      return $callback();
+    } finally {
+      $this->league->year = $year;
+    }
   }
 
   public function testPlayer3_withoutGamesAndRating() {
     $player = $this->team->players[0];
-    $this->dwzService->expects(self::never())->method('calculate');
     $model = $this->service->player($this->league, $player->id);
     $this->assertMatchesSnapshot($model);
   }

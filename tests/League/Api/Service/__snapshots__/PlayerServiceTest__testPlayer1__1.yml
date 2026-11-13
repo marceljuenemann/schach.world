@@ -24,7 +24,12 @@ games:
     - { round: 2, board: 1, home: false, white: true, result: '1', opponentResult: '0', opponentTeam: { id: 8414, name: 'SV Gifhorn', zps: '70231', uri: /ligen/nsj-2526/m/8414/, apiUri: /ligen/nsj-2526/api/teams/8414/ }, opponentPlayer: { id: 539832, name: 'Player 44f2, 745578d', lastName: 'Player 44f2', firstName: 745578d, title: '', number: 101, zps: 70231-789, dwz: 1897, elo: 1918, yearOfBirth: null, gender: m, isGuest: false, lateRegistrationRound: null, uri: /ligen/nsj-2526/s/539832/, dsbUri: 'https://www.schachbund.de/dwz-spieler.html?search=Player+44f2%2C745578d' }, uri: /ligen/nsj-2526/jugendliga-niedersachsen/2/ }
     - { round: 3, board: 2, home: true, white: true, result: '1', opponentResult: '0', opponentTeam: { id: 8409, name: 'Peiner SV', zps: '70224', uri: /ligen/nsj-2526/m/8409/, apiUri: /ligen/nsj-2526/api/teams/8409/ }, opponentPlayer: { id: 539787, name: 'Player 4eca, be8ac04', lastName: 'Player 4eca', firstName: be8ac04, title: '', number: 102, zps: 70224-1412, dwz: 1573, elo: null, yearOfBirth: null, gender: m, isGuest: false, lateRegistrationRound: null, uri: /ligen/nsj-2526/s/539787/, dsbUri: 'https://www.schachbund.de/dwz-spieler.html?search=Player+4eca%2Cbe8ac04' }, uri: /ligen/nsj-2526/jugendliga-niedersachsen/3/ }
 dwzCalculation:
-    - 2008
-    - [1796, 1897, 1573]
-    - 3.0
-    - 2002
+    games: 3
+    points: 3.0
+    oldDwz: 2008
+    opponentAverage: 1755
+    expectedScore: 2.3638375384369
+    developmentFactor: 32.0
+    performance: null
+    newDwz: 2028
+    unavailableReason: null

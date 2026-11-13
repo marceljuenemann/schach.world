@@ -54,13 +54,60 @@
   </table>
 {% endif %}
 
-{% if player.dwzCalculation|default(false) %}
+{% set dwz = player.dwzCalculation|default(null) %}
+{% if dwz %}
   <h4 class="mt-5">Inoffizielle DWZ-Auswertung</h4>
-  <dl class="row mt-3">
-    {% for label, value in player.dwzCalculation %}
-      {{ nsv.dd(label) }} {{value}} {{ nsv.end_dd }}
-    {% endfor %}
-  </dl>
-  <span style='font-size: smaller'>Berechnet durch <a href='http://isewase.de'>isewase.de</a> von Andreas Klein und Stefan Flassig</span>
+  {% if dwz.newDwz is null %}
+    <div class="alert alert-info mt-3" role="alert">
+      {% if dwz.unavailableReason.value == 'no-rated-games' %}
+        Es wurden noch keine Partien gegen Gegner mit DWZ gespielt.
+      {% elseif dwz.unavailableReason.value == 'too-few-games-for-first-rating' %}
+        F&uuml;r eine erste DWZ sind mindestens 5 Partien gegen Gegner mit DWZ n&ouml;tig
+        (bisher {{ dwz.games }}).
+      {% elseif dwz.unavailableReason.value == 'no-points-for-first-rating' %}
+        F&uuml;r eine erste DWZ muss gegen Gegner mit DWZ mindestens ein halber Punkt erzielt werden.
+      {% endif %}
+    </div>
+  {% else %}
+    <div class="alert alert-secondary mt-3" role="alert">
+      Deutliche Abweichungen von der offiziellen Auswertung sind m&ouml;glich,
+      z.B. durch andere Turniere oder Gegner ohne DWZ. 
+      Spieler:innen mit wenigen Auswertungen sollten gr&ouml;&szlig;ere &Auml;nderungen erwarten, da der DWZ-Index nicht ber&uuml;cksichtigt wird.
+    </div>
+
+    {% set fullPoints = dwz.points|round(0, 'floor') %}
+    {% set rows = dwz.oldDwz ? [['Alte DWZ', dwz.oldDwz]] : [] %}
+    {% set rows = rows|merge([
+      ['Partien', dwz.games],
+      ['Gegnerschnitt', dwz.opponentAverage],
+      ['Punkte', (fullPoints > 0 or dwz.points == 0 ? fullPoints : '') ~ (dwz.points > fullPoints ? '&frac12;' : '')],
+    ]) %}
+    {% if dwz.oldDwz %}
+      {% set rows = rows|merge([
+        ['Erwartung', dwz.expectedScore|number_format(3, ',', '.')],
+        ['Leistung', dwz.performance ?? (dwz.points == 0 ? '&ndash;' : '<span class="text-muted">(ab 5 Partien)</span>')],
+      ]) %}
+    {% endif %}
+    {# A plain table, so that the browser sizes the label column. #}
+    <table class="mt-3 mb-3">
+      {% for row in rows %}
+        <tr>
+          <th scope="row" class="pe-5 py-1 text-nowrap">{{ row[0] }}:</th>
+          <td class="py-1">{{ row[1]|raw }}</td>
+        </tr>
+      {% endfor %}
+      <tr class="fw-bold">
+        <th scope="row" class="pe-5 py-1 text-nowrap">Neue DWZ:</th>
+        <td class="py-1">
+          {{ dwz.newDwz }}
+          {% if dwz.difference() is not null %}
+            <span class="{{ dwz.difference() > 0 ? 'text-success' : (dwz.difference() < 0 ? 'text-danger' : 'text-muted') }}">
+              ({{ (dwz.difference() > 0 ? '+' : (dwz.difference() < 0 ? '&minus;' : '&plusmn;'))|raw }}{{ dwz.difference()|abs }})
+            </span>
+          {% endif %}
+        </td>
+      </tr>
+    </table>
+  {% endif %}
 {% endif %}
 {% endblock %}
