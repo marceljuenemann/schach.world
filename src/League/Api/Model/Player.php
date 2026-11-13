@@ -3,6 +3,7 @@
 namespace Nsv\League\Api\Model;
 
 use Nsv\Dwz\DsbDatabase;
+use Nsv\Dwz\Calculation\DwzCalculation;
 use Nsv\League\Core\Encoding;
 use Nsv\League\Core\Result;
 use Nsv\League\Entity;
@@ -29,7 +30,8 @@ class Player
   public ?array $games;
   public ?int $gameCount;
   public ?float $points;
-  public array|null $dwzCalculation;
+  /** Inofficial DWZ calculation, only for seasons with the current DWZ rules. */
+  public DwzCalculation|null $dwzCalculation;
 
   public function addGame(Entity\Game $game) {
     if (!isset($this->games)) $this->games = array();

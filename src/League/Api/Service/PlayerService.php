@@ -3,7 +3,8 @@
 namespace Nsv\League\Api\Service;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Nsv\Dwz\IsewaseDwzCalculator;
+use Nsv\Dwz\Calculation\DwzCalculation;
+use Nsv\Dwz\Calculation\DwzCalculator;
 use Nsv\League\Api\Model\Player;
 use Nsv\League\Api\Model\Team;
 use Nsv\League\Api\Request\CreateOrUpdatePlayerRequest;
@@ -16,14 +17,17 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class PlayerService
 {
+  /** The first season in which the current DWZ rules (Wertungsordnung 2026) apply. */
+  const FIRST_SEASON_WITH_DWZ_CALCULATION = 2026;
+
   function __construct(
     private PlayerRepository $playerRepository,
     private GameRepository $gameRepository,
-    private IsewaseDwzCalculator $dwzCalculator,
+    private DwzCalculator $dwzCalculator,
     private EntityManagerInterface $leagueEntityManager
   ) {}
 
-  // TODO: cache, especially for the DWZ calculation.
+  // TODO: cache.
   public function player(Entity\League $league, int $playerId): Player {
     $player = $this->playerRepository->find($playerId);
     if ($player->team->league != $league) {
@@ -35,28 +39,27 @@ class PlayerService
     foreach ($this->gameRepository->findByPlayer($player) as $game) {
       $result->addGame($game);
     }
-    if (isset($result->games)) {
-      $result->dwzCalculation = $this->dwzCalc($result, $player->yearOfBirth());
+    // Earlier seasons were evaluated under the old rules and use ratings from before the DSB's
+    // 2026 rescaling, so the calculation would be misleading there.
+    if ($league->year >= self::FIRST_SEASON_WITH_DWZ_CALCULATION) {
+      // Seasons span two years, and the age is determined by the year in which the tournament ends.
+      $result->dwzCalculation = $this->dwzCalc($result, $player->yearOfBirth(), $league->year + 1);
     }
     return $result;
   }
 
-  private function dwzCalc(Player $player, int|null $yearOfBirth): array|null {
+  private function dwzCalc(Player $player, int|null $yearOfBirth, int $evaluationYear): DwzCalculation {
     $opponentDwz = array();
     $points = 0.0;
-    foreach ($player->games as $game) {
+    foreach ($player->games ?? [] as $game) {
       // Only count actually played games against opponents with DWZ.
       if (Result::wasPlayed($game->result) && $game->opponentPlayer->dwz) {
         $opponentDwz[] = $game->opponentPlayer->dwz;
         $points += Result::score($game->result);
       }
     }
-    try {
-      return $this->dwzCalculator->calculate($player->dwz, $opponentDwz, $points, $yearOfBirth);
-    } catch (\Exception $e) {
-      // Swallow timeouts and server errors.
-      return null;
-    }
+    return $this->dwzCalculator->calculate($player->dwz, $opponentDwz, $points, $yearOfBirth,
+        evaluationYear: $evaluationYear);
   }
 
   public function createPlayer(Entity\Team $team, CreateOrUpdatePlayerRequest $request): Entity\Player {
