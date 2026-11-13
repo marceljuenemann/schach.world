@@ -20,7 +20,8 @@ class MatchDayPdfTest extends LeagueTestCase {
 
   public static function dataProvider(): \Generator {
     yield 'Common Case: 10 teams with 8 players' => ['nsv-2425', 'landesliga-sued', 5];
-    yield 'Ranking in sidebar' => ['sjbh-1718', 'bmm-u12', 5];
+    yield '11 teams with 8 players' => ['bezirk1-2425', 'bezirksliga', 5];
+    yield 'Ranking in sidebar' =>['sjbh-1718', 'bmm-u12', 5];
     yield 'Multiple Pages' => ['sjbh-2425', 'bmm-u12', 5];
     yield 'Many comments' => ['pokal-1516', 'pokal-mm', 1];
     yield 'Long player name' => ['fbl-1314', '2-frauen-bl-sued', 6];
