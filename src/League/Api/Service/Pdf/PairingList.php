@@ -20,6 +20,7 @@ class PairingList implements Element {
   const WIDTH_PLAYER_NUMBER_SHORT = 7;
   const WIDTH_PLAYER_RATING = 11;
   const WIDTH_RESULT = 13;
+  const HEADER_HEIGHT = 1.1;
 
   private array $remarkSymbols;
   private array $remarks = [];
@@ -37,7 +38,7 @@ class PairingList implements Element {
   public function render(Pdf $pdf) {
     foreach ($this->matchDay->pairings as $pairing) {
       // Don't split a pairing across pages.
-      if ($this->lineCount($pairing) * $pdf->lineHeight > $pdf->availableHeight()) {
+      if ($this->height($pairing) * $pdf->lineHeight > $pdf->availableHeight()) {
         $pdf->AddPage();
       }
       $this->renderHeader($pdf, $pairing);
@@ -64,17 +65,18 @@ class PairingList implements Element {
   }
 
   /**
-   * Returns the number of lines needed to render the given pairing (excluding
-   * the spacing after it). Needs to be kept in sync with render().
+   * Returns the height needed to render the given pairing relative to the line
+   * height (excluding the spacing after it). Needs to be kept in sync with render().
    */
-  private function lineCount(Pairing $pairing): int {
+  private function height(Pairing $pairing): float {
     if ($pairing->wasBye()) {
-      return 2;
+      $lines = 1;
     } else if (isset($pairing->games)) {
-      return 1 + count($pairing->games);
+      $lines = count($pairing->games);
     } else {
-      return 1 + ($pairing->host ? 1 : 0) + ($pairing->wasMoved ? 1 : 0);
+      $lines = ($pairing->host ? 1 : 0) + ($pairing->wasMoved ? 1 : 0);
     }
+    return self::HEADER_HEIGHT + $lines;
   }
 
   private function renderHeader(Pdf $pdf, Pairing $pairing) {
@@ -106,7 +108,7 @@ class PairingList implements Element {
     $cell->link = $pairing->team2->uri;
     $row->addCell($cell);
 
-    $row->setCellHeight(1.1);
+    $row->setCellHeight(self::HEADER_HEIGHT);
     $row->setFill(true);
     $row->setStyle('B');
     $row->layout($pdf);

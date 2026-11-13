@@ -24,6 +24,7 @@ class MatchDayPdfTest extends LeagueTestCase {
     yield 'Ranking in sidebar' =>['sjbh-1718', 'bmm-u12', 5];
     yield 'Multiple Pages' => ['sjbh-2425', 'bmm-u12', 5];
     yield 'Many comments' => ['pokal-1516', 'pokal-mm', 1];
+    yield 'Pairing at page break' => ['pokal-1415', 'pokal-mm', 1];
     yield 'Long player name' => ['fbl-1314', '2-frauen-bl-sued', 6];
     yield 'Pairing moved' => ['sjbh-2526', 'bmm-u20', 3];
   }
