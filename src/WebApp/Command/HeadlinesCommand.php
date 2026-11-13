@@ -2,6 +2,7 @@
 
 namespace Nsv\WebApp\Command;
 
+use Nsv\Util\Feed\ArticleFetcher;
 use Nsv\Util\Feed\RegexFetcher;
 use Nsv\Util\Feed\RssFetcher;
 use Symfony\Component\Console\Attribute\AsCommand;
@@ -13,11 +14,15 @@ use Symfony\Component\Console\Output\OutputInterface;
 #[AsCommand(name: 'nsv:headlines')]
 class HeadlinesCommand extends Command
 {
+  /** @var array<string, ArticleFetcher> */
   private array $providers;
 
-  function __construct(private string $projectDir) {
+  /**
+   * @param ?array<string, ArticleFetcher> $providers overrides the default providers (used in tests)
+   */
+  function __construct(private string $projectDir, ?array $providers = null) {
     parent::__construct();
-    $this->providers = [
+    $this->providers = $providers ?? [
       'DSB' => new RssFetcher('https://www.schachbund.de/share/dsb-feed.xml'),
       'NSJ' => new RssFetcher('http://www.nsj-online.de/wordpress/feed/'),
       '(1)' => new RssFetcher('https://schachbezirk-hannover.de/feed/'),

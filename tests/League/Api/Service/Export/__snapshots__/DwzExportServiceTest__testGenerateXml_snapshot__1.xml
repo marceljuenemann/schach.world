@@ -1,0 +1,2163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DSB_DWZ_TournamentReport xmlns="http://www.schachbund.de/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.schachbund.de/XMLSchema https://www.schachbund.de/files/wertungsportal/XMLSchema/2026/DSB_DWZ_Tounament_2_5.xsd" version="2.5">
+  <header>
+    <creationDate>CREATION_DATE</creationDate>
+    <sender>Norddeutscher Schachverband</sender>
+    <system>schach.world</system>
+    <fileUUID>FILE_UUID</fileUUID>
+  </header>
+  <tournament>
+    <tournamentUUID>2b2577f6-0a22-5420-8fe3-4cf1188258c7</tournamentUUID>
+    <label>Landes- und Verbandsligen 2025/26</label>
+    <tournamentType>TR</tournamentType>
+    <timecontrol>90min für 40 Züge + 30min für Rest der Partie, 30s Aufschlag</timecontrol>
+    <rounds>3</rounds>
+    <startDate>2025-09-28</startDate>
+    <endDate>2025-12-07</endDate>
+    <location>Norddeutscher Schachverband</location>
+    <url>https://nsv-online.de/ligen/nsv-2526/</url>
+    <ageClass>U20</ageClass>
+  </tournament>
+  <players>
+    <player>
+      <tournamentPlayerNumber>1</tournamentPlayerNumber>
+      <surname>Player 5c2d</surname>
+      <forename>a1df188</forename>
+      <dobYear>1976</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>1546</numberClubMember>
+      <club>SG Osnabrück</club>
+      <fideRating>2249</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>2</tournamentPlayerNumber>
+      <surname>Player 1437</surname>
+      <forename>03644ef</forename>
+      <dobYear>1984</dobYear>
+      <vkz>70526</vkz>
+      <numberClubMember>119</numberClubMember>
+      <club>SG Ammerland</club>
+      <fideRating>1884</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>3</tournamentPlayerNumber>
+      <surname>Player f71a</surname>
+      <forename>2f0c723</forename>
+      <dobYear>1978</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>838</numberClubMember>
+      <club>SG Osnabrück</club>
+      <fideRating>2060</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>4</tournamentPlayerNumber>
+      <surname>Player 431b</surname>
+      <forename>a6d40cd</forename>
+      <dobYear>1981</dobYear>
+      <vkz>70526</vkz>
+      <numberClubMember>777</numberClubMember>
+      <club>SG Ammerland</club>
+      <fideRating>1966</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>5</tournamentPlayerNumber>
+      <surname>Player c6f6</surname>
+      <forename>4d748fb</forename>
+      <dobYear>1989</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>851</numberClubMember>
+      <club>SG Osnabrück</club>
+      <fideRating>1993</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>6</tournamentPlayerNumber>
+      <surname>Player 750b</surname>
+      <forename>ce8b153</forename>
+      <dobYear>1974</dobYear>
+      <vkz>70526</vkz>
+      <numberClubMember>1549</numberClubMember>
+      <club>SG Ammerland</club>
+      <fideRating>1973</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>7</tournamentPlayerNumber>
+      <surname>Player 14f3</surname>
+      <forename>33c1bd7</forename>
+      <dobYear>1989</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>823</numberClubMember>
+      <club>SG Osnabrück</club>
+      <fideRating>2188</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>8</tournamentPlayerNumber>
+      <surname>Player 20dc</surname>
+      <forename>4dc04bd</forename>
+      <dobYear>1974</dobYear>
+      <vkz>70526</vkz>
+      <numberClubMember>1199</numberClubMember>
+      <club>SG Ammerland</club>
+      <fideRating>1905</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>9</tournamentPlayerNumber>
+      <surname>Player 07b1</surname>
+      <forename>2848553</forename>
+      <dobYear>1971</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>275</numberClubMember>
+      <club>SG Osnabrück</club>
+      <fideRating>1944</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>10</tournamentPlayerNumber>
+      <surname>Player 1d57</surname>
+      <forename>2044a2e</forename>
+      <dobYear>1967</dobYear>
+      <vkz>70526</vkz>
+      <numberClubMember>434</numberClubMember>
+      <club>SG Ammerland</club>
+      <fideRating>1961</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>11</tournamentPlayerNumber>
+      <surname>Player f4aa</surname>
+      <forename>34e5731</forename>
+      <dobYear>1977</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>873</numberClubMember>
+      <club>SG Osnabrück</club>
+      <fideRating>2017</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>12</tournamentPlayerNumber>
+      <surname>Player 458b</surname>
+      <forename>775e806</forename>
+      <dobYear>1965</dobYear>
+      <vkz>70526</vkz>
+      <numberClubMember>913</numberClubMember>
+      <club>SG Ammerland</club>
+      <fideRating>2116</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>13</tournamentPlayerNumber>
+      <surname>Player ccb8</surname>
+      <forename>3461271</forename>
+      <dobYear>1991</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>1213</numberClubMember>
+      <club>SG Osnabrück</club>
+      <fideRating>1941</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>14</tournamentPlayerNumber>
+      <surname>Player e4ac</surname>
+      <forename>0b0f3b8</forename>
+      <dobYear>1957</dobYear>
+      <vkz>70526</vkz>
+      <numberClubMember>1399</numberClubMember>
+      <club>SG Ammerland</club>
+      <fideRating>1993</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>15</tournamentPlayerNumber>
+      <surname>Player c567</surname>
+      <forename>e5225e9</forename>
+      <dobYear>1984</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>266</numberClubMember>
+      <club>SG Osnabrück</club>
+      <fideRating>1851</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>16</tournamentPlayerNumber>
+      <surname>Player a122</surname>
+      <forename>f859851</forename>
+      <dobYear>1954</dobYear>
+      <vkz>70526</vkz>
+      <numberClubMember>1482</numberClubMember>
+      <club>SG Ammerland</club>
+      <fideRating>1766</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>17</tournamentPlayerNumber>
+      <surname>Player b167</surname>
+      <forename>27e7397</forename>
+      <dobYear>1984</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>1171</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>2225</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>18</tournamentPlayerNumber>
+      <surname>Player 5885</surname>
+      <forename>278dda9</forename>
+      <dobYear>1995</dobYear>
+      <vkz>B0016</vkz>
+      <numberClubMember>1148</numberClubMember>
+      <club>SK Bremen-Nord</club>
+      <fideRating>2097</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>19</tournamentPlayerNumber>
+      <surname>Player bab5</surname>
+      <forename>f25edfa</forename>
+      <dobYear>1950</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>1492</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>2040</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>20</tournamentPlayerNumber>
+      <surname>Player 869a</surname>
+      <forename>51c653a</forename>
+      <dobYear>1967</dobYear>
+      <vkz>B0016</vkz>
+      <numberClubMember>1533</numberClubMember>
+      <club>SK Bremen-Nord</club>
+      <fideRating>2197</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>21</tournamentPlayerNumber>
+      <surname>Player 0e41</surname>
+      <forename>4e39ca3</forename>
+      <dobYear>1965</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>1079</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>2007</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>22</tournamentPlayerNumber>
+      <surname>Player cafd</surname>
+      <forename>63cb708</forename>
+      <dobYear>1991</dobYear>
+      <vkz>B0016</vkz>
+      <numberClubMember>548</numberClubMember>
+      <club>SK Bremen-Nord</club>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>23</tournamentPlayerNumber>
+      <surname>Player 58fc</surname>
+      <forename>48ae76a</forename>
+      <dobYear>1987</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>1289</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>1971</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>24</tournamentPlayerNumber>
+      <surname>Player 25c7</surname>
+      <forename>beb6e0d</forename>
+      <dobYear>1972</dobYear>
+      <vkz>B0016</vkz>
+      <numberClubMember>335</numberClubMember>
+      <club>SK Bremen-Nord</club>
+      <fideRating>2191</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>25</tournamentPlayerNumber>
+      <surname>Player e3aa</surname>
+      <forename>29975f8</forename>
+      <dobYear>2007</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>334</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>2017</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>26</tournamentPlayerNumber>
+      <surname>Player f14c</surname>
+      <forename>d130aed</forename>
+      <dobYear>1991</dobYear>
+      <vkz>B0016</vkz>
+      <numberClubMember>924</numberClubMember>
+      <club>SK Bremen-Nord</club>
+      <fideRating>2068</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>27</tournamentPlayerNumber>
+      <surname>Player 7389</surname>
+      <forename>5261df2</forename>
+      <dobYear>1958</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>682</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>1989</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>28</tournamentPlayerNumber>
+      <surname>Player a86f</surname>
+      <forename>20d26ee</forename>
+      <dobYear>1961</dobYear>
+      <vkz>B0016</vkz>
+      <numberClubMember>1493</numberClubMember>
+      <club>SK Bremen-Nord</club>
+      <fideRating>2115</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>29</tournamentPlayerNumber>
+      <surname>Player 1cc5</surname>
+      <forename>62e7a6f</forename>
+      <dobYear>1982</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>957</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>1939</fideRating>
+      <sex>w</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>30</tournamentPlayerNumber>
+      <surname>Player 80d0</surname>
+      <forename>999ef86</forename>
+      <dobYear>1959</dobYear>
+      <vkz>B0016</vkz>
+      <numberClubMember>319</numberClubMember>
+      <club>SK Bremen-Nord</club>
+      <fideRating>1819</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>31</tournamentPlayerNumber>
+      <surname>Player 06e1</surname>
+      <forename>010f5c9</forename>
+      <dobYear>1999</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>1037</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>1998</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>32</tournamentPlayerNumber>
+      <surname>Player aa41</surname>
+      <forename>4baa16c</forename>
+      <dobYear>1986</dobYear>
+      <vkz>B0016</vkz>
+      <numberClubMember>791</numberClubMember>
+      <club>SK Bremen-Nord</club>
+      <fideRating>1603</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>33</tournamentPlayerNumber>
+      <surname>Player 626a</surname>
+      <forename>11b797d</forename>
+      <dobYear>1957</dobYear>
+      <vkz>70422</vkz>
+      <numberClubMember>1462</numberClubMember>
+      <club>Stader SV</club>
+      <fideRating>2088</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>34</tournamentPlayerNumber>
+      <surname>Player a8fe</surname>
+      <forename>37004d3</forename>
+      <dobYear>1995</dobYear>
+      <vkz>B0038</vkz>
+      <numberClubMember>872</numberClubMember>
+      <club>Sfr Bremer Osten</club>
+      <fideRating>2051</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>35</tournamentPlayerNumber>
+      <surname>Player 7a97</surname>
+      <forename>4e818de</forename>
+      <dobYear>1956</dobYear>
+      <vkz>70422</vkz>
+      <numberClubMember>1201</numberClubMember>
+      <club>Stader SV</club>
+      <fideRating>2047</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>36</tournamentPlayerNumber>
+      <surname>Player b665</surname>
+      <forename>bf29243</forename>
+      <dobYear>1970</dobYear>
+      <vkz>B0038</vkz>
+      <numberClubMember>640</numberClubMember>
+      <club>Sfr Bremer Osten</club>
+      <fideRating>2146</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>37</tournamentPlayerNumber>
+      <surname>Player 7bcb</surname>
+      <forename>dd204a3</forename>
+      <dobYear>1994</dobYear>
+      <vkz>70422</vkz>
+      <numberClubMember>1218</numberClubMember>
+      <club>Stader SV</club>
+      <fideRating>1968</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>38</tournamentPlayerNumber>
+      <surname>Player 7ec8</surname>
+      <forename>88764bd</forename>
+      <dobYear>1980</dobYear>
+      <vkz>B0038</vkz>
+      <numberClubMember>1436</numberClubMember>
+      <club>Sfr Bremer Osten</club>
+      <fideRating>2155</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>39</tournamentPlayerNumber>
+      <surname>Player 047d</surname>
+      <forename>e7707f4</forename>
+      <dobYear>1957</dobYear>
+      <vkz>70422</vkz>
+      <numberClubMember>626</numberClubMember>
+      <club>Stader SV</club>
+      <fideRating>2031</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>40</tournamentPlayerNumber>
+      <surname>Player 4a2d</surname>
+      <forename>cb5175f</forename>
+      <dobYear>1950</dobYear>
+      <vkz>B0038</vkz>
+      <numberClubMember>1420</numberClubMember>
+      <club>Sfr Bremer Osten</club>
+      <fideRating>2024</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>41</tournamentPlayerNumber>
+      <surname>Player a748</surname>
+      <forename>2d55311</forename>
+      <dobYear>2003</dobYear>
+      <vkz>70422</vkz>
+      <numberClubMember>172</numberClubMember>
+      <club>Stader SV</club>
+      <fideRating>2082</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>42</tournamentPlayerNumber>
+      <surname>Player 49e0</surname>
+      <forename>767c622</forename>
+      <dobYear>2005</dobYear>
+      <vkz>B0038</vkz>
+      <numberClubMember>1346</numberClubMember>
+      <club>Sfr Bremer Osten</club>
+      <fideRating>2132</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>43</tournamentPlayerNumber>
+      <surname>Player d382</surname>
+      <forename>bc55282</forename>
+      <dobYear>2003</dobYear>
+      <vkz>70422</vkz>
+      <numberClubMember>661</numberClubMember>
+      <club>Stader SV</club>
+      <fideRating>2075</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>44</tournamentPlayerNumber>
+      <surname>Player 4db8</surname>
+      <forename>05c0ac7</forename>
+      <dobYear>1972</dobYear>
+      <vkz>B0038</vkz>
+      <numberClubMember>1291</numberClubMember>
+      <club>Sfr Bremer Osten</club>
+      <fideRating>1994</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>45</tournamentPlayerNumber>
+      <surname>Player e163</surname>
+      <forename>9fda1fb</forename>
+      <dobYear>1969</dobYear>
+      <vkz>70422</vkz>
+      <numberClubMember>1357</numberClubMember>
+      <club>Stader SV</club>
+      <fideRating>1885</fideRating>
+      <sex>w</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>46</tournamentPlayerNumber>
+      <surname>Player 6c7f</surname>
+      <forename>38f5a7e</forename>
+      <dobYear>1982</dobYear>
+      <vkz>B0038</vkz>
+      <numberClubMember>227</numberClubMember>
+      <club>Sfr Bremer Osten</club>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>47</tournamentPlayerNumber>
+      <surname>Player 9efc</surname>
+      <forename>630e200</forename>
+      <dobYear>2002</dobYear>
+      <vkz>70422</vkz>
+      <numberClubMember>1104</numberClubMember>
+      <club>Stader SV</club>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>48</tournamentPlayerNumber>
+      <surname>Player 87ac</surname>
+      <forename>ee5879d</forename>
+      <dobYear>1989</dobYear>
+      <vkz>B0038</vkz>
+      <numberClubMember>1375</numberClubMember>
+      <club>Sfr Bremer Osten</club>
+      <fideRating>1897</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>49</tournamentPlayerNumber>
+      <surname>Player 0d88</surname>
+      <forename>299285a</forename>
+      <dobYear>1987</dobYear>
+      <vkz>70476</vkz>
+      <numberClubMember>1541</numberClubMember>
+      <club>SC Turm Lüneburg</club>
+      <fideRating>2179</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>50</tournamentPlayerNumber>
+      <surname>Player 44a9</surname>
+      <forename>d094e01</forename>
+      <dobYear>1998</dobYear>
+      <vkz>70604</vkz>
+      <numberClubMember>211</numberClubMember>
+      <club>Hagener SV</club>
+      <fideRating>2216</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>51</tournamentPlayerNumber>
+      <surname>Player ca31</surname>
+      <forename>80151bb</forename>
+      <dobYear>1952</dobYear>
+      <vkz>70476</vkz>
+      <numberClubMember>897</numberClubMember>
+      <club>SC Turm Lüneburg</club>
+      <fideRating>1936</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>52</tournamentPlayerNumber>
+      <surname>Player 27a8</surname>
+      <forename>2586afe</forename>
+      <dobYear>1952</dobYear>
+      <vkz>70604</vkz>
+      <numberClubMember>1012</numberClubMember>
+      <club>Hagener SV</club>
+      <fideRating>2199</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>53</tournamentPlayerNumber>
+      <surname>Player 3180</surname>
+      <forename>d1aaa0a</forename>
+      <dobYear>1962</dobYear>
+      <vkz>70476</vkz>
+      <numberClubMember>739</numberClubMember>
+      <club>SC Turm Lüneburg</club>
+      <fideRating>1946</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>54</tournamentPlayerNumber>
+      <surname>Player 3b12</surname>
+      <forename>b9bbdd7</forename>
+      <dobYear>1963</dobYear>
+      <vkz>70604</vkz>
+      <numberClubMember>336</numberClubMember>
+      <club>Hagener SV</club>
+      <fideRating>2026</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>55</tournamentPlayerNumber>
+      <surname>Player 6509</surname>
+      <forename>8d110cd</forename>
+      <dobYear>2009</dobYear>
+      <vkz>70476</vkz>
+      <numberClubMember>372</numberClubMember>
+      <club>SC Turm Lüneburg</club>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>56</tournamentPlayerNumber>
+      <surname>Player c042</surname>
+      <forename>0ca7306</forename>
+      <dobYear>1994</dobYear>
+      <vkz>70604</vkz>
+      <numberClubMember>463</numberClubMember>
+      <club>Hagener SV</club>
+      <fideRating>1959</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>57</tournamentPlayerNumber>
+      <surname>Player ba50</surname>
+      <forename>c0d55dd</forename>
+      <dobYear>1971</dobYear>
+      <vkz>70476</vkz>
+      <numberClubMember>1175</numberClubMember>
+      <club>SC Turm Lüneburg</club>
+      <fideRating>1937</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>58</tournamentPlayerNumber>
+      <surname>Player fb29</surname>
+      <forename>8954e30</forename>
+      <dobYear>1953</dobYear>
+      <vkz>70604</vkz>
+      <numberClubMember>1458</numberClubMember>
+      <club>Hagener SV</club>
+      <fideRating>1852</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>59</tournamentPlayerNumber>
+      <surname>Player 1d61</surname>
+      <forename>72aada2</forename>
+      <dobYear>2009</dobYear>
+      <vkz>70476</vkz>
+      <numberClubMember>551</numberClubMember>
+      <club>SC Turm Lüneburg</club>
+      <fideRating>2035</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>60</tournamentPlayerNumber>
+      <surname>Player 0d2e</surname>
+      <forename>984c77a</forename>
+      <dobYear>1981</dobYear>
+      <vkz>70604</vkz>
+      <numberClubMember>1519</numberClubMember>
+      <club>Hagener SV</club>
+      <fideRating>1911</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>61</tournamentPlayerNumber>
+      <surname>Player 1a34</surname>
+      <forename>83df16d</forename>
+      <dobYear>1969</dobYear>
+      <vkz>70476</vkz>
+      <numberClubMember>400</numberClubMember>
+      <club>SC Turm Lüneburg</club>
+      <fideRating>1929</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>62</tournamentPlayerNumber>
+      <surname>Player ee1e</surname>
+      <forename>8846fee</forename>
+      <dobYear>1954</dobYear>
+      <vkz>70604</vkz>
+      <numberClubMember>713</numberClubMember>
+      <club>Hagener SV</club>
+      <fideRating>2006</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>63</tournamentPlayerNumber>
+      <surname>Player c605</surname>
+      <forename>95d74f2</forename>
+      <dobYear>1955</dobYear>
+      <vkz>70476</vkz>
+      <numberClubMember>446</numberClubMember>
+      <club>SC Turm Lüneburg</club>
+      <fideRating>1921</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>64</tournamentPlayerNumber>
+      <surname>Player 9ec7</surname>
+      <forename>df86173</forename>
+      <dobYear>1997</dobYear>
+      <vkz>70604</vkz>
+      <numberClubMember>772</numberClubMember>
+      <club>Hagener SV</club>
+      <fideRating>1930</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>65</tournamentPlayerNumber>
+      <surname>Player f189</surname>
+      <forename>f640fd3</forename>
+      <dobYear>1979</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>974</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <fideRating>2108</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>66</tournamentPlayerNumber>
+      <surname>Player 86c4</surname>
+      <forename>fd52f91</forename>
+      <dobYear>1954</dobYear>
+      <vkz>B0023</vkz>
+      <numberClubMember>1430</numberClubMember>
+      <club>SV Werder Bremen 4</club>
+      <fideRating>1967</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>67</tournamentPlayerNumber>
+      <surname>Player 833c</surname>
+      <forename>b093c7b</forename>
+      <dobYear>1991</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>1097</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <fideRating>2053</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>68</tournamentPlayerNumber>
+      <surname>Player d98d</surname>
+      <forename>c80a044</forename>
+      <dobYear>1974</dobYear>
+      <vkz>B0023</vkz>
+      <numberClubMember>243</numberClubMember>
+      <club>SV Werder Bremen 4</club>
+      <fideRating>2065</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>69</tournamentPlayerNumber>
+      <surname>Player 4e1a</surname>
+      <forename>87e90fe</forename>
+      <dobYear>1978</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>1474</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <fideRating>1924</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>70</tournamentPlayerNumber>
+      <surname>Player c0af</surname>
+      <forename>56cf03b</forename>
+      <dobYear>2007</dobYear>
+      <vkz>B0023</vkz>
+      <numberClubMember>1215</numberClubMember>
+      <club>SV Werder Bremen 4</club>
+      <fideRating>2092</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>71</tournamentPlayerNumber>
+      <surname>Player 9489</surname>
+      <forename>424e25e</forename>
+      <dobYear>1950</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>1301</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <fideRating>1946</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>72</tournamentPlayerNumber>
+      <surname>Player c54d</surname>
+      <forename>886f9fb</forename>
+      <dobYear>1984</dobYear>
+      <vkz>B0023</vkz>
+      <numberClubMember>1260</numberClubMember>
+      <club>SV Werder Bremen 4</club>
+      <fideRating>2099</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>73</tournamentPlayerNumber>
+      <surname>Player 30bd</surname>
+      <forename>1d9b51d</forename>
+      <dobYear>2005</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>1090</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <fideRating>1836</fideRating>
+      <sex>w</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>74</tournamentPlayerNumber>
+      <surname>Player 653b</surname>
+      <forename>5ac483e</forename>
+      <dobYear>1989</dobYear>
+      <vkz>B0023</vkz>
+      <numberClubMember>1553</numberClubMember>
+      <club>SV Werder Bremen 4</club>
+      <fideRating>1898</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>75</tournamentPlayerNumber>
+      <surname>Player ceea</surname>
+      <forename>58f5b47</forename>
+      <dobYear>1953</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>966</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>76</tournamentPlayerNumber>
+      <surname>Player 0f21</surname>
+      <forename>7790018</forename>
+      <dobYear>1967</dobYear>
+      <vkz>B0023</vkz>
+      <numberClubMember>1067</numberClubMember>
+      <club>SV Werder Bremen 4</club>
+      <fideRating>1796</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>77</tournamentPlayerNumber>
+      <surname>Player bc3c</surname>
+      <forename>474a957</forename>
+      <dobYear>2009</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>1006</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <fideRating>1838</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>78</tournamentPlayerNumber>
+      <surname>Player 633a</surname>
+      <forename>ff9c47b</forename>
+      <dobYear>1974</dobYear>
+      <vkz>B0023</vkz>
+      <numberClubMember>1398</numberClubMember>
+      <club>SV Werder Bremen 4</club>
+      <fideRating>1728</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>79</tournamentPlayerNumber>
+      <surname>Player 70bd</surname>
+      <forename>2c19b1c</forename>
+      <dobYear>1954</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>746</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>80</tournamentPlayerNumber>
+      <surname>Player 08a1</surname>
+      <forename>58522f5</forename>
+      <dobYear>1957</dobYear>
+      <vkz>B0023</vkz>
+      <numberClubMember>842</numberClubMember>
+      <club>SV Werder Bremen 4</club>
+      <fideRating>1800</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>81</tournamentPlayerNumber>
+      <surname>Player c757</surname>
+      <forename>4b36816</forename>
+      <dobYear>2009</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>1458</numberClubMember>
+      <club>SG Osnabrück</club>
+      <fideRating>2061</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>82</tournamentPlayerNumber>
+      <surname>Player cce3</surname>
+      <forename>4a76b15</forename>
+      <dobYear>2009</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>244</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <fideRating>2148</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>83</tournamentPlayerNumber>
+      <surname>Player 4bf2</surname>
+      <forename>01d5756</forename>
+      <dobYear>1974</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>1397</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <fideRating>1971</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>84</tournamentPlayerNumber>
+      <surname>Player 0036</surname>
+      <forename>a2a690f</forename>
+      <dobYear>2001</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>1242</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <fideRating>1779</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>85</tournamentPlayerNumber>
+      <surname>Player 598c</surname>
+      <forename>93ad56a</forename>
+      <dobYear>1959</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>295</numberClubMember>
+      <club>SG Osnabrück</club>
+      <fideRating>1918</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>86</tournamentPlayerNumber>
+      <surname>Player 96a4</surname>
+      <forename>a0a595e</forename>
+      <dobYear>1954</dobYear>
+      <vkz>70526</vkz>
+      <numberClubMember>573</numberClubMember>
+      <club>SG Ammerland</club>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>87</tournamentPlayerNumber>
+      <surname>Player a284</surname>
+      <forename>c2a4ffb</forename>
+      <dobYear>1995</dobYear>
+      <vkz>70526</vkz>
+      <numberClubMember>646</numberClubMember>
+      <club>SG Ammerland</club>
+      <fideRating>2104</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>88</tournamentPlayerNumber>
+      <surname>Player fea9</surname>
+      <forename>c36de88</forename>
+      <dobYear>1959</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>612</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>1954</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>89</tournamentPlayerNumber>
+      <surname>Player 7992</surname>
+      <forename>ec2da9c</forename>
+      <dobYear>2009</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>961</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>1887</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>90</tournamentPlayerNumber>
+      <surname>Player 827d</surname>
+      <forename>713ed1f</forename>
+      <dobYear>1993</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>1089</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>1639</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>91</tournamentPlayerNumber>
+      <surname>Player ece3</surname>
+      <forename>ec6728a</forename>
+      <dobYear>1963</dobYear>
+      <vkz>B0016</vkz>
+      <numberClubMember>146</numberClubMember>
+      <club>SK Bremen-Nord</club>
+      <fideRating>2210</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>92</tournamentPlayerNumber>
+      <surname>Player 5fd9</surname>
+      <forename>4f5a12f</forename>
+      <dobYear>1984</dobYear>
+      <vkz>70422</vkz>
+      <numberClubMember>770</numberClubMember>
+      <club>Stader SV</club>
+      <fideRating>2271</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>93</tournamentPlayerNumber>
+      <surname>Player 4bfd</surname>
+      <forename>ec001f4</forename>
+      <dobYear>1974</dobYear>
+      <vkz>70422</vkz>
+      <numberClubMember>442</numberClubMember>
+      <club>Stader SV</club>
+      <fideRating>2010</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>94</tournamentPlayerNumber>
+      <surname>Player 3d62</surname>
+      <forename>502bdc8</forename>
+      <dobYear>1971</dobYear>
+      <vkz>B0023</vkz>
+      <numberClubMember>709</numberClubMember>
+      <club>SV Werder Bremen 4</club>
+      <fideRating>2185</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>95</tournamentPlayerNumber>
+      <surname>Player bf75</surname>
+      <forename>e980c54</forename>
+      <dobYear>1989</dobYear>
+      <vkz>B0023</vkz>
+      <numberClubMember>803</numberClubMember>
+      <club>SV Werder Bremen 4</club>
+      <fideRating>1799</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>96</tournamentPlayerNumber>
+      <surname>Player f26e</surname>
+      <forename>dc8e955</forename>
+      <dobYear>1972</dobYear>
+      <vkz>B0038</vkz>
+      <numberClubMember>1464</numberClubMember>
+      <club>Sfr Bremer Osten</club>
+      <fideRating>2079</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>97</tournamentPlayerNumber>
+      <surname>Player 1c6b</surname>
+      <forename>fe3e3a9</forename>
+      <dobYear>1958</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>671</numberClubMember>
+      <club>SG Osnabrück</club>
+      <fideRating>2131</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>98</tournamentPlayerNumber>
+      <surname>Player f5ef</surname>
+      <forename>ad64ff7</forename>
+      <dobYear>2006</dobYear>
+      <vkz>70604</vkz>
+      <numberClubMember>1114</numberClubMember>
+      <club>Hagener SV</club>
+      <fideRating>2029</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>99</tournamentPlayerNumber>
+      <surname>Player 01ef</surname>
+      <forename>5bb1a95</forename>
+      <dobYear>1962</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>611</numberClubMember>
+      <club>SG Osnabrück</club>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>100</tournamentPlayerNumber>
+      <surname>Player 6245</surname>
+      <forename>03d0194</forename>
+      <dobYear>1971</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>398</numberClubMember>
+      <club>SG Osnabrück</club>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>101</tournamentPlayerNumber>
+      <surname>Player f8ae</surname>
+      <forename>5210bb9</forename>
+      <dobYear>1956</dobYear>
+      <vkz>70604</vkz>
+      <numberClubMember>1107</numberClubMember>
+      <club>Hagener SV</club>
+      <fideRating>1781</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>102</tournamentPlayerNumber>
+      <surname>Player f132</surname>
+      <forename>11e455f</forename>
+      <dobYear>1957</dobYear>
+      <vkz>70608</vkz>
+      <numberClubMember>194</numberClubMember>
+      <club>SG Osnabrück</club>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>103</tournamentPlayerNumber>
+      <surname>Player f910</surname>
+      <forename>1d85e87</forename>
+      <dobYear>1958</dobYear>
+      <vkz>70604</vkz>
+      <numberClubMember>346</numberClubMember>
+      <club>Hagener SV</club>
+      <fideRating>1906</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>104</tournamentPlayerNumber>
+      <surname>Player f420</surname>
+      <forename>4fc0c38</forename>
+      <dobYear>1984</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>464</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>2160</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>105</tournamentPlayerNumber>
+      <surname>Player a1c8</surname>
+      <forename>c2420ef</forename>
+      <dobYear>2006</dobYear>
+      <vkz>70616</vkz>
+      <numberClubMember>1270</numberClubMember>
+      <club>SK Nordhorn-Blanke 2</club>
+      <fideRating>1998</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>106</tournamentPlayerNumber>
+      <surname>Player d699</surname>
+      <forename>36fd77d</forename>
+      <dobYear>1955</dobYear>
+      <vkz>B0023</vkz>
+      <numberClubMember>690</numberClubMember>
+      <club>SV Werder Bremen 4</club>
+      <fideRating>1854</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>107</tournamentPlayerNumber>
+      <surname>Player 810c</surname>
+      <forename>6657eea</forename>
+      <dobYear>1973</dobYear>
+      <vkz>70422</vkz>
+      <numberClubMember>902</numberClubMember>
+      <club>Stader SV</club>
+      <fideRating>1853</fideRating>
+      <sex>m</sex>
+    </player>
+    <player>
+      <tournamentPlayerNumber>108</tournamentPlayerNumber>
+      <surname>Player 22ce</surname>
+      <forename>0aedb1d</forename>
+      <dobYear>1961</dobYear>
+      <vkz>70506</vkz>
+      <numberClubMember>1416</numberClubMember>
+      <club>Fortuna Logabirum</club>
+      <fideRating>1650</fideRating>
+      <sex>m</sex>
+    </player>
+  </players>
+  <games>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>1</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>2</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>3</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>4</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>5</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>6</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>7</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>8</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>9</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>10</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>11</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>12</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>13</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>14</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>15</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>16</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>17</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>18</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>19</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>20</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>21</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>22</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>23</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>24</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>25</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>26</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>27</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>28</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>29</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>30</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>31</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>32</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>33</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>34</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>35</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>36</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>37</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>38</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>39</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>40</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>41</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>42</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>43</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>44</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>45</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>46</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>47</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>48</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>49</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>50</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>51</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>52</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>53</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>54</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>55</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>56</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>57</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>58</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>59</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>60</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>61</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>62</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>63</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>64</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>65</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>66</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>67</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>68</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>69</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>70</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>71</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>72</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>73</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>74</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>75</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>76</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>77</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>78</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>1</round>
+      <date>2025-09-28</date>
+      <tournamentPlayerNumberWhite>79</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>80</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>65</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>1</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>67</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>5</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>69</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>81</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>82</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>7</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>83</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>9</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>73</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>11</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>75</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>13</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>84</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>85</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>86</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>19</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>87</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>23</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>2</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>25</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>4</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>27</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>6</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>29</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>8</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>88</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>10</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>89</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>12</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>90</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>18</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>33</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>91</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>92</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>20</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>35</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>22</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>37</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>24</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>39</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>26</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>41</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>28</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>93</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>30</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>43</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>66</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>49</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>68</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>51</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>94</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>53</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>70</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>55</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>74</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>57</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>76</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>59</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>95</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>61</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>80</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>63</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>50</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>34</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>52</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>96</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>54</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>38</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>56</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>40</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>58</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>42</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>60</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>44</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>62</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>46</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>2</round>
+      <date>2025-11-16</date>
+      <tournamentPlayerNumberWhite>64</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>48</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>1</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>52</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>97</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>98</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>5</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>54</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>99</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>56</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>13</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>58</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>15</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>60</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>100</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>101</tournamentPlayerNumberBlack>
+      <pointWhite>-</pointWhite>
+      <pointBlack>+</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>102</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>103</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>17</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>66</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>104</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>68</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>19</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>70</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>105</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>74</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>23</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>76</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>27</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>95</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>29</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>106</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>31</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>80</tournamentPlayerNumberBlack>
+      <pointWhite>-</pointWhite>
+      <pointBlack>+</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>33</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>86</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>92</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>87</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>37</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>2</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>39</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>4</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>41</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>6</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>93</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>8</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>43</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>10</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>107</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>12</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>49</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>65</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>51</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>67</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>53</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>69</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>55</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>82</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>57</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>71</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>59</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>73</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>61</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>77</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>63</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>108</tournamentPlayerNumberBlack>
+      <pointWhite>+</pointWhite>
+      <pointBlack>-</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>34</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>18</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>36</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>91</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>96</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>20</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>38</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>22</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>40</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>24</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>44</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>26</tournamentPlayerNumberBlack>
+      <pointWhite>0.5</pointWhite>
+      <pointBlack>0.5</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>46</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>28</tournamentPlayerNumberBlack>
+      <pointWhite>1</pointWhite>
+      <pointBlack>0</pointBlack>
+    </game>
+    <game>
+      <round>3</round>
+      <date>2025-12-07</date>
+      <tournamentPlayerNumberWhite>48</tournamentPlayerNumberWhite>
+      <tournamentPlayerNumberBlack>30</tournamentPlayerNumberBlack>
+      <pointWhite>0</pointWhite>
+      <pointBlack>1</pointBlack>
+    </game>
+  </games>
+</DSB_DWZ_TournamentReport>
