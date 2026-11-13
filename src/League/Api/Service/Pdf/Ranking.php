@@ -100,8 +100,11 @@ class Ranking implements Element {
     return $this->table->width();
   }
 
-  public function height(): float {
-    return $this->table->height();
+  /**
+   * Returns the height of the ranking table in user units.
+   */
+  public function height(Pdf $pdf): float {
+    return $this->table->height($pdf);
   }
 
   public function deleteResultColumns() {

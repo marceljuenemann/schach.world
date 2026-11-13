@@ -33,10 +33,10 @@ class Table implements Element, \IteratorAggregate {
   }
 
   /**
-   * Returns the height of the table relative to the line height.
+   * Returns the height of the table in user units, including row margins.
    */
-  public function height(): float {
-    return array_sum(array_map(fn($row) => $row->height(), $this->rows));
+  public function height(Pdf $pdf): float {
+    return array_sum(array_map(fn($row) => $row->height() * $pdf->lineHeight + $row->marginBottom, $this->rows));
   }
 
   public function width(): float {

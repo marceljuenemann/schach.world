@@ -13,7 +13,14 @@ const MIN_FONT_SIZE = 6;
  */
 class Cell implements Element {
 
-  public string $text = '';
+  /**
+   * The text of the cell. Surrounding whitespace is trimmed, as it would
+   * otherwise break the alignment and width calculations.
+   */
+  public string $text = '' {
+    set => trim($value);
+  }
+
   public string $link = '';
 
   /**

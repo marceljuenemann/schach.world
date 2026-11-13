@@ -17,7 +17,7 @@ class Pdf extends Fpdf {
   public function __construct() {
     parent::__construct();
     $this->tMargin = 8;
-    $this->bMargin = 8;
+    $this->setBottomMargin(8);
     $this->AddPage();
     $this->SetFont('helvetica', '', self::DEFAULT_FONT_SIZE);
     $this->lineHeight = 4;
@@ -36,6 +36,16 @@ class Pdf extends Fpdf {
   }
 
   /**
+   * Sets the bottom margin at which automatic page breaks are triggered.
+   *
+   * Don't set $this->bMargin directly: FPDF triggers page breaks based on
+   * $this->PageBreakTrigger, which is only updated by SetAutoPageBreak().
+   */
+  public function setBottomMargin(float $margin) {
+    $this->SetAutoPageBreak(true, $margin);
+  }
+
+  /**
    * Return the available width until the right margin in user units.
    */
   public function availableWidth(): float {
@@ -46,14 +56,7 @@ class Pdf extends Fpdf {
    * Return the available height on the current page in user units.
    */
   public function availableHeight(): float {
-    return $this->h - $this->bMargin - $this->y;
-  }
-
-  /**
-   * Return the available height on the current page relative to the line height.
-   */
-  public function availableLines(): float {
-    return $this->availableHeight() / $this->lineHeight;
+    return $this->PageBreakTrigger - $this->y;
   }
 
   public function fontSize(): float {

@@ -35,8 +35,11 @@ class PairingList implements Element {
   }
 
   public function render(Pdf $pdf) {
-    // TODO: Move to next page if not all games fit on this page.
     foreach ($this->matchDay->pairings as $pairing) {
+      // Don't split a pairing across pages.
+      if ($this->lineCount($pairing) * $pdf->lineHeight > $pdf->availableHeight()) {
+        $pdf->AddPage();
+      }
       $this->renderHeader($pdf, $pairing);
       if ($pairing->wasBye()) {
         $this->renderRemark($pdf, '(kampflos)');
@@ -57,6 +60,20 @@ class PairingList implements Element {
         }
       }
       $pdf->Ln();
+    }
+  }
+
+  /**
+   * Returns the number of lines needed to render the given pairing (excluding
+   * the spacing after it). Needs to be kept in sync with render().
+   */
+  private function lineCount(Pairing $pairing): int {
+    if ($pairing->wasBye()) {
+      return 2;
+    } else if (isset($pairing->games)) {
+      return 1 + count($pairing->games);
+    } else {
+      return 1 + ($pairing->host ? 1 : 0) + ($pairing->wasMoved ? 1 : 0);
     }
   }
 

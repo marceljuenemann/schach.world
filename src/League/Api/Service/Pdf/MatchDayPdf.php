@@ -23,6 +23,8 @@ class MatchDayPdf {
 
   public function __construct(private Division $division, private MatchDay $matchDay, private string $baseUrl) {
     $this->pdf = new Pdf();
+    // Reserve space for the footer, so that no content overlaps with it.
+    $this->pdf->setBottomMargin(self::FOOTER_HEIGHT);
     $this->pairingList = new PairingList($matchDay, $division->league->configPlayerNumbersWithTeamNumber);
     if (!empty($matchDay->legacyRanking)) {
       $this->ranking = new Ranking($matchDay->legacyRanking, $baseUrl . $division->league->uri());
@@ -44,7 +46,7 @@ class MatchDayPdf {
     $rankingInSidebar = false;
     if ($this->ranking) {
       $this->ranking->layout($this->pdf);
-      $rankingInSidebar = $this->ranking->height() > $this->pdf->availableLines() || $this->pdf->PageNo() > 1;
+      $rankingInSidebar = $this->ranking->height($this->pdf) > $this->pdf->availableHeight() || $this->pdf->PageNo() > 1;
     }
 
     // 4. Render sidebar.
