@@ -82,7 +82,7 @@ class AbstractLeagueController extends AbstractController {
   /**
    * Renders a league twig template, while providing some common variables.
    */
-  protected function render(string $view, array $parameters = [], Response $response = null): Response {
+  protected function render(string $view, array $parameters = [], ?Response $response = null): Response {
     $view = '@league/' . $view;
 
     $parameters['auth'] = $this->auth;
