@@ -65,8 +65,28 @@
 {% macro detailsToggle(title) %}
   {% set toggle_id = 'nsv-toggle-' ~ random() %}
   <div class="form-check form-switch d-sm-none d-print-none mt-1 mb-1">
-    <input type="checkbox" class="form-check-input" id="{{ toggle_id }}" onclick="$(this).parent().parent().toggleClass('nsv-details-show')">
+    <input type="checkbox" class="form-check-input" id="{{ toggle_id }}">
     <label class="form-check-label" for="{{ toggle_id }}">{{ title }}</label>
+    <script>
+      (() => {
+        const toggle = $("#{{ toggle_id }}");
+
+        function toggleClass() {
+          const target = toggle.parent().parent();
+          if (toggle.prop('checked')) {
+            target.removeClass('nsv-details-show');
+          } else {
+            target.addClass('nsv-details-show');
+          }
+        }
+
+        toggleClass(); // Firefox remembers input state on reload
+
+        toggle.on('change', () => {
+          toggleClass();
+        });
+      })();
+    </script>
   </div>
 {% endmacro %}
 
