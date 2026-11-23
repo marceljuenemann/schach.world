@@ -1,0 +1,334 @@
+import { FormControl } from '@angular/forms';
+import { LateRegistration, Pairing, Player, Team, UpdatePairingGameRequest, UpdatePairingRequest } from '../types';
+
+export const RESULT_OPTIONS = ['1', '½', '0', '+', '-', '?'] as const
+
+// What a board's player select holds: a player ID, a late registration or nobody.
+export type PlayerSelection = number | LateRegistration | null
+
+export function isLateRegistration(value: PlayerSelection): value is LateRegistration {
+  return typeof value === 'object' && value !== null
+}
+
+// The value of the "Nachmeldung..." option. Only selected until the dialog is closed.
+export const LATE_REGISTRATION_OPTION = -1
+
+export function lateRegistrationName({player}: LateRegistration): string {
+  return player.firstName ? `${player.lastName}, ${player.firstName}` : player.lastName
+}
+
+export interface RosterGroup {
+  teamNumber: number
+  players: Player[]
+  lateRegistrations: LateRegistration[]
+}
+
+const SCORE: Record<string, number> = {'1': 1, '½': 0.5, '+': 1}
+const OPPOSITE: Record<string, string> = {'1': '0', '0': '1', '+': '-', '-': '+'}  // '½'/'?' mirror themselves
+
+// Angular's typed FormControl can't be subclassed with an explicit generic argument
+// (ɵFormControlCtor has multiple construct signatures, so TS rejects `extends
+// FormControl<T>` - "Base constructors must all have the same return type"). Extending
+// the bare, untyped FormControl and re-typing value/setValue ourselves works around it -
+// same trick this codebase's own NsvFormControl already uses.
+export class GuessableControl<T> extends FormControl {
+  isManual = false
+  previousValue: T
+  declare value: T
+
+  constructor(value: T) {
+    super(value)
+    this.previousValue = value
+  }
+
+  override setValue(value: T, options?: {onlySelf?: boolean, emitEvent?: boolean}): void {
+    this.previousValue = this.value
+    super.setValue(value, options)
+  }
+}
+
+export type PlayerControl = GuessableControl<PlayerSelection>
+
+export interface BoardRow {
+  board: number
+  player1: PlayerControl
+  player2: PlayerControl
+  result1: GuessableControl<string>
+  result2: GuessableControl<string>
+}
+
+export class PairingEditor {
+  boardRows: BoardRow[] = []
+  // Late registrations entered so far, selectable on any board of that side.
+  lateRegistrations1: LateRegistration[] = []
+  lateRegistrations2: LateRegistration[] = []
+  overallResult1 = new GuessableControl<number>(0)
+  overallResult2 = new GuessableControl<number>(0)
+
+  constructor(
+    private pairing: Pairing,
+    boardCount: number,
+    public readonly team1: Team,
+    public readonly team2: Team,
+  ) {
+    for (let board = 1; board <= boardCount; board++) {
+      this.boardRows.push(this.buildRow(board))
+    }
+    this.guessPlayers(1)
+    this.guessPlayers(2)
+    for (const row of this.boardRows) this.guessBoard(row)
+    this.initOverallResult()
+    this.guessOverallResult()
+  }
+
+  private buildRow(board: number): BoardRow {
+    const game = this.pairing.games?.find(g => g.board === board) ?? null
+    const row: BoardRow = {
+      board,
+      player1: new GuessableControl<PlayerSelection>(game?.player1?.id ?? null),
+      player2: new GuessableControl<PlayerSelection>(game?.player2?.id ?? null),
+      result1: new GuessableControl<string>(game?.result1 ?? '?'),
+      result2: new GuessableControl<string>(game?.result2 ?? '?'),
+    }
+    // Pre-existing saved data counts as already decided - matches legacy's edit-mode
+    // behavior (bearbeitung.js marks everything "touched" on load), so we don't
+    // silently overwrite a real saved result. But only result1 needs to be manual to
+    // pin it down: result2 stays guessable (mirroring result1 via guessBoard) unless it
+    // doesn't actually match the usual opposite - e.g. some special/asymmetric result -
+    // in which case it must be preserved as-is too. This keeps editing a saved result
+    // easy (change one side, the other follows) without silently flipping an unusual one.
+    // An empty player slot is a decision too: nobody played that side of the board, e.g.
+    // because of a forfeit, so it must not get filled in from the roster.
+    if (game) {
+      row.result1.isManual = true
+      row.result2.isManual = game.result2 !== this.opposite(game.result1)
+      row.player1.isManual = true
+      row.player2.isManual = true
+    }
+    return row
+  }
+
+  // Each side is first judged independently against its own board tally (computedTotal):
+  // a saved value that already matches what the boards say stays guessable, so later
+  // board edits keep updating it live. A value that doesn't match - e.g. a manually
+  // adjusted walkover penalty - gets frozen as manual. But guessOverallResult() gives a
+  // manual side priority over the *other* side too (deriving it as boardCount - manual),
+  // so if that other side wouldn't survive that derivation unchanged, it must be frozen
+  // as manual as well - otherwise it'd silently get overwritten the moment the dialog opens.
+  private initOverallResult() {
+    const result1 = this.pairing.result1
+    const result2 = this.pairing.result2
+    if (result1 !== null) {
+      this.overallResult1.setValue(result1)
+      this.overallResult1.isManual = result1 !== this.computedTotal(1)
+    }
+    if (result2 !== null) {
+      this.overallResult2.setValue(result2)
+      this.overallResult2.isManual = result2 !== this.computedTotal(2)
+    }
+    if (result1 !== null && result2 !== null) {
+      if (this.overallResult1.isManual && !this.overallResult2.isManual
+        && result2 !== this.boardRows.length - result1) {
+        this.overallResult2.isManual = true
+      } else if (this.overallResult2.isManual && !this.overallResult1.isManual
+        && result1 !== this.boardRows.length - result2) {
+        this.overallResult1.isManual = true
+      }
+    }
+  }
+
+  toRequest(comment: string, sendConfirmation: boolean): UpdatePairingRequest {
+    return {
+      result1: this.overallResult1.value,
+      result2: this.overallResult2.value,
+      comment,
+      sendConfirmation,
+      games: this.boardRows.map(row => this.gameRequest(row)),
+    }
+  }
+
+  private gameRequest(row: BoardRow): UpdatePairingGameRequest {
+    const [player1, player2] = [row.player1.value, row.player2.value]
+    return {
+      board: row.board,
+      player1: isLateRegistration(player1) ? null : player1,
+      lateRegistration1: isLateRegistration(player1) ? player1 : null,
+      player2: isLateRegistration(player2) ? null : player2,
+      lateRegistration2: isLateRegistration(player2) ? player2 : null,
+      result1: row.result1.value,
+      result2: row.result2.value,
+    }
+  }
+
+  addLateRegistration(row: BoardRow, control: PlayerControl, lateRegistration: LateRegistration) {
+    const lateRegistrations = control === row.player1 ? this.lateRegistrations1 : this.lateRegistrations2
+    lateRegistrations.push(lateRegistration)
+    control.setValue(lateRegistration)
+    this.onPlayerSelected(row, control)
+  }
+
+  onPlayerSelected(row: BoardRow, control: PlayerControl) {
+    control.isManual = true
+    const side: 1 | 2 = control === row.player1 ? 1 : 2
+    this.guessPlayers(side)
+    for (const r of this.boardRows) this.guessBoard(r)
+    this.guessOverallResult()
+  }
+
+  onResultSelected(row: BoardRow, control: GuessableControl<string>) {
+    control.isManual = true
+    // Re-guess every board, not just this one: a change to board 1 or 2 can affect the
+    // kampflos cascade onto board 3+, so a single-row recompute isn't enough here.
+    for (const r of this.boardRows) this.guessBoard(r)
+    this.guessOverallResult()
+  }
+
+  onOverallResultChanged(control: GuessableControl<number>) {
+    control.isManual = true
+    this.guessOverallResult()
+  }
+
+  // Fills in non-manual player slots for one side, in roster order. A manual pick
+  // re-anchors the sequence: subsequent non-manual boards continue from just after that
+  // player's roster position, rather than restarting from board 1's mapping - this is
+  // what makes "select a player, later boards guess too" work whether it's the very
+  // first pick or a correction partway through the lineup.
+  private guessPlayers(side: 1 | 2) {
+    const roster = side === 1 ? this.roster1 : this.roster2
+    let rosterIndex = 0
+    // A manual "no player" pick means the lineup ends there - later non-manual boards
+    // guess null too, rather than skipping the gap and continuing with the next roster player.
+    let forceNull = false
+    for (const row of this.boardRows) {
+      const control = side === 1 ? row.player1 : row.player2
+      if (control.isManual) {
+        if (control.value === null || isLateRegistration(control.value)) {
+          forceNull = true
+        } else {
+          const idx = roster.findIndex(p => p.id === control.value)
+          rosterIndex = idx >= 0 ? idx + 1 : rosterIndex
+          forceNull = false
+        }
+        continue
+      }
+      if (forceNull) {
+        control.setValue(null)
+        continue
+      }
+      const next = roster[rosterIndex] ?? null
+      control.setValue(next ? next.id : null)
+      rosterIndex++
+    }
+  }
+
+  private guessBoard(row: BoardRow) {
+    // Kampflos cascade: boards 1 & 2 showing a consistent forfeit/unknown pattern means
+    // the whole match is a walkover - later boards inherit it instead of DWZ-guessing
+    // individually. Only boards 1 & 2 ever trigger this (no generalizing to other pairs).
+    if (row.board > 2 && !row.result1.isManual && !row.result2.isManual) {
+      const cascade = this.kampflosCascade()
+      if (cascade) {
+        row.result1.setValue(cascade[0])
+        row.result2.setValue(cascade[1])
+        return
+      }
+    }
+
+    if (row.result1.isManual || row.result2.isManual) {
+      if (row.result1.isManual && !row.result2.isManual) {
+        row.result2.setValue(this.opposite(row.result1.value))
+      } else if (row.result2.isManual && !row.result1.isManual) {
+        row.result1.setValue(this.opposite(row.result2.value))
+      }
+      return
+    }
+
+    const p1 = row.player1.value
+    const p2 = row.player2.value
+    if (p1 === null && p2 === null) { row.result1.setValue('-'); row.result2.setValue('-'); return }
+    if (p1 === null) { row.result1.setValue('-'); row.result2.setValue('+'); return }
+    if (p2 === null) { row.result1.setValue('+'); row.result2.setValue('-'); return }
+
+    const dwz1 = this.effectiveDwz(this.team1, p1)
+    const dwz2 = this.effectiveDwz(this.team2, p2)
+    if (dwz1 > dwz2 + 100) { row.result1.setValue('1'); row.result2.setValue('0') }
+    else if (dwz2 > dwz1 + 100) { row.result1.setValue('0'); row.result2.setValue('1') }
+    else { row.result1.setValue('½'); row.result2.setValue('½') }
+  }
+
+  private kampflosCascade(): [string, string] | null {
+    const [b1, b2] = this.boardRows
+    if (!b1 || !b2) return null
+    const pattern = (r: BoardRow) => `${r.result1.value}:${r.result2.value}`
+    if (pattern(b1) === '+:-' && pattern(b2) === '+:-') return ['+', '-']
+    if (pattern(b1) === '-:+' && pattern(b2) === '-:+') return ['-', '+']
+    if (pattern(b1) === '?:?' && pattern(b2) === '?:?') return ['?', '?']
+    if (pattern(b1) === '-:-' && pattern(b2) === '-:-') return ['-', '-']
+    return null
+  }
+
+  private opposite(result: string): string {
+    return OPPOSITE[result] ?? result
+  }
+
+  private dwzFor(team: Team, playerId: number): number | null {
+    for (const players of Object.values(team.playersByTeamNumber ?? {})) {
+      const player = players.find(p => p.id === playerId)
+      if (player) return player.dwz
+    }
+    return null
+  }
+
+  // A late registered player carries their own DWZ if one was found via the database
+  // lookup; missing/not-found DWZ is treated as 0, matching the legacy guessing rule.
+  private effectiveDwz(team: Team, player: PlayerSelection): number {
+    if (isLateRegistration(player)) return player.player.dwz ?? 0
+    return this.dwzFor(team, player!) ?? 0
+  }
+
+  get rosterGroups1(): RosterGroup[] { return this.rosterGroups(this.team1, this.lateRegistrations1) }
+  get rosterGroups2(): RosterGroup[] { return this.rosterGroups(this.team2, this.lateRegistrations2) }
+  private rosterGroups(team: Team, lateRegistrations: LateRegistration[]): RosterGroup[] {
+    const rosters = team.playersByTeamNumber ?? {}
+    const teamNumbers = new Set([...Object.keys(rosters).map(Number), ...lateRegistrations.map(l => l.teamNumber)])
+    return [...teamNumbers].sort((a, b) => a - b).map(teamNumber => ({
+      teamNumber,
+      players: rosters[teamNumber] ?? [],
+      lateRegistrations: lateRegistrations.filter(l => l.teamNumber === teamNumber),
+    }))
+  }
+
+  get roster1(): Player[] { return this.flattenRoster(this.team1) }
+  get roster2(): Player[] { return this.flattenRoster(this.team2) }
+  private flattenRoster(team: Team): Player[] {
+    return Object.values(team.playersByTeamNumber ?? {}).flat()
+  }
+
+  // Options for the overall-result selects: boardCount, ..., 0.5, 0 (descending).
+  get overallResultOptions(): number[] {
+    const count = this.boardRows.length * 2 + 1
+    return Array.from({length: count}, (_, i) => (count - 1 - i) / 2)
+  }
+
+  private guessOverallResult() {
+    // A manually-set side always takes priority over the board tally: the other side is
+    // derived from it (total points across both sides always equals the board count) -
+    // e.g. setting 8:0 for a lopsided walkover shouldn't have to fight the per-board
+    // guesses. Only once neither side is manual does the board tally take over.
+    if (this.overallResult1.isManual && !this.overallResult2.isManual) {
+      this.overallResult2.setValue(this.boardRows.length - this.overallResult1.value)
+    } else if (this.overallResult2.isManual && !this.overallResult1.isManual) {
+      this.overallResult1.setValue(this.boardRows.length - this.overallResult2.value)
+    } else {
+      if (!this.overallResult1.isManual) this.overallResult1.setValue(this.computedTotal(1))
+      if (!this.overallResult2.isManual) this.overallResult2.setValue(this.computedTotal(2))
+    }
+  }
+
+  private computedTotal(side: 1 | 2): number {
+    return this.boardRows.reduce((sum, row) => {
+      const result = (side === 1 ? row.result1 : row.result2).value
+      return sum + (SCORE[result] ?? 0)
+    }, 0)
+  }
+}

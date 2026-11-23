@@ -53,7 +53,7 @@
     if ( isset ( $_POST ['extra_nurbem'] ) )
     {
       // Daten ändern
-      SED_TryQuery('UPDATE paarungen SET bemerkung=? WHERE id=? LIMIT 1', [htmlspecialchars($_POST['extra_nurbem_input'], ENT_COMPAT | ENT_HTML401, 'ISO-8859-1'), $_GET['pid']]);
+      SED_TryQuery('UPDATE paarungen SET bemerkung=? WHERE id=? LIMIT 1', [$_POST['extra_nurbem_input'], $_GET['pid']]);
       SED_Cache::clearSpieltag($g_paarung["staffel"], $g_paarung["runde"]);
 
       // Erfolgsmeldung
@@ -140,7 +140,7 @@
 
       <b>Nur Bemerkung setzen</b><br />
       Benutzen Sie diese Funktion, um nur die Bemerkung zu einer Paarung zu setzen, ohne Einzelergebnisse einzugeben.<br /><br />
-      <input type='text' name='extra_nurbem_input' value='<?php echo $g_paarung['bemerkung']; ?>' size='35' />
+      <input type='text' name='extra_nurbem_input' value='<?php echo SED_escape($g_paarung['bemerkung'] ?? ''); ?>' size='35' />
       <input type="submit" class="sed_submit" name="extra_nurbem" value="Speichern" /><br /><br /><br />
 
       <b>Ergebnisse l&ouml;schen</b><br />

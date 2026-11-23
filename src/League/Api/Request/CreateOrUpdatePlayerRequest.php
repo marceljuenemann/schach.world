@@ -7,6 +7,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 class CreateOrUpdatePlayerRequest
 {
+  #[Assert\Length(max: 20)]
   public ?string $firstName = null;
 
   #[Assert\NotBlank]

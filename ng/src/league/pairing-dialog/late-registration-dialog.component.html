@@ -1,0 +1,14 @@
+<div class="modal-header">
+  <h4 class="modal-title">Nachmeldung {{ params.teamName }}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+</div>
+<div class="modal-body mb-3">
+  @if (params.teamNumbers.length > 1) {
+    <nsv-form class="d-block mb-3" [form]="teamForm"></nsv-form>
+  }
+  <league-player-select [control]="selectedPlayer" [preferredZps]="params.preferredZps"></league-player-select>
+  @if (isManualEntry) {
+    <nsv-form [form]="form" [columns]="2" (keyup.enter)="form.markAllAsTouched(); saveDialog()"></nsv-form>
+  }
+</div>
+<nsv-dialog-footer [dialog]="this" saveButtonLabel="&Uuml;bernehmen"></nsv-dialog-footer>

@@ -39,6 +39,17 @@ describe('NsvFormComponent', () => {
     expect(inputElement.nativeElement.getAttribute('type')).toBe('text');
   });
 
+  it('should show the message of a custom validator', () => {
+    const control = component.form.controls[Object.keys(component.form.controls)[0]];
+    control.addValidators(() => ({message: 'Falsches Format'}));
+    control.updateValueAndValidity();
+    control.markAsTouched();
+    fixture.detectChanges();
+
+    const errors = fixture.debugElement.queryAll(By.css('.invalid-feedback')).map(e => e.nativeElement.textContent);
+    expect(errors).toContain('Falsches Format');
+  });
+
   it('should show validation error when control is invalid and touched', () => {
     // Mark the control as touched
     testForm.controls.name.markAsTouched();

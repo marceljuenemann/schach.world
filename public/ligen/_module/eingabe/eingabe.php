@@ -112,8 +112,7 @@
       // BEMERKUNGEN & GESAMTERGEBNIS
       ////////////////////////////////////////////////////////////////
 
-      $bemerkung = htmlspecialchars ( $_POST ['bemerkungen'], ENT_COMPAT | ENT_HTML401 , 'ISO-8859-1');
-      $bemerkung = ( $bemerkung == "" ? null : $bemerkung );
+      $bemerkung = ( $_POST ['bemerkungen'] == "" ? null : $_POST ['bemerkungen'] );
       SED_Query('UPDATE paarungen SET erg1=?, erg2=?, bemerkung=?, timestamp=NOW() WHERE id=?', [$_POST['gesheim'], $_POST['gesgast'], $bemerkung, $_GET['pid']]);
 
       ////////////////////////////////////////////////////////////////
@@ -261,7 +260,7 @@
   }
 
   // Bemerkung
-  echo "<b>&Ouml;ffentlich sichtbare Bemerkung:</b><br /><input type='text' name='bemerkungen' value='$g_paarung[bemerkung]' size='35' /><br /><br />";
+  echo "<b>&Ouml;ffentlich sichtbare Bemerkung:</b><br /><input type='text' name='bemerkungen' value='".SED_escape($g_paarung['bemerkung'] ?? '')."' size='35' /><br /><br />";
 
   // Abschlusstext (Bei SL.: Bestätigung verschicken?)
   if ( !isset ( $_GET ['admin'] ) )

@@ -17,6 +17,12 @@ class Result
   const UNKNOWN = '?';
 
   /**
+   * All possible results as Unicode strings, e.g. for validating API requests. Use DRAW()
+   * instead of this list for anything coming from the database.
+   */
+  const UNICODE_RESULTS = [self::WIN, self::UNICODE_DRAW, self::LOSS, self::BYE_WIN, self::BYE_LOSS, self::UNKNOWN];
+
+  /**
    * The result string for draw.
    */
   public static function DRAW(): string {

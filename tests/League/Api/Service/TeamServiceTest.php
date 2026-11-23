@@ -7,10 +7,13 @@ use Nsv\League\Entity\Division;
 use Nsv\League\Entity\League;
 use Nsv\League\Entity\Team;
 use Nsv\League\Entity\TeamRecipient;
+use Tests\League\CreatesPairing;
 use Tests\League\LeagueTestCase;
 
 class TeamServiceTest extends LeagueTestCase
 {
+  use CreatesPairing;
+
   private TeamService $service;
   private League $league;
   private Division $division;
@@ -20,6 +23,17 @@ class TeamServiceTest extends LeagueTestCase
     $this->service = $this->container->get(TeamService::class);
     $this->league = $this->leagueRepository->findByPathOrPrefix('nsv-2526');
     $this->division = $this->league->divisions[0];
+  }
+
+  protected function tearDown(): void {
+    $this->deleteCreatedPairing($this->em);
+    parent::tearDown();
+  }
+
+  public function testTeam_listsOwnTeamNumberWithoutPlayers() {
+    $this->createPairing($this->em, $this->league, $this->division);
+    $model = $this->service->team($this->substitute);
+    $this->assertSame([2 => []], $model->playersByTeamNumber);
   }
 
   public function testTeam1() {
