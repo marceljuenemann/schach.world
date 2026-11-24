@@ -57,8 +57,10 @@ We have a docker based development environment that runs Apache, MySQL and PhpMy
 
 ### Docker Usage
 
-- **Start containers:** `docker compose up -d` in the `dev` directory
-- **Stop containers:** `docker compose down`
+- **Start containers:** `docker compose up -d --wait` in the `dev` directory
+- **Stop containers:** `docker compose down`. The database is kept in a Docker volume.
+- **Reset the database:** `docker compose down -v`, then start the containers again. The database is recreated from the scripts in `dev/dbinit/` (see [setup](dev/setup.md#database)). Run the migrations afterwards (see below).
+- **View logs:** `docker logs -f nsv-webserver` shows the Apache and PHP error logs.
 - **SSH into webserver:** `docker exec -it nsv-webserver /bin/bash`. This allows you to run composer and symfony commands without having PHP installed. Even if you have PHP installed on the host, this ensures you run PHP with the same version as the webserver.
 
 ### Composer & Symfony Usage
@@ -70,18 +72,24 @@ Some useful commands for Symfony development:
 
 ### Running tests
 
-If you're using the docker setup, it's easiest to use `dev/script/run-tests.sh`. This runs
-`./bin/phpunit` in the webserver docker container. It also updates the snapshot tests. 
+If you're using the docker setup, it's easiest to use `dev/scripts/run-tests.sh`. This runs
+`./bin/phpunit` in the webserver docker container. You can pass phpunit arguments, e.g.
+`dev/scripts/run-tests.sh tests/League` to run only some tests.
+
+Many of the tests run against the database and the league manager test cases make extensive
+use of the anonymized production database dump in order to have meaningful tests. Tests use their own
+database `nsv-test`, which is rebuilt from `dev/dbinit/` at the start of every test run (locally and in CI),
+so changes you make in your local dev database don't affect tests. To skip the rebuild for a quicker run,
+set `SKIP_DB_RESET=1`, e.g. `docker exec -e SKIP_DB_RESET=1 nsv-webserver ./bin/phpunit tests/League`.
 
 ### Updating test snapshots
 
-Many of the tests run against the actual database docker container and the league manager test cases make extensive
-use of the anonymized production database dump in order to have meaningful tests. In addition, [snapshot tests](https://github.com/spatie/phpunit-snapshot-assertions)
-are used for large test coverage with minimal test setup. If you expect snapshots to change, run tests with 
+[Snapshot tests](https://github.com/spatie/phpunit-snapshot-assertions) are used for large test coverage with minimal
+test setup. If you expect snapshots to change, run
 
-`./bin/phpunit -d --update-snapshots`
+`dev/scripts/update-snapshots.sh`
 
-and check that the snapshot changes are expected before opening a pull request.
+and check with `git diff` that the snapshot changes are expected before opening a pull request.
 
 ### Test coverage
 
@@ -105,6 +113,8 @@ A few components were written in React before I decided to move to Angular. You 
 The most recent DB changes should be applied using Doctrine migrations with the following command:
 
 `./bin/console doctrine:migrations:migrate --em main`
+
+This is needed for your dev database after setting it up or resetting it. The test database gets the migrations automatically.
 
 # License
 

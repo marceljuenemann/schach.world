@@ -15,8 +15,6 @@ services:
       - ./config/php/php.ini:/usr/local/etc/php/php.ini
       - ./config/ssl:/etc/apache2/ssl/
       - ./config/vhosts:/etc/apache2/sites-enabled
-      - ./var/log/apache2:/var/log/apache2
-      - ./var/log/xdebug:/var/log/xdebug
     environment:
       APACHE_DOCUMENT_ROOT: /var/www/html/public
       PMA_PORT: ${HOST_MACHINE_PMA_PORT}
@@ -35,13 +33,22 @@ services:
     ports:
       - "127.0.0.1:${HOST_MACHINE_MYSQL_PORT}:3306"
     volumes:
-      - ./dbinit:/docker-entrypoint-initdb.d
-      - ./var/database:/var/lib/mysql
-      - ./var/log/database:/var/log/mysql
+      # Scripts that initialize a fresh database volume (see setup.md).
+      - ./dbinit:/docker-entrypoint-initdb.d:ro
+      # Docker-managed volume. Reset with `docker compose down -v`.
+      - db-data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    healthcheck:
+      # Only reports healthy once the init scripts are done (the entrypoint
+      # runs them against a temporary server without TCP networking).
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 5s
+      timeout: 5s
+      retries: 60
+      start_period: 120s
   phpmyadmin:
     image: phpmyadmin
     container_name: "nsv-phpmyadmin"
@@ -63,3 +70,6 @@ services:
     volumes:
       - /sessions
       - ./config/php/php.ini:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
+
+volumes:
+  db-data:
