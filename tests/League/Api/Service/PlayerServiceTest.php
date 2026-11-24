@@ -17,9 +17,9 @@ class PlayerServiceTest extends LeagueTestCase
   private League $league;
   private Team $team;
 
-  // The `league` entity manager's tables are MyISAM and are NOT protected by Dama's
-  // per-test rollback (see CLAUDE.md) - anything created here writes permanently to the
-  // real, shared dev database unless we delete it ourselves. Track and clean it up below.
+  // Tests are not rolled back (see CLAUDE.md) - anything created here stays in the test
+  // database for all later tests of the run unless we delete it ourselves. Track and clean
+  // it up below.
   private array $createdPlayerIds = [];
   private array $createdTeamIds = [];
 

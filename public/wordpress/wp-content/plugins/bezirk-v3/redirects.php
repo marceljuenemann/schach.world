@@ -1,4 +1,4 @@
-<?
+<?php
 $request = $_SERVER ["REQUEST_URI"];
 
 if ( $request == "/anmeldung/" || $request == "/anmeldung" ){

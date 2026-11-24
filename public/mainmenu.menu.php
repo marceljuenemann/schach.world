@@ -1,4 +1,4 @@
-<?
+<?php
 $nsvMainmenu = array (
 
 "NSV" => array (
