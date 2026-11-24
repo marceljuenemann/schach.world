@@ -59,9 +59,3 @@ services:
         resource: '../src/Dwz/Command/'
     Nsv\Dwz\Controller\:
         resource: '../src/Dwz/Controller/'
-
-when@test:
-    services:
-        Nsv\League\Testing\:
-            resource: '../src/League/Testing/'
-            tags: ['doctrine.fixture.orm']

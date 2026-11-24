@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Testfeed</title>
+    <item>
+      <title>Landesmeisterschaft &amp; Jugend</title>
+      <link>https://example.com/artikel-1</link>
+      <pubDate>Fri, 13 Nov 2026 10:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Artikel ohne Link</title>
+      <pubDate>Thu, 12 Nov 2026 10:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Artikel mit kaputtem Datum</title>
+      <link>https://example.com/artikel-3</link>
+      <pubDate>gestern</pubDate>
+    </item>
+  </channel>
+</rss>

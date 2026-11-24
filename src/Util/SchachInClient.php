@@ -32,15 +32,11 @@ class SchachInEntity {
     'members',
     'members_u25',
     'members_female',
-    'avg_byear',
+    'avg_age',
     'avg_rating',
   ];
 
-  private int $currentYear;
-
-  function __construct(private array $data) {
-    $this->currentYear = date('Y');
-  }
+  function __construct(private array $data) {}
 
   public function isClub() {
     return $this->alive && in_array($this->scope, ['verein', 'verein-schachabteilung']);
@@ -51,7 +47,7 @@ class SchachInEntity {
    */
   public function clubData(): \stdClass {
     $club = new \stdClass();
-    $club->zps = $this->findCategory('identifiers', 'ZPS-Code', 'identifier');
+    $club->zps = $this->currentZps();
     if (!$club->zps) throw new \Exception('No ZPS found');
     $club->districtZps = substr($club->zps, 0, 3);
     $club->name = $this->contact;
@@ -64,16 +60,28 @@ class SchachInEntity {
     foreach (self::STATS_FIELDS as $field) {
       $club->stats[$field] = $this->$field;
     }
-    $club->stats['avg_age'] = $this->currentYear - $club->stats['avg_byear'];
 
     return $club;
+  }
+
+  /**
+   * Returns the club's current ZPS. Clubs that changed districts also list their
+   * old ZPS codes, which are not marked as current.
+   */
+  private function currentZps(): ?string {
+    $zpsCodes = array_filter($this->identifiers ?? [], fn($id) => $id['category'] === 'ZPS-Code');
+    foreach ($zpsCodes as $zps) {
+      if (($zps['current'] ?? null) == '1') return $zps['identifier'];
+    }
+    // Fall back to the first ZPS in case the API stops sending the current flag.
+    return reset($zpsCodes)['identifier'] ?? null;
   }
 
   /**
    * Returns the first venue found on the entity.
    */
   private function venue() {
-    foreach ($this->children as $child) {
+    foreach ($this->children ?? [] as $child) {
       foreach ($child['contacts'] as $contact) {
         if ($contact['category'] === 'Veranstaltungsort' && $contact['alive']) {
           return $contact;
@@ -95,6 +103,7 @@ class SchachInEntity {
   }
 
   public function __get($key) {
-    return $this->data[$key];
+    // Fields like the member statistics are missing for some clubs.
+    return $this->data[$key] ?? null;
   }
 }
