@@ -1,4 +1,4 @@
-<?
+<?php
 class FPDF_HTML extends FPDF
 {
 

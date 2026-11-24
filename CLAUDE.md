@@ -15,8 +15,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 PHP commands must be run **inside the Docker container** (ensures correct PHP version and DB connection strings):
 ```bash
 docker exec nsv-webserver ./bin/phpunit                                              # run all tests
-docker exec nsv-webserver ./bin/phpunit --update-snapshots                           # regenerate snapshot fixtures
+dev/scripts/update-snapshots.sh [tests/...]                                          # run tests and regenerate snapshot fixtures
 docker exec nsv-webserver ./bin/phpunit tests/League/Controller/LeagueControllerTest # run a single test file
+docker exec -e SKIP_DB_RESET=1 nsv-webserver ./bin/phpunit tests/...                 # skip the test DB rebuild (faster)
 docker exec nsv-webserver ./bin/console cache:clear
 docker exec nsv-webserver ./bin/console doctrine:migrations:migrate --em main
 ```
@@ -39,9 +40,11 @@ npm run build     # production build → public/core/js-build/
 
 ### Docker dev environment (`dev/`)
 ```bash
-docker compose up -d                            # start containers
+docker compose up -d --wait                     # start containers
+docker compose down -v && docker compose up -d --wait  # reset dev DB to dev/dbinit/ (then run migrations)
 docker exec -it nsv-webserver /bin/bash         # shell into PHP container
-dev/scripts/run-tests.sh                        # run PHP tests inside container
+dev/scripts/run-tests.sh [tests/...]            # run PHP tests inside container
+dev/scripts/update-snapshots.sh [tests/...]     # same, but rewrite mismatching snapshots
 ```
 
 ## Architecture
@@ -74,16 +77,18 @@ Symfony 6.4 with Doctrine ORM. Autowiring is on; services are in `config/service
 All UI-facing text must be in **German**. Code (variables, functions, comments) is written in **English**.
 
 ### Testing approach
-PHP tests use **snapshot assertions** (Spatie) extensively — HTML/JSON responses are compared to fixtures stored in `tests/**/__snapshots__/`. When a test output legitimately changes, run with `UPDATE_SNAPSHOTS=1` to regenerate.
+PHP tests use **snapshot assertions** (Spatie) extensively — HTML/JSON responses are compared to fixtures stored in `tests/**/__snapshots__/`. When a test output legitimately changes, run `dev/scripts/update-snapshots.sh` (sets `UPDATE_SNAPSHOTS=true`) to regenerate.
 
-**⚠️ Tests are NOT rolled back.** DAMA DoctrineTestBundle is installed and configured, but its PHPUnit extension is not registered in `phpunit.xml.dist`, so no test runs inside a transaction — regardless of entity manager or storage engine. (Most League tables are MyISAM anyway, which couldn't roll back even if it were enabled.) Any test that persists/flushes entities writes **permanently** to the shared test database. Consequences:
+**Test database.** Tests run against their own database `nsv-test`, which `tests/bootstrap.php` rebuilds from `dev/dbinit/` (files `10-`–`39-`) plus migrations at the start of every phpunit run (~5 s, via `dev/scripts/reset-test-db.sh`). CI does the same, so local and CI test data are identical (e.g. DWZ tables are empty in both). Manual edits in the dev database `nsv-main` never affect tests. `SKIP_DB_RESET=1` reuses the current state.
+
+**⚠️ Tests are NOT rolled back within a run.** No test runs inside a transaction (most League tables are MyISAM, which can't roll back anyway). Any test that persists/flushes entities changes the data for all later tests in the same run. Consequences:
 - Any test creating entities **must delete everything it created** at the end of the test (see `PlayerServiceTest` / `RegistrationControllerTest` for the tracking + `tearDown()` pattern). If creation can fail halfway, make sure the row still gets tracked for cleanup.
 - Never call destructive operations (delete, bulk renumber) against a real/shared fixture entity (e.g. `$this->team` in `PlayerServiceTest`) — only against entities the test itself created and will clean up.
-- If you notice unexplained extra rows or altered data, suspect a prior test run rather than fixture corruption.
+- If you notice unexplained extra rows or altered data, suspect another test in the same run (or a run with `SKIP_DB_RESET=1`) rather than fixture corruption.
 - Mock `MailerInterface` in tests that trigger emails — the test environment otherwise tries to send via a real SMTP transport.
 
 ### Database
-MySQL 5.7. `main` and `league` are **two separate Doctrine connections to the same physical database** (`nsv-main`) — `league` forces a latin1 charset session, `main` doesn't; they are not two different databases. WordPress uses its own separate database outside of Symfony. Doctrine migrations live in `/migrations/` and target entity manager `main`. Table storage engine (MyISAM vs InnoDB) varies per table within both entity managers.
+MySQL 5.7. `main` and `league` are **two separate Doctrine connections to the same physical database** (`nsv-main` in dev, `nsv-test` in tests) — `league` forces a latin1 charset session, `main` doesn't; they are not two different databases. Locally the DB lives in the Docker volume `nsv_db-data` and is initialized from `dev/dbinit/` (prefix convention in `dev/setup.md`; dev-only data such as the `test-2627` league and WordPress use `40-` and up). WordPress uses its own separate database outside of Symfony. Doctrine migrations live in `/migrations/` and target entity manager `main`. Table storage engine (MyISAM vs InnoDB) varies per table within both entity managers.
 
 ### Registration system
 
@@ -105,7 +110,7 @@ MySQL 5.7. `main` and `league` are **two separate Doctrine connections to the sa
 ## Key conventions
 - PHP 8.4+ — use modern PHP features (readonly properties, named args, enums where appropriate)
 - Never edit existing Doctrine migrations — always create a new one. Always pass `--em main`.
-- Snapshot tests (`tests/**/__snapshots__/`): a failing snapshot means either a real bug or an intentional output change. Only run `--update-snapshots` when the change is intentional.
+- Snapshot tests (`tests/**/__snapshots__/`): a failing snapshot means either a real bug or an intentional output change. Only run `dev/scripts/update-snapshots.sh` when the change is intentional.
 - New interactive UI goes in Angular from the start — don't add client-side logic to Twig templates as a stepping stone.
 - Before modifying `public/ligen/`, confirm with the user what is safe to delete — it's not always obvious what's still in use vs. dead code.
 - Before adding a new `Nsv\*` module, check whether the feature fits an existing one; the module boundaries aren't always obvious.

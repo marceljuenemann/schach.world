@@ -18,7 +18,7 @@ jobs:
           - 3306:3306
         env:
           MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: nsv-main
+          MYSQL_DATABASE: nsv-test
           MYSQL_USER: docker
           MYSQL_PASSWORD: docker
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
@@ -38,17 +38,7 @@ jobs:
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-interaction --no-progress --no-scripts
 
-      - name: Initialize database
-        run: |
-          for sqlfile in ./dev/dbinit/*.sql; do
-            if [[ "$(basename "$sqlfile")" != "00-create-databases.sql" ]]; then
-              mysql -h 127.0.0.1 -P 3306 -u docker -pdocker nsv-main < "$sqlfile"
-            fi
-          done
-
-      - name: Apply migrations
-        run: ./bin/console doctrine:migrations:migrate --em main --env=test --no-interaction
-
+      # tests/bootstrap.php loads dev/dbinit/ and applies migrations.
       - name: Run tests
         run: |
           XDEBUG_MODE=coverage ./bin/phpunit --coverage-html var/coverage

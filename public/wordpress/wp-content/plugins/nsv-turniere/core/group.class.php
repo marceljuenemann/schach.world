@@ -1,4 +1,4 @@
-<?
+<?php
 namespace NSV\Turniere\Core;
 
 /**

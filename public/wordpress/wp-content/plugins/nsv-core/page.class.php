@@ -64,7 +64,7 @@ abstract class Page {
           <input type="checkbox" class="form-check-input" id="<?=$id?>" onclick="jQuery(this).parent().parent().toggleClass('nsv-details-show')">
           <label class="form-check-label" for="<?=$id?>">Details anzeigen</label>
         </div>
-      <?
+      <?php
     }
     echo "<table class='nsv-table'>";
     echo "<tr>";
