@@ -37,13 +37,13 @@ add_action('init', function() {
   // ChessBase Widget.
   add_shortcode('nsv-chessbase', function() {
     $cbByWeekday = array(
-      '1' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
-      '2' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
-      '3' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
-      '4' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
-      '5' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
-      '6' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26'),
-      '7' => array('url' => 'chessbase_26_mega_package', 'img' => 'CB26')
+      '1' => array('url' => 'chessbase_27_mega_package', 'img' => 'CB27'),
+      '2' => array('url' => 'chessbase_27_mega_package', 'img' => 'CB27'),
+      '3' => array('url' => 'chessbase_27_mega_package', 'img' => 'CB27'),
+      '4' => array('url' => 'chessbase_27_mega_package', 'img' => 'CB27'),
+      '5' => array('url' => 'chessbase_27_mega_package', 'img' => 'CB27'),
+      '6' => array('url' => 'chessbase_27_mega_package', 'img' => 'CB27'),
+      '7' => array('url' => 'chessbase_27_mega_package', 'img' => 'CB27')
     );
     $cb = $cbByWeekday[date('N')];
     return "
