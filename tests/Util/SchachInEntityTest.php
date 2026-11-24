@@ -21,7 +21,7 @@ class SchachInEntityTest extends TestCase
       'identifier' => 'testverein-hannover',
       'identifiers' => [
         ['category' => 'Sonstiges', 'identifier' => 'xyz'],
-        ['category' => 'ZPS-Code', 'identifier' => '70101'],
+        ['category' => 'ZPS-Code', 'identifier' => '70101', 'current' => '1'],
       ],
       'url' => [['category' => 'Website', 'identification' => 'https://testverein.example.com']],
       'username' => [['category' => 'Instagram', 'username_url' => 'https://instagram.com/testverein']],
@@ -37,7 +37,7 @@ class SchachInEntityTest extends TestCase
       'members' => 42,
       'members_u25' => 10,
       'members_female' => 5,
-      'avg_byear' => 1980,
+      'avg_age' => 45,
       'avg_rating' => 1650,
     ], $overrides);
   }
@@ -62,17 +62,40 @@ class SchachInEntityTest extends TestCase
     $this->assertSame('Spiellokal', $club->venue['name']);
     $this->assertSame(42, $club->stats['members']);
     $this->assertSame(1650, $club->stats['avg_rating']);
-    $this->assertSame((int) date('Y') - 1980, $club->stats['avg_age']);
+    $this->assertSame(45, $club->stats['avg_age']);
   }
 
   public function testClubData_withoutOptionalData() {
-    $data = $this->clubData(['children' => []]);
-    unset($data['url'], $data['username']);
+    $data = $this->clubData();
+    unset($data['children'], $data['url'], $data['username'], $data['members'], $data['avg_age']);
     $club = (new SchachInEntity($data))->clubData();
 
+    $this->assertNull($club->stats['members']);
+    $this->assertNull($club->stats['avg_age']);
     $this->assertNull($club->website);
     $this->assertNull($club->instagramUri);
     $this->assertNull($club->venue);
+  }
+
+  public function testClubData_usesCurrentZps() {
+    $club = (new SchachInEntity($this->clubData(['identifiers' => [
+      ['category' => 'ZPS-Code', 'identifier' => '70250'],
+      ['category' => 'ZPS-Code', 'identifier' => '70353', 'current' => '1'],
+      ['category' => 'ZPS-Code', 'identifier' => '70352'],
+    ]])))->clubData();
+
+    $this->assertSame('70353', $club->zps);
+    $this->assertSame('703', $club->districtZps);
+  }
+
+  public function testClubData_withoutCurrentFlag_usesFirstZps() {
+    $club = (new SchachInEntity($this->clubData(['identifiers' => [
+      ['category' => 'Sonstiges', 'identifier' => 'xyz'],
+      ['category' => 'ZPS-Code', 'identifier' => '70250'],
+      ['category' => 'ZPS-Code', 'identifier' => '70353'],
+    ]])))->clubData();
+
+    $this->assertSame('70250', $club->zps);
   }
 
   public function testClubData_requiresZps() {

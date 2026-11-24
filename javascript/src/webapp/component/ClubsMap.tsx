@@ -19,7 +19,7 @@ export interface Club {
   venue: {
     latitude: string
     longitude: string
-  }
+  } | null
   stats: {
     members: number
     members_u25: number
@@ -61,7 +61,10 @@ export class ClubsMap extends React.Component<{
               iconUrl: `marker-icon-${district.markerColor}.png`,
               iconRetinaUrl: `marker-icon-${district.markerColor}-2x.png`
             }) as Icon;
-            return Object.values(district.clubs).map(club => this.renderClub(club, district, showDistrict, icon))
+            // Clubs without a venue on schach.in can't be placed on the map.
+            return Object.values(district.clubs)
+              .filter(club => club.venue?.latitude && club.venue?.longitude)
+              .map(club => this.renderClub(club, district, showDistrict, icon))
           }).flat()
         }
       </MapContainer>
